@@ -1,0 +1,473 @@
+{% extends "skeleton2.html" %}
+
+<!-- 
+Note: skeleton2.html is located in the ../templates directory
+Since the site rework, this does not include the projects list from ../templates/blocks/projects.mdtext any more
+TODO: the original site processed the dynamic includes at load time; now at least some are done at build time
+Is it possible to restore the dynamic content?
+-->
+
+{% block title %}Welcome to The Apache Software Foundation!{% endblock %}
+{% block tagline %}{{ tagline.content }}{% endblock %}
+{% block content %}
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h1 class="h3">The World's Largest Open Source Foundation</h1>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<ul>
+					<li>All volunteer community</li>
+					<li>227M+ lines of code in&nbsp;stewardship</li>
+					<li>4.2B+ lines of code&nbsp;changed</li>
+					<li>4.1M+ code commits</li>
+					<li>813 individual ASF&nbsp;Members</li>
+					<li>8,100+ Apache Committers</li>
+					<li>40,000+ code contributors</li>
+					<li>480,000+ people involved in our&nbsp;communities</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<ul>
+					<li>350+ Projects and Initiatives</li>
+					<li>300+ Top-Level Projects</li>
+					<li>37 podlings in the Apache&nbsp;Incubator</li>
+					<li>~2 Petabytes source code downloads from Apache&nbsp;mirrors</li>
+					<li>24M+ emails across 1,400+ mailing&nbsp;lists</li>
+					<li>Web requests received from every Internet-connected country on the&nbsp;planet</li>
+					<li>35M+ weekly page views across <a href="https://apache.org">apache.org</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<p><strong><a href="https://s.apache.org/FY2020AnnualReport-PR">$22B+ worth of Apache Open Source software products are made available to the public-at-large at 100% no cost, and benefit billions of users around the&nbsp;world.</a></strong></p>
+				<p><strong><a href="https://donate.apache.org/">Make a one-time or recurring&nbsp;donation</a> | <a href="http://apache.org/foundation/contributing.html">Corporate Support and ASF&nbsp;Sponsorship</a></strong></p>
+			</div>
+		</div>
+		<div id="video" class="row" style="margin-bottom: 30px;">
+			<script>
+			function swapVideo(videoUrl, title) {
+				const videoPlayer = document.getElementById("trillionsVideos");
+				videoPlayer.src = videoUrl;
+				videoPlayer.title= title;
+			}
+			</script>
+			<div class="col-sm-8 col-sm-offset-2" style="padding-top: 30px;">
+				<div class="video-responsive">
+					<iframe id="trillionsVideos" title="Trillions and Trillions" width="560" height="315" src="https://www.youtube.com/embed/JUt2nb0mgwg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="video-thumbnails" class="row">
+			<div class="col-xs-6 col-sm-2 col-sm-offset-2">
+				<button onclick="swapVideo('https://www.youtube.com/embed/YM5dLvNatRs?autoplay=1&rel=0', 'Why Apache?')"><img class="img-responsive" src="img/trillions-and-trillions/why-apache-thumbail.jpg" alt="Why Apache?" /></button>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<button onclick="swapVideo('https://www.youtube.com/embed/nXtIti9jMFI?autoplay=1&rel=0', 'Apache Everywhere')"><img class="img-responsive" src="img/trillions-and-trillions/apache-everywhere-thumbnail.jpg" alt="Apache Everywhere" /></button>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<button onclick="swapVideo('https://www.youtube.com/embed/JUt2nb0mgwg?autoplay=1&rel=0', 'Trillions and Trillions Served')"><img class="img-responsive" src="img/trillions-and-trillions/trillions-and-trillions-thumbnail.jpg" alt="Trillions and Trillions Served" /></button>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<button onclick="swapVideo('https://www.youtube.com/embed/qkvqJaX4S50?autoplay=1&rel=0', 'Apache Innovation')"><img class="img-responsive" src="img/trillions-and-trillions/apache-innovation-thumbnail.jpg" alt="Apache Innovation" /></button>
+			</div>
+			<div class="col-xs-12 text-center">
+				<a href="https://www.youtube.com/channel/UCLDJ_V9KUOdOFSbDvPfGBxw" target="_blank">View additional videos</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Quotes -->
+<section id="apacheQuotes" class="bg-primary">
+<div class="container">
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+	<!-- Full-width slides/quotes -->
+	<div class="mySlides">
+		<blockquote class="text-center">
+		<p>"The most popular open source software is&nbsp;Apache&hellip;"</p>
+		<footer>DZone, <cite title="What Open Source Software Do You Use?">“What Open Source Software Do You&nbsp;Use?”</cite></footer>
+		</blockquote>
+	</div>
+
+	<div class="mySlides">
+		<blockquote class="text-center">
+		<p>"Apache-style licensing may yield more adoption and&nbsp;money."</p>
+		<footer>Matt Asay, <cite title="c|net">c|net</cite></footer>
+		</blockquote>
+	</div>
+
+	<div class="mySlides">
+		<blockquote class="text-center">
+		<p>"Apache&rsquo;s 'survival of the fittest' ethos breeds better&nbsp;software"</p>
+		<footer><cite title="ZDNet">ZDNet</cite></footer>
+		</blockquote>
+	</div>
+
+	<!-- Next/prev buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<!-- Dots/bullets/indicators -->
+	<div class="dot-container">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+	<!-- END SLIDESHOW CONTAINER -->
+</div>
+</section>
+  
+<!-- Updates Section    -->
+<section id="news">
+  <div class="container">
+       <h2 class="no-btm-margin">Latest News</h2>
+ <p>Keep up with the ASF's news and announcements by subscribing to the 
+   <a href="http://apache.org/foundation/mailinglists.html#foundation-announce">Apache Announcements List</a>, as
+     well as following the <a href="https://blogs.apache.org/foundation/">Foundation Blog</a>, 
+     <a href="https://blogs.apache.org/foundation/category/Newsletter">Apache Weekly News Round-Ups</a>, 
+     <a href="https://twitter.com/TheASF">@TheASF on Twitter</a>, 
+     <a href="https://www.linkedin.com/company/the-apache-software-foundation/">The Apache Software Foundation on
+		 LinkedIn</a>, on the ASF's <a href="https://www.youtube.com/c/TheApacheFoundation/">YouTube channel</a>, and on <a href="https://feathercast.apache.org/">Feathercast</a>, the voice of the ASF.</p>
+ <!-- gm -->
+     <div class="updates">
+       <article class="card">
+         <div class="content">
+           <span class="label label-danger">Twitter</span>
+           {% for e in twitter.list %}
+             <div>
+             <a href="{{ e.url }}">@</a>
+             {{ e.title|safe }}
+             </div>
+           {% endfor %}
+         </div>
+         <a class="continue" href="https://twitter.com/TheASF">Continue Reading&nbsp;&rarr;</a>
+       </article>
+ 
+       <article class="card">
+         <div class="content">
+           <span class="label label-danger">Foundation Blog</span>
+             {% for e in blog.list %}
+               <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5>
+             {% endfor %}    
+         </div>
+         <a class="continue" href="https://blogs.apache.org/foundation">Continue Reading&nbsp;&rarr;</a>
+       </article>
+ 
+       <article class="card">
+         <div class="content">
+           <span class="label label-danger">Project Blogs</span>
+             {% for e in planet.list %}
+               <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5>
+             {% endfor %}   
+         </div>
+         <a class="continue" href="https://blogs.apache.org">Continue Reading&nbsp;&rarr;</a>
+       </article>
+ 
+       <article class="card">
+         <div class="content">
+           <span class="label label-danger">Conferences</span>
+             {% for e in conferences.list %}
+               <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5>
+             {% endfor %}   
+         </div>
+         <a class="continue" href="https://blogs.apache.org/conferences">Continue Reading&nbsp;&rarr;</a>
+       </article>
+         
+     </div>
+ <!-- /gm -->
+   </div>
+</section>
+<!-- / Updates Section    -->
+
+ <!-- Highlights -->
+ <section class="bg-gray ">
+	<div class="container">
+		<div class="highlights">
+			<article class="card">
+				<a href="http://www.apache.org/foundation/reports.html">
+					<img class="img-responsive" src="img/2020-report.jpg" alt="Apache Annual Report" />
+					<div class="card-content">
+						<h4>Reports</h4>
+						<p>Official ASF reports and statements,
+						 including Quarterly and Annual Reports, Vision Statement,
+						 "Apache is Open", 5-Year Strategic Plan, and more.</p>
+					</div>
+				</a>
+			</article>
+			<article class="card">
+				<a href="http://community.apache.org/">
+					<img class="img-responsive" src="img/community.jpg" alt="The Apache Community" />
+					<div class="card-content">
+						<h4>Community</h4>
+						<p>Guidance and mentoring for those interested in participating in Apache projects and their communities.
+							From Google Summer of Code to community events, get started here to learn how to become an
+							Apache contributor.</p>
+					</div>
+				</a>
+			</article>
+			<article class="card">
+				<a href="http://www.apache.org/theapacheway/index.html">
+					<img class="img-responsive" src="img/the-apache-way.jpg" alt="The Apache Way" />
+					<div class="card-content">
+						<h4>The Apache Way</h4>
+						<p>Our consensus-driven, open development process was refined over the past 20 years and produced some of
+							the largest and longest-lived Open Source projects that have revolutionized the industry.</p>
+					</div>
+				</a>
+			</article>
+			<article class="card">
+				<a href="https://apachecon.com/">
+					<img class="img-responsive" src="img/ApacheCon.jpg" alt="ApacheCon" />
+					<div class="card-content">
+						<h4>Conferences</h4>
+						<p>"Tomorrow's Technology Today" since 1998. Intentionally intimate, offering unparalleled educational,
+							networking, and collaboration opportunities.</p>
+					</div>
+				</a>
+			</article>
+		</div>
+	</div>
+</section>
+  <!-- End Highlights-->
+ 
+<!-- Apache Statements Section -->
+	<!-- Apache Statements Section -->
+	<section class="bg-info">
+		<div class="container">
+			<p>The ASF develops, shepherds, and incubates hundreds of freely-available, enterprise-grade projects that serve as the backbone for some of the most visible and widely used applications in computing today. Through the ASF's merit-based process known as <a href="http://www.apache.org/theapacheway/">"The Apache Way,"</a> more than <a href="http://community.zones.apache.org/map.html">800 individual volunteer Members and 7,800+ code Committers</a> across six continents successfully collaborate on innovations in Artificial Intelligence and Deep Learning, Big Data, Build Management, Cloud Computing, Content Management, DevOps, IoT and Edge Computing, Mobile, Servers, and Web Frameworks, <a href="https://projects.apache.org/projects.html?category">among other categories</a>.</p>
+
+			<p><strong>APACHE IS &hellip;</strong></p>
+
+			<p><strong>OPEN:</strong> The Apache Software Foundation provides support for 300+ Apache Projects and their Communities, furthering its mission of providing Open Source software for the public&nbsp;good.</p>
+
+			<p><strong>INNOVATION:</strong> Apache Projects are defined by <a
+					href="http://www.apache.org/theapacheway/index.html">collaborative, consensus-based processes</a>, an open, pragmatic software license and a desire to create high quality software that leads the way in its&nbsp;field.
+			</p>
+
+			<p><strong>COMMUNITY:</strong> We are a <a href="http://community.apache.org/">community of developers and users</a> of enterprise-grade, Open Source Apache projects used in every Internet-connected country on the&nbsp;planet.</p>
+		</div>
+	</section>
+	<!-- / Apache Statements Section -->
+<!-- / Apache Statements Section -->
+<!-- was Apachecon etc here -->
+
+<!-- Apache Featured Projects Section    -->
+<section class="bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Apache Projects</h2>
+        <p>The all-volunteer ASF develops, stewards, and incubates more than 350 Open Source projects and initiatives that cover a wide range of technologies. 
+          From Accumulo to Zookeeper, if you are looking for a rewarding experience in Open Source and industry leading software, chances are you are going to find it here.
+          <a href="/foundation/press/kit/#powerby">Are you powered by Apache?</a>
+        </p>
+        <!-- Featured Projects Section    -->
+        <div class="container">
+          <div class="row">
+            <h3>Featured Project<span class="visible-md-inline visible-lg-inline">s</span></h3>     
+            <div class="col-md-3 col-sm-12">
+              <!-- tabs left -->
+              <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
+                <ul class="nav nav-tabs">
+                  {% for e in projects %}
+                    <li {% cycle "class='active'" "" "" %}>
+                      <a href="#{% cycle "4" "5" "6" %}" data-toggle="tab">{{ e.name }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+              <div class="tab-content">
+                {% for e in projects %}
+                  <div class="tab-pane fade in {% cycle "active" "" "" %}" id="{% cycle "4" "5" "6" %}">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img class="img-responsive center-block" src="{{ e.logo }}" alt="Logo">
+                      </div>
+                      <div class="col-sm-10">
+                        <h4 class="no-btm-margin"><a href="{{ e.url }}">{{ e.name }}</a></h4>
+                        <p>{{ e.description|safe|truncatewords_html:50 }}</p>
+                        <a class="btn btn-default btn-sm" href="{{ e.url }}" role="button">Learn More...</a>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div><!-- /tab-content -->
+            </div><!-- /container -->
+          </div><!-- /tabs -->
+        </div><!-- /column -->
+  <!-- / Featured Projects Section    -->
+  <!-- Incubator Projects Section    -->
+        <div class="container">
+          <div class="row">
+            <h3>Incubating Project<span class="visible-md-inline visible-lg-inline">s</span></h3>
+        <p>The Apache Incubator is the primary entry path into The Apache Software Foundation for projects and codebases wishing to become part of the Foundation’s efforts. 
+        All code donations from external organisations and existing external projects seeking to join the Apache community enter through the Incubator.</p>
+            <div class="col-md-3 col-sm-12">
+              <!-- tabs left -->
+              <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
+                <ul class="nav nav-tabs">
+                  {% for e in podlings %}
+                    <li {% cycle "class='active'" "" "" %}>
+                      <a href="#{% cycle "1" "2" "3" %}" data-toggle="tab">{{ e.name }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+              <div class="tab-content">
+                {% for e in podlings %}
+                  <div class="tab-pane fade in {% cycle "active" "" "" %}" id="{% cycle "1" "2" "3" %}">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img class="img-responsive center-block" src="{{ e.logo }}" alt="Logo">
+                      </div>
+                      <div class="col-sm-10">
+                        <h4 class="no-btm-margin"><a href="{{ e.url }}">{{ e.name }}</a></h4>
+                        <p>{{ e.description|safe|truncatewords_html:50 }}</p>
+                        <a class="btn btn-default btn-sm" href="{{ e.url }}" role="button">Learn More...</a>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div><!-- /tab-content -->
+            </div><!-- /container -->
+          </div><!-- /tabs -->
+        </div><!-- /column -->
+  <!-- / Incubator Projects Section    -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / Apache Featured Projects Section -->
+
+<!-- Apache Projects List -->
+	<section id="projects-list">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Apache Project List</h2>
+					<!-- not consistent: projects (with sub-projects) or TLPs?
+             by category = projects,
+             but other = Top Level Projects only) -->
+				</div>
+				<div class="col-sm-2" id="by_category">
+					<!-- id for eventual use by whimsy; do not move -->
+					<ul class="list-unstyled">
+						<li><a href="https://projects.apache.org/">Overview</a></li>
+						<li><a href="https://projects.apache.org/projects.html">All Projects</a></li>
+					</ul>
+					<h4>By Category</h4>
+					<ul class="list-unstyled">
+						<li><a href="http://attic.apache.org/" title="A home for dormant projects">Attic</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#big-data">Big Data</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#build-management">Build Management</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#cloud">Cloud</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#content">Content</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#database">Databases</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#ftp">FTP</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#graphics">Graphics</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#http">HTTP</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#httpd-module">HTTP-module</a></li>
+						<li><a href="http://incubator.apache.org/"
+								title="Entry path for projects and codebases wishing to become part of the Foundation's efforts">Incubating</a>
+						</li>
+						<li><a href="https://projects.apache.org/projects.html?category#javaee">JavaEE</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#library">Libraries</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#mail">Mail</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#mobile">Mobile</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#network-client">Network-client</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#network-server">Network-server</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#osgi">OSGi</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#regexp">RegExp</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#retired">Retired</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#search">Search</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#security">Security</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#sql">SQL</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#testing">Testing</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#virtual-machine">Virtual-machine</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#web-framework">Web-framework</a></li>
+						<li><a href="https://projects.apache.org/projects.html?category#xml">XML</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-md-12" id="by_name">
+							<!-- The project details are taken from committee_info.json (generated by Whimsy) -->
+							<h4>By Name</h4>
+							<div class="col-lg-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 border-right">
+										<ul class="list-unstyled" style="margin-bottom: 0px;">
+										    {% for e in project_list.0 %}
+										        {% if e.letter %}<li class="letter-header">{{ e.letter }}</li>{% endif %}
+										    	<li><a href="{{ e.site }}" title="{{ e.description }}">{{ e.name }}</a></li>
+										    {% endfor %}
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-12 border-right">
+										<ul class="list-unstyled" style="margin-bottom: 0px;">
+										    {% for e in project_list.1 %}
+										        {% if e.letter %}<li class="letter-header">{{ e.letter }}</li>{% endif %}
+										    	<li><a href="{{ e.site }}" title="{{ e.description }}">{{ e.name }}</a></li>
+											{% endfor %}
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 border-right">
+										<ul class="list-unstyled" style="margin-bottom: 0px;">
+										    {% for e in project_list.2 %}
+										        {% if e.letter %}<li class="letter-header">{{ e.letter }}</li>{% endif %}
+										    	<li><a href="{{ e.site }}" title="{{ e.description }}">{{ e.name }}</a></li>
+											{% endfor %}
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-12 border-right">
+										<ul class="list-unstyled" style="margin-bottom: 0px;">
+										    {% for e in project_list.3 %}
+										        {% if e.letter %}<li class="letter-header">{{ e.letter }}</li>{% endif %}
+										    	<li><a href="{{ e.site }}" title="{{ e.description }}">{{ e.name }}</a></li>
+											{% endfor %}
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 border-right">
+										<ul class="list-unstyled" style="margin-bottom: 0px;">
+										    {% for e in project_list.4 %}
+										        {% if e.letter %}<li class="letter-header">{{ e.letter }}</li>{% endif %}
+										    	<li><a href="{{ e.site }}" title="{{ e.description }}">{{ e.name }}</a></li>
+											{% endfor %}
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-12">
+										<ul class="list-unstyled" style="margin-bottom: 0px;">
+										    {% for e in project_list.5 %}
+										        {% if e.letter %}<li class="letter-header">{{ e.letter }}</li>{% endif %}
+										    	<li><a href="{{ e.site }}" title="{{ e.description }}">{{ e.name }}</a></li>
+											{% endfor %}
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- / Projects List -->
+{% endblock %}
+
