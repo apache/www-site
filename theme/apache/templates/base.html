@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Home page of The Apache Software Foundation">
-  {% if headers.base %}<base href="{{ headers.base }}" />{% endif %}
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
@@ -27,20 +26,16 @@
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#282661">
 
-  <title>{% block title %}{{ page.title }}{% endblock %}</title>
+  <title>{{ page.title }}</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
   <link href="/css/min.bootstrap.css" rel="stylesheet">
   <link href="/css/styles.css" rel="stylesheet">
-  {% if headers.atom %}
-  <link rel="alternate" href="{{ headers.atom.url }}"
-      type="application/atom+xml" title="{{ headers.atom.title }}" />
-  {% endif %}
 
   {% if page.notice %}<!-- {{ page.notice }} -->{% endif %}
 
 </head>
 
-<body id="home">
+<body>
   <!-- Navigation -->
   <header>
 	<div id="skiptocontent">
@@ -317,7 +312,6 @@
   </main>
 
   <!-- Footer -->
-  {% block footer %}
   <footer class="bg-primary">
     <div class="container">
       <div class="row">
