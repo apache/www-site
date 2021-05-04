@@ -1,0 +1,168 @@
+<!-- ....................................................................... -->
+<!-- XDOK 1.0 DTD  ......................................................... -->
+<!-- file: xdok10.dtd ...................................................... -->
+
+<!-- XDOK 1.0 DTD
+
+     This is XDOK, a subset of XHTML 1.1. It is based on the XHTML 1.1 DTD
+     and the XHTML modularization specification.
+     
+     XDOK
+     Copyright 2005 The Apache Software Foundation
+     
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+    
+         http://www.apache.org/licenses/LICENSE-2.0
+    
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+     
+     The Extensible HyperText Markup Language (XHTML)
+     Copyright 1998-2001 World Wide Web Consortium
+        (Massachusetts Institute of Technology, Institut National de
+         Recherche en Informatique et en Automatique, Keio University).
+         All Rights Reserved.
+
+     Permission to use, copy, modify and distribute the XHTML DTD and its 
+     accompanying documentation for any purpose and without fee is hereby 
+     granted in perpetuity, provided that the above copyright notice and 
+     this paragraph appear in all copies.  The copyright holders make no 
+     representation about the suitability of the DTD for any purpose.
+
+     It is provided "as is" without expressed or implied warranty.
+
+-->
+<!-- This is the driver file for version 1.0 of the XDOK DTD.
+
+     Please use this formal public identifier to identify it:
+
+         "-//ASF//DTD XDOK 1.0//EN"
+
+     Use this URI to identify the default namespace:
+
+         "http://www.apache.org/dev/xdok/2005"
+
+     For example, if you are using XDOK 1.0 directly, use the FPI
+     in the DOCTYPE declaration, with the xmlns attribute on the
+     document element to identify the default namespace:
+
+       <?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//ASF//DTD XDOK 1.0//EN" "xdok10.dtd">
+       <html xmlns="http://www.apache.org/dev/xdok/2005"
+             xml:lang="en">
+       ...
+       </html>
+    
+    This DTD defines a subset of XHTML which is highly compatible with
+    the features of many other documentation and/or publishing standards
+    and the tools to support them. For example, it should be trivially
+    possible to convert the XDOK format into the OpenOffice OpenDocument
+    file format, into LaTeX, into DocBook, into "xdoc" format, UNIX 
+    'manpage'format, or even into a variety of wiki formats.
+
+    The conceptual modules from XHTML that we use are:
+
+     - the core modules
+     - the presentation module
+     - the image module
+     - the metainformation module
+     - the simple tables module
+     - the link module
+     
+    In laymans terms, this means you should write your HTML to have
+    the following elements/tags, and these only:
+     
+       <body>, <html>, <head>, <title>, <link>
+       <abbr>, <acronym>, <address>, <blockquote>, <br>,
+         <cite>, <code>, <dfn>, <div>, <em>, <h1>, <h2>,
+         <h3>, <h4>, <h5>, <h6>, <kbd>, <p>, <pre>, <q>,
+         <samp>, <span>, <strong>, <var>
+       <a>
+       <dl>, <dt>, <dd>, <ol>, <ul>, <li>
+       <b>, <big>, <hr>, <i>, <small>, <sub>, <sup>, <tt>
+       <caption>, <table>, <td>, <th>, <tr>
+       <img>
+       <meta>
+       <link>
+
+    and for each of these, you should often only be using a limited
+    subset of the attributes which are allowed according to the "old"
+    or "full" HTML spec. In particular, don't create complex tables,
+    don't use "style" attributes (eg inline CSS), don't give links or
+    other elements a "name", don't use inline javascript or event
+    handlers (eg "onclick"), don't create inline "forms", and in
+    general just don't do complex stuff.
+    
+    Note you can still reference other XHTML modules from within a
+    particular document if you use the appropriate namespacing and
+    entity declarations and stuff, but we're not going to document
+    how, since you really shouldn't.
+-->
+<!ENTITY % XDOK.version  "-//ASF//DTD XDOK 1.0//EN" >
+<!ENTITY % NS.prefixed "IGNORE" >
+<!ENTITY % XDOK.prefix "" >
+
+<!-- Based on the example at http://www.w3.org/TR/xhtml-modularization/dtd_developing.html#sec_E.4. -->
+<!--
+$ pwd
+/Users/lsimons/dev/asf/infrastructure/site-tools-trunk/xdok
+$ cat dtds/xhtml11-20010531/DTD/xhtml11.dtd |\
+>    grep ENTITY |\
+>    grep '.module' | sort
+$
+-->
+<!ENTITY % xhtml-base.module "INCLUDE" >
+<!ENTITY % xhtml-csismap.module "INCLUDE" >
+<!ENTITY % xhtml-edit.module "IGNORE">
+<!ENTITY % xhtml-events.module "IGNORE" >
+<!ENTITY % xhtml-form.module "IGNORE" >
+<!ENTITY % xhtml-framework.module "INCLUDE" >
+<!ENTITY % xhtml-hypertext.module "INCLUDE" >
+<!ENTITY % xhtml-image.module "INCLUDE" >
+<!ENTITY % xhtml-inlstyle.module "IGNORE" >
+<!ENTITY % xhtml-legacy.module "IGNORE" >
+<!ENTITY % xhtml-link.module "INCLUDE" >
+<!ENTITY % xhtml-list.module "INCLUDE" >
+<!ENTITY % xhtml-meta.module "INCLUDE" >
+<!ENTITY % xhtml-object.module "IGNORE" >
+<!ENTITY % xhtml-param.module "IGNORE" >
+<!ENTITY % xhtml-pres.module "IGNORE" >
+<!ENTITY % xhtml-ruby.module "IGNORE" >
+<!ENTITY % xhtml-script.module "IGNORE" >
+<!ENTITY % xhtml-ssismap.module "IGNORE" >
+<!ENTITY % xhtml-struct.module "INCLUDE" >
+<!ENTITY % xhtml-style.module "INCLUDE" >
+<!ENTITY % xhtml-table.module "IGNORE" >
+<!ENTITY % xhtml-text.module "INCLUDE" >
+
+<!ENTITY % xhtml11.mod
+     PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+            "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+%xhtml11.mod;
+
+<!-- patch for the basic tables module -->
+
+<!ENTITY % FlowNoTable.mix
+     "%Heading.class;
+      | %List.class;
+      | %BlkStruct.class;
+      %BlkPhras.class;
+      %BlkPres.class;
+      %Form.class;
+      %Block.extra;
+      | %Inline.class;
+      %Misc.class;" >
+
+<!-- Bring in the basic tables module -->
+<!ENTITY % xhtml-basic-table.mod
+     PUBLIC "-//W3C//ELEMENTS XHTML Basic Tables 1.0//EN"
+       "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-basic-table-1.mod" >
+%xhtml-basic-table.mod;
+
+<!-- end of XDOK 1.0 DTD  .................................................. -->
+<!-- ....................................................................... -->

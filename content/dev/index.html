@@ -1,0 +1,110 @@
+{% extends "skeleton.html" %}
+{% block title %}{{ links.headers.title }}{% endblock %}
+{% block tagline %}{{ links.headers.title }}{% endblock %}
+{% block content %}
+    <div id="intro" class="container">
+		<h3>Apache Developers' &amp; Contributors' Overview</h3>
+		<p>These pages provide a directory of technical details pertinent to all Apache projects, for developers,
+        committers, release managers and PMC members contributing to any Apache project.
+		</p>
+		<p>If you can't find information here, ask on your project's
+		  mailing list, or contact the <a href="http://community.apache.org/" target="_blank">Community Development</a> project's mailing list for more general questions. 
+		  There are many experienced ASF people who can help.
+        We also have a
+        <a href="sitemap.html">sitemap</a> summarizing all the pointers available. 
+	    </p>
+
+      <div class="container">
+      <ul>
+        <li>
+          <a href="#infrastructure">Infrastructure</a>
+        </li>
+        <li>
+          <a href="#committers">Committers and Contributors</a>
+        </li>
+        <li>
+          <a href="#pmc">Project Management Committees (PMC)</a>
+        </li>
+        <li>
+          <a href="#licenses">Licenses and Legal Issues</a>
+        </li>
+        <li>
+          <a href="#version-control">Version Control</a>
+        </li>
+        <li>
+          <a href="#web">Websites</a>
+        </li>
+        <li>
+          <a href="#releases">Releases</a>
+        </li>
+        <li>
+          <a href="#issues">Issue Tracking</a>
+        </li>
+        <li>
+          <a href="#mail">Mailing Lists</a>
+        </li>
+        <li>
+          <a href="http://www.apache.org/foundation/governance/">Board of Directors and ASF Governance Overview</a>
+        </li>
+        <li>
+          <a href="#paste">Pasting Data to share with others</a>
+        </li>
+        <li>
+          <a href="#shorten">URL Shortener for Committers</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+</div>
+<div id="news" class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div id="news_feed" class="panel panel-default">
+                       <div class="panel-body">
+                       {{ links.content|markdown }}
+                       </div>
+        </div>
+      </div>
+    <div class="col-md-4">
+
+      <div id="latest_activity" class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">Latest Activity</h4>
+        <p><em>This is an overview of activity going on with various Apache projects. SVN commits, bug reports, tweets, you name it</em>.</p>
+        </div>
+        <div class="panel-body">
+                         {% for e in twitter.list %}
+                         <a href="{{ e.url }}">@</a>{{ e.title|safe }}
+                         @ {{ e.time|safe }}
+                         <hr>
+                         {% endfor %}
+
+                        {% for e in svn.list %}
+                        <a class="svn" href="http://svn.apache.org/r{{ e.revision }}">r{{ e.revision }}</a>
+                          {{ e.message|safe|truncatewords_html:20 }} ({{
+                          e.projects|safe }}) &mdash;
+                          <a href="http://home.apache.org/committer-index.html#{{ e.author }}">{{ e.author }}</a>
+                        <hr>
+                        {% endfor %}
+
+                         {% for e in jira.list %}
+                         <a class="bug" href="{{ e.url }}">{{ e.title|safe }}</a><br/>
+                         {{ e.content|safe|truncatewords_html:20 }}
+                         {% cycle "<hr>" "<hr>" "<hr>" "<hr>" "" %}
+                         {% endfor %}
+</div>
+</div>
+</div>
+<div id="impact" class="container">
+                        <h4>The Infra Blog</h4>
+                        {% for e in blog.list %}
+                        <div><h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5>
+                         <p>{{ e.content|safe|truncatewords_html:30 }}</p>
+                        </div>
+                        <hr>
+                        {% endfor %}
+        <h5><a href="http://blogs.apache.org/infra/" title="Read More from the blogs">Read More &raquo;</a></h5>
+</div>
+</div>
+{% endblock %}
+
