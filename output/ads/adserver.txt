@@ -1,0 +1,67 @@
+NOTE: This method has been replaced by the process documented at https://apachecon.com/event-images/
+
+Apache websites SHOULD include images so that the ConCom or PRC can advertise
+ApacheCon or other events.
+
+Maybe we'll expand the use of this later after probably a very extensive
+discussion somewhere. For now, we won't.
+
+Ok, basics.
+
+Button/banner standard sizes:
+
+  468x60  full banner (not yet implemented)
+  234x60  half banner
+  125x125 button
+
+The files (e.g. buttonbar.html) are html fragments to produce a <div> with two
+images below each other inside. You can use CSS to customize appearance.
+
+Howto
+-----
+
+* Option 1: Use an <iframe>:
+
+  Here is an example for dual button images in a left-hand navigation panel:
+
+<iframe title="Apache Events" src="http://www.apache.org/ads/buttonbar.html"
+    style="border-width:0; float: left" frameborder="0" scrolling="no"
+    width="135" height="265"></iframe>
+
+The style parameter may be adjusted as needed.  The width and height need to be
+exact, so don't forget to sum your margins, padding, borders, etc. for the CSS
+design of the rest of your page.
+
+* Option 2: Use hard-coded plain html fragment:
+
+Some web applications will not be able to use the iframe method, but can
+directly use the html fragment from buttonbar.html for example. However this
+circumvents the adserver, so make sure that you keep up-to-date.
+
+When are these updated
+----------------------
+Should be done by concom only.
+
+When the confirmed dates and locations are known, a standard 125x125 image
+and a 234x60 image are generated and added to the directory ads/ApacheCon/
+See the readme.
+
+Entries are added to the Calendar, e.g. people.apache.org/calendar.html#20075
+
+When the producer-maintained conference websites are ready, the apachecon.com
+re-directs are configured, e.g. apachecon.com/2007/EU/ and eu.apachecon.com etc.
+If a conference site is not yet ready, then refer to the ASF Calendar.
+
+Please do not advertise conferences too far in advance. We need to keep focus
+on the current upcoming conferences.
+
+Updating the banners
+--------------------
+Should be done by concom only. Just edit the HTML files. You can test locally
+by saving any website page that has them and replacing the stuff between
+
+  <!-- ads start -->
+
+  <!-- ads end -->
+
+with the new file.

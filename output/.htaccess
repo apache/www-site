@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{SERVER_NAME} !staging
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
