@@ -2,9 +2,13 @@ Atom: http://mail-archives.apache.org/mod_mbox/www-community/?format=atom
 Title: How the ASF works
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 If you're curious about more governance details, we have a description of [Apache style governance][1].  
 The [Apache Community Development project](http://community.apache.org/) is also 
-here to help newcomers find their way around.  {: .pull-right style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px" }
+here to help newcomers find their way around.
+
+</div>
 
 This page provides an overview of everything you always wanted to know about the
 Apache Software Foundation but were afraid to ask: the difference between membership and

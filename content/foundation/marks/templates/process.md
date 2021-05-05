@@ -16,8 +16,11 @@ that allows us to address infringements of our trademarks by others.
 
 # Contents  {#links}
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 PMCs need to [take responsibility][responsibility] and can use the [Guide for Evaluating infringements][reporting].
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 [TOC]
  

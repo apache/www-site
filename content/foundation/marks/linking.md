@@ -8,8 +8,11 @@ or links on their `apache.org` project website about the larger ecosystem around
 
 ** Contents **
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 See Also: [Trademark Resources Site Map](https://www.apache.org/foundation/marks/resources).
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 [TOC]
 

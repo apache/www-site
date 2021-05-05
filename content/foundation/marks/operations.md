@@ -5,8 +5,11 @@ Historical records of public operations summaries of the ASF Trademarks Committe
 
 ** Contents **
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 See Also: [Trademark Resources Site Map][resources].
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 [TOC]
 

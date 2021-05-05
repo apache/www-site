@@ -45,8 +45,11 @@ You may also be interested in reading our closely related
 
 # Contents  {#links}
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 See Also: [Trademark Resources Site Map][resources].
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 -  [Do Not Promote Similar Services Offered By Apache](#nonproduct)
 

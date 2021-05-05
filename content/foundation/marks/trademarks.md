@@ -10,8 +10,11 @@ Please see the new policy at
 
 # Trademark Use Policy (OUTDATED)  {#policy}
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 SEE INSTEAD: [Trademark Resources Site Map][resources].
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 As with any legal trademarks, the name "Apache" and the names of our code
 projects, Incubator podlings, and other projects must be used properly and

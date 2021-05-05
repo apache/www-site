@@ -35,8 +35,11 @@ discover our projects and products.
 
 # Contents  {#links}
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 See Also: [Trademark Resources Site Map][resources].
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 -  [Do Not Use Bare Names As Second Level Domains](#secondlevel)
 

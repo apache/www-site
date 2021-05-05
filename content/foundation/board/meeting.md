@@ -10,8 +10,11 @@ and how to submit the report.  Note that executive officers and non-project corp
 (Like VP, Infra; VP, Legal, etc.) provide their own reports either to the President or to 
 the board on a monthly basis.
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 See also Board Meeting Minutes: [Calendar View](https://www.apache.org/foundation/board/calendar.html) / [Categorized view](https://whimsy.apache.org/board/minutes/).
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 Board meetings are held by teleconference (and IRC for backchannel), and typically last about 
 one and a half hours.  Meetings follow the posted agenda, with the chair or 

@@ -7,8 +7,11 @@ An overview of legal costs related to trademarks, especially the cost of tradema
 
 This page provides a basic background on the costs associated with Apache projects requesting registration or other trademark related legal assistance from the ASF and our counsel.  Please note that this is not legal advice, and in particular these costs or procedures do not apply to any non-Apache projects or individuals.  If non-Apache projects have legal questions about trademarks, you should contact your own legal counsel; the ASF cannot advise you.
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 See Also: [Trademark Resources Site Map](http://www.apache.org/foundation/marks/resources).
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 [TOC]
 

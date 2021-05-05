@@ -10,8 +10,11 @@ and PMC members; outside parties should start with our
 
 **Contents**
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 See Also: [Trademark Resources Site Map][resources].
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
 [TOC]
 
@@ -210,8 +213,11 @@ infringement, or if PMC members are personally familiar with the
 third party potentially infringing, then any PMC member may contact the
 third party by following our [**Guide For Contacting Third Parties**](http://www.apache.org/foundation/marks/templates/).
 
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
 See Also: [Contact Templates][2] and [Trademark Resources][3].
-  {: .pull-right style="float:right; border-style:ridge; width:200px; padding:5px; margin:5px" }
+
+</div>
 
  - The intent is to send a polite, non-confrontational email to the infringing
 party, reminding them of the proper treatment of our trademarks.  Do **not**
