@@ -68,6 +68,9 @@ TAGS_SAVE_AS = ''
 # We want to serve our static files mixed with content.
 STATIC_PATHS = ['.']
 
+# we want any html to be served as is
+READERS = {'html': None}
+
 # We don't use articles, but we don't want pelican to think
 # that content/ contains articles.
 ARTICLE_PATHS = ['articles']
@@ -95,6 +98,7 @@ THEME = './theme/apache'
 # Pelican Plugins
 # The provided location. If the buildbot does not have a new plugin then look into requirements.txt
 PLUGIN_PATHS = ['./theme/plugins']
+# sitemap was removed - temporarily
 PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader']
 
 # Lifecycle and plugins:
