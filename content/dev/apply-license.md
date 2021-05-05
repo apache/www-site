@@ -1,6 +1,7 @@
 Title: Applying the Apache License, Version 2.0
 license: https://www.apache.org/licenses/LICENSE-2.0
 
+<!-- try using a comment to trigger html parsing -->
 <script type="text/javascript">
 location.href = location.href.replace(/^https?:\/\/[^\/]+\/dev\//, 'https://infra.apache.org/');
 </script>
