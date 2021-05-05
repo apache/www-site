@@ -30,6 +30,7 @@ ASF_GENID = {
     'toc': True,
     'toc_headers': r"h[1-6]",
     'permalinks': True,
+    'tables': True,
     'debug': False
 }
 
@@ -41,6 +42,9 @@ METADATA_RE = re.compile(r'{{\s*(?P<meta>[-._:a-zA-Z0-9]+)\s*}}')
 
 # Find heading tags
 HEADING_RE = re.compile(r'^h[1-6]')
+
+# Find table tags
+TABLE_RE = re.compile(r'^table')
 
 # ID duplicate counts
 IDCOUNT_RE = re.compile(r'^(.*)_([0-9]+)$')
@@ -142,6 +146,35 @@ def permalink(soup, mod_element):
     new_tag['title'] = "Permalink"
     new_tag.string = LINK_CHAR
     mod_element.append(new_tag)
+
+
+# fixup cmark content
+def fixup_content(content):
+    text = content._content
+    modified = False
+    # Find messed up html
+    SCRIPTS_RE = re.compile(r'&lt;script')
+    m = SCRIPTS_RE.search(text)
+    if m:
+        modified = True
+        text = re.sub(SCRIPTS_RE, '<script', text)
+    SCRIPTS_RE = re.compile(r'&lt;/script')
+    m = SCRIPTS_RE.search(text)
+    if m:
+        modified = True
+        text = re.sub(SCRIPTS_RE, '</script', text)
+    STYLE_RE = re.compile(r'&lt;style')
+    m = STYLE_RE.search(text)
+    if m:
+        modified = True
+        text = re.sub(STYLE_RE, '<style', text)
+    STYLE_RE = re.compile(r'&lt;/style')
+    m = STYLE_RE.search(text)
+    if m:
+        modified = True
+        text = re.sub(STYLE_RE, '</style', text)
+    if modified:
+        content._content = text
 
 
 # expand metadata found in {{ key }}
@@ -250,6 +283,8 @@ def generate_id(content):
 
     # track the id tags
     ids = set()
+    # fix cmark mistakes
+    fixup_content(content)
     # parse html content into BeautifulSoup4
     soup = BeautifulSoup(content._content, 'html.parser')
     # page title
@@ -298,19 +333,26 @@ def generate_id(content):
         for tag in soup.findAll(HEADING_RE, id=False):
             headingid_transform(ids, soup, tag, asf_genid['permalinks'])
 
-    # step 6 - find TOC tag and generate Table of Contents
+    # step 6 - find all tables without class
+    if asf_genid['tables']:
+        if asf_genid['debug']:
+            print(f"tables: {content.relative_source_path}")
+
+        for tag in soup.findAll(TABLE_RE, _class=False):
+            tag['class'] = 'table'
+
+    # step 7 - find TOC tag and generate Table of Contents
     if asf_genid['toc']:
         tag = soup.find('p', text='[TOC]')
         if tag:
             generate_toc(content, tag, title, asf_genid['toc_headers'])
 
-    # step 7 - reset the html content
+    # step 8 - reset the html content
     content._content = soup.decode(formatter='html')
 
-    # step 8 - output all of the ids now in the soup.
+    # step 9 - output all of the ids now in the soup.
     for tag in soup.findAll(id=True):
         print(f"    #{tag['id']}")
-    print("--------")
 
 
 def register():
