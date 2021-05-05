@@ -262,10 +262,10 @@ As a non-profit corporation built upon collaborative consensus, we
 strive to keep records open and to document what we do. Some other resources to
 find out about the history of the ASF include:
 
-- [Board Minutes](http://www.apache.org/foundation/board/calendar.html)
-- [Formal Corporate Records](http://www.apache.org/foundation/records/)
-- [ASF History](http://www.apache.org/history/)
-- [Community Memorials](http://www.apache.org/memorials/)
+- [Board Minutes](/foundation/board/calendar.html)
+- [Formal Corporate Records](/foundation/records/)
+- [ASF History](/history/)
+- [Community Memorials](/memorials/)
 
 
 ### Contact Us  {#contact}
@@ -275,8 +275,8 @@ For any issues not addressed in the individual links above, you may
 All technical questions or questions about
 [individual projects](http://projects.apache.org/)
 should always be directed to the appropriate
-[project mailing list](http://apache.org/foundation/mailinglists.html).
+[project mailing list](/foundation/mailinglists.html).
 You may also
-[contact The ASF](http://apache.org/foundation/contact.html)
+[contact The ASF](/foundation/contact.html)
 via hardcopy mail or fax as well.
 

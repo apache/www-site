@@ -1,7 +1,7 @@
 Title: Media and Analyst Relations
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-**Note:** Please see our new, improved [Apache Press Team homepage](http://apache.org/press/) instead!
+**Note:** Please see our new, improved [Apache Press Team homepage](/press/) instead!
 
 This page is a comprehensive resource for members of the press and industry analysts. 
 Those seeking electronic press kits and/or sample press materials may 
@@ -24,7 +24,7 @@ comprising nearly 300 individual Members and over 2,000 Committers
 
 The ASF's successful
 [collaborative, meritocratic technology and
-community development process](http://www.apache.org/foundation/how-it-works.html#history)
+community development process](/foundation/how-it-works.html#history)
 known as "The Apache Way" is both highly-emulated by other Open Source
 initiatives and the subject of numerous industry case studies and
 business school curricula.
@@ -50,12 +50,12 @@ information can be found on the
 ### News and Announcements  {#news}
 
 Official ASF press releases can be found on the
-[ASF News](http://apache.org/foundation/news.html)
+[ASF News](/foundation/news.html)
 page.  Additional news updates are posted on the
 <!-- blog.apache.org -->
 [TheASF Twitter feed](http://twitter.com/TheASF), 
 the [ApacheCon Twitter feed](http://twitter.com/apachecon), as well as the
-[Apache Announce Lists](http://apache.org/foundation/mailinglists.html#foundation-announce).
+[Apache Announce Lists](/foundation/mailinglists.html#foundation-announce).
 
 Please [contact us](mailto:press@apache.org?subject=[Press request] Please send news information)
 to be added to the media briefing list on ASF-related activities.
@@ -66,16 +66,16 @@ members of the press and analyst community only.
 
 - [ASF Highlights: 1999-2009](highlights.html) (This does not represent every activity
   within the Foundation; please refer to the comprehensive list of
-  [ASF Top Level Projects](http://apache.org/)
+  [ASF Top Level Projects](/)
   for detailed history of individual projects.)
-- [Overview on The ASF](http://apache.org/foundation/)
-- [The Board](http://www.apache.org/foundation/board/)
-- [The Membership](http://apache.org/foundation/members.html)
-- [Roles](http://www.apache.org/foundation/how-it-works.html#roles)
-- ["The Apache Way"](http://www.apache.org/foundation/how-it-works.html#management)
-- [Meritocracy](http://apache.org/foundation/how-it-works.html#meritocracy)
-- [Project Incubation](http://apache.org/foundation/how-it-works.html#incubator)
-- [Sponsorship](http://apache.org/foundation/sponsorship.html)
+- [Overview on The ASF](/foundation/)
+- [The Board](/foundation/board/)
+- [The Membership](/foundation/members.html)
+- [Roles](/foundation/how-it-works.html#roles)
+- ["The Apache Way"](/foundation/how-it-works.html#management)
+- [Meritocracy](/foundation/how-it-works.html#meritocracy)
+- [Project Incubation](/foundation/how-it-works.html#incubator)
+- [Sponsorship](/foundation/sponsorship.html)
 
 ### Interview and Analyst Briefing Requests  {#interviews}
 
@@ -124,7 +124,7 @@ perceive to be disparaging, inflammatory, or harmful.
 **ASF Joint Announcements:** rarely issued; examples of such
 releases include instances where a major industry milestone or
 initiative takes place, or announcing
-[ASF Platinum-level Sponsorships](http://apache.org/foundation/sponsorship.html).
+[ASF Platinum-level Sponsorships](/foundation/sponsorship.html).
 Sample Headlines might include: "ASF Reaches Agreement with Sun Microsystems
 to Allow Open Source Java Implementations", or "Company X
 Announces ASF Platinum Sponsorship". Kindly contact the Apache Press Team
@@ -221,6 +221,6 @@ appropriate spokespeople. Journalists on immediate deadline
 -- may ring Sally Khudairi/HALO Worldwide on +1 617 921 8656 for assistance.
 
 Note: All technical questions or questions about [individual projects](http://projects.apache.org/)
-should always be directed to the appropriate [project mailing list](http://apache.org/foundation/mailinglists.html),
+should always be directed to the appropriate [project mailing list](/foundation/mailinglists.html),
 and will not be replied to by the Apache Press Team.
 
