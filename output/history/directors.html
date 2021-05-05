@@ -344,6 +344,30 @@ h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover
   </header>
   <main id="maincontent">
     <div class="container">
+    <h1>ASF History Project - Directors Timeline</h1>
+    
+
+    <div id="timeline-tooltip" style="height: 900px;"></div>
+&lt;script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="data/directors.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+  // see https://developers.google.com/chart/interactive/docs/gallery/timeline
+  google.charts.load('current',  {'packages':['timeline']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart()  {
+    var container = document.getElementById('timeline-tooltip');
+    var chart = new google.visualization.Timeline(container);
+    var dataTable = director_data();
+    var options =  {
+          timeline:  { showRowLabels: false }
+          };
+
+    chart.draw(dataTable, options);
+  }
+&lt;/script&gt;
+
+
     </div>
   </main>
 

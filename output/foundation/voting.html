@@ -344,6 +344,142 @@ h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover
   </header>
   <main id="maincontent">
     <div class="container">
+    <h1>Apache Voting Process</h1>
+    
+
+    <p>Because one of the fundamental aspects of accomplishing things within the
+Apache framework is doing so by consensus, there obviously needs to be a
+way to tell whether it has been reached. This is done by voting.</p>
+<p>There are essentially three types of vote:</p>
+<ol>
+<li>
+<p>Procedural</p>
+</li>
+<li>
+<p>Code modifications</p>
+</li>
+<li>
+<p>Package releases</p>
+</li>
+</ol>
+<p>Votes on <strong>procedural issues</strong> follow the common format of majority rule unless
+otherwise stated. That is, if there are more favourable votes than
+unfavourable ones, the issue is considered to have passed -- regardless of
+the number of votes in each category. (If the number of votes seems too
+small to be representative of a community consensus, the issue is typically
+not pursued. However, see the description of <a href="#LazyConsensus">lazy
+consensus</a> for a modifying factor.)</p>
+<p>Votes on <strong>code modifications</strong> follow a different model. In this scenario, a
+negative vote constitutes a <a href="#Veto">veto</a> , which cannot be overridden.
+Again, this model may be modified by a <a href="#LazyConsensus">lazy consensus</a>
+declaration when the request for a vote is raised, but the full-stop nature
+of a negative vote is unchanged. Under normal (non-lazy consensus)
+conditions, the proposal requires three positive votes and no negative ones
+in order to pass; if it fails to garner the requisite amount of support, it
+doesn't -- and typically is either withdrawn, modified, or simply allowed
+to languish as an open issue until someone gets around to removing it.</p>
+<p>Votes on whether a <strong>package</strong> is ready to be released or not use yet a
+different mechanism: are there are least three binding votes in favour of
+the release? See more about this <a href="#ReleaseVotes">below</a>.</p>
+<h1 id="binding-votes">Binding Votes<a class="headerlink" href="#binding-votes" title="Permalink">&para;</a></h1>
+<p>Who is permitted to vote is, to some extent, a community-specific thing.</p>
+<p>PMC members have formally binding votes, but in general community members are encouraged to vote,
+even if their votes are only advisory.</p>
+<h1 id="implications-of-voting">Implications of Voting<a class="headerlink" href="#implications-of-voting" title="Permalink">&para;</a></h1>
+<p>In some cases and communities, the exercise of a vote carries some
+responsibilities that may not be immediately obvious. For example, in some
+cases a favourable vote carries the implied message 'I approve <strong>and</strong> I'm
+willing to help.' Also, an unfavourable vote may imply that 'I disapprove,
+but I have an alternative and will help with that alternative.'</p>
+<p>The tacit implications of voting should be spelt out in the community's
+guidelines. However, <strong>in no case</strong> may someone's vote be considered
+invalid if the implied commitment doesn't appear to be met; a vote is a
+formal expression of opinion, <em>not</em> of commitment.</p>
+<p>If the <a href="#ReviewThenCommit">R-T-C</a> policy is in effect, a positive vote
+carries the very strong implied message, 'I have tested this patch myself,
+and found it good.' Similarly, a negative vote usually means that the patch
+was tested and found to be <em>not</em> -good, although the veto (for such it is
+in this case) may be based on other technical grounds.</p>
+<h1 id="expressing-votes-1-0-1-and-fractions">Expressing Votes: +1, 0, -1, and Fractions<a class="headerlink" href="#expressing-votes-1-0-1-and-fractions" title="Permalink">&para;</a></h1>
+<p>The voting process in Apache may seem more than a little weird if you've
+never encountered it before. Votes are represented as numbers between -1
+and +1, with '-1' meaning 'no' and '+1' meaning 'yes.'</p>
+<p>The in-between values are indicative of how strongly the voting individual
+feels. Here are some examples of fractional votes and ways in which they
+<em>might</em> be intended and interpreted:</p>
+<ul>
+<li>
+<p>+0: 'I don't feel strongly about it, but I'm okay with this.'</p>
+</li>
+<li>
+<p>-0: 'I won't get in the way, but I'd rather we didn't do this.'</p>
+</li>
+<li>
+<p>-0.5: 'I don't like this idea, but I can't find any rational
+justification for my feelings.'</p>
+</li>
+<li>
+<p>++1: 'Wow! I like this! Let's <em>do</em> it!'</p>
+</li>
+<li>
+<p>-0.9: 'I <em>really</em> don't like this, but I'm not going to stand in the way
+if everyone else wants to go ahead with it.'</p>
+</li>
+<li>
+<p>+0.9: 'This is a cool idea and i like it, but I don't have time/the
+skills necessary to help out.'</p>
+</li>
+</ul>
+<p>Votes should generally be permitted to run for at least 72 hours to provide
+an opportunity for all concerned persons to participate regardless of their
+geographic locations.</p>
+<h2 id="votes-on-code-modification">Votes on Code Modification<a class="headerlink" href="#votes-on-code-modification" title="Permalink">&para;</a></h2>
+<p>For code-modification votes, +1 votes are in favour of the proposal, but -1
+votes are <a href="#Veto">vetos</a> and kill the proposal dead until all vetoers
+withdraw their -1 votes.</p>
+<p>Unless a vote has been declared as using <a href="#LazyConsensus">lazy consensus</a> ,
+three +1 votes are required for a code-modification proposal to pass.</p>
+<p>Whole numbers are recommended for this type of vote, as the opinion being
+expressed is Boolean: 'I approve/do not approve of this change.'</p>
+<h2 id="ReleaseVotes">Votes on Package Releases<a class="headerlink" href="#ReleaseVotes" title="Permalink">&para;</a></h2>
+<p>Votes on whether a package is ready to be released use
+<a href="glossary.html#MajorityApproval">majority approval</a> --
+i.e. at least three PMC members must vote affirmatively
+for release, and there must be more positive than negative votes.
+<strong>Releases may not be vetoed.</strong>
+Generally the community
+will cancel the release vote if anyone identifies serious problems, but
+in most cases the ultimate decision,
+lies with the individual serving as release manager. The
+specifics of the process may vary from project to project, but the 'minimum
+quorum of three +1 votes' rule is universal.</p>
+<h1 id="Veto">Vetos<a class="headerlink" href="#Veto" title="Permalink">&para;</a></h1>
+<p>A code-modification proposal may be stopped dead in its tracks by a -1 vote
+by a qualified voter. This constitutes a veto, and it cannot be overruled
+nor overridden by anyone. Vetos stand until and unless withdrawn by their
+casters.</p>
+<p>To prevent vetos from being used capriciously, they must be accompanied by
+a technical justification showing why the change is bad (opens a security
+exposure, negatively affects performance, <em>etc.</em> ). A veto without a
+justification is invalid and has no weight.</p>
+<h1 id="LazyConsensus">Consensus Gauging through Silence<a class="headerlink" href="#LazyConsensus" title="Permalink">&para;</a></h1>
+<p>An alternative to voting that is sometimes used to measure the
+acceptability of something is the concept of
+<a href="glossary.html#LazyConsensus">lazy consensus</a>.</p>
+<p>Lazy consensus is simply an announcement of 'silence gives assent.' When
+someone wants to determine the sense of the community this way, it might do
+so with a mail message such as:</p>
+<p>:    "The patch below fixes bug #8271847; if no-one objects within three
+days, I'll assume lazy consensus and commit it."</p>
+<p>Lazy consensus cannot be applied to code changes when the
+<a href="glossary.html#ReviewThenCommit">review-then-commit</a> policy is in effect.</p>
+<h1 id="reasons-for-votes">Reasons for Votes<a class="headerlink" href="#reasons-for-votes" title="Permalink">&para;</a></h1>
+<p>People tend to avoid conflict and thrash around looking for something to
+substitute - somebody in charge, a rule, a process, stagnation. None of
+these tend to be very good substitutes for doing the hard work of resolving
+the conflict.</p>
+
+
     </div>
   </main>
 

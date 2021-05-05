@@ -344,6 +344,39 @@ h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover
   </header>
   <main id="maincontent">
     <div class="container">
+    <h1>Mirroring Using Apache HTTP Server Version 2.2 (experimental)</h1>
+    
+
+    <p><strong>These instructions are currently experimental ; not for production.</strong></p>
+<p>If you are using version 2.2 or greater of the Apache HTTP Server for your
+mirror, you can try to mirror using a cached reverse proxy in
+place of rsync. This configuration minimizes resource usage both for you
+and for our servers and also assures that our users can immediately access
+new files.</p>
+<p>Before using this configuration, please assure that your server includes
+the modules
+<a href="http://httpd.apache.org/docs/2.2/mod/mod_cache.html">mod_cache</a> and
+<a href="http://httpd.apache.org/docs/2.2/mod/mod_disk_cache.html">mod_disk_cache</a>.
+Then the following directives should be added to <code>httpd.conf</code> either in the
+main server context or inside a <code>&lt;VirtualHost&gt;</code> :</p>
+<pre><code>CacheRoot /usr/local/apache2/var/apachecache
+CacheEnable disk /apache
+ProxyPass /apache http://www.apache.org/dist
+ProxyPassReverse /apache http://www.apache.org/dist
+</code></pre>
+<p>The directory <code>/usr/local/apache2/var/apachecache</code> can be replaced with any
+directory <strong>that is writable by the User/Group specified in httpd.conf</strong>.
+The path <code>/apache</code> can be changed as needed for your site. In this
+configuration, the site will be accessed as
+<code>http://yoursite.example.com/apache/</code>. You may even replace this with <code>/</code>
+if you run your mirror on its own virtual host.</p>
+<p>To control disk space usage on your mirror, you should run
+<a href="http://httpd.apache.org/docs/2.2/programs/htcacheclean.html">htcacheclean</a>
+from cron. Please allow at least 5120MB.</p>
+<p>Once this is configured and tested, please notify us using the instructions
+on the <a href="http://www.apache.org/info/how-to-mirror.html">How to mirror</a> page.</p>
+
+
     </div>
   </main>
 
