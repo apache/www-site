@@ -108,7 +108,7 @@ If you are unable to find the logo you are looking for try inspecting the [direc
             <br />
             <div class="poweredBy_canvas_container">
                 <canvas id="canvas_poweredBy_1"></canvas>
-                <img alt="" id="img_poweredBy_1" src="" />
+                <img alt="Powered By" id="img_poweredBy_1" src="" />
             </div>
             <div class="clearfix">&nbsp;</div>
         </div>
@@ -207,7 +207,7 @@ Badges containing pictorial marks of the Apache Feather with various taglines an
             <br />
             <div class="twibbon_canvas_container">
                 <canvas id="canvas_twibbon_1"></canvas>
-                <img alt="" id="img_twibbon_1" src="" />
+                <img alt="Twitter Ribbon" id="img_twibbon_1" src="" />
             </div>
             <div class="clearfix">&nbsp;</div>
         </div>

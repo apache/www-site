@@ -33,7 +33,7 @@ T-shirt.
 
 # Buy ASF-sponsored items at The Rodent's Cache  {#RodentsCache}
 
-[![](images/rodent-cache.jpg)](http://www.cafepress.com/meepzor/230676)
+[![The Rodent's Cache](images/rodent-cache.jpg)](http://www.cafepress.com/meepzor/230676)
 Show your support for your favourite Apache package, and demonstrate your
 coolness to those around you, by purchasing ASF-branded T-shirts,
 sweatshirts, mugs, caps, and other items from [The Rodent's
