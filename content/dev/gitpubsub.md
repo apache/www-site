@@ -1,4 +1,4 @@
-Title:
+Title: GitPubSub
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 #GitPubSub#
