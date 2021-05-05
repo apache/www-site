@@ -42,7 +42,7 @@ Questions for the Legal Affairs Committee should be raised on
 [LEGAL JIRA space](https://issues.apache.org/jira/browse/LEGAL).
 
 Most discussions are held on the public 
-[legal-discuss@](http://www.apache.org/foundation/mailinglists.html#foundation-legal)
+[legal-discuss@](/foundation/mailinglists.html#foundation-legal)
 mailing list. See the [legal-discuss@
 archives](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/) 
 for previous discussions.

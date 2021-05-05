@@ -35,7 +35,7 @@ what is a complex and often contentious subject.
 The first approximation to the Third Party Licensing Policy is that the ASF
 must be able to distribute works created within an Apache Project solely
 under the [Apache License, Version
-2](http://www.apache.org/licenses/LICENSE-2.0). And furthermore, any
+2](/licenses/LICENSE-2.0). And furthermore, any
 dependencies that such Works might have must be licensed under similar
 terms. This is an ideal that is both highly desirable and yet not 100%
 consistently met -- at least not in full, when you consider recursive
@@ -62,9 +62,9 @@ Licenses](https://svn.apache.org/repos/asf/infrastructure/site/trunk/archive/leg
 
 The first approximation gives a lot of good answers, but a few wrong
 answers. For starters, antigens aren't all bad. The [Apache License,
-Version 2](http://www.apache.org/licenses/LICENSE-2.0) has a patent
+Version 2](/licenses/LICENSE-2.0) has a patent
 termination clause. That clause coupled with [Contributor License
-Agreements](http://www.apache.org/licenses/#clas) is part of a larger
+Agreements](/licenses/#clas) is part of a larger
 strategy which keeps the blood supply safe from other dangers.
 
 This means that while category A licenses are perfectly acceptable in small
@@ -181,7 +181,7 @@ library.
 
 OK, I'm out of letters. But still not everything quite fits.
 [Santuario](http://santuario.apache.org/) has to deal with
-[regulations](http://www.apache.org/licenses/exports/) that aren't
+[regulations](/licenses/exports/) that aren't
 copyright, patent, or even license related. HTTPD has dealt with a similar
 situation by providing [separate
 downloads](http://httpd.apache.org/download.cgi).
@@ -212,7 +212,7 @@ Quantum mechanics, the [role of the observer often affects the properties
 of the observed](http://en.wikipedia.org/wiki/Double-slit_experiment). The
 ASF's decision to pursue Java and XML have had a profound affect on both of
 those subjects. (Perhaps not as much as we [might have
-hoped](http://www.apache.org/jcp/sunopenletter.html) , but substantial
+hoped](/jcp/sunopenletter.html) , but substantial
 nevertheless). This means that from time to time we should allow ourselves
 to pursue carefully selected initiatives that defy all of the above
 criteria.
@@ -274,7 +274,7 @@ work.
 
 - As much as humanly possible, everything will be by consensus of the Legal
 Affairs Committee, though possibly via [Lazy
-Consensus](http://www.apache.org/foundation/voting.html#LazyConsensus). If
+Consensus](/foundation/voting.html#LazyConsensus). If
 there ever is a time that consensus can't be reached, the decision will
 fall to the Chair who will keep the board informed on any such issues.
 

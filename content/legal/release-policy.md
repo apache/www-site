@@ -128,7 +128,7 @@ Apache License 2.0.
 
 Source files consisting of works submitted directly to the ASF by the
 copyright owner or owner's agent must contain the appropriate [ASF license
-header](http://www.apache.org/legal/src-headers.html#headers).
+header](/legal/src-headers.html#headers).
 
 ## Release Distribution  {#release-distribution}
 
@@ -301,7 +301,7 @@ licensing FAQ](#license).
 ### What are the ASF requirements on approving a release?  {#approving-a-release}
 
 Votes on whether a package is ready to be released use 
-[majority approval](http://www.apache.org/foundation/glossary.html#MajorityApproval) -- 
+[majority approval](/foundation/glossary.html#MajorityApproval) -- 
 i.e., at least three PMC members must vote affirmatively
 for release, and there must be more positive than negative votes.
 Releases may not be vetoed. Before voting +1 PMC members are required
@@ -322,7 +322,7 @@ releases. Announcements must contain a link to the relevant download page for th
 At the very least, emails should be sent out announcing this to
 all appropriate mailing lists. Many top level projects have announcement
 lists for this purpose. There is also an
-[ASF-wide](http://www.apache.org/foundation/mailinglists.html#foundation-announce)
+[ASF-wide](/foundation/mailinglists.html#foundation-announce)
 announcement list which is suitable.
 
 Please note that you can not post the ASF-wide announcement list without
@@ -498,7 +498,7 @@ update any links from the download page.
 ### How do I release Maven Artifacts?  {#maven-artifacts}
 
 See the [Publishing Maven
-Releases](http://www.apache.org/dev/publishing-maven-artifacts.html) guide.
+Releases](/dev/publishing-maven-artifacts.html) guide.
 
 ## Release Licensing Questions  {#license}
 
@@ -516,7 +516,7 @@ In short, only one copy of the license is needed per distribution. This
 full license file should be placed at the root of the distribution in a
 file named LICENSE. For software developed at the ASF, each source file
 need only contain the [boilerplate
-notice](http://www.apache.org/legal/src-headers.html#headers).
+notice](/legal/src-headers.html#headers).
 
 ### Where Is The Right Place For Attribution Notices?  {#attribution-notices}
 
@@ -549,7 +549,7 @@ below:
 N.B. Unfortunately versions of this document prior to 2013-01-30 (r1440650) were incorrect, as they used the phrase:
 "developed by" instead of "developed at". 
 The official wording was established in section 6C of the 
-[board minutes for May 24 2006](http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_05_24.txt)
+[board minutes for May 24 2006](/foundation/records/minutes/2006/board_minutes_2006_05_24.txt)
 
 <!-- Note: the text was originally added in: r201713 see #INFRA-367 -->
 

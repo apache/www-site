@@ -380,5 +380,5 @@ in certain specific fashions. These *third party notices* vary from license to l
   
 A *required third-party notice* is any third party notice which isn't covered by the above cases.
 
-See [Bundling Other ASF Products](http://www.apache.org/dev/licensing-howto.html#bundle-asf-product) for a note on required notices when a release contains another Apache product. 
+See [Bundling Other ASF Products](/dev/licensing-howto.html#bundle-asf-product) for a note on required notices when a release contains another Apache product. 
 
