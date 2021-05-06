@@ -169,7 +169,7 @@ own authorized conferences or specifically contracted and authorized sellers.
 
 If you wish to incorporate any Apache trademarks on non-software
 merchandise, please [email us on the
-trademarks@](mailto:trademarks@apache.org?subject=%5btrademark%5d+Merchandise+approval+for)
+trademarks@](mailto:trademarks@apache.org?subject=%5btrademark%5d%20Merchandise%20approval%20for)
 mailing list, and also cc: the relevant private@*projectname*.apache.org 
 mailing list.  Thus, to request permission for the cute Apache Flink 
 squirrel logo, email: `trademarks@apache.org, private@flink.apache.org`

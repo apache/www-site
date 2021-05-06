@@ -222,7 +222,7 @@ own authorized conferences.
 
 If you have a service created or in development that you wish to provide to 
 the public incorporating any Apache marks in its branding, please 
-[email us on the trademarks@](mailto:trademarks@apache.org?subject=%5btrademark%5d+Service+name+approval+for)
+[email us on the trademarks@](mailto:trademarks@apache.org?subject=%5btrademark%5d%20Service%20name%20approval%20for)
 mailing list.
 
 Please feel free to contact us in advance of setting up your service with your 

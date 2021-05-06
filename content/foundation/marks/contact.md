@@ -24,11 +24,11 @@ your compliance with all points in the Event policy, and asking for
 permission (or with any questions), to the relevant project list 
 below **and** cc: to `trademarks@apache.org`:
 
-- [Apache Hadoop&reg; Event Requests](mailto:trademarks@hadoop.apache.org?subject=%5bEVENT%5d+Hadoop+Event+branding+use+request)
-- [Apache CloudStack&reg; Event Requests](mailto:private@cloudstack.apache.org?subject=%5bEVENT%5d+CloudStack+Event+branding+use+request)
-- [Apache OpenOffice&reg; Event Requests](mailto:private@openoffice.apache.org?subject=%5bEVENT%5d+OpenOffice+Event+branding+use+request)
-- [Apache Subversion&reg; Event Requests](mailto:private@subversion.apache.org?subject=%5bEVENT%5d+Subversion+Event+branding+use+request)
-- [All Other Apache Project Event Requests](mailto:trademarks@apache.org?subject=%5bEVENT%5d+Event+branding+use+request)
+- [Apache Hadoop&reg; Event Requests](mailto:trademarks@hadoop.apache.org?subject=%5bEVENT%5d%20Hadoop%20Event%20branding%20use%20request)
+- [Apache CloudStack&reg; Event Requests](mailto:private@cloudstack.apache.org?subject=%5bEVENT%5d%20CloudStack%20Event%20branding%20use%20request)
+- [Apache OpenOffice&reg; Event Requests](mailto:private@openoffice.apache.org?subject=%5bEVENT%5d%20OpenOffice%20Event%20branding%20use%20request)
+- [Apache Subversion&reg; Event Requests](mailto:private@subversion.apache.org?subject=%5bEVENT%5d%20Subversion%20Event%20branding%20use%20request)
+- [All Other Apache Project Event Requests](mailto:trademarks@apache.org?subject=%5bEVENT%5d%20Event%20branding%20use%20request)
 
 ## Uses in Domain Names  {#domains}
 
@@ -38,17 +38,17 @@ your compliance with all points in the Domain policy, and asking for
 permission (or with any questions), to the relevant project list 
 below, **and** cc: to `trademarks@apache.org`:
 
-- [Apache Hadoop&reg; Domain Name Requests](mailto:trademarks@hadoop.apache.org?subject=%5bDOMAIN%5d+Hadoop+Domain+Name+branding+use+request)
-- [Apache CloudStack&reg; Domain Name Requests](mailto:private@cloudstack.apache.org?subject=%5bDOMAIN%5d+CloudStack+Domain+Name+branding+use+request)
-- [Apache OpenOffice&reg; Domain Name Requests](mailto:private@OpenOffice.apache.org?subject=%5bDOMAIN%5d+OpenOffice+Domain+Name+branding+use+request)
-- [Apache Subversion&reg; Domain Name Requests](mailto:private@subversion.apache.org?subject=%5bDOMAIN%5d+Subversion+Domain+Name+branding+use+request)
-- [All Other Apache Project Domain Name Requests](mailto:trademarks@apache.org?subject=%5bDOMAIN%5d+Domain+Name+branding+use+request)
+- [Apache Hadoop&reg; Domain Name Requests](mailto:trademarks@hadoop.apache.org?subject=%5bDOMAIN%5d%20Hadoop%20Domain%20Name%20branding%20use%20request)
+- [Apache CloudStack&reg; Domain Name Requests](mailto:private@cloudstack.apache.org?subject=%5bDOMAIN%5d%20CloudStack%20Domain%20Name%20branding%20use%20request)
+- [Apache OpenOffice&reg; Domain Name Requests](mailto:private@OpenOffice.apache.org?subject=%5bDOMAIN%5d%20OpenOffice%20Domain%20Name%20branding%20use%20request)
+- [Apache Subversion&reg; Domain Name Requests](mailto:private@subversion.apache.org?subject=%5bDOMAIN%5d%20Subversion%20Domain%20Name%20branding%20use%20request)
+- [All Other Apache Project Domain Name Requests](mailto:trademarks@apache.org?subject=%5bDOMAIN%5d%20Domain%20Name%20branding%20use%20request)
 
 ## Uses for Merchandise (swag, apparel, pins, stickers, etc.)  {#swag}
 
 We are currently working on guidelines that allow simpler use of Apache 
 brands in such situations in ways that improve the image and reach 
-of Apache projects.  For the time being, you can email [trademarks@](mailto:trademarks@apache.org?subject=%5bMERCH%5d+Merchandising+branding+use+request).
+of Apache projects.  For the time being, you can email [trademarks@](mailto:trademarks@apache.org?subject=%5bMERCH%5d%20Merchandising%20branding%20use%20request).
 
 ## Uses in Software Products  {#products}
 
@@ -71,19 +71,19 @@ brands in such situations in ways that improve the image and reach
 of Apache projects, and that don't imply endorsement or affiliation 
 between your organization and the ASF or Apache projects.  
 
-For the time being, please email [trademarks@](mailto:trademarks@apache.org?subject=%5bHOSTED%5d+Services+branding+use+request)
+For the time being, please email [trademarks@](mailto:trademarks@apache.org?subject=%5bHOSTED%5d%20Services%20branding%20use%20request)
 
 # Report Trademark Problems Or Make Complaints  {#complaint}
 
 The ASF and Apache projects strive to be respectful of the trademarks of 
 other organizations.  If you have a concern or complain about use of *your* 
 trademarks by any Apache project **hosted on an apache.org domain**, please 
-[contact us directly](mailto:trademarks@apache.org?subject=%5btrademark%5d+Trademark+use+complaint).
+[contact us directly](mailto:trademarks@apache.org?subject=%5btrademark%5d%20Trademark%20use%20complaint).
 
 # For PMCs or Committers  {#pmc}
 
 Apache PMC members or committers with questions about Apache brand policies or with any 
-other questions or suggestions should [email the privately-archived trademarks@ list](mailto:trademarks@apache.org?subject=%5bPMC%5d+Trademark+policy+question) directly.
+other questions or suggestions should [email the privately-archived trademarks@ list](mailto:trademarks@apache.org?subject=%5bPMC%5d%20Trademark%20policy%20question) directly.
 
 In general, cc:'ing your projects private@ PMC list is almost always a good idea too.
 
@@ -91,14 +91,14 @@ In general, cc:'ing your projects private@ PMC list is almost always a good idea
 
 For any general questions not addressed above, send a private email to: 
 
-- [Apache Hadoop&reg; Trademark Questions](mailto:trademarks@hadoop.apache.org?subject=%5bBRAND%5d+Hadoop+I+have+a+question)
-- [Apache CloudStack&reg; Trademark Questions](mailto:private@cloudstack.apache.org?subject=%5bBRAND%5d+CloudStack+I+have+a+question)
-- [Apache OpenOffice&reg; Trademark Questions](mailto:private@OpenOffice.apache.org?subject=%5bBRAND%5d+OpenOffice+I+have+a+question)
-- [Apache Subversion&reg; Trademark Questions](mailto:private@subversion.apache.org?subject=%5bBRAND%5d+Subversion+I+have+a+question)
-- [General Trademark Questions or Questions about any other projects](mailto:trademarks@apache.org?subject=%5bBRAND%5d+I+have+a+question)
+- [Apache Hadoop&reg; Trademark Questions](mailto:trademarks@hadoop.apache.org?subject=%5bBRAND%5d%20Hadoop%20I%20have%20a%20question)
+- [Apache CloudStack&reg; Trademark Questions](mailto:private@cloudstack.apache.org?subject=%5bBRAND%5d%20CloudStack%20I%20have%20a%20question)
+- [Apache OpenOffice&reg; Trademark Questions](mailto:private@OpenOffice.apache.org?subject=%5bBRAND%5d%20OpenOffice%20I%20have%20a%20question)
+- [Apache Subversion&reg; Trademark Questions](mailto:private@subversion.apache.org?subject=%5bBRAND%5d%20Subversion%20I%20have%20a%20question)
+- [General Trademark Questions or Questions about any other projects](mailto:trademarks@apache.org?subject=%5bBRAND%5d%20I%20have%20a%20question)
 
 For **legal counsel** sending legally privileged questions or information, 
-please email [vp-brand@apache.org](mailto:vp-brand@apache.org?subject=%5bLEGAL%5d+Legal+question+about+Apache+marks) privately.
+please email [vp-brand@apache.org](mailto:vp-brand@apache.org?subject=%5bLEGAL%5d%20Legal%20question%20about%20Apache%20marks) privately.
 
 If you have a **non**-trademark related legal question, please 
 contact the [Legal Affairs Committee](/legal/).
