@@ -668,12 +668,12 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 
 # Deceased Members of The Apache Software Foundation #
 
-- ** [Nóirín Plunkett](/memorials/noirin.html) ** 
+- **[Nóirín Plunkett](/memorials/noirin.html)** 
 
-- ** [Dion Gillard](/memorials/dion_gillard.html) **
+- **[Dion Gillard](/memorials/dion_gillard.html)**
 
-- ** Randy Kobes **
+- **Randy Kobes**
 
-- ** [Martin Pöschl](/memorials/martin_poeschl.html) **
+- **[Martin Pöschl](/memorials/martin_poeschl.html)**
 
-- ** [Henk P. Penning](/memorials/henk_penning.html) **
+- **[Henk P. Penning](/memorials/henk_penning.html)**

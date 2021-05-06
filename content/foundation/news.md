@@ -2,7 +2,9 @@ Title: News
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 Please see our [current listing of News and Announcements](https://www.apache.org/press/#news) for more recent notes.
+
 <hr/>
+
 Keep informed about news from the Apache Software Foundation and its
 projects by subscribing to the [Apache
 Announcements](mailinglists.html#foundation-announce) mailing list. To see
