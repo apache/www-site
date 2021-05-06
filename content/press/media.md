@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 This page is a comprehensive resource for members of the press and industry analysts. 
 Those seeking electronic press kits and/or sample press materials may 
-[contact us](mailto:press@apache.org?subject=[Press request] Please send a press kit) for additional assistance.
+[contact us](mailto:press@apache.org?subject=[Press+request]+Please+send+a+press+kit) for additional assistance.
 
 [TOC]
 
@@ -57,7 +57,7 @@ page.  Additional news updates are posted on the
 the [ApacheCon Twitter feed](http://twitter.com/apachecon), as well as the
 [Apache Announce Lists](/foundation/mailinglists.html#foundation-announce).
 
-Please [contact us](mailto:press@apache.org?subject=[Press request] Please send news information)
+Please [contact us](mailto:press@apache.org?subject=[Press+request]+Please+send+news+information)
 to be added to the media briefing list on ASF-related activities.
 Note that participation in the specific press program is restricted to credentialed
 members of the press and analyst community only.  
@@ -92,7 +92,7 @@ Kindly note that The ASF is vendor-neutral: we are unable to provide any
 statements that endorse, promote, or advertise the capability,
 credibility, or quality of any technology, product, or service.
 Please
-[contact us](mailto:press@apache.org?subject=[Press request] Briefing requests)
+[contact us](mailto:press@apache.org?subject=[Press+request]+Briefing+requests)
 for assistance.
 
 ### Press Release Review Process  {#releases}
@@ -110,7 +110,7 @@ to distribute your announcement in advance to the media (or hold
 briefings) under embargo.
 
 Please forward the document in its entirety (even if in draft stage) to
-[press@apache.org](mailto:press@apache.org?subject=[Review] Please review this press release)
+[press@apache.org](mailto:press@apache.org?subject=[Review]+Please+review+this+press+release)
 for consideration. Note that The ASF is
 vendor-neutral and does not provide any testimonials that
 endorse, promote, or advertise the capability, credibility, or
@@ -128,7 +128,7 @@ initiative takes place, or announcing
 Sample Headlines might include: "ASF Reaches Agreement with Sun Microsystems
 to Allow Open Source Java Implementations", or "Company X
 Announces ASF Platinum Sponsorship". Kindly contact the Apache Press Team
-directly at [press@apache.org](mailto:press@apache.org?subject=[Review] Please review this joint release) for guidelines pertaining to
+directly at [press@apache.org](mailto:press@apache.org?subject=[Review]+Please+review+this+joint+release) for guidelines pertaining to
 headline/lead, dateline, and boilerplate use. If seeking a quote
 from The ASF, please supply a quote that we can review and
 modify: note that The ASF is vendor-neutral and does not provide
@@ -194,7 +194,7 @@ together with The ASF.
 
 ### Contact The Apache Press Team  {#contact}
 
-Email **[press@apache.org](mailto:press@apache.org?subject=[Contact] Media question)**
+Email **[press@apache.org](mailto:press@apache.org?subject=[Contact]+Media+question)**
 with all media-related inquiries. Please be sure to include
 the following information:
 

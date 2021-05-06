@@ -271,7 +271,7 @@ find out about the history of the ASF include:
 ### Contact Us  {#contact}
 
 For any issues not addressed in the individual links above, you may
-[contact us](mailto:press@apache.org?subject=[Highlights] I need more highlights).
+[contact us](mailto:press@apache.org?subject=[Highlights]+I+need+more+highlights).
 All technical questions or questions about
 [individual projects](http://projects.apache.org/)
 should always be directed to the appropriate

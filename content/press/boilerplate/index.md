@@ -67,7 +67,7 @@ and always send it to the apache.org home page.
 
 For any other questions about press releases, you may
 contact us via email at
-[press@apache.org](mailto:press@apache.org?subject=[Press] Release Boilerplate Request).
+[press@apache.org](mailto:press@apache.org?subject=[Press]+Release+Boilerplate+Request).
 All technical questions or questions about
 [individual projects](http://projects.apache.org/)
 announcements or communications should always be directed to the appropriate
