@@ -11,7 +11,7 @@ policies.
 
 # Exporting ASF Products  {#exporting}
 
-[The Apache Software Foundation (ASF)](http://www.apache.org/foundation/)
+[The Apache Software Foundation (ASF)](/foundation/)
 is a 501(c)3 nonprofit charity based in the United States of America. All
 of our products are developed via online collaboration in public forums and
 distributed from a central server within the U.S. Therefore, U.S. export

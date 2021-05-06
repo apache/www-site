@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 This page answers most of the common queries that we receive about our contribution agreements. 
 
 * For other licensing questions, please see our [Licensing FAQ](../foundation/licensing.html).
-* For non-licensing questions, please see our [General FAQ](//www.apache.org/foundation/preFAQ.html).
+* For non-licensing questions, please see our [General FAQ](/foundation/preFAQ.html).
 
 # Frequent Questions about ASF Contribution Agreements #
 
@@ -132,7 +132,7 @@ Using a PDF editor will allow the submitter to fill and sign the forms without p
 The precise steps needed depend on the operating system of the submitter.
 
 **MacOSX users:** use your browser to navigate to the
-[.pdf form](https://apache.org/licenses/contributor-agreements.html)
+[.pdf form](/licenses/contributor-agreements.html)
 and download the form to a local file using the save-as function.
 Open the file using **Preview**, the standard PDF viewer/editor. Fill the form fields using the keyboard.
 For the signature, use the **Tools-Annotate-Signature** function to attach a signature. Save the filled form.
@@ -141,7 +141,7 @@ attach the filled form and send it to secretary.
 Keep the filled form for your records.
 
 **Apple iOS users:** use your browser to navigate to the
-[.pdf form](https://apache.org/licenses/contributor-agreements.html)
+[.pdf form](/licenses/contributor-agreements.html)
 and download the form using the **Files** feature. Open the form using **Files**, the standard file viewer.
 Fill the form fields using the keyboard. For the signature, use the **Signature** function to attach
 your signature. Save the filled form. **Share** the file to the email client and send the message with
@@ -152,7 +152,7 @@ Keep the filled form for your records.
 **Android users** need a third party tool to fill and attach a signature. First, install a PDF tool
 such as **Adobe Acrobat**. These instructions may differ somewhat if you are not using Adobe Acrobat.
 Use your web browser to navigate to the
-[.pdf form](https://apache.org/licenses/contributor-agreements.html)
+[.pdf form](/licenses/contributor-agreements.html)
 and download the form to a local file. The file should automatically open in the PDF tool.
 Fill the form fields using the keyboard. For the signature, use the **Edit** function and choose **Fill & Sign**
 to attach a signature. Save the filled form. Share the file via **Share a copy** to the email client
@@ -166,9 +166,8 @@ If you have questions about The Apache Software Foundation, its projects,
 or its software, we recommend the following link for more information or
 assistance:
 
-- The Foundation pre-FAQ: [Contact Apache
-FAQ](http://www.apache.org/foundation/preFAQ.html) 
+- The Foundation pre-FAQ: [Contact Apache FAQ](/foundation/preFAQ.html) 
 
 If you have a question specifically about the Apache license or
 distribution of Apache software, and it has not been answered by this page,
-please [contact the Legal Affairs Committee](//www.apache.org/legal/).
+please [contact the Legal Affairs Committee](/legal/).

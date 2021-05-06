@@ -17,7 +17,7 @@ The MUST requirements are the necessary rules that ensure Apache projects operat
 Apache projects must adhere in full to any MUST rules in. However, projects have full flexibility in all other areas. Should a project find these policies are unsuitable for their specific project, the project community members should discuss them with the broader ASF community. If it is found to be necessary, PMCs can propose alterations for their project to the board.
 
 Ultimately, Apache projects report to, and are responsible to, the Apache Software Foundation 
-<a href="https://www.apache.org/foundation/board/" target="_blank">Board of Directors</a>, which mandates these policies 
+<a href="/foundation/board/" target="_blank">Board of Directors</a>, which mandates these policies 
 for the ASF as a whole. Various ASF corporate officers are responsible for setting specific 
 ASF-wide policies, as well as for providing various services to all Apache projects 
 (primarily Infra, Legal, Brand, Press, and Fundraising).
@@ -28,25 +28,25 @@ ASF-wide policies, as well as for providing various services to all Apache proje
 
 # Governance  {#governance}
 
-* Projects MUST provide a [quarterly status report to the board](https://www.apache.org/foundation/board/reporting).
+* Projects MUST provide a [quarterly status report to the board](/foundation/board/reporting).
 
-* Project technical decisions MUST be made and communicated on [public and archived places](https://www.apache.org/dev/pmc.html#mailing-list-naming-policy).
+* Project technical decisions MUST be made and communicated on [public and archived places](/dev/pmc.html#mailing-list-naming-policy).
 
-* Project discussions and interactions SHOULD be held [in public, in accessible, asynchronous and archived places](https://www.apache.org/dev/pmc.html#mailing-list-naming-policy) unless there is a specific documented exception that allows holding discussions on certain topics in private.
+* Project discussions and interactions SHOULD be held [in public, in accessible, asynchronous and archived places](/dev/pmc.html#mailing-list-naming-policy) unless there is a specific documented exception that allows holding discussions on certain topics in private.
 
 * Project discussions SHOULD use normal ASF-hosted dev@, user@, and similar mailing lists.
 
-* Projects MAY use a documented consensus process or a VOTE for any [new committers](https://www.apache.org/dev/pmc.html#newcommitter) or [PMC members](https://www.apache.org/dev/pmc.html#newpmc), and carefully follow policies for recording ICLAs and granting access.
+* Projects MAY use a documented consensus process or a VOTE for any [new committers](/dev/pmc.html#newcommitter) or [PMC members](/dev/pmc.html#newpmc), and carefully follow policies for recording ICLAs and granting access.
 	
 # Technical  {#technical}
 
 * The primary source control repository MUST be administered by the ASF Infra team on ASF hardware (currently, using either SVN or git). (*citation needed*)
 
-* Projects MUST follow the [Release Policy](https://www.apache.org/legal/release-policy), the [Apache Voting Process](https://www.apache.org/foundation/voting.html) and the [Release Distribution Policy](http://www.apache.org/dev/release-distribution) when releasing software artifacts for general public use, which includes important voting, licensing, and publicity rules.
+* Projects MUST follow the [Release Policy](/legal/release-policy), the [Apache Voting Process](/foundation/voting.html) and the [Release Distribution Policy](/dev/release-distribution) when releasing software artifacts for general public use, which includes important voting, licensing, and publicity rules.
 
-* Apache software product releases MUST be provided [free of charge](https://www.apache.org/free/).
+* Apache software product releases MUST be provided [free of charge](/free/).
 
-* Projects SHOULD always [work with the Security Team](https://www.apache.org/security/) when dealing with vulnerabilities.
+* Projects SHOULD always [work with the Security Team](/security/) when dealing with vulnerabilities.
 	
 # Community  {#community}
 	
@@ -54,33 +54,33 @@ ASF-wide policies, as well as for providing various services to all Apache proje
 
 # Legal  {#legal}
 
-* Contributors MUST [sign an iCLA](https://www.apache.org/licenses/#clas) before committer access to projects will be granted.
+* Contributors MUST [sign an iCLA](/licenses/#clas) before committer access to projects will be granted.
 
-* Projects MUST use the Apache license and header for code developed and released within the project, including [LICENSE, NOTICE, and source headers](https://www.apache.org/legal/src-headers.html).
+* Projects MUST use the Apache license and header for code developed and released within the project, including [LICENSE, NOTICE, and source headers](/legal/src-headers.html).
 
-* Projects MUST NOT include [software with unapproved or restricted licenses](https://www.apache.org/legal/resolved.html#category-x) in Apache project releases unless following explicit exceptions.
+* Projects MUST NOT include [software with unapproved or restricted licenses](/legal/resolved.html#category-x) in Apache project releases unless following explicit exceptions.
 
-* Projects MAY include [software with approved compatible licenses](https://www.apache.org/legal/resolved.html#category-a) in Apache project releases.
+* Projects MAY include [software with approved compatible licenses](/legal/resolved.html#category-a) in Apache project releases.
 
 # Brand  {#brand}
 	
-* Project websites MUST comply with the [Apache Project Branding Requirements](https://www.apache.org/foundation/marks/pmcs). 
+* Project websites MUST comply with the [Apache Project Branding Requirements](/foundation/marks/pmcs). 
 
-* Project PMCs MUST be responsible for maintaining their project's [trademarks and brand](https://www.apache.org/foundation/marks/responsibility.html). 
+* Project PMCs MUST be responsible for maintaining their project's [trademarks and brand](/foundation/marks/responsibility.html). 
 
-* Project PMCs MAY include links to [relevant technical or corporate websites](https://www.apache.org/foundation/marks/linking) when they are appropriate to their community.
+* Project PMCs MAY include links to [relevant technical or corporate websites](/foundation/marks/linking) when they are appropriate to their community.
 
 # Funding  {#funding}
 
-* Projects MUST work with VP, Fundraising whenever [accepting or using financial donations](https://www.apache.org/foundation/sponsorship.html).  
+* Projects MUST work with VP, Fundraising whenever [accepting or using financial donations](/foundation/sponsorship.html).  
 	
 * Projects MUST NOT use ASF donated funds to pay for primary development on any Apache project. (*citation needed*)
 
 # Press & Marketing  {#press}
 	
-* Projects MUST work with VP, Marketing and Publicity on any [formal press releases](https://www.apache.org/press/#releases) that use ASF boilerplate.
+* Projects MUST work with VP, Marketing and Publicity on any [formal press releases](/press/#releases) that use ASF boilerplate.
 
-* Projects SHOULD work with press@ to help coordinate any [press, media, or analyst relations](https://www.apache.org/press/#contact), or for marketing assistance.
+* Projects SHOULD work with press@ to help coordinate any [press, media, or analyst relations](/press/#contact), or for marketing assistance.
 
 # Incubator Podlings  {#incubator}
 	
@@ -90,5 +90,5 @@ ASF-wide policies, as well as for providing various services to all Apache proje
 	
 As a volunteer-run organization, the ASF has documented corporate and project policies in a variety of places.  This document merely serves as an overview of the true requirements vs. some of the many best practices; the various linked policy documents are normative.
 
-The Project Management Committee Guide has a simplified [PMC Requirements list](https://www.apache.org/dev/pmc.html#policy).
+The Project Management Committee Guide has a simplified [PMC Requirements list](/dev/pmc.html#policy).
 

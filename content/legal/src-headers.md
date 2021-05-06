@@ -6,9 +6,9 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 ## Purpose and Intended Audience  {#purpose}
 This document describes how Apache committers and PMC members should handle source file licensing and copyright notices.  
 It does not apply to developers outside the ASF who are applying the Apache License to their work.  The 
-<a href="http://apache.org/licenses/LICENSE-2.0.html#apply">appendix to the Apache License</a> describes how others can apply 
+<a href="/licenses/LICENSE-2.0.html#apply">appendix to the Apache License</a> describes how others can apply 
 the license to their work.  This page also does not describe requirements for
-<a href="http://apache.org/dev/apply-license.html#new">what goes in the standard LICENSE file</a> distributed with each Apache 
+<a href="/dev/apply-license.html#new">what goes in the standard LICENSE file</a> distributed with each Apache 
 product release, nor what are the <a href="/legal/resolved.html">acceptable licenses for distribution of third-party components</a>.  
 
 ## Overview  {#overview}
@@ -92,7 +92,7 @@ Updates to this page are sent to the <a href="/foundation/mailinglists.html#foun
  </li>
  <li id="notice-other">The remainder of the NOTICE file is to be used for [required third-party notices][1].  
  The NOTICE file may also include copyright notices moved <a href="#header-existingcopyright">from source files submitted to the ASF</a>.</li>
- <li>See also <a href="http://www.apache.org/dev/licensing-howto.html#mod-notice">Modifications to NOTICE</a></li>
+ <li>See also <a href="/dev/licensing-howto.html#mod-notice">Modifications to NOTICE</a></li>
 </ol>
 
 ## Frequently Asked Questions  {#faq}
@@ -166,4 +166,4 @@ No.  This is strictly an ASF policy.  Other projects using the Apache License sh
 <a href="/licenses/LICENSE-2.0.html#apply">license's appendix</a> for guidance on applying a header to their source files.
 
 
-  [1]: http://apache.org/legal/resolved.html#required-third-party-notices
+  [1]: /legal/resolved.html#required-third-party-notices

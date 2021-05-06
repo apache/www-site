@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 The [Free Software Foundation](http://www.fsf.org/) 
 [considers](http://www.fsf.org/licensing/licenses/#apache2) the [Apache
-License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) to be a
+License, Version 2.0](/licenses/LICENSE-2.0) to be a
 [free software](http://www.gnu.org/philosophy/free-sw.html) license,
 [compatible](http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses) with
 version 3 of the [GPL](http://www.fsf.org/licensing/licenses/gpl.html). The

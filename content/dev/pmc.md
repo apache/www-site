@@ -6,7 +6,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 This guide outlines the general responsibilities 
 of PMC members in managing their projects and common how-to procedures for 
 day to day maintenance. For a high-level overview of the what and why of PMCs,
-please read the <a href="https://www.apache.org/foundation/governance/pmcs" target="_blank">PMC Governance overview</a>. 
+please read the <a href="/foundation/governance/pmcs" target="_blank">PMC Governance overview</a>. 
 
 ## Contents ##
 
@@ -30,7 +30,7 @@ Every PMC has a Chairperson, who is also an [officer of the ASF][6] with the tit
   - If you are not yet a committer but are interested in joining an Apache project, please start at the [Contributors Tech Guide](contributors.html).
   - For more information on how Apache projects are run, see [What makes Apache 
 projects different?](https://blogs.apache.org/comdev/entry/what_makes_apache_projects_different), 
-the [Apache PMC Governance Overview](https://www.apache.org/foundation/governance/pmcs.html), 
+the [Apache PMC Governance Overview](/foundation/governance/pmcs.html), 
 and [Project Independence](https://community.apache.org/projectIndependence.html).
 
 ## What is a PMC?  {#what-is-a-pmc}
@@ -237,7 +237,7 @@ is to elect a few of those community members to the PMC to keep it viable.
 
 If that does not happen, the Board can "reboot" a PMC by re-establishing
 it with a new or modified PMC. As an example, see the
-[Board resolution to reboot the Apache Xalan PMC]( https://apache.org/foundation/records/minutes/2019/board_minutes_2019_02_20.txt)
+[Board resolution to reboot the Apache Xalan PMC](/foundation/records/minutes/2019/board_minutes_2019_02_20.txt)
 from the February 2019 Board minutes.
 
 Mature or very slow-running projects should periodically (we recommend
@@ -259,7 +259,7 @@ or releases, or do not seem to be responsive to security issues.
 
 If a Director (on behalf of the Board) asks a PMC to perform a roll
 call, the PMC **must** respond by showing via an email thread that
-[at least three PMC members](https://www.apache.org/legal/release-policy.html#release-approval)
+[at least three PMC members](/legal/release-policy.html#release-approval)
 are active.
 
 A PMC can do this by each of its active members replying to a thread
@@ -289,7 +289,7 @@ Be sure to send a *separate* [NOTICE] email for *each* individual you are nomina
 
 Once the notification appears in the [**archives**](#board_archive), an invitation may be sent out 72 hours later
 (unless a Director objects to the nomination).  The detailed process can be found
-in the [June 2013 board minutes](https://apache.org/foundation/records/minutes/2013/board_minutes_2013_06_19.txt)
+in the [June 2013 board minutes](/foundation/records/minutes/2013/board_minutes_2013_06_19.txt)
 under section "[7 G. Amend the Procedure for PMC Membership Changes](https://whimsy.apache.org/board/minutes/PMC_Membership_Change_Process.html)".
 
 **Do NOT** send an unconditional invite to the potential member before the 72 hour [NOTICE] period has expired!
@@ -358,7 +358,7 @@ needed. We also need to follow defined procedures so that the ASF can
 operate according to its corporation status. The procedures and these FAQs
 should make it easy for everyone to operate efficiently.
 
-New PMC members are required to read the [PMC Branding Responsibilities](http://www.apache.org/foundation/marks/responsibility).
+New PMC members are required to read the [PMC Branding Responsibilities](/foundation/marks/responsibility).
 
 ### When members leave the PMC  {#membersleave}
 
@@ -370,7 +370,7 @@ the Foundation's mailing list archives, but can be revoked by that
 member within 72 hours of receipt."
 
 The detailed process can be found
-in the [June 2013 board minutes](https://apache.org/foundation/records/minutes/2013/board_minutes_2013_06_19.txt)
+in the [June 2013 board minutes](/foundation/records/minutes/2013/board_minutes_2013_06_19.txt)
 under section [7 G. Amend the Procedure for PMC Membership Changes](https://whimsy.apache.org/board/minutes/PMC_Membership_Change_Process.html).
 
 ##### How to mark a PMC member as resigned or emeritus  {#emeritus}
@@ -422,8 +422,7 @@ and any necessary Foundation records to be updated.
    LDAP. A community may wish to keep the person's association for posterity.
    It is also perfectly acceptable to adjust LDAP using **modify_committee.pl**
    and to adjust **[committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)** as appropriate.
- - Feel free to add a page to our 
-   [memorial site](https://www.apache.org/memorials/), using the 
+ - Feel free to add a page to our [memorial site](/memorials/), using the 
    [ASF CMS](https://www.apache.org/dev/cms.html#usage). Many communities have
    gathered eulogies and remembrances.
 
@@ -605,9 +604,9 @@ Apache header to the file(s) that notes the changes.
 If the code to be imported is intended to have continued development in Apache, 
 and the owners of the code are willing to contribute their Intellectual Property 
 to Apache under an 
-[Individual Contributor License Agreement](https://www.apache.org/licenses/#clas), 
-[Corporate Contributor License Agreement](https://www.apache.org/licenses/#clas), or
-[Software Grant Agreement](https://www.apache.org/licenses/#grants), 
+[Individual Contributor License Agreement](/licenses/#clas), 
+[Corporate Contributor License Agreement](/licenses/#clas), or
+[Software Grant Agreement](/licenses/#grants), 
 you can copy the code to the Apache repository, changing the license header 
 to the standard Apache header. In this case, the code needs to be
 reviewed by the 
@@ -666,7 +665,7 @@ allows the public to read about the direction of the project and to offer early 
 Most projects do their work on their **dev@***project*.apache.org mailing list. 
 Some projects also have a **user@** mailing lists for more general or non-technical 
 questions, and may have a **general@** mailing list. Every project should have 
-a clear [mailing lists page](https://www.apache.org/foundation/mailinglists.html) that has instructions for subscribing to their lists and 
+a clear [mailing lists page](/foundation/mailinglists.html) that has instructions for subscribing to their lists and 
 for reading the archives.  
 
 #### How To Get Help or Escalate Issues  {#escalation}
@@ -677,12 +676,12 @@ work within their project communities.  However, if things don't work
 well, or the project community has serious policy questions or disagreements 
 about how to work together, you can ask for help elsewhere around the ASF.
 
-The [detailed Escalation Guide](https://www.apache.org/board/escalation) 
+The [detailed Escalation Guide](/board/escalation) 
 helps communities figure out where to get help from other groups at Apache, 
 or, if all else fails, to ask for help or appeal issues to the Board.  
-The [Apache Organizational Chart](https://www.apache.org/foundation/governance/orgchart) 
+The [Apache Organizational Chart](/foundation/governance/orgchart) 
 can help find the right officer or group to ask for help on most issues, 
-like legal, branding, press, or the many [other services the ASF offers projects](https://www.apache.org/board/services).
+like legal, branding, press, or the many [other services the ASF offers projects](/board/services).
 
 
   [1]: /foundation/governance/pmcs

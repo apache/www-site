@@ -38,13 +38,13 @@ Please only use the backup mirrors to download KEYS, PGP signatures and hashes (
 
 [if-any backup] [for backup] [**[backup][path_info]**]([backup][path_info]) <br></br>[end] [end]
 
-The [full listing of mirror sites](http://www.apache.org/mirrors/) is also
+The [full listing of mirror sites](/mirrors/) is also
 available.
 
 # Becoming a mirror  {#become}
 
 The procedure for setting up new mirrors is described in [How to become a
-mirror](http://www.apache.org/info/how-to-mirror.html).
+mirror](/info/how-to-mirror.html).
 
 # Verify the integrity of the files  {#verify}
 

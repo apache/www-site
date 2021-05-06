@@ -13,7 +13,7 @@ The Apache Software Foundation produces and distributes free of charge open
 source software, including the Apache HTTP Server. For more information
 about the Foundation and its projects, please follow one of these links.
 
--  [Apache Software Foundation Home Page](http://www.apache.org/) 
+-  [Apache Software Foundation Home Page](/) 
 -  [Apache HTTP Server Project Home Page](http://httpd.apache.org/) 
 -  [Download the Apache HTTP Server](http://httpd.apache.org/download.cgi) 
 

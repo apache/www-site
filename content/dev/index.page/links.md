@@ -18,7 +18,7 @@ Find information about tools and processes the ASF and its projects use to manag
 - <a href="https://status.apache.org/" target="_blank">Host and service status monitor</a>. Infa has already been alerted if a service shows as
   down.
 
-- <a href="https://apache.org/mirrors/" target="_blank">Status of download mirrors</a>
+- <a href="/mirrors/" target="_blank">Status of download mirrors</a>
 
 - [Machine/Host List](machines.html) of ASF servers
 
@@ -163,7 +163,7 @@ discussion](/foundation/how-it-works.html#confidential).
     - Raw mbox archive files are available for every mailing list.
     - Each project website has a "mail" directory, e.g. [httpd.apache.org/mail/](http://httpd.apache.org/mail/)
 (see [notes](/dev/project-site.html#mail)).
-    - For top-level/non-project mailing lists see [www.apache.org/mail/](http://www.apache.org/mail/) directory.
+    - For top-level/non-project mailing lists see [www.apache.org/mail/](/mail/) directory.
 
 # Pasting data to others  {#paste}
 

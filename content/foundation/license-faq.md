@@ -371,7 +371,7 @@ or its software, we recommend the following link for more information or
 assistance:
 
 - The Foundation pre-FAQ: [Contact Apache
-FAQ](http://www.apache.org/foundation/preFAQ.html) 
+FAQ](/foundation/preFAQ.html) 
 
 If you have a question specifically about the Apache license or
 distribution of Apache software, and it has not been answered by this page,

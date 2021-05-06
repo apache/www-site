@@ -142,7 +142,7 @@ representatives](#RepsOnJSRs).
 
 Because of the work of the ASF, we are able to legally implement JSRs in
 open source and distribute under the terms of the [Apache
-License](http://www.apache.org/licenses/). There have been many successful
+License](/licenses/). There have been many successful
 implementations of JSRs at the ASF, in all areas of Java technology.
 
 Projects are free to implement whatever JSR a project community desires, as

@@ -28,5 +28,5 @@ In addition to ApacheCon, many of our project communities put on events
 covering single projects, or groups of related projects. These are listed 
 in the [community calendar](http://community.apache.org/calendars/). If you
 want to put on an event using Apache brands, the first step is to look at
-the [event branding policy document](http://www.apache.org/foundation/marks/events.html).
+the [event branding policy document](/foundation/marks/events.html).
 

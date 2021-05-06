@@ -33,5 +33,5 @@ To control disk space usage on your mirror, you should run
 from cron. Please allow at least 5120MB.
 
 Once this is configured and tested, please notify us using the instructions
-on the [How to mirror](http://www.apache.org/info/how-to-mirror.html) page.
+on the [How to mirror](/info/how-to-mirror.html) page.
 
