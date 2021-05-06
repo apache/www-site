@@ -910,9 +910,7 @@ setQuote();
 
 <ul>
 <li><strong><em>Earned Authority:</em></strong> all individuals are given the opportunity to participate, but their influence is based on publicly earned merit – what they contribute to the community. Merit lies with the individual, does not expire, is not influenced by employment status or employer, and is non-transferable (merit earned in one project cannot be applied to another). <a href="https://www.apache.org/foundation/how-it-works.html#meritocracy">More on merit</a>.</li>
-
 <li><strong><em>Community of Peers:</em></strong> individuals participate at the ASF, not organizations. The ASF’s flat structure dictates that roles are equal irrespective of title, votes hold equal weight, and contributions are made on a volunteer basis (even if paid to work on Apache code). The Apache community is expected to treat each other with respect in adherence to our <a href="http://apache.org/foundation/policies/conduct.html">Code of Conduct</a>. Domain expertise is appreciated; Benevolent Dictators For Life are disallowed. <a href="https://www.apache.org/foundation/how-it-works.html#hats">More on individual participation</a>.</li>
-
 <li><strong><em>Open Communications:</em></strong> as a virtual organization, the ASF requires all communications related to code and decision-making to be publicly accessible to ensure asynchronous collaboration, as necessitated by a globally-distributed community. Project mailing lists are archived, publicly accessible, and include:
 <br /><br />
 <ul>
@@ -921,17 +919,15 @@ setQuote();
 <li>commits@ (automated source change notifications); and</li> 
 <li>occasionally supporting roles such as marketing@ (project visibility),</li> 
 </ul>
-
 <br />
 <p>...as well as restricted, day-to-day operational lists for Project Management Committees. Private decisions on code, policies, or project direction are disallowed; off-list discourse and transactions must be brought on-list. More on <a href="https://www.apache.org/dev/pmc.html#mailing-list-naming-policy">communications</a> and the<a href="https://apache.org/foundation/mailinglists.html"> use of mailing lists</a>.</p>
 </li>
-
+<br />
 <li><strong><em>Consensus Decision Making:</em></strong> Apache Projects are overseen by a self-selected team of active volunteers who are contributing to their respective projects. Projects are auto-governing with a heavy slant towards driving consensus to maintain momentum and productivity. Whilst total consensus is not possible to establish at all times, holding a vote or other coordination may be required to help remove any blocks with binding decisions, such as when declaring a release. <a href="https://www.apache.org/foundation/how-it-works.html#decision-making">More on decision making and voting</a>.</li>
-
+<br />
 <li><strong><em>Responsible Oversight:</em></strong> The ASF governance model is based on trust and delegated oversight. Rather than detailed rules and hierarchical structures, ASF governance is principles-based, with self-governing projects providing reports directly to the Board. Apache Committers help each other by making peer-reviewed commits, employing mandatory security measures, ensuring license compliance, and protecting the Apache brand and community at-large from abuse. <a href="http://www.apache.org/foundation/governance/pmcs">More on responsibility</a>.</li>
 </ul>
 <h5>Important:</h5>
-
 <ul>
 <li><strong><u>Independence:</u></strong> the ASF is strictly vendor neutral. No organization is able to gain special privileges or control a project’s direction, irrespective of employing Committers to work on Apache projects or sponsorship status. More on <a href="http://community.apache.org/projectIndependence.html">project independence</a>.</li>
 <br />
