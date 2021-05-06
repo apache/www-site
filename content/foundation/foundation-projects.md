@@ -41,7 +41,7 @@ structure and authority of these committees and officers.  Importantly, while
 many of these positions create ASF-wide policy, Apache project PMCs each 
 report directly to the Board, not to any specific officer or committee.
 
-A [full listing of ASF officers](http://www.apache.org/foundation/) is available.
+A [full listing of ASF officers](/foundation/) is available.
 
 # Infrastructure  {#infrastructure}
 
@@ -54,7 +54,7 @@ and day-to-day system administration and operation of the various hardware
 that runs the above services.
 
 For more regarding the Infrastructure team and the Infrastructure President's Committee that governs it, see the [Infrastructure
-webpage](http://www.apache.org/dev/infrastructure.html).
+webpage](/dev/infrastructure.html).
 
 # Incubator  {#incubator}
 
@@ -125,7 +125,7 @@ The *Legal Affairs Committee* -- responsible for the legal issues
 associated with licensing and license compatibilities and for the revision
 of the Apache Software License.  
 
-For more information or questions, see the [Legal page](http://www.apache.org/legal/). 
+For more information or questions, see the [Legal page](/legal/). 
 
 # VP, JCP  {#jcp}
 
@@ -154,7 +154,7 @@ Read more about [Apache Trademark Policies](marks/) which apply to all Apache so
 The *Fundraising officer* -- responsible with their associated officer's committee for fund
 raising aspects at the ASF.  
 
-Read more about [Sponsoring](http://www.apache.org/foundation/sponsorship), [Donating](http://www.apache.org/foundation/contributing), and how we [Thank our sponsors](http://www.apache.org/foundation/thanks).
+Read more about [Sponsoring](/foundation/sponsorship), [Donating](/foundation/contributing), and how we [Thank our sponsors](/foundation/thanks).
 
 # VP, Marketing and Publicity  {#pr}
 

@@ -178,7 +178,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
 # Individual Donations #
 
 The Apache Software Foundation receives many smaller donations from
-individuals.  More details are available on our [contribution page](http://www.apache.org/foundation/contributing.html).
+individuals.  More details are available on our [contribution page](/foundation/contributing.html).
 
 We would like to thank all of our individual donors for their
 support of our work, and for their willingness to contribute with
@@ -187,11 +187,11 @@ only this as recognition for their generosity.
 
 # Mirrors #
 
-And a gigantic thank you to <a href="https://www.apache.org/mirrors/" target=_blank>all the ASF mirrors</a> around the world that help deliver Apache software at no charge!
+And a gigantic thank you to <a href="/mirrors/" target=_blank>all the ASF mirrors</a> around the world that help deliver Apache software at no charge!
 
 
 <div align=center>
-  <a href="http://apache.org/foundation/contributing.html" title="Support Apache">
+  <a href="/foundation/contributing.html" title="Support Apache">
     <img src="/images/SupportApache-small.png" style="height: 150px; width: 150px; margin-top: 5px; margin-bottom: 5px;">
   <a>
   <br />&nbsp;

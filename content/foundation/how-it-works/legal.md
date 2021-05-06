@@ -105,7 +105,6 @@ officially released version.
 
 ## Further questions ##
 
-Please contact the [legal-discuss@ mailing
-list](http://www.apache.org/foundation/mailinglists.html#foundation-legal)
+Please contact the [legal-discuss@ mailing list](/foundation/mailinglists.html#foundation-legal)
 if you have any questions or comments.
 

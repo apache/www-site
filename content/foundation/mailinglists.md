@@ -9,7 +9,7 @@ lists also serve as a primary support channel where users can help each
 other learn to use the software.
 
 Mailing list participants are expected to abide by the well-established rules of
-"netiquette", as well as the ASF's published [Code of Conduct](https://www.apache.org/foundation/policies/conduct.html).
+"netiquette", as well as the ASF's published [Code of Conduct](/foundation/policies/conduct.html).
  We also have [Tips for email
 contributors](../dev/contrib-email-tips.html).
 
@@ -255,4 +255,4 @@ Volunteers willing to codify discussions into a FAQ are welcome.
 |---------|----------|
 | Subscription address: |  [legal-discuss-subscribe@apache.org](mailto:legal-discuss-subscribe@apache.org)  |
 | Unsubscription address: |  [legal-discuss-unsubscribe@apache.org](mailto:legal-discuss-unsubscribe@apache.org)  |
-| Archives: | Raw gzipped [mbox files](http://www.apache.org/mail/legal-discuss/)<br />[Web archives](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/) |
+| Archives: | Raw gzipped [mbox files](/mail/legal-discuss/)<br />[Web archives](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/) |

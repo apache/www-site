@@ -132,7 +132,7 @@ domains, and/or IP addresses involved.
 license.** </a>
 <!-- N.B. keep the old spelling to avoid breaking links -->
 If you have sent mail about a license issue or question, please review the
-[online license](http://www.apache.org/LICENSE) at the URL listed below.
+[online license](/LICENSE) at the URL listed below.
 The gist of the license is that you may use, modify, and/or [re]distribute
 the Apache software as-is. As long as you do not change the software, you
 may re-distribute it and call it "Apache." If you alter the software in any
@@ -161,7 +161,7 @@ give it away. Neither do we provide formal or commercial support for any of
 our packages.
 
     Also see the " [is it free](license-FAQ.html#IsItFree) " and following
-sections in our license FAQ as well as our [Apache software is free of cost](http://www.apache.org/free/) page.
+sections in our license FAQ as well as our [Apache software is free of cost](/free/) page.
 
 1. <a id="projects" name="projects"> **You have questions about other
 Apache projects.** </a>
@@ -206,6 +206,6 @@ to the ASF** </a>
 You may read our [formal Trademark Policy](/foundation/marks/) as an
 introduction. Any questions about the use of Apache marks, including logos
 and project or product names, or the Apache name or feather should 
-[Contact the Brand Management Committee](//www.apache.org/foundation/marks/contact) as well as to the relevant [Project
+[Contact the Brand Management Committee](/foundation/marks/contact) as well as to the relevant [Project
 Management Committee](//projects.apache.org/).
 

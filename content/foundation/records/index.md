@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 The Apache Software Foundation, a Delaware chartered 501C3 membership 
 corporation, publishes a wide variety of operational records 
 about the corporate operations of the Foundation, as well as 
-an [overview of corporate governance procedures](http://www.apache.org/foundation/governance/).
+an [overview of corporate governance procedures](/foundation/governance/).
 
 The Board of Directors publishes a **[formal Board Calendar and Minutes](../board/calendar.html)** 
 of our monthly meetings.  An alternate [categorized listing of 

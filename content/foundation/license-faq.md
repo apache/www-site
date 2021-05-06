@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 This page answers most of the common queries that we receive about our
 licenses, licensing of our software, and packaging or redistributing of our software. For 
-non-licensing questions, please see our [General FAQ](//www.apache.org/foundation/preFAQ.html).
+non-licensing questions, please see our [General FAQ](/foundation/preFAQ.html).
 
 # Frequent Questions about Apache Licensing #
 
@@ -64,15 +64,15 @@ Here are the detailed answers for each of the questions above.
 You can find the Apache License 2.0 (the current version) here:
 
 - Apache License 2.0:
-[http://www.apache.org/licenses/LICENSE-2.0.txt](http://www.apache.org/licenses/LICENSE-2.0.txt) 
+[http://www.apache.org/licenses/LICENSE-2.0.txt](/licenses/LICENSE-2.0.txt) 
 
 These are two older versions that we no longer use:
 
 - Apache Software License 1.1:
-[http://www.apache.org/licenses/LICENSE-1.1.txt](http://www.apache.org/licenses/LICENSE-1.1.txt) 
+[http://www.apache.org/licenses/LICENSE-1.1.txt](/licenses/LICENSE-1.1.txt) 
 
 - Apache Software License 1.0:
-[http://www.apache.org/licenses/LICENSE-1.0.txt](http://www.apache.org/licenses/LICENSE-1.0.txt) 
+[http://www.apache.org/licenses/LICENSE-1.0.txt](/licenses/LICENSE-1.0.txt) 
 
 ## Why are the license files for the different Apache Software Foundation projects different?  {#Scope}
 
@@ -95,7 +95,7 @@ Yes. **All** software developed by **all** projects of The Apache Software
 Foundation is freely available without charge from the Foundation's web
 sites. This is specified in the Foundation's [Articles of
 Incorporation](records/incorporator.html) and explained in 
-[more detail about why our software is always free](//www.apache.org/free/) (no charge).
+[more detail about why our software is always free](/free/) (no charge).
 
 This is regardless of the use of the software. We do not distinguish between personal, internal, or 
 commercial use of our software, and we do not charge for any of them. A reminder, however, that the terms 
@@ -104,7 +104,7 @@ of [our license](#License) always apply.
 ## What are the U.S. Export Classification Control Numbers (ECCNs) for the various Apache software packages?  {#Export}
 
 Please see the [ASF Exports Classifications and Source
-Links](http://www.apache.org/licenses/exports/) page.
+Links](/licenses/exports/) page.
 
 ## May I license my own software under the Apache license?  {#My-License}
 
@@ -139,7 +139,7 @@ A shorter variant you may wish to use is:
     Copyright [yyyy] [name of copyright owner]
     SPDX-License-Identifier: Apache-2.0
 
-Note that the Apache Software Foundation uses a different source header that is related to our use of a CLA. Our instructions for our project's source headers are [here](https://www.apache.org/legal/src-headers.html#headers).
+Note that the Apache Software Foundation uses a different source header that is related to our use of a CLA. Our instructions for our project's source headers are [here](/legal/src-headers.html#headers).
 
 
 ## May I re-use (and modify) the ASF Contributor License Agreements (CLAs) for my own purposes?  {#CLA-Usage}
@@ -375,4 +375,4 @@ FAQ](http://www.apache.org/foundation/preFAQ.html)
 
 If you have a question specifically about the Apache license or
 distribution of Apache software, and it has not been answered by this page,
-please [contact the Legal Affairs Committee](//www.apache.org/legal/).
+please [contact the Legal Affairs Committee](/legal/).

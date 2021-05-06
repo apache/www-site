@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 [Membership in The Apache Software Foundation](/foundation/governance/members) is a privilege and is by
 invitation only. Candidates for membership are proposed by existing
-members, and [voted upon by the existing membership](https://www.apache.org/foundation/governance/meetings#membervoting). Since the Foundation is
+members, and [voted upon by the existing membership](/foundation/governance/meetings#membervoting). Since the Foundation is
 a meritocracy, meaning that contributions and skills are the factors used
 to judge worthiness, candidates are expected to have proven themselves by
 contributing to one or more of the Foundation's projects.
@@ -564,7 +564,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | vgritsenko | [Vadim Gritsenko](http://home.apache.org/~vgritsenko/) | [Cocoon](http://cocoon.apache.org/) , [Regexp](http://jakarta.apache.org/regexp/) , [Xindice](http://xml.apache.org/xindice/)|
 | vinodkv | [Vinod Kumar Vavilapalli](http://home.apache.org/~vinodkv) | [Hadoop](http://hadoop.apache.org) ; [Ambari](http://incubator.apache.org/ambari/); [TEZ](http://incubator.apache.org/projects/tez.html)|
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|
-| wave | Dave Fisher | [poi](http://poi.apache.org/) , [incubator](http://incubator.apache.org/) |
+| wave | Dave Fisher | [POI](https://poi.apache.org/), [Incubator](https://incubator.apache.org/), [OpenOffice](https://openoffice.apache.org/), [Petri](https://petri.apache.org/), and others |
 | weber | Volker Weber | [MyFaces](http://myfaces.apache.org/)|
 | weimer | [Markus Weimer](http://www.markusweimer.com) |
 | wglass | William Glass-Husain |

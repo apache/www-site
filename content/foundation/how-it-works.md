@@ -41,7 +41,7 @@ the incredible growth in new projects and contributors over the years. Come and 
 
 # What is the Apache Software Foundation?  {#what}
 
-The [Apache Software Foundation](http://www.apache.org/foundation/) (ASF) is a 501(c)3 non-profit public charity organization
+The [Apache Software Foundation](/foundation/) (ASF) is a 501(c)3 non-profit public charity organization
 incorporated in the United States of America. It was formed in 1999 primarily to:
 
 - provide a foundation for open, collaborative software development
@@ -91,7 +91,7 @@ the PHP project, the Java Apache project). The need for a more coherent and
 structured organization that would shield individuals from potential legal
 attacks became more and more clear.
 
-Read more about [ASF History](https://www.apache.org/history/).
+Read more about [ASF History](/history/).
 
 # Meritocracy  {#meritocracy}
 
@@ -261,7 +261,7 @@ also known as **contributors**.
 
 A **committer** is a developer who has write access to the code
 repository and has a signed [Contributor License Agreement
-(CLA)](http://www.apache.org/licenses/#clas) on file. They have an
+(CLA)](/licenses/#clas) on file. They have an
 apache.org mail address. Not needing to depend on other people to make patches to the code or documentation, they are actually making short-term decisions for the project. The
 PMC can (even tacitly) agree and approve the changes into permanency, or they can
 reject them. Remember that the PMC makes the decisions, not the individual
@@ -280,7 +280,7 @@ that controls the project, nobody else.  In particular, the PMC must vote to app
 
 The Board appoints the **Chair** of a PMC from the [PMC members](#pmc-members). The PMC as a whole is the
 entity that controls and leads the project. The Chair is the interface
-between the Board and the Project.  [PMC Chairs have specific duties](https://www.apache.org/dev/pmc.html#chair).
+between the Board and the Project.  [PMC Chairs have specific duties](/dev/pmc.html#chair).
 
 ### ASF Member  {#asf-members}
 
@@ -292,7 +292,7 @@ to elect the board, to stand as a candidate for board election and to
 propose a committer for membership. They also have the right to propose a
 new project for incubation (we'll see later what this means). The members
 coordinate their activities through their mailing list and through their
-annual meeting. We have a [full listing of Apache Members](https://www.apache.org/foundation/members.html).
+annual meeting. We have a [full listing of Apache Members](/foundation/members.html).
 
 # Project Management and Collaboration  {#management}
 
@@ -359,7 +359,7 @@ leading to the negative vote can be addressed.
 This process is called "consensus gathering" and we consider it a very
 important indication of a healthy community.
 
-Specific cases have some more [detailed voting rules](https://www.apache.org/foundation/voting.html).
+Specific cases have some more [detailed voting rules](/foundation/voting.html).
 
 ### Philosophy ###
 
@@ -530,6 +530,6 @@ multinational corporations. We hope to continue to provide inspiration for
 businesses, governments, education programs, and other software foundations.
 
 
-  [1]: http://www.apache.org/foundation/governance/
-  [2]: http://www.apache.org/foundation/governance/
-  [3]: http://www.apache.org/dev/
+  [1]: /foundation/governance/
+  [2]: /foundation/governance/
+  [3]: /dev/

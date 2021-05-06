@@ -20,7 +20,7 @@ the sponsor's website. (*Logo and link subject to ASF approval.*)
 -  [I'd like to talk to someone about supporting the ASF!](#Sponsor) 
 -  [How do sponsorship renewals happen?](#Renewals)
 -  [Can I just make a one-time donation?](#Donations) 
--  [Who are the current sponsors?](http://www.apache.org/foundation/thanks.html)
+-  [Who are the current sponsors?](/foundation/thanks.html)
 
 
 ## Sponsorship Levels  {#Levels}
@@ -235,6 +235,6 @@ the ASF may remove the sponsor's logo from the thanks page.
 The ASF appreciates donations of any size, and as a US registered 501(c)(3) 
 corporation, your donation may be tax deductible.  If you are interested in 
 donating to the ASF at a different level, please see our 
-[donation page](http://www.apache.org/foundation/contributing.html).
+[donation page](/foundation/contributing.html).
 
 Thanks for your support!

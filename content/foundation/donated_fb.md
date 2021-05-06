@@ -9,4 +9,4 @@ My donation will help provide The Apache Software Foundation
 provide high-quality Open Source Software for the public good.
 
 You can help support the mission of the Foundation by 
-[donating any amount](http://www.apache.org/foundation/contributing.html).
+[donating any amount](/foundation/contributing.html).

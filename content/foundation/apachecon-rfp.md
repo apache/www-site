@@ -15,7 +15,7 @@ Details of this past RFP are retained below.
 # APACHECON 2012 RFP (NOW CLOSED)
 
 In the interest of creating a safe and productive atmosphere, ASF recently adopted an 
-[ApacheCon Code of Conduct](http://www.apache.org/foundation/policies/anti-harassment.html) to which all Apache branded events must adhere.
+[ApacheCon Code of Conduct](/foundation/policies/anti-harassment.html) to which all Apache branded events must adhere.
 
 Successful bidders to this RFP will suggest a venue, timing and pricing in addition to a narrative plan for the event.
 
@@ -59,8 +59,8 @@ The Sponsorship landscape has changed over the history of ApacheCon.  Initially 
 
 The vast majority of talks must be about ASF technologies, and while some commercial content can be included, this must be clearly labelled as such, and offered on a neutral basis to all sponsors. (If commerical content is included, it must not be dominated by just one vendor) 
 
-All applicable [ASF event branding](http://www.apache.org/foundation/marks/events.html) and 
-[ASF trademark policies](http://www.apache.org/foundation/marks/) must be adhered to.  The Producer will be ultimately responsible for the session content, speaker selection, track organization, session scheduling and length.
+All applicable [ASF event branding](/foundation/marks/events.html) and 
+[ASF trademark policies](/foundation/marks/) must be adhered to.  The Producer will be ultimately responsible for the session content, speaker selection, track organization, session scheduling and length.
 
 ## KEYNOTES
 

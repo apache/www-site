@@ -131,7 +131,7 @@ If your employer has a matching gift program, your contribution to the ASF can b
 
 The ASF is also listed as an official charity in the Benevity Causes Portal as part of numerous corporate giving initiatives, such as the Microsoft Tech Talent for Good volunteer program, among others. For more information, visit <a href=https://www.benevity.com/target=_blank>https://www.benevity.com/</a>.
 
-Those organizations and individuals seeking to increase their support further may also wish to become an <a href=http://apache.org/foundation/sponsorship.html>ASF Sponsor</a>.
+Those organizations and individuals seeking to increase their support further may also wish to become an <a href=/foundation/sponsorship.html>ASF Sponsor</a>.
 
 # Donate via Bitcoin  {#Bitcoin}
 
@@ -218,7 +218,7 @@ All information will be kept in strictest confidence.
 # Become a Sponsor  {#Sponsorship}
 
 If your organization wants to be formally recognized as a
-[sponsor of the Foundation](http://www.apache.org/foundation/thanks.html),
+[sponsor of the Foundation](/foundation/thanks.html),
 the [Sponsorship Program](sponsorship.html) page is official avenue for
 substantial, non-directed monetary contributions to the ASF.
 

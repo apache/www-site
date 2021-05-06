@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 This glossary provides a brief description of some of the organizational 
 terms used at the ASF and in Apache projects.  For more information 
-about anything Apache, see the [/dev documentation](http://www.apache.org/dev/) or the 
+about anything Apache, see the [/dev documentation](/dev/) or the 
 [Community Development project](http://community.apache.org/).   
 
 ----
@@ -35,7 +35,7 @@ about anything Apache, see the [/dev documentation](http://www.apache.org/dev/) 
      such as for the creation or dissolution of ASF [projects](#Project) ,
      funding requests, legal concerns, and disciplinary actions. As an open
      and non-profit corporation, the ASF makes the minutes of board meetings publicly available at
-     [http://www.apache.org/foundation/records/minutes/](http://www.apache.org/foundation/records/minutes/).
+     [http://www.apache.org/foundation/records/minutes/](/foundation/records/minutes/).
      These minutes include all decisions not made in [executive
      sessions](#ExecutiveSession). Also see [Director](#Director).
 
@@ -52,8 +52,7 @@ about anything Apache, see the [/dev documentation](http://www.apache.org/dev/) 
 
 **Bylaws**  {#Bylaws}
 :    Bylaws are a codification of the rules that an organisation follows.
-     Some, such as the [ASF
-     bylaws](http://www.apache.org/foundation/bylaws.html), are legally
+     Some, such as the [ASF bylaws](/foundation/bylaws.html), are legally
      binding and have significance outside the organisation. Others, such
      as the [Jakarta
      bylaws](http://jakarta.apache.org/site/management.html), are only
@@ -254,8 +253,8 @@ These are just the rough outline of things that may be more (or less) the
 :    The NOTICE file in a software release package is reserved for a certain subset of legally-required notifications
      which are not satisfied by either the text of LICENSE
      or the presence of licensing information embedded within the bundled dependency.
-     See [NOTICE modifications](http://www.apache.org/dev/licensing-howto.html#mod-notice)
-     Also section 4d of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0)
+     See [NOTICE modifications](/dev/licensing-howto.html#mod-notice)
+     Also section 4d of the [Apache License](/licenses/LICENSE-2.0)
 
 **Officer**  {#Officer}
 :    An individual appointed by the ASF Board of Directors and given
