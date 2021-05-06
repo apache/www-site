@@ -10,24 +10,24 @@ The Apache Software Foundation (ASF) Marketing & Publicity team oversees the ASF
 
 Marketing & Publicity
 
-- [ASF Press Resources](http://apache.org/press) 
+- [ASF Press Resources](/press) 
 - [ASF Annual Report](https://blogs.apache.org/foundation/entry/the-apache-software-foundation-operations10): FY 20120 (May 2019 - April 2020) 
-- [ASF Operations Summary](https://www.apache.org/foundation/docs/FY2020AnnualReport.pdf): Q1 FY2021
-- [Official ASF news mailing list](http://apache.org/foundation/mailinglists.html#foundation-announce) 
+- [ASF Operations Summary](/foundation/docs/FY2020AnnualReport.pdf): Q1 FY2021
+- [Official ASF news mailing list](/foundation/mailinglists.html#foundation-announce) 
 - [ASF "Foundation" blog](https://blogs.apache.org/foundation/) 
 - "[Success at Apache - the people and processes behind why Apache “just works”](https://blogs.apache.org/foundation/category/SuccessAtApache)" 
 - [The Apache Way to Sustainable Open Source Success ](https://s.apache.org/GhnI) 
 - [ASF 2018 Vision Statement](https://s.apache.org/zqC3) 
-- [ASF 5-year strategic plan](https://www.apache.org/board/plan.html) 
+- [ASF 5-year strategic plan](/board/plan.html) 
 - [Apache in 2019 - By The Digits](https://s.apache.org/Apache2019Digits) 
 - [Foundation Statement –Apache Is Open](https://s.apache.org/PIRA). 
-- [Press Interviews and Analyst Briefing Requests](https://www.apache.org/press/#interviews) 
-- [Guidelines on Issuing Press Releases that involve Apache projects](http://apache.org/press/#releases) 
+- [Press Interviews and Analyst Briefing Requests](/press/#interviews) 
+- [Guidelines on Issuing Press Releases that involve Apache projects](/press/#releases) 
 - [Publicity Guidelines for Incubating Projects](https://incubator.apache.org/guides/branding.html)
-- [Publicity Guidelines for Apache Top-Level Projects](https://www.apache.org/press/#project-guides)
+- [Publicity Guidelines for Apache Top-Level Projects](/press/#project-guides)
 - [Media & Analyst Training (Introductory Session)](pdf/ASF-Media-and-Analyst-Training-Beginner-Self2019.pdf)
-- [Official ASF logo, Apache Feather, and "Powered By Apache" assets](https://apache.org/foundation/press/kit/) 
-- [Central Services Support Request](https://www.apache.org/foundation/press/central-services-request)
+- [Official ASF logo, Apache Feather, and "Powered By Apache" assets](/foundation/press/kit/) 
+- [Central Services Support Request](/foundation/press/central-services-request)
 - [Feathercast -- the voice of the ASF](https://feathercast.apache.org/) 
 - [ASF on Twitter](https://twitter.com/TheASF) 
 - [The ASF on LinkedIn](https://www.linkedin.com/company/the-apache-software-foundation) 
@@ -45,12 +45,12 @@ ASF Marketing & Publicity are receiving an increasing number of queries pertaini
 
 ## Resources for ASF activities supported by Marketing & Publicity  {# supported }
 
-- [ASF Overview](http://apache.org/foundation/) 
+- [ASF Overview](/foundation/) 
 - [List of all Apache projects](https://projects.apache.org/) 
 - [The Apache Incubator](http://incubator.apache.org/) 
-- [ASF Sponsorship](https://www.apache.org/foundation/sponsorship.html) 
-- [Donating to the ASF](https://www.apache.org/foundation/contributing.html) 
-- [Brand Management](https://www.apache.org/foundation/marks/) 
+- [ASF Sponsorship](/foundation/sponsorship.html) 
+- [Donating to the ASF](/foundation/contributing.html) 
+- [Brand Management](/foundation/marks/) 
 - [Community Development](http://community.apache.org/) 
 - [ApacheCon and Apache events](http://events.apache.org/) 
 
@@ -63,10 +63,10 @@ This document collects a small selection of past press releases, open letters,
 and other notable public documents produced by The Apache Software
 Foundation (ASF).
 
-Please see our updated listing of current [**News and Announcements**](https://www.apache.org/press/#news).
+Please see our updated listing of current [**News and Announcements**](/press/#news).
 
-We have information for [Media and Analyst Relations](https://www.apache.org/press/#interviews) with 
-[contact information](https://www.apache.org/press/#contact).
+We have information for [Media and Analyst Relations](/press/#interviews) with 
+[contact information](/press/#contact).
 
 # Open Letters  {#openletters}
 
@@ -75,7 +75,7 @@ are important to our projects and our ability to produce code for the
 public good in a meritocratic and community-driven way.
 
 -  [Open Letter to Sun
-Microsystems](http://www.apache.org/jcp/sunopenletter.html) - An open
+Microsystems](/jcp/sunopenletter.html) - An open
 letter discussing licensing restrictions in the Java SE JCK which are
 contrary to the terms of the JSPA.
 
@@ -87,7 +87,7 @@ ASF](http://blogs.apache.org/foundation/entry/the_asf_is_ten_years).
 # Recent Press Releases  {#links}
 
 This is a selected list of past noteworthy press releases
-that the ASF has issued; we separately publish current [**News and Announcements**](https://www.apache.org/press/#news).
+that the ASF has issued; we separately publish current [**News and Announcements**](/press/#news).
 . Note that there are many more releases about the
 ASF's various projects and ApacheCon as well.
 

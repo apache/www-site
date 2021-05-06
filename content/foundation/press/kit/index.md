@@ -2,9 +2,9 @@ Title: Apache Software Foundation Graphics
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 This page contains various graphical assets that can be used by third parties when referring to The Apache Software Foundation or one of its projects.
-If you can't find a logo here, or have other questions please see our [Marketing & Publicity team](https://www.apache.org/press/).
+If you can't find a logo here, or have other questions please see our [Marketing & Publicity team](/press/).
 
-**The Apache Software Foundation owns all Apache-related trademarks, service marks, and graphic logos.** You can read our [formal Trademark Policy](http://www.apache.org/foundation/marks/) which discusses allowable uses and how to contact us for permissions.
+**The Apache Software Foundation owns all Apache-related trademarks, service marks, and graphic logos.** You can read our [formal Trademark Policy](/foundation/marks/) which discusses allowable uses and how to contact us for permissions.
 
 The ASF provides the following resources here:
 
@@ -12,11 +12,11 @@ The ASF provides the following resources here:
 *   [Feather Graphics](#links) - the formal ASF logo
 *   [Official Anniversary Graphics](#20thgraphics) — used for the ASF’s 20th Anniversary
 *   [Apache Badges](#badges) — pictorial marks of the Apache Feather with taglines
-*   [The ASF Identity Style Guide](https://apache.org/foundation/press/kit/ApacheFoundation_StyleGuide.pdf) - keep the Apache brand unified
+*   [The ASF Identity Style Guide](/foundation/press/kit/ApacheFoundation_StyleGuide.pdf) - keep the Apache brand unified
 
-[The ASF Identity Style Guide](https://apache.org/foundation/press/kit/ApacheFoundation_StyleGuide.pdf) helps ensure that our visual identity is consistent. We ask that all Apache project communities review and follow our specifications on how the ASF logo can be used. Should you require additional guidance, please contact ASF Marketing & Publicity at press(at)apache(dot)org.
+[The ASF Identity Style Guide](/foundation/press/kit/ApacheFoundation_StyleGuide.pdf) helps ensure that our visual identity is consistent. We ask that all Apache project communities review and follow our specifications on how the ASF logo can be used. Should you require additional guidance, please contact ASF Marketing & Publicity at press(at)apache(dot)org.
 
-Apache projects provide their official project logos on their respective homepages and are responsible for their maintenance. Most Apache project logos are available for download at [www.apache.org/logos](http://www.apache.org/logos/) .Please contact each project directly on their dev@ mailing list for for specific assistance or requests.
+Apache projects provide their official project logos on their respective homepages and are responsible for their maintenance. Most Apache project logos are available for download at [www.apache.org/logos](/logos/) .Please contact each project directly on their dev@ mailing list for for specific assistance or requests.
 
 # Powered By Apache Logos  {#poweredby}
 
@@ -119,7 +119,7 @@ The new blank template for the “Powered By” logos as well as select project 
 
 # 20th Anniversary Graphics  {#20thgraphics}
 
-High resolution graphical assets for the 20th Anniversary of The Apache Software Foundation are available for use in approved applications only. 20th Anniversary graphics must point to [http://apache.org/](http://apache.org/) . To get them, please contact press(at)apache(dot)org detailing the specifics for your request.
+High resolution graphical assets for the 20th Anniversary of The Apache Software Foundation are available for use in approved applications only. 20th Anniversary graphics must point to [http://apache.org/](/) . To get them, please contact press(at)apache(dot)org detailing the specifics for your request.
 
 ## Official ASF 20th Anniversary Logo
 
@@ -232,7 +232,7 @@ Badges containing pictorial marks of the Apache Feather with various taglines an
 
 This section contains downloadable graphics of The Apache Software Foundation (ASF) feather trademark.
 
-**REMINDER:** The feather graphics are trademarks of the ASF, and must not be used without appropriate attribution and permission from the ASF. Please see our [formal Trademark Policy](http://www.apache.org/foundation/marks/) for more details.
+**REMINDER:** The feather graphics are trademarks of the ASF, and must not be used without appropriate attribution and permission from the ASF. Please see our [formal Trademark Policy](/foundation/marks/) for more details.
 In particular, as a vendor-neutral public charity that provides indepenent governance to all Apache projects, you must use care when displaying the feather, and ensure it's clear that it's referring to the ASF as an independent organization.
 
 # Feathers  {#links}
@@ -328,5 +328,5 @@ The Apache Feather and Apache Software Foundation logo have both undergone chang
 *   [asf_logo.eps](/foundation/press/kit/asf_logo.eps) Feather with Foundation Name and URL - EPS Format
 
 
-[1]: https://www.apache.org/foundation/marks/faq/#poweredby
-[2]: https://www.apache.org/foundation/press/kit/poweredBy/old-template-before-march-2019/Template.PNG "Per-Project Powered By Logo Example"
+[1]: /foundation/marks/faq/#poweredby
+[2]: /foundation/press/kit/poweredBy/old-template-before-march-2019/Template.PNG "Per-Project Powered By Logo Example"
