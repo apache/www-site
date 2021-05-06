@@ -37,12 +37,12 @@ and administers them on behalf of all Apache projects.  PMCs are expected to
 actively manage their project's brand, and to ask for assistance from
 Brand Management or Legal Affairs when necessary.
 
-**Questions?** Please [contact the Trademarks committee](http://www.apache.org/foundation/marks/contact#pmc)
+**Questions?** Please [contact the Trademarks committee](/foundation/marks/contact#pmc)
 with general questions.  This document is focused on members of all Apache PMCs, and
 is probably best read in conjunction with the [Apache Project Branding
-Requirements](http://www.apache.org/foundation/marks/pmcs) defining the details
+Requirements](/foundation/marks/pmcs) defining the details
 of how projects should treat and display trademarks, and with the
-[PMC Guide](http://www.apache.org/dev/pmc.html) which covers other, non-brand
+[PMC Guide](/dev/pmc.html) which covers other, non-brand
 related responsibilities and procedures related to PMC membership.
 
 # PMCs Are Responsible For Their Brand  {#responsible}
@@ -60,7 +60,7 @@ While the Apache License encourages third parties to use our code, it does **not
 permit third parties to use any Apache trademarks in ways that would
 harm any Apache projects or communities or that would confuse consumers as to the true
 source of Apache software.  In particular, section 6 of the
-[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html) notes:
+[Apache License 2.0](/licenses/LICENSE-2.0.html) notes:
 
 > 6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.
 
@@ -84,7 +84,7 @@ both to the ASF and to other companies and technologies.
 # Ensure Project Websites Treat Trademarks Appropriately  {#website}
 
 PMCs are directly responsible for ensuring all of their project's web content
-complies with the [Apache Project Branding Requirements](http://www.apache.org/foundation/marks/pmcs).
+complies with the [Apache Project Branding Requirements](/foundation/marks/pmcs).
 It is important to ensure that Apache displays its project names and logos
 properly as trademarks, so that third parties will know our brands are
 important to us.  It's also important to treat other organization's trademarks
@@ -123,7 +123,7 @@ specific vendors who have donated services or licenses to the project, or who
 are well-known vendors who provide outside support for the project.  However
 these must be factual entries, not advertisements, and must not show favoritism
 to any particular vendor(s). Recommended best practices for
-[Thanks and Support pages](https://www.apache.org/foundation/marks/linking) are provided.
+[Thanks and Support pages](/foundation/marks/linking) are provided.
 
 # Address Improper Third Party Uses Of Apache Marks  {#police}
 
@@ -133,13 +133,13 @@ potentially infringing parties to ask them to respect Apache marks and
 attribute them to the ASF.  In many cases, a friendly note reminding a third
 party that Apache project names are our trademarks, and they are important
 to us is sufficient to get third parties to respect our marks.  PMCs and committers should use the
-[Apache Trademark Use Reporting Guidelines](http://www.apache.org/foundation/marks/reporting.html)
+[Apache Trademark Use Reporting Guidelines](/foundation/marks/reporting.html)
  in deciding how to contact third parties.
 
 Contact trademarks@ for suggested email templates to use in first contacting
 third parties, or if there is any difficulty in having the PMC make the first
 contact.  Templates are available at
-[www.apache.org/foundation/marks/templates/](//www.apache.org/foundation/marks/templates/)
+[www.apache.org/foundation/marks/templates/](/foundation/marks/templates/)
 
 PMCs are expected to manage this process.  If a third party does
 not respond favorably to the PMC's requests, or responds in a hostile or
@@ -158,7 +158,7 @@ Detailed procedures are in the [Apache Trademark Reporting Guidelines](reporting
 In cases where there is a significant legal issue, or where the efforts of the
 PMC (and especially the project chair and VP, as an officer of the ASF) are
 not successful, the PMC should work with VP, Brand Management to get assistance.
-Please address trademark and legal questions to the [correct lists](http://www.apache.org/foundation/marks/contact#pmc):
+Please address trademark and legal questions to the [correct lists](/foundation/marks/contact#pmc):
 
 -  General or hypothetical legal questions that are not about private matters
    should be sent to the legal-discuss@ publicly archived mailing list.
@@ -191,7 +191,7 @@ for the future benefit of all of Apache projects.
 # Other Trademark Guidelines  {#other}
 
 For more information about Apache marks, please see our [formal Trademark
-Policy](http://www.apache.org/foundation/marks/).
+Policy](/foundation/marks/).
 
 # Important Note  {#notes}
 
@@ -208,4 +208,4 @@ Significant changes will be marked with a new version number.
 For 1.1 in November 2013 clarifications were added, including a link to http://community.apache.org/projectIndependence.html and a note that
 project website branding compliance should be dealt with on trademarks@ and not board@.
 
-[resources]: https://www.apache.org/foundation/marks/resources
+[resources]: /foundation/marks/resources

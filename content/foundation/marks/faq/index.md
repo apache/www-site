@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 This document answers some of Frequently asked questions (FAQs) about the
 ASF's trademarks and their allowable uses. Be sure to review our
-[formal Trademark Policy](http://www.apache.org/foundation/marks/) document, which outlines important requirements for any uses of Apache project
+[formal Trademark Policy](/foundation/marks/) document, which outlines important requirements for any uses of Apache project
 marks.
 
 The following information helps ensure our marks and logos are used in
@@ -34,7 +34,7 @@ are still trademarks of the ASF and should be treated with respect.
 
 Apache project names have the form "Apache *Projectname*", for 
 example Apache Hadoop&reg; and Apache OpenOffice&reg;.  Read our 
-[detailed guide for referring to Apache project and product names](//www.apache.org/foundation/marks/guide).
+[detailed guide for referring to Apache project and product names](/foundation/marks/guide).
 Using the full "Apache *Projectname*" helps ensure that our volunteer 
 project communities get the credit they deserve.
 
@@ -92,13 +92,13 @@ community or product.
 regularly published books.  We certainly do appreciate royalty donations, 
 and a number of publishers have set up systems to donate royalties from their 
 books back to the ASF.  You can read more about [Donating to the 
-ASF](http://www.apache.org/foundation/contributing.html).
+ASF](/foundation/contributing.html).
 
 
 # May I display Apache product logos on my website or marketing materials for ASF software products that my organization's software integrates with or supports?  {#integrateswith}
 
 Yes, as long as you follow the rest of our [formal Trademark 
-Policy](http://www.apache.org/foundation/marks/).  Note that you may [not use 
+Policy](/foundation/marks/).  Note that you may [not use 
 Apache product word marks](#products) as part of any software product name.
 In particular, you must ensure that you follow our [Apache name usage guide][2] and: 
 
@@ -128,7 +128,7 @@ with ASF.
 average user about the source of ASF products or imply that ASF is
 associated with your products or services in any way.
 
-See also the [Powered By Apache logo](https://www.apache.org/foundation/press/kit/) program.
+See also the [Powered By Apache logo](/foundation/press/kit/) program.
 
 
 # May I use Apache marks (names, logos) in software product names?  {#products}
@@ -202,7 +202,7 @@ a Powered by... logo, ask the relevant PMC to consider creating one.
 **not** permissible to directly denote products or services, even those 
 built atop an Apache product.  You must not visually combine or directly associate Apache products' normal logos with third-party product logos.
 
-See also the [Powered By Apache logo](https://www.apache.org/foundation/press/kit/)
+See also the [Powered By Apache logo](/foundation/press/kit/)
 page for details about logo usage.
 
 
@@ -258,7 +258,7 @@ preferred attribution would be:
 regularly-published books.  We certainly do appreciate non-targeted donations, 
 and a number of publishers have set up systems to donate all or part of the royalties from their 
 books to the ASF.  Read more about [Donating to the 
-ASF](http://www.apache.org/foundation/contributing.html).
+ASF](/foundation/contributing.html).
 
 
 # May I use Apache marks, screenshots, or program output in academic papers, articles, or similar non-profit scholarly publications?  {#insideuniv}
@@ -327,7 +327,7 @@ once the podling graduates.  **IMPORTANT:** if you submit a new registration app
 ----
 # Other trademark guidelines  {#other}
 
-See our [formal Trademark Policy](http://www.apache.org/foundation/marks/) 
+See our [formal Trademark Policy](/foundation/marks/) 
 and our [site map of all Trademark resources][resources].
 
 # Important Note  {#notes}
@@ -338,14 +338,14 @@ any of its projects, or to imply any approval or support by ASF for any
 third party products, services, or events.**
 
 
-[contact]: http://www.apache.org/foundation/marks/contact
-[contactother]: http://www.apache.org/foundation/marks/contact#other
-[resources]: http://www.apache.org/foundation/marks/resources
-[guide]: http://www.apache.org/foundation/marks/guide
-[incubator]: https://incubator.apache.org/
-[podlingnamesearch]: https://incubator.apache.org/guides/names.html
+[contact]: /foundation/marks/contact
+[contactother]: /foundation/marks/contact#other
+[resources]: /foundation/marks/resources
+[guide]: /foundation/marks/guide
+[incubator]: //incubator.apache.org/
+[podlingnamesearch]: //incubator.apache.org/guides/names.html
 
 
 [1]: https://whimsy.apache.org/brand/list
-[2]: https://www.apache.org/foundation/marks/guide
-[3]: http://www.apache.org/foundation/press/kit/#links
+[2]: /foundation/marks/guide
+[3]: /foundation/press/kit/#links

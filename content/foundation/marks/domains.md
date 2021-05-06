@@ -14,7 +14,7 @@ relevant consumer about the source of software or services provided through your
 domain with products or services provided by Apache *Project* or the
 Apache Software Foundation (ASF) as a whole.  You
 should apply the "likelihood of confusion" test described in our
-[formal Trademark Policy](http://www.apache.org/foundation/marks/),
+[formal Trademark Policy](/foundation/marks/),
 and please realize that the use of Apache marks in third party domain names is generally not
 "nominative fair use."
 
@@ -279,7 +279,7 @@ that some other organization is providing that named Apache software.
 
 # Other Trademark Policies And Resources  {#other}
 
-Please see our [formal Trademark Policy](http://www.apache.org/foundation/marks/)
+Please see our [formal Trademark Policy](/foundation/marks/)
 and our [site map of Trademark resources][resources].
 
 # Important Note  {#notes}
@@ -301,6 +301,6 @@ Material changes will be marked with a new version number.
 **v1.2 (2016)** Add prohibition on second level domains or similar; Add proper usage to attributions section
 
 
-[contactdomains]: //www.apache.org/foundation/marks/contact#domains
-[resources]: //www.apache.org/foundation/marks/resources
-[guide]: //www.apache.org/foundation/marks/guide
+[contactdomains]: /foundation/marks/contact#domains
+[resources]: /foundation/marks/resources
+[guide]: /foundation/marks/guide

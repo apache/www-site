@@ -21,7 +21,7 @@ that use would likely confuse a relevant consumer about the source any
 software or services you provide with products or services provided by 
 the Apache *Project* project or the Apache Software Foundation (ASF) as a whole.  You
 should apply the "likelihood of confusion" test described in our 
-[formal Trademark Policy](http://www.apache.org/foundation/marks/), 
+[formal Trademark Policy](/foundation/marks/), 
 understanding that the use of Apache marks in third party services is 
 generally not "nominative fair use."
 
@@ -41,7 +41,7 @@ Apache projects, and is special to our organization, as well as being the
 primary way that consumers discover our projects and products.
 
 You may also be interested in reading our closely related 
-[Third Party Domain Name Branding Policy](//www.apache.org/foundation/marks/domains).
+[Third Party Domain Name Branding Policy](/foundation/marks/domains).
 
 # Contents  {#links}
 
@@ -291,7 +291,7 @@ or websites that may be branded using Apache marks in respectful ways.
    
 # Other Trademark Guidelines  {#other}
 
-Please see our [formal Trademark Policy](//www.apache.org/foundation/marks/)
+Please see our [formal Trademark Policy](/foundation/marks/)
 and our [site map of Trademark resources][resources].
 
 # Important Note  {#notes}
@@ -306,5 +306,5 @@ third party products, services, or events.**
 This is version 0.2 of this Apache policy document, published in February 2017.  
 Significant changes will be marked with a new version number.
 
-[resources]: //www.apache.org/foundation/marks/resources
-[guide]: //www.apache.org/foundation/marks/guide
+[resources]: /foundation/marks/resources
+[guide]: /foundation/marks/guide

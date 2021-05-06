@@ -30,7 +30,7 @@ merchandise (shirts, giveaways, etc.) using Apache brands.  Most of
 these requests are a good way to help promote awareness of Apache 
 projects and their contributors, and are well in line with our policy:
 
-[https://www.apache.org/foundation/marks/merchandise](https://www.apache.org/foundation/marks/merchandise)
+[https://www.apache.org/foundation/marks/merchandise](/foundation/marks/merchandise)
 
 While a few Apache project PMCs continue to actively monitor uses 
 of their brand and raise issues appropriately, the rapid growth in 
@@ -45,7 +45,7 @@ Source as well as brand management are published online, and we urge
 project participants and software vendors alike to review and ask us
 questions about them - please review our complete site map:
 
-  [http://www.apache.org/foundation/marks/resources](http://www.apache.org/foundation/marks/resources)
+  [http://www.apache.org/foundation/marks/resources](/foundation/marks/resources)
 
 On the registration front, we continue to work with counsel to process 
 renewals and registrations for projects.  While most are straightforward, 
@@ -89,7 +89,7 @@ Source as well as brand management is published online, and we urge
 project participants and software vendors alike to review and ask us
 questions about them - please review our complete site map:
 
-  [http://www.apache.org/foundation/marks/resources](http://www.apache.org/foundation/marks/resources)
+  [http://www.apache.org/foundation/marks/resources](/foundation/marks/resources)
 
 On the registration front, we have come upon our first large set of 
 trademark registration renewals and maintenance paperwork.  Although 
@@ -155,12 +155,12 @@ Free giveaways are generally fine, and the ASF now has a policy for
 licensing specific brands to apparel or sticker companies with a clear
 license and profit sharing arrangement.
 
-- [See the new Apache Non-Software Merchandise Branding Policy](https://www.apache.org/foundation/marks/merchandise)
+- [See the new Apache Non-Software Merchandise Branding Policy](/foundation/marks/merchandise)
 
-Our new [Third Party Services Naming Branding Policy](https://www.apache.org/foundation/marks/services)
+Our new [Third Party Services Naming Branding Policy](/foundation/marks/services)
 clarifies the use of Apache brands in services, for example the many cloud 
 or hosting providers who offer services around Apache software products.
-In addition, a greatly expanded [Apache Product Name Usage Guide](https://www.apache.org/foundation/marks/guide)
+In addition, a greatly expanded [Apache Product Name Usage Guide](/foundation/marks/guide)
 will help marketers and technologists alike better refer to Apache 
 communities and the software products they produce.
 
@@ -504,5 +504,5 @@ more PMCs who wish to register their product names.
 
 
 
-[resources]: https://www.apache.org/foundation/marks/resources
-[contactus]: https://www.apache.org/foundation/marks/contact
+[resources]: /foundation/marks/resources
+[contactus]: /foundation/marks/contact

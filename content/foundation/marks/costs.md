@@ -9,7 +9,7 @@ This page provides a basic background on the costs associated with Apache projec
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
-See Also: [Trademark Resources Site Map](http://www.apache.org/foundation/marks/resources).
+See Also: [Trademark Resources Site Map](/foundation/marks/resources).
 
 </div>
 
@@ -21,7 +21,7 @@ Common law trademark rights for your Apache software product's name and logo acc
 
 While common law trademarks provide some rights in the US and some countries, they are sometimes ignored or even contested by other software vendors or service providers.  Registering our trademarks with various country national registration authorities provides significantly more protection, both in terms of preventing other vendors from using our trademarks to start with, as well as providing a much stronger defense if they attempt to mis-use or infringe on our trademarks.
 
-The ASF will attempt to register any healthy Apache top level software project's name in the US if the [PMC requests it](http://www.apache.org/foundation/marks/register#request).  PMCs may also request additional registrations in other countries where they are likely to find new contributors, however the PMC must provide a justification for the additional funds needed to pay for additional country applications.
+The ASF will attempt to register any healthy Apache top level software project's name in the US if the [PMC requests it](/foundation/marks/register#request).  PMCs may also request additional registrations in other countries where they are likely to find new contributors, however the PMC must provide a justification for the additional funds needed to pay for additional country applications.
 
 Trademark registrations are country-specific.  In particular, many countries operate on a "first-to-file" basis, meaning the first party to register a mark for a specific product gets the primary benefit for legal questions within that country.  Having a registration in the US or another major software market is significant value to a project in terms of how other vendors respect your name, however that registration does not necessarily grant any legal advantage in other countries in a lawsuit.
 
@@ -33,7 +33,7 @@ While trademark law and implementation varies by country, in most cases the pace
 
 ## How To Request Registration  {#regrequest}
 
-**Information Needed:** To request registration, your [PMC needs to provide basic information](http://www.apache.org/foundation/marks/register#register) about your software product's name, it's download page, a brief description of what the software product does, and when the name was first used.  VP, Brand will evaluate the information, and send it to the ASF's trademark counsel for a detailed review.  Our counsel will then formally submit the registration application to the USPTO, the national registry for US trademarks.  If the PMC has an approved budget for other country registrations, our counsel will complet them at the same time using the *Madrid Protocol*.
+**Information Needed:** To request registration, your [PMC needs to provide basic information](/foundation/marks/register#register) about your software product's name, it's download page, a brief description of what the software product does, and when the name was first used.  VP, Brand will evaluate the information, and send it to the ASF's trademark counsel for a detailed review.  Our counsel will then formally submit the registration application to the USPTO, the national registry for US trademarks.  If the PMC has an approved budget for other country registrations, our counsel will complet them at the same time using the *Madrid Protocol*.
 
 Each mark (a specific name or logo) must be applied for separately.  In almost all cases, we will be applying in Nice international trademark **class 9** for software products.  PMCs requests to applying for an additional "services" class (that is, providing the volunteer developer support PMCs do on dev@/user@) will be considered on an individual basis and will require justification for any additional costs. 
 

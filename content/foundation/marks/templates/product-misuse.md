@@ -7,7 +7,7 @@ Email Templates used by Apache projects for contacting third parties to report m
 
 This email template is a sample starting place for sending a first contact to a third party that a PMC believes is misusing an Apache trademark directly in conjunction with a **software product** offering or download.  Misuses in other cases - either with a software **service**, training, consulting, or anything not product related use a different letter.
 
-Once you use the [Apache Trademark Use Reporting Guidelines](http://www.apache.org/foundation/marks/reporting) to confirm that this specific use of your project's trademark(s) is improper, use this email template to contact the other company/organization to ask them to stop.  You may need to do some digging to find some appropriate contact emails.
+Once you use the [Apache Trademark Use Reporting Guidelines](/foundation/marks/reporting) to confirm that this specific use of your project's trademark(s) is improper, use this email template to contact the other company/organization to ask them to stop.  You may need to do some digging to find some appropriate contact emails.
 
 ## Process To Send An EMail  {#steps}
 

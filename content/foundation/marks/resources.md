@@ -12,15 +12,15 @@ an Apache project, or are you a user, new contributor, software vendor, or third
 
 | For Users And Outside Parties | For Apache PMCs And Committers |
 | ------------------------- | ----------------------------- |
-| [Apache Trademark Usage Policy](//www.apache.org/foundation/marks/) | [PMC Branding Responsibilities](//www.apache.org/foundation/marks/responsibility) |
-| [Apache Trademark Usage FAQs](//www.apache.org/foundation/marks/faq) | [Project Website Branding Policy](//www.apache.org/foundation/marks/pmcs) |
-| [Apache Product Name Usage Guide](//www.apache.org/foundation/marks/guide) | [Project Independence – Required PMC Procedures](//community.apache.org/projectIndependence.html) |
-| [Third Party Domain Name Branding Policy](//www.apache.org/foundation/marks/domains) | [Trademark Problem/Infringement Reporting Process](//www.apache.org/foundation/marks/reporting) |
-| [Third Party Event Branding Policy](//www.apache.org/foundation/marks/events)  | [Corporate Recognition Best Practices](//www.apache.org/foundation/marks/linking) |
-| [List of Apache Registered Trademarks](//www.apache.org/foundation/marks/list) | [Social Media Best Practices](//www.apache.org/foundation/marks/socialmedia) |
-| [Non-Software Merchandise Branding Policy](//www.apache.org/foundation/marks/merchandise) |  [Process For Selecting New Apache Software Product Names](//www.apache.org/foundation/marks/naming) |
-| [Contacting Apache With Trademark Questions](//www.apache.org/foundation/marks/contact) |  [Incubator Branding Policy For Podlings](//incubator.apache.org/guides/branding.html) |
-| [Asking **non**-Trademark related Legal questions](//www.apache.org/legal/) | [How To: Request Registration of Your Project Name][1] |
+| [Apache Trademark Usage Policy](/foundation/marks/) | [PMC Branding Responsibilities](/foundation/marks/responsibility) |
+| [Apache Trademark Usage FAQs](/foundation/marks/faq) | [Project Website Branding Policy](/foundation/marks/pmcs) |
+| [Apache Product Name Usage Guide](/foundation/marks/guide) | [Project Independence – Required PMC Procedures](//community.apache.org/projectIndependence.html) |
+| [Third Party Domain Name Branding Policy](/foundation/marks/domains) | [Trademark Problem/Infringement Reporting Process](/foundation/marks/reporting) |
+| [Third Party Event Branding Policy](/foundation/marks/events)  | [Corporate Recognition Best Practices](/foundation/marks/linking) |
+| [List of Apache Registered Trademarks](/foundation/marks/list) | [Social Media Best Practices](/foundation/marks/socialmedia) |
+| [Non-Software Merchandise Branding Policy](/foundation/marks/merchandise) |  [Process For Selecting New Apache Software Product Names](/foundation/marks/naming) |
+| [Contacting Apache With Trademark Questions](/foundation/marks/contact) |  [Incubator Branding Policy For Podlings](//incubator.apache.org/guides/branding.html) |
+| [Asking **non**-Trademark related Legal questions](/legal/) | [How To: Request Registration of Your Project Name][1] |
 
 # Apache Trademark Policy Presentations / Slides / Videos  {#slides}
 
@@ -74,7 +74,7 @@ for most software related trademarks.
 
  * [USPTO Trademark Search Database](http://www.uspto.gov/trademarks-application-process/search-trademark-database) - official
 US trademark registry.  Tip: when copying links about specific registrations/applications, do **not** use the search link you get - copy
-the "TDSR" blue button link instead.  There are many [more USPTO search tips](http://www.apache.org/foundation/marks/naming#research-registered-trademarks).
+the "TDSR" blue button link instead.  There are many [more USPTO search tips](/foundation/marks/naming#research-registered-trademarks).
  * [TMView search by OHIM](https://www.tmdn.org/tmview/welcome) - Official search tool for trademarks covering the EU/CTM and parts of Europe.
  * [India Office of Trademarks](http://ipindia.nic.in/tmr_new/default.htm) - official trademark registry of India.
  * [China Trademark Office](http://www.chinatrademarkoffice.com/) - government sanctioned search company for trademarks in China.
@@ -88,8 +88,8 @@ contact your own legal counsel; the ASF and our communities cannot provide legal
 advice to you.
 
 **Reminder:** Apache software code and documentation, including this page, is provided under
-the [Apache License, v2.0](//www.apache.org/licenses/LICENSE-2.0).  This allows you to freely re-use this content for a wide variety of purposes
+the [Apache License, v2.0](/licenses/LICENSE-2.0).  This allows you to freely re-use this content for a wide variety of purposes
 in most cases.  However the Apache License does not allow use of our trademarks: See [section 6. Trademarks][2] for details.
 
-[1]: //www.apache.org/foundation/marks/register#register
-[2]: //www.apache.org/licenses/LICENSE-2.0#trademarks
+[1]: /foundation/marks/register#register
+[2]: /licenses/LICENSE-2.0#trademarks

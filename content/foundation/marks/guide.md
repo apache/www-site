@@ -133,7 +133,7 @@ and not to some third party organization or product.
 
 To enable the many organizations that build solutions atop Apache software
 to properly showcase their relationship, the ASF provides a line of
-["Powered By" graphic logos to download](http://www.apache.org/foundation/press/kit/#poweredby)
+["Powered By" graphic logos to download](/foundation/press/kit/#poweredby)
  for all Apache projects. Powered By logos may be used more freely and
 in more contexts than the official project logos, including in ways that
 directly show the relationship between the Apache software product and
@@ -150,11 +150,11 @@ to accommodate limited printing technologies in physical contexts.  The feather
 logo must never be used in direct conjunction with other organization
 logos or images.
 
-The ASF Press team maintains the [official Apache feather logos](http://www.apache.org/foundation/press/kit/#policy).
+The ASF Press team maintains the [official Apache feather logos](/foundation/press/kit/#policy).
 
 # Other Trademark Guidelines  {#other}
 
-Please see our [formal Trademark Policy](//www.apache.org/foundation/marks/)
+Please see our [formal Trademark Policy](/foundation/marks/)
 and our [site map of Trademark resources][resources].
 
 # Important Note  {#notes}
@@ -165,8 +165,8 @@ any of its projects or to imply any approval or support by ASF for any
 third party products, services, or events.**
 
   [1]: http://community.apache.org/projectIndependence
-  [2]: //www.apache.org/foundation/governance/
-  [3]: http://www.apache.org/foundation/marks/faq/#attribution
-  [4]: http://www.apache.org/foundation/marks/domains
-  [5]: http://www.apache.org/foundation/marks/events
-[resources]: //www.apache.org/foundation/marks/resources
+  [2]: /foundation/governance/
+  [3]: /foundation/marks/faq/#attribution
+  [4]: /foundation/marks/domains
+  [5]: /foundation/marks/events
+[resources]: /foundation/marks/resources

@@ -101,7 +101,7 @@ For **legal counsel** sending legally privileged questions or information,
 please email [vp-brand@apache.org](mailto:vp-brand@apache.org?subject=%5bLEGAL%5d Legal question about Apache marks) privately.
 
 If you have a **non**-trademark related legal question, please 
-contact the [Legal Affairs Committee](http://www.apache.org/legal/).
+contact the [Legal Affairs Committee](/legal/).
 
 You can also follow our @ASFBrands official account on Twitter for occasional news about our trademark policy:
 
@@ -114,10 +114,10 @@ third party to claim any association with the Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third party products or services.** 
 
-[free]: //www.apache.org/free/
-[events]: //www.apache.org/foundation/marks/events.html
-[domains]: //www.apache.org/foundation/marks/domains.html
-[faq]: //www.apache.org/foundation/marks/faq
-[poweredby]: //www.apache.org/foundation/marks/faq/#poweredby
-[poweredbylogo]: //www.apache.org/foundation/press/kit/#poweredby
-[resources]: //www.apache.org/foundation/marks/resources
+[free]: /free/
+[events]: /foundation/marks/events.html
+[domains]: /foundation/marks/domains.html
+[faq]: /foundation/marks/faq
+[poweredby]: /foundation/marks/faq/#poweredby
+[poweredbylogo]: /foundation/press/kit/#poweredby
+[resources]: /foundation/marks/resources

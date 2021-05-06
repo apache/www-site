@@ -148,7 +148,7 @@ The following Specific Policies apply to the "Apache" word trademark and
 the "ASF feather" graphic trademark, as well as the trademarks and
 graphic logos for all "Apache *ProjectName*" and "*ProjectName*" software produced by each
 of the ASF's projects.  You may refer to our 
-[list of ASF marks](http://www.apache.org/foundation/marks/list/). 
+[list of ASF marks](/foundation/marks/list/). 
 
 Examples of permitted nominative fair use:
 
@@ -265,7 +265,7 @@ realize that the use of ASF trademarks in your domain names is generally not
 "nominative fair use."
 
 For more details and to request approvals, please see our 
-[Domain Name Branding Policy](http://www.apache.org/foundation/marks/domains.html). 
+[Domain Name Branding Policy](/foundation/marks/domains.html). 
 In particular, using ASF product names as second level domain names (*example*.com) is not allowed.
 
 
@@ -284,7 +284,7 @@ conferences or events must be approved in writing from the VP,
 Brand Management or designee.
 
 For more details and to request approvals, please see our 
-[Event Branding Policy](http://www.apache.org/foundation/marks/events.html). 
+[Event Branding Policy](/foundation/marks/events.html). 
 Please request approvals well in advance to avoid ApacheCon blackout dates.
 
 # Who We Are  {#whoweare}
@@ -315,14 +315,14 @@ This is version 1.2 of this ASF policy document, published in March 2021. We wil
 **v1.2** Update to use ASF to refer to the Apache Software Foundation
 
 
-[contact]: //www.apache.org/foundation/marks/contact
-[contactevents]: //www.apache.org/foundation/marks/contact#events
-[contactdomains]: //www.apache.org/foundation/marks/contact#domains
-[contactproducts]: //www.apache.org/foundation/marks/contact#products
-[contactswag]: //www.apache.org/foundation/marks/contact#swag
-[contactother]: //www.apache.org/foundation/marks/contact#other
+[contact]: /foundation/marks/contact
+[contactevents]: /foundation/marks/contact#events
+[contactdomains]: /foundation/marks/contact#domains
+[contactproducts]: /foundation/marks/contact#products
+[contactswag]: /foundation/marks/contact#swag
+[contactother]: /foundation/marks/contact#other
 [independent]: //community.apache.org/projectIndependence
-[resources]: //www.apache.org/foundation/marks/resources
-[brandguide]: //www.apache.org/foundation/marks/guide
-[products]: //www.apache.org/foundation/marks/faq/#products
-[poweredby]: //www.apache.org/foundation/marks/faq/#poweredby
+[resources]: /foundation/marks/resources
+[brandguide]: /foundation/marks/guide
+[products]: /foundation/marks/faq/#products
+[poweredby]: /foundation/marks/faq/#poweredby

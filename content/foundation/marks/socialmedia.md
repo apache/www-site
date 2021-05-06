@@ -11,7 +11,7 @@ media conforms to our [Apache Trademark Policy](/foundation/marks).
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
-See Also: all [Trademark Resources][resources] and the [Corporate Recognition/Linking Guidelines](//www.apache.org/foundation/marks/linking).
+See Also: all [Trademark Resources][resources] and the [Corporate Recognition/Linking Guidelines](/foundation/marks/linking).
 
 </div>
 
@@ -69,7 +69,7 @@ If you're unclear on whether a post or item is OK, ask first on the appropriate 
 
 # Other Important Apache Practices And Policies  {#otherpolicy}
 
-It's helpful to familiarize yourself with Apache's [Media and Analyst Relations pages](//www.apache.org/press/) and [PMC brand management pages](//www.apache.org/foundation/marks/pmcs.html).
+It's helpful to familiarize yourself with Apache's [Media and Analyst Relations pages](/press/) and [PMC brand management pages](/foundation/marks/pmcs.html).
 
 Some of the ASF's official Twitter accounts are [@TheASF](//twitter.com/theasf), [@ApacheCon](//twitter.com/apachecon), and [@ASFBrands](//twitter.com/asfbrands),
 and many projects run their own official Twitter accounts.
@@ -82,11 +82,11 @@ third party products or services.**
 
 These guidelines are meant to document best practices
 for use of social media using Apache brands, and do not
-override or replace our [formal Trademark Policy](http://www.apache.org/foundation/marks/).
-If you have any questions about trademarks or branding, please [read our trademark resources][resources] or [contact us](//www.apache.org/foundation/marks/contact).
+override or replace our [formal Trademark Policy](/foundation/marks/).
+If you have any questions about trademarks or branding, please [read our trademark resources][resources] or [contact us](/foundation/marks/contact).
 If you have questions or suggestions about these guidelines, please [contact the
 Community Development PMC](http://community.apache.org/).
 
 Thanks and credit to the [Apache CloudStack Social Media Guidelines](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Social+Media+Guidelines).
 
-[resources]: //www.apache.org/foundation/marks/resources
+[resources]: /foundation/marks/resources

@@ -3,9 +3,9 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 This document provides a listing of trademarks of The Apache
 Software Foundation (ASF). You can also read our [formal trademark
-policy](//www.apache.org/foundation/marks/) denoting proper usage of
-Apache trademarks.  [Please see a site map of Trademark resources](//www.apache.org/foundation/marks/resources) or
-[contact us with questions](//www.apache.org/foundation/marks/contact). 
+policy](/foundation/marks/) denoting proper usage of
+Apache trademarks.  [Please see a site map of Trademark resources](/foundation/marks/resources) or
+[contact us with questions](/foundation/marks/contact). 
 
 **The Apache Software Foundation considers the names of all top level projects, 
 all downloadable software products, our feather logo, and the logos of our projects to be 
@@ -965,7 +965,7 @@ both the public perception of the source of goods, as well as the
 independent community governance of the project are firmly 
 established before we make it a formal Apache project.
 
-Potential donors with questions should [contact us](http://www.apache.org/foundation/marks/contact) to clarify 
+Potential donors with questions should [contact us](/foundation/marks/contact) to clarify 
 details and see if/when a legal trademark assignment agreement is required.
 
 
@@ -974,7 +974,7 @@ details and see if/when a legal trademark assignment agreement is required.
 The ASF has several projects devoted to the process of software
 development.
 
-[Apache](http://www.apache.org) 
+[Apache](/) 
 Apache is our registered trademark and service mark for community developed open source software products.
 
 [Apache Attic, Attic](http://attic.apache.org) 

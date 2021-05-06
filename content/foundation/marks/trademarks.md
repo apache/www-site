@@ -4,9 +4,9 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # This policy has been superseded  {#draft}
 
 **NOTICE:** This document has been superseded by our [new formal trademark
-use policy](http://apache.org/foundation/marks) in September of 2009.
+use policy](/foundation/marks) in September of 2009.
 Please see the new policy at
-[http://apache.org/foundation/marks](http://apache.org/foundation/marks).
+[https://www.apache.org/foundation/marks](/foundation/marks).
 
 # Trademark Use Policy (OUTDATED)  {#policy}
 

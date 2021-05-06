@@ -10,7 +10,7 @@ or links on their `apache.org` project website about the larger ecosystem around
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
-See Also: [Trademark Resources Site Map](https://www.apache.org/foundation/marks/resources).
+See Also: [Trademark Resources Site Map](/foundation/marks/resources).
 
 </div>
 
@@ -33,9 +33,9 @@ and unbiased information about the larger ecosystem of companies, consultants,
 trainers, and other organizations that use or contribute to their projects.
 
 These best practices are meant to be used in conjunction with the [Apache Project
-Branding Policy](//www.apache.org/foundation/marks/pmcs), as well as in recognition of Apache's formal
-[Sponsorship](//www.apache.org/foundation/sponsorship.html) and
-[Donation](//www.apache.org/foundation/contributing.html) policies.
+Branding Policy](/foundation/marks/pmcs), as well as in recognition of Apache's formal
+[Sponsorship](/foundation/sponsorship.html) and
+[Donation](/foundation/contributing.html) policies.
 
 # Project Thanks Pages / Listings  {#projectthanks}
 
@@ -229,7 +229,7 @@ any of these suggestions for their sites.
 # Other Trademark Guidelines  {#other}
 
 For more information about Apache marks, please see our [formal Trademark
-Policy](http://www.apache.org/foundation/marks/).
+Policy](/foundation/marks/).
 
 # Important Note  {#notes}
 

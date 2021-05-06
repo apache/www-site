@@ -9,7 +9,7 @@ using Apache&reg; marks in relation to events.
 This document defines the branding policy for events run by third parties
 that use Apache marks in the name or primary branding of the event. For more information
 on use of Apache&reg; marks in other areas, please see our [formal Trademark
-Policy](//www.apache.org/foundation/marks/) and [site map of resources][resources].
+Policy](/foundation/marks/) and [site map of resources][resources].
 
 # Contents  {#links}
 
@@ -69,7 +69,7 @@ an event open to the public does require approval.
 
 Conferences organised by third parties which use Apache marks are required to have
 an Anti-Harassment Policy. This policy must either be identical to the
-[ASF Anti-Harassment Policy](https://www.apache.org/foundation/policies/anti-harassment.html)
+[ASF Anti-Harassment Policy](/foundation/policies/anti-harassment.html)
 or be an alternative approved by the ASF.
 
 ## Must Provide Open Educational Content  {#education}
@@ -235,7 +235,7 @@ events that are approved by the Foundation.
 # Other Trademark Guidelines  {#other}
 
 For more information about Apache marks, please see our [formal Trademark
-Policy](http://www.apache.org/foundation/marks/) and our [site map of Trademark resources][resources].
+Policy](/foundation/marks/) and our [site map of Trademark resources][resources].
 
 # Steps to gain approval to use an Apache Mark in Events  {#approval}
 
@@ -305,6 +305,6 @@ Material changes will be marked with a new version number.
 
 **v1.5** Update to v1.5; add more detail regarding conflicting event dates
 
-[contactevents]: //www.apache.org/foundation/marks/contact#events
-[resources]: //www.apache.org/foundation/marks/resources
-[guide]: //www.apache.org/foundation/marks/guide
+[contactevents]: /foundation/marks/contact#events
+[resources]: /foundation/marks/resources
+[guide]: /foundation/marks/guide

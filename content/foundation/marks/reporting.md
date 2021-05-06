@@ -28,7 +28,7 @@ consensus based projects.  Having clear trademarks and service marks that identi
 and software products is important to the health of our communities, both to encourage
 the sense of community, to ensure that our projects may be run independently
 of outside or commercial influence, and to allow new consumers to discover our
-many [freely available](http://www.apache.org/free/) products and services.
+many [freely available](/free/) products and services.
 
 Likewise, our project communities bear responsibility for managing their own
 brands and marks, as well as treating trademarks of other Apache projects and third parties with respect.
@@ -48,7 +48,7 @@ with legal questions about trademarks may [contact us privately][contactother].
 So you're browsing a website with "Hadoop" plastered all over their marketing
 materials, and there's no mention of Apache anywhere on the page - what should you
 do?  The first thing is to actually ask: is this actually a problem, or is it
-really [nominative use](http://www.apache.org/foundation/marks/#principles)
+really [nominative use](/foundation/marks/#principles)
 of the Apache Hadoop&reg; name, and it's just fine?
 
 Trademarks exist to **prevent customer confusion about the source of goods or
@@ -122,9 +122,9 @@ are usually important to address.
 
 - Is the use related to a software product or service that does **not* come from Apache?
 Uses of Apache marks in direct conjunction with third party software products
-are [generally not OK](http://www.apache.org/foundation/marks/faq/#products),
+are [generally not OK](/foundation/marks/faq/#products),
 and require investigation unless they are already following the
-[Powered By guideline](http://www.apache.org/foundation/marks/faq/#poweredby),
+[Powered By guideline](/foundation/marks/faq/#poweredby),
 or unless they are clearly a different kind of software product.
 
 ***IMPORTANT:*** If the name being used *happens* to match an Apache product
@@ -150,10 +150,10 @@ the source of the goods or software product.  I.e. as long as a new user
 would understand that the use by a third party is a parody or review, and not coming
 from the official Apache project, it's not likely a problem.
 
-- Is the use in a **domain name**?  See the [Domain Name Branding Policy](http://www.apache.org/foundation/marks/domains.html)
+- Is the use in a **domain name**?  See the [Domain Name Branding Policy](/foundation/marks/domains.html)
 for more information on allowable third party use of Apache brands in domain names.
 
-- Is the use part of an **event or conference** brand?  See the [Event Name Branding policy](http://www.apache.org/foundation/marks/events.html).
+- Is the use part of an **event or conference** brand?  See the [Event Name Branding policy](/foundation/marks/events.html).
 
 
 # Reporting Potential Misuses Of Apache Marks - How To For Users  {#users}
@@ -211,7 +211,7 @@ any trademark infringements should always happen on *private@* lists.
 and cc: trademarks@.  When the PMC believes it's likely to be an unintentional
 infringement, or if PMC members are personally familiar with the
 third party potentially infringing, then any PMC member may contact the
-third party by following our [**Guide For Contacting Third Parties**](http://www.apache.org/foundation/marks/templates/).
+third party by following our [**Guide For Contacting Third Parties**](/foundation/marks/templates/).
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
@@ -264,7 +264,7 @@ requests in a timely manner, or if you are legal counsel, please
 # Other Trademark Guidelines  {#other}
 
 For more information about Apache marks, please see our [formal Trademark
-Policy](http://www.apache.org/foundation/marks/).  PMC members should
+Policy](/foundation/marks/).  PMC members should
 also read the [PMC Branding Responsibilities](responsibility.html)
 and the [Project Website Requirements](pmcs.html).
 Or, see the [site map of Trademark Resources][3].
@@ -276,10 +276,10 @@ third party to claim any association with the Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third party products, services, or events.**
 
-[contact]: http://www.apache.org/foundation/marks/contact
-[contactother]: http://www.apache.org/foundation/marks/contact#other
-[resources]: //www.apache.org/foundation/marks/resources
+[contact]: /foundation/marks/contact
+[contactother]: /foundation/marks/contact#other
+[resources]: /foundation/marks/resources
 
-[1]: //www.apache.org/foundation/marks/responsibility
-[2]: //www.apache.org/foundation/marks/templates/
-[3]: //www.apache.org/foundation/marks/resources
+[1]: /foundation/marks/responsibility
+[2]: /foundation/marks/templates/
+[3]: /foundation/marks/resources

@@ -7,7 +7,7 @@ This **Downstream Distribution Branding Policy** defines **requirements** for
 downstream software distributors that wish to distribute Apache&reg; software
 products under the original Apache product name. Distributors wishing to use a
 different name should follow our
-[formal Trademark Policy](http://www.apache.org/foundation/marks/)
+[formal Trademark Policy](/foundation/marks/)
 
 # Downstream Distribution Branding Policy  {#introduction}
 
@@ -55,7 +55,7 @@ The acceptable changes must meet at least one of the following criteria:
 
 - A change is a fix for an undisclosed security issue; and the fix is not
   publicly disclosed as as security fix; and the Apache project has been
-  [notified](http://www.apache.org/security/) of the both issue and the
+  [notified](/security/) of the both issue and the
   proposed fix; and the PMC has rejected neither the vulnerability report
   nor the proposed fix.
 
@@ -71,7 +71,7 @@ The acceptable changes must meet at least one of the following criteria:
 
 Any additional dependency included in the distribution MUST be licensed under
 terms that would allow an Apache project to include the dependency in an
-Apache release as per the [3rd party license policy](https://www.apache.org/legal/resolved.html).
+Apache release as per the [3rd party license policy](/legal/resolved.html).
 
 Optional dependencies, modules, add-ons, etc. available from The Apache
 Software Foundation MAY be included in the distribution.
@@ -141,7 +141,7 @@ the Apache product name.
 
 # Other Trademark Policies And Resources  {#other}
 
-Please see our [formal Trademark Policy](http://www.apache.org/foundation/marks/)
+Please see our [formal Trademark Policy](/foundation/marks/)
 and our [site map of Trademark resources][resources].
 
 # Important Note  {#notes}
@@ -162,5 +162,5 @@ Changes will be tracked from version 1.0 onwards.
 
 # DRAFT ~ DRAFT ~ DRAFT
 
-[resources]: //www.apache.org/foundation/marks/resources
+[resources]: /foundation/marks/resources
 
