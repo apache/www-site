@@ -892,7 +892,7 @@ var quotes = "\n\
 &quot;is all about the freedom to contribute. If I have a good idea or an answer to a question I am free to jump in! All that matters is the quality of your work. The Apache Way also fuels people to want to help others. You will get a response from a user list faster than messaging folks in your own company!&quot;\n\
 —Amanda Moran, 4 year user of Apache Cassandra, Spark and Trafodion, contributor to Apache Trafodion\n\
 ";
-var a = quotes.split(/\n  {2,3}/);
+var a = quotes.split(/\n{2,3}/);
 function setQuote()  {
     var obj = document.getElementById('awtm');
     var quote = a[parseInt(Math.random()*a.length)];
