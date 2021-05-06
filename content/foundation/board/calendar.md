@@ -11,7 +11,7 @@ Officers, search for "calendar" in the Foundation's private index page
 
 The Board Chair and/or Directors can call for special board meetings under
 various circumstances as determined by our
-[Bylaws](http://www.apache.org/foundation/bylaws.html). Such special
+[Bylaws](/foundation/bylaws.html). Such special
 meetings might not be listed in the calendar.
 
 Minutes from all meetings will always be produced.
@@ -23,7 +23,7 @@ Formal board meeting minutes from 2010 through present are found here.
 
 The board typically approves minutes from one meeting during the *next* board
 meeting, so minutes will be published roughly one month later than the
-scheduled date.  Other [corporate records](http://www.apache.org/foundation/records/) are published,
+scheduled date.  Other [corporate records](/foundation/records/) are published,
 as is an alternate [categorized view of all board meeting minutes](https://whimsy.apache.org/board/minutes/).
 
 ## Chronological view

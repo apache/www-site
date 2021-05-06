@@ -12,7 +12,7 @@ the board on a monthly basis.
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
-See also Board Meeting Minutes: [Calendar View](https://www.apache.org/foundation/board/calendar.html) / [Categorized view](https://whimsy.apache.org/board/minutes/).
+See also Board Meeting Minutes: [Calendar View](/foundation/board/calendar.html) / [Categorized view](https://whimsy.apache.org/board/minutes/).
 
 </div>
 
@@ -27,7 +27,7 @@ always welcome to [attend monthly board meetings](#attend).
 
 # Who does what  {#who}
 
-The board is responsible for [overseeing the operations of the ASF](https://www.apache.org/foundation/governance/) as a whole, including 
+The board is responsible for [overseeing the operations of the ASF](/foundation/governance/) as a whole, including 
 all Apache projects.  We provide this oversight by having monthly reports submitted 
 by both the officers responsible for corporate operations, as well as quarterly reports 
 submitted by every Apache project about their individual community and technical status.
@@ -39,7 +39,7 @@ rollup report to the board on the day-to-day operations of the ASF.
 - A few board committees and other corporate VPs provide monthly reports directly to the board.
 
 - PMC members in every Apache project collaborate to provide their 
-[quarterly project report](http://www.apache.org/foundation/board/reporting).  The PMC Chair, who is also a Vice President of 
+[quarterly project report](/foundation/board/reporting).  The PMC Chair, who is also a Vice President of 
 the ASF, is responsible for ensuring the report is actually submitted 
 to the board agenda. 
 
@@ -161,12 +161,12 @@ is public.  This allows anyone to easily review all past board meetings by
 date, by PMC, or by major special resolutions.  Note that this is merely
 provided as a convenience, the official/canonical version of this data is
 contained in our 
-[formal publication of all past board meeting minutes](https://www.apache.org/foundation/board/calendar.html)
+[formal publication of all past board meeting minutes](/foundation/board/calendar.html)
 
 
 ## How To Post A Project or Officer Report  {#postreport}
 
-See the PMC Chair's detailed [Board Reporting Guidelines](https://www.apache.org/foundation/board/reporting#how).
+See the PMC Chair's detailed [Board Reporting Guidelines](/foundation/board/reporting#how).
 
 ## How To Attend The Meeting  {#attend}
 
@@ -197,5 +197,5 @@ any [bugs or make enhancement requests to the Whimsy JIRA](https://issues.apache
 You can also run the Board Agenda tool locally, and an architecture 
 overview and code walkthrough is in [www/board/agenda/README.md](https://github.com/apache/whimsy/blob/master/www/board/agenda/README.md)
 
-  [1]: https://www.apache.org/foundation/board/reporting
+  [1]: /foundation/board/reporting
   [2]: https://whimsy.apache.org/board/agenda/

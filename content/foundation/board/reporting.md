@@ -185,17 +185,17 @@ chair should consider each of these questions when writing a report.
     completed (see the [checklist][4]), then please include specific plans on
     how you'll work with the Brand Committee to finalize any remaining items.
 
-    NOTE: all other branding issues be brought to the [Branding Committee](http://www.apache.org/foundation/marks/resources) rather
+    NOTE: all other branding issues be brought to the [Branding Committee](/foundation/marks/resources) rather
     than included in the Board report.
  
  - Legal issues or questions
  
-    While the [Legal Affairs Committee](http://www.apache.org/legal/) handles any 
+    While the [Legal Affairs Committee](/legal/) handles any 
          legal issues, be sure to mention any that occur in your board report.
  
  - Infrastructure issues or strategic needs
  
-     While the [Infrastructure team](http://www.apache.org/dev/#infrastructure) handles the detail of providing 
+     While the [Infrastructure team](/dev/#infrastructure) handles the detail of providing 
          needed services to our projects, feel free to include any concerns or 
          strategic suggestions or requests in your board reports. 
 
@@ -318,12 +318,12 @@ comments addressed greatly enhances the flow of the Board meeting, which needs t
 80 project & podling reports each month, in addition to other business.
 
 
-  [1]: http://apache.org/foundation/marks/pmcs#naming
+  [1]: /foundation/marks/pmcs#naming
   [2]: http://community.apache.org/
-  [3]: http://www.apache.org/foundation/marks/reporting
-  [4]: http://apache.org/foundation/marks/pmcs#checklist
+  [3]: /foundation/marks/reporting
+  [4]: /foundation/marks/pmcs#checklist
   [5]: https://whimsy.apache.org/board/agenda/
-  [6]: https://www.apache.org/foundation/board/meeting
+  [6]: /foundation/board/meeting
   [7]: https://incubator.apache.org/guides/ppmc.html#podling_status_reports
-  [8]: https://www.apache.org/dev/pmc.html#board-feedback
-  [9]: https://www.apache.org/foundation/board/meeting#attend
+  [8]: /dev/pmc.html#board-feedback
+  [9]: /foundation/board/meeting#attend
