@@ -33,8 +33,8 @@ At a high level this policy separates licenses into three categories.
 
 For the purposes of being included in an Apache Software Foundation product, the following licenses are considered to be similar in terms to the Apache License 2.0:
 
-- [Apache License 2.0](http://apache.org/licenses/LICENSE-2.0)
-- [Apache Software License 1.1](http://apache.org/licenses/LICENSE-1.1). 
+- [Apache License 2.0](/licenses/LICENSE-2.0)
+- [Apache Software License 1.1](/licenses/LICENSE-1.1). 
   Including variants:
     - [PHP License 3.01](http://www.php.net/license/3_01.txt)
     - [MX4J License](http://mx4j.sourceforge.net/docs/ch01s06.html)

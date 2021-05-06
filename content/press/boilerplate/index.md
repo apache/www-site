@@ -71,6 +71,6 @@ contact us via email at
 All technical questions or questions about
 [individual projects](http://projects.apache.org/)
 announcements or communications should always be directed to the appropriate
-[project mailing list](http://apache.org/foundation/mailinglists.html).
+[project mailing list](/foundation/mailinglists.html).
 
 

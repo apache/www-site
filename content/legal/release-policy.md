@@ -119,7 +119,7 @@ if the license is long.
 ### The `NOTICE` file  {#notice-file}
 
 The `NOTICE` file must conform to the requirements of [Apache licensing
-policy](http://apache.org/legal/src-headers.html#notice).
+policy](/legal/src-headers.html#notice).
 
 See also [section 4(d)](licenses/LICENSE-2.0.html#redistribution) of the
 Apache License 2.0.
@@ -522,7 +522,7 @@ notice](/legal/src-headers.html#headers).
 
 The new license allows for a NOTICE file that contains such attribution
 notices (including the Apache attribution notice). Read
-[this](http://apache.org/legal/src-headers.html#notice).
+[this](/legal/src-headers.html#notice).
 
 Any attribution notices contained within existing source files should be
 moved into the file. The NOTICE file must included within the distributed
@@ -533,7 +533,7 @@ NOTICE file created.
 
 ### What Content Is Appropriate For The NOTICE File?  {#notice-content}
 
-Read [this](http://apache.org/legal/src-headers.html#notice).
+Read [this](/legal/src-headers.html#notice).
 
 Only mandatory information required by the product's software licenses. Not
 suitable for normal documentation.
