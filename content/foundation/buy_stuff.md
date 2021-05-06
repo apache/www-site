@@ -28,8 +28,11 @@ donated to the ASF. Click on the kernel concepts logo below and get your
 Apache](http://shop.kernelconcepts.de/advanced_search_result.php?keywords=apache)
 T-shirt.
 
-[![](images/kernelconcepts.png)](http://shop.kernelconcepts.de)  {.center}
+<center>
 
+[![](images/kernelconcepts.png)](http://shop.kernelconcepts.de)
+
+</center>
 
 # Buy ASF-sponsored items at The Rodent's Cache  {#RodentsCache}
 

@@ -35,7 +35,7 @@ is also available.
 N.B. the listing below is optional; there is a separate summary of  [members](http://home.apache.org/committers-by-project.html#member)
 
 | Id | Name | Projects |
-|^---|------|----------|
+|----|------|----------|
 | aadamchik | Andrei Adamchik |
 | aaron | [Aaron Bannert](http://www.clove.org/~aaron/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [PHP](http://www.php.net/) , [commons](http://commons.apache.org/) , [incubator](http://incubator.apache.org/) , [flood](http://httpd.apache.org/test/flood/) , infrastructure|
 | ab | Andrzej Bialecki |
@@ -587,7 +587,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 # Emeritus Members of The Apache Software Foundation #
 
 | Id | Name |
-|^---|------|
+|----|------|
 | ? | Andrew Wilson |
 | ? | Rob Hartill |
 | ? | Shane Caraveo |
