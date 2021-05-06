@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 All Apache Podlings, and any Apache&reg; top level project (TLP) must use this process when coming up with a new project name,
 or when coming up with a name for a new subproject or downloadable software product.
 
-** Contents **
+**Contents**
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 

@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 Historical records of public operations summaries of the ASF Trademarks Committee.
 
-** Contents **
+**Contents**
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 

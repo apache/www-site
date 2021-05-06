@@ -13,7 +13,7 @@ on their websites, and to treat all trademarks - Apache's and those of other
 organizations - appropriately. [The PMC Branding Responsibilities](responsibility.html) also explains
 how PMC members must manage their project's brands in other ways.
 
-** Contents **
+**Contents**
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 

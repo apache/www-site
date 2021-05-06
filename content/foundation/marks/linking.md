@@ -6,7 +6,7 @@ Apache&reg; Project Corporate Recognition Best Practices defines
 party corporations and organizations, or provide other kinds of information
 or links on their `apache.org` project website about the larger ecosystem around their projects.
 
-** Contents **
+**Contents**
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 

@@ -17,7 +17,7 @@ In addition, the ASF holds a number of
 around the world, including APACHE&reg;, HADOOP&reg;, OPENOFFICE&reg;, 
 FLEX&reg;, LUCENE&reg; and other project names.
 
-** Contents **  {#links}
+**Contents**  {#links}
 
 [TOC]
 
