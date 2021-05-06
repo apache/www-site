@@ -9,7 +9,7 @@ software our projects release, and do the bulk of the actual work of the ASF.
 
 This document is background information about how and why organizations at the ASF work they way they do.  For 
 official policy information and "How To" style guides, please the 
-documents under References or in [apache.org/dev][1]. 
+documents under References or in [/dev][1]. 
 
 **Contents**
 
@@ -32,10 +32,10 @@ operates within the basic outline of the Apache Way.
 
 PMC members nominate new contributors to the project as either committers or 
 as PMC members, and vote whether to elect elect new committers or 
-PMC members. [PMC members also have binding votes on any project matters](https://www.apache.org/dev/pmc.html#faq).
+PMC members. [PMC members also have binding votes on any project matters](/dev/pmc.html#faq).
 
 PMCs must have at least three (3) active members. This is because 
-the minimum number of positive (+1) votes required for a product release is [three](https://www.apache.org/legal/release-policy.html#release-approval).
+the minimum number of positive (+1) votes required for a product release is [three](/legal/release-policy.html#release-approval).
 
 # Legal  {#legal}
 
@@ -59,18 +59,18 @@ the PMC chair may update the official roster of the members of that PMC. The
 process is designed to ensure that the board has explicit notification of all PMC changes; the waiting period ensures that all directors 
 have a chance to object to or comment on any proposed changes. 
 
-For more details on the process, read [Adding a new PMC member](http://www.apache.org/dev/pmc.html#newpmc)
+For more details on the process, read [Adding a new PMC member](/dev/pmc.html#newpmc)
 
-For people leaving the PMC, read [A PMC member wishes to be resign/go emeritus. Now what?](http://www.apache.org/dev/pmc.html#emeritus)
+For people leaving the PMC, read [A PMC member wishes to be resign/go emeritus. Now what?](/dev/pmc.html#emeritus)
 
 Changes in PMC 
 **chairs** require board resolutions to be approved at monthly meetings, since this 
-involves appointment of an officer of the ASF. Follow the [PMC Chair Change process](https://www.apache.org/dev/pmc.html#newchair).
+involves appointment of an officer of the ASF. Follow the [PMC Chair Change process](/dev/pmc.html#newchair).
 
 As official committees of the ASF, PMCs provide legal oversight of project 
 operations and releases, ensuring that software releases take place on behalf of 
 . This helps ensure that the ASF as an organization, not individual committers, bears any legal liability for the products of Apache projects. All PMC chairs provide [quarterly reports to 
-the board](https://www.apache.org/foundation/board/reporting), which ensures that the board has oversight of all ASF projects. 
+the board](/foundation/board/reporting), which ensures that the board has oversight of all ASF projects. 
 
 # Communication  {#communication}
 
@@ -180,11 +180,11 @@ ways to effectively and collaboratively build software.
 # References  {#references}
 
 * Who They Are: [Current PMCs](http://projects.apache.org/indexes/pmc.html)
-* [Project Management Committee Guide](http://www.apache.org/dev/pmc.html "A how-to of PMC duties")
-* [PMC Branding Responsibilities](http://www.apache.org/foundation/marks/responsibility.html "Ensuring projects follow Apache Branding Requirements")
+* [Project Management Committee Guide](/dev/pmc.html "A how-to of PMC duties")
+* [PMC Branding Responsibilities](/foundation/marks/responsibility.html "Ensuring projects follow Apache Branding Requirements")
 * [Podling Project Management Committee Guide](http://incubator.apache.org/guides/ppmc.html "expectations for Incbator podlings' governance")
-* [Brief overview of what a PMC is](http://www.apache.org/foundation/how-it-works.html#pmc "From the How It Works pages")
+* [Brief overview of what a PMC is](/foundation/how-it-works.html#pmc "From the How It Works pages")
 * [Apache Projects are Independent](http://community.apache.org/projectIndependence.html "PMCs must manage their projects independently")
 
 
-  [1]: http://www.apache.org/dev/
+  [1]: /dev/

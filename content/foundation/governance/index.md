@@ -17,7 +17,7 @@ elects a Board of Directors which sets corporate policy and appoints officers; o
 Committees (PMCs) to run our many Apache software projects.
 
 While many people are familiar with the consensus-based, community driven 
-governance known as [The Apache Way](https://www.apache.org/theapacheway/index.html) that Apache projects use, readers 
+governance known as [The Apache Way](/theapacheway/index.html) that Apache projects use, readers 
 may not be as familiar with how the ASF *as a corporation* works behind the scenes.   
 
 # Corporate Governance  {#corporate}
@@ -43,12 +43,12 @@ responsibility for managing their own projects to PMCs.
 PMCs vote on new committers and PMC members for their project, set per-project policies, and formally vote on software product releases. [Read about PMCs](pmcs.html).
 PMCs report quarterly **directly to the board**, not to the President.
 
-**[Executive Officers](http://www.apache.org/foundation/)**
+**[Executive Officers](/foundation/)**
 
 The board elects a Board Chair (a director) and appoints a standard range of 
 executive officers. Officers are all unpaid volunteers, and serve at 
 the direction of the board in their specific areas of responsibility. 
-We always have a [complete list of officers published](https://www.apache.org/foundation/#who-runs-the-asf). Officers are 
+We always have a [complete list of officers published](/foundation/#who-runs-the-asf). Officers are 
 responsible both for managing the Foundations affairs in their specific areas, 
 and for reporting monthly status reports to the board.
 
@@ -56,7 +56,7 @@ Executive officers include a President,
 Executive Vice President, Secretary and Assistant Secretary, and 
 Treasurer. 
 
-**[Corporate Officers](http://www.apache.org/foundation/)**
+**[Corporate Officers](/foundation/)**
 
 The board has appointed several [officers for corporate-wide 
 functions](https://whimsy.apache.org/foundation/orgchart) - this includes Vice Presidents to oversee Brand Management, 
@@ -167,7 +167,7 @@ answer questions on our project's mailing lists.
 
 **Sponsors**
 
-Many organizations and a few individuals have signed up as [Sponsors of Apache](https://www.apache.org/foundation/sponsorship),
+Many organizations and a few individuals have signed up as [Sponsors of Apache](/foundation/sponsorship),
 and have pledged annual donations to the ASF.  The ASF is greatly appreciative 
 of both the financial and other support that our Sponsors provide, which
 ensures we have the infrastructure and other services that our 
@@ -176,7 +176,7 @@ ensures we have the infrastructure and other services that our
 To ensure project and corporate independence, Sponsors are not part of 
 corporate governance at the ASF.  Becoming a Sponsor does not give your 
 organization or employees any specific merit within the ASF or our projects, 
-although Sponsors are always recognized by the ASF on our [Thanks page](http://www.apache.org/foundation/thanks.html). 
+although Sponsors are always recognized by the ASF on our [Thanks page](/foundation/thanks.html). 
 
 **Vendors**
 
@@ -188,6 +188,6 @@ officer whenever possible.
 
 # References  {#references}
 
-* [Public Records of the ASF](http://www.apache.org/foundation/records/)
-* [How It Works, a Guide to the ASF](http://www.apache.org/foundation/how-it-works.html)
+* [Public Records of the ASF](/foundation/records/)
+* [How It Works, a Guide to the ASF](/foundation/how-it-works.html)
 * [Welcome To Newcomers - Community Development project](http://community.apache.org/) 

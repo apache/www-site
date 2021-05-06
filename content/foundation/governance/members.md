@@ -180,17 +180,17 @@ of the Apache Way, and usually get involved in more projects as time goes on.
 
 # References  {#references}
 
-* Who They Are: [Current Members](http://www.apache.org/foundation/members.html)
+* Who They Are: [Current Members](/foundation/members.html)
 * Who They Are: [Current Members and Committers by Project](http://people.apache.org/committer-index.html)
-* [Bylaws of the ASF](http://www.apache.org/foundation/bylaws.html)
+* [Bylaws of the ASF](/foundation/bylaws.html)
 * [Org chart of the ASF](orgchart.html)
 * [Graph of Membership Growth](http://people.apache.org/~curcuru/timeline/members.html)
-* [How Members Are Elected](https://www.apache.org/foundation/governance/meetings#membervoting)
+* [How Members Are Elected](/foundation/governance/meetings#membervoting)
 * Members have access to additional resources listed on the _foundation/private-index page_ in svn.
 
 
-  [1]: https://www.apache.org/foundation/bylaws
-  [2]: https://www.apache.org/foundation/bylaws#3.2
-  [3]: https://www.apache.org/foundation/governance/meetings#boardvoting
-  [4]: https://www.apache.org/foundation/governance/meetings#membervoting
+  [1]: /foundation/bylaws
+  [2]: /foundation/bylaws#3.2
+  [3]: /foundation/governance/meetings#boardvoting
+  [4]: /foundation/governance/meetings#membervoting
   [5]: https://steve.apache.org/
