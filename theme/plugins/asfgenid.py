@@ -186,6 +186,7 @@ def expand_metadata(tag, metadata):
         m = METADATA_RE.search(this_string)
         if m:
             this_data = m.group(1).strip()
+            format_string = '{{{0}}}'.format(this_data)
             parts = this_data.split('.')
             try:
                 if isinstance(metadata[parts[0]], dict):
