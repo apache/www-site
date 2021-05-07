@@ -142,8 +142,12 @@ def split_list(metadata, seq, reference, split):
 
 def process_sequence(metadata, seq, sequence, load, debug):
     reference = load
+    # has been converted to a sequence
     is_sequence = False
-    save_sequence = True
+    # has been converted to a dictionary - won't be made into a sequence
+    is_dictionary = False
+    # save metadata at the end
+    save_metadata = True
 
     # description
     if 'description' in sequence:
@@ -183,6 +187,17 @@ def process_sequence(metadata, seq, sequence, load, debug):
             print(f"alpha: {sequence['alpha']}")
         alpha_part(reference, sequence['alpha'])
 
+    # this dictionary is derived from sequences
+    if 'dictionary' in sequence:
+        if debug:
+            print(f"dictionary: {sequence['dictionary']}")
+        reference = { }
+        paths = sequence['dictionary'].split(',')
+        for path in paths:
+            for key in load[path]:
+                reference[key] = load[path][key]
+        is_dictionary = True
+
     # this sequence is derived from another sequence
     if 'sequence' in sequence:
         if debug:
@@ -205,18 +220,18 @@ def process_sequence(metadata, seq, sequence, load, debug):
             print(f"split: {sequence['split']}")
         if is_sequence:
             split_list(metadata, seq, reference, sequence['split'])
-            save_sequence = False
+            save_metadata = False
         else:
             print(f"{seq} - split requires an existing sequence to split")
 
     # convert the dictionary to a sequence of objects
-    if not is_sequence:
+    if not is_sequence and not is_dictionary:
         if debug:
             print(f"{seq}: create sequence")
         reference = sequence_dict(seq, reference)
 
     # save sequence in metadata
-    if save_sequence:
+    if save_metadata:
         metadata[seq] = reference
 
 

@@ -187,12 +187,17 @@ def expand_metadata(tag, metadata):
         if m:
             this_data = m.group(1).strip()
             parts = this_data.split('.')
-            if len(parts) == 3:
-                this_data = f"{parts[0]}[{parts[1]}].{parts[2]}"
-                print(this_data)
-            format_string = '{{{0}}}'.format(this_data)
             try:
-                new_string = format_string.format(**metadata)
+                if isinstance(metadata[parts[0]], dict):
+                    ref = metadata
+                    for part in parts:
+                        ref = ref[part]
+                    new_string = ref
+                else:
+                    if len(parts) == 3:
+                        this_data = f"{parts[0]}[{parts[1]}].{parts[2]}"
+                    format_string = '{{{0}}}'.format(this_data)
+                    new_string = format_string.format(**metadata)
                 print(f"{{{{{m.group(1)}}}}} -> {new_string}")
             except Exception:
                 # the data expression was not found
