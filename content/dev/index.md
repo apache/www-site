@@ -1,5 +1,28 @@
-Atom: http://mail-archives.apache.org/mod_mbox/www-infrastructure-dev/?format=atom
-Title: Developer Information
+title: Developer Information
+license: https://www.apache.org/licenses/LICENSE-2.0
+
+### Apache Developers' & Contributors' Overview {#intro}
+
+These pages provide a directory of technical details pertinent to all Apache projects, for developers,
+committers, release managers and PMC members contributing to any Apache project.
+
+If you can't find information here, ask on your project's mailing list, or contact the
+[Community Development](http://community.apache.org/) project's mailing list for more general questions. 
+There are many experienced ASF people who can help.
+
+- [Infrastructure](#infrastructure)
+- [Committers and Contributors](#committers)
+- [Project Management Committees (PMC)](#pmc)
+- [Licenses and Legal Issues](#licenses)
+- [Version Control](#version-control)
+- [Websites](#web)
+- [Releases](#releases)
+- [Issue Tracking](#issues)
+- [Mailing Lists](#mail)
+- [Board of Directors and ASF Governance Overview](/foundation/governance/)
+- [Pasting Data to share with others](#paste)
+- [URL Shortener for Committers](#shorten)
+
 
 Find information about tools and processes the ASF and its projects use to manage source code, mailing lists, and websites. You can also find how-to guides for committers and Project Management Committees (PMCs).
 
