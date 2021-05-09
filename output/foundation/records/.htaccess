@@ -1,4 +1,4 @@
 RewriteEngine On
-# RewriteCond ^$ off
-# RewriteCond ^index.*$ off
-RewriteRule ^/?(.*)$ https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/records/$1 [P]
+RewriteCond %{REQUEST_URI} !"^/foundation/records/$"
+RewriteCond %{REQUEST_URI} !"^/foundation/records/index.html$"
+RewriteRule ^/?(.*)$ https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/records/$1 [L]
