@@ -22,6 +22,7 @@
 
 import sys
 import io
+import os
 import ezt
 
 import pelican.plugins.signals
@@ -29,6 +30,20 @@ import pelican.readers
 import pelican.settings
 
 GFMReader = sys.modules['pelican-gfm.gfm'].GFMReader
+
+
+class ASFTemplateReader(ezt.Reader):
+  """Enables inserts relative to the template we loaded."""
+
+  def __init__(self, source_path, text):
+    self.source_dir, self.fname = os.path.split(source_path)
+    self.text = text
+
+  def read_other(self, relative):
+    return ezt._FileReader(os.path.join(self.source_dir, relative))
+
+  def filename(self):
+    return self.fname
 
 
 class ASFReader(GFMReader):
@@ -57,7 +72,8 @@ class ASFReader(GFMReader):
         # prepare text as an ezt template
         # compress_whitespace=0 is required as blank lines and indentation have meaning in markdown.
         template = ezt.Template(compress_whitespace=0)
-        template.parse(text, base_format=ezt.FORMAT_HTML)
+        reader = ASFTemplateReader(source_path, text)
+        template.parse(reader, base_format=ezt.FORMAT_HTML)
         assert template
         # generate content from ezt template with metadata
         fp = io.StringIO()
