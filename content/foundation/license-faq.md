@@ -298,7 +298,7 @@ of releases.</dd>
 No. If you are an ASF PMC with a truly exceptional situation, please create a JIRA issue.
 
 
-##Are contributor's employers required to sign a CCLA?  {#cclas-not-required}
+## Are contributor's employers required to sign a CCLA?  {#cclas-not-required}
 
 Only if their employment situation necessitates that a CCLA be signed.
 See section 4 of the ICLA for details.

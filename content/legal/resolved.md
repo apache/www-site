@@ -173,7 +173,7 @@ LICENSE/NOTICE/README changes. For any other type of CC-SA licensed work, contac
 
 Note that media is intended to mean binary visual/video/audio elements used in our documentation. It is not intended to mean inclusion in our source code. 
 
-### Can I copy code from Stack Overflow and contribute it to an ASF project?  {#stackoverflow}
+### Can I copy code from Stack Overflow and contribute it to an ASF project? {#stackoverflow}
 
 No, not without contacting the original author and getting permission from them to use the code in an Apache project under the Apache License 2.0. 
 
