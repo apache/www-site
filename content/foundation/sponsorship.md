@@ -8,9 +8,9 @@ contribute substantially to the ongoing support of the Foundation. (As distinct
 from [one-time donations](contributing.html).)
 
 In return, the ASF will officially acknowledge your donation via various methods
-appropriate to your sponsorship level, including your logo and link on the
-[ASF Thanks page](thanks.html), and an official sponsor image to place on
-the sponsor's website. (*Logo and link subject to ASF approval.*)
+appropriate to your sponsorship level. We will display your logo and link on the
+[ASF Thanks page](thanks.html) and provide an official sponsor image to place on
+your website. (*Logo and link subject to ASF approval.*)
 
 -  [Sponsorship levels](#Levels)
 -  [Why should I sponsor the ASF?](#WhySponsor) 
@@ -29,9 +29,8 @@ There are four sponsorship levels, defined by donation amount and in-return
 benefits of sponsorship. No more than 25% of value can be based on 
 in-kind services
 
-Donations made to the Sponsorship Program must be coordinated with
-the ASF Public Relations and Fundraising team 
-([fundraising@apache.org](mailto:fundraising@apache.org)).
+You must coordinate with the ASF Public Relations and Fundraising Team
+([fundraising@apache.org](mailto:fundraising@apache.org)) on all donations you make.
 
 <table class="table">
 <tr><td background="platinum.png" style="background-repeat:no-repeat;background-position: 90% 5%;">
@@ -121,16 +120,15 @@ the ASF Public Relations and Fundraising team
 ## Why should I sponsor the ASF?  {#WhySponsor}
 
 The Apache Software Foundation provides support for the Apache community of
-open-source software [projects](projects.html). The Apache projects are
-characterized by a collaborative, consensus based development process, an
+open-source software [projects](projects.html). Apache projects use a collaborative, consensus-based development process, an
 open and pragmatic software license, and a desire to create high quality
 software that leads the way in its field. We consider ourselves not simply
 a group of projects sharing a server, but rather a community of developers
 and users.
 
 The ASF provides the infrastructure for the projects - the mailing lists,
-code repositories, bug tracking systems, etc. These resources are maintained by
-a few paid contractors (as well as by large amounts of volunteer effort). This,
+code repositories, bug tracking systems, etc. A few paid contractors, plus
+large amounts of volunteer effort maintain these resources. This,
 in addition to the large costs of bandwidth and server hardware, constitutes
 the bulk of the expense of running the Foundation.
 
@@ -155,34 +153,39 @@ organization. These include:
 - Legal and Accounting
 - Normal office expenses
 - Marketing and PR
-- Sub-contractors to "fill in the holes" for administrative and secretarial
+- Subcontractors to "fill in the holes" for administrative and secretarial
 duties
 
-Your sponsorship will allow the ASF to meet these expenses as well as
+Your sponsorship helps the ASF meet these expenses and
 expand our capability to maintain our leadership in the developer and Open
-Source communities. Funding will allow us to perform pro-active hardware
+Source communities. Funding lets us perform pro-active hardware
 procurement, enhance our community outreach, sponsor developer hackathons
 and user groups, and perform non-code related improvements to projects such
 as better documentation and more comprehensive websites
 
 ## Who can sponsor the ASF?  {#WhoCanSponsor}
 
-From time to time there is confusion about who can sponsor the Apache Software Foundation.  Additionally, there are often inquiries from potential sponsors who are not committed to the mission of the ASF or open source software.  Therefore, this is our policy to answer “Who Can Sponsor the ASF?”
+From time to time there is confusion about who can sponsor the Apache Software Foundation.
+Additionally, there are often inquiries from potential sponsors who are not committed
+to the mission of the ASF or open source software.
 
-Because the policies for the Apache Software Foundation Sponsorship Program need to be quickly, fairly and equally applied without the need for exceptions or board votes, we have tried to maintain this document at the most basic level.  However, the foundation still reserves the right to decline any sponsor without reason and at our sole discretion.
+Because the policies for the Apache Software Foundation Sponsorship Program need to be quickly,
+fairly and equally applied without the need for exceptions or board votes, we have tried to
+maintain this document at the most basic level.  However, the foundation reserves the right
+to decline any sponsor without providing a reason and at our sole discretion.
 
 In short, sponsors must be:
 
 - An individual or a business located anywhere in the world that would be legal to operate anywhere in the United States and any state of nexus* for the ASF excluding businesses, persons and jurisdiction limited by law.  This is necessary to avoid legal risks and protect our non-profit status.  
 - Demonstrably committed to open source software and the foundation’s mission.
 
-Landing pages for sponsor links cannot be directed to advertisements or redirectors and must be “PG Rated” and safe for work environments.  All links should go to a home page or a page with relevant, editorial content about open source software. Any sites with content unsuitable for minors must use a landing page that is completely kid-safe with appropriate warnings and meeting US legal requirements such as the FTC’s COPPA requirements addressed to continue.
+Landing pages for sponsor links cannot be advertisements or redirectors and must be “PG Rated” and safe for work environments.  All links should go to a home page or a page with relevant, editorial content about open source software. Any sites with content unsuitable for minors must use a landing page that is completely kid-safe with appropriate warnings, and that meets US legal requirements such as the FTC’s COPPA requirements.
 
 <super>*</super><sub>**Nexus**, also called “sufficient physical presence,” is a legal term that refers to the requirement for companies doing business in a state to collect and pay tax on sales in that state. For example, if you sell goods or services in Los Angeles, you must file and pay California state taxes. Source: https://quickbooks.intuit.com/r/taxes/what-is-nexus-and-how-does-it-affect-your-small-business
 
 ## A note about links  {#Links}
 
-Our sponsors are committed to Open Source Software by supporting us in our mission of providing software for the public good. We do this by providing services and support for many like-minded software project communities consisting of individuals who choose to participate in ASF activities. In the past, some sponsors have been primarily interested in the SEO benefits of being listed on the sponsors page. To address this issue, all sponsor thank you listings will include a rel="sponsored" tag as suggested by [popular webmaster policies](https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html).
+Our sponsors demonstrate their commitment to Open Source Software by supporting us in our mission of providing software for the public good. We do this by providing services and support for many like-minded software project communities consisting of individuals who choose to participate in ASF activities. In the past, some sponsors have been primarily interested in the SEO benefits of being listed on the sponsors page. To address this issue, all sponsor thank-you listings include a rel="sponsored" tag as suggested by [popular webmaster policies](https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html).
 
 ## The Apache Software Foundation is a non-profit organization  {#tax-status}
 
@@ -191,50 +194,50 @@ registered as a non-profit, charitable organization under Section 501(c)(3)
 of the U.S. Internal Revenue Code. This means that, for individuals within
 the U.S., donations to the ASF should be **tax-deductible**. We are not
 accountants, so this cannot be trusted as financial advice of any kind, but
-hopefully this description will be useful to those who advise you in these
+we hope this description will be useful to those who advise you in these
 matters. You may view our [ruling letter from the IRS acknowledging our
 501(c)3 status](records/ASF-501c3.pdf).
 
-You may also review the latest financial filings and non-profit exemption
+You may review the latest financial filings and non-profit exemption
 application of The Apache Software Foundation in our [public
 records](records/) section. You may also find other helpful information
 through
 [GuideStar](https://www.guidestar.org/profile/47-0825376)
 (requires free registration for full access).
 
-More information about non-profits and related issues can be found at the
+You can find more information about non-profits and related issues at the
 [Internet Nonprofit Center](http://www.nonprofits.org/).
 
 ## I'd like to talk to someone about supporting the ASF!  {#Sponsor}
 
 If you would like more information about supporting the ASF, please contact
 [fundraising@apache.org](mailto:fundraising@apache.org).
-Sponsorship donations are handled
+We handle sponsorship donations
 differently from [standard non-directed donations](contributing.html),
 so if you want your
 donations to be part of the Sponsorship program (and thus obtain the
-benefits of the program), you must coordinate the donation with the 
+benefits of the program), coordinate the donation with the 
 Fundraising team 
 ([fundraising@apache.org](mailto:fundraising@apache.org)).
 
-All information will be kept in strictest confidence.
+We keep all information in strictest confidence.
 
 ## How do sponsorship renewals happen?  {#Renewals}
 
-Your sponsorship will run for one year after the date of receipt of payment.
-For this period, we shall display your logo on our [thanks](/foundation/thanks.html)
+Your sponsorship runs for one year after the date of receipt of payment.
+During this period, we display your logo on our [thanks](/foundation/thanks.html)
 page. 
 
 Two months before the end of your sponsorship, we will contact you (via the 
-same mechanism as was used to arrange the initial sponsorship) requesting 
-renewal. If renewal has not occurred by the renewal date of the sponsorship,
-the ASF may remove the sponsor's logo from the thanks page.
+same mechanism we used to arrange the initial sponsorship) requesting 
+renewal. If renewal does not take place by the renewal date of the sponsorship,
+the ASF may remove your logo from the thanks page.
 
 ## Can I just make a one-time donation?  {#Donations}
 
 The ASF appreciates donations of any size, and as a US registered 501(c)(3) 
 corporation, your donation may be tax deductible.  If you are interested in 
-donating to the ASF at a different level, please see our 
+donating to the ASF at a different level than sponsorship, see our 
 [donation page](/foundation/contributing.html).
 
 Thanks for your support!

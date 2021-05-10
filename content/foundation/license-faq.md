@@ -158,17 +158,20 @@ the ASF).
 
 ## May I re-use (and modify) the Apache License 2.0 itself?  {#mod-license}
 
-Yes, you are allowed to re-use and modify it. You obviously can't hold the ASF
-legally responsible if this document, with or without changes, is not exactly what you intend it
-to be. We recommend that you obtain your own legal advice so you know
-exactly what you are getting yourself into.
+You are allowed to re-use our license unchanged, and also to modify it.
 
-And if you adapt the agreement for your purposes, you have to make
-sure that the phrase 'Apache License', 'Apache', or any confusingly
-similar references or parts that specifically refer to the Apache
-organization **do not appear** in your version of the license (except to
-note that your version is derived and differs from the original provided by
-the ASF).
+If you modify it, you are on your own from a legal point of view, and the result
+is NOT the Apache License, just a new license inspired by ours.
+
+This means that the terms 'Apache License', 'Apache', or any similar references
+to the ASF cannot appear in your modified license, other than to state that it differs
+from the original.
+
+Also, you cannot use 'Apache' in the name of the modified license.
+Names like "Apache License with such-and-such clause" for example are not acceptable,
+as they cause confusion.
+
+Creating a new license is non-trivial; if you do that we recommend that you get your own legal advice.
 
 ## I've made improvements to the Apache code; may I distribute the modified result?  {#Distribute-changes}
 
@@ -248,55 +251,47 @@ certain patent termination and indemnification provisions.
 
 This is a four part question:
 
-Q1:
-:    If I own a patent and contribute to a Work, and, at the time my
-     contribution is included in that Work, none of my patent's claims are
-     subject to Apache's Grant of Patent License, is there a way any of
-     those claims would later become subject to the Grant of Patent License
-     solely due to subsequent contributions by other parties who are not
-     licensees of that patent.
-
-A1:
-:    No.
-
-
-Q2:
-:    If at any time after my contribution, I am able to license other
-     patent claims that would have been subject to Apache's Grant of Patent
-     License if they were licenseable by me at the time of my contribution,
-     do those other claims become subject to the Grant of Patent License?
-
-A2:
-:    Yes.
-
-
-Q3:
-:    If I own or control a licensable patent and contribute code to a
-     specific Apache product, which of my patent claims are subject to
-     Apache's Grant of Patent License?
-
-A3:
-:    The only patent claims that are licensed to the ASF are those you own
-     or have the right to license that read on your contribution or on the
-     combination of your contribution with the specific Apache product to
-     which you contributed as it existed at the time of your contribution.
-     No additional patent claims become licensed as a result of subsequent
-     combinations of your contribution with any other software. Note,
-     however, that licensable patent claims include those that you acquire
-     in the future, as long as they read on your original contribution as
-     made at the original time. Once a patent claim is subject to Apache's
-     Grant of Patent License, it is licensed under the terms of that Grant
-     to the ASF and to recipients of any software distributed by the ASF
-     for any Apache software product whatsoever.
-
-
-Q4:
-:    What is an Apache product?
-
-A4:
-:    An Apache product is a body of software being developed by the ASF
-     that the ASF intends to both alter and to publish as a separate line
-     of releases.
+<dl>
+<dt>Q1:</dt>
+<dd>If I own a patent and contribute to a Work, and, at the time my
+contribution is included in that Work, none of my patent's claims are
+subject to Apache's Grant of Patent License, is there a way any of
+those claims would later become subject to the Grant of Patent License
+solely due to subsequent contributions by other parties who are not
+licensees of that patent.</dd>
+<dt>A1:</dt>
+<dd>No.</dd>
+<dt>Q2:</dt>
+<dd>If at any time after my contribution, I am able to license other
+patent claims that would have been subject to Apache's Grant of Patent
+License if they were licenseable by me at the time of my contribution,
+do those other claims become subject to the Grant of Patent License?</dd>
+<dt>A2:</dt>
+<dd>Yes.</dd>
+<dt>Q3:</dt>
+<dd>If I own or control a licensable patent and contribute code to a
+specific Apache product, which of my patent claims are subject to
+Apache's Grant of Patent License?</dd>
+<dt>A3:</dt>
+<dd>The only patent claims that are licensed to the ASF are those you own
+or have the right to license that read on your contribution or on the
+combination of your contribution with the specific Apache product to
+which you contributed as it existed at the time of your contribution.
+No additional patent claims become licensed as a result of subsequent
+combinations of your contribution with any other software. Note,
+however, that licensable patent claims include those that you acquire
+in the future, as long as they read on your original contribution as
+made at the original time. Once a patent claim is subject to Apache's
+Grant of Patent License, it is licensed under the terms of that Grant
+to the ASF and to recipients of any software distributed by the ASF
+for any Apache software product whatsoever.</dd>
+<dt>Q4:</dt>
+<dd>What is an Apache product?</dd>
+<dt>A4:</dt>
+<dd>An Apache product is a body of software being developed by the ASF
+that the ASF intends to both alter and to publish as a separate line
+of releases.</dd>
+</dl>
 
 
 ## Can ASF PMCs host projects that are not under the Apache License?  {#licenses}

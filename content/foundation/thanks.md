@@ -102,6 +102,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://www.cloudbees.com/"><img src="images/cloudbees.png"/></a><p style="text-align: center; font-weight: bold;">CloudBees</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.dlapiper.com/"><img src="images/dlapiper.png"/></a><p style="text-align: center; font-weight: bold;">DLA Piper</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.leaseweb.com/"><img src="images/leaseweb-platinum.png"/></a><p style="text-align: center; font-weight: bold;">LeaseWeb</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://jfrog.com/open-source/"><img src="images/jfrog-platinum.png"/></a><p style="text-align: center; font-weight: bold;">JFrog</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.osuosl.org/"><img src="images/osl-logo.png"/></a><p style="text-align: center; font-weight: bold;">OSU Open Source Labs</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.verizonmedia.com/"><img src="images/verizon_media.jpg"/></a><p style="text-align: center; font-weight: bold;">Verizon Media</p></li>
@@ -151,12 +152,12 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
     var ar = ['platinum','gold','silver','bronze','targetedplatinum','targetedgold','targetedsilver','targetedbronze'];
     var co = [ 2,         3,     5,       6,       2,              3,           5,             6     ]; // column counts
 
-    for (y in ar)  {
+    for (y in ar) {
       var ul = document.getElementById(ar[y])
 
       // randomise platinum (and platinum targeteded sponsors)
-      if (ar[y] == 'platinum' || ar[y] == 'targetedplatinum')  {
-          for (var i = ul.children.length; i >= 0; i--)  {
+      if (ar[y] == 'platinum' || ar[y] == 'targetedplatinum') {
+          for (var i = ul.children.length; i >= 0; i--) {
               ul.appendChild(ul.children[Math.random() * i | 0]);
           }
       }
@@ -166,7 +167,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       // we divide by cols+1 to allow for spacing between elements
       var minwidth = (1000 / (cols+1)) | 0;
       var style = "display: inline-block; min-width: " + minwidth + "px;";
-      for (var i = ul.children.length-1; i >= 0; i--)  {
+      for (var i = ul.children.length-1; i >= 0; i--) {
            ul.children[i].setAttribute("style", style)
       }
 

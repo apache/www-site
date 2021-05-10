@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 **Please see the [Apache-wide Code of Conduct policy](https://www.apache.org/foundation/policies/conduct), which covers expected 
 behavior within any Apache project's public or private spaces, including email lists.**
 
-This policy has been adopted by the Apache Conference Committee.  The policy was last changed on 2011-08-24.
+The Apache Conference Committee adopted this policy. Its most recent change was on 2011-08-24.
 
 # Applicability #
 
@@ -13,12 +13,12 @@ All conferences organised directly by the Apache Software Foundation are require
 to have an Anti-Harassment Policy. Unless otherwise approved by ConCom, these events will use the policy listed below.
 
 All conferences organised by an external producer on behalf of the Apache Software Foundation (such as ApacheCon)
-are required to have an Anti-Harassment Policy. It is recommended that the policy below is used, but alternate policies
-may be used if approved by the ConCom planners. Such approval will only be granted provided that the policy provides
-similar cover, and an explanation is supplied for the reason for the change.
+must have an Anti-Harassment Policy. We recommend that you use the policy below, but you may use an alternative policy if
+the ConCom planners approve it. Such approval will only be granted provided that the policy provides
+similar coverage, and you supply an explanation for the change.
 
 Conferences organised by third parties which use Apache marks (under the 
-[Third Party Event Branding Policy](/foundation/marks/events.html)) are required to have an Anti-Harassment
+[Third Party Event Branding Policy](/foundation/marks/events.html)) must have an Anti-Harassment
 Policy. The policy must either be the one below or one approved as an alternative by the ASF.
 
 

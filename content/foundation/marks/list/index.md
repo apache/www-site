@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 This document provides a listing of trademarks of The Apache
 Software Foundation (ASF). You can also read our [formal trademark
-policy](/foundation/marks/) denoting proper usage of
+policy](/foundation/marks/) denoting proper use of
 Apache trademarks.  [Please see a site map of Trademark resources](/foundation/marks/resources) or
 [contact us with questions](/foundation/marks/contact). 
 
@@ -13,9 +13,8 @@ trademarks of the ASF.  The ASF owns all Apache trademarks on behalf
 of our volunteer project communities.** 
 
 In addition, the ASF holds a number of 
-**registered trademarks** in the US, EU, India, China, and in other countries 
-around the world, including APACHE&reg;, HADOOP&reg;, OPENOFFICE&reg;, 
-FLEX&reg;, LUCENE&reg; and other project names.
+**registered trademarks** in the US, EU, India, China, and in other countries, 
+including APACHE&reg;, HADOOP&reg;, OPENOFFICE&reg;, FLEX&reg;, LUCENE&reg; and other project names.
 
 **Contents**  {#links}
 

@@ -10,7 +10,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 This policy provides licensing guidance to Apache Software Foundation projects. It identifies the acceptable 
 licenses for inclusion of third-party Open Source components in Apache Software Foundation products. 
 
-If they have a licensing question, projects are asked to submit questions to the Legal Affairs Committee 
+Projects can submit licensing questions to the Legal Affairs Committee 
 [JIRA space](https://issues.apache.org/jira/browse/LEGAL).
 
 
@@ -31,7 +31,7 @@ At a high level this policy separates licenses into three categories.
 
 # Category A: What can we include in an ASF Project?  {#category-a}
 
-For the purposes of being included in an Apache Software Foundation product, the following licenses are considered to be similar in terms to the Apache License 2.0:
+For inclusion in an Apache Software Foundation product, we consider the following licenses to be similar in terms to the Apache License 2.0:
 
 - [Apache License 2.0](/licenses/LICENSE-2.0)
 - [Apache Software License 1.1](/licenses/LICENSE-1.1). 
@@ -79,23 +79,23 @@ For the purposes of being included in an Apache Software Foundation product, the
 - [Historical Permission Notice and Disclaimer](https://opensource.org/licenses/HPND)
 - [Mulan Permissive Software License，Version 2](https://license.coscl.org.cn/MulanPSL2/)
 
-Many of these licenses have specific attribution terms that need to be adhered to, often by [adding 
+Many of these licenses have specific attribution terms that the project needs to adhered to, often by [adding 
 them to the NOTICE file](/dev/licensing-howto.html). Ensure you are doing this when including these works. 
 
 ### Handling Public Domain 'licensed' works
 
-Works in the public domain (or covered by a license treated similarly) may be included within Apache products. Attribution is required (in a similar fashion to the Category A list. 
+You can include works in the public domain (or covered by a license treated similarly) within Apache products. You must provide attribution (in a similar fashion to the Category A list). 
 
 A work should be treated as being in the public domain when one of the following applies: 
 
   - the work is covered by 
-       - the Creative Commons [Public Domain Mark](http://creativecommons.org/publicdomain/mark/1.0/), or
-       - a suitable dedication (to the public domain) by the authors; or 
+       - the Creative Commons [Public Domain Mark](http://creativecommons.org/publicdomain/mark/1.0/)
+       - a suitable dedication (to the public domain) by the authors
   - clear evidence exists that US copyright for the work 
-      - has expired, or
+      - has expired
       - cannot be claimed. 
 
-Licenses that should be treated as similar to public domain:
+Licenses that we treat as similar to public domain:
 
   - Creative Commons [CC0 “No Rights Reserved”](http://creativecommons.org/about/cc0)
   - Creative Commons [Public Domain Certification](http://creativecommons.org/licenses/publicdomain/)
@@ -105,34 +105,34 @@ Licenses that should be treated as similar to public domain:
 Determining whether the copyright in a work has expired may be non-trivial and may vary between jurisdictions. Raise the topic on legal-discuss@ or via a JIRA issue if you have doubt over whether a work falls in the public domain. 
 
 
-# Category B: What can we maybe include in an ASF Project?  {#category-b}
+# Category B: What can we *maybe* include in an ASF Project?  {#category-b}
 
-For the purposes of being included in an Apache Software Foundation product, licenses and/or projects described in this section may be included **IF** specified conditions are met. 
+You may include the licenses and/or projects described in this section in an Apache Software Foundation product **IF** they meet the specified conditions. 
 
 ### Appropriately Labelled Condition
 In all Category B cases our users should not be surprised at their inclusion in our products. 
-By attaching an appropriate and prominent label to the distribution
+If we attach an appropriate and prominent label to the distribution,
 users are less likely to be unaware of restrictions significantly
 different from those of the Apache License. An appropriate and 
 prominent label is a label the user will read while learning about the 
-distribution - for example in a README, and it should identify the third-party product, 
-its licensing, and a url to the its homepage. Please also ensure to comply with 
+distribution - for example in a README, and it should identify the third-party product and 
+its licensing, and provide a url to the its homepage. Please also comply with 
 any attribution/notice requirements in the specific license in question. 
 
 ### Binary-only Inclusion Condition
-All Category B licensed works should be included in binary-only form in Apache Software Foundation convenience binaries.
-Category B licensed works should not be included in source releases.
+Any Category B licensed works may be included in binary-only form in Apache Software Foundation convenience binaries.
+Do not include Category B licensed works in source releases.
 
 ### "Weak Copyleft" Licenses
 
-Each license in this section requires some degree of reciprocity. This may mean that
-additional action is warranted in order to minimize the chance that a user of
+Each license in this section requires some degree of reciprocity. This may require
+additional action to minimize the chance that a user of
 an Apache product will create a derivative work of a differently-licensed
 portion of an Apache product without being aware of the applicable
 requirements.
  
-Software under the following licenses may be included in binary form
-within an Apache product if the inclusion is appropriately labeled (see above):
+You may include software under the following licenses in binary form
+within an Apache product if you label the inclusion appropriately (see above):
 
 - Common Development and Distribution Licenses: [CDDL 1.0](https://opensource.org/licenses/CDDL-1.0) and [CDDL 1.1](https://spdx.org/licenses/CDDL-1.1.html)
 - Common Public License: [CPL 1.0](http://www.opensource.org/licenses/cpl1.0.php)
@@ -152,30 +152,26 @@ within an Apache product if the inclusion is appropriately labeled (see above):
 - Eclipse Public License 2.0: [EPL 2.0](https://www.eclipse.org/legal/epl-2.0/)
 
 By including only the object/binary form, there is less exposed
-surface area of the third-party work from which a work might be
-derived; this addresses the second guiding principle of this policy.
+surface area of the third-party work from which someone might derive a work. This addresses the second guiding principle of this policy.
  
-For small amounts of source that is directly consumed by the ASF
-product at runtime in source form, and for which that source is
+For small amounts of source code that the ASF product directly consumes at runtime, and for which that source is
 unmodified and unlikely to be changed anyway (say, by virtue of being specified by a
-standard), inclusion of appropriately labeled source is also
-permitted. An example of this is the web-facesconfig_1_0.dtd, whose
+standard), you may include appropriately labeled source code. An example of this is the web-facesconfig_1_0.dtd, whose
 inclusion is mandated by the JSR 127: JavaServer Faces specification.
 
 ### Including Creative Commons Attribution content  {#cc-by}
 Works under the [Creative Commons Attribution (CC-BY)](http://creativecommons.org/licenses/by/4.0/) licenses (2.5, 3.0, and 4.0)
-contain terms related to "Effective Technological Measures", which may come as a surprise to users. Thus their inclusion 
-shall be appropriately labelled and only in binary form. 
+contain terms related to "Effective Technological Measures", which may come as a surprise to users. Thus you should label them appropriately and only include them in binary form. 
 
 ### Unmodified media under the Creative Commons Attribution-Share Alike license  {#cc-sa}
 
-Unmodified media under the 
+You may include unmodified media under the 
 [Creative Commons Attribution-Share Alike 2.5](http://creativecommons.org/licenses/by-sa/2.5/), 
 [Creative Commons Attribution-Share Alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/) and [Creative Commons Attribution-Share Alike 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-licenses may be included in Apache products, subject to the licenses attribution clauses which may require 
-LICENSE/NOTICE/README changes. For any other type of CC-SA licensed work, please contact the Legal PMC.
+license in Apache products, subject to the licenses attribution clauses which may require 
+LICENSE/NOTICE/README changes. For any other type of CC-SA licensed work, contact the Legal PMC.
 
-Note that media is intended to mean binary visual/video/audio elements used in our documentation. It is not intended to mean inclusion inside our source code. 
+Note that media is intended to mean binary visual/video/audio elements used in our documentation. It is not intended to mean inclusion in our source code. 
 
 ### Can I copy code from Stack Overflow and contribute it to an ASF project?  {#stackoverflow}
 
@@ -183,8 +179,7 @@ No, not without contacting the original author and getting permission from them 
 
 ### Doug Lea's concurrent library  {#concurrent}
 
-Doug Lea's concurrent library is public domain, but contains some Sun files which are not public domain. This may 
-be included in ASF products much like the 'weak copyleft' list above. 
+Doug Lea's concurrent library is public domain, but contains some Sun files which are not public domain. You may include this library in ASF products much like the resources in the 'weak copyleft' list above. 
 &quot;It may be included in binary form within an Apache product if the inclusion
 is appropriately labeled&quot;. If using the source, remove the files Sun licensed to Doug and 
 treat as Category A (or get the files from 
@@ -192,13 +187,12 @@ treat as Category A (or get the files from
 
 ### Adding OSGi metadata to weak copyleft binaries  {#osgi-category-b}
 
-Insertion of OSGi metadata into 'Category B' licensed jars is
-permitted providing that a note that this has occurred is included in the 
+You can insert OSGi metadata into 'Category B' licensed jars, provided that you include a note that this has occurred in the 
 prominent labeling for the jar. 
 
 ### Cobertura reports  {#cobertura}
   
-Cobertura reports may be included in ASF distributions.
+You may include Cobertura reports in ASF distributions.
 
 ### Handling licenses that prevent modification  {#no-modification}
 
@@ -213,7 +207,7 @@ like fonts and standardized data and include them in the resulting
 binaries. Such use makes it clear that these dependencies are not a part
 of the open source code of the project.
 
-Material under the following licenses may be used as described above:
+You may use material under the following licenses, as described above:
 
 - [CMaps for PDF CJK Fonts](http://www.adobe.com/devnet/font/#pcfi)
 - JCR API jar ([Day Spec License](http://www.day.com/maven/jsr170/licenses/day-spec-license.htm) + 
@@ -222,17 +216,16 @@ Material under the following licenses may be used as described above:
 
 ### Including build tools in ASF products  {#build-tools}
 
-Many languages have developed an ecosystem of associated tools that aid
+Many languages have developed ecosystems of associated tools that aid
 in the building of artifacts for distribution.  While such tools may not
-always be made available under an otherwise compatible license, specific
-tools have been OK'ed for inclusion in Apache distributions when used for
+always be made available under an otherwise compatible license, we have approved specific
+tools for inclusion in Apache distributions when they are used for
 that specific purpose. 
 
-Note that the tool must not affect the licensing of the project source code. It 
-is also expected that our use of the tooling to build our source code is 
+Note that the tool must not affect the licensing of the project source code. We also expect that our use of the tooling to build our source code is 
 its typical use.
 
-To date, the following tools have been approved for such usage:
+To date, we have approved the following tools for such use:
 
 - The Autotools family of products, specifically:
     - [Autoconf](http://www.gnu.org/software/autoconf/)
@@ -250,7 +243,7 @@ You may include these header files - XSUB.h, perl.h and EXTERN.h (see: [LEGAL-79
 
 ### Including Doxygen-generated config files
 
-As long as the generated comments are removed from the Doxygen-generated files, these files may be used. 
+You may use these files as long as you remove the generated comments. 
 
 ### Can Apache projects have external dependencies on Ruby licensed works?  {#ruby-license}
 
@@ -263,7 +256,7 @@ Also note that the Ruby license is listed on the 'Category B' Weak Copyleft list
 
 # Category X: What can we NOT include in an ASF Project?  {#category-x}
 
-The following licenses may NOT be included within Apache products:
+You may NOT include the following licenses within Apache products:
 
 - Not OSD-compliant:
     - Binary Code License (BCL)
@@ -300,37 +293,37 @@ The following licenses may NOT be included within Apache products:
 
 Details of 'other concerns':
 
-Facebook BSD+Patents license
-: The Facebook BSD+Patents license includes a specification of a PATENTS file that
-  passes along risk to downstream consumers of our software imbalanced
-  in favor of the licensor, not the licensee, thereby violating our Apache
-  legal policy of being a [universal donor](https://s.apache.org/4Uzg).
-  The terms of Facebook BSD+Patents license are not a subset of those found in the ALv2, and they cannot be sublicensed as ALv2.
+**Facebook BSD+Patents license** <br>
+The Facebook BSD+Patents license includes a specification of a PATENTS file that
+passes along risk to downstream consumers of our software imbalanced
+in favor of the licensor, not the licensee, thereby violating our Apache
+legal policy of being a [universal donor](https://s.apache.org/4Uzg).
+The terms of Facebook BSD+Patents license are not a subset of those found in the ALv2, and they cannot be sublicensed as ALv2.
 
-NPL
-:   The Netscape Public License is the original license for Mozilla containing 
-    amendments that are specific to Netscape. These
-    amendments allow "Netscape" (now part of AOL) to avoid the
-    reciprocity requirement that all other licensees must adhere to. This
-    disqualifies the license from meeting Open Source Definition #5 ("No
-    Discrimination Against Persons or Groups"). 
+**NPL** <br>
+The Netscape Public License is the original license for Mozilla containing 
+amendments that are specific to Netscape. These
+amendments allow "Netscape" (now part of AOL) to avoid the
+reciprocity requirement that all other licensees must adhere to. This
+disqualifies the license from meeting Open Source Definition #5 ("No
+Discrimination Against Persons or Groups"). 
 
-Nonsensical licenses
-: These licenses while amusing to their creators are legally problematic. They often include subjective Field of use restrictions e.g. “Don’t be evil” with no arbiter for that subjective restriction defined. In some cases they may not even grant sufficient rights to conform to the OSI open source definition.  Since we do not wish to surprise our downstream consumers we forbid the use of such licenses.
+**Nonsensical licenses** <br>
+These licenses while amusing to their creators are legally problematic. They often include subjective Field of use restrictions e.g. “Don’t be evil” with no definition of the arbiter for that subjective restriction. In some cases they may not even grant sufficient rights to conform to the OSI open source definition.  Since we do not wish to surprise our downstream consumers we forbid the use of such licenses.
 
-JSON license
-:   As of 2016-11-03 the JSON license was moved to the 'Category X' license list. Prior to this, use of 
-    the [JSON Java library](https://github.com/stleary/JSON-java) was allowed. See Debian's page for a 
-    [list of alternatives](https://wiki.debian.org/qa.debian.org/jsonevil).
+**JSON license** <br>
+As of 2016-11-03 the JSON license was moved to the 'Category X' license list. Prior to this, use of 
+the [JSON Java library](https://github.com/stleary/JSON-java) was allowed. See Debian's page for a 
+[list of alternatives](https://wiki.debian.org/qa.debian.org/jsonevil).
 
 ### They may not be distributed  {#prohibited}
 
-Apache projects may not distribute Category X licensed components, be it in source or binary form; 
-and be it in ASF source code or convenience binaries.  As with the previous question on platforms, 
-the component can be relied on if the component's license terms do not affect the Apache product's 
-licensing.  For example, using a GPL'ed tool during the build is OK, however including GPL'ed source code is not.
+Apache projects may not distribute Category X licensed components, in source or binary form; 
+in ASF source code or in convenience binaries.  As with the previous question on platforms, you can rely on 
+the component if its license terms do not affect the Apache product's 
+licensing.  For example, using a GPL'ed tool during the build is okay, but including GPL'ed source code is not.
 
-### They may be relied upon when they support an optional feature  {#optional}
+### You may rely on them when they support an optional feature  {#optional}
 
 Apache projects can rely on components under prohibited licenses if the component is only needed 
 for optional features. When doing so, a project shall provide the user with instructions on how
@@ -352,9 +345,9 @@ Yahoo Search, or is a plugin for a product such as JBoss or JIRA is fine, wherea
 creating a Linux kernel module is not fine because the Apache product
 itself would have to be licensed under something other than the Apache License, version 2.0.
 
-Note that this does not mean the platform code itself can be redistributed. That of course will
-depend on the licensing of said code. Also, if you have any doubts as to whether the licensing
-of the platform would affect the Apache code, we recommend that you check the legal-discuss@
+Note that this does not mean you can redistribute the platform code itself. That of course
+depends on the licensing of said code. If you have any doubts as to whether the licensing
+of the platform would affect the Apache code, check the legal-discuss@
 archives to see if it has come up before, and if not email legal-discuss@ to find out.
 
 ### Is IP clearance required for library dependencies?  {#library-ip-clearance}
@@ -366,8 +359,7 @@ is used to import code bases from outside Apache for future development here.
   
 ### How should I handle a work when there is a choice of license?  {#mutually-exclusive}
 
-When including that work's licensing, state which license is
-being used and include only the license that you have chosen. Prefer
+When including that work's licensing, state which license you are using and include only the license that you have chosen. Prefer
 Category A to Category B to Category X. You don't need to modify the
 work itself if, for example, it mentions the various licensing options
 in the source headers.
@@ -375,10 +367,9 @@ in the source headers.
 
 ### What Are Required Third-party Notices?  {#required-third-party-notices}
 
-When a release contains third party works, the licenses covering those works may ask that consumers are informed 
-in certain specific fashions. These *third party notices* vary from license to license. Apache releases should contain a copy of each license, usually contained in the LICENSE document. For many licenses this is a sufficient notice. For some licenses some additional notice is required. In many cases, this will be included within the dependent artifact.      
+< When a release contains third party works, the licenses covering those works may ask that you inform consumers in certain specific fashions. These *third party notices* vary from license to license. Apache releases should contain a copy of each license, usually contained in the LICENSE document. For many licenses this is a sufficient notice. Some licenses require some additional notice. In many cases, you can include this notice within the dependent artifact.      
   
-A *required third-party notice* is any third party notice which isn't covered by the above cases.
+A *required third-party notice* is any third party notice which the above cases don't cover.
 
-See [Bundling Other ASF Products](/dev/licensing-howto.html#bundle-asf-product) for a note on required notices when a release contains another Apache product. 
+See [Bundling Other ASF Products](/dev/licensing-howto.html#bundle-asf-product) for a note on required notices when a release contains another Apache product.
 

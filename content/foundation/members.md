@@ -2,14 +2,14 @@ Title: Members
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 [Membership in The Apache Software Foundation](/foundation/governance/members) is a privilege and is by
-invitation only. Candidates for membership are proposed by existing
-members, and [voted upon by the existing membership](/foundation/governance/meetings#membervoting). Since the Foundation is
+invitation only. Existing members propose and [vote on](/foundation/governance/meetings#membervoting)
+candidates for membership. Since the Foundation is
 a meritocracy, meaning that contributions and skills are the factors used
-to judge worthiness, candidates are expected to have proven themselves by
+to judge worthiness, we expect candidates to have proven themselves by
 contributing to one or more of the Foundation's projects.
 
 The details of the process by which someone may become a member of The
-Apache Software Foundation are described in [Section 4.1](bylaws.html#4.1)
+Apache Software Foundation are in [Section 4.1](bylaws.html#4.1)
 of the Foundation's [bylaws](bylaws.html).  A more general description of 
 [how the ASF is governed](/governance/) is available.
 
@@ -54,6 +54,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | akm | Andrew Musselman | [Mahout](http://mahout.apache.org) |
 | amaniatis | Aristedes Maniatis | [Cayenne](http://cayenne.apache.org/)|
 | amareshwari | Amareshwari Sriramadasu | [Hadoop](http://hadoop.apache.org/) , [Falcon](http://falcon.apache.org/),  [Hive](http://hive.apache.org/), [Lens](http://lens.apache.org) |
+| andreww | [Andrew Wetmore](mailto:andreww@apache.org) | [Royale](https://royale.apache.org), Infra |
 | angela | Angela Schreiber | [Jackrabbit](http://jackrabbit.apache.org/)|
 | antelder | Ant Elder |
 | antoine | Antoine Levy-Lambert |
