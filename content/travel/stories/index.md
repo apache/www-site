@@ -5,16 +5,16 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 [TOC]
 
-The Travel Assistance Committee exists to help those that would like to
+The Travel Assistance Committee helps those who would like to
 attend ApacheCon events, but are unable to do so for financial reasons.
 
-Over the years, quite a number of different people, from all backgrounds
-and from all over the world, have been helped by TAC to attend Apache 
+Over the years, TAC has helped many people, from all backgrounds
+and from all over the world, attend Apache 
 events. This is a collection of some of their stories.
 
 ## By Project Area ##
 <!-- Sync this broadly with https://projects.apache.org/projects.html?category -->
-Interested in how people from projects in certain areas found TAC and
+Interested in how people from projects in a certain area found TAC and
 ApacheCon? Click on the project area below to read their stories!
 
  * [Big Data](big_data.html)
