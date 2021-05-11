@@ -6,7 +6,7 @@ Bhargav Golla
 
 **What Apache project are you involved in?**
 
-I was involved with Apache PhotArk (Retired project), and Apache Isis, as Google Summer of Code Developer 
+I was involved with Apache PhotArk (Retired project), and Apache Isis, as a Google Summer of Code Developer 
 
 **Were you a student/academic at the time of ApacheCon?**
 
@@ -31,14 +31,14 @@ Kafka. I had vaguely heard about it, but realized how widespread this tool is in
 
 **What was your favourite non-talk part of ApacheCon?**
 
-The Committer Receptions and the Closing receptions where all the committers and attendees could hangout and share things in a very informal and comfortable way. And also the free goodies provided by ASF and sponsors.
+The Committer Receptions and the closing reception where all the committers and attendees could hang out and share things in a very informal and comfortable way. And also the free goodies provided by the ASF and sponsors.
 
 **How did the Travel Assistance program compare to your expectations?**
 
-Travel assistance program exceeded my expectations. I assumed that this program is about just a way for conference attendees to get sponsored. But all the recipients were expected to help in the organization of sessions. This led to increased involvement in the conference, and also more relations forming among the Travel assistance recipients.  
+The Travel Assistance program exceeded my expectations. I assumed that this program was about just a way for conference attendees to get sponsored. But all the recipients were expected to help in the organization of sessions. This led to increased involvement in the conference, and also more relations forming among the Travel Assistance recipients.  
 
 **What would you say to someone thinking of applying to TAC for the first time?**
 
-Take your time to answer the questionnaire in detail so that the TAC committee can understand your case well and make sure that you are funded. 
+Take your time to answer the questionnaire in detail so that the TAC can understand your case well and make sure that you are funded. 
 
 -------------------------------------------------------------------
