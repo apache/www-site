@@ -308,10 +308,10 @@
     </div>
   </header>
   <main id="maincontent">
-    <div class="container">
+    {% if page.bodytag is not defined %}<div class="container">{% endif %}
       {% block content %}
       {% endblock %}
-    </div>
+    {% if page.bodytag is not defined %}</div>{% endif %}
   </main>
 
   <!-- Footer -->

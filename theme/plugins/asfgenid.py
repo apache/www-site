@@ -176,7 +176,7 @@ def fixup_content(content):
         modified = True
         text = re.sub(STYLE_RE, '</style', text)
     # fix iframes
-    IFRAME_RE = re.compile(r'&lt;iframee')
+    IFRAME_RE = re.compile(r'&lt;iframe')
     m = IFRAME_RE.search(text)
     if m:
         modified = True
