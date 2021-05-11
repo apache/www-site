@@ -78,7 +78,6 @@ license: https://www.apache.org/licenses/LICENSE-2.0
           <li role="presentation"><a href="#ach" aria-controls="ach" role="tab" data-toggle="tab">Using ACH bank payment</a></li>
           <li role="presentation"><a href="#apacheSwag" aria-controls="apacheSwag" role="tab" data-toggle="tab">Buy Apache-branded Swag</a></li>
           <li role="presentation"><a href="#smileAmazon" aria-controls="smileAmazon" role="tab" data-toggle="tab">Shop smile.amazon.com</a></li>
-          <li role="presentation"><a href="#bitcoin" aria-controls="bitcoin" role="tab" data-toggle="tab">Using Bitcoin</a></li>
           <li role="presentation"><a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab">With PayPal</a></li>
           <li role="presentation"><a href="#amazon" aria-controls="amazon" role="tab" data-toggle="tab">With Amazon</a></li>
           <li role="presentation"><a href="#check" aria-controls="check" role="tab" data-toggle="tab">Mail in Check</a></li>
@@ -120,20 +119,6 @@ license: https://www.apache.org/licenses/LICENSE-2.0
               <h3>Shop smile.amazon.com</h3>
               <p>Start your retail journey at <a href="https://smile.amazon.com/">https://smile.amazon.com/</a>, select the ASF as your charitable organization, and the AmazonSmile Foundation will donate 0.5% of the purchase price of eligible products to the&nbsp;ASF.</p>
               <p>Now that’s smart&nbsp;shopping!</p>
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="bitcoin">
-            <div class="well">
-              <h3>Donate using Bitcoin</h3>
-              <p>Our Bitcoin Address is:<br />
-              <code>17mmd6HfhkFB2kLy2GBbWenn48YJf7mGwg</code><br />
-              Or reference the QR code below:<br />
-              <img src="images/asf-btc-coinbase-17mmd6HfhkFB2kLy2GBbWenn48YJf7mGwg.png" alt="Bitcoin QR Address" style="max-width: 100%;" /></p>
-              <p>For Bitcoin Cash, our Address is:<br />
-              <code>qrjkkd8hnl2mat0z396dzwm8sha2m6vpey0c3w2ezn</code><br />
-              Or reference the QR code below:<br />
-              <img src="images/bch-qrjkkd8hnl2mat0z396dzwm8sha2m6vpey0c3w2ezn.png" alt="Bitcoin Cash QR Address" style="max-width: 100%;" />
-              </p>
             </div>
           </div>
           <div role="tabpanel" class="tab-pane" id="paypal">
