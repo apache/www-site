@@ -268,7 +268,7 @@ Open Source Apache projects used in every Internet-connected country on the&nbsp
                 <ul class="nav nav-tabs">
                   [for featured_projs]
                     <li class=[if-index featured_projs first]class="active"[end]>
-                      <a href="#4" data-toggle="tab">[featured_projs.name]</a>
+                      <a href="#[featured_projs.key_id]" data-toggle="tab">[featured_projs.display_name]</a>
                     </li>
                   [end]
                 </ul>
@@ -277,15 +277,15 @@ Open Source Apache projects used in every Internet-connected country on the&nbsp
             <div class="col-md-9 col-sm-12">
               <div class="tab-content">
                 [for featured_projs]
-                  <div class="tab-pane fade in [if-index featured_projs first]active[end]" id="4">
+                  <div class="tab-pane fade in [if-index featured_projs first]active[end]" id="[features_projs.key_id]">
                     <div class="row">
                       <div class="col-sm-2">
-                        <img class="img-responsive center-block" src="[featured_projs.logo]" alt="Logo">
+                        <img class="img-responsive center-block" src="[featured_projs.key_id]" alt="Logo">
                       </div>
                       <div class="col-sm-10">
-                        <h4 class="no-btm-margin"><a href="[featured_projs.url]">[featured_projs.name]</a></h4>
+                        <h4 class="no-btm-margin"><a href="[featured_projs.site]">[featured_projs.display_name]</a></h4>
                         <p>[featured_projs.description]</p>
-                        <a class="btn btn-default btn-sm" href="[featured_projs.url]" role="button">Learn More...</a>
+                        <a class="btn btn-default btn-sm" href="[featured_projs.site]" role="button">Learn More...</a>
                       </div>
                     </div>
                   </div>
@@ -307,7 +307,7 @@ Open Source Apache projects used in every Internet-connected country on the&nbsp
                 <ul class="nav nav-tabs">
                   [for featured_pods]
                     <li [if-index featured_pods first]class="active"[end]>>
-                      <a href="#1" data-toggle="tab">[featured_pods.name]</a>
+                      <a href="#[featured_pods.key_id" data-toggle="tab">[featured_pods.name]</a>
                     </li>
                   [end]
                 </ul>
@@ -316,15 +316,15 @@ Open Source Apache projects used in every Internet-connected country on the&nbsp
             <div class="col-md-9 col-sm-12">
               <div class="tab-content">
                 [for featured_pods]
-                  <div class="tab-pane fade in [if-index featured_pods first]active[end]" id="1">
+                  <div class="tab-pane fade in [if-index featured_pods first]active[end]" id="[featured_pods.key_id">
                     <div class="row">
                       <div class="col-sm-2">
-                        <img class="img-responsive center-block" src="[featured_pods.logo]" alt="Logo">
+                        <img class="img-responsive center-block" src="[featured_pods.key_id]" alt="Logo">
                       </div>
                       <div class="col-sm-10">
-                        <h4 class="no-btm-margin"><a href="{{ e.url }}">[featured_pods.name]</a></h4>
+                        <h4 class="no-btm-margin"><a href="[featured_pods.homepage">[featured_pods.name]</a></h4>
                         <p>[featured_pods.description]</p>
-                        <a class="btn btn-default btn-sm" href="[featured_pods.url]" role="button">Learn More...</a>
+                        <a class="btn btn-default btn-sm" href="[featured_pods.homepage]" role="button">Learn More...</a>
                       </div>
                     </div>
                   </div>
