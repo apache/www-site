@@ -1,183 +1,170 @@
-{% extends "skeleton2.html" %}
-
-<!-- 
-Note: skeleton2.html is located in the ../templates directory
-Since the site rework, this does not include the projects list from ../templates/blocks/projects.mdtext any more
-TODO: the original site processed the dynamic includes at load time; now at least some are done at build time
-Is it possible to restore the dynamic content?
--->
-
-{% block title %}Welcome to The Apache Software Foundation!{% endblock %}
-{% block tagline %}{{ tagline.content }}{% endblock %}
-{% block content %}
+title: Welcome to The Apache Software Foundation!
+bodytag: id="home"
 
 <section>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h1 class="h3">The World's Largest Open Source Foundation</h1>
-			</div>
-			<div class="col-sm-4 col-sm-offset-2">
-				<ul>
-					<li>All volunteer community</li>
-					<li>227M+ lines of code in&nbsp;stewardship</li>
-					<li>4.2B+ lines of code&nbsp;changed</li>
-					<li>4.1M+ code commits</li>
-					<li>813 individual ASF&nbsp;Members</li>
-					<li>8,100+ Apache Committers</li>
-					<li>40,000+ code contributors</li>
-					<li>480,000+ people involved in our&nbsp;communities</li>
-				</ul>
-			</div>
-			<div class="col-sm-4">
-				<ul>
-					<li>350+ Projects and Initiatives</li>
-					<li>300+ Top-Level Projects</li>
-					<li>37 podlings in the Apache&nbsp;Incubator</li>
-					<li>~2 Petabytes source code downloads from Apache&nbsp;mirrors</li>
-					<li>24M+ emails across 1,400+ mailing&nbsp;lists</li>
-					<li>Web requests received from every Internet-connected country on the&nbsp;planet</li>
-					<li>35M+ weekly page views across <a href="https://apache.org">apache.org</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-8 col-sm-offset-2 text-center">
-				<p><strong><a href="https://s.apache.org/FY2020AnnualReport-PR">$22B+ worth of Apache Open Source software products are made available to the public-at-large at 100% no cost, and benefit billions of users around the&nbsp;world.</a></strong></p>
-				<p><strong><a href="https://donate.apache.org/">Make a one-time or recurring&nbsp;donation</a> | <a href="http://apache.org/foundation/contributing.html">Corporate Support and ASF&nbsp;Sponsorship</a></strong></p>
-			</div>
-		</div>
-		<div id="video" class="row" style="margin-bottom: 30px;">
-			<script>
+	     <div class="row">
+	     	  <div class="col-sm-12 text-center">
+		       <h1 class="h3">The World's Largest Open Source Foundation</h1>
+		  </div>
+		  <div class="col-sm-4 col-sm-offset-2">
+
+- All volunteer community
+- 227M+ lines of code in&nbsp;stewardship
+- 4.2B+ lines of code&nbsp;changed
+- 4.1M+ code commits
+- 813 individual ASF&nbsp;Members
+- 8,100+ Apache Committers
+- 40,000+ code contributors
+- 480,000+ people involved in our&nbsp;communities
+
+  	   	  </div>
+		  <div class="col-sm-4">
+
+- 350+ Projects and Initiatives
+- 300+ Top-Level Projects
+- 37 podlings in the Apache&nbsp;Incubator
+- ~2 Petabytes source code downloads from Apache&nbsp;mirrors
+- 24M+ emails across 1,400+ mailing&nbsp;lists
+- Web requests received from every Internet-connected country on the&nbsp;planet
+- 35M+ weekly page views across [apache.org](/)
+
+		  </div>
+		  <div class="col-sm-8 col-sm-offset-2 text-center">
+		  
+[[]**$22B+ worth of Apache Open Source software products are made available to the public-at-large at 100% no cost, and benefit billions of users around the&nbsp;world.**](https://s.apache.org/FY2020AnnualReport-PR)
+
+				<p><strong><a href="
+[[]**Make a one-time or recurring&nbsp;donation**](https://donate.apache.org/) | [[]**Corporate Support and ASF&nbsp;Sponsorship**(/foundation/contributing.html)
+
+		  </div>
+	     </div>
+	     <div id="video" class="row" style="margin-bottom: 30px;">
+		  <script>
 			function swapVideo(videoUrl, title) {
 				const videoPlayer = document.getElementById("trillionsVideos");
 				videoPlayer.src = videoUrl;
 				videoPlayer.title= title;
 			}
-			</script>
-			<div class="col-sm-8 col-sm-offset-2" style="padding-top: 30px;">
-				<div class="video-responsive">
-					<iframe id="trillionsVideos" title="Trillions and Trillions" width="560" height="315" src="https://www.youtube.com/embed/JUt2nb0mgwg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
+		  </script>
+		  <div class="col-sm-8 col-sm-offset-2" style="padding-top: 30px;">
+		       <div class="video-responsive">
+			<iframe id="trillionsVideos" title="Trillions and Trillions" width="560" height="315" src="https://www.youtube.com/embed/JUt2nb0mgwg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		</div>
-		<div id="video-thumbnails" class="row">
-			<div class="col-xs-6 col-sm-2 col-sm-offset-2">
-				<button onclick="swapVideo('https://www.youtube.com/embed/YM5dLvNatRs?autoplay=1&rel=0', 'Why Apache?')"><img class="img-responsive" src="img/trillions-and-trillions/why-apache-thumbail.jpg" alt="Why Apache?" /></button>
-			</div>
-			<div class="col-xs-6 col-sm-2">
-				<button onclick="swapVideo('https://www.youtube.com/embed/nXtIti9jMFI?autoplay=1&rel=0', 'Apache Everywhere')"><img class="img-responsive" src="img/trillions-and-trillions/apache-everywhere-thumbnail.jpg" alt="Apache Everywhere" /></button>
-			</div>
-			<div class="col-xs-6 col-sm-2">
-				<button onclick="swapVideo('https://www.youtube.com/embed/JUt2nb0mgwg?autoplay=1&rel=0', 'Trillions and Trillions Served')"><img class="img-responsive" src="img/trillions-and-trillions/trillions-and-trillions-thumbnail.jpg" alt="Trillions and Trillions Served" /></button>
-			</div>
-			<div class="col-xs-6 col-sm-2">
-				<button onclick="swapVideo('https://www.youtube.com/embed/qkvqJaX4S50?autoplay=1&rel=0', 'Apache Innovation')"><img class="img-responsive" src="img/trillions-and-trillions/apache-innovation-thumbnail.jpg" alt="Apache Innovation" /></button>
-			</div>
-			<div class="col-xs-12 text-center">
-				<a href="https://www.youtube.com/channel/UCLDJ_V9KUOdOFSbDvPfGBxw" target="_blank">View additional videos</a>
-			</div>
-		</div>
-	</div>
+		  </div>
+	     </div>
+	     <div id="video-thumbnails" class="row">
+		  <div class="col-xs-6 col-sm-2 col-sm-offset-2">
+		       <button onclick="swapVideo('https://www.youtube.com/embed/YM5dLvNatRs?autoplay=1&rel=0', 'Why Apache?')"><img class="img-responsive" src="img/trillions-and-trillions/why-apache-thumbail.jpg" alt="Why Apache?" /></button>
+		  </div>
+		  <div class="col-xs-6 col-sm-2">
+		       <button onclick="swapVideo('https://www.youtube.com/embed/nXtIti9jMFI?autoplay=1&rel=0', 'Apache Everywhere')"><img class="img-responsive" src="img/trillions-and-trillions/apache-everywhere-thumbnail.jpg" alt="Apache Everywhere" /></button>
+		  </div>
+		  <div class="col-xs-6 col-sm-2">
+		       <button onclick="swapVideo('https://www.youtube.com/embed/JUt2nb0mgwg?autoplay=1&rel=0', 'Trillions and Trillions Served')"><img class="img-responsive" src="img/trillions-and-trillions/trillions-and-trillions-thumbnail.jpg" alt="Trillions and Trillions Served" /></button>
+		  </div>
+		  <div class="col-xs-6 col-sm-2">
+		       <button onclick="swapVideo('https://www.youtube.com/embed/qkvqJaX4S50?autoplay=1&rel=0', 'Apache Innovation')"><img class="img-responsive" src="img/trillions-and-trillions/apache-innovation-thumbnail.jpg" alt="Apache Innovation" /></button>
+		  </div>
+		  <div class="col-xs-12 text-center">
+		       <a href="https://www.youtube.com/channel/UCLDJ_V9KUOdOFSbDvPfGBxw" target="_blank">View additional videos</a>
+		  </div>
+	     </div>
+	 </div>
 </section>
-
 <!-- Quotes -->
 <section id="apacheQuotes" class="bg-primary">
-<div class="container">
-	<!-- Slideshow container -->
-	<div class="slideshow-container">
+	 <div class="container">
+	      <!-- Slideshow container -->
+	      <div class="slideshow-container">
 
-	<!-- Full-width slides/quotes -->
-	<div class="mySlides">
-		<blockquote class="text-center">
-		<p>"The most popular open source software is&nbsp;Apache&hellip;"</p>
-		<footer>DZone, <cite title="What Open Source Software Do You Use?">“What Open Source Software Do You&nbsp;Use?”</cite></footer>
-		</blockquote>
-	</div>
+	      	   <!-- Full-width slides/quotes -->
+		   <div class="mySlides">
+		   	<blockquote class="text-center">
+				    <p>"The most popular open source software is&nbsp;Apache&hellip;"</p>
+				    <footer>DZone, <cite title="What Open Source Software Do You Use?">“What Open Source Software Do You&nbsp;Use?”</cite></footer>
+			</blockquote>
+	      	   </div>
+		   <div class="mySlides">
+		   	<blockquote class="text-center">
+				    <p>"Apache-style licensing may yield more adoption and&nbsp;money."</p>
+				    <footer>Matt Asay, <cite title="c|net">c|net</cite></footer>
+		        </blockquote>
+		   </div>
 
-	<div class="mySlides">
-		<blockquote class="text-center">
-		<p>"Apache-style licensing may yield more adoption and&nbsp;money."</p>
-		<footer>Matt Asay, <cite title="c|net">c|net</cite></footer>
-		</blockquote>
-	</div>
-
-	<div class="mySlides">
-		<blockquote class="text-center">
-		<p>"Apache&rsquo;s 'survival of the fittest' ethos breeds better&nbsp;software"</p>
-		<footer><cite title="ZDNet">ZDNet</cite></footer>
-		</blockquote>
-	</div>
-
-	<!-- Next/prev buttons -->
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
-
-	<!-- Dots/bullets/indicators -->
-	<div class="dot-container">
-	<span class="dot" onclick="currentSlide(1)"></span>
-	<span class="dot" onclick="currentSlide(2)"></span>
-	<span class="dot" onclick="currentSlide(3)"></span>
-	</div>
-	<!-- END SLIDESHOW CONTAINER -->
-</div>
+		   <div class="mySlides">
+		   	<blockquote class="text-center">
+				    <p>"Apache&rsquo;s 'survival of the fittest' ethos breeds better&nbsp;software"</p>
+				    <footer><cite title="ZDNet">ZDNet</cite></footer>
+			</blockquote>
+		   </div>
+		   <!-- Next/prev buttons -->
+		   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	      </div>
+	      <!-- Dots/bullets/indicators -->
+	      <div class="dot-container">
+	      	   <span class="dot" onclick="currentSlide(1)"></span>
+		   <span class="dot" onclick="currentSlide(2)"></span>
+		   <span class="dot" onclick="currentSlide(3)"></span>
+	      </div>
+	      <!-- END SLIDESHOW CONTAINER -->
+	 </div>
 </section>
-  
+
 <!-- Updates Section    -->
 <section id="news">
   <div class="container">
        <h2 class="no-btm-margin">Latest News</h2>
  <p>Keep up with the ASF's news and announcements by subscribing to the 
-   <a href="http://apache.org/foundation/mailinglists.html#foundation-announce">Apache Announcements List</a>, as
+   <a href="/foundation/mailinglists.html#foundation-announce">Apache Announcements List</a>, as
      well as following the <a href="https://blogs.apache.org/foundation/">Foundation Blog</a>, 
      <a href="https://blogs.apache.org/foundation/category/Newsletter">Apache Weekly News Round-Ups</a>, 
      <a href="https://twitter.com/TheASF">@TheASF on Twitter</a>, 
-     <a href="https://www.linkedin.com/company/the-apache-software-foundation/">The Apache Software Foundation on
-		 LinkedIn</a>, on the ASF's <a href="https://www.youtube.com/c/TheApacheFoundation/">YouTube channel</a>, and on <a href="https://feathercast.apache.org/">Feathercast</a>, the voice of the ASF.</p>
+     <a href="https://www.linkedin.com/company/the-apache-software-foundation/">The Apache Software Foundation on LinkedIn</a>,
+     	on the ASF's <a href="https://www.youtube.com/c/TheApacheFoundation/">YouTube channel</a>, and
+	on <a href="https://feathercast.apache.org/">Feathercast</a>, the voice of the ASF.</p>
  <!-- gm -->
      <div class="updates">
        <article class="card">
          <div class="content">
            <span class="label label-danger">Twitter</span>
-           {% for e in twitter.list %}
+           <!-- {% for e in twitter.list %} -->
              <div>
-             <a href="{{ e.url }}">@</a>
-             {{ e.title|safe }}
+             <!-- <a href="{{ e.url }}">@</a> -->
+             <!-- {{ e.title|safe }} -->
              </div>
-           {% endfor %}
+           <!-- {% endfor %} -->
          </div>
          <a class="continue" href="https://twitter.com/TheASF">Continue Reading&nbsp;&rarr;</a>
        </article>
- 
        <article class="card">
          <div class="content">
            <span class="label label-danger">Foundation Blog</span>
-             {% for e in blog.list %}
-               <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5>
-             {% endfor %}    
+             <!-- {% for e in blog.list %} -->
+               <!-- <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5> -->
+             <!-- {% endfor %} -->
          </div>
          <a class="continue" href="https://blogs.apache.org/foundation">Continue Reading&nbsp;&rarr;</a>
        </article>
- 
-       <article class="card">
+        <article class="card">
          <div class="content">
            <span class="label label-danger">Project Blogs</span>
-             {% for e in planet.list %}
-               <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5>
-             {% endfor %}   
+             <!-- {% for e in planet.list %} -->
+               <!-- <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5> -->
+             <!-- {% endfor %} -->
          </div>
          <a class="continue" href="https://blogs.apache.org">Continue Reading&nbsp;&rarr;</a>
        </article>
- 
-       <article class="card">
+        <article class="card">
          <div class="content">
            <span class="label label-danger">Conferences</span>
-             {% for e in conferences.list %}
-               <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5>
-             {% endfor %}   
+             <!-- {% for e in conferences.list %} -->
+               <!-- <h5><a class="entryTitle" href="{{ e.url }}">{{ e.title }}</a></h5> -->
+             <!-- {% endfor %} -->
          </div>
          <a class="continue" href="https://blogs.apache.org/conferences">Continue Reading&nbsp;&rarr;</a>
        </article>
-         
      </div>
  <!-- /gm -->
    </div>
@@ -189,7 +176,7 @@ Is it possible to restore the dynamic content?
 	<div class="container">
 		<div class="highlights">
 			<article class="card">
-				<a href="http://www.apache.org/foundation/reports.html">
+				<a href="/foundation/reports.html">
 					<img class="img-responsive" src="img/2020-report.jpg" alt="Apache Annual Report" />
 					<div class="card-content">
 						<h4>Reports</h4>
@@ -211,7 +198,7 @@ Is it possible to restore the dynamic content?
 				</a>
 			</article>
 			<article class="card">
-				<a href="http://www.apache.org/theapacheway/index.html">
+				<a href="/theapacheway/index.html">
 					<img class="img-responsive" src="img/the-apache-way.jpg" alt="The Apache Way" />
 					<div class="card-content">
 						<h4>The Apache Way</h4>
@@ -233,29 +220,34 @@ Is it possible to restore the dynamic content?
 		</div>
 	</div>
 </section>
-  <!-- End Highlights-->
+<!-- End Highlights-->
  
 <!-- Apache Statements Section -->
-	<!-- Apache Statements Section -->
-	<section class="bg-info">
-		<div class="container">
-			<p>The ASF develops, shepherds, and incubates hundreds of freely-available, enterprise-grade projects that serve as the backbone for some of the most visible and widely used applications in computing today. Through the ASF's merit-based process known as <a href="http://www.apache.org/theapacheway/">"The Apache Way,"</a> more than <a href="http://community.zones.apache.org/map.html">800 individual volunteer Members and 7,800+ code Committers</a> across six continents successfully collaborate on innovations in Artificial Intelligence and Deep Learning, Big Data, Build Management, Cloud Computing, Content Management, DevOps, IoT and Edge Computing, Mobile, Servers, and Web Frameworks, <a href="https://projects.apache.org/projects.html?category">among other categories</a>.</p>
+<section class="bg-info">
+	 <div class="container">
 
-			<p><strong>APACHE IS &hellip;</strong></p>
+The ASF develops, shepherds, and incubates hundreds of freely-available, enterprise-grade projects that serve as the
+backbone for some of the most visible and widely used applications in computing today. Through the ASF's merit-based
+process known as [[]"The Apache Way,"](/theapacheway) more than [[]800 individual volunteer Members and 7,800+ code
+Committers](http://community.zones.apache.org/map.html) across six continents successfully collaborate on innovations
+in Artificial Intelligence and Deep Learning, Big Data, Build Management, Cloud Computing, Content Management, DevOps,
+IoT and Edge Computing, Mobile, Servers, and Web Frameworks, [[]among other categories](https://projects.apache.org/projects.html?category).
 
-			<p><strong>OPEN:</strong> The Apache Software Foundation provides support for 300+ Apache Projects and their Communities, furthering its mission of providing Open Source software for the public&nbsp;good.</p>
+**APACHE IS &hellip;**
 
-			<p><strong>INNOVATION:</strong> Apache Projects are defined by <a
-					href="http://www.apache.org/theapacheway/index.html">collaborative, consensus-based processes</a>, an open, pragmatic software license and a desire to create high quality software that leads the way in its&nbsp;field.
-			</p>
+**OPEN:** The Apache Software Foundation provides support for 300+ Apache Projects and their Communities,
+furthering its mission of providing Open Source software for the public&nbsp;good.
 
-			<p><strong>COMMUNITY:</strong> We are a <a href="http://community.apache.org/">community of developers and users</a> of enterprise-grade, Open Source Apache projects used in every Internet-connected country on the&nbsp;planet.</p>
-		</div>
-	</section>
-	<!-- / Apache Statements Section -->
+**INNOVATION:** Apache Projects are defined by [[]collaborative, consensus-based processes](/theapacheway), an open,
+pragmatic software license and a desire to create high quality software that leads the way in its&nbsp;field.
+
+**COMMUNITY:** We are a [[]community of developers and users](http://community.apache.org/) of enterprise-grade,
+Open Source Apache projects used in every Internet-connected country on the&nbsp;planet.
+
+     	 </div>
+</section>
 <!-- / Apache Statements Section -->
 <!-- was Apachecon etc here -->
-
 <!-- Apache Featured Projects Section    -->
 <section class="bg-gray">
   <div class="container">
@@ -274,30 +266,30 @@ Is it possible to restore the dynamic content?
               <!-- tabs left -->
               <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
                 <ul class="nav nav-tabs">
-                  {% for e in projects %}
-                    <li {% cycle "class='active'" "" "" %}>
-                      <a href="#{% cycle "4" "5" "6" %}" data-toggle="tab">{{ e.name }}</a>
+                  [for featured_projs]
+                    <li class=[if-index featured_projs first]class="active"[end]>
+                      <a href="#4" data-toggle="tab">[featured_projs.name]</a>
                     </li>
-                  {% endfor %}
+                  [end]
                 </ul>
               </div>
             </div>
             <div class="col-md-9 col-sm-12">
               <div class="tab-content">
-                {% for e in projects %}
-                  <div class="tab-pane fade in {% cycle "active" "" "" %}" id="{% cycle "4" "5" "6" %}">
+                [for featured_projs]
+                  <div class="tab-pane fade in [if-index featured_projs first]active[end]" id="4">
                     <div class="row">
                       <div class="col-sm-2">
-                        <img class="img-responsive center-block" src="{{ e.logo }}" alt="Logo">
+                        <img class="img-responsive center-block" src="[featured_projs.logo]" alt="Logo">
                       </div>
                       <div class="col-sm-10">
-                        <h4 class="no-btm-margin"><a href="{{ e.url }}">{{ e.name }}</a></h4>
-                        <p>{{ e.description|safe|truncatewords_html:50 }}</p>
-                        <a class="btn btn-default btn-sm" href="{{ e.url }}" role="button">Learn More...</a>
+                        <h4 class="no-btm-margin"><a href="[featured_projs.url]">[featured_projs.name]</a></h4>
+                        <p>[featured_projs.description]</p>
+                        <a class="btn btn-default btn-sm" href="[featured_projs.url]" role="button">Learn More...</a>
                       </div>
                     </div>
                   </div>
-                {% endfor %}
+                [end]
               </div><!-- /tab-content -->
             </div><!-- /container -->
           </div><!-- /tabs -->
@@ -313,30 +305,30 @@ Is it possible to restore the dynamic content?
               <!-- tabs left -->
               <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
                 <ul class="nav nav-tabs">
-                  {% for e in podlings %}
-                    <li {% cycle "class='active'" "" "" %}>
-                      <a href="#{% cycle "1" "2" "3" %}" data-toggle="tab">{{ e.name }}</a>
+                  [for featured_pods]
+                    <li [if-index featured_pods first]class="active"[end]>>
+                      <a href="#1" data-toggle="tab">[featured_pods.name]</a>
                     </li>
-                  {% endfor %}
+                  [end]
                 </ul>
               </div>
             </div>
             <div class="col-md-9 col-sm-12">
               <div class="tab-content">
-                {% for e in podlings %}
-                  <div class="tab-pane fade in {% cycle "active" "" "" %}" id="{% cycle "1" "2" "3" %}">
+                [for featured_pods]
+                  <div class="tab-pane fade in [if-index featured_pods first]active[end]" id="1">
                     <div class="row">
                       <div class="col-sm-2">
-                        <img class="img-responsive center-block" src="{{ e.logo }}" alt="Logo">
+                        <img class="img-responsive center-block" src="[featured_pods.logo]" alt="Logo">
                       </div>
                       <div class="col-sm-10">
-                        <h4 class="no-btm-margin"><a href="{{ e.url }}">{{ e.name }}</a></h4>
-                        <p>{{ e.description|safe|truncatewords_html:50 }}</p>
-                        <a class="btn btn-default btn-sm" href="{{ e.url }}" role="button">Learn More...</a>
+                        <h4 class="no-btm-margin"><a href="{{ e.url }}">[featured_pods.name]</a></h4>
+                        <p>[featured_pods.description]</p>
+                        <a class="btn btn-default btn-sm" href="[featured_pods.url]" role="button">Learn More...</a>
                       </div>
                     </div>
                   </div>
-                {% endfor %}
+                [end]
               </div><!-- /tab-content -->
             </div><!-- /container -->
           </div><!-- /tabs -->
@@ -347,7 +339,6 @@ Is it possible to restore the dynamic content?
   </div>
 </section>
 <!-- / Apache Featured Projects Section -->
-
 <!-- Apache Projects List -->
 	<section id="projects-list">
 		<div class="container">
@@ -469,5 +460,4 @@ Is it possible to restore the dynamic content?
 		</div>
 	</section>
 <!-- / Projects List -->
-{% endblock %}
 
