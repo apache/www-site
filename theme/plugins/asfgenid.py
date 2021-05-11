@@ -153,6 +153,7 @@ def fixup_content(content):
     text = content._content
     modified = False
     # Find messed up html
+    # fix scripts
     SCRIPTS_RE = re.compile(r'&lt;script')
     m = SCRIPTS_RE.search(text)
     if m:
@@ -163,6 +164,7 @@ def fixup_content(content):
     if m:
         modified = True
         text = re.sub(SCRIPTS_RE, '</script', text)
+    # fix styles
     STYLE_RE = re.compile(r'&lt;style')
     m = STYLE_RE.search(text)
     if m:
@@ -173,6 +175,17 @@ def fixup_content(content):
     if m:
         modified = True
         text = re.sub(STYLE_RE, '</style', text)
+    # fix iframes
+    IFRAME_RE = re.compile(r'&lt;iframee')
+    m = IFRAME_RE.search(text)
+    if m:
+        modified = True
+        text = re.sub(IFRAME_RE, '<iframe', text)
+    IFRAME_RE = re.compile(r'&lt;/iframe')
+    m = IFRAME_RE.search(text)
+    if m:
+        modified = True
+        text = re.sub(IFRAME_RE, '</iframe', text)
     if modified:
         content._content = text
 
