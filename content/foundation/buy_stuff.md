@@ -1,49 +1,18 @@
 Title: Buy Stuff
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Stores  {#Stores}
+# Buy Stuff #
 
-The Apache Software Foundation licenses its trademarks and logos to a
-variety of entities who sell Apache-branded merchandise and contribute
-profits back to the foundation:
+The Apache Software Foundation licenses its trademarks and logos to a variety of entities who sell Apache-branded merchandise and contribute profits back to the Foundation. Those wishing to license the ASF and/or Apache Project logos for merchandising (swag, apparel, pins, stickers, etc.) may [contact ASF Brand Management](https://www.apache.org/foundation/marks/contact#swag) for further details.
 
--  [Kernel Concepts](#kernelconcepts) 
+## SHOP ##
 
--  [The Rodent's Cache](#RodentsCache) 
+![RedBubble](images/redbubble.png "RedBubble")
 
--  [Buy ASF Swag](http://asfswag.com/) 
+The ASF has an [official store at RedBubble](https://www.redbubble.com/people/comdev/shop) that is run by Apache Community Development (ComDev). An array of products featuring dozens of Apache Project logos are available; to submit a request to add your favorite Apache Project to this collection, kindly submit a request to Mark Thomas (ASF VP Brand Management) by emailing [dev@community.apache.org](mailto:dev@community.apache.org).
 
--  [Lucene Stuff](http://www.cafepress.com/lucene/) 
+Those interested in items from the ASF's earlier days and contribute a portion of sale's proceeds may find what they're looking for at:
 
--  [Nutch Stuff](http://www.cafepress.com/nutch/) 
-
--  [Hadoop Stuff](http://www.cafepress.com/hadoop/) 
-
-# Buy ASF-sponsored shirts at kernel concepts  {#kernelconcepts}
-
-Show your support for the ASF by purchasing officially licensed ASF
-T-shirts from kernel concepts, Germany. 1 Euro of each T-shirt sold is
-donated to the ASF. Click on the kernel concepts logo below and get your
-[Powered by
-Apache](http://shop.kernelconcepts.de/advanced_search_result.php?keywords=apache)
-T-shirt.
-
-<center>
-
-[![](images/kernelconcepts.png)](http://shop.kernelconcepts.de)
-
-</center>
-
-# Buy ASF-sponsored items at The Rodent's Cache  {#RodentsCache}
-
-[![The Rodent's Cache](images/rodent-cache.jpg)](http://www.cafepress.com/meepzor/230676)
-Show your support for your favourite Apache package, and demonstrate your
-coolness to those around you, by purchasing ASF-branded T-shirts,
-sweatshirts, mugs, caps, and other items from [The Rodent's
-Cache](http://www.cafepress.com/meepzor/230676) ! The Cache is run by
- Apache developer Ken Coar, and 10% of the
-profits on all Apache swag are donated to the ASF. New items are added
-frequently, often by request, so consider joining the Cache's mailing list
-to stay informed! (Note: The ASF is not responsible for the content nor
-tone of this blurb.)
+-  [ASF Swag](http://asfswag.com/) --created by ASF Member Shane Curcuru
+-  [The Rodent's Cache](http://www.cafepress.com/meepzor/230676) --created by ASF Member Ken Coar
 
