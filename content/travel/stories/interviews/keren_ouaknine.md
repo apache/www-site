@@ -26,22 +26,22 @@ Israel
 Apply, Apply!
 
 ApacheCon is a unique opportunity to have great discussions with many
-open-source committed people. I was grateful for the privilege to learn
+open-source-committed people. I was grateful for the privilege to learn
 about the Apache community and projects. The total number of sessions and
-topics covered in those three conference days was mind blowing and I can
+topics covered in those three conference days was mind-blowing and I can
 clearly remember us TAC-ers did not want it to end!
 
 **What unexpected things did you learn at ApacheCon?**
 
 Quick anecdote: I volunteered to help with the registration desk on the
-first day of the conference along with a friend. Naturally, I familiarized
-with many of the attendants, their names, workplace/organization. Following
-which, I no longer felt as a wandering soul, seeking to find a female peer
-to socialize with (like it often happens on conferences of this
+first day of the conference along with a friend. Naturally, I familiarized myself
+with many of the attenders, their names, workplace/organization. Following
+which, I no longer felt like a wandering soul, seeking to find a female peer
+to socialize with (as often happens on conferences of this
 scale). Instead,
-I was part of the TAC-ers: united, incredibly nice, talented and organized
-group. During the registration, more TAC-ers joined to help with the load
-and together we mastered the incoming stream with ease and good spirit!
+I was part of the TAC-ers: a united, incredibly nice, talented and organized
+group. During the registration process, more TAC-ers joined to help with the load
+and together we mastered the incoming stream with ease and good spirits!
 
 I cherish the friendship with all the TAC members and organizers and will
 keep a very fond memory of this conference.
