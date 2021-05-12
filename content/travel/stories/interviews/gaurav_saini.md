@@ -28,7 +28,7 @@ one project get together and discuss tech and not tech :)
 **What would you say to someone thinking of applying to TAC for the first
 time?**
 
-I would like to recommend that people should make sure they are active
+I would like to recommend that people make sure they are active
 with some project in Apache and just think about what they will be
-learning at ApacheCON. Don't think negatively that you will not be eligible
+learning at ApacheCON. Don't think negatively that you might not be eligible
 or many other things that come up to your mind, doubting your caliber.
