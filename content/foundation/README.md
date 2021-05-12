@@ -1,8 +1,8 @@
 # Foundation Information
 
-These pages have different responsible and interested parties. Discuss changes with these stakeholders.
+These pages have differing stakeholders.
 
-Board of Directors
+Board of Directors at board@apache.org
 - [Board](board/)
 
 VP, Marketing and Publicity at press@apache.org
@@ -23,6 +23,10 @@ VP, Conferences at events-cvs@apache.org
 - [Event Branding](content/marks/events.md)
 - [Anti-Harassment](policies/anti-harassment.md)
 
-For all other changes reach out to centralservices@apache.org
+For discussion about other pages contact centralservices@apache.org
 
+All ASF Members have write access to this repository.
 
+For nontrivial changes make a Pull Request and start a discussion with the stakeholders.
+
+For trivial changes commit and let the stakeholders know.
