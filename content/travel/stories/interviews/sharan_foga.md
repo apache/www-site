@@ -15,7 +15,7 @@ No
 **Where in the world are you from?**
 
 I'm a bit of a global traveller. I'm originally from the UK but currently
-live in the Czech Republic
+live in the Czech Republic.
 
 
 **What was the most interesting thing you learned at ApacheCon?**
@@ -30,7 +30,7 @@ initiatives for my project.
 
 Apachecon is for anyone involved in a community.
 
-I'm not a developer or a technical person so was initially concerned that I
+I'm not a developer or a technical person, so was initially concerned that I
 wouldnt fit in or that everyone would be speaking "techspeak".
 
 Instead I found that Apache is like a huge open family and you don't have to
@@ -49,7 +49,7 @@ TAC team organised a dinner for all the TAC volunteers, so we
 could meet and get to know each other informally. This meant that throughout
 Apachecon we became a little micro community. This was
 demonstrated several times when one of us was not available to do an
-allocated task, someone else would quickly jump  in to cover it.
+allocated task, and someone else would quickly jump  in to cover it.
 
 From the moment you arrive at Apachecon, you are never alone!
 
