@@ -5,7 +5,7 @@
 
 This repository provides the website for the main website of The Apache Software Foundation.
 
-- [Content](content) See [notes](markdown.md).
+- [Content](content) -- See [notes](markdown.md).
   - **.md** pages in GitHub Flavored Markdown which can include HTML.
   - **.ezmd** pages in a combination of [ezt](https://github.com/gstein/ezt/blob/wiki/Syntax.md) and GitHub Flavored Markdown.
   - **.html** files are treated as static files.
