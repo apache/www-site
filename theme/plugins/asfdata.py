@@ -274,6 +274,34 @@ def process_load(metadata, value, key, load, debug):
             process_sequence(metadata, seq, sequence, load, debug)
 
 
+def twitter_auth():
+    return "AAAAAAAAAAAAAAAAAAAAACg4PgEAAAAApGfiQijpZK4EQmSvWFLqYE%2FWD%2BI%3D4F9v6SszNmT3lf8o2scY28Zlv7XilgfhMIOFdiFcUmaHfg2PwH"
+
+
+def connect_to_endpoint(url, headers):
+    response = requests.request("GET", url, headers=headers)
+    if response.status_code != 200:
+        raise Exception(response.status_code, response.text)
+    return response.json()
+
+
+def process_twitter(handle, count):
+    bearer_token = twitter_auth()
+    query = "from:TheASF"
+    tweet_fields = "tweet.fields=author_id"
+    url = "https://api.twitter.com/2/tweets/search/recent?query={}&{}".format(
+        query, tweet_fields
+    )
+    headers = {"Authorization": "Bearer {}".format(bearer_token)}
+    load = connect_to_endpoint(url, headers)
+    reference = sequence_list('twitter', load['data'])
+    if load['meta']['result_count'] < count:
+        v = reference
+    else:
+        v = reference[:count]
+    return v
+
+
 def process_eccn(fname):
     print('ECCN:', fname)
     j = json.load(open(fname))
@@ -347,7 +375,15 @@ def config_read_data(pel_ob):
                 fname = config_data[key]['file']
                 v = process_eccn(fname)
                 print('ECCN V:', v)
-                metadata['eccn'] = v
+                metadata[key] = v
+                continue
+
+            if key == 'twitter':
+                handle = config_data[key]['handle']
+                count = config_data[key]['count']
+                v = process_twitter(handle, count)
+                print('TWITTER V:', v)
+                metadata[key] = v
                 continue
 
             value = config_data[key]
