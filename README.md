@@ -5,9 +5,9 @@
 
 This repository provides the website for the main website of The Apache Software Foundation.
 
-- [Content](content) -- See [notes](markdown.md).
-  - **.md** pages in GitHub Flavored Markdown which can include HTML.
-  - **.ezmd** pages in a combination of [ezt](https://github.com/gstein/ezt/blob/wiki/Syntax.md) and GitHub Flavored Markdown.
+- [Content](content) -- See [creator notes](markdown.md).
+  - **.md** pages in GitHub Flavored Markdown which can include HTML. See [asfgenid.py](theme/plugins/asfgenid.py).
+  - **.ezmd** pages in a combination of [ezt](https://github.com/gstein/ezt/blob/wiki/Syntax.md) and GitHub Flavored Markdown. See [asfreader.py](theme/plugins/asfreader.py).
   - **.html** files are treated as static files.
   - static assets of all types.
   - .htaccess files for redirection and rewrite rules.
@@ -23,5 +23,5 @@ CI/CD is via a [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFR
 - [Templates](theme/apache/templates) -- see the full template folder
 - [Custom Plugins](theme/plugins) -- site data and page processing
 - [Pelican Configuration](pelicanconf.py) -- pelican configuration
-- [ASF data load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](theme/plugins/asfdata.py)
+- [ASF data load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](theme/plugins/asfdata.py).
 - [ASF YAML build](.asf.yaml) -- ASF infrastructure instructions
