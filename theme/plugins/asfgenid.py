@@ -2,7 +2,7 @@
 asfgenid
 ===================================
 Generates HeadingIDs, ElementID, and PermaLinks
-First find all specified IDs and classes. Assure unique ID and permalonk
+First find all specified IDs and classes. Assure unique ID and permalink
 Next find all headings missing IDs. Assure unique ID and permalink
 Generates a Table of Content
 '''
