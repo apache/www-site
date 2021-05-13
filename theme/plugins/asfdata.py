@@ -30,6 +30,8 @@ import requests
 import yaml
 import ezt
 
+import xml.dom.minidom
+
 import pelican.plugins.signals
 import pelican.utils
 
@@ -274,6 +276,42 @@ def process_load(metadata, value, key, load, debug):
             process_sequence(metadata, seq, sequence, load, debug)
 
 
+def get_node_text(nodelist):
+    """http://www.python.org/doc/2.5.2/lib/minidom-example.txt"""
+    rc = ""
+    for node in nodelist:
+        if node.nodeType == node.TEXT_NODE:
+            rc = rc + node.data
+    return rc
+
+
+def get_element_text(entry, child):
+    elements = entry.getElementsByTagName(child)
+    return get_node_text(elements[0].childNodes)
+
+
+def process_blog(feed, count):
+    content = requests.get(feed).text
+    dom = xml.dom.minidom.parseString(content)
+    entries = dom.getElementsByTagName('entry')
+    entries = entries[:count]
+    v = [ ]
+    for entry in entries:
+        print(entry.tagName);
+        v.append(
+            {
+                'id': get_element_text(entry, 'id'),
+                'title': get_element_text(entry, 'title'),
+            }
+        )
+    for s in v:
+        print(s)
+
+    return [ Blog(href=s['id'],
+                  title=s['title'])
+             for s in v ]
+
+
 def twitter_auth():
     return "AAAAAAAAAAAAAAAAAAAAACg4PgEAAAAApGfiQijpZK4EQmSvWFLqYE%2FWD%2BI%3D4F9v6SszNmT3lf8o2scY28Zlv7XilgfhMIOFdiFcUmaHfg2PwH"
 
@@ -345,6 +383,7 @@ class Source(wrapper): pass
 class Version(wrapper): pass
 class Product(wrapper): pass
 class Project(wrapper): pass
+class Blog(wrapper): pass
 
 
 def config_read_data(pel_ob):
@@ -372,6 +411,7 @@ def config_read_data(pel_ob):
         config_data = read_config(asf_data['data'])
         for key in config_data:
             if key == 'eccn':
+                # process eccn data
                 fname = config_data[key]['file']
                 v = process_eccn(fname)
                 print('ECCN V:', v)
@@ -379,6 +419,7 @@ def config_read_data(pel_ob):
                 continue
 
             if key == 'twitter':
+                # process twitter data
                 handle = config_data[key]['handle']
                 count = config_data[key]['count']
                 v = process_twitter(handle, count)
@@ -390,12 +431,23 @@ def config_read_data(pel_ob):
             if isinstance(value, dict):
                 print(f"{key} is a dict")
                 print(value)
-                if 'url' in value:
+                if 'blog' in value:
+                    # process blog feed
+                    feed = config_data[key]['blog']
+                    count = config_data[key]['count']
+                    v = process_blog(feed, count)
+                    print('BLOG V:', v)
+                    metadata[key] = v
+                    continue
+
+                elif 'url' in value:
                     load = url_data(value['url'])
                     process_load(metadata, value, key, load, asf_data['debug'])
+
                 elif 'file' in value:
                     load = file_data(value['file'])
                     process_load(metadata, value, key, load, asf_data['debug'])
+
                 else:
                     metadata[key] = value
             else:
