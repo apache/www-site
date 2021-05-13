@@ -3,44 +3,76 @@ id1: 'test id'
 id2: 'testing 1, 2, 3'
 
 # data sources to slurp and sequence
-# used on foundation/index.ezmd, index.ezmd
+#   index.ezmd
+#   foundation/index.ezmd
+#   foundation/board/index.ezmd
+#   licenses/exports/index.ezmd
 ci:
+  # load, transform, and create data sequences from committee info 
   url: https://whimsy.apache.org/public/committee-info.json
   board:
-    description: 'Board of Directors'
+    # used on /foundation/ and /foundation/board/
+    description: 'Board of Directors sequence'
+    # select ci['board']['roster'] for the sequence
     path: board.roster
   officers:
-    description: 'Foundation Officers'
+    description: 'Foundation Officers sequence'
+    # select ci['officers'] for the sequence
     path: officers
+    # convert ci['officers']['roster']
     asfid: roster
   committees:
-    description: 'Foundation Committees'
+    description: 'Foundation Committees sequence'
+    # ci['committees']
     path: committees
+    # remove all report and roster dictionaries from committees
     trim: report,roster
+    # convert ci['committees']['chair']
     asfid: chair
   ci:
-    description: 'Dictionary'
+    # used on /foundation/
+    description: 'Dictionary of officers and committees'
+    # save a merged dictionary version of these sequences.
     dictionary: officers,committees
   projects:
     description: 'Current Projects'
+    # ci['committees']
     path: committees
+    # select only where 'pmc' is true.
     where: pmc
+    # sort by project name
     alpha: display_name
   featured_projs:
+    # used on /
     description: 'Featured Projects'
+    # base on projects sequence
     sequence: projects
+    # take a random sample of 3
     random: 3
   pl:
+    # used on /
     description: 'Project List Columns'
+    # base on projects sequence
     sequence: projects
+    # split into 6 column sequence adding letters of the alphabet and putting httpd first
     split: 6
 
 # used on index.ezmd
 pods:
+  # load, transform, and create data sequences from podling info 
   url: https://projects.apache.org/json/foundation/podlings.json
   podlings:
     description: 'Current Podlings'
+    # create a sequence from the dictionary
   featured_pods:
     description: 'Featured Podlings'
+    # based on the podlings sequence
     sequence: podlings
+    # take a random sample of 3
     random: 3
+
+# used on licenses/exports/index.ezmd
+eccn:
+  # load, transform, and create a four tiered structure of sequence objects
+  # projects, products, versions, and sources
+  file: data/eccn/eccnmatrix.json

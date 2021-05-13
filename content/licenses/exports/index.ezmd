@@ -1,8 +1,18 @@
-{% extends "skeleton.html" %}
-{% block title %}{{ main.headers.title }}{% endblock %}
-{% block tagline %}{{ main.headers.title }}{% endblock %}
-{% block content %}
-  <div class="container">{{ main.content|markdown }}
-      {{ table|safe }}
-  </div>
-{% endblock %}
+Title: ASF Export Classifications and Source Links
+license: https://www.apache.org/licenses/LICENSE-2.0
+
+[insertfile 'main.md']
+
+## Matrix Layout
+
+### ASF Project
+  - ASF Product
+    - Version / ECCN Classification / Controlled Sources
+
+## ASF Products
+[for eccn]
+### [[][eccn.name]]([eccn.href])[if-any eccn.contact] -- [eccn.contact][end]
+[if-any eccn.product][for eccn.product]  - [eccn.product.name]
+[for eccn.product.versions]    - [eccn.product.versions.version] / [eccn.product.versions.eccn]
+[for eccn.product.versions.source]    / [[][eccn.product.versions.source.manufacturer]]([eccn.product.versions.source.href] "[eccn.product.versions.source.why]")
+[end][end][end][end][end]

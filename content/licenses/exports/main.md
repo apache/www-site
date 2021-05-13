@@ -1,6 +1,3 @@
-Title: ASF Export Classifications and Source Links
-license: https://www.apache.org/licenses/LICENSE-2.0
-
 This page provides detailed information on the export control status of the
 Apache Software Foundation's [products](#matrix) , as well as pointers to
 the open source code from which those products are built.
