@@ -127,9 +127,10 @@ ASF_GENID = {
     'metadata': True,
     'elements': True,
     'headings': True,
+    'headings_re': r'^h[1-4]',
     'permalinks': True,
     'toc': True,
-    'toc_headers': r"h[1-6]",
+    'toc_headers': r"h[1-4]",
     'tables': True,
     'debug': False
 }

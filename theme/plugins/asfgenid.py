@@ -9,6 +9,7 @@ Generates a Table of Content
 
 from __future__ import unicode_literals
 
+import traceback
 import re
 import unicodedata
 
@@ -27,6 +28,7 @@ ASF_GENID = {
     'metadata': True,
     'elements': True,
     'headings': True,
+    'headings_re': r'^h[1-6]',
     'toc': True,
     'toc_headers': r"h[1-6]",
     'permalinks': True,
@@ -39,9 +41,6 @@ ELEMENTID_RE = re.compile(r'(?:[ \t]*[{\[][ \t]*(?P<type>[#.])(?P<id>[-._:a-zA-Z
 
 # Find {{ metadata }}
 METADATA_RE = re.compile(r'{{\s*(?P<meta>[-._:a-zA-Z0-9]+)\s*}}')
-
-# Find heading tags
-HEADING_RE = re.compile(r'^h[1-6]')
 
 # Find table tags
 TABLE_RE = re.compile(r'^table')
@@ -354,6 +353,8 @@ def generate_id(content):
         if asf_genid['debug']:
             print(f"headings: {content.relative_source_path}")
 
+        # Find heading tags
+        HEADING_RE = re.compile(asf_genid['headings_re'])
         for tag in soup.findAll(HEADING_RE, id=False):
             headingid_transform(ids, soup, tag, asf_genid['permalinks'])
 
@@ -379,8 +380,17 @@ def generate_id(content):
         print(f"    #{tag['id']}")
 
 
+def tb_connect(pel_ob):
+    "Print any exception, before Pelican chews it into nothingness."
+    try:
+        generate_id(pel_ob)
+    except:
+        traceback.print_exc()
+        raise
+
+
 def register():
     pelican.plugins.signals.initialized.connect(init_default_config)
 
 
-pelican.plugins.signals.content_object_init.connect(generate_id)
+pelican.plugins.signals.content_object_init.connect(tb_connect)
