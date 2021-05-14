@@ -7,12 +7,12 @@ site for your download:
 
 [**[preferred][path_info]**]([preferred][path_info]) 
 
-Other mirror sites are suggested below.
+Other mirror sites are below.
 
 It is essential that you [verify the integrity](#verify) of the downloaded file using
 the PGP signature (`.asc` file) or a hash (`.md5` or `.sha*` file).
 
-Please only use the backup mirrors to download KEYS, PGP signatures and hashes (SHA* etc)
+Only use the backup mirrors to download KEYS, PGP signatures and hashes (SHA* etc)
 -- or if no other mirrors are working.
 
 [if-any http]
@@ -33,27 +33,26 @@ Please only use the backup mirrors to download KEYS, PGP signatures and hashes (
 
 # Backup Sites  {#backup}
 
-Please only use the backup mirrors to download KEYS, PGP signatures and hashes (SHA* etc)
+Only use the backup mirrors to download KEYS, PGP signatures and hashes (SHA* etc)
 -- or if no other mirrors are working.
 
 [if-any backup] [for backup] [**[backup][path_info]**]([backup][path_info]) <br></br>[end] [end]
 
-The [full listing of mirror sites](/mirrors/) is also
-available.
+See the [full listing of mirror sites](/mirrors/).
 
 # Becoming a mirror  {#become}
 
-The procedure for setting up new mirrors is described in [How to become a
+The procedure for setting up new mirrors is in [How to become a
 mirror](/info/how-to-mirror.html).
 
 # Verify the integrity of the files  {#verify}
 
 It is essential that you verify the integrity of the downloaded file using
-the PGP signature (`.asc` file) or a hash (`.md5` or `.sha*` file). Please read [Verifying Apache Software
+the PGP signature (`.asc` file) or a hash (`.md5` or `.sha*` file). Read [Verifying Apache Software
 Foundation Releases](/info/verification.html) for more information on why
 you should verify our releases.
 
-The PGP signature can be verified using PGP or GPG. First download the
+You can verify the PGP signature using PGP or GPG. First download the
 `KEYS` as well as the `asc` signature file for the relevant distribution.
 Make sure you get these files from the main distribution site, rather than
 from a mirror. Then verify the signatures using
@@ -73,12 +72,12 @@ from a mirror. Then verify the signatures using
 
 Alternatively, you can verify the hash on the file.
 
-Hashes can be calculated using GPG:
+You can calculate hashes using GPG:
 
     % gpg --print-md SHA256 downloaded_file
 
-The output should be compared with the contents of the SHA256 file.
-Similarly for other hashes (SHA512, SHA1, MD5 etc) which may be provided.
+Compare the output with the contents of the SHA256 file.
+Proceed similarly for other hashes (SHA512, SHA1, MD5 etc) which may be provided.
      
 Windows 7 and later systems should all now have certUtil:
 
