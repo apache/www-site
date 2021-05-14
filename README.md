@@ -5,7 +5,7 @@
 
 This repository provides the source for the main website of The Apache Software Foundation.
 
-- [Content](content) -- See [creator notes](markdown.md) and [process notes](PROCESS.md).
+- [Content](content) -- See [creator notes](MARKDOWN.md) and [process notes](PROCESS.md).
   - **.md** pages in GitHub Flavored Markdown which can include HTML.
   - **.ezmd** pages in a combination fo [ezt](https://github.com/gstein/ezt/blob/wiki/Syntax.md) and GitHub Flavored Markdown.
   - **.html** files are treated as static files.
@@ -26,3 +26,7 @@ CI/CD is via a [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFR
 - [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](theme/plugins/asfdata.py).
 - [ASF YAML Pelican Build](.asf.yaml) -- ASF infrastructure instructions
 
+The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
+
+Foundation Records including Board Minutes remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/)
+except for the [index page](https://github.com/apache/www-site/blob/main/content/foundation/records/index.md).
