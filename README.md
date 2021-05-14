@@ -29,4 +29,4 @@ CI/CD is via a [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFR
 The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
 
 Foundation Records including Board Minutes remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/)
-except for the [index page](https://github.com/apache/www-site/blob/main/content/foundation/records/index.md).
+except for the [index page](content/foundation/records/index.md).
