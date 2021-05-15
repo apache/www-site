@@ -45,35 +45,32 @@ the ASF).
 
 This is a four part question:
 
-Q1:
-     If I own a patent and contribute to a Work, and, at the time my
+<dl>
+  <dt>Q1:</dt>
+  <dd>If I own a patent and contribute to a Work, and, at the time my
      contribution is included in that Work, none of my patent's claims are
      subject to Apache's Grant of Patent License, is there a way any of
      those claims would later become subject to the Grant of Patent License
      solely due to subsequent contributions by other parties who are not
      licensees of that patent.
-
-A1
-:    No.
-
-
-Q2
-:    If at any time after my contribution, I am able to license other
+  </dd>
+  <dt>A1</dt>
+  <dd>No.</dd>
+  <dt>Q2</dt>
+  <dd>If at any time after my contribution, I am able to license other
      patent claims that would have been subject to Apache's Grant of Patent
      License if they were licenseable by me at the time of my contribution,
      do those other claims become subject to the Grant of Patent License?
-
-A2
-:    Yes.
-
-
-Q3
-:    If I own or control a licensable patent and contribute code to a
+  </dd>
+  <dt>A2</dt>
+  <dd>Yes.</dd>
+  <dt>Q3</dt>
+  <dd>If I own or control a licensable patent and contribute code to a
      specific Apache product, which of my patent claims are subject to
      Apache's Grant of Patent License?
-
-A3
-:    The only patent claims that are licensed to the ASF are those you own
+  </dd>
+  <dt>A3</dt>
+  <dd>The only patent claims that are licensed to the ASF are those you own
      or have the right to license that read on your contribution or on the
      combination of your contribution with the specific Apache product to
      which you contributed as it existed at the time of your contribution.
@@ -85,16 +82,15 @@ A3
      Grant of Patent License, it is licensed under the terms of that Grant
      to the ASF and to recipients of any software distributed by the ASF
      for any Apache software product whatsoever.
-
-
-Q4
-:    What is an Apache product?
-
-A4
-:    An Apache product is a body of software being developed by the ASF
+  </dd>
+  <dt>Q4</dt>
+  <dd>What is an Apache product?</dt>
+  <dt>A4</dt>
+  <dd>An Apache product is a body of software being developed by the ASF
      that the ASF intends to both alter and to publish as a separate line
      of releases.
-
+  </dd>
+</dl>
 
 ## Are contributors' employers required to sign a CCLA?  {#cclas-not-required}
 
