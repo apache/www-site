@@ -297,7 +297,7 @@ The latest version of the Foundation Logo, including the Feather and "Establishe
 
 The Apache Feather and Apache Software Foundation logo have both undergone changes over time. Older versions are available below, but shouldn't normally be used.
 
-### Left-to-Right Feather (Original, horizontal orientation)  {#left-to-right-feather-original}
+### Left-to-Right Feather (Original, horizontal orientation)  {#right-to-left-feather-original}
 
 *   [feather.svg](feather_logo_RGB.svg) Bare feather -  SVG format
 
