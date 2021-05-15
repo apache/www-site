@@ -6,7 +6,7 @@ This page answers most of the common queries that we receive about our contribut
 * For other licensing questions, please see our [Licensing FAQ](../foundation/licensing.html).
 * For non-licensing questions, please see our [General FAQ](/foundation/preFAQ.html).
 
-# Frequent Questions about ASF Contribution Agreements #
+<h1 id="frequent-questions-about-asf-contribution-agreements">Frequent questions about ASF contribution agreements<a class="headerlink" href="#frequent-questions-about-asf-contribution-agreements" title="Permanent link">&para;</a></h1>
 
 1.  [May I re-use (and modify) the ASF Contributor License Agreements
 (CLAs) for my own purposes?](#CLA-Usage) 
@@ -20,9 +20,7 @@ This page answers most of the common queries that we receive about our contribut
 If none of the above addresses your query, please check the [resources at
 the bottom of this page](#resources) for general information.
 
-# Answers #
-
-Here are the detailed answers for each of the questions above.
+# Answers {#answers}
 
 ## May I re-use (and modify) the ASF Contributor License Agreements (CLAs) for my own purposes?  {#CLA-Usage}
 
@@ -48,33 +46,33 @@ the ASF).
 This is a four part question:
 
 Q1:
-:    If I own a patent and contribute to a Work, and, at the time my
+     If I own a patent and contribute to a Work, and, at the time my
      contribution is included in that Work, none of my patent's claims are
      subject to Apache's Grant of Patent License, is there a way any of
      those claims would later become subject to the Grant of Patent License
      solely due to subsequent contributions by other parties who are not
      licensees of that patent.
 
-A1:
+A1
 :    No.
 
 
-Q2:
+Q2
 :    If at any time after my contribution, I am able to license other
      patent claims that would have been subject to Apache's Grant of Patent
      License if they were licenseable by me at the time of my contribution,
      do those other claims become subject to the Grant of Patent License?
 
-A2:
+A2
 :    Yes.
 
 
-Q3:
+Q3
 :    If I own or control a licensable patent and contribute code to a
      specific Apache product, which of my patent claims are subject to
      Apache's Grant of Patent License?
 
-A3:
+A3
 :    The only patent claims that are licensed to the ASF are those you own
      or have the right to license that read on your contribution or on the
      combination of your contribution with the specific Apache product to
@@ -89,16 +87,16 @@ A3:
      for any Apache software product whatsoever.
 
 
-Q4:
+Q4
 :    What is an Apache product?
 
-A4:
+A4
 :    An Apache product is a body of software being developed by the ASF
      that the ASF intends to both alter and to publish as a separate line
      of releases.
 
 
-##Are contributor's employers required to sign a CCLA?  {#cclas-not-required}
+## Are contributors' employers required to sign a CCLA?  {#cclas-not-required}
 
 Only if their employment situation necessitates that a CCLA be signed.
 See section 4 of the ICLA for details.
@@ -124,7 +122,7 @@ Finally, see section 8 of the ICLA, which requires signers to notify the
 Foundation when their status changes in ways that may require this to
 be reassessed.
 
-# I don't have a printer. How do I "print, sign, scan, and email" the license document?  {#printer}
+## I don't have a printer. How do I "print, sign, scan, and email" the license document?  {#printer}
 
 ICLA, CCLA, SGA, and Member license documents are PDF forms with entry form fields.
 There is also space for a signature which cannot be typed.
