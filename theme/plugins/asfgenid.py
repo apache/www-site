@@ -7,8 +7,9 @@ Next find all headings missing IDs. Assure unique ID and permalink
 Generates a Table of Content
 '''
 
-from __future__ import unicode_literals
+# from __future__ import unicode_literals
 
+import sys
 import traceback
 import re
 import unicodedata
@@ -56,6 +57,15 @@ PARA_MAP = {
     ord('¶'): None
 }
 
+# Fixup tuples
+FIXUP_UNSAFE = [
+    (re.compile(r'&lt;script'),'<script'),
+    (re.compile(r'&lt;/script'),'</script'),
+    (re.compile(r'&lt;style'),'<style'),
+    (re.compile(r'&lt;/style'),'</style'),
+    (re.compile(r'&lt;iframe'),'<iframe'),
+    (re.compile(r'&lt;/iframe'),'</iframe')
+]
 
 # An item in a Table of Contents
 class HtmlTreeNode(object):
@@ -152,39 +162,11 @@ def fixup_content(content):
     text = content._content
     modified = False
     # Find messed up html
-    # fix scripts
-    SCRIPTS_RE = re.compile(r'&lt;script')
-    m = SCRIPTS_RE.search(text)
-    if m:
-        modified = True
-        text = re.sub(SCRIPTS_RE, '<script', text)
-    SCRIPTS_RE = re.compile(r'&lt;/script')
-    m = SCRIPTS_RE.search(text)
-    if m:
-        modified = True
-        text = re.sub(SCRIPTS_RE, '</script', text)
-    # fix styles
-    STYLE_RE = re.compile(r'&lt;style')
-    m = STYLE_RE.search(text)
-    if m:
-        modified = True
-        text = re.sub(STYLE_RE, '<style', text)
-    STYLE_RE = re.compile(r'&lt;/style')
-    m = STYLE_RE.search(text)
-    if m:
-        modified = True
-        text = re.sub(STYLE_RE, '</style', text)
-    # fix iframes
-    IFRAME_RE = re.compile(r'&lt;iframe')
-    m = IFRAME_RE.search(text)
-    if m:
-        modified = True
-        text = re.sub(IFRAME_RE, '<iframe', text)
-    IFRAME_RE = re.compile(r'&lt;/iframe')
-    m = IFRAME_RE.search(text)
-    if m:
-        modified = True
-        text = re.sub(IFRAME_RE, '</iframe', text)
+    for regex, replace in FIXUP_UNSAFE:
+        m = regex.search(text)
+        if m:
+            modified = True
+            text = re.sub(regex, replace, text)
     if modified:
         content._content = text
 
@@ -386,7 +368,8 @@ def tb_connect(pel_ob):
         generate_id(pel_ob)
     except:
         traceback.print_exc()
-        raise
+        "if we have errors in this module then we want to quit to avoid erasing the site"
+        sys.exit(4)
 
 
 def register():
