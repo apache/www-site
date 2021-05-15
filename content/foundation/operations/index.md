@@ -45,30 +45,9 @@ Have a question?  This page will help you find the person who can help you.
 
 No public web site at this time.  
 
-Tom Pappas is Responsible for financial matters, including but not limited to
-financial planning and management of financial risks.
-
 ## Diversity and Inclusion
 
-No public web site at this time.  
-
-Gris Cuevas has autonomy to express her opinion, and make recommendations.  She
-also has the authority to spend on the two budget items that were approved -
-Survey Design and Contributor Experience Research.  She has the opportunity to
-help shape the Outreachy experiment currently being sponsored by IBM. She has
-the opportunity to publish her findings on a diversity.apache.org web site.
-And she has a lot of volunteers to help her.  She is free to organize those
-volunteers as she sees fit.
-
-In short, she has the power and opportunity to educate and persuade others, but
-as of yet, no power to enforce anything.  And to date, she hasn't ever asked
-for anything more.  If/when she feels the need for anything more - and to be
-honest, from what I see that won't be any time soon - she (and/or others) will
-need to make that case.
-
-Beyond that, nothing is either ruled in or out at this point.  Perhaps the
-outcome of this effort will be to have the ASF face some uncomfortable
-questions.  We will deal with them when they come up.
+- [General Website](http://diversity.apache.org/)
 
 ## Privacy
 
