@@ -69,3 +69,7 @@ need to make that case.
 Beyond that, nothing is either ruled in or out at this point.  Perhaps the
 outcome of this effort will be to have the ASF face some uncomfortable
 questions.  We will deal with them when they come up.
+
+## Privacy
+
+- [General Information](https://privacy.apache.org/)
