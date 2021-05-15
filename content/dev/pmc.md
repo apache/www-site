@@ -281,7 +281,7 @@ See also [why would a project move to the Attic](#move-to-attic), above.
 
 ### How to add a new PMC member  {#newpmc}
 
-##### Send the board a NOTICE of the vote to add someone #####
+#### Send the board a NOTICE of the vote to add someone
 
 Adding a new PMC member requires sending an email notification
 to the Board's mailing list and the PMC's private mailing list and waiting 72 hours.
@@ -321,7 +321,7 @@ This allows any member to review the mail vote easily.
 If the candidate does not (yet) have an Apache account, note
 that fact in the notification email. 
 
-##### Check the board archive for mail delivery  {#board_archive}
+#### Check the board archive for mail delivery  {#board_archive}
 
 **Note**: e-mail delivery can fail silently. It is **vital** that the PMC Chair checks the board archives to ensure that the NOTICE has
 actually been delivered to the board mailing list.
@@ -332,7 +332,7 @@ ASF Members can also access the <a href="https://mail-search.apache.org/members/
 
 It is not sufficient to check that you have seen the email; the email must appear in the archives.
 
-##### After NOTICE period (72 hours), invite the person  {#notice_period}
+#### After NOTICE period (72 hours), invite the person  {#notice_period}
 
 After 72 hours have elapsed without objection, you may formally add the 
 candidate to your PMC -  the PMC Chair needs to:
@@ -362,7 +362,7 @@ New PMC members are required to read the [PMC Branding Responsibilities](/founda
 
 ### When members leave the PMC  {#membersleave}
 
-##### How to resign from a PMC  {#resign}
+#### How to resign from a PMC  {#resign}
 
 "Resignation of a member of a PMC shall take effect
 immediately upon receipt of their resignation, as recorded on any of
@@ -373,7 +373,7 @@ The detailed process can be found
 in the [June 2013 board minutes](/foundation/records/minutes/2013/board_minutes_2013_06_19.txt)
 under section [7 G. Amend the Procedure for PMC Membership Changes](https://whimsy.apache.org/board/minutes/PMC_Membership_Change_Process.html).
 
-##### How to mark a PMC member as resigned or emeritus  {#emeritus}
+#### How to mark a PMC member as resigned or emeritus  {#emeritus}
 
 The ASF does not have any formal concept for an "emeritus PMC member" - an individual is either a member
 of the PMC or not. Projects are free to establish their own policies for designating members of the PMC 
@@ -396,7 +396,7 @@ to remove the former member's entry.
 
 You can do these updates using the [Whimsy roster](https://whimsy.apache.org/roster/committee/).
 
-##### Should a PMC remove inactive members?  {#pmc-removal}
+#### Should a PMC remove inactive members?  {#pmc-removal}
 
 Projects can establish their own policy on handling inactive members,
 as long as they apply it consistently. It is not a problem to retain members of the PMC who have become inactive,
@@ -410,7 +410,7 @@ next meeting). The PMC chair should send an email to the board@ mailing list
 detailing the request for removal and the justification the PMC has for that removal, and
 copy the project's private@ list.
 
-##### What to do if a committer or PMC member has died  {#deceased}
+#### What to do if a committer or PMC member has died  {#deceased}
 
 This is a tragic occurrence, but with so many communities here at
 the Foundation, it is bound to happen occasionally. Each community can
@@ -430,7 +430,7 @@ and any necessary Foundation records to be updated.
 
 ## Project committer management  {#committer-management}
 
-#### How to invite new project committers  {#newcommitter}
+### How to invite new project committers  {#newcommitter}
 
 It is the responsibility of each project PMC to review productive contributors 
 to their project and consider nominating those contributors as committers, and then 
@@ -441,7 +441,7 @@ FAQ](committers.html) ). If a productive individual is
 *already* an Apache committer on another project, you can just 
 [grant them karma to your project](#karma) instead.
 
-#### How to submit new committer account requests  {#noncommitter}
+### How to submit new committer account requests  {#noncommitter}
 
 Most PMCs hold formal votes on committer nominees to decide to invite them,
 although PMCs are free to follow their own documented process for finding 
@@ -593,7 +593,7 @@ The administrator of the machine will then reply accordingly.
 
 ## PMC FAQs and How-Tos  {#faq}
 
-##### How to import code from an external source  {#import}
+#### How to import code from an external source  {#import}
 
 If the code to be imported is licensed under a Category A license and the intent is to
 distribute the code under its original license, copy the code into
@@ -650,7 +650,9 @@ Please allow time for any changes to LDAP and committee-info.txt to propagate to
 
 **Note:** The official record for PMC membership is the committee-info.txt file, and not the LDAP committee group.
 
-#### How to request a wiki, a blog, or a new mailing list  {#new-wiki} {#new-blog} {#new-mail-list}
+#### How to request a wiki, a blog, or a new mailing list  {#new-wiki}
+
+<!--{#new-blog} {#new-mail-list}-->
 
 See [the Contact Infra roadmap](infra-contact#requesting-action) to request these and other resources for your project.
 
