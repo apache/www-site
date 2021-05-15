@@ -86,7 +86,7 @@ evaluation and action from brand to the PMC is also valuable.
   - Only brand committee and relevant PMC (plus possibly committers on that PMC) should be able to see those issues
   - Option to echo changes to relevant private@ and/or trademarks@ lists for awareness 
 
-##Trademark Issue Tracking Tool Data Fields##
+## Trademark Issue Tracking Tool Data Fields
 
 **Newly Reported Issue **
 
