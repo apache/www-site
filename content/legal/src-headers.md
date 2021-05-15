@@ -127,7 +127,7 @@ Other files may make sense to have no license header. Three examples are:
 
 PMCs should use their judgement, err on having a source header and contact legal-discuss@ if unsure. 
 
-###Is a short form of the source header available?
+### Is a short form of the source header available?
 
 Sometimes the situation of a file is such that the recommended Apache source header is not appropriate. 
 Examples would be within images, minified JavaScript or PDFs. In those cases, the following shorter 
