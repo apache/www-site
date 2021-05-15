@@ -58,7 +58,7 @@ trademark, that PMC needs to take action.
      - Forward the issue to trademarks@ for an answer if we should address it.
      - If this is a problem, then the PMC should follow the [contact procedure templates][templates].
 
- ##Trademark Issue Tracking Tool Ideas##
+## Trademark Issue Tracking Tool Ideas
 
 Inputs will come from a variety of sources; we will always get some reports from non-committers 
 who are sending emails, possibly to the wrong places.  So ensuring PMCs know where to bubble up
