@@ -1,3 +1,3 @@
 title: [title]
 
-[include "<ezt-template>"]
+[include "{{ ezt-template }}"]
