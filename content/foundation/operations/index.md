@@ -1,4 +1,7 @@
-Title: Foundation Operations
+Title: Operations Directory
+License: https://www.apache.org/licenses/LICENSE-2.0
+
+# Operations Directory
 
 Operations consists of a number of teams that keep the foundation running.
 Have a question?  This page will help you find the person who can help you.
