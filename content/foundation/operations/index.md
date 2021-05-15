@@ -1,7 +1,7 @@
-title: Foundation Operations
+Title: Foundation Operations
 
 Operations consists of a number of teams that keep the foundation running.
-Have a question?  This page will help you find the right person to help.
+Have a question?  This page will help you find the person who can help you.
 
 ## Brand Management
 
