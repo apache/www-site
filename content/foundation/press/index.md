@@ -43,7 +43,7 @@ For questions pertaining to specific [Apache projects and their communities](htt
 ASF Marketing & Publicity are receiving an increasing number of queries pertaining to issues with mobile devices. Please note that the vast majority of Apache projects/software function as "ingredient brands", and are not the final end-user product --as a cook would use eggs in a cake or an omelette, for example. Even if only the Apache License is used, the ASF is not responsible for that product. If you are experiencing difficulty with an app or have a specific performance issue or a security concern with your mobile device or other hardware (desktop, laptop, etc.), you will need to contact the creator of that app/program, your mobile service provider, or the hardware manufacturer’s tech support for assistance.
 
 
-## Resources for ASF activities supported by Marketing & Publicity  {#supported }
+## Resources for ASF activities supported by Marketing & Publicity  {# supported }
 
 - [ASF Overview](/foundation/) 
 - [List of all Apache projects](https://projects.apache.org/) 
