@@ -26,6 +26,7 @@ if test "$#" != 1; then
   exit 1
 fi
 
+# convert .mdtext to .md by unconditionally dropping last 4 chars
 MDPATH=${1:0:${#1}-4}
 echo "Convert "${1}" to "${MDPATH}
 awk -f tools/convert2md.awk ${1} > ${MDPATH}
