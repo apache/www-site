@@ -75,8 +75,8 @@ READERS = {'html': None}
 # that content/ contains articles.
 ARTICLE_PATHS = ['articles']
 
-# ignore README.md files in the content tree
-IGNORE_FILES = ['README.md']
+# ignore README.md files in the content tree and the interviews folder.
+IGNORE_FILES = ['README.md','interviews']
 
 # No translations
 PAGE_TRANSLATION_ID = None
