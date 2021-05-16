@@ -74,13 +74,13 @@ monthly basis.  This separates the strategic oversight the board provides at
 a high level from the day-to-day operations that the President and other
 officers handle for the ASF and on behalf of various Apache projects.
 
-** Board Committees **
+**Board Committees**
 
 The board has two Board or Executive Committees, which operate with 
 the authority of the board within their scope: the Legal Affairs committee and the Security Team.  Board committees 
 report monthly to the board.
 
-** Officers or President's Committees **
+**Officers or President's Committees**
 
 The President and some officers have created President's committees to 
 assist with the policy or operations work of individual officers.  Officers 

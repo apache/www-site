@@ -21,7 +21,7 @@ one and a half hours.  Meetings follow the posted agenda, with the chair or
 relevant officers leading discussion.  Apache Members and PMC Chairs are 
 always welcome to [attend monthly board meetings](#attend).
 
-** Contents **
+**Contents**
 
 [TOC]
 

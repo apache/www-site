@@ -9,7 +9,7 @@ healthy, community- and consensus-driven projects that support our mission.
 See also the [PMC duties FAQ](../../dev/pmc).  PMC Chairs and Apache Members 
 are always welcome to [attend monthly board meetings][9].
 
-** Contents **
+**Contents**
 
 [TOC]
 

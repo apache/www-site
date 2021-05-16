@@ -88,7 +88,7 @@ evaluation and action from brand to the PMC is also valuable.
 
 ## Trademark Issue Tracking Tool Data Fields
 
-**Newly Reported Issue **
+**Newly Reported Issue**
 
 Field Name | Description (bold = required)
 ----------|-----------
