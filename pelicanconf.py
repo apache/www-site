@@ -96,9 +96,11 @@ THEME = './theme/apache'
 # DEFAULT_DATE = 'fs'
 
 # Pelican Plugins
-# The provided location. If the buildbot does not have a new plugin then look into requirements.txt
+# pelican-gfm is installed in the buildbot as part of build_pelican.py. It is an ASF Infra custom plugin.
+# other plugins are discoverable and can be installed via pip by mentioning them in requirements.txt
+# You can find plugins here: https://github.com/pelican-plugins
+# Plugins that are custom for this site are found in PLUGIN_PATHS.
 PLUGIN_PATHS = ['./theme/plugins']
-# sitemap was removed - temporarily
 PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader']
 
 # Lifecycle and plugins:

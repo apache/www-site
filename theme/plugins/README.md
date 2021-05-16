@@ -8,7 +8,7 @@ At a high level consider the following sequence of events:
 
 ```python
 PLUGIN_PATHS = ['./theme/plugins']
-PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader', 'sitemap']
+PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader']
 ```
 
 2. Init (initialized). At this point any ASF_DATA is read into a metadata dictionary made available in every page.
