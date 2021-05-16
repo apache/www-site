@@ -206,7 +206,7 @@ def expand_metadata(tag, metadata):
 
 
 # do elementid transformation for {#id} and {.class}
-def elementid_transform(ids, soup, tag, permalinks, debug):
+def elementid_transform(ids, soup, tag, permalinks, perma_set, debug):
     tagnav = tag.parent
     this_string = str(tag.string)
     if debug:
@@ -219,6 +219,7 @@ def elementid_transform(ids, soup, tag, permalinks, debug):
                 tagnav['id'] = unique(m.group('id'), ids)
                 if permalinks:
                     permalink(soup, tagnav)
+                    unique(tagnav['id'], perma_set)
                 if debug:
                     print(f"# insertion {tagnav}")
             else:
@@ -228,7 +229,7 @@ def elementid_transform(ids, soup, tag, permalinks, debug):
 
 
 # generate id for a heading
-def headingid_transform(ids, soup, tag, permalinks):
+def headingid_transform(ids, soup, tag, permalinks, perma_set):
     new_string = tag.string
     if not new_string:
         # roll up strings if no immediate string
@@ -242,6 +243,7 @@ def headingid_transform(ids, soup, tag, permalinks):
     tag['id'] = unique(new_id, ids)
     if permalinks:
         permalink(soup, tag)
+        unique(tag['id'], perma_set)
 
 
 # generate table of contents from headings after [TOC] content
@@ -288,28 +290,34 @@ def generate_id(content):
 
     # track the id tags
     ids = set()
-    # fix cmark mistakes
+    # track permalinks
+    permalinks = set()
+    
+    # step 1 - fixup html that cmark marks unsafe
     fixup_content(content)
+
+    # step 2 - prepare for genid processes
     # parse html content into BeautifulSoup4
     soup = BeautifulSoup(content._content, 'html.parser')
     # page title
     title = content.metadata.get('title', 'Title')
     # assure relative source path is in the metadata
     content.metadata['relative_source_path'] = content.relative_source_path
+    # display output path and title
+    print(f"{content.relative_source_path} - {title}")
     # enhance metadata if done by asfreader
     add_data(content)
     # get plugin settings
     asf_genid = content.settings['ASF_GENID']
-
-    # step 1 - display output path and title
-    print(f"{content.path_no_ext}.html - {title}")
-
+    # asf_headings setting may be overridden
+    asf_headings = content.metadata.get('asf_headings', str(asf_genid['headings']))
+    # show active plugins
     if asf_genid['debug']:
         print("asfgenid:\nshow plugins in case one is processing before this one")
         for name in content.settings['PLUGINS']:
             print(f"plugin: {name}")
 
-    # step 2 - metadata expansion
+    # step 3 - metadata expansion
     if asf_genid['metadata']:
         if asf_genid['debug']:
             print(f"metadata expansion: {content.relative_source_path}")
@@ -317,30 +325,30 @@ def generate_id(content):
         for tag in soup.findAll(string=METADATA_RE):
             expand_metadata(tag, content.metadata)
 
-    # step 3 - find all id attributes already present
+    # step 4 - find all id attributes already present
     for tag in soup.findAll(id=True):
         unique(tag["id"], ids)
         # don't change existing ids
 
-    # step 4 - find all {#id} and {.class} text and assign attributes
+    # step 5 - find all {#id} and {.class} text and assign attributes
     if asf_genid['elements']:
         if asf_genid['debug']:
             print(f"elementid: {content.relative_source_path}")
 
         for tag in soup.findAll(string=ELEMENTID_RE):
-            elementid_transform(ids, soup, tag, asf_genid['permalinks'], asf_genid['debug'])
+            elementid_transform(ids, soup, tag, asf_genid['permalinks'], permalinks, asf_genid['debug'])
 
-    # step 5 - find all headings w/o ids already present or assigned with {#id} text
-    if asf_genid['headings']:
+    # step 6 - find all headings w/o ids already present or assigned with {#id} text
+    if asf_headings == 'True':
         if asf_genid['debug']:
             print(f"headings: {content.relative_source_path}")
 
         # Find heading tags
         HEADING_RE = re.compile(asf_genid['headings_re'])
         for tag in soup.findAll(HEADING_RE, id=False):
-            headingid_transform(ids, soup, tag, asf_genid['permalinks'])
+            headingid_transform(ids, soup, tag, asf_genid['permalinks'], permalinks)
 
-    # step 6 - find all tables without class
+    # step 7 - find all tables without class
     if asf_genid['tables']:
         if asf_genid['debug']:
             print(f"tables: {content.relative_source_path}")
@@ -348,18 +356,18 @@ def generate_id(content):
         for tag in soup.findAll(TABLE_RE, _class=False):
             tag['class'] = 'table'
 
-    # step 7 - find TOC tag and generate Table of Contents
+    # step 8 - find TOC tag and generate Table of Contents
     if asf_genid['toc']:
         tags = soup('p', text='[TOC]')
         if tags:
             generate_toc(content, tags, title, asf_genid['toc_headers'])
 
-    # step 8 - reset the html content
+    # step 9 - reset the html content
     content._content = soup.decode(formatter='html')
 
-    # step 9 - output all of the ids now in the soup.
-    for tag in soup.findAll(id=True):
-        print(f"    #{tag['id']}")
+    # step 10 - output all of the permalinks created
+    for tag in permalinks:
+        print(f"    #{tag}")
 
 
 def tb_connect(pel_ob):

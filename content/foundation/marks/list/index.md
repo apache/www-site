@@ -1,5 +1,6 @@
 Title: Apache Trademark Listing
 license: https://www.apache.org/licenses/LICENSE-2.0
+asf_headings: False
 
 This document provides a listing of trademarks of The Apache
 Software Foundation (ASF). You can also read our [formal trademark
