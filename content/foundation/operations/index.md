@@ -43,7 +43,7 @@ Have a question?  This page will help you find the person who can help you.
 
 ## Finance
 
-- [Treasurer] (https://treasurer.apache.org)
+- [Treasurer](https://treasurer.apache.org)
 
 ## Diversity and Inclusion
 
