@@ -145,7 +145,7 @@ def sequence_list(seq, reference):
             sequence.append(type(f"{seq}", (), refs))
     print(f"{seq} {sequence}")
     for item in sequence:
-        print(vars(item));
+        print(vars(item))
     return sequence
 
 
@@ -322,7 +322,7 @@ def process_blog(feed, count):
     entries = entries[:count]
     v = [ ]
     for entry in entries:
-        print(entry.tagName);
+        print(entry.tagName)
         v.append(
             {
                 'id': get_element_text(entry, 'id'),
