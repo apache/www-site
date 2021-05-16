@@ -9,7 +9,9 @@ VP, Security at security@apache.org
 - [Security](security/)
 
 VP, Marketing and Publicity at press@apache.org
-- [Press](foundation/press/) and [also](press/)
+- [Home Page](index.ezmd)
+- [Foundation Press](foundation/press/)
+- [Press](press/)
 - [Contributing](foundation/contributing.md)
 - [Thanks](foundation/thanks.md)
 - [Sponsorship](foundation/sponsorship.md)
@@ -27,11 +29,17 @@ VP, Legal Affairs at legal-discuss@apache.org
 - [Marks](foundation/marks/)
 
 VP, Conferences at events-cvs@apache.org
+- [Event Planning](foundation/conferences.md)
 - [Event Branding](foundation/content/marks/events.md)
 - [Anti-Harassment](foundation/policies/anti-harassment.md)
 
+VP, Travel Assistance at travel-assistance@apache.org
+- [Travel](travel/)
+
 Infrastructure Team at users@infra.apache.org
 - [Dev](dev/)
+
+See also [Operations Directory](foundation/operations/)
 
 For discussion about other pages contact centralservices@apache.org
 
