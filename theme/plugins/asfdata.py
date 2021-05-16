@@ -109,6 +109,18 @@ def asfid_part(reference, part):
         reference[refs]['availid'] = availid
 
 
+def add_logo(reference, part):
+    parts = part.split(',')
+    for item in reference:
+        logo = (parts[0].format(item.key_id))
+        response = requests.head("https://www.apache.org/" + logo)
+        if response.status_code != 200:
+            logo = parts[1]
+        setattr(item, 'logo', logo)
+        print(logo, item.logo)
+    return reference
+
+
 def sequence_dict(seq, reference):
     sequence = [ ]
     for refs in reference:
@@ -242,6 +254,19 @@ def process_sequence(metadata, seq, sequence, load, debug):
         else:
             print(f"{seq} - random requires an existing sequence to sample")
 
+    # for a project or podling see if the logo exists w/HEAD and set the relative path.
+    if 'logo' in sequence:
+        if debug:
+            print(f"logo: {sequence['logo']}")
+        if is_sequence:
+            reference = add_logo(reference, sequence['logo'])
+            if seq == 'featured_pods':
+                # for podlings strip "Apache" from the beginning and "(incubating)" from the end.
+                for item in reference:
+                    setattr(item, 'name', " ".join(item.name.split(' ')[1:-1]))
+        else:
+            print(f"{seq} - logo requires an existing sequence")
+
     # this sequence is a sorted list divided into multiple columns
     if 'split' in sequence:
         if debug:
@@ -325,7 +350,7 @@ def connect_to_endpoint(url, headers):
 
 def process_twitter(handle, count):
     bearer_token = twitter_auth()
-    query = "from:TheASF"
+    query = f"from:{handle}"
     tweet_fields = "tweet.fields=author_id"
     url = "https://api.twitter.com/2/tweets/search/recent?query={}&{}".format(
         query, tweet_fields
@@ -387,7 +412,6 @@ class Blog(wrapper): pass
 
 
 def config_read_data(pel_ob):
-    #print('PEL_OB:', pel_ob)
     print("-----\nasfdata")
 
     asf_data = pel_ob.settings.get('ASF_DATA')
