@@ -23,6 +23,8 @@
 import sys
 import io
 import os
+import traceback
+
 import ezt
 
 import pelican.plugins.signals
@@ -62,25 +64,28 @@ class ASFReader(GFMReader):
 
     def read(self, source_path):
         "Read metadata and content, process content as ezt template, then render into HTML."
-
-        # read content with embedded ezt - use GFMReader
-        text, metadata = super().read_source(source_path)
-        assert text
-        assert metadata
-        # supplement metadata with ASFData if available
-        self.add_data(metadata)
-        # prepare text as an ezt template
-        # compress_whitespace=0 is required as blank lines and indentation have meaning in markdown.
-        template = ezt.Template(compress_whitespace=0)
-        reader = ASFTemplateReader(source_path, text)
-        template.parse(reader, base_format=ezt.FORMAT_HTML)
-        assert template
-        # generate content from ezt template with metadata
-        fp = io.StringIO()
-        template.generate(fp, metadata)
-        # Render the markdown into HTML
-        content = super().render(fp.getvalue().encode('utf-8')).decode('utf-8')
-        assert content
+        try:
+          # read content with embedded ezt - use GFMReader
+          text, metadata = super().read_source(source_path)
+          assert text
+          assert metadata
+          # supplement metadata with ASFData if available
+          self.add_data(metadata)
+          # prepare text as an ezt template
+          # compress_whitespace=0 is required as blank lines and indentation have meaning in markdown.
+          template = ezt.Template(compress_whitespace=0)
+          reader = ASFTemplateReader(source_path, text)
+          template.parse(reader, base_format=ezt.FORMAT_HTML)
+          assert template
+          # generate content from ezt template with metadata
+          fp = io.StringIO()
+          template.generate(fp, metadata)
+          # Render the markdown into HTML
+          content = super().render(fp.getvalue().encode('utf-8')).decode('utf-8')
+          assert content
+        except:
+          traceback.print_exc()
+          raise
 
         return content, metadata
 
