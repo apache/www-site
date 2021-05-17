@@ -178,7 +178,7 @@ Badges containing pictorial marks of the Apache Feather with various taglines an
                 float: left;
                 max-width: 350px;
             }
-            input#btnLoad  {
+            input#btnLoad2  {
                 padding: 2px 5px;
                 background: white;
                 border: thin solid black;
@@ -198,7 +198,7 @@ Badges containing pictorial marks of the Apache Feather with various taglines an
                 <input id="imgfile" type="file" />
                 <br />
                 <input
-                id="btnLoad"
+                id="btnLoad2"
                 onclick="loadImage();"
                 type="button"
                 value="Generate"
