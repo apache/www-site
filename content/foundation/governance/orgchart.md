@@ -61,7 +61,9 @@ Click in the image map to learn more about a role.
      paid staff who maintain services all Apache projects use.
  
 <center>
+	
 ![Apache Corporate Governance - Elections and Appointments](ApacheOrgChart-p2.png)
+	
 </center>
    
   - The board creates and updates Project Management Committees (PMCs). 
@@ -72,7 +74,9 @@ Click in the image map to learn more about a role.
     board.
     
 <center>
+	
 ![Apache Project / PMC Governance](ApacheOrgChart-p3.png)
+	
 </center>
 
   - PMCs report directly to the board quarterly.  The board exercises
