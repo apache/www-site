@@ -5,7 +5,6 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 We have created the following FAQ to provide background information on the
 [open letter to Sun microsystems.](sunopenletter.html) 
 
-    :::text
     Q : What is the Apache Software Foundation?
     A : The Apache Software Foundation - or ASF - is a 501(c)3 public
         charity that, among other things, provides a foundation for
