@@ -32,13 +32,7 @@ TIMEZONE = 'UTC'
 DEFAULT_LANG = u'en'
 
 # Website specific settings
-AUTHOR = u'Apache Software Foundation'
-SITENAME = u'Apache Software Foundation'
-SITEDOMAIN = 'template.apache.org'
 SITEURL = 'https://www.apache.org'
-SITELOGO = 'https://www.apache.org/images/logo.png'
-SITEDESC = u''
-TRADEMARKS = u'Apache, the Apache feather logo, and Template are trademarks or registered trademarks'
 SITEREPOSITORY = 'https://github.com/apache/www-site/blob/main/content/'
 CURRENTYEAR = date.today().year
 
