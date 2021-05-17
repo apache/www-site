@@ -1,0 +1,67 @@
+<p>[if-any logo] <a href="[link]"><img alt="[logo]" src="[logo]" /></a> [end] We suggest the following mirror
+site for your download:</p>
+<p><a href="[preferred][path_info]"><strong>[preferred][path_info]</strong></a> </p>
+<p>Other mirror sites are suggested below.</p>
+<p>It is essential that you <a href="#verify">verify the integrity</a> of the downloaded file using
+the PGP signature (<code>.asc</code> file) or a hash (<code>.md5</code> or <code>.sha*</code> file).</p>
+<p>Please only use the backup mirrors to download KEYS, PGP signatures and hashes (SHA* etc)
+-- or if no other mirrors are working.</p>
+<p>[if-any http]</p>
+<h1 id="http">HTTP<a class="headerlink" href="#http" title="Permanent link">&para;</a></h1>
+<p>[for http] <a href="[http][path_info]"><strong>[http][path_info]</strong></a> <br></br>[end]</p>
+<p>[end]</p>
+<p>[if-any ftp]</p>
+<h1 id="ftp">FTP<a class="headerlink" href="#ftp" title="Permanent link">&para;</a></h1>
+<p>[for ftp] <a href="[ftp][path_info]"><strong>[ftp][path_info]</strong></a> <br></br>[end]</p>
+<p>[end]</p>
+<h1 id="backup">Backup Sites<a class="headerlink" href="#backup" title="Permanent link">&para;</a></h1>
+<p>Please only use the backup mirrors to download KEYS, PGP signatures and hashes (SHA* etc)
+-- or if no other mirrors are working.</p>
+<p>[if-any backup] [for backup] <a href="[backup][path_info]"><strong>[backup][path_info]</strong></a> <br></br>[end] [end]</p>
+<p>The <a href="http://www.apache.org/mirrors/">full listing of mirror sites</a> is also
+available.</p>
+<h1 id="become">Becoming a mirror<a class="headerlink" href="#become" title="Permanent link">&para;</a></h1>
+<p>The procedure for setting up new mirrors is described in <a href="http://www.apache.org/info/how-to-mirror.html">How to become a
+mirror</a>.</p>
+<h1 id="verify">Verify the integrity of the files<a class="headerlink" href="#verify" title="Permanent link">&para;</a></h1>
+<p>It is essential that you verify the integrity of the downloaded file using
+the PGP signature (<code>.asc</code> file) or a hash (<code>.md5</code> or <code>.sha*</code> file). Please read <a href="/info/verification.html">Verifying Apache Software
+Foundation Releases</a> for more information on why
+you should verify our releases.</p>
+<p>The PGP signature can be verified using PGP or GPG. First download the
+<code>KEYS</code> as well as the <code>asc</code> signature file for the relevant distribution.
+Make sure you get these files from the main distribution site, rather than
+from a mirror. Then verify the signatures using</p>
+<div class="codehilite"><pre><span class="c">% gpg --import KEYS</span>
+<span class="c">% gpg --verify downloaded_file.asc downloaded_file</span>
+</pre></div>
+
+
+<p><em>or</em></p>
+<div class="codehilite"><pre><span class="c">% pgpk -a KEYS</span>
+<span class="c">% pgpv downloaded_file.asc</span>
+</pre></div>
+
+
+<p><em>or</em></p>
+<div class="codehilite"><pre><span class="c">% pgp -ka KEYS</span>
+<span class="c">% pgp downloaded_file.asc</span>
+</pre></div>
+
+
+<p>Alternatively, you can verify the hash on the file.</p>
+<p>Hashes can be calculated using GPG:</p>
+<div class="codehilite"><pre><span class="c">% gpg --print-md SHA256 downloaded_file</span>
+</pre></div>
+
+
+<p>The output should be compared with the contents of the SHA256 file.
+Similarly for other hashes (SHA512, SHA1, MD5 etc) which may be provided.</p>
+<p>Windows 7 and later systems should all now have certUtil:</p>
+<div class="codehilite"><pre><span class="c">% certUtil -hashfile pathToFileToCheck [HashAlgorithm]</span>
+</pre></div>
+
+
+<p>HashAlgorithm choices: MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512</p>
+<p>Unix-like systems (and macOS) will have a utility called
+md5, md5sum or shasum</p>
