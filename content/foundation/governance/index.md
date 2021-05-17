@@ -22,10 +22,7 @@ may not be as familiar with how the ASF *as a corporation* works behind the scen
 
 # Corporate Governance  {#corporate}
 
-Behind the scenes of the many successful Apache projects, the ASF operates like any other corporation.  While the ethos of The Apache Way
- - merit, consensus, community, charity - is reflected within our corporate 
-governance activities, the details of how the corporation legally works are
-somewhat different than how our projects work.
+Behind the scenes of the many successful Apache projects, the ASF operates like any other corporation.  While the ethos of The Apache Way - merit, consensus, community, charity - is reflected within our corporate governance activities, the details of how the corporation legally works are somewhat different than how our projects work.
 
 **[Membership](members.html)**
 
