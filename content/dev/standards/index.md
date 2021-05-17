@@ -9,7 +9,7 @@ implementations is maintained at
 ## JCP NOTE ##
 
 Note that the ASF no longer participates directly in the <a href="https://www.jcp.org/en/home/index" target="_blank">Java Community Process (JCP)</a>.  
-Please see our <a href="https://www.apache.org/jcp/sunopenletterfaq.html" targe"_blank">open letter and FAQ.</a>.
+Please see our <a href="https://www.apache.org/jcp/sunopenletterfaq.html" target="_blank">open letter and FAQ.</a>.
 
 ---
 
