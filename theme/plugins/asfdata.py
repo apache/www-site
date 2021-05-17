@@ -367,7 +367,7 @@ def process_twitter(handle, count):
 
 def process_eccn(fname):
     print('ECCN:', fname)
-    j = json.load(open(fname))
+    j = yaml.safe_load(open(fname))
 
     def make_sources(sources):
         return [ Source(href=s['href'],
