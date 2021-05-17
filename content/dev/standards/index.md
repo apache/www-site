@@ -9,14 +9,14 @@ implementations is maintained at
 ## JCP NOTE ##
 
 Note that the ASF no longer participates directly in the <a href="https://www.jcp.org/en/home/index" target="_blank">Java Community Process (JCP)</a>.  
-Please see our <a href="https://www.apache.org/jcp/sunopenletterfaq.html" target="_blank">open letter and FAQ.</a>.
+Please see our <a href="/jcp/sunopenletterfaq.html" target="_blank">open letter and FAQ.</a>.
 
 ---
 
 Guides are available for projects that want to get involved with standards
 processes:
 
--  <a href="https://www.apache.org/jcp/" target="_blank">Java Specification Requests</a>
+-  <a href="/jcp/" target="_blank">Java Specification Requests</a>
 -  The ASF has an officer for [W3C Relations](https://whimsy.apache.org/board/minutes/W3C_Relations.html)
 
 

@@ -22,7 +22,7 @@ Preferred boilerplate follows:
 It is particularly important for officers and directors to remember that they are practically always on the record. Following the requirements in this document helps ensure consistent messaging and that you make any statements with the correct hat, but extra diligence is required for those bearing "official" titles. You may need to provide a more prominent disclaimer or even defer releasing a response until press@ can review the statement.
 
 ### Engage carefully and with the Code of Conduct in mind ### 
-Regardless of hat your are wearing and the channel for the message, you must adhere to the <a href="https://apache.org/foundation/policies/conduct" target="_blank">ASF Code of Conduct</a> at all times.
+Regardless of hat your are wearing and the channel for the message, you must adhere to the <a href="/foundation/policies/conduct" target="_blank">ASF Code of Conduct</a> at all times.
 
 ### RTC ### 
 Just as you cannot "un-release" a code release once you have publicly announced it, you cannot take back external communications and messages. Therefor, press@ **must** review any message that MAY be perceived as being an ASF-official statement before submission. This applies across all channels. External communications follow The ASF standard of _Review Then Commit_ (RTC) as opposed to _Commit Then Review_ (CTR).
