@@ -31,7 +31,7 @@ Click in the image map to learn more about a role.
 <area id="infra-admin" title="Infrastructure Administrator" href="https://whimsy.apache.org/foundation/orgchart/infra-admin" shape="rect" coords="345,641,537,687" style="outline:none;" target="_self" />
 <area id="infra-staff" title="Infrastructure Staff" href="https://whimsy.apache.org/foundation/orgchart/infra-staff" shape="rect" coords="597,650,791,687" style="outline:none;" target="_self" />
 <area id="vp-w3c" title="VP, W3C Relations" href="https://whimsy.apache.org/foundation/orgchart/vp-w3c" shape="rect" coords="266,78,460,115" style="outline:none;" target="_self" />
-<area id="members" title="Apache Membership" href="https://www.apache.org/foundation/members" shape="rect" coords="719,35,863,112" style="outline:none;" target="_self" />
+<area id="members" title="Apache Membership" href="/foundation/members" shape="rect" coords="719,35,863,112" style="outline:none;" target="_self" />
 </map>
 
 

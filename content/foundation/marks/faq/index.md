@@ -49,7 +49,7 @@ provide an attribution for Apache Hadoop and its yellow elephant logo
 
 >   Apache&reg;, <a href="http://hadoop.apache.org/">Apache Hadoop, Hadoop&reg;</a>, 
    and the yellow elephant logo are either registered trademarks or trademarks 
-   of the <a href="http://www.apache.org/">Apache Software Foundation</a>
+   of the <a href="/">Apache Software Foundation</a>
    in the United States and/or other countries.
 
 In text, use Apache Lucene&reg; in the first and most prominent uses because it is a registered trademark; 
@@ -79,7 +79,7 @@ preferred attribution would be:
 
 >   Apache&reg;, Apache Tomcat, Tomcat&reg;</a>, 
    and the cat logo are either registered trademarks or trademarks 
-   of the <a href="http://www.apache.org/">Apache Software Foundation</a>
+   of the <a href="/">Apache Software Foundation</a>
    in the United States and/or other countries. No endorsement by 
    The Apache Software Foundation is implied by the use of these marks.
 

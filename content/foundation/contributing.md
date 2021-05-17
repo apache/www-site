@@ -4,10 +4,10 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 <div class="container">
   <h1 class="text-center">Support Apache: Individual Giving and Sponsorship Programs</h1>
   <p class="lead">The Apache Software Foundation (ASF) is the world’s largest Open Source foundation that provides $20B+ worth of software for the public good at 100% no&nbsp;cost.</p>
-  <p>As a <a href="http://apache.org/foundation/records/ASF-501c3.pdf">US 501(c)(3) not-for-profit charitable organization</a>, the ASF depends on a variety of funding sources to sustain its day-to-day activities. Your support enables the all-volunteer ASF to ensure its 350+ <a href="https://projects.apache.org/projects.html?category">community-driven software projects</a> remain freely available to billions of users around the world, and to incubate the <a href="http://incubator.apache.org/">next generation of Open Source innovations</a>.</p>
+  <p>As a <a href="/foundation/records/ASF-501c3.pdf">US 501(c)(3) not-for-profit charitable organization</a>, the ASF depends on a variety of funding sources to sustain its day-to-day activities. Your support enables the all-volunteer ASF to ensure its 350+ <a href="https://projects.apache.org/projects.html?category">community-driven software projects</a> remain freely available to billions of users around the world, and to incubate the <a href="http://incubator.apache.org/">next generation of Open Source innovations</a>.</p>
   <p>Tax-deductible contributions from corporations, foundations, and private individuals helps offset day-to-day operating expenses that include Infrastructure services; Marketing and PR/AR; Legal, Accounting, and Operational support, and&nbsp;more.</p>
   <p>Less than 10% is spent on overhead. 75% of the ASF's US$1.5MM annual budget is dedicated to running critical Infrastructure support (mailing lists, code repositories, bug tracking systems, Web servers, continuous integration servers, bandwidth, electricity, cooling, administrative staff, and more) that keeps Apache services running 24x7x365 on an annual budget of less than US$5K per&nbsp;project.</p>
-  <p>We are proud to highlight the ASF's diverse accomplishments in our <a href="http://www.apache.org/foundation/reports.html">Annual Report</a>. Many of these successes were made possible by your&nbsp;support.</p>
+  <p>We are proud to highlight the ASF's diverse accomplishments in our <a href="/foundation/reports.html">Annual Report</a>. Many of these successes were made possible by your&nbsp;support.</p>
   <h2>Support the ASF Today!</h2>
   <p>There are many ways to support the ASF, with giving options for individuals and organizations alike. We thank all current ASF supporters and Sponsors for their loyalty and contributions, and look forward to welcoming new donors as we continue to expand our&nbsp;community.</p>
   <p>For those based in the US, donations are 100% tax deductible to the full extent of the law. As regulation varies, we encourage you to consult a qualified advisor experienced with your local tax law pertaining to donations. The ASF's tax identification number is 47-0825376. More information about non-profits and related issues can be found at the <a href="http://www.nonprofits.org/">Internet Nonprofit&nbsp;Center</a>.</p>
@@ -32,7 +32,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
       <div class="well">
         <h3>ASF Sponsorship</h3>
         <p>Sponsorship provides essential support to all aspects of the ASF in fulfilling its mission of providing software for the public&nbsp;good.</p>
-        <p>To make a lasting impact and be <a href="http://apache.org/foundation/thanks">formally recognized</a> as a sponsor of the Foundation, the <a href="http://apache.org/foundation/sponsorship.html">Sponsorship Program page</a> is the official path for substantial, non-directed monetary contributions to the&nbsp;ASF.</p>
+        <p>To make a lasting impact and be <a href="/foundation/thanks">formally recognized</a> as a sponsor of the Foundation, the <a href="/foundation/sponsorship.html">Sponsorship Program page</a> is the official path for substantial, non-directed monetary contributions to the&nbsp;ASF.</p>
         <p>Contact fundraising(at)apache(dot)org for more&nbsp;information.</p>
       </div>
     </div>
@@ -40,7 +40,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
       <div class="well">
         <h3>Targeted Sponsorship</h3>
         <p>Targeted Sponsorship provides the ASF with non-cash contributions aimed at specific activities, projects, or programs, such as donating cloud services, providing legal services, underwriting <a href="https://www.apachecon.com/">ApacheCon</a> attendees’ expenses, funding project hackathons, contributing documentation resources, and&nbsp;more.</p>
-        <p>Contributions in the form of Targeted sponsorships benefit the ASF in addition to funding our general operations. We invite you to <a href="http://apache.org/foundation/docs/Targeted-Sponsorship-Policy.pdf">view our guidelines</a> to see if Targeted Sponsorship is right for&nbsp;you.</p>
+        <p>Contributions in the form of Targeted sponsorships benefit the ASF in addition to funding our general operations. We invite you to <a href="/foundation/docs/Targeted-Sponsorship-Policy.pdf">view our guidelines</a> to see if Targeted Sponsorship is right for&nbsp;you.</p>
       </div>
     </div>
     <div role="tabpanel" class="tab-pane" id="corporateGivingPrograms">
@@ -111,7 +111,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
               <h3>Buy Apache-branded Swag</h3>
               <p>Support the ASF through a variety of branded merchandise <a href="https://www.redbubble.com/people/comdev">available from&nbsp;RedBubble</a>.</p>
               <p>To request Apache projects to be added to the shop, email dev(at)community(dot)apache(dot)org
-                  with the corresponding <a href="http://apache.org/logos">project&nbsp;logo</a>.</p>
+                  with the corresponding <a href="/logos">project&nbsp;logo</a>.</p>
             </div>
           </div>
           <div role="tabpanel" class="tab-pane" id="smileAmazon">
