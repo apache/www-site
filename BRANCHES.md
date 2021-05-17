@@ -4,7 +4,7 @@ For large changes it will often be necessary to make a feature branch, work on i
 
 Replace `feature` with a name of your choice. Several feature branches are possible.
 
-## Create Branches
+## [Create Branches][1]
 
 From `main` create `feature` branch
 
@@ -37,6 +37,10 @@ After you make a commit to your `feature` branch the pelican build should happen
 
 A successful build will be found at https://www-feature.staged.apache.org/
 
-## Complete
+## [Merging Feature back to Main][2]
 
-Once your feature is complete you submit a PR from `feature` to `main`. Make sure that you exclude `.asf.yaml`.
+Once your feature is complete you submit a PR from `feature` to `main`. Make sure that you exclude `.asf.yaml`. (What's the best way?)
+
+
+[1] https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch
+[2] https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request
