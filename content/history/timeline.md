@@ -9,7 +9,6 @@ on the Apache Server web site.
 
 The history of Apache starts with the NCSA HTTPd project. Quoth Rob McCool:
 
-    ::text
     > How did you first get involved in the NCSA HTTPd project, and who else
     > worked on that with you?
 
