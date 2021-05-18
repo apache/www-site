@@ -16,7 +16,7 @@ into the work that their loved ones have been doing here, and also a flavor
 of the relationships that they had developed with their colleagues at
 Apache.
 
-#  #
+_____
 
 |  **Date**  |  **Name**  |
 |------------|------------|
@@ -31,7 +31,7 @@ Apache.
 | 4 October 2005 |  [Nicolas Chalumeau](nicolas_chalumeau.html)  |
 | 29 January 2004 |  [Martin Pöschl](martin_poeschl.html)  |
 
-#  #
+____
 
 We have put together [some information](/dev/pmc.html#deceased)
 for your community, if such a tragedy occurs.
