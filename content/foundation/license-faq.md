@@ -118,7 +118,6 @@ You should include a copy of the Apache License, typically in a file called LICE
 
 It is also valuable to tag each of your source code files in case they become detached from the LICENSE file. To apply the Apache License to your source code files, one approach is to attach the following boilerplate notice to as a comment at the top of the files. You should replace the Copyright templates with your own identifying information:
 
-    :::text
     Copyright [yyyy] [name of copyright owner]
     
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -135,7 +134,6 @@ It is also valuable to tag each of your source code files in case they become de
 
 A shorter variant you may wish to use is:
 
-    :::text
     Copyright [yyyy] [name of copyright owner]
     SPDX-License-Identifier: Apache-2.0
 

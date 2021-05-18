@@ -45,7 +45,6 @@ Updates to this page are sent to the <a href="/foundation/mailinglists.html#foun
   </li>
  <li id="header-text">Each source file should include the following license header -- note that there should be no copyright notice in the header:
 
-    :::text
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information

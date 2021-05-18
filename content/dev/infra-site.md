@@ -48,7 +48,6 @@ This website uses Markdown files managed by the [Apache CMS tool](cmsref.html).
 This option is only available to ASF Members.
 
 ```
-    :::text
     $ cd infrastructure/content/dev/
     $ $EDITOR infra-site.mdtext
     $ svn commit

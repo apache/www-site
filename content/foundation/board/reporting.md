@@ -86,7 +86,6 @@ chair should consider each of these questions when writing a report.
 
     For example:
 
-        :::text
         The Apache Xerces XML parsing library is easily configurable 
         and compliant with current standards.
 

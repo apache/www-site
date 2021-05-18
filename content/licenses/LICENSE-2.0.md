@@ -211,7 +211,6 @@ identifying information. (Don't include the brackets!) Enclose the text in the a
 recommend that you include a file or class name and description of purpose on the same "printed page" as the copyright notice for easier
 identification within third-party archives.
 
-    :::text
     Copyright [yyyy] [name of copyright owner]
 
     Licensed under the Apache License, Version 2.0 (the "License");
