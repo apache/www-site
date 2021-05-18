@@ -1,42 +1,27 @@
-# Feature Branches
+# Preview Feature Branches
 
-For large changes it will often be necessary to make a feature branch, work on it with others, stage the results, and review separately. This document will present a step-by-step outline for creating `feature` branches.
+For large changes it will often be necessary to make a preview feature branch, work on it with others, stage the results, and review separately. This document will present a step-by-step outline for creating `preview/feature` branches.
 
 Replace `feature` with a name of your choice. Several feature branches are possible.
 
-## [Create Branches](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch)
+## [Create preview/feature branch](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch)
 
-From `main` create `feature` branch
-
-From `asf-site` create `asf-feature` branch 
-
-## Update each branches .asf.yaml files.
-
-In `feature` branch edit `.asf.yaml` to look like
-
-```yaml
-pelican:
-  notify: id@apache.org
-  autobuild: true
-  target: asf-feature
-  theme: theme/apache
-  whoami: feature
-```
-
-In `asf-feature` branch edit `.asf.yaml` to look like
-
-```yaml
-staging:
-  profile: feature
-  whoami: asf-feature
-```
+From `main` create `preview/feature` branch
 
 ## Building
 
-After you make a commit to your `feature` branch the pelican build should happen automatically. You will get an email sent to `id@apache.org`.
+After you make a commit to your `preview/feature` branch the pelican build should happen automatically. You will get an email sent to `id@apache.org`.
 
 A successful build will be found at https://www-feature.staged.apache.org/
 
-## [Merging Feature back to Main](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
+## [Merging preview/feature back to main](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
-Once your feature is complete you submit a PR from `feature` to `main`. Make sure that you exclude `.asf.yaml`. (What's the best way?)
+Once your feature is complete you submit a PR from `preview/feature` to `main`. Make sure that you exclude `.asf.yaml`. (What's the best way?)
+
+## Example
+
+1. Create `preview/bootstrap5`
+
+2. Work on `preview/bootstrap5` branch to update bootstrap to version 5 with preview builds staged at https://www-bootstrap5.staged.apache.org/
+
+3. Submit PR to merge `preview/bootstrap` back to `main`

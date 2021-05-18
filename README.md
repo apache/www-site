@@ -6,15 +6,19 @@
 This repository provides the source for the main website of The Apache Software Foundation.
 
 - [Content](content) -- See [creator notes](MARKDOWN.md) and [process notes](PROCESS.md).
-  - **.md** pages in GitHub Flavored Markdown which can include HTML.
-  - **.ezmd** pages in a combination fo [ezt](https://github.com/gstein/ezt/blob/wiki/Syntax.md) and GitHub Flavored Markdown.
-  - **.html** files are treated as static files.
+  - **md** pages in GitHub Flavored Markdown which can include HTML.
+  - **ezmd** pages in a combination fo [ezt](https://github.com/gstein/ezt/blob/wiki/Syntax.md) and GitHub Flavored Markdown.
+  - **html** files are treated as static files.
   - static assets of all types.
   - .htaccess files for redirection and rewrite rules.
 
 - [Issues](https://github.com/apache/www-site/issues)
+
 - [Branches](https://github.com/apache/www-site/branches)
+  - [Creating a preview/feature branch](BRANCHES.md)
+
 - [Pull Requests](https://github.com/apache/www-site/pulls)
+  - [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
 The website is built with [Pelican](https://blog.getpelican.com).
 CI/CD is via a [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features).
