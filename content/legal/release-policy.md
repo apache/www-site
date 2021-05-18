@@ -595,8 +595,9 @@ by [Vadim Gritsenko](http://home.apache.org/~vgritsenko/).
 
 There's also some logging done by closer.cgi which is stored in:
 
-https://www-eu.apache.org/dyn/stats/rocketmq.log
-https://www-us.apache.org/dyn/stats/rocketmq.log
+https://www-eu.apache.org/dyn/stats/
+and
+https://www-us.apache.org/dyn/stats/
 
 The columns show:
 - timestamp
