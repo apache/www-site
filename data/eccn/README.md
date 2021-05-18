@@ -4,14 +4,14 @@ In this directory there are both the legacy bisnotice and eccn files, and the ne
 
 ## New data file
 
-- [eccnmatrix.json](eccnmatrix.json)
+- [eccnmatrix.yaml](eccnmatrix.yaml)
 
 ## New process needed
 
-- python script to confirm integrity of edited eccnmatrix.json.
+- python script to confirm integrity of edited eccnmatrix.yaml.
   - [update these instructions](https://infra.apache.org/crypto.html#sources).
 - bisnotice.py to create notification email.
-  - [follow and update these instructions](https://infra.apache.org/crypto.html#notify) using the new json file.
+  - [follow and update these instructions](https://infra.apache.org/crypto.html#notify) using the new yaml file.
 
 ## Old files to help
 
