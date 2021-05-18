@@ -105,8 +105,7 @@ Foundation](pr_2009_03_04.html) (March 2009)
 Project](pr_2009_03_03.html) (March 2009)
 
 -  [Apache Tuscany enables service oriented architecture solutions to more
-easily respond to new business requirements.](pr_2008_10_14.html) (October
-2008)
+easily respond to new business requirements.](pr_2008_10_14.html) (October 2008)
 
 -  [The Apache Software Foundation's "Apache Way" continues to gain
 momentum, recognition and influence on the future of open source
