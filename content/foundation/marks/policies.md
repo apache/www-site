@@ -52,7 +52,7 @@ PMCs may find useful as well.
 
 - Must host the [primary development website at *projectname*.apache.org](//www.apache.org/foundation/marks/pmcs#websites).
 - Must have a few defined [links back to the ASF](//www.apache.org/foundation/marks/pmcs#navigation) in their navigation structure.
-- Must use the [appropriate â„¢ or Â® symbol](//www.apache.org/foundation/marks/pmcs#attributions)
+- Must use the [appropriate &trade; or &reg; symbol](//www.apache.org/foundation/marks/pmcs#attributions)
 to legally note their name is a trademark, and provide an attribution on the homepage.
 - Should use appropriate [names for social media accounts][socialmedia].
 - Should link to other [corporations' websites appropriately][linking].
