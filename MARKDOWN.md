@@ -14,7 +14,7 @@ This site uses a version of [cmark-gfm][1] by [GitHub][2] through a Pelican Plug
 
   - Make sure the first line of your html block starts in column one.
   - A blank line terminates an html block
-    - [Exception][6] to this rule for <style>, <pre>, and <script>.
+    - [Exception][6] to this rule for `style`, `pre`, and `script`.
   - [Markdown content within an HTML block][7]
 
 - [Autolinks][8]
