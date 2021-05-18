@@ -58,7 +58,7 @@ Get involved and **contribute** via the user and developer
 email lists, Wiki and forums (if any); extend or improve the documentation; 
 work on bugs listed in the issue tracker or submit code patches. Answering other users' 
 questions is a great way to get started, as is suggesting patches or improvements 
-to [Apache project websites](http://apache.org/dev/contributors.html#websites).
+to [Apache project websites](../dev/contributors.html#websites).
 
 Note that becoming a committer is not just about submitting some patches;
 it's also about helping out on the development and user discussion lists,
