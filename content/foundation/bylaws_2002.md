@@ -824,7 +824,9 @@ DIRECTORS OF THE APACHE SOFTWARE FOUNDATION ON THE 1ST DAY OF JUNE, 1999.
 (signed)
 
 Jim Jagielski, Secretary
+
 <h2>Amendment I</h2>
+
 *Approved by resolution of the Board of Directors, 30 October 2002, the
 following change is to be made to Section 4.1, Admission of Members,
 effective 15 November 2002.* 
