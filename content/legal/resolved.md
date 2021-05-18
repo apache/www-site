@@ -367,7 +367,7 @@ in the source headers.
 
 ### What Are Required Third-party Notices?  {#required-third-party-notices}
 
-< When a release contains third party works, the licenses covering those works may ask that you inform consumers in certain specific fashions. These *third party notices* vary from license to license. Apache releases should contain a copy of each license, usually contained in the LICENSE document. For many licenses this is a sufficient notice. Some licenses require some additional notice. In many cases, you can include this notice within the dependent artifact.      
+When a release contains third party works, the licenses covering those works may ask that you inform consumers in certain specific fashions. These *third party notices* vary from license to license. Apache releases should contain a copy of each license, usually contained in the LICENSE document. For many licenses this is a sufficient notice. Some licenses require some additional notice. In many cases, you can include this notice within the dependent artifact.      
   
 A *required third-party notice* is any third party notice which the above cases don't cover.
 
