@@ -664,7 +664,7 @@ mailing lists - the [detailed policy](#mailing-list-naming-policy) explains the 
 Any topic which does not specifically need to be private should be discussed on an appropriate public mailing list. This
 allows the public to read about the direction of the project and to offer early feedback.
 
-Most projects do their work on their **dev@***project*.apache.org mailing list. 
+Most projects do their work on their **dev@**_project_.apache.org mailing list. 
 Some projects also have a **user@** mailing lists for more general or non-technical 
 questions, and may have a **general@** mailing list. Every project should have 
 a clear [mailing lists page](/foundation/mailinglists.html) that has instructions for subscribing to their lists and 
