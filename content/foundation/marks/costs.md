@@ -68,7 +68,7 @@ over the application process (below) for counsel time (from our lawyers) to subm
 * After 10 years: Filing formal renewal application: 300 USD
 * If the 5 or 10 year applications and payments are not made, the registration will lapse.  When the 5 year declaration is made, the registration becomes "incontestible", meaning we have even stronger legal rights to protect it.
 
-The official [USPTO cost schedule](http://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule#TM Process Fee) includes detailed costs.  If a project is registering in multiple countries at the same time, see the [Madrid Protocol costs](#madridcosts) instead.
+The official [USPTO cost schedule](http://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule#TM%20Process%20Fee) includes detailed costs.  If a project is registering in multiple countries at the same time, see the [Madrid Protocol costs](#madridcosts) instead.
 
 ## In Europe  {#eucost}
 
