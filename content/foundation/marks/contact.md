@@ -14,7 +14,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 [TOC]
 
-# How To Request Trademark Use Permissions For Apache Brands#
+# How To Request Trademark Use Permissions For Apache Brands
 
 ## Uses in Events or Conferences  {#events}
 
