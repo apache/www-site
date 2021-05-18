@@ -14,7 +14,7 @@ The Travel Assistance committee was reformed in September 2008 with the
 goal of providing financial assistance to those who would otherwise be
 unable to attend various ApacheCon events.
 
-Those wjp are thinking of applying for financial assistance should know that the Committee has limited finances and that, as a consequence, only
+Those who are thinking of applying for financial assistance should know that the Committee has limited finances and that, as a consequence, only
 a few places are available for each Apache event. Applicants should have valid reasons for
 attending ApacheCon events that are of benefit to both the applicant and
 the ASF, and to open source as a whole.
