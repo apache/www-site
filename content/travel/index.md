@@ -48,7 +48,7 @@ located worldwide. Therefore, the ASF and its appointed agents will arrange and 
 
 ## How to apply for travel assistance  {#applying}
 
-Visit [online application ](/travel/application) and , if you have not already done so,
+Visit the  [online application ](/travel/application) and , if you have not already done so,
 create an account by clicking the 'Register' link. Once logged in
 answer all questions as fully as possible. Note that you do not
 need to answer all questions in the same session: you can keep coming back
