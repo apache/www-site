@@ -2,7 +2,7 @@
 
 File extension for ezt templates translating into Markdown/HTML which generates html is **ezmd**.
 
-Pages may be [ezt][13] templates that create Markdown output
+Pages may be [ezt][1] templates that create Markdown output
 
 - [ezt Syntax][2]
 
