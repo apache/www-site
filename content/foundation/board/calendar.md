@@ -44,6 +44,17 @@ as is an alternate [categorized view of all board meeting minutes](https://whims
 
 # 2021 Board meeting minutes  {#2021}
 
+- [21 April 2021](../records/minutes/2021/board_minutes_2021_04_21.txt)
+    * Change Traffic Control Chair
+    * Change Kibble Chair
+    * Change Bigtop Chair
+    * Change Mesos Chair
+    * Change Community Development Chair
+    * FY22 Budget
+    * Change Perl Chair
+    * Terminate Trafodion
+    * Change River Chair
+
 - [17 March 2021](../records/minutes/2021/board_minutes_2021_03_17.txt)
     * Establish DolphinScheduler
     * Change Attic Chair
