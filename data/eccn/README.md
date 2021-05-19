@@ -6,7 +6,7 @@ In this directory there are both the legacy bisnotice and eccn files, and the ne
 
 - [eccnmatrix.yaml](eccnmatrix.yaml)
 
-## New process needed
+## New process needed - feature requests
 
 - python script to confirm integrity of edited eccnmatrix.yaml.
   - [update these instructions](https://infra.apache.org/crypto.html#sources).
