@@ -101,6 +101,7 @@ Please see our [official committee listing](http://home.apache.org/phonebook.htm
 
 Participants attending the following events have received support from the Travel Assistance Committee:
 
+  * Fosdem 2020, Brussels, Belgium
   * ApacheCon EU 2019, Berlin, Germany
   * ApacheCon NA 2019, Las Vegas, Nevada
   * ApacheCon NA 2018, Montreal, Canada
