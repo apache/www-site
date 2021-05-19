@@ -1,8 +1,6 @@
 # Gihub Flavored Markdown (GFM)
 
-## Markdown
-
-File extensions are **md**, **markdown**, **mkd**, and **mdown**.
+File extensions are **md**, **markdown**, **mkd**, and **mdown**. If you have an **mdtext** file it is from the Apache CMS.
 
 This site uses a version of [cmark-gfm][1] by [GitHub][2] through a Pelican Plugin *gfm.py* created by Apache Infra.
 
@@ -10,37 +8,29 @@ This site uses a version of [cmark-gfm][1] by [GitHub][2] through a Pelican Plug
 
 - [Detailed Specification][4]
 
-- [HTML Blocks][5]
+- Differences from markdown.pl
 
-  - Make sure the first line of your html block starts in column one.
-  - A blank line terminates an html block
-    - [Exception][6] to this rule for `style`, `pre`, and `script`.
-  - [Markdown content within an HTML block][7]
+  - [HTML Blocks][5]
+    - Make sure the first line of your html block starts in column one.
+    - A blank line terminates an html block
+      - [Exception][6] to this rule for `style`, `pre`, and `script`.
+    - [Markdown content within an HTML block][7]
 
-- [Autolinks][8]
+  - [Autolinks][8]
+    - [www][9]
+    - [url][10]
+    - [email][11]
 
-  - [www][9]
-  - [url][10]
-  - [email][11]
-
-- [Disallowed html][12] the tagfilter extension disables certain html. The asfgenid plugin reenables `script`, `style`, and `iframe` html.
+  - [Disallowed html][12] the tagfilter extension disables certain html. The asfgenid plugin reenables `script`, `style`, and `iframe` html.
     
-- [Examples](https://sindresorhus.com/github-markdown-css/).
+- [Examples][13]
 
-## EZT
+- Apache CMS Migration
 
-File extension for processing ezt template results as Markdown is **ezmd**.
-
-Pages may be [ezt][13] templates that create Markdown output
-
-- [ezt Syntax][14]
-
-- www-site examples
-
-  - [export notifications][15] shows creating markdown.
-  - [main page][16] has several html examples. The location may change, look for `pl_`.
-  - [foundation page's pmc chair list][17]. The location may change, look for `projects.site`.
-  - [simple board list][18].
+  - Change extension from **mdtext** to **md**
+  - Replace the multiple line `notice:` with a one line reference to the Apache License.
+  - Any {#id} and {.class} annotations must have any # tags between the annotation and the heading text removed.
+  - Only one {#id} or {.class} annotation is allowed on a tag.
 
 
 [1]: https://github.com/github/cmark-gfm
@@ -55,9 +45,4 @@ Pages may be [ezt][13] templates that create Markdown output
 [10]: https://github.github.com/gfm/#extended-url-autolink
 [11]: https://github.github.com/gfm/#extended-email-autolink
 [12]: https://github.github.com/gfm/#disallowed-raw-html-extension-
-[13]: https://github.com/gstein/ezt
-[14]: https://github.com/gstein/ezt/blob/wiki/Syntax.md
-[15]: https://github.com/apache/www-site/blob/main/content/licenses/exports/index.ezmd
-[16]: https://github.com/apache/www-site/blob/main/content/index.ezmd#L382
-[17]: https://github.com/apache/www-site/blob/main/content/foundation/index.ezmd#L140
-[18]: https://github.com/apache/www-site/blob/main/content/foundation/board/index.ezmd
+[13]: https://sindresorhus.com/github-markdown-css/
