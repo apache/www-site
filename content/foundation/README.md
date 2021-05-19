@@ -30,3 +30,5 @@ All ASF Members have write access to this repository.
 For nontrivial changes make a Pull Request and start a discussion with the stakeholders.
 
 For trivial changes commit and let the stakeholders know.
+
+The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation) was not migrated and remains available.

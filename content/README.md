@@ -38,13 +38,18 @@ VP, Travel Assistance at travel-assistance@apache.org
 
 Infrastructure Team at users@infra.apache.org
 - [Dev](dev/)
+- [dyn](dyn/)
+- [mirrors](mirrors/)
+- [uptime](uptime/)
 
 See also [Operations Directory](foundation/operations/)
 
-For discussion about other pages contact centralservices@apache.org
+For discussion about other content contact centralservices@apache.org
 
 All ASF Members have write access to this repository.
 
 For nontrivial changes make a Pull Request and start a discussion with the stakeholders.
 
 For trivial changes commit and let the stakeholders know.
+
+The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/content) was not migrated and remains available.
