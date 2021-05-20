@@ -35,17 +35,17 @@ GFMReader = sys.modules['pelican-gfm.gfm'].GFMReader
 
 
 class ASFTemplateReader(ezt.Reader):
-  """Enables inserts relative to the template we loaded."""
+    """Enables inserts relative to the template we loaded."""
 
-  def __init__(self, source_path, text):
-    self.source_dir, self.fname = os.path.split(source_path)
-    self.text = text
+    def __init__(self, source_path, text):
+        self.source_dir, self.fname = os.path.split(source_path)
+        self.text = text
 
-  def read_other(self, relative):
-    return ezt._FileReader(os.path.join(self.source_dir, relative))
+    def read_other(self, relative):
+        return ezt._FileReader(os.path.join(self.source_dir, relative))
 
-  def filename(self):
-    return self.fname
+    def filename(self):
+        return self.fname
 
 
 class ASFReader(GFMReader):
@@ -65,27 +65,27 @@ class ASFReader(GFMReader):
     def read(self, source_path):
         "Read metadata and content, process content as ezt template, then render into HTML."
         try:
-          # read content with embedded ezt - use GFMReader
-          text, metadata = super().read_source(source_path)
-          assert text
-          assert metadata
-          # supplement metadata with ASFData if available
-          self.add_data(metadata)
-          # prepare text as an ezt template
-          # compress_whitespace=0 is required as blank lines and indentation have meaning in markdown.
-          template = ezt.Template(compress_whitespace=0)
-          reader = ASFTemplateReader(source_path, text)
-          template.parse(reader, base_format=ezt.FORMAT_HTML)
-          assert template
-          # generate content from ezt template with metadata
-          fp = io.StringIO()
-          template.generate(fp, metadata)
-          # Render the markdown into HTML
-          content = super().render(fp.getvalue().encode('utf-8')).decode('utf-8')
-          assert content
+            # read content with embedded ezt - use GFMReader
+            text, metadata = super().read_source(source_path)
+            assert text
+            assert metadata
+            # supplement metadata with ASFData if available
+            self.add_data(metadata)
+            # prepare text as an ezt template
+            # compress_whitespace=0 is required as blank lines and indentation have meaning in markdown.
+            template = ezt.Template(compress_whitespace=0)
+            reader = ASFTemplateReader(source_path, text)
+            template.parse(reader, base_format=ezt.FORMAT_HTML)
+            assert template
+            # generate content from ezt template with metadata
+            fp = io.StringIO()
+            template.generate(fp, metadata)
+            # Render the markdown into HTML
+            content = super().render(fp.getvalue().encode('utf-8')).decode('utf-8')
+            assert content
         except:
-          traceback.print_exc()
-          raise
+            traceback.print_exc()
+            raise
 
         return content, metadata
 

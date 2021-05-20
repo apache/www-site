@@ -408,6 +408,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | omalley | [Owen O'Malley](http://home.apache.org/~omalley) |
 | orlikowski | Victor J. Orlikowski | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; BSF|
 | otis | Otis Gospodnetic |
+| painter | Jeffery Painter | [Turbine](https://turbine.apache.org/) ; [Torque](https://db.apache.org/torque)|
 | pamarcelot | Pierre-Arnaud Marcelot | [Directory](http://directory.apache.org/)|
 | pauls | Karl Pauls |
 | pburba | Paul Burba |

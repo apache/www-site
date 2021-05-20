@@ -29,7 +29,7 @@ PATH = 'content'
 
 TIMEZONE = 'UTC'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 
 # Website specific settings
 SITEURL = 'https://www.apache.org'
