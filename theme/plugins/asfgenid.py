@@ -50,7 +50,7 @@ TABLE_RE = re.compile(r'^table')
 IDCOUNT_RE = re.compile(r'^(.*)_([0-9]+)$')
 
 # For permalinks
-LINK_CHAR = u'¶'
+LINK_CHAR = '¶'
 
 # strips permalink chars from headings for ToC
 PARA_MAP = {
