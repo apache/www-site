@@ -54,7 +54,7 @@ LINK_CHAR = '¶'
 
 # strips permalink chars from headings for ToC
 PARA_MAP = {
-    ord('¶'): None
+    ord(LINK_CHAR): None
 }
 
 # Fixup tuples
