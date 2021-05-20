@@ -7,7 +7,7 @@ This repository provides the source for the main website of The Apache Software 
 
 - [Content](content)
   - **md** pages in GitHub Flavored Markdown which can include HTML.
-  - **ezmd** pages in a combination fo [ezt](https://github.com/gstein/ezt/blob/wiki/Syntax.md) and GitHub Flavored Markdown.
+  - **ezmd** pages in a combination of [ezt](https://github.com/gstein/ezt/blob/wiki/Syntax.md) and GitHub Flavored Markdown.
   - **html** files are treated as static files.
   - static assets of all types.
   - .htaccess files for redirection and rewrite rules.
