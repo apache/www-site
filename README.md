@@ -29,7 +29,7 @@ This repository provides the source for the main website of The Apache Software 
   
 
 The website is built with [Pelican](https://blog.getpelican.com).
-Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features).
+Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
 mechanism which runs [Buildbot](https://ci2.apache.org/#/builders/3/).
 
 - [Base Template](theme/apache/templates/base.html) -- single html skeleton
