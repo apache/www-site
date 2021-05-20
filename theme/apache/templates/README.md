@@ -7,8 +7,8 @@ The Apache Theme included here consists two types of files.
 
 ## Page Templates
 
-1. base.html - the main template. Other templates extend this template.
-2. page.html - need to override pelican's default page.html which automatically includes `<h1>{{ page.title }}</h1>`
+1. base.html - the main template. Other templates extend this template automatically even those in the default pelican thme.
+2. page.html - this overrides pelican's default page.html which includes `<h1>{{ page.title }}</h1>`. We don't want that behavior.
 
 Change the base page as necessary and add new page types as required.
 
@@ -21,7 +21,11 @@ You can choose to include these in your template, or you can move the file into 
 
 Each of the above files should be edited as needed for the deployed website.
 
-## Pelican Variables set in [pelicanconf.py](../../../pelicanconf.py)
+## Pelican Settings
+
+Pelican settings are provided in the [pelicanconf.py](../../../pelicanconf.py) file.
+
+Some settings inlude:
 
 ~~~python
 SITEURL = 'https://www.apache.org'
@@ -29,11 +33,13 @@ SITEREPOSITORY = 'https://github.com/apache/www-site/blob/main/content/'
 CURRENTYEAR = date.today().year
 ~~~
 
+The file contains helpful comments about the settings.
+
 ## Pelican Themes
 
 This is a [custom theme][1]. Pelican templates use [Jinja][2]
 
-## Apache CMS
+## History - Apache CMS
 
 The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/templates) was not migrated and remains available.
 
