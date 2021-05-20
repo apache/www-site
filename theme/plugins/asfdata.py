@@ -293,9 +293,9 @@ def process_sequence(metadata, seq, sequence, load, debug):
         metadata[seq] = reference
 
 
-def process_load(metadata, value, key, load, debug):
+def process_load(metadata, value, _key, load, debug):
     for seq in value:
-        if seq != 'url' and seq != 'file':
+        if seq not in ('url', 'file'):
             # sequence
             sequence = value[seq]
             process_sequence(metadata, seq, sequence, load, debug)
