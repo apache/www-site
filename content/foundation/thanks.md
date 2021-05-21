@@ -197,4 +197,3 @@ And a gigantic thank you to <a href="/mirrors/" target=_blank>all the ASF mirror
   <a>
   <br />&nbsp;
 </div>
-             
