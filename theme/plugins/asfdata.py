@@ -513,6 +513,8 @@ def config_read_data(pel_ob):
             print('-----')
         elif isinstance(metadata[key], str):
             print(f'metadata[{key}] = "{metadata[key]}"')
+        elif isinstance(metadata[key], int):
+            print(f'metadata[{key}] = {metadata[key]}')
         elif isinstance(metadata[key], list):
             print(f'metadata[{key}] is a sequence.')
         elif isinstance(metadata[key], dict):
