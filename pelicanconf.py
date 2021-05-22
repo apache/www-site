@@ -115,7 +115,7 @@ ASF_DATA = {
     'metadata': {
         'site_url': SITEURL
     },
-    'debug': True
+    'debug': False
 }
 
 # Configure the asfgenid plugin
