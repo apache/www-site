@@ -157,7 +157,7 @@ def permalink(soup, mod_element):
     mod_element.append(new_tag)
 
 
-# fixup cmark content
+# fixup cmark content - note that this may be too hungry. It may need to occur later and skipped in codeblock and pre tags.
 def fixup_content(content):
     text = content._content
     modified = False
@@ -183,6 +183,7 @@ def expand_metadata(tag, metadata):
             format_string = '{{{0}}}'.format(this_data)
             parts = this_data.split('.')
             try:
+                # should refactor this to be more general
                 if isinstance(metadata[parts[0]], dict):
                     ref = metadata
                     for part in parts:
@@ -214,8 +215,10 @@ def elementid_transform(ids, soup, tag, permalinks, perma_set, debug):
     if tagnav.name not in ['[document]', 'code', 'pre']:
         m = ELEMENTID_RE.search(tag.string)
         if m:
+            # this replacement could be better it truncates and likely drops additional annotations
             tag.string.replace_with(this_string[:m.start()])
             if m.group('type') == '#':
+                # id attribute annotation
                 tagnav['id'] = unique(m.group('id'), ids)
                 if permalinks:
                     permalink(soup, tagnav)
@@ -223,6 +226,7 @@ def elementid_transform(ids, soup, tag, permalinks, perma_set, debug):
                 if debug:
                     print(f"# insertion {tagnav}")
             else:
+                # class attribute annotation (regex only recognizes the two types)
                 tagnav['class'] = m.group('id')
                 if debug:
                     print(f"Class {tag.name} : {tagnav['class']}")
@@ -250,23 +254,30 @@ def headingid_transform(ids, soup, tag, permalinks, perma_set):
 def generate_toc(content, tags, title, toc_headers):
     settoc = False
     tree = node = HtmlTreeNode(None, title, 'h0', '')
+    # find the last [TOC]
     taglast = tags[0]
     for tag in tags:
         taglast = tag
+    # find all headings after the final [TOC]
     heading_re = re.compile(toc_headers)
     for header in taglast.findAllNext(heading_re):
+        # we have heading content for the ToC
         settoc = True
+        # add the heading.
         node, _new_header = node.add(header)
+    # convert the ToC to Beautiful Soup
     tree_soup = ""
     if settoc:
         print("  ToC")
-        # convert the HtmlTreeNode into Beautiful soup
+        # convert the HtmlTreeNode into Beautiful Soup
         tree_string = '{}'.format(tree)
         tree_soup = BeautifulSoup(tree_string, 'html.parser')
-        # not sure if we need to put the ToC here.
+        # Make the ToC availble to the theme's template
         content.toc = tree_soup.decode(formatter='html')
+    # replace the first [TOC] with the generated table of contents
     for tag in tags:
         tag.replaceWith(tree_soup)
+        # replace additional [TOC] with nothing
         tree_soup = ""
 
 
@@ -375,6 +386,7 @@ def tb_connect(pel_ob):
     try:
         generate_id(pel_ob)
     except:
+        print('FATAL: %s' % (pel_ob.relative_source_path), file=sys.stderr)
         traceback.print_exc()
         "if we have errors in this module then we want to quit to avoid erasing the site"
         sys.exit(4)

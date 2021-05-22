@@ -293,7 +293,7 @@ def process_sequence(metadata, seq, sequence, load, debug):
         metadata[seq] = reference
 
 
-def process_load(metadata, value, _key, load, debug):
+def process_load(metadata, value, load, debug):
     for seq in value:
         if seq not in ('url', 'file'):
             # sequence
@@ -434,27 +434,28 @@ def config_read_data(pel_ob):
         print(f"Processing {asf_data['data']}")
         config_data = read_config(asf_data['data'])
         for key in config_data:
+            # first check for data that is a singleton with special handling
             if key == 'eccn':
                 # process eccn data
                 fname = config_data[key]['file']
-                v = process_eccn(fname)
+                metadata[key] = v = process_eccn(fname)
                 print('ECCN V:', v)
-                metadata[key] = v
                 continue
 
             if key == 'twitter':
-                # process twitter data
+                # process twitter data (if we decide to have multiple twitter feeds available then move next to blog'
                 handle = config_data[key]['handle']
                 count = config_data[key]['count']
-                v = process_twitter(handle, count)
+                metadata[key] = v = process_twitter(handle, count)
                 print('TWITTER V:', v)
-                metadata[key] = v
                 continue
 
             value = config_data[key]
             if isinstance(value, dict):
+                # dictionaries are complex data sources
                 print(f"{key} is a dict")
                 print(value)
+                # special cases that are multiple are processed first
                 if 'blog' in value:
                     # process blog feed
                     feed = config_data[key]['blog']
@@ -465,16 +466,20 @@ def config_read_data(pel_ob):
                     continue
 
                 elif 'url' in value:
+                    # process a url based data source
                     load = url_data(value['url'])
-                    process_load(metadata, value, key, load, asf_data['debug'])
+                    process_load(metadata, value, load, asf_data['debug'])
 
                 elif 'file' in value:
+                    # process a file from within the site tree
                     load = file_data(value['file'])
-                    process_load(metadata, value, key, load, asf_data['debug'])
+                    process_load(metadata, value, load, asf_data['debug'])
 
                 else:
+                    # should probably be an error.
                     metadata[key] = value
             else:
+                # simple metadata values
                 print(f"{key} = {value}")
                 metadata[key] = value
 

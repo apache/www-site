@@ -84,6 +84,7 @@ class ASFReader(GFMReader):
             content = super().render(fp.getvalue().encode('utf-8')).decode('utf-8')
             assert content
         except:
+            print('ERROR: %s' % (source_path), file=sys.stderr)
             traceback.print_exc()
             raise
 
