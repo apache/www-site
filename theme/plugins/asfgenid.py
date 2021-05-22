@@ -31,7 +31,7 @@ ASF_GENID = {
     'headings': True,
     'headings_re': r'^h[1-6]',
     'toc': True,
-    'toc_headers': r"h[1-6]",
+    'toc_headers': r'h[1-6]',
     'permalinks': True,
     'tables': True,
     'debug': False
@@ -85,7 +85,7 @@ class HtmlTreeNode(object):
             new_string = new_header.find_all(
                 text=lambda t: not isinstance(t, Comment),
                 recursive=True)
-            new_string = "".join(new_string)
+            new_string = ''.join(new_string)
         new_string = new_string.translate(PARA_MAP)
 
         if self.level < new_level:
@@ -100,7 +100,7 @@ class HtmlTreeNode(object):
             return self.parent.add(new_header)
 
     def __str__(self):
-        ret = ""
+        ret = ''
         if self.parent:
             ret = "<a class='toc-href' href='#{0}' title='{1}'>{1}</a>".format(
                 self.id, self.header)
@@ -139,7 +139,7 @@ def slugify(value, separator):
 def unique(id, ids):
     while id in ids or not id:
         m = IDCOUNT_RE.match(id)
-        print(f"id=\"{id}\" is a duplicate")
+        print(f'id="{id}" is a duplicate')
         if m:
             id = '%s_%d' % (m.group(1), int(m.group(2)) + 1)
         else:
@@ -150,9 +150,9 @@ def unique(id, ids):
 
 # append a permalink
 def permalink(soup, mod_element):
-    new_tag = soup.new_tag('a', href="#" + mod_element['id'])
-    new_tag['class'] = "headerlink"
-    new_tag['title'] = "Permalink"
+    new_tag = soup.new_tag('a', href='#' + mod_element['id'])
+    new_tag['class'] = 'headerlink'
+    new_tag['title'] = 'Permalink'
     new_tag.string = LINK_CHAR
     mod_element.append(new_tag)
 
@@ -191,10 +191,10 @@ def expand_metadata(tag, metadata):
                     new_string = ref
                 else:
                     if len(parts) == 3:
-                        this_data = f"{parts[0]}[{parts[1]}].{parts[2]}"
+                        this_data = f'{parts[0]}[{parts[1]}].{parts[2]}'
                     format_string = '{{{0}}}'.format(this_data)
                     new_string = format_string.format(**metadata)
-                print(f"{{{{{m.group(1)}}}}} -> {new_string}")
+                print(f'{{{{{m.group(1)}}}}} -> {new_string}')
             except Exception:
                 # the data expression was not found
                 print(f'{{{{{m.group(1)}}}}} is not found')
@@ -211,7 +211,7 @@ def elementid_transform(ids, soup, tag, permalinks, perma_set, debug):
     tagnav = tag.parent
     this_string = str(tag.string)
     if debug:
-        print(f"name = {tagnav.name}, string = {this_string}")
+        print(f'name = {tagnav.name}, string = {this_string}')
     if tagnav.name not in ['[document]', 'code', 'pre']:
         m = ELEMENTID_RE.search(tag.string)
         if m:
@@ -224,12 +224,12 @@ def elementid_transform(ids, soup, tag, permalinks, perma_set, debug):
                     permalink(soup, tagnav)
                     unique(tagnav['id'], perma_set)
                 if debug:
-                    print(f"# insertion {tagnav}")
+                    print(f'# insertion {tagnav}')
             else:
                 # class attribute annotation (regex only recognizes the two types)
                 tagnav['class'] = m.group('id')
                 if debug:
-                    print(f"Class {tag.name} : {tagnav['class']}")
+                    print(f'Class {tag.name} : {tagnav["class"]}')
 
 
 # generate id for a heading
@@ -240,7 +240,7 @@ def headingid_transform(ids, soup, tag, permalinks, perma_set):
         new_string = tag.find_all(
             text=lambda t: not isinstance(t, Comment),
             recursive=True)
-        new_string = "".join(new_string)
+        new_string = ''.join(new_string)
 
     # don't have an id create it from text
     new_id = slugify(new_string, '-')
@@ -266,9 +266,9 @@ def generate_toc(content, tags, title, toc_headers):
         # add the heading.
         node, _new_header = node.add(header)
     # convert the ToC to Beautiful Soup
-    tree_soup = ""
+    tree_soup = ''
     if settoc:
-        print("  ToC")
+        print('  ToC')
         # convert the HtmlTreeNode into Beautiful Soup
         tree_string = '{}'.format(tree)
         tree_soup = BeautifulSoup(tree_string, 'html.parser')
@@ -278,20 +278,17 @@ def generate_toc(content, tags, title, toc_headers):
     for tag in tags:
         tag.replaceWith(tree_soup)
         # replace additional [TOC] with nothing
-        tree_soup = ""
+        tree_soup = ''
 
 
 def add_data(content):
-    "Mix in ASF data as metadata"
+    """ Mix in ASF data as metadata """
 
     # if the reader is 'asf' then the asf metadata is already in place
     if content.metadata.get('reader') != 'asf':
         asf_metadata = content.settings.get('ASF_DATA', { }).get('metadata')
         if asf_metadata:
             content.metadata.update(asf_metadata)
-
-    # if content.settings.get('ASF_DATA', { }).get('debug'):
-    #    print("metadata: %s" % content.metadata)
 
 
 # main worker transforming the html
@@ -315,7 +312,7 @@ def generate_id(content):
     # assure relative source path is in the metadata
     content.metadata['relative_source_path'] = content.relative_source_path
     # display output path and title
-    print(f"{content.relative_source_path} - {title}")
+    print(f'{content.relative_source_path} - {title}')
     # enhance metadata if done by asfreader
     add_data(content)
     # get plugin settings
@@ -324,27 +321,27 @@ def generate_id(content):
     asf_headings = content.metadata.get('asf_headings', str(asf_genid['headings']))
     # show active plugins
     if asf_genid['debug']:
-        print("asfgenid:\nshow plugins in case one is processing before this one")
+        print('asfgenid:\nshow plugins in case one is processing before this one')
         for name in content.settings['PLUGINS']:
-            print(f"plugin: {name}")
+            print(f'plugin: {name}')
 
     # step 3 - metadata expansion
     if asf_genid['metadata']:
         if asf_genid['debug']:
-            print(f"metadata expansion: {content.relative_source_path}")
+            print(f'metadata expansion: {content.relative_source_path}')
 
         for tag in soup.findAll(string=METADATA_RE):
             expand_metadata(tag, content.metadata)
 
     # step 4 - find all id attributes already present
     for tag in soup.findAll(id=True):
-        unique(tag["id"], ids)
+        unique(tag['id'], ids)
         # don't change existing ids
 
     # step 5 - find all {#id} and {.class} text and assign attributes
     if asf_genid['elements']:
         if asf_genid['debug']:
-            print(f"elementid: {content.relative_source_path}")
+            print(f'elementid: {content.relative_source_path}')
 
         for tag in soup.findAll(string=ELEMENTID_RE):
             elementid_transform(ids, soup, tag, asf_genid['permalinks'], permalinks, asf_genid['debug'])
@@ -352,7 +349,7 @@ def generate_id(content):
     # step 6 - find all headings w/o ids already present or assigned with {#id} text
     if asf_headings == 'True':
         if asf_genid['debug']:
-            print(f"headings: {content.relative_source_path}")
+            print(f'headings: {content.relative_source_path}')
 
         # Find heading tags
         HEADING_RE = re.compile(asf_genid['headings_re'])
@@ -362,7 +359,7 @@ def generate_id(content):
     # step 7 - find all tables without class
     if asf_genid['tables']:
         if asf_genid['debug']:
-            print(f"tables: {content.relative_source_path}")
+            print(f'tables: {content.relative_source_path}')
 
         for tag in soup.findAll(TABLE_RE, _class=False):
             tag['class'] = 'table'
@@ -378,17 +375,18 @@ def generate_id(content):
 
     # step 10 - output all of the permalinks created
     for tag in permalinks:
-        print(f"    #{tag}")
+        print(f'    #{tag}')
 
 
 def tb_connect(pel_ob):
-    "Print any exception, before Pelican chews it into nothingness."
+    """Print any exception, before Pelican chews it into nothingness."""
     try:
         generate_id(pel_ob)
     except:
+        print('-----', file=sys.stderr)
         print('FATAL: %s' % (pel_ob.relative_source_path), file=sys.stderr)
         traceback.print_exc()
-        "if we have errors in this module then we want to quit to avoid erasing the site"
+        # if we have errors in this module then we want to quit to avoid erasing the site
         sys.exit(4)
 
 
