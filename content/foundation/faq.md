@@ -16,7 +16,7 @@ formed in 1995 to develop the Apache HTTP Server.
 A [board of directors](board/), elected by the [ASF
 membership](members.html) on an annual basis according to the corporation's
 [bylaws](bylaws.html), oversees [management of the Foundation](how-it-works.html#structure). The board appoints a set of officers to manage the
-day-to-day operations of the Foundation and to oversee the ASF projects. A Project Management Committee (PMC), a self-selected team of active contributors, manages each project project, following The Apache Way and whatever additional guidelines for
+day-to-day operations of the Foundation and to oversee the ASF projects. A Project Management Committee (PMC), a self-selected team of active contributors, manages each project following The Apache Way and whatever additional guidelines for
 collaborative development are best suited to that project.
 
 ## Why was the Apache Software Foundation created?  {#why}
