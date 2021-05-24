@@ -184,13 +184,11 @@ def expand_metadata(tag, metadata):
         m = METADATA_RE.search(this_string)
         if m:
             this_data = m.group(1).strip()
-            print(this_data)
             for regex, replace in FIXUP_METADATA:
                 n = regex.search(this_data)
                 if n:
                     this_data = re.sub(regex, replace, this_data)
             format_string = '{{{0}}}'.format(this_data)
-            print(format_string)
             parts = this_data.split('.')
             subs = parts[0].split('[')
             try:
