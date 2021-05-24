@@ -1,24 +1,17 @@
 Title: Contact FAQ
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-This page answers most of the common queries that we receive about our
-Apache&reg; project software and the Apache Software Foundation(ASF) as a non-profit organization. Much of the mail we receive
-falls into certain categories; this page addresses the most common of
-these.
+This page answers most of the common queries that we receive as email about our
+Apache&reg; projects' software and the Apache Software Foundation(ASF) as a non-profit organization. 
 
-**PLEASE NOTE:** If you send us mail about something that **is** clearly
-covered by the information on this page, your mail will probably be
-ignored. Please accept our apologies for such an impersonal response, but
-with several million users and not that many volunteer developers, we
-cannot provide personalised email support.
-
-These are the frequent subjects (and answers) for misdirected mail sent to the ASF
-[contact](contact.html) address:
+**PLEASE NOTE:** If you send us email about something that **is** clearly
+covered by the information on this page, we will probably ignore your email. Please accept our apologies for such an impersonal response, but
+with several million users and not that many volunteers to respond to queries, we cannot provide personalised email support.
 
 1.  [You unexpectedly see an Apache HTTP Server installation page when you
 visit a Web site.](#itworked) 
 
-1.  [You see an Apache HTTP Server installation message on your own
+1.  [You see an Apache HTTP Server installation message on your
 computer.](#mypc) 
 
 1.  [Your security software reported an intrusion.](#intruder) 
@@ -36,12 +29,12 @@ numbers (ECCNs).](#export)
 1.  [You have questions about purchasing Apache software or obtaining
 support for it.](#purchase) 
 
-1.  [You have questions specifically about an Apache project.](#projects) 
+1.  [You have questions about a specific Apache project.](#projects) 
 
 1.  [You have a community/codebase that you would like to bring to the
 ASF.](#incubator) 
 
-1.  [You have issues, bug reports, patches for a particular
+1.  [You have issues, bug reports, or patches for a particular
 project.](#patch) 
 
 1.  [Domain ownership lookup/IP address tracing](#dirs) 
@@ -49,51 +42,46 @@ project.](#patch)
 1.  [You have a question about Apache trademarks, or you want to know if a
 use of an Apache trademark is related to the ASF](#brand) 
 
-# Explanations, Instructions, and Answers #
-
-Here are the detailed answers for each of the categories above.
+## Responses
 
 1. <a id="itworked" name="itworked"> **You unexpectedly see an Apache HTTP
 Server installation page when you visit a Web site.** </a>
 If you have sent us mail because you saw a page saying 'It Worked!' (or
-something similar indicating that Apache has been installed) on your screen
-or a Web site you visited, please go back and **READ** the page. It should
+something similar indicating that the Apache HTTP server has been installed) on your screen
+when you visit a web site, go back and **READ** the page. It should
 explain what is going on. The page is the equivalent of a demo or the
 ReadMe file from a Windows application installation; it is intended for the
 person who installed the software and is supposed to show that the
-installation was completed successfully. The problem you are experiencing
+installation completed successfully. The problem you are experiencing
 has nothing to do with us, and we cannot help you. You need to contact the
 Webmaster for the site. If the site is www.foo.com, for instance, try
-sending mail to &lt;webmaster@foo.com&gt;. If it's www.toddsbeer.org, send
-mail to &lt;webmaster@toddsbeer.org&gt;. And so on.
+sending mail to `webmaster@foo.com`. If it's www.toddsbeer.org, send
+mail to `webmaster@toddsbeer.org`. And so on.<br/><br/>
+Some older versions of the 'It Worked!' page (supplied with older versions of the software) don't say that, or are mysterious or ambiguous. What they _should_ say, and what the recent versions say, is something like this!
+<br/>
 
-    Some older versions of the 'It Worked!' page (supplied with older versions
-    of the software) don't say that, or are mysterious or ambiguous. What they
-    *should* say, and what the recent versions say, is something like this!
+    It Worked! The Apache Web Server is installed on this Web Site!
+    ---
+    If you can see this page, then the people who own this
+    domain have just installed the Apache Web server software
+    successfully. They now have to add content to this directory
+    and replace this placeholder page, or else point the server
+    at their real content.
+    ---
+    If you are seeing this page instead of the site you expected,
+    please contact the administrator of the site involved. (Try
+    sending mail to <Webmaster@domain> Although this site is
+    running the Apache software it almost certainly has no other
+    connection to the Apache Group, so please do not send mail
+    about this site or its contents to the Apache authors. If you
+    do, your message will be ignored.
 
-        "It Worked! The Apache Web Server is installed on this Web Site!
-        ---
-        "If you can see this page, then the people who own this
-        domain have just installed the Apache Web server software
-        successfully. They now have to add content to this directory
-        and replace this placeholder page, or else point the server
-        at their real content.
-        ---
-        "If you are seeing this page instead of the site you expected,
-        please contact the administrator of the site involved. (Try
-        sending mail to <Webmaster@domain> Although this site is
-        running the Apache software it almost certainly has no other
-        connection to the Apache Group, so please do not send mail
-        about this site or its contents to the Apache authors. If you
-        do, your message will be ignored.
-        ---"
-
-1. <a id="mypc" name="mypc"> **You see an Apache HTTP Server installation
+2. <a id="mypc" name="mypc"> **You see an Apache HTTP Server installation
 message on your own computer.** </a>
 If you think that the Apache HTTP Server software has somehow been
 installed on your PC or laptop, don't worry: **IT HASN'T**. The page you
 are seeing is from a remote Web site which has installed our software and
-which you have visited. See [paragraph [[1]](#itworked) above for an
+which you have visited. See [above](#itworked) for an
 explanation.
 
 1. <a id="intruder" name="intruder"> **Your security software reported an
@@ -108,7 +96,7 @@ system. These databases are the master ones for the Internet. See the
 1. <a id="hijack" name="hijack"> **You think Apache has stolen or hijacked
 one of your favourite Web sites.** </a>
 If you think that Apache has somehow 'hijacked,' 'taken over,' or otherwise
-blocked access to a Web site, **IT HASN'T** -- the people who actually
+blocked access to a Web site, **IT HASN'T**. The people who actually
 *run* the Web site have installed or upgraded the Apache software which
 answers browser requests, and haven't completed the upgrade yet. See
 [paragraph [1]](#itworked) above for suggestions on how to reach them for a
@@ -118,7 +106,7 @@ status update.
 If you have sent us mail because you think you have traced spam to a system
 that displays the 'It Worked!' page, or another page indicating that Apache
 is running on the system, the same advice applies: it is **not** our
-system, they are just using Web software we develop and distribute for
+system; they are just using Web software we develop and distribute for
 free. The Web software has nothing to do with email or spam, it's just
 running on the same system. Apache has as much to do with email as Tetris
 does, and assuming we're responsible in any way for the spam is as
@@ -129,18 +117,17 @@ databases that will help you find out who actually owns the systems,
 domains, and/or IP addresses involved.
 
 1. <a id="licence" name="licence"> <a id="license" name="license"> **You have questions about the Apache
-license.** </a>
-<!-- N.B. keep the old spelling to avoid breaking links -->
+license.** </a> <!-- N.B. keep the old spelling to avoid breaking links -->
 If you have sent mail about a license issue or question, please review the
 [online license](/LICENSE) at the URL listed below.
-The gist of the license is that you may use, modify, and/or [re]distribute
+The gist of the license is that you may use, modify, and [re]distribute
 the Apache software as-is. As long as you do not change the software, you
 may re-distribute it and call it "Apache." If you alter the software in any
 way, other than tailoring the configuration files or making it compilable
 on your platform, you may only refer to it as being based upon Apache. In
 all cases, altered or not, you must include attribution as described in
 section 3 of the license. If you have further questions, see our [license
-FAQ](license-FAQ.html) ; if that doesn't answer them, you may contact our
+FAQ](license-FAQ.html). If that doesn't answer them, you may contact our
 [Legal Affairs Committee](/legal/).
 
 1. <a name="export"> **You have questions about Apache software and U.S.
@@ -148,9 +135,9 @@ export control numbers (ECCNs).** </a>
 Please consult our [detailed information on the export control status of
 The Apache Software Foundation's products](/licenses/exports/).
 
-    If a vendor is choosing to distribute ASF software, then it is their
-    responsibility to get whatever licenses or other blessings are needed for
-    their application. You are advised to consult your own IP/export attorney
+    If a vendor is choosing to distribute ASF software, it is their
+    responsibility to get whatever licenses or other blessings they need for
+    their application. Consult your own IP/export attorney
     for further advice.
 
 1. <a name="purchase"> **You have questions about purchasing Apache
@@ -159,15 +146,15 @@ All software produced by the Foundation is available for download, by
 anyone and for free, from our Web sites and mirrors. We do not sell it; we
 give it away. Neither do we provide formal or commercial support for any of
 our packages.
-
-    Also see the " [is it free](license-FAQ.html#IsItFree) " and following
-sections in our license FAQ as well as our [Apache software is free of cost](/free/) page.
+<br/><br/>
+Also see the [is it free](license-FAQ.html#IsItFree) and following
+sections in our license FAQ and our [Apache software is free of cost](/free/) page.
 
 1. <a id="projects" name="projects"> **You have questions about other
 Apache projects.** </a>
-Use the project's website, or the [project
+Use the project's website, or find it through the [project
 directory](http://projects.apache.org/) to find the project's mailing list.
-Technical questions of any kind should be addressed to the appropriate
+Address technical questions to the appropriate
 project's mailing list, and not to any of the general e-mail addresses of the
 ASF.
 
@@ -180,22 +167,18 @@ community [project proposals](//incubator.apache.org/guides/proposal.html) come 
 a particular project.** </a>
 Each Apache project uses an issue tracker dedicated to their project. The
 best way is to go via that project's web pages. If you still have trouble
-finding it, then try finding the project at
-[projects.apache.org](http://projects.apache.org/) or browsing
+finding it, try finding the project at
+[projects.apache.org](http://projects.apache.org/) or by browsing
 [issues.apache.org](http://issues.apache.org/).
 
-1. <a id="dirs" name="dirs"> **Domain ownership lookup/IP address tracing**
-</a>
-
-    - How to: Look up the owner of a domain<small>(such as
-foo.com)</small>:<br></br>&lt;URL:
-[http://www.networksolutions.com/cgi-bin/whois/whois](http://www.networksolutions.com/cgi-bin/whois/whois)
+1. <a id="dirs" name="dirs"> **Domain ownership lookup/IP address tracing** </a>
+How to: Look up the owner of a domain<small>(such as
+foo.com)</small>: [http://www.networksolutions.com/cgi-bin/whois/whois](http://www.networksolutions.com/cgi-bin/whois/whois)
 &gt;
-WHOIS database (tells you who owns a domain, such as foo.com)
+WHOIS database (tells you who owns a domain, such as foo.com).
 
     - How to: Look up the owner of an IP address<small>(such as
-10.0.35.147)</small>:<br></br>&lt;URL:
-[https://ws.arin.net/whois/](https://ws.arin.net/whois/) &gt;
+10.0.35.147):</small>:<br></br> [https://ws.arin.net/whois/](https://ws.arin.net/whois/).
 ARIN (Registered Internet Numbers) database (tells you who owns an IP
 address, such as 10.0.35.147, or which other database to query if the
 address is assigned outside the USA)
@@ -204,8 +187,7 @@ address is assigned outside the USA)
 trademarks, or you want to know if a use of an Apache trademark is related
 to the ASF** </a>
 You may read our [formal Trademark Policy](/foundation/marks/) as an
-introduction. Any questions about the use of Apache marks, including logos
-and project or product names, or the Apache name or feather should 
-[Contact the Brand Management Committee](/foundation/marks/contact) as well as to the relevant [Project
+introduction. For any questions about the use of Apache marks, including logos
+and project or product names, or the Apache name or feather, contact the
+[Brand Management Committee](/foundation/marks/contact) as well as to the relevant [Project
 Management Committee](//projects.apache.org/).
-
