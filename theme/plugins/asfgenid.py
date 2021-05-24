@@ -41,11 +41,7 @@ ASF_GENID = {
 ELEMENTID_RE = re.compile(r'(?:[ \t]*[{\[][ \t]*(?P<type>[#.])(?P<id>[-._:a-zA-Z0-9 ]+)[}\]])(\n|$)')
 
 # Find {{ metadata }}
-METADATA_RE = re.compile(r'{{\s*(?P<meta>[-._:a-zA-Z0-9\(\)\[\]]+)\s*}}')
-FIXUP_METADATA = [
-    (re.compile(r'\('),'['),
-    (re.compile(r'\)'),']')
-]
+METADATA_RE = re.compile(r'{{\s*(?P<meta>[-_:a-zA-Z0-9]+)\s*}}')
 
 # Find table tags
 TABLE_RE = re.compile(r'^table')
@@ -184,22 +180,9 @@ def expand_metadata(tag, metadata):
         m = METADATA_RE.search(this_string)
         if m:
             this_data = m.group(1).strip()
-            for regex, replace in FIXUP_METADATA:
-                n = regex.search(this_data)
-                if n:
-                    this_data = re.sub(regex, replace, this_data)
             format_string = '{{{0}}}'.format(this_data)
-            parts = this_data.split('.')
-            subs = parts[0].split('[')
             try:
-                # should refactor this to be more general
-                if len(subs) == 1 and isinstance(metadata[parts[0]], dict):
-                    ref = metadata
-                    for part in parts:
-                        ref = ref[part]
-                    new_string = ref
-                else:
-                    new_string = format_string.format(**metadata)
+                new_string = format_string.format(**metadata)
                 print(f'{{{{{m.group(1)}}}}} -> {new_string}')
             except Exception:
                 # the data expression was not found
