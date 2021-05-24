@@ -184,6 +184,7 @@ def expand_metadata(tag, metadata):
         m = METADATA_RE.search(this_string)
         if m:
             this_data = m.group(1).strip()
+            print(this_data)
             for regex, replace in FIXUP_METADATA:
                 n = regex.search(this_data)
                 if n:
