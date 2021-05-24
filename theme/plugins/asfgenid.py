@@ -41,9 +41,11 @@ ASF_GENID = {
 ELEMENTID_RE = re.compile(r'(?:[ \t]*[{\[][ \t]*(?P<type>[#.])(?P<id>[-._:a-zA-Z0-9 ]+)[}\]])(\n|$)')
 
 # Find {{ metadata }}
-METADATA_RE = re.compile(r'{{\s*(?P<meta>[-._:a-zA-Z0-9\(\)]+)\s*}}')
-LEFTPAREN_RE = re.compile(r'\(')
-RIGHTPAREN_RE = re.compile(r'\)')
+METADATA_RE = re.compile(r'{{\s*(?P<meta>[-._:a-zA-Z0-9\(\)\[\]]+)\s*}}')
+FIXUP_METADATA = [
+    (re.compile(r'\('),'['),
+    (re.compile(r'\)'),']')
+]
 
 # Find table tags
 TABLE_RE = re.compile(r'^table')
@@ -182,8 +184,10 @@ def expand_metadata(tag, metadata):
         m = METADATA_RE.search(this_string)
         if m:
             this_data = m.group(1).strip()
-            this_data = re.sub(LEFTPAREN_RE, '[', this_data)
-            this_data = re.sub(RIGHTPAREN_RE, ']', this_data)
+            for regex, replace in FIXUP_METADATA:
+                n = regex.search(this_data)
+                if n:
+                    this_data = re.sub(regex, replace, this_data)
             format_string = '{{{0}}}'.format(this_data)
             parts = this_data.split('.')
             subs = parts[0].split('[')
