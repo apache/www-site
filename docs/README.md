@@ -2,28 +2,39 @@
 
 This website is built using [Pelican][pelican].
 
+## Process
+
+| Pelican Step | Substep | GFM Content | EZMD Content | Description |
+|----------------|---------|-------|----|------|
+| Initialization | [ASF Data][asfdata] |   |   | Read data sources |
+| Reader         | Class   | GFMReader   | [ASFReader(GFMReader)][asfreader] | Pelican Reader class  |
+|                | Read    | read_source | super.read_source | read page source and metadata |
+|                | Data    |             | add_data    | add asf data to the model and expand any `[{ reference }]` |
+|                | Generate |            | ezt         | ezt template transformation |
+|                | Render  | render      | super.render | render GFM/HTML into HTML  |
+| Content        | [ASF Specific][asfgenid] | generate_id | generate_id | Perform ASF specific HTML enhancements |
+
+
 ## Content
 
 Content is [GitHub Flavored Markdown][mastering] (GFM) with [ASF specific enhancements][asfgenid] for Apache CMS style annotations.
 
 These file extensions **.md**, **.markdown**, **.mkd**, and **.mdown** are processed as GFM. **.md** is preferred.
 
-The ASF specific enhancements are controlled in [pelican settings][configure]
+The ASF specific enhancements are controlled in [pelican settings][configure] in the `ASF_GENID` dictionary.
 
-```python
-# Configure the asfgenid plugin
-ASF_GENID = {
-    'metadata': True,          # {{ metadata }} inclusion of data in the html.
-    'elements': True,	       # {#id} and {.class} annotations.
-    'headings': True,	       # add slugified id to headings missing id.
-    'headings_re': r'^h[1-4]', # regex for which headings to check.
-    'permalinks': True,	       # add permalinks to elements and headings when id is added.
-    'toc': True,  	       # check for [TOC] and add Table of Content if present.
-    'toc_headers': r"h[1-4]",  # regex for which headings to include in the [TOC]
-    'tables': True,	       # add class="table" for tables missing class.
-    'debug': False
-}
-```
+! step ! ASF_GENID key | default | process | page override |
+|------|-----|---------|---------|----------|
+! 1    |  -  | True    | fixup html that GFM marks as unsafe | |
+| 2    |  -  | True    | convert html into beautiful soup    | |
+| 3    | metadata | True | `{{ metadata }}` inclusion of data in the html | |
+| 4    |  -  | True    | inventory of all id attributes, duplicates are invalid | |
+| 5    | elements | True | find all `{#id}` and `{.class}` text and assign attributes | |
+| 6    | headings | True | assign ids to all headings w/o ids already present or assigned with `{#id}` text | asf_headings |
+|      | headings_re | `r'^h[1-6]'` | regex for finding headings that require ids | |
+| 7    | tables   | True | tables with a class attribute are assgned `class=table` | |
+| 8    | toc      | True | generate a table of contents if [TOC] is found | |
+|      | toc_headers | `r'h[1-6]'` | headings to include in the [TOC] | |
 
 ## Data
 

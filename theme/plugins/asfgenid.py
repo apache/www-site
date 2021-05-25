@@ -26,38 +26,18 @@ Which is BSD licensed, but is very much rewritten.
 '''
 
 ASF_GENID = {
-    'metadata': True,
-    'elements': True,
-    'headings': True,
-    'headings_re': r'^h[1-6]',
-    'toc': True,
-    'toc_headers': r'h[1-6]',
-    'permalinks': True,
-    'tables': True,
+    'metadata': True,          # {{ metadata }} inclusion of data in the html.
+    'elements': True,	       # {#id} and {.class} annotations.
+    'headings': True,	       # add slugified id to headings missing id. Can be overridden by page metadata.
+    'headings_re': r'^h[1-6]', # regex for which headings to check.
+    'permalinks': True,	       # add permalinks to elements and headings when id is added.
+    'toc': True,  	       # check for [TOC] and add Table of Content if present.
+    'toc_headers': r'h[1-6]',  # regex for which headings to include in the [TOC]
+    'tables': True,	       # add class="table" for tables missing class.
     'debug': False
 }
 
-# Find {#id} or {.class} trailing text
-ELEMENTID_RE = re.compile(r'(?:[ \t]*[{\[][ \t]*(?P<type>[#.])(?P<id>[-._:a-zA-Z0-9 ]+)[}\]])(\n|$)')
-
-# Find {{ metadata }}
-METADATA_RE = re.compile(r'{{\s*(?P<meta>[-_:a-zA-Z0-9]+)\s*}}')
-
-# Find table tags
-TABLE_RE = re.compile(r'^table')
-
-# ID duplicate counts
-IDCOUNT_RE = re.compile(r'^(.*)_([0-9]+)$')
-
-# For permalinks
-LINK_CHAR = '¶'
-
-# strips permalink chars from headings for ToC
-PARA_MAP = {
-    ord(LINK_CHAR): None
-}
-
-# Fixup tuples
+# Fixup tuples for HTML that GFM makes into text.
 FIXUP_UNSAFE = [
     (re.compile(r'&lt;script'),'<script'),
     (re.compile(r'&lt;/script'),'</script'),
@@ -67,7 +47,27 @@ FIXUP_UNSAFE = [
     (re.compile(r'&lt;/iframe'),'</iframe')
 ]
 
-# An item in a Table of Contents
+# Find {{ metadata }} inclusions
+METADATA_RE = re.compile(r'{{\s*(?P<meta>[-_:a-zA-Z0-9]+)\s*}}')
+
+# Find {#id} or {.class} elementid annotations
+ELEMENTID_RE = re.compile(r'(?:[ \t]*[{\[][ \t]*(?P<type>[#.])(?P<id>[-._:a-zA-Z0-9 ]+)[}\]])(\n|$)')
+
+# ID duplicates match
+IDCOUNT_RE = re.compile(r'^(.*)_([0-9]+)$')
+
+# For permalinks
+LINK_CHAR = '¶'
+
+# strip permalink chars from headings for ToC
+PARA_MAP = {
+    ord(LINK_CHAR): None
+}
+
+# Find table tags - to check for ones without class attribute.
+TABLE_RE = re.compile(r'^table')
+
+# An item in a Table of Contents - from toc.py
 class HtmlTreeNode(object):
     def __init__(self, parent, header, level, id):
         self.children = []
@@ -127,7 +127,7 @@ def init_default_config(pelican):
         pelican.settings.setdefault('ASF_GENID', ASF_GENID)
 
 
-# from Apache CMS markdown/extensions/headerid.py
+# from Apache CMS markdown/extensions/headerid.py - slugify in the same way as the Apache CMS
 def slugify(value, separator):
     """ Slugify a string, to make it URL friendly. """
     value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
@@ -135,7 +135,7 @@ def slugify(value, separator):
     return re.sub('[%s\\s]+' % separator, separator, value)
 
 
-# Ensure id is unique in set of ids. Append '_1', '_2'... if not
+# Ensure an id is unique in a set of ids. Append '_1', '_2'... if not
 def unique(id, ids):
     while id in ids or not id:
         m = IDCOUNT_RE.match(id)
@@ -195,7 +195,7 @@ def expand_metadata(tag, metadata):
         tag.string.replace_with(this_string)
 
 
-# do elementid transformation for {#id} and {.class}
+# do elementid transformation for {#id} and {.class} attribute annotations.
 def elementid_transform(ids, soup, tag, permalinks, perma_set, debug):
     tagnav = tag.parent
     this_string = str(tag.string)
@@ -236,6 +236,7 @@ def headingid_transform(ids, soup, tag, permalinks, perma_set):
     tag['id'] = unique(new_id, ids)
     if permalinks:
         permalink(soup, tag)
+        # inform if there is a duplicate permalink
         unique(tag['id'], perma_set)
 
 
@@ -270,10 +271,11 @@ def generate_toc(content, tags, title, toc_headers):
         tree_soup = ''
 
 
+# add the asfdata metadata into GFM content.
 def add_data(content):
     """ Mix in ASF data as metadata """
 
-    # if the reader is 'asf' then the asf metadata is already in place
+    # if the reader is 'asf' then the asf metadata is already in place during asfreader plugin.
     if content.metadata.get('reader') != 'asf':
         asf_metadata = content.settings.get('ASF_DATA', { }).get('metadata')
         if asf_metadata:
@@ -290,7 +292,7 @@ def generate_id(content):
     # track permalinks
     permalinks = set()
     
-    # step 1 - fixup html that cmark marks unsafe
+    # step 1 - fixup html that cmark marks unsafe - move to later?
     fixup_content(content)
 
     # step 2 - prepare for genid processes
@@ -318,7 +320,6 @@ def generate_id(content):
     if asf_genid['metadata']:
         if asf_genid['debug']:
             print(f'metadata expansion: {content.relative_source_path}')
-
         for tag in soup.findAll(string=METADATA_RE):
             expand_metadata(tag, content.metadata)
 
@@ -331,7 +332,6 @@ def generate_id(content):
     if asf_genid['elements']:
         if asf_genid['debug']:
             print(f'elementid: {content.relative_source_path}')
-
         for tag in soup.findAll(string=ELEMENTID_RE):
             elementid_transform(ids, soup, tag, asf_genid['permalinks'], permalinks, asf_genid['debug'])
 
@@ -339,7 +339,6 @@ def generate_id(content):
     if asf_headings == 'True':
         if asf_genid['debug']:
             print(f'headings: {content.relative_source_path}')
-
         # Find heading tags
         HEADING_RE = re.compile(asf_genid['headings_re'])
         for tag in soup.findAll(HEADING_RE, id=False):
@@ -349,7 +348,6 @@ def generate_id(content):
     if asf_genid['tables']:
         if asf_genid['debug']:
             print(f'tables: {content.relative_source_path}')
-
         for tag in soup.findAll(TABLE_RE, _class=False):
             tag['class'] = 'table'
 
