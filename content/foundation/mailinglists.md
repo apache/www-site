@@ -41,19 +41,25 @@ ASF committers can also use the Whimsy [Mailing List Self-subscription](https://
 ### Request addresses for [un]subscribing ###
 
 If you want to subscribe
-to <tt>*list*@apache.org</tt>, you need to send a message to
+to <code><em>list</em>@apache.org</code>, you need to send a message to
 
-<tt>*list*-subscribe@apache.org</tt>
+<pre>
+<em>list</em>-subscribe@apache.org
+</pre>
 
 To get off a list, send a message to
 
-<tt>*list*-**un**subscribe@apache.org</tt>
+<pre>
+<em>list</em>-<b>un</b>subscribe@apache.org
+</pre>
 
 To unsubscribe a different e-mail - e.g.
-you used to be subscribed as **user@oldname.example** - send a message
+you used to be subscribed as **`user@oldname.example`** - send a message
 to
 
-<tt>*list*-unsubscribe-**user=oldname.example**@apache.org</tt>
+<pre>
+<em>list</em>-unsubscribe-<b>user=oldname.example</b>@apache.org
+</pre>
 
 [The list moderators can also do this.]
 
@@ -83,7 +89,9 @@ For this reason we recommend that ASF and PMC members use
 To find out more about a list's features, including how to contact the list owner (moderator),
 send a message to 
 
-<tt>*list*-help@apache.org</tt>
+<pre>
+<em>list</em>-help@apache.org
+</pre>
 
 Ezmlm lists also generally provide subscribers with a way to request
 specific past messages or ranges of messages: send mail to the list's help
@@ -100,11 +108,15 @@ what mailing lists they are subscribed to by going to the following page:
 
 You can also subscribe to most mailing lists in digest form. To do this for <tt>*list*@apache.org</tt>, send a message to
 
-<tt>*list*-digest-subscribe@apache.org</tt>
+<pre>
+<em>list</em>-digest-subscribe@apache.org
+</pre>
 
 To get off a digest list, send a message to
 
-<tt>*list*-digest-**un**subscribe@apache.org</tt>
+<pre>
+<em>list</em>-digest-<b>un</b>subscribe@apache.org
+</pre>
 
 If you need to unsubscribe a different email or get help with a digest list the same instructions as for subscribing/unsubscribing 
 above apply. Just remember to add *-digest* after the list name and before the *-subscribe* or *-unsubscribe*.
