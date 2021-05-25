@@ -20,13 +20,10 @@ This repository provides the source for the main website of The Apache Software 
   - [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
 - [Documentation](docs/)
-  - [Data models](docs/data.md) - how the global data model works and how to enhance your data.
-  - [EZT templates](docs/ezt.md) - how ezt templates convert global data into content.
   - [Creating content](docs/markdown.md) - how to create markdown and mix it with html.
-  - [Processing](docs/process.md) - 
-  - [Preview/feature branches](docs/branches.md)
-  - Local builds
-  
+  - [Data models and ezt](docs/data.md) - how the global data model works and how to enhance your data.
+  - [Preview/feature branches](docs/branches.md) - how to make large or cooperative changes.
+  - [Local builds](docs/local.md) - how to develop and test changes locally.
 
 The website is built with [Pelican](https://blog.getpelican.com).
 Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
