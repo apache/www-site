@@ -3,39 +3,38 @@ Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom "A
 Comment: atom header to get a link like: "<link rel="alternate" title="ASF legal-discuss Mailing List" type="application/atom+xml" href="http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom" />" in the generated html header (in the body it would be trivial)
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-## Purpose and Intended Audience  {#purpose}
+## Purpose and intended audience  {#purpose}
 This document describes how Apache committers and PMC members should handle source file licensing and copyright notices.  
 It does not apply to developers outside the ASF who are applying the Apache License to their work.  The 
 <a href="/licenses/LICENSE-2.0.html#apply">appendix to the Apache License</a> describes how others can apply 
 the license to their work.  This page also does not describe requirements for
-<a href="/dev/apply-license.html#new">what goes in the standard LICENSE file</a> distributed with each Apache 
+<a href="https://infra.apache.org/apply-license.html#new">what goes in the standard LICENSE file</a> distributed with each Apache 
 product release, nor what are the <a href="/legal/resolved.html">acceptable licenses for distribution of third-party components</a>.  
 
 ## Overview  {#overview}
 Apache products are composed of lots of pieces of code across numerous source files, licensed to the ASF by various authors 
 who maintain ownership of their contributions.  When a PMC goes through the process of selecting, coordinating, and arranging 
-all these various contributions into a single product, the collective work is also protected by copyright law and is owned by 
-the ASF -- even though each individual piece of code is still owned by the contributor.  An Apache product may also
-include other components that were not submitted directly to the ASF, but are <a href="/legal/resolved.html">licensed in such a way</a>
+all these contributions into a single product, the collective work is also protected by copyright law and is owned by 
+the ASF -- even though each individual piece of code is still owned by its contributor.  An Apache product may also
+include other components that were not submitted directly to the ASF, but are <a href="/legal/resolved.html">licensed in a way</a>
 that is consistent with the ASF's licensing practices.
 
 Considering all of these factors, this document describes how to:
-- <a href="#headers">Label source headers of contributed source</a>,
-- <a href="#3party">Treat copyright and licensing of third-party works</a>, and
-- <a href="#notice">Use the NOTICE file to collect copyright notices and required attributions</a>.
 
-This document also includes:
-- <a href="#faq">Frequently Asked Questions</a>,
+- <a href="#headers">Label source headers of contributed source</a>
+- <a href="#3party">Treat copyright and licensing of third-party works</a>
+- <a href="#notice">Use the NOTICE file to collect copyright notices and required attributions</a>
 
-which will be updated as new questions come up on the <a href="/foundation/mailinglists.html#foundation-legal">legal-discuss</a> mailing list.
+This document also includes answers to <a href="#faq">Frequently Asked Questions</a>, which we update as new questions come up on the <a href="/foundation/mailinglists.html#foundation-legal">legal-discuss</a> mailing list.
 
 ## Notification of Updates to this Page  {#updates}
 Updates to this page are sent to the <a href="/foundation/mailinglists.html#foundation-legal">legal-discuss</a> mailing list. 
 
 
 ## Source File Headers for Code Developed at the ASF  {#headers}
-<ol start="0">  
- <li id="header-asf">This section refers only to works submitted directly to the ASF by the copyright owner or owner's agent.</li>
+
+This section refers only to works submitted directly to the ASF by the copyright owner or owner's agent.
+<ol>  
  <li id="header-existingcopyright">If the source file is submitted with a copyright notice included in it, the copyright owner (or owner's agent) must either:
     <ol type="a">
       <li>remove such notices, or</li>
@@ -69,17 +68,17 @@ Updates to this page are sent to the <a href="/foundation/mailinglists.html#foun
 <ol start="0">  
  <li id="3party-defn">The term "third-party work" refers to a work not submitted directly to the ASF by the copyright owner or owner's agent. This includes parts of a work submitted directly to the ASF for which the submitter is not the copyright owner or owner's agent. </li>
  <li id="3party-nomove">Do not modify or remove any copyright notices or licenses within third-party works.</li>
- <li id="3party-addlicense">Do ensure that every third-party work includes its associated license, even if that requires 
+ <li id="3party-addlicense">Make sure that every third-party work includes its associated license, even if that requires 
  adding a copy of the license from the third-party download site into the distribution.</li>
  <li id="3party-noapachelicense">Do not add the standard Apache License header to the top of third-party source files.</li>
- <li id="3party-minormodsok">Minor modifications/additions to third-party source files should typically be licensed under the same terms as the rest of the rest of the third-party source for convenience.</li>
- <li id="3party-majormodpmc">Major modifications/additions to third-party should be dealt with on a case-by-case basis by the PMC.</li>
+ <li id="3party-minormodsok">Minor modifications/additions to third-party source files should typically be licensed under the same terms as the rest of the third-party source for convenience.</li>
+ <li id="3party-majormodpmc">The project's PMC should deal with major modifications/additions to third-party source files on a case-by-case basis.</li>
 </ol>
 
 ## NOTICE file  {#notice}
 <ol start="0">  
  <li id="notice-required">Every Apache distribution should include a NOTICE file in the top directory, along with the standard LICENSE file.</li>
- <li id="notice-text">The top of each NOTICE file should include the following text, suitably modified to reflect the product name and year(s) 
+ <li id="notice-text">The top of each NOTICE file should include the following text, suitably modified to reflect the product name and the year(s) 
  of distribution of the current and past versions of the product:
 
     Apache [PRODUCT_NAME]
@@ -89,20 +88,20 @@ Updates to this page are sent to the <a href="/foundation/mailinglists.html#foun
     The Apache Software Foundation (http://www.apache.org/).
 
  </li>
- <li id="notice-other">The remainder of the NOTICE file is to be used for [required third-party notices][1].  
+ <li id="notice-other">Use the remainder of the NOTICE file to include [required third-party notices][1].  
  The NOTICE file may also include copyright notices moved <a href="#header-existingcopyright">from source files submitted to the ASF</a>.</li>
  <li>See also <a href="/dev/licensing-howto.html#mod-notice">Modifications to NOTICE</a></li>
 </ol>
 
 ## Frequently Asked Questions  {#faq}
 
-### Where can I find an example of the NOTICE file that is required to be included in every ASF release?  {#faq-examplenotice}
+### Where can I find an example of the NOTICE file that must be included in every ASF release?  {#faq-examplenotice}
 See the <a href="/licenses/example-NOTICE.txt">httpd project NOTICE example</a> or the <a href="/licenses/NOTICE-2.0.txt">boilerplate NOTICE file</a>
 
 ### Does this policy apply to documentation files included in a release?  {#faq-docs}
 Yes.
 
-### Does this policy also apply to content displayed on our web sites?  {#faq-webpages}
+### Does this policy apply to content displayed on our web sites?  {#faq-webpages}
 No.  Our web sites do not have an associated NOTICE file.  Instead we may soon be making the terms of such content
 explicit through a "Terms of Use" or "Legal Information" link in the footer of web pages.  At this point, no action is
 required for Apache web sites.
@@ -118,11 +117,11 @@ A file without any degree of creativity in either its literal elements or its st
 copyright law; therefore, such a file does not require a license header.  If in doubt about the extent of the
 file's creativity, add the license header to the file.
 
-Other files may make sense to have no license header. Three examples are: 
+It may make sense for some other files to have no license header. Three examples are: 
 
 - Short informational text files; for example README, INSTALL files. The expectation is that these files make it obvious which product they relate to.
 - Test data for which the addition of a source header would cause the tests to fail. 
-- 'Snippet' files that are combined as form a larger file where the larger file would have duplicate licensing headers. 
+- 'Snippet' files that are included in a larger file, when the larger file would have duplicate licensing headers. 
 
 PMCs should use their judgement, err on having a source header and contact legal-discuss@ if unsure. 
 
@@ -134,8 +133,8 @@ form may be used.
 
     "Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0. "
 
-Any additional licensing information relevant to the file (ie. that would ordinarily be in the NOTICE) 
-should be noted directly in the file when the short form is used.
+Provide any additional licensing information relevant to the file (ie. that would ordinarily be in the NOTICE) 
+directly in the file when the short form is used.
 
 PMCs should use their judgement, err on having a full source header and contact legal-discuss@ if unsure. 
 
@@ -156,7 +155,7 @@ third-party source (not contributed directly to the project), then any copyright
 the media should be copied into the NOTICE file. 
 
 ### Why is a licensing header necessary?  {#faq-whyheader}
-License headers allow someone examining the file to know the terms for the work, even when it is distributed without 
+License headers allow someone examining the file to know the terms governing use of the work, even when it is distributed without 
 the rest of the distribution.  Without a licensing notice, it must be assumed that the author has reserved all rights, 
 including the right to copy, modify, and redistribute.
 
