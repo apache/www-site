@@ -192,7 +192,7 @@ provide the TCK for the project. The following guidelines apply to working
 with TCKs at the ASF:
 
 - A project can request access to a TCK by sending email to [the JCP open
-list.](mailto:jcp-open@apache.org?Subject=Need TCK for Apache Project) 
+list](mailto:jcp-open@apache.org?Subject=Need%20TCK%20for%20Apache%20Project). 
 
 - This TCK is for use * **only** * for the purpose of the Apache project,
 and no other.
