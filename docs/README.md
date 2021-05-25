@@ -25,7 +25,7 @@ The ASF specific enhancements are controlled in [pelican settings][configure] in
 
 | step | ASF_GENID key | default | process | page override |
 |------|-----|---------|---------|----------|
-! 1    |  -  | True    | fixup html that GFM marks as unsafe | |
+| 1    |  -  | True    | fixup html that GFM marks as unsafe | |
 | 2    |  -  | True    | convert html into beautiful soup    | |
 | 3    | metadata | True | `{{ metadata }}` inclusion of data in the html | |
 | 4    |  -  | True    | inventory of all id attributes, duplicates are invalid | |
@@ -44,7 +44,7 @@ The file extension **.ezmd** is processed with ASF python style directives and a
 
 ### Data Model
 
-The [data model[[datamodel] file specifies three types of data:
+The [data model][datamodel] file specifies three types of data:
 
 1. Constants. These metadata are made available to ezmd, asfgenid, and pelican templates.
 
