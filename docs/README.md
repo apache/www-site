@@ -23,7 +23,7 @@ These file extensions **.md**, **.markdown**, **.mkd**, and **.mdown** are proce
 
 The ASF specific enhancements are controlled in [pelican settings][configure] in the `ASF_GENID` dictionary.
 
-! step ! ASF_GENID key | default | process | page override |
+| step | ASF_GENID key | default | process | page override |
 |------|-----|---------|---------|----------|
 ! 1    |  -  | True    | fixup html that GFM marks as unsafe | |
 | 2    |  -  | True    | convert html into beautiful soup    | |
