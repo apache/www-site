@@ -44,5 +44,5 @@ This is a [custom theme][1]. Pelican templates use [Jinja][2]
 The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/templates) was not migrated and remains available.
 
 
-[1] https://docs.getpelican.com/en/latest/themes.html
-[2] https://jinja.palletsprojects.com/en/3.0.x/
+[1]: https://docs.getpelican.com/en/latest/themes.html
+[2]: https://jinja.palletsprojects.com/en/3.0.x/
