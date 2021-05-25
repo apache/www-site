@@ -114,7 +114,7 @@ specification
 If you are interested in representing the ASF on a new or existing expert
 group that doesn't have ASF representation, or participating with the
 existing activities on an expert group, please [send email to the JCP open
-list](mailto:jcp-open@apache.org?Subject=Interest in Participation) and
+list](mailto:jcp-open@apache.org?Subject=Interest%20in%20Participation) and
 indicate your interest.
 
 ### Current Representation  {#CurrentReps}
