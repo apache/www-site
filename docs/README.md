@@ -151,22 +151,24 @@ Content is [GitHub Flavored Markdown][mastering] (GFM) with [ASF specific enhanc
 
 
 
-### Generate ID
+## Generate ID
 
-The ASF specific enhancements are controlled in [pelican settings][configure] in the `ASF_GENID` dictionary.
+The `asfgenid` plugin is used to perform modifications on the generated content that mimics the markdown extensions in the Apache CMS.
+Much of these ASF specific enhancements are controlled in [pelican settings][configure] in the `ASF_GENID` dictionary.
 
 | step | ASF_GENID key | default | process | page override |
 |-----:|-----|:--------:|---------|----------|
-| 1    |  -          | True        | fixup html that GFM marks as unsafe | |
-| 2    |  -          | True        | convert html into beautiful soup    | |
+| 1    |  -          | -           | fixup some html tags that the GFM autofilter extension marks as unsafe | |
+| 2    |  -          | -           | convert html into beautiful soup    | |
 | 3    | metadata    | True        | `{{ metadata }}` inclusion of data in the html | |
 | 4    |  -          | True        | inventory of all id attributes, duplicates are invalid | |
 | 5    | elements    | True        | find all `{#id}` and `{.class}` text and assign attributes | |
 | 6    | headings    | True        | assign ids to all headings w/o ids already present or assigned with `{#id}` text | asf_headings |
 |      | headings_re | `r'^h[1-6]'` | regex for finding headings that require ids | |
 | 7    | tables      | True        | tables with a class attribute are assgned `class=table` | |
-| 8    | toc         | True        | generate a table of contents if [TOC] is found | |
+| 8    | toc         | True        | generate a table of contents if [TOC] is found. If this is set to False then the `toc.py` plugin may used. | |
 |      | toc_headers | `r'h[1-6]'` | headings to include in the [TOC] | |
+| 9    |  -          | -           | convert beautiful soup back into html | |
 
 ## Data
 
