@@ -13,7 +13,7 @@ This website is built using [Pelican][pelican].
 |                | [Generate][ezt]          |             | ezt          | ezt template transformation |
 |                | [Render GFM][markdown]   | render      | super.render | render GFM/HTML into HTML  |
 | Content        | [Generate ID][asfgenid]  | generate_id | generate_id  | Perform ASF specific HTML enhancements |
-! Template       | [Template][template]     | translate   | translate    | Create output HTML by pushing the generated content and metadata through the theme's templates. |
+| Template       | [Template][template]     | translate   | translate    | Create output HTML by pushing the generated content and metadata through the theme's templates. |
 
 ## Content
 
@@ -183,7 +183,7 @@ IGNORE_FILES = ['README.md','interviews','include']
 [configure]: 	../pelicanconf.py
 [datamodel]:	../asfdata.yaml
 [markdown]:  	#markdown
-[data}:		#data
+[data]:		#data
 [ezt]:  	#ezt
 [process]:   	#process
 [branches]:  	#branches
