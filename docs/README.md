@@ -279,7 +279,7 @@ Pelican uses [HTML templates][templates]. Templates have [pelican metadata][vari
 [read]:         #read-source
 [metadata]:	#model-metadata
 [markdown]:  	#markdown
-[data}:		#data
+[data]:		#data
 [ezt]:  	#ezt
 [process]:   	#process
 [branches]:  	#branches
