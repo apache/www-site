@@ -4,22 +4,25 @@ This website is built using [Pelican][pelican].
 
 ## Process
 
-| Pelican Step | Substep | GFM Content | EZMD Content | Description |
-|----------------|---------|-------|----|------|
-| Initialization | [ASF Data][asfdata] |   |   | Read data sources |
-| Reader         | Class   | GFMReader   | [ASFReader(GFMReader)][asfreader] | Pelican Reader class  |
-|                | Read    | read_source | super.read_source | read page source and metadata |
-|                | Data    |             | add_data    | add asf data to the model and expand any `[{ reference }]` |
-|                | Generate |            | ezt         | ezt template transformation |
-|                | Render  | render      | super.render | render GFM/HTML into HTML  |
-| Content        | [ASF Specific][asfgenid] | generate_id | generate_id | Perform ASF specific HTML enhancements |
-
+| Pelican Step | Substep | [GFM Content][pelican-gfm] | [EZMD Content][asfreader] | Description |
+|----------------|---------|:-----:|:--:|------|
+| Initialization | [Data Model][asfdata]    |             |              | Read data sources |
+| Reader         | Class     | [GFMReader][pelican-gfm]   | [ASFReader(GFMReader)][asfreader] | Pelican Reader class  |
+|                | [Read][read]             | read_source | super.read_source | read page source and metadata |
+|                | [Metadata][asfref]       |             | add_data     | add asf data to the model and expand any `[{ reference }]` |
+|                | [Generate][ezt]          |             | ezt          | ezt template transformation |
+|                | [Render GFM][markdown]   | render      | super.render | render GFM/HTML into HTML  |
+| Content        | [Generate ID][asfgenid]  | generate_id | generate_id  | Perform ASF specific HTML enhancements |
+! Template       | [Template][template]     | translate   | translate    | Create output HTML by pushing the generated content and metadata through the theme's templates. |
 
 ## Content
 
 Content is [GitHub Flavored Markdown][mastering] (GFM) with [ASF specific enhancements][asfgenid] for Apache CMS style annotations.
 
 These file extensions **.md**, **.markdown**, **.mkd**, and **.mdown** are processed as GFM. **.md** is preferred.
+
+
+### Generate ID
 
 The ASF specific enhancements are controlled in [pelican settings][configure] in the `ASF_GENID` dictionary.
 
@@ -168,19 +171,23 @@ IGNORE_FILES = ['README.md','interviews','include']
 [gfmspec]:	https://github.blog/2017-03-14-a-formal-spec-for-github-markdown/
 [ezt]:		https://github.com/gstein/ezt
 [eztsyntax]:	https://github.com/gstein/ezt/blob/wiki/Syntax.md
-[templates]:	https://docs.getpelican.com/en/latest/themes.html#structure
+[structure]:	https://docs.getpelican.com/en/latest/themes.html#structure
 [variables]:	https://docs.getpelican.com/en/latest/themes.html#templates-and-variables
 [pagemodel]:	https://docs.getpelican.com/en/latest/themes.html#page
 [settings]:	https://docs.getpelican.com/en/latest/settings.html#
 [pelicanasf]:	https://github.com/apache/infrastructure-p6/tree/production/modules/pelican_asf/files
-[asfdata]:	../theme/plugins/asfdata.py
-[asfreader]:	../theme/plugins/asfreader.py
-[asfgenid]:	../theme/plugins/asfgenid.py
+[asfdata]:	#data-model
+[asfreader]:	#ezmd-reader
+[asfgenid]:	#generate-id
 [theme]:     	../theme/apache/templates/.
 [configure]: 	../pelicanconf.py
 [datamodel]:	../asfdata.yaml
-[markdown]:  	./markdown.md
-[data_ezt]:  	./data_ezt.md
-[process]:   	./process.md
-[branches]:  	./branches.md
-[local]:     	./local.md
+[markdown]:  	#markdown
+[data}:		#data
+[ezt]:  	#ezt
+[process]:   	#process
+[branches]:  	#branches
+[local]:     	#local
+[asfref]:	#reference
+[templates]:	#templates
+[pelican-gfm]:	#pelican-gfm
