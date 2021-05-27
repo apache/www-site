@@ -3,15 +3,15 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 
 This page answers most of the common queries that we receive about our
-licenses, licensing of our software, and packaging or redistributing of our software. For 
-non-licensing questions, please see our [General FAQ](/foundation/preFAQ.html).
+licenses, and about licensing, packaging or redistributing our software. For 
+non-licensing questions, see our [General FAQ](/foundation/preFAQ.html).
 
 # Frequent Questions about Apache Licensing #
 
 1.  [Where can I find the Apache license?](#License) 
 
-1.  [Why are the license files for the different Apache Software Foundation
-projects different?](#Scope) 
+1.  [Why are license files different for different Apache Software Foundation
+projects?](#Scope) 
 
 1.  [Is 'Apache' a trademark?](#Marks) 
 
@@ -29,13 +29,13 @@ the various Apache software packages?](#Export)
 
 1. [May I re-use (and modify) the Apache License 2.0 itself?](#mod-license)
 
-1.  [I've made improvements to the Apache code; may I distribute
+1.  [I've made improvements to Apache code; may I distribute
 it?](#Distribute-changes) 
 
 1.  [May I call my modified code 'Apache'?](#Name-changes) 
 
 1.  [I have made changes to an Apache package and I want to distribute
-them. Do I need to contribute them to the Apache Software
+it. Do I need to contribute the changes to the Apache Software
 Foundation?](#Must-Contribute) 
 
 1.  [May I translate the Apache license into my local language for my
@@ -48,23 +48,18 @@ License)?](#GPL)
 
 1.  [Can ASF PMCs host projects that are not under the Apache License?](#licenses)
 
-1.  [Are contributor's employers required to sign a CCLA?](#cclas-not-required)
+1.  [Are contributors' employers required to sign a CCLA?](#cclas-not-required)
 
 1.  [What is the provenance of source code from the ASF?](#provenance)
 
-If none of the above addresses your query, please check the [resources at
-the bottom of this page](#resources) for general information.
+If none of the above addresses your query, check the [resources at
+the bottom of this page](#resources) for further information.
 
-# Answers #
 
-Here are the detailed answers for each of the questions above.
 
 ## Where can I find the Apache license?  {#License}
 
-You can find the Apache License 2.0 (the current version) here:
-
-- Apache License 2.0:
-[http://www.apache.org/licenses/LICENSE-2.0.txt](/licenses/LICENSE-2.0.txt) 
+You can find the Apache License 2.0 (the current version) here: [http://www.apache.org/licenses/LICENSE-2.0.txt](/licenses/LICENSE-2.0.txt) 
 
 These are two older versions that we no longer use:
 
@@ -74,11 +69,11 @@ These are two older versions that we no longer use:
 - Apache Software License 1.0:
 [http://www.apache.org/licenses/LICENSE-1.0.txt](/licenses/LICENSE-1.0.txt) 
 
-## Why are the license files for the different Apache Software Foundation projects different?  {#Scope}
+## Why are license files different for different Apache Software Foundation projects?  {#Scope}
 
-While the core Apache developed code will be under one of the Apache
-licenses, other third party works may have been included and their license
-text may have been added to the Apache projects' LICENSE or NOTICE files.
+While the core Apache-developed code will be under one of the Apache
+licenses, other third-party works may have been included and their license
+text may have been added to the Apache project's LICENSE or NOTICE files.
 Alternatively, they may be available separately.
 
 ## Is 'Apache' a trademark?  {#Marks}
@@ -86,37 +81,34 @@ Alternatively, they may be available separately.
 'Apache', 'Apache Software Foundation', the multicoloured feather, and the
 various Apache project names and logos are either registered trademarks or trademarks of The Apache
 Software Foundation in the United States and other countries. 
-Please see our [Trademark Policy](marks/) for details of how to use Apache project trademarks
-or our helpful [site map of trademark resources](marks/resources).
+See our [Trademark Policy](marks/) for details of how to use Apache project trademarks, and our helpful [site map of trademark resources](marks/resources).
 
 ## Is software from The Apache Software Foundation free of charge?  {#IsItFree}
 
 Yes. **All** software developed by **all** projects of The Apache Software
 Foundation is freely available without charge from the Foundation's web
 sites. This is specified in the Foundation's [Articles of
-Incorporation](records/incorporator.html) and explained in 
-[more detail about why our software is always free](/free/) (no charge).
+Incorporation](records/incorporator.html) and [explained in 
+more detail](/free/) why our software is always free (no charge).
 
 This is regardless of the use of the software. We do not distinguish between personal, internal, or 
-commercial use of our software, and we do not charge for any of them. A reminder, however, that the terms 
+commercial use of our software, and we do not charge for any of these uses. A reminder, however, that the terms 
 of [our license](#License) always apply.
 
 ## What are the U.S. Export Classification Control Numbers (ECCNs) for the various Apache software packages?  {#Export}
 
-Please see the [ASF Exports Classifications and Source
+See the [ASF Exports Classifications and Source
 Links](/licenses/exports/) page.
 
 ## May I license my own software under the Apache license?  {#My-License}
 
-Certainly. Version 2.0 of the license was designed to be reusable, and
-often has been reused by parties other than the ASF.
-
+Certainly. Version 2.0 of the license was designed to be reusable, and many parties other than the ASF use it.
 
 ## How should I apply the Apache License to my own software?  {#Apply-My-Software}
 
-You should include a copy of the Apache License, typically in a file called LICENSE, in your work, and consider also including a NOTICE file. 
+Include a copy of the Apache License, typically in a file called LICENSE, in your work, and consider also including a NOTICE file. 
 
-It is also valuable to tag each of your source code files in case they become detached from the LICENSE file. To apply the Apache License to your source code files, one approach is to attach the following boilerplate notice to as a comment at the top of the files. You should replace the Copyright templates with your own identifying information:
+It is also valuable to tag each of your source-code files in case they become detached from the LICENSE file. To apply the Apache License to your source-code files, one approach is to attach the following notice to as a comment at the top of each file. Replace the copyright templates with your own identifying information:
 
     Copyright [yyyy] [name of copyright owner]
     
@@ -142,13 +134,13 @@ Note that the Apache Software Foundation uses a different source header that is 
 
 ## May I re-use (and modify) the ASF Contributor License Agreements (CLAs) for my own purposes?  {#CLA-Usage}
 
-Yes, you are allowed to re-use and modify them. You just can't hold the ASF
+Yes, you can re-use and modify them; You just can't hold the ASF
 legally responsible if these documents are not exactly what you intend them
 to be. We recommend that you obtain your own legal advice so you know
 exactly what you are getting yourself into.
 
-And if you adapt these agreements for your purposes, you have to make
-sure that the phrase 'Apache Software Foundation' or any confusingly
+If you adapt these agreements for your own purposes, make
+sure that the phrase 'Apache Software Foundation' and any confusingly
 similar references or parts that specifically refer to the Apache
 organisation do not appear in your version of the agreements (except to
 note that your version is derived and differs from the original provided by
@@ -156,25 +148,25 @@ the ASF).
 
 ## May I re-use (and modify) the Apache License 2.0 itself?  {#mod-license}
 
-You are allowed to re-use our license unchanged, and also to modify it.
+You may re-use our license unchanged, and also modify it.
 
 If you modify it, you are on your own from a legal point of view, and the result
 is NOT the Apache License, just a new license inspired by ours.
 
-This means that the terms 'Apache License', 'Apache', or any similar references
+This means that the terms 'Apache License', 'Apache', and any similar references
 to the ASF cannot appear in your modified license, other than to state that it differs
 from the original.
 
 Also, you cannot use 'Apache' in the name of the modified license.
-Names like "Apache License with such-and-such clause" for example are not acceptable,
+Names like "Apache License with such-and-such clause", for example, are not acceptable,
 as they cause confusion.
 
-Creating a new license is non-trivial; if you do that we recommend that you get your own legal advice.
+Creating a new license is a non-trivial task. If you do that we recommend that you get your own legal advice.
 
 ## I've made improvements to the Apache code; may I distribute the modified result?  {#Distribute-changes}
 
 Absolutely -- subject to the [terms of the Apache license](/licenses/LICENSE-2.0#redistribution), 
-of course. You can give your modified code away for free, or sell it, or keep it to
+of course. You can give your modified code away for free, sell it, keep it to
 yourself, or whatever you like. Just remember that the original code is
 still covered by the Apache license and you must comply with its terms.
 Even if you change every single line of the Apache code you're using, the
@@ -182,7 +174,7 @@ result is still based on the Foundation's licensed code. You may distribute
 the result under a different license, but you need to acknowledge the use
 of the Foundation's software. To do otherwise would be stealing.
 
-If you think your changes would be found useful by others, though, we *do*
+If you think others would find your changes useful, though, we *do*
 encourage you to submit them to the appropriate Apache project for possible
 inclusion.
 
@@ -190,11 +182,10 @@ inclusion.
 
 ## May I call my modified code 'Apache'?  {#Name-changes}
 
-In a word, **no**. You may, however, use phrasing such as 'based on
+**No**. You may, however, use phrasing such as 'based on
 Apache', 'powered by Apache', or 'based on Apache technology'. You **must
 not** use the Foundation's marks in any way that states or implies, or can
-be interpreted as stating or implying, that the final product is endorsed
-or created by the Apache Software Foundation. For example, it would be
+be interpreted as stating or implying, that the Apache Software Foundation endorses or created the final product. For example, it would be
 acceptable to use a name like 'SuperWonderServer powered by Apache', but
 never a name like 'Apache SuperWonderServer'. This is similar to the
 distinction between a product named 'Microsoft Burp' and 'Burp for
@@ -205,15 +196,12 @@ you're using, such as with 'based on Apache Xerces' or 'powered by Apache
 Tomcat technology'.
 
 If you wish to use a name including any of the Foundation's marks, such as
-the word 'Apache', it's best to ask our permission first. Please see our
+the word 'Apache', ask our permission first. See our
 [Trademark Policy](foundation/marks/) for more details.
 
 ## I have made changes to an Apache package and I want to distribute them. Do I need to contribute them to the Apache Software Foundation?  {#Must-Contribute}
 
-No. You can keep your changes a secret if you like. Maybe your
-modifications are embarrassing, maybe you'll get rich selling those
-improvements. Whatever. But please seriously consider giving your changes
-back! We all benefit when you do.
+No. You can keep your changes a secret if you like. But please seriously consider contributing your changes to the project from which your got the original code. We all benefit when you do.
 
 ## May I translate the Apache license into my local language for my redistribution of Apache packages?  {#Translation}
 
@@ -256,7 +244,7 @@ contribution is included in that Work, none of my patent's claims are
 subject to Apache's Grant of Patent License, is there a way any of
 those claims would later become subject to the Grant of Patent License
 solely due to subsequent contributions by other parties who are not
-licensees of that patent.</dd>
+licensees of that patent?</dd>
 <dt>A1:</dt>
 <dd>No.</dd>
 <dt>Q2:</dt>
@@ -293,10 +281,10 @@ of releases.</dd>
 
 
 ## Can ASF PMCs host projects that are not under the Apache License?  {#licenses}
-No. If you are an ASF PMC with a truly exceptional situation, please create a JIRA issue.
+No. If you are an ASF PMC with a truly exceptional situation, please create a JIRA issue about it.
 
 
-## Are contributor's employers required to sign a CCLA?  {#cclas-not-required}
+## Are contributors' employers required to sign a CCLA?  {#cclas-not-required}
 
 Only if their employment situation necessitates that a CCLA be signed.
 See section 4 of the ICLA for details.
@@ -309,8 +297,8 @@ they can or cannot make that claim regarding any particular commit to whichever
 particular project they are committing in.
 
 The CCLA is a backup document that the committer/ICLA signer may use to 
-eliminate all of the ambiguity between all these conflicting laws, contracts,
-policies and job assignments.  We've never required it, many committers
+eliminate ambiguity between all these conflicting laws, contracts,
+policies and job assignments.  We've never required it; many committers
 are confident of their individual representations under the ICLA, many other
 committers find it reassuring that their company has backed up their own
 ICLA with this umbrella document.
@@ -319,7 +307,7 @@ It is the ICLA signatory's call if it is required, but it isn't exactly an easy
 call for many committers employed in the IT/Software industry.
 
 Finally, see section 8 of the ICLA, which requires signers to notify the
-Foundation when their status changes in ways that may require this to
+Foundation when their status changes in ways that may require their ICLA to
 be reassessed.
 
 
@@ -336,28 +324,28 @@ header which refers to the standard Apache license in the distribution.
 
 #### Code developed elsewhere, licensed to Apache under a Software Grant Agreement, incorporated into Apache projects, distributed by Apache, and licensed to downstream users under the Apache license
 
-This is code that is being brought into Apache for future development as part 
+This is code that is brought into Apache for future development as part 
 of an Apache project. The headers on all files are changed to the standard Apache 
-header. Most incubator projects start as externally-developed code and the 
+header. Most incubator projects start with a repository of externally-developed code and the 
 Intellectual Property Clearance process is done as part of incubation. 
 
-Code that is originally developed elsewhere and is being brought into Apache for 
+Code that is originally developed elsewhere and is brought into Apache for 
 future development as part of an existing project must have the Intellectual Property 
 Clearance process done explicitly by the PMC of the receiving project, under the 
-auspices of the Incubator PMC which must approve the process. 
+auspices of the Incubator PMC, which must approve the process. 
 
 #### Code developed elsewhere, received under a Category A license, incorporated into Apache projects, distributed by Apache, and licensed to downstream users under its original license
 
-This code retains its external identity and is being incorporated into an Apache project 
+This code retains its external identity and is incorporated into an Apache project 
 for convenience, to avoid referencing an external repository whose contents are not 
-under control of the project. The code retains its original license; and distribution as 
+under control of the project. The code retains its original license, and distribution as 
 part of the Apache project explicitly calls out the license. The code retains its original 
-header which refers to its own license in the distribution. If changes are made to the 
+headerm, which refers to its own license in the distribution. If changes are made to the 
 code while at Apache, the standard Apache header is prepended to each changed 
 file. Additionally, any legally-required notices related to the code are published in the 
 distribution.
 
-# Another Place to Look  {#resources}
+# Another place to Look  {#resources}
 
 If you have questions about The Apache Software Foundation, its projects,
 or its software, we recommend the following link for more information or
@@ -368,4 +356,4 @@ FAQ](/foundation/preFAQ.html)
 
 If you have a question specifically about the Apache license or
 distribution of Apache software, and it has not been answered by this page,
-please [contact the Legal Affairs Committee](/legal/).
+[contact the Legal Affairs Committee](/legal/).
