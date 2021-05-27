@@ -2,24 +2,42 @@
 
 The Apache Theme included here consists two types of files.
 
-1. Page templates.
-2. CSS stylesheets.
+- Page templates.
+- CSS stylesheets.
 
 ## Page Templates
 
-1. base.html - the main template. Other templates extend this template automatically even those in the default pelican thme.
-2. page.html - this overrides pelican's default page.html which includes `<h1>{{ page.title }}</h1>`. We don't want that behavior.
+- base.html - the main template. Other templates extend this template automatically even those in the default pelican thme.
+- page.html - this overrides pelican's default/simple page.html which includes `<h1>{{ page.title }}</h1>`.
+  We don't want that behavior.
 
-Change the base page as necessary and add new page types as required.
+Change `base.html` as necessary. Add new override templates if required.
+See [Pelican documentation](https://docs.getpelican.com/en/latest/themes.html#inheritance) about inheritance from the simple theme.
 
 ## CSS Stylesheets
 
-These are site or template specific overrides to the stylesheet frameworks.
-You can choose to include these in your template, or you can move the file into your assets.
+In this site the css included by `base.html` is found in the `content` tree.
+There are site or template specific overrides to the stylesheet frameworks, but these are not done as Pelican specifies.
 
-1. styles.css - consists of custom site CSS overrides. Edit as needed. Here we inlcude the css for our style of permalink.
+- styles.css - consists of custom site CSS overrides. Edit as needed. Here we include the css for the ASF permalink style.
+  This file is in the same directory as the html and is included inline with `{% include "styles.css" %}`
 
-Each of the above files should be edited as needed for the deployed website.
+## Page Metadata
+
+This theme uses the following metadata:
+
+- Title. Used in `base.html` with `<title>{{ page.title }}</title>` to provide the page title.
+
+- Notice. This is notice text which is typically a link to the license.
+
+  `{% if page.notice %}<!-- {{ page.notice }} -->{% endif %}`
+
+- License. This is an alternative to Notice.
+
+- bodytag. This adds attributes to the `<body>` element.
+  This is allows the main `index.ezmd` to have the same template, but with differing layout.
+
+  `<body{% if page.bodytag %} {{ page.bodytag }}{% endif %} >`   
 
 ## Pelican Settings
 
@@ -34,6 +52,11 @@ CURRENTYEAR = date.today().year
 ~~~
 
 The file contains helpful comments about the settings.
+
+- In `base.html` `CURRENTYEAR` is used for the copyright.
+
+  `Copyright &#169; {{ CURRENTYEAR }} The Apache Software Foundation`
+
 
 ## Pelican Themes
 
