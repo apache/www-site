@@ -20,7 +20,7 @@ This repository provides the source for the main website of The Apache Software 
   - [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
 - [Documentation](docs/)
-  - [Markdown](docs/markdown.md) focuses on what users need to know about GitHub Flavored Markdown (GFM) in order to main content.
+  - [Markdown](docs/markdown.md) focuses on what users need to know about GitHub Flavored Markdown (GFM) in order to maintain content.
   - [Feature branches](docs/branches.md) focuses on handling major changes.
   - [Process](docs/process.md) describes the full end to end build from the developers perspecitve.
   - [Data modeling](docs/data.md) focuses on what developers need to know in order to maintain and expand on the metadata made available to the site.
