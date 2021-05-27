@@ -16,7 +16,7 @@ A successful build will be found at https://www-feature.staged.apache.org/
 
 ## [Merging preview/feature back to main](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
-Once your feature is complete you submit a PR from `preview/feature` to `main`. Make sure that you exclude `.asf.yaml`. (What's the best way?)
+Once your feature is complete you submit a PR from `preview/feature` to `main`. Once the PR is merged the site is updated to include the updated features.
 
 ## Example
 
@@ -25,3 +25,19 @@ Once your feature is complete you submit a PR from `preview/feature` to `main`. 
 2. Work on `preview/bootstrap5` branch to update bootstrap to version 5 with preview builds staged at https://www-bootstrap5.staged.apache.org/
 
 3. Submit PR to merge `preview/bootstrap` back to `main`
+
+## [.asf.yaml](../.asf.yaml) settings
+
+These settings do the automatic staging of preview branches.
+
+```yaml
+pelican:
+  autobuild: preview/*
+  target: asf-site
+  theme: theme/apache
+  whoami: main
+
+staging:
+  profile: ~
+  autostage: preview/*
+```
