@@ -253,11 +253,11 @@ Code from `asfreader.py`
 
 Content is in [GitHub Flavored Markdown][mastering] (GFM).
 
-The site uses a version of [cmark-gfm][gfm] by [GitHub][gfmspec] through a Pelican Plugin *gfm.py* created by Apache Infra.
+The site uses a version of [cmark-gfm][gfm] by [GitHub][gfmspec] through the [pelican-gfm][pelican-gfm] plugin created by Apache Infra.
 
 - [Mastering Markdown][mastering]
 
-- [Detailed Specification][4]
+- [Detailed Specification][4] with many examples
 
 - Some differences from `markdown.pl` used in the Apache CMS.
 
@@ -278,7 +278,7 @@ The site uses a version of [cmark-gfm][gfm] by [GitHub][gfmspec] through a Pelic
 
 ### Pelican GFM
 
-The main purpose for the `pelican-gfm` is to [read][read] the content file and render to HTML.
+The `pelican-gfm` plugin [reads][read] the content file and renders it to HTML.
 
 From `asfreader.py`:
 
@@ -332,6 +332,21 @@ Many of these ASF-specific enhancements are controlled in [pelican settings][con
 | 8    | toc         | True        | generate a table of contents if [TOC] is found. If this is set to False then the `toc.py` plugin may used. | |
 |      | toc_headers | `r'h[1-6]'` | headings to include in the [TOC] | |
 | 9    |  -          | -           | convert beautiful soup back into HTML | |
+
+```python
+# Configure the asfgenid plugin
+ASF_GENID = {
+    'metadata': True,
+    'elements': True,
+    'headings': True,
+    'headings_re': r'^h[1-4]',
+    'permalinks': True,
+    'toc': True,
+    'toc_headers': r"h[1-4]",
+    'tables': True,
+    'debug': False
+}
+```
 
 ### Element examples
 
