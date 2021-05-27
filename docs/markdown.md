@@ -4,11 +4,11 @@ Content is in [GitHub Flavored Markdown][3] (GFM).
 
 File extensions are **md**, **markdown**, **mkd**, and **mdown**. If you have an **mdtext** file it is from the Apache CMS.
 
-The site uses a version of [cmark-gfm][1] by [GitHub][2] through a Pelican Plugin *gfm.py* created by Apache Infra.
+The site uses a version of [cmark-gfm][1] by [GitHub][2] through the `pelican-gfm` plugin created by Apache Infra.
 
 - [Mastering Markdown][3]
 
-- [Detailed Specification][4]
+- [Detailed Specification][4] with many examples
 
 - Some differences from `markdown.pl` used in the Apache CMS.
 
@@ -58,8 +58,9 @@ SEE INSTEAD: [Trademark Resources Site Map][resources].
 
   - Change extension from **mdtext** to **md**
   - Replace the multiple line `notice:` with a one line reference to the Apache License.
-  - Any {#id} and {.class} annotations must have any # tags between the annotation and the heading text removed.
+  - Any {#id} and {.class} annotations have any # tags between the annotation and the heading text removed.
   - Only one {#id} or {.class} annotation is allowed on a tag.
+  - {.class} annotations are seldom used.
 
 
 [1]: https://github.com/github/cmark-gfm
