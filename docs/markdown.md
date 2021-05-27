@@ -1,14 +1,16 @@
 # Gihub Flavored Markdown (GFM)
 
+Content is in [GitHub Flavored Markdown][3] (GFM).
+
 File extensions are **md**, **markdown**, **mkd**, and **mdown**. If you have an **mdtext** file it is from the Apache CMS.
 
-This site uses a version of [cmark-gfm][1] by [GitHub][2] through a Pelican Plugin *gfm.py* created by Apache Infra.
+The site uses a version of [cmark-gfm][1] by [GitHub][2] through a Pelican Plugin *gfm.py* created by Apache Infra.
 
 - [Mastering Markdown][3]
 
 - [Detailed Specification][4]
 
-- Differences from markdown.pl
+- Some differences from `markdown.pl` used in the Apache CMS.
 
   - [HTML Blocks][5]
     - Make sure the first line of your html block starts in column one.
@@ -24,6 +26,33 @@ This site uses a version of [cmark-gfm][1] by [GitHub][2] through a Pelican Plug
   - [Disallowed html][12] the tagfilter extension disables certain html. The asfgenid plugin reenables `script`, `style`, and `iframe` html.
     
 - [Examples][13]
+
+- ID and Class Annotations
+
+```md
+## What is the Apache Software Foundation?  {#what}
+
+The Apache Software Foundation (ASF) is a non-profit 501(c)(3) corporation,
+incorporated in Delaware, USA, in June of 1999. The ASF is a natural
+outgrowth of The Apache Group, which
+formed in 1995 to develop the Apache HTTP Server.
+```
+
+Set the class to display an image to `float-right`
+
+```md
+![Logo](images/logo.svg) {.float-right}
+```
+
+An HTML fragment is also feasible for a similar purpose
+
+```html
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+
+SEE INSTEAD: [Trademark Resources Site Map][resources].
+
+</div>
+```
 
 - Apache CMS Migration
 

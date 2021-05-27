@@ -1,4 +1,4 @@
-# Pelican Builds
+# Pelican Build Process
 
 This website is built using [Pelican][pelican]. Configure the build using the [pelicanconf.py][configure] settings.
 
@@ -67,7 +67,23 @@ Pages are processed in no particular order. Our plugins provide the following ac
 |                | [Translate][ezttranslate]  |             | ezt          | ezt template translation |
 |                | [Render GFM][markdown]     | render      | super.render | render GFM/HTML into HTML  |
 | Content        | [Generate ID][asfgenid]    | generate_id | generate_id  | Perform ASF specific HTML enhancements |
-| Generator      | [Template][templates]      | translate   | translate    | Create output HTML by pushing the generated content and metadata through the theme's templates |
+| Generator      | [Template][theme]          | translate   | translate    | Create output HTML by pushing the generated content and metadata through the theme's templates |
+
+See [local builds][local] for how to install [Pelican ASF][pelicanasf] on your system.
+
+## Data Model
+
+A shared metadata model is used by **ezmd** templates to generate content. There are three types of data:
+
+| When refereced  | Data Type                        |
+|-----------------|----------------------------------|
+| EZMD Reader, Content, Generator | Constants - either integer or string values |
+| EZMD Reader                     | Sequences - arrays of objects with attributes where an attribute may be another sequence |
+| EZMD Reader                     | Dictionaries - key-value maps where the value may be another dictionary |
+
+The constants are also available to the [`asfgenid.py`][asfgenid] plugin and the [theme's templates][theme].
+
+There are examples of how to [inject shared metadata below][metadata]. See [metadata model][data] for how `asfdata.py` works to populate the shared metadata.
 
 ## Read Source
 
@@ -189,7 +205,7 @@ The `asfreader.py` plugin is responsible for [reading the source][read], adding 
 
 ## EZT Translation
 
-**ezmd* Pages files are [ezt][ezt] templates that create Markdown and HTML output. See [EZT Syntax][eztsyntax] for the directives.
+**ezmd** Pages files are [ezt][ezt] templates that create Markdown and HTML output. See [EZT Syntax][eztsyntax] for the directives.
 
 ### EZT Examples
 
@@ -400,17 +416,6 @@ def headingid_transform(ids, soup, tag, permalinks, perma_set):
             headingid_transform(ids, soup, tag, asf_genid['permalinks'], permalinks)
 ```
 
-## Data
-
-- [Preview Branching](branches.md)
-   How to work on complex changes like updated templates, new data sources, and alternative content.
-
-- Local Builds
-   How to set up your local environment to work on a branch.
-
-- Error Analysis
-   How to find errors in your build.
-
 
 [pelican]:   	https://blog.getpelican.com
 [mastering]:	https://guides.github.com/features/mastering-markdown/
@@ -445,11 +450,10 @@ def headingid_transform(ids, soup, tag, permalinks, perma_set):
 [read]:         #read-source
 [metadata]:	#model-metadata
 [markdown]:  	#render-gfm
-[data]:		#data
+[data]:		data.md
 [ezttranslate]: #ezt-translation
 [process]:   	#process
 [branches]:  	#branches
-[local]:     	#local
+[local]:     	builds.md
 [asfref]:	#reference
-[templates]:	#templates
 [pelican-gfm]:	#pelican-gfm
