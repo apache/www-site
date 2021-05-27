@@ -1,6 +1,6 @@
 # Pelican Builds
 
-This website is built using [Pelican][pelican]. It is configured in your [pelicanconf.py][configure] settings.
+This website is built using [Pelican][pelican]. Configure the build using the [pelicanconf.py][configure] settings.
 
 ## Pelican Theme
 
@@ -13,7 +13,7 @@ See [theme][theme] for more detail.
 
 ## Plugins
 
-The Pelican environment is enhanced with Plugins. Our environment has its own copy the `asf` plugins while the `pelican-gfm` is provided by the `pelican-build.py` script.
+The Pelican environment is enhanced with plugins. Our environment has its own copy of the `asf` plugins, while the `pelican-build.py` script provides `pelican-gfm`.
 
 ```python
 # Pelican Plugins
@@ -30,11 +30,11 @@ The plugins select which file extensions they read.
 - [`pelican-gfm`][pelican-gfm] reads **.md**, **.markdown**, **.mkd**, and **.mdown** extensions. **.md** is preferred.
 - [`asfreader`][asfreader] reads **.ezmd** extensions.
 
-See [process][process] for the steps signaled. See [plugins][plugins] for the python code.
+See [process][process] for the steps signaled. See [plugins][plugins] for the Python code.
 
 ## Tree Structure
 
-Pages and static content are stored in the same tree. Generated content is output with the same relative path except with an html extension.
+Pages and static content are stored in the same tree. Generated content is output with the same relative path, except with an html extension.
 These are the necessary settings.
 
 ```python
@@ -45,17 +45,17 @@ PAGE_PATHS = ['.']
 PATH_METADATA = '(?P<path_no_ext>.*)\..*'
 # We are not slugifying any pages
 ARTICLE_URL = ARTICLE_SAVE_AS = PAGE_URL = PAGE_SAVE_AS = '{path_no_ext}.html'
-# We want to serve our static files mixed with content.
+# We want to serve our static files mixed with content
 STATIC_PATHS = ['.']
-# we want any html to be served as is
+# we want any html to be served as-is
 READERS = {'html': None}
-# ignore README.md files in the content tree and the interviews and include folders.
+# ignore README.md files in the content tree and the interviews and include folders
 IGNORE_FILES = ['README.md','interviews','include']
 ```
 
 # Process
 
-Pelican uses [signals][signals] as it goes through the process of reading and generating content. Our plugins 
+Pelican uses [signals][signals] as it goes through the process of reading and generating content. Our plugins: 
 
 | Pelican Signal | Step | [GFM Content][pelican-gfm] | [EZMD Content][asfreader] | Description |
 |----------------|---------|:-----:|:--:|------|
@@ -112,8 +112,8 @@ asf_headings: False
 ...
 ```
 
-The first three lines specify three `metadata` key value pairs.
-There is a blank line and the rest is the `text`
+The first three lines specify three `metadata` key-value pairs.
+There is a blank line and the rest is the `text`.
 
 
 ## Model Metadata
@@ -147,32 +147,32 @@ From `asfreader`
 
 ## Content
 
-Content is [GitHub Flavored Markdown][mastering] (GFM) with [ASF specific enhancements][asfgenid] for Apache CMS style annotations.
+Content is in [GitHub Flavored Markdown][mastering] (GFM) with [ASF specific enhancements][asfgenid] for Apache CMS-style annotations.
 
 
 
 ## Generate ID
 
-The `asfgenid` plugin is used to perform modifications on the generated content that mimics the markdown extensions in the Apache CMS.
-Much of these ASF specific enhancements are controlled in [pelican settings][configure] in the `ASF_GENID` dictionary.
+We use the `asfgenid` plugin to perform modifications on the generated content that mimics the markdown extensions in the Apache CMS.
+Many of these ASF-specific enhancements are controlled in [pelican settings][configure] in the `ASF_GENID` dictionary.
 
 | step | ASF_GENID key | default | process | page override |
 |-----:|-----|:--------:|---------|----------|
-| 1    |  -          | -           | fixup some html tags that the GFM autofilter extension marks as unsafe | |
-| 2    |  -          | -           | convert html into beautiful soup    | |
-| 3    | metadata    | True        | `{{ metadata }}` inclusion of data in the html | |
-| 4    |  -          | True        | inventory of all id attributes, duplicates are invalid | |
-| 5    | elements    | True        | find all `{#id}` and `{.class}` text and assign attributes | |
-| 6    | headings    | True        | assign ids to all headings w/o ids already present or assigned with `{#id}` text | asf_headings |
-|      | headings_re | `r'^h[1-6]'` | regex for finding headings that require ids | |
+| 1    |  -          | -           | fix up some HTML tags that the GFM autofilter extension marks as unsafe | |
+| 2    |  -          | -           | convert HTML into beautiful soup    | |
+| 3    | metadata    | True        | `{{ metadata }}` include data in the HTML | |
+| 4    |  -          | True        | inventory of all ID attributes; duplicates are invalid | |
+| 5    | elements    | True        | find all `{#id}` and `{.class}` texts and assign attributes | |
+| 6    | headings    | True        | assign IDs to all headings w/o IDs already present or assigned with `{#id}` text | asf_headings |
+|      | headings_re | `r'^h[1-6]'` | regex for finding headings that require IDs | |
 | 7    | tables      | True        | tables with a class attribute are assgned `class=table` | |
 | 8    | toc         | True        | generate a table of contents if [TOC] is found. If this is set to False then the `toc.py` plugin may used. | |
 |      | toc_headers | `r'h[1-6]'` | headings to include in the [TOC] | |
-| 9    |  -          | -           | convert beautiful soup back into html | |
+| 9    |  -          | -           | convert beautiful soup back into HTML | |
 
 ## Data
 
-[Data][asfdata] is [placed into GFM content][asfreader] with a combination of [EZT][eztsyntax] and ASF python style directives.
+[Data][asfdata] is [placed into GFM content][asfreader] with a combination of [EZT][eztsyntax] and ASF Python-style directives.
 
 
 ### Data Model
@@ -185,7 +185,7 @@ The [data model][datamodel] file specifies three types of data:
 - [{ code_lines }]+ lines of code in&nbsp;stewardship
 ```
 
-2. Sequences. These metadata are used by EZT directives and also the ASF python style directives.
+2. Sequences. EZT directives and the ASF Python-style directives use these metadata.
 
    EZT
 ```md
@@ -207,9 +207,9 @@ The [data model][datamodel] file specifies three types of data:
 | [{ board[6].name }] | [{ board[7].name }] | [{ board[8].name }] |
 ```
 
-3. Dictionaries. These metadata are used by ASF python style directives.
+3. Dictionaries. ASF Python-style directives use these metadata.
 
-   ASF python style directive - we know the names and forcing a sequence is indirect.
+   ASF Python-style directive - we know the names and forcing a sequence is indirect.
 ```md
 | Office    | Individual  |
 |-----------|-------------|
@@ -229,11 +229,11 @@ The [data model][datamodel] file specifies three types of data:
 
 ## Templates
 
-Pelican uses [HTML templates][templates]. Templates have [pelican metadata][variables] and [pelican settings][settings].
+Pelican uses [HTML templates][templates]. Templates have [Pelican metadata][variables] and [Pelican settings][settings].
 
 ### Theme
 
-[templates][theme] for details.
+[Templates][theme] for details.
 
 
 
@@ -241,7 +241,7 @@ Pelican uses [HTML templates][templates]. Templates have [pelican metadata][vari
    How the global data model works and how to enhance the data availble for your content.
 
 2. [EZT](ezt.md)
-   How EZ Templates are used convert global data into content.
+   How EZ Templates are used to convert global data into content.
 
 3. [Markdown](markdown.md)
    How your content is converted to HTML.
@@ -253,10 +253,10 @@ Pelican uses [HTML templates][templates]. Templates have [pelican metadata][vari
    How to work on complex changes like updated templates, new data sources, and alternative content.
 
 6. Local Builds
-   How to setup your local environment to work on a branch.
+   How to set up your local environment to work on a branch.
 
 7. Error Analysis
-   How to track down errors in your build.
+   How to find errors in your build.
 
 
 [pelican]:   	https://blog.getpelican.com
