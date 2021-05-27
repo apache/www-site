@@ -9,7 +9,7 @@ This website is built using [Pelican][pelican]. Configure the build using the [p
 THEME = './theme/apache'
 ```
 
-See [theme][theme] for more detail.
+See [theme template][theme] for details about this site's theme.
 
 ## Plugins
 
@@ -25,10 +25,10 @@ PLUGIN_PATHS = ['./theme/plugins']
 PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader']
 ```
 
-The plugins select which file extensions they read.
-
-- [`pelican-gfm`][pelican-gfm] reads **.md**, **.markdown**, **.mkd**, and **.mdown** extensions. **.md** is preferred.
-- [`asfreader`][asfreader] reads **.ezmd** extensions.
+1. [Data Model][asfdata]. The `asfdata.py` plugin builds a metadata model that is shared with every page.
+2. [GFM Content][pelican-gfm]. The `pelican-gfm` plugin reads **.md**, **.markdown**, **.mkd**, and **.mdown** files and converts the GFM Markdown into HTML.
+3. [EZMD Content][asfreader]. The `asfreader.py` plugin reads **.ezmd** files, injects data, translates ezt, and converts the GFM Markdown into HTML.
+4. [Generate ID][asfgenid]. The `asfgenid.py` plugin performs a number of enhancements to the HTML.
 
 See [process][process] for the steps signaled. See [plugins][plugins] for the Python code.
 
@@ -55,7 +55,7 @@ IGNORE_FILES = ['README.md','interviews','include']
 
 # Process
 
-Pelican uses [signals][signals] as it goes through the process of reading and generating content. Our plugins: 
+Pelican uses [signals][signals] as it goes through the process of reading and generating content. Our plugins:
 
 | Pelican Signal | Step | [GFM Content][pelican-gfm] | [EZMD Content][asfreader] | Description |
 |----------------|---------|:-----:|:--:|------|
@@ -63,10 +63,10 @@ Pelican uses [signals][signals] as it goes through the process of reading and ge
 | Reader         | Class     |   [GFMReader][pelican-gfm]   | [ASFReader(GFMReader)][asfreader] | Pelican Reader class  |
 |                | [Read][read]               | read_source | super.read_source | read page source and metadata |
 |                | [Model Metadata][metadata] |             | add_data     | add asf data to the model and expand any `[{ reference }]` |
-|                | [Generate][ezt]            |             | ezt          | ezt template transformation |
+|                | [Translate][ezt-translate] |             | ezt          | ezt template translation |
 |                | [Render GFM][markdown]     | render      | super.render | render GFM/HTML into HTML  |
 | Content        | [Generate ID][asfgenid]    | generate_id | generate_id  | Perform ASF specific HTML enhancements |
-! Generator      | [Template][template]       | translate   | translate    | Create output HTML by pushing the generated content and metadata through the theme's templates. |
+| Generator      | [Template][template]       | translate   | translate    | Create output HTML by pushing the generated content and metadata through the theme's templates |
 
 ## Read Source
 
@@ -103,7 +103,7 @@ From `pelican-gfm`
 
 Example:
 
-```markdown
+```md
 Title: ASF Export Classifications and Source Links
 license: https://www.apache.org/licenses/LICENSE-2.0
 asf_headings: False
@@ -118,7 +118,7 @@ There is a blank line and the rest is the `text`.
 
 ## Model Metadata
 
-From `asfreader`
+From `asfreader.py`
 
 ```python
     def add_data(self, text, metadata):
@@ -144,6 +144,54 @@ From `asfreader`
                     text = re.sub(METADATA_RE, new_string, text, count=1)
         return text, metadata
 ```
+
+### Metadata Examples
+
+We extend EZT syntax to do metadata substitution prior to EZT translation. This allows for a more natural and direct representation than with EZT sequences.
+
+```md
+|  |  |  |
+|-----------|-----------|-------------|
+| [{ board[0].name }] | [{ board[1].name }] | [{ board[2].name }] |
+| [{ board[3].name }] | [{ board[4].name }] | [{ board[5].name }] |
+| [{ board[6].name }] | [{ board[7].name }] | [{ board[8].name }] |
+```
+
+```md
+| Office    | Individual  |
+|-----------|-------------|
+| Board Chair |  [{ ci[boardchair][roster] }] |
+| Vice Chair |  [{ ci[vicechair][roster] }] |
+| President |  [{ ci[president][roster] }] |
+| Exec. V.P |  [{ ci[execvp][roster] }] |
+| [[]Treasurer](https://treasurer.apache.org/) |  [{ ci[treasurer][roster] }] |
+| Assistant Treasurer |  [{ ci[assistanttreasurer][roster] }] |
+| Secretary |  [{ ci[secretary][roster] }] |
+| Assistant Secretary |  [{ ci[assistantsecretary][roster] }] |
+| V.P., [[]Legal Affairs](/legal/) |  [{ ci[legal][chair] }] |
+| Assistant V.P., [[]Legal Affairs](/legal/) |  [{ ci[assistantvplegalaffairs][roster] }] |
+```
+
+## EZT Translation
+
+**ezmd* Pages files are [ezt][ezt] templates that create Markdown and HTML output. See [EZT Syntax][eztsyntax] for a full description of the directives.
+
+### EZT Examples
+
+   EZT
+```md
+| Office    | Individual  |
+|-----------|-------------|[for projects]
+| V.P., [if-any projects.site][[][end]Apache [projects.display_name][if-any projects.site]]([projects.site])[end] | [projects.chair] |[end]
+```
+
+```html
+[for featured_projs]<li [if-index featured_projs first]class="active"[end]>
+     <a href="#[featured_projs.key_id]" data-toggle="tab">[featured_projs.display_name]</a>
+</li>[end]
+```
+
+
 
 ## Content
 
@@ -187,43 +235,6 @@ The [data model][datamodel] file specifies three types of data:
 
 2. Sequences. EZT directives and the ASF Python-style directives use these metadata.
 
-   EZT
-```md
-| Office    | Individual  |
-|-----------|-------------|[for projects]
-| V.P., [if-any projects.site][[][end]Apache [projects.display_name][if-any projects.site]]([projects.site])[end] | [projects.chair] |[end]
-```
-```html
-[for featured_projs]<li [if-index featured_projs first]class="active"[end]>
-     <a href="#[featured_projs.key_id]" data-toggle="tab">[featured_projs.display_name]</a>
-</li>[end]
-```
-   ASF python style directive
-```md
-|  |  |  |
-|-----------|-----------|-------------|
-| [{ board[0].name }] | [{ board[1].name }] | [{ board[2].name }] |
-| [{ board[3].name }] | [{ board[4].name }] | [{ board[5].name }] |
-| [{ board[6].name }] | [{ board[7].name }] | [{ board[8].name }] |
-```
-
-3. Dictionaries. ASF Python-style directives use these metadata.
-
-   ASF Python-style directive - we know the names and forcing a sequence is indirect.
-```md
-| Office    | Individual  |
-|-----------|-------------|
-| Board Chair |  [{ ci[boardchair][roster] }] |
-| Vice Chair |  [{ ci[vicechair][roster] }] |
-| President |  [{ ci[president][roster] }] |
-| Exec. V.P |  [{ ci[execvp][roster] }] |
-| [[]Treasurer](https://treasurer.apache.org/) |  [{ ci[treasurer][roster] }] |
-| Assistant Treasurer |  [{ ci[assistanttreasurer][roster] }] |
-| Secretary |  [{ ci[secretary][roster] }] |
-| Assistant Secretary |  [{ ci[assistantsecretary][roster] }] |
-| V.P., [[]Legal Affairs](/legal/) |  [{ ci[legal][chair] }] |
-| Assistant V.P., [[]Legal Affairs](/legal/) |  [{ ci[assistantvplegalaffairs][roster] }] |
-```
 
 ### Include and Insert
 
@@ -282,7 +293,7 @@ Pelican uses [HTML templates][templates]. Templates have [Pelican metadata][vari
 [metadata]:	#model-metadata
 [markdown]:  	#markdown
 [data]:		#data
-[ezt]:  	#ezt
+[ezttranslate]: #ezt-translation
 [process]:   	#process
 [branches]:  	#branches
 [local]:     	#local
