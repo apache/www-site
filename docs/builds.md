@@ -18,6 +18,9 @@ These instructions are for building the www-site locally on either linux or macO
   - pelican-gfm/gfm.py
   - pelican-build.py
 
+  Note that the GitHub repostory is private to the ASF, so only ASF committers with an associated GitHub login can access it.
+  If you don't have such a login set up, GitHub will respond with status 404 - File not found
+  
 2. Build cmark-gfm
 
 ```bash
