@@ -20,19 +20,21 @@ This repository provides the source for the main website of The Apache Software 
   - [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
 - [Documentation](docs/)
-  - [Markdown](docs/markdown.md) focuses on what users need to know about GitHub Flavored Markdown (GFM) in order to maintain content.
-  - [Feature branches](docs/branches.md) focuses on handling major changes.
-  - [Process](docs/process.md) describes the full end to end build from the developers perspecitve.
-  - [Data modeling](docs/data.md) focuses on what developers need to know in order to maintain and expand on the metadata made available to the site.
-  - [Local builds](docs/builds.md) focuses on how to develop on a local linux or macOS system.
+  - Web Site Committers
+    - [Markdown](docs/markdown.md) focuses on what users need to know about GitHub Flavored Markdown (GFM) in order to maintain content.
+    - [Feature branches](docs/branches.md) focuses on handling major changes.
+    - [Local builds](docs/builds.md) focuses on how to develop on a local linux or macOS system.
+  - Web Site Designers
+    - [Theme](theme/apache/templates/.) focuses on what designers need to know about the website theme.
+  - Web Site Developers
+    - [Data modeling](docs/data.md) focuses on what developers need to know in order to maintain and expand on the metadata made available to the site.
+    - [Process](docs/process.md) describes the full end to end build from the developers perspecitve.
+    - [Plugins](theme/plugins/.) describes the plugins that are included in the repository.
 
 The website is built with [Pelican](https://blog.getpelican.com).
 Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
 mechanism which runs [Buildbot](https://ci2.apache.org/#/builders/3/).
 
-- [Base Template](theme/apache/templates/base.html) -- single html skeleton
-- [Templates](theme/apache/templates) -- see the full template folder
-- [Custom Plugins](theme/plugins) -- site data and page processing
 - [Pelican Configuration](pelicanconf.py) -- pelican configuration
 - [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](theme/plugins/asfdata.py).
 - [ASF YAML Pelican Build](.asf.yaml) -- ASF infrastructure instructions
