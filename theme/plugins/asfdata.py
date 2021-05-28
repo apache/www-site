@@ -100,7 +100,7 @@ def where_parts(reference, part):
         del reference[refs]
 
 
-# perform alphabetation. HTTP Server is special.
+# perform alphabetation. HTTP Server is special and is put before 'A'
 def alpha_part(reference, part):
     for refs in reference:
         name = reference[refs][part]
@@ -128,10 +128,14 @@ def add_logo(reference, part):
     # split between logo pattern and default.
     parts = part.split(',')
     for item in reference:
+        # the logo pattern includes a place to insert the project/podling key
         logo = (parts[0].format(item.key_id))
+        # HEAD request
         response = requests.head('https://www.apache.org/' + logo)
         if response.status_code != 200:
+            # logo not found - use the default logo
             logo = parts[1]
+        # save the logo path as an attribute
         setattr(item, 'logo', logo)
     return reference
 
@@ -140,11 +144,15 @@ def add_logo(reference, part):
 def sequence_dict(seq, reference):
     sequence = [ ]
     for refs in reference:
+        # converting dicts into objects with attrributes. Ignore non-dict content.
         if isinstance(reference[refs], dict):
+            # put the key of the dict  into the dictionary
             reference[refs]['key_id'] = refs
             for item in reference[refs]:
                 if isinstance(reference[refs][item], bool):
+                    # fixup any boolean values to be ezt.boolean - essentially True -> "yes"
                     reference[refs][item] = ezt.boolean(reference[refs][item])
+            # convert the dict into an object with attributes and append to the sequence
             sequence.append(type(seq, (), reference[refs]))
     return sequence
 
@@ -153,17 +161,21 @@ def sequence_dict(seq, reference):
 def sequence_list(seq, reference):
     sequence = [ ]
     for refs in reference:
+        # only convert dicts into objects
         if isinstance(refs, dict):
             for item in refs:
                 if isinstance(refs[item], bool):
+                    # fixup any boolean values to be ezt.boolean - essentially True -> "yes"
                     refs[item] = ezt.boolean(refs[item])
                 elif isinstance(refs[item], list):
+                    # recursively convert sub-lists
                     refs[item] = sequence_list(item, refs[item])
+            # convert the dict into an object with attributes and append to the sequence
             sequence.append(type(f'{seq}', (), refs))
     return sequence
 
 
-# split a list into equal sized columns. Adds back letter breaks in the alphabetical sequence.
+# split a list into equal sized columns. Adds letter breaks in the alphabetical sequence.
 def split_list(metadata, seq, reference, split):
     # copy sequence
     sequence = list(reference)
@@ -176,15 +188,17 @@ def split_list(metadata, seq, reference, split):
     # positions
     start = nseq = nrow = 0
     letter = ' '
+    # create each column
     for column in range(split):
         subsequence = [ ]
         end = min(size+26, start+percol)
         while nrow < end:
             if letter < sequence[nseq].letter:
-                # new letter
+                # new letter - add a letter break into the column. If a letter has no content it is skipped
                 letter = sequence[nseq].letter
                 subsequence.append(type(seq, (), { 'letter': letter, 'display_name': letter }))
             else:
+                # add the project into the sequence
                 subsequence.append(sequence[nseq])
                 nseq = nseq+1
             nrow = nrow+1
@@ -238,20 +252,23 @@ def process_sequence(metadata, seq, sequence, load, debug):
         print(f'alpha: {sequence["alpha"]}')
         alpha_part(reference, sequence['alpha'])
 
-    # this dictionary is derived from sequences
+    # this dictionary is derived from sub-dictionaries
     if 'dictionary' in sequence:
         print(f'dictionary: {sequence["dictionary"]}')
         reference = { }
         paths = sequence['dictionary'].split(',')
+        # create a dictionary from the keys in one or more sub-dictionaries
         for path in paths:
             for key in load[path]:
                 reference[key] = load[path][key]
+        # dictionary result, do not sequence
         is_dictionary = True
 
     # this sequence is derived from another sequence
     if 'sequence' in sequence:
         print(f'sequence: {sequence["sequence"]}')
         reference = metadata[sequence['sequence']]
+        # sequences derived from prior sequences do not need to be converted to a sequence
         is_sequence = True
 
     # this sequence is a random sample of another sequence
@@ -266,9 +283,11 @@ def process_sequence(metadata, seq, sequence, load, debug):
     if 'logo' in sequence:
         print(f'logo: {sequence["logo"]}')
         if is_sequence:
+            # determine the project or podling logo
             reference = add_logo(reference, sequence['logo'])
             if seq == 'featured_pods':
                 # for podlings strip "Apache" from the beginning and "(incubating)" from the end.
+                # this is Sally's request
                 for item in reference:
                     setattr(item, 'name', ' '.join(item.name.split(' ')[1:-1]))
         else:
@@ -278,13 +297,16 @@ def process_sequence(metadata, seq, sequence, load, debug):
     if 'split' in sequence:
         print(f'split: {sequence["split"]}')
         if is_sequence:
+            # create a sequence for each column
             split_list(metadata, seq, reference, sequence['split'])
+            # created column sequences are already saved to metadata so do not do so later
             save_metadata = False
         else:
             print(f'{seq} - split requires an existing sequence to split')
 
-    # convert the dictionary/list to a sequence of objects
+    # if this not already a sequence or dictionary then convert to a sequence
     if not is_sequence and not is_dictionary:
+        # convert the dictionary/list to a sequence of objects
         print(f'{seq}: create sequence')
         if isinstance(reference, dict):
             reference = sequence_dict(seq, reference)
@@ -302,7 +324,7 @@ def process_sequence(metadata, seq, sequence, load, debug):
 def process_load(metadata, value, load, debug):
     for seq in value:
         if seq not in ('url', 'file'):
-            # sequence
+            # one or more sequences
             sequence = value[seq]
             process_sequence(metadata, seq, sequence, load, debug)
 
@@ -328,12 +350,15 @@ def process_blog(feed, count, debug):
     print(f'blog feed: {feed}')
     content = requests.get(feed).text
     dom = xml.dom.minidom.parseString(content)
+    # dive into the dom to get 'entry' elements
     entries = dom.getElementsByTagName('entry')
+    # we only want count many from the beginning
     entries = entries[:count]
     v = [ ]
     for entry in entries:
         if debug:
             print(entry.tagName)
+        # we only want the title and href
         v.append(
             {
                 'id': get_element_text(entry, 'id'),
@@ -384,12 +409,14 @@ def process_eccn(fname):
     print('-----\nECCN:', fname)
     j = yaml.safe_load(open(fname))
 
+    # versions have zero or more controlled sources
     def make_sources(sources):
         return [ Source(href=s['href'],
                         manufacturer=s['manufacturer'],
                         why=s['why'])
                  for s in sources ]
 
+    # products have one or more versions
     def make_versions(vsns):
         return [ Version(version=v['version'],
                          eccn=v['eccn'],
@@ -398,6 +425,7 @@ def process_eccn(fname):
                  for v in sorted(vsns,
                                  key=operator.itemgetter('version')) ]
 
+    # projects have one or more products
     def make_products(prods):
         return [ Product(name=p['name'],
                          versions=make_versions(p['versions']),
@@ -405,7 +433,7 @@ def process_eccn(fname):
                  for p in sorted(prods,
                                  key=operator.itemgetter('name')) ]
 
-    #print('PROJs:', [p['name'] for p in j['eccnmatrix']])
+    # eccn matrix has one or more projects
     return [ Project(name=proj['name'],
                      href=proj['href'],
                      contact=proj['contact'],
@@ -462,7 +490,8 @@ def config_read_data(pel_ob):
                 continue
 
             if key == 'twitter':
-                # process twitter data (if we decide to have multiple twitter feeds available then move next to blog'
+                # process twitter data
+                # if we decide to have multiple twitter feeds available then move next to blog below
                 handle = config_data[key]['handle']
                 count = config_data[key]['count']
                 metadata[key] = v = process_twitter(handle, count)
@@ -472,7 +501,8 @@ def config_read_data(pel_ob):
 
             value = config_data[key]
             if isinstance(value, dict):
-                # dictionaries are complex data sources
+                # dictionaries may have multiple data structures that are processed with a sequence of actions
+                # into multiple sequences and dictionaries.
                 print(f'-----\n{key} creates one or more sequences')
                 if debug:
                     print(value)
@@ -497,14 +527,14 @@ def config_read_data(pel_ob):
                     process_load(metadata, value, load, debug)
 
                 else:
-                    # should probably be an error.
+                    # should probably be an error but doesn't matter
                     metadata[key] = value
             else:
-                # simple metadata values
+                # simple metadata values - either an int or str
                 print(f'{key} = {value}')
                 metadata[key] = value
 
-    # display asfdata metadata.
+    # display asfdata metadata or metadata type
     print('-----')
     for key in metadata:
         if debug:
@@ -531,6 +561,7 @@ def tb_initialized(pel_ob):
     except:
         print('-----', file=sys.stderr)
         traceback.print_exc()
+        # exceptions here stop the build
         raise
 
 
