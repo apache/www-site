@@ -43,7 +43,8 @@ class ASFTemplateReader(ezt.Reader):
         self.source_dir, self.fname = os.path.split(source_path)
         self.text = text
 
-    def read_other(self, relative):        return ezt._FileReader(os.path.join(self.source_dir, relative))
+    def read_other(self, relative):
+        return ezt._FileReader(os.path.join(self.source_dir, relative))
 
     def filename(self):
         return self.fname
