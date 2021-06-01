@@ -32,7 +32,19 @@ export LIBCMARKDIR=`pwd`/cmark-gfm-0.28.3.gfm.12/lib
 
 The example below assumes this is in `~/Dewvelopment/www-site`.
 
-4. Build the website locally from current local commits
+4. Twitter Bearer Token
+
+We make use of the Twitter api to retrieve the most recent tweet. A [Bearer Token](https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens)
+is added to `~/.authtokens` file.
+
+```
+twitter:${BEARER_TOKEN}
+```
+
+If the file is not found or the twitter key is missing then the tweet returned is a message to configure the file.
+If the Bearer Token is invalid then the API returns a 401 and the build is stopped.
+
+5. Build the website locally from current local commits
 
 ```bash
 python3 pelican-build.py --sourcetype git --source ~/Development/www-site --sourcebranch main \
