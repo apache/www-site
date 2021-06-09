@@ -26,25 +26,26 @@ Which is BSD licensed, but is very much rewritten.
 '''
 
 ASF_GENID = {
-    'metadata': True,          # {{ metadata }} inclusion of data in the html.
-    'elements': True,	       # {#id} and {.class} annotations.
-    'headings': True,	       # add slugified id to headings missing id. Can be overridden by page metadata.
-    'headings_re': r'^h[1-6]', # regex for which headings to check.
-    'permalinks': True,	       # add permalinks to elements and headings when id is added.
-    'toc': True,  	       # check for [TOC] and add Table of Content if present.
-    'toc_headers': r'h[1-6]',  # regex for which headings to include in the [TOC]
-    'tables': True,	       # add class="table" for tables missing class.
+    'unsafe_tags': True,        # fix script, style, and iframe html that gfm filters as unsafe
+    'metadata': True,           # {{ metadata }} inclusion of data in the html.
+    'elements': True,	        # {#id} and {.class} annotations.
+    'headings': True,	        # add slugified id to headings missing id. Can be overridden by page metadata.
+    'headings_re': r'^h[1-6]',  # regex for which headings to check.
+    'permalinks': True,	        # add permalinks to elements and headings when id is added.
+    'toc': True,  	        # check for [TOC] and add Table of Content if present.
+    'toc_headers': r'h[1-6]',   # regex for which headings to include in the [TOC]
+    'tables': True,	        # add class="table" for tables missing class.
     'debug': False
 }
 
 # Fixup tuples for HTML that GFM makes into text.
 FIXUP_UNSAFE = [
-    (re.compile(r'&lt;script'),'<script'),
-    (re.compile(r'&lt;/script'),'</script'),
-    (re.compile(r'&lt;style'),'<style'),
-    (re.compile(r'&lt;/style'),'</style'),
-    (re.compile(r'&lt;iframe'),'<iframe'),
-    (re.compile(r'&lt;/iframe'),'</iframe')
+    (re.compile(r'&lt;script'), '<script'),
+    (re.compile(r'&lt;/script'), '</script'),
+    (re.compile(r'&lt;style'), '<style'),
+    (re.compile(r'&lt;/style'), '</style'),
+    (re.compile(r'&lt;iframe'), '<iframe'),
+    (re.compile(r'&lt;/iframe'), '</iframe')
 ]
 
 # Find {{ metadata }} inclusions
@@ -66,6 +67,7 @@ PARA_MAP = {
 
 # Find table tags - to check for ones without class attribute.
 TABLE_RE = re.compile(r'^table')
+
 
 # An item in a Table of Contents - from toc.py
 class HtmlTreeNode(object):
@@ -262,7 +264,7 @@ def generate_toc(content, tags, title, toc_headers):
         # convert the HtmlTreeNode into Beautiful Soup
         tree_string = '{}'.format(tree)
         tree_soup = BeautifulSoup(tree_string, 'html.parser')
-        # Make the ToC availble to the theme's template
+        # Make the ToC available to the theme's template
         content.toc = tree_soup.decode(formatter='html')
     # replace the first [TOC] with the generated table of contents
     for tag in tags:
@@ -287,13 +289,25 @@ def generate_id(content):
     if isinstance(content, pelican.contents.Static):
         return
 
+    # get plugin settings
+    asf_genid = content.settings['ASF_GENID']
+    # asf_headings setting may be overridden
+    asf_headings = content.metadata.get('asf_headings', str(asf_genid['headings']))
+
+    # show active plugins
+    if asf_genid['debug']:
+        print('asfgenid:\nshow plugins in case one is processing before this one')
+        for name in content.settings['PLUGINS']:
+            print(f'plugin: {name}')
+
     # track the id tags
     ids = set()
     # track permalinks
     permalinks = set()
-    
+
     # step 1 - fixup html that cmark marks unsafe - move to later?
-    fixup_content(content)
+    if asf_genid['unsafe_tags']:
+        fixup_content(content)
 
     # step 2 - prepare for genid processes
     # parse html content into BeautifulSoup4
@@ -306,15 +320,6 @@ def generate_id(content):
     print(f'{content.relative_source_path} - {title}')
     # enhance metadata if done by asfreader
     add_data(content)
-    # get plugin settings
-    asf_genid = content.settings['ASF_GENID']
-    # asf_headings setting may be overridden
-    asf_headings = content.metadata.get('asf_headings', str(asf_genid['headings']))
-    # show active plugins
-    if asf_genid['debug']:
-        print('asfgenid:\nshow plugins in case one is processing before this one')
-        for name in content.settings['PLUGINS']:
-            print(f'plugin: {name}')
 
     # step 3 - metadata expansion
     if asf_genid['metadata']:
@@ -369,7 +374,7 @@ def tb_connect(pel_ob):
     """Print any exception, before Pelican chews it into nothingness."""
     try:
         generate_id(pel_ob)
-    except:
+    except Exception:
         print('-----', file=sys.stderr)
         print('FATAL: %s' % (pel_ob.relative_source_path), file=sys.stderr)
         traceback.print_exc()

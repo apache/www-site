@@ -36,6 +36,7 @@ GFMReader = sys.modules['pelican-gfm.gfm'].GFMReader
 
 METADATA_RE = re.compile(r'\[{\s*(?P<meta>[-._:a-zA-Z0-9\[\]]+)\s*}\]')
 
+
 class ASFTemplateReader(ezt.Reader):
     """Enables inserts relative to the template we loaded."""
 
@@ -78,7 +79,6 @@ class ASFReader(GFMReader):
                     text = re.sub(METADATA_RE, new_string, text, count=1)
         return text, metadata
 
-
     def read(self, source_path):
         "Read metadata and content, process content as ezt template, then render into HTML."
         try:
@@ -100,7 +100,7 @@ class ASFReader(GFMReader):
             # Render the markdown into HTML
             content = super().render(fp.getvalue().encode('utf-8')).decode('utf-8')
             assert content
-        except:
+        except Exception:
             print('-----', file=sys.stderr)
             print('ERROR: %s' % (source_path), file=sys.stderr)
             traceback.print_exc()

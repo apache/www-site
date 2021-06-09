@@ -120,6 +120,7 @@ ASF_DATA = {
 
 # Configure the asfgenid plugin
 ASF_GENID = {
+    'unsafe_tags': True,
     'metadata': True,
     'elements': True,
     'headings': True,
