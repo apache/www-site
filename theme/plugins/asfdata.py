@@ -339,9 +339,9 @@ def process_load(metadata, value, load, debug):
             process_sequence(metadata, seq, sequence, load, debug)
 
 
-# cionvert bytes
-def bytesto(bytes, to, bsize=1024): 
-    a = {'k' : 1, 'm': 2, 'g' : 3, 't' : 4, 'p' : 5, 'e' : 6 }
+# convert bytes
+def bytesto(bytes, to, bsize=1024):
+    a = {'k': 1, 'm': 2, 'g': 3, 't': 4, 'p': 5, 'e': 6}
     r = float(bytes)
     return r / (bsize ** a[to])
 
@@ -454,7 +454,7 @@ def process_distributions(project, src, sort_revision):
                                                        fsize=fsizes[rel]))
         except Exception:
             traceback.print_exc()
-        
+
     distributions = []
     for version in each_version:
         each_version[version].sort(key=lambda x: (-x.revision, x.release))
