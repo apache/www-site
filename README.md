@@ -1,7 +1,8 @@
 # Apache Foundation Website (www.apache.org)
 
-- [Production Website](https://www.apache.org/) - Now in production
-- [Staged Website](https://www.staged.apache.org/)
+We are now in production
+
+- [Production Website](https://www.apache.org/)
 
 This repository provides the source for the main website of The Apache Software Foundation.
 
