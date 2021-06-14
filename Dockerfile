@@ -8,7 +8,7 @@
 #
 # And run with
 #
-#   docker run -it -p8000:8000 -v $PWD:/site -v $PWD/site-generated/:/site-generated www-site -l
+#   docker run -it -p8000:8000 -v $PWD:/site -v $PWD/site-generated/:/site-generated www-site
 #
 # which should build the site, make it available at http://localhost:8000 and rebuild
 # if you make changes to the content.
@@ -34,9 +34,13 @@ RUN apt install -y git curl cmake build-essential
 WORKDIR /tmp/build-cmark
 RUN git clone --depth 1 https://github.com/apache/infrastructure-pelican.git
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
+RUN chmod +x LIBCMARKDIR.sh
 
-# Pelican setup and build
-# TODO for now, pelican fails as the asf-specific plugins are missing
+# Pelican setup
 WORKDIR /site
+RUN mkdir pelican-gfm
+RUN cp /tmp/build-cmark/infrastructure-pelican/gfm.py pelican-gfm/
+RUN ( echo "#!/usr/bin/environment python -B" ; echo "from .gfm import *" ) > pelican-gfm/__init__.py
 RUN mkdir -p /site-generated
-ENTRYPOINT ["pelican", "-Dr", "-o", "/site-generated"]
+
+ENTRYPOINT [ "/bin/bash", "-c", "source /tmp/build-cmark/LIBCMARKDIR.sh && pelican -Dr -o /site-generated -l" ]
