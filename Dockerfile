@@ -1,0 +1,42 @@
+# Dockerfile to build the www-site with Pelican.
+# Inspired from https://github.com/boonto/docker-pelican
+# (which is MIT licensed) for the Pelican-specific bits.
+#
+# To use this, build the container image with
+#
+#     docker build -t www-site .
+#
+# And run with
+#
+#   docker run -it -p8000:8000 -v $PWD:/site -v $PWD/site-generated/:/site-generated www-site -l
+#
+# which should build the site, make it available at http://localhost:8000 and rebuild
+# if you make changes to the content.
+#
+FROM python:3.9.5-slim-buster
+
+ARG PELICAN_VERSION=4.6.0
+ARG SOURCE_SANS_VERSION=3.028R
+ARG MATPLOTLIB_VERSION=3.4.1
+
+# Standard Pelican stuff
+RUN apt update && apt upgrade -y
+RUN apt install wget unzip fontconfig -y
+RUN pip install bs4 requests pyyaml ezt markdown
+RUN pip install pelican==${PELICAN_VERSION}
+RUN pip install matplotlib==${MATPLOTLIB_VERSION}
+
+# CMark prerequisites
+RUN apt install -y git curl cmake build-essential
+
+# Build CMark
+# TODO use a specific tag or release?
+WORKDIR /tmp/build-cmark
+RUN git clone --depth 1 https://github.com/apache/infrastructure-pelican.git
+RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
+
+# Pelican setup and build
+# TODO for now, pelican fails as the asf-specific plugins are missing
+WORKDIR /site
+RUN mkdir -p /site-generated
+ENTRYPOINT ["pelican", "-Dr", "-o", "/site-generated"]
