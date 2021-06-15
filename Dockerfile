@@ -30,7 +30,6 @@ RUN pip install matplotlib==${MATPLOTLIB_VERSION}
 RUN apt install -y git curl cmake build-essential
 
 # Build CMark
-# TODO use a specific tag or release?
 WORKDIR /tmp/build-cmark
 RUN git clone --depth 1 https://github.com/apache/infrastructure-pelican.git
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
