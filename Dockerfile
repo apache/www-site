@@ -10,8 +10,14 @@
 #
 #   docker run -it -p8000:8000 -v $PWD:/site -v $PWD/site-generated/:/site-generated www-site
 #
-# which should build the site, make it available at http://localhost:8000 and rebuild
+# from a folder that contains your pelicanconf.py file and ./content folder.
+#
+# That should build the site, make it available at http://localhost:8000 and rebuild
 # if you make changes to the content.
+#
+# To run a different command you can override the entrypoint, like for example:
+#
+#    docker run -it -p8000:8000 -v $PWD:/site --entrypoint "pelican-quickstart" www-site
 #
 
 # Build CMark
