@@ -3,9 +3,9 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 <br>
 
-#  Nóirín Plunkett - July 29th 2015#
+#  Nóirín Plunkett - July 29th 2015
 
-It is with great sadness, that today the Foundation and its members were notified about the sudden passing of Nóirín Plunkett.
+It is with great sadness that the Foundation and its members were notified about the sudden passing of Nóirín Plunkett.
 
 Nóirín was an Apache httpd contributor, ASF board member, VP and ApacheCon organizer. Nóirín's passionate contributions and warm personality will be sorely missed.  Many considered Nóirín a friend and viewed Nóirín's work to improving 'Women in Technology' as a great contribution to this cause.
 
