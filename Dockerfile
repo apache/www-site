@@ -22,11 +22,17 @@
 
 # Build CMark
 FROM python:3.9.5-slim-buster as cmark
+
+ARG INFRA_PELICAN_COMMIT=5712b2a
+
 RUN apt update && apt upgrade -y
 RUN apt install git curl cmake build-essential -y
 
 WORKDIR /tmp/build-cmark
-RUN git clone --depth 1 https://github.com/apache/infrastructure-pelican.git
+RUN git clone https://github.com/apache/infrastructure-pelican.git
+WORKDIR /tmp/build-cmark/infrastructure-pelican
+RUN git checkout ${INFRA_PELICAN_COMMIT}
+WORKDIR /tmp/build-cmark
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
 RUN chmod +x LIBCMARKDIR.sh
 
