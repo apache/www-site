@@ -19,6 +19,15 @@
 #
 #    docker run -it -p8000:8000 -v $PWD:/site --entrypoint "pelican-quickstart" www-site
 #
+# To troubleshoot the image you can get a shell in a container that runs it, with
+#
+#    docker run -it -p8000:8000 -v $PWD:/site --entrypoint bash www-site
+#
+# And then run this or anything suitable in that shell to experiment:
+#
+#    source /tmp/build-cmark/LIBCMARKDIR.sh
+#    pelican -Dr -o /site-generated -b 0.0.0.0 -l
+#
 
 # Build CMark
 FROM python:3.9.5-slim-buster as cmark
