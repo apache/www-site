@@ -44,15 +44,6 @@ RUN git checkout ${INFRA_PELICAN_COMMIT}
 WORKDIR /tmp/build-cmark
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
 
-# Tell pelican where to find additional ASF plugins
-RUN echo "export PELICANASF='/tmp/pelican-plugins'" >> LIBCMARKDIR.sh
-
-# Slightly hacky pelican-gfm plugin install, for now
-# This relies on the pelicanconf.py including the directory in PLUGIN_PATHS
-WORKDIR /tmp/pelican-plugins/pelican-gfm
-RUN cp /tmp/build-cmark/infrastructure-pelican/gfm.py .
-RUN ( echo "#!/usr/bin/environment python -B" ; echo "from .gfm import *" ) > __init__.py
-
 # Standard Pelican stuff
 FROM python:3.9.5-slim-buster
 
@@ -66,11 +57,10 @@ RUN pip install bs4 requests pyyaml ezt markdown pelican-sitemap BeautifulSoup4
 RUN pip install pelican==${PELICAN_VERSION}
 RUN pip install matplotlib==${MATPLOTLIB_VERSION}
 
-# Copy cmark here
+# Copy cmark and ASF plugins here
 WORKDIR /tmp/build-cmark
 COPY --from=cmark /tmp/build-cmark .
-WORKDIR /tmp/pelican-plugins
-COPY --from=cmark /tmp/pelican-plugins .
+RUN echo "export PELICANASF='/tmp/build-cmark/infrastructure-pelican/plugins/'" >> LIBCMARKDIR.sh
 
 # Pelican setup
 WORKDIR /site
