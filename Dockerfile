@@ -40,10 +40,9 @@ ARG INFRA_PELICAN_COMMIT=HEAD
 
 WORKDIR /tmp/build-cmark
 RUN git clone https://github.com/apache/infrastructure-pelican.git
-WORKDIR /tmp/build-cmark/infrastructure-pelican
-RUN git checkout ${INFRA_PELICAN_COMMIT}
-WORKDIR /tmp/build-cmark
+RUN git -C infrastructure-pelican checkout ${INFRA_PELICAN_COMMIT}
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
+RUN echo "export PELICANASF='/tmp/build-cmark/infrastructure-pelican/plugins/'" >> LIBCMARKDIR.sh
 
 # Standard Pelican stuff
 FROM python:3.9.5-slim-buster
@@ -61,7 +60,6 @@ RUN pip install matplotlib==${MATPLOTLIB_VERSION}
 # Copy cmark and ASF plugins here
 WORKDIR /tmp/build-cmark
 COPY --from=cmark /tmp/build-cmark .
-RUN echo "export PELICANASF='/tmp/build-cmark/infrastructure-pelican/plugins/'" >> LIBCMARKDIR.sh
 
 # Pelican setup
 WORKDIR /site
