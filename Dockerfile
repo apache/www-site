@@ -32,24 +32,15 @@
 # Build CMark
 FROM python:3.9.5-slim-buster as cmark
 
-ARG INFRA_PELICAN_COMMIT=5712b2a
-
 RUN apt update && apt upgrade -y
 RUN apt install git curl cmake build-essential -y
 
 WORKDIR /tmp/build-cmark
 RUN git clone https://github.com/apache/infrastructure-pelican.git
-WORKDIR /tmp/build-cmark/infrastructure-pelican
-RUN git checkout ${INFRA_PELICAN_COMMIT}
 WORKDIR /tmp/build-cmark
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
 
-# Slightly hacky pelican-gfm plugin install, for now
 # This relies on the pelicanconf.py including the directory in PLUGIN_PATHS
-WORKDIR /tmp/build-cmark/infrastructure-pelican/plugins/
-RUN mkdir pelican-gfm
-RUN cp /tmp/build-cmark/infrastructure-pelican/gfm.py pelican-gfm/
-RUN ( echo "#!/usr/bin/environment python -B" ; echo "from .gfm import *" ) > pelican-gfm/__init__.py
 
 # Standard Pelican stuff
 FROM python:3.9.5-slim-buster
