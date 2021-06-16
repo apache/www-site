@@ -32,10 +32,11 @@
 # Build CMark
 FROM python:3.9.5-slim-buster as cmark
 
-ARG INFRA_PELICAN_COMMIT=HEAD
-
 RUN apt update && apt upgrade -y
 RUN apt install git curl cmake build-essential -y
+
+# Define this *after* initial setup to allow that to be cached
+ARG INFRA_PELICAN_COMMIT=HEAD
 
 WORKDIR /tmp/build-cmark
 RUN git clone https://github.com/apache/infrastructure-pelican.git
