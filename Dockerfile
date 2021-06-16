@@ -39,6 +39,7 @@ WORKDIR /tmp/build-cmark
 RUN git clone https://github.com/apache/infrastructure-pelican.git
 WORKDIR /tmp/build-cmark
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
+RUN echo "export PELICANASF='/tmp/build-cmark/infrastructure-pelican/plugins'" >> LIBCMARKDIR.sh
 
 # This relies on the pelicanconf.py including the directory in PLUGIN_PATHS
 
