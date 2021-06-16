@@ -65,11 +65,6 @@ COPY --from=cmark /tmp/build-cmark .
 # Pelican setup
 WORKDIR /site
 
-# Slightly hacky pelican-gfm plugin install, for now
-RUN mkdir pelican-gfm
-RUN cp /tmp/build-cmark/infrastructure-pelican/gfm.py pelican-gfm/
-RUN ( echo "#!/usr/bin/environment python -B" ; echo "from .gfm import *" ) > pelican-gfm/__init__.py
-
 # Run Pelican
 RUN mkdir -p /site-generated
 ENTRYPOINT [ "/bin/bash", "-c", "source /tmp/build-cmark/LIBCMARKDIR.sh && pelican -Dr -o /site-generated -b 0.0.0.0 -l" ]
