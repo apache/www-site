@@ -26,7 +26,7 @@
 # And then run this or anything suitable in that shell to experiment:
 #
 #    source /tmp/build-cmark/LIBCMARKDIR.sh
-#    pelican -Dr -o /site-generated -b 0.0.0.0 -l
+#    pelican -r -o /site-generated -b 0.0.0.0 -l [-D] # -D: optional debug; noisy
 #
 
 # Build CMark
