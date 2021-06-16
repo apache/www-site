@@ -8,7 +8,7 @@
 #
 # And run with
 #
-#   docker run -it -p8000:8000 -v $PWD:/site -v $PWD/site-generated/:/site-generated www-site
+#   docker run -it -p8000:8000 -v $PWD:/site www-site
 #
 # from a folder that contains your pelicanconf.py file and ./content folder.
 #
@@ -43,7 +43,13 @@ WORKDIR /tmp/build-cmark/infrastructure-pelican
 RUN git checkout ${INFRA_PELICAN_COMMIT}
 WORKDIR /tmp/build-cmark
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
-RUN chmod +x LIBCMARKDIR.sh
+
+# Slightly hacky pelican-gfm plugin install, for now
+# This relies on the pelicanconf.py including the directory in PLUGIN_PATHS
+WORKDIR /tmp/build-cmark/infrastructure-pelican/plugins/
+RUN mkdir pelican-gfm
+RUN cp /tmp/build-cmark/infrastructure-pelican/gfm.py pelican-gfm/
+RUN ( echo "#!/usr/bin/environment python -B" ; echo "from .gfm import *" ) > pelican-gfm/__init__.py
 
 # Standard Pelican stuff
 FROM python:3.9.5-slim-buster

@@ -94,7 +94,7 @@ THEME = './theme/apache'
 # other plugins are discoverable and can be installed via pip by mentioning them in requirements.txt
 # You can find plugins here: https://github.com/pelican-plugins
 # Plugins that are custom for this site are found in PLUGIN_PATHS.
-PLUGIN_PATHS = ['./theme/plugins']
+PLUGIN_PATHS = ['./theme/plugins','/tmp/build-cmark/infrastructure-pelican/plugins']
 PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader']
 
 # Lifecycle and plugins:
