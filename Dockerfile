@@ -32,11 +32,15 @@
 # Build CMark
 FROM python:3.9.5-slim-buster as cmark
 
+ARG INFRA_PELICAN_COMMIT=HEAD
+
 RUN apt update && apt upgrade -y
 RUN apt install git curl cmake build-essential -y
 
 WORKDIR /tmp/build-cmark
 RUN git clone https://github.com/apache/infrastructure-pelican.git
+WORKDIR /tmp/build-cmark/infrastructure-pelican
+RUN git checkout ${INFRA_PELICAN_COMMIT}
 WORKDIR /tmp/build-cmark
 RUN ./infrastructure-pelican/bin/build-cmark.sh | grep LIBCMARKDIR > LIBCMARKDIR.sh
 RUN echo "export PELICANASF='/tmp/build-cmark/infrastructure-pelican/plugins'" >> LIBCMARKDIR.sh
@@ -65,4 +69,4 @@ WORKDIR /site
 
 # Run Pelican
 RUN mkdir -p /site-generated
-ENTRYPOINT [ "/bin/bash", "-c", "source /tmp/build-cmark/LIBCMARKDIR.sh && pelican -Dr -o /site-generated -b 0.0.0.0 -l" ]
+ENTRYPOINT [ "/bin/bash", "-c", "source /tmp/build-cmark/LIBCMARKDIR.sh && pelican -r -o /site-generated -b 0.0.0.0 -l" ]
