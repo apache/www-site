@@ -44,6 +44,11 @@ as is an alternate [categorized view of all board meeting minutes](https://whims
 
 # 2021 Board meeting minutes  {#2021}
 
+- [19 May 2021](../records/minutes/2021/board_minutes_2021_05_19.txt)
+    * Change Parquet Chair
+    * Change Geode Chair
+    * Change DataFu Chair
+
 - [21 April 2021](../records/minutes/2021/board_minutes_2021_04_21.txt)
     * Change Traffic Control Chair
     * Change Kibble Chair
