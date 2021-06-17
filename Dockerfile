@@ -47,13 +47,12 @@ RUN echo "export PELICANASF='/tmp/build-cmark/infrastructure-pelican/plugins/'" 
 # Standard Pelican stuff
 FROM python:3.9.5-slim-buster
 
-ARG PELICAN_VERSION=4.6.0
-ARG SOURCE_SANS_VERSION=3.028R
-ARG MATPLOTLIB_VERSION=3.4.1
-
 RUN apt update && apt upgrade -y
 RUN apt install wget unzip fontconfig -y
 RUN pip install bs4 requests pyyaml ezt markdown pelican-sitemap BeautifulSoup4
+
+ARG PELICAN_VERSION=4.6.0
+ARG MATPLOTLIB_VERSION=3.4.1
 RUN pip install pelican==${PELICAN_VERSION}
 RUN pip install matplotlib==${MATPLOTLIB_VERSION}
 
@@ -61,9 +60,7 @@ RUN pip install matplotlib==${MATPLOTLIB_VERSION}
 WORKDIR /tmp/build-cmark
 COPY --from=cmark /tmp/build-cmark .
 
-# Pelican setup
-WORKDIR /site
-
 # Run Pelican
+WORKDIR /site
 RUN mkdir -p /site-generated
 ENTRYPOINT [ "/bin/bash", "-c", "source /tmp/build-cmark/LIBCMARKDIR.sh && pelican -r -o /site-generated -b 0.0.0.0 -l" ]
