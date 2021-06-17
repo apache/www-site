@@ -42,11 +42,6 @@ import pelican.utils
 
 from bs4 import BeautifulSoup
 
-ASF_DATA = {
-    'metadata': { },
-    'debug': False,
-}
-
 FIXUP_HTML = [
     (re.compile(r'&lt;'), '<'),
     (re.compile(r'&gt;'), '>'),
