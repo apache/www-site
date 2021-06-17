@@ -32,7 +32,8 @@ This repository provides the source for the main website of The Apache Software 
     - [Process](docs/process.md) describes the full end to end build from the developers perspecitve.
     - [Plugins](theme/plugins/.) describes the plugins that are included in the repository.
 
-The website is built with [Pelican](https://blog.getpelican.com).
+The website is built with [Pelican](https://blog.getpelican.com). A [Dockerfile](./Dockerfile) is provided as a convenience for running local builds.
+
 Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
 mechanism which runs [Buildbot](https://ci2.apache.org/#/builders/3/).
 
