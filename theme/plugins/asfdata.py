@@ -334,16 +334,16 @@ def process_load(metadata, value, load, debug):
             process_sequence(metadata, seq, sequence, load, debug)
 
 
-# convert bytes
-def bytesto(bytes, to, bsize=1024):
+# convert byte count to human-readable (1k 2m 3g etc)
+def bytesto(bytecount, to, bsize=1024):
     a = {'k': 1, 'm': 2, 'g': 3, 't': 4, 'p': 5, 'e': 6}
-    r = float(bytes)
+    r = float(bytecount)
     return r / (bsize ** a[to])
 
 
 # open a subprocess
-def os_popen(list):
-    return subprocess.Popen(list, stdout=subprocess.PIPE, universal_newlines=True)
+def os_popen(args):
+    return subprocess.Popen(args, stdout=subprocess.PIPE, universal_newlines=True)
 
 
 # retrieve the release distributions for a project from svn
