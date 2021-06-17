@@ -22,7 +22,7 @@
 from __future__ import unicode_literals
 from datetime import date
 
-# import os
+import os
 # import sys
 
 PATH = 'content'
@@ -95,6 +95,8 @@ THEME = './theme/apache'
 # You can find plugins here: https://github.com/pelican-plugins
 # Plugins that are custom for this site are found in PLUGIN_PATHS.
 PLUGIN_PATHS = ['./theme/plugins']
+if 'PELICANASF' in os.environ:
+    PLUGIN_PATHS.append(os.environ['PELICANASF'])
 PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader']
 
 # Lifecycle and plugins:
