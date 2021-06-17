@@ -4,11 +4,11 @@
 #
 # To use this, build the container image with
 #
-#     docker build -t www-site .
+#    docker build -t www-site .
 #
 # And run with
 #
-#   docker run -it -p8000:8000 -v $PWD:/site www-site
+#    docker run -it -p8000:8000 -v $PWD:/site www-site
 #
 # from a folder that contains your pelicanconf.py file and ./content folder.
 #
