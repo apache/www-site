@@ -2,6 +2,8 @@
 
 These instructions are for building the www-site locally on either linux or macOS.
 
+Note that a [Dockerfile](../Dockerfile) is also available to build www-site without installing software (other than a container runtime) locally.
+
 # Prerequisites
 
 1. Python 3.6 or greater
