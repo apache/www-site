@@ -15,7 +15,7 @@ This repository provides the source for the main website of The Apache Software 
 
 - [Issues](https://github.com/apache/www-site/issues)
 
-- [Branches](https://github.com/apache/www-site/branches)
+- [Branches](https://github.com/apache/www-site/branches). Note that [.asf.yaml](./.asf.yaml) is setup for autopreview, so that a branch named `preview/mytest` for example is automatically staged at https://www-mytest.staged.apache.org/
 
 - [Pull Requests](https://github.com/apache/www-site/pulls)
   - [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
