@@ -226,40 +226,47 @@ def process_sequence(metadata, seq, sequence, load, debug):
 
     # description
     if 'description' in sequence:
-        print(f'{seq}: {sequence["description"]}')
+        if debug:
+            print(f'{seq}: {sequence["description"]}')
 
     # select sub dictionary
     if 'path' in sequence:
-        print(f'path: {sequence["path"]}')
+        if debug:
+            print(f'path: {sequence["path"]}')
         parts = sequence['path'].split('.')
         for part in parts:
             reference = reference[part]
 
     # filter dictionary by attribute value. if filter is false discard
     if 'where' in sequence:
-        print(f'where: {sequence["where"]}')
+        if debug:
+            print(f'where: {sequence["where"]}')
         where_parts(reference, sequence['where'])
 
     # remove irrelevant keys
     if 'trim' in sequence:
-        print(f'trim: {sequence["trim"]}')
+        if debug:
+            print(f'trim: {sequence["trim"]}')
         parts = sequence['trim'].split(',')
         for part in parts:
             remove_part(reference, part)
 
     # transform roster and chair patterns
     if 'asfid' in sequence:
-        print(f'asfid: {sequence["asfid"]}')
+        if debug:
+            print(f'asfid: {sequence["asfid"]}')
         asfid_part(reference, sequence['asfid'])
 
     # add first letter ofr alphabetic categories
     if 'alpha' in sequence:
-        print(f'alpha: {sequence["alpha"]}')
+        if debug:
+            print(f'alpha: {sequence["alpha"]}')
         alpha_part(reference, sequence['alpha'])
 
     # this dictionary is derived from sub-dictionaries
     if 'dictionary' in sequence:
-        print(f'dictionary: {sequence["dictionary"]}')
+        if debug:
+            print(f'dictionary: {sequence["dictionary"]}')
         reference = { }
         paths = sequence['dictionary'].split(',')
         # create a dictionary from the keys in one or more sub-dictionaries
@@ -271,22 +278,25 @@ def process_sequence(metadata, seq, sequence, load, debug):
 
     # this sequence is derived from another sequence
     if 'sequence' in sequence:
-        print(f'sequence: {sequence["sequence"]}')
+        if debug:
+            print(f'sequence: {sequence["sequence"]}')
         reference = metadata[sequence['sequence']]
         # sequences derived from prior sequences do not need to be converted to a sequence
         is_sequence = True
 
     # this sequence is a random sample of another sequence
     if 'random' in sequence:
-        print(f'random: {sequence["random"]}')
+        if debug:
+            print(f'random: {sequence["random"]}')
         if is_sequence:
             reference = random.sample(reference, sequence['random'])
         else:
-            print(f'{seq} - random requires an existing sequence to sample')
+            print(f'WARNING: {seq} - random requires an existing sequence to sample')
 
     # for a project or podling see if the logo exists w/HEAD and set the relative path.
     if 'logo' in sequence:
-        print(f'logo: {sequence["logo"]}')
+        if debug:
+            print(f'logo: {sequence["logo"]}')
         if is_sequence:
             # determine the project or podling logo
             reference = add_logo(reference, sequence['logo'])
@@ -296,29 +306,31 @@ def process_sequence(metadata, seq, sequence, load, debug):
                 for item in reference:
                     setattr(item, 'name', ' '.join(item.name.split(' ')[1:-1]))
         else:
-            print(f'{seq} - logo requires an existing sequence')
+            print(f'WARNING: {seq} - logo requires an existing sequence')
 
     # this sequence is a sorted list divided into multiple columns
     if 'split' in sequence:
-        print(f'split: {sequence["split"]}')
+        if debug:
+            print(f'split: {sequence["split"]}')
         if is_sequence:
             # create a sequence for each column
             split_list(metadata, seq, reference, sequence['split'])
             # created column sequences are already saved to metadata so do not do so later
             save_metadata = False
         else:
-            print(f'{seq} - split requires an existing sequence to split')
+            print(f'WARNING: {seq} - split requires an existing sequence to split')
 
     # if this not already a sequence or dictionary then convert to a sequence
     if not is_sequence and not is_dictionary:
         # convert the dictionary/list to a sequence of objects
-        print(f'{seq}: create sequence')
+        if debug:
+            print(f'{seq}: create sequence')
         if isinstance(reference, dict):
             reference = sequence_dict(seq, reference)
         elif isinstance(reference, list):
             reference = sequence_list(seq, reference)
         else:
-            print(f'{seq}: cannot proceed invalid type, must be dict or list')
+            print(f'WARNING: {seq}: cannot proceed invalid type, must be dict or list')
 
     # save sequence in metadata
     if save_metadata:
@@ -347,8 +359,9 @@ def os_popen(args):
 
 
 # retrieve the release distributions for a project from svn
-def process_distributions(project, src, sort_revision):
-    print(f'releases: {project}')
+def process_distributions(project, src, sort_revision, debug):
+    if debug:
+       print(f'releases: {project}')
 
     # current date information will help process svn ls results
     gatherDate = datetime.datetime.utcnow()
@@ -364,7 +377,8 @@ def process_distributions(project, src, sort_revision):
 
     # read the output from svn ls -Rv
     url = f'https://dist.apache.org/repos/dist/release/{project}'
-    print(f'releases: {url}')
+    if debug:
+        print(f'releases: {url}')
     with os_popen(['svn', 'ls', '-Rv', url]) as s:
         for line in s.stdout:
             line = line.strip()
@@ -491,7 +505,8 @@ def truncate_words(text, words):
 
 # retrieve blog posts from an Atom feed.
 def process_blog(feed, count, words, debug):
-    print(f'blog feed: {feed}')
+    if debug:
+        print(f'blog feed: {feed}')
     content = requests.get(feed).text
     dom = xml.dom.minidom.parseString(content)
     # dive into the dom to get 'entry' elements
@@ -547,8 +562,9 @@ def connect_to_endpoint(url, headers):
 
 
 # retrieve the last count recent tweets from the handle.
-def process_twitter(handle, count):
-    print(f'-----\ntwitter feed: {handle}')
+def process_twitter(handle, count, debug):
+    if debug:
+        print(f'-----\ntwitter feed: {handle}')
     bearer_token = twitter_auth()
     if not bearer_token:
         return sequence_list('twitter',{
@@ -569,8 +585,9 @@ def process_twitter(handle, count):
 
 
 # create sequence of sequences of ASF ECCN data.
-def process_eccn(fname):
-    print('-----\nECCN:', fname)
+def process_eccn(fname, debug):
+    if debug:
+        print('-----\nECCN:', fname)
     j = yaml.safe_load(open(fname))
 
     # versions have zero or more controlled sources
@@ -659,14 +676,15 @@ def config_read_data(pel_ob):
 
     # Lift data from ASF_DATA['data'] into METADATA
     if 'data' in asf_data:
-        print(f'Processing {asf_data["data"]}')
+        if debug:
+            print(f'Processing {asf_data["data"]}')
         config_data = read_config(asf_data['data'])
         for key in config_data:
             # first check for data that is a singleton with special handling
             if key == 'eccn':
                 # process eccn data
                 fname = config_data[key]['file']
-                metadata[key] = v = process_eccn(fname)
+                metadata[key] = v = process_eccn(fname, debug)
                 if debug:
                     print('ECCN V:', v)
                 continue
@@ -676,7 +694,7 @@ def config_read_data(pel_ob):
                 # if we decide to have multiple twitter feeds available then move next to blog below
                 handle = config_data[key]['handle']
                 count = config_data[key]['count']
-                metadata[key] = v = process_twitter(handle, count)
+                metadata[key] = v = process_twitter(handle, count, debug)
                 if debug:
                     print('TWITTER V:', v)
                 continue
@@ -685,8 +703,8 @@ def config_read_data(pel_ob):
             if isinstance(value, dict):
                 # dictionaries may have multiple data structures that are processed with a sequence of actions
                 # into multiple sequences and dictionaries.
-                print(f'-----\n{key} creates one or more sequences')
                 if debug:
+                    print(f'-----\n{key} creates one or more sequences')
                     print(value)
                 # special cases that are multiple are processed first
                 if 'blog' in value:
@@ -707,7 +725,7 @@ def config_read_data(pel_ob):
                     src = config_data[key]['src']
                     revision = config_data[key]['revision']
                     project = config_data[key]['release']
-                    keys, distributions = process_distributions(project, src, revision)
+                    keys, distributions = process_distributions(project, src, revision, debug)
                     metadata[key] = v = distributions
                     metadata[f"{key}-keys"] = keys
                     metadata[f"{key}-project"] = project
@@ -729,27 +747,34 @@ def config_read_data(pel_ob):
                     metadata[key] = value
             else:
                 # simple metadata values - either an int or str
-                print(f'{key} = {value}')
+                if debug:
+                    print(f'{key} = {value}')
                 metadata[key] = value
 
     # display asfdata metadata or metadata type
-    print('-----')
+    if debug:
+        print('-----')
     for key in metadata:
         if debug:
             print(f'metadata[{key}] =')
             print(metadata[key])
             print('-----')
         elif isinstance(metadata[key], str):
-            print(f'metadata[{key}] = "{metadata[key]}"')
+            if debug:
+                print(f'metadata[{key}] = "{metadata[key]}"')
         elif isinstance(metadata[key], int):
-            print(f'metadata[{key}] = {metadata[key]}')
+            if debug:
+                print(f'metadata[{key}] = {metadata[key]}')
         elif isinstance(metadata[key], list):
-            print(f'metadata[{key}] is a sequence.')
+            if debug:
+                print(f'metadata[{key}] is a sequence.')
         elif isinstance(metadata[key], dict):
-            print(f'metadata[{key}] is a dictionary.')
+            if debug:
+                print(f'metadata[{key}] is a dictionary.')
         else:
             keytype = type(metadata[key])
-            print(f'metadata[{key}] is a {keytype}')
+            if debug:
+                print(f'metadata[{key}] is a {keytype}')
 
 
 def tb_initialized(pel_ob):
