@@ -146,4 +146,4 @@ group able to allocate names to Apache Software Foundation project issues.
 
 If you believe the details of an issue are described
 incorrectly, see the [CVE
-FAQ](https://cve.mitre.org/about/faqs.html#b12) for how to contact Nitre, the CVE organization, with corrections.
+FAQ](https://cve.mitre.org/about/faqs.html#b12) for how to contact Mitre, the CVE organization, with corrections.
