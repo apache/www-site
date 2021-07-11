@@ -1,3 +1,7 @@
+# General build information
+
+[ASF-Pelican build information](https://infra.apache.org/asf-pelican-build.html)
+
 # Local Pelican Builds
 
 These instructions are for building the www-site locally on either linux or macOS.
