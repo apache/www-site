@@ -20,17 +20,11 @@ This repository provides the source for the main website of The Apache Software 
 - [Pull Requests](https://github.com/apache/www-site/pulls)
   - [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
-- [Documentation](docs/)
-  - Web Site Committers
-    - [Markdown](docs/markdown.md) focuses on what users need to know about GitHub Flavored Markdown (GFM) in order to maintain content.
-    - [Feature branches](docs/branches.md) focuses on handling major changes.
-    - [Local builds](docs/builds.md) focuses on how to develop on a local linux or macOS system.
-  - Web Site Designers
-    - [Theme](theme/apache/templates/.) focuses on what designers need to know about the website theme.
-  - Web Site Developers
-    - [Data modeling](docs/data.md) focuses on what developers need to know in order to maintain and expand on the metadata made available to the site.
-    - [Process](docs/process.md) describes the full end to end build from the developers perspecitve.
-    - [Plugins](theme/plugins/.) describes the plugins that are included in the repository.
+## Documentation
+
+Read the [Getting started guide](https://infra.apache.org/asf-pelican-gettingstarted.html) and the pages it links to.
+
+## Notes
 
 The website is built with [Pelican](https://blog.getpelican.com). A [Dockerfile](./Dockerfile) is provided as a convenience for running local builds.
 
