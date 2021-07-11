@@ -8,13 +8,13 @@ These instructions are for building the www-site locally on either linux or macO
 
 Note that a [Dockerfile](../Dockerfile) is also available to build www-site without installing software (other than a container runtime) locally.
 
-# Prerequisites
+## Prerequisites
 
 1. Python 3.6 or greater
 2. Pip
 3. CMake
 
-# Installation
+## Installation
 
 1. Download the files from https://github.com/apache/infrastructure-p6/tree/production/modules/pelican_asf/files
 
