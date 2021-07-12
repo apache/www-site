@@ -17,19 +17,17 @@ meetings might not be listed in the calendar.
 Minutes from all meetings will always be produced.
 
 # Board Meeting Minutes
-Formal board meeting minutes from 2010 through present are found here.  
+Links to formal board meeting minutes from 2010 through present are here.  
 
-**Please Note**:
-
-The board typically approves minutes from one meeting during the *next* board
-meeting, so minutes will be published roughly one month later than the
+**Note**: The board typically approves minutes from one meeting during the *following* board
+meeting, so minutes will be published roughly one month after the
 scheduled date.  Other [corporate records](/foundation/records/) are published,
-as is an alternate [categorized view of all board meeting minutes](https://whimsy.apache.org/board/minutes/).
+as is a [categorized view of all board meeting minutes](https://whimsy.apache.org/board/minutes/).
 
 ## Chronological view
 
-[2020](calendar.html#2020) |
-[2019](calendar.html#2019) |
+[2021](calendar.html#2021) |
+[2020](calendar.html#2020) | [2019](calendar.html#2019) |
 [2018](calendar.html#2018) | [2017](calendar.html#2017) | 
 [2016](calendar.html#2016) | [2015](calendar.html#2015) |
 [2014](calendar-2010-2014.html#2014) | [2013](calendar-2010-2014.html#2013) |
