@@ -66,21 +66,21 @@ been done.
 1. The project team investigates the report and either rejects or accepts
 it.
 
-1. If the proejct team rejects the report, the team writes to the reporter to
+1. If the project team rejects the report, the team writes to the reporter to
 explain why, with a copy to `security@project.apache.org` if it exists, or to
 `security@apache.org`.
 
 1. If the project team accepts the report, the team writes to the reporter to let them
 know that they have accepted the report and that they are working on a fix.
 
-1. The project team requests a CVE (<a href="https://cve.mitre.org/" target="_blank">Common Vulnerabilites and Exposures</a>) name from `security@apache.org` by
-sending an e-mail with the subject "CVE request for..." and providing a
+1. The project team requests a CVE (<a href="https://cve.mitre.org/" target="_blank">Common Vulnerabilites and Exposures</a>) name from the internal portal, `https://cveprocess.apache.org`.  Alternatively by
+sending an e-mail with the subject "CVE request for..." to `security@apache.org`, providing a
 short (one-line) description of the vulnerability. `security@apache.org` can
 help determine if a report requires multiple CVEs or if multiple reports
 should be merged under a single CVE.
 
 1. The ASF security team will allocate a CVE and send a link to the
-internal portal, `https://cveprocess.apache.org`, where the project team can enter details of the
+internal portal where the project team can enter details of the
 vulnerability.
 
 1. The project team agrees on a fix on their private list.
@@ -107,13 +107,13 @@ schedule with the reporter.
 1. The project team announces the vulnerability and the fix. The vulnerability
 announcement should be sent after, or at the same time as, the release announcement to the
 following destinations.  The internal portal generates texts that can be used for
-the emails.
+the emails and can send the emails if required.
 
     a. the same destinations as the release announcement
 
     b. the vulnerability reporter
 
-    c. the project's security list (or 1security@apache.org1 if the project does
+    c. the project's security list (or `security@apache.org` if the project does
 not have a dedicated security list)
 
     d. `oss-security@lists.openwall.com` ([subscription not required](http://oss-security.openwall.org/wiki/mailing-lists)).
