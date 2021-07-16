@@ -33,11 +33,11 @@ I met Patricia at ApacheCon 2019 and had the pleasure of nominating her
 for reelection this past year.  She brought fresh insight and experience to our discussions,
 as well as a delightful focus on what changes are needed to improve our process for
 all end-users, some of whom might want to use our software without compiling it first.
-
-She reminded me of my first job experiences in computing, way back in 1983,
+She often reminded me of my first job experiences in computing, way back in 1983,
 when the field was still largely driven by women who started in Mathematics
 and explored their way into the roles of Programmer/Analyst through sheer talent,
 determination, and boundless curiosity. She will be greatly missed.
+
  — *[Roy T. Fielding](https://roy.gbiv.com/), Director, Incorporator, and former Board Chair, ASF*
 <br>
 <br>
