@@ -31,8 +31,8 @@ The website is built with [Pelican](https://blog.getpelican.com). A [Dockerfile]
 Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
 mechanism which runs [Buildbot](https://ci2.apache.org/#/builders/3/).
 
-- [Pelican Configuration](pelicanconf.py) -- pelican configuration
-- [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](theme/plugins/asfdata.py).
+- [Pelican Configuration](pelicanconf.yaml) -- pelican configuration
+- [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](https://github.com/apache/infrastructure-pelican/blob/master/plugins/asfdata.py).
 - [ASF YAML Pelican Build](.asf.yaml) -- ASF infrastructure instructions
 
 The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
