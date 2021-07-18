@@ -2,9 +2,6 @@ Title:   Patricia Shanahan - July 6th 2021
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 <br>
-<img align="left" width="320" height="220" alt="Patricia Shanahan at ApacheCon NA 2019"
-        src="im/pats_20190922_s.jpg">
-
 # Patricia Shanahan - July 6th 2021
 
 We received the sad news that Patricia Shanahan has passed away,
@@ -16,6 +13,9 @@ architecture roles for NCR, Celerity Computing, FPS, Cray Research,
 and Sun Microsystems. She then went to UCSD as a graduate student,
 receiving a PhD in computer science in 2009, after which she retired.
 That's when she joined the ASF.
+
+<img align="left" width="380" height="220" alt="Patricia Shanahan at ApacheCon NA 2019"
+        src="im/pats_20190922_s.jpg">
 
  > "After retiring, I wanted to continue programming but without the pressure and
  constraints of a job, so I started contributing to Apache. Open software development
