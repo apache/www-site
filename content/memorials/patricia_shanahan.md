@@ -15,7 +15,8 @@ and Sun Microsystems. She then went to UCSD as a graduate student,
 receiving a PhD in computer science in 2009, after which she retired.
 That's when she joined the ASF.
 
-<img style="float: left; padding-right: 20px; padding left: 0px;" width="380" height="220"
+<img style="float: left; padding-right: 20px; padding-left: 0px; padding-bottom: 20px;"
+        width="380" height="220"
         alt="Patricia Shanahan at ApacheCon NA 2019"
         src="im/pats_20190922_s.jpg">
 
