@@ -2,8 +2,10 @@ Title:   Patricia Shanahan - July 6th 2021
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 <br>
+<img align="left" width="320" height="220" alt="Patricia Shanahan at ApacheCon NA 2019"
+        src="im/pats_20190922_s.jpg">
 
-#  Patricia Shanahan - July 6th 2021
+# Patricia Shanahan - July 6th 2021
 
 We received the sad news that Patricia Shanahan has passed away,
 peacefully, after a long battle with cancer.
