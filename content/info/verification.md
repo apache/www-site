@@ -120,7 +120,7 @@ together, so you should be able to connect to any key server.
     gpg:               imported: 1
 
 In this example, you have now received a public key for an entity known as
-'Sander Striker &lt;striker@apache.org&gt;' However, you have no way of
+`Sander Striker <striker@apache.org>`. However, you have no way of
 verifying this key was created by the person known as Sander Striker. But,
 let's try to verify the release signature again.
 

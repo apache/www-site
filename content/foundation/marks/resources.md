@@ -1,7 +1,7 @@
 Title: Apache Trademark Resources And Site Map
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-A listing of various helpful information about Apache&reg; trademarks, including links to some generally helpful information about trademarks in open source.
+A listing of various helpful information about Apache&reg; trademarks, including links to some general information about trademarks in open source.
 The ASF considers the names of all Apache projects and software products to be trademarks of the ASF.
 
 # Apache Trademark Information Site Map  {#sitemap}
@@ -24,8 +24,8 @@ an Apache project, or are you a user, new contributor, software vendor, or third
 
 # Apache Trademark Policy Presentations / Slides / Videos  {#slides}
 
-To help better explain how to use Apache brands, both for Apache projects as well as for others using Apache software
-in their organizations, we have some slide decks:
+Here are presentation that explain how to use Apache brands, for Apache projects and for others using Apache software
+in their organizations:
 
  * [Profiting From Apache&reg; Brands Without Losing Your Soul](//www.slideshare.net/shanecurcuru/profiting-from-apache-brands-without-losing-your-soul) - a
 guide for third party users wishing to properly use Apache brands within their own work. *(Presented at Apache:BigData in Budapest, 2015)*
@@ -45,8 +45,7 @@ developed by a broad collection of volunteers, and often copied/improved upon or
 struggle with properly using and enforcing their trademarks, especially in the face of sometimes fierce and
 fast-moving commercial companies looking to profit from this work.
 
-Here are a number of *external links* that you may find useful in learning about trademark law, as well
-as how trademarks apply to FOSS software like our many Apache software projects.
+Here are a number of *external links* that you may find useful in learning about trademark law and how trademarks apply to FOSS software like our many Apache software projects.
 
 
 | Paper or Article Title | Description of why this *external link* is interesting |
@@ -69,8 +68,8 @@ as how trademarks apply to FOSS software like our many Apache software projects.
 
 While many Apache software product names are unregistered trademarks, more and more Apache project
 communities are choosing to register their product name in the US and/or other countries.  These *external links*
-are just a few of the sites you might use to search for legally registered trademarks.  Pro tip: The Nice Class 9 is used
-for most software related trademarks.
+are just a few of the sites you might use to search for legally registered trademarks.  Pro tip: The <a href="https://www.upcounsel.com/trademark-class-9" target="_blank">Nice Class 9</a> is used
+for most software-related trademarks.
 
  * [USPTO Trademark Search Database](http://www.uspto.gov/trademarks-application-process/search-trademark-database) - official
 US trademark registry.  Tip: when copying links about specific registrations/applications, do **not** use the search link you get - copy
@@ -83,8 +82,7 @@ the "TDSR" blue button link instead.  There are many [more USPTO search tips](/f
 
 **IMPORTANT:** *External links* here do not imply endorsement of the content or the author
 of any externally hosted information.  Apache Trademark policies apply to projects hosted at the Apache Software Foundation
-and to use of any Apache brands by third parties.  If you require legal advice, you should
-contact your own legal counsel; the ASF and our communities cannot provide legal
+and to use of any Apache brands by third parties.  If you require legal advice, contact your own legal counsel; the ASF and our communities cannot provide legal
 advice to you.
 
 **Reminder:** Apache software code and documentation, including this page, is provided under

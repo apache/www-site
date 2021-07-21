@@ -2,8 +2,7 @@ Title: Martin Pöschl: a Memorial
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 With great sadness, we must report the staggering loss of our good friend
-and colleague, Martin Pöschl (id: mpoeschl). Details are sketchy, but it's
-been confirmed that Martin passed away on January 29th, 2004. Martin lived
+and colleague, Martin Pöschl (id: mpoeschl). Martin passed away on January 29th, 2004. Martin lived
 in Vienna, Austria.
 
 Martin was an extraordinary human being and a fantastic engineer. He was
@@ -14,7 +13,7 @@ committed to the success of our projects, and participated in all
 activities with an open mind, a very constructive attitude, and an
 awareness of the multi-faceted social aspects of our community.
 
-Martin dedicated tireless hours to discussing projects and software,
+Martin dedicated endless hours to discussing projects and software,
 answering questions on mailing lists and IRC, and heroically slogging
 through the issue trackers. He was most recently the lead developer on
 db.apache.org's Torque project. Martin was also heavily involved in the OJB

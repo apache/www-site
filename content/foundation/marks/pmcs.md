@@ -8,8 +8,8 @@ The [site map of trademark resources][resources] is also helpful.
 # Apache Project Website Branding Policy  {#introduction}
 
 This document defines the branding and trademark policies for
-how Apache&reg; projects are required to display certain elements 
-on their websites, and to treat all trademarks - Apache's and those of other 
+how Apache&reg; projects must display certain elements 
+on their websites, and treat all trademarks - Apache's and those of other 
 organizations - appropriately. [The PMC Branding Responsibilities](responsibility.html) also explains
 how PMC members must manage their project's brands in other ways.
 
@@ -27,7 +27,7 @@ See Also: [Trademark Resources Site Map][resources].
 
   - Apache projects must host official website content on an
     `apache.org` domain. This includes content overseen by the
-    project's PMC (including the top level website, downloads, and wikis),
+    project's PMC (including the top level website, download pages, and wikis),
     and ensures that the ASF infrastructure team can maintain the
     services while informing users that the content is official
     and comes from the ASF and the project's PMC, and not from a third party.
@@ -47,8 +47,8 @@ See Also: [Trademark Resources Site Map][resources].
     www.apache.org that will help give users a better sense of
     the connection between all Apache projects.
     
-  - New communities joining the Apache Incubator who have a long 
-    open source development history with a large userbase should 
+  - New communities joining the Apache Incubator which have a long 
+    open-source development history with a large userbase should 
     read about [limitations on using non-apache.org domains](#nonapache).
 
 # Project Naming And Descriptions Policy  {#naming}
@@ -57,16 +57,15 @@ See Also: [Trademark Resources Site Map][resources].
 yet been reviewed and merged into this policy document.*
 
   - <a id="projectname"></a>The primary branding for any project or product
-name must be in the form of "Apache *Projectname*". This ensures that the project or
-product is associated with the ASF as a whole in the minds of
-users, and ensures that third parties cannot as easily misuse our project names.
+name must be in the form of "Apache *Projectname*". This ensures that users associate the project or
+product with the ASF as a whole, and that third parties cannot easily misuse our project names.
 The first and most prominent references to a project or product on
-every page, and uses in page titles or headers, must use the "Apache *Projectname*" form of its name. Other references may
-use either "Apache *Projectname*" or "*Projectname*" as appropriate for the subject matter.
+every page, and uses in page titles or headers, must use the "Apache *Projectname*" form of the name. Other references may
+use either "Apache *Projectname*" or "*Projectname*" as appropriate for the context.
 
   - <a id="markdesc"></a>Every product homepage and any overview download page
 for the product must include a prominent reference to the product as
-"Apache Foo software", and must include a brief one-sentence description of the purpose and
+"Apache Foo software", and must include a brief, one-sentence description of the purpose and
 function of the software product itself. For example:
 
 >The Apache Xerces XML parsing library software provides a complete
@@ -150,7 +149,7 @@ manner that is distinctly different from material related to the formal Sponsors
 Projects are free to use http, https or protocol relative
 links for the  mandatory links required by the website navigation links policy.
 
-It is recommended (but not required) that projects:
+We recomment, but do not require, that projects:
 
   - Use https for links where the target automatically switches to https when http is used
 
@@ -207,7 +206,7 @@ please work with press@.
 
 # Powered By... Logos  {#poweredby}
 
-Projects are encouraged to create a variation of their main logo as a
+We encourage projects to create a variation of their main logo as a
 "Powered By..." or " *Project* Inside" logo. This logo may be used by third
 parties to denote that they build products or services using the associated
 product. While we must ensure that the main product logo is associated with
@@ -233,10 +232,10 @@ In the future, we hope to generate this list from DOAP files of all products.
 
 # Other Trademark Requirements  {#other}
 
-If your project has subprojects that are software language specific, be
+If your project has subprojects that are software-language-specific, be
 sure to name them appropriately. For example, "Apache Xerces Perl" is not
 appropriate, since it improperly uses the trademark "Perl". A better
-project name would be "Apache Xerces for Perl". For example, the ASF could
+project name would be "Apache Xerces for Perl". The ASF could
 allow a third party named FooBar to ship a software product called "FooBar
 Software for Apache Xerces" or "BarFoo Services for Apache Xerces". The ASF
 would not allow "FooBar Xerces" or "BarFoo Xerces" forms of a name to be
@@ -245,8 +244,7 @@ of the word "Perl" (which is [a trademark of The Perl
 Foundation](https://www.perlfoundation.org/trademarks.html) ).
 
 **Registered Trademarks** If a PMC would like to request legal registration
-of their project's trademarks, please
-registering their marks, please [follow the REGREQUEST instructions][4].
+of their project's trademarks, [follow the REGREQUEST instructions][4].
 
 ## Project-Related Non-apache.org Domain Names  {#nonapache}
 
@@ -275,7 +273,7 @@ once the podling graduates to TLP.
   non-apache.org domains to Brand Management/trademarks@ for approval.
 
 - During Incubation, the PPMC must transition all development-oriented 
-  information as well as the primary project homepage to the 
+  information and the primary project homepage to the 
   official ProjectName.apache.org homepage. This is required 
   before a project may graduate.
 
@@ -297,7 +295,7 @@ communities long before the project came to the ASF.
 
 -- The domain is only used to provide *end user* level information.
 
--- The domain is Apache branded in appearance just like a.o sites are,
+-- The domain is Apache branded in appearance just as a.o sites are,
 and offers clear and prominent links directly to project.a.o/path for
 all likely contributor topics, like downloads, API docs, mailing lists,
 etc. etc.
@@ -310,18 +308,18 @@ These are exceptions, and are not the case for the majority of new projects:
 users on it. Continuing that as a user portal is important to serve the 
 existing non-technical users.
 
-- groovy-lang.org is long-running user facing portal. This domain is 
+- groovy-lang.org is long-running, user-facing portal. This domain is 
   still used as an end-user portal with information about the Groovy 
-  language itself. Developer information (for contributors to the 
-  Groovy codebase itself), discussions, and downloads are all on the 
+  language. Developer information (for contributors to the 
+  Groovy codebase), discussions, and downloads are all on the 
   expected groovy.apache.org website.
 
 # Project Branding Checklist  {#checklist}
 
-All Apache top level projects should be fully compliant with these guidelines.
+All Apache top level projects should comply fully with these guidelines.
 Any projects which are not compliant must work with trademarks@ to ensure that they become compliant.
 All Incubator podlings must either comply with all requirements before graduation, or
-have a specific and short-term action plan to complete compliance in short order after
+have a specific and short-term action plan to complete compliance soon after
 graduation (in case there are technical issues with website updates, etc.).
 
 Contact trademarks@ directly with branding questions - there is no
@@ -349,7 +347,7 @@ logo on your site
 # Rationale  {#rationale}
 
 This policy helps to promote and improve the image of all
-projects that are part of the ASF, and shows that all
+projects that are part of the ASF, to show that all
 Apache&reg; projects are part of the "community of
 developers and users" that we believe is an important factor in our
 success. While each of our projects manages their own affairs within the
@@ -359,7 +357,7 @@ presence that ties all of our projects together with the well-known
 end users and future contributors know how to find official project resources.
 
 Similarly, displaying Apache names and logos properly on our project pages 
-helps to maintain our legal rights to the trademarks they embody. 
+helps maintain our legal rights to the trademarks they embody. 
 Using the appropriate ™ and ® symbols, and using trademarks properly to 
 refer to our actual software products, are key ways that we tell the 
 world (and lawyers) that these trademarks are valuable to us.

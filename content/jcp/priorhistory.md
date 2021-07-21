@@ -114,7 +114,7 @@ specification
 If you are interested in representing the ASF on a new or existing expert
 group that doesn't have ASF representation, or participating with the
 existing activities on an expert group, please [send email to the JCP open
-list](mailto:jcp-open@apache.org?Subject=Interest in Participation) and
+list](mailto:jcp-open@apache.org?Subject=Interest%20in%20Participation) and
 indicate your interest.
 
 ### Current Representation  {#CurrentReps}
@@ -192,7 +192,7 @@ provide the TCK for the project. The following guidelines apply to working
 with TCKs at the ASF:
 
 - A project can request access to a TCK by sending email to [the JCP open
-list.](mailto:jcp-open@apache.org?Subject=Need TCK for Apache Project) 
+list](mailto:jcp-open@apache.org?Subject=Need%20TCK%20for%20Apache%20Project). 
 
 - This TCK is for use * **only** * for the purpose of the Apache project,
 and no other.

@@ -1,7 +1,8 @@
 # Apache Foundation Website (www.apache.org)
 
+We are now in production
+
 - [Production Website](https://www.apache.org/)
-- [Staged Website](https://www.staged.apache.org/)
 
 This repository provides the source for the main website of The Apache Software Foundation.
 
@@ -14,29 +15,24 @@ This repository provides the source for the main website of The Apache Software 
 
 - [Issues](https://github.com/apache/www-site/issues)
 
-- [Branches](https://github.com/apache/www-site/branches)
+- [Branches](https://github.com/apache/www-site/branches). Note that [.asf.yaml](./.asf.yaml) is setup for autopreview, so that a branch named `preview/mytest` for example is automatically staged at https://www-mytest.staged.apache.org/
 
 - [Pull Requests](https://github.com/apache/www-site/pulls)
   - [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
-- [Documentation](docs/)
-  - [Data models](docs/data.md) - how the global data model works and how to enhance your data.
-  - [EZT templates](docs/ezt.md) - how ezt templates convert global data into content.
-  - [Creating content](docs/markdown.md) - how to create markdown and mix it with html.
-  - [Processing](docs/process.md) - 
-  - [Preview/feature branches](docs/branches.md)
-  - Local builds
-  
+## Documentation
 
-The website is built with [Pelican](https://blog.getpelican.com).
+Read the [Getting started guide](https://infra.apache.org/asf-pelican-gettingstarted.html) and the pages it links to.
+
+## Notes
+
+The website is built with [Pelican](https://blog.getpelican.com). A [Dockerfile](./Dockerfile) is provided as a convenience for running local builds.
+
 Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
 mechanism which runs [Buildbot](https://ci2.apache.org/#/builders/3/).
 
-- [Base Template](theme/apache/templates/base.html) -- single html skeleton
-- [Templates](theme/apache/templates) -- see the full template folder
-- [Custom Plugins](theme/plugins) -- site data and page processing
-- [Pelican Configuration](pelicanconf.py) -- pelican configuration
-- [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](theme/plugins/asfdata.py).
+- [Pelican Configuration](pelicanconf.yaml) -- pelican configuration
+- [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](https://github.com/apache/infrastructure-pelican/blob/master/plugins/asfdata.py).
 - [ASF YAML Pelican Build](.asf.yaml) -- ASF infrastructure instructions
 
 The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
