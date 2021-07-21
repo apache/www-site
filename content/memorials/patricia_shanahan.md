@@ -46,3 +46,13 @@ determination, and boundless curiosity. She will be greatly missed.
  — *[Roy T. Fielding](https://roy.gbiv.com/), Director, Incorporator, and former Board Chair, ASF*
 <br>
 <br>
+Looking at my email archives to remind myself of all the good things Patricia
+did for the ASF, I see such a nice collection of wisdom, kindness and pragmatic
+views. Patricia has done a lot for the ASF in various projects, as well as on the
+Board of Directors where I have appreciated her broad views and her wealth of
+experience. Working with Patricia was a privilege, I will miss her.
+<br>
+<br>
+ — *[Bertrand Delacretaz](https://grep.codeconsult.ch/), Member & current Director, ASF*
+<br>
+<br>
