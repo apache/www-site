@@ -62,7 +62,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.bestecasinobonussen.nl/">Bestecasinobonussen.nl</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.voetbalgokken.nl/bookmakers/">Bookmakers</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.cafe24.com/en/?utm_source=apache&utm_medium=offlink&utm_campaign=mktbuilding-march-2021">Cafe24</a></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.casino2k.com/">Casino2k</a></li>
       <li><a target="_blank" rel="sponsored" href="http://engineering.cerner.com/">Cerner</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
       <li><a target="_blank" rel="sponsored" href="https://goread.io/buy-instagram-followers">Goread.io Followers</a></li>
