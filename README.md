@@ -26,7 +26,9 @@ Read the [Getting started guide](https://infra.apache.org/asf-pelican-gettingsta
 
 ## Notes
 
-The website is built with [Pelican](https://blog.getpelican.com). A [Dockerfile](./Dockerfile) is provided as a convenience for running local builds.
+The website is built with [Pelican](https://blog.getpelican.com).
+
+The [infrastructure-pelican Dockerfile](https://github.com/apache/infrastructure-pelican/blob/master/Dockerfile) can be used to build the website locally, for testing.
 
 Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
 mechanism which runs [Buildbot](https://ci2.apache.org/#/builders/3/).
