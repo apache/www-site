@@ -140,21 +140,15 @@ provides attractive tax benefits.
 
 ## Where will my sponsorship funds go?  {#FundsGo}
 
-The Apache Software Foundation comprises over 100 top level projects, over
-400 active members, over 2000 committers and countless contributors and
-users. We are responsible for millions of lines of code and the 35+
-servers which make up our infrastructure
+The Apache Software Foundation comprises 200+ top level projects, more than 800 active members, over 8,200 committers and countless contributors and users. We oversee hundreds of millions of lines of code, supported by an extensive infrastructure comprising ~200 individual machines, 1,400+ repositories, 5-6 petabytes in annual traffic, ~75M downloads per month, and 2-3M daily emails on 2,000+ lists.
 
 We also have the normal business operating expenses which go with any
 organization. These include:
 
-- Bandwidth costs
-- Servers and hardware
+- Infrastructure costs
 - Legal and Accounting
-- Normal office expenses
 - Marketing and PR
-- Subcontractors to "fill in the holes" for administrative and secretarial
-duties
+- Ongoing office expenses and administrative duties
 
 Your sponsorship helps the ASF meet these expenses and
 expand our capability to maintain our leadership in the developer and Open
