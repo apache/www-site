@@ -72,9 +72,9 @@ support it as part of a collaborative project.
 
 You may sign documents by hand or by electronic signature, and submit them by email. The ASF no longer accepts submissions by postal mail or by fax.
 
-When submitting by email, please fill in the form with a pdf viewer, then
-print and sign it, scan all pages into a single pdf file, 
-and attach the pdf file to an email addressed to secretary@apache.org. 
+When submitting by email, please fill in the form with a PDF viewer, then
+print and sign it, scan all pages into a single PDF file, 
+and attach the PDF file to an email addressed to secretary@apache.org. 
 
 No printer? See [CLA Frequently Asked Questions](cla-faq.html#printer)
 
