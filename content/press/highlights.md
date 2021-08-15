@@ -1,7 +1,7 @@
 Title: ASF Highlights: 1999-2019
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-Celebrating over a decade of open source leadership promoting Community Over Code.
+Celebrating over two decades of open source leadership promoting Community Over Code.
 
 [TOC]
 
