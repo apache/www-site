@@ -46,7 +46,7 @@ The ASF publishes your _full name_ unless you provide an alternative _public nam
 For example, if your full name is Andrew Bernard Charles Dickens, but you wish
 to be known as Andrew Dickens, enter the latter as your Public name.
 Provide your full name with your given name first and your family name
-last; you can use a different ordder in your Public name.
+last; you can use a different order in your Public name.
 
 We do not publish your email address or other contact details.
 
