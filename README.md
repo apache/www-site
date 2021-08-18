@@ -20,6 +20,15 @@ This repository provides the source for the main website of The Apache Software 
 - [Pull Requests](https://github.com/apache/www-site/pulls)
   - [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
+## Linking to Markdown (.md) sources
+
+Markdown (.md) files are shown approximately as they will appear on the generated website.
+This is convenient for reviewing changes, but means that linking to the original source requires a bit more work compared with other files.
+If you want to create a Permalink or raise an issue that relates to a particular Markdown source line, proceed as follows:
+- link to the rendered file as normal, for example: [https://github.com/apache/www-site/blob/main/README.md](https://github.com/apache/www-site/blob/main/README.md)
+- append ?plain=1 to the URL, for example: [https://github.com/apache/www-site/blob/main/README.md?plain=1](https://github.com/apache/www-site/blob/main/README.md?plain=1)
+- the file will then be displayed with line numbers, as for other types of files. Click on a line number to generate a Permalink or create an issue with a link to the line
+
 ## Documentation
 
 Read the [Getting started guide](https://infra.apache.org/asf-pelican-gettingstarted.html) and the pages it links to.
