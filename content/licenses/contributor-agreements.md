@@ -45,6 +45,7 @@ The ICLA an individual signs is not tied to any employer they may have, so we re
 The ASF publishes your _Legal Name_ unless you provide an alternative _Public Name_.
 For example, if your legal name is Andrew Bernard Charles Dickens, but you wish
 to be known as Andrew Dickens, enter the latter as your Public Name.
+[Note: earlier forms used the term _Full name_ instead of _Legal name_]
 
 Please refer to the [Privacy Policy](https://s.apache.org/cla-privacy-policy)
 for details regarding how the information on the ICLA is used and shared.
