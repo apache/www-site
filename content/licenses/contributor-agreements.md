@@ -42,11 +42,11 @@ authority to enter into legal contracts on behalf of the corporation must sign i
 
 The ICLA an individual signs is not tied to any employer they may have, so we recommend that individuals use their personal email addresses in the contact details, rather than their @work addresses.
 
-The ASF publishes your _full name_ unless you provide an alternative _public name_.
+The ASF publishes your _legal name_ unless you provide an alternative _display name_.
 For example, if your full name is Andrew Bernard Charles Dickens, but you wish
-to be known as Andrew Dickens, enter the latter as your Public name.
+to be known as Andrew Dickens, enter the latter as your Display Name.
 
-We do not publish your email address or other contact details.
+We do not publish your postal address or other contact details.
 
 If you are submitting an ICLA in response to an invitation from a PMC, be sure to
 identify the project via the form field "notify project". Also, choose a preferred ID that
