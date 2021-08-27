@@ -2,7 +2,7 @@ Title: ASF History Project - Directors Timeline
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 <p>
-This timeline shows the terms of those who have served as Directors of The Apache Software Foundation. Hover your mouse cursor over any entry in the chart to see further information about that person's term.</p>
+This timeline shows the terms of office of those who have served as Directors of The Apache Software Foundation. Hover your mouse cursor over any entry in the chart to see further information about that person's term.</p>
 <br />
 <br />
 
