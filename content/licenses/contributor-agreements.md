@@ -46,7 +46,7 @@ The ASF publishes your _legal name_ unless you provide an alternative _display n
 For example, if your full name is Andrew Bernard Charles Dickens, but you wish
 to be known as Andrew Dickens, enter the latter as your Display Name.
 
-We do not publish your postal address or other contact details.
+We do not publish your postal address.
 
 If you are submitting an ICLA in response to an invitation from a PMC, be sure to
 identify the project via the form field "notify project". Also, choose a preferred ID that
