@@ -2,24 +2,24 @@ Title: ASF History Project - Goals
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 
-The History Project aims to research and collect information related to:
+The History Project researches and collects information related to:
 
-# General History of Apache httpd #
+## General History of Apache httpd
 
 - Before Apache
 
 - Why Apache
 
-- Initial Development Team
+- Initial development team
 
 - How Apache became one of the most successful OSS projects to date
 
-- Changes in Development Environment [(1](#foot1) 
+- Changes in development environment - see <a href="#foot1">footnotes</a> 
 
-- Casestudy: Apache Development model (and how it has evolved)
+- Case study: Apache Development model (and how it has evolved)
 
 
-# Apache httpd Release timeline #
+## Apache httpd release timeline 
 
 - Release Date
 
@@ -46,7 +46,7 @@ The History Project aims to research and collect information related to:
 - Etc.
 
 
-# Apache Software Foundation History #
+## Apache Software Foundation history 
 
 - How ASF was formed, legal issues. [(2](#foot2) , [(3](#foot3) 
 
@@ -61,7 +61,7 @@ The History Project aims to research and collect information related to:
 - Description of work done for project
 
 
-# Subprojects History #
+## Subprojects history
 
 - Convince at least one person from each project to participate and maintain history of that project.
 
@@ -71,19 +71,18 @@ The History Project aims to research and collect information related to:
 
 - Same project parts as the httpd history projects
 
-# Quote collection from development lists #
+## Quote collection from development lists
 
 - Historical comments
 
 - Funny comments
-<a name="foot1">Footnote 1 - Jim:</a>
-Also useful, I think, would be a description of how the actual coding environment changed, from people submitting patches and one person being responsible for folding them into the code, the "3 +1s" required for a patch to be included, review-then-commit vs. commit-then-review, etc...
-<a name="foot2">Footnote 2 - Mads:</a>
-[15:37] &lt;quasi&gt; That could actually be _very_ interesting - along with stuff about how the foundation was formed - legal issues and stuff
-<a name="foot3">Footnote 3 - Rich:</a>
-[15:38] &lt;DrBacchus&gt; quasi: Actually, it's one of the *most* important things, in my mind, as it falls under the "what works, what doesn't work, why Apache is successful" header.
 
-[15:48] &lt;DrBacchus&gt; One of the most important roles that Apache plays, apart from being a damned fine product, is as a model of how OSS projects are *supposed* to work.
+<a name="foot1">Footnotes</a>
 
-[15:48] &lt;DrBacchus&gt; Folks inside the project often don't see that aspect of things.
+  - Jim: Also useful, I think, would be a description of how the actual coding environment changed, from people submitting patches and one person being responsible for folding them into the code, the "3 +1s" required for a patch to be included, review-then-commit vs. commit-then-review, etc...
+<a name="foot2">
+  
+  - Mads: That could actually be _very_ interesting - along with stuff about how the foundation was formed - legal issues and stuff
+  
+  - Rich: Actually, it's one of the *most* important things, in my mind, as it falls under the "what works, what doesn't work, why Apache is successful" header. One of the most important roles that Apache plays, apart from being a damned fine product, is as a model of how OSS projects are *supposed* to work. Folks inside the project often don't see that aspect of things.
 
