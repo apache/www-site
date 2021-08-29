@@ -3,14 +3,10 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # ASF Project Security Information #
 
-Pages maintained by ASF projects to provide information on known security
-vulnerabilities are listed below. The security contact for reporting new
-vulnerabilities is also shown. Note that whilst all projects have a
-security team, not all project security teams have a dedicated address for
-reporting new vulnerabilities.
+Here is a list of pages ASF projects maintain to provide information on known security vulnerabilities. Each entry also has the security contact for reporting new
+vulnerabilities related to that project. Note that not all project security teams have a dedicated address for reporting new vulnerabilities.
 
-To report a vulnerability in an Apache project that is not listed below,
-please contact the [Apache Security Team](mailto:security@apache.org).
+To report a vulnerability in an Apache project that is not listed below, contact the [Apache Security Team](mailto:security@apache.org).
 
 | Apache project security page | Security Contact |
 |-----------------------|------------------|
