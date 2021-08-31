@@ -60,7 +60,7 @@ resources</a>
 
 # Machines and Services  {#machines}
 
--  [Machines List](machines.html) 
+-  <a href="https://infra.apache.org/machines.html" target="_blank">Machines</a>
 
 -  <a href="https://infra.apache.org/services.html" target="_blank">Services</a>
 
