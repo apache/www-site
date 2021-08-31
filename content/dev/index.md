@@ -27,7 +27,7 @@ There are many experienced ASF people who can help.
 Find information about tools and processes the ASF and its projects use to manage source code, mailing lists, and websites. You can also find how-to guides for committers and Project Management Committees (PMCs).
 
 
-# Apache Infrastructure  {#infrastructure}
+## Apache Infrastructure  {#infrastructure}
 
 - High-level notes on [Apache Infrastructure](infrastructure.html)
 
@@ -43,11 +43,11 @@ Find information about tools and processes the ASF and its projects use to manag
 
 - <a href="/mirrors/" target="_blank">Status of download mirrors</a>
 
-- [Machine/Host List](machines.html) of ASF servers
+- <a href="https://infra.apache.org/machines.html" target="_blank">Machine and host list</a> of Apache servers
 
 - <a href="https://infra.apache.org/infra-ban.html" target="_blank">Site-wide ban policy</a>
 
-# Committers and Contributors  {#committers}
+## Committers and Contributors  {#committers}
 
 -  [How the ASF Works](../foundation/how-it-works.html) (See also [Contact
 Apache FAQ](../foundation/preFAQ.html) and [ASF
@@ -65,33 +65,34 @@ FAQ](../foundation/faq.html) )
 
 -  Crowd funding [Community funding disclaimer](http://community.apache.org/committers/funding-disclaimer.html)
 
-# Project Management Committees (PMC)  {#pmc}
+## Project Management Committees (PMC)  {#pmc}
 
 The project PMC must be involved in any requests for Infrastructure assistance. Remember that PMCs can handle many
 Infrastructure items for themselves.  
 
-**Learn How To...**
+**Learn how to...**
 
 -  ...read the [PMC FAQ](pmc.html) 
 
 -  ...[create an ASF Top-Level Project](project-creation.html) 
 
+-  ...[choose names for ASF projects and products](project-names.html) 
+
 -  ...[make a new committer account request](pmc.html#newcommitter) 
 
 -  ...[make a karma request](pmc.html#karma) 
 
--  ...[report issues and request project
-resources](infra-contact)
-
--  ...[learn duties of the PMC Chairs](pmc.html#chair) 
-
--  ...[learn about Legal issues](#licenses) 
+-  ...[report issues and request project resources](infra-contact)
 
 -  ...<a href="https://infra.apache.org/project-site.html" target="_blank">manage your project website</a>
 
--  ...[choose names for ASF projects and products](project-names.html) 
+**Learn...**
 
-# Licenses, Trademarks, and Legal issues  {#licenses}
+-  ...[the duties of the PMC Chairs](pmc.html#chair) 
+
+-  ...[about about Legal issues](#licenses) 
+
+## Licenses, Trademarks, and Legal issues  {#licenses}
 
 -  [About the Apache License](../licenses/) 
 
@@ -112,7 +113,7 @@ Policy](../legal/src-headers.html)
 
 -  [Apache Project Branding Requirements](../foundation/marks/pmcs) - for projects
 
-# Version Control  {#version-control}
+## Version Control  {#version-control}
 
 - <a href="https://infra.apache.org/version-control.html" target="_blank">Subversion and Git source code repositories</a>
 
@@ -120,17 +121,15 @@ Policy](../legal/src-headers.html)
 
 - <a href="https://infra.apache.org/git.html" target="_blank">Git Access to Apache Code repositories</a>
 
-# Apache Project Websites  {#web}
+## Apache Project Websites  {#web}
 
-- Overview of the [ASF CMS](cms.html) for project websites. **Note**: no new projects can use the CMS, and Infra is helping existing projects migrate off the CMS to other options.
+How to 
 
-    - [Reference Manual](cmsref.html) for working with ASF CMS
+- <a href="https://infra.apache.org/project-site.html" target="_blank">manage your project website</a> 
 
-- How to <a href="https://infra.apache.org/project-site.html" target="_blank">manage your project website</a> 
+- [update the apache.org website](infra-site.html)
 
-- How to [update the main apache.org website](infra-site.html)
-
-# Software Product Releases  {#releases}
+## Software Product Releases  {#releases}
 
 -  [Release Policy](/legal/release-policy.html) 
 
@@ -152,7 +151,7 @@ Policy](../legal/src-headers.html)
 -  [Releases from Incubating
 projects](http://incubator.apache.org/incubation/Incubation_Policy.html#Releases) 
 
-# Issue and Bug Tracking  {#issues}
+## Issue and Bug Tracking  {#issues}
 
 Each project uses their own [issue tracker](http://issues.apache.org/) to 
 track bugs, requests, and other action items - typically JIRA or BugZilla.
@@ -160,7 +159,7 @@ Every Apache project decides how to track issues, so see each [project
 website](http://projects.apache.org/indexes/quick.html) to find how 
 they track issues.
 
-# Mailing Lists  {#mail}
+## Mailing Lists  {#mail}
 
 - Please read the [Public Forum Archive Policy](/foundation/public-archives.html) before posting on any Apache mailing list!
 
@@ -188,13 +187,13 @@ discussion](/foundation/how-it-works.html#confidential).
 (see [notes](/dev/project-site.html#mail)).
     - For top-level/non-project mailing lists see [www.apache.org/mail/](/mail/) directory.
 
-# Pasting data to others  {#paste}
+## Pasting data to share with others  {#paste}
 
 Apache provides a paste bin service for committers to use at [https://paste.apache.org](https://paste.apache.org).
 
 Anyone can view the pastes (except those marked 'committers only'), but only committers are allowed to paste new data on the site.
 
-# Apache URL Shortener Service  {#shorten}
+## Apache URL Shortener Service  {#shorten}
 
 Infrastructure hosts the [s.apache.org URL shortening service](https://s.apache.org/) 
 for our committers.  When including URLs in PMC reports, please use this service and 
