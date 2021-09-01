@@ -33,6 +33,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache OpenMeetings](https://openmeetings.apache.org/security.html) | [Apache OpenMeetings Security Team](mailto:security@openmeetings.apache.org) |
 |  [Apache OpenOffice](https://openoffice.apache.org/security)  |  [Apache OpenOffice Security Team](mailto:security@openoffice.apache.org)  |
 |  [Apache ORC](https://orc.apache.org/security/) | [Apache ORC Security Team](mailto:security@orc.apache.org) |
+|  [Apache Pulsar](https://github.com/apache/pulsar/security/policy) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Santuario](https://santuario.apache.org/secadv.html) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Sentry](https://cwiki.apache.org/confluence/display/SENTRY/Vulnerabilities+found+in+Apache+Sentry) | [Apache Sentry Security Team](mailto:security@sentry.apache.org) |
 |  [Apache Shiro](https://shiro.apache.org/security-reports.html)  |  [Apache Shiro Security Team](mailto:security@shiro.apache.org)  |
