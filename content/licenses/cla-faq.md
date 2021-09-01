@@ -17,6 +17,8 @@ This page answers common queries that we receive about our contribution agreemen
 
 1.  [I don't have a printer. How do I "print, sign, scan, and email" the license document?](#printer)
 
+1.  [How do I upload my public key?](#upload-key)
+
 If none of the above addresses your query, please check the [resources at
 the bottom of this page](#resources) for general information.
 
@@ -151,6 +153,11 @@ First, install a PDF tool such as **Adobe Acrobat**. These instructions may diff
 3. Save the completed form. 
 4. Share the file via **Share a copy** to the email client and send the message with the attached form to [secretary@apache.org](mailto:secretary@apache.org).
 5. Keep the completed form for your records.
+
+## How do I upload my public key?  {#upload-key}
+
+Upload your public key to one of the shared public key repositories 
+[Ubuntu key server](https://keyserver.ubuntu.com) or [OpenGPG key server](https://keys.openpgp.org).
 
 # Another place to look  {#resources}
 
