@@ -466,6 +466,14 @@ software be installed as a prerequisite.
 
 </dd>
 
+<dt>PEO  {#PEO}</dt>
+
+<dd>
+
+[Professional_employer_organization](https://en.wikipedia.org/wiki/Professional_employer_organization)
+
+</dd>
+
 <dt>PMC  {#PMC}</dt>
 
 <dd>
