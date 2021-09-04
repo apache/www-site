@@ -156,8 +156,9 @@ First, install a PDF tool such as **Adobe Acrobat**. These instructions may diff
 
 ## How do I upload my public key?  {#upload-key}
 
-Upload your public key to one of the shared public key repositories 
-[Ubuntu key server](https://keyserver.ubuntu.com) or [OpenGPG key server](https://keys.openpgp.org).
+Upload your public key to one of the shared public key repositories:
+- [Ubuntu key server](https://keyserver.ubuntu.com)
+- [OpenGPG key server](https://keys.openpgp.org).
 
 # Another place to look  {#resources}
 
