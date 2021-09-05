@@ -97,7 +97,7 @@ use of an Apache trademark is related to the ASF](#brand)
    attack on your system and you clicked on the name or IP address of the
    attacking system, please use the whois (if it reported a name) or the ARIN
    (if it reported an address) databases to locate the actual owner of the
-   system. These databases are the master ones for the Internet. See the
+   system. These databases are the authoritative ones for the Internet. See the
    [links to them](#dirs) at the end of this page.
 
    <a id="hijack" name="hijack"></a>
