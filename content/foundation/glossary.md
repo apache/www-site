@@ -646,6 +646,16 @@ See [Subversion](#Subversion).
 
 </dd>
 
+<dt>tabled  {#tabled}</dt>
+
+<dd>
+
+The term 'tabled' may be seen in minutes of Board meetings.
+For example, "Special Order 7H, ... , was tabled."
+In that context it means 'postponed' or 'deferred'.
+
+</dd>
+
 <dt>TLP  {#TLP}</dt>
 
 <dd>
