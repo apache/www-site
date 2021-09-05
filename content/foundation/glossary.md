@@ -323,8 +323,8 @@ describe a [project](#Project) with low levels of activity.
 changes to a [version control](#version-control). ("Please grant Yo
 Mega karma to the foo-bar.")
 **2.** Respect and [merit](#Merit) in
-the [community](#Community). ("Al Faa has good karma because of the
-careful and tactful way he makes his points and the quality of his
+the [community](#Community). ("Al Faa and Ro Main have good karma because of the
+careful and tactful way they make their points and the quality of their
 technical contributions.") 
 **3.** Any combination of senses 1 and two; they are indirectly related.
 
