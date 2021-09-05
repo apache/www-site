@@ -6,7 +6,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 - If the problem is fatal to non-developers (e.g., any of the major daemons
 being down SMTP, HTTP, etc) send a note to noc@collab.net, which will act
 upon it as quickly as possible. If you don't get a response within 10-15
-miniutes, as a backup call Brian Behlendorf on his cell phone #, which any
+minutes, as a backup call Brian Behlendorf via cell phone, which any
 ASF member can get for you.
 
 - If the problem is fatal only to developers (e.g., CVS commits are hosed,
