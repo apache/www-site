@@ -470,7 +470,7 @@ get the new committer's desired account ID and request the new account.
 
 Once the ICLA has been filed, use the [ASF New Account Request form](https://whimsy.apache.org/officers/acreq)
 to generate the request.  Should the PMC chair be unavailable for any
-reason, any ASF member can act his/her stead.
+reason, any ASF member can act on their behalf.
 
 **For incubating projects**: If 
 
