@@ -1,6 +1,12 @@
 Title: Martin Pöschl: a Memorial
 license: https://www.apache.org/licenses/LICENSE-2.0
 
+<div align="center">
+
+![mpoeschl](../images/mpoeschl.jpg "")
+
+</div>
+
 With great sadness, we must report the staggering loss of our good friend
 and colleague, Martin Pöschl (id: mpoeschl). Martin passed away on January 29th, 2004. Martin lived
 in Vienna, Austria.
