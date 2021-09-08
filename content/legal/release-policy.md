@@ -344,7 +344,7 @@ guide (draft)](http://incubator.apache.org/guides/releasemanagement.html#best-pr
 Alternatively, see the "How to release" developer documentation of any
 established Apache project.  (The author is familiar with
 [this one](http://subversion.apache.org/docs/community-guide/releasing#release-creating),
-from his project.)
+from this project.)
 
 ### Must releases be built on hardware owned and controlled by the committer?  {#owned-controlled-hardware}
 
