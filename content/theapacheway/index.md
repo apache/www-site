@@ -893,6 +893,9 @@ function setQuote()  {
 }
 setQuote();
 </script>
+<noscript>
+Please enable JavaScript to see a related quote ...
+</noscript>
 </p>
 
 <hr>
