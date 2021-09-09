@@ -176,7 +176,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       ul.setAttribute("style", "margin: 0 auto; max-width: 1000px; list-style: none;")
     }
 </script>
-
+<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
 
 # Individual Donations #
 
