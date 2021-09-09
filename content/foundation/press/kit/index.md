@@ -95,6 +95,7 @@ If you are unable to find the logo you are looking for try inspecting the [direc
             </ol>
             <!-- Change the js-files path here -->
             <script type="text/javascript" src="overlays/poweredBy-overlay.js"></script>
+            <noscript>Sorry, your browser settings do not support JavaScript!</noscript>
             <form action="#" id="poweredBy_form" onsubmit="return false;">
                 <input id="poweredByImgFile" type="file" />
                 <br />
