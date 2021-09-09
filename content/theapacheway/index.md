@@ -619,10 +619,6 @@ var quotes = "\n\
 —Jongyoul, 18 year user of Apache HTTP Server, Spark, Zeppelin, Hadoop, Hive, contributor to Apache Zeppelin, Spar, YARN, Airflow\n\
 \n\
 \n\
-&quot;Working on open source code together in a way that allows everybody to provide what he can and wants to add.&quot;\n\
-—Anonymous user of of Apache Xerces, Xalan, Poi, Tika, Lucene, Commons for 18 years, contributor to log4j, Poi, Tika    \n\
-\n\
-\n\
 &quot;Very open high quality software&quot;\n\
 —Anonymous, 14 year user of Apache Velocity, httpd, FOP, Sling, Tomcat, contributor to Apache Velocity\n\
 \n\
@@ -776,10 +772,6 @@ var quotes = "\n\
 \n\
 &quot;A strange religion that is followed by some of the ASF leadership.&quot;\n\
 —Anonymous 9 year user and contributor to Apache OpenOffice\n\
-\n\
-\n\
-&quot;I like to contribute as much or less I want depending on my work load of my private life or day job without to risk to lose any merit or permissions. Everybody is welcome and can take part where she/he sees the best results. No hierarchy, large roles and fixed responsibilities gives kind of guarantee that everybody is treated equally. The project oversight is not kept my companies or larger groups but the people themselves. The openness in code and communication. Only a few rules to give an ordered basis.&quot;\n\
-—Marcus, user of Apache OpenOffice since 2011\n\
 \n\
 \n\
 &quot;A new paradigm and a social framework for open source community and project governance in China.&quot;\n\
