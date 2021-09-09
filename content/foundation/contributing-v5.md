@@ -235,6 +235,7 @@ Apache Software Foundation", (<b>donations only, please</b>) to
   USA
  </address>
 </center>
+  
 Please include the name under which you wish the donation to be credited,
 either your own or the third-party if it is a gift on behalf of someone
 else, and an e-mail address to which we can acknowledge receipt. This
