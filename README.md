@@ -50,3 +50,25 @@ The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was n
 
 Foundation records, including minutes of Board meetings, remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
 except for the [index page](content/foundation/records/index.md).
+
+## Local development and testing
+
+If you wish to update and test the site locally, there is a Docker build script you can use.
+You will also need Git, and familiarity with working in a command-line shell.
+[The following instructions should work for Unix and macOS, but will need adjustment for Windows.]
+
+- install [Docker](https://www.docker.com/get-started)
+- change to a suitable directory
+- get the Infra Pelican setup: `git clone https://github.com/apache/infrastructure-pelican`
+- change to the checkout: `cd infrastructure-pelican`
+- build the container: `docker build -t pelican-asf`. This will take a while the first time.
+- change to a suitable directory
+- get the ASF website source: `git clone https://github.com/apache/www-site`
+- change to the website checkout: `cd www-site`
+- Create a dummy authorisation file: `touch .authtokens`
+- Start the continuous builder: `docker run -it -p8000:8000 -v $PWD:/site pelican-asf`
+- this will generate a lot of output, but will eventually stop.
+- browse to http://localhost:8000/
+
+If you make changes to the local copy of www-site, these will be automatically built, and should
+appear in the browser when the page is refreshed.
