@@ -13,7 +13,7 @@ Title: Briefing: The Apache Way
 <script>
 var quotes = "\n\
 &quot;Egalitarian and meritocracy-based software development collaboration&quot;\n\
-—Siddharth Anand, user of Apache Avro, Spark, Airflow, and Hive since 2003; contributor to Apache     Airflow, Spark, Livy\n\
+—Siddharth Anand, user of Apache Avro, Spark, Airflow, and Hive since 2003; contributor to Apache Airflow, Spark, Livy\n\
 \n\
 \n\
 &quot;Community for collaboration and cooperation.&quot;\n\
@@ -145,11 +145,14 @@ var quotes = "\n\
 &quot;Community over Code.&quot;\n\
 —Mick Semb Wever, 19 year user of Apache projects including Cassandra, NetBeans (incubating), Zipkin (incubating), Spark, Kafka, Hadoop, Arvo, Groovy, HttpComponents, JMeter, Maven, Mesos, OpenOffice, Parquet, Shiro, Tiles, httpd, Tomcat, Commons, log4j, and Apache Cassandra committer\n\
 \n\
+\n\
 &quot;save money, use the best opensource technology, I think so&quot;\n\
 —Hushunliang, user of Apache projects for about 10 years, including Apache Tomcat, Dubbo (incubating), Spark, RocketMQ\n\
 \n\
+\n\
 &quot;I don't think much about the Apache way, but it's fun and sometimes rewarding to participate in a few projects.&quot;\n\
 —Anonymous user of Apache Tomcat, httpd, POI, Commons, Batik over the past two decades; contributor to Apache POI, Tika, Commons\n\
+\n\
 \n\
 &quot;More learning opportunities&quot;\n\
 —Liuchunlong, three year user of Apache RocketMQ, Lucene, Tomcat, Struts, Maven    and contributor to RocketMQ\n\
@@ -233,6 +236,7 @@ var quotes = "\n\
 &quot;Learning from the best. Being constructively criticized by the best. Intellectual stimulation. Friendship.&quot;\n\
 —Dawid Weiss, user and contributor to Apache Lucene, Solr, Maven, Ant, Jakarta, HTTPD for ~20 years\n\
 \n\
+\n\
 &quot;Collaborating to improve the products delivered by the projects. Achieving such results through consensus.&quot;\n\
 —Anonymous user and contributor to Apache HTTPD, OFBiz, Directory, ServiceMix for 10 years\n\
 \n\
@@ -259,6 +263,7 @@ var quotes = "\n\
 \n\
 &quot;Community over code and a great place to meet good people&quot;\n\
 —Francois Papon, 14 year user of Apache Karaf, Camel, ActiveMQ, Tomcat, CXF, Log4j, Struts, Shiro, Unomi, committer on Apache Karaf, Camel, Shiro, Unomi\n\
+\n\
 \n\
 &quot;No idea—just saw the term capitalized now.&quot;\n\
 —Eirik Bakke, 15 year user of Ant, Flume, NetBeans, Commons, Batik, Avro, Maven, Hadoop, and contributor to Apache Flume, Hadoop\n\
@@ -302,7 +307,8 @@ var quotes = "\n\
 \n\
 &quot;Apache contributes a lot of valuable infrastructure without trying to push opinions on how and where it should and should not be used.&quot;\n\
 —Ilya, user of Apache Commons, Hibernate, Lucene, Solr, Ignite, Ant, Maven, Xerces for more than a decade, and committer on Apache Solr, Ignite\n\
- \n\
+\n\
+\n\
 &quot;Community software development&quot;\n\
 —Sergio Fernandez, 15 year user of Apache Commons, Spark, Beam, Flink, Marmotta, Solr, Lucene, and committer to Apache Commons, Marmotta, MXNet\n\
 \n\
@@ -437,6 +443,7 @@ var quotes = "\n\
 \n\
 &quot;Transparent communities, community first, open communities&quot;\n\
 —Robert Metzger, user of Apache Flink, Kafka, Hadoop, Maven for 10 years, contributor to Apache Flink\n\
+\n\
 \n\
 &quot;A way for me to change the world positively through my passion for coding.&quot;\n\
 —Eric Pugh, 16 year user of Apache Turbine, Jakarta, Torque, Solr/Lucene, and contributor to Apache Solr\n\
@@ -610,7 +617,6 @@ var quotes = "\n\
 —Avik Ganguly, 8 year user of Apache Fineract, Cassandra, Commons, Maven, Tomcat, and others, contributor to Apache Fineract\n\
 \n\
 \n\
-\n\
 &quot;Freedom&quot;\n\
 —Soner, 3 year user of Apache Spark, Hive, Kafka, Sqoop    \n\
 \n\
@@ -653,7 +659,8 @@ var quotes = "\n\
 \n\
 &quot;Nothing yet, but it will&quot;\n\
 —Jonathan Le Bloas, 3 year user of Apache Maven, httpd, Cassandra, ActiveMQ, Commons DBCP, HTTP Client\n\
- \n\
+\n\
+\n\
 &quot;community, living open source, keeping different kind of os communities together, defining standards, very democratic and transparent decision making apparently&quot;\n\
 —Georg, user of Apache Solr, Commons, Turbine, Databases, Subversion, HTTP Server, Tomcat since 1999\n\
 \n\
@@ -694,7 +701,7 @@ var quotes = "\n\
 —Anonymous user to Apache Ant, Commons, DB, Groovy, HttpComponents, Logging, Maven, NiFi, POI, Subversion, Tomcat, Xerces for as long as they’ve been using Java, about 20 years\n\
 \n\
 \n\
-    &quot;A project free from commercial coercion, but with strict regulations and daunting processes&quot;\n\
+&quot;A project free from commercial coercion, but with strict regulations and daunting processes&quot;\n\
 —Anonymous user of Apache Groovy, Maven, JMeter, Kafka, Netbeans, Tinkerpop, Tomcat for 10 years, contributor to Apache Groovy\n\
 \n\
 \n\
@@ -727,11 +734,11 @@ var quotes = "\n\
 \n\
 \n\
 &quot;Excellent software that I can trust to be supported and enhanced going forward, with a clear path to retirement should that be appropriate.  Clear licensing without any gotchas.&quot;\n\
-—Jan, user of Apache HTTP Server, Java Commons, Groovy, NetBeans since the first apache httpd    \n\
+—Jan, user of Apache HTTP Server, Java Commons, Groovy, NetBeans since the first apache httpd\n\
 \n\
 \n\
 &quot;I can share what I do with anyone and everyone.  Also, the Apache License 2.0 has been the standard OS license used by pretty much everyone I have worked for.&quot;\n\
-—Craig McClanahan, 19 year user of Apache Tomcat, Struts, Commons, Maven, contributor to Apache Tomcat, Struts (original creator), Commons    \n\
+—Craig McClanahan, 19 year user of Apache Tomcat, Struts, Commons, Maven, contributor to Apache Tomcat, Struts (original creator), Commons\n\
 \n\
 \n\
 &quot;Consensus-based, community driven governance&quot;\n\
@@ -742,7 +749,7 @@ var quotes = "\n\
 —Anonymous 16 year user of Apache httpd, OpenOffice\n\
 \n\
 \n\
-&quot;In general a nice and clean approach, but sometimes people who are good at networking can create opinions that are used to push contributors into a specific corner. In addition some discussions are more political than for the project itself.    \n\
+&quot;In general a nice and clean approach, but sometimes people who are good at networking can create opinions that are used to push contributors into a specific corner. In addition some discussions are more political than for the project itself.\n\
 —Markus Geiss, 10 year user of Apache Lucene, Cassandra, Derby, DBCP, Fineract, contributor to Apache Fineract\n\
 \n\
 \n\
@@ -799,7 +806,8 @@ var quotes = "\n\
 \n\
 \n\
 &quot;Great software, collaboration, shared knowledge&quot;\n\
-—Roy, user of Apache Tomcat, Kafka, JMeter, Ant, Avro, Commons, log4j, Qpid, Spark, Struts, Zookeeper for 15 years, contributor to Apache Camel    \n\
+—Roy, user of Apache Tomcat, Kafka, JMeter, Ant, Avro, Commons, log4j, Qpid, Spark, Struts, Zookeeper for 15 years, contributor to Apache Camel\n\
+\n\
 \n\
 &quot;Freedom and Voluntary Collaboration&quot;\n\
 —Niclas Hedhman, user of too many Apache projects since 1997, patches contributor to 30 or so total projects\n\
