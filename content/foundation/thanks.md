@@ -19,7 +19,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.namebase.io/"><img src="images/namebase-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Namebase</p></li>
       <li><a target="_blank" rel="sponsored" href="http://pineapplefund.org/"><img src="images/pineapple_fund.png"/></a><p style="text-align: center; font-weight: bold;">Pineapple Fund</p></li>
       <li><a target="_blank" rel="sponsored" href="https://tencent.com/"><img src="images/tencent.png"/></a><p style="text-align: center; font-weight: bold;">Tencent</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.verizonmedia.com/"><img src="images/verizon_media.jpg"/></a><p style="text-align: center; font-weight: bold;">Verizon Media</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
    </ul>
    </div>
 
