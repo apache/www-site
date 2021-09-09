@@ -26,3 +26,4 @@ This timeline shows the terms of office of those who have served as Directors of
     chart.draw(dataTable, options);
   }
 </script>
+<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
