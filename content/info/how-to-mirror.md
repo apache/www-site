@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 <script type="text/javascript">
 location.href = location.href.replace(/^https?:\/\/[^\/]+\/info\//, 'https://infra.apache.org/');
 </script>
+<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
 
-<h2 id="mirror">How to become a mirror for the Apache Software Foundation</h2>
+<h2 id="mirror">As of August, 2021, The ASF is no longer adding download mirrors to its network.</h2>
 
-This information has moved to <a href="https://infra.apache.org/how-to-mirror.html"><b>here</b></a>.
