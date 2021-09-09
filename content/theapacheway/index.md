@@ -3,7 +3,7 @@ Title: Briefing: The Apache Way
 <p><br>
 <h3>Briefing: The Apache Way</h3>
 
-<p>Ask <a href="/foundation/governance/members.html">The Apache Software Foundation’s 730+ Members</a> about The Apache Way and you’ll get as many answers as to what it is. In fact, we surveyed the greater Apache user and developer community and were fascinated with their responses</p>
+<p>Ask <a href="/foundation/governance/members.html">The Apache Software Foundation’s 800+ Members</a> about The Apache Way and you’ll get as many answers as to what it is. In fact, we surveyed the greater Apache user and developer community and were fascinated with their responses</p>
 
 <hr>
 <h5>“The Apache Way to me…”</h5>
@@ -11,8 +11,7 @@ Title: Briefing: The Apache Way
 <strong id="awtm"></strong>
 
 <script>
-var quotes = "\n\
-&quot;Egalitarian and meritocracy-based software development collaboration&quot;\n\
+var quotes = "&quot;Egalitarian and meritocracy-based software development collaboration&quot;\n\
 —Siddharth Anand, user of Apache Avro, Spark, Airflow, and Hive since 2003; contributor to Apache Airflow, Spark, Livy\n\
 \n\
 \n\
@@ -117,7 +116,8 @@ var quotes = "\n\
 \n\
 &quot;A best way to improve programming skills&quot;\n\
 —Chen, Apache Dubbo (incubating) and RocketMQ user for 5 years\n\
- \n\
+\n\
+\n\
 &quot;Freedom, technique first&quot;\n\
 —Xiangdong Huang, 8 year user of Apache Cassandra, Hadoop, Tomcat, Maven, contributor to Apache IoTDB (incubating)\n\
 \n\
