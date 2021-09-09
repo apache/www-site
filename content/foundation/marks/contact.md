@@ -106,6 +106,7 @@ contact the [Legal Affairs Committee](/legal/).
 You can also follow our @ASFBrands official account on Twitter for occasional news about our trademark policy:
 
 <a href="https://twitter.com/ASFBrands" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @ASFBrands</a> <script>!function(d,s,id)  {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
 
 # Important Note  {#notes}
 
