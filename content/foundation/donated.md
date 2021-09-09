@@ -11,6 +11,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
 
 
 Thank you for donating to the Apache Software Foundation!
@@ -21,6 +22,7 @@ Open Source software.
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.apache.org/foundation/donate.html" data-text="I just donated to the #Apache Software Foundation! /cc @TheASF">Tweet</a>
 <script>!function(d,s,id)  {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
 
 <div class="g-plus" data-action="share" data-height="24" data-href="http://apache.org/foundation/donated_fb.html"></div>
 
