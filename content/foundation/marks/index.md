@@ -298,7 +298,7 @@ current VP, Brand Management is Mark Thomas, as appointed by the
 President to serve in this position.  See a [list of committee members and how to contact us][contact].
 
 <a href="https://twitter.com/ASFBrands" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @ASFBrands</a> <script>!function(d,s,id)  {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
+<noscript>(Note: Twitter requires JavaScript, which is not currently enabled)</noscript>
 
 # Important Note  {#notes}
 
