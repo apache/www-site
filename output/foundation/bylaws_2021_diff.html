@@ -32,55 +32,58 @@
     .stats, .stats td, .stats th { background-color: #EEE; padding: 2px 0; } 
     span.hide { display: none; color: #aaa;}    a:hover span { display: inline; }    tr.change { background-color: gray; } 
     tr.change a { text-decoration: none; color: black } 
-  </style> 
-     <script>
-var chunk_index = 0;
-var old_chunk = null;
+  </style>
+  <!--
+     Javascript to enable navigation between changes using n(ext) and p(revious)
+  -->
+  <script>
+    var chunk_index = 0;
+    var old_chunk = null;
 
-function format_chunk(index) {
-    var prefix = "diff";
-    var str = index.toString();
-    for (x=0; x<(4-str.length); ++x) {
-        prefix+='0';
+    function format_chunk(index) {
+        var prefix = "diff";
+        var str = index.toString();
+        for (x=0; x<(4-str.length); ++x) {
+            prefix+='0';
+        }
+        return prefix + str;
     }
-    return prefix + str;
-}
 
-function find_chunk(n){
-    return document.querySelector('tr[id$="' + n + '"]');
-}
-
-function change_chunk(offset) {
-    var index = chunk_index + offset;
-    var new_str;
-    var new_chunk;
-
-    new_str = format_chunk(index);
-    new_chunk = find_chunk(new_str);
-    if (!new_chunk) {
-        return;
+    function find_chunk(n){
+        return document.querySelector('tr[id$="' + n + '"]');
     }
-    if (old_chunk) {
-        old_chunk.style.outline = "";
-    }
-    old_chunk = new_chunk;
-    old_chunk.style.outline = "1px solid red";
-    window.location.replace("#" + new_str)
-    window.scrollBy(0,-100);
-    chunk_index = index;
-}
 
-document.onkeydown = function(e) {
-    switch (e.keyCode) {
-    case 78:
-        change_chunk(1);
-        break;
-    case 80:
-        change_chunk(-1);
-        break;
+    function change_chunk(offset) {
+        var index = chunk_index + offset;
+        var new_str;
+        var new_chunk;
+
+        new_str = format_chunk(index);
+        new_chunk = find_chunk(new_str);
+        if (!new_chunk) {
+            return;
+        }
+        if (old_chunk) {
+            old_chunk.style.outline = "";
+        }
+        old_chunk = new_chunk;
+        old_chunk.style.outline = "1px solid red";
+        window.location.replace("#" + new_str)
+        window.scrollBy(0,-100);
+        chunk_index = index;
     }
-};
-   </script> 
+
+    document.onkeydown = function(e) {
+        switch (e.keyCode) {
+        case 78: // 'n'
+            change_chunk(1);
+            break;
+        case 80: // 'p'
+            change_chunk(-1);
+            break;
+        }
+    };
+  </script> 
 </head> 
 <body > 
   <table border="0" cellpadding="0" cellspacing="0"> 
