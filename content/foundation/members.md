@@ -23,7 +23,7 @@ The following tables show current and emeritus members who have
 manually added themselves to it - **this is not the complete list of members**,
 see the links below for that.
 
-If you are a member and want to be included, please edit the page using [CMS](https://cms.apache.org/www/)
+If you are a member and want to be included, please send a [pull request to edit the page on GitHub](https://github.com/apache/www-site/blob/main/content/foundation/members.md). 
 
 A [list of all committers](http://home.apache.org/committer-index.html)
 (including [members](http://home.apache.org/committers-by-project.html#member))
