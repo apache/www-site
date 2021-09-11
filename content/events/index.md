@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # Upcoming Events
 
-Because the Apache Software Foundation is such a broad community, there's always something going on in the Apache world. 
+Because the Apache Software Foundation is such a broad community, there's always [something going on](current-event) in the Apache world. 
 As a volunteer-run organization, we try to keep up with all the great events our  communities 
 put on, but we might be missing some.  Please contact the 
 [Community Development project](mailto:dev@community.apache.org?subject=%5bEVENT%5d+Apache-related%20Event%20calendar%20request)
