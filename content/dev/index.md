@@ -96,7 +96,7 @@ Infrastructure items for themselves.
 
 -  [About the Apache License](../licenses/) 
 
--  [License FAQ](../foundation/license-FAQ.html) 
+-  [License FAQ](../foundation/license-faq.html) 
 
 -  [Legal Policies, Forms, and Information for Apache
 Committers](../legal/#dev-links) 
