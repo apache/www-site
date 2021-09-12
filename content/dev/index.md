@@ -135,7 +135,7 @@ How to
 
 -  <a href="https://infra.apache.org/release-distribution.html" target="_blank">Release Distribution Policy</a> 
 
--  <a href=https://infra.apache.org/release-publishing.html" target="_blank">Release creation process</a> 
+-  <a href="https://infra.apache.org/release-publishing.html" target="_blank">Release creation process</a> 
 
 -  <a href="https://infra.apache.org/release-download-pages.html" target="_blank">Release download pages</a> 
 
@@ -148,8 +148,7 @@ How to
 -  How to <a href="https://infra.apache.org/key-transition.html" target="_blank">transition to a longer key</a>
 
 
--  [Releases from Incubating
-projects](http://incubator.apache.org/incubation/Incubation_Policy.html#Releases) 
+-  [Releases from Incubating projects](http://incubator.apache.org/policy/incubation.html#releases) 
 
 ## Issue and Bug Tracking  {#issues}
 
