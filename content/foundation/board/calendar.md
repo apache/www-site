@@ -42,6 +42,12 @@ as is a [categorized view of all board meeting minutes](https://whimsy.apache.or
 
 # 2021 Board meeting minutes  {#2021}
 
+- [16 June 2021](../records/minutes/2021/board_minutes_2021_06_16.txt)
+    * Terminate Sqoop
+    * Terminate MetaModel
+    * Change Mynewt Chair
+    * Change Tez Chair
+
 - [19 May 2021](../records/minutes/2021/board_minutes_2021_05_19.txt)
     * Change Parquet Chair
     * Change Geode Chair
