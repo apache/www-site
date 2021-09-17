@@ -164,9 +164,9 @@ Formalize additional official policies and reference them from this policy:
 *   _ASF Licensing Policy_ (curated by Legal Affairs, applies to both released
     and unreleased code)
 
-# Release FAQ  {#releases}
+# Release FAQs  {#releases}
 
-### Why Do We Need a Foundation-Wide Policy?  {#why}
+### Why do we need a Foundation-wide policy?  {#why}
 
 In the traditional open source development methodology practiced
 at volunteer liability-limiting organizations like Apache, it is necessary to draw
@@ -195,7 +195,7 @@ we prefer robust, reviewable decision-making over efficient decision-making, so 
 are thinking of proposing an alternative process for the board to consider, be sure
 your targets reflect this.
 
-### What Is A Release?  {#what}
+### What is a release?  {#what}
 
 Releases are, by definition, anything that is published beyond the group
 that owns it. In our case, that means any publication outside the group of
@@ -227,7 +227,7 @@ binary/bytecode package must have the same version number as the source
 release and may only add binary/bytecode files that are the result of
 compiling that version of the source code release.
 
-### How Do The Types Of Apache Software Distribution Differ?  {#release-types}
+### How do the types Of Apache software distribution differ?  {#release-types}
 
 - **Test Packages** are not Apache releases. All releases require due
 process and official approval. Test packages are for testing ongoing
