@@ -130,6 +130,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    <div class="sponsors">
    <ul id='targetedsilver'>
       <li><a target="_blank" rel="sponsored" href="http://hotwaxsystems.com/"><img src="images/hotwax.png"/></a><p style="text-align: center; font-weight: bold;">Hotwax Systems</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage"><img src="images/instaclustr-silver.png"/></a><p style="text-align: center; font-weight: bold;">Instaclustr</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.manning.com/"><img src="images/manning.png"/></a><p style="text-align: center; font-weight: bold;">Manning Publications</p></li>
       <li><a target="_blank" rel="sponsored" href="http://rackspace.com/"><img src="images/rax.jpg"/></a><p style="text-align: center; font-weight: bold;">Rackspace</p></li>
    </ul>
