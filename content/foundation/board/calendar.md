@@ -42,6 +42,14 @@ as is a [categorized view of all board meeting minutes](https://whimsy.apache.or
 
 # 2021 Board meeting minutes  {#2021}
 
+- [18 August 2021](../records/minutes/2021/board_minutes_2021_08_18.txt)
+    * Change Logging Services Chair
+
+- [21 July 2021](../records/minutes/2021/board_minutes_2021_07_21.txt)
+    * Establish Pinot
+    * Change ORC Chair
+    * Change Kudu Chair
+
 - [16 June 2021](../records/minutes/2021/board_minutes_2021_06_16.txt)
     * Terminate Sqoop
     * Terminate MetaModel
