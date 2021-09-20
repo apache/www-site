@@ -82,7 +82,9 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.renre.com/">RenaissanceRe</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.scams.info/">SCAMS.info</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.sevenjackpots.com/">SevenJackpots.com</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.sg.com.mx/">Software Guru DevRel</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.ryrob.com/how-start-blog/">Start a Blog by Ryan Robinson</a></li>
+      <li><a target="_blank" rel="sponsored" href=" https://www.tii.ae/">Technology Innovation Institute</a></li>
       <li><a target="_blank" rel="sponsored" href="https://thebestvpn.com/">The Best VPN</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.theblogstarter.com/">The Blog Starter</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.ecosecretariat.org/">The Economic Secretariat</a></li>
