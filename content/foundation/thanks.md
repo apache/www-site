@@ -122,7 +122,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://www.datadoghq.com/"><img src="images/datadog_logo_70x75.png"></a><p style="text-align: center; font-weight: bold;">Datadog</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.docker.com/"><img src="images/docker-gold.png"></a><p style="text-align: center; font-weight: bold;">Docker</p></li>
       <li><a target="_blank" rel="sponsored" href="http://phoenixnap.com/"><img src="images/phoenixnap-gold.png"/></a><p style="text-align: center; font-weight: bold;">PhoenixNAP</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.quenda.co/"><img src="images/quenda-logo.png"/></a><p style="text-align: center; font-weight: bold;">Quenda</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://dinosource.co/"><img src="images/DinoSource-gold.png"/></a><p style="text-align: center; font-weight: bold;">DinoSource</p></li>
    </ul>
    </div>
   
