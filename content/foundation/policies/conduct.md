@@ -18,7 +18,7 @@ We expect all members of the Apache community to follow it in spirit as much as 
 We strive to:
 
 
-1. __Be open.__ We invite anyone to participate in our community. We prefer to use public methods of communication for project-related messages, unless discussing something sensitive. This applies to messages for help or project-related support, too; not only is a public support request much more likely to result in an answer to a question, it also makes sure that any the conmmunity notices and corrects any inadvertent mistakespeople answering the query may make.
+1. __Be open.__ We invite anyone to participate in our community. We prefer to use public methods of communication for project-related messages, unless discussing something sensitive. This applies to messages for help or project-related support, too; not only is a public support request much more likely to result in an answer to a question, it also makes sure that any the community notices and corrects any inadvertent mistakes people answering the query may make.
 
 2. __Be <a href="#endnotes">empathetic</a>, welcoming, friendly, and patient.__ We work together to resolve conflicts, assume good intentions, and do our best to act in an empathetic fashion. We may all experience some frustration from time to time, but we do not allow frustration to result in a personal attack. A community where people feel uncomfortable or threatened is not a productive one. We should be respectful when dealing with other community members as well as with people outside our community.
 
@@ -40,7 +40,7 @@ We strive to:
        * Advocating for, or encouraging, any of the above behaviour.
 
 6. __Be concise.__ Keep in mind that, over time, hundreds or thousands of people will read what you write. Writing a short email means people can understand the conversation as efficiently as possible. Short emails should always strive to be empathetic, welcoming, friendly and patient. When a long explanation is necessary, consider adding a summary at the top of the message.<br/><br/>
-Try to bring new ideas to a conversation so that each mail adds something unique to the thread, keeping in mind that the rest of the thread still contains the other messages with arguments that have already been made.<br/><br/>
+Try to bring new ideas to a conversation so that each email adds something unique to the thread, keeping in mind that the rest of the thread still contains the other messages with arguments that have already been made.<br/><br/>
 Try to stay on topic, especially in discussions that are already fairly long.
 
 7. __Step down considerately.__ Members of every project come and go. When somebody leaves or disengages from the project they should tell people they are leaving and take the proper steps to ensure that others can pick up where they left off. In doing so, they should remain respectful of those who continue to participate in the project and should not misrepresent the project's goals or achievements. Likewise, community members should respect any individual's choice to leave the project.
