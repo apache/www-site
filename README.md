@@ -51,6 +51,12 @@ The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was n
 Foundation records, including minutes of Board meetings, remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
 except for the [index page](content/foundation/records/index.md).
 
+Also the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
+is maintained in SVN by Whimsy. It is copied into content/foundation/board at the start of each build by the [get_calendar.sh](get_calendar.sh) script
+which is initiated by a setup entry in [pelicanconf.yaml](pelicanconf.yaml)
+Changes to the file do not automatically trigger a build, but the file changes rarely (about once a month)
+and there are regular builds which will pick up changes within an hour or so.
+
 ## Local development and testing
 
 If you wish to update and test the site locally, there is a Docker build script you can use.
