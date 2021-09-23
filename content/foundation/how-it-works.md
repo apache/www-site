@@ -142,7 +142,7 @@ similar, each of them exhibited little differences that made them special.
 
 To reduce friction and allow diversity to emerge, rather than
 forcing a monoculture from the top, the ASF designates the projects as the central
-decision-making organizations of the Apache world. Each project ahs authority over development of its software, and has a great
+decision-making organizations of the Apache world. Each project has authority over development of its software, and has a great
 deal of latitude in designing its own technical charter and its own
 governing rules.
 
