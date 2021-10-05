@@ -25,7 +25,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
         <h3>Individual Contributions</h3>
         <p>Giving to Apache is easy!</p>
         <p>Visit <a href="https://donate.apache.org/">https://donate.apache.org/</a> to make a one-time or recurring monthly donation and receive an emailed receipt from the ASF for your tax-deductible contribution.</p>
-        <p>Those seeking to make an immediate donation with a debit/credit card, Apple/Google/Microsoft Pay, ACH electronic transfer, PayPal, cryptocurrency, and other methods may do so using using the quick links below.</p>
+        <p>Those seeking to make an immediate donation with a debit/credit card, Apple/Google/Microsoft Pay, ACH electronic transfer, PayPal, and other methods may do so using using the quick links below.</p>
       </div>
     </div>
     <div role="tabpanel" class="tab-pane" id="asfSponsorship">
