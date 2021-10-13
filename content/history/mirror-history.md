@@ -44,7 +44,7 @@ Back then, managing the mirrors was a manual task, including going to each prosp
 
 Gavin continued maintaining the mirror system for another couple of years, before other volunteers relieved him. Eventually the Infra team took over the role.
 
-<img src="images/mirrorsystemgrowth.png" alt="Chart of the growth of the Apache mirror system" width="500">
+<img src="images/mirrorsystemgrowth.png" alt="Chart of the growth of the Apache mirror system" width="800">
 
 
 In August 2015, deploying the mod_lua based system significantly improved response times.
