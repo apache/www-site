@@ -30,24 +30,19 @@ In June of that year, Brian wrote to the group, "The release of 1.2.0 (of the Ap
 
 In 2000, the system moved from CGI to a MySQL database. However, many things stopped working within a couple of weeks. The system quickly moved back to CGI.
 
-In 2002, Henk P. Penning, who would make major contributions to the mirroring system and to many other aspects of Apache, appeared in the mailing list for the first time.
+In 2002, Henk P. Penning, who would make major contributions to the mirroring system and to many other aspects of Apache, appeared in the mailing list for the first time. That year, a download mirror had to allocate 10 gigabytes of space to handle all the artifacts available for download. At the time, that seemed huge!
 
-That year, a download mirror had to allocate 10 gigabytes of space to handle all the artifacts available for download. At the time, that seemed huge!
-
-In 2003, Henk started generating statistics about the mirror network, providing a way for mirror hosts to check the health of their system and their connection to Apache.
-
-In December of that year, backup (fallback) sites joined the system. Henk, now a member of the Infrastructure team, formalized monitoring of Apache mirrors.
+In 2003, Henk started generating statistics about the mirror network, providing a way for mirror hosts to check the health of their system and their connection to Apache. In December of that year, backup (fallback) sites joined the system. Henk, now a member of the Infrastructure team, formalized monitoring of Apache mirrors.
 
 From 2004 to 2015 the mirror system enjoyed steady growth, responding to world-wide demand for access to Apache product software.
 
-In 2007 Gavin McDonald (gmcdonald) joined the Infrastructure team. His first focus was going through the huge backlog of tickets, many of which were 
-requests for mirror providers to join as official mirrors.
+In 2007 Gavin McDonald (gmcdonald) joined the Infrastructure team. His first focus was going through the huge backlog of tickets, many of which were requests for mirror providers to join as official mirrors.
 
 Back then, managing the mirrors was a manual task, including going to each prospective provider's mirror site and performing checks (are they up to date, syncing at least twice a day, using the Apache Web Server to serve the mirrored software, etc.). For the many existing official mirrors, Gavin performed periodic checks and wrote emails to remind a mirror provider of their duty if the mirror had become stale. A few months in, Gavin requested Henk to create a nag checker tool that would detect stale mirrors and automatically email the provider. That was a big time saver!
 
 Gavin continued maintaining the mirror system for another couple of years, before other volunteers relieved him. Eventually the Infra team took over the role.
 
-
+<img src="images/mirrorsystemgrowth.png" alt="Chart of the growth of the Apache mirror system" width="500">
 
 
 In August 2015, deploying the mod_lua based system significantly improved response times.
