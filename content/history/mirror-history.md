@@ -1,9 +1,9 @@
-Title: The history of the Apache Mirror System
+Title: The history of the Apache mirror system
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 ## The history of the Apache Mirror System
 
-The ASF system download mirrors evolved organically, and then systematically, over 25 years. It depended on many hours of labor by volunteers and generous contributions by organizations that supported the concept of free and open-source software, and made possible distribution of Apache projects' software around the world.
+The ASF system download mirrors evolved organically, and then systematically, over 25 years. It depended on many hours of labor by volunteers and generous contributions by organizations that supported the concept of free and open source software, and made possible distribution of Apache projects' software around the world.
 
 In 2021 The ASF moved to a content distribution network (CDN) and is retiring the download mirror system. Here is its story.
 
@@ -36,7 +36,7 @@ In 2002, Henk P. Penning, who would make major contributions to the mirroring sy
 
 In 2003, Henk started generating statistics about the mirror network, providing a way for mirror hosts to check the health of their system and their connection to Apache. In December of that year, backup (fallback) sites joined the system. Henk, now a member of the Infrastructure team, formalized monitoring of Apache mirrors.
 
-From 2004 to 2015 the mirror system enjoyed steady growth, responding to world-wide demand for access to Apache product software.
+From 2004 to 2015 the mirror system enjoyed steady growth, responding to world-wide demand for access to Apache projects' software.
 
 In 2007 Gavin McDonald (gmcdonald) joined the Infrastructure team. His first focus was going through the huge backlog of tickets, many of which were requests for mirror providers to join as official mirrors.
 
@@ -49,13 +49,13 @@ Gavin continued maintaining the mirror system for another couple of years, befor
 
 In August 2015, deploying the mod_lua based system significantly improved response times.
 
-By 2021, a download mirror had to allocate at least 180 gigabytes of space for all Apache products available for download.
+By 2021, a download mirror had to allocate at least 180 gigabytes of space for all Apache projects available for download.
 
 <h3 id="moving">Moving away from the mirror system</h3>
 
-When the download-mirror system started, the bandwidth to support downloads was very expensive. Mirror sites, as well as providing faster download times for requestors near them, also helped share the bandwidth costs. Over the years, more than a thousand organizations hosted ASF download-mirror sites, some for long periods. This contribution was enormously important to the mission of The ASF, and to the world of open-source software in general.
+When the download-mirror system started, the bandwidth to support downloads was very expensive. Mirror sites, as well as providing faster download times for requestors near them, also helped share the bandwidth costs. Over the years, more than a thousand organizations hosted ASF download-mirror sites, some for long periods. This contribution was enormously important to the mission of The ASF, and to the world of open source software in general.
 
-Technology has advanced and bandwidth costs have dropped. The time has come to move The ASF's download distribution to a service that has professional support, to better suit the position the foundation and its projects have in today's world. The ASF is a major player in the open-source technology sector, and our download options should support and reflect that status.
+Technology has advanced and bandwidth costs have dropped. The time has come to move The ASF's download distribution to a service that has professional support, to better suit the position the foundation and its projects have in today's world. The ASF is a major player in the open source technology sector, and our download options should support and reflect that status.
 
 In the third quarter of 2021, the time was right to move to the new CDN.
 
@@ -63,18 +63,18 @@ In the third quarter of 2021, the time was right to move to the new CDN.
 
 The new CDN is a global content delivery network operated by one of the leading actors in the business. It provides
 
-  - economies of scale, so The ASF can provide reliable, fast downloads around the world even at times of peak demand, as when a new version of a popular product becomes available.
-  - better insights for ASF projects about who is downloading their products, and where in the world their software users are.
+  - economies of scale, so The ASF can provide reliable, fast downloads around the world even at times of peak demand, as when a new version of a popular project becomes available.
+  - better insights for ASF projects about who is downloading their software, and where in the world their software users are.
   - faster deployment of new software releases, eliminating the lag-time between what is available on the main download site and what is available on a particular download mirror.
 
 <h3 id="experience">Project and downloader experience</h3>
 
-Projects should not experience any change to their workflow. They eventually will need to remove guidance about selecting a download mirror from their sites. They will gain insights about who is downloading (and presumably using) their products, as noted above.
+Projects should not experience any change to their workflow. They eventually will need to remove guidance about selecting a download mirror from their sites. They will gain insights about who is downloading (and presumably using) their software, as noted above.
 
-Product consumers should experience faster, more reliable downloads, and access to downloadable product versions as soon as they become available, without having to wait for mirror sites to catch up to the main ASF download site.
+Users should experience faster, more reliable downloads, and access to downloadable software versions as soon as they become available, without having to wait for mirror sites to catch up to the main ASF download site.
 
 <h3 id="next">What now for the mirror providers?</h3>
 
-Any organization that has been hosting an Apache download mirror site, and that finds it useful for its own purposes, may continue to host the mirror site. Other organizations may want to consider how to redeploy resources that have been supporting their mirror site to helping the ASF and the open-source software community in another way.
+Any organization that has been hosting an Apache download mirror site, and that finds it useful for its own purposes, may continue to host the mirror site. Other organizations may want to consider how to redeploy resources that have been supporting their mirror site to helping the ASF and the open source software community in another way.
 
 For example, The Apache Software Foundation is always looking to expand our CI capacity. Any providers wishing to donate computing resources (virtual machines or bare metal servers) are most welcome to contact the builds team at `builds@apache.org` to discuss how they can help improve our CI environment.
