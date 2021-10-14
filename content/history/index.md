@@ -32,6 +32,8 @@ community discussions](http://mail-archives.apache.org/mod_mbox/community-dev/) 
 
 - [Graphical timelines of committer and project growth](http://people.apache.org/~curcuru/timeline/)
 
+- [History of the Apache mirror system](mirror-history.html)
+
 
 ## Raw Historical Data
 Since all Apache project development happens on publicly-archived mailing lists, 
