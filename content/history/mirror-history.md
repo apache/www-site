@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 The ASF system download mirrors evolved organically, and then systematically, over 25 years. It depended on many hours of labor by volunteers and generous contributions by organizations that supported the concept of free and open-source software, and made possible distribution of Apache projects' software around the world.
 
-In 2021 The ASF moved to a content distribution network (CDN) and is retiring the download mirror system. Here is its story.
+In 2021 The ASF moved to a content distribution network (CDN), retiring the download mirror system. Here is its story.
 
   - <a href="#problem">The problem the ASF mirror system addressed</a>
   - <a href="#growth">How the mirror system grew</a>
