@@ -192,7 +192,9 @@ only this as recognition for their generosity.
 
 # Mirrors #
 
-And a gigantic thank you to <a href="/mirrors/" target=_blank>all the ASF mirrors</a> around the world that help deliver Apache software at no charge!
+Until the third quarter of 2021, The ASF used a system of <a href="https://apache.org/history/mirror-history.html" target="_blank">download mirrors</a> to make Apache product releases conveniently available for free download around the world. The mirror system depended on generous contributions of resources and effort by organizations of many kinds (universities, non-profits, corporations and others), and The ASF could not have functioned as it has done without their support.
+
+The ASF now uses a global content distribution network (CDN) to respond quickly and accurately to download requests from any part of the globe, at any time of day.
 
 
 <div align=center>
