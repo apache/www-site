@@ -187,21 +187,11 @@ and meritocracy, in no specific order.
 Treating others with disrespect, making code decisions outside of the project processes, demanding that
 someone else fix the bugs you created.
 
-## Where Can I Find ASF releases?  {#find-releases}
+## Where can I find ASF releases?  {#find-releases}
 
-All current Apache releases are distributed from a subdirectory on the
-main www.apache.org to [mirrors](/mirrors/) worldwide
-for disribution to the general public.  (Anyone is [welcome to become
-a mirror](/info/how-to-mirror).)  These releases are automatically
-copied to the [archives](http://archive.apache.org/) and remain present on
-archive.apache.org even after they have been removed from the current distribution
-directories.
+Current Apache releases are available for download on the releases page of each project's website. Until the third quarter of 2021 Apache used a system of <a href="https://apache.org/history/mirror-history.html" target="_blank">download mirrors</a> to make the releases conveniently available around the world. Since then, all releases are distributed through a global content distribution network (CDN).
 
-So, if you are looking for an old Apache release that is no
-longer on the mirrors, or need to refer to a permanent location (such as
-for legal notices), use a link to the archives.
-But if you want the latest stable releases, visit the home page of the ([Apache project](http://projects.apache.org/indexes/quick)) you are interested. You can also [browse a mirror near
-you](/dyn/closer.cgi/).
+All releases are automatically copied to the [archives](http://archive.apache.org/) and remain present on `archive.apache.org` even after they have been removed from projects' releases pages. So, if you are looking for an old Apache release that is no longer a project's releases page, or need to refer to a permanent location (such as for legal notices), use a link to the archives. But if you want the latest stable releases, visit the website of the ([Apache project](http://projects.apache.org/indexes/quick)) you are interested in.
 
 ## How do I contact projects and people?  {#contact}
 
