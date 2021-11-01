@@ -1,11 +1,10 @@
 Title: Release Policy
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-This page documents the ASF policy on software releases. Content of this document is for ASF release managers and [PMC](glossary#PMC) members.
+This page documents the ASF policy on software releases. This document is for ASF release managers and [PMC](glossary#PMC) members.
 Information [for end-users](https://infra.apache.org/release-download-pages.html#best_practice) is also available.
 
-Other documents summarize the [release process](/dev/release-publishing) 
-and the [design goals of this policy](/dev/mirrors).
+This document summarizes the <a href="https://infra.apache.org/release-publishing.html">release process</a>.
 
 # Contents #
 
@@ -308,15 +307,10 @@ to download the signed source code package, compile it as provided, and test the
 resulting executable on their own platform, along with also verifying that the 
 package meets the requirements of the ASF policy on releases.
 
-### How Should Releases Be Announced?  {#release-announcements}
+### How should releases be announced?  {#release-announcements}
 
-Please ensure that you wait at least 24 hours after uploading a new release
-before updating the project download page and sending the announcement email(s).
-This is so that mirrors have sufficient time to catch up.  (For time-critical
-security releases, the download pages script supports
-[bypassing](release-download-pages#less-than-24hr) this requirement.)
-
-Before the end of 2021 the ASF download system will move away from mirrors to a content distribution system that updates more quickly. From then on, you will only need to wait about an hour, rather than a full day, after uploading a new release before updating the project download page.
+Please ensure that you wait at least one hour after uploading a new release
+before updating the project download page and sending the announcement email(s). 
 
 It is important to inform people about the availability of new
 releases. Announcements must contain a link to the relevant download page for the source.
@@ -378,7 +372,7 @@ or the staging features of repository.apache.org
 to host release candidates posted for developer testing/voting (prior to being,
 potentially, formally blessed as a GA release).
 
-Nightly Builds that are not release candidates, can be hosted at [ci.apache.org projects area](https://ci.apache.org/projects),
+Nightly Builds that are not release candidates can be hosted at [ci.apache.org projects area](https://ci.apache.org/projects),
 just file an INFRA ticket.
 
 ### Where can we host public (GA) releases?  {#host-GA}
@@ -397,17 +391,14 @@ downloaded from them.
 
 ### How are releases archived?  {#archived}
 
-All releases must be archived on <http://archive.apache.org/dist/>.
+All releases are archived on <http://archive.apache.org/dist/>.
 
 An automated process adds releases to the archive about a day after
 they first appear on to <https://downloads.apache.org/>.
-Once a release
-is placed under `https://downloads.apache.org/` it will automatically be copied over
-to `http://archive.apache.org/dist/` and held there permanently, even after it is deleted
-from `https://downloads.apache.org/`.
+Once a release is placed under `https://downloads.apache.org/` it will automatically be copied over
+to `http://archive.apache.org/dist/` and held there permanently, even after it is deleted from `https://downloads.apache.org/`.
 
-If you have (legacy?) releases that never got archived, 
-ask infra to copy them to `http://archive.apache.org/dist/`.
+If you have (legacy?) releases that never got archived, ask infra to copy them to `http://archive.apache.org/dist/`.
 
 ### When should an old release be archived?  {#when-to-archive}
 
@@ -416,8 +407,7 @@ that is currently under development*. When development ceases on a version
 branch, releases of that branch should be removed from the project's download 
 directory.
 
-(If the project uses svnpubsub, 
-this is done by deleting the artifacts from 
+(If the project uses svnpubsub, delete the artifacts from 
 `https://dist.apache.org/repos/dist/release/<TLP name>/`.)
 
 For example, if Apache Foo 1.2.x is a newer release in the same line as 
@@ -435,7 +425,7 @@ By committing your release tarballs to the appropriate subdirectory (i.e. TLP na
 repository.  Our synchronization process will push the files to [the master
 download site](https://downloads.apache.org/) within 15 minutes. 
 
-Before the end of 2021 the ASF download system will move away from mirrors to a content distribution system that updates more quickly. From then on, you will only need to wait about an hour, rather than a full day, after uploading a new release before updating the project download page.
+Wait about an hour after uploading a new release before updating the project download page.
 
 The repository directory
 `https://dist.apache.org/repos/dist/release/<TLP name>/`
@@ -469,8 +459,7 @@ Commit mails to the `dist/` repository go to your normal project mailing lists.
 Most projects can just distribute a release as described in the previous two
 questions.  However, releases that are likely to strain content distribution resources **must** be coordinated with infrastructure.
 
-Releases of more than 1GB of artifacts require a heads-up to Infrastructure in
-advance.
+Releases of more than 1GB of artifacts require a heads-up to Infrastructure in advance.
 
 Specific exemptions from other dist policies (such as what may or must or must
 not be distributed via the content distribution system) also need to be coordinated with Infrastructure.
@@ -495,7 +484,7 @@ update any links from the download page.
 See the guide to <a href="https://infra.apache.org/publishing-maven-artifacts.html" target="_blank">Publishing Maven
 Releases</a>.
 
-## Release Licensing Questions  {#license}
+## Release licensing questions  {#license}
 
 Please read [Applying the Apache License, Version
 2.0](apply-license) and check the [Apache Licenses](/licenses/) and 
