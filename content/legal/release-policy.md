@@ -570,23 +570,4 @@ releases be primarily based on a signed source package.
 
 ### Is there any way to measure how many times XYZ has been downloaded?  {#downloads}
 
-Not directly. The Apache content distribution system does not collect statistics about downloads.
-
-Counting the hits on the [download script](/dev/release-download-pages.html#download-scripts)
-should give a reasonable estimate. Various similar statistics are collected
-by [Vadim Gritsenko](http://home.apache.org/~vgritsenko/).
-
-There's also some logging done by closer.lua which is stored in:
-
-https://www-eu.apache.org/dyn/stats/
-and
-https://www-us.apache.org/dyn/stats/
-
-The columns show:
-- timestamp
-- part of IP address
-- country (estimated)
-- URL
-
-Note that the log just records accesses to the CGI script.
-Such access may not result in a download, and the download may not be completed.
+Visit <a href="https://logging1-he-de.apache.org/stats/" target="_blank">the download stats page</a>.
