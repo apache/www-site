@@ -20,7 +20,7 @@ The ASF Infrastructure team, known as "Infra", supports these services::
 
 - issue / bug tracking
 
-- distribution mirroring system
+- gobal content distribution network (CDN) for all projects' product releases
 
 
 Infra is responsible for the management and day-to-day system administration of the hardware that runs these services. Infra also reviews requests to install new systems or software on the ASF machines.
