@@ -3,19 +3,14 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # How to verify downloaded files  {#how-to-verify}
 
-This page describes how to verify a file, downloaded from a mirror,
-by [checksum](#CheckingHashes) or by [signature](#CheckingSignatures).
+This page describes how to verify a file you have downloaded from an Apache product releases page, or from the Apache archive,
+by [checksum](#CheckingHashes) or [signature](#CheckingSignatures).
 
 All official releases of code distributed by the Apache Software Foundation
 are signed by the release manager for the release.
 PGP signatures and SHA/MD5 checksums are available along with the distribution.
 
-You are encouraged to download the releases from our mirrors.
-Signatures and checksums are only available from
-the official Apache Software Foundation site.
-<br>
-Our download pages point you to the mirrors for releases and
-to the official site for signatures and checksums.
+Signatures and checksums are only available from the official Apache Software Foundation site.
 
 ## Checking Hashes  {#CheckingHashes}
 File hashes are used to check that a file has been downloaded correctly.
@@ -27,7 +22,7 @@ Two files are (only) equal if their checksums are equal.
 Comparing the checksums of two files is as good as comparing the two files
 themselves.
 
-There are lots of checksum algorithms ; we use SHA-1, SHA-256, SHA-512 and MD5.
+There are lots of checksum algorithms. We use SHA-256 and SHA-512. MD5 and SHA-1, which may have been used for older releases, are *deprecated*.
 <br>
 The download page shows which checksum files
 are available for the *original* file.
@@ -53,7 +48,7 @@ th  { padding : 5px ; text-align : center ; }
   <th>Mac</th>
   <td></td>
 </tr>
-<tr><th>SHA-1</th><td>certUtil -hashfile <i>file</i> SHA1</td>
+<tr><th>SHA-1 (deprecated)</th><td>certUtil -hashfile <i>file</i> SHA1</td>
   <td>sha1sum <i>file</i></td>
   <td>shasum -a 1 <i>file</i></td>
   <td><i>file</i>.sha1</td>
@@ -68,7 +63,7 @@ th  { padding : 5px ; text-align : center ; }
   <td>shasum -a 512 <i>file</i></td>
   <td><i>file</i>.sha512</td>
 </tr>
-<tr><th>MD5</th><td>certUtil -hashfile <i>file</i> MD5</td>
+<tr><th>MD5 (deprecated)</th><td>certUtil -hashfile <i>file</i> MD5</td>
   <td>md5sum <i>file</i></td>
   <td>md5 <i>file</i></td>
   <td><i>file</i>.md5</td>
@@ -77,9 +72,7 @@ th  { padding : 5px ; text-align : center ; }
 </blockquote>
 </div>
 
-Only if you check the hash can you be certain that your download
-hasn't been modified ; for instance on the mirror - or the download
-itself may be incomplete or faulty.
+Only if you check the hash can you be certain that your download hasn't been modified or is otherwise incomplete or faulty.
 
 ## Checking Signatures  {#CheckingSignatures}
 The following example details how signature interaction works. The example
