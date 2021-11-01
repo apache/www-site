@@ -1,12 +1,10 @@
 Title: Release Policy
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-This page documents the ASF policy on software releases. Content of this document is aimed at ASF release managers and [PMC](glossary#PMC) members.
-Information [for end-users](https://infra.apache.org/release-download-pages.html#best_practice) and [for
-distribution mirror operators](/info/how-to-mirror) is also available.
+This page documents the ASF policy on software releases. This document is for ASF release managers and [PMC](glossary#PMC) members.
+Information [for end-users](https://infra.apache.org/release-download-pages.html#best_practice) is also available.
 
-Other documents summarize the [release process](/dev/release-publishing) 
-and the [design goals of this policy](/dev/mirrors).
+This document summarizes the <a href="https://infra.apache.org/release-publishing.html">release process</a>.
 
 # Contents #
 
@@ -165,9 +163,9 @@ Formalize additional official policies and reference them from this policy:
 *   _ASF Licensing Policy_ (curated by Legal Affairs, applies to both released
     and unreleased code)
 
-# Release FAQ  {#releases}
+# Release FAQs  {#releases}
 
-### Why Do We Need a Foundation-Wide Policy?  {#why}
+### Why do we need a Foundation-wide policy?  {#why}
 
 In the traditional open source development methodology practiced
 at volunteer liability-limiting organizations like Apache, it is necessary to draw
@@ -196,7 +194,7 @@ we prefer robust, reviewable decision-making over efficient decision-making, so 
 are thinking of proposing an alternative process for the board to consider, be sure
 your targets reflect this.
 
-### What Is A Release?  {#what}
+### What is a release?  {#what}
 
 Releases are, by definition, anything that is published beyond the group
 that owns it. In our case, that means any publication outside the group of
@@ -228,7 +226,7 @@ binary/bytecode package must have the same version number as the source
 release and may only add binary/bytecode files that are the result of
 compiling that version of the source code release.
 
-### How Do The Types Of Apache Software Distribution Differ?  {#release-types}
+### How do the types Of Apache software distribution differ?  {#release-types}
 
 - **Test Packages** are not Apache releases. All releases require due
 process and official approval. Test packages are for testing ongoing
@@ -309,15 +307,12 @@ to download the signed source code package, compile it as provided, and test the
 resulting executable on their own platform, along with also verifying that the 
 package meets the requirements of the ASF policy on releases.
 
-### How Should Releases Be Announced?  {#release-announcements}
+### How should releases be announced?  {#release-announcements}
 
-Please ensure that you wait at least 24 hours after uploading a new release
-before updating the project download page and sending the announcement email(s).
-This is so that mirrors have sufficient time to catch up.  (For time-critical
-security releases, the download pages script supports
-[bypassing](release-download-pages#less-than-24hr) this requirement.)
+Please ensure that you wait at least one hour after uploading a new release
+before updating the project download page and sending the announcement email(s). 
 
-It is important that people are informed about the availability of new
+It is important to inform people about the availability of new
 releases. Announcements must contain a link to the relevant download page for the source.
 At the very least, emails should be sent out announcing this to
 all appropriate mailing lists. Many top level projects have announcement
@@ -326,10 +321,9 @@ lists for this purpose. There is also an
 announcement list which is suitable.
 
 Please note that you can not post the ASF-wide announcement list without
-the usage of "apache.org" mail address. Also, please make sure that you
-have put 3-5 lines blurb for the project. (because most of the subscribers
-to announce.AT.apache.DOT.org list would not know what is XX-Project,
-generally speaking)
+using an "apache.org" mail address. Also, please make sure that you
+have put a 3-5 lines blurb for the project (because most of the subscribers
+to announce.AT.apache.DOT.org list may not know what XX-Project is).
 
 It is recommended that an SHA-1 OpenPGP compatible signature is added to
 the announcement mail. Please ensure that your public key has been already
@@ -337,7 +331,7 @@ uploaded to famous pgp sites (e.g. http://pgp.mit.edu/). This key should
 either be the one used to sign the release or one that is cross-signed by
 that key.
 
-### Is There A Guide To Best Practice?  {#best-practice}
+### Is there a guide to best practices?  {#best-practice}
 
 See the Incubator [release management
 guide (draft)](http://incubator.apache.org/guides/releasemanagement.html#best-practice).
@@ -364,14 +358,13 @@ files (especially binary files) is not feasible.  So, basically, "Yes".
 from a source control tag.  It does not refer to testing that artifact for
 technical quality.*
 
-## Release Distribution and Mirroring Questions  {#mirroring}
+## Release Distribution Questions  {#mirroring}
 
 ### Where can we host test packages (nightly builds and release candidates)?  {#host-rc}
 
 Test packages are for use by consenting developers and interested community
 members only, so they should not be hosted or linked on pages intended for end
-users.  They should not be mirrored; only blessed GA releases should be
-mirrored.
+users, or released using a `closer.lua` script.
 
 Projects should use the 
 [`/dev` tree of the `dist` repository](https://dist.apache.org/repos/dist/dev)
@@ -379,18 +372,15 @@ or the staging features of repository.apache.org
 to host release candidates posted for developer testing/voting (prior to being,
 potentially, formally blessed as a GA release).
 
-Nightly Builds that are not release candidates, can be hosted at [ci.apache.org projects area](https://ci.apache.org/projects),
+Nightly Builds that are not release candidates can be hosted at [ci.apache.org projects area](https://ci.apache.org/projects),
 just file an INFRA ticket.
 
 ### Where can we host public (GA) releases?  {#host-GA}
 
-Current releases must be served from the ASF mirroring system by placing them under
+Current releases must be served from the ASF condent distribution system by placing them under
 `https://downloads.apache.org/` (see [How do I upload a release?](#upload-ci)). 
 
-Project download
-pages must link to the mirrors and not to the main Apache Web site; see
-[instructions for creating download pages](/dev/release-download-pages) for
-further details. 
+Project download pages must use a `closer.lua` script and not link directly to the main Apache Web site; see <a href="https://infra.apache.org/release-download-pages.html" target="_blank">instructions for creating download pages</a> for further details. 
 The website documentation for the software must contain a link to the download page for the source.
 
 Project websites (`http://  {project}.apache.org`),
@@ -401,27 +391,23 @@ downloaded from them.
 
 ### How are releases archived?  {#archived}
 
-All releases must be archived on <http://archive.apache.org/dist/>.
+All releases are archived on <http://archive.apache.org/dist/>.
 
 An automated process adds releases to the archive about a day after
 they first appear on to <https://downloads.apache.org/>.
-Once a release
-is placed under `https://downloads.apache.org/` it will automatically be copied over
-to `http://archive.apache.org/dist/` and held there permanently, even after it is deleted
-from `https://downloads.apache.org/`.
+Once a release is placed under `https://downloads.apache.org/` it will automatically be copied over
+to `http://archive.apache.org/dist/` and held there permanently, even after it is deleted from `https://downloads.apache.org/`.
 
-If you have (legacy?) releases that never got archived, 
-ask infra to copy them to `http://archive.apache.org/dist/`.
+If you have (legacy?) releases that never got archived, ask infra to copy them to `http://archive.apache.org/dist/`.
 
-### When Should An Old Release Be Archived?  {#when-to-archive}
+### When should an old release be archived?  {#when-to-archive}
 
 `downloads.apache.org` should contain *the latest release in each branch 
 that is currently under development*. When development ceases on a version 
 branch, releases of that branch should be removed from the project's download 
 directory.
 
-(If the project uses svnpubsub, 
-this is done by deleting the artifacts from 
+(If the project uses svnpubsub, delete the artifacts from 
 `https://dist.apache.org/repos/dist/release/<TLP name>/`.)
 
 For example, if Apache Foo 1.2.x is a newer release in the same line as 
@@ -437,9 +423,9 @@ parallel, then it is acceptable to serve both 1.1.a and 1.2.x from `/dist`.
 By committing your release tarballs to the appropriate subdirectory (i.e. TLP name) of the
 [`https://dist.apache.org/repos/dist/release/`](https://dist.apache.org/repos/dist/release/)
 repository.  Our synchronization process will push the files to [the master
-mirror site](https://downloads.apache.org/) within 15 minutes.  The 24-hour wait for
-mirrors is still required though (as [mirrors use an 1/N-daily
-rsync](../info/how-to-mirror) to catch up with the `dist/` tree).
+download site](https://downloads.apache.org/) within 15 minutes. 
+
+Wait about an hour after uploading a new release before updating the project download page.
 
 The repository directory
 `https://dist.apache.org/repos/dist/release/<TLP name>/`
@@ -456,8 +442,8 @@ To get this set up, please open a JIRA ticket at the [INFRA JIRA](https://issues
 There is also a development area under
 `https://dist.apache.org/repos/dist/dev/<TLP name>/`
 which can be used for development releases.
-For example snapshots and release candidates can be stored here.  One important item to note, 
-is that this directory does not get published to the mirrors via svnpubsub.  It is intended to 
+For example snapshots and release candidates can be stored here.  One important item to note 
+is that this directory does not get published to the content distribution system via svnpubsub.  It is intended to 
 act as a staging location in preparation for the release to become official.
 
 All committers on a project can write to the dist/dev area for the project.
@@ -471,16 +457,14 @@ Commit mails to the `dist/` repository go to your normal project mailing lists.
 ### Do I need to talk to Infrastructure before distributing a release?  {#heads-up}
 
 Most projects can just distribute a release as described in the previous two
-questions.  However, releases that are likely to strain the mirroring and
-download resources **must** be coordinated with infrastructure.
+questions.  However, releases that are likely to strain content distribution resources **must** be coordinated with infrastructure.
 
-Releases of more than 1GB of artifacts require a heads-up to Infrastructure in
-advance.
+Releases of more than 1GB of artifacts require a heads-up to Infrastructure in advance.
 
 Specific exemptions from other dist policies (such as what may or must or must
-not be distributed via the mirrors) also need to be coordinated with Infrastructure.
+not be distributed via the content distribution system) also need to be coordinated with Infrastructure.
 
-### Which Directory For What Build?  {#build-directories}
+### Which Directory for what build?  {#build-directories}
 
 | Type             | Location                 |
 |------------------|--------------------------|
@@ -488,29 +472,29 @@ not be distributed via the mirrors) also need to be coordinated with Infrastruct
 | Current Releases | downloads.apache.org     |
 | Older Releases   | archive.apache.org/dist  | 
 
-### How Is An Old Release Moved To The Archives?  {#how-to-archive}
+### How is an old release moved to the archives?  {#how-to-archive}
 
 `downloads.apache.org` is automatically archived. Therefore, a copy of an
 official release will already exist in the archives. To move a release to
 the archives, just delete the copy in your project's dist directory. Remember to
 update any links from the download page.
 
-### How do I release Maven Artifacts?  {#maven-artifacts}
+### How do I release Maven artifacts?  {#maven-artifacts}
 
-See the [Publishing Maven
-Releases](/dev/publishing-maven-artifacts.html) guide.
+See the guide to <a href="https://infra.apache.org/publishing-maven-artifacts.html" target="_blank">Publishing Maven
+Releases</a>.
 
-## Release Licensing Questions  {#license}
+## Release licensing questions  {#license}
 
 Please read [Applying the Apache License, Version
 2.0](apply-license) and check the [Apache Licenses](/licenses/) and 
 [Apache Legal](/legal/) pages for current information.
 
-### Which Files Must Contain An ASF License Text?  {#which-files-contain-license}
+### Which files must contain an ASF license text?  {#which-files-contain-license}
 
 Every source file must contain the appropriate ASF License text.
 
-### Is A Full Copy Of The License Required In Each Source File?  {#full-copy-for-each-source-file}
+### Is a full copy of the license required in each source file?  {#full-copy-for-each-source-file}
 
 In short, only one copy of the license is needed per distribution. This
 full license file should be placed at the root of the distribution in a
@@ -518,7 +502,7 @@ file named LICENSE. For software developed at the ASF, each source file
 need only contain the [boilerplate
 notice](/legal/src-headers.html#headers).
 
-### Where Is The Right Place For Attribution Notices?  {#attribution-notices}
+### Where is the right place for attribution notices?  {#attribution-notices}
 
 The new license allows for a NOTICE file that contains such attribution
 notices (including the Apache attribution notice). Read
@@ -531,14 +515,14 @@ next to the LICENSE file.
 Ensure that the standard ASF attribution notice is contained in any new
 NOTICE file created.
 
-### What Content Is Appropriate For The NOTICE File?  {#notice-content}
+### What content is appropriate for the NOTICE file?  {#notice-content}
 
 Read [this](/legal/src-headers.html#notice).
 
 Only mandatory information required by the product's software licenses. Not
 suitable for normal documentation.
 
-### Is A NOTICE File Required For Pure ASF Code?  {#notice-required}
+### Is a NOTICE file required for pure ASF code?  {#notice-required}
 
 Yes! The NOTICE file must contain the standard ASF attribution, given
 below:
@@ -553,7 +537,7 @@ The official wording was established in section 6C of the
 
 <!-- Note: the text was originally added in: r201713 see #INFRA-367 -->
 
-### If An Artifact Contains Code Under Several Licenses, Should It Contain Several License Files?  {#distributing-code-under-several-licenses}
+### If an artifact contains code under several licenses, should it contain several license files?  {#distributing-code-under-several-licenses}
 
 When an artifact contains code under several licenses, the LICENSE file
 should contain details of all these licenses. For each component which is
@@ -564,7 +548,7 @@ artifact with a pointer to it from the LICENSE file, e.g. if the license is long
 [Here](https://svn.apache.org/repos/asf/httpd/httpd/trunk/LICENSE) is an
 example showing appended licenses.
 
-### What Are The Requirements To Distribute Other Artifacts In Addition To The Source Package?  {#distribute-other-artifacts}
+### What are the requirements to distribute other artifacts in addition to the source package?  {#distribute-other-artifacts}
 
 ASF releases typically contain additional material together with the source
 package. This material may include documentation concerning the release but
@@ -584,16 +568,15 @@ releases be primarily based on a signed source package.
 
 ## Questions About Release Statistics  {#stats}
 
-### Is There Any Way To Measure How Many Times XYZ Has Been Downloaded?  {#downloads}
+### Is there any way to measure how many times XYZ has been downloaded?  {#downloads}
 
-Not directly. Files are downloaded from the mirrors. Apache does not
-require mirrors to collect statistics about downloads.
+Not directly. The Apache content distribution system does not collect statistics about downloads.
 
 Counting the hits on the [download script](/dev/release-download-pages.html#download-scripts)
 should give a reasonable estimate. Various similar statistics are collected
 by [Vadim Gritsenko](http://home.apache.org/~vgritsenko/).
 
-There's also some logging done by closer.cgi which is stored in:
+There's also some logging done by closer.lua which is stored in:
 
 https://www-eu.apache.org/dyn/stats/
 and
