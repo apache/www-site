@@ -1,13 +1,8 @@
 Title: Apache Mirroring Information
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-<script type="text/javascript">
-location.href = location.href.replace(/^https?:\/\/[^\/]+\/dev\//, 'https://infra.apache.org/');
-</script>
+As of the third quarter of 2021, the ASF stopped using its download mirror system. It is now using a global content distribution network (CDN).
+
+Read about <a href="https://apache.org/history/mirror-history.html">the history of the Apache mirror system</a>.
 
 
-
-## This material has moved [here][1] ##
-
-
-  [1]: ttps://infra.apache.org/mirrors.html
