@@ -309,13 +309,11 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
     </div>
   </header>
   <main id="maincontent">
-<div class="container">    <p>This page documents the ASF policy on software releases. Content of this document is aimed at ASF release managers and <a href="glossary#PMC">PMC</a> members.
-Information <a href="https://infra.apache.org/release-download-pages.html#best_practice">for end-users</a> and <a href="/info/how-to-mirror">for
-distribution mirror operators</a> is also available.</p>
-<p>Other documents summarize the <a href="/dev/release-publishing">release process</a>
-and the <a href="/dev/mirrors">design goals of this policy</a>.</p>
+<div class="container">    <p>This page documents the ASF policy on software releases. This document is for ASF release managers and <a href="glossary#PMC">PMC</a> members.
+Information <a href="https://infra.apache.org/release-download-pages.html#best_practice">for end-users</a> is also available.</p>
+<p>This document summarizes the <a href="https://infra.apache.org/release-publishing.html">release process</a>.</p>
 <h1 id="contents">Contents<a class="headerlink" href="#contents" title="Permalink">&para;</a></h1>
-<div id="toc"><ul><li><a class="toc-href" href="#policy" title="Release Policy">Release Policy</a><ul><li><a class="toc-href" href="#release-definition" title='Definition of "release"'>Definition of "release"</a></li><li><a class="toc-href" href="#release-approval" title="Release approval">Release approval</a></li><li><a class="toc-href" href="#publication" title="Publication">Publication</a></li><li><a class="toc-href" href="#artifacts" title="Artifacts">Artifacts</a><ul><li><a class="toc-href" href="#source-packages" title="Source packages">Source packages</a></li><li><a class="toc-href" href="#release-signing" title="Release signing">Release signing</a></li><li><a class="toc-href" href="#compiled-packages" title="Compiled packages">Compiled packages</a></li></ul></li><li><a class="toc-href" href="#licensing" title="Licensing">Licensing</a></li><li><a class="toc-href" href="#licensing-documentation" title="Licensing Documentation">Licensing Documentation</a><ul><li><a class="toc-href" href="#license-file" title="The LICENSE file">The LICENSE file</a></li><li><a class="toc-href" href="#notice-file" title="The NOTICE file">The NOTICE file</a></li><li><a class="toc-href" href="#license-headers" title="License Headers">License Headers</a></li></ul></li><li><a class="toc-href" href="#release-distribution" title="Release Distribution">Release Distribution</a><ul><li><a class="toc-href" href="#release-archival" title="Release Archival">Release Archival</a></li></ul></li><li><a class="toc-href" href="#administration" title="Release Policy Administration">Release Policy Administration</a></li><li><a class="toc-href" href="#todo" title="TODO">TODO</a></li></ul></li><li><a class="toc-href" href="#releases" title="Release FAQ">Release FAQ</a><ul><li><a class="toc-href" href="#why" title="Why Do We Need a Foundation-Wide Policy?">Why Do We Need a Foundation-Wide Policy?</a></li><li><a class="toc-href" href="#what" title="What Is A Release?">What Is A Release?</a></li><li><a class="toc-href" href="#release-types" title="How Do The Types Of Apache Software Distribution Differ?">How Do The Types Of Apache Software Distribution Differ?</a></li><li><a class="toc-href" href="#management" title="Release Management Questions">Release Management Questions</a><ul><li><a class="toc-href" href="#where-do-releases-go" title="Where do releases go?">Where do releases go?</a></li><li><a class="toc-href" href="#what-must-every-release-contain" title="What Must Every ASF Release Contain?">What Must Every ASF Release Contain?</a></li><li><a class="toc-href" href="#approving-a-release" title="What are the ASF requirements on approving a release?">What are the ASF requirements on approving a release?</a></li><li><a class="toc-href" href="#release-announcements" title="How Should Releases Be Announced?">How Should Releases Be Announced?</a></li><li><a class="toc-href" href="#best-practice" title="Is There A Guide To Best Practice?">Is There A Guide To Best Practice?</a></li><li><a class="toc-href" href="#owned-controlled-hardware" title="Must releases be built on hardware owned and controlled by the committer?">Must releases be built on hardware owned and controlled by the committer?</a></li></ul></li><li><a class="toc-href" href="#mirroring" title="Release Distribution and Mirroring Questions">Release Distribution and Mirroring Questions</a><ul><li><a class="toc-href" href="#host-rc" title="Where can we host test packages (nightly builds and release candidates)?">Where can we host test packages (nightly builds and release candidates)?</a></li><li><a class="toc-href" href="#host-GA" title="Where can we host public (GA) releases?">Where can we host public (GA) releases?</a></li><li><a class="toc-href" href="#archived" title="How are releases archived?">How are releases archived?</a></li><li><a class="toc-href" href="#when-to-archive" title="When Should An Old Release Be Archived?">When Should An Old Release Be Archived?</a></li><li><a class="toc-href" href="#upload-ci" title="How do I upload a release ?">How do I upload a release ?</a></li><li><a class="toc-href" href="#stage" title="Where can I stage a release candidate?">Where can I stage a release candidate?</a></li><li><a class="toc-href" href="#heads-up" title="Do I need to talk to Infrastructure before distributing a release?">Do I need to talk to Infrastructure before distributing a release?</a></li><li><a class="toc-href" href="#build-directories" title="Which Directory For What Build?">Which Directory For What Build?</a></li><li><a class="toc-href" href="#how-to-archive" title="How Is An Old Release Moved To The Archives?">How Is An Old Release Moved To The Archives?</a></li><li><a class="toc-href" href="#maven-artifacts" title="How do I release Maven Artifacts?">How do I release Maven Artifacts?</a></li></ul></li><li><a class="toc-href" href="#license" title="Release Licensing Questions">Release Licensing Questions</a><ul><li><a class="toc-href" href="#which-files-contain-license" title="Which Files Must Contain An ASF License Text?">Which Files Must Contain An ASF License Text?</a></li><li><a class="toc-href" href="#full-copy-for-each-source-file" title="Is A Full Copy Of The License Required In Each Source File?">Is A Full Copy Of The License Required In Each Source File?</a></li><li><a class="toc-href" href="#attribution-notices" title="Where Is The Right Place For Attribution Notices?">Where Is The Right Place For Attribution Notices?</a></li><li><a class="toc-href" href="#notice-content" title="What Content Is Appropriate For The NOTICE File?">What Content Is Appropriate For The NOTICE File?</a></li><li><a class="toc-href" href="#notice-required" title="Is A NOTICE File Required For Pure ASF Code?">Is A NOTICE File Required For Pure ASF Code?</a></li><li><a class="toc-href" href="#distributing-code-under-several-licenses" title="If An Artifact Contains Code Under Several Licenses, Should It Contain Several License Files?">If An Artifact Contains Code Under Several Licenses, Should It Contain Several License Files?</a></li><li><a class="toc-href" href="#distribute-other-artifacts" title="What Are The Requirements To Distribute Other Artifacts In Addition To The Source Package?">What Are The Requirements To Distribute Other Artifacts In Addition To The Source Package?</a></li></ul></li><li><a class="toc-href" href="#stats" title="Questions About Release Statistics">Questions About Release Statistics</a><ul><li><a class="toc-href" href="#downloads" title="Is There Any Way To Measure How Many Times XYZ Has Been Downloaded?">Is There Any Way To Measure How Many Times XYZ Has Been Downloaded?</a></li></ul></li></ul></li></ul></div>
+<div id="toc"><ul><li><a class="toc-href" href="#policy" title="Release Policy">Release Policy</a><ul><li><a class="toc-href" href="#release-definition" title='Definition of "release"'>Definition of "release"</a></li><li><a class="toc-href" href="#release-approval" title="Release approval">Release approval</a></li><li><a class="toc-href" href="#publication" title="Publication">Publication</a></li><li><a class="toc-href" href="#artifacts" title="Artifacts">Artifacts</a><ul><li><a class="toc-href" href="#source-packages" title="Source packages">Source packages</a></li><li><a class="toc-href" href="#release-signing" title="Release signing">Release signing</a></li><li><a class="toc-href" href="#compiled-packages" title="Compiled packages">Compiled packages</a></li></ul></li><li><a class="toc-href" href="#licensing" title="Licensing">Licensing</a></li><li><a class="toc-href" href="#licensing-documentation" title="Licensing Documentation">Licensing Documentation</a><ul><li><a class="toc-href" href="#license-file" title="The LICENSE file">The LICENSE file</a></li><li><a class="toc-href" href="#notice-file" title="The NOTICE file">The NOTICE file</a></li><li><a class="toc-href" href="#license-headers" title="License Headers">License Headers</a></li></ul></li><li><a class="toc-href" href="#release-distribution" title="Release Distribution">Release Distribution</a><ul><li><a class="toc-href" href="#release-archival" title="Release Archival">Release Archival</a></li></ul></li><li><a class="toc-href" href="#administration" title="Release Policy Administration">Release Policy Administration</a></li><li><a class="toc-href" href="#todo" title="TODO">TODO</a></li></ul></li><li><a class="toc-href" href="#releases" title="Release FAQs">Release FAQs</a><ul><li><a class="toc-href" href="#why" title="Why do we need a Foundation-wide policy?">Why do we need a Foundation-wide policy?</a></li><li><a class="toc-href" href="#what" title="What is a release?">What is a release?</a></li><li><a class="toc-href" href="#release-types" title="How do the types Of Apache software distribution differ?">How do the types Of Apache software distribution differ?</a></li><li><a class="toc-href" href="#management" title="Release Management Questions">Release Management Questions</a><ul><li><a class="toc-href" href="#where-do-releases-go" title="Where do releases go?">Where do releases go?</a></li><li><a class="toc-href" href="#what-must-every-release-contain" title="What Must Every ASF Release Contain?">What Must Every ASF Release Contain?</a></li><li><a class="toc-href" href="#approving-a-release" title="What are the ASF requirements on approving a release?">What are the ASF requirements on approving a release?</a></li><li><a class="toc-href" href="#release-announcements" title="How should releases be announced?">How should releases be announced?</a></li><li><a class="toc-href" href="#best-practice" title="Is there a guide to best practices?">Is there a guide to best practices?</a></li><li><a class="toc-href" href="#owned-controlled-hardware" title="Must releases be built on hardware owned and controlled by the committer?">Must releases be built on hardware owned and controlled by the committer?</a></li></ul></li><li><a class="toc-href" href="#mirroring" title="Release Distribution Questions">Release Distribution Questions</a><ul><li><a class="toc-href" href="#host-rc" title="Where can we host test packages (nightly builds and release candidates)?">Where can we host test packages (nightly builds and release candidates)?</a></li><li><a class="toc-href" href="#host-GA" title="Where can we host public (GA) releases?">Where can we host public (GA) releases?</a></li><li><a class="toc-href" href="#archived" title="How are releases archived?">How are releases archived?</a></li><li><a class="toc-href" href="#when-to-archive" title="When should an old release be archived?">When should an old release be archived?</a></li><li><a class="toc-href" href="#upload-ci" title="How do I upload a release ?">How do I upload a release ?</a></li><li><a class="toc-href" href="#stage" title="Where can I stage a release candidate?">Where can I stage a release candidate?</a></li><li><a class="toc-href" href="#heads-up" title="Do I need to talk to Infrastructure before distributing a release?">Do I need to talk to Infrastructure before distributing a release?</a></li><li><a class="toc-href" href="#build-directories" title="Which Directory for what build?">Which Directory for what build?</a></li><li><a class="toc-href" href="#how-to-archive" title="How is an old release moved to the archives?">How is an old release moved to the archives?</a></li><li><a class="toc-href" href="#maven-artifacts" title="How do I release Maven artifacts?">How do I release Maven artifacts?</a></li></ul></li><li><a class="toc-href" href="#license" title="Release licensing questions">Release licensing questions</a><ul><li><a class="toc-href" href="#which-files-contain-license" title="Which files must contain an ASF license text?">Which files must contain an ASF license text?</a></li><li><a class="toc-href" href="#full-copy-for-each-source-file" title="Is a full copy of the license required in each source file?">Is a full copy of the license required in each source file?</a></li><li><a class="toc-href" href="#attribution-notices" title="Where is the right place for attribution notices?">Where is the right place for attribution notices?</a></li><li><a class="toc-href" href="#notice-content" title="What content is appropriate for the NOTICE file?">What content is appropriate for the NOTICE file?</a></li><li><a class="toc-href" href="#notice-required" title="Is a NOTICE file required for pure ASF code?">Is a NOTICE file required for pure ASF code?</a></li><li><a class="toc-href" href="#distributing-code-under-several-licenses" title="If an artifact contains code under several licenses, should it contain several license files?">If an artifact contains code under several licenses, should it contain several license files?</a></li><li><a class="toc-href" href="#distribute-other-artifacts" title="What are the requirements to distribute other artifacts in addition to the source package?">What are the requirements to distribute other artifacts in addition to the source package?</a></li></ul></li><li><a class="toc-href" href="#stats" title="Questions About Release Statistics">Questions About Release Statistics</a><ul><li><a class="toc-href" href="#downloads" title="Is there any way to measure how many times XYZ has been downloaded?">Is there any way to measure how many times XYZ has been downloaded?</a></li></ul></li></ul></li></ul></div>
 <h1 id="policy">Release Policy<a class="headerlink" href="#policy" title="Permalink">&para;</a></h1>
 <h2 id="release-definition">Definition of "release"<a class="headerlink" href="#release-definition" title="Permalink">&para;</a></h2>
 <p>Generically, a release is anything that is published beyond the group
@@ -425,8 +423,8 @@ or required policy directives.</p>
 <li><em>ASF Licensing Policy</em> (curated by Legal Affairs, applies to both released
 and unreleased code)</li>
 </ul>
-<h1 id="releases">Release FAQ<a class="headerlink" href="#releases" title="Permalink">&para;</a></h1>
-<h3 id="why">Why Do We Need a Foundation-Wide Policy?<a class="headerlink" href="#why" title="Permalink">&para;</a></h3>
+<h1 id="releases">Release FAQs<a class="headerlink" href="#releases" title="Permalink">&para;</a></h1>
+<h3 id="why">Why do we need a Foundation-wide policy?<a class="headerlink" href="#why" title="Permalink">&para;</a></h3>
 <p>In the traditional open source development methodology practiced
 at volunteer liability-limiting organizations like Apache, it is necessary to draw
 clear distinctions between public resources that represent works "in-progress"
@@ -451,7 +449,7 @@ discouraged without prior, explicit board approval.  Do note however that organi
 we prefer robust, reviewable decision-making over efficient decision-making, so if you
 are thinking of proposing an alternative process for the board to consider, be sure
 your targets reflect this.</p>
-<h3 id="what">What Is A Release?<a class="headerlink" href="#what" title="Permalink">&para;</a></h3>
+<h3 id="what">What is a release?<a class="headerlink" href="#what" title="Permalink">&para;</a></h3>
 <p>Releases are, by definition, anything that is published beyond the group
 that owns it. In our case, that means any publication outside the group of
 people on the product dev list. If the general public is being instructed
@@ -478,7 +476,7 @@ tools to build a compiled version of the source. In all such cases, the
 binary/bytecode package must have the same version number as the source
 release and may only add binary/bytecode files that are the result of
 compiling that version of the source code release.</p>
-<h3 id="release-types">How Do The Types Of Apache Software Distribution Differ?<a class="headerlink" href="#release-types" title="Permalink">&para;</a></h3>
+<h3 id="release-types">How do the types Of Apache software distribution differ?<a class="headerlink" href="#release-types" title="Permalink">&para;</a></h3>
 <ul>
 <li>
 <p><strong>Test Packages</strong> are not Apache releases. All releases require due
@@ -555,13 +553,10 @@ Releases may not be vetoed. Before voting +1 PMC members are required
 to download the signed source code package, compile it as provided, and test the
 resulting executable on their own platform, along with also verifying that the
 package meets the requirements of the ASF policy on releases.</p>
-<h3 id="release-announcements">How Should Releases Be Announced?<a class="headerlink" href="#release-announcements" title="Permalink">&para;</a></h3>
-<p>Please ensure that you wait at least 24 hours after uploading a new release
-before updating the project download page and sending the announcement email(s).
-This is so that mirrors have sufficient time to catch up.  (For time-critical
-security releases, the download pages script supports
-<a href="release-download-pages#less-than-24hr">bypassing</a> this requirement.)</p>
-<p>It is important that people are informed about the availability of new
+<h3 id="release-announcements">How should releases be announced?<a class="headerlink" href="#release-announcements" title="Permalink">&para;</a></h3>
+<p>Please ensure that you wait at least one hour after uploading a new release
+before updating the project download page and sending the announcement email(s).</p>
+<p>It is important to inform people about the availability of new
 releases. Announcements must contain a link to the relevant download page for the source.
 At the very least, emails should be sent out announcing this to
 all appropriate mailing lists. Many top level projects have announcement
@@ -569,16 +564,15 @@ lists for this purpose. There is also an
 <a href="/foundation/mailinglists.html#foundation-announce">ASF-wide</a>
 announcement list which is suitable.</p>
 <p>Please note that you can not post the ASF-wide announcement list without
-the usage of "apache.org" mail address. Also, please make sure that you
-have put 3-5 lines blurb for the project. (because most of the subscribers
-to announce.AT.apache.DOT.org list would not know what is XX-Project,
-generally speaking)</p>
+using an "apache.org" mail address. Also, please make sure that you
+have put a 3-5 lines blurb for the project (because most of the subscribers
+to announce.AT.apache.DOT.org list may not know what XX-Project is).</p>
 <p>It is recommended that an SHA-1 OpenPGP compatible signature is added to
 the announcement mail. Please ensure that your public key has been already
 uploaded to famous pgp sites (e.g. <a href="http://pgp.mit.edu/">http://pgp.mit.edu/</a>). This key should
 either be the one used to sign the release or one that is cross-signed by
 that key.</p>
-<h3 id="best-practice">Is There A Guide To Best Practice?<a class="headerlink" href="#best-practice" title="Permalink">&para;</a></h3>
+<h3 id="best-practice">Is there a guide to best practices?<a class="headerlink" href="#best-practice" title="Permalink">&para;</a></h3>
 <p>See the Incubator <a href="http://incubator.apache.org/guides/releasemanagement.html#best-practice">release management
 guide (draft)</a>.
 Alternatively, see the "How to release" developer documentation of any
@@ -599,26 +593,22 @@ files (especially binary files) is not feasible.  So, basically, "Yes".</p>
 <p><em>Note: This answer refers to the process used to produce a release artifact
 from a source control tag.  It does not refer to testing that artifact for
 technical quality.</em></p>
-<h2 id="mirroring">Release Distribution and Mirroring Questions<a class="headerlink" href="#mirroring" title="Permalink">&para;</a></h2>
+<h2 id="mirroring">Release Distribution Questions<a class="headerlink" href="#mirroring" title="Permalink">&para;</a></h2>
 <h3 id="host-rc">Where can we host test packages (nightly builds and release candidates)?<a class="headerlink" href="#host-rc" title="Permalink">&para;</a></h3>
 <p>Test packages are for use by consenting developers and interested community
 members only, so they should not be hosted or linked on pages intended for end
-users.  They should not be mirrored; only blessed GA releases should be
-mirrored.</p>
+users, or released using a <code>closer.lua</code> script.</p>
 <p>Projects should use the
 <a href="https://dist.apache.org/repos/dist/dev"><code>/dev</code> tree of the <code>dist</code> repository</a>
 or the staging features of repository.apache.org
 to host release candidates posted for developer testing/voting (prior to being,
 potentially, formally blessed as a GA release).</p>
-<p>Nightly Builds that are not release candidates, can be hosted at <a href="https://ci.apache.org/projects">ci.apache.org projects area</a>,
+<p>Nightly Builds that are not release candidates can be hosted at <a href="https://ci.apache.org/projects">ci.apache.org projects area</a>,
 just file an INFRA ticket.</p>
 <h3 id="host-GA">Where can we host public (GA) releases?<a class="headerlink" href="#host-GA" title="Permalink">&para;</a></h3>
-<p>Current releases must be served from the ASF mirroring system by placing them under
+<p>Current releases must be served from the ASF condent distribution system by placing them under
 <code>https://downloads.apache.org/</code> (see <a href="#upload-ci">How do I upload a release?</a>).</p>
-<p>Project download
-pages must link to the mirrors and not to the main Apache Web site; see
-<a href="/dev/release-download-pages">instructions for creating download pages</a> for
-further details.
+<p>Project download pages must use a <code>closer.lua</code> script and not link directly to the main Apache Web site; see <a href="https://infra.apache.org/release-download-pages.html" target="_blank">instructions for creating download pages</a> for further details.
 The website documentation for the software must contain a link to the download page for the source.</p>
 <p>Project websites (<code>http:// {project}.apache.org</code>),
 VMs (<code>http:// {project}.zones.apache.org</code> and <code>http://{project}-vm.apache.org</code>),
@@ -626,22 +616,18 @@ and source control repositories (<code>svn.apache.org</code> and Git repositorie
 may not be used to distribute releases --- that is, releases should not be
 downloaded from them.</p>
 <h3 id="archived">How are releases archived?<a class="headerlink" href="#archived" title="Permalink">&para;</a></h3>
-<p>All releases must be archived on <a href="http://archive.apache.org/dist/">http://archive.apache.org/dist/</a>.</p>
+<p>All releases are archived on <a href="http://archive.apache.org/dist/">http://archive.apache.org/dist/</a>.</p>
 <p>An automated process adds releases to the archive about a day after
 they first appear on to <a href="https://downloads.apache.org/">https://downloads.apache.org/</a>.
-Once a release
-is placed under <code>https://downloads.apache.org/</code> it will automatically be copied over
-to <code>http://archive.apache.org/dist/</code> and held there permanently, even after it is deleted
-from <code>https://downloads.apache.org/</code>.</p>
-<p>If you have (legacy?) releases that never got archived,
-ask infra to copy them to <code>http://archive.apache.org/dist/</code>.</p>
-<h3 id="when-to-archive">When Should An Old Release Be Archived?<a class="headerlink" href="#when-to-archive" title="Permalink">&para;</a></h3>
+Once a release is placed under <code>https://downloads.apache.org/</code> it will automatically be copied over
+to <code>http://archive.apache.org/dist/</code> and held there permanently, even after it is deleted from <code>https://downloads.apache.org/</code>.</p>
+<p>If you have (legacy?) releases that never got archived, ask infra to copy them to <code>http://archive.apache.org/dist/</code>.</p>
+<h3 id="when-to-archive">When should an old release be archived?<a class="headerlink" href="#when-to-archive" title="Permalink">&para;</a></h3>
 <p><code>downloads.apache.org</code> should contain <em>the latest release in each branch
 that is currently under development</em>. When development ceases on a version
 branch, releases of that branch should be removed from the project's download
 directory.</p>
-<p>(If the project uses svnpubsub,
-this is done by deleting the artifacts from
+<p>(If the project uses svnpubsub, delete the artifacts from
 <code>https://dist.apache.org/repos/dist/release/&lt;TLP name&gt;/</code>.)</p>
 <p>For example, if Apache Foo 1.2.x is a newer release in the same line as
 Foo 1.1.a, then 1.1.a should be removed when 1.2.x is released.
@@ -653,9 +639,8 @@ parallel, then it is acceptable to serve both 1.1.a and 1.2.x from <code>/dist</
 <p>By committing your release tarballs to the appropriate subdirectory (i.e. TLP name) of the
 <a href="https://dist.apache.org/repos/dist/release/"><code>https://dist.apache.org/repos/dist/release/</code></a>
 repository.  Our synchronization process will push the files to <a href="https://downloads.apache.org/">the master
-mirror site</a> within 15 minutes.  The 24-hour wait for
-mirrors is still required though (as <a href="../info/how-to-mirror">mirrors use an 1/N-daily
-rsync</a> to catch up with the <code>dist/</code> tree).</p>
+download site</a> within 15 minutes.</p>
+<p>Wait about an hour after uploading a new release before updating the project download page.</p>
 <p>The repository directory
 <code>https://dist.apache.org/repos/dist/release/&lt;TLP name&gt;/</code>
 is for <strong>official releases only</strong>, i.e. archives (+ sigs, hashes) that have been approved
@@ -667,8 +652,8 @@ To get this set up, please open a JIRA ticket at the <a href="https://issues.apa
 <p>There is also a development area under
 <code>https://dist.apache.org/repos/dist/dev/&lt;TLP name&gt;/</code>
 which can be used for development releases.
-For example snapshots and release candidates can be stored here.  One important item to note,
-is that this directory does not get published to the mirrors via svnpubsub.  It is intended to
+For example snapshots and release candidates can be stored here.  One important item to note
+is that this directory does not get published to the content distribution system via svnpubsub.  It is intended to
 act as a staging location in preparation for the release to become official.</p>
 <p>All committers on a project can write to the dist/dev area for the project.</p>
 <p>If used for release candidates, then following a successful vote, the
@@ -677,13 +662,11 @@ in order to publish them.</p>
 <p>Commit mails to the <code>dist/</code> repository go to your normal project mailing lists.</p>
 <h3 id="heads-up">Do I need to talk to Infrastructure before distributing a release?<a class="headerlink" href="#heads-up" title="Permalink">&para;</a></h3>
 <p>Most projects can just distribute a release as described in the previous two
-questions.  However, releases that are likely to strain the mirroring and
-download resources <strong>must</strong> be coordinated with infrastructure.</p>
-<p>Releases of more than 1GB of artifacts require a heads-up to Infrastructure in
-advance.</p>
+questions.  However, releases that are likely to strain content distribution resources <strong>must</strong> be coordinated with infrastructure.</p>
+<p>Releases of more than 1GB of artifacts require a heads-up to Infrastructure in advance.</p>
 <p>Specific exemptions from other dist policies (such as what may or must or must
-not be distributed via the mirrors) also need to be coordinated with Infrastructure.</p>
-<h3 id="build-directories">Which Directory For What Build?<a class="headerlink" href="#build-directories" title="Permalink">&para;</a></h3>
+not be distributed via the content distribution system) also need to be coordinated with Infrastructure.</p>
+<h3 id="build-directories">Which Directory for what build?<a class="headerlink" href="#build-directories" title="Permalink">&para;</a></h3>
 <table class="table">
 <thead>
 <tr>
@@ -704,27 +687,27 @@ not be distributed via the mirrors) also need to be coordinated with Infrastruct
 <td>Older Releases</td>
 <td>archive.apache.org/dist</td>
 </tr></tbody></table>
-<h3 id="how-to-archive">How Is An Old Release Moved To The Archives?<a class="headerlink" href="#how-to-archive" title="Permalink">&para;</a></h3>
+<h3 id="how-to-archive">How is an old release moved to the archives?<a class="headerlink" href="#how-to-archive" title="Permalink">&para;</a></h3>
 <p><code>downloads.apache.org</code> is automatically archived. Therefore, a copy of an
 official release will already exist in the archives. To move a release to
 the archives, just delete the copy in your project's dist directory. Remember to
 update any links from the download page.</p>
-<h3 id="maven-artifacts">How do I release Maven Artifacts?<a class="headerlink" href="#maven-artifacts" title="Permalink">&para;</a></h3>
-<p>See the <a href="/dev/publishing-maven-artifacts.html">Publishing Maven
-Releases</a> guide.</p>
-<h2 id="license">Release Licensing Questions<a class="headerlink" href="#license" title="Permalink">&para;</a></h2>
+<h3 id="maven-artifacts">How do I release Maven artifacts?<a class="headerlink" href="#maven-artifacts" title="Permalink">&para;</a></h3>
+<p>See the guide to <a href="https://infra.apache.org/publishing-maven-artifacts.html" target="_blank">Publishing Maven
+Releases</a>.</p>
+<h2 id="license">Release licensing questions<a class="headerlink" href="#license" title="Permalink">&para;</a></h2>
 <p>Please read <a href="apply-license">Applying the Apache License, Version
 2.0</a> and check the <a href="/licenses/">Apache Licenses</a> and
 <a href="/legal/">Apache Legal</a> pages for current information.</p>
-<h3 id="which-files-contain-license">Which Files Must Contain An ASF License Text?<a class="headerlink" href="#which-files-contain-license" title="Permalink">&para;</a></h3>
+<h3 id="which-files-contain-license">Which files must contain an ASF license text?<a class="headerlink" href="#which-files-contain-license" title="Permalink">&para;</a></h3>
 <p>Every source file must contain the appropriate ASF License text.</p>
-<h3 id="full-copy-for-each-source-file">Is A Full Copy Of The License Required In Each Source File?<a class="headerlink" href="#full-copy-for-each-source-file" title="Permalink">&para;</a></h3>
+<h3 id="full-copy-for-each-source-file">Is a full copy of the license required in each source file?<a class="headerlink" href="#full-copy-for-each-source-file" title="Permalink">&para;</a></h3>
 <p>In short, only one copy of the license is needed per distribution. This
 full license file should be placed at the root of the distribution in a
 file named LICENSE. For software developed at the ASF, each source file
 need only contain the <a href="/legal/src-headers.html#headers">boilerplate
 notice</a>.</p>
-<h3 id="attribution-notices">Where Is The Right Place For Attribution Notices?<a class="headerlink" href="#attribution-notices" title="Permalink">&para;</a></h3>
+<h3 id="attribution-notices">Where is the right place for attribution notices?<a class="headerlink" href="#attribution-notices" title="Permalink">&para;</a></h3>
 <p>The new license allows for a NOTICE file that contains such attribution
 notices (including the Apache attribution notice). Read
 <a href="/legal/src-headers.html#notice">this</a>.</p>
@@ -733,11 +716,11 @@ moved into the file. The NOTICE file must included within the distributed
 next to the LICENSE file.</p>
 <p>Ensure that the standard ASF attribution notice is contained in any new
 NOTICE file created.</p>
-<h3 id="notice-content">What Content Is Appropriate For The NOTICE File?<a class="headerlink" href="#notice-content" title="Permalink">&para;</a></h3>
+<h3 id="notice-content">What content is appropriate for the NOTICE file?<a class="headerlink" href="#notice-content" title="Permalink">&para;</a></h3>
 <p>Read <a href="/legal/src-headers.html#notice">this</a>.</p>
 <p>Only mandatory information required by the product's software licenses. Not
 suitable for normal documentation.</p>
-<h3 id="notice-required">Is A NOTICE File Required For Pure ASF Code?<a class="headerlink" href="#notice-required" title="Permalink">&para;</a></h3>
+<h3 id="notice-required">Is a NOTICE file required for pure ASF code?<a class="headerlink" href="#notice-required" title="Permalink">&para;</a></h3>
 <p>Yes! The NOTICE file must contain the standard ASF attribution, given
 below:</p>
 <pre><code>This product includes software developed at
@@ -748,7 +731,7 @@ The Apache Software Foundation (http://www.apache.org/).
 The official wording was established in section 6C of the
 <a href="/foundation/records/minutes/2006/board_minutes_2006_05_24.txt">board minutes for May 24 2006</a></p>
 <!-- Note: the text was originally added in: r201713 see #INFRA-367 -->
-<h3 id="distributing-code-under-several-licenses">If An Artifact Contains Code Under Several Licenses, Should It Contain Several License Files?<a class="headerlink" href="#distributing-code-under-several-licenses" title="Permalink">&para;</a></h3>
+<h3 id="distributing-code-under-several-licenses">If an artifact contains code under several licenses, should it contain several license files?<a class="headerlink" href="#distributing-code-under-several-licenses" title="Permalink">&para;</a></h3>
 <p>When an artifact contains code under several licenses, the LICENSE file
 should contain details of all these licenses. For each component which is
 not Apache licensed, details of the component should be appended to the LICENSE file.
@@ -756,7 +739,7 @@ The component license itself may also be appended, or it may be stored elsewhere
 artifact with a pointer to it from the LICENSE file, e.g. if the license is long.</p>
 <p><a href="https://svn.apache.org/repos/asf/httpd/httpd/trunk/LICENSE">Here</a> is an
 example showing appended licenses.</p>
-<h3 id="distribute-other-artifacts">What Are The Requirements To Distribute Other Artifacts In Addition To The Source Package?<a class="headerlink" href="#distribute-other-artifacts" title="Permalink">&para;</a></h3>
+<h3 id="distribute-other-artifacts">What are the requirements to distribute other artifacts in addition to the source package?<a class="headerlink" href="#distribute-other-artifacts" title="Permalink">&para;</a></h3>
 <p>ASF releases typically contain additional material together with the source
 package. This material may include documentation concerning the release but
 must contain LICENSE and NOTICE files. As mentioned above, these artifacts
@@ -771,25 +754,8 @@ the jar.</p>
 <a href="#what">here</a> and <a href="#what-must-every-release-contain">here</a> that all
 releases be primarily based on a signed source package.</p>
 <h2 id="stats">Questions About Release Statistics<a class="headerlink" href="#stats" title="Permalink">&para;</a></h2>
-<h3 id="downloads">Is There Any Way To Measure How Many Times XYZ Has Been Downloaded?<a class="headerlink" href="#downloads" title="Permalink">&para;</a></h3>
-<p>Not directly. Files are downloaded from the mirrors. Apache does not
-require mirrors to collect statistics about downloads.</p>
-<p>Counting the hits on the <a href="/dev/release-download-pages.html#download-scripts">download script</a>
-should give a reasonable estimate. Various similar statistics are collected
-by <a href="http://home.apache.org/%7Evgritsenko/">Vadim Gritsenko</a>.</p>
-<p>There's also some logging done by closer.cgi which is stored in:</p>
-<p><a href="https://www-eu.apache.org/dyn/stats/">https://www-eu.apache.org/dyn/stats/</a>
-and
-<a href="https://www-us.apache.org/dyn/stats/">https://www-us.apache.org/dyn/stats/</a></p>
-<p>The columns show:</p>
-<ul>
-<li>timestamp</li>
-<li>part of IP address</li>
-<li>country (estimated)</li>
-<li>URL</li>
-</ul>
-<p>Note that the log just records accesses to the CGI script.
-Such access may not result in a download, and the download may not be completed.</p>
+<h3 id="downloads">Is there any way to measure how many times XYZ has been downloaded?<a class="headerlink" href="#downloads" title="Permalink">&para;</a></h3>
+<p>Visit <a href="https://logging1-he-de.apache.org/stats/" target="_blank">the download stats page</a>.</p>
 
 </div>  </main>
 

@@ -310,17 +310,12 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
   </header>
   <main id="maincontent">
 <div class="container">    <h1 id="how-to-verify">How to verify downloaded files<a class="headerlink" href="#how-to-verify" title="Permalink">&para;</a></h1>
-<p>This page describes how to verify a file, downloaded from a mirror,
-by <a href="#CheckingHashes">checksum</a> or by <a href="#CheckingSignatures">signature</a>.</p>
+<p>This page describes how to verify a file you have downloaded from an Apache product releases page, or from the Apache archive,
+by <a href="#CheckingHashes">checksum</a> or <a href="#CheckingSignatures">signature</a>.</p>
 <p>All official releases of code distributed by the Apache Software Foundation
 are signed by the release manager for the release.
 PGP signatures and SHA/MD5 checksums are available along with the distribution.</p>
-<p>You are encouraged to download the releases from our mirrors.
-Signatures and checksums are only available from
-the official Apache Software Foundation site.
-<br/>
-Our download pages point you to the mirrors for releases and
-to the official site for signatures and checksums.</p>
+<p>Signatures and checksums are only available from the official Apache Software Foundation site.</p>
 <h2 id="CheckingHashes">Checking Hashes<a class="headerlink" href="#CheckingHashes" title="Permalink">&para;</a></h2>
 <p>File hashes are used to check that a file has been downloaded correctly.
 They do not provide any guarantees as to the authenticity of the file.</p>
@@ -329,7 +324,7 @@ uniquely identifies the <em>contents</em> of the file.
 Two files are (only) equal if their checksums are equal.
 Comparing the checksums of two files is as good as comparing the two files
 themselves.</p>
-<p>There are lots of checksum algorithms ; we use SHA-1, SHA-256, SHA-512 and MD5.
+<p>There are lots of checksum algorithms. We use SHA-256 and SHA-512. MD5 and SHA-1, which may have been used for older releases, are <em>deprecated</em>.
 <br/>
 The download page shows which checksum files
 are available for the <em>original</em> file.</p>
@@ -353,7 +348,7 @@ th  { padding : 5px ; text-align : center ; }
 <th>Mac</th>
 <td></td>
 </tr>
-<tr><th>SHA-1</th><td>certUtil -hashfile <i>file</i> SHA1</td>
+<tr><th>SHA-1 (deprecated)</th><td>certUtil -hashfile <i>file</i> SHA1</td>
 <td>sha1sum <i>file</i></td>
 <td>shasum -a 1 <i>file</i></td>
 <td><i>file</i>.sha1</td>
@@ -368,7 +363,7 @@ th  { padding : 5px ; text-align : center ; }
 <td>shasum -a 512 <i>file</i></td>
 <td><i>file</i>.sha512</td>
 </tr>
-<tr><th>MD5</th><td>certUtil -hashfile <i>file</i> MD5</td>
+<tr><th>MD5 (deprecated)</th><td>certUtil -hashfile <i>file</i> MD5</td>
 <td>md5sum <i>file</i></td>
 <td>md5 <i>file</i></td>
 <td><i>file</i>.md5</td>
@@ -376,9 +371,7 @@ th  { padding : 5px ; text-align : center ; }
 </table>
 </blockquote>
 </div>
-<p>Only if you check the hash can you be certain that your download
-hasn't been modified ; for instance on the mirror - or the download
-itself may be incomplete or faulty.</p>
+<p>Only if you check the hash can you be certain that your download hasn't been modified or is otherwise incomplete or faulty.</p>
 <h2 id="CheckingSignatures">Checking Signatures<a class="headerlink" href="#CheckingSignatures" title="Permalink">&para;</a></h2>
 <p>The following example details how signature interaction works. The example
 is for the Apache HTTP Server project, but applies equally to other ASF
