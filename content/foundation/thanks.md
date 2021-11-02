@@ -139,7 +139,6 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    <h1 style="text-align: center;">Targeted Bronze Sponsors:</h1> <!-- text only -->
    <div class="sponsors">
    <ul id='targetedbronze'>
-      <li><a target="_blank" rel="sponsored" href="http://bintray.com/">Bintray</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.ena.com/">Education Networks of America</a></li>
       <li><a target="_blank" rel="sponsored" href="https://cordova.apache.org/">Friend of Apache Cordova</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.google.com/">Google</a></li>
