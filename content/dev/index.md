@@ -41,8 +41,6 @@ Find information about tools and processes the ASF and its projects use to manag
 - <a href="https://status.apache.org/" target="_blank">Host and service status monitor</a>. Infa has already been alerted if a service shows as
   down.
 
-- <a href="/mirrors/" target="_blank">Status of download mirrors</a>
-
 - <a href="https://infra.apache.org/machines.html" target="_blank">Machine and host list</a> of Apache servers
 
 - <a href="https://infra.apache.org/infra-ban.html" target="_blank">Site-wide ban policy</a>
