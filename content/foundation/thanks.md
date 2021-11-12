@@ -112,6 +112,8 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://www.verizonmedia.com/"><img src="images/verizon_media.jpg"/></a><p style="text-align: center; font-weight: bold;">Verizon Media</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.sonatype.com/nexus/product-overview"><img src="images/Nexus-logo.1.jpg"/></a><p style="text-align: center; font-weight: bold;">Sonatype</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.jetbrains.com/"><img src="images/jetbrains.png"/></a><p style="text-align: center; font-weight: bold;">JetBrains</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://fastly.com/"><img src="images/fastly-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Fastly</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://github.com/"><img src="images/github-platinum.png"/></a><p style="text-align: center; font-weight: bold;">GitHub</p></li>
    </ul>
    </div>
 
