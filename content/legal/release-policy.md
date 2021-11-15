@@ -47,8 +47,8 @@ During the process of developing software and preparing a release, various
 packages are made available to the development community for testing
 purposes. **Projects MUST direct outsiders towards official releases rather
 than raw source repositories, nightly builds, snapshots, release
-candidates, or any other similar packages.** The only people who are
-supposed to know about such developer resources are individuals actively
+candidates, or any other similar packages.**
+Projects SHOULD make available developer resources to support individuals actively
 participating in development or following the dev list and thus aware of the
 conditions placed on unreleased materials.
 
