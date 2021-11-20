@@ -3,43 +3,37 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 ### Apache Developers' & Contributors' Overview {#intro}
 
-These pages provide a directory of technical details pertinent to all Apache projects, for developers,
-committers, release managers and PMC members contributing to any Apache project.
+Here is a directory of technical details pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
 
-If you can't find information here, ask on your project's mailing list, or contact the
-[Community Development](http://community.apache.org/) project's mailing list for more general questions. 
-There are many experienced ASF people who can help.
+If you can't find information here, ask on your project's mailing list, or contact the [Community Development](http://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
 
 - [Infrastructure](#infrastructure)
 - [Committers and Contributors](#committers)
+  - [Pasting data to share with others](#paste)
+  - [URL shortener for committers](#shorten)
 - [Project Management Committees (PMC)](#pmc)
-- [Licenses and Legal Issues](#licenses)
-- [Version Control](#version-control)
-- [Websites](#web)
-- [Releases](#releases)
-- [Issue Tracking](#issues)
-- [Mailing Lists](#mail)
-- [Board of Directors and ASF Governance Overview](/foundation/governance/)
-- [Pasting Data to share with others](#paste)
-- [URL Shortener for Committers](#shorten)
+  - [Version control](#version-control)
+  - [Websites](#web)
+  - [Releases](#releases)
+  - [Issue tracking](#issues)
+  - [Mailing lists](#mail)
+  - [Licenses and legal issues](#licenses)
+- [Board of Directors and ASF Governance](/foundation/governance/)
 
-
-Find information about tools and processes the ASF and its projects use to manage source code, mailing lists, and websites. You can also find how-to guides for committers and Project Management Committees (PMCs).
 
 
 ## Apache Infrastructure  {#infrastructure}
 
 - High-level notes on [Apache Infrastructure](infrastructure.html)
 
-    - More detailed information on <a href="https://infra.apache.org/" target="_blank">services and tools</a> Infra supports for projects
+    - More detailed information on <a href="https://infra.apache.org/" target="_blank">services and tools</a> that the Infrastructure team (Infra) supports for projects
     - <a href="https://cwiki.apache.org/confluence/display/INFRA/Index" target="_blank">Scripts, how-tos, and technical information</a>
 
 - How to become an <a href="https://infra.apache.org/infra-volunteer.html" target="_blank">Infra Volunteer</a>
 
 - <a href="https://infra.apache.org/contact.html" target="_blank">Contacting Infra and requesting resources</a>
 
-- <a href="https://status.apache.org/" target="_blank">Host and service status monitor</a>. Infa has already been alerted if a service shows as
-  down.
+- <a href="https://status.apache.org/" target="_blank">Host and service status monitor</a>. Infa has already been alerted if a service shows as down.
 
 - <a href="https://infra.apache.org/machines.html" target="_blank">Machine and host list</a> of Apache servers
 
@@ -47,30 +41,25 @@ Find information about tools and processes the ASF and its projects use to manag
 
 ## Committers and Contributors  {#committers}
 
--  [How the ASF Works](../foundation/how-it-works.html) (See also [Contact
-Apache FAQ](../foundation/preFAQ.html) and [ASF
-FAQ](../foundation/faq.html) )
+-  [How the ASF works](../foundation/how-it-works.html) (See also [Contact Apache FAQ](../foundation/preFAQ.html) and [ASF FAQ](../foundation/faq.html) )
 
--  [Guide for new project contributors](contributors.html)
+-  [Guide for project contributors](contributors.html)
 
--  [Email etiquette tips for contributors](contrib-email-tips.html) 
+    -  [Email etiquette tips for contributors](contrib-email-tips.html) 
 
--  [Guide for new project committers](new-committers-guide.html) 
+-  [Guide for project committers](new-committers-guide.html) 
 
-    -  How new committers can [publish a personal website](new-committers-guide.html#personal-web-space) 
+    -  How committers can [publish a personal website](new-committers-guide.html#personal-web-space) 
 
--  General [Committers FAQ](committers.html) 
+    -  General [Committers FAQ](committers.html) 
 
--  Crowd funding [Community funding disclaimer](http://community.apache.org/committers/funding-disclaimer.html)
+    -  Crowd funding [Community funding disclaimer](http://community.apache.org/committers/funding-disclaimer.html)
 
 ## Project Management Committees (PMC)  {#pmc}
 
-The project PMC must be involved in any requests for Infrastructure assistance. Remember that PMCs can handle many
-Infrastructure items for themselves.  
+The project PMC must be involved in any requests for Infrastructure assistance. Remember that PMCs can handle many Infrastructure items for themselves. Read the [PMC FAQ](pmc.html).
 
 **Learn how to...**
-
--  ...read the [PMC FAQ](pmc.html) 
 
 -  ...[create an ASF Top-Level Project](project-creation.html) 
 
@@ -84,11 +73,8 @@ Infrastructure items for themselves.
 
 -  ...<a href="https://infra.apache.org/project-site.html" target="_blank">manage your project website</a>
 
-**Learn...**
+Learn [the duties of the PMC Chairs](pmc.html#chair) 
 
--  ...[the duties of the PMC Chairs](pmc.html#chair) 
-
--  ...[about about Legal issues](#licenses) 
 
 ## Licenses, Trademarks, and Legal issues  {#licenses}
 
@@ -171,8 +157,6 @@ they track issues.
 and about [balancing confidentiality and public
 discussion](/foundation/how-it-works.html#confidential).
 
--  [Guide for new project contributors](contributors)
-
 -  [Email etiquette tips for contributors](contrib-email-tips) 
 
 -  How to [moderate Apache mailing lists](committers.html#mail-moderate) 
@@ -192,6 +176,5 @@ Anyone can view the pastes (except those marked 'committers only'), but only com
 
 ## Apache URL Shortener Service  {#shorten}
 
-Infrastructure hosts the [s.apache.org URL shortening service](https://s.apache.org/) 
-for our committers.  When including URLs in PMC reports, please use this service and 
+Infrastructure hosts the [s.apache.org URL shortening service](https://s.apache.org/) for our committers.  When including URLs in PMC reports, please use this service and 
 not other URL shorteners.
