@@ -1,8 +1,6 @@
 Title: Apache Infrastructure
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-*(Follow the Infra team via [Twitter](http://twitter.com/infrabot) or read
-the [team blog](http://blogs.apache.org/infra/) )* 
 
 [TOC]
 
@@ -49,7 +47,7 @@ including the [committers index](http://home.apache.org/committer-index.html) an
 
 -  <a href="http://blogs.apache.org/infra/" target="_blank">Infra's blog</a>
 
--  Become an <a href="https://infra.apache.org/infra-volunteer.html" target="_blank">Become an Infras volunteer</a> 
+-  Become an <a href="https://infra.apache.org/infra-volunteer.html" target="_blank">Become an Infra volunteer</a> 
 
 -  <a href="https://infra.apache.org/contact.html" target="_blank">Report issues and request project
 resources</a> 
