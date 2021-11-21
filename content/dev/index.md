@@ -29,6 +29,7 @@ If you can't find information here, ask on your project's mailing list, or conta
     - More detailed information on <a href="https://infra.apache.org/" target="_blank">services and tools</a> that the Infrastructure team (Infra) supports for projects
     - <a href="https://cwiki.apache.org/confluence/display/INFRA/Index" target="_blank">Scripts, how-tos, and technical information</a>
 
+
 - How to become an <a href="https://infra.apache.org/infra-volunteer.html" target="_blank">Infra Volunteer</a>
 
 - <a href="https://infra.apache.org/contact.html" target="_blank">Contacting Infra and requesting resources</a>
