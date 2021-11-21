@@ -1,7 +1,7 @@
 title: Developer Information
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-### Apache Developers' & Contributors' Overview {#intro}
+### Overview {#intro}
 
 Here is a directory of technical details pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
 
@@ -55,9 +55,9 @@ If you can't find information here, ask on your project's mailing list, or conta
 
     -  Crowd funding [Community funding disclaimer](http://community.apache.org/committers/funding-disclaimer.html)
 
-## Project Management Committees (PMC)  {#pmc}
+## Project Management Committees (PMCs)  {#pmc}
 
-The project PMC must be involved in any requests for Infrastructure assistance. Remember that PMCs can handle many Infrastructure items for themselves. Read the [PMC FAQ](pmc.html).
+The project PMC must be involved in any requests for Infrastructure assistance. Remember that PMCs can handle many infrastructure items themselves. Read the [PMC FAQ](pmc.html).
 
 **Learn how to...**
 
@@ -65,9 +65,9 @@ The project PMC must be involved in any requests for Infrastructure assistance. 
 
 -  ...[choose names for ASF projects and products](project-names.html) 
 
--  ...[make a new committer account request](pmc.html#newcommitter) 
+-  ...[request a new committer account](pmc.html#newcommitter) 
 
--  ...[make a karma request](pmc.html#karma) 
+-  ...[request karma](pmc.html#karma) 
 
 -  ...[report issues and request project resources](infra-contact)
 
@@ -82,20 +82,18 @@ Learn [the duties of the PMC Chairs](pmc.html#chair)
 
 -  [License FAQ](../foundation/license-faq.html) 
 
--  [Legal Policies, Forms, and Information for Apache
-Committers](../legal/#dev-links) 
+-  [Legal policies, forms, and information for Apache Committers](../legal/#dev-links) 
 
--  [ASF Source Header and Copyright Notice
-Policy](../legal/src-headers.html) 
+-  [ASF source header and copyright notice policy](../legal/src-headers.html) 
 
--  ["How-To" guide for assembling `LICENSE` and `NOTICE`](licensing-howto.html) 
+-  ["How-to" guide for assembling `LICENSE` and `NOTICE`](licensing-howto.html) 
 
 -  Rationale of how to [apply the Apache License, Version 2.0](apply-license.html) 
 (descriptive, not policy)
 
--  [Apache Trademark Policy](../foundation/marks/) - for outside parties
+-  [Apache trademark policy](../foundation/marks/) - for outside parties
 
--  [Apache Project Branding Requirements](../foundation/marks/pmcs) - for projects
+-  [Apache project branding requirements](../foundation/marks/pmcs) - for projects
 
 ## Version Control  {#version-control}
 
@@ -117,7 +115,7 @@ How to
 
 -  [Release Policy](/legal/release-policy.html) 
 
--  <a href="https://infra.apache.org/release-distribution.html" target="_blank">Release Distribution Policy</a> 
+-  <a href="https://infra.apache.org/release-distribution.html" target="_blank">Release distribution policy</a> 
 
 -  <a href="https://infra.apache.org/release-publishing.html" target="_blank">Release creation process</a> 
 
@@ -131,16 +129,13 @@ How to
 
 -  How to <a href="https://infra.apache.org/key-transition.html" target="_blank">transition to a longer key</a>
 
-
 -  [Releases from Incubating projects](http://incubator.apache.org/policy/incubation.html#releases) 
 
 ## Issue and Bug Tracking  {#issues}
 
 Each project uses their own [issue tracker](http://issues.apache.org/) to 
-track bugs, requests, and other action items - typically JIRA or BugZilla.
-Every Apache project decides how to track issues, so see each [project
-website](http://projects.apache.org/indexes/quick.html) to find how 
-they track issues.
+track bugs, enhancement requests, and other action items - typically JIRA, BugZilla, or GitHub Issues.
+Every Apache project decides how to track issues, so check the [project website](http://projects.apache.org/indexes/quick.html) of the project in which you are interestaed to learn what they use.
 
 ## Mailing Lists  {#mail}
 
@@ -153,9 +148,7 @@ they track issues.
 - There are [some other non-project](/foundation/mailinglists.html) mailing lists
 (e.g. legal-discuss@ and community@ and various announcement lists).
 
--  [Privacy notes](/foundation/mailinglists.html) about non-public lists
-and about [balancing confidentiality and public
-discussion](/foundation/how-it-works.html#confidential).
+-  [Privacy notes](/foundation/mailinglists.html) about non-public lists and about [balancing confidentiality and public discussion](/foundation/how-it-works.html#confidential).
 
 -  [Email etiquette tips for contributors](contrib-email-tips) 
 
