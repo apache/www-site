@@ -4,61 +4,60 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # Project Management Committee Guide #
 
 This guide outlines the general responsibilities 
-of PMC members in managing their projects and common how-to procedures for 
+of [Project Management Committee](/foundation/how-it-works.html#pmc) (PMC) members in managing their projects and common how-to procedures for 
 day to day maintenance. For a high-level overview of the what and why of PMCs,
-please read the <a href="/foundation/governance/pmcs" target="_blank">PMC Governance overview</a>. 
+read the <a href="/foundation/governance/pmcs" target="_blank">PMC Governance overview</a>. 
 
 ## Contents ##
 
   - [Intended audience](pmc.html#audience)
-  - [What is a PMC?](#what-is-a-pmc)
+  - [What is a PMC?](pmc.html#what-is-a-pmc)
   - [PMC required policies](pmc.html#policy)
-  - [How to perform the duties of the PMC chair](#chair})
-  - [PMC membership management](#pmcmembers)
-  - [Project committer management](#committer-management)
-  - [PMC FAQs and How-Tos](#faq)
+  - [How to perform the duties of the PMC chair](pmc.html#chair})
+  - [PMC membership management](pmc.html#pmcmembers)
+  - [Project committer management](pmc.html#committer-management)
+  - [PMC FAQs and How-Tos](pmc.html#faq)
  
 
 ## Intended Audience  {#audience}
 
-This document is for *PMC members* of ASF projects. A 
-[Project Management Committee](/foundation/how-it-works.html#pmc) (PMC) is responsible for the proper 
+This document is for *PMC members* of ASF projects. A PMC is responsible for the proper 
 [management and oversight of an Apache project][1], and reports directly to the board four times a year.
 Every PMC has a Chairperson, who is also an [officer of the ASF][6] with the title "Vice President, Apache *Projectname*".
 
   - If you are a committer who is not yet a PMC member, you probably want to [read the committers guide](committers.html) instead.
   - If you are not yet a committer but are interested in joining an Apache project, please start at the [Contributors Tech Guide](contributors.html).
-  - For more information on how Apache projects are run, see [What makes Apache 
-projects different?](https://blogs.apache.org/comdev/entry/what_makes_apache_projects_different), 
-the [Apache PMC Governance Overview](/foundation/governance/pmcs.html), 
-and [Project Independence](https://community.apache.org/projectIndependence.html).
+  - For more information on how Apache projects operate, see
+    -   [What makes Apache projects different?](https://blogs.apache.org/comdev/entry/what_makes_apache_projects_different)
+    -   the [Apache PMC governance overview](/foundation/governance/pmcs.html)
+    -   [Project independence](https://community.apache.org/projectIndependence.html)
 
 ## What is a PMC?  {#what-is-a-pmc}
 
 A project management committee (PMC) is a committee of the Apache Software
 Foundation charged with [responsibility and governance][4] for their top level project. The PMC is
-the vehicle through which decisio- making power and responsibility for
+the vehicle through which decision-making power and responsibility for
 oversight devolves to developers.  
 
 While committers on a project have the ability to update the code, only 
 the PMC as a body has the authority to vote on formal releases of the 
 project's software. The PMC is also responsible for voting in new 
-committers and PMC members to the project, as well as following other 
+committers and PMC members to the project, and following other 
 policies as outlined in this document.
 
-## PMC Required Policies  {#policy}
+## PMC required policies  {#policy}
 
-Terms in this section as used as per [RFC2119](https://www.ietf.org/rfc/rfc2119.txt).
+Terms in this section are used as per [RFC2119](https://www.ietf.org/rfc/rfc2119.txt).
 The Board expects all PMCs to understand and comply with these policies.  
 
-#### Report Project Status Quarterly Or When Requested  {#reporting}
+#### Report project status quarterly or when requested  {#reporting}
 
 PMC Chairs / Vice Presidents **SHALL** submit a 
 [report on their project health](/foundation/board/reporting)
 on a quarterly basis to the Board, or when requested by a director. In the 
 absence of the PMC Chair, or at their direction, any other PMC members may write and submit the report.
 
-Similarly, PMC Chairs **SHALL** provide replies to board questions about the PMC report or other project operations **to the board@ mailing list** and will ensure the PMC 
+Similarly, PMC Chairs **SHALL** provide replies to board questions about the PMC report or other project operations **to the board@ mailing list** and **SHALL** ensure the PMC 
 takes any actions required by the board.
 
 PMC Chairs/Vice Presidents have [specific additional duties][2] listed below.
@@ -66,38 +65,38 @@ PMC Chairs/Vice Presidents have [specific additional duties][2] listed below.
 #### Comply with Legal Affairs policies  {#legal-policy}
 
 PMCs **SHALL** ensure that the work on their project and the code that 
-they produce comply with relevant [Legal Affairs Committee](/legal/) 
-policies, including appropriately using the Apache License, handling IP and 
+they produce complies with relevant [Legal Affairs Committee](/legal/) 
+policies, including using the Apache License appropriately, handling IP and 
 copyrights correctly, handling cryptography, and 
 [producing official software releases][3] of their products.
 
-#### Comply with Brand Management policies  {#brand-policy}
+#### Comply with Brand Management policies {#brand-policy}
 
-PMCs **SHALL** ensure that they manage their projects brand and treat 
-all Apache&reg; marks properly as defined both in the overview of  
+PMCs **SHALL** ensure that they manage their projects' brand and treat 
+all Apache&reg; marks properly as defined in the overview of  
 [PMC Branding Responsibilities](/foundation/marks/responsibility) and the [Apache Project Branding Requirements](/foundation/marks/pmcs) 
 for project websites.
 
-#### Responsibly report misuses of Apache brands  {#brand-report}
+#### Responsibly report misuses of Apache brands {#brand-report}
 
 PMCs **SHALL** review use of their Apache project brand by third parties 
-and follow the [Apache Trademark Use Reporting Guidelines](../foundation/marks/reporting.html) when appropriate.
+and follow the [Apache trademark use reporting guidelines](../foundation/marks/reporting.html) when appropriate.
 
 #### Conduct project business on public mailing lists  {#mailing-list-naming-policy}
 
 All technical decisions and the great majority of the work of any PMC should 
-be done on their normal public mailing lists, such as dev@ or user@. Decisions 
-**SHALL NOT** be made in other media, like IRC or face to face at conferences; discussions from such settings must be brought back to the appropriate mailing 
+take place on their normal public mailing lists, such as dev@ or user@. Decisions 
+**SHALL NOT** be made in other media, like IRC, Slack channels, or face to face at conferences; project members should bring proposals arising from such settings back to the appropriate mailing 
 list for all participants to discuss and decide upon.
 
-PMCs **SHOULD** ensure that decision-making processes allow input for a sufficient 
+PMCs **SHOULD** ensure that decision-making processes allow input over a sufficient 
 amount of time - typically at least 72 hours - so that project participants in various time 
 zones have a chance to participate in the decision.
 
 #### Limit project business on private mailing lists  {#mailing-list-private}
 
 All PMCs **SHALL** restrict their communication on
-private mailing lists to **only** issues that [cannot be discussed in public](#private-or-public), such as discussion of:
+private mailing lists **only** to issues that [cannot be discussed in public](#private-or-public), such as discussion of:
 
   - pre-disclosure security problems
   - pre-agreement discussions with third parties that require
@@ -107,32 +106,32 @@ private mailing lists to **only** issues that [cannot be discussed in public](#p
 
 All projects **SHALL** use the name `private@*project*.apache.org` for this
 private list (where *project* is the name of the project). PMC members must 
-maintain the confidentiality of messages on privately archived mailing lists. 
+maintain the confidentiality of messages on privately-archived mailing lists. 
 
 ## How to perform the duties of the PMC chair  {#chair}
 
 See the [definition of PMC and chair](../foundation/how-it-works.html#pmc)
 , and be familiar with the [ASF Bylaws](../foundation/bylaws.html). The  [advice for new PMC chairs]( https://svn.apache.org/repos/private/foundation/officers/advice-for-new-pmc-chairs.txt) has additional useful information.
 
-### Review board meeting minutes about their project ###
-PMC chairs should monitor the minutes of board meetings that are relevant to their 
-project, especially any comments directors make on their project's reports reports, 
-and pass relevant information back to the project PMC, and otherwise 
+### Review board meeting minutes about their project
+PMC chairs should monitor the minutes of board meetings for entries that are relevant to their 
+project, especially any comments directors make on their project's reports, 
+pass relevant information back to the project PMC, and otherwise 
 serve as a conduit for any questions between the board and the PMC.
 
-**Note:** Feedback from the board and the unedited minutes of board meetings is
+**Note:** Feedback from the board and the unedited minutes of board meetings are
 **not** normally public information, and should be treated confidentially.  Only after 
 the board has formally approved the minutes of a meeting (normally the following month) are they published publicly.
 Feedback on meeting minutes is usually sent to the private@ list.
 
-### Ensure the project's quarterly board report is submitted ###
+### Ensure the project's quarterly board report is submitted
 
 While the PMC chair is not required to write the quarterly board report personally, they are 
 responsible for ensuring the report is complete and submitted on time.  
 
   - The reporting schedule is listed in [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt), along with the procedure.
-  - See the [Board Reporting Guidelines And How-To](../foundation/board/reporting) for what the reports should contain. (Note that new PMCs are required to report monthly for the first quarter.)
-  - Project reports are  about the status of the project, together with any community and
+  - See the [Board reporting guidelines and how-to](../foundation/board/reporting) for what the reports should contain. (Note that new PMCs are required to report monthly for the first quarter.)
+  - Project reports are about the status of the project, together with any community and
 legal issues or other general impediments. If there are issues requiring board assistance, make 
 that apparent, separate from any general project news. 
   - You should seek input from your PMC, but it is mainly your report to the board on behalf of your project. The chair does not report
@@ -142,8 +141,8 @@ to the PMC - the chair reports to the board (and ultimately to the ASF membershi
 
 Remember that, as in any committee, the chair is a **facilitator** and their role within the PMC
 is to ensure that everyone has a chance to be heard and to enable meetings and mailing lists 
-to flow smoothly. A well run PMC works together to draw up the information for 
-their board report, but the chair is specifically responsible for getting it to the board.  There is no concept of "leader" in the Apache way.
+to flow smoothly. A well-run PMC works together to draw up the information for 
+their board report, but the chair is specifically responsible for getting it to the board. There is no concept of "leader" in the Apache way.
 
 ### Ensure new committer requests are made ###
 After the project has elected new committers and followed the process to
@@ -156,20 +155,19 @@ NOTICE email to the board, then updating [committee-info.txt](https://svn.apache
  and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmc).
 
 ### Maintain ASF records on the PMC roster ###
-Maintain info about your PMC composition in the SVN "committers" repository
-at [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt) and keep it up-to-date; 
-remember to update the LDAP committee  group as well.
+Maintain information about your PMC's composition in the SVN "committers" repository
+at [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt) and keep it up-to-date. 
+Remember to update the LDAP committee  group as well.
 
 Be aware of anything currently in incubation at
 [incubator.apache.org](https://incubator.apache.org).
 
-### Subscribe to the `board@` mailing list if desired ###
+### Subscribe to the `board@` mailing list if desired
 PMC Chairs are welcome to subscribe to the `board@` mailing list to stay aware of Foundation level issues that may affect 
-their project. This used to be a requirement but the Board made it optional in June 2020. Note that `board@` is a privately
-archived mailing list, so **information from board@ must NOT be forwarded elsewhere**. ; however, as  officers of the ASF, PMC
-Chairs are welcome to subscribe.
+their project. This used to be a requirement, but the Board made it optional in June 2020. Note that `board@` is a privately-
+archived mailing list, so **information from board@ must NOT be forwarded elsewhere**. 
 
-### How To change your PMC's chair  {#newchair}
+### How to change your PMC's chair  {#newchair}
 
 If your PMC wishes to change their VP / Chair, typically you hold 
 a vote or otherwise reach a consensus in the PMC about who the 
@@ -177,31 +175,31 @@ new Chair should be.  Then anyone on the PMC can
 send `board@` an official resolution for the board to approve (or reject) at the next monthly board meeting 
 before this change officially takes place. 
 
-Use the[ Whimsy Board Agenda](https://whimsy.apache.org/board/agenda)
+Use the [Whimsy Board Agenda](https://whimsy.apache.org/board/agenda)
 (requires Apache login) to submit the formal chair change resolution to 
 the next month's board meeting. Log in to the Board Agenda and click the 
 _add item_ button at the bottom to add the appropriate resolution. If your PMC 
 members have difficulty logging into Whimsy, contact the `board@` mailing list for help.
 
-After the board approves the resolution (typically at the next monthly meeting), you must change VP/chair name on the [foundation](../foundation/) website by [editing the top-level website](infra-site.html).
+After the board approves the resolution (typically at the next monthly meeting), you must change the VP/chair name on the [foundation](../foundation/) website by [editing the top-level website](infra-site.html).
 
-### Is a PMC Chair an officer or Member of the ASF? ###
+### Is a PMC Chair an officer or Member of the ASF?
 
-Yes, they are officers of the corporation, and no, they are not "Members". PMC Chairs are appointed by the board to be both the 
+Yes, they are officers of the corporation, and no, they are not "Members". PMC Chairs are appointed by the board to be the 
 Vice President of their top level project and to serve as the Chair of their 
 Project Management Committee. [Read an explanation why PMC Chairs are legal officers of the
 corporation](../foundation/faq.html#why-are-PMC-chairs-officers). 
 
 PMC Chairs/VPs are not necessarily Members of the ASF. Members of 
-a PMC and the Chair/VP have merit within their project, which is different than 
+a PMC and the Chair/VP have merit within their project, which is different from 
 the governance of the ASF as a whole Foundation. Members of the Foundation 
-are essentially [shareholders in the legal corporation][5] that hosts our 100s of 
+are essentially [shareholders in the legal corporation][5] that hosts our hundreds of 
 software projects.
 
 ### How to reply to board feedback on a project's report  {#board-feedback}
 
 The board reads each submitted project report at its monthly meetings, and sometimes 
-individual directors make comments or ask questions in the Whimsy tool of 
+individual directors make comments or ask questions, using the Whimsy tool, in 
 the meeting agenda. Shortly after each month's meeting, the Secretary uses 
 Whimsy to automatically send all comments out to each project's `private@` 
 mailing list and to the PMC chair directly.
@@ -209,9 +207,9 @@ mailing list and to the PMC chair directly.
 Some comments are simple feedback or notes on the report; some comments are 
 specific questions from directors. If there is any question 
 or unusual feedback in this email, the board expects that a PMC member 
-will send areply-all response to `board@`.
+will send a reply-all response to `board@`.
 
-## Why would a project move to the Attic?  {#move-to-attic}
+### Why would a project move to the Attic?  {#move-to-attic}
 
 As described on [its homepage](http://attic.apache.org), the Attic is meant
 to _provide oversight for projects which otherwise would not have oversight_.
@@ -248,10 +246,10 @@ of oversight due to an insufficient number of active PMC members.
 
 Note that going to the Attic is not necessarily a bad thing: it's
 merely a reflection that there isn't currently an **active** community
-to manage the project. It's also a clear way so set the right expectations
+to manage the project. It's also a clear way to set the right expectations
 for users of the project's code.
 
-### How To Perform A PMC Roll Call  {#roll-call}
+### How to perform a PMC roll call  {#roll-call}
 
 The Board sometimes asks for a roll call for projects that fail to
 report regularly, have very little visible activity on their mailing lists
@@ -263,7 +261,7 @@ call, the PMC **must** respond by showing via an email thread that
 are active.
 
 A PMC can do this by each of its active members replying to a thread
-to `board@`, or having one PMC member send a link to a thread on the PMC's
+to `board@`, or by having one PMC member send a link to a thread on the PMC's
 lists where at least three PMC members reply that they are still monitoring
 the project and could assist with creating new releases if needed. **Be sure**
 to let the `board@` mailing list know when at least three PMC members have
@@ -275,7 +273,7 @@ Board meeting can lead to the Board concluding the project is due to
 shut down and move to the [Apache Attic](https://attic.apache.org/)
 for lack of oversight.
 
-See also [why would a project move to the Attic](#move-to-attic), above.
+See also [why would a project move to the Attic?](pmc.html#move-to-attic), above.
 
 ## PMC membership management  {#pmcmembers}
 
@@ -293,12 +291,12 @@ in the [June 2013 board minutes](/foundation/records/minutes/2013/board_minutes_
 under section "[7 G. Amend the Procedure for PMC Membership Changes](https://whimsy.apache.org/board/minutes/PMC_Membership_Change_Process.html)".
 
 **Do NOT** send an unconditional invite to the potential member before the 72 hour [NOTICE] period has expired!
-It would be very awkward if the invite has to be withdrawn if the board objects to it.
+It would be very awkward if the board objects to the invitation and you have to withdraw it.
 
-The PMC Chair, or any other
+The PMC Chair or any other
 PMC member can send this notification if they include a link to the formal PMC decision or a vote thread on their private@ list.
 
-**Ensure the PMC private list is copied - but do not Cc the potential member**. For example:
+**Ensure the PMC private list is copied - but do not CC the potential member**. For example:
 
 ```
 
@@ -316,14 +314,14 @@ The vote result is available here: https://lists.apache.org/...
 ```
 
 The link should be a permalink from the `https://lists.apache.org/` mail archive.
-This allows any member to review the mail vote easily.
+This allows any member to review the mail vote.
 
-If the candidate does not (yet) have an Apache account, note
+If the candidate does not (yet) have an Apache account, include
 that fact in the notification email. 
 
 #### Check the board archive for mail delivery  {#board_archive}
 
-**Note**: e-mail delivery can fail silently. It is **vital** that the PMC Chair checks the board archives to ensure that the NOTICE has
+**Note**: e-mail delivery can fail silently. It is **vital** that the PMC Chair check the board archives to ensure that the NOTICE has
 actually been delivered to the board mailing list.
 
 You can do this by sending a mail to the EZMLM server at `board-index@apache.org` followed by a `board-get.XXX@apache.org` (`XXX` = message number).
@@ -340,7 +338,7 @@ candidate to your PMC -  the PMC Chair needs to:
   - Formally invite the new PMC member (with copy to the private@ list). If they accept, then:
   - Update the **[roster](https://whimsy.apache.org/roster/committee/)**
 with the new PMC member.
-  - This gives access to the PMC-only parts of SVN for the project.
+  - This gives the new PMC member access to the PMC-only parts of SVN for the project.
 
 The new PMC member should now subscribe to your PMC's private@ mailing list in the normal way. 
 
@@ -383,7 +381,7 @@ and to allow a PMC member to request reinstatement simply by asking (note that
 the standard Board notification procedures must still be followed for reinstatement).
 
 Once the PMC member's resignation is received on a mailing list of
-the Foundation, the resignation is considered effective. Hhowever, the
+the Foundation, the resignation is considered effective. However, the
 PMC member has 72 hours to withdraw their resignation. Notifying the board is not required, but
 encouraged to ease tracking.
 
@@ -422,8 +420,7 @@ and any necessary Foundation records to be updated.
    LDAP. A community may wish to keep the person's association for posterity.
    It is also perfectly acceptable to adjust LDAP using **modify_committee.pl**
    and to adjust **[committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)** as appropriate.
- - Feel free to add a page to our [memorial site](/memorials/), using the 
-   [ASF CMS](https://www.apache.org/dev/cms.html#usage). Many communities have
+ - Feel free to add a page to our [memorial site](/memorials/). Many communities have
    gathered eulogies and remembrances.
 
 
@@ -436,32 +433,32 @@ It is the responsibility of each project PMC to review productive contributors
 to their project and consider nominating those contributors as committers, and then 
 voting them in as committers (and possibly PMC members as well). PMCs 
 should be guiding their new committers, to make sure that they have access to the proper resources and ASF documentation (e.g. the [Guide for new
-committers](new-committers-guide.html) or the [Committers'
+committers](new-committers-guide.html) and the [Committers'
 FAQ](committers.html) ). If a productive individual is 
 *already* an Apache committer on another project, you can just 
-[grant them karma to your project](#karma) instead.
+[grant them karma to your project](#karma).
 
 ### How to submit new committer account requests  {#noncommitter}
 
-Most PMCs hold formal votes on committer nominees to decide to invite them,
+Most PMCs hold formal votes on committer nominees to decide whether to invite them,
 although PMCs are free to follow their own documented process for finding 
 consensus on adding new committers.
 
 Once the PMC formally wants to invite an individual to be a committer, 
-you should then invite the person, and require the new committer to 
+it should invite the person, and require the new committer to 
 [submit an Individual Contributor License Agreement (ICLA) to the secretary](/licenses/#clas). 
 The secretary **cannot process new committer accounts** without receiving the CLA acknowledged by the ASF secretary or
 a board member. Your PMC needs to work with the new committer to ensure
 that their CLA is received and recorded properly, so you need to monitor
-the file iclas.txt in the `foundation/officers` repository. Only ASF
+the file `iclas.txt` in the `foundation/officers` repository. Only ASF
 members and officers (PMC chairs) have access. The Apache Phone Book
 has an [Unlisted CLAs](https://home.apache.org/unlistedclas.html) page
-which is generated daily from the iclas.txt file, and recently received CLAs
+which is generated daily from the `iclas.txt` file, and recently received CLAs
 appear there.
 
 Encourage your new committer to include both the PMC name and their desired account ID
 on the submitted ICLA. If both of these pieces of information are provided on the ICLA
-form; and the ICLA is sent to the correct address (`secretary@apache.org`), and the secretary
+form, the ICLA is sent to the correct address (`secretary@apache.org`), and the secretary
 or assistant can verify a [VOTE][RESULT] for the new committer, the account will be requested
 by the person (secretary or assistant) filing the ICLA.
 
@@ -474,13 +471,13 @@ reason, any ASF member can act on their behalf.
 
 **For incubating projects**: If 
 
-  - the podling has its status page set up, 
-  - the podling is identified on the ICLA, 
+  - the podling has its status page set up
+  - the podling is identified on the ICLA
   - a valid account id is provided on the ICLA
   - the podling is listed on the incubator's ProjectProposals page
   - the submitter is named on the project proposal
 
-then the secretary or assistant will request the account. In other cases, the Mentors will request
+the secretary or assistant will request the account. In other cases, the Mentors will request
 the account. If the podling you're requesting accounts for
 doesn't appear in the drop-down list of podlings,
 provide the podling name in the free text input box.
@@ -504,8 +501,8 @@ If the ICLA included the PMC name, normally the account will already have been s
 in the correct LDAP group that will grant access to the project source repository.
 
 If not, the PMC takes over and provides the rest of the infrastructure
-needs. In particular, the PMC chair has the ability to - **and the
-responsibility for** - providing write access to the project's source
+needs. In particular, the PMC chair has the ability **and the
+responsibility** to provide write access to the project's source
 repository.
 
 #### How to grant SVN access (karma) to a project source repository  {#SVNaccess}
@@ -522,18 +519,18 @@ changes to the project groups held in LDAP.
 
 #### Updating LDAP group membership using Whimsy Roster  {#SVNWhimsy}
 
-PMC Chairs (only) may use the [Whimsy roster](https://whimsy.apache.org/roster/committee/) tool,
+PMC Chairs may use the [Whimsy roster](https://whimsy.apache.org/roster/committee/) tool,
 navigate to the committee, and either double click on the person or the plus
 sign to modify or add a person.
 
 #### How to grant karma to incubator podling committers  {#karma-podling}
 
-Podling authorization is managed using LDAP groups, just like PMCs - please use [Whimsy Roster tool to update](#SVNWhimsy).
+Podling authorization is managed using LDAP groups, just like PMCs - use the [Whimsy Roster tool](#SVNWhimsy).
 
 #### How To grant karma to someone who already has an Apache account  {#karma}
 
-In this case, **please contact your PMC first**. All PMC chairs can give an existing
-Apache ID access to their project's repositories. See [how-to above](#SVNaccess).
+In this case, **contact your PMC first**. All PMC chairs can give an existing
+Apache ID access to their project's repositories. See [how-to](#SVNaccess) above.
 For podlings, the PMC is the Incubator.
 
 Chairs may use [Whimsy's roster tool](#SVNWhimsy) to modify their project membership lists.
@@ -619,7 +616,7 @@ There are a number of Apache lists whose archives are not available to the
 public. Posts to these lists are considered
 [confidential](../foundation/how-it-works.html#confidential). Do not quote them on public lists our outside the ASF without the permission of the author.
 
-PMC members may search archives of their project's private@ list. ASF members
+PMC members may search archives of their project's `private@` list. ASF members
 and officers may also read PMC mailing list archives. There
 are several ways to access our private archives:
 
@@ -641,7 +638,7 @@ You can [self-subscribe to mailing lists](https://whimsy.apache.org/committers/s
 
 There are two main ways to check the membership of PMCs and LDAP groups:
 
-  - Committers can view, and PMC chairs can update PMC rosters using 
+  - Committers can view, and PMC chairs can update, PMC rosters using 
 [Whimsy](https://whimsy.apache.org/roster/committee/).
   - Anyone may view Apache Phonebook pages at [https://home.apache.org/phonebook.html](https://home.apache.org/phonebook.html).
 From there you can link to a specific PMC like this: [home.apache.org/phonebook.html?pmc=gump](http://home.apache.org/phonebook.html?pmc=gump)
@@ -658,10 +655,10 @@ See [the Contact Infra roadmap](infra-contact#requesting-action) to request thes
 
 #### Where should we discuss project business?  {#private-or-public}
 
-In almost all cases, project business should happen on that project's publicly archived
+In almost all cases, discussion of project business should happen on that project's publicly archived
 mailing lists - the [detailed policy](#mailing-list-naming-policy) explains the few exceptions.
 
-Any topic which does not specifically need to be private should be discussed on an appropriate public mailing list. This
+Discuss any topic which does not specifically need to be private on an appropriate public mailing list. This
 allows the public to read about the direction of the project and to offer early feedback.
 
 Most projects do their work on their **dev@**_project_.apache.org mailing list. 
@@ -670,9 +667,9 @@ questions, and may have a **general@** mailing list. Every project should have
 a clear [mailing lists page](/foundation/mailinglists.html) that has instructions for subscribing to their lists and 
 for reading the archives.  
 
-#### How To Get Help or Escalate Issues  {#escalation}
+#### How to get help or escalate issues  {#escalation}
 
-Normally, Apache projects are expected to self-manage their affairs; the 
+Normally, Apache projects are expected to manage their own affairs; the 
 people on a PMC and regular committers typically know the best way to 
 work within their project communities.  However, if things don't work 
 well, or the project community has serious policy questions or disagreements 
@@ -682,7 +679,7 @@ The [detailed Escalation Guide](/board/escalation)
 helps communities figure out where to get help from other groups at Apache, 
 or, if all else fails, to ask for help or appeal issues to the Board.  
 The [Apache Organizational Chart](/foundation/governance/orgchart) 
-can help find the right officer or group to ask for help on most issues, 
+can help you find the right officer or group to ask for help on most issues, 
 like legal, branding, press, or the many [other services the ASF offers projects](/board/services).
 
 
