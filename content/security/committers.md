@@ -42,7 +42,7 @@ be subscribed to the list.
 
 Here is a typical process for handling a possible security vulnerability.
 Projects that wish to use other processes **may** do so, but **must** clearly and
-publicly document their process and have security@ review it before they begin using it.
+publicly document their process and have `security@` review it before they begin using it.
 
 **Note**: Do **not** make information about the vulnerability public until it isformally announced at the end of this process. That means, for example, that you should **not** create a Jira ticket to track the issue, since that would make the issue public.
 Messages associated with any commits should **not** make ANY reference to the
@@ -60,7 +60,7 @@ undisclosed security vulnerability in Apache software.
 3. If the report comes to `security@apache.org`, the security team forwards
 it to the project's security list or, if the project does not
 have a security list, to the project's private (PMC) mailing list.
-The security team responds to the original reporter that they have done this.
+The Security Team responds to the original reporter that they have done this.
 
 ### Acknowledge
 
