@@ -44,8 +44,8 @@ Here is a typical process for handling a possible security vulnerability.
 Projects that wish to use other processes **may** do so, but **must** clearly and
 publicly document their process and have `security@` review it before they begin using it.
 
-**Note**: Do **not** make information about the vulnerability public until it isformally announced at the end of this process. That means, for example, that you should **not** create a Jira ticket to track the issue, since that would make the issue public.
-Messages associated with any commits should **not** make ANY reference to the
+**Note**: Do **not** make information about the vulnerability public until it is formally announced at the end of this process. That means, for example, that you should **not** create a Jira ticket to track the issue, since that would make the issue public.
+Messages associated with any commits should **not** make any reference to the
 security nature of the commit.
 
 ### Report
@@ -81,7 +81,7 @@ know that they have accepted the report and that they are working on a fix.
 sending an e-mail with the subject "CVE request for..." to `security@apache.org`, providing a
 short (one-line) description of the vulnerability. `security@apache.org` can
 help determine if a report requires multiple CVE IDs or if multiple reports
-should be merged under a single ID.
+should be merged under a single CVE ID.
 
 9. The ASF security team allocates a CVE ID and sends to the project team a link to the
 internal portal where it can enter details of the
@@ -98,7 +98,7 @@ CVE-2008-2370](http://markmail.org/message/w7mdjdxeqius7d6l). The
 level of detail to include in the report is a matter of
 judgement. Generally, reports should contain enough information to
 enable people to assess the risk the vulnerability poses for
-their own system, and no more. Announcments do **not** normally include steps to reproduce the vulnerability.
+their own system, and no more. Announcments do not normally include steps to reproduce the vulnerability.
 
 12. The project team provides the reporter with a copy of the fix and the
 draft vulnerability announcement for comment.
@@ -150,7 +150,7 @@ you make clear that the information is not for public disclosure and that you co
 <h2 id="ids">CVE IDs<a class="headerlink" href="#ids" title="Permanent link">&para;</a></h2>
 
 [Common Vulnerabilities and Exposures](https://cve.mitre.org/) (CVE)
-IDs are unique identifiers given to security flaws.  The Apache
+IDs are unique identifiers given to security vulnerabilities.  The Apache
 Security Team is a <a href="https://cve.mitre.org/cve/cna.html">CVE Numbering Authority (CNA)</a> covering all Apache projects and is the only
 group able to allocate IDs to Apache Software Foundation project issues.
 
