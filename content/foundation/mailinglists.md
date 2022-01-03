@@ -132,7 +132,7 @@ For further information, see the
 Archives for public mailing lists are available at a number of locations,
 including:
 
--  [Apache Mail Archives](http://mail-archives.apache.org/mod_mbox/) 
+-  [Apache mail archives](https://lists.apache.org/) 
 
 -  [MarkMail](http://apache.markmail.org/) 
 
