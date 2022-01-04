@@ -26,7 +26,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  Apache Jackrabbit | [Apache Jackrabbit Security Team](mailto:security@jackrabbit.apache.org) |
 |  [Apache Kafka](https://kafka.apache.org/project-security.html)  |  [Apache Kafka Security Team](mailto:security@kafka.apache.org)  |
 |  [Apache Libcloud](https://libcloud.apache.org/security.html) | [Apache Libcloud Security Team](mailto:security@libcloud.apache.org) |
-|  Apache Loggging | [Apache Logging Security Team](mailto:security@logging.apache.org) |
+|  Apache Logging | [Apache Logging Security Team](mailto:security@logging.apache.org) |
 |  Apache Lucene | [Apache Lucene Security Team](mailto:security@lucene.apache.org) |
 |  Apache Metron | [Apache Metron Security Team](mailto:security@metron.apache.org) |
 |  [Apache NiFi](https://nifi.apache.org/security.html)  |  [Apache NiFi Security Team](mailto:security@nifi.apache.org)  |
