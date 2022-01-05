@@ -361,7 +361,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | mck | Mick Semb Wever | [Cassandra](http://cassandra.apache.org), [SkyWalking](http://skywalking.apache.org), [Incubator](http://incubator.apache.org), [Tiles](http://tiles.apache.org) |
 | mduerig | Michael Dürig | [Jackrabbit](http://jackrabbit.apache.org/), [Chemistry](http://chemistry.apache.org/), [Sling](http://sling.apache.org/)|
 | mfranklin | [Matt Franklin](http://twitter.com/mattfranklin) | [Rave](http://rave.apache.org), [Incubator](http://incubator.apache.org) |
-| mgrigorov | [Martin Tzvetanov Grigorov](https://twitter.com/mtgrigorov) | [Isis](http://isis.apache.org/), [Tomcat](http://tomcat.apache.org/), [Wicket](http://wicket.apache.org/) |
+| mgrigorov | [Martin Tzvetanov Grigorov](https://twitter.com/mtgrigorov) | [Avro](http://avro.apache.org/), [Isis](http://isis.apache.org/), [Tomcat](http://tomcat.apache.org/), [Wicket](http://wicket.apache.org/) |
 | michi | [Michael Wechner](http://www.wyona.com/people/michael-wechner/index.html) | [Lenya](http://lenya.apache.org/) ; [Cocoon](http://cocoon.apache.org/)|
 | mikemccand | Michael McCandless |
 | milamber | [Bruno Demion](http://home.apache.org/~milamber/) | [JMeter](http://jmeter.apache.org/) , [CloudStack](http://cloudstack.apache.org/) |
