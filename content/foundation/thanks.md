@@ -19,6 +19,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.namebase.io/"><img src="images/namebase-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Namebase</p></li>
       <li><a target="_blank" rel="sponsored" href="http://pineapplefund.org/"><img src="images/pineapple_fund.png"/></a><p style="text-align: center; font-weight: bold;">Pineapple Fund</p></li>
       <li><a target="_blank" rel="sponsored" href="https://tencent.com/"><img src="images/tencent.png"/></a><p style="text-align: center; font-weight: bold;">Tencent</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.vmware.com/opensource.html"><img src="images/vmware-platinum.png"/></a><p style="text-align: center; font-weight: bold;">VMware</p></li>
       <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
    </ul>
    </div>
@@ -64,6 +65,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.voetbalgokken.nl/bookmakers/">Bookmakers</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.cafe24.com/en/?utm_source=apache&utm_medium=offlink&utm_campaign=mktbuilding-march-2021">Cafe24</a></li>
       <li><a target="_blank" rel="sponsored" href="http://engineering.cerner.com/">Cerner</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://craftercms.org">Crafter CMS</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
       <li><a target="_blank" rel="sponsored" href="https://goread.io/buy-instagram-followers">Goread.io Followers</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
@@ -81,6 +83,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://rx-m.com/">RX-M</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.renre.com/">RenaissanceRe</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.scams.info/">SCAMS.info</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://sentry.io/welcome/">Sentry</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.sevenjackpots.com/">SevenJackpots.com</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.sg.com.mx/">Software Guru DevRel</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.ryrob.com/how-start-blog/">Start a Blog by Ryan Robinson</a></li>
