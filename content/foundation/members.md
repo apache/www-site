@@ -129,6 +129,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | cmccabe | Colin P. McCabe |
 | cmpilato | C. Michael Pilato |
 | cmueller | Christian Müller | [Camel](http://camel.apache.org) |
+| cnauroth | Chris Nauroth | [Hadoop](http://hadoop.apache.org/) , [ZooKeeper](https://zookeeper.apache.org) |
 | coar | Ken Coar | [ApacheCon](http://www.apachecon.com/) , [APR](http://apr.apache.org/) , board , [commons](http://commons.apache.org/) , fund-raising , [httpd](http://httpd.apache.org/) , [httpd-docs](http://httpd.apache.org/docs-project/) , [incubator](http://incubator.apache.org/) , [PHP](http://www.php.net/)|
 | coheigea | Colm Ó hÉigeartaigh |
 | colm | [Colm MacCárthaigh](mailto:colm@(anti-spam)stdlib.net) |
