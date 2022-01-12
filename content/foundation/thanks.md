@@ -35,7 +35,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.confluent.io/"><img src="images/confluent-gold.png"/></a><p style="text-align: center; font-weight: bold;">Confluent</p></li>
       <li><a target="_blank" rel="sponsored" href="http://ibm.com/"><img src="images/ibm.png"/></a><p style="text-align: center; font-weight: bold;">IBM</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/"><img src="images/indeed.png"/></a><p style="text-align: center; font-weight: bold;">Indeed</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://reprisesoftware.com/"><img src="images/reprise.png"/></a><p style="text-align: center; font-weight: bold;">Reprise Software, Inc</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.union-investment.de/"><img src="images/union-gold.png"/></a><p style="text-align: center; font-weight: bold;">Union Investment</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.workday.com/"><img src="images/workday-gold.png"/></a><p style="text-align: center; font-weight: bold;">Workday</p></li>
    </ul>
@@ -62,36 +61,23 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <div class="sponsors">
    <ul id='bronze'>
       <li><a target="_blank" rel="sponsored" href="https://www.bestecasinobonussen.nl/">Bestecasinobonussen.nl</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.voetbalgokken.nl/bookmakers/">Bookmakers</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.cafe24.com/en/?utm_source=apache&utm_medium=offlink&utm_campaign=mktbuilding-march-2021">Cafe24</a></li>
       <li><a target="_blank" rel="sponsored" href="http://engineering.cerner.com/">Cerner</a></li>
       <li><a target="_blank" rel="sponsored" href="https://craftercms.org">Crafter CMS</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
       <li><a target="_blank" rel="sponsored" href="https://goread.io/buy-instagram-followers">Goread.io Followers</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://gundrymd.com/">Gundry MD</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://hostadvice.com/">Host Advice</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.hotwaxsystems.com">HotWax Systems</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.journalreview.org/">Journal Review</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.leovegas.com/en-in/">LeoVegas Indian Online Casino</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.miro-kredit.ch/">Miro-Kredit AG</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://mutuo.ch/">Mutuo Kredit AG</a></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.onlinehollandcasino.net/">Online Holland Casino</a></li>
       <li><a target="_blank" rel="sponsored" href="https://aboutpaf.com/">Paf</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://proprivacy.com/">ProPrivacy</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.purevpn.com/">PureVPN</a></li>
       <li><a target="_blank" rel="sponsored" href="https://rx-m.com/">RX-M</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.renre.com/">RenaissanceRe</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.scams.info/">SCAMS.info</a></li>
       <li><a target="_blank" rel="sponsored" href="https://sentry.io/welcome/">Sentry</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.sevenjackpots.com/">SevenJackpots.com</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.sg.com.mx/">Software Guru DevRel</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.ryrob.com/how-start-blog/">Start a Blog by Ryan Robinson</a></li>
       <li><a target="_blank" rel="sponsored" href=" https://www.tii.ae/">Technology Innovation Institute</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://thebestvpn.com/">The Best VPN</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.theblogstarter.com/">The Blog Starter</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.ecosecretariat.org/">The Economic Secretariat</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.top10vpn.com/">Top10VPN</a></li>
       <li><a target="_blank" rel="sponsored" href="http://www.twitter.com/">Twitter</a></li>
       <li><a target="_blank" rel="sponsored" href="https://writersperhour.com">Writers Per Hour</a></li>
    </ul>
