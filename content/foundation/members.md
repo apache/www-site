@@ -15,7 +15,7 @@ of the Foundation's [bylaws](bylaws.html).  A more general description of
 
 Members may choose to move to [emeritus](bylaws.html#4.2) status by sending an email to
 secretary@apache.org, attaching a signed copy of the
-[emeritus request](https://svn.apache.org/repos/private/foundation/emeritus-request.pdf).
+[emeritus request](https://www.apache.org/forms/emeritus-request.pdf).
 They can subsequently submit a new membership application at any time, by notifying secretary@apache.org.
 This will result in their being added to the next new member election.
 
