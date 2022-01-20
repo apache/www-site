@@ -13,11 +13,11 @@ required **policies** and requirements that our PMCs are expected to follow.
 
 ## Services Available To Apache Projects
 
-Please see our [overview of services provided to Apache projects](https://www.apache.org/board/services).
+Please see our [overview of services provided to Apache projects](./services).
 
 ## How To Escalate Concerns Or Problems At The ASF
 
-Read the [guide for how to escalate serious issues](https://www.apache.org/board/escalation) with Apache projects or officers to the appropriate list.
+Read the [guide for how to escalate serious issues](./escalation) with Apache projects or officers to the appropriate list.
 
 ## Apache Project Requirements
 
@@ -41,7 +41,7 @@ and/or to the board.
 
 ### Provide A Quarterly Report To The Board ([Board](https://whimsy.apache.org/foundation/orgchart/board))
 
-  * Projects MUST provide a [quarterly status report to the board](//www.apache.org/foundation/board/reporting).
+  * Projects MUST provide a [quarterly status report to the board](./board/reporting).
 
 ### Follow Software Release Policy ([Legal Affairs](https://whimsy.apache.org/foundation/orgchart/vp-legal), [Infrastructure Team](https://whimsy.apache.org/foundation/orgchart/-admin))
 
@@ -91,8 +91,8 @@ and/or to the board.
     set by the Incubator PMC (IPMC).  Podlings SHOULD be complying with
     all Apache project requirements before graduation.
 
-### Other Notes
+### See Also
 
-See the [source code for this website](https://svn.apache.org/repos/asf/board/site/), 
-and more [general How-To information for Apache contributors](https://www.apache.org/dev/).
+* General [How-To information for Apache contributors](https://www.apache.org/dev/).
+* [Five-year Strategic Plan for the Apache Software Foundation](./ASF-5-year-plan-02-21-2018), from 2018
 

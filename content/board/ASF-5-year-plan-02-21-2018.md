@@ -3,7 +3,7 @@ Slug: plan
 
 **Introduction**
 
-This 5 year plan attempts to quantify the vision and goals for the 
+This 5 year plan (written back in 2018) attempts to quantify the vision and goals for the 
 Apache Software Foundation (ASF) as expressed by the Board of Directors 
 and many of our officers responsible for our corporate operations.
 The Board intends to update this document on a regular basis.
