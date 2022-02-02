@@ -23,22 +23,20 @@ The ASF Infrastructure team, known as "Infra", supports services that help the A
 
 Infra is responsible for the management and day-to-day system administration of the hardware that runs these services. Infra also reviews requests to install new systems or software on the ASF machines.
 
-Infra deploys in production a number of Apache software applications, including:
+Infra uses many Apache software applications, including:
 
 - [HTTP Server (httpd)](http://httpd.apache.org/)
 - [Subversion](http://subversion.apache.org/)
 - [SpamAssassin](http://spamassassin.apache.org/)
 - [Tomcat](http://tomcat.apache.org/)
-- [Traffic Server](http://trafficserver.apache.org/)
-- [mod_perl](http://perl.apache.org/)
 - [Creadur](http://creadur.apache.org/)
-- [Gump](http://gump.apache.org/) and [Continuum](http://continuum.apache.org/)
+- [Gump](http://gump.apache.org/)
+- [Continuum](http://continuum.apache.org/)
 - [STeVe](http://steve.apache.org/)
-- [mod_mbox](http://httpd.apache.org/mod_mbox/)
-- <a href="https://cwiki.apache.org/confluence/display/INFRA/OPIE" target="_blank">Orthrus</a> for one-time password generation
 - [Directory Studio](http://directory.apache.org/studio/)
-- A selection of [in-house projects](https://svn.apache.org/repos/infra/infrastructure/trunk/projects/),
-including the [committers index](http://home.apache.org/committer-index.html) and the [committers URL Shortener](http://s.apache.org/)
+
+Infra also uses and maintains a selection of [in-house projects](https://svn.apache.org/repos/infra/infrastructure/trunk/projects/),
+including the [committers index](http://home.apache.org/committer-index.html) and the [committers' URL Shortener](http://s.apache.org/).
 
 
 ## Useful links  {#infra}
