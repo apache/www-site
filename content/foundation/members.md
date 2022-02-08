@@ -227,6 +227,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | gsingers | [Grant Ingersoll](http://www.grantingersoll.com) | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) , [Mahout](http://lucene.apache.org/mahout) , [Solr](http://lucene.apache.org/solr/)|
 | gstein | [Greg Stein](http://www.lyra.org/greg/) | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [incubator](http://incubator.apache.org/) ; board|
 | gtrasuk | [Greg Trasuk](https://www.trasuk.com/blogs/trasukg/) |
+| gutoveronezi | Daniel Augusto Veronezi Salvador | [CloudStack](http://cloudstack.apache.org) |
 | hadrian | Hadrian Zbarcea |
 | hammant | Paul Hammant |
 | harbs | Gabe Harbater | [Flex](http://flex.apache.org/) |
