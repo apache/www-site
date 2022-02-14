@@ -42,9 +42,11 @@ be subscribed to the list.
 
 Here is a typical process for handling a possible security vulnerability.
 Projects that wish to use other processes **may** do so, but **must** clearly and
-publicly document their process and have `security@` review it before they begin using it.
+publicly document their process and have `security@apache.org` review it before they begin using it.
 
-**Note**: Do **not** make information about the vulnerability public until it is formally announced at the end of this process. That means, for example, that you should **not** create a Jira ticket to track the issue, since that would make the issue public.
+### Work in private
+
+Do **not** make information about the vulnerability public until it is formally announced at the end of this process. That means, for example, that you should **not** create a public Jira ticket to track the issue, or a public GitHub issue, since those would make the issue public.
 Messages associated with any commits should **not** make any reference to the
 security nature of the commit.
 
