@@ -149,11 +149,10 @@ you make clear that the information is not for public disclosure and that you co
 
 <h2 id="ids">CVE IDs<a class="headerlink" href="#ids" title="Permanent link">&para;</a></h2>
 
-[Common Vulnerabilities and Exposures](https://cve.mitre.org/) (CVE)
+[CVE](https://cve.org/)
 IDs are unique identifiers given to security vulnerabilities.  The Apache
-Security Team is a <a href="https://cve.mitre.org/cve/cna.html">CVE Numbering Authority (CNA)</a> covering all Apache projects and is the only
+Security Team is a <a href="https://www.cve.org/ProgramOrganization/CNAs">CVE Numbering Authority (CNA)</a> covering all Apache projects and is the only
 group able to allocate IDs to Apache Software Foundation project issues.
 
 If you believe the details of an issue are described
-incorrectly, see the [CVE
-FAQ](https://cve.mitre.org/about/faqs.html#b12) for how to contact Mitre, the CVE organization, with corrections.
+incorrectly, contact `security@apache.org`.
