@@ -103,16 +103,16 @@ their own system, and no more. Announcments do not normally include steps to rep
 12. The project team provides the reporter with a copy of the fix and the
 draft vulnerability announcement for comment.
 
-1. The project team agrees on the fix, the announcement and the release
+13. The project team agrees on the fix, the announcement and the release
 schedule with the reporter.
 
-13. The project team commits the fix. Do **not** make any reference that the commit relates to a security vulnerability.
+14. The project team commits the fix. Do **not** make any reference that the commit relates to a security vulnerability.
 
-14. The project team creates a release that includes the fix.
+15. The project team creates a release that includes the fix.
 
 ### Announce
 
-15. The project team announces the vulnerability and the fix. The vulnerability
+16. The project team announces the vulnerability and the fix. The vulnerability
 announcement should be sent after, or at the same time as, the release announcement to the
 following destinations.  The internal portal generates texts that can be used for
 the emails and can send the emails if required.
@@ -128,14 +128,14 @@ not have a dedicated security list)
 
 ### Complete
 
-16. The project team updates the project's security pages.
+17. The project team updates the project's security pages.
 
-1. Set the status of the vulerability to 'READY' in the internal portal. This notifies the
+18. Set the status of the vulerability to 'READY' in the internal portal. This notifies the
     security team, which will submit the information to the CVE project.
 
     This is the first point that any information regarding the vulnerability is made public.
 
-1. If the project repository is in Subversion, add the CVE ID to the log for the commit that applied the fix. Do **not** try to do this if your project uses a Git repository, as editing a pushed commit causes all sorts of problems.
+19. If the project repository is in Subversion, add the CVE ID to the log for the commit that applied the fix. Do **not** try to do this if your project uses a Git repository, as editing a pushed commit causes all sorts of problems.
 
 If the project does not have a dedicated `security@project.apache.org`
 mailing list, copy all communication regarding the vulnerability to `security@apache.org`. There is no need to do this for messages
