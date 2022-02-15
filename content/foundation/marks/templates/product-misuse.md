@@ -50,9 +50,9 @@ It has come to our attention that your company may be improperly using our Apach
 
 We trust that this misuse is inadvertent, but we nonetheless must insist that you update your use of Apache trademarks including Apache *PROJECTNAME* in a way that complies with the ASF's trademark policies:
 
->  `http://www.apache.org/foundation/marks/`
+>  `https://www.apache.org/foundation/marks/`
   
->  `http://www.apache.org/foundation/marks/faq/#products`
+>  `https://www.apache.org/foundation/marks/faq/#products`
   
 In particular, we ask that you change:
 
@@ -60,7 +60,7 @@ In particular, we ask that you change:
 
 We trust that you will not take any action that would result in further misuse of Apache *PROJECTNAME*.  The ASF relies on the cooperation of vendors using Apache software to properly utilize Apache trademarks and graphic logos in order to give the independent communities that build our software the credit they deserve.  For more background on the importance of vendor neutrality required of all Apache projects, please see: 
 
->  `http://community.apache.org/projectIndependence`
+>  `https://community.apache.org/projectIndependence`
 
 Please provide written assurance that you will comply with ASF’s policy and guidelines for trademarks and graphic logos and cease this misuse of Apache trademarks within the next 3 weeks (21 days).  If you believe that you have received this letter by mistake and that your use of Apache *PROJECTNAME* does comply with ASF’s policy and guidelines, please provide an email response detailing your compliance instead.
 
@@ -74,4 +74,4 @@ Thank you for your time and respect of Apache trademarks,
 
 > The Apache Software Foundation
 
-> http://*PROJECTNAME*.apache.org
+> https://*PROJECTNAME*.apache.org

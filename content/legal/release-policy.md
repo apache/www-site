@@ -327,17 +327,17 @@ to announce.AT.apache.DOT.org list may not know what XX-Project is).
 
 It is recommended that an SHA-1 OpenPGP compatible signature is added to
 the announcement mail. Please ensure that your public key has been already
-uploaded to famous pgp sites (e.g. http://pgp.mit.edu/). This key should
+uploaded to famous pgp sites (e.g. https://pgp.mit.edu/). This key should
 either be the one used to sign the release or one that is cross-signed by
 that key.
 
 ### Is there a guide to best practices?  {#best-practice}
 
 See the Incubator [release management
-guide (draft)](http://incubator.apache.org/guides/releasemanagement.html#best-practice).
+guide (draft)](https://incubator.apache.org/guides/releasemanagement.html#best-practice).
 Alternatively, see the "How to release" developer documentation of any
 established Apache project.  (The author is familiar with
-[this one](http://subversion.apache.org/docs/community-guide/releasing#release-creating),
+[this one](https://subversion.apache.org/docs/community-guide/releasing#release-creating),
 from this project.)
 
 ### Must releases be built on hardware owned and controlled by the committer?  {#owned-controlled-hardware}
@@ -383,22 +383,22 @@ Current releases must be served from the ASF condent distribution system by plac
 Project download pages must use a `closer.lua` script and not link directly to the main Apache Web site; see <a href="https://infra.apache.org/release-download-pages.html" target="_blank">instructions for creating download pages</a> for further details. 
 The website documentation for the software must contain a link to the download page for the source.
 
-Project websites (`http://  {project}.apache.org`),
-VMs (`http://  {project}.zones.apache.org` and `http://{project}-vm.apache.org`),
+Project websites (`https://  {project}.apache.org`),
+VMs (`https://  {project}.zones.apache.org` and `https://{project}-vm.apache.org`),
 and source control repositories (`svn.apache.org` and Git repositories)
 may not be used to distribute releases --- that is, releases should not be
 downloaded from them.
 
 ### How are releases archived?  {#archived}
 
-All releases are archived on <http://archive.apache.org/dist/>.
+All releases are archived on <https://archive.apache.org/dist/>.
 
 An automated process adds releases to the archive about a day after
 they first appear on to <https://downloads.apache.org/>.
 Once a release is placed under `https://downloads.apache.org/` it will automatically be copied over
-to `http://archive.apache.org/dist/` and held there permanently, even after it is deleted from `https://downloads.apache.org/`.
+to `https://archive.apache.org/dist/` and held there permanently, even after it is deleted from `https://downloads.apache.org/`.
 
-If you have (legacy?) releases that never got archived, ask infra to copy them to `http://archive.apache.org/dist/`.
+If you have (legacy?) releases that never got archived, ask infra to copy them to `https://archive.apache.org/dist/`.
 
 ### When should an old release be archived?  {#when-to-archive}
 
@@ -528,7 +528,7 @@ Yes! The NOTICE file must contain the standard ASF attribution, given
 below:
 
     This product includes software developed at
-    The Apache Software Foundation (http://www.apache.org/).
+    The Apache Software Foundation (https://www.apache.org/).
 
 N.B. Unfortunately versions of this document prior to 2013-01-30 (r1440650) were incorrect, as they used the phrase:
 "developed by" instead of "developed at". 

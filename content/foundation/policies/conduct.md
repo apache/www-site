@@ -68,9 +68,9 @@ Assume good faith; it is more likely that participants are unaware of their bad 
 
 or one of our volunteers:
 
-  * [Mark Thomas](http://home.apache.org/~markt/coc.html)
-  * [Joan Touzet](http://home.apache.org/~wohali/)
-  * [Sharan Foga](http://home.apache.org/~sharan/coc.html)
+  * [Mark Thomas](https://home.apache.org/~markt/coc.html)
+  * [Joan Touzet](https://home.apache.org/~wohali/)
+  * [Sharan Foga](https://home.apache.org/~sharan/coc.html)
 
 
 If the violation is in documentation or code, for example inappropriate pronoun usage or word choice within official documentation, report these privately to the project in question at private@<em>project</em>.apache.org, and, if you have sufficient ability within the project, resolve or remove the concerning material, being mindful of the perspective of the person originally reporting the issue.
@@ -84,12 +84,12 @@ This Code defines __empathy__ as "a vicarious participation in the emotions, ide
 This statement draws on the following for content and inspiration:
 
 
-  * [CouchDB Project Code of conduct](http://couchdb.apache.org/conduct.html)
-  * [Fedora Project Code of Conduct](http://fedoraproject.org/code-of-conduct)
-  * [Speak Up! Code of Conduct](http://speakup.io/coc.html)
+  * [CouchDB Project Code of conduct](https://couchdb.apache.org/conduct.html)
+  * [Fedora Project Code of Conduct](https://fedoraproject.org/code-of-conduct)
+  * [Speak Up! Code of Conduct](https://speakup.io/coc.html)
   * [Django Code of Conduct](https://www.djangoproject.com/conduct/)
-  * [Debian Code of Conduct](http://www.debian.org/vote/2014/vote_002)
+  * [Debian Code of Conduct](https://www.debian.org/vote/2014/vote_002)
   * [Twitter Open Source Code of Conduct](https://github.com/twitter/code-of-conduct/blob/master/code-of-conduct.md)
   * [Mozilla Code of Conduct/Draft](https://wiki.mozilla.org/Code_of_Conduct/Draft#Conflicts_of_Interest)
   * [Python Diversity Appendix](https://www.python.org/community/diversity/)
-  * [Python Mentors Home Page](http://pythonmentors.com/)
+  * [Python Mentors Home Page](https://pythonmentors.com/)

@@ -2,7 +2,7 @@ This directory is for promoting ApacheCon and other ASF-sponsored events.
 
 NOTE: I'm in the process of moving all of this over to
 events.apache.org, so please go look there instead: 
-http://events.apache.org/README.txt
+https://events.apache.org/README.txt
 
 -----------------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 Title: ASF Development Process
-Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
-Notice: http://www.apache.org/licenses/LICENSE-2.0
+Atom: https://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
+Notice: https://www.apache.org/licenses/LICENSE-2.0
 
 # Purpose and Intended Audience #
 
@@ -39,12 +39,12 @@ Agreements](/licenses/#clas) or [Software Grants](/licenses/#grants) , and
 project names are checked for trademark issues. CLAs tend to be for
 individuals who will continue to develop the software, while grants are for
 individuals or companies who will not be direct committers. You can learn
-more about that process at the [Incubator](http://incubator.apache.org/).
+more about that process at the [Incubator](https://incubator.apache.org/).
 
 1. One off code donations can come in through a [software
 grant](/licenses/software-grant.txt). You can see list of such grants at
 the [IP Clearance
-page](http://incubator.apache.org/ip-clearance/index.html).
+page](https://incubator.apache.org/ip-clearance/index.html).
 
 1. Individuals who want to directly contribute to the project sign an
 [Individual Contributor License Agreement](/licenses/icla.txt) (CLA).
@@ -86,7 +86,7 @@ distribution as per the [crypto process](/dev/crypto.html).
 
 New projects arrive at the ASF via the Apache Incubator project. One of the
 steps undergone during the [incubation
-process](http://incubator.apache.org/incubation/Process_Description.html)
+process](https://incubator.apache.org/incubation/Process_Description.html)
 is a check of the project name for trademark issues.
 
 ## Outgoing code ##

@@ -164,7 +164,7 @@ third party to claim any association with the Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third party products, services, or events.**
 
-  [1]: http://community.apache.org/projectIndependence
+  [1]: https://community.apache.org/projectIndependence
   [2]: /foundation/governance/
   [3]: /foundation/marks/faq/#attribution
   [4]: /foundation/marks/domains

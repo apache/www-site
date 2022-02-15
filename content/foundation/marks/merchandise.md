@@ -139,7 +139,7 @@ no affiliation with and does not endorse or review the materials provided at
 this website, which is managed by *YourBigCo*.
 
 This may appear in page footers or in any other appropriate location. The
-"Apache Software Foundation" text should link to http://www.apache.org/ and
+"Apache Software Foundation" text should link to https://www.apache.org/ and
 the "used with permission" should link to this Services Name Branding Requirements
 page.  Note that you **must** have a current written permission from the
 VP, Brand Management or the VP of the relevant Apache project to include the

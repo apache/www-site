@@ -167,7 +167,7 @@ use of an Apache trademark is related to the ASF](#brand)
 
 1. **You have questions about other Apache projects.**
    Use the project's website, or find it through the [project
-   directory](http://projects.apache.org/) to find the project's mailing list.
+   directory](https://projects.apache.org/) to find the project's mailing list.
    Address technical questions to the appropriate
    project's mailing list, and not to any of the general e-mail addresses of the
    ASF.
@@ -184,14 +184,14 @@ use of an Apache trademark is related to the ASF](#brand)
    Each Apache project uses an issue tracker dedicated to their project. The
    best way is to go via that project's web pages. If you still have trouble
    finding it, try finding the project at
-   [projects.apache.org](http://projects.apache.org/) or by browsing
-   [issues.apache.org](http://issues.apache.org/).
+   [projects.apache.org](https://projects.apache.org/) or by browsing
+   [issues.apache.org](https://issues.apache.org/).
 
    <a id="dirs" name="dirs"></a>
 
 1. **Domain ownership lookup/IP address tracing**
    How to: Look up the owner of a domain<small>(such as foo.com)</small>:
-   [http://www.networksolutions.com/cgi-bin/whois/whois](http://www.networksolutions.com/cgi-bin/whois/whois)
+   [https://www.networksolutions.com/cgi-bin/whois/whois](https://www.networksolutions.com/cgi-bin/whois/whois)
    &gt;
    WHOIS database (tells you who owns a domain, such as foo.com).
 

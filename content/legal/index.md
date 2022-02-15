@@ -1,6 +1,6 @@
 Title: ASF Legal
-Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
-Notice: http://www.apache.org/licenses/LICENSE-2.0
+Atom: https://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
+Notice: https://www.apache.org/licenses/LICENSE-2.0
 
 # ASF Legal #
 
@@ -44,7 +44,7 @@ Questions for the Legal Affairs Committee should be raised on
 Most discussions are held on the public 
 [legal-discuss@](/foundation/mailinglists.html#foundation-legal)
 mailing list. See the [legal-discuss@
-archives](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/) 
+archives](https://mail-archives.apache.org/mod_mbox/www-legal-discuss/) 
 for previous discussions.
 
 The Legal Affairs Committee (including VP of Legal Affairs) is staffed exclusively by volunteers 

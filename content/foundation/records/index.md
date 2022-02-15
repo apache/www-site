@@ -104,10 +104,10 @@ Software Foundation
 - Information on [Export Classifications](../../licenses/exports/) and ECCNs of
 Apache products related to cryptography.
 
-- The [Official Foundation blog](http://blogs.apache.org/foundation/) with
+- The [Official Foundation blog](https://blogs.apache.org/foundation/) with
 press releases and other important news.
 
-- The record of and license for [IBM](http://ibm.com/)'s donation of the
+- The record of and license for [IBM](https://ibm.com/)'s donation of the
 XML4J, XML4C, XML4P, and LotusXSL software packages (in
 [PDF](IBM-XML-Licence-Grant.pdf) and [TIFF](IBM-XML-Licence-Grant.tif)
 formats)

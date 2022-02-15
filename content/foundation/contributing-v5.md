@@ -46,7 +46,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 <tr style="border: 1px solid black;">
   <td style="border: 1px solid black; background-color: white; padding: 10px;">
-    <a href=http://apache.org/foundation/sponsorship.html>
+    <a href=https://apache.org/foundation/sponsorship.html>
       <div style="height:100%;width:100%">
         <img border=0 width=235 alt="Sponsor the ASF" src=/images/ASF-Giving-Bars-Sponsor.png>
         <br><br>&nbsp;
@@ -165,7 +165,7 @@ have to offset these costs.
 Remember, of course, that as a volunteer-based organization, the Apache Software
 Foundation stands most in need of volunteers who can work on software,
 documentation, or administrative tasks within each of the [ASF
-projects](http://projects.apache.org/indexes/quick.html). If you have the 
+projects](https://projects.apache.org/indexes/quick.html). If you have the 
 available time to contribute, then that's the best thing you can give - 
 volunteer contributions from both individuals and corporate entities are 
 the lifeblood of the foundation.
@@ -203,11 +203,11 @@ You may also review the latest financial filings and non-profit exemption
 application of The Apache Software Foundation in our [public
 records](records/) section. You may also find other helpful information
 through
-[GuideStar](http://www.guidestar.org/controller/searchResults.gs?action_gsReport=1&npoId=1166096)
+[GuideStar](https://www.guidestar.org/controller/searchResults.gs?action_gsReport=1&npoId=1166096)
 (requires free registration for full access).
 
 More information about non-profits and related issues can be found at the
-[Internet Nonprofit Center](http://www.nonprofits.org/).
+[Internet Nonprofit Center](https://www.nonprofits.org/).
 
 # Talk to someone about supporting the ASF!  {#Fundraising}
 
@@ -258,5 +258,5 @@ selling your vehicle.
 
 You can follow the directions and fill out our online [ASF Car Donation
 Form](/foundation/docs/ASF_Donation_Form.pdf). The donation is handled
-through [Car Program LLC](http://www.donateacar.com/). You may find their
-[frequently asked questions](http://www.donateacar.com/faqs.php) helpful.
+through [Car Program LLC](https://www.donateacar.com/). You may find their
+[frequently asked questions](https://www.donateacar.com/faqs.php) helpful.

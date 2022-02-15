@@ -52,7 +52,7 @@ If you are submitting an ICLA in response to an invitation from a PMC, be sure t
 identify the project via the form field "notify project". Also, choose a preferred ID that
 is not already in use. Apache IDs must start with an alphabetic character and contain
 at least two additional alphanumeric characters (no special characters).
-You can check for IDs in use [here](http://people.apache.org/committer-index.html).
+You can check for IDs in use [here](https://people.apache.org/committer-index.html).
 
 # Software License Grant  {#grants}
 
@@ -62,7 +62,7 @@ When an individual or corporation decides to donate a body of existing
 software or documentation to one of the Apache projects, they need to
 execute a formal [Software Grant Agreement](software-grant-template.pdf) (SGA) with
 the ASF. Typically, they do this after negotiating approval with the ASF
-[Incubator](http://incubator.apache.org/) or one of the PMCs, since the ASF
+[Incubator](https://incubator.apache.org/) or one of the PMCs, since the ASF
 does not accept software unless there is a viable community available to
 support it as part of a collaborative project.
 

@@ -20,7 +20,7 @@ Evolving from the original eight developers (collectively known as "the
 Apache Group") who contributed code enhancements to the NCSA daemon Web
 server, The ASF today is a fully-distributed, non-profit organization
 comprising nearly 300 individual Members and over 2,000 Committers
-[across six continents](http://people.apache.org/map.html).
+[across six continents](https://people.apache.org/map.html).
 
 The ASF's successful
 [collaborative, meritocratic technology and
@@ -45,7 +45,7 @@ networking, hacking, and social opportunities. The conference and
 related events are typically held several times each year, with
 locations alternating between North America, Europe, and Asia. More
 information can be found on the
-[ApacheCon site](http://www.apachecon.com/).
+[ApacheCon site](https://www.apachecon.com/).
 
 ### News and Announcements  {#news}
 
@@ -53,8 +53,8 @@ Official ASF press releases can be found on the
 [ASF News](/foundation/news.html)
 page.  Additional news updates are posted on the
 <!-- blog.apache.org -->
-[TheASF Twitter feed](http://twitter.com/TheASF), 
-the [ApacheCon Twitter feed](http://twitter.com/apachecon), as well as the
+[TheASF Twitter feed](https://twitter.com/TheASF), 
+the [ApacheCon Twitter feed](https://twitter.com/apachecon), as well as the
 [Apache Announce Lists](/foundation/mailinglists.html#foundation-announce).
 
 Please [contact us](mailto:press@apache.org?subject=[Press%20request]%20Please%20send%20news%20information)
@@ -220,7 +220,7 @@ appropriate spokespeople. Journalists on immediate deadline
 **only** -- within eight hours or less on the same business day
 -- may ring Sally Khudairi/HALO Worldwide on +1 617 921 8656 for assistance.
 
-Note: All technical questions or questions about [individual projects](http://projects.apache.org/)
+Note: All technical questions or questions about [individual projects](https://projects.apache.org/)
 should always be directed to the appropriate [project mailing list](/foundation/mailinglists.html),
 and will not be replied to by the Apache Press Team.
 

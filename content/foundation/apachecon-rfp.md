@@ -7,7 +7,7 @@ In early 2012, The Apache Software Foundation requested proposals to prepare, ma
 America. ApacheCon is primarily a conference to support and grow the Apache Community.  The RFP opened on Monday 23rd January
 2012, and was open for 45 days. All submissions had to have been received by 5pm GMT on Thursday 8th March 2012 for
 them to have been considered. Submissions were sent to [rfp@apachecon.com](mailto:rfp@apachecon.com). Following the RFP, 
-[OpenBastion](http://theopenbastion.com/) were selected to produce [ApacheCon North America 2013](http://na.apachecon.com/), 
+[OpenBastion](https://theopenbastion.com/) were selected to produce [ApacheCon North America 2013](https://na.apachecon.com/), 
 which will take place 24th February - 2nd March 2013, in Portland, Oregon.
 
 Details of this past RFP are retained below.

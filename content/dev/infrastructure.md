@@ -25,25 +25,25 @@ Infra is responsible for the management and day-to-day system administration of 
 
 Infra uses many Apache software applications, including:
 
-- [HTTP Server (httpd)](http://httpd.apache.org/)
-- [Subversion](http://subversion.apache.org/)
-- [SpamAssassin](http://spamassassin.apache.org/)
-- [Tomcat](http://tomcat.apache.org/)
-- [Creadur](http://creadur.apache.org/)
-- [Gump](http://gump.apache.org/)
-- [Continuum](http://continuum.apache.org/)
-- [STeVe](http://steve.apache.org/)
-- [Directory Studio](http://directory.apache.org/studio/)
+- [HTTP Server (httpd)](https://httpd.apache.org/)
+- [Subversion](https://subversion.apache.org/)
+- [SpamAssassin](https://spamassassin.apache.org/)
+- [Tomcat](https://tomcat.apache.org/)
+- [Creadur](https://creadur.apache.org/)
+- [Gump](https://gump.apache.org/)
+- [Continuum](https://continuum.apache.org/)
+- [STeVe](https://steve.apache.org/)
+- [Directory Studio](https://directory.apache.org/studio/)
 
 Infra also uses and maintains a selection of [in-house projects](https://svn.apache.org/repos/infra/infrastructure/trunk/projects/),
-including the [committers index](http://home.apache.org/committer-index.html) and the [committers' URL Shortener](http://s.apache.org/).
+including the [committers index](https://home.apache.org/committer-index.html) and the [committers' URL Shortener](https://s.apache.org/).
 
 
 ## Useful links  {#infra}
 
 -  <a href="https://twitter.com/infrabot" target="_blank">Infrabot on Twitter</a>
 
--  <a href="http://blogs.apache.org/infra/" target="_blank">Infra's blog</a>
+-  <a href="https://blogs.apache.org/infra/" target="_blank">Infra's blog</a>
 
 -  <a href="https://infra.apache.org/infra-volunteer.html" target="_blank">Become an Infra volunteer</a> 
 

@@ -56,7 +56,7 @@ In addition, official Apache Project pages and documentation on apache.org must 
 
 ![Per-Project Powered By Logo Example][2]
 
-Logos for individual projects, such as the ones below, are available in jpg, png, and psd format. They can be retrieved by requesting http://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.jpg, or http://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.png, http://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.psd.
+Logos for individual projects, such as the ones below, are available in jpg, png, and psd format. They can be retrieved by requesting https://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.jpg, or https://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.png, https://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.psd.
 
 For example, the Powered by Logo for Apache Tomcat can be retrieved from [poweredBy/pb-tomcat.jpg](poweredBy/pb-tomcat.jpg), [poweredBy/pb-tomcat.png](poweredBy/pb-tomcat.png) and the [poweredBy/pb-tomcat.psd](poweredBy/pb-tomcat.psd)
 
@@ -120,7 +120,7 @@ The new blank template for the “Powered By” logos as well as select project 
 
 # 20th Anniversary Graphics  {#20thgraphics}
 
-High resolution graphical assets for the 20th Anniversary of The Apache Software Foundation are available for use in approved applications only. 20th Anniversary graphics must point to [http://apache.org/](/) . To get them, please contact press(at)apache(dot)org detailing the specifics for your request.
+High resolution graphical assets for the 20th Anniversary of The Apache Software Foundation are available for use in approved applications only. 20th Anniversary graphics must point to [https://apache.org/](/) . To get them, please contact press(at)apache(dot)org detailing the specifics for your request.
 
 ## Official ASF 20th Anniversary Logo
 

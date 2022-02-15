@@ -32,7 +32,7 @@ learn more about the [Legal Affairs Committee](/legal/) if you have questions.
 ## Is Apache software open source? ##
 
 Yes.  The Apache License meets both the Open Source Initiative's (OSI) 
-[Open Source Definition](http://www.opensource.org/docs/osd), and the 
+[Open Source Definition](https://www.opensource.org/docs/osd), and the 
 Free Software Foundation's [definition of "free software"](https://www.gnu.org/licenses/license-list.html#apache2).
 
 These definitions ensure that the Apache license provides certain key freedoms to users of Apache 
@@ -66,10 +66,10 @@ questions on the [project's own email list](/foundation/getinvolved.html).
 Email lists at Apache are also free for anyone to use; we archive them publicly so you can search them for message threads of interest.
 
 
-  [1]: http://httpd.apache.org/
-  [2]: http://hadoop.apache.org/
-  [3]: http://lucene.apache.org/
-  [4]: http://www.openoffice.org/
-  [5]: http://www.apache.org/licenses/
-  [6]: http://projects.apache.org/
-  [7]: http://www.apache.org/foundation/bylaws.html#6.3
+  [1]: https://httpd.apache.org/
+  [2]: https://hadoop.apache.org/
+  [3]: https://lucene.apache.org/
+  [4]: https://www.openoffice.org/
+  [5]: https://www.apache.org/licenses/
+  [6]: https://projects.apache.org/
+  [7]: https://www.apache.org/foundation/bylaws.html#6.3

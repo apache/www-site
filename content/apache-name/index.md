@@ -13,6 +13,6 @@ In “Trillions and Trillions Served”, the 2020 documentary on the ASF, [Brian
 
 On occasion, we have been asked about claims about use of the “Apache” name by the Apache Native American communities. During its twenty-five years of use of “Apache” as part of its name, the ASF has never been involved in any legal dispute with Native American communities or any other party in relation to the use of the “Apache” name.
 
-We are honored that both The Apache Software Foundation and Apache Incubator logos are listed on the [official website of the Apache Nation Chamber of Commerce](http://www.sancarlosapache.com/home.htm).
+We are honored that both The Apache Software Foundation and Apache Incubator logos are listed on the [official website of the Apache Nation Chamber of Commerce](https://www.sancarlosapache.com/home.htm).
 
 For information on using the Apache name in promotions, media, and communications purposes, visit [ASF Marketing and Publicity Resources](/press). For guidelines on using Apache Software Foundation brands, such as references on Websites, books, research, visit the ASF’s Trademarks and Brand Management [Brand Policy](/foundation/marks).           

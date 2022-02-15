@@ -31,4 +31,4 @@ For nontrivial changes make a Pull Request and start a discussion with the stake
 
 For trivial changes commit and let the stakeholders know.
 
-The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation) was not migrated and remains available.
+The [svn history](https://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation) was not migrated and remains available.

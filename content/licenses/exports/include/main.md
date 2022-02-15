@@ -17,12 +17,12 @@ products and technology are re-exported to different parties and places
 around the world. Information on export control classifications and
 associated restrictions may be required for exporting, re-exporting, record
 keeping, bundling/embedding of ASF products, encryption reporting, and
-shipping documentation. You can find more information on U.S. Export Regulations at [http://www.bis.doc.gov/](http://www.bis.doc.gov/).
+shipping documentation. You can find more information on U.S. Export Regulations at [https://www.bis.doc.gov/](https://www.bis.doc.gov/).
 
-The [Bureau of Industry and Security (BIS)](http://bxa.doc.gov/), a branch
+The [Bureau of Industry and Security (BIS)](https://bxa.doc.gov/), a branch
 of the U.S. Department of Commerce, regulates exports through the [Export
 Administration Regulations
-(EAR)](http://www.access.gpo.gov/bis/ear/ear_data.html). The regulations
+(EAR)](https://www.access.gpo.gov/bis/ear/ear_data.html). The regulations
 describe export rules and restrictions on a wide range of commodities,
 technologies, and software. This document is no substitute for
 understanding those regulations; the ASF cannot anticipate how they might
@@ -47,8 +47,8 @@ that the list of embargoed destinations is subject to change and the scope of
 what technology is included in the embargo is specific to each embargoed
 country. For the most current information on U.S. embargoed and sanctioned
 countries, see the U.S. [Export Administration
-Regulations](http://www.access.gpo.gov/bis/index.html) and [Treasury
-Department regulations](http://www.treas.gov/offices/enforcement/ofac/).
+Regulations](https://www.access.gpo.gov/bis/index.html) and [Treasury
+Department regulations](https://www.treas.gov/offices/enforcement/ofac/).
 
 ## Denied Parties Lists  {#denied}
 
@@ -57,12 +57,12 @@ transactions be screened against the U.S. Government listing of prohibited
 end users. Shipments to certain individuals, organizations, or institutions
 who have violated U.S. export laws are prohibited. The United States
 government maintains [export prohibited
-lists](http://www.bis.doc.gov/ComplianceAndEnforcement/ListsToCheck.htm) ,
+lists](https://www.bis.doc.gov/ComplianceAndEnforcement/ListsToCheck.htm) ,
 including but not limited to the [Treasury Department's Specially
 Designated Nationals
-List](http://www.treas.gov/offices/eotffc/ofac/sdn/index.html) and
+List](https://www.treas.gov/offices/eotffc/ofac/sdn/index.html) and
 [Commerce Department's Entity and Denied Persons
-Lists](http://bxa.doc.gov/dpl/Default.shtm).
+Lists](https://bxa.doc.gov/dpl/Default.shtm).
 
 # ASF Product Classification Matrix  {#matrix}
 
@@ -77,17 +77,17 @@ otherwise, that you suffer as a result of using or relying upon such
 information for any purpose.
 
 Each ASF product is
-[classified](http://www.bis.doc.gov/licensing/exportingbasics.htm) with an
+[classified](https://www.bis.doc.gov/licensing/exportingbasics.htm) with an
 Export Control Classification Number (ECCN) if it is believed to correspond
 to an entry in the Commerce Control List (CCL) and subject to the EAR. All
 ASF software is published in a publicly available source code form. Since
 software classified as ECCN 5d002 or 5D992 is [subject to the 
-EAR](http://www.access.gpo.gov/bis/ear/txt/734.txt), all ASF
+EAR](https://www.access.gpo.gov/bis/ear/txt/734.txt), all ASF
 software product versions that do not fit those two classifications are
 noted as ECCN "Not determined" or not included in the matrix.
 
 The ASF exports products classified as [ECCN
-5D002](http://www.access.gpo.gov/bis/ear/txt/ccl5-pt2.txt) under the publicly-available exempton found in EAR Section 742.15(b),
+5D002](https://www.access.gpo.gov/bis/ear/txt/ccl5-pt2.txt) under the publicly-available exempton found in EAR Section 742.15(b),
 which applies to software containing or designed for use with encryption software 
 that is publicly available as open source. Note that exporters other than the
 ASF within the U.S. may or may not be eligible for the publicly-available exemption 

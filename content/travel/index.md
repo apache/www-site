@@ -104,7 +104,7 @@ We're grouped them by project area, applicant background and the like.
 
 # Who are TAC? #
 
-Please see our [official committee listing](http://home.apache.org/phonebook.html?pmc=tac).
+Please see our [official committee listing](https://home.apache.org/phonebook.html?pmc=tac).
 
 # Past Events #
 

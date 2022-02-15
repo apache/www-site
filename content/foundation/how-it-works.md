@@ -1,11 +1,11 @@
-Atom: http://mail-archives.apache.org/mod_mbox/www-community/?format=atom
+Atom: https://mail-archives.apache.org/mod_mbox/www-community/?format=atom
 Title: How the ASF works
-Notice: http://www.apache.org/licenses/LICENSE-2.0
+Notice: https://www.apache.org/licenses/LICENSE-2.0
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
 If you're curious about more governance details, we have a description of [Apache style governance][1].  
-The [Apache Community Development project](http://community.apache.org/) is also 
+The [Apache Community Development project](https://community.apache.org/) is also 
 here to help newcomers find their way around.
 
 </div>
@@ -201,8 +201,8 @@ officers](faq.html#why-are-PMC-chairs-officers).
 
 The [ASF Bylaws](bylaws.html) (section 6.3) define a PMC and the position
 of chair. Some emails help to clarify:
-[here](http://www.mail-archive.com/community@apache.org/msg03961.html) and
-[here](http://www.mail-archive.com/community@apache.org/msg04005.html).
+[here](https://www.mail-archive.com/community@apache.org/msg03961.html) and
+[here](https://www.mail-archive.com/community@apache.org/msg04005.html).
 
 The role of the PMC from a Foundation perspective is oversight. The main
 role of the PMC is not code and not coding, but to ensure that its community addresses all legal
@@ -227,7 +227,7 @@ chair in particular, are eyes and ears of the ASF Board, so we rely on and need 
 The board can to terminate a PMC at any time by resolution.
 
 The [Apache Developer Information][3] pages have more details of how PMCs work.
-A complete [list of all Apache projects](http://projects.apache.org/) is also available.
+A complete [list of all Apache projects](https://projects.apache.org/) is also available.
 
 ### Officers  {#officers}
 
@@ -379,7 +379,7 @@ as the core beliefs behind the foundation:
 - security as a mandatory feature
 
 All ASF projects share these principles.  Similarly, Apache projects 
-must [govern themselves independently](http://community.apache.org/projectIndependence.html) of undue commercial influence.
+must [govern themselves independently](https://community.apache.org/projectIndependence.html) of undue commercial influence.
 
 ### Operation ###
 
@@ -437,7 +437,7 @@ confidentiality.
 # The Foundation Incubator  {#incubator}
 
 To support and encourage new projects, the ASF created the
-[Incubator](http://incubator.apache.org/) to help new
+[Incubator](https://incubator.apache.org/) to help new
 efforts join the foundation.
 
 Since the meritocratic rules operate across the ASF from bottom to top, it

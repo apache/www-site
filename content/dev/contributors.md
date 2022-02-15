@@ -1,4 +1,4 @@
-Atom: http://mail-archives.apache.org/mod_mbox/community-dev/?format=atom
+Atom: https://mail-archives.apache.org/mod_mbox/community-dev/?format=atom
 Title: Guide for new project contributors
 license: https://www.apache.org/licenses/LICENSE-2.0
 

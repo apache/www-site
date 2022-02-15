@@ -38,7 +38,7 @@ Marketing & Publicity
 
 KINDLY NOTE: due to volume, the ASF Marketing & Publicity team are **only** able to assist with issues pertaining to media/analyst activities. Telephone calls received from accredited journalists and industry analysts will be responded to at our earliest opportunity, however, we apologize, are otherwise unable to respond to callers.
 
-For questions pertaining to specific [Apache projects and their communities](http://projects.apache.org/), please contact the Project’s appropriate mailing list (e.g., dev@ for developer-related issues; user@ for user questions, etc.). Some projects also have FAQ’s as well as social media accounts where you may be able to find answers to your questions.
+For questions pertaining to specific [Apache projects and their communities](https://projects.apache.org/), please contact the Project’s appropriate mailing list (e.g., dev@ for developer-related issues; user@ for user questions, etc.). Some projects also have FAQ’s as well as social media accounts where you may be able to find answers to your questions.
 
 ASF Marketing & Publicity are receiving an increasing number of queries pertaining to issues with mobile devices. Please note that the vast majority of Apache projects/software function as "ingredient brands", and are not the final end-user product --as a cook would use eggs in a cake or an omelette, for example. Even if only the Apache License is used, the ASF is not responsible for that product. If you are experiencing difficulty with an app or have a specific performance issue or a security concern with your mobile device or other hardware (desktop, laptop, etc.), you will need to contact the creator of that app/program, your mobile service provider, or the hardware manufacturer’s tech support for assistance.
 
@@ -47,12 +47,12 @@ ASF Marketing & Publicity are receiving an increasing number of queries pertaini
 
 - [ASF Overview](/foundation/) 
 - [List of all Apache projects](https://projects.apache.org/) 
-- [The Apache Incubator](http://incubator.apache.org/) 
+- [The Apache Incubator](https://incubator.apache.org/) 
 - [ASF Sponsorship](/foundation/sponsorship.html) 
 - [Donating to the ASF](/foundation/contributing.html) 
 - [Brand Management](/foundation/marks/) 
-- [Community Development](http://community.apache.org/) 
-- [ApacheCon and Apache events](http://events.apache.org/) 
+- [Community Development](https://community.apache.org/) 
+- [ApacheCon and Apache events](https://events.apache.org/) 
 
 
 # HISTORICAL ARCHIVES  {#historical }
@@ -82,7 +82,7 @@ contrary to the terms of the JSPA.
 -  [Celebrating a Decade of Open Source Leadership](letter_2009_03_25.html)
 - A letter from the Chairman of the ASF commemorating the [10th anniversary
 of the founding of the
-ASF](http://blogs.apache.org/foundation/entry/the_asf_is_ten_years).
+ASF](https://blogs.apache.org/foundation/entry/the_asf_is_ten_years).
 
 # Recent Press Releases  {#links}
 

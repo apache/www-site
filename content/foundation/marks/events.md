@@ -56,7 +56,7 @@ Event branding and event organizers may not claim to be the organizers or sole o
 exclusive, or primary source of information for any Apache project.
 
 Simply *presenting a talk* on an Apache project requires no approval, and is very much
-encouraged! The [Community Development Project](http://community.apache.org/) may be
+encouraged! The [Community Development Project](https://community.apache.org/) may be
 able to help with this. However, you must seek approval when the event name or primary branding
 features Apache marks. Thus, giving a talk on Apache Foo at your local technology
 get-together requires no approval, while organising "An evening with Apache Foo" as
@@ -121,7 +121,7 @@ no affiliation with and does not endorse or review the materials provided at
 this event, which is managed by BigCo.
 
 This may appear in page footers or in any other appropriate location. The
-"Apache Software Foundation" text should link to `http://www.apache.org/` and
+"Apache Software Foundation" text should link to `https://www.apache.org/` and
 the "used with permission" should link to this Event Branding Requirements
 page.
 
@@ -140,7 +140,7 @@ for the brand and event logo.
 
 Event branding may not include the Apache feather in any way. The only permitted use
 of the bare Apache feather on event materials is to provide a
-single link to http://www.apache.org/ as a reference to The Apache Software
+single link to https://www.apache.org/ as a reference to The Apache Software
 Foundation, typically as a Community Partner; or to otherwise refer to
 Apache as a whole.
 
@@ -200,11 +200,11 @@ geographical area, or within three weeks in a different geographical area.
 To ensure that we can approve your request for use of Apache marks, [contact us][contactevents] with early notice of your
 intended timeframe and location to verify no conflicts,
 and then follow up with the specific dates and venue once they are scheduled for final
-approval and to be placed on the Apache [calendar](http://community.apache.org/calendars/conferences.html).
+approval and to be placed on the Apache [calendar](https://community.apache.org/calendars/conferences.html).
 
 The Apache Community Development Committee attempts to track all relevant conference
 dates for the purpose of scheduling and avoiding conflicts. We publish in
-[our calendar](http://community.apache.org/calendars/conferences.html) all conferences
+[our calendar](https://community.apache.org/calendars/conferences.html) all conferences
 run by the ASF, and those approved to make use of ASF marks. Submitting
 advance notice of your proposed event's intended dates and prompt confirmation of your
 scheduled conference dates to `dev@community.apache.org` will ensure this calendar is up to

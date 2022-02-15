@@ -1,15 +1,15 @@
 Title: Apache License v2.0 and GPL Compatibility
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-The [Free Software Foundation](http://www.fsf.org/) 
-[considers](http://www.fsf.org/licensing/licenses/#apache2) the [Apache
+The [Free Software Foundation](https://www.fsf.org/) 
+[considers](https://www.fsf.org/licensing/licenses/#apache2) the [Apache
 License, Version 2.0](/licenses/LICENSE-2.0) to be a
-[free software](http://www.gnu.org/philosophy/free-sw.html) license,
-[compatible](http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses) with
-version 3 of the [GPL](http://www.fsf.org/licensing/licenses/gpl.html). The
-[Software Freedom Law Center](http://www.softwarefreedom.org/) provides
+[free software](https://www.gnu.org/philosophy/free-sw.html) license,
+[compatible](https://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses) with
+version 3 of the [GPL](https://www.fsf.org/licensing/licenses/gpl.html). The
+[Software Freedom Law Center](https://www.softwarefreedom.org/) provides
 [practical
-advice](http://www.softwarefreedom.org/resources/2007/gpl-non-gpl-collaboration.html)
+advice](https://www.softwarefreedom.org/resources/2007/gpl-non-gpl-collaboration.html)
 for developers about including permissively licensed source.
 
 Apache 2 software can therefore be included in GPLv3 projects, because the

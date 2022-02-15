@@ -50,19 +50,19 @@ Here are a number of *external links* that you may find useful in learning about
 
 | Paper or Article Title | Description of why this *external link* is interesting |
 | ----------------- | -------------------------------------------|
-| [FOSSMarks](http://fossmarks.org) | A practical guide to understanding trademarks in the context of Free and Open Source Software projects - an excellent overview |
-| [Practical Trademark Law For FOSS Projects](http://www.slideshare.net/shanecurcuru/practical-trademark-law-for-foss-projects) | Slide deck covering the basics of trademark law as applies to FOSS |
+| [FOSSMarks](https://fossmarks.org) | A practical guide to understanding trademarks in the context of Free and Open Source Software projects - an excellent overview |
+| [Practical Trademark Law For FOSS Projects](https://www.slideshare.net/shanecurcuru/practical-trademark-law-for-foss-projects) | Slide deck covering the basics of trademark law as applies to FOSS |
 | [A Legal Issues Primer for Open Source and Free Software Projects](https://www.softwarefreedom.org/resources/2008/foss-primer.html) | Key overview from a legal perspective about how trademark law applies to free and open source software products |
-| [Passport Without A Visa: Open Source Software Licensing and Trademarks](http://www.ifosslr.org/ifosslr/article/view/11) | Overview of how trademarks and licenses apply to free and open source software projects |
-| [Model Trademark Guidelines](http://modeltrademarkguidelines.org/) | Sample set of legal trademark guidelines for use by FOSS projects or organizations |
-| [OSI Trademark Policy](http://opensource.org/trademark-guidelines) | OSI's own trademark use policy, with good descriptions of different kinds of uses of software-related trademarks |
-| [Open Source License vs. Copyright vs. Trademark - How They Differ](http://twiki.org/cgi-bin/view/Blog/BlogEntry201207x1) | Basic non-legal review of copyright vs. license vs. trademark |
-| [Trademark and OSS](http://www.law.washington.edu/lta/swp/law/trademark.html) | General review of trademark applicability to open source |
+| [Passport Without A Visa: Open Source Software Licensing and Trademarks](https://www.ifosslr.org/ifosslr/article/view/11) | Overview of how trademarks and licenses apply to free and open source software projects |
+| [Model Trademark Guidelines](https://modeltrademarkguidelines.org/) | Sample set of legal trademark guidelines for use by FOSS projects or organizations |
+| [OSI Trademark Policy](https://opensource.org/trademark-guidelines) | OSI's own trademark use policy, with good descriptions of different kinds of uses of software-related trademarks |
+| [Open Source License vs. Copyright vs. Trademark - How They Differ](https://twiki.org/cgi-bin/view/Blog/BlogEntry201207x1) | Basic non-legal review of copyright vs. license vs. trademark |
+| [Trademark and OSS](https://www.law.washington.edu/lta/swp/law/trademark.html) | General review of trademark applicability to open source |
 | [Open For Business: The importance of trademarks, even for an open source business](https://opensource.com/business/11/6/open-business-importance-trademarks-even-open-source-business) | Detailed story of a new project working through defining and registering their trademark |
-| [Trademark Law: An Open-Source Casebook](http://tmcasebook.org/) | University curriculum for trademark law class, focusing on open source use and issues. |
-| [The Rise and Evolution of the Open Source Software Foundation](http://www.ifosslr.org/ifosslr/article/view/64) | Review of importance/growth of OSS foundations |
-| [FLOSS Foundations Directory](http://flossfoundations.org/foundation-directory) | Listing of OSS foundations, also hosts foundations@ mailing list |
-| [How to grow your open source project 10x and revenues 5x](http://openlife.cc/blogs/2010/november/how-grow-your-open-source-project-10x-and-revenues-5x) | Simple study of governance processes of OSS foundations |
+| [Trademark Law: An Open-Source Casebook](https://tmcasebook.org/) | University curriculum for trademark law class, focusing on open source use and issues. |
+| [The Rise and Evolution of the Open Source Software Foundation](https://www.ifosslr.org/ifosslr/article/view/64) | Review of importance/growth of OSS foundations |
+| [FLOSS Foundations Directory](https://flossfoundations.org/foundation-directory) | Listing of OSS foundations, also hosts foundations@ mailing list |
+| [How to grow your open source project 10x and revenues 5x](https://openlife.cc/blogs/2010/november/how-grow-your-open-source-project-10x-and-revenues-5x) | Simple study of governance processes of OSS foundations |
 
 # Selected Trademark Search Websites  {#search}
 
@@ -71,13 +71,13 @@ communities are choosing to register their product name in the US and/or other c
 are just a few of the sites you might use to search for legally registered trademarks.  Pro tip: The <a href="https://www.upcounsel.com/trademark-class-9" target="_blank">Nice Class 9</a> is used
 for most software-related trademarks.
 
- * [USPTO Trademark Search Database](http://www.uspto.gov/trademarks-application-process/search-trademark-database) - official
+ * [USPTO Trademark Search Database](https://www.uspto.gov/trademarks-application-process/search-trademark-database) - official
 US trademark registry.  Tip: when copying links about specific registrations/applications, do **not** use the search link you get - copy
 the "TDSR" blue button link instead.  There are many [more USPTO search tips](/foundation/marks/naming#research-registered-trademarks).
  * [TMView search by OHIM](https://www.tmdn.org/tmview/welcome) - Official search tool for trademarks covering the EU/CTM and parts of Europe.
- * [India Office of Trademarks](http://ipindia.nic.in/tmr_new/default.htm) - official trademark registry of India.
- * [China Trademark Office](http://www.chinatrademarkoffice.com/) - government sanctioned search company for trademarks in China.
- * [Canadian Intellectual Property Office ](http://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/tmSrch.do?lang=eng) - official trademark registry of Canada.
+ * [India Office of Trademarks](https://ipindia.nic.in/tmr_new/default.htm) - official trademark registry of India.
+ * [China Trademark Office](https://www.chinatrademarkoffice.com/) - government sanctioned search company for trademarks in China.
+ * [Canadian Intellectual Property Office ](https://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/tmSrch.do?lang=eng) - official trademark registry of Canada.
 
 
 **IMPORTANT:** *External links* here do not imply endorsement of the content or the author

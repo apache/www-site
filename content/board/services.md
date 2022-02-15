@@ -97,7 +97,7 @@ Example services include: [trademark law resources for developers](https://www.a
 
 ## Legal
 
-The [Legal Affairs Committee](http://www.apache.org/legal) is responsible for
+The [Legal Affairs Committee](https://www.apache.org/legal) is responsible for
 establishing and managing legal policies based on the advice of legal counsel
 and the interests of the Foundation.  You can [contact Legal Affairs](https://www.apache.org/legal/#communications).
 

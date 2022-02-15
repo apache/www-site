@@ -56,7 +56,7 @@ We calculate election results using Meek's Method for STV.  Technical details ar
 
 The STV vote counting proceeds in a loop. The loop returns a name whenever a board candidate captures enough ballots to get elected. The process starts by assigning ballots to the #1 candidate indicated on each ballot. As the counting proceeds, ballots are reallocated. Sometimes it becomes necessary to admit somebody is not going to get elected; at that point, STeVe reallocates their ballots. When a candidate is elected, they takes with them only enough ballots to have gotten them elected; STeVe redistributes their other ballots to the lower-ranked preferences shown on that ballot.
 
-This YouTube video provides a delightful introduction: <a href="https://www.youtube.com/watch?v=l8XOZJkozfI" target="_blank">Politics in the Animal Kingdom: Single Transferable Vote</a>; Here is a shorter <a href="https://youtu.be/Ac9070OIMUg" target="_blank">description of how second, third, etc. place votes are allocated</a>.  Wikipedia has a general overview of <a href="http://en.wikipedia.org/wiki/Single_Transferable_Vote" target="_blank">Single Transferable Voting</a>.
+This YouTube video provides a delightful introduction: <a href="https://www.youtube.com/watch?v=l8XOZJkozfI" target="_blank">Politics in the Animal Kingdom: Single Transferable Vote</a>; Here is a shorter <a href="https://youtu.be/Ac9070OIMUg" target="_blank">description of how second, third, etc. place votes are allocated</a>.  Wikipedia has a general overview of <a href="https://en.wikipedia.org/wiki/Single_Transferable_Vote" target="_blank">Single Transferable Voting</a>.
 
 ## How to decide how to vote on Board candidates
 

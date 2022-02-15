@@ -14,7 +14,7 @@ references on Delaware corporate law.
 As a Delaware membership (non-stock) corporation, the ASF is subject to DE laws:
 
 * [Delaware overview of corporate laws](https://corplaw.delaware.gov/delawares-general-corporation-law/)
-* [Delaware General Corporate Law, Ch. 8](http://delcode.delaware.gov/title8/c001/index.shtml)
+* [Delaware General Corporate Law, Ch. 8](https://delcode.delaware.gov/title8/c001/index.shtml)
 
 The ASF was originally incorporated in 1999:
 
@@ -49,6 +49,6 @@ in-person meetings as well for strategic planning purposes; these are minuted as
 * [Public Records Listing](/foundation/records/)
 * [Bylaws of the ASF](/foundation/bylaws.html)
 * [Board Meeting Calendar And Past Minutes](/foundation/board/calendar.html)
-* [History of Past Directors](http://communityovercode.com/faq/asf-board/)
+* [History of Past Directors](https://communityovercode.com/faq/asf-board/)
 * [How the ASF Works: official documentation](/foundation/how-it-works.html)
 * [How Directors Are Elected](/foundation/governance/meetings#boardvoting)

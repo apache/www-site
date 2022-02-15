@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 On September 2, 2004, the Apache Software Foundation sent the following
 open letter to the mailing list of the [MARID IETF Working
-Group](http://www.ietf.org/html.charters/marid-charter.html).
+Group](https://www.ietf.org/html.charters/marid-charter.html).
 
 ----------
 

@@ -73,7 +73,7 @@ The Apache Incubator has two primary goals:
 - Develop new communities that adhere to the ASF's guiding principles
 
 For more regarding the Apache Incubator, see the [Incubator
-website](http://incubator.apache.org/).
+website](https://incubator.apache.org/).
 
 # Attic  {#attic}
 
@@ -100,7 +100,7 @@ understand how the ASF works so they gain confidence to participate
 more directly.
 
 For more regarding Apache Community Development, see the [Community
-site](http://community.apache.org/).
+site](https://community.apache.org/).
 
 # _Conference Planning_  {#concom}
 

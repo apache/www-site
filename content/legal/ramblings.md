@@ -1,6 +1,6 @@
 Title: Ramblings of an ASF VP of Legal Affairs
-Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
-Notice: http://www.apache.org/licenses/LICENSE-2.0
+Atom: https://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
+Notice: https://www.apache.org/licenses/LICENSE-2.0
 
 <h2 id="head-11cdd06ae562b350659a9d6e8be7f2e44ade68f2">Precession of the
 Perihelion of Mercury</h2>
@@ -13,7 +13,7 @@ coastline of Australia. Wait... what? The [CIA says
 so](https://www.cia.gov/library/publications/the-world-factbook/fields/2060.html)
 , so it must be true. Furthermore, it turns out that the [length of a
 coastline depends on how you measure
-it](http://en.wikipedia.org/wiki/How_Long_Is_the_Coast_of_Britain%3F_Statistical_Self-Similarity_and_Fractional_Dimension).
+it](https://en.wikipedia.org/wiki/How_Long_Is_the_Coast_of_Britain%3F_Statistical_Self-Similarity_and_Fractional_Dimension).
 
 What does that have to do with licensing? Most third party licensing
 questions are of the form:
@@ -50,11 +50,11 @@ universal recipient, at least within the domain of open source. Such code
 can be combined with a wide range of open source code.
 
 The FSF provides us with a [good visual
-aid](http://www.fsf.org/licensing/licenses/quick-guide-gplv3-compatibility.png)
+aid](https://www.fsf.org/licensing/licenses/quick-guide-gplv3-compatibility.png)
 for this. Note how all the arrows are one way.
 
 For us to remain a universal donor, our products must remain
-[antigen](http://en.wikipedia.org/wiki/Antigen) free. This leads naturally
+[antigen](https://en.wikipedia.org/wiki/Antigen) free. This leads naturally
 to the definition of [Category A: Authorized
 Licenses](https://svn.apache.org/repos/asf/infrastructure/site/trunk/archive/legal/3party.mdtext#category-a).
 
@@ -83,10 +83,10 @@ license](https://svn.apache.org/repos/asf/infrastructure/site/trunk/archive/lega
 one.
 
 A concrete example of this is the [Jakarta NT
-Service](http://tomcat.apache.org/tomcat-3.3-doc/NT-Service-howto.html). A
-[JBOSS deployer](http://servicemix.apache.org/jboss-deployer-for-20.html)
+Service](https://tomcat.apache.org/tomcat-3.3-doc/NT-Service-howto.html). A
+[JBOSS deployer](https://servicemix.apache.org/jboss-deployer-for-20.html)
 is another. To borrow a phrase from another aspect of law, as long as there
-is a [substantial non-infringing use](http://www.lectlaw.com/def/i041.htm)
+is a [substantial non-infringing use](https://www.lectlaw.com/def/i041.htm)
 without these plugins, these uses are not only OK, they are positively
 aligned with the goal of being a universal donor. Some care must be taken
 in documenting how this is done, of course.
@@ -100,10 +100,10 @@ emerge.
 
 And just when you think you can get a handle on this, people invent new
 licenses, new
-[clauses](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/200803.mbox/%3c47DEB046.10004@dubioso.net%3e)
+[clauses](https://mail-archives.apache.org/mod_mbox/www-legal-discuss/200803.mbox/%3c47DEB046.10004@dubioso.net%3e)
 , and new
-[exclusions](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/200802.mbox/%3cE1A2049F-5D7B-44F7-A1E3-B9645BC52348@yahoo.com%3e).
-And new [uses](http://markmail.org/message/7no3tdx6nh37stpw).
+[exclusions](https://mail-archives.apache.org/mod_mbox/www-legal-discuss/200802.mbox/%3cE1A2049F-5D7B-44F7-A1E3-B9645BC52348@yahoo.com%3e).
+And new [uses](https://markmail.org/message/7no3tdx6nh37stpw).
 
 ### Approximation 3  {#head-cc4186e2c34505e5dddc5c9b5e40a655cd699e5c}
 
@@ -111,8 +111,8 @@ Asterisks were mentioned above. On a few licenses and uses, the asterisks
 seem to multiply like dandelions. Examples: a column that deals with hard
 dependencies on proprietary products that are distributed free of cost for
 a wide range of uses; and a row that deals with GPL based licenses with
-[classpath](http://www.gnu.org/software/classpath/license.html) or [usage
-as a library](http://www.gnu.org/licenses/lgpl.html) exceptions.
+[classpath](https://www.gnu.org/software/classpath/license.html) or [usage
+as a library](https://www.gnu.org/licenses/lgpl.html) exceptions.
 
 Java and C# are prime examples.
 
@@ -135,7 +135,7 @@ whether or not the ASF endorses any particular standards body. For these
 purposes, any architected interface will do. More simply: are we employing
 or extending the product in the way it was intended?
 
-So [log4j](http://logging.apache.org/log4j/) depending on Java is clearly
+So [log4j](https://logging.apache.org/log4j/) depending on Java is clearly
 OK. It even is clearly marked as such.
 
 When faced with the question of whether or not Hibernate could be
@@ -158,20 +158,20 @@ wanting to use the same product (with obviously the same license) in the
 same manner ends up with the answer that it is OK in one and not OK in the
 other, can there? Actually, it is rare, but possible.
 
-[Lucene.Net](http://incubator.apache.org/lucene.net/) has a hard dependency
-on the [Microsoft.NET Framework](http://msdn.microsoft.com/netframework/).
+[Lucene.Net](https://incubator.apache.org/lucene.net/) has a hard dependency
+on the [Microsoft.NET Framework](https://msdn.microsoft.com/netframework/).
 As described above, that's quite OK. And again, the dependency is clearly
 marked, so those not interested in this podling will simply not
 participate.
 
 On the other hand, changes to httpd to make use of a similar dependency
 would likely result in a fork. For a while, Open Office faced a similar
-[controversy](http://msdn.microsoft.com/netframework/) , and that lead to
+[controversy](https://msdn.microsoft.com/netframework/) , and that lead to
 the mail merge component being rewritten in Python and ultimately may have
 contributed in a small way to the formation of the
-[OpenJDK](http://openjdk.java.net/).
+[OpenJDK](https://openjdk.java.net/).
 
-And, clearly, [Tomcat](http://tomcat.apache.org/) is exactly one such a
+And, clearly, [Tomcat](https://tomcat.apache.org/) is exactly one such a
 "fork". One that is doing quite well. The point here is that there will be
 times when protecting the option to NOT make use of a third party library
 is as important as protecting the option TO make use of a third party
@@ -180,17 +180,17 @@ library.
 ### Approximation 5  {#head-5e199698127bb607e1aa3c52d06ee3fbe390679e}
 
 OK, I'm out of letters. But still not everything quite fits.
-[Santuario](http://santuario.apache.org/) has to deal with
+[Santuario](https://santuario.apache.org/) has to deal with
 [regulations](/licenses/exports/) that aren't
 copyright, patent, or even license related. HTTPD has dealt with a similar
 situation by providing [separate
-downloads](http://httpd.apache.org/download.cgi).
+downloads](https://httpd.apache.org/download.cgi).
 
 The title at the top of this document pays homage to an [observed
-phenomenon](http://en.wikipedia.org/wiki/Tests_of_general_relativity) that
+phenomenon](https://en.wikipedia.org/wiki/Tests_of_general_relativity) that
 helped cause Newtonian mechanics to be replaced by General Relativity. An
 [ugly
-fact](http://www.whatquote.com/quotes/Thomas-Henry-Huxley/2264-Science-is-organized.htm)
+fact](https://www.whatquote.com/quotes/Thomas-Henry-Huxley/2264-Science-is-organized.htm)
 as it were. Note that Newtonian mechanics is still taught today as it still
 produces quite useful answers in a large range of applications, but where
 the answers that General Relativity provides are different than the ones
@@ -202,14 +202,14 @@ slightest way to the significance of General Relativity. To be honest, I
 simply sprinkled in science metaphors to spice up an otherwise dry subject,
 and also to give credibility to the notion that some things that may seem
 initially to defy [common
-sense](http://www.thegardenoftheheart.com/Daily_Thoughts/CommonSense.html)
+sense](https://www.thegardenoftheheart.com/Daily_Thoughts/CommonSense.html)
 from one perspective may actually be the **only** sensible position from a
 completely different perspective.
 
 And on that topic, while Newton's Gravity was the "downfall" of Newtonian
 Mechanics, Quantum mechanics will likely revolutionize Relativity. In
 Quantum mechanics, the [role of the observer often affects the properties
-of the observed](http://en.wikipedia.org/wiki/Double-slit_experiment). The
+of the observed](https://en.wikipedia.org/wiki/Double-slit_experiment). The
 ASF's decision to pursue Java and XML have had a profound affect on both of
 those subjects. (Perhaps not as much as we [might have
 hoped](/jcp/sunopenletter.html) , but substantial

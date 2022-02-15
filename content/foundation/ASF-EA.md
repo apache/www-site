@@ -34,11 +34,11 @@ products.
 
 For more information on the Apache Software Foundation, please see
 
-* [http://www.apache.org/](/) 
+* [https://www.apache.org/](/) 
 
 especially
 
-* [http://apache.org/foundation/how-it-works.html](/foundation/how-it-works.html) 
+* [https://apache.org/foundation/how-it-works.html](/foundation/how-it-works.html) 
 
 What We Need<br></br>---------------------------------------
 

@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 On April 10, 2007, the Apache Software Foundation sent the following letter
 to Sun Microsystems regarding our inability to acquire an acceptable
 license for the Java SE 5 technology compatibility kit, a test kit needed
-by the [Apache Harmony project](http://harmony.apache.org/) to demonstrate
+by the [Apache Harmony project](https://harmony.apache.org/) to demonstrate
 compatibility with the Java SE 5 specification, as required by the Sun
 specification license for Java SE 5.
 

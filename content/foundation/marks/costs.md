@@ -68,7 +68,7 @@ over the application process (below) for counsel time (from our lawyers) to subm
 * After 10 years: Filing formal renewal application: 300 USD
 * If the 5 or 10 year applications and payments are not made, the registration will lapse.  When the 5 year declaration is made, the registration becomes "incontestible", meaning we have even stronger legal rights to protect it.
 
-The official [USPTO cost schedule](http://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule#TM%20Process%20Fee) includes detailed costs.  If a project is registering in multiple countries at the same time, see the [Madrid Protocol costs](#madridcosts) instead.
+The official [USPTO cost schedule](https://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule#TM%20Process%20Fee) includes detailed costs.  If a project is registering in multiple countries at the same time, see the [Madrid Protocol costs](#madridcosts) instead.
 
 ## In Europe  {#eucost}
 
@@ -90,7 +90,7 @@ Sample Madrid application costs for an application in EU, India, China:
 * India-specific application fee: 62 CHF
 * Total fees:  1876 CHF (*roughly 2000 USD*)
  
-See the [Madrid Protocol cost calculator](http://www.wipo.int/madrid/en/fees/calculator.jsp) at the WIPO for a simple cost estimation tool.  Note that if additional work is needed or objections are raised in any one country, additional counsel fees may be required to continue that specific country's application process.
+See the [Madrid Protocol cost calculator](https://www.wipo.int/madrid/en/fees/calculator.jsp) at the WIPO for a simple cost estimation tool.  Note that if additional work is needed or objections are raised in any one country, additional counsel fees may be required to continue that specific country's application process.
 
 Each country registration comes up for renewal every 10 years individually.
 

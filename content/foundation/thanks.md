@@ -12,12 +12,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <div class="sponsors">
    <ul id='platinum'>
       <li><a target="_blank" rel="sponsored" href="https://aws.amazon.com/"><img src="images/aws-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Amazon Web Services</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://facebook.com/"><img src="images/facebook.png"/></a><p style="text-align: center; font-weight: bold;">Facebook</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://google.com/"><img src="images/google.png"/></a><p style="text-align: center; font-weight: bold;">Google</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://huawei.com/"><img src="images/huawei-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Huawei</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://facebook.com/"><img src="images/facebook.png"/></a><p style="text-align: center; font-weight: bold;">Facebook</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://google.com/"><img src="images/google.png"/></a><p style="text-align: center; font-weight: bold;">Google</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://huawei.com/"><img src="images/huawei-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Huawei</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.namebase.io/"><img src="images/namebase-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Namebase</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://pineapplefund.org/"><img src="images/pineapple_fund.png"/></a><p style="text-align: center; font-weight: bold;">Pineapple Fund</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://pineapplefund.org/"><img src="images/pineapple_fund.png"/></a><p style="text-align: center; font-weight: bold;">Pineapple Fund</p></li>
       <li><a target="_blank" rel="sponsored" href="https://tencent.com/"><img src="images/tencent.png"/></a><p style="text-align: center; font-weight: bold;">Tencent</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.vmware.com/opensource.html"><img src="images/vmware-platinum2.png"/></a><p style="text-align: center; font-weight: bold;">VMware</p></li>
       <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
@@ -29,13 +29,13 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <div class="sponsors">
    <ul id='gold'>
       <li><a target="_blank" rel="sponsored" href="https://apache.org/"><img src="images/blank.png"/></a><p style="text-align: center; font-weight: bold;">Anonymous</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.baidu.com/"><img src="images/baidu.png"/></a><p style="text-align: center; font-weight: bold;">Baidu</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.baidu.com/"><img src="images/baidu.png"/></a><p style="text-align: center; font-weight: bold;">Baidu</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.techatbloomberg.com/"><img src="images/bloomberg-gold.png"/></a><p style="text-align: center; font-weight: bold;">Bloomberg</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://cloudera.com/"><img src="images/cloudera-gold.png"/></a><p style="text-align: center; font-weight: bold;">Cloudera</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://cloudera.com/"><img src="images/cloudera-gold.png"/></a><p style="text-align: center; font-weight: bold;">Cloudera</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.confluent.io/"><img src="images/confluent-gold.png"/></a><p style="text-align: center; font-weight: bold;">Confluent</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://ibm.com/"><img src="images/ibm.png"/></a><p style="text-align: center; font-weight: bold;">IBM</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://ibm.com/"><img src="images/ibm.png"/></a><p style="text-align: center; font-weight: bold;">IBM</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/"><img src="images/indeed.png"/></a><p style="text-align: center; font-weight: bold;">Indeed</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.union-investment.de/"><img src="images/union-gold.png"/></a><p style="text-align: center; font-weight: bold;">Union Investment</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.union-investment.de/"><img src="images/union-gold.png"/></a><p style="text-align: center; font-weight: bold;">Union Investment</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.workday.com/"><img src="images/workday-gold.png"/></a><p style="text-align: center; font-weight: bold;">Workday</p></li>
    </ul>
    </div>
@@ -44,15 +44,15 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <h1 style="text-align: center;">Silver Sponsors:</h1>  <!-- 150x67 -->
    <div class="sponsors">
    <ul id='silver'>
-      <li><a target="_blank" rel="sponsored" href="http://www.aetna.com/"><img src="images/aetna_sponsorlogo.png"/></a><p style="text-align: center; font-weight: bold;">Aetna</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.alicloud.com/"><img src="images/alibabacloud-silver.png"/></a><p style="text-align: center; font-weight: bold;">Alibaba Cloud Computing</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.aetna.com/"><img src="images/aetna_sponsorlogo.png"/></a><p style="text-align: center; font-weight: bold;">Aetna</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.alicloud.com/"><img src="images/alibabacloud-silver.png"/></a><p style="text-align: center; font-weight: bold;">Alibaba Cloud Computing</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.capitalone.com/"><img src="images/capitalone-silver.png"/></a><p style="text-align: center; font-weight: bold;">Capital One</p></li>
       <li><a target="_blank" rel="sponsored" href="https://comcast.com/"><img src="images/comcast-silver.png"/></a><p style="text-align: center; font-weight: bold;">Comcast</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.didiglobal.com/"><img src="images/didi.png"/></a><p style="text-align: center; font-weight: bold;">Didi Chuxing</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.replicated.com/"><img src="images/replicated-silver.png"/></a><p style="text-align: center; font-weight: bold;">Replicated</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.talend.com/"><img src="images/talend-silver.png"/></a><p style="text-align: center; font-weight: bold;">Talend</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.target.com/"><img src="images/target-silver.png"/></a><p style="text-align: center; font-weight: bold;">Target</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.talend.com/"><img src="images/talend-silver.png"/></a><p style="text-align: center; font-weight: bold;">Talend</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.target.com/"><img src="images/target-silver.png"/></a><p style="text-align: center; font-weight: bold;">Target</p></li>
    </ul>
    </div>
 
@@ -62,7 +62,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <ul id='bronze'>
       <li><a target="_blank" rel="sponsored" href="https://www.bestecasinobonussen.nl/">Bestecasinobonussen.nl</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.cafe24.com/en/?utm_source=apache&utm_medium=offlink&utm_campaign=mktbuilding-march-2021">Cafe24</a></li>
-      <li><a target="_blank" rel="sponsored" href="http://engineering.cerner.com/">Cerner</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://engineering.cerner.com/">Cerner</a></li>
       <li><a target="_blank" rel="sponsored" href="https://craftercms.org">Crafter CMS</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
       <li><a target="_blank" rel="sponsored" href="https://goread.io/buy-instagram-followers">Goread.io Followers</a></li>
@@ -78,7 +78,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.sg.com.mx/">Software Guru DevRel</a></li>
       <li><a target="_blank" rel="sponsored" href=" https://www.tii.ae/">Technology Innovation Institute</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.theblogstarter.com/">The Blog Starter</a></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.twitter.com/">Twitter</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.twitter.com/">Twitter</a></li>
       <li><a target="_blank" rel="sponsored" href="https://writersperhour.com">Writers Per Hour</a></li>
    </ul>
    </div>
@@ -97,9 +97,9 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://www.leaseweb.com/"><img src="images/leaseweb-platinum.png"/></a><p style="text-align: center; font-weight: bold;">LeaseWeb</p></li>
       <li><a target="_blank" rel="sponsored" href="https://jfrog.com/open-source/"><img src="images/jfrog-platinum.png"/></a><p style="text-align: center; font-weight: bold;">JFrog</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.osuosl.org/"><img src="images/osl-logo.png"/></a><p style="text-align: center; font-weight: bold;">OSU Open Source Labs</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.osuosl.org/"><img src="images/osl-logo.png"/></a><p style="text-align: center; font-weight: bold;">OSU Open Source Labs</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.verizonmedia.com/"><img src="images/verizon_media.jpg"/></a><p style="text-align: center; font-weight: bold;">Verizon Media</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.sonatype.com/nexus/product-overview"><img src="images/Nexus-logo.1.jpg"/></a><p style="text-align: center; font-weight: bold;">Sonatype</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.sonatype.com/nexus/product-overview"><img src="images/Nexus-logo.1.jpg"/></a><p style="text-align: center; font-weight: bold;">Sonatype</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.jetbrains.com/"><img src="images/jetbrains.png"/></a><p style="text-align: center; font-weight: bold;">JetBrains</p></li>
       <li><a target="_blank" rel="sponsored" href="https://fastly.com/"><img src="images/fastly-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Fastly</p></li>
       <li><a target="_blank" rel="sponsored" href="https://github.com/"><img src="images/github-platinum.png"/></a><p style="text-align: center; font-weight: bold;">GitHub</p></li>
@@ -112,7 +112,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://www.atlassian.com/"><img src="images/atlassian-logo.png"></a><p style="text-align: center; font-weight: bold;">Atlassian</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.datadoghq.com/"><img src="images/datadog_logo_70x75.png"></a><p style="text-align: center; font-weight: bold;">Datadog</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.docker.com/"><img src="images/docker-gold.png"></a><p style="text-align: center; font-weight: bold;">Docker</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://phoenixnap.com/"><img src="images/phoenixnap-gold.png"/></a><p style="text-align: center; font-weight: bold;">PhoenixNAP</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://phoenixnap.com/"><img src="images/phoenixnap-gold.png"/></a><p style="text-align: center; font-weight: bold;">PhoenixNAP</p></li>
       <li><a target="_blank" rel="sponsored" href="https://dinosource.co/"><img src="images/DinoSource-gold.png"/></a><p style="text-align: center; font-weight: bold;">DinoSource</p></li>
    </ul>
    </div>
@@ -120,9 +120,9 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    <h1 style="text-align: center;">Targeted Silver Sponsors:</h1> <!-- 150x67 -->
    <div class="sponsors">
    <ul id='targetedsilver'>
-      <li><a target="_blank" rel="sponsored" href="http://hotwaxsystems.com/"><img src="images/hotwax.png"/></a><p style="text-align: center; font-weight: bold;">Hotwax Systems</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://hotwaxsystems.com/"><img src="images/hotwax.png"/></a><p style="text-align: center; font-weight: bold;">Hotwax Systems</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage"><img src="images/instaclustr-silver.png"/></a><p style="text-align: center; font-weight: bold;">Instaclustr</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://rackspace.com/"><img src="images/rax.jpg"/></a><p style="text-align: center; font-weight: bold;">Rackspace</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://rackspace.com/"><img src="images/rax.jpg"/></a><p style="text-align: center; font-weight: bold;">Rackspace</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.mi.com/"><img src="images/xiaomi-silver.png"/></a><p style="text-align: center; font-weight: bold;">Xiaomi</p></li>
    </ul>
    </div>  
@@ -138,7 +138,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://www.pagerduty.com/">PagerDuty</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.pccc.com/">Peregrine Computer Consultants Corporation</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.sonic.com/">Sonic.net</a></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.surfnet.nl/">SURFnet</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.surfnet.nl/">SURFnet</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.virtru.com/">Virtru</a></li>
    </ul>
    </div>

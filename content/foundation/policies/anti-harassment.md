@@ -24,7 +24,7 @@ Policy. The policy must either be the one below or one approved as an alternativ
 
 # Anti-Harassment Policy #
 
-This policy is based on the one developed by [Geek Feminism](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment_policy)
+This policy is based on the one developed by [Geek Feminism](https://geekfeminism.wikia.com/wiki/Conference_anti-harassment_policy)
 
 ## Short version (suitable for various footers etc as necessary) ##
 [Event name] is dedicated to a harassment-free experience for

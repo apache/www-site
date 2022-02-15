@@ -13,7 +13,7 @@ for additional assistance.
 Incorporated in 1999, the all-volunteer Foundation oversees [more than 350 leading Open Source projects](https://projects.apache.org/), including Apache HTTP Server — the world's most popular Web server software since its creation in 1994.
 
 Evolving from the original eight developers (collectively known as "the Apache Group") who contributed code enhancements to the NCSA daemon Web server, The ASF today is a fully-distributed, US 501(c)3 [not-for-profit organization](/foundation/) 
-comprising more than [730 individual Members and over 7,000 Committers](https://projects.apache.org/timelines.html) [across six continents](http://community.zones.apache.org/map.html).
+comprising more than [730 individual Members and over 7,000 Committers](https://projects.apache.org/timelines.html) [across six continents](https://community.zones.apache.org/map.html).
 
 The ASF develops, stewards, and incubates dozens of enterprise-grade Open Source projects that power mission-critical applications in financial services, aerospace, publishing, government, healthcare, research, infrastructure, and more. From Accumulo to ZooKeeper, many Apache projects serve as the backbone for some of the world's most visible and widely used applications in Big Data, Cloud, Search and CMS, DevOps and Build Management, IoT and Edge Computing, Machine and Deep Learning, Servers, Web Frameworks, and [much more](https://projects.apache.org/projects.html?category).
 
@@ -21,9 +21,9 @@ The ASF's successful collaborative, meritocratic technology and community develo
 
 Billions of users benefit from the ASF’s [freely available Open Source software](https://blogs.apache.org/foundation/entry/apache-is-open): countless non-ASF-developed software applications have been distributed under the terms of the popular, business-friendly Apache License. By allowing source code to be used for the development of any software –both Open Source and proprietary– the [Apache License makes it easy for all users to implement and deploy Apache products](/licenses/).
 
-The Foundation provides organizational, legal, and financial support for the [incubation and development of new projects](http://incubator.apache.org/), and minimizes the potential [legal exposure of intellectual property](/legal/) and financial contributions.
+The Foundation provides organizational, legal, and financial support for the [incubation and development of new projects](https://incubator.apache.org/), and minimizes the potential [legal exposure of intellectual property](/legal/) and financial contributions.
 
-The [Apache community](http://community.apache.org/) actively participates in ASF mailing lists, mentoring initiatives, and ApacheCon, the Foundation's official user conference, trainings, and expo. Now in its 20th year, [ApacheCon, along with smaller events such as the Apache Roadshow](http://www.apachecon.com/), continues to draw attendees from all over the world to embrace ”Tomorrow’s Technology Today” through unparalleled educational, collaboration, and networking opportunities. 
+The [Apache community](https://community.apache.org/) actively participates in ASF mailing lists, mentoring initiatives, and ApacheCon, the Foundation's official user conference, trainings, and expo. Now in its 20th year, [ApacheCon, along with smaller events such as the Apache Roadshow](https://www.apachecon.com/), continues to draw attendees from all over the world to embrace ”Tomorrow’s Technology Today” through unparalleled educational, collaboration, and networking opportunities. 
 
 As charitable organization, the ASF is funded through [tax-deductible contributions](/foundation/contributing.html) from corporations, foundations, and private individuals. The ASF runs a very lean operation, spending 10% or less on overhead. Critical Infrastructure support services keep Apache bandwidth, connectivity, servers, and hardware running 24x7x365 at near 100% uptime for less than US$5K per project annually. Donations to the ASF also help offset day-to-day operating expenses such as legal and accounting services, brand management, public relations, and general office expenditures.
 
@@ -33,8 +33,8 @@ Hailed for nearly two decades as a leading source for Open Source software and t
 
 Official ASF press releases can be found on the
 [Foundation](https://blogs.apache.org/foundation/) blog, with archives of [our announcements from 1999-2010](/foundation/news.html) also available. Additional news updates are posted on the 
-[@TheASF Twitter feed](http://twitter.com/TheASF), 
-the [@ApacheCon Twitter feed](http://twitter.com/apachecon), as well as the
+[@TheASF Twitter feed](https://twitter.com/TheASF), 
+the [@ApacheCon Twitter feed](https://twitter.com/apachecon), as well as the
 [Apache Announce Lists](/foundation/mailinglists.html#foundation-announce).
 
 

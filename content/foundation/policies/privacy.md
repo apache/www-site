@@ -21,7 +21,7 @@ We collect information about your use of this website with server access logs an
  * The pages you visit
  * The addresses of pages from where you followed a link to our site
 
-We gather some of this information using a tracking cookie set by the [Google Analytics](http://www.google.com/analytics) service, which Google handles as described in their [privacy policy](http://www.google.com/privacy.html). See your browser documentation for instructions on how to disable the cookie if you prefer not to share this data with Google.
+We gather some of this information using a tracking cookie set by the [Google Analytics](https://www.google.com/analytics) service, which Google handles as described in their [privacy policy](https://www.google.com/privacy.html). See your browser documentation for instructions on how to disable the cookie if you prefer not to share this data with Google.
 
 We use the gathered information to help us make our site more useful to visitors and to better understand how and when our site is used. We do not track or collect personally identifiable information or associate gathered data with any personally identifying information from other sources.
 

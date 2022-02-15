@@ -31,7 +31,7 @@ the use of our trademarks.
 -  [Trademarks and Logos on merchandise/giveaways](merchandise.html) 
 
 -  [Special guidelines about Incubator
-Podlings](http://incubator.apache.org/guides/branding.html) 
+Podlings](https://incubator.apache.org/guides/branding.html) 
 
 # Proper Usage of "Apache" Trademark (OUTDATED)  {#apachetrademark}
 
@@ -52,7 +52,7 @@ by the Apache Software Foundation.
 
 The names of all Apache products are trademarks of The Apache Software
 Foundation. A [separate
-policy](http://incubator.apache.org/guides/branding.html) covers all
+policy](https://incubator.apache.org/guides/branding.html) covers all
 Incubator Podlings.
 
 1. The full name of an Apache product is always "Apache

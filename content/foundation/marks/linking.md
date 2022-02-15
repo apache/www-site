@@ -19,7 +19,7 @@ See Also: [Trademark Resources Site Map](/foundation/marks/resources).
 # Corporate Recognition Best Practices Overview  {#introduction}
 
 To ensure the ability of [Apache PMCs to independently manage the technical
-direction of their projects](http://community.apache.org/projectIndependence.html),
+direction of their projects](https://community.apache.org/projectIndependence.html),
 it is important to show that Apache projects
 are managed by community-minded individuals volunteering their efforts on
 the PMC, and that projects are not dominated by or led by third parties
@@ -138,7 +138,7 @@ consistent about applying it to not show favoritisim.
 An important factor for PMCs when choosing what links to include or how to
 portray them is ensuring that the links don't imply that a third party has an
 exclusive or controlling relationship with the project, the PMC, or the ASF.
-All Apache projects must be [run independently of commercial influence](http://community.apache.org/projectIndependence.html) for the
+All Apache projects must be [run independently of commercial influence](https://community.apache.org/projectIndependence.html) for the
 benefit of the project and it's users.
 
 # Not Promoting Similarly Named Software Products  {#nonproduct}
@@ -220,7 +220,7 @@ third parties or outside corporations.
 
 A critical point to understand - both for users of our software as well as
 the committers and PMC members who create our software - is that
-[Apache Projects Are Independent](http://community.apache.org/projectIndependence.html).
+[Apache Projects Are Independent](https://community.apache.org/projectIndependence.html).
 
 These best practices for linking to outside pages on project websites
 are meant as suggestions for projects.  PMCs are free to adopt (or not)

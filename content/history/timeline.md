@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 This represents the very high-level timeline of the Apache project. More detailed
 information about individual versions of each subproject can be found in their
 version history. Note that much of the early part of this document can also be
-found in the ["about Apache"](http://httpd.apache.org/ABOUT_APACHE.html) document
+found in the ["about Apache"](https://httpd.apache.org/ABOUT_APACHE.html) document
 on the Apache Server web site.
 
 The history of Apache starts with the NCSA HTTPd project. Quoth Rob McCool:

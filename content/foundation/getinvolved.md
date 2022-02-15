@@ -3,10 +3,10 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 The best way to contribute to the Apache Software Foundation (ASF) is to get involved with
 one of our many Apache project communities.  The  best way to ask general questions 
-about community involvement is to read about [Community Development at Apache](http://community.apache.org/).
+about community involvement is to read about [Community Development at Apache](https://community.apache.org/).
 
-The ASF is made up of over [300 different projects](http://projects.apache.org/), with many 
-new project submissions (or podlings) coming into the [Apache Incubator](http://incubator.apache.org/) every year. 
+The ASF is made up of over [300 different projects](https://projects.apache.org/), with many 
+new project submissions (or podlings) coming into the [Apache Incubator](https://incubator.apache.org/) every year. 
 So no matter what kinds of technology or software you use, we most 
 likely have an Apache project that you'll be interested in.
 
@@ -16,13 +16,13 @@ Using Apache products, asking (and sometimes answering) questions, reporting bug
 and making feature requests are critical contributions to the success of the Apache project community.
 User feedback helps drive our projects and the technologies behind them.
 
--  [See a listing of all projects](http://projects.apache.org/) 
+-  [See a listing of all projects](https://projects.apache.org/) 
 
 -  [Join Apache project mailing lists](mailinglists.html) 
 
 -  [Download Apache software releases](/dyn/closer.cgi) 
 
--  [Report bugs and request features](http://issues.apache.org/) 
+-  [Report bugs and request features](https://issues.apache.org/) 
 
 # Contribute to the community #
 
@@ -39,7 +39,7 @@ documentation.
 
 -  [Checkout the latest code](/dev/#svn) 
 
--  [Create bug/feature patches](http://issues.apache.org/) 
+-  [Create bug/feature patches](https://issues.apache.org/) 
 
 -  [Understand How It Works](how-it-works.html) and see other [notes for
 contributors](/dev/#committers) 
@@ -66,14 +66,14 @@ helping with documentation and the issue tracker, and showing long-term interest
 
 For more on how to get involved and the open source mentality, see:
 
--  [Contributing](http://jakarta.apache.org/site/contributing.html) --
+-  [Contributing](https://jakarta.apache.org/site/contributing.html) --
 Craig R. McClanahan
 
 -  [Understanding Open
-Source](http://jakarta.apache.org/site/understandingopensource.html) --
+Source](https://jakarta.apache.org/site/understandingopensource.html) --
 Cameron Riley
 
--  [Producing Open Source Software](http://producingoss.com/) -- Karl Fogel
+-  [Producing Open Source Software](https://producingoss.com/) -- Karl Fogel
 
 For more technical information, see [ASF development infrastructure](/dev/) and [notes for
 committers](/dev/#committers).

@@ -14,7 +14,7 @@ if you have other events you think we should list!
 ApacheCon is the main community event of the Apache Software Foundation,
 where developers from our many projects gather to teach, learn,
 and strengthen their communities. Find out more about ApacheCon at 
-[ApacheCon.com](http://apachecon.com/)
+[ApacheCon.com](https://apachecon.com/)
 
 ## Meetups
 
@@ -26,7 +26,7 @@ can be found by searching on meetup.com
 
 In addition to ApacheCon, many of our project communities put on events
 covering single projects, or groups of related projects. These are listed 
-in the [community calendar](http://community.apache.org/calendars/). If you
+in the [community calendar](https://community.apache.org/calendars/). If you
 want to put on an event using Apache brands, the first step is to look at
 the [event branding policy document](/foundation/marks/events.html).
 

@@ -11,7 +11,7 @@ before release, and must include the press release boilerplate below.
 Third parties may **not** use the ASF boilerplate in releases without 
 explicit permission.
 
-[M&P]: http://www.apache.org/press/ "ASF Marketing and Publicity"
+[M&P]: https://www.apache.org/press/ "ASF Marketing and Publicity"
 
 ### Press Release Boilerplate ###
 
@@ -33,10 +33,10 @@ reason to use the short form.
 > corporate sponsors including Google, HP, Microsoft, Progress Software,  SpringSource, 
 > and Yahoo! 
 > 
-> For more information, visit [http://www.apache.org/][ASF]
+> For more information, visit [https://www.apache.org/][ASF]
 > 
 
-[ASF]: http://www.apache.org/ "the Apache Software Foundation"
+[ASF]: https://www.apache.org/ "the Apache Software Foundation"
 
 
 ### Project Release Or General Announcement Boilerplate ###
@@ -59,9 +59,9 @@ and always send it to the apache.org home page.
 > the Foundation's intellectual property framework limits the legal exposure 
 > of its 2,500+ contributors. 
 > 
-> For more information, visit [http://www.apache.org/] [ASF]
+> For more information, visit [https://www.apache.org/] [ASF]
 
-[ASF]: http://www.apache.org/ "Apache Software Foundation"
+[ASF]: https://www.apache.org/ "Apache Software Foundation"
 
 ### Contact Us ###
 
@@ -69,7 +69,7 @@ For any other questions about press releases, you may
 contact us via email at
 [press@apache.org](mailto:press@apache.org?subject=[Press]%20Release%20Boilerplate%20Request).
 All technical questions or questions about
-[individual projects](http://projects.apache.org/)
+[individual projects](https://projects.apache.org/)
 announcements or communications should always be directed to the appropriate
 [project mailing list](/foundation/mailinglists.html).
 

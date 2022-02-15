@@ -10,7 +10,7 @@ projects or incubator podlings that request them.
 # Apache Committer personal blogs  {#personal-blogs}
 
 We encourage committers with personal blogs to add their feed to
-[planet.apache.org](http://planet.apache.org) for aggregation. To get your
+[planet.apache.org](https://planet.apache.org) for aggregation. To get your
 personal blog listed and aggregated:
 
   - Check out the [planet module](https://svn.apache.org/repos/asf/planet/) from our SVN repo.
@@ -22,7 +22,7 @@ personal blog listed and aggregated:
  $ svn co https://svn.apache.org/repos/asf/planet/
  ```
     
-Read these committer blogs at [Planet Apache](http://planet.apache.org/committers/).
+Read these committer blogs at [Planet Apache](https://planet.apache.org/committers/).
 Many committers submit their technology-related blogs, but some committers 
 also blog on personal matters.
 

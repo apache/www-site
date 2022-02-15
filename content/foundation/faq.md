@@ -40,7 +40,7 @@ being abused by other organizations
 
 The name 'Apache' was chosen from respect for the various Native American
 nations collectively referred to as
-<a href="http://en.wikipedia.org/wiki/Apache" target="_blank">Apache</a>, well-known for their
+<a href="https://en.wikipedia.org/wiki/Apache" target="_blank">Apache</a>, well-known for their
 superior skills in warfare strategy and their inexhaustible endurance. It
 also makes a cute pun on "a patchy web server" -- a server made from a
 series of patches -- but this was not its origin. The group of developers
@@ -93,7 +93,7 @@ and PMC members).
 ## Who are the members of the ASF?  {#who}
 
 The current list of ASF members is at
-<samp>&lt;[http://www.apache.org/foundation/members.html](members.html)&gt;
+<samp>&lt;[https://www.apache.org/foundation/members.html](members.html)&gt;
 </samp>.
 
 ## Who owns the Apache code?  {#who-owns-apache-code}
@@ -135,7 +135,7 @@ discussion about [individuals and hats](how-it-works.html#hats).
 
 The current list of projects operating under the auspices of the Apache
 Software Foundation can be found at
-<samp>&lt;[http://www.apache.org/foundation/projects.html](projects.html)&gt;
+<samp>&lt;[https://www.apache.org/foundation/projects.html](projects.html)&gt;
 </samp>.
 
 ## How does the ASF help its projects?  {#how}
@@ -171,11 +171,11 @@ page](contributing.html#tax-status).
 
 ## I am considering starting an open-source software project. Can you help?  {#incubator}
 
-Send proposals to the [Apache Incubator](http://incubator.apache.org/). 
+Send proposals to the [Apache Incubator](https://incubator.apache.org/). 
 
 ## We are an active open-source software project with a synergistic relationship with Apache. Can you help?  {#synergy}
 
-Send proposals to the [Apache Incubator](http://incubator.apache.org/) 
+Send proposals to the [Apache Incubator](https://incubator.apache.org/) 
 
 ## What is Apache about?  {#what-is-apache-about}
 
@@ -191,7 +191,7 @@ someone else fix the bugs you created.
 
 Current Apache releases are available for download on the releases page of each project's website. Until the third quarter of 2021 Apache used a system of <a href="https://apache.org/history/mirror-history.html" target="_blank">download mirrors</a> to make the releases conveniently available around the world. Since then, all releases are distributed through a global content distribution network (CDN).
 
-All releases are automatically copied to the [archives](http://archive.apache.org/) and remain present on `archive.apache.org` even after they have been removed from projects' releases pages. So, if you are looking for an old Apache release that is no longer a project's releases page, or need to refer to a permanent location (such as for legal notices), use a link to the archives. But if you want the latest stable releases, visit the website of the ([Apache project](http://projects.apache.org/indexes/quick)) you are interested in.
+All releases are automatically copied to the [archives](https://archive.apache.org/) and remain present on `archive.apache.org` even after they have been removed from projects' releases pages. So, if you are looking for an old Apache release that is no longer a project's releases page, or need to refer to a permanent location (such as for legal notices), use a link to the archives. But if you want the latest stable releases, visit the website of the ([Apache project](https://projects.apache.org/indexes/quick)) you are interested in.
 
 ## How do I contact projects and people?  {#contact}
 

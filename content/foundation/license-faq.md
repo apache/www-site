@@ -59,15 +59,15 @@ the bottom of this page](#resources) for further information.
 
 ## Where can I find the Apache license?  {#License}
 
-You can find the Apache License 2.0 (the current version) here: [http://www.apache.org/licenses/LICENSE-2.0.txt](/licenses/LICENSE-2.0.txt) 
+You can find the Apache License 2.0 (the current version) here: [https://www.apache.org/licenses/LICENSE-2.0.txt](/licenses/LICENSE-2.0.txt) 
 
 These are two older versions that we no longer use:
 
 - Apache Software License 1.1:
-[http://www.apache.org/licenses/LICENSE-1.1.txt](/licenses/LICENSE-1.1.txt) 
+[https://www.apache.org/licenses/LICENSE-1.1.txt](/licenses/LICENSE-1.1.txt) 
 
 - Apache Software License 1.0:
-[http://www.apache.org/licenses/LICENSE-1.0.txt](/licenses/LICENSE-1.0.txt) 
+[https://www.apache.org/licenses/LICENSE-1.0.txt](/licenses/LICENSE-1.0.txt) 
 
 ## Why are license files different for different Apache Software Foundation projects?  {#Scope}
 
@@ -215,12 +215,12 @@ is required.
 ## Is the Apache license compatible with the GPL (GNU Public License)?  {#GPL}
 
 From the [Free Software
-Foundation](http://www.fsf.org/licensing/licenses/#SoftwareLicenses)
+Foundation](https://www.fsf.org/licensing/licenses/#SoftwareLicenses)
 website:
 
 >  
 >  <span class="link-external"> [Apache License, Version
-2.0](http://www.apache.org/licenses/LICENSE-2.0) </span>
+2.0](https://www.apache.org/licenses/LICENSE-2.0) </span>
 >
 This is a free software license, compatible with version 3 of the GPL.
 Please note that this license is not compatible with GPL version 2, because

@@ -200,7 +200,7 @@ through
 (requires free registration for full access).
 
 You can find more information about non-profits and related issues at the
-[Internet Nonprofit Center](http://www.nonprofits.org/).
+[Internet Nonprofit Center](https://www.nonprofits.org/).
 
 ## I'd like to talk to someone about supporting the ASF!  {#Sponsor}
 

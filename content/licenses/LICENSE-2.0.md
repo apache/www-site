@@ -18,7 +18,7 @@ License, Version 2.0, unless otherwise explicitly stated.
 
 <p style="text-align:center">
 <strong>Apache License<br></br>Version 2.0, January 2004<br></br></strong>
-<strong><a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a></strong>
+<strong><a href="https://www.apache.org/licenses/">https://www.apache.org/licenses/</a></strong>
 </p>
 
 <p>TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
@@ -217,7 +217,7 @@ identification within third-party archives.
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-        http://www.apache.org/licenses/LICENSE-2.0
+        https://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,

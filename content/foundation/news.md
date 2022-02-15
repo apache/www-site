@@ -9,7 +9,7 @@ Keep informed about news from the Apache Software Foundation and its
 projects by subscribing to the [Apache
 Announcements](mailinglists.html#foundation-announce) mailing list. To see
 what has happened recently, please check the [archives of Apache
-Announcements](http://mail-archives.apache.org/mod_mbox/www-announce/) or
+Announcements](https://mail-archives.apache.org/mod_mbox/www-announce/) or
 you can visit [our foundation blog](https://blogs.apache.org/foundation/).
 
 See the [current listing of News and Announcements](https://www.apache.org/press/#news).
@@ -153,17 +153,17 @@ The Apache Software Foundation Wraps Up 2007 As Its Strongest Year To Date.
 
 - *September 2, 2004* <br/> [Open letter](docs/sender-id-position.html):
 Issued to the [IETF MARID Working
-Group](http://www.ietf.org/html.charters/marid-charter.html) regarding the
+Group](https://www.ietf.org/html.charters/marid-charter.html) regarding the
 ASF's position on Sender ID.
 
 - *May 11, 2004* <br/> [Press
-release](http://www.prnewswire.com/cgi-bin/stories.pl?ACCT=SVBIZINK3.story&STORY=/www/story/05-11-2004/0002172126&EDATE=TUE+May+11+2004,+02:15+PM):
+release](https://www.prnewswire.com/cgi-bin/stories.pl?ACCT=SVBIZINK3.story&STORY=/www/story/05-11-2004/0002172126&EDATE=TUE+May+11+2004,+02:15+PM):
 Apache HTTP Server Reaches Record Eight Consecutive Years of Technical Leadership
 
 ### 2002 ###
 
 - *March 26, 2002* <br/> [Press
-release](http://www1.internetwire.com/iwire/release_html_b1?release_id=39838):
+release](https://www1.internetwire.com/iwire/release_html_b1?release_id=39838):
 Apache Software Foundation Reaches Agreement With Sun Microsystems To
 Allow Open Source Java Implementations
 

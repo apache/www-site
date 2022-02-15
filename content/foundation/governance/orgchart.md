@@ -105,7 +105,7 @@ Click in the image map to learn more about a role.
 
   - By policy, only individuals may serve as Members, committers, PMC 
     members or ASF officers.  This is one way that the ASF and 
-    [Apache projects preserve their independence](http://community.apache.org/projectIndependence).
+    [Apache projects preserve their independence](https://community.apache.org/projectIndependence).
 
 
 [Source for org chart graphics](ApacheOrgChart.odg) stored in an Apache OpenOffice file.

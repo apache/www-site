@@ -100,7 +100,7 @@ Part of the Apache Way is the concept of hats - when PMC members do work on
 Apache lists, they are expected to act as individuals, wearing their PMC hat;
 i.e. on behalf of their PMC's project, and not influenced by other parties.
 Likewise, it is important that your [project as a whole is run
-independently of commercial influence](http://community.apache.org/projectIndependence.html), and presents the public perception
+independently of commercial influence](https://community.apache.org/projectIndependence.html), and presents the public perception
 that the project is run independently.  There should be no question in the minds
 of average users on the website or the mailing lists that the PMC solely runs the project, and not any other organizations.
 
@@ -200,7 +200,7 @@ third-party products, services, or events.**
 This is version 1.1 of this Apache policy document, published in <s>May 2011</s> November 2013.
 Significant changes will be marked with a new version number.
 
-For 1.1 in November 2013 clarifications were added, including a link to http://community.apache.org/projectIndependence.html and a note that
+For 1.1 in November 2013 clarifications were added, including a link to https://community.apache.org/projectIndependence.html and a note that
 project website branding compliance should be dealt with on trademarks@ and not board@.
 
 [resources]: /foundation/marks/resources

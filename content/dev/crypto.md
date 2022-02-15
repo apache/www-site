@@ -1,5 +1,5 @@
 Title: Handling Cryptography within an ASF Release
-Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
+Atom: https://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 <script type="text/javascript">

@@ -7,7 +7,7 @@ You can help improve the`apache.org` website.
 
 If you have changes to propose to this top-level ASF
 documentation (/foundation/ and /dev/), please send patches using the [Infra issues
-tracker](http://issues.apache.org/jira/browse/INFRA). (Do not reveal
+tracker](https://issues.apache.org/jira/browse/INFRA). (Do not reveal
 obviously sensitive information, such as the name of any private mailing
 lists.) 
 

@@ -13,6 +13,6 @@ The ASF has an [official store at RedBubble](https://www.redbubble.com/people/co
 
 Those interested in items from the ASF's earlier days and who want to contribute a portion of each sale's proceeds may find what they're looking for at:
 
--  [ASF Swag](http://asfswag.com/) -- created by ASF Member Shane Curcuru
--  [The Rodent's Cache](http://www.cafepress.com/meepzor/230676) -- created by ASF Member Ken Coar
+-  [ASF Swag](https://asfswag.com/) -- created by ASF Member Shane Curcuru
+-  [The Rodent's Cache](https://www.cafepress.com/meepzor/230676) -- created by ASF Member Ken Coar
 

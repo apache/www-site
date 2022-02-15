@@ -45,7 +45,7 @@ Source as well as brand management are published online, and we urge
 project participants and software vendors alike to review and ask us
 questions about them - please review our complete site map:
 
-  [http://www.apache.org/foundation/marks/resources](/foundation/marks/resources)
+  [https://www.apache.org/foundation/marks/resources](/foundation/marks/resources)
 
 On the registration front, we continue to work with counsel to process 
 renewals and registrations for projects.  While most are straightforward, 
@@ -89,7 +89,7 @@ Source as well as brand management is published online, and we urge
 project participants and software vendors alike to review and ask us
 questions about them - please review our complete site map:
 
-  [http://www.apache.org/foundation/marks/resources](/foundation/marks/resources)
+  [https://www.apache.org/foundation/marks/resources](/foundation/marks/resources)
 
 On the registration front, we have come upon our first large set of 
 trademark registration renewals and maintenance paperwork.  Although 
@@ -203,7 +203,7 @@ donations of profits from the vendors.
 All of the ASF's education and policies around trademark law for Open
 Source as well as brand management is published online, and we urge
 project participants and software vendors alike to review and ask us
-questions about them: http://www.apache.org/foundation/marks/resources
+questions about them: https://www.apache.org/foundation/marks/resources
 
 On the registration front, we are facing more potential conflicts with
 the few projects that request registrations than in the past. The
@@ -256,7 +256,7 @@ source as well as brand management is published online, and we urge
 project participants and software vendors alike to review and ask us
 questions about them:
 
-  http://www.apache.org/foundation/marks/resources
+  https://www.apache.org/foundation/marks/resources
 
 On the registration front, we continue to get some projects who request
 registration of names or beloved logos in the US and internationally. We
@@ -296,7 +296,7 @@ to other valuable open source branding guidelines and information is
 improving our ability to respond, as seen by the more detailed questions
 we get from third parties, as well as by the ability of some experienced
 projects to handle brand enforcement more independently.
-http://www.apache.org/foundation/marks/resources
+https://www.apache.org/foundation/marks/resources
 
 While open source and the project communities are well understood in
 industry these days, open source *governance* and brand management are
@@ -340,7 +340,7 @@ to other valuable Open Source branding guidelines and information is
 continuing to improve with more detailed process guides for community
 brand management.
 
-http://www.apache.org/foundation/marks/resources
+https://www.apache.org/foundation/marks/resources
 
 Our VP, Brand Management gave an expanded community branding talk at
 ApacheCon in Vancouver with great feedback, showing the benefits of a
@@ -388,7 +388,7 @@ improving our ability to respond, as seen by the more detailed questions
 we get from third parties, as well as by the ability of some projects to
 handle brand enforcement more independently.
 
-  http://www.apache.org/foundation/marks/resources
+  https://www.apache.org/foundation/marks/resources
 
 While open source and the project communities are well understood in
 industry these days, open source *governance* and brand management are
@@ -427,7 +427,7 @@ project brands.  We now have a detailed list of trademark and branding
 resources available for our communities as well as vendors who work with
 Apache projects:
 
-  http://www.apache.org/foundation/marks/resources
+  https://www.apache.org/foundation/marks/resources
 
 Along with presenting on trademark basics at ApacheCon conferences, our
 VP of Brand Management was invited to speak on a panel discussion about

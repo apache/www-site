@@ -13,11 +13,11 @@ Project to keep up to date about upcoming conferences. See also the [archive of 
 
 - Join the [discuss mailing list](mailto:discuss-subscribe@apachecon.com) to discuss an event with other attendees. See also the [archive of this list](https://lists.apache.org/list.html?apachecon-discuss@apache.org) for past discussions.
 
-- Visit the [conferences calendar](http://community.apache.org/calendars/conferences.html) 
+- Visit the [conferences calendar](https://community.apache.org/calendars/conferences.html) 
 to see what Apache conferences are coming up
 
 - Find out what topics will be covered on the [official ApacheCon
-website](http://apachecon.com/) 
+website](https://apachecon.com/) 
 
 - Read the [Third Party Event Branding](/foundation/marks/events.html) policy to learn how
  external organisations can apply to use our marks for their events
@@ -25,7 +25,7 @@ website](http://apachecon.com/)
 <a name="apachecon"></a>
 ## Upcoming ApacheCons
 
-The latest news on ApacheCon is always available on the [ApacheCon Website](http://www.apachecon.com/)
+The latest news on ApacheCon is always available on the [ApacheCon Website](https://www.apachecon.com/)
 
 <a name="mailinglists"></a>
 ## Mailing Lists
@@ -60,5 +60,5 @@ and how to apply for approval, see the [Third Party Event Branding](/foundation/
 ## Past ApacheCons
 
 For more information on past ApacheCon conferences, including past track listings, past speakers and
-past sessions, visit the [ApacheCon Archive Site](http://apachecon.com/c/).
+past sessions, visit the [ApacheCon Archive Site](https://apachecon.com/c/).
 

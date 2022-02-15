@@ -19,8 +19,8 @@ an excellent piece of software, but as an example of how free, community-driven 
 historical events and important philosophical decisions made over the years which have made Apache successful.
 
 We could use your help!  As always, patches are welcome!
-The best place to get involved is with the [Community Development project](http://community.apache.org/) if you're interested in helping.  They have a [public mailing list for 
-community discussions](http://mail-archives.apache.org/mod_mbox/community-dev/) available to all.
+The best place to get involved is with the [Community Development project](https://community.apache.org/) if you're interested in helping.  They have a [public mailing list for 
+community discussions](https://mail-archives.apache.org/mod_mbox/community-dev/) available to all.
 
 - [Purpose and goals of these History pages](goals.html) 
 
@@ -28,9 +28,9 @@ community discussions](http://mail-archives.apache.org/mod_mbox/community-dev/) 
 
 - [Graph of the Board of Directors, over time](directors.html)
 
-- [Early timeline of the Apache HTTP Web Server project](http://httpd.apache.org/ABOUT_APACHE.html) 
+- [Early timeline of the Apache HTTP Web Server project](https://httpd.apache.org/ABOUT_APACHE.html) 
 
-- [Graphical timelines of committer and project growth](http://people.apache.org/~curcuru/timeline/)
+- [Graphical timelines of committer and project growth](https://people.apache.org/~curcuru/timeline/)
 
 - [History of the Apache mirror system](mirror-history.html)
 
@@ -44,9 +44,9 @@ For source code, there are various sites to visualize the changes, which include
 virtually all Apache source code:
 
 - <https://svn.apache.org/viewvc/>
-- <http://www.svnsearch.org/svnsearch/repos/ASF/search>
+- <https://www.svnsearch.org/svnsearch/repos/ASF/search>
 - <https://www.ohloh.net/orgs/apache>
-- <http://www.vimeo.com/1265258?pg=embed&sec=1265258> - a video visualization of SVN code
+- <https://www.vimeo.com/1265258?pg=embed&sec=1265258> - a video visualization of SVN code
 
 Similarly, mailing lists used by projects are all archived:
 

@@ -19,9 +19,9 @@ capture PayPal's template and subsequently spammed all of you with a fake
 receipt in an attempt to steal PayPal credentials. This is an unfortunate
 instance of Phishing. For more information on Phishing, see:
 
-- [http://www.antiphishing.org/](http://www.antiphishing.org/) 
+- [https://www.antiphishing.org/](https://www.antiphishing.org/) 
 
-- [http://en.wikipedia.org/wiki/Phishing](http://en.wikipedia.org/wiki/Phishing) 
+- [https://en.wikipedia.org/wiki/Phishing](https://en.wikipedia.org/wiki/Phishing) 
 
 If you do not use PayPal, you can simply ignore the spam email. If you do
 use PayPal, you should immediately contact PayPal's customer support to

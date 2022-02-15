@@ -26,7 +26,7 @@ Have a question?  This page will help you find the person who can help you.
 
 ## Infrastructure
 
-- [Status](http://status.apache.org/)
+- [Status](https://status.apache.org/)
 - [Committer](https://reference.apache.org/committer/start)
 - [PMC](https://reference.apache.org/pmc/start)
 - [Infra volunteer](/dev/infra-volunteer)
@@ -34,7 +34,7 @@ Have a question?  This page will help you find the person who can help you.
 
 ## Conferences
 
-- [Event Calendar](http://community.apache.org/calendars/)
+- [Event Calendar](https://community.apache.org/calendars/)
 - [Event Planning](/foundation/conferences.html)
 
 ## Travel Assistance

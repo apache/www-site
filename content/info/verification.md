@@ -83,8 +83,8 @@ In this example, you are already assumed to have downloaded
 `httpd-2.0.44.tar.gz` (the release) and `httpd-2.0.44.tar.gz.asc` (the
 detached signature).
 
-This example uses [The GNU Privacy Guard](http://www.gnupg.org/). Any
-[OpenPGP](http://www.openpgp.org/)-compliant program should work
+This example uses [The GNU Privacy Guard](https://www.gnupg.org/). Any
+[OpenPGP](https://www.openpgp.org/)-compliant program should work
 successfully.
 
 First, we will check the detached signature (`httpd-2.0.44.tar.gz.asc`)
@@ -102,7 +102,7 @@ If the .asc file is a self-contained signed file, GPG will only check that, and 
 This means that we don't have the release manager's public key (`DE885DD3`)
 in our local system. You now need to retrieve the public key from a key
 server. One popular server is `pgpkeys.mit.edu` (which has a [web
-interface](http://pgp.mit.edu/) ). The public key servers are linked
+interface](https://pgp.mit.edu/) ). The public key servers are linked
 together, so you should be able to connect to any key server.
 
     % gpg --keyserver pgpkeys.mit.edu --recv-key DE885DD3
@@ -162,7 +162,7 @@ authenticity of a key. Some people are satisfied by reading the key
 signature over a telephone (voice verification). For more information on
 determining what level of trust works best for you, please read the GNU
 Privacy Handbook section on [Validating other keys on your public
-keyring](http://www.gnupg.org/gph/en/manual.html#AEN335).
+keyring](https://www.gnupg.org/gph/en/manual.html#AEN335).
 
 Most of the Apache HTTP Server developers have attempted to sign each
 others' keys (usually with face-to-face validation). Therefore, in order to

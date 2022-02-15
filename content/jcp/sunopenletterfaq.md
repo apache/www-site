@@ -10,9 +10,9 @@ We have created the following FAQ to provide background information on the
         charity that, among other things, provides a foundation for
         open, collaborative software development projects by supplying
         hardware, communication, and business infrastructure.  The
-        Foundation website is http://www.apache.org and you can read
+        Foundation website is https://www.apache.org and you can read
         more about the Foundation at
-        http://www.apache.org/foundation/faq.html
+        https://www.apache.org/foundation/faq.html
 
     Q : What is the Apache Harmony project?
     A : Apache Harmony is a project of the Apache Software Foundation
@@ -20,7 +20,7 @@ We have created the following FAQ to provide background information on the
         of Java SE.  That means we're writing the whole implementation
         from scratch, or incorporating software from other open source
         projects.  You can read more about the Apache Harmony project
-        at its website http://harmony.apache.org
+        at its website https://harmony.apache.org
 
     Q : Why was Harmony created?
     A : Harmony was created for many reasons.  The fundamental reason is the same as
@@ -129,7 +129,7 @@ We have created the following FAQ to provide background information on the
         Microsystems made a public commitment to the Java community
         that Sun-led specifications would be implementable in free and
         open source software.  That commitment can be found here :
-        http://jcp.org/aboutJava/communityprocess/announce/LetterofIntent.html
+        https://jcp.org/aboutJava/communityprocess/announce/LetterofIntent.html
 
     Q : Is it true that Java SE 5 was the first of the Java SE JSRs to
         be released under the above-mentioned FOSS-friendly JCP terms?
@@ -148,7 +148,7 @@ We have created the following FAQ to provide background information on the
         implementation that passes the TCK (or in this case, the JCK).
 
     Q : Who was the spec lead for the Java SE 5 JSR?
-    A : Sun.  See http://jcp.org/en/jsr/detail?id=176
+    A : Sun.  See https://jcp.org/en/jsr/detail?id=176
 
     Q : Is Apache the first to ask for a JCK license?
     A : No.  There are many JCK licensees.  It is our understanding
@@ -181,10 +181,10 @@ We have created the following FAQ to provide background information on the
     Q : Is a "field of use" restriction incompatible with both open
         source and free software principles?
     A : Yes, both.  See the Open Source Initiative's open source
-        definition (http://www.opensource.org/docs/osd), most notably
+        definition (https://www.opensource.org/docs/osd), most notably
         section 6 and 10 and the Free Software Foundation's free
         software definition
-        (http://www.gnu.org/philosophy/free-sw.html) most notably
+        (https://www.gnu.org/philosophy/free-sw.html) most notably
         freedom #0.
 
     Q : Would the ASF be satisfied with a TCK license that removed the

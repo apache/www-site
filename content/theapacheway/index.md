@@ -930,7 +930,7 @@ Please enable JavaScript to see a related quote ...
 </ul>
 <h5>Important:</h5>
 <ul>
-<li><strong><u>Independence:</u></strong> the ASF is strictly vendor neutral. No organization is able to gain special privileges or control a project’s direction, irrespective of employing Committers to work on Apache projects or sponsorship status. More on <a href="http://community.apache.org/projectIndependence.html">project independence</a>.</li>
+<li><strong><u>Independence:</u></strong> the ASF is strictly vendor neutral. No organization is able to gain special privileges or control a project’s direction, irrespective of employing Committers to work on Apache projects or sponsorship status. More on <a href="https://community.apache.org/projectIndependence.html">project independence</a>.</li>
 <br />
 <li><strong><u>Community Over Code:</u></strong> the maxim "Community Over Code" is frequently reinforced throughout the Apache community, as the ASF asserts that a healthy community is a higher priority than good code. Strong communities can always rectify problems with their code, whereas an unhealthy community will likely struggle to maintain a codebase in a sustainable manner. More on healthy <a href="https://community.apache.org/">community development</a>.</li>
 <br />

@@ -35,10 +35,10 @@ information confidential unless otherwise indicated. Note that we will not reply
 any emails **not** relating to security vulnerabilities.
 
 - For problems with the foundation top-level **websites** (such as
-`http://www.apache.org/`,
-`http://people.apache.org/`,
-`http://home.apache.org/`,
-`http://projects.apache.org`, but excluding Web sites of individual Apache
+`https://www.apache.org/`,
+`https://people.apache.org/`,
+`https://home.apache.org/`,
+`https://projects.apache.org`, but excluding Web sites of individual Apache
 Projects), please email **webmaster@apache.org**. Issues with any individual 
 Apache project's web page should go to that project's dev@ mailing list. 
 

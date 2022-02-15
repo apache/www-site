@@ -1,4 +1,4 @@
-Atom: http://mail-archives.apache.org/mod_mbox/www-community/?format=atom
+Atom: https://mail-archives.apache.org/mod_mbox/www-community/?format=atom
 Title: Committers' FAQs
 license: https://www.apache.org/licenses/LICENSE-2.0
 

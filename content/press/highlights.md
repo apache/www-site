@@ -190,12 +190,12 @@ innovation in Open Source software and community development. Nearly 300 ASF
 Members collaborate successfully with more than 2,000 Committers; 68
 Top Level Projects, 35 initiatives in the Incubator, and 23 Labs
 concepts are currently active at the Foundation.
-[ApacheCon Europe 2009](http://www.eu.apachecon.com/c/aceu2009/)
+[ApacheCon Europe 2009](https://www.eu.apachecon.com/c/aceu2009/)
 was held 23-27 March in Amsterdam, with the Hackathon (face-to-face
 Apache project-related collaboration/development with ASF Members
 and Committers) open to the public and including another BarCamp. 10th
 Anniversary celebrations continued at
-[ApacheCon US 2009](http://www.us.apachecon.com/c/acus2009/), 
+[ApacheCon US 2009](https://www.us.apachecon.com/c/acus2009/), 
 in Oakland 2-6 November, where both the [Governor of California and 
 the Mayor of Oakland congratulated Apache](https://blogs.apache.org/foundation/entry/governor_schwarzenegger_and_mayor_dellums) on its success.
 
@@ -273,7 +273,7 @@ find out about the history of the ASF include:
 For any issues not addressed in the individual links above, you may
 [contact us](mailto:press@apache.org?subject=[Highlights]%20I%20need%20more%20highlights).
 All technical questions or questions about
-[individual projects](http://projects.apache.org/)
+[individual projects](https://projects.apache.org/)
 should always be directed to the appropriate
 [project mailing list](/foundation/mailinglists.html).
 You may also

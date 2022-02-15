@@ -1,6 +1,6 @@
 Title: ASF Source Header and Copyright Notice Policy
-Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom "ASF legal-discuss Mailing List"
-Comment: atom header to get a link like: "<link rel="alternate" title="ASF legal-discuss Mailing List" type="application/atom+xml" href="http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom" />" in the generated html header (in the body it would be trivial)
+Atom: https://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom "ASF legal-discuss Mailing List"
+Comment: atom header to get a link like: "<link rel="alternate" title="ASF legal-discuss Mailing List" type="application/atom+xml" href="https://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom" />" in the generated html header (in the body it would be trivial)
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 ## Purpose and intended audience  {#purpose}
@@ -52,7 +52,7 @@ This section refers only to works submitted directly to the ASF by the copyright
     "License"); you may not use this file except in compliance
     with the License.  You may obtain a copy of the License at
 
-      http://www.apache.org/licenses/LICENSE-2.0
+      https://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing,
     software distributed under the License is distributed on an
@@ -85,7 +85,7 @@ This section refers only to works submitted directly to the ASF by the copyright
     Copyright [XXXX-XXXX] The Apache Software Foundation
 
     This product includes software developed at
-    The Apache Software Foundation (http://www.apache.org/).
+    The Apache Software Foundation (https://www.apache.org/).
 
  </li>
  <li id="notice-other">Use the remainder of the NOTICE file to include [required third-party notices][1].  

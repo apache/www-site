@@ -60,7 +60,7 @@ Avoid sharing negative stories about "competing" projects.
 
 **Don't use Apache project social media accounts to promote unrelated commercial activities.**
 
-* Apache projects must be [governed independently of commercial influence](http://community.apache.org/projectIndependence.html).
+* Apache projects must be [governed independently of commercial influence](https://community.apache.org/projectIndependence.html).
 * As a vendor-neutral non-profit, the ASF and all Apache projects do not take sides, or endorse or support any particular vendor over other vendors.  Supporting one vendor over another, or posting information critical of a specific vendor is not a good idea.
 
 **When in doubt, ask**
@@ -85,7 +85,7 @@ for use of social media using Apache brands, and do not
 override or replace our [formal Trademark Policy](/foundation/marks/).
 If you have any questions about trademarks or branding, please [read our trademark resources][resources] or [contact us](/foundation/marks/contact).
 If you have questions or suggestions about these guidelines, please [contact the
-Community Development PMC](http://community.apache.org/).
+Community Development PMC](https://community.apache.org/).
 
 Thanks and credit to the [Apache CloudStack Social Media Guidelines](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Social+Media+Guidelines).
 

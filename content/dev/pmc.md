@@ -211,7 +211,7 @@ will send a reply-all response to `board@`.
 
 ### Why would a project move to the Attic?  {#move-to-attic}
 
-As described on [its homepage](http://attic.apache.org), the Attic is meant
+As described on [its homepage](https://attic.apache.org), the Attic is meant
 to _provide oversight for projects which otherwise would not have oversight_.
 
 It's fine for ASF projects to be mature and quiet, with little development
@@ -416,7 +416,7 @@ decide how they want to handle this issue:
 
  - You **must** notify root@apache.org and secretary@apache.org. This will allow the person's account to be disabled,
 and any necessary Foundation records to be updated.
- - [http://home.apache.org/](http://home.apache.org/) is generated from
+ - [https://home.apache.org/](https://home.apache.org/) is generated from
    LDAP. A community may wish to keep the person's association for posterity.
    It is also perfectly acceptable to adjust LDAP using **modify_committee.pl**
    and to adjust **[committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)** as appropriate.
@@ -641,7 +641,7 @@ There are two main ways to check the membership of PMCs and LDAP groups:
   - Committers can view, and PMC chairs can update, PMC rosters using 
 [Whimsy](https://whimsy.apache.org/roster/committee/).
   - Anyone may view Apache Phonebook pages at [https://home.apache.org/phonebook.html](https://home.apache.org/phonebook.html).
-From there you can link to a specific PMC like this: [home.apache.org/phonebook.html?pmc=gump](http://home.apache.org/phonebook.html?pmc=gump)
+From there you can link to a specific PMC like this: [home.apache.org/phonebook.html?pmc=gump](https://home.apache.org/phonebook.html?pmc=gump)
 
 Please allow time for any changes to LDAP and committee-info.txt to propagate to the Phonebook app.
 

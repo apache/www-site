@@ -144,7 +144,7 @@ chair should consider each of these questions when writing a report.
      Aside from the report, if the project is planning major announcements, get in touch with the Marketing and Publicity Committee at `press@apache.org` to coordinate announcements and press releases.
      
      Conversely, if activity is minimal, discuss how the project plans to address that -
-     whether through seeking out new contributors, maintaining a dormant but available state, or preparing to move to the [Apache Attic](http://attic.apache.org/).  If you need help with attracting new contributors, you can ask [Apache Community Development][2] for tips.
+     whether through seeking out new contributors, maintaining a dormant but available state, or preparing to move to the [Apache Attic](https://attic.apache.org/).  If you need help with attracting new contributors, you can ask [Apache Community Development][2] for tips.
 
  - When were the newest committers or PMC members elected? **[REQUIRED]**
 
@@ -312,7 +312,7 @@ As you can see, ensuring we receive your report on time, that it includes all ne
 
 
   [1]: /foundation/marks/pmcs#naming
-  [2]: http://community.apache.org/
+  [2]: https://community.apache.org/
   [3]: /foundation/marks/reporting
   [4]: /foundation/marks/pmcs#checklist
   [5]: https://whimsy.apache.org/board/agenda/

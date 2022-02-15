@@ -46,9 +46,9 @@ mechanism which runs [Buildbot](https://ci2.apache.org/#/builders/3/).
 - [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and pelican. See [asfdata.py](https://github.com/apache/infrastructure-pelican/blob/master/plugins/asfdata.py).
 - [ASF YAML Pelican Build](.asf.yaml) -- ASF infrastructure instructions
 
-The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
+The [svn history](https://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
 
-Foundation records, including minutes of Board meetings, remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
+Foundation records, including minutes of Board meetings, remain in [svn](https://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
 except for the [index page](content/foundation/records/index.md).
 
 Also the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
@@ -74,7 +74,7 @@ You will also need Git, and familiarity with working in a command-line shell.
 - Create a dummy authorisation file: `touch .authtokens`
 - Start the continuous builder: `docker run -it -p8000:8000 -v $PWD:/site pelican-asf`
 - this will generate a lot of output, but will eventually stop.
-- browse to http://localhost:8000/
+- browse to https://localhost:8000/
 
 If you make changes to the local copy of www-site, these will be automatically built, and should
 appear in the browser when the page is refreshed.

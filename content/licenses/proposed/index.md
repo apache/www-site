@@ -11,7 +11,7 @@ regarding patents and contributing.
 Discussion of these licenses took place on the "license" mailing list at
 apache.org, which has since been closed, but [archives of the license
 mailing
-list](http://issues.apache.org/eyebrowse/SummarizeList?listName=license@apache.org&by=thread)
+list](https://issues.apache.org/eyebrowse/SummarizeList?listName=license@apache.org&by=thread)
 are available. Please note that the licenses have been updated on December
 24, 2003, and January 20, 2004, to reflect the first two rounds of comments
 by the public. The primary 2.0 license was approved by the ASF board on
@@ -88,7 +88,7 @@ actual citations within source files much shorter than before.*
 
 ## Apache License, version 2.0  {#2.0}
 
-[http://www.apache.org/licenses/LICENSE-2.0](../LICENSE-2.0.txt) 
+[https://www.apache.org/licenses/LICENSE-2.0](../LICENSE-2.0.txt) 
 
 A big thank you goes out to all those who commented on the proposals. The
 Apache License, version 2.0, was approved for use by Apache projects as of
@@ -97,13 +97,13 @@ license by March 1, 2004.
 
 ## Apache JSR License, version 2.0 (proposed)  {#JSR}
 
-[http://www.apache.org/licenses/proposed/JSR-LICENSE-2.0.txt](JSR-LICENSE-2.0.txt) 
+[https://www.apache.org/licenses/proposed/JSR-LICENSE-2.0.txt](JSR-LICENSE-2.0.txt) 
 
 The JSR license has not yet been approved for use by Apache projects. This
 license is for use by Apache projects that produce the official Reference
 Implementation of a Java Specification Request, or an Independent
 Implementation claiming conformance to a JSR, as part of the [Java
-Community Process](http://www.jcp.org/). The JSPA rules specifically
+Community Process](https://www.jcp.org/). The JSPA rules specifically
 require that the RI and compliant Independent Implementations be licensed
 under terms that restrict the ability to modify the reserved namespace
 "javax.*" and license the patent grants of expert group contributors under
@@ -113,12 +113,12 @@ innovation.
 
 ## Apache TCK License, version 2.0 (proposed)  {#TCK}
 
-[http://www.apache.org/licenses/proposed/TCK-LICENSE-2.0.txt](TCK-LICENSE-2.0.txt) 
+[https://www.apache.org/licenses/proposed/TCK-LICENSE-2.0.txt](TCK-LICENSE-2.0.txt) 
 
 The TCK license has not yet been approved for use by Apache projects. This
 license is for use by Apache projects that produce the official Technology
 Compatibility Kit of a Java Specification Request as part of the [Java
-Community Process](http://www.jcp.org/). It would only be applied to code
+Community Process](https://www.jcp.org/). It would only be applied to code
 specific to a given specification's TCK, with the rest of the code being
 placed under the 2.0 license.
 

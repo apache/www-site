@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 Here is a directory of technical details pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
 
-If you can't find information here, ask on your project's mailing list, or contact the [Community Development](http://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
+If you can't find information here, ask on your project's mailing list, or contact the [Community Development](https://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
 
 - [Infrastructure](#infrastructure)
 - [Committers and Contributors](#committers)
@@ -40,7 +40,7 @@ If you can't find information here, ask on your project's mailing list, or conta
 -  [Guide for project committers](new-committers-guide.html) 
     -  How committers can [publish a personal website](new-committers-guide.html#personal-web-space) 
     -  General [Committers FAQ](committers.html) 
-    -  Crowd funding [Community funding disclaimer](http://community.apache.org/committers/funding-disclaimer.html)
+    -  Crowd funding [Community funding disclaimer](https://community.apache.org/committers/funding-disclaimer.html)
 
 ## Project Management Committees (PMCs)  {#pmc}
 
@@ -92,27 +92,27 @@ How to
 -  <a href="https://infra.apache.org/release-signing.html" target="_blank">Signing releases</a>
 -  How to <a href="https://infra.apache.org/openpgp.html" target="_blank">Use OpenPGP for key management</a> 
 -  How to <a href="https://infra.apache.org/key-transition.html" target="_blank">transition to a longer key</a>
--  [Releases from Incubating projects](http://incubator.apache.org/policy/incubation.html#releases) 
+-  [Releases from Incubating projects](https://incubator.apache.org/policy/incubation.html#releases) 
 
 ## Issue and Bug Tracking  {#issues}
 
-Each project uses their own [issue tracker](http://issues.apache.org/) to 
+Each project uses their own [issue tracker](https://issues.apache.org/) to 
 track bugs, enhancement requests, and other action items - typically JIRA, BugZilla, or GitHub Issues.
-Every Apache project decides how to track issues, so check the [project website](http://projects.apache.org/indexes/quick.html) of the project in which you are interestaed to learn what they use.
+Every Apache project decides how to track issues, so check the [project website](https://projects.apache.org/indexes/quick.html) of the project in which you are interestaed to learn what they use.
 
 ## Mailing Lists  {#mail}
 
 - Please read the [Public Forum Archive Policy](/foundation/public-archives.html) before posting on any Apache mailing list!
 - [Subscription instructions and netiquette](/foundation/mailinglists.html) for all Apache mailing lists.
-- All Apache projects have their own [set of project-specific mailing lists](http://projects.apache.org/indexes/quick.html).
+- All Apache projects have their own [set of project-specific mailing lists](https://projects.apache.org/indexes/quick.html).
 - There are [some other non-project](/foundation/mailinglists.html) mailing lists, such as `legal-discuss@`, `community@` and various announcement lists.
 -  [Privacy notes](/foundation/mailinglists.html) about non-public lists and about [balancing confidentiality and public discussion](/foundation/how-it-works.html#confidential).
 -  [Email etiquette tips for contributors](contrib-email-tips) 
 -  How to [moderate Apache mailing lists](committers.html#mail-moderate) 
 -  All Apache mailing lists are archived:
-    - Read most Apache [list archives on mail-archives.apache.org](http://mail-archives.apache.org/mod_mbox/) by going to the specific project list, then append the mbox filename to the URL (e.g. [mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox](mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox))
+    - Read most Apache [list archives on mail-archives.apache.org](https://mail-archives.apache.org/mod_mbox/) by going to the specific project list, then append the mbox filename to the URL (e.g. [mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox](mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox))
     - Raw mbox archive files are available for every mailing list.
-    - Each project website has a "mail" directory, e.g. [httpd.apache.org/mail/](http://httpd.apache.org/mail/)
+    - Each project website has a "mail" directory, e.g. [httpd.apache.org/mail/](https://httpd.apache.org/mail/)
 (see [notes](/dev/project-site.html#mail)).
     - For top-level/non-project mailing lists see [www.apache.org/mail/](/mail/) directory.
 

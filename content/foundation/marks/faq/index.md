@@ -47,7 +47,7 @@ project homepage and to the ASF.  For example, to
 provide an attribution for Apache Hadoop and its yellow elephant logo
 (using basic HTML with hyperlinks):  
 
->   Apache&reg;, <a href="http://hadoop.apache.org/">Apache Hadoop, Hadoop&reg;</a>, 
+>   Apache&reg;, <a href="https://hadoop.apache.org/">Apache Hadoop, Hadoop&reg;</a>, 
    and the yellow elephant logo are either registered trademarks or trademarks 
    of the <a href="/">Apache Software Foundation</a>
    in the United States and/or other countries.
@@ -167,7 +167,7 @@ acceptable, provided that you meet **all** of the other requirements:
 
     - Any primary product home pages or landing pages for the SuperThing product must include a 
     link from the homepage named "Apache *Spark*" pointing to the actual Apache 
-    project home page at http://*spark*.apache.org/  Note that you **must** include 
+    project home page at https://*spark*.apache.org/  Note that you **must** include 
     "Apache" before the product mark.
 
     - You product name **must** consistently use the "Apache Spark" version of the Apache 

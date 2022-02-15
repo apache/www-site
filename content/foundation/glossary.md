@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 This glossary provides a brief description of some of the organizational 
 terms used at the ASF and in Apache projects.  For more information 
 about anything Apache, see the [/dev documentation](/dev/) or the 
-[Community Development project](http://community.apache.org/).   
+[Community Development project](https://community.apache.org/).   
 
 ----
 
@@ -14,7 +14,7 @@ about anything Apache, see the [/dev documentation](/dev/) or the
 <dd>
 
 The official developer and user conference of the ASF (see the
-[ApacheCon Web site](http://ApacheCon.Com/) ).
+[ApacheCon Web site](https://ApacheCon.Com/) ).
 
 </dd>
 
@@ -41,7 +41,7 @@ The Apache Software Foundation, a non-profit organization.
 
 A location for discontinued, abandoned, and retired
 [codebases](#Codebase) and [projects](#Project). The 
-[Apache Attic project](http://attic.apache.org)
+[Apache Attic project](https://attic.apache.org)
 preserves the information for posterity, reference, and potential
 future re-activation, while keeping it clearly distinct from active
 work.
@@ -59,7 +59,7 @@ things, the board approves or rejects resolutions brought before it,
 such as for the creation or dissolution of ASF [projects](#Project) ,
 funding requests, legal concerns, and disciplinary actions. As an open
 and non-profit corporation, the ASF makes the minutes of board meetings publicly available at
-[http://www.apache.org/foundation/records/minutes/](/foundation/records/minutes/).
+[https://www.apache.org/foundation/records/minutes/](/foundation/records/minutes/).
 These minutes include all decisions not made in [executive
 sessions](#ExecutiveSession). Also see [Director](#Director).
 
@@ -70,7 +70,7 @@ sessions](#ExecutiveSession). Also see [Director](#Director).
 <dd>
 
 Arguing (pointlessly) about which color to paint the bikeshed. As
-explained [here](http://www.unixguide.net/freebsd/faq/16.19.shtml) it
+explained [here](https://www.unixguide.net/freebsd/faq/16.19.shtml) it
 may happen when the argument is so trivial that it's easy for anyone
 to have an opinion, and want to see theirs prevail.
 
@@ -93,7 +93,7 @@ development at the Foundation.
 Bylaws are a codification of the rules that an organisation follows.
 Some, such as the [ASF bylaws](/foundation/bylaws.html), are legally
 binding and have significance outside the organisation. Others, such
-as the [Jakarta bylaws](http://jakarta.apache.org/site/management.html), are only
+as the [Jakarta bylaws](https://jakarta.apache.org/site/management.html), are only
 meaningful within the [community](#Community) and are only as binding
 as the community itself makes them. The bylaws of an organisation 
 within the ASF may not contradict those of the ASF proper; any such
@@ -415,7 +415,7 @@ given to their opinions grow.
 
 Netiquette is the common rules of good online
 behaviour. For the general case, it is defined in [IETF RFC
-1855](http://www.faqs.org/rfcs/rfc1855.html) ; for the more specific
+1855](https://www.faqs.org/rfcs/rfc1855.html) ; for the more specific
 Apache environment, it boils down to things like:
 
 - don't flame
@@ -494,7 +494,7 @@ legal protections and responsibilities implied. See the
 
 A [codebase](#Codebase) and its [community](#Community) while in the
 process of being incubated. See the description of the [Incubation
-process](http://incubator.apache.org/incubation/Process_Description.html).
+process](https://incubator.apache.org/incubation/Process_Description.html).
 
 </dd>
 
@@ -565,7 +565,7 @@ work on the main branch. A revolutionary branch may eventually be
 merged back into the main branch, die out, split completely and become
 a new main branch, or may absorb the current main branch into itself
 (essentially no different than the first option). See the ' [Rules for
-Revolutionaries](http://incubator.apache.org/learn/rules-for-revolutionaries.html)
+Revolutionaries](https://incubator.apache.org/learn/rules-for-revolutionaries.html)
 ' and compare [Evolution](#Evolution).
 
 </dd>
@@ -625,7 +625,7 @@ investigating the project.
 <dd>
 
 Single Transferable Vote, used in Apache board elections for example.
-See [http://en.wikipedia.org/wiki/Single_Transferable_Vote][1]
+See [https://en.wikipedia.org/wiki/Single_Transferable_Vote][1]
 
 </dd>
 
@@ -683,12 +683,12 @@ is.
 
 Some definitions:
 
--  [Gentle](http://www.askdavetaylor.com/whats_a_troll_and_a_zombie.html) 
--  [Naughty](http://www.urban75.com/Mag/troll.html) 
--  [Definitive](http://en.wikipedia.org/wiki/Internet_trolls) 
+-  [Gentle](https://www.askdavetaylor.com/whats_a_troll_and_a_zombie.html) 
+-  [Naughty](https://www.urban75.com/Mag/troll.html) 
+-  [Definitive](https://en.wikipedia.org/wiki/Internet_trolls) 
      
-For how to deal with trolls, see [this thread](http://markmail.org/message/3wlpx2hafyeqdt4t) but (for those who
-are impatient) here's [Ted's opinion](http://markmail.org/message/sppexq2vcfewcm5a) 
+For how to deal with trolls, see [this thread](https://markmail.org/message/3wlpx2hafyeqdt4t) but (for those who
+are impatient) here's [Ted's opinion](https://markmail.org/message/sppexq2vcfewcm5a) 
 (which acts as a good summary).
 
 </dd>
@@ -771,6 +771,6 @@ process](voting.html).
 </dd>
 </dl>
 
-  [1]: http://en.wikipedia.org/wiki/Single_Transferable_Vote
+  [1]: https://en.wikipedia.org/wiki/Single_Transferable_Vote
 
 

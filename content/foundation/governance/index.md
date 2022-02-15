@@ -120,8 +120,8 @@ Committers are elected separately for every project; merit within one project
 is not necessarily transferable to other projects. Committers also have access 
 to a one Foundation-wide committer repository, where a few extra services and 
 tools useful for doing Apache project work are available. Committers may also 
-list themselves in our [worldwide listing of committers](http://people.apache.org/)
-, as well as within our [Community Development mentoring program](http://community.apache.org/localmentors.html). 
+list themselves in our [worldwide listing of committers](https://people.apache.org/)
+, as well as within our [Community Development mentoring program](https://community.apache.org/localmentors.html). 
 
 # Non-Governance Groups At Apache  {#other}
 
@@ -187,4 +187,4 @@ officer whenever possible.
 
 * [Public Records of the ASF](/foundation/records/)
 * [How It Works, a Guide to the ASF](/foundation/how-it-works.html)
-* [Welcome To Newcomers - Community Development project](http://community.apache.org/) 
+* [Welcome To Newcomers - Community Development project](https://community.apache.org/) 

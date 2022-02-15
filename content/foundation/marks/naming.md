@@ -149,7 +149,7 @@ The above search string is a good starting search query for most software produc
 - **GS**: for the Goods & Services description, we typically are only concerned with software products (sometimes for computers)
 - **LD**: means Live trademarks only; either applications in process or currently registered marks (not including Dead marks, ones that were never granted or have expired)
 
-Note that there is a reasonable [query syntax for the USPTO freeform search](http://tmsearch.uspto.gov/webaka/html/help.htm),
+Note that there is a reasonable [query syntax for the USPTO freeform search](https://tmsearch.uspto.gov/webaka/html/help.htm),
 in particular if you need to search variants or phonetic versions of your name.
 
 **Important: USPTO URLs**
@@ -211,18 +211,18 @@ an issue either way.
 If the trademarks have been legally transferred to the ASF, the donating organization should work with VP Brand to equitably handle the matter.  The ASF's need is to protect the trademarks of all of our active project communities.  Podlings that have exited incubation without graduating are not something we have a continued interest in maintaining.
 
 
-[1]: http://apache.org/foundation/marks/pmcs.html#naming
-[2]: http://apache.org/foundation/marks/
-[3]: http://apache.org/dev/project-names.html
+[1]: https://apache.org/foundation/marks/pmcs.html#naming
+[2]: https://apache.org/foundation/marks/
+[3]: https://apache.org/dev/project-names.html
 [4]: https://issues.apache.org/jira/browse/PODLINGNAMESEARCH
 [5]: https://issues.apache.org/jira/browse/PODLINGNAMESEARCH-26
 [6]: https://issues.apache.org/jira/browse/PODLINGNAMESEARCH-27
-[uspto]: http://www.uspto.gov/trademarks-application-process/search-trademark-database
-[euorg]: http://oami.europa.eu
-[canada]: http://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/tmSrch.do?lang=eng
-[china]: http://www.chinatrademarkoffice.com/
-[india]: http://ipindiaonline.gov.in/tmrpublicsearch/frmmain.aspx
-[world]: http://www.wipo.int/branddb/en/
+[uspto]: https://www.uspto.gov/trademarks-application-process/search-trademark-database
+[euorg]: https://oami.europa.eu
+[canada]: https://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/tmSrch.do?lang=eng
+[china]: https://www.chinatrademarkoffice.com/
+[india]: https://ipindiaonline.gov.in/tmrpublicsearch/frmmain.aspx
+[world]: https://www.wipo.int/branddb/en/
 [resources]: https://www.apache.org/foundation/marks/resources
 [incubator]: https://incubator.apache.org/
 [incubatorsite]: https://incubator.apache.org/guides/sites.html

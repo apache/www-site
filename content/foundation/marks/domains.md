@@ -175,7 +175,7 @@ no affiliation with and does not endorse or review the materials provided at
 this website, which is managed by *YourBigCo*.
 
 This may appear in page footers or in any other appropriate location. The
-"Apache Software Foundation" text should link to http://www.apache.org/ and
+"Apache Software Foundation" text should link to https://www.apache.org/ and
 the "used with permission" should link to this Domain Name Branding Requirements
 page.  Note that you **must** have a current written permission from the
 VP, Brand Management or the VP of the relevant Apache project to include the
@@ -192,7 +192,7 @@ appearance of any Apache logos when using them.
 
 Third party website branding may not include the Apache feather as a brand
 element in any way. The only use of the bare Apache feather or Apache logo
-on websites allowed is to provide a single link to http://www.apache.org/
+on websites allowed is to provide a single link to https://www.apache.org/
 as a reference to The Apache Software Foundation and its projects.
 
 # Do Not Use "Apache" And "ApacheCon" Names  {#apachecon}
@@ -249,7 +249,7 @@ disparage our communities or products are not welcome to use our marks in
 ways that might be infringing.
 
 Apache projects are run solely by their PMCs, as [projects independent of
-outside corporations or organizations](http://community.apache.org/projectIndependence.html).  It is important to maintain both
+outside corporations or organizations](https://community.apache.org/projectIndependence.html).  It is important to maintain both
 the actual independence of our PMCs from third parties, as well as to ensure
 that third parties do not use our marks to imply controlling, exclusive,
 or otherwise exclusionary relationships to our PMCs, projects, or communities.
