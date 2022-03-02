@@ -49,6 +49,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.capitalone.com/"><img src="images/capitalone-silver.png"/></a><p style="text-align: center; font-weight: bold;">Capital One</p></li>
       <li><a target="_blank" rel="sponsored" href="https://comcast.com/"><img src="images/comcast-silver.png"/></a><p style="text-align: center; font-weight: bold;">Comcast</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.didiglobal.com/"><img src="images/didi.png"/></a><p style="text-align: center; font-weight: bold;">Didi Chuxing</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://linecorp.com/"><img src="images/LINE-silver.png"/></a><p style="text-align: center; font-weight: bold;">LINE</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.replicated.com/"><img src="images/replicated-silver.png"/></a><p style="text-align: center; font-weight: bold;">Replicated</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.talend.com/"><img src="images/talend-silver.png"/></a><p style="text-align: center; font-weight: bold;">Talend</p></li>
