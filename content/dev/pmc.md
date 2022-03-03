@@ -415,11 +415,8 @@ the Foundation, it is bound to happen occasionally. Each community can
 decide how they want to handle this issue:
 
  - You **must** notify root@apache.org and secretary@apache.org. This will allow the person's account to be disabled,
-and any necessary Foundation records to be updated.
- - [http://home.apache.org/](http://home.apache.org/) is generated from
-   LDAP. A community may wish to keep the person's association for posterity.
-   It is also perfectly acceptable to adjust LDAP using **modify_committee.pl**
-   and to adjust **[committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)** as appropriate.
+   and any necessary Foundation records to be updated, for example removal from PMC/podling membership rosters
+   and cancellation of email subscriptions.
  - Feel free to add a page to our [memorial site](/memorials/). Many communities have
    gathered eulogies and remembrances.
 
