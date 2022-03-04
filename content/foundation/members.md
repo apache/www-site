@@ -37,6 +37,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | Id | Name | Projects |
 |----|------|----------|
 | aadamchik | Andrei Adamchik |
+| aajisaka | Akira Ajisaka | [Hadoop](https://hadoop.apache.org), [Yetus](https://yetus.apache.org) |
 | aaron | [Aaron Bannert](http://www.clove.org/~aaron/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [PHP](http://www.php.net/) , [commons](http://commons.apache.org/) , [incubator](http://incubator.apache.org/) , [flood](http://httpd.apache.org/test/flood/) , infrastructure|
 | ab | Andrzej Bialecki |
 | abaker | Anthony Baker | [Geode](https://geode.apache.org) |
