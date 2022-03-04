@@ -317,6 +317,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | kess | [Astrid Malo](mailto:kess@apache.org) | [httpd](http://httpd.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
 | kevan | Kevan Miller |
 | kevj | Kevin Jackson |
+| kezhenxu94 | [Zhenxu Ke](https://github.com/kezhenxu94) | [SkyWalking](https://skywalking.apache.org) |
 | kfogel | Karl Fogel |
 | kihwal | Kihwal Lee | [Hadoop](http://hadoop.apache.org) |
 | kiwiwings | Andreas Beeker | [POI](http://poi.apache.org) |
