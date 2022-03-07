@@ -542,6 +542,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | thilina | [Thilina Gunarathne](http://home.apache.org/~thilina/) | [Airavata](http://airavata.apache.org/) ; [Axis](http://axis.apache.org/) ; [WS](http://ws.apache.org/)|
 | thommay | Thom May | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; Infrastructure|
 | thorsten | Thorsten Scherler |
+| tison | [Zili Chen](http://github.com/tisonkun) | [Flink](https://flink.apache.org/), [Curator](https://curator.apache.org/) |
 | todd | Todd Lipcon |
 | tomaz | Tomaz Muraus | [Libcloud](https://libcloud.apache.org) |
 | tomc | Tom Chiverton | [Flex](http://flex.apache.org) , [CouchDB](http://couchdb.apache.org) |
