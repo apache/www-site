@@ -57,6 +57,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | amareshwari | Amareshwari Sriramadasu | [Hadoop](http://hadoop.apache.org/) , [Falcon](http://falcon.apache.org/),  [Hive](http://hive.apache.org/), [Lens](http://lens.apache.org) |
 | andreww | [Andrew Wetmore](mailto:andreww@apache.org) | [Royale](https://royale.apache.org), Infra |
 | angela | Angela Schreiber | [Jackrabbit](http://jackrabbit.apache.org/)|
+| anshum | Anshum Gupta | [Lucene](http://lucene.apache.org/), [Solr](http://solr.apache.org/) |
 | antelder | Ant Elder |
 | antoine | Antoine Levy-Lambert |
 | antonio | [Antonio Gallardo Rivera](http://home.apache.org/~antonio/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://forrest.apache.org/) , [Lenya](http://lenya.apache.org/)|
