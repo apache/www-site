@@ -304,6 +304,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | jukka | [Jukka Zitting](http://jukkaz.wordpress.com/) |  [Jackrabbit](http://jackrabbit.apache.org/)|
 | julianfoad | Julian Foad |
 | julien | [Julien Le Dem](https://twitter.com/J_) | [Parquet](http://parquet.apache.org) , [Arrow](http://arrow.apache.org), [Pig](http://pig.apache.org), [Tez](http://tez.apache.org) |
+| juzhiyuan | [Zhiyuan Ju](https://twitter.com/jjzhiyuan) | [APISIX](https://apisix.apache.org) |
 | jvermillard | [Julien Vermillard](http://home.apache.org/~jvermillard) | [MINA](http://mina.apache.org/)|
 | jzemerick | Jeff Zemerick |
 | kamaci | [Furkan KAMACI](http://home.apache.org/~kamaci) | [Gora](http://gora.apache.org), [Nutch](http://nutch.apache.org), [ManifoldCF](https://manifoldcf.apache.org/)|
