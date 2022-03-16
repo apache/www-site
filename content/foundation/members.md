@@ -253,6 +253,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | igalic | Igor Galić |
 | ilgrosso | Francesco Chicchiriccò | [Cocoon](http://cocoon.apache.org/) , [CXF](http://cxf.apache.org/), [Olingo](http://olingo.apache.org/), [OpenJPA](http://openjpa.apache.org/), [Syncope](http://syncope.apache.org/)|
 | isabel | Isabel Drost |
+| isudana | Isuru Udana | [Synapse](http://synapse.apache.org)
 | ivan | Ivan Zhakov | [Subversion](http://subversion.apache.org/) ; [Serf](http://serf.apache.org/) ; [APR](http://apr.apache.org/) |
 | ivaynberg | Igor Vaynberg |
 | jacopoc | Jacopo Cappellato | [OFBiz](http://ofbiz.apache.org)  |
