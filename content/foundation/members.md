@@ -53,6 +53,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | ajith | Ajith H Ranabahu |
 | akarasulu | [Alex Karasulu](mailto:akarasulu@apache.org) | [directory](http://incubator.apache.org/directory) ; [excalibur](http://excalibur.apache.org/) ; [jakarta](http://jakarta.apache.org/)|
 | akm | Andrew Musselman | [Mahout](http://mahout.apache.org) |
+| alfonsonishikawa | [Alfonso Nishikawa Muñumer](http://people.apache.org/~alfonsonishikawa) | [Gora](https://gora.apache.org) |
 | amaniatis | Aristedes Maniatis | [Cayenne](http://cayenne.apache.org/)|
 | amareshwari | Amareshwari Sriramadasu | [Hadoop](http://hadoop.apache.org/) , [Falcon](http://falcon.apache.org/),  [Hive](http://hive.apache.org/), [Lens](http://lens.apache.org) |
 | andreww | [Andrew Wetmore](mailto:andreww@apache.org) | [Royale](https://royale.apache.org), Infra |
