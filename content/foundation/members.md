@@ -531,6 +531,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | supun | Supun Kamburugamuva |
 | susie | Susan Wu |
 | sussman | Ben Collins-Sussman |
+| svogel | Sven Vogel | [CloudStack](http://cloudstack.apache.org) |
 | sylvain | [Sylvain Wallez](http://home.apache.org/~sylvain) | [Cocoon](http://cocoon.apache.org/) ; [Avalon](http://avalon.apache.org/)|
 | taher | Taher Alkhateeb | [OFBiz](http://ofbiz.apache.org/) |
 | tallison | Tim Allison | [PDFBox](http://pdfbox.apache.org/) ; [POI](http://poi.apache.org/) ; [Tika](http://tika.apache.org/) |
