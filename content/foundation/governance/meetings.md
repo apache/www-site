@@ -44,7 +44,7 @@ Many members have commented that they look for both a strong nomination statemen
 
 # Boad of Directors voting  {#boardvoting}
 
-## How we tally vots for Board members
+## How we tally votes for Board members
 
 The ASF uses Single Transferable Votes (STV) to elect candidates to all nine seats on the board annually.  Every candidate runs individually; there is no slate or block of candidates.  Only ASF Members can nominate people for the board election; and to date all candidates have already been ASF Members.
 
