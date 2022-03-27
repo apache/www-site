@@ -30,7 +30,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <ul id='gold'>
       <li><a target="_blank" rel="sponsored" href="https://apache.org/"><img src="images/blank.png"/></a><p style="text-align: center; font-weight: bold;">Anonymous</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.baidu.com/"><img src="images/baidu.png"/></a><p style="text-align: center; font-weight: bold;">Baidu</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.techatbloomberg.com/"><img src="images/bloomberg-gold.png"/></a><p style="text-align: center; font-weight: bold;">Bloomberg</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.TechAtBloomberg.com/opensource"><img src="images/bloomberg-gold.png"/></a><p style="text-align: center; font-weight: bold;">Bloomberg</p></li>
       <li><a target="_blank" rel="sponsored" href="http://cloudera.com/"><img src="images/cloudera-gold.png"/></a><p style="text-align: center; font-weight: bold;">Cloudera</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.confluent.io/"><img src="images/confluent-gold.png"/></a><p style="text-align: center; font-weight: bold;">Confluent</p></li>
       <li><a target="_blank" rel="sponsored" href="http://ibm.com/"><img src="images/ibm.png"/></a><p style="text-align: center; font-weight: bold;">IBM</p></li>
@@ -49,6 +49,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.capitalone.com/"><img src="images/capitalone-silver.png"/></a><p style="text-align: center; font-weight: bold;">Capital One</p></li>
       <li><a target="_blank" rel="sponsored" href="https://comcast.com/"><img src="images/comcast-silver.png"/></a><p style="text-align: center; font-weight: bold;">Comcast</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.didiglobal.com/"><img src="images/didi.png"/></a><p style="text-align: center; font-weight: bold;">Didi Chuxing</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://linecorp.com/"><img src="images/LINE-silver.png"/></a><p style="text-align: center; font-weight: bold;">LINE</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.replicated.com/"><img src="images/replicated-silver.png"/></a><p style="text-align: center; font-weight: bold;">Replicated</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.talend.com/"><img src="images/talend-silver.png"/></a><p style="text-align: center; font-weight: bold;">Talend</p></li>

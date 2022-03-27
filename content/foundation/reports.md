@@ -34,6 +34,9 @@ The following contains quarterly and annual reports from the past three fiscal y
 
 #### Recent Foundation Statements
 
+*   [Foundation Statement at 8 February 2022 Senate Committee hearing on Homeland Security and Government Affairs]( https://blogs.apache.org/foundation/entry/foundation-statement-at-8-february)
+*   [Apache Software Foundation Security Report: 2021](https://blogs.apache.org/foundation/entry/apache-software-foundation-security-report2)
+*   [Apache in 2021 - By The Digits](https://blogs.apache.org/foundation/entry/apache-in-2021-by-the)
 *   [Apache Software Foundation Security Report: 2020](https://blogs.apache.org/foundation/entry/apache-software-foundation-security-report1)
 *   [Apache in 2020 - By The Digits](https://s.apache.org/Apache2020Digits)
 *   [The Apache Software Foundation Statement on the COVID-19 Coronavirus Outbreak](https://s.apache.org/COVID-19)

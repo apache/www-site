@@ -37,6 +37,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | Id | Name | Projects |
 |----|------|----------|
 | aadamchik | Andrei Adamchik |
+| aajisaka | Akira Ajisaka | [Hadoop](https://hadoop.apache.org), [Yetus](https://yetus.apache.org) |
 | aaron | [Aaron Bannert](http://www.clove.org/~aaron/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [PHP](http://www.php.net/) , [commons](http://commons.apache.org/) , [incubator](http://incubator.apache.org/) , [flood](http://httpd.apache.org/test/flood/) , infrastructure|
 | ab | Andrzej Bialecki |
 | abaker | Anthony Baker | [Geode](https://geode.apache.org) |
@@ -56,6 +57,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | amareshwari | Amareshwari Sriramadasu | [Hadoop](http://hadoop.apache.org/) , [Falcon](http://falcon.apache.org/),  [Hive](http://hive.apache.org/), [Lens](http://lens.apache.org) |
 | andreww | [Andrew Wetmore](mailto:andreww@apache.org) | [Royale](https://royale.apache.org), Infra |
 | angela | Angela Schreiber | [Jackrabbit](http://jackrabbit.apache.org/)|
+| anshum | Anshum Gupta | [Lucene](http://lucene.apache.org/), [Solr](http://solr.apache.org/) |
 | antelder | Ant Elder |
 | antoine | Antoine Levy-Lambert |
 | antonio | [Antonio Gallardo Rivera](http://home.apache.org/~antonio/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://forrest.apache.org/) , [Lenya](http://lenya.apache.org/)|
@@ -251,6 +253,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | igalic | Igor Galić |
 | ilgrosso | Francesco Chicchiriccò | [Cocoon](http://cocoon.apache.org/) , [CXF](http://cxf.apache.org/), [Olingo](http://olingo.apache.org/), [OpenJPA](http://openjpa.apache.org/), [Syncope](http://syncope.apache.org/)|
 | isabel | Isabel Drost |
+| isudana | Isuru Udana | [Synapse](http://synapse.apache.org)
 | ivan | Ivan Zhakov | [Subversion](http://subversion.apache.org/) ; [Serf](http://serf.apache.org/) ; [APR](http://apr.apache.org/) |
 | ivaynberg | Igor Vaynberg |
 | jacopoc | Jacopo Cappellato | [OFBiz](http://ofbiz.apache.org)  |
@@ -303,6 +306,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | jukka | [Jukka Zitting](http://jukkaz.wordpress.com/) |  [Jackrabbit](http://jackrabbit.apache.org/)|
 | julianfoad | Julian Foad |
 | julien | [Julien Le Dem](https://twitter.com/J_) | [Parquet](http://parquet.apache.org) , [Arrow](http://arrow.apache.org), [Pig](http://pig.apache.org), [Tez](http://tez.apache.org) |
+| juzhiyuan | [Zhiyuan Ju](https://twitter.com/jjzhiyuan) | [APISIX](https://apisix.apache.org) |
 | jvermillard | [Julien Vermillard](http://home.apache.org/~jvermillard) | [MINA](http://mina.apache.org/)|
 | jzemerick | Jeff Zemerick |
 | kamaci | [Furkan KAMACI](http://home.apache.org/~kamaci) | [Gora](http://gora.apache.org), [Nutch](http://nutch.apache.org), [ManifoldCF](https://manifoldcf.apache.org/)|
@@ -316,6 +320,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | kess | [Astrid Malo](mailto:kess@apache.org) | [httpd](http://httpd.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
 | kevan | Kevan Miller |
 | kevj | Kevin Jackson |
+| kezhenxu94 | [Zhenxu Ke](https://github.com/kezhenxu94) | [SkyWalking](https://skywalking.apache.org) |
 | kfogel | Karl Fogel |
 | kihwal | Kihwal Lee | [Hadoop](http://hadoop.apache.org) |
 | kiwiwings | Andreas Beeker | [POI](http://poi.apache.org) |
@@ -526,6 +531,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | supun | Supun Kamburugamuva |
 | susie | Susan Wu |
 | sussman | Ben Collins-Sussman |
+| svogel | Sven Vogel | [CloudStack](http://cloudstack.apache.org) |
 | sylvain | [Sylvain Wallez](http://home.apache.org/~sylvain) | [Cocoon](http://cocoon.apache.org/) ; [Avalon](http://avalon.apache.org/)|
 | taher | Taher Alkhateeb | [OFBiz](http://ofbiz.apache.org/) |
 | tallison | Tim Allison | [PDFBox](http://pdfbox.apache.org/) ; [POI](http://poi.apache.org/) ; [Tika](http://tika.apache.org/) |
@@ -540,6 +546,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | thilina | [Thilina Gunarathne](http://home.apache.org/~thilina/) | [Airavata](http://airavata.apache.org/) ; [Axis](http://axis.apache.org/) ; [WS](http://ws.apache.org/)|
 | thommay | Thom May | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; Infrastructure|
 | thorsten | Thorsten Scherler |
+| tison | [Zili Chen](http://github.com/tisonkun) | [Flink](https://flink.apache.org/), [Curator](https://curator.apache.org/) |
 | todd | Todd Lipcon |
 | tomaz | Tomaz Muraus | [Libcloud](https://libcloud.apache.org) |
 | tomc | Tom Chiverton | [Flex](http://flex.apache.org) , [CouchDB](http://couchdb.apache.org) |
@@ -570,6 +577,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | wave | Dave Fisher | [POI](https://poi.apache.org/), [Incubator](https://incubator.apache.org/), [OpenOffice](https://openoffice.apache.org/), [Petri](https://petri.apache.org/), and others |
 | weber | Volker Weber | [MyFaces](http://myfaces.apache.org/)|
 | weimer | [Markus Weimer](http://www.markusweimer.com) |
+| wwei | [Weiwei Yang](https://yangwwei.github.io) | [Hadoop](https://hadoop.apache.org), [Ozone](https://ozone.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | wglass | William Glass-Husain |
 | wohali | [Joan Touzet](mailto:wohali@apache.org) | [CouchDB](http://couchdb.apache.org) |
 | woollard | David Matthew Woollard |

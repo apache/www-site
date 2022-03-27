@@ -759,9 +759,13 @@ vice-presidents given charge of the proper operation of their
 <dd>
 
 **1.** The process of making a formal decision. ('The vote for foo
-will close in three days.') **2.** The expression of a positive or
+will close in three days.')
+
+**2.** The expression of a positive or
 negative opinion, or a veto, as part of a formal decision. ('My vote
-is -1 because foo smells bad.') **Binding votes** are those
+is -1 because foo smells bad.')
+
+**Binding votes** are those
 cast by the PMC committers for the [project](#Project) to which the
 decision applies. Votes cast by others are advisory or indicative
 only.<br></br>See also [ConsensusApproval](#ConsensusApproval) , [MajorityApproval](#MajorityApproval)

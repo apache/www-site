@@ -58,7 +58,7 @@ You can obtain these public keys [in a single file](KEYS.txt).
 
 You can usually find information on known vulnerabilities for an Apache project on the project's web pages. For convenience, consult the [list of
 security information pages for Apache projects](projects.html). If you can't find the information you are looking for on the
-project's web site, ask your question on the project's `users` mailing list. Don **not** ask the security contacts directly about about:
+project's web site, ask your question on the project's `users` mailing list. Do **not** ask the security contacts directly about:
 
 - how to configure the package securely
 
@@ -91,4 +91,3 @@ to resolve the vulnerability.
 
 Committers should read a [more detailed description of the process](committers.html). Reporters of security vulnerabilities may also find
 it useful.
-

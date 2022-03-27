@@ -175,7 +175,7 @@ our official [@TheASF Twitter](https://twitter.com/TheASF) account, or the
 |---------|-----|
 | Subscription address: |  [announce-subscribe@apache.org](mailto:announce-subscribe@apache.org)  |
 | Unsubscription address: |  [announce-unsubscribe@apache.org](mailto:announce-unsubscribe@apache.org)  |
-| Archives: | [Web archives](http://lists.apache.org/mod_mbox/www-announce/)<br />[archives](http://www.mail-archive.com/announce@apache.org/) |
+| Archives: | [Web archives](http://lists.apache.org/list.html?announce@apache.org)<br />[archives](http://www.mail-archive.com/announce@apache.org/) |
 | Getting help with the list: |  [announce-help@apache.org](mailto:announce-help@apache.org)  |
 
 # Apache Conference Announcements  {#foundation-apachecon}
@@ -202,7 +202,7 @@ ApacheCons. (Discussions of current and upcoming ApacheCons which have been appr
 |---------|----------|
 | Subscription address: |  [apachecon-discuss-subscribe@apache.org](mailto:apachecon-discuss-subscribe@apache.org)  |
 | Unsubscription address: |  [apachecon-discuss-unsubscribe@apache.org](mailto:apachecon-discuss-unsubscribe@apache.org)  |
-| Archives: | [Web archives](http://lists.apache.org/mod_mbox/www-apachecon-discuss/) |
+| Archives: | [Web archives](http://lists.apache.org/list.html?apachecon-discuss@apache.org) |
 | Getting help with the list: |  [apachecon-discuss-help@apache.org](mailto:apachecon-discuss-help@apache.org)  |
 
 The `small-events-discuss@apache.org` mailing list is for discussions on future small events, such as 
@@ -214,7 +214,7 @@ not yet ready to seek final approval.
 |---------|----------|
 | Subscription address: |  [small-events-discuss-subscribe@apache.org](mailto:small-events-discuss-subscribe@apache.org)  |
 | Unsubscription address: |  [small-events-discuss-unsubscribe@apache.org](mailto:small-events-discuss-unsubscribe@apache.org)  |
-| Archives: | [Web archives](http://lists.apache.org/mod_mbox/www-small-events-discuss/) |
+| Archives: | [Web archives](http://lists.apache.org/list.html?small-events-discuss@apache.org) |
 | Getting help with the list: |  [small-events-discuss-help@apache.org](mailto:small-events-discuss-help@apache.org)  |
 
 # Community Mailing List  {#foundation-community}
@@ -228,7 +228,7 @@ This replaces the old `community@a.o`mailing list, disabled in 2014.
 | Volume: | Moderate |
 |---------|----------|
 | Subscription address: |  [dev-subscribe@community.apache.org](mailto:dev-subscribe@community.apache.org)  |
-| Archives: | [Web archives](https://lists.apache.org/mod_mbox/community-dev//) |
+| Archives: | [Web archives](https://lists.apache.org/list.html?dev@community.apache.org) |
 
 # Foundation Infrastructure Mailing List  {#foundation-infrastructure}
 
@@ -249,7 +249,7 @@ are available.
 | Volume: | Moderate |
 |---------|----------|
 | Subscription address: |  [repository-subscribe@apache.org](mailto:repository-subscribe@apache.org)  |
-| Archives: | [Web archives](https://lists.apache.org/mod_mbox/www-repository/) |
+| Archives: | [Web archives](https://lists.apache.org/list.html?repository@apache.org) |
 
 # Foundation Legal Discussion Mailing List  {#foundation-legal}
 
@@ -267,4 +267,4 @@ Volunteers willing to codify discussions into a FAQ are welcome.
 |---------|----------|
 | Subscription address: |  [legal-discuss-subscribe@apache.org](mailto:legal-discuss-subscribe@apache.org)  |
 | Unsubscription address: |  [legal-discuss-unsubscribe@apache.org](mailto:legal-discuss-unsubscribe@apache.org)  |
-| Archives: | Raw gzipped [mbox files](/mail/legal-discuss/)<br />[Web archives](http://lists.apache.org/mod_mbox/www-legal-discuss/) |
+| Archives: | Raw gzipped [mbox files](/mail/legal-discuss/)<br />[Web archives](http://lists.apache.org/list.html?legal-discuss@apache.org) |
