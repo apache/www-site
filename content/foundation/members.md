@@ -511,6 +511,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | slive | [Joshua Slive](http://slive.ca/) | [httpd-docs](http://httpd.apache.org/docs-project/) ; [httpd](http://httpd.apache.org/) ; infrastructure|
 | smarru | [Suresh Marru](http://home.apache.org/~smarru/) | [Airavata](http://incubator.apache.org/airavata/) ; [Rave](http://rave.apache.org/) ; [Incubator](http://incubator.apache.org/)|
 | smarthi | Suneel Marthi | [Mahout](http://mahout.apache.org) |
+| smckinney | Shawn McKinney | [Fortress](https://directory.apache.org/fortress/) |
 | snoopdave | Dave Johnson |
 | solomax | Maxim Solodovnik | [OpenMeetings](http://openmeetings.apache.org/), [Flex](http://flex.apache.org/)|
 | sorber | Phil Sorber | [Traffic Server](http://trafficserver.apache.org) |
