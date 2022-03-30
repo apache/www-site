@@ -537,7 +537,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | tallison | Tim Allison | [PDFBox](http://pdfbox.apache.org/) ; [POI](http://poi.apache.org/) ; [Tika](http://tika.apache.org/) |
 | tandraschko | Thomas Andraschko | [DeltaSpike](https://deltaspike.apache.org/), [MyFaces](https://myfaces.apache.org/), [OpenWebBeans](https://openwebbeans.apache.org/), [TomEE](https://tomee.apache.org/), [BVal](https://bval.apache.org/)|
 | taylor | [David Sean Taylor](http://home.apache.org/~taylor/) | [Portals](http://portals.apache.org/)|
-| tcurdt | [Torsten Curdt](http://yourdailygeekery.com) | [Cocoon](http://cocoon.apache.org/), [Commons](http://commons.apache.org/), [Jakarta](http://jakarta.apache.org/)|
+| tcurdt | [Torsten Curdt](https://torstencurdt.com) | [Cocoon](https://cocoon.apache.org/), [Commons](https://commons.apache.org/), [Jakarta](https://jakarta.apache.org/)|
 | tdunning | Ted Dunning |
 | tellison | Tim Ellison |
 | tfischer | Thomas Fischer |
