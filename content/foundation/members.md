@@ -113,7 +113,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | cctrieloff | Carl Trieloff |
 | ccustine | [Chris Custine](http://blog.organicelement.com/) | [ServiceMix](http://servicemix.apache.org/) , [Karaf](http://karaf.apache.org/) , [Felix](http://felix.apache.org/) , [Directory Server](http://directory.apache.org/)|
 | cdouglas | Chris Douglas |
-| cdutz | Christofer Dutz | [Flex](http://flex.apache.org) |
+| cdutz | Christofer Dutz | [ComDev](https://community.apache.org), [Daffodil](https://daffodil.apache.org), [Flex](https://flex.apache.org), [Incubator](https://incubator.apache.org), [Infrastructure](https://infra.apache.org), [IoTDB](https://iotdb.apache.org), [Kibble](https://kibble.apache.org), [Mahout](https://mahout.apache.org), [PLC4X](https://plc4x.apache.org), [Royale](https://royale.apache.org), [StreamPipes (incubating)](https://streampipes.apache.org), [Training (incubating)](https://training.apache.org), [Wayang (incubating)](https://wayang.apache.org) |
 | ceki | Ceki Gülcü | [Jakarta](http://jakarta.apache.org/) , log4j|
 | centic | Dominik Stadler | [POI](http://poi.apache.org) |
 | cezar | [Cezar Cristian Andrei](http://cezarandrei.com) | [XMLBeans](http://xmlbeans.apache.org/) , [VXQuery](http://incubator.apache.org/vxquery/)|
