@@ -23,9 +23,14 @@ The following tables show current and emeritus members who have
 manually added themselves to it - **this is not the complete list of members**,
 see the links below for that.
 
-On GitHub you can edit this [page](https://github.com/apache/www-site/blob/main/content/foundation/members.md) directly in the browser, by using the `Edit this file` pencil icon.
+If you are a member and want to be included (this is optional), you can update the source file yourself.
+If you have a GitHub account that is linked to your ASF account,
+you can edit this [page](https://github.com/apache/www-site/blob/main/content/foundation/members.md) directly in the browser, by using the `Edit this file` pencil icon.
 
 You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you. 
+
+Or it can be updated in the [ASF GitBox repo](https://gitbox.apache.org/repos/asf/www-site.git);
+this does not require a GitHub account.
 
 A [list of all committers](http://home.apache.org/committer-index.html)
 (including [members](http://home.apache.org/committers-by-project.html#member))
