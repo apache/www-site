@@ -263,7 +263,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | jani | Jan Iversen | |
 | jawi | [Jan Willem Janssen](http://www.lxtreme.nl) | [ACE](http://ace.apache.org), [Felix](http://felix.apache.org)|
 | jbellis | Jonathan Ellis |
-| jbonofre | Jean-Baptiste Onofré |
+| jbonofre | [Jean-Baptiste Onofré](https://nanthrax.blogspot.com) | [ActiveMQ](http://activemq.apache.org), [Archiva](http://archiva.apache.org), [Aries](http://aries.apache.org), [Bahir](http://bahir.apache.org), [Beam](http://beam.apache.org), [Brooklyn](http://brooklyn.apache.org), [BRPC](http://brpc.apache.org), [Camel](http://camel.apache.org), [CarbonData](http://carbondata.apache.org), [EventMesh](http://eventmesh.apache.org), [Felix](http://felix.apache.org), [Geronimo](http://geronimo.apache.org), [Gobblin](http://gobblin.apache.org), [Guacamole](http://guacamole.apache.org), [Incubator](http://incubator.apache.org), [InLong](http://inlong.apache.org), [jClouds](http://jclouds.apache.org), [Karaf](http://karaf.apache.org), [Liminal](http://liminal.apache.org), [Livy](http://livy.apache.org), [Nemo](http://nemo.apache.org), [Seatunnel](http://seatunnel.apache.org), [Sedona](http://sedona.apache.org), [ServiceComb](http://servicecomb.apache.org), [ServiceMix](http://servicemix.apache.org), [Shiro](http://shiro.apache.org), [Streampipes](http://streampipes.apache.org), [Syncope](http://syncope.apache.org), [Tuweni](http://tuweni.apache.org), [Unomi](http://unomi.apache.org), [Wayang](http://wayang.apache.org)|
 | jcamacho | Jesús Camacho Rodríguez |
 | jcarman | James W. Carman |
 | jcorvel | Johan Corveleyn | [Subversion](http://subversion.apache.org/) |
