@@ -501,6 +501,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | shankar | Selvaratnam Uthaiyashankar | [Axis](http://axis.apache.org/) ; [Stonehenge](http://incubator.apache.org/projects/stonehenge.html) ; [Web Services](http://ws.apache.org/)|
 | sharan | Sharan Foga | [OFBiz](http://ofbiz.apache.org) |
 | shazron | Shazron Abdullah | [Cordova](http://cordova.apache.org) |
+| wusheng | Sheng Wu | [SkyWalking](https://skywalking.apache.org/) |
 | shv | [Konstantin V. Shvachko](http://home.apache.org/~shv) | [Hadoop](http://hadoop.apache.org) |
 | sidney | [Sidney Markowitz](http://sidney.com/) | [SpamAssassin](https://spamassassin.apache.org/) |
 | simoneg | Simone Gianni |
