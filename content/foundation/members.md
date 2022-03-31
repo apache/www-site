@@ -69,6 +69,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | asankha | [Asankha Perera](http://people.apache.org/~asankha) | [HttpComponents](http://hc.apache.org)
 | asanso | Antonio Sanso |
 | asavory | [Andrew Savory](http://www.andrewsavory.com/blog/) |
+| asifdxtreme | [Mohammad Asif Siddiqui](https://asifdxr.netlify.app) | Incubator, Nuttx, Servicecomb |
 | aslom | Alek Slominski |
 | ate | [Ate Douma](http://home.apache.org/~ate/) |
 | awm | Aram W. Mirzadeh |  [httpd](http://httpd.apache.org/)|
