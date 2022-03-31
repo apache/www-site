@@ -23,7 +23,9 @@ The following tables show current and emeritus members who have
 manually added themselves to it - **this is not the complete list of members**,
 see the links below for that.
 
-If you are a member and want to be included, please send a [pull request to edit the page on GitHub](https://github.com/apache/www-site/blob/main/content/foundation/members.md). 
+On GitHub you can edit this [page](https://github.com/apache/www-site/blob/main/content/foundation/members.md) directly in the browser, by using the `Edit this file` pencil icon.
+
+You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you. 
 
 A [list of all committers](http://home.apache.org/committer-index.html)
 (including [members](http://home.apache.org/committers-by-project.html#member))
