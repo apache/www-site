@@ -245,6 +245,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | hboutemy | Hervé Boutemy | [Maven](http://maven.apache.org), [ComDev](http://community.apache.org), [Attic](http://attic.apache.org) |
 | hemapani | [Srinath Perera](mailto:hperera@cs.indiana.edu) |
 | henning | [Henning P. Schmiedehausen](http://henning.schmiedehausen.org/) |
+| hexiaoqiao | [He Xiaoqiao](https://hexiaoqiao.github.io/) | [Hadoop](http://hadoop.apache.org) |
 | hgomez | [Henri Gomez](http://blog.hgomez.net) ** |
 | hindessm | Mark Hindess |
 | hitesh | Hitesh Shah | [Hadoop](http://hadoop.apache.org) ; [Tez](http://tez.apache.org/) ; [Ambari](http://ambari.apache.org/)|
