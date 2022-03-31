@@ -177,6 +177,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | dweiss | Dawid Weiss | [Lucene](http://lucene.apache.org/), [Mahout](http://lucene.apache.org/mahout) , [Solr](http://lucene.apache.org/solr/) |
 | dwoods | [Donald Woods](http://home.apache.org/~dwoods/) |
 | ebourg | Emmanuel Bourg |
+| echauchot | Etienne Chauchot | [Beam](http://beam.apache.org) |
 | ed | [Ed Korthof](mailto:ed@apache.org) | [httpd](http://httpd.apache.org/) ; [JServ](http://java.apache.org/jserv/)|
 | edwardyoon | [Edward J. Yoon](http://blog.udanax.org/) | [Hama](http://hama.apache.org/) |
 | ehatcher | Erik Hatcher | [Ant](http://ant.apache.org/) , jakarta-lucene , jakarta-lucene-sandbox|
