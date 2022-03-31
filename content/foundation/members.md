@@ -23,7 +23,10 @@ The following tables show current and emeritus members who have
 manually added themselves to it - **this is not the complete list of members**,
 see the links below for that.
 
-If you are a member and want to be included, please send a [pull request to edit the page on GitHub](https://github.com/apache/www-site/blob/main/content/foundation/members.md). 
+If you are a member and want to be included (this is optional), you can update the source file yourself.
+If you have a GitHub account that is attached to your ASF account, it can be updated in GitHub at
+[members.md](https://github.com/apache/www-site/edit/main/content/foundation/members.md).
+Or it can be updated in the [ASF GitBox repo](https://gitbox.apache.org/repos/asf/www-site.git)
 
 A [list of all committers](http://home.apache.org/committer-index.html)
 (including [members](http://home.apache.org/committers-by-project.html#member))
