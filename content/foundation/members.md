@@ -434,6 +434,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | piergiorgio | [Piergiorgio Lucidi](https://www.open4dev.com) | [ManifoldCF](http://manifoldcf.apache.org/) , [ComDev](https://community.apache.org/)|
 | pietsch | Joerg Pietschmann |
 | pono | [Daniel Pono Takamori](https://multivariatepolynomial.xyz) | [infrastructure](https://infra.apache.org) |
+| pottlinger | Philipp Ottlinger | [Creadur](https://creadur.apache.org) |
 | pquerna | [Paul Querna](http://paul.querna.org/) |
 | pramirez | Paul Michael Ramirez |
 | proyal | [Peter Royal](http://fotap.org/~osi) |
