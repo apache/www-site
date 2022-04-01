@@ -282,6 +282,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | jeremias | [Jeremias Märki](http://www.jeremias-maerki.ch) | [XML Graphics](http://xmlgraphics.apache.org/) ; [FOP](http://xmlgraphics.apache.org/fop/) ; [Jakarta Commons IO](http://jakarta.apache.org/commons/io/)|
 | jeremy | [Jeremy Quinn](http://www.fiveone.org) | [Cocoon](http://cocoon.apache.org/)|
 | jerenkrantz | [Justin Erenkrantz](http://www.erenkrantz.com/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [commons](http://commons.apache.org/) , prc , infrastructure|
+| jerrytan | Jerry Tan (Tanzhongyi) | brpc |
 | jesus | Theo Schlossnagle |
 | jfarrell | Jake Farrell |  [Thrift](http://thrift.apache.org) |
 | jfclere | Jean-Frederic Clere |
