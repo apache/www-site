@@ -549,6 +549,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | svogel | Sven Vogel | [CloudStack](http://cloudstack.apache.org) |
 | sylvain | [Sylvain Wallez](http://home.apache.org/~sylvain) | [Cocoon](http://cocoon.apache.org/) ; [Avalon](http://avalon.apache.org/)|
 | taher | Taher Alkhateeb | [OFBiz](http://ofbiz.apache.org/) |
+| talat | Talat Uyarer | [Nutch](https://nutch.apache.org/) ; [Gora](https://gora.apache.org/) |
 | tallison | Tim Allison | [PDFBox](http://pdfbox.apache.org/) ; [POI](http://poi.apache.org/) ; [Tika](http://tika.apache.org/) |
 | tandraschko | Thomas Andraschko | [DeltaSpike](https://deltaspike.apache.org/), [MyFaces](https://myfaces.apache.org/), [OpenWebBeans](https://openwebbeans.apache.org/), [TomEE](https://tomee.apache.org/), [BVal](https://bval.apache.org/)|
 | taylor | [David Sean Taylor](http://home.apache.org/~taylor/) | [Portals](http://portals.apache.org/)|
