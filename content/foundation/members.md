@@ -69,7 +69,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | antelder | Ant Elder |
 | antoine | Antoine Levy-Lambert |
 | antonio | [Antonio Gallardo Rivera](http://home.apache.org/~antonio/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://forrest.apache.org/) , [Lenya](http://lenya.apache.org/)|
-| arje | [Arjé Cahn](http://www.onehippo.com) | [Portals](http://portals.apache.org/) , [Cocoon](http://cocoon.apache.org/) , [Jackrabbit](http://jackrabbit.apache.org/) , [Wicket](http://wicket.apache.org/)|
+| arje | [Arjé Cahn](http://www.bloomreach.com) | [Cocoon](http://cocoon.apache.org/) |
 | arkurth | Andy Kurth | [VCL](http://vcl.apache.org/) |
 | arp | Arpit Agarwal |
 | arreyder | [Christopher R. Rhodes](http://arreyder.com) |
@@ -79,7 +79,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | asavory | [Andrew Savory](http://www.andrewsavory.com/blog/) |
 | asifdxtreme | [Mohammad Asif Siddiqui](https://asifdxr.netlify.app) | Incubator, Nuttx, Servicecomb |
 | aslom | Alek Slominski |
-| ate | [Ate Douma](http://home.apache.org/~ate/) |
+| ate | [Ate Douma](http://home.apache.org/~ate/) | [Airavata](https://airavata.apache.org/), [AsterixDB](https://asterixdb.apache.org/), [Commons](https://commons.apache.org/), [Incubator](https://incubator.apache.org/), [NetBeans](https://netbeans.apache.org/), [Portals](https://portals.apache.org/), [Streams](https://streams.apache.org/), [Wicket](https://wicket.apache.org/) |
 | awm | Aram W. Mirzadeh |  [httpd](http://httpd.apache.org/)|
 | ay | Akitoshi Yoshida |
 | azeez | Mohamed Afkham Azeez |
