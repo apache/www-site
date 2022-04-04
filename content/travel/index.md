@@ -53,7 +53,8 @@ Therefore, the ASF and its appointed agents will arrange and pay directly for tr
 ## How to apply for travel assistance  {#applying}
 
 Visit the  [online application ](/travel/application) and , if you have not already done so,
-create an account by clicking the 'Register' link.
+create an account by clicking the 'Register' link - or if you are an ASF Committer just login using
+your LDAP creds via oauth.
 Once logged in answer all questions as fully as possible.
 Note that you do not need to answer all questions in the same session: you can keep coming back
 until you have completed the form.
@@ -64,7 +65,7 @@ In other words, those in Europe would fair better
 applying to attend an ApacheCon EU event, and those in Asia, an Asia event, when they next come round.
 
 However, we will consider carefully compelling reasons you present to support going to an event further away than your
-nearest ApacheCon location.
+nearest ApacheCon location. (This year for example will be more forgiving due to no in person events for over 2 years)
 
 We will only notify those applicants who are successful.
 If you have not heard from us within one week of the application closing date, you should assume that you did not qualify on this occasion.
@@ -73,7 +74,8 @@ We do not provide explanations why a given application was not successful, but y
 other applicants had a greater need on this occasion.
 
 **Note** that, in return for financial assistance, we do ask that you perform some
-duties while at the event, such as staffing the registration booth and helping spread the Apache Way message.
+duties while at the event, such as staffing the registration booth and helping spread the Apache Way message; and opening/closing 
+talk sessions for other Speakers.
 But do not worry: you will still have plenty of time to attend talks that
 interest you, get to see the sights of the hosting city, and meet people from your
 projects and other folks you have been communicating with.
@@ -85,11 +87,20 @@ To apply, complete the [on line application](/travel/application).
 
 # Events for which support is available  {#events}
 
-**Due to the COVID-19 pandemic**, the ASF is holding no in-person events at the moment.
-ApacheCon and ApacheCon Asia are free, fully-online events until further notice.
+Applications are now open for assistance to [ApacheCon NA New Orleans](https://www.apachecon.com/acna2022/)
+which is on between the 3rd and 6th of October 2022. Closing date for Applications for Travel Assistance 
+to this event is 1st July 2022.
+
+Travel Assistance includes travel to the event, via plane,train etc; and optionally includes if needed the 
+cost of Hotel accomodation and also Conference tickets.
+
+Applications are open to anyone involved in open source , not just at the Apache Software Foundation, but 
+anywhere. If you are unsure if you want to apply - we encourage you to read the Stories from past recipients 
+as mentined below!
+
+Good luck and hope to see you in New Orleans!
 
 <hr />
-
 
 
 # Stories from past TAC recipients  {#stories}
