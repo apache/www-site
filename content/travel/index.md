@@ -96,7 +96,7 @@ cost of Hotel accomodation and also Conference tickets.
 
 Applications are open to anyone involved in open source , not just at the Apache Software Foundation, but 
 anywhere. If you are unsure if you want to apply - we encourage you to read the Stories from past recipients 
-as mentined below!
+as mentioned below!
 
 Good luck and hope to see you in New Orleans!
 
