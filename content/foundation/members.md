@@ -677,6 +677,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | richter | Georg Richter |
 | rolandw | Roland Weber |
 | rse | [Ralf S. Engelschall](http://www.engelschall.com/) |
+| rskraba | [Ryan Skraba](https://skraba.com/) | [Avro](http://avro.apache.org/), [Training (incubating)](https://training.apache.org) |
 | rwaldhoff | Rodney Waldhoff |
 | sameer | Sameer Parekh |
 | sboag | Scott Boag |
