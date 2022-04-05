@@ -593,7 +593,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|
 | wave | Dave Fisher | [POI](https://poi.apache.org/), [Incubator](https://incubator.apache.org/), [OpenOffice](https://openoffice.apache.org/), [Petri](https://petri.apache.org/), and others |
 | weber | Volker Weber | [MyFaces](http://myfaces.apache.org/)|
-| weimer | [Markus Weimer](http://www.markusweimer.com) |
+| weimer | [Markus Weimer](http://www.markusweimer.com) | [REEF](https://reef.apache.org/) | 
 | wwei | [Weiwei Yang](https://yangwwei.github.io) | [Hadoop](https://hadoop.apache.org), [Ozone](https://ozone.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | wglass | William Glass-Husain |
 | wohali | [Joan Touzet](mailto:wohali@apache.org) | [CouchDB](http://couchdb.apache.org) |
