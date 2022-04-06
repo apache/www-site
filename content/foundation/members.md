@@ -452,6 +452,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | ptgoetz | P. Taylor Goetz | [Storm](http://storm.apache.org) |
 | purplecabbage | Jesse MacFadyen | [Cordova](http://cordova.apache.org) |
 | pzf | Paul Fremantle |
+| panjuan | [Trista Pan](https://tristazero.github.io/) | [ShardingSphere](https://shardingsphere.apache.org/) ; [Incubator](http://incubator.apache.org/)|
 | quetwo | Nick Kwiatkowski |
 | rahul | Rahul Akolkar |
 | randgalt | Jordan Zimmerman | [Curator](http://curator.apache.org) |
