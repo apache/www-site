@@ -483,6 +483,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | rohini | Rohini Palaniswamy | [Pig](http://pig.apache.org), [Tez](http://tez.apache.org), [Oozie](http://oozie.apache.org) |
 | rony | Rony G. Flatscher | [Jakarta](http://jakarta.apache.org/)  |
 | rooneg | Garrett Rooney | [APR](http://apr.apache.org/) ; infrastructure|
+| rotty3000 | Raymond Augé | [Aries](https://aries.apache.org) ; [Felix](https://felix.apache.org) ; [Geronimo](https://geronimo.apache.org/); [Tomcat](https://tomcat.apache.org/) |
 | rpluem | [Rüdiger Plüm](mailto:rpluem@apache.org) |
 | rubys | [Sam Ruby](http://www.intertwingly.net/blog/) |  [Ant](http://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/) ; [PHP](http://www.php.net/) ; [XML](http://xml.apache.org)|
 | ruchithf | Ruchith Fernando |
