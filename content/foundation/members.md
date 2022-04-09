@@ -350,6 +350,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | larsfrancke | [Lars Francke](http://www.opencore.com) | [HBase](https://hbase.apache.org), [Hive](https://hive.apache.org), ORC |
 | larsgeorge | [Lars George](http://www.larsgeorge.com) | [HBase](https://hbase.apache.org/) |
 | larsh | Lars Hofhansl | [HBase](http://hbase.apache.org/) , [Incubator](http://incubator.apache.org/) , [Phoenix](http://phoenix.apache.org/) |
+| leerho | [Lee Rhodes](mailto:leerho@gmail.com) | [DataSketches](https://datasketches.apache.org) |
 | lehmi | Andreas Lehmkühler | [PDFBox](http://pdfbox.apache.org/)|
 | lektran | Scott Gray | [OFBiz](http://ofbiz.apache.org)  |
 | leosimons | [Leo Simons](http://www.leosimons.com/) |  excalibur (VP) ; gump (PMC) ; incubator (PMC) ; wiki|
