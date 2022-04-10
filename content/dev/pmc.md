@@ -320,15 +320,17 @@ If the candidate does not (yet) have an Apache account, include
 that fact in the notification email. 
 
 #### Check the board archive for mail delivery  {#board_archive}
+Also the list is moderated, so it may take a day or two before the email appears on the list and is seen by the board members.
+If the email is not moderated in time, it will never reach the list.
+The 72 hour NOTICE period can only start once the email has been posted to the list.
 
-**Note**: e-mail delivery can fail silently. It is **vital** that the PMC Chair check the board archives to ensure that the NOTICE has
-actually been delivered to the board mailing list.
+**The PMC Chair MUST check the board archives to ensure that the NOTICE has actually been delivered to the board mailing list.**
 
 You can do this by sending a mail to the EZMLM server at `board-index@apache.org` followed by a `board-get.XXX@apache.org` (`XXX` = message number).
 If the EZMLM server refuses the request, check that you are [subscribed to the board@ list](#subscribe-to-the-board-mailing-list)
 ASF Members can also access the <a href="https://mail-search.apache.org/members/private-arch/board" target="_blank">board archive</a>.
 
-It is not sufficient to check that you have seen the email; the email must appear in the archives.
+It is not sufficient to check that you have seen the email; the email must appear in the board archives.
 
 #### After NOTICE period (72 hours), invite the person  {#notice_period}
 
