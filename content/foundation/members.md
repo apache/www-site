@@ -487,6 +487,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | rooneg | Garrett Rooney | [APR](http://apr.apache.org/) ; infrastructure|
 | rotty3000 | Raymond Augé | [Aries](https://aries.apache.org) ; [Felix](https://felix.apache.org) ; [Geronimo](https://geronimo.apache.org/); [Tomcat](https://tomcat.apache.org/) |
 | rpluem | [Rüdiger Plüm](mailto:rpluem@apache.org) |
+| rskraba | [Ryan Skraba](https://skraba.com/) | [Avro](http://avro.apache.org/), [Training (incubating)](https://training.apache.org) |
 | rubys | [Sam Ruby](http://www.intertwingly.net/blog/) |  [Ant](http://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/) ; [PHP](http://www.php.net/) ; [XML](http://xml.apache.org)|
 | ruchithf | Ruchith Fernando |
 | ruwan | [Ruwan Linton](http://blog.ruwan.org) | [Synapse](http://synapse.apache.org) ; [Axis](http://axis.apache.org/) ; [Web Services](http://ws.apache.org/)  ; [Incubator](http://incubator.apache.org)|
@@ -683,7 +684,6 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | richter | Georg Richter |
 | rolandw | Roland Weber |
 | rse | [Ralf S. Engelschall](http://www.engelschall.com/) |
-| rskraba | [Ryan Skraba](https://skraba.com/) | [Avro](http://avro.apache.org/), [Training (incubating)](https://training.apache.org) |
 | rwaldhoff | Rodney Waldhoff |
 | sameer | Sameer Parekh |
 | sboag | Scott Boag |
