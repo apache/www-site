@@ -67,7 +67,7 @@ You will also need Git, and familiarity with working in a command-line shell.
 - change to a suitable directory
 - get the Infra Pelican setup: `git clone https://github.com/apache/infrastructure-pelican`
 - change to the checkout: `cd infrastructure-pelican`
-- build the container: `docker build -t pelican-asf`. This will take a while the first time.
+- build the container: `docker build -t pelican-asf .`. This will take a while the first time.
 - change to a suitable directory
 - get the ASF website source: `git clone https://github.com/apache/www-site`
 - change to the website checkout: `cd www-site`
