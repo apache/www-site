@@ -75,6 +75,8 @@ You will also need Git, and familiarity with working in a command-line shell.
 - Start the continuous builder: `docker run -it -p8000:8000 -v $PWD:/site pelican-asf`
 - this will generate a lot of output, but will eventually stop.
 - browse to http://localhost:8000/
+- If the builder reports a failure trying to find content/theme/apache, try changing
+  the `theme` entry in `pelicanconf.yaml` to `theme: ../theme/apache` and re-run
 
 If you make changes to the local copy of www-site, these will be automatically built, and should
 appear in the browser when the page is refreshed.
