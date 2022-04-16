@@ -41,19 +41,21 @@ This theme uses the following metadata:
 
 ## Pelican Settings
 
-Pelican settings are provided in the [pelicanconf.py](../../../pelicanconf.py) file.
+Pelican settings are provided in the [pelicanconf.yaml](../../../pelicanconf.yaml) file:
 
-Some settings inlude:
+```
+site:
+  name: Apache Software Foundation
+  description: The main website of the ASF 
+  domain: www.apache.org
+  logo: images/logo.png
+  repository: https://github.com/apache/www-site/blob/main/content/
+  trademarks: Apache, the Apache feather logo are trademarks
+  index: '**'
+```
 
-~~~python
-SITEURL = 'https://www.apache.org'
-SITEREPOSITORY = 'https://github.com/apache/www-site/blob/main/content/'
-CURRENTYEAR = date.today().year
-~~~
 
-The file contains helpful comments about the settings.
-
-- In `base.html` `CURRENTYEAR` is used for the copyright.
+- In `base.html`, `CURRENTYEAR` is used in the copyright statement.
 
   `Copyright &#169; {{ CURRENTYEAR }} The Apache Software Foundation`
 
