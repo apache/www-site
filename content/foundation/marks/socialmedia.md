@@ -9,7 +9,7 @@ media conforms to our [Apache Trademark Policy](/foundation/marks).
 
 **Contents**
 
-<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+<div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px;">
 
 See Also: all [Trademark Resources][resources] and the [Corporate Recognition/Linking Guidelines](/foundation/marks/linking).
 
