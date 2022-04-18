@@ -2,7 +2,7 @@
 
 These pages have different stakeholders.
 
-Board of Directors at board@apache.org
+Board of Directors at `board@apache.org`
 - [Board](foundation/board/)
 
 VP, Security at `security@apache.org`
