@@ -336,7 +336,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | kevj | Kevin Jackson |
 | kezhenxu94 | [Zhenxu Ke](https://github.com/kezhenxu94) | [SkyWalking](https://skywalking.apache.org) |
 | kfogel | Karl Fogel |
-| khmarbaise | [Karl Heinz Marbaise](https://github.com/khmarbaise | [Maven](https://maven.apache.org) [Creadur](https://creadur.apache.org) |
+| khmarbaise | [Karl Heinz Marbaise](https://github.com/khmarbaise) | [Maven](https://maven.apache.org) [Creadur](https://creadur.apache.org) |
 | kihwal | Kihwal Lee | [Hadoop](http://hadoop.apache.org) |
 | kiwiwings | Andreas Beeker | [POI](http://poi.apache.org) |
 | kkolinko | Konstantin Kolinko | [Tomcat](http://tomcat.apache.org), [Gump](http://gump.apache.org) |
