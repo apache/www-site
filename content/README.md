@@ -1,14 +1,14 @@
 # ASF Home
 
-These pages have differing stakeholders.
+These pages have different stakeholders.
 
 Board of Directors at board@apache.org
 - [Board](foundation/board/)
 
-VP, Security at security@apache.org
+VP, Security at `security@apache.org`
 - [Security](security/)
 
-VP, Marketing and Publicity at press@apache.org
+VP, Marketing and Publicity at `press@apache.org`
 - [Home Page](index.ezmd)
 - [Foundation Press](foundation/press/)
 - [Press](press/)
@@ -17,10 +17,10 @@ VP, Marketing and Publicity at press@apache.org
 - [Sponsorship](foundation/sponsorship.md)
 - [Buy Stuff](foundation/buy_stuff.md)
 
-VP, Brand at trademarks@apache.org
+VP, Brand at `trademarks@apache.org`
 - [Marks](foundation/marks/)
 
-VP, Legal Affairs at legal-discuss@apache.org
+VP, Legal Affairs at `legal-discuss@apache.org`
 - [Free](free/)
 - [Legal](legal/)
 - [Licenses](license/)
@@ -28,28 +28,27 @@ VP, Legal Affairs at legal-discuss@apache.org
 - [Export Notification](license/exports/)
 - [Marks](foundation/marks/)
 
-VP, Conferences at events-cvs@apache.org
+VP, Conferences at `events-cvs@apache.org`
 - [Event Planning](foundation/conferences.md)
 - [Event Branding](foundation/content/marks/events.md)
 - [Anti-Harassment](foundation/policies/anti-harassment.md)
 
-VP, Travel Assistance at travel-assistance@apache.org
+VP, Travel Assistance at `travel-assistance@apache.org`
 - [Travel](travel/)
 
-Infrastructure Team at users@infra.apache.org
+Infrastructure Team at `users@infra.apache.org`
 - [Dev](dev/)
 - [dyn](dyn/)
-- [mirrors](mirrors/)
 - [uptime](uptime/)
 
-See also [Operations Directory](foundation/operations/)
+See also [Operations Directory](foundation/operations/).
 
-For discussion about other content contact centralservices@apache.org
+For discussion about other content, contact `centralservices@apache.org`.
 
 All ASF Members have write access to this repository.
 
-For nontrivial changes make a Pull Request and start a discussion with the stakeholders.
+For nontrivial changes, create a Pull Request and start a discussion with the stakeholders.
 
-For trivial changes commit and let the stakeholders know.
+For trivial changes commit your changes and let the stakeholders know.
 
 The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/content) was not migrated and remains available.
