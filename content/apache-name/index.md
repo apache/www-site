@@ -15,4 +15,4 @@ On occasion, we have been asked about claims about use of the “Apache” name 
 
 We are honored that both The Apache Software Foundation and Apache Incubator logos are listed on the [official website of the Apache Nation Chamber of Commerce](http://www.sancarlosapache.com/home.htm).
 
-For information on using the Apache name in promotions, media, and communications purposes, visit [ASF Marketing and Publicity Resources](/press). For guidelines on using Apache Software Foundation brands, such as references on Websites, books, research, visit the ASF’s Trademarks and Brand Management [Brand Policy](/foundation/marks).           
+For information on using the Apache name in promotions, media, and communications, visit [ASF Marketing and Publicity Resources](/press). For guidelines on using The Apache Software Foundation's brands on websites, in books, in presentations and events, in research papers, or in other ways, see the ASF’s Trademarks and Brand Management [Brand Policy](/foundation/marks).
