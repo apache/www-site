@@ -72,6 +72,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.leovegas.com/en-in/">LeoVegas Indian Online Casino</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.miro-kredit.ch/">Miro-Kredit AG</a></li>
       <li><a target="_blank" rel="sponsored" href="https://aboutpaf.com/">Paf</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.praca.pl/">Praca.pl</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.purevpn.com/">PureVPN</a></li>
       <li><a target="_blank" rel="sponsored" href="https://rx-m.com/">RX-M</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.renre.com/">RenaissanceRe</a></li>
