@@ -138,7 +138,7 @@ use of an Apache trademark is related to the ASF](#brand)
    on your platform, you may only refer to it as being based upon Apache. In
    all cases, altered or not, you must include attribution as described in
    section 3 of the license. If you have further questions, see our [license
-   FAQ](license-FAQ.html). If that doesn't answer them, you may contact our
+   FAQ](license-faq.html). If that doesn't answer them, you may contact our
    [Legal Affairs Committee](/legal/).
 
    <a name="export"></a>
@@ -160,7 +160,7 @@ use of an Apache trademark is related to the ASF](#brand)
    give it away. Neither do we provide formal or commercial support for any of
    our packages.
 
-   Also see the [is it free](license-FAQ.html#IsItFree) and following
+   Also see the [is it free](license-faq.html#IsItFree) and following
    sections in our license FAQ and our [Apache software is free of cost](/free/) page.
 
    <a id="projects" name="projects"></a>
