@@ -481,7 +481,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | rickmcguire | Rick McGuire | [Geronimo](http://geronimo.apache.org/) ; [OpenEJB](http://openejb.apache.org) ; [Aries](http://aries.apache.org) ; [Mina](http://mina.apache.org)|
 | ridruejo | [Daniel López Ridruejo](mailto:ridruejo@(no-spam)apache.org) | [httpd](http://httpd.apache.org/) ; [tcl](http://tcl.apache.org)|
 | rjung | Rainer Jung | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [Tomcat](http://tomcat.apache.org/)|
-| rlenferink | Roy Lenferink | [Celix](http://celix.apache.org/) |
+| rlenferink | Roy Lenferink | [Celix](https://celix.apache.org), [ComDev](https://community.apache.org) |
 | rnewson | Robert Newson | [CouchDB](http://couchdb.apache.org) |
 | rohini | Rohini Palaniswamy | [Pig](http://pig.apache.org), [Tez](http://tez.apache.org), [Oozie](http://oozie.apache.org) |
 | rony | Rony G. Flatscher | [Jakarta](http://jakarta.apache.org/)  |
