@@ -73,8 +73,7 @@ Some useful starting points are:
 
 ## Improvements to /dev documentation  {#review}
 
-The documentation at `/dev/` is the top layer of overall Infrastructure documentation. It is undergoing review and consolidation. Some material has moved to the next layer, [infra.apache.org][1]. The third layer, the [infrastructure wiki][2], holds lists, detailed scripts, and instructions mainly of use to the Infra team..
-
+The documentation at `/dev/` is the top layer of overall Infrastructure documentation. The next layer, [infra.apache.org][1], has information committers and PMCs may need to get the best use out of Apache's infrastructure. The third layer, the [infrastructure wiki][2], holds lists, detailed scripts, and instructions mainly of use to the Infra team.
 
 There are three main purposes for this documentation:
 
