@@ -1,14 +1,14 @@
 Title: Project Management Committee Guide
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Project Management Committee Guide #
+# Project Management Committee Guide
 
 This guide outlines the general responsibilities 
 of [Project Management Committee](/foundation/how-it-works.html#pmc) (PMC) members in managing their projects and common how-to procedures for 
 day to day maintenance. For a high-level overview of the what and why of PMCs,
 read the <a href="/foundation/governance/pmcs" target="_blank">PMC Governance overview</a>. 
 
-## Contents ##
+## Contents
 
   - [Intended audience](pmc.html#audience)
   - [What is a PMC?](pmc.html#what-is-a-pmc)
@@ -144,17 +144,17 @@ is to ensure that everyone has a chance to be heard and to enable meetings and m
 to flow smoothly. A well-run PMC works together to draw up the information for 
 their board report, but the chair is specifically responsible for getting it to the board. There is no concept of "leader" in the Apache way.
 
-### Ensure new committer requests are made ###
+### Ensure new committer requests are made
 After the project has elected new committers and followed the process to
 get their account created, the PMC chair ensures 
 the new committer has [karma](#newcommitter) (access) to the project repositories.
 
-### Send NOTICEs and followup when adding new PMC members ###
+### Send NOTICEs and followup when adding new PMC members
 The chair is responsible for sending the 72-hour
 NOTICE email to the board, then updating [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)
  and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmc).
 
-### Maintain ASF records on the PMC roster ###
+### Maintain ASF records on the PMC roster
 Maintain information about your PMC's composition in the SVN "committers" repository
 at [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt) and keep it up-to-date. 
 Remember to update the LDAP committee  group as well.
