@@ -1,7 +1,9 @@
 title: Developer Information
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-### Overview {#intro}
+# Developer information
+
+## Overview {#intro}
 
 Here is a directory of technical details pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
 
@@ -124,5 +126,4 @@ Anyone can view the pastes (except those marked 'committers only'), but only com
 
 ## Apache URL Shortener Service  {#shorten}
 
-Infrastructure hosts the [s.apache.org URL shortening service](https://s.apache.org/) for our committers.  When including URLs in PMC reports, please use this service and 
-not other URL shorteners.
+Infrastructure hosts the [s.apache.org URL shortening service](https://s.apache.org/) for our committers.  When including URLs in PMC reports, please use this service and not other URL shorteners.
