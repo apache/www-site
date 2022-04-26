@@ -1,4 +1,5 @@
 Title: Events
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 In addition to our [official conferences](conferences.html) , there are
@@ -6,7 +7,7 @@ many other events that are held around the world where the Apache community
 of developers and users come together face-to-face to share knowledge,
 advice, and wisdom.
 
-# Foundation Events #
+# ASF Events
 
 ![ApacheCon NA 2010](/ads/ApacheCon/2010-na-234x60.gif "ApacheCon NA 2010")
 The official conference of the Apache Software Foundation, [ApacheCon NA
@@ -33,7 +34,7 @@ Forum](http://www.openworldforum.org/) , in Paris, September 30th-October
 For further information about any of these events, please contact the
 Conference Committee at [concom@apache.org](mailto:concom@apache.org) 
 
-# Other Events #
+# Other Events
 
 Many third parties also produce events of interest to the Apache community.
 These events are **NOT** affiliated with the Apache Software Foundation.
@@ -61,4 +62,3 @@ contact us at [press@apache.org](mailto:press@apache.org).
 You can also find community members willing to speak on a variety of
 Apache-related topics using our [People
 Finder](http://community.zones.apache.org/) application.
-
