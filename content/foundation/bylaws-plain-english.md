@@ -1,4 +1,6 @@
-Title: Plain-English version of the Bylaws of The ASF license: https://www.apache.org/licenses/LICENSE-2.0
+Title: Plain-English version of the Bylaws of The ASF 
+
+license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
