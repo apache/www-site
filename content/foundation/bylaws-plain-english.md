@@ -1,5 +1,6 @@
 Title: Plain-English version of the Bylaws of The Apache Software Foundation license: https://www.apache.org/licenses/LICENSE-2.0
 
+# Plain-English version of the Bylaws of the ASF
 
 _Caution: this is a simplified text to help people understand the legal document. This is NOT the legal Bylaws of The Apache Software Foundation (the ASF). Please consult the [official text](bylaws.html) if you intend to base some action or argument on the precise text of the bylaws._
 
