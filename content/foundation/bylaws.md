@@ -1,6 +1,8 @@
 Title: Bylaws of The Apache Software Foundation
 license: https://www.apache.org/licenses/LICENSE-2.0
 
+_There is a [plain-English](bylaws-plain-english.html) version of the bylaws to help readers understand the meaning of the legal text._
+
 <h2><a id="A1" name="A1">ARTICLE I</a></h2>
 
 ### Business Offices ###
