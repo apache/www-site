@@ -1,7 +1,6 @@
 Title: Infrastructure Team Code of Conduct - What you can expect from us
 license: https://www.apache.org/licenses/LICENSE-2.0
 
- Infra follows the ASF's general [Apache Code of Conduct][1].
+# Infrastructure team code of conduct
 
-
-  [1]: https://www.apache.org/foundation/policies/conduct
+Infra follows the ASF's general <a href="https://www.apache.org/foundation/policies/conduct">Apache Code of Conduct</a>.
