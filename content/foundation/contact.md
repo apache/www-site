@@ -1,7 +1,8 @@
 Title: Contact Information
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Contact Information #
+# {{title}}
 
 The easiest way to contact the Apache Software Foundation (ASF) is via
 e-mail. Note that depending on your area of inquiry, there are a number of
@@ -12,14 +13,14 @@ FAQ](preFAQ.html) doesn't already address your issue. If it is, the only respons
 to that page, and you will have wasted your time and ours. So **please**
 check that page first!
 
-## Technical contact addresses ##
+## Technical contact addresses
 
 **Remember:** address all technical questions and questions
 about any of our projects or software products to the
 [appropriate project-specific mailing list](preFAQ.html#projects).
 There may be no response to technical questions you send to one of the organizational e-mail addresses below.
 
-## Non-technical contact addresses ##
+## Non-technical contact addresses
 
 **Key non-technical contact addresses for the ASF include:** 
 
@@ -64,7 +65,7 @@ If you have a question that is not covered by one of the above pages or
 e-mail addresses, the main **non-technical** contact address for the Apache
 Software Foundation is: **apache@apache.org**.
 
-## Mailing address ##
+## Mailing address
 
 You can send postal mail to our office:
 
