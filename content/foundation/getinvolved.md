@@ -1,5 +1,8 @@
 Title: Get Involved
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The best way to contribute to the Apache Software Foundation (ASF) is to get involved with
 one of our many Apache project communities.  The  best way to ask general questions 
@@ -10,7 +13,7 @@ new project submissions (or podlings) coming into the [Apache Incubator](http://
 So no matter what kinds of technology or software you use, we most 
 likely have an Apache project that you'll be interested in.
 
-# Use Apache products and give us feedback #
+## Use Apache products and give us feedback
 
 Using Apache products, asking (and sometimes answering) questions, reporting bugs
 and making feature requests are critical contributions to the success of the Apache project community.
@@ -24,7 +27,7 @@ User feedback helps drive our projects and the technologies behind them.
 
 -  [Report bugs and request features](http://issues.apache.org/) 
 
-# Contribute to the community #
+## Contribute to the community
 
 Beyond simple user activities, it's great to see users becoming contributors 
 by helping with the
@@ -44,7 +47,7 @@ documentation.
 -  [Understand How It Works](how-it-works.html) and see other [notes for
 contributors](/dev/#committers) 
 
-# Become a committer #
+## Become a committer
 
 We love to see contributors showing commitment. Projects invite committed participants to become committers and help shape the future of a project. 
 
@@ -77,4 +80,3 @@ Cameron Riley
 
 For more technical information, see [ASF development infrastructure](/dev/) and [notes for
 committers](/dev/#committers).
-
