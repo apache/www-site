@@ -1,7 +1,7 @@
 Title: GitPubSub
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-#GitPubSub#
+# GitPubSub
 
 This service has been discontinued in favor of [pyPubSub](https://infra.apache.org/pypubsub.html).
 <script type="text/javascript">
