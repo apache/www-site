@@ -1,5 +1,8 @@
-Title: Glossary of Apache-Related Terms
+Title: Glossary of ASF Terms
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 This glossary provides a brief description of some of the organizational 
 terms used at the ASF and in Apache projects.  For more information 
