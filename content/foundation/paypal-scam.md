@@ -1,5 +1,8 @@
 Title: Attention regarding PayPal Phishing Attack
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Starting around the middle of March 2007, a number of fake emails
 purporting to be PayPal receipts for The Apache Software Foundation have
@@ -41,4 +44,3 @@ Phishing](https://www.paypal.com/cgi-bin/webscr?cmd=xpt/cps/securitycenter/gener
 In the highly unlikely event that you do see an actual payment from your
 PayPal account to The Apache Software Foundation (and you didn't intend
 it!), please [contact us](contact.html) immediately.
-
