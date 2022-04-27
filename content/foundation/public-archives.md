@@ -1,5 +1,8 @@
 Title: Public Forum Archive Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 *Do you want to have an email deleted from an Apache mailing list? Then read on...* 
 
