@@ -1,5 +1,8 @@
 Title: Thanks
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The Apache Software Foundation could not exist without the continued
 generous support from the community. We would like to take this opportunity
@@ -85,7 +88,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    </ul>
    </div>
 
-# Targeted Sponsors #
+## Targeted Sponsors
 
 ASF Targeted Sponsors provide the Foundation with contributions for specific activities or programs, such as donating cloud services, funding a project hackathon, providing legal services, offering a community member benefit, underwriting expenses for ApacheCon, or something entirely new. It's the Apache way of recognizing the sponsors that we rely on every day outside of and often in addition to funding our general operations.
 
@@ -173,7 +176,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
 </script>
 <noscript>Sorry, your browser settings do not support JavaScript!</noscript>
 
-# Individual Donations #
+## Individual Donations
 
 The Apache Software Foundation receives many smaller donations from
 individuals.  More details are available on our [contribution page](/foundation/contributing.html).
@@ -183,7 +186,7 @@ support of our work, and for their willingness to contribute with
 only this as recognition for their generosity.
 
 
-# Mirrors #
+## Mirrors
 
 Until the third quarter of 2021, The ASF used a system of <a href="https://apache.org/history/mirror-history.html" target="_blank">download mirrors</a> to make Apache product releases conveniently available for free download around the world. The mirror system depended on generous contributions of resources and effort by organizations of many kinds (universities, non-profits, corporations and others), and The ASF could not have functioned as it has done without their support.
 
