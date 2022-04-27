@@ -1,5 +1,8 @@
 Title: Members
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 [Membership in The Apache Software Foundation](/foundation/governance/members) is a privilege and is by
 invitation only. Existing members propose and [vote on](/foundation/governance/meetings#membervoting)
@@ -37,7 +40,7 @@ A [list of all committers](http://home.apache.org/committer-index.html)
 and their [projects/SVN trees](http://home.apache.org/committers-by-project.html)
 is also available.
 
-# Members of The Apache Software Foundation #
+## Members of The Apache Software Foundation
 
 N.B. the listing below is optional; there is a separate summary of  [members](http://home.apache.org/committers-by-project.html#member)
 
@@ -621,7 +624,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | zwoop | [Leif Hedstrom](http://www.ogre.com) | [trafficserver](http://trafficserver.apache.org/), [trafficcontrol](http://trafficcontrol.apache.org/), [incubator](http://incubator.apache.org/) |
 
 
-# Emeritus Members of The Apache Software Foundation #
+## Emeritus Members of The Apache Software Foundation
 
 | Id | Name |
 |----|------|
@@ -703,7 +706,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | yoavs | [Yoav Shapira](http://www.yoavshapira.com) | [Jakarta](http://jakarta.apache.org) ; [Logging](http://logging.apache.org) ; [Tomcat](http://tomcat.apache.org)|
 | zeev | Zeev Suraski |
 
-# Deceased Members of The Apache Software Foundation #
+## Deceased Members of The Apache Software Foundation
 
 - **[Nóirín Plunkett](/memorials/noirin.html)** 
 
