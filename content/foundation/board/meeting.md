@@ -1,5 +1,8 @@
 Title: Board Meeting Process
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The Board of Directors uses a variety of tools and relies on volunteers across Apache 
 projects to ensure our monthly meetings run smoothly.  This is a guide 
@@ -25,7 +28,7 @@ always welcome to [attend monthly board meetings](#attend).
 
 [TOC]
 
-# Who does what  {#who}
+## Who does what  {#who}
 
 The board is responsible for [overseeing the operations of the ASF](/foundation/governance/) as a whole, including 
 all Apache projects.  We provide this oversight by having the officers responsible for corporate operations submit monthly reports, and each Apache project submit a quarterly report about their project's community and technical status.
@@ -49,16 +52,16 @@ the relevant officer or PMC after the meeting via private@ email.
 - The Secretary also manages the process of publishing approved board 
 meeting minutes (typically the following month).
 
-# Normal Board Meeting Timeline  {#timeline}
+## Normal Board Meeting Timeline  {#timeline}
 
-## At the *previous* month's meeting ##
+### At the *previous* month's meeting
 
 Shortly after a monthly meeting, the Secretary checks in draft meeting minutes for 
 later review and approval by the board.  The Board Chair then sends a "ASF Board Meeting Summary" overview 
 of formal actions taken during the meeting to all our committers.  The Secretary 
 sends out comments on reports and welcomes new officers - for details, see "Adjourning" below.
 
-## After the *previous* month's meeting ##
+### After the *previous* month's meeting
  
 A few days after the *previous* month's meeting, the agenda for the next (current) month's 
 meeting is assembled and checked into our code repository.  Board agendas 
@@ -79,7 +82,7 @@ get their own reminders.  The Incubator PMC then reviews and rolls up the releva
 Podling quarterly reports, allows podling mentors to sign off on or add additional 
 comments to them, and then submits an overall report to the board every month.
 
-## The Week before the meeting ##
+### The week before the meeting
 
 Each month, directors are randomly assigned to be 
 "Shepherds" of a set of PMC reports for that month's meeting.  The Shepherd pays
@@ -104,7 +107,7 @@ brief answers or additional information to any director questions.
 Since all activity - report submissions, approvals, comments - involves checking updated files into the SVN repository, Apache Members and PMC chairs 
 can watch the progress in the commit messages.
 
-## Day of the Board Meeting ##
+### Day of the Board Meeting
 
 On the day of the meeting, the Chair runs through the agenda in order.  After a roll call, Executive 
 officers typically verbally provide the highlights of their reports.  
@@ -122,7 +125,7 @@ We then step through the rest of the agenda, voting on Special Orders and resolu
 and then sometimes hold a discussion period on new matters, or to review deeper 
 questions raised by the submitted officer reports.
 
-## Adjourning / After The Board Meeting ##
+### Adjourning / After The Board Meeting
 
 Soon after the meeting adjourns, we inform our communities:
 
@@ -142,7 +145,7 @@ begins taking action to address it. The board expects to hear the results of the
 actions either at the next month's meeting, or in the PMC's next normal quarterly report.
 
 
-# Board meeting tools  {#tools}
+## Board meeting tools  {#tools}
 
 With the creation of the [Apache Whimsy project](https://whimsy.apache.org/), we now have a number of 
 tools that aid in creation and management of the agenda; workflow 
