@@ -1,5 +1,8 @@
 Title: Apache Corporate Governance - Board of Directors
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The Board of Directors sets overall policy for the Apache Software Foundation and 
 delegates execution and specific policy areas to individual officers 
@@ -9,7 +12,7 @@ and Project Management Committees.
 
 [TOC]
 
-# Organization  {#organization}
+## Organization  {#organization}
 
 The board consists of nine directors, each serving as an individual. 
 After each annual board election, the board chooses a Board Chair from its ranks. The 
@@ -43,7 +46,7 @@ President and provide a monthly report; the President rolls up all reports for
 the board on a monthly basis.  This way, the board provides oversight for all
 operations and project activities.
 
-# Legal  {#legal}
+## Legal  {#legal}
 
 Article V. of the ASF bylaws specifies a Board of nine Directors, elected 
 annually by the ASF Membership. The Apache Board is much like the board of 
@@ -62,7 +65,7 @@ retire unused projects, and in certain cases to make fundamental policy
 decisions. Most policy is simply agreed upon by the board and any relevant 
 officer(s), and published on our website.
 
-# Communication  {#communication}
+## Communication  {#communication}
 
 With the exception of monthly conference calls, board communication takes place over 
 private email lists. The board@apache.org email list is the primary place for 
@@ -81,7 +84,7 @@ and be voted in as a committer to that specific project, as is any other
 contributor.  When the board as a whole makes a formal request, the director 
 conveying the request makes it clear it is an act of the board, not just of one director.
 
-# Meetings  {#meetings}
+## Meetings  {#meetings}
 
 The board exercises oversight of Apache Projects by reviewing project reports at 
 the monthly board meeting, and by explicitly approving all changes to PMC 
@@ -101,7 +104,7 @@ correct the issue.
 
 A detailed [description of the board meeting process][1] is published.
 
-# Merit  {#merit}
+## Merit  {#merit}
 
 [Board elections][2] are held annually; currently, each board seat is for one year, 
 so all nine directorships are voted on annually. ASF Members are eligible to 
@@ -131,7 +134,7 @@ are expected to disclose any conflicts of interest they may have due to their
 current employment, and recuse themselves when necessary from votes or 
 potentially discussions on subjects they have a conflict with.
 
-# Community  {#community}
+## Community  {#community}
 
 While Directors participate in a variety of communities both within and outside 
 of the ASF, the primary community home for directors is the Membership. Most 
@@ -150,7 +153,7 @@ Many Directors also serve in the public community as spokespeople for
 the Apache Way granting interviews about the ASF or our projects, or 
 reviewing other open source or charitable foundation works.
 
-# Technical  {#technical}
+## Technical  {#technical}
 
 The board does not provide technical direction for any of its projects or 
 activities. The board does set broad policies -- for example, requiring that projects use source control systems that run on ASF hardware controlled by ASF 
@@ -167,7 +170,7 @@ communities provide that software, are confident that communities will form
 around software that is useful, and understand that there are many different 
 ways to effectively and collaboratively build software.
 
-# References  {#references}
+## References  {#references}
 
 * Who They Are: [Current Directors](/foundation/board/)
 * Who They Are: [Current ASF Officers](/foundation/)
