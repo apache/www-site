@@ -1,7 +1,10 @@
 Title: What makes a good ASF Member?
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Status #
+# {{title}}
+
+## Status
 
 This page is a work-in-progress draft.  When complete, it is anticipated to
 contain a collection of opinions by existing [Members](members) about what it
@@ -11,7 +14,7 @@ be useful.
 
 [TOC]
 
-# Opinion 1: __TITLE__
+## Opinion 1: __TITLE__
 
 __SUMMARY__
 
