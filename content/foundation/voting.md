@@ -1,5 +1,8 @@
 Title: Apache Voting Process
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Because one of the fundamental aspects of accomplishing things within the
 Apache framework is doing so by consensus, we need a
@@ -35,7 +38,7 @@ Votes on whether a **package** is ready to release use yet a
 different mechanism: are there are least three binding votes in favour of
 the release? See more about this [below](#ReleaseVotes).
 
-# Binding votes #
+## Binding votes
 
 Who can vote is, to some extent, a community-specific thing.
 
@@ -43,7 +46,7 @@ PMC members have formally binding votes, but in general communities encourage al
 even if their votes are only advisory.
 
 
-# Implications of voting #
+## Implications of voting
 
 In some cases and communities, the exercise of a vote carries some
 responsibilities that may not be immediately obvious. For example, in some
@@ -62,7 +65,7 @@ and found it good.' Similarly, a negative vote usually means that that the voter
 the patch and found it to be *not* good, although the veto (for such it is
 in this case) may be based on other technical grounds.
 
-# Expressing votes: +1, 0, -1, and fractions #
+## Expressing votes: +1, 0, -1, and fractions
 
 The voting process in Apache may seem more than a little weird if you've
 never encountered it before. Votes are represented as numbers between -1
@@ -90,7 +93,7 @@ Voting periods should generally run for at least 72 hours to provide
 an opportunity for all concerned persons to participate, regardless of their
 geographic location.
 
-## Votes on code modification ##
+### Votes on code modification
 
 For code-modification votes, +1 votes are in favour of the proposal, but -1
 votes are [vetos](#Veto) and kill the proposal dead until all vetoers
@@ -102,7 +105,7 @@ three +1 votes are required for a code-modification proposal to pass.
 We recommend whole numbers for this type of vote, as the opinion the voter is
 expressing is Boolean: 'I approve/do not approve of this change.'
 
-## Votes on package releases  {#ReleaseVotes}
+### Votes on package releases  {#ReleaseVotes}
 
 Votes on whether a package is ready to release use 
 [majority approval](glossary.html#MajorityApproval) -- 
@@ -116,7 +119,7 @@ lies with the individual serving as release manager. The
 specifics of the process may vary from project to project, but the 'minimum
 quorum of three +1 votes' rule is universal.
 
-# Vetoes  {#Veto}
+## Vetoes  {#Veto}
 
 A -1 vote by a qualified voter stops a code-modification proposal in its tracks. This constitutes a veto, and it cannot be overruled
 nor overridden by anyone. Vetoes stand until and unless the individual withdraws their veto.
@@ -126,7 +129,7 @@ a technical justification showing why the change is bad (opens a security
 exposure, negatively affects performance, *etc.* ). A veto without a
 justification is invalid and has no weight.
 
-# Gauging consensus through silence  {#LazyConsensus}
+## Gauging consensus through silence  {#LazyConsensus}
 
 An alternative to voting is to measure the
 acceptability of something using the concept of
@@ -142,7 +145,7 @@ so with a mail message such as:
 You cannot apply lazy consensus to code changes when the
 [review-then-commit](glossary.html#ReviewThenCommit) policy is in effect.
 
-# Reasons for votes #
+## Reasons for votes
 
 People tend to avoid conflict and thrash around looking for something to
 substitute - somebody in charge, a rule, a process, stagnation. None of
