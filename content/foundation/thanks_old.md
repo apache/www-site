@@ -1,5 +1,8 @@
 Title: Thanks
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The Apache Software Foundation could not exist without the continued
 generous support from the community. We would like to take this opportunity
@@ -131,7 +134,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
 </script>
 
 
-# Individual Donations #
+## Individual Donations
 
 The Apache Software Foundation receives many smaller donations from
 individuals.  More details are available on our [contribution page](/foundation/contributing.html).
@@ -141,7 +144,7 @@ support of our work, and for their willingness to contribute with
 only this as recognition for their generosity.
 
 
-# Mirrors #
+## Mirrors
 
 And a gigantic thank you to <a href="/mirrors/" target=_blank>all the ASF mirrors</a> around the world that help deliver Apache software at no charge!  
 
