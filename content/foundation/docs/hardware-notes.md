@@ -1,7 +1,9 @@
 Title: Hardware Notes
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Reporting Problems #
+# {{title}}
+
+## Reporting Problems
 
 - If the problem is fatal to non-developers (e.g., any of the major daemons
 being down SMTP, HTTP, etc) send a note to noc@collab.net, which will act
@@ -14,7 +16,7 @@ ssh access is screwy) please send a note to committers@apache.org. If it
 doesn't require root to fix, ideally someone can then leap in and fix it,
 with those with root ultimately responsible for fixing the problem.
 
-# Customizations to apache.org beyond a stock FreeBSD 4.2 installation #
+## Customizations to apache.org beyond a stock FreeBSD 4.2 installation
 
 - Using "vnode" memory filesystem proposed by Tony Finch. this is now in
 /etc/rc.local: `
@@ -38,4 +40,3 @@ problem.
 
 much much more to come, I just needed a common place to start collecting
 anecdotal data.
-
