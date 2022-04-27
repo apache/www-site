@@ -2,6 +2,8 @@ Atom: http://mail-archives.apache.org/mod_mbox/www-community/?format=atom
 Title: How the ASF works
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
+# {{title}}
+
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
 If you're curious about more governance details, we have a description of [Apache style governance][1].  
@@ -39,7 +41,7 @@ the incredible growth in new projects and contributors over the years. Come and 
 
 -  [Conclusions](#conclusions) 
 
-# What is the Apache Software Foundation?  {#what}
+## What is the Apache Software Foundation?  {#what}
 
 The [Apache Software Foundation](/foundation/) (ASF) is a 501(c)3 non-profit public charity organization
 incorporated in the United States of America. It was formed in 1999 primarily to:
@@ -60,7 +62,7 @@ being abused by other organizations
 That's the dry facts, but how did all this come to be and what does it
 really mean? We need to step back a little in history.
 
-# A bit of history  {#history}
+## A bit of history  {#history}
 
 A group of people calling themselves the “Apache Group” created the foundation in 1999. They had come together several years earlier,
 to continue to support and maintain the HTTPD web server written by the
@@ -93,7 +95,7 @@ attacks became more and more clear.
 
 Read more about [ASF History](/history/).
 
-# Meritocracy  {#meritocracy}
+## Meritocracy  {#meritocracy}
 
 Unlike other software development efforts under an open source
 license, like the Linux Kernel or the Perl/Python languages, no single developer initiated the Apache Web Server. A diverse group of people who shared common interests developed the project as they exchanged information, software fixes and suggestions.
@@ -124,7 +126,7 @@ disagreements.
 After explaining the structure of the ASF, we will see how the meritocracy
 relates to the various roles.
 
-# The Foundation structure  {#structure}
+## The Foundation structure  {#structure}
 
 As the Apache Web Server started to grow in market share and popularity,
 due to synergy of its technical merit and to the openness of the community
@@ -235,7 +237,7 @@ The [Officers of the Apache Software Foundation](./) oversee the day-to-day
 affairs of the Foundation. The [Board of
 Directors](#board) elects these officers.
 
-# Roles  {#roles}
+## Roles  {#roles}
 
 The meritocracy typically has various roles within each individual Apache project community:
 
@@ -294,7 +296,7 @@ new project for incubation (we'll see later what this means). The members
 coordinate their activities through their mailing list and through their
 annual meeting. We have a [full listing of Apache Members](/foundation/members.html).
 
-# Project Management and Collaboration  {#management}
+## Project Management and Collaboration  {#management}
 
 Apache projects are managed using a collaborative, consensus-based
 process. We do not have a hierarchical structure; rather, different groups
@@ -361,7 +363,7 @@ important indication of a healthy community.
 
 Specific cases have some more [detailed voting rules](/foundation/voting.html).
 
-### Philosophy ###
+## Philosophy
 
 While there is not an official list, people often cite these six principles, often referred to as "The Apache Way",
 as the core beliefs behind the foundation:
@@ -381,7 +383,7 @@ as the core beliefs behind the foundation:
 All ASF projects share these principles.  Similarly, Apache projects 
 must [govern themselves independently](http://community.apache.org/projectIndependence.html) of undue commercial influence.
 
-### Operation ###
+## Operation
 
 All participants in ASF projects are volunteers and nobody (not even members or
 officers) is paid directly by the foundation to do their job. There are many
@@ -392,7 +394,7 @@ the software and want to enhance it or maintain it provide the salary.
 The ASF does contract out various services, including accounting, 
 Press and Media relations, and infrastructure system administration.
 
-### Individuals compose the ASF  {#hats}
+## Individuals compose the ASF  {#hats}
 
 All of the ASF including the board, the officers, the committers, and
 the members, are participating as individuals. That is one strength of the
@@ -417,7 +419,7 @@ their apache.org email address when otherwise they would use their personal
 one. This last method is not reliable, as many people use their
 apache.org address all of the time.
 
-### Balancing confidentiality and public discussion  {#confidential}
+## Balancing confidentiality and public discussion  {#confidential}
 
 We endeavour to conduct as much discussion in public as possible. This
 encourages openness, provides a public record, and stimulates the broader
@@ -434,7 +436,7 @@ Private lists are typically only used for matters pertaining to people as
 individuals (like voting in new committers), and legal matters that require 
 confidentiality.
 
-# The Foundation Incubator  {#incubator}
+## The Foundation Incubator  {#incubator}
 
 To support and encourage new projects, the ASF created the
 [Incubator](http://incubator.apache.org/) to help new
@@ -504,7 +506,7 @@ with a community of individuals affiliated to unrelated entities.
 - it gives a greater variety of technical visions, This guarantees a better adherence to the environment and users' needs, thus a
 higher chance of finding real-life use of the software.
 
-# Other Foundation Entities  {#other}
+## Other Foundation Entities  {#other}
 
 Along with the Incubator, the foundation has several other
 cross-foundation projects. For example, the ASF does not have offices or
@@ -517,7 +519,7 @@ Projects](foundation-projects.html) page.
 The ASF also hosts some foundation-wide mailing lists, which you can learn about
 on the [Mailing Lists](mailinglists.html) page.
 
-# In review...  {#conclusions}
+## In review...  {#conclusions}
 
 The ASF represents one of the best
 examples of an open organization that has found balance between structure
