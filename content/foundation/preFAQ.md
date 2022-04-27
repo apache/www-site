@@ -1,5 +1,7 @@
-Title: Contact FAQ
+Title: Contact FAQs
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 This page answers most of the common queries that we receive as email about our
 Apache&reg; projects' software and the Apache Software Foundation(ASF) as a non-profit organization. 
