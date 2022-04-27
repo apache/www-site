@@ -1,7 +1,9 @@
 Title: ASF highlights, 1999-2009
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-Please see our [current listing of News and Announcements](https://www.apache.org/press/#news) for more recent notes.
+# {{title}}
+
+_Please see our [current listing of News and Announcements](https://www.apache.org/press/#news) for more recent notes._
 
 <hr/>
 
@@ -100,7 +102,7 @@ Sponsor](https://blogs.apache.org/foundation/entry/the_apache_software_foundatio
 Your Rules
 Now!](https://blogs.apache.org/foundation/entry/notice_apache_spamassassin_y2k10_rule) 
 
-### 2009 ###
+### 2009
 
 - *November 4th, 2009*  [ApacheCon US 2009 Draws Unprecedented Support From
 the Global Open Source Community and Recognition for the 10th Anniversary
@@ -136,7 +138,7 @@ Foundation
 - *March 3, 2009* <br/> [Press Release](press/pr_2009_03_03.html) : The
 Apache Software Foundation Names Qpid a Top-Level Project.
 
-### 2008 ###
+### 2008
 
 - *October 14, 2008* <br/> [Press Release](press/pr_2008_10_14.html) :
 Apache Tuscany enables service oriented architecture solutions to more
@@ -149,7 +151,7 @@ recognition and influence on the future of open source technologies.
 - *January 15, 2008* <br/> [Press Release](press/ASF-NewYear2008.pdf) :
 The Apache Software Foundation Wraps Up 2007 As Its Strongest Year To Date.
 
-### 2004 ###
+### 2004
 
 - *September 2, 2004* <br/> [Open letter](docs/sender-id-position.html):
 Issued to the [IETF MARID Working
@@ -160,14 +162,14 @@ ASF's position on Sender ID.
 release](http://www.prnewswire.com/cgi-bin/stories.pl?ACCT=SVBIZINK3.story&STORY=/www/story/05-11-2004/0002172126&EDATE=TUE+May+11+2004,+02:15+PM):
 Apache HTTP Server Reaches Record Eight Consecutive Years of Technical Leadership
 
-### 2002 ###
+### 2002
 
 - *March 26, 2002* <br/> [Press
 release](http://www1.internetwire.com/iwire/release_html_b1?release_id=39838):
 Apache Software Foundation Reaches Agreement With Sun Microsystems To
 Allow Open Source Java Implementations
 
-### 2001 ###
+### 2001
 
 - *May 30, 2001* <br/> [Apache.org hacked](../info/20010519-hack.html)
 but no software distributions were compromised.
@@ -175,7 +177,7 @@ but no software distributions were compromised.
 - *Feb 21, 2001* <br/>The Apache Software Foundation is [officially
 recognized as a U.S. 501(c)3 public charity](records/ASF-501c3.pdf).
 
-### 1999 ###
+### 1999
 
 - *June 30, 1999* <br/> [Press release](press/pr_1999_06_30.html)
 announcing the incorporation of the Apache Software Foundation.
