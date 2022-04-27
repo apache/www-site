@@ -1,5 +1,8 @@
 Title: Mailing Lists
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Publicly archived mailing lists are critical to the operation of the Apache Software
 Foundation (ASF) and to our many [Apache
@@ -20,13 +23,13 @@ Note that some Apache mailing lists are not public; they are often but not alway
 **private@**. Be sure not to take emails from private discussions or mailing lists 
 into a public forum or list unless there is agreement by all parties to the conversation.
 
-# Moderation of posts #
+## Moderation of posts
 
 Most lists require a poster to be subscribed.
 If you are not subscribed, your post requires moderation.
 This may take hours or days, so it's best to subscribe (as described below) before posting.
 
-# Subscribing and Unsubscribing  {#subscribing}
+## Subscribing and Unsubscribing  {#subscribing}
 
 Unless otherwise noted, ASF lists are managed by
 [ezmlm](http://untroubled.org/ezmlm/), which lets users subscribe or unsubscribe by sending an email to a special address.
@@ -38,7 +41,7 @@ This works as follows:
 
 ASF committers can also use the Whimsy [Mailing List Self-subscription](https://whimsy.apache.org/committers/subscribe) service.
 
-### Request addresses for [un]subscribing ###
+## Request addresses for [un]subscribing
 
 If you want to subscribe
 to <code><em>list</em>@apache.org</code>, you need to send a message to
@@ -61,7 +64,7 @@ to
 <em>list</em>-unsubscribe-<b>user=oldname.example</b>@apache.org
 </pre>
 
-[The list moderators can also do this.]
+_The list moderators can also do this._
 
 If you do not recall the address you used when you subscribed, view the full headers
 of any email you received from the list and examine the `Return-Path`,
@@ -72,7 +75,7 @@ Note: Spam filters don't like messages with empty Subjects; just put
 "subscribe" or "unsubscribe" in the header field. Spam filters are also more likely to reject
 HTML-formatted messages; please use plain text.
 
-### Request confirmation ###
+## Request confirmation
 
 After you send the subscribe or unsubscribe request, the list manager
 sends you a confirmation e-mail in reply. **You must reply to this e-mail to
@@ -84,7 +87,7 @@ This may take a day or two. If necessary, try again after a few days.
 For this reason we recommend that ASF and PMC members use
 [the self-subscribe app](https://whimsy.apache.org/committers/subscribe) to avoid having to wait for the human moderators to check and green-light your subscription request.
 
-### Other list commands ###
+## Other list commands
 
 To find out more about a list's features, including how to contact the list owner (moderator),
 send a message to 
@@ -104,7 +107,7 @@ what mailing lists they are subscribed to by going to the following page:
 
   [https://whimsy.apache.org/roster/committer/\_\_self\_\_](https://whimsy.apache.org/roster/committer/__self__)
 
-### Digest Subscriptions
+## Digest Subscriptions
 
 You can also subscribe to most mailing lists in digest form. To do this for <tt>*list*@apache.org</tt>, send a message to
 
@@ -121,13 +124,13 @@ To get off a digest list, send a message to
 If you need to unsubscribe a different email or get help with a digest list the same instructions as for subscribing/unsubscribing 
 above apply. Just remember to add *-digest* after the list name and before the *-subscribe* or *-unsubscribe*.
 
-# Moderators  {#moderators}
+## Moderators  {#moderators}
 
 Each mailing list generally has several moderators who look after the list.
 For further information, see the
 [Committers FAQ - Mail Questions](/dev/committers.html#mail)
 
-# Mailing List Archives  {#archives}
+## Mailing List Archives  {#archives}
 
 Archives for public mailing lists are available at a number of locations,
 including:
@@ -140,7 +143,7 @@ including:
 
 -  [mail-archive.com](http://mail-archive.com/) 
 
-# Project Mailing Lists #
+## Project Mailing Lists
 
 Links to project-specific mailing list info can be found on the [project
 resources page](http://projects.apache.org/projects.html).
@@ -149,7 +152,7 @@ Tip: if you have a technical question of any kind, the best place to ask is the
 user@ or dev@ list for the relevant project - Foundation level mailing lists 
 or other Apache contact emails (including individuals' emails) will not be able to help you
 
-# Foundation-wide Mailing Lists #
+## Foundation-wide Mailing Lists
 
 -  [Apache News and Announcements](#foundation-announce) 
 
@@ -161,7 +164,7 @@ or other Apache contact emails (including individuals' emails) will not be able 
 
 -  [Legal discussions](#foundation-legal) 
 
-# Apache News and Announcements  {#foundation-announce}
+## Apache News and Announcements  {#foundation-announce}
 
 The Apache Announcements list contains news and announcements about the
 foundation and its projects. It includes announcements of major software releases, new
@@ -178,7 +181,7 @@ our official [@TheASF Twitter](https://twitter.com/TheASF) account, or the
 | Archives: | [Web archives](http://lists.apache.org/list.html?announce@apache.org)<br />[archives](http://www.mail-archive.com/announce@apache.org/) |
 | Getting help with the list: |  [announce-help@apache.org](mailto:announce-help@apache.org)  |
 
-# Apache Conference Announcements  {#foundation-apachecon}
+## Apache Conference Announcements  {#foundation-apachecon}
 
 The Apache Conference planning committee uses the `announce@ApacheCon.Com` mailing list to make announcements about conferences, conventions,
 and trade shows in which the Foundation is participating. Only the Foundation posts Messages on this list; there is no discussion.
@@ -193,7 +196,7 @@ You may also be interested in our official [@ApacheCon Twitter](https://twitter.
 | Archives: | Available back to 13 October 1999. Send a message to [announce-help@ApacheCon.Com](mailto:announce-help@ApacheCon.Com) for information about accessing the archives. |
 | Getting help with the list: |  [announce-help@ApacheCon.Com](mailto:announce-help@ApacheCon.Com)  |
 
-# Apache Conference Planning and Discussions  {#foundation-apachecon-discuss}
+## Apache Conference Planning and Discussions  {#foundation-apachecon-discuss}
 
 The `apachecon-discuss@apache.org` mailing list is for discussions of the future of ApacheCon, and future 
 ApacheCons. (Discussions of current and upcoming ApacheCons which have been approved occur on other lists.)
@@ -217,7 +220,7 @@ not yet ready to seek final approval.
 | Archives: | [Web archives](http://lists.apache.org/list.html?small-events-discuss@apache.org) |
 | Getting help with the list: |  [small-events-discuss-help@apache.org](mailto:small-events-discuss-help@apache.org)  |
 
-# Community Mailing List  {#foundation-community}
+## Community Mailing List  {#foundation-community}
 
 Participants in the ASF use the `dev@community.apache.org` mailing list to discuss community-related foundation-wide 
 topics. Participation in this list is open to everyone, and public archives
@@ -230,7 +233,7 @@ This replaces the old `community@a.o`mailing list, disabled in 2014.
 | Subscription address: |  [dev-subscribe@community.apache.org](mailto:dev-subscribe@community.apache.org)  |
 | Archives: | [Web archives](https://lists.apache.org/list.html?dev@community.apache.org) |
 
-# Foundation Infrastructure Mailing List  {#foundation-infrastructure}
+## Foundation Infrastructure Mailing List  {#foundation-infrastructure}
 
 The ASF Infrastructure team uses the `users@infra.apache.org` mailing list to discuss issues concerning operation of the
 overall Apache Software Foundation systems. Only committers to ASF projects can participate in this list.
@@ -238,7 +241,7 @@ Non-committers may send mail to this address to report problems with ASF
 systems, however see the notes about <a href="https://infra.apache.org/stats.html" target="_blank">system status</a> before
 you do. See also information about other ways to <a href="https://infra.apache.org/contact.html" target="_blank">contact Infra</a>.
 
-# Repository Mailing List  {#foundation-repository}
+## Repository Mailing List  {#foundation-repository}
 
 Use the `repository@apache.org` mailing list to discuss 
 foundation-wide issues relating to software distribution repositories, including 
@@ -251,7 +254,7 @@ are available.
 | Subscription address: |  [repository-subscribe@apache.org](mailto:repository-subscribe@apache.org)  |
 | Archives: | [Web archives](https://lists.apache.org/list.html?repository@apache.org) |
 
-# Foundation Legal Discussion Mailing List  {#foundation-legal}
+## Foundation Legal Discussion Mailing List  {#foundation-legal}
 
 The `legal-discuss@apache.org` is a forum for questions (even FAQs) that
 have a legal aspect. These questions may concern (for example)
