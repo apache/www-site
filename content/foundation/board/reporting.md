@@ -1,5 +1,8 @@
 Title: Board Reporting Guidelines for Project Chairs
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Apache Project Management Committees (PMC)  **must** report on their 
 project's health and status quarterly to the Board of Directors.  While PMCs manage 
@@ -13,7 +16,7 @@ are always welcome to [attend monthly board meetings][9].
 
 [TOC]
 
-# When to submit project board reports  {#when}
+## When to submit project board reports  {#when}
 
 The **chair of each PMC** is responsible for submitting the report for their 
 project on a quarterly basis, at least **one week before** each board meeting, 
@@ -35,7 +38,7 @@ private@ mailing lists to help you remember this task.
 three months after leaving the Apache Incubator.  All podlings still in the 
 Apache Incubator fill out similar reports using the [Incubator Podling Status][7] process.
 
-# How to submit project board reports  {#how}
+## How to submit project board reports  {#how}
 
 You must commit report content to the board's monthly meeting agenda.  
 Use either the Whimsy Agenda tool or the ComDev Project Reporter tool, which generates a handy framework for you:
@@ -72,7 +75,7 @@ gathering data for your report, but you ***must*** edit and add information from
 generated template to cover the below points.  
 Do not leave any of the **TODO markers** in your report when you submit it.
 
-# Points to cover in board reports  {#guidelines}
+## Points to cover in board reports  {#guidelines}
 
 These points are **not** a template; projects should not simply copy and 
 paste these bullets into their reports.  Rather, these are the topics that the 
@@ -191,7 +194,7 @@ chair should consider each of these questions when writing a report.
          strategic suggestions, or requests in your board reports. 
 
 
-# Things not to put in reports  {#donot}
+## Things _not_ to put in reports  {#donot}
 
  - Do not let commercial activity related to a project dominate a report.
 
@@ -207,7 +210,7 @@ chair should consider each of these questions when writing a report.
 
 - There's no need to include details about committer affiliations in a report, unless the information points to an issue around diversity which may be included privately.
 
-# Private information  {#private}
+## Private information  {#private}
  
 Occasionally a project may need to report something **privately** to the board,
 but will not want the information to be published in public minutes.  Remember, 
@@ -230,7 +233,7 @@ Private sections properly marked appear with a grey background.
 If the issue is *exceptionally* sensitive and you are very concerned about privacy, 
 you may instead email directly to board-private@ or an individual board member, who will relay the information to the board.
 
-# Other considerations for reports  {#other}
+## Other considerations for reports  {#other}
 
 Project reports are the key way to let the board know about the status and 
 health of your project.  With the diversity of projects at Apache, these 
@@ -255,7 +258,7 @@ status and health of projects.  If the Board cannot get a strong feeling
 about how your project is doing, then we will be contacting you for a 
 follow-up report in the near future.
 
-# Engaging with the Board about the report
+## Engaging with the Board about the report
 
 Project reports are not a one-directional form of communication. They are
 also an opportunity to engage with the Board. Project chairs are welcome to 
@@ -304,7 +307,7 @@ The [board meeting][6] typically follows this pattern:
      shortly after the meeting concludes.  This gives you brief feedback 
      from the meeting, and a chance to enage with the board either to answer questions 
      or to ask for advice.  If the board has questions for your project, [reply-all and answer them][8].
- 11. Reports are published as part of the minutes, when approved in the subsequent monthly meeting of the
+ 12. Reports are published as part of the minutes, when approved in the subsequent monthly meeting of the
      Board of Directors.
   
 As you can see, ensuring we receive your report on time, that it includes all necessary details, and that you address any comments greatly enhances the flow of the Board meeting, which needs to cover more than
