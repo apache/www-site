@@ -1,5 +1,8 @@
-Title:       Estimated Trademark Registration Costs For Apache Projects
+Title: Estimated Trademark Registration Costs For Apache Projects
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 An overview of legal costs related to trademarks, especially the cost of trademark registrations and maintenance for Apache Software Foundation top level projects.
 
@@ -15,7 +18,7 @@ See Also: [Trademark Resources Site Map](/foundation/marks/resources).
 
 [TOC]
 
-# Registered Trademarks  {#registered}
+## Registered Trademarks  {#registered}
 
 Common law trademark rights for your Apache software product's name and logo accrue to the ASF (in the United States, at least) as long as your project provides a consistently named software product download and uses it's name as a trademark.  These are often called "common law trademarks".  The ASF's use of a specific software product name over time grows our basic rights to the name as our users are used to getting software products of a certain type and quality from Apache projects.
 
@@ -27,17 +30,17 @@ Trademark registrations are country-specific.  In particular, many countries ope
 
 The ASF owns all Apache project trademarks on behalf of our volunteer project communities.
 
-# Trademark Registration and Maintenance Timelines  {#timeline}
+## Trademark Registration and Maintenance Timelines  {#timeline}
 
 While trademark law and implementation varies by country, in most cases the pace of a registration application is fairly slow.  Similarly, submitting a registration application is by no means a sure thing; applications can have issues raised by the national registry's examiners or may even be contested by third parties.  In general, expect the process to take 6 months or longer, when an application does not have any issues come up.  If issues are raised (which is not easy to predict), the timeline and cost can go up notably.
 
-## How To Request Registration  {#regrequest}
+### How To Request Registration  {#regrequest}
 
 **Information Needed:** To request registration, your [PMC needs to provide basic information](/foundation/marks/register#register) about your software product's name, it's download page, a brief description of what the software product does, and when the name was first used.  VP, Brand will evaluate the information, and send it to the ASF's trademark counsel for a detailed review.  Our counsel will then formally submit the registration application to the USPTO, the national registry for US trademarks.  If the PMC has an approved budget for other country registrations, our counsel will complet them at the same time using the *Madrid Protocol*.
 
 Each mark (a specific name or logo) must be applied for separately.  In almost all cases, we will be applying in Nice international trademark **class 9** for software products.  PMCs requests to applying for an additional "services" class (that is, providing the volunteer developer support PMCs do on dev@/user@) will be considered on an individual basis and will require justification for any additional costs. 
 
-### Registration Application Timeline And Steps  {#regapplication}
+#### Registration Application Timeline And Steps  {#regapplication}
 
 Note that Brand Management will track this process, and will reach out to the private@project list if the PMC's feedback is required.
 
@@ -49,19 +52,19 @@ The trademark examiners make a final determination of any objections.  In very r
 
 **3. Granting** Finally, an application is formally granted, and the ASF is given a registration number and the information is published in the trademark register.  At this point, your project must begin using the ® registered trademark symbol for your name, to ensure that other parties know it's now registered.  Brand Management will let you know when this happens.
 
-### Registration Renewal Timelines  {#regrenewal}
+#### Registration Renewal Timelines  {#regrenewal}
 
 Once a registration is issued, it is valid for a certain period of time (typically 5 or 10 years) after which it must be renewed; the timeline, process and fees vary by country.  Our counsel maintains a docket of all the paperwork and dates required for these registrations and will alert us when items need to be filed, and will handle the paperwork for us.  
 
 Renewals come with a national registry fee as well.  In virtually all cases, there are no or few other costs with renewals.  Note that the ASF must show (by providing URLs and images of current web pages) that we are still continuing to use the mark in conjunction with the software product.
 
-# Estimated Costs For Trademark Registration And Renewals  {#cost}
+## Estimated Costs For Trademark Registration And Renewals  {#cost}
 
 Note that national costs below do not include the (discounted) counsel time required for preparing 
 documentation.  So for each specific trademark a project wants to register, plan on adding between 800USD - 3000USD additional cost 
 over the application process (below) for counsel time (from our lawyers) to submit forms and address objections.
 
-## In the US  {#uscost}
+### In the US  {#uscost}
 
 * Application US-only: 225 USD (*Our counsel, DLAPiper, uses the TEAS Plus application process*)
 * After 5 years: Filing section 8 & 15 declarations: 300 USD
@@ -70,7 +73,7 @@ over the application process (below) for counsel time (from our lawyers) to subm
 
 The official [USPTO cost schedule](http://www.uspto.gov/learning-and-resources/fees-and-payment/uspto-fee-schedule#TM%20Process%20Fee) includes detailed costs.  If a project is registering in multiple countries at the same time, see the [Madrid Protocol costs](#madridcosts) instead.
 
-## In Europe  {#eucost}
+### In Europe  {#eucost}
 
 The EU/CTM allows for a single application process to cover all EU member states, which is many times cheaper than filing national registrations.  EU registrations are valid for 10 years.
 
@@ -78,7 +81,7 @@ The EU/CTM allows for a single application process to cover all EU member states
 * If a project is registering in the EU and other countries at the same time, see the [Madrid Protocol costs](#madridcosts) instead.
 
 
-## Madrid Protocol And Other Country Costs  {#madridcost}
+### Madrid Protocol And Other Country Costs  {#madridcost}
 
 The Madrid Protocol allows a trademark holder to apply for multiple national trademarks in a single, streamlined process.  The costs vary depending on which countries are applied for; one application is made that is automatically forwarded to each selected country.  The actual registration applications are then processed independently in each country.  Costs vary widely and are subject to change.
 
@@ -94,11 +97,11 @@ See the [Madrid Protocol cost calculator](http://www.wipo.int/madrid/en/fees/cal
 
 Each country registration comes up for renewal every 10 years individually.
 
-## Legal Counsel Fees  {#counselcost}
+### Legal Counsel Fees  {#counselcost}
 
 [DLAPiper](https://www.dlapiper.com/), an international IP law firm, represents the ASF for trademark matters, and provides discounted rates for their work.  In some cases, if complex work is required, they will alert us that specific work will incur a larger than usual charge.  VP, Brand will work with the relevant PMC to either justify budget from the Apache Board for these costs, or to cease work on the specific matter.
 
-## Outside Counsel Fees  {#outsidecost}
+### Outside Counsel Fees  {#outsidecost}
 While DLAPiper can perform most legal work for us, in some cases they must defer work to outside law firms to complete specific steps of the process.  This happens either when DLAPiper doesn't have lawyers in a specific country or jurisdiction, or when DLAPiper has a conflict of interest with some other related trademark holder and cannot represent the ASF in that specific matter.
 
 In these cases, DLAPiper will pass our work onto the other firm, which bill us separately once we authorize work.  DLAPiper has negotiated discounted fee structures with these firms on our behalf.
