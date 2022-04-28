@@ -1,5 +1,8 @@
 Title: How To Contact Apache With Branding Questions
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 How to contact the ASF or any Apache&reg; project about trademark or brand questions, and how 
 to request permissions for any Apache project brand uses.
@@ -14,9 +17,9 @@ See Also: [Trademark Resources Site Map][resources].
 
 [TOC]
 
-# How To Request Trademark Use Permissions For Apache Brands
+## How To Request Trademark Use Permissions For Apache Brands
 
-## Uses in Events or Conferences  {#events}
+### Uses in Events or Conferences  {#events}
 
 Review the [Third Party Event Branding Policy][events] and ensure your 
 plans comply with the policy **first**.  Then send an email confirming 
@@ -30,7 +33,7 @@ below **and** cc: to `trademarks@apache.org`:
 - [Apache Subversion&reg; Event Requests](mailto:private@subversion.apache.org?subject=%5bEVENT%5d%20Subversion%20Event%20branding%20use%20request)
 - [All Other Apache Project Event Requests](mailto:trademarks@apache.org?subject=%5bEVENT%5d%20Event%20branding%20use%20request)
 
-## Uses in Domain Names  {#domains}
+### Uses in Domain Names  {#domains}
 
 Review the [Third Party Domain Name Branding Policy][domains] and ensure your 
 plans comply with the policy **first**.  Then send an email confirming 
@@ -44,13 +47,13 @@ below, **and** cc: to `trademarks@apache.org`:
 - [Apache Subversion&reg; Domain Name Requests](mailto:private@subversion.apache.org?subject=%5bDOMAIN%5d%20Subversion%20Domain%20Name%20branding%20use%20request)
 - [All Other Apache Project Domain Name Requests](mailto:trademarks@apache.org?subject=%5bDOMAIN%5d%20Domain%20Name%20branding%20use%20request)
 
-## Uses for Merchandise (swag, apparel, pins, stickers, etc.)  {#swag}
+### Uses for Merchandise (swag, apparel, pins, stickers, etc.)  {#swag}
 
 We are currently working on guidelines that allow simpler use of Apache 
 brands in such situations in ways that improve the image and reach 
 of Apache projects.  For the time being, you can email [trademarks@](mailto:trademarks@apache.org?subject=%5bMERCH%5d%20Merchandising%20branding%20use%20request).
 
-## Uses in Software Products  {#products}
+### Uses in Software Products  {#products}
 
 Since the primary goods of any Apache project are software products 
 provided [free of charge][free] to the general public, we generally do not allow third parties 
@@ -64,7 +67,7 @@ as you follow *all* aspects of the policy, in particular **always** using the
 Separately, we offer a set of [Powered By Apache][poweredbylogo] logos that you
 may use to show support for or use of various Apache software projects.
 
-## Uses in Software Hosting, Training, or any Related Services  {#services]
+### Uses in Software Hosting, Training, or any Related Services  {#services]
 
 We are currently working on guidelines that allow simpler use of Apache 
 brands in such situations in ways that improve the image and reach 
@@ -73,21 +76,21 @@ between your organization and the ASF or Apache projects.
 
 For the time being, please email [trademarks@](mailto:trademarks@apache.org?subject=%5bHOSTED%5d%20Services%20branding%20use%20request)
 
-# Report Trademark Problems Or Make Complaints  {#complaint}
+## Report Trademark Problems Or Make Complaints  {#complaint}
 
 The ASF and Apache projects strive to be respectful of the trademarks of 
 other organizations.  If you have a concern or complain about use of *your* 
 trademarks by any Apache project **hosted on an apache.org domain**, please 
 [contact us directly](mailto:trademarks@apache.org?subject=%5btrademark%5d%20Trademark%20use%20complaint).
 
-# For PMCs or Committers  {#pmc}
+## For PMCs or Committers  {#pmc}
 
 Apache PMC members or committers with questions about Apache brand policies or with any 
 other questions or suggestions should [email the privately-archived trademarks@ list](mailto:trademarks@apache.org?subject=%5bPMC%5d%20Trademark%20policy%20question) directly.
 
 In general, cc:'ing your projects private@ PMC list is almost always a good idea too.
 
-# Legal Counsel & All Other Questions  {#other}
+## Legal Counsel & All Other Questions  {#other}
 
 For any general questions not addressed above, send a private email to: 
 
@@ -109,7 +112,7 @@ You can also follow our @ASFBrands official account on Twitter for occasional ne
 <script>!function(d,s,id)  {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <noscript>(Note: Twitter requires JavaScript)</noscript>
 
-# Important Note  {#notes}
+## Important Note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with the Apache Software Foundation or
