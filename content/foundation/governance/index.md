@@ -1,5 +1,8 @@
 Title: Apache Corporate Governance
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 This overview describes how the Apache Software 
 Foundation (ASF) is governed.  This focuses both on the familiar Apache Way 
@@ -8,7 +11,7 @@ behind-the-scenes governance of the non-profit corporation itself.
 
 [TOC]
 
-# Apache Governance Overview  {#introduction}
+## Apache Governance Overview  {#introduction}
 
 As a Delaware, US-based membership corporation and an IRS registered 501(c)(3) non-profit, 
 the Apache Software Foundation is 
@@ -20,7 +23,7 @@ While many people are familiar with the consensus-based, community driven
 governance known as [The Apache Way](/theapacheway/index.html) that Apache projects use, readers 
 may not be as familiar with how the ASF *as a corporation* works behind the scenes.   
 
-# Corporate Governance  {#corporate}
+## Corporate Governance  {#corporate}
 
 Behind the scenes of the many successful Apache projects, the ASF operates like any other corporation.  While the ethos of The Apache Way - merit, consensus, community, charity - is reflected within our corporate governance activities, the details of how the corporation legally works are somewhat different than how our projects work.
 
@@ -91,7 +94,7 @@ Our high-level [Apache org chart](orgchart) shows the separation between
 organizational governance (the board & members) and technical governance 
 (PMCs and committers).
 
-# Technical Governance  {#technical}
+## Technical Governance  {#technical}
 
 Within the ASF, the board delegates the technical direction of each project 
 to its PMC.  PMCs are expected to follow corporate policies in terms of 
@@ -123,7 +126,7 @@ tools useful for doing Apache project work are available. Committers may also
 list themselves in our [worldwide listing of committers](http://people.apache.org/)
 , as well as within our [Community Development mentoring program](http://community.apache.org/localmentors.html). 
 
-# Non-Governance Groups At Apache  {#other}
+## Non-Governance Groups At Apache  {#other}
 
 In our community-based organization, there many other groups of individuals and 
 organizations that provide valuable work and services for the ASF and Apache 
@@ -183,7 +186,7 @@ bandwidth services, and the like.  Vendors are not otherwise part of our
 governance structures.  Vendor relationships are managed by a volunteer 
 officer whenever possible.
 
-# References  {#references}
+## References  {#references}
 
 * [Public Records of the ASF](/foundation/records/)
 * [How It Works, a Guide to the ASF](/foundation/how-it-works.html)
