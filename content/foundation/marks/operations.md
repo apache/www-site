@@ -1,5 +1,8 @@
 Title: Brand Management Quarterly Operations Summary
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Historical records of public operations summaries of the ASF Trademarks Committee.
 
@@ -13,13 +16,13 @@ See Also: [Trademark Resources Site Map][resources].
 
 [TOC]
 
-## Brand Management Monthly Reports To The Board
+### Brand Management Monthly Reports To The Board
 
 Formally published reports from Brand Management are included in the 
 [official board meeting minutes](https://whimsy.apache.org/board/minutes/Brand_Management) of the ASF.
 
 
-## Q2 Operations Summary - December 2017 (FY 2018)
+### Q2 Operations Summary - December 2017 (FY 2018)
 
 The fall quarter in the Northern Hemisphere brings a regular uptick 
 in requests and questions, which continues to require effort to provide 
@@ -72,7 +75,7 @@ questions or suggestions!
 > Shane Curcuru, Vice President ASF Brand Management
 
 
-## Q1 Operations Summary - September 2017 (FY 2018)
+### Q1 Operations Summary - September 2017 (FY 2018)
 
 The summer quarter continues to be traditionally quiet in terms of 
 trademark questions and requests, although we continue to get new 
@@ -122,7 +125,7 @@ questions or suggestions!
 > Shane Curcuru, Vice President ASF Brand Management
 
 
-## Annual Report June 2017 (FY 2017)
+### Annual Report June 2017 (FY 2017)
 
 #### Operational Trends
 
@@ -326,7 +329,7 @@ trademarks@apache.org
 > Shane Curcuru, Vice President ASF Brand Management
 
 
-## Annual Report - June 2016 (FY 2016)
+### Annual Report - June 2016 (FY 2016)
 
 While Foundation-wide educational and policy improvement work continues,
 we are still finding communities that need more help in reviewing their
@@ -371,7 +374,7 @@ trademarks@apache.org
 > Shane Curcuru, Vice President ASF Brand Management
 
 
-### Q3 Operations Summary - March 2016 (FY 2016)
+#### Q3 Operations Summary - March 2016 (FY 2016)
 
 Our Foundation-wide educational and policy improvement work continues to
 pay off, as more Apache projects are getting organized about maintaining
@@ -418,7 +421,7 @@ well as extend our thanks to those who contribute code to our projects.
 > Shane Curcuru, Vice President ASF Brand Management
 
 
-### Q2 Operations Summary - December 2016 (FY 2016)
+#### Q2 Operations Summary - December 2016 (FY 2016)
 
 The brand management team continues to work on educational materials to
 help promote our many Apache project brands, as well as showing our
@@ -443,7 +446,7 @@ Apache project brands in other countries with our limited budget.
 > Shane Curcuru, Vice President ASF Brand Management
 
 
-## Annual Report - June 2015 (summary FY 2015)
+### Annual Report - June 2015 (summary FY 2015)
 
 The Apache(R) brand holds a unique position in the software world, in
 that it is associated with communities and technologies in a wide
