@@ -1,5 +1,8 @@
 Title: New Project and Software Product Naming Process
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 All Apache Podlings, and any Apache&reg; top level project (TLP) must use this process when coming up with a new project name,
 or when coming up with a name for a new subproject or downloadable software product.
@@ -14,7 +17,7 @@ See Also: [Trademark Resources Site Map][resources] and [Podling Name Search Gui
 
 [TOC]
 
-# Why do we need a project/product naming process?  {#rationale}
+## Why do we need a project/product naming process?  {#rationale}
 
 When it comes to trademarks conflicts it might be necessary to show other parties that ASF trademarks
 were chosen in good faith and with appropriate research. As a non-profit, we have no
@@ -29,14 +32,14 @@ trademark rights are properly transferred to the ASF in
 a timely manner during incubation. The ASF must own all trademark 
 rights in a podling's branding before they may graduate.
 
-# Who needs this process?
+## Who needs this process?
 
  - Every project which wants to name or rename a new product
  - Every project which wants to rename the project itself
  - Every Incubator Podling which wants to graduate from the Incubator and become either a top level project or a sub project
  - Every project which is created without going through the Incubator
 
-# When do I need to start this process?  {#startsearch}
+## When do I need to start this process?  {#startsearch}
 
 You need to start this process early enough to complete your search and to give
  the trademarks committee time to review.  Preferably start this process well before:
@@ -49,14 +52,14 @@ Please note: renaming projects (later, if a change is required) requires a lot o
 run the process as early as possible. Incubator podlings could run it after they have been accepted, but before
 they start to request resources. This will cause a few days delay, but might save a lot of trouble later.
 
-# How To: Perform a Suitable Name Search  {#namesearch}
+## How To: Perform a Suitable Name Search  {#namesearch}
 
 After you have carefully read [Project Naming And Descriptions][1] and [the trademarks main page][2] and some [common-sense hints for choosing names][3],
 make sure your PMC (Podlings: PPMC) has decided on a name. Usually this is done by a public vote.
 
 When your PMC has decided on a name, a "suitable name search" must be done.
 
-## Create an Name Search issue
+### Create an Name Search issue
 
 First, create a an issue in [Suitable Names Search JIRA space][4]. Good examples are:
 
@@ -72,7 +75,7 @@ If you are a podling where the existing name is coming along, please note if the
 are any registered trademark(s) for the podling.  Including a list from the donor of 
 the marks, along with a clear statement of intent to donate, is very helpful in evaluating the results.
 
-## Research common software sources  {#sourcesearch}
+### Research common software sources  {#sourcesearch}
 
 Please consider to research at least the following sources:
 
@@ -96,7 +99,7 @@ Please **don't include any interpretation** in the JIRA issue, just try to note 
 If you have specific questions on what the results mean, please ask trademarks@ and
 include your project/podling's private mailing list (i.e. not your public dev@ list).
 
-## Research Registered Trademarks  {#regsearch}
+### Research Registered Trademarks  {#regsearch}
 
 Perform the same search as above, but for registered trademarks.
 A thorough review of registered trademarks in countries your project
@@ -167,7 +170,7 @@ a specific page is:
 
 The whole URL there will work if you send it to someone else (or put it in a PODLINGNAMESEARCH).  
 
-## Result interpretation & Approval  {#searchresults}
+### Result interpretation & Approval  {#searchresults}
 
 The trademarks team will interpret your findings and probably discuss it on trademarks@apache.org (please note:
 this is a private list, all messages from there should be treated as such).
@@ -182,7 +185,7 @@ Once the name is approved, you can work with your new trademark - and be sure to
 update your website with the appropriate &trade; or &reg; symbols.
 Incubator Podlings: please don't forget to update your Incubator status page.
 
-# Transferring Podling Trademarks To The ASF  {#podlings}
+### Transferring Podling Trademarks To The ASF  {#podlings}
 
 [Incubation][incubator] is the process by which an existing community formally works towards becoming an Apache top level project.  This includes the donation of various IP associated with the podling, like code and documentation, and includes the trademark rights to any branding the podling uses.
 
@@ -192,7 +195,7 @@ If the company chooses not to donate the trademarks, then the podling should be 
 
 The **ASF must own all trademark rights and goodwill to the branding used in podlings before graduation** to top level project will be approved. This is to ensure that the ASF can defend the project's brand, and that we can maintain independent governance for our projects.  However the  process can take some time, and we are flexible with the legal details of the transfer during incubation.
 
-## Legal Trademark Work During Incubation  {#incubation}
+### Legal Trademark Work During Incubation  {#incubation}
 
 During acceptance of a podling, we require a clear statement of intent from the current trademark owner that they will donate the trademarks to the ASF before graduation.  This can be via email from some officer of the existing trademark holder; it does not need to be legally binding, just socially binding, since if the trademarks are not transferred the podling won't graduate.
 
@@ -200,7 +203,7 @@ During incubation, the donor and the podling itself should both work to ensure t
 
 Once a podling is well-established and before it begins any vote to graduate, the existing trademark holder needs to sign a standard trademark transfer agreement to the ASF.  We appreciate it if the current owner can propose a standard agreement for our counsel's review.  The podling PPMC needs to get counsel for the donor to [work with trademarks@apache.org][contactus] to agree and sign the transfer.
 
-## When A Podling Doesn't Graduate  {#failed}
+### When A Podling Doesn't Graduate  {#failed}
 
 If a podling honestly fails incubation (i.e. they honestly try but don't
 make it), and we have not executed specific legal agreements to transfer
