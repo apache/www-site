@@ -1,5 +1,8 @@
 Title:     Downstream Distribution Branding Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 # DRAFT ~ DRAFT ~ DRAFT
 
@@ -9,7 +12,7 @@ products under the original Apache product name. Distributors wishing to use a
 different name should follow our
 [formal Trademark Policy](/foundation/marks/)
 
-# Downstream Distribution Branding Policy  {#introduction}
+## Downstream Distribution Branding Policy  {#introduction}
 
 Apache software products are distributed by a number of downstream entities that
 provide packages for their platform. Examples include Docker images, Linux
@@ -20,14 +23,14 @@ distributors and is happy to see them distribute Apache products under the
 original Apache name providing that this policy is followed.
 
 
-## Naming  {#name}
+### Naming  {#name}
 
 The name must be the same name as the name used by The Apache Software Foundation. The full
 name of all Apache software products has the form of "Apache *ProjectName*". Note that "Apache",
 "*ProjectName*" and "Apache *ProjectName*" are trademarks of The Apache Software Foundation.
 
 
-## Source Code  {#source}
+### Source Code  {#source}
 
 The source code on which the software is based must either be identical to an
 Apache Software Foundation source code release or all of the following must also
@@ -67,7 +70,7 @@ The acceptable changes must meet at least one of the following criteria:
   configuration files, file layout etc.) to integrate with the target platform
   providing the Apache project has not objected to those changes.
 
-## Additional dependencies
+### Additional dependencies
 
 Any additional dependency included in the distribution MUST be licensed under
 terms that would allow an Apache project to include the dependency in an
@@ -86,7 +89,7 @@ that replace default functionality in the Apache project MUST be provided
 via separate packages unless the Apache project has approved their
 inclusion in the distribution.
 
-# Usage Examples  {#examples}
+## Usage Examples  {#examples}
 
 Based on the above policy, the following usages would be acceptable unless
 project specific requirements prevent it:
@@ -125,7 +128,7 @@ unless project specific requirements allow it:
   persistence library.
 
 
-# Project Specific Requirements  {#projects}
+## Project Specific Requirements  {#projects}
 
 Individual projects may modify the default requirements for modified software
 distributions set out above.
@@ -139,19 +142,19 @@ before distributing a modified version of an Apache software project under
 the Apache product name.
 
 
-# Other Trademark Policies And Resources  {#other}
+## Other Trademark Policies And Resources  {#other}
 
 Please see our [formal Trademark Policy](/foundation/marks/)
 and our [site map of Trademark resources][resources].
 
-# Important Note  {#notes}
+## Important Note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with The Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third party products, services, or events.**
 
-# Policy Version  {#version}
+## Policy Version  {#version}
 
 This is version 0.4 of this draft Apache policy document, published in June 2020.
 
@@ -160,7 +163,7 @@ Material changes will be marked with a new version number.
 Changes will be tracked from version 1.0 onwards.
 
 
-# DRAFT ~ DRAFT ~ DRAFT
+## DRAFT ~ DRAFT ~ DRAFT
 
 [resources]: /foundation/marks/resources
 
