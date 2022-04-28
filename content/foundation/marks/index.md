@@ -1,5 +1,8 @@
 Title: Apache Software Foundation Trademark Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 This document outlines the **policy for allowable uses of Apache&reg; Software Foundation trademarks
 by other parties**.
@@ -15,7 +18,7 @@ ways. [Contact us][contact] with any questions
 about this policy or about ASF trademarks, and **read our 
 [list of trademark resources][resources]**.
 
-# Trademark Policy Quick Links #
+## Trademark Policy Quick Links
 
 -  [Rationale](#rationale) 
 
@@ -39,7 +42,7 @@ about this policy or about ASF trademarks, and **read our
 
 -  [More ASF Trademark Resources](resources)
 
-# Rationale  {#rationale}
+## Rationale  {#rationale}
 
 ASF trademarks, service marks, and graphics marks are symbols of the
 quality and community support that people have come to associate with
@@ -60,7 +63,7 @@ ownership, endorsement, or sponsorship of any ASF-related project or
 initiative of any kind.  We are a vendor-neutral organization, and an important part of 
 our brand is that [ASF projects are governed independently][independent].
 
-# Description of Key Trademark Principles  {#principles}
+## Description of Key Trademark Principles  {#principles}
 
 This section is not intended to summarize the complex law of trademarks. However,
 it may help you understand some key principles.  More 
@@ -142,7 +145,7 @@ service marks, or product names of the Licensor, except as required for
 reasonable and customary use in describing the origin of the Work and
 reproducing the content of the NOTICE file.
 
-# Specific ASF Trademark Policies  {#guidelines}
+## Specific ASF Trademark Policies  {#guidelines}
 
 The following Specific Policies apply to the "Apache" word trademark and
 the "ASF feather" graphic trademark, as well as the trademarks and
@@ -169,12 +172,12 @@ or "Apache *ProjectName*" or the *ProjectName* graphic logo trademarks.
 
 - The ASF prefers you use the [full Apache *ProjectName* name][brandguide] for all our projects.
 
-## Using ASF Trademarks in software product branding  {#products}
+### Using ASF Trademarks in software product branding  {#products}
 
 In general you may [**not** use ASF trademarks in any software product branding][products]. 
 However in very specific situations you may use the [Powered By naming form][poweredby] for software products. 
 
-## Using ASF Trademarks in published books and articles  {#books}
+### Using ASF Trademarks in published books and articles  {#books}
 
 You may write about Apache Foo software, and use our trademarks in book or
 article titles. You needn't ask us for permission to refer to Foo (ProjectName), as in
@@ -254,7 +257,7 @@ ASF-distributed software.
 - Company names that may be associated in customer's minds with ASF or its
 trademarked project software.
 
-## Using ASF Trademarks in domain names  {#domains}
+### Using ASF Trademarks in domain names  {#domains}
 
 You may not use ASF trademarks such as "Apache" or "ApacheFoo" or "Foo" in
 your own domain names if that use would be likely to confuse a relevant
@@ -269,7 +272,7 @@ For more details and to request approvals, please see our
 In particular, using ASF product names as second level domain names (*example*.com) is not allowed.
 
 
-## Using ASF Trademarks in relation to conferences and events  {#events}
+### Using ASF Trademarks in relation to conferences and events  {#events}
 
 Certain ASF trademarks are reserved exclusive for
 official Apache Software Foundation activities. For example, "ApacheCon" is
@@ -287,7 +290,7 @@ For more details and to request approvals, please see our
 [Event Branding Policy](/foundation/marks/events.html). 
 Please request approvals well in advance to avoid ApacheCon blackout dates.
 
-# Who We Are  {#whoweare}
+## Who We Are  {#whoweare}
 
 The [VP, Brand Management](/foundation/) and associated Brand Management
 Committee is the formal body within the ASF responsible for setting policy
@@ -300,14 +303,14 @@ President to serve in this position.  See a [list of committee members and how t
 <a href="https://twitter.com/ASFBrands" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @ASFBrands</a> <script>!function(d,s,id)  {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <noscript>(Note: Twitter requires JavaScript, which is not currently enabled)</noscript>
 
-# Important Note  {#notes}
+## Important Note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with the Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third party products or services.**
 
-# Policy Version  {#version}
+## Policy Version  {#version}
 
 This is version 1.2 of this ASF policy document, published in March 2021. We will mark significant changes with a new version number.
 
