@@ -1,14 +1,18 @@
 Title: ASF Development Process
+
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
+
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
-# Purpose and Intended Audience #
+# {{title}}
+
+## Purpose and Intended Audience
 
 This explains the Apache development process, with a focus on the legal
 side of things. It's primarily intended for those who are interested in
 what the ASF do to manage the ownership of their products.
 
-## Contributions ##
+### Contributions
 
 Contributions are covered by the Apache License. See the license's
 [Definitions](/licenses/LICENSE-2.0.html#definitions) of the terms
@@ -17,7 +21,7 @@ Contributions](/licenses/LICENSE-2.0.html#contributions) ". As explained
 there, if a submission is intended to be "Not a Contribution", then it
 needs to be conspicuously marked as such.
 
-## Incoming code ##
+### Incoming code
 
 Source code enters the foundation in one of the following ways:
 
@@ -82,14 +86,14 @@ Finally, Apache projects record their export classifications
 [here](/licenses/exports/) and via a notice in a README file in the
 distribution as per the [crypto process](/dev/crypto.html).
 
-## Project naming ##
+### Project naming
 
 New projects arrive at the ASF via the Apache Incubator project. One of the
 steps undergone during the [incubation
 process](http://incubator.apache.org/incubation/Process_Description.html)
 is a check of the project name for trademark issues.
 
-## Outgoing code ##
+### Outgoing code
 
 All releases require a successful vote from the releasing project's PMC.
 
@@ -103,8 +107,7 @@ Lastly, releases are checksummed with MD5/SHA1 so that damaged downloads
 can be identified; and securely signed with PGP to confirm it is the
 officially released version.
 
-## Further questions ##
+### Further questions
 
 Please contact the [legal-discuss@ mailing list](/foundation/mailinglists.html#foundation-legal)
 if you have any questions or comments.
-
