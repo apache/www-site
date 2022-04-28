@@ -1,5 +1,8 @@
 Title: Apache Corporate Governance- PMCs
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# PMCs
 
 Each Project Management Committee (PMC) votes on its software product releases 
 and elects new PMC members and committers to its Apache project.
@@ -15,7 +18,7 @@ documents under References or in [/dev][1].
 
 [TOC]
 
-# Organization  {#organization}
+## Organization  {#organization}
 
 Committers elected to the PMC within a specific Apache project provide oversight 
 for the project on behalf of the ASF, deciding the release strategy for the project. 
@@ -37,7 +40,7 @@ PMC members. [PMC members also have binding votes on any project matters](/dev/p
 PMCs must have at least three (3) active members. This is because 
 the minimum number of positive (+1) votes required for a product release is [three](/legal/release-policy.html#release-approval).
 
-# Legal  {#legal}
+## Legal  {#legal}
 
 The board creates PMCs to manage specific named projects by resolution at 
 monthly meetings. New top level projects (TLPs) are created from podlings in 
@@ -72,7 +75,7 @@ operations and releases, ensuring that software releases take place on behalf of
 . This helps ensure that the ASF as an organization, not individual committers, bears any legal liability for the products of Apache projects. All PMC chairs provide [quarterly reports to 
 the board](/foundation/board/reporting), which ensures that the board has oversight of all ASF projects. 
 
-# Communication  {#communication}
+## Communication  {#communication}
 
 All PMC members should subscribe to their project's private@ list, and 
 certainly should subscribe to at least the dev@ list to be aware of the 
@@ -93,7 +96,7 @@ tools that provide for public view and comment, along with the normal project
 mailing lists. PMCs should make specific requests to the Infrastructure team 
 for services that the project desires.
 
-# Meetings  {#meetings}
+## Meetings  {#meetings}
 
 Some PMCs sponsor in-person meetings, teleconferences, 
 or IRC chats to brainstorm project ideas, but must bring all 
@@ -106,7 +109,7 @@ Given the distributed and volunteer nature of our projects, in-person meetings
 of PMCs are quite rare. All project business takes place on the project's normal public 
 mailing lists.
 
-# Merit  {#merit}
+## Merit  {#merit}
 
 PMCs are free to set the bar for merit within their projects, as long as 
 decision-making takes place in a collaborative fashion as in the Apache Way. 
@@ -138,7 +141,7 @@ revisions in the source repository", the notion of committership is a social
 one: someone is a committer if the PMC has invited them to be a
 committer, and they have accepted the invitation.
 
-# Community  {#community}
+## Community  {#community}
 
 While only PMC members have binding votes on project releases, in general PMC 
 members participate equally with their project committers and contributors on the dev@ list. 
@@ -161,7 +164,7 @@ commercial influence. The board will contact PMCs that are unable or unwilling t
 actions are on behalf of the whole community, or that act in ways targeted to benefit 
 specific commercial interest, and will require them to make corrections. 
 
-# Technical  {#technical}
+## Technical  {#technical}
 
 The board does not provide technical direction for any of its projects or 
 activities. PMCs are the governing body for their project, and are expected to manage the 
@@ -177,7 +180,7 @@ communities provide that software, are confident that communities will form
 around software that is useful, and understand that there are many different 
 ways to effectively and collaboratively build software.
 
-# References  {#references}
+## References  {#references}
 
 * Who They Are: [Current PMCs](http://projects.apache.org/indexes/pmc.html)
 * [Project Management Committee Guide](/dev/pmc.html "A how-to of PMC duties")
