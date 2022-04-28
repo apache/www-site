@@ -1,14 +1,17 @@
 Title: Non-Software Merchandise Branding Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-This **Non-Software Merchandise Branding Policy** defines **requirements**
+# {{title}}
+
+This Policy defines **requirements**
 for when outside parties may be eligible to request permission to use
 Apache&reg; marks on non-software merchandise, such as apparel,
 posters, carry bags, stickers, and other similar items often used as
 giveaways at conferences or to sell on a website.  This policy does
 **not** apply to any computer hardware or software related items.
 
-# Non-Software Merchandise Branding Overview  {#introduction}
+## Non-Software Merchandise Branding Overview  {#introduction}
 
 **In general, you may only use Apache marks such as "Apache *Project*" or
 "*Project*" or Apache project *logos* on non-software merchandise
@@ -26,7 +29,7 @@ of that mark alone on merchandise or the bare Apache feather is
 Apache projects, and is special to our organization, as well as being the
 primary way that consumers discover our projects.
 
-# Contents  {#links}
+## Contents  {#links}
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
@@ -56,7 +59,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 -  [Policy Rationale](#rationale)
 
-# Must Not Be Adjacent To Other Brands  {#nonaffiliation}
+## Must Not Be Adjacent To Other Brands  {#nonaffiliation}
 
 Apache trademark use on merchandise generally must not be in direct
 conjunction with or adjacent to other brands.  For example, you
@@ -70,7 +73,7 @@ inform the public that the merchandise and your organization are not
 affiliated with, endorsed by, or otherwise associated with the ASF or
 any of its projects.
 
-# Must Include Links To Relevant Apache Project On Related Websites  {#credit}
+## Must Include Links To Relevant Apache Project On Related Websites  {#credit}
 
 Any websites or other electronic media used to promote or provide
 merchandise for sale **must** include a
@@ -83,7 +86,7 @@ the mark and its project.
 Websites selling merchandise for profit must include a [trademark attribution][attribution] 
 to the relevant Apache trademark(s).
 
-# Non-Disparaging References To Apache Projects  {#positive}
+## Non-Disparaging References To Apache Projects  {#positive}
 
 Merchandise using Apache marks must not be used to disparage the reputation
 of the ASF, its projects, or its communities.
@@ -94,7 +97,7 @@ As a non-profit organization devoted to the public good through the software tha
 produce, it is inappropriate for us to provide permission for outside parties
 to use our marks to disparage our communities or our work.
 
-# No Exclusive Or Controlling Relationship  {#exclusive}
+## No Exclusive Or Controlling Relationship  {#exclusive}
 
 Merchandise using Apache marks must not give the impression
 to relevant consumers that the organization controlling or providing the
@@ -110,7 +113,7 @@ employee or your corporate partners uniform or wear must be carefully designed
 to not tie your company's services or employees/partners to the 
 independent Apache project community providing Apache branded software.
 
-# For Profit Sales Consider Profit Donations  {#donations}
+## For Profit Sales Consider Profit Donations  {#donations}
 
 Giving away merchandise, selling at cost, or small scale operations
 run by individuals or small companies are not required to donate
@@ -123,7 +126,7 @@ situation, please contact trademarks@ to arrange for a specific
 non-exclusive licensing contract.  A preferred agreement would
 be 10% - 20% of net profits from the goods.  The ASF is a US 501(c)(3) public charity.
 
-# Trademark Attributions And Proper Apache Brand Usage  {#attributions}
+## Trademark Attributions And Proper Apache Brand Usage  {#attributions}
 
 Any use of Apache word trademarks on accompanying websites must comply with
 our trademark policy and follow our [Apache Product Name Usage Guide][guide].
@@ -145,7 +148,7 @@ page.  Note that you **must** have a current written permission from the
 VP, Brand Management or the VP of the relevant Apache project to include the
 "and are used with permission as of 2017" phrase.
 
-# Logos And Graphics Usage  {#graphics}
+## Logos And Graphics Usage  {#graphics}
 
 Apache product logos may only be used to refer to the
 Apache products or projects themselves, must be clearly set off from
@@ -158,14 +161,14 @@ that only provide black ink may change a colored logo to B&W or
 greyscale as needed.  Reprinting our yellow Hadoop elephant in a different 
 color, like green or blue, is not permitted.
 
-# Must Not Use "Apache", "ApacheCon", feather trademarks  {#apachecon}
+## Must Not Use "Apache", "ApacheCon", feather trademarks  {#apachecon}
 
 You may not use either the "Apache" nor the "ApacheCon"
 names, nor confusingly similar names, nor the bare Apache feather logo.
 These trademarks are reserved for the ASF, its projects, and its
 own authorized conferences or specifically contracted and authorized sellers.
 
-# How To: Request Permission For Non-Software Merchandise  {#permission}
+## How To: Request Permission For Non-Software Merchandise  {#permission}
 
 If you wish to incorporate any Apache trademarks on non-software
 merchandise, please [email us on the
@@ -189,7 +192,7 @@ for /committers/brand/merchandise.txt for details.
 Selected merchants with existing permissions are featured
 on our [Support Apache - Buy Stuff listing](//www.apache.org/foundation/buy_stuff.html).
 
-# Rationale  {#rationale}
+## Rationale  {#rationale}
 
 The primary mission of the Apache Software Foundation is to provide software
 for the public good.  As a volunteer run non-profit organization, we have
@@ -197,19 +200,19 @@ a limited ability to provide physical goods bearing our marks to help
 promote our communities, so we are happy when outside parties
 do so in a respectful manner, and consider donating some profits.
 
-# Other Trademark Guidelines  {#other}
+## Other Trademark Guidelines  {#other}
 
 Please see our [formal Trademark Policy](//www.apache.org/foundation/marks/)
 and our [site map of Trademark resources][resources].
 
-# Important Note  {#notes}
+## Important Note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with the Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third party products, services, or events.**
 
-# Policy Version  {#version}
+## Policy Version  {#version}
 
 This is version 1.0 of this Apache policy document, published in May 2017.
 Significant changes will be marked with a new version number.
