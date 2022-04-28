@@ -1,5 +1,8 @@
 Title: Apache Product Name Usage Guide
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The Apache&reg; brand is shared amongst all 200+ Apache Software Foundation (ASF) project
 communities and is an important part of our mission of providing
@@ -24,7 +27,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 [TOC]
 
-# About the Apache Brand  {#introduction}
+## About the Apache Brand  {#introduction}
 
 The Apache brand and our feather logo stand for the Apache Way process
 by which we build software.  Some of the elements of the Apache Way
@@ -46,14 +49,14 @@ for providing Apache software, and to preserve the independent governance
 image of the ASF and Apache projects, there are some specific ways that
 you should refer to Apache projects and products.
 
-# How To Refer To Apache Projects And Products  {#naming}
+## How To Refer To Apache Projects And Products  {#naming}
 
 Apache projects are always named in the form of "Apache Hadoop".  While
 we use the Hadoop&reg; project here as an example, these guidelines apply
 for all Apache projects.  Ensuring you consistently refer to "Apache Hadoop"
 ensures that all Apache projects share the tie to the non-profit that hosts them.
 
-## Using Apache Hadoop Versus Hadoop  {#howoften}
+### Using Apache Hadoop Versus Hadoop  {#howoften}
 
 The first and most prominent mentions **must** use the *full form*: "Apache
 Hadoop&reg;" of the name for any individual usage (webpage, handout, slides, etc.)
@@ -120,7 +123,7 @@ in running or body text.
 
   - Uses of Apache brands in [domain names][4] or [event names and brands][5] are covered in their own policies.
 
-# How To Use Apache Project Logos  {#logos}
+## How To Use Apache Project Logos  {#logos}
 
 The most important points are to use the unmodified logo from the 
 Apache project itself, and to ensure that logos are not used in conjunction
@@ -129,7 +132,7 @@ always have a clear understanding that the logo refers to the actual
 Apache project (community) or software product (actual download),
 and not to some third party organization or product.
 
-# How To Use Apache Powered By Project Logos  {#poweredby}
+## How To Use Apache Powered By Project Logos  {#poweredby}
 
 To enable the many organizations that build solutions atop Apache software
 to properly showcase their relationship, the ASF provides a line of
@@ -139,7 +142,7 @@ in more contexts than the official project logos, including in ways that
 directly show the relationship between the Apache software product and
 various third party products and services.
 
-# How To Use The Apache Feather Logo  {#feather}
+## How To Use The Apache Feather Logo  {#feather}
 
 The Apache feather logo is an important brand to the ASF as a whole, as well
 as to every Apache project.  As a vendor-neutral public charity, the feather should
@@ -152,12 +155,12 @@ logos or images.
 
 The ASF Press team maintains the [official Apache feather logos](/foundation/press/kit/#policy).
 
-# Other Trademark Guidelines  {#other}
+## Other Trademark Guidelines  {#other}
 
 Please see our [formal Trademark Policy](/foundation/marks/)
 and our [site map of Trademark resources][resources].
 
-# Important Note  {#notes}
+## Important Note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with the Apache Software Foundation or
