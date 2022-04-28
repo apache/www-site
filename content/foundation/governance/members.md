@@ -1,5 +1,8 @@
 Title:     Apache Corporate Governance - Members
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# Members
 
 The Membership of the Apache Software Foundation are those individuals 
 elected to Membership in the corporation itself; they are eligible to 
@@ -7,7 +10,7 @@ elect new Members and to elect Directors to the Board.
 
 [TOC]
 
-# Organization  {#organization}
+## Organization  {#organization}
 
 The ASF is a [membership corporation][1], so Members serve a similar role as 
 shareholders do in publicly traded corporations. Members may propose new 
@@ -26,7 +29,7 @@ Incubator policy and releases of podlings undergoing incubation. In this way,
 members work to mentor podling communities and guide them in the Apache Way, 
 and eventually to graduation as a top level Apache project.
 
-# Legal  {#legal}
+## Legal  {#legal}
 
 Members act as shareholders of the corporation. Each Member has a 
 single vote on electing directors to the board; similarly members may vote on 
@@ -43,7 +46,7 @@ While the board and relevant officers are directly responsible for providing
 oversight to the many Apache projects, members often work within many Apache 
 projects to help ensure projects run smoothly and follow the Apache Way.
 
-# Communication  {#communication}
+## Communication  {#communication}
 
 The central place for member-focused announcements and discussions is the 
 privately archived members@ mailing list. This is used for a wide variety of 
@@ -64,7 +67,7 @@ receive any special merit in terms of influencing the technical direction of
 Apache projects. Merit in Apache projects is gained within each individual 
 project community, and membership does not convey any other special privileges.
 
-# Meetings  {#meetings}
+## Meetings  {#meetings}
 
 The board holds an [Annual Members' Meeting][2] at least every 13 months, at which members elect a [new board of 
 directors][3], and may vote on [new member candidates][4]. Meetings 
@@ -91,7 +94,7 @@ private. Members do often meet in small groups in person, although this is for
 social reasons, and often involves a meal or drinks. When the ASF's annual ApacheCon conference takes place in a physical location, rather than online, many members and committers 
 traditionally attend and meet each other there.
 
-# Merit  {#merit}
+## Merit  {#merit}
 
 All members have the ability to nominate new individuals as candidates for 
 membership. The amount and types of merit that existing members look for in 
@@ -126,7 +129,7 @@ in being considered for the board or in appointment to officer positions at the
 ASF, although the most important factor is demonstrated merit within the 
 particular project or the ASF as a whole.
 
-# Community  {#community}
+## Community  {#community}
 
 The ability of members to influence the ASF is simultaneously major and 
 immaterial. On one hand, members vote on new candidate members, and more 
@@ -154,7 +157,7 @@ as bridges between the various Apache projects they are involved in.
 Many members also volunteer extra time to serve as mentors, both working with projects and communities within the ASF and mentoring 
 others or speaking at conferences outside of it.
 
-# Technical  {#technical}
+## Technical  {#technical}
 
 The membership as a whole and individually does not provide technical direction 
 for any Apache projects directly; every PMC is free to manage its technical 
@@ -178,7 +181,7 @@ projects. Simply being elected a Member does not confer any additional
 abilities in terms of other projects. Many members choose to serve as ambassadors 
 of the Apache Way, and usually get involved in more projects as time goes on.
 
-# References  {#references}
+## References  {#references}
 
 * Who They Are: [Current Members](/foundation/members.html)
 * Who They Are: [Current Members and Committers by Project](http://people.apache.org/committer-index.html)
