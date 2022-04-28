@@ -1,5 +1,8 @@
 Title: Apache Project Corporate Recognition Best Practices
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Apache&reg; Project Corporate Recognition Best Practices defines
 **suggested practices** for how Apache projects may choose to link to third
@@ -16,7 +19,7 @@ See Also: [Trademark Resources Site Map](/foundation/marks/resources).
 
 [TOC]
 
-# Corporate Recognition Best Practices Overview  {#introduction}
+## Corporate Recognition Best Practices Overview  {#introduction}
 
 To ensure the ability of [Apache PMCs to independently manage the technical
 direction of their projects](http://community.apache.org/projectIndependence.html),
@@ -37,7 +40,7 @@ Branding Policy](/foundation/marks/pmcs), as well as in recognition of Apache's 
 [Sponsorship](/foundation/sponsorship.html) and
 [Donation](/foundation/contributing.html) policies.
 
-# Project Thanks Pages / Listings  {#projectthanks}
+## Project Thanks Pages / Listings  {#projectthanks}
 
 PMCs may wish to provide recognition for third parties that provide
 software or services to the project's committers to further the goals
@@ -83,7 +86,7 @@ Note that Project Thanks pages must not compete with or otherwise be to
 the detriment of the overall ASF Sponsorship program; this particular point
 is a mandatory Fundraising policy.
 
-# Product Support Pages  {#productsupport}
+## Product Support Pages  {#productsupport}
 
 PMCs may choose to provide relevant listings of other useful websites
 within their larger ecosystem, as a service to the project's users.  Such listings
@@ -133,7 +136,7 @@ updates to the listing if it meets their criteria.
 set any sort of policy in terms of listing order, but should be
 consistent about applying it to not show favoritisim.
 
-# Not Showing An Exclusive Or Controlling Relationship  {#exclusive}
+## Not Showing an Exclusive or Controlling Relationship  {#exclusive}
 
 An important factor for PMCs when choosing what links to include or how to
 portray them is ensuring that the links don't imply that a third party has an
@@ -141,7 +144,7 @@ exclusive or controlling relationship with the project, the PMC, or the ASF.
 All Apache projects must be [run independently of commercial influence](http://community.apache.org/projectIndependence.html) for the
 benefit of the project and it's users.
 
-# Not Promoting Similarly Named Software Products  {#nonproduct}
+## Not Promoting Similarly Named Software Products  {#nonproduct}
 
 Any links on project pages to third party products or companies
 should not give the appearance of infringing on our own marks or products.
@@ -152,7 +155,7 @@ In particular, PMCs should not provide links to any third party that is causing
 confusion with the public as to the source of any Apache software products,
 either from your project or any other Apache project.
 
-# "Who We Are" Pages  {#whoweare}
+## "Who We Are" Pages  {#whoweare}
 
 One way that projects may choose showcase your community is to provide a *Who We Are*
 page as a listing of the individuals who make up the core community.  This is
@@ -192,7 +195,7 @@ participate in the project.  Think of these as both an introduction to
 who is currently in the project, as well as a welcoming way to show
 future contributors how to join.
 
-# Rationale  {#rationale}
+## Rationale  {#rationale}
 
 The primary mission of the Apache Software Foundation is to provide software
 products for the public good.  Equally important is The Apache Way, or the
@@ -226,19 +229,19 @@ These best practices for linking to outside pages on project websites
 are meant as suggestions for projects.  PMCs are free to adopt (or not)
 any of these suggestions for their sites.
 
-# Other Trademark Guidelines  {#other}
+## Other Trademark Guidelines  {#other}
 
 For more information about Apache marks, please see our [formal Trademark
 Policy](/foundation/marks/).
 
-# Important Note  {#notes}
+## Important Note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with the Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third party products, services, or events.**
 
-# Policy Version  {#version}
+## Policy Version  {#version}
 
 This is version 1.3 of this Apache best practices document, published in September 2014.
 Significant changes will be marked with a new version number.
