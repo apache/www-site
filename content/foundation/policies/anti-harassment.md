@@ -1,13 +1,16 @@
 Title:     Anti-Harassment Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Policy Information #
+# {{title}}
+
+## Policy Information
 **Please see the [Apache-wide Code of Conduct policy](https://www.apache.org/foundation/policies/conduct), which covers expected 
 behavior within any Apache project's public or private spaces, including email lists.**
 
 The Apache Conference Committee adopted this policy. Its most recent change was on 2011-08-24.
 
-# Applicability #
+## Applicability
 
 All conferences organised directly by the Apache Software Foundation are required
 to have an Anti-Harassment Policy. Unless otherwise approved by ConCom, these events will use the policy listed below.
@@ -22,15 +25,15 @@ Conferences organised by third parties which use Apache marks (under the
 Policy. The policy must either be the one below or one approved as an alternative by the ASF.
 
 
-# Anti-Harassment Policy #
+## Anti-Harassment Policy
 
 This policy is based on the one developed by [Geek Feminism](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment_policy)
 
-## Short version (suitable for various footers etc as necessary) ##
+### Short version (suitable for various footers etc as necessary)
 [Event name] is dedicated to a harassment-free experience for
 everyone. Our anti-harassment policy can be found at [URL]
 
-## Medium version (for somewhere reasonably prominent on the website and/or the program)
+### Medium version (for somewhere reasonably prominent on the website and/or the program)
 
 [Event name] is dedicated to providing a harassment-free experience for
 everyone. We do not tolerate harassment of participants in any form.
@@ -39,7 +42,7 @@ Participants violating these rules may be sanctioned or expelled
 without a refund, at the discretion of the event organizers. Our
 anti-harassment policy can be found at [URL]
 
-## Full version (the one posted at [URL])
+### Full version (the one posted at [URL])
 [Event name] is dedicated to providing a harassment-free experience for
 everyone. We do not tolerate harassment of participants in any form.
 Participants violating these rules may be sanctioned or expelled without
