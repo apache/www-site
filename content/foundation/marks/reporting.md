@@ -1,5 +1,8 @@
 Title: Apache Trademark Reporting Best Practices
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Here are best practices for reviewing the use
 of Apache&reg; projects' brands and trademarks and for contacting other parties
@@ -18,7 +21,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 [TOC]
 
-# Apache trademark use reporting best practices  {#introduction}
+## Apache trademark use reporting best practices  {#introduction}
 
 The Apache Software Foundation (ASF) strives to promote appropriate uses of
 all Apache marks for the benefit of our project communities and for the ASF
@@ -43,7 +46,7 @@ Apache committers may contact the private legal-internal@ mailing list
 with any specific legal questions about Apache projects.  Outside parties
 with legal questions about trademarks may [contact us privately][contactother].
 
-## What kinds of trademark uses might be infringing?  {#kinds}
+### What kinds of trademark uses might be infringing?  {#kinds}
 
 If you're browsing a website with "Hadoop" plastered all over their marketing
 materials, and there's no mention of Apache anywhere on the page - what should you
@@ -83,7 +86,7 @@ to use their FEDORA trademark](https://fedoraproject.org/wiki/Legal:Trademark_gu
 in common situations.  While that policy is written for the Fedora mark, the examples
 generally apply to Apache marks, and even most software product marks.
 
-# Checklist of issues to evaluate for trademark misuses  {#issues}
+## Checklist of issues to evaluate for trademark misuses  {#issues}
 
 When reviewing a potentially troublesome use of an Apache mark by a third party,
 you *must* think through the context of that specific use of Apache marks **before you
@@ -154,7 +157,7 @@ for more information on allowable third party use of Apache brands in domain nam
 - Is the use part of an **event or conference** brand?  See the [Event Name Branding policy](/foundation/marks/events.html).
 
 
-# Reporting potential misuses of Apache marks - how-to for users  {#users}
+## Reporting potential misuses of Apache marks - how-to for users  {#users}
 
 If any user or other person (i.e. not a committer on any Apache project)
 is aware of potentially-improper third-party use of any Apache marks,
@@ -178,7 +181,7 @@ Note that it is the ASF's responsibility to police our trademarks, so while
 we strive to acknowledge every report, we do not discuss enforcement
 activities publicly.
 
-# Reporting potential misuses of Apache marks - how to for PMCs / Committers  {#pmcs}
+## Reporting potential misuses of Apache marks - how to for PMCs / Committers  {#pmcs}
 
 A project's PMC (or podling's PPMC) should be **[responsible for being aware of
 significant third party uses of their project's marks][1]**.
@@ -237,12 +240,12 @@ If the PMC does not get a positive reply to its request to any third
 party in a reasonable amount of time, or any time legal counsel for a third party contacts you, you must [contact Brand Management][contactother] to decide
 how to proceed.  Also: PMC members other than the project VP do not have the power to grant **any** exceptions to Apache brand policy for third party use of Apache marks.
 
-# Reporting potential misuse of Apache marks - how-to for Apache Members {#members}
+## Reporting potential misuse of Apache marks - how-to for Apache Members {#members}
 
 If you are a Member of the ASF and spot any issues with any use of Apache trademarks,
 contact trademarks@ and the private@ list for that PMC.
 
-# How to report improper use of your trademarks by Apache projects {#apacheorg}
+## How to report improper use of your trademarks by Apache projects {#apacheorg}
 
 Apache projects always strive to be respectful of other organizations'
 trademarks, but, as in all volunteer organizations, mistakes sometimes happen.
@@ -256,7 +259,7 @@ your trademarks, and the relevant PMC is not responding to your official
 requests in a timely manner, or if you are legal counsel, please
 [contact our Brand Management Committee privately][contactother].
 
-# Other trademark guidelines  {#other}
+## Other trademark guidelines  {#other}
 
 For more information about Apache marks, see our [formal Trademark
 Policy](/foundation/marks/).  PMC members should
@@ -264,7 +267,7 @@ also read the [PMC Branding Responsibilities](responsibility.html)
 and the [Project Website Requirements](pmcs.html).
 See also the [site map of Trademark Resources][3].
 
-# Important note  {#notes}
+## Important note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with the Apache Software Foundation or
