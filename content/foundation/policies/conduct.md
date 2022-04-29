@@ -1,9 +1,9 @@
 Title:     Code of Conduct
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Code of Conduct #
+# {{title}}
 
-## Introduction ##
+## Introduction
 
 This code of conduct applies to all spaces the Apache Software Foundation manages, including IRC, public and private mailing lists, issue trackers, wikis, blogs, Twitter, and any other communication channels our communities use. A code of conduct which is specific to in-person events (ie., conferences) is in the ASF [anti-harassment policy](anti-harassment.html).
 
@@ -13,7 +13,7 @@ activities and especially when representing the ASF in any role to honor this co
 This code <u>is not exhaustive or complete</u>. It distills our common understanding of a collaborative, shared environment and goals. 
 We expect all members of the Apache community to follow it in spirit as much as in the letter, so that it can enrich all of us and the technical communities in which we participate.
 
-## Specific Guidelines ##
+## Specific Guidelines
 
 We strive to:
 
@@ -46,7 +46,7 @@ Try to stay on topic, especially in discussions that are already fairly long.
 7. __Step down considerately.__ Members of every project come and go. When somebody leaves or disengages from the project they should tell people they are leaving and take the proper steps to ensure that others can pick up where they left off. In doing so, they should remain respectful of those who continue to participate in the project and should not misrepresent the project's goals or achievements. Likewise, community members should respect any individual's choice to leave the project.
 
 
-## Diversity Statement ##
+## Diversity Statement
 
 Apache welcomes and encourages participation by everyone. We are committed to being a community that everyone feels good about joining. Although we may not be able to satisfy everyone, we will always work to treat everyone well.
 
@@ -56,7 +56,7 @@ Though we welcome people fluent in all languages, Apache development takes place
 
 The Code of Conduct, above, details our standards for behaviour in the Apache community. We expect participants in our community to meet these standards in all their interactions and to help others to do so.
 
-## Reporting Guidelines ##
+## Reporting Guidelines
 
 While all participants should adhere to this code of conduct, we recognize that sometimes people may have a bad day, or be unaware of some of the code's guidelines. When that happens, you may reply to them and point out this code of conduct. Such messages may be in public or in private, whatever is most appropriate. However, regardless of whether the message is public or not, it should still adhere to the relevant parts of this code of conduct; in particular, it should not be abusive or disrespectful.
 
