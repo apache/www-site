@@ -1,5 +1,7 @@
-Title: (SupersededTrademark Use Policy
+Title: (Superseded) Trademark Use Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
 
 # This policy has been superseded  {#draft}
 
