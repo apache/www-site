@@ -149,7 +149,7 @@ manner that is distinctly different from material related to the formal Sponsors
 Projects are free to use http, https or protocol relative
 links for the  mandatory links required by the website navigation links policy.
 
-We recomment, but do not require, that projects:
+We recommend, but do not require, that projects:
 
   - Use https for links where the target automatically switches to https when http is used
 
