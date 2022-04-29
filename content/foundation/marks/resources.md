@@ -1,10 +1,13 @@
 Title: Apache Trademark Resources And Site Map
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 A listing of various helpful information about Apache&reg; trademarks, including links to some general information about trademarks in open source.
 The ASF considers the names of all Apache projects and software products to be trademarks of the ASF.
 
-# Apache Trademark Information Site Map  {#sitemap}
+## Apache Trademark Information Site Map  {#sitemap}
 
 This is a site map with links to all Apache Software Foundation (ASF) trademark documents,
 categorized by audience - i.e. are you an Apache PMC member or committer working *within*
@@ -22,7 +25,7 @@ an Apache project, or are you a user, new contributor, software vendor, or third
 | [Contacting Apache With Trademark Questions](/foundation/marks/contact) |  [Incubator Branding Policy For Podlings](//incubator.apache.org/guides/branding.html) |
 | [Asking **non**-Trademark related Legal questions](/legal/) | [How To: Request Registration of Your Project Name][1] |
 
-# Apache Trademark Policy Presentations / Slides / Videos  {#slides}
+## Apache Trademark Policy Presentations / Slides / Videos  {#slides}
 
 Here are presentation that explain how to use Apache brands, for Apache projects and for others using Apache software
 in their organizations:
@@ -38,7 +41,7 @@ ways to get the credit your community deserves. *(Presented at ApacheCon:Core in
 Ignite presentation about the importance of thinking about your project's brand - that is, how the **outside world** sees your project. *(Presented at OSCON Ignite 2014, [video](https://www.youtube.com/watch?v=b72vvkUYZPk) )*
 
 
-# Other Useful Trademark Information  {#other}
+## Other Useful Trademark Information  {#other}
 
 Trademark law is a complicated subject, varying by country.  Free and open source software projects - often
 developed by a broad collection of volunteers, and often copied/improved upon or used for services - sometimes
@@ -64,7 +67,7 @@ Here are a number of *external links* that you may find useful in learning about
 | [FLOSS Foundations Directory](http://flossfoundations.org/foundation-directory) | Listing of OSS foundations, also hosts foundations@ mailing list |
 | [How to grow your open source project 10x and revenues 5x](http://openlife.cc/blogs/2010/november/how-grow-your-open-source-project-10x-and-revenues-5x) | Simple study of governance processes of OSS foundations |
 
-# Selected Trademark Search Websites  {#search}
+## Selected Trademark Search Websites  {#search}
 
 While many Apache software product names are unregistered trademarks, more and more Apache project
 communities are choosing to register their product name in the US and/or other countries.  These *external links*
