@@ -1,5 +1,8 @@
 Title: Apache Project Branding Best Practices
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Apache&reg; Project Branding Best Practices provide recommendations for
 all Apache projects who are interested in promoting their software and
@@ -26,7 +29,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 [TOC]
 
-# 1. Actively Recruit: New Committers & PMC Members  {#recruit}
+## 1. Actively Recruit: New Committers & PMC Members  {#recruit}
 
 A key way to keep a strong community and a strong brand image is to draw
 in new project contributors.  Ensuring that your project presents a friendly face to
@@ -42,7 +45,7 @@ committership is a great way to empower a larger community.
 For new ideas in community building, ask the 
 [Apache Community Development](//community.apache.org/) project for tips.
 
-# 2. Be Aware: How Your Project Brand is Used  {#aware}
+## 2. Be Aware: How Your Project Brand is Used  {#aware}
 
 We all want other people and organizations to use our great software, and the permissive
 Apache license allows this.  But it's important to ensure that your project
@@ -57,7 +60,7 @@ your project's brand appropriately.  Raising any brand misuse or infringement is
 ensure other organizations use your project brand in an appropriate way.  We have detailed
 [best practices for reporting trademark misuse by third parties](//www.apache.org/foundation/marks/reporting.html).
 
-# 3. Request Registration: Of Your Product Name  {#request}
+## 3. Request Registration: Of Your Product Name  {#request}
 
 The simplest way to ensure that other organizations respect your project name is
 to register it as a trademark.  All Apache projects are encouraged to
@@ -86,7 +89,7 @@ requests can be accommodated.
 
 trademarks@ will work with your PMC if issues like this come up.
 
-# How To: Register Your Project's Trademark  {#register}
+## How To: Register Your Project's Trademark  {#register}
 
 Requesting registration of your software product's name is as simple as
 having a **PMC member** [email tm-registrations@apache.org](mailto:tm-registrations@apache.org) with
@@ -161,7 +164,7 @@ PMC will need to update your website to use the proper &reg; registered
 trademark symbol, as well as ensure that you address potential
 infringements of your name by other users.
 
-# International and Service Registrations  {#international}
+## International and Service Registrations  {#international}
 
 If your Apache project is very widely used, the PMC is organized about policing
 uses of your brand, and you have a specific need to request registration either
@@ -190,13 +193,13 @@ name in other countries is important to the success and long-term health of your
 project.  The board and President will review the request and authorize the
 additional expenses.
 
-# Glossary: Brand vs. Trademark  {#glossary}
+## Glossary: Brand vs. Trademark  {#glossary}
 
 A trademark is the legal instantiation of your brand.  Branding includes many elements, including the look and feel of your website or product, logos, and other presentation.  Trademarks are the specific symbols that you use to promote your software **product** or service to end users.  A consistently used project name and logo are typically the trademarks that a new end user or consumer associates with the actual software product releases your project produces.
 
 Apache **project** names can also serve as trademarks for the developer support services that you provide, however from the legal perspective, it's much more important - and simpler - to protect the name of the software **product** itself.
 
-# Other Trademark Policies And Guidelines  {#other}
+## Other Trademark Policies And Guidelines  {#other}
 
   * [Apache Project Branding Requirements](//www.apache.org/foundation/marks/pmcs) - for Apache project websites
   * [Apache PMC Branding Responsibilities](//www.apache.org/foundation/marks/responsibility) - what PMC members (and committers) need to do
@@ -206,7 +209,7 @@ Apache **project** names can also serve as trademarks for the developer support 
   * [Complete Trademark Resources Site Map][resources]
 
 
-# Trademark Descriptions of Software Functionality  {#description}
+## Trademark Descriptions of Software Functionality  {#description}
 
 The description of functionality that we provide with a trademark registration application
 is the legal claim that the ASF is making for that specific registration.  That is, a
