@@ -1,7 +1,8 @@
 Title:     Privacy Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-## Privacy Policy
+# {{title}}
 
 The Apache Software Foundation (ASF) is an open source project organized under the auspices of a public benefit corporation. Our challenges and goals are large. For that reason, we have a very permissive privacy policy that mirrors our public mission.
 
