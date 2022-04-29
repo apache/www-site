@@ -1,7 +1,10 @@
 Title: Apache PMC Branding Responsibilities
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-Apache Project Management Committees (PMC) are directly responsible for promoting and protecting their project's
+# {{title}}
+
+Apache Project Management Committees (PMCs) are directly responsible for promoting and protecting their project's
 brand and trademarks while following Apache Trademark policies.  This document
 is an overview of PMC responsibilities, with pointers to specific policies
 or procedures PMCs must follow.  
@@ -25,7 +28,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 [TOC] 
 
-# Overview  {#introduction}
+## Overview  {#introduction}
 
 This document defines the board's expectation that PMCs manage
 their own project's brand: how the project displays its own brand
@@ -43,7 +46,7 @@ is probably best read in conjunction with the [Apache Project Branding
 Requirements](/foundation/marks/pmcs), which define how projects should treat and display trademarks; and with the
 [PMC Guide](/dev/pmc.html), which covers other, non-brand-related responsibilities and procedures related to PMC membership.
 
-# PMCs are responsible for their brand  {#responsible}
+## PMCs are responsible for their brand  {#responsible}
 
 Much as PMCs are stewards of their communities and their project code, PMCs are
 also responsible for managing their own project's brand.  This includes
@@ -79,7 +82,7 @@ next time you read news coverage of your project or of the technology behind
 it, consider how a newcomer will see your project's name, and its relationship
 both to the ASF and to other companies and technologies.
 
-# Ensure project websites treat trademarks appropriately  {#website}
+## Ensure project websites treat trademarks appropriately  {#website}
 
 PMCs are directly responsible for ensuring all of their project's web content
 complies with the [Apache Project Branding Requirements](/foundation/marks/pmcs).
@@ -94,7 +97,7 @@ is an important one to all Apache projects, and to the Foundation itself.  Be
 sure to use it properly on apache.org websites, especially in relation to
 Apache projects and products.
 
-# Present an independent face to your project  {#independent}
+## Present an independent face to your project  {#independent}
 
 Part of the Apache Way is the concept of hats - when PMC members do work on
 Apache lists, they are expected to act as individuals, wearing their PMC hat;
@@ -122,7 +125,7 @@ these must be factual entries, not advertisements, and must not show favoritism
 to any particular vendor(s). Recommended best practices for
 [Thanks and Support pages](/foundation/marks/linking) are provided.
 
-# Address improper third-party uses of Apache marks  {#police}
+## Address improper third-party uses of Apache marks  {#police}
 
 PMCs are responsible for evaluating and if needed addressing any infringing use of their project's
 marks by third parties that come to their attention.  The PMC must work to contact
@@ -148,7 +151,7 @@ greater marketplace.  However, PMCs are not authorized to license infringing
 uses of their brand(s) to third parties without explicit approval from the
 VP, Brand Management.
 
-# Report trademark issues to Brand Management  {#report}
+## Report trademark issues to Brand Management  {#report}
 
 Detailed reporting procedures are in the [Apache Trademark Reporting Guidelines](reporting.html).
 
@@ -172,7 +175,7 @@ Reminder: if a third-party's legal counsel contacts a PMC,
 ensure the PMC works with legal-internal@ to get advice from
 ASF Counsel before making any response.
 
-# Comply with Apache brand policy  {#compliance}
+## Comply with Apache brand policy  {#compliance}
 
 All PMCs must to comply with the Apache Project
 Branding Requirements.  If your project does not comply, or is having issues
@@ -184,18 +187,18 @@ Much as complying with Apache legal policy to ensure that our software is
 safely covered under our license, projects must follow the branding requirements
 to ensure that we maintain our projects' brands and the Apache brand - and public reputations - for the future benefit of all of Apache projects.
 
-# Other trademark guidelines  {#other}
+## Other trademark guidelines  {#other}
 
 For more information about Apache marks, see our [formal Trademark Policy](/foundation/marks/).
 
-# Important note  {#notes}
+## Important note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with the Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third-party products, services, or events.**
 
-# Policy version  {#version}
+## Policy version  {#version}
 
 This is version 1.1 of this Apache policy document, published in <s>May 2011</s> November 2013.
 Significant changes will be marked with a new version number.
