@@ -1,5 +1,8 @@
 Title: Apache Branded Social Media Best Practices
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 These are best practices for Apache&reg; projects and PMCs managing their own social
 media accounts that include Apache project brands or trademarks in the names.
@@ -17,20 +20,20 @@ See Also: all [Trademark Resources][resources] and the [Corporate Recognition/Li
 
 [TOC]
 
-# Social Media Best Practices  {#guidelines}
+## Social Media Best Practices  {#guidelines}
 
 These best practices are written from the perspective of Apache projects, podlings, and communities managing their own branded accounts
 in conjunction with a PMC.  In general, only the PMC has standing to speak officially on behalf of that Apache project as a whole.
 
 While we believe these are good practices for any social media, they apply in particular to any social media account name (Twitter, Facebook, YouTube, etc.) that includes an Apache project brand or trademark as part of the name.   When using the name or brand of a project as part of your social media name, most readers will see a direct connection to that project, and may believe it is an "official" voice.  Everyone is free to manage *personal* social media accounts as they choose; however if the social media account name includes an Apache brand these best practices should be followed.
 
-# Access to Project Social Media Accounts  {#access}
+## Access to Project Social Media Accounts  {#access}
 
 Access to a project's social media accounts should be managed through the PMC.  To ensure fairness, and consistency when project members come and go, access should be through aggregation tools (like Hootsuite for Twitter) that do not require disseminating the underlying login credentials.  Relying on a single PMC member to control access is not recommended.  PMCs are responsible for managing these accounts, not Apache Infrastructure.
 
 PMCs are free to use lazy consensus, voting, or an "all committers granted access" policy to control access as they see fit for the accounts they manage.  PMCs are encouraged to own social media accounts that use their primary branding where practical (i.e. if an outside entity or single committer owns the account, it's a good idea to see if they will donate it to the PMC).
 
-# Key Dos and Don'ts For Social Media  {#key}
+## Key Dos and Don'ts For Social Media  {#key}
 
 **Anything said in public is fair game for the press.**
 
@@ -67,7 +70,7 @@ Avoid sharing negative stories about "competing" projects.
 
 If you're unclear on whether a post or item is OK, ask first on the appropriate dev@ or other mailing list for your project. The other contributors on the list should always be happy to discuss and offer guidance on what is and isn't appropriate for your project's social media activities.
 
-# Other Important Apache Practices And Policies  {#otherpolicy}
+## Other Important Apache Practices And Policies  {#otherpolicy}
 
 It's helpful to familiarize yourself with Apache's [Media and Analyst Relations pages](/press/) and [PMC brand management pages](/foundation/marks/pmcs.html).
 
