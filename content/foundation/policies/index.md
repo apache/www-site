@@ -1,5 +1,8 @@
 Title:     Foundation policies
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The Apache Software Foundation has a limited number of policies, which cover specific
 areas. For general information on how things work at Apache, please start with 
