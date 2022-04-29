@@ -1,5 +1,8 @@
 Title: Third Party Services Naming Branding Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 This **Services Naming Branding Policy** defines **requirements** for when third 
 parties may be eligible to request permission to use 
@@ -7,13 +10,13 @@ Apache&reg; marks in their *service* names (i.e. services that provide
 hosted versions or implementations of Apache products, or services directly 
 related to Apache products), and the process to request permission from an officer of the ASF.
 
-# DRAFT DOCUMENT  {#DRAFT}
+## DRAFT DOCUMENT  {#DRAFT}
 
 **This document is an UNOFFICIAL DRAFT and should not be considered 
 official policy.  Substantial changes may be made before being published 
 as an official policy.  Direct any questions to trademarks@apache.org.**
 
-# Services Naming Branding Overview  {#introduction}
+## Services Naming Branding Overview  {#introduction}
 
 **In general, you may not use Apache marks such as "Apache *Project*" or 
 "*Project*" as primary branding in your services names or service marks** if 
@@ -43,7 +46,7 @@ primary way that consumers discover our projects and products.
 You may also be interested in reading our closely related 
 [Third Party Domain Name Branding Policy](/foundation/marks/domains).
 
-# Contents  {#links}
+## Contents  {#links}
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
@@ -76,7 +79,7 @@ See Also: [Trademark Resources Site Map][resources].
 -  [Policy Rationale](#rationale) 
 
 
-# Do Not Promote Similar Services Offered By Apache  {#nonproduct}
+## Do Not Promote Similar Services Offered By Apache  {#nonproduct}
 
 Services names using Apache marks must not be used to promote or provide 
 services that either the Apache project itself or the ASF 
@@ -98,7 +101,7 @@ code control, and a variety of other project-related metrics.  Ensuring that
 relevant consumers come directly to Apache to utilize our development-related services when they 
 are interested in learning about or using our products is important to us.   
 
-# Must Clearly Display Non-Affiliation  {#nonaffiliation}
+## Must Clearly Display Non-Affiliation  {#nonaffiliation}
 
 Website content and services branding must clearly and prominently inform 
 the public that the service and your organization are not affiliated with, endorsed by, or otherwise 
@@ -113,7 +116,7 @@ or appendix for your service.  Depending on the type of content for your
 website, we may also require a prominent non-affiliation notice within the 
 text of the main landing page itself or the service's splash page, as appropriate.
 
-# Must Provide Credit To Relevant Apache Project Community  {#credit}
+## Must Provide Credit To Relevant Apache Project Community  {#credit}
 
 The primary landing page of the domain's website, and any "About", "Contact", 
 or similarly named page(s) or features of your service must provide a 
@@ -123,7 +126,7 @@ A common motto of Apache projects is "Community over code", and prominent
 uses of Apache marks must clearly provide credit to the community behind 
 the mark and its product.
 
-# Must Include Links To Relevant Apache Product Resources  {#resources}
+## Must Include Links To Relevant Apache Product Resources  {#resources}
 
 A website promoting your service must include a prominent section or 
 page named "Resources", "More Information", "Links", or some other 
@@ -142,7 +145,7 @@ Apache projects and our users.  This ensures that users of your service
 have an opportunity to learn how to report bugs or suggestions to the 
 Apache project you are using.
 
-# Non-Disparaging References To Apache Projects  {#positive}
+## Non-Disparaging References To Apache Projects  {#positive}
 
 Service names using Apache marks must not be used to disparage the reputation 
 of the ASF, its projects, products, or communities.
@@ -153,7 +156,7 @@ As a non-profit devoted to the public good through the software that we
 produce, it is inappropriate for us to provide permission for third parties 
 to use our marks to disparage our communities or our work.
 
-# No Exclusive Or Controlling Relationship  {#exclusive}
+## No Exclusive Or Controlling Relationship  {#exclusive}
 
 Services names using Apache marks must not give the impression 
 to relevant consumers that the organization controlling or providing the 
@@ -174,7 +177,7 @@ Apache marks that state or imply that that organization has an exclusive or
 sole relationship to any Apache project would both be factually incorrect, as 
 well as harmful to the Apache project's community, and are not allowed.  
 
-# Trademark Attributions And Proper Apache Brand Usage  {#attributions}
+## Trademark Attributions And Proper Apache Brand Usage  {#attributions}
 
 Any use of Apache trademarks on any pages of the service must comply with
 our trademark policy and follow our [Apache Product Name Usage Guide][guide].
@@ -196,7 +199,7 @@ page.  Note that you **must** have a current written permission from the
 VP, Brand Management or the VP of the relevant Apache project to include the 
 "used with permission" phrase.
 
-# Logos And Graphics Usage  {#graphics}
+## Logos And Graphics Usage  {#graphics}
 
 Third party websites may not use any Apache logos or graphics as part of their 
 service branding. Apache product logos may only be used to refer to the
@@ -210,7 +213,7 @@ element in any way. The only use of the bare Apache feather or Apache logo
 on websites allowed is to provide a single link to http://www.apache.org/ 
 as a reference to The Apache Software Foundation and its projects.
 
-# Must Not Use "Apache" And "ApacheCon" Names  {#apachecon}
+## Must Not Use "Apache" And "ApacheCon" Names  {#apachecon}
 
 Third parties may not use either the "Apache" nor the "ApacheCon"
 names, nor confusingly similar names, in their service names as a primary 
@@ -218,7 +221,7 @@ branding feature. These names
 are reserved exclusively for the ASF, its projects, and its
 own authorized conferences.
 
-# How To: Request Permission For Services  {#permission} 
+## How To: Request Permission For Services  {#permission} 
 
 If you have a service created or in development that you wish to provide to 
 the public incorporating any Apache marks in its branding, please 
@@ -231,7 +234,7 @@ will be designed for and a mockup of your site content so that we can start
 the discussion.  Note that any permissions granted are contingent on the 
 service name and branding remaining in compliance with this policy.
 
-# Rationale  {#rationale}
+## Rationale  {#rationale}
 
 The primary mission of the Apache Software Foundation is to provide software 
 products for the public good.  Equally important is The Apache Way, or the 
@@ -289,19 +292,19 @@ primary value we provide to the public - we have established these requirements
 to encourage reputable third parties to consider responsibly offering services 
 or websites that may be branded using Apache marks in respectful ways.
    
-# Other Trademark Guidelines  {#other}
+## Other Trademark Guidelines  {#other}
 
 Please see our [formal Trademark Policy](/foundation/marks/)
 and our [site map of Trademark resources][resources].
 
-# Important Note  {#notes}
+## Important Note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
 third party to claim any association with the Apache Software Foundation or
 any of its projects or to imply any approval or support by ASF for any
 third party products, services, or events.** 
 
-# Policy Version  {#version}
+## Policy Version  {#version}
 
 This is version 0.2 of this Apache policy document, published in February 2017.  
 Significant changes will be marked with a new version number.
