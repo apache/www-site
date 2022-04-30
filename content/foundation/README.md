@@ -1,6 +1,8 @@
-# Foundation Information
+Title: Foundation information
 
-These pages have differing stakeholders.
+# {{title}}
+
+These pages have different stakeholders.
 
 Board of Directors at board@apache.org
 - [Board](board/)
