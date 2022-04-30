@@ -1,12 +1,15 @@
 Title: Standards At Apache
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Apache projects provide implementations for many open standards. Some of
 these are *reference implementations*. A list of
 implementations is maintained at
 [projects.apache.org](https://projects.apache.org/indexes/standards.html).
 
-## JCP NOTE ##
+## JCP NOTE
 
 Note that the ASF no longer participates directly in the <a href="https://www.jcp.org/en/home/index" target="_blank">Java Community Process (JCP)</a>.  
 Please see our <a href="/jcp/sunopenletterfaq.html" target="_blank">open letter and FAQ.</a>.
