@@ -1,5 +1,8 @@
 Title: Public Records
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The Apache Software Foundation, a Delaware chartered 501C3 membership 
 corporation, publishes a wide variety of operational records 
@@ -10,7 +13,7 @@ The Board of Directors publishes a **[formal Board Calendar and Minutes](../boar
 of our monthly meetings.  An alternate [categorized listing of 
 all past Board minutes](https://whimsy.apache.org/board/minutes/) is also available.
 
-# Bylaws And Original Incorporation Records  {#bylaws}
+## Bylaws And Original Incorporation Records  {#bylaws}
 
 - The [Certificate of Incorporation](certificate.html) for The Apache
 Software Foundation
@@ -23,7 +26,7 @@ Software Foundation
 
 - The [Bylaws](../bylaws.html) of The Apache Software Foundation
 
-# US Internal Revenue Service Filings and Notices  {#irs}
+## US Internal Revenue Service Filings and Notices  {#irs}
 
 - IRS Form 8718 - [User Fee for Exempt Organization Determination Letter
 Request](ASF-8718.pdf) for The Apache Software Foundation
@@ -86,7 +89,7 @@ Software Foundation
 -  [Fiscal Year 2001-2002 Annual Report](990-2001.pdf) for The Apache
 Software Foundation
 
-# Delaware Secretary of State Filings and Notices  {#delaware}
+## Delaware Secretary of State Filings and Notices  {#delaware}
 
 -  [Fiscal Year 2010-2011 Delaware Annual Report](Delaware_e-filing_2011.pdf) for The Apache
 Software Foundation
@@ -95,7 +98,7 @@ Software Foundation
 Software Foundation
 
 
-# Other Organizational Records  {#other}
+## Other Organizational Records  {#other}
 
 - Records and policies of the [Legal Affairs committee](../../legal/) including licensing information.
 
@@ -112,7 +115,7 @@ XML4J, XML4C, XML4P, and LotusXSL software packages (in
 [PDF](IBM-XML-Licence-Grant.pdf) and [TIFF](IBM-XML-Licence-Grant.tif)
 formats)
 
-# Project-Related and Technical Records #
+## Project-Related and Technical Records
 
 Apache projects perform all of their technical work using open, publicly
 archived mailing lists. Please review our [overall mailing list information
