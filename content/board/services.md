@@ -1,12 +1,15 @@
 Title: Foundation Services for Apache Projects
+
 Slug: services
 
+# {{title}}
+
 The Apache Software Foundation (ASF) provides a wide array of 
-**services** to the [many Apache communities](https://projects.apache.org/) and their Project Management 
+services to the [many Apache communities](https://projects.apache.org/) and their Project Management 
 Committees (PMCs) that the ASF hosts in line with our 
 [vision of independent, volunteer-run projects](https://blogs.apache.org/foundation/entry/the-apache-software-foundation-2018).  
 
-# Services Available To Apache Projects
+## Services Available To Apache Projects
 
 The ASF provides the following services to all PMCs through a combination of 
 self-organized volunteer groups and some paid services & contractors. 
@@ -22,7 +25,7 @@ the ASF does is in public, the ASF only *supports* these services for
 **Apache projects** doing their work.  Other communities are welcome to fork our code 
 or documentation, but the ASF cannot provide services for other projects.
 
-## Community Development and Mentoring
+### Community Development and Mentoring
 
 The [Apache Community Development Project](https://community.apache.org/) (ComDev) is
 charged with coordinating community development efforts.  They also provide 
@@ -35,7 +38,7 @@ Example services include: [Board Report Helper](https://reporter.apache.org/),
 [Mentoring ideas](https://community.apache.org/mentoringprogramme.html), 
 and [Google Summer of Code assistance](https://community.apache.org/gsoc.html).
 
-## Infrastructure Services
+### Infrastructure Services
 
 The [Apache Infrastructure team](https://www.apache.org/dev/infrastructure) (Infra) is
 responsible for management and day-to-day system administration and operation
@@ -48,7 +51,7 @@ Example services include: [Subversion and GitBox hosting](https://www.apache.org
 [Jenkins, BuildBot, and other CI tools like ReviewBoard,  Sonar](https://www.apache.org/dev/services.html#build), 
 [Hosted VM for each project](https://www.apache.org/dev/services.html#virtual-servers).
 
-## Marketing & Publicity
+### Marketing & Publicity
 
 [Marketing and Publicity](https://www.apache.org/press/#whoweare)
 provides primary communications services for the ASF, and advises Apache
@@ -58,13 +61,13 @@ Example services include: [Press releases over the wire for major releases](http
 [connections with industry analysts](https://www.apache.org/press/#interviews), 
 [Apache feather and Powered By logos for all TLPs](https://www.apache.org/foundation/press/kit/).
 
-## Travel Assistance At ApacheCon
+### Travel Assistance At ApacheCon
 
 The [Travel Assistance Committee](https://www.apache.org/travel) exists to
 help those that would like to attend ApacheCon events, but are unable to do so
 for financial reasons.
 
-## Conference & Event Support
+### Conference & Event Support
 
 The [Conferences team](https://www.apache.org/foundation/conferences)
 organizes official events such as ApacheCon, as well as facilitating third
@@ -74,7 +77,7 @@ Example services include: running [ApacheCon for all projects](https://apachecon
 and a [central calendar for Apache-related events](https://events.apache.org/).
 
 
-## Security Handling & Vulnerability Reporting
+### Security Handling & Vulnerability Reporting
 
 The [Apache Security Team](https://www.apache.org/security) exists to provide
 help and advice to Apache projects on security issues and to provide
@@ -84,7 +87,7 @@ Anyone can [submit a security issue](https://www.apache.org/security/#reporting-
 Example services include: the [general security@ vulnerability reporting mailing list](https://www.apache.org/security/projects.html), 
 and [detailed checklists and help with CVEs](https://www.apache.org/security/committers.html) and handling vulnerabilies.
 
-## Brand & Trademarks
+### Brand & Trademarks
 
 The [Brand Management team](https://www.apache.org/foundation/marks/resources)
 collaborates with projects on branding and trademarks.  You can 
@@ -95,7 +98,7 @@ Example services include: [trademark law resources for developers](https://www.a
 [approvals for running outside events with Apache brands](https://www.apache.org/foundation/marks/events), 
 [trademark registration of your project name](https://www.apache.org/foundation/marks/register#register).
 
-## Legal
+### Legal
 
 The [Legal Affairs Committee](http://www.apache.org/legal) is responsible for
 establishing and managing legal policies based on the advice of legal counsel
@@ -105,7 +108,7 @@ Example services include: [answering specific legal JIRAs for project business](
 a public legal-discussion@ mailing list for general legal chats, 
 and the [official FAQ of license compatibility questions](https://www.apache.org/legal/resolved.html).
 
-## Fundraising
+### Fundraising
 
 The [VP, Fundraising](https://whimsy.apache.org/foundation/orgchart/vp-fundraising) 
 is responsible for establishing and managing fundraising activities to 
@@ -114,14 +117,13 @@ support the operations of the ASF and our projects.
 Example services include: [accepting targeted donations for your project](https://www.apache.org/foundation/contributing.html#TargetedSponsor), 
 and the [core donations and sponsorships](https://www.apache.org/foundation/contributing.html) that pay the ASF's bills.
 
-## Other Useful Services
+### Other Useful Services
 
 The Apache Whimsy PMC provides a [number of useful tools](https://whimsy.apache.org/) 
 and many committer-specific tools for making requests within the ASF like 
 subscribing to mailing lists and [making changes to PMC rosters](https://whimsy.apache.org/roster/) (committer login required).
 You can [contact the Apache Whimsy project](https://lists.apache.org/list.html?dev@whimsical.apache.org).
 
-## Still Looking For Help?
+### Still Looking For Help?
 
-The best place to [ask questions not covered above is ComDev](https://community.apache.org/lists.html).
-
+The best place to ask questions not covered above is [ComDev](https://community.apache.org/lists.html).
