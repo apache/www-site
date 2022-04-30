@@ -1,7 +1,10 @@
 Title: Five-year Strategic Plan for the Apache Software Foundation
+
 Slug: plan
 
-**Introduction**
+# {{title}}
+
+## Introduction
 
 This 5 year plan (written back in 2018) attempts to quantify the vision and goals for the 
 Apache Software Foundation (ASF) as expressed by the Board of Directors 
@@ -12,7 +15,7 @@ The Board intends to update this document on a regular basis.
 
 [TOC]
 
-# Vision
+## Vision
 
 Our mission is to support the creation and distribution of Open Source
 software at no charge under the Apache License, as per our Bylaws. To
