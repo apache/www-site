@@ -1,7 +1,8 @@
 Title: About Our Name
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# About Our Name #
+# {{title}}
 
 The Apache Software Foundation (ASF) was incorporated in 1999 by original members of the Apache Group, 21 individuals from around the world who oversaw the development of the Apache HTTP Server, which was created in 1995.
 
