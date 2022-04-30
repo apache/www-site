@@ -1,6 +1,8 @@
 Title: Apache Board -- Project Services & Expectations
 Slug: policies
 
+# {{title}}
+
 **DRAFT DRAFT DRAFT** This is a DRAFT document and not official policy,
 pending approval by the Board. **DRAFT DRAFT DRAFT**
 
