@@ -1,5 +1,8 @@
-Title:     Apache software is always available free of charge
+Title: Always free
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Apache software is always available for download free of charge from the ASF and our Apache projects.
 
@@ -9,14 +12,14 @@ Our corporate bylaws explicitly state that Apache projects create ["open-source"
 
 Apache projects will never charge a fee for downloading or using their software.  
 
-## Is Apache software really free to download? ##
+## Is Apache software really free to download?
 
 Yes.  Over 300 Apache projects and podlings provide software products that may be 
 downloaded and used at no cost, including everything from the world-famous 
 [Apache HTTP Server][1], to [Apache Hadoop][2], to [Apache Lucene][3], 
 to [Apache OpenOffice][4], and many, many more.
 
-## May I use Apache software for any purpose? ##
+## May I use Apache software for any purpose?
 
 Yes.  Apache projects always release source code under the [Apache License][5], a 
 pragmatic and permissive license that provides broad freedoms for 
@@ -29,7 +32,7 @@ your own software; that use is reserved to the ASF and Apache projects.
 You can [read about the Apache License](/licenses/) for details, and 
 learn more about the [Legal Affairs Committee](/legal/) if you have questions.
 
-## Is Apache software open source? ##
+## Is Apache software open source?
 
 Yes.  The Apache License meets both the Open Source Initiative's (OSI) 
 [Open Source Definition](http://www.opensource.org/docs/osd), and the 
@@ -38,13 +41,13 @@ Free Software Foundation's [definition of "free software"](https://www.gnu.org/l
 These definitions ensure that the Apache license provides certain key freedoms to users of Apache 
 software in terms of what you as a user may do with or use Apache source code or software
 
-## Why do some websites charge money for Apache software? ##
+## Why do some websites charge money for Apache software?
 
 The Apache License does not prohibit other organizations from selling Apache software.  They may provide a useful 
 service for certain users, for example by distributing software on a CD-ROM or a USB data stick.  However, in most cases it's just as simple (and always free)
 to download the Apache software directly from the appropriate Apache project.
 
-## What should I do when I find a website that charges for Apache software? ##
+## What should I do when I find a website that charges for Apache software?
 
 In most cases, you can simply remember that Apache source code is always 
 available free of charge directly from the appropriate Apache project.  If 
@@ -58,7 +61,7 @@ consulting, training, or other services or hosting related to Apache software.
 As long as these organizations aren't confusing users into believing the 
 services or products are coming from Apache, they're generally okay.
 
-## Where can I learn more about Apache projects? ##
+## Where can I learn more about Apache projects?
 
 The ASF provides a [list of all Apache projects][6] and most Apache software 
 products available.  The best way to learn more about an Apache project is to ask 
