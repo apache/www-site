@@ -1,5 +1,8 @@
 Title: ASF CLA FAQ
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 This page answers common queries that we receive about our contribution agreements. 
 
@@ -22,9 +25,9 @@ This page answers common queries that we receive about our contribution agreemen
 If none of the above addresses your query, please check the [resources at
 the bottom of this page](#resources) for general information.
 
-# Answers {#answers}
+## Answers {#answers}
 
-## May I re-use (and modify) the ASF Contributor License Agreements (CLAs) for my own purposes?  {#CLA-Usage}
+### May I re-use (and modify) the ASF Contributor License Agreements (CLAs) for my own purposes?  {#CLA-Usage}
 
 Yes, you may re-use and modify them. You just can't hold the ASF
 legally responsible if these documents are not exactly what you intend them
@@ -39,7 +42,7 @@ note that your version is derived and differs from the original provided by
 the ASF).
 
 
-## What is the scope of patent grants made to the ASF?  {#PatentScope}
+### What is the scope of patent grants made to the ASF?  {#PatentScope}
 <style>
   dl dt  {float: left}
   dl dd  {margin-left: 3em}
@@ -94,7 +97,7 @@ This is a four part question:
   </dd>
 </dl>
 
-## Are contributors' employers required to sign a CCLA?  {#cclas-not-required}
+### Are contributors' employers required to sign a CCLA?  {#cclas-not-required}
 
 Only if their employment situation necessitates that a CCLA be signed.
 See section 4 of the ICLA for details.
@@ -120,7 +123,7 @@ Finally, see section 8 of the ICLA, which requires signers to notify the
 Foundation when their status changes in ways that may require this to
 be reassessed.
 
-## I don't have a printer. How do I "print, sign, scan, and email" the license document?  {#printer}
+### I don't have a printer. How do I "print, sign, scan, and email" the license document?  {#printer}
 
 ICLA, CCLA, SGA, and Member license documents are PDF forms with entry form fields.
 There is also space for a signature which cannot be typed.
@@ -154,13 +157,13 @@ First, install a PDF tool such as **Adobe Acrobat**. These instructions may diff
 4. Share the file via **Share a copy** to the email client and send the message with the attached form to [secretary@apache.org](mailto:secretary@apache.org).
 5. Keep the completed form for your records.
 
-## How do I upload my public key?  {#upload-key}
+### How do I upload my public key?  {#upload-key}
 
 Upload your public key to one of the shared public key repositories:
 - [Ubuntu key server](https://keyserver.ubuntu.com)
 - [OpenGPG key server](https://keys.openpgp.org).
 
-# Another place to look  {#resources}
+## Another place to look  {#resources}
 
 If you have questions about The Apache Software Foundation, its projects,
 or its software, we recommend the following link for more information or
