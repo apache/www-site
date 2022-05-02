@@ -1,4 +1,4 @@
-Title: FAZ - Open Letter to Sun Microsystems - JCK
+Title: FAQ - Open Letter to Sun Microsystems - JCK
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
