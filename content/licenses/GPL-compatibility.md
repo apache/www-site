@@ -1,5 +1,8 @@
 Title: Apache License v2.0 and GPL Compatibility
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 The [Free Software Foundation](http://www.fsf.org/) 
 [considers](http://www.fsf.org/licensing/licenses/#apache2) the [Apache
