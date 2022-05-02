@@ -1,7 +1,10 @@
-Title: Open Letter to Sun Microsystems - JCK
+Title: FAZ - Open Letter to Sun Microsystems - JCK
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# FAQ Open Letter to Sun Microsystems #  
+# {{title}}
+
+# FAQ Open Letter to Sun Microsystems
 We have created the following FAQ to provide background information on the
 [open letter to Sun microsystems.](sunopenletter.html) 
 
@@ -306,4 +309,3 @@ We have created the following FAQ to provide background information on the
         spec lead.  JCP openness is a necessary requirement for a
         healthy and diverse java ecosystem and has nothing to do with
         the identity of the spec lead or their company affiliation.
-
