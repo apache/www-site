@@ -1,6 +1,9 @@
 Title: Ramblings of an ASF VP of Legal Affairs
+
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
 Notice: http://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 <h2 id="head-11cdd06ae562b350659a9d6e8be7f2e44ade68f2">Precession of the
 Perihelion of Mercury</h2>
