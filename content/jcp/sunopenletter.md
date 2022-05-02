@@ -1,7 +1,9 @@
 Title: Open Letter to Sun Microsystems - JCK
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Open Letter to Sun Microsystems #
+# {{title}}
+
 On April 10, 2007, the Apache Software Foundation sent the following letter
 to Sun Microsystems regarding our inability to acquire an acceptable
 license for the Java SE 5 technology compatibility kit, a test kit needed
@@ -97,7 +99,6 @@ information on this issue.
     of market control.  Additionally, it is contrary to both the
     spirit and letter of open source, the respect of which is a key
     element in Sun's stated business strategy.
-
     Through Apache Harmony, the ASF is implementing Java SE in good
     faith, with the understanding that Sun as the specification lead
     will reciprocate.  Our intention has always been to produce a
