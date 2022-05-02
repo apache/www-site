@@ -1,7 +1,8 @@
 Title: Apache License, Version 2.0
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-### Apache License, Version 2.0
+# {{title}}
 
 * Text version: [https://www.apache.org/licenses/LICENSE-2.0.txt](LICENSE-2.0.txt)
 * SPDX short identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
@@ -200,7 +201,7 @@ liability.</p>
 </div>
 
 
-# How to apply the Apache License to your work  {#apply}
+## How to apply the Apache License to your work  {#apply}
 
 Include a copy of the Apache License, typically in a file called
 LICENSE, in your work, and consider also including a NOTICE file that references the License.
