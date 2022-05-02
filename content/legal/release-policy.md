@@ -1,18 +1,21 @@
 Title: Release Policy
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 This page documents the ASF policy on software releases. This document is for ASF release managers and [PMC](glossary#PMC) members.
 Information [for end-users](https://infra.apache.org/release-download-pages.html#best_practice) is also available.
 
 This document summarizes the <a href="https://infra.apache.org/release-publishing.html">release process</a>.
 
-# Contents #
+## Contents
 
 [TOC]
 
-# Release Policy  {#policy}
+## Release Policy  {#policy}
 
-## Definition of "release"  {#release-definition}
+### Definition of "release"  {#release-definition}
 
 Generically, a release is anything that is published beyond the group
 that owns it.  For an Apache project, that means any publication outside the
@@ -22,7 +25,7 @@ development or following the dev list.
 More narrowly, an official Apache release is one which has been endorsed as an
 "act of the Foundation" by a PMC.
 
-## Release approval  {#release-approval}
+### Release approval  {#release-approval}
 
 Each PMC MUST obey the ASF requirements on approving any release.
 
@@ -38,7 +41,7 @@ own platform.
 
 Release votes SHOULD remain open for at least 72 hours.
 
-## Publication  {#publication}
+### Publication  {#publication}
 
 Projects SHALL publish official releases and SHALL NOT publish unreleased
 materials outside the development community.
@@ -52,16 +55,16 @@ Projects SHOULD make available developer resources to support individuals active
 participating in development or following the dev list and thus aware of the
 conditions placed on unreleased materials.
 
-## Artifacts  {#artifacts}
+### Artifacts  {#artifacts}
 
-### Source packages  {#source-packages}
+#### Source packages  {#source-packages}
 
 Every ASF release MUST contain one or more source packages, which MUST be
 sufficient for a user to build and test the release provided they have
 access to the appropriate platform and tools. A source release SHOULD not
 contain compiled code.
 
-### Release signing  {#release-signing}
+#### Release signing  {#release-signing}
 
 All supplied packages MUST be cryptographically signed by the Release
 Manager with a detached signature.  Folks who vote +1
@@ -69,7 +72,7 @@ for release MAY offer their own cryptographic signature to be concatenated
 with the detached signature file (at the Release Manager's discretion)
 prior to release.
 
-### Compiled packages  {#compiled-packages}
+#### Compiled packages  {#compiled-packages}
 
 The Apache Software Foundation produces open source software. All releases
 are in the form of the source materials needed to make changes to the
@@ -82,7 +85,7 @@ binary/bytecode package MUST have the same version number as the source
 release and MUST only add binary/bytecode files that are the result of
 compiling that version of the source code release and its dependencies.
 
-## Licensing  {#licensing}
+### Licensing  {#licensing}
 
 Every ASF release MUST comply with ASF licensing policy. This
 requirement is of utmost importance and an audit SHOULD be performed before
@@ -90,7 +93,7 @@ any full release is created.  In particular, every artifact distributed MUST
 contain only appropriately licensed code per [Apache Licensing
 Policy](/legal/resolved).
 
-## Licensing Documentation  {#licensing-documentation}
+### Licensing Documentation  {#licensing-documentation}
 
 Each package MUST provide a `LICENSE` file and a `NOTICE` file which account
 for the package's exact content.  `LICENSE` and `NOTICE` MUST NOT provide
@@ -102,7 +105,7 @@ distribution.  For additional packages, they MUST be located in the
 distribution format's customary location for licensing materials, such as the
 `META-INF` directory of Java "jar" files.
 
-### The `LICENSE` file  {#license-file}
+#### The `LICENSE` file  {#license-file}
 
 The `LICENSE` file MUST contain the full text of the [Apache License
 2.0](/licenses/LICENSE-2.0.txt).
@@ -114,7 +117,7 @@ file.  The component license itself MUST either be appended or else stored
 elsewhere in the package with a pointer to it from the `LICENSE` file, e.g.
 if the license is long.
 
-### The `NOTICE` file  {#notice-file}
+#### The `NOTICE` file  {#notice-file}
 
 The `NOTICE` file must conform to the requirements of [Apache licensing
 policy](/legal/src-headers.html#notice).
@@ -122,13 +125,13 @@ policy](/legal/src-headers.html#notice).
 See also [section 4(d)](licenses/LICENSE-2.0.html#redistribution) of the
 Apache License 2.0.
 
-### License Headers  {#license-headers}
+#### License Headers  {#license-headers}
 
 Source files consisting of works submitted directly to the ASF by the
 copyright owner or owner's agent must contain the appropriate [ASF license
 header](/legal/src-headers.html#headers).
 
-## Release Distribution  {#release-distribution}
+### Release Distribution  {#release-distribution}
 
 Once a release is approved, all artifacts MUST be uploaded to the project's
 subdirectory within the canonical Apache distribution channel,
@@ -142,30 +145,30 @@ After uploading to the canonical distribution channel, the project (or anyone
 else) MAY redistribute the artifacts in accordance with their licensing
 through other channels.
 
-### Release Archival  {#release-archival}
+#### Release Archival  {#release-archival}
 
 All official releases MUST be archived permanently on archive.apache.org.
 
 (Uploading to the canonical distribution channel satisfies this requirement
 because archival happens automatically as a side effect.)
 
-## Release Policy Administration  {#administration}
+### Release Policy Administration  {#administration}
 
 Projects MUST notify the Board of Directors of any deviations from recommended
 or required policy directives.
  
 Changes to Release Policy must be approved by Legal Affairs.
 
-## TODO
+### TODO
 
 Formalize additional official policies and reference them from this policy:
 
 *   _ASF Licensing Policy_ (curated by Legal Affairs, applies to both released
     and unreleased code)
 
-# Release FAQs  {#releases}
+### Release FAQs
 
-### Why do we need a Foundation-wide policy?  {#why}
+#### Why do we need a Foundation-wide policy?  {#why}
 
 In the traditional open source development methodology practiced
 at volunteer liability-limiting organizations like Apache, it is necessary to draw
@@ -194,7 +197,7 @@ we prefer robust, reviewable decision-making over efficient decision-making, so 
 are thinking of proposing an alternative process for the board to consider, be sure
 your targets reflect this.
 
-### What is a release?  {#what}
+#### What is a release?  {#what}
 
 Releases are, by definition, anything that is published beyond the group
 that owns it. In our case, that means any publication outside the group of
@@ -226,7 +229,7 @@ binary/bytecode package must have the same version number as the source
 release and may only add binary/bytecode files that are the result of
 compiling that version of the source code release.
 
-### How do the types Of Apache software distribution differ?  {#release-types}
+#### How do the types Of Apache software distribution differ?  {#release-types}
 
 - **Test Packages** are not Apache releases. All releases require due
 process and official approval. Test packages are for testing ongoing
@@ -257,9 +260,9 @@ features or functionality, are usually referred to as "beta" or "unstable".
 Releases that only represent a project milestone and are intended only for
 bleeding-edge developers working outside the project are called "alpha".
 
-## Release Management Questions  {#management}
+### Release Management Questions  {#management}
 
-### Where do releases go? ###
+#### Where do releases go? ###
 
 A release isn't 'released' until the contents are in the project's 
 distribution directory, which is a subdirectory of `downloads.apache.org`.
@@ -269,7 +272,7 @@ releases on `repository.apache.org` beside some convenience binaries.
 The distribution directory is required, 
 while the repository system is an optional convenience.
 
-### What Must Every ASF Release Contain?  {#what-must-every-release-contain}
+#### What Must Every ASF Release Contain?  {#what-must-every-release-contain}
 
 Every ASF release **must** contain a source package, which must be
 sufficient for a user to build and test the release provided they have
@@ -296,7 +299,7 @@ contain only [appropriately](/legal/resolved#category-a)
 in the [foundation website](/) and in the [release
 licensing FAQ](#license).
 
-### What are the ASF requirements on approving a release?  {#approving-a-release}
+#### What are the ASF requirements on approving a release?  {#approving-a-release}
 
 Votes on whether a package is ready to be released use 
 [majority approval](/foundation/glossary.html#MajorityApproval) -- 
@@ -307,7 +310,7 @@ to download the signed source code package, compile it as provided, and test the
 resulting executable on their own platform, along with also verifying that the 
 package meets the requirements of the ASF policy on releases.
 
-### How should releases be announced?  {#release-announcements}
+#### How should releases be announced?  {#release-announcements}
 
 Please ensure that you wait at least one hour after uploading a new release
 before updating the project download page and sending the announcement email(s). 
@@ -331,7 +334,7 @@ uploaded to famous pgp sites (e.g. http://pgp.mit.edu/). This key should
 either be the one used to sign the release or one that is cross-signed by
 that key.
 
-### Is there a guide to best practices?  {#best-practice}
+#### Is there a guide to best practices?  {#best-practice}
 
 See the Incubator [release management
 guide (draft)](http://incubator.apache.org/guides/releasemanagement.html#best-practice).
@@ -340,7 +343,7 @@ established Apache project.  (The author is familiar with
 [this one](http://subversion.apache.org/docs/community-guide/releasing#release-creating),
 from this project.)
 
-### Must releases be built on hardware owned and controlled by the committer?  {#owned-controlled-hardware}
+#### Must releases be built on hardware owned and controlled by the committer?  {#owned-controlled-hardware}
 
 Strictly speaking, releases must be **[verified](https://svn.apache.org/repos/private/committers/tools/releases/compare_dirs.pl)**
 on hardware owned and controlled by the committer.  That means hardware the 
@@ -358,9 +361,9 @@ files (especially binary files) is not feasible.  So, basically, "Yes".
 from a source control tag.  It does not refer to testing that artifact for
 technical quality.*
 
-## Release Distribution Questions  {#mirroring}
+### Release Distribution Questions  {#mirroring}
 
-### Where can we host test packages (nightly builds and release candidates)?  {#host-rc}
+#### Where can we host test packages (nightly builds and release candidates)?  {#host-rc}
 
 Test packages are for use by consenting developers and interested community
 members only, so they should not be hosted or linked on pages intended for end
@@ -375,7 +378,7 @@ potentially, formally blessed as a GA release).
 Nightly Builds that are not release candidates can be hosted at [ci.apache.org projects area](https://ci.apache.org/projects),
 just file an INFRA ticket.
 
-### Where can we host public (GA) releases?  {#host-GA}
+#### Where can we host public (GA) releases?  {#host-GA}
 
 Current releases must be served from the ASF condent distribution system by placing them under
 `https://downloads.apache.org/` (see [How do I upload a release?](#upload-ci)). 
@@ -389,7 +392,7 @@ and source control repositories (`svn.apache.org` and Git repositories)
 may not be used to distribute releases --- that is, releases should not be
 downloaded from them.
 
-### How are releases archived?  {#archived}
+#### How are releases archived?  {#archived}
 
 All releases are archived on <http://archive.apache.org/dist/>.
 
@@ -400,7 +403,7 @@ to `http://archive.apache.org/dist/` and held there permanently, even after it i
 
 If you have (legacy?) releases that never got archived, ask infra to copy them to `http://archive.apache.org/dist/`.
 
-### When should an old release be archived?  {#when-to-archive}
+#### When should an old release be archived?  {#when-to-archive}
 
 `downloads.apache.org` should contain *the latest release in each branch 
 that is currently under development*. When development ceases on a version 
@@ -418,7 +421,7 @@ see [How Is An Old Release Moved To The Archives](#how-to-archive)
 If Apache Foo 1.2 is a new branch, and development continues on 1.1 in 
 parallel, then it is acceptable to serve both 1.1.a and 1.2.x from `/dist`.
 
-### How do I upload a release ?  {#upload-ci}
+#### How do I upload a release ?  {#upload-ci}
 
 By committing your release tarballs to the appropriate subdirectory (i.e. TLP name) of the
 [`https://dist.apache.org/repos/dist/release/`](https://dist.apache.org/repos/dist/release/)
@@ -437,7 +440,7 @@ If the Release Manager is not a member of the PMC, they will need to ask a PMC m
 The PMC can also vote to let non-PMC-members update the dist/release area.
 To get this set up, please open a JIRA ticket at the [INFRA JIRA](https://issues.apache.org/jira/browse/INFRA) referencing the PMC vote.
 
-### Where can I stage a release candidate?  {#stage}
+#### Where can I stage a release candidate?  {#stage}
 
 There is also a development area under
 `https://dist.apache.org/repos/dist/dev/<TLP name>/`
@@ -454,7 +457,7 @@ in order to publish them.
 
 Commit mails to the `dist/` repository go to your normal project mailing lists.
 
-### Do I need to talk to Infrastructure before distributing a release?  {#heads-up}
+#### Do I need to talk to Infrastructure before distributing a release?  {#heads-up}
 
 Most projects can just distribute a release as described in the previous two
 questions.  However, releases that are likely to strain content distribution resources **must** be coordinated with infrastructure.
@@ -464,7 +467,7 @@ Releases of more than 1GB of artifacts require a heads-up to Infrastructure in a
 Specific exemptions from other dist policies (such as what may or must or must
 not be distributed via the content distribution system) also need to be coordinated with Infrastructure.
 
-### Which Directory for what build?  {#build-directories}
+#### Which Directory for what build?  {#build-directories}
 
 | Type             | Location                 |
 |------------------|--------------------------|
@@ -472,29 +475,29 @@ not be distributed via the content distribution system) also need to be coordina
 | Current Releases | downloads.apache.org     |
 | Older Releases   | archive.apache.org/dist  | 
 
-### How is an old release moved to the archives?  {#how-to-archive}
+#### How is an old release moved to the archives?  {#how-to-archive}
 
 `downloads.apache.org` is automatically archived. Therefore, a copy of an
 official release will already exist in the archives. To move a release to
 the archives, just delete the copy in your project's dist directory. Remember to
 update any links from the download page.
 
-### How do I release Maven artifacts?  {#maven-artifacts}
+#### How do I release Maven artifacts?  {#maven-artifacts}
 
 See the guide to <a href="https://infra.apache.org/publishing-maven-artifacts.html" target="_blank">Publishing Maven
 Releases</a>.
 
-## Release licensing questions  {#license}
+### Release licensing questions  {#license}
 
 Please read [Applying the Apache License, Version
 2.0](apply-license) and check the [Apache Licenses](/licenses/) and 
 [Apache Legal](/legal/) pages for current information.
 
-### Which files must contain an ASF license text?  {#which-files-contain-license}
+#### Which files must contain an ASF license text?  {#which-files-contain-license}
 
 Every source file must contain the appropriate ASF License text.
 
-### Is a full copy of the license required in each source file?  {#full-copy-for-each-source-file}
+#### Is a full copy of the license required in each source file?  {#full-copy-for-each-source-file}
 
 In short, only one copy of the license is needed per distribution. This
 full license file should be placed at the root of the distribution in a
@@ -502,7 +505,7 @@ file named LICENSE. For software developed at the ASF, each source file
 need only contain the [boilerplate
 notice](/legal/src-headers.html#headers).
 
-### Where is the right place for attribution notices?  {#attribution-notices}
+#### Where is the right place for attribution notices?  {#attribution-notices}
 
 The new license allows for a NOTICE file that contains such attribution
 notices (including the Apache attribution notice). Read
@@ -515,14 +518,14 @@ next to the LICENSE file.
 Ensure that the standard ASF attribution notice is contained in any new
 NOTICE file created.
 
-### What content is appropriate for the NOTICE file?  {#notice-content}
+#### What content is appropriate for the NOTICE file?  {#notice-content}
 
 Read [this](/legal/src-headers.html#notice).
 
 Only mandatory information required by the product's software licenses. Not
 suitable for normal documentation.
 
-### Is a NOTICE file required for pure ASF code?  {#notice-required}
+#### Is a NOTICE file required for pure ASF code?  {#notice-required}
 
 Yes! The NOTICE file must contain the standard ASF attribution, given
 below:
@@ -537,7 +540,7 @@ The official wording was established in section 6C of the
 
 <!-- Note: the text was originally added in: r201713 see #INFRA-367 -->
 
-### If an artifact contains code under several licenses, should it contain several license files?  {#distributing-code-under-several-licenses}
+#### If an artifact contains code under several licenses, should it contain several license files?  {#distributing-code-under-several-licenses}
 
 When an artifact contains code under several licenses, the LICENSE file
 should contain details of all these licenses. For each component which is
@@ -548,7 +551,7 @@ artifact with a pointer to it from the LICENSE file, e.g. if the license is long
 [Here](https://svn.apache.org/repos/asf/httpd/httpd/trunk/LICENSE) is an
 example showing appended licenses.
 
-### What are the requirements to distribute other artifacts in addition to the source package?  {#distribute-other-artifacts}
+#### What are the requirements to distribute other artifacts in addition to the source package?  {#distribute-other-artifacts}
 
 ASF releases typically contain additional material together with the source
 package. This material may include documentation concerning the release but
@@ -566,8 +569,8 @@ Nothing in this section is meant to supersede the requirements defined
 [here](#what) and [here](#what-must-every-release-contain) that all
 releases be primarily based on a signed source package.
 
-## Questions About Release Statistics  {#stats}
+### Questions About Release Statistics  {#stats}
 
-### Is there any way to measure how many times XYZ has been downloaded?  {#downloads}
+#### Is there any way to measure how many times XYZ has been downloaded?  {#downloads}
 
 Visit <a href="https://logging1-he-de.apache.org/stats/" target="_blank">the download stats page</a>.
