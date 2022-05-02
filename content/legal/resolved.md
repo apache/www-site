@@ -1,12 +1,13 @@
 Title: ASF 3rd Party License Policy
+
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom "ASF legal-discuss Mailing List"
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-<div style="font-size:xx-large; text-transform: uppercase; font-weight: 600; padding: 10px 0; color: #303284;">ASF 3rd Party License Policy</div>
+# {{title}}
 
 [TOC]
 
-# Purpose  {#audience}
+## Purpose  {#audience}
 This policy provides licensing guidance to Apache Software Foundation projects. It identifies the acceptable 
 licenses for inclusion of third-party Open Source components in Apache Software Foundation products. 
 
@@ -29,7 +30,7 @@ At a high level this policy separates licenses into three categories.
 - **Category B**: Licenses in Category B may be, under certain conditions, included in Apache Software Foundation products. They 'may Be' included. 
 - **Category X**: Licenses in Category X may **NOT** be included in Apache Software Foundation products. 
 
-# Category A: What can we include in an ASF Project?  {#category-a}
+## Category A: What can we include in an ASF Project?  {#category-a}
 
 For inclusion in an Apache Software Foundation product, we consider the following licenses to be similar in terms to the Apache License 2.0:
 
@@ -105,7 +106,7 @@ Licenses that we treat as similar to public domain:
 Determining whether the copyright in a work has expired may be non-trivial and may vary between jurisdictions. Raise the topic on legal-discuss@ or via a JIRA issue if you have doubt over whether a work falls in the public domain. 
 
 
-# Category B: What can we *maybe* include in an ASF Project?  {#category-b}
+## Category B: What can we *maybe* include in an ASF Project?  {#category-b}
 
 You may include the licenses and/or projects described in this section in an Apache Software Foundation product **IF** they meet the specified conditions. 
 
@@ -254,7 +255,7 @@ Of course Gems written under other licenses (such as MIT) may also be OK, depend
 Also note that the Ruby license is listed on the 'Category B' Weak Copyleft list above for binary usage (for example JRuby). 
 
 
-# Category X: What can we NOT include in an ASF Project?  {#category-x}
+## Category X: What can we NOT include in an ASF Project?  {#category-x}
 
 You may NOT include the following licenses within Apache products:
 
@@ -334,7 +335,7 @@ ask yourself in this situation is:
 * "Will the majority of users want to use my product without adding the optional components?"
 
 
-# FAQ:
+## FAQ:
 
 ### Does it matter what platform an Apache product is created to work with?  {#platform}
 
@@ -372,4 +373,3 @@ When a release contains third party works, the licenses covering those works may
 A *required third-party notice* is any third party notice which the above cases don't cover.
 
 See [Bundling Other ASF Products](/dev/licensing-howto.html#bundle-asf-product) for a note on required notices when a release contains another Apache product.
-
