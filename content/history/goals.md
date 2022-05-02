@@ -1,6 +1,8 @@
 Title: ASF History Project - Goals
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
+# {{title}}
 
 The History Project researches and collects information related to:
 
@@ -85,4 +87,3 @@ The History Project researches and collects information related to:
   - Mads: That could actually be _very_ interesting - along with stuff about how the foundation was formed - legal issues and stuff
   
   - Rich: Actually, it's one of the *most* important things, in my mind, as it falls under the "what works, what doesn't work, why Apache is successful" header. One of the most important roles that Apache plays, apart from being a damned fine product, is as a model of how OSS projects are *supposed* to work. Folks inside the project often don't see that aspect of things.
-
