@@ -1,7 +1,8 @@
 Title: Licenses
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Apache Licenses 
+# {{title}}
 
 The Apache Software Foundation uses various licenses to distribute
 software and documentation, and to accept regular
@@ -15,7 +16,7 @@ providing the ASF and its projects the right to distribute and build upon
 their work within Apache.
 
 
-# Licensing of ASF Products  {#distributions}
+## Licensing of ASF Products  {#distributions}
 
 All software produced by The Apache Software Foundation or any of its
 projects or subjects is licensed according to the terms of the documents
@@ -28,7 +29,7 @@ listed below.
 | [Apache License 1.0](LICENSE-1.0) | This is the original Apache License |  {#1.0} |
 
 
-# Contributor License Agreements #
+## Contributor License Agreements
 
 For information regarding our CLAs, please consult the [ASF Contributor License 
 Agreements](/licenses/contributor-agreements.html) page.
@@ -40,7 +41,7 @@ Agreements](/licenses/contributor-agreements.html) page.
 | [How To](/licenses/contributor-agreements.html#submitting) | How to submit CLAs/Software Grant |  {#submitting} |
 
 
-# Other Legal Info #
+## Other Legal Info
 
 | Page | Description | |
 | ---- | ----------- | -- |
@@ -48,7 +49,7 @@ Agreements](/licenses/contributor-agreements.html) page.
 | [ASF Trademark Use Policy](/foundation/marks/) | Policy on using ASF Trademarks |  {#trademarks} |
 
 
-# Questions?  {#questions}
+## Questions?  {#questions}
 
 For answers to frequently asked licensing questions, please consult our 
 [Licensing Frequently Asked Questions](/foundation/license-faq.html) page.
