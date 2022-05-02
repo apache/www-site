@@ -1,7 +1,10 @@
 Title: Apache And The Java Community Process
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Notice regarding open letter to Sun Microsystems #
+# {{title}}
+
+## Notice regarding open letter to Sun Microsystems
 
 > *The Apache Software Foundation has written an [open
 > letter](sunopenletter.html) to Sun Microsystems regarding our inabillity
@@ -27,7 +30,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 > Executive Committee with the goal that Sun will finally grant the ASF a
 > TCK license for Java SE that is free of any field of use limitations.* 
 
-# Apache And The Java Community Process #
+## Apache And The Java Community Process
 
 The Apache Software Foundation has been a participant in the [Java
 Community Process](http://www.jcp.org/) since the creation of "JCP 2.0".
@@ -58,9 +61,9 @@ representing the ASF.
 - Influence the evolution of the JCP through our participation on the
 Executive Committee.
 
-# Getting Involved #
+## Getting Involved
 
-## 1) Mail Lists  {#MailLists}
+### 1) Mail Lists  {#MailLists}
 
 There are two general mail lists for the JCP activities at the ASF :
 
@@ -72,7 +75,7 @@ There are two general mail lists for the JCP activities at the ASF :
 
 Expert group interest lists can be created as need and interest dictates.
 
-## 2) Representation  {#Representation}
+### 2) Representation  {#Representation}
 
 Apache community members represent the ASF on various expert groups. Our
 goal is to bring our interests in openness, meritocracy and community to
@@ -89,7 +92,7 @@ an open source license
 - License their Reference Implementations (RIs) and Technology
 Compatibility Kits (TCKs) under open source licenses
 
-### Representing the ASF on a JSR  {#RepsOnJSRs}
+#### Representing the ASF on a JSR  {#RepsOnJSRs}
 
 Members and committers are invited to represent the ASF on JSRs with the
 purpose of both promoting our values as well as ensuring that the Apache
@@ -117,7 +120,7 @@ existing activities on an expert group, please [send email to the JCP open
 list](mailto:jcp-open@apache.org?Subject=Interest%20in%20Participation) and
 indicate your interest.
 
-### Current Representation  {#CurrentReps}
+#### Current Representation  {#CurrentReps}
 
 The following JSRs have active Apache representation. Some groups have an
 internal mailing list that is used by ASF Members and committers to discuss
@@ -138,7 +141,7 @@ representatives](#RepsOnJSRs).
 |  [JSR-314 : JavaServer Faces 2.0](http://www.jcp.org/en/jsr/detail?id=314)  | Martin Marinschek | N/A |
 |  [JSR-291 : Dynamic Component Support for Java SE](http://www.jcp.org/en/jsr/detail?id=291)  | Alex Karasulu | N/A |
 
-### Implementation  {#tck}
+#### Implementation  {#tck}
 
 Because of the work of the ASF, we are able to legally implement JSRs in
 open source and distribute under the terms of the [Apache
@@ -184,7 +187,7 @@ specific technology:
 | 2.2.2 | JAX-RS 1.0 | 2009-05-28 |
 | 2.3.0 | JAX-RS 1.1/JAX-WS 2.2 | 2010-10-11 |
 
-### Testing with A TCK  {#gettingtck}
+#### Testing with A TCK  {#gettingtck}
 
 Whenever a project chooses, it may request access to the TCK for the
 technology they are implementing. The ASF will work to license, acquire and
