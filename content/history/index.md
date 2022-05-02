@@ -1,5 +1,8 @@
 Title: ASF History Project
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 ## Welcome to a bit of Apache software history!
 
@@ -12,7 +15,6 @@ patches via email in February of 1995, to the incorporation of the ASF in June o
 the everyday vernacular, to the ASF of today with over 300+ projects spanning 
 the technology spectrum, the history of the ASF is really about the growth of its 
 communities.
-
 
 We hope to better capture this history before bitrot and aging memories lose the earliest days of how the ASF and The Apache Way came to be. Apache is important not only as
 an excellent piece of software, but as an example of how free, community-driven software development is supposed to work. These history pages highlight important
