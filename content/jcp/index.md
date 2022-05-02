@@ -1,4 +1,5 @@
 Title: Apache And The Java Community Process
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
