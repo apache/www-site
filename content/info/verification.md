@@ -1,7 +1,8 @@
 Title: Verifying Apache Software Foundation Releases
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# How to verify downloaded files  {#how-to-verify}
+# {{title}}
 
 This page describes how to verify a file you have downloaded from an Apache product releases page, or from the Apache archive,
 by [checksum](#CheckingHashes) or [signature](#CheckingSignatures).
@@ -138,7 +139,7 @@ Then, if you tried to verify the signature of this corrupt release, it
 would succeed because the key was not the 'real' key. Therefore, you need
 to validate the authenticity of this key.
 
-#### Validating Authenticity of a Key  {#Validating}
+### Validating Authenticity of a Key  {#Validating}
 You may download public keys for the Apache project developers from our
 website or retrieve them from the public PGP keyservers (see above).
 However, importing these keys is not enough to verify the integrity of the
