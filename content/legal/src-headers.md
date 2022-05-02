@@ -1,7 +1,12 @@
 Title: ASF Source Header and Copyright Notice Policy
+
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom "ASF legal-discuss Mailing List"
+
 Comment: atom header to get a link like: "<link rel="alternate" title="ASF legal-discuss Mailing List" type="application/atom+xml" href="http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom" />" in the generated html header (in the body it would be trivial)
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 ## Purpose and intended audience  {#purpose}
 This document describes how Apache committers and PMC members should handle source file licensing and copyright notices.  
