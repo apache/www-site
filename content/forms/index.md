@@ -1,6 +1,6 @@
-Title: Forms
+Title: Apache Membership Forms
 
-# Apache Membership forms 
+# {{title}} 
 
 These forms are for the use of the Secretary and Apache Members.
 
@@ -12,4 +12,3 @@ is used by an existing member to request emeritus status.
 
 The [withdrawal request form](/forms/withdrawal-request.pdf)
 is used to request withdrawal from membership.
-
