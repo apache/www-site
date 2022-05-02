@@ -1,7 +1,8 @@
 Title: ASF Contributor Agreements
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# ASF Contributor Agreements
+# {{title}}
 
 The Apache Software Foundation uses various agreements to 
 accept contributions of software code and documentation from individuals and corporations, and to accept
@@ -14,7 +15,7 @@ original contributions for any other purpose outside of Apache, while
 providing the ASF and its projects the right to distribute and build upon
 their work.
 
-# Contributor License Agreements  {#clas}
+## Contributor License Agreements  {#clas}
 
 * ICLA: [Individual Contributor License Agreement](icla.pdf)
 * CCLA: [Corporate Contributor License Agreement](cla-corporate.pdf)
@@ -54,7 +55,7 @@ is not already in use. Apache IDs must start with an alphabetic character and co
 at least two additional alphanumeric characters (no special characters).
 You can check for IDs in use [here](http://people.apache.org/committer-index.html).
 
-# Software License Grant  {#grants}
+## Software License Grant  {#grants}
 
 * [Software Grant Agreement](software-grant-template.pdf)
 
@@ -66,7 +67,7 @@ the ASF. Typically, they do this after negotiating approval with the ASF
 does not accept software unless there is a viable community available to
 support it as part of a collaborative project.
 
-# How-To: Submitting license agreements and grants  {#submitting}
+## How-To: Submitting license agreements and grants  {#submitting}
 
 You may sign documents by hand or by electronic signature, and submit them by email. The ASF no longer accepts submissions by postal mail or by fax.
 
@@ -112,7 +113,7 @@ A valid signature involves one of:
  
  We will not accept unsigned documents.
 
-# Questions?  {#questions}
+## Questions?  {#questions}
 
 For answers to frequently asked questions about contribution agreements, consult our 
 [CLA Frequently Asked Questions](cla-faq.html) page.
