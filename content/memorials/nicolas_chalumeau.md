@@ -1,5 +1,8 @@
 Title: Nicolas Chalumeau: a Memorial
+
 license: https://www.apache.org/licenses/LICENSE-2.0
+
+# {{title}}
 
 Our friend Nicolas Chalumeau has departed this world on the 4th of October
 2005, at the age of 27.
