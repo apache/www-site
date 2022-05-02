@@ -1,8 +1,9 @@
 Title: ASF Legal
+
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
-# ASF Legal #
+# {{title}}
 
 
 ### Legal Information for Users of Apache Products  {#user-links}
