@@ -1,7 +1,7 @@
 Title: ASF Travel Assistance
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# The Travel Assistance Committee #
+# {{title}}
 
 [TOC]
 
@@ -85,7 +85,7 @@ those traveling overseas).
 
 To apply, complete the [on line application](/travel/application).
 
-# Events for which support is available  {#events}
+## Events for which support is available  {#events}
 
 Applications are now open for assistance to [ApacheCon NA New Orleans](https://www.apachecon.com/acna2022/)
 which is on between the 3rd and 6th of October 2022. Closing date for Applications for Travel Assistance 
@@ -103,7 +103,7 @@ Good luck and hope to see you in New Orleans!
 <hr />
 
 
-# Stories from past TAC recipients  {#stories}
+## Stories from past TAC recipients  {#stories}
 Are you thinking of applying for TAC funding, but wondering how it works? Wondering how it
 might apply for someone like yourself? Wondering if it might be relevant? Curious to know how
 others found the experience?
@@ -113,11 +113,11 @@ You can view these on the [TAC Stories pages](/travel/stories/).
 We're grouped them by project area, applicant background and the like.
 [Take a look around](/travel/stories/)!
 
-# Who are TAC? #
+## Who are TAC?
 
 Please see our [official committee listing](http://home.apache.org/phonebook.html?pmc=tac).
 
-# Past Events #
+## Past Events
 
 Participants attending the following events have received support from the Travel Assistance Committee:
 
