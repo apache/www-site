@@ -1,7 +1,8 @@
 Title: ASF Security Team
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-## The Apache Security Team 
+# {{title}}
 
 The Apache Security Team provides help and advice to Apache
 projects on security issues and coordinates the handling of
