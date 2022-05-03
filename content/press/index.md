@@ -1,7 +1,10 @@
 Title: Media and Analyst Relations
+
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-This page is a comprehensive resource for members of the press and industry analysts. 
+# {{title}}
+
+This is a comprehensive resource for members of the press and industry analysts. 
 Those seeking electronic press kits and/or sample press materials may 
 [contact us](mailto:press@apache.org?subject=[Press%20request]%20Please%20send%20a%20press%20kit)
 for additional assistance.
