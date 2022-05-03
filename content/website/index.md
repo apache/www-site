@@ -1,4 +1,4 @@
-Title:Site Index
+Title: Site Index
 
 Template: siteindex
 
