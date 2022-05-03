@@ -1,7 +1,7 @@
 Title: ASF Project Security Information
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# ASF Project Security Information #
+# {{title}}
 
 Here is a list of pages ASF projects maintain to provide information on known security vulnerabilities. Each entry also has the security contact for reporting new
 vulnerabilities related to that project. Note that not all project security teams have a dedicated address for reporting new vulnerabilities.
