@@ -62,7 +62,7 @@ To clarify, the following examples do **not** qualify as exceptional circumstanc
 exception before proceeding.**
 
 The sender of the archived communication should submit a request to
-`users@infra.apache.org`. Each request should include the following:
+`privacy@apache.org`. Each request should include the following:
 
 1. A detailed justification, clearly indicating the requisite sense of urgency.
 
