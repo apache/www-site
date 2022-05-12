@@ -341,6 +341,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | kfogel | Karl Fogel |
 | khmarbaise | [Karl Heinz Marbaise](https://github.com/khmarbaise) | [Maven](https://maven.apache.org) [Creadur](https://creadur.apache.org) |
 | kihwal | Kihwal Lee | [Hadoop](http://hadoop.apache.org) |
+| kinow | [Bruno P. Kinoshita](https://github.com/kinow/) | [Commons](https://commons.apache.org/), [Jena](https://jena.apache.org/), [OpenNLP](https://opennlp.apache.org/), [SIS](https://sis.apache.org/) |
 | kiwiwings | Andreas Beeker | [POI](http://poi.apache.org) |
 | kkolinko | Konstantin Kolinko | [Tomcat](http://tomcat.apache.org), [Gump](http://gump.apache.org) |
 | kkrugler | Kenneth William Krugler |
