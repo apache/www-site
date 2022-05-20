@@ -43,7 +43,7 @@ and/or to the board.
 
 ### Provide A Quarterly Report To The Board ([Board](https://whimsy.apache.org/foundation/orgchart/board))
 
-  * Projects MUST provide a [quarterly status report to the board](./board/reporting).
+  * Projects MUST provide a [quarterly status report to the board](//www.apache.org/foundation/reporting).
 
 ### Follow Software Release Policy ([Legal Affairs](https://whimsy.apache.org/foundation/orgchart/vp-legal), [Infrastructure Team](https://whimsy.apache.org/foundation/orgchart/-admin))
 
