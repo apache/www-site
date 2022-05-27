@@ -4,6 +4,8 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
+<noscript>Sorry, your browser settings do not support JavaScript, so the timeline does not appear</noscript>
+
 This timeline shows the terms of office of those who have served as Directors of The Apache Software Foundation. Hover your mouse cursor over any entry in the chart to see further information about that person's term.
 
 <div id="timeline-tooltip" style="height: 900px;"></div>
@@ -26,4 +28,3 @@ This timeline shows the terms of office of those who have served as Directors of
     chart.draw(dataTable, options);
   }
 </script>
-<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
