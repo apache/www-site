@@ -39,7 +39,7 @@ The ASF is not responsible for informing Members of meetings if it no longer has
 The ASF does not have to send out notices if a meeting is adjourned to another time or place, if the new time and place were announced in the course of the meeting **unless** the date changes by more than thirty (30) days. Then section 3.4 applies.
 
 ### 3.6 Waiver of notice
-Any Member can tell the ASF that they don't need a formal notice of Members' meetings, in writing or by unsubscribing from members-notify@apache.org. If you attend a meeting you can't require a notice of that meeting **except** if you intend to object that the meeting is out of order.
+Any Member can tell the ASF in writing that they don't need a formal notice of Members' meetings. If you attend a meeting you can't require a notice of that meeting **except** if you intend to object that the meeting is out of order.
 
 ### 3.7 Setting the record date for the meeting
 
