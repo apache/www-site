@@ -15,10 +15,10 @@ The Board of Directors (the Board) can put the business offices of the ASF anywh
 ## Article 2 - Registered offices and agents
 
 ### 2.1 Delaware
-The Certificate of Incorporation of the ASF states the location of the first office of the ASF, which was in the State of Delaware, and the name of the first registered agent of the ASF. Whenever the Board changes either the office location or its registered agents, it has to inform the Secretary of State of the State of Delaware. 
+The Certificate of Incorporation of the ASF states the location of the first office of the ASF, which was in the State of Delaware, and the name of the first registered agent of the ASF. Whenever the Board changes either the office location or its registered agents, it must inform the Secretary of State of the State of Delaware. 
 
 ### 2.2 Other states
-If the ASF needs to set up offices or have registered agents in other states, it has to follow the laws and rules of those states. (Note: this probably applies to any nation on earth, not just states in the United States of America.)
+If the ASF needs to set up offices or have registered agents in other states, it must follow the laws and rules of those states. (Note: this probably applies to any nation on earth, not just states in the United States of America.)
 
 ## Article 3 - Members' meetings
 
@@ -26,14 +26,14 @@ If the ASF needs to set up offices or have registered agents in other states, it
 Official meetings of Members of the ASF can take place anywhere. Historically, meetings have taken place in person (in the early years), or on Internet Relay Chat (IRC).
 
 ### 3.2 Annual meeting
-The Board has to call an annual meeting of the Members of the ASF within 13 months of the previous annual meeting. At an annual meeting the Members elect the Board and carry out any other "proper" business. (There is no definition of "proper".)
+The Board must call an annual meeting of the Members of the ASF within 13 months of the previous annual meeting. At an annual meeting the Members elect the Board and carry out any other "proper" business. (There is no definition of "proper".)
 ### 3.3 Special meetings
 The Board Chair, the President, the full Board, or 10%+1 of the Members who can vote can call a special meeting at any time. The person or group calling the meeting can assign the person to announce it.
 
 ### 3.4 Notice of Members' meetings
-The person or group calling the meeting, or the person they assign, has to inform Members of the meeting at least 10 days before, and not more than 60 days before, the day of the meeting. The notice has to be given "personally" or by first class mail to the mailing address the ASF has for each Member. ("Personally" is not defined, but could be through a face-to-face conversation, a phone call, an email, or, presumably, a personal message on a social media platform.)
+The person or group calling the meeting, or the person they assign, must inform Members of the meeting at least 10 days before, and not more than 60 days before, the day of the meeting. The notice must be given "personally" or by first class mail to the mailing address the ASF has for each Member. ("Personally" is not defined, but is currently satisfied by sending email to a deliberately low-volume email list, members-notify@apache.org which is auto-subscribed by each Member.)
 
-The ASF is not responsible for informing Members of meetings if they no longer have a good address or other contact information for them, based on two notices of Members' meetings in a row being undeliverable. It is up to each Member to keep their contact information current with the ASF..
+The ASF is not responsible for informing Members of meetings if it no longer has a good address or other contact information for them, based on two notices of Members' meetings in a row being undeliverable. It is up to each Member to keep their contact information current with the ASF.
 
 ### 3.5 Notice of adjourned Members' meetings
 The ASF does not have to send out notices if a meeting is adjourned to another time or place, if the new time and place were announced in the course of the meeting **unless** the date changes by more than thirty (30) days. Then section 3.4 applies.
@@ -43,35 +43,37 @@ Any Member can tell the ASF in writing that they don't need a formal notice of M
 
 ### 3.7 Setting the record date for the meeting
 
-  - The Board can set a "record date", between 10 and 60 days before a Members' meeting. Those who are ASF Members on the record date are Members who must be invited to, and may take part in, the coming meeting. If the Board does not set a record date, the day two days before when the notice of meeting is sent to Members (OR, if there is no notice for the meeting, two days before the meeting date) is the record date.
-  - When the Board wants to know what the Members want to do about something without holding a meeting (see section 3.12), it can set a "record date", as above, to determine the Members who can express their wishes about the matter in writing. 
-  - The Board can establish a "record date" as in item a. to establish which Members can exercise rights or take some other action. The record date cannot be more than 60 days before the time when the Members might want to exercise those rights.
+a. The Board can set a "record date", between 10 and 60 days before a Members' meeting. Those who are ASF Members on the record date are Members who must be invited to, and may take part in, the coming meeting. If the Board does not set a record date, the day two days before when the notice of meeting is sent to Members (OR, if there is no notice for the meeting, two days before the meeting date) is the record date.
+
+b. When the Board wants to know what the Members want to do about something without holding a meeting (see section 3.12), it can set a "record date", as above, to determine the Members who can express their wishes about the matter in writing. 
+
+c. The Board can establish a "record date" as in item a. to establish which Members can exercise rights or take some other action. The record date cannot be more than 60 days before the time when the Members might want to exercise those rights.
 
 ### 3.8 Voting rights
-The secretary or other person the Board assigns makes a list of Members entitled to vote at a meeting, ten days before the meeting. The list is private, but any Member can ask for a copy to review for accuracy. If the Directors of the ASF do not produce such a list for a meeting that involves the election of Members, those Directors are not eligible to be elected to any office at that meeting.
+The Secretary or other person the Board assigns makes a list of Members entitled to vote at a meeting, ten days before the meeting. The list is private, but any Member can ask for a copy to review for accuracy. If the Directors of the ASF do not produce such a list for a meeting that involves the election of Members, those Directors are not eligible to be elected to any office at that meeting.
 
 ### 3.9 Quorum
 Normally, the quorum for an ASF Members' meeting is one-third (33% +1) of the Members eligible to vote at that meeting. Having a quorum means the meeting can legally conduct business, including the election of Board members.
 
 (There are details about different classes of membership that are not relevant right now to the ASF.)
 
-Candidates for the Board are elected by a plurality of the votes cast.
+Candidates for the Board are elected by a plurality of the votes cast. This is currently implemented via the Single Transferrable Vote method in which Members vote for their first, second, third, etc. choice. 
 
-Members can give their proxies to another member, so that member can act on their behalf. All proxies also count toward establishing the quorum. (See below.)
+Members can assign another Member to be their proxy, so that member can act on their behalf. All proxies also count toward establishing the quorum. (See below.)
 
 If Members leave the meeting after the quorum for the meeting has been established, the quorum is still valid for the duration of the meeting.
 
 If actions during the meeting result in adding Members to the ASF, the meeting's already-established quorum is still valid.
 
 ### 3.10 Voting
-Each Member (not emeritus Members) has one vote on each matter submitted for a vote during the meeting. Members can vote themselves or by having a proxy cast their vote.
+Each Member (not Emeritus Members) has one vote on each matter submitted for a vote during the meeting. Members can vote themselves or by having a proxy cast their vote.
 
 ### 3.11 Proxies
-A proxy is when you give authority to someone else to act for you, especially in regard to voting. The use here specifically relates to ASF Members giving someone else the right to register as "present" for them for the purpose of establishing a quorum and to vote on their behalf in Members' meetings.
+A proxy is a person to whom you give authority to act for you, especially in regard to quorum or voting. The use here specifically relates to ASF Members giving another Member the right to register as "present" for them for the purpose of establishing a quorum and to vote on their behalf in Members' meetings.
 
-The member or someone with legal authority to act for them must "sign" the proxy. In practice, the ASF recognizes digital signatures through an online process.
+The Member or someone with legal authority to act for them must "sign" the proxy form. In practice, the ASF recognizes digital signatures through an online process.
 
-A Member can give their proxy to someone else. The proxy is valid for three years from the date it is given, unless the proxy includes a shorter time limit. You can revoke a proxy you have given.
+The proxy is valid for three years from the date it is given, unless the proxy form includes a shorter time limit. You can revoke a proxy you have given.
 
 ### 3.12 Members taking action without a meeting
 
@@ -82,9 +84,9 @@ The ASF must notify all Members promptly of an action it takes in this way.
 ## Article 4 - Members
 
 ### 4.1 New Members
-Current Members can nominate new members. The ASF makes such nominations available to all Members at least ten days before a meeting in which there will be a vote on the nominations.
+Current Members can nominate new Members. The ASF makes such nominations available to all Members at least ten days before a meeting in which there will be a vote on the nominations.
 
-The original Members of the ASF were voted in by the Board at the first Board meeting. All others require a vote in favor at a Members' meeting to become members. New Members must submit their written membership application within 30 days after the vote to add them as Members.. 
+The original Members of the ASF were voted in by the Board at the first Board meeting. All others require a vote in favor at a Members' meeting to become Members. Newly elected Members must submit their signed membership application within 30 days after the vote to become Members.
 
 ### 4.2 Emeritus Members
 An Emeritus Member is a Member who has become inactive, either at their own request or by a vote at a Members' meeting. Emeritus Members cannot vote at Members' meetings and their presence does not count toward achieving quorum. The ASF will continue to send notices of Members' meetings to Emeritus Members as long as it has good contact information for them.
@@ -133,7 +135,7 @@ A Director can resign at any time by submitting a written request to the ASF. A 
 If there is a vacancy, the remaining Directors can vote to appoint someone to fill the vacancy. The person's term runs until the next election of Directors is complete.
 
 ### 5.8 Quorum and voting
-50%+1 of the Directors is the quorum for a Board meeting. The Board approves actions by majority vote.
+50%+1 of the Directors is the quorum for a Board meeting. The Board approves actions by majority vote of the attendees.
 
 ### 5.9 Executive and other committees
 The Board can create an Executive Committee of some of its members, and other committees. Each Executive committee must have at least one Board member. The Board can assign duties and authority to its committees.
@@ -221,13 +223,13 @@ The ASF keeps full and complete records of the names, addresses, and contact inf
 
 Members and Emeritus Members are responsible for notifying the ASF of changes of address or contact information.
 
-The records do not have to be physical documents, but the ASF has to be able to create physical copies of the records if needed.
+The records do not have to be physical documents, but the ASF must be able to create physical copies of the records if needed.
 
 ### 7.2 Inspecting books and records
 Any ASF Member can examine and make copies of the membership records and other records the ASF holds. The Member must provide a written demand "under oath" (signed with a witness) explaining the reason for the examination. The reason must be for a "proper purpose".
 
 ## Article 8 - Nonprofit status
-The ASF operates as a not-for-profit membership corporation, exempt from US taxation as a 501(c) corporation. It must not engage in any activity that might invalidate its tax-exempt status.
+The ASF operates as a not-for-profit membership corporation, exempt from US taxation as a 501(c)(3) charitable organization. It must not engage in any activity that might invalidate its tax-exempt status.
 
 ## Article 9 - Corporate seal
 The Board has a corporate seal which is used to validate certain legal documents.
