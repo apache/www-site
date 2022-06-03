@@ -55,6 +55,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | acmurthy | Arun Murthy |
 | adc | Alan D. Cabrera |
 | adelbene | [Andrea Del Bene](https://twitter.com/andreaDelBene19) | [Wicket](http://wicket.apache.org/) |
+| adityasharma | Aditya Sharma | [OFBiz](https://ofbiz.apache.org), [Roller](https://roller.apache.org), [ComDev](https://community.apache.org) |
 | adrianocrestani | Adriano Crestani Campos |
 | aestrada | Adam Estrada | [SIS](http://sis.apache.org) |
 | afuchs | Adam Fuchs | [Accumulo](http://accumulo.apache.org)|
