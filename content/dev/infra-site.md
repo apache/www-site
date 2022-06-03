@@ -63,12 +63,12 @@ tools that Apache projects use to build their independent software products.
 Some useful starting points are:
 
 - /dev/ is a top level site map of infrastructure and tooling documentation.
-- /foundation/ give top level information about the ASF as a corporation.
+- /foundation/ gives top level information about the ASF as a corporation.
 - /foundation/governance/ explains how the corporation is governed, which is separate from how Apache projects work.
 - /legal/ includes information about ASF legal policies.
-- /licenses/ includes copies of the Apache license and answers to FAQs.
+- /licenses/ includes copies of the Apache license and answers to FAQs about it.
 - /press/ is for press or analyst information.
-- /security/ is the home of the Security Team that coordinates response to common vulnerabilities and exposures (CVEs) with projects.
+- /security/ is the home of the Security Team that coordinates responses to common vulnerabilities and exposures (CVEs) with projects.
 
 
 ## Improvements to /dev documentation  {#review}
