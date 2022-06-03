@@ -8,7 +8,7 @@ let new_url = 'https://infra.apache.org/';
 location.href = location.href.replace(old_url, new_url);
 </script>
 
-# Apache Mailing List Etiquette Tips #
+# Apache Mailing List Etiquette Tips
 
 This information has moved to <a href="https://infra.apache.org/contrib-email-tips.html">here</a>.
 
