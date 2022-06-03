@@ -1,4 +1,4 @@
-Title: Infrastructure Team Code of Conduct - What you can expect from us
+Title: Infrastructure Team Code of Conduct
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # Infrastructure team code of conduct
