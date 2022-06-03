@@ -5,7 +5,7 @@ Planet Apache aggregates personal blogs from Apache committers.
 Apache also [hosts official project blogs](project-blogs) for top level
 projects or incubator podlings that request them.
 
-**Note**: Planet Apache is not currently (May, 2021) available. We will update this page and send out an announcement when it is available again.
+**Note**: Planet Apache is not currently (June, 2022) available. We will update this page and send out an announcement when it is available again.
 
 # Apache Committer personal blogs  {#personal-blogs}
 
