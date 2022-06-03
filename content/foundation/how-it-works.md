@@ -31,7 +31,7 @@ the incredible growth in new projects and contributors over the years. Come and 
 
 -  [Roles](#roles) 
 
--  [Project management](#management) 
+-  [Project management and collaboration](#management) 
 
 -  [The Foundation Infrastructure](#infrastructure) 
 
@@ -296,7 +296,7 @@ new project for incubation (we'll see later what this means). The members
 coordinate their activities through their mailing list and through their
 annual meeting. We have a [full listing of Apache Members](/foundation/members.html).
 
-## Project Management and Collaboration  {#management}
+## Project Management and collaboration  {#management}
 
 Apache projects are managed using a collaborative, consensus-based
 process. We do not have a hierarchical structure; rather, different groups
@@ -327,7 +327,7 @@ In general, asynchronous communication is important because it
 allows archives to be created and it's more tolerant on the volunteer
 nature of the various communities.
 
-### Documentation ###
+### Documentation
 
 Each project is responsible for its own [project website](projects.html).
 Further information to assist committers, developers, and PMCs is available
@@ -394,7 +394,7 @@ the software and want to enhance it or maintain it provide the salary.
 The ASF does contract out various services, including accounting, 
 Press and Media relations, and infrastructure system administration.
 
-## Individuals compose the ASF  {#hats}
+### Individuals compose the ASF  {#hats}
 
 All of the ASF including the board, the officers, the committers, and
 the members, are participating as individuals. That is one strength of the
@@ -419,7 +419,7 @@ their apache.org email address when otherwise they would use their personal
 one. This last method is not reliable, as many people use their
 apache.org address all of the time.
 
-## Balancing confidentiality and public discussion  {#confidential}
+### Balancing confidentiality and public discussion  {#confidential}
 
 We endeavour to conduct as much discussion in public as possible. This
 encourages openness, provides a public record, and stimulates the broader
@@ -435,6 +435,12 @@ unnecessary confusion and ill-informed discussion.
 Private lists are typically only used for matters pertaining to people as 
 individuals (like voting in new committers), and legal matters that require 
 confidentiality.
+
+## The Foundation Infrastructure (#infrastructure)
+
+The ASF does not have offices or buildings. Its only physical existence is the technical infrastructure that enables it to operate, and the staff.
+
+The ASF Infrastructure team, known as "Infra", supports services that help the ASF and its projects function and flourish. <a href="https://apache.org/dev/infrastructure.html" target="_blank">Learn more</a>.
 
 ## The Foundation Incubator  {#incubator}
 
