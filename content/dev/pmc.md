@@ -16,10 +16,10 @@ read the <a href="/foundation/governance/pmcs" target="_blank">PMC Governance ov
   - [How to perform the duties of the PMC chair](pmc.html#chair})
   - [PMC membership management](pmc.html#pmcmembers)
   - [Project committer management](pmc.html#committer-management)
-  - [PMC FAQs and How-Tos](pmc.html#faq)
+  - [PMC FAQs and how-tos](pmc.html#faq)
  
 
-## Intended Audience  {#audience}
+## Intended audience  {#audience}
 
 This document is for *PMC members* of ASF projects. A PMC is responsible for the proper 
 [management and oversight of an Apache project][1], and reports directly to the board four times a year.
@@ -149,7 +149,7 @@ After the project has elected new committers and followed the process to
 get their account created, the PMC chair ensures 
 the new committer has [karma](#newcommitter) (access) to the project repositories.
 
-### Send NOTICEs and followup when adding new PMC members
+### Send NOTICEs and followup when adding PMC members
 The chair is responsible for sending the 72-hour
 NOTICE email to the board, then updating [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)
  and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmc).
@@ -185,7 +185,7 @@ After the board approves the resolution (typically at the next monthly meeting),
 
 ### Is a PMC Chair an officer or Member of the ASF?
 
-Yes, they are officers of the corporation, and no, they are not "Members". PMC Chairs are appointed by the board to be the 
+Yes, they are officers of the corporation, and no, they are not necessarily "Members". PMC Chairs are appointed by the board to be the 
 Vice President of their top level project and to serve as the Chair of their 
 Project Management Committee. [Read an explanation why PMC Chairs are legal officers of the
 corporation](../foundation/faq.html#why-are-PMC-chairs-officers). 
@@ -277,11 +277,11 @@ See also [why would a project move to the Attic?](pmc.html#move-to-attic), above
 
 ## PMC membership management  {#pmcmembers}
 
-### How to add a new PMC member  {#newpmc}
+### How to add a PMC member  {#newpmc}
 
 #### Send the board a NOTICE of the vote to add someone
 
-Adding a new PMC member requires sending an email notification
+Adding a PMC member requires sending an email notification
 to the Board's mailing list and the PMC's private mailing list and waiting 72 hours.
 Be sure to send a *separate* [NOTICE] email for *each* individual you are nominating.
 
@@ -587,7 +587,7 @@ the Apache Infra team</a>.
 The administrator of the machine will then reply accordingly.
 
 
-## PMC FAQs and How-Tos  {#faq}
+## PMC FAQs and how-tos  {#faq}
 
 #### How to import code from an external source  {#import}
 
