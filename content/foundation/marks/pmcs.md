@@ -126,6 +126,9 @@ all top level pages for the project or subproject.
 users may securely report potential vulnerabilities, or to the main
 [www.apache.org/security/](//www.apache.org/security/) page
 
+- "Privacy" should link to:
+`privacy.apache.org/policies/privacy-policy-public.html`
+
 - All projects must feature some prominent link back to the main ASF
 homepage at `www.apache.org`. This
 may either be a featured link in your main navigation system or a
