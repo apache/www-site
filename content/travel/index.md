@@ -89,7 +89,7 @@ To apply, complete the [on line application](/travel/application).
 
 Applications are now open for assistance to [ApacheCon NA New Orleans](https://www.apachecon.com/acna2022/)
 which is on between the 3rd and 6th of October 2022. Closing date for Applications for Travel Assistance 
-to this event is 1st July 2022.
+to this event has been extended to 8th July 2022.
 
 Travel Assistance includes travel to the event, via plane,train etc; and optionally includes if needed the 
 cost of Hotel accomodation and also Conference tickets.
