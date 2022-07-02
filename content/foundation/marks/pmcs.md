@@ -17,7 +17,7 @@ how PMC members must manage their project's brands in other ways.
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
-See Also: [Trademark Resources Site Map][resources].
+See also: [Trademark Resources site map][resources].
 
 </div>
 
@@ -28,18 +28,18 @@ See Also: [Trademark Resources Site Map][resources].
   - Apache projects must host official website content on an
     `apache.org` domain. This includes content overseen by the
     project's PMC (including the top level website, download pages, and wikis),
-    and ensures that the ASF infrastructure team can maintain the
-    services while informing users that the content is official
+    ensures that the ASF infrastructure team can maintain the
+    services, and informs users that the content is official
     and comes from the ASF and the project's PMC, and not from a third party.
 
   - The homepage for any *ProjectName* must be served from
-    `http[s]://ProjectName.apache.org`, both to ensure consistent branding
+    `http[s]://ProjectName.apache.org`, to ensure consistent branding
     and to allow for automatically generated links (like
     [https://projects.apache.org](https://projects.apache.org)). All
     primary links to the project as a whole must point directly to the
     homepage, and not to alternative sites or domains.
 
-  - Projects are free to use any [infrastructure supported
+  - Projects are free to use any [infrastructure-supported
     technology][1] to manage and deploy their websites, and are
     free to use any look and feel in its design. In the future, we
     may ask projects to add a specific style or graphical element
@@ -72,7 +72,7 @@ function of the software product itself. For example:
 implementation of the XML 1.0 parsing specification, and is easily configurable and
 compliant with current standards.
 
-This description is useful for new readers to your page, and helps the ASF to maintain an overall list of trademarks for our
+This description is useful for new readers to your page, and helps the ASF maintain an overall list of trademarks for our
 software products. A trademark is only important when associated with a
 specific kind of goods: in our case with the actual downloadable software products
 that the ASF and our PMCs provide.
@@ -138,7 +138,7 @@ project, and is part of a larger community of developers and users.
 
 If you have suggestions for the texts for links pointing back to
 the main ASF pages that better fit with
-your project's web presence, please let trademarks@ know.
+your project's web presence, please let `trademarks@` know.
 
 **Including "Thanks" links to third parties** - if your project
 typically has companies that donate software licenses or support to
@@ -178,11 +178,11 @@ next to the **first** main occurrence of the "Apache Foo" project name, both
 in header/title text and at the name's first appearance in running text.
 This highlights our trademark claim and emphasizes its importance to us.
 
-  - <a id="othermarks"></a>Proper attribution must be given to any other
-organization's trademarks that are referred to on our websites. All non-ASF
+  - <a id="othermarks"></a>You must give proper attribution to any other
+organization's trademarks that your website refers to. All non-ASF
 trademarks must be attributed to their owners when displayed on ASF project
-websites. This may be done specifically, for each referred mark, or
-generically, and is typically done in the footer of a webpage. For a
+websites. You may do this specifically for each referred mark, or
+generically; it is typically done in the footer of a webpage. For a
 specific example:
 
 >FooBar and the FooBar logo are trademarks of Yoyodyne, Inc.
@@ -194,7 +194,7 @@ other organizations' marks), you can add instead:
 >All other marks mentioned may be trademarks or registered trademarks of
 their respective owners.
 
-# Logos And Graphics Policy  {#graphics}
+# Logos and Graphics Policy  {#graphics}
 
   - <a id="marklogo"></a>Logos are important to recognize as trademarks as
 well. For the project's official logo (if it has one, and especially if it
@@ -203,15 +203,14 @@ graphic or immediately adjacent to it. For pages that include the project
 logo on them, ensure you mention "... and the Project logo are
 trademarks..." in the attribution.
 
-  - Projects may choose to use the Apache feather in their logo if they
-wish. For details on the proper [Apache visual identity and feather graphics][3],
+  - Projects may choose to use the Apache feather in their logo. For details on the proper [Apache visual identity and feather graphics][3],
 please work with press@.
 
 # Powered By... Logos  {#poweredby}
 
 We encourage projects to create a variation of their main logo as a
-"Powered By..." or " *Project* Inside" logo. This logo may be used by third
-parties to denote that they build products or services using the associated
+"Powered By..." or " *Project* Inside" logo. Third parties may use this logo
+to denote that they build products or services using the associated
 product. While we must ensure that the main product logo is associated with
 the actual product that the Apache project provides, we allow third parties
 to [more broadly use "Powered by..." logos](//www.apache.org/foundation/marks/faq/#poweredby)
@@ -241,8 +240,7 @@ appropriate, since it improperly uses the trademark "Perl". A better
 project name would be "Apache Xerces for Perl". The ASF could
 allow a third party named FooBar to ship a software product called "FooBar
 Software for Apache Xerces" or "BarFoo Services for Apache Xerces". The ASF
-would not allow "FooBar Xerces" or "BarFoo Xerces" forms of a name to be
-used by FooBar, since Xerces is our trademark. The same applies to the use
+would not allow Foobar to use "FooBar Xerces" or "BarFoo Xerces" forms of a name, since Xerces is our trademark. The same applies to the use
 of the word "Perl" (which is [a trademark of The Perl
 Foundation](https://www.perlfoundation.org/trademarks.html) ).
 
@@ -260,7 +258,7 @@ official project content.  The content must be migrated, or the domain
 registration must be transferred to the ASF.
 
 **If** a new community coming to the Apache Incubator has a long history 
-of using an existing domain name, and has a significant userbase, then 
+of using an existing domain name, and has a significant userbase, 
 the podling may *request* to keep these names for **limited uses**
 once the podling graduates to TLP.
 
@@ -270,7 +268,7 @@ once the podling graduates to TLP.
   to formally transfer any needed domain name registrations to the ASF.
   As a non-profit, the ASF expects that these will be donated.  
   Create an INFRA Jira ticket to officially request that the
-  ASF take over the donated domain name ownership.
+  ASF take over ownership of the donated domain namep.
   
 - The PPMC should send their plan of how they intend to use their 
   non-apache.org domains to Brand Management/trademarks@ for approval.
@@ -289,7 +287,7 @@ must be hosted at *ProjectName*.apache.org.
 - Major links promoting the project to likely contributors should always
 point to *ProjectName*.apache.org resources directly, and not to non-apache.org domains.
 
-- In most cases, non-apache.org domains should simply redirect to some place within
+- In most cases, non-apache.org domains should simply redirect to some place within the
 ProjectName.apache.org/path domain, unless the podling has *each* of these really
 good reasons to use a non-apache.org domain:
 
@@ -300,8 +298,7 @@ communities long before the project came to the ASF.
 
 -- The domain is Apache branded in appearance just as a.o sites are,
 and offers clear and prominent links directly to project.a.o/path for
-all likely contributor topics, like downloads, API docs, mailing lists,
-etc. etc.
+all likely contributor topics, like downloads, API docs, and mailing lists.
 
 **Examples of non-apache.org domain approvals**
 
