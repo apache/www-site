@@ -472,6 +472,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | reinhard | Reinhard Poetz |
 | remm | Remy Maucherat | [Jakarta](http://jakarta.apache.org/)|
 | reschke | Julian Reschke |
+| resmo | [René Moser](https://www.renemoser.net) | [CloudStack](https://cloudstack.apache.org/) |
 | reto | Reto Bachmann-Gmür | [clerezza](http://clerezza.apache.org), [stanbol](http://stanbol.apache.org) |
 | rfeng | [Raymond Feng (aka. Zhaohui Feng)](http://www.enjoyjava.com/) | [Tuscany](http://tuscany.apache.org/), [Wink](http://incubator.apache.org/wink/), [Nuvem](http://incubator.apache.org/nuvem/)|
 | rfrovarp | Richard Frovarp |
