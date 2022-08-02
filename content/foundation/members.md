@@ -52,6 +52,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | ab | Andrzej Bialecki |
 | abaker | Anthony Baker | [Geode](https://geode.apache.org) |
 | abayer | Andrew Bayer | [Whirr](http://whirr.apache.org), [Bigtop](http://bigtop.apache.org), [jclouds](http://jclouds.incubator.apache.org)|
+| abti | Abhishek Tiwari | [Gobblin](https://gobblin.apache.org) |
 | acmurthy | Arun Murthy |
 | adc | Alan D. Cabrera |
 | adelbene | [Andrea Del Bene](https://twitter.com/andreaDelBene19) | [Wicket](http://wicket.apache.org/) |
