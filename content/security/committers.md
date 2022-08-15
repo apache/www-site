@@ -108,8 +108,11 @@ their own system, and no more. Announcments do not normally include steps to rep
 12. The project team provides the reporter with a copy of the fix and the
 draft vulnerability announcement for comment.
 
-13. The project team agrees on the fix, the announcement and the release
-schedule with the reporter.
+13. The project team agrees on the fix, the announcement, and the
+release schedule with the reporter.  If the reporter is unresponsive
+in a reasonable timeframe this should not block the project team from
+moving to the next steps, particularly if an issue is of high severity
+or impact.
 
 14. The project team commits the fix. Do **not** make any reference that the commit relates to a security vulnerability.
 
