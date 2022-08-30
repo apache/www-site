@@ -369,6 +369,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | luke1410 | [Stefan Hett](http://www.luke1410.de/) | [Subversion](https://subversion.apache.org/) ; [APR](https://apr.apache.org/) |
 | lukehan | Luke Han | [Kylin](http://kylin.apache.org)|
 | lvjing | Jing Lv |
+| madhawa | Madhawa Gunasekara | [Gora](http://gora.apache.org), [Incubator](http://incubator.apache.org/) |
 | mads | [Mads Toftum](http://www.toftum.org/) | [httpd-docs](http://httpd.apache.org/docs-project/)|
 | magicaltrout | Tom Barber | [OODT](http://oodt.apache.org) |
 | manoj | [Manoj Kasichainula](http://www.io.com/~manojk/) | [httpd](http://httpd.apache.org/)|
