@@ -14,7 +14,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <h1 style="text-align: center;">Platinum Sponsors:</h1> <!-- 400x179 --> <!-- Platinum images should be exact size for CSS -->
    <div class="sponsors">
    <ul id='platinum'>
-       <li><a target="_blank" rel="sponsored" href="https://opensource.apple.com/"><img src="images/apple-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Apple</p></li>
+       <li><a target="_blank" rel="sponsored" href="https://www.apple.com/"><img src="images/apple-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Apple</p></li>
       <li><a target="_blank" rel="sponsored" href="https://aws.amazon.com/"><img src="images/aws-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Amazon Web Services</p></li>
       <li><a target="_blank" rel="sponsored" href="http://facebook.com/"><img src="images/facebook.png"/></a><p style="text-align: center; font-weight: bold;">Facebook</p></li>
       <li><a target="_blank" rel="sponsored" href="http://google.com/"><img src="images/google.png"/></a><p style="text-align: center; font-weight: bold;">Google</p></li>
