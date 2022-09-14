@@ -20,7 +20,7 @@ to Apache projects that require it.
 
 Projects with known, published vulnerabilities should provide information
 about those vulnerabilities on pages such as the
-[httpd security pages](http://httpd.apache.org/security_report.html). Provide a clear link on the project's home page to the
+[httpd security pages](https://httpd.apache.org/security_report.html). Provide a clear link on the project's home page to the
 security information.
 
 Do not enter details of security vulnerabilities in a project's public bug
@@ -29,7 +29,7 @@ the issue to only the reporter and the project team.
 
 <h2 id="lists">Project-specific security mailing lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
 
-Projects may wish to create a project-specific security mailing list.
+Projects may wish to create a [project-specific security mailing list](projects.md).
 These take the name in the form `security@project.apache.org`, like
 `security@tomcat.apache.org`.
 
@@ -99,7 +99,7 @@ vulnerability.
 11. The project team documents the details of the vulnerability and the fix on the
 internal portal. The portal generates draft announcement texts.  For
 an example of an announcement see [Tomcat's announcement of
-CVE-2008-2370](http://markmail.org/message/w7mdjdxeqius7d6l). The
+CVE-2008-2370](https://markmail.org/message/w7mdjdxeqius7d6l). The
 level of detail to include in the report is a matter of
 judgement. Generally, reports should contain enough information to
 enable people to assess the risk the vulnerability poses for
@@ -136,7 +136,7 @@ or impact.
     c. the project's security list (or `security@apache.org` if the project does
 not have a dedicated security list)
 
-    d. `oss-security@lists.openwall.com` ([subscription not required](http://oss-security.openwall.org/wiki/mailing-lists)).
+    d. `oss-security@lists.openwall.com` ([subscription not required](https://oss-security.openwall.org/wiki/mailing-lists)).
 
 This is the first point that any information regarding the vulnerability is made public.
 
