@@ -270,6 +270,7 @@ You may NOT include the following licenses within Apache products:
         - [Redis Source Available License (RSAL)](https://redislabs.com/community/licenses/)
         - [Booz Allen Public License](http://boozallen.github.io/licenses/bapl)
         - [Confluent Community License Version 1.0](https://www.confluent.io/confluent-community-license/)
+        - [Business Source License 1.1](https://spdx.org/licenses/BUSL-1.1.html)
         - Any license including the [Commons Clause License Condition v1.0](https://commonsclause.com)
     - Non-commercial licenses:
         - [Creative Commons Non-Commercial](https://en.wikipedia.org/wiki/Creative_Commons_license#Non-commercial_licenses) variants
