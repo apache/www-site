@@ -89,6 +89,12 @@ that replace default functionality in the Apache project MUST be provided
 via separate packages unless the Apache project has approved their
 inclusion in the distribution.
 
+### Bugs / security issues
+
+Downstream software distributors must provide contact details for reporting bugs
+and security vulnerabilities in the changes and/or additions included in the
+distribution.
+
 ## Usage Examples  {#examples}
 
 Based on the above policy, the following usages would be acceptable unless
@@ -156,7 +162,7 @@ third party products, services, or events.**
 
 ## Policy Version  {#version}
 
-This is version 0.4 of this draft Apache policy document, published in June 2020.
+This is version 0.5 of this draft Apache policy document, published in September 2022.
 
 Material changes will be marked with a new version number.
 
