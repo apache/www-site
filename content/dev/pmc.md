@@ -150,9 +150,9 @@ get their account created, the PMC chair ensures
 the new committer has [karma](#newcommitter) (access) to the project repositories.
 
 ### Send NOTICEs and followup when adding PMC members
-The chair is responsible for sending the 72-hour
-NOTICE email to the board, then updating [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)
- and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmc).
+The chair is responsible for sending the NOTICE email to the board, then
+updating [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)
+and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmc).
 
 ### Maintain ASF records on the PMC roster
 Maintain information about your PMC's composition in the SVN "committers" repository
