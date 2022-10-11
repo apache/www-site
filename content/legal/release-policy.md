@@ -35,7 +35,9 @@ information about voting.
 For a release vote to pass, a minimum of three positive binding votes and more
 positive binding votes than negative binding votes MUST be cast.  Releases may
 not be vetoed.  Votes cast by PMC members are binding, however, non-binding votes
-are greatly encouraged and a sign of a healthy project.
+are greatly encouraged and a sign of a healthy project.  See 
+[expressing votes](../foundation/voting.html#expressing-votes-1-0-1-and-fractions) 
+for details on what constitutes positive and negative votes.
 
 Before casting +1 binding votes, individuals are REQUIRED to download all
 signed source code packages onto their own hardware, verify that they meet all

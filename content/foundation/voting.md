@@ -89,6 +89,8 @@ if everyone else wants to go ahead with it.'
 
 - +0.9: 'This is a cool idea and i like it, but I don't have time/the
 skills necessary to help out.'
+  
+Votes from PMC Members on releases must use +1, 0, -1 to be considered binding.
 
 Voting periods should generally run for at least 72 hours to provide
 an opportunity for all concerned persons to participate, regardless of their
