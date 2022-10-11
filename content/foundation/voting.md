@@ -36,7 +36,8 @@ or the proposal simply languishes as an open issue until someone gets around to 
 
 Votes on whether a **package** is ready to release use yet a
 different mechanism: are there are least three binding votes in favour of
-the release? See more about this [below](#ReleaseVotes).
+the release? See the [release policy](../legal/release-policy.html#release-approval) 
+for more information on voting and requirements for binding votes.
 
 ## Binding votes
 

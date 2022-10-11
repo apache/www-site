@@ -29,9 +29,9 @@ More narrowly, an official Apache release is one which has been endorsed as an
 
 Each PMC MUST obey the ASF requirements on approving any release.
 
-For a release vote to pass, a minimum of three positive votes and more
-positive than negative votes MUST be cast.  Releases may not be vetoed.
-Votes cast by PMC members are binding.
+For a release vote to pass, a minimum of three positive binding votes and more
+positive binding votes than negative binding votes MUST be cast.  Releases may
+not be vetoed.  Votes cast by PMC members are binding.
 
 Before casting +1 binding votes, individuals are REQUIRED to download all
 signed source code packages onto their own hardware, verify that they meet all
