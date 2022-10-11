@@ -29,6 +29,9 @@ More narrowly, an official Apache release is one which has been endorsed as an
 
 Each PMC MUST obey the ASF requirements on approving any release.
 
+See the [ASF voting process](../foundation/voting.html) page for general
+information about voting.
+
 For a release vote to pass, a minimum of three positive binding votes and more
 positive binding votes than negative binding votes MUST be cast.  Releases may
 not be vetoed.  Votes cast by PMC members are binding, however, non-binding votes
@@ -302,11 +305,10 @@ licensing FAQ](#license).
 
 #### What are the ASF requirements on approving a release?  {#approving-a-release}
 
-Votes on whether a package is ready to be released use 
-[majority approval](/foundation/glossary.html#MajorityApproval) -- 
-i.e., at least three PMC members must vote affirmatively
-for release, and there must be more positive than negative votes.
-Releases may not be vetoed. Before voting +1 PMC members are required
+Release votes happen as described above in the
+[release approval](#release-approval) section.
+
+Before voting +1 PMC members are required
 to download the signed source code package, compile it as provided, and test the 
 resulting executable on their own platform, along with also verifying that the 
 package meets the requirements of the ASF policy on releases.
