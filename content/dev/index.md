@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 ## Overview {#intro}
 
-Here is a directory of technical details pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
+Here are resources pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
 
 If you can't find information here, ask on your project's mailing list, or contact the [Community Development](http://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
 
@@ -25,14 +25,19 @@ If you can't find information here, ask on your project's mailing list, or conta
 
 ## Apache Infrastructure  {#infrastructure}
 
-- High-level notes on [Apache Infrastructure](infrastructure.html)
-    - More detailed information on <a href="https://infra.apache.org/" target="_blank">services and tools</a> that the Infrastructure team (Infra) supports for projects
-    - <a href="https://cwiki.apache.org/confluence/display/INFRA/Index" target="_blank">Scripts, how-tos, and technical information</a>
-- How to become an <a href="https://infra.apache.org/infra-volunteer.html" target="_blank">Infra Volunteer</a>
-- <a href="https://infra.apache.org/contact.html" target="_blank">Contacting Infra and requesting resources</a>
-- <a href="https://status.apache.org/" target="_blank">Host and service status monitor</a>. Infa has already been alerted if a service shows as down.
-- <a href="https://infra.apache.org/machines.html" target="_blank">Machine and host list</a> of Apache servers
-- <a href="https://infra.apache.org/infra-ban.html" target="_blank">Site-wide ban policy</a>
+Here are links to high-level information about The ASF's infrastructure, and the Infrastructure team (Infra) that maintains it.
+
+<a href="https://infra.apache.org/" target="_blank">infra.apache.org</a> has more detailed information for projects, contributors, and committers:
+
+  - <a href="https://infra.apache.org/policies.html">Policies and guidelines</a> 
+  - <a href="https://infra.apache.org/services.html">Services and tools for projects</a>
+  - How to become an <a href="https://infra.apache.org/infra-volunteer.html" target="_blank">Infra Volunteer</a>
+  - <a href="https://status.apache.org/" target="_blank">Host and service status monitor</a>. Infa has already been alerted if a service shows as down.
+  - <a href="https://infra.apache.org/machines.html" target="_blank">Machine and host list</a> of Apache servers
+
+Infra's <a href="https://cwiki.apache.org/confluence/display/INFRA/Index" target="_blank">Confluence Wiki area</a> has detailed technical information, script snippets, and other resources to help Project Management Committees do what they need to do.
+
+If you cannot find the resource or guidance you need, <a href="https://infra.apache.org/contact.html" target="_blank">contact Infra</a>.
 
 ## Committers and Contributors  {#committers}
 
