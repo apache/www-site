@@ -103,7 +103,7 @@ CVE-2008-2370](http://markmail.org/message/w7mdjdxeqius7d6l). The
 level of detail to include in the report is a matter of
 judgement. Generally, reports should contain enough information to
 enable people to assess the risk the vulnerability poses for
-their own system, and no more. Announcements do not normally include steps to reproduce the vulnerability or links to the exact fix.
+their own system, and no more. Announcements do not normally include steps to reproduce the vulnerability.
 
      Optionally, you can put the CVE into the `REVIEW` state to request a
      review from the Security team. You can discuss the disclosure
@@ -144,7 +144,7 @@ This is the first point that any information regarding the vulnerability is made
 
 17. The project team updates the project's security pages.
 
-18. Add the link to the public announcement on the mailinglist as a 'reference' of type `CONFIRM` in the CVE.
+18. Add the link to the public announcement on the mailinglist as a 'reference' in the CVE.
     This notifies the security team, which will submit the information to the CVE project.
 
 19. If the project repository is in Subversion, add the CVE ID to the log for the commit that applied the fix. Do **not** try to do this if your project uses a Git repository, as editing a pushed commit causes all sorts of problems.
