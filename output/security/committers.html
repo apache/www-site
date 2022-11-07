@@ -410,7 +410,11 @@ CVE-2008-2370</a>. The
 level of detail to include in the report is a matter of
 judgement. Generally, reports should contain enough information to
 enable people to assess the risk the vulnerability poses for
-their own system, and no more. Announcments do not normally include steps to reproduce the vulnerability.</p>
+their own system, and no more. Announcements do not normally include steps to reproduce the vulnerability.</p>
+<p>Optionally, you can put the CVE into the <code>REVIEW</code> state to request a
+review from the Security team. You can discuss the disclosure
+using the 'comment' feature, which also sends the comments to the
+relevant private mailing list(s).</p>
 </li>
 <li>
 <p>The project team provides the reporter with a copy of the fix and the
@@ -433,10 +437,9 @@ or impact.</p>
 <h3 id="announce">Announce<a class="headerlink" href="#announce" title="Permalink">&para;</a></h3>
 <ol start="16">
 <li>
-<p>The project team announces the vulnerability and the fix. The vulnerability
-announcement should be sent after, or at the same time as, the release announcement to the
-following destinations.  The internal portal generates texts that can be used for
-the emails and can send the emails if required.</p>
+<p>After (or at the same time as) the release announcement, the project team announces the vulnerability and the fix.
+Set the CVE status to <code>READY</code> in the <a href="https://cveprocess.apache.org">internal portal</a>. You can then use the portal to send the emails.
+The vulnerability announcement should be sent to the following destinations:</p>
 <p>a. the same destinations as the release announcement</p>
 <p>b. the vulnerability reporter</p>
 <p>c. the project's security list (or <code>security@apache.org</code> if the project does
@@ -444,15 +447,15 @@ not have a dedicated security list)</p>
 <p>d. <code>oss-security@lists.openwall.com</code> (<a href="http://oss-security.openwall.org/wiki/mailing-lists">subscription not required</a>).</p>
 </li>
 </ol>
+<p>This is the first point that any information regarding the vulnerability is made public.</p>
 <h3 id="complete">Complete<a class="headerlink" href="#complete" title="Permalink">&para;</a></h3>
 <ol start="17">
 <li>
 <p>The project team updates the project's security pages.</p>
 </li>
 <li>
-<p>Set the status of the vulerability to 'READY' in the internal portal. This notifies the
-security team, which will submit the information to the CVE project.</p>
-<p>This is the first point that any information regarding the vulnerability is made public.</p>
+<p>Add the link to the public announcement on the mailinglist as a 'reference' in the CVE.
+This notifies the security team, which will submit the information to the CVE project.</p>
 </li>
 <li>
 <p>If the project repository is in Subversion, add the CVE ID to the log for the commit that applied the fix. Do <strong>not</strong> try to do this if your project uses a Git repository, as editing a pushed commit causes all sorts of problems.</p>
