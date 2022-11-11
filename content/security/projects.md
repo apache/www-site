@@ -37,6 +37,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache Pulsar](https://github.com/apache/pulsar/security/policy) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Santuario](https://santuario.apache.org/secadv.html) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Sentry](https://cwiki.apache.org/confluence/display/SENTRY/Vulnerabilities+found+in+Apache+Sentry) | [Apache Sentry Security Team](mailto:security@sentry.apache.org) |
+|  [Apache ShardingSphere](https://shardingsphere.apache.org/community/en/security/) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Shiro](https://shiro.apache.org/security-reports.html)  |  [Apache Shiro Security Team](mailto:security@shiro.apache.org)  |
 |  [Apache SINGA](https://singa.apache.org/security.html) | [Apache SINGA Security Team](mailto:security@singa.apache.org) |
 |  [Apache Sling](https://sling.apache.org/site/security.html)  |  [Apache Sling Security Team](mailto:security@sling.apache.org)  |
