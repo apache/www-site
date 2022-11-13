@@ -265,6 +265,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | humbedooh | Daniel Gruno | [httpd](https://httpd.apache.org/), [Traffic Server](https://trafficserver.apache.org), [Kibble](https://kibble.apache.org), [STeVe](https://steve.apache.org), [Pony Mail](https://ponymail.apache.org) |
 | huxing | Huxing Zhang | [Tomcat](http://tomcat.apache.org), [Dubbo](http://dubbo.apache.org) |
 | hwright | [Hyrum K. Wright](http://www.hyrumwright.org/) |
+| hxd | Xiangdong Huang | [IoTDB](https://iotdb.apache.org) |
 | hyunsik | Hyunsik Choi | [Tajo](http://tajo.apache.org) |
 | ieb | [Ian Boston](http://www.tfd.co.uk/) | [Sling](http://sling.apache.org/),  [Shindig](http://shindig.apache.org)|
 | iemejia | [Ismaël Mejía](https://ismaelmejia.com/) | [Beam](https://beam.apache.org/) |
