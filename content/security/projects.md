@@ -11,6 +11,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 | Apache project security page | Security Contact |
 |-----------------------|------------------|
 |  [Apache Portable Runtime (APR)](https://apr.apache.org/security_report.html)  |  [Apache Security Team](mailto:security@apache.org)  |
+|  Apache Ambari |  [Apache Ambari Security Team](mailto:security@ambari.apache.org)  |
 |  [Apache Ant](https://ant.apache.org/security.html)  |  [Apache Security Team](mailto:security@apache.org)  |
 |  [Apache Camel](https://camel.apache.org/security/) |  [Apache Security Team](mailto:security@apache.org)  |
 |  [Apache CloudStack](https://cloudstack.apache.org/security.html)  |  [Apache Security Team](mailto:security@apache.org)  |
