@@ -24,7 +24,7 @@ Note that a [Dockerfile](../Dockerfile) is also available to build www-site with
   - pelican-gfm/gfm.py
   - pelican-build.py
 
-  Note that the GitHub repostory is private to the ASF, so only ASF committers with an associated GitHub login can access it.
+  Note that the GitHub repository is private to the ASF, so only ASF committers with an associated GitHub login can access it.
   If you don't have such a login set up, GitHub will respond with status 404 - File not found
   
 2. Build cmark-gfm
