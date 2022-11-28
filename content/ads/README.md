@@ -1,6 +1,6 @@
 # README
 
-When updating these files, please also check whether you need to update the content/events direcory.
+When updating these files, please also check whether you need to update the content/events directory.
 
 Also, please update the "projects" website at:
 
