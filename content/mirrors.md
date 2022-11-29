@@ -1,4 +1,4 @@
-Title: How to become a mirror!
+Title: Apache Mirrors
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 
