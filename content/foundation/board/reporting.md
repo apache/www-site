@@ -219,14 +219,14 @@ all Apache Board reports become public, usually a month or two after the board m
 Such information is welcome in your report, but please include it within
 
 ``` 
- &lt;private> <br/>
- ```
+<private>
+```
  and
  
- ```
- &lt;/private> <br/>
- ```
- markers, **each on a separate line**, so we know what to omit from the public minutes.  To verify that the private 
+```
+</private>
+```
+markers, **each on a separate line**, so we know what to omit from the public minutes.  To verify that the private 
 markers are working, post your report in Whimsy, then refresh the page.  
 Private sections properly marked appear with a grey background.
 
