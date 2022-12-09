@@ -30,6 +30,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <h1 style="text-align: center;">Gold Sponsors:</h1>  <!-- 223x100 --> <!-- Gold images should be exact size for CSS -->
    <div class="sponsors">
    <ul id='gold'>
+      <li><a target="_blank" rel="sponsored" href="https://aiven.io/"><img src="images/aiven-gold.png"/></a><p style="text-align: center; font-weight: bold;">Aiven</p></li>
       <li><a target="_blank" rel="sponsored" href="https://apache.org/"><img src="images/blank.png"/></a><p style="text-align: center; font-weight: bold;">Anonymous</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.baidu.com/"><img src="images/baidu.png"/></a><p style="text-align: center; font-weight: bold;">Baidu</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.TechAtBloomberg.com/opensource"><img src="images/bloomberg-gold.png"/></a><p style="text-align: center; font-weight: bold;">Bloomberg</p></li>
@@ -41,6 +42,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://oceanx.org/"><img src="images/oceanx-gold.png"/></a><p style="text-align: center; font-weight: bold;">OceanX</p></li>
       <li><a target="_blank" rel="sponsored" href="https://opensource.salesforce.com/"><img src="images/salesforce-gold.png"/></a><p style="text-align: center; font-weight: bold;">Salesforce</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.union-investment.de/"><img src="images/union-gold.png"/></a><p style="text-align: center; font-weight: bold;">Union Investment</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.visa.com/"><img src="images/visa-gold.png"/></a><p style="text-align: center; font-weight: bold;">VISA</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.workday.com/"><img src="images/workday-gold.png"/></a><p style="text-align: center; font-weight: bold;">Workday</p></li>
    </ul>
    </div>
