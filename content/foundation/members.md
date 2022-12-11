@@ -519,7 +519,6 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | sctemme | [Sander Temme](http://www.temme.net/sander/) | [httpd](http://httpd.apache.org/) ; [Gump](http://gump.apache.org/) ; [Labs](http://labs.apache.org/) ; Infrastructure|
 | sdeboy | Scott Deboy |
 | seade | Scott Eade | [DB](http://db.apache.org/) , [Jakarta](http://jakarta.apache.org/) , [Turbine](http://turbine.apache.org/)|
-| sebb | Sebastian Bazley | [JMeter](http://jmeter.apache.org/) , [HttpComponents](http://hc.apache.org/) , [Commons](http://commons.apache.org/), [Creadur](http://creadur.apache.org/)|
 | sebgoa | [Sebastien Goasguen](http://sebgoa.blogspot.com) | [CloudStack](http://cloudstack.apache.org) , [Libcloud](http://libcloud.apache.org)|
 | sebor | Martin Sebor |
 | seelmann | Stefan Seelmann |  [Directory](http://directory.apache.org/)|
