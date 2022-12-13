@@ -381,7 +381,6 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | markt | Mark Thomas |
 | marrs | Marcel Offermans | [ACE](http://incubator.apache.org/ace) ; [Felix](http://felix.apache.org/)|
 | martin | Martin Kraemer | [httpd](http://httpd.apache.org/) ; [PHP](http://www.php.net/)|
-| martinc | Martin Cooper | [Jakarta](http://jakarta.apache.org/) , [Struts](http://struts.apache.org/)|
 | mattmann | [Chris A. Mattmann](http://sunset.usc.edu/~mattmann/) | [Tika](http://lucene.apache.org/tika/) ; [Nutch](http://lucene.apache.org/nutch/) ; [Lucene](http://lucene.apache.org/) ; [OODT](http://incubator.apache.org/projects/oodt.html) ; [SIS](http://incubator.apache.org/projects/sis.html)|
 | mattsicker | Matt Sicker | [Logging](https://logging.apache.org/) |
 | matzew | [Matthias Wessendorf](http://matthiaswessendorf.wordpress.com/) |
@@ -682,6 +681,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | keiron | Keiron Liddle |
 | lrosen | Lawrence Rosen |
 | marc | Marc Slemko |
+| martinc | Martin Cooper |
 | marvin | Marvin Humphrey | [Lucy](http://incubator.apache.org/lucy/), [Incubator](http://incubator.apache.org/)|
 | morgand | [Morgan Delagrange](http://home.apache.org/~morgand/) |
 | nicolaken | Nicola Ken Barozzi |
