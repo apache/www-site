@@ -279,12 +279,15 @@ See also [why would a project move to the Attic?](pmc.html#move-to-attic), above
 
 ### How to add a PMC member  {#newpmc}
 
-PMC members are usually elected by a vote of the PMC held on the project's private
-list, according to the [ASF voting rules](/foundation/voting).
+The usual process for adding a member to a PMC is to:
 
-If the PMC has become too small to get the usual 3 +1 votes, the PMC chair can submit
-a notice for a new PMC member to the Board, as described below, without having been able
-to run a successful vote due to lack of quorum. In such a case, the Board would only
+  * Elect the new member by having the PMC vote on the project's private list, according to the [ASF voting rules](/foundation/voting)
+  * Follow the below process to finalize the nomination.
+
+In specific cases, however, such as low PMC participation preventing the number
+of required votes from being reached, or the PMC chair being unavailable for an
+extended period of time, PMC members can ask the Board to make the necessary
+changes to the PMC without a prior vote. In such a case, the Board would only
 be concerned if there is opposition within the PMC.
 
 #### Send the board a NOTICE of the vote to add someone
