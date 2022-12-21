@@ -287,7 +287,7 @@ The usual process for adding a member to a PMC is to:
 In specific cases, however, such as low PMC participation preventing the number
 of required votes from being reached, or the PMC chair being unavailable for an
 extended period of time, PMC members can ask the Board to make the necessary
-changes to the PMC without a prior vote. In such a case, the Board would only
+changes to the PMC without a successful vote. In such a case, the Board would only
 be concerned if there is opposition within the PMC.
 
 #### Send the board a NOTICE of the vote to add someone
