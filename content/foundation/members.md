@@ -70,6 +70,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | amaniatis | Aristedes Maniatis | [Cayenne](http://cayenne.apache.org/)|
 | amareshwari | Amareshwari Sriramadasu | [Hadoop](http://hadoop.apache.org/) , [Falcon](http://falcon.apache.org/),  [Hive](http://hive.apache.org/), [Lens](http://lens.apache.org) |
 | andreww | [Andrew Wetmore](mailto:andreww@apache.org) | [Royale](https://royale.apache.org), Infra |
+| andywenk | [Andy Wenk](mailto:andywenk@apache.org) | [CouchDB](https://couchdb.apache.org), PMC |
 | angela | Angela Schreiber | [Jackrabbit](http://jackrabbit.apache.org/)|
 | anshum | Anshum Gupta | [Lucene](http://lucene.apache.org/), [Solr](http://solr.apache.org/) |
 | antelder | Ant Elder |
