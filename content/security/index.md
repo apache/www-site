@@ -27,7 +27,7 @@ security problem in an Apache project.**
 
 **Also note that the security team handles vulnerabilities in Apache projects,
 not running ASF services. Send reports of vulnerabilities in ASF
-services to root@apache.org.**
+services to root@apache.org. (This includes issues with apache.org websites)**
 
 The general security mailing list address is:
 [security@apache.org](mailto:security@apache.org). This is a private
