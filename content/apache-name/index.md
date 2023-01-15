@@ -6,7 +6,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 The Apache Software Foundation (ASF) was incorporated in 1999 by original members of the Apache Group, 21 individuals from around the world who oversaw the development of the Apache HTTP Server, which was created in 1995.
 
-Co-founder Brian Behlendorf first used the name “Apache” for the server. The name “Apache” was chosen out of reverence and appreciation for the people and tribes who refer to themselves as “Apache”—the Fort Sill Apache, the Jicarilla Apache, the Mescalero Apache, the Lipan Apache, the Plains Apache, the San Carlos Apache, the Tonto Apache, the White Mountain Apache and the Yavapai Apache.
+Co-founder Brian Behlendorf first used the name “Apache” for the server. The name “Apache” shows appreciation for the people and tribes who refer to themselves as “Apache”.  These are the Fort Sill Apache, the Jicarilla Apache, the Mescalero Apache, the Lipan Apache, the Plains Apache, the San Carlos Apache, the Tonto Apache, the White Mountain Apache and the Yavapai Apache.
 
 As the Apache HTTP Server grew from patches applied to the NCSA Server, a pun on the name quickly spread amongst members of the community, with the rumor being that “Apache” actually stood for “a ‘patchy’ server”. As time passed, the popularity of the “A Patchy Server” story grew: rumor became lore, and lore became legend.
 
