@@ -77,9 +77,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
           <li role="presentation"><a href="#digital" aria-controls="digital" role="tab" data-toggle="tab">Using *Pay online digital payments</a>
           <li role="presentation"><a href="#ach" aria-controls="ach" role="tab" data-toggle="tab">Using ACH bank payments</a></li>
           <li role="presentation"><a href="#apacheSwag" aria-controls="apacheSwag" role="tab" data-toggle="tab">Buy Apache-branded swag</a></li>
-          <li role="presentation"><a href="#smileAmazon" aria-controls="smileAmazon" role="tab" data-toggle="tab">Shop smile.amazon.com</a></li>
           <li role="presentation"><a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab">With PayPal</a></li>
-          <li role="presentation"><a href="#amazon" aria-controls="amazon" role="tab" data-toggle="tab">With Amazon</a></li>
           <li role="presentation"><a href="#check" aria-controls="check" role="tab" data-toggle="tab">Mail us a check</a></li>
         </ul>
       </div>
