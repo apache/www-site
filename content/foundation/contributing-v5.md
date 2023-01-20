@@ -54,25 +54,9 @@ license: https://www.apache.org/licenses/LICENSE-2.0
     </a>
   </td>
   <td style="border: 1px solid black; background-color: white; padding: 10px;">
-    <a href=#Amazon>
-      <div style="height:100%;width:100%">
-        <img border=0 width=235 alt="Donate via Amazon" src=/images/ASF-Giving-Bars-Amazon.png>
-        <br><br>&nbsp;
-      </div>
-    </a>
-  </td>
-  <td style="border: 1px solid black; background-color: white; padding: 10px;">
     <a href=#Bitcoin>
       <div style="height:100%;width:100%">
         <img border=0 width=235 alt="Donate via Bitcoin" src=/images/ASF-Giving-Bars-Bitcoin.png>
-        <br><br>&nbsp;
-      </div>
-    </a>
-  </td>
-  <td style="border: 1px solid black; background-color: white; padding: 10px;">
-    <a href=https://smile.amazon.com/gp/chpf/homepage/ref=smi_se_scyc_srch_stsr?q=apache+software+foundation&orig=%2F target=_blank>
-      <div style="height:100%;width:100%">
-        <img border=0 width=235 alt="Shop with Amazon Smile" src=/images/ASF-Giving-Bars-SmileAmazon.png>
         <br><br>&nbsp;
       </div>
     </a>
@@ -139,15 +123,6 @@ Our Bitcoin Address is: <br/><b><kbd style="color: #36A; background: #aadcef;">1
 <br/><br/>
 Or you can reference the below QR code:</p>
 <p><img width=200 src="images/bitcoin.png"/></p>
-
-# Donate via Amazon  {#Amazon}
-
-<div style="width: 50%;">
-<script async src="https://static-na.payments-amazon.com/OffAmazonPayments/us/js/Widgets.js"></script>
-<noscript>Sorry, your browser settings do not support JavaScript!</noscript>
-<div data-ap-widget-type="expressDonationWidget" data-ap-widget-theme="ap-dark" data-ap-widget-amount-presets="5,25,50,100" data-ap-signature="JUgOpxW0Clcj26ViJ0YsVFbIRWnMEj2fRaimKGx77sY%3D" data-ap-seller-id="A3AAQXMTGPL1GN" data-ap-access-key="AKIAIOQ6IDLL52GFQ33A" data-ap-lwa-client-id="amzn1.application-oa2-client.a1c02356ef9245aa97cb16bbd6a94859" data-ap-return-url="https://www.apache.org" data-ap-currency-code="USD" data-ap-note="Thank you for your donation!" data-ap-shipping-address-required="false" data-ap-payment-action="AuthorizeAndCapture" >
-</div></p>
-</div>
 
 # Why should I donate?  {#WhyDonate}
 
