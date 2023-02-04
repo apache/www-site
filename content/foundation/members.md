@@ -205,6 +205,7 @@ N.B. the listing below is optional; there is a separate summary of  [members](ht
 | erikabele | [Erik Abele](http://www.codefaktor.de/) | [HttpComponents](http://hc.apache.org/) , [httpd](http://httpd.apache.org/) , [httpd-docs](http://httpd.apache.org/docs-project/) , [incubator](http://incubator.apache.org/) , infrastructure|
 | evansye | Evans Ye | [Bigtop](https://bigtop.apache.org/), [Ignite](https://ignite.apache.org) |
 | evenisse | Emmanuel Venisse |
+| fanningpj | PJ Fanning | [POI](https://poi.apache.org/), [Drill](https://drill.apache.org/), [Linkis](https://linkis.apache.org/), [Incubator](https://incubator.apache.org/), [Pekko](https://pekko.apache.org) |
 | farra | J. Aaron Farr |
 | fchrist | [Fabian Christ](http://home.apache.org/~fchrist/) | [Stanbol](http://stanbol.apache.org/) |
 | ffang | Freeman Yue Fang | [Cxf](http://cxf.apache.org/) ; [Servicemix](http://servicemix.apache.org/) ; [Karaf](http://karaf.apache.org/) ; [Camel](http://Camel.apache.org/) ; [Felix](http://felix.apache.org/)|
