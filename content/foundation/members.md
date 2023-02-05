@@ -609,6 +609,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | vgritsenko | [Vadim Gritsenko](http://home.apache.org/~vgritsenko/) | [Cocoon](http://cocoon.apache.org/) , [Regexp](http://jakarta.apache.org/regexp/) , [Xindice](http://xml.apache.org/xindice/)|
 | vinodkv | [Vinod Kumar Vavilapalli](http://home.apache.org/~vinodkv) | [Hadoop](http://hadoop.apache.org) ; [Ambari](http://incubator.apache.org/ambari/); [TEZ](http://incubator.apache.org/projects/tez.html)|
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|
+| vy | Volkan Yazıcı | [Logging](http://logging.apache.org/) |
 | wave | Dave Fisher | [POI](https://poi.apache.org/), [Incubator](https://incubator.apache.org/), [OpenOffice](https://openoffice.apache.org/), [Petri](https://petri.apache.org/), and others |
 | weber | Volker Weber | [MyFaces](http://myfaces.apache.org/)|
 | weimer | [Markus Weimer](http://www.markusweimer.com) | [REEF](https://reef.apache.org/) | 
