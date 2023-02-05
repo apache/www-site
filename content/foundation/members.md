@@ -42,7 +42,8 @@ is also available.
 
 ## Members of The Apache Software Foundation
 
-N.B. the listing below is optional; there is a separate summary of  [members](http://home.apache.org/committers-by-project.html#member)
+N.B. the listing below is *optional*, and is **not a complete listing**.
+There is a complete summary of the [member LDAP group](http://home.apache.org/committers-by-project.html#member)*
 
 | Id | Name | Projects |
 |----|------|----------|
