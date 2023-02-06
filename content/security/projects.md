@@ -15,7 +15,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache Ant](https://ant.apache.org/security.html)  |  [Apache Security Team](mailto:security@apache.org)  |
 |  [Apache Camel](https://camel.apache.org/security/) |  [Apache Security Team](mailto:security@apache.org)  |
 |  [Apache CloudStack](https://cloudstack.apache.org/security.html)  |  [Apache Security Team](mailto:security@apache.org)  |
-|  [Apache Commons](https://commons.apache.org/security.html) |  [Apache Security Team](mailto:security@apache.org)  |
+|  [Apache Commons](https://commons.apache.org/security.html) |  [Apache Commons Security Team](mailto:security@commons.apache.org)  |
 |  Apache CouchDB |  [Apache CouchDB Security Team](mailto:security@couchdb.apache.org)  |
 |  [Apache Fineract](https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+Security+Report)  |  [Apache Fineract Security Team](mailto:security@fineract.apache.org)  |
 |  [Apache Geronimo](https://geronimo.apache.org/security-reports.html)  |  [Apache Geronimo Security Team](mailto:security@geronimo.apache.org)  |
