@@ -1,20 +1,41 @@
+# TODO: the sources for these fixed values need to be documented
+
 # key-value pairs
 code_lines: 271M
 code_changed: 4.8B
 code_commits: 4.6M
-asf_members: 850
-# For use as nnn+ or 'more than nnn'
-asf_members_rounded: 840
-asf_committers: 8,200
+
+# index.ezmd: 'code contributors'
 asf_contributors: 49,000
+# index.ezmd: 'people involved in our communities'
 asf_people: 640,000
+# index.ezmd: Projects and Initiatives
 com_initiatives: 350
-com_projects: 300
-com_podlings: 37
+# index.ezmd
 com_downloads: ~2 Petabytes
+# index.ezmd
 com_emails: 28M
+# index.ezmd
 com_mailinglists: 1,400
+# index.ezmd: weekly page views
 com_pageviews: 286M
+
+# data sources for numbers
+pi:
+  url: https://whimsy.apache.org/public/public_ldap_people.json
+  # rounded down, so can be used as nnn+
+  asf_committers:
+    path: people_count
+    truncate: 10
+
+mi:
+  url: https://whimsy.apache.org/public/member-info.json
+  asf_members:
+    path: member_count
+  # rounded down, so can be used as nnn+
+  asf_members_rounded:
+    path: member_count
+    truncate: 10
 
 # data sources to slurp and sequence
 #   index.ezmd

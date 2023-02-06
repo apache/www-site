@@ -6,7 +6,7 @@
 
 These instructions are for building the www-site locally on either linux or macOS.
 
-Note that a [Dockerfile](../Dockerfile) is also available to build www-site without installing software (other than a container runtime) locally.
+You can use the [infrastructure-pelican Dockerfile](https://github.com/apache/infrastructure-pelican/blob/master/Dockerfile) build the website locally for testing.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Note that a [Dockerfile](../Dockerfile) is also available to build www-site with
   - pelican-gfm/gfm.py
   - pelican-build.py
 
-  Note that the GitHub repostory is private to the ASF, so only ASF committers with an associated GitHub login can access it.
+  Note that the GitHub repository is private to the ASF, so only ASF committers with an associated GitHub login can access it.
   If you don't have such a login set up, GitHub will respond with status 404 - File not found
   
 2. Build cmark-gfm
@@ -36,7 +36,7 @@ export LIBCMARKDIR=`pwd`/cmark-gfm-0.28.3.gfm.12/lib
 
 3. Clone the website repository to your system
 
-The example below assumes this is in `~/Dewvelopment/www-site`.
+The example below assumes this is in `~/Development/www-site`.
 
 4. Twitter Bearer Token
 

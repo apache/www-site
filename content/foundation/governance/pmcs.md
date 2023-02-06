@@ -56,11 +56,10 @@ and to be aware of any board concerns about the project, and are responsible for
 working with the PMC as a whole to address any board concerns.
 
 When PMCs elect new potential PMC members, the chair 
-of a project sends a NOTICE e-mail to the board. 
-After a 72 hour wait, and assuming that the candidate accepts the offer of membership,
-the PMC chair may update the official roster of the members of that PMC. The 
-process is designed to ensure that the board has explicit notification of all PMC changes; the waiting period ensures that all directors 
-have a chance to object to or comment on any proposed changes. 
+of a project sends a NOTICE e-mail to the board.  Assuming that the candidate
+accepts the offer of membership, the PMC chair may update the official roster
+of the members of that PMC. The process is designed to ensure that the board
+has explicit notification of all PMC changes. 
 
 For more details on the process, read [Adding a new PMC member](/dev/pmc.html#newpmc)
 

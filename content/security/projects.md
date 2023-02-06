@@ -11,10 +11,11 @@ To report a vulnerability in an Apache project that is not listed below, contact
 | Apache project security page | Security Contact |
 |-----------------------|------------------|
 |  [Apache Portable Runtime (APR)](https://apr.apache.org/security_report.html)  |  [Apache Security Team](mailto:security@apache.org)  |
+|  Apache Ambari |  [Apache Ambari Security Team](mailto:security@ambari.apache.org)  |
 |  [Apache Ant](https://ant.apache.org/security.html)  |  [Apache Security Team](mailto:security@apache.org)  |
 |  [Apache Camel](https://camel.apache.org/security/) |  [Apache Security Team](mailto:security@apache.org)  |
 |  [Apache CloudStack](https://cloudstack.apache.org/security.html)  |  [Apache Security Team](mailto:security@apache.org)  |
-|  [Apache Commons](https://commons.apache.org/security.html) |  [Apache Security Team](mailto:security@apache.org)  |
+|  [Apache Commons](https://commons.apache.org/security.html) |  [Apache Commons Security Team](mailto:security@commons.apache.org)  |
 |  Apache CouchDB |  [Apache CouchDB Security Team](mailto:security@couchdb.apache.org)  |
 |  [Apache Fineract](https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+Security+Report)  |  [Apache Fineract Security Team](mailto:security@fineract.apache.org)  |
 |  [Apache Geronimo](https://geronimo.apache.org/security-reports.html)  |  [Apache Geronimo Security Team](mailto:security@geronimo.apache.org)  |
@@ -37,6 +38,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache Pulsar](https://github.com/apache/pulsar/security/policy) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Santuario](https://santuario.apache.org/secadv.html) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Sentry](https://cwiki.apache.org/confluence/display/SENTRY/Vulnerabilities+found+in+Apache+Sentry) | [Apache Sentry Security Team](mailto:security@sentry.apache.org) |
+|  [Apache ShardingSphere](https://shardingsphere.apache.org/community/en/security/) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Shiro](https://shiro.apache.org/security-reports.html)  |  [Apache Shiro Security Team](mailto:security@shiro.apache.org)  |
 |  [Apache SINGA](https://singa.apache.org/security.html) | [Apache SINGA Security Team](mailto:security@singa.apache.org) |
 |  [Apache Sling](https://sling.apache.org/site/security.html)  |  [Apache Sling Security Team](mailto:security@sling.apache.org)  |

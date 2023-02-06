@@ -29,9 +29,15 @@ More narrowly, an official Apache release is one which has been endorsed as an
 
 Each PMC MUST obey the ASF requirements on approving any release.
 
-For a release vote to pass, a minimum of three positive votes and more
-positive than negative votes MUST be cast.  Releases may not be vetoed.
-Votes cast by PMC members are binding.
+See the [ASF voting process](../foundation/voting.html) page for general
+information about voting.
+
+For a release vote to pass, a minimum of three positive binding votes and more
+positive binding votes than negative binding votes MUST be cast.  Releases may
+not be vetoed.  Votes cast by PMC members are binding, however, non-binding votes
+are greatly encouraged and a sign of a healthy project.  See 
+[expressing votes](../foundation/voting.html#expressing-votes-1-0-1-and-fractions) 
+for details on what constitutes positive and negative votes.
 
 Before casting +1 binding votes, individuals are REQUIRED to download all
 signed source code packages onto their own hardware, verify that they meet all
@@ -301,11 +307,10 @@ licensing FAQ](#license).
 
 #### What are the ASF requirements on approving a release?  {#approving-a-release}
 
-Votes on whether a package is ready to be released use 
-[majority approval](/foundation/glossary.html#MajorityApproval) -- 
-i.e., at least three PMC members must vote affirmatively
-for release, and there must be more positive than negative votes.
-Releases may not be vetoed. Before voting +1 PMC members are required
+Release votes happen as described above in the
+[release approval](#release-approval) section.
+
+Before voting +1 PMC members are required
 to download the signed source code package, compile it as provided, and test the 
 resulting executable on their own platform, along with also verifying that the 
 package meets the requirements of the ASF policy on releases.
@@ -380,7 +385,7 @@ just file an INFRA ticket.
 
 #### Where can we host public (GA) releases?  {#host-GA}
 
-Current releases must be served from the ASF condent distribution system by placing them under
+Current releases must be served from the ASF content distribution system by placing them under
 `https://downloads.apache.org/` (see [How do I upload a release?](#upload-ci)). 
 
 Project download pages must use a `closer.lua` script and not link directly to the main Apache Web site; see <a href="https://infra.apache.org/release-download-pages.html" target="_blank">instructions for creating download pages</a> for further details. 

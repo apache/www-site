@@ -103,7 +103,12 @@ CVE-2008-2370](http://markmail.org/message/w7mdjdxeqius7d6l). The
 level of detail to include in the report is a matter of
 judgement. Generally, reports should contain enough information to
 enable people to assess the risk the vulnerability poses for
-their own system, and no more. Announcments do not normally include steps to reproduce the vulnerability.
+their own system, and no more. Announcements do not normally include steps to reproduce the vulnerability.
+
+     Optionally, you can put the CVE into the `REVIEW` state to request a
+     review from the Security team. You can discuss the disclosure
+     using the 'comment' feature, which also sends the comments to the
+     relevant private mailing list(s).
 
 12. The project team provides the reporter with a copy of the fix and the
 draft vulnerability announcement for comment.
@@ -120,10 +125,9 @@ or impact.
 
 ### Announce
 
-16. The project team announces the vulnerability and the fix. The vulnerability
-announcement should be sent after, or at the same time as, the release announcement to the
-following destinations.  The internal portal generates texts that can be used for
-the emails and can send the emails if required.
+16. After (or at the same time as) the release announcement, the project team announces the vulnerability and the fix.
+    Set the CVE status to `READY` in the [internal portal](https://cveprocess.apache.org). You can then use the portal to send the emails.
+    The vulnerability announcement should be sent to the following destinations:
 
     a. the same destinations as the release announcement
 
@@ -134,14 +138,14 @@ not have a dedicated security list)
 
     d. `oss-security@lists.openwall.com` ([subscription not required](http://oss-security.openwall.org/wiki/mailing-lists)).
 
+This is the first point that any information regarding the vulnerability is made public.
+
 ### Complete
 
 17. The project team updates the project's security pages.
 
-18. Set the status of the vulerability to 'READY' in the internal portal. This notifies the
-    security team, which will submit the information to the CVE project.
-
-    This is the first point that any information regarding the vulnerability is made public.
+18. Add the link to the public announcement on the mailinglist as a 'reference' in the CVE.
+    This notifies the security team, which will submit the information to the CVE project.
 
 19. If the project repository is in Subversion, add the CVE ID to the log for the commit that applied the fix. Do **not** try to do this if your project uses a Git repository, as editing a pushed commit causes all sorts of problems.
 

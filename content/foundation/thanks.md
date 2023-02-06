@@ -30,6 +30,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <h1 style="text-align: center;">Gold Sponsors:</h1>  <!-- 223x100 --> <!-- Gold images should be exact size for CSS -->
    <div class="sponsors">
    <ul id='gold'>
+      <li><a target="_blank" rel="sponsored" href="https://aiven.io/"><img src="images/aiven-gold.png"/></a><p style="text-align: center; font-weight: bold;">Aiven</p></li>
       <li><a target="_blank" rel="sponsored" href="https://apache.org/"><img src="images/blank.png"/></a><p style="text-align: center; font-weight: bold;">Anonymous</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.baidu.com/"><img src="images/baidu.png"/></a><p style="text-align: center; font-weight: bold;">Baidu</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.TechAtBloomberg.com/opensource"><img src="images/bloomberg-gold.png"/></a><p style="text-align: center; font-weight: bold;">Bloomberg</p></li>
@@ -38,8 +39,10 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.confluent.io/"><img src="images/confluent-gold.png"/></a><p style="text-align: center; font-weight: bold;">Confluent</p></li>
       <li><a target="_blank" rel="sponsored" href="http://ibm.com/"><img src="images/ibm.png"/></a><p style="text-align: center; font-weight: bold;">IBM</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/"><img src="images/indeed.png"/></a><p style="text-align: center; font-weight: bold;">Indeed</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://oceanx.org/"><img src="images/oceanx-gold.png"/></a><p style="text-align: center; font-weight: bold;">OceanX</p></li>
       <li><a target="_blank" rel="sponsored" href="https://opensource.salesforce.com/"><img src="images/salesforce-gold.png"/></a><p style="text-align: center; font-weight: bold;">Salesforce</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.union-investment.de/"><img src="images/union-gold.png"/></a><p style="text-align: center; font-weight: bold;">Union Investment</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.visa.com/"><img src="images/visa-gold.png"/></a><p style="text-align: center; font-weight: bold;">VISA</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.workday.com/"><img src="images/workday-gold.png"/></a><p style="text-align: center; font-weight: bold;">Workday</p></li>
    </ul>
    </div>
@@ -125,7 +128,6 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    <h1 style="text-align: center;">Targeted Silver Sponsors:</h1> <!-- 150x67 -->
    <div class="sponsors">
    <ul id='targetedsilver'>
-      <li><a target="_blank" rel="sponsored" href="http://hotwaxsystems.com/"><img src="images/hotwax.png"/></a><p style="text-align: center; font-weight: bold;">Hotwax Systems</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage"><img src="images/instaclustr-silver.png"/></a><p style="text-align: center; font-weight: bold;">Instaclustr</p></li>
       <li><a target="_blank" rel="sponsored" href="http://rackspace.com/"><img src="images/rax.jpg"/></a><p style="text-align: center; font-weight: bold;">Rackspace</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.mi.com/"><img src="images/xiaomi-silver.png"/></a><p style="text-align: center; font-weight: bold;">Xiaomi</p></li>

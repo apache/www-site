@@ -150,9 +150,9 @@ get their account created, the PMC chair ensures
 the new committer has [karma](#newcommitter) (access) to the project repositories.
 
 ### Send NOTICEs and followup when adding PMC members
-The chair is responsible for sending the 72-hour
-NOTICE email to the board, then updating [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)
- and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmc).
+The chair is responsible for sending the NOTICE email to the board, then
+updating [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)
+and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmc).
 
 ### Maintain ASF records on the PMC roster
 Maintain information about your PMC's composition in the SVN "committers" repository
@@ -279,22 +279,28 @@ See also [why would a project move to the Attic?](pmc.html#move-to-attic), above
 
 ### How to add a PMC member  {#newpmc}
 
+The usual process for adding a member to a PMC is to:
+
+  * Elect the new member by having the PMC vote on the project's private list, according to the [ASF voting rules](/foundation/voting)
+  * Follow the below process to finalize the nomination.
+
+In specific cases, however, such as low PMC participation preventing the number
+of required votes from being reached, or the PMC chair being unavailable for an
+extended period of time, PMC members can ask the Board to make the necessary
+changes to the PMC without a successful vote. In such a case, the Board would only
+be concerned if there is opposition within the PMC.
+
 #### Send the board a NOTICE of the vote to add someone
 
 Adding a PMC member requires sending an email notification
-to the Board's mailing list and the PMC's private mailing list and waiting 72 hours.
+to the Board's mailing list and the PMC's private mailing list.
 Be sure to send a *separate* [NOTICE] email for *each* individual you are nominating.
 
-Once the notification appears in the [**archives**](#board_archive), an invitation may be sent out 72 hours later
-(unless a Director objects to the nomination).  The detailed process can be found
-in the [June 2013 board minutes](/foundation/records/minutes/2013/board_minutes_2013_06_19.txt)
-under section "[7 G. Amend the Procedure for PMC Membership Changes](https://whimsy.apache.org/board/minutes/PMC_Membership_Change_Process.html)".
+Once the notification appears in the [**archives**](#board_archive), an invitation
+may be sent out.
 
-**Do NOT** send an unconditional invite to the potential member before the 72 hour [NOTICE] period has expired!
-It would be very awkward if the board objects to the invitation and you have to withdraw it.
-
-The PMC Chair or any other
-PMC member can send this notification if they include a link to the formal PMC decision or a vote thread on their private@ list.
+The PMC Chair or any other PMC member can send this notification if they include
+a link to the formal PMC decision or a vote thread on their private@ list.
 
 **Ensure the PMC private list is copied - but do not CC the potential member**. For example:
 
@@ -322,7 +328,7 @@ that fact in the notification email.
 #### Check the board archive for mail delivery  {#board_archive}
 Also the list is moderated, so it may take a day or two before the email appears on the list and is seen by the board members.
 If the email is not moderated in time, it will never reach the list.
-The 72 hour NOTICE period can only start once the email has been posted to the list.
+The invite can only be sent out once the notice email has been posted to the list.
 
 **The PMC Chair MUST check the board archives to ensure that the NOTICE has actually been delivered to the board mailing list.**
 
@@ -332,10 +338,9 @@ ASF Members can also access the <a href="https://mail-search.apache.org/members/
 
 It is not sufficient to check that you have seen the email; the email must appear in the board archives.
 
-#### After NOTICE period (72 hours), invite the person  {#notice_period}
+#### Invite the person
 
-After 72 hours have elapsed without objection, you may formally add the 
-candidate to your PMC -  the PMC Chair needs to:
+To formally add the candidate to your PMC -  the PMC Chair needs to:
 
   - Formally invite the new PMC member (with copy to the private@ list). If they accept, then:
   - Update the **[roster](https://whimsy.apache.org/roster/committee/)**
@@ -345,18 +350,10 @@ with the new PMC member.
 The new PMC member should now subscribe to your PMC's private@ mailing list in the normal way. 
 
 **Note** that the appointment to the PMC does not become official until the Foundation's records (i.e. committee-info.txt) have been updated
-(see 7G (3) of the board minutes cited above).
+(see 7C of the September 2022 board minutes).
 
 If the candidate declines PMC membership or doesn't respond to the invitation, please follow up the original notice to the board to say that
 the change did not happen, and do not update the records.
-
-The duration of the 72 hour waiting period is very important, not only in this
-context but also at a project level. People are in various timezones and
-have busy schedules. As with normal email, we need to provide time for
-people to respond. The ASF experience has shown that at least 72 hours is
-needed. We also need to follow defined procedures so that the ASF can
-operate according to its corporation status. The procedures and these FAQs
-should make it easy for everyone to operate efficiently.
 
 New PMC members are required to read the [PMC Branding Responsibilities](/foundation/marks/responsibility).
 
@@ -370,8 +367,8 @@ the Foundation's mailing list archives, but can be revoked by that
 member within 72 hours of receipt."
 
 The detailed process can be found
-in the [June 2013 board minutes](/foundation/records/minutes/2013/board_minutes_2013_06_19.txt)
-under section [7 G. Amend the Procedure for PMC Membership Changes](https://whimsy.apache.org/board/minutes/PMC_Membership_Change_Process.html).
+in the [September 2022 board minutes](/foundation/records/minutes/2022/board_minutes_2022_09_21.txt)
+under section [7 C. PMC Membership Change Process](https://whimsy.apache.org/board/minutes/PMC_Membership_Change_Process.html).
 
 #### How to mark a PMC member as resigned or emeritus  {#emeritus}
 

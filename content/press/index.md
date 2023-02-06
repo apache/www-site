@@ -213,7 +213,7 @@ The ASF Marketing & Publicity team is happy to work with organizations as they r
 ## Apache Feather And Project Logos ##
 
 Note that as a distributed organization, each individual Apache project manages 
-their own logos and trademarks.  High quality images of the ASF's feather logo 
+their own logos and trademarks.  High quality images of the ASF's logo 
 and selected Powered By logos available for third party use under certain cases
 are available on our [Press Kit page][1].
 
@@ -224,7 +224,7 @@ Kindly note that all Apache project logos and names are [trademarks of the ASF](
 [The Apache Press Team](index.html)
 is responsible for overall media and analyst relations,
 as well as any related inquiries.
-The Apache Press Team is led by our VP, Marketing and Publicity, Sally Khudairi.
+The Apache Press Team is led by our [VP, Marketing and Publicity](https://www.apache.org/foundation/#who-runs-the-asf).
 Members of the Apache Press Team are carefully selected members of the 
 ASF membership who monitor the press@ list and are available to speak 
 with reporters.

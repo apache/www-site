@@ -7,7 +7,7 @@ The Apache Theme included here consists two types of files.
 
 ## Page Templates
 
-- base.html - the main template. Other templates extend this template automatically even those in the default pelican thme.
+- base.html - the main template. Other templates extend this template automatically even those in the default pelican theme.
 - page.html - this overrides pelican's default/simple page.html which includes `<h1>{{ page.title }}</h1>`.
   We don't want that behavior.
 

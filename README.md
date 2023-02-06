@@ -71,10 +71,12 @@ You will also need Git, and familiarity with working in a command-line shell.
 - Get the ASF website source: `git clone https://github.com/apache/www-site`.
 - Change to the website checkout: `cd www-site`.
 - Create a dummy authorisation file: `touch .authtokens`.
-- Start the continuous builder: `docker run -it -p8000:8000 -v $PWD:/site pelican-asf`. This will generate a lot of output, but will eventually stop.
+- Start the continuous builder: `docker run -it -p8000:8000 -v $PWD:/site pelican-asf`. This will generate a lot of output, but will eventually stop. [N.B. Pelican calls the data generation plugins 3 times before generating the pages.]
+- If you want to add some additional debug output, add the following line to `pelicanconf.yaml`: `debug: true`
 - Browse to http://localhost:8000/ .
 - If the builder reports a failure trying to find content/theme/apache, try changing
   the `theme` entry in `pelicanconf.yaml` to `theme: ../theme/apache` and re-run
 
 If you make changes to the local copy of www-site, these will be automatically built, and should
 appear in the browser when you refresh the page.
+

@@ -87,12 +87,10 @@ conveying the request makes it clear it is an act of the board, not just of one 
 ## Meetings  {#meetings}
 
 The board exercises oversight of Apache Projects by reviewing project reports at 
-the monthly board meeting, and by explicitly approving all changes to PMC 
-membership. When PMCs have voted in and nominated a new committer to serve on 
-the PMC, they ask the board for an ACK, or acknowledgment, of the addition. Once 
-any one director sends an ACK email, the official PMC membership roster is 
-updated after a 72 hour wait, designed to give other directors a chance to 
-comment or question the appointment before it is officially recorded.
+the monthly board meeting, and by monitoring changes to PMC membership. When
+PMCs have voted in and nominated a new committer to serve on the PMC, they
+notify the board of the addition. The appointement is official once the
+canonical PMC membership roster is updated to reflect the change.
 
 PMCs are expected to provide accurate and thorough reports to the board of their 
 community health and technical and software release activities. Projects that do 
