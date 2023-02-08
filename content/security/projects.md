@@ -25,10 +25,12 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache HTTP Server](https://httpd.apache.org/security_report.html)  |  [Apache HTTP Server Security Team](mailto:security@httpd.apache.org)  |
 |  Apache Ignite | [Apache Ignite Security Team](mailto:security@ignite.apache.org) |
 |  Apache Jackrabbit | [Apache Jackrabbit Security Team](mailto:security@jackrabbit.apache.org) |
+|  [Apache JMeter](https://jmeter.apache.org/security.html) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Kafka](https://kafka.apache.org/project-security.html)  |  [Apache Kafka Security Team](mailto:security@kafka.apache.org)  |
 |  [Apache Libcloud](https://libcloud.apache.org/security.html) | [Apache Libcloud Security Team](mailto:security@libcloud.apache.org) |
 |  Apache Logging | [Apache Logging Security Team](mailto:security@logging.apache.org) |
 |  Apache Lucene | [Apache Lucene Security Team](mailto:security@lucene.apache.org) |
+|  [Apache Maven](https://maven.apache.org/security.html) | [Apache Security Team](mailto:security@apache.org) |
 |  Apache Metron | [Apache Metron Security Team](mailto:security@metron.apache.org) |
 |  [Apache NiFi](https://nifi.apache.org/security.html)  |  [Apache NiFi Security Team](mailto:security@nifi.apache.org)  |
 |  [Apache OFBiz](https://ofbiz.apache.org/download.html#security)  |  [Apache OFBiz Security Team](mailto:security@ofbiz.apache.org)  |
@@ -52,6 +54,6 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  Apache Traffic Server | [Apache Traffic Server Security Team](mailto:security@trafficserver.apache.org) |
 |  Apache Trafodion | [Apache Trafodion Security Team](mailto:security@trafodion.apache.org) |
 |  [Apache XML Graphics](https://xmlgraphics.apache.org/security.html) | [Apache Security Team](mailto:security@apache.org) |
-|  Apache Zeppelin | [Apache Zeppelin Security Team](mailto:security@zeppelin.apache.org) |
+|  [Apache Zeppelin](https://zeppelin.apache.org/security.html) | [Apache Zeppelin Security Team](mailto:security@zeppelin.apache.org) |
 |  [Apache ZooKeeper](https://zookeeper.apache.org/security.html) | [Apache ZooKeeper Security Team](mailto:security@zookeeper.apache.org) |
 
