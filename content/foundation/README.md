@@ -34,3 +34,12 @@ For nontrivial changes make a Pull Request and start a discussion with the stake
 For trivial changes commit and let the stakeholders know.
 
 The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation) was not migrated and remains available.
+
+# Previewing proposed changes
+
+Any branch in the www-site repository that is named preview/* will 
+auto-build and stage to www-*.staged.apache.org.
+
+If you need to test your changes, create a branch such as preview/<your-asf-id>
+Commits to it will be staged at www-<your-asf-id>.staged.apache.org
+ 

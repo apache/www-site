@@ -80,3 +80,11 @@ You will also need Git, and familiarity with working in a command-line shell.
 If you make changes to the local copy of www-site, these will be automatically built, and should
 appear in the browser when you refresh the page.
 
+## Previewing proposed changes
+
+Any branch in the www-site repository that is named preview/* will 
+auto-build and stage to www-*.staged.apache.org.
+
+If you need to test your changes, create a branch such as preview/<your-asf-id>
+Commits to it will be staged at www-<your-asf-id>.staged.apache.org
+ 
