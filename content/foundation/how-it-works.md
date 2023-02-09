@@ -23,8 +23,6 @@ the incredible growth in new projects and contributors over the years. Come and 
 
 -  [What is the Apache Software Foundation?](#what) 
 
--  [A bit of history](#history) 
-
 -  [Meritocracy](#meritocracy) 
 
 -  [The Foundation structure](#structure) 
@@ -61,39 +59,6 @@ being abused by other organizations
 
 That's the dry facts, but how did all this come to be and what does it
 really mean? We need to step back a little in history.
-
-## A bit of history  {#history}
-
-A group of people calling themselves the “Apache Group” created the foundation in 1999. They had come together several years earlier,
-to continue to support and maintain the HTTPD web server written by the
-National Center for Supercomputing Applications (NCSA) at the University of Illinois.
-
-That server was freely available, came with its source code, its license allowed very open modification and redistribution, but
-the original developers lost interest in that project and moved onto
-something else, leaving users with no support for the application.
-
-Some of those users started to exchange fixes (called "patches") and
-information on how to prevent problems and improve the existing software.
-Brian Behlendorf created a mailing list on which those users
-could collaborate to fix, maintain and improve that software.
-
-The group chose the name 'Apache' out of respect for the Native American Apache
-Nation, well-known for their superior skills in warfare strategy and their
-inexhaustible endurance. It also makes a cute pun on "a patchy web server"
--- a server made from a series of patches -- but this was not its origin.
-The group soon started to call themselves the "Apache Group".
-
-Between 1995 and 1999, the Apache HTTPD Web Server that the Apache
-Group created and supported became the leader of the market (and currently still is, with more
-than 65% of the web sites in the world powered by it).
-
-But as the web grew bigger, economic interests started to grow, and the
-Apache web site hosted new sister projects (such as the mod_ perl project,
-the PHP project, the Java Apache project). The need for a more coherent and
-structured organization that would shield individuals from potential legal
-attacks became more and more clear.
-
-Read more about [ASF History](/history/).
 
 ## Meritocracy  {#meritocracy}
 
