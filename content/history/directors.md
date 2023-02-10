@@ -10,8 +10,8 @@ This timeline shows the terms of office of those who have served as Directors of
 
 <div id="timeline-tooltip" style="height: 900px;"></div>
 
-<script type="text/javascript" src="./scripts/gstatic.com.charts.loader.js"></script>
-<script type="text/javascript" src="./data/directors.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="data/directors.js"></script>
 <script type="text/javascript">
   // see https://developers.google.com/chart/interactive/docs/gallery/timeline
   google.charts.load('current',  {'packages':['timeline']});
