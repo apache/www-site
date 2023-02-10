@@ -15,6 +15,7 @@ function director_data() {
         brett: 'Brett Porter',
         brian: 'Brian Behlendorf',
         brianm: 'Brian McCallister',
+        cdutz: 'Christopher Dutz',
         cliffs: 'Cliff Schmidt',
         clr: 'Craig Russell',
         coar: 'Ken Coar',
@@ -42,6 +43,7 @@ function director_data() {
         lrosen: 'Larry Rosen',
         myrle: 'Myrle Krantz',
         niclas: 'Niclas Hedhman',
+        ningjiang: 'Willem Ning Jiang',
         noirin: 'Noirin Plunkett',
         pats: 'Patricia Shanahan',
         psteitz: 'Phil Steitz',
@@ -51,6 +53,7 @@ function director_data() {
         rgardler: 'Ross Gardler',
         rubys: 'Sam Ruby',
         sameer: 'Sameer Parekh',
+        sharan: 'Sharan Foga',
         stefano: 'Stefano Mazzocchi',
         stoddard: 'Bill Stoddard',
         striker: 'Sander Striker',
@@ -59,6 +62,7 @@ function director_data() {
         wave: 'Dave Fisher',
         wohali: 'Joan Touzet',
         wrowe: 'William Rowe',
+        wusheng: 'Sheng Wu',
     }
 
     function date(y, m, d) {
@@ -92,9 +96,9 @@ function director_data() {
     y2018 = date(2018, 3, 22);
     y2019 = date(2019, 3, 28);
     y2020 = date(2020, 4, 2);
-
-    // Approximate the next year's meeting
-    y2021 = date(2021, 4, 1);
+    y2021 = date(2021, 3, 9);
+    y2022 = date(2022, 3, 1);
+    y2023 = date(2023, 3, 9);
 
     // Transition dates for outgoing/incoming Directors
     // fielding -> striker
@@ -198,6 +202,26 @@ function director_data() {
     add('rubys', y2020, y2021);
     add('pats', y2020, y2021);
     add('striker', y2020, y2021);
+
+    add('bdelacretaz', y2021, y2022);
+    add('fielding', y2021, y2022);
+    add('sharan', y2021, y2022);
+    add('justin', y2021, y2022);
+    add('clr', y2021, y2022);
+    add('rubys', y2021, y2022);
+    add('rvs', y2021, y2022);
+    add('striker', y2021, y2022);
+    add('wusheng', y2021, y2022);
+
+    add('rbowen', y2022, y2023);
+    add('bdelacretaz', y2022, y2023);
+    add('cdutz', y2022, y2023);
+    add('fielding', y2022, y2023);
+    add('sharan', y2022, y2023);
+    add('ningjiang', y2022, y2023);
+    add('rubys', y2022, y2023);
+    add('rvs', y2022, y2023);
+    add('striker', y2022, y2023);
 
     return dataTable;
 }
