@@ -139,6 +139,7 @@ apache.org/) |
 | cziegeler | [Carsten Ziegeler](mailto:cziegeler@apache.org) | [Sling](http://sling.apache.org/), [Felix](http://Felix.apache.org/), [Portals](http://portals.apache.org/)|
 | dain | Dain Sundstrom |
 | danese | Danese Cooper |
+| danhaywood | Dan Haywood | [Causeway](https://causeway.apache.org) |
 | danielsh | Daniel Shahaf | [Subversion](http://subversion.apache.org/), [Infrastructure](http://www.apache.org/dev/infrastructure)|
 | danny | [Danny Angus](http://blog.killerbees.co.uk) | [James](http://james.apache.org/) , [Jakarta](http://jakarta.apache.org/), [Labs](http://labs.apache.org)|
 | dashorst | Martijn Dashorst |
