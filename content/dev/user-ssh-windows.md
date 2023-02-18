@@ -6,5 +6,5 @@ location.href = location.href.replace(/^https?:\/\/[^\/]+\/dev\//, 'https://infr
 </script>
 
 
-<h2>This information has moved to <a href="https://infra.apache.org/user-ssh-windows.html">here</a></h2>
+<h2>This information has moved to <a href="https://infra.apache.org/user-ssh.html">here</a></h2>
 
