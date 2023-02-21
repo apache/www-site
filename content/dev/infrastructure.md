@@ -60,9 +60,3 @@ resources</a>
 
 -  [Public Host and Service Status](https://status.apache.org/) -
 ASF Infra has already been automatically alerted if a service is marked as down.
-
-## Internal services  {#internal-services}
-
--  We use a fork of [CKL (CloudKick Logger)](ckl) to record shell sessions
-   during our work.
-
