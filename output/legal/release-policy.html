@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page of The Apache Software Foundation">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Release Policy</title>
+  <link href="/css/Montserrat-300-600.css" rel="stylesheet">
+  <link href="/css/min.bootstrap.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->
+</head>
+
+<body >
+  <!-- Navigation -->
+  <header>
+	<div id="skiptocontent">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top mainmenu">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnav-collapse">
+          <ul class="nav navbar-nav navbar-justified">
+            <li><a href="/index.html#news">News</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/foundation">Overview</a></li>
+                <li><a href="/foundation/how-it-works.html">Process</a></li>
+                <li><a href="/foundation/governance/">Governance</a></li>
+                <li><a href="/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="/foundation/governance/members.html">Membership</a></li>
+                <li><a href="https://community.apache.org/">Community</a></li>
+                <li><a href="https://diversity.apache.org/">Diversity & Inclusion</a></li>
+                <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="/foundation/glossary.html">Glossary</a></li>
+				  <li><a href="/apache-name">About Our Name</a></li>
+                <li><a href="/foundation/preFAQ.html">FAQ</a></li>
+                <li><a href="/foundation/contributing.html">Support Apache</a></li>
+                <li><a href="/press/">Media/Analysts</a></li>
+                <li><a href="/foundation/contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Make a Donation&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/foundation/contributing.html">Donate Now</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via Credit Card</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via ACH</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via PayPal</a></li>
+                <li><a href="https://www.redbubble.com/people/comdev">Buy Swag</a></li>
+                <li><a href="https://smile.amazon.com/gp/chpf/homepage/ref=smi_se_scyc_srch_stsr?q=apache+software+foundation&orig=%2F">Shop smile.amazon.com</a></li>
+                <li><a href="/foundation/sponsorship.html">ASF Sponsorship</a></li>
+                <li><a href="/foundation/thanks#targeted-sponsors">Targeted Sponsorship</a></li>
+                <li><a href="/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">The Apache Way&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="https://s.apache.org/GhnI">Sustainable Open Source</a></li>
+                <li><a href="/foundation/how-it-works.html">How it Works</a></li>
+                <li><a href="/foundation/how-it-works.html#meritocracy">Merit</a></li>
+                <li><a href="https://blogs.apache.org/foundation/category/SuccessAtApache">Success at Apache</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">Join Us&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://community.apache.org/gettingStarted/101.html">Getting Started</a></li>
+                <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                <li><a href="https://www.apachecon.com/">ApacheCon</a></li>
+                <li><a href="http://community.apache.org/calendars/">Community Events</a></li>
+                <li><a href="/travel/">Travel Assistance</a></li>
+                <li><a href="https://community.apache.org/gsoc.html">Summer of Code</a></li>
+                <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="https://community.apache.org/contributors/etiquette">Etiquette</a></li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/index.html#projects-list">Project List</a></li>
+                    <li><a href="/foundation/how-it-works.html#management">How they work</a></li>
+                    <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+                    <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+                    <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+                    <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="/foundation/marks/">Brand Management</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">People&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/foundation/how-it-works.html#roles">Roles</a></li>
+                    <li><a href="/foundation/members.html">Members</a></li>
+                    <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+                    <li><a href="/foundation/#who-runs-the-asf">Board of Directors</a></li>
+                    <li><a href="/foundation/#who-runs-the-asf">Officers  &amp; Project VPs</a></li>
+                    <li><a href="https://community.zones.apache.org/map.html">Location Map</a></li>
+                    <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://people.apache.org/">Committer Directory</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://community.apache.org/about/">Community Development</a></li>
+                    <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://community.apache.org/">Get Involved</a></li>
+                    <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+                    <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+                    <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Infrastructure&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/dev/infrastructure.html">Infra overview</a></li>
+                    <li><a href="https://infra.apache.org/" target="_blank">Policies and Tools</a></li>
+                    <li><a href="https://cwiki.apache.org/confluence/display/INFRA/Index" target="_blank">CWiki</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">License&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+                    <li><a href="/foundation/license-faq.html">Licensing FAQ</a></li>
+                    <li><a href="/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+                    <li><a href="/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+                    <li><a href="/foundation/marks/list/">Trademarks</a></li>
+					<li><a href="/licenses/exports/">Exports</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sponsors&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/foundation/sponsorship.html">Sponsor the ASF</a></li>
+                    <li><a href="/foundation/thanks">Sponsor Thanks</a></li>
+                    <li><a href="/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+                    <li><a href="/foundation/contributing.html">Individual Donations</a></li>
+                    <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://downloads.apache.org/">Distribution</a></li>
+                <li><a href="https://projects.apache.org/releases.html">Releases</a></li>
+                <li><a href="https://status.apache.org/">Infrastructure Status</a></li>
+                <li><a href="/uptime/">Infrastructure Statistics</a></li>
+              </ul>
+            </li>
+            <li class="dropdown hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                  aria-hidden="true"></span><span class="sr-only">Search</span></a>
+              <ul class="dropdown-menu search-form" role="search">
+                <li>
+                  <div class="input-group" style="width: 100%; padding: 0 5px;">
+                    <script async src="https://cse.google.com/cse.js?cx=cb41d2753d228d8b7"></script>
+                    <div class="gcse-search"></div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- / Navigation -->
+  <header id="main-header" class="container">
+    <div class="sideImg">
+          <a class="visible-home" href="https://events.apache.org/x/current-event.html">
+            <img class="img-responsive" style="width: 125px;" src="/events/current-event-125x125.png" alt="Apache Events"/>
+<!-- STALE: <img class="img-responsive" style="width: 125px;" src="https://www.apachecon.com/event-images/default-square-light.png" alt="ApacheCon 2021 Coming Soon!" /> -->
+          </a>
+      <a class="hidden-home" href="/"><img class="img-responsive" src="/img/asf-estd-1999-logo.jpg" alt="The Apache Software Foundation"></a>
+    </div>
+    <div class="main">
+      <img class="img-responsive center-block visible-home" src="/img/asf-estd-1999-logo.jpg" alt="Apache 20th Anniversary Logo">
+      <h2 class="text-center">Community-led development "The&nbsp;Apache&nbsp;Way"</h2>
+      <ul class="nav navbar-nav navbar-justified">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/index.html#projects-list">Project List</a></li>
+            <li><a href="/foundation/how-it-works.html#management">How they work</a></li>
+            <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+            <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+            <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+            <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+            <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+            <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+            <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="/foundation/marks/">Brand Management</a></li>
+            <li><a href="/foundation/glossary.html">Glossary of Terms</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">People&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/foundation/how-it-works.html#roles">Roles</a></li>
+            <li><a href="/foundation/members.html">Members</a></li>
+            <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+            <li><a href="/foundation/#who-runs-the-asf">Board of Directors</a></li>
+            <li><a href="/foundation/#who-runs-the-asf">Officers &amp; Project VPs</a></li>
+            <li><a href="https://diversity.apache.org/">Diversity & Inclusion</a></li>
+            <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://people.apache.org/">Committer Directory</a></li>
+            <li><a href="https://community.zones.apache.org/map.html">Heat Map</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://community.apache.org/about/">Community Development</a></li>
+            <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://community.apache.org/">Get Involved</a></li>
+            <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+            <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+            <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Infrastructure&nbsp;<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/dev/infrastructure.html">Infra overview</a></li>
+              <li><a href="https://infra.apache.org/" target="_blank">Policies and Tools</a></li>
+              <li><a href="https://cwiki.apache.org/confluence/display/INFRA/Index" target="_blank">CWiki</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">License&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+            <li><a href="/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+            <li><a href="/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+            <li><a href="/foundation/marks/list/">Trademarks</a></li>
+			<li><a href="/licenses/exports/">Exports</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sponsors&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/foundation/sponsorship.html">Sponsor the ASF</a></li>
+            <li><a href="/foundation/thanks">Sponsor Thanks</a></li>
+            <li><a href="/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+            <li><a href="/foundation/contributing.html">Individual Donations</a></li>
+            <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="sideImg">
+      <a href="/foundation/contributing.html"><img class="img-responsive" src="/img/support-apache.jpg" alt="Apache Support Logo" /></a>
+    </div>
+  </header>
+  <main id="maincontent">
+<div class="container">    <h1 id="release-policy">Release Policy<a class="headerlink" href="#release-policy" title="Permalink">&para;</a></h1>
+<p>This page documents the ASF policy on software releases. This document is for ASF release managers and <a href="glossary#PMC">PMC</a> members.
+Information <a href="https://infra.apache.org/release-download-pages.html#best_practice">for end-users</a> is also available.</p>
+<p>This document summarizes the <a href="https://infra.apache.org/release-publishing.html">release process</a>.</p>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permalink">&para;</a></h2>
+<div id="toc"><ul><li><a class="toc-href" href="#policy" title="Release Policy">Release Policy</a><ul><li><a class="toc-href" href="#release-definition" title='Definition of "release"'>Definition of "release"</a></li><li><a class="toc-href" href="#release-approval" title="Release approval">Release approval</a></li><li><a class="toc-href" href="#publication" title="Publication">Publication</a></li><li><a class="toc-href" href="#artifacts" title="Artifacts">Artifacts</a><ul><li><a class="toc-href" href="#source-packages" title="Source packages">Source packages</a></li><li><a class="toc-href" href="#release-signing" title="Release signing">Release signing</a></li><li><a class="toc-href" href="#compiled-packages" title="Compiled packages">Compiled packages</a></li></ul></li><li><a class="toc-href" href="#licensing" title="Licensing">Licensing</a></li><li><a class="toc-href" href="#licensing-documentation" title="Licensing Documentation">Licensing Documentation</a><ul><li><a class="toc-href" href="#license-file" title="The LICENSE file">The LICENSE file</a></li><li><a class="toc-href" href="#notice-file" title="The NOTICE file">The NOTICE file</a></li><li><a class="toc-href" href="#license-headers" title="License Headers">License Headers</a></li></ul></li><li><a class="toc-href" href="#release-distribution" title="Release Distribution">Release Distribution</a><ul><li><a class="toc-href" href="#release-archival" title="Release Archival">Release Archival</a></li></ul></li><li><a class="toc-href" href="#administration" title="Release Policy Administration">Release Policy Administration</a></li><li><a class="toc-href" href="#todo" title="TODO">TODO</a></li><li><a class="toc-href" href="#release-faqs" title="Release FAQs">Release FAQs</a><ul><li><a class="toc-href" href="#why" title="Why do we need a Foundation-wide policy?">Why do we need a Foundation-wide policy?</a></li><li><a class="toc-href" href="#what" title="What is a release?">What is a release?</a></li><li><a class="toc-href" href="#release-types" title="How do the types Of Apache software distribution differ?">How do the types Of Apache software distribution differ?</a></li></ul></li><li><a class="toc-href" href="#management" title="Release Management Questions">Release Management Questions</a><ul><li><a class="toc-href" href="#where-do-releases-go" title="Where do releases go?">Where do releases go?</a></li><li><a class="toc-href" href="#what-must-every-release-contain" title="What Must Every ASF Release Contain?">What Must Every ASF Release Contain?</a></li><li><a class="toc-href" href="#approving-a-release" title="What are the ASF requirements on approving a release?">What are the ASF requirements on approving a release?</a></li><li><a class="toc-href" href="#release-announcements" title="How should releases be announced?">How should releases be announced?</a></li><li><a class="toc-href" href="#best-practice" title="Is there a guide to best practices?">Is there a guide to best practices?</a></li><li><a class="toc-href" href="#owned-controlled-hardware" title="Must releases be built on hardware owned and controlled by the committer?">Must releases be built on hardware owned and controlled by the committer?</a></li></ul></li><li><a class="toc-href" href="#mirroring" title="Release Distribution Questions">Release Distribution Questions</a><ul><li><a class="toc-href" href="#host-rc" title="Where can we host test packages (nightly builds and release candidates)?">Where can we host test packages (nightly builds and release candidates)?</a></li><li><a class="toc-href" href="#host-GA" title="Where can we host public (GA) releases?">Where can we host public (GA) releases?</a></li><li><a class="toc-href" href="#archived" title="How are releases archived?">How are releases archived?</a></li><li><a class="toc-href" href="#when-to-archive" title="When should an old release be archived?">When should an old release be archived?</a></li><li><a class="toc-href" href="#upload-ci" title="How do I upload a release ?">How do I upload a release ?</a></li><li><a class="toc-href" href="#stage" title="Where can I stage a release candidate?">Where can I stage a release candidate?</a></li><li><a class="toc-href" href="#heads-up" title="Do I need to talk to Infrastructure before distributing a release?">Do I need to talk to Infrastructure before distributing a release?</a></li><li><a class="toc-href" href="#build-directories" title="Which Directory for what build?">Which Directory for what build?</a></li><li><a class="toc-href" href="#how-to-archive" title="How is an old release moved to the archives?">How is an old release moved to the archives?</a></li><li><a class="toc-href" href="#maven-artifacts" title="How do I release Maven artifacts?">How do I release Maven artifacts?</a></li></ul></li><li><a class="toc-href" href="#license" title="Release licensing questions">Release licensing questions</a><ul><li><a class="toc-href" href="#which-files-contain-license" title="Which files must contain an ASF license text?">Which files must contain an ASF license text?</a></li><li><a class="toc-href" href="#full-copy-for-each-source-file" title="Is a full copy of the license required in each source file?">Is a full copy of the license required in each source file?</a></li><li><a class="toc-href" href="#attribution-notices" title="Where is the right place for attribution notices?">Where is the right place for attribution notices?</a></li><li><a class="toc-href" href="#notice-content" title="What content is appropriate for the NOTICE file?">What content is appropriate for the NOTICE file?</a></li><li><a class="toc-href" href="#notice-required" title="Is a NOTICE file required for pure ASF code?">Is a NOTICE file required for pure ASF code?</a></li><li><a class="toc-href" href="#distributing-code-under-several-licenses" title="If an artifact contains code under several licenses, should it contain several license files?">If an artifact contains code under several licenses, should it contain several license files?</a></li><li><a class="toc-href" href="#distribute-other-artifacts" title="What are the requirements to distribute other artifacts in addition to the source package?">What are the requirements to distribute other artifacts in addition to the source package?</a></li></ul></li><li><a class="toc-href" href="#stats" title="Questions About Release Statistics">Questions About Release Statistics</a><ul><li><a class="toc-href" href="#downloads" title="Is there any way to measure how many times XYZ has been downloaded?">Is there any way to measure how many times XYZ has been downloaded?</a></li></ul></li></ul></li></ul></div>
+<h2 id="policy">Release Policy<a class="headerlink" href="#policy" title="Permalink">&para;</a></h2>
+<h3 id="release-definition">Definition of "release"<a class="headerlink" href="#release-definition" title="Permalink">&para;</a></h3>
+<p>Generically, a release is anything that is published beyond the group
+that owns it.  For an Apache project, that means any publication outside the
+development community, defined as individuals actively participating in
+development or following the dev list.</p>
+<p>More narrowly, an official Apache release is one which has been endorsed as an
+"act of the Foundation" by a PMC.</p>
+<h3 id="release-approval">Release approval<a class="headerlink" href="#release-approval" title="Permalink">&para;</a></h3>
+<p>Each PMC MUST obey the ASF requirements on approving any release.</p>
+<p>See the <a href="../foundation/voting.html">ASF voting process</a> page for general
+information about voting.</p>
+<p>For a release vote to pass, a minimum of three positive binding votes and more
+positive binding votes than negative binding votes MUST be cast.  Releases may
+not be vetoed.  Votes cast by PMC members are binding, however, non-binding votes
+are greatly encouraged and a sign of a healthy project.  See
+<a href="../foundation/voting.html#expressing-votes-1-0-1-and-fractions">expressing votes</a>
+for details on what constitutes positive and negative votes.</p>
+<p>Before casting +1 binding votes, individuals are REQUIRED to download all
+signed source code packages onto their own hardware, verify that they meet all
+requirements of ASF policy on releases as described below, validate all
+cryptographic signatures, compile as provided, and test the result on their
+own platform.</p>
+<p>Release votes SHOULD remain open for at least 72 hours.</p>
+<h3 id="publication">Publication<a class="headerlink" href="#publication" title="Permalink">&para;</a></h3>
+<p>Projects SHALL publish official releases and SHALL NOT publish unreleased
+materials outside the development community.</p>
+<p>During the process of developing software and preparing a release, various
+packages are made available to the development community for testing
+purposes. <strong>Projects MUST direct outsiders towards official releases rather
+than raw source repositories, nightly builds, snapshots, release
+candidates, or any other similar packages.</strong>
+Projects SHOULD make available developer resources to support individuals actively
+participating in development or following the dev list and thus aware of the
+conditions placed on unreleased materials.</p>
+<h3 id="artifacts">Artifacts<a class="headerlink" href="#artifacts" title="Permalink">&para;</a></h3>
+<h4 id="source-packages">Source packages<a class="headerlink" href="#source-packages" title="Permalink">&para;</a></h4>
+<p>Every ASF release MUST contain one or more source packages, which MUST be
+sufficient for a user to build and test the release provided they have
+access to the appropriate platform and tools. A source release SHOULD not
+contain compiled code.</p>
+<h4 id="release-signing">Release signing<a class="headerlink" href="#release-signing" title="Permalink">&para;</a></h4>
+<p>All supplied packages MUST be cryptographically signed by the Release
+Manager with a detached signature.  Folks who vote +1
+for release MAY offer their own cryptographic signature to be concatenated
+with the detached signature file (at the Release Manager's discretion)
+prior to release.</p>
+<h4 id="compiled-packages">Compiled packages<a class="headerlink" href="#compiled-packages" title="Permalink">&para;</a></h4>
+<p>The Apache Software Foundation produces open source software. All releases
+are in the form of the source materials needed to make changes to the
+software being released.</p>
+<p>As a convenience to users that might not have the appropriate tools to build a
+compiled version of the source, binary/bytecode packages MAY be distributed
+alongside official Apache releases.  In all such cases, the
+binary/bytecode package MUST have the same version number as the source
+release and MUST only add binary/bytecode files that are the result of
+compiling that version of the source code release and its dependencies.</p>
+<h3 id="licensing">Licensing<a class="headerlink" href="#licensing" title="Permalink">&para;</a></h3>
+<p>Every ASF release MUST comply with ASF licensing policy. This
+requirement is of utmost importance and an audit SHOULD be performed before
+any full release is created.  In particular, every artifact distributed MUST
+contain only appropriately licensed code per <a href="/legal/resolved">Apache Licensing
+Policy</a>.</p>
+<h3 id="licensing-documentation">Licensing Documentation<a class="headerlink" href="#licensing-documentation" title="Permalink">&para;</a></h3>
+<p>Each package MUST provide a <code>LICENSE</code> file and a <code>NOTICE</code> file which account
+for the package's exact content.  <code>LICENSE</code> and <code>NOTICE</code> MUST NOT provide
+unnecessary information about materials which are not bundled in the package,
+such as separately downloaded dependencies.</p>
+<p>For source packages, <code>LICENSE</code> and <code>NOTICE</code> MUST be located at the root of the
+distribution.  For additional packages, they MUST be located in the
+distribution format's customary location for licensing materials, such as the
+<code>META-INF</code> directory of Java "jar" files.</p>
+<h4 id="license-file">The <code>LICENSE</code> file<a class="headerlink" href="#license-file" title="Permalink">&para;</a></h4>
+<p>The <code>LICENSE</code> file MUST contain the full text of the <a href="/licenses/LICENSE-2.0.txt">Apache License
+2.0</a>.</p>
+<p>When a package bundles code under several licenses, the <code>LICENSE</code> file
+MUST contain details of all these licenses. For each component which is not
+Apache licensed, details of the component MUST be appended to the <code>LICENSE</code>
+file.  The component license itself MUST either be appended or else stored
+elsewhere in the package with a pointer to it from the <code>LICENSE</code> file, e.g.
+if the license is long.</p>
+<h4 id="notice-file">The <code>NOTICE</code> file<a class="headerlink" href="#notice-file" title="Permalink">&para;</a></h4>
+<p>The <code>NOTICE</code> file must conform to the requirements of <a href="/legal/src-headers.html#notice">Apache licensing
+policy</a>.</p>
+<p>See also <a href="licenses/LICENSE-2.0.html#redistribution">section 4(d)</a> of the
+Apache License 2.0.</p>
+<h4 id="license-headers">License Headers<a class="headerlink" href="#license-headers" title="Permalink">&para;</a></h4>
+<p>Source files consisting of works submitted directly to the ASF by the
+copyright owner or owner's agent must contain the appropriate <a href="/legal/src-headers.html#headers">ASF license
+header</a>.</p>
+<h3 id="release-distribution">Release Distribution<a class="headerlink" href="#release-distribution" title="Permalink">&para;</a></h3>
+<p>Once a release is approved, all artifacts MUST be uploaded to the project's
+subdirectory within the canonical Apache distribution channel,
+<code>downloads.apache.org</code>.</p>
+<p>The PMC is responsible for the project distribution directory and MUST be able
+to account for its entire contents.  All release artifacts within the
+directory MUST be signed by a committer, preferably a PMC member.</p>
+<p>After uploading to the canonical distribution channel, the project (or anyone
+else) MAY redistribute the artifacts in accordance with their licensing
+through other channels.</p>
+<h4 id="release-archival">Release Archival<a class="headerlink" href="#release-archival" title="Permalink">&para;</a></h4>
+<p>All official releases MUST be archived permanently on archive.apache.org.</p>
+<p>(Uploading to the canonical distribution channel satisfies this requirement
+because archival happens automatically as a side effect.)</p>
+<h3 id="administration">Release Policy Administration<a class="headerlink" href="#administration" title="Permalink">&para;</a></h3>
+<p>Projects MUST notify the Board of Directors of any deviations from recommended
+or required policy directives.</p>
+<p>Changes to Release Policy must be approved by Legal Affairs.</p>
+<h3 id="todo">TODO<a class="headerlink" href="#todo" title="Permalink">&para;</a></h3>
+<p>Formalize additional official policies and reference them from this policy:</p>
+<ul>
+<li><em>ASF Licensing Policy</em> (curated by Legal Affairs, applies to both released
+and unreleased code)</li>
+</ul>
+<h3 id="release-faqs">Release FAQs<a class="headerlink" href="#release-faqs" title="Permalink">&para;</a></h3>
+<h4 id="why">Why do we need a Foundation-wide policy?<a class="headerlink" href="#why" title="Permalink">&para;</a></h4>
+<p>In the traditional open source development methodology practiced
+at volunteer liability-limiting organizations like Apache, it is necessary to draw
+clear distinctions between public resources that represent works "in-progress"
+and works suitable for consumption by the public at large.
+The purpose of a clear line is to inform our legal strategy of providing
+protection for formal participants involved in producing releases, as defined
+in the next section.  In-progress assets are viewed as controlled distributions
+designed for self-identifying participants in project development, who are
+primarily following the project's development lists.  Uncontrolled distributions,
+aka releases, are what this policy document is designed to cover.</p>
+<p>Were we to avoid drawing this distinction, and instead encouraged users to interact
+directly with source control or nightly builds, it would be very difficult for
+the organization to offer legal protection to Apache committers and PMC members
+who have only exercised their own judgement in making software modifications
+without the benefit of an <strong>authorized business decision</strong> approving of the distribution
+of those artifacts as-is to the public at large.  The bulk of Apache's "bureaucracy"
+and project governance structure are to facilitate the goals of this policy, so this
+document is well worth a careful study.</p>
+<p>Deviations from this policy may have an adverse effect on the legal shield's effectiveness,
+or the insurance premiums Apache pays to protect officers and directors, so are strongly
+discouraged without prior, explicit board approval.  Do note however that organizationally
+we prefer robust, reviewable decision-making over efficient decision-making, so if you
+are thinking of proposing an alternative process for the board to consider, be sure
+your targets reflect this.</p>
+<h4 id="what">What is a release?<a class="headerlink" href="#what" title="Permalink">&para;</a></h4>
+<p>Releases are, by definition, anything that is published beyond the group
+that owns it. In our case, that means any publication outside the group of
+people on the product dev list. If the general public is being instructed
+to download a package, then that package has been released. Each PMC must
+obey the ASF requirements on <a href="#approving-a-release">approving any release</a>.
+How you label the package is a secondary issue, described below.</p>
+<p>During the process of developing software and preparing a release, various
+packages are made available to the developer community for testing
+purposes. <strong>Do not include any links on the project website that might
+encourage non-developers to download and use nightly builds, snapshots,
+release candidates, or any other similar package.</strong> The only people who are
+supposed to know about such packages are the people following the dev list
+(or searching its archives) and thus aware of the conditions placed on the
+package. If you find that the general public are downloading such test
+packages, then remove them.</p>
+<p>Under no circumstances are unapproved builds a substitute for releases. If
+this policy seems inconvenient, then release more often. Proper release
+management is a key aspect of Apache software development.</p>
+<p>The Apache Software Foundation produces open source software. All releases
+are in the form of the source materials needed to make changes to the
+software being released. In some cases, binary/bytecode packages are also
+produced as a convenience to users that might not have the appropriate
+tools to build a compiled version of the source. In all such cases, the
+binary/bytecode package must have the same version number as the source
+release and may only add binary/bytecode files that are the result of
+compiling that version of the source code release.</p>
+<h4 id="release-types">How do the types Of Apache software distribution differ?<a class="headerlink" href="#release-types" title="Permalink">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Test Packages</strong> are not Apache releases. All releases require due
+process and official approval. Test packages are for testing ongoing
+development and should only be discussed on the project development lists.</p>
+</li>
+<li>
+<p><strong>Nightly Builds</strong> are simply built from the Subversion/Git trunk/branch,
+usually once a day. These packages are intended for regular testing of
+the build process and to give automated testers a common build for
+regression testing. They are not intended for use by the general
+public.</p>
+</li>
+<li>
+<p><strong>Release Candidates</strong> are packages that have been proposed for
+approval as a release but have not yet been approved by the project.
+These packages are intended for developers (and users who follow the
+development discussions) to test and report back to the project
+regarding their opinions on the package quality compared to prior
+releases. Many release candidates are possible prior to a release
+approval. Users that are not interested in development testing should
+wait until a release is formally approved.</p>
+</li>
+<li>
+<p><strong>Releases</strong> are packages that have been approved for general public
+release, with varying degrees of caveat regarding their perceived quality
+or potential for change. Releases that are intended for everyday usage by
+non-developers are usually referred to as "stable" or "general availability
+(GA)" releases. Releases that are believed to be usable by testers and
+developers outside the project, but perhaps not yet stable in terms of
+features or functionality, are usually referred to as "beta" or "unstable".
+Releases that only represent a project milestone and are intended only for
+bleeding-edge developers working outside the project are called "alpha".</p>
+</li>
+</ul>
+<h3 id="management">Release Management Questions<a class="headerlink" href="#management" title="Permalink">&para;</a></h3>
+<h4 id="where-do-releases-go">Where do releases go?<a class="headerlink" href="#where-do-releases-go" title="Permalink">&para;</a></h4>
+<p>A release isn't 'released' until the contents are in the project's
+distribution directory, which is a subdirectory of <code>downloads.apache.org</code>.
+In addition to the distribution directory, project that use Maven or
+a related build tool sometimes place their
+releases on <code>repository.apache.org</code> beside some convenience binaries.
+The distribution directory is required,
+while the repository system is an optional convenience.</p>
+<h4 id="what-must-every-release-contain">What Must Every ASF Release Contain?<a class="headerlink" href="#what-must-every-release-contain" title="Permalink">&para;</a></h4>
+<p>Every ASF release <strong>must</strong> contain a source package, which must be
+sufficient for a user to build and test the release provided they have
+access to the appropriate platform and tools. The source package must be
+<a href="/dev/release-signing.html">cryptographically signed</a> by the Release
+Manager with a detached signature; and that package together with its
+signature must be tested prior to voting +1 for release. Folks who vote +1
+for release may offer their own cryptographic signature to be concatenated
+with the detached signature file (at the Release Manager's discretion)
+prior to release.</p>
+<p>Note that the PMC is responsible for all artifacts in their distribution
+directory, which is a subdirectory of <code>downloads.apache.org</code> ; and all
+artifacts placed in their directory must be signed by a committer,
+preferably by a PMC member. It is also necessary for the PMC to ensure that
+the source package is sufficient to build any binary artifacts associated
+with the release.</p>
+<p>Every ASF release <strong>must</strong> comply with ASF licensing policy. This
+requirement is of utmost importance and an audit should be performed before
+any full release is created. In particular, every artifact distributed must
+contain only <a href="/legal/resolved#category-a">appropriately</a>
+<a href="/legal/resolved#category-x">licensed</a> code. More information can be found
+in the <a href="/">foundation website</a> and in the <a href="#license">release
+licensing FAQ</a>.</p>
+<h4 id="approving-a-release">What are the ASF requirements on approving a release?<a class="headerlink" href="#approving-a-release" title="Permalink">&para;</a></h4>
+<p>Release votes happen as described above in the
+<a href="#release-approval">release approval</a> section.</p>
+<p>Before voting +1 PMC members are required
+to download the signed source code package, compile it as provided, and test the
+resulting executable on their own platform, along with also verifying that the
+package meets the requirements of the ASF policy on releases.</p>
+<h4 id="release-announcements">How should releases be announced?<a class="headerlink" href="#release-announcements" title="Permalink">&para;</a></h4>
+<p>Please ensure that you wait at least one hour after uploading a new release
+before updating the project download page and sending the announcement email(s).</p>
+<p>It is important to inform people about the availability of new
+releases. Announcements must contain a link to the relevant download page for the source.
+At the very least, emails should be sent out announcing this to
+all appropriate mailing lists. Many top level projects have announcement
+lists for this purpose. There is also an
+<a href="/foundation/mailinglists.html#foundation-announce">ASF-wide</a>
+announcement list which is suitable.</p>
+<p>Please note that you can not post the ASF-wide announcement list without
+using an "apache.org" mail address. Also, please make sure that you
+have put a 3-5 lines blurb for the project (because most of the subscribers
+to announce.AT.apache.DOT.org list may not know what XX-Project is).</p>
+<p>It is recommended that an SHA-1 OpenPGP compatible signature is added to
+the announcement mail. Please ensure that your public key has been already
+uploaded to famous pgp sites (e.g. <a href="http://pgp.mit.edu/">http://pgp.mit.edu/</a>). This key should
+either be the one used to sign the release or one that is cross-signed by
+that key.</p>
+<h4 id="best-practice">Is there a guide to best practices?<a class="headerlink" href="#best-practice" title="Permalink">&para;</a></h4>
+<p>See the Incubator <a href="http://incubator.apache.org/guides/releasemanagement.html#best-practice">release management
+guide (draft)</a>.
+Alternatively, see the "How to release" developer documentation of any
+established Apache project.  (The author is familiar with
+<a href="http://subversion.apache.org/docs/community-guide/releasing#release-creating">this one</a>,
+from this project.)</p>
+<h4 id="owned-controlled-hardware">Must releases be built on hardware owned and controlled by the committer?<a class="headerlink" href="#owned-controlled-hardware" title="Permalink">&para;</a></h4>
+<p>Strictly speaking, releases must be <strong><a href="https://svn.apache.org/repos/private/committers/tools/releases/compare_dirs.pl">verified</a></strong>
+on hardware owned and controlled by the committer.  That means hardware the
+committer has  physical possession and control of and exclusively full
+administrative/superuser access to.  That's because only such hardware is
+qualified to hold a PGP private key, and the release should be verified on the
+machine the private key lives on or on a machine as trusted as that.</p>
+<p>Practically speaking, when a release consists of anything beyond an archive
+(e.g., tarball or zip file) of a source control tag, the only practical way to
+validate that archive is to build it locally; manually inspecting generated
+files (especially binary files) is not feasible.  So, basically, "Yes".</p>
+<p><em>Note: This answer refers to the process used to produce a release artifact
+from a source control tag.  It does not refer to testing that artifact for
+technical quality.</em></p>
+<h3 id="mirroring">Release Distribution Questions<a class="headerlink" href="#mirroring" title="Permalink">&para;</a></h3>
+<h4 id="host-rc">Where can we host test packages (nightly builds and release candidates)?<a class="headerlink" href="#host-rc" title="Permalink">&para;</a></h4>
+<p>Test packages are for use by consenting developers and interested community
+members only, so they should not be hosted or linked on pages intended for end
+users, or released using a <code>closer.lua</code> script.</p>
+<p>Projects should use the
+<a href="https://dist.apache.org/repos/dist/dev"><code>/dev</code> tree of the <code>dist</code> repository</a>
+or the staging features of repository.apache.org
+to host release candidates posted for developer testing/voting (prior to being,
+potentially, formally blessed as a GA release).</p>
+<p>Nightly Builds that are not release candidates can be hosted at <a href="https://ci.apache.org/projects">ci.apache.org projects area</a>,
+just file an INFRA ticket.</p>
+<h4 id="host-GA">Where can we host public (GA) releases?<a class="headerlink" href="#host-GA" title="Permalink">&para;</a></h4>
+<p>Current releases must be served from the ASF content distribution system by placing them under
+<code>https://downloads.apache.org/</code> (see <a href="#upload-ci">How do I upload a release?</a>).</p>
+<p>Project download pages must use a <code>closer.lua</code> script and not link directly to the main Apache Web site; see <a href="https://infra.apache.org/release-download-pages.html" target="_blank">instructions for creating download pages</a> for further details.
+The website documentation for the software must contain a link to the download page for the source.</p>
+<p>Project websites (<code>http:// {project}.apache.org</code>),
+VMs (<code>http:// {project}.zones.apache.org</code> and <code>http://{project}-vm.apache.org</code>),
+and source control repositories (<code>svn.apache.org</code> and Git repositories)
+may not be used to distribute releases --- that is, releases should not be
+downloaded from them.</p>
+<h4 id="archived">How are releases archived?<a class="headerlink" href="#archived" title="Permalink">&para;</a></h4>
+<p>All releases are archived on <a href="http://archive.apache.org/dist/">http://archive.apache.org/dist/</a>.</p>
+<p>An automated process adds releases to the archive about a day after
+they first appear on to <a href="https://downloads.apache.org/">https://downloads.apache.org/</a>.
+Once a release is placed under <code>https://downloads.apache.org/</code> it will automatically be copied over
+to <code>http://archive.apache.org/dist/</code> and held there permanently, even after it is deleted from <code>https://downloads.apache.org/</code>.</p>
+<p>If you have (legacy?) releases that never got archived, ask infra to copy them to <code>http://archive.apache.org/dist/</code>.</p>
+<h4 id="when-to-archive">When should an old release be archived?<a class="headerlink" href="#when-to-archive" title="Permalink">&para;</a></h4>
+<p><code>downloads.apache.org</code> should contain <em>the latest release in each branch
+that is currently under development</em>. When development ceases on a version
+branch, releases of that branch should be removed from the project's download
+directory.</p>
+<p>(If the project uses svnpubsub, delete the artifacts from
+<code>https://dist.apache.org/repos/dist/release/&lt;TLP name&gt;/</code>.)</p>
+<p>For example, if Apache Foo 1.2.x is a newer release in the same line as
+Foo 1.1.a, then 1.1.a should be removed when 1.2.x is released.
+Note that all releases are automatically archived,
+see <a href="#how-to-archive">How Is An Old Release Moved To The Archives</a></p>
+<p>If Apache Foo 1.2 is a new branch, and development continues on 1.1 in
+parallel, then it is acceptable to serve both 1.1.a and 1.2.x from <code>/dist</code>.</p>
+<h4 id="upload-ci">How do I upload a release ?<a class="headerlink" href="#upload-ci" title="Permalink">&para;</a></h4>
+<p>By committing your release tarballs to the appropriate subdirectory (i.e. TLP name) of the
+<a href="https://dist.apache.org/repos/dist/release/"><code>https://dist.apache.org/repos/dist/release/</code></a>
+repository.  Our synchronization process will push the files to <a href="https://downloads.apache.org/">the master
+download site</a> within 15 minutes.</p>
+<p>Wait about an hour after uploading a new release before updating the project download page.</p>
+<p>The repository directory
+<code>https://dist.apache.org/repos/dist/release/&lt;TLP name&gt;/</code>
+is for <strong>official releases only</strong>, i.e. archives (+ sigs, hashes) that have been approved
+by the PMC. For this reason, <strong>by default only PMC members can update the dist/release directory tree</strong>.</p>
+<p>If the Release Manager is not a member of the PMC, they will need to ask a PMC member to do the actual release publication.</p>
+<p>The PMC can also vote to let non-PMC-members update the dist/release area.
+To get this set up, please open a JIRA ticket at the <a href="https://issues.apache.org/jira/browse/INFRA">INFRA JIRA</a> referencing the PMC vote.</p>
+<h4 id="stage">Where can I stage a release candidate?<a class="headerlink" href="#stage" title="Permalink">&para;</a></h4>
+<p>There is also a development area under
+<code>https://dist.apache.org/repos/dist/dev/&lt;TLP name&gt;/</code>
+which can be used for development releases.
+For example snapshots and release candidates can be stored here.  One important item to note
+is that this directory does not get published to the content distribution system via svnpubsub.  It is intended to
+act as a staging location in preparation for the release to become official.</p>
+<p>All committers on a project can write to the dist/dev area for the project.</p>
+<p>If used for release candidates, then following a successful vote, the
+appropriate files can be moved from the dev/ tree to the release/ tree
+in order to publish them.</p>
+<p>Commit mails to the <code>dist/</code> repository go to your normal project mailing lists.</p>
+<h4 id="heads-up">Do I need to talk to Infrastructure before distributing a release?<a class="headerlink" href="#heads-up" title="Permalink">&para;</a></h4>
+<p>Most projects can just distribute a release as described in the previous two
+questions.  However, releases that are likely to strain content distribution resources <strong>must</strong> be coordinated with infrastructure.</p>
+<p>Releases of more than 1GB of artifacts require a heads-up to Infrastructure in advance.</p>
+<p>Specific exemptions from other dist policies (such as what may or must or must
+not be distributed via the content distribution system) also need to be coordinated with Infrastructure.</p>
+<h4 id="build-directories">Which Directory for what build?<a class="headerlink" href="#build-directories" title="Permalink">&para;</a></h4>
+<table class="table">
+<thead>
+<tr>
+<th>Type</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nightly Builds</td>
+<td>ci.apache.org/projects</td>
+</tr>
+<tr>
+<td>Current Releases</td>
+<td>downloads.apache.org</td>
+</tr>
+<tr>
+<td>Older Releases</td>
+<td>archive.apache.org/dist</td>
+</tr></tbody></table>
+<h4 id="how-to-archive">How is an old release moved to the archives?<a class="headerlink" href="#how-to-archive" title="Permalink">&para;</a></h4>
+<p><code>downloads.apache.org</code> is automatically archived. Therefore, a copy of an
+official release will already exist in the archives. To move a release to
+the archives, just delete the copy in your project's dist directory. Remember to
+update any links from the download page.</p>
+<h4 id="maven-artifacts">How do I release Maven artifacts?<a class="headerlink" href="#maven-artifacts" title="Permalink">&para;</a></h4>
+<p>See the guide to <a href="https://infra.apache.org/publishing-maven-artifacts.html" target="_blank">Publishing Maven
+Releases</a>.</p>
+<h3 id="license">Release licensing questions<a class="headerlink" href="#license" title="Permalink">&para;</a></h3>
+<p>Please read <a href="apply-license">Applying the Apache License, Version
+2.0</a> and check the <a href="/licenses/">Apache Licenses</a> and
+<a href="/legal/">Apache Legal</a> pages for current information.</p>
+<h4 id="which-files-contain-license">Which files must contain an ASF license text?<a class="headerlink" href="#which-files-contain-license" title="Permalink">&para;</a></h4>
+<p>Every source file must contain the appropriate ASF License text.</p>
+<h4 id="full-copy-for-each-source-file">Is a full copy of the license required in each source file?<a class="headerlink" href="#full-copy-for-each-source-file" title="Permalink">&para;</a></h4>
+<p>In short, only one copy of the license is needed per distribution. This
+full license file should be placed at the root of the distribution in a
+file named LICENSE. For software developed at the ASF, each source file
+need only contain the <a href="/legal/src-headers.html#headers">boilerplate
+notice</a>.</p>
+<h4 id="attribution-notices">Where is the right place for attribution notices?<a class="headerlink" href="#attribution-notices" title="Permalink">&para;</a></h4>
+<p>The new license allows for a NOTICE file that contains such attribution
+notices (including the Apache attribution notice). Read
+<a href="/legal/src-headers.html#notice">this</a>.</p>
+<p>Any attribution notices contained within existing source files should be
+moved into the file. The NOTICE file must included within the distributed
+next to the LICENSE file.</p>
+<p>Ensure that the standard ASF attribution notice is contained in any new
+NOTICE file created.</p>
+<h4 id="notice-content">What content is appropriate for the NOTICE file?<a class="headerlink" href="#notice-content" title="Permalink">&para;</a></h4>
+<p>Read <a href="/legal/src-headers.html#notice">this</a>.</p>
+<p>Only mandatory information required by the product's software licenses. Not
+suitable for normal documentation.</p>
+<h4 id="notice-required">Is a NOTICE file required for pure ASF code?<a class="headerlink" href="#notice-required" title="Permalink">&para;</a></h4>
+<p>Yes! The NOTICE file must contain the standard ASF attribution, given
+below:</p>
+<pre><code>This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+</code></pre>
+<p>N.B. Unfortunately versions of this document prior to 2013-01-30 (r1440650) were incorrect, as they used the phrase:
+"developed by" instead of "developed at".
+The official wording was established in section 6C of the
+<a href="/foundation/records/minutes/2006/board_minutes_2006_05_24.txt">board minutes for May 24 2006</a></p>
+<!-- Note: the text was originally added in: r201713 see #INFRA-367 -->
+<h4 id="distributing-code-under-several-licenses">If an artifact contains code under several licenses, should it contain several license files?<a class="headerlink" href="#distributing-code-under-several-licenses" title="Permalink">&para;</a></h4>
+<p>When an artifact contains code under several licenses, the LICENSE file
+should contain details of all these licenses. For each component which is
+not Apache licensed, details of the component should be appended to the LICENSE file.
+The component license itself may also be appended, or it may be stored elsewhere in the
+artifact with a pointer to it from the LICENSE file, e.g. if the license is long.</p>
+<p><a href="https://svn.apache.org/repos/asf/httpd/httpd/trunk/LICENSE">Here</a> is an
+example showing appended licenses.</p>
+<h4 id="distribute-other-artifacts">What are the requirements to distribute other artifacts in addition to the source package?<a class="headerlink" href="#distribute-other-artifacts" title="Permalink">&para;</a></h4>
+<p>ASF releases typically contain additional material together with the source
+package. This material may include documentation concerning the release but
+must contain LICENSE and NOTICE files. As mentioned above, these artifacts
+must be signed by a committer with a detached signature if they are to be
+placed in the project's distribution directory.</p>
+<p>Again, these artifacts may be distributed only if they contain LICENSE and
+NOTICE files. For example, the Java artifact format is based on a
+compressed directory structure and those projects wishing to distribute
+jars must place LICENSE and NOTICE files in the META-INF directory within
+the jar.</p>
+<p>Nothing in this section is meant to supersede the requirements defined
+<a href="#what">here</a> and <a href="#what-must-every-release-contain">here</a> that all
+releases be primarily based on a signed source package.</p>
+<h3 id="stats">Questions About Release Statistics<a class="headerlink" href="#stats" title="Permalink">&para;</a></h3>
+<h4 id="downloads">Is there any way to measure how many times XYZ has been downloaded?<a class="headerlink" href="#downloads" title="Permalink">&para;</a></h4>
+<p>Visit <a href="https://logging1-he-de.apache.org/stats/" target="_blank">the download stats page</a>.</p>
+
+</div>  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <br />
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-2">
+          <h5 class="white">Community</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://community.apache.org/">Overview</a></li>
+            <li><a href="/foundation/conferences.html">Conferences</a></li>
+            <li><a href="http://community.apache.org/gsoc.html">Summer of Code</a></li>
+            <li><a href="http://community.apache.org/newcomers/">Getting Started</a></li>
+            <li><a href="/foundation/how-it-works.html">The Apache Way</a></li>
+            <li><a href="/travel/">Travel Assistance</a></li>
+            <li><a href="/foundation/getinvolved.html">Get Involved</a></li>
+            <li><a href="/foundation/policies/conduct.html">Code of Conduct</a></li>
+            <li><a href="http://community.apache.org/newbiefaq.html">Community FAQ</a></li>
+            <li><a href="/memorials/">Memorials</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Innovation</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://incubator.apache.org/">Incubator</a></li>
+            <li><a href="http://labs.apache.org/">Labs</a></li>
+            <li><a href="/licenses/">Licensing</a></li>
+            <li><a href="/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Tech Operations</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="/dev/">Developer Information</a></li>
+            <li><a href="/dev/infrastructure.html">Infrastructure</a></li>
+            <li><a href="/security/">Security</a></li>
+            <li><a href="http://status.apache.org">Status</a></li>
+            <li><a href="/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Press</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="/press/">Overview</a></li>
+            <li><a href="https://blogs.apache.org/">ASF News</a></li>
+            <li><a href="https://blogs.apache.org/foundation/">Announcements</a></li>
+            <li><a href="https://twitter.com/TheASF">Twitter Feed</a></li>
+            <li><a href="/press/#contact">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Legal</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="/legal/">Legal Affairs</a></li>
+            <li><a href="/legal/dmca.html">DMCA</a></li>
+            <li><a href="/licenses/">Licensing</a></li>
+            <li><a href="/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="/foundation/records/">Public Records</a></li>
+            <li><a href="/foundation/policies/privacy.html">Privacy Policy</a></li>
+            <li><a href="/licenses/exports/">Export Information</a></li>
+            <li><a href="/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-1">
+        </div>
+
+      </div>
+      <hr class="col-lg-12 hr-white" />
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center">Copyright &#169; 2023 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+          <p class="text-center">Apache and the Apache feather logo are trademarks of The Apache Software Foundation. </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- / Footer -->
+
+  <script src="/js/jquery-2.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    (function($){
+    $(document).ready(function(){
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).parent().siblings().removeClass('open');
+    $(this).parent().toggleClass('open');
+    console.log('WOrked');
+    });
+    });
+    })(jQuery);
+  </script>
+</body>
+</html>

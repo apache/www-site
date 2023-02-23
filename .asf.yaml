@@ -1,0 +1,38 @@
+# See: https://cwiki.apache.org/confluence/display/INFRA/git+-+.asf.yaml+features
+github:
+  features:
+    # Enable issue management
+    issues: true
+
+notifications:
+  commits: site-cvs@apache.org
+  issues: site-cvs@apache.org
+  pullrequests: site-cvs@apache.org
+  jira_options: link label
+  commits_by_path:
+    "data/eccn/*": legal-discuss@apache.org
+    "content/legal/*": legal-discuss@apache.org
+    "content/licenses/*": legal-discuss@apache.org
+    "content/free/*": legal-discuss@apache.org
+    "content/foundation/license-faq.*": legal-discuss@apache.org    
+    "content/foundation/marks/*": 
+      - legal-discuss@apache.org
+      - trademarks@apache.org
+
+pelican:
+  notify: site-cvs@apache.org
+  autobuild: preview/*
+  target: asf-site
+  theme: theme/apache
+  minimum_page_count: 180
+  whoami: main
+
+staging:
+  profile: ~
+  whoami: asf-site
+  autostage: preview/*
+  
+publish:
+  profile: ~
+  whoami: asf-site
+
