@@ -60,7 +60,7 @@ and there are regular builds which pick up changes within an hour or so.
 If you wish to update and test the site locally, there is a Docker build script you can use.
 You will also need Git, and familiarity with working in a command-line shell.
 
-**The following instructions should work for Unix and macOS, but will need adjustment for Windows.**
+**The following instructions should work for Unix, Linux, and macOS, but will need adjustment for Windows.**
 
 - Install [Docker](https://www.docker.com/get-started).
 - Change to a suitable directory.
