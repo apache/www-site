@@ -77,9 +77,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
           <li role="presentation"><a href="#digital" aria-controls="digital" role="tab" data-toggle="tab">Using *Pay online digital payments</a>
           <li role="presentation"><a href="#ach" aria-controls="ach" role="tab" data-toggle="tab">Using ACH bank payments</a></li>
           <li role="presentation"><a href="#apacheSwag" aria-controls="apacheSwag" role="tab" data-toggle="tab">Buy Apache-branded swag</a></li>
-          <li role="presentation"><a href="#smileAmazon" aria-controls="smileAmazon" role="tab" data-toggle="tab">Shop smile.amazon.com</a></li>
           <li role="presentation"><a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab">With PayPal</a></li>
-          <li role="presentation"><a href="#amazon" aria-controls="amazon" role="tab" data-toggle="tab">With Amazon</a></li>
           <li role="presentation"><a href="#check" aria-controls="check" role="tab" data-toggle="tab">Mail us a check</a></li>
         </ul>
       </div>
@@ -114,26 +112,11 @@ license: https://www.apache.org/licenses/LICENSE-2.0
                   with the corresponding <a href="/logos">project logo</a>.</p>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="smileAmazon">
-            <div class="well">
-              <h3>Shop smile.amazon.com</h3>
-              <p>Start your retail journey at <a href="https://smile.amazon.com/" target="_blank">https://smile.amazon.com/</a>, select the ASF as your charitable organization, and the AmazonSmile Foundation will donate 0.5% of the purchase price of eligible products to the ASF.</p>
-              <p>Now that’s smart shopping!</p>
-            </div>
-          </div>
           <div role="tabpanel" class="tab-pane" id="paypal">
             <div class="well">
               <h3>Donate with PayPal</h3>
     <p>Use your <a href="http://donate.apache.org/" target="_blank">PayPal account</a> to support the ASF via one-time or recurring donations.</p>
               <p>Those without a PayPal account may also contribute to the ASF using the <a href="https://www.paypal.com/us/fundraiser/charity/1696565" target="_blank">PayPal Giving Fund</a>. After you donate, you'll receive a tax receipt from the PayPal Giving Fund.</p>
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="amazon">
-            <div class="well">
-              <h3>Donate through Amazon</h3>
-              <script async src="https://static-na.payments-amazon.com/OffAmazonPayments/us/js/Widgets.js"></script>
-              <div data-ap-widget-type="expressDonationWidget" data-ap-widget-theme="ap-dark" data-ap-widget-amount-presets="5,25,50,100" data-ap-signature="JUgOpxW0Clcj26ViJ0YsVFbIRWnMEj2fRaimKGx77sY%3D" data-ap-seller-id="A3AAQXMTGPL1GN" data-ap-access-key="AKIAIOQ6IDLL52GFQ33A" data-ap-lwa-client-id="amzn1.application-oa2-client.a1c02356ef9245aa97cb16bbd6a94859" data-ap-return-url="https://www.apache.org" data-ap-currency-code="USD" data-ap-note="Thank you for your donation!" data-ap-shipping-address-required="false" data-ap-payment-action="AuthorizeAndCapture" >
-              </div>
             </div>
           </div>
           <div role="tabpanel" class="tab-pane" id="check">
