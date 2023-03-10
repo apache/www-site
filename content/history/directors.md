@@ -6,7 +6,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 This timeline shows who has served when on the Board of Directors of The ASF.
 
-It <em>not</em> an official record - just an informational page.
+It is <em>not</em> an official record - just an informational page.
 
 <noscript>Sorry - the timeline diagram requires JavaScript.</noscript>
 
