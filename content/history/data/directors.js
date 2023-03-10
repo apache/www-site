@@ -1,13 +1,11 @@
-function director_data() {
-    var dataTable = new google.visualization.DataTable();
+if(!window.asf) {
+    window.asf = {};
+}
 
-    dataTable.addColumn({ type: 'string', id: 'director' });
-    dataTable.addColumn({ type: 'string', id: 'bar label' });
-    dataTable.addColumn({ type: 'string', role: 'tooltip' });
-    dataTable.addColumn({ type: 'date', id: 'start' });
-    dataTable.addColumn({ type: 'date', id: 'end' });
+window.asf.getDirectorsTimelineData = function () {
+    let data = [];
 
-    var idNames = {
+    const idNames = {
         ben: 'Ben Laurie',
         bayard: 'Henri Yandell',
         bdelacretaz: 'Bertrand Delacretaz',
@@ -67,7 +65,24 @@ function director_data() {
 
     function date(y, m, d) {
         // Date's month is [0..11]
-        return new Date(y, m-1, d);
+        return new Date(y, m - 1, d);
+    }
+
+    function add(id, start, end) {
+        let existing = data.find(d => d.id == id);
+        if(!existing) {
+            const fullName = idNames[id];
+            existing = {
+                id,
+                name: fullName ? fullName : id,
+                segments: []
+            };
+            data.push(existing);
+        }
+        existing.segments.push({
+            start,
+            end
+        })
     }
 
     // NOTE: these are the dates that election results are announced,
@@ -100,6 +115,9 @@ function director_data() {
     y2022 = date(2022, 3, 1);
     y2023 = date(2023, 3, 9);
 
+    // Just guessing this date for now
+    y2024 = date(2024, 3, 31);
+
     // Transition dates for outgoing/incoming Directors
     // fielding -> striker
     t2004 = date(2004, 1, 21);
@@ -117,18 +135,6 @@ function director_data() {
     t2019b = date(2019, 5, 16);
     // wohali -> wave
     t2019c = date(2019, 9, 26);
-
-    function add(id, start, end) {
-        var name = idNames[id];
-        var y1 = start.getFullYear();
-        var m1 = start.getMonth();
-        var d1 = start.getDate();
-        var y2 = end.getFullYear();
-        var m2 = end.getMonth();
-        var d2 = end.getDate();
-        var tip = `${name}, from ${y1}/${m1}/${d1} to ${y2}/${m2}/${2}`;
-        dataTable.addRow([id, id, tip, start, end]);
-    }
 
     add('sameer', y1999, y2000);
     add('bhyde', y1999, y2000);
@@ -206,7 +212,7 @@ function director_data() {
     add('bdelacretaz', y2021, y2022);
     add('fielding', y2021, y2022);
     add('sharan', y2021, y2022);
-    add('justin', y2021, y2022);
+    add('jmclean', y2021, y2022);
     add('clr', y2021, y2022);
     add('rubys', y2021, y2022);
     add('rvs', y2021, y2022);
@@ -223,5 +229,15 @@ function director_data() {
     add('rvs', y2022, y2023);
     add('striker', y2022, y2023);
 
-    return dataTable;
+    add('rbowen', y2023, y2024);
+    add('bdelacretaz', y2023, y2024);
+    add('cdutz', y2023, y2024);
+    add('sharan', y2023, y2024);
+    add('ningjiang', y2023, y2024);
+    add('striker', y2023, y2024);
+    add('clr', y2023, y2024);
+    add('jmclean', y2023, y2024);
+    add('curcuru', y2023, y2024);
+
+    return data;
 }

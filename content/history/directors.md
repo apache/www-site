@@ -1,30 +1,20 @@
-Title: ASF History Project - Directors Timeline
+Title: ASF Board of Directors Timeline
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
-<noscript>Sorry, your browser settings do not support JavaScript, so the timeline does not appear</noscript>
+This timeline shows who has served when on the Board of Directors of The ASF.
 
-This timeline shows the terms of office of those who have served as Directors of The Apache Software Foundation. Hover your mouse cursor over any entry in the chart to see further information about that person's term.
+It <em>not</em> an official record - just an informational page.
 
-<div id="timeline-tooltip" style="height: 900px;"></div>
+<noscript>Sorry - the timeline diagram requires JavaScript.</noscript>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="data/directors.js"></script>
+<div id="graph" style="width: 100%; height:500em;"></div>
+
+<script src="./scripts/echarts.js"></script>
+<script src="./data/directors.js"></script>
+<script src="./scripts/directors-timeline.js"></script>
 <script type="text/javascript">
-  // see https://developers.google.com/chart/interactive/docs/gallery/timeline
-  google.charts.load('current',  {'packages':['timeline']});
-  google.charts.setOnLoadCallback(drawChart);
-
-  function drawChart()  {
-    var container = document.getElementById('timeline-tooltip');
-    var chart = new google.visualization.Timeline(container);
-    var dataTable = director_data();
-    var options =  {
-          timeline:  { showRowLabels: false }
-          };
-
-    chart.draw(dataTable, options);
-  }
+  window.asf.directorsTimelineChart(document.getElementById('graph'), window.asf.getDirectorsTimelineData())
 </script>
