@@ -285,6 +285,7 @@ apache.org/) |
 | lektran | Scott Gray | [OFBiz](http://ofbiz.apache.org)  |
 | lewismc | [Lewis John McGibbney](http://home.apache.org/~lewismc) | [Nutch](http://nutch.apache.org), [Gora](http://gora.apache.org), [Any23](http://any23.apache.org), [Tika](http://tika.apache.org), [OODT](http://oodt.apache.org), [Open Climate Workbench](http://climate.apache.org), [Usergrid](http://usergrid.apache.org), [Joshua](http://joshua.apache.org)|
 | lgo | Lieven Govaerts |
+| lhotari | Lari Hotari | [Pulsar](https://pulsar.apache.org)|
 | lresende | Luciano Resende |
 | luc | Luc Maisonobe | [commons](http://commons.apache.org/)|
 | luke1410 | [Stefan Hett](http://www.luke1410.de/) | [Subversion](https://subversion.apache.org/) ; [APR](https://apr.apache.org/) |
