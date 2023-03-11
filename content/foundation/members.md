@@ -471,6 +471,7 @@ apache.org/) |
 | wrowe | William A. Rowe, Jr. | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
 | wsanchez | [Wilfredo Sánchez](http://www.mit.edu/people/wsanchez/) |  [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | wsmoak | [Wendy Smoak](http://www.wendysmoak.com) |  [Struts](http://struts.apache.org/) ; [MyFaces](http://myfaces.apache.org/) ; [Shale](http://shale.apache.org/)|
+| xinwang | [Xin Wang](https://people.apache.org/~xinwang/) | [Storm](https://storm.apache.org/) , [RocketMQ](https://rocketmq.apache.org/) , [IoTDB](https://iotdb.apache.org/) , [StreamPipes](https://streampipes.apache.org/)|
 | xuefu | Xuefu Zhang | [Hive](http://hive.apache.org) ; [Pig](http://pig.apache.org) |
 | yegor | Yegor Kozlov |
 | ylavic | Yann Ylavic | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
