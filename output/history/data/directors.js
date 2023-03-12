@@ -118,28 +118,28 @@ window.asf.getDirectorsTimelineData = function () {
     // Just guessing this date for now
     y2024 = date(2024, 3, 31);
 
-    // Transition dates for outgoing/incoming Directors
+    // Change dates for outgoing/incoming Directors
     // fielding -> striker
-    t2004 = date(2004, 1, 21);
+    change_2004 = date(2004, 1, 21);
     // bayard -> geirm
-    t2010 = date(2010, 8, 18);
+    change_2010 = date(2010, 8, 18);
     // lrosen -> dkulp
-    t2012 = date(2012, 3, 21);
+    change_2012 = date(2012, 3, 21);
     // gstein -> rubys
-    t2016a = date(2016, 9, 21);
+    change_2016a = date(2016, 9, 21);
     // rubys -> rbowen
-    t2016b = date(2016, 10, 19);
+    change_2016b = date(2016, 10, 19);
     // psteitz -> danny
-    t2019a = date(2019, 5, 16);
+    change_2019a = date(2019, 5, 16);
     // jim -> tdunning
-    t2019b = date(2019, 5, 16);
+    change_2019b = date(2019, 5, 16);
     // wohali -> wave
-    t2019c = date(2019, 9, 26);
+    change_2019c = date(2019, 9, 26);
 
     add('sameer', y1999, y2000);
     add('bhyde', y1999, y2000);
     add('randy', y1999, y2003);
-    add('fielding', y1999, t2004);
+    add('fielding', y1999, change_2004);
     add('brian', y1999, y2005);
     add('ben', y1999, y2004);
     add('coar', y1999, y2007);
@@ -147,11 +147,11 @@ window.asf.getDirectorsTimelineData = function () {
     add('jim', y1999, y2018);
     add('dougm', y2000, y2001);
     add('rasmus', y2000, y2001);
-    add('gstein', y2001, t2016a);
+    add('gstein', y2001, change_2016a);
     add('stoddard', y2001, y2002);
     add('rubys', y2002, y2009);
     add('mjc', y2003, y2004);
-    add('striker', t2004, y2007);
+    add('striker', change_2004, y2007);
     add('stefano', y2004, y2006);
     add('geirm', y2004, y2005);
     add('ben', y2005, y2006);
@@ -170,12 +170,12 @@ window.asf.getDirectorsTimelineData = function () {
     add('curcuru', y2009, y2012);
     add('bdelacretaz', y2010, y2019);
     add('rubys', y2010, y2016);
-    add('bayard', y2010, t2010);
-    add('geirm', t2010, y2011);
+    add('bayard', y2010, change_2010);
+    add('geirm', change_2010, y2011);
     add('noirin', y2010, y2011);
     add('brett', y2011, y2019);
-    add('lrosen', y2011, t2012);
-    add('dkulp', t2012, y2012);
+    add('lrosen', y2011, change_2012);
+    add('dkulp', change_2012, y2012);
     add('rbowen', y2012, y2013);
     add('rgardler', y2012, y2013);
     add('curcuru', y2013, y2014);
@@ -187,20 +187,20 @@ window.asf.getDirectorsTimelineData = function () {
     add('marvin', y2016, y2017);
     add('markt', y2016, y2019);
     add('isabel', y2016, y2017);
-    add('rubys', t2016a, t2016b);
-    add('rbowen', t2016b, y2020);
+    add('rubys', change_2016a, change_2016b);
+    add('rbowen', change_2016b, y2020);
     add('tdunning', y2017, y2019);
-    add('psteitz', y2017, t2019a);
-    add('danny', t2019a, y2020);
+    add('psteitz', y2017, change_2019a);
+    add('danny', change_2019a, y2020);
     add('isabel', y2018, y2019);
     add('rvs', y2018, y2020);
     add('myrle', y2019, y2020);
     add('druggeri', y2019, y2020);
     add('clr', y2019, y2021);
-    add('jim', y2019, t2019b);
-    add('tdunning', t2019b, y2020);
-    add('wohali', y2019, t2019c);
-    add('wave', t2019c, y2020);
+    add('jim', y2019, change_2019b);
+    add('tdunning', change_2019b, y2020);
+    add('wohali', y2019, change_2019c);
+    add('wave', change_2019c, y2020);
     add('bdelacretaz', y2020, y2021);
     add('fielding', y2020, y2021);
     add('niclas', y2020, y2021);
