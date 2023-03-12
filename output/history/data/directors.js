@@ -136,6 +136,7 @@ window.asf.getDirectorsTimelineData = function () {
     // wohali -> wave
     change_2019c = date(2019, 9, 26);
 
+    // All Directors over history, with their begin/end timeframes.
     add('sameer', y1999, y2000);
     add('bhyde', y1999, y2000);
     add('randy', y1999, y2003);
@@ -196,45 +197,27 @@ window.asf.getDirectorsTimelineData = function () {
     add('rvs', y2018, y2020);
     add('myrle', y2019, y2020);
     add('druggeri', y2019, y2020);
-    add('clr', y2019, y2021);
+    add('clr', y2019, y2022);
     add('jim', y2019, change_2019b);
     add('tdunning', change_2019b, y2020);
     add('wohali', y2019, change_2019c);
     add('wave', change_2019c, y2020);
-    add('bdelacretaz', y2020, y2021);
-    add('fielding', y2020, y2021);
+    add('fielding', y2020, y2023);
     add('niclas', y2020, y2021);
-    add('jmclean', y2020, y2021);
-    add('rubys', y2020, y2021);
+    add('jmclean', y2020, y2022);
+    add('rubys', y2020, y2023);
     add('pats', y2020, y2021);
-    add('striker', y2020, y2021);
-
-    add('bdelacretaz', y2021, y2022);
-    add('fielding', y2021, y2022);
-    add('sharan', y2021, y2022);
-    add('jmclean', y2021, y2022);
-    add('clr', y2021, y2022);
-    add('rubys', y2021, y2022);
-    add('rvs', y2021, y2022);
-    add('striker', y2021, y2022);
+    add('rvs', y2021, y2023);
     add('wusheng', y2021, y2022);
+    // ABOVE: history of begin/end for prior Directors
 
-    add('rbowen', y2022, y2023);
-    add('bdelacretaz', y2022, y2023);
-    add('cdutz', y2022, y2023);
-    add('fielding', y2022, y2023);
-    add('sharan', y2022, y2023);
-    add('ningjiang', y2022, y2023);
-    add('rubys', y2022, y2023);
-    add('rvs', y2022, y2023);
-    add('striker', y2022, y2023);
-
-    add('rbowen', y2023, y2024);
-    add('bdelacretaz', y2023, y2024);
-    add('cdutz', y2023, y2024);
-    add('sharan', y2023, y2024);
-    add('ningjiang', y2023, y2024);
-    add('striker', y2023, y2024);
+    // Current set of Directors
+    add('rbowen', y2022, y2024);
+    add('bdelacretaz', y2020, y2024);
+    add('cdutz', y2022, y2024);
+    add('sharan', y2021, y2024);
+    add('ningjiang', y2022, y2024);
+    add('striker', y2020, y2024);
     add('clr', y2023, y2024);
     add('jmclean', y2023, y2024);
     add('curcuru', y2023, y2024);
