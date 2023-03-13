@@ -357,6 +357,7 @@ apache.org/) |
 | pottlinger | Philipp Ottlinger | [Creadur](https://creadur.apache.org) |
 | pquerna | [Paul Querna](http://paul.querna.org/) |
 | proyal | [Peter Royal](http://fotap.org/~osi) |
+| priyasharma | Priya Sharma | [OFBiz](http://ofbiz.apache.org) ; [ComDev](http://community.apache.org)
 | psteitz | Phil Steitz | [Jakarta](http://jakarta.apache.org) ; [Directory](http://directory.apache.org)|
 | ptgoetz | P. Taylor Goetz | [Storm](http://storm.apache.org) |
 | purplecabbage | Jesse MacFadyen | [Cordova](http://cordova.apache.org) |
