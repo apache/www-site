@@ -428,6 +428,7 @@ apache.org/) |
 | stevenn | Steven Noels | [Cocoon](http://cocoon.apache.org/) ; [Forrest](http://xml.apache.org/forrest/)|
 | striker | Sander Striker | [APR](http://apr.apache.org/) ; [commons](http://commons.apache.org/) ; [httpd](http://httpd.apache.org/) ; [incubator](http://incubator.apache.org/) ; infrastructure|
 | struberg | Mark Struberg |
+| sunilg | Sunil Govindan | [Hadoop](https://hadoop.apache.org), [Submarine](https://submarine.apache.org), [YuniKorn](https://yunikorn.apache.org), [Sedona](https://sedona.apache.org) |
 | supun | Supun Kamburugamuva |
 | svogel | Sven Vogel | [CloudStack](http://cloudstack.apache.org) |
 | sylvain | [Sylvain Wallez](http://home.apache.org/~sylvain) | [Cocoon](http://cocoon.apache.org/) ; [Avalon](http://avalon.apache.org/)|
@@ -468,11 +469,12 @@ apache.org/) |
 | weber | Volker Weber | [MyFaces](http://myfaces.apache.org/)|
 | weimer | [Markus Weimer](http://www.markusweimer.com) | [REEF](https://reef.apache.org/) | 
 | wenming | [Ming Wen](mailto:wenming@apache.org) | [APISIX](https://apisix.apache.org) |
-| wwei | [Weiwei Yang](https://yangwwei.github.io) | [Hadoop](https://hadoop.apache.org), [Ozone](https://ozone.apache.org), [YuniKorn](https://yunikorn.apache.org) |
+| wilfreds | Wilfred Spiegelenburg | [Hadoop](https://hadoop.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | woonsan | [Woonsan Ko](http://woonsanko.blogspot.com/) | [Portals](https://portals.apache.org/) , [Commons](https://commons.apache.org/) , [FreeMarker](https://freemarker.apache.org/)|
 | wrowe | William A. Rowe, Jr. | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
 | wsanchez | [Wilfredo Sánchez](http://www.mit.edu/people/wsanchez/) |  [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | wsmoak | [Wendy Smoak](http://www.wendysmoak.com) |  [Struts](http://struts.apache.org/) ; [MyFaces](http://myfaces.apache.org/) ; [Shale](http://shale.apache.org/)|
+| wwei | [Weiwei Yang](https://yangwwei.github.io) | [Hadoop](https://hadoop.apache.org), [Ozone](https://ozone.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | xinwang | [Xin Wang](https://people.apache.org/~xinwang/) | [Storm](https://storm.apache.org/) , [RocketMQ](https://rocketmq.apache.org/) , [IoTDB](https://iotdb.apache.org/) , [StreamPipes](https://streampipes.apache.org/)|
 | xuefu | Xuefu Zhang | [Hive](http://hive.apache.org) ; [Pig](http://pig.apache.org) |
 | yegor | Yegor Kozlov |
