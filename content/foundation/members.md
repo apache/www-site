@@ -153,7 +153,6 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | djencks | David Jencks |
 | djkevincr | Kevin Ratnasekera | [Gora](http://gora.apache.org), [Incubator](http://incubator.apache.org/) | 
 | dkulp | [J. Daniel Kulp](http://www.dankulp.com/blog) | [CXF](http://cxf.apache.org/) ; [Maven](http://maven.apache.org/) ; [ServiceMix](http://servicemix.apache.org)|
-| dlr | Daniel L. Rall | [Turbine](http://java.apache.org/turbine/) ; [Velocity](http://jakarta.apache.org/velocity/) ; Jakarta Commons ; XML-RPC ; Infrastructure|
 | dmeikle | David Meikle | [Tika](http://tika.apache.org) |
 | dpsenner | Dominik Psenner | [Logging](http://logging.apache.org/) |
 | drew | Andrew L. (Drew) Farris | [accumulo](http://accumulo.apache.org), [mahout](http://mahout.apache.org)|
@@ -334,7 +333,6 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | noel | Noel J. Bergman | [ApacheCon](http://www.apachecon.com/) , [incubator](http://incubator.apache.org/) , infrastructure , [James](http://james.apache.org/)|
 | norman | Norman Maurer |
 | nslater | [Naomi Slater](http://home.apache.org/~nslater/) | [CouchDB](http://couchdb.apache.org/), [ComDev](https://community.apache.org/), [Incubator](http://incubator.apache.org/), [CloudStack](http://cloudstack.apache.org/), [Stratos](http://stratos.apache.org/), [MetaModel](https://metamodel.apache.org/)|
-| nwellnhof | Nick Wellnhofer | [lucy](http://lucy.apache.org)|
 | oching | Maria Odea B. Ching |
 | oflebbe | Olaf Flebbe |[Bigtop](http://bigtop.apache.org)|
 | oheger | Oliver Heger |
@@ -544,6 +542,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | dch | [Dave Cottlehuber](mailto:dch@apache.org) | [CouchDB](http://couchdb.apache.org) |
 | dgaudet | [Dean Gaudet](http://arctic.org/~dean/) |
 | djd | Daniel Debrunner |
+| dlr | Daniel L. Rall | [Turbine](http://java.apache.org/turbine/) ; [Velocity](http://jakarta.apache.org/velocity/) ; Jakarta Commons ; XML-RPC ; Infrastructure|
 | dos | [Daryl C. W. O'Shea](http://daryl.dostech.ca/) | [SpamAssassin](http://spamassassin.apache.org/)|
 | dougm | Doug MacEachern |
 | dreid | David Reid | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
@@ -636,6 +635,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | nicolaken | Nicola Ken Barozzi |
 | nigel | Nigel Daley |
 | nlehuen | Nicolas Lehuen |
+| nwellnhof | Nick Wellnhofer | [lucy](http://lucy.apache.org)|
 | orcmid | [Dennis E. Hamilton](http://nfoWorks.org) | [OpenOffice](http://openoffice.apache.org/) |
 | otis | Otis Gospodnetic |
 | pamarcelot | Pierre-Arnaud Marcelot | [Directory](http://directory.apache.org/)|
