@@ -82,6 +82,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | ate | [Ate Douma](http://home.apache.org/~ate/) | [Airavata](https://airavata.apache.org/), [AsterixDB](https://asterixdb.apache.org/), [Commons](https://commons.apache.org/), [Incubator](https://incubator.apache.org/), [NetBeans](https://netbeans.apache.org/), [Portals](https://portals.apache.org/), [Streams](https://streams.apache.org/), [Wicket](https://wicket.apache.org/) |
 | awm | Aram W. Mirzadeh |  [httpd](http://httpd.apache.org/)|
 | ay | Akitoshi Yoshida |
+| ayushsaxena | Ayush Saxena | [Hadoop](https://hadoop.apache.org), [Hive](http://hive.apache.org), [Ozone](http://ozone.apache.org/) |
 | azeez | Mohamed Afkham Azeez |
 | bayard | Henri Yandell |
 | bdelacretaz | [Bertrand Delacrétaz](http://www.codeconsult.ch/) | [Cocoon](http://cocoon.apache.org/) , [FOP](http://xml.apache.org/fop/)|
