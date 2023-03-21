@@ -73,6 +73,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://craftercms.org">Crafter CMS</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
       <li><a target="_blank" rel="sponsored" href="https://dimealley.com/installment-loans/">Dime Alley</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://dollarhand.com/">Dollar Hand</a></li>
       <li><a target="_blank" rel="sponsored" href="https://goread.io/buy-instagram-followers">Goread.io Followers</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.hotwaxsystems.com">HotWax Systems</a></li>
