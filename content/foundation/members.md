@@ -137,6 +137,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | curcuru | Shane Curcuru | [xalan](http://xml.apache.org/xalan-j/) , [xml-commons](http://xml.apache.org/commons/)|
 | cutting | [Doug Cutting](http://blog.lucene.com/) |
 | cziegeler | [Carsten Ziegeler](mailto:cziegeler@apache.org) | [Sling](http://sling.apache.org/), [Felix](http://Felix.apache.org/), [Portals](http://portals.apache.org/)|
+| dahn | Daan Hoogland | [CloudStack](https://cloudstack.apache.org)|
 | dain | Dain Sundstrom |
 | danese | Danese Cooper |
 | danhaywood | Dan Haywood | [Causeway](https://causeway.apache.org) |
