@@ -156,6 +156,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | djkevincr | Kevin Ratnasekera | [Gora](http://gora.apache.org), [Incubator](http://incubator.apache.org/) | 
 | dkulp | [J. Daniel Kulp](http://www.dankulp.com/blog) | [CXF](http://cxf.apache.org/) ; [Maven](http://maven.apache.org/) ; [ServiceMix](http://servicemix.apache.org)|
 | dmeikle | David Meikle | [Tika](http://tika.apache.org) |
+| dongjoon | Dongjoon Hyun | [Spark](http://spark.apache.org), [ORC](http://orc.apache.org) |
 | dpsenner | Dominik Psenner | [Logging](http://logging.apache.org/) |
 | drew | Andrew L. (Drew) Farris | [accumulo](http://accumulo.apache.org), [mahout](http://mahout.apache.org)|
 | dsmiley | David Smiley | lucene, solr |
