@@ -37,9 +37,11 @@ The ASF expects academic researchers to adhere to their organization's policies 
 - The ASF does not generally partner, co-sign, or otherwise directly associate with other organizations or research efforts.
 - Ensure any bots, scraping, or other automated systems respect ASF server capacity, timeouts, and service intervals.  Excessive automated hits on [ASF infrastructure may result in a ban](https://infra.apache.org/infra-ban.html).
 - Research on code, version history, tooling, or any other technical products of the ASF must respect the license of any resources used.
-- Research on our publicly archived mailing lists is permitted; however we expect that any published research based on emails sent is either anonymized as to the individual participants, or is otherwise strictly in compliance with relevant research policies relating to individually identifying information.
-
-## Contact Us 
+- Research on our [publicly archived mailing lists](https://lists.apache.org/) is permitted; the [Apache Pony Mail project provides an API](https://ponymail.apache.org/docs/api.html); be sure to use smart rate limits.  [Apache Kibble may also be an interesting tool for researchers](https://kibble.apache.org/).
+- Please check with each individual ASF project community before sending general surveys.
+- Do **not** use aggregated personal or work email addresses from our archived lists for communicating with individuals.  Social network analysis may use individual email addresses for analysis, but not for directly emailing individuals.
+  
+## Contact Us  {#contact}
 
 If you are an academic researcher and can't find the right place to ask questions about the ASF, we have two volunteers who can help direct you to the correct place to ask.  Please be sure to include your specific question, as well as where else you've looked for answers on ASF websites, so we can improve our documentation for the future.  Please be patient; we are all volunteers!
 
