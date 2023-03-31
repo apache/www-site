@@ -477,7 +477,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | wsanchez | [Wilfredo Sánchez](http://www.mit.edu/people/wsanchez/) |  [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | wsmoak | [Wendy Smoak](http://www.wendysmoak.com) |  [Struts](http://struts.apache.org/) ; [MyFaces](http://myfaces.apache.org/) ; [Shale](http://shale.apache.org/)|
 | wwei | [Weiwei Yang](https://yangwwei.github.io) | [Hadoop](https://hadoop.apache.org), [Ozone](https://ozone.apache.org), [YuniKorn](https://yunikorn.apache.org) |
-| xinwang | [Xin Wang](https://people.apache.org/~xinwang/) | [Storm](https://storm.apache.org/) , [RocketMQ](https://rocketmq.apache.org/) , [IoTDB](https://iotdb.apache.org/) , [StreamPipes](https://streampipes.apache.org/)|
+| xinwang | [Xin Wang](https://people.apache.org/~xinwang/) | [Storm](https://storm.apache.org/) , [RocketMQ](https://rocketmq.apache.org/) , [IoTDB](https://iotdb.apache.org/) , [StreamPipes](https://streampipes.apache.org/) , [Incubator](https://incubator.apache.org/) |
 | xuefu | Xuefu Zhang | [Hive](http://hive.apache.org) ; [Pig](http://pig.apache.org) |
 | yegor | Yegor Kozlov |
 | ylavic | Yann Ylavic | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
