@@ -45,6 +45,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
     - [DOM4J License](http://dom4j.sourceforge.net/dom4j-1.6.1/license.html)
     - [PostgreSQL License](http://opensource.org/licenses/postgresql) 
     - [Eclipse Distribution License 1.0](http://www.eclipse.org/org/documents/edl-v10.php)
+    - [Lawrence Berkeley National Labs BSD](https://spdx.org/licenses/BSD-3-Clause-LBNL.html)
 - [MIT/X11](http://opensource.org/licenses/mit-license.php)
     - [ISC](https://opensource.org/licenses/ISC)
     - [Standard ML of New Jersey](https://www.smlnj.org/license.html)
