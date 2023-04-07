@@ -72,12 +72,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="http://engineering.cerner.com/">Cerner</a></li>
       <li><a target="_blank" rel="sponsored" href="https://craftercms.org">Crafter CMS</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://dimealley.com/installment-loans/">Dime Alley</a></li>
       <li><a target="_blank" rel="sponsored" href="https://dollarhand.com/">Dollar Hand</a></li>
       <li><a target="_blank" rel="sponsored" href="https://goread.io/buy-instagram-followers">Goread.io Followers</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.hotwaxsystems.com">HotWax Systems</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.leovegas.com/en-in/">LeoVegas Indian Online Casino</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.miro-kredit.ch/">Miro-Kredit AG</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.openlogic.com/">OpenLogic by Perforce</a></li>
       <li><a target="_blank" rel="sponsored" href="https://aboutpaf.com/">Paf</a></li>
@@ -139,6 +139,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    <h1 style="text-align: center;">Targeted Bronze Sponsors:</h1> <!-- text only -->
    <div class="sponsors">
    <ul id='targetedbronze'>
+      <li><a target="_blank" rel="sponsored" href="https://www.techatbloomberg.com/opensource">Bloomberg</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.ena.com/">Education Networks of America</a></li>
       <li><a target="_blank" rel="sponsored" href="https://cordova.apache.org/">Friend of Apache Cordova</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.google.com/">Google</a></li>
