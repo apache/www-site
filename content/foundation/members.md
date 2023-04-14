@@ -219,6 +219,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | isabel | Isabel Drost |
 | isudana | Isuru Udana | [Synapse](http://synapse.apache.org)
 | ivan | Ivan Zhakov | [Subversion](http://subversion.apache.org/) ; [Serf](http://serf.apache.org/) ; [APR](http://apr.apache.org/) |
+| iwasakims | Masatake Iwasaki | [Hadoop](http://hadoop.apache.org), [Bigtop](https://bigtop.apache.org/) |
 | jacopoc | Jacopo Cappellato | [OFBiz](http://ofbiz.apache.org)  |
 | jan | Jan Lehnardt | CouchDB |
 | jani | Jan Iversen | |
