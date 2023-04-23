@@ -43,6 +43,21 @@ status](ASF-501c3.pdf) for The Apache Software Foundation
 The Apache Software Foundation (ASF) filed the below annual Form 990 tax 
 returns with the IRS. 
 
+-  [Fiscal Year 2021-2022 Annual Report](990-2021.pdf) for the Apache
+Software Foundation
+
+-  [Fiscal Year 2020-2021 Annual Report](990-2020.pdf) for the Apache
+Software Foundation
+
+-  [Fiscal Year 2019-2020 Annual Report](990-2019.pdf) for the Apache
+Software Foundation
+
+-  [Fiscal Year 2018-2019 Annual Report](990-2018.pdf) for the Apache
+Software Foundation
+
+-  [Fiscal Year 2017-2018 Annual Report](990-2017.pdf) for the Apache
+Software Foundation
+
 -  [Fiscal Year 2016-2017 Annual Report](990-2016.pdf) for the Apache
 Software Foundation
 
