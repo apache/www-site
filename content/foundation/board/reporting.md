@@ -105,7 +105,7 @@ chair should consider each of these questions when writing a report.
    - **Ongoing**, with **high**, **moderate** or **low** activity, which you might quantify if appropriate
    - **Dormant**: not much happening on the code, but at least 3 PMC members ready to engage if needed
    - **At risk**: not enough active PMC members, or a significant number of contributors left the project, etc.
-   - **Contemplating the Attic**: a project that's discussing going to the Attic or working on it already
+   - **Considering moving to the Attic**: a project that's about to move to the Attic, or discussing that
 
  - Sum up the status and health of your project and the community in a few sentences
  
