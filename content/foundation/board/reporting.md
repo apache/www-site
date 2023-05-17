@@ -95,6 +95,18 @@ chair should consider each of these questions when writing a report.
 
     See [Brand Naming and Description][1].
 
+- Indicate your **project state** using one of the following keywords **[REQUIRED]**
+
+   This is subjective of course, but helps adjust the Board's expectations
+   based on where your project stands in its lifecycle. Additional comments
+   are welcome, as needed.
+
+   - **New**: a top-level project that's just getting started
+   - **Ongoing**, with **high**, **moderate** or **low** activity, which you might quantify if appropriate
+   - **Dormant**: not much happening on the code, but at least 3 PMC members ready to engage if needed
+   - **At risk**: not enough active PMC members, or a significant number of contributors left the project, etc.
+   - **Considering moving to the Attic**: a project that's about to move to the Attic, or discussing that
+
  - Sum up the status and health of your project and the community in a few sentences
  
     Starting the report with a paragraph that describes the main things that your project has worked on
