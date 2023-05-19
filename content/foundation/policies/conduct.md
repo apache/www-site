@@ -18,7 +18,7 @@ We expect all members of the Apache community to follow it in spirit as much as 
 We strive to:
 
 
-1. __Be open.__ We invite anyone to participate in our community. We prefer to use public methods of communication for project-related messages, unless discussing something sensitive. This applies to messages for help or project-related support, too; not only is a public support request much more likely to result in an answer to a question, it also makes sure that any the community notices and corrects any inadvertent mistakes people answering the query may make.
+1. __Be open.__ We invite anyone to participate in our community. We prefer to use public methods of communication for project-related messages, unless discussing something sensitive. This applies to messages for help or project-related support, too; not only is a public support request much more likely to result in an answer to a question, it also makes sure that the community notices and corrects any inadvertent mistakes people answering the query may make.
 
 2. __Be <a href="#endnotes">empathetic</a>, welcoming, friendly, and patient.__ We work together to resolve conflicts, assume good intentions, and do our best to act in an empathetic fashion. We may all experience some frustration from time to time, but we do not allow frustration to result in a personal attack. A community where people feel uncomfortable or threatened is not a productive one. We should be respectful when dealing with other community members as well as with people outside our community.
 
