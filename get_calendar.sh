@@ -1,5 +1,5 @@
 AUTOCONF='/tmp/www/pelican.auto.py'
-if -r ${AUTOCONF}
+if [ -r ${AUTOCONF} ]
 then
     if fgrep "TAGS_SAVE_AS = 'tags.html'" ${AUTOCONF}
     then
