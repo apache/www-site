@@ -1,4 +1,4 @@
-AUTOCONF='../pelican.auto.py'
+AUTOCONF='/tmp/www/pelican.auto.py'
 if -r ${AUTOCONF}
 then
     if fgrep "TAGS_SAVE_AS = 'tags.html'" ${AUTOCONF}
@@ -14,7 +14,8 @@ EOD
 else
     echo "Cannot find ${AUTOCONF}"
 fi
-
+source bin/activate
+pip3 list
 echo "Fetching calendar from SVN"
 cd content/foundation/board || exit
 /usr/bin/svn export https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md --force
