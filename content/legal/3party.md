@@ -1,6 +1,7 @@
 Title: Third-Party Licensing Policy - The Apache Software Foundation
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
 Notice: http://www.apache.org/licenses/LICENSE-2.0
+Tags: policy
 
 # Third-Party Licensing Policy #
 
