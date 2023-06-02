@@ -495,7 +495,7 @@ Releases</a>.
 ### Release licensing questions  {#license}
 
 Please read [Applying the Apache License, Version
-2.0](https://infra.apache.org/apply-license.html) and check the [Apache Licenses](/licenses/) and 
+2.0](/legal/apply-license.html) and check the [Apache Licenses](/licenses/) and 
 [Apache Legal](/legal/) pages for current information.
 
 #### Which files must contain an ASF license text?  {#which-files-contain-license}
