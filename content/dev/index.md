@@ -72,7 +72,7 @@ Learn [the duties of the PMC Chairs](pmc.html#chair)
 -  [Legal policies, forms, and information for Apache Committers](../legal/#dev-links) 
 -  [ASF source header and copyright notice policy](../legal/src-headers.html) 
 -  ["How-to" guide for assembling `LICENSE` and `NOTICE`](licensing-howto.html) 
--  Rationale for how to <a href="https://www.apache.org/legal/apply-license.html" target="_blank">apply the Apache License, Version 2.0</> (descriptive, not policy)
+-  Rationale for how to <a href="https://www.apache.org/legal/apply-license.html" target="_blank">apply the Apache License, Version 2.0</a> (descriptive, not policy)
 -  [Apache trademark policy](../foundation/marks/) - for outside parties
 -  [Apache project branding requirements](../foundation/marks/pmcs) - for projects
 
