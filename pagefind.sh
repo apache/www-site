@@ -36,10 +36,11 @@ env
 
 #
 
-set -e # fast exit
-
 # Is there already a copy of pagefind?
 PAGEFIND=$(PATH=$PATH:. which pagefind)
+
+set -e # fast exit
+
 if [ -z "$PAGEFIND" ]
 then
     echo "Download pagefind"
