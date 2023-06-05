@@ -38,20 +38,26 @@ env
 
 set -e # fast exit
 
-echo "Download pagefind"
-PAGEFIND_VERSION='0.12.0'
-PAGEFIND_HASH='3e450176562b65359f855c04894ec2c07ffd30a8d08ef4d5812f8d3469d7a58f'
-BINDIR=$(mktemp -d)
-TARGET=${BINDIR}/pagefind.tar.gz
-wget --no-verbose -O ${TARGET} https://github.com/CloudCannon/pagefind/releases/download/v${PAGEFIND_VERSION}/pagefind-v${PAGEFIND_VERSION}-x86_64-unknown-linux-musl.tar.gz
-echo "${PAGEFIND_HASH}  ${TARGET}" > ${TARGET}.sha256
-if shasum -a 256 -c ${TARGET}.sha256
+# Is there already a copy of pagefind?
+PAGEFIND=$(PATH=$PATH:. which pagefind)
+if [ -z "$PAGEFIND" ]
 then
-    tar -C ${BINDIR} -xkf ${TARGET}
-else
-    echo "Failed to download pagefind correctly"
-    exit 1
+    echo "Download pagefind"
+    PAGEFIND_VERSION='0.12.0'
+    PAGEFIND_HASH='3e450176562b65359f855c04894ec2c07ffd30a8d08ef4d5812f8d3469d7a58f'
+    BINDIR=$(mktemp -d)
+    TARGET=${BINDIR}/pagefind.tar.gz
+    wget --no-verbose -O ${TARGET} https://github.com/CloudCannon/pagefind/releases/download/v${PAGEFIND_VERSION}/pagefind-v${PAGEFIND_VERSION}-x86_64-unknown-linux-musl.tar.gz
+    echo "${PAGEFIND_HASH}  ${TARGET}" > ${TARGET}.sha256
+    if shasum -a 256 -c ${TARGET}.sha256
+    then
+        tar -C ${BINDIR} -xkf ${TARGET}
+    else
+        echo "Failed to download pagefind correctly"
+        exit 1
+    fi
+    PAGEFIND=${BINDIR}/pagefind
 fi
 
 echo "Running pagefind"
-${BINDIR}/pagefind --source ${PELICAN_OUTPUT_PATH:-site-generated}
+${PAGEFIND} --source ${PELICAN_OUTPUT_PATH:-site-generated}
