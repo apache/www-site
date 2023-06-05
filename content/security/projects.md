@@ -8,7 +8,7 @@ vulnerabilities related to that project. Note that not all project security team
 
 To report a vulnerability in an Apache project that is not listed below, contact the [Apache Security Team](mailto:security@apache.org).
 
-| Apache project security page | Security Contact |
+| Security page | Security Contact |
 |-----------------------|------------------|
 |  [Apache Portable Runtime (APR)](https://apr.apache.org/security_report.html)  |  [Apache Security Team](mailto:security@apache.org)  |
 |  Apache Ambari |  [Apache Ambari Security Team](mailto:security@ambari.apache.org)  |
