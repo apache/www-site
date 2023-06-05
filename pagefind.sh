@@ -41,9 +41,8 @@ set -e # fast exit
 echo "Download pagefind"
 PAGEFIND_VERSION='0.12.0'
 PAGEFIND_HASH='3e450176562b65359f855c04894ec2c07ffd30a8d08ef4d5812f8d3469d7a58f'
-BINDIR='bin'
+BINDIR=$(mktemp -d)
 TARGET=${BINDIR}/pagefind.tar.gz
-mkdir -p ${BINDIR}
 wget --no-verbose -O ${TARGET} https://github.com/CloudCannon/pagefind/releases/download/v${PAGEFIND_VERSION}/pagefind-v${PAGEFIND_VERSION}-x86_64-unknown-linux-musl.tar.gz
 echo "${PAGEFIND_HASH}  ${TARGET}" > ${TARGET}.sha256
 if shasum -a 256 -c ${TARGET}.sha256
@@ -55,4 +54,4 @@ else
 fi
 
 echo "Running pagefind"
-bin/pagefind -h
+${BINDIR}/pagefind --source ${PELICAN_OUTPUT_PATH:-site-generated}
