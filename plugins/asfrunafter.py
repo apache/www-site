@@ -20,6 +20,7 @@
 # asfrunafter.py - Pelican plugin that runs shell scripts just before termination
 #
 
+import os
 import sys
 import subprocess
 import shlex
@@ -32,8 +33,8 @@ import pelican.settings
 AUTO_SETTINGS_YAML = 'pelicanconf.yaml'
 
 # open a subprocess
-def os_run(args):
-    return subprocess.Popen(args, stdout=subprocess.PIPE, universal_newlines=True)
+def os_run(args, env=None):
+    return subprocess.Popen(args, env=env, stdout=subprocess.PIPE, universal_newlines=True)
 
 
 # run shell
@@ -43,19 +44,26 @@ def run_script(pel_ob):
     asf_runafter = asfyaml.get('setup').get('runafter')
     if asf_runafter:
         print('-----\nasfrunafter')
+        # copy the pelican environment
+        my_env = os.environ.copy()
+        for k,v in sorted(pel_ob.settings.items()):
+            if k != 'ASF_DATA': # rather large; not needed
+                my_env['PELICAN_'+k] = str(v)
+
         for command in asf_runafter:
             print(f'-----\n{command}')
             args = shlex.split(command)
-            with os_run(args) as s:
+            with os_run(args, my_env) as s:
                 for line in s.stdout:
                     line = line.strip()
                     print(f'{line}')
     else: # debug
+        print('WARNING: failed to find runafter setting')
         for k,v in sorted(pel_ob.settings.items()):
             if k == 'ASF_DATA': # rather large
-                print(s)
+                print(k)
             else:
-                print(s, v)
+                print(k, v)
 
 def tb_finalized(pel_ob):
     """ Print any exception, before Pelican chews it into nothingness."""
