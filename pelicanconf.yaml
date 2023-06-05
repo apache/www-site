@@ -13,6 +13,9 @@ plugins:
   use:
     - gfm
     - asfindex
+    - asfrunafter
+  paths:
+    - plugins
 
 setup:
   data: asfdata.yaml
@@ -23,6 +26,9 @@ setup:
     - ls -l
     - python -mpip list
     - /bin/bash get_calendar.sh
+  runafter:
+    - echo "Run After Test"
+    - pwd
   ignore:
     - README.md
     - interviews
