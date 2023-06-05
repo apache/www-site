@@ -47,7 +47,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache SINGA](https://singa.apache.org/security.html) | [Apache SINGA Security Team](mailto:security@singa.apache.org) |
 |  [Apache Sling](https://sling.apache.org/site/security.html)  |  [Apache Sling Security Team](mailto:security@sling.apache.org)  |
 |  [Apache Solr](https://cwiki.apache.org/confluence/display/SOLR/SolrSecurity) | [Apache Solr Security Team](mailto:security@solr.apache.org) |
-|  [Apache SpamAssassin](https://cwiki.apache.org/confluence/display/spamassassin) | [Apache SpamAssassin Security Team](mailto:security@spamassassin.apache.org) |
+|  [Apache SpamAssassin](https://cwiki.apache.org/confluence/display/SPAMASSASSIN/SecurityPolicy) | [Apache SpamAssassin Security Team](mailto:security@spamassassin.apache.org) |
 |  [Apache Spark](https://spark.apache.org/security.html)   |  [Apache Spark Security Team](mailto:security@spark.apache.org)  |
 |  [Apache Struts](https://struts.apache.org/security.html)  |  [Apache Struts Security Team](mailto:security@struts.apache.org)  |
 |  [Apache Subversion](https://subversion.apache.org/security/) | [Apache Subversion Security Team](mailto:security@subversion.apache.org)  |
