@@ -8,7 +8,7 @@ vulnerabilities related to that project. Note that not all project security team
 
 To report a vulnerability in an Apache project that is not listed below, contact the [Apache Security Team](mailto:security@apache.org).
 
-| Apache project security page | Security Contact |
+| Security page | Security Contact |
 |-----------------------|------------------|
 |  [Apache Portable Runtime (APR)](https://apr.apache.org/security_report.html)  |  [Apache Security Team](mailto:security@apache.org)  |
 |  Apache Ambari |  [Apache Ambari Security Team](mailto:security@ambari.apache.org)  |
@@ -17,6 +17,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache CloudStack](https://cloudstack.apache.org/security.html)  |  [Apache Security Team](mailto:security@apache.org)  |
 |  [Apache Commons](https://commons.apache.org/security.html) |  [Apache Commons Security Team](mailto:security@commons.apache.org)  |
 |  Apache CouchDB |  [Apache CouchDB Security Team](mailto:security@couchdb.apache.org)  |
+|  [Apache Druid](https://druid.apache.org/docs/latest/operations/security-overview.html) |  [Apache Security Team](mailto:security@apache.org)  |
 |  [Apache Fineract](https://cwiki.apache.org/confluence/display/FINERACT/Apache+Fineract+Security+Report)  |  [Apache Fineract Security Team](mailto:security@fineract.apache.org)  |
 |  [Apache Geronimo](https://geronimo.apache.org/security-reports.html)  |  [Apache Geronimo Security Team](mailto:security@geronimo.apache.org)  |
 |  [Apache Guacamole](https://guacamole.apache.org/security/) | [Apache Guacamole Security Team](mailto:security@guacamole.apache.org) |
@@ -37,6 +38,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache OpenMeetings](https://openmeetings.apache.org/security.html) | [Apache OpenMeetings Security Team](mailto:security@openmeetings.apache.org) |
 |  [Apache OpenOffice](https://openoffice.apache.org/security)  |  [Apache OpenOffice Security Team](mailto:security@openoffice.apache.org)  |
 |  [Apache ORC](https://orc.apache.org/security/) | [Apache ORC Security Team](mailto:security@orc.apache.org) |
+|  [Apache PDFBox](https://pdfbox.apache.org/security.html) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Pulsar](https://github.com/apache/pulsar/security/policy) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Santuario](https://santuario.apache.org/secadv.html) | [Apache Security Team](mailto:security@apache.org) |
 |  [Apache Sentry](https://cwiki.apache.org/confluence/display/SENTRY/Vulnerabilities+found+in+Apache+Sentry) | [Apache Sentry Security Team](mailto:security@sentry.apache.org) |
@@ -45,7 +47,7 @@ To report a vulnerability in an Apache project that is not listed below, contact
 |  [Apache SINGA](https://singa.apache.org/security.html) | [Apache SINGA Security Team](mailto:security@singa.apache.org) |
 |  [Apache Sling](https://sling.apache.org/site/security.html)  |  [Apache Sling Security Team](mailto:security@sling.apache.org)  |
 |  [Apache Solr](https://cwiki.apache.org/confluence/display/SOLR/SolrSecurity) | [Apache Solr Security Team](mailto:security@solr.apache.org) |
-|  [Apache SpamAssassin](https://cwiki.apache.org/confluence/display/spamassassin) | [Apache SpamAssassin Security Team](mailto:security@spamassassin.apache.org) |
+|  [Apache SpamAssassin](https://cwiki.apache.org/confluence/display/SPAMASSASSIN/SecurityPolicy) | [Apache SpamAssassin Security Team](mailto:security@spamassassin.apache.org) |
 |  [Apache Spark](https://spark.apache.org/security.html)   |  [Apache Spark Security Team](mailto:security@spark.apache.org)  |
 |  [Apache Struts](https://struts.apache.org/security.html)  |  [Apache Struts Security Team](mailto:security@struts.apache.org)  |
 |  [Apache Subversion](https://subversion.apache.org/security/) | [Apache Subversion Security Team](mailto:security@subversion.apache.org)  |
