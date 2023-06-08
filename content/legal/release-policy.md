@@ -1,5 +1,4 @@
 Title: Release Policy
-Tags: policy
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
