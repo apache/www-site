@@ -19,29 +19,14 @@
 #
 #
 
-# Download and run pagefind
-
-echo "Debug"
-python --version
-pelican --version
-
-ls -l
-ls -l bin
-
-source bin/activate
-pip3 list
-
-pwd
-env
-
-#
+# Run pagefind (downloading if necessary)
 
 # Is there already a copy of pagefind?
 PAGEFIND=$(PATH=$PATH:. which pagefind)
 
-set -e # fast exit
+set -e # fast exit (must be done after 'which' invocation)
 
-if [ -z "$PAGEFIND" ]
+if [ -z "$PAGEFIND" ] # could not find pagefind
 then
     echo "Download pagefind"
     PAGEFIND_VERSION='0.12.0'
