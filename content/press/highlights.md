@@ -1,14 +1,14 @@
-Title: ASF Highlights: 1999-2019
+Title: ASF Milestones | Apache Software Foundation
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+# ASF Milestones
 
-Celebrating over two decades of open source leadership promoting Community Over Code.
+To learn more about ASF History or contribute, visit https://apache.org/history/.
 
 [TOC]
 
-### Highlights: pre-1999  {#early}
+### Highlights: Pre-1999  {#early}
 
 Brian Behlendorf started collecting patches to be applied to the
 last version of the NCSA http server. The Apache Group, consisting of 8
@@ -253,33 +253,8 @@ The ASF closes out the year with 318 projects + sub-projects (excluding Apache L
 
 Nearly 200M lines of code are under the ASF's stewardship, reinforcing the ongoing success of community-led development "The Apache Way". Total number of Apache projects + sub-projects grew to 328 (excluding Apache Labs initiatives), with 198 Top-Level Projects and 51 podlings undergoing development in the Apache Incubator. Apache Airflow, DataFu, Freemarker, Griffin, HAWQ, Joshua, Pulsar, ServiceComb, and Traffic Control graduated as Top-Level Projects. Apache Lucy, Oltu, Polygene, and Tiles entered the Attic. 19,435 authors sent 1,497,005 emails on 505,793 topics across 1,131 mailing lists. Overall Apache Committers totaled 7,032 (6,693 active), 730 of whom are individual ASF Members. 44 individuals were elected as new Members. 3,208 Apache Committers changed 78,493,228 lines of code over 201,220 commits. We also welcomed 4,638 new code contributors and 15,861 new issue/pull request contributors. An average of 387 new code contributors and 1,250 new people filed issues each month. A total of 831 ICLAs and 35 CCLAs were signed, and 25 Software Grants submitted. At the annual Members’ Meeting, Rich Bowen, Shane Curcuru, Bertrand Delacretaz, Isabel Drost-Fromm, Ted Dunning, Brett Porter, Roman Shaposhnik, Phil Steitz, and Mark Thomas were elected to the ASF Board of Directors. The ASF thanked Chris Mattmann and Jim Jagielski, who chose not to stand for re-election this year, and celebrated Jagielski's service as a member of the ASF Board for the past 19 years. New positions of Assistant Vice President Legal Affairs, Vice President Finance, and Vice President Data Privacy were established. The Board published the ASF Vision Statement, which serves as the basis for the ASF’s 5-Year Strategic Plan. In addition, it established an extended budget to map against the plan. The ASF completed and passed its first-ever financial audit: unqualified; and reported change in net assets for FY2017-2018 of $548,630. Apache Conferences held an Apache Roadshow Europe co-located with FOSS Backstage in Berlin, and ApacheCon North America took place in Montreal, Canada. ASF Fundraising yielded a positive net income, and raised 150% of goals. The position of VP Sponsor Relations was established by VP Fundraising to help with day-to-day liaison with ASF Sponsors, who include Platinum: Cloudera, Comcast, Facebook, Google, LeaseWeb, Microsoft, Oath, Pineapple Fund, and Tencent Cloud; Gold: Anonymous, ARM, Bloomberg, Handshake, Hortonworks, Huawei, IBM, Indeed, Pivotal, and Union Investment; Silver: Aetna, Alibaba Cloud Computing, Baidu, Budget Direct, Capital One, Cerner, Inspur, ODPi, Private Internet Access, Red Hat, and Target; Bronze: Airport Rentals, Best VPN, The Blog Starter, Bookmakers, Cash Store, Casino Bonus, Casino2k, Cloudsoft, Emerio, Footprints Recruiting, HostChecka.com, HostingAdvice.com, HostPapa Web Hosting, The Linux Foundation, Mobile Slots, Mutuo Kredit AG, Online Holland Casino, RX-M, SCAMS.info, Site Builder Report, Talend, The Best VPN, Twitter, and Web Hosting Secret Revealed. ASF Targeted Sponsors provide the Foundation with contributions for specific activities or programs. Targeted Platinum: DLA Piper, Microsoft, Oath, OSU Open Source Labs, and Sonatype; Targeted Gold: Atlassian, The CrytpoFund, Datadog, PhoenixNAP, and Quenda; Targeted Silver: Amazon Web Services, HotWax Systems, and Rackspace; Targeted Bronze: Bintray, Education Networks of America, Google, Hopsie, No-IP, PagerDuty, Peregrine Computer Consultants Corporation, Sonic.net, SURFnet, and Virtru; ASF Fundraising also launched dedicated, semi-annual, “Support Apache” campaigns for individual giving.
 
-
 ### Highlights: 2019  {#2019}
 
 2019 kicked off with the "Apache in 2018 - By The Digits" report, highlighting the ASF’s booming growth and Open Source community leadership. The first quarter of the year saw 1,588 committers change 12,791,559 lines of code across 39,989 commits.Entering the Apache Incubator are Hudi (Big Data), Training (Education), and TVM (Deep Learning). Apache Unomi (Customer Data Platform) graduated as a Top-Level Project. Apache Xalan was rebooted, coming out of retirement from the Attic. The "Success at Apache" blog series continues, with the addition of new ASF Sponsor case studies published featuring profiles on Gold Sponsor Bloomberg and Platinum Sponsor Leaseweb. ASF operations teams, including Infrastructure, Marketing & Publicity, Brand Management, Conferences, and Travel Assistance continue to plan new budgets to map against the ASF 5-Year Plan. The ASF Sponsorship program continues to bolster the ASF’s operations, with thanks to ASF Platinum Sponsors: Amazon Web Services, Cloudera, Comcast, Facebook, Google, Leaseweb, Microsoft, Pineapple Fund, Tencent Cloud, and Verizon Media. Gold: Anonymous, ARM, Bloomberg, Handshake, Huawei, IBM, Indeed, Pivotal, Union Investment, Workday. Silver: Aetna, Alibaba Cloud Computing, Baidu, Budget Direct, Capital One, Cerner, Inspur, ODPi, Private Internet Access, Red Hat, Target. Bronze: Airport Rentals, Best VPN, The Blog Starter, Bookmakers, Cash Store, Casino Bonus, Casino2k, Cloudsoft, Emerio, Footprints Recruiting, HostChecka.com, Host Advice, HostingAdvice.com, HostPapa Web Hosting, Mobile Slots, Mutuo Kredit AG, Online Holland Casino, PureVPN, RX-M, SCAMS.info, Site Builder Report, Talend, The Best VPN, Twitter, Web Hosting Secret Revealed. ASF Targeted Sponsors continue to support the Foundation with in-kind contributions for specific activities or programs in support of Apache projects and general ASF operations. Targeted Platinum: DLA Piper, Microsoft, OSU Open Source Labs, Sonatype, and Verizon Media. Targeted Gold: Atlassian, The CrytpoFund, Datadog, PhoenixNAP, and Quenda. Targeted Silver: Amazon Web Services, HotWax Systems, and Rackspace; Targeted Bronze: Bintray, Education Networks of America, Google, Hopsie, No-IP, PagerDuty, Peregrine Computer Consultants Corporation, Sonic.net, SURFnet, and Virtru. The ASF is a Google Summer of Code mentoring organization for the 15th consecutive year and is in the process of accepting student project applications. Apache Roadshow/DC, the first of four official Apache events, took place in March 2019; Apache Roadshow/Chicago will take place in May, ApacheCon North America is scheduled for September in Las Vegas, and ApacheCon Europe is scheduled for October in Berlin. Preparations are underway for the ASF’s 20th Anniversary on 26 March. The Annual ASF Members’ meeting will also take place that day, and will include elections for new Members and Board of Directors.
 
-
-### Learn More  {#learnmore}
-
-As a non-profit corporation built upon collaborative consensus, we
-strive to keep records open and to document what we do. Some other resources to
-find out about the history of the ASF include:
-
-- [Board Minutes](/foundation/board/calendar.html)
-- [Formal Corporate Records](/foundation/records/)
-- [ASF History](/history/)
-- [Community Memorials](/memorials/)
-
-
-### Contact Us  {#contact}
-
-For any issues not addressed in the individual links above, you may
-[contact us](mailto:press@apache.org?subject=[Highlights]%20I%20need%20more%20highlights).
-All technical questions or questions about
-[individual projects](http://projects.apache.org/)
-should always be directed to the appropriate
-[project mailing list](/foundation/mailinglists.html).
-You may also
-[contact The ASF](/foundation/contact.html)
-via hardcopy mail or fax as well.
 

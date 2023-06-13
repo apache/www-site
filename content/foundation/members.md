@@ -1,20 +1,16 @@
-Title: Members
+Title: ASF Members | Apache Software Foundation
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+# Committed to Open Source and the ASF
 
-[Membership in The Apache Software Foundation](/foundation/governance/members) is a privilege and is by
-invitation only. Existing members propose and [vote on](/foundation/governance/meetings#membervoting)
-candidates for membership. Since the Foundation is
-a meritocracy, meaning that contributions and skills are the factors used
-to judge worthiness, we expect candidates to have proven themselves by
-contributing to one or more of the Foundation's projects.
+ASF Members are those who have proven their commitment to the ASF by contributing to one or more of the Foundation’s projects. We thank them for their ongoing contributions to the Foundation.
 
-The details of the process by which someone may become a member of The
-Apache Software Foundation are in [Section 4.1](bylaws.html#4.1)
-of the Foundation's [bylaws](bylaws.html).  A more general description of 
-[how the ASF is governed](/governance/) is available.
+Our Members are similar to stockholders–they elect new Members and may vote for Directors. Membership in The Apache Software Foundation is a privilege and is by invitation only. The [Governance](https://apache.org/foundation/governance/) page provides details on Membership and the nomination process.
+
+<p><a class="btn btn-default mx-10" href="http://home.apache.org/committers-by-project.html#member" role="button">Go to Member List</a>
+
+## Emeritus Members
 
 Members may choose to move to [emeritus](bylaws.html#4.2) status by sending an email to
 secretary@apache.org, attaching a signed copy of the
@@ -245,7 +241,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | joehni | Jörg Schaible |
 | joern | Jörn Kottmann | [UIMA](http://uima.apache.org/) ; [OpenNLP](http://opennlp.apache.org/)|
 | joewitt | Joe Witt | [NiFi](https://nifi.apache.org/)|
-| jogep | [Johannes Geppert](https://www.jgeppert.com) | [Struts](https://struts.apache.org/) |
+| jogep | [Johannes Geppert](http://www.jgeppert.com) | [Struts](http://struts.apache.org/) |
 | jon | [Jon Scott Stevens](http://www.whichever.com/) | [Ant](http://ant.apache.org/) ; [ECS](http://jakarta.apache.org/ecs/) ; [ORO](http://jakarta.apache.org/oro/) ; [Regexp](http://jakarta.apache.org/regexp/) ; [Tomcat](http://jakarta.apache.org/tomcat/) ; [Velocity](http://jakarta.apache.org/velocity/) ; [James](http://james.apache.org/) ; [Jetspeed](http://jakarta.apache.org/jetspeed/) ; [JServ](http://java.apache.org/jserv/) ; [Jyve](http://java.apache.org/jyve/) ; [Turbine](http://java.apache.org/turbine/)|
 | jonesde | David E. Jones |
 | jorton | Joe Orton | [APR](http://apr.apache.org/) ; [httpd](http://httpd.apache.org/)|
@@ -331,7 +327,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | ndbeyer | Nathan Beyer |
 | neilg | Neil Graham |
 | ngn | [Niklas Gustavsson](http://protocol7.com) | [MINA](http://mina.apache.org)|
-| niallp | Niall Pemberton | [Jakarta](http://jakarta.apache.org/) ; [Struts](https://struts.apache.org/)|
+| niallp | Niall Pemberton | [Jakarta](http://jakarta.apache.org/) ; [Struts](http://struts.apache.org/)|
 | nick | Nick Burch |
 | niclas | Niclas Hedhman |
 | ningjiang | Willem Ning Jiang |[activemq](http://activemq.apache.org/);[camel](http://camel.apache.org);[cxf](http://cxf.apache.org); [doris](http://doris.apache.org); [iotdb](http://iotdb.apache.org); [rocketmq](http://rocketmq.apache.org); [servicecomb](http://servicecomb.apache.org); [servicemix](http://servicemix.apache.org); [shardingsphere](http://shardingsphere.apache.org); [skywalking](http://skywalking.apache.org); [weex](http://weex.apache.org); [zipkin](http://zipkin.apache.org)|
@@ -375,7 +371,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | remm | Remy Maucherat | [Jakarta](http://jakarta.apache.org/)|
 | reschke | Julian Reschke |
 | rfrovarp | Richard Frovarp |
-| rgielen | [René Gielen](https://twitter.com/rgielen) | [Struts](https://struts.apache.org)|
+| rgielen | [René Gielen](http://twitter.com/rgielen) | [Struts](http://struts.apache.org)|
 | rgoers | Ralph Goers | [Cocoon](http://cocoon.apache.org/) , [Commons](http://commons.apache.org/) , [Logging](http://logging.apache.org/) , [Maven](http://maven.apache.org/) , [Portals](http://portals.apache.org/)|
 | rhillegas | Rick Hillegas | [Derby](http://db.apache.org/derby/)|
 | rhuijben | Bert Huijben | [Subversion](http://subversion.apache.org/)|
@@ -476,7 +472,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | woonsan | [Woonsan Ko](http://woonsanko.blogspot.com/) | [Portals](https://portals.apache.org/) , [Commons](https://commons.apache.org/) , [FreeMarker](https://freemarker.apache.org/)|
 | wrowe | William A. Rowe, Jr. | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
 | wsanchez | [Wilfredo Sánchez](http://www.mit.edu/people/wsanchez/) |  [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
-| wsmoak | [Wendy Smoak](http://www.wendysmoak.com) |  [Struts](https//struts.apache.org/) ; [MyFaces](http://myfaces.apache.org/) ; [Shale](http://shale.apache.org/)|
+| wsmoak | [Wendy Smoak](http://www.wendysmoak.com) |  [Struts](http://struts.apache.org/) ; [MyFaces](http://myfaces.apache.org/) ; [Shale](http://shale.apache.org/)|
 | wwei | [Weiwei Yang](https://yangwwei.github.io) | [Hadoop](https://hadoop.apache.org), [Ozone](https://ozone.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | xinwang | [Xin Wang](https://people.apache.org/~xinwang/) | [Storm](https://storm.apache.org/) , [RocketMQ](https://rocketmq.apache.org/) , [IoTDB](https://iotdb.apache.org/) , [StreamPipes](https://streampipes.apache.org/) , [Incubator](https://incubator.apache.org/) |
 | xuefu | Xuefu Zhang | [Hive](http://hive.apache.org) ; [Pig](http://pig.apache.org) |
@@ -728,7 +724,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | zeev | Zeev Suraski |
 | zoe | Zoe Slattery |
 
-## Deceased Members of The Apache Software Foundation
+## Deceased Members
 
 - **[Nóirín Plunkett](/memorials/noirin.html)** 
 
