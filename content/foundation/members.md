@@ -10,36 +10,9 @@ Our Members are similar to stockholders–they elect new Members and may vote fo
 
 <p><a class="btn btn-default mx-10" href="http://home.apache.org/committers-by-project.html#member" role="button">Go to Member List</a>
 
-## Emeritus Members
+## ASF Members
 
-Members may choose to move to [emeritus](bylaws.html#4.2) status by sending an email to
-secretary@apache.org, attaching a signed copy of the
-[emeritus request](https://www.apache.org/forms/emeritus-request.pdf).
-They can subsequently submit a new membership application at any time, by notifying secretary@apache.org.
-This will result in their being added to the next new member election.
-
-The following tables show current and emeritus members who have 
-manually added themselves to it - **this is not the complete list of members**,
-see the links below for that.
-
-If you are a member and want to be included (this is optional), you can update the source file yourself.
-If you have a GitHub account that is linked to your ASF account,
-you can edit this [page](https://github.com/apache/www-site/blob/main/content/foundation/members.md) directly in the browser, by using the `Edit this file` pencil icon.
-
-You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you. 
-
-Or it can be updated in the [ASF GitBox repo](https://gitbox.apache.org/repos/asf/www-site.git);
-this does not require a GitHub account.
-
-A [list of all committers](http://home.apache.org/committer-index.html)
-(including [members](http://home.apache.org/committers-by-project.html#member))
-and their [projects/SVN trees](http://home.apache.org/committers-by-project.html)
-is also available.
-
-## Members of The Apache Software Foundation
-
-N.B. the listing below is *optional*, and is **not a complete listing**.
-There is a complete summary of the [member LDAP group](http://home.apache.org/committers-by-project.html#member)
+This table shows current and emeritus members who have manually added themselves to it – it is NOT a complete listing. If you are a member and want to be included (this is optional), see below for how to update the source file yourself.
 
 | Id | Name | Projects |
 |----|------|----------|
@@ -483,7 +456,9 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | zwoop | [Leif Hedstrom](http://www.ogre.com) | [trafficserver](http://trafficserver.apache.org/), [trafficcontrol](http://trafficcontrol.apache.org/), [incubator](http://incubator.apache.org/) |
 
 
-## Emeritus Members of The Apache Software Foundation
+## Emeritus Members
+
+Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by sending an email to secretary@apache.org, attaching a signed copy of the [emeritus request](/forms/emeritus-request.pdf). They can subsequently submit a new membership application at any time, by notifying secretary@apache.org. This will result in their being added to the next new member election.
 
 | Id | Name |
 |----|------|
@@ -737,3 +712,10 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 - **[Martin Pöschl](/memorials/martin_poeschl.html)**
 
 - **[Henk P. Penning](/memorials/henk_penning.html)**
+
+## Adding Your Name
+If you have a GitHub account that is linked to your ASF account,
+you can edit this [page](https://github.com/apache/www-site/blob/main/content/foundation/members.md) directly in the browser, by using the `Edit this file` pencil icon. You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you.
+
+
+Or it can be updated in the [ASF GitBox repo](https://gitbox.apache.org/repos/asf/www-site.git). This does not require a GitHub account.
