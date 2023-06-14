@@ -86,7 +86,7 @@ An overview of the vulnerability handling process is:
 - The appropriate project's security team works privately with the reporter
 to resolve the vulnerability.
 
-- The project creates a new release of the package the vulnerabilty affects to deliver its fix.
+- The project creates a new release of the package the vulnerability affects to deliver its fix.
 
 - The project publicly announces the vulnerability and describes how to apply the fix.
 

@@ -82,7 +82,7 @@ explain why, with a copy to `security@project.apache.org` if it exists, or to
 7. If the project team **accepts** the report, the team writes to the reporter to let them
 know that they have accepted the report and that they are working on a fix.
 
-8. The project team requests a CVE (<a href="https://cve.mitre.org/" target="_blank">Common Vulnerabilites and Exposures</a>) ID from the internal portal, `https://cveprocess.apache.org`; or by
+8. The project team requests a CVE (<a href="https://cve.mitre.org/" target="_blank">Common Vulnerabilities and Exposures</a>) ID from the internal portal, `https://cveprocess.apache.org`; or by
 sending an e-mail with the subject "CVE request for..." to `security@apache.org`, providing a
 short (one-line) description of the vulnerability. `security@apache.org` can
 help determine if a report requires multiple CVE IDs or if multiple reports
