@@ -171,5 +171,5 @@ assistance:
 
 - The Foundation pre-FAQ: [Contact Apache FAQ](/foundation/preFAQ.html) 
 
-If you have a sepcific question about the Apache license or
+If you have a specific question about the Apache license or
 distribution of Apache software that this page has not answered, [contact the Legal Affairs Committee](/legal/).
