@@ -85,13 +85,13 @@ co-ordination of the handling of security vulnerabilities and CVE issuing.
 Anyone can [submit a security issue](https://www.apache.org/security/#reporting-a-vulnerability).
 
 Example services include: the [general security@ vulnerability reporting mailing list](https://www.apache.org/security/projects.html), 
-and [detailed checklists and help with CVEs](https://www.apache.org/security/committers.html) and handling vulnerabilies.
+and [detailed checklists and help with CVEs](https://www.apache.org/security/committers.html) and handling vulnerabilities.
 
 ### Brand & Trademarks
 
 The [Brand Management team](https://www.apache.org/foundation/marks/resources)
 collaborates with projects on branding and trademarks.  You can 
-[contact the Brand Managment team](https://www.apache.org/foundation/marks/contact)
+[contact the Brand Management team](https://www.apache.org/foundation/marks/contact)
 and [report trademark issues](https://www.apache.org/foundation/marks/reporting).
 
 Example services include: [trademark law resources for developers](https://www.apache.org/foundation/marks/resources), 

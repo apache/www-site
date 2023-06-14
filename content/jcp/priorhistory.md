@@ -9,7 +9,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 > *The Apache Software Foundation has written an [open
 > letter](sunopenletter.html) to Sun Microsystems regarding our inabillity
 > to acquire an acceptable license for the test kit for Java SE needed by
-> [Apache Harmony](http://harmony.apache.org). For futher information
+> [Apache Harmony](http://harmony.apache.org). For further information
 > please see the [FAQ](sunopenletterfaq.html) and direct all questions to
 > Apache's VP for JCP issues, geirm at apache dot org, or our regular press
 > inquiry address, press at apache dot org.* 

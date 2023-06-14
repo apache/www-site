@@ -256,7 +256,7 @@ Of course Gems written under other licenses (such as MIT) may also be OK, depend
 
 Also note that the Ruby license is listed on the 'Category B' Weak Copyleft list above for binary usage (for example JRuby). 
 
-### From Java 9 onwards, Javadoc can include search functionallity that includes JavaScript under other open source licenses. Can Apache projects include this javadoc?
+### From Java 9 onwards, Javadoc can include search functionality that includes JavaScript under other open source licenses. Can Apache projects include this javadoc?
 
 From Java 9 onwards, Javadoc can include JavaScript under MIT, MIT OR GPL-3.0, or GPL-2.0 WITH ClasspathException-2.0. Apache binary releases (including Maven javadoc jars) and Apache websites may include this for their javadoc. It must not be included in source releases.
 
