@@ -6,7 +6,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 ASF is the global home for the world’s leading open source projects for data, cloud, search, libraries, geospatial, IoT, and many more categories.
 
-<p><a class="btn btn-default mx-10" href="https://projects.apache.org/" role="button">Go to Projects</a>
+<p><a class="btn btn-default mx-10" href="https://projects.apache.org/" role="button">See All Projects</a>
 
 ## What is an open source project?
 
