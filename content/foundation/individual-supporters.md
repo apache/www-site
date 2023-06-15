@@ -40,6 +40,6 @@ Wilmington, DE 19801<br>
 
 To receive a tax receipt, include your email address and the name for whom the donation should be credited (your own or the third party if it is a on behalf of someone else).
 
-### *I have a question. Who do I contact?*<br>
+### I have a question. Who do I contact?
 For more information, please contact us at fundraising@apache.org.
  
