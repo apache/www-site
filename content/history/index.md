@@ -16,8 +16,7 @@ From the humble beginnings of fewer than a dozen software engineers sharing code
 
 Evolving from the original eight developers (collectively known as "the Apache Group") who contributed code enhancements to the NCSA daemon Web server, the ASF was incorporated in 1999 as a U.S. 501(c)(3) not-for-profit organization. This ensured that the original HTTP Project and all subsequent projects would continue to exist beyond the participation of individual volunteers.
 
-BUTTONS
-[Apache Group History](https://apache.org/history/timeline.html) | [HTTP Server Project History](https://httpd.apache.org/ABOUT_APACHE.html)
+<p><a class="btn btn-default mx-10" href="https://apache.org/history/timeline.html" role="button">Apache Group History</a> <p><a class="btn btn-default mx-10" href="https://httpd.apache.org/ABOUT_APACHE.html" role="button">HTTP Server Project History</a>
 
 ASF co-founder Brian Behlendorf first used the name “Apache” for the server. The use of the name “Apache” shows appreciation for the people and tribes who refer to themselves as “Apache.” As the Apache HTTP Server grew from patches applied to the NCSA Server, a pun on the name quickly spread amongst members of the community, with the rumor being that “Apache” actually stood for “a ‘patchy’ server.”. As time passed, the popularity of the “A Patchy Server” story grew: rumor became lore, and lore became legend.
 
