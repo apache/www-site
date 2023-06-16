@@ -116,7 +116,7 @@ The ASF is an official charity in the Benevity Causes Portal, as part of numerou
 
 ## FAQ
 
-*Where will my sponsorship funds go?*  
+### Where will my sponsorship funds go?
 
 The ASF provides the infrastructure for hundreds of projects - the mailing lists, code repositories, bug tracking systems, etc. A few paid contractors, plus large amounts of volunteer effort, maintain these resources. This, in addition to the large costs of bandwidth and server hardware, constitutes the bulk of the expense of running the Foundation.
 
@@ -134,7 +134,7 @@ procurement, enhance our community outreach, sponsor developer hackathons
 and user groups, and perform non-code related improvements to projects such
 as better documentation and more comprehensive websites
 
-*Who can sponsor the ASF?*
+### Who can sponsor the ASF?
 
 From time to time there is confusion about who can sponsor the Apache Software Foundation.
 Additionally, there are often inquiries from potential sponsors who are not committed
@@ -154,7 +154,7 @@ Landing pages for sponsor links cannot be advertisements or redirectors and must
 
 <super>*</super><sub>**Nexus**, also called “sufficient physical presence”, is a legal term that refers to the requirement for companies doing business in a state to collect and pay tax on sales in that state. For example, if you sell goods or services in Los Angeles, you must file and pay California state taxes. Source: https://quickbooks.intuit.com/r/taxes/what-is-nexus-and-how-does-it-affect-your-small-business.
 
-*Is the Apache Software Foundation a non-profit organization?*  
+### Is the Apache Software Foundation a non-profit organization?  
 
 The Apache Software Foundation is a private operating foundation that is
 registered as a non-profit, charitable organization under Section 501(c)(3)
@@ -175,7 +175,7 @@ through
 You can find more information about non-profits and related issues at the
 [Internet Nonprofit Center](http://www.nonprofits.org/).
 
-*Who can I talk to about supporting the ASF?*  
+### Who can I talk to about supporting the ASF?
 
 If you would like more information about supporting the ASF, please contact
 [fundraising@apache.org](mailto:fundraising@apache.org).
@@ -186,7 +186,7 @@ donations to be part of the Sponsorship program (and thus obtain the
 benefits of the program), coordinate the donation with the 
 Fundraising team. We keep all information in strictest confidence.
 
-*How do sponsorship renewals happen?*
+### How do sponsorship renewals happen?
 
 Your sponsorship runs for one year after the date of receipt of payment.
 During this period, we display your logo on our [Sponsors](/foundation/thanks.html)
@@ -197,7 +197,7 @@ same mechanism we used to arrange the initial sponsorship) requesting
 renewal. If renewal does not take place by the renewal date of the sponsorship,
 the ASF may remove your logo from the thanks page.
 
-*Can I just make a one-time donation?*
+### Can I just make a one-time donation?
 
 The ASF appreciates donations of any size and, as we are a US registered 501(c)(3) 
 corporation, your donation may be tax deductible.  If you are interested in 
