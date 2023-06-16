@@ -4,8 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # Contact Us
 
-**Before** sending mail to the address below, **make sure** that  the information on the [Contact Apache
-FAQ](preFAQ.html) doesn't already address your issue. If it is, the only response you'll receive is a pointer
+**Before** sending mail to the address below, **make sure** that  the information on the [FAQ](https://www.apache.org/foundation/faq) doesn't already address your issue. If it is, the only response you'll receive is a pointer
 to that page.
 
 ## Project Contacts
