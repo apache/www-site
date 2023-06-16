@@ -4,22 +4,11 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # ASF News & Brand
 
-# ASF Newsroom
-<p><a class="btn btn-default mx-10" href="NEED" role="button">Recent News</a>
-<p><a class="btn btn-default mx-10" href="NEED" role="button">Press Releases</a>
-<p><a class="btn btn-default mx-10" href="NEED" role="button">Press Release Support</a>
-<p><a class="btn btn-default mx-10" href="https://apache.org/foundation/press/kit/" role="button">Brand Guidelines</a>
-
-## Recent News
-<FEED>
-  
-## Press Releases
-<FEED>
-  
+## Recent News 
 <p><a class="btn btn-default mx-10" href=”https://news.apache.org/" role="button">Go to Foundation Newsroom</a>
 
 ## Press Release Support 
-Press releases that refer to the ASF and/or its projects must be approved by the VP Marketing and Publicity prior to distribution. Please allow for a minimum of 10 business days) to complete the review. We are sensitive to internal approval processes and will expedite feedback when possible. 
+Press releases that refer to the ASF and/or its projects must be approved by the VP Marketing and Publicity prior to distribution. Please allow for a minimum of 10 business days to complete the review. We are sensitive to internal approval processes and will expedite feedback when possible. 
 - The ASF is vendor-neutral and does not provide testimonials that endorse, promote, or advertise the capability, credibility, or quality of any technology, product, or service. Email: press@apache.org  - Joint announcements are rarely issued; examples of such releases include instances where a major industry milestone or initiative takes place, or announcing ASF Platinum-level Sponsorships. 
   
 * You may request a quote for your ASF-related press release. Quotes may not be included unless approved by the VP Marketing & Publicity. 
