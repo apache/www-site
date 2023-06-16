@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # ASF Newsroom
 
 ## Recent News 
-<p><a class="btn btn-default mx-10" href=”https://news.apache.org/" role="button">Go to Foundation Newsroom</a>
+<p><a class="btn btn-default mx-10" href="https://news.apache.org/" role="button">Go to Foundation Newsroom</a>
 
 ## Press Release Support 
 Press releases that refer to the ASF and/or its projects must be approved by the VP Marketing and Publicity prior to distribution. Please allow for a minimum of 10 business days to complete the review. We are sensitive to internal approval processes and will expedite feedback when possible. 
