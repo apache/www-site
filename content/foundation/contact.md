@@ -27,6 +27,7 @@ Visit the [ASF Security page](https://www.apache.org/security/) to learn how to 
 | Legal and Licensing     | [Licensing FAQ](https://apache.org/foundation/license-faq.html) <br>  [Legal Affairs Committee](https://apache.org/legal/)      |
 | Website   | Issues with a specific Apache project's website should go to that project's dev@ mailing list. For issues with the foundation top-level websites such as apache.org: webmaster@apache.org      |
 | DMCA Designated Agent     | [DMCA Agent](https://apache.org/legal/dmca.html)       |
+| Exports     | [Exports](https://www-paulau.staged.apache.org/licenses/exports/)       |
 | For questions that are not covered above   | apache@apache.org      |
 
 ## Mailing Address
