@@ -1,8 +1,8 @@
-Title: ASF News & Brand | Apache Software Foundation
+Title: ASF Newsroom | Apache Software Foundation
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# ASF News & Brand
+# ASF Newsroom
 
 ## Recent News 
 <p><a class="btn btn-default mx-10" href=”https://news.apache.org/" role="button">Go to Foundation Newsroom</a>
