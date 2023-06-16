@@ -9,7 +9,7 @@ to that page.
 
 ## Project Contacts
 
-All technical questions and questions about a specific ASF project should be addressed to the [appropriate project-specific mailing list](preFAQ.html#projects). 
+All technical questions and questions about a specific ASF project should be addressed to the [appropriate project-specific mailing list](https://projects.apache.org/projects.html). 
 
 ## Security Contacts
 
@@ -37,7 +37,7 @@ Wilmington, DE  19801<br>
 U.S.A.<br>
 
 **Important.** If you are not the [State of Delaware](records/),
-a [sponsor](thanks), or a supplier, it is *extremely* likely that
+a [sponsor](/foundation/sponsors), or a supplier, it is *extremely* likely that
 you should use one of the above email aliases instead of faxing or postal mail.  Please read
 the first part of this page, and email *apache@apache.org*
 if in doubt.
