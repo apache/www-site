@@ -34,7 +34,7 @@ The [ASF Product Classification Matrix](#matrix) is a general listing of
 ASF software products and their source links for which we have determined
 an export classification for that product as distributed by the Apache
 Software Foundation. Use the matrix in conjunction with the EAR
-to provide classification informatio to assist exporters in the
+to provide classification information to assist exporters in the
 export of ASF products and to provide guidance to BIS employees who seek
 the source code for ASF products. All export classification information
 contained in the matrix is subject to change without notice.

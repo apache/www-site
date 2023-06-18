@@ -182,7 +182,7 @@ Send proposals to the [Apache Incubator](http://incubator.apache.org/)
 
 ## What is Apache about?  {#what-is-apache-about}
 
-Transparancy, consensus, non-affiliation, respect for fellow developers,
+Transparency, consensus, non-affiliation, respect for fellow developers,
 and meritocracy, in no specific order.
 
 ## What is Apache not about?  {#what-is-apache-NOT-about}

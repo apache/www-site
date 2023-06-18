@@ -42,7 +42,7 @@ protect the integrity of the archives.
 
 We usually edit or remove information only in the event of an inadvertent disclosure of confidential information, such as a social security number. A sender's contact information (name, email address, phone number, etc.) does not fall into that category. We most certainly do not edit the archives as a means of reducing one's exposure to spam.
 
-Even if we do modify the archives, numberous third parties independently archive nearly all of our public mailing lists. If you are seeking to remove an email, for example, you would to request each of those third parties to edit their archives, and they may or may not honor such requests. In other words, even if we were convinced to edit our
+Even if we do modify the archives, numerous third parties independently archive nearly all of our public mailing lists. If you are seeking to remove an email, for example, you would to request each of those third parties to edit their archives, and they may or may not honor such requests. In other words, even if we were convinced to edit our
 archives, that wouldn't be very effective.
 
 Be aware that by requesting a modification to the archives you are drawing attention to whatever information you wish to be kept private. In most circumstances,
