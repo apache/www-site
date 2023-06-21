@@ -93,6 +93,12 @@ PMCs **SHOULD** ensure that decision-making processes allow input over a suffici
 amount of time - typically at least 72 hours - so that project participants in various time 
 zones have a chance to participate in the decision.
 
+#### Monitor the project's private mailing list
+
+PMC members SHALL be subscribed to their project's private mailing list, and a
+sufficient number of them MUST monitor it so that the PMC is responsive
+to roll calls and other requests from the Board that are sent there.
+
 #### Limit project business on private mailing lists  {#mailing-list-private}
 
 All PMCs **SHALL** restrict their communication on
