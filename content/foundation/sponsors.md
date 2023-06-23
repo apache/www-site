@@ -11,7 +11,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
 
 ## Foundation Sponsors
 
-   <link rel="stylesheet" href="thanks.css">
+   <link rel="stylesheet" href="/css/thanks.css">
    <h3 class="h1"style="text-align: center;">Platinum Sponsors:</h3> <!-- 400x179 --> <!-- Platinum images should be exact size for CSS -->
    <div class="sponsors">
    <ul id='platinum'>
