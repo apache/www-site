@@ -187,7 +187,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | geomacy | Geoff Macartney | [Brooklyn](https://brooklyn.apache.org/)|
 | gerdogdu | [Gurkan Erdogdu](http://gurkanerdogdu.blogspot.com) | [OpenWebBeans](http://openwebbeans.apache.org)  |
 | gertv | Gert Vanthienen |
-| ggregory | Gary Gregory | [Commons](https://commons.apache.org) [HttpComponents](https://hc.apache.org/) [Logging Services](https://logging.apache.org/) [Mina](https://mina.apache.org/) [Xalan](https://xalan.apache.org/)|
+| ggregory | Gary Gregory | [Commons](https://commons.apache.org), [HttpComponents](https://hc.apache.org/), [Logging Services](https://logging.apache.org/), [Mina](https://mina.apache.org/), [Xalan](https://xalan.apache.org/)|
 | gianugo | [Gianugo Rabellino](http://www.rabellino.it/blog/) |  [Cocoon](http://cocoon.apache.org/) ; [Xindice](http://xml.apache.org/xindice/)|
 | gk | Georg Kallidis | [Turbine](http://turbine.apache.org/) |
 | gmcdonald | [Gavin McDonald](http://16degrees.com.au) |
