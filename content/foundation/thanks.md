@@ -108,7 +108,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://jfrog.com/open-source/"><img src="images/jfrog-platinum.png"/></a><p style="text-align: center; font-weight: bold;">JFrog</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.osuosl.org/"><img src="images/osl-logo.png"/></a><p style="text-align: center; font-weight: bold;">OSU Open Source Labs</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.verizonmedia.com/"><img src="images/verizon_media.jpg"/></a><p style="text-align: center; font-weight: bold;">Verizon Media</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.sonatype.com/nexus/product-overview"><img src="images/sonatype-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Sonatype</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.jetbrains.com/"><img src="images/jetbrains.png"/></a><p style="text-align: center; font-weight: bold;">JetBrains</p></li>
       <li><a target="_blank" rel="sponsored" href="https://fastly.com/"><img src="images/fastly-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Fastly</p></li>
