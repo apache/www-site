@@ -51,10 +51,12 @@ See also: [Trademark Resources site map][resources].
     open-source development history with a large userbase should 
     read about [limitations on using non-apache.org domains](#nonapache).
 
-# Project Naming And Descriptions Policy  {#naming}
+# Project Naming Policy  {#naming}
 
 *Guidelines for [choosing names of new projects](/dev/project-names) exist, but haven't
 yet been reviewed and merged into this policy document.*
+
+# Project Branding And Descriptions Policy {#branding}
 
   - <a id="projectname"></a>The primary branding for any project or product
 name must be in the form of "Apache *Projectname*". This ensures that users associate the project or
