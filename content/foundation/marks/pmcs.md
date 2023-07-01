@@ -79,7 +79,8 @@ appropriate name:
     it.
   - You may want to choose a name that is easy to remember, is not too long, and
     is not difficult to spell.
-  - Be culturally sensitive and avoid names that might offend.
+  - Be culturally sensitive and avoid names that might offend. In particular,
+    names with Native American connections will not be approved.
   - Consider using functional names, especially for products of existing
     projects, e.g. for an "Apache Foo" project, the product name "Apache Foo
     Pipelines".
