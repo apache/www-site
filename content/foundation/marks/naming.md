@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # {{title}}
 
 All Apache Podlings, and any Apache&reg; top level project (TLP) must use this process when coming up with a new project name,
-or when coming up with a name for a new subproject or downloadable software product.
+when coming up with a name for a new subproject or downloadable software product, or establishing a new TLP.
 
 **Contents**
 
@@ -37,7 +37,7 @@ rights in a podling's branding before they may graduate.
  - Every project which wants to name or rename a new product
  - Every project which wants to rename the project itself
  - Every Incubator Podling which wants to graduate from the Incubator and become either a top level project or a sub project
- - Every project which is created without going through the Incubator
+ - Every project which is created without going through the Incubator (including projects returning from the Attic)
 
 ## When do I need to start this process?  {#startsearch}
 
