@@ -34,6 +34,15 @@
     {% include "styles.css" %}
   </style>
 
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+  </script>
+
   {% if page.notice %}<!-- {{ page.notice }} -->{% endif %}
   {% if page.license %}<!-- {{ page.license }} -->{% endif %}
 
@@ -198,10 +207,7 @@
                   aria-hidden="true"></span><span class="sr-only">Search</span></a>
               <ul class="dropdown-menu search-form" role="search">
                 <li>
-                  <div class="input-group" style="width: 100%; padding: 0 5px;">
-                    <script async src="https://cse.google.com/cse.js?cx=cb41d2753d228d8b7"></script>
-                    <div class="gcse-search"></div>
-                  </div>
+                  <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
                 </li>
               </ul>
             </li>
