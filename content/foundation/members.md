@@ -69,6 +69,7 @@ There is a complete summary of the [member LDAP group](http://home.apache.org/co
 | andreww | [Andrew Wetmore](mailto:andreww@apache.org) | [Royale](https://royale.apache.org), Infra |
 | andywenk | [Andy Wenk](mailto:andywenk@apache.org) | [CouchDB](https://couchdb.apache.org), PMC |
 | angela | Angela Schreiber | [Jackrabbit](http://jackrabbit.apache.org/)|
+| ankit | Ankit Singhal | [HBase](https://hbase.apache.org), [Phoenix](http://phoenix.apache.org/), [Ratis](http://ratis.apache.org/) |
 | anshum | Anshum Gupta | [Lucene](http://lucene.apache.org/), [Solr](http://solr.apache.org/) |
 | antelder | Ant Elder |
 | antonio | [Antonio Gallardo Rivera](http://home.apache.org/~antonio/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://forrest.apache.org/) , [Lenya](http://lenya.apache.org/)|
