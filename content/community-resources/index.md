@@ -2,7 +2,7 @@ Title: Community Connect & Mentor | Apache Software Foundation
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Community Connect & Mentor 
+# Community Resources 
 
 Your Awesome List of community programs and resources.
 
