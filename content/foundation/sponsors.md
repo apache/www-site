@@ -1,17 +1,18 @@
-Title: Thanks
+Title: Our Sponsors | Apache Software Foundation
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+# Our Sponsors
 
 The Apache Software Foundation could not exist without the continued
 generous support from the community. We would like to take this opportunity
-to thank our Sponsors. If you are interested in sponsoring the ASF, please
+to thank our sponsors. If you are interested in sponsoring the ASF, please
 read our [sponsorship page](/foundation/sponsorship.html).
 
+## Foundation Sponsors
 
-<link rel="stylesheet" href="thanks.css">
-   <h1 style="text-align: center;">Platinum Sponsors:</h1> <!-- 400x179 --> <!-- Platinum images should be exact size for CSS -->
+   <link rel="stylesheet" href="thanks.css">
+   <h3 class="h1"style="text-align: center;">Platinum Sponsors:</h3> <!-- 400x179 --> <!-- Platinum images should be exact size for CSS -->
    <div class="sponsors">
    <ul id='platinum'>
        <li><a target="_blank" rel="sponsored" href="https://www.apple.com/"><img src="images/apple-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Apple</p></li>
@@ -27,7 +28,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    </div>
 
 
-   <h1 style="text-align: center;">Gold Sponsors:</h1>  <!-- 223x100 --> <!-- Gold images should be exact size for CSS -->
+   <h3 class="h1"style="text-align: center;">Gold Sponsors:</h3>  <!-- 223x100 --> <!-- Gold images should be exact size for CSS -->
    <div class="sponsors">
    <ul id='gold'>
       <li><a target="_blank" rel="sponsored" href="https://aiven.io/"><img src="images/aiven-gold.png"/></a><p style="text-align: center; font-weight: bold;">Aiven</p></li>
@@ -47,7 +48,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    </div>
 
 
-   <h1 style="text-align: center;">Silver Sponsors:</h1>  <!-- 150x67 -->
+   <h3 class="h1"style="text-align: center;">Silver Sponsors:</h3>  <!-- 150x67 -->
    <div class="sponsors">
    <ul id='silver'>
       <li><a target="_blank" rel="sponsored" href="http://www.aetna.com/"><img src="images/aetna_sponsorlogo.png"/></a><p style="text-align: center; font-weight: bold;">Aetna</p></li>
@@ -62,7 +63,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    </div>
 
 
-   <h1 style="text-align: center;">Bronze Sponsors:</h1> <!-- text only -->
+   <h3 class="h1"style="text-align: center;">Bronze Sponsors:</h3> <!-- text only -->
    <div class="sponsors">
    <ul id='bronze'>
       <li><a target="_blank" rel="sponsored" href="https://www.bestecasinobonussen.nl/">Bestecasinobonussen.nl</a></li>
@@ -94,10 +95,10 @@ read our [sponsorship page](/foundation/sponsorship.html).
 
 ## Targeted Sponsors
 
-ASF Targeted Sponsors provide the Foundation with contributions for specific activities or programs, such as donating cloud services, funding a project hackathon, providing legal services, offering a community member benefit, underwriting expenses for ApacheCon, or something entirely new. It's the Apache way of recognizing the sponsors that we rely on every day outside of and often in addition to funding our general operations.
+ASF Targeted Sponsors provide the Foundation with contributions for specific activities or programs, such as donating cloud services, funding a project hackathon, providing legal services, offering a community member benefit, underwriting expenses for our flagship event, or something entirely new. It's the Apache way of recognizing the sponsors that we rely on every day outside of and often in addition to funding our general operations.
 
 <!-- Targeted Sponsors -->
-   <h1 style="text-align: center;">Targeted Platinum Sponsors:</h1> <!-- 400x179 -->   <!-- Platinum images should be exact size for CSS -->
+   <h3 class="h1"style="text-align: center;">Targeted Platinum Sponsors:</h3> <!-- 400x179 -->   <!-- Platinum images should be exact size for CSS -->
    <div class="sponsors">
    <ul id='targetedplatinum'>
       <li><a target="_blank" rel="sponsored" href="https://aws.amazon.com/"><img src="images/aws-platinum.png"></a><p style="text-align: center; font-weight: bold;">Amazon Web Services</p></li>
@@ -115,7 +116,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    </ul>
    </div>
 
-   <h1 style="text-align: center;">Targeted Gold Sponsors:</h1> <!-- 223x100 -->  <!-- Gold images should be exact size for CSS -->
+   <h3 class="h1"style="text-align: center;">Targeted Gold Sponsors:</h3> <!-- 223x100 -->  <!-- Gold images should be exact size for CSS -->
    <div class="sponsors">
    <ul id='targetedgold'>
       <li><a target="_blank" rel="sponsored" href="https://www.atlassian.com/"><img src="images/atlassian-logo.png"></a><p style="text-align: center; font-weight: bold;">Atlassian</p></li>
@@ -126,7 +127,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    </ul>
    </div>
   
-   <h1 style="text-align: center;">Targeted Silver Sponsors:</h1> <!-- 150x67 -->
+   <h3 class="h1"style="text-align: center;">Targeted Silver Sponsors:</h3> <!-- 150x67 -->
    <div class="sponsors">
    <ul id='targetedsilver'>
       <li><a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage"><img src="images/instaclustr-silver.png"/></a><p style="text-align: center; font-weight: bold;">Instaclustr</p></li>
@@ -135,7 +136,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    </ul>
    </div>  
 
-   <h1 style="text-align: center;">Targeted Bronze Sponsors:</h1> <!-- text only -->
+   <h3 class="h1"style="text-align: center;">Targeted Bronze Sponsors:</h3> <!-- text only -->
    <div class="sponsors">
    <ul id='targetedbronze'>
       <li><a target="_blank" rel="sponsored" href="https://www.techatbloomberg.com/opensource">Bloomberg</a></li>
@@ -179,28 +180,4 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
     }
 </script>
 <noscript>Sorry, your browser settings do not support JavaScript!</noscript>
-
-## Individual Donations
-
-The Apache Software Foundation receives many smaller donations from
-individuals.  More details are available on our [contribution page](/foundation/contributing.html).
-
-We would like to thank all of our individual donors for their
-support of our work, and for their willingness to contribute with
-only this as recognition for their generosity.
-
-
-## Mirrors
-
-Until the third quarter of 2021, The ASF used a system of <a href="https://apache.org/history/mirror-history.html" target="_blank">download mirrors</a> to make Apache product releases conveniently available for free download around the world. The mirror system depended on generous contributions of resources and effort by organizations of many kinds (universities, non-profits, corporations and others), and The ASF could not have functioned as it has done without their support.
-
-The ASF now uses a global content distribution network (CDN) to respond quickly and accurately to download requests from any part of the globe, at any time of day.
-
-
-<div align=center>
-  <a href="/foundation/contributing.html" title="Support Apache">
-    <img src="/images/SupportApache-small.png" style="height: 150px; width: 150px; margin-top: 5px; margin-bottom: 5px;">
-  <a>
-  <br />&nbsp;
-</div>
  
