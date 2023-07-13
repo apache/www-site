@@ -56,7 +56,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.didiglobal.com/"><img src="images/didi.png"/></a><p style="text-align: center; font-weight: bold;">Didi Chuxing</p></li>
       <li><a target="_blank" rel="sponsored" href="https://linecorp.com/"><img src="images/LINE-silver.png"/></a><p style="text-align: center; font-weight: bold;">LINE</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.replicated.com/"><img src="images/replicated-silver.png"/></a><p style="text-align: center; font-weight: bold;">Replicated</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.talend.com/"><img src="images/talend-silver.png"/></a><p style="text-align: center; font-weight: bold;">Talend</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.target.com/"><img src="images/target-silver.png"/></a><p style="text-align: center; font-weight: bold;">Target</p></li>
    </ul>
