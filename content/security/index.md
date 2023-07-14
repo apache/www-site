@@ -14,7 +14,7 @@ We strongly encourage you to report potential security vulnerabilities to one of
 our private security mailing lists first, before disclosing them in a
 public forum.
 
-A [list of security contacts for Apache projects](projects.html) is
+A [list of security contacts for Apache projects](https://security.apache.org/projects/) is
 available. If you can't find a project-specific security e-mail address and
 you have an undisclosed security vulnerability to report, use
 the general security address below.

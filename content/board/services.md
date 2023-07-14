@@ -79,12 +79,12 @@ and a [central calendar for Apache-related events](https://events.apache.org/).
 
 ### Security Handling & Vulnerability Reporting
 
-The [Apache Security Team](https://www.apache.org/security) exists to provide
+The [Apache Security Team](https://security.apache.org) exists to provide
 help and advice to Apache projects on security issues and to provide
 co-ordination of the handling of security vulnerabilities and CVE issuing.
 Anyone can [submit a security issue](https://www.apache.org/security/#reporting-a-vulnerability).
 
-Example services include: the [general security@ vulnerability reporting mailing list](https://www.apache.org/security/projects.html), 
+Example services include: the [general security@ vulnerability reporting mailing list](https://security.apache.org/projects/),
 and [detailed checklists and help with CVEs](https://www.apache.org/security/committers.html) and handling vulnerabilities.
 
 ### Brand & Trademarks
