@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Service Unavailable</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+    body {
+        background:url(images/service_unavailable_footer.png) fixed no-repeat bottom right;
+    }
+    </style>
+    <script type="text/javascript">
+      
+      // Referrer parser
+      function parseURL(url) {
+        var a=document.createElement('a');
+        a.href=url;
+        return a.hostname;
+      }
+      
+      // Get query string args
+      function getArg(key) {
+        var querystring = window.location.search.substring(1);
+        var elements = querystring.split('&');
+        for (var i = 0; i < elements.length; i++) {
+          var kp = elements[i].split('=');
+          if (decodeURIComponent(kp[0]) == key) {
+              return decodeURIComponent(kp[1]);
+          }
+        }
+        return '';
+      }
+      
+      // Display error message
+      function displayError() {
+        
+        // Get domain name
+        var site = getArg('site');
+        // Default to referrer or current domain name if not specified
+        if (site.length == 0) {
+          site = parseURL(document.referrer);
+          if (!site || site.length == 0) {
+            site = window.location.hostname;
+          }
+          if (site.length == 0) {
+            site = "www.apache.org";
+          }
+        }
+        
+        // Get error code
+        var code = parseInt(getArg('code'));
+        var notice = document.getElementById('notice');
+        var t = document.getElementById('title');
+        
+        // Generic message
+        var txt = "The site you requested, <a href='http://" + site + "' style='color: #369;'>" + site + "</a>, is currently ";
+        var title = "Unknown error";
+        // Specific messages
+		if (code == 404) {
+		  txt += "unavailable. We apologize!<br/>";
+		  title = "404 - Page not Found";
+		}
+		if (code >= 500) {
+          if (code == 500) {
+            txt += "unavailable due to an error on the backend server. We apologize!<br/>";
+            title = "500 - Internal Server Error";
+          }
+          if (code == 502) {
+            txt += "unavailable due to an invalid or missing response from the backend server. We apologize!<br/>";
+            title = "502 - Invalid or missing response from backend";
+          }
+          if (code == 503) {
+            txt += "unavailable due to ongoing maintenance.<br/>";
+            title = "503 - Service down for maintenance";
+          }
+          if (code == 504) {
+            txt += "unavailable due to a timeout between this server and a backend server. We apologize!<br/>";
+            title = "504 - Gateway timeout";
+          }
+          if (code != 503) {
+            txt += "The Apache Infrastructure Team has been notified about the situation.";
+          }
+        }
+        
+        // Unknown reason or no code given? Just blurb out something.
+        if (code + 0 != code) {
+          txt += "unavailable. The Apache Infrastructure Team has been notified about the situation."
+        }
+        txt += ""
+        
+        // Set message
+        notice.innerHTML = txt;
+        t.innerHTML = title;
+      }
+    </script>
+  </head>
+  <body onload="displayError();" style="background-color: #FFF; font-family: Calibri,Helvetica,Arial,sans-serif; font-size: 16px; text-align: center;">
+    <p>
+    <img src="images/service_unavailable.png" title="Sad feather is sad...maybe you should feed it some cookies? Omnomnomnom!" />
+    </p>
+	  <h3 id="title">Proxy Error</h3>
+    <p id="notice">
+      The service you requested is currently not available. Please check again later. We apologize for the inconvenience!
+    </p>
+    <p id="seealso">
+      For more information, visit our <a href="http://status.apache.org">general status page</a> or check our <a href="https://www.twitter.com/infrabot">infrastructure twitter feed</a> (see below).<br/>
+      You can make further inquiries by emailing `users@infra.apache.org` or, for escalation, by following our <a href="https://infra.apache.org/infra-contact" target="_blank">contact guidelines</a>.<br/><br/>
+		<i>For urgent matters, you will often find us on <a href="https://the-asf.slack.com">Slack</a> in the #asfinfra channel.</i><br/> &nbsp;
+    </p>
+    <p>
+      With regards,<br/>
+      <a href="/dev/infrastructure.html">The Apache Infrastructure Team</a>.
+    </p>
+	  <a class="twitter-timeline"  href="https://twitter.com/infrabot"  data-widget-id="340369825161412608">Tweets by @infrabot</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+  </body>
+</html>

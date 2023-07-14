@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page of The Apache Software Foundation">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>ASF Project Security for Committers</title>
+  <link href="/css/Montserrat-300-600.css" rel="stylesheet">
+  <link href="/css/min.bootstrap.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+  </script>
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->
+</head>
+
+<body >
+  <!-- Navigation -->
+  <header>
+	<div id="skiptocontent">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top mainmenu">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnav-collapse">
+          <ul class="nav navbar-nav navbar-justified">
+            <li><a href="/index.html#news">News</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/foundation">Overview</a></li>
+                <li><a href="/foundation/how-it-works.html">Process</a></li>
+                <li><a href="/foundation/governance/">Governance</a></li>
+                <li><a href="/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="/foundation/governance/members.html">Membership</a></li>
+                <li><a href="https://community.apache.org/">Community</a></li>
+                <li><a href="https://diversity.apache.org/">Diversity & Inclusion</a></li>
+                <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="/foundation/glossary.html">Glossary</a></li>
+				  <li><a href="/apache-name">About Our Name</a></li>
+                <li><a href="/foundation/preFAQ.html">FAQ</a></li>
+                <li><a href="/foundation/contributing.html">Support Apache</a></li>
+                <li><a href="/press/">Media/Analysts</a></li>
+                <li><a href="/foundation/contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Make a Donation&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/foundation/contributing.html">Donate Now</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via Credit Card</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via ACH</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via PayPal</a></li>
+                <li><a href="https://www.redbubble.com/people/comdev">Buy Swag</a></li>
+                <li><a href="/foundation/sponsorship.html">ASF Sponsorship</a></li>
+                <li><a href="/foundation/thanks#targeted-sponsors">Targeted Sponsorship</a></li>
+                <li><a href="/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">The Apache Way&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="https://s.apache.org/GhnI">Sustainable Open Source</a></li>
+                <li><a href="/foundation/how-it-works.html">How it Works</a></li>
+                <li><a href="/foundation/how-it-works.html#meritocracy">Merit</a></li>
+                <li><a href="https://blogs.apache.org/foundation/category/SuccessAtApache">Success at Apache</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">Join Us&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://community.apache.org/gettingStarted/101.html">Getting Started</a></li>
+                <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                <li><a href="https://www.apachecon.com/">ApacheCon</a></li>
+                <li><a href="http://community.apache.org/calendars/">Community Events</a></li>
+                <li><a href="https://tac.apache.org">Travel Assistance</a></li>
+                <li><a href="https://community.apache.org/gsoc.html">Summer of Code</a></li>
+                <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="https://community.apache.org/contributors/etiquette">Etiquette</a></li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/index.html#projects-list">Project List</a></li>
+                    <li><a href="/foundation/how-it-works.html#management">How they work</a></li>
+                    <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+                    <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+                    <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+                    <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="/foundation/marks/">Brand Management</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">People&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/foundation/how-it-works.html#roles">Roles</a></li>
+                    <li><a href="/foundation/members.html">Members</a></li>
+                    <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+                    <li><a href="/foundation/#who-runs-the-asf">Board of Directors</a></li>
+                    <li><a href="/foundation/#who-runs-the-asf">Officers  &amp; Project VPs</a></li>
+                    <li><a href="https://community.zones.apache.org/map.html">Location Map</a></li>
+                    <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://people.apache.org/">Committer Directory</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://community.apache.org/about/">Community Development</a></li>
+                    <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://community.apache.org/">Get Involved</a></li>
+                    <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+                    <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+                    <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Infrastructure&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/dev/infrastructure.html">Infra overview</a></li>
+                    <li><a href="https://infra.apache.org/" target="_blank">Policies and Tools</a></li>
+                    <li><a href="https://cwiki.apache.org/confluence/display/INFRA/Index" target="_blank">CWiki</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">License&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+                    <li><a href="/foundation/license-faq.html">Licensing FAQ</a></li>
+                    <li><a href="/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+                    <li><a href="/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+                    <li><a href="/foundation/marks/list/">Trademarks</a></li>
+					<li><a href="/licenses/exports/">Exports</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sponsors&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/foundation/sponsorship.html">Sponsor the ASF</a></li>
+                    <li><a href="/foundation/thanks">Sponsor Thanks</a></li>
+                    <li><a href="/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+                    <li><a href="/foundation/contributing.html">Individual Donations</a></li>
+                    <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://downloads.apache.org/">Distribution</a></li>
+                <li><a href="https://projects.apache.org/releases.html">Releases</a></li>
+                <li><a href="https://status.apache.org/">Infrastructure Status</a></li>
+                <li><a href="/uptime/">Infrastructure Statistics</a></li>
+              </ul>
+            </li>
+            <li class="dropdown hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                  aria-hidden="true"></span><span class="sr-only">Search</span></a>
+              <ul class="dropdown-menu search-form" role="search">
+                <li>
+                  <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- / Navigation -->
+  <header id="main-header" class="container">
+    <div class="sideImg">
+          <a class="visible-home" href="https://events.apache.org/x/current-event.html">
+            <img class="img-responsive" style="width: 125px;" src="/events/current-event-125x125.png" alt="Apache Events"/>
+<!-- STALE: <img class="img-responsive" style="width: 125px;" src="https://www.apachecon.com/event-images/default-square-light.png" alt="ApacheCon 2021 Coming Soon!" /> -->
+          </a>
+      <a class="hidden-home" href="/"><img class="img-responsive" src="/img/asf-estd-1999-logo.jpg" alt="The Apache Software Foundation"></a>
+    </div>
+    <div class="main">
+      <img class="img-responsive center-block visible-home" src="/img/asf-estd-1999-logo.jpg" alt="Apache 20th Anniversary Logo">
+
+      <ul class="nav navbar-nav navbar-justified">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/index.html#projects-list">Project List</a></li>
+            <li><a href="/foundation/how-it-works.html#management">How they work</a></li>
+            <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+            <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+            <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+            <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+            <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+            <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+            <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="/foundation/marks/">Brand Management</a></li>
+            <li><a href="/foundation/glossary.html">Glossary of Terms</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">People&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/foundation/how-it-works.html#roles">Roles</a></li>
+            <li><a href="/foundation/members.html">Members</a></li>
+            <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+            <li><a href="/foundation/#who-runs-the-asf">Board of Directors</a></li>
+            <li><a href="/foundation/#who-runs-the-asf">Officers &amp; Project VPs</a></li>
+            <li><a href="https://diversity.apache.org/">Diversity & Inclusion</a></li>
+            <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://people.apache.org/">Committer Directory</a></li>
+            <li><a href="https://community.zones.apache.org/map.html">Heat Map</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://community.apache.org/about/">Community Development</a></li>
+            <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://community.apache.org/">Get Involved</a></li>
+            <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+            <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+            <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Infrastructure&nbsp;<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/dev/infrastructure.html">Infra overview</a></li>
+              <li><a href="https://infra.apache.org/" target="_blank">Policies and Tools</a></li>
+              <li><a href="https://cwiki.apache.org/confluence/display/INFRA/Index" target="_blank">CWiki</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">License&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+            <li><a href="/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+            <li><a href="/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+            <li><a href="/foundation/marks/list/">Trademarks</a></li>
+			<li><a href="/licenses/exports/">Exports</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sponsors&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/foundation/sponsorship.html">Sponsor the ASF</a></li>
+            <li><a href="/foundation/thanks">Sponsor Thanks</a></li>
+            <li><a href="/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+            <li><a href="/foundation/contributing.html">Individual Donations</a></li>
+            <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+ 
+  </header>
+  <main id="maincontent">
+<div class="container">    <h1 id="asf-project-security-for-committers">ASF Project Security for Committers<a class="headerlink" href="#asf-project-security-for-committers" title="Permalink">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permalink">&para;</a></h2>
+<p>Here is guidance for Apache committers on how to handle
+security vulnerabilities. The <a href="mailto:security@apache.org">Apache Security
+Team</a> is available to provide help and advice
+to Apache projects that require it.</p>
+<ul>
+<li><a href="#known">Known vulnerabilities</a></li>
+<li><a href="#lists">Project-specific security mailing lists</a></li>
+<li><a href="#possible">Handling a possible vulnerability</a></li>
+<li><a href="#ids">CVE IDs</a></li>
+</ul>
+<h2 id="known">Known vulnerabilities<a class="headerlink" href="#known" title="Permanent link">&para;</a></h2>
+<p>Projects with known, published vulnerabilities should provide information
+about those vulnerabilities on pages such as the
+<a href="https://httpd.apache.org/security_report.html">httpd security pages</a>. Provide a clear link on the project's home page to the
+security information.</p>
+<p>Do not enter details of security vulnerabilities in a project's public bug
+tracker unless the necessary configuration is in place to limit access to
+the issue to only the reporter and the project team.</p>
+<h2 id="lists">Project-specific security mailing lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
+<p>Projects may wish to create a <a href="projects.md">project-specific security mailing list</a>.
+These take the name in the form <code>security@project.apache.org</code>, like
+<code>security@tomcat.apache.org</code>.</p>
+<p>When the infrastructure team creates project-specific security mailing lists, they configure them to copy
+all messages to <code>security@apache.org</code> automatically, so you do not have to
+cc <code>security@apache.org</code> when sending mail to such a list.</p>
+<p>We expect that a subset of project PMC members and committers will
+subscribe to the project-specific security mailing list. Do not use the list as a third-party notification system; non-committers should not
+be subscribed to the list.</p>
+<h2 id="possible">Handling a possible vulnerability<a class="headerlink" href="#possible" title="Permanent link">&para;</a></h2>
+<p>Here is a typical process for handling a possible security vulnerability.
+Projects that wish to use other processes <strong>may</strong> do so, but <strong>must</strong> clearly and
+publicly document their process and have <code>security@apache.org</code> review it before they begin using it.</p>
+<h3 id="work-in-private">Work in private<a class="headerlink" href="#work-in-private" title="Permalink">&para;</a></h3>
+<p>Do <strong>not</strong> make information about the vulnerability public until it is formally announced at the end of this process. That means, for example, that you should <strong>not</strong> create a public Jira ticket to track the issue, or a public GitHub issue, since those would make the issue public.
+Messages associated with any commits should <strong>not</strong> make any reference to the
+security nature of the commit.</p>
+<h3 id="report">Report<a class="headerlink" href="#report" title="Permalink">&para;</a></h3>
+<ol>
+<li>
+<p>The person discovering the issue, the <em>reporter</em>, reports the
+vulnerability privately to <code>security@project.apache.org</code> or to
+<code>security@apache.org</code>.</p>
+</li>
+<li>
+<p>The Security team ignores any message to this inbox that does not relate to reporting or managing an
+undisclosed security vulnerability in Apache software.</p>
+</li>
+<li>
+<p>If the report comes to <code>security@apache.org</code>, the security team forwards
+it to the project's security list or, if the project does not
+have a security list, to the project's private (PMC) mailing list.
+The Security Team responds to the original reporter that they have done this.</p>
+</li>
+</ol>
+<h3 id="acknowledge">Acknowledge<a class="headerlink" href="#acknowledge" title="Permalink">&para;</a></h3>
+<ol start="4">
+<li>
+<p>The project team sends an e-mail to the original reporter to acknowledge the report, with a copy to <code>security@project.apache.org</code> if it exists, or to
+<code>security@apache.org</code>.</p>
+</li>
+<li>
+<p>The project team investigates the report and either rejects or accepts
+it.</p>
+</li>
+<li>
+<p>If the project team <strong>rejects</strong> the report, the team writes to the reporter to
+explain why, with a copy to <code>security@project.apache.org</code> if it exists, or to
+<code>security@apache.org</code>.</p>
+</li>
+<li>
+<p>If the project team <strong>accepts</strong> the report, the team writes to the reporter to let them
+know that they have accepted the report and that they are working on a fix.</p>
+</li>
+<li>
+<p>The project team requests a CVE (<a href="https://cve.mitre.org/" target="_blank">Common Vulnerabilities and Exposures</a>) ID from the internal portal, <code>https://cveprocess.apache.org</code>; or by
+sending an e-mail with the subject "CVE request for..." to <code>security@apache.org</code>, providing a
+short (one-line) description of the vulnerability. <code>security@apache.org</code> can
+help determine if a report requires multiple CVE IDs or if multiple reports
+should be merged under a single CVE ID.</p>
+</li>
+<li>
+<p>The ASF security team allocates a CVE ID and sends to the project team a link to the
+internal portal where it can enter details of the
+vulnerability.</p>
+</li>
+</ol>
+<h3 id="resolve">Resolve<a class="headerlink" href="#resolve" title="Permalink">&para;</a></h3>
+<ol start="10">
+<li>
+<p>The project team agrees on a fix on their private list.</p>
+</li>
+<li>
+<p>The project team documents the details of the vulnerability and the fix on the
+internal portal. The portal generates draft announcement texts.  For
+an example of an announcement see <a href="https://markmail.org/message/w7mdjdxeqius7d6l">Tomcat's announcement of
+CVE-2008-2370</a>. The
+level of detail to include in the report is a matter of
+judgement. Generally, reports should contain enough information to
+enable people to assess the risk the vulnerability poses for
+their own system, and no more. Announcements do not normally include steps to reproduce the vulnerability.</p>
+<p>Optionally, you can put the CVE into the <code>REVIEW</code> state to request a
+review from the Security team. You can discuss the disclosure
+using the 'comment' feature, which also sends the comments to the
+relevant private mailing list(s).</p>
+</li>
+<li>
+<p>The project team provides the reporter with a copy of the fix and the
+draft vulnerability announcement for comment.</p>
+</li>
+<li>
+<p>The project team agrees on the fix, the announcement, and the
+release schedule with the reporter.  If the reporter is unresponsive
+in a reasonable timeframe this should not block the project team from
+moving to the next steps, particularly if an issue is of high severity
+or impact.</p>
+</li>
+<li>
+<p>The project team commits the fix. Do <strong>not</strong> make any reference that the commit relates to a security vulnerability.</p>
+</li>
+<li>
+<p>The project team creates a release that includes the fix.</p>
+</li>
+</ol>
+<h3 id="announce">Announce<a class="headerlink" href="#announce" title="Permalink">&para;</a></h3>
+<ol start="16">
+<li>
+<p>After (or at the same time as) the release announcement, the project team announces the vulnerability and the fix.
+Set the CVE status to <code>READY</code> in the <a href="https://cveprocess.apache.org">internal portal</a>. You can then use the portal to send the emails.
+The vulnerability announcement should be sent to the following destinations:</p>
+<p>a. the same destinations as the release announcement</p>
+<p>b. the vulnerability reporter</p>
+<p>c. the project's security list (or <code>security@apache.org</code> if the project does
+not have a dedicated security list)</p>
+<p>d. <code>oss-security@lists.openwall.com</code> (<a href="https://oss-security.openwall.org/wiki/mailing-lists">subscription not required</a>).</p>
+</li>
+</ol>
+<p>This is the first point that any information regarding the vulnerability is made public.</p>
+<h3 id="complete">Complete<a class="headerlink" href="#complete" title="Permalink">&para;</a></h3>
+<ol start="17">
+<li>
+<p>The project team updates the project's security pages.</p>
+</li>
+<li>
+<p>Add the link to the public announcement on the mailinglist as a 'reference' in the CVE.
+This notifies the security team, which will submit the information to the CVE project.</p>
+</li>
+<li>
+<p>If the project repository is in Subversion, add the CVE ID to the log for the commit that applied the fix. Do <strong>not</strong> try to do this if your project uses a Git repository, as editing a pushed commit causes all sorts of problems.</p>
+</li>
+</ol>
+<p>If the project does not have a dedicated <code>security@project.apache.org</code>
+mailing list, copy all communication regarding the vulnerability to <code>security@apache.org</code>. There is no need to do this for messages
+sent to <code>security@project.apache.org</code> since these are automatically copied to
+<code>security@apache.org</code>.</p>
+<p>Share information about the vulnerability with domain experts (or colleagues at your
+employer) at the discretion of the project's security team, providing that
+you make clear that the information is not for public disclosure and that you copy to
+<code>security@apache.org</code> or the project's security mailing list any communication regarding the vulnerability.</p>
+<h2 id="ids">CVE IDs<a class="headerlink" href="#ids" title="Permanent link">&para;</a></h2>
+<p><a href="https://cve.org/">CVE</a>
+IDs are unique identifiers given to security vulnerabilities.  The Apache
+Security Team is a <a href="https://www.cve.org/ProgramOrganization/CNAs">CVE Numbering Authority (CNA)</a> covering all Apache projects and is the only
+group able to allocate IDs to Apache Software Foundation project issues.</p>
+<p>If you believe the details of an issue are described
+incorrectly, contact <code>security@apache.org</code>.</p>
+
+</div>  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <br />
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-2">
+          <h5 class="white">Community</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://community.apache.org/">Overview</a></li>
+            <li><a href="/foundation/conferences.html">Conferences</a></li>
+            <li><a href="http://community.apache.org/gsoc.html">Summer of Code</a></li>
+            <li><a href="http://community.apache.org/newcomers/">Getting Started</a></li>
+            <li><a href="/foundation/how-it-works.html">The Apache Way</a></li>
+            <li><a href="https://tac.apache.org">Travel Assistance</a></li>
+            <li><a href="/foundation/getinvolved.html">Get Involved</a></li>
+            <li><a href="/foundation/policies/conduct.html">Code of Conduct</a></li>
+            <li><a href="http://community.apache.org/newbiefaq.html">Community FAQ</a></li>
+            <li><a href="/memorials/">Memorials</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Innovation</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://incubator.apache.org/">Incubator</a></li>
+            <li><a href="http://labs.apache.org/">Labs</a></li>
+            <li><a href="/licenses/">Licensing</a></li>
+            <li><a href="/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Tech Operations</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="/dev/">Developer Information</a></li>
+            <li><a href="/dev/infrastructure.html">Infrastructure</a></li>
+            <li><a href="/security/">Security</a></li>
+            <li><a href="http://status.apache.org">Status</a></li>
+            <li><a href="/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Press</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="/press/">Overview</a></li>
+            <li><a href="https://blogs.apache.org/">ASF News</a></li>
+            <li><a href="https://blogs.apache.org/foundation/">Announcements</a></li>
+            <li><a href="https://twitter.com/TheASF">Twitter Feed</a></li>
+            <li><a href="/press/#contact">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Legal</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="/legal/">Legal Affairs</a></li>
+            <li><a href="/legal/dmca.html">DMCA</a></li>
+            <li><a href="/licenses/">Licensing</a></li>
+            <li><a href="/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="/foundation/records/">Public Records</a></li>
+            <li><a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a></li>
+            <li><a href="/licenses/exports/">Export Information</a></li>
+            <li><a href="/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-1">
+        </div>
+
+      </div>
+      <hr class="col-lg-12 hr-white" />
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center">Copyright &#169; 2023 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+          <p class="text-center">Apache and the Apache feather logo are trademarks of The Apache Software Foundation. </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- / Footer -->
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    (function($){
+    $(document).ready(function(){
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).parent().siblings().removeClass('open');
+    $(this).parent().toggleClass('open');
+    console.log('WOrked');
+    });
+    });
+    })(jQuery);
+  </script>
+</body>
+</html>
