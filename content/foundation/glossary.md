@@ -1,8 +1,8 @@
-Title: Glossary of ASF Terms
+Title: ASF Glossary | Apache Software Foundation
 
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+# ASF Glossary
 
 This glossary provides a brief description of some of the organizational 
 terms used at the ASF and in Apache projects.  For more information 
@@ -12,15 +12,6 @@ about anything Apache, see the [/dev documentation](/dev/) or the
 ----
 
 <dl>
-<dt>ApacheCon  {#ApacheCon}</dt>
-
-<dd>
-
-The official developer and user conference of the ASF (see the
-[ApacheCon Web site](http://ApacheCon.Com/) ).
-
-</dd>
-
 <dt>Artifact  {#Artifact}</dt>
 
 <dd>
@@ -172,6 +163,15 @@ Group of individuals with a common cause. The community of a
 
 </dd>
 
+  <dt>Community Over Code (formerly called ApacheCon)  {#ApacheCon}</dt>
+
+<dd>
+
+The official developer and user conference of the ASF (see the
+[Community Over Code Web site](https://communityovercode.org/) ).
+
+</dd>
+  
 <dt>Consensus Approval  {#ConsensusApproval}</dt>
 
 <dd>
