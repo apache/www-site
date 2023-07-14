@@ -357,9 +357,12 @@ sufficient for a user to build and test the release provided they have
 access to the appropriate platform and tools. A source release SHOULD not
 contain compiled code.</p>
 <h4 id="release-signing">Release signing<a class="headerlink" href="#release-signing" title="Permalink">&para;</a></h4>
-<p>All supplied packages MUST be cryptographically signed by the Release
-Manager with a detached signature.  Folks who vote +1
-for release MAY offer their own cryptographic signature to be concatenated
+<p>All supplied packages MUST be cryptographically signed with a detached signature.
+It MUST be signed by either the Release Manager or the automated release
+infrastructure, where the underlying implementation MUST follow the principles
+<a href="/dev/release-signing.html#automated-release-signing">outlined</a> by the Apache
+Security Team. All supplied packages MUST use a detached signature. Those who
+vote +1 for release MAY offer their own cryptographic signature to be concatenated
 with the detached signature file (at the Release Manager's discretion)
 prior to release.</p>
 <h4 id="compiled-packages">Compiled packages<a class="headerlink" href="#compiled-packages" title="Permalink">&para;</a></h4>
