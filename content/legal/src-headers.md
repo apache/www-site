@@ -82,8 +82,8 @@ This section refers only to works submitted directly to the ASF by the copyright
 
 ## NOTICE file  {#notice}
 <ol start="0">  
- <li id="notice-required">Every Apache distribution should include a NOTICE file in the top directory, along with the standard LICENSE file.</li>
- <li id="notice-text">The top of each NOTICE file should include the following text, suitably modified to reflect the product name and the year(s) 
+ <li id="notice-required">Every Apache distribution must include a NOTICE file in the top directory, along with the standard LICENSE file.</li>
+ <li id="notice-text">The top of each NOTICE file must include the following text, suitably modified to reflect the product name and the year(s) 
  of distribution of the current and past versions of the product:
 
     Apache [PRODUCT_NAME]
