@@ -72,9 +72,12 @@ contain compiled code.
 
 #### Release signing  {#release-signing}
 
-All supplied packages MUST be cryptographically signed by the Release
-Manager with a detached signature.  Folks who vote +1
-for release MAY offer their own cryptographic signature to be concatenated
+All supplied packages MUST be cryptographically signed with a detached signature.
+It MUST be signed by either the Release Manager or the automated release
+infrastructure, where the underlying implementation MUST follow the principles
+[outlined](/dev/release-signing.html#automated-release-signing) by the Apache
+Security Team. All supplied packages MUST use a detached signature. Those who
+vote +1 for release MAY offer their own cryptographic signature to be concatenated
 with the detached signature file (at the Release Manager's discretion)
 prior to release.
 
