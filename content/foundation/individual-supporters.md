@@ -1,5 +1,4 @@
 Title: Individual Supporters | Apache Software Foundation
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # Support ASF: Individual Giving Programs

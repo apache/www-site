@@ -1,5 +1,4 @@
 Title: How To Contact Apache With Branding Questions
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

@@ -1,5 +1,4 @@
 Title: ASF 3rd Party License Policy
-
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom "ASF legal-discuss Mailing List"
 license: https://www.apache.org/licenses/LICENSE-2.0
 

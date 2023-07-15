@@ -1,5 +1,4 @@
 Title: New Project and Software Product Naming Process
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

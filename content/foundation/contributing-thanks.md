@@ -1,5 +1,4 @@
 Title:     Thanks for contributing!
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 <p style="text-align:left;"><img src="images/SupportApache-smallPNG.png" alt="Support Apache" title="Support Apache" height="150px" width="150px"/></p> 

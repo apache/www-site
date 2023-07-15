@@ -1,5 +1,4 @@
 Title: Apache Product Name Usage Guide
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

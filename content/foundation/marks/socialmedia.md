@@ -1,5 +1,4 @@
 Title: Apache Branded Social Media Best Practices
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

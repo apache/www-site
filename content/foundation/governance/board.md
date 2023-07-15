@@ -1,5 +1,4 @@
 Title: Apache Corporate Governance - Board of Directors
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

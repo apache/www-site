@@ -1,5 +1,4 @@
 Title: Apache Projects
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 THIS PAGE IS NO LONGER MAINTAINED

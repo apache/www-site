@@ -1,5 +1,4 @@
 Title: Events
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 In addition to our [official conferences](conferences.html) , there are

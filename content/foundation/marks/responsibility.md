@@ -1,5 +1,4 @@
 Title: Apache PMC Branding Responsibilities
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

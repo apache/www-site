@@ -1,5 +1,4 @@
 Title: ASF Milestones | Apache Software Foundation
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # ASF Milestones

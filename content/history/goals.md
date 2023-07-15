@@ -1,5 +1,4 @@
 Title: ASF History Project - Goals
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

@@ -1,5 +1,4 @@
 Title: ASF Members | Apache Software Foundation
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # Committed to Open Source and the ASF

@@ -1,5 +1,4 @@
 Title: Frequently Asked Questions | Apache Software Foundation
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # How can we help?

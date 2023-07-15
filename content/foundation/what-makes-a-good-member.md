@@ -1,5 +1,4 @@
 Title: What makes a good ASF Member?
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

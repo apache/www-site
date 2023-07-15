@@ -1,5 +1,4 @@
 Title: Attention regarding PayPal Phishing Attack
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

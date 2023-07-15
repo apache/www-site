@@ -1,5 +1,4 @@
 Title: Apache Projects In The News
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

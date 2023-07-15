@@ -1,5 +1,4 @@
 Title: Dion Gillard: a Memorial
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

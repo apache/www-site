@@ -1,5 +1,4 @@
 Title: Apache Trademark Reporting Best Practices
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

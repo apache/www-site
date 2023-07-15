@@ -1,5 +1,4 @@
 Title: Our Sponsors | Apache Software Foundation
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # Our Sponsors

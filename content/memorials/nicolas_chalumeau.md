@@ -1,5 +1,4 @@
 Title: Nicolas Chalumeau: a Memorial
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

@@ -1,5 +1,4 @@
 Title: Estimated Trademark Registration Costs For Apache Projects
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

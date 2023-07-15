@@ -1,5 +1,4 @@
 Title: ASF Open Source Projects | Apache Software Foundation
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # ASF Open Source Projects

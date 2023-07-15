@@ -1,5 +1,4 @@
 Title: ASF History | Apache Software Foundation
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # History of the Apache Software Foundation

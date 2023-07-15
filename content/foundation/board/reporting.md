@@ -1,5 +1,4 @@
 Title: Board Reporting Guidelines for Project Chairs
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}

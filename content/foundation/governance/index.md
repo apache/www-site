@@ -1,5 +1,4 @@
 Title: A Primer on ASF Governance | Apache Software Foundation
-
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # A Primer on ASF Governance
