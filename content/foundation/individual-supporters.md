@@ -8,7 +8,7 @@ ASF’s open source software is used ubiquitously around the world. Individual S
 ## One-Time or Recurring Donations
 Giving to Apache is easy! You can donate with a debit or credit card, bank transfer, PayPal, or Google Pay. If you'd like to mail a check, see instructions below.  Donations are tax-deductible in the U.S. The ASF is recognized by <a href="https://www.charitynavigator.org/index.cfm?bay=search.profile&ein=470825376" target="_blank">Charity Navigator</a> and cited with the Gold Seal of Transparency by <a href="https://www.guidestar.org/profile/47-0825376" target="_blank">GuideStar</a>. Thank you in advance for your generosity!
 	
-<p><a class="btn btn-default mx-10" href="https://donate.apache.org/48ff" role="button">Donate Now</a>	 
+<a class="btn btn-default mx-10" href="https://donate.apache.org/48ff" role="button">Donate Now</a>	 
 
 ## Corporate Matching Gifts
 
