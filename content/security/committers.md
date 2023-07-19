@@ -28,7 +28,7 @@ the issue to only the reporter and the project team.
 
 <h2 id="lists">Project-specific security mailing lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
 
-Projects may wish to create a [project-specific security mailing list](projects.md).
+Projects may wish to create a [project-specific security mailing list](https://security.apache.org/projects/).
 These take the name in the form `security@project.apache.org`, like
 `security@tomcat.apache.org`.
 
