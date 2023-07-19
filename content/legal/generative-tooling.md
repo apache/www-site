@@ -2,7 +2,7 @@ Title: ASF Generative Tooling Guidance
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom "ASF legal-discuss Mailing List"
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{Generative Tooling Guidance}}
+# {{title}}
 Version: 1.0
 
 [TOC]
