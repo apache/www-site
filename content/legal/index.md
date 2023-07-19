@@ -32,6 +32,7 @@ The following pages provide information for Apache Software Foundation committer
 | [Source Header and Copyright Notice Policy](/legal/src-headers.html) | Instructions on the application of source headers to ASF source files |
 | [CLA FAQ](/foundation/license-faq.html) | Questions related to signing our [Contributor License Agreements](/licenses/#clas) |
 | [Handling Cryptography within an ASF Release](/dev/crypto.html) | Cryptography Policy |
+| [Generative Tooling Guidance](/legal/generative-tooling.html) | Guidance relating to the use of Generative Tooling |
 
 
 ### The Legal Affairs Committee  {#communications}
