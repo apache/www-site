@@ -13,7 +13,7 @@ read the <a href="/foundation/governance/pmcs" target="_blank">PMC Governance ov
   - [Intended audience](pmc.html#audience)
   - [What is a PMC?](pmc.html#what-is-a-pmc)
   - [PMC required policies](pmc.html#policy)
-  - [How to perform the duties of the PMC chair](pmc.html#chair})
+  - [How to perform the duties of the PMC chair](pmc.html#chair)
   - [PMC membership management](pmc.html#pmcmembers)
   - [Project committer management](pmc.html#committer-management)
   - [PMC FAQs and how-tos](pmc.html#faq)
@@ -181,7 +181,7 @@ the next month's board meeting. Log in to the Board Agenda and click the
 _add item_ button at the bottom to add the appropriate resolution. If your PMC 
 members have difficulty logging into Whimsy, contact the `board@` mailing list for help.
 
-After the board approves the resolution (typically at the next monthly meeting), you must change the VP/chair name on the [foundation](../foundation/) website by [editing the top-level website](infra-site.html).
+Once the board approves the resolution (typically at the next monthly meeting), the newly appointed project VP and Chair will get instructions for how to accept the new role.
 
 ### Is a PMC Chair an officer or Member of the ASF?
 
