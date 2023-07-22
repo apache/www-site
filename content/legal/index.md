@@ -1,5 +1,4 @@
 Title: ASF Legal & Trademark | Apache Software Foundation
-
 Atom: http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 

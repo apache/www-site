@@ -1,5 +1,4 @@
 Title: How To Escalate Issues At The ASF
-
 Slug: escalation
 
 # {{title}}

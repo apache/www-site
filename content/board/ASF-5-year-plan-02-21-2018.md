@@ -1,5 +1,4 @@
 Title: Five-year Strategic Plan for the Apache Software Foundation
-
 Slug: plan
 
 # {{title}}

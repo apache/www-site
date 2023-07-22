@@ -1,5 +1,4 @@
 Title: Site Index
-
 Template: siteindex
 
 # {{title}}
