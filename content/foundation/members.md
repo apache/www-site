@@ -458,7 +458,7 @@ This table shows current and emeritus members who have manually added themselves
 
 ## Emeritus Members
 
-Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by sending an email to secretary@apache.org, attaching a signed copy of the [emeritus request](/forms/emeritus-request.pdf). They can subsequently submit a new membership application at any time, by notifying secretary@apache.org. This will result in their being added to the next new member election.
+Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by sending an email to secretary@apache.org, attaching a signed copy of the [emeritus request](/forms/emeritus-request.pdf). They can subsequently submit a new membership application at any time, by notifying secretary@apache.org. This will result in their being included in the next new member election.
 
 | Id | Name |
 |----|------|
