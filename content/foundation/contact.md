@@ -40,7 +40,7 @@ any emails **not** relating to security vulnerabilities.
 `http://people.apache.org/`,
 `http://home.apache.org/`,
 `http://projects.apache.org`, but excluding Web sites of individual Apache
-Projects), please email **webmaster@apache.org**. Issues with any individual 
+Projects), please email **press@apache.org**. Issues with any individual 
 Apache project's web page should go to that project's dev@ mailing list. 
 
 - If you are interested in **donating funds** to the Apache Software
