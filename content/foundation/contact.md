@@ -25,7 +25,7 @@ Visit the [ASF Security page](https://www.apache.org/security/) to learn how to 
 | Trademarks or service marks including all Apache project names and logos   | [Trademark Contacts](https://apache.org/foundation/marks/contact)      |
 | Legal and Licensing     | [Licensing FAQ](https://apache.org/foundation/license-faq.html) <br>  [Legal Affairs Committee](https://apache.org/legal/)      |
 | Infrastructure     | [Infrastructure Contact](https://infra.apache.org/contact.html) |
-| Website   | Issues with a specific Apache project's website should go to that project's dev@ mailing list. For issues with the foundation top-level websites such as apache.org: webmaster@apache.org      |
+| Website   | Issues with a specific Apache project's website should go to that project's dev@ mailing list. For issues with the foundation top-level websites such as apache.org: press@apache.org      |
 | DMCA Designated Agent     | [DMCA Agent](https://apache.org/legal/dmca.html)       |
 | Exports     | [Exports](/licenses/exports/)       |
 | For questions that are not covered above   | apache@apache.org      |
