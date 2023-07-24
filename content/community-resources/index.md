@@ -9,6 +9,7 @@ Your Awesome List of community programs and resources.
 |-----------|-------------|
 | [ASF Code of Conduct](https://apache.org/foundation/policies/conduct) |  We expect everyone who participates to honor our code of conduct. |
 | [ASF Committer Directory](https://people.apache.org/) |  An index of projects and committers for every ASF project. |
+| [ASF Memorials](https://apache.org/memorials/) |  Valued members we have lost.  |
 | [Apache Local Community (ALC)](https://cwiki.apache.org/confluence/display/COMDEV/Apache+Local+Community+-+ALC) |  ALCs are local groups of ASF / open source enthusiasts in towns/cities around the world. |
 | [Community Over Code](https://communityovercode.org/) |  ASF’s flagship community event in North America, Europe, and Asia. |
 | [Community Events](https://events.apache.org/) |  Calendar of upcoming community and ASF events. |
