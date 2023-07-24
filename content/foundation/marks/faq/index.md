@@ -317,10 +317,7 @@ headquartered.  As the ASF is a non-profit, we appreciate any assistance in proc
 of applications in process.  The legal transfer must be signed before 
 the podling can formally graduate, typically at a monthly board meeting.
 
-- A **best practice** is for a donor to submit a US or local country trademark 
-registration application before starting the incubation process, to secure rights to the name.  
-This ensures that the name will be registered and that the ASF will take over registration maintenance 
-once the podling graduates.  **IMPORTANT:** if you submit a new registration application 
+- **IMPORTANT:** If you are considering submitting a new registration application 
 *during the incubation process*, you **must** coordinate with VP, Brand and ASF counsel.
 
 
