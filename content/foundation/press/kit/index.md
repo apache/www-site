@@ -156,7 +156,7 @@ If you are unable to find the logo you are looking for, try inspecting the [dire
     </div>
 </div>
 
-The new blank template for the “Powered By” logos as well as select project “Powered By” logos can be downloaded [here](./poweredBy/powered-by-template-2019). The old template (black “powered by” band) is deprecated and should not be used for any current graphics use.
+The new blank template for the “Powered By” logos as well as select project “Powered By” logos can be downloaded [on our template site](./poweredBy/powered-by-template-2019). The old template (black “powered by” band) is deprecated and should not be used for any current graphics use.
 
 ## ASF Badges  {#badges}
 
