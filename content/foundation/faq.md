@@ -103,6 +103,12 @@ No, the membership of the ASF is composed of individuals, not companies. This do
 
 ## Technical
 
+### I believe my phone or laptop was hacked or adversely affected by the Apache Software Foundation. What do I do?
+
+The ASF does not create user apps or programs that comprise the many forms of malware. There are instances where bad actors use ASF software and/or the Apache license in their malicious code or misuse the Apache name for fraudulent purposes. If you are experiencing issues with your mobile device, computer or website, we recommend you visit your mobile service provider, ISP, tech support provider, or web hosting provider. If you are otherwise threatened, please contact your local law enforcement authority for guidance.
+
+For those seeking technical assistance with one of the ASF's hundreds of projects, we encourage you to visit the [project's site](https://projects.apache.org/projects.html) for information on mailing lists that may contain answers to your question or guidelines for known issues.
+
 ### You unexpectedly see an Apache HTTP Server installation page when you visit a website. 
 
 If you have sent us mail because you saw a page saying 'It Worked!' (or
