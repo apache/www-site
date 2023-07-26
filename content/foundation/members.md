@@ -262,7 +262,6 @@ This table shows current and emeritus members who have manually added themselves
 | luc | Luc Maisonobe | [commons](http://commons.apache.org/)|
 | luke1410 | [Stefan Hett](http://www.luke1410.de/) | [Subversion](https://subversion.apache.org/) ; [APR](https://apr.apache.org/) |
 | lukehan | Luke Han | [Kylin](http://kylin.apache.org)|
-| madhawa | Madhawa Gunasekara | [Gora](http://gora.apache.org), [Incubator](http://incubator.apache.org/) |
 | mads | [Mads Toftum](http://www.toftum.org/) | [httpd-docs](http://httpd.apache.org/docs-project/)|
 | manoj | [Manoj Kasichainula](http://www.io.com/~manojk/) | [httpd](http://httpd.apache.org/)|
 | marcelk | Marcel Kinard | [Cordova](http://cordova.apache.org/) |
@@ -594,6 +593,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | lindner | Paul Lindner |
 | lrosen | Lawrence Rosen |
 | lvjing | Jing Lv |
+| madhawa | Madhawa Gunasekara | [Gora](http://gora.apache.org), [Incubator](http://incubator.apache.org/) |
 | magicaltrout | Tom Barber | [OODT](http://oodt.apache.org) |
 | manolito | Manfred Geiler | [MyFaces](http://myfaces.apache.org/)|
 | marc | Marc Slemko |
