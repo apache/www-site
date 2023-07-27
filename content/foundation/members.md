@@ -301,7 +301,6 @@ This table shows current and emeritus members who have manually added themselves
 | ngn | [Niklas Gustavsson](http://protocol7.com) | [MINA](http://mina.apache.org)|
 | niallp | Niall Pemberton | [Jakarta](http://jakarta.apache.org/) ; [Struts](https://struts.apache.org/)|
 | nick | Nick Burch |
-| niclas | Niclas Hedhman |
 | ningjiang | Willem Ning Jiang |[activemq](http://activemq.apache.org/);[camel](http://camel.apache.org);[cxf](http://cxf.apache.org); [doris](http://doris.apache.org); [iotdb](http://iotdb.apache.org); [rocketmq](http://rocketmq.apache.org); [servicecomb](http://servicecomb.apache.org); [servicemix](http://servicemix.apache.org); [shardingsphere](http://shardingsphere.apache.org); [skywalking](http://skywalking.apache.org); [weex](http://weex.apache.org); [zipkin](http://zipkin.apache.org)|
 | niq | [Nick Kew](http://home.apache.org/~niq/) | [APR](http://apr.apache.org/) ; [httpd](http://httpd.apache.org/)|
 | noel | Noel J. Bergman | [ApacheCon](http://www.apachecon.com/) , [incubator](http://incubator.apache.org/) , infrastructure , [James](http://james.apache.org/)|
