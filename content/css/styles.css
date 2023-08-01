@@ -3,6 +3,8 @@ body {
   font-weight: 300;
 	padding-top:60px;
 	background-color: #fff;
+  font-size: 16px;
+  line-height: 1.4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,6 +38,7 @@ h3.h3-small {
 a { 
   word-break: normal;
 }
+ p a {text-decoration: underline;}
 
 section {
   padding: 25px 0 50px;
@@ -82,6 +85,10 @@ section {
   max-width: 90vw;
 }
 
+@media (max-width: 768px) {
+  .search-form.dropdown-menu {position: relative; left: auto; top: auto; padding: 5px 20px 5px 30px; display: block; max-width: 90vw;}
+  .search-form::before {content: 'search'; margin: 30px auto; position: absolute; top: -30px; color: #fff; left: 5px;}
+}
 @media (min-width: 768px) {
   .main .navbar-nav {
     display: flex;
@@ -441,6 +448,7 @@ a.white:hover {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr;
+  margin: 20px 0;
 }
 
 @media (min-width: 768px) {
@@ -456,7 +464,7 @@ a.white:hover {
     grid-column-end: 2;
   }
 
-  .updates .card:first-child {
+  .updates:not(.blog-feed) .card:first-child {
     grid-column-start: 1;
     grid-column-end: -1;
   }
