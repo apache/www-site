@@ -39,7 +39,7 @@ The ASF now uses a global content distribution network (CDN) to respond quickly 
 ## Milestones
 You can review highlights for each year since the inception of ASF in 1999. This is not intended to be a comprehensive list and certainly does not capture project-level history–rather it’s a high-level summary of key Foundation milestones.
 
-<p><a class="btn btn-default mx-10" href="https://apache.org/foundation/highlights.html " role="button">Go to Milestones</a>
+<p><a class="btn btn-default mx-10" href="https://apache.org/press/highlights" role="button">Go to Milestones</a>
 
 ## ASF History Project
 
