@@ -197,7 +197,7 @@ Tomcat technology'.
 
 If you wish to use a name including any of the Foundation's marks, such as
 the word 'Apache', ask our permission first. See our
-[Trademark Policy](foundation/marks/) for more details.
+[Trademark Policy](/foundation/marks/) for more details.
 
 ## I have made changes to an Apache package and I want to distribute them. Do I need to contribute them to the Apache Software Foundation?  {#Must-Contribute}
 
