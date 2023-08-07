@@ -12,7 +12,11 @@ All technical questions and questions about a specific ASF project should be add
 
 ## Security Contacts
 
-Visit the [ASF Security page](https://www.apache.org/security/) to learn how to report a security vulnerability. 
+Visit the [ASF Security page](https://www.apache.org/security/) to learn how to report a security vulnerability.
+
+## Academic Researchers
+
+To ensure that our communities are respected, and to make it easier for researchers to find the right information, our volunteers maintain a [Research Information Portal](https://apache.org/research/).
 
 ## Foundation Directory
 
