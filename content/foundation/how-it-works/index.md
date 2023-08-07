@@ -401,7 +401,7 @@ Private lists are typically only used for matters pertaining to people as
 individuals (like voting in new committers), and legal matters that require 
 confidentiality.
 
-## The Foundation Infrastructure (#infrastructure)
+## The Foundation Infrastructure {#infrastructure}
 
 The ASF does not have offices or buildings. Its only physical existence is the technical infrastructure that enables it to operate, and the staff.
 
