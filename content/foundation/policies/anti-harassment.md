@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # {{title}}
 
 ## Policy Information
-**Please see the [Apache-wide Code of Conduct policy](https://www.apache.org/foundation/policies/conduct), which covers expected 
+**Please see the [Apache-wide Code of Conduct policy](/foundation/policies/conduct), which covers expected 
 behavior within any Apache project's public or private spaces, including email lists.**
 
 The Apache Conference Committee adopted this policy. Its most recent change was on 2011-08-24.

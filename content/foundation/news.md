@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
-_Please see our [current listing of News and Announcements](https://www.apache.org/press/#news) for more recent notes._
+_Please see our [current listing of News and Announcements](/press/#news) for more recent notes._
 
 <hr/>
 
@@ -14,7 +14,7 @@ what has happened recently, please check the [archives of Apache
 Announcements](http://mail-archives.apache.org/mod_mbox/www-announce/) or
 you can visit [our foundation blog](https://blogs.apache.org/foundation/).
 
-See the [current listing of News and Announcements](https://www.apache.org/press/#news).
+See the [current listing of News and Announcements](/press/#news).
 
 ### 2010 ###
 

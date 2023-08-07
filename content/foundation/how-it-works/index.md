@@ -147,7 +147,7 @@ members of the foundation. The bylaws don't specify the number of board members
 that the foundation should have, but this was the number of the
 first board and it has never changed. The board is elected every year.
 
-The [board website](https://www.apache.org/foundation/governance/board.html) has more information, the list of the current
+The [board website](/foundation/governance/board.html) has more information, the list of the current
 directors, a schedule of meetings, and minutes of past meetings.
 
 ### Project Management Committees (PMC)  {#pmc}
@@ -163,10 +163,10 @@ The Board appoints the chair of the PMC, who also becomes an officer (Vice Presi
 has the power to establish rules and procedures for the day to day
 management of the communities for which the PMC is responsible, including
 the composition of the PMC itself. See further discussion about the role of the
-PMC [chair](https://www.apache.org/dev/pmc.html#chair) and [why chairs are
-officers](https://www.apache.org/foundation/faq.html#why-are-PMC-chairs-officers).
+PMC [chair](/dev/pmc.html#chair) and [why chairs are
+officers](/foundation/faq.html#why-are-PMC-chairs-officers).
 
-The [ASF Bylaws](https://www.apache.org/foundation/bylaws.html) (section 6.3) define a PMC and the position
+The [ASF Bylaws](/foundation/bylaws.html) (section 6.3) define a PMC and the position
 of chair. Some emails help to clarify:
 [here](http://www.mail-archive.com/community@apache.org/msg03961.html) and
 [here](http://www.mail-archive.com/community@apache.org/msg04005.html).
@@ -485,10 +485,10 @@ buildings. It's a virtual entity that exists only on the internet, and the [Infr
 technical infrastructure that enables it to operate.
 
 Read more about these and other cross-foundation projects on the [Foundation
-Projects](https://www.apache.org/foundation/foundation-projects.html) page.
+Projects](/foundation/foundation-projects.html) page.
 
 The ASF also hosts some foundation-wide mailing lists, which you can learn about
-on the [Mailing Lists](https://www.apache.org/foundation/mailinglists.html) page.
+on the [Mailing Lists](/foundation/mailinglists.html) page.
 
 ## In review...  {#conclusions}
 

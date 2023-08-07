@@ -87,7 +87,7 @@ This section refers only to works submitted directly to the ASF by the copyright
     Copyright [XXXX-XXXX] The Apache Software Foundation
 
     This product includes software developed at
-    The Apache Software Foundation (http://www.apache.org/).
+    The Apache Software Foundation (/).
 
  </li>
  <li id="notice-other">Use the remainder of the NOTICE file to include [required third-party notices][1].  

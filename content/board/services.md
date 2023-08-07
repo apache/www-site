@@ -39,38 +39,38 @@ and [Google Summer of Code assistance](https://community.apache.org/gsoc.html).
 
 ### Infrastructure Services
 
-The [Apache Infrastructure team](https://www.apache.org/dev/infrastructure) (Infra) is
+The [Apache Infrastructure team](/dev/infrastructure) (Infra) is
 responsible for management and day-to-day system administration and operation
 of websites, source control systems, and other infrastructure offered to 
-Apache projects, and provides a [guide to developer tools](https://www.apache.org/dev/).
-You can [contact Infra](https://www.apache.org/dev/infra-contact#misdirected)
+Apache projects, and provides a [guide to developer tools](/dev/).
+You can [contact Infra](/dev/infra-contact#misdirected)
 and [Infra has many self-serve tools](https://selfserve.apache.org/).
 
-Example services include: [Subversion and GitBox hosting](https://www.apache.org/dev/services.html#source-repository), 
-[Jenkins, BuildBot, and other CI tools like ReviewBoard,  Sonar](https://www.apache.org/dev/services.html#build), 
-[Hosted VM for each project](https://www.apache.org/dev/services.html#virtual-servers).
+Example services include: [Subversion and GitBox hosting](/dev/services.html#source-repository), 
+[Jenkins, BuildBot, and other CI tools like ReviewBoard,  Sonar](/dev/services.html#build), 
+[Hosted VM for each project](/dev/services.html#virtual-servers).
 
 ### Marketing & Publicity
 
-[Marketing and Publicity](https://www.apache.org/press/#whoweare)
+[Marketing and Publicity](/press/#whoweare)
 provides primary communications services for the ASF, and advises Apache
-projects and initiatives on their outreach efforts.  You can [contact the Press Team](https://www.apache.org/press/#contact).
+projects and initiatives on their outreach efforts.  You can [contact the Press Team](/press/#contact).
 
-Example services include: [Press releases over the wire for major releases](https://www.apache.org/press/#releases), 
-[connections with industry analysts](https://www.apache.org/press/#interviews), 
-[Apache feather and Powered By logos for all TLPs](https://www.apache.org/foundation/press/kit/).
+Example services include: [Press releases over the wire for major releases](/press/#releases), 
+[connections with industry analysts](/press/#interviews), 
+[Apache feather and Powered By logos for all TLPs](/foundation/press/kit/).
 
 ### Travel Assistance At ApacheCon
 
-The [Travel Assistance Committee](https://www.apache.org/travel) exists to
+The [Travel Assistance Committee](/travel) exists to
 help those that would like to attend ApacheCon events, but are unable to do so
 for financial reasons.
 
 ### Conference & Event Support
 
-The [Conferences team](https://www.apache.org/foundation/conferences)
+The [Conferences team](/foundation/conferences)
 organizes official events such as ApacheCon, as well as facilitating third
-party events that Apache PMCs are involved in.  You can [contact the Conferences team](https://www.apache.org/foundation/conferences#mailing-lists).
+party events that Apache PMCs are involved in.  You can [contact the Conferences team](/foundation/conferences#mailing-lists).
 
 Example services include: running [ApacheCon for all projects](https://apachecon.com/), 
 and a [central calendar for Apache-related events](https://events.apache.org/).
@@ -81,31 +81,31 @@ and a [central calendar for Apache-related events](https://events.apache.org/).
 The [Apache Security Team](https://security.apache.org) exists to provide
 help and advice to Apache projects on security issues and to provide
 co-ordination of the handling of security vulnerabilities and CVE issuing.
-Anyone can [submit a security issue](https://www.apache.org/security/#reporting-a-vulnerability).
+Anyone can [submit a security issue](/security/#reporting-a-vulnerability).
 
 Example services include: the [general security@ vulnerability reporting mailing list](https://security.apache.org/projects/),
-and [detailed checklists and help with CVEs](https://www.apache.org/security/committers.html) and handling vulnerabilities.
+and [detailed checklists and help with CVEs](/security/committers.html) and handling vulnerabilities.
 
 ### Brand & Trademarks
 
-The [Brand Management team](https://www.apache.org/foundation/marks/resources)
+The [Brand Management team](/foundation/marks/resources)
 collaborates with projects on branding and trademarks.  You can 
-[contact the Brand Management team](https://www.apache.org/foundation/marks/contact)
-and [report trademark issues](https://www.apache.org/foundation/marks/reporting).
+[contact the Brand Management team](/foundation/marks/contact)
+and [report trademark issues](/foundation/marks/reporting).
 
-Example services include: [trademark law resources for developers](https://www.apache.org/foundation/marks/resources), 
-[approvals for running outside events with Apache brands](https://www.apache.org/foundation/marks/events), 
-[trademark registration of your project name](https://www.apache.org/foundation/marks/register#register).
+Example services include: [trademark law resources for developers](/foundation/marks/resources), 
+[approvals for running outside events with Apache brands](/foundation/marks/events), 
+[trademark registration of your project name](/foundation/marks/register#register).
 
 ### Legal
 
-The [Legal Affairs Committee](http://www.apache.org/legal) is responsible for
+The [Legal Affairs Committee](/legal) is responsible for
 establishing and managing legal policies based on the advice of legal counsel
-and the interests of the Foundation.  You can [contact Legal Affairs](https://www.apache.org/legal/#communications).
+and the interests of the Foundation.  You can [contact Legal Affairs](/legal/#communications).
 
-Example services include: [answering specific legal JIRAs for project business](https://www.apache.org/foundation/contributing.html#TargetedSponsor), 
+Example services include: [answering specific legal JIRAs for project business](/foundation/contributing.html#TargetedSponsor), 
 a public legal-discussion@ mailing list for general legal chats, 
-and the [official FAQ of license compatibility questions](https://www.apache.org/legal/resolved.html).
+and the [official FAQ of license compatibility questions](/legal/resolved.html).
 
 ### Fundraising
 
@@ -113,8 +113,8 @@ The [VP, Fundraising](https://whimsy.apache.org/foundation/orgchart/vp-fundraisi
 is responsible for establishing and managing fundraising activities to 
 support the operations of the ASF and our projects.
 
-Example services include: [accepting targeted donations for your project](https://www.apache.org/foundation/contributing.html#TargetedSponsor), 
-and the [core donations and sponsorships](https://www.apache.org/foundation/contributing.html) that pay the ASF's bills.
+Example services include: [accepting targeted donations for your project](/foundation/contributing.html#TargetedSponsor), 
+and the [core donations and sponsorships](/foundation/contributing.html) that pay the ASF's bills.
 
 ### Other Useful Services
 
