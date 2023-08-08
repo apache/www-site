@@ -296,7 +296,7 @@ nature of the various communities.
 
 Each project is responsible for its own [project website](https://home.apache.org/committers-by-project.html).
 Further information to assist committers, developers, and PMCs is available
-at [ASF Infrastructure](https://infra.apache.org/).
+at [ASF Infrastructure](/dev/).
 
 ### Decision Making  {#decision-making}
 
