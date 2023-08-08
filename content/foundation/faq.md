@@ -51,7 +51,7 @@ You may read our [formal Trademark Policy](/foundation/marks/) as an introductio
    FAQ](license-faq.html). If that doesn't answer them, you may contact our
    [Legal Affairs Committee](/legal/).
 
-We address specific questions about trademarks of The Apache Software Foundation on the [Trademark Policy page](https://apache.org/foundation/marks/).
+We address specific questions about trademarks of The Apache Software Foundation on the [Trademark Policy page](/foundation/marks/).
 
 ## Foundation
 

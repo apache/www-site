@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 ASF Members are those who have proven their commitment to the ASF by contributing to one or more of the Foundation’s projects. We thank them for their ongoing contributions to the Foundation.
 
-Our Members are similar to stockholders–they elect new Members and may vote for Directors. Membership in The Apache Software Foundation is a privilege and is by invitation only. The [Governance](https://apache.org/foundation/governance/) page provides details on Membership and the nomination process.
+Our Members are similar to stockholders–they elect new Members and may vote for Directors. Membership in The Apache Software Foundation is a privilege and is by invitation only. The [Governance](/foundation/governance/) page provides details on Membership and the nomination process.
 
 <p><a class="btn btn-default mx-10" href="http://home.apache.org/committers-by-project.html#member" role="button">Go to Member List</a>
 
@@ -110,7 +110,7 @@ This table shows current and emeritus members who have manually added themselves
 | dain | Dain Sundstrom |
 | danese | Danese Cooper |
 | danhaywood | Dan Haywood | [Causeway](https://causeway.apache.org) |
-| danielsh | Daniel Shahaf | [Subversion](http://subversion.apache.org/), [Infrastructure](http://www.apache.org/dev/infrastructure)|
+| danielsh | Daniel Shahaf | [Subversion](http://subversion.apache.org/), [Infrastructure](/dev/infrastructure)|
 | danny | [Danny Angus](http://blog.killerbees.co.uk) | [James](http://james.apache.org/) , [Jakarta](http://jakarta.apache.org/), [Labs](http://labs.apache.org)|
 | dashorst | Martijn Dashorst |
 | davisp | Paul Joseph Davis |

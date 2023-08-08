@@ -24,13 +24,13 @@ The Board sets corporate policy, appoints officers, forms PMCs, delegates policy
 
 PMCs vote on new committers and PMC members for their project, set per-project policies, and formally vote on software product releases. PMCs report quarterly directly to the board, not to the President.
 
-**[Executive Officers](https://apache.org/foundation/leadership)**
+**[Executive Officers](/foundation/leadership)**
 
 The board elects a Board Chair (a director) and appoints a standard range of executive officers. Officers are all unpaid volunteers, and serve at the direction of the board in their specific areas of responsibility. Officers are responsible both for managing the Foundations affairs in their specific areas, and for reporting monthly status reports to the board.
 
 Executive officers include a President, Executive Vice President, Secretary, Assistant Secretary, and Treasurer.
 
-**[Corporate Officers](https://apache.org/foundation/leadership)**
+**[Corporate Officers](/foundation/leadership)**
 
 The board has appointed several officers for corporate-wide functions - this includes Vice Presidents to oversee Brand Management, Conference Planning, Fundraising, Legal Affairs, Marketing and Publicity, Travel Assistance, and Diversity. The board delegates authority to set and execute corporate policy within each officer's specific area of responsibility.
 

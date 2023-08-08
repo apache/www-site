@@ -7,8 +7,8 @@ The following contains quarterly and annual reports from the past three fiscal y
 
 #### Annual Reports
 
-*   [The Apache Software Foundation - Annual Report - FY2022](https://www.apache.org/foundation/docs/FY2022AnnualReport.pdf)
-*   [The Apache Software Foundation - Annual Report - FY2021](https://www.apache.org/foundation/docs/FY2021AnnualReport.pdf)
+*   [The Apache Software Foundation - Annual Report - FY2022](/foundation/docs/FY2022AnnualReport.pdf)
+*   [The Apache Software Foundation - Annual Report - FY2021](/foundation/docs/FY2021AnnualReport.pdf)
 *   [The Apache Software Foundation - Annual Report - FY2020](https://s.apache.org/FY2020AnnualReport)
 *   [The Apache Software Foundation - Annual Report - FY2019](https://s.apache.org/FY2019AnnualReport)
 *   [The Apache Software Foundation - Annual Report - FY2018](https://s.apache.org/FY2018AnnualReport)
@@ -46,4 +46,4 @@ The following contains quarterly and annual reports from the past three fiscal y
 *   [The Apache Way to Sustainable Open Source Success](https://s.apache.org/GhnI)
 *   [The Apache Software Foundation 2018 Vision Statement](https://s.apache.org/zqC3)
 *   [Foundation Statement –Apache Is Open.](https://s.apache.org/PIRA)
-*   [ASF 5-year Strategic Plan](https://www.apache.org/board/plan.html)
+*   [ASF 5-year Strategic Plan](/board/plan.html)

@@ -9,20 +9,20 @@ As one of the largest hosts for open source projects, there are a wide array of 
 
 ## About The ASF And Our Communities {#about}
 
-The Apache Software Foundation ("ASF") is based in the United States and is recognized as a 501C3 non-profit charity creating [software for the public good](https://www.apache.org/foundation/).  We do this by providing services and support for many software project communities who choose to join the ASF.  Thus the ASF is a very broad set of loosely-connected communities, each with their own independence, but following core [policies required by the ASF board](https://www.apache.org/board/).  A key feature of ASF project governance is [independence from corporate or outside control](https://community.apache.org/projectIndependence.html).
+The Apache Software Foundation ("ASF") is based in the United States and is recognized as a 501C3 non-profit charity creating [software for the public good](/foundation/).  We do this by providing services and support for many software project communities who choose to join the ASF.  Thus the ASF is a very broad set of loosely-connected communities, each with their own independence, but following core [policies required by the ASF board](/board/).  A key feature of ASF project governance is [independence from corporate or outside control](https://community.apache.org/projectIndependence.html).
 
-- See the [governance](https://www.apache.org/foundation/governance/) and [org chart](https://apache.org/foundation/governance/orgchart) of the ASF's corporate entity.
-- [The Apache Way](https://apache.org/theapacheway/index.html) is our set of behaviors for community-led projects.
+- See the [governance](/foundation/governance/) and [org chart](/foundation/governance/orgchart) of the ASF's corporate entity.
+- [The Apache Way](/theapacheway/index.html) is our set of behaviors for community-led projects.
 - We work on [many publicly archived mailing lists](https://lists.apache.org/) for the [100's of ASF projects](https://projects.apache.org/).
-- All [ASF code is free to use](https://www.apache.org/free/) and provided under [our Apache-2.0 license](https://www.apache.org/licenses/), and we have a [license FAQ](https://www.apache.org/legal/resolved.html).
-- We publish [Board of Directors minutes](https://whimsy.apache.org/board/minutes/) as well as [corporate public records](https://www.apache.org/foundation/records/).
+- All [ASF code is free to use](/free/) and provided under [our Apache-2.0 license](/licenses/), and we have a [license FAQ](/legal/resolved.html).
+- We publish [Board of Directors minutes](https://whimsy.apache.org/board/minutes/) as well as [corporate public records](/foundation/records/).
 - The [ASF infrastructure team](https://infra.apache.org/) can **only** answer questions about the ASF's own officially provided services.
 
 ## Codes Of Conduct And Communication Etiquette {#conduct}
 
-Please review the ASF's [Code of Conduct](https://www.apache.org/foundation/policies/conduct) before working in any ASF hosted spaces or communities.  The ASF's CoC is derived from a number of other popular open source project codes, and works to ensure all participants can contribute freely and comfortably in ASF spaces.  Any serious CoC violations should be [reported to one of our volunteer contacts](https://www.apache.org/foundation/policies/conduct#reporting-guidelines).
+Please review the ASF's [Code of Conduct](/foundation/policies/conduct) before working in any ASF hosted spaces or communities.  The ASF's CoC is derived from a number of other popular open source project codes, and works to ensure all participants can contribute freely and comfortably in ASF spaces.  Any serious CoC violations should be [reported to one of our volunteer contacts](/foundation/policies/conduct#reporting-guidelines).
 
-ASF Conferences have their own extended [Anti-Harassment policy](https://www.apache.org/foundation/policies/anti-harassment.html), covering in-person or synchronous online events.
+ASF Conferences have their own extended [Anti-Harassment policy](/foundation/policies/anti-harassment.html), covering in-person or synchronous online events.
 
 Virtually all communication at the ASF is expected to be on our [publicly archived mailing lists](https://community.apache.org/lists.html).  We have [general email etiquette guidelines](https://community.apache.org/contributors/etiquette) and [tips on how to use our mailing lists](https://infra.apache.org/contrib-email-tips.html).
 

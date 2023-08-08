@@ -220,7 +220,7 @@ website:
 
 >  
 >  <span class="link-external"> [Apache License, Version
-2.0](http://www.apache.org/licenses/LICENSE-2.0) </span>
+2.0](/licenses/LICENSE-2.0) </span>
 >
 This is a free software license, compatible with version 3 of the GPL.
 Please note that this license is not compatible with GPL version 2, because
