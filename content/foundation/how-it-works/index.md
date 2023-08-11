@@ -135,7 +135,7 @@ For all the details, read our [Governance overview][2].
 
 The board is responsible for management and oversight of the business and
 affairs of the corporation in accordance with the foundation
-[Bylaws](bylaws.html). This includes management of the corporate assets
+[Bylaws](/foundation/bylaws.html). This includes management of the corporate assets
 (funds, intellectual property, trademarks, and support equipment) and
 allocation of corporate resources to projects.
 
@@ -481,7 +481,7 @@ higher chance of finding real-life use of the software.
 
 Along with the Incubator, the foundation has several other
 cross-foundation projects. For example, the ASF does not have offices or
-buildings. It's a virtual entity that exists only on the internet, and the [Infrastructure team](../dev/infrastructure.html) manages the
+buildings. It's a virtual entity that exists only on the internet, and the [Infrastructure team](/dev/infrastructure.html) manages the
 technical infrastructure that enables it to operate.
 
 Read more about these and other cross-foundation projects on the [Foundation
