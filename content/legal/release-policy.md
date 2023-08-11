@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
-This page documents the ASF policy on software releases. This document is for ASF release managers and [PMC](glossary#PMC) members.
+This page documents the ASF policy on software releases. This document is for ASF release managers and [PMC](/foundation/glossary#PMC) members.
 Information [for end-users](https://infra.apache.org/release-download-pages.html#best_practice) is also available.
 
 This document summarizes the <a href="https://infra.apache.org/release-publishing.html">release process</a>.
