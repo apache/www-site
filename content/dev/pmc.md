@@ -164,6 +164,7 @@ and the LDAP committee group after the candidate accepts -- see the [detailed pr
 Maintain information about your PMC's composition in the SVN "committers" repository
 at [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt) and keep it up-to-date. 
 Remember to update the LDAP committee  group as well.
+This is normally done using the [Whimsy roster tool](https://whimsy.apache.org/roster/committee/).
 
 Be aware of anything currently in incubation at
 [incubator.apache.org](https://incubator.apache.org).
