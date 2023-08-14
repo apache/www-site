@@ -136,9 +136,9 @@ appear. The contents of the NOTICE file are for informational purposes only
 and do not modify the License. You may add Your own attribution notices
 within Derivative Works that You distribute, alongside or as an addendum to
 the NOTICE text from the Work, provided that such additional attribution
-notices cannot be construed as modifying the License.
-<br/>
-<br/>
+notices cannot be construed as modifying the License.</li>
+</ol>
+<br>
 You may add Your own copyright statement to Your modifications and may
 provide additional or different license terms and conditions for use,
 reproduction, or distribution of Your modifications, or for any such
