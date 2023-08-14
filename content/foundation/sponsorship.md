@@ -116,6 +116,24 @@ The ASF is an official charity in the Benevity Causes Portal, as part of numerou
 
 ## FAQ
 
+### What is the ASF’s tax identification number?
+The ASF's tax identification number is 47-0825376. 
+
+### Can I just make a one-time donation?
+The ASF appreciates donations of any size and, as we are a US registered 501(c)(3) 
+corporation, your donation may be tax deductible.  If you are interested in 
+donating to the ASF at a different level than sponsorship, see our 
+[donation page](/foundation/contributing.html).
+ 
+### Where can I mail a check?
+Mail your check or money order payable to:
+
+The Apache Software Foundation<br>
+1000 N West Street, Suite 1200<br>
+Wilmington, DE 19801<br>
+
+To receive a tax receipt, include your email address and the name for whom the donation should be credited (your own or the third party if it is a on behalf of someone else).
+
 ### Where will my sponsorship funds go?
 
 The ASF provides the infrastructure for hundreds of projects - the mailing lists, code repositories, bug tracking systems, etc. A few paid contractors, plus large amounts of volunteer effort, maintain these resources. This, in addition to the large costs of bandwidth and server hardware, constitutes the bulk of the expense of running the Foundation.
@@ -196,12 +214,5 @@ Two months before the end of your sponsorship, we will contact you (via the
 same mechanism we used to arrange the initial sponsorship) requesting 
 renewal. If renewal does not take place by the renewal date of the sponsorship,
 the ASF may remove your logo from the thanks page.
-
-### Can I just make a one-time donation?
-
-The ASF appreciates donations of any size and, as we are a US registered 501(c)(3) 
-corporation, your donation may be tax deductible.  If you are interested in 
-donating to the ASF at a different level than sponsorship, see our 
-[donation page](/foundation/contributing.html).
 
 Thanks for your support!
