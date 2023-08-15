@@ -107,21 +107,6 @@ asfdata
 ...
 -----
 metadata[site_url] = "https://www.apache.org"
-metadata[code_lines] = "227M"
-metadata[code_changed] = "4.2B"
-metadata[code_commits] = "4.1M"
-metadata[asf_members] = 820
-metadata[asf_members_rounded] = 800
-metadata[asf_committers] = "8,100"
-metadata[asf_contributors] = "40,000"
-metadata[asf_people] = "488,000"
-metadata[com_initiatives] = 350
-metadata[com_projects] = 300
-metadata[com_podlings] = 37
-metadata[com_downloads] = "~2 Petabytes"
-metadata[com_emails] = "24M"
-metadata[com_mailinglists] = "1,400"
-metadata[com_pageviews] = "35M"
 metadata[board] is a sequence.
 metadata[officers] is a sequence.
 metadata[committees] is a sequence.
