@@ -8,7 +8,7 @@ The ASF’s brand guidelines and trademark policy ensure consistent use of our b
 *   [Foundation Logos](#logo) - the formal ASF logo
 *   [Powered By Apache Logos](#poweredby) - for Apache projects
 *   [Apache Badges](#badges) — pictorial marks of the Apache Feather with taglines
-
+*   [Community Over Code Logos](#eventlogo) - the official Community Over Code event logo
 
 ## Foundation Logos {#logo}
 
@@ -171,3 +171,12 @@ Badges containing pictorial marks of the Apache Feather with various taglines an
 
 [1]: /foundation/marks/faq/#poweredby
 [2]: /foundation/press/kit/poweredBy/old-template-before-march-2019/Template.PNG "Per-Project Powered By Logo Example"
+
+## Community Over Code Logo  {#eventlogo}
+
+The official event logo for Community Over Code, ASF's flagship annual event.
+
+[![Community Over Code](community_over_code_logo.png)](community_over_code_logo.png)
+
+*   [Community Over Code PNG](community_over_code_logo.png)
+*   [Community Over Code SVG](community_over_code_logo.svg)
