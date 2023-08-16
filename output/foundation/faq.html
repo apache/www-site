@@ -78,6 +78,11 @@ s=d.getElementsByTagName('script')[0];
 		<a href="#maincontent">Skip to Main Content</a>
 	</div>
     <nav class="navbar navbar-inverse navbar-fixed-top mainmenu">
+      <div class="upper-nav">
+        <div class="container">
+          <a href="/foundation/sponsorship" class="btn btn-default" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Sponsor the ASF</a>
+        </div>
+      </div>
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
@@ -127,7 +132,6 @@ s=d.getElementsByTagName('script')[0];
                 <li><a href="/foundation/how-it-works">How the ASF Works</a></li>
                 <li><a href="/theapacheway/">The Apache Way</a></li>
                 <li><a href="/legal/">Legal &amp; Trademark</a></li>
-                <li><a href="/foundation/marks/">Trademark Policy</a></li>
                 <li><a href="/licenses">Licenses</a></li>
                 <li><a href="/foundation/glossary">Glossary</a></li>
                 <li><a href="/foundation/faq">FAQ</a></li>
@@ -152,6 +156,7 @@ s=d.getElementsByTagName('script')[0];
               <ul class="dropdown-menu" role="menu">
                 <li><a href="/foundation/">About</a></li>
                 <li><a href="/foundation/sponsors">Our Sponsors</a></li>
+		<li><a href="/foundation/sponsorship">Corporate Sponsorship</a></li>
                 <li><a href="/foundation/individual-supporters">Individual Supporters</a></li>
                 <li><a href="/foundation/leadership">Leadership</a></li>
                 <li><a href="/foundation/members">Members</a></li>
@@ -232,7 +237,7 @@ all cases, altered or not, you must include attribution as described in
 section 3 of the license. If you have further questions, see our <a href="license-faq.html">license
 FAQ</a>. If that doesn't answer them, you may contact our
 <a href="/legal/">Legal Affairs Committee</a>.</p>
-<p>We address specific questions about trademarks of The Apache Software Foundation on the <a href="https://apache.org/foundation/marks/">Trademark Policy page</a>.</p>
+<p>We address specific questions about trademarks of The Apache Software Foundation on the <a href="/foundation/marks/">Trademark Policy page</a>.</p>
 <h2 id="foundation">Foundation<a class="headerlink" href="#foundation" title="Permalink">&para;</a></h2>
 <h3 id="is-the-apache-software-foundation-asf-a-corporation">Is the Apache Software Foundation (ASF) a Corporation?<a class="headerlink" href="#is-the-apache-software-foundation-asf-a-corporation" title="Permalink">&para;</a></h3>
 <p>Yes, the ASF is a membership-based corporation registered in Delaware,
@@ -266,7 +271,7 @@ projects and benefited our users.</p>
 <p>No, the membership of the ASF is composed of individuals, not companies. This does not mean that individuals that work at a company cannot contribute to ASF, quite the contrary. We have a specific CLA to assure that individuals can clearly contribute to the ASF during "work time."</p>
 <h2 id="technical">Technical<a class="headerlink" href="#technical" title="Permalink">&para;</a></h2>
 <h3 id="i-believe-my-phone-or-laptop-was-hacked-or-adversely-affected-by-the-apache-software-foundation-what-do-i-do">I believe my phone or laptop was hacked or adversely affected by the Apache Software Foundation. What do I do?<a class="headerlink" href="#i-believe-my-phone-or-laptop-was-hacked-or-adversely-affected-by-the-apache-software-foundation-what-do-i-do" title="Permalink">&para;</a></h3>
-<p>The ASF does not create user apps or programs that comprise the many forms of malware. There are instances where bad actors use ASF software and/or the Apache license in their malicious code or misuse the Apache name for fraudulent purposes. If you are experiencing issues with your mobile device, computer or website, we recommend you visit your mobile service provider, ISP, tech support provider, or web hosting provider. If you are otherwise threatened, please contact your local law enforcement authority for guidance.</p>
+<p>There are instances where bad actors use ASF software and/or the Apache license in their malicious code or misuse the Apache name for fraudulent purposes. The ASF does not create user apps or programs that comprise the many forms of malware. If you are experiencing issues with your mobile device, computer or website, we recommend you visit your mobile service provider, ISP, tech support provider, or web hosting provider. If you are otherwise threatened, please contact your local law enforcement authority for guidance.</p>
 <p>For those seeking technical assistance with one of the ASF's hundreds of projects, we encourage you to visit the <a href="https://projects.apache.org/projects.html">project's site</a> for information on mailing lists that may contain answers to your question or guidelines for known issues.</p>
 <h3 id="you-unexpectedly-see-an-apache-http-server-installation-page-when-you-visit-a-website">You unexpectedly see an Apache HTTP Server installation page when you visit a website.<a class="headerlink" href="#you-unexpectedly-see-an-apache-http-server-installation-page-when-you-visit-a-website" title="Permalink">&para;</a></h3>
 <p>If you have sent us mail because you saw a page saying 'It Worked!' (or
@@ -365,7 +370,6 @@ versions say, is something like this!</p>
             <li><a href="/foundation/how-it-works">How the ASF Works</a></li>
             <li><a href="/theapacheway/">The Apache Way</a></li>
             <li><a href="/legal/">Legal &amp; Trademark</a></li>
-            <li><a href="/foundation/marks/">Trademark Policy</a></li>
             <li><a href="/licenses">Licenses</a></li>
             <li><a href="/foundation/glossary">Glossary</a></li>
             <li><a href="/foundation/faq">FAQ</a></li>
@@ -392,6 +396,7 @@ versions say, is something like this!</p>
           <ul class="list-unstyled white" role="menu">
             <li><a href="/foundation/">About</a></li>
             <li><a href="/foundation/sponsors">Our Sponsors</a></li>
+	    <li><a href="/foundation/sponsorship">Corporate Sponsorship</a></li>
             <li><a href="/foundation/individual-supporters">Individual Supporters</a></li>
             <li><a href="/foundation/leadership">Leadership</a></li>
             <li><a href="/foundation/members">Members</a></li>
@@ -422,15 +427,15 @@ versions say, is something like this!</p>
   <script src="/js/slideshow.js"></script>
   <script>
     (function($){
-    $(document).ready(function(){
-    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    $(this).parent().siblings().removeClass('open');
-    $(this).parent().toggleClass('open');
-    console.log('WOrked');
-    });
-    });
+      $(document).ready(function(){
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          $(this).parent().siblings().removeClass('open');
+          $(this).parent().toggleClass('open');
+          console.log('WOrked');
+        });
+      });
     })(jQuery);
   </script>
 </body>
