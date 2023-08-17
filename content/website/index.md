@@ -1,5 +1,6 @@
 Title: Site Index
 Template: siteindex
+Description: This lists all of the generated pages within the Foundation website
 
 # {{title}}
 
