@@ -178,5 +178,6 @@ The official event logo for Community Over Code, ASF's flagship annual event.
 
 [![Community Over Code](community_over_code_logo.png)](community_over_code_logo.png)
 
+*   [Community Over Code AI](community_over_code_logo.ai)
 *   [Community Over Code PNG](community_over_code_logo.png)
 *   [Community Over Code SVG](community_over_code_logo.svg)
