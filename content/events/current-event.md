@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # {{title}}
 
 <noscript>
-    <meta http-equiv="refresh" content="1; url=https://apachecon.com/">
+    <meta http-equiv="refresh" content="1; url=https://communityovercode.org/">
 </noscript>
 
 <script type="text/javascript">
@@ -13,7 +13,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
       if (m)  {
         ref = m[1];
       } else  { ref = 'unknown'; }
-      location.href = "https://apachecon.com/?ref=" + ref;
+      location.href = "https://communityovercode.org/?ref=" + ref;
 </script>
 
 ## ApacheCon
