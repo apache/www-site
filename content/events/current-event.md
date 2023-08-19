@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # {{title}}
 
 <noscript>
-    <meta http-equiv="refresh" content="1; url=http://apachecon.com/">
+    <meta http-equiv="refresh" content="1; url=https://apachecon.com/">
 </noscript>
 
 <script type="text/javascript">
