@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 This page answers common queries that we receive about our contribution agreements. 
 
-* For other licensing questions, see our [Licensing FAQ](../foundation/licensing.html).
+* For other licensing questions, see our [Licensing FAQ](../foundation/license-faq.html).
 * For non-licensing questions, see our [General FAQ](/foundation/preFAQ.html).
 
 <h1 id="frequent-questions-about-asf-contribution-agreements">Frequent questions about ASF contribution agreements<a class="headerlink" href="#frequent-questions-about-asf-contribution-agreements" title="Permanent link">&para;</a></h1>
