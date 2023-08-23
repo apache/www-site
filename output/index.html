@@ -45,21 +45,27 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
     });
-    window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#page-404-search" });
-    });
+    if(document.getElementById('page-404-search')){
+      console.log('here');
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
   </script>
   
 
   <!-- Matomo -->
   <script>
+    const pageTitle = 'Welcome to The Apache Software Foundation!';
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before
 "trackPageView" */
     /* We explicitly disable cookie tracking to avoid privacy issues */
     _paq.push(['disableCookies']);
-    /* Track 404 page hits */
-    _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
     /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
 as the same visit */
     _paq.push(['trackPageView']);
@@ -401,48 +407,48 @@ s=d.getElementsByTagName('script')[0];
 <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
 <ul class="nav nav-tabs">
 <li class="active">
-<a data-toggle="tab" href="#datasketches">DataSketches</a>
+<a data-toggle="tab" href="#zookeeper">ZooKeeper</a>
 </li><li>
-<a data-toggle="tab" href="#linkis">Linkis</a>
+<a data-toggle="tab" href="#solr">Solr</a>
 </li><li>
-<a data-toggle="tab" href="#perl">Perl</a>
+<a data-toggle="tab" href="#syncope">Syncope</a>
 </li>
 </ul>
 </div>
 </div>
 <div class="col-md-9 col-sm-12">
 <div class="tab-content">
-<div class="tab-pane fade in active" id="datasketches">
+<div class="tab-pane fade in active" id="zookeeper">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/datasketches/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/zookeeper/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-datasketches"><a href="http://datasketches.apache.org">DataSketches</a></h4>
-<p>an open source, high-performance library of streaming algorithms commonly called "sketches" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and can provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact methods</p>
-<a class="btn btn-default btn-sm" href="http://datasketches.apache.org" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-zookeeper"><a href="http://zookeeper.apache.org/">ZooKeeper</a></h4>
+<p>Centralized service for maintaining configuration information</p>
+<a class="btn btn-default btn-sm" href="http://zookeeper.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="linkis">
+</div><div class="tab-pane fade in" id="solr">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/linkis/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/solr/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-linkis"><a href="http://linkis.apache.org">Linkis</a></h4>
-<p>a distributed computation middleware to facilitate connection, governance and orchestration between the upper applications and the underlying data engines</p>
-<a class="btn btn-default btn-sm" href="http://linkis.apache.org" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-solr"><a href="http://solr.apache.org">Solr</a></h4>
+<p>highly scalable distributed document search and analytics</p>
+<a class="btn btn-default btn-sm" href="http://solr.apache.org" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="perl">
+</div><div class="tab-pane fade in" id="syncope">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/perl/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/syncope/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-perl"><a href="http://perl.apache.org/">Perl</a></h4>
-<p>Dynamic websites using Perl</p>
-<a class="btn btn-default btn-sm" href="http://perl.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-syncope"><a href="http://syncope.apache.org/">Syncope</a></h4>
+<p>Managing digital identities in enterprise environments</p>
+<a class="btn btn-default btn-sm" href="http://syncope.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
 </div>
@@ -461,48 +467,48 @@ s=d.getElementsByTagName('script')[0];
 <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
 <ul class="nav nav-tabs">
 <li class="active">
-<a data-toggle="tab" href="#pekko">Pekko</a>
+<a data-toggle="tab" href="#toree">Toree</a>
 </li><li>
-<a data-toggle="tab" href="#wayang">Wayang</a>
+<a data-toggle="tab" href="#liminal">Liminal</a>
 </li><li>
-<a data-toggle="tab" href="#pegasus">Pegasus</a>
+<a data-toggle="tab" href="#celeborn">Celeborn</a>
 </li>
 </ul>
 </div>
 </div>
 <div class="col-md-9 col-sm-12">
 <div class="tab-content">
-<div class="tab-pane fade in active" id="pekko">
+<div class="tab-pane fade in active" id="toree">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/pekko/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/toree/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-pekko"><a href="http://pekko.incubator.apache.org/">Pekko</a></h4>
-<p>Pekko is a toolkit and an ecosystem for building highly concurrent, distributed, reactive and resilient applications for Java and Scala.</p>
-<a class="btn btn-default btn-sm" href="http://pekko.incubator.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="incubating-project-toree"><a href="http://toree.incubator.apache.org/">Toree</a></h4>
+<p>Toree provides applications with a mechanism to interactively and remotely access Apache Spark.</p>
+<a class="btn btn-default btn-sm" href="http://toree.incubator.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="wayang">
-<div class="row">
-<div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/wayang/default.png"/>
-</div>
-<div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-wayang"><a href="http://wayang.incubator.apache.org/">Wayang</a></h4>
-<p>Wayang is a cross-platform data processing system that aims at decoupling the business logic of data analytics applications from concrete data processing platforms, such as Apache Flink or Apache Spark. Hence, it tames the complexity that arises from the "Cambrian explosion" of novel data processing platforms that we currently witness.</p>
-<a class="btn btn-default btn-sm" href="http://wayang.incubator.apache.org/" role="button">Learn More...</a>
-</div>
-</div>
-</div><div class="tab-pane fade in" id="pegasus">
+</div><div class="tab-pane fade in" id="liminal">
 <div class="row">
 <div class="col-sm-2">
 <img alt="Logo" class="img-responsive center-block" src="/logos/res/incubator/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-pegasus"><a href="http://pegasus.incubator.apache.org/">Pegasus</a></h4>
-<p>Pegasus is a distributed key-value storage system which is designed to be simple, horizontally scalable, strongly consistent and high-performance.</p>
-<a class="btn btn-default btn-sm" href="http://pegasus.incubator.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="incubating-project-liminal"><a href="http://liminal.incubator.apache.org/">Liminal</a></h4>
+<p>Apache Liminal is an end-to-end platform for data engineers and scientists, allowing them to build, train and deploy machine learning models in a robust and agile way.</p>
+<a class="btn btn-default btn-sm" href="http://liminal.incubator.apache.org/" role="button">Learn More...</a>
+</div>
+</div>
+</div><div class="tab-pane fade in" id="celeborn">
+<div class="row">
+<div class="col-sm-2">
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/celeborn/default.png"/>
+</div>
+<div class="col-sm-10">
+<h4 class="no-btm-margin" id="incubating-project-celeborn"><a href="http://celeborn.incubator.apache.org/">Celeborn</a></h4>
+<p>Celeborn is an intermediate data service for big data computing engines to boost performance, stability, and flexibility.</p>
+<a class="btn btn-default btn-sm" href="http://celeborn.incubator.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
 </div>
