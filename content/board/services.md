@@ -1,5 +1,5 @@
 Title: Foundation Services for Apache Projects
-Slug: services
+
 
 # {{title}}
 
