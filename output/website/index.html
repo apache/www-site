@@ -54,6 +54,8 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
 "trackPageView" */
     /* We explicitly disable cookie tracking to avoid privacy issues */
     _paq.push(['disableCookies']);
+    /* Track 404 page hits */
+    _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
     /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
 as the same visit */
     _paq.push(['trackPageView']);
@@ -210,6 +212,7 @@ Folder index pages (first page) are linked headings and pages within a folder ar
 
 <h3><a href="/">Welcome to The Apache Software Foundation!</a></h3>
 <ol>
+<li><a href="/404.html">Welcome to The Apache Software Foundation!</a></li>
 <li><a href="/mirrors.html">Apache Mirrors</a></li>
 </ol>
 <h3><a href="/board/">Apache Board -- Project Services & Expectations</a></h3>
