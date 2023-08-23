@@ -41,8 +41,8 @@
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
     });
-    if(document.getElementById('page-404-search')){
-      console.log('here');
+    var pageTitle = '{{ page.title }}';
+    if(pageTitle === '404'){
       window.addEventListener('DOMContentLoaded', (event) => {
           new PagefindUI({ element: "#page-404-search" });
       });
@@ -54,7 +54,7 @@
   {% if page.license %}<!-- {{ page.license }} -->{% endif %}
   <!-- Matomo -->
   <script>
-    const pageTitle = '{{ page.title }}';
+    var pageTitle = '{{ page.title }}';
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before
 "trackPageView" */
