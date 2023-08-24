@@ -45,15 +45,27 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
     });
+    var pageTitle = 'ASF Source Header and Copyright Notice Policy';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
   </script>
+  
 
 <!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
   <script>
+    var pageTitle = 'ASF Source Header and Copyright Notice Policy';
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before
 "trackPageView" */
     /* We explicitly disable cookie tracking to avoid privacy issues */
     _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
     /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
 as the same visit */
     _paq.push(['trackPageView']);

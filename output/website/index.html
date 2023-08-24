@@ -45,15 +45,27 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
     });
+    var pageTitle = 'Site Index';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
   </script>
+  
 
   <!-- Matomo -->
   <script>
+    var pageTitle = 'Site Index';
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before
 "trackPageView" */
     /* We explicitly disable cookie tracking to avoid privacy issues */
     _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
     /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
 as the same visit */
     _paq.push(['trackPageView']);
@@ -210,9 +222,10 @@ Folder index pages (first page) are linked headings and pages within a folder ar
 
 <h3><a href="/">Welcome to The Apache Software Foundation!</a></h3>
 <ol>
+<li><a href="/404.html">404</a></li>
 <li><a href="/mirrors.html">Apache Mirrors</a></li>
 </ol>
-<h3><a href="/board/">Apache Board</a></h3>
+<h3><a href="/board/">Apache Board -- Project Services & Expectations</a></h3>
 <ol>
 <li><a href="/board/ASF-5-year-plan-02-21-2018.html">Five-year Strategic Plan for the Apache Software Foundation</a></li>
 <li><a href="/board/escalation.html">How To Escalate Issues At The ASF</a></li>
