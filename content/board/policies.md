@@ -97,4 +97,3 @@ and/or to the board.
 
 * General [How-To information for Apache contributors](/dev/).
 * [Five-year Strategic Plan for the Apache Software Foundation](./ASF-5-year-plan-02-21-2018), from 2018
-
