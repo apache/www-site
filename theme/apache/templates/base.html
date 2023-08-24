@@ -41,17 +41,29 @@
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
     });
+    var pageTitle = '{{ page.title }}';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
   </script>
+  
 
   {% if page.notice %}<!-- {{ page.notice }} -->{% endif %}
   {% if page.license %}<!-- {{ page.license }} -->{% endif %}
   <!-- Matomo -->
   <script>
+    var pageTitle = '{{ page.title }}';
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before
 "trackPageView" */
     /* We explicitly disable cookie tracking to avoid privacy issues */
     _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
     /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
 as the same visit */
     _paq.push(['trackPageView']);
