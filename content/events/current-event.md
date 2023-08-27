@@ -1,6 +1,13 @@
 Title: ApacheCon Events
 license: https://www.apache.org/licenses/LICENSE-2.0
 
+<!--
+    The URL to which this page redirects should agree with
+    https://github.com/apache/comdev-events-site/blob/main/source/x/current-event.md
+    and the default event in
+    https://www.apachecon.com/event-images/snippet.js
+-->
+
 # {{title}}
 
 <noscript>
