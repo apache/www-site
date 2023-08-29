@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # New PMC Chair Onboarding Guide
 
-Congratulations on being appointed by the Board as a project VP and Chair of your PMC, and thanks for volunteering to be a PMC Chair and help represent your project to the Board!  The ASF relies on volunteers like you to help the Board provide the required oversight for our many projects.
+Congratulations on being appointed by the Board as a project VP and Chair of your PMC, and thanks for volunteering to help represent your project to the Board!  The ASF relies on volunteers like you to help the Board provide the required oversight for our many projects.
 
 Please run through the following checklist **now** to take action to accept your role, and read on for details about all the duties and responsibilities of a PMC Chair, or read a high-level overview of [what a PMC is](https://apache.org/foundation/governance/pmcs).
 
