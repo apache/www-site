@@ -136,8 +136,6 @@ including:
 
 -  [Apache mail archives](https://lists.apache.org/) 
 
--  [MarkMail](http://apache.markmail.org/) 
-
 -  [MARC](http://marc.info/) 
 
 -  [mail-archive.com](http://mail-archive.com/) 

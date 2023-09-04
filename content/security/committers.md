@@ -98,7 +98,7 @@ vulnerability.
 11. The project team documents the details of the vulnerability and the fix on the
 internal portal. The portal generates draft announcement texts.  For
 an example of an announcement see [Tomcat's announcement of
-CVE-2008-2370](https://markmail.org/message/w7mdjdxeqius7d6l). The
+CVE-2008-2370](https://lists.apache.org/thread/smbdmck5m48rbh6tw9bbfszf64oh591y). The
 level of detail to include in the report is a matter of
 judgement. Generally, reports should contain enough information to
 enable people to assess the risk the vulnerability poses for

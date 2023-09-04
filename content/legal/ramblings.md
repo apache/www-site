@@ -105,7 +105,7 @@ licenses, new
 [clauses](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/200803.mbox/%3c47DEB046.10004@dubioso.net%3e)
 , and new
 [exclusions](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/200802.mbox/%3cE1A2049F-5D7B-44F7-A1E3-B9645BC52348@yahoo.com%3e).
-And new [uses](http://markmail.org/message/7no3tdx6nh37stpw).
+And new [uses](https://lists.apache.org/thread/wk1dskb4h2dzo5t71wyz5lgf0pc23hx4).
 
 ### Approximation 3  {#head-cc4186e2c34505e5dddc5c9b5e40a655cd699e5c}
 
