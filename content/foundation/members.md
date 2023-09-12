@@ -391,6 +391,7 @@ This table shows current and emeritus members who have manually added themselves
 | sriksun | Srikanth Sundarrajan | [falcon](http://falcon.apache.org), [lens] (http://lens.apache.org)
 | srowen | Sean Owen | [Spark](http://spark.apache.org/), [Mahout](http://mahout.apache.org/) |
 | sseifert | Stefan Seifert | [Sling](http://sling.apache.org/), [Felix](http://felix.apache.org/) |
+| sseth | Siddharth Seth | [Hadoop](http://hadoop.apache.org) ; [Tez](http://tez.apache.org/) ; [Hive](http://hive.apache.org/)|
 | stack | Michael Stack |
 | stain | [Stian Soiland-Reyes](http://orcid.org/0000-0001-9842-9718) | [Taverna](https://taverna.incubator.apache.org/) ; [Commons](https://commons.apache.org/) ; [Incubator](https://incubator.apache.org/)  |
 | stevehay | [Steve Hay](http://home.apache.org/~stevehay) | [mod_perl](http://perl.apache.org/) , [httpd-apreq](http://httpd.apache.org/apreq)|
