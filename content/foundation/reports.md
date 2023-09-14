@@ -1,12 +1,13 @@
 Title: reports
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-### Foundation Reports and Statements
+# ASF Reports and Statements
 
 The following contains quarterly and annual reports from the past three fiscal years, as well as select Foundation statements. Official public records, including original incorporation records, bylaws, and IRS filings and notices are also available.
 
-#### Annual Reports
+### Annual Reports
 
+*   [The Apache Software Foundation - Annual Report - FY2023](/foundation/docs/FY2023AnnualReport.pdf)
 *   [The Apache Software Foundation - Annual Report - FY2022](/foundation/docs/FY2022AnnualReport.pdf)
 *   [The Apache Software Foundation - Annual Report - FY2021](/foundation/docs/FY2021AnnualReport.pdf)
 *   [The Apache Software Foundation - Annual Report - FY2020](https://s.apache.org/FY2020AnnualReport)
@@ -15,7 +16,7 @@ The following contains quarterly and annual reports from the past three fiscal y
 *   [The Apache Software Foundation - Annual Report - FY2017](https://s.apache.org/FY2017AnnualReport)
 *   [The Apache Software Foundation - Annual Report - FY2016](https://s.apache.org/Ccml)
 
-#### Quarterly Reports
+### Quarterly Reports
 
 *   Q3 FY2021 - [The Apache Software Foundation Operations Summary: November 2020 - January 2021](https://s.apache.org/Q3FY2021)
 *   Q2 FY2021 - [The Apache Software Foundation Operations Summary: August - October 2020](https://s.apache.org/Q2FY2021)
@@ -33,7 +34,10 @@ The following contains quarterly and annual reports from the past three fiscal y
 *   Q2 FY2017 - [The Apache Software Foundation Operations Summary: August - October 2016](https://s.apache.org/oTOF)
 *   Q1 FY2017 - [The Apache Software Foundation Operations Summary: May - August 2016](https://s.apache.org/1BsV)
 
-#### Recent Foundation Statements
+### Diversity Reports
+*   [Promoting and Studying Diversity, Equity, and Inclusion in the ASF Community - 2023](/foundation/docs/2023DEIReport.pdf)
+
+### Recent Foundation Statements
 
 *   [Foundation Statement at 8 February 2022 Senate Committee hearing on Homeland Security and Government Affairs]( https://blogs.apache.org/foundation/entry/foundation-statement-at-8-february)
 *   [Apache Software Foundation Security Report: 2021](https://blogs.apache.org/foundation/entry/apache-software-foundation-security-report2)
