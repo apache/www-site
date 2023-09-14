@@ -43,16 +43,16 @@ ASF committers can also use the Whimsy [Mailing List Self-subscription](https://
 ## Request addresses for [un]subscribing
 
 If you want to subscribe
-to <code><em>list</em>@apache.org</code>, you need to send a message to
+to <code><em>list</em>@<em>project</em>.apache.org</code>, you need to send a message to
 
 <pre>
-<em>list</em>-subscribe@apache.org
+<em>list</em>-subscribe@<em>project</em>.apache.org
 </pre>
 
 To get off a list, send a message to
 
 <pre>
-<em>list</em>-<b>un</b>subscribe@apache.org
+<em>list</em>-<b>un</b>subscribe@<em>project</em>.apache.org
 </pre>
 
 To unsubscribe a different e-mail - e.g.
@@ -60,7 +60,7 @@ you used to be subscribed as **`user@oldname.example`** - send a message
 to
 
 <pre>
-<em>list</em>-unsubscribe-<b>user=oldname.example</b>@apache.org
+<em>list</em>-unsubscribe-<b>user=oldname.example</b>@<em>project</em>.apache.org
 </pre>
 
 _The list moderators can also do this._
