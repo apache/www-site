@@ -33,7 +33,6 @@ To ensure that our communities are respected, and to make it easier for research
 | Website   | Issues with a specific Apache project's website should go to that project's dev@ mailing list. For issues with the foundation top-level website apache.org or news.apache.org: press@apache.org |
 | DMCA Designated Agent     | [DMCA Agent](/legal/dmca.html)       |
 | Exports     | [Exports](/licenses/exports/)       |
-| For questions that are not covered above   | apache@apache.org      |
 
 ## Mailing Address
 
