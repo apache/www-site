@@ -29,8 +29,8 @@ set -e # fast exit (must be done after 'which' invocation)
 if [ -z "$PAGEFIND" ] # could not find pagefind
 then
     echo "Download pagefind"
-    PAGEFIND_VERSION='0.12.0'
-    PAGEFIND_HASH='3e450176562b65359f855c04894ec2c07ffd30a8d08ef4d5812f8d3469d7a58f'
+    PAGEFIND_VERSION='1.0.3'
+    PAGEFIND_HASH='e84ec7e8cb424022aa70ca14e6735c67c9728596753321dec782a902c3bfe6f0'
     BINDIR=$(mktemp -d)
     TARGET=${BINDIR}/pagefind.tar.gz
     wget --no-verbose -O ${TARGET} https://github.com/CloudCannon/pagefind/releases/download/v${PAGEFIND_VERSION}/pagefind-v${PAGEFIND_VERSION}-x86_64-unknown-linux-musl.tar.gz
@@ -46,4 +46,4 @@ then
 fi
 
 echo "Running pagefind on ${PELICAN_OUTPUT_PATH}"
-${PAGEFIND} --source ${PELICAN_OUTPUT_PATH}
+${PAGEFIND} --site ${PELICAN_OUTPUT_PATH} --output-subdir "_pagefind"
