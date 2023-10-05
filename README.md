@@ -87,6 +87,8 @@ If you need to test your changes, create a branch such as preview/_your-asf-id_
 
 Commits to it will be staged at www-_your-asf-id_.staged.apache.org
 
+=======
+
 Note: the branch name must not include any "." characters,
 or browsers will refuse to display the site due to an invalid SSL certificate.
 The underscore character should not be used either, as it is disallowed in host names.
