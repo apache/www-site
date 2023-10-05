@@ -56,7 +56,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.didiglobal.com/"><img src="images/didi.png"/></a><p style="text-align: center; font-weight: bold;">Didi Chuxing</p></li>
       <li><a target="_blank" rel="sponsored" href="https://linecorp.com/"><img src="images/LINE-silver.png"/></a><p style="text-align: center; font-weight: bold;">LINE</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.talend.com/"><img src="images/talend-silver.png"/></a><p style="text-align: center; font-weight: bold;">Talend</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.target.com/"><img src="images/target-silver.png"/></a><p style="text-align: center; font-weight: bold;">Target</p></li>
    </ul>
    </div>
@@ -103,6 +102,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://aws.amazon.com/"><img src="images/aws-platinum.png"></a><p style="text-align: center; font-weight: bold;">Amazon Web Services</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.cloudbees.com/"><img src="images/cloudbees.png"/></a><p style="text-align: center; font-weight: bold;">CloudBees</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.dlapiper.com/"><img src="images/dlapiper.png"/></a><p style="text-align: center; font-weight: bold;">DLA Piper</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://gradle.com/"><img src="images/gradle-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Gradle</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.leaseweb.com/"><img src="images/leaseweb-platinum.png"/></a><p style="text-align: center; font-weight: bold;">LeaseWeb</p></li>
       <li><a target="_blank" rel="sponsored" href="https://jfrog.com/open-source/"><img src="images/jfrog-platinum.png"/></a><p style="text-align: center; font-weight: bold;">JFrog</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
