@@ -9,7 +9,7 @@ the Board appoints various officers and creates PMCs;
 the PMCs report periodically to the board, and most other officers 
 report through the President, who reports for them to the board.
 
-Click in the image map to learn more about a role.
+Click in the image map below to learn more about that role, or read our [listing of various officers at the ASF](https://whimsy.apache.org/foundation/orgchart).
 
 <map name="ApacheOrgChart-p1" id="ApacheOrgChart-p1">
 <area id="board" title="Board of Directors" href="https://whimsy.apache.org/foundation/orgchart/board" shape="rect" coords="494,110,656,223" style="outline:none;" target="_self" />
