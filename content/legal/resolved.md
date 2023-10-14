@@ -80,6 +80,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - [Historical Permission Notice and Disclaimer](https://opensource.org/licenses/HPND)
 - [Mulan Permissive Software License，Version 2](https://license.coscl.org.cn/MulanPSL2/)
 - [Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0)
+- [EPICS Open License]( https://epics-controls.org/epics-open-license/)
 
 Many of these licenses have specific attribution terms that the project needs to adhered to, often by [adding 
 them to the NOTICE file](/dev/licensing-howto.html). Ensure you are doing this when including these works. 
