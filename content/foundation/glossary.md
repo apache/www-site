@@ -689,8 +689,8 @@ Some definitions:
 -  [Naughty](http://www.urban75.com/Mag/troll.html) 
 -  [Definitive](http://en.wikipedia.org/wiki/Internet_trolls) 
      
-For how to deal with trolls, see [this thread](http://markmail.org/message/3wlpx2hafyeqdt4t) but (for those who
-are impatient) here's [Ted's opinion](http://markmail.org/message/sppexq2vcfewcm5a) 
+For how to deal with trolls, see [this thread](https://lists.apache.org/thread/wm9g4tlnf9j9c52t7syozx19fhxzd92z) but (for those who
+are impatient) here's [Ted's opinion](https://lists.apache.org/thread/z3h9w7mw8bs1gpy44vkyz9nht1bvhpbf)
 (which acts as a good summary).
 
 </dd>
