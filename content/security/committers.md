@@ -42,9 +42,9 @@ be subscribed to the list.
 
 <h2 id="possible">Handling a possible vulnerability<a class="headerlink" href="#possible" title="Permanent link">&para;</a></h2>
 
-Here is the default process for handling a possibly security vulnerability.
-Projects that need a different process **must** contact security@apache.org for advice, 
-and should expect to clearly and publicly document their process.
+Here is a typical process for handling a possible security vulnerability.
+Projects that wish to use other processes **may** do so, but **must** clearly and
+publicly document their process and have `security@apache.org` review it before they begin using it.
 
 ### Work in private
 
