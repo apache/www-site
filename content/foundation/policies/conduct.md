@@ -62,9 +62,8 @@ While all participants should adhere to this code of conduct, we recognize that 
 
 Assume good faith; it is more likely that participants are unaware of their bad behaviour than that they intentionally try to degrade the quality of the discussion. Should there be difficulties in dealing with the situation, you may report your compliance issues in confidence to:
  
- * President of the Apache Software Foundation: David Nalley (ke4qqq at apache dot org)
- * Executive Vice President of the Apache Software Foundation: Ruth Suehle (suehle at apache dot org)
- * Vice President, Diversity & Inclusion: Katia Rojas (katia at apache dot org) 
+ * [President](https://whimsy.apache.org/foundation/orgchart) of the Apache Software Foundation: David Nalley (ke4qqq at apache dot org)
+ * [Executive Vice President](https://whimsy.apache.org/foundation/orgchart) of the Apache Software Foundation: Ruth Suehle (suehle at apache dot org)
 
 or one of our volunteers:
 
