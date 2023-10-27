@@ -1,22 +1,17 @@
-This directory is for promoting ApacheCon and other ASF-sponsored events.
+Projects are asked to be part of promoting upcoming events by
+including the event images and links in their sites
 
-NOTE: I'm in the process of moving all of this over to
-events.apache.org, so please go look there instead: 
-http://events.apache.org/README.txt
+# Instructions
 
------------------------------------------------------------------------------
+Please follow the instructions at https://www.apachecon.com/event-images
 
-# UPDATE!
+# Legacy instructions
 
-Do it this way instead! https://www.apachecon.com/event-images
+The former way of including event images in your project site still
+works, but will likely stop being maintained at some time in the
+future.
 
-# How-To add ApacheCon event promotion to your project site (Legacy method)
-
-All PMCs are asked to help promote ApacheCon and other major Apache 
-sponsored events by adding some form of img link to their homepages, 
-in whatever place works best for your site navigation.  Once you add 
-the code, no further changes needed (will be auto-updated to be 
-the next upcoming event).
+To add the static image to your project site:
 
 - Add a small image and link (where {size} = 125x125 or 234x60)
 
@@ -24,14 +19,10 @@ the next upcoming event).
   <img src="https://www.apache.org/events/current-event-{size}.png"/>
 </a>
 
-- (or) Add larger banners with an iframe or hardcoded div:
-  https://apache.org/ads/adserver.txt
+# Updating images
 
+To update the images used in these ads:
 
-# How ComDev/VP, Conferences Maintains These current-event & Meetup Pages
-
-* Maintenance of current-event* files for PMC inclusion:
 - update text in content/events/current-event.mdtext
 - replace content/events/current-event-*.png files with the new versions from content/ads/ApacheCon
 
-See also content/ads/README.txt
