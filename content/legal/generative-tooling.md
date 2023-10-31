@@ -9,7 +9,7 @@ Version: 1.0
 
 ## Can contributions to ASF projects include AI generated content? {#include-in-contributions}
 
-The Apache-2.0 license, and the Apache Individual Contribution License Agreement, both remind contributors that they are responsible for disclosing any copyrighted materials in submitted contributions that are not their original creation. This is as true when using generative AI tooling, as it is when using materials from public websites or code from other open source projects.
+The Apache-2.0 license, and the Apache Individual Contribution License Agreement, both remind contributors that they are responsible for disclosing any copyrighted materials in submitted contributions that are not their original creation. This is as true when using generative AI tooling, as it is when using materials from public websites or code from other open-source projects.
 
 When disclosing these materials, contributors should also identify the licensing for these materials. The ASF maintains a [3rd Party Licensing Policy](/legal/resolved.html) that provides guidance on which licenses are acceptable, along with instructions on the treatment of [3rd Party Works](/legal/src-headers.html#3party).
 
@@ -23,7 +23,7 @@ These portions authored by a human may simply come from the prompt the human pro
 
 Given the above, code generated in whole or in part using AI can be contributed if the contributor ensures that:
 
-1. The terms and conditions of the generative AI tool do not place any restrictions on use of the output that would be inconsistent with the Open Source Definition (e.g., ChatGPT’s terms are inconsistent).
+1. The terms and conditions of the generative AI tool do not place any restrictions on use of the output that would be inconsistent with the [Open Source Definition](https://opensource.org/osd/).
 2. At least one of the following conditions is met:
     1. The output is not copyrightable subject matter (and would not be even if produced by a human)
     2. No third party materials are included in the output
@@ -34,8 +34,9 @@ Given the above, code generated in whole or in part using AI can be contributed 
 When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase “Generated-by: <Name of Tool> <Version>”. This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.
 
 Finally, please note that while the above seems like a reasonable set of guidelines in June 2023, this is a rapidly evolving area. Whatever we recommend to PMCs today, policies will need to be re-evaluated and updated in response to:
+
 - Changes in the law
-- Changes in AI technology and related tools (e.g., as AI models evolve that are (1) are able to provide notice when they reproduce portions of the materials they were trained on or (2) can be instructed to reproduce only permissively (or otherwise Apache-2.0 compatible) licensed source materials
+- Changes in AI technology and related tools, e.g., as AI models evolve that (1) are able to provide notice when they reproduce portions of the materials they were trained on or (2) can be instructed to reproduce only permissively (or otherwise Apache-2.0 compatible) licensed source materials
 - Changes in tolerance for risk and ambiguity among adopters of OSS
 
 We will continue communicating with PMC and ASF members as updates to this FAQ get discussed and merged in.
@@ -44,7 +45,7 @@ We will continue communicating with PMC and ASF members as updates to this FAQ g
 The above text should apply for documentation as well. However, the most popular tooling for documentation, ChatGPT, has restrictive licensing, so caution should be applied.
 
 ## What about Images? {#include-in-images}
-As with documentation, the above principles would still apply. Though with images being a non textual form, the details quickly become complex. We expect this to continue to be a rapidly evolving area.
+As with documentation, the above principles would still apply. Though with images being a non-textual form, the details quickly become complex. We expect this to continue to be a rapidly evolving area.
 
 ## What do we do if a contribution includes AI generated content and some form of tooling has identified materials that have been copied? {#handling-references}
 Refer to the [3rd Party Licensing Policy](/legal/resolved.html) as with any other contribution.
