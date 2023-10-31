@@ -28,8 +28,7 @@ Given the above, code generated in whole or in part using AI can be contributed 
     1. The output is not copyrightable subject matter (and would not be even if produced by a human)
     2. No third party materials are included in the output
     3. Any third party materials that are included in the output are being used with permission (e.g., under a compatible open source license) of the third party copyright holders and in compliance with the applicable license terms
-3. A contributor obtain reasonable certainty that conditions 2.2 or 2.3 are met if the AI tool itself provides sufficient information about materials that may have been copied, or from code scanning results
-    1. E.g. AWS CodeWhisperer recently added a feature that provides notice and attribution
+3. A contributor obtain reasonable certainty that conditions 2.2 or 2.3 are met if the AI tool itself provides sufficient information about materials that may have been copied, or from code scanning results.
 
 When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase “Generated-by: <Name of Tool> <Version>”. This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.
 
@@ -42,7 +41,7 @@ Finally, please note that while the above seems like a reasonable set of guideli
 We will continue communicating with PMC and ASF members as updates to this FAQ get discussed and merged in.
 
 ## What about Documentation? {#include-in-documentation}
-The above text should apply for documentation as well. However, the most popular tooling for documentation, ChatGPT, has restrictive licensing, so caution should be applied.
+The above text applies to documentation as well. Pay attention to tools that have restrictive licensing for the generated content, caution should be applied.
 
 ## What about Images? {#include-in-images}
 As with documentation, the above principles would still apply. Though with images being a non-textual form, the details quickly become complex. We expect this to continue to be a rapidly evolving area.
