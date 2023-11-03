@@ -5,11 +5,13 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 You can help improve the`apache.org` website.
 
-If you have changes to propose to this top-level ASF
-documentation (/foundation/ and /dev/), please send patches using the [Infra issues
-tracker](http://issues.apache.org/jira/browse/INFRA). (Do not reveal
+If you have changes to propose to the top-level ASF
+documentation (/foundation/ and most /dev pages), open a GitHub Issue.
+
+For changes to pages in /dev that relate to Infrastructure, send patches using the [Infra issues
+tracker](http://issues.apache.org/jira/browse/INFRA). Do not reveal
 obviously sensitive information, such as the name of any private mailing
-lists.) 
+lists.
 
 **Note:** PMC chairs are responsible
 for ensuring that the portions of the website which relate to their PMC are
