@@ -94,3 +94,8 @@ to resolve the vulnerability.
 
 Committers should read a [more detailed description of the process](committers.html). Reporters of security vulnerabilities may also find
 it useful.
+
+
+## Discussion
+
+Committers and Security Researchers are encouraged to join our [community discuss list](https://lists.apache.org/list.html?security-discuss@community.apache.org).
