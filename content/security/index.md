@@ -3,9 +3,12 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
-The Apache Security Team provides help and advice to Apache
-projects on security issues and coordinates the handling of
-security vulnerabilities. 
+The Apache Security Team guides Apache projects on security issues 
+and coordinates the handling of all security vulnerabilities. The team 
+is a CVE Numbering Authority (CNA) covering all Apache projects and is 
+the only group able to allocate IDs to Apache Software Foundation project 
+issues. Advisories are published per project, and may be reviewed via 
+the [project advisories](https://security.apache.org/projects/).
 
 ## Reporting a vulnerability
 
