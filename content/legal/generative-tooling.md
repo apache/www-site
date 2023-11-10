@@ -46,5 +46,8 @@ The above text applies to documentation as well. Pay attention to tools that hav
 ## What about Images? {#include-in-images}
 As with documentation, the above principles would still apply. Though with images being a non-textual form, the details quickly become complex. We expect this to continue to be a rapidly evolving area.
 
+## The tool we want to use may rely on other tools. What terms of use do we need to consider when following this guidance? {#tools-rely-on-other-tools}
+Don't second guess vendor's terms of use (TOU). Your usage of their tools is bound by the totality of the given TOU and you are not expected to go outside of the TOU text for further clarifications.
+
 ## What do we do if a contribution includes AI generated content and some form of tooling has identified materials that have been copied? {#handling-references}
 Refer to the [3rd Party Licensing Policy](/legal/resolved.html) as with any other contribution.
