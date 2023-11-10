@@ -51,3 +51,6 @@ Don't second guess vendor's terms of use (TOU). Your usage of their tools is bou
 
 ## What do we do if a contribution includes AI generated content and some form of tooling has identified materials that have been copied? {#handling-references}
 Refer to the [3rd Party Licensing Policy](/legal/resolved.html) as with any other contribution.
+
+## Can the ASF provide a list of approved generative AI Tools? {#approved-tools-list}
+It is not in the interest of the ASF to tell developers what tools to use. You may use whatever tools you wish provided that you follow the guidance in this document.
