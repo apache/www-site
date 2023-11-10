@@ -25,18 +25,18 @@ Given the above, code generated in whole or in part using AI can be contributed 
 
 1. The terms and conditions of the generative AI tool do not place any restrictions on use of the output that would be inconsistent with the [Open Source Definition](https://opensource.org/osd/).
 2. At least one of the following conditions is met:
-    1. The output is not copyrightable subject matter (and would not be even if produced by a human)
-    2. No third party materials are included in the output
-    3. Any third party materials that are included in the output are being used with permission (e.g., under a compatible open source license) of the third party copyright holders and in compliance with the applicable license terms
+    1. The output is not copyrightable subject matter (and would not be even if produced by a human).
+    2. No third party materials are included in the output.
+    3. Any third party materials that are included in the output are being used with permission (e.g., under a compatible open-source license) of the third party copyright holders and in compliance with the applicable license terms.
 3. A contributor obtain reasonable certainty that conditions 2.2 or 2.3 are met if the AI tool itself provides sufficient information about materials that may have been copied, or from code scanning results.
 
 When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase “Generated-by: <Name of Tool> <Version>”. This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.
 
 Finally, please note that while the above seems like a reasonable set of guidelines in June 2023, this is a rapidly evolving area. Whatever we recommend to PMCs today, policies will need to be re-evaluated and updated in response to:
 
-- Changes in the law
-- Changes in AI technology and related tools, e.g., as AI models evolve that (1) are able to provide notice when they reproduce portions of the materials they were trained on or (2) can be instructed to reproduce only permissively (or otherwise Apache-2.0 compatible) licensed source materials
-- Changes in tolerance for risk and ambiguity among adopters of OSS
+- Changes in the law.
+- Changes in AI technology and related tools, e.g., as AI models evolve that (1) are able to provide notice when they reproduce portions of the materials they were trained on or (2) can be instructed to reproduce only permissively (or otherwise Apache-2.0 compatible) licensed source materials.
+- Changes in tolerance for risk and ambiguity among adopters of OSS.
 
 We will continue communicating with PMC and ASF members as updates to this FAQ get discussed and merged in.
 
