@@ -41,7 +41,7 @@ Finally, please note that while the above seems like a reasonable set of guideli
 We will continue communicating with PMC and ASF members as updates to this FAQ get discussed and merged in.
 
 ## What about Documentation? {#include-in-documentation}
-The above text applies to documentation as well. Pay attention to tools that have restrictive licensing for the generated content, caution should be applied.
+The above text applies to documentation as well. Pay attention to tools that have restrictive licensing for the generated content, caution should be applied, make sure it complies with the [3rd Party Licensing Policy](https://www.apache.org/legal/resolved.html#:~:text=They%20are%20said%20to%20be%20%22Apache-like%22.%20Category%20B%3A,NOT%20be%20included%20in%20Apache%20Software%20Foundation%20products) and [3rd Party Works](https://www.apache.org/legal/src-headers.html#3party).
 
 ## What about Images? {#include-in-images}
 As with documentation, the above principles would still apply. Though with images being a non-textual form, the details quickly become complex. We expect this to continue to be a rapidly evolving area.
