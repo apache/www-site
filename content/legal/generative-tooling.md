@@ -28,7 +28,7 @@ Given the above, code generated in whole or in part using AI can be contributed 
     1. The output is not copyrightable subject matter (and would not be even if produced by a human).
     2. No third party materials are included in the output.
     3. Any third party materials that are included in the output are being used with permission (e.g., under a compatible open-source license) of the third party copyright holders and in compliance with the applicable license terms.
-3. A contributor obtain reasonable certainty that conditions 2.2 or 2.3 are met if the AI tool itself provides sufficient information about materials that may have been copied, or from code scanning results.
+3. A contributor obtains reasonable certainty that conditions 2.2 or 2.3 are met if the AI tool itself provides sufficient information about output that may be similar to training data, or from code scanning results.
 
 When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase “Generated-by: <Name of Tool> <Version>”. This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.
 
