@@ -84,8 +84,9 @@ to Apache Tomcat.
 
 Event organizers must allow a project management committee (PMC) representative from any project whose
 marks are used, or alternately a member from Community Development,
-to sit on their Selection Committee. The PMC or Community Development representative
-will represent the ASF, not their employer, to help ensure that the event follows ASF guidelines. PMC representatives from Apache must be associated with
+to sit on their Selection Committee. The PMC or Community Development representatives
+will represent the ASF, not their employer, to help ensure that the event follows ASF
+guidelines. PMC representatives from Apache must be associated with
 at least two different organizations, to avoid the appearance of the event being
 tightly tied to one commercial organization.
 
@@ -132,7 +133,7 @@ You **must** have permission from a VP of the ASF to use the "used with permissi
 ## Use of logos and graphics  {#graphics}
 
 Normally, events may not use any Apache logos or graphics as part of their primary
-event branding. an event may only use Apache product logos to refer to the
+event branding. An event may only use Apache product logos to refer to the
 Apache products or projects themselves, and must display such logos apart from
 any of the event's own branding and logos.
 
@@ -218,7 +219,7 @@ branding. These names are reserved exclusively for the ASF and its own authorize
 Foundation Events, and for specific PMC-run
 events that the Foundation approves.
 
-#3 Other trademark guidelines  {#other}
+## Other trademark guidelines  {#other}
 
 For more information about Apache marks, see our [formal Trademark
 Policy](/foundation/marks/) and our [site map of Trademark resources][resources].
@@ -273,7 +274,7 @@ third party products, services, or events.**
 
 ### Policy Version  {#version}
 
-This is version 1.6 of this Apache policy document, published in December 2023. The text was updated to improve readability in August 2021.
+This is version 1.6 of this Apache policy document, published in December 2023.
 
 Material changes will be marked with a new version number.
 
