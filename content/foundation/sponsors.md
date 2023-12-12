@@ -20,7 +20,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="http://google.com/"><img src="images/google.png"/></a><p style="text-align: center; font-weight: bold;">Google</p></li>
       <li><a target="_blank" rel="sponsored" href="http://huawei.com/"><img src="images/huawei-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Huawei</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://pineapplefund.org/"><img src="images/pineapple_fund.png"/></a><p style="text-align: center; font-weight: bold;">Pineapple Fund</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://news.apache.org/foundation/entry/the-apache-software-foundation-receives"><img src="images/pineapple_fund.png"/></a><p style="text-align: center; font-weight: bold;">Pineapple Fund</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.vmware.com/opensource.html"><img src="images/vmware-platinum2.png"/></a><p style="text-align: center; font-weight: bold;">VMware</p></li>
       <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
    </ul>
@@ -38,7 +38,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.confluent.io/"><img src="images/confluent-gold.png"/></a><p style="text-align: center; font-weight: bold;">Confluent</p></li>
       <li><a target="_blank" rel="sponsored" href="http://ibm.com/"><img src="images/ibm.png"/></a><p style="text-align: center; font-weight: bold;">IBM</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/"><img src="images/indeed.png"/></a><p style="text-align: center; font-weight: bold;">Indeed</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://oceanx.org/"><img src="images/oceanx-gold.png"/></a><p style="text-align: center; font-weight: bold;">OceanX</p></li>
       <li><a target="_blank" rel="sponsored" href="https://opensource.salesforce.com/"><img src="images/salesforce-gold.png"/></a><p style="text-align: center; font-weight: bold;">Salesforce</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.union-investment.de/"><img src="images/union-gold.png"/></a><p style="text-align: center; font-weight: bold;">Union Investment</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.visa.com/"><img src="images/visa-gold.png"/></a><p style="text-align: center; font-weight: bold;">VISA</p></li>
