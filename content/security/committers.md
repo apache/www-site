@@ -66,39 +66,39 @@ it to the project's security list or, if the project does not
 have a security list, to the project's private (PMC) mailing list.
 The Security Team responds to the original reporter that they have done this.
 
-4. If the project does not have a dedicated `security@project.apache.org`
+If the project does not have a dedicated `security@project.apache.org`
 mailing list, all further communication regarding the vulnerability should be copied to `security@apache.org`. 
 There is no need to do this for messages sent to `security@project.apache.org` since these are automatically copied to `security@apache.org`.
 
 ### Acknowledge
 
-5. The project team sends an e-mail to the original reporter to acknowledge the report, with a copy to the relevant security mailing list.
+4. The project team sends an e-mail to the original reporter to acknowledge the report, with a copy to the relevant security mailing list.
 
-6. The project team investigates the report and either rejects or accepts it. Project team members may share information about the vulnerability 
+5. The project team investigates the report and either rejects or accepts it. Project team members may share information about the vulnerability 
 with domain experts (including colleagues at their employer) at the discretion of the project's security team, providing that they make clear 
 that the information is not for public disclosure.
 
-7. If the project team **rejects** the report, the team writes to the reporter to
+6. If the project team **rejects** the report, the team writes to the reporter to
 explain why, with a copy to the relevant security mailing list.
 
-8. If the project team **accepts** the report, the team writes to the reporter to let them
+7. If the project team **accepts** the report, the team writes to the reporter to let them
 know that they have accepted the report and that they are working on a fix.
 
-9. The project team requests a CVE (<a href="https://cve.mitre.org/" target="_blank">Common Vulnerabilities and Exposures</a>) ID from the internal portal, `https://cveprocess.apache.org`; or by
+8. The project team requests a CVE (<a href="https://cve.mitre.org/" target="_blank">Common Vulnerabilities and Exposures</a>) ID from the internal portal, `https://cveprocess.apache.org`; or by
 sending an e-mail with the subject "CVE request for..." to `security@apache.org`, providing a
 short (one-line) description of the vulnerability. `security@apache.org` can
 help determine if a report requires multiple CVE IDs or if multiple reports
 should be merged under a single CVE ID.
 
-10. The ASF security team allocates a CVE ID and sends to the project team a link to the
+9. The ASF security team allocates a CVE ID and sends to the project team a link to the
 internal portal where it can enter details of the
 vulnerability.
 
 ### Resolve
 
-11. The project team agrees on a fix on their private list.
+10. The project team agrees on a fix on their private list.
 
-12. The project team documents the details of the vulnerability and the fix on the
+11. The project team documents the details of the vulnerability and the fix on the
 internal portal. The portal generates draft announcement texts.  For
 an example of an announcement see [Tomcat's announcement of
 CVE-2008-2370](https://lists.apache.org/thread/smbdmck5m48rbh6tw9bbfszf64oh591y). The
@@ -112,22 +112,22 @@ their own system, and no more. Announcements do not normally include steps to re
      using the 'comment' feature, which also sends the comments to the
      relevant private mailing list(s).
 
-13. The project team provides the reporter with a copy of the fix and the
+12. The project team provides the reporter with a copy of the fix and the
 draft vulnerability announcement for comment.
 
-14. The project team agrees on the fix, the announcement, and the
+13. The project team agrees on the fix, the announcement, and the
 release schedule with the reporter.  If the reporter is unresponsive
 in a reasonable timeframe this should not block the project team from
 moving to the next steps, particularly if an issue is of high severity
 or impact.
 
-15. The project team commits the fix. Do **not** make any reference that the commit relates to a security vulnerability.
+14. The project team commits the fix. Do **not** make any reference that the commit relates to a security vulnerability.
 
-16. The project team creates a release that includes the fix.
+15. The project team creates a release that includes the fix.
 
 ### Announce
 
-17. After (or at the same time as) the release announcement, the project team announces the vulnerability and the fix.
+16. After (or at the same time as) the release announcement, the project team announces the vulnerability and the fix.
     Set the CVE status to `READY` in the [internal portal](https://cveprocess.apache.org). You can then use the portal to send the emails.
     The vulnerability announcement should be sent to the following destinations:
 
@@ -144,12 +144,12 @@ This is the first point that any information regarding the vulnerability is made
 
 ### Complete
 
-18. The project team updates the project's security pages.
+17. The project team updates the project's security pages.
 
-19. Add the link to the public announcement on the mailinglist as a 'reference' in the CVE.
+18. Add the link to the public announcement on the mailinglist as a 'reference' in the CVE.
     This notifies the security team, which will submit the information to the CVE project.
 
-20. If the project repository is in Subversion, add the CVE ID to the log for the commit that applied the fix. Do **not** try to do this if your project uses a Git repository, as editing a pushed commit causes all sorts of problems.
+19. If the project repository is in Subversion, add the CVE ID to the log for the commit that applied the fix. Do **not** try to do this if your project uses a Git repository, as editing a pushed commit causes all sorts of problems.
 
 <h2 id="ids">CVE IDs<a class="headerlink" href="#ids" title="Permanent link">&para;</a></h2>
 
