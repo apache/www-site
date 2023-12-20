@@ -372,10 +372,13 @@ process](voting.html).
 
 <dd>
 
-An individual who has been elected to membership in the ASF by the
-existing members. Membership benefits include having a voice in
+The ASF uses this term in three ways, so it is important to specify which you mean unless the context makes it obvious:
+  - An individual who has been elected to membership in the ASF by the
+existing members. ASF Membership benefits include having a voice in
 the functioning of the Foundation, and the ability to nominate and vote 
-on new Member candidates and on directors.
+on new Member candidates and on directors. Many writers capitalize "Member" when using it in this sense.
+  - An individual who is part of the [Project Management Committee](#PMC) of a top-level project, or of the Incubator.
+  - An individual who contributes to the work of a [project](#Project)'s community. This person could be an ASF Member, a PMC member, both, or neither.
 
 </dd>
 
@@ -487,6 +490,9 @@ oversight responsibilities assigned by the [Board](#Board) , its
 actions are considered to be on behalf of the Foundation, with all the
 legal protections and responsibilities implied. See the
 [Bylaws](bylaws.html#6.3).
+
+Avoid referring to a member of a PMC as "a PMC", as it can cause confusion about 
+whether you are talking about the group or an individual.
 
 </dd>
 
