@@ -49,6 +49,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
     - [ISC](https://opensource.org/licenses/ISC)
     - [Standard ML of New Jersey](https://www.smlnj.org/license.html)
     - [Cup Parser Generator](http://www2.cs.tum.edu/projects/cup/licence.php)
+    - [MIT No Attribution (MIT-0)](https://opensource.org/license/mit-0/)
 - [ICU](http://source.icu-project.org/repos/icu/icu/trunk/LICENSE)
 - [University of Illinois/NCSA](http://opensource.org/licenses/UoI-NCSA.php)
 - [W3C Software License](http://opensource.org/licenses/W3C.php)
@@ -81,6 +82,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - [Mulan Permissive Software License，Version 2](https://license.coscl.org.cn/MulanPSL2/)
 - [Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0)
 - [EPICS Open License]( https://epics-controls.org/epics-open-license/)
+- [Zero-Clause BSD (0BSD)](https://opensource.org/license/0bsd/)
 
 Many of these licenses have specific attribution terms that the project needs to adhered to, often by [adding 
 them to the NOTICE file](/dev/licensing-howto.html). Ensure you are doing this when including these works. 
