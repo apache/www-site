@@ -69,6 +69,9 @@ The acceptable changes must meet at least one of the following criteria:
   configuration files, file layout etc.) to integrate with the target platform
   providing the Apache project has not objected to those changes.
 
+- A change is a back-port of a change in a branch currently supported by the
+  PMC to a branch that the PMC no longer supports.
+
 ### Additional dependencies
 
 Any additional dependency included in the distribution MUST be licensed under
@@ -161,7 +164,7 @@ third party products, services, or events.**
 
 ## Policy Version  {#version}
 
-This is version 0.5 of this draft Apache policy document, published in September 2022.
+This is version 0.6 of this draft Apache policy document, published in December 2023.
 
 Material changes will be marked with a new version number.
 
