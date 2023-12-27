@@ -51,13 +51,13 @@ be true:
 
 The acceptable changes must meet at least one of the following criteria:
 
-- The change has accepted by the relevant Apache project community
+- The change has been accepted by the relevant Apache project community
   for inclusion in a future release. Note that the process used to accept
   changes and how that acceptance is documented varies between projects.
 
 - A change is a fix for an undisclosed security issue; and the fix is not
   publicly disclosed as as security fix; and the Apache project has been
-  [notified](/security/) of the both issue and the
+  [notified](/security/) of both the issue and the
   proposed fix; and the PMC has rejected neither the vulnerability report
   nor the proposed fix.
 
@@ -139,7 +139,7 @@ unless project specific requirements allow it:
 ## Project Specific Requirements  {#projects}
 
 Individual projects may modify the default requirements for modified software
-distributions set out above.
+distributions as set out above.
 
 The following projects are known to use a modified version of the policy above:
 
