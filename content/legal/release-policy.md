@@ -71,11 +71,11 @@ contain compiled code.
 
 #### Release signing  {#release-signing}
 
-All supplied packages MUST be cryptographically signed with a detached signature.
+All supplied packages MUST be cryptographically signed with a detached ascii signature.
 It MUST be signed by either the Release Manager or the automated release
 infrastructure, where the underlying implementation MUST follow the principles
 [outlined](/dev/release-signing.html#automated-release-signing) by the Apache
-Security Team. All supplied packages MUST use a detached signature. Those who
+Security Team. Those who
 vote +1 for release MAY offer their own cryptographic signature to be concatenated
 with the detached signature file (at the Release Manager's discretion)
 prior to release.
@@ -83,7 +83,7 @@ prior to release.
 #### Compiled packages  {#compiled-packages}
 
 The Apache Software Foundation produces open source software. All releases
-are in the form of the source materials needed to make changes to the
+are in the form of the source materials needed to build the
 software being released.
 
 As a convenience to users that might not have the appropriate tools to build a
@@ -105,7 +105,7 @@ Policy](/legal/resolved).
 
 Each package MUST provide a `LICENSE` file and a `NOTICE` file which account
 for the package's exact content.  `LICENSE` and `NOTICE` MUST NOT provide
-unnecessary information about materials which are not bundled in the package,
+information about materials which are not bundled in the package,
 such as separately downloaded dependencies.
 
 For source packages, `LICENSE` and `NOTICE` MUST be located at the root of the
