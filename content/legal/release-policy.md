@@ -71,7 +71,7 @@ contain compiled code.
 
 #### Release signing  {#release-signing}
 
-All supplied packages MUST be cryptographically signed with a detached ascii signature.
+All supplied packages MUST be cryptographically signed with an ASCII-armored detached signature.
 They MUST be signed by either the Release Manager or the automated release
 infrastructure, where the underlying implementation MUST follow the principles
 [outlined](/dev/release-signing.html#automated-release-signing) by the Apache
