@@ -64,8 +64,8 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <div class="sponsors">
    <ul id='bronze'>
       <li><a target="_blank" rel="sponsored" href="https://www.bestecasinobonussen.nl/">Bestecasinobonussen.nl</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.canva.com/">Canva Engineering</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.cafe24.com/en/?utm_source=apache&utm_medium=offlink&utm_campaign=mktbuilding-march-2021">Cafe24</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.canva.com/">Canva Engineering</a></li>
       <li><a target="_blank" rel="sponsored" href="http://engineering.cerner.com/">Cerner</a></li>
       <li><a target="_blank" rel="sponsored" href="https://craftercms.org">Crafter CMS</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
