@@ -73,6 +73,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://dollarhand.com/">Dollar Hand</a></li>
       <li><a target="_blank" rel="sponsored" href="https://goread.io/buy-instagram-followers">Goread.io Followers</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.getgrist.com">Grist Labs</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.hotwaxsystems.com">HotWax Systems</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.leovegas.com/en-in/">LeoVegas Indian Online Casino</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
