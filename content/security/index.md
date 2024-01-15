@@ -35,27 +35,9 @@ The general security mailing list address is:
 [security@apache.org](mailto:security@apache.org). This is a private
 mailing list.
 
-Please send one plain-text email for each vulnerability you are reporting.  We may
+Please send one plain-text, unencrypted, email for each vulnerability you are reporting.  We may
 ask you to resubmit your report if you send it as an image, movie, HTML, or
 PDF attachment when you could as easily describe it with plain text.
-
-You do not need to encrypt submissions, and it takes us longer to respond to encrypted reports.  There is no team key for `security@apache.org`;
-instead you can use the OpenPGP keys of the
-following subset of members of the Apache Security Team.
-Note that this is
-not a complete list of Apache Security Team members and that you should not
-contact these members individually about security issues.
-
-- Mark Cox - 5B25 45DA B219 95F4 088C  EFAA 36CE E4DE B00C FE33 -
-[keys.openpgp.org](https://keys.openpgp.org/search?q=5B2545DAB21995F4088CEFAA36CEE4DEB00CFE33) 
-- Bill Rowe - B1B9 6F45 DFBD CCF9 7401 9235 193F 180A B55D 9977 -
-[keys.openpgp.org](https://keys.openpgp.org/search?q=B1B96F45DFBDCCF974019235193F180AB55D9977) 
-- Mark Thomas - A9C5 DF4D 22E9 9998 D987 5A51 10C0 1C5A 2F60 59E7 -
-[keys.openpgp.org](https://keys.openpgp.org/search?q=A9C5DF4D22E99998D9875A5110C01C5A2F6059E7) 
-- Yann Ylavic - 8935 9267 45E1 CE7E 3ED7  48F6 EC99 EE26 7EB5 F61A -
-[keys.openpgp.org](https://keys.openpgp.org/search?q=8935926745E1CE7E3ED748F6EC99EE267EB5F61A) 
-
-You can obtain these public keys [in a single file](KEYS.txt).
 
 ## Vulnerability Information
 
