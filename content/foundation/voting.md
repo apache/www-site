@@ -122,8 +122,8 @@ quorum of three +1 votes' rule is universal.
 
 Note that there is no implicit +1 from the release manager,
 or from anyone in any ASF vote. Only explicit votes are valid.
-The release manager can vote on package releases as well
-and is encouraged to cast a vote.
+The release manager is encouraged to vote on releases,
+like any reviewer would do.
 
 ## Vetoes  {#Veto}
 
