@@ -45,7 +45,6 @@ Who can vote is, to some extent, a community-specific thing.
 PMC members have formally binding votes, but in general communities encourage all their members to vote,
 even if their votes are only advisory.
 
-
 ## Implications of voting
 
 In some cases and communities, the exercise of a vote carries some
@@ -117,9 +116,12 @@ for release, and there must be more positive than negative votes.
 Generally the community
 will cancel the release vote if anyone identifies serious problems, but
 in most cases the ultimate decision
-lies with the individual serving as release manager. The
+lies with the individual serving as release manager (RM). The
 specifics of the process may vary from project to project, but the 'minimum
 quorum of three +1 votes' rule is universal.
+
+Note that there is [no implicit +1](#no-implicit-1) from the RM.
+The RM can vote on package releases as well.
 
 ## Vetoes  {#Veto}
 
@@ -146,6 +148,14 @@ so with a mail message such as:
 
 You cannot apply lazy consensus to code changes when the
 [review-then-commit](glossary.html#ReviewThenCommit) policy is in effect.
+
+## No implicit +1
+
+In any form of votes, there is no implicit +1. Any +1 vote should be casted
+explicitly.
+
+Especially, a release manager (RM) who starts a votes on package release does _not_
+implicits cast a +1 vote. The RM can vote on package releases as well.
 
 ## Reasons for votes
 
