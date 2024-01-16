@@ -116,12 +116,14 @@ for release, and there must be more positive than negative votes.
 Generally the community
 will cancel the release vote if anyone identifies serious problems, but
 in most cases the ultimate decision
-lies with the individual serving as release manager (RM). The
+lies with the individual serving as release manager. The
 specifics of the process may vary from project to project, but the 'minimum
 quorum of three +1 votes' rule is universal.
 
-Note that there is [no implicit +1](#no-implicit-1) from the RM.
-The RM can vote on package releases as well.
+Note that there is no implicit +1 from the release manager,
+or from anyone in any ASF vote. Only explicit votes are valid.
+The release manager can vote on package releases as well
+and is encouraged to cast a vote.
 
 ## Vetoes  {#Veto}
 
@@ -148,14 +150,6 @@ so with a mail message such as:
 
 You cannot apply lazy consensus to code changes when the
 [review-then-commit](glossary.html#ReviewThenCommit) policy is in effect.
-
-## No implicit +1
-
-In any form of vote, there is no implicit +1. Any +1 vote should be cast
-explicitly.
-
-In particular, a release manager (RM) who starts a votes on package release does _not_
-implicitly cast a +1 vote. The RM can vote on package releases as well.
 
 ## Reasons for votes
 
