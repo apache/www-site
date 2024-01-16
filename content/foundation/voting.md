@@ -151,11 +151,11 @@ You cannot apply lazy consensus to code changes when the
 
 ## No implicit +1
 
-In any form of votes, there is no implicit +1. Any +1 vote should be casted
+In any form of vote, there is no implicit +1. Any +1 vote should be cast
 explicitly.
 
-Especially, a release manager (RM) who starts a votes on package release does _not_
-implicits cast a +1 vote. The RM can vote on package releases as well.
+In particular, a release manager (RM) who starts a votes on package release does _not_
+implicitly cast a +1 vote. The RM can vote on package releases as well.
 
 ## Reasons for votes
 
