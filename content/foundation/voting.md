@@ -45,7 +45,6 @@ Who can vote is, to some extent, a community-specific thing.
 PMC members have formally binding votes, but in general communities encourage all their members to vote,
 even if their votes are only advisory.
 
-
 ## Implications of voting
 
 In some cases and communities, the exercise of a vote carries some
@@ -120,6 +119,11 @@ in most cases the ultimate decision
 lies with the individual serving as release manager. The
 specifics of the process may vary from project to project, but the 'minimum
 quorum of three +1 votes' rule is universal.
+
+Note that there is no implicit +1 from the release manager,
+or from anyone in any ASF vote. Only explicit votes are valid.
+The release manager is encouraged to vote on releases,
+like any reviewer would do.
 
 ## Vetoes  {#Veto}
 
