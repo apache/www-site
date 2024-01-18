@@ -155,7 +155,7 @@ directors, a schedule of meetings, and minutes of past meetings.
 The Board establishes Project Management Committees (PMCs) to be responsible for the active management of one or more specific
 communities.
 
-Each PMC includes least one officer of the ASF, who shall be
+Each PMC includes at least one officer of the ASF, who shall be
 designated its chair, and may include one or more other members of the
 ASF.
 
