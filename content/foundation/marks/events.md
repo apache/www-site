@@ -199,17 +199,16 @@ geographical area, or within three weeks in a different geographical area.
 To ensure that we can approve your request for use of Apache marks, [contact us][contactevents] with early notice of your
 intended timeframe and location to verify no conflicts,
 and then follow up with the specific dates and venue once they are scheduled for final
-approval and to be placed on the Apache [calendar](http://community.apache.org/calendars/conferences.html).
+approval and to be placed on the Apache [calendar](http://events.apache.org/).
 
 The VP, Conferences attempts to track all relevant conference
 dates for the purpose of scheduling and avoiding conflicts. We publish in
-[our calendar](http://community.apache.org/calendars/conferences.html) all conferences
+[our calendar](http://events.apache.org/) all conferences
 run by the ASF, and those approved to make use of ASF marks. Submitting
 advance notice of your proposed event's intended dates and prompt confirmation of your
-scheduled conference dates to `dev@community.apache.org` will ensure this calendar is up to
+scheduled conference dates will ensure this calendar is up to
 date and help avoid conflicts with related, relevant conferences of the
-ASF, its partners, and the rest of the industry. Submission
-to dev@community is **not** related to getting trademark permissions.
+ASF, its partners, and the rest of the industry.
 
 ## Must not use "Apache" or "Community Over Code" names  {#coverc}
 
@@ -274,7 +273,7 @@ third party products, services, or events.**
 
 ### Policy Version  {#version}
 
-This is version 1.6 of this Apache policy document, published in December 2023.
+This is version 1.7 of this Apache policy document, published in February 2024.
 
 Material changes will be marked with a new version number.
 
@@ -289,6 +288,8 @@ Material changes will be marked with a new version number.
 **v1.5** Update to v1.5; add more detail regarding conflicting event dates
 
 **v1.6** Update to v1.6; updated announced event names from ApacheCon to Community Over Code, also clarified "Announced Events" as "Foundation Events," and indicated responsibility of VP, Conferences over event scheduling instead of ComDev.
+
+**v1.7** Update to v1.7; update URI for events calendar; remove requirement to provide dates to ComDev.
 
 [contactevents]: /foundation/marks/contact#events
 [resources]: /foundation/marks/resources
