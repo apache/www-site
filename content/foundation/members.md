@@ -258,6 +258,7 @@ This table shows current and emeritus members who have manually added themselves
 | lgo | Lieven Govaerts |
 | lhotari | Lari Hotari | [Pulsar](https://pulsar.apache.org)|
 | liuxun | Xun Liu | [Incubator](http://incubator.apache.org/) , [Hadoop](https://hadoop.apache.org) , [Zeppelin](https://zeppelin.apache.org)|
+| liyu | Yu Li | [Flink](https://flink.apache.org/), [HBase](https://hbase.apache.org/), [Incubator](https://incubator.apache.org/) |
 | lresende | Luciano Resende |
 | luc | Luc Maisonobe | [commons](http://commons.apache.org/)|
 | luke1410 | [Stefan Hett](http://www.luke1410.de/) | [Subversion](https://subversion.apache.org/) ; [APR](https://apr.apache.org/) |
