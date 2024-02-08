@@ -106,7 +106,7 @@ There are four sponsorship levels, defined by donation amount and in-return bene
 
 Targeted Sponsorship provides the ASF with non-cash contributions aimed at specific activities, projects, or programs, such as donating cloud services, providing legal services, underwriting our flagship event attendees’ expenses, funding project hackathons, and contributing documentation resources.
 
-Targeted Sponsorships benefit the ASF in addition to funding our general operations. Targeted Sponsors receive the same benefits as Foundation Sponsors based on the equivalent value of the non-cash contribution. We invite you to [view our guidelines](/foundation/docs/Targeted-Sponsorship-Policy.pdf) to see if Targeted Sponsorship is right for you.
+Targeted Sponsorships benefit the ASF in addition to funding our general operations. Targeted Sponsors receive the same benefits as Foundation Sponsors based on the equivalent value of the non-cash contribution. We invite you to [view our guidelines](/foundation/docs/targeted-sponsorship-policy.html) to see if Targeted Sponsorship is right for you.
 
 ## Corporate Giving Programs
 
