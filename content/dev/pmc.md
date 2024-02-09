@@ -462,8 +462,8 @@ appear there.
 Encourage your new committer to include both the PMC name and their desired account ID
 on the submitted ICLA. If both of these pieces of information are provided on the ICLA
 form, the ICLA is sent to the correct address (`secretary@apache.org`), and the secretary
-or assistant can verify a [VOTE][RESULT] for the new committer, the account will be requested
-by the person (secretary or assistant) filing the ICLA.
+or assistant secretary can verify a [VOTE][RESULT] for the new committer, the account will be requested
+by the person (secretary or assistant secretary) filing the ICLA.
 
 If the new account information is not provided on the ICLA, the PMC chair is responsible to
 get the new committer's desired account ID and request the new account.
@@ -480,7 +480,7 @@ reason, any ASF member can act on their behalf.
   - the podling is listed on the incubator's ProjectProposals page
   - the submitter is named on the project proposal
 
-the secretary or assistant will request the account. In other cases, the Mentors will request
+the secretary or assistant secretary will request the account. In other cases, the Mentors will request
 the account. If the podling you're requesting accounts for
 doesn't appear in the drop-down list of podlings,
 provide the podling name in the free text input box.
