@@ -115,6 +115,7 @@ This table shows current and emeritus members who have manually added themselves
 | dashorst | Martijn Dashorst |
 | davisp | Paul Joseph Davis |
 | davor | [Davor Bonaci](http://davorbonaci.com/) | [Beam](https://beam.apache.org/) |
+| davsclaus | Claus Ibsen | [Camel](https://camel.apache.org/) |
 | dblevins | David Blevins |
 | deepal | [Deepal Jayasinghe](http://blogs.deepal.org/) |
 | dennisl | Dennis Lundberg |
