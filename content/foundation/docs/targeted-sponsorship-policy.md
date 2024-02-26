@@ -12,12 +12,11 @@ sponsors that we rely on everyday outside of and often in addition to funding ou
 operations.
 
 ## Who Can Be a Targeted Sponsor?
-The policy available at
-[apache.org/foundation/sponsorship.html#WhoCanSponsor](https://www.apache.org/foundation/sponsorship.html#WhoCanSponsor)
+The policy available as [“Who Can Sponsor The ASF”](/foundation/sponsorship.html#who-can-sponsor-the-asf)
 also applies to targeted sponsors as will the same sponsor agreement
 template and intake process.
 
-## Changes to Thanks Page:
+## Changes to Thanks Page
 
 The main ASF Sponsor Thanks Page is now split into two sections, “Normal”,
 non-targeted Sponsors and “Targeted” Sponsors.
@@ -30,10 +29,8 @@ targeted sponsorship.
 
 Committees and projects can choose to set up a project thanks area of their TLP site
 that also recognizes the sponsor in sync with the foundation page as noted at
-[apache.org/foundation/marks/linking](https://www.apache.org/foundation/marks/linking). 
-Any additional recognition on
-committee or project page(s) must be approved by VP Fundraising and VP Brand
-Management.
+the [Apache® Project Corporate Recognition Best Practices](/foundation/marks/linking).
+**Any additional recognition on committee or project page(s) must be approved by VP Fundraising and VP Brand Management.**
 
 Sponsors & Targeted Sponsors can provide cash and/or in-kind services. In some
 cases, a mixture of the two may be approved at the discretion of the VP Fundraising
@@ -43,17 +40,17 @@ need of the services.
 "Normal" Sponsors provide sponsorship that are used to support the entire operation of
 the foundation. Targeted Sponsors provide support for a specific pre-agreed upon goal.
 
-Example:
-
-A Non-Targeted Sponsor donates $100 to a NPO charity baseball team. The
-team can spend the $100 to buy whatever they want with it.
-
-A Targeted Sponsor is contacted and asked how they can help, the team says
-“we need bats”. VP Fundraising approves the batty request, Targeted Sponsor
-donates $100 to the same team with a target to use it to buy bats. $15 of the
-donation goes to general operations to handle accounting/bat counts/bat
-polish/bat storage/bat caves/etc., $85 goes to buy new bats and everyone is
-happy.
+> Example:
+> 
+> A Non-Targeted Sponsor donates $100 to a NPO charity baseball team. The
+> team can spend the $100 to buy whatever they want with it.
+> 
+> A Targeted Sponsor is contacted and asked how they can help, the team says
+> “we need bats”. VP Fundraising approves the batty request, Targeted Sponsor
+> donates $100 to the same team with a target to use it to buy bats. $15 of the
+> donation goes to general operations to handle accounting/bat counts/bat
+> polish/bat storage/bat caves/etc., $85 goes to buy new bats and everyone is
+> happy.
 
 The goal of this policy is to allow the foundation and project committees more flexibility to
 work with sponsors to deliver additional services and improve our community.
@@ -121,7 +118,7 @@ It is the responsibility of the VP Fundraising, President and any applicable Com
 work together to ensure there is clarity about what is and is not possible for sponsors
 and seeking Board guidance as deemed necessary.
 
-## Examples of Targeted Sponsorships that can be Requested and Approved:
+## Examples of Targeted Sponsorships that can be Requested and Approved
 
 - Google Summer of Code / Google Code-In
 - Subversion Project Hackathon
@@ -134,7 +131,7 @@ and seeking Board guidance as deemed necessary.
 - Graphics Design
 - Media Support
 
-## Examples of Targeted Sponsorships that are Possible:
+## Examples of Targeted Sponsorships that are Possible
 
 These are examples that have been discussed and have merit to be discussed further. See the
 section below on discussion for these items:
@@ -168,20 +165,19 @@ committers.
 - Videography for Events
 - Sponsoring Events, Speaker Dinners, Meetups, Booths
 
-## Examples of Targeted Sponsorships that are Highly Unlikely:
+## Examples of Targeted Sponsorships that are Highly Unlikely
 
 - Developing code
 - Adding a donate button to a project page
 - Certification of products or companies
 
-## Key Differences from 2015 targeted sponsorship proposal:
+## Key Differences from 2015 targeted sponsorship proposal
 
 The original idea was proposed by Ross Gardler at
-[whimsy.apache.org/board/minutes/President.html#minutes_2015_01_21](https://whimsy.apache.org/board/minutes/President.html#minutes_2015_01_21)
+[Board Meeting Minutes, January 21, 2015](https://whimsy.apache.org/board/minutes/President.html#minutes_2015_01_21):
 
 - This is not a proof of concept.
 - We are aligning in-kind Infrastructure Sponsorship with Targeted Sponsorship. As such,
 the minimum of 50K will not be relevant.
 - Listing in Annual & Quarterly reports will be handled the same as the non-targeted
 sponsors based on their sponsorship level at the discretion of Media and Publicity.
-
