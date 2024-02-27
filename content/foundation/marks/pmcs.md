@@ -162,7 +162,8 @@ all top level pages for the project or subproject.
 `www.apache.org/foundation/sponsorship.html`
 
 - "Sponsors", "Thanks" or "Thanks to our Sponsors" should link to:
-`www.apache.org/foundation/thanks.html`
+`www.apache.org/foundation/thanks.html` or
+`www.apache.org/foundation/sponsors.html`
 
 - "Security" should link to either to a project-specific page detailing how
 users may securely report potential vulnerabilities, or to the main
