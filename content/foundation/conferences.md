@@ -1,10 +1,10 @@
 Title: Conferences
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Come to ApacheCon<br /><span class="alt"><small>The official user conference of the ASF</small></span>
+# Come to Community Over Code<br /><span class="alt"><small>The official user conference of the ASF</small></span>
 
 The best way to learn about the technologies and projects at the ASF is to
-meet us in person. Come to an ApacheCon or another ASF event to meet our
+meet us in person. Come to a Community Over Code or another ASF event to meet our
 community and learn about our projects.
 
 - Join the [announcements mailing
@@ -16,21 +16,21 @@ Project to keep up to date about upcoming conferences. See also the [archive of 
 - Visit the [conferences calendar](http://community.apache.org/calendars/conferences.html) 
 to see what Apache conferences are coming up
 
-- Find out what topics will be covered on the [official ApacheCon
-website](http://apachecon.com/) 
+- Find out what topics will be covered on the [official Community Over
+  Code website](https://communityovercode.org/) 
 
 - Read the [Third Party Event Branding](/foundation/marks/events.html) policy to learn how
  external organisations can apply to use our marks for their events
 
 <a name="apachecon"></a>
-## Upcoming ApacheCons
+## Upcoming Events
 
-The latest news on ApacheCon is always available on the [ApacheCon Website](http://www.apachecon.com/)
+The latest news on Community over Code, and other Apache events, is always available on the [Apache Events Website](https://events.apache.org/)
 
 <a name="mailinglists"></a>
 ## Mailing Lists
 
-There are three main mailing lists that you might want to be on, depending on your particular interest in ApacheCon and other Apache-related events:
+There are three main mailing lists that you might want to be on, depending on your particular interest in Community Over Code and other Apache-related events:
 
 | ApacheCon Discuss | discuss@apachecon.com |
 |-------------------|------------------------------|
@@ -52,13 +52,13 @@ There are three main mailing lists that you might want to be on, depending on yo
 
 <a name="conference-branding"></a>
 ## Conference Branding
-In addition to organizing conferences, the Conferences Committee is responsible for approving the use of
+In addition to organizing conferences, the Trademarks Committee is responsible for approving the use of
 Apache Brands and Marks by third party events. For more information on what this means, what the rules are,
 and how to apply for approval, see the [Third Party Event Branding](/foundation/marks/events.html) page.
 
 <a name="past-apachecons"></a>
-## Past ApacheCons
+## Past Apache Events.
 
-For more information on past ApacheCon conferences, including past track listings, past speakers and
-past sessions, visit the [ApacheCon Archive Site](http://apachecon.com/c/).
+For more information on past Apache conferences, including past track listings, past speakers and
+past sessions, visit the [Apache Events Archive Site](https://apachecon.com/history.html).
 
