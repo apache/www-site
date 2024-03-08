@@ -168,6 +168,7 @@ This table shows current and emeritus members who have manually added themselves
 | grossws | Konstantin Gribov | [Tika](http://tika.apache.org) |
 | gstein | [Greg Stein](http://www.lyra.org/greg/) | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [incubator](http://incubator.apache.org/) ; board|
 | gtrasuk | [Greg Trasuk](https://www.trasuk.com/blogs/trasukg/) |
+| gurwls223 | [Hyukjin Kwon](https://github.com/HyukjinKwon) | [Spark](http://spark.apache.org) |
 | hadrian | Hadrian Zbarcea |
 | harbs | Gabe Harbater | [Flex](http://flex.apache.org/) |
 | hboutemy | Hervé Boutemy | [Maven](http://maven.apache.org), [ComDev](http://community.apache.org), [Attic](http://attic.apache.org) |
