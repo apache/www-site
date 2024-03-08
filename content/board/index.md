@@ -11,7 +11,7 @@ These /board/ pages serve as an official home any statements or offerings from t
 The board is happy to host:
 * [Listing of core requirements for Apache projects](/board/policies)
 * [Listing of core ASF services provided to Apache projects](/board/services)
-* [Five-year Strategic Plan for the Apache Software Foundation<](/board/ASF-5-year-plan-02-21-2018)
+* [Five-year Strategic Plan for the Apache Software Foundation](/board/ASF-5-year-plan-02-21-2018)
 * [Guide To Escalating Issues at the ASF](/board/escalation)
 
 ### Learn More About Apache Governance
