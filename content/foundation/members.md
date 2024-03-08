@@ -318,6 +318,7 @@ This table shows current and emeritus members who have manually added themselves
 | orlikowski | Victor J. Orlikowski | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; BSF|
 | ovilia | Zhang Wenli | [ECharts](https://echarts.apache.org/) |
 | painter | Jeffery Painter | [Turbine](https://turbine.apache.org/) ; [Torque](https://db.apache.org/torque)|
+| paulirwin | [Paul Irwin](https://github.com/paulirwin/) | [Lucene.NET](https://lucenenet.apache.org/) |
 | paulk | Paul King | [Groovy](https://groovy.apache.org), [incubator](https://incubator.apache.org/)
 | pauls | Karl Pauls |
 | perrin | Perrin Harkins | [mod_perl](http://perl.apache.org/)|
