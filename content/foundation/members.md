@@ -211,6 +211,7 @@ This table shows current and emeritus members who have manually added themselves
 | jhm | Jan Materne | [Ant](http://ant.apache.org) |
 | jhyde | [Julian Hyde](http://home.apache.org/~jhyde/) | [Arrow](http://arrow.apache.org/), [Calcite](http://calcite.apache.org/), [Drill](http://drill.apache.org/), [Kylin](http://kylin.apache.org/)
 | jim | [Jim Jagielski](http://www.jaguNET.com/jim.html) | lots|
+| jinterrante | John Interrante | [Daffodil](https://daffodil.apache.org/) |
 | jitendra | Jitendra Pandey |  [Ozone](https://ozone.apache.org/), [Hadoop](https://hadoop.apache.org/)
 | jlaskowski | Jacek Laskowski |
 | jleroux | Jacques Le Roux | [OFBiz](http://ofbiz.apache.org), [Incubator](http://incubator.apache.org/) | 
