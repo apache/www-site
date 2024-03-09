@@ -149,6 +149,7 @@ This table shows current and emeritus members who have manually added themselves
 | fokko | Fokko Driesprong | [Airflow](https://airflow.apache.org/); [Avro](https://avro.apache.org/); [Parquet](https://parquet.apache.org/); [Druid](https://druid.apache.org/) |
 | fpapon | François Papon | [Geronimo](https://geronimo.apache.org), [Hop](https://hop.apache.org), [Karaf](https://karaf.apache.org), [Shiro](https://shiro.apache.org), [Unomi](https://unomi.apache.org)|
 | fpj | Flavio Junqueira | [ZooKeeper](http://zookeeper.apache.org); [BookKeeper](http://bookkeeper.apache.org); [Incubator](http://incubator.apache.org) |
+| francischuang | Francis Chuang | [Calcite](https://calcite.apache.org) |
 | gareth | Gareth Reakes |
 | gates | Alan Gates |
 | gawor | [Jarek Gawor](http://home.apache.org/~gawor/) |
