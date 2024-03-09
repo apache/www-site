@@ -182,6 +182,7 @@ This table shows current and emeritus members who have manually added themselves
 | hossman | [Chris Hostetter](http://home.apache.org/~hossman/) | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) , [Solr](http://lucene.apache.org/solr/)|
 | hsaputra | Henry Saputra | [Incubator](http://incubator.apache.org/) ; [Flink](http://flink.apache.org/) ; [Twill](https://twill.apache.org/) |
 | hughesj | Jeremy Hughes |
+| hulk | [Tianyi Lin](https://github.com/git-hulk) | [Kvrocks](https://kvrocks.apache.org) |
 | humbedooh | Daniel Gruno | [httpd](https://httpd.apache.org/), [Traffic Server](https://trafficserver.apache.org), [Kibble](https://kibble.apache.org), [STeVe](https://steve.apache.org), [Pony Mail](https://ponymail.apache.org) |
 | huxing | Huxing Zhang | [Tomcat](http://tomcat.apache.org), [Dubbo](http://dubbo.apache.org) |
 | hxd | Xiangdong Huang | [IoTDB](https://iotdb.apache.org) |
