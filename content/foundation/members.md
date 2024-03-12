@@ -460,6 +460,7 @@ This table shows current and emeritus members who have manually added themselves
 | xinwang | [Xin Wang](https://people.apache.org/~xinwang/) | [Storm](https://storm.apache.org/) , [RocketMQ](https://rocketmq.apache.org/) , [IoTDB](https://iotdb.apache.org/) , [StreamPipes](https://streampipes.apache.org/) , [Incubator](https://incubator.apache.org/) |
 | xuanwo | [Xuanwo](https://bento.me/xuanwo) | [OpenDAL](https://opendal.apache.org/) |
 | xuefu | Xuefu Zhang | [Hive](http://hive.apache.org) ; [Pig](http://pig.apache.org) |
+| yao | [Kent Yao](http://github.com/yaooqinn) | [Amoro](http://amoro.apache.org) ; [Incubator](http://incubator.apache.org/) ; [Gluten](http://gluten.apache.org) ; [Kyuubi](http://kyuubi.apache.org) ; [Spark](http://spark.apache.org) ; [Submarine](http://submarine.apache.org) |
 | yegor | Yegor Kozlov |
 | ylavic | Yann Ylavic | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | yonik | Yonik Seeley | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) ; [Solr](http://lucene.apache.org/solr/)|
