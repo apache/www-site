@@ -730,7 +730,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 
 ## Adding Your Name
 If you have a GitHub account that is linked to your ASF account,
-you can edit this [page](https://github.com/apache/www-site/blob/main/content/foundation/members.md) directly in the browser, by using the `Edit this file` pencil icon. You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you.
+you can [edit this page](https://github.com/apache/www-site/edit/main/content/foundation/members.md) directly in the browser. You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you.
 
 
 Or it can be updated in the [ASF GitBox repo](https://gitbox.apache.org/repos/asf/www-site.git). This does not require a GitHub account.
