@@ -55,6 +55,7 @@ This table shows current and emeritus members who have manually added themselves
 | azeez | Mohamed Afkham Azeez |
 | bayard | Henri Yandell |
 | bdelacretaz | [Bertrand Delacrétaz](http://www.codeconsult.ch/) | [Cocoon](http://cocoon.apache.org/) , [FOP](http://xml.apache.org/fop/)|
+| bdemers | [Brian Demers](https://blog.bdemers.io/) | [Directory](https://directory.apache.org/), [Maven](https://maven.apache.org/), [Shiro](https://shiro.apache.org/) |
 | ben | Ben Laurie | [httpd](http://httpd.apache.org/) ; [ApacheCon](http://www.apachecon.com/)|
 | bigosmallm | [OmPrakash Muppirala](https://twitter.com/bigosmallm) | [Flex](http://flex.apache.org/), [Royale](http://royale.apache.org/) |
 | billcole | William K. (Bill) Cole | [SpamAssassin](http://spamassassin.apache.org/)|
