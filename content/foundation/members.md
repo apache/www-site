@@ -734,3 +734,5 @@ you can [edit this page](https://github.com/apache/www-site/edit/main/content/fo
 
 
 Or it can be updated in the [ASF GitBox repo](https://gitbox.apache.org/repos/asf/www-site.git). This does not require a GitHub account.
+However ASF GitBox does not have a browser interface. To use it, you will need to clone the Git repo, edit the file, commit the change,
+and push the change using your ASF credentials.
