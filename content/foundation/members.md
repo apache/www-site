@@ -368,6 +368,7 @@ This table shows current and emeritus members who have manually added themselves
 | rotty3000 | Raymond Augé | [Aries](https://aries.apache.org) ; [Felix](https://felix.apache.org) ; [Geronimo](https://geronimo.apache.org/); [Tomcat](https://tomcat.apache.org/) |
 | rpluem | [Rüdiger Plüm](mailto:rpluem@apache.org) |
 | rskraba | [Ryan Skraba](https://skraba.com/) | [Avro](http://avro.apache.org/), [Training (incubating)](https://training.apache.org) |
+| rubenql | Ruben Quesada Lopez | [Calcite](https://calcite.apache.org) |
 | rubys | [Sam Ruby](http://www.intertwingly.net/blog/) |  [Ant](http://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/) ; [PHP](http://www.php.net/) ; [XML](http://xml.apache.org)|
 | rvesse | Rob Vesse | [Jena](http://jena.apache.org), [Incubator](http://incubator.apache.org) |
 | rvs | Roman Shaposhnik | [Bigtop](http://bigtop.apache.org), [Celix](http://celix.apache.org), [ComDev](http://community.apache.org), [Geode](http://geode.apache.org), [Giraph](http://giraph.apache.org), [Groovy](http://groovy.apache.org), [Hadoop](http://hadoop.apache.org), [Ignite](http://ignite.apache.org), [Incubator](http://incubator.apache.org), [Zest](http://zest.apache.org) |
