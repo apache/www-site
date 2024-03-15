@@ -468,6 +468,7 @@ This table shows current and emeritus members who have manually added themselves
 | ylavic | Yann Ylavic | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | yonik | Yonik Seeley | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) ; [Solr](http://lucene.apache.org/solr/)|
 | zabetak | [Stamatis Zampetakis](https://people.apache.org/~zabetak/) | [Calcite](https://calcite.apache.org/), [Hive](https://hive.apache.org/)|
+| zregvart | [Zoran Regvart](https://github.com/zregvart/) | [Camel](https://camel.apache.org) |
 | zwoop | [Leif Hedstrom](http://www.ogre.com) | [trafficserver](http://trafficserver.apache.org/), [trafficcontrol](http://trafficcontrol.apache.org/), [incubator](http://incubator.apache.org/) |
 
 
