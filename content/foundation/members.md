@@ -28,6 +28,7 @@ This table shows current and emeritus members who have manually added themselves
 | adrianocrestani | Adriano Crestani Campos |
 | aestrada | Adam Estrada | [SIS](http://sis.apache.org) |
 | afuchs | Adam Fuchs | [Accumulo](http://accumulo.apache.org)|
+| agirish | Abhishek Girish | [Drill](https://drill.apache.org/) |
 | aheritier | [Arnaud Héritier](http://aheritier.net/) | [Maven](http://maven.apache.org/), [Archiva](http://archiva.apache.org/)|
 | akarasulu | [Alex Karasulu](mailto:akarasulu@apache.org) | [directory](http://incubator.apache.org/directory) ; [excalibur](http://excalibur.apache.org/) ; [jakarta](http://jakarta.apache.org/)|
 | akm | Andrew Musselman | [Mahout](http://mahout.apache.org) |
