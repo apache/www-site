@@ -85,6 +85,7 @@ This table shows current and emeritus members who have manually added themselves
 | cdutz | Christofer Dutz | [ComDev](https://community.apache.org), [Daffodil](https://daffodil.apache.org), [Flex](https://flex.apache.org), [Incubator](https://incubator.apache.org), [Infrastructure](https://infra.apache.org), [IoTDB](https://iotdb.apache.org), [Kibble](https://kibble.apache.org), [Mahout](https://mahout.apache.org), [PLC4X](https://plc4x.apache.org), [Royale](https://royale.apache.org), [StreamPipes (incubating)](https://streampipes.apache.org), [Training (incubating)](https://training.apache.org), [Wayang (incubating)](https://wayang.apache.org) |
 | centic | Dominik Stadler | [POI](http://poi.apache.org) |
 | cezar | [Cezar Cristian Andrei](http://cezarandrei.com) | [XMLBeans](http://xmlbeans.apache.org/) , [VXQuery](http://incubator.apache.org/vxquery/)|
+| cgivre | [Charles Givre](mailto:cgivre@apache.org) | [Drill](https://drill.apache.org) 
 | chenpei | [Pei Chen](mailto:chenpei@apache.org) | [cTAKES](http://ctakes.apache.org) |
 | chipchilders | [Chip Childers](http://www.chipchilders.com/) | [CloudStack](http://cloudstack.apache.org) |
 | chrisg | Christian Geisert | [XML Graphics](http://xmlgraphics.apache.org/) , [FOP](http://xmlgraphics.apache.org/fop/)|
