@@ -148,6 +148,7 @@ This table shows current and emeritus members who have manually added themselves
 | ffang | Freeman Yue Fang | [Cxf](http://cxf.apache.org/) ; [Servicemix](http://servicemix.apache.org/) ; [Karaf](http://karaf.apache.org/) ; [Camel](http://Camel.apache.org/) ; [Felix](http://felix.apache.org/)|
 | fhanik | Filip Hanik |
 | fielding | [Roy T. Fielding](http://roy.gbiv.com/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , board , fund-raising , [incubator](http://incubator.apache.org/)|
+| florianhockmann | Florian Hockmann | [TinkerPop](https://tinkerpop.apache.org/) |
 | fokko | Fokko Driesprong | [Airflow](https://airflow.apache.org/); [Avro](https://avro.apache.org/); [Parquet](https://parquet.apache.org/); [Druid](https://druid.apache.org/) |
 | fpapon | François Papon | [Geronimo](https://geronimo.apache.org), [Hop](https://hop.apache.org), [Karaf](https://karaf.apache.org), [Shiro](https://shiro.apache.org), [Unomi](https://unomi.apache.org)|
 | fpj | Flavio Junqueira | [ZooKeeper](http://zookeeper.apache.org); [BookKeeper](http://bookkeeper.apache.org); [Incubator](http://incubator.apache.org) |
