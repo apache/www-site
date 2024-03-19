@@ -50,35 +50,41 @@
         // Get error code
         var code = parseInt(getArg('code'));
         var notice = document.getElementById('notice');
-        var t = document.getElementById('title');
+        notice.textContent = "";
         
         // Generic message
-        var txt = "The site you requested, <a href='http://" + site + "' style='color: #369;'>" + site + "</a>, is currently ";
+        notice.appendChild(document.createTextNode("The site you requested, "));
+        const link = document.createElement("a");
+        link.setAttribute("style", "color: #369;");
+        link.setAttribute("href", "https://" + site);
+        link.appendChild(document.createTextNode(site));
+        notice.appendChild(link);
+        var txt = "";
+
+        notice.appendChild(document.createTextNode(" is currently "));
+
         var title = "Unknown error";
         // Specific messages
-		if (code == 404) {
-		  txt += "unavailable. We apologize!<br/>";
-		  title = "404 - Page not Found";
-		}
-		if (code >= 500) {
+        if (code == 404) {
+          txt += "unavailable. We apologize!";
+          title = "404 - Page not Found";
+        }
+        if (code >= 500) {
           if (code == 500) {
-            txt += "unavailable due to an error on the backend server. We apologize!<br/>";
+            txt += "unavailable due to an error on the backend server. We apologize!";
             title = "500 - Internal Server Error";
           }
           if (code == 502) {
-            txt += "unavailable due to an invalid or missing response from the backend server. We apologize!<br/>";
+            txt += "unavailable due to an invalid or missing response from the backend server. We apologize!";
             title = "502 - Invalid or missing response from backend";
           }
           if (code == 503) {
-            txt += "unavailable due to ongoing maintenance.<br/>";
+            txt += "unavailable due to ongoing maintenance.";
             title = "503 - Service down for maintenance";
           }
           if (code == 504) {
-            txt += "unavailable due to a timeout between this server and a backend server. We apologize!<br/>";
+            txt += "unavailable due to a timeout between this server and a backend server. We apologize!";
             title = "504 - Gateway timeout";
-          }
-          if (code != 503) {
-            txt += "The Apache Infrastructure Team has been notified about the situation.";
           }
         }
         
@@ -86,11 +92,13 @@
         if (code + 0 != code) {
           txt += "unavailable. The Apache Infrastructure Team has been notified about the situation."
         }
-        txt += ""
         
-        // Set message
-        notice.innerHTML = txt;
-        t.innerHTML = title;
+        notice.appendChild(document.createTextNode(txt));
+        if (code >= 500 && code != 503) {
+          notice.appendChild(document.createElement("br"));
+          notice.appendChild(document.createTextNode("The Apache Infrastructure Team has been notified about the situation."));
+        }
+        document.getElementById('title').textContent = title;
       }
     </script>
   </head>
