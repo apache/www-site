@@ -66,9 +66,11 @@
             };
 
             const parseURL = url => {
-                const a = document.createElement('a');
-                a.href = url;
-                return a.hostname;
+                try {
+                    return (new URL(url, location.href)).hostname;
+                } catch (e) {
+                    return false;
+                }
             };
 
             const site = getArg('site') || parseURL(document.referrer) || window.location.hostname || "www.apache.org";
