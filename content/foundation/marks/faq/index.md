@@ -151,6 +151,13 @@ build such software products, see the [next question about our
 "Powered by..." program](#poweredby).  
 
 
+# May I distibute modified versions of Apache Software under the original name?
+
+Generally, no. If you distribute modified versions of Apache Software you must
+do so under a new name. There are limited circumstance where this is permitted
+which are set out in the [Apache Downstream Distribution Policy][downstream].
+
+
 # May I use Apache Powered by... marks or logos in software product names or logos?  {#poweredby}  
 
 Yes, under certain circumstances, you may use the Powered by... phrase or 
@@ -337,6 +344,7 @@ third party products, services, or events.**
 
 [contact]: /foundation/marks/contact
 [contactother]: /foundation/marks/contact#other
+[downstream]: /foundation/marks/downstream
 [resources]: /foundation/marks/resources
 [guide]: /foundation/marks/guide
 [incubator]: //incubator.apache.org/
