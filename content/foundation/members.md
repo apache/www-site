@@ -384,6 +384,7 @@ This table shows current and emeritus members who have manually added themselves
 | sctemme | [Sander Temme](http://www.temme.net/sander/) | [httpd](http://httpd.apache.org/) ; [Gump](http://gump.apache.org/) ; [Labs](http://labs.apache.org/) ; Infrastructure|
 | sdeboy | Scott Deboy |
 | seade | Scott Eade | [DB](http://db.apache.org/) , [Jakarta](http://jakarta.apache.org/) , [Turbine](http://turbine.apache.org/)|
+| seanglover | Sean Glover | [Pekko](http://pekko.apache.org/)|
 | sgala | [Santiago Gala](http://memojo.com/memojowiki/Wiki.jsp?page=SantiagoGala) | [Jakarta](http://jakarta.apache.org/) , ws-wsrp4j|
 | sgoeschl | Siegfried Goeschl |
 | shankar | Selvaratnam Uthaiyashankar | [Axis](http://axis.apache.org/) ; [Stonehenge](http://incubator.apache.org/projects/stonehenge.html) ; [Web Services](http://ws.apache.org/)|
