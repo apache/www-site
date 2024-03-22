@@ -3,8 +3,6 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
-# DRAFT ~ DRAFT ~ DRAFT
-
 This **Downstream Distribution Branding Policy** defines **requirements** for
 downstream software distributors that wish to distribute Apache&reg; software
 products under the original Apache product name. Distributors wishing to use a
@@ -164,14 +162,9 @@ third party products, services, or events.**
 
 ## Policy Version  {#version}
 
-This is version 0.6 of this draft Apache policy document, published in December 2023.
+This is version 1.0 of this Apache policy document, published in March 2024.
 
 Material changes will be marked with a new version number.
-
-Changes will be tracked from version 1.0 onwards.
-
-
-## DRAFT ~ DRAFT ~ DRAFT
 
 [resources]: /foundation/marks/resources
 
