@@ -23,6 +23,7 @@ an Apache project, or are you a user, new contributor, software vendor, or third
 | [Non-Software Merchandise Branding Policy](/foundation/marks/merchandise) |  [Process For Selecting New Apache Software Product Names](/foundation/marks/naming) |
 | [Contacting Apache With Trademark Questions](/foundation/marks/contact) |  [Incubator Branding Policy For Podlings](//incubator.apache.org/guides/branding.html) |
 | [Asking **non**-Trademark related Legal questions](/legal/) | [How To: Request Registration of Your Project Name][1] |
+| [Apache Software Downstream Distribution Policy](/foundation/marks/downstream) | |
 
 ## Apache Trademark Policy Presentations / Slides / Videos  {#slides}
 
