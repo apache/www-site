@@ -3,7 +3,8 @@
 These pages have different stakeholders.
 
 Board of Directors at `board@apache.org`
-- [Board](foundation/board/)
+- [Board info](foundation/board/)
+- [Board policies](board/)
 
 VP, Security at `security@apache.org`
 - [Security](security/)
@@ -42,8 +43,6 @@ Infrastructure Team at `users@infra.apache.org`
 - [uptime](uptime/)
 
 See also [Operations Directory](foundation/operations/).
-
-For discussion about other content, contact `centralservices@apache.org`.
 
 All ASF Members have write access to this repository.
 
