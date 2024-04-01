@@ -1,4 +1,4 @@
-# Apache Foundation Website (www.apache.org)
+# Apache Software Foundation Website (www.apache.org)
 
 This repository provides the source for the main website of The Apache Software Foundation.
 
@@ -20,7 +20,7 @@ This repository provides the source for the main website of The Apache Software 
 
 ## Linking to Markdown (.md) sources
 
-Markdown (.md) files appear in the preview pane of the editor approximately as they will appear in the generated website.
+Markdown (.md) files appear in the preview pane of the GitHub editor approximately as they will appear in the generated website.
 This is convenient for reviewing changes, but means that linking to the source requires a bit more work compared with other files.
 If you want to create a permalink or raise an issue that relates to a particular Markdown source line, proceed as follows:
 - link to the rendered file as normal, for example: [https://github.com/apache/www-site/blob/main/README.md](https://github.com/apache/www-site/blob/main/README.md)
@@ -29,7 +29,7 @@ If you want to create a permalink or raise an issue that relates to a particular
 
 ## Documentation
 
-Read the [Getting started guide](https://infra.apache.org/asf-pelican-gettingstarted.html) and the pages it links to.
+Read the [ASF-Pelican Getting started guide](https://infra.apache.org/asf-pelican-gettingstarted.html) and the pages it links to.
 
 ## Notes
 
@@ -47,7 +47,7 @@ The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was n
 Foundation records, including minutes of Board meetings, remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
 except for the [index page](content/foundation/records/index.md).
 
-Wimsy maintains the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
+Whimsy maintains the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
 in SVN. At the start of each build, a setup entry in [pelicanconf.yaml](pelicanconf.yaml) calls the [get_calendar.sh](get_calendar.sh) script, which copies the calendar into `content/foundation/board`.
 
 Changes to the file do not automatically trigger a build, but the file changes rarely (about once a month)
@@ -87,8 +87,6 @@ If you need to test your changes, create a branch such as preview/_your-asf-id_
 
 Commits to it will be staged at www-_your-asf-id_.staged.apache.org
 
-=======
-
-Note: the branch name must not include any "." characters,
+**Note:** the branch name must not include any "." characters,
 or browsers will refuse to display the site due to an invalid SSL certificate.
 The underscore character should not be used either, as it is disallowed in host names.
