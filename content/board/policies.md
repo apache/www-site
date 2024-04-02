@@ -3,15 +3,12 @@ Title: Apache Board -- Project Services & Expectations
 
 # {{title}}
 
-**DRAFT DRAFT DRAFT** This is a DRAFT document and not official policy,
-pending approval by the Board. **DRAFT DRAFT DRAFT**
-
 The Apache Software Foundation (ASF) provides a wide array of 
 **services** to the many Apache communities and their Project Management 
 Committees (PMCs) that we host in line with our 
 [vision of independent, volunteer-run projects](https://blogs.apache.org/foundation/entry/the-apache-software-foundation-2018).  
-The Board of Directors and relevant ASF officers also set the 
-required **policies** and requirements that our PMCs are expected to follow.
+The Board of Directors and [relevant ASF officers](https://www.apache.org/foundation/governance/orgchart) also set various 
+required **policies** and best practices that our PMCs are expected to follow.
 
 ## Services Available To Apache Projects
 
@@ -23,13 +20,13 @@ Read the [guide for how to escalate serious issues](./escalation) with Apache pr
 
 ## Apache Project Requirements
 
-The Board of Directors and relevant officers have the following requirements of Apache PMCs.  Questions about
+The Board of Directors and relevant policy-setting officers have the established the following policies *(MUST)* or best practices *(SHOULD/MAY)* for all Apache PMCs.  Questions about
 any individual policy should be addressed to the appropriate officer
 and/or to the board.
 
 ### Provide Community And Project Oversight ([Board](https://whimsy.apache.org/foundation/orgchart/board))
 
-  * Project technical decisions MUST be made on [public and archived mailing lists](//www.apache.org/dev/pmc.html#mailing-list-naming-policy).
+  * Project technical decisions MUST be made on or otherwise reflected in a timely manner on [public and archived mailing lists](//www.apache.org/dev/pmc.html#mailing-list-naming-policy).
 
   * Project discussions and interactions SHOULD be [public in accessible, asynchronous and archived places](//www.apache.org/dev/pmc.html#mailing-list-naming-policy), unless there are specific documented reasons to hold discussions on private@.
 
@@ -41,11 +38,11 @@ and/or to the board.
 
   * Projects MUST [govern themselves independently of undue commercial influence](//community.apache.org/projectIndependence.html), and for the best interests of the project community as a whole.
 
-### Provide A Quarterly Report To The Board ([Board](https://whimsy.apache.org/foundation/orgchart/board))
+### Provide Regular Reports To The Board ([Board](https://whimsy.apache.org/foundation/orgchart/board))
 
   * Projects MUST provide a [quarterly status report to the board](//www.apache.org/foundation/board/reporting).
 
-### Follow Software Release Policy ([Legal Affairs](https://whimsy.apache.org/foundation/orgchart/vp-legal), [Infrastructure Team](https://whimsy.apache.org/foundation/orgchart/-admin))
+### Follow Software Release Policy ([Legal Affairs](https://whimsy.apache.org/foundation/orgchart/vp-legal), [Infrastructure Team](https://whimsy.apache.org/foundation/orgchart/vp-infrastructure))
 
   * Projects MUST follow the [Release Policy](//www.apache.org/legal/release-policy), the [Apache Voting Process](//www.apache.org/foundation/voting.html) and the [Release Distribution Policy](//www.apache.org/dev/release-distribution) when releasing software artifacts for general public use.
 
@@ -73,8 +70,10 @@ and/or to the board.
 
 ### Infrastructure Policy ([Infrastructure Team](https://whimsy.apache.org/foundation/orgchart/infra-admin))
 
-  * The primary source control repository MUST be administered by the Infrastructure Team on ASF maintained services. (*citation needed*)
-*
+  * Every [project's primary source control repository](https://infra.apache.org/project-repo-policy.html) MUST be administered by the Infrastructure Team on ASF maintained services.
+
+  * Project website homepages MUST be [static sites served on ASF infrastructure](https://infra.apache.org/project-site-policy.html).
+
 ### Press & Marketing Policy ([Press Team](https://whimsy.apache.org/foundation/orgchart/vp-marketing))
 
   * Projects MUST work with VP, Marketing and Publicity on any [formal press releases](//www.apache.org/press/#releases) that use ASF boilerplate.
@@ -83,9 +82,7 @@ and/or to the board.
 
 ### Fundraising Policies ([VP, Fundraising](https://whimsy.apache.org/foundation/orgchart/vp-fundraising))
 
-  * Projects MUST work with VP, Fundraising whenever [accepting or using financial donations](//www.apache.org/foundation/sponsorship.html).
-
-  * Projects MUST NOT use ASF donated funds to pay for primary development on any Apache project. (*citation needed*)
+  * Projects MUST work with VP, Fundraising whenever [directly accepting or using financial donations](//www.apache.org/foundation/sponsorship.html).
 
 ### Incubator Podling Policies ([Incubator PMC](https://whimsy.apache.org/foundation/orgchart/vp-incubator))
 
