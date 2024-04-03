@@ -72,7 +72,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
       <li><a target="_blank" rel="sponsored" href="https://rx-m.com/">RX-M</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.renre.com/">RenaissanceRe</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://sentry.io/welcome/">Sentry</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://sentry.io/welcome/?utm_source=apacheorg&utm_medium=site&utm_campaign=general-na-evergreen&utm_content=logo-thanksdevsitelogo-na">Sentry</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.theblogstarter.com/">The Blog Starter</a></li>
    </ul>
    </div>
