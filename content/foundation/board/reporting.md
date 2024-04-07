@@ -217,7 +217,7 @@ chair should consider each of these questions when writing a report.
  
  - Do not use non-Apache URL shorteners.
  
-      If you have a long URL you wish to include in your report, **only** use the `https://s.apache.org/` URL shortener (Apache login required) to provide a shorter link. Apache cannot control how long an external URL shorterner will exist, or will maintain a given shortened URL.   
+      If you have a long URL you wish to include in your report, **only** use the `https://s.apache.org/` URL shortener (Apache login required) to provide a shorter link. Apache cannot control how long an external URL shortener will exist, or will maintain a given shortened URL.   
 
 - There's no need to include details about committer affiliations in a report, unless the information points to an issue around diversity which may be included privately.
 
