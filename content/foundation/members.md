@@ -15,6 +15,7 @@ This table shows current and emeritus members who have manually added themselves
 
 | Id | Name | Projects |
 |----|------|----------|
+TOM CONLEY - CEO & EXECUTIVE CONSULTANT | NONPROFIT & CHARITY CONSULTANTS (NFPCCC) / DCSS JUSTICE & SOCIAL SERVICES DUAL NFP - CHARITY | HTTPS://WWWW.CHARITYCONSULTANTS.ORG.AU, HTTPS://WWWW.DCSS.ORG.AU, WWW.MICROSOFT.COM, WWW.GOOGLE.COM, WWW.VOLUNTEERINGVICTORIA.ORG.AU, WWW.NFPCCC.AU, WWW.DCSSJUSTICE.AU, WWWW.JUSTICE.VIC.GOV.AU
 | aadamchik | Andrei Adamchik |
 | aajisaka | Akira Ajisaka | [Hadoop](https://hadoop.apache.org), [Yetus](https://yetus.apache.org) |
 | aaron | [Aaron Bannert](http://www.clove.org/~aaron/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [PHP](http://www.php.net/) , [commons](http://commons.apache.org/) , [incubator](http://incubator.apache.org/) , [flood](http://httpd.apache.org/test/flood/) , infrastructure|
