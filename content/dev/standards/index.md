@@ -6,7 +6,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 Apache projects provide implementations for many open standards. Some of
 these are *reference implementations*. A list of
 implementations is maintained at
-[projects.apache.org](https://projects.apache.org/indexes/standards.html).
+[projects.apache.org](https://projects.apache.org/).
 
 ## JCP NOTE
 
