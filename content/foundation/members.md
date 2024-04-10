@@ -402,6 +402,7 @@ This table shows current and emeritus members who have manually added themselves
 | smarthi | Suneel Marthi | [Mahout](http://mahout.apache.org) |
 | smckinney | Shawn McKinney | [Fortress](https://directory.apache.org/fortress/) |
 | snoopdave | Dave Johnson |
+| snuyanzin | Sergey Nuyanzin | [Calcite](http://calcite.apache.org/), [Flink](https://flink.apache.org/) |
 | sokolov | Mike Sokolov |
 | solomax | Maxim Solodovnik | [OpenMeetings](http://openmeetings.apache.org/), [Flex](http://flex.apache.org/)|
 | sorber | Phil Sorber | [Traffic Server](http://trafficserver.apache.org) |
