@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
-As one of the largest hosts for open source projects, there are a wide array of academic researchers interested in studying communities at the ASF.  To ensure that our communities are respected, and to make it easier for researchers to find the right information, our volunteers maintain this research information portal.
+As one of the largest hosts for open source projects, there is a wide array of academic researchers interested in studying communities at the ASF.  To ensure that our communities are respected, and to make it easier for researchers to find the right information, our volunteers maintain this research information portal.
 
 [TOC]
 
