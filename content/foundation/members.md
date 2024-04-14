@@ -355,6 +355,7 @@ This table shows current and emeritus members who have manually added themselves
 | reinhard | Reinhard Poetz |
 | remm | Remy Maucherat | [Jakarta](http://jakarta.apache.org/)|
 | reschke | Julian Reschke |
+| reta | Andriy Redko | [CXF](https://cxf.apache.org/)|
 | rfrovarp | Richard Frovarp |
 | rgielen | [René Gielen](https://twitter.com/rgielen) | [Struts](https://struts.apache.org)|
 | rgoers | Ralph Goers | [Cocoon](http://cocoon.apache.org/) , [Commons](http://commons.apache.org/) , [Logging](http://logging.apache.org/) , [Maven](http://maven.apache.org/) , [Portals](http://portals.apache.org/)|
