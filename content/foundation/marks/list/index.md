@@ -378,6 +378,20 @@ or see other common law trademarks by letter:
         </li>
       </ul>
     </div>
+    <div class="panel panel-primary" id="log4j">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="https://logging.apache.org/log4j/2.x/">Apache Log4j</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache Log4j® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">LOG4J ®</li>
+        <li class="list-group-item">
+          <a href="https://tsdr.uspto.gov/#caseNumber=97618351&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 97618351</a>
+        </li>
+      </ul>
+    </div>
     <div class="panel panel-primary" id="lucene-core">
       <div class="panel-heading">
         <h3 class="panel-title"><a href="http://lucene.apache.org/core/">Apache Lucene Core</a>® software</h3>
@@ -805,7 +819,6 @@ or see other common law trademarks by letter:
       <div class="panel panel-default" id="lens"><div class="panel-heading" role="tab" id="unreg_lh2"><h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#unreg_l" href="#unreg_lc2" aria-controls="unreg_lc2">Apache Lens™ software</a></h4></div><div class="panel-collapse collapse" id="unreg_lc2" role="tabpanel" aria-labelledby="unreg_lh2"><div class="panel-body"><a href="http://lens.apache.org/">Apache Lens: </a>Lens provides an Unified Analytics interface. Lens aims to cut the Data Analytics silos by providing a single view of data across multiple tiered data stores and optimal execution environment for the analytical query. It seamlessly integrates Hadoop with traditional data warehouses to appear like one. </div></div></div>
       <div class="panel panel-default" id="libcloud"><div class="panel-heading" role="tab" id="unreg_lh3"><h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#unreg_l" href="#unreg_lc3" aria-controls="unreg_lc3">Apache Libcloud™ software</a></h4></div><div class="panel-collapse collapse" id="unreg_lc3" role="tabpanel" aria-labelledby="unreg_lh3"><div class="panel-body"><a href="http://libcloud.apache.org">Apache Libcloud: </a>Apache Libcloud is a standard Python library that abstracts away differences among multiple cloud provider APIs. It allows users to manage cloud servers, cloud storage and load-balancers.</div></div></div>
       <div class="panel panel-default" id="logging-log4cxx"><div class="panel-heading" role="tab" id="unreg_lh4"><h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#unreg_l" href="#unreg_lc4" aria-controls="unreg_lc4">Apache log4cxx™ software</a></h4></div><div class="panel-collapse collapse" id="unreg_lc4" role="tabpanel" aria-labelledby="unreg_lh4"><div class="panel-body"><a href="http://logging.apache.org/log4cxx">Apache log4cxx: </a></div></div></div>
-      <div class="panel panel-default" id="logging-log4j_2"><div class="panel-heading" role="tab" id="unreg_lh5"><h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#unreg_l" href="#unreg_lc5" aria-controls="unreg_lc5">Apache Log4j 2™ software</a></h4></div><div class="panel-collapse collapse" id="unreg_lc5" role="tabpanel" aria-labelledby="unreg_lh5"><div class="panel-body"><a href="https://logging.apache.org/log4j/2.x/">Apache Log4j 2: </a>Apache Log4j 2</div></div></div>
       <div class="panel panel-default" id="logging-log4net"><div class="panel-heading" role="tab" id="unreg_lh6"><h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#unreg_l" href="#unreg_lc6" aria-controls="unreg_lc6">Apache log4net™ software</a></h4></div><div class="panel-collapse collapse" id="unreg_lc6" role="tabpanel" aria-labelledby="unreg_lh6"><div class="panel-body"><a href="http://logging.apache.org/log4net/">Apache log4net: </a></div></div></div>
       <div class="panel panel-default" id="logging-log4php"><div class="panel-heading" role="tab" id="unreg_lh7"><h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#unreg_l" href="#unreg_lc7" aria-controls="unreg_lc7">Apache log4php™ software</a></h4></div><div class="panel-collapse collapse" id="unreg_lc7" role="tabpanel" aria-labelledby="unreg_lh7"><div class="panel-body"><a href="http://logging.apache.org/log4php/">Apache log4php: </a></div></div></div>
       <div class="panel panel-default" id="lucene-core"><div class="panel-heading" role="tab" id="unreg_lh8"><h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#unreg_l" href="#unreg_lc8" aria-controls="unreg_lc8">Apache Lucene Core™ software</a></h4></div><div class="panel-collapse collapse" id="unreg_lc8" role="tabpanel" aria-labelledby="unreg_lh8"><div class="panel-body"><a href="http://lucene.apache.org/core/">Apache Lucene Core: </a>Apache Lucene is a high-performance, full-featured text search engine library written entirely in Java. It is a technology suitable for nearly any application that requires full-text search, especially cross-platform. </div></div></div>
