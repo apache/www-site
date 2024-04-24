@@ -275,7 +275,7 @@ s=d.getElementsByTagName('script')[0];
 <div class="spacer-100">
 </div>
 <h3 id="the-voice-of-apache-podcast">The Voice of Apache Podcast<a class="headerlink" href="#the-voice-of-apache-podcast" title="Permalink">&para;</a></h3>
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/7nY2rlnPISg?si=ow3yTHYZcbWbIDuK" title="YouTube video player" width="560"></iframe>
+<div class="yt-container" id="yt-container-7nY2rlnPISg" style="background-image: url('/img/yt_preview_7nY2rlnPISg.jpg'); width: 640px; height: 360px;" youtube_id="7nY2rlnPISg"><div class="yt-notice"></div></div>
 <div class="spacer-100">
 </div>
 <h2 id="communities-that-endure">Communities That Endure<a class="headerlink" href="#communities-that-endure" title="Permalink">&para;</a></h2>
@@ -347,7 +347,57 @@ s=d.getElementsByTagName('script')[0];
 <div class="spacer-100">
 </div>
 <img alt="Apache 25 Year Anniversary" class="img-responsive" src="img/community-anniversary.jpg"/>
+<style>
+    .yt-container {
+        background-size: cover;
+        background-position: center;
+    }
 
+    .yt-notice {
+        padding: 0.5em;
+        color: black;
+        background-color: white;
+    }
+    .yt-notice::after {
+        content: "Clicking to play this video establishes a connection with YouTube";
+    }
+</style><script>
+    var cachedPromise;
+    function loadScript() {
+        cachedPromise = cachedPromise || new Promise((resolve, reject) => {
+            let script = document.createElement('script');
+            script.src = 'https://www.youtube.com/iframe_api';
+            script.addEventListener('load', resolve);
+            script.addEventListener('error', (e) => reject(e));
+            document.body.appendChild(script);
+        });
+        return cachedPromise;
+    }
+
+    function startPlayer(id, youtube_id) {
+        loadScript().then(() => {
+            window.YT.ready(function() {
+                let player = new YT.Player(id, {
+                videoId: youtube_id,
+                playerVars: {
+                    'playsinline': 1
+                },
+                events: {
+                    'onReady': (event) => {
+                        event.target.playVideo();
+                    }
+                }
+                });
+            });
+        });
+    }
+    function addElement(e) {
+        startPlayer(e.target.id, e.target.attributes['youtube_id'].value);
+    }
+    document
+      .querySelectorAll('.yt-container')
+      .forEach((video) => video.addEventListener('click', addElement))
+</script>
 </div>  </main>
 
   <!-- Footer -->
