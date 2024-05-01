@@ -53,7 +53,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="http://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
       <li><a target="_blank" rel="sponsored" href="https://opensource.salesforce.com/"><img src="images/salesforce-silver.png"/></a><p style="text-align: center; font-weight: bold;">Salesforce</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.snowflake.com/"><img src="images/snowflake-silver.png"/></a><p style="text-align: center; font-weight: bold;">Snowflake</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.target.com/"><img src="images/target-silver.png"/></a><p style="text-align: center; font-weight: bold;">Target</p></li>
    </ul>
    </div>
 
