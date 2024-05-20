@@ -1,7 +1,7 @@
 name: Build a Pelican Website
 on:
   push:
-    branches: [ "dfoulks/pelican-gha" ]
+    branches: [ "dfoulks/pelican_gha" ]
   workflow_dispatch:
 jobs:
   build-pelican:
@@ -10,32 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: ''
-          ref: 'dfoulks/pelican-gha'
-      - name: Install Pelican
-        run: pip3 install pelican markdown ghp-import bs4 ezt
-      # Optionally, if your website uses the gfm plugin uncomment the GFM block
-      #########################
-      # START BUILD GFM BLOCK #
-      #########################
-      - name: fetch libcmark-gfm.so buildscript
-        run: wget https://raw.githubusercontent.com/apache/infrastructure-pelican/master/bin/build-cmark.sh
-      - name: build libcmark-gfm.so
-        run: /bin/bash ./build-cmark.sh
-      #######################
-      # END BUILD GFM BLOCK #
-      #######################
-      - name: Generate website from markdown
-        run: /usr/bin/env python3 -m pelican content -o output
-        env:
-          LIBCMARKDIR: cmark-gfm-0.28.3.gfm.12/lib
-      - name: Open a PR against the staging branch
-        uses: peter-evans/create-pull-request@v6.0.5
+          ref: 'dfoulks/pelican_gha'
+      - uses: apache/infrastructure-actions/build-pelican@main
         with:
+          destination: 'dfoulks/gha-site'
+          gfm: 'true'
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: GitHub Actions Generated Pelican Build
-          title: Generated Pelican Output
-          body: output generated
-          add-paths: |
-            output/
-          base: dfoulks/gha-site
