@@ -1,0 +1,16 @@
+Title: ASF Export Classifications and Source Links
+license: https://www.apache.org/licenses/LICENSE-2.0
+asf_headings: False
+
+[insertfile "include/main.md"]
+
+#### ASF Project
+  - **ASF Product**
+    - Version / ECCN Classification / Controlled Sources
+
+[for eccn]
+#### [[][eccn.name]]([eccn.href])
+[if-any eccn.product][for eccn.product]  - **[eccn.product.name]**
+[for eccn.product.versions]    - [eccn.product.versions.version] / [eccn.product.versions.eccn]
+[for eccn.product.versions.source]    / [[][eccn.product.versions.source.manufacturer]]([eccn.product.versions.source.href] "[eccn.product.versions.source.why]")
+[end][end][end][end][end]
