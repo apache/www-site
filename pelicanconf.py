@@ -13,7 +13,8 @@ TIMEZONE = 'UTC'
 THEME = 'theme/apache'
 # Specify location of plugins, and which to use
 PLUGIN_PATHS = [ 'plugins',  ]
-PLUGINS = [ 'gfm', 'asfindex', 'consensual_youtube', 'asfgenid', 'asfdata', 'asfrun',  ]
+# If the website uses any *.ezmd files, include the 'asfreader' plugin
+PLUGINS = [ 'gfm', 'asfindex', 'consensual_youtube', 'asfgenid', 'asfdata', 'asfrun', 'asfreader',  ]
 # All content is located at '.' (aka content/ )
 PAGE_PATHS = [ '.' ]
 STATIC_PATHS = [ '.',  ]
@@ -80,4 +81,11 @@ ASF_POSTRUN = [ '/bin/bash pagefind.sh',  ]
 
 # Configure ignore files
 IGNORE_FILES = [ 'README.md', 'interviews', 'include', '*.odt',  ]
+
+
+
+# Configure the asfindex plugin
+ASF_INDEX = {
+ 'index': '**',
+}
 
