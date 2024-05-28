@@ -217,14 +217,14 @@ s=d.getElementsByTagName('script')[0];
  
   </header>
   <main id="maincontent">
-<div class="container">    <h1>{{title}}</h1>
+<div class="container">    <h1 id="verifying-apache-software-foundation-releases">Verifying Apache Software Foundation Releases<a class="headerlink" href="#verifying-apache-software-foundation-releases" title="Permalink">&para;</a></h1>
 <p>This page describes how to verify a file you have downloaded from an Apache product releases page, or from the Apache archive,
 by <a href="#CheckingHashes">checksum</a> or <a href="#CheckingSignatures">signature</a>.</p>
 <p>All official releases of code distributed by the Apache Software Foundation
 are signed by the release manager for the release.
 PGP signatures and SHA/MD5 checksums are available along with the distribution.</p>
 <p>Signatures and checksums are only available from the official Apache Software Foundation site.</p>
-<h2 id="CheckingHashes">Checking Hashes</h2>
+<h2 id="CheckingHashes">Checking Hashes<a class="headerlink" href="#CheckingHashes" title="Permalink">&para;</a></h2>
 <p>File hashes are used to check that a file has been downloaded correctly.
 They do not provide any guarantees as to the authenticity of the file.</p>
 <p>The <em>checksum</em> of a file is a fixed length string, that (in practice)
@@ -233,7 +233,7 @@ Two files are (only) equal if their checksums are equal.
 Comparing the checksums of two files is as good as comparing the two files
 themselves.</p>
 <p>There are lots of checksum algorithms. We use SHA-256 and SHA-512. MD5 and SHA-1, which may have been used for older releases, are <em>deprecated</em>.
-<br>
+<br/>
 The download page shows which checksum files
 are available for the <em>original</em> file.</p>
 <p>To check a hash, you have to <em>compute</em> the proper checksum of the file
@@ -245,43 +245,42 @@ td  { padding : 5px ; font-family : monospace ; font-size : smaller }
 th  { padding : 5px ; text-align : center ; }
 </style>
 <blockquote>
-<table border="1">
+<table border="1" class="table">
 <tr>
-<th colspan='4'><i>compute the checksum of your file ...</i></th>
-<th rowspan='1'><i>compare with</i></th>
+<th colspan="4"><i>compute the checksum of your file ...</i></th>
+<th rowspan="1"><i>compare with</i></th>
 </tr>
 <tr><td></td>
-  <th>Windows</th>
-  <th>Linux</th>
-  <th>Mac</th>
-  <td></td>
+<th>Windows</th>
+<th>Linux</th>
+<th>Mac</th>
+<td></td>
 </tr>
 <tr><th>SHA-1 (deprecated)</th><td>certUtil -hashfile <i>file</i> SHA1</td>
-  <td>sha1sum <i>file</i></td>
-  <td>shasum -a 1 <i>file</i></td>
-  <td><i>file</i>.sha1</td>
+<td>sha1sum <i>file</i></td>
+<td>shasum -a 1 <i>file</i></td>
+<td><i>file</i>.sha1</td>
 </tr>
 <tr><th>SHA-256</th><td>certUtil -hashfile <i>file</i> SHA256</td>
-  <td>sha256sum <i>file</i></td>
-  <td>shasum -a 256 <i>file</i></td>
-  <td><i>file</i>.sha256</td>
+<td>sha256sum <i>file</i></td>
+<td>shasum -a 256 <i>file</i></td>
+<td><i>file</i>.sha256</td>
 </tr>
 <tr><th>SHA-512</th><td>certUtil -hashfile <i>file</i> SHA512</td>
-  <td>sha512sum <i>file</i></td>
-  <td>shasum -a 512 <i>file</i></td>
-  <td><i>file</i>.sha512</td>
+<td>sha512sum <i>file</i></td>
+<td>shasum -a 512 <i>file</i></td>
+<td><i>file</i>.sha512</td>
 </tr>
 <tr><th>MD5 (deprecated)</th><td>certUtil -hashfile <i>file</i> MD5</td>
-  <td>md5sum <i>file</i></td>
-  <td>md5 <i>file</i></td>
-  <td><i>file</i>.md5</td>
+<td>md5sum <i>file</i></td>
+<td>md5 <i>file</i></td>
+<td><i>file</i>.md5</td>
 </tr>
 </table>
 </blockquote>
 </div>
-
 <p>Only if you check the hash can you be certain that your download hasn't been modified or is otherwise incomplete or faulty.</p>
-<h2 id="CheckingSignatures">Checking Signatures</h2>
+<h2 id="CheckingSignatures">Checking Signatures<a class="headerlink" href="#CheckingSignatures" title="Permalink">&para;</a></h2>
 <p>The following example details how signature interaction works. The example
 is for the Apache HTTP Server project, but applies equally to other ASF
 projects.</p>
@@ -294,42 +293,39 @@ successfully.</p>
 <p>First, we will check the detached signature (<code>httpd-2.0.44.tar.gz.asc</code>)
 against our release (<code>httpd-2.0.44.tar.gz</code>).</p>
 <p><strong><a name="specify_both"></a>N.B. you must specify both the detached signature and the release file.</strong>
-<br>If the release file is omitted, GPG will only check the signature against the release file if the signature is a detached signature.
+<br/>If the release file is omitted, GPG will only check the signature against the release file if the signature is a detached signature.
 If the .asc file is a self-contained signed file, GPG will only check that, and will not verify the release.
 (This should not happen if the signature file was downloaded from an ASF server, but it is safer to always specify the release filename)</p>
-<div class="highlight"><pre><span></span><code><span class="c">% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">Signature</span><span class="w"> </span><span class="n">made</span><span class="w"> </span><span class="n">Sat</span><span class="w"> </span><span class="n">Jan</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="mi">07</span><span class="p">:</span><span class="mi">21</span><span class="p">:</span><span class="mi">28</span><span class="w"> </span><span class="mi">2003</span><span class="w"> </span><span class="n">PST</span><span class="w"> </span><span class="n">using</span><span class="w"> </span><span class="n">DSA</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">ID</span><span class="w"> </span><span class="n">DE885DD3</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">Can</span><span class="o">&#39;</span><span class="n">t</span><span class="w"> </span><span class="n">check</span><span class="w"> </span><span class="n">signature</span><span class="p">:</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">found</span>
-</code></pre></div>
-
+<pre><code>% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz
+gpg: Signature made Sat Jan 18 07:21:28 2003 PST using DSA key ID DE885DD3
+gpg: Can't check signature: public key not found
+</code></pre>
 <p>This means that we don't have the release manager's public key (<code>DE885DD3</code>)
 in our local system. You now need to retrieve the public key from a key
 server. One popular server is <code>pgpkeys.mit.edu</code> (which has a <a href="http://pgp.mit.edu/">web
 interface</a> ). The public key servers are linked
 together, so you should be able to connect to any key server.</p>
-<div class="highlight"><pre><span></span><code><span class="c">% gpg --keyserver pgpkeys.mit.edu --recv-key DE885DD3</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">requesting</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">DE885DD3</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">HKP</span><span class="w"> </span><span class="n">keyserver</span><span class="w"> </span><span class="n">pgpkeys</span><span class="p">.</span><span class="n">mit</span><span class="p">.</span><span class="n">edu</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">trustdb</span><span class="w"> </span><span class="n">created</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">DE885DD3</span><span class="p">:</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="s">&quot;Sander Striker &lt;striker@apache.org&gt;&quot;</span><span class="w"> </span><span class="n">imported</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">Total</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="n">processed</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w">               </span><span class="n">imported</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
-</code></pre></div>
-
+<pre><code>% gpg --keyserver pgpkeys.mit.edu --recv-key DE885DD3
+gpg: requesting key DE885DD3 from HKP keyserver pgpkeys.mit.edu
+gpg: trustdb created
+gpg: key DE885DD3: public key "Sander Striker &lt;striker@apache.org&gt;" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+</code></pre>
 <p>In this example, you have now received a public key for an entity known as
 <code>Sander Striker &lt;striker@apache.org&gt;</code>. However, you have no way of
 verifying this key was created by the person known as Sander Striker. But,
 let's try to verify the release signature again.</p>
-<div class="highlight"><pre><span></span><code><span class="c">% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">Signature</span><span class="w"> </span><span class="n">made</span><span class="w"> </span><span class="n">Sat</span><span class="w"> </span><span class="n">Jan</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="mi">07</span><span class="p">:</span><span class="mi">21</span><span class="p">:</span><span class="mi">28</span><span class="w"> </span><span class="mi">2003</span><span class="w"> </span><span class="n">PST</span><span class="w"> </span><span class="n">using</span><span class="w"> </span><span class="n">DSA</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">ID</span><span class="w"> </span><span class="n">DE885DD3</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">Good</span><span class="w"> </span><span class="n">signature</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="s">&quot;Sander Striker &lt;striker@apache.org&gt;&quot;</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w">                 </span><span class="n">aka</span><span class="w"> </span><span class="s">&quot;Sander Striker &lt;striker@striker.nl&gt;&quot;</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">checking</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">trustdb</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">ultimately</span><span class="w"> </span><span class="n">trusted</span><span class="w"> </span><span class="nb">keys</span><span class="w"> </span><span class="n">found</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">WARNING</span><span class="p">:</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">certified</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">trusted</span><span class="w"> </span><span class="n">signature</span>!
-<span class="n">gpg</span><span class="p">:</span><span class="w">          </span><span class="n">There</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">indication</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">signature</span><span class="w"> </span><span class="n">belongs</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">owner</span><span class="p">.</span>
-<span class="n">Fingerprint</span><span class="p">:</span><span class="w"> </span>4<span class="n">C1E</span><span class="w"> </span><span class="n">ADAD</span><span class="w"> </span><span class="n">B4EF</span><span class="w"> </span><span class="mi">5007</span><span class="w"> </span>579<span class="n">C</span><span class="w">  </span>919<span class="n">C</span><span class="w"> </span><span class="mi">6635</span><span class="w"> </span><span class="n">B6C0</span><span class="w"> </span><span class="n">DE88</span><span class="w"> </span>5<span class="n">DD3</span>
-</code></pre></div>
-
+<pre><code>% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz
+gpg: Signature made Sat Jan 18 07:21:28 2003 PST using DSA key ID DE885DD3
+gpg: Good signature from "Sander Striker &lt;striker@apache.org&gt;"
+gpg:                 aka "Sander Striker &lt;striker@striker.nl&gt;"
+gpg: checking the trustdb
+gpg: no ultimately trusted keys found
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Fingerprint: 4C1E ADAD B4EF 5007 579C  919C 6635 B6C0 DE88 5DD3
+</code></pre>
 <p>At this point, the signature is good, but we don't trust this key. A good
 signature means that the file has not been tampered with. However, due to
 the nature of public key cryptography, you need to additionally verify that
@@ -339,7 +335,7 @@ servers. They can then create a malicious release signed by this fake key.
 Then, if you tried to verify the signature of this corrupt release, it
 would succeed because the key was not the 'real' key. Therefore, you need
 to validate the authenticity of this key.</p>
-<h3 id="Validating">Validating Authenticity of a Key</h3>
+<h3 id="Validating">Validating Authenticity of a Key<a class="headerlink" href="#Validating" title="Permalink">&para;</a></h3>
 <p>You may download public keys for the Apache project developers from our
 website or retrieve them from the public PGP keyservers (see above).
 However, importing these keys is not enough to verify the integrity of the
@@ -348,13 +344,12 @@ key was created by an official representative of the Apache HTTP Server
 Project.</p>
 <p>The crucial step to validation is to confirm the key fingerprint of the
 public key.</p>
-<div class="highlight"><pre><span></span><code><span class="c">% gpg --fingerprint DE885DD3</span>
-<span class="n">pub</span><span class="w">  </span><span class="s">1024D/DE885DD3</span><span class="w"> </span><span class="s">2002-04-10</span><span class="w"> </span><span class="s">Sander</span><span class="w"> </span><span class="s">Striker</span><span class="w"> </span><span class="o">&lt;</span><span class="n">striker</span><span class="p">@</span><span class="n">apache</span><span class="p">.</span><span class="n">org</span><span class="o">&gt;</span>
-<span class="w">     </span><span class="n">Key</span><span class="w"> </span><span class="n">fingerprint</span><span class="w"> </span><span class="p">=</span><span class="w"> </span>4<span class="n">C1E</span><span class="w"> </span><span class="n">ADAD</span><span class="w"> </span><span class="n">B4EF</span><span class="w"> </span><span class="mi">5007</span><span class="w"> </span>579<span class="n">C</span><span class="w">  </span>919<span class="n">C</span><span class="w"> </span><span class="mi">6635</span><span class="w"> </span><span class="n">B6C0</span><span class="w"> </span><span class="n">DE88</span><span class="w"> </span>5<span class="n">DD3</span>
-<span class="n">uid</span><span class="w">                 </span><span class="s">Sander</span><span class="w"> </span><span class="s">Striker</span><span class="w"> </span><span class="o">&lt;</span><span class="n">striker</span><span class="p">@</span><span class="n">striker</span><span class="p">.</span><span class="n">nl</span><span class="o">&gt;</span>
-<span class="n">sub</span><span class="w">  </span><span class="s">2048g/532D14CA</span><span class="w"> </span><span class="s">2002-04-10</span>
-</code></pre></div>
-
+<pre><code>% gpg --fingerprint DE885DD3
+pub  1024D/DE885DD3 2002-04-10 Sander Striker &lt;striker@apache.org&gt;
+     Key fingerprint = 4C1E ADAD B4EF 5007 579C  919C 6635 B6C0 DE88 5DD3
+uid                 Sander Striker &lt;striker@striker.nl&gt;
+sub  2048g/532D14CA 2002-04-10
+</code></pre>
 <p>A good start to validating a key is by face-to-face communication with
 multiple government-issued photo identification confirmations. However,
 each person is free to have their own standards for determining the
@@ -371,27 +366,26 @@ web of trust. (Hint: all of our developers' keys are in the KEYS file.)</p>
 Striker. If you verify any key on this list, you will have a trust path to
 the <code>DE885DD3</code> key. If you verify a key that verifies one of the signatories
 for <code>DE885DD3</code>, then you will have a trust path. (So on, and so on.)</p>
-<div class="highlight"><pre><span></span><code><span class="n">pub</span><span class="w">  </span><span class="mi">1024</span><span class="n">D</span><span class="o">/</span><span class="n">DE885DD3</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">10</span><span class="w"> </span><span class="n">Sander</span><span class="w"> </span><span class="n">Striker</span><span class="w"> </span><span class="o">&lt;</span><span class="n">striker</span><span class="nv">@apache</span><span class="p">.</span><span class="n">org</span><span class="o">&gt;</span>
-<span class="n">sig</span><span class="w">        </span><span class="n">E2226795</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span><span class="w">   </span><span class="n">Justin</span><span class="w"> </span><span class="n">R</span><span class="p">.</span><span class="w"> </span><span class="n">Erenkrantz</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="n">DE885DD3</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">10</span><span class="w">   </span><span class="n">Sander</span><span class="w"> </span><span class="n">Striker</span>
-<span class="n">sig</span><span class="w">        </span><span class="n">CD4DF205</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">28</span><span class="w">   </span><span class="n">Wolfram</span><span class="w"> </span><span class="n">Schlich</span>
-<span class="n">sig</span><span class="w">        </span><span class="n">E005C9CB</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">17</span><span class="w">   </span><span class="n">Greg</span><span class="w"> </span><span class="n">Stein</span>
-<span class="n">sig</span><span class="w">        </span><span class="n">CC8B0F7E</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">18</span><span class="w">   </span><span class="n">Aaron</span><span class="w"> </span><span class="n">Bannert</span>
-<span class="n">sig</span><span class="w">        </span><span class="n">DFEAC4B9</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">19</span><span class="w">   </span><span class="n">David</span><span class="w"> </span><span class="n">N</span><span class="p">.</span><span class="w"> </span><span class="n">Welton</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">2</span><span class="w">      </span><span class="mi">82</span><span class="n">AB7BD1</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">17</span><span class="w">   </span><span class="n">Cliff</span><span class="w"> </span><span class="n">Woolley</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">2</span><span class="w">      </span><span class="mi">13046155</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">28</span><span class="w">   </span><span class="n">Thom</span><span class="w"> </span><span class="n">May</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="mi">19311</span><span class="n">B00</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">17</span><span class="w">   </span><span class="n">Chuck</span><span class="w"> </span><span class="n">Murcko</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="n">F894BE12</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">17</span><span class="w">   </span><span class="n">Brian</span><span class="w"> </span><span class="n">William</span><span class="w"> </span><span class="n">Fitzpatrick</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="mi">5</span><span class="n">C1C3AD7</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">18</span><span class="w">   </span><span class="n">David</span><span class="w"> </span><span class="n">Reid</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="n">E04F9A89</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">18</span><span class="w">   </span><span class="n">Roy</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="w"> </span><span class="n">Fielding</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="n">CC78C893</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">19</span><span class="w">   </span><span class="n">Rich</span><span class="w"> </span><span class="n">Bowen</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="mi">08</span><span class="n">C975E5</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">21</span><span class="w">   </span><span class="n">Jim</span><span class="w"> </span><span class="n">Jagielski</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="n">F88341D9</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">18</span><span class="w">   </span><span class="n">Lars</span><span class="w"> </span><span class="n">Eilebrecht</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="mi">187</span><span class="n">BD68D</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">21</span><span class="w">   </span><span class="n">Ben</span><span class="w"> </span><span class="n">Hyde</span>
-<span class="n">sig</span><span class="w"> </span><span class="mi">3</span><span class="w">      </span><span class="mi">49</span><span class="n">A563D9</span><span class="w"> </span><span class="mi">2002</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">23</span><span class="w">   </span><span class="n">Mark</span><span class="w"> </span><span class="n">Cox</span>
-<span class="p">...</span><span class="n">more</span><span class="w"> </span><span class="n">signatures</span><span class="w"> </span><span class="n">redacted</span><span class="p">...</span>
-</code></pre></div>
-
+<pre><code>pub  1024D/DE885DD3 2002-04-10 Sander Striker &lt;striker@apache.org&gt;
+sig        E2226795 2002-05-01   Justin R. Erenkrantz
+sig 3      DE885DD3 2002-04-10   Sander Striker
+sig        CD4DF205 2002-05-28   Wolfram Schlich
+sig        E005C9CB 2002-11-17   Greg Stein
+sig        CC8B0F7E 2002-11-18   Aaron Bannert
+sig        DFEAC4B9 2002-11-19   David N. Welton
+sig 2      82AB7BD1 2002-11-17   Cliff Woolley
+sig 2      13046155 2002-11-28   Thom May
+sig 3      19311B00 2002-11-17   Chuck Murcko
+sig 3      F894BE12 2002-11-17   Brian William Fitzpatrick
+sig 3      5C1C3AD7 2002-11-18   David Reid
+sig 3      E04F9A89 2002-11-18   Roy T. Fielding
+sig 3      CC78C893 2002-11-19   Rich Bowen
+sig 3      08C975E5 2002-11-21   Jim Jagielski
+sig 3      F88341D9 2002-11-18   Lars Eilebrecht
+sig 3      187BD68D 2002-11-21   Ben Hyde
+sig 3      49A563D9 2002-11-23   Mark Cox
+...more signatures redacted...
+</code></pre>
 <p>Since the developers are usually quite busy, you may not immediately find
 success in someone who is willing to meet face-to-face (they may not even
 respond to your emails because they are so busy!). If you do not have a
@@ -401,11 +395,12 @@ able to find someone who will be willing to validate their key or arrange
 alternate mechanisms for validation.</p>
 <p>Once you have entered the web of trust, you should see the following upon
 verifying the signature of a release.</p>
-<div class="highlight"><pre><span></span><code><span class="c">% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">Signature</span><span class="w"> </span><span class="n">made</span><span class="w"> </span><span class="n">Sat</span><span class="w"> </span><span class="n">Jan</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="mi">07</span><span class="p">:</span><span class="mi">21</span><span class="p">:</span><span class="mi">28</span><span class="w"> </span><span class="mi">2003</span><span class="w"> </span><span class="n">PST</span><span class="w"> </span><span class="n">using</span><span class="w"> </span><span class="n">DSA</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">ID</span><span class="w"> </span><span class="n">DE885DD3</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w"> </span><span class="n">Good</span><span class="w"> </span><span class="n">signature</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="s">&quot;Sander Striker &lt;striker@apache.org&gt;&quot;</span>
-<span class="n">gpg</span><span class="p">:</span><span class="w">                 </span><span class="n">aka</span><span class="w"> </span><span class="s">&quot;Sander Striker &lt;striker@striker.nl&gt;&quot;</span>
-</code></pre></div>
+<pre><code>% gpg --verify httpd-2.0.44.tar.gz.asc httpd-2.0.44.tar.gz
+gpg: Signature made Sat Jan 18 07:21:28 2003 PST using DSA key ID DE885DD3
+gpg: Good signature from "Sander Striker &lt;striker@apache.org&gt;"
+gpg:                 aka "Sander Striker &lt;striker@striker.nl&gt;"
+</code></pre>
+
 </div>  </main>
 
   <!-- Footer -->

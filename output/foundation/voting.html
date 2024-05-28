@@ -217,7 +217,7 @@ s=d.getElementsByTagName('script')[0];
  
   </header>
   <main id="maincontent">
-<div class="container">    <h1>{{title}}</h1>
+<div class="container">    <h1 id="apache-voting-process">Apache Voting Process<a class="headerlink" href="#apache-voting-process" title="Permalink">&para;</a></h1>
 <p>Because one of the fundamental aspects of accomplishing things within the
 Apache framework is doing so by consensus, we need a
 way to tell whether we have reached consensus. We do this by voting.</p>
@@ -251,13 +251,13 @@ doesn't. Then the proposer either withdraws the proposal or modifies the code an
 or the proposal simply languishes as an open issue until someone gets around to removing it.</p>
 <p>Votes on whether a <strong>package</strong> is ready to release use yet a
 different mechanism: are there are least three binding votes in favour of
-the release? See the <a href="../legal/release-policy.html#release-approval">release policy</a> 
+the release? See the <a href="../legal/release-policy.html#release-approval">release policy</a>
 for more information on voting and requirements for binding votes.</p>
-<h2>Binding votes</h2>
+<h2 id="binding-votes">Binding votes<a class="headerlink" href="#binding-votes" title="Permalink">&para;</a></h2>
 <p>Who can vote is, to some extent, a community-specific thing.</p>
 <p>PMC members have formally binding votes, but in general communities encourage all their members to vote,
 even if their votes are only advisory.</p>
-<h2>Implications of voting</h2>
+<h2 id="implications-of-voting">Implications of voting<a class="headerlink" href="#implications-of-voting" title="Permalink">&para;</a></h2>
 <p>In some cases and communities, the exercise of a vote carries some
 responsibilities that may not be immediately obvious. For example, in some
 cases a favourable vote carries the implied message 'I approve <strong>and</strong> I'm
@@ -272,7 +272,7 @@ carries the very strong implied message, 'I have tested this patch myself,
 and found it good.' Similarly, a negative vote usually means that that the voter tested
 the patch and found it to be <em>not</em> good, although the veto (for such it is
 in this case) may be based on other technical grounds.</p>
-<h2>Expressing votes: +1, 0, -1, and fractions</h2>
+<h2 id="expressing-votes-1-0-1-and-fractions">Expressing votes: +1, 0, -1, and fractions<a class="headerlink" href="#expressing-votes-1-0-1-and-fractions" title="Permalink">&para;</a></h2>
 <p>The voting process in Apache may seem more than a little weird if you've
 never encountered it before. Votes are represented as numbers between -1
 and +1, with '-1' meaning 'no' and '+1' meaning 'yes.'</p>
@@ -305,7 +305,7 @@ skills necessary to help out.'</p>
 <p>Voting periods should generally run for at least 72 hours to provide
 an opportunity for all concerned persons to participate, regardless of their
 geographic location.</p>
-<h3>Votes on code modification</h3>
+<h3 id="votes-on-code-modification">Votes on code modification<a class="headerlink" href="#votes-on-code-modification" title="Permalink">&para;</a></h3>
 <p>For code-modification votes, +1 votes are in favour of the proposal, but -1
 votes are <a href="#Veto">vetos</a> and kill the proposal dead until all vetoers
 withdraw their -1 votes.</p>
@@ -313,12 +313,12 @@ withdraw their -1 votes.</p>
 three +1 votes are required for a code-modification proposal to pass.</p>
 <p>We recommend whole numbers for this type of vote, as the opinion the voter is
 expressing is Boolean: 'I approve/do not approve of this change.'</p>
-<h3 id="ReleaseVotes">Votes on package releases</h3>
-<p>Votes on whether a package is ready to release use 
-<a href="glossary.html#MajorityApproval">majority approval</a> -- 
+<h3 id="ReleaseVotes">Votes on package releases<a class="headerlink" href="#ReleaseVotes" title="Permalink">&para;</a></h3>
+<p>Votes on whether a package is ready to release use
+<a href="glossary.html#MajorityApproval">majority approval</a> --
 i.e. at least three PMC members must vote affirmatively
 for release, and there must be more positive than negative votes.
-<strong>Releases may not be vetoed.</strong> 
+<strong>Releases may not be vetoed.</strong>
 Generally the community
 will cancel the release vote if anyone identifies serious problems, but
 in most cases the ultimate decision
@@ -329,31 +329,31 @@ quorum of three +1 votes' rule is universal.</p>
 or from anyone in any ASF vote. Only explicit votes are valid.
 The release manager is encouraged to vote on releases,
 like any reviewer would do.</p>
-<h2 id="Veto">Vetoes</h2>
+<h2 id="Veto">Vetoes<a class="headerlink" href="#Veto" title="Permalink">&para;</a></h2>
 <p>A -1 vote by a qualified voter stops a code-modification proposal in its tracks. This constitutes a veto, and it cannot be overruled
 nor overridden by anyone. Vetoes stand until and unless the individual withdraws their veto.</p>
 <p>To prevent vetoes from being used capriciously, the voter must provide with the veto
 a technical justification showing why the change is bad (opens a security
 exposure, negatively affects performance, <em>etc.</em> ). A veto without a
 justification is invalid and has no weight.</p>
-<h2 id="LazyConsensus">Gauging consensus through silence</h2>
+<h2 id="LazyConsensus">Gauging consensus through silence<a class="headerlink" href="#LazyConsensus" title="Permalink">&para;</a></h2>
 <p>An alternative to voting is to measure the
 acceptability of something using the concept of
 <a href="glossary.html#LazyConsensus">lazy consensus</a>.</p>
 <p>Lazy consensus is simply an announcement of 'silence gives assent.' When
 someone wants to determine the sense of the community this way, they might do
 so with a mail message such as:</p>
-<div class="highlight"><pre><span></span><code><span class="err">&quot;The patch below fixes bug #8271847; if no-one objects within three</span>
-<span class="nv">days</span>,<span class="w"> </span><span class="nv">I</span><span class="err">&#39;ll assume lazy consensus and commit it.&quot;</span>
-</code></pre></div>
-
+<pre><code>"The patch below fixes bug #8271847; if no-one objects within three
+days, I'll assume lazy consensus and commit it."
+</code></pre>
 <p>You cannot apply lazy consensus to code changes when the
 <a href="glossary.html#ReviewThenCommit">review-then-commit</a> policy is in effect.</p>
-<h2>Reasons for votes</h2>
+<h2 id="reasons-for-votes">Reasons for votes<a class="headerlink" href="#reasons-for-votes" title="Permalink">&para;</a></h2>
 <p>People tend to avoid conflict and thrash around looking for something to
 substitute - somebody in charge, a rule, a process, stagnation. None of
 these tend to be very good substitutes for doing the hard work of resolving
 the conflict.</p>
+
 </div>  </main>
 
   <!-- Footer -->

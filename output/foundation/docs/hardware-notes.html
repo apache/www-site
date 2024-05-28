@@ -217,33 +217,28 @@ s=d.getElementsByTagName('script')[0];
  
   </header>
   <main id="maincontent">
-<div class="container">    <h1>{{title}}</h1>
-<h2>Reporting Problems</h2>
+<div class="container">    <h1 id="hardware-notes">Hardware Notes<a class="headerlink" href="#hardware-notes" title="Permalink">&para;</a></h1>
+<h2 id="reporting-problems">Reporting Problems<a class="headerlink" href="#reporting-problems" title="Permalink">&para;</a></h2>
 <ul>
 <li>
 <p>If the problem is fatal to non-developers (e.g., any of the major daemons
-being down SMTP, HTTP, etc) send a note to noc@collab.net, which will act
+being down SMTP, HTTP, etc) send a note to <a href="mailto:noc@collab.net">noc@collab.net</a>, which will act
 upon it as quickly as possible. If you don't get a response within 10-15
 minutes, as a backup call Brian Behlendorf via cell phone, which any
 ASF member can get for you.</p>
 </li>
 <li>
 <p>If the problem is fatal only to developers (e.g., CVS commits are hosed,
-ssh access is screwy) please send a note to committers@apache.org. If it
+ssh access is screwy) please send a note to <a href="mailto:committers@apache.org">committers@apache.org</a>. If it
 doesn't require root to fix, ideally someone can then leap in and fix it,
 with those with root ultimately responsible for fixing the problem.</p>
 </li>
 </ul>
-<h2>Customizations to apache.org beyond a stock FreeBSD 4.2 installation</h2>
+<h2 id="customizations-to-apacheorg-beyond-a-stock-freebsd-42-installation">Customizations to apache.org beyond a stock FreeBSD 4.2 installation<a class="headerlink" href="#customizations-to-apacheorg-beyond-a-stock-freebsd-42-installation" title="Permalink">&para;</a></h2>
 <ul>
 <li>
 <p>Using "vnode" memory filesystem proposed by Tony Finch. this is now in
-/etc/rc.local: <code>vnconfig -e -s labels,reserve -S 200m vn0
-disklabel -r -w vn0 auto
-newfs -i 1024 /dev/vn0c
-mount /dev/vn0c /tmp
-chmod a+w /tmp
-chmod +t /tmp</code> 
+/etc/rc.local: <code>vnconfig -e -s labels,reserve -S 200m vn0 disklabel -r -w vn0 auto newfs -i 1024 /dev/vn0c mount /dev/vn0c /tmp chmod a+w /tmp chmod +t /tmp</code>
 The -i 1024 to newfs is important, as cvs likes to create a lot of small
 files.</p>
 </li>
@@ -261,6 +256,7 @@ problem.</p>
 </ul>
 <p>much much more to come, I just needed a common place to start collecting
 anecdotal data.</p>
+
 </div>  </main>
 
   <!-- Footer -->
