@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # Support ASF: Individual Giving Programs
 
-ASF’s open source software is used ubiquitously around the world. Individual Supporters enable the Apache Software Foundation to serve as the global home for hundreds of software projects, and to incubate the next-generation of open source innovations. We thank all current ASF Individual Supporters for their loyalty and contributions, and look forward to welcoming new donors as we continue to expand our community.
+The ASF’s open source software is used all around the world. Individual Supporters enable the Apache Software Foundation to serve as the global home for hundreds of software projects, and to incubate the next-generation of open source innovations. We thank all current ASF Individual Supporters for their loyalty and contributions, and look forward to welcoming new donors as we continue to expand our community.
 
 ## One-Time or Recurring Donations
 Giving to Apache is easy! You can donate with a debit or credit card, bank transfer, PayPal, or Google Pay. If you'd like to mail a check, see instructions below.  Donations are tax-deductible in the U.S. The ASF is recognized by <a href="https://www.charitynavigator.org/index.cfm?bay=search.profile&ein=470825376" target="_blank">Charity Navigator</a> and cited with the Gold Seal of Transparency by <a href="https://www.guidestar.org/profile/47-0825376" target="_blank">GuideStar</a>. Thank you in advance for your generosity!
