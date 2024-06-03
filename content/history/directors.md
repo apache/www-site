@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
-This timeline shows who has served when on the Board of Directors of The ASF.
+3TODO This timeline shows who has served when on the Board of Directors of The ASF.
 
 It is <em>not</em> an official record - just an informational page.
 
@@ -17,3 +17,5 @@ It is <em>not</em> an official record - just an informational page.
 <script type="text/javascript">
   window.asf.directorsTimelineChart(document.getElementById('graph'), window.asf.getDirectorsTimelineData())
 </script>
+
+> This data comes from <a href='./data/directors.js'>`./data/directors.js`</a>
