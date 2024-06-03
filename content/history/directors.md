@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # {{title}}
 
-3TODO This timeline shows who has served when on the Board of Directors of The ASF.
+This timeline shows who has served when on the Board of Directors of The ASF.
 
 It is <em>not</em> an official record - just an informational page.
 
