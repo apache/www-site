@@ -80,7 +80,7 @@ projects and benefited our users.
 
 ### Why are PMC Chairs officers of the corporation?
 
-As an officer of the corporation, PMC Chairs act on behalf of the corporation providing for their project the oversight that the ASF requires.Since the officer is acting on behalf of the corporation, there is no personal liability -- standard corporate assumption of liability occurs. If the officer was not acting in accordance with their stated role, then they would be personally liable.Since the ASF assumes liability, it responds on behalf of individual projects when there are complaints or even legal action.
+As an officer of the corporation, PMC Chairs act on behalf of the corporation providing for their project the oversight that the ASF requires.Since the officer is acting on behalf of the corporation, there is no personal liability -- standard corporate assumption of liability occurs. If the officer were not acting in accordance with their stated role, then they would be personally liable.Since the ASF assumes liability, it responds on behalf of individual projects when there are complaints or even legal action.
 
 Officers and members are further indemnified in accordance with our bylaws (meaning we also take care of their legal expenses if they are sued due to their role's actions). In essence, PMC chairs must be officers because the board can only delegate things to employees or officers. It is impossible to delegate authority to someone who has no authority.
 
@@ -99,7 +99,7 @@ The Apache Software Foundation is a meritocracy, which means that, to become a m
 
 ### Is it true that some companies are ASF Members?
 
-No, the membership of the ASF is composed of individuals, not companies. This does not mean that individuals that work at a company cannot contribute to ASF, quite the contrary. We have a specific CLA to assure that individuals can clearly contribute to the ASF during "work time."
+No, the membership of the ASF is composed of individuals, not companies. This does not mean that individuals who work at a company cannot contribute to ASF, quite the contrary. We have a specific CLA to assure that individuals can clearly contribute to the ASF during "work time."
 
 ## Technical
 
