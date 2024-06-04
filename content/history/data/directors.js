@@ -30,8 +30,10 @@ window.asf.getDirectorsTimelineData = function () {
         gstein: 'Greg Stein',
         henning: 'Henning Schmiedehausen',
         isabel: 'Isabel Drost-Fromm',
+        jbonofre: 'Jean-Baptiste Onofré',
         jerenkrantz: 'Justin Erenkrantz',
         jim: 'Jim Jagielski',
+        jjirsa: 'Jeff Jirsa',
         jmclean: 'Justin Mclean',
         ke4qqq: 'David Nalley',
         lrosen: 'Larry Rosen',
@@ -114,9 +116,10 @@ window.asf.getDirectorsTimelineData = function () {
     y2021 = date(2021, 3, 9);
     y2022 = date(2022, 3, 1);
     y2023 = date(2023, 3, 9);
+    y2024 = date(2024, 3, 7);
 
     // Just guessing this date for now
-    y2024 = date(2024, 3, 31);
+    y2025 = date(2025, 3, 31);
 
     // Change dates for outgoing/incoming Directors
     // fielding -> striker
@@ -209,18 +212,20 @@ window.asf.getDirectorsTimelineData = function () {
     add('pats', y2020, y2021);
     add('rvs', y2021, y2023);
     add('wusheng', y2021, y2022);
+    add('bdelacretaz', y2020, y2024);
+    add('sharan', y2021, y2024);
     // ABOVE: history of begin/end for prior Directors
 
     // Current set of Directors
-    add('rbowen', y2022, y2024);
-    add('bdelacretaz', y2020, y2024);
-    add('cdutz', y2022, y2024);
-    add('sharan', y2021, y2024);
-    add('ningjiang', y2022, y2024);
-    add('striker', y2020, y2024);
-    add('clr', y2023, y2024);
-    add('jmclean', y2023, y2024);
-    add('curcuru', y2023, y2024);
+    add('rbowen', y2022, y2025);
+    add('cdutz', y2022, y2025);
+    add('ningjiang', y2022, y2025);
+    add('striker', y2020, y2025);
+    add('clr', y2023, y2025);
+    add('jmclean', y2023, y2025);
+    add('curcuru', y2023, y2025);
+    add('jjirsa', y2024, y2025);
+    add('jbonofre', y2024, y2025);
 
     return data;
 }
