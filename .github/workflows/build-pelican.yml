@@ -1,7 +1,7 @@
 name: Build a Pelican Website
 on:
   push:
-    branches: [ 'main' ]
+    branches: [ 'preview/ghabuild' ]
   workflow_dispatch:
 jobs:
   build-pelican:
@@ -9,8 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 'main'
-      - uses: apache/infrastructure-actions/pelican@noforce
+          ref: 'preview/ghabuild'
+      - uses: apache/infrastructure-actions/pelican@main
         with:
-          destination: 'asf-site'
+          destination: 'preview/ghabuild-staging'
           gfm: 'true'
