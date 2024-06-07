@@ -33,6 +33,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://apache.org/"><img src="images/blank.png"/></a><p style="text-align: center; font-weight: bold;">Anonymous</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.baidu.com/"><img src="images/baidu.png"/></a><p style="text-align: center; font-weight: bold;">Baidu</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.TechAtBloomberg.com/opensource"><img src="images/bloomberg-gold.png"/></a><p style="text-align: center; font-weight: bold;">Bloomberg</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://opensource.bytedance.com"><img src="images/bytedance-gold.png"/></a><p style="text-align: center; font-weight: bold;">ByteDance</p></li>
       <li><a target="_blank" rel="sponsored" href="http://cloudera.com/"><img src="images/cloudera-gold.png"/></a><p style="text-align: center; font-weight: bold;">Cloudera</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.confluent.io/"><img src="images/confluent-gold.png"/></a><p style="text-align: center; font-weight: bold;">Confluent</p></li>
       <li><a target="_blank" rel="sponsored" href="http://ibm.com/"><img src="images/ibm.png"/></a><p style="text-align: center; font-weight: bold;">IBM</p></li>
