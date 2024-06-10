@@ -13,11 +13,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: preview/ghabuild
-      - uses: apache/infrastructure-actions/pelican@main
+      - uses: apache/infrastructure-actions/pelican@fatal # Temp TEST
         with:
           destination: 'preview/ghabuild-staging'
-          # gfm: 'true'
-          # tempdir: '../output.tmp'
-          version: 4.9.1
-      - name: pips
-        run: pip list
