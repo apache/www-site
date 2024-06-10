@@ -12,7 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # must agree with branches above and be compatible with destination below
           ref: preview/ghabuild
-      - uses: apache/infrastructure-actions/pelican@fatal # Temp TEST
+      - uses: apache/infrastructure-actions/pelican@main
         with:
+          # must be compatible with checkout/ref above
           destination: 'preview/ghabuild-staging'
