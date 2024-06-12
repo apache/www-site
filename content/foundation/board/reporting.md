@@ -316,7 +316,7 @@ The [board meeting][6] typically follows this pattern:
      reports.
  11. The Secretary sends any comments on your report by directors to your project's private@ list 
      shortly after the meeting concludes.  This gives you brief feedback 
-     from the meeting, and a chance to enage with the board either to answer questions 
+     from the meeting, and a chance to engage with the board either to answer questions 
      or to ask for advice.  If the board has questions for your project, [reply-all and answer them][8].
  12. Reports are published as part of the minutes, when approved in the subsequent monthly meeting of the
      Board of Directors.
