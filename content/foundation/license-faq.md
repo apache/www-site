@@ -163,6 +163,14 @@ as they cause confusion.
 
 Creating a new license is a non-trivial task. If you do that we recommend that you get your own legal advice.
 
+Some modifications are trivial or purely cosmetic in nature and do not alter the
+license in any meaningful way. In such cases, the result would still be considered
+the Apache License, and you do not need to change the name in these cases. Using
+"https:" for the URL in the license header instead of "http:", or changing the font
+or line spacing to make the license more readable, are examples of such changes. If
+you are uncertain whether your changes are trivial, you should seek your own legal
+advice.
+
 ## I've made improvements to the Apache code; may I distribute the modified result?  {#Distribute-changes}
 
 Absolutely -- subject to the [terms of the Apache license](/licenses/LICENSE-2.0#redistribution), 
