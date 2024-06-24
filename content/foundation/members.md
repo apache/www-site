@@ -339,6 +339,7 @@ This table shows current and emeritus members who have manually added themselves
 | piergiorgio | [Piergiorgio Lucidi](https://www.open4dev.com) | [ManifoldCF](http://manifoldcf.apache.org/) , [ComDev](https://community.apache.org/)|
 | pietsch | Joerg Pietschmann |
 | pono | [Daniel Pono Takamori](https://multivariatepolynomial.xyz) | [infrastructure](https://infra.apache.org) |
+| potiuk | [Jarek Potiuk](https://potiuk.com) | [Airflow](https://airflow.apache.org) |
 | pottlinger | Philipp Ottlinger | [Creadur](https://creadur.apache.org) |
 | pquerna | [Paul Querna](http://paul.querna.org/) |
 | proyal | [Peter Royal](http://fotap.org/~osi) |
