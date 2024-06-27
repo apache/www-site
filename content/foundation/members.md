@@ -593,7 +593,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | jeremias | [Jeremias Märki](http://www.jeremias-maerki.ch) | [XML Graphics](http://xmlgraphics.apache.org/) ; [FOP](http://xmlgraphics.apache.org/fop/) ; [Jakarta Commons IO](http://jakarta.apache.org/commons/io/)|
 | jeremy | [Jeremy Quinn](http://www.fiveone.org) | [Cocoon](http://cocoon.apache.org/)|
 | jgallacher | Jim Gallacher |
-| jgray | Jonathan Gray |
+| jgray | Andrea Gray |
 | jhunter | Jason Hunter | [Jakarta](http://jakarta.apache.org/) , JCP|
 | jimw | [Jim Winstead](http://trainedmonkey.com/) |
 | jm | [Justin Mason](http://jmason.org/) | [SpamAssassin](http://spamassassin.apache.org/) ; infrastructure|
