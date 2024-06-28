@@ -208,7 +208,7 @@ This table shows current and emeritus members who have manually added themselves
 | jcorvel | Johan Corveleyn | [Subversion](http://subversion.apache.org/) |
 | jeagles | Jonathan Eagles | [Hadoop](http://hadoop.apache.org) ; [Tez](http://tez.apache.org/) |
 | jerenkrantz | [Justin Erenkrantz](http://www.erenkrantz.com/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [commons](http://commons.apache.org/) , prc , infrastructure|
-| jerpelea | Alin Jerpelea | [NuttX RTOS] (https://nuttx.apache.org/) |
+| jerpelea | Alin Jerpelea | [NuttX RTOS](https://nuttx.apache.org/) |
 | jerrytan | Jerry Tan (Tanzhongyi) | brpc |
 | jesus | Theo Schlossnagle |
 | jfarrell | Jake Farrell |  [Thrift](http://thrift.apache.org) |
