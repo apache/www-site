@@ -317,6 +317,34 @@ describe a [project](#Project) with low levels of activity.
 
 </dd>
 
+<dt>Incubator {#Incubator}</dt>
+
+<dd>
+
+[The Incubator](https://incubator.apache.org/) provides services to
+projects which want to enter the ASF.
+
+It helps those incoming projects (called ["podlings"](#Podling)) adopt
+the Apache style of governance and operation and guides them to the ASF
+services available to our projects so they can become top-level
+ASF projects (["TLPs"](#TLP)).
+
+</dd>
+
+<dt>IPMC {#IPMC}</dt>
+
+<dd>
+
+Incubator [Project Management Committee](#PMC).
+
+Since the Apache Incubator is also a top-level ASF project, it has its own
+PMC as well.
+
+Members of the IPMC can be referred to as ["MIPMC"](#MIPMC). They can acts as
+a specific [podling's](#Podling) [mentor](#Mentor).
+
+</dd>
+
 <dt>Karma  {#Karma}</dt>
 
 <dd>
@@ -368,6 +396,18 @@ process](voting.html).
 
 </dd>
 
+<dt>Mentor  {#Mentor}</dt>
+
+<dd>
+
+Typically, it refers to the mentors of [podlings](#Podling).
+
+The [Incubator](#Incubator) delegates a few mentors for each podling to
+act as liaisons with the various ASF teams: [Incubator PMC](#IPMC), Infrastructure team,
+etc., and facilitate the podling’s growth and operations.
+
+</dd>
+
 <dt>Member  {#Member}</dt>
 
 <dd>
@@ -411,6 +451,33 @@ philosophy. As it has been put, 'the more you do the more you are
 allowed to do.' As a person acquires merit, their stature in the
 [community](#Community) and (to a certain extent) the weight
 given to their opinions grow.
+
+</dd>
+
+<dt>MIPMC  {#MIPMC}</dt>
+
+<dd>
+
+Member of the [Incubator Project Management Committee](#IPMC). A specific person
+who participate in the formal oversight of the [Incubator](#Incubator).
+
+</dd>
+
+<dt>MPPMC  {#MPPMC}</dt>
+
+<dd>
+
+Member of [Podling Project Management Committee](#PPMC). A specific person
+who participate in the formal oversight of a [podling](#Podling).
+
+</dd>
+
+<dt>MPMC  {#MPMC}</dt>
+
+<dd>
+
+Member of [Project Management Committee](#PMC). A specific person
+who participate in the formal oversight of a [project](#Project).
 
 </dd>
 
@@ -492,7 +559,8 @@ legal protections and responsibilities implied. See the
 [Bylaws](bylaws.html#6.3).
 
 Avoid referring to a member of a PMC as "a PMC", as it can cause confusion about 
-whether you are talking about the group or an individual.
+whether you are talking about the group or an individual. Instead, you can use
+["MPMC"](#MPMC) to refer to a member of a PMC.
 
 </dd>
 
@@ -503,6 +571,20 @@ whether you are talking about the group or an individual.
 A [codebase](#Codebase) and its [community](#Community) while in the
 process of being incubated. See the description of the [Incubation
 process](http://incubator.apache.org/incubation/Process_Description.html).
+
+</dd>
+
+<dt>PPMC  {#PPMC}</dt>
+
+<dd>
+
+[Podling Project Management Committee](#PPMC), the group of people with formal
+oversight of a [podling](#Podling).
+
+PPMC doesn't have a chair. It runs under the oversight of [IPMC](#IPMC),
+espeically the [mentors](#Mentors) of the podling.
+
+Members of a PPMC can be referred to as ["MPPMC"](#MPPMC).
 
 </dd>
 
