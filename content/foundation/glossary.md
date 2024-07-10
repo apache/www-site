@@ -340,8 +340,7 @@ Incubator [Project Management Committee](#PMC).
 Since the Apache Incubator is also a top-level ASF project, it has its own
 PMC as well.
 
-Members of the IPMC can be referred to as ["MIPMC"](#MIPMC). They can acts as
-a specific [podling's](#Podling) [mentor](#Mentor).
+Members of the IPMC can acts as a [podling's](#Podling) [mentor](#Mentor).
 
 </dd>
 
@@ -400,7 +399,7 @@ process](voting.html).
 
 <dd>
 
-Typically, it refers to the mentors of [podlings](#Podling).
+Also called 'incubation mentors'.
 
 The [Incubator](#Incubator) delegates a few mentors for each podling to
 act as liaisons with the various ASF teams: [Incubator PMC](#IPMC), Infrastructure team,
@@ -451,33 +450,6 @@ philosophy. As it has been put, 'the more you do the more you are
 allowed to do.' As a person acquires merit, their stature in the
 [community](#Community) and (to a certain extent) the weight
 given to their opinions grow.
-
-</dd>
-
-<dt>MIPMC  {#MIPMC}</dt>
-
-<dd>
-
-Member of the [Incubator Project Management Committee](#IPMC). A specific person
-who participate in the formal oversight of the [Incubator](#Incubator).
-
-</dd>
-
-<dt>MPPMC  {#MPPMC}</dt>
-
-<dd>
-
-Member of [Podling Project Management Committee](#PPMC). A specific person
-who participate in the formal oversight of a [podling](#Podling).
-
-</dd>
-
-<dt>MPMC  {#MPMC}</dt>
-
-<dd>
-
-Member of [Project Management Committee](#PMC). A specific person
-who participate in the formal oversight of a [project](#Project).
 
 </dd>
 
@@ -559,8 +531,7 @@ legal protections and responsibilities implied. See the
 [Bylaws](bylaws.html#6.3).
 
 Avoid referring to a member of a PMC as "a PMC", as it can cause confusion about 
-whether you are talking about the group or an individual. Instead, you can use
-["MPMC"](#MPMC) to refer to a member of a PMC.
+whether you are talking about the group or an individual.
 
 </dd>
 
@@ -583,8 +554,6 @@ oversight of a [podling](#Podling).
 
 PPMC doesn't have a chair. It runs under the oversight of [IPMC](#IPMC),
 espeically the [mentors](#Mentors) of the podling.
-
-Members of a PPMC can be referred to as ["MPPMC"](#MPPMC).
 
 </dd>
 
