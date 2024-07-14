@@ -317,6 +317,33 @@ describe a [project](#Project) with low levels of activity.
 
 </dd>
 
+<dt>Incubator {#Incubator}</dt>
+
+<dd>
+
+[The Incubator](https://incubator.apache.org/) provides services to
+projects which want to enter the ASF.
+
+It helps those incoming projects (called ["podlings"](#Podling)) adopt
+the Apache style of governance and operation and guides them to the ASF
+services available to our projects so they can become top-level
+ASF projects (["TLPs"](#TLP)).
+
+</dd>
+
+<dt>IPMC {#IPMC}</dt>
+
+<dd>
+
+Incubator [Project Management Committee](#PMC).
+
+Since the Apache Incubator is also a top-level ASF project, it has its own
+PMC as well.
+
+Members of the IPMC can acts as a [podling's](#Podling) [mentor](#Mentor).
+
+</dd>
+
 <dt>Karma  {#Karma}</dt>
 
 <dd>
@@ -365,6 +392,18 @@ votes.) Note that in votes requiring majority approval a -1 vote is
 simply a vote against, **not** a [veto](#Veto). Compare
 [Consensus Approval](#ConsensusApproval). See also the description of the [voting
 process](voting.html).
+
+</dd>
+
+<dt>Mentor  {#Mentor}</dt>
+
+<dd>
+
+Also called 'incubation mentors'.
+
+The [Incubator](#Incubator) delegates a few mentors for each podling to
+act as liaisons with the various ASF teams: [Incubator PMC](#IPMC), Infrastructure team,
+etc., and facilitate the podling’s growth and operations.
 
 </dd>
 
@@ -503,6 +542,18 @@ whether you are talking about the group or an individual.
 A [codebase](#Codebase) and its [community](#Community) while in the
 process of being incubated. See the description of the [Incubation
 process](http://incubator.apache.org/incubation/Process_Description.html).
+
+</dd>
+
+<dt>PPMC  {#PPMC}</dt>
+
+<dd>
+
+[Podling Project Management Committee](#PPMC), the group of people with formal
+oversight of a [podling](#Podling).
+
+PPMC doesn't have a chair. It runs under the oversight of [IPMC](#IPMC),
+espeically the [mentors](#Mentors) of the podling.
 
 </dd>
 
