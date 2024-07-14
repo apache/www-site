@@ -36,7 +36,7 @@ ASF-wide policies, as well as for providing various services to all Apache proje
 
 * Project discussions SHOULD use normal ASF-hosted dev@, user@, and similar mailing lists.
 
-* Projects MAY use a documented consensus process or a VOTE for any [new committers](/dev/pmc.html#newcommitter) or [PMC members](/dev/pmc.html#newpmc), and carefully follow policies for recording ICLAs and granting access.
+* Projects MAY use a documented consensus process or a VOTE for any [new committers](/dev/pmc.html#newcommitter) or [PMC members](/dev/pmc.html#newpmcmember), and carefully follow policies for recording ICLAs and granting access.
 	
 # Technical  {#technical}
 
