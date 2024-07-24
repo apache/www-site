@@ -153,7 +153,7 @@ chair should consider each of these questions when writing a report.
      A healthy project will often be working towards a common goal, or have a shared
      understanding of what is being done next - even if individual contributors have their
      own "itches". What are the main features being worked on? What releases are planned?
-     Are there any specific efforts or branches of development under way? Provide a summary, without going depply into the technical details.
+     Are there any specific efforts or branches of development under way? Provide a summary, without going deeply into the technical details.
      
      Aside from the report, if the project is planning major announcements, get in touch with the Marketing and Publicity Committee at `press@apache.org` to coordinate announcements and press releases.
      
@@ -315,7 +315,7 @@ The [board meeting][6] typically follows this pattern:
      outcomes.
   9. Any project reports that were not approved or were missing are added to the reminder list for the
      subsequent month.
- 10. Shepherds reach out to project chairs with specific action items arising in the meeting in reponse to their
+ 10. Shepherds reach out to project chairs with specific action items arising in the meeting in response to their
      reports.
  11. The Secretary sends any comments on your report by directors to your project's private@ list 
      shortly after the meeting concludes.  This gives you brief feedback 
