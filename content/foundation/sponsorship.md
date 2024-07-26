@@ -28,13 +28,11 @@ There are four sponsorship levels, defined by donation amount and in-return bene
   </ul>
 </li>
 <li>Use of the ASF Platinum Sponsorship logo for your site</li>
-<li>Joint press release with the ASF</li>
-<li>Listed in ASF Quarterly + Annual Reports</li>
-<li>Listed in all ASF press releases</li>
-<li>New: Sponsor co-authored Case Study</li>
-<li>New: “Success At Apache” Guest Post</li>
-<li>New: Media testimonial placement + spokesperson opportunities</li>
-<li>New: Dedicated Sponsorship Ambassador</li>
+<li>Joint press release or blog post with the ASF</li>
+<li>Listed in ASF Annual Reports</li>
+<li>Sponsor co-authored Case Study</li>
+<li>“Success At Apache” Guest Post</li>
+<li>Dedicated Sponsorship Ambassador</li>
 </ul>
 
 </td>
@@ -53,11 +51,9 @@ There are four sponsorship levels, defined by donation amount and in-return bene
 </li>
 <li>Use of the ASF Gold Sponsorship logo for your site</li>
 <li>Personal quote for your press release</li>
-<li>Listed in ASF Quarterly + Annual Reports</li>
-<li>Listed in all ASF press releases</li>
-<li>New: Sponsor co-authored Case Study</li>
-<li>New: Media testimonial placement + spokesperson opportunities</li>
-<li>New: Dedicated Sponsorship Ambassador</li>
+<li>Listed in ASF Annual Reports</li>
+<li>Sponsor co-authored Case Study</li>
+<li>Dedicated Sponsorship Ambassador</li>
 </ul>
 
 </td></tr>
@@ -76,9 +72,8 @@ There are four sponsorship levels, defined by donation amount and in-return bene
   </ul>
 </li>
 <li>Use of the ASF Silver Sponsorship logo for your site</li>
-<li>Listed in ASF Quarterly + Annual Reports</li>
-<li>Listed in all ASF press releases</li>
-<li>New: Dedicated ASF Ambassador</li>
+<li>Listed in ASF Annual Reports</li>
+<li>Dedicated ASF Ambassador</li>
 </ul>
 
 </td>
@@ -96,7 +91,7 @@ There are four sponsorship levels, defined by donation amount and in-return bene
   </ul>
 </li>
 <li>Use of the ASF Bronze Sponsorship logo for your site</li>
-<li>Listed in ASF Quarterly + Annual Reports</li>
+<li>Listed in ASF Annual Reports</li>
 </ul>
 </td>
 </tr>
