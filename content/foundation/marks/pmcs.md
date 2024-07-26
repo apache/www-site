@@ -246,7 +246,7 @@ graphic or immediately adjacent to it. For pages that include the project
 logo on them, ensure you mention "... and the Project logo are
 trademarks..." in the attribution.
 
-  - Projects may choose to use the Apache feather in their logo. For details on the proper [Apache visual identity and feather graphics][3],
+  - Projects must not use the Apache feather in their logo. For details on the proper [Apache visual identity and feather graphics][3],
 please work with press@.
 
 # Powered By... Logos  {#poweredby}
