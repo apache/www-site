@@ -372,6 +372,7 @@ This table shows current and emeritus members who have manually added themselves
 | rnewson | Robert Newson | [CouchDB](http://couchdb.apache.org) |
 | rohini | Rohini Palaniswamy | [Pig](http://pig.apache.org), [Tez](http://tez.apache.org), [Oozie](http://oozie.apache.org) |
 | rohit | Rohit Yadav | [CloudStack](https://cloudstack.apache.org)|
+| rohithsamudrala | Rohith Samudrala | 
 | rony | Rony G. Flatscher | [Jakarta](http://jakarta.apache.org/)  |
 | rotty3000 | Raymond Augé | [Aries](https://aries.apache.org) ; [Felix](https://felix.apache.org) ; [Geronimo](https://geronimo.apache.org/); [Tomcat](https://tomcat.apache.org/) |
 | rpluem | [Rüdiger Plüm](mailto:rpluem@apache.org) |
