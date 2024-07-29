@@ -451,7 +451,6 @@ This table shows current and emeritus members who have manually added themselves
 | twilliams | [Tim Williams](http://williamstw.blogspot.com) |
 | uli | Ulrich Stärk |
 | umamahesh | [Uma Maheswara Rao G](https://home.apache.org/~umamahesh/umamahesh.html) | [Hadoop](http://hadoop.apache.org); [BookKeeper](http://bookkeeper.apache.org) |
-| upayavira | [Upayavira](http://www.odoko.com) | [Lucene](http://lucene.apache.org) ; [Cocoon](http://cocoon.apache.org/) ; infrastructure|
 | uschindler | [Uwe Schindler](http://www.thetaphi.de/) | [Lucene](//lucene.apache.org/) , [POI](http://poi.apache.org/) |
 | vanto | [Tammo van Lessen](http://www.taval.de/) | [ODE](http://ode.apache.org)|
 | veithen | [Andreas Veithen](http://veithen.github.io) |
@@ -713,6 +712,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | twl | [Theodore W. Leung](http://www.sauria.com/~twl) | [XML](http://xml.apache.org) ; ws ; [incubator](http://incubator.apache.org/)|
 | ugo | [Ugo Cei](http://agylen.com/) | [Cocoon](http://cocoon.apache.org/) , [POI](http://poi.apache.org/)|
 | uncled | David Nuescheler |
+| upayavira | [Upayavira](http://www.odoko.com) | [Lucene](http://lucene.apache.org) ; [Cocoon](http://cocoon.apache.org/) ; infrastructure|
 | vhardy | Vincent Hardy |
 | vmassol | Vincent Massol |
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|
