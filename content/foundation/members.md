@@ -92,7 +92,6 @@ This table shows current and emeritus members who have manually added themselves
 | chrisg | Christian Geisert | [XML Graphics](http://xmlgraphics.apache.org/) , [FOP](http://xmlgraphics.apache.org/fop/)|
 | christ | Chris Thistlethwaite | Infrastructure , [Warble (incubating)](http://warble.apache.org/) |
 | chtompki | [Rob Tompkins](http://www.robtompkins.com) | [Commons](http://commons.apache.org) |
-| claude | Claude N. Warren, Jr. | [Jena](http://jena.apache.org), [Commons Collections](https://commons.apache.org/proper/commons-collections/), [RAT](https://creadur.apache.org/rat/), [Incubator](https://incubator.apache.org), [Pekko (incubating)](https://pekko.apache.org/), [Cassandra](https://cassandra.apache.org), [Community over Code - EU (Formerly ApacheCon)](https://eu.communityovercode.org/) |
 | clr | Craig L Russell |  [JDO](http://db.apache.org/jdo) ; [Incubator](http://incubator.apache.org/) ; [OpenJPA](http://openjpa.apache.org/)|
 | cmccabe | Colin P. McCabe |
 | cmpilato | C. Michael Pilato |
@@ -529,6 +528,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | chirino | Hiram Chirino |
 | cholet | Eric Cholet |
 | chuck | Chuck Murcko |
+| claude | Claude N. Warren, Jr. | [Jena](http://jena.apache.org), [Commons Collections](https://commons.apache.org/proper/commons-collections/), [RAT](https://creadur.apache.org/rat/), [Incubator](https://incubator.apache.org), [Pekko (incubating)](https://pekko.apache.org/), [Cassandra](https://cassandra.apache.org), [Community over Code - EU (Formerly ApacheCon)](https://eu.communityovercode.org/) |
 | cliff | Cliff Skolnick | [httpd](http://httpd.apache.org/)|
 | cliffs | Cliff Schmidt |
 | cmueller | Christian Müller | [Camel](http://camel.apache.org) |
