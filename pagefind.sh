@@ -51,4 +51,3 @@ fi
 
 echo "Running pagefind on ${PELICAN_OUTPUT_PATH}"
 ${PAGEFIND} --site ${PELICAN_OUTPUT_PATH} --output-subdir "_pagefind"
-
