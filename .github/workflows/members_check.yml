@@ -1,0 +1,20 @@
+name: Check members.md listings
+on:
+  push:
+    paths:
+      - 'content/foundation/members.md'
+      - 'members_check.py'
+      - '.github/workflows/members_check.yml'
+  pull_request:
+    paths:
+      - 'content/foundation/members.md'
+      - 'members_check.py'
+      - '.github/workflows/members_check.yml'
+  workflow_dispatch:
+jobs:
+  members-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 members_check.py

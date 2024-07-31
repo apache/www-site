@@ -153,7 +153,7 @@ chair should consider each of these questions when writing a report.
      A healthy project will often be working towards a common goal, or have a shared
      understanding of what is being done next - even if individual contributors have their
      own "itches". What are the main features being worked on? What releases are planned?
-     Are there any specific efforts or branches of development under way? Provide a summary, without going depply into the technical details.
+     Are there any specific efforts or branches of development under way? Provide a summary, without going deeply into the technical details.
      
      Aside from the report, if the project is planning major announcements, get in touch with the Marketing and Publicity Committee at `press@apache.org` to coordinate announcements and press releases.
      
@@ -217,7 +217,10 @@ chair should consider each of these questions when writing a report.
  
  - Do not use non-Apache URL shorteners.
  
-      If you have a long URL you wish to include in your report, **only** use the `https://s.apache.org/` URL shortener (Apache login required) to provide a shorter link. Apache cannot control how long an external URL shortener will exist, or will maintain a given shortened URL.   
+      If you have a long URL you wish to include in your report, **only** use the `https://s.apache.org/` URL shortener (Apache login required) to provide a shorter link. Apache cannot control how long an external URL shortener will exist, or will maintain a given shortened URL.
+      If you mention a mailing list thread, **only** use the
+      `https://lists.apache.org` URL to that mailing list thread, for
+      the same reason.
 
 - There's no need to include details about committer affiliations in a report, unless the information points to an issue around diversity which may be included privately.
 
@@ -312,11 +315,11 @@ The [board meeting][6] typically follows this pattern:
      outcomes.
   9. Any project reports that were not approved or were missing are added to the reminder list for the
      subsequent month.
- 10. Shepherds reach out to project chairs with specific action items arising in the meeting in reponse to their
+ 10. Shepherds reach out to project chairs with specific action items arising in the meeting in response to their
      reports.
  11. The Secretary sends any comments on your report by directors to your project's private@ list 
      shortly after the meeting concludes.  This gives you brief feedback 
-     from the meeting, and a chance to enage with the board either to answer questions 
+     from the meeting, and a chance to engage with the board either to answer questions 
      or to ask for advice.  If the board has questions for your project, [reply-all and answer them][8].
  12. Reports are published as part of the minutes, when approved in the subsequent monthly meeting of the
      Board of Directors.

@@ -158,7 +158,7 @@ the new committer has [karma](#newcommitter) (access) to the project repositorie
 ### Send NOTICEs and followup when adding PMC members
 The chair is responsible for sending the NOTICE email to the board, then
 updating [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)
-and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmc).
+and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmcmember).
 
 ### Maintain ASF records on the PMC roster
 Maintain information about your PMC's composition in the SVN "committers" repository
@@ -284,7 +284,7 @@ See also [why would a project move to the Attic?](pmc.html#move-to-attic), above
 
 ## PMC membership management  {#pmcmembers}
 
-### How to add a PMC member  {#newpmc}
+### How to add a PMC member  {#newpmcmember}
 
 The usual process for adding a member to a PMC is to:
 

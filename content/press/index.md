@@ -30,15 +30,6 @@ The [publicity/brand/communications guidelines created by Databricks](https://ap
 ## Contact Us
 press@apache.org 
 
-## FAQ
-**Can I refer to an individual, organization or community as “founding” an ASF project?** <br>
-Many projects enter the Apache Incubator with a recognized individual founder, group of founders, or corporate entity where the project originated and/or which was responsible for its development/administration. 
-
-The ASF is vendor neutral: all ASF projects are overseen by their respective Project Management Committees (PMCs), who guide the project's day-to-day operations. Once a project comes to the ASF, its development and oversight is the responsibility of the project’s PMC and community. 
-
-There are no "owners" of any Apache project. Individuals and companies who founded projects that are now under the auspices of the ASF may be referred to as "original creator of Apache Project Name" or "original developer of Apache Project Name." Examples: 
-* **Individual’s title.** "Individual’s Name, Apache Member (or Committer) and original developer of Apache Project Name." 
-* **Company whose founders or employees are the original creators of an Apache project.** "Company Name, founded by the original creators of Apache Project Name" or "several Company Name team members are the original developers of Apache Project Name."
 
 
 

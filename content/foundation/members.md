@@ -92,7 +92,6 @@ This table shows current and emeritus members who have manually added themselves
 | chrisg | Christian Geisert | [XML Graphics](http://xmlgraphics.apache.org/) , [FOP](http://xmlgraphics.apache.org/fop/)|
 | christ | Chris Thistlethwaite | Infrastructure , [Warble (incubating)](http://warble.apache.org/) |
 | chtompki | [Rob Tompkins](http://www.robtompkins.com) | [Commons](http://commons.apache.org) |
-| claude | Claude N. Warren, Jr. | [Jena](http://jena.apache.org), [Commons Collections](https://commons.apache.org/proper/commons-collections/), [RAT](https://creadur.apache.org/rat/), [Incubator](https://incubator.apache.org), [Pekko (incubating)](https://pekko.apache.org/), [Cassandra](https://cassandra.apache.org), [Community over Code - EU (Formerly ApacheCon)](https://eu.communityovercode.org/) |
 | clr | Craig L Russell |  [JDO](http://db.apache.org/jdo) ; [Incubator](http://incubator.apache.org/) ; [OpenJPA](http://openjpa.apache.org/)|
 | cmccabe | Colin P. McCabe |
 | cmpilato | C. Michael Pilato |
@@ -208,6 +207,7 @@ This table shows current and emeritus members who have manually added themselves
 | jcorvel | Johan Corveleyn | [Subversion](http://subversion.apache.org/) |
 | jeagles | Jonathan Eagles | [Hadoop](http://hadoop.apache.org) ; [Tez](http://tez.apache.org/) |
 | jerenkrantz | [Justin Erenkrantz](http://www.erenkrantz.com/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [commons](http://commons.apache.org/) , prc , infrastructure|
+| jerpelea | Alin Jerpelea | [NuttX RTOS](https://nuttx.apache.org/) |
 | jerrytan | Jerry Tan (Tanzhongyi) | brpc |
 | jesus | Theo Schlossnagle |
 | jfarrell | Jake Farrell |  [Thrift](http://thrift.apache.org) |
@@ -275,7 +275,6 @@ This table shows current and emeritus members who have manually added themselves
 | luc | Luc Maisonobe | [commons](http://commons.apache.org/)|
 | luke1410 | [Stefan Hett](http://www.luke1410.de/) | [Subversion](https://subversion.apache.org/) ; [APR](https://apr.apache.org/) |
 | lukehan | Luke Han | [Kylin](http://kylin.apache.org)|
-| luot | Lukas Ott | [PLC4X](https://plc4x.apache.org/) ;  [Streampipes](https://streampipes.apache.org/) |
 | mads | [Mads Toftum](http://www.toftum.org/) | [httpd-docs](http://httpd.apache.org/docs-project/)|
 | manoj | [Manoj Kasichainula](http://www.io.com/~manojk/) | [httpd](http://httpd.apache.org/)|
 | marcelk | Marcel Kinard | [Cordova](http://cordova.apache.org/) |
@@ -315,6 +314,7 @@ This table shows current and emeritus members who have manually added themselves
 | ngn | [Niklas Gustavsson](http://protocol7.com) | [MINA](http://mina.apache.org)|
 | niallp | Niall Pemberton | [Jakarta](http://jakarta.apache.org/) ; [Struts](https://struts.apache.org/)|
 | nick | Nick Burch |
+| nicoloboschi | Nicolò Boschi | [BookKeeper](https://bookkeeper.apache.org), [Pulsar](https://pulsar.apache.org) |
 | ningjiang | Willem Ning Jiang |[activemq](http://activemq.apache.org/);[camel](http://camel.apache.org);[cxf](http://cxf.apache.org); [doris](http://doris.apache.org); [iotdb](http://iotdb.apache.org); [rocketmq](http://rocketmq.apache.org); [servicecomb](http://servicecomb.apache.org); [servicemix](http://servicemix.apache.org); [shardingsphere](http://shardingsphere.apache.org); [skywalking](http://skywalking.apache.org); [weex](http://weex.apache.org); [zipkin](http://zipkin.apache.org)|
 | niq | [Nick Kew](http://home.apache.org/~niq/) | [APR](http://apr.apache.org/) ; [httpd](http://httpd.apache.org/)|
 | noel | Noel J. Bergman | [ApacheCon](http://www.apachecon.com/) , [incubator](http://incubator.apache.org/) , infrastructure , [James](http://james.apache.org/)|
@@ -327,6 +327,7 @@ This table shows current and emeritus members who have manually added themselves
 | olegk | Oleg Kalnichevski |
 | omalley | [Owen O'Malley](http://home.apache.org/~omalley) |
 | orlikowski | Victor J. Orlikowski | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; BSF|
+| otluk | Lukas Ott | [PLC4X](https://plc4x.apache.org/) ;  [Streampipes](https://streampipes.apache.org/) |
 | ovilia | Zhang Wenli | [ECharts](https://echarts.apache.org/) |
 | painter | Jeffery Painter | [Turbine](https://turbine.apache.org/) ; [Torque](https://db.apache.org/torque)|
 | paulirwin | [Paul Irwin](https://github.com/paulirwin/) | [Lucene.NET](https://lucenenet.apache.org/) |
@@ -339,6 +340,7 @@ This table shows current and emeritus members who have manually added themselves
 | piergiorgio | [Piergiorgio Lucidi](https://www.open4dev.com) | [ManifoldCF](http://manifoldcf.apache.org/) , [ComDev](https://community.apache.org/)|
 | pietsch | Joerg Pietschmann |
 | pono | [Daniel Pono Takamori](https://multivariatepolynomial.xyz) | [infrastructure](https://infra.apache.org) |
+| potiuk | [Jarek Potiuk](https://potiuk.com) | [Airflow](https://airflow.apache.org) |
 | pottlinger | Philipp Ottlinger | [Creadur](https://creadur.apache.org) |
 | pquerna | [Paul Querna](http://paul.querna.org/) |
 | proyal | [Peter Royal](http://fotap.org/~osi) |
@@ -448,7 +450,6 @@ This table shows current and emeritus members who have manually added themselves
 | twilliams | [Tim Williams](http://williamstw.blogspot.com) |
 | uli | Ulrich Stärk |
 | umamahesh | [Uma Maheswara Rao G](https://home.apache.org/~umamahesh/umamahesh.html) | [Hadoop](http://hadoop.apache.org); [BookKeeper](http://bookkeeper.apache.org) |
-| upayavira | [Upayavira](http://www.odoko.com) | [Lucene](http://lucene.apache.org) ; [Cocoon](http://cocoon.apache.org/) ; infrastructure|
 | uschindler | [Uwe Schindler](http://www.thetaphi.de/) | [Lucene](//lucene.apache.org/) , [POI](http://poi.apache.org/) |
 | vanto | [Tammo van Lessen](http://www.taval.de/) | [ODE](http://ode.apache.org)|
 | veithen | [Andreas Veithen](http://veithen.github.io) |
@@ -527,6 +528,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | chirino | Hiram Chirino |
 | cholet | Eric Cholet |
 | chuck | Chuck Murcko |
+| claude | Claude N. Warren, Jr. | [Jena](http://jena.apache.org), [Commons Collections](https://commons.apache.org/proper/commons-collections/), [RAT](https://creadur.apache.org/rat/), [Incubator](https://incubator.apache.org), [Pekko (incubating)](https://pekko.apache.org/), [Cassandra](https://cassandra.apache.org), [Community over Code - EU (Formerly ApacheCon)](https://eu.communityovercode.org/) |
 | cliff | Cliff Skolnick | [httpd](http://httpd.apache.org/)|
 | cliffs | Cliff Schmidt |
 | cmueller | Christian Müller | [Camel](http://camel.apache.org) |
@@ -710,6 +712,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | twl | [Theodore W. Leung](http://www.sauria.com/~twl) | [XML](http://xml.apache.org) ; ws ; [incubator](http://incubator.apache.org/)|
 | ugo | [Ugo Cei](http://agylen.com/) | [Cocoon](http://cocoon.apache.org/) , [POI](http://poi.apache.org/)|
 | uncled | David Nuescheler |
+| upayavira | [Upayavira](http://www.odoko.com) | [Lucene](http://lucene.apache.org) ; [Cocoon](http://cocoon.apache.org/) ; infrastructure|
 | vhardy | Vincent Hardy |
 | vmassol | Vincent Massol |
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|

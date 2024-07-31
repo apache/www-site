@@ -32,7 +32,7 @@ and/or to the board.
 
   * Project discussions SHOULD use normal ASF-hosted dev@, user@, and similar mailing lists.
 
-  * Projects MAY use their own documented consensus process, or a VOTE, to decide on any [new committers](//www.apache.org/dev/pmc.html#newcommitter) or [PMC members](//www.apache.org/dev/pmc.html#newpmc).
+  * Projects MAY use their own documented consensus process, or a VOTE, to decide on any [new committers](//www.apache.org/dev/pmc.html#newcommitter) or [PMC members](//www.apache.org/dev/pmc.html#newpmcmember).
 
 ### Operate Independently And For The Public Good ([Board](https://whimsy.apache.org/foundation/orgchart/board))
 

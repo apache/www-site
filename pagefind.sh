@@ -28,8 +28,11 @@ set -e # fast exit (must be done after 'which' invocation)
 
 if [ -z "$PAGEFIND" ] # could not find pagefind
 then
-    PAGEFIND_VERSION='1.1.0'
-    PAGEFIND_HASH='b20d0b06b54eb2fba1e290245919376364584a456fb644e66eecdb67549b1cf2'
+    # PAGEFIND_VERSION='1.1.0'
+    # PAGEFIND_HASH='b20d0b06b54eb2fba1e290245919376364584a456fb644e66eecdb67549b1cf2'
+    # Revert to previous version, as 1.1.0 generates spurious differences
+    PAGEFIND_VERSION='1.0.4'
+    PAGEFIND_HASH='a3a1ecf1d6edd79551c8b98a863b20cbdd999316a6ca73e81e277a74449db886'
     echo "Download pagefind ${PAGEFIND_VERSION}"
     BINDIR=$(mktemp -d)
     TARGET=${BINDIR}/pagefind.tar.gz

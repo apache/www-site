@@ -60,7 +60,7 @@ accepts the offer of membership, the PMC chair may update the official roster
 of the members of that PMC. The process is designed to ensure that the board
 has explicit notification of all PMC changes. 
 
-For more details on the process, read [Adding a new PMC member](/dev/pmc.html#newpmc)
+For more details on the process, read [Adding a new PMC member](/dev/pmc.html#newpmcmember)
 
 For people leaving the PMC, read [A PMC member wishes to be resign/go emeritus. Now what?](/dev/pmc.html#emeritus)
 
