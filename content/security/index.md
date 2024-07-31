@@ -51,7 +51,7 @@ Issues not classed as security relevant:
 - "Clickjacking" on our domains
 - Directory listings.  These are deliberate and do not contain sensitive information
 - Systems that disclose the versions of the servers and software we use
-- Data that is publically accessible in our JIRA bug tracking system
+- Data that is publically accessible in our Jira bug tracking system
 
 ## Vulnerability Information
 
