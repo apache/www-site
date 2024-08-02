@@ -39,6 +39,20 @@ Please send one plain-text, unencrypted, email for each vulnerability you are re
 ask you to resubmit your report if you send it as an image, movie, HTML, or
 PDF attachment when you could as easily describe it with plain text.
 
+## Issues not considered as security vulnerabilities {#known-issues}
+
+These are things that we are well aware of, and have been reported to us many
+times, but we do not class as a security vulnerability.
+Please do not report them.
+
+Issues not classed as security relevant:
+
+- A lack of DMARC or SPF record on our domains
+- "Clickjacking" on our domains
+- Directory listings.  These are deliberate and do not contain sensitive information
+- Systems that disclose the versions of the servers and software we use
+- Data that is publically accessible in our Jira bug tracking system
+
 ## Vulnerability Information
 
 You can usually find information on known vulnerabilities for an Apache project on the project's web pages. For convenience, consult the [list of
