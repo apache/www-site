@@ -4,6 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # How can we help?
 
 <a class="btn btn-default mx-10" href="#software" role="button">Software</a>
+<a class="btn btn-default mx-10" href="#software" role="button">Security</a>
 <a class="btn btn-default mx-10" href="#legal" role="button">Legal</a>
 <a class="btn btn-default mx-10" href="#foundation" role="button">Foundation</a>
 <a class="btn btn-default mx-10" href="#members" role="button">Members</a>
@@ -53,6 +54,12 @@ You may read our [formal Trademark Policy](/foundation/marks/) as an introductio
    [Legal Affairs Committee](/legal/).
 
 We address specific questions about trademarks of The Apache Software Foundation on the [Trademark Policy page](/foundation/marks/).
+
+## Security
+
+### How do I report a vulnerability?
+
+Visit [https://apache.org/security/](https://apache.org/security/) to learn how to report a security vulnerability.
 
 ## Foundation
 
