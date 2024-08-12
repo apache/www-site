@@ -696,6 +696,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | steven | Steven Gill | [Cordova](http://cordova.apache.org) |
 | stoddard | Bill Stoddard | [APR](http://apr.apache.org/) ; [httpd](http://httpd.apache.org/) ; bsf|
 | stsp | Stefan Sperling |
+| suehle | Ruth Suehle |
 | susie | Susan Wu |
 | sussman | Ben Collins-Sussman |
 | tandraschko | Thomas Andraschko | [DeltaSpike](https://deltaspike.apache.org/), [MyFaces](https://myfaces.apache.org/), [OpenWebBeans](https://openwebbeans.apache.org/), [TomEE](https://tomee.apache.org/), [BVal](https://bval.apache.org/)|
