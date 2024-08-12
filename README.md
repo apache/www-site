@@ -90,3 +90,6 @@ Commits to it will be staged at www-_your-asf-id_.staged.apache.org
 **Note:** the branch name must not include any "." characters,
 or browsers will refuse to display the site due to an invalid SSL certificate.
 The underscore character should not be used either, as it is disallowed in host names.
+
+## Contact Us
+For any questions or support, please reach out to us by visiting our contact page at [Apache Contact Us](https://www.apache.org/foundation/contact) page.
