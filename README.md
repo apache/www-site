@@ -90,3 +90,48 @@ Commits to it will be staged at www-_your-asf-id_.staged.apache.org
 **Note:** the branch name must not include any "." characters,
 or browsers will refuse to display the site due to an invalid SSL certificate.
 The underscore character should not be used either, as it is disallowed in host names.
+
+## Contact Us
+
+Before sending mail to the address below, make sure that the information on the [FAQ](https://www.apache.org/foundation/faq) doesn't already address your issue. If it is, the only response you'll receive is a pointer to that page.
+
+### Project Contacts
+
+All technical questions and questions about a specific ASF project should be addressed to the [appropriate project-specific mailing list](https://projects.apache.org/projects.html).
+
+### Security Contacts
+
+Visit the [ASF Security page](https://www.apache.org/security/) to learn how to report a security vulnerability.
+
+### Academic Researches
+
+To ensure that our communities are respected, and to make it easier for researchers to find the right information, our volunteers maintain a [Research Information Portal](https://apache.org/research/).
+
+## Apache Software Foundation Directory Structure
+
+**Purpose:**
+This directory contains essential contact information for various aspects of the Apache Software Foundation.
+
+| Inquiry | Contact |
+|---|---|
+| Technical Support | If you believe you’re experiencing a technical issue, visit the [Technical section of our FAQ](https://www.apache.org/foundation/faq) first before reaching out. |
+| Hosting a project with ASF | [Apache Incubator](https://incubator.apache.org/) |
+| Press and analyst inquiries | [Newsroom](https://www.apache.org/press/)  [press@apache.org](mailto:press@apache.org)|
+| Sponsorship or donation inquiries | [Foundation Sponsorship](https://www.apache.org/foundation/sponsorship.html) [Individual Supporters](https://www.apache.org/foundation/individual-supporters) [fundraising@apache.org](mailto:fundraising@apache.org) |
+| Trademarks or service marks including all Apache project names and logos | [Trademark Contacts](https://www.apache.org/foundation/marks/contact) |
+| Legal and Licensing | [Licensing FAQ](https://www.apache.org/foundation/license-faq.html) [Legal Affairs Committee](https://www.apache.org/legal/) |
+| Infrastructure | [Infrastructure Contact](https://infra.apache.org/contact.html) |
+| Website | Issues with a specific Apache project's website should go to that project's dev@ mailing list. For issues with the foundation top-level website apache.org or news.apache.org: [press@apache.org](mailto:press@apache.org) |
+| DMCA Designated Agent | [DMCA Agent](https://www.apache.org/legal/dmca.html) |
+| Exports | [Exports](https://www.apache.org/licenses/exports/) |
+
+### Mailing Address
+
+The Apache Software Foundation  
+1000 N West Street, Suite 1200  
+Wilmington, DE 19801  
+U.S.A.  
+
+
+**Important:** If you are not the [State of Delaware](https://www.apache.org/foundation/records/), a [sponsor](https://www.apache.org/foundation/sponsors), or a supplier, it is extremely likely that you should use one of the above email aliases instead of faxing or postal mail. Please read the first part of this page, and email [apache@apache.org](mailto:apache@apache.org) if in doubt.
+
