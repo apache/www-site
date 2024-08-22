@@ -123,12 +123,6 @@ Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank
 (see [notes](/dev/project-site.html#mail)).
     - For top-level/non-project mailing lists see [www.apache.org/mail/](/mail/) directory.
 
-## Pasting data to share with others  {#paste}
-
-Apache provides a paste bin service for committers to use at [https://paste.apache.org](https://paste.apache.org).
-
-Anyone can view the pastes (except those marked 'committers only'), but only committers are allowed to paste new data on the site.
-
 ## Apache URL Shortener Service  {#shorten}
 
 Infrastructure hosts the [s.apache.org URL shortening service](https://s.apache.org/) for our committers.  When including URLs in PMC reports, please use this service and not other URL shorteners.
