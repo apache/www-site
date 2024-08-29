@@ -421,6 +421,7 @@ This table shows current and emeritus members who have manually added themselves
 | stevenn | Steven Noels | [Cocoon](http://cocoon.apache.org/) ; [Forrest](http://xml.apache.org/forrest/)|
 | striker | Sander Striker | [APR](http://apr.apache.org/) ; [commons](http://commons.apache.org/) ; [httpd](http://httpd.apache.org/) ; [incubator](http://incubator.apache.org/) ; infrastructure|
 | struberg | Mark Struberg |
+| suehle | Ruth Suehle |
 | sunilg | Sunil Govindan | [Hadoop](https://hadoop.apache.org), [Submarine](https://submarine.apache.org), [YuniKorn](https://yunikorn.apache.org), [Sedona](https://sedona.apache.org) |
 | supun | Supun Kamburugamuva |
 | svogel | Sven Vogel | [CloudStack](http://cloudstack.apache.org) |
@@ -696,7 +697,6 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | steven | Steven Gill | [Cordova](http://cordova.apache.org) |
 | stoddard | Bill Stoddard | [APR](http://apr.apache.org/) ; [httpd](http://httpd.apache.org/) ; bsf|
 | stsp | Stefan Sperling |
-| suehle | Ruth Suehle |
 | susie | Susan Wu |
 | sussman | Ben Collins-Sussman |
 | tandraschko | Thomas Andraschko | [DeltaSpike](https://deltaspike.apache.org/), [MyFaces](https://myfaces.apache.org/), [OpenWebBeans](https://openwebbeans.apache.org/), [TomEE](https://tomee.apache.org/), [BVal](https://bval.apache.org/)|
