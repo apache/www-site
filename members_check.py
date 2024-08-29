@@ -61,15 +61,19 @@ def main():
             name = parts.pop(0).strip()
             if section == 'members':
                 if not availid in members:
-                    print(f"Not listed in members: {availid} {name} Status: {ex_members.get(availid, 'Unknown')}")
+                    if availid in ex_members:
+                        status = f"is listed in Whimsy with status '{ex_members.get(availid)}'"
+                    else:
+                        status = "was not found in Whimsy"
                     errors += 1
+                    print(f"'{availid}' ({name}) is listed in the 'members' section of `content/foundation/members.md`, but {status}")
             elif section == 'emeritus':
                 if availid != '?' and not availid in ex_members:
                     if availid in members:
-                        status = 'ASF Member'
+                        status = "is listed in Whimsy as an ASF Member"
                     else:
-                        status = 'Unknown'
-                    print(f"Not listed in ex_members: {availid} {name} Status: {status}")
+                        status = "was not found in Whimsy"
+                    print(f"'{availid}' ({name}) is listed in the 'emeritus' section of `content/foundation/members.md`, but {status}")
                     errors += 1
     if errors > 0:
         print(f"Detected {errors} error(s). ")
