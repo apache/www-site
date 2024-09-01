@@ -27,7 +27,7 @@ body as canonical.
 
 ### What standards do Apache projects implement?  {#projects}
 
-See [this](https://projects.apache.org/indexes/standards.html).
+This list is not currently available.
 
 ### How does Apache maintain the list of implemented standards?  {#projects-how-to}
 
