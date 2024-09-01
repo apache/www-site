@@ -20,7 +20,7 @@ Evolving from the original eight developers (collectively known as "the
 Apache Group") who contributed code enhancements to the NCSA daemon Web
 server, The ASF today is a fully-distributed, non-profit organization
 comprising nearly 300 individual Members and over 2,000 Committers
-[across six continents](http://people.apache.org/map.html).
+across six continents.
 
 The ASF's successful
 [collaborative, meritocratic technology and
