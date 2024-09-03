@@ -4,8 +4,8 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # {{title}}
 
 Apache&reg; Project Branding Best Practices provide recommendations for
-all Apache projects who are interested in promoting their software and
-maintaining a long-lived, independently managed project community.
+all Apache projects that are interested in promoting their software and
+maintaining a long-lived, independently-managed project community.
 
 Apache PMCs should take these three simple steps to
 improve their project brand and image and encourage
@@ -36,8 +36,8 @@ newcomers on the homepage, being consistent in the core branding for your projec
 understand what your project is, versus other Apache projects or other vendor
 products), and documenting clear paths for newcomers to get involved
  are easy steps to take.  Taking the time to mentor newcomers,
-and fostering a community ethos where answering questions and helping out is
-valued helps encourage new contributors to step up and help.  Actively seeking
+and fostering a community ethos in which answering questions and helping out is
+valued help encourage new contributors to step up and help.  Actively seeking
 out these new contributors and considering nominating them for
 committership is a great way to empower a larger community.
 
@@ -49,13 +49,13 @@ For new ideas in community building, ask the
 We all want other people and organizations to use our great software, and the permissive
 Apache license allows this.  But it's important to ensure that your project
 community gets the credit you deserve for the work you've done, and that when
-other organizations use your trademarks they provide 
+other organizations use your trademarks, they provide 
 [*attribution*](//www.apache.org/foundation/marks/faq/#attribution) to Apache, 
 and a [guide for the proper way to refer to Apache product names](//www.apache.org/foundation/marks/guide).
 
 Being aware means reviewing the vendors and other websites that talk about or use
 your Apache project, and ensuring that they're respecting our trademarks and treating
-your project's brand appropriately.  Raising any brand misuse or infringement is critical to
+your project's brand appropriately.  Raising any cases of brand misuse or infringement is critical to
 ensure other organizations use your project brand in an appropriate way.  We have detailed
 [best practices for reporting trademark misuse by third parties](//www.apache.org/foundation/marks/reporting.html).
 
@@ -72,16 +72,16 @@ project community credit for creating your software product.  Registration also 
 dealing with misuse or infringement in the future much simpler, because virtually
 all companies will respect registered trademarks once they are pointed out.
 
-While we consider all Apache project and software product names to be common law
-trademarks, registration provides simple formal and incontrovertible
+While we consider all Apache project and software product names to be common-law
+trademarks, registration provides simple, formal, and incontrovertible
 notice to the rest of the world that your project trademarks belong to the
 project and to the ASF.
 
 **NOTE:** not all project names may be registrable.  Generic or descriptive project names -
 like "MetaModel" - often will not be allowed registrations.  If there are any
 pre-existing software product **registrations** that are closely similar to some part of
-your project name, we may not be able to pursue a registration depending on the
-similarity or the owner of the pre-existing registration.  Also, as a 
+your project name, we may not be able to pursue a registration, depending on the
+similarity or the owner of the pre-existing registration.  Also, as we are a
 non-profit organization, funds for legal expenses may be limited depending 
 on the likelihood of confusion with your project's name, so not all 
 requests can be accommodated.
@@ -176,10 +176,9 @@ In general, the ASF will attempt registration for any active Apache project
  that requests it in the US.  US registrations cover our home market (i.e. the ASF is incorporated
  in the US), tend to cover a significant portion of users and developers, and
  are fairly inexpensive to submit.
-We will attempt to make a US registration for every active project that requests one.
 
 For well-organized projects in industries where there is significant risk of infringement
-by other software vendors, we can consider registering your mark(s) in either
+by other software vendors, we can consider registering your mark(s) either in
 other countries/jurisdictions, or as a trademark for the support services that your
 project offers to developers and users.  Note, however, that international registrations
 have much higher registration fees, and in some cases may incur additional legal
@@ -189,14 +188,14 @@ costs that we must justify outside or above the brand budget.
 a service mark registration (rare), you must provide a written justification for the additional
 expenses.  Explain in your PMC's own words why registering your project's
 name in other countries is important to the success and long-term health of your
-project.  The board and President will review the request and authorize the
+project.  The board and President will review the request and decide whether to authorize the
 additional expenses.
 
 ## Glossary: Brand vs. Trademark  {#glossary}
 
-A trademark is the legal instantiation of your brand.  Branding includes many elements, including the look and feel of your website or product, logos, and other presentation.  Trademarks are the specific symbols that you use to promote your software **product** or service to end users.  A consistently used project name and logo are typically the trademarks that a new end user or consumer associates with the actual software product releases your project produces.
+A trademark is the legal instantiation of your brand.  Branding includes many elements, including the look and feel of your website or product, logos, and other presentations.  Trademarks are the specific symbols that you use to promote your software **product** or service to end users.  A consistently-used project name and logo are typically the trademarks that a new end user or consumer associates with the actual software product releases your project produces.
 
-Apache **project** names can also serve as trademarks for the developer support services that you provide, however from the legal perspective, it's much more important - and simpler - to protect the name of the software **product** itself.
+Apache **project** names can also serve as trademarks for the developer support services that you provide; however from the legal perspective, it's much more important - and simpler - to protect the name of the software **product** itself.
 
 ## Other Trademark Policies And Guidelines  {#other}
 
@@ -217,14 +216,14 @@ name as a software product that does X, Y, and Z.  Typically, as long as the cla
 a brief approximation of the functionality that the *ProjectName* software product provides,
 it's sufficient.  Most ASF trademark infringements cases are handled directly with the
 business or technical contacts at the potential infringer, based on what the Apache *ProjectName*
-product actually does; thus the specific legal details of the functionality claim are
+product actually does; thus, the specific legal details of the functionality claim are
 rarely used.
 
 Some projects may wish to be more specific in their functional claims, to ensure
-that if any future issue does become a legal one, that the ASF has a more detailed
+that if any future issue does become a legal one, the ASF has a more detailed
 claim to functionality for their trademark.  Similarly, the ASF's trademark counsel
 often makes suggestions for putting functionality descriptions into
-terminology that better matches the trademark examiner's expectations.  These are
+terminology that better matches the trademark examiner's expectations.  Here are
 some more detailed examples.
 
 Counsel has recommended this trademark functionality description for **Apache Tomcat**:
