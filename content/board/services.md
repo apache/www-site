@@ -1,4 +1,5 @@
 Title: Foundation Services for Apache Projects
+license: https://www.apache.org/licenses/LICENSE-2.0
 
 
 # {{title}}
