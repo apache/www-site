@@ -39,6 +39,7 @@ Please send one plain-text, unencrypted, email for each vulnerability you are re
 ask you to resubmit your report if you send it as an image, movie, HTML, or
 PDF attachment when you could as easily describe it with plain text.
 
+<a id="known-issues"></a>
 ## Issues not considered as security vulnerabilities {#non-issues}
 
 These are things that we are well aware of, and have been reported to us many
