@@ -67,9 +67,7 @@ Assume good faith; it is more likely that participants are unaware of their bad 
 
 or one of our volunteers:
 
-  * [Mark Thomas](http://home.apache.org/~markt/coc.html)
-  * [Joan Touzet](http://home.apache.org/~wohali/)
-  * [Sharan Foga](http://home.apache.org/~sharan/coc.html)
+  * [Joan Touzet](/foundation/conduct-team/wohali.html)
 
 
 If the violation is in documentation or code, for example inappropriate pronoun usage or word choice within official documentation, report these privately to the project in question at private@<em>project</em>.apache.org, and, if you have sufficient ability within the project, resolve or remove the concerning material, being mindful of the perspective of the person originally reporting the issue.
