@@ -143,6 +143,7 @@ This table shows current and emeritus members who have manually added themselves
 | enis | Enis Söztutar |
 | epugh | Eric Pugh |
 | evansye | Evans Ye | [Bigtop](https://bigtop.apache.org/), [Ignite](https://ignite.apache.org) |
+| ewang | Ethan Wang | [Phonix](https://phoenix.apache.org/) |
 | eze | Evan Zelkowitz | [Traffic Server](https://trafficserver.apache.org) |
 | fanningpj | PJ Fanning | [POI](https://poi.apache.org/), [Drill](https://drill.apache.org/), [Linkis](https://linkis.apache.org/), [Incubator](https://incubator.apache.org/), [Pekko](https://pekko.apache.org) |
 | farra | J. Aaron Farr |
