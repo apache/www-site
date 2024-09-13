@@ -83,7 +83,7 @@ prior to release.
 #### Compiled packages  {#compiled-packages}
 
 The Apache Software Foundation produces open source software. All releases
-are in the form of the source materials needed to build the
+are in the form of the source materials needed to modify and build the
 software being released.
 
 As a convenience to users that might not have the appropriate tools to build a
