@@ -267,7 +267,6 @@ This table shows current and emeritus members who have manually added themselves
 | lehmi | Andreas Lehmkühler | [PDFBox](http://pdfbox.apache.org/)|
 | lektran | Scott Gray | [OFBiz](http://ofbiz.apache.org)  |
 | lewismc | [Lewis John McGibbney](http://home.apache.org/~lewismc) | [Nutch](http://nutch.apache.org), [Gora](http://gora.apache.org), [Any23](http://any23.apache.org), [Tika](http://tika.apache.org), [OODT](http://oodt.apache.org), [Open Climate Workbench](http://climate.apache.org), [Usergrid](http://usergrid.apache.org), [Joshua](http://joshua.apache.org)|
-| lgo | Lieven Govaerts |
 | lhotari | Lari Hotari | [Pulsar](https://pulsar.apache.org)|
 | liuxun | Xun Liu | [Incubator](http://incubator.apache.org/) , [Hadoop](https://hadoop.apache.org) , [Zeppelin](https://zeppelin.apache.org)|
 | liyu | Yu Li | [Flink](https://flink.apache.org/), [HBase](https://hbase.apache.org/), [Incubator](https://incubator.apache.org/) |
@@ -616,6 +615,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | kmarsden | Katherine Marsden |
 | kristwaa | Kristian Waagan | [Derby](http://db.apache.org/derby/)|
 | leosimons | [Leo Simons](http://www.leosimons.com/) |  excalibur (VP) ; gump (PMC) ; incubator (PMC) ; wiki|
+| lgo | Lieven Govaerts |
 | lindner | Paul Lindner |
 | lrosen | Lawrence Rosen |
 | lvjing | Jing Lv |
