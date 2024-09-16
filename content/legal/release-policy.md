@@ -469,7 +469,7 @@ Commit mails to the `dist/` repository go to your normal project mailing lists.
 Most projects can just distribute a release as described in the previous two
 questions.  However, releases that are likely to strain content distribution resources **must** be coordinated with infrastructure.
 
-Releases of more than 1GB of artifacts require a heads-up to Infrastructure in advance.
+**Note** Infra recommends keeping the size of your release artifacts below 100MB. The ASF will **not** host release artifacts larger than 1GB.
 
 Specific exemptions from other dist policies (such as what may or must or must
 not be distributed via the content distribution system) also need to be coordinated with Infrastructure.
