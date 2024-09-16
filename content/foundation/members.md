@@ -222,6 +222,7 @@ This table shows current and emeritus members who have manually added themselves
 | jleroux | Jacques Le Roux | [OFBiz](http://ofbiz.apache.org), [Incubator](http://incubator.apache.org/) | 
 | jlk | John Kinsella | [CloudStack](https://cloudstack.apache.org) | 
 | jlowe | Jason Lowe | [Hadoop](http://hadoop.apache.org) , [Tez](http://tez.apache.org/) |
+| jmckenzie | Josh McKenzie | [Cassandra](http://cassandra.apache.org) |
 | jmclean | Justin Mclean | [Flex](http://flex.apache.org/) ; [Incubator](http://incubator.apache.org/)|
 | joehni | Jörg Schaible |
 | joern | Jörn Kottmann | [UIMA](http://uima.apache.org/) ; [OpenNLP](http://opennlp.apache.org/)|
