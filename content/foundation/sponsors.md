@@ -65,8 +65,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="http://engineering.cerner.com/">Cerner</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
       <li><a target="_blank" rel="sponsored" href="https://datastrato.com">Datastrato</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://dimealley.com/installment-loans/">Dime Alley</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://dollarhand.com/">Dollar Hand</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.getgrist.com">Grist Labs</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
