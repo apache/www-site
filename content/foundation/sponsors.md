@@ -48,6 +48,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <div class="sponsors">
    <ul id='silver'>
       <li><a target="_blank" rel="sponsored" href="http://www.aetna.com/"><img src="images/aetna_sponsorlogo.png"/></a><p style="text-align: center; font-weight: bold;">Aetna</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.americanexpress.com/en-us/careers/career-areas/technology/"><img src="images/amer-exp-silver.png"/></a><p style="text-align: center; font-weight: bold;">American Express</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.capitalone.com/"><img src="images/capitalone-silver.png"/></a><p style="text-align: center; font-weight: bold;">Capital One</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/"><img src="images/indeed-silver.png"/></a><p style="text-align: center; font-weight: bold;">Indeed</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.lycorp.co.jp/en/"><img src="images/LINE-silver.png"/></a><p style="text-align: center; font-weight: bold;">LY Corporation</p></li>
