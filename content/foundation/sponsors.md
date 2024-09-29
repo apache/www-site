@@ -43,7 +43,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
    </ul>
    </div>
 
-
    <h3 class="h1"style="text-align: center;">Silver Sponsors:</h3>  <!-- 150x67 -->
    <div class="sponsors">
    <ul id='silver'>
