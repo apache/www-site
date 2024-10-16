@@ -45,6 +45,7 @@ This table shows current and emeritus members who have manually added themselves
 | arkurth | Andy Kurth | [VCL](http://vcl.apache.org/) |
 | arp | Arpit Agarwal |
 | arreyder | [Christopher R. Rhodes](http://arreyder.com) |
+| abernal | Arturo Bernal Gimeno | [HttpComponents](https://hc.apache.org/), [JSPWiki](https://jspwiki.apache.org/)|
 | arvind | [Arvind Prabhakar](http://home.apache.org/~arvind) | [Sqoop](http://sqoop.apache.org/) ; [Flume](http://incubator.apache.org/flume)|
 | asankha | [Asankha Perera](http://people.apache.org/~asankha) | [HttpComponents](http://hc.apache.org)
 | asifdxtreme | [Mohammad Asif Siddiqui](https://asifdxr.netlify.app) | Incubator, Nuttx, Servicecomb |
