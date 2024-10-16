@@ -168,7 +168,7 @@ See the PMC Chair's detailed [Board Reporting Guidelines](/foundation/board/repo
 Apache Members and PMC Chairs are welcome to attend.  Please let the board 
 know you will attend by adding yourself in the agenda:
 
-- Navigate to whimsy.apache.org/board/agenda/ (Apache login required)
+- Navigate to the [Agenda in Whimsy](https://whimsy.apache.org/board/agenda/) (Apache login required)
 - Click Roll Call
 - Click the blue Attend button at the bottom
 
