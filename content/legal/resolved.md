@@ -146,7 +146,7 @@ within an Apache product if you label the inclusion appropriately (see above):
 - Mozilla Public Licenses: [MPL 1.0](http://www.mozilla.org/MPL/1.0/),
   [MPL 1.1](http://www.mozilla.org/MPL/1.1/), and
   [MPL 2.0](http://www.mozilla.org/MPL/2.0/)
-- Sun Public License: [SPL 1.0](http://opensource.org/licenses/SPL-1.0)
+- Sun Public License: [SPL 1.0](https://opensource.org/license/sunpublic-php)
 - [Open Software License 3.0](https://opensource.org/licenses/OSL-3.0)
 - [Erlang Public License](http://www.erlang.org/EPLICENSE)
 - [UnRAR License](https://github.com/jukka/java-unrar/blob/master/license.txt) (only for unarchiving)
