@@ -155,19 +155,10 @@ After the project has elected new committers and followed the process to
 get their account created, the PMC chair ensures 
 the new committer has [karma](#newcommitter) (access) to the project repositories.
 
-### Send NOTICEs and followup when adding PMC members
-The chair is responsible for sending the NOTICE email to the board, then
-updating [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)
-and the LDAP committee group after the candidate accepts -- see the [detailed procedure](#newpmcmember).
-
 ### Maintain ASF records on the PMC roster
-Maintain information about your PMC's composition in the SVN "committers" repository
-at [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt) and keep it up-to-date. 
-Remember to update the LDAP committee  group as well.
-This is normally done using the [Whimsy roster tool](https://whimsy.apache.org/roster/committee/).
-
-Be aware of anything currently in incubation at
-[incubator.apache.org](https://incubator.apache.org).
+The chair is responsible for ensuring your [PMC's official roster](https://whimsy.apache.org/roster/committee/)
+in [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt) of your 
+PMC members is always kept updated.  See [How To Add New PMC Members](#newpmcmember).
 
 ### Subscribe to the `board@` mailing list if desired
 PMC Chairs are welcome to subscribe to the `board@` mailing list to stay aware of Foundation level issues that may affect 
@@ -289,91 +280,52 @@ See also [why would a project move to the Attic?](pmc.html#move-to-attic), above
 The usual process for adding a member to a PMC is to:
 
   * Elect the new member by having the PMC vote on the project's private list, according to the [ASF voting rules](/foundation/voting)
-  * Follow the below process to finalize the nomination.
+  * Invite the new member to your PMC
+  * Follow the below process to update the official PMC roster
 
 In specific cases, however, such as low PMC participation preventing the number
 of required votes from being reached, or the PMC chair being unavailable for an
 extended period of time, PMC members can ask the Board to make the necessary
-changes to the PMC without a successful vote. In such a case, the Board would only
+changes to the PMC without a successful PMC vote. In such a case, the Board would only
 be concerned if there is opposition within the PMC.
 
-#### Send the board a NOTICE of the vote to add someone
+#### Invite the person to the PMC
 
-Adding a PMC member requires sending an email notification
-to the Board's mailing list and the PMC's private mailing list.
-Be sure to send a *separate* [NOTICE] email for *each* individual you are nominating.
+To officially add the candidate to your PMC, you need to:
 
-Once the notification appears in the [**archives**](#board_archive), an invitation
-may be sent out.
+  - Formally invite the new PMC member (with copy to the private@ list).
+  - **If they accept**, then:
+  - Update the **[official PMC roster](https://whimsy.apache.org/roster/committee/)**
+(step below) with the new PMC member.
+  - Announce the new PMC member to your project in whatever way works best for your community.
+  - Remind the new PMC member of key ToDos:
+    - The new PMC member should subscribe to your PMC's private@ mailing list, which can be done via email or using the [Whimsy Mailing List Subscription tool](https://whimsy.apache.org/committers/subscribe.cgi).
+    - Remind the new PMC member to read the [PMC Branding Responsibilities](/foundation/marks/responsibility).
 
-The PMC Chair or any other PMC member can send this notification if they include
-a link to the formal PMC decision or a vote thread on their private@ list.
+#### Update the official PMC roster
 
-**Ensure the PMC private list is copied - but do not CC the potential member**. For example:
+Note: if the person being invited is not yet an ASF committer, be sure to request 
+a committer account for them first.  Updating the official PMC roster can be done with the Whimsy tool:
 
-```
+  [https://whimsy.apache.org/roster/committee/](https://whimsy.apache.org/roster/committee/)
 
-    To: board@apache.org
-    Cc: private@<project>.apache.org
-    Subject: [NOTICE] Jane Doe for <project> PMC
+Click through to your PMC's page and follow the instructions to Add/Modify.  If the Whimsy tool 
+does not work, then see documentation on updating LDAP and [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt).
 
-    <project> proposes to invite Jane Doe (janedoe) to join the PMC.
-```
-
-If a vote was held, include
-
-```
-The vote result is available here: https://lists.apache.org/...
-```
-
-The link should be a permalink from the `https://lists.apache.org/` mail archive.
-This allows any member to review the mail vote.
-
-If the candidate does not (yet) have an Apache account, include
-that fact in the notification email. 
-
-#### Check the board archive for mail delivery  {#board_archive}
-Also the list is moderated, so it may take a day or two before the email appears on the list and is seen by the board members.
-If the email is not moderated in time, it will never reach the list.
-The invite can only be sent out once the notice email has been posted to the list.
-
-**The PMC Chair MUST check the board archives to ensure that the NOTICE has actually been delivered to the board mailing list.**
-
-You can do this by sending a mail to the EZMLM server at `board-index@apache.org` followed by a `board-get.XXX@apache.org` (`XXX` = message number).
-If the EZMLM server refuses the request, check that you are [subscribed to the board@ list](#subscribe-to-the-board-mailing-list)
-ASF Members can also access the <a href="https://mail-search.apache.org/members/private-arch/board" target="_blank">board archive</a>.
-
-It is not sufficient to check that you have seen the email; the email must appear in the board archives.
-
-#### Invite the person
-
-To formally add the candidate to your PMC -  the PMC Chair needs to:
-
-  - Formally invite the new PMC member (with copy to the private@ list). If they accept, then:
-  - Update the **[roster](https://whimsy.apache.org/roster/committee/)**
-with the new PMC member.
-  - This gives the new PMC member access to the PMC-only parts of SVN for the project.
-
-The new PMC member should now subscribe to your PMC's private@ mailing list in the normal way. 
-
-**Note** that the appointment to the PMC does not become official until the Foundation's records (i.e. committee-info.txt) have been updated
-(see 7C of the September 2022 board minutes).
-
-If the candidate declines PMC membership or doesn't respond to the invitation, please follow up the original notice to the board to say that
-the change did not happen, and do not update the records.
-
-New PMC members are required to read the [PMC Branding Responsibilities](/foundation/marks/responsibility).
-
-### When members leave the PMC  {#membersleave}
+### How to remove a PMC member {#membersleave}
 
 #### How to resign from a PMC  {#resign}
+
+If you would like to resign from a PMC, simply send an email to your project (typically 
+the private@ list) formally resigning, and ask the PMC chair to remove you from the roster.
+The PMC Chair can then follow the (removal steps below)[#emeritus].
 
 "Resignation of a member of a PMC shall take effect
 immediately upon receipt of their resignation, as recorded on any of
 the Foundation's mailing list archives, but can be revoked by that
 member within 72 hours of receipt."
 
-The detailed process can be found
+The official process can be found
 in the [September 2022 board minutes](/foundation/records/minutes/2022/board_minutes_2022_09_21.txt)
 under section [7 C. PMC Membership Change Process](https://whimsy.apache.org/board/minutes/PMC_Membership_Change_Process.html).
 
@@ -391,14 +343,12 @@ the Foundation, the resignation is considered effective. However, the
 PMC member has 72 hours to withdraw their resignation. Notifying the board is not required, but
 encouraged to ease tracking.
 
-
 Once the resignation has taken effect, the PMC Chair should:
 
-  - Update **[committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)**
+  - Use the [Whimsy roster](https://whimsy.apache.org/roster/committee/) tool to remove the PMC member, which handles these two steps for you:
+    - Updating **[committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt)**
 to remove the former member's entry.
-  - Update the appropriate LDAP committee group - See the [SVN access](#SVNaccess) section above.
-
-You can do these updates using the [Whimsy roster](https://whimsy.apache.org/roster/committee/).
+    - Updating the appropriate LDAP committee group - See the [SVN access](#SVNaccess) section above.
 
 #### Should a PMC remove inactive members?  {#pmc-removal}
 
@@ -407,12 +357,18 @@ as long as they apply it consistently. It is not a problem to retain members of 
 and it can make it 
 easier for them to stay in touch with the project if they choose to become active again.
 
-Typically, PMC members who are no longer able to participate will resign from the PMC.
-However, if a PMC chooses to remove one of its members (without that member's request or consent), it must request the
-Board to make that decision (which is typically done with a resolution at the Board's
-next meeting). The PMC chair should send an email to the board@ mailing list 
+Often, PMC members who are no longer able to participate will resign from the PMC
+by emailing a request.  In some cases where PMCs have a large number of inactive members, 
+PMCs have asked the inactive members if they'd like to resign.
+
+#### How to remove a PMC member unilaterally  {#pmc-exit}
+
+If a PMC chooses to _remove_ one of its members (**without** that member's request or consent), 
+the PMC must ask the Board to remove the member.  The PMC chair should send an email to the board@ mailing list 
 detailing the request for removal and the justification the PMC has for that removal, and
-copy the project's private@ list.
+copy the project's private@ list.  The board will review the reqest as well as your project's 
+mailing lists to see if the removal is controversial or opposed, and then make a decision,
+typically at the next month's board meeting.
 
 #### What to do if a committer or PMC member has died  {#deceased}
 
