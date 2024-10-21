@@ -160,6 +160,11 @@ The chair is responsible for ensuring your [PMC's official roster](https://whims
 in [committee-info.txt](https://svn.apache.org/repos/private/committers/board/committee-info.txt) of your 
 PMC members is always kept updated.  See [How To Add New PMC Members](#newpmcmember).
 
+#### Send NOTICEs and followup when adding PMC members
+NOTICE emails to the board are now generated automatically when the roster is updated.
+There is no need for PMCs to send a NOTICE before updating the roster.
+The roster can be updated as soon as the invitation is accepted.
+
 ### Subscribe to the `board@` mailing list if desired
 PMC Chairs are welcome to subscribe to the `board@` mailing list to stay aware of Foundation level issues that may affect 
 their project. This used to be a requirement, but the Board made it optional in June 2020. Note that `board@` is a privately-
