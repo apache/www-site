@@ -41,8 +41,8 @@ the minimum number of positive (+1) votes required for a product release is [thr
 
 ## Legal  {#legal}
 
-The board creates PMCs to manage specific named projects by resolution at 
-monthly meetings. New top level projects (TLPs) are created from podlings in 
+The board creates [PMCs to manage specific named projects](https://apache.org/foundation/bylaws#6.3) by resolution at 
+monthly meetings. New top level projects (TLPs) are most often created from podlings in 
 the Apache Incubator after a successful graduation vote from Incubation. The 
 board appoints a Vice President - an officer of the corporation - to serve as 
 the chair of the project's PMC.
@@ -54,23 +54,17 @@ their project. PMC chairs are expected to subscribe to the board@ mailing list,
 and to be aware of any board concerns about the project, and are responsible for 
 working with the PMC as a whole to address any board concerns.
 
-When PMCs elect new potential PMC members, the chair 
-of a project sends a NOTICE e-mail to the board.  Assuming that the candidate
-accepts the offer of membership, the PMC chair may update the official roster
-of the members of that PMC. The process is designed to ensure that the board
-has explicit notification of all PMC changes. 
+PMC Chairs are also responsible for updating the official PMC roster when 
+any new members are added to the PMC.  See [how to add a new PMC member](/dev/pmc.html#newpmcmember).
+PMC members who are no longer involved with a project may also 
+[request to resign from the PMC](/dev/pmc.html#emeritus).
 
-For more details on the process, read [Adding a new PMC member](/dev/pmc.html#newpmcmember)
-
-For people leaving the PMC, read [A PMC member wishes to be resign/go emeritus. Now what?](/dev/pmc.html#emeritus)
-
-Changes in PMC 
-**chairs** require board resolutions to be approved at monthly meetings, since this 
+Changes to **PMC chairs/VPs** require board resolutions to be approved at monthly meetings, since this 
 involves appointment of an officer of the ASF. Follow the [PMC Chair Change process](/dev/pmc.html#newchair).
 
-As official committees of the ASF, PMCs provide legal oversight of project 
-operations and releases, ensuring that software releases take place on behalf of 
-. This helps ensure that the ASF as an organization, not individual committers, bears any legal liability for the products of Apache projects. All PMC chairs provide [quarterly reports to 
+As [official committees of the ASF](https://apache.org/foundation/bylaws#6.3), PMCs provide legal oversight of project 
+operations and releases, ensuring that software releases are made as acts of the ASF as an organization, not individual developers.
+This ensures that the ASF as an organization, not individual committers, bear any legal liability for the products of Apache projects. All PMC chairs provide [quarterly reports to 
 the board](/foundation/board/reporting), which ensures that the board has oversight of all ASF projects. 
 
 ## Communication  {#communication}
