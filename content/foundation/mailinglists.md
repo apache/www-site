@@ -255,8 +255,10 @@ are available.
 
 The `legal-discuss@apache.org` is a forum for questions (even FAQs) that
 have a legal aspect. These questions may concern (for example)
-licensing, third party packages, contributor agreement questions and
-trademark issues. This list will build into an ad-hoc knowledge base about
+licensing, third party packages and contributor agreement questions. For
+questions related to trademarks, contact the
+[Brand Management commiteee](https://www.apache.org/foundation/marks/contact).
+This list will build into an ad-hoc knowledge base about
 those thorny legal issues that most commonly effect Apache projects. Please
 keep speculation to a minimum and avoid making authoritative statements
 without genuine knowledge of the subject.
