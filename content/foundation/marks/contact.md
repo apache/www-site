@@ -105,12 +105,6 @@ please email [vp-brand@apache.org](mailto:vp-brand@apache.org?subject=%5bLEGAL%5
 If you have a **non**-trademark related legal question, please 
 contact the [Legal Affairs Committee](/legal/).
 
-You can also follow our @ASFBrands official account on Twitter for occasional news about our trademark policy:
-
-<a href="https://twitter.com/ASFBrands" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @ASFBrands</a>
-<script>!function(d,s,id)  {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<noscript>(Note: Twitter requires JavaScript)</noscript>
-
 ## Important Note  {#notes}
 
 **Nothing in this ASF policy statement shall be interpreted to allow any
