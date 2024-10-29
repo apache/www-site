@@ -409,9 +409,9 @@ although PMCs are free to follow their own documented process for finding
 consensus on adding new committers.
 
 Once the PMC formally wants to invite an individual to be a committer, 
-it should invite the person, 
-([use this template](https://community.apache.org/newcommitter.html#committer-invite-template))
-and require the new committer to 
+invite them, 
+([using the appropriate one of these templates](https://community.apache.org/newcommitter.html#email-templates))
+and require the new committer (if an ICLA for the committer is not already on file) to 
 [submit an Individual Contributor License Agreement (ICLA) to the secretary](/licenses/#clas). 
 The secretary **cannot process new committer accounts** without receiving the CLA acknowledged by the ASF secretary or
 a board member. Your PMC needs to work with the new committer to ensure
