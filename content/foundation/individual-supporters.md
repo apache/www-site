@@ -31,13 +31,10 @@ Yes, the Apache Software Foundation is a 501(c)(3) not-for-profit entity so cont
 The ASF's tax identification number is 47-0825376. 
 	
 ### Where can I mail a check?
-Mail your check or money order payable to:
+As of 1 November, 2024, we will no longer be accepting mailed-in donations using physical (paper) checks. To make a one-time or recurring donation to the ASF online using ACH (electronic money transfer) or eCheck (electronic check), please visit [https://donate.apache.org/](https://donate.apache.org/)  and follow the prompts at “Individual and One-Time Corporate Donations (any amount)”. Here you may make a recurring (monthly, quarterly, or annually) donation as well.
 
-The Apache Software Foundation<br>
-1000 N West Street, Suite 1200<br>
-Wilmington, DE 19801<br>
+We will issue you a tax receipt via email upon successful processing of your donation(s).
 
-To receive a tax receipt, include your email address and the name for whom the donation should be credited (your own or the third party if it is a on behalf of someone else).
 
 ### I have a question. Who do I contact?
 For more information, please contact us at fundraising@apache.org.
