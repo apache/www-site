@@ -35,6 +35,7 @@ window.asf.getDirectorsTimelineData = function () {
         jim: 'Jim Jagielski',
         jjirsa: 'Jeff Jirsa',
         jmclean: 'Justin Mclean',
+        kanchana: 'Kanchana Pradeepika Welagedara',
         ke4qqq: 'David Nalley',
         lrosen: 'Larry Rosen',
         markt: 'Mark Thomas',
@@ -138,6 +139,8 @@ window.asf.getDirectorsTimelineData = function () {
     change_2019b = date(2019, 5, 16);
     // wohali -> wave
     change_2019c = date(2019, 9, 26);
+    // cdutz -> kanchana
+    change_2024a = date(2024, 9, 18);
 
     // All Directors over history, with their begin/end timeframes.
     add('sameer', y1999, y2000);
@@ -214,11 +217,12 @@ window.asf.getDirectorsTimelineData = function () {
     add('wusheng', y2021, y2022);
     add('bdelacretaz', y2020, y2024);
     add('sharan', y2021, y2024);
+    add('cdutz', y2022, change_2024a);
     // ABOVE: history of begin/end for prior Directors
 
     // Current set of Directors
+    add('kanchana',change_2024a, y2025);
     add('rbowen', y2022, y2025);
-    add('cdutz', y2022, y2025);
     add('ningjiang', y2022, y2025);
     add('striker', y2020, y2025);
     add('clr', y2023, y2025);
