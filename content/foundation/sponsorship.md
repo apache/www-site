@@ -7,13 +7,13 @@ The Apache Software Foundation provides support for the Apache community of open
 
 By sponsoring the ASF you show your support for our mission and help sustain a vibrant organization. Sponsorship also shows your support for open source and gives you the opportunity to "give back" to the community. Finally, since the ASF is a non-profit organization, sponsorship provides attractive tax benefits for organizations based in the U.S.
 
-For non-sponsorship corporate contributions and individuals wishing to make a financial donation to the ASF, you may do so online at [https://donate.apache.org/](https://donate.apache.org/) via credit/debit card, ACH bank payment, PayPal, and, using your mobile phone, with Apple Pay, Google Pay, and Microsoft Pay. Choose the “Individual and One-Time Corporate Donations (any amount)” option and follow the prompts to make a one-time or recurring (monthly, quarterly, or annually) contribution.
-
 ## Foundation Sponsorship 
 
 Foundation Sponsorship is the way that corporations can contribute substantially to the ongoing support of the Foundation. In return, the ASF will officially acknowledge your donation via various methods appropriate to your sponsorship level. We will display your logo and link on the Sponsors page and provide an official sponsor image to place on your website. 
 
 There are four sponsorship levels, defined by donation amount and in-return benefits of sponsorship. No more than 25% of value can be based on in-kind services. To get started, connect with fundraising@apache.org.
+
+For non-sponsorship corporate contributions and individuals wishing to make a financial donation to the ASF, you may do so online at [https://donate.apache.org/](https://donate.apache.org/) via credit/debit card, ACH bank payment, PayPal, and, using your mobile phone, with Apple Pay, Google Pay, and Microsoft Pay. Choose the “Individual and One-Time Corporate Donations (any amount)” option and follow the prompts to make a one-time or recurring (monthly, quarterly, or annually) contribution.
 
 <table class="table">
 <tr><td background="platinum.png" style="background-repeat:no-repeat;background-position: 90% 5%;">
