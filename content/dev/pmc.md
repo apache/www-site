@@ -410,7 +410,7 @@ consensus on adding new committers.
 
 Once the PMC formally wants to invite an individual to be a committer, 
 invite them, 
-([using the appropriate one of these templates](https://community.apache.org/newcommitter.html#email-templates))
+([using the appropriate one of these templates](https://community.apache.org/pmc/adding-committers.html#email-templates))
 and require the new committer (if an ICLA for the committer is not already on file) to 
 [submit an Individual Contributor License Agreement (ICLA) to the secretary](/licenses/#clas). 
 The secretary **cannot process new committer accounts** without receiving the CLA acknowledged by the ASF secretary or
