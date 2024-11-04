@@ -13,6 +13,8 @@ Foundation Sponsorship is the way that corporations can contribute substantially
 
 There are four sponsorship levels, defined by donation amount and in-return benefits of sponsorship. No more than 25% of value can be based on in-kind services. To get started, connect with fundraising@apache.org.
 
+For non-sponsorship corporate contributions and individuals wishing to make a financial donation to the ASF, you may do so online at [https://donate.apache.org/](https://donate.apache.org/) via credit/debit card, ACH bank payment, PayPal, and, using your mobile phone, with Apple Pay, Google Pay, and Microsoft Pay. Choose the “Individual and One-Time Corporate Donations (any amount)” option and follow the prompts to make a one-time or recurring (monthly, quarterly, or annually) contribution.
+
 <table class="table">
 <tr><td background="platinum.png" style="background-repeat:no-repeat;background-position: 90% 5%;">
 <br>
@@ -99,9 +101,7 @@ There are four sponsorship levels, defined by donation amount and in-return bene
 
 ## Targeted Sponsorship
 
-Targeted Sponsorship provides the ASF with non-cash contributions aimed at specific activities, projects, or programs, such as donating cloud services, providing legal services, underwriting our flagship event attendees’ expenses, funding project hackathons, and contributing documentation resources.
-
-Targeted Sponsorships benefit the ASF in addition to funding our general operations. Targeted Sponsors receive the same benefits as Foundation Sponsors based on the equivalent value of the non-cash contribution. We invite you to [view our guidelines](/foundation/docs/targeted-sponsorship-policy.html) to see if Targeted Sponsorship is right for you.
+Targeted Sponsorships benefit the ASF in addition to funding our general operations. Targeted Sponsors receive the [same benefits as Foundation Sponsors](https://apache.org/foundation/sponsorship.html#foundation-sponsorship) based on the equivalent value of the non-cash contribution. All Targeted Sponsorships (donated or in-kind products/solutions/services) must be pre-approved by the ASF (and/or the beneficiary Apache project, community, or activity) must be deemed essential in order to qualify for consideration for Targeted Sponsorship. Targeted Sponsorships require a minimum 3-year commitment to ensure funding continuity to support services provided. We invite you to [view our guidelines](https://apache.org/foundation/docs/targeted-sponsorship-policy.html) to see if Targeted Sponsorship is right for you.
 
 ## Corporate Giving Programs
 
@@ -121,13 +121,11 @@ donating to the ASF at a different level than sponsorship, see our
 [donation page](/foundation/contributing.html).
  
 ### Where can I mail a check?
-Mail your check or money order payable to:
+As of 1 November, 2024, we will no longer be accepting mailed-in donations using physical (paper) checks. To make a one-time or recurring donation to the ASF online using ACH (electronic money transfer) or eCheck (electronic check), please visit [https://donate.apache.org/](https://donate.apache.org/)  
+and follow the prompts at “Individual and One-Time Corporate Donations (any amount)”. Here you may make a recurring (monthly, quarterly, or annually) donation as well.
 
-The Apache Software Foundation<br>
-1000 N West Street, Suite 1200<br>
-Wilmington, DE 19801<br>
+We will issue you a tax receipt via email upon successful processing of your donation(s).
 
-To receive a tax receipt, include your email address and the name for whom the donation should be credited (your own or the third party if it is a on behalf of someone else).
 
 ### Where will my sponsorship funds go?
 
