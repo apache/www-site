@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page of The Apache Software Foundation">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>ASF Generative Tooling Guidance</title>
+  <link href="/css/Montserrat-300-600.css" rel="stylesheet">
+  <link href="/css/min.bootstrap.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/new-ui.css" rel="stylesheet">
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'ASF Generative Tooling Guidance';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'ASF Generative Tooling Guidance';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
+
+<body >
+  <!-- Navigation -->
+  <header>
+	<div id="skiptocontent">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top mainmenu">
+      
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnav-collapse">
+          <div class="upper-nav">
+            <div class="header-social-icons">
+              <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+              <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+              <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+              <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+              <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+            </div>
+            <a href="/foundation/sponsorship" class="btn btn-default" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Sponsor the ASF</a>
+          </div>
+          <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                <li><a href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="/community-resources/">Community Resources</a></li>
+                <li><a href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                <li><a href="https://events.apache.org/" target="_blank">Events</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                <li><a href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                <li><a href="/foundation/mailinglists">Mailing Lists </a></li>
+                <li><a href="/security">Report a Vulnerability</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                <li><a href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                <li><a href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                <li><a href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://news.apache.org/" target="_blank">Blog</a></li>
+                <li><a href="/foundation/how-it-works">How the ASF Works</a></li>
+                <li><a href="/theapacheway/">The Apache Way</a></li>
+                <li><a href="/legal/">Legal &amp; Trademark</a></li>
+                <li><a href="/licenses">Licenses</a></li>
+                <li><a href="/foundation/glossary">Glossary</a></li>
+                <li><a href="/foundation/faq">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/dev/">Developer Information</a></li>
+                <li><a href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                <li><a href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                <li><a href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                <li><a href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                <li><a href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                <li><a href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                <li><a href="/foundation/press/kit/">Brand Guidelines</a></li>
+                <li><a href="/logos/">Project Logos</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/foundation/">About</a></li>
+                <li><a href="/foundation/sponsors">Our Sponsors</a></li>
+		<li><a href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                <li><a href="/foundation/individual-supporters">Individual Supporters</a></li>
+                <li><a href="/foundation/leadership">Leadership</a></li>
+                <li><a href="/foundation/members">Members</a></li>
+                <li><a href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                <li><a href="/press/">Newsroom</a></li>
+                <li><a href="/foundation/contact">Contact</a></li>
+              </ul>
+            </li>
+            
+           
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                  aria-hidden="true"></span><span class="sr-only">Search</span></a>
+              <ul class="dropdown-menu search-form" role="search">
+                <li>
+                  <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- / Navigation -->
+  <header id="main-header" class="container">
+    <div class="sideImg">
+          <a class="visible-home" href="https://events.apache.org/x/current-event.html">
+            <img class="img-responsive" style="width: 125px;" src="/events/current-event-125x125.png" alt="Apache Events"/>
+<!-- STALE: <img class="img-responsive" style="width: 125px;" src="https://www.apachecon.com/event-images/default-square-light.png" alt="ApacheCon 2021 Coming Soon!" /> -->
+          </a>
+      <a class="hidden-home" href="/"><img class="img-responsive" src="/img/asf-estd-1999-logo.jpg" alt="The Apache Software Foundation"></a>
+    </div>
+    <div class="main">
+      <img class="img-responsive center-block visible-home" src="/img/asf-estd-1999-logo.jpg" alt="Apache 20th Anniversary Logo">
+
+    </div>
+ 
+  </header>
+  <main id="maincontent">
+<div class="container">    <h1 id="asf-generative-tooling-guidance">ASF Generative Tooling Guidance<a class="headerlink" href="#asf-generative-tooling-guidance" title="Permalink">&para;</a></h1>
+<p>Version: 1.0</p>
+<div id="toc"><ul><li><a class="toc-href" href="#include-in-contributions" title="Can contributions to ASF projects include AI generated content?">Can contributions to ASF projects include AI generated content?</a></li><li><a class="toc-href" href="#include-in-documentation" title="What about Documentation?">What about Documentation?</a></li><li><a class="toc-href" href="#include-in-images" title="What about Images?">What about Images?</a></li><li><a class="toc-href" href="#tools-rely-on-other-tools" title="The tool we want to use may rely on other tools. What terms of use do we need to consider when following this guidance?">The tool we want to use may rely on other tools. What terms of use do we need to consider when following this guidance?</a></li><li><a class="toc-href" href="#handling-references" title="What do we do if a contribution includes AI generated content and some form of tooling has identified materials that have been copied?">What do we do if a contribution includes AI generated content and some form of tooling has identified materials that have been copied?</a></li><li><a class="toc-href" href="#approved-tools-list" title="Can the ASF provide a list of approved generative AI Tools?">Can the ASF provide a list of approved generative AI Tools?</a></li></ul></div>
+<h2 id="include-in-contributions">Can contributions to ASF projects include AI generated content?<a class="headerlink" href="#include-in-contributions" title="Permalink">&para;</a></h2>
+<p>The Apache-2.0 license, and the Apache Individual Contribution License Agreement, both remind contributors that they are responsible for disclosing any copyrighted materials in submitted contributions that are not their original creation. This is as true when using generative AI tooling, as it is when using materials from public websites or code from other open-source projects.</p>
+<p>When disclosing these materials, contributors should also identify the licensing for these materials. The ASF maintains a <a href="/legal/resolved.html">3rd Party Licensing Policy</a> that provides guidance on which licenses are acceptable, along with instructions on the treatment of <a href="/legal/src-headers.html#3party">3rd Party Works</a>.</p>
+<p>While in general, content generated by a non-human (e.g., machine or <a href="https://en.wikipedia.org/wiki/Monkey_selfie_copyright_dispute">monkey</a>) is not copyrightable, if content consists of some portions generated by AI and other portions authored by a human, the portions authored by a human may be copyrightable.</p>
+<p>As explained by the following <a href="https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence">U.S. Copyright Office Registration Guidance (3/16/2023)</a>:</p>
+<blockquote>
+<p>&ldquo;For example, a human may select or arrange AI-generated material in a sufficiently creative way that &ldquo;the resulting work as a whole constitutes an original work of authorship.&rdquo;&thinsp;Or an artist may modify material originally generated by AI technology to such a degree that the modifications meet the standard for copyright protection. In these cases, copyright will only protect the human-authored aspects of the work, which are &lsquo;independent of&rsquo; and do &lsquo;not affect&rsquo; the copyright status of the AI-generated material itself.&rdquo;</p>
+</blockquote>
+<p>These portions authored by a human may simply come from the prompt the human provided or subsequent changes they make. However, a prominent concern with generative AI is the risk of reproducing copyrightable portions of materials that they were trained on, some of which may be copyrightable subject matter. Thus, a recommended practice when using generative AI tooling is to use tools with features that identify any included content that is similar to parts of the tool&rsquo;s training data, as well as the license of that content.</p>
+<p>Given the above, code generated in whole or in part using AI can be contributed if the contributor ensures that:</p>
+<ol>
+<li>The terms and conditions of the generative AI tool do not place any restrictions on use of the output that would be inconsistent with the <a href="https://opensource.org/osd/">Open Source Definition</a>.</li>
+<li>At least one of the following conditions is met:
+<ol>
+<li>The output is not copyrightable subject matter (and would not be even if produced by a human).</li>
+<li>No third party materials are included in the output.</li>
+<li>Any third party materials that are included in the output are being used with permission (e.g., under a compatible open-source license) of the third party copyright holders and in compliance with the applicable license terms.</li>
+</ol>
+</li>
+<li>A contributor obtains reasonable certainty that conditions 2.2 or 2.3 are met if the AI tool itself provides sufficient information about output that may be similar to training data, or from code scanning results.</li>
+</ol>
+<p>When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase &ldquo;Generated-by: <name of="" tool=""> <version>&rdquo;. This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.</version></name></p>
+<p>Finally, please note that while the above seems like a reasonable set of guidelines in June 2023, this is a rapidly evolving area. Whatever we recommend to PMCs today, policies will need to be re-evaluated and updated in response to:</p>
+<ul>
+<li>Changes in the law.</li>
+<li>Changes in AI technology and related tools, e.g., as AI models evolve that (1) are able to provide notice when they reproduce portions of the materials they were trained on or (2) can be instructed to reproduce only permissively (or otherwise Apache-2.0 compatible) licensed source materials.</li>
+<li>Changes in tolerance for risk and ambiguity among adopters of OSS.</li>
+</ul>
+<p>We will continue communicating with PMC and ASF members as updates to this FAQ get discussed and merged in.</p>
+<h2 id="include-in-documentation">What about Documentation?<a class="headerlink" href="#include-in-documentation" title="Permalink">&para;</a></h2>
+<p>The above text applies to documentation as well. Pay attention to tools that have restrictive licensing for the generated content, caution should be applied, make sure it complies with the <a href="https://www.apache.org/legal/resolved.html#:%7E:text=They%20are%20said%20to%20be%20%22Apache-like%22.%20Category%20B%3A,NOT%20be%20included%20in%20Apache%20Software%20Foundation%20products">3rd Party Licensing Policy</a> and <a href="https://www.apache.org/legal/src-headers.html#3party">3rd Party Works</a>.</p>
+<h2 id="include-in-images">What about Images?<a class="headerlink" href="#include-in-images" title="Permalink">&para;</a></h2>
+<p>As with documentation, the above principles would still apply. Though with images being a non-textual form, the details quickly become complex. We expect this to continue to be a rapidly evolving area.</p>
+<h2 id="tools-rely-on-other-tools">The tool we want to use may rely on other tools. What terms of use do we need to consider when following this guidance?<a class="headerlink" href="#tools-rely-on-other-tools" title="Permalink">&para;</a></h2>
+<p>Don't second guess vendor's terms of use (TOU). Your usage of their tools is bound by the totality of the given TOU and you are not expected to go outside of the TOU text for further clarifications.</p>
+<h2 id="handling-references">What do we do if a contribution includes AI generated content and some form of tooling has identified materials that have been copied?<a class="headerlink" href="#handling-references" title="Permalink">&para;</a></h2>
+<p>Refer to the <a href="/legal/resolved.html">3rd Party Licensing Policy</a> as with any other contribution.</p>
+<h2 id="approved-tools-list">Can the ASF provide a list of approved generative AI Tools?<a class="headerlink" href="#approved-tools-list" title="Permalink">&para;</a></h2>
+<p>It is not in the interest of the ASF to tell developers what tools to use. You may use whatever tools you wish provided that you follow the guidance in this document.</p>
+
+</div>  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <br />
+        <div class="col-sm-2">
+          <h5 class="white">Community</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+            <li><a href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+            <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="/community-resources/">Community Resources</a></li>
+            <li><a href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+            <li><a href="https://events.apache.org/" target="_blank">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Projects</h5>
+          <ul class="list-unstyled white" role="menu">
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+              <li><a href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+              <li><a href="/foundation/mailinglists">Mailing Lists </a></li>
+              <li><a href="/security">Report a Vulnerability</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5 class="white">Downloads</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+            <li><a href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+            <li><a href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+            <li><a href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Learn</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="https://news.apache.org/" target="_blank">Blog</a></li>
+            <li><a href="/foundation/how-it-works">How the ASF Works</a></li>
+            <li><a href="/theapacheway/">The Apache Way</a></li>
+            <li><a href="/legal/">Legal &amp; Trademark</a></li>
+            <li><a href="/licenses">Licenses</a></li>
+            <li><a href="/foundation/glossary">Glossary</a></li>
+            <li><a href="/foundation/faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Resources &amp; Tools</h5>
+          <ul class="list-unstyled white" role="menu">
+              <li><a href="/dev/">Developer Information</a></li>
+              <li><a href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+              <li><a href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+              <li><a href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+              <li><a href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+              <li><a href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+              <li><a href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+              <li><a href="/foundation/press/kit/">Brand Guidelines</a></li>
+              <li><a href="/logos/">Project Logos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">About</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="/foundation/">About</a></li>
+            <li><a href="/foundation/sponsors">Our Sponsors</a></li>
+	    <li><a href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+            <li><a href="/foundation/individual-supporters">Individual Supporters</a></li>
+            <li><a href="/foundation/leadership">Leadership</a></li>
+            <li><a href="/foundation/members">Members</a></li>
+            <li><a href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+            <li><a href="/press/">Newsroom</a></li>
+            <li><a href="/foundation/contact">Contact</a></li>
+            <li><a href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+      <hr class="col-lg-12 hr-white" />
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center">Copyright &#169; 2024 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+          <p class="text-center">Apache and the Apache feather logo are trademarks of The Apache Software Foundation. </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- / Footer -->
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    (function($){
+      $(document).ready(function(){
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          $(this).parent().siblings().removeClass('open');
+          $(this).parent().toggleClass('open');
+          console.log('WOrked');
+        });
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>

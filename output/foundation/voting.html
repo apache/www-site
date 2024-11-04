@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page of The Apache Software Foundation">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Apache Voting Process</title>
+  <link href="/css/Montserrat-300-600.css" rel="stylesheet">
+  <link href="/css/min.bootstrap.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/new-ui.css" rel="stylesheet">
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Apache Voting Process';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Apache Voting Process';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
+
+<body >
+  <!-- Navigation -->
+  <header>
+	<div id="skiptocontent">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top mainmenu">
+      
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnav-collapse">
+          <div class="upper-nav">
+            <div class="header-social-icons">
+              <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+              <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+              <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+              <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+              <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+            </div>
+            <a href="/foundation/sponsorship" class="btn btn-default" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Sponsor the ASF</a>
+          </div>
+          <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                <li><a href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="/community-resources/">Community Resources</a></li>
+                <li><a href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                <li><a href="https://events.apache.org/" target="_blank">Events</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                <li><a href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                <li><a href="/foundation/mailinglists">Mailing Lists </a></li>
+                <li><a href="/security">Report a Vulnerability</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                <li><a href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                <li><a href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                <li><a href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://news.apache.org/" target="_blank">Blog</a></li>
+                <li><a href="/foundation/how-it-works">How the ASF Works</a></li>
+                <li><a href="/theapacheway/">The Apache Way</a></li>
+                <li><a href="/legal/">Legal &amp; Trademark</a></li>
+                <li><a href="/licenses">Licenses</a></li>
+                <li><a href="/foundation/glossary">Glossary</a></li>
+                <li><a href="/foundation/faq">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/dev/">Developer Information</a></li>
+                <li><a href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                <li><a href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                <li><a href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                <li><a href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                <li><a href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                <li><a href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                <li><a href="/foundation/press/kit/">Brand Guidelines</a></li>
+                <li><a href="/logos/">Project Logos</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/foundation/">About</a></li>
+                <li><a href="/foundation/sponsors">Our Sponsors</a></li>
+		<li><a href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                <li><a href="/foundation/individual-supporters">Individual Supporters</a></li>
+                <li><a href="/foundation/leadership">Leadership</a></li>
+                <li><a href="/foundation/members">Members</a></li>
+                <li><a href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                <li><a href="/press/">Newsroom</a></li>
+                <li><a href="/foundation/contact">Contact</a></li>
+              </ul>
+            </li>
+            
+           
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                  aria-hidden="true"></span><span class="sr-only">Search</span></a>
+              <ul class="dropdown-menu search-form" role="search">
+                <li>
+                  <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- / Navigation -->
+  <header id="main-header" class="container">
+    <div class="sideImg">
+          <a class="visible-home" href="https://events.apache.org/x/current-event.html">
+            <img class="img-responsive" style="width: 125px;" src="/events/current-event-125x125.png" alt="Apache Events"/>
+<!-- STALE: <img class="img-responsive" style="width: 125px;" src="https://www.apachecon.com/event-images/default-square-light.png" alt="ApacheCon 2021 Coming Soon!" /> -->
+          </a>
+      <a class="hidden-home" href="/"><img class="img-responsive" src="/img/asf-estd-1999-logo.jpg" alt="The Apache Software Foundation"></a>
+    </div>
+    <div class="main">
+      <img class="img-responsive center-block visible-home" src="/img/asf-estd-1999-logo.jpg" alt="Apache 20th Anniversary Logo">
+
+    </div>
+ 
+  </header>
+  <main id="maincontent">
+<div class="container">    <h1 id="apache-voting-process">Apache Voting Process<a class="headerlink" href="#apache-voting-process" title="Permalink">&para;</a></h1>
+<p>Because one of the fundamental aspects of accomplishing things within the
+Apache framework is doing so by consensus, we need a
+way to tell whether we have reached consensus. We do this by voting.</p>
+<p>There are essentially three types of vote:</p>
+<ol>
+<li>
+<p>Procedural</p>
+</li>
+<li>
+<p>Code modifications</p>
+</li>
+<li>
+<p>Package releases</p>
+</li>
+</ol>
+<p>Votes on <strong>procedural issues</strong> follow the common format of majority rule unless
+otherwise stated. That is, if there are more favourable votes than
+unfavourable ones, the issue is considered to have passed -- regardless of
+the number of votes in each category. (If the number of votes seems too
+small to be representative of a community consensus, the issue is typically
+not pursued. However, see the description of <a href="#LazyConsensus">lazy
+consensus</a> for a modifying factor.)</p>
+<p>Votes on <strong>code modifications</strong> follow a different model. In this scenario, a
+negative vote constitutes a <a href="#Veto">veto</a> , which the voting group (generally the PMC of a project) cannot override.
+Again, this model may be modified by a <a href="#LazyConsensus">lazy consensus</a>
+declaration when the request for a vote is raised, but the full-stop nature
+of a negative vote does not change. Under normal (non-lazy consensus)
+conditions, the proposal requires three positive votes and no negative votes
+in order to pass; if it fails to garner the requisite amount of support, it
+doesn't. Then the proposer either withdraws the proposal or modifies the code and resubmits it,
+or the proposal simply languishes as an open issue until someone gets around to removing it.</p>
+<p>Votes on whether a <strong>package</strong> is ready to release use yet a
+different mechanism: are there are least three binding votes in favour of
+the release? See the <a href="../legal/release-policy.html#release-approval">release policy</a>
+for more information on voting and requirements for binding votes.</p>
+<h2 id="binding-votes">Binding votes<a class="headerlink" href="#binding-votes" title="Permalink">&para;</a></h2>
+<p>Who can vote is, to some extent, a community-specific thing.</p>
+<p>PMC members have formally binding votes, but in general communities encourage all their members to vote,
+even if their votes are only advisory.</p>
+<h2 id="implications-of-voting">Implications of voting<a class="headerlink" href="#implications-of-voting" title="Permalink">&para;</a></h2>
+<p>In some cases and communities, the exercise of a vote carries some
+responsibilities that may not be immediately obvious. For example, in some
+cases a favourable vote carries the implied message 'I approve <strong>and</strong> I'm
+willing to help.' Also, an unfavourable vote may imply that 'I disapprove,
+but I have an alternative and will help with that alternative.'</p>
+<p>The community should spell out in its guidelines the tacit implications of voting.
+However, <strong>in no case</strong> may someone's vote be considered
+invalid if it does not appear to meet the implied commitment: a vote is a
+formal expression of opinion, <em>not</em> of commitment.</p>
+<p>If the <a href="#ReviewThenCommit">R-T-C</a> policy is in effect, a positive vote
+carries the very strong implied message, 'I have tested this patch myself,
+and found it good.' Similarly, a negative vote usually means that that the voter tested
+the patch and found it to be <em>not</em> good, although the veto (for such it is
+in this case) may be based on other technical grounds.</p>
+<h2 id="expressing-votes-1-0-1-and-fractions">Expressing votes: +1, 0, -1, and fractions<a class="headerlink" href="#expressing-votes-1-0-1-and-fractions" title="Permalink">&para;</a></h2>
+<p>The voting process in Apache may seem more than a little weird if you've
+never encountered it before. Votes are represented as numbers between -1
+and +1, with '-1' meaning 'no' and '+1' meaning 'yes.'</p>
+<p>The in-between values indicate how strongly the voting individual
+feels. Here are some examples of fractional votes and what the voter <em>might</em> be communicating with them:</p>
+<ul>
+<li>
+<p>+0: 'I don't feel strongly about it, but I'm okay with this.'</p>
+</li>
+<li>
+<p>-0: 'I won't get in the way, but I'd rather we didn't do this.'</p>
+</li>
+<li>
+<p>-0.5: 'I don't like this idea, but I can't find any rational
+justification for my feelings.'</p>
+</li>
+<li>
+<p>++1: 'Wow! I like this! Let's <em>do</em> it!'</p>
+</li>
+<li>
+<p>-0.9: 'I <em>really</em> don't like this, but I'm not going to stand in the way
+if everyone else wants to go ahead with it.'</p>
+</li>
+<li>
+<p>+0.9: 'This is a cool idea and i like it, but I don't have time/the
+skills necessary to help out.'</p>
+</li>
+</ul>
+<p>Votes from PMC Members on releases must use +1, 0, -1 to be considered binding.</p>
+<p>Voting periods should generally run for at least 72 hours to provide
+an opportunity for all concerned persons to participate, regardless of their
+geographic location.</p>
+<h3 id="votes-on-code-modification">Votes on code modification<a class="headerlink" href="#votes-on-code-modification" title="Permalink">&para;</a></h3>
+<p>For code-modification votes, +1 votes are in favour of the proposal, but -1
+votes are <a href="#Veto">vetos</a> and kill the proposal dead until all vetoers
+withdraw their -1 votes.</p>
+<p>Unless the proposer declares that the vote is using <a href="#LazyConsensus">lazy consensus</a>,
+three +1 votes are required for a code-modification proposal to pass.</p>
+<p>We recommend whole numbers for this type of vote, as the opinion the voter is
+expressing is Boolean: 'I approve/do not approve of this change.'</p>
+<h3 id="ReleaseVotes">Votes on package releases<a class="headerlink" href="#ReleaseVotes" title="Permalink">&para;</a></h3>
+<p>Votes on whether a package is ready to release use
+<a href="glossary.html#MajorityApproval">majority approval</a> --
+i.e. at least three PMC members must vote affirmatively
+for release, and there must be more positive than negative votes.
+<strong>Releases may not be vetoed.</strong>
+Generally the community
+will cancel the release vote if anyone identifies serious problems, but
+in most cases the ultimate decision
+lies with the individual serving as release manager. The
+specifics of the process may vary from project to project, but the 'minimum
+quorum of three +1 votes' rule is universal.</p>
+<p>Note that there is no implicit +1 from the release manager,
+or from anyone in any ASF vote. Only explicit votes are valid.
+The release manager is encouraged to vote on releases,
+like any reviewer would do.</p>
+<h2 id="Veto">Vetoes<a class="headerlink" href="#Veto" title="Permalink">&para;</a></h2>
+<p>A -1 vote by a qualified voter stops a code-modification proposal in its tracks. This constitutes a veto, and it cannot be overruled
+nor overridden by anyone. Vetoes stand until and unless the individual withdraws their veto.</p>
+<p>To prevent vetoes from being used capriciously, the voter must provide with the veto
+a technical justification showing why the change is bad (opens a security
+exposure, negatively affects performance, <em>etc.</em> ). A veto without a
+justification is invalid and has no weight.</p>
+<h2 id="LazyConsensus">Gauging consensus through silence<a class="headerlink" href="#LazyConsensus" title="Permalink">&para;</a></h2>
+<p>An alternative to voting is to measure the
+acceptability of something using the concept of
+<a href="glossary.html#LazyConsensus">lazy consensus</a>.</p>
+<p>Lazy consensus is simply an announcement of 'silence gives assent.' When
+someone wants to determine the sense of the community this way, they might do
+so with a mail message such as:</p>
+<pre><code>"The patch below fixes bug #8271847; if no-one objects within three
+days, I'll assume lazy consensus and commit it."
+</code></pre>
+<p>You cannot apply lazy consensus to code changes when the
+<a href="glossary.html#ReviewThenCommit">review-then-commit</a> policy is in effect.</p>
+<h2 id="reasons-for-votes">Reasons for votes<a class="headerlink" href="#reasons-for-votes" title="Permalink">&para;</a></h2>
+<p>People tend to avoid conflict and thrash around looking for something to
+substitute - somebody in charge, a rule, a process, stagnation. None of
+these tend to be very good substitutes for doing the hard work of resolving
+the conflict.</p>
+
+</div>  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <br />
+        <div class="col-sm-2">
+          <h5 class="white">Community</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+            <li><a href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+            <li><a href="/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="/community-resources/">Community Resources</a></li>
+            <li><a href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+            <li><a href="https://events.apache.org/" target="_blank">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Projects</h5>
+          <ul class="list-unstyled white" role="menu">
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+              <li><a href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+              <li><a href="/foundation/mailinglists">Mailing Lists </a></li>
+              <li><a href="/security">Report a Vulnerability</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5 class="white">Downloads</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+            <li><a href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+            <li><a href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+            <li><a href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Learn</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="https://news.apache.org/" target="_blank">Blog</a></li>
+            <li><a href="/foundation/how-it-works">How the ASF Works</a></li>
+            <li><a href="/theapacheway/">The Apache Way</a></li>
+            <li><a href="/legal/">Legal &amp; Trademark</a></li>
+            <li><a href="/licenses">Licenses</a></li>
+            <li><a href="/foundation/glossary">Glossary</a></li>
+            <li><a href="/foundation/faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Resources &amp; Tools</h5>
+          <ul class="list-unstyled white" role="menu">
+              <li><a href="/dev/">Developer Information</a></li>
+              <li><a href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+              <li><a href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+              <li><a href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+              <li><a href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+              <li><a href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+              <li><a href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+              <li><a href="/foundation/press/kit/">Brand Guidelines</a></li>
+              <li><a href="/logos/">Project Logos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">About</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="/foundation/">About</a></li>
+            <li><a href="/foundation/sponsors">Our Sponsors</a></li>
+	    <li><a href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+            <li><a href="/foundation/individual-supporters">Individual Supporters</a></li>
+            <li><a href="/foundation/leadership">Leadership</a></li>
+            <li><a href="/foundation/members">Members</a></li>
+            <li><a href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+            <li><a href="/press/">Newsroom</a></li>
+            <li><a href="/foundation/contact">Contact</a></li>
+            <li><a href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+      <hr class="col-lg-12 hr-white" />
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center">Copyright &#169; 2024 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+          <p class="text-center">Apache and the Apache feather logo are trademarks of The Apache Software Foundation. </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- / Footer -->
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    (function($){
+      $(document).ready(function(){
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          $(this).parent().siblings().removeClass('open');
+          $(this).parent().toggleClass('open');
+          console.log('WOrked');
+        });
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>
