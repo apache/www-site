@@ -86,8 +86,7 @@ file by preparing a detached PGP signature. For example,
 
 This will create a file named `icla.pdf.asc`. 
 
-Send both the file (icla.pdf) and the signature (icla.pdf.asc) as attachments in the same email to secretary@apache.org. Send only one 
-document (file plus signature) per email. 
+Send both the file (icla.pdf) and the signature (icla.pdf.asc) as attachments in the same email to secretary@apache.org.  Please send only one complete document (file plus signature) in each email. 
 
 Do not submit your **public key** to Apache. Instead, upload your public key to `keyserver.ubuntu.com`.
 
