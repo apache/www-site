@@ -32,28 +32,41 @@
   <link href="/css/styles.css" rel="stylesheet">
   <link href="/css/new-ui.css" rel="stylesheet">
   <script src="https://www.apachecon.com/event-images/snippet.js"></script>
-  <style>
+ 
 .headerlink {
   visibility: hidden;
 }
 dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
   visibility: visible
-}  </style>
-
+}  
   <!-- pagefind search -->
-  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet"> 
   <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#pagefind-search" });
-    });
-    var pageTitle = 'Welcome to The Apache Software Foundation!';
-    if(pageTitle === '404'){
-      window.addEventListener('DOMContentLoaded', (event) => {
-          new PagefindUI({ element: "#page-404-search" });
+      // Initialize the Pagefind UI for the main search
+      new PagefindUI({ element: "#pagefind-search" });
+  
+      // Get the search button and input field
+      const searchButton = document.querySelector('.dropdown-toggle'); //  class of the button
+      const searchInput = document.querySelector('#pagefind-search input'); // The input field for Pagefind search
+  
+      // Add click event to focus on the input when the button is clicked
+      searchButton.addEventListener('click', () => {
+        searchInput.focus(); // Focus on the input field when the button is clicked
       });
-    }
+  
+      // Check if the page is a 404 and initialize the search UI for the 404 page
+      const pageTitle = 'Welcome to The Apache Software Foundation!'; // Assuming this is a template engine placeholder
+      if (pageTitle === '404') {
+        // Initialize the Pagefind UI for the 404 page
+        new PagefindUI({ element: "#page-404-search" });
+      }
+    });
   </script>
+  
+  
   
 
   <!-- Matomo -->
@@ -399,48 +412,48 @@ s=d.getElementsByTagName('script')[0];
 <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
 <ul class="nav nav-tabs">
 <li class="active">
-<a data-toggle="tab" href="#kudu">Kudu</a>
+<a data-toggle="tab" href="#airflow">Airflow</a>
 </li><li>
-<a data-toggle="tab" href="#mina">MINA</a>
+<a data-toggle="tab" href="#tinkerpop">TinkerPop</a>
 </li><li>
-<a data-toggle="tab" href="#vcl">VCL</a>
+<a data-toggle="tab" href="#db">DB</a>
 </li>
 </ul>
 </div>
 </div>
 <div class="col-md-9 col-sm-12">
 <div class="tab-content">
-<div class="tab-pane fade in active" id="kudu">
+<div class="tab-pane fade in active" id="airflow">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/kudu/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/airflow/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-kudu"><a href="http://kudu.apache.org/">Kudu</a></h4>
-<p>A distributed columnar storage engine built for the Apache Hadoop ecosystem</p>
-<a class="btn btn-default btn-sm" href="http://kudu.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-airflow"><a href="http://airflow.apache.org/">Airflow</a></h4>
+<p>workflow automation and scheduling that can be used to author and manage data pipelines</p>
+<a class="btn btn-default btn-sm" href="http://airflow.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="mina">
+</div><div class="tab-pane fade in" id="tinkerpop">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/mina/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/tinkerpop/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-mina"><a href="http://mina.apache.org/">MINA</a></h4>
-<p>Multipurpose Infrastructure for Network Application</p>
-<a class="btn btn-default btn-sm" href="http://mina.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-tinkerpop"><a href="http://tinkerpop.apache.org/">TinkerPop</a></h4>
+<p>A graph computing framework for both graph databases (OLTP) and graph analytic systems (OLAP)</p>
+<a class="btn btn-default btn-sm" href="http://tinkerpop.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="vcl">
+</div><div class="tab-pane fade in" id="db">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/vcl/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/db/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-vcl"><a href="http://vcl.apache.org/">VCL</a></h4>
-<p>Virtual Computing Lab</p>
-<a class="btn btn-default btn-sm" href="http://vcl.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-db"><a href="http://db.apache.org/">DB</a></h4>
+<p>Database access</p>
+<a class="btn btn-default btn-sm" href="http://db.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
 </div>
@@ -459,48 +472,48 @@ s=d.getElementsByTagName('script')[0];
 <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
 <ul class="nav nav-tabs">
 <li class="active">
-<a data-toggle="tab" href="#pegasus">Pegasus</a>
+<a data-toggle="tab" href="#seata">Seata</a>
 </li><li>
-<a data-toggle="tab" href="#baremaps">Baremaps</a>
+<a data-toggle="tab" href="#stormcrawler">StormCrawler</a>
 </li><li>
-<a data-toggle="tab" href="#polaris">Polaris</a>
+<a data-toggle="tab" href="#graphar">GraphAr</a>
 </li>
 </ul>
 </div>
 </div>
 <div class="col-md-9 col-sm-12">
 <div class="tab-content">
-<div class="tab-pane fade in active" id="pegasus">
+<div class="tab-pane fade in active" id="seata">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/pegasus/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/seata/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-pegasus"><a href="http://pegasus.incubator.apache.org/">Pegasus</a></h4>
-<p>Pegasus is a distributed key-value storage system which is designed to be simple, horizontally scalable, strongly consistent and high-performance.</p>
-<a class="btn btn-default btn-sm" href="http://pegasus.incubator.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="incubating-project-seata"><a href="http://seata.incubator.apache.org/">Seata</a></h4>
+<p>Seata(Simple Extensible Autonomous Transaction Architecture)is an easy-to-use and high-performance distributed transaction solution, used to solve the data consistency problem.</p>
+<a class="btn btn-default btn-sm" href="http://seata.incubator.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="baremaps">
-<div class="row">
-<div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/incubator/default.png"/>
-</div>
-<div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-baremaps"><a href="http://baremaps.incubator.apache.org/">Baremaps</a></h4>
-<p>Apache Baremaps is a toolkit and a set of infrastructure components for creating, publishing, and operating online maps.</p>
-<a class="btn btn-default btn-sm" href="http://baremaps.incubator.apache.org/" role="button">Learn More...</a>
-</div>
-</div>
-</div><div class="tab-pane fade in" id="polaris">
+</div><div class="tab-pane fade in" id="stormcrawler">
 <div class="row">
 <div class="col-sm-2">
 <img alt="Logo" class="img-responsive center-block" src="/logos/res/incubator/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-polaris"><a href="http://polaris.incubator.apache.org/">Polaris</a></h4>
-<p>Polaris is a catalog for data lakes. It provides new levels of choice, flexibility and control over data, with full enterprise security and Apache Iceberg interoperability across a multitude of engines and infrastructure.</p>
-<a class="btn btn-default btn-sm" href="http://polaris.incubator.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="incubating-project-stormcrawler"><a href="http://stormcrawler.incubator.apache.org/">StormCrawler</a></h4>
+<p>StormCrawler is a collection of resources for building low-latency, customisable and scalable web crawlers on Apache Storm.</p>
+<a class="btn btn-default btn-sm" href="http://stormcrawler.incubator.apache.org/" role="button">Learn More...</a>
+</div>
+</div>
+</div><div class="tab-pane fade in" id="graphar">
+<div class="row">
+<div class="col-sm-2">
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/incubator/default.png"/>
+</div>
+<div class="col-sm-10">
+<h4 class="no-btm-margin" id="incubating-project-graphar"><a href="http://graphar.incubator.apache.org/">GraphAr</a></h4>
+<p>GraphAr is an open-source and language-independent data file format designed for efficient graph data storage and retrieval.</p>
+<a class="btn btn-default btn-sm" href="http://graphar.incubator.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
 </div>
