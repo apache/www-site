@@ -17,7 +17,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
        <li><a target="_blank" rel="sponsored" href="https://www.apple.com/"><img src="images/apple-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Apple</p></li>
       <li><a target="_blank" rel="sponsored" href="https://aws.amazon.com/"><img src="images/aws-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Amazon Web Services</p></li>
       <li><a target="_blank" rel="sponsored" href="http://facebook.com/"><img src="images/facebook.png"/></a><p style="text-align: center; font-weight: bold;">Facebook</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.geico.com/tech/"><img src="images/geico-platinum.png"/></a><p style="text-align: center; font-weight: bold;">GEICO</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.geico.com/tech/"><img src="images/geico-platinum2.png"/></a><p style="text-align: center; font-weight: bold;">GEICO</p></li>
       <li><a target="_blank" rel="sponsored" href="http://google.com/"><img src="images/google.png"/></a><p style="text-align: center; font-weight: bold;">Google</p></li>
       <li><a target="_blank" rel="sponsored" href="http://huawei.com/"><img src="images/huawei-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Huawei</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
