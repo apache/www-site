@@ -1,0 +1,273 @@
+Advisory: Apache Software Foundation Projects and "httpoxy" CERT VU#797896
+
+Canonical URL: https://www.apache.org/security/asf-httpoxy-response.txt
+
+Publication: v1.0  18 July 2016
+
+
+Audience
+--------
+
+This Advisory is directed to HTTP web server administrators and users of
+the software indicated below, including CGI developers.
+
+This Advisory is not directed to a general audience, especially web browser
+users. The issues raised by the "httpoxy" class of vulnerabilities affect
+web servers, and are not an issue for consumers of web services to address.
+
+
+Background
+----------
+
+The ASF (Apache Software Foundation) offers a number of software packages
+which offer HTTP protocol ("Web") requests and responses, and offer the
+developer or administrator CGI (Common Gateway Interface) routing through
+these software packages.
+
+The Apache HTTP Server (httpd and mod_fcgid), Apache Perl (mod_perl) and
+Apache Tomcat projects all offer CGI handling of HTTP requests.
+
+The Apache Traffic Server proxies HTTP requests, but offers no CGI support.
+
+Many other ASF projects utilize the HTTP protocol, but at this time we have
+not identified any which provide CGI handling, or forward the HTTP "Proxy:"
+header implicated in the "httpoxy" class of issues. In the event that other
+projects discover such a defect, or can contribute to mitigating this class
+of issues, this Advisory will be updated.
+
+Note especially that PHP (http://www.php.net) is not an Apache Software
+Foundation project (this is a common point of confusion), and that this
+Advisory does not attempt to address third-party software, scripts, 
+libraries or components affected by the "httpoxy" group of issues.
+
+See https://httpoxy.org/ (not affiliated with the ASF) for a complete 
+discussion of the "httpoxy" class of issues, which are not reiterated
+in this advisory.
+
+The Apache Software Foundation wishes to thank Dominic Scheirlinck
+and Scott Geary of Vend for bringing this issue to the attention of
+the ASF Security Team for a well-coordinated community response.
+
+
+Apache HTTP Server (httpd)
+--------------------------
+
+Apache HTTP Server may be configured to proxy HTTP requests as a forward
+or reverse (gateway) proxy server, can proxy requests to a FastCGI service
+using mod_proxy_fcgi, can directly serve CGI applications using mod_cgi
+or mod_cgid or the related mod_isapi service. The project's mod_fcgid
+subproject (available as a separate add-in module) directly manages CGI
+scripts using the FastCGI protocol.
+
+It may also be configured to directly host a number of external modules
+which run CGI-style applications in-process. The server itself does not 
+modify the CGI environment in this case, however, these external modules
+may perform such modifications of their environment variables in-process.
+Such examples include mod_php, mod_perl and mod_wsgi.
+
+To mitigate "httpoxy" issues across all of the above mechanisms, the most
+direct solution is to drop any "Proxy:" header arriving from an upstream
+proxy server or the origin user-agent. this will mitigate the issue for any
+vulnerable back-end server or CGI across all traffic through this server. 
+
+The two lines below enabled in the httpd.conf file will remove the "Proxy:"
+header from all incoming requests, before further processing;
+
+    LoadModule headers_module {path-to}/mod_headers.so
+
+    RequestHeader unset Proxy early
+
+(Users who have mod_headers compiled-in to the httpd binary must omit
+the LoadModule directive above, others must adjust the {path-to} to point
+to the mod_headers.so file.)
+
+If the administrator wishes to preserve the value of the "Proxy:" header
+for most traffic, and only eliminate it from the CGI environment variable
+HTTP_PROXY, a second mitigation is offered. This patch will address this
+behavior in mod_cgi, mod_cgid, mod_isapi, mod_proxy_fcgi and mod_fcgid,
+along with all other consumers of httpd's built-in environment handling.
+
+The bundled httpd modules all rely on ap_add_common_vars() to set up the
+target CGI environment. The project will include the recommended patch
+below in all subsequent releases of httpd, including 2.4.24 and 2.2.32.
+Users who build httpd 2.2.x or 2.4.x from source may apply the patch below,
+recompile and re-install httpd to obtain this mitigation. This migitation
+has been assigned the identifier CVE-2016-5387 <http://cve.mitre.org>.
+
+======= Patch to httpd sources 2.4.x and 2.2.x =======
+--- server/util_script.c	(revision 1752426)
++++ server/util_script.c	(working copy)
+@@ -186,6 +186,14 @@ AP_DECLARE(void) ap_add_common_vars(request_rec *r
+         else if (!strcasecmp(hdrs[i].key, "Content-length")) {
+             apr_table_addn(e, "CONTENT_LENGTH", hdrs[i].val);
+         }
++        /* HTTP_PROXY collides with a popular envvar used to configure
++         * proxies, don't let clients set/override it.  But, if you must...
++         */
++#ifndef SECURITY_HOLE_PASS_PROXY
++        else if (!strcasecmp(hdrs[i].key, "Proxy")) {
++            ;
++        }
++#endif
+         /*
+          * You really don't want to disable this check, since it leaves you
+          * wide open to CGIs stealing passwords and people viewing them
+======= End Patch =======
+
+
+Apache HTTP Server (mod_fcgid)
+------------------------------
+
+Either mitigation listed above for Apache HTTP Server (httpd) guidance above
+also mitigates all risks for CGI's which are invoked by mod_fcgid. Therefore
+any CVE with respect to mod_fcgid is revoked as duplicate of CVE-2016-5387.
+
+
+Apache Perl Module (mod_perl)
+-----------------------------
+
+Either mitigation listed for Apache HTTP Server (httpd) guidance above
+also mitigates "httpoxy" risks for requests which are served by mod_perl.
+
+Note also that the Perl LWP::HTTP package has long avoided recognizing
+the HTTP_PROXY environment variable, when serving CGI requests.
+
+
+Apache Tomcat
+-------------
+
+Apache Tomcat provides a CGI Servlet that allows to execute a CGI
+script. The CGI Servlet isn't active in the configuration delivered by
+the ASF and activating it requires the user to modify the web.xml delivered.
+
+To mitigate "httpoxy" issues in CGI Servlet there are 3 possible ways:
+
+1 - Add a filter in the webapp that uses CGI scripts simple code to
+reject the  requests with PROXY headers via 400 "bad request" error.
+Map the filter in web.xml of the webapp. Code like the following will
+allow that:
++++
+import javax.servlet.Filter;
+import javax.servlet.FilterConfig;
+import javax.servlet.FilterChain;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.ServletException;
+
+/*
+ * Simple filter
+ */
+public class PoxyFilter implements Filter {
+
+    protected FilterConfig filterConfig;
+
+    public void init(FilterConfig filterConfig) throws ServletException {
+        this.filterConfig = filterConfig;
+    }
+
+
+    public void destroy() {
+        this.filterConfig = null;
+    }
+
+    public void doFilter(ServletRequest request, ServletResponse response,
+                         FilterChain chain) throws java.io.IOException,
+                                                   ServletException {
+
+
+        HttpServletRequest req = (HttpServletRequest)request;
+        HttpServletResponse res = (HttpServletResponse)response;
+
+        String poxy = req.getHeader("proxy");
+        if (poxy == null) {
+          // call next filter in the chain.
+          chain.doFilter(request, response);
+        } else {
+          res.sendError(400);
+        }
+    }
+}
++++
+
+2 - Add a global valve to reject requests with PROXY header, create a
+PoxyValve.java with below content, compile it and put it in a jar and
+put the jar in the lib installation of your tomcat. Add the line  <Valve
+className="PoxyValve" /> in conf/server.xml (like after the
+AccessLogValve) and restart Tomcat:
+
++++
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+
+import org.apache.catalina.valves.ValveBase;
+import org.apache.catalina.connector.Request;
+import org.apache.catalina.connector.Response;
+
+import org.apache.catalina.Context;
+import org.apache.catalina.Realm;
+import org.apache.catalina.Session;
+
+public class PoxyValve
+    extends ValveBase {
+
+    public void invoke(Request request, Response response)
+        throws IOException, ServletException {
+
+        String poxy = request.getHeader("Proxy");
+        if (poxy != null) {
+            response.sendError(400);
+            return;
+        }
+        getNext().invoke(request, response);
+    }
+}
++++
+
+3 - Fix the CGIServlet code with the following patch and recompile
+Tomcat and replace the catalina.jar by the produced one in you
+installation and restart Tomcat:
+
++++
+--- java/org/apache/catalina/servlets/CGIServlet.java   (revision 1724080)
++++ java/org/apache/catalina/servlets/CGIServlet.java   (working copy)
+@@ -1095,7 +1095,8 @@
+                 //REMIND: change character set
+                 //REMIND: I forgot what the previous REMIND means
+                 if ("AUTHORIZATION".equalsIgnoreCase(header) ||
+-                    "PROXY_AUTHORIZATION".equalsIgnoreCase(header)) {
++                    "PROXY_AUTHORIZATION".equalsIgnoreCase(header) ||
++                    "PROXY".equalsIgnoreCase(header)) {
+                     //NOOP per CGI specification section 11.2
+                 } else {
+                     envp.put("HTTP_" + header.replace('-', '_'),
++++
+
+A mitigation is planned for future releases of Tomcat, tracked as
+CVE-2016-5388, which will allow the user to prevent values like
+HTTP_PROXY from being propagated to the CGI Servlet environment.
+
+
+Apache Traffic Server (ATS)
+---------------------------
+
+Apache Traffic Server is unaffected by this class of vulnerabilities, as
+it provides no direct CGI or FastCGI request handling. As a proxy server,
+ATS may be configured to route requests to vulnerable CGI applications as
+described by the "httpoxy" class of exploits.
+
+Apache Traffic Server can be configured to drop the HTTP "Proxy:" request
+header from incoming requests as a mitigation, to prevent this request
+header from being forwarded to potentially unhardened backend servers.
+One configuration to strip the Proxy header is:
+
+    /usr/local/etc/trafficserver/plugin.config
+        header_rewrite.so strip_proxy.conf
+
+    /usr/local/etc/trafficserver/strip_proxy.conf
+        cond %{READ_REQUEST_HDR_HOOK}
+        rm-header Proxy
+
+

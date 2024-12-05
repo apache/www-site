@@ -1,0 +1,54 @@
+# See: https://cwiki.apache.org/confluence/display/INFRA/git+-+.asf.yaml+features
+github:
+  features:
+    # Enable issue management
+    issues: true
+  enabled_merge_buttons:
+    squash: true
+    merge: false
+    rebase: false
+
+notifications:
+  commits: site-cvs@apache.org
+  issues: site-cvs@apache.org
+  pullrequests: site-cvs@apache.org
+  jira_options: link label
+  commits_by_path:
+    "data/eccn/*": legal-discuss@apache.org
+    "content/legal/*": legal-discuss@apache.org
+    "content/licenses/*": legal-discuss@apache.org
+    "content/free/*": legal-discuss@apache.org
+    "content/foundation/license-faq.*": legal-discuss@apache.org
+    "content/foundation/marks/*":
+      - legal-discuss@apache.org
+      - trademarks@apache.org
+    "content/foundation/marks/events.*": events-commits@apache.org
+    "content/foundation/policies/anti-harassment.*": events-commits@apache.org
+    "content/foundation/press/*": markpub@apache.org
+    "content/foundation/contributing.*": markpub@apache.org
+    "content/foundation/thanks.*": markpub@apache.org
+    "content/foundation/sponsorship.*": markpub@apache.org
+    "content/foundation/buy_stuff.*": markpub@apache.org
+    "content/press/*": markpub@apache.org
+    "content/security/*": security@apache.org
+    "content/foundation/board/*": board-cvs@apache.org
+    "content/board/*": board-cvs@apache.org
+
+pelican:
+  notify: site-cvs@apache.org
+  autobuild: preview/*
+  target: asf-site
+  theme: theme/apache
+  # N.B. currently the page count is also defined in the hourly cron job - go figure
+  minimum_page_count: 170
+  whoami: main
+
+staging:
+  profile: ~
+  whoami: asf-site
+  autostage: preview/*
+
+publish:
+  profile: ~
+  whoami: asf-site
+
