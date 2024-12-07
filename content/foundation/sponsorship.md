@@ -35,6 +35,7 @@ For non-sponsorship corporate contributions and individuals wishing to make a fi
 <li>Sponsor co-authored Case Study</li>
 <li>“Success At Apache” Guest Post</li>
 <li>Dedicated Sponsorship Ambassador</li>
+<li><strong>NEW</strong> ASF Community over Code Conference Sponsorship <a href="https://communityovercode.org/asf-sponsorship-discounts/">Discounts</a></li>
 </ul>
 
 </td>
@@ -56,6 +57,7 @@ For non-sponsorship corporate contributions and individuals wishing to make a fi
 <li>Listed in ASF Annual Reports</li>
 <li>Sponsor co-authored Case Study</li>
 <li>Dedicated Sponsorship Ambassador</li>
+<li><strong>NEW</strong> ASF Community over Code Conference Sponsorship <a href="https://communityovercode.org/asf-sponsorship-discounts/">Discounts</a></li>
 </ul>
 
 </td></tr>
