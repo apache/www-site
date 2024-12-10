@@ -580,4 +580,4 @@ releases be primarily based on a signed source package.
 
 #### Is there any way to measure how many times XYZ has been downloaded?  {#downloads}
 
-Visit <a href="https://logging1-he-de.apache.org/stats/" target="_blank">the download stats page</a>.
+Visit <a href="https://logs.apache.org/stats/" target="_blank">the download stats page</a>.
