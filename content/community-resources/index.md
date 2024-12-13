@@ -18,3 +18,4 @@ Your Awesome List of community programs and resources.
 | [Google Summer of Code (GSoC)](https://community.apache.org/gsoc/) |  A global, online mentoring program focused on introducing new contributors to open source software development. ASF is registered as a mentoring organization for GSoC. |
 | [Mentoring](https://community.apache.org/mentoring/) |  Mentoring is the process of actively bringing someone along in a discipline - investing your time into influencing the future. |
 | [Travel Assistance](https://tac.apache.org/) |  ASF provides financial assistance to those who would otherwise be unable to attend various Community Over Code events. |
+| [Working Groups](https://community.apache.org/workinggroups/) | Working groups are informal groups who are working on specific tasks or topics. Each group has a mission, and operates independently, reporting back to the PMC on any activities that it wishes to make visible to the ASF Membership.|
