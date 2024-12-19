@@ -47,7 +47,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <h3 class="h1"style="text-align: center;">Silver Sponsors:</h3>  <!-- 150x67 -->
    <div class="sponsors">
    <ul id='silver'>
-      <li><a target="_blank" rel="sponsored" href="http://www.aetna.com/"><img src="images/aetna_sponsorlogo.png"/></a><p style="text-align: center; font-weight: bold;">Aetna</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.americanexpress.com/en-us/careers/career-areas/technology/"><img src="images/amer-exp-silver.png"/></a><p style="text-align: center; font-weight: bold;">American Express</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.capitalone.com/"><img src="images/capitalone-silver.png"/></a><p style="text-align: center; font-weight: bold;">Capital One</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/"><img src="images/indeed-silver.png"/></a><p style="text-align: center; font-weight: bold;">Indeed</p></li>
@@ -63,7 +62,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <div class="sponsors">
    <ul id='bronze'>
       <li><a target="_blank" rel="sponsored" href="https://www.canva.com/">Canva Engineering</a></li>
-      <li><a target="_blank" rel="sponsored" href="http://engineering.cerner.com/">Cerner</a></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.cargurus.com/">CarGurus</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
       <li><a target="_blank" rel="sponsored" href="https://datastrato.com">Datastrato</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
@@ -114,7 +113,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    <h3 class="h1"style="text-align: center;">Targeted Silver Sponsors:</h3> <!-- 150x67 -->
    <div class="sponsors">
    <ul id='targetedsilver'>
-      <li><a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage"><img src="images/instaclustr-silver.png"/></a><p style="text-align: center; font-weight: bold;">Instaclustr</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage"><img src="images/netapp-instaclustr-silver.png"/></a><p style="text-align: center; font-weight: bold;">NetApp Instaclustr</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.mi.com/"><img src="images/xiaomi-silver.png"/></a><p style="text-align: center; font-weight: bold;">Xiaomi</p></li>
    </ul>
    </div>  
