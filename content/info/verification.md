@@ -100,8 +100,8 @@ If the .asc file is a self-contained signed file, GPG will only check that, and 
     gpg: Can't check signature: public key not found
 
 This means that we don't have the release manager's public key (`DE885DD3`)
-in our local system. You now need to retrieve the public key from a key
-server. One popular server is `pgpkeys.mit.edu` (which has a [web
+in our local system. You now need to retrieve the public key. The best source is the project's KEYS file. If you retrieve what seems to be the correct public key from a public key
+server, you must <a href="https://www.irif.fr/~jch/software/pgp-validating.html" target="_blank">validate it</a>. One popular server is `pgpkeys.mit.edu` (which has a [web
 interface](http://pgp.mit.edu/) ). The public key servers are linked
 together, so you should be able to connect to any key server.
 
