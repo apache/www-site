@@ -14,6 +14,7 @@ read the <a href="/foundation/governance/pmcs" target="_blank">PMC Governance ov
   - [What is a PMC?](pmc.html#what-is-a-pmc)
   - [PMC required policies](pmc.html#policy)
   - [How to perform the duties of the PMC chair](pmc.html#chair)
+  - [How to perform a PMC roll call](pmc.html#roll-call)
   - [PMC membership management](pmc.html#pmcmembers)
   - [Project committer management](pmc.html#committer-management)
   - [PMC FAQs and how-tos](pmc.html#faq)
@@ -254,20 +255,21 @@ for users of the project's code.
 
 ### How to perform a PMC roll call  {#roll-call}
 
-The Board sometimes asks for a roll call for projects that fail to
+The Board may asks for a roll call from projects that fail to
 report regularly, have very little visible activity on their mailing lists
-or releases, or do not seem to be responsive to security issues.
+or have not made expected software releases for a long time, or do not 
+seem to be responsive to security issues.
 
 If a Director (on behalf of the Board) asks a PMC to perform a roll
 call, the PMC **must** respond by showing via an email thread that
 [at least three PMC members](/legal/release-policy.html#release-approval)
 are active.
 
-A PMC can do this by each of its active members replying to a thread
+A PMC can do this by each of its active members replying-all to a thread
 to `board@`, or by having one PMC member send a link to a thread on the PMC's
 lists where at least three PMC members reply that they are still monitoring
 the project and could assist with creating new releases if needed. **Be sure**
-to let the `board@` mailing list know when at least three PMC members have
+to let the `board@` mailing list know once at least three PMC members have
 responded (or always cc: `board@`).
 
 Projects **must** reply to the Board's request for a roll call. Failure
@@ -278,34 +280,37 @@ for lack of oversight.
 
 See also [why would a project move to the Attic?](pmc.html#move-to-attic), above.
 
-A recommended phrasing for a request for roll call follows:
+A recommended template to send a roll call request to a PMC is:
 
 ```
     To: private@__PROJECT__.apache.org
     Cc: board@apache.org
-    Subject: __PROJECT__ roll call requested
+    Subject: [ROLL CALL] __PROJECT__ roll call - responses required
 
     Dear __PROJECT__ PMC,
 
-    As part of your oversight of your project, the board expects that at
+    As part of your PMC's oversight of your project, the board expects that at
     least three PMC members are actively paying attention, and are able
     to respond in a timely manner when called upon to perform tasks such
     as, for example, issuing a security release.
 
     To that end, and as discussed in the PMC documentation -
-    https://apache.org/dev/pmc.html#roll-call - the Board requests that
-    you answer this roll call. Please indicate by a simple response
-    whether you are paying attention to the project. Please indicate one
-    of the following:
+    https://apache.org/dev/pmc.html#roll-call - the Board requires that
+    you answer this roll call. Please indicate by Reply-All to both your
+    private@ list and the board@ list, your response whether you
+    are still paying attention to project governance. Your response should
+    indicate one of the following (feel free to add comments):
 
-    1: I am actively participating and paying attention
+    +1: I am actively participating and paying attention
     0: I am not actively participating, but could respond in the case
        of an emergency or need to issue a security release
     -1: (Or no response at all) I am no longer paying attention
 
-    Thank you.
+    Thank you for your work on ASF projects!
 
-    _____, for the Board of Directors
+    --
+    - __YOURNAME__
+    On Behalf Of The ASF Board
 ```
 
 ## PMC membership management  {#pmcmembers}
