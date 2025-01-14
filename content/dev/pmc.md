@@ -278,6 +278,36 @@ for lack of oversight.
 
 See also [why would a project move to the Attic?](pmc.html#move-to-attic), above.
 
+A recommended phrasing for a request for roll call follows:
+
+```
+    To: private@__PROJECT__.apache.org
+    Cc: board@apache.org
+    Subject: __PROJECT__ roll call requested
+
+    Dear __PROJECT__ PMC,
+
+    As part of your oversight of your project, the board expects that at
+    least three PMC members are actively paying attention, and are able
+    to respond in a timely manner when called upon to perform tasks such
+    as, for example, issuing a security release.
+
+    To that end, and as discussed in the PMC documentation -
+    https://apache.org/dev/pmc.html#roll-call - the Board requests that
+    you answer this roll call. Please indicate by a simple response
+    whether you are paying attention to the project. Please indicate one
+    of the following:
+
+    1: I am actively participating and paying attention
+    0: I am not actively participating, but could respond in the case
+       of an emergency or need to issue a security release
+    -1: (Or no response at all) I am no longer paying attention
+
+    Thank you.
+
+    _____, for the Board of Directors
+```
+
 ## PMC membership management  {#pmcmembers}
 
 ### How to add a PMC member  {#newpmcmember}
