@@ -292,10 +292,10 @@ A recommended phrasing for a request for roll call follows:
     to respond in a timely manner when called upon to perform tasks such
     as, for example, issuing a security release.
 
-    To that end, and as discussed in the PMC documentation - 
-    https://apache.org/dev/pmc.html#roll-call - the Board requests that 
-    you answer this roll call. Please indicate by a simple response 
-    whether you are paying attention to the project. Please indicate one 
+    To that end, and as discussed in the PMC documentation -
+    https://apache.org/dev/pmc.html#roll-call - the Board requests that
+    you answer this roll call. Please indicate by a simple response
+    whether you are paying attention to the project. Please indicate one
     of the following:
 
     1: I am actively participating and paying attention
