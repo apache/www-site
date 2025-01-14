@@ -280,6 +280,11 @@ See also [why would a project move to the Attic?](pmc.html#move-to-attic), above
 
 A recommended phrasing for a request for roll call follows:
 
+```
+    To: private@__PROJECT__.apache.org
+    Cc: board@apache.org
+    Subject: __PROJECT__ roll call requested
+
     Dear __PROJECT__ PMC,
 
     As part of your oversight of your project, the board expects that at
@@ -301,7 +306,7 @@ A recommended phrasing for a request for roll call follows:
     Thank you.
 
     _____, for the Board of Directors
-
+```
 
 ## PMC membership management  {#pmcmembers}
 
