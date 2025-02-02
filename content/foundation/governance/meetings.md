@@ -54,7 +54,7 @@ STV helps small, coherent constituencies elect directors to a board. This vote-c
 
 The most important thing to remember is: Vote the actual order of your preferences! Every effort is made to get your #1 preference onto the board; #1 votes are notably more important than the rest of your votes. If you vote in alphabetical order (as some seem to have done with past ballots) you're sending a strong signal that you'd prefer a board with names like Mr. Awful and Ms. Beastly - probably not what you intended. Our Apache STeVe tool randomizes the letters assigned to candidates to attempt to help with this.
 
-We calculate election results using Meek's Method for STV.  Technical details are in the [Apache STeVe project code](https://svn.apache.org/viewvc/steve/trunk/), which is, of course, its own Apache project.
+We calculate election results using Meek's Method for STV.  Technical details are in the [Apache STeVe project code](https://github.com/apache/steve), which is, of course, its own Apache project.
 
 The STV vote counting proceeds in a loop. The loop returns a name whenever a board candidate captures enough ballots to get elected. The process starts by assigning ballots to the #1 candidate indicated on each ballot. As the counting proceeds, ballots are reallocated. Sometimes it becomes necessary to admit somebody is not going to get elected; at that point, STeVe reallocates their ballots. When a candidate is elected, they takes with them only enough ballots to have gotten them elected; STeVe redistributes their other ballots to the lower-ranked preferences shown on that ballot.
 
