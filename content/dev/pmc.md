@@ -255,7 +255,7 @@ for users of the project's code.
 
 ### How to perform a PMC roll call  {#roll-call}
 
-The Board may asks for a roll call from projects that fail to
+The Board may ask for a roll call from projects that fail to
 report regularly, have very little visible activity on their mailing lists
 or have not made expected software releases for a long time, or do not 
 seem to be responsive to security issues.
