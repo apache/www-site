@@ -37,7 +37,7 @@ The website is built with [Pelican](https://blog.getpelican.com).
 
 Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
 mechanism, which runs [Buildbot](https://ci2.apache.org/#/builders/3).
-The build is triggered by changes to the source, and also every 8 hours (currently 1:22, 9:22, 17:22) to pick up changes to external data.
+The build is triggered by changes to the source, and also every 8 hours (currently 1:22, 9:22, 17:22) to pick up changes to external data. It also rotates the featured projects on the main page.
 
 - [Pelican Configuration](pelicanconf.yaml) -- Pelican configuration.
 - [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and Pelican. See [asfdata.py](https://github.com/apache/infrastructure-pelican/blob/master/plugins/asfdata.py).
