@@ -32,7 +32,7 @@ Immediately after the meeting, the new board takes office for their one-year ter
 
 ### How we tally member votes
 
-For a new member to be elected, they must receive more Yes votes than No votes from the Members who vote on their nomination, per our [bylaws 4.1][1].  Apache STeVe handles all vote tracking and tallies, with volunteer Members monitoring the process.  ASF Members handle the process of running and auditing votes privately.
+For a new member to be elected, they must receive at least three votes, and more Yes votes than No votes from the Members who vote on their nomination, per our [bylaws 4.1][1].  Apache STeVe handles all vote tracking and tallies, with volunteer Members monitoring the process.  ASF Members handle the process of running and auditing votes privately.
 
 Votes for new member candidates are secret; since the votes are about individual people, once the vote monitors have confirmed the result of the tallies, we do not share the results publicly.
 
