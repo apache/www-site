@@ -385,13 +385,11 @@ license text).
 
 <dd>
 
-Refers to a [vote](#Vote) (sense 1) which has completed with **at
-least three binding +1 votes** and more +1 votes than -1 votes. (
-*I.e.* , a simple majority with a minimum quorum of three positive
-votes.) Note that in votes requiring majority approval a -1 vote is
-simply a vote against, **not** a [veto](#Veto). Compare
-[Consensus Approval](#ConsensusApproval). See also the description of the [voting
-process](voting.html).
+Refers to a [vote](#Vote) (sense 1) which has completed with
+more +1 votes than -1 votes. Note that in votes requiring
+majority approval a -1 vote is simply a vote against, **not** a [veto](#Veto).
+Compare [Consensus Approval](#ConsensusApproval).
+See also the description of the [voting process](voting.html).
 
 </dd>
 

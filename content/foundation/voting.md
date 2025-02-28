@@ -109,7 +109,8 @@ expressing is Boolean: 'I approve/do not approve of this change.'
 ### Votes on package releases  {#ReleaseVotes}
 
 Votes on whether a package is ready to release use 
-[majority approval](glossary.html#MajorityApproval) -- 
+[majority approval](glossary.html#MajorityApproval),
+plus a minimum quorum of three positive votes,
 i.e. at least three PMC members must vote affirmatively
 for release, and there must be more positive than negative votes.
 **Releases may not be vetoed.** 
