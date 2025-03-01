@@ -58,7 +58,7 @@ However, **in no case** may someone's vote be considered
 invalid if it does not appear to meet the implied commitment: a vote is a
 formal expression of opinion, *not* of commitment.
 
-If the [R-T-C](#ReviewThenCommit) policy is in effect, a positive vote
+If the [R-T-C](glossary.html#ReviewThenCommit) policy is in effect, a positive vote
 carries the very strong implied message, 'I have tested this patch myself,
 and found it good.' Similarly, a negative vote usually means that that the voter tested
 the patch and found it to be *not* good, although the veto (for such it is
@@ -158,4 +158,3 @@ People tend to avoid conflict and thrash around looking for something to
 substitute - somebody in charge, a rule, a process, stagnation. None of
 these tend to be very good substitutes for doing the hard work of resolving
 the conflict.
-
