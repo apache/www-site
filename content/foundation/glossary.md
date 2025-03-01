@@ -178,6 +178,8 @@ The official developer and user conference of the ASF (see the
 'Consensus approval' refers to a [vote](#Vote) (sense 1) which has
 completed with **at least three binding +1 votes** and **no** 
 [vetos](#Veto). Compare [Majority Approval](#MajorityApproval).
+Also see see [Lazy Consensus](#LazyConsensus),
+and the description of the [voting process](voting.html).
 
 </dd>
 
@@ -366,9 +368,9 @@ technical contributions.")
 (Also called 'lazy approval'.) A decision-making policy which assumes
 general consent if no responses are posted within a defined period.
 For example, "I'm going to commit this by lazy consensus if no-one
-objects within the next three days." Also see [Consensus Approval](#ConsensusApproval) ,
-[Majority Approval](#MajorityApproval) , and the description of the [voting
-process](voting.html).
+objects within the next three days." Also see [Consensus Approval](#ConsensusApproval),
+[Majority Approval](#MajorityApproval), and the description of the
+[voting process](voting.html).
 
 </dd>
 
@@ -385,11 +387,14 @@ license text).
 
 <dd>
 
-Refers to a [vote](#Vote) (sense 1) which has completed with
-more +1 votes than -1 votes. Note that in votes requiring
-majority approval a -1 vote is simply a vote against, **not** a [veto](#Veto).
+Refers to a [vote](#Vote) (sense 1) which has completed with **at
+least three binding +1 votes** and more +1 votes than -1 votes. (
+*I.e.* , a simple majority with a minimum quorum of three positive
+votes.) Note that in votes requiring majority approval a -1 vote is
+simply a vote against, **not** a [veto](#Veto).
 Compare [Consensus Approval](#ConsensusApproval).
-See also the description of the [voting process](voting.html).
+Also see see [Simple Majority](#SimpleMajority),
+and the description of the [voting process](voting.html).
 
 </dd>
 
@@ -641,6 +646,19 @@ Software Foundation.
 <dd>
 
 See [ReviewThenCommit](#ReviewThenCommit)
+
+</dd>
+
+<dt>Simple Majority  {#SimpleMajority}</dt>
+
+<dd>
+
+Refers to a [vote](#Vote) (sense 1) which has completed with
+more +1 votes than -1 votes. Note that in votes requiring
+majority approval a -1 vote is simply a vote against, **not** a [veto](#Veto).
+Compare [Lazy Consensus](#LazyConsensus).
+Also see see [Majority Approval](#MajorityApproval),
+and the description of the [voting process](voting.html).
 
 </dd>
 

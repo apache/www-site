@@ -15,27 +15,30 @@ There are essentially three types of vote:
 
 1. Package releases
 
-Votes on **procedural issues** follow the common format of majority rule unless
-otherwise stated. That is, if there are more favourable votes than
-unfavourable ones, the issue is considered to have passed -- regardless of
+Votes on **procedural issues** follow [simple majority](glossary.html#SimpleMajority),
+the common format of majority rule, unless
+otherwise stated. That is, if there are more +1 votes than
+-1 ones, the issue is considered to have passed -- regardless of
 the number of votes in each category. (If the number of votes seems too
 small to be representative of a community consensus, the issue is typically
 not pursued. However, see the description of [lazy
 consensus](#LazyConsensus) for a modifying factor.)
 
-Votes on **code modifications** follow a different model. In this scenario, a
-negative vote constitutes a [veto](#Veto) , which the voting group (generally the PMC of a project) cannot override.
+Votes on **code modifications** follow [consensus approval](glossary.html#ConsensusApproval).
+In this scenario, a negative vote constitutes a [veto](#Veto),
+which the voting group (generally the PMC of a project) cannot override.
 Again, this model may be modified by a [lazy consensus](#LazyConsensus)
 declaration when the request for a vote is raised, but the full-stop nature
 of a negative vote does not change. Under normal (non-lazy consensus)
-conditions, the proposal requires three positive votes and no negative votes
+conditions, the proposal requires three +1 votes and no -1 votes
 in order to pass; if it fails to garner the requisite amount of support, it
 doesn't. Then the proposer either withdraws the proposal or modifies the code and resubmits it,
 or the proposal simply languishes as an open issue until someone gets around to removing it.
 
-Votes on whether a **package** is ready to release use yet a
-different mechanism: are there are least three binding votes in favour of
-the release? See the [release policy](../legal/release-policy.html#release-approval) 
+Votes on whether a **package** is ready to release use [majority approval](glossary.html#MajorityApproval),
+i.e., are there at least three binding +1 vote,
+and are there more positive than negative binding votes?
+See the [release policy](../legal/release-policy.html#release-approval) 
 for more information on voting and requirements for binding votes.
 
 ## Binding votes
@@ -110,7 +113,6 @@ expressing is Boolean: 'I approve/do not approve of this change.'
 
 Votes on whether a package is ready to release use
 [majority approval](glossary.html#MajorityApproval),
-with at least three binding +1 votes,
 i.e., at least three PMC members must vote affirmatively
 for release, and there must be more positive than negative binding votes.
 **Releases may not be vetoed.** 
