@@ -35,7 +35,7 @@ Read the [ASF-Pelican Getting started guide](https://infra.apache.org/asf-pelica
 
 The website is built with [Pelican](https://blog.getpelican.com).
 
-Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://cwiki.apache.org/confluence/display/INFRA/Git+-+.asf.yaml+features)
+Continuous Integration / Continuous Deployment (CI/CD) is via the [.asf.yaml file](https://github.com/apache/infrastructure-asfyaml/blob/main/README.md)
 mechanism, which runs [Buildbot](https://ci2.apache.org/#/builders/3).
 The build is triggered by changes to the source, and also every 8 hours (currently 1:22, 9:22, 17:22) to pick up changes to external data. It also rotates the featured projects on the main page.
 
