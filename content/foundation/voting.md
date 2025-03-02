@@ -15,9 +15,8 @@ There are essentially three types of vote:
 
 1. Package releases
 
-Votes on **procedural issues** follow [simple majority](glossary.html#SimpleMajority),
-the common format of majority rule, unless
-otherwise stated. That is, if there are more +1 votes than
+Votes on **procedural issues** follow [simple majority](glossary.html#SimpleMajority)
+unless otherwise stated. That is, if there are more +1 votes than
 -1 ones, the issue is considered to have passed -- regardless of
 the number of votes in each category. (If the number of votes seems too
 small to be representative of a community consensus, the issue is typically
