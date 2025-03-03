@@ -621,3 +621,72 @@ a.white:hover {
   webkit-transition: top .1s ease-in;
   transition: top .1s ease-in;
 }
+
+/* Add Skip to Content Link */
+#skiptocontent a {
+  padding: 10px 14px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: white;
+  border-bottom-right-radius: 8px;
+  background: #662f8f;
+  webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 9999;
+}
+
+#skiptocontent a:focus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  outline: none;
+  webkit-transition: top 0.1s ease-in;
+  transition: top 0.1s ease-in;
+}
+
+/* Container for the Skip to Content Button */
+#skiptocontent {
+  position: absolute; /* Ensures it stays fixed on the screen */
+  top: 2px; /* Keeps it below the navbar */
+  right: 1px; /* Aligns it to the right */
+  z-index: 10000;
+}
+
+#skiptocontent a {
+  display: inline-block;
+  padding: 12px 16px;
+  background-color: #662f8f;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, opacity 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Button Hover Effect */
+#skiptocontent a:hover {
+  background-color: #551a8b;
+}
+
+/* Button Focus Effect */
+#skiptocontent a:focus {
+  outline: 2px solid white;
+}
+
+/* Hide the button when scrolling down */
+body.scrolled #skiptocontent {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px); /* Moves it slightly up when hiding */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  #skiptocontent {
+    top: 55px; /* Adjust for smaller screens */
+  }
+}
