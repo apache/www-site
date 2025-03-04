@@ -335,7 +335,7 @@ using an "apache.org" mail address. Also, please make sure that you
 have put a 3-5 lines blurb for the project (because most of the subscribers
 to announce.AT.apache.DOT.org list may not know what XX-Project is).
 
-It is recommended that an SHA-1 OpenPGP compatible signature is added to
+It is recommended that an OpenPGP compatible signature is added to
 the announcement mail. Please ensure that your public key has been already
 uploaded to famous pgp sites (e.g. http://pgp.mit.edu/). This key should
 either be the one used to sign the release or one that is cross-signed by
