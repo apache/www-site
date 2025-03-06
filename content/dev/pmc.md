@@ -118,7 +118,7 @@ maintain the confidentiality of messages on privately-archived mailing lists.
 ## How to perform the duties of the PMC chair  {#chair}
 
 See the [definition of PMC and chair](../foundation/how-it-works.html#pmc)
-, and be familiar with the [ASF Bylaws](../foundation/bylaws.html). The  [advice for new PMC chairs](/pmc-chair.html) has additional useful information.
+, and be familiar with the [ASF Bylaws](../foundation/bylaws.html). The  [advice for new PMC chairs](pmc-chair.html) has additional useful information.
 
 ### Review board meeting minutes about their project
 PMC chairs should monitor the minutes of board meetings for entries that are relevant to their 
