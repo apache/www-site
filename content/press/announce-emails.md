@@ -1,7 +1,7 @@
 Title: Content of Announce Emails
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# announce@pache.org mailing list
+# announce@apache.org mailing list
 
                 **** DRAFT DRAFT ****
                 **** DRAFT DRAFT ****
