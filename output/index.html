@@ -201,6 +201,22 @@ s=d.getElementsByTagName('script')[0];
       </div>
     </nav>
   </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplyfy and shorten in length bootstrap framework  -->
+     <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    // Using Bootstrap's event system for dropdowns
+    $(document).on('shown.bs.dropdown', '.dropdown', function () {
+        // Check if this is the search dropdown
+        if ($(this).find('.glyphicon-search').length > 0) {
+            // Find and focus the search input
+            setTimeout(function() {
+                $('.pagefind-ui__search-input').focus();
+            }, 50); // Small delay to ensure input is ready
+        }
+    });
+});
+  </script>
   <!-- / Navigation -->
   <header id="main-header" class="container">
     <div class="sideImg">
@@ -399,48 +415,48 @@ s=d.getElementsByTagName('script')[0];
 <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
 <ul class="nav nav-tabs">
 <li class="active">
-<a data-toggle="tab" href="#dubbo">Dubbo</a>
+<a data-toggle="tab" href="#hop">Hop</a>
 </li><li>
-<a data-toggle="tab" href="#comdev">Community Development</a>
+<a data-toggle="tab" href="#royale">Royale</a>
 </li><li>
-<a data-toggle="tab" href="#httpcomponents">HttpComponents</a>
+<a data-toggle="tab" href="#buildstream">BuildStream</a>
 </li>
 </ul>
 </div>
 </div>
 <div class="col-md-9 col-sm-12">
 <div class="tab-content">
-<div class="tab-pane fade in active" id="dubbo">
+<div class="tab-pane fade in active" id="hop">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/dubbo/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/hop/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-dubbo"><a href="http://dubbo.apache.org/">Dubbo</a></h4>
-<p>a high-performance, lightweight, java based RPC framework.</p>
-<a class="btn btn-default btn-sm" href="http://dubbo.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-hop"><a href="http://hop.apache.org">Hop</a></h4>
+<p>a platform for data orchestration</p>
+<a class="btn btn-default btn-sm" href="http://hop.apache.org" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="comdev">
+</div><div class="tab-pane fade in" id="royale">
+<div class="row">
+<div class="col-sm-2">
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/royale/default.png"/>
+</div>
+<div class="col-sm-10">
+<h4 class="no-btm-margin" id="featured-project-royale"><a href="http://royale.apache.org/">Royale</a></h4>
+<p>improving developer productivity in creating applications for wherever Javascript runs (and other runtimes)</p>
+<a class="btn btn-default btn-sm" href="http://royale.apache.org/" role="button">Learn More...</a>
+</div>
+</div>
+</div><div class="tab-pane fade in" id="buildstream">
 <div class="row">
 <div class="col-sm-2">
 <img alt="Logo" class="img-responsive center-block" src="/foundation/press/kit/poweredBy/Apache_PoweredBy.svg"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-comdev"><a href="https://community.apache.org/">Community Development</a></h4>
-<p>Resources to help people become involved with Apache projects</p>
-<a class="btn btn-default btn-sm" href="https://community.apache.org/" role="button">Learn More...</a>
-</div>
-</div>
-</div><div class="tab-pane fade in" id="httpcomponents">
-<div class="row">
-<div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/foundation/press/kit/poweredBy/Apache_PoweredBy.svg"/>
-</div>
-<div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-httpcomponents"><a href="http://hc.apache.org/">HttpComponents</a></h4>
-<p>Java toolset of low level HTTP components</p>
-<a class="btn btn-default btn-sm" href="http://hc.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-buildstream"><a href="http://buildstream.apache.org">BuildStream</a></h4>
+<p>efficiently and correctly developing, building and integrating software stacks</p>
+<a class="btn btn-default btn-sm" href="http://buildstream.apache.org" role="button">Learn More...</a>
 </div>
 </div>
 </div>
@@ -459,48 +475,48 @@ s=d.getElementsByTagName('script')[0];
 <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
 <ul class="nav nav-tabs">
 <li class="active">
-<a data-toggle="tab" href="#resilientdb">ResilientDB</a>
+<a data-toggle="tab" href="#openserverless">OpenServerless</a>
 </li><li>
-<a data-toggle="tab" href="#polaris">Polaris</a>
+<a data-toggle="tab" href="#annotator">Annotator</a>
 </li><li>
-<a data-toggle="tab" href="#ponymail">Pony Mail</a>
+<a data-toggle="tab" href="#iggy">Iggy</a>
 </li>
 </ul>
 </div>
 </div>
 <div class="col-md-9 col-sm-12">
 <div class="tab-content">
-<div class="tab-pane fade in active" id="resilientdb">
+<div class="tab-pane fade in active" id="openserverless">
+<div class="row">
+<div class="col-sm-2">
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/openserverless/default.png"/>
+</div>
+<div class="col-sm-10">
+<h4 class="no-btm-margin" id="incubating-project-openserverless"><a href="http://openserverless.incubator.apache.org/">OpenServerless</a></h4>
+<p>OpenServerless is an open source, cloud-agnostic, serverless platform. It offers a complete environment for serverless applications development, based on Kubernetes. With Apache OpenWhisk as its FaaS engine, it provides an unified developer experience with a plethora of services (SQL or noSQL databases, key-value stores, object storage, LLMs services, function schedulers) managed by the platform's core: the operator, along with tooling (the CLI) to simplify (and interact with) deployments, integrated ide and starter application and optimized runtimes integrated with the staters.</p>
+<a class="btn btn-default btn-sm" href="http://openserverless.incubator.apache.org/" role="button">Learn More...</a>
+</div>
+</div>
+</div><div class="tab-pane fade in" id="annotator">
+<div class="row">
+<div class="col-sm-2">
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/annotator/default.png"/>
+</div>
+<div class="col-sm-10">
+<h4 class="no-btm-margin" id="incubating-project-annotator"><a href="http://annotator.incubator.apache.org/">Annotator</a></h4>
+<p>Annotator provides annotation enabling code for browsers, servers, and humans.</p>
+<a class="btn btn-default btn-sm" href="http://annotator.incubator.apache.org/" role="button">Learn More...</a>
+</div>
+</div>
+</div><div class="tab-pane fade in" id="iggy">
 <div class="row">
 <div class="col-sm-2">
 <img alt="Logo" class="img-responsive center-block" src="/logos/res/incubator/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-resilientdb"><a href="http://resilientdb.incubator.apache.org/">ResilientDB</a></h4>
-<p>ResilientDB is a distributed blockchain framework that is open-source, lightweight, modular, and highly performant.</p>
-<a class="btn btn-default btn-sm" href="http://resilientdb.incubator.apache.org/" role="button">Learn More...</a>
-</div>
-</div>
-</div><div class="tab-pane fade in" id="polaris">
-<div class="row">
-<div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/incubator/default.png"/>
-</div>
-<div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-polaris"><a href="http://polaris.incubator.apache.org/">Polaris</a></h4>
-<p>Polaris is a catalog for data lakes. It provides new levels of choice, flexibility and control over data, with full enterprise security and Apache Iceberg interoperability across a multitude of engines and infrastructure.</p>
-<a class="btn btn-default btn-sm" href="http://polaris.incubator.apache.org/" role="button">Learn More...</a>
-</div>
-</div>
-</div><div class="tab-pane fade in" id="ponymail">
-<div class="row">
-<div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/ponymail/default.png"/>
-</div>
-<div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-ponymail"><a href="http://ponymail.incubator.apache.org/">Pony Mail</a></h4>
-<p>Pony Mail is a mail-archiving, archive viewing, and interaction service, that can be integrated with many email platforms.</p>
-<a class="btn btn-default btn-sm" href="http://ponymail.incubator.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="incubating-project-iggy"><a href="http://iggy.incubator.apache.org/">Iggy</a></h4>
+<p>Iggy is a high-performance, ultra-low latency and large-scale persistent message streaming platform written in Rust.</p>
+<a class="btn btn-default btn-sm" href="http://iggy.incubator.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
 </div>
