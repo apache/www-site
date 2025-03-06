@@ -1,6 +1,6 @@
 # Apache Software Foundation Website (www.apache.org)
 
-This repository provides the source for the main website of The Apache Software Foundation.
+This repository provides the source for the main website of The Apache Software Foundation. The content and design of the site is the responsibility of VP, Marketing and Publicity. Any proposed improvements or fixes should have issues created first, to be approved by VP, M&P.
 
 - [Production website](https://www.apache.org/)
 
