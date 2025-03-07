@@ -58,7 +58,7 @@ ASF projects are made up of distributed teams, in multiple time zones and volunt
 with lives and jobs and the rationale behind 72 Hours is to try and give all
 members of a project the opportunity to take part in the decision to release.
 
-The most obvious example of an exceptional circustamce would be for a fix for a
+The most obvious example of an exceptional circumstance would be for a fix for a
 publicly known security issue. Everyone will probably have a different definition
 of what an exceptional circumstance is, but ultimately it is down to individual
 PMCs to decide for their project. 
