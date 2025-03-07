@@ -44,7 +44,37 @@ requirements of ASF policy on releases as described below, validate all
 cryptographic signatures, compile as provided, and test the result on their
 own platform.
 
-Release votes SHOULD remain open for at least 72 hours.
+Release votes SHOULD remain open for at least 72 hours. See
+[RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) for a good definition of
+SHOULD and the next [Expedited Releases](#expedited-releases) section when
+considering a reduced voting period.
+
+#### Expedited Releases {#expedited-releases}
+As stated above, the normal policy for releases is to allow 72 hours for
+release reviews and votes, however the review/voting period for a release
+can be reduced in exceptional circumstances.
+
+ASF projects are made up of distributed teams, in multiple time zones and volunteers
+with lives and jobs and the rationale behind 72 Hours is to try and give all
+members of a project the opportunity to take part in the decision to release.
+
+The most obvious example of an exceptional circustamce would be for a fix for a
+publicly known security issue. Everyone will probably have a different definition
+of what an exceptional circumstance is, but ultimately it is down to individual
+PMCs to decide for their project. 
+
+Projects SHOULD give as much notice as possible for an expedited release in
+order to give project members a chance to make time to participate in the
+decision.
+
+Emails calling for a Release Vote that run for less than 72 hours SHOULD include
+an explanation of why the release is being expedited.
+
+This policy already states that deviations from normal policy MUST be reported to
+the Board, but it is worth emphasising this here specifically for release votes
+with a reduced voting time. Unless there are pressing reasons to inform the Board
+earlier, reporting can be done in the project's next scheduled board report.
+
 
 ### Publication  {#publication}
 
