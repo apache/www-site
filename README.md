@@ -48,11 +48,11 @@ The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was n
 Foundation records, including minutes of Board meetings, remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
 except for the [index page](content/foundation/records/index.md).
 
-Whimsy maintains the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
+The Secretary maintains the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
 in SVN. At the start of each build, a setup entry in [pelicanconf.yaml](pelicanconf.yaml) calls the [get_calendar.sh](get_calendar.sh) script, which copies the calendar into `content/foundation/board`.
-
-Changes to the file do not automatically trigger a build, but the file changes rarely (about once a month)
-and there are regular builds which pick up changes within an hour or so.
+Changes to the calendar file do not automatically trigger a build, but the file changes rarely
+(about once a month, when the minutes are published)
+and there are regular builds which pick up any changes.
 
 ## Local development and testing
 
