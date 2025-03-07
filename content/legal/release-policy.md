@@ -46,7 +46,7 @@ own platform.
 
 Release votes SHOULD remain open for at least 72 hours. See
 [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) for a good definition of
-SHOULD and the next [Expedited Releases](#expedited-releases) section when
+SHOULD, and the next [Expedited Releases](#expedited-releases) section when
 considering a reduced voting period.
 
 #### Expedited Releases {#expedited-releases}
@@ -67,7 +67,7 @@ Projects SHOULD give as much notice as possible for an expedited release in
 order to give project members a chance to make time to participate in the
 decision.
 
-Emails calling for a Release Vote that run for less than 72 hours SHOULD include
+Emails calling for a Release Vote that run for less than 72 hours MUST include
 an explanation of why the release is being expedited.
 
 This policy already states that deviations from normal policy MUST be reported to
