@@ -44,10 +44,9 @@ requirements of ASF policy on releases as described below, validate all
 cryptographic signatures, compile as provided, and test the result on their
 own platform.
 
-Release votes SHOULD remain open for at least 72 hours. See
-[RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) for a good definition of
-SHOULD, and the next [Expedited Releases](#expedited-releases) section when
-considering a reduced voting period.
+Release votes SHOULD remain open for at least 72 hours. See the next
+[Expedited Releases](#expedited-releases) section when considering a reduced
+voting period.
 
 #### Expedited Releases {#expedited-releases}
 As stated above, the normal policy for releases is to allow 72 hours for
