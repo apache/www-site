@@ -169,6 +169,7 @@ This table shows current and emeritus members who have manually added themselves
 | gk | Georg Kallidis | [Turbine](http://turbine.apache.org/) |
 | gmcdonald | [Gavin McDonald](http://16degrees.com.au) |
 | gnodet | [Guillaume Nodet](http://home.apache.org/~gnodet/) | [ActiveMQ](http://activemq.apache.org/) ; [Geronimo](http://geronimo.apache.org/) ; [Ode](http://ode.apache.org/) ; [ServiceMix](http://servicemix.apache.org/)|
+| gopidesu | Pavan Kumar Gopidesu | [Airflow](https://airflow.apache.org) |
 | gozer | [Philippe M. Chiasson](http://gozer.ectoplasm.org/) | [mod_perl](http://perl.apache.org/) , modperl-docs|
 | gpetracek | Gerhard Petracek |
 | grobmeier | [Christian Grobmeier](http://www.grobmeier.de) |
