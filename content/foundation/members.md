@@ -154,6 +154,7 @@ This table shows current and emeritus members who have manually added themselves
 | fpapon | François Papon | [Geronimo](https://geronimo.apache.org), [Hop](https://hop.apache.org), [Karaf](https://karaf.apache.org), [Shiro](https://shiro.apache.org), [Unomi](https://unomi.apache.org)|
 | fpj | Flavio Junqueira | [ZooKeeper](http://zookeeper.apache.org); [BookKeeper](http://bookkeeper.apache.org); [Incubator](http://incubator.apache.org) |
 | francischuang | Francis Chuang | [Calcite](https://calcite.apache.org) |
+| gangwu | [Gang Wu](https://github.com/wgtmac) | [Arrow](http://arrow.apache.org), [ORC](http://orc.apache.org), [Parquet](http://parquet.apache.org) |
 | gareth | Gareth Reakes |
 | gates | Alan Gates |
 | gawor | [Jarek Gawor](http://home.apache.org/~gawor/) |
