@@ -449,6 +449,7 @@ This table shows current and emeritus members who have manually added themselves
 | trawick | Jeff Trawick | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | tripod | Tobias Bocanegra | [Jackrabbit](http://jackrabbit.apache.org/)|
 | tv | Thomas Vandahl | [Turbine](http://turbine.apache.org/) ; [DB-Torque](http://db.apache.org/torque/) ; [Jakarta](http://jakarta.apache.org/) ; [Excalibur](http://excalibur.apache.org/)|
+| twice | [Mingyang Liu](https://github.com/PragmaTwice) | [Kvrocks](https://kvrocks.apache.org/) |
 | twilliams | [Tim Williams](http://williamstw.blogspot.com) |
 | uli | Ulrich Stärk |
 | umamahesh | [Uma Maheswara Rao G](https://home.apache.org/~umamahesh/umamahesh.html) | [Hadoop](http://hadoop.apache.org); [BookKeeper](http://bookkeeper.apache.org) |
