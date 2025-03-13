@@ -129,6 +129,7 @@ This table shows current and emeritus members who have manually added themselves
 | dkulp | [J. Daniel Kulp](http://www.dankulp.com/blog) | [CXF](http://cxf.apache.org/) ; [Maven](http://maven.apache.org/) ; [ServiceMix](http://servicemix.apache.org)|
 | dmeikle | David Meikle | [Tika](http://tika.apache.org) |
 | dockerzhang | Charles Zhang | [InLong](http://inlong.apache.org/) |
+| doebele | Rainer Döbele | [Empire-db](https://empire-db.apache.org) |
 | dongjoon | Dongjoon Hyun | [Spark](http://spark.apache.org), [ORC](http://orc.apache.org) |
 | dpsenner | Dominik Psenner | [Logging](http://logging.apache.org/) |
 | drew | Andrew L. (Drew) Farris | [accumulo](http://accumulo.apache.org), [mahout](http://mahout.apache.org)|
