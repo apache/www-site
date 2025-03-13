@@ -66,7 +66,7 @@ This is a [custom theme][1]. Pelican templates use [Jinja][2]
 
 ## History - Apache CMS
 
-The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/templates) was not migrated and remains available.
+The [svn history](https://svn.apache.org/viewvc/infrastructure/site/trunk/templates) was not migrated and remains available.
 
 
 [1]: https://docs.getpelican.com/en/latest/themes.html

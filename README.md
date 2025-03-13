@@ -43,9 +43,9 @@ The build is triggered by changes to the source, and also every 8 hours (current
 - [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and Pelican. See [asfdata.py](https://github.com/apache/infrastructure-pelican/blob/master/plugins/asfdata.py).
 - [ASF YAML Pelican Build](.asf.yaml) -- ASF infrastructure instructions.
 
-The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
+The [svn history](https://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
 
-Foundation records, including minutes of Board meetings, remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
+Foundation records, including minutes of Board meetings, remain in [svn](https://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
 except for the [index page](content/foundation/records/index.md).
 
 The Secretary maintains the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
