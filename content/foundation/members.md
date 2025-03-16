@@ -123,6 +123,7 @@ This table shows current and emeritus members who have manually added themselves
 | dirkx | Dirk-Willem van Gulik | [httpd](http://httpd.apache.org/) , [XML](http://xml.apache.org)|
 | djencks | David Jencks |
 | djkevincr | Kevin Ratnasekera | [Gora](http://gora.apache.org), [Incubator](http://incubator.apache.org/) | 
+| djoshi | Dinesh Joshi | [Cassandra](https://cassandra.apache.org) |
 | dkulp | [J. Daniel Kulp](http://www.dankulp.com/blog) | [CXF](http://cxf.apache.org/) ; [Maven](http://maven.apache.org/) ; [ServiceMix](http://servicemix.apache.org)|
 | dmeikle | David Meikle | [Tika](http://tika.apache.org) |
 | dockerzhang | Charles Zhang | [InLong](http://inlong.apache.org/) |
