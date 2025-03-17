@@ -53,7 +53,8 @@ The review and voting period for a release can be reduced in
 exceptional circumstances.
 
 A typical example is a release that fixes publicly known or
-critical exploitable security issues.
+critical exploitable security issues, but the PMC can decide
+what constitutes an exceptional circumstance.
 
 PMCs SHOULD give as much notice as possible to their project members
 when doing an expedited release.
