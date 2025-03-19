@@ -46,6 +46,7 @@ own platform.
 
 Unless there are strong reasons to expedite a release, as described below,
 release votes SHOULD remain open for at least 72 hours, to give PMC members
+(volunteers spread around multiple time zones, with lives and jobs)
 enough time to participate.
 
 #### Expedited Releases {#expedited-releases}
