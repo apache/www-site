@@ -453,7 +453,7 @@ a board member. Your PMC needs to work with the new committer to ensure
 that their CLA is received and recorded properly, so you need to monitor
 the file `iclas.txt` in the `foundation/officers` repository. Only ASF
 members and officers (PMC chairs) have access. The Apache Phone Book
-has an [Unlisted CLAs](https://home.apache.org/unlistedclas.html) page
+has an [Unlisted CLAs](https://people.apache.org/unlistedclas.html) page
 which is generated daily from the `iclas.txt` file, and recently received CLAs
 appear there.
 
@@ -641,8 +641,8 @@ There are two main ways to check the membership of PMCs and LDAP groups:
 
   - Committers can view, and PMC chairs can update, PMC rosters using 
 [Whimsy](https://whimsy.apache.org/roster/committee/).
-  - Anyone may view Apache Phonebook pages at [https://home.apache.org/phonebook.html](https://home.apache.org/phonebook.html).
-From there you can link to a specific PMC like this: [home.apache.org/phonebook.html?pmc=gump](https://home.apache.org/phonebook.html?pmc=gump)
+  - Anyone may view Apache Phonebook pages at [https://people.apache.org/phonebook.html](https://people.apache.org/phonebook.html).
+From there you can link to a specific PMC like this: [people.apache.org/phonebook.html?pmc=gump](https://people.apache.org/phonebook.html?pmc=gump)
 
 Please allow time for any changes to LDAP and committee-info.txt to propagate to the Phonebook app.
 

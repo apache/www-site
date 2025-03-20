@@ -34,7 +34,7 @@ that PMCs can use to self-evaluate.  You can [contact ComDev](https://community.
 
 Example services include: [Board Report Helper](https://reporter.apache.org/), 
 [Project Community Health Tips](https://reporter.apache.org/chi.py), 
-[Apache Committer 'Phone Book' listing](https://home.apache.org/), 
+[Apache Committer 'Phone Book' listing](https://people.apache.org/), 
 [Mentoring ideas](https://community.apache.org/mentoringprogramme.html), 
 and [Google Summer of Code assistance](https://community.apache.org/gsoc.html).
 

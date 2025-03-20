@@ -37,7 +37,7 @@ Infra uses many Apache software applications, including:
 - [Directory Studio](http://directory.apache.org/studio/)
 
 Infra also uses and maintains a selection of [in-house projects](https://svn.apache.org/repos/infra/infrastructure/trunk/projects/),
-including the [committers index](http://home.apache.org/committer-index.html) and the [committers' URL Shortener](http://s.apache.org/).
+including the [committers index](http://people.apache.org/committer-index.html) and the [committers' URL Shortener](http://s.apache.org/).
 
 
 ## Useful links  {#infra}
