@@ -1,4 +1,3 @@
-Atom: http://mail-archives.apache.org/mod_mbox/www-community/?format=atom
 Title: How the ASF works
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
