@@ -9,19 +9,18 @@ Here are resources pertinent to developers, committers, release managers and Pro
 
 If you can't find information here, ask on your project's mailing list, or contact the [Community Development](http://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
 
-- [Developer information](#developer-information)
-  - [Overview {#intro}](#overview-intro)
-  - [Apache Infrastructure  {#infrastructure}](#apache-infrastructure--infrastructure)
-  - [Committers and Contributors  {#committers}](#committers-and-contributors--committers)
-  - [Project Management Committees (PMCs)  {#pmc}](#project-management-committees-pmcs--pmc)
-  - [Licenses, Trademarks, and Legal issues  {#licenses}](#licenses-trademarks-and-legal-issues--licenses)
-  - [Version Control  {#version-control}](#version-control--version-control)
-  - [Apache Project Websites  {#web}](#apache-project-websites--web)
-  - [Software Product Releases  {#releases}](#software-product-releases--releases)
-  - [Issue and Bug Tracking  {#issues}](#issue-and-bug-tracking--issues)
-  - [Mailing Lists  {#mail}](#mailing-lists--mail)
-  - [Apache URL Shortener Service  {#shorten}](#apache-url-shortener-service--shorten)
-
+- [Infrastructure](#infrastructure)
+- [Committers and Contributors](#committers)
+  - [Pasting data to share with others](#paste)
+  - [URL shortener for committers](#shorten)
+- [Project Management Committees (PMC)](#pmc)
+  - [Version control](#version-control)
+  - [Websites](#web)
+  - [Releases](#releases)
+  - [Issue tracking](#issues)
+  - [Mailing lists](#mail)
+  - [Licenses and legal issues](#licenses)
+- [Board of Directors and ASF Governance](/foundation/governance/)
 
 ## Apache Infrastructure  {#infrastructure}
 
