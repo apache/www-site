@@ -9,18 +9,18 @@ Here are resources pertinent to developers, committers, release managers and Pro
 
 If you can't find information here, ask on your project's mailing list, or contact the [Community Development](http://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
 
-- [Infrastructure](#infrastructure)
-- [Committers and Contributors](#committers)
-  - [Pasting data to share with others](#paste)
-  - [URL shortener for committers](#shorten)
-- [Project Management Committees (PMC)](#pmc)
-  - [Version control](#version-control)
-  - [Websites](#web)
-  - [Releases](#releases)
-  - [Issue tracking](#issues)
-  - [Mailing lists](#mail)
-  - [Licenses and legal issues](#licenses)
-- [Board of Directors and ASF Governance](/foundation/governance/)
+- [Developer information](#developer-information)
+  - [Overview {#intro}](#overview-intro)
+  - [Apache Infrastructure  {#infrastructure}](#apache-infrastructure--infrastructure)
+  - [Committers and Contributors  {#committers}](#committers-and-contributors--committers)
+  - [Project Management Committees (PMCs)  {#pmc}](#project-management-committees-pmcs--pmc)
+  - [Licenses, Trademarks, and Legal issues  {#licenses}](#licenses-trademarks-and-legal-issues--licenses)
+  - [Version Control  {#version-control}](#version-control--version-control)
+  - [Apache Project Websites  {#web}](#apache-project-websites--web)
+  - [Software Product Releases  {#releases}](#software-product-releases--releases)
+  - [Issue and Bug Tracking  {#issues}](#issue-and-bug-tracking--issues)
+  - [Mailing Lists  {#mail}](#mailing-lists--mail)
+  - [Apache URL Shortener Service  {#shorten}](#apache-url-shortener-service--shorten)
 
 
 ## Apache Infrastructure  {#infrastructure}
@@ -117,11 +117,8 @@ Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank
 -  [Email etiquette tips for contributors](contrib-email-tips) 
 -  How to [moderate Apache mailing lists](committers.html#mail-moderate) 
 -  All Apache mailing lists are archived:
-    - Read most Apache [list archives on mail-archives.apache.org](http://mail-archives.apache.org/mod_mbox/) by going to the specific project list, then append the mbox filename to the URL (e.g. [mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox](mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox))
-    - Raw mbox archive files are available for every mailing list.
-    - Each project website has a "mail" directory, e.g. [httpd.apache.org/mail/](http://httpd.apache.org/mail/)
-(see [notes](/dev/project-site.html#mail)).
-    - For top-level/non-project mailing lists see [www.apache.org/mail/](/mail/) directory.
+    - For top-level/non-project mailing lists see [list archives on lists.apache.org](http://lists.apache.org/).
+    - Some projects have a "mail" directory at the top of their project website (see [notes](https://infra.apache.org/project-site.html#mail)).
 
 ## Apache URL Shortener Service  {#shorten}
 
