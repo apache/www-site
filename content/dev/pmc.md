@@ -622,6 +622,7 @@ and officers may also read PMC mailing list archives. There
 are several ways to access our private archives:
 
 *   [lists.apache.org](https://lists.apache.org/), also called PonyMail, is the preferred archive system.
+*   [mail-search.apache.org](https://mail-search.apache.org/) is the older mod_mbox system.
 *   PMC members who are not also ASF Members can
     [fetch](/foundation/mailinglists.html) archives in the normal way: via the
     `-get` administrative command to ezmlm to download groups of mails.
