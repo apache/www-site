@@ -536,6 +536,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | cmueller | Christian Müller | [Camel](http://camel.apache.org) |
 | costin | Doru Costin Manolache |
 | crichton | Dan Crichton |
+| cutting | [Doug Cutting](http://blog.lucene.com/) |
 | damien | Damien F. Katz |
 | damitha | Damitha N.M. Kumarage |
 | damonc | Damon J. Courtney |
