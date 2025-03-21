@@ -103,7 +103,6 @@ This table shows current and emeritus members who have manually added themselves
 | crossley | [David Crossley](http://www.indexgeo.com.au/apache/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://xml.apache.org/forrest/) , [xml-commons](http://xml.apache.org/commons/)|
 | ctubbsii | Christopher Tubbs | [Accumulo](https://accumulo.apache.org) , [Fluo](https://fluo.apache.org)|
 | curcuru | Shane Curcuru | [xalan](http://xml.apache.org/xalan-j/) , [xml-commons](http://xml.apache.org/commons/)|
-| cutting | [Doug Cutting](http://blog.lucene.com/) |
 | cziegeler | [Carsten Ziegeler](mailto:cziegeler@apache.org) | [Sling](http://sling.apache.org/), [Felix](http://Felix.apache.org/), [Portals](http://portals.apache.org/)|
 | dahn | Daan Hoogland | [CloudStack](https://cloudstack.apache.org)|
 | dain | Dain Sundstrom |
