@@ -201,6 +201,22 @@ s=d.getElementsByTagName('script')[0];
       </div>
     </nav>
   </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplyfy and shorten in length bootstrap framework  -->
+     <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    // Using Bootstrap's event system for dropdowns
+    $(document).on('shown.bs.dropdown', '.dropdown', function () {
+        // Check if this is the search dropdown
+        if ($(this).find('.glyphicon-search').length > 0) {
+            // Find and focus the search input
+            setTimeout(function() {
+                $('.pagefind-ui__search-input').focus();
+            }, 50); // Small delay to ensure input is ready
+        }
+    });
+});
+  </script>
   <!-- / Navigation -->
   <header id="main-header" class="container">
     <div class="sideImg">
@@ -405,11 +421,6 @@ s=d.getElementsByTagName('script')[0];
 <td><a href="https://airavata.apache.org/">Airavata</a>, <a href="https://asterixdb.apache.org/">AsterixDB</a>, <a href="https://commons.apache.org/">Commons</a>, <a href="https://incubator.apache.org/">Incubator</a>, <a href="https://netbeans.apache.org/">NetBeans</a>, <a href="https://portals.apache.org/">Portals</a>, <a href="https://streams.apache.org/">Streams</a>, <a href="https://wicket.apache.org/">Wicket</a></td>
 </tr>
 <tr>
-<td>awm</td>
-<td>Aram W. Mirzadeh</td>
-<td><a href="http://httpd.apache.org/">httpd</a></td>
-</tr>
-<tr>
 <td>ay</td>
 <td>Akitoshi Yoshida</td>
 <td></td>
@@ -473,11 +484,6 @@ s=d.getElementsByTagName('script')[0];
 <td>blautenb</td>
 <td>Berin Lautenbach</td>
 <td><a href="http://xml.apache.org">XML</a> ; <a href="http://incubator.apache.org/">incubator</a></td>
-</tr>
-<tr>
-<td>bnicholes</td>
-<td>Bradley Nicholes</td>
-<td><a href="http://httpd.apache.org/">httpd</a> ; <a href="http://apr.apache.org/">APR</a></td>
 </tr>
 <tr>
 <td>bob</td>
@@ -552,11 +558,6 @@ s=d.getElementsByTagName('script')[0];
 <tr>
 <td>buschmi</td>
 <td>Michael Busch</td>
-<td></td>
-</tr>
-<tr>
-<td>caijunj</td>
-<td>Jun Jie Cai</td>
 <td></td>
 </tr>
 <tr>
@@ -785,6 +786,11 @@ s=d.getElementsByTagName('script')[0];
 <td><a href="http://gora.apache.org">Gora</a>, <a href="http://incubator.apache.org/">Incubator</a></td>
 </tr>
 <tr>
+<td>djoshi</td>
+<td>Dinesh Joshi</td>
+<td><a href="https://cassandra.apache.org">Cassandra</a></td>
+</tr>
+<tr>
 <td>dkulp</td>
 <td><a href="http://www.dankulp.com/blog">J. Daniel Kulp</a></td>
 <td><a href="http://cxf.apache.org/">CXF</a> ; <a href="http://maven.apache.org/">Maven</a> ; <a href="http://servicemix.apache.org">ServiceMix</a></td>
@@ -798,6 +804,11 @@ s=d.getElementsByTagName('script')[0];
 <td>dockerzhang</td>
 <td>Charles Zhang</td>
 <td><a href="http://inlong.apache.org/">InLong</a></td>
+</tr>
+<tr>
+<td>doebele</td>
+<td>Rainer D&ouml;bele</td>
+<td><a href="https://empire-db.apache.org">Empire-db</a></td>
 </tr>
 <tr>
 <td>dongjoon</td>
@@ -925,6 +936,11 @@ s=d.getElementsByTagName('script')[0];
 <td><a href="https://calcite.apache.org">Calcite</a></td>
 </tr>
 <tr>
+<td>gangwu</td>
+<td><a href="https://github.com/wgtmac">Gang Wu</a></td>
+<td><a href="http://arrow.apache.org">Arrow</a>, <a href="http://orc.apache.org">ORC</a>, <a href="http://parquet.apache.org">Parquet</a></td>
+</tr>
+<tr>
 <td>gareth</td>
 <td>Gareth Reakes</td>
 <td></td>
@@ -993,6 +1009,11 @@ s=d.getElementsByTagName('script')[0];
 <td>gnodet</td>
 <td><a href="http://home.apache.org/%7Egnodet/">Guillaume Nodet</a></td>
 <td><a href="http://activemq.apache.org/">ActiveMQ</a> ; <a href="http://geronimo.apache.org/">Geronimo</a> ; <a href="http://ode.apache.org/">Ode</a> ; <a href="http://servicemix.apache.org/">ServiceMix</a></td>
+</tr>
+<tr>
+<td>gopidesu</td>
+<td>Pavan Kumar Gopidesu</td>
+<td><a href="https://airflow.apache.org">Airflow</a></td>
 </tr>
 <tr>
 <td>gozer</td>
@@ -1275,6 +1296,11 @@ s=d.getElementsByTagName('script')[0];
 <td><a href="http://flex.apache.org/">Flex</a> ; <a href="http://incubator.apache.org/">Incubator</a></td>
 </tr>
 <tr>
+<td>jnioche</td>
+<td>Julien Nioche</td>
+<td></td>
+</tr>
+<tr>
 <td>joehni</td>
 <td>J&ouml;rg Schaible</td>
 <td></td>
@@ -1310,11 +1336,6 @@ s=d.getElementsByTagName('script')[0];
 <td><a href="http://apr.apache.org/">APR</a> ; <a href="http://httpd.apache.org/">httpd</a></td>
 </tr>
 <tr>
-<td>jplevyak</td>
-<td>John Bradley Plevyak</td>
-<td></td>
-</tr>
-<tr>
 <td>jrthomerson</td>
 <td><a href="http://jeremythomerson.com">Jeremy Thomerson</a></td>
 <td></td>
@@ -1343,6 +1364,11 @@ s=d.getElementsByTagName('script')[0];
 <td>jvanzyl</td>
 <td><a href="http://www.sonatype.com/people/author/jason">Jason van Zyl</a></td>
 <td></td>
+</tr>
+<tr>
+<td>jxue</td>
+<td>Junkai Xue</td>
+<td><a href="https://helix.apache.org/">Helix</a></td>
 </tr>
 <tr>
 <td>jzemerick</td>
@@ -1435,11 +1461,6 @@ s=d.getElementsByTagName('script')[0];
 <td></td>
 </tr>
 <tr>
-<td>kmenard</td>
-<td>Kevin Joseph Menard, Jr.</td>
-<td></td>
-</tr>
-<tr>
 <td>koji</td>
 <td>Koji Sekiguchi</td>
 <td><a href="https://lucene.apache.org/core/">Lucene</a> , <a href="http://lucene.apache.org/solr/">Solr</a> , <a href="https://opennlp.apache.org/">OpenNLP</a></td>
@@ -1513,11 +1534,6 @@ s=d.getElementsByTagName('script')[0];
 <td>lresende</td>
 <td>Luciano Resende</td>
 <td></td>
-</tr>
-<tr>
-<td>luc</td>
-<td>Luc Maisonobe</td>
-<td><a href="http://commons.apache.org/">commons</a></td>
 </tr>
 <tr>
 <td>luke1410</td>
@@ -1653,11 +1669,6 @@ s=d.getElementsByTagName('script')[0];
 <td>mrglavas</td>
 <td><a href="http://home.apache.org/%7Emrglavas/">Michael Glavassevich</a></td>
 <td><a href="http://xerces.apache.org/xerces2-j/">Xerces-J</a> , <a href="http://xml.apache.org/commons/">XML Commons</a></td>
-</tr>
-<tr>
-<td>mseidel</td>
-<td>Matthias Seidel</td>
-<td><a href="https://openoffice.apache.org">OpenOffice</a></td>
 </tr>
 <tr>
 <td>mturk</td>
@@ -2105,11 +2116,6 @@ s=d.getElementsByTagName('script')[0];
 <td><a href="http://jakarta.apache.org/">Jakarta</a> , ws-wsrp4j</td>
 </tr>
 <tr>
-<td>sgoeschl</td>
-<td>Siegfried Goeschl</td>
-<td></td>
-</tr>
-<tr>
 <td>shankar</td>
 <td>Selvaratnam Uthaiyashankar</td>
 <td><a href="http://axis.apache.org/">Axis</a> ; <a href="http://incubator.apache.org/projects/stonehenge.html">Stonehenge</a> ; <a href="http://ws.apache.org/">Web Services</a></td>
@@ -2142,11 +2148,6 @@ s=d.getElementsByTagName('script')[0];
 <tr>
 <td>simoneg</td>
 <td>Simone Gianni</td>
-<td></td>
-</tr>
-<tr>
-<td>simonetripodi</td>
-<td>Simone Tripodi</td>
 <td></td>
 </tr>
 <tr>
@@ -2350,6 +2351,11 @@ s=d.getElementsByTagName('script')[0];
 <td><a href="https://flink.apache.org/">Flink</a>, <a href="https://curator.apache.org/">Curator</a></td>
 </tr>
 <tr>
+<td>tn</td>
+<td>Thomas Neidhart</td>
+<td></td>
+</tr>
+<tr>
 <td>todd</td>
 <td>Todd Lipcon</td>
 <td></td>
@@ -2393,6 +2399,11 @@ s=d.getElementsByTagName('script')[0];
 <td>tv</td>
 <td>Thomas Vandahl</td>
 <td><a href="http://turbine.apache.org/">Turbine</a> ; <a href="http://db.apache.org/torque/">DB-Torque</a> ; <a href="http://jakarta.apache.org/">Jakarta</a> ; <a href="http://excalibur.apache.org/">Excalibur</a></td>
+</tr>
+<tr>
+<td>twice</td>
+<td><a href="https://github.com/PragmaTwice">Mingyang Liu</a></td>
+<td><a href="https://kvrocks.apache.org/">Kvrocks</a></td>
 </tr>
 <tr>
 <td>twilliams</td>
@@ -2635,6 +2646,10 @@ s=d.getElementsByTagName('script')[0];
 <td>Assaf Arkin</td>
 </tr>
 <tr>
+<td>awm</td>
+<td>Aram W. Mirzadeh</td>
+</tr>
+<tr>
 <td>balld</td>
 <td>Donald Ball</td>
 </tr>
@@ -2663,6 +2678,10 @@ s=d.getElementsByTagName('script')[0];
 <td>Berin Loritsch</td>
 </tr>
 <tr>
+<td>bnicholes</td>
+<td>Bradley Nicholes</td>
+</tr>
+<tr>
 <td>boisvert</td>
 <td>Alex Boisvert</td>
 </tr>
@@ -2685,6 +2704,10 @@ s=d.getElementsByTagName('script')[0];
 <tr>
 <td>bryanduxbury</td>
 <td>Bryan Duxbury</td>
+</tr>
+<tr>
+<td>caijunj</td>
+<td>Jun Jie Cai</td>
 </tr>
 <tr>
 <td>carlosrovira</td>
@@ -3011,16 +3034,16 @@ s=d.getElementsByTagName('script')[0];
 <td>John McNally</td>
 </tr>
 <tr>
-<td>jnioche</td>
-<td>Julien Nioche</td>
-</tr>
-<tr>
 <td>joes</td>
 <td>Joe Schaefer</td>
 </tr>
 <tr>
 <td>johan</td>
 <td>Johan Oskarsson</td>
+</tr>
+<tr>
+<td>jplevyak</td>
+<td>John Bradley Plevyak</td>
 </tr>
 <tr>
 <td>jstrachan</td>
@@ -3065,6 +3088,10 @@ s=d.getElementsByTagName('script')[0];
 <tr>
 <td>kmarsden</td>
 <td>Katherine Marsden</td>
+</tr>
+<tr>
+<td>kmenard</td>
+<td>Kevin Joseph Menard, Jr.</td>
 </tr>
 <tr>
 <td>kristwaa</td>
@@ -3149,6 +3176,10 @@ s=d.getElementsByTagName('script')[0];
 <tr>
 <td>mriou</td>
 <td><a href="http://offthelip.org">Matthieu Riou</a></td>
+</tr>
+<tr>
+<td>mseidel</td>
+<td>Matthias Seidel</td>
 </tr>
 <tr>
 <td>mwomack</td>
@@ -3359,6 +3390,14 @@ s=d.getElementsByTagName('script')[0];
 <td><a href="mailto:sergek@lokitech.com">Serge Knystautas</a></td>
 </tr>
 <tr>
+<td>sgoeschl</td>
+<td>Siegfried Goeschl</td>
+</tr>
+<tr>
+<td>simonetripodi</td>
+<td>Simone Tripodi</td>
+</tr>
+<tr>
 <td>skitching</td>
 <td>Simon Kitching</td>
 </tr>
@@ -3429,10 +3468,6 @@ s=d.getElementsByTagName('script')[0];
 <tr>
 <td>thommay</td>
 <td>Thom May</td>
-</tr>
-<tr>
-<td>tn</td>
-<td>Thomas Neidhart</td>
 </tr>
 <tr>
 <td>tomdz</td>

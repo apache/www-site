@@ -201,6 +201,22 @@ s=d.getElementsByTagName('script')[0];
       </div>
     </nav>
   </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplyfy and shorten in length bootstrap framework  -->
+     <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    // Using Bootstrap's event system for dropdowns
+    $(document).on('shown.bs.dropdown', '.dropdown', function () {
+        // Check if this is the search dropdown
+        if ($(this).find('.glyphicon-search').length > 0) {
+            // Find and focus the search input
+            setTimeout(function() {
+                $('.pagefind-ui__search-input').focus();
+            }, 50); // Small delay to ensure input is ready
+        }
+    });
+});
+  </script>
   <!-- / Navigation -->
   <header id="main-header" class="container">
     <div class="sideImg">
@@ -307,7 +323,7 @@ private list (where <em>project</em> is the name of the project). PMC members mu
 maintain the confidentiality of messages on privately-archived mailing lists.</p>
 <h2 id="chair">How to perform the duties of the PMC chair<a class="headerlink" href="#chair" title="Permalink">&para;</a></h2>
 <p>See the <a href="../foundation/how-it-works.html#pmc">definition of PMC and chair</a>
-, and be familiar with the <a href="../foundation/bylaws.html">ASF Bylaws</a>. The  <a href="/pmc-chair.html">advice for new PMC chairs</a> has additional useful information.</p>
+, and be familiar with the <a href="../foundation/bylaws.html">ASF Bylaws</a>. The  <a href="pmc-chair.html">advice for new PMC chairs</a> has additional useful information.</p>
 <h3 id="review-board-meeting-minutes-about-their-project">Review board meeting minutes about their project<a class="headerlink" href="#review-board-meeting-minutes-about-their-project" title="Permalink">&para;</a></h3>
 <p>PMC chairs should monitor the minutes of board meetings for entries that are relevant to their
 project, especially any comments directors make on their project's reports,
@@ -580,7 +596,7 @@ a board member. Your PMC needs to work with the new committer to ensure
 that their CLA is received and recorded properly, so you need to monitor
 the file <code>iclas.txt</code> in the <code>foundation/officers</code> repository. Only ASF
 members and officers (PMC chairs) have access. The Apache Phone Book
-has an <a href="https://home.apache.org/unlistedclas.html">Unlisted CLAs</a> page
+has an <a href="https://people.apache.org/unlistedclas.html">Unlisted CLAs</a> page
 which is generated daily from the <code>iclas.txt</code> file, and recently received CLAs
 appear there.</p>
 <p>Encourage your new committer to include both the PMC name and their desired account ID
@@ -725,8 +741,8 @@ people not on a PMC should not be allowed to subscribe to <code>private@</code> 
 <ul>
 <li>Committers can view, and PMC chairs can update, PMC rosters using
 <a href="https://whimsy.apache.org/roster/committee/">Whimsy</a>.</li>
-<li>Anyone may view Apache Phonebook pages at <a href="https://home.apache.org/phonebook.html">https://home.apache.org/phonebook.html</a>.
-From there you can link to a specific PMC like this: <a href="https://home.apache.org/phonebook.html?pmc=gump">home.apache.org/phonebook.html?pmc=gump</a></li>
+<li>Anyone may view Apache Phonebook pages at <a href="https://people.apache.org/phonebook.html">https://people.apache.org/phonebook.html</a>.
+From there you can link to a specific PMC like this: <a href="https://people.apache.org/phonebook.html?pmc=gump">people.apache.org/phonebook.html?pmc=gump</a></li>
 </ul>
 <p>Please allow time for any changes to LDAP and committee-info.txt to propagate to the Phonebook app.</p>
 <p><strong>Note:</strong> The official record for PMC membership is the committee-info.txt file, and not the LDAP committee group.</p>

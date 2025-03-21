@@ -201,6 +201,22 @@ s=d.getElementsByTagName('script')[0];
       </div>
     </nav>
   </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplyfy and shorten in length bootstrap framework  -->
+     <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    // Using Bootstrap's event system for dropdowns
+    $(document).on('shown.bs.dropdown', '.dropdown', function () {
+        // Check if this is the search dropdown
+        if ($(this).find('.glyphicon-search').length > 0) {
+            // Find and focus the search input
+            setTimeout(function() {
+                $('.pagefind-ui__search-input').focus();
+            }, 50); // Small delay to ensure input is ready
+        }
+    });
+});
+  </script>
   <!-- / Navigation -->
   <header id="main-header" class="container">
     <div class="sideImg">
@@ -233,13 +249,13 @@ organization</a> and <a href="meeting">how board meetings work</a> are also avai
 <p>Rich Bowen</p>
 </li>
 <li>
+<p>Zili Chen</p>
+</li>
+<li>
 <p>Shane Curcuru</p>
 </li>
 <li>
-<p>Willem Ning Jiang</p>
-</li>
-<li>
-<p>Jeff Jirsa</p>
+<p>Jim Jagielski</p>
 </li>
 <li>
 <p>Justin Mclean</p>
@@ -248,7 +264,7 @@ organization</a> and <a href="meeting">how board meetings work</a> are also avai
 <p>Jean-Baptiste Onofr&eacute;</p>
 </li>
 <li>
-<p>Craig L Russell</p>
+<p>Greg Stein</p>
 </li>
 <li>
 <p>Sander Striker</p>

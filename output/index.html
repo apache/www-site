@@ -201,6 +201,22 @@ s=d.getElementsByTagName('script')[0];
       </div>
     </nav>
   </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplyfy and shorten in length bootstrap framework  -->
+     <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    // Using Bootstrap's event system for dropdowns
+    $(document).on('shown.bs.dropdown', '.dropdown', function () {
+        // Check if this is the search dropdown
+        if ($(this).find('.glyphicon-search').length > 0) {
+            // Find and focus the search input
+            setTimeout(function() {
+                $('.pagefind-ui__search-input').focus();
+            }, 50); // Small delay to ensure input is ready
+        }
+    });
+});
+  </script>
   <!-- / Navigation -->
   <header id="main-header" class="container">
     <div class="sideImg">
@@ -282,21 +298,21 @@ s=d.getElementsByTagName('script')[0];
 <article class="card">
 <div class="content">
 <span class="label label-danger">Foundation Blog</span>
-<h5><a class="entryTitle" href="https://news.apache.org/?p=6310" target="_blank">ASF Plus One Newsletter: February 2025</a></h5>
+<h5><a class="entryTitle" href="https://news.apache.org/?p=6350" target="_blank">The Apache Software Foundation Announces New Top-Level Project</a></h5>
 </div>
-<a class="continue" href="https://news.apache.org/?p=6310" target="_blank">Continue Reading&nbsp;&rarr;</a>
+<a class="continue" href="https://news.apache.org/?p=6350" target="_blank">Continue Reading&nbsp;&rarr;</a>
 </article><article class="card">
 <div class="content">
 <span class="label label-danger">Foundation Blog</span>
-<h5><a class="entryTitle" href="https://news.apache.org/?p=6306" target="_blank">The Apache Software Foundation Announces Apache Ignite&reg; 3.0</a></h5>
+<h5><a class="entryTitle" href="https://news.apache.org/?p=6345" target="_blank">Community Over Code Asia Coming to Beijing in July 2025</a></h5>
 </div>
-<a class="continue" href="https://news.apache.org/?p=6306" target="_blank">Continue Reading&nbsp;&rarr;</a>
+<a class="continue" href="https://news.apache.org/?p=6345" target="_blank">Continue Reading&nbsp;&rarr;</a>
 </article><article class="card">
 <div class="content">
 <span class="label label-danger">Foundation Blog</span>
-<h5><a class="entryTitle" href="https://news.apache.org/?p=6277" target="_blank">The Apache Software Foundation Announces Apache Sling&trade; 13</a></h5>
+<h5><a class="entryTitle" href="https://news.apache.org/?p=6343" target="_blank">The Apache Software Foundation Announces New Board Members</a></h5>
 </div>
-<a class="continue" href="https://news.apache.org/?p=6277" target="_blank">Continue Reading&nbsp;&rarr;</a>
+<a class="continue" href="https://news.apache.org/?p=6343" target="_blank">Continue Reading&nbsp;&rarr;</a>
 </article>
 <!-- /gm -->
 </div>
@@ -399,48 +415,48 @@ s=d.getElementsByTagName('script')[0];
 <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
 <ul class="nav nav-tabs">
 <li class="active">
-<a data-toggle="tab" href="#kudu">Kudu</a>
+<a data-toggle="tab" href="#kyuubi">Kyuubi</a>
 </li><li>
-<a data-toggle="tab" href="#roller">Roller</a>
+<a data-toggle="tab" href="#directory">Directory</a>
 </li><li>
-<a data-toggle="tab" href="#xerces">Xerces</a>
+<a data-toggle="tab" href="#libcloud">Libcloud</a>
 </li>
 </ul>
 </div>
 </div>
 <div class="col-md-9 col-sm-12">
 <div class="tab-content">
-<div class="tab-pane fade in active" id="kudu">
+<div class="tab-pane fade in active" id="kyuubi">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/kudu/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/kyuubi/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-kudu"><a href="http://kudu.apache.org/">Kudu</a></h4>
-<p>A distributed columnar storage engine built for the Apache Hadoop ecosystem</p>
-<a class="btn btn-default btn-sm" href="http://kudu.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-kyuubi"><a href="http://kyuubi.apache.org">Kyuubi</a></h4>
+<p>a distributed and multi-tenant gateway to provide serverless SQL on data warehouses and lakehouses</p>
+<a class="btn btn-default btn-sm" href="http://kyuubi.apache.org" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="roller">
+</div><div class="tab-pane fade in" id="directory">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/roller/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/directory/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-roller"><a href="http://roller.apache.org/">Roller</a></h4>
-<p>Java blog server</p>
-<a class="btn btn-default btn-sm" href="http://roller.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-directory"><a href="http://directory.apache.org/">Directory</a></h4>
+<p>Apache Directory Server</p>
+<a class="btn btn-default btn-sm" href="http://directory.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="xerces">
+</div><div class="tab-pane fade in" id="libcloud">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/xerces/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/libcloud/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="featured-project-xerces"><a href="http://xerces.apache.org/">Xerces</a></h4>
-<p>XML parsers in Java, C++ and Perl</p>
-<a class="btn btn-default btn-sm" href="http://xerces.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="featured-project-libcloud"><a href="http://libcloud.apache.org/">Libcloud</a></h4>
+<p>Unified interface to the cloud</p>
+<a class="btn btn-default btn-sm" href="http://libcloud.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
 </div>
@@ -459,48 +475,48 @@ s=d.getElementsByTagName('script')[0];
 <div class="tabbable tabs-left visible-md-inline visible-lg-inline">
 <ul class="nav nav-tabs">
 <li class="active">
-<a data-toggle="tab" href="#nemo">Nemo</a>
+<a data-toggle="tab" href="#teaclave">Teaclave</a>
 </li><li>
-<a data-toggle="tab" href="#seata">Seata</a>
+<a data-toggle="tab" href="#training">Training</a>
 </li><li>
-<a data-toggle="tab" href="#uniffle">Uniffle</a>
+<a data-toggle="tab" href="#resilientdb">ResilientDB</a>
 </li>
 </ul>
 </div>
 </div>
 <div class="col-md-9 col-sm-12">
 <div class="tab-content">
-<div class="tab-pane fade in active" id="nemo">
+<div class="tab-pane fade in active" id="teaclave">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/nemo/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/teaclave/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-nemo"><a href="http://nemo.incubator.apache.org/">Nemo</a></h4>
-<p>Nemo is a data processing system to flexibly control the runtime behaviors of a job to adapt to varying deployment characteristics.</p>
-<a class="btn btn-default btn-sm" href="http://nemo.incubator.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="incubating-project-teaclave"><a href="http://teaclave.incubator.apache.org/">Teaclave</a></h4>
+<p>Teaclave is a universal secure computing platform.</p>
+<a class="btn btn-default btn-sm" href="http://teaclave.incubator.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="seata">
+</div><div class="tab-pane fade in" id="training">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/seata/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/training/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-seata"><a href="http://seata.incubator.apache.org/">Seata</a></h4>
-<p>Seata(Simple Extensible Autonomous Transaction Architecture)is an easy-to-use and high-performance distributed transaction solution, used to solve the data consistency problem.</p>
-<a class="btn btn-default btn-sm" href="http://seata.incubator.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="incubating-project-training"><a href="http://training.incubator.apache.org/">Training</a></h4>
+<p>The Training project aims to develop resources which can be used for training purposes in various media formats, languages and for various Apache and non-Apache target projects.</p>
+<a class="btn btn-default btn-sm" href="http://training.incubator.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
-</div><div class="tab-pane fade in" id="uniffle">
+</div><div class="tab-pane fade in" id="resilientdb">
 <div class="row">
 <div class="col-sm-2">
-<img alt="Logo" class="img-responsive center-block" src="/logos/res/uniffle/default.png"/>
+<img alt="Logo" class="img-responsive center-block" src="/logos/res/incubator/default.png"/>
 </div>
 <div class="col-sm-10">
-<h4 class="no-btm-margin" id="incubating-project-uniffle"><a href="http://uniffle.incubator.apache.org/">Uniffle</a></h4>
-<p>Uniffle is an unified Remote Shuffle Service</p>
-<a class="btn btn-default btn-sm" href="http://uniffle.incubator.apache.org/" role="button">Learn More...</a>
+<h4 class="no-btm-margin" id="incubating-project-resilientdb"><a href="http://resilientdb.incubator.apache.org/">ResilientDB</a></h4>
+<p>ResilientDB is a distributed blockchain framework that is open-source, lightweight, modular, and highly performant.</p>
+<a class="btn btn-default btn-sm" href="http://resilientdb.incubator.apache.org/" role="button">Learn More...</a>
 </div>
 </div>
 </div>
@@ -648,10 +664,10 @@ s=d.getElementsByTagName('script')[0];
 <li><a href="http://geode.apache.org/" title="Low latency, high concurrency data management solutions">Geode</a></li>
 <li><a href="http://geronimo.apache.org/" title="Java2, Enterprise Edition (J2EE) container">Geronimo</a></li>
 <li><a href="http://gobblin.apache.org" title="a distributed data integration framework that simplifies common aspects of big data integration such as data ingestion, replication, organization and lifecycle management for both streaming and batch data ecosystems">Gobblin</a></li>
-<li><a href="http://gora.apache.org/" title="ORM framework for column stores such as Apache HBase and Apache Cassandra with a specific focus on Hadoop">Gora</a></li>
 <li><a href="http://griffin.apache.org/" title="a data quality solution for big data, including both streaming and batch mode. It offers an unified process to measure data quality from different perspectives.">Griffin</a></li>
 <li><a href="http://groovy.apache.org/" title="A multi-faceted language for the Java platform">Groovy</a></li>
 <li><a href="http://guacamole.apache.org/" title="providing performant, browser-based remote access">Guacamole</a></li>
+<li><a href="http://gump.apache.org/" title="Continuous integration of open source projects">Gump</a></li>
 </ul>
 </div>
 </div>
@@ -660,7 +676,6 @@ s=d.getElementsByTagName('script')[0];
 <div class="row">
 <div class="col-lg-6 col-md-12 border-right">
 <ul class="list-unstyled" style="margin-bottom: 0px;">
-<li><a href="http://gump.apache.org/" title="Continuous integration of open source projects">Gump</a></li>
 <li class="letter-header">H</li>
 <li><a href="http://hbase.apache.org/" title="Apache Hadoop Database">HBase</a></li>
 <li><a href="http://hadoop.apache.org/" title="Distributed computing platform">Hadoop</a></li>
@@ -699,11 +714,11 @@ s=d.getElementsByTagName('script')[0];
 <li><a href="http://linkis.apache.org" title="a distributed computation middleware to facilitate connection, governance and orchestration between the upper applications and the underlying data engines">Linkis</a></li>
 <li><a href="http://logging.apache.org/" title="Cross-language logging services">Logging Services</a></li>
 <li><a href="" title="Creation and development of a brand and logo for the Foundation">Logo Development</a></li>
+<li><a href="http://lucene.apache.org/" title="Search engine library">Lucene</a></li>
 </ul>
 </div>
 <div class="col-lg-6 col-md-12 border-right">
 <ul class="list-unstyled" style="margin-bottom: 0px;">
-<li><a href="http://lucene.apache.org/" title="Search engine library">Lucene</a></li>
 <li><a href="http://lucenenet.apache.org/" title="Search engine library targeted at .NET runtime users.">Lucene.Net</a></li>
 <li class="letter-header">M</li>
 <li><a href="http://madlib.apache.org/" title="Scalable, Big Data, SQL-driven machine learning framework for Data Scientists">MADlib</a></li>
@@ -742,6 +757,7 @@ s=d.getElementsByTagName('script')[0];
 <li><a href="http://petri.apache.org" title="assessment of, education in, and adoption of the Foundation's policies and procedures for collaborative development and the pros and cons of joining the Foundation">Petri</a></li>
 <li><a href="http://phoenix.apache.org/" title="High performance relational database layer over Apache HBase for low latency applications">Phoenix</a></li>
 <li><a href="http://pig.apache.org/" title="Platform for analyzing large data sets">Pig</a></li>
+<li><a href="http://pinot.apache.org" title="distributed OLAP data store to provide Real-time Analytics to power wide variety of analytical use case">Pinot</a></li>
 </ul>
 </div>
 </div>
@@ -750,7 +766,6 @@ s=d.getElementsByTagName('script')[0];
 <div class="row">
 <div class="col-lg-6 col-md-12 border-right">
 <ul class="list-unstyled" style="margin-bottom: 0px;">
-<li><a href="http://pinot.apache.org" title="distributed OLAP data store to provide Real-time Analytics to power wide variety of analytical use case">Pinot</a></li>
 <li><a href="http://apr.apache.org/" title="Apache Portable Runtime libraries">Portable Runtime (APR)</a></li>
 <li><a href="http://portals.apache.org/" title="Portal technology">Portals</a></li>
 <li><a href="http://pulsar.apache.org/" title="highly scalable, low latency messaging platform running on commodity hardware">Pulsar</a></li>
@@ -789,11 +804,11 @@ s=d.getElementsByTagName('script')[0];
 <li><a href="http://struts.apache.org/" title="Model 2 framework for building Java web applications">Struts</a></li>
 <li><a href="http://subversion.apache.org/" title="Version Control">Subversion</a></li>
 <li><a href="http://superset.apache.org" title="data exploration, analysis, visualization, and dashboarding">Superset</a></li>
+<li><a href="http://synapse.apache.org/" title="Enterprise Service Bus and Mediation Framework">Synapse</a></li>
 </ul>
 </div>
 <div class="col-lg-6 col-md-12">
 <ul class="list-unstyled" style="margin-bottom: 0px;">
-<li><a href="http://synapse.apache.org/" title="Enterprise Service Bus and Mediation Framework">Synapse</a></li>
 <li><a href="http://syncope.apache.org/" title="Managing digital identities in enterprise environments">Syncope</a></li>
 <li><a href="http://systemds.apache.org/" title="A machine learning platform optimal for big data">SystemDS</a></li>
 <li class="letter-header">T</li>
