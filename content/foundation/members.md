@@ -434,7 +434,7 @@ This table shows current and emeritus members who have manually added themselves
 | thilina | [Thilina Gunarathne](http://home.apache.org/~thilina/) | [Airavata](http://airavata.apache.org/) ; [Axis](http://axis.apache.org/) ; [WS](http://ws.apache.org/)|
 | thorsten | Thorsten Scherler |
 | tilmannz | Tilmann Zäschke |
-| tison | [Zili Chen](http://github.com/tisonkun) | [Flink](https://flink.apache.org/), [Curator](https://curator.apache.org/) |
+| tison | [Zili Chen](http://github.com/tisonkun) | [Curator](https://curator.apache.org/) ; [OpenDAL](https://github.com/apache/opendal) |
 | tn | Thomas Neidhart |
 | todd | Todd Lipcon |
 | tomaz | Tomaz Muraus | [Libcloud](https://libcloud.apache.org) |
@@ -451,7 +451,6 @@ This table shows current and emeritus members who have manually added themselves
 | umamahesh | [Uma Maheswara Rao G](https://home.apache.org/~umamahesh/umamahesh.html) | [Hadoop](http://hadoop.apache.org); [BookKeeper](http://bookkeeper.apache.org) |
 | uschindler | [Uwe Schindler](http://www.thetaphi.de/) | [Lucene](//lucene.apache.org/) , [POI](http://poi.apache.org/) |
 | vanto | [Tammo van Lessen](http://www.taval.de/) | [ODE](http://ode.apache.org)|
-| veithen | [Andreas Veithen](http://veithen.github.io) |
 | venkatesh | Venkatesh Seetharam |
 | vgritsenko | [Vadim Gritsenko](http://home.apache.org/~vgritsenko/) | [Cocoon](http://cocoon.apache.org/) , [Regexp](http://jakarta.apache.org/regexp/) , [Xindice](http://xml.apache.org/xindice/)|
 | vinodkv | [Vinod Kumar Vavilapalli](http://home.apache.org/~vinodkv) | [Hadoop](http://hadoop.apache.org) ; [Ambari](http://incubator.apache.org/ambari/); [TEZ](http://incubator.apache.org/projects/tez.html)|
@@ -720,6 +719,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | ugo | [Ugo Cei](http://agylen.com/) | [Cocoon](http://cocoon.apache.org/) , [POI](http://poi.apache.org/)|
 | uncled | David Nuescheler |
 | upayavira | [Upayavira](http://www.odoko.com) | [Lucene](http://lucene.apache.org) ; [Cocoon](http://cocoon.apache.org/) ; infrastructure|
+| veithen | [Andreas Veithen](http://veithen.github.io) |
 | vhardy | Vincent Hardy |
 | vmassol | Vincent Massol |
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|
