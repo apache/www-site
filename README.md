@@ -1,6 +1,6 @@
 # Apache Software Foundation Website (www.apache.org)
 
-This repository provides the source for the main website of The Apache Software Foundation.
+This repository provides the source for the main website of The Apache Software Foundation. The content and design of the site is the responsibility of VP, Marketing and Publicity. Any proposed improvements or fixes should have issues created first, to be approved by VP, M&P.
 
 - [Production website](https://www.apache.org/)
 
@@ -43,16 +43,16 @@ The build is triggered by changes to the source, and also every 8 hours (current
 - [ASF Data Load](asfdata.yaml) -- ASF metadata to be used by ezt and Pelican. See [asfdata.py](https://github.com/apache/infrastructure-pelican/blob/master/plugins/asfdata.py).
 - [ASF YAML Pelican Build](.asf.yaml) -- ASF infrastructure instructions.
 
-The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
+The [svn history](https://svn.apache.org/viewvc/infrastructure/site/trunk/) was not migrated and remains available.
 
-Foundation records, including minutes of Board meetings, remain in [svn](http://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
+Foundation records, including minutes of Board meetings, remain in [svn](https://svn.apache.org/viewvc/infrastructure/site/trunk/content/foundation/records/),
 except for the [index page](content/foundation/records/index.md).
 
-Whimsy maintains the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
+The Secretary maintains the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
 in SVN. At the start of each build, a setup entry in [pelicanconf.yaml](pelicanconf.yaml) calls the [get_calendar.sh](get_calendar.sh) script, which copies the calendar into `content/foundation/board`.
-
-Changes to the file do not automatically trigger a build, but the file changes rarely (about once a month)
-and there are regular builds which pick up changes within an hour or so.
+Changes to the calendar file do not automatically trigger a build, but the file changes rarely
+(about once a month, when the minutes are published)
+and there are regular builds which pick up any changes.
 
 ## Local development and testing
 

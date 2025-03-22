@@ -50,4 +50,4 @@ For nontrivial changes, create a Pull Request and start a discussion with the st
 
 For trivial changes commit your changes and let the stakeholders know.
 
-The [svn history](http://svn.apache.org/viewvc/infrastructure/site/trunk/content) was not migrated and remains available.
+The [svn history](https://svn.apache.org/viewvc/infrastructure/site/trunk/content) was not migrated and remains available.

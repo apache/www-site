@@ -105,6 +105,12 @@ For non-sponsorship corporate contributions and individuals wishing to make a fi
 
 Targeted Sponsorships benefit the ASF in addition to funding our general operations. Targeted Sponsors receive the [same benefits as Foundation Sponsors](https://apache.org/foundation/sponsorship.html#foundation-sponsorship) based on the equivalent value of the non-cash contribution. All Targeted Sponsorships (donated or in-kind products/solutions/services) must be pre-approved by the ASF (and/or the beneficiary Apache project, community, or activity) must be deemed essential in order to qualify for consideration for Targeted Sponsorship. Targeted Sponsorships require a minimum 3-year commitment to ensure funding continuity to support services provided. We invite you to [view our guidelines](https://apache.org/foundation/docs/targeted-sponsorship-policy.html) to see if Targeted Sponsorship is right for you.
 
+## ASF Initiatives
+
+[ASF Initiatives](https://www.apache.org/foundation/initiatives) are specific Targeted Sponsorships that provide additional financial support for Foundation governance operations, open source projects, and project communities. 
+
+The first to launch is the ASF Tooling Initiative (March 2025), created to meet the growing global demand for ASF software by hardening ubiquitous Apache projects that benefit the greater open source ecosystem.
+
 ## Corporate Giving Programs
 
 The impact of your gift to the ASF as part of an annual corporate giving program bolsters the ASF’s mission. Corporate giving programs at Bloomberg, IBM, Microsoft, PayPal, Vanguard, and many others offer tax benefits, and provide their employees the ability to boost their support of a diverse set of nonprofit projects.

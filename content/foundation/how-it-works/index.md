@@ -1,4 +1,3 @@
-Atom: http://mail-archives.apache.org/mod_mbox/www-community/?format=atom
 Title: How the ASF works
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
@@ -294,7 +293,7 @@ nature of the various communities.
 
 ### Documentation
 
-Each project is responsible for its own [project website](https://home.apache.org/committers-by-project.html).
+Each project is responsible for its own [project website](https://people.apache.org/committers-by-project.html).
 Further information to assist committers, developers, and PMCs is available
 at [ASF Infrastructure](/dev/).
 

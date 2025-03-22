@@ -53,7 +53,6 @@ We could use your help! As always, patches are welcome! The best place to get in
 - [Purpose and goals of these History pages](goals.html) 
 - [Graph of the Board of Directors, over time](directors.html)
 - [Early timeline of the Apache HTTP Web Server project](http://httpd.apache.org/ABOUT_APACHE.html) 
-- [Graphical timelines of committer and project growth](http://people.apache.org/~curcuru/timeline/)
 
 ## Raw Historical Data
 Since all Apache project development happens on publicly-archived mailing lists, 

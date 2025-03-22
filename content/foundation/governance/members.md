@@ -186,7 +186,6 @@ of the Apache Way, and usually get involved in more projects as time goes on.
 * Who They Are: [Current Members and Committers by Project](http://people.apache.org/committer-index.html)
 * [Bylaws of the ASF](/foundation/bylaws.html)
 * [Org chart of the ASF](orgchart.html)
-* [Graph of Membership Growth](http://people.apache.org/~curcuru/timeline/members.html)
 * [How Members Are Elected](/foundation/governance/meetings#membervoting)
 * Members have access to additional resources listed on the _foundation/private-index page_ in svn.
 
