@@ -434,7 +434,7 @@ This table shows current and emeritus members who have manually added themselves
 | thilina | [Thilina Gunarathne](http://home.apache.org/~thilina/) | [Airavata](http://airavata.apache.org/) ; [Axis](http://axis.apache.org/) ; [WS](http://ws.apache.org/)|
 | thorsten | Thorsten Scherler |
 | tilmannz | Tilmann Zäschke |
-| tison | [Zili Chen](http://github.com/tisonkun) | [Flink](https://flink.apache.org/), [Curator](https://curator.apache.org/) |
+| tison | [Zili Chen](http://github.com/tisonkun) | [Curator](https://curator.apache.org/) ; [OpenDAL](https://github.com/apache/opendal) |
 | tn | Thomas Neidhart |
 | todd | Todd Lipcon |
 | tomaz | Tomaz Muraus | [Libcloud](https://libcloud.apache.org) |
