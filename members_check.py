@@ -90,6 +90,7 @@ def main(failOnWarn=False):
     elif warnings > 0:
         if failOnWarn:
             print("Warnings detected, failing")
+            sys.exit(1)
         else:
             print("Warnings detected")
     else:
