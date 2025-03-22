@@ -117,8 +117,11 @@ Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank
 -  [Email etiquette tips for contributors](contrib-email-tips) 
 -  How to [moderate Apache mailing lists](committers.html#mail-moderate) 
 -  All Apache mailing lists are archived:
-    - For top-level/non-project mailing lists, see [list archives on lists.apache.org](http://lists.apache.org/).
-    - Some projects have a "mail" directory at the top of their project website (see [notes](https://infra.apache.org/project-site.html#mail)).
+    - Read most Apache [list archives on mail-archives.apache.org](http://mail-archives.apache.org/mod_mbox/) by going to the specific project list, then append the mbox filename to the URL (e.g. [mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox](mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox))
+    - Raw mbox archive files are available for every mailing list.
+    - Each project website has a "mail" directory, e.g. [httpd.apache.org/mail/](http://httpd.apache.org/mail/)
+(see [notes](/dev/project-site.html#mail)).
+    - For top-level/non-project mailing lists see [www.apache.org/mail/](/mail/) directory.
 
 ## Apache URL Shortener Service  {#shorten}
 
