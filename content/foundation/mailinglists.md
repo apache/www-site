@@ -131,14 +131,13 @@ For further information, see the
 
 ## Mailing List Archives  {#archives}
 
-Archives for public mailing lists are available at a number of locations,
-including:
+Archives for public mailing lists are available at a number of locations.
+You can find the archives at [Apache mail archives](https://lists.apache.org/)
 
--  [Apache mail archives](https://lists.apache.org/) 
+Other thirdparty archives for public mailing lists are available at:
 
--  [MARC](http://marc.info/) 
-
--  [mail-archive.com](http://mail-archive.com/) 
+-  [MARC](http://marc.info/)
+-  [mail-archive.com](http://mail-archive.com/)
 
 ## Project Mailing Lists
 
@@ -175,7 +174,7 @@ our official [@TheASF Twitter](https://twitter.com/TheASF) account, or the
 |---------|-----|
 | Subscription address: |  [announce-subscribe@apache.org](mailto:announce-subscribe@apache.org)  |
 | Unsubscription address: |  [announce-unsubscribe@apache.org](mailto:announce-unsubscribe@apache.org)  |
-| Archives: | [Web archives](http://lists.apache.org/list.html?announce@apache.org)<br />[archives](http://www.mail-archive.com/announce@apache.org/) |
+| Archives: | [Web archives](http://lists.apache.org/list.html?announce@apache.org) |
 | Getting help with the list: |  [announce-help@apache.org](mailto:announce-help@apache.org)  |
 
 ## Apache Conference Announcements  {#foundation-apachecon}
