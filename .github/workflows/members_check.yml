@@ -1,4 +1,6 @@
 name: Check members.md listings
+# For manual and scheduled runs, warnings will trigger a workflow fail
+# For pull/push, only errors (i.e. not a member at all) cause a failure
 on:
   push:
     paths:
@@ -11,10 +13,21 @@ on:
       - 'members_check.py'
       - '.github/workflows/members_check.yml'
   workflow_dispatch:
+  schedule:
+    - cron: "25 10 * * *"    # Daily
 jobs:
   members-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          python3 members_check.py
+      - name: Check members.md for discrepancies
+        run: |
+          echo "${{ github.event_name }}"
+          case "${{ github.event_name }}" in
+            schedule|workflow_dispatch)
+              python3 members_check.py failOnWarn
+            ;;
+            *)
+              python3 members_check.py
+            ;;
+          esac
