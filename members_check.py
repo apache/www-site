@@ -28,11 +28,12 @@ import requests
 MEMBER_INFO = 'https://whimsy.apache.org/public/member-info.json'
 MEMBERS_MD ='content/foundation/members.md'
 
-def main():
+def main(failOnWarn=False):
     member_info = requests.get(MEMBER_INFO).json()
     members = member_info['members']
     ex_members = member_info['ex_members']
     errors = 0
+    warnings = 0
     with open(MEMBERS_MD, 'r', encoding='utf-8') as md:
         section = None
         for line in md:
@@ -61,25 +62,38 @@ def main():
             name = parts.pop(0).strip()
             if section == 'members':
                 if not availid in members:
+                    level = ''
                     if availid in ex_members:
                         status = f"is listed in Whimsy with status '{ex_members.get(availid)}'"
+                        warnings += 1
+                        level = 'WARNING'
                     else:
                         status = "was not found in Whimsy"
-                    errors += 1
-                    print(f"'{availid}' ({name}) is listed in the 'members' section of `content/foundation/members.md`, but {status}")
+                        errors += 1
+                        level = 'ERROR'
+                    print(f"{level}: '{availid}' ({name}) is listed in the 'members' section of `content/foundation/members.md`, but {status}")
             elif section == 'emeritus':
                 if availid != '?' and not availid in ex_members:
                     if availid in members:
                         status = "is listed in Whimsy as an ASF Member"
+                        warnings += 1
+                        level = 'WARNING'
                     else:
                         status = "was not found in Whimsy"
-                    print(f"'{availid}' ({name}) is listed in the 'emeritus' section of `content/foundation/members.md`, but {status}")
-                    errors += 1
+                        errors += 1
+                        level = 'ERROR'
+                    print(f"{level}: '{availid}' ({name}) is listed in the 'emeritus' section of `content/foundation/members.md`, but {status}")
+    print(f"Detected {errors} error(s) and {warnings} warnings. ")
     if errors > 0:
-        print(f"Detected {errors} error(s). ")
+        print("Errors detected, failing")
         sys.exit(1)
+    elif warnings > 0:
+        if failOnWarn:
+            print("Warnings detected, failing")
+        else:
+            print("Warnings detected")
     else:
-        print("No errors detected")
+        print("No errors or warnings detected")
 
 if __name__ == '__main__':
-    main()
+    main(len(sys.argv) >1 and sys.argv[1] == 'failOnWarn')
