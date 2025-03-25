@@ -68,6 +68,7 @@ This table shows current and emeritus members who have manually added themselves
 | bodewig | [Stefan Bodewig](http://stefan.samaflost.de/) | [Ant](http://ant.apache.org/) , [Gump](http://gump.apache.org/) , [Jakarta](http://jakarta.apache.org/)|
 | bommel | Bernd Bohmann | [MyFaces](http://myfaces.apache.org/)|
 | brane | Branko Čibej |
+| brebs | Paul Brebner | [Community Over Code](https://communityovercode.org/)|
 | breser | Ben Reser | [Subversion](http://subversion.apache.org) ; [httpd](http://httpd.apache.org) |
 | brett | [Brett Porter](http://brettporter.wordpress.com/) | [Maven](http://maven.apache.org/) ; [Archiva](http://archiva.apache.org/) ; [Continuum](http://continuum.apache.org/) ; [Incubator](http://incubator.apache.org/) ;  board|
 | brianb | [Brian Behlendorf](http://www.behlendorf.com/) |
