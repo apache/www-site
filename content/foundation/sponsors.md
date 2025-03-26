@@ -39,7 +39,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="http://cloudera.com/"><img src="images/cloudera-gold.png"/></a><p style="text-align: center; font-weight: bold;">Cloudera</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.confluent.io/"><img src="images/confluent-gold.png"/></a><p style="text-align: center; font-weight: bold;">Confluent</p></li>
       <li><a target="_blank" rel="sponsored" href="http://ibm.com/"><img src="images/ibm.png"/></a><p style="text-align: center; font-weight: bold;">IBM</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.union-investment.de/"><img src="images/union-gold.png"/></a><p style="text-align: center; font-weight: bold;">Union Investment</p></li>
+      <li><a target="_blank" rel="sponsored" href="http://www.union-investment.de/"><img src="images/union_investment.png"/></a><p style="text-align: center; font-weight: bold;">Union Investment</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.workday.com/"><img src="images/workday-gold.png"/></a><p style="text-align: center; font-weight: bold;">Workday</p></li>
    </ul>
    </div>
