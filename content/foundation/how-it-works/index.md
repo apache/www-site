@@ -167,8 +167,8 @@ officers](/foundation/faq.html#why-are-PMC-chairs-officers).
 
 The [ASF Bylaws](/foundation/bylaws.html) (section 6.3) define a PMC and the position
 of chair. Some emails help to clarify:
-[here](http://www.mail-archive.com/community@apache.org/msg03961.html) and
-[here](http://www.mail-archive.com/community@apache.org/msg04005.html).
+[here](https://lists.apache.org/thread/cmjkjv56r5317lshh7bjr0jfpqpbm124) and
+[here](https://lists.apache.org/thread/x4vjvp01hj9nr6h96m9jv04mss0oyfoc).
 
 The role of the PMC from a Foundation perspective is oversight. The main
 role of the PMC is not code and not coding, but to ensure that its community addresses all legal

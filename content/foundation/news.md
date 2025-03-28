@@ -11,7 +11,7 @@ Keep informed about news from the Apache Software Foundation and its
 projects by subscribing to the [Apache
 Announcements](mailinglists.html#foundation-announce) mailing list. To see
 what has happened recently, please check the [archives of Apache
-Announcements](http://mail-archives.apache.org/mod_mbox/www-announce/) or
+Announcements](https://lists.apache.org/list.html?announce@apache.org) or
 you can visit [our foundation blog](https://blogs.apache.org/foundation/).
 
 See the [current listing of News and Announcements](/press/#news).
