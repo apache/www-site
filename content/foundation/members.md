@@ -349,6 +349,7 @@ This table shows current and emeritus members who have manually added themselves
 | purplecabbage | Jesse MacFadyen | [Cordova](http://cordova.apache.org) |
 | panjuan | [Trista Pan](https://tristazero.github.io/) | [ShardingSphere](https://shardingsphere.apache.org/) ; [Incubator](http://incubator.apache.org/)|
 | quetwo | Nick Kwiatkowski |
+| rabelenda | Roger Abelenda |
 | rahul | Rahul Akolkar |
 | randgalt | Jordan Zimmerman | [Curator](http://curator.apache.org) |
 | raphael | Raphaël Luta |
