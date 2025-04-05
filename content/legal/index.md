@@ -43,8 +43,8 @@ Questions for the Legal Affairs Committee should be raised on
 
 Most discussions are held on the public 
 [legal-discuss@](/foundation/mailinglists.html#foundation-legal)
-mailing list. See the [legal-discuss@
-archives](http://mail-archives.apache.org/mod_mbox/www-legal-discuss/) 
+mailing list. See the
+[legal-discuss@ archives](https://lists.apache.org/list.html?legal-discuss@apache.org)
 for previous discussions.
 
 The Legal Affairs Committee (including VP of Legal Affairs) is staffed exclusively by volunteers 
