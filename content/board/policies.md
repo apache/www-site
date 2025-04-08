@@ -85,6 +85,10 @@ and/or to the board.
 
   * Projects MUST work with VP, Fundraising whenever [directly accepting or using financial donations](//www.apache.org/foundation/sponsorship.html).
 
+### Privacy Policy ([VP, Data Privacy](https://whimsy.apache.org/foundation/orgchart/vp-dataprivacy))
+
+  * Projects SHOULD comply with the Foundation's [Privacy Policy](//privacy.apache.org/policies/privacy-policy-public.html)
+  
 ### Incubator Podling Policies ([Incubator PMC](https://whimsy.apache.org/foundation/orgchart/vp-incubator))
 
   * Incubator Podlings MUST uphold the applicable [Incubator policies](https://incubator.apache.org/policy/incubation.html) 
