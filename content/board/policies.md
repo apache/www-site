@@ -87,7 +87,7 @@ and/or to the board.
 
 ### Privacy Policy ([VP, Data Privacy](https://whimsy.apache.org/foundation/orgchart/vp-dataprivacy))
 
-  * Projects SHOULD comply with the Foundation's [Privacy Policy](//privacy.apache.org/policies/privacy-policy-public.html)
+  * Projects MUST comply with the Foundation's [Privacy Policy](//privacy.apache.org/policies/privacy-policy-public.html)
   
 ### Incubator Podling Policies ([Incubator PMC](https://whimsy.apache.org/foundation/orgchart/vp-incubator))
 
