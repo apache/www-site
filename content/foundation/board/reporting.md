@@ -55,7 +55,7 @@ existing format, so that automated tools can parse them, here:
 
       https://svn.apache.org/repos/private/foundation/board/
 
-The board welcomes reports that any PMC submits apart from their scheduled reports, 
+The board welcomes reports that any PMC submits separately from their scheduled reports, 
 should they have something notable to report or to request feedback on. In this case, the chair 
 may add the report as an attachment to the end of the agenda and create a corresponding 
 comments section for it.
