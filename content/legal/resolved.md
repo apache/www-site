@@ -78,7 +78,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - [Google "Additional IP Rights Grant (Patents)" file](https://chromium.googlesource.com/external/webrtc/+/master/PATENTS)
 - [The Unlicense](https://unlicense.org/)
 - [Historical Permission Notice and Disclaimer](https://opensource.org/licenses/HPND)
-- [Mulan Permissive Software License，Version 2](https://license.coscl.org.cn/MulanPSL2/)
+- [Mulan Permissive Software License，Version 2](https://opensource.org/license/mulanpsl-2-0)
 - [Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0)
 - [EPICS Open License]( https://epics-controls.org/epics-open-license/)
 - [Zero-Clause BSD (0BSD)](https://opensource.org/license/0bsd/)
