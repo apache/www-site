@@ -82,6 +82,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - [Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0)
 - [EPICS Open License]( https://epics-controls.org/epics-open-license/)
 - [Zero-Clause BSD (0BSD)](https://opensource.org/license/0bsd/)
+- [TCL/TK License](https://spdx.org/licenses/TCL.html)
 
 Many of these licenses have specific attribution terms that the project needs to adhered to, often by [adding 
 them to the NOTICE file](/dev/licensing-howto.html). Ensure you are doing this when including these works. 
