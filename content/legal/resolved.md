@@ -40,7 +40,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - BSD (without advertising clause). Including variants:
     - [BSD 2-clause](http://opensource.org/licenses/bsd-license.php)
     - [BSD 3-clause](http://opensource.org/licenses/BSD-3-Clause)
-    - [DOM4J License](http://dom4j.sourceforge.net/dom4j-1.6.1/license.html)
+    - [DOM4J License](https://github.com/dom4j/dom4j/blob/master/LICENSE)
     - [PostgreSQL License](http://opensource.org/licenses/postgresql) 
     - [Eclipse Distribution License 1.0](http://www.eclipse.org/org/documents/edl-v10.php)
     - [Lawrence Berkeley National Labs BSD](https://spdx.org/licenses/BSD-3-Clause-LBNL.html)
@@ -53,10 +53,10 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - [University of Illinois/NCSA](http://opensource.org/licenses/UoI-NCSA.php)
 - [W3C Software License](http://opensource.org/licenses/W3C.php)
 - [W3C Community Contributor License Agreement](https://www.w3.org/community/about/agreements/cla/) - if at least 45 days after publication</li>
-- [X.Net](http://opensource.org/licenses/xnet.php)
+- [X.Net](https://opensource.org/license/xnet)
 - [zlib/libpng](http://opensource.org/licenses/zlib-license.php)
 - FSF autoconf license
-- [DejaVu Fonts (Bitstream Vera/Arev licenses)](http://dejavu-fonts.org/wiki/index.php?title=License)
+- [DejaVu Fonts (Bitstream Vera/Arev licenses)](https://spdx.org/licenses/Bitstream-Vera.html)
 - [Academic Free License 3.0](http://opensource.org/licenses/afl-3.0.php)
 - [Service+Component+Architecture+Specifications](http://web.archive.org/web/20080704184203/http://www.osoa.org/xmlns/sca/1.0/license.txt)
 - OOXML XSD ECMA License
@@ -72,7 +72,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - [The Romantic WTF public license](https://github.com/pygy/gosub/blob/master/LICENSE)
 - [UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE](http://www.unicode.org/copyright.html#Exhibit1)
 - [Zope Public License 2.0](https://opensource.org/licenses/ZPL-2.0)
-- [ACE license](http://www.cs.wustl.edu/~schmidt/ACE-copying.html)
+- [ACE license](https://docs.oracle.com/en/industries/communications/lsms/14.0/licensing-information-user-manual/ace-license1.html)
 - [Oracle Universal Permissive License (UPL) Version 1.0](https://oss.oracle.com/licenses/upl/)
 - [Open Grid Forum License](https://www.ogf.org/ogf/doku.php/about/copyright)
 - [Google "Additional IP Rights Grant (Patents)" file](https://chromium.googlesource.com/external/webrtc/+/master/PATENTS)
