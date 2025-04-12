@@ -101,7 +101,7 @@ include your project/podling's private mailing list (i.e. not your public dev@ l
 ### Research Registered Trademarks  {#regsearch}
 
 Perform the same search as above, but for registered trademarks.
-A thorough review of registered trademarks in countries your project
+A thorough review of registered trademarks for countries in which your project
 is active is important, because if a third party has already
 registered a similar name for a similar kind of software project,
 it is unlikely we'll be able to use the name.
