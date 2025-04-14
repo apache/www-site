@@ -61,6 +61,7 @@ This table shows current and emeritus members who have manually added themselves
 | billcole | William K. (Bill) Cole | [SpamAssassin](http://spamassassin.apache.org/)|
 | billie | Billie Rinaldi | [Accumulo](http://accumulo.apache.org)|
 | bjh | [Brian Havard](http://silk.apana.org.au) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/)|
+| bkp | Brian Proffitt |
 | blair | Blair Zajac |
 | blautenb | Berin Lautenbach | [XML](http://xml.apache.org) ; [incubator](http://incubator.apache.org/)|
 | bob | Bob Paulin | [Felix](http://felix.apache.org/) , [Tika](http://tika.apache.org/)|
