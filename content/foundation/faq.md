@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # How can we help?
 
 <a class="btn btn-default mx-10" href="#software" role="button">Software</a>
-<a class="btn btn-default mx-10" href="#software" role="button">Security</a>
+<a class="btn btn-default mx-10" href="#security" role="button">Security</a>
 <a class="btn btn-default mx-10" href="#legal" role="button">Legal</a>
 <a class="btn btn-default mx-10" href="#foundation" role="button">Foundation</a>
 <a class="btn btn-default mx-10" href="#members" role="button">Members</a>
@@ -14,7 +14,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 ## Software
 
 ### You have questions about purchasing ASF software or obtaining support for it. 
-All software produced by the Foundation is available for download, by anyone and for free, from our websites and mirrors. We do not sell it; we give it away. Neither do we provide formal or commercial support for any of our packages.
+All software produced by the Foundation is available for download, by anyone and for free, from our websites and mirrors. We do not sell it; we give it away. Neither do we provide formal or commercial support for any of our packages. Read our statement about [data processing, compliance statements, and SLA](https://security.apache.org/blog/data-processing-compliance-statements-and-sla/).
 
  Also see the [is it free](license-faq.html#IsItFree) and following sections in our license FAQ and our [Apache software is free of cost](/free/) page.
 
