@@ -90,7 +90,6 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://gradle.com/"><img src="images/gradle-white-background-400-112.png"/></a><p style="text-align: center; font-weight: bold;">Gradle</p></li>
       <li><a target="_blank" rel="sponsored" href="https://jfrog.com/open-source/"><img src="images/jfrog-platinum.png"/></a><p style="text-align: center; font-weight: bold;">JFrog</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.osuosl.org/"><img src="images/osl-logo.png"/></a><p style="text-align: center; font-weight: bold;">OSU Open Source Labs</p></li>
       <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.sonatype.com/nexus/product-overview"><img src="images/sonatype-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Sonatype</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.jetbrains.com/"><img src="images/jetbrains.png"/></a><p style="text-align: center; font-weight: bold;">JetBrains</p></li>
@@ -114,6 +113,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    <div class="sponsors">
    <ul id='targetedsilver'>
       <li><a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage"><img src="images/netapp-instaclustr-silver.png"/></a><p style="text-align: center; font-weight: bold;">NetApp Instaclustr</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://sourceforge.net/"><img src="images/sourceforge-silver.png"/></a><p style="text-align: center; font-weight: bold;">SourceForge</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.mi.com/"><img src="images/xiaomi-silver.png"/></a><p style="text-align: center; font-weight: bold;">Xiaomi</p></li>
    </ul>
    </div>  
