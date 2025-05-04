@@ -261,12 +261,12 @@ may wish to use Apache products.  Obviously, third parties that primarily
 disparage our communities or products are not welcome to use our marks in
 ways that might be infringing.
 
-The ASF provides a core set of services both for
-the communities that drive our projects, as well as for end users of our
-products.  Ensuring that end users can easily learn about and come to the
-Apache hosted versions of these services - including but not limited to
-issue tracking, mailing lists, website documentation and download services
-- is important to our project communities and to the ASF itself.
+The ASF provides a core set of services both for the communities that drive our
+projects, as well as for end users of our products.  Ensuring that end users can
+easily learn about and come to the Apache hosted versions of these services -
+including but not limited to issue tracking, mailing lists, website
+documentation and download services - is important to our project communities
+and to the ASF itself.
 
 Apache projects are run solely by their PMCs, as projects independent of
 outside corporations or organizations.  It is important to maintain both
