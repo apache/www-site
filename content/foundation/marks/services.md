@@ -305,7 +305,7 @@ third party products, services, or events.**
 
 ## Policy Version  {#version}
 
-This is version 0.2 of this Apache policy document, published in February 2017.
+This is version 0.3 of this Apache policy document, published in May 2025.
 Significant changes will be marked with a new version number.
 
 [resources]: /foundation/marks/resources
