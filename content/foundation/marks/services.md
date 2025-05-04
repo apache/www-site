@@ -117,13 +117,12 @@ text of the main landing page itself or the service's splash page, as appropriat
 
 ## Must Provide Credit To Relevant Apache Project Community  {#credit}
 
-The primary landing page of the domain's website, and any "About", "Contact",
-or similarly named page(s) or features of your service must provide a
-prominent text credit and link to the Apache project whose mark is being
-used, as well as a mention of the independent community behind the project.
-A common motto of Apache projects is "Community over code", and prominent
-uses of Apache marks must clearly provide credit to the community behind
-the mark and its product.
+The primary landing page of the domain's website, and any "About", "Contact", or
+similarly named page(s) or features of your service must provide a prominent
+text credit and link to the Apache project whose mark is being used, as well as
+a mention of the independent community behind the project. A common motto of
+Apache projects is "Community over code", and prominent uses of Apache marks
+must clearly provide credit to the community behind the mark and its product.
 
 ## Must Include Links To Relevant Apache Product Resources  {#resources}
 
