@@ -106,14 +106,15 @@ Website content and services branding must clearly and prominently inform
 the public that the service and your organization are not affiliated with, endorsed by, or otherwise
 associated with the ASF or any of its projects.
 
-This must include an appropriate statement specifying non-affiliation in the main
-text body of your About or similar explanatory page of your website, or
-similar Help - About dialog or other method of user help, as well
-as being included in at least the footer of
-the main landing page for any associated website or other commonly used footer
-or appendix for your service.  Depending on the type of content for your
-website, we may also require a prominent non-affiliation notice within the
-text of the main landing page itself or the service's splash page, as appropriate.
+This must include an appropriate statement specifying non-affiliation in:
+- the main landing page for any associated website or other commonly used footer
+or appendix for your service;
+- the main text body of your About or similar explanatory page of your website; and
+- any "Help - About" dialog or other method of user help.
+
+Depending on the type of content for your website, we may also require a prominent
+non-affiliation notice within the text of the main landing page itself or the
+service's splash page, as appropriate.
 
 ## Must Provide Credit To Relevant Apache Project Community  {#credit}
 
