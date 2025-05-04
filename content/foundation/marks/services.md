@@ -19,7 +19,7 @@ as an official policy.  Direct any questions to trademarks@apache.org.**
 
 **In general, you may not use Apache marks such as "Apache Example" or
 "Example" as primary branding in your services names or service marks** if
-that use would likely confuse a relevant consumer about the source any
+that use would likely confuse a relevant consumer about the source of any
 software or services you provide with products or services provided by
 the Apache Example project or the Apache Software Foundation (ASF) as a whole.  You
 should apply the "likelihood of confusion" test described in our
