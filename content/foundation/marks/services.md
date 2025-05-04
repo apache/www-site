@@ -17,11 +17,11 @@ as an official policy.  Direct any questions to trademarks@apache.org.**
 
 ## Services Naming Branding Overview  {#introduction}
 
-**In general, you may not use Apache marks such as "Apache *Project*" or
-"*Project*" as primary branding in your services names or service marks** if
+**In general, you may not use Apache marks such as "Apache Example" or
+"Example" as primary branding in your services names or service marks** if
 that use would likely confuse a relevant consumer about the source any
 software or services you provide with products or services provided by
-the Apache *Project* project or the Apache Software Foundation (ASF) as a whole.  You
+the Apache Example project or the Apache Software Foundation (ASF) as a whole.  You
 should apply the "likelihood of confusion" test described in our
 [formal Trademark Policy](/foundation/marks/),
 understanding that the use of Apache marks in third party services is
@@ -163,10 +163,10 @@ service has an
 exclusive or controlling relationship with any Apache project or with the
 ASF as a whole, or with any service related to our products.
 
-For example, a website declaring itself "The Only Host For Apache *Project*" would
+For example, a website declaring itself "The Only Host For Apache Example" would
 not be permitted since it implies an exclusive resource.  Likewise, branding
-or taglines such as "The Apache *Project* Project Leaders" are not allowed, since
-that implies control of the *Project* project.
+or taglines such as "The Apache Example Project Leaders" are not allowed, since
+that implies control of the Apache Example project.
 
 Users of Apache marks in third party services must acknowledge that Apache projects
 are solely managed by the Project Management Committee (PMC) of the project,
@@ -185,7 +185,7 @@ The primary splash page or user help for the service, and any "Legal", "About", 
 or similarly named pages or services must feature prominent attributions of all Apache
 marks used on the domain. For example:
 
->Apache *Project*, *Project* and Apache are either registered trademarks or trademarks of
+>Apache Example, Example and Apache are either registered trademarks or trademarks of
 the Apache Software Foundation in the United States and/or other countries,
 and are used with permission as of 2017. The Apache Software Foundation has
 no affiliation with and does not endorse or review the materials provided at
