@@ -30,7 +30,7 @@ generally not "nominative fair use."
 You may be eligible to [Request Permission to Use Apache marks](#permission) related to
 our products in the primary branding of your service if the naming style
 and presentation of your service to the public meets our services naming
-requirements below.  Thus in some cases a website providing a hosted set of
+requirements below.  Thus, in some cases, a website providing a hosted set of
 Apache Solr search tools and search indexes as a service to the public
 may be granted permission to use a service branding like *QuickFind using
 Apache Solr* if you get specific permission from the VP, Brand Management
