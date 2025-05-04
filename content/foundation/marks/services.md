@@ -39,8 +39,8 @@ and/or the VP of the relevant Apache project (Apache Solr in this case).
 Note that this does not generally apply to our "Apache" trademark; use of that
 mark in services names that may be confusingly similar to any Apache project or
 product or service is **not** allowed.  The Apache brand is important to all
-Apache projects, and is special to our organization, as well as being the
-primary way that consumers discover our projects and products.
+Apache projects, is special to our organization and is the primary way that
+consumers discover our projects and products.
 
 You may also be interested in reading our closely related
 [Third Party Domain Name Branding Policy](/foundation/marks/domains).
