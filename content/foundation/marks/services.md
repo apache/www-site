@@ -34,7 +34,7 @@ requirements below.  Thus in some cases a website providing a hosted set of
 Apache Solr search tools and search indexes as a service to the public
 may be granted permission to use a service branding like *QuickFind using
 Apache Solr* if you get specific permission from the VP, Brand Management
-and/or the VP of the relevant Apache project (Apache Lucene in this case).
+and/or the VP of the relevant Apache project (Apache Solr in this case).
 
 Note that this does not generally apply to our "Apache" trademark; use of that
 mark in services names that may be confusingly similar to any Apache project or
