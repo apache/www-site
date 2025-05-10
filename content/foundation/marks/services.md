@@ -102,9 +102,9 @@ are interested in learning about or using our products is important to us.
 
 ## Must Display Non-Affiliation Clearly  {#nonaffiliation}
 
-Website content and services branding must clearly and prominently inform
-the public that the service and your organization are not affiliated with, endorsed by, or otherwise
-associated with the ASF or any of its projects.
+Website content and services branding must clearly and prominently state that:
+"Neither *service name* nor *provider name* are affiliated with, endorsed
+by, or otherwise associated with the ASF or any of its projects."
 
 This must include an appropriate statement specifying non-affiliation in:
 - the main landing page for any associated website or other commonly used footer
@@ -207,10 +207,11 @@ any of the domain's own branding and logos, and must include a hyperlink to
 the Apache project's home page where practicable.  You must not change the
 appearance of any Apache logos when using them.
 
-Third party website branding may not include the Apache feather as a brand
-element in any way. The only use of the bare Apache feather or Apache logo
-on websites allowed is to provide a single link to http://www.apache.org/
-as a reference to The Apache Software Foundation and its projects.
+Third party website branding may not include the Apache logo (with or without
+text) as a brand element for third party products and/or services in any way.
+The only use of the Apache logo on websites allowed is to provide a single
+link to http://www.apache.org/ as a reference to The Apache Software
+Foundation and its projects.
 
 ## Must Not Use "Apache" or "ApacheCon" Names  {#apachecon}
 
@@ -305,7 +306,7 @@ third party products, services, or events.**
 
 ## Policy Version  {#version}
 
-This is version 0.3 of this Apache policy document, published in May 2025.
+This is version 0.4 of this Apache policy document, published in May 2025.
 Significant changes will be marked with a new version number.
 
 [resources]: /foundation/marks/resources
