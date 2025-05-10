@@ -508,15 +508,8 @@ repository.
 
 #### How to grant SVN access (karma) to a project source repository  {#SVNaccess}
 
-For most operations, PMCs do not need to do anything to grant new committers SVN access to their areas. However, if the automatic LDAP process does not work for some reason, the PMC can use  the <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/subversion_server/files/authorization/asf-authorization-template" target="_blank">ASF authorization template</a>. 
-
-The **[groups]** section of the file defines SVN group names and
-their members. The groups are defined as LDAP references; see below
-for how to update them.
-
-To grant or deny access to directories in SVN, the PMC chair needs to
-update the appropriate **[group]** entry. The PMC chair has access to make
-changes to the project groups held in LDAP. 
+For most operations, PMCs do not need to do anything to grant new committers SVN access to their areas. However, if the automatic LDAP process does not work for some reason, please
+contact the Infra team via an email or [Jira](https://issues.apache.org/jira/browse/INFRA) ticket.
 
 #### Updating LDAP group membership using Whimsy Roster  {#SVNWhimsy}
 
