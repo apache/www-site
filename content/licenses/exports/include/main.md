@@ -87,7 +87,7 @@ software product versions that do not fit those two classifications are
 noted as ECCN "Not determined" or not included in the matrix.
 
 The ASF exports products classified as [ECCN
-5D002](http://www.access.gpo.gov/bis/ear/txt/ccl5-pt2.txt) under the publicly-available exempton found in EAR Section 742.15(b),
+5D002](http://www.access.gpo.gov/bis/ear/txt/ccl5-pt2.txt) under the publicly-available exemption found in EAR Section 742.15(b),
 which applies to software containing or designed for use with encryption software 
 that is publicly available as open source. Note that exporters other than the
 ASF within the U.S. may or may not be eligible for the publicly-available exemption 
