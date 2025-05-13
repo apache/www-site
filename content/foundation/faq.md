@@ -170,6 +170,9 @@ If you have sent us mail because you think you have traced spam to a system that
 
 - How to: Look up the owner of an IP address<small>(such as 10.0.35.147): [https://ws.arin.net/whois/](https://ws.arin.net/whois/). ARIN (Registered Internet Numbers) database (tells you who owns an IP address, such as 10.0.35.147, or which other database to query if the address is assigned outside the USA).
 
+### You think your IP address has been blocked
+Follow the instructions on this page: [https://infra.apache.org/contact.html](https://infra.apache.org/contact.html).
+
 ## Marketing
 
 ### Can I refer to an individual or organization as the "founder" or "creator" of an ASF project?
