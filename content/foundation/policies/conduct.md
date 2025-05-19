@@ -52,7 +52,7 @@ Apache welcomes and encourages participation by everyone. We are committed to be
 
 No matter how you identify yourself or how others perceive you, we welcome you. Though no list can hope to be comprehensive, we explicitly honour diversity in age, culture, ethnicity, genotype, gender identity or expression, language, national origin, neurotype, phenotype, political beliefs, profession, race, religion, sexual orientation, socioeconomic status, subculture and technical ability.
 
-Though we welcome people fluent in all languages, Apache development takes place in English.
+Though we welcome people fluent in all languages, Apache software development takes place in English.
 
 The Code of Conduct, above, details our standards for behaviour in the Apache community. We expect participants in our community to meet these standards in all their interactions and to help others to do so.
 
@@ -62,15 +62,15 @@ While all participants should adhere to this code of conduct, we recognize that 
 
 Assume good faith; it is more likely that participants are unaware of their bad behaviour than that they intentionally try to degrade the quality of the discussion. Should there be difficulties in dealing with the situation, you may report your compliance issues in confidence to:
  
- * [President](https://whimsy.apache.org/foundation/orgchart) of the Apache Software Foundation: David Nalley (ke4qqq at apache dot org)
- * [Executive Vice President](https://whimsy.apache.org/foundation/orgchart) of the Apache Software Foundation: Ruth Suehle (suehle at apache dot org)
+ * [President](https://whimsy.apache.org/foundation/orgchart) of The Apache Software Foundation: Ruth Suehle (president AT apache DOT org)
+ * [Executive Vice President](https://whimsy.apache.org/foundation/orgchart) of The Apache Software Foundation: Jeff Jirsa (jjirsa AT apache DOT org)
 
 or one of our volunteers:
 
-  * [Joan Touzet](/foundation/conduct-team/wohali.html)
+  * Joan Touzet (wohali AT apache DOT org)
 
 
-If the violation is in documentation or code, for example inappropriate pronoun usage or word choice within official documentation, report these privately to the project in question at private@<em>project</em>.apache.org, and, if you have sufficient ability within the project, resolve or remove the concerning material, being mindful of the perspective of the person originally reporting the issue.
+If the violation is in documentation or code, for example, inappropriate pronoun usage or word choice within official documentation, report these privately to the project in question at private@<em>project</em>.apache.org, and, if you have sufficient ability within the project, resolve or remove the concerning material, being mindful of the perspective of the person originally reporting the issue.
 
 
 <h2 id="endnotes">Notes</h2>
