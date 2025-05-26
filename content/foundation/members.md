@@ -302,7 +302,6 @@ This table shows current and emeritus members who have manually added themselves
 | mnour | Mohammad Nour El-Din |
 | mreutegg | Marcel Reutegger |
 | mrglavas | [Michael Glavassevich](http://home.apache.org/~mrglavas/) | [Xerces-J](http://xerces.apache.org/xerces2-j/) , [XML Commons](http://xml.apache.org/commons/)|
-| mturk | Mladen Turk |
 | mvdb | [Martin van den Bemt](http://www.mvdb.org/) | [Jakarta](http://jakarta.apache.org/) , [Db DDLUtils](http://db.apache.org/ddlutils) , [Gump](http://gump.apache.org)|
 | myrle | Myrle Krantz | [Fineract](https://fineract.apache.org) |
 | nacx | Ignasi Barrera | [jclouds](http://jclouds.apache.org) |
@@ -744,11 +743,13 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 
 - **Randy Kobes**
 
-- **Gregory D. Reddin**
+- **[Gregory D. Reddin](/memorials/greg_reddin.html)**
 
 - **[Martin Pöschl](/memorials/martin_poeschl.html)**
 
 - **[Henk P. Penning](/memorials/henk_penning.html)**
+
+- **[Mladen Turk](/memorials/mladen_turk.html)**
 
 ## Adding Your Name
 If you have a GitHub account that is linked to your ASF account,
