@@ -20,7 +20,7 @@ See also Board Meeting Minutes: [Calendar View](/foundation/board/calendar.html)
 
 The Board holds its meetings by teleconference (and IRC for backchannel), and they typically last about 
 one and a half hours.  Meetings follow the posted agenda, with the chair or 
-relevant officers leading discussion.  Apache Members and PMC Chairs are 
+relevant officers leading discussion.  Apache Members, PMC Chairs, and invited guests are 
 always welcome to [attend monthly board meetings](#attend).
 
 **Contents**
