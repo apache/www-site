@@ -76,7 +76,7 @@ and attach the PDF file to an email addressed to secretary@apache.org.
 
 No printer? See [CLA Frequently Asked Questions](cla-faq.html#printer)
 
-If possible, send the attachment from the email address you list in the document.
+You must send the attachment from the email address you list in the document.
 Send only one attached document per email.
 
 If you prefer to sign electronically, fill in the form, save it locally (e.g. icla.pdf), and sign the
