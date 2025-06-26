@@ -16,7 +16,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <ul id='platinum'>
        <li><a target="_blank" rel="sponsored" href="https://www.apple.com/"><img src="images/apple-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Apple</p></li>
       <li><a target="_blank" rel="sponsored" href="https://aws.amazon.com/"><img src="images/aws-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Amazon Web Services</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.meta.com/about/"><img src="images/Meta_lockup_positive primary_RGB.webp"/></a><p style="text-align: center; font-weight: bold;">Meta</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.meta.com/about/"><img src="images/meta-logo.png"/></a><p style="text-align: center; font-weight: bold;">Meta</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.geico.com/tech/"><img src="images/geico-platinum2.png"/></a><p style="text-align: center; font-weight: bold;">GEICO</p></li>
       <li><a target="_blank" rel="sponsored" href="http://google.com/"><img src="images/google.png"/></a><p style="text-align: center; font-weight: bold;">Google</p></li>
       <li><a target="_blank" rel="sponsored" href="http://huawei.com/"><img src="images/huawei-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Huawei</p></li>
