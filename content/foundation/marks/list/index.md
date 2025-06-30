@@ -112,6 +112,23 @@ or see other common law trademarks by letter:
 <div class="row">
   <div class="col-sm-12">
     <h3 id="registered">The ASF holds the following registered trademarks:</h3>
+   <div class="panel panel-primary" id="apache">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+                Our APACHE® trademarks
+        </h3>
+      </div>
+      <div class="panel-body">Our APACHE® trademark represents our house brand of consensus-driven, community built software for the public good.</div>
+      <ul class="list-group">
+        <li class="list-group-item active">APACHE ®</li>
+        <li class="list-group-item">In Australia, class 9, reg # 1592292</li>
+        <li class="list-group-item">In Brazil, class 9, reg # 840758464</li>
+        <li class="list-group-item">In Brazil, class 42, reg # 840758472</li>
+        <li class="list-group-item">In Japan, class 9, reg # 5687188</li>
+        <li class="list-group-item">In Norway, class 9, reg # 284311</li>
+        <li class="list-group-item">In Switzerland, class 9, reg # 654504</li>
+      </ul>
+    </div>
     <div class="panel panel-primary" id="accumulo">
       <div class="panel-heading">
         <h3 class="panel-title"><a href="https://accumulo.apache.org">Apache Accumulo</a>® software</h3>
@@ -140,21 +157,18 @@ or see other common law trademarks by letter:
         </li>
       </ul>
     </div>
-    <div class="panel panel-primary" id="apache">
+    <div class="panel panel-primary" id="airflow">
       <div class="panel-heading">
-        <h3 class="panel-title">
-                Our APACHE® trademarks
-        </h3>
+        <h3 class="panel-title"><a href="http://airflow.apache.org/">Apache Airflow</a>® software</h3>
       </div>
-      <div class="panel-body">Our APACHE® trademark represents our house brand of consensus-driven, community built software for the public good.</div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache Airflow® software:
+      </div>
       <ul class="list-group">
-        <li class="list-group-item active">APACHE ®</li>
-        <li class="list-group-item">In Australia, class 9, reg # 1592292</li>
-        <li class="list-group-item">In Brazil, class 9, reg # 840758464</li>
-        <li class="list-group-item">In Brazil, class 42, reg # 840758472</li>
-        <li class="list-group-item">In Japan, class 9, reg # 5687188</li>
-        <li class="list-group-item">In Norway, class 9, reg # 284311</li>
-        <li class="list-group-item">In Switzerland, class 9, reg # 654504</li>
+        <li class="list-group-item active">Airflow ®</li>
+        <li class="list-group-item">
+          <a href="https://tsdr.uspto.gov/#amp%3BcaseSearchType=US_APPLICATION&amp%3BcaseType=DEFAULT&amp%3BsearchType=statusSearch&caseNumber=7,442,956&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">In the United States of America, class 9, reg # 7,442,956</a>
+        </li>
       </ul>
     </div>
     <div class="panel panel-primary" id="beam">
