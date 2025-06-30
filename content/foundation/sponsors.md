@@ -22,6 +22,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="http://huawei.com/"><img src="images/huawei-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Huawei</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
       <li><a target="_blank" rel="sponsored" href="https://news.apache.org/foundation/entry/the-apache-software-foundation-receives"><img src="images/pineapple_fund.png"/></a><p style="text-align: center; font-weight: bold;">Pineapple Fund</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.snowflake.com/"><img src="images/snowflake-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Snowflake</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.visa.com/"><img src="images/visa-platinum.png"/></a><p style="text-align: center; font-weight: bold;">VISA</p></li>
       <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
    </ul>
@@ -52,7 +53,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/"><img src="images/indeed-silver.png"/></a><p style="text-align: center; font-weight: bold;">Indeed</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.lycorp.co.jp/en/"><img src="images/LY-silver.png"/></a><p style="text-align: center; font-weight: bold;">LY Corporation</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.snowflake.com/"><img src="images/snowflake-silver.png"/></a><p style="text-align: center; font-weight: bold;">Snowflake</p></li>
    </ul>
    </div>
 
@@ -63,7 +63,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.canva.com/">Canva Engineering</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.cargurus.com/">CarGurus</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://datastrato.com">Datastrato</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.getgrist.com">Grist Labs</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
