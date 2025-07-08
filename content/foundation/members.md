@@ -336,6 +336,7 @@ This table shows current and emeritus members who have manually added themselves
 | perrin | Perrin Harkins | [mod_perl](http://perl.apache.org/)|
 | pescetti | Andrea Pescetti | [OpenOffice](http://openoffice.apache.org/) |
 | pgollucci | [Philip M. Gollucci](http://p6m7g8.com) | [mod_perl](http://perl.apache.org/) , [httpd-apreq](http://httpd.apache.org/apreq) ,httpd-test, apr, infrastructure|
+| philo | [Feilong He](https://github.com/philo-he) | [Gluten](http://gluten.apache.org) |
 | phunt | Patrick D. Hunt |
 | piergiorgio | [Piergiorgio Lucidi](https://www.open4dev.com) | [ManifoldCF](http://manifoldcf.apache.org/) , [ComDev](https://community.apache.org/)|
 | pietsch | Joerg Pietschmann |
