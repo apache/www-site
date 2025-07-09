@@ -54,6 +54,8 @@ Changes to the calendar file do not automatically trigger a build, but the file 
 (about once a month, when the minutes are published)
 and there are regular builds which pick up any changes.
 
+During Pelican builds a special index page – https://apache.org/website/index.html – is updated which lists all of the generated pages.
+
 ## Local development and testing
 
 If you wish to update and test the site locally, there is a Docker build script you can use.
