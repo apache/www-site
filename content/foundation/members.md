@@ -752,7 +752,9 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 - **[Mladen Turk](/memorials/mladen_turk.html)**
 
 ## Adding Your Name
-If you have a GitHub account that is linked to your ASF account,
+Please note: this page is **only** for [Foundation members](/foundation/governance/members.html).
+
+If you are an ASF member and have a GitHub account that is linked to your ASF account,
 you can [edit this page](https://github.com/apache/www-site/edit/main/content/foundation/members.md) directly in the browser. You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you.
 
 
