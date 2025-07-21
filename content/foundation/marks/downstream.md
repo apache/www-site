@@ -175,7 +175,8 @@ third party products, services, or events.**
 This is version 1.1 of this Apache policy document, published in July 2025.
 Material changes will be marked with a new version number.
 
-v1.1 clarified the licensing requirements for downstream distributions.
+v1.1 - July 2025 - clarified the licensing requirements for downstream distributions.
+v1.0 - March 2024 - original version
 
 [resources]: /foundation/marks/resources
 
