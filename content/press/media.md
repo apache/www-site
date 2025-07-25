@@ -216,9 +216,7 @@ the following information:
 We will endeavor to respond to your inquiry within two business
 days; however, as The ASF is an international collective of
 volunteers, additional time may be needed to secure the
-appropriate spokespeople. Journalists on immediate deadline
-**only** -- within eight hours or less on the same business day
--- may ring Sally Khudairi/HALO Worldwide on +1 617 921 8656 for assistance.
+appropriate spokespeople.
 
 Note: All technical questions or questions about [individual projects](http://projects.apache.org/)
 should always be directed to the appropriate [project mailing list](/foundation/mailinglists.html),
