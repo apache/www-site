@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 # How can we help?
 
 <a class="btn btn-default mx-10" href="#software" role="button">Software</a>
-<a class="btn btn-default mx-10" href="#software" role="button">Security</a>
+<a class="btn btn-default mx-10" href="#security" role="button">Security</a>
 <a class="btn btn-default mx-10" href="#legal" role="button">Legal</a>
 <a class="btn btn-default mx-10" href="#foundation" role="button">Foundation</a>
 <a class="btn btn-default mx-10" href="#members" role="button">Members</a>
@@ -14,7 +14,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 ## Software
 
 ### You have questions about purchasing ASF software or obtaining support for it. 
-All software produced by the Foundation is available for download, by anyone and for free, from our websites and mirrors. We do not sell it; we give it away. Neither do we provide formal or commercial support for any of our packages.
+All software produced by the Foundation is available for download, by anyone and for free, from our websites and mirrors. We do not sell it; we give it away. Neither do we provide formal or commercial support for any of our packages. Read our statement about [data processing, compliance statements, and SLA](https://security.apache.org/blog/data-processing-compliance-statements-and-sla/).
 
  Also see the [is it free](license-faq.html#IsItFree) and following sections in our license FAQ and our [Apache software is free of cost](/free/) page.
 
@@ -170,9 +170,17 @@ If you have sent us mail because you think you have traced spam to a system that
 
 - How to: Look up the owner of an IP address<small>(such as 10.0.35.147): [https://ws.arin.net/whois/](https://ws.arin.net/whois/). ARIN (Registered Internet Numbers) database (tells you who owns an IP address, such as 10.0.35.147, or which other database to query if the address is assigned outside the USA).
 
+### You think your IP address has been blocked
+Follow the instructions on this page: [https://infra.apache.org/contact.html](https://infra.apache.org/contact.html).
+
 ## Marketing
 
 ### Can I refer to an individual or organization as the "founder" or "creator" of an ASF project?
 The ASF discourages this because it is detrimental to the long-term health of a project community to continually call attention to the individuals and/or organizations that originally created the project.
 
 If it is necessary to highlight individuals and companies who founded a project that is now under the ASF’s stewardship, they may be referred to as "original creator of Apache Project Name" or "original developer of Apache Project Name."
+
+Usage guidelines:
+
+* If the claim is accurate, for the first two years after the open source project becomes a Top Level Project it is acceptable to use the following terms on your marketing materials: creator(s); original creator(s); original developer(s).
+* If your project is two years or older, ASF Marketing & Publicity will no longer approve those or similar terms in timely materials such as press releases; however, the terms may still appear in historical materials such as your website’s About page or Wikipedia.

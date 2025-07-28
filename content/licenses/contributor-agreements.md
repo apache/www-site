@@ -74,9 +74,13 @@ When submitting by email, please fill in the form with a PDF viewer, then
 print and sign it, scan all pages into a single PDF file, 
 and attach the PDF file to an email addressed to secretary@apache.org. 
 
+Do not copy anyone else on your submission, as the documents contain 
+Personally Identifiable Information that should not be exposed to anyone
+outside the secretary team.
+
 No printer? See [CLA Frequently Asked Questions](cla-faq.html#printer)
 
-If possible, send the attachment from the email address you list in the document.
+You must send the attachment from the email address you list in the document.
 Send only one attached document per email.
 
 If you prefer to sign electronically, fill in the form, save it locally (e.g. icla.pdf), and sign the

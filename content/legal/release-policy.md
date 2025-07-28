@@ -411,7 +411,7 @@ or the staging features of repository.apache.org
 to host release candidates posted for developer testing/voting (prior to being,
 potentially, formally blessed as a GA release).
 
-Nightly Builds that are not release candidates can be hosted at [ci.apache.org projects area](https://ci.apache.org/projects),
+Nightly Builds that are not release candidates can be hosted at [nightlies.apache.org projects area](https://nightlies.apache.org),
 just file an INFRA ticket.
 
 #### Where can we host public (GA) releases?  {#host-GA}
@@ -507,7 +507,7 @@ not be distributed via the content distribution system) also need to be coordina
 
 | Type             | Location                 |
 |------------------|--------------------------|
-| Nightly Builds   | ci.apache.org/projects |
+| Nightly Builds   | nightlies.apache.org |
 | Current Releases | downloads.apache.org     |
 | Older Releases   | archive.apache.org/dist  | 
 

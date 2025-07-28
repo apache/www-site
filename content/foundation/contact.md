@@ -23,7 +23,7 @@ To ensure that our communities are respected, and to make it easier for research
 
 | Inquiry     | Contact |
 | ----------- | ----------- |
-| Technical Support      | If you believe you’re experiencing a technical issue, visit the [Technical section of our FAQ](/foundation/faq) first before reaching out.|
+| Technical Support      | If you believe you’re experiencing a technical issue, visit the [Technical section of our FAQ](/foundation/faq) first before reaching out. If your issue is not resolved, consider contacting the Infrastructure team (see below).|
 | Hosting a project with ASF      | [Apache Incubator](https://incubator.apache.org/)        |
 | Press and analyst inquiries   | [Newsroom](/press/) <br> press@apache.org         |
 | Sponsorship or donation inquiries     | [Foundation Sponsorship](/foundation/sponsorship.html) <br> [Individual Supporters](/foundation/individual-supporters) <br> fundraising@apache.org       |

@@ -16,12 +16,13 @@ read our [sponsorship page](/foundation/sponsorship.html).
    <ul id='platinum'>
        <li><a target="_blank" rel="sponsored" href="https://www.apple.com/"><img src="images/apple-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Apple</p></li>
       <li><a target="_blank" rel="sponsored" href="https://aws.amazon.com/"><img src="images/aws-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Amazon Web Services</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://facebook.com/"><img src="images/facebook.png"/></a><p style="text-align: center; font-weight: bold;">Facebook</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.meta.com/about/"><img src="images/meta-logo.png"/></a><p style="text-align: center; font-weight: bold;">Meta</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.geico.com/tech/"><img src="images/geico-platinum2.png"/></a><p style="text-align: center; font-weight: bold;">GEICO</p></li>
       <li><a target="_blank" rel="sponsored" href="http://google.com/"><img src="images/google.png"/></a><p style="text-align: center; font-weight: bold;">Google</p></li>
       <li><a target="_blank" rel="sponsored" href="http://huawei.com/"><img src="images/huawei-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Huawei</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
       <li><a target="_blank" rel="sponsored" href="https://news.apache.org/foundation/entry/the-apache-software-foundation-receives"><img src="images/pineapple_fund.png"/></a><p style="text-align: center; font-weight: bold;">Pineapple Fund</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.snowflake.com/"><img src="images/snowflake-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Snowflake</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.visa.com/"><img src="images/visa-platinum.png"/></a><p style="text-align: center; font-weight: bold;">VISA</p></li>
       <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
    </ul>
@@ -50,10 +51,8 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.americanexpress.com/en-us/careers/career-areas/technology/"><img src="images/amer-exp-silver.png"/></a><p style="text-align: center; font-weight: bold;">American Express</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.capitalone.com/"><img src="images/capitalone-silver.png"/></a><p style="text-align: center; font-weight: bold;">Capital One</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/"><img src="images/indeed-silver.png"/></a><p style="text-align: center; font-weight: bold;">Indeed</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.lycorp.co.jp/en/"><img src="images/LINE-silver.png"/></a><p style="text-align: center; font-weight: bold;">LY Corporation</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://www.lycorp.co.jp/en/"><img src="images/LY-silver.png"/></a><p style="text-align: center; font-weight: bold;">LY Corporation</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.redhat.com/"><img src="images/redhat-silver.png"/></a><p style="text-align: center; font-weight: bold;">Red Hat, Inc.</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://opensource.salesforce.com/"><img src="images/salesforce-silver.png"/></a><p style="text-align: center; font-weight: bold;">Salesforce</p></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.snowflake.com/"><img src="images/snowflake-silver.png"/></a><p style="text-align: center; font-weight: bold;">Snowflake</p></li>
    </ul>
    </div>
 
@@ -64,15 +63,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
       <li><a target="_blank" rel="sponsored" href="https://www.canva.com/">Canva Engineering</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.cargurus.com/">CarGurus</a></li>
       <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://datastrato.com">Datastrato</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.getgrist.com">Grist Labs</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
       <li><a target="_blank" rel="sponsored" href="https://rx-m.com/">RX-M</a></li>
       <li><a target="_blank" rel="sponsored" href="https://www.renre.com/">RenaissanceRe</a></li>
       <li><a target="_blank" rel="sponsored" href="https://sentry.io/welcome/?utm_source=apacheorg&utm_medium=site&utm_campaign=general-na-evergreen&utm_content=logo-thanksdevsitelogo-na">Sentry</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://www.theblogstarter.com/">The Blog Starter</a></li>
-      <li><a target="_blank" rel="sponsored" href="https://tracemachina.com/">Trace Machina</a></li>
    </ul>
    </div>
 
@@ -90,7 +86,6 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
       <li><a target="_blank" rel="sponsored" href="https://gradle.com/"><img src="images/gradle-white-background-400-112.png"/></a><p style="text-align: center; font-weight: bold;">Gradle</p></li>
       <li><a target="_blank" rel="sponsored" href="https://jfrog.com/open-source/"><img src="images/jfrog-platinum.png"/></a><p style="text-align: center; font-weight: bold;">JFrog</p></li>
       <li><a target="_blank" rel="sponsored" href="https://microsoft.com/"><img src="images/microsoft.png"/></a><p style="text-align: center; font-weight: bold;">Microsoft</p></li>
-      <li><a target="_blank" rel="sponsored" href="http://www.osuosl.org/"><img src="images/osl-logo.png"/></a><p style="text-align: center; font-weight: bold;">OSU Open Source Labs</p></li>
       <li><a target="_blank" rel="sponsored" href="https://yahooinc.com/"><img src="images/yahoo-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Yahoo!</p></li>
       <li><a target="_blank" rel="sponsored" href="http://www.sonatype.com/nexus/product-overview"><img src="images/sonatype-platinum.png"/></a><p style="text-align: center; font-weight: bold;">Sonatype</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.jetbrains.com/"><img src="images/jetbrains.png"/></a><p style="text-align: center; font-weight: bold;">JetBrains</p></li>
@@ -114,6 +109,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
    <div class="sponsors">
    <ul id='targetedsilver'>
       <li><a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage"><img src="images/netapp-instaclustr-silver.png"/></a><p style="text-align: center; font-weight: bold;">NetApp Instaclustr</p></li>
+      <li><a target="_blank" rel="sponsored" href="https://sourceforge.net/"><img src="images/sourceforge-silver.png"/></a><p style="text-align: center; font-weight: bold;">SourceForge</p></li>
       <li><a target="_blank" rel="sponsored" href="https://www.mi.com/"><img src="images/xiaomi-silver.png"/></a><p style="text-align: center; font-weight: bold;">Xiaomi</p></li>
    </ul>
    </div>  

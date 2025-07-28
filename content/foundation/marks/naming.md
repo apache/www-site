@@ -58,9 +58,9 @@ make sure your PMC (Podlings: PPMC) has decided on a name. Usually this is done 
 
 When your PMC has decided on a name, a "suitable name search" must be done.
 
-### Create an Name Search issue
+### Create a Name Search issue
 
-First, create a an issue in [Suitable Names Search JIRA space][4]. Good examples are:
+First, create an issue in [Suitable Names Search JIRA space][4]. Good examples are:
 
  - [Apache Open Climate Workbench][5]
  - [Apache Onami][6]
@@ -101,8 +101,8 @@ include your project/podling's private mailing list (i.e. not your public dev@ l
 ### Research Registered Trademarks  {#regsearch}
 
 Perform the same search as above, but for registered trademarks.
-A thorough review of registered trademarks in countries your project
-is active in is important, because if a third party has already
+A thorough review of registered trademarks for countries in which your project
+is active is important, because if a third party has already
 registered a similar name for a similar kind of software project,
 it is unlikely we'll be able to use the name.
 
@@ -125,7 +125,7 @@ registered marks, so you will want to narrow your search to only relevant
 kinds of marks.  Try this search criteria to narrow the results:
 
 1. Open the [**USPTO** website][uspto]
-1. Click to go to directly to the **Trademark Electronic Search System (TESS)** search system
+1. Click to go directly to the **Trademark Electronic Search System (TESS)** search system
 1. Click to do the **Word and/or Design Mark Search (Free Form)**
 1. Enter your product name with the following search string and submit:
 

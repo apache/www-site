@@ -83,6 +83,7 @@ explain why, with a copy to the relevant security mailing list.
 
 7. If the project team **accepts** the report, the team writes to the reporter to let them
 know that they have accepted the report and that they are working on a fix.
+If you combine this step with steps 8/9, you can share the CVE ID with the reporter.
 
 8. The project team requests a CVE (<a href="https://cve.mitre.org/" target="_blank">Common Vulnerabilities and Exposures</a>) ID from the internal portal, `https://cveprocess.apache.org`; or by
 sending an e-mail with the subject "CVE request for..." to `security@apache.org`, providing a
@@ -90,7 +91,7 @@ short (one-line) description of the vulnerability. `security@apache.org` can
 help determine if a report requires multiple CVE IDs or if multiple reports
 should be merged under a single CVE ID.
 
-9. The ASF security team allocates a CVE ID and sends to the project team a link to the
+9. If you didn't use `https://cveprocess.apache.org`, the ASF security team allocates a CVE ID and sends to the project team a link to the
 internal portal where it can enter details of the
 vulnerability.
 

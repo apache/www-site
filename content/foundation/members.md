@@ -32,6 +32,7 @@ This table shows current and emeritus members who have manually added themselves
 | akarasulu | [Alex Karasulu](mailto:akarasulu@apache.org) | [directory](http://incubator.apache.org/directory) ; [excalibur](http://excalibur.apache.org/) ; [jakarta](http://jakarta.apache.org/)|
 | akm | Andrew Musselman | [Mahout](http://mahout.apache.org) |
 | alamb | [Andrew Lamb](http://andrew.nerdnetworks.org/) | [Arrow](http://arrow.apache.org/) |
+| aleks | Aleksandar Vidakovic | [Fineract](https://fineract.apache.org) |
 | alfonsonishikawa | [Alfonso Nishikawa Muñumer](http://people.apache.org/~alfonsonishikawa) | [Gora](https://gora.apache.org) |
 | amaniatis | Aristedes Maniatis | [Cayenne](http://cayenne.apache.org/)|
 | amareshwari | Amareshwari Sriramadasu | [Hadoop](http://hadoop.apache.org/) , [Falcon](http://falcon.apache.org/),  [Hive](http://hive.apache.org/), [Lens](http://lens.apache.org) |
@@ -61,6 +62,7 @@ This table shows current and emeritus members who have manually added themselves
 | billcole | William K. (Bill) Cole | [SpamAssassin](http://spamassassin.apache.org/)|
 | billie | Billie Rinaldi | [Accumulo](http://accumulo.apache.org)|
 | bjh | [Brian Havard](http://silk.apana.org.au) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/)|
+| bkp | Brian Proffitt |
 | blair | Blair Zajac |
 | blautenb | Berin Lautenbach | [XML](http://xml.apache.org) ; [incubator](http://incubator.apache.org/)|
 | bob | Bob Paulin | [Felix](http://felix.apache.org/) , [Tika](http://tika.apache.org/)|
@@ -68,6 +70,7 @@ This table shows current and emeritus members who have manually added themselves
 | bodewig | [Stefan Bodewig](http://stefan.samaflost.de/) | [Ant](http://ant.apache.org/) , [Gump](http://gump.apache.org/) , [Jakarta](http://jakarta.apache.org/)|
 | bommel | Bernd Bohmann | [MyFaces](http://myfaces.apache.org/)|
 | brane | Branko Čibej |
+| brebs | Paul Brebner | [Community Over Code](https://communityovercode.org/)|
 | breser | Ben Reser | [Subversion](http://subversion.apache.org) ; [httpd](http://httpd.apache.org) |
 | brett | [Brett Porter](http://brettporter.wordpress.com/) | [Maven](http://maven.apache.org/) ; [Archiva](http://archiva.apache.org/) ; [Continuum](http://continuum.apache.org/) ; [Incubator](http://incubator.apache.org/) ;  board|
 | brianb | [Brian Behlendorf](http://www.behlendorf.com/) |
@@ -299,7 +302,6 @@ This table shows current and emeritus members who have manually added themselves
 | mnour | Mohammad Nour El-Din |
 | mreutegg | Marcel Reutegger |
 | mrglavas | [Michael Glavassevich](http://home.apache.org/~mrglavas/) | [Xerces-J](http://xerces.apache.org/xerces2-j/) , [XML Commons](http://xml.apache.org/commons/)|
-| mturk | Mladen Turk |
 | mvdb | [Martin van den Bemt](http://www.mvdb.org/) | [Jakarta](http://jakarta.apache.org/) , [Db DDLUtils](http://db.apache.org/ddlutils) , [Gump](http://gump.apache.org)|
 | myrle | Myrle Krantz | [Fineract](https://fineract.apache.org) |
 | nacx | Ignasi Barrera | [jclouds](http://jclouds.apache.org) |
@@ -348,6 +350,7 @@ This table shows current and emeritus members who have manually added themselves
 | purplecabbage | Jesse MacFadyen | [Cordova](http://cordova.apache.org) |
 | panjuan | [Trista Pan](https://tristazero.github.io/) | [ShardingSphere](https://shardingsphere.apache.org/) ; [Incubator](http://incubator.apache.org/)|
 | quetwo | Nick Kwiatkowski |
+| rabelenda | Roger Abelenda |
 | rahul | Rahul Akolkar |
 | randgalt | Jordan Zimmerman | [Curator](http://curator.apache.org) |
 | raphael | Raphaël Luta |
@@ -740,14 +743,18 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 
 - **Randy Kobes**
 
-- **Gregory D. Reddin**
+- **[Gregory D. Reddin](/memorials/greg_reddin.html)**
 
 - **[Martin Pöschl](/memorials/martin_poeschl.html)**
 
 - **[Henk P. Penning](/memorials/henk_penning.html)**
 
+- **[Mladen Turk](/memorials/mladen_turk.html)**
+
 ## Adding Your Name
-If you have a GitHub account that is linked to your ASF account,
+Please note: this page is **only** for [Foundation members](/foundation/governance/members.html).
+
+If you are an ASF member and have a GitHub account that is linked to your ASF account,
 you can [edit this page](https://github.com/apache/www-site/edit/main/content/foundation/members.md) directly in the browser. You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you.
 
 

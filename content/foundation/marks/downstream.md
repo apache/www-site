@@ -70,11 +70,21 @@ The acceptable changes must meet at least one of the following criteria:
 - A change is a back-port of a change in a branch currently supported by the
   PMC to a branch that the PMC no longer supports.
 
-### Additional dependencies
 
-Any additional dependency included in the distribution MUST be licensed under
-terms that would allow an Apache project to include the dependency in an
-Apache release as per the [3rd party license policy](/legal/resolved.html).
+### Licensing
+
+The license of the downstream distribution must not be changed apart from:
+
+- Any [source code changes](#source) must be licensed under the Apache
+  License, version 2.
+
+- Any [additional dependency](#dependencies) included in the distribution
+  MUST be licensed under terms that would allow an Apache project to include
+  the dependency in an Apache release as per the
+  [3rd party license policy](/legal/resolved.html).
+
+
+### Additional dependencies  {#dependencies}
 
 Optional dependencies, modules, add-ons, etc. available from The Apache
 Software Foundation MAY be included in the distribution.
@@ -162,9 +172,11 @@ third party products, services, or events.**
 
 ## Policy Version  {#version}
 
-This is version 1.0 of this Apache policy document, published in March 2024.
-
+This is version 1.1 of this Apache policy document, published in July 2025.
 Material changes will be marked with a new version number.
+
+v1.1 - July 2025 - clarified the licensing requirements for downstream distributions.
+v1.0 - March 2024 - original version
 
 [resources]: /foundation/marks/resources
 
