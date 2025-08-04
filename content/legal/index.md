@@ -60,4 +60,4 @@ much longer. For truly urgent matters always make sure to contact vp-legal@apach
 | ---- | ----------- |
 | [Legal Affairs reports](https://whimsy.apache.org/board/minutes/Legal_Affairs.html) | The board reports to date |
 | [Draft Third-Party Licensing Policy](https://svn.apache.org/repos/asf/infrastructure/site/trunk/archive/legal/3party.mdtext) | Cliff Schmidt's original drafting. While never enacted, this draft provided the foundation from which the current policy evolved |
-| [Ramblings of an ASF VP of Legal Affairs](/legal/ramblings.html) | Sam Ruby's subsequent thoughts |
+| [Ramblings of an ASF VP of Legal Affairs (blog post)](https://news.apache.org/foundation/entry/ramblings-of-an-asf-vp-of-legal-affairs) | Sam Ruby's subsequent thoughts |
