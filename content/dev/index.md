@@ -111,17 +111,14 @@ Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank
 
 - Please read the [Public Forum Archive Policy](/foundation/public-archives.html) before posting on any Apache mailing list!
 - [Subscription instructions and netiquette](/foundation/mailinglists.html) for all Apache mailing lists.
-- All Apache projects have their own [set of project-specific mailing lists](http://projects.apache.org/indexes/quick.html).
-- There are [some other non-project](/foundation/mailinglists.html) mailing lists, such as `legal-discuss@`, `community@` and various announcement lists.
+- All Apache projects have their own [set of project-specific mailing lists](https://lists.apache.org/).
+- There are some other non-project, such as `legal-discuss@`, `geospatial@@` and various announcement lists. These are at the above link, under the 'apache' domain. Some lists may require you to log in.
 -  [Privacy notes](/foundation/mailinglists.html) about non-public lists and about [balancing confidentiality and public discussion](/foundation/how-it-works.html#confidential).
 -  [Email etiquette tips for contributors](contrib-email-tips) 
--  How to [moderate Apache mailing lists](committers.html#mail-moderate) 
+-  How to [moderate Apache mailing lists](https://infra.apache.org/mailing-list-moderation.html) 
 -  All Apache mailing lists are archived:
-    - Read most Apache [list archives on mail-archives.apache.org](http://mail-archives.apache.org/mod_mbox/) by going to the specific project list, then append the mbox filename to the URL (e.g. [mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox](mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox))
-    - Raw mbox archive files are available for every mailing list.
-    - Each project website has a "mail" directory, e.g. [httpd.apache.org/mail/](http://httpd.apache.org/mail/)
-(see [notes](/dev/project-site.html#mail)).
-    - For top-level/non-project mailing lists see [www.apache.org/mail/](/mail/) directory.
+    - Read most Apache [list archives on lists.apache.org](https://lists.apache.org/) 
+    - Raw mbox archive files are available for every mailing list, at https://lists.apache.org/api/mbox.lua?list={list_name}@{domain}&date={YYYY-MM} (For example, https://lists.apache.org/api/mbox.lua?list=dev@iceberg.apache.org&date=2025-08)
 
 ## Apache URL Shortener Service  {#shorten}
 
