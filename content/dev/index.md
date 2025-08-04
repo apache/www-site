@@ -11,7 +11,6 @@ If you can't find information here, ask on your project's mailing list, or conta
 
 - [Infrastructure](#infrastructure)
 - [Committers and Contributors](#committers)
-  - [Pasting data to share with others](#paste)
   - [URL shortener for committers](#shorten)
 - [Project Management Committees (PMC)](#pmc)
   - [Version control](#version-control)
