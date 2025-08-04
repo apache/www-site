@@ -119,6 +119,7 @@ Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank
 -  All Apache mailing lists are archived:
     - Read most Apache [list archives on lists.apache.org](https://lists.apache.org/) 
     - Raw mbox archive files are available for every mailing list, at https://lists.apache.org/api/mbox.lua?list={list_name}@{domain}&date={YYYY-MM} (For example, https://lists.apache.org/api/mbox.lua?list=dev@iceberg.apache.org&date=2025-08)
+    - There is also a download button at the top of any page on lists.apache.org where can download an mbox for whatever view you are looking at.
 
 ## Apache URL Shortener Service  {#shorten}
 
