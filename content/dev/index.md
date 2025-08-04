@@ -105,7 +105,7 @@ How to
 
 Each project uses an <a href="https://issues.apache.org/" target="_blank">issue tracker</a> of their choice to 
 track bugs, enhancement requests, and other action items - typically GitHub Issues, Jira, or BugZilla.
-Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank">website of the project in which you are interestaed to learn what they use.
+Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank">website of the project in which you are interested to learn what they use.
 
 ## Mailing Lists  {#mail}
 
