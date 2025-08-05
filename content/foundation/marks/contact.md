@@ -48,9 +48,7 @@ below, **and** cc: to `trademarks@apache.org`:
 
 ### Uses for Merchandise (swag, apparel, pins, stickers, etc.)  {#swag}
 
-We are currently working on guidelines that allow simpler use of Apache 
-brands in such situations in ways that improve the image and reach 
-of Apache projects.  For the time being, you can email [trademarks@](mailto:trademarks@apache.org?subject=%5bMERCH%5d%20Merchandising%20branding%20use%20request).
+We have published our [merchandise guidelines](https://www.apache.org/foundation/marks/merchandise ) separately.
 
 ### Uses in Software Products  {#products}
 
