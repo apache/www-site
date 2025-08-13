@@ -38,6 +38,6 @@ The [svn history](https://svn.apache.org/viewvc/infrastructure/site/trunk/conten
 Any branch in the www-site repository that is named preview/* will 
 auto-build and stage to www-*.staged.apache.org.
 
-If you need to test your changes, create a branch such as preview/<your-asf-id>
-Commits to it will be staged at www-<your-asf-id>.staged.apache.org
+If you need to test your changes, create a branch such as preview/{your-asf-id}.
+Commits to it will be staged at www-{your-asf-id}.staged.apache.org
  
