@@ -143,6 +143,7 @@ This table shows current and emeritus members who have manually added themselves
 | eolivelli | Enrico Olivelli | [BookKeeper](https://bookkeeper.apache.org), [ZooKeeper](https://zookeeper.apache.org), [Curator](https://curator.apache.org), [Maven](https://maven.apache.org) |
 | enis | Enis Söztutar |
 | epugh | Eric Pugh |
+| espino | Ed Espino | [Cloudberry](https://cloudberry.apache.org)
 | evansye | Evans Ye | [Bigtop](https://bigtop.apache.org/), [Ignite](https://ignite.apache.org) |
 | eze | Evan Zelkowitz | [Traffic Server](https://trafficserver.apache.org) |
 | fanningpj | PJ Fanning | [POI](https://poi.apache.org/), [Drill](https://drill.apache.org/), [Linkis](https://linkis.apache.org/), [Incubator](https://incubator.apache.org/), [Pekko](https://pekko.apache.org) |
