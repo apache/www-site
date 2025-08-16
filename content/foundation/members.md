@@ -217,6 +217,7 @@ This table shows current and emeritus members who have manually added themselves
 | jfarrell | Jake Farrell |  [Thrift](http://thrift.apache.org) |
 | jfclere | Jean-Frederic Clere |
 | jgenender | Jeff Genender |
+| jghoman | Jakob Homan | [Hadoop](http://hadoop.apache.org) [Kafka](https://kafka.apache.org/) [Samza](https://samza.apache.org/) [Airflow](https://airflow.apache.org/) |
 | jhm | Jan Materne | [Ant](http://ant.apache.org) |
 | jhyde | [Julian Hyde](http://home.apache.org/~jhyde/) | [Arrow](http://arrow.apache.org/), [Calcite](http://calcite.apache.org/), [Drill](http://drill.apache.org/), [Kylin](http://kylin.apache.org/)
 | jim | [Jim Jagielski](http://www.jaguNET.com/jim.html) | lots|
