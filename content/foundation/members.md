@@ -392,6 +392,7 @@ This table shows current and emeritus members who have manually added themselves
 | sctemme | [Sander Temme](http://www.temme.net/sander/) | [httpd](http://httpd.apache.org/) ; [Gump](http://gump.apache.org/) ; [Labs](http://labs.apache.org/) ; Infrastructure|
 | sdeboy | Scott Deboy |
 | seade | Scott Eade | [DB](http://db.apache.org/) , [Jakarta](http://jakarta.apache.org/) , [Turbine](http://turbine.apache.org/)|
+| sekikn | Kengo Seki | [Airflow](https://airflow.apache.org/), [Ambari](https://ambari.apache.org/), [Avro](https://avro.apache.org/), [Bigtop](https://bigtop.apache.org/), [Camel](https://camel.apache.org/), [Sedona](https://sedona.apache.org/), [Thrift](https://thrift.apache.org/), [Yetus](https://yetus.apache.org/) |
 | sgala | [Santiago Gala](http://memojo.com/memojowiki/Wiki.jsp?page=SantiagoGala) | [Jakarta](http://jakarta.apache.org/) , ws-wsrp4j|
 | shankar | Selvaratnam Uthaiyashankar | [Axis](http://axis.apache.org/) ; [Stonehenge](http://incubator.apache.org/projects/stonehenge.html) ; [Web Services](http://ws.apache.org/)|
 | sharan | Sharan Foga | [OFBiz](http://ofbiz.apache.org) |
