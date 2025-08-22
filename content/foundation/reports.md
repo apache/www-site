@@ -7,6 +7,7 @@ The following contains quarterly and annual reports from the past three fiscal y
 
 ### Annual Reports
 
+*   [The Apache Software Foundation - Annual Report - FY2025](/foundation/docs/FY2025AnnualReport.pdf)
 *   [The Apache Software Foundation - Annual Report - FY2024](/foundation/docs/FY2024AnnualReport.pdf)
 *   [The Apache Software Foundation - Annual Report - FY2023](/foundation/docs/FY2023AnnualReport.pdf)
 *   [The Apache Software Foundation - Annual Report - FY2022](/foundation/docs/FY2022AnnualReport.pdf)
