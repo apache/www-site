@@ -493,7 +493,7 @@ on the [Mailing Lists](/foundation/mailinglists.html) page.
 
 The ASF represents one of the best
 examples of an open organization that has found balance between structure
-and flexibility. We have grown from 200 committers to around 3000, and that
+and flexibility. We have grown from 200 committers to around {{asf_committers_rounded}}, and that
 number continues to grow on a daily basis. We have been able to create
 software products that are leaders in their markets. We have also
 been able to find balance between openness and economical feasibility. This
