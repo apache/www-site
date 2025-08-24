@@ -13,7 +13,7 @@ Apache projects will never charge a fee for downloading or using their software.
 
 ## Is Apache software really free to download?
 
-Yes.  Over 300 Apache projects and podlings provide software products that may be 
+Yes.  Over {{pmc_count_rounded}} Apache projects and {{podlings_size}} podlings provide software products that may be 
 downloaded and used at no cost, including everything from the world-famous 
 [Apache HTTP Server][1], to [Apache Hadoop][2], to [Apache Lucene][3], 
 to [Apache OpenOffice][4], and many, many more.

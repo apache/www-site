@@ -19,7 +19,7 @@ world's most popular Web server software since its creation in 1994.
 Evolving from the original eight developers (collectively known as "the
 Apache Group") who contributed code enhancements to the NCSA daemon Web
 server, The ASF today is a fully-distributed, non-profit organization
-comprising nearly 300 individual Members and over 2,000 Committers
+comprising around {{asf_members_rounded}} individual Members and over {{asf_committers_rounded}} Committers
 across six continents.
 
 The ASF's successful

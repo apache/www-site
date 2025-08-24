@@ -24,7 +24,7 @@ reason to use the short form.
 > Established in 1999, the all-volunteer Foundation oversees more than sixty-five 
 > leading Open Source projects, including Apache HTTP Server -- the world's most 
 > popular Web server software. Through The ASF's meritocratic process known as 
-> "The Apache Way", nearly 300 individual Members and 2,000 Committers successfully 
+> "The Apache Way", over {{asf_members_rounded}} individual Members and {{asf_committers_rounded}} Committers successfully 
 > collaborate to develop freely available enterprise-grade software, benefiting 
 > millions of users worldwide: thousands of software solutions are distributed 
 > under the Apache License; and the community actively participates in ASF mailing 
@@ -53,11 +53,11 @@ and always send it to the apache.org home page.
 > **About The Apache Software Foundation (ASF)**
 > 
 > Established in 1999, The Apache Software Foundation provides organizational, 
-> legal, and financial support for more than 100 freely-available, 
+> legal, and financial support for more than {{pmc_count_rounded}} freely-available, 
 > collaboratively-developed Open Source projects. The pragmatic Apache License 
 > enables individual and commercial users to easily deploy Apache software; 
 > the Foundation's intellectual property framework limits the legal exposure 
-> of its 2,500+ contributors. 
+> of its {{asf_committers_rounded}}-plus contributors. 
 > 
 > For more information, visit [http://www.apache.org/] [ASF]
 

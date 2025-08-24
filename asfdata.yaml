@@ -39,6 +39,9 @@ ci:
     where: pmc
     # sort by project name
     alpha: display_name
+  pmc_count_rounded:
+    path: pmc_count
+    truncate: 10
   featured_projs:
     # used on /
     description: 'Featured Projects'
@@ -58,7 +61,9 @@ ci:
 
 # used on index.ezmd
 pods:
-  # load, transform, and create data sequences from podling info 
+  # load, transform, and create data sequences from podling info
+  # using data from projects.a.o because that only contains active podlings
+  # and the asfdata plugin does not yet support filtering by value other than True
   url: https://projects.apache.org/json/foundation/podlings.json
   podlings:
     description: 'Current Podlings'
@@ -102,6 +107,9 @@ pg:
   # rounded down, so can be used as nnn+
   asf_committers_rounded:
     path: roster_counts.committers
+    truncate: 100
+  asf_members_rounded:
+    path: roster_counts.member
     truncate: 10
 
 # Can also define values as follows:
