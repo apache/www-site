@@ -297,17 +297,17 @@ sufficient for a user to build and test the release provided they have
 access to the appropriate platform and tools. A source release SHOULD not
 contain compiled code.</p>
 <h4 id="release-signing">Release signing<a class="headerlink" href="#release-signing" title="Permalink">&para;</a></h4>
-<p>All supplied packages MUST be cryptographically signed with a detached signature.
-It MUST be signed by either the Release Manager or the automated release
+<p>All supplied packages MUST be cryptographically signed with an ASCII-armored detached signature.
+They MUST be signed by either the Release Manager or the automated release
 infrastructure, where the underlying implementation MUST follow the principles
 <a href="/dev/release-signing.html#automated-release-signing">outlined</a> by the Apache
-Security Team. All supplied packages MUST use a detached signature. Those who
+Security Team. Those who
 vote +1 for release MAY offer their own cryptographic signature to be concatenated
 with the detached signature file (at the Release Manager's discretion)
 prior to release.</p>
 <h4 id="compiled-packages">Compiled packages<a class="headerlink" href="#compiled-packages" title="Permalink">&para;</a></h4>
 <p>The Apache Software Foundation produces open source software. All releases
-are in the form of the source materials needed to make changes to the
+are in the form of the source materials needed to modify and build the
 software being released.</p>
 <p>As a convenience to users that might not have the appropriate tools to build a
 compiled version of the source, binary/bytecode packages MAY be distributed
@@ -324,7 +324,7 @@ Policy</a>.</p>
 <h3 id="licensing-documentation">Licensing Documentation<a class="headerlink" href="#licensing-documentation" title="Permalink">&para;</a></h3>
 <p>Each package MUST provide a <code>LICENSE</code> file and a <code>NOTICE</code> file which account
 for the package's exact content.  <code>LICENSE</code> and <code>NOTICE</code> MUST NOT provide
-unnecessary information about materials which are not bundled in the package,
+information about materials which are not bundled in the package,
 such as separately downloaded dependencies.</p>
 <p>For source packages, <code>LICENSE</code> and <code>NOTICE</code> MUST be located at the root of the
 distribution.  For additional packages, they MUST be located in the
