@@ -7,7 +7,7 @@ The ASF’s brand guidelines and trademark policy ensure consistent use of our b
 **ASF Graphics**
 *   [Foundation Logos](#logo) - the formal ASF logo
 *   [Powered By Apache Logos](#poweredby) - for Apache projects
-*   [Apache Badges](#badges) — pictorial marks of the Apache Feather with taglines
+*   [Apache Sticker Template](#sticker) — pictorial marks of the Apache logo with taglines
 *   [Community Over Code Logos](#eventlogo) - the official Community Over Code event logo
 
 ## Foundation Logos {#logo}
@@ -158,9 +158,9 @@ If you are unable to find the logo you are looking for, try inspecting the [dire
 
 The new blank template for the “Powered By” logos as well as select project “Powered By” logos can be downloaded [on our template site](./poweredBy/powered-by-template-2019). The old template (black “powered by” band) is deprecated and should not be used for any current graphics use.
 
-## ASF Badges  {#badges}
+## ASF Sticker Template  {#sticker}
 
-Badges containing pictorial marks of the Apache Feather with various taglines and colors are available for broad community use. These images can be used in any application.
+Stickers containing pictorial marks of the ASF logo with various taglines and colors are available for broad community use. These images can be used in any application.
 
 ### ![Apache Way Badge](Indigo_THE_APACHE_WAY_Badge.png)
 

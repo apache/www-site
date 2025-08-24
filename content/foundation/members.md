@@ -143,6 +143,7 @@ This table shows current and emeritus members who have manually added themselves
 | eolivelli | Enrico Olivelli | [BookKeeper](https://bookkeeper.apache.org), [ZooKeeper](https://zookeeper.apache.org), [Curator](https://curator.apache.org), [Maven](https://maven.apache.org) |
 | enis | Enis Söztutar |
 | epugh | Eric Pugh |
+| espino | Ed Espino | [Cloudberry](https://cloudberry.apache.org)
 | evansye | Evans Ye | [Bigtop](https://bigtop.apache.org/), [Ignite](https://ignite.apache.org) |
 | eze | Evan Zelkowitz | [Traffic Server](https://trafficserver.apache.org) |
 | fanningpj | PJ Fanning | [POI](https://poi.apache.org/), [Drill](https://drill.apache.org/), [Linkis](https://linkis.apache.org/), [Incubator](https://incubator.apache.org/), [Pekko](https://pekko.apache.org) |
@@ -216,6 +217,7 @@ This table shows current and emeritus members who have manually added themselves
 | jfarrell | Jake Farrell |  [Thrift](http://thrift.apache.org) |
 | jfclere | Jean-Frederic Clere |
 | jgenender | Jeff Genender |
+| jghoman | Jakob Homan | [Hadoop](http://hadoop.apache.org) [Kafka](https://kafka.apache.org/) [Samza](https://samza.apache.org/) [Airflow](https://airflow.apache.org/) |
 | jhm | Jan Materne | [Ant](http://ant.apache.org) |
 | jhyde | [Julian Hyde](http://home.apache.org/~jhyde/) | [Arrow](http://arrow.apache.org/), [Calcite](http://calcite.apache.org/), [Drill](http://drill.apache.org/), [Kylin](http://kylin.apache.org/)
 | jim | [Jim Jagielski](http://www.jaguNET.com/jim.html) | lots|
@@ -390,6 +392,7 @@ This table shows current and emeritus members who have manually added themselves
 | sctemme | [Sander Temme](http://www.temme.net/sander/) | [httpd](http://httpd.apache.org/) ; [Gump](http://gump.apache.org/) ; [Labs](http://labs.apache.org/) ; Infrastructure|
 | sdeboy | Scott Deboy |
 | seade | Scott Eade | [DB](http://db.apache.org/) , [Jakarta](http://jakarta.apache.org/) , [Turbine](http://turbine.apache.org/)|
+| sekikn | Kengo Seki | [Airflow](https://airflow.apache.org/), [Ambari](https://ambari.apache.org/), [Avro](https://avro.apache.org/), [Bigtop](https://bigtop.apache.org/), [Camel](https://camel.apache.org/), [Sedona](https://sedona.apache.org/), [Thrift](https://thrift.apache.org/), [Yetus](https://yetus.apache.org/) |
 | sgala | [Santiago Gala](http://memojo.com/memojowiki/Wiki.jsp?page=SantiagoGala) | [Jakarta](http://jakarta.apache.org/) , ws-wsrp4j|
 | shankar | Selvaratnam Uthaiyashankar | [Axis](http://axis.apache.org/) ; [Stonehenge](http://incubator.apache.org/projects/stonehenge.html) ; [Web Services](http://ws.apache.org/)|
 | sharan | Sharan Foga | [OFBiz](http://ofbiz.apache.org) |
