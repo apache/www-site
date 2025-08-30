@@ -209,7 +209,7 @@ prominent trademark attribution of all applicable Apache trademarks. Other proje
 pages should feature attributions of any marks displayed thereon. For
 example:
 
->Apache Foo, Foo, Apache, the Apache feather logo, and the Apache Foo
+>Apache Foo, Foo, Apache, the Apache logo, and the Apache Foo
 project logo are either registered trademarks or trademarks of The Apache
 Software Foundation in the United States and other countries.
 
