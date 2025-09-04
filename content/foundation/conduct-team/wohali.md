@@ -1,7 +1,7 @@
 Title:     Joan Touzet (wohali) at the ASF
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 ## Introduction
 

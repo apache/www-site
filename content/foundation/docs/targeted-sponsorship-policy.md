@@ -1,7 +1,7 @@
 Title: Targeted Sponsorship Policy
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 ## What is a Targeted Sponsor?
 

@@ -1,7 +1,7 @@
 Title: ASF Source Header and Copyright Notice Policy
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 ## Purpose and intended audience  {#purpose}
 This document describes how Apache committers and PMC members should handle source file licensing and copyright notices.  

@@ -1,8 +1,6 @@
 Title: Get Involved
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
-
 The best way to contribute to the Apache Software Foundation (ASF) is to get involved with
 one of our many Apache project communities.  The  best way to ask general questions 
 about community involvement is to read about [Community Development at Apache](http://community.apache.org/).

@@ -2,7 +2,7 @@ Title: Apache Board -- Project Services & Expectations
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 
-# {{title}}
+
 
 The Apache Software Foundation (ASF) provides a wide array of 
 **services** to the many Apache communities and their Project Management 

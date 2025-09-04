@@ -1,7 +1,6 @@
 Title:     Apache Corporate Organization Chart
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
 
 At a high level, organizational governance at the Apache Software Foundation 
 (ASF) is fairly simple: the Members elect a Board of Directors;

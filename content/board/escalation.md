@@ -2,7 +2,7 @@ Title: How To Escalate Issues At The ASF
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 
-# {{title}}
+
 
 Apache projects prefer to use consensus to make decisions, or use voting to more formally record approval (or not) for specific actions.  But what happens when a project is at a complete impasse, or when you feel that important issues aren't being taken seriously or fully discussed before action is taken?
 

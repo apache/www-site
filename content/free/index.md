@@ -1,7 +1,7 @@
 Title: Always free
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 Apache software is always available for download free of charge from the ASF and our Apache projects.
 

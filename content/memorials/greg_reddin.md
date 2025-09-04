@@ -1,9 +1,6 @@
 Title:     Gregory D. Reddin - September 30th 2016
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-<br>
-
-#  Gregory D. Reddin - September 30th 2016
 
 On September 30th, 2016 Apache Tiles' former PMC chair Gregory David 
 (Greg) Reddin passed away. Greg joined the Struts team in October 

@@ -1,7 +1,6 @@
 Title: Buy Stuff
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
 
 The Apache Software Foundation licenses its trademarks and logos to a variety of entities that sell Apache-branded merchandise and contribute some or all of the profits to the Foundation. Those wishing to license the ASF and/or Apache Project logos for merchandising (swag, apparel, pins, stickers, etc.) may [contact ASF Brand Management](/foundation/marks/contact#swag) for further details.
 

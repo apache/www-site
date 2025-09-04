@@ -1,7 +1,7 @@
 Title: Open Letter to Sun Microsystems - JCK
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 On April 10, 2007, the Apache Software Foundation sent the following letter
 to Sun Microsystems regarding our inability to acquire an acceptable

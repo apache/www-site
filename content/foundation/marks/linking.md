@@ -1,7 +1,7 @@
 Title: Apache Project Corporate Recognition Best Practices
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 Apache&reg; Project Corporate Recognition Best Practices defines
 **suggested practices** for how Apache projects may choose to link to third

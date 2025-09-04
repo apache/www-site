@@ -1,7 +1,7 @@
 Title: How To Contact Apache With Branding Questions
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 How to contact the ASF or any Apache&reg; project about trademark or brand questions, and how 
 to request permissions for any Apache project brand uses.

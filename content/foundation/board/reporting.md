@@ -1,7 +1,7 @@
 Title: Board Reporting Guidelines for Project Chairs
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 Apache Project Management Committees (PMC)  **must** report on their 
 project's health and status quarterly to the Board of Directors.  While PMCs manage 

@@ -1,7 +1,7 @@
 Title: Board Meeting Process
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The Board of Directors uses a variety of tools and relies on volunteers across Apache 
 projects to ensure our monthly meetings run smoothly.  This is a guide 

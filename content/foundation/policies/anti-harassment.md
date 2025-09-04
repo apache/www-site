@@ -1,7 +1,7 @@
 Title:     Anti-Harassment Policy
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 ## Policy Information
 **Please see the [Apache-wide Code of Conduct policy](/foundation/policies/conduct), which covers expected 

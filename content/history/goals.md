@@ -1,7 +1,7 @@
 Title: ASF History Project - Goals
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The History Project researches and collects information related to:
 

@@ -1,7 +1,6 @@
 Title: Apache Corporate Governance- PMCs
+page_heading: PMCs
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# PMCs
 
 Each Project Management Committee (PMC) votes on its software product releases 
 and elects new PMC members and committers to its Apache project.

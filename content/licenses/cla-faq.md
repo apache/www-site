@@ -1,7 +1,7 @@
 Title: ASF CLA FAQ
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 This page answers common queries that we receive about our contribution agreements. 
 

@@ -1,7 +1,7 @@
 Title: Maurice Marrink - A Memorial
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 It is with great sadness that we must report the staggering loss of our
 good friend and colleague, Maurice Marrink. Maurice died in a car crash

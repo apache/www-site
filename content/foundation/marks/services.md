@@ -1,7 +1,7 @@
 Title: Third Party Services Naming Branding Policy
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 This **Services Naming Branding Policy** defines **requirements** for when third
 parties may be eligible to request permission to use

@@ -1,7 +1,6 @@
-Title: Frequently Asked Questions | Apache Software Foundation
+Title: Frequently Asked Questions
+page_heading: How can we help?
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# How can we help?
 
 <a class="btn btn-default mx-10" href="#software" role="button">Software</a>
 <a class="btn btn-default mx-10" href="#security" role="button">Security</a>

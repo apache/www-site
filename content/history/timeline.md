@@ -1,7 +1,7 @@
 Title: ASF History Project - Timeline
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 This represents the very high-level timeline of the Apache project. More detailed
 information about individual versions of each subproject can be found in their

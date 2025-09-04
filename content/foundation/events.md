@@ -1,4 +1,5 @@
 Title: Events
+page_heading: ASF Events
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 In addition to our [official conferences](conferences.html) , there are
@@ -6,7 +7,6 @@ many other events that are held around the world where the Apache community
 of developers and users come together face-to-face to share knowledge,
 advice, and wisdom.
 
-# ASF Events
 
 ![ApacheCon NA 2010](/ads/ApacheCon/2010-na-234x60.gif "ApacheCon NA 2010")
 The official conference of the Apache Software Foundation, [ApacheCon NA

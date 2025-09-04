@@ -1,7 +1,7 @@
 Title: The history of the Apache mirror system
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The ASF system download mirrors evolved organically, and then systematically, over 25 years. It depended on many hours of labor by volunteers and generous contributions by organizations that supported the concept of free and open source software, and made possible distribution of Apache projects' software around the world.
 

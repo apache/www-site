@@ -1,6 +1,6 @@
 Title: Apache Membership Forms
 
-# {{title}} 
+ 
 
 These forms are for the use of the Secretary and Apache Members.
 

@@ -1,7 +1,7 @@
 Title: ASF Board of Directors Timeline
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 This timeline shows who has served when on the Board of Directors of The ASF.
 

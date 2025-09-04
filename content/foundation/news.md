@@ -1,7 +1,7 @@
 Title: ASF highlights, 1999-2009
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 _Please see our [current listing of News and Announcements](/press/#news) for more recent notes._
 

@@ -1,7 +1,6 @@
 Title: reports
+page_heading: ASF Reports and Statements
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# ASF Reports and Statements
 
 The following contains quarterly and annual reports from the past three fiscal years, as well as select Foundation statements. Official public records, including original incorporation records, bylaws, and IRS filings and notices are also available.
 

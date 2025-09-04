@@ -1,7 +1,7 @@
 Title: Apache Product Name Usage Guide
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The Apache&reg; brand is shared amongst all 200+ Apache Software Foundation (ASF) project
 communities and is an important part of our mission of providing

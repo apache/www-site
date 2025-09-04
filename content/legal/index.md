@@ -1,8 +1,5 @@
-Title: ASF Legal & Trademark | Apache Software Foundation
+Title: ASF Legal & Trademark
 Notice: http://www.apache.org/licenses/LICENSE-2.0
-
-# ASF Legal & Trademark
-
 
 ### Legal Information for Users of Apache Products  {#user-links}
 

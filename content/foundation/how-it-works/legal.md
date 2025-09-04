@@ -1,7 +1,7 @@
 Title: ASF Development Process
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 ## Purpose and Intended Audience
 

@@ -1,7 +1,7 @@
 Title: How the ASF works
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 

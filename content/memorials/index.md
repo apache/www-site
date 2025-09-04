@@ -1,7 +1,7 @@
 Title: ASF Memorials
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 It is an unfortunate truth that, at times, any community will lose valued
 members. This site is a means to rejoice in them and their

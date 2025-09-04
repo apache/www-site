@@ -1,8 +1,6 @@
 title: Developer Information
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Developer information
-
 ## Overview {#intro}
 
 Here are resources pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.

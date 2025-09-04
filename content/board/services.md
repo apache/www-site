@@ -2,7 +2,7 @@ Title: Foundation Services for Apache Projects
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 
-# {{title}}
+
 
 The Apache Software Foundation (ASF) provides a wide array of 
 services to the [many Apache communities](https://projects.apache.org/) and their Project Management 

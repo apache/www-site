@@ -1,7 +1,6 @@
 Title: Conferences
+page_heading: Come to Community Over Code - The official user conference of the ASF
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# Come to Community Over Code<br /><span class="alt"><small>The official user conference of the ASF</small></span>
 
 The best way to learn about the technologies and projects at the ASF is to
 meet us in person. Come to a Community Over Code or another ASF event to meet our

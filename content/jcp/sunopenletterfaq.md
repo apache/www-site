@@ -1,7 +1,7 @@
 Title: FAQ - Open Letter to Sun Microsystems - JCK
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 # FAQ Open Letter to Sun Microsystems
 We have created the following FAQ to provide background information on the

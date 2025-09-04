@@ -1,7 +1,7 @@
 Title: Apache Trademark Reporting Best Practices
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 Here are best practices for reviewing the use
 of Apache&reg; projects' brands and trademarks and for contacting other parties

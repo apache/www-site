@@ -1,7 +1,7 @@
 Title: Apache Corporate Governance - Corporate History
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The ASF is a Delaware membership corporation, and publishes a variety 
 of records about our corporate operations.  We also include some background 

@@ -1,7 +1,7 @@
 Title: Verifying Apache Software Foundation Releases
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 This page describes how to verify a file you have downloaded from an Apache product releases page, or from the Apache archive,
 by [checksum](#CheckingHashes) or [signature](#CheckingSignatures).
