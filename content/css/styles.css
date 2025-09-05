@@ -177,6 +177,7 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
 .mb-xl {margin-bottom:calc( var(--val-baseline) * 5 )}
 .mt-large {margin-top:calc( var(--val-baseline) * 3 )}
 .mt-xl {margin-top:calc( var(--val-baseline) * 5 )}
+.mt-0 {margin-top:0px;}
 
 .bg-navy {background-color: var(--color-navy); color: #fff;}
 .bg-purple {background-color: var(--color-purple); color: #fff;}
@@ -242,7 +243,8 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
     margin-top: .25rem;
     line-height: 1.2em;
 }
-
+.stat-box a {color: #fff; text-decoration: none;}
+.stat-box a:hover {text-decoration: none; color: var(--color-lavendar);}
 .project-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -284,7 +286,7 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
     justify-content: center;
     align-content: center;
 }
-.logo-card:hover {
+.logo-card:not(.logo-card--sponsor):hover {
     background-color: #f0f0f0;
     border-color: var(--color-purple);
 }
@@ -497,6 +499,10 @@ h2#incubate-a-project {
   left: 50%;
   width: 21%;
   z-index: -1;
+}
+
+#home .newsletter-signup h2 {
+    font-weight: 600;
 }
 
 
@@ -850,10 +856,18 @@ a.white:hover {
   box-shadow: rgba(0,0,0,.2) 0px 5px 15px;
   overflow: hidden;
 }
+.event-image, .everyone-welcome-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
 .event-info {
   opacity: 0;
   transform: translate3d(100px,0,0);
   transition: all .5s ease;
+}
+.event-image {
+    width: 100%; 
+    aspect-ratio: 1 / 1;
 }
 .event-location, .event-title {
     margin-bottom: 0;
@@ -1131,6 +1145,14 @@ a.white:hover {
     .event-content.pl-medium {padding-left: 0px;}
     .navbar-nav > li > .dropdown-menu.search-form {margin-left: 0px;}
     .navbar-toggle {margin-top: -55px;}
+    .stat-boxes {
+        flex-wrap: wrap;
+    }
+    .stat-box {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 40%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1238,10 +1260,6 @@ a.white:hover {
         font-size: 2rem;
     }
     .stat-box span {font-size: 1rem;}
-    .stat-boxes {
-        flex-direction: column;
-        align-items: center;
-    }
     .prev {left: -10px;}
     .next {right: -10px;}
     /* Default page elements */
