@@ -219,35 +219,31 @@ s=d.getElementsByTagName('script')[0];
          Home page is exlcuded because it has a more custom design
      -->
    {% if page.bodytag != 'id="home"' %}
+        <!-- If hero property is set in the markdown file, we use it in the hero section -->
         {% if page.hero %}
         <!-- If the page markdown file includes a hero property, we will use the following code -->
             <div class="hero hero--bg-image" style="background-image: linear-gradient(rgba(40, 38, 94, .8), rgba(40, 38, 94, .8)), url('{{ page.hero }}'); ">
-                <div class="inner inner--default py-large flex flex-vertical-center">
-                    <div class="flex-2">
-                        {% if page.page_heading %}
-                            <h1>{{ page.page_heading }}</h1>
-                        {% else %}
-                            <h1>{{ page.title }}</h1>
-                        {% endif %}
-                    </div>
-                    <div class="flex-1"></div>
-                </div>
-            </div>
         {% else %}
-            <!-- If no hero image is specified, use a default background -->
             <div class="hero bg-navy">
-                <div class="inner inner--default py-large flex flex-vertical-center">
-                    <div class="flex-2">
+        {% endif %}
+        <!-- If no hero property is set in the markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in markdown file, we use that for the h1 -->
                         {% if page.page_heading %}
                             <h1>{{ page.page_heading }}</h1>
                         {% else %}
+                        <!-- if no page_heading property is set in markdown file, we use page title for the h1 -->
                             <h1>{{ page.title }}</h1>
                         {% endif %}
                     </div>
-                    <div class="flex-1 hero-icon"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                    {% if page.hero %}
+                        <div class="flex-1 hero-spacer hide-600"></div>
+                     {% else %}
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                    {% endif %}
                 </div>
             </div>
-        {% endif %}
     {% endif %}
 
   <main id="maincontent">
