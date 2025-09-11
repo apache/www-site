@@ -28,7 +28,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 ## About the Apache Brand  {#introduction}
 
-The Apache brand and our feather logo stand for the Apache Way process
+The Apache brand and our logos stand for the Apache Way process
 by which we build software.  Some of the elements of the Apache Way
 include having collaborative, consensus driven communities of volunteers
 who are performing the work providing the governance for the project.  It
@@ -141,18 +141,18 @@ in more contexts than the official project logos, including in ways that
 directly show the relationship between the Apache software product and
 various third party products and services.
 
-## How To Use The Apache Feather Logo  {#feather}
+## How To Use The Apache Logo  {#logo}
 
-The Apache feather logo is an important brand to the ASF as a whole, as well
-as to every Apache project.  As a vendor-neutral public charity, the feather should
-only be used to refer to the ASF itself as an independent organization, and must never
+The ASF logo is an important brand to the Foundation as a whole, as well
+as to every Apache project.  As a vendor-neutral public charity, the logo should
+only be used to refer to The ASF itself as an independent organization, and must never
 be used in contexts that appear to endorse or be affiliated with any
-other organization. The feather logo must never be modified except when necessary
-to accommodate limited printing technologies in physical contexts.  The feather
+other organization. The ASF logo must never be modified except when necessary
+to accommodate limited printing technologies in physical contexts.  The
 logo must never be used in direct conjunction with other organization
 logos or images.
 
-The ASF Press team maintains the [official Apache feather logos](/foundation/press/kit/#policy).
+The ASF Press team maintains the [official Apache logos](/foundation/press/kit/#policy).
 
 ## Other Trademark Guidelines  {#other}
 
