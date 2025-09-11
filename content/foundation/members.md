@@ -101,6 +101,7 @@ This table shows current and emeritus members who have manually added themselves
 | conor | Conor MacNeill | [Ant](http://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/)|
 | cos | [Konstantin Boudnik](http://www.boudnik.org/~cos) | [Bigtop](http://bigtop.apache.org) , [Groovy](http://groovy.apache.org) , [Celix](http://celix.apache.org) , [Hadoop](http://hadoop.apache.org) , [Ignite](http://ignite.apache.org) , [Incubator](http://incubator.apache.org) , [Geode](http://geode.apache.org) |
 | covener | Eric Covener |
+| cstamas | Tamas Cservenak | [Maven](https://maven.apache.org/)|
 | craigmcc | Craig R. McClanahan | [Jakarta](http://jakarta.apache.org/)|
 | crossley | [David Crossley](http://www.indexgeo.com.au/apache/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://xml.apache.org/forrest/) , [xml-commons](http://xml.apache.org/commons/)|
 | ctubbsii | Christopher Tubbs | [Accumulo](https://accumulo.apache.org) , [Fluo](https://fluo.apache.org)|
