@@ -9,7 +9,7 @@ Apache trademarks.  [Please see a site map of Trademark resources](/foundation/m
 [contact us with questions](/foundation/marks/contact). 
 
 **The Apache Software Foundation considers the names of all top level projects, 
-all downloadable software products, our feather logo, and the logos of our projects to be 
+all downloadable software products, our logo, and the logos of our projects to be 
 trademarks of the ASF.  The ASF owns all Apache trademarks on behalf 
 of our volunteer project communities.** 
 
