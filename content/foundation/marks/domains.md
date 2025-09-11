@@ -192,8 +192,8 @@ any of the domain's own branding and logos, and must include a hyperlink to
 the Apache project's home page where practicable.  You must not change the
 appearance of any Apache logos when using them.
 
-Third party website branding may not include the Apache feather as a brand
-element in any way. The only use of the bare Apache feather or Apache logo
+Third party website branding may not include ASF logos as a brand
+element in any way. The only use of the bare ASF graphic mark or The ASF logo
 on websites allowed is to provide a single link to http://www.apache.org/
 as a reference to The Apache Software Foundation and its projects.
 
