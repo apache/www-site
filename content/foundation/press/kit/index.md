@@ -14,51 +14,23 @@ The ASF’s brand guidelines and trademark policy ensure consistent use of our b
 
 ### Foundation Logo 
 
-[![Logo](asf_logo_small.png)](asf_logo.png)
-
-*   [ASF Logo without URL - SVG](asf_logo.svg)
-
-*   [ASF Logo without URL - PDF](asf_logo.pdf)
-
-*   [ASF Logo without URL - EMF](asf_logo.emf)
-
-### Foundation Logo with URL 
-
-[![Logo](asf_logo_url_small.png)](asf_logo_url.png)
-
-*   [ASF Logo with URL - SVG](asf_logo_url.svg)
-
-*   [ASF Logo with URL - PDF](asf_logo_url.pdf)
-
-*   [ASF Logo with URL - EMF](asf_logo_url.emf)
-
-### Wide Foundation Logo  
-
 [![Logo](asf_logo_wide_small.png)](asf_logo_wide.png)
 
-*   [ASF Logo with URL - SVG](asf_logo_wide.svg)
+*   [ASF Logo - SVG](asf_logo_wide.svg)
 
-*   [ASF Logo with URL - PDF](asf_logo_wide.pdf)
+*   [ASF Logo - PDF](asf_logo_wide.pdf)
 
-*   [ASF Logo with URL - EMF](asf_logo_wide.emf)
+*   [ASF Logo - EMF](asf_logo_wide.emf)
 
-### "Established 1999" Foundation Logo
+### Logo Mark 
 
-[![Logo with Established 1999](asf-estd-1999-logo.png)](asf-estd-1999-logo.png)
+[![Logo Mark](feather_small.png)](feather.png)
 
-*   [ASF Logo with Estd. 1999 - SVG](asf-estd-1999-logo.svg)
+*   [Logo Mark SVG](feather.svg)
 
-*   [ASF Logo with Estd. 1999 - PNG](asf-estd-1999-logo.png)
+*   [Logo Mark PDF](feather.pdf)
 
-### Feathers  
-
-[![Feather](feather_small.png)](feather.png)
-
-*   [Feather SVG](feather.svg)
-
-*   [Feather PDF](feather.pdf)
-
-*   [Feather EMF](feather.emf)
+*   [Logo Mark EMF](feather.emf)
 
 ## Powered By Apache Logos  {#poweredby}
 
