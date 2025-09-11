@@ -14,8 +14,6 @@ The ASF’s brand guidelines and trademark policy ensure consistent use of our b
 
 ### Foundation Logo 
 
-[![Logo](asf_logo_wide_small.png)](asf_logo_wide.png)
-
 *   [ASF Logo - SVG](asf_logo_wide.svg)
 
 *   [ASF Logo - PDF](asf_logo_wide.pdf)
@@ -23,8 +21,6 @@ The ASF’s brand guidelines and trademark policy ensure consistent use of our b
 *   [ASF Logo - EMF](asf_logo_wide.emf)
 
 ### Logo Mark 
-
-[![Logo Mark](feather_small.png)](feather.png)
 
 *   [Logo Mark SVG](feather.svg)
 
@@ -55,8 +51,6 @@ Guidelines for the appropriate use of the “Powered By Apache” logos include:
 In addition, official Apache Project pages and documentation on apache.org must utilize the appropriate trademark symbols on the respective Project logo, along with the following footnote: "Apache, Apache [PROJECT NAME], and the Apache [PROJECT NAME] logo are registered trademarks or trademarks of The Apache Software Foundation in the U.S. and/or other countries."
 
 ### "Powered By" Logo  
-
-![Powered By Apache](poweredBy/pb-apache.PNG)
 
 [Powered By Apache Logo - PDF](poweredBy/Apache_PoweredBy.pdf)
 
