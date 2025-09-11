@@ -37,7 +37,7 @@ All software produced by the Foundation is available for download, by anyone and
 ## Legal
 
 ### You have a question about Apache trademarks, or you want to know if a use of an Apache trademark is related to the ASF.
-You may read our [formal Trademark Policy](/foundation/marks/) as an introduction. For any questions about the use of Apache marks, including logos and project or product names, or the Apache name or feather, contact the [Brand Management Committee](/foundation/marks/contact) as well as to the relevant [Project Management Committee](//projects.apache.org/).
+You may read our [formal Trademark Policy](/foundation/marks/) as an introduction. For any questions about the use of Apache marks, including logos and project or product names, or the Apache name or logos, contact the [Brand Management Committee](/foundation/marks/contact) as well as to the relevant [Project Management Committee](//projects.apache.org/).
 
 ### You have questions about the Apache license.
    If you have sent mail about a license issue or question, please review the
