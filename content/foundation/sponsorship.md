@@ -15,7 +15,7 @@ There are four sponsorship levels, defined by donation amount and in-return bene
 For non-sponsorship corporate contributions and individuals wishing to make a financial donation to the ASF, you may do so online at [https://donate.apache.org/](https://donate.apache.org/) via credit/debit card, ACH bank payment, PayPal, and, using your mobile phone, with Apple Pay, Google Pay, and Microsoft Pay. Choose the “Individual and One-Time Corporate Donations (any amount)” option and follow the prompts to make a one-time or recurring (monthly, quarterly, or annually) contribution.
 
 <table class="table">
-<tr><td background="platinum.png" style="background-repeat:no-repeat;background-position: 90% 5%;">
+<tr><td background="platinum.png" style="background-repeat:no-repeat;background-position: 90% 5%; background-size: 90px">
 <br>
 <h3>Platinum</h3>
 <br><br><br>
@@ -38,7 +38,7 @@ For non-sponsorship corporate contributions and individuals wishing to make a fi
 </ul>
 
 </td>
-<td background="gold.png" style="background-repeat:no-repeat;background-position: 90% 5%;">
+<td background="gold.png" style="background-repeat:no-repeat;background-position: 90% 5%; background-size: 90px">
 <br>
 <h3>Gold</h3>
 <br><br><br>
@@ -61,7 +61,7 @@ For non-sponsorship corporate contributions and individuals wishing to make a fi
 
 </td></tr>
 
-<tr><td background="silver.png" style="background-repeat:no-repeat;background-position: 90% 5%;">
+<tr><td background="silver.png" style="background-repeat:no-repeat;background-position: 90% 5%; background-size: 90px">
 <br>
 <h3>Silver</h3>
 <br><br><br>
@@ -80,7 +80,7 @@ For non-sponsorship corporate contributions and individuals wishing to make a fi
 </ul>
 
 </td>
-<td background="bronze.png" style="background-repeat:no-repeat;background-position: 90% 5%;">
+<td background="bronze.png" style="background-repeat:no-repeat;background-position: 90% 5%; background-size: 90px">
 <br>
 <h3>Bronze</h3>
 <br><br><br>
