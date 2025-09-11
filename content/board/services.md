@@ -59,7 +59,7 @@ projects and initiatives on their outreach efforts.  You can [contact the Press 
 
 Example services include: [Press releases over the wire for major releases](/press/#releases), 
 [connections with industry analysts](/press/#interviews), 
-[Apache feather and Powered By logos for all TLPs](/foundation/press/kit/).
+[Apache and Powered By logos for all TLPs](/foundation/press/kit/).
 
 ### Travel Assistance At ApacheCon
 
