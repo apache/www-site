@@ -1,8 +1,6 @@
 Title: Apache Projects In The News
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
-
 The following is a selection of stories featuring people or projects from
 the Apache Software Foundation:
 

@@ -1,7 +1,7 @@
 Title: How it works: Board Meetings
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The nine-member board of the Apache Software Foundation meets once a month,
 via conference call. In between meetings, they conduct business in the

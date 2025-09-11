@@ -1,15 +1,15 @@
 Title: How the ASF works
 Notice: http://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
-
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
+<p>If you're curious about more governance details, we have a description of <a href="/foundation/governance/">Apache style governance</a>.<br>
+The <a href="http://community.apache.org/">Apache Community Development project</a> is also
+here to help newcomers find their way around.</p>
+</div>
 
 If you're curious about more governance details, we have a description of [Apache style governance][1].  
 The [Apache Community Development project](http://community.apache.org/) is also 
 here to help newcomers find their way around.
-
-</div>
 
 This page provides an overview of everything you always wanted to know about the
 Apache Software Foundation but were afraid to ask: the difference between membership and
@@ -26,7 +26,7 @@ the incredible growth in new projects and contributors over the years. Come and 
 
 -  [The Foundation structure](#structure) 
 
--  [Roles](#roles) 
+-  [Roles](#roles)
 
 -  [Project management and collaboration](#management) 
 

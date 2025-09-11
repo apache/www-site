@@ -1,6 +1,6 @@
 Title: Briefing: The Apache Way
 
-# {{title}}
+
 
 Ask <a href="/foundation/governance/members.html">The Apache Software Foundation’s Members</a> about The Apache Way and you’ll get as many answers as to what it is. In fact, we surveyed the greater Apache user and developer community and were fascinated with their responses</p>
 

@@ -1,7 +1,7 @@
 Title: ASF Contributor Agreements
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The Apache Software Foundation uses various agreements to 
 accept contributions of software code and documentation from individuals and corporations, and to accept

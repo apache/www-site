@@ -1,7 +1,5 @@
-Title: ASF Initiatives | Apache Software Foundation
+Title: ASF Initiatives
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# ASF Initiatives
 
 ASF Initiatives are specific Targeted Sponsorships that provide additional financial support for Foundation governance operations, open source projects, and project communities. 
 

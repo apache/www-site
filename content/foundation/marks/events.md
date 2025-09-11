@@ -1,7 +1,7 @@
 Title: Third Party Event Branding Policy, Version 1.6
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 ## Event Branding Policy overview  {#introduction}
 

@@ -1,7 +1,7 @@
 Title: Apache License, Version 2.0
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 * Text version: [https://www.apache.org/licenses/LICENSE-2.0.txt](LICENSE-2.0.txt)
 * SPDX short identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)

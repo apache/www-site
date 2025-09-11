@@ -1,7 +1,6 @@
 Title:     Apache Corporate Governance - New Member Voting
+page_heading: New Member Voting
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# New Member Voting
 
 The ASF holds an Annual Members Meeting at least every 13 months, at which members elect a new board of directors and may vote on new member candidates.  
 Our Member volunteers run our corporate meetings following these basic procedures.

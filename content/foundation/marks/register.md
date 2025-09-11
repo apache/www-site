@@ -1,7 +1,7 @@
 Title: Apache Project Branding Best Practices
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 Apache&reg; Project Branding Best Practices provide recommendations for
 all Apache projects that are interested in promoting their software and

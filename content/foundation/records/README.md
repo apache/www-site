@@ -1,6 +1,6 @@
 Title: Foundation records
 
-# {{title}}
+
 
 Other than the index page the records and minutes remain in [svn](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/records/)
 

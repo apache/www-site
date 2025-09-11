@@ -1,7 +1,5 @@
-Title: A Primer on ASF Governance | Apache Software Foundation
+Title: A Primer on ASF Governance
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# A Primer on ASF Governance
 While you may be familiar with the consensus-based, community driven governance known as the Apache Way that Apache projects use, this primer will help you understand how the Apache Software Foundation (ASF) works behind the scenes.
 
 ## Non-Profit Bylaws 

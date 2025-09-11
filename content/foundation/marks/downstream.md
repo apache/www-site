@@ -1,7 +1,7 @@
 Title:     Downstream Distribution Branding Policy
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 This **Downstream Distribution Branding Policy** defines **requirements** for
 downstream software distributors that wish to distribute Apache&reg; software

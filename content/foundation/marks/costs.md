@@ -1,7 +1,7 @@
 Title: Estimated Trademark Registration Costs For Apache Projects
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 An overview of legal costs related to trademarks, especially the cost of trademark registrations and maintenance for Apache Software Foundation top level projects.
 

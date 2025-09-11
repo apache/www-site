@@ -1,7 +1,7 @@
 Title: New Project and Software Product Naming Process
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 All Apache Podlings, and any Apache&reg; top level project (TLP) must use this process when coming up with a new project name,
 when coming up with a name for a new subproject or downloadable software product, or establishing a new TLP.

@@ -1,8 +1,6 @@
 Title: Mailing Lists
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
-
 Publicly archived mailing lists are critical to the operation of the Apache Software
 Foundation (ASF) and to our many [Apache
 Projects](http://projects.apache.org/).  Apache projects use mailing lists to coordinate

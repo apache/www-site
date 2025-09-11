@@ -1,7 +1,5 @@
-Title: Contact Us | Apache Software Foundation
+Title: Contact Us
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# Contact Us
 
 **Before** sending mail to the address below, **make sure** that  the information on the [FAQ](/foundation/faq) doesn't already address your issue. If it is, the only response you'll receive is a pointer
 to that page.

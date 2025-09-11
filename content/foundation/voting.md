@@ -1,7 +1,7 @@
 Title: Apache Voting Process
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 Because one of the fundamental aspects of accomplishing things within the
 Apache framework is doing so by consensus, we need a

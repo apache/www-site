@@ -1,7 +1,7 @@
-Title: Brand Guidelines | Apache Software Foundation
+Title: Brand Guidelines
+page_heading: ASF Brand Guidelines
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# ASF Brand Guidelines
 The ASF’s brand guidelines and trademark policy ensure consistent use of our brand logo and assets to help people easily identify the Foundation and its work. All uses of ASF trademarks, service marks, and graphic logos must abide by our [Identity Style Guide](/foundation/press/kit/ApacheFoundation_StyleGuide.pdf) and [Trademark Policy](/foundation/marks/).
 
 **ASF Graphics**

@@ -1,7 +1,6 @@
 Title: Project Management Committee Guide
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Project Management Committee Guide
 
 This guide outlines the general responsibilities 
 of [Project Management Committee](/foundation/how-it-works.html#pmc) (PMC) members in managing their projects and common how-to procedures for 

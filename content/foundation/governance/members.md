@@ -1,7 +1,6 @@
 Title:     Apache Corporate Governance - Members
+page_heading: Members
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# Members
 
 The Membership of the Apache Software Foundation are those individuals 
 elected to Membership in the corporation itself; they are eligible to 

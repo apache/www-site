@@ -1,7 +1,7 @@
 Title: Apache Branded Social Media Best Practices
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 These are best practices for Apache&reg; projects and PMCs managing their own social
 media accounts that include Apache project brands or trademarks in the names.

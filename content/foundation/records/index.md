@@ -1,7 +1,7 @@
 Title: Public Records
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The Apache Software Foundation, a Delaware chartered 501C3 membership 
 corporation, publishes a wide variety of operational records 

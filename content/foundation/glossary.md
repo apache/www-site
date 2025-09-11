@@ -1,7 +1,5 @@
-Title: ASF Glossary | Apache Software Foundation
+Title: ASF Glossary
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# ASF Glossary
 
 This glossary provides a brief description of some of the organizational 
 terms used at the ASF and in Apache projects.  For more information 

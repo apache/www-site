@@ -1,7 +1,7 @@
 Title: Licenses
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The Apache Software Foundation uses various licenses to distribute
 software and documentation, and to accept regular

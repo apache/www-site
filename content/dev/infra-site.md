@@ -1,7 +1,7 @@
 Title: About the Infrastructure web site
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# Updating the Apache website
+## Updating the Apache website
 
 You can help improve the`apache.org` website.
 

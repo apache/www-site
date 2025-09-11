@@ -1,8 +1,5 @@
 Title:   Alan M. Carroll - December 20, 2023
-
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# Alan M. Carroll - December 20, 2023
 
 Alan M. Carroll (id: SolidWallOfCode) passed away unexpectedly the morning of
 December 20, 2023 at his home in Urbana, Illinois.

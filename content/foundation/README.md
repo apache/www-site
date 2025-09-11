@@ -1,6 +1,6 @@
 Title: Foundation information
 
-# {{title}}
+
 
 These pages have different stakeholders.
 

@@ -1,7 +1,6 @@
-Title: ASF Members | Apache Software Foundation
+Title: ASF Members
+page_heading: Committed to Open Source and the ASF
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# Committed to Open Source and the ASF
 
 ASF Members are those who have proven their commitment to the ASF by contributing to one or more of the Foundation’s projects. We thank them for their ongoing contributions to the Foundation.
 

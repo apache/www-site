@@ -1,7 +1,7 @@
 Title: Support Apache
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The Apache Software Foundation provides the infrastructure for the many
 Apache projects - the mailing lists, code repositories, bug tracking

@@ -1,7 +1,7 @@
 Title: Apache Trademark Resources And Site Map
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 A listing of various helpful information about Apache&reg; trademarks, including links to some general information about trademarks in open source.
 The ASF considers the names of all Apache projects and software products to be trademarks of the ASF.

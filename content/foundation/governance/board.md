@@ -1,7 +1,7 @@
 Title: Apache Corporate Governance - Board of Directors
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The Board of Directors sets overall policy for the Apache Software Foundation and 
 delegates execution and specific policy areas to individual officers 

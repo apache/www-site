@@ -1,7 +1,7 @@
 Title: Apache PMC Branding Responsibilities
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 Apache Project Management Committees (PMCs) are directly responsible for promoting and protecting their project's
 brand and trademarks while following Apache Trademark policies.  This document

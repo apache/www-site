@@ -1,7 +1,6 @@
-Title: ASF History | Apache Software Foundation
+Title: ASF History
+page_heading: History of the Apache Software Foundation
 license: https://www.apache.org/licenses/LICENSE-2.0
-
-# History of the Apache Software Foundation
 
 From the humble beginnings of fewer than a dozen software engineers sharing code patches via email in February of 1995, to the incorporation of the ASF in June of 1999, to the years of slow growth as the concept of open source percolated into the everyday vernacular, to the ASF of today with hundreds of projects spanning the technology spectrum, the history of the ASF is really about the growth of its communities. On this page, you can learn more about the Foundation’s origins and key milestones.
 

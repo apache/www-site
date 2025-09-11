@@ -1,7 +1,7 @@
 Title: Bruce Atherton - A Memorial
 license: https://www.apache.org/licenses/LICENSE-2.0
 
-# {{title}}
+
 
 The Apache Ant community deeply regrets the passing of Bruce Atherton, one of its long-time contributors, after a long fight against leukemia.                                  
 
