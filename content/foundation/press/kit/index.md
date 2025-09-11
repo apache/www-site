@@ -30,13 +30,11 @@ The ASF’s brand guidelines and trademark policy ensure consistent use of our b
 
 ## Powered By Apache Logos  {#poweredby}
 
-The “Powered By Apache” logo was created in 2014 to celebrate the Apache Software Foundation's 15th Anniversary and promote the ASF's then-more than 200 projects. The logo was updated in January 2016 to reflect the new ASF brand identity.
-
-This logo was specially created to maintain the unique identity of each ASF project whilst identifying all projects under the Apache umbrella. The Apache community at-large are encouraged to display “Powered By Apache” assets on their websites, documentation, and other marketing materials.
+“Powered By” logos can be used by the ASF community-at-large on websites, documentation, and other marketing materials.
 
 Guidelines for the appropriate use of the “Powered By Apache” logos include:
 
-*   The “Powered By Apache” circular banded logo may be used standalone with just the feather logo (denoting general use of an ASF project) or in combination with an official/authorized ASF Project logo.
+*   The “Powered By Apache” circular banded logo may be used standalone with The ASF logo mark (denoting general use of an ASF project) or in combination with an official/authorized ASF Project logo.
 *   The official/authorized Project logo may not be altered in any way other than removing/separating the name(s) where applicable as approved by the associated Project Management Committee.
 *   The appropriate trademark symbol(s), such as ® or ™, associated with the project's logo must be included in the logo.
 *   The logo's circular band format, font, and color must not be altered in any way.
@@ -48,8 +46,6 @@ Guidelines for the appropriate use of the “Powered By Apache” logos include:
 *   Third parties and programs are not allowed to use official Apache project logos and/or create alternate logos or identifying marks relating to any Apache project without written permission from the associated Project Management Committee and/or ASF Brand Management.
 *   We have a [trademark use policy for the "Powered By" phrase][1]
 
-In addition, official Apache Project pages and documentation on apache.org must utilize the appropriate trademark symbols on the respective Project logo, along with the following footnote: "Apache, Apache [PROJECT NAME], and the Apache [PROJECT NAME] logo are registered trademarks or trademarks of The Apache Software Foundation in the U.S. and/or other countries."
-
 ### "Powered By" Logo  
 
 [Powered By Apache Logo - PDF](poweredBy/Apache_PoweredBy.pdf)
@@ -60,69 +56,7 @@ In addition, official Apache Project pages and documentation on apache.org must 
 
 ### Project "Powered By" Logos 
 
-![Per-Project Powered By Logo Example][2]
-
-Logos for individual projects, such as the ones below, are available in jpg, png, and psd format. They can be retrieved by requesting http://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.jpg, or http://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.png, http://www.apache.org/foundation/press/kit/poweredBy/pb-PROJECTNAME.psd.
-
-For example, the Powered by Logo for Apache Tomcat can be retrieved from [poweredBy/pb-tomcat.jpg](poweredBy/pb-tomcat.jpg), [poweredBy/pb-tomcat.png](poweredBy/pb-tomcat.png) and the [poweredBy/pb-tomcat.psd](poweredBy/pb-tomcat.psd)
-
-If you are unable to find the logo you are looking for, try inspecting the [directory listing](poweredBy). If you still can't find what you need please contact the project's mailing list.
-
-### Template for "Powered By" Logos 
-
-<br />
-<a class="btn btn-primary" role="button" data-toggle="collapse" href="#buildPoweredByBadge" aria-expanded="false" aria-controls="buildPoweredByBadge">Build Your Badge</a>
-<div class="collapse" id="buildPoweredByBadge">
-    <div class="well">
-        <style type="text/css">
-            canvas#canvas_poweredBy_1,
-            canvas#canvas_poweredBy_2,
-            canvas#canvas_poweredBy_3  {
-                display: none;
-            }
-            .poweredBy_canvas_container img  {
-                margin: 0 20px 20px 0;
-                float: left;
-                max-width: 350px;
-            }
-            input#btnLoad  {
-                padding: 2px 5px;
-                background: white;
-                border: thin solid black;
-                font-family: "Super Grotesk";
-            }
-        </style>
-        <div id="PoweredByOverlay">
-            <p>With this handy tool you can create your own Project Powered By Badge.</p>
-            <ol>
-                <li>Select your logo saved in a square format. (Non square images may result in improperly cropped results.)</li>
-                <li>Your logo will be displayed in the Powered By badge.</li>
-                <li>Now you can save it and use as needed.</li>
-            </ol>
-            <!-- Change the js-files path here -->
-            <script type="text/javascript" src="overlays/poweredBy-overlay.js"></script>
-            <noscript>Sorry, your browser settings do not support JavaScript!</noscript>
-            <form action="#" id="poweredBy_form" onsubmit="return false;">
-                <input id="poweredByImgFile" type="file" />
-                <br />
-                <input
-                id="btnLoad"
-                onclick="loadPoweredByImage();"
-                type="button"
-                value="Generate"
-                />&nbsp;
-            </form>
-            <br />
-            <div class="poweredBy_canvas_container">
-                <canvas id="canvas_poweredBy_1"></canvas>
-                <img alt="Powered By" id="img_poweredBy_1" src="" />
-            </div>
-            <div class="clearfix">&nbsp;</div>
-        </div>
-    </div>
-</div>
-
-The new blank template for the “Powered By” logos as well as select project “Powered By” logos can be downloaded [on our template site](./poweredBy/powered-by-template-2019). The old template (black “powered by” band) is deprecated and should not be used for any current graphics use.
+September 11, 2025: The process for updating Project "Powered By" logos will be updated in the coming weeks. In the meantime, please use the new Powered By logos above.
 
 ## ASF Sticker Template  {#sticker}
 
