@@ -1,5 +1,5 @@
 Title: ASF Sponsorship
-page_heading: The Apache Software Foundation Sponsorship Program
+page_heading: Our Sponsorship Program
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 The Apache Software Foundation provides support for the Apache community of open-source software projects. Apache projects use a collaborative, consensus-based development process, an open and pragmatic software license, and a desire to create high quality software that leads the way in its field. We consider ourselves not simply a group of projects sharing a server, but rather a community of developers and users.
