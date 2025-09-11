@@ -241,12 +241,12 @@ their respective owners.
 
   - <a id="marklogo"></a>Logos are important to recognize as trademarks as
 well. For the project's official logo (if it has one, and especially if it
-uses the ASF feather), ensure that it includes a small "TM" symbol in the
+uses the ASF graphic mark), ensure that it includes a small "TM" symbol in the
 graphic or immediately adjacent to it. For pages that include the project
 logo on them, ensure you mention "... and the Project logo are
 trademarks..." in the attribution.
 
-  - Projects must not use the Apache feather in their logo. For details on the proper [Apache visual identity and feather graphics][3],
+  - Projects must not use The ASF graphic marks in their logo. For details on the proper [Apache visual identity and graphics][3],
 please work with press@.
 
 # Powered By... Logos  {#poweredby}
