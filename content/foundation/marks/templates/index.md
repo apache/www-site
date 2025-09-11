@@ -73,9 +73,9 @@ If any Apache trademarks are being used in domain names, please see the [Third P
 
 If any Apache trademarks (names or logos) are being used on apparel or swag (or giveaways at events), please see the Merchandising Policy for more details.
 
-## When The Apache Feather Or Name Are Misused  {#feather}
+## When The ASF Logo Or Apache Name Are Misused  {#logo}
 
-The Apache feather and APACHE&reg; name are a key part of the brand for all projects as well as the 
+The ASF logo and APACHE&reg; name are a key part of the brand for all projects as well as the 
 ASF as a whole.  Misuses of these brands are serious matters that should always be brought to the 
 [attention of trademarks@][5] directly, where we will determine the appropriate action to take.
 
