@@ -23,8 +23,8 @@ wish to do so in a way that helps promote the independent and
 community-led Apache Way and our many Apache projects.
 
 Note that this does not generally apply to our "Apache" trademark; use
-of that mark alone on merchandise or the bare Apache feather is
-**not** allowed without explicit permission.  The Apache feather is important to all
+of that mark alone on merchandise or the bare ASF graphic mark is
+**not** allowed without explicit permission.  The ASF graphic mark is important to all
 Apache projects, and is special to our organization, as well as being the
 primary way that consumers discover our projects.
 
@@ -50,7 +50,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 -  [Logos And Graphics Usage](#graphics)
 
--  [Must Not Use "Apache", "ApacheCon", feather trademarks](#apachecon)
+-  [Must Not Use "Apache", "ApacheCon", logo trademarks](#apachecon)
 
 -  [Other Trademark Policies And Resources](#other)
 
@@ -160,10 +160,10 @@ that only provide black ink may change a colored logo to B&W or
 greyscale as needed.  Reprinting our yellow Hadoop elephant in a different 
 color, like green or blue, is not permitted.
 
-## Must Not Use "Apache", "ApacheCon", feather trademarks  {#apachecon}
+## Must Not Use "Apache", "ApacheCon", logo trademarks  {#apachecon}
 
 You may not use either the "Apache" nor the "ApacheCon"
-names, nor confusingly similar names, nor the bare Apache feather logo.
+names, nor confusingly similar names, nor the bare ASF graphic mark.
 These trademarks are reserved for the ASF, its projects, and its
 own authorized conferences or specifically contracted and authorized sellers.
 
