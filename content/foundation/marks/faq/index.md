@@ -213,10 +213,10 @@ See also the [Powered By Apache logo](/foundation/press/kit/)
 page for details about logo usage.
 
 
-# May I use the Apache feather logo on the cover/title of published books, articles, or other publications?  {#titlefeather}
+# May I use The ASF logo on the cover/title of published books, articles, or other publications?  {#titlefeather}
 
-No.  The Apache feather logo (old horizontal version, or new vertical version) is a special trademark to the members of the Apache
-Software Foundation.  You may **not** use the feather logo on the external covers or title pages 
+No.  The ASF logo is a special trademark to the members of The Apache
+Software Foundation.  You may **not** use the logo on the external covers or title pages 
 of books or similar printed materials. 
 
 
