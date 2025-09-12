@@ -141,7 +141,7 @@ If your event wishes to use an Apache project logo within your event branding,
 you must work with VP, Brand to obtain explicit trademark and goodwill rights
 for the brand and event logo.
 
-Event branding may not include the Apache feather in any way. 
+Event branding may not include the Apache logo in any way. 
 
 ## Event profits and donations  {#funding}
 

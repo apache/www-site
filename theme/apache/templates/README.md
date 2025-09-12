@@ -50,7 +50,7 @@ site:
   domain: www.apache.org
   logo: images/logo.png
   repository: https://github.com/apache/www-site/blob/main/content/
-  trademarks: Apache, the Apache feather logo are trademarks
+  trademarks: Apache, the Apache logo are trademarks
   index: '**'
 ```
 

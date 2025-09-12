@@ -78,7 +78,7 @@ Alternatively, they may be available separately.
 
 ## Is 'Apache' a trademark?  {#Marks}
 
-'Apache', 'Apache Software Foundation', the multicoloured feather, and the
+'Apache', 'Apache Software Foundation', the Apache logo, and the
 various Apache project names and logos are either registered trademarks or trademarks of The Apache
 Software Foundation in the United States and other countries. 
 See our [Trademark Policy](marks/) for details of how to use Apache project trademarks, and our helpful [site map of trademark resources](marks/resources).

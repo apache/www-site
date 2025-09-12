@@ -1019,15 +1019,15 @@ Way.
 Apache Labs is our trademark for community developed open source
 software projects run by Members of the ASF.
 
-# Other Trademarks - The Apache Feather  {#feather}
+# Other Trademarks - The Apache Logo  {#feather}
 
 The below names related to the ASF as a whole are trademarks and/or service marks.
 
 - Apache
 
-- Graphic: The ASF feather ( [as a standalone image](/foundation/press/kit/feather_small.png) )
+- Graphic: The ASF logo ( [as a standalone image](/foundation/press/kit/feather_small.png) )
 
-- Graphic: The ASF feather ( [with the text "The Apache Software Foundation"](/foundation/press/kit/asf_logo_wide_small.png) )
+- Graphic: The ASF logo ( [with the text "The Apache Software Foundation"](/foundation/press/kit/asf_logo_wide_small.png) )
 
 - Several variations on the above graphics as displayed on the apache.org
 website.
