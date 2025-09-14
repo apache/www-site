@@ -327,6 +327,16 @@ the podling can formally graduate, typically at a monthly board meeting.
 - **IMPORTANT:** If you are considering submitting a new registration application 
 *during the incubation process*, you **must** coordinate with VP, Brand and ASF counsel.
 
+# Can I refer to an individual or organization as the "founder" or "creator" of an ASF project? {#creator}
+
+The ASF discourages this because it is detrimental to the long-term health of a project community to continually call attention to the individuals and/or organizations that originally created the project.
+
+If it is necessary to highlight individuals and companies who founded a project that is now under the ASF's stewardship, they may be referred to as "original creator of Apache Project Name" or "original developer of Apache Project Name."
+
+Usage guidelines:
+
+- If the claim is accurate, for the first two years after the open source project becomes a Top Level Project it is acceptable to use the following terms on your marketing materials: creator(s); original creator(s); original developer(s).
+- If your project is two years or older, ASF Marketing & Publicity will no longer approve those or similar terms in timely materials such as press releases; however, the terms may still appear in historical materials such as your website's About page or Wikipedia.
 
 ----
 # Other trademark guidelines  {#other}
