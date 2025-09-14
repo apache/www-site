@@ -329,7 +329,7 @@ the podling can formally graduate, typically at a monthly board meeting.
 
 # Can I refer to an individual or organization as the "founder" or "creator" of an ASF project? {#creator}
 
-The ASF discourages this because it is detrimental to the long-term health of a project community to continually call attention to the individuals and/or organizations that originally created the project.
+Generally no. The ASF discourages this because it is detrimental to the long-term health of a project community to continually call attention to the individuals and/or organizations that originally created the project.
 
 If it is necessary to highlight individuals and companies who founded a project that is now under the ASF's stewardship, they may be referred to as "original creator of Apache Project Name" or "original developer of Apache Project Name."
 
