@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 
 
-The Apache&reg; brand is shared amongst all 200+ Apache Software Foundation (ASF) project
+The Apache&reg; brand is shared amongst all {{pmc_count_rounded}}+ Apache Software Foundation (ASF) project
 communities and is an important part of our mission of providing
 software for the public good.  This identity usage guide provides
 examples for how to refer to Apache&reg; software projects and products.

@@ -39,6 +39,9 @@ ci:
     where: pmc
     # sort by project name
     alpha: display_name
+  pmc_count_rounded:
+    path: pmc_count
+    truncate: 10
   featured_projs:
     # used on /
     description: 'Featured Projects'
@@ -58,7 +61,9 @@ ci:
 
 # used on index.ezmd
 pods:
-  # load, transform, and create data sequences from podling info 
+  # load, transform, and create data sequences from podling info
+  # using data from projects.a.o because that only contains active podlings
+  # and the asfdata plugin does not yet support filtering by value other than True
   url: https://projects.apache.org/json/foundation/podlings.json
   podlings:
     description: 'Current Podlings'
@@ -108,7 +113,22 @@ pg:
   # rounded down, so can be used as nnn+
   asf_committers_rounded:
     path: roster_counts.committers
+    truncate: 100
+
+# used for index.ezmd and foundation/how-it-works/index.md
+mi:
+  url: https://whimsy.apache.org/public/member-info.json
+  asf_active_members_rounded:
+    path: member_count
     truncate: 10
+
+# used for index.ezmd
+
+# Not sure how this are derived
+software_releases_rounded: 1300
+
+# how does this relate to PMC count? (pmc_count_rounded)
+open_source_projects_rounded: 290
 
 # Can also define values as follows:
 # anumber: 100

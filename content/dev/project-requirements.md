@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 **What is an Apache project?**
 
-The ASF is home to a wide range of over 350 software project communities, each working with their own collaborative community style to create the freely-available software products that Apache is known for. There are many different references to "The Apache Way" and project policies at the ASF, but it is not always clear which policies are required, which are best practices, and which are merely suggestions.
+The ASF is home to a wide range of over {{pmc_count_rounded}} software project communities, each working with their own collaborative community style to create the freely-available software products that Apache is known for. There are many different references to "The Apache Way" and project policies at the ASF, but it is not always clear which policies are required, which are best practices, and which are merely suggestions.
 
 This document provides a simple list of the ASF's expectations of any Apache project, with pointers to the detailed policies or best practices. **"Apache project" specifically means a top level project at the ASF**. Incubator podlings must meet these requirements before graduation. Projects not hosted at the ASF - even if they are using the Apache license - are not strictly "Apache projects".
 
