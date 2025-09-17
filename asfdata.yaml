@@ -114,12 +114,21 @@ pg:
   asf_committers_rounded:
     path: roster_counts.committers
     truncate: 100
+  asf_ldap_member: # This is not exactly the same as the number of active+emeritus members
+    path: roster_counts.member
+  # rounded down, so can be used as nnn+
+  asf_ldap_member_rounded:
+    path: roster_counts.member
+    truncate: 10
 
 # used for index.ezmd and foundation/how-it-works/index.md
 mi:
   url: https://whimsy.apache.org/public/member-info.json
   asf_active_members_rounded:
     path: member_count
+    truncate: 10
+  asf_total_members_rounded: # active + emeritus
+    path: total_member_count
     truncate: 10
 
 # used for index.ezmd
