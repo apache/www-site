@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 # ASF Marketing & Publicity #
 
-The Apache Software Foundation (ASF) Marketing & Publicity team oversees the ASF's public image, handles day-to-day media and analyst relations, and supports the Foundation by counseling 350+ Apache projects and their communities in the areas of messaging, outreach, and engagement.
+The Apache Software Foundation (ASF) Marketing & Publicity team oversees the ASF's public image, handles day-to-day media and analyst relations, and supports the Foundation by counseling {{open_source_projects_rounded}}+ Apache projects and their communities in the areas of messaging, outreach, and engagement.
 
 
 ## Helpful Resources  { #resources }

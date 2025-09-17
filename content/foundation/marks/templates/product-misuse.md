@@ -39,7 +39,7 @@ Once the other party claims they are in compliance with our policy and have made
 
 Dear *THEIRNAME*:
 
-The Apache Software Foundation (“ASF”) is a US 501(c)(3) non-profit public charity that provides organizational, legal, and financial support for nearly 200 independently led open source software projects under the Apache® brand. 
+The Apache Software Foundation (“ASF”) is a US 501(c)(3) non-profit public charity that provides organizational, legal, and financial support for over {{pmc_count_rounded}} independently led open source software projects under the Apache® brand. 
 
 One of the ASF’s important activities is uniting our communities by using Apache trademarks and logos to identify projects and software developed by our volunteer communities.  Unfortunately, an increasing number of companies are claiming improper connections with Apache software projects and the software products we produce, often in a way that harms the vendor neutral and independent governance that Apache projects are widely known for.
 
