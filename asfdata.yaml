@@ -62,12 +62,12 @@ ci:
 # used on index.ezmd
 pods:
   # load, transform, and create data sequences from podling info
-  # using data from projects.a.o because that only contains active podlings
-  # and the asfdata plugin does not yet support filtering by value other than True
-  url: https://projects.apache.org/json/foundation/podlings.json
+  url: https://whimsy.apache.org/public/public_podlings.json
   podlings:
     description: 'Current Podlings'
     # create a sequence from the dictionary
+    path: podling
+    where: status eq current
   featured_pods:
     description: 'Featured Podlings'
     # based on the podlings sequence
@@ -76,17 +76,6 @@ pods:
     random: 6
     # logo path - use incubator if missing. Strip "Apache" and "(incubator)" from name.
     logo: /logos/res/{}/default.png,/logos/res/incubator/default.png
-
-# Does this work now?
-pods2:
-  url: https://whimsy.apache.org/public/public_podlings.json
-  podlings2:
-    description: 'Current Podlings'
-    path: podling
-    where: status eq current
-  featured_pods2:
-    sequence: podlings
-    random: 6
 
 # used on licenses/exports/index.ezmd
 eccn:
