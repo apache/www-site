@@ -10,7 +10,7 @@ Our Members are similar to stockholders–they elect new Members and may vote fo
 
 ## ASF Members
 
-This table shows current and emeritus members who have manually added themselves to it – it is NOT a complete listing. If you are a member and want to be included (this is optional), see below for how to update the source file yourself.
+This table shows current members who have manually added themselves to it – it is NOT a complete listing. If you are a member and want to be included (this is optional), see below for how to update the source file yourself.
 
 | Id | Name | Projects |
 |----|------|----------|
