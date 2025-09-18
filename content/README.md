@@ -42,6 +42,9 @@ Infrastructure Team at `users@infra.apache.org`
 - [dyn](dyn/)
 - [uptime](uptime/)
 
+ASF Members
+- [ASF Members](foundation/members.md)
+
 See also [Operations Directory](foundation/operations/).
 
 All ASF Members have write access to this repository.
