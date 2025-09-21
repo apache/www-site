@@ -61,7 +61,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 -  [Logos And Graphics Usage](#graphics)
 
--  [Must Not Use "Apache" And "ApacheCon" Names](#apachecon)
+-  [Must Not Use "Apache" And "Community Over Code" Names](#coverc)
 
 -  [Other Trademark Policies And Resources](#other)
 
@@ -197,9 +197,9 @@ element in any way. The only use of the bare ASF graphic mark or The ASF logo
 on websites allowed is to provide a single link to http://www.apache.org/
 as a reference to The Apache Software Foundation and its projects.
 
-## Do Not Use "Apache" And "ApacheCon" Names  {#apachecon}
+## Do Not Use "Apache" And "Community Over Code" Names  {#coverc}{#apachecon}
 
-Third parties may not use either the "Apache", "ApacheCon", nor "Apache:BigData"
+Third parties may not use either the "Apache" or "Community Over Code"
 names, nor confusingly similar names, in their domain names. These names
 are reserved exclusively for the ASF, its projects, and its
 own authorized conferences.
