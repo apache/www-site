@@ -50,7 +50,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 -  [Logos And Graphics Usage](#graphics)
 
--  [Must Not Use "Apache", "ApacheCon", logo trademarks](#apachecon)
+-  [Must Not Use "Apache", "ASF", "Community Over Code", logo trademarks](#coverc)
 
 -  [Other Trademark Policies And Resources](#other)
 
@@ -151,7 +151,7 @@ VP, Brand Management or the VP of the relevant Apache project to include the
 
 Apache product logos may only be used to refer to the
 Apache products or projects themselves, must be clearly set off from
-any other organization's branding and logos.  
+any other organization's branding and logos.
 
 You must not change the
 appearance of any Apache logos when using them, other than to comply
@@ -160,17 +160,22 @@ that only provide black ink may change a colored logo to B&W or
 greyscale as needed.  Reprinting our yellow Hadoop elephant in a different 
 color, like green or blue, is not permitted.
 
-## Must Not Use "Apache", "ApacheCon", logo trademarks  {#apachecon}
+## Must Not Use "Apache", "ASF", "Community Over Code", logo trademarks  {#coverc}{#apachecon}
 
-You may not use either the "Apache" nor the "ApacheCon"
+You may not use either the "Apache", "ASF" nor "Community over Code"
 names, nor confusingly similar names, nor the bare ASF graphic mark.
 These trademarks are reserved for the ASF, its projects, and its
 own authorized conferences or specifically contracted and authorized sellers.
 
 ## How To: Request Permission For Non-Software Merchandise  {#permission}
 
+If you wish to create non-software merchandise incorporating a single ASF project
+trademark (project name and/or project logo) soley for your personal use and providing
+that you follow all the requirements of this policy, you do not need to request
+explicit permission from the ASF.
+
 If you wish to incorporate any Apache trademarks on non-software
-merchandise, please [email us on the
+merchandise in any other circumstances, please [email us on the
 trademarks@](mailto:trademarks@apache.org?subject=%5btrademark%5d%20Merchandise%20approval%20for)
 mailing list, and also cc: the relevant private@*projectname*.apache.org 
 mailing list.  Thus, to request permission for the cute Apache Flink 
@@ -213,8 +218,12 @@ third party products, services, or events.**
 
 ## Policy Version  {#version}
 
-This is version 1.0 of this Apache policy document, published in May 2017.
+This is version 1.1 of this Apache policy document, published in September 2025.
 Significant changes will be marked with a new version number.
+
+**v1.0** May 2017. Original version.
+
+**v1.1** September 2025. Added exception for merchandise soley for personal use. Updated list of marks that may not be used.
 
 [resources]: //www.apache.org/foundation/marks/resources
 [guide]: //www.apache.org/foundation/marks/guide
