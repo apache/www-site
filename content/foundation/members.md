@@ -64,6 +64,7 @@ This table shows current members who have manually added themselves to it – it
 | bkp | Brian Proffitt |
 | blair | Blair Zajac |
 | blautenb | Berin Lautenbach | [XML](http://xml.apache.org) ; [incubator](http://incubator.apache.org/)|
+| bmarwell | Benjamin Marwell | [Maven](https://maven.apache.org), [Shiro](https://shiro.apache.org/) |
 | bob | Bob Paulin | [Felix](http://felix.apache.org/) , [Tika](http://tika.apache.org/)|
 | bobby | Robert (Bobby) Evans | [Storm](http://storm.apache.org) , [Hadoop](http://hadoop.apache.org) , [Spark](http://spark.apache.org) , [Tez](http://tez.apache.org/) |
 | bodewig | [Stefan Bodewig](http://stefan.samaflost.de/) | [Ant](http://ant.apache.org/) , [Gump](http://gump.apache.org/) , [Jakarta](http://jakarta.apache.org/)|
