@@ -7,7 +7,7 @@ The ASF’s brand guidelines and trademark policy ensure consistent use of our b
 **ASF Graphics**
 *   [Foundation Logos](#logo) - the formal ASF logo
 *   [Powered By Apache Logos](#poweredby) - for Apache projects
-*   [Apache Sticker Template](#sticker) — pictorial marks of the Apache logo with taglines
+*   [ASF Sticker Template](#sticker) — pictorial marks of the ASF logo with taglines
 *   [Community Over Code Logos](#eventlogo) - the official Community Over Code event logo
 
 ## Foundation Logos {#logo}
