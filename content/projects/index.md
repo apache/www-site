@@ -21,9 +21,9 @@ If you’re new to open source or ASF, we recommend the Community Development si
 
 ## Where do I download ASF software?
 
-Use the link below to find and download the latest release from every ASF project. To find all releases from a particular project, you should start on the project’s own webpage,  which can be found via the project directory.
+To find releases for a particular project, you should start on the project’s own webpage,  which can be found via the project directory.
 
-<p><a class="btn btn-default mx-10" href="https://projects.apache.org/releases.html" role="button">Download</a> <p><a class="btn btn-default mx-10" href="https://projects.apache.org/projects.html" role="button">Project Directory</a>
+<p><a class="btn btn-default mx-10" href="https://projects.apache.org/projects.html" role="button">Project Directory</a></p>
 
 ## What’s the difference between an Incubating and Top-Level Project?
 
