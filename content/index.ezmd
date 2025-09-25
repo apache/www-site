@@ -337,6 +337,7 @@ bodytag: id="home"
 </section>
 <section id="plus-one" class="grad-purple">
     <script>
+        // Formats the date provided by the blog feed to the desired format
         function formatDate(dateString) {
             const date = new Date(dateString);
             const options = { 
@@ -345,6 +346,12 @@ bodytag: id="home"
                 day: 'numeric' 
             };
             return date.toLocaleDateString('en-US', options);
+        }
+        // Decodes HTML entities in a string
+        function decodeHtmlEntities(text) {
+            const textarea = document.createElement('textarea');
+            textarea.innerHTML = text;
+            return textarea.value;
         }
     </script>
     <div class="inner text-center py-xl">
@@ -358,7 +365,7 @@ bodytag: id="home"
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
                     <div class="blog-date"><script>document.write(formatDate('[foundation.date]'));</script></div>
-                    <h4>[foundation.title]</h4>
+                    <h4><script>document.write(decodeHtmlEntities('[foundation.title]'));</script></h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[foundation.href]">Read Post</a>
                     </div>
@@ -370,8 +377,8 @@ bodytag: id="home"
             [for newsletter]<div class="blog-card text-left">
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
-                    <div class="blog-date"><script>document.write(formatDate('[newsletter.date]'));</script></div> 
-                    <h4>[newsletter.title]</h4>
+                        <div class="blog-date"><script>document.write(formatDate('[newsletter.date]'));</script></div> 
+                        <h4><script>document.write(decodeHtmlEntities('[newsletter.title]'));</script></h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[newsletter.href]">Read Post</a>
                     </div>
@@ -384,7 +391,7 @@ bodytag: id="home"
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
                     <div class="blog-date"><script>document.write(formatDate('[podcast.date]'));</script></div>
-                    <h4>[podcast.title]</h4>
+                    <h4><script>document.write(decodeHtmlEntities('[podcast.title]'));</script></h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[podcast.href]">Listen Now</a>
                     </div>
