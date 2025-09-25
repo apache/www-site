@@ -336,6 +336,17 @@ bodytag: id="home"
 </p>
 </section>
 <section id="plus-one" class="grad-purple">
+    <script>
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            return date.toLocaleDateString('en-US', options);
+        }
+    </script>
     <div class="inner text-center py-xl">
         <div class="text-col mb-large">
             <h2 class="text-white">ASF Plus One</h2>
@@ -346,6 +357,7 @@ bodytag: id="home"
             [for foundation]<div class="blog-card text-left">
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
+                    <div class="blog-date"><script>document.write(formatDate('[foundation.date]'));</script></div>
                     <h4>[foundation.title]</h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[foundation.href]">Read Post</a>
@@ -358,6 +370,7 @@ bodytag: id="home"
             [for newsletter]<div class="blog-card text-left">
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
+                    <div class="blog-date"><script>document.write(formatDate('[newsletter.date]'));</script></div> 
                     <h4>[newsletter.title]</h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[newsletter.href]">Read Post</a>
@@ -370,6 +383,7 @@ bodytag: id="home"
             [for podcast]<div class="blog-card text-left">
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
+                    <div class="blog-date"><script>document.write(formatDate('[podcast.date]'));</script></div>
                     <h4>[podcast.title]</h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[podcast.href]">Listen Now</a>
