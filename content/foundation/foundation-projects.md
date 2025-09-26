@@ -1,5 +1,5 @@
 Title: Foundation Projects
-page_heading: What are Foundation 'Projects'?  {#foundationproject}
+page_heading: What are Foundation 'Projects'?
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 To support our hundreds of Apache software project communities, the Apache Software
