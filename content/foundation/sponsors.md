@@ -8,7 +8,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
 
 <h2 class="text-center">Foundation Sponsors</h2>
 <h3 class="h1"style="text-align: center;">Platinum Sponsors:</h3> <!-- 400x179 --> <!-- Platinum images should be exact size for CSS -->
-<div id="platinum" class="project-cards project-cards--platinum mb-xl">
+<div id="platinum" class="sponsor-cards sponsor-cards--platinum mb-xl">
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://www.apple.com/">
             <img src="images/apple-platinum.png"/>
@@ -79,7 +79,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
 
 
 <h3 class="h1"style="text-align: center;">Gold Sponsors:</h3>  <!-- 223x100 --> <!-- Gold images should be exact size for CSS -->
-<div id="gold" class="project-cards project-cards--gold mb-xl">
+<div id="gold" class="sponsor-cards sponsor-cards--gold mb-xl">
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://aiven.io/">
             <img src="images/aiven-gold.png"/>
@@ -144,7 +144,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
 
 
 <h3 class="h1"style="text-align: center;">Silver Sponsors:</h3>  <!-- 150x67 -->
-<div id="silver" class="project-cards project-cards--silver mb-xl">
+<div id="silver" class="sponsor-cards sponsor-cards--silver mb-xl">
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://www.americanexpress.com/en-us/careers/career-areas/technology/">
             <img src="images/amer-exp-silver.png"/>
@@ -199,7 +199,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
 
 <!-- Targeted Sponsors -->
 <h3 class="h1"style="text-align: center;">Targeted Platinum Sponsors:</h3> <!-- 400x179 -->   <!-- Platinum images should be exact size for CSS -->
-<div id="targetedplatinum" class="project-cards project-cards--platinum mb-xl">
+<div id="targetedplatinum" class="sponsor-cards sponsor-cards--platinum mb-xl">
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://aws.amazon.com/">
             <img src="images/aws-platinum.png"/>
@@ -269,7 +269,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
 </div>
 
 <h3 class="h1"style="text-align: center;">Targeted Gold Sponsors:</h3> <!-- 223x100 -->  <!-- Gold images should be exact size for CSS -->
-<div id="targetedgold" class="project-cards project-cards--gold mb-xl">
+<div id="targetedgold" class="sponsor-cards sponsor-cards--gold mb-xl">
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://www.atlassian.com/">
             <img src="images/atlassian-logo.png"/>
@@ -303,7 +303,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
 </div>
 
 <h3 class="h1"style="text-align: center;">Targeted Silver Sponsors:</h3> <!-- 150x67 -->
-<div id="targetedsilver" class="project-cards project-cards--silver mb-xl">
+<div id="targetedsilver" class="sponsor-cards sponsor-cards--silver mb-xl">
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://www.instaclustr.com/?utm_source=partner&utm_medium=asf&utm_campaign=homepage">
             <img src="images/netapp-instaclustr-silver.png"/>
