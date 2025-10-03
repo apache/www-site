@@ -347,12 +347,6 @@ bodytag: id="home"
             };
             return date.toLocaleDateString('en-US', options);
         }
-        // Decodes HTML entities in a string
-        function decodeHtmlEntities(text) {
-            const textarea = document.createElement('textarea');
-            textarea.innerHTML = text;
-            return textarea.value;
-        }
     </script>
     <div class="inner text-center py-xl">
         <div class="text-col mb-large">
@@ -365,7 +359,7 @@ bodytag: id="home"
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
                     <div class="blog-date"><script>document.write(formatDate('[foundation.date]'));</script></div>
-                    <h4><script>document.write(decodeHtmlEntities('[foundation.title]'));</script></h4>
+                    <h4>[format "raw"][foundation.title][end]</h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[foundation.href]">Read Post</a>
                     </div>
@@ -378,7 +372,7 @@ bodytag: id="home"
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
                         <div class="blog-date"><script>document.write(formatDate('[newsletter.date]'));</script></div> 
-                        <h4><script>document.write(decodeHtmlEntities('[newsletter.title]'));</script></h4>
+                       <h4>[format "raw"][newsletter.title][end]</h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[newsletter.href]">Read Post</a>
                     </div>
@@ -391,7 +385,7 @@ bodytag: id="home"
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
                     <div class="blog-date"><script>document.write(formatDate('[podcast.date]'));</script></div>
-                    <h4><script>document.write(decodeHtmlEntities('[podcast.title]'));</script></h4>
+                    <h4>[format "raw"][podcast.title][end]</h4>
                     <div class="blog-card-link">
                         <a class="continue" target="_blank" href="[podcast.href]">Listen Now</a>
                     </div>
