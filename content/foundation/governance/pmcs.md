@@ -173,7 +173,7 @@ ways to effectively and collaboratively build software.
 
 ## References  {#references}
 
-* Who They Are: [Current PMCs](http://projects.apache.org/indexes/pmc.html)
+* Who They Are: [Current PMCs](https://projects.apache.org/projects.html?pmc)
 * [Project Management Committee Guide](/dev/pmc.html "A how-to of PMC duties")
 * [PMC Branding Responsibilities](/foundation/marks/responsibility.html "Ensuring projects follow Apache Branding Requirements")
 * [Podling Project Management Committee Guide](http://incubator.apache.org/guides/ppmc.html "expectations for Incbator podlings' governance")
