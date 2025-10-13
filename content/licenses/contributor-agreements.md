@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 
 
-The Apache Software Foundation uses various agreements to 
+The Apache Software Foundation uses various agreements to
 accept contributions of software code and documentation from individuals and corporations, and to accept
 larger grants of existing software products.
 
@@ -14,12 +14,23 @@ original contributions for any other purpose outside of Apache, while
 providing the ASF and its projects the right to distribute and build upon
 their work.
 
+**NOTE:** Contributions that are not significant may be accepted under Section 5
+of the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+which states that any contribution intentionally submitted for inclusion
+shall be under the Apache License 2.0 unless otherwise specified.
+
+A contribution is "significant" if reverting the change would be a
+significant amount of work for the project. Reverting the change might
+be needed if the contribution is found to be improper, such as occurs
+when the contributor is not actually the owner of the intellectual
+property, or the contributor owns a patent and later demands payment for royalties.
+
 ## Contributor License Agreements  {#clas}
 
 * ICLA: [Individual Contributor License Agreement](icla.pdf)
 * CCLA: [Corporate Contributor License Agreement](cla-corporate.pdf)
 
-All contributors of ideas, code, or documentation to
+All contributors of significant ideas, code, or documentation to
 any Apache projects must complete, sign, and submit via
 email an [Individual Contributor License Agreement](icla.pdf) (ICLA). 
 
