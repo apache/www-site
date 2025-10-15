@@ -27,12 +27,12 @@
   <meta name="theme-color" content="#282661">
 
   <title>Martin Pöschl: a Memorial | Apache Software Foundations</title>
-  <link href="/css/Montserrat-300-600-800.css" rel="stylesheet">
-  <link href="/css/OpenSans.css" rel="stylesheet">
-  <link href="/css/min.bootstrap.css" rel="stylesheet">
-  <link href="/css/styles.css" rel="stylesheet">
-  <link href="/css/new-ui.css" rel="stylesheet">
-  <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
   <style>
 .headerlink {
   visibility: hidden;
@@ -43,7 +43,7 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
 
   <!-- pagefind search -->
   <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
-  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script src="/_pagefind/pagefind-ui.js" defer type="text/javascript"></script>
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
@@ -378,15 +378,13 @@ and your loved ones. May your soul find peace.</p>
   <script src="/js/bootstrap.js"></script>
   <script src="/js/slideshow.js"></script>
   <script>
-    (function($){
-      $(document).ready(function(){
+    jQuery(function($) {
         $(document)
         .on('click', '.faq', function(){
             $(this).find('.faq-answer').slideToggle(500);
             $(this).toggleClass('open');
         });
-      });
-    })(jQuery);
+    });
   </script>
 </body>
 </html>
