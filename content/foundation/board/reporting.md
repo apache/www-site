@@ -40,9 +40,9 @@ Apache Incubator fill out similar reports using the [Incubator Podling Status][7
 ## How to submit project board reports  {#how}
 
 You must commit report content to the board's monthly meeting agenda.  
-Use either the Whimsy Agenda tool or the ComDev Project Reporter tool, which generates a handy framework for you:
+Use either the Board Agenda tool or the ComDev Project Reporter tool, which generates a handy framework for you:
 
-    https://whimsy.apache.org/board/agenda/
+    https://agenda.apache.org/
     https://reporter.apache.org/
 
  1. Log in using your Apache ID
