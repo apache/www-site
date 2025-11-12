@@ -30,7 +30,7 @@ This table shows current members who have manually added themselves to it – it
 | aheritier | [Arnaud Héritier](http://aheritier.net/) | [Maven](http://maven.apache.org/), [Archiva](http://archiva.apache.org/)|
 | akarasulu | [Alex Karasulu](mailto:akarasulu@apache.org) | [directory](http://incubator.apache.org/directory) ; [excalibur](http://excalibur.apache.org/) ; [jakarta](http://jakarta.apache.org/)|
 | akm | Andrew Musselman | [Mahout](http://mahout.apache.org) |
-| alamb | [Andrew Lamb](http://andrew.nerdnetworks.org/) | [Arrow](http://arrow.apache.org/) |
+| alamb | [Andrew Lamb](http://andrew.nerdnetworks.org/) | [Arrow](http://arrow.apache.org/), [DataFusion](http://datafusion.apache.org/), [Parquet](http://parquet.apache.org/)  |
 | aleks | Aleksandar Vidakovic | [Fineract](https://fineract.apache.org) |
 | alfonsonishikawa | [Alfonso Nishikawa Muñumer](http://people.apache.org/~alfonsonishikawa) | [Gora](https://gora.apache.org) |
 | amaniatis | Aristedes Maniatis | [Cayenne](http://cayenne.apache.org/)|
