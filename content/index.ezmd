@@ -10,8 +10,8 @@ bodytag: id="home"
         <p><a href="/projects/" class="btn">See Projects</a></p>
     </div>
     <div class="w33 relative scrolling-logos">
-        <div id="para-1" class="home-hero-parallax"">
-            <img class="object-fit-contain" loading="lazy" src src="https://www.apache.org[{featured_projs[0].logo}]" alt="Logo">
+        <div id="para-1" class="home-hero-parallax">
+            <img class="object-fit-contain" loading="lazy" src="https://www.apache.org[{featured_projs[0].logo}]" alt="Logo">
         </div>
         <div id="para-2" class="home-hero-parallax">
             <img class="object-fit-contain" loading="lazy" src="https://www.apache.org[{featured_projs[1].logo}]" alt="Logo">
@@ -34,7 +34,7 @@ bodytag: id="home"
         <div id="para-8" class="home-hero-parallax pad-0">
             <img class="object-fit-contain" loading="lazy" src="images/parallax-7.webp" alt="Logo">
         </div>
-    </img>
+  </div>
   </div>
 </section> 
 <p class="hidden">
@@ -317,61 +317,64 @@ bodytag: id="home"
 </p>
 </section>
 <section id="plus-one" class="grad-purple">
-    <script>
-        // Formats the date provided by the blog feed to the desired format
-        function formatDate(dateString) {
-            const date = new Date(dateString);
-            const options = { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            };
-            return date.toLocaleDateString('en-US', options);
-        }
-    </script>
     <div class="inner text-center py-xl">
         <div class="text-col mb-large">
             <h2 class="text-white">ASF Plus One</h2>
             <p class="text-white">Explore what’s new at The ASF — from project news to community voices, all in one place.</p>
         </div>
+
         <h3 class="text-white">Most Recent Blog Posts</h3>
         <div class="blog-feed flex mb-large flex-column-600">
-            [for foundation]<div class="blog-card text-left">
+            {% for foundation in foundation|slice:":3" %}
+            <div class="blog-card text-left">
                 <div class="blog-card-inner">
-                    <img class="card-decoration" src="/images/oakleaf.svg"  alt="asf oak leaf logo">
-                    <div class="blog-date"><script>document.write(formatDate('[foundation.date]'));</script></div>
-                    <h4>[format "raw"][foundation.title][end]</h4>
+                    <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
+                    <div class="blog-date">
+                        {{ foundation.date|strftime('%d %B %Y') }}
+                    </div>
+                    <h4>{{ foundation.title|striptags }}</h4>
                     <div class="blog-card-link">
-                        <a class="continue" target="_blank" href="[foundation.href]">Read Post</a>
+                        <a class="continue" target="_blank" href="{{ foundation.href }}">Read Post</a>
                     </div>
                 </div>
-            </div>[end]
+            </div>
+            {% endfor %}
         </div>
+
         <h3 class="text-white">Plus One Newsletter</h3>
         <div class="blog-feed flex flex-column-600 mb-large">
-            [for newsletter]<div class="blog-card text-left">
+            {% for newsletter in newsletter|slice:":3" %}
+            <div class="blog-card text-left">
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
-                        <div class="blog-date"><script>document.write(formatDate('[newsletter.date]'));</script></div> 
-                       <h4>[format "raw"][newsletter.title][end]</h4>
+                    <div class="blog-date">
+                        {{ newsletter.date|strftime('%d %B %Y') }}
+                    </div>
+                    <h4>{{ newsletter.title|striptags }}</h4>
                     <div class="blog-card-link">
-                        <a class="continue" target="_blank" href="[newsletter.href]">Read Post</a>
+                        <a class="continue" target="_blank" href="{{ newsletter.href }}">Read Post</a>
                     </div>
                 </div>
-             </div>[end]
+            </div>
+            {% endfor %}
         </div>
+
         <h3 class="text-white">Plus One Podcast</h3>
         <div class="blog-feed flex flex-column-600">
-            [for podcast]<div class="blog-card text-left">
+            {% for podcast in podcast|slice:":3" %}
+            <div class="blog-card text-left">
                 <div class="blog-card-inner">
                     <img class="card-decoration" src="/images/oakleaf.svg" alt="asf oak leaf logo">
-                    <div class="blog-date"><script>document.write(formatDate('[podcast.date]'));</script></div>
-                    <h4>[format "raw"][podcast.title][end]</h4>
+                    <div class="blog-date">
+                        {{ podcast.date|strftime('%d %B %Y') }}
+                    </div>
+                    <h4>{{ podcast.title|striptags }}</h4>
                     <div class="blog-card-link">
-                        <a class="continue" target="_blank" href="[podcast.href]">Listen Now</a>
+                        <a class="continue" target="_blank" href="{{ podcast.href }}">Listen Now</a>
                     </div>
                 </div>
-             </div>[end]
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
