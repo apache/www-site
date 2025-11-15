@@ -45,7 +45,7 @@ Do not include a detailed list of all changes.
 Include a link to the detailed changes for this release.
 Ideally that page should highlight any major changes and security fixes.
 
-Include a link to the download page where the reader can download the source package.
+Include a link to the [download page](https://infra.apache.org/release-download-pages.html) where the reader can download the source package.
 
 It is also useful to include a direct link to the project home page.
 
