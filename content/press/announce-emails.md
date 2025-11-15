@@ -9,7 +9,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 ## Scope
 
-The announce@apache.org mailing list is intended for announcements such as new releases and security announcements.
+The [announce@apache.org](https://lists.apache.org/list.html?announce@apache.org) mailing list is intended for announcements such as new releases and security announcements.
 It is a shared list for all ASF projects, so it is important that any emails are written to be understood by
 the general reader -- who may have no knowledge of a particular project.
 
