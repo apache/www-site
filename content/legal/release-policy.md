@@ -357,7 +357,7 @@ Please ensure that you wait at least one hour after uploading a new release
 before updating the project download page and sending the announcement email(s). 
 
 It is important to inform people about the availability of new
-releases. Announcements must contain a link to the relevant download page for the source.
+releases. Announcements must contain a link to the Project Download Page for the source.
 At the very least, emails should be sent out announcing this to
 all appropriate mailing lists. Many top level projects have announcement
 lists for this purpose. There is also an
