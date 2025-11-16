@@ -32,11 +32,13 @@ Please run through the following checklist **now** to take action to accept your
 
 ## How To Update affiliations.txt  {#affiliations}
 
-All newly appointed officers or directors need to update the affiliations.txt file by adding one line about themselves to the end of the file, following the format defined in the top of the text file.  If you've checked out the foundation/officers repository, simply edit and checkin the file there.  If you still need to checkout the directory to edit, you can do this:
+All newly appointed officers or directors need to update the affiliations.txt file by adding one line about themselves to the file, following the format defined in the top of the text file.  If you've checked out the foundation/officers repository, simply edit and checkin the file there.  If you still need to checkout the directory to edit, you can do this:
 
 ```shell
 svn checkout https://svn.apache.org/repos/private/foundation/officers --depth files
 cd officers
-*(edit affiliations.txt file to add your line at end)*
+*(edit affiliations.txt file to add your line)*
 svn commit affiliations.txt -m "Add my affiliations for new PMC role"
 ```
+
+There is also a Whimsy tool to [update the affiliations file](https://whimsy.apache.org/officers/update_affiliations.cgi).
