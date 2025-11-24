@@ -80,7 +80,7 @@ earlier, reporting can be done in the project's next scheduled board report.
 Projects SHALL publish official releases and SHALL NOT publish unreleased
 materials outside the development community.
 Projects SHALL provide one or more Project Download Pages as part of their web site.
-All Project Download Pages must conform to infra download page 
+All Project Download Pages must conform to Infra download page 
 [policy](https://infra.apache.org/release-download-pages.html).
 
 During the process of developing software and preparing a release, various
