@@ -79,6 +79,9 @@ earlier, reporting can be done in the project's next scheduled board report.
 
 Projects SHALL publish official releases and SHALL NOT publish unreleased
 materials outside the development community.
+Projects SHALL provide one or more Project Download Pages as part of their web site.
+All Project Download Pages must conform to Infra policy on 
+[Release Download Pages](https://infra.apache.org/release-download-pages.html).
 
 During the process of developing software and preparing a release, various
 packages are made available to the development community for testing
@@ -352,7 +355,7 @@ Please ensure that you wait at least one hour after uploading a new release
 before updating the project download page and sending the announcement email(s). 
 
 It is important to inform people about the availability of new
-releases. Announcements must contain a link to the relevant download page for the source.
+releases. Announcements must contain a link to the Project Download Page for the source.
 At the very least, emails should be sent out announcing this to
 all appropriate mailing lists. Many top level projects have announcement
 lists for this purpose. There is also an
