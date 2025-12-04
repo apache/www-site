@@ -283,6 +283,8 @@ You may NOT include the following licenses within Apache products:
     - Non-commercial licenses:
         - [Creative Commons Non-Commercial](https://en.wikipedia.org/wiki/Creative_Commons_license#Non-commercial_licenses) variants
         - [Sun Community Source License 3.0](http://jcp.org/aboutJava/communityprocess/SCSL3.0.rtf)
+    - Non-compete licenses:
+        - [Functional Source License](https://fsl.software)
 - Places restrictions on larger works:
     - [GNU GPL 1, 2, 3](http://www.opensource.org/licenses/gpl-license.php)
         - Special exceptions to the GNU GPL (e.g. GNU Classpath) unless otherwise permitted elsewhere on this page. 
