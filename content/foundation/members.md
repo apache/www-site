@@ -465,7 +465,6 @@ This table shows current members who have manually added themselves to it – it
 | wave | Dave Fisher | [POI](https://poi.apache.org/), [Incubator](https://incubator.apache.org/), [OpenOffice](https://openoffice.apache.org/), [Petri](https://petri.apache.org/), and others |
 | weber | Volker Weber | [MyFaces](http://myfaces.apache.org/)|
 | weimer | [Markus Weimer](http://www.markusweimer.com) | [REEF](https://reef.apache.org/) | 
-| wenjun | [Wenjun Ruan](https://github.com/ruanwenjun) | [DolphinScheduler](https://dolphinscheduler.apache.org/) | 
 | wenming | [Ming Wen](mailto:wenming@apache.org) | [APISIX](https://apisix.apache.org) |
 | wilfreds | Wilfred Spiegelenburg | [Hadoop](https://hadoop.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | woonsan | [Woonsan Ko](http://woonsanko.blogspot.com/) | [Portals](https://portals.apache.org/) , [Commons](https://commons.apache.org/) , [FreeMarker](https://freemarker.apache.org/)|
@@ -731,6 +730,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | vhardy | Vincent Hardy |
 | vmassol | Vincent Massol |
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|
+| wenjun | [Wenjun Ruan](https://github.com/ruanwenjun) | [DolphinScheduler](https://dolphinscheduler.apache.org/) |
 | wglass | William Glass-Husain |
 | wohali | [Joan Touzet](mailto:wohali@apache.org) | [CouchDB](http://couchdb.apache.org) |
 | woollard | David Matthew Woollard |
