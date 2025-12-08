@@ -8,7 +8,18 @@ github:
     merge: false
     rebase: false
   protected_branches:
-    main: {}
+    main: 
+      required_pull_request_reviews:
+        # mark reviews as stale if the PR has been updated since
+        dismiss_stale_reviews: true
+        # The last person to push cannot approve this PR
+        require_last_push_approval: true
+        # At least one person must approve the PR
+        required_approving_review_count: 1
+      # squash or rebase must be allowed in the repo for this setting to be set to true.
+      required_linear_history: false
+      # requires all conversations to be resolved before merging is possible
+      required_conversation_resolution: true
 
 notifications:
   commits: site-cvs@apache.org
