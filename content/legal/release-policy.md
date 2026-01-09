@@ -570,7 +570,7 @@ Yes! The NOTICE file must contain the standard ASF attribution, given
 below:
 
     This product includes software developed at
-    The Apache Software Foundation (/).
+    The Apache Software Foundation (https://www.apache.org/).
 
 N.B. Unfortunately versions of this document prior to 2013-01-30 (r1440650) were incorrect, as they used the phrase:
 "developed by" instead of "developed at". 
