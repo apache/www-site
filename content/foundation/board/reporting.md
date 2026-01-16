@@ -40,9 +40,9 @@ Apache Incubator fill out similar reports using the [Incubator Podling Status][7
 ## How to submit project board reports  {#how}
 
 You must commit report content to the board's monthly meeting agenda.  
-Use either the Whimsy Agenda tool or the ComDev Project Reporter tool, which generates a handy framework for you:
+Use either the Board Agenda tool or the ComDev Project Reporter tool, which generates a handy framework for you:
 
-    https://whimsy.apache.org/board/agenda/
+    https://agenda.apache.org/
     https://reporter.apache.org/
 
  1. Log in using your Apache ID
@@ -118,11 +118,11 @@ chair should consider each of these questions when writing a report.
     well your community's health: are user questions answered, are 
     contributors acting appropriately, are there new contributors showing up?
 
- - Are there any issues for the Board to act on?
+ - Are there any issues for the Board to act on? **[REQUIRED]**
 
     If there are specific issues that the Board should be aware of,
     or should specifically address, then please call them out.  If not, then 
-    it is helpful to state something like: "There are no Board-level issues at this time."
+    state something like: "There are no Board-level issues at this time."
 
     When in doubt, it's better to include information or questions the PMC has 
     in a report, rather than waiting.  Remember also that you can always ask 
@@ -290,7 +290,7 @@ any followup messages or actions to your PMC after the meeting.
 
 As Directors review the report in the lead-up to the meeting, they may add comments into
 the agenda alongside your report. We encourage project chairs to follow this [board feedback][8]
-(currently by watching for SVN commits or using the [Whimsy Agenda tool][5]), and to respond in advance of the meeting when
+(currently by watching for SVN commits or using the [Board Agenda tool][5]), and to respond in advance of the meeting when
 practical.
 
 The [board meeting][6] typically follows this pattern:
@@ -332,7 +332,7 @@ As you can see, ensuring we receive your report on time, that it includes all ne
   [2]: http://community.apache.org/
   [3]: /foundation/marks/reporting
   [4]: /foundation/marks/pmcs#checklist
-  [5]: https://whimsy.apache.org/board/agenda/
+  [5]: https://agenda.apache.org/
   [6]: /foundation/board/meeting
   [7]: https://incubator.apache.org/guides/ppmc.html#podling_status_reports
   [8]: /dev/pmc.html#board-feedback

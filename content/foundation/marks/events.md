@@ -212,7 +212,7 @@ ASF, its partners, and the rest of the industry.
 
 ## Must not use "Apache" or "Community Over Code" names  {#coverc}
 
-Third party events may not use either the "Apache," "ApacheCon," or the "Community Over Code"
+Third party events may not use either the "Apache" or "Community Over Code"
 names, nor confusingly similar names, as any part of their primary
 branding. These names are reserved exclusively for the ASF and its own authorized
 Foundation Events, and for specific PMC-run

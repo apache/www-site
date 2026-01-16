@@ -15,7 +15,7 @@ This page answers common queries that we receive about our contribution agreemen
 
 1.  [What is the scope of patent grants made to the ASF?](#PatentScope) 
 
-1.  [Are contributor's employers required to sign a CCLA?](#cclas-not-required)
+1.  [Are contributors' employers required to sign a CCLA?](#cclas-not-required)
 
 1.  [I don't have a printer. How do I "print, sign, scan, and email" the license document?](#printer)
 

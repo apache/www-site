@@ -62,17 +62,17 @@ ci:
 # used on index.ezmd
 pods:
   # load, transform, and create data sequences from podling info
-  # using data from projects.a.o because that only contains active podlings
-  # and the asfdata plugin does not yet support filtering by value other than True
-  url: https://projects.apache.org/json/foundation/podlings.json
+  url: https://whimsy.apache.org/public/public_podlings.json
   podlings:
     description: 'Current Podlings'
     # create a sequence from the dictionary
+    path: podling
+    where: status eq current
   featured_pods:
     description: 'Featured Podlings'
     # based on the podlings sequence
     sequence: podlings
-    # take a random sample of 3
+    # take a random sample of 6
     random: 6
     # logo path - use incubator if missing. Strip "Apache" and "(incubator)" from name.
     logo: /logos/res/{}/default.png,/logos/res/incubator/default.png
@@ -104,6 +104,13 @@ newsletter:
   # load, transform, and create a sequence of foundation blogs
   blog: https://news.apache.org/foundation/entry/category/plus-one-newsletter/feed/atom
   count: 3
+
+# used on index.ezmd
+podcast:
+  # load, transform, and create a sequence of foundation blogs
+  blog: https://plusone.apache.org/feed/atom
+  count: 3
+
 
 # used for index.ezmd and foundation/how-it-works/index.md
 pg:

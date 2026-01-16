@@ -34,7 +34,7 @@ meeting. Each PMC report is assigned a director to serve as "shepherd" for the
 month; the shepherd takes any questions raised before or during the meeting to the relevant officer or PMC for an answer or resolution. PMCs that report 
 late or where serious questions are raised during the meeting may be asked to 
 provide an additional report at the next monthly meeting.  The board 
-uses the Apache Whimsy tool to [simplify many steps during the meeting process][1].
+uses the Apache Board agenda tool to [simplify many steps during the meeting process][1].
 
 The President is responsible for managing day-to-day operations, and 
 provides direction for the VP, Infrastructure who is responsible for ensuring the maintenance of the 

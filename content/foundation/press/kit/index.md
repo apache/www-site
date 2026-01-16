@@ -7,7 +7,7 @@ The ASF’s brand guidelines and trademark policy ensure consistent use of our b
 **ASF Graphics**
 *   [Foundation Logos](#logo) - the formal ASF logo
 *   [Powered By Apache Logos](#poweredby) - for Apache projects
-*   [Apache Sticker Template](#sticker) — pictorial marks of the Apache logo with taglines
+*   [ASF Sticker Template](#sticker) — pictorial marks of the ASF logo with taglines
 *   [Community Over Code Logos](#eventlogo) - the official Community Over Code event logo
 
 ## Foundation Logos {#logo}
@@ -80,3 +80,60 @@ The official event logo for Community Over Code, ASF's flagship annual event.
 *   [Community Over Code AI](community_over_code_logo.ai)
 *   [Community Over Code PNG](community_over_code_logo.png)
 *   [Community Over Code SVG](community_over_code_logo.svg)
+
+### Template for "Powered By" Logos 
+
+<p>The new blank template for the “Powered By” logos as well as select project “Powered By” logos can be downloaded <a href="https://apache.org/foundation/press/kit/poweredBy/powered-by-template-2019">on our template site</a>. The old template (black “powered by” band) is deprecated and should not be used for any current graphics use.</p>
+
+<p><a class="btn btn-primary" role="button" data-toggle="collapse" href="#buildPoweredByBadge" aria-expanded="false" aria-controls="buildPoweredByBadge">Build Your Badge</a></p>
+
+
+<div class="collapse mt-medium" id="buildPoweredByBadge">
+    <div class="well">
+        <style type="text/css">
+            canvas#canvas_poweredBy_1,
+            canvas#canvas_poweredBy_2,
+            canvas#canvas_poweredBy_3  {
+                display: none;
+            }
+            .poweredBy_canvas_container img  {
+                margin: 0 20px 20px 0;
+                float: left;
+                max-width: 350px;
+            }
+            input#btnLoad  {
+                padding: 2px 5px;
+                background: white;
+                border: thin solid black;
+                font-family: "Super Grotesk";
+            }
+        </style>
+        <div id="PoweredByOverlay">
+            <p>With this handy tool you can create your own Project Powered By Badge.</p>
+            <ol>
+                <li>Select your logo saved in a square format. (Non square images may result in improperly cropped results.)</li>
+                <li>Your logo will be displayed in the Powered By badge.</li>
+                <li>Now you can save it and use as needed.</li>
+            </ol>
+            <!-- Change the js-files path here -->
+            <script type="text/javascript" src="overlays/poweredBy-overlay.js"></script>
+            <noscript>Sorry, your browser settings do not support JavaScript!</noscript>
+            <form action="#" id="poweredBy_form" åonsubmit="return false;">
+                <input id="poweredByImgFile" type="file" />
+                <br />
+                <input
+                id="btnLoad"
+                onclick="loadPoweredByImage();"
+                type="button"
+                value="Generate"
+                />&nbsp;
+            </form>
+            <br />
+            <div class="poweredBy_canvas_container">
+                <canvas id="canvas_poweredBy_1"></canvas>
+                <img alt="Powered By" id="img_poweredBy_1" src="" />
+            </div>
+            <div class="clearfix">&nbsp;</div>
+        </div>
+    </div>
+</div>

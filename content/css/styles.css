@@ -12,7 +12,7 @@
 html {font-size: 18px;}
 body {
   font-family: 'Open Sans', 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   padding-top:0px;
   background-color: #F6F6F6;
   font-size: 1rem;
@@ -22,7 +22,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: capitalize;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1em;
 
 }
@@ -214,6 +214,13 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
 }
 .navbar-nav > li > a {font-family: 'Open Sans', 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; color: #333; text-transform: uppercase; padding: 0; font-size: .8rem;}
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {color: var(--color-purple); background-color: transparent;}
+.dropdown-menu > li > a[target="_blank"]::after {
+    content: url('/images/external-link.svg');
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {background-color: var(--color-lavendar);}
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {background-color: transparent;}
 
@@ -232,7 +239,7 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
 .stat-boxes {gap: 40px; align-items: start;}
 .stat-box {
     font-size: 3.5rem;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     flex: 1;
     line-height: 1em;
@@ -240,7 +247,7 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
 }
 .stat-box span {
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
     display: block;
     margin-top: .25rem;
     line-height: 1.2em;
@@ -253,10 +260,36 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
   gap: 20px;
   margin-top: 40px;
 }
-.project-cards.project-cards--sponsors {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.sponsor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+     margin-top: 40px;
 }
+.sponsor-cards .logo-card{
+  width: auto;
+}
+.sponsor-cards.sponsor-cards--platinum .logo-card img {
+    width: 400px;
+    height: 179px;
+}
+.sponsor-cards .logo-card a {padding-bottom: 35px;}
 
+.sponsor-cards.sponsor-cards--gold .logo-card img{
+  width: 223px;
+  height: 100px;
+}
+.sponsor-cards.sponsor-cards--silver .logo-card img{
+    width: 150px;
+    height: 67px;
+}
+.sponsors-col-list {
+    padding-left: 0px;
+    column-count:3;
+    text-align: left;
+    column-gap: 30px;
+}
 .logo-card {
     border-radius: 8px;
     width: 100%;
@@ -266,6 +299,7 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
     border: 1px solid #fff;
     background-color: #fff;
     align-content: center;
+    text-align: center;
 }
 .logo-card.logo-card--sponsor {
     padding: 15px;
@@ -293,9 +327,19 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
     border-color: var(--color-purple);
 }
 .logo-card a img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
+}
+.logo-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1.2em;
 }
 .callout-card {
     background-color: #fff;
@@ -319,7 +363,7 @@ tr:nth-child(even) {background-color: var(--color-lavendar);}
     width: 100%;
 }
 .callout-card.callout-card--home {
-    background-image: url('/images/stickers-bg.jpg');
+    background-image: url('/images/stickers-bg.webp');
     background-size: cover;
     background-position: center;
 }
@@ -622,6 +666,8 @@ h2#incubate-a-project {
 ul.white > li > a,
 a.white {
 	color: #ddd;
+    padding-bottom: 5px;
+    display: block;
 }
 
 ul.white > li > a:hover,
@@ -1032,6 +1078,20 @@ a.white:hover {
   transition: top .1s ease-in;
 }
 
+.footer-nav-col a {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#page-404-search {
+    background-color: #fff;
+    position: absolute;
+}
+#page-404-search .pagefind-ui__results {
+    max-height: 400px;
+    overflow: auto;
+}
+
 /* RESPONSIVE STYLES */
 
 /* Media Adjustments */
@@ -1155,6 +1215,19 @@ a.white:hover {
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 40%;
+    }
+    .sponsor-cards .logo-card{
+        flex-basis: calc(50% - 20px);
+    }
+
+    .sponsor-cards.sponsor-cards--gold .logo-card{
+        flex-basis: calc(33% - 20px);
+    }
+    .sponsor-cards.sponsor-cards--silver .logo-card {
+        flex-basis: calc(25% - 20px);
+    }
+    .sponsors-col-list {
+        column-count:2;
     }
 }
 

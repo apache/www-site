@@ -187,7 +187,7 @@ You may review the latest financial filings and non-profit exemption
 application of The Apache Software Foundation in our [public
 records](records/) section. You may find other helpful information
 through
-[GuideStar](https://www.guidestar.org/profile/47-0825376)
+[Candid](https://app.candid.org/profile/7698411/the-apache-software-foundation-47-0825376)
 (requires free registration for full access).
 
 You can find more information about non-profits and related issues at the

@@ -15,7 +15,7 @@ This table shows current members who have manually added themselves to it – it
 | Id | Name | Projects |
 |----|------|----------|
 | aadamchik | Andrei Adamchik |
-| aajisaka | Akira Ajisaka | [Hadoop](https://hadoop.apache.org), [Yetus](https://yetus.apache.org) |
+| aajisaka | Akira Ajisaka | [Hadoop](https://hadoop.apache.org), [Kyuubi](https://kyuubi.apache.org), [Yetus](https://yetus.apache.org) |
 | aaron | [Aaron Bannert](http://www.clove.org/~aaron/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [PHP](http://www.php.net/) , [commons](http://commons.apache.org/) , [incubator](http://incubator.apache.org/) , [flood](http://httpd.apache.org/test/flood/) , infrastructure|
 | ab | Andrzej Bialecki |
 | abaker | Anthony Baker | [Geode](https://geode.apache.org) |
@@ -30,7 +30,7 @@ This table shows current members who have manually added themselves to it – it
 | aheritier | [Arnaud Héritier](http://aheritier.net/) | [Maven](http://maven.apache.org/), [Archiva](http://archiva.apache.org/)|
 | akarasulu | [Alex Karasulu](mailto:akarasulu@apache.org) | [directory](http://incubator.apache.org/directory) ; [excalibur](http://excalibur.apache.org/) ; [jakarta](http://jakarta.apache.org/)|
 | akm | Andrew Musselman | [Mahout](http://mahout.apache.org) |
-| alamb | [Andrew Lamb](http://andrew.nerdnetworks.org/) | [Arrow](http://arrow.apache.org/) |
+| alamb | [Andrew Lamb](http://andrew.nerdnetworks.org/) | [Arrow](http://arrow.apache.org/), [DataFusion](http://datafusion.apache.org/), [Parquet](http://parquet.apache.org/)  |
 | aleks | Aleksandar Vidakovic | [Fineract](https://fineract.apache.org) |
 | alfonsonishikawa | [Alfonso Nishikawa Muñumer](http://people.apache.org/~alfonsonishikawa) | [Gora](https://gora.apache.org) |
 | amaniatis | Aristedes Maniatis | [Cayenne](http://cayenne.apache.org/)|
@@ -51,7 +51,7 @@ This table shows current members who have manually added themselves to it – it
 | aslom | Alek Slominski |
 | ate | [Ate Douma](http://home.apache.org/~ate/) | [Airavata](https://airavata.apache.org/), [AsterixDB](https://asterixdb.apache.org/), [Commons](https://commons.apache.org/), [Incubator](https://incubator.apache.org/), [NetBeans](https://netbeans.apache.org/), [Portals](https://portals.apache.org/), [Streams](https://streams.apache.org/), [Wicket](https://wicket.apache.org/) |
 | ay | Akitoshi Yoshida |
-| ayushsaxena | Ayush Saxena | [Hadoop](https://hadoop.apache.org), [Hive](http://hive.apache.org), [Ozone](http://ozone.apache.org/) |
+| ayushsaxena | Ayush Saxena | [Hadoop](https://hadoop.apache.org), [Hive](http://hive.apache.org), [Tez](http://tez.apache.org), [Ozone](http://ozone.apache.org/) |
 | azeez | Mohamed Afkham Azeez |
 | bayard | Henri Yandell |
 | bdelacretaz | [Bertrand Delacrétaz](http://www.codeconsult.ch/) | [Cocoon](http://cocoon.apache.org/) , [FOP](http://xml.apache.org/fop/)|
@@ -64,6 +64,7 @@ This table shows current members who have manually added themselves to it – it
 | bkp | Brian Proffitt |
 | blair | Blair Zajac |
 | blautenb | Berin Lautenbach | [XML](http://xml.apache.org) ; [incubator](http://incubator.apache.org/)|
+| bmarwell | Benjamin Marwell | [Maven](https://maven.apache.org), [Shiro](https://shiro.apache.org/) |
 | bob | Bob Paulin | [Felix](http://felix.apache.org/) , [Tika](http://tika.apache.org/)|
 | bobby | Robert (Bobby) Evans | [Storm](http://storm.apache.org) , [Hadoop](http://hadoop.apache.org) , [Spark](http://spark.apache.org) , [Tez](http://tez.apache.org/) |
 | bodewig | [Stefan Bodewig](http://stefan.samaflost.de/) | [Ant](http://ant.apache.org/) , [Gump](http://gump.apache.org/) , [Jakarta](http://jakarta.apache.org/)|
@@ -451,7 +452,7 @@ This table shows current members who have manually added themselves to it – it
 | trawick | Jeff Trawick | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | tripod | Tobias Bocanegra | [Jackrabbit](http://jackrabbit.apache.org/)|
 | tv | Thomas Vandahl | [Turbine](http://turbine.apache.org/) ; [DB-Torque](http://db.apache.org/torque/) ; [Jakarta](http://jakarta.apache.org/) ; [Excalibur](http://excalibur.apache.org/)|
-| twice | [Mingyang Liu](https://github.com/PragmaTwice) | [Kvrocks](https://kvrocks.apache.org/) |
+| twice | [Mingyang Liu](https://github.com/PragmaTwice) | [Kvrocks](https://kvrocks.apache.org/) ; [Fory](https://fory.apache.org/) |
 | twilliams | [Tim Williams](http://williamstw.blogspot.com) |
 | uli | Ulrich Stärk |
 | umamahesh | [Uma Maheswara Rao G](https://home.apache.org/~umamahesh/umamahesh.html) | [Hadoop](http://hadoop.apache.org); [BookKeeper](http://bookkeeper.apache.org) |
@@ -729,6 +730,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | vhardy | Vincent Hardy |
 | vmassol | Vincent Massol |
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|
+| wenjun | [Wenjun Ruan](https://github.com/ruanwenjun) | [DolphinScheduler](https://dolphinscheduler.apache.org/) |
 | wglass | William Glass-Husain |
 | wohali | [Joan Touzet](mailto:wohali@apache.org) | [CouchDB](http://couchdb.apache.org) |
 | woollard | David Matthew Woollard |

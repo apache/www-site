@@ -69,7 +69,7 @@ See Also: [Trademark Resources Site Map][resources].
 
 -  [Logos and Graphics Usage](#graphics)
 
--  [Must Not Use "Apache" or "ApacheCon" Names](#apachecon)
+-  [Must Not Use "Apache" or "Community Over Code" Names](#coverc)
 
 -  [Other Trademark Policies and Resources](#other)
 
@@ -213,9 +213,9 @@ The only use of the Apache logo on websites allowed is to provide a single
 link to http://www.apache.org/ as a reference to The Apache Software
 Foundation and its projects.
 
-## Must Not Use "Apache" or "ApacheCon" Names  {#apachecon}
+## Must Not Use "Apache" or "Community Over Code" Names  {#coverc}{#apachecon}
 
-Third parties may not use either the "Apache" nor the "ApacheCon"
+Third parties may not use either the "Apache" or "Community Over Code"
 names, nor confusingly similar names, in their service names as a primary
 branding feature. These names
 are reserved exclusively for the ASF, its projects, and its
