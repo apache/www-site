@@ -15,7 +15,7 @@ This table shows current members who have manually added themselves to it – it
 | Id | Name | Projects |
 |----|------|----------|
 | aadamchik | Andrei Adamchik |
-| aajisaka | Akira Ajisaka | [Hadoop](https://hadoop.apache.org), [Yetus](https://yetus.apache.org) |
+| aajisaka | Akira Ajisaka | [Hadoop](https://hadoop.apache.org), [Kyuubi](https://kyuubi.apache.org), [Yetus](https://yetus.apache.org) |
 | aaron | [Aaron Bannert](http://www.clove.org/~aaron/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [PHP](http://www.php.net/) , [commons](http://commons.apache.org/) , [incubator](http://incubator.apache.org/) , [flood](http://httpd.apache.org/test/flood/) , infrastructure|
 | ab | Andrzej Bialecki |
 | abaker | Anthony Baker | [Geode](https://geode.apache.org) |
@@ -730,6 +730,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | vhardy | Vincent Hardy |
 | vmassol | Vincent Massol |
 | vsiveton | Vincent Siveton | [Maven](http://maven.apache.org) ; [Shindig](http://shindig.apache.org)|
+| wenjun | [Wenjun Ruan](https://github.com/ruanwenjun) | [DolphinScheduler](https://dolphinscheduler.apache.org/) |
 | wglass | William Glass-Husain |
 | wohali | [Joan Touzet](mailto:wohali@apache.org) | [CouchDB](http://couchdb.apache.org) |
 | woollard | David Matthew Woollard |

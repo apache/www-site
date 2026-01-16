@@ -1,6 +1,6 @@
 name: Check members.md listings
-# For manual and scheduled runs, warnings will trigger a workflow fail
-# For pull/push, only errors (i.e. not a member at all) cause a failure
+# For manual, scheduled and pull runs, warnings will trigger a workflow fail
+# For push, only errors (i.e. not a member at all) cause a failure
 on:
   push:
     paths:
@@ -24,7 +24,7 @@ jobs:
         run: |
           echo "${{ github.event_name }}"
           case "${{ github.event_name }}" in
-            schedule|workflow_dispatch)
+            schedule|workflow_dispatch|pull_request)
               python3 members_check.py failOnWarn
             ;;
             *)

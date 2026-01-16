@@ -118,11 +118,11 @@ chair should consider each of these questions when writing a report.
     well your community's health: are user questions answered, are 
     contributors acting appropriately, are there new contributors showing up?
 
- - Are there any issues for the Board to act on?
+ - Are there any issues for the Board to act on? **[REQUIRED]**
 
     If there are specific issues that the Board should be aware of,
     or should specifically address, then please call them out.  If not, then 
-    it is helpful to state something like: "There are no Board-level issues at this time."
+    state something like: "There are no Board-level issues at this time."
 
     When in doubt, it's better to include information or questions the PMC has 
     in a report, rather than waiting.  Remember also that you can always ask 

@@ -158,6 +158,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
         </a>
     </div>
     <div class="logo-card">
+        <a target="_blank" rel="sponsored" href="https://www.dkb.de/">
+            <img src="images/DKB_silver.png"/>
+            <div class="logo-caption">DKB</div>
+        </a>
+    </div>
+    <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://www.indeed.com/">
             <img src="images/indeed-silver.png"/>
             <div class="logo-caption">Indeed</div>
