@@ -66,7 +66,7 @@ A few days after the *previous* month's meeting, the agenda for the next (curren
 meeting is assembled and checked into our code repository.  Board agendas 
 and meeting minutes are all kept in formatted text files.  This allows power users 
 to edit via the command line, but also allows for more user-friendly views of the 
-agenda with the [Whimsy Agenda Tool][2] (requires Apache login).
+agenda with the [Board Agenda Tool][2] (requires Apache login).
 
 Reminders are then sent out to all PMCs about the due dates for reports for 
 the next meeting.  An early reminder (and a followup) is helpful given the distributed and all 
@@ -168,7 +168,7 @@ See the PMC Chair's detailed [Board Reporting Guidelines](/foundation/board/repo
 Apache Members and PMC Chairs are welcome to attend.  Please let the board 
 know you will attend by adding yourself in the agenda:
 
-- Navigate to the [Agenda in Whimsy](https://whimsy.apache.org/board/agenda/) (Apache login required)
+- Navigate to the [Board Agenda Tool](https://agenda.apache.org/meetings/current) (Apache login required)
 - Click Roll Call
 - Click the blue Attend button at the bottom
 
@@ -182,15 +182,7 @@ strictly part of the meeting, but useful for questions).
 
 ## Help and Tips About The Board Agenda Website  {#whimsy}
 
-The Whimsy Board Agenda tool at whimsy.apache.org/board/agenda (login required)
-provides many ways to visualize and comment on the board report, and greatly 
-simplifies the process of collating and reviewing the agenda.
-
-Select Navigation - Help, or press ? to get help about the tool.  Submit 
-any [bugs or make enhancement requests to the Whimsy JIRA](https://issues.apache.org/jira/projects/WHIMSY).
-
-You can also run the Board Agenda tool locally. Its architecture 
-overview and code walkthrough are in [www/board/agenda/README.md](https://github.com/apache/whimsy/blob/master/www/board/agenda/README.md)
+The Whimsy Board Agenda tool has been deprecated. Please use the [Board Agenda Tool][2].
 
   [1]: /foundation/board/reporting
-  [2]: https://whimsy.apache.org/board/agenda/
+  [2]: https://agenda.apache.org/meetings/current

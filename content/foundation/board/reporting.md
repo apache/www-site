@@ -290,7 +290,7 @@ any followup messages or actions to your PMC after the meeting.
 
 As Directors review the report in the lead-up to the meeting, they may add comments into
 the agenda alongside your report. We encourage project chairs to follow this [board feedback][8]
-(currently by watching for SVN commits or using the [Whimsy Agenda tool][5]), and to respond in advance of the meeting when
+(currently by watching for SVN commits or using the [Board Agenda tool][5]), and to respond in advance of the meeting when
 practical.
 
 The [board meeting][6] typically follows this pattern:
@@ -332,7 +332,7 @@ As you can see, ensuring we receive your report on time, that it includes all ne
   [2]: http://community.apache.org/
   [3]: /foundation/marks/reporting
   [4]: /foundation/marks/pmcs#checklist
-  [5]: https://whimsy.apache.org/board/agenda/
+  [5]: https://agenda.apache.org/
   [6]: /foundation/board/meeting
   [7]: https://incubator.apache.org/guides/ppmc.html#podling_status_reports
   [8]: /dev/pmc.html#board-feedback
