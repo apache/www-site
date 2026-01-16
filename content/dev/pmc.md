@@ -175,14 +175,14 @@ archived mailing list, so **information from board@ must NOT be forwarded elsewh
 If your PMC wishes to change their VP / Chair, typically you hold 
 a vote or otherwise reach a consensus in the PMC about who the 
 new Chair should be.  Then anyone on the PMC can
-send `board@` an official resolution for the board to approve (or reject) at the next monthly board meeting 
-before this change officially takes place. 
+send `board@` an official resolution for the board to approve (or reject) at the next monthly board meeting.
+PMC VP/Chairs can only be changed by Board resolution.
 
-Use the [Whimsy Board Agenda](https://whimsy.apache.org/board/agenda)
-(requires Apache login) to submit the formal chair change resolution to 
-the next month's board meeting. Log in to the Board Agenda and click the 
-_add item_ button at the bottom to add the appropriate resolution. If your PMC 
-members have difficulty logging into Whimsy, contact the `board@` mailing list for help.
+Use the [Board Agenda Tool](https://agenda.apache.org/meetings/current)
+(_BAT_, requires Apache login) to submit the formal chair change resolution to 
+the next month's board meeting. Log in to _BAT_ for the upcoming month's meeting and click the 
+_Add Item_ button in the _Controls_ panel to add a _Change Chair_ resolution. If your PMC 
+members have difficulty logging into _BAT_, contact the `board@` mailing list for help.
 
 Once the board approves the resolution (typically at the next monthly meeting), the newly appointed project VP and Chair will get instructions for how to accept the new role.
 
@@ -202,9 +202,9 @@ software projects.
 ### How to reply to board feedback on a project's report  {#board-feedback}
 
 The board reads each submitted project report at its monthly meetings, and sometimes 
-individual directors make comments or ask questions, using the Whimsy tool, in 
+individual directors make comments or ask questions, using the [Board Agenda Tool](https://agenda.apache.org/), in 
 the meeting agenda. Shortly after each month's meeting, the Secretary uses 
-Whimsy to automatically send all comments out to each project's `private@` 
+the Board Agenda Tool to automatically send all comments out to each project's `private@` 
 mailing list and to the PMC chair directly.
 
 Some comments are simple feedback or notes on the report; some comments are 
