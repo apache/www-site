@@ -120,4 +120,4 @@ Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank
 
 ## Apache URL Shortener Service  {#shorten}
 
-Infrastructure hosts the [s.apache.org URL shortening service](https://s.apache.org/) for our committers.  When including URLs in PMC reports, please use this service and not other URL shorteners.
+Infrastructure hosts the [s.apache.org URL shortening service](https://s.apache.org/) for our committers.  When including URLs in PMC reports, please use this service and not other URL shorteners, thanks.
