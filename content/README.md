@@ -36,7 +36,7 @@ VP, Conferences at `events-cvs@apache.org`
 
 VP, Travel Assistance at `private@tac.apache.org`
 - [Travel](travel/)
-  (Moved to tac.apache.org) 
+  (Moved to tac.apache.org. Above redirects)
 
 Infrastructure Team at `users@infra.apache.org`
 - [Dev](dev/)
