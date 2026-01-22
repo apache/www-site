@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 ## Overview {#intro}
 
-Here are resources pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
+Here are resources relevant to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
 
 If you can't find information here, ask on your project's mailing list, or contact the [Community Development](http://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
 
