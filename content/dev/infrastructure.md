@@ -23,7 +23,7 @@ The ASF Infrastructure team, known as "Infra", supports services that help the A
 
 Infra is responsible for the management and day-to-day system administration of the hardware that runs these services. Infra also reviews requests to install new systems or software on the ASF machines.
 
-Infra uses many Apache software applications, including:
+Infra uses many Apache software applications, including but not limited to:-
 
 - [HTTP Server (httpd)](http://httpd.apache.org/)
 - [Subversion](http://subversion.apache.org/)
