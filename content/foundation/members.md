@@ -41,6 +41,7 @@ This table shows current members who have manually added themselves to it – it
 | ankit | Ankit Singhal | [HBase](https://hbase.apache.org), [Phoenix](http://phoenix.apache.org/), [Ratis](http://ratis.apache.org/) |
 | anshum | Anshum Gupta | [Lucene](http://lucene.apache.org/), [Solr](http://solr.apache.org/) |
 | antelder | Ant Elder |
+| antoinesd | Antoine Sabot-Durand | [DeltaSpike](https://deltaspike.apache.org/) |
 | antonio | [Antonio Gallardo Rivera](http://home.apache.org/~antonio/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://forrest.apache.org/) , [Lenya](http://lenya.apache.org/)|
 | arkurth | Andy Kurth | [VCL](http://vcl.apache.org/) |
 | arp | Arpit Agarwal |
