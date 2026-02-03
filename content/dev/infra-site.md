@@ -25,7 +25,7 @@ you should only commit changes to areas you are responsible for.
 
 This website uses Markdown files and supports <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Github Flavored Markdown (GFM)</a>.
 
-## To update the documentation
+## Updating the documentation
 
 The project name for the ASF website (`www.apache.org`) on GitHub is `www-site`.
 

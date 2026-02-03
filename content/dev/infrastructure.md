@@ -8,7 +8,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 The ASF does not have offices or buildings. Its only physical existence is the technical infrastructure that enables it to operate, and the staff.
 
-The ASF Infrastructure team, known as "Infra", supports services that help the ASF and its projects to function and flourish, including:
+The ASF Infrastructure team, known as "Infra", supports services that help the ASF and its projects to function and flourish, including but not limited to:
 
 - web serving environment (web sites and wikis)
 

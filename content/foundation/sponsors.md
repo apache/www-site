@@ -226,8 +226,8 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
     </div>
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://gradle.com/">
-            <img src="images/gradle-white-background-400-112.png"/>
-            <div class="logo-caption">Gradle</div>
+            <img src="images/gradle-white-background-400-179.png"/>
+            <div class="logo-caption">Gradle Technologies</div>
         </a>
     </div>
     <div class="logo-card">
