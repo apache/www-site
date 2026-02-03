@@ -34,7 +34,7 @@ VP, Conferences at `events-cvs@apache.org`
 - [Event Branding](foundation/content/marks/events.md)
 - [Anti-Harassment](foundation/policies/anti-harassment.md)
 
-VP, Travel Assistance at `travel-assistance@apache.org`
+VP, Travel Assistance at `private@tac.apache.org`
 - [Travel](travel/)
 
 Infrastructure Team at `users@infra.apache.org`
