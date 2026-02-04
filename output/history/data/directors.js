@@ -53,13 +53,14 @@ window.asf.getDirectorsTimelineData = function () {
         rbowen: 'Rich Bowen',
         rgardler: 'Ross Gardler',
         rubys: 'Sam Ruby',
+        rvs: 'Roman Shaposhnik',
         sameer: 'Sameer Parekh',
         sharan: 'Sharan Foga',
         stefano: 'Stefano Mazzocchi',
         stoddard: 'Bill Stoddard',
         striker: 'Sander Striker',
-        rvs: 'Roman Shaposhnik',
         tdunning: 'Ted Dunning',
+        tison: 'Zili Chen',
         wave: 'Dave Fisher',
         wohali: 'Joan Touzet',
         wrowe: 'William Rowe',
@@ -118,9 +119,11 @@ window.asf.getDirectorsTimelineData = function () {
     y2022 = date(2022, 3, 1);
     y2023 = date(2023, 3, 9);
     y2024 = date(2024, 3, 7);
+    y2025 = date(2025, 3, 6);
+    y2026 = date(2026, 3, 5);
 
     // Just guessing this date for now
-    y2025 = date(2025, 3, 31);
+    y2027 = date(2027, 3, 31);
 
     // Change dates for outgoing/incoming Directors
     // fielding -> striker
@@ -218,18 +221,21 @@ window.asf.getDirectorsTimelineData = function () {
     add('bdelacretaz', y2020, y2024);
     add('sharan', y2021, y2024);
     add('cdutz', y2022, change_2024a);
+    add('clr', y2023, y2025);
+    add('jjirsa', y2024, y2025);
+    add('ningjiang', y2022, y2025);
     // ABOVE: history of begin/end for prior Directors
 
     // Current set of Directors
-    add('kanchana',change_2024a, y2025);
-    add('rbowen', y2022, y2025);
-    add('ningjiang', y2022, y2025);
-    add('striker', y2020, y2025);
-    add('clr', y2023, y2025);
-    add('jmclean', y2023, y2025);
-    add('curcuru', y2023, y2025);
-    add('jjirsa', y2024, y2025);
-    add('jbonofre', y2024, y2025);
+    add('kanchana', change_2024a, y2026);
+    add('rbowen', y2022, y2026);
+    add('striker', y2020, y2026);
+    add('jmclean', y2023, y2026);
+    add('curcuru', y2023, y2026);
+    add('jbonofre', y2024, y2026);
+    add('gstein', y2025, y2026);
+    add('jim', y2025, y2026);
+    add('tison', y2025, y2026);
 
     return data;
 }
