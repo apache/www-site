@@ -405,7 +405,7 @@ PMCs have asked the inactive members if they'd like to resign.
 If a PMC chooses to _remove_ one of its members (**without** that member's request or consent), 
 the PMC must ask the Board to remove the member.  The PMC chair should send an email to the board@ mailing list 
 detailing the request for removal and the justification the PMC has for that removal, and
-copy the project's private@ list.  The board will review the reqest as well as your project's 
+copy the project's private@ list.  The board will review the request as well as your project's 
 mailing lists to see if the removal is controversial or opposed, and then make a decision,
 typically at the next month's board meeting.
 
