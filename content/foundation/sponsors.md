@@ -22,15 +22,15 @@ read our [sponsorship page](/foundation/sponsorship.html).
         </a>
     </div>
     <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="https://www.meta.com/about/">
-            <img src="images/meta-logo.png"/>
-            <div class="logo-caption">Meta</div>
+        <a target="_blank" rel="sponsored" href="https://apache.org/">
+            <img src="images/blank.png"/>
+            <div class="logo-caption">Anonymous</div>
         </a>
     </div>
     <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="https://www.geico.com/tech/">
-            <img src="images/geico-platinum2.png"/>
-            <div class="logo-caption">GEICO</div>
+        <a target="_blank" rel="sponsored" href="https://www.meta.com/about/">
+            <img src="images/meta-logo.png"/>
+            <div class="logo-caption">Meta</div>
         </a>
     </div>
     <div class="logo-card">
@@ -90,12 +90,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
         <a target="_blank" rel="sponsored" href="https://apache.org/">
             <img src="images/blank.png"/>
             <div class="logo-caption">Anonymous</div>
-        </a>
-    </div>
-    <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="http://www.baidu.com/">
-            <img src="images/baidu.png"/>
-            <div class="logo-caption">Baidu</div>
         </a>
     </div>
     <div class="logo-card">
@@ -189,7 +183,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
     <ul id='bronze' class="sponsors-col-list">
         <li><a target="_blank" rel="sponsored" href="https://www.canva.com/">Canva Engineering</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.cargurus.com/">CarGurus</a></li>
-        <li><a target="_blank" rel="sponsored" href="https://curity.io/">Curity</a></li>
+        <li><a target="_blank" rel="sponsored" href="https://www.colgatepalmolive.com">Colgate-Palmolive</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.getgrist.com">Grist Labs</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
