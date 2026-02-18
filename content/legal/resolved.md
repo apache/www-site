@@ -325,8 +325,9 @@ These licenses while amusing to their creators are legally problematic. They oft
 
 **JSON license** <br>
 As of 2016-11-03 the JSON license was moved to the 'Category X' license list. Prior to this, use of 
-the [JSON Java library](https://github.com/stleary/JSON-java) was allowed. See Debian's page for a 
-[list of alternatives](https://wiki.debian.org/qa.debian.org/jsonevil).
+the [JSON Java library](https://github.com/stleary/JSON-java) was allowed. 
+In 2022 (from the 20220924 release), the most popular use of this license, the JSON Java library, 
+switched from the JSON license to being in the Public Domain. These newer versions are thus Category A.
 
 ### They may not be distributed  {#prohibited}
 

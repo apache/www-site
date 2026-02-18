@@ -19,9 +19,10 @@ their work.
 * ICLA: [Individual Contributor License Agreement](icla.pdf)
 * CCLA: [Corporate Contributor License Agreement](cla-corporate.pdf)
 
-All contributors of ideas, code, or documentation to
-any Apache projects must complete, sign, and submit via
-email an [Individual Contributor License Agreement](icla.pdf) (ICLA). 
+While small contributions to Apache projects are made under clause 5 of the Apache-2.0 license,
+all project maintainers of, as well as contributors of any large contributions to, any Apache
+projects must complete, sign, and submit via email an
+[Individual Contributor License Agreement](icla.pdf) (ICLA).
 
 The purpose of this agreement is to clearly define the
 terms under which intellectual property has been contributed to the ASF and
