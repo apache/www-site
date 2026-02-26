@@ -321,37 +321,14 @@ be reassessed.
 
 # What is the provenance of source code from the ASF?  {#provenance}
 
-Source code (including machine-readable documentation, release notes, guides,
-test cases, run books, and scripts) in Apache repositories falls into three
-classifications (solely for the purpose of this discussion):
+Content in Apache Software Foundation (ASF) source code repositories typically falls into four classifications:
 
-#### Code developed at Apache under Apache governance, licensed to Apache by its developers under a Contributor License Agreement, distributed by Apache, and licensed to downstream users under the Apache license
+1. Per [Apache-2.0 Clause 5](https://www.apache.org/licenses/LICENSE-2.0#contributions). General contributions intentionally submitted for inclusion in a work of the ASF are made under the terms and conditions of the Apache-2.0 License.
+2. By [Contributor License Agreement](https://www.apache.org/licenses/contributor-agreements.html#clas). Contributions from project committers, or frequent contributors, are made under the Individual Contributor License Agreement (ICLA). Some committer's employers may choose to additionally sign a Corporate Contributor License Agreement (CCLA).
+3. By Software Grant of License. When larger contributions are being made, for example when an existing project joins the Apache Incubator, a [software grant of license](https://www.apache.org/licenses/contributor-agreements.html#grants) may be used to clarify provenance in the contribution.
+4. By Direct License. Some content's license conditions are considered by the ASF to fall within the scope of the Apache-2.0 license ("[Category A Licenses](https://www.apache.org/legal/resolved.html#category-a)"). This content is incorporated into ASF projects and licensed to downstream users under its original license. The content retains its original license identification and any required notices included in the ASF release. If changes are made to the code as a part of an ASF contribution, the foundation's Apache-2.0 licensing header is included in each changed file.
 
-This represents most code at Apache. The code contains a standard Apache license 
-header which refers to the standard Apache license in the distribution.
-
-#### Code developed elsewhere, licensed to Apache under a Software Grant Agreement, incorporated into Apache projects, distributed by Apache, and licensed to downstream users under the Apache license
-
-This is code that is brought into Apache for future development as part 
-of an Apache project. The headers on all files are changed to the standard Apache 
-header. Most incubator projects start with a repository of externally-developed code and the 
-Intellectual Property Clearance process is done as part of incubation. 
-
-Code that is originally developed elsewhere and is brought into Apache for 
-future development as part of an existing project must have the Intellectual Property 
-Clearance process done explicitly by the PMC of the receiving project, under the 
-auspices of the Incubator PMC, which must approve the process. 
-
-#### Code developed elsewhere, received under a Category A license, incorporated into Apache projects, distributed by Apache, and licensed to downstream users under its original license
-
-This code retains its external identity and is incorporated into an Apache project 
-for convenience, to avoid referencing an external repository whose contents are not 
-under control of the project. The code retains its original license, and distribution as 
-part of the Apache project explicitly calls out the license. The code retains its original 
-headerm, which refers to its own license in the distribution. If changes are made to the 
-code while at Apache, the standard Apache header is prepended to each changed 
-file. Additionally, any legally-required notices related to the code are published in the 
-distribution.
+Note that "Convenience Binary" distributions from the ASF may also include files under other "[Category B](https://www.apache.org/legal/resolved.html#category-b)" licenses.
 
 # Another place to Look  {#resources}
 
