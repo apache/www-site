@@ -162,7 +162,7 @@ Rights.** The officer or agent having charge of the membership records of
 the corporation shall prepare and make, at least ten (10) days before each
 meeting of members, a complete list of the members entitled to vote at such
 meeting, arranged in alphabetical order, and showing the name, address,
-telephone number, facsimile number and electronic mail address of each
+and electronic mail address of each
 member. For a period of ten (10) days prior to such meeting, the list shall
 be open to the examination of any member, for any purpose germane to the
 meeting, during ordinary business hours, either at a place within the city
@@ -406,7 +406,7 @@ Special meetings of the Board of Directors shall be held at such times as
 called by the Board Chair, the President of the corporation, or
 any two (2) directors. Written notice of the time and place of special
 meetings of the Board of Directors shall be given to each director by
-either personal delivery, telegram, cablegram, or telefax at least two (2)
+email at least two (2)
 days before the meeting, or by notice mailed to each director at least five
 (5) days before the meeting.
 
@@ -523,7 +523,7 @@ affix, or attest the affixing of, the corporate seal to any lawfully
 executed instrument requiring it. The Secretary shall have general charge
 of the membership records of the corporation and shall keep, at the
 registered or principal office of the corporation, a record of the members
-showing the name, address, telephone number, facsimile number and
+showing the name, address, and
 electronic mail address of each member. The Secretary shall sign such
 instruments as may require their signature and, in general, shall
 perform all duties as may be assigned to them from time to time by
