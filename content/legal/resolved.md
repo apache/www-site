@@ -286,6 +286,8 @@ You may NOT include the following licenses within Apache products:
     - Non-compete licenses:
         - [Functional Source License](https://fsl.software)
 - Places restrictions on larger works:
+    - [Apple Public Source License 2.0 (APSL-2.0)](https://spdx.org/licenses/APSL-2.0.html) (section 2.2(c))
+        - However, inclusion of the dnsinfo.h file under APSL-2.0 is acceptable for software/use-cases intended to run on Apple hardware. 
     - [GNU GPL 1, 2, 3](http://www.opensource.org/licenses/gpl-license.php)
         - Special exceptions to the GNU GPL (e.g. GNU Classpath) unless otherwise permitted elsewhere on this page. 
     - [GNU Affero GPL 3](http://www.opensource.org/licenses/agpl-v3.html)
