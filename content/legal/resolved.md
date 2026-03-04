@@ -166,7 +166,9 @@ standard), you may include appropriately labeled source code. An example of this
 inclusion is mandated by the JSR 127: JavaServer Faces specification.
 
 ### GPL-2.0 with GNU ClasspathException {#gpl-cpe}
-Depending on the situation, the GPL-2.0 WITH ClasspathException-2.0 may, or may not, affect the licensing of the Apache product. PMCs must review each ClasspathException-2.0 dependency of their products to ensure it does not affect the licensing of their product, and to comply with the licensing of that dependency. To include in a binary distribution, PMCs are recommended to apply two tests - (1) confirm the dependency is fully under the ClasspathException-2.0 and that it does not contain GPL-2.0 **without** the ClasspathException-2.0; and (2) confirm that the dependency is a separate module from the other works in the product (typically a separate jar file).
+Depending on the situation, the GPL-2.0 WITH ClasspathException-2.0 may, or may not, affect the licensing of the Apache product. PMCs must review each ClasspathException-2.0 dependency of their products to ensure it does not affect the licensing of their product, and to comply with the licensing of that dependency. To include in a binary distribution, PMCs are recommended to apply two tests:
+1. Confirm the dependency is fully under the ClasspathException-2.0 and that it does not contain GPL-2.0 **without** the ClasspathException-2.0; AND
+2. Confirm that the dependency is a separate module from the other works in the product (typically a separate jar file).
 
 Note that most GPL-2.0 WITH ClasspathException-2.0 dependencies are dual-licensed with either CDDL-1.1 or EPL-2.0 and PMCs will likely prefer to depend on those dependencies under the alternate license.
 
