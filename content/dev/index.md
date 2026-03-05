@@ -40,10 +40,9 @@ If you cannot find the resource or guidance you need, <a href="https://infra.apa
 
 -  [How the ASF works](../foundation/how-it-works.html) (See also [Contact Apache FAQ](../foundation/preFAQ.html) and [ASF FAQ](../foundation/faq.html) )
 -  [Guide for project contributors](contributors.html)
-    -  [Email etiquette tips for contributors](contrib-email-tips.html) 
--  [Guide for project committers](new-committers-guide.html) 
-    -  How committers can [publish a personal website](new-committers-guide.html#personal-web-space) 
-    -  General [Committers FAQ](committers.html) 
+    -  [Email etiquette tips for contributors](contrib-email-tips.html)
+-  [Guide for new project committers](https://infra.apache.org/new-committers-guide.html)
+    -  General [Committers FAQ](https://infra.apache.org/committers.html)
     -  Crowd funding [Community funding disclaimer](http://community.apache.org/committers/funding-disclaimer.html)
 
 ## Project Management Committees (PMCs)  {#pmc}
