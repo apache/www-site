@@ -43,7 +43,7 @@ Since candidates are people who are involved in Apache projects, you can search 
 
 Many members have commented that they look for both a strong nomination statement from an existing member, describing why the nominee would make a good member. Having a number of seconds in the nomination file from other members is also often valuable.
 
-## Boad of Directors voting  {#boardvoting}
+## Board of Directors voting  {#boardvoting}
 
 ### How we tally votes for Board members
 
