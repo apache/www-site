@@ -413,7 +413,7 @@ This table shows current members who have manually added themselves to it – it
 | sokolov | Mike Sokolov |
 | solomax | Maxim Solodovnik | [OpenMeetings](http://openmeetings.apache.org/), [Flex](http://flex.apache.org/)|
 | sorber | Phil Sorber | [Traffic Server](http://trafficserver.apache.org) |
-| sriksun | Srikanth Sundarrajan | [falcon](http://falcon.apache.org), [lens] (http://lens.apache.org)
+| sriksun | Srikanth Sundarrajan | [falcon](http://falcon.apache.org), [lens](http://lens.apache.org)
 | srowen | Sean Owen | [Spark](http://spark.apache.org/), [Mahout](http://mahout.apache.org/) |
 | sseifert | Stefan Seifert | [Sling](http://sling.apache.org/), [Felix](http://felix.apache.org/) |
 | sseth | Siddharth Seth | [Hadoop](http://hadoop.apache.org) ; [Tez](http://tez.apache.org/) ; [Hive](http://hive.apache.org/)|
