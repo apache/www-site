@@ -24,6 +24,7 @@ window.asf.getDirectorsTimelineData = function () {
         dkulp: 'Daniel Kulp',
         dougm: 'Doug Maceachern',
         druggeri: 'Daniel Ruggeri',
+        elecharny: 'Emmanuel Lécharny',
         farra: 'J Aaron Farr',
         fielding: 'Roy T. Fielding',
         geirm: 'Geir Magnusson, Jr.',
@@ -55,6 +56,7 @@ window.asf.getDirectorsTimelineData = function () {
         rubys: 'Sam Ruby',
         rvs: 'Roman Shaposhnik',
         sameer: 'Sameer Parekh',
+        schultz: 'Christopher Schultz',
         sharan: 'Sharan Foga',
         stefano: 'Stefano Mazzocchi',
         stoddard: 'Bill Stoddard',
@@ -224,18 +226,21 @@ window.asf.getDirectorsTimelineData = function () {
     add('clr', y2023, y2025);
     add('jjirsa', y2024, y2025);
     add('ningjiang', y2022, y2025);
+    add('jim', y2025, y2026);
+    add('kanchana', change_2024a, y2026);
+    add('rbowen', y2022, y2026);
     // ABOVE: history of begin/end for prior Directors
 
     // Current set of Directors
-    add('kanchana', change_2024a, y2026);
-    add('rbowen', y2022, y2026);
-    add('striker', y2020, y2026);
-    add('jmclean', y2023, y2026);
-    add('curcuru', y2023, y2026);
-    add('jbonofre', y2024, y2026);
-    add('gstein', y2025, y2026);
-    add('jim', y2025, y2026);
-    add('tison', y2025, y2026);
+    add('striker', y2020, y2027);
+    add('jmclean', y2023, y2027);
+    add('curcuru', y2023, y2027);
+    add('jbonofre', y2024, y2027);
+    add('gstein', y2025, y2027);
+    add('tison', y2025, y2027);
+    add('cdutz', y2026, y2027);
+    add('elecharny', y2026, y2027);
+    add('schultz', y2026, y2027);
 
     return data;
 }
