@@ -761,10 +761,11 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 ## Adding Your Name
 Please note: this page is **only** for [Foundation members](/foundation/governance/members.html).
 
-If you are an ASF member and have a GitHub account that is linked to your ASF account,
-you can [edit this page](https://github.com/apache/www-site/edit/main/content/foundation/members.md) directly in the browser. You may `Commit directly to the main branch`, or, if you feel more comfortable with it, select `Create a new branch for this commit and start a pull request` and have someone else merge these changes for you.
+You can [edit this page](https://github.com/apache/www-site/edit/main/content/foundation/members.md) directly in the browser,
+select `Create a new branch for this commit and start a pull request`, have someone else approve it, then can be merged into the main branch.
 
+You can also checkout the repository, edit the file locally and submit a pull request with your changes.
 
-Or it can be updated in the [ASF GitBox repo](https://gitbox.apache.org/repos/asf/www-site.git). This does not require a GitHub account.
-However ASF GitBox does not have a browser interface. To use it, you will need to clone the Git repo, edit the file, commit the change,
-and push the change using your ASF credentials.
+In both cases you need a GitHub account that is linked to your ASF account, and you need to be an ASF member.
+
+If you do not want to use GitHub, you can also create a patch or push to your `preview/your-asf-id` branch and ask in `members@a.o` to merge your patch/branch.
