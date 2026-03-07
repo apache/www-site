@@ -427,6 +427,7 @@ This table shows current members who have manually added themselves to it – it
 | struberg | Mark Struberg |
 | suehle | Ruth Suehle |
 | sunilg | Sunil Govindan | [Hadoop](https://hadoop.apache.org), [Submarine](https://submarine.apache.org), [YuniKorn](https://yunikorn.apache.org), [Sedona](https://sedona.apache.org) |
+| sunlan | [Daniel Sun](https://sunlan.me) | [Groovy](http://groovy.apache.org) |
 | supun | Supun Kamburugamuva |
 | svogel | Sven Vogel | [CloudStack](http://cloudstack.apache.org) |
 | sylvain | [Sylvain Wallez](http://home.apache.org/~sylvain) | [Cocoon](http://cocoon.apache.org/) ; [Avalon](http://avalon.apache.org/)|
