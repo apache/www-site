@@ -399,7 +399,6 @@ This table shows current members who have manually added themselves to it – it
 | shankar | Selvaratnam Uthaiyashankar | [Axis](http://axis.apache.org/) ; [Stonehenge](http://incubator.apache.org/projects/stonehenge.html) ; [Web Services](http://ws.apache.org/)|
 | sharan | Sharan Foga | [OFBiz](http://ofbiz.apache.org) |
 | shazron | Shazron Abdullah | [Cordova](http://cordova.apache.org) |
-| wusheng | Sheng Wu | [SkyWalking](https://skywalking.apache.org/) |
 | shv | [Konstantin V. Shvachko](http://home.apache.org/~shv) | [Hadoop](http://hadoop.apache.org) |
 | sidney | [Sidney Markowitz](http://sidney.com/) | [SpamAssassin](https://spamassassin.apache.org/) |
 | simoneg | Simone Gianni |
@@ -427,6 +426,7 @@ This table shows current members who have manually added themselves to it – it
 | struberg | Mark Struberg |
 | suehle | Ruth Suehle |
 | sunilg | Sunil Govindan | [Hadoop](https://hadoop.apache.org), [Submarine](https://submarine.apache.org), [YuniKorn](https://yunikorn.apache.org), [Sedona](https://sedona.apache.org) |
+| sunlan | [Daniel Sun](https://sunlan.me) | [Groovy](http://groovy.apache.org) |
 | supun | Supun Kamburugamuva |
 | svogel | Sven Vogel | [CloudStack](http://cloudstack.apache.org) |
 | sylvain | [Sylvain Wallez](http://home.apache.org/~sylvain) | [Cocoon](http://cocoon.apache.org/) ; [Avalon](http://avalon.apache.org/)|
@@ -472,6 +472,7 @@ This table shows current members who have manually added themselves to it – it
 | wrowe | William A. Rowe, Jr. | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
 | wsanchez | [Wilfredo Sánchez](http://www.mit.edu/people/wsanchez/) |  [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | wsmoak | [Wendy Smoak](http://www.wendysmoak.com) |  [Struts](https//struts.apache.org/) ; [MyFaces](http://myfaces.apache.org/) ; [Shale](http://shale.apache.org/)|
+| wusheng | Sheng Wu | [SkyWalking](https://skywalking.apache.org/) |
 | wwei | [Weiwei Yang](https://yangwwei.github.io) | [Hadoop](https://hadoop.apache.org), [Ozone](https://ozone.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | xinwang | [Xin Wang](https://people.apache.org/~xinwang/) | [Storm](https://storm.apache.org/) , [RocketMQ](https://rocketmq.apache.org/) , [IoTDB](https://iotdb.apache.org/) , [StreamPipes](https://streampipes.apache.org/) , [Incubator](https://incubator.apache.org/) |
 | xuanwo | [Xuanwo](https://bento.me/xuanwo) | [OpenDAL](https://opendal.apache.org/) |
