@@ -767,3 +767,5 @@ select `Create a new branch for this commit and start a pull request`, have some
 You can also checkout the repository, edit the file locally and submit a pull request with your changes.
 
 In both cases you need a GitHub account that is linked to your ASF account, and you need to be an ASF member.
+
+If you do not want to use GitHub, you can also create a patch or push to your `preview/your-asf-id` branch and ask in `members@a.o` to merge your patch/branch.
