@@ -404,6 +404,7 @@ This table shows current members who have manually added themselves to it – it
 | sidney | [Sidney Markowitz](http://sidney.com/) | [SpamAssassin](https://spamassassin.apache.org/) |
 | simoneg | Simone Gianni |
 | simonw | Simon Willnauer |
+| sjaranowski | [Sławomir Jaranowski](https://github.com/slawekjaranowski) | [Maven](https://maven.apache.org/) |
 | sk | Sally Khudairi |
 | slaws | Simon Laws |
 | smarru | [Suresh Marru](http://home.apache.org/~smarru/) | [Airavata](http://incubator.apache.org/airavata/) ; [Rave](http://rave.apache.org/) ; [Incubator](http://incubator.apache.org/)|
