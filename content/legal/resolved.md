@@ -155,6 +155,7 @@ within an Apache product if you label the inclusion appropriately (see above):
 - [IPA Font License Agreement v1.0](https://fedoraproject.org/wiki/Licensing/IPAFontLicense)
 - [Ruby License](https://www.ruby-lang.org/en/about/license.txt) (including the older version when GPLv2 was a listed alternative [Ruby 1.9.2 license](https://svn.ruby-lang.org/cgi-bin/viewvc.cgi/tags/v1_9_2_320/COPYING?view=markup))
 - Eclipse Public License 2.0: [EPL 2.0](https://www.eclipse.org/legal/epl-2.0/)
+- GPL-2.0 with GNU ClasspathException: [GPL-2.0-only WITH ClasspathException-2.0](https://spdx.org/licenses/Classpath-exception-2.0.html) (See [section](#gpl-cpe) below)
 
 By including only the object/binary form, there is less exposed
 surface area of the third-party work from which someone might derive a work. This addresses the second guiding principle of this policy.
@@ -163,6 +164,13 @@ For small amounts of source code that the ASF product directly consumes at runti
 unmodified and unlikely to be changed anyway (say, by virtue of being specified by a
 standard), you may include appropriately labeled source code. An example of this is the web-facesconfig_1_0.dtd, whose
 inclusion is mandated by the JSR 127: JavaServer Faces specification.
+
+### GPL-2.0 with GNU ClasspathException {#gpl-cpe}
+Depending on the situation, the GPL-2.0 WITH ClasspathException-2.0 may, or may not, affect the licensing of the Apache product. PMCs must review each ClasspathException-2.0 dependency of their products to ensure it does not affect the licensing of their product, and to comply with the licensing of that dependency. To include in a binary distribution, PMCs are recommended to apply two tests:
+1. Confirm the dependency is fully under the ClasspathException-2.0 and that it does not contain GPL-2.0 **without** the ClasspathException-2.0; AND
+2. Confirm that the dependency is a separate module from the other works in the product (typically a separate jar file).
+
+Note that most GPL-2.0 WITH ClasspathException-2.0 dependencies are dual-licensed with either CDDL-1.1 or EPL-2.0 and PMCs will likely prefer to depend on those dependencies under the alternate license.
 
 ### Including Creative Commons Attribution content  {#cc-by}
 Works under the [Creative Commons Attribution (CC-BY)](http://creativecommons.org/licenses/by/4.0/) licenses (2.5, 3.0, and 4.0)
@@ -286,8 +294,10 @@ You may NOT include the following licenses within Apache products:
     - Non-compete licenses:
         - [Functional Source License](https://fsl.software)
 - Places restrictions on larger works:
+    - [Apple Public Source License 2.0 (APSL-2.0)](https://spdx.org/licenses/APSL-2.0.html) (section 2.2(c))
+        - However, inclusion of the dnsinfo.h file under APSL-2.0 is acceptable for software/use-cases intended to run on Apple hardware. 
     - [GNU GPL 1, 2, 3](http://www.opensource.org/licenses/gpl-license.php)
-        - Special exceptions to the GNU GPL (e.g. GNU Classpath) unless otherwise permitted elsewhere on this page. 
+        - This includes the various exceptions available to GPL licenses, unless otherwise permitted elsewhere on this page (such as the GNU Classpath Exception).
     - [GNU Affero GPL 3](http://www.opensource.org/licenses/agpl-v3.html)
     - [GNU LGPL 2, 2.1, 3](http://www.opensource.org/licenses/lgpl-license.php)
     - [QPL](https://opensource.org/licenses/QPL-1.0)
