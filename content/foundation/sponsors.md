@@ -128,12 +128,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
             <div class="logo-caption">Union Investment</div>
         </a>
     </div>
-    <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="https://www.workday.com/">
-            <img src="images/workday-gold.png"/>
-            <div class="logo-caption">Workday</div>
-        </a>
-    </div>
 </div>
 
 
