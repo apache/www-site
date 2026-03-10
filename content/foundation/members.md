@@ -486,6 +486,7 @@ This table shows current members who have manually added themselves to it – it
 | zabetak | [Stamatis Zampetakis](https://people.apache.org/~zabetak/) | [Calcite](https://calcite.apache.org/), [Hive](https://hive.apache.org/)|
 | zregvart | [Zoran Regvart](https://github.com/zregvart/) | [Camel](https://camel.apache.org) |
 | zwoop | [Leif Hedstrom](http://www.ogre.com) | [trafficserver](http://trafficserver.apache.org/), [trafficcontrol](http://trafficcontrol.apache.org/), [incubator](http://incubator.apache.org/) |
+| SbloodyS | [ZiHao Xiang](https://github.com/SbloodyS) | [DolphinScheduler](https://dolphinscheduler.apache.org), [StreamPark](https://streampark.apache.org) |
 
 
 ## Emeritus Members
