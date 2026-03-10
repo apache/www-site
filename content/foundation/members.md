@@ -390,6 +390,7 @@ This table shows current members who have manually added themselves to it – it
 | sarowe | Steve Rowe | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) ; [Solr](http://lucene.apache.org/solr/)|
 | sascha | [Sascha Schumann](http://www.schumann.cx/) | [PHP](http://www.php.net/) ; [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | sai_boorlagadda | Sai Boorlagadda | [Geode](https://geode.apache.org/) |
+| sbloodys | [ZiHao Xiang](https://github.com/SbloodyS) | [DolphinScheduler](https://dolphinscheduler.apache.org), [StreamPark](https://streampark.apache.org) |
 | schor | Marshall Schor | [UIMA](http://uima.apache.org/) |
 | schultz | Christopher Schultz | [Tomcat](http://tomcat.apache.org/), [Velocity](http://velocity.apache.org/)|
 | sctemme | [Sander Temme](http://www.temme.net/sander/) | [httpd](http://httpd.apache.org/) ; [Gump](http://gump.apache.org/) ; [Labs](http://labs.apache.org/) ; Infrastructure|
@@ -486,7 +487,6 @@ This table shows current members who have manually added themselves to it – it
 | zabetak | [Stamatis Zampetakis](https://people.apache.org/~zabetak/) | [Calcite](https://calcite.apache.org/), [Hive](https://hive.apache.org/)|
 | zregvart | [Zoran Regvart](https://github.com/zregvart/) | [Camel](https://camel.apache.org) |
 | zwoop | [Leif Hedstrom](http://www.ogre.com) | [trafficserver](http://trafficserver.apache.org/), [trafficcontrol](http://trafficcontrol.apache.org/), [incubator](http://incubator.apache.org/) |
-| SbloodyS | [ZiHao Xiang](https://github.com/SbloodyS) | [DolphinScheduler](https://dolphinscheduler.apache.org), [StreamPark](https://streampark.apache.org) |
 
 
 ## Emeritus Members
