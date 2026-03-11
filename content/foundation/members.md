@@ -23,6 +23,7 @@ This table shows current members who have manually added themselves to it – it
 | abti | Abhishek Tiwari | [Gobblin](https://gobblin.apache.org) |
 | adc | Alan D. Cabrera |
 | adelbene | [Andrea Del Bene](https://twitter.com/andreaDelBene19) | [Wicket](http://wicket.apache.org/) |
+| abernal | Arturo Bernal Gimeno | [HttpComponents](https://hc.apache.org/), [JSPWiki](https://jspwiki.apache.org/)|
 | adityasharma | Aditya Sharma | [OFBiz](https://ofbiz.apache.org), [Roller](https://roller.apache.org), [ComDev](https://community.apache.org) |
 | adrianocrestani | Adriano Crestani Campos |
 | aestrada | Adam Estrada | [SIS](http://sis.apache.org) |
