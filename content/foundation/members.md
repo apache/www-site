@@ -20,6 +20,7 @@ This table shows current members who have manually added themselves to it – it
 | ab | Andrzej Bialecki |
 | abaker | Anthony Baker | [Geode](https://geode.apache.org) |
 | abayer | Andrew Bayer | [Whirr](http://whirr.apache.org), [Bigtop](http://bigtop.apache.org), [jclouds](http://jclouds.incubator.apache.org)|
+| abernal | Arturo Bernal Gimeno | [HttpComponents](https://hc.apache.org/), [JSPWiki](https://jspwiki.apache.org/)|
 | abti | Abhishek Tiwari | [Gobblin](https://gobblin.apache.org) |
 | adc | Alan D. Cabrera |
 | adelbene | [Andrea Del Bene](https://twitter.com/andreaDelBene19) | [Wicket](http://wicket.apache.org/) |
