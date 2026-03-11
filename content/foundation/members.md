@@ -294,6 +294,7 @@ This table shows current members who have manually added themselves to it – it
 | mck | Mick Semb Wever | [Cassandra](http://cassandra.apache.org), [SkyWalking](http://skywalking.apache.org), [Incubator](http://incubator.apache.org), [Tiles](http://tiles.apache.org) |
 | mdedetrich | [Matthew de Detrich](https://github.com/mdedetrich) | [Pekko](https://pekko.apache.org) |
 | mduerig | Michael Dürig | [Jackrabbit](http://jackrabbit.apache.org/), [Chemistry](http://chemistry.apache.org/), [Sling](http://sling.apache.org/)|
+| meonkeys | [Adam Monsen](https://adammonsen.com) | [Fineract](https://fineract.apache.org) |
 | mfranklin | [Matt Franklin](http://twitter.com/mattfranklin) | [Rave](http://rave.apache.org), [Incubator](http://incubator.apache.org) |
 | mgrigorov | [Martin Tzvetanov Grigorov](https://twitter.com/mtgrigorov) | [Avro](http://avro.apache.org/), [Isis](http://isis.apache.org/), [Tomcat](http://tomcat.apache.org/), [Wicket](http://wicket.apache.org/) |
 | michi | [Michael Wechner](http://www.wyona.com/people/michael-wechner/index.html) | [Lenya](http://lenya.apache.org/) ; [Cocoon](http://cocoon.apache.org/)|
