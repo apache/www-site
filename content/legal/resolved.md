@@ -270,6 +270,13 @@ Also note that the Ruby license is listed on the 'Category B' Weak Copyleft list
 
 From Java 9 onwards, Javadoc can include JavaScript under MIT, MIT OR GPL-3.0, or GPL-2.0 WITH ClasspathException-2.0. Apache binary releases (including Maven javadoc jars) and Apache websites may include this for their javadoc. It must not be included in source releases.
 
+### Can we aggregate jars under the Category A licenses and the weak-copyleft Category B licenses into a single aggregated jar file? {#aggregated-jars}
+
+Yes.
+
+#### For these aggregated jar files, can we modify ancillary files that are under weak-copyleft Category B licenses? {#aggregated-jars-modification}
+
+Yes. PMCs must review that the modifications are not changing the purpose of the original jar files (i.e. ancillary purposes). We consider both improvements to MANIFEST.MF files and changing of package names to be suitable ancillary modifications.
 
 ## Category X: What can we NOT include in an ASF Project?  {#category-x}
 
