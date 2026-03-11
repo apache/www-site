@@ -358,6 +358,7 @@ This table shows current members who have manually added themselves to it – it
 | rahul | Rahul Akolkar |
 | randgalt | Jordan Zimmerman | [Curator](http://curator.apache.org) |
 | raphael | Raphaël Luta |
+| raulcd | [Raúl Cumplido](https://github.com/raulcd) | [Arrow](http://arrow.apache.org/) |
 | rbowen | [Rich Bowen](http://www.rcbowen.com/) | [httpd](http://httpd.apache.org/) , [httpd-docs](http://httpd.apache.org/docs-project/) , [ApacheCon](http://www.apachecon.com/)|
 | rec | Richard Eckart de Castilho | [UIMA](http://uima.apache.org/) |
 | reinhard | Reinhard Poetz |
