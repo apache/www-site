@@ -124,9 +124,18 @@ or see other common law trademarks by letter:
         <li class="list-group-item">In Australia, class 9, reg # 1592292</li>
         <li class="list-group-item">In Brazil, class 9, reg # 840758464</li>
         <li class="list-group-item">In Brazil, class 42, reg # 840758472</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 48208861</li>
+        <li class="list-group-item">In European Union (Community), class 9, reg # 1511174</li>
+        <li class="list-group-item">In India, class 9, reg # 1511174</li>
+        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1511174</li>
         <li class="list-group-item">In Japan, class 9, reg # 5687188</li>
+        <li class="list-group-item">In Japan, class 42, reg # 5687188</li>
         <li class="list-group-item">In Norway, class 9, reg # 284311</li>
         <li class="list-group-item">In Switzerland, class 9, reg # 654504</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5906264&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5906264</a>
+        </li>
       </ul>
     </div>
     <div class="panel panel-primary" id="accumulo">
