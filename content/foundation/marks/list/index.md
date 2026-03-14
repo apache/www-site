@@ -137,6 +137,13 @@ or see other common law trademarks by letter:
           <a href="https://tsdr.uspto.gov/#caseNumber=5906264&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5906264</a>
         </li>
       </ul>
+      <ul class="list-group">
+        <li class="list-group-item active">Leaf Logo ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"></a>
+        </li>
+      </ul>
     </div>
     <div class="panel panel-primary" id="accumulo">
       <div class="panel-heading">
@@ -207,7 +214,7 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="https://beam.apache.org">Apache Beam</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache Beam® software:
+              The ASF owns the following registered trademarks for our Apache Beam® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">APACHE BEAM ®</li>
@@ -251,7 +258,7 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="http://brooklyn.apache.org">Apache Brooklyn</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache Brooklyn® software:
+              The ASF owns the following registered trademarks for our Apache Brooklyn® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">BROOKLYN ®</li>
@@ -305,7 +312,7 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="http://couchdb.apache.org/">Apache CouchDB</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache CouchDB® software:
+              The ASF owns the following registered for trademarks for our Apache CouchDB® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">COUCHDB ®</li>
@@ -451,7 +458,7 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="http://freemarker.apache.org">Apache Freemarker</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered trademarks for our Apache Freemarker® software:
+              The ASF owns the following registered or applied for trademarks for our Apache Freemarker® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">FREEMARKER ®</li>
@@ -460,6 +467,36 @@ or see other common law trademarks by letter:
         <li class="list-group-item">
           In the United States of America, class 9, reg #
           <a href="https://tsdr.uspto.gov/#caseNumber=7693628&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">7693628</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="groovy">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://groovy.apache.org">Apache Groovy</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered or applied for trademarks for our Apache Groovy® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">GROOVY ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="guacamole">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://guacamole.apache.org">Apache Guacamole</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache Guacamole® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">GUACAMOLE ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=7593174&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">7593174</a>
         </li>
       </ul>
     </div>
@@ -477,8 +514,11 @@ or see other common law trademarks by letter:
         <li class="list-group-item">In India, class 9, reg # 1201258</li>
         <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1201258</li>
         <li class="list-group-item">In Japan, class 9, reg # 1201258</li>
+        <li class="list-group-item">In the United Kingdom, class 9, reg # 801201258</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4131061&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4131061</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4131061&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4131061</a>
+        </li>
         </li>
       </ul>
     </div>
@@ -492,7 +532,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">HAWQ ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4510934&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4510934</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4510934&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4510934</a>
         </li>
       </ul>
     </div>
@@ -506,7 +547,23 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">HBASE ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4912401&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4912401</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4912401&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4912401</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="iceberg">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://iceberg.apache.org">Apache Iceberg</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered or applied for trademarks for our Apache Iceberg® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">ICEBERG ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"></a>
         </li>
       </ul>
     </div>
@@ -515,7 +572,7 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="http://ignite.apache.org">Apache Ignite</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache Ignite® software:
+              The ASF owns the following registered for trademarks for our Apache Ignite® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">APACHE IGNITE ®</li>
@@ -533,23 +590,26 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="https://impala.apache.org">Apache Impala</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache Impala® software:
+              The ASF owns the following registered trademarks for our Apache Impala® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">IMPALA ®</li>
         <li class="list-group-item">In Australia, class 9, reg # 1253144</li>
+        <li class="list-group-item">In Brazil, class 9, reg # 908532741</li>
         <li class="list-group-item">In Brazil, class 41, reg # 908532482</li>
         <li class="list-group-item">In Brazil, class 42, reg # 908532571</li>
-        <li class="list-group-item">In Brazil, class 9, reg # 908532741</li>
-        <li class="list-group-item">In European Union (Community), class 9, reg # 11455011</li>
         <li class="list-group-item">In European Union (Community), class 9, reg # 1253144</li>
-        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1244139</li>
+        <li class="list-group-item">In European Union (Community), class 41, reg # 11455011</li>
+        <li class="list-group-item">In European Union (Community), class 42, reg # 11455011</li>
         <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1253144</li>
         <li class="list-group-item">In Mexico, class 9, reg # 1253144</li>
-        <li class="list-group-item">In Mexico, class 42, reg # 1253144</li>
         <li class="list-group-item">In Singapore, class 9, reg # 1244139</li>
+        <li class="list-group-item">In the United Kingdom, class 9, reg # UK00801253144</li>
+        <li class="list-group-item">In the United Kingdom, class 41, reg # UK00911455011</li>
+        <li class="list-group-item">In the United Kingdom, class 42, reg # UK00801253144</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4560852&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4560852</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4560852&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4560852</a>
         </li>
       </ul>
     </div>
@@ -563,7 +623,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">KAFKA ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=5213501&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 5213501</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5213501&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5213501</a>
         </li>
       </ul>
     </div>
@@ -577,7 +638,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">LOG4J ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=97618351&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 97618351</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=7217401&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">7217401</a>
         </li>
       </ul>
     </div>
@@ -591,7 +653,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">LUCENE ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4620563&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4620563</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4620563&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4620563</a>
         </li>
       </ul>
     </div>
@@ -608,7 +671,8 @@ or see other common law trademarks by letter:
         <li class="list-group-item">In China (People's Republic), class 9, reg # 15588409</li>
         <li class="list-group-item">In European Union (Community), class 9, reg # 13408398</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4652591&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4652591</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4652591&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4652591</a>
         </li>
       </ul>
     </div>
@@ -622,7 +686,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">MANIFOLDCF ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4912436&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4912436</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4912436&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4912436</a>
         </li>
       </ul>
     </div>
@@ -631,10 +696,14 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="http://mesos.apache.org">Apache Mesos</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache Mesos® software:
+              The ASF owns the following registered trademarks for our Apache Mesos® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">MESOS ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5394423&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5394423</a>
+        </li>
       </ul>
     </div>
     <div class="panel panel-primary" id="netbeans">
@@ -672,7 +741,7 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="http://openoffice.apache.org">Apache OpenOffice</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache OpenOffice® software:
+              The ASF owns the following registered trademarks for our Apache OpenOffice® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">OPENOFFICE ®</li>
@@ -738,7 +807,7 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="http://predictionio.apache.org/">Apache PredictionIO</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache PredictionIO® software:
+              The ASF owns the following registered trademarks for our Apache PredictionIO® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">PREDICTIONIO ®</li>
@@ -827,7 +896,7 @@ or see other common law trademarks by letter:
         <h3 class="panel-title"><a href="http://tomcat.apache.org/">Apache Tomcat</a>® software</h3>
       </div>
       <div class="panel-body">
-              The ASF owns the following registered or applied for trademarks for our Apache Tomcat® software:
+              The ASF owns the following registered trademarks for our Apache Tomcat® software:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">TOMCAT ®</li>
