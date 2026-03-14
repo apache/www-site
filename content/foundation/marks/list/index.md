@@ -148,7 +148,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">ACCUMULO ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4980919&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4980919</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4980919&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4980919</a>
         </li>
       </ul>
     </div>
@@ -162,7 +163,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">ACTIVEMQ ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4606671&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4606671</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4606671&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4606671</a>
         </li>
       </ul>
     </div>
@@ -174,9 +176,29 @@ or see other common law trademarks by letter:
               The ASF owns the following registered trademarks for our Apache Airflow® software:
       </div>
       <ul class="list-group">
-        <li class="list-group-item active">Airflow ®</li>
+        <li class="list-group-item active">AIRFLOW ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#amp%3BcaseSearchType=US_APPLICATION&amp%3BcaseType=DEFAULT&amp%3BsearchType=statusSearch&caseNumber=7,442,956&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">In the United States of America, class 9, reg # 7,442,956</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=7442956&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">7442956</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="apisix">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://apisix.apache.org/">Apache APISIX</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache APISIX® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">APISIX ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 37990660</li>
+        <li class="list-group-item">In China (People's Republic), class 35, reg # 37982742</li>
+        <li class="list-group-item">In China (People's Republic), class 38, reg # 37998208</li>
+        <li class="list-group-item">In China (People's Republic), class 42, reg # 37977696</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=6408035&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">6408035</a>
         </li>
       </ul>
     </div>
@@ -188,7 +210,25 @@ or see other common law trademarks by letter:
               The ASF owns the following registered or applied for trademarks for our Apache Beam® software:
       </div>
       <ul class="list-group">
-        <li class="list-group-item active">BEAM ®</li>
+        <li class="list-group-item active">APACHE BEAM ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=6930943&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">6930943</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="bifromq">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://bifromq.apache.org/">Apache BifroMQ</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache BifroMQ® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">BifroMQ ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 71623640</li>
+        <li class="list-group-item">In China (People's Republic), class 38, reg # 71623636</li>
+        <li class="list-group-item">In China (People's Republic), class 42, reg # 71632015</li>
       </ul>
     </div>
     <div class="panel panel-primary" id="bigtop">
@@ -201,7 +241,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">BIGTOP ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=5271184&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 5271184</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5271184&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5271184</a>
         </li>
       </ul>
     </div>
@@ -214,6 +255,14 @@ or see other common law trademarks by letter:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">BROOKLYN ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=6364592&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">6364592</a>
+        </li>
+        <li class="list-group-item">
+          In the United States of America, class 38, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=6364592&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">6364592</a>
+        </li>
       </ul>
     </div>
     <div class="panel panel-primary" id="cassandra">
@@ -226,7 +275,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">CASSANDRA ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=5158968&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 5158968</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5158968&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5158968</a>
         </li>
       </ul>
     </div>
@@ -239,13 +289,14 @@ or see other common law trademarks by letter:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">CLOUDSTACK ®</li>
-        <li class="list-group-item">In Canada, class 9,42, reg # TMA942169</li>
-        <li class="list-group-item">In Spain, class 9,42, reg # M3523773</li>
+        <li class="list-group-item">In Canada, class 9, reg # TMA942169</li>
+        <li class="list-group-item">In Canada, class 42, reg # TMA942169</li>
+        <li class="list-group-item">In Spain, class 9, reg # M3523773</li>
+        <li class="list-group-item">In the United Kingdom, class 9, reg # 3324437</li>
+        <li class="list-group-item">In the United Kingdom, class 42, reg # 3324437</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4404875&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4404875</a>
-        </li>
-        <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4404874&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 42, reg # 4404874</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=6063030&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">6063030</a>
         </li>
       </ul>
     </div>
@@ -258,6 +309,10 @@ or see other common law trademarks by letter:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">COUCHDB ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5383880&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5383880</a>
+        </li>
       </ul>
     </div>
     <div class="panel panel-primary" id="ctakes">
@@ -274,6 +329,83 @@ or see other common law trademarks by letter:
         </li>
       </ul>
     </div>
+    <div class="panel panel-primary" id="dolphinscheduler">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="https://dolphinscheduler.apache.org/">Apache DolphinScheduler</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache DolphinScheduler® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">DOLPHINSCHEDULER ®</li>
+        <li class="list-group-item">In China (People's Republic), class 35, reg # 56248271</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=6929138&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">6929138</a>
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item active">APACHE DolphinScheduler ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 67823960</li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="doris">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="https://doris.apache.org/">Apache Doris</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache Doris® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">DORIS ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 35587484</li>
+        <li class="list-group-item">In China (People's Republic), class 42, reg # 35594069</li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item active">DORIS & Design ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 35591931</li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item active">DORIS CLOUD ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 53571075</li>
+        <li class="list-group-item">In China (People's Republic), class 42, reg # 53576845</li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item active">DORISSTACK ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 53555929</li>
+        <li class="list-group-item">In China (People's Republic), class 42, reg # 53564053</li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="druid">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://druid.apache.org">Apache Druid</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache Druid® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">DRUID ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=6027315&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">6027315</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="fineract">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://flex.apache.org">Apache Fineract</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache Fineract® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">FINERACT ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=7213215&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">7213215</a>
+        </li>
+      </ul>
+    </div>
     <div class="panel panel-primary" id="flex">
       <div class="panel-heading">
         <h3 class="panel-title"><a href="http://flex.apache.org">Apache Flex</a>® software</h3>
@@ -283,10 +415,12 @@ or see other common law trademarks by letter:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">FLEX ®</li>
-        <li class="list-group-item">In Canada, class NA, reg # TMA720357</li>
+        <li class="list-group-item">In Canada, class 9, reg # TMA720357</li>
         <li class="list-group-item">In European Union (Community), class 9, reg # 3795011</li>
+        <li class="list-group-item">In the United Kingdom, class 9, reg # UK00903795011</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=3370163&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 3370163</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=3370163&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">3370163</a>
         </li>
       </ul>
     </div>
@@ -299,8 +433,33 @@ or see other common law trademarks by letter:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">FLINK ®</li>
+        <li class="list-group-item">In European Union (Community), class 9, reg # 1513915</li>
+        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1513915</li>
+        <li class="list-group-item">In the United Kingdom, class 9, reg # UK00801513915</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=5020107&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 5020107</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5020107&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5020107</a>
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item active">APACHE FLINK ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 49493685</li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="freemarker">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://freemarker.apache.org">Apache Freemarker</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache Freemarker® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">FREEMARKER ®</li>
+        <li class="list-group-item">In European Union (Community), class 9, reg # 1817320</li>
+        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1817320</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=7693628&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">7693628</a>
         </li>
       </ul>
     </div>
@@ -359,7 +518,14 @@ or see other common law trademarks by letter:
               The ASF owns the following registered or applied for trademarks for our Apache Ignite® software:
       </div>
       <ul class="list-group">
-        <li class="list-group-item active">IGNITE ®</li>
+        <li class="list-group-item active">APACHE IGNITE ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 37946110</li>
+        <li class="list-group-item">In European Union (Community), class 9, reg # 1443633</li>
+        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1443633</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5906296&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5906296</a>
+        </li>
       </ul>
     </div>
     <div class="panel panel-primary" id="impala">
