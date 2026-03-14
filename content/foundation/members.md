@@ -376,6 +376,7 @@ This table shows current members who have manually added themselves to it – it
 | rickhall | Richard Hall |
 | rjung | Rainer Jung | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [Tomcat](http://tomcat.apache.org/)|
 | rlenferink | Roy Lenferink | [Celix](https://celix.apache.org), [ComDev](https://community.apache.org) |
+| rmannibucau | Romain Manni-Bucau | [aries](https://aries.apache.org), [bval](https://bval.apache.org), [commons](https://commons.apache.org), [deltaspike](https://deltaspike.apache.org), [geronimo](https://geronimo.apache.org), [incubator](https://incubator.apache.org), [johnzon](https://johnzon.apache.org), [maven](https://maven.apache.org), [member](https://member.apache.org), [openjpa](https://openjpa.apache.org), [openwebbeans](https://openwebbeans.apache.org), [tomee](https://tomee.apache.org) |
 | rnewson | Robert Newson | [CouchDB](http://couchdb.apache.org) |
 | rohini | Rohini Palaniswamy | [Pig](http://pig.apache.org), [Tez](http://tez.apache.org), [Oozie](http://oozie.apache.org) |
 | rohit | Rohit Yadav | [CloudStack](https://cloudstack.apache.org)|
