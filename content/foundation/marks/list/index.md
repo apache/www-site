@@ -332,7 +332,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">cTAKES ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4912372&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4912372</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4912372&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4912372</a>
         </li>
       </ul>
     </div>
@@ -369,7 +370,7 @@ or see other common law trademarks by letter:
         <li class="list-group-item">In China (People's Republic), class 42, reg # 35594069</li>
       </ul>
       <ul class="list-group">
-        <li class="list-group-item active">DORIS & Design ®</li>
+        <li class="list-group-item active">DORIS &amp; Design ®</li>
         <li class="list-group-item">In China (People's Republic), class 9, reg # 35591931</li>
       </ul>
       <ul class="list-group">
@@ -722,6 +723,21 @@ or see other common law trademarks by letter:
         <li class="list-group-item">In European Union (Community), class 42, reg # 007134331</li>
       </ul>
     </div>
+    <div class="panel panel-primary" id="nuttx">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://nuttx.apache.org">Apache NuttX</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache NuttX® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">NuttX ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5458855&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5458855</a>
+        </li>
+      </ul>
+    </div>
     <div class="panel panel-primary" id="ofbiz">
       <div class="panel-heading">
         <h3 class="panel-title"><a href="http://ofbiz.apache.org">Apache OFBiz</a>® software</h3>
@@ -732,7 +748,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">OFBIZ ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4962749&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4962749</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4962749&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4962749</a>
         </li>
       </ul>
     </div>
@@ -745,46 +762,108 @@ or see other common law trademarks by letter:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">OPENOFFICE ®</li>
-        <li class="list-group-item">In Canada, class NA, reg # TMA901778</li>
         <li class="list-group-item">In Switzerland, class 9, reg # 571194</li>
-        <li class="list-group-item">In United Arab Emirates, class 9, reg # 97837</li>
-      </ul>
-      <ul class="list-group">
-        <li class="list-group-item active">OPENOFFICE.ORG ®</li>
-        <li class="list-group-item">In Argentina, class 9, reg # 2243576</li>
-        <li class="list-group-item">In Chile, class 9, reg # 906747</li>
-        <li class="list-group-item">In China (People's Republic), class 9, reg # 6186994</li>
-        <li class="list-group-item">In European Union (Community), class 9, reg # 6552905</li>
-        <li class="list-group-item">In Hong Kong, class 9, reg # 301023894</li>
-        <li class="list-group-item">In India, class 9, reg # 1583480</li>
-        <li class="list-group-item">In Israel, class 9, reg # 206881</li>
-        <li class="list-group-item">In Korea, Republic of, class 9, reg # 40-0794532-0000</li>
-        <li class="list-group-item">In Norway, class 9, reg # 250967</li>
-        <li class="list-group-item">In Pakistan, class 9, reg # 245099</li>
-        <li class="list-group-item">In Peru, class 9, reg # 188750</li>
-        <li class="list-group-item">In Russian Federation, class 9, reg # 409052</li>
-        <li class="list-group-item">In Singapore, class 9, reg # T0724115F</li>
-        <li class="list-group-item">In South Africa, class 9, reg # 2008/00026</li>
-        <li class="list-group-item">In Taiwan, class 9, reg # 1355621</li>
-        <li class="list-group-item">In United Kingdom, class 9, reg # 2462175</li>
+        <li class="list-group-item">In Switzerland, class 41, reg # 571194</li>
+        <li class="list-group-item">In Switzerland, class 42, reg # 571194</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=3063339&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 3063339</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5648290&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5648290</a>
         </li>
       </ul>
       <ul class="list-group">
+        <li class="list-group-item active">OPENOFFICE.ORG ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 6186994</li>
+        <li class="list-group-item">In European Union (Community), class 9, reg # 6552905</li>
+        <li class="list-group-item">In European Union (Community), class 41, reg # 6552905</li>
+        <li class="list-group-item">In European Union (Community), class 42, reg # 6552905</li>
+        <li class="list-group-item">In India, class 9, reg # 1583480</li>
+        <li class="list-group-item">In Israel, class 9, reg # 206881</li>
+        <li class="list-group-item">In Russian Federation, class 9, reg # 409052</li>
+        <li class="list-group-item">In the United Kingdom, class 9, reg # UK00906552905</li>
+        <li class="list-group-item">In the United Kingdom, class 41, reg # UK00906552905</li>
+        <li class="list-group-item">In the United Kingdom, class 42, reg # UK00906552905</li>
+      </ul>
+      <ul class="list-group">
         <li class="list-group-item active">OPENOFFICE.ORG &amp; Design ®</li>
-        <li class="list-group-item">In Bosnia and Herzegovina, class 9, reg # BAZ0914232</li>
         <li class="list-group-item">In China (People's Republic), class 9, reg # 7694914</li>
-        <li class="list-group-item">In Colombia, class 9, reg # 399436</li>
-        <li class="list-group-item">In Croatia, class 9, reg # Z20091430</li>
         <li class="list-group-item">In European Union (Community), class 9, reg # 8475824</li>
         <li class="list-group-item">In India, class 9, reg # 1861749</li>
-        <li class="list-group-item">In Korea, Republic of, class 9, reg # 40-0860495-0000</li>
-        <li class="list-group-item">In Norway, class 9, reg # 253820</li>
         <li class="list-group-item">In Russian Federation, class 9, reg # 448154</li>
-        <li class="list-group-item">In Serbia, class 9, reg # 62994</li>
+        <li class="list-group-item">In the United Kingdom, class 9, reg # UK00908475824</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=3287409&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 3287409</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=3287409&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">3287409</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="openwhisk">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="https://openwhisk.apache.org">Apache OpenWhisk</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache OpenWhisk® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">OPENWHISK ®</li>
+        <li class="list-group-item">In Australia, class 9, reg # 1337205</li>
+        <li class="list-group-item">In Australia, class 38, reg # 1337205</li>
+        <li class="list-group-item">In Australia, class 42, reg # 1337205</li>
+        <li class="list-group-item">In Canada, class 9, reg # TMA1056029</li>
+        <li class="list-group-item">In Canada, class 38, reg # TMA1056029</li>
+        <li class="list-group-item">In Canada, class 42, reg # TMA1056029</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 1337205</li>
+        <li class="list-group-item">In China (People's Republic), class 38, reg # 1337205</li>
+        <li class="list-group-item">In China (People's Republic), class 42, reg # 1337205</li>
+        <li class="list-group-item">In European Union (Community), class 9, reg # 1337205</li>
+        <li class="list-group-item">In European Union (Community), class 38, reg # 1337205</li>
+        <li class="list-group-item">In European Union (Community), class 42, reg # 1337205</li>
+        <li class="list-group-item">In France, class 9, reg # (16)4282873</li>
+        <li class="list-group-item">In France, class 38, reg # (16)4282873</li>
+        <li class="list-group-item">In France, class 42, reg # (16)4282873</li>
+        <li class="list-group-item">In India, class 9, reg # 1337205</li>
+        <li class="list-group-item">In India, class 38, reg # 1337205</li>
+        <li class="list-group-item">In India, class 42, reg # 1337205</li>
+        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1337205</li>
+        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 38, reg # 1337205</li>
+        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 42, reg # 1337205</li>
+        <li class="list-group-item">In Japan, class 9, reg # 1337205</li>
+        <li class="list-group-item">In Japan, class 38, reg # 1337205</li>
+        <li class="list-group-item">In Japan, class 42, reg # 1337205</li>
+        <li class="list-group-item">In Mexico, class 9, reg # 1337205</li>
+        <li class="list-group-item">In Mexico, class 38, reg # 1337205</li>
+        <li class="list-group-item">In Mexico, class 42, reg # 1337205</li>
+        <li class="list-group-item">In Russian Federation, class 9, reg # 1337205</li>
+        <li class="list-group-item">In Russian Federation, class 38, reg # 1337205</li>
+        <li class="list-group-item">In Russian Federation, class 42, reg # 1337205</li>
+        <li class="list-group-item">In Switzerland, class 9, reg # 1337205</li>
+        <li class="list-group-item">In Switzerland, class 38, reg # 1337205</li>
+        <li class="list-group-item">In Switzerland, class 42, reg # 1337205</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5557598&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5557598</a>
+        </li>
+        <li class="list-group-item">
+          In the United States of America, class 38, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5557598&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5557598</a>
+        </li>
+        <li class="list-group-item">
+          In the United States of America, class 42, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5557598&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5557598</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel panel-primary" id="opendal">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="https://opendal.apache.org">Apache OpenDAL</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered or applied for trademarks for our Apache OpenDAL® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">OpenDAL ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"></a>
         </li>
       </ul>
     </div>
@@ -797,8 +876,12 @@ or see other common law trademarks by letter:
       </div>
       <ul class="list-group">
         <li class="list-group-item active">PDFBOX ®</li>
+        <li class="list-group-item">In European Union (Community), class 9, reg # 18727230</li>
+        <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1676785</li>
+        <li class="list-group-item">In the United Kingdom, class 9, reg # 1676785</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4976072&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4976072</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4976072&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4976072</a>
         </li>
       </ul>
     </div>
@@ -832,6 +915,23 @@ or see other common law trademarks by letter:
         <li class="list-group-item">In Vietnam, class 9, reg # 1223346</li>
       </ul>
     </div>
+    <div class="panel panel-primary" id="servicecomb">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://servicecomb.apache.org">Apache ServiceComb</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache ServiceComb® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">ServiceComb ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 24258911</li>
+        <li class="list-group-item">In China (People's Republic), class 42, reg # 24259828</li>
+        <li class="list-group-item">
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5587330&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5587330</a>
+        </li>
+      </ul>
+    </div>
     <div class="panel panel-primary" id="servicemix">
       <div class="panel-heading">
         <h3 class="panel-title"><a href="http://servicemix.apache.org">Apache ServiceMix</a>® software</h3>
@@ -842,7 +942,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">SERVICEMIX ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4606672&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4606672</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4606672&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4606672</a>
         </li>
       </ul>
     </div>
@@ -856,24 +957,12 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">SUBVERSION ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=3267851&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 3267851</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=3267851&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">3267851</a>
         </li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=3271966&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 42, reg # 3271966</a>
-        </li>
-      </ul>
-    </div>
-    <div class="panel panel-primary" id="tajo">
-      <div class="panel-heading">
-        <h3 class="panel-title"><a href="http://tajo.apache.org">Apache Tajo</a>® software</h3>
-      </div>
-      <div class="panel-body">
-              The ASF owns the following registered trademarks for our Apache Tajo® software:
-      </div>
-      <ul class="list-group">
-        <li class="list-group-item active">TAJO ®</li>
-        <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=5035855&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 5035855</a>
+          In the United States of America, class 42, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=3271966&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">3271966</a>
         </li>
       </ul>
     </div>
@@ -887,7 +976,8 @@ or see other common law trademarks by letter:
       <ul class="list-group">
         <li class="list-group-item active">TEZ ®</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=5320233&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 5320233</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5320233&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5320233</a>
         </li>
       </ul>
     </div>
@@ -904,7 +994,8 @@ or see other common law trademarks by letter:
         <li class="list-group-item">In India, class 9, reg # 1294977</li>
         <li class="list-group-item">In Int'l Registration - Madrid Protocol Only, class 9, reg # 1294977</li>
         <li class="list-group-item">
-          <a href="https://tsdr.uspto.gov/#caseNumber=4912402&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">In the United States of America, class 9, reg # 4912402</a>
+          In the United States of America, class 9, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=4912402&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">4912402</a>
         </li>
       </ul>
     </div>
