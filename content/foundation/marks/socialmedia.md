@@ -73,7 +73,7 @@ If you're unclear on whether a post or item is OK, ask first on the appropriate 
 
 It's helpful to familiarize yourself with Apache's [Media and Analyst Relations pages](/press/) and [PMC brand management pages](/foundation/marks/pmcs.html).
 
-Some of the ASF's official Twitter accounts are [@TheASF](//twitter.com/theasf), [@ApacheCon](//twitter.com/apachecon), and [@ASFBrands](//twitter.com/asfbrands),
+Some of the ASF's official X accounts are [@TheASF](https://x.com/theasf), [@ApacheCon](https://x.com/apachecon), and [@ASFBrands](https://x.com/asfbrands),
 and many projects run their own official Twitter accounts.
 
 ----
