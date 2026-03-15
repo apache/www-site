@@ -19,8 +19,10 @@
 #
 #
 
-# Check contents of members.md to ensure entries are valid ids and in the correct section
-# Intended to be run by a GitHub Action, but can also be run from a local checkout
+"""
+Check contents of members.md to ensure entries are valid ids and in the correct section
+Intended to be run by a GitHub Action, but can also be run from a local checkout
+"""
 
 import sys
 import requests
@@ -29,26 +31,43 @@ MEMBER_INFO = 'https://whimsy.apache.org/public/member-info.json'
 MEMBERS_MD ='content/foundation/members.md'
 
 def main(failOnWarn=False):
-    member_info = requests.get(MEMBER_INFO).json()
+    """
+    Parse members.md reporting any findings.
+    ERRORS:
+    - avalid not found in members listing
+    - unexpected format
+    WARNINGS:
+    - not correctly sorted
+    - entry in wrong section
+    
+    Exit with non-zero status if:
+    - any error is detected
+    - any warning is detected and failOnWarn is True
+    """
+
+    member_info = requests.get(MEMBER_INFO, timeout=60).json()
     members = member_info['members']
     ex_members = member_info['ex_members']
     errors = 0
     warnings = 0
+    previd = ''
     with open(MEMBERS_MD, 'r', encoding='utf-8') as md:
         section = None
         for line in md:
             if line.startswith('| Id | Name | Projects |'):
+                previd = ''
                 section = 'members'
                 print("Checking members section")
                 continue
-            elif line.startswith('| Id | Name |'):
+            if line.startswith('| Id | Name |'):
+                previd = ''
                 section = 'emeritus'
                 print("Checking emeritus section")
                 continue
-            elif len(line.strip()) == 0:
+            if len(line.strip()) == 0:
                 section = None
                 continue
-            elif line.startswith('|---'):
+            if line.startswith('|---'):
                 continue
             if section is None:
                 continue
@@ -57,8 +76,19 @@ def main(failOnWarn=False):
                 print(line.strip())
                 errors += 1
             parts = line.strip().split('|')
-            parts.pop(0)
+            parts.pop(0) # drop empty prefix
+            if len(parts) < 3 or len(parts) > 4:
+                status = f"Incorrect number of parts (expected 3 or 4) in {section}: count: {len(parts)} {line}"
+                warnings += 1
+                level = 'WARNING'
+                print(f"{level}: {status}")                
             availid = parts.pop(0).strip()
+            if availid < previd:
+                status = f"Incorrect sort order in {section}: previous: {previd} current: {availid}"
+                warnings += 1
+                level = 'WARNING'
+                print(f"{level}: {status}")
+            previd = availid
             name = parts.pop(0).strip()
             if section == 'members':
                 if not availid in members:
