@@ -76,7 +76,12 @@ def main(failOnWarn=False):
                 print(line.strip())
                 errors += 1
             parts = line.strip().split('|')
-            parts.pop(0)
+            parts.pop(0) # drop empty prefix
+            if len(parts) < 3 or len(parts) > 4:
+                status = f"Incorrect number of parts (expected 3 or 4) in {section}: count: {len(parts)} {line}"
+                warnings += 1
+                level = 'WARNING'
+                print(f"{level}: {status}")                
             availid = parts.pop(0).strip()
             if availid < previd:
                 status = f"Incorrect sort order in {section}: previous: {previd} current: {availid}"
