@@ -35,6 +35,7 @@ def main(failOnWarn=False):
     Parse members.md reporting any findings.
     ERRORS:
     - avalid not found in members listing
+    - unexpected format
     WARNINGS:
     - not correctly sorted
     - entry in wrong section
