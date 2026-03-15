@@ -513,7 +513,8 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | andrei | [Andrei Zmievski](mailto:andrei@php.net) | [PHP](http://www.php.net/)|
 | andyc | Andy Clark |
 | antoine | Antoine Levy-Lambert |
-| arje | [Arjé Cahn](http://www.bloomreach.com) | [Cocoon](http://cocoon.| arved | Arved Henn Sandstrom |
+| arje | [Arjé Cahn](http://www.bloomreach.com) | [Cocoon](http://cocoon.apache.org/ |
+| arved | Arved Henn Sandstrom |
 | asanso | Antonio Sanso |
 | asavory | [Andrew Savory](http://www.andrewsavory.com/blog/) |
 | ask | [Ask Bjørn Hansen](http://www.askbjoernhansen.com/) |
