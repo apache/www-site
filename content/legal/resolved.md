@@ -172,6 +172,14 @@ Depending on the situation, the GPL-2.0 WITH ClasspathException-2.0 may, or may 
 
 Note that most GPL-2.0 WITH ClasspathException-2.0 dependencies are dual-licensed with either CDDL-1.1 or EPL-2.0 and PMCs will likely prefer to depend on those dependencies under the alternate license.
 
+### GCC Runtime Library exception {#gcc-exception}
+
+ASF produced binaries may incorporate the GCC Runtime Library per the language of the relevant GCC release's GCC Runtime 
+Library exception ([2.0](https://spdx.org/licenses/GCC-exception-2.0.html) or [3.1](https://spdx.org/licenses/GCC-exception-3.1.html)). 
+PMCs must review that ASF product modules are being combined with the GCC Runtime Library module. If the modules are not being combined, 
+then the PMC should seek further guidance. Common methods of combination are building the ASF code and GCC Runtime Library into a 
+machine executable, or combining the two into a single shared library.
+
 ### Including Creative Commons Attribution content  {#cc-by}
 Works under the [Creative Commons Attribution (CC-BY)](http://creativecommons.org/licenses/by/4.0/) licenses (2.5, 3.0, and 4.0)
 contain terms related to "Effective Technological Measures", which may come as a surprise to users. Thus you should label them appropriately and only include them in binary form. 
@@ -270,6 +278,13 @@ Also note that the Ruby license is listed on the 'Category B' Weak Copyleft list
 
 From Java 9 onwards, Javadoc can include JavaScript under MIT, MIT OR GPL-3.0, or GPL-2.0 WITH ClasspathException-2.0. Apache binary releases (including Maven javadoc jars) and Apache websites may include this for their javadoc. It must not be included in source releases.
 
+### Can we aggregate jars under the Category A licenses and the weak-copyleft Category B licenses into a single aggregated jar file? {#aggregated-jars}
+
+Yes.
+
+#### For these aggregated jar files, can we modify ancillary files that are under weak-copyleft Category B licenses? {#aggregated-jars-modification}
+
+Yes. PMCs must review that the modifications are not changing the purpose of the original jar files (i.e. ancillary purposes). We consider both improvements to MANIFEST.MF files and changing of package names to be suitable ancillary modifications.
 
 ## Category X: What can we NOT include in an ASF Project?  {#category-x}
 
