@@ -33,6 +33,12 @@ MEMBERS_MD ='content/foundation/members.md'
 def main(failOnWarn=False):
     """
     Parse members.md reporting any findings.
+    ERRORS:
+    - avalid not found in members listing
+    WARNINGS:
+    - not correctly sorted
+    - entry in wrong section
+    
     Exit with non-zero status if:
     - any error is detected
     - any warning is detected and failOnWarn is True
