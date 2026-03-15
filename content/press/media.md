@@ -53,8 +53,8 @@ Official ASF press releases can be found on the
 [ASF News](/foundation/news.html)
 page.  Additional news updates are posted on the
 <!-- blog.apache.org -->
-[TheASF Twitter feed](http://twitter.com/TheASF), 
-the [ApacheCon Twitter feed](http://twitter.com/apachecon), as well as the
+[TheASF X feed](https://x.com/TheASF), 
+the [ApacheCon X feed](https://x.com/apachecon), as well as the
 [Apache Announce Lists](/foundation/mailinglists.html#foundation-announce).
 
 Please [contact us](mailto:press@apache.org?subject=[Press%20request]%20Please%20send%20news%20information)

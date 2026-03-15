@@ -23,7 +23,7 @@ This table shows current members who have manually added themselves to it – it
 | abernal | Arturo Bernal Gimeno | [HttpComponents](https://hc.apache.org/), [JSPWiki](https://jspwiki.apache.org/)|
 | abti | Abhishek Tiwari | [Gobblin](https://gobblin.apache.org) |
 | adc | Alan D. Cabrera |
-| adelbene | [Andrea Del Bene](https://twitter.com/andreaDelBene19) | [Wicket](http://wicket.apache.org/) |
+| adelbene | [Andrea Del Bene](https://x.com/andreaDelBene19) | [Wicket](http://wicket.apache.org/) |
 | adityasharma | Aditya Sharma | [OFBiz](https://ofbiz.apache.org), [Roller](https://roller.apache.org), [ComDev](https://community.apache.org) |
 | adrianocrestani | Adriano Crestani Campos |
 | aestrada | Adam Estrada | [SIS](http://sis.apache.org) |
@@ -59,7 +59,7 @@ This table shows current members who have manually added themselves to it – it
 | bdelacretaz | [Bertrand Delacrétaz](http://www.codeconsult.ch/) | [Cocoon](http://cocoon.apache.org/) , [FOP](http://xml.apache.org/fop/)|
 | bdemers | [Brian Demers](https://blog.bdemers.io/) | [Directory](https://directory.apache.org/), [Maven](https://maven.apache.org/), [Shiro](https://shiro.apache.org/) |
 | ben | Ben Laurie | [httpd](http://httpd.apache.org/) ; [ApacheCon](http://www.apachecon.com/)|
-| bigosmallm | [OmPrakash Muppirala](https://twitter.com/bigosmallm) | [Flex](http://flex.apache.org/), [Royale](http://royale.apache.org/) |
+| bigosmallm | [OmPrakash Muppirala](https://x.com/bigosmallm) | [Flex](http://flex.apache.org/), [Royale](http://royale.apache.org/) |
 | billcole | William K. (Bill) Cole | [SpamAssassin](http://spamassassin.apache.org/)|
 | billie | Billie Rinaldi | [Accumulo](http://accumulo.apache.org)|
 | bjh | [Brian Havard](http://silk.apana.org.au) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/)|
@@ -243,8 +243,8 @@ This table shows current members who have manually added themselves to it – it
 | jrthomerson | [Jeremy Thomerson](http://jeremythomerson.com) |
 | jsdelfino | [Jean-Sebastien Delfino](http://jsdelfino.blogspot.com/) | [Tuscany](http://tuscany.apache.org/) , [Nuvem](http://incubator.apache.org/nuvem/)|
 | julianfoad | Julian Foad |
-| julien | [Julien Le Dem](https://twitter.com/J_) | [Parquet](http://parquet.apache.org) , [Arrow](http://arrow.apache.org), [Pig](http://pig.apache.org), [Tez](http://tez.apache.org) |
-| juzhiyuan | [Zhiyuan Ju](https://twitter.com/jjzhiyuan) | [APISIX](https://apisix.apache.org) |
+| julien | [Julien Le Dem](https://x.com/J_) | [Parquet](http://parquet.apache.org) , [Arrow](http://arrow.apache.org), [Pig](http://pig.apache.org), [Tez](http://tez.apache.org) |
+| juzhiyuan | [Zhiyuan Ju](https://x.com/jjzhiyuan) | [APISIX](https://apisix.apache.org) |
 | jvanzyl | [Jason van Zyl](http://www.sonatype.com/people/author/jason) |
 | jxue | Junkai Xue | [Helix](https://helix.apache.org/) |
 | jzemerick | Jeff Zemerick |
@@ -296,8 +296,8 @@ This table shows current members who have manually added themselves to it – it
 | mdedetrich | [Matthew de Detrich](https://github.com/mdedetrich) | [Pekko](https://pekko.apache.org) |
 | mduerig | Michael Dürig | [Jackrabbit](http://jackrabbit.apache.org/), [Chemistry](http://chemistry.apache.org/), [Sling](http://sling.apache.org/)|
 | meonkeys | [Adam Monsen](https://adammonsen.com) | [Fineract](https://fineract.apache.org) |
-| mfranklin | [Matt Franklin](http://twitter.com/mattfranklin) | [Rave](http://rave.apache.org), [Incubator](http://incubator.apache.org) |
-| mgrigorov | [Martin Tzvetanov Grigorov](https://twitter.com/mtgrigorov) | [Avro](http://avro.apache.org/), [Isis](http://isis.apache.org/), [Tomcat](http://tomcat.apache.org/), [Wicket](http://wicket.apache.org/) |
+| mfranklin | [Matt Franklin](http://x.com/mattfranklin) | [Rave](http://rave.apache.org), [Incubator](http://incubator.apache.org) |
+| mgrigorov | [Martin Tzvetanov Grigorov](https://x.com/mtgrigorov) | [Avro](http://avro.apache.org/), [Isis](http://isis.apache.org/), [Tomcat](http://tomcat.apache.org/), [Wicket](http://wicket.apache.org/) |
 | michi | [Michael Wechner](http://www.wyona.com/people/michael-wechner/index.html) | [Lenya](http://lenya.apache.org/) ; [Cocoon](http://cocoon.apache.org/)|
 | mikemccand | Michael McCandless |
 | milamber | [Bruno Demion](http://home.apache.org/~milamber/) | [JMeter](http://jmeter.apache.org/) , [CloudStack](http://cloudstack.apache.org/) |
@@ -368,7 +368,7 @@ This table shows current members who have manually added themselves to it – it
 | reschke | Julian Reschke |
 | reta | Andriy Redko | [CXF](https://cxf.apache.org/)|
 | rfrovarp | Richard Frovarp |
-| rgielen | [René Gielen](https://twitter.com/rgielen) | [Struts](https://struts.apache.org)|
+| rgielen | [René Gielen](https://x.com/rgielen) | [Struts](https://struts.apache.org)|
 | rgoers | Ralph Goers | [Cocoon](http://cocoon.apache.org/) , [Commons](http://commons.apache.org/) , [Logging](http://logging.apache.org/) , [Maven](http://maven.apache.org/) , [Portals](http://portals.apache.org/)|
 | rhillegas | Rick Hillegas | [Derby](http://db.apache.org/derby/)|
 | rhuijben | Bert Huijben | [Subversion](http://subversion.apache.org/)|

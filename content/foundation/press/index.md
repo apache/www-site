@@ -29,7 +29,7 @@ Marketing & Publicity
 - [Official ASF logo, Apache Feather, and "Powered By Apache" assets](/foundation/press/kit/) 
 - [Central Services Support Request](/foundation/press/central-services-request)
 - [Feathercast -- the voice of the ASF](https://feathercast.apache.org/) 
-- [ASF on Twitter](https://twitter.com/TheASF) 
+- [ASF on X](https://x.com/TheASF) 
 - [The ASF on LinkedIn](https://www.linkedin.com/company/the-apache-software-foundation) 
 - [ASF YouTube channel](https://www.youtube.com/user/TheApacheFoundation) 
 
