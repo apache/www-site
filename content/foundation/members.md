@@ -104,9 +104,9 @@ This table shows current members who have manually added themselves to it – it
 | conor | Conor MacNeill | [Ant](http://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/)|
 | cos | [Konstantin Boudnik](http://www.boudnik.org/~cos) | [Bigtop](http://bigtop.apache.org) , [Groovy](http://groovy.apache.org) , [Celix](http://celix.apache.org) , [Hadoop](http://hadoop.apache.org) , [Ignite](http://ignite.apache.org) , [Incubator](http://incubator.apache.org) , [Geode](http://geode.apache.org) |
 | covener | Eric Covener |
-| cstamas | Tamas Cservenak | [Maven](https://maven.apache.org/)|
 | craigmcc | Craig R. McClanahan | [Jakarta](http://jakarta.apache.org/)|
 | crossley | [David Crossley](http://www.indexgeo.com.au/apache/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://xml.apache.org/forrest/) , [xml-commons](http://xml.apache.org/commons/)|
+| cstamas | Tamas Cservenak | [Maven](https://maven.apache.org/)|
 | ctubbsii | Christopher Tubbs | [Accumulo](https://accumulo.apache.org) , [Fluo](https://fluo.apache.org)|
 | curcuru | Shane Curcuru | [xalan](http://xml.apache.org/xalan-j/) , [xml-commons](http://xml.apache.org/commons/)|
 | cziegeler | [Carsten Ziegeler](mailto:cziegeler@apache.org) | [Sling](http://sling.apache.org/), [Felix](http://Felix.apache.org/), [Portals](http://portals.apache.org/)|
@@ -143,8 +143,8 @@ This table shows current members who have manually added themselves to it – it
 | ehatcher | Erik Hatcher | [Ant](http://ant.apache.org/) , jakarta-lucene , jakarta-lucene-sandbox|
 | elecharny | [Emmanuel Lécharny](http://hrabal.blogspot.com/) | [Directory](http://directory.apache.org/) ; [Mina](http://mina.apache.org/)|
 | elserj | Josh Elser | [Accumulo](https://accumulo.apache.org), [Calcite](https://calcite.apache.org), [Incubator](https://incubator.apache.org), [Phoenix](https://phoenix.apache.org) |
-| eolivelli | Enrico Olivelli | [BookKeeper](https://bookkeeper.apache.org), [ZooKeeper](https://zookeeper.apache.org), [Curator](https://curator.apache.org), [Maven](https://maven.apache.org) |
 | enis | Enis Söztutar |
+| eolivelli | Enrico Olivelli | [BookKeeper](https://bookkeeper.apache.org), [ZooKeeper](https://zookeeper.apache.org), [Curator](https://curator.apache.org), [Maven](https://maven.apache.org) |
 | epugh | Eric Pugh |
 | espino | Ed Espino | [Cloudberry](https://cloudberry.apache.org)
 | evansye | Evans Ye | [Bigtop](https://bigtop.apache.org/), [Ignite](https://ignite.apache.org) |
@@ -336,6 +336,7 @@ This table shows current members who have manually added themselves to it – it
 | otluk | Lukas Ott | [PLC4X](https://plc4x.apache.org/) ;  [Streampipes](https://streampipes.apache.org/) |
 | ovilia | Zhang Wenli | [ECharts](https://echarts.apache.org/) |
 | painter | Jeffery Painter | [Turbine](https://turbine.apache.org/) ; [Torque](https://db.apache.org/torque)|
+| panjuan | [Trista Pan](https://tristazero.github.io/) | [ShardingSphere](https://shardingsphere.apache.org/) ; [Incubator](http://incubator.apache.org/)|
 | paulirwin | [Paul Irwin](https://github.com/paulirwin/) | [Lucene.NET](https://lucenenet.apache.org/) |
 | paulk | Paul King | [Groovy](https://groovy.apache.org), [incubator](https://incubator.apache.org/)
 | pauls | Karl Pauls |
@@ -349,12 +350,11 @@ This table shows current members who have manually added themselves to it – it
 | potiuk | [Jarek Potiuk](https://potiuk.com) | [Airflow](https://airflow.apache.org) |
 | pottlinger | Philipp Ottlinger | [Creadur](https://creadur.apache.org) |
 | pquerna | [Paul Querna](http://paul.querna.org/) |
-| proyal | [Peter Royal](http://fotap.org/~osi) |
 | priyasharma | Priya Sharma | [OFBiz](http://ofbiz.apache.org) ; [ComDev](http://community.apache.org)
+| proyal | [Peter Royal](http://fotap.org/~osi) |
 | psteitz | Phil Steitz | [Jakarta](http://jakarta.apache.org) ; [Directory](http://directory.apache.org)|
 | ptgoetz | P. Taylor Goetz | [Storm](http://storm.apache.org) |
 | purplecabbage | Jesse MacFadyen | [Cordova](http://cordova.apache.org) |
-| panjuan | [Trista Pan](https://tristazero.github.io/) | [ShardingSphere](https://shardingsphere.apache.org/) ; [Incubator](http://incubator.apache.org/)|
 | quetwo | Nick Kwiatkowski |
 | rabelenda | Roger Abelenda |
 | rahul | Rahul Akolkar |
@@ -387,12 +387,12 @@ This table shows current members who have manually added themselves to it – it
 | rubys | [Sam Ruby](http://www.intertwingly.net/blog/) |  [Ant](http://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/) ; [PHP](http://www.php.net/) ; [XML](http://xml.apache.org)|
 | rvesse | Rob Vesse | [Jena](http://jena.apache.org), [Incubator](http://incubator.apache.org) |
 | rvs | Roman Shaposhnik | [Bigtop](http://bigtop.apache.org), [Celix](http://celix.apache.org), [ComDev](http://community.apache.org), [Geode](http://geode.apache.org), [Giraph](http://giraph.apache.org), [Groovy](http://groovy.apache.org), [Hadoop](http://hadoop.apache.org), [Ignite](http://ignite.apache.org), [Incubator](http://incubator.apache.org), [Zest](http://zest.apache.org) |
-| rzo1 | Richard Zowalla |
 | rxin | [Reynold Xin](http://rxin.org) | [Spark](http://spark.apache.org) |
+| rzo1 | Richard Zowalla |
+| sai_boorlagadda | Sai Boorlagadda | [Geode](https://geode.apache.org/) |
 | sanders | [Scott Sanders](http://dotnot.org/blog/) | [Jakarta](http://jakarta.apache.org/) ; [commons](http://commons.apache.org/) ; [Gump](http://gump.apache.org/) ; colo-keys|
 | sarowe | Steve Rowe | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) ; [Solr](http://lucene.apache.org/solr/)|
 | sascha | [Sascha Schumann](http://www.schumann.cx/) | [PHP](http://www.php.net/) ; [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
-| sai_boorlagadda | Sai Boorlagadda | [Geode](https://geode.apache.org/) |
 | schor | Marshall Schor | [UIMA](http://uima.apache.org/) |
 | schultz | Christopher Schultz | [Tomcat](http://tomcat.apache.org/), [Velocity](http://velocity.apache.org/)|
 | sctemme | [Sander Temme](http://www.temme.net/sander/) | [httpd](http://httpd.apache.org/) ; [Gump](http://gump.apache.org/) ; [Labs](http://labs.apache.org/) ; Infrastructure|
