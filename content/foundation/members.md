@@ -95,6 +95,7 @@ This table shows current members who have manually added themselves to it – it
 | christ | Chris Thistlethwaite | Infrastructure , [Warble (incubating)](http://warble.apache.org/) |
 | chtompki | [Rob Tompkins](http://www.robtompkins.com) | [Commons](http://commons.apache.org) |
 | clr | Craig L Russell |  [JDO](http://db.apache.org/jdo) ; [Incubator](http://incubator.apache.org/) ; [OpenJPA](http://openjpa.apache.org/)|
+| cmarcum | Carl Marcum | [Groovy](https://groovy.apache.org), [OpenOffice](https://openoffice.apache.org), [Incubator](https://incubator.apache.org/) |
 | cmccabe | Colin P. McCabe |
 | cmpilato | C. Michael Pilato |
 | cnauroth | Chris Nauroth | [Hadoop](http://hadoop.apache.org/) , [ZooKeeper](https://zookeeper.apache.org) |
