@@ -16,11 +16,11 @@ See [Pelican documentation](https://docs.getpelican.com/en/latest/themes.html#in
 
 ## CSS Stylesheets
 
-In this site the css included by `base.html` is found in the `content` tree.
+In this site the CSS included by `base.html` is found in the `content` tree.
 There are site or template specific overrides to the stylesheet frameworks, but these are not done as Pelican specifies.
 
-- styles.css - consists of custom site CSS overrides. Edit as needed. Here we include the css for the ASF permalink style.
-  This file is in the same directory as the html and is included inline with `{% include "styles.css" %}`
+- styles.css - consists of custom site CSS overrides. Edit as needed. Here we include the CSS for the ASF permalink style.
+  This file is in the same directory as the HTML and is included inline with `{% include "styles.css" %}`
 
 ## Page Metadata
 
@@ -35,7 +35,7 @@ This theme uses the following metadata:
 - License. This is an alternative to Notice.
 
 - bodytag. This adds attributes to the `<body>` element.
-  This is allows the main `index.ezmd` to have the same template, but with differing layout.
+  This allows the main `index.ezmd` to have the same template, but with differing layout.
 
   `<body{% if page.bodytag %} {{ page.bodytag }}{% endif %} >`   
 
