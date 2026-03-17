@@ -3,12 +3,12 @@ Notice: http://www.apache.org/licenses/LICENSE-2.0
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 <p>If you're curious about more governance details, we have a description of <a href="/foundation/governance/">Apache style governance</a>.<br>
-The <a href="http://community.apache.org/">Apache Community Development project</a> is also
+The <a href="https://community.apache.org/">Apache Community Development project</a> is also
 here to help newcomers find their way around.</p>
 </div>
 
 If you're curious about more governance details, we have a description of [Apache style governance][1].  
-The [Apache Community Development project](http://community.apache.org/) is also 
+The [Apache Community Development project](https://community.apache.org/) is also 
 here to help newcomers find their way around.
 
 This page provides an overview of everything you always wanted to know about the
@@ -193,7 +193,7 @@ chair in particular, are eyes and ears of the ASF Board, so we rely on and need 
 The board can to terminate a PMC at any time by resolution.
 
 The [Apache Developer Information][3] pages have more details of how PMCs work.
-A complete [list of all Apache projects](http://projects.apache.org/) is also available.
+A complete [list of all Apache projects](https://projects.apache.org/) is also available.
 
 ### Officers  {#officers}
 
@@ -345,7 +345,7 @@ as the core beliefs behind the foundation:
 - security as a mandatory feature
 
 All ASF projects share these principles.  Similarly, Apache projects 
-must [govern themselves independently](http://community.apache.org/projectIndependence.html) of undue commercial influence.
+must [govern themselves independently](https://community.apache.org/projectIndependence.html) of undue commercial influence.
 
 ## Operation
 
@@ -409,7 +409,7 @@ The ASF Infrastructure team, known as "Infra", supports services that help the A
 ## The Foundation Incubator  {#incubator}
 
 To support and encourage new projects, the ASF created the
-[Incubator](http://incubator.apache.org/) to help new
+[Incubator](https://incubator.apache.org/) to help new
 efforts join the foundation.
 
 Since the meritocratic rules operate across the ASF from bottom to top, it

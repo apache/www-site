@@ -121,7 +121,7 @@ Software Foundation
 - Information on [Export Classifications](../../licenses/exports/) and ECCNs of
 Apache products related to cryptography.
 
-- The [Official Foundation blog](http://blogs.apache.org/foundation/) with
+- The [Official Foundation blog](https://blogs.apache.org/foundation/) with
 press releases and other important news.
 
 - The record of and license for [IBM](http://ibm.com/)'s donation of the

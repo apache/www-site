@@ -58,7 +58,7 @@ Event branding and event organizers may not claim to be the organizers or sole o
 exclusive, or primary source of information for any Apache project.
 
 Simply *presenting a talk* on an Apache project requires no approval, and is very much
-encouraged! The [Community Development Project](http://community.apache.org/) may be
+encouraged! The [Community Development Project](https://community.apache.org/) may be
 able to help with this. However, you must seek approval when the event name or primary branding
 features Apache marks. Thus, giving a talk on Apache Foo at your local technology
 get-together requires no approval, while organizing "An evening with Apache Foo" as
@@ -199,11 +199,11 @@ geographical area, or within three weeks in a different geographical area.
 To ensure that we can approve your request for use of Apache marks, [contact us][contactevents] with early notice of your
 intended timeframe and location to verify no conflicts,
 and then follow up with the specific dates and venue once they are scheduled for final
-approval and to be placed on the Apache [calendar](http://events.apache.org/).
+approval and to be placed on the Apache [calendar](https://events.apache.org/).
 
 The VP, Conferences attempts to track all relevant conference
 dates for the purpose of scheduling and avoiding conflicts. We publish in
-[our calendar](http://events.apache.org/) all conferences
+[our calendar](https://events.apache.org/) all conferences
 run by the ASF, and those approved to make use of ASF marks. Submitting
 advance notice of your proposed event's intended dates and prompt confirmation of your
 scheduled conference dates will ensure this calendar is up to

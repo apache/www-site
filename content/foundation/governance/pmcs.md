@@ -176,9 +176,9 @@ ways to effectively and collaboratively build software.
 * Who They Are: [Current PMCs](https://projects.apache.org/projects.html?pmc)
 * [Project Management Committee Guide](/dev/pmc.html "A how-to of PMC duties")
 * [PMC Branding Responsibilities](/foundation/marks/responsibility.html "Ensuring projects follow Apache Branding Requirements")
-* [Podling Project Management Committee Guide](http://incubator.apache.org/guides/ppmc.html "expectations for Incbator podlings' governance")
+* [Podling Project Management Committee Guide](https://incubator.apache.org/guides/ppmc.html "expectations for Incbator podlings' governance")
 * [Brief overview of what a PMC is](/foundation/how-it-works.html#pmc "From the How It Works pages")
-* [Apache Projects are Independent](http://community.apache.org/projectIndependence.html "PMCs must manage their projects independently")
+* [Apache Projects are Independent](https://community.apache.org/projectIndependence.html "PMCs must manage their projects independently")
 
 
   [1]: /dev/

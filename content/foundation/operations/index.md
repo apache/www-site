@@ -34,7 +34,7 @@ Have a question?  This page will help you find the person who can help you.
 
 ## Conferences
 
-- [Event Calendar](http://community.apache.org/calendars/)
+- [Event Calendar](https://community.apache.org/calendars/)
 - [Event Planning](/foundation/conferences.html)
 
 ## Travel Assistance

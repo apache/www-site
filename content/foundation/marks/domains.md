@@ -251,7 +251,7 @@ disparage our communities or products are not welcome to use our marks in
 ways that might be infringing.
 
 Apache projects are run solely by their PMCs, as [projects independent of
-outside corporations or organizations](http://community.apache.org/projectIndependence.html).  It is important to maintain both
+outside corporations or organizations](https://community.apache.org/projectIndependence.html).  It is important to maintain both
 the actual independence of our PMCs from third parties, as well as to ensure
 that third parties do not use our marks to imply controlling, exclusive,
 or otherwise exclusionary relationships to our PMCs, projects, or communities.

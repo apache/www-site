@@ -3,7 +3,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 Publicly archived mailing lists are critical to the operation of the Apache Software
 Foundation (ASF) and to our many [Apache
-Projects](http://projects.apache.org/).  Apache projects use mailing lists to coordinate
+Projects](https://projects.apache.org/).  Apache projects use mailing lists to coordinate
 development of their software and administer their organization. Mailing
 lists also serve as a primary support channel where users can help each
 other learn to use the software.
@@ -141,7 +141,7 @@ including:
 ## Project Mailing Lists
 
 Links to project-specific mailing list info can be found on the [project
-resources page](http://projects.apache.org/projects.html).
+resources page](https://projects.apache.org/projects.html).
 
 Tip: if you have a technical question of any kind, the best place to ask is the 
 user@ or dev@ list for the relevant project - Foundation level mailing lists 

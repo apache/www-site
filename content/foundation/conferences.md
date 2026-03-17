@@ -12,7 +12,7 @@ Project to keep up to date about upcoming conferences. See also the [archive of 
 
 - Join the [discuss mailing list](mailto:discuss-subscribe@apachecon.com) to discuss an event with other attendees. See also the [archive of this list](https://lists.apache.org/list.html?apachecon-discuss@apache.org) for past discussions.
 
-- Visit the [conferences calendar](http://community.apache.org/calendars/conferences.html) 
+- Visit the [conferences calendar](https://community.apache.org/calendars/conferences.html) 
 to see what Apache conferences are coming up
 
 - Find out what topics will be covered on the [official Community Over

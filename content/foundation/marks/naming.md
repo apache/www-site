@@ -213,9 +213,9 @@ an issue either way.
 If the trademarks have been legally transferred to the ASF, the donating organization should work with VP Brand to equitably handle the matter.  The ASF's need is to protect the trademarks of all of our active project communities.  Podlings that have exited incubation without graduating are not something we have a continued interest in maintaining.
 
 
-[1]: http://apache.org/foundation/marks/pmcs.html#naming
-[2]: http://apache.org/foundation/marks/
-[3]: http://apache.org/dev/project-names.html
+[1]: https://apache.org/foundation/marks/pmcs.html#naming
+[2]: https://apache.org/foundation/marks/
+[3]: https://apache.org/dev/project-names.html
 [4]: https://issues.apache.org/jira/browse/PODLINGNAMESEARCH
 [5]: https://issues.apache.org/jira/browse/PODLINGNAMESEARCH-26
 [6]: https://issues.apache.org/jira/browse/PODLINGNAMESEARCH-27

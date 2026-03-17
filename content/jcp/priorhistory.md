@@ -48,7 +48,7 @@ Our goal is to put the "Community" in Java Community Process.
 The JCP activities of the ASF are centered around three areas :
 
 - Implementation of JCP specifications, such as [Apache
-Tomcat](http://tomcat.apache.org/) , [Apache
+Tomcat](https://tomcat.apache.org/) , [Apache
 Geronimo](http://geronimo.apache.org/) ,
 [WebServices](http://ws.apache.org/) ,
 [Portlets](http://portals.apache.org/) , [Apache
@@ -161,14 +161,14 @@ The following projects are implementing one or more JCP specifications:
 |-----------|-------|
 |  [Apache Geronimo 1.x](http://geronimo.apache.org/)  | J2EE 1.4 |
 |  [Apache Geronimo 2.x](http://geronimo.apache.org/)  | Java EE 5 |
-|  [Apache Tomcat](http://tomcat.apache.org/)  | Servlet and JSP |
+|  [Apache Tomcat](https://tomcat.apache.org/)  | Servlet and JSP |
 |  [Apache DB](http://db.apache.org/)  | JDO 2 (in JDO) |
 |  [Apache Jakarta](http://jakarta.apache.org/)  | JSTL (in Taglibs) |
 |  [Apache MyFaces](http://myfaces.apache.org/)  | JSF |
 |  [Apache Portals](http://portals.apache.org/)  | Portlets (in Pluto) |
 |  [Apache WebServices](http://ws.apache.org/)  | JAX-RPC, JAXB, J2ME WS, JAXM, JAXR, SAAJ |
 |  [Apache Jackrabbit](http://jackrabbit.apache.org/)  | Content Repository (JSR-170, JSR-283) |
-|  [Apache OpenJPA (Incubator)](http://incubator.apache.org/openjpa)  | Java Peristence API (JSR-220) |
+|  [Apache OpenJPA (Incubator)](https://incubator.apache.org/openjpa)  | Java Peristence API (JSR-220) |
 |  [Apache Harmony](http://harmony.apache.org/)  | Java SE 5 (JSR-176) |
 |  [Apache CXF](http://cxf.apache.org/)  | JAX-WS (JSR-224), JAX-RS (JSR-311) |
 

@@ -3,10 +3,10 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 The best way to contribute to the Apache Software Foundation (ASF) is to get involved with
 one of our many Apache project communities.  The  best way to ask general questions 
-about community involvement is to read about [Community Development at Apache](http://community.apache.org/).
+about community involvement is to read about [Community Development at Apache](https://community.apache.org/).
 
-The ASF is made up of over [300 different projects](http://projects.apache.org/), with many 
-new project submissions (or podlings) coming into the [Apache Incubator](http://incubator.apache.org/) every year. 
+The ASF is made up of over [300 different projects](https://projects.apache.org/), with many 
+new project submissions (or podlings) coming into the [Apache Incubator](https://incubator.apache.org/) every year. 
 So no matter what kinds of technology or software you use, we most 
 likely have an Apache project that you'll be interested in.
 
@@ -16,7 +16,7 @@ Using Apache products, asking (and sometimes answering) questions, reporting bug
 and making feature requests are critical contributions to the success of the Apache project community.
 User feedback helps drive our projects and the technologies behind them.
 
--  [See a listing of all projects](http://projects.apache.org/) 
+-  [See a listing of all projects](https://projects.apache.org/) 
 
 -  [Join Apache project mailing lists](mailinglists.html) 
 

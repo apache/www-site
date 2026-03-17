@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 This glossary provides a brief description of some of the organizational 
 terms used at the ASF and in Apache projects.  For more information 
 about anything Apache, see the [/dev documentation](/dev/) or the 
-[Community Development project](http://community.apache.org/).   
+[Community Development project](https://community.apache.org/).   
 
 ----
 
@@ -542,7 +542,7 @@ whether you are talking about the group or an individual.
 
 A [codebase](#Codebase) and its [community](#Community) while in the
 process of being incubated. See the description of the [Incubation
-process](http://incubator.apache.org/incubation/Process_Description.html).
+process](https://incubator.apache.org/incubation/Process_Description.html).
 
 </dd>
 
@@ -625,7 +625,7 @@ work on the main branch. A revolutionary branch may eventually be
 merged back into the main branch, die out, split completely and become
 a new main branch, or may absorb the current main branch into itself
 (essentially no different than the first option). See the ' [Rules for
-Revolutionaries](http://incubator.apache.org/learn/rules-for-revolutionaries.html)
+Revolutionaries](https://incubator.apache.org/learn/rules-for-revolutionaries.html)
 ' and compare [Evolution](#Evolution).
 
 </dd>
