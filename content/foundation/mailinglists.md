@@ -166,7 +166,7 @@ foundation and its projects. It includes announcements of major software release
 projects, and other important news. This list only includes Messages posted by the Foundation; there is no discussion.  
 
 You may also be interested in 
-our official [@TheASF Twitter](https://twitter.com/TheASF) account, or the 
+our official [@TheASF X](https://x.com/TheASF) account, or the 
 [official ASF Blog](https://blogs.apache.org/foundation/).
 
 | Volume: | Low |
@@ -181,7 +181,7 @@ our official [@TheASF Twitter](https://twitter.com/TheASF) account, or the
 The Apache Conference planning committee uses the `announce@ApacheCon.Com` mailing list to make announcements about conferences, conventions,
 and trade shows in which the Foundation is participating. Only the Foundation posts Messages on this list; there is no discussion.
 
-You may also be interested in our official [@ApacheCon Twitter](https://twitter.com/ApacheCon) account, or the 
+You may also be interested in our official [@ApacheCon X](https://x.com/ApacheCon) account, or the 
 [official ApacheCon Conferences blog](https://blogs.apache.org/conferences/).
 
 | Volume: | Very low |

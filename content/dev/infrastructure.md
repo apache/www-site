@@ -41,7 +41,7 @@ including the [committers index](http://people.apache.org/committer-index.html) 
 
 ## Useful links  {#infra}
 
--  <a href="https://twitter.com/infrabot" target="_blank">Infrabot on Twitter</a>
+-  <a href="https://x.com/infrabot" target="_blank">Infrabot on X</a>
 
 -  <a href="http://blogs.apache.org/infra/" target="_blank">Infra's blog</a>
 
