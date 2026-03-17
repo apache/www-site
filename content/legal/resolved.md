@@ -64,7 +64,7 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - [Creative Commons Copyright-Only Dedication](http://creativecommons.org/licenses/publicdomain/)
 - [Python Software Foundation License](http://www.opensource.org/licenses/PythonSoftFoundation.php)
 - [Python Imaging Library Software License](https://github.com/python-pillow/Pillow/blob/master/LICENSE)
-- [Adobe Postcript(R) AFM files](https://spdx.org/licenses/APAFML.html)
+- [Adobe Postscript(R) AFM files](https://spdx.org/licenses/APAFML.html)
 - [Boost Software License Version 1.0](http://www.opensource.org/licenses/BSL-1.0)
 - [License for CERN packages in COLT](https://dst.lbl.gov/ACSSoftware/colt/license.html) but note that this applies **only** to CERN packages in COLT and **not** others
 - [UK Open Government Licence](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). This license allows the licensor to provide a custom attribution notice. If one is provided, include in the NOTICE. If one is not provided, include 'Contains public sector information licensed under the Open Government Licence v3.0.' in the NOTICE. 
