@@ -163,7 +163,7 @@ service has an
 exclusive or controlling relationship with any Apache project or with the
 ASF as a whole, or with any service related to our products.
 
-For example, we woudl not permit a website declaring itself "The Only Host For
+For example, we would not permit a website declaring itself "The Only Host For
 Apache Example" since it implies an exclusive resource.  Likewise, we do not
 allow branding or taglines such as "The Apache Example Project Leaders", since
 that implies control of the Apache Example project.
