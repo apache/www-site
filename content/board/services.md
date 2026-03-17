@@ -47,9 +47,9 @@ Apache projects, and provides a [guide to developer tools](/dev/).
 You can [contact Infra](/dev/infra-contact#misdirected)
 and [Infra has many self-serve tools](https://selfserve.apache.org/).
 
-Example services include: [Subversion and GitBox hosting](/dev/services.html#source-repository), 
-[Jenkins, BuildBot, and other CI tools like ReviewBoard,  Sonar](/dev/services.html#build), 
-[Hosted VM for each project](/dev/services.html#virtual-servers).
+Example services include [Subversion and GitBox hosting](/dev/services.html#source-repository), 
+[Jenkins, BuildBot and other CI,  Sonar](/dev/services.html#build), and a 
+[hosted VM for each project](/dev/services.html#virtual-servers).
 
 ### Marketing & Publicity
 
