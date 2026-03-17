@@ -16,7 +16,7 @@ self-organized volunteer groups and some paid services & contractors.
 Some services are officially supported and offer service level agreements
 (SLA) like our website, mailing lists, and source code hosting by the 
 Apache Infrastructure team.  Other services are offered by volunteer 
-officers of the ASF and and organized groups of volunteers, like 
+officers of the ASF and organized groups of volunteers, like 
 the Community Development PMC.
 
 The best place to ask questions about any services is by contacting the 
