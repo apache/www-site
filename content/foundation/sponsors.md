@@ -334,7 +334,7 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
     </ul>
 </div>
 
-<script type="text/javascript">
+<script>
     var ar = ['platinum','gold','silver','bronze','targetedplatinum','targetedgold','targetedsilver','targetedbronze'];
     var co = [ 2,         3,     5,       6,       2,              3,           5,             6     ]; // column counts
 
