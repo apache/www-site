@@ -14,7 +14,7 @@ We have created the following FAQ to provide background information on the
         hardware, communication, and business infrastructure.  The
         Foundation website is http://www.apache.org and you can read
         more about the Foundation at
-        http://www.apache.org/foundation/faq.html
+        https://www.apache.org/foundation/faq.html
 
     Q : What is the Apache Harmony project?
     A : Apache Harmony is a project of the Apache Software Foundation

@@ -143,9 +143,9 @@ within an Apache product if you label the inclusion appropriately (see above):
 - Common Public License: [CPL 1.0](https://www.opensource.org/licenses/cpl1.0.php)
 - Eclipse Public License: [EPL 1.0](https://www.eclipse.org/legal/epl-v10.html)
 - IBM Public License: [IPL 1.0](https://www.opensource.org/licenses/ibmpl.php)
-- Mozilla Public Licenses: [MPL 1.0](http://www.mozilla.org/MPL/1.0/),
-  [MPL 1.1](http://www.mozilla.org/MPL/1.1/), and
-  [MPL 2.0](http://www.mozilla.org/MPL/2.0/)
+- Mozilla Public Licenses: [MPL 1.0](https://mozilla.org/MPL/1.0/),
+  [MPL 1.1](https://mozilla.org/MPL/1.1/), and
+  [MPL 2.0](https://mozilla.org/MPL/2.0/)
 - Sun Public License: [SPL 1.0](https://opensource.org/license/sunpublic-php)
 - [Open Software License 3.0](https://opensource.org/licenses/OSL-3.0)
 - [Erlang Public License](http://www.erlang.org/EPLICENSE)

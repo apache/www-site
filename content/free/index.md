@@ -74,4 +74,4 @@ Email lists at Apache are also free for anyone to use; we archive them publicly 
   [4]: http://www.openoffice.org/
   [5]: http://www.apache.org/licenses/
   [6]: https://projects.apache.org/
-  [7]: http://www.apache.org/foundation/bylaws.html#6.3
+  [7]: https://www.apache.org/foundation/bylaws.html#6.3

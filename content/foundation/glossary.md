@@ -50,7 +50,7 @@ things, the board approves or rejects resolutions brought before it,
 such as for the creation or dissolution of ASF [projects](#Project) ,
 funding requests, legal concerns, and disciplinary actions. As an open
 and non-profit corporation, the ASF makes the minutes of board meetings publicly available at
-[http://www.apache.org/foundation/records/minutes/](/foundation/records/minutes/).
+[https://www.apache.org/foundation/records/minutes/](/foundation/records/minutes/).
 These minutes include all decisions not made in [executive
 sessions](#ExecutiveSession). Also see [Director](#Director).
 

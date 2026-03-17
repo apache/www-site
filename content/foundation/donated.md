@@ -20,7 +20,7 @@ Open Source software.
 
 <div class="fb-share-button" data-href="https://apache.org/foundation/donated_fb.html"></div>
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.apache.org/foundation/donate.html" data-text="I just donated to the #Apache Software Foundation! /cc @TheASF">Tweet</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.apache.org/foundation/donate.html" data-text="I just donated to the #Apache Software Foundation! /cc @TheASF">Tweet</a>
 <script>!function(d,s,id)  {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <noscript>Sorry, your browser settings do not support JavaScript!</noscript>
 
