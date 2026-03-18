@@ -218,7 +218,7 @@ days; however, as The ASF is an international collective of
 volunteers, additional time may be needed to secure the
 appropriate spokespeople.
 
-Note: All technical questions or questions about [individual projects](http://projects.apache.org/)
+Note: All technical questions or questions about [individual projects](https://projects.apache.org/)
 should always be directed to the appropriate [project mailing list](/foundation/mailinglists.html),
 and will not be replied to by the Apache Press Team.
 

@@ -182,7 +182,7 @@ of the Apache Way, and usually get involved in more projects as time goes on.
 ## References  {#references}
 
 * Who They Are: [Current Members](/foundation/members.html)
-* Who They Are: [Current Members and Committers by Project](http://people.apache.org/committer-index.html)
+* Who They Are: [Current Members and Committers by Project](https://people.apache.org/committer-index.html)
 * [Bylaws of the ASF](/foundation/bylaws.html)
 * [Org chart of the ASF](orgchart.html)
 * [How Members Are Elected](/foundation/governance/meetings#membervoting)

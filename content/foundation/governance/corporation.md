@@ -51,6 +51,6 @@ in-person meetings as well for strategic planning purposes; these are minuted as
 * [Public Records Listing](/foundation/records/)
 * [Bylaws of the ASF](/foundation/bylaws.html)
 * [Board Meeting Calendar And Past Minutes](/foundation/board/calendar.html)
-* [History of Past Directors](http://communityovercode.com/faq/asf-board/)
+* [History of Past Directors](https://communityovercode.com/faq/asf-board/)
 * [How the ASF Works: official documentation](/foundation/how-it-works.html)
 * [How Directors Are Elected](/foundation/governance/meetings#boardvoting)

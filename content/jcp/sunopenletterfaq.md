@@ -14,7 +14,7 @@ We have created the following FAQ to provide background information on the
         hardware, communication, and business infrastructure.  The
         Foundation website is http://www.apache.org and you can read
         more about the Foundation at
-        http://www.apache.org/foundation/faq.html
+        https://www.apache.org/foundation/faq.html
 
     Q : What is the Apache Harmony project?
     A : Apache Harmony is a project of the Apache Software Foundation
@@ -183,10 +183,10 @@ We have created the following FAQ to provide background information on the
     Q : Is a "field of use" restriction incompatible with both open
         source and free software principles?
     A : Yes, both.  See the Open Source Initiative's open source
-        definition (http://www.opensource.org/docs/osd), most notably
+        definition (https://www.opensource.org/docs/osd), most notably
         section 6 and 10 and the Free Software Foundation's free
         software definition
-        (http://www.gnu.org/philosophy/free-sw.html) most notably
+        (https://www.gnu.org/philosophy/free-sw.html) most notably
         freedom #0.
 
     Q : Would the ASF be satisfied with a TCK license that removed the

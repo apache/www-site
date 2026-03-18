@@ -223,7 +223,7 @@ is required.
 ## Is the Apache license compatible with the GPL (GNU Public License)?  {#GPL}
 
 From the [Free Software
-Foundation](http://www.fsf.org/licensing/licenses/#SoftwareLicenses)
+Foundation](https://www.fsf.org/licensing/licenses/#SoftwareLicenses)
 website:
 
 >  

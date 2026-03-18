@@ -6,7 +6,7 @@ ASF Members are those who have proven their commitment to the ASF by contributin
 
 Our Members are similar to stockholders–they elect new Members and may vote for Directors. Membership in The Apache Software Foundation is a privilege and is by invitation only. The [Governance](/foundation/governance/) page provides details on Membership and the nomination process.
 
-<p><a class="btn btn-default mx-10" href="http://home.apache.org/committers-by-project.html#member" role="button">Go to Member List</a>
+<p><a class="btn btn-default mx-10" href="https://home.apache.org/committers-by-project.html#member" role="button">Go to Member List</a>
 
 ## ASF Members
 
@@ -16,7 +16,7 @@ This table shows current members who have manually added themselves to it – it
 |----|------|----------|
 | aadamchik | Andrei Adamchik |
 | aajisaka | Akira Ajisaka | [Hadoop](https://hadoop.apache.org), [Kyuubi](https://kyuubi.apache.org), [Yetus](https://yetus.apache.org) |
-| aaron | [Aaron Bannert](http://www.clove.org/~aaron/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [PHP](http://www.php.net/) , [commons](http://commons.apache.org/) , [incubator](http://incubator.apache.org/) , [flood](http://httpd.apache.org/test/flood/) , infrastructure|
+| aaron | [Aaron Bannert](http://www.clove.org/~aaron/) | [httpd](https://httpd.apache.org/) , [APR](http://apr.apache.org/) , [PHP](http://www.php.net/) , [commons](https://commons.apache.org/) , [incubator](https://incubator.apache.org/) , [flood](https://httpd.apache.org/test/flood/) , infrastructure|
 | ab | Andrzej Bialecki |
 | abaker | Anthony Baker | [Geode](https://geode.apache.org) |
 | abayer | Andrew Bayer | [Whirr](http://whirr.apache.org), [Bigtop](http://bigtop.apache.org), [jclouds](http://jclouds.incubator.apache.org)|
@@ -29,12 +29,12 @@ This table shows current members who have manually added themselves to it – it
 | aestrada | Adam Estrada | [SIS](http://sis.apache.org) |
 | afuchs | Adam Fuchs | [Accumulo](http://accumulo.apache.org)|
 | aheritier | [Arnaud Héritier](http://aheritier.net/) | [Maven](http://maven.apache.org/), [Archiva](http://archiva.apache.org/)|
-| akarasulu | [Alex Karasulu](mailto:akarasulu@apache.org) | [directory](http://incubator.apache.org/directory) ; [excalibur](http://excalibur.apache.org/) ; [jakarta](http://jakarta.apache.org/)|
+| akarasulu | [Alex Karasulu](mailto:akarasulu@apache.org) | [directory](https://incubator.apache.org/directory) ; [excalibur](http://excalibur.apache.org/) ; [jakarta](http://jakarta.apache.org/)|
 | akm | Andrew Musselman | [Mahout](http://mahout.apache.org) |
 | alamb | [Andrew Lamb](http://andrew.nerdnetworks.org/) | [Arrow](http://arrow.apache.org/), [DataFusion](http://datafusion.apache.org/), [Parquet](http://parquet.apache.org/)  |
 | aleks | Aleksandar Vidakovic | [Fineract](https://fineract.apache.org) |
-| alfonsonishikawa | [Alfonso Nishikawa Muñumer](http://people.apache.org/~alfonsonishikawa) | [Gora](https://gora.apache.org) |
-| amaniatis | Aristedes Maniatis | [Cayenne](http://cayenne.apache.org/)|
+| alfonsonishikawa | [Alfonso Nishikawa Muñumer](https://people.apache.org/~alfonsonishikawa) | [Gora](https://gora.apache.org) |
+| amaniatis | Aristedes Maniatis | [Cayenne](https://cayenne.apache.org/)|
 | amareshwari | Amareshwari Sriramadasu | [Hadoop](http://hadoop.apache.org/) , [Falcon](http://falcon.apache.org/),  [Hive](http://hive.apache.org/), [Lens](http://lens.apache.org) |
 | andreww | [Andrew Wetmore](mailto:andreww@apache.org) | [Royale](https://royale.apache.org), Infra |
 | andywenk | [Andy Wenk](mailto:andywenk@apache.org) | [CouchDB](https://couchdb.apache.org), PMC |
@@ -42,69 +42,69 @@ This table shows current members who have manually added themselves to it – it
 | ankit | Ankit Singhal | [HBase](https://hbase.apache.org), [Phoenix](http://phoenix.apache.org/), [Ratis](http://ratis.apache.org/) |
 | anshum | Anshum Gupta | [Lucene](http://lucene.apache.org/), [Solr](http://solr.apache.org/) |
 | antelder | Ant Elder |
-| antonio | [Antonio Gallardo Rivera](http://home.apache.org/~antonio/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://forrest.apache.org/) , [Lenya](http://lenya.apache.org/)|
+| antonio | [Antonio Gallardo Rivera](https://home.apache.org/~antonio/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://forrest.apache.org/) , [Lenya](http://lenya.apache.org/)|
 | apitrou | Antoine Pitrou | [Arrow](https://arrow.apache.org/), [Parquet](https://parquet.apache.org/) |
 | arkurth | Andy Kurth | [VCL](http://vcl.apache.org/) |
 | arp | Arpit Agarwal |
 | arreyder | [Christopher R. Rhodes](http://arreyder.com) |
-| arvind | [Arvind Prabhakar](http://home.apache.org/~arvind) | [Sqoop](http://sqoop.apache.org/) ; [Flume](http://incubator.apache.org/flume)|
-| asankha | [Asankha Perera](http://people.apache.org/~asankha) | [HttpComponents](http://hc.apache.org)
+| arvind | [Arvind Prabhakar](https://home.apache.org/~arvind) | [Sqoop](http://sqoop.apache.org/) ; [Flume](https://incubator.apache.org/flume)|
+| asankha | [Asankha Perera](https://people.apache.org/~asankha) | [HttpComponents](http://hc.apache.org)
 | asifdxtreme | [Mohammad Asif Siddiqui](https://asifdxr.netlify.app) | Incubator, Nuttx, Servicecomb |
 | aslom | Alek Slominski |
-| ate | [Ate Douma](http://home.apache.org/~ate/) | [Airavata](https://airavata.apache.org/), [AsterixDB](https://asterixdb.apache.org/), [Commons](https://commons.apache.org/), [Incubator](https://incubator.apache.org/), [NetBeans](https://netbeans.apache.org/), [Portals](https://portals.apache.org/), [Streams](https://streams.apache.org/), [Wicket](https://wicket.apache.org/) |
+| ate | [Ate Douma](https://home.apache.org/~ate/) | [Airavata](https://airavata.apache.org/), [AsterixDB](https://asterixdb.apache.org/), [Commons](https://commons.apache.org/), [Incubator](https://incubator.apache.org/), [NetBeans](https://netbeans.apache.org/), [Portals](https://portals.apache.org/), [Streams](https://streams.apache.org/), [Wicket](https://wicket.apache.org/) |
 | ay | Akitoshi Yoshida |
 | ayushsaxena | Ayush Saxena | [Hadoop](https://hadoop.apache.org), [Hive](http://hive.apache.org), [Tez](http://tez.apache.org), [Ozone](http://ozone.apache.org/) |
 | azeez | Mohamed Afkham Azeez |
 | bayard | Henri Yandell |
 | bdelacretaz | [Bertrand Delacrétaz](http://www.codeconsult.ch/) | [Cocoon](http://cocoon.apache.org/) , [FOP](http://xml.apache.org/fop/)|
 | bdemers | [Brian Demers](https://blog.bdemers.io/) | [Directory](https://directory.apache.org/), [Maven](https://maven.apache.org/), [Shiro](https://shiro.apache.org/) |
-| ben | Ben Laurie | [httpd](http://httpd.apache.org/) ; [ApacheCon](http://www.apachecon.com/)|
+| ben | Ben Laurie | [httpd](https://httpd.apache.org/) ; [ApacheCon](http://www.apachecon.com/)|
 | bigosmallm | [OmPrakash Muppirala](https://twitter.com/bigosmallm) | [Flex](http://flex.apache.org/), [Royale](http://royale.apache.org/) |
-| billcole | William K. (Bill) Cole | [SpamAssassin](http://spamassassin.apache.org/)|
+| billcole | William K. (Bill) Cole | [SpamAssassin](https://spamassassin.apache.org/)|
 | billie | Billie Rinaldi | [Accumulo](http://accumulo.apache.org)|
-| bjh | [Brian Havard](http://silk.apana.org.au) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/)|
+| bjh | [Brian Havard](http://silk.apana.org.au) | [httpd](https://httpd.apache.org/) , [APR](http://apr.apache.org/)|
 | bkp | Brian Proffitt |
 | blair | Blair Zajac |
-| blautenb | Berin Lautenbach | [XML](http://xml.apache.org) ; [incubator](http://incubator.apache.org/)|
+| blautenb | Berin Lautenbach | [XML](http://xml.apache.org) ; [incubator](https://incubator.apache.org/)|
 | bmarwell | Benjamin Marwell | [Maven](https://maven.apache.org), [Shiro](https://shiro.apache.org/) |
 | bob | Bob Paulin | [Felix](http://felix.apache.org/) , [Tika](http://tika.apache.org/)|
 | bobby | Robert (Bobby) Evans | [Storm](http://storm.apache.org) , [Hadoop](http://hadoop.apache.org) , [Spark](http://spark.apache.org) , [Tez](http://tez.apache.org/) |
-| bodewig | [Stefan Bodewig](http://stefan.samaflost.de/) | [Ant](http://ant.apache.org/) , [Gump](http://gump.apache.org/) , [Jakarta](http://jakarta.apache.org/)|
+| bodewig | [Stefan Bodewig](http://stefan.samaflost.de/) | [Ant](https://ant.apache.org/) , [Gump](https://gump.apache.org/) , [Jakarta](http://jakarta.apache.org/)|
 | bommel | Bernd Bohmann | [MyFaces](http://myfaces.apache.org/)|
 | brane | Branko Čibej |
 | brebs | Paul Brebner | [Community Over Code](https://communityovercode.org/)|
-| breser | Ben Reser | [Subversion](http://subversion.apache.org) ; [httpd](http://httpd.apache.org) |
-| brett | [Brett Porter](http://brettporter.wordpress.com/) | [Maven](http://maven.apache.org/) ; [Archiva](http://archiva.apache.org/) ; [Continuum](http://continuum.apache.org/) ; [Incubator](http://incubator.apache.org/) ;  board|
+| breser | Ben Reser | [Subversion](http://subversion.apache.org) ; [httpd](https://httpd.apache.org) |
+| brett | [Brett Porter](http://brettporter.wordpress.com/) | [Maven](http://maven.apache.org/) ; [Archiva](http://archiva.apache.org/) ; [Continuum](https://continuum.apache.org/) ; [Incubator](https://incubator.apache.org/) ;  board|
 | brianb | [Brian Behlendorf](http://www.behlendorf.com/) |
 | brianf | [Brian Fox](http://www.sonatype.com/people/author/brian/) |
 | briang | Brian Geffon |
 | brianleroux | [Brian LeRoux](https://brian.io) |
-| brianm | [Brian McCallister](http://home.apache.org/~brianm/) |
-| bsnyder | [Bruce Snyder](http://bruceblog.org/) | [ActiveMQ](http://activemq.apache.org) ; [Geronimo](http://geronimo.apache.org/) ; [Incubator](http://incubator.apache.org/) ; [ServiceMix](http://servicemix.apache.org/)|
+| brianm | [Brian McCallister](https://home.apache.org/~brianm/) |
+| bsnyder | [Bruce Snyder](http://bruceblog.org/) | [ActiveMQ](http://activemq.apache.org) ; [Geronimo](http://geronimo.apache.org/) ; [Incubator](https://incubator.apache.org/) ; [ServiceMix](http://servicemix.apache.org/)|
 | busbey | Sean Busbey |
 | buschmi | Michael Busch |
-| carlos | [Carlos Sanchez](http://www.carlossanchez.eu) | [Maven](http://maven.apache.org) ; [Archiva](http://archiva.apache.org) ; [Continuum](http://continuum.apache.org)|
+| carlos | [Carlos Sanchez](http://www.carlossanchez.eu) | [Maven](http://maven.apache.org) ; [Archiva](http://archiva.apache.org) ; [Continuum](https://continuum.apache.org)|
 | cdouglas | Chris Douglas |
 | cdutz | Christofer Dutz | [ComDev](https://community.apache.org), [Daffodil](https://daffodil.apache.org), [Flex](https://flex.apache.org), [Incubator](https://incubator.apache.org), [Infrastructure](https://infra.apache.org), [IoTDB](https://iotdb.apache.org), [Kibble](https://kibble.apache.org), [Mahout](https://mahout.apache.org), [PLC4X](https://plc4x.apache.org), [Royale](https://royale.apache.org), [StreamPipes (incubating)](https://streampipes.apache.org), [Training (incubating)](https://training.apache.org), [Wayang (incubating)](https://wayang.apache.org) |
-| centic | Dominik Stadler | [POI](http://poi.apache.org) |
-| cezar | [Cezar Cristian Andrei](http://cezarandrei.com) | [XMLBeans](http://xmlbeans.apache.org/) , [VXQuery](http://incubator.apache.org/vxquery/)|
+| centic | Dominik Stadler | [POI](https://poi.apache.org) |
+| cezar | [Cezar Cristian Andrei](http://cezarandrei.com) | [XMLBeans](http://xmlbeans.apache.org/) , [VXQuery](https://incubator.apache.org/vxquery/)|
 | cgivre | [Charles Givre](mailto:cgivre@apache.org) | [Drill](https://drill.apache.org), [Superset](https://superset.apache.org), [Calcite](https://calcite.apache.org) |
 | chengpan | [Cheng Pan](mailto:chengpan@apache.org) | [Celeborn](https://celeborn.apache.org), [Kyuubi](https://kyuubi.apache.org), [Spark](https://spark.apache.org), [Zeppelin](https://zeppelin.apache.org) |
 | chenpei | [Pei Chen](mailto:chenpei@apache.org) | [cTAKES](http://ctakes.apache.org) |
 | chipchilders | [Chip Childers](http://www.chipchilders.com/) | [CloudStack](http://cloudstack.apache.org) |
 | chrisg | Christian Geisert | [XML Graphics](http://xmlgraphics.apache.org/) , [FOP](http://xmlgraphics.apache.org/fop/)|
 | christ | Chris Thistlethwaite | Infrastructure , [Warble (incubating)](http://warble.apache.org/) |
-| chtompki | [Rob Tompkins](http://www.robtompkins.com) | [Commons](http://commons.apache.org) |
-| clr | Craig L Russell |  [JDO](http://db.apache.org/jdo) ; [Incubator](http://incubator.apache.org/) ; [OpenJPA](http://openjpa.apache.org/)|
+| chtompki | [Rob Tompkins](http://www.robtompkins.com) | [Commons](https://commons.apache.org) |
+| clr | Craig L Russell |  [JDO](http://db.apache.org/jdo) ; [Incubator](https://incubator.apache.org/) ; [OpenJPA](http://openjpa.apache.org/)|
 | cmarcum | Carl Marcum | [Groovy](https://groovy.apache.org), [OpenOffice](https://openoffice.apache.org), [Incubator](https://incubator.apache.org/) |
 | cmccabe | Colin P. McCabe |
 | cmpilato | C. Michael Pilato |
 | cnauroth | Chris Nauroth | [Hadoop](http://hadoop.apache.org/) , [ZooKeeper](https://zookeeper.apache.org) |
-| coar | Ken Coar | [ApacheCon](http://www.apachecon.com/) , [APR](http://apr.apache.org/) , board , [commons](http://commons.apache.org/) , fund-raising , [httpd](http://httpd.apache.org/) , [httpd-docs](http://httpd.apache.org/docs-project/) , [incubator](http://incubator.apache.org/) , [PHP](http://www.php.net/)|
+| coar | Ken Coar | [ApacheCon](http://www.apachecon.com/) , [APR](http://apr.apache.org/) , board , [commons](https://commons.apache.org/) , fund-raising , [httpd](https://httpd.apache.org/) , [httpd-docs](https://httpd.apache.org/docs-project/) , [incubator](https://incubator.apache.org/) , [PHP](http://www.php.net/)|
 | coheigea | Colm Ó hÉigeartaigh |
 | colm | [Colm MacCárthaigh](mailto:colm@(anti-spam)stdlib.net) |
-| conor | Conor MacNeill | [Ant](http://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/)|
-| cos | [Konstantin Boudnik](http://www.boudnik.org/~cos) | [Bigtop](http://bigtop.apache.org) , [Groovy](http://groovy.apache.org) , [Celix](http://celix.apache.org) , [Hadoop](http://hadoop.apache.org) , [Ignite](http://ignite.apache.org) , [Incubator](http://incubator.apache.org) , [Geode](http://geode.apache.org) |
+| conor | Conor MacNeill | [Ant](https://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/)|
+| cos | [Konstantin Boudnik](http://www.boudnik.org/~cos) | [Bigtop](http://bigtop.apache.org) , [Groovy](http://groovy.apache.org) , [Celix](http://celix.apache.org) , [Hadoop](http://hadoop.apache.org) , [Ignite](http://ignite.apache.org) , [Incubator](https://incubator.apache.org) , [Geode](http://geode.apache.org) |
 | covener | Eric Covener |
 | craigmcc | Craig R. McClanahan | [Jakarta](http://jakarta.apache.org/)|
 | crossley | [David Crossley](http://www.indexgeo.com.au/apache/) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://xml.apache.org/forrest/) , [xml-commons](http://xml.apache.org/commons/)|
@@ -117,19 +117,19 @@ This table shows current members who have manually added themselves to it – it
 | danese | Danese Cooper |
 | danhaywood | Dan Haywood | [Causeway](https://causeway.apache.org) |
 | danielsh | Daniel Shahaf | [Subversion](http://subversion.apache.org/), [Infrastructure](/dev/infrastructure)|
-| danny | [Danny Angus](http://blog.killerbees.co.uk) | [James](http://james.apache.org/) , [Jakarta](http://jakarta.apache.org/), [Labs](http://labs.apache.org)|
+| danny | [Danny Angus](https://blog.killerbees.co.uk) | [James](http://james.apache.org/) , [Jakarta](http://jakarta.apache.org/), [Labs](http://labs.apache.org)|
 | dashorst | Martijn Dashorst |
 | davisp | Paul Joseph Davis |
 | davor | [Davor Bonaci](http://davorbonaci.com/) | [Beam](https://beam.apache.org/) |
 | davsclaus | Claus Ibsen | [Camel](https://camel.apache.org/) |
 | dblevins | David Blevins |
-| deepal | [Deepal Jayasinghe](http://blogs.deepal.org/) |
+| deepal | [Deepal Jayasinghe](https://blogs.deepal.org/) |
 | dennisl | Dennis Lundberg |
 | dgrove | Dave Grove | [OpenWhisk](https://openwhisk.apache.org)|
 | dims | Davanum Srinivas |
-| dirkx | Dirk-Willem van Gulik | [httpd](http://httpd.apache.org/) , [XML](http://xml.apache.org)|
+| dirkx | Dirk-Willem van Gulik | [httpd](https://httpd.apache.org/) , [XML](http://xml.apache.org)|
 | djencks | David Jencks |
-| djkevincr | Kevin Ratnasekera | [Gora](http://gora.apache.org), [Incubator](http://incubator.apache.org/) | 
+| djkevincr | Kevin Ratnasekera | [Gora](http://gora.apache.org), [Incubator](https://incubator.apache.org/) | 
 | djoshi | Dinesh Joshi | [Cassandra](https://cassandra.apache.org) |
 | dkulp | [J. Daniel Kulp](http://www.dankulp.com/blog) | [CXF](http://cxf.apache.org/) ; [Maven](http://maven.apache.org/) ; [ServiceMix](http://servicemix.apache.org)|
 | dmeikle | David Meikle | [Tika](http://tika.apache.org) |
@@ -142,8 +142,8 @@ This table shows current members who have manually added themselves to it – it
 | dweiss | Dawid Weiss | [Lucene](http://lucene.apache.org/), [Mahout](http://lucene.apache.org/mahout) , [Solr](http://lucene.apache.org/solr/) |
 | ebourg | Emmanuel Bourg |
 | echauchot | Etienne Chauchot | [Beam](http://beam.apache.org) |
-| ehatcher | Erik Hatcher | [Ant](http://ant.apache.org/) , jakarta-lucene , jakarta-lucene-sandbox|
-| elecharny | [Emmanuel Lécharny](http://hrabal.blogspot.com/) | [Directory](http://directory.apache.org/) ; [Mina](http://mina.apache.org/)|
+| ehatcher | Erik Hatcher | [Ant](https://ant.apache.org/) , jakarta-lucene , jakarta-lucene-sandbox|
+| elecharny | [Emmanuel Lécharny](http://hrabal.blogspot.com/) | [Directory](https://directory.apache.org/) ; [Mina](http://mina.apache.org/)|
 | elserj | Josh Elser | [Accumulo](https://accumulo.apache.org), [Calcite](https://calcite.apache.org), [Incubator](https://incubator.apache.org), [Phoenix](https://phoenix.apache.org) |
 | enis | Enis Söztutar |
 | eolivelli | Enrico Olivelli | [BookKeeper](https://bookkeeper.apache.org), [ZooKeeper](https://zookeeper.apache.org), [Curator](https://curator.apache.org), [Maven](https://maven.apache.org) |
@@ -156,19 +156,19 @@ This table shows current members who have manually added themselves to it – it
 | farra | J. Aaron Farr |
 | ffang | Freeman Yue Fang | [Cxf](http://cxf.apache.org/) ; [Servicemix](http://servicemix.apache.org/) ; [Karaf](http://karaf.apache.org/) ; [Camel](http://Camel.apache.org/) ; [Felix](http://felix.apache.org/)|
 | fhanik | Filip Hanik |
-| fielding | [Roy T. Fielding](http://roy.gbiv.com/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , board , fund-raising , [incubator](http://incubator.apache.org/)|
+| fielding | [Roy T. Fielding](http://roy.gbiv.com/) | [httpd](https://httpd.apache.org/) , [APR](http://apr.apache.org/) , board , fund-raising , [incubator](https://incubator.apache.org/)|
 | florianhockmann | Florian Hockmann | [TinkerPop](https://tinkerpop.apache.org/) |
 | fokko | Fokko Driesprong | [Airflow](https://airflow.apache.org/); [Avro](https://avro.apache.org/); [Parquet](https://parquet.apache.org/); [Druid](https://druid.apache.org/) |
 | fpapon | François Papon | [Geronimo](https://geronimo.apache.org), [Hop](https://hop.apache.org), [Karaf](https://karaf.apache.org), [Shiro](https://shiro.apache.org), [Unomi](https://unomi.apache.org)|
-| fpj | Flavio Junqueira | [ZooKeeper](http://zookeeper.apache.org); [BookKeeper](http://bookkeeper.apache.org); [Incubator](http://incubator.apache.org) |
+| fpj | Flavio Junqueira | [ZooKeeper](http://zookeeper.apache.org); [BookKeeper](https://bookkeeper.apache.org); [Incubator](https://incubator.apache.org) |
 | francischuang | Francis Chuang | [Calcite](https://calcite.apache.org) |
 | gangwu | [Gang Wu](https://github.com/wgtmac) | [Arrow](http://arrow.apache.org), [ORC](http://orc.apache.org), [Parquet](http://parquet.apache.org) |
 | gareth | Gareth Reakes |
 | gates | Alan Gates |
-| gawor | [Jarek Gawor](http://home.apache.org/~gawor/) |
+| gawor | [Jarek Gawor](https://home.apache.org/~gawor/) |
 | gdaniels | Glen Daniels | [Axis](http://ws.apache.org/axis/)  |
 | geirm | [Geir Magnusson Jr.](mailto:geirm@apache.org) | [Jakarta](http://jakarta.apache.org/)|
-| geoff | [Geoffrey Young](http://www.modperlcookbook.org/) | [mod_perl](http://perl.apache.org/) ; httpd-test ; [httpd](http://httpd.apache.org/)|
+| geoff | [Geoffrey Young](http://www.modperlcookbook.org/) | [mod_perl](http://perl.apache.org/) ; httpd-test ; [httpd](https://httpd.apache.org/)|
 | geomacy | Geoff Macartney | [Brooklyn](https://brooklyn.apache.org/)|
 | gerdogdu | [Gurkan Erdogdu](http://gurkanerdogdu.blogspot.com) | [OpenWebBeans](http://openwebbeans.apache.org)  |
 | gertv | Gert Vanthienen |
@@ -176,29 +176,29 @@ This table shows current members who have manually added themselves to it – it
 | gianugo | [Gianugo Rabellino](http://www.rabellino.it/blog/) |  [Cocoon](http://cocoon.apache.org/) ; [Xindice](http://xml.apache.org/xindice/)|
 | gk | Georg Kallidis | [Turbine](http://turbine.apache.org/) |
 | gmcdonald | [Gavin McDonald](http://16degrees.com.au) |
-| gnodet | [Guillaume Nodet](http://home.apache.org/~gnodet/) | [ActiveMQ](http://activemq.apache.org/) ; [Geronimo](http://geronimo.apache.org/) ; [Ode](http://ode.apache.org/) ; [ServiceMix](http://servicemix.apache.org/)|
+| gnodet | [Guillaume Nodet](https://home.apache.org/~gnodet/) | [ActiveMQ](http://activemq.apache.org/) ; [Geronimo](http://geronimo.apache.org/) ; [Ode](http://ode.apache.org/) ; [ServiceMix](http://servicemix.apache.org/)|
 | gopidesu | Pavan Kumar Gopidesu | [Airflow](https://airflow.apache.org) |
 | gozer | [Philippe M. Chiasson](http://gozer.ectoplasm.org/) | [mod_perl](http://perl.apache.org/) , modperl-docs|
 | gpetracek | Gerhard Petracek |
 | grobmeier | [Christian Grobmeier](http://www.grobmeier.de) |
 | grossws | Konstantin Gribov | [Tika](http://tika.apache.org) |
-| gstein | [Greg Stein](http://www.lyra.org/greg/) | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [incubator](http://incubator.apache.org/) ; board|
+| gstein | [Greg Stein](http://www.lyra.org/greg/) | [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [incubator](https://incubator.apache.org/) ; board|
 | gtrasuk | [Greg Trasuk](https://www.trasuk.com/blogs/trasukg/) |
 | gurwls223 | [Hyukjin Kwon](https://github.com/HyukjinKwon) | [Spark](http://spark.apache.org) |
 | hadrian | Hadrian Zbarcea |
 | harbs | Gabe Harbater | [Flex](http://flex.apache.org/) |
-| hboutemy | Hervé Boutemy | [Maven](http://maven.apache.org), [ComDev](http://community.apache.org), [Attic](http://attic.apache.org) |
+| hboutemy | Hervé Boutemy | [Maven](http://maven.apache.org), [ComDev](https://community.apache.org), [Attic](http://attic.apache.org) |
 | henning | [Henning P. Schmiedehausen](http://henning.schmiedehausen.org/) |
 | hexiaoqiao | [He Xiaoqiao](https://hexiaoqiao.github.io/) | [Hadoop](http://hadoop.apache.org) |
-| hgomez | [Henri Gomez](http://blog.hgomez.net) ** |
+| hgomez | [Henri Gomez](https://blog.hgomez.net) ** |
 | hitesh | Hitesh Shah | [Hadoop](http://hadoop.apache.org) ; [Tez](http://tez.apache.org/) ; [Ambari](http://ambari.apache.org/)|
-| hogstrom | [Matt Hogstrom](http://blog.hogstrom.org) |
-| hossman | [Chris Hostetter](http://home.apache.org/~hossman/) | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) , [Solr](http://lucene.apache.org/solr/)|
-| hsaputra | Henry Saputra | [Incubator](http://incubator.apache.org/) ; [Flink](http://flink.apache.org/) ; [Twill](https://twill.apache.org/) |
+| hogstrom | [Matt Hogstrom](https://blog.hogstrom.org) |
+| hossman | [Chris Hostetter](https://home.apache.org/~hossman/) | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) , [Solr](http://lucene.apache.org/solr/)|
+| hsaputra | Henry Saputra | [Incubator](https://incubator.apache.org/) ; [Flink](http://flink.apache.org/) ; [Twill](https://twill.apache.org/) |
 | hughesj | Jeremy Hughes |
 | hulk | [Tianyi Lin](https://github.com/git-hulk) | [Kvrocks](https://kvrocks.apache.org) |
 | humbedooh | Daniel Gruno | [httpd](https://httpd.apache.org/), [Traffic Server](https://trafficserver.apache.org), [Kibble](https://kibble.apache.org), [STeVe](https://steve.apache.org), [Pony Mail](https://ponymail.apache.org) |
-| huxing | Huxing Zhang | [Tomcat](http://tomcat.apache.org), [Dubbo](http://dubbo.apache.org) |
+| huxing | Huxing Zhang | [Tomcat](https://tomcat.apache.org), [Dubbo](http://dubbo.apache.org) |
 | hxd | Xiangdong Huang | [IoTDB](https://iotdb.apache.org) |
 | hyunsik | Hyunsik Choi | [Tajo](http://tajo.apache.org) |
 | ieb | [Ian Boston](http://www.tfd.co.uk/) | [Sling](http://sling.apache.org/),  [Shindig](http://shindig.apache.org)|
@@ -212,11 +212,11 @@ This table shows current members who have manually added themselves to it – it
 | jan | Jan Lehnardt | CouchDB |
 | jani | Jan Iversen | |
 | jbellis | Jonathan Ellis |
-| jbonofre | [Jean-Baptiste Onofré](https://nanthrax.blogspot.com) | [ActiveMQ](http://activemq.apache.org), [Archiva](http://archiva.apache.org), [Aries](http://aries.apache.org), [Bahir](http://bahir.apache.org), [Beam](http://beam.apache.org), [Brooklyn](http://brooklyn.apache.org), [BRPC](http://brpc.apache.org), [Camel](http://camel.apache.org), [CarbonData](http://carbondata.apache.org), [EventMesh](http://eventmesh.apache.org), [Felix](http://felix.apache.org), [Geronimo](http://geronimo.apache.org), [Gobblin](http://gobblin.apache.org), [Guacamole](http://guacamole.apache.org), [Incubator](http://incubator.apache.org), [InLong](http://inlong.apache.org), [jClouds](http://jclouds.apache.org), [Karaf](http://karaf.apache.org), [Liminal](http://liminal.apache.org), [Livy](http://livy.apache.org), [Nemo](http://nemo.apache.org), [Seatunnel](http://seatunnel.apache.org), [Sedona](http://sedona.apache.org), [ServiceComb](http://servicecomb.apache.org), [ServiceMix](http://servicemix.apache.org), [Shiro](http://shiro.apache.org), [Streampipes](http://streampipes.apache.org), [Syncope](http://syncope.apache.org), [Tuweni](http://tuweni.apache.org), [Unomi](http://unomi.apache.org), [Wayang](http://wayang.apache.org)|
+| jbonofre | [Jean-Baptiste Onofré](https://nanthrax.blogspot.com) | [ActiveMQ](http://activemq.apache.org), [Archiva](http://archiva.apache.org), [Aries](http://aries.apache.org), [Bahir](http://bahir.apache.org), [Beam](http://beam.apache.org), [Brooklyn](http://brooklyn.apache.org), [BRPC](http://brpc.apache.org), [Camel](http://camel.apache.org), [CarbonData](http://carbondata.apache.org), [EventMesh](https://eventmesh.apache.org), [Felix](http://felix.apache.org), [Geronimo](http://geronimo.apache.org), [Gobblin](http://gobblin.apache.org), [Guacamole](http://guacamole.apache.org), [Incubator](https://incubator.apache.org), [InLong](http://inlong.apache.org), [jClouds](http://jclouds.apache.org), [Karaf](http://karaf.apache.org), [Liminal](http://liminal.apache.org), [Livy](http://livy.apache.org), [Nemo](http://nemo.apache.org), [Seatunnel](http://seatunnel.apache.org), [Sedona](http://sedona.apache.org), [ServiceComb](http://servicecomb.apache.org), [ServiceMix](http://servicemix.apache.org), [Shiro](http://shiro.apache.org), [Streampipes](http://streampipes.apache.org), [Syncope](http://syncope.apache.org), [Tuweni](http://tuweni.apache.org), [Unomi](http://unomi.apache.org), [Wayang](http://wayang.apache.org)|
 | jcamacho | Jesús Camacho Rodríguez | [Calcite](http://calcite.apache.org/), [Hive](http://hive.apache.org/), [ORC](http://orc.apache.org/) |
 | jcorvel | Johan Corveleyn | [Subversion](http://subversion.apache.org/) |
 | jeagles | Jonathan Eagles | [Hadoop](http://hadoop.apache.org) ; [Tez](http://tez.apache.org/) |
-| jerenkrantz | [Justin Erenkrantz](http://www.erenkrantz.com/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [commons](http://commons.apache.org/) , prc , infrastructure|
+| jerenkrantz | [Justin Erenkrantz](http://www.erenkrantz.com/) | [httpd](https://httpd.apache.org/) , [APR](http://apr.apache.org/) , [commons](https://commons.apache.org/) , prc , infrastructure|
 | jerpelea | Alin Jerpelea | [NuttX RTOS](https://nuttx.apache.org/) |
 | jerrytan | Jerry Tan (Tanzhongyi) | brpc |
 | jesus | Theo Schlossnagle |
@@ -224,100 +224,100 @@ This table shows current members who have manually added themselves to it – it
 | jfclere | Jean-Frederic Clere |
 | jgenender | Jeff Genender |
 | jghoman | Jakob Homan | [Hadoop](http://hadoop.apache.org) [Kafka](https://kafka.apache.org/) [Samza](https://samza.apache.org/) [Airflow](https://airflow.apache.org/) |
-| jhm | Jan Materne | [Ant](http://ant.apache.org) |
-| jhyde | [Julian Hyde](http://home.apache.org/~jhyde/) | [Arrow](http://arrow.apache.org/), [Calcite](http://calcite.apache.org/), [Drill](http://drill.apache.org/), [Kylin](http://kylin.apache.org/)
+| jhm | Jan Materne | [Ant](https://ant.apache.org) |
+| jhyde | [Julian Hyde](https://home.apache.org/~jhyde/) | [Arrow](http://arrow.apache.org/), [Calcite](http://calcite.apache.org/), [Drill](http://drill.apache.org/), [Kylin](http://kylin.apache.org/)
 | jim | [Jim Jagielski](http://www.jaguNET.com/jim.html) | lots|
 | jinterrante | John Interrante | [Daffodil](https://daffodil.apache.org/) |
 | jitendra | Jitendra Pandey |  [Ozone](https://ozone.apache.org/), [Hadoop](https://hadoop.apache.org/)
 | jlaskowski | Jacek Laskowski |
-| jleroux | Jacques Le Roux | [OFBiz](http://ofbiz.apache.org), [Incubator](http://incubator.apache.org/) | 
+| jleroux | Jacques Le Roux | [OFBiz](http://ofbiz.apache.org), [Incubator](https://incubator.apache.org/) | 
 | jlk | John Kinsella | [CloudStack](https://cloudstack.apache.org) | 
 | jlowe | Jason Lowe | [Hadoop](http://hadoop.apache.org) , [Tez](http://tez.apache.org/) |
-| jmckenzie | Josh McKenzie | [Cassandra](http://cassandra.apache.org) |
-| jmclean | Justin Mclean | [Flex](http://flex.apache.org/) ; [Incubator](http://incubator.apache.org/)|
+| jmckenzie | Josh McKenzie | [Cassandra](https://cassandra.apache.org) |
+| jmclean | Justin Mclean | [Flex](http://flex.apache.org/) ; [Incubator](https://incubator.apache.org/)|
 | jnioche | Julien Nioche |
 | joehni | Jörg Schaible |
 | joern | Jörn Kottmann | [UIMA](http://uima.apache.org/) ; [OpenNLP](http://opennlp.apache.org/)|
 | joewitt | Joe Witt | [NiFi](https://nifi.apache.org/)|
 | jogep | [Johannes Geppert](https://www.jgeppert.com) | [Struts](https://struts.apache.org/) |
-| jon | [Jon Scott Stevens](http://www.whichever.com/) | [Ant](http://ant.apache.org/) ; [ECS](http://jakarta.apache.org/ecs/) ; [ORO](http://jakarta.apache.org/oro/) ; [Regexp](http://jakarta.apache.org/regexp/) ; [Tomcat](http://jakarta.apache.org/tomcat/) ; [Velocity](http://jakarta.apache.org/velocity/) ; [James](http://james.apache.org/) ; [Jetspeed](http://jakarta.apache.org/jetspeed/) ; [JServ](http://java.apache.org/jserv/) ; [Jyve](http://java.apache.org/jyve/) ; [Turbine](http://java.apache.org/turbine/)|
+| jon | [Jon Scott Stevens](http://www.whichever.com/) | [Ant](https://ant.apache.org/) ; [ECS](http://jakarta.apache.org/ecs/) ; [ORO](http://jakarta.apache.org/oro/) ; [Regexp](http://jakarta.apache.org/regexp/) ; [Tomcat](http://jakarta.apache.org/tomcat/) ; [Velocity](http://jakarta.apache.org/velocity/) ; [James](http://james.apache.org/) ; [Jetspeed](http://jakarta.apache.org/jetspeed/) ; [JServ](http://java.apache.org/jserv/) ; [Jyve](http://java.apache.org/jyve/) ; [Turbine](http://java.apache.org/turbine/)|
 | jonesde | David E. Jones |
-| jorton | Joe Orton | [APR](http://apr.apache.org/) ; [httpd](http://httpd.apache.org/)|
+| jorton | Joe Orton | [APR](http://apr.apache.org/) ; [httpd](https://httpd.apache.org/)|
 | jrthomerson | [Jeremy Thomerson](http://jeremythomerson.com) |
-| jsdelfino | [Jean-Sebastien Delfino](http://jsdelfino.blogspot.com/) | [Tuscany](http://tuscany.apache.org/) , [Nuvem](http://incubator.apache.org/nuvem/)|
+| jsdelfino | [Jean-Sebastien Delfino](http://jsdelfino.blogspot.com/) | [Tuscany](http://tuscany.apache.org/) , [Nuvem](https://incubator.apache.org/nuvem/)|
 | julianfoad | Julian Foad |
 | julien | [Julien Le Dem](https://twitter.com/J_) | [Parquet](http://parquet.apache.org) , [Arrow](http://arrow.apache.org), [Pig](http://pig.apache.org), [Tez](http://tez.apache.org) |
 | juzhiyuan | [Zhiyuan Ju](https://twitter.com/jjzhiyuan) | [APISIX](https://apisix.apache.org) |
 | jvanzyl | [Jason van Zyl](http://www.sonatype.com/people/author/jason) |
 | jxue | Junkai Xue | [Helix](https://helix.apache.org/) |
 | jzemerick | Jeff Zemerick |
-| kamaci | [Furkan KAMACI](http://home.apache.org/~kamaci) | [Gora](http://gora.apache.org), [Nutch](http://nutch.apache.org), [ManifoldCF](https://manifoldcf.apache.org/)|
+| kamaci | [Furkan KAMACI](https://home.apache.org/~kamaci) | [Gora](http://gora.apache.org), [Nutch](http://nutch.apache.org), [ManifoldCF](https://manifoldcf.apache.org/)|
 | kanchana | Kanchana Pradeepika Welagedara |
-| karanjeet | [Karanjeet Singh](http://people.apache.org/phonebook.html?uid=karanjeet) | [Nutch](http://nutch.apache.org), [DRAT](https://drat.apache.org)|
-| ke4qqq | [David Nalley](http://ke4qqq.wordpress.com) | [CloudStack](http://cloudstack.apache.org), [jclouds](http://jclouds.apache.org), [Incubator](http://incubator.apache.org), Infrastructure|
+| karanjeet | [Karanjeet Singh](https://people.apache.org/phonebook.html?uid=karanjeet) | [Nutch](http://nutch.apache.org), [DRAT](https://drat.apache.org)|
+| ke4qqq | [David Nalley](http://ke4qqq.wordpress.com) | [CloudStack](http://cloudstack.apache.org), [jclouds](http://jclouds.apache.org), [Incubator](https://incubator.apache.org), Infrastructure|
 | keith | Keith Wannamaker |
 | kelly | Sean Kelly | [OODT](http://oodt.apache.org/)|
 | kenn | Kenneth Knowles | [Beam](https://beam.apache.org), [Incubator](https://incubator.apache.org), [Datasketches (incubating)](https://github.com/apache/incubator-datasketches), [Training (incubating)](https://training.apache.org) |
-| kess | [Astrid Malo](mailto:kess@apache.org) | [httpd](http://httpd.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
+| kess | [Astrid Malo](mailto:kess@apache.org) | [httpd](https://httpd.apache.org/) ; [httpd-docs](https://httpd.apache.org/docs-project/)|
 | kevan | Kevan Miller |
 | kezhenxu94 | [Zhenxu Ke](https://github.com/kezhenxu94) | [SkyWalking](https://skywalking.apache.org) |
 | kfogel | Karl Fogel |
 | khmarbaise | [Karl Heinz Marbaise](https://github.com/khmarbaise) | [Maven](https://maven.apache.org) [Creadur](https://creadur.apache.org) |
 | kihwal | Kihwal Lee | [Hadoop](http://hadoop.apache.org) |
 | kinow | [Bruno P. Kinoshita](https://github.com/kinow/) | [Commons](https://commons.apache.org/), [Jena](https://jena.apache.org/), [OpenNLP](https://opennlp.apache.org/), [SIS](https://sis.apache.org/) |
-| kiwiwings | Andreas Beeker | [POI](http://poi.apache.org) |
-| kkolinko | Konstantin Kolinko | [Tomcat](http://tomcat.apache.org), [Gump](http://gump.apache.org) |
+| kiwiwings | Andreas Beeker | [POI](https://poi.apache.org) |
+| kkolinko | Konstantin Kolinko | [Tomcat](https://tomcat.apache.org), [Gump](https://gump.apache.org) |
 | kkrugler | Kenneth William Krugler |
 | koji | Koji Sekiguchi | [Lucene](https://lucene.apache.org/core/) , [Solr](http://lucene.apache.org/solr/) , [OpenNLP](https://opennlp.apache.org/) |
 | ksobkowiak | Krzysztof Sobkowiak | [ServiceMix](http://servicemix.apache.org/) |
 | kwin | Konrad Windszus | [Sling](https://sling.apache.org/) , [Jackrabbit](https://jackrabbit.apache.org/) |
-| lars | Lars Eilebrecht | [httpd](http://httpd.apache.org/) , [httpd-docs](http://httpd.apache.org/docs-project/) , [ApacheCon](http://www.apachecon.com/) , fund-raising|
+| lars | Lars Eilebrecht | [httpd](https://httpd.apache.org/) , [httpd-docs](https://httpd.apache.org/docs-project/) , [ApacheCon](http://www.apachecon.com/) , fund-raising|
 | larsfrancke | [Lars Francke](http://www.opencore.com) | [HBase](https://hbase.apache.org), [Hive](https://hive.apache.org), ORC |
 | larsgeorge | [Lars George](http://www.larsgeorge.com) | [HBase](https://hbase.apache.org/) |
-| larsh | Lars Hofhansl | [HBase](http://hbase.apache.org/) , [Incubator](http://incubator.apache.org/) , [Phoenix](http://phoenix.apache.org/) |
+| larsh | Lars Hofhansl | [HBase](http://hbase.apache.org/) , [Incubator](https://incubator.apache.org/) , [Phoenix](http://phoenix.apache.org/) |
 | leerho | [Lee Rhodes](mailto:leerho@gmail.com) | [DataSketches](https://datasketches.apache.org) |
 | lehmi | Andreas Lehmkühler | [PDFBox](http://pdfbox.apache.org/)|
 | lektran | Scott Gray | [OFBiz](http://ofbiz.apache.org)  |
-| lewismc | [Lewis John McGibbney](http://home.apache.org/~lewismc) | [Nutch](http://nutch.apache.org), [Gora](http://gora.apache.org), [Any23](http://any23.apache.org), [Tika](http://tika.apache.org), [OODT](http://oodt.apache.org), [Open Climate Workbench](http://climate.apache.org), [Usergrid](http://usergrid.apache.org), [Joshua](http://joshua.apache.org)|
+| lewismc | [Lewis John McGibbney](https://home.apache.org/~lewismc) | [Nutch](http://nutch.apache.org), [Gora](http://gora.apache.org), [Any23](http://any23.apache.org), [Tika](http://tika.apache.org), [OODT](http://oodt.apache.org), [Open Climate Workbench](http://climate.apache.org), [Usergrid](http://usergrid.apache.org), [Joshua](http://joshua.apache.org)|
 | lhotari | Lari Hotari | [Pulsar](https://pulsar.apache.org)|
-| liuxun | Xun Liu | [Incubator](http://incubator.apache.org/) , [Hadoop](https://hadoop.apache.org) , [Zeppelin](https://zeppelin.apache.org)|
+| liuxun | Xun Liu | [Incubator](https://incubator.apache.org/) , [Hadoop](https://hadoop.apache.org) , [Zeppelin](https://zeppelin.apache.org)|
 | liyu | Yu Li | [Flink](https://flink.apache.org/), [HBase](https://hbase.apache.org/), [Incubator](https://incubator.apache.org/) |
 | lresende | Luciano Resende |
 | luke1410 | [Stefan Hett](http://www.luke1410.de/) | [Subversion](https://subversion.apache.org/) ; [APR](https://apr.apache.org/) |
 | lukehan | Luke Han | [Kylin](http://kylin.apache.org)|
-| mads | [Mads Toftum](http://www.toftum.org/) | [httpd-docs](http://httpd.apache.org/docs-project/)|
-| manoj | [Manoj Kasichainula](http://www.io.com/~manojk/) | [httpd](http://httpd.apache.org/)|
+| mads | [Mads Toftum](http://www.toftum.org/) | [httpd-docs](https://httpd.apache.org/docs-project/)|
+| manoj | [Manoj Kasichainula](http://www.io.com/~manojk/) | [httpd](https://httpd.apache.org/)|
 | marcelk | Marcel Kinard | [Cordova](http://cordova.apache.org/) |
 | marcus | Marcus Lange | [OpenOffice](http://openoffice.apache.org) |
 | markt | Mark Thomas |
-| marrs | Marcel Offermans | [ACE](http://incubator.apache.org/ace) ; [Felix](http://felix.apache.org/)|
+| marrs | Marcel Offermans | [ACE](https://incubator.apache.org/ace) ; [Felix](http://felix.apache.org/)|
 | mattsicker | Matt Sicker | [Logging](https://logging.apache.org/) |
 | matzew | [Matthias Wessendorf](http://matthiaswessendorf.wordpress.com/) |
 | mbenson | Matt Benson |
 | mbrohl | Michael Brohl | [OFBiz](http://ofbiz.apache.org) |
-| mck | Mick Semb Wever | [Cassandra](http://cassandra.apache.org), [SkyWalking](http://skywalking.apache.org), [Incubator](http://incubator.apache.org), [Tiles](http://tiles.apache.org) |
+| mck | Mick Semb Wever | [Cassandra](https://cassandra.apache.org), [SkyWalking](http://skywalking.apache.org), [Incubator](https://incubator.apache.org), [Tiles](http://tiles.apache.org) |
 | mdedetrich | [Matthew de Detrich](https://github.com/mdedetrich) | [Pekko](https://pekko.apache.org) |
 | mduerig | Michael Dürig | [Jackrabbit](http://jackrabbit.apache.org/), [Chemistry](http://chemistry.apache.org/), [Sling](http://sling.apache.org/)|
 | meonkeys | [Adam Monsen](https://adammonsen.com) | [Fineract](https://fineract.apache.org) |
-| mfranklin | [Matt Franklin](http://twitter.com/mattfranklin) | [Rave](http://rave.apache.org), [Incubator](http://incubator.apache.org) |
-| mgrigorov | [Martin Tzvetanov Grigorov](https://twitter.com/mtgrigorov) | [Avro](http://avro.apache.org/), [Isis](http://isis.apache.org/), [Tomcat](http://tomcat.apache.org/), [Wicket](http://wicket.apache.org/) |
+| mfranklin | [Matt Franklin](http://twitter.com/mattfranklin) | [Rave](http://rave.apache.org), [Incubator](https://incubator.apache.org) |
+| mgrigorov | [Martin Tzvetanov Grigorov](https://twitter.com/mtgrigorov) | [Avro](http://avro.apache.org/), [Isis](http://isis.apache.org/), [Tomcat](https://tomcat.apache.org/), [Wicket](http://wicket.apache.org/) |
 | michi | [Michael Wechner](http://www.wyona.com/people/michael-wechner/index.html) | [Lenya](http://lenya.apache.org/) ; [Cocoon](http://cocoon.apache.org/)|
 | mikemccand | Michael McCandless |
-| milamber | [Bruno Demion](http://home.apache.org/~milamber/) | [JMeter](http://jmeter.apache.org/) , [CloudStack](http://cloudstack.apache.org/) |
+| milamber | [Bruno Demion](https://home.apache.org/~milamber/) | [JMeter](http://jmeter.apache.org/) , [CloudStack](http://cloudstack.apache.org/) |
 | milinda | [Milinda Pathirage](http://milinda.pathirage.org) | [Axis](http://axis.apache.org) ; [ODE](http://ode.apache.org) ; [Airavata](http://airavata.apache.org) |
 | minfrin | Graham Leggett | httpd apr|
-| mjc | [Mark Cox](http://www.awe.com/mark/) | [httpd](http://httpd.apache.org/)|
-| mkienenb | Mike Kienenberger | [Cayenne](http://cayenne.apache.org/) ; [MyFaces](http://myfaces.apache.org/)|
+| mjc | [Mark Cox](http://www.awe.com/mark/) | [httpd](https://httpd.apache.org/)|
+| mkienenb | Mike Kienenberger | [Cayenne](https://cayenne.apache.org/) ; [MyFaces](http://myfaces.apache.org/)|
 | mnour | Mohammad Nour El-Din |
 | mreutegg | Marcel Reutegger |
-| mrglavas | [Michael Glavassevich](http://home.apache.org/~mrglavas/) | [Xerces-J](http://xerces.apache.org/xerces2-j/) , [XML Commons](http://xml.apache.org/commons/)|
-| mvdb | [Martin van den Bemt](http://www.mvdb.org/) | [Jakarta](http://jakarta.apache.org/) , [Db DDLUtils](http://db.apache.org/ddlutils) , [Gump](http://gump.apache.org)|
+| mrglavas | [Michael Glavassevich](https://home.apache.org/~mrglavas/) | [Xerces-J](http://xerces.apache.org/xerces2-j/) , [XML Commons](http://xml.apache.org/commons/)|
+| mvdb | [Martin van den Bemt](http://www.mvdb.org/) | [Jakarta](http://jakarta.apache.org/) , [Db DDLUtils](http://db.apache.org/ddlutils) , [Gump](https://gump.apache.org)|
 | myrle | Myrle Krantz | [Fineract](https://fineract.apache.org) |
 | nacx | Ignasi Barrera | [jclouds](http://jclouds.apache.org) |
 | nandika | Korale Gamaralalage Nandika Chandrasiri Jayawardana |
 | nash | Simon Nash |
 | nbubna | Nathan Bubna |
-| nd | André L. Malo | [httpd](http://httpd.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
+| nd | André L. Malo | [httpd](https://httpd.apache.org/) ; [httpd-docs](https://httpd.apache.org/docs-project/)|
 | ndbeyer | Nathan Beyer |
 | neilg | Neil Graham |
 | ngn | [Niklas Gustavsson](http://protocol7.com) | [MINA](http://mina.apache.org)|
@@ -325,27 +325,27 @@ This table shows current members who have manually added themselves to it – it
 | nick | Nick Burch |
 | nicoloboschi | Nicolò Boschi | [BookKeeper](https://bookkeeper.apache.org), [Pulsar](https://pulsar.apache.org) |
 | ningjiang | Willem Ning Jiang |[activemq](http://activemq.apache.org/);[camel](http://camel.apache.org);[cxf](http://cxf.apache.org); [doris](http://doris.apache.org); [iotdb](http://iotdb.apache.org); [rocketmq](http://rocketmq.apache.org); [servicecomb](http://servicecomb.apache.org); [servicemix](http://servicemix.apache.org); [shardingsphere](http://shardingsphere.apache.org); [skywalking](http://skywalking.apache.org); [weex](http://weex.apache.org); [zipkin](http://zipkin.apache.org)|
-| niq | [Nick Kew](http://home.apache.org/~niq/) | [APR](http://apr.apache.org/) ; [httpd](http://httpd.apache.org/)|
-| noel | Noel J. Bergman | [ApacheCon](http://www.apachecon.com/) , [incubator](http://incubator.apache.org/) , infrastructure , [James](http://james.apache.org/)|
+| niq | [Nick Kew](https://home.apache.org/~niq/) | [APR](http://apr.apache.org/) ; [httpd](https://httpd.apache.org/)|
+| noel | Noel J. Bergman | [ApacheCon](http://www.apachecon.com/) , [incubator](https://incubator.apache.org/) , infrastructure , [James](http://james.apache.org/)|
 | norman | Norman Maurer |
-| nslater | [Naomi Slater](http://home.apache.org/~nslater/) | [CouchDB](http://couchdb.apache.org/), [ComDev](https://community.apache.org/), [Incubator](http://incubator.apache.org/), [CloudStack](http://cloudstack.apache.org/), [Stratos](http://stratos.apache.org/), [MetaModel](https://metamodel.apache.org/)|
+| nslater | [Naomi Slater](https://home.apache.org/~nslater/) | [CouchDB](http://couchdb.apache.org/), [ComDev](https://community.apache.org/), [Incubator](https://incubator.apache.org/), [CloudStack](http://cloudstack.apache.org/), [Stratos](http://stratos.apache.org/), [MetaModel](https://metamodel.apache.org/)|
 | oching | Maria Odea B. Ching |
 | oflebbe | Olaf Flebbe |[Bigtop](http://bigtop.apache.org)|
 | oheger | Oliver Heger |
-| olamy | [Olivier Lamy](http://olamy.blogspot.com/) | [Maven](http://maven.apache.org/) ; [Continuum](http://continuum.apache.org/)|
+| olamy | [Olivier Lamy](http://olamy.blogspot.com/) | [Maven](http://maven.apache.org/) ; [Continuum](https://continuum.apache.org/)|
 | olegk | Oleg Kalnichevski |
-| omalley | [Owen O'Malley](http://home.apache.org/~omalley) |
-| orlikowski | Victor J. Orlikowski | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; BSF|
+| omalley | [Owen O'Malley](https://home.apache.org/~omalley) |
+| orlikowski | Victor J. Orlikowski | [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; BSF|
 | otluk | Lukas Ott | [PLC4X](https://plc4x.apache.org/) ;  [Streampipes](https://streampipes.apache.org/) |
 | ovilia | Zhang Wenli | [ECharts](https://echarts.apache.org/) |
 | painter | Jeffery Painter | [Turbine](https://turbine.apache.org/) ; [Torque](https://db.apache.org/torque)|
-| panjuan | [Trista Pan](https://tristazero.github.io/) | [ShardingSphere](https://shardingsphere.apache.org/) ; [Incubator](http://incubator.apache.org/)|
+| panjuan | [Trista Pan](https://tristazero.github.io/) | [ShardingSphere](https://shardingsphere.apache.org/) ; [Incubator](https://incubator.apache.org/)|
 | paulirwin | [Paul Irwin](https://github.com/paulirwin/) | [Lucene.NET](https://lucenenet.apache.org/) |
 | paulk | Paul King | [Groovy](https://groovy.apache.org), [incubator](https://incubator.apache.org/)
 | pauls | Karl Pauls |
 | perrin | Perrin Harkins | [mod_perl](http://perl.apache.org/)|
 | pescetti | Andrea Pescetti | [OpenOffice](http://openoffice.apache.org/) |
-| pgollucci | [Philip M. Gollucci](http://p6m7g8.com) | [mod_perl](http://perl.apache.org/) , [httpd-apreq](http://httpd.apache.org/apreq) ,httpd-test, apr, infrastructure|
+| pgollucci | [Philip M. Gollucci](http://p6m7g8.com) | [mod_perl](http://perl.apache.org/) , [httpd-apreq](https://httpd.apache.org/apreq) ,httpd-test, apr, infrastructure|
 | phunt | Patrick D. Hunt |
 | piergiorgio | [Piergiorgio Lucidi](https://www.open4dev.com) | [ManifoldCF](http://manifoldcf.apache.org/) , [ComDev](https://community.apache.org/)|
 | pietsch | Joerg Pietschmann |
@@ -353,9 +353,9 @@ This table shows current members who have manually added themselves to it – it
 | potiuk | [Jarek Potiuk](https://potiuk.com) | [Airflow](https://airflow.apache.org) |
 | pottlinger | Philipp Ottlinger | [Creadur](https://creadur.apache.org) |
 | pquerna | [Paul Querna](http://paul.querna.org/) |
-| priyasharma | Priya Sharma | [OFBiz](http://ofbiz.apache.org) ; [ComDev](http://community.apache.org)
+| priyasharma | Priya Sharma | [OFBiz](http://ofbiz.apache.org) ; [ComDev](https://community.apache.org)
 | proyal | [Peter Royal](http://fotap.org/~osi) |
-| psteitz | Phil Steitz | [Jakarta](http://jakarta.apache.org) ; [Directory](http://directory.apache.org)|
+| psteitz | Phil Steitz | [Jakarta](http://jakarta.apache.org) ; [Directory](https://directory.apache.org)|
 | ptgoetz | P. Taylor Goetz | [Storm](http://storm.apache.org) |
 | purplecabbage | Jesse MacFadyen | [Cordova](http://cordova.apache.org) |
 | quetwo | Nick Kwiatkowski |
@@ -364,7 +364,7 @@ This table shows current members who have manually added themselves to it – it
 | randgalt | Jordan Zimmerman | [Curator](http://curator.apache.org) |
 | raphael | Raphaël Luta |
 | raulcd | [Raúl Cumplido](https://github.com/raulcd) | [Arrow](http://arrow.apache.org/) |
-| rbowen | [Rich Bowen](http://www.rcbowen.com/) | [httpd](http://httpd.apache.org/) , [httpd-docs](http://httpd.apache.org/docs-project/) , [ApacheCon](http://www.apachecon.com/)|
+| rbowen | [Rich Bowen](http://www.rcbowen.com/) | [httpd](https://httpd.apache.org/) , [httpd-docs](https://httpd.apache.org/docs-project/) , [ApacheCon](http://www.apachecon.com/)|
 | rec | Richard Eckart de Castilho | [UIMA](http://uima.apache.org/) |
 | reinhard | Reinhard Poetz |
 | remm | Remy Maucherat | [Jakarta](http://jakarta.apache.org/)|
@@ -372,12 +372,12 @@ This table shows current members who have manually added themselves to it – it
 | reta | Andriy Redko | [CXF](https://cxf.apache.org/)|
 | rfrovarp | Richard Frovarp |
 | rgielen | [René Gielen](https://twitter.com/rgielen) | [Struts](https://struts.apache.org)|
-| rgoers | Ralph Goers | [Cocoon](http://cocoon.apache.org/) , [Commons](http://commons.apache.org/) , [Logging](http://logging.apache.org/) , [Maven](http://maven.apache.org/) , [Portals](http://portals.apache.org/)|
+| rgoers | Ralph Goers | [Cocoon](http://cocoon.apache.org/) , [Commons](https://commons.apache.org/) , [Logging](http://logging.apache.org/) , [Maven](http://maven.apache.org/) , [Portals](http://portals.apache.org/)|
 | rhillegas | Rick Hillegas | [Derby](http://db.apache.org/derby/)|
 | rhuijben | Bert Huijben | [Subversion](http://subversion.apache.org/)|
 | richard | Richard Downer | [Brooklyn](http://brooklyn.apache.org) |
 | rickhall | Richard Hall |
-| rjung | Rainer Jung | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/) , [Tomcat](http://tomcat.apache.org/)|
+| rjung | Rainer Jung | [httpd](https://httpd.apache.org/) , [APR](http://apr.apache.org/) , [Tomcat](https://tomcat.apache.org/)|
 | rlenferink | Roy Lenferink | [Celix](https://celix.apache.org), [ComDev](https://community.apache.org) |
 | rmannibucau | Romain Manni-Bucau | [aries](https://aries.apache.org), [bval](https://bval.apache.org), [commons](https://commons.apache.org), [deltaspike](https://deltaspike.apache.org), [geronimo](https://geronimo.apache.org), [incubator](https://incubator.apache.org), [johnzon](https://johnzon.apache.org), [maven](https://maven.apache.org), [member](https://member.apache.org), [openjpa](https://openjpa.apache.org), [openwebbeans](https://openwebbeans.apache.org), [tomee](https://tomee.apache.org) |
 | rnewson | Robert Newson | [CouchDB](http://couchdb.apache.org) |
@@ -388,33 +388,33 @@ This table shows current members who have manually added themselves to it – it
 | rpluem | [Rüdiger Plüm](mailto:rpluem@apache.org) |
 | rskraba | [Ryan Skraba](https://skraba.com/) | [Avro](http://avro.apache.org/), [Training (incubating)](https://training.apache.org) |
 | rubenql | Ruben Quesada Lopez | [Calcite](https://calcite.apache.org) |
-| rubys | [Sam Ruby](http://www.intertwingly.net/blog/) |  [Ant](http://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/) ; [PHP](http://www.php.net/) ; [XML](http://xml.apache.org)|
-| rvesse | Rob Vesse | [Jena](http://jena.apache.org), [Incubator](http://incubator.apache.org) |
-| rvs | Roman Shaposhnik | [Bigtop](http://bigtop.apache.org), [Celix](http://celix.apache.org), [ComDev](http://community.apache.org), [Geode](http://geode.apache.org), [Giraph](http://giraph.apache.org), [Groovy](http://groovy.apache.org), [Hadoop](http://hadoop.apache.org), [Ignite](http://ignite.apache.org), [Incubator](http://incubator.apache.org), [Zest](http://zest.apache.org) |
+| rubys | [Sam Ruby](http://www.intertwingly.net/blog/) |  [Ant](https://ant.apache.org/) ; [Jakarta](http://jakarta.apache.org/) ; [PHP](http://www.php.net/) ; [XML](http://xml.apache.org)|
+| rvesse | Rob Vesse | [Jena](http://jena.apache.org), [Incubator](https://incubator.apache.org) |
+| rvs | Roman Shaposhnik | [Bigtop](http://bigtop.apache.org), [Celix](http://celix.apache.org), [ComDev](https://community.apache.org), [Geode](http://geode.apache.org), [Giraph](http://giraph.apache.org), [Groovy](http://groovy.apache.org), [Hadoop](http://hadoop.apache.org), [Ignite](http://ignite.apache.org), [Incubator](https://incubator.apache.org), [Zest](http://zest.apache.org) |
 | rxin | [Reynold Xin](http://rxin.org) | [Spark](http://spark.apache.org) |
 | rzo1 | Richard Zowalla |
 | sai_boorlagadda | Sai Boorlagadda | [Geode](https://geode.apache.org/) |
-| sanders | [Scott Sanders](http://dotnot.org/blog/) | [Jakarta](http://jakarta.apache.org/) ; [commons](http://commons.apache.org/) ; [Gump](http://gump.apache.org/) ; colo-keys|
+| sanders | [Scott Sanders](http://dotnot.org/blog/) | [Jakarta](http://jakarta.apache.org/) ; [commons](https://commons.apache.org/) ; [Gump](https://gump.apache.org/) ; colo-keys|
 | sarowe | Steve Rowe | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) ; [Solr](http://lucene.apache.org/solr/)|
-| sascha | [Sascha Schumann](http://www.schumann.cx/) | [PHP](http://www.php.net/) ; [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
+| sascha | [Sascha Schumann](http://www.schumann.cx/) | [PHP](http://www.php.net/) ; [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | schor | Marshall Schor | [UIMA](http://uima.apache.org/) |
-| schultz | Christopher Schultz | [Tomcat](http://tomcat.apache.org/), [Velocity](http://velocity.apache.org/)|
-| sctemme | [Sander Temme](http://www.temme.net/sander/) | [httpd](http://httpd.apache.org/) ; [Gump](http://gump.apache.org/) ; [Labs](http://labs.apache.org/) ; Infrastructure|
+| schultz | Christopher Schultz | [Tomcat](https://tomcat.apache.org/), [Velocity](http://velocity.apache.org/)|
+| sctemme | [Sander Temme](http://www.temme.net/sander/) | [httpd](https://httpd.apache.org/) ; [Gump](https://gump.apache.org/) ; [Labs](http://labs.apache.org/) ; Infrastructure|
 | sdeboy | Scott Deboy |
 | seade | Scott Eade | [DB](http://db.apache.org/) , [Jakarta](http://jakarta.apache.org/) , [Turbine](http://turbine.apache.org/)|
 | sekikn | Kengo Seki | [Airflow](https://airflow.apache.org/), [Ambari](https://ambari.apache.org/), [Avro](https://avro.apache.org/), [Bigtop](https://bigtop.apache.org/), [Camel](https://camel.apache.org/), [Sedona](https://sedona.apache.org/), [Thrift](https://thrift.apache.org/), [Yetus](https://yetus.apache.org/) |
 | sgala | [Santiago Gala](http://memojo.com/memojowiki/Wiki.jsp?page=SantiagoGala) | [Jakarta](http://jakarta.apache.org/) , ws-wsrp4j|
-| shankar | Selvaratnam Uthaiyashankar | [Axis](http://axis.apache.org/) ; [Stonehenge](http://incubator.apache.org/projects/stonehenge.html) ; [Web Services](http://ws.apache.org/)|
+| shankar | Selvaratnam Uthaiyashankar | [Axis](http://axis.apache.org/) ; [Stonehenge](https://incubator.apache.org/projects/stonehenge.html) ; [Web Services](http://ws.apache.org/)|
 | sharan | Sharan Foga | [OFBiz](http://ofbiz.apache.org) |
 | shazron | Shazron Abdullah | [Cordova](http://cordova.apache.org) |
-| shv | [Konstantin V. Shvachko](http://home.apache.org/~shv) | [Hadoop](http://hadoop.apache.org) |
+| shv | [Konstantin V. Shvachko](https://home.apache.org/~shv) | [Hadoop](http://hadoop.apache.org) |
 | sidney | [Sidney Markowitz](http://sidney.com/) | [SpamAssassin](https://spamassassin.apache.org/) |
 | simoneg | Simone Gianni |
 | simonw | Simon Willnauer |
 | sjaranowski | [Sławomir Jaranowski](https://github.com/slawekjaranowski) | [Maven](https://maven.apache.org/) |
 | sk | Sally Khudairi |
 | slaws | Simon Laws |
-| smarru | [Suresh Marru](http://home.apache.org/~smarru/) | [Airavata](http://incubator.apache.org/airavata/) ; [Rave](http://rave.apache.org/) ; [Incubator](http://incubator.apache.org/)|
+| smarru | [Suresh Marru](https://home.apache.org/~smarru/) | [Airavata](https://incubator.apache.org/airavata/) ; [Rave](http://rave.apache.org/) ; [Incubator](https://incubator.apache.org/)|
 | smarthi | Suneel Marthi | [Mahout](http://mahout.apache.org) |
 | smckinney | Shawn McKinney | [Fortress](https://directory.apache.org/fortress/) |
 | snoopdave | Dave Johnson |
@@ -428,30 +428,30 @@ This table shows current members who have manually added themselves to it – it
 | sseth | Siddharth Seth | [Hadoop](http://hadoop.apache.org) ; [Tez](http://tez.apache.org/) ; [Hive](http://hive.apache.org/)|
 | stack | Michael Stack |
 | stain | [Stian Soiland-Reyes](http://orcid.org/0000-0001-9842-9718) | [Taverna](https://taverna.incubator.apache.org/) ; [Commons](https://commons.apache.org/) ; [Incubator](https://incubator.apache.org/)  |
-| stevehay | [Steve Hay](http://home.apache.org/~stevehay) | [mod_perl](http://perl.apache.org/) , [httpd-apreq](http://httpd.apache.org/apreq)|
-| stevel | Steve Loughran | [Ant](http://ant.apache.org/) ; [Axis](http://ws.apache.org/axis/)|
+| stevehay | [Steve Hay](https://home.apache.org/~stevehay) | [mod_perl](http://perl.apache.org/) , [httpd-apreq](https://httpd.apache.org/apreq)|
+| stevel | Steve Loughran | [Ant](https://ant.apache.org/) ; [Axis](http://ws.apache.org/axis/)|
 | stevenn | Steven Noels | [Cocoon](http://cocoon.apache.org/) ; [Forrest](http://xml.apache.org/forrest/)|
-| striker | Sander Striker | [APR](http://apr.apache.org/) ; [commons](http://commons.apache.org/) ; [httpd](http://httpd.apache.org/) ; [incubator](http://incubator.apache.org/) ; infrastructure|
+| striker | Sander Striker | [APR](http://apr.apache.org/) ; [commons](https://commons.apache.org/) ; [httpd](https://httpd.apache.org/) ; [incubator](https://incubator.apache.org/) ; infrastructure|
 | struberg | Mark Struberg |
 | suehle | Ruth Suehle |
 | sunilg | Sunil Govindan | [Hadoop](https://hadoop.apache.org), [Submarine](https://submarine.apache.org), [YuniKorn](https://yunikorn.apache.org), [Sedona](https://sedona.apache.org) |
 | sunlan | [Daniel Sun](https://sunlan.me) | [Groovy](http://groovy.apache.org) |
 | supun | Supun Kamburugamuva |
 | svogel | Sven Vogel | [CloudStack](http://cloudstack.apache.org) |
-| sylvain | [Sylvain Wallez](http://home.apache.org/~sylvain) | [Cocoon](http://cocoon.apache.org/) ; [Avalon](http://avalon.apache.org/)|
-| szetszwo | [Tsz-Wo Nicholas Sze](http://home.apache.org/~szetszwo) | [Ratis](http://ratis.apache.org/) ; [Ozone](http://ozone.apache.org/) ; [Hadoop](http://hadoop.apache.org/)|
+| sylvain | [Sylvain Wallez](https://home.apache.org/~sylvain) | [Cocoon](http://cocoon.apache.org/) ; [Avalon](http://avalon.apache.org/)|
+| szetszwo | [Tsz-Wo Nicholas Sze](https://home.apache.org/~szetszwo) | [Ratis](http://ratis.apache.org/) ; [Ozone](http://ozone.apache.org/) ; [Hadoop](http://hadoop.apache.org/)|
 | taher | Taher Alkhateeb | [OFBiz](http://ofbiz.apache.org/) |
 | talat | Talat Uyarer | [Nutch](https://nutch.apache.org/) ; [Gora](https://gora.apache.org/) |
-| tallison | Tim Allison | [PDFBox](http://pdfbox.apache.org/) ; [POI](http://poi.apache.org/) ; [Tika](http://tika.apache.org/) |
+| tallison | Tim Allison | [PDFBox](http://pdfbox.apache.org/) ; [POI](https://poi.apache.org/) ; [Tika](http://tika.apache.org/) |
 | tcurdt | [Torsten Curdt](https://torstencurdt.com) | [Cocoon](https://cocoon.apache.org/), [Commons](https://commons.apache.org/), [Jakarta](https://jakarta.apache.org/)|
 | tdunning | Ted Dunning |
 | tellison | Tim Ellison |
 | tgraves | Thomas Graves |
 | thiagohp | [Thiago H. de Paula Figueiredo](http://machina.com.br) | [Tapestry](http://tapestry.apache.org) |
-| thilina | [Thilina Gunarathne](http://home.apache.org/~thilina/) | [Airavata](http://airavata.apache.org/) ; [Axis](http://axis.apache.org/) ; [WS](http://ws.apache.org/)|
+| thilina | [Thilina Gunarathne](https://home.apache.org/~thilina/) | [Airavata](http://airavata.apache.org/) ; [Axis](http://axis.apache.org/) ; [WS](http://ws.apache.org/)|
 | thorsten | Thorsten Scherler |
 | tilmannz | Tilmann Zäschke |
-| tison | [Zili Chen](http://github.com/tisonkun) | [Curator](https://curator.apache.org/) ; [OpenDAL](https://github.com/apache/opendal) |
+| tison | [Zili Chen](https://github.com/tisonkun) | [Curator](https://curator.apache.org/) ; [OpenDAL](https://github.com/apache/opendal) |
 | tn | Thomas Neidhart |
 | todd | Todd Lipcon |
 | tomaz | Tomaz Muraus | [Libcloud](https://libcloud.apache.org) |
@@ -459,18 +459,18 @@ This table shows current members who have manually added themselves to it – it
 | tomj | [Tom Jordahl](http://tjordahl.blogspot.com/) | [Axis](http://ws.apache.org/axis)|
 | tommaso | Tommaso Teofili |
 | tpalsulich | Tyler Palsulich |
-| trawick | Jeff Trawick | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
+| trawick | Jeff Trawick | [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | tripod | Tobias Bocanegra | [Jackrabbit](http://jackrabbit.apache.org/)|
 | tv | Thomas Vandahl | [Turbine](http://turbine.apache.org/) ; [DB-Torque](http://db.apache.org/torque/) ; [Jakarta](http://jakarta.apache.org/) ; [Excalibur](http://excalibur.apache.org/)|
 | twice | [Mingyang Liu](https://github.com/PragmaTwice) | [Kvrocks](https://kvrocks.apache.org/) ; [Fory](https://fory.apache.org/) |
 | twilliams | [Tim Williams](http://williamstw.blogspot.com) |
 | uli | Ulrich Stärk |
-| umamahesh | [Uma Maheswara Rao G](https://home.apache.org/~umamahesh/umamahesh.html) | [Hadoop](http://hadoop.apache.org); [BookKeeper](http://bookkeeper.apache.org) |
-| uschindler | [Uwe Schindler](http://www.thetaphi.de/) | [Lucene](//lucene.apache.org/) , [POI](http://poi.apache.org/) |
+| umamahesh | [Uma Maheswara Rao G](https://home.apache.org/~umamahesh/umamahesh.html) | [Hadoop](http://hadoop.apache.org); [BookKeeper](https://bookkeeper.apache.org) |
+| uschindler | [Uwe Schindler](http://www.thetaphi.de/) | [Lucene](//lucene.apache.org/) , [POI](https://poi.apache.org/) |
 | vanto | [Tammo van Lessen](http://www.taval.de/) | [ODE](http://ode.apache.org)|
 | venkatesh | Venkatesh Seetharam |
-| vgritsenko | [Vadim Gritsenko](http://home.apache.org/~vgritsenko/) | [Cocoon](http://cocoon.apache.org/) , [Regexp](http://jakarta.apache.org/regexp/) , [Xindice](http://xml.apache.org/xindice/)|
-| vinodkv | [Vinod Kumar Vavilapalli](http://home.apache.org/~vinodkv) | [Hadoop](http://hadoop.apache.org) ; [Ambari](http://incubator.apache.org/ambari/); [TEZ](http://incubator.apache.org/projects/tez.html)|
+| vgritsenko | [Vadim Gritsenko](https://home.apache.org/~vgritsenko/) | [Cocoon](http://cocoon.apache.org/) , [Regexp](http://jakarta.apache.org/regexp/) , [Xindice](http://xml.apache.org/xindice/)|
+| vinodkv | [Vinod Kumar Vavilapalli](https://home.apache.org/~vinodkv) | [Hadoop](http://hadoop.apache.org) ; [Ambari](https://incubator.apache.org/ambari/); [TEZ](https://incubator.apache.org/projects/tez.html)|
 | vy | Volkan Yazıcı | [Logging](http://logging.apache.org/) |
 | wave | Dave Fisher | [POI](https://poi.apache.org/), [Incubator](https://incubator.apache.org/), [OpenOffice](https://openoffice.apache.org/), [Petri](https://petri.apache.org/), and others |
 | weber | Volker Weber | [MyFaces](http://myfaces.apache.org/)|
@@ -478,22 +478,22 @@ This table shows current members who have manually added themselves to it – it
 | wenming | [Ming Wen](mailto:wenming@apache.org) | [APISIX](https://apisix.apache.org) |
 | wilfreds | Wilfred Spiegelenburg | [Hadoop](https://hadoop.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | woonsan | [Woonsan Ko](http://woonsanko.blogspot.com/) | [Portals](https://portals.apache.org/) , [Commons](https://commons.apache.org/) , [FreeMarker](https://freemarker.apache.org/)|
-| wrowe | William A. Rowe, Jr. | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [httpd-docs](http://httpd.apache.org/docs-project/)|
-| wsanchez | [Wilfredo Sánchez](http://www.mit.edu/people/wsanchez/) |  [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
+| wrowe | William A. Rowe, Jr. | [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; [httpd-docs](https://httpd.apache.org/docs-project/)|
+| wsanchez | [Wilfredo Sánchez](http://www.mit.edu/people/wsanchez/) |  [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | wsmoak | [Wendy Smoak](http://www.wendysmoak.com) |  [Struts](https//struts.apache.org/) ; [MyFaces](http://myfaces.apache.org/) ; [Shale](http://shale.apache.org/)|
 | wusheng | Sheng Wu | [SkyWalking](https://skywalking.apache.org/) |
 | wwei | [Weiwei Yang](https://yangwwei.github.io) | [Hadoop](https://hadoop.apache.org), [Ozone](https://ozone.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | xinwang | [Xin Wang](https://people.apache.org/~xinwang/) | [Storm](https://storm.apache.org/) , [RocketMQ](https://rocketmq.apache.org/) , [IoTDB](https://iotdb.apache.org/) , [StreamPipes](https://streampipes.apache.org/) , [Incubator](https://incubator.apache.org/) |
 | xuanwo | [Xuanwo](https://bento.me/xuanwo) | [OpenDAL](https://opendal.apache.org/) |
 | xuefu | Xuefu Zhang | [Hive](http://hive.apache.org) ; [Pig](http://pig.apache.org) |
-| yao | [Kent Yao](http://github.com/yaooqinn) | [Amoro](http://amoro.apache.org) ; [Incubator](http://incubator.apache.org/) ; [Gluten](http://gluten.apache.org) ; [Kyuubi](http://kyuubi.apache.org) ; [Spark](http://spark.apache.org) ; [Submarine](http://submarine.apache.org) |
+| yao | [Kent Yao](https://github.com/yaooqinn) | [Amoro](http://amoro.apache.org) ; [Incubator](https://incubator.apache.org/) ; [Gluten](http://gluten.apache.org) ; [Kyuubi](http://kyuubi.apache.org) ; [Spark](http://spark.apache.org) ; [Submarine](http://submarine.apache.org) |
 | yegor | Yegor Kozlov |
-| ylavic | Yann Ylavic | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
+| ylavic | Yann Ylavic | [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | yonik | Yonik Seeley | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) ; [Solr](http://lucene.apache.org/solr/)|
 | zabetak | [Stamatis Zampetakis](https://people.apache.org/~zabetak/) | [Calcite](https://calcite.apache.org/), [Hive](https://hive.apache.org/)|
 | zihaoxiang | [ZiHao Xiang](https://github.com/SbloodyS) | [DolphinScheduler](https://dolphinscheduler.apache.org), [StreamPark](https://streampark.apache.org) |
 | zregvart | [Zoran Regvart](https://github.com/zregvart/) | [Camel](https://camel.apache.org) |
-| zwoop | [Leif Hedstrom](http://www.ogre.com) | [trafficserver](http://trafficserver.apache.org/), [trafficcontrol](http://trafficcontrol.apache.org/), [incubator](http://incubator.apache.org/) |
+| zwoop | [Leif Hedstrom](http://www.ogre.com) | [trafficserver](http://trafficserver.apache.org/), [trafficcontrol](http://trafficcontrol.apache.org/), [incubator](https://incubator.apache.org/) |
 
 
 ## Emeritus Members
@@ -523,7 +523,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | asavory | [Andrew Savory](http://www.andrewsavory.com/blog/) |
 | ask | [Ask Bjørn Hansen](http://www.askbjoernhansen.com/) |
 | assaf | Assaf Arkin |
-| awm | Aram W. Mirzadeh |  [httpd](http://httpd.apache.org/)|
+| awm | Aram W. Mirzadeh |  [httpd](https://httpd.apache.org/)|
 | balld | Donald Ball |
 | bdube | Brian M. Dubé |
 | berndf | [Bernd Fondermann](http://brainlounge.de) |
@@ -531,11 +531,11 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | billbarker | William Barker |
 | bimargulies | Benson Margulies |
 | bloritsch | Berin Loritsch |
-| bnicholes | Bradley Nicholes |  [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
+| bnicholes | Bradley Nicholes |  [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | boisvert | Alex Boisvert |
-| bojan | [Bojan Smojver](http://home.apache.org/~bojan/) |
+| bojan | [Bojan Smojver](https://home.apache.org/~bojan/) |
 | brianp | Brian Pane |
-| britter | Benedikt Ritter | [Commons](http://commons.apache.org) |
+| britter | Benedikt Ritter | [Commons](https://commons.apache.org) |
 | bruno | Bruno Dumon |
 | bryanduxbury | Bryan Duxbury |
 | caijunj | Jun Jie Cai |
@@ -543,45 +543,45 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | carnold | Curt Arnold |
 | cbegin | Clinton Begin |
 | cctrieloff | Carl Trieloff |
-| ccustine | [Chris Custine](http://blog.organicelement.com/) | [ServiceMix](http://servicemix.apache.org/) , [Karaf](http://karaf.apache.org/) , [Felix](http://felix.apache.org/) , [Directory Server](http://directory.apache.org/)|
+| ccustine | [Chris Custine](https://blog.organicelement.com/) | [ServiceMix](http://servicemix.apache.org/) , [Karaf](http://karaf.apache.org/) , [Felix](http://felix.apache.org/) , [Directory Server](https://directory.apache.org/)|
 | ceki | Ceki Gülcü | [Jakarta](http://jakarta.apache.org/) , log4j|
-| chinthaka | [Eran Chinthaka](http://home.apache.org/~chinthaka/) | [Axis2](http://ws.apache.org/axis2/) , [Axiom](http://ws.apache.org/commons/axiom/) , [Neethi](http://ws.apache.org/commons/policy/)|
+| chinthaka | [Eran Chinthaka](https://home.apache.org/~chinthaka/) | [Axis2](http://ws.apache.org/axis2/) , [Axiom](http://ws.apache.org/commons/axiom/) , [Neethi](http://ws.apache.org/commons/policy/)|
 | chirino | Hiram Chirino |
 | cholet | Eric Cholet |
 | chuck | Chuck Murcko |
 | claude | Claude N. Warren, Jr. | [Jena](http://jena.apache.org), [Commons Collections](https://commons.apache.org/proper/commons-collections/), [RAT](https://creadur.apache.org/rat/), [Incubator](https://incubator.apache.org), [Pekko (incubating)](https://pekko.apache.org/), [Cassandra](https://cassandra.apache.org), [Community over Code - EU (Formerly ApacheCon)](https://eu.communityovercode.org/) |
-| cliff | Cliff Skolnick | [httpd](http://httpd.apache.org/)|
+| cliff | Cliff Skolnick | [httpd](https://httpd.apache.org/)|
 | cliffs | Cliff Schmidt |
 | cmueller | Christian Müller | [Camel](http://camel.apache.org) |
 | costin | Doru Costin Manolache |
 | crichton | Dan Crichton |
-| cutting | [Doug Cutting](http://blog.lucene.com/) |
+| cutting | [Doug Cutting](https://blog.lucene.com/) |
 | damien | Damien F. Katz |
 | damitha | Damitha N.M. Kumarage |
 | damonc | Damon J. Courtney |
 | danielf | Daniel Fagerstrom |
-| davidw | [David N. Welton](http://www.dedasys.com/davidw/) | [tcl](http://tcl.apache.org) ; [libapreq](http://httpd.apache.org/apreq/)|
+| davidw | [David N. Welton](http://www.dedasys.com/davidw/) | [tcl](http://tcl.apache.org) ; [libapreq](https://httpd.apache.org/apreq/)|
 | dbertoni | David Bertoni |
 | dch | [Dave Cottlehuber](mailto:dch@apache.org) | [CouchDB](http://couchdb.apache.org) |
 | dgaudet | [Dean Gaudet](http://arctic.org/~dean/) |
 | djd | Daniel Debrunner |
 | dlr | Daniel L. Rall | [Turbine](http://java.apache.org/turbine/) ; [Velocity](http://jakarta.apache.org/velocity/) ; Jakarta Commons ; XML-RPC ; Infrastructure|
-| dos | [Daryl C. W. O'Shea](http://daryl.dostech.ca/) | [SpamAssassin](http://spamassassin.apache.org/)|
+| dos | [Daryl C. W. O'Shea](http://daryl.dostech.ca/) | [SpamAssassin](https://spamassassin.apache.org/)|
 | dougm | Doug MacEachern |
-| dreid | David Reid | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
+| dreid | David Reid | [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/)|
 | drtr | David Robinson |
 | duncan | James Duncan Davidson |
-| dwoods | [Donald Woods](http://home.apache.org/~dwoods/) |
-| ed | [Ed Korthof](mailto:ed@apache.org) | [httpd](http://httpd.apache.org/) ; [JServ](http://java.apache.org/jserv/)|
-| edwardyoon | [Edward J. Yoon](http://blog.udanax.org/) | [Hama](http://hama.apache.org/) |
+| dwoods | [Donald Woods](https://home.apache.org/~dwoods/) |
+| ed | [Ed Korthof](mailto:ed@apache.org) | [httpd](https://httpd.apache.org/) ; [JServ](http://java.apache.org/jserv/)|
+| edwardyoon | [Edward J. Yoon](https://blog.udanax.org/) | [Hama](http://hama.apache.org/) |
 | ekoneil | Eddie O'Neil |
-| erikabele | [Erik Abele](http://www.codefaktor.de/) | [HttpComponents](http://hc.apache.org/) , [httpd](http://httpd.apache.org/) , [httpd-docs](http://httpd.apache.org/docs-project/) , [incubator](http://incubator.apache.org/) , infrastructure|
+| erikabele | [Erik Abele](http://www.codefaktor.de/) | [HttpComponents](http://hc.apache.org/) , [httpd](https://httpd.apache.org/) , [httpd-docs](https://httpd.apache.org/docs-project/) , [incubator](https://incubator.apache.org/) , infrastructure|
 | evenisse | Emmanuel Venisse |
 | fanf | [Tony Finch](http://dotat.at/) |
-| fchrist | [Fabian Christ](http://home.apache.org/~fchrist/) | [Stanbol](http://stanbol.apache.org/) |
+| fchrist | [Fabian Christ](https://home.apache.org/~fchrist/) | [Stanbol](http://stanbol.apache.org/) |
 | fede | Federico Barbieri |
 | felicity | Theo Van Dinter |
-| fitz | [Brian W. Fitzpatrick](http://www.red-bean.com/fitz/) | [APR](http://apr.apache.org/) , [commons](http://commons.apache.org/) , [incubator](http://incubator.apache.org/)|
+| fitz | [Brian W. Fitzpatrick](http://www.red-bean.com/fitz/) | [APR](http://apr.apache.org/) , [commons](https://commons.apache.org/) , [incubator](https://incubator.apache.org/)|
 | fmeschbe | Felix Meschberger |
 | fmui | Florian Müller |
 | francisdb | Francis De Brabandere | [Empire-db](http://empire-db.apache.org/) |
@@ -594,9 +594,9 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | glenn | Glenn L. Nielsen |
 | glens | [Glen Stampoultzis](http://www.jroller.com/page/gstamp/) |
 | grahamd | Graham Dumpleton |
-| gregames | Greg Ames | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/)|
+| gregames | Greg Ames | [httpd](https://httpd.apache.org/) , [APR](http://apr.apache.org/)|
 | gregor | [Gregor J. Rothfuss](http://greg.abstrakt.ch) | [Lenya](http://lenya.apache.org/) ; [Cocoon](http://cocoon.apache.org/)|
-| grisha | [Gregory Trubetskoy](http://www.ispol.com/home/grisha/) | [httpd](http://httpd.apache.org/)|
+| grisha | [Gregory Trubetskoy](http://www.ispol.com/home/grisha/) | [httpd](https://httpd.apache.org/)|
 | gsingers | [Grant Ingersoll](http://www.grantingersoll.com) | [Lucene](http://lucene.apache.org/) : [Java](http://lucene.apache.org/java/) , [Mahout](http://lucene.apache.org/mahout) , [Solr](http://lucene.apache.org/solr/)|
 | hammant | Paul Hammant |
 | hemapani | [Srinath Perera](mailto:hperera@cs.indiana.edu) |
@@ -605,7 +605,7 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | horwat | Justyna Horwat | [Jakarta](http://jakarta.apache.org/) , colo-keys|
 | husted | Ted Husted |
 | hwright | [Hyrum K. Wright](http://www.hyrumwright.org/) |
-| ianh | [Ian Holsman](http://home.apache.org/~ianh/) | [httpd](http://httpd.apache.org/) , [APR](http://apr.apache.org/)|
+| ianh | [Ian Holsman](https://home.apache.org/~ianh/) | [httpd](https://httpd.apache.org/) , [APR](http://apr.apache.org/)|
 | igalic | Igor Galić |
 | ivaynberg | Igor Vaynberg |
 | jalkanen | [Janne Jalkanen](http://www.ecyrd.com/ButtUgly/) |
@@ -619,16 +619,16 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | jgray | Jonathan Gray |
 | jhunter | Jason Hunter | [Jakarta](http://jakarta.apache.org/) , JCP|
 | jimw | [Jim Winstead](http://trainedmonkey.com/) |
-| jm | [Justin Mason](http://jmason.org/) | [SpamAssassin](http://spamassassin.apache.org/) ; infrastructure|
+| jm | [Justin Mason](http://jmason.org/) | [SpamAssassin](https://spamassassin.apache.org/) ; infrastructure|
 | jmcnally | John McNally | [Jakarta](http://jakarta.apache.org/)|
 | joes | Joe Schaefer | httpd-apreq|
 | johan | Johan Oskarsson |
 | jplevyak | John Bradley Plevyak |
-| jstrachan | [James Strachan](http://home.apache.org/~jstrachan/) | [Jakarta](http://jakarta.apache.org/)|
+| jstrachan | [James Strachan](https://home.apache.org/~jstrachan/) | [Jakarta](http://jakarta.apache.org/)|
 | jta | Jean T. Anderson | [Derby](http://db.apache.org/derby/)|
 | juergen | Juergen Pill |
 | jukka | [Jukka Zitting](http://jukkaz.wordpress.com/) |  [Jackrabbit](http://jackrabbit.apache.org/)|
-| jvermillard | [Julien Vermillard](http://home.apache.org/~jvermillard) | [MINA](http://mina.apache.org/)|
+| jvermillard | [Julien Vermillard](https://home.apache.org/~jvermillard) | [MINA](http://mina.apache.org/)|
 | jwoolley | [Cliff Woolley](http://www.cs.virginia.edu/~jcw5q/) |
 | kawai | Hiroaki Kawai |
 | keiron | Keiron Liddle |
@@ -642,19 +642,19 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | lindner | Paul Lindner |
 | lrosen | Lawrence Rosen |
 | lvjing | Jing Lv |
-| madhawa | Madhawa Gunasekara | [Gora](http://gora.apache.org), [Incubator](http://incubator.apache.org/) |
+| madhawa | Madhawa Gunasekara | [Gora](http://gora.apache.org), [Incubator](https://incubator.apache.org/) |
 | magicaltrout | Tom Barber | [OODT](http://oodt.apache.org) |
 | manolito | Manfred Geiler | [MyFaces](http://myfaces.apache.org/)|
 | marc | Marc Slemko |
 | markrmiller | Mark Robert Miller |
-| martin | Martin Kraemer | [httpd](http://httpd.apache.org/) ; [PHP](http://www.php.net/)|
+| martin | Martin Kraemer | [httpd](https://httpd.apache.org/) ; [PHP](http://www.php.net/)|
 | martinc | Martin Cooper |
-| marvin | Marvin Humphrey | [Lucy](http://incubator.apache.org/lucy/), [Incubator](http://incubator.apache.org/)|
-| mattmann | [Chris A. Mattmann](http://sunset.usc.edu/~mattmann/) | [Tika](http://lucene.apache.org/tika/) ; [Nutch](http://lucene.apache.org/nutch/) ; [Lucene](http://lucene.apache.org/) ; [OODT](http://incubator.apache.org/projects/oodt.html) ; [SIS](http://incubator.apache.org/projects/sis.html)|
+| marvin | Marvin Humphrey | [Lucy](https://incubator.apache.org/lucy/), [Incubator](https://incubator.apache.org/)|
+| mattmann | [Chris A. Mattmann](http://sunset.usc.edu/~mattmann/) | [Tika](http://lucene.apache.org/tika/) ; [Nutch](http://lucene.apache.org/nutch/) ; [Lucene](http://lucene.apache.org/) ; [OODT](https://incubator.apache.org/projects/oodt.html) ; [SIS](https://incubator.apache.org/projects/sis.html)|
 | maxb | Max Oliver Bowsher |
 | minchau | Brian James Minchau |
 | mmarinschek | Martin Marinschek |
-| morgand | [Morgan Delagrange](http://home.apache.org/~morgand/) |
+| morgand | [Morgan Delagrange](https://home.apache.org/~morgand/) |
 | mrdon | Don Brown | [Struts](https://struts.apache.org/) , [Jakarta](http://jakarta.apache.org/)|
 | mriou | [Matthieu Riou](http://offthelip.org) |
 | mseidel | Matthias Seidel | [OpenOffice](https://openoffice.apache.org) |
@@ -665,35 +665,35 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | nwellnhof | Nick Wellnhofer | [lucy](http://lucy.apache.org)|
 | orcmid | [Dennis E. Hamilton](http://nfoWorks.org) | [OpenOffice](http://openoffice.apache.org/) |
 | otis | Otis Gospodnetic |
-| pamarcelot | Pierre-Arnaud Marcelot | [Directory](http://directory.apache.org/)|
+| pamarcelot | Pierre-Arnaud Marcelot | [Directory](https://directory.apache.org/)|
 | pburba | Paul Burba |
-| pcs | [Paul Sutton](http://www.awe.com/~paul/) | [httpd](http://httpd.apache.org/)|
-| pctony | [Tony Stevenson](http://blog.pc-tony.com/) |
+| pcs | [Paul Sutton](http://www.awe.com/~paul/) | [httpd](https://httpd.apache.org/)|
+| pctony | [Tony Stevenson](https://blog.pc-tony.com/) |
 | pero | Peter Rossbach |
 | peters | Peter Samuelson |
 | philip | Philip Martin |
 | phred | Fred Moyer |
-| pier | [Pier Paolo Fumagalli](http://home.apache.org/~pier/) |
+| pier | [Pier Paolo Fumagalli](https://home.apache.org/~pier/) |
 | pramirez | Paul Michael Ramirez |
 | psmith | Paul Jeffrey Smith |
 | pzf | Paul Fremantle |
 | quinlan | [Daniel Quinlan](http://www.pathname.com/~quinlan/) |
 | randy | Randy Terbush |
-| rasmus | [Rasmus Lerdorf](http://lerdorf.com) | [PHP](http://www.php.net/) ; [httpd](http://httpd.apache.org/)|
+| rasmus | [Rasmus Lerdorf](http://lerdorf.com) | [PHP](http://www.php.net/) ; [httpd](https://httpd.apache.org/)|
 | rbb | [Ryan Bloom](http://www.rkbloom.net/) |
-| rdonkin | Robert Burrell Donkin | [Jakarta](http://jakarta.apache.org/) , [James](http://james.apache.org/) , [Incubator](http://incubator.apache.org/) , Legal , Infrastructure , [Commons](http://commons.apache.org/)|
+| rdonkin | Robert Burrell Donkin | [Jakarta](http://jakarta.apache.org/) , [James](http://james.apache.org/) , [Incubator](https://incubator.apache.org/) , Legal , Infrastructure , [Commons](https://commons.apache.org/)|
 | reto | Reto Bachmann-Gmür | [clerezza](http://clerezza.apache.org), [stanbol](http://stanbol.apache.org) |
-| rfeng | [Raymond Feng (aka. Zhaohui Feng)](http://www.enjoyjava.com/) | [Tuscany](http://tuscany.apache.org/), [Wink](http://incubator.apache.org/wink/), [Nuvem](http://incubator.apache.org/nuvem/)|
+| rfeng | [Raymond Feng (aka. Zhaohui Feng)](http://www.enjoyjava.com/) | [Tuscany](http://tuscany.apache.org/), [Wink](https://incubator.apache.org/wink/), [Nuvem](https://incubator.apache.org/nuvem/)|
 | rgardler | [Ross Gardler](http://www.oss-watch.ac.uk/about/staff.xml) | [Cocoon](http://cocoon.apache.org/) , [Forrest](http://forrest.apache.org/)|
-| rhirsch | Richard Hirsch | [ESME](http://esme.apache.org/), [Incubator](http://incubator.apache.org/)|
+| rhirsch | Richard Hirsch | [ESME](http://esme.apache.org/), [Incubator](https://incubator.apache.org/)|
 | richter | Georg Richter |
 | rickmcguire | Rick McGuire | [Geronimo](http://geronimo.apache.org/) ; [OpenEJB](http://openejb.apache.org) ; [Aries](http://aries.apache.org) ; [Mina](http://mina.apache.org)|
-| ridruejo | [Daniel López Ridruejo](mailto:ridruejo@(no-spam)apache.org) | [httpd](http://httpd.apache.org/) ; [tcl](http://tcl.apache.org)|
+| ridruejo | [Daniel López Ridruejo](mailto:ridruejo@(no-spam)apache.org) | [httpd](https://httpd.apache.org/) ; [tcl](http://tcl.apache.org)|
 | rolandw | Roland Weber |
 | rooneg | Garrett Rooney | [APR](http://apr.apache.org/) ; infrastructure|
 | rse | [Ralf S. Engelschall](http://www.engelschall.com/) |
 | ruchithf | Ruchith Fernando |
-| ruwan | [Ruwan Linton](http://blog.ruwan.org) | [Synapse](http://synapse.apache.org) ; [Axis](http://axis.apache.org/) ; [Web Services](http://ws.apache.org/)  ; [Incubator](http://incubator.apache.org)|
+| ruwan | [Ruwan Linton](https://blog.ruwan.org) | [Synapse](http://synapse.apache.org) ; [Axis](http://axis.apache.org/) ; [Web Services](http://ws.apache.org/)  ; [Incubator](https://incubator.apache.org)|
 | rwaldhoff | Rodney Waldhoff |
 | sabob | Bob Schellink |
 | sameer | Sameer Parekh |
@@ -707,36 +707,36 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | scottcarey | Scott Carey | [Avro](http://avro.apache.org) |
 | sebgoa | [Sebastien Goasguen](http://sebgoa.blogspot.com) | [CloudStack](http://cloudstack.apache.org) , [Libcloud](http://libcloud.apache.org)|
 | sebor | Martin Sebor |
-| seelmann | Stefan Seelmann |  [Directory](http://directory.apache.org/)|
-| senaka | [Senaka Fernando](http://senaka.tel/) | [Axis](http://axis.apache.org/) , [Stonehenge](http://incubator.apache.org/projects/stonehenge.html) , [Web Services](http://ws.apache.org/)|
-| serge | [Serge Knystautas](mailto:sergek@lokitech.com) |  [James](http://james.apache.org/) ; [commons](http://commons.apache.org/) ; infrastructure|
+| seelmann | Stefan Seelmann |  [Directory](https://directory.apache.org/)|
+| senaka | [Senaka Fernando](http://senaka.tel/) | [Axis](http://axis.apache.org/) , [Stonehenge](https://incubator.apache.org/projects/stonehenge.html) , [Web Services](http://ws.apache.org/)|
+| serge | [Serge Knystautas](mailto:sergek@lokitech.com) |  [James](http://james.apache.org/) ; [commons](https://commons.apache.org/) ; infrastructure|
 | sgoeschl | Siegfried Goeschl |
 | simonetripodi | Simone Tripodi |
 | skitching | Simon Kitching |
-| slive | [Joshua Slive](http://slive.ca/) | [httpd-docs](http://httpd.apache.org/docs-project/) ; [httpd](http://httpd.apache.org/) ; infrastructure|
+| slive | [Joshua Slive](http://slive.ca/) | [httpd-docs](https://httpd.apache.org/docs-project/) ; [httpd](https://httpd.apache.org/) ; infrastructure|
 | spepping | [Simon Pepping](http://www.leverkruid.eu/) | [XML Graphics](http://xmlgraphics.apache.org/) ; [FOP](http://xmlgraphics.apache.org/fop/)|
 | ssb | Stig Bakken |
 | stas | [Stas Bekman](http://stason.org/) |
 | stefan | Stefan Guggisberg | [Jackrabbit](http://jackrabbit.apache.org/)|
-| stefano | [Stefano Mazzocchi](http://home.apache.org/~stefano/) |
+| stefano | [Stefano Mazzocchi](https://home.apache.org/~stefano/) |
 | sterling | Sterling Hughes |
 | steven | Steven Gill | [Cordova](http://cordova.apache.org) |
-| stoddard | Bill Stoddard | [APR](http://apr.apache.org/) ; [httpd](http://httpd.apache.org/) ; bsf|
+| stoddard | Bill Stoddard | [APR](http://apr.apache.org/) ; [httpd](https://httpd.apache.org/) ; bsf|
 | stsp | Stefan Sperling |
 | susie | Susan Wu |
 | sussman | Ben Collins-Sussman |
 | tandraschko | Thomas Andraschko | [DeltaSpike](https://deltaspike.apache.org/), [MyFaces](https://myfaces.apache.org/), [OpenWebBeans](https://openwebbeans.apache.org/), [TomEE](https://tomee.apache.org/), [BVal](https://bval.apache.org/)|
-| taylor | [David Sean Taylor](http://home.apache.org/~taylor/) | [Portals](http://portals.apache.org/)|
+| taylor | [David Sean Taylor](https://home.apache.org/~taylor/) | [Portals](http://portals.apache.org/)|
 | tfischer | Thomas Fischer |
 | thies | Thies C. Arntzen |
-| thommay | Thom May | [httpd](http://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; Infrastructure|
+| thommay | Thom May | [httpd](https://httpd.apache.org/) ; [APR](http://apr.apache.org/) ; Infrastructure|
 | tomdz | Thomas Dudziak |
 | tomwhite | [Tom White](http://lexemetech.com/) | [Hadoop](http://hadoop.apache.org)|
 | tonywu | Yue Hao Wu |
 | trustin | [Trustin Lee](http://gleamynode.net/) |
 | tucu | Alejandro Abdelnur |
-| twl | [Theodore W. Leung](http://www.sauria.com/~twl) | [XML](http://xml.apache.org) ; ws ; [incubator](http://incubator.apache.org/)|
-| ugo | [Ugo Cei](http://agylen.com/) | [Cocoon](http://cocoon.apache.org/) , [POI](http://poi.apache.org/)|
+| twl | [Theodore W. Leung](http://www.sauria.com/~twl) | [XML](http://xml.apache.org) ; ws ; [incubator](https://incubator.apache.org/)|
+| ugo | [Ugo Cei](http://agylen.com/) | [Cocoon](http://cocoon.apache.org/) , [POI](https://poi.apache.org/)|
 | uncled | David Nuescheler |
 | upayavira | [Upayavira](http://www.odoko.com) | [Lucene](http://lucene.apache.org) ; [Cocoon](http://cocoon.apache.org/) ; infrastructure|
 | veithen | [Andreas Veithen](http://veithen.github.io) |
@@ -748,8 +748,8 @@ Members may choose to move to [emeritus](/foundation/bylaws.html#4.2) status by 
 | wohali | [Joan Touzet](mailto:wohali@apache.org) | [CouchDB](http://couchdb.apache.org) |
 | woollard | David Matthew Woollard |
 | xli | Xiao-Feng Li |
-| yoavs | [Yoav Shapira](http://www.yoavshapira.com) | [Jakarta](http://jakarta.apache.org) ; [Logging](http://logging.apache.org) ; [Tomcat](http://tomcat.apache.org)|
-| yoshiki | Yoshiki Hayashi | [httpd-docs](http://httpd.apache.org/docs-project/)|
+| yoavs | [Yoav Shapira](http://www.yoavshapira.com) | [Jakarta](http://jakarta.apache.org) ; [Logging](http://logging.apache.org) ; [Tomcat](https://tomcat.apache.org)|
+| yoshiki | Yoshiki Hayashi | [httpd-docs](https://httpd.apache.org/docs-project/)|
 | zeev | Zeev Suraski |
 | zoe | Zoe Slattery |
 
