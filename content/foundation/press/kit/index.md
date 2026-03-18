@@ -116,9 +116,9 @@ The official event logo for Community Over Code, ASF's flagship annual event.
                 <li>Now you can save it and use as needed.</li>
             </ol>
             <!-- Change the js-files path here -->
-            <script type="text/javascript" src="overlays/poweredBy-overlay.js"></script>
+            <script src="overlays/poweredBy-overlay.js"></script>
             <noscript>Sorry, your browser settings do not support JavaScript!</noscript>
-            <form action="#" id="poweredBy_form" åonsubmit="return false;">
+            <form action="#" id="poweredBy_form" onsubmit="return false;">
                 <input id="poweredByImgFile" type="file" />
                 <br />
                 <input
