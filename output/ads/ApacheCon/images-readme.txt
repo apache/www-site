@@ -1,5 +1,5 @@
 (If you are looking for instructions about how to use the Ads server
-to help promote ApacheCon, then see http://apache.org/ads/adserver.txt)
+to help promote ApacheCon, then see https://apache.org/ads/adserver.txt)
 
 -------------------------------------------------
 How to generate the images for future conferences
