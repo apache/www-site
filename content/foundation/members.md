@@ -89,6 +89,7 @@ This table shows current members who have manually added themselves to it – it
 | centic | Dominik Stadler | [POI](http://poi.apache.org) |
 | cezar | [Cezar Cristian Andrei](http://cezarandrei.com) | [XMLBeans](http://xmlbeans.apache.org/) , [VXQuery](http://incubator.apache.org/vxquery/)|
 | cgivre | [Charles Givre](mailto:cgivre@apache.org) | [Drill](https://drill.apache.org), [Superset](https://superset.apache.org), [Calcite](https://calcite.apache.org) |
+| chengpan | [Cheng Pan](mailto:chengpan@apache.org) | [Celeborn](https://celeborn.apache.org), [Kyuubi](https://kyuubi.apache.org), [Spark](https://spark.apache.org), [Zeppelin](https://zeppelin.apache.org) |
 | chenpei | [Pei Chen](mailto:chenpei@apache.org) | [cTAKES](http://ctakes.apache.org) |
 | chipchilders | [Chip Childers](http://www.chipchilders.com/) | [CloudStack](http://cloudstack.apache.org) |
 | chrisg | Christian Geisert | [XML Graphics](http://xmlgraphics.apache.org/) , [FOP](http://xmlgraphics.apache.org/fop/)|
