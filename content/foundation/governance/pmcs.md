@@ -32,7 +32,7 @@ Infrastructure-related requirements, and ensuring their community
 operates within the basic outline of the Apache Way.
 
 PMC members nominate new contributors to the project as either committers or 
-as PMC members, and vote whether to elect elect new committers or 
+as PMC members, and vote whether to elect new committers or 
 PMC members. [PMC members also have binding votes on any project matters](/dev/pmc.html#faq).
 
 PMCs must have at least three (3) active members. This is because 

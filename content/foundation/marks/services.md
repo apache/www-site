@@ -163,7 +163,7 @@ service has an
 exclusive or controlling relationship with any Apache project or with the
 ASF as a whole, or with any service related to our products.
 
-For example, we woudl not permit a website declaring itself "The Only Host For
+For example, we would not permit a website declaring itself "The Only Host For
 Apache Example" since it implies an exclusive resource.  Likewise, we do not
 allow branding or taglines such as "The Apache Example Project Leaders", since
 that implies control of the Apache Example project.
@@ -172,7 +172,7 @@ Users of Apache marks in third party services must acknowledge that Apache proje
 are solely managed by the Project Management Committee (PMC) of the project,
 and not by any single individual nor (even partly or indirectly) by any
 third party organization.  Similarly, service names using
-Apache marks that state or imply that that organization has an exclusive or
+Apache marks that state or imply that the organization has an exclusive or
 sole relationship to any Apache project would both be factually incorrect, as
 well as harmful to the Apache project's community, and are not allowed.
 

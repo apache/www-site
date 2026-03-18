@@ -176,7 +176,7 @@ The official developer and user conference of the ASF (see the
 'Consensus approval' refers to a [vote](#Vote) (sense 1) which has
 completed with **at least three binding +1 votes** and **no** 
 [vetos](#Veto). Compare [Majority Approval](#MajorityApproval).
-Also see see [Lazy Consensus](#LazyConsensus),
+Also see [Lazy Consensus](#LazyConsensus),
 and the description of the [voting process](voting.html).
 
 </dd>
@@ -391,7 +391,7 @@ least three binding +1 votes** and more +1 votes than -1 votes. (
 votes.) Note that in votes requiring majority approval a -1 vote is
 simply a vote against, **not** a [veto](#Veto).
 Compare [Consensus Approval](#ConsensusApproval).
-Also see see [Simple Majority](#SimpleMajority),
+Also see [Simple Majority](#SimpleMajority),
 and the description of the [voting process](voting.html).
 
 </dd>
@@ -655,7 +655,7 @@ Refers to a [vote](#Vote) (sense 1) which has completed with
 more +1 votes than -1 votes. Note that in votes requiring
 majority approval a -1 vote is simply a vote against, **not** a [veto](#Veto).
 Compare [Lazy Consensus](#LazyConsensus).
-Also see see [Majority Approval](#MajorityApproval),
+Also see [Majority Approval](#MajorityApproval),
 and the description of the [voting process](voting.html).
 
 </dd>

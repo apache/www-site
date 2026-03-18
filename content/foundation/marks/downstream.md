@@ -54,7 +54,7 @@ The acceptable changes must meet at least one of the following criteria:
   changes and how that acceptance is documented varies between projects.
 
 - A change is a fix for an undisclosed security issue; and the fix is not
-  publicly disclosed as as security fix; and the Apache project has been
+  publicly disclosed as a security fix; and the Apache project has been
   [notified](/security/) of both the issue and the
   proposed fix; and the PMC has rejected neither the vulnerability report
   nor the proposed fix.
