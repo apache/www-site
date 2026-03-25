@@ -4,6 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 ## Recent News 
 <p><a class="btn btn-default mx-10" href="https://news.apache.org/" role="button">Go to Foundation Newsroom</a>
 <p><a class="btn btn-default mx-10" href="https://apache.org/foundation/reports" role="button">View Reports</a>
+<p><a class="btn btn-default mx-10" href="/press/media" role="button">Media Resources</a>
 
 ## Publicity Guidelines for ASF Top-Level Projects
 ASF top-level projects (TLPs) and their communities are encouraged to actively build awareness of their project and activities through marketing and communications activities such as public relations, email, content, social media, website, and branding. Educational opportunities include Community Over Code, meetups, videos, podcasts, articles, third party conferences, and related community events.
