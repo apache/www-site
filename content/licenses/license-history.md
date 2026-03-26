@@ -94,4 +94,4 @@ license by March 1, 2004.
 
 Updated contribution agreements were also published and the latest 
 versions are available at
-[https://www.apache.org/licenses/contributor-agreements.html](ASF Contributor Agreements).
+[ASF Contributor Agreements](https://www.apache.org/licenses/contributor-agreements.html).
