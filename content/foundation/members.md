@@ -202,6 +202,7 @@ This table shows current members who have manually added themselves to it – it
 | ivan | Ivan Zhakov | [Subversion](http://subversion.apache.org/) ; [Serf](http://serf.apache.org/) ; [APR](http://apr.apache.org/) |
 | iwasakims | Masatake Iwasaki | [Hadoop](http://hadoop.apache.org), [Bigtop](https://bigtop.apache.org/) |
 | jacopoc | Jacopo Cappellato | [OFBiz](http://ofbiz.apache.org)  |
+| jamesfredley | [James Fredley](https://www.linkedin.com/in/jamesfredley/) | [Grails](https://grails.apache.org), [Groovy](https://groovy.apache.org)  |
 | jan | Jan Lehnardt | CouchDB |
 | jani | Jan Iversen | |
 | jbellis | Jonathan Ellis |
