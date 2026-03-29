@@ -25,6 +25,7 @@ Intended to be run by a GitHub Action, but can also be run from a local checkout
 """
 
 import sys
+import re
 import requests
 
 MEMBER_INFO = 'https://whimsy.apache.org/public/member-info.json'
@@ -83,6 +84,12 @@ def main(failOnWarn=False):
                 level = 'WARNING'
                 print(f"{level}: {status}")                
             availid = parts.pop(0).strip()
+            # Note that '-' is not allowed in new availids, but is present in some historic ones
+            if availid != '?' and re.fullmatch('[a-z][-_a-z0-9]+', availid) is None:
+                status = f"Unexpected availid in {section}: {availid} - must be lowercase alphanumeric"
+                warnings += 1
+                level = 'WARNING'
+                print(f"{level}: {status}")
             if availid < previd or (availid == previd and availid != '?'):
                 status = f"Incorrect sort order in {section}: previous: {previd} current: {availid}"
                 warnings += 1
