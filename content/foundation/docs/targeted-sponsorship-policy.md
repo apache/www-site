@@ -100,7 +100,7 @@ Targeted sponsorships with cash grants will be limited to 12 months. All funds s
 intended for complete use within this period. Any remaining funds at end of 12 months
 MAY revert to use for ASF general operations at the ASF’s sole discretion.
 
-All Targeted sponsorships must be consistent with with the Apache Way as well as the
+All Targeted sponsorships must be consistent with the Apache Way as well as the
 ASF Policies and Practices. In the absence of clear policies, the approval of the VP
 Fundraising will be required.
 

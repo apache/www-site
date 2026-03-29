@@ -62,7 +62,7 @@ formal expression of opinion, *not* of commitment.
 
 If the [R-T-C](glossary.html#ReviewThenCommit) policy is in effect, a positive vote
 carries the very strong implied message, 'I have tested this patch myself,
-and found it good.' Similarly, a negative vote usually means that that the voter tested
+and found it good.' Similarly, a negative vote usually means that the voter tested
 the patch and found it to be *not* good, although the veto (for such it is
 in this case) may be based on other technical grounds.
 

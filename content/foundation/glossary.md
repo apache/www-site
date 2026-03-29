@@ -4,7 +4,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 This glossary provides a brief description of some of the organizational 
 terms used at the ASF and in Apache projects.  For more information 
 about anything Apache, see the [/dev documentation](/dev/) or the 
-[Community Development project](http://community.apache.org/).   
+[Community Development project](https://community.apache.org/).   
 
 ----
 
@@ -50,7 +50,7 @@ things, the board approves or rejects resolutions brought before it,
 such as for the creation or dissolution of ASF [projects](#Project) ,
 funding requests, legal concerns, and disciplinary actions. As an open
 and non-profit corporation, the ASF makes the minutes of board meetings publicly available at
-[http://www.apache.org/foundation/records/minutes/](/foundation/records/minutes/).
+[https://www.apache.org/foundation/records/minutes/](/foundation/records/minutes/).
 These minutes include all decisions not made in [executive
 sessions](#ExecutiveSession). Also see [Director](#Director).
 
@@ -176,7 +176,7 @@ The official developer and user conference of the ASF (see the
 'Consensus approval' refers to a [vote](#Vote) (sense 1) which has
 completed with **at least three binding +1 votes** and **no** 
 [vetos](#Veto). Compare [Majority Approval](#MajorityApproval).
-Also see see [Lazy Consensus](#LazyConsensus),
+Also see [Lazy Consensus](#LazyConsensus),
 and the description of the [voting process](voting.html).
 
 </dd>
@@ -391,7 +391,7 @@ least three binding +1 votes** and more +1 votes than -1 votes. (
 votes.) Note that in votes requiring majority approval a -1 vote is
 simply a vote against, **not** a [veto](#Veto).
 Compare [Consensus Approval](#ConsensusApproval).
-Also see see [Simple Majority](#SimpleMajority),
+Also see [Simple Majority](#SimpleMajority),
 and the description of the [voting process](voting.html).
 
 </dd>
@@ -542,7 +542,7 @@ whether you are talking about the group or an individual.
 
 A [codebase](#Codebase) and its [community](#Community) while in the
 process of being incubated. See the description of the [Incubation
-process](http://incubator.apache.org/incubation/Process_Description.html).
+process](https://incubator.apache.org/incubation/Process_Description.html).
 
 </dd>
 
@@ -625,7 +625,7 @@ work on the main branch. A revolutionary branch may eventually be
 merged back into the main branch, die out, split completely and become
 a new main branch, or may absorb the current main branch into itself
 (essentially no different than the first option). See the ' [Rules for
-Revolutionaries](http://incubator.apache.org/learn/rules-for-revolutionaries.html)
+Revolutionaries](https://incubator.apache.org/learn/rules-for-revolutionaries.html)
 ' and compare [Evolution](#Evolution).
 
 </dd>
@@ -655,7 +655,7 @@ Refers to a [vote](#Vote) (sense 1) which has completed with
 more +1 votes than -1 votes. Note that in votes requiring
 majority approval a -1 vote is simply a vote against, **not** a [veto](#Veto).
 Compare [Lazy Consensus](#LazyConsensus).
-Also see see [Majority Approval](#MajorityApproval),
+Also see [Majority Approval](#MajorityApproval),
 and the description of the [voting process](voting.html).
 
 </dd>

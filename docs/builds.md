@@ -65,7 +65,7 @@ Arguments   | Description
  --outputbranch <whatever>  | not used in local builds
  --project <project>        | the project code
  --theme theme/apache       | the path to the theme. One level above the templates directory
- --count <min_count>        | to be a successful build the output must have min_count or more html files
+ --count <min_count>        | to be a successful build the output must have min_count or more HTML files
 
 5. Sample output
 

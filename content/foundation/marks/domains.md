@@ -157,7 +157,7 @@ Users of Apache marks in third party domains must acknowledge that Apache projec
 are solely managed by the Project Management Committee (PMC) of the project,
 and not by any single individual nor
 by (even partly or indirectly) any third party organization.  Similarly, domain names using
-Apache marks that state or imply that that organization has an exclusive or
+Apache marks that state or imply that the organization has an exclusive or
 sole relationship to any Apache project would both be factually incorrect, as
 well as harmful to the Apache project's community, and are not allowed.
 
@@ -251,7 +251,7 @@ disparage our communities or products are not welcome to use our marks in
 ways that might be infringing.
 
 Apache projects are run solely by their PMCs, as [projects independent of
-outside corporations or organizations](http://community.apache.org/projectIndependence.html).  It is important to maintain both
+outside corporations or organizations](https://community.apache.org/projectIndependence.html).  It is important to maintain both
 the actual independence of our PMCs from third parties, as well as to ensure
 that third parties do not use our marks to imply controlling, exclusive,
 or otherwise exclusionary relationships to our PMCs, projects, or communities.

@@ -31,7 +31,7 @@ All software produced by the Foundation is available for download, by anyone and
    Each Apache project uses an issue tracker dedicated to their project. The
    best way is to go to that project's webpage. If you still have trouble
    finding it, try finding the project at
-   [projects.apache.org](http://projects.apache.org/) or by browsing
+   [projects.apache.org](https://projects.apache.org/) or by browsing
    [issues.apache.org](http://issues.apache.org/).
 
 ## Legal

@@ -46,7 +46,7 @@
 
   <!-- pagefind search -->
   <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
-  <script src="/_pagefind/pagefind-ui.js" defer type="text/javascript"></script>
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#pagefind-search" });
@@ -207,7 +207,7 @@ s=d.getElementsByTagName('script')[0];
     </div>
   </header>
      <!-- Script is to make the input field ready as soon as user click the search button-->
-      <!-- script could be simplyfy and shorten in length bootstrap framework  -->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
      <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Using Bootstrap's event system for dropdowns
@@ -224,24 +224,24 @@ s=d.getElementsByTagName('script')[0];
     </script>
     <!-- 
          Default Page Hero section
-         Home page is exlcuded because it has a more custom design
+         Home page is excluded because it has a more custom design
      -->
    {% if page.bodytag != 'id="home"' %}
-        <!-- If hero property is set in the markdown file, we use it in the hero section -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
         {% if page.hero %}
-        <!-- If the page markdown file includes a hero property, we will use the following code -->
+        <!-- If the page Markdown file includes a hero property, we will use the following code -->
             <div class="hero hero--bg-image" style="background-image: linear-gradient(rgba(40, 38, 94, .8), rgba(40, 38, 94, .8)), url('{{ page.hero }}'); ">
         {% else %}
             <div class="hero bg-navy">
         {% endif %}
-        <!-- If no hero property is set in the markdown file, we check if a hero image is specified -->
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
                 <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
                     <div class="flex-2 hero-title">
-                        <!-- if page_heading property is set in markdown file, we use that for the h1 -->
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
                         {% if page.page_heading %}
                             <h1>{{ page.page_heading }}</h1>
                         {% else %}
-                        <!-- if no page_heading property is set in markdown file, we use page title for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
                             <h1>{{ page.title }}</h1>
                         {% endif %}
                     </div>

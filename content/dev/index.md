@@ -5,7 +5,7 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 
 Here are resources pertinent to developers, committers, release managers and Project Management Committee (PMC) members contributing to any Apache project.
 
-If you can't find information here, ask on your project's mailing list, or contact the [Community Development](http://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
+If you can't find information here, ask on your project's mailing list, or contact the [Community Development](https://community.apache.org/) project's mailing list for more general questions. There are many experienced ASF people ready to help.
 
 - [Infrastructure](#infrastructure)
 - [Committers and Contributors](#committers)
@@ -43,7 +43,7 @@ If you cannot find the resource or guidance you need, <a href="https://infra.apa
     -  [Email etiquette tips for contributors](contrib-email-tips.html)
 -  [Guide for new project committers](https://infra.apache.org/new-committers-guide.html)
     -  General [Committers FAQ](https://infra.apache.org/committers.html)
-    -  Crowd funding [Community funding disclaimer](http://community.apache.org/committers/funding-disclaimer.html)
+    -  Crowd funding [Community funding disclaimer](https://community.apache.org/committers/funding-disclaimer.html)
 
 ## Project Management Committees (PMCs)  {#pmc}
 
@@ -95,13 +95,13 @@ How to
 -  <a href="https://infra.apache.org/release-signing.html" target="_blank">Signing releases</a>
 -  How to <a href="https://infra.apache.org/openpgp.html" target="_blank">Use OpenPGP for key management</a> 
 -  How to <a href="https://infra.apache.org/key-transition.html" target="_blank">transition to a longer key</a>
--  [Releases from Incubating projects](http://incubator.apache.org/policy/incubation.html#releases) 
+-  [Releases from Incubating projects](https://incubator.apache.org/policy/incubation.html#releases) 
 
 ## Issue and Bug Tracking  {#issues}
 
 Each project uses an <a href="https://issues.apache.org/" target="_blank">issue tracker</a> of their choice to 
 track bugs, enhancement requests, and other action items - typically GitHub Issues, Jira, or BugZilla.
-Check the <a href="http://projects.apache.org/indexes/quick.html" target="_blank">website of the project in which you are interested to learn what they use.
+Check the <a href="https://projects.apache.org/indexes/quick.html" target="_blank">website of the project in which you are interested to learn what they use.
 
 ## Mailing Lists  {#mail}
 

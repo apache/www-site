@@ -83,7 +83,7 @@ In this example, you are already assumed to have downloaded
 `httpd-2.0.44.tar.gz` (the release) and `httpd-2.0.44.tar.gz.asc` (the
 detached signature).
 
-This example uses [The GNU Privacy Guard](http://www.gnupg.org/). Any
+This example uses [The GNU Privacy Guard](https://www.gnupg.org/). Any
 [OpenPGP](http://www.openpgp.org/)-compliant program should work
 successfully.
 
@@ -162,7 +162,7 @@ authenticity of a key. Some people are satisfied by reading the key
 signature over a telephone (voice verification). For more information on
 determining what level of trust works best for you, please read the GNU
 Privacy Handbook section on [Validating other keys on your public
-keyring](http://www.gnupg.org/gph/en/manual.html#AEN335).
+keyring](https://www.gnupg.org/gph/en/manual.html#AEN335).
 
 Most of the Apache HTTP Server developers have attempted to sign each
 others' keys (usually with face-to-face validation). Therefore, in order to

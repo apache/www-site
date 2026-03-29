@@ -14,7 +14,7 @@ It is <em>not</em> an official record - just an informational page.
 <script src="./scripts/echarts.js"></script>
 <script src="./data/directors.js"></script>
 <script src="./scripts/directors-timeline.js"></script>
-<script type="text/javascript">
+<script>
   window.asf.directorsTimelineChart(document.getElementById('graph'), window.asf.getDirectorsTimelineData())
 </script>
 

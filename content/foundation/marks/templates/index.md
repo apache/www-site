@@ -85,8 +85,8 @@ relationship to the ASF.  There are a few factual exceptions, for example paid S
 ASF and factual statements from companies that have successfully donated podlings to the Incubator.
 
 
-  [1]: http://www.apache.org/foundation/marks/reporting
-  [2]: http://www.apache.org/foundation/marks/faq/#poweredby
-  [3]: http://www.apache.org/foundation/marks/templates/product-misuse
-  [4]: http://www.apache.org/foundation/marks/domains
-  [5]: http://www.apache.org/foundation/marks/contact
+  [1]: https://www.apache.org/foundation/marks/reporting
+  [2]: https://www.apache.org/foundation/marks/faq/#poweredby
+  [3]: https://www.apache.org/foundation/marks/templates/product-misuse
+  [4]: https://www.apache.org/foundation/marks/domains
+  [5]: https://www.apache.org/foundation/marks/contact

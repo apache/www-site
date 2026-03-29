@@ -329,7 +329,7 @@ As you can see, ensuring we receive your report on time, that it includes all ne
 
 
   [1]: /foundation/marks/pmcs#naming
-  [2]: http://community.apache.org/
+  [2]: https://community.apache.org/
   [3]: /foundation/marks/reporting
   [4]: /foundation/marks/pmcs#checklist
   [5]: https://agenda.apache.org/

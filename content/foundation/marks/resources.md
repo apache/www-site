@@ -58,7 +58,7 @@ Here are a number of *external links* that you may find useful in learning about
 | [A Legal Issues Primer for Open Source and Free Software Projects](https://www.softwarefreedom.org/resources/2008/foss-primer.html) | Key overview from a legal perspective about how trademark law applies to free and open source software products |
 | [Passport Without A Visa: Open Source Software Licensing and Trademarks](http://www.ifosslr.org/ifosslr/article/view/11) | Overview of how trademarks and licenses apply to free and open source software projects |
 | [Model Trademark Guidelines](http://modeltrademarkguidelines.org/) | Sample set of legal trademark guidelines for use by FOSS projects or organizations |
-| [OSI Trademark Policy](http://opensource.org/trademark-guidelines) | OSI's own trademark use policy, with good descriptions of different kinds of uses of software-related trademarks |
+| [OSI Trademark Policy](https://opensource.org/trademark-guidelines) | OSI's own trademark use policy, with good descriptions of different kinds of uses of software-related trademarks |
 | [Open Source License vs. Copyright vs. Trademark - How They Differ](http://twiki.org/cgi-bin/view/Blog/BlogEntry201207x1) | Basic non-legal review of copyright vs. license vs. trademark |
 | [Trademark and OSS](http://www.law.washington.edu/lta/swp/law/trademark.html) | General review of trademark applicability to open source |
 | [Open For Business: The importance of trademarks, even for an open source business](https://opensource.com/business/11/6/open-business-importance-trademarks-even-open-source-business) | Detailed story of a new project working through defining and registering their trademark |

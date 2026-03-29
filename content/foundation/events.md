@@ -20,7 +20,7 @@ will be held in Shanghai, China, on August 14th-15th. The topic of this
 year's event is open source and emerging technology, directed at software
 developers, university students and anyone that loves open source!
 
-The [Apache Retreat Hursley](http://apache.eventbrite.com) will be held in
+The [Apache Retreat Hursley](https://apache.eventbrite.com) will be held in
 Hursley, UK, on September 17th-19th 2010. This is an opportunity for
 committers to combine an informal technical conference and hackathon, to
 present and discuss technical subjects, and to get to know other ASF
@@ -60,4 +60,4 @@ contact us at [press@apache.org](mailto:press@apache.org).
 
 You can also find community members willing to speak on a variety of
 Apache-related topics using our [People
-Finder](http://community.zones.apache.org/) application.
+Finder](https://people.apache.org/phonebook.html) application.

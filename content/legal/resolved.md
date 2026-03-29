@@ -36,36 +36,36 @@ For inclusion in an Apache Software Foundation product, we consider the followin
 - [Apache Software License 1.1](/licenses/LICENSE-1.1). 
   Including variants:
     - [PHP License 3.01](http://www.php.net/license/3_01.txt)
-    - [MX4J License](http://mx4j.sourceforge.net/docs/ch01s06.html)
+    - [MX4J License](https://mx4j.sourceforge.net/docs/ch01s06.html)
 - BSD (without advertising clause). Including variants:
-    - [BSD 2-clause](http://opensource.org/licenses/bsd-license.php)
-    - [BSD 3-clause](http://opensource.org/licenses/BSD-3-Clause)
+    - [BSD 2-clause](https://opensource.org/licenses/bsd-license.php)
+    - [BSD 3-clause](https://opensource.org/licenses/BSD-3-Clause)
     - [DOM4J License](https://github.com/dom4j/dom4j/blob/master/LICENSE)
-    - [PostgreSQL License](http://opensource.org/licenses/postgresql) 
-    - [Eclipse Distribution License 1.0](http://www.eclipse.org/org/documents/edl-v10.php)
+    - [PostgreSQL License](https://opensource.org/licenses/postgresql) 
+    - [Eclipse Distribution License 1.0](https://www.eclipse.org/org/documents/edl-v10.php)
     - [Lawrence Berkeley National Labs BSD](https://spdx.org/licenses/BSD-3-Clause-LBNL.html)
-- [MIT/X11](http://opensource.org/licenses/mit-license.php)
+- [MIT/X11](https://opensource.org/licenses/mit-license.php)
     - [ISC](https://opensource.org/licenses/ISC)
     - [Standard ML of New Jersey](https://www.smlnj.org/license.html)
     - [Cup Parser Generator](http://www2.cs.tum.edu/projects/cup/licence.php)
     - [MIT No Attribution (MIT-0)](https://opensource.org/license/mit-0/)
 - [ICU](http://source.icu-project.org/repos/icu/icu/trunk/LICENSE)
-- [University of Illinois/NCSA](http://opensource.org/licenses/UoI-NCSA.php)
-- [W3C Software License](http://opensource.org/licenses/W3C.php)
+- [University of Illinois/NCSA](https://opensource.org/licenses/UoI-NCSA.php)
+- [W3C Software License](https://opensource.org/licenses/W3C.php)
 - [W3C Community Contributor License Agreement](https://www.w3.org/community/about/agreements/cla/) - if at least 45 days after publication</li>
 - [X.Net](https://opensource.org/license/xnet)
-- [zlib/libpng](http://opensource.org/licenses/zlib-license.php)
+- [zlib/libpng](https://opensource.org/licenses/zlib-license.php)
 - FSF autoconf license
 - [DejaVu Fonts (Bitstream Vera/Arev licenses)](https://spdx.org/licenses/Bitstream-Vera.html)
-- [Academic Free License 3.0](http://opensource.org/licenses/afl-3.0.php)
+- [Academic Free License 3.0](https://opensource.org/licenses/afl-3.0.php)
 - [Service+Component+Architecture+Specifications](http://web.archive.org/web/20080704184203/http://www.osoa.org/xmlns/sca/1.0/license.txt)
 - OOXML XSD ECMA License
-- [Microsoft Public License (MsPL)](http://www.opensource.org/licenses/ms-pl.html)
-- [Creative Commons Copyright-Only Dedication](http://creativecommons.org/licenses/publicdomain/)
-- [Python Software Foundation License](http://www.opensource.org/licenses/PythonSoftFoundation.php)
+- [Microsoft Public License (MsPL)](https://www.opensource.org/licenses/ms-pl.html)
+- [Creative Commons Copyright-Only Dedication](https://creativecommons.org/licenses/publicdomain/)
+- [Python Software Foundation License](https://www.opensource.org/licenses/PythonSoftFoundation.php)
 - [Python Imaging Library Software License](https://github.com/python-pillow/Pillow/blob/master/LICENSE)
-- [Adobe Postcript(R) AFM files](https://spdx.org/licenses/APAFML.html)
-- [Boost Software License Version 1.0](http://www.opensource.org/licenses/BSL-1.0)
+- [Adobe Postscript(R) AFM files](https://spdx.org/licenses/APAFML.html)
+- [Boost Software License Version 1.0](https://www.opensource.org/licenses/BSL-1.0)
 - [License for CERN packages in COLT](https://dst.lbl.gov/ACSSoftware/colt/license.html) but note that this applies **only** to CERN packages in COLT and **not** others
 - [UK Open Government Licence](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). This license allows the licensor to provide a custom attribution notice. If one is provided, include in the NOTICE. If one is not provided, include 'Contains public sector information licensed under the Open Government Licence v3.0.' in the NOTICE. 
 - [WTF Public License](http://www.wtfpl.net/)
@@ -94,7 +94,7 @@ You can include works in the public domain (or covered by a license treated simi
 A work should be treated as being in the public domain when one of the following applies: 
 
   - the work is covered by 
-       - the Creative Commons [Public Domain Mark](http://creativecommons.org/publicdomain/mark/1.0/)
+       - the Creative Commons [Public Domain Mark](https://creativecommons.org/publicdomain/mark/1.0/)
        - a suitable dedication (to the public domain) by the authors
   - clear evidence exists that US copyright for the work 
       - has expired
@@ -102,8 +102,8 @@ A work should be treated as being in the public domain when one of the following
 
 Licenses that we treat as similar to public domain:
 
-  - Creative Commons [CC0 “No Rights Reserved”](http://creativecommons.org/about/cc0)
-  - Creative Commons [Public Domain Certification](http://creativecommons.org/licenses/publicdomain/)
+  - Creative Commons [CC0 “No Rights Reserved”](https://creativecommons.org/about/cc0)
+  - Creative Commons [Public Domain Certification](https://creativecommons.org/licenses/publicdomain/)
 
 **Note that** whether a work falls in the public domain may be a 
 [difficult](http://fairuse.stanford.edu/Copyright_and_Fair_Use_Overview/chapter8/) subject. 
@@ -140,12 +140,12 @@ You may include software under the following licenses in binary form
 within an Apache product if you label the inclusion appropriately (see above):
 
 - Common Development and Distribution Licenses: [CDDL 1.0](https://opensource.org/licenses/CDDL-1.0) and [CDDL 1.1](https://spdx.org/licenses/CDDL-1.1.html)
-- Common Public License: [CPL 1.0](http://www.opensource.org/licenses/cpl1.0.php)
-- Eclipse Public License: [EPL 1.0](http://www.eclipse.org/legal/epl-v10.html)
-- IBM Public License: [IPL 1.0](http://www.opensource.org/licenses/ibmpl.php)
-- Mozilla Public Licenses: [MPL 1.0](http://www.mozilla.org/MPL/1.0/),
-  [MPL 1.1](http://www.mozilla.org/MPL/1.1/), and
-  [MPL 2.0](http://www.mozilla.org/MPL/2.0/)
+- Common Public License: [CPL 1.0](https://www.opensource.org/licenses/cpl1.0.php)
+- Eclipse Public License: [EPL 1.0](https://www.eclipse.org/legal/epl-v10.html)
+- IBM Public License: [IPL 1.0](https://www.opensource.org/licenses/ibmpl.php)
+- Mozilla Public Licenses: [MPL 1.0](https://mozilla.org/MPL/1.0/),
+  [MPL 1.1](https://mozilla.org/MPL/1.1/), and
+  [MPL 2.0](https://mozilla.org/MPL/2.0/)
 - Sun Public License: [SPL 1.0](https://opensource.org/license/sunpublic-php)
 - [Open Software License 3.0](https://opensource.org/licenses/OSL-3.0)
 - [Erlang Public License](http://www.erlang.org/EPLICENSE)
@@ -173,14 +173,14 @@ Depending on the situation, the GPL-2.0 WITH ClasspathException-2.0 may, or may 
 Note that most GPL-2.0 WITH ClasspathException-2.0 dependencies are dual-licensed with either CDDL-1.1 or EPL-2.0 and PMCs will likely prefer to depend on those dependencies under the alternate license.
 
 ### Including Creative Commons Attribution content  {#cc-by}
-Works under the [Creative Commons Attribution (CC-BY)](http://creativecommons.org/licenses/by/4.0/) licenses (2.5, 3.0, and 4.0)
+Works under the [Creative Commons Attribution (CC-BY)](https://creativecommons.org/licenses/by/4.0/) licenses (2.5, 3.0, and 4.0)
 contain terms related to "Effective Technological Measures", which may come as a surprise to users. Thus you should label them appropriately and only include them in binary form. 
 
 ### Unmodified media under the Creative Commons Attribution-Share Alike license  {#cc-sa}
 
 You may include unmodified media under the 
-[Creative Commons Attribution-Share Alike 2.5](http://creativecommons.org/licenses/by-sa/2.5/), 
-[Creative Commons Attribution-Share Alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/) and [Creative Commons Attribution-Share Alike 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+[Creative Commons Attribution-Share Alike 2.5](https://creativecommons.org/licenses/by-sa/2.5/), 
+[Creative Commons Attribution-Share Alike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and [Creative Commons Attribution-Share Alike 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 license in Apache products, subject to the licenses attribution clauses which may require 
 LICENSE/NOTICE/README changes. For any other type of CC-SA licensed work, contact the Legal PMC.
 
@@ -196,7 +196,7 @@ Doug Lea's concurrent library is public domain, but contains some Sun files whic
 &quot;It may be included in binary form within an Apache product if the inclusion
 is appropriately labeled&quot;. If using the source, remove the files Sun licensed to Doug and 
 treat as Category A (or get the files from 
-[Harmony](http://svn.apache.org/repos/asf/harmony/standard/classlib/trunk/modules/concurrent/src/main/java/java/util/concurrent/)).
+[Harmony](https://svn.apache.org/repos/asf/harmony/standard/classlib/trunk/modules/concurrent/src/main/java/java/util/concurrent/)).
 
 ### Adding OSGi metadata to weak copyleft binaries  {#osgi-category-b}
 
@@ -241,16 +241,16 @@ its typical use.
 To date, we have approved the following tools for such use:
 
 - The Autotools family of products, specifically:
-    - [Autoconf](http://www.gnu.org/software/autoconf/)
-    - [Automake](http://www.gnu.org/software/automake/)
-    - [Libtool](http://www.gnu.org/software/libtool/)
-    - [mkinstalldirs.sh](http://www.gnu.org/software/hello/manual/gettext/mkinstalldirs.html)
+    - [Autoconf](https://www.gnu.org/software/autoconf/)
+    - [Automake](https://www.gnu.org/software/automake/)
+    - [Libtool](https://www.gnu.org/software/libtool/)
+    - [mkinstalldirs.sh](https://www.gnu.org/software/hello/manual/gettext/mkinstalldirs.html)
 - [OCamlMakefile](http://hg.ocaml.info/release/ocaml-make/)
 - [setup.rb](http://i.loveruby.net/en/projects/setup/)
 
 ### Including Perl licensed header files when creating dynamically loaded XS modules
 
-Developing Perl bindings which link compiled C code to create dynamically loaded XS modules requires including header files licensed under the Perl license (http://dev.perl.org/licenses/ - GPL-any/Artistic1, with exceptions). 
+Developing Perl bindings which link compiled C code to create dynamically loaded XS modules requires including header files licensed under the Perl license (https://dev.perl.org/licenses/ - GPL-any/Artistic1, with exceptions). 
 
 You may include these header files - XSUB.h, perl.h and EXTERN.h (see: [LEGAL-79](https://issues.apache.org/jira/browse/LEGAL-79)). 
 
@@ -284,7 +284,7 @@ You may NOT include the following licenses within Apache products:
         - [Amazon Software License (ASL)](https://aws.amazon.com/asl/)
         - [Java SDK for Satori RTM license](https://github.com/satori-com/satori-rtm-sdk-java/blob/master/LICENSE)
         - [Redis Source Available License (RSAL)](https://redislabs.com/community/licenses/)
-        - [Booz Allen Public License](http://boozallen.github.io/licenses/bapl)
+        - [Booz Allen Public License](https://github.com/boozallen/Public-License/blob/master/LICENSE.md)
         - [Confluent Community License Version 1.0](https://www.confluent.io/confluent-community-license/)
         - [Business Source License 1.1](https://spdx.org/licenses/BUSL-1.1.html)
         - Any license including the [Commons Clause License Condition v1.0](https://commonsclause.com)
@@ -296,12 +296,12 @@ You may NOT include the following licenses within Apache products:
 - Places restrictions on larger works:
     - [Apple Public Source License 2.0 (APSL-2.0)](https://spdx.org/licenses/APSL-2.0.html) (section 2.2(c))
         - However, inclusion of the dnsinfo.h file under APSL-2.0 is acceptable for software/use-cases intended to run on Apple hardware. 
-    - [GNU GPL 1, 2, 3](http://www.opensource.org/licenses/gpl-license.php)
+    - [GNU GPL 1, 2, 3](https://www.opensource.org/licenses/gpl-license.php)
         - This includes the various exceptions available to GPL licenses, unless otherwise permitted elsewhere on this page (such as the GNU Classpath Exception).
-    - [GNU Affero GPL 3](http://www.opensource.org/licenses/agpl-v3.html)
-    - [GNU LGPL 2, 2.1, 3](http://www.opensource.org/licenses/lgpl-license.php)
+    - [GNU Affero GPL 3](https://www.opensource.org/licenses/agpl-v3.html)
+    - [GNU LGPL 2, 2.1, 3](https://www.opensource.org/licenses/lgpl-license.php)
     - [QPL](https://opensource.org/licenses/QPL-1.0)
-    - [Sleepycat License](http://www.opensource.org/licenses/sleepycat.php)
+    - [Sleepycat License](https://www.opensource.org/licenses/sleepycat.php)
     - [Server Side Public License (SSPL) version 1](https://www.mongodb.com/licensing/server-side-public-license)
     - [Code Project Open License (CPOL)](http://www.codeproject.com/info/cpol10.aspx)
 - Other concerns:
@@ -377,7 +377,7 @@ archives to see if it has come up before, and if not email legal-discuss@ to fin
 
 No.
 
-[IP clearance](http://incubator.apache.org/ip-clearance/index.html)
+[IP clearance](https://incubator.apache.org/ip-clearance/index.html)
 is used to import code bases from outside Apache for future development here.
   
 ### How should I handle a work when there is a choice of license?  {#mutually-exclusive}
