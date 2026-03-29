@@ -51,5 +51,5 @@ Agreements](/licenses/contributor-agreements.html) page.
 ## Questions?  {#questions}
 
 For answers to frequently asked licensing questions, please consult our 
-[Licensing Frequently Asked Questions](/foundation/license-faq.html) page.
-
+[Licensing Frequently Asked Questions](/foundation/license-faq.html) page. For historical
+context for the creation of the Apache-2.0 license see the [License History](/licenses/license-history.html).
