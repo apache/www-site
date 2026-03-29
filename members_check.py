@@ -83,7 +83,7 @@ def main(failOnWarn=False):
                 level = 'WARNING'
                 print(f"{level}: {status}")                
             availid = parts.pop(0).strip()
-            if availid <= previd:
+            if availid < previd or (availid == previd and availid != '?'):
                 status = f"Incorrect sort order in {section}: previous: {previd} current: {availid}"
                 warnings += 1
                 level = 'WARNING'
