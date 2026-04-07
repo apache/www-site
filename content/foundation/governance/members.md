@@ -89,7 +89,7 @@ Members' meetings.
 Given the distributed and volunteer nature of the ASF, the Foundation no longer holds official, in-person 
 meetings of the Membership. Foundations and projects conduct all their business on normal email lists, although some of the lists are 
 private. Members do often meet in small groups in person, although this is for 
-social reasons, and often involves a meal or drinks. When the ASF's annual ApacheCon conference takes place in a physical location, rather than online, many members and committers 
+social reasons, and often involves a meal or drinks. When the ASF's [Community over Code](https://communityovercode.org) conference takes place in a physical location, rather than online, many members and committers
 traditionally attend and meet each other there.
 
 ## Merit  {#merit}
