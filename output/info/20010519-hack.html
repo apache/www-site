@@ -1,0 +1,922 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html lang="en">
+ <head>
+  <title>Apache.Org compromise report, May 30th, 2001</title>
+ </head>
+
+ <!-- Background white, links blue (unvisited), navy (visited), red (active) -->
+ <body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#000080"
+       ALINK="#FF0000">
+   <img SRC="../images/apache_sub.gif">
+<h1>Apache.Org compromise report, May 30th, 2001</h1>
+
+<h3>Unauthorized Access to Apache Software Foundation Server</h3>
+
+<!--#set var="h6" value="<h6 align=right>This file last modified on:" -->
+<!--#set var="h6x" value="</h6>" -->
+<!--#echo encoding="none" var="h6" --><!--#echo encoding="none" var="LAST_MODIFIED" --><!--#echo encoding="none" var="h6x" -->
+
+<p>Earlier this month, a public server of the Apache Software Foundation
+(ASF) was illegally accessed by unknown crackers.  The intrusion into
+this server, which handles the public mail lists, web services, and
+the source code repositories of all ASF projects was quickly
+discovered, and the server immediately taken offline.  Security
+specialists and administrators determined the extent of the intrusion,
+repaired the damage, and brought the server back into public service.</p>
+
+<p>The public server that was affected by the incident serves as a source
+code repository as well as the main distribution server for binary
+release of ASF software.  There is no evidence that any source or binary
+code was affected by the intrusion, and the integrity of all binary
+versions of ASF software has been explicitly verified.  This includes
+the industry-leading Apache web server.</p>
+
+<p>Specifically: on May 17th, an Apache developer with a SourceForge
+account logged into a shell account at SourceForge, and then logged
+from there into their account at apache.org.  The ssh client at
+SourceForge had been compromised to log outgoing names and passwords,
+so the cracker was thus able get a shell on apache.org.  After
+unsuccessfully attempting to get elevated privileges using an old
+installation of Bugzilla on apache.org, the cracker used a weakness in
+the ssh daemon (OpenSSH 2.2) to gain root privileges.  Once root, they
+replaced our ssh client and server with versions designed to log names
+and passwords.  When they did this replacement, the nightly automated
+security audits caught the change, as well as a few other trojaned
+executables the cracker had left behind.  Once we discovered the
+compromise, we shut down ssh entirely, and through the serial console
+performed an exhaustive audit of the system.  Once a fresh copy of the
+operating system was installed, backdoors removed, and passwords
+zeroed out, ssh and commit access was re-enabled.  After this, an
+exhaustive audit of all Apache source code and binary distributions
+was performed.</p>
+
+<p>The ASF is working closely with other organizations as the investigation
+continues,  specifically examining the link to other intrusion(s), such
+as that at SourceForge (http://sourceforge.net/) [ and php.net
+(http://www.php.net/). ]</p>
+
+<p>Through an extra verification step available to the ASF, the integrity
+of all source code repositories is being individually verified by
+developers.  This is possible because ASF source code is distributed
+under an open-source license, and the source code is publicly and freely
+available.  Therefore, the ASF repositories are being compared against
+the thousands of copies that have been distributed around the globe. 
+While it was quickly determined that the source code repositories on the
+ASF server were untouched by the intruders, this extra verification step
+provides additional assurance that no damage was done.</p>
+
+<p>A list of the repository modules that have been checked is below.</p>
+
+<p>Because of the possible link of the ASF server intrusion to other
+computer security incidents, the investigation is ongoing.  When
+complete, the ASF will offer a complete and public report.</p>
+
+<p>The Apache Software Foundation strongly condemns this illegal
+intrusion, and is evaluating all options, including prosecution of the
+individual(s) responsible to the fullest extent of the law.  Anyone
+with pertinent information relating to this or other related events
+should contact root@apache.org.  Anyone from the media with further
+interest should contact press@apache.org.</p>
+
+<pre>
+Audit Report.
+========================================================================
+
+Directories are listed as verified when the directory and everything below it
+has been compared to an external or backup source dated prior to May 17
+that has not been rsyncd with apache.org, or when the files can be compared
+to an externally verifiable signature.
+
+All of the release files with signatures have already been verified.
+
+
+Areas needing verification                  Verified By
+==========================================  =============================
+/var/qmail                                  Brian Behlendorf
+
+/home/apmail:
+    .qmail-*                                Brian Behlendorf
+    bin                                     Brian Behlendorf
+    lists                                   Brian Behlendorf
+
+/home/cvs:
+    CVSROOT                                 Roy Fielding
+    apache-1.2                              Roy Fielding
+    apache-1.3                              Martin Kraemer
+    apache-2.0                              Martin Kraemer
+    apache-apr                              Roy Fielding
+    apache-devsite                          Roy Fielding
+    apache-nspr                             Roy Fielding
+    apache-search-site                      Dirk-Willem van Gulik
+    apache-site                             Roy Fielding
+    apachecon-site                          Roy Fielding
+    apmail                                  Roy Fielding
+    apr                                     Martin Kraemer
+    apr-core                                Roy Fielding
+    apr-iconv                               Martin Kraemer
+    apr-site                                Martin Kraemer
+    apr-util                                Martin Kraemer
+    asf-site                                Roy Fielding
+    bad-jakarta-tomcat-4.1                  Roy Fielding
+    board                                   Roy Fielding
+    embperl                                 Gerald Richter
+    foundation                              Jim Jagielski
+    httpd-2.0                               Martin Kraemer
+    httpd-apreq                             Jim Winstead
+    httpd-docs-1.3                          Martin Kraemer
+    httpd-docs-2.0                          Martin Kraemer
+    httpd-proxy                             Chuck Murcko
+    httpd-site                              Roy Fielding
+    httpd-win32-msi			    William A. Rowe, Jr.
+    jakarta-alexandria			    Scott Sanders
+    jakarta-ant                             Stefan Bodewig        
+    jakarta-ant-antidote                    Stefan Bodewig
+    jakarta-avalon                          Peter Donald
+    jakarta-avalon-cornerstone              Peter Donald
+    jakarta-avalon-logkit                   Peter Donald
+    jakarta-avalon-phoenix                  Peter Donald
+    jakarta-avalon-testlet                  Peter Donald
+    jakarta-commons                         Scott Sanders
+    jakarta-commons-sandbox		    Scott Sanders
+    jakarta-ecs                             Stephan Nagy
+    jakarta-ecs2                            Stephan Nagy
+    jakarta-james                           Charles Benett
+    jakarta-jetspeed                        Santiago Gala (in process)
+    jakarta-jmeter                          Stefan Bodewig
+    jakarta-log4j                           Ceki Gulcu
+    jakarta-oro                             Daniel F. Savarese
+    jakarta-regexp                          Stefan Bodewig
+    jakarta-servletap                       Craig R. McClanahan
+    jakarta-servletapi-4                    Craig R. McClanahan
+    jakarta-site                            Roy Fielding (symlink)
+    jakarta-site-old                        Roy Fielding
+    jakarta-site2                           Stefan Bodewig
+    jakarta-slide			    Remy Maucherat
+    jakarta-struts                          Craig R. McClanahan
+    jakarta-taglibs			    Glenn Nielsen
+    jakarta-taglibs-sandbox                 Roy Fielding
+    jakarta-taglibs.bu                      Roy Fielding
+    jakarta-tomcat                          Larry Isaacs
+    jakarta-tomcat-4.0                      Craig R. McClanahan
+    jakarta-tomcat-connectors               Kevin Seguin
+    jakarta-tomcat-jasper
+    jakarta-tomcat-site                     Marc Saegesser
+    jakarta-tools
+    jakarta-turbine                         Jon Stevens/Jason van Zyl
+    jakarta-turbine-flux                    Jon Stevens/Jason van Zyl
+    jakarta-turbine-jyve		    Martin Poeschl
+    jakarta-turbine-orgami
+    jakarta-turbine-tdk                     Jon Stevens/Jason van Zyl
+    jakarta-velocity                        Geir Magnusson
+    jakarta-watchdog                        Larry Isaacs
+    jakarta-watchdog-4.0                    Craig R. McClanahan
+    java-framework                          Roy Fielding
+    java-icalendar                          Roy Fielding
+    java-jserv                              Roy Fielding
+    java-jserv-old                          Roy Fielding
+    java-jukebox                            Roy Fielding
+    java-jyve                               Roy Fielding
+    java-jyve2.old                          Roy Fielding
+    java-mod_java                           Roy Fielding
+    java-picoserver                         Roy Fielding
+    java-site                               Roy Fielding
+    java-spfc                               Roy Fielding
+    java-ssi                                Roy Fielding
+    java-utils                              Roy Fielding
+    java-whiteboard                         Roy Fielding
+    modperl                                 Doug MacEachern
+    modperl-2.0                             Doug MacEachern
+    modperl-site                            Eric Cholet
+    press                                   Roy Fielding
+    site                                    Roy Fielding
+    tcl-core				    David Welton
+    tcl-kitchen-sink                        Roy Fielding
+    tcl-moddtcl                             David Welton
+    tcl-modtcl                              Roy Fielding
+    tcl-neowebscript                        Roy Fielding
+    tcl-site                                David Welton
+    xml-admin				    Ted Leung
+    xml-axis                                Glen Daniels
+    xml-batik                               Vincent Hardy / Batik team.
+    xml-cocoon                              Donald Ball
+    xml-cocoon2                             Donald Ball et.al.
+    xml-commons                             Shane Curcuru (diff/eyeball to known good external copies)
+    xml-contrib                             Roy Fielding
+    xml-crimson                             Edwin Goei
+    xml-fop                                 Keiron Liddle
+    xml-site				    Pier P. Fumagalli
+    xml-soap                                Matthew Duflter
+    xml-stylebook                           Roy Fielding
+    xml-xalan                               (Xalan-J 1.x project - inactive, could be removed?)
+    xml-xalan\c				    Paul Dick
+    xml-xalan\java                          HEAD only Shane Curcuru (diff/eyeball to pre 17-May copy)
+    xml-xalan\test                          Shane Curcuru (diff to pre 17-May copy)
+    xml-xang                                Roy Fielding
+    xml-xerces/c                            Tinny Ng
+    xml-xerces/j                            Lisa Martin/ibm/Lotus Team
+    xml-xerces-2.0                          Andy Clark
+    xml-xerces-p                            Jason E. Stewart
+
+[Below this point are web site directories.]
+
+
+apr.apache.org:
+    docs
+    images
+    from-cvs
+    from-cvs/apr
+    from-cvs/apr-util
+    mail
+
+bugs.apache.org:
+    private				    Brian Behlendorf
+
+dev.apache.org:				    Brian Behlendorf 
+    patches				(I checked for any exec. programs, found none.
+    incoming				I did a quick visual scan of all files changed
+    test				since May 15th, found nothing obvious. I did not
+    dist				check old binaries or releases, or the patches.
+    dist/patches			I recommend we close down this site anyways, and
+    dist/binaries			move anything still relevant to the project-specific
+    dist/binaries/old			dirs, or www.apache.org.)
+    dist/old
+    dist/1.3.8-0
+    images
+    apidoc
+    apidoc/tools
+    patchgen
+    patchgen/update
+    patchgen/patches
+    newpatch
+    newpatch/update
+    newpatch/patchlog
+    newpatch/update-test
+    docs
+    mail
+    manual
+    manual/sp
+    manual/sp/sp-1.0.1
+    private
+    private/test
+    presentation
+    whiteboard
+    apidoc-old
+
+httpd.apache.org:
+    docs
+    images
+    contributors
+    info
+    info/css-security
+    library
+    docs-2.0
+    apreq                                   Jim Winstead
+    from-cvs
+    from-cvs/apache-1.3
+    from-cvs/httpd-2.0
+    docs-project
+    mail
+    mail/apreq-cvs                          Jim Winstead
+    mail/apreq-dev                          Jim Winstead
+    mail/win32-msi-cvs
+
+jakarta.apache.org
+    cjan
+    cjan/repository
+    ant                                     Stefan Bodewig
+    ant/manual                              Stefan Bodewig
+    ant/ant2                                Stefan Bodewig
+    builds
+    builds/jakarta-avalon
+    builds/jakarta-avalon/nightly
+    builds/jakarta-avalon/release
+    builds/jakarta-avalon/release/v3.1a1
+    builds/jakarta-avalon/release/v3.0a1
+    builds/jakarta-avalon/release/v3.0a2
+    builds/jakarta-avalon/release/v3.0a3
+    builds/jakarta-avalon/release/v3.0a4
+    builds/jakarta-avalon/release/logkit
+    builds/jakarta-avalon/release/logkit/v1.0b1
+    builds/jakarta-avalon/release/framework
+    builds/jakarta-avalon/release/framework/v4.0b1
+    builds/jakarta-avalon/release/v2.1
+    builds/jakarta-avalon/release/avalon
+    builds/jakarta-avalon/release/avalon/v4.0b1
+    builds/jakarta-jetspeed                       Ingo Schuster
+    builds/jakarta-jetspeed/release               Ingo Schuster
+    builds/jakarta-jetspeed/release/v1.3-a1       Ingo Schuster
+    builds/jakarta-watchdog-4.0
+    builds/jakarta-watchdog-4.0/nightly
+    builds/jakarta-struts
+    builds/jakarta-struts/nightly
+    builds/jakarta-struts/release
+    builds/jakarta-struts/release/v0.5
+    builds/jakarta-struts/release/v1.0-b1
+    builds/jakarta-struts/release/v1.0-b2
+    builds/jakarta-taglibs
+    builds/jakarta-taglibs/nightly
+    builds/jakarta-taglibs/releases
+    builds/jakarta-slide
+    builds/jakarta-slide/nightly
+    builds/jakarta-slide/release
+    builds/jakarta-slide/release/1.0
+    builds/jakarta-velocity
+    builds/jakarta-velocity/nightly
+    builds/jakarta-velocity/demo
+    builds/jakarta-velocity/release
+    builds/jakarta-velocity/release/v1.0
+    builds/jakarta-velocity/release/v1.0.1
+    builds/jakarta-velocity/release/v1.1
+    builds/jakarta-velocity/speed
+    builds/jakarta-velocity/archive
+    builds/jakarta-velocity/archive/v1.0b1
+    builds/jakarta-velocity/archive/v1.0b2
+    builds/jakarta-velocity/archive/v1.0.1rc1
+    builds/jakarta-velocity/contrib
+    builds/jakarta-velocity/contrib/struts
+    builds/jakarta-oro                             Daniel F. Savarese
+    builds/jakarta-tomcat-4.0
+    builds/jakarta-tomcat-4.0/nightly
+    builds/jakarta-tomcat-4.0/release
+    builds/jakarta-tomcat-4.0/release/v4.0-m5
+    builds/jakarta-tomcat-4.0/release/v4.0-b1
+    builds/jakarta-tomcat-4.0/release/v4.0-b3
+    builds/jakarta-tomcat-4.0/release/v4.0-b5
+    builds/jakarta-tomcat-4.0/release/v4.0-b4-bad
+    builds/jakarta-tomcat-4.0/release/v4.0-b2-bad
+    builds/jakarta-tomcat-4.0/archives
+    builds/jakarta-tomcat-4.0/archives/v4.0-m1
+    builds/jakarta-tomcat-4.0/archives/v4.0-m2
+    builds/jakarta-tomcat-4.0/archives/v4.0-m3
+    builds/jakarta-tomcat-4.0/archives/v4.0-m4
+    builds/jakarta-servletapi
+    builds/jakarta-servletapi/nightly
+    builds/jakarta-ant                          Stefan Bodewig, Conor MacNeill
+    builds/jakarta-ant/nightly                        Conor MacNeill
+    builds/jakarta-ant/release                  Stefan Bodewig, Conor MacNeill
+    builds/jakarta-ant/release/v1.1                   Conor MacNeill
+    builds/jakarta-ant/release/v0.3.1           Stefan Bodewig (removed)
+    builds/jakarta-ant/release/v1.2                   Conor MacNeill
+    builds/jakarta-ant/release/v1.3             Stefan Bodewig, Conor MacNeill
+    builds/jakarta-regexp
+    builds/jakarta-regexp/release
+    builds/jakarta-regexp/release/v1.0
+    builds/jakarta-regexp/release/v1.1
+    builds/jakarta-regexp/release/v1.2
+    builds/jakarta-regexp/nightly
+    builds/jakarta-ecs
+    builds/jakarta-ecs/release
+    builds/jakarta-ecs/release/v1.4.1
+    builds/jakarta-ecs/release/old
+    builds/jakarta-ecs/release/old/ecs-1.3.2
+    builds/jakarta-ecs/release/old/ecs-1.1
+    builds/jakarta-ecs/release/old/ecs-1.3
+    builds/jakarta-ecs/release/old/ecs-1.2
+    builds/jakarta-ecs/release/old/ecs-1.3.1
+    builds/jakarta-ecs/release/old/v1.3.3
+    builds/jakarta-ecs/release/old/v1.3.3/ecs-1.3.3
+    builds/jakarta-ecs/release/old/v1.4
+    builds/jakarta-ecs/nightly
+    builds/jakarta-ecs/nightly/src
+    builds/jakarta-tomcat
+    builds/jakarta-tomcat/nightly
+    builds/jakarta-tomcat/release
+    builds/jakarta-tomcat/release/v3.2.1
+    builds/jakarta-tomcat/release/v3.1.1
+    builds/jakarta-tomcat/release/v3.2.2
+    builds/jakarta-tomcat/release/v3.3-m3
+    builds/jakarta-tomcat/archives
+    builds/jakarta-tomcat/archives/v3.1_rc1
+    builds/jakarta-tomcat/archives/v3.1
+    builds/jakarta-tomcat/archives/v3.1_beta_original
+    builds/jakarta-tomcat/archives/v3.1_beta_rc1
+    builds/jakarta-tomcat/archives/v3.1_m2_rc2
+    builds/jakarta-tomcat/archives/v3.1_beta_1
+    builds/jakarta-tomcat/archives/v3.2
+    builds/jakarta-tomcat/archives/v3.0
+    builds/jakarta-tomcat/archives/v3.2-beta-1
+    builds/jakarta-tomcat/archives/v3.2-beta-3
+    builds/jakarta-tomcat/archives/v3.2-beta-4
+    builds/jakarta-tomcat/archives/v3.2-beta-5
+    builds/jakarta-tomcat/archives/v3.2-beta-6
+    builds/jakarta-tomcat/archives/v3.2-beta-7
+    builds/jakarta-tomcat/archives/v3.2-beta-8
+    builds/jakarta-tomcat/archives/v3.3-m1
+    builds/jakarta-tomcat/archives/v3.3-m2
+    builds/jakarta-tomcat/nightly-3.3
+    builds/jakarta-tomcat/native-3.3
+    builds/jakarta-tomcat-3.2
+    builds/gump
+    builds/jakarta-servletapi-4
+    builds/jakarta-log4j			Ceki Gulcu
+    builds/jakarta-log4j/release		Ceki Gulcu
+    builds/jakarta-log4j/release/v1.0.4		Ceki Gulcu
+    builds/jakarta-log4j/release/v1.1b6		Ceki Gulcu (removed)
+    builds/jakarta-log4j/release/v1.1		Ceki Gulcu (removed)
+    builds/jakarta-log4j/release/v1.1.1		Ceki Gulcu
+    builds/jakarta-turbine
+    builds/jakarta-turbine/nightly
+    builds/jakarta-turbine/release
+    builds/jakarta-turbine/release/tdk.old
+    builds/jakarta-turbine/release/tdk.old/old
+    builds/jakarta-turbine/release/2.1b2
+    builds/jakarta-turbine/release/2.1b3
+    builds/jakarta-turbine/release/2.1b4
+    builds/jakarta-turbine/release/2.1b1
+    builds/jakarta-jmeter
+    builds/jakarta-jmeter/release
+    builds/jakarta-jmeter/release/v1.4
+    builds/jakarta-jmeter/release/v1.5
+    builds/jakarta-jmeter/release/v1.6
+    builds/jakarta-jmeter/release/v1.0
+    builds/jakarta-jmeter/release/v1.1
+    builds/jakarta-jmeter/release/v1.2
+    builds/jakarta-jmeter/release/v1.3
+    builds/jakarta-jmeter/nightly
+    builds/jakarta-james
+    builds/jakarta-james/release
+    builds/jakarta-james/release/v1.2.1
+    builds/jakarta-james/nightly
+    builds/jakarta-james/nightly/src
+    builds/scripts
+    builds/scripts/projects
+    builds/jakarta-commons
+    builds/jakarta-commons/release
+    builds/jakarta-commons/release/commons-cactus
+    builds/jakarta-commons/release/commons-cactus/v1.0
+    builds/jakarta-commons/nightly
+    builds/jakarta-commons/nightly/commons-cactus
+    regexp
+    regexp/jakarta-regexp-1.2
+    regexp/dist
+    turbine
+    turbine/images
+    turbine/resources
+    turbine/proposals
+    turbine/dtd
+    turbine/archive
+    turbine/project-map
+    turbine/services
+    turbine/howto
+    ecs
+    ecs/apidocs
+    ecs/dist
+    ecs/images
+    site                                        Stefan Bodewig
+    site/pmc                                    Stefan Bodewig
+    taglibs
+    taglibs/images
+    taglibs/doc
+    taglibs/website-backup
+    oro                                         Daniel F. Savarese
+    from-cvs
+    from-cvs/jakarta-tomcat
+    from-cvs/jakarta-tools
+    from-cvs/jakarta-watchdog
+    from-cvs/jakarta-ant                        Stefan Bodewig (cleaned out)
+    from-cvs/jakarta-taglibs
+    from-cvs/jakarta-regexp
+    from-cvs/jakarta-slide
+    from-cvs/jakarta-servletapi
+    from-cvs/jakarta-struts
+    from-cvs/jakarta-tomcat-4.0
+    tomcat
+    tomcat/images
+    tomcat/tomcat-3.2-doc
+    tomcat/tomcat-3.3-doc
+    tomcat/tomcat-4.0-doc
+    watchdog
+    BUGS
+    cvsweb
+    images                                      Stefan Bodewig
+    struts
+    struts/META-INF
+    struts/WEB-INF
+    struts/images
+    struts/api
+    struts/dtds
+    struts/uml
+    struts/userGuide
+    velocity
+    velocity/images
+    velocity/ymtd
+    velocity/ymtd/images
+    velocity/api
+    tomcat-4.0
+    tomcat-4.0/jakarta-tomcat-4.0
+    tomcat-4.0/jakarta-tomcat-4.0/catalina
+    tomcat-4.0/jakarta-tomcat-4.0/catalina/docs
+    tomcat-4.0/jakarta-tomcat-4.0/catalina/src
+    tomcat-4.0/jakarta-tomcat-4.0/jasper
+    tomcat-4.0/jakarta-tomcat-4.0/jasper/doc
+    tomcat-4.0/jakarta-tomcat-4.0/jasper/src
+    tomcat-4.0/jakarta-tomcat-4.0/webapps
+    tomcat-4.0/jakarta-tomcat-4.0/webapps/examples
+    tomcat-4.0/jakarta-tomcat-4.0/webapps/webdav
+    tomcat-4.0/jakarta-tomcat-4.0/webapps/manager
+    tomcat-4.0/jakarta-tomcat-4.0/webapps/webdav.bu
+    tomcat-4.0/jakarta-tomcat-4.0/invocation
+    tomcat-4.0/jakarta-tomcat-4.0/invocation.bu
+    slide
+    slide/images
+    slide/samples
+    slide/schema
+    slide/style
+    slide/javadoc
+    slide/uml               [lots of crap under here]
+    slide/uml/webviewer
+    slide/uml/looseends
+    slide/clientjavadoc
+    slide/client
+    james
+    james/images
+    james/mailet
+    james/rfclist
+    log4j				Ceki Gulcu
+    log4j/jakarta-log4j-1.0.4		Ceki Gulcu
+    log4j/jakarta-log4j-1.1		Ceki Gulcu (removed dir)
+    log4j/jakarta-log4j-1.1.1		Ceki Gulcu
+    log4j/docs.old			Ceki Gulcu (removed dir)
+    jmeter
+    jmeter/dist
+    jmeter/api
+    jmeter/images
+    jmeter/user_manual
+    jmeter/extending
+    avalon
+    avalon/api
+    avalon/framework
+    avalon/history
+    avalon/excalibur
+    avalon/images
+    avalon/testlet
+    avalon/cornerstone
+    avalon/phoenix
+    avalon/phoenix/images
+    avalon/logkit
+    alexandria
+    mail
+    jetspeed
+    jetspeed/channels
+    jetspeed/images
+    jetspeed/dist
+    jetspeed/dist/archive
+    jetspeed/dist/.archive.old
+    jetspeed/api
+    jetspeed/misc
+    jetspeed/site
+    jetspeed/xml
+    jmeter.bak
+    jmeter.bak/api
+    jmeter.bak/images
+    avalon.old
+    avalon.old/dist
+    avalon.old/images
+    avalon.old/resources
+    avalon.old/api
+    avalon.old/docs
+    james.bak
+    jmeter.bak2
+    gump
+    commons
+    commons/cactus
+    commons/images
+    jars
+    jars/jakarta-commons
+    jars/jakarta-commons/digester
+    jars/jakarta-commons/collections
+    jars/jakarta-commons/beanutils
+    james.bak2
+    tomcat-old
+    tomcat-old/jakarta-tomcat
+
+java.apache.org
+    jyve
+    jyve/jyve-app
+    jyve/jyve-app/images
+    faq
+    images
+    jserv
+    jserv/protocol
+    jserv/api
+    jserv/install
+    jserv/images
+    jserv/future
+    jserv/dist
+    jserv/dist/old
+    jserv/papers
+    jservssi
+    jservssi/dist
+    jservssi/dist/old
+    jservssi/dist/old/ApacheJSSI-1.1
+    jservssi/dist/old/ApacheJSSI-1.1.1
+    jservssi/dist/ApacheJSSI-1.1.2
+    jservssi/images
+    main
+    makefile
+    old
+    old/doc
+    old/images
+    mail
+
+perl.apache.org
+    Embperl
+    asp
+    current
+    current/Apache
+    current/Connection
+    current/Constants
+    current/File
+    current/Leak
+    current/Log
+    current/ModuleConfig
+    current/PerlRunXS
+    current/Server
+    current/Symbol
+    current/Table
+    current/URI
+    current/Util
+    current/apaci
+    current/benchmark
+    current/eg
+    current/faq
+    current/htdocs
+    current/lib
+    current/src
+    current/t
+    dist
+    dist/contrib
+    dist/old
+    dist/mod_perl-1.25
+    embperl
+    embperl/eg
+    faq
+    guide
+    guide/code
+    images
+    logos
+    netcraft
+    perl-conf
+    stories
+    stories/convert
+    tpc-2.0
+    tpc-2.0/advanced-modperl
+    tuning
+    from-cvs
+    from-cvs/embperl
+    from-cvs/modperl
+    from-cvs/modperl-2.0
+    from-cvs/modperl-site
+    rpm					David Harris
+    rpm/distrib				David Harris
+    mail
+    conferences
+    conferences/tpc5-us
+
+search.apache.org                       Brian Behlendorf
+
+www.apache.org
+    contributors
+    dist                                Dirk-Willem van Gulik 
+					(all pgp signed binaries from here down)
+    dist/KEYS                          	Dirk-Willem van Gulik
+    dist/apr				<!-- empty dir -->
+    dist/tcl				<!-- empty dir -->
+    dist/httpd				<!-- all other files signed -->
+	Apache-1.3-docs.pdf.gz		Dirk-Willem van Gulik
+    	libapreq-0.31_03.tar.gz		Dirk-Willem van Gulik
+    	libapreq-0.31.tar.gz		Dirk-Willem van Gulik
+    dist/httpd/binaries			
+    dist/httpd/binaries/linux
+    dist/httpd/binaries/irix
+    dist/httpd/binaries/netbsd
+    dist/httpd/binaries/freebsd		<!-- all but 1.3.12 done -->
+    dist/httpd/binaries/netware
+    dist/httpd/binaries/win32		<!-- all pgp signed and ok -->
+    dist/httpd/binaries/win32/old
+    dist/httpd/binaries/aux		
+    dist/httpd/binaries/reliantunix     Martin Kraemer
+    dist/httpd/binaries/reliantunix/old Martin Kraemer
+    dist/httpd/binaries/qnx		<!-- all pgp signed and ok -->
+    dist/httpd/binaries/solaris
+    dist/httpd/binaries/hpux
+    dist/httpd/binaries/dgux
+    dist/httpd/binaries/bsdi		<!-- all pgp signed and ok -->
+    dist/httpd/binaries/os2
+    dist/httpd/binaries/os2/old
+    dist/httpd/binaries/sunos
+    dist/httpd/binaries/digitalunix
+    dist/httpd/binaries/unixware
+    dist/httpd/binaries/openbsd		<!-- all pgp signed and ok -->
+    dist/httpd/binaries/bs2000-osd
+    dist/httpd/binaries/aix
+    dist/httpd/binaries/aix/old
+    dist/httpd/binaries/rhapsody
+    dist/httpd/binaries/os390
+    dist/httpd/binaries/darwin
+    dist/httpd/binaries/beos
+    dist/httpd/old
+    dist/httpd/contrib
+    dist/httpd/libapreq*               Jim Winstead
+    dist/httpd/patches
+    dist/jakarta
+    dist/jakarta/oro                   Daniel F. Savarese
+    dist/jakarta/oro/rpms
+    dist/jakarta/ant                   Stefan Bodewig
+    dist/jakarta/ant/src               Stefan Bodewig
+    dist/jakarta/ant/bin               Stefan Bodewig
+    dist/jakarta/ant/rpms              Stefan Bodewig
+    dist/jakarta/ecs
+    dist/jakarta/ecs/rpms
+    dist/jakarta/regexp
+    dist/jakarta/regexp/rpms
+    dist/java				<!-- empty dir -->
+    dist/perl				Dirk-Willem van Gulik
+    dist/xml
+    docs
+    docs/howto
+    docs/images
+    docs/mod
+    docs/misc
+    docs/search
+    docs/vhosts
+    docs/howto.permissions.deny.access.by.apmembers
+    dyn
+    foundation
+    foundation/board
+    foundation/records
+    foundation/records/minutes
+    foundation/records/minutes/1999
+    foundation/records/minutes/2000
+    foundation/records/minutes/2001
+    foundation/images
+    foundation/press
+    foundation/press/kit
+    foundation/docs
+    images
+    info
+    info/css-security
+    library
+    mirrors
+    press
+    mail
+    bugs
+    licenses
+    uri-res
+    websrc
+    docs-2.0
+
+xml.apache.org
+    dist
+    dist/images
+    cocoon
+    cocoon/graphics
+    cocoon/resources
+    cocoon/images
+    cocoon/dist
+    cocoon/misc
+    cocoon/cocoon2
+    cocoon/cocoon2/resources
+    cocoon/cocoon2/images
+    cocoon/cocoon2/graphics
+    fop
+    fop/graphics
+    fop/resources
+    fop/dist
+    fop/dist/recent
+    fop/dist/old
+    fop/images
+    graphics
+    resources
+    xalan
+    xalan/graphics
+    xalan/resources
+    xalan/apidocs
+    xalan/c-apidocs
+    xalan/design
+    xalan/images
+    from-cvs
+    from-cvs/xml-cocoon
+    from-cvs/xml-fop
+    from-cvs/xml-stylebook
+    from-cvs/xml-xalan
+    from-cvs/xml-xerces
+    from-cvs/xml-xang
+    xerces-c
+    xerces-c/dist
+    xerces-c/dist/experimental
+    xerces-c/dist/experimental/com
+    xerces-c/dist/experimental/tru64
+    xerces-c/dist/experimental/archives
+    xerces-c/dist/experimental/archives/com
+    xerces-c/dist/experimental/archives/tru64
+    xerces-c/dist/stable
+    xerces-c/dist/stable/archives
+    xerces-c/dist/stable/archives/Xerces-C_1_0_0
+    xerces-c/dist/stable/archives/Xerces-C_1_0_1
+    xerces-c/dist/stable/archives/Xerces-C_1_1_0
+    xerces-c/dist/stable/archives/Xerces-C_1_2_0
+    xerces-c/dist/stable/archives/Xerces-C_1_2_0a
+    xerces-c/dist/stable/archives/Xerces-C_1_3_0
+    xerces-c/dist/nightly
+    xerces-c/apiDocs
+    xerces-c/resources
+    xerces-c/graphics
+    xerces-c/pdf
+    xerces-j
+    xerces-j/graphics
+    xerces-j/resources
+    xerces-j/apiDocs
+    xerces-j/dist
+    xerces-j/dist/back
+    xerces-j/images
+    xerces-j/apibackDocs
+    xerces-p
+    xerces-p/graphics
+    xerces-p/resources
+    xerces-p/apiDocs
+    xerces-p/dist
+    xerces-p/dist/experimental
+    xerces-p/dist/archive
+    bugs
+    trax                                Shane Curcuru (has been removed, no changes)
+    xang
+    xang/graphics
+    xang/resources
+    xang/dist
+    xang/images
+    xalan-j
+    xalan-j/dist                        Shane Curcuru (sigs verified)
+    xalan-j/dist/nightly                Shane Curcuru (has been removed, no changes)
+    xalan-j/dist/prerelease             Shane Curcuru
+    xalan-j/dist/old                    Shane Curcuru (sigs verified)
+    xalan-j/apidocs
+    xalan-j/graphics
+    xalan-j/resources
+    xalan-j/test
+    xalan-j/test/apidocs                Shane Curcuru (has been removed, no changes)
+    xalan-j/test/graphics               Shane Curcuru (has been removed, no changes)
+    xalan-j/test/resources              Shane Curcuru (has been removed, no changes)
+    xalan-j/test/impincl                Shane Curcuru (has been removed, no changes)
+    xalan-j/compat_apidocs
+    xalan-j/design
+    xalan-j/design/images
+    xalan-j/test.sc.old                 Shane Curcuru (has been removed, no changes)
+    xalan-j/xsltc
+    xalan-j/xsltc/graphics
+    xalan-j/xsltc/images
+    xalan-j/xsltc/resources
+    images
+    apiDocs
+    xalan-c
+    xalan-c/graphics
+    xalan-c/resources
+    xalan-c/dist                        Paul Dick (sigs verified)
+    xalan-c/apidocs
+    xalan-c/images
+    soap
+    soap/graphics
+    soap/resources
+    soap/images
+    soap/dist
+    soap/dist/version-2.2rc1
+    soap/dist/version-2.2rc2
+    soap/dist/version-2.2rc3
+    soap/dist/version-1.2
+    soap/dist/version-2.0
+    soap/dist/version-2.1
+    soap/dist/nightly
+    soap/dist/nightly/2001-05-18
+    soap/faq
+    soap/docs
+    soap/docs/apiDocs
+    soap/docs/guide
+    soap/docs/images
+    soap/docs/install
+    soap/docs/trouble
+    soap.old
+    soap.old/dist
+    batik
+    batik/graphics
+    batik/images
+    batik/resources
+    batik/dist
+    batik/dist/archives
+    pr
+    websrc
+    crimson
+    crimson/graphics
+    crimson/resources
+    crimson/dist
+    crimson/dist/nightly
+    crimson/dist/Old
+    mail
+    axis
+    axis/dist
+    axis/dist/nightly
+    axis/docs
+</pre>
+
+<h6>$Id: 20010519-hack.html 122768 2004-12-19 16:00:12Z nd $</h6>
+</body>
+</html>
