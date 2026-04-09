@@ -322,7 +322,6 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
 <div class="sponsors mb-xl">
     <ul id='targetedbronze' class="sponsors-col-list">
         <li><a target="_blank" rel="sponsored" href="https://www.techatbloomberg.com/opensource">Bloomberg</a></li>
-        <li><a target="_blank" rel="sponsored" href="https://www.ena.com/">Education Networks of America</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.google.com/">Google</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.hopsie.com/">Hopsie</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.noip.com/">No-IP</a></li>
