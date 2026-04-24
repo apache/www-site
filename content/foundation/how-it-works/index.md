@@ -383,7 +383,7 @@ their apache.org email address when otherwise they would use their personal
 one. This last method is not reliable, as many people use their
 apache.org address all of the time.
 
-### Balancing confidentiality and public discussion  {#confidential}
+### Balancing confidentiality, privacy, and public discussion  {#confidential}
 
 We endeavour to conduct as much discussion in public as possible. This
 encourages openness, provides a public record, and stimulates the broader
@@ -391,7 +391,17 @@ community.
 
 However sometimes internal private mail lists are necessary. You must never
 divulge information from such a list in public without the express permission of the
-list. Also never copy an email between private and public lists (no Cc).
+list. The participants on the private list know and understand that subscribers
+to the list (and ASF Members) may read their content, but they have **not**
+provided consent for others to read the content they send to the list.
+This consent is required before delivering mailing list content to other
+persons or third party services.
+
+Even with consent, the Foundation needs a signed DPA with that third party to
+ensure that the materials are handled properly, with the Foundation's
+concerns in mind.
+
+Also never copy an email between private and public lists (no Cc).
 Such an event would go beyond the normal need for email etiquette and would be a
 serious breach of confidence. It could have serious ramifications, causing
 unnecessary confusion and ill-informed discussion.
