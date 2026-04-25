@@ -69,12 +69,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
             <div class="logo-caption">VISA</div>
         </a>
     </div>
-    <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="https://yahooinc.com/">
-            <img src="images/yahoo-platinum.png"/>
-            <div class="logo-caption">Yahoo!</div>
-        </a>
-    </div>
 </div>
 
 
@@ -169,6 +163,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
             <div class="logo-caption">Red Hat, Inc.</div>
         </a>
     </div>
+    <div class="logo-card">
+        <a target="_blank" rel="sponsored" href="https://yahooinc.com/">
+            <img src="images/yahoo-silver.png"/>
+            <div class="logo-caption">Yahoo!</div>
+        </a>
+    </div>    
 </div>
 
 
