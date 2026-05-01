@@ -1,4 +1,4 @@
-Title: Third Party Event Branding Policy, Version 1.6
+Title: Third Party Event Branding Policy
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 
@@ -166,7 +166,7 @@ Partner or the like are for the Apache Software Foundation as a whole, and indiv
 
 The VP, Conferences proactively seeks to avoid conflicts between
 Apache-related technology conferences geographically, and between conferences
-on the same Apache project topics internationally, to ensure that individual
+on the same Apache project topics globally, to ensure that individual
 conferences are successful and that they are not competing for sponsorship and participation
 by the same limited community of experts on individual Apache technologies.
 
@@ -175,26 +175,30 @@ in conjunction with competing conferences that would adversely affect each
 event's ability to put on content (i.e., get speakers, obtain sponsorship) and fulfill the goals of having a rich community
 event with educational content about Apache projects.
 
-- Small events (under 250 expected attendees), and free or purely community-run (non-corporate & non-profit) events might be considered competing only with other events that are about the same Apache project or related Apache projects.
-
-- Large events (over 250 expected attendees) may be considered competing with
-other events even in other Apache project areas, or with the ASF's
-own Community Over Code conferences.
-
-An Apache "Foundation Event" is an event run by and for the ASF as a whole, will called "Community Over Code" or "ASF
+An Apache "Foundation Event" is an event run by and for the ASF as a whole, will be called "Community Over Code" or "ASF
 Roadshow," and is listed on [https://events.apache.org/](https://events.apache.org/).
 
 The Apache Software Foundation will not approve the use of Apache trademarks
-where a date conflict exists with a Foundation Event. A date conflict is defined as:
+where a date conflict exists with a Foundation Event. A date conflict with a Foundation
+Event is defined as:
+
+- Any event is in conflict if it is within six weeks of a Foundation Event in the same
+geographical area (i.e., North America, South America, Europe, Africa, Asia/Pacific),
+or within three weeks of a Foundation event in a different geographical area.
 
 - A proposed event that wishes to become a Foundation
 Event, as defined above, conflicts if it is within 60 days of a Foundation Event in the same
-geographical area (i.e., North America, South America, Europe, Africa, Asia/Pacific) and within
-30 days in a different geographical area.
+geographical area and within 30 days in a different geographical area.
 
-- A third-party event, or a project event (i.e., an Apache _Foo_ event run by
-the Apache Foo PMC) is in conflict if it is within six weeks of a Foundation Event in the same
-geographical area, or within three weeks in a different geographical area.
+Between events other than foundation events there may be more flexibility depending on size of the
+events and the overlap between the communities. Each request will be considered on a case by case basis
+but typically:
+
+- Large events (more than 250 expected attendees) will be considered to be competing with other
+events for any other Apache project.
+
+- Small events (250 expected attendees or fewer) will be considered to be competing with other
+events about the same Apache project or related Apache projects.
 
 To ensure that we can approve your request for use of Apache marks, [contact us][contactevents] with early notice of your
 intended timeframe and location to verify no conflicts,
@@ -232,7 +236,7 @@ from VP, Brand or an Apache project's VP, then *you do not have permission*!
    materials (if not public yet, provide screenshots or explanations). See [Referring to Apache marks, projects and products](#naming)
 2. Ensure your date doesn't clash with another Apache event. See [Dates](#dates)
    for more information and a link to the current list. The ASF will not give approval to
-   events which clash with, or are very close to, another similar event.
+   events which conflict with another similar event.
 3. Contact the appropriate PMC(s). PMC representatives are generally
    required, during both planning and the event itself, and the earlier you engage
    with the PMC the easier this will be to arrange. As an absolute minimum the PMC must approve
@@ -273,7 +277,7 @@ third party products, services, or events.**
 
 ### Policy Version  {#version}
 
-This is version 1.7 of this Apache policy document, published in February 2024.
+This is version 1.8 of this Apache policy document, published in May 2026.
 
 Material changes will be marked with a new version number.
 
@@ -290,6 +294,8 @@ Material changes will be marked with a new version number.
 **v1.6** Update to v1.6; updated announced event names from ApacheCon to Community Over Code, also clarified "Announced Events" as "Foundation Events," and indicated responsibility of VP, Conferences over event scheduling instead of ComDev.
 
 **v1.7** Update to v1.7; update URI for events calendar; remove requirement to provide dates to ComDev.
+
+**v1.8** Update to v1.8; clarify event date conflicts
 
 [contactevents]: /foundation/marks/contact#events
 [resources]: /foundation/marks/resources
