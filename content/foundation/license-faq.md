@@ -52,6 +52,8 @@ License)?](#GPL)
 
 1.  [What is the provenance of source code from the ASF?](#provenance)
 
+1.  [Is it ok to use https instead of http in the LICENSE file and license headers?](#httpsVhttp)
+
 If none of the above addresses your query, check the [resources at
 the bottom of this page](#resources) for further information.
 
@@ -329,6 +331,11 @@ Content in Apache Software Foundation (ASF) source code repositories typically f
 4. By Direct License. Some content's license conditions are considered by the ASF to fall within the scope of the Apache-2.0 license ("[Category A Licenses](https://www.apache.org/legal/resolved.html#category-a)"). This content is incorporated into ASF projects and licensed to downstream users under its original license. The content retains its original license identification and any required notices included in the ASF release. If changes are made to the code as a part of an ASF contribution, the foundation's Apache-2.0 licensing header is included in each changed file.
 
 Note that "Convenience Binary" distributions from the ASF may also include files under other "[Category B](https://www.apache.org/legal/resolved.html#category-b)" licenses.
+
+# Is it OK to use https instead of http in LICENSE and source headers? {#httpsVhttp}
+
+Yes. When the LICENSE text was last updated in 2004, https did not have the widespread adoption it does now. It is acceptable,
+in fact encouraged, to use https wherever http is currently used in LICENSE files as well as in individual source headers.
 
 # Another place to Look  {#resources}
 
