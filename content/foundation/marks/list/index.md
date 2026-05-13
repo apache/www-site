@@ -471,6 +471,25 @@ or see other common law trademarks by letter:
         </li>
       </ul>
     </div>
+    <div class="panel panel-primary" id="grails">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://grails.apache.org">Apache Grails</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered or applied for trademarks for our Apache Grails® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">GRAILS ®</li>
+        <li class="list-group-item">
+          In the United States of America, class 42, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5186350&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5186350</a>
+        </li>
+        <li class="list-group-item">
+          In the United States of America, class 42, reg #
+          <a href="https://tsdr.uspto.gov/#caseNumber=5377681&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">5377681</a>
+        </li>
+      </ul>
+    </div>
     <div class="panel panel-primary" id="groovy">
       <div class="panel-heading">
         <h3 class="panel-title"><a href="http://groovy.apache.org">Apache Groovy</a>® software</h3>
