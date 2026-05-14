@@ -110,11 +110,17 @@ Targeted Sponsorships benefit the ASF in addition to funding our general operati
 
 The first to launch is the ASF Tooling Initiative (March 2025), created to meet the growing global demand for ASF software by hardening ubiquitous Apache projects that benefit the greater open source ecosystem.
 
+The ASF launched the [Responsible AI Initiative](/foundation/initiatives/responsibleai) in April 2026 to support those ASF Projects and communities that form the backbone of today's rapidly evolving AI ecosystem. With an overall funding aim of $10M over 3+ years, the Initiative is committed to ensuring the ASF remains secure, transparent, and governed in the public interest.
+
 ## Corporate Giving Programs
 
 The impact of your gift to the ASF as part of an annual corporate giving program bolsters the ASF’s mission. Corporate giving programs at Bloomberg, IBM, Microsoft, PayPal, Vanguard, and many others offer tax benefits, and provide their employees the ability to boost their support of a diverse set of nonprofit projects.
 
 The ASF is an official charity in the Benevity Causes Portal, as part of numerous corporate giving initiatives such as The American Online Giving Foundation, the Microsoft Tech Talent for Good volunteer program and Charles Schwab Charitable. For more information, visit [https://www.benevity.com/](https://www.benevity.com/).
+
+## Sponsorship Presentation
+
+Key information on the ASF's Fundraising program is available in the [Sponsorship presentation deck]([https://docs.google.com/presentation/d/1m3eBuaqCEAg-HiF6amgpAg719jnQW5luPlrYSxyt3TY/edit?usp=sharing](https://docs.google.com/presentation/d/11OZ8ofZ7tEJn8WMgNCv-_VOe9KpX0tFJcURUIPWVX5o/edit?slide=id.g3e13cda0b3c_0_34#slide=id.g3e13cda0b3c_0_34).
 
 ## FAQ
 
