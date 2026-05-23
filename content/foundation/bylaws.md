@@ -63,24 +63,23 @@ shall designate another person to do so.
 the place, date and hour of the meeting and, in the case of a special
 meeting, the purpose or purposes for which the meeting is called, shall be
 delivered not less than ten (10) nor more than sixty (60) days before the
-date of the meeting, either personally or by first class mail, by or at the
+date of the meeting, either personally or by electronic mail, by or at the
 direction of the Board Chair, President, the Secretary, or the officer or
 persons calling the meeting, to each member of record entitled to vote at
-such meeting. If mailed, such notice shall be deemed to be delivered when
-deposited in the United States mail addressed to the member at their
-address as it appears in the membership records of the corporation, with
-postage thereon prepaid.
+such meeting. If emailed, such notice shall be deemed to be delivered when
+sent to the member at their electronic mail
+address as it appears in the membership records of the corporation.
 
 Notwithstanding the above paragraph, the corporation shall not be required
 to give notice of a members' meeting to any member to whom notice of two
 consecutive annual meetings, and all notices of meetings or of the taking
 of action by written consent without a meeting to such member during the
-period between such two consecutive annual meetings, have been mailed under
+period between such two consecutive annual meetings, have been emailed under
 the procedures outlined above and have been returned undeliverable. Any
 action or meeting which shall be taken or held without notice to such
 member shall have the same force and effect as if such notice had been duly
 given. If any such member delivers to the corporation a written notice
-setting forth their then current address, the requirement that notice
+setting forth their then current email address, the requirement that notice
 be given to such member shall be reinstated.
 
 **<a id="3.5" name="3.5">Section 3.5.</a>Notice of Adjourned Meetings.**
@@ -162,7 +161,7 @@ Rights.** The officer or agent having charge of the membership records of
 the corporation shall prepare and make, at least ten (10) days before each
 meeting of members, a complete list of the members entitled to vote at such
 meeting, arranged in alphabetical order, and showing the name, address,
-telephone number, facsimile number and electronic mail address of each
+and electronic mail address of each
 member. For a period of ten (10) days prior to such meeting, the list shall
 be open to the examination of any member, for any purpose germane to the
 meeting, during ordinary business hours, either at a place within the city
@@ -188,8 +187,9 @@ majority of the members represented at the meeting and entitled to vote on
 the subject matter shall be the act of the members, unless the vote of a
 greater number or voting by class is required by the General Corporation
 Law of the State of Delaware or by the Certificate of Incorporation or by
-these Bylaws. The directors shall be elected by a plurality of the votes of
-the members present in person or represented by proxy at the meeting and
+these Bylaws. The directors shall be elected by a ranked choice votes of
+the members present in person, or represented by proxy at the meeting,
+or having voted by secret ballot and
 entitled to vote on the election of directors. Where a separate vote by
 class of members is required, the affirmative vote of a plurality of
 members of such class represented at the meeting shall be the act of such
@@ -214,8 +214,9 @@ emeritus members) shall be entitled to one vote on each matter submitted to
 a vote at a meeting of the members, except as may otherwise be provided in
 the General Corporation Law of the State of Delaware.
 
-A member may vote either in person or by proxy executed in writing by the
-member or their duly authorized attorney-in-fact.
+A member may vote in person, or by proxy executed in writing by the
+member or their duly authorized attorney-in-fact, or by secret ballot
+conducted prior to the meeting.
 
 **<a id="3.11" name="3.11">Section 3.11.</a>Proxies.** Every member
 entitled to vote at a meeting of members or to express consent or dissent
@@ -406,8 +407,8 @@ Special meetings of the Board of Directors shall be held at such times as
 called by the Board Chair, the President of the corporation, or
 any two (2) directors. Written notice of the time and place of special
 meetings of the Board of Directors shall be given to each director by
-either personal delivery, telegram, cablegram, or telefax at least two (2)
-days before the meeting, or by notice mailed to each director at least five
+personal notice at least two (2)
+days before the meeting, or by notice emailed to each director at least five
 (5) days before the meeting.
 
 Notice of a meeting of the Board of Directors need not be given to any
@@ -523,7 +524,7 @@ affix, or attest the affixing of, the corporate seal to any lawfully
 executed instrument requiring it. The Secretary shall have general charge
 of the membership records of the corporation and shall keep, at the
 registered or principal office of the corporation, a record of the members
-showing the name, address, telephone number, facsimile number and
+showing the name, address, and
 electronic mail address of each member. The Secretary shall sign such
 instruments as may require their signature and, in general, shall
 perform all duties as may be assigned to them from time to time by
@@ -603,14 +604,13 @@ Directors and committees of directors.
 
 The corporation shall keep at its registered office or principal place of
 business, or at the office of its transfer agent or registrar, a record of
-the name, address, telephone number, facsimile number and electronic mail
+the name, address, and electronic mail
 address of each member, together with the date of any withdrawal or
 termination of such member's membership, or any conversion of such member's
 membership to emeritus status.
 
 Each member shall be responsible for notifying the corporation of changes
-to such member's address, telephone number, facsimile number or electronic
-mail address.
+to such member's address and electronic mail address.
 
 Any books, records and minutes may be in written form or in any other form
 capable of being converted into clearly legible written form within a
