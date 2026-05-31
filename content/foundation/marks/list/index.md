@@ -836,9 +836,6 @@ or see other common law trademarks by letter:
         <li class="list-group-item">In European Union (Community), class 9, reg # 1337205</li>
         <li class="list-group-item">In European Union (Community), class 38, reg # 1337205</li>
         <li class="list-group-item">In European Union (Community), class 42, reg # 1337205</li>
-        <li class="list-group-item">In France, class 9, reg # (16)4282873</li>
-        <li class="list-group-item">In France, class 38, reg # (16)4282873</li>
-        <li class="list-group-item">In France, class 42, reg # (16)4282873</li>
         <li class="list-group-item">In India, class 9, reg # 1337205</li>
         <li class="list-group-item">In India, class 38, reg # 1337205</li>
         <li class="list-group-item">In India, class 42, reg # 1337205</li>
