@@ -120,7 +120,7 @@ The ASF is an official charity in the Benevity Causes Portal, as part of numerou
 
 ## Sponsorship Presentation
 
-Key information on the ASF's Fundraising program is available in the [Sponsorship presentation deck](./ASF-Sponsorship-2026.pdf). 
+Key information on the ASF's Fundraising program is available in the [Sponsorship presentation deck](./ASF-Sponsorship-2026.pdf).
 
 ## FAQ
 
