@@ -452,7 +452,7 @@ a board member. Your PMC needs to work with the new committer to ensure
 that their CLA is received and recorded properly, so you need to monitor
 the file `iclas.txt` in the `foundation/officers` repository. Only ASF
 members and officers (PMC chairs) have access. The Apache Phone Book
-has an [Unlisted CLAs](https://people.apache.org/unlistedclas.html) page
+has an [Unlisted CLAs](https://whimsy.apache.org/officers/unlistedclas.cgi) page
 which is generated daily from the `iclas.txt` file, and recently received CLAs
 appear there.
 
