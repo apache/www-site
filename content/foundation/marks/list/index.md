@@ -141,7 +141,7 @@ or see other common law trademarks by letter:
         <li class="list-group-item active">Leaf Logo ®</li>
         <li class="list-group-item">
           In the United States of America, class 9, reg #
-          <a href="https://tsdr.uspto.gov/#caseNumber=&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"></a>
+          <a href="https://tsdr.uspto.gov/#caseNumber=8311517&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch">8311517</a>
         </li>
       </ul>
     </div>
