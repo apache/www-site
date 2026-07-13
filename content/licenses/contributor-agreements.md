@@ -43,17 +43,18 @@ authority to enter into legal contracts on behalf of the corporation must sign i
 
 The ICLA an individual signs is not tied to any employer they may have, so we recommend that individuals use their personal email addresses in the contact details, rather than their @work addresses.
 
-The ASF publishes your _legal name_ unless you provide an alternative _display name_.
+The ASF publishes your _Full name_ unless you provide an alternative _Public name_.
 For example, if your full name is Andrew Bernard Charles Dickens, but you wish
-to be known as Andrew Dickens, enter the latter as your Display Name.
+to be known as Andrew Dickens, enter the latter as your Public Name.
 
-We do not publish your postal address.
+We do not publish your Residence Address or Country.
 
-If you are submitting an ICLA in response to an invitation from a PMC, be sure to
+If you are submitting an ICLA in response to an invitation from a PMC or podling, be sure to
 identify the project via the form field "notify project". Also, choose a preferred ID that
 is not already in use. Apache IDs must start with an alphabetic character and contain
 at least two additional alphanumeric characters (no special characters).
 You can check for IDs in use [here](https://people.apache.org/committer-index.html).
+You can provide multiple preferred IDs in case your first choice is not available.
 
 ## Software License Grant  {#grants}
 
@@ -69,20 +70,22 @@ support it as part of a collaborative project.
 
 ## How-To: Submitting license agreements and grants  {#submitting}
 
-You may sign documents by hand or by electronic signature, and submit them by email. The ASF no longer accepts submissions by postal mail or by fax.
+You may sign documents by electronic signature or by attaching a graphic signature to the form,
+and submit them by email. The ASF no longer accepts submissions by postal mail, by fax,
+or by printing and scanning the document. This is to avoid errors during filing caused by
+poorly scanned documents.
 
-When submitting by email, please fill in the form with a PDF viewer, then
-print and sign it, scan all pages into a single PDF file, 
-and attach the PDF file to an email addressed to secretary@apache.org. 
+When submitting by email, please fill in the form with a PDF form filler, then
+save and attach the PDF file to an email addressed to secretary@apache.org.
 
 Do not copy anyone else on your submission, as the documents contain 
 Personally Identifiable Information that should not be exposed to anyone
 outside the secretary team.
 
-No printer? See [CLA Frequently Asked Questions](cla-faq.html#printer)
+If you are unclear how to use a form filler, see [CLA Frequently Asked Questions](cla-faq.html#printer)
 
 You must send the attachment from the email address you list in the document.
-Send only one attached document per email.
+Send only one attached document (and optional signature) per email.
 
 If you prefer to sign electronically, fill in the form, save it locally (e.g. icla.pdf), and sign the
 file by preparing a detached PGP signature. For example,
