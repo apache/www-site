@@ -127,20 +127,20 @@ be reassessed.
 ICLA, CCLA, SGA, and Member license documents are PDF forms with entry form fields.
 There is also space for a signature which cannot be typed.
 Using a PDF form filler will allow the submitter to fill and sign the forms without printing them.
-The precise steps needed depend on the operating system of the submitter.
+Some browsers can fill PDF forms directly.
+The precise steps needed depend on the operating system and tools used by the submitter.
 
 **MacOSX and Linux users:** 
 
-1. Use your browser to navigate to the [.PDF form](/licenses/contributor-agreements.html) and download it to a local file
-   using the save-as function.
-2. Open the file with a form filler (details below).
-3. Open the email client and create a message to [secretary@apache.org](mailto:secretary@apache.org),
+1. Use your browser to navigate to the appropriate [PDF form found here](/licenses/contributor-agreements.html).
+2. Fill the form with your browser or download the file and open the file with a form filler (details below).
+4. Open the email client and create a message to [secretary@apache.org](mailto:secretary@apache.org),
    attach the completed form and send it to secretary.
-4. Keep the completed form for your records.
+5. Keep the completed form for your records.
 
 **Apple iOS users:** 
 
-1. Use your browser to navigate to the [.PDF form](/licenses/contributor-agreements.html) and
+1. Use your browser to navigate to the appropriate [PDF form found here](/licenses/contributor-agreements.html) and
    download it using the **Files** feature. 
 2. Fill the form fields using the keyboard. For the signature, use the **Signature** function to attach your signature. 
 3. **Share** the file to the email client and send the message with the attached form to
@@ -150,7 +150,7 @@ The precise steps needed depend on the operating system of the submitter.
 **Android users** need a third-party tool to fill and attach a signature. 
 First, install a PDF tool such as **Adobe Acrobat**. These instructions may differ somewhat if you are not using Adobe Acrobat.
 
-1. Use your web browser to navigate to the [.PDF form](/licenses/contributor-agreements.html) and
+1. Use your web browser to navigate to the [PDF form found here](/licenses/contributor-agreements.html) and
    download it to a local file. Open the file in the PDF tool.
 2. Fill the form fields using the keyboard. For the signature, use the **Edit** function and choose **Fill & Sign** to attach a signature. 
 3. Save the completed form. 
@@ -161,14 +161,15 @@ First, install a PDF tool such as **Adobe Acrobat**. These instructions may diff
 - Fill the form fields using the keyboard. For the signature, use the **Tools-Annotate-Signature** function to attach a signature. 
 
 ***Google Chrome***
-- Open the PDF form and click on the "Draw" button. Use your mouse or keypad to draw your signature in the "Please sign:" area.
+- Open the PDF form and click on the "**Draw**" button. Use your mouse or keypad to draw your signature in the "Please sign:" area.
 
 ***Microsoft Edge***
-- Open the PDF form and click on the "Draw" button. Use your mouse or keypad to draw your signature in the "Please sign:" area.
+- Open the PDF form and click on the "**Draw**" button. Use your mouse or keypad to draw your signature in the "Please sign:" area.
 
 ***Firefox***
-- Open the PDF form and click on the "Add signature" button, click "+ Add new signature" and
-   either "Draw" your signature using mouse or keypad or select an "Image" file.
+- Open the PDF form and click on the "**Add signature**" button, click on "**+ Add new signature**" and
+  either "**Draw**" your signature using mouse or keypad or select an "**Image**" file.
+  Do not use the "**Type**" option.
 
 ### How do I upload my public key?  {#upload-key}
 
