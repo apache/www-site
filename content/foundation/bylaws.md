@@ -1,5 +1,4 @@
 Title: Bylaws of The Apache Software Foundation
-description: This is a test.
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 
