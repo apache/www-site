@@ -85,7 +85,7 @@ outside the secretary team.
 If you are unclear how to use a form filler, see [CLA Frequently Asked Questions](cla-faq.html#printer)
 
 You must send the attachment from the email address you list in the document.
-Send only one attached document (and optional signature) per email.
+Send only one attached document (and optional detached digital signature) per email.
 
 If you prefer to sign electronically, fill in the form, save it locally (e.g. icla.pdf), and sign the
 file by preparing a detached PGP signature. For example,
