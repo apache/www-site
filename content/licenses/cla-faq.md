@@ -125,7 +125,7 @@ be reassessed.
 ### How do I use a PDF form filler with the license document?  {#printer}
 
 ICLA, CCLA, SGA, and Member license documents are PDF forms with entry form fields.
-There is also space for a signature which cannot be typed.
+There is also space for a signature which must not be typed.
 Using a PDF form filler will allow the submitter to fill and sign the forms without printing them.
 Some browsers can fill PDF forms directly.
 The precise steps needed depend on the operating system and tools used by the submitter.
