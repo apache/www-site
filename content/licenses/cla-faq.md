@@ -147,7 +147,7 @@ Use your mouse or keypad to draw your signature after 'Sign here:'
 
 ***Safari / Apple Preview***
 
-Safari does not support form filling, you will need to download the file and use Preview.
+Safari does not support form filling, so you will need to download the file and use Preview.
 For the signature, use the **Tools-Annotate-Signature** function to create a signature.
 This can then be added to the form and moved into the correct location.
 
