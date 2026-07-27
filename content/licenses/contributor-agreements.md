@@ -112,7 +112,6 @@ regardless of the font that you use.
 
 A valid signature involves one of:
 
-  - Writing your signature by hand on a printed copy of the document
   - Digitally signing the document by hand-drawing a signature
   - Signing the document digitally via gpg
   - Signing the document via DocuSign
