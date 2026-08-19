@@ -1,4 +1,5 @@
-Title: ASF Policies license: [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
+Title: ASF Policies
+license: [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 The Apache Software Foundation maintains policies across several areas to ensure consistent governance, legal compliance, and community standards across all Apache projects. This page serves as a central index of all ASF policies.
 
