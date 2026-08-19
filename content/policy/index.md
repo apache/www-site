@@ -1,9 +1,10 @@
-Title: ASF Policies
-license: [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
+Title: ASF Policies license: [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 The Apache Software Foundation maintains policies across several areas to ensure consistent governance, legal compliance, and community standards across all Apache projects. This page serves as a central index of all ASF policies.
 
 For a summary of which policies are required (MUST), recommended (SHOULD), or optional (MAY) for Apache projects, see the [Board Policy Overview](/board/policies.html).
+
+Links marked with 🔒 require ASF Member or Committer login.
 
 ## Code of Conduct & Community Behaviour
 
@@ -51,6 +52,8 @@ For a summary of which policies are required (MUST), recommended (SHOULD), or op
 - [Board Policy Overview](/board/policies.html) — The comprehensive list of all MUST/SHOULD/MAY requirements for Apache projects
 - [Apache Project Minimum Requirements](/dev/project-requirements.html) — Simplified checklist of project obligations
 - [PMC Guide — Required Policies](/dev/pmc.html#policy) — PMC-specific policy section of the PMC guide
+- 🔒 [Corporate Policy Clarifications](https://cwiki.apache.org/confluence/display/ASFP/Corporate+Policy+Clarifications) — Board-level discussion of policy questions (ASF Members wiki)
+- 🔒 [Conflict of Interest Policy](https://cwiki.apache.org/confluence/display/ASFP/Conflict+of+Interest+policy+development) — COI policy development (ASF Members wiki)
 - [Apache Voting Process](/foundation/voting.html) — How consensus decisions and release votes work
 - [Board Escalation Guide](/board/escalation.html) — How to escalate concerns or problems at the ASF
 
@@ -64,12 +67,16 @@ For a summary of which policies are required (MUST), recommended (SHOULD), or op
 - [Project Source Repository Policy](https://infra.apache.org/project-repo-policy.html) — Requirements for project source control (external: infra.apache.org)
 - [Project Website Policy](https://infra.apache.org/project-site-policy.html) — Requirements for project websites (external: infra.apache.org)
 - [Release Distribution Policy](https://infra.apache.org/release-distribution.html) — How releases must be distributed (external: infra.apache.org)
+- [MFA Reset Policy](https://cwiki.apache.org/confluence/display/INFRA/MFA+Reset+Policy) — Procedure and policy for resetting multi-factor authentication (cwiki)
+- [ASF Mail Rejection Policy](https://infra.apache.org/mail-rejection.html) — When and why ASF mail infrastructure rejects messages (external: infra.apache.org)
 
 ## Conferences & Events
 
 - [Conference Policy](/foundation/conferences.html) — Policies around official Apache events
 - [Third Party Event Branding Policy](/foundation/marks/events.html) — Branding rules for non-ASF events using Apache marks
 - [Giveaway Rules](/giveaway-rules/) — Official rules for ASF promotional giveaways
+- [Travel Assistance Policy](https://tac.apache.org/) — Financial assistance for attending Community Over Code events (external: tac.apache.org)
+- 🔒 [Travel Policy](https://cwiki.apache.org/confluence/display/ASFP/Travel+Policy) — Rules for ASF-funded travel: approval, booking, reimbursement (ASF Members wiki)
 
 ## Other Policies & Guidelines
 
@@ -78,4 +85,6 @@ For a summary of which policies are required (MUST), recommended (SHOULD), or op
 - [Mailing List Policy](/dev/pmc.html#mailing-list-naming-policy) — Naming and usage policies for project mailing lists
 - [Contributor License Agreements](/licenses/#clas) — CLA requirements for committers
 - [CLA FAQ](/licenses/cla-faq.html) — Frequently asked questions about contribution agreements
+- [Publicity Guidelines for Top-Level Projects](https://cwiki.apache.org/confluence/display/PRESS/Publicity+Guidelines+for+Top-Level+Projects) — PR, social media, and analyst relations guidelines (cwiki)
+- [Project Social Media Access & Redundancy Policy](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=406618839) — Ensuring continuity of project social media accounts (cwiki)
 
