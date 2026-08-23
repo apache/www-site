@@ -138,6 +138,20 @@ directly in the file when the short form is used.
 
 PMCs should use their judgement, err on having a full source header and contact legal-discuss@ if unsure. 
 
+### Is an SPDX form of the source header acceptable?
+
+Yes. A header conveying the same information as the standard header in SPDX tags may be used in its place:
+
+```
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: See the NOTICE file distributed with this work for additional information regarding copyright ownership
+SPDX-FileContributor: Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements
+```
+
+All three lines are required. A bare `SPDX-License-Identifier` on its own is not sufficient, because it conveys the license grant but not the NOTICE pointer or the contribution provenance. As with the standard header, the lines may sit within a comment or within file metadata where that is the natural place for them.
+
+This is an additional option, not a replacement. Existing files need not be changed.
+
 ### Does the policy apply to binary/object files, such as executables or JAR files?  {#faq-binaries}
 Yes.  Even if there are no source files within the release, the LICENSE file and NOTICE file are still both required within 
 every ASF distribution -- whether the unit of distribution is a .jar, .msi, .tar.gz, .zip, .exe installer, or any 
