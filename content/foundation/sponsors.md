@@ -177,6 +177,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
     <ul id='bronze' class="sponsors-col-list">
         <li><a target="_blank" rel="sponsored" href="https://www.canva.com/">Canva Engineering</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.cargurus.com/">CarGurus</a></li>
+        <li><a target="_blank" rel="sponsored" href="https://www.circle.com/">Circle</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.colgatepalmolive.com">Colgate-Palmolive</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.getgrist.com">Grist Labs</a></li>
