@@ -18,7 +18,7 @@ The Initiative requires an increase to the ASF's annual budget by $500K per year
     <div class="initiatives-block">
         <h3>Progress Towards 3-year funding goal</h3>
         <div class="init-progress-bar">
-            <div class="init-progress-bar-fill" style="width: 33%">
+            <div class="init-progress-bar-fill" style="width: 50%">
                 <div class="init-progress-bar-text"><div class="triangle"></div> <div id="funding-level">50%</div></div>
             </div>
         </div>
