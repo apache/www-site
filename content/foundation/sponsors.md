@@ -111,12 +111,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
         </a>
     </div>
     <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="http://ibm.com/">
-            <img src="images/ibm.png"/>
-            <div class="logo-caption">IBM</div>
-        </a>
-    </div>
-    <div class="logo-card">
         <a target="_blank" rel="sponsored" href="http://www.union-investment.de/">
             <img src="images/union-gold.png"/>
             <div class="logo-caption">Union Investment</div>
@@ -143,6 +137,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
         <a target="_blank" rel="sponsored" href="https://www.dkb.de/">
             <img src="images/DKB_silver.png"/>
             <div class="logo-caption">DKB</div>
+        </a>
+    </div>
+    <div class="logo-card">
+        <a target="_blank" rel="sponsored" href="http://ibm.com/">
+            <img src="images/ibm.png"/>
+            <div class="logo-caption">IBM</div>
         </a>
     </div>
     <div class="logo-card">
