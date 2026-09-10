@@ -408,11 +408,12 @@ Test packages are for use by consenting developers and interested community
 members only, so they should not be hosted or linked on pages intended for end
 users, or released using a `closer.lua` script.
 
-Projects should use either the new [Apache Trusted Releases](https://releases.apache.org) platform or the
-[`/dev` tree of the `dist` repository](https://dist.apache.org/repos/dist/dev) to stage releases.
+Projects should use the [`/dev` tree of the `dist` repository](https://dist.apache.org/repos/dist/dev) to stage releases.
 The staging features of repository.apache.org may be used
 to host release candidates posted for developer testing/voting (prior to being,
 potentially, formally blessed as a GA release).
+
+Currently in Beta the new [Apache Trusted Releases](https://releases.apache.org) platform allows you to stage your release candidate.
 
 Nightly Builds that are not release candidates can be hosted at [nightlies.apache.org projects area](https://nightlies.apache.org),
 just file an INFRA ticket.
