@@ -231,6 +231,14 @@ Only the [English-language text](/licenses/LICENSE-2.0) is authoritative.
 Translations are for convenience only, and you must continue to include the
 English license when [redistributing Apache packages](#Translation).
 
+The following translations have undergone their publishers' own legal review;
+the ASF has not formally reviewed them. They are linked here as an educational
+convenience, without endorsement. Each translation includes a disclaimer and
+refers to the English original as authoritative.
+
+- [Chinese translation of the Apache License, Version 2.0](https://openatom.cn/law/translation/apache-2.0),
+  published by the OpenAtom Foundation and reviewed by its legal counsel.
+
 ## Is the Apache license compatible with the GPL (GNU Public License)?  {#GPL}
 
 From the [Free Software
