@@ -13,6 +13,9 @@ reliable and long-lived software products through collaborative, open-source sof
 All packages produced by the ASF are implicitly licensed under the Apache
 License, Version 2.0, unless otherwise explicitly stated. 
 
+Only the English text of the Apache License is authoritative. See our FAQ for
+[translations provided for convenience without ASF endorsement](/foundation/license-faq.html#translations).
+
 
 <div style="margin: 3em 10%; font-family:serif;text-align:justify; border: 1px solid black; padding: 2em;   box-shadow: 4px 8px #888888;">
 
