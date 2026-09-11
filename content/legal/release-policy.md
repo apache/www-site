@@ -408,11 +408,12 @@ Test packages are for use by consenting developers and interested community
 members only, so they should not be hosted or linked on pages intended for end
 users, or released using a `closer.lua` script.
 
-Projects should use the 
-[`/dev` tree of the `dist` repository](https://dist.apache.org/repos/dist/dev)
-or the staging features of repository.apache.org
+Projects should use the [`/dev` tree of the `dist` repository](https://dist.apache.org/repos/dist/dev) to stage releases.
+The staging features of repository.apache.org may be used
 to host release candidates posted for developer testing/voting (prior to being,
 potentially, formally blessed as a GA release).
+
+Currently in Beta the new [Apache Trusted Releases](https://releases.apache.org) platform allows you to stage your release candidate.
 
 Nightly Builds that are not release candidates can be hosted at [nightlies.apache.org projects area](https://nightlies.apache.org),
 just file an INFRA ticket.
@@ -461,6 +462,11 @@ If Apache Foo 1.2 is a new branch, and development continues on 1.1 in
 parallel, then it is acceptable to serve both 1.1.a and 1.2.x from `/dist`.
 
 #### How do I upload a release ?  {#upload-ci}
+
+If you use the new [Apache Trusted Releases](https://releases.apache.org) platform then your release artifacts
+will be written to the appropriate subdirectory of the
+[`https://dist.apache.org/repos/dist/release/`](https://dist.apache.org/repos/dist/release/)
+repository.
 
 By committing your release tarballs to the appropriate subdirectory (i.e. TLP name) of the
 [`https://dist.apache.org/repos/dist/release/`](https://dist.apache.org/repos/dist/release/)
