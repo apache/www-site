@@ -70,8 +70,8 @@ agenda with the [Board Agenda Tool][2] (requires Apache login).
 
 Reminders are then sent out to all PMCs about the due dates for reports for 
 the next meeting.  An early reminder (and a followup) is helpful given the distributed and all 
-volunteer nature of Apache PMCs.  Projects typically submit their reports to 
-the board (via the mailing list and by checking into Whimsy) anywhere from
+volunteer nature of Apache PMCs.  Projects typically submit their reports 
+by posting them in the [Board Agenda Tool][2] anywhere from
 three weeks to a few hours beforehand (which may not be accepted
 if the directors don't have sufficient time to review them).
 
@@ -146,17 +146,39 @@ actions either at the next month's meeting, or in the PMC's next normal quarterl
 
 ## Board meeting tools  {#tools}
 
-With the creation of the [Apache Whimsy project](https://whimsy.apache.org/), we now have a number of 
-tools that aid in creation and management of the agenda; workflow 
-functions for submitting, commenting, and approving reports; and a handy, 
-categorized view of the current agenda and the minutes of past meetings.
+The board prepares, runs and records its meetings in the [Board Agenda Tool][2], which is
+maintained by the [Apache Tooling project](https://tooling.apache.org/).  It replaces the
+agenda tool that the [Apache Whimsy project](https://whimsy.apache.org/) used to provide.
 
-While most Whimsy features are restricted to Apache Committers (and much of
-that is further restricted to Members, Officers, or even a specific officer),
-the [categorized listing of past board minutes](https://whimsy.apache.org/board/minutes/)
-is public.  This allows anyone to easily review all past board meetings by
-date, by PMC, or by major special resolutions.  We provide this access as a convenience. The official/canonical version of this data is
-in our [formal publication of all past board meeting minutes](/foundation/board/calendar.html)
+An agenda is still a plain text file in the foundation's private SVN repository, and the
+tool commits to it in the name of whoever made the change - so command line users can
+carry on as before.  What the tool adds is the workflow around that file:
+
+- it **assembles each month's agenda** a day or so after the previous meeting, from the
+  board calendar, the reporting schedule in `committee-info.txt` and the business the last
+  meeting left open, and assigns each project report a Shepherd;
+- PMC Chairs and officers **post their reports** into it, and it sends the reminders that
+  chase the ones that have not arrived;
+- directors **pre-approve, flag and comment on** reports before the meeting, and raise
+  action items;
+- the Chair runs the live meeting from it, and everyone attending can follow along on
+  their own screen at whatever item the Chair has reached;
+- the Secretary **records the minutes** in it as the meeting goes, and afterwards works
+  through a checklist of what the meeting decided - mailing the summary, carrying out
+  resolutions, and publishing the minutes the board approved.
+
+An Apache login is required, and what you can see and do follows the roles you hold: ASF
+Members and PMC Chairs can read the agenda, while pre-approving reports, running the
+meeting and recording the minutes belong to the directors, the Chair and the Secretary
+respectively.  The tool's own [documentation page](https://agenda.apache.org/documentation)
+sets all of that out role by role.
+
+Past minutes are public and need no login.  The official, canonical publication is our
+[formal publication of all past board meeting minutes](/foundation/board/calendar.html).
+Whimsy additionally offers a
+[categorized listing of past board minutes](https://whimsy.apache.org/board/minutes/),
+which lets anyone review past meetings by date, by PMC, or by major special resolutions;
+we provide that as a convenience, and it is being moved onto this site.
 
 
 ## How To Post A Project or Officer Report  {#postreport}
@@ -182,7 +204,13 @@ strictly part of the meeting, but useful for questions).
 
 ## Help and Tips About The Board Agenda Website  {#whimsy}
 
-The Whimsy Board Agenda tool has been deprecated. Please use the [Board Agenda Tool][2].
+Whimsy's board agenda tool has been deprecated; please use the [Board Agenda Tool][2].
+
+The tool documents itself: its [documentation page](https://agenda.apache.org/documentation)
+(Apache login required) walks through the whole monthly cycle, and shows the part of it that
+belongs to each role you hold.  Bugs and suggestions are welcome in the
+[Apache Tooling project](https://tooling.apache.org/), which maintains it; the tool is
+discussed on `#agenda-tool` in [the ASF Slack](https://infra.apache.org/slack.html).
 
   [1]: /foundation/board/reporting
   [2]: https://agenda.apache.org/meetings/current
