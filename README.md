@@ -10,6 +10,7 @@ This repository provides the source for the main website of The Apache Software 
   - **html** files are treated as static files.
   - Static assets of all types.
   - .htaccess files for redirection and rewrite rules.
+  - The site is for reliable, approved material only. Do **not** add material that is in the 'draft' or 'discussion' phase. Use a space on the ASF wiki for developing and discussing material for the website. 
 
 - [Issues](https://github.com/apache/www-site/issues)
 
