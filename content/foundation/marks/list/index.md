@@ -901,6 +901,24 @@ or see other common law trademarks by letter:
         </li>
       </ul>
     </div>
+    <div class="panel panel-primary" id="seata">
+      <div class="panel-heading">
+        <h3 class="panel-title"><a href="http://seata.apache.org">Apache Seata</a>® software</h3>
+      </div>
+      <div class="panel-body">
+              The ASF owns the following registered trademarks for our Apache Seata® software:
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item active">Seata ®</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 40408093</li>
+        <li class="list-group-item">In China (People's Republic), class 9, reg # 37019448</li>
+        <li class="list-group-item">In China (People's Republic), class 35, reg # 37003944</li>
+        <li class="list-group-item">In China (People's Republic), class 36, reg # 37015970</li>
+        <li class="list-group-item">In China (People's Republic), class 38, reg # 37022144</li>
+        <li class="list-group-item">In China (People's Republic), class 41, reg # 37027946</li>
+        <li class="list-group-item">In China (People's Republic), class 42, reg # 37003936</li>
+      </ul>
+    </div>
     <div class="panel panel-primary" id="servicecomb">
       <div class="panel-heading">
         <h3 class="panel-title"><a href="http://servicecomb.apache.org">Apache ServiceComb</a>® software</h3>
