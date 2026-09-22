@@ -18,3 +18,4 @@ Your Awesome List of community programs and resources.
 | [Mentoring](https://community.apache.org/mentoring/) |  Mentoring is the process of actively bringing someone along in a discipline - investing your time into influencing the future. |
 | [Travel Assistance](https://tac.apache.org/) |  ASF provides financial assistance to those who would otherwise be unable to attend various Community Over Code events. |
 | [Working Groups](https://community.apache.org/workinggroups/) | Working groups are informal groups who are working on specific tasks or topics. Each group has a mission, and operates independently, reporting back to the PMC on any activities that it wishes to make visible to the ASF Membership.|
+| [Buy ASF Merchandise](https://www.teepublic.com/user/the-apache-software-foundation) | An ASF-managed storefront where you can buy ASF shirts, stickers, and more.|
