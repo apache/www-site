@@ -98,7 +98,7 @@ bodytag: id="home"
         <div class="project-cards mb-large">
              [for featured_projs]<div class="logo-card" id="[featured_projs.key_id]">
                 <a href="[featured_projs.site]" target="_blank" title="[featured_projs.display_name]">
-                    <img class="objec-fit-cover" src="https://www.apache.org[featured_projs.logo]" title="[featured_projs.display_name]" loading="lazy" alt="[featured_projs.display_name]">
+                    <img src="https://www.apache.org[featured_projs.logo]" title="[featured_projs.display_name]" loading="lazy" alt="[featured_projs.display_name]">
                 </a>
             </div>[end]
         </div>
@@ -107,7 +107,7 @@ bodytag: id="home"
         <div id="incubating-projects" class="project-cards mb-large">
              [for featured_pods]<div class="logo-card" id="[featured_pods.key_id]">
                 <a href="[featured_pods.homepage]" target="_blank" title="[featured_pods.name]">
-                   <img class="objec-fit-cover" src="https://www.apache.org[featured_pods.logo]" title="[featured_pods.name]" loading="lazy" alt="[featured_pods.name]">
+                   <img src="https://www.apache.org[featured_pods.logo]" title="[featured_pods.name]" loading="lazy" alt="[featured_pods.name]">
                 </a>
             </div>[end]
         </div>
@@ -164,24 +164,6 @@ bodytag: id="home"
         <div class="slideshow-container">
 	      	<!-- Full-width slides/quotes -->
             <!-- Remember to adjust the number of dot-container entries below to agree with the slide count -->
-            <div class="mySlides event-slide text-left">
-                <div class="flex">
-                    <div class="flex-1 event-info event-image">
-                        <div class="event-image-wrap">
-                            <img class="object-fit-cover" src="images/events/airflow-2026.webp" loading="lazy" alt="Airflow Summit 2026">
-                        </div>
-                    </div>
-                    <div class="event-content flex-2 flex flex-column pl-medium">
-                        <h3 class="event-info event-title">Airflow Summit</h3>
-                        <h4 class="event-info event-location">Austin, USA</h4>
-                        <h5 class="event-info event-dates">August 31 - September 2, 2026</h5>
-                        <p class="event-info event-description">Airflow Summit is the annual conference for the worldwide community of Apache Airflow users and contributors. This conference is a celebration of the people who make Airflow what it is.</p>
-                        <div class="flex-self-end text-right">
-                            <a class="btn event-link event-info" href="https://airflowsummit.org/" target="_blank">See Event</a>
-                        </div>
-                    </div>
-                </div>
-	      	</div>
             <div class="mySlides event-slide text-left">
                 <div class="flex">
                     <div class="flex-1 event-info event-image">
@@ -264,7 +246,6 @@ bodytag: id="home"
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
         </div>
         <!-- END SLIDESHOW CONTAINER -->
     </div>
@@ -347,7 +328,7 @@ bodytag: id="home"
     var sponsorHTML = '';
     selectedSponsors.forEach(function(sponsor) {
         sponsorHTML += '<div class="logo-card logo-card--sponsor">';
-        sponsorHTML += '<img class="objec-fit-cover" loading="lazy" src="' + sponsor.logo + '" alt="' + sponsor.name + '">';
+        sponsorHTML += '<img loading="lazy" src="' + sponsor.logo + '" alt="' + sponsor.name + '">';
         sponsorHTML += '</div>';
     });
     const sponsorLogos = document.getElementById('sponsor-logos');
