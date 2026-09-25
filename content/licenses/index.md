@@ -53,3 +53,6 @@ Agreements](/licenses/contributor-agreements.html) page.
 For answers to frequently asked licensing questions, please consult our 
 [Licensing Frequently Asked Questions](/foundation/license-faq.html) page. For historical
 context for the creation of the Apache-2.0 license see the [License History](/licenses/license-history.html).
+
+For translations provided for convenience without ASF endorsement, see
+[Is there a translation of the Apache License into my language?](/foundation/license-faq.html#translations).
