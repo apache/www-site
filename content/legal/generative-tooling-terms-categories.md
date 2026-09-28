@@ -24,6 +24,14 @@ Obligations on downstream recipients. Apache releases cannot carry obligations o
 
 Tier and feature dependencies. Check whether the terms say that rights differ by plan, or that particular features (search grounding, provenance data, beta services, third-party content) have their own terms. If so, the answer you reach is only good for the tier and features it covers.
 
+## Rules that bind you, not the output {#account-holder}
+
+Some clauses bind the person who holds the account, and stop there. Acceptable-use and compete rules, the vendor's right to terminate the account, indemnity, and a requirement that you say the material was generated are all of this kind. They are rules about your use of the service. They are not A-like, B-like, or X-like, because those categories describe what the terms mean for the contribution, and these clauses do not travel with it.
+
+A notice you must apply yourself is already covered by [Saying that output is AI generated](/legal/generative-tooling-terms-other-risks.html#ai-disclosure). A notice that people who later receive the code must preserve is a restriction that travels with the output, and that is X-like.
+
+Compete clauses, termination, and "do not use this account to build the vendor's product" are tool-use risk for the account holder. They belong on the [RAI tool-use risk](https://rai.apache.org/tool-use-risk.html) page, not in a category row.
+
 ## A-like: nothing in the terms restricts the output {#a-like}
 
 You obtained the actual terms for the exact tool, tier, and access path you used. They either give you the output or claim no rights in it, and they contain none of the restrictions or downstream obligations described above.
@@ -39,6 +47,8 @@ A B-like answer only holds when its condition is met. If the terms are acceptabl
 ## X-like: the terms restrict the output {#x-like}
 
 The terms claim vendor ownership of the output, limit commercial use or fields of use of software containing it, restrict redistribution or modification, or oblige whoever receives your code to do something for the vendor, such as accepting their terms or leaving embedded provenance data untouched.
+
+The same answer applies when the generator's own license does not grant use to produce ASF or other production code. That is a non-production license on model weights, a use restriction the license requires to be passed on with the weights, or a non-commercial limit that attaches to the weights or to derivatives of them. It is a question of whether you were licensed to run that generator for this work. A service rule that happens to apply at the moment you generate is not this case, and it is not X-like.
 
 Do not contribute output generated under those terms. If the restriction is tied to a specific feature or tier, the problem may be limited to that feature or tier; check whether an unrestricted path exists. If you believe the terms are being read too broadly, ask on [legal-discuss@](/foundation/mailinglists.html#foundation-legal) before contributing.
 
