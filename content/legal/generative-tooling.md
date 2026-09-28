@@ -37,7 +37,7 @@ Given the above, code generated in whole or in part using AI can be contributed 
 
 Note that whether AI-generated output is copyrightable subject matter is currently unsettled, and the answer may differ between jurisdictions. A contributor relying on condition 2.1 alone ties their contribution to an answer nobody knows yet. Where practical, meeting condition 2.2 or 2.3 is the sounder route.
 
-When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase “Generated-by: <Name of Tool> <Version>”. This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.
+When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase “Generated-by: \<Name of Tool\> \<Version\>” or "Co-authored-by: \<Name of Tool\> \<Version\>". This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.
 
 Also note section 8 of the ICLA. If you later learn something that makes these representations inaccurate, you agree to notify the Foundation. For example, you may discover that a tool's output reproduced code under an incompatible license. If that happens, contact legal-private@apache.org.
 
