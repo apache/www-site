@@ -24,13 +24,13 @@ Obligations on downstream recipients. Apache releases cannot carry obligations o
 
 Tier and feature dependencies. Check whether the terms say that rights differ by plan, or that particular features (search grounding, provenance data, beta services, third-party content) have their own terms. If so, the answer you reach is only good for the tier and features it covers.
 
-## Rules that bind you, not the output {#account-holder}
+## Rules about your use of the service {#service-use}
 
-Some clauses bind the person who holds the account, and stop there. Acceptable-use and compete rules, the vendor's right to terminate the account, indemnity, and a requirement that you say the material was generated are all of this kind. They are rules about your use of the service. They are not A-like, B-like, or X-like, because those categories describe what the terms mean for the contribution, and these clauses do not travel with it.
+Acceptable-use and compete rules, the vendor's right to terminate the account, indemnity, and a requirement that you identify material as generated are rules about your use of the service. The line above already sets them aside: they are not rules that travel with the output.
 
-A notice you must apply yourself is already covered by [Saying that output is AI generated](/legal/generative-tooling-terms-other-risks.html#ai-disclosure). A notice that people who later receive the code must preserve is a restriction that travels with the output, and that is X-like.
+They do not, by themselves, choose the category. If the terms otherwise give you the output and place no restriction on it, the row stays A-like. A duty to label your own output is the notice covered by [Saying that output is AI generated](/legal/generative-tooling-terms-other-risks.html#ai-disclosure). A notice that people who later receive the code must preserve does travel with the output, and that is X-like.
 
-Compete clauses, termination, and "do not use this account to build the vendor's product" are tool-use risk for the account holder. They belong on the [RAI tool-use risk](https://rai.apache.org/tool-use-risk.html) page, not in a category row.
+These are also not B-like handling. B-like handling is how you make sure you are under the terms you checked: the tier, the feature, or the model a client connects to. A promise you made to the vendor about how you behave does not change which of those terms govern the output.
 
 ## A-like: nothing in the terms restricts the output {#a-like}
 
@@ -40,7 +40,7 @@ In this case the terms condition of the [Generative Tooling Guidance](/legal/gen
 
 ## B-like: usable with specific handling {#b-like}
 
-Nothing in the terms clearly blocks the output, but something needs to be handled before you rely on them. Common examples: the rights you checked apply to a paid or API tier, so you must actually be on that tier; a particular feature carries restrictions, so you must avoid that feature; the tool is a client or local runtime, so you must also check the terms of the model or provider it connects to; or the terms are unclear on one point that needs a question to legal-discuss.
+Nothing in the terms clearly blocks the output, but something needs to be handled before you rely on them. The handling is about which terms govern the output. Common examples: the rights you checked apply to a paid or API tier, so you must actually be on that tier; a particular feature carries restrictions, so you must avoid that feature; the tool is a client or local runtime, so you must also check the terms of the model or provider it connects to; or the terms are unclear on one point that needs a question to legal-discuss.
 
 A B-like answer only holds when its condition is met. If the terms are acceptable on the API tier, that says nothing about the free tier; if they are acceptable with a particular feature avoided, they apply only when you avoided that feature.
 
@@ -48,7 +48,7 @@ A B-like answer only holds when its condition is met. If the terms are acceptabl
 
 The terms claim vendor ownership of the output, limit commercial use or fields of use of software containing it, restrict redistribution or modification, or oblige whoever receives your code to do something for the vendor, such as accepting their terms or leaving embedded provenance data untouched.
 
-The same answer applies when the generator's own license does not grant use to produce ASF or other production code. That is a non-production license on model weights, a use restriction the license requires to be passed on with the weights, or a non-commercial limit that attaches to the weights or to derivatives of them. It is a question of whether you were licensed to run that generator for this work. A service rule that happens to apply at the moment you generate is not this case, and it is not X-like.
+The same answer applies when the license on a set of model weights does not grant use of those weights to produce ASF or other production code. That is a non-production license, a use restriction the license requires to be passed on with the weights, or a non-commercial limit that attaches to the weights or to derivatives of them. You were not granted the right to run that generator for this work, and the limit is a term of the weights. A rule in a service agreement is different: you may use the service, and the vendor's remedy is against your account. That rule is the service-use case above, not X-like.
 
 Do not contribute output generated under those terms. If the restriction is tied to a specific feature or tier, the problem may be limited to that feature or tier; check whether an unrestricted path exists. If you believe the terms are being read too broadly, ask on [legal-discuss@](/foundation/mailinglists.html#foundation-legal) before contributing.
 
