@@ -50,10 +50,15 @@ Foundation records, including minutes of Board meetings, remain in [svn](https:/
 except for the [index page](content/foundation/records/index.md).
 
 The Secretary maintains the [board calendar - calendar.md](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md)
-in SVN. At the start of each build, a setup entry in [pelicanconf.yaml](pelicanconf.yaml) calls the [get_calendar.sh](get_calendar.sh) script, which copies the calendar into `content/foundation/board`.
+in SVN. At the start of each build, a setup entry in [pelicanconf.yaml](pelicanconf.yaml) calls the [get_board_pages.sh](get_board_pages.sh) script, which copies the calendar into `content/foundation/board`.
 Changes to the calendar file do not automatically trigger a build, but the file changes rarely
 (about once a month, when the minutes are published)
 and there are regular builds which pick up any changes.
+
+The same script exports the [board minutes pages](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/minutes)
+into `content/foundation/board/minutes`. They are generated from the published minutes and committed by the
+Secretary when minutes are published, so the next regular build picks them up in the same way.
+If either export fails, the build fails rather than publishing the site without it.
 
 During Pelican builds a special index page – https://apache.org/website/index.html – is updated which lists all of the generated pages.
 
