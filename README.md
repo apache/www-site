@@ -58,7 +58,7 @@ and there are regular builds which pick up any changes.
 The same script exports the [board minutes pages](https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/minutes)
 into `content/foundation/board/minutes`. They are generated from the published minutes and committed by the
 Secretary when minutes are published, so the next regular build picks them up in the same way.
-The script exits non-zero if either export fails, so that the build can fail rather than publish the site without it.
+If either export fails, the build fails rather than publishing the site without it.
 
 During Pelican builds a special index page – https://apache.org/website/index.html – is updated which lists all of the generated pages.
 
