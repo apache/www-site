@@ -1,0 +1,2422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Thrift | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Thrift';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Thrift';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Thrift</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="thrift">Thrift<a class="headerlink" href="#thrift" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019-02-20</td>
+<td><a href="2019/board_minutes_2019_02_20.html#section-7D">Appointed Jens Geyer</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2013-04-17</td>
+<td><a href="2013/board_minutes_2013_04_17.html#section-7F">Appointed Jake Farrell</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2010-10-20</td>
+<td><a href="2010/board_minutes_2010_10_20.html#section-7A">Appointed Bryan Duxbury</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2010-10-20</td>
+<td><a href="2010/board_minutes_2010_10_20.html#section-7A">Establish the Apache Thrift Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-CA">2026-04-15</a> &mdash; Jens Geyer<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+- Current project status: Ongoing medium
+- Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (15 years ago) There are currently 42
+committers and 22 PMC members in this project. The Committer-to-PMC ratio is
+roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Liu Jiayu on 2025-03-16.
+- Hasnain Lakhani was added as committer on 2025-07-29
+
+## Project Activity:
+Working towards next regular release. Last release was 0.22.0 at May 14th,
+2025. Also, we are in the process of adding two more committers.
+
+## Community Health:
+Thrift is special in that it supports a wide range of target languages.
+Generally, Thrift has great community. However, a side effect of supporting so
+many different target languages &ZeroWidthSpace;&ZeroWidthSpace;is that community participation is not
+evenly distributed. That's why we are constantly looking for good committers.</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-BZ">2026-01-21</a> &mdash; Jens Geyer<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing medium Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (15 years ago) There are currently 42
+committers and 22 PMC members in this project. The Committer-to-PMC ratio is
+roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Liu Jiayu on 2025-03-16.
+- Hasnain Lakhani was added as committer on 2025-07-29
+
+## Project Activity:
+Working towards next regular release. Last release was 0.22.0 at May 14th,
+2025.
+
+## Community Health:
+Participation varies highly across the 20+ target languages supported by
+Thrift, but it also fluctuates over time. For example, during Nov/Dec 2025 we
+had a signifinact increase in the number of pull requests coming in
+particularly for Ruby, fixing issues as well as adding improvements.</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-CB">2025-10-15</a> &mdash; Jens Geyer<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing low
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (15 years ago)
+There are currently 42 committers and 22 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Liu Jiayu on 2025-03-16.
+- Hasnain Lakhani was added as committer on 2025-07-29
+
+## Project Activity:
+Working towards next regular release around end of the year. Last release was
+0.22.0 in May 2025.
+
+## Community Health:
+During summer time and vacation period participation has (as usual) decreased.
+We attribute this to normal fluctuation and expect email/patch rates to
+increase again in the next months.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-CC">2025-07-16</a> &mdash; Jens Geyer<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+## Project Status:
+Current project status: Ongoing moderate
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (15 years ago)
+There are currently 41 committers and 22 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Liu Jiayu on 2025-03-16.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+We released 0.22.0 on 2025-05-23 being mostly maintenance releases.
+
+For certain language bindings, particularly Swift, there appear to be no
+active maintainers left. A direct "call to action" in a Swift forum to find
+potential maintainers yielded little success.
+
+
+## Community Health:
+Similar to past quarters, there is a steady flow of contributions, both
+improvements and bug fixes, on varying levels, mostly via Jira/Github.</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-BU">2025-04-16</a> &mdash; Jens Geyer<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing moderate
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (14 years ago)
+There are currently 41 committers and 22 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Liu Jiayu was added to the PMC on 2025-03-16
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Still working towards next release, was originally scheduled for Feb 2025.
+Last release 0.21.0 on 2024-09-21.
+
+## Community Health:
+Similar to past quarters, there is a steady flow of incoming contributions
+from current and new contributors on moderate levels, mostly via Jira/Github.
+The contributions contain both improvements and bug fixes.</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-BU">2025-01-15</a> &mdash; Jens Geyer<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing moderate
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (14 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Working towards next release scheduled for Feb 2025.
+Last release 0.21.0 on 2024-09-21.
+
+## Community Health:
+Misc. activities on moderate levels on all channels (Jira, mailing lists,
+Github). Steady flow of incoming contributions from current and new
+contributors.</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-CA">2024-10-16</a> &mdash; Jens Geyer<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing moderate
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (14 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Completed and released version 0.21.0 on 2024-09-21 containing improvements
+and bug fixes.
+
+## Community Health:
+Most activities around C++, PHP and Go. Moderate activities at other language
+bindings. Steady flow of incoming contributions from current and new
+contributors, most of them via Github.</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-CA">2024-07-17</a> &mdash; Jens Geyer<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing moderate
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (14 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Certain optimization and improvement activities, with Go, PHP and netstd areas
+being the most active. Working towards next release.
+
+## Community Health:
+Steady flow of incoming patches, mostly via Github (where tehre are not always
+JIRA tickets assigned). Other activities include the implementation of uuid data
+type across more and more languages.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-CB">2024-04-17</a> &mdash; Jens Geyer<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing moderate
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (13 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Main activities have been about adding tests to PHP bindings and
+improving/ugrading build container infrastructure, as well as completing
+release 0.20.0 in March 2024.
+
+## Community Health:
+Solid level of activity, steady flow of contributions, mostly via Github.
+Looking at the statistics, no tickets have been completed. What we can't see
+from that number is that there has been a total of 31 pull requests merged
+since January where there was no ticket assigned or which were parts of an
+overarching, yet incomplete ticket.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-CK">2024-01-17</a> &mdash; Jens Geyer<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing moderate
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (13 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Working towards next release which is planned for February.
+Previous release 0.19.0 was released on 2023-09-02.
+
+## Community Health:
+Overall usual levels of activity, increasing level especially via Github.
+Level of "normal" patches decreases, most new contribs start communication via
+Github now. Moving forward towards next release, improving especially Go targets
+plus misc other issues across the entire project.</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-BX">2023-10-18</a> &mdash; Jens Geyer<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (13 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Released 0.19.0 successfully on 2023-SEP-02, working towards next release.
+
+## Community Health:
+Project participation remains on a steady but low level, with the usual
+seasonal variations. Project activity in general varies between the 20+
+language bindings we offer, for different reasons, which is also not unusual,
+because certain language ecosystems simply have faster development pace than
+other, more mature ones.</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#attachment-BW">2023-07-19</a> &mdash; Jens Geyer<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (13 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Right now we're working towards next release, which should take place in the
+next few weeks.
+
+## Community Health:
+Project participation remains on a steady, yet still too low, level. One
+indicator of this is the amount of unhandled PRs on Github we face for a while
+now. Since Thrift is special in the regard that we support 20+ target
+languages, we definitely could use more skilled hands to review those PRs. In
+addition, since recent contributions especially from new people tend to be
+only small and rare, finding good committer candidates becomes quite a
+challenge.</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-CD">2023-04-19</a> &mdash; Jens Geyer<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (12 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Technically speaking we had a two releases. However, the 0.18.1 (March) was
+only fixes an issue we overlooked in 0.18.0 (February). We aim for the next
+release to happen in July.
+
+## Community Health:
+Communication and general activity is on a relative low level. We have a
+notable number of open PRs on Github for quite a while now, yet there are only
+frew active reviewers. Since Thrift is special in the regard that we support
+20+ target languages, we definitely could use more skilled hands to review
+those PRs.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-CL">2023-01-18</a> &mdash; Jens Geyer<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (12 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Working towards next release which is planned for February.
+
+## Community Health:
+Despite reduced activity on all channels in the last quarter, we still receive
+contributions and work on adding features/improvements.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-CB">2022-10-19</a> &mdash; Jens Geyer<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (12 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mario Emmenlauer on 2022-04-13.
+- No new committers. Last addition was Liu Jiayu on 2022-06-25.
+
+## Project Activity:
+Apache Thrift 0.17.0 was released on 2022-09-18. Current actvities are to
+enhance the code basis with regard to maintaining existings and adding  new
+language bindings as well as improving the automated CI tests in various
+ways.
+
+## Community Health:
+Steady flow of contributions from existing and new contributors. The community
+metrics variations are in the expected range, usually activity drops during
+summer but quickly goes back to normal in September.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-BY">2022-07-20</a> &mdash; Jens Geyer<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (12 years ago)
+There are currently 41 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Mario Emmenlauer was added to the PMC on 2022-04-13
+- Liu Jiayu was added as committer on 2022-06-25
+
+## Project Activity:
+Working towards 0.17.0 release, planned for summer 2022.
+
+## Community Health:
+The project receives a steady flow of contributions from known and new
+contributors, improving both the code base, the project and the community
+around. For example, valuable contributions were made to improve the CI
+process efficiency in the last weeks. Given the significant number of language
+bindings we support, this improvement significantly reduces build time for
+pull requests.</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#attachment-BO">2022-04-20</a> &mdash; Jens Geyer<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (11 years ago)
+There are currently 40 committers and 20 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Allen George on 2021-09-13.
+- No new committers. Last addition was Christopher Tubbs on 2021-02-12.
+
+## Project Activity:
+We successfully released 0.16.0 in February, usual work continues towards
+0.17.0 release, planned for summer 2022.
+
+## Community Health:
+The project receives a steady flow of contributions coming in &amp; get handled,
+with usual seasonal variations. Besides that We still have potential to
+improve the review process.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-BR">2022-01-19</a> &mdash; Jens Geyer<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (11 years ago)
+There are currently 40 committers and 20 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Allen George on 2021-09-13.
+- No new committers. Last addition was Christopher Tubbs on 2021-02-12.
+
+## Project Activity:
+Next release is under development, code freeze already planned for January.
+Previous release was in September 2021.
+
+## Community Health:
+Mailing list and patch activity dropped in last quarter, yet still we receive
+a steady flow of contributions, although on a lower level.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-CF">2021-10-20</a> &mdash; Jens Geyer<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (11 years ago)
+There are currently 40 committers and 20 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- Allen George was added to the PMC on 2021-09-13
+- No new committers. Last addition was Christopher Tubbs on 2021-02-12.
+
+## Project Activity:
+Besides the normal stream of improvements and fixes, last quarter was spent
+mainly on preparing the next release which we shipped successfully in
+September.
+
+## Community Health:
+Mailing list and patch activity remained overall stable, minor decreases can
+be attributed to summer holiday season.</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-BX">2021-07-21</a> &mdash; Jens Geyer<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (11 years ago)
+There are currently 40 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Yuxuan Wang on 2021-03-12.
+- No new committers. Last addition was Christopher Tubbs on 2021-02-12.
+
+## Project Activity:
+We released another (bugfix) update 0.14.2 on 2021-06-17 to handle two
+problems that prevented certain people from upgrading to the 0.14.x branch.
+Forthermore, we are working on the next release, which is planned to happen in
+September.
+
+## Community Health:
+Activity was overall better than what the raw numbers of "compared to last
+quarter" mailing list activity etc. could imply. We added quite a number of
+patches and contributions, sometimes only small modifications, that
+nevertheless provided valuable improvements to the codebase health and
+robustness in various areas.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-BW">2021-04-21</a> &mdash; Jens Geyer<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Thrift is the creation and maintenance of software related to
+Framework for scalable cross-language services development
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (10 years ago)
+There are currently 40 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- Yuxuan Wang was added to the PMC on 2021-03-12
+- Christopher Tubbs was added as committer on 2021-02-12
+
+## Project Activity:
+We did two releases, 0.14.0 to finally fix CVE-2020-13949 and shortly
+afterwards 0.14.1 to patch some small issues that have been found after
+releasing 0.14.0. We are looking forward to get the next release ready in the
+next 4 months.
+
+ * 0.14.1 was released on 2021-03-08.
+ * 0.14.0 was released on 2021-02-11.
+
+## Community Health:
+Especially after the latest releases we observed an increase in mailing list,
+patch and general project activities. Also, the number of PR reviews done has
+slightly increased, this was a pain point previously (and we still need to
+improve).</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-BT">2021-01-20</a> &mdash; Jens Geyer<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Thrift is the creation and maintenance of software related to
+Framework for scalable cross-language services development
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (10 years ago)
+There are currently 39 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Duru Can Celasun on 2019-11-11.
+- Mario Emmenlauer was added as committer on 2020-12-04
+
+## Project Activity:
+ * 0.13.0 was released on 2019-10-16.
+ * Still working on release 0.14.0. The initial idea was to have the release
+   ready end of 2020. This has not been achieved, but we now push again to
+   prepare the planned release to be ready in the next few weeks.
+
+## Community Health:
+Despite the numeric decrease in most areas there have been certain valuable
+contributions to the code base. We also finally managed to switch the Apache
+Thrift web site away from the deprecated CMS, last not least thanks to some
+support we got from INFRA. Key bottleneck is still the review pipeline.</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#attachment-BQ">2020-10-21</a> &mdash; Jens Geyer<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Thrift is the creation and maintenance of software related to
+Framework for scalable cross-language services development
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (10 years ago)
+There are currently 38 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Duru Can Celasun on 2019-11-11.
+- Zezeng Wang was added as committer on 2020-09-11
+
+## Project Activity:
+ * 0.13.0 was released on 2019-10-16.
+ * Still working on release 0.14.0, targeting for somewhene end of 2020
+
+## Community Health:
+After a literally dry summer, we experienced increased activity again in
+September, mostly via Github. The project continues to attract engaged
+individuals bringing up valuable contributions across the various
+languages we support.</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-BT">2020-07-15</a> &mdash; Jens Geyer<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Thrift is the creation and maintenance of software related to
+Framework for scalable cross-language services development
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (10 years ago)
+There are currently 37 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Duru Can Celasun on 2019-11-11.
+- Kengo Seki was added as committer on 2020-05-30
+- Yuxuan Wang was added as committer on 2020-06-22
+
+## Project Activity:
+ * 0.13.0 was released on 2019-10-16.
+ * Still working on release 0.14.0
+
+## Community Health:
+We experienced increased activities on both the mailing lists and via Github
+pull requests. The project attracted a number of engaged individuals in the
+past months, three of which have been nominated to become committers (two see
+above, plus one still in "progress"). Largest "pain" we currently have is the
+number of regularly active reviewers - even though the activities in this area
+also slightly increased there's still room for improvements.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-BY">2020-04-15</a> &mdash; Jens Geyer<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Thrift is the creation and maintenance of software related to
+Framework for scalable cross-language services development
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (9 years ago)
+There are currently 35 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Duru Can Celasun on 2019-11-11.
+- No new committers. Last addition was David Mollitor on 2019-05-08.
+
+## Project Activity:
+ * 0.13.0 was released on 2019-10-16.
+ * Currently working on release 0.14.0.
+
+## Community Health:
+We had some success in attracting new contributors and receive a steady flow
+of contributions in various areas, mostly via Github pull requests. We still
+are looking actively for potential committers amongst them to broaden the
+committer base.</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-BT">2020-01-15</a> &mdash; Jens Geyer<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Thrift is the creation and maintenance of software related to
+Framework for scalable cross-language services development
+
+## Issues:
+There are no current issues requiring board attention.
+
+We released version 0.13.0 successfully, with three +1 votes cast. However one
+of the three votes was counted as binding vote by mistake. Since this
+particular release fixed two CVEs and the CVE information had already been
+publicized in the meantime, since the community feedback we received on that
+release was pretty good, and since there were no -1 votes, no further action
+was taken as the mistake got noticed. Last not least, the particular voter is
+an active long-time committer who in the meantime also became a PMC member.
+Nevertheless, we are aware of the mistake and will make sure it does not
+happen again.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (9 years ago)
+There are currently 35 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Duru Can Celasun was added to the PMC on 2019-11-11
+- No new committers. Last addition was David Mollitor on 2019-05-08.
+
+## Project Activity:
+Version 0.13.0 was released on 2019-10-16. In the last two months we got an
+noticeable increase of contributions and patches in various areas. There is no
+concrete schedule for the next release as of today, but there will be one.
+
+## Community Health:
+We receive a steady flow of contributions and own improvements. We are still
+working on broadening the committer and PMC base in order to increase our pool
+of active people. Community activity has increased. In our opinion this is a
+direct function of the increased release frequency (compared to the years
+before), we generally receive good feedback from the community in that regard.</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-BU">2019-10-16</a> &mdash; Jens Geyer<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Thrift is the creation and maintenance of software related to
+Framework for scalable cross-language services development
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Thrift was founded 2010-10-20 (9 years ago)
+There are currently 35 committers and 17 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James E. King III on 2017-11-03.
+- No new committers. Last addition was David Mollitor on 2019-05-08.
+
+## Project Activity:
+We are still in the middle of preparing for the next (0.13.0) release. The
+process has been slowed down by a number of tickets that were considered
+release blockers, however all except one are solved by now. We are expecting
+to have the release ready soon.
+
+## Community Health:
+We received and appreciate attention by certain new contributors (actual and
+potential ones) in the last weeks, last not least reflected by the number of
+JIRA tickets and pull requests. Current main work is the planned release and
+keeping pace with the pull requests we continue to receive.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-BS">2019-07-17</a> &mdash; Jens Geyer<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - Apache Thrift is a high performance cross platform RPC and serialization
+   solution.
+
+## Issues:
+
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+
+ - In the past weeks certain issues have been adressed and new features were
+   added. We are currently in the middle of preparing for the next (0.13.0)
+   release.
+
+## Health report:
+
+ - The project code is healthy and fairly mature.
+ - Regarding the ratio between the numbers of active vs. silent committers,
+   there is still room for improvement.
+ - The level of participation and activity differs between the various
+   languages Thrift currently supports, i.e. the bread-and-butter mainstream
+   languages usually (and probably naturally) get more recognition and active
+   participation than the more exotic ones.
+
+## PMC changes:
+
+ - Currently 17 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was James E. King III on Fri Nov 03 2017
+
+## Committer base changes:
+
+ - Currently 35 committers.
+ - New commmitters:
+    - David Mollitor was added as a committer on Wed May 08 2019
+    - Sebastian Zenker was added as a committer on Tue Apr 30 2019
+
+## Releases:
+
+ - Last maintenance release was 0.9.3.1 on Wed Mar 13 2019
+ - Last regular release was 0.12.0 on Fri Jan 04 2019
+
+## Mailing list activity:
+
+ - Mailing list activity is good
+ - User inquiries and questions are usually answered very quickly or in a
+   timely manner.
+
+ - dev@thrift.apache.org:
+    - 258 subscribers (up 2 in the last 3 months):
+    - 380 emails sent to list (1445 in previous quarter)
+
+ - user@thrift.apache.org:
+    - 664 subscribers (down -6 in the last 3 months):
+    - 15 emails sent to list (40 in previous quarter)
+
+
+## JIRA activity:
+
+ - 58 JIRA tickets created in the last 3 months
+ - 42 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#attachment-BL">2019-04-17</a> &mdash; Jens Geyer<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - Apache Thrift is a high performance cross platform RPC and serialization
+   solution.
+
+## Issues:
+
+ - there are no issues requiring board attention at this time
+
+## Activity:
+
+ - Since our last 0.12.0 release Apache Thrift a number of bugs have been
+   adressed and certain improvements have been implemented in various areas.
+ - Version 0.9.3.1 based on 0.9.3 has been released to port the security fixes
+   for CVE-2018-1320 into that branch. Due to an oversight the 0.9.3.1 was
+   prematurely released to Maven Central prior to a vote. Corrective action
+   was taken to properly vote on 0.9.3.1, and that vote passed.
+ - A vote for another release 0.12.1 did not pass because the necessary number
+   of votes was too low. As a result, we are planning for 0.13.0 as the next
+   regular release
+
+## Health report:
+
+ - The project code is healthy and fairly mature
+ - Main issue is the ratio between the numbers of active vs. silent committers
+   and PMC members. With respect to the relatively complex code base
+   consisting of 20+ supported target languages, there is room for
+   improvement.
+
+## PMC changes:
+
+ - Currently 17 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was James E. King III on Fri Nov 03 2017
+
+## Committer base changes:
+
+ - Currently 33 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Allen George at Mon Mar 19 2018
+
+## Releases:
+
+ - 0.9.3.1 was released on Wed Mar 13 2019
+
+## Mailing list activity:
+
+ - Mailing list activity is good, user inquiries are mostly answered very
+   quickly, the rest was answered in a timely manner.
+
+ - dev@thrift.apache.org:
+    - 258 subscribers (down -3 in the last 3 months):
+    - 1839 emails sent to list (600 in previous quarter)
+
+ - user@thrift.apache.org:
+    - 674 subscribers (down -9 in the last 3 months):
+    - 41 emails sent to list (17 in previous quarter)
+
+## JIRA activity:
+
+ - 129 JIRA tickets created in the last 3 months
+ - 248 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-BR">2019-02-20</a> &mdash; Jake Farrell<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Thrift is a high performance cross platform RPC and serialization
+solution.
+
+## Issues:
+
+- The PMC has lost contact with its chair Jake Farrell. A new chair was
+elected by the PMC to overcome the issue.
+- Due to the short notice, we do not have access to Whimsy etc. set up,
+so we are sending this report via mail.
+
+## Activity:
+
+- The community continues to dramatically reduce the issue and pull
+request backlog. James King in particular deserves special mention in this
+regard, as he has put in a huge amount of hours recently and is almost
+singularly responsible for our recent 0.12 release.
+
+## Health report:
+
+- The project code is healthy and fairly mature. The build system is in
+transition and while there is work to do there, the community is actively
+discussing a 1.0 release. That said, we need more active committers and PMC
+members. Of the 17 PMC members only 3 are active, of the 33 committers,
+less than half are active.
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- No new PMC members added in the last 4 months
+- Last PMC addition was James E. King III on Thu Nov 02 2017
+- The PMC elected a new Chair, Jens Geyer, per Sun Feb 10 2019
+
+## Committer base changes:
+
+- Currently 33 committers.
+- No new committers added in the last 4 months
+- Last committer addition was Allen George at Mon Mar 19 2018
+
+## Releases:
+
+- 0.12.0 was released on Thu Jan 03 2019
+
+## Mailing list activity:
+
+- Mailing list activity is good though not all user inquiries,
+particularly exotic ones are answered by the community.
+
+- dev@thrift.apache.org:
+Currently:  subscribers (down -7 in the last 3 months) ()
+    - 257 subscribers (down -7 in the last 3 months):
+    - 1843 emails sent in the past 3 months
+- 548 in the previous cycle
+
+- user@thrift.apache.org:
+    - 680 subscribers (no change in the last 3 months)
+    - 20 emails sent in the past 3 months
+- 21 in the previous cycle
+
+## JIRA activity:
+
+- 134 JIRA tickets created in the last 3 months
+- 270 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#section-6BX">2019-01-16</a> &mdash; Jake Farrell<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Isabel: pursue a report for Thrift</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-BO">2018-10-17</a> &mdash; Jake Farrell<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community is currently working on our 0.12.0 release
+candidate which will include a number of new features and functionality. The
+release candidate is awaiting final passing tests and we anticipate will be
+ready for vote by end of week.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         James King, 11.2.2017
+* Committer addition:   Duru Can Celasun, 3.7.2018
+                        Allen George, 3.19.2018
+
+Issue backlog status since last report:
+
+* Created:   50
+* Resolved:  34
+
+Mailing list activity since last report:
+
+* @dev    514 messages
+* @user   19 messages
+
+Releases
+---
+Last release: 0.11.0, Release Date: 12.6.2017
+Release Candidate: 0.12.0 in progress</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-BO">2018-07-18</a> &mdash; Jake Farrell<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community has now successfully switched canonical repository
+location from Apache git-wip to Github via the ASF Gitbox service and addressed
+the unanticipated client library integration problems that occurred as a result
+of the switch. Thanks to the Apache Infra team for their support during this
+transition.
+
+We have started the discussion and planning for our next release candidate and
+are focused on test automation and bug fixes as we prepare for cutting and
+verifying the release candidate soon.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         James King, 11.2.2017
+* Committer addition:   Duru Can Celasun, 3.7.2018
+                        Allen George, 3.19.2018
+
+Issue backlog status since last report:
+
+* Created:   44
+* Resolved:  34
+
+Mailing list activity since last report:
+
+* @dev    585 messages
+* @user   10 messages
+
+Releases
+---
+Last release: 0.11.0, Release Date: 12.6.2017</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-BR">2018-04-18</a> &mdash; Jake Farrell<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community recently switched canonical repository location from
+Apache git-wip to Github via the ASF Gitbox service and this has caused some
+unanticipated pain for our user and dev communities. We are working to address
+these client library integration problems as fast as possible and Apache Infra
+has been a great help with this when needed. While addressing these issues we
+are progressing towards our next release candidate and focusing on improving our
+processes arounds test automation and simplifying our workflows.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         James King, 11.2.2017
+* Committer addition:   Duru Can Celasun, 3.7.2018
+                        Allen George, 3.19.2018
+
+Issue backlog status since last report:
+
+* Created:   102
+* Resolved:  99
+
+Mailing list activity since last report:
+
+* @dev    1861 messages
+* @user   54 messages
+
+Releases
+---
+Last release: 0.11.0, Release Date: 12.6.2017</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-BS">2018-01-17</a> &mdash; Jake Farrell<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community is happy to announce the availability of our
+0.11.0 release which includes a number of stability and performance
+enhancements to our client libraries. We have plans to follow up our 0.11.0
+release with a 0.11.1 point release which will address a potential security
+vulnerability and following that start progress towards updating our build
+system from Autotools to CMake.
+
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         James King, 11.2.2017
+* Committer addition:   James King, 10.18.2016
+
+Issue backlog status since last report:
+
+* Created:   96
+* Resolved:  77
+
+Mailing list activity since last report:
+
+* @dev    2098 messages
+* @user   67 messages
+
+Releases
+---
+Last release: 0.11.0, Release Date: 12.6.2017</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-BR">2017-10-18</a> &mdash; Jake Farrell<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community is currently working on our 0.11.0 release
+candidate which will include a number of stability and performance
+enhancements to our client libraries [1]. We are also working to simplify
+our patch testing process to make it easier to verify contributions
+across numerous languages and operating systems.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:            Nobuaki Sukegawa, 1.25.2016
+* Committer addition:   James King, 10.18.2016
+
+Issue backlog status since last report:
+
+* Created:   108
+* Resolved:  98
+
+Mailing list activity since last report:
+
+* @dev    1785 messages
+* @user   55 messages
+
+Releases
+---
+Last release: 0.10.0, Release Date: 1.3.2017
+Cut 0.11.0 branch, release candidate creation and testing in progress
+
+[1]: https://git-wip-us.apache.org/repos/asf?p=thrift.git;a=tree;h=refs/heads/0.11.0;hb=refs/heads/0.11.0</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-BM">2017-09-20</a> &mdash; Jake Farrell<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community is currently working on our 0.11.0 release
+candidate which will include a number of stability and performance
+enhancements to our Go, Node and Python client libraries [1]. We are
+targeting the availability of the 0.11.0 release candidate by end of
+September.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         Nobuaki Sukegawa, 1.25.2016
+* Committer addition:   James King, 10.18.2016
+
+Issue backlog status since last report:
+
+* Created:   99
+* Resolved:  70
+
+Mailing list activity since last report:
+
+* @dev    1302 messages
+* @user   34 messages
+
+Releases
+---
+Last release: 0.10.0, Release Date: 1.3.2017
+Cut 0.11.0 branch, release candidate creation and testing in progress
+
+[1]: https://git-wip-us.apache.org/repos/asf?p=thrift.git;a=tree;h=refs/heads/0.11.0;hb=refs/heads/0.11.0</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-BO">2017-08-16</a> &mdash; Jake Farrell<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community is currently working on our 0.11.0 release
+candidate which will include a number of stability and performance
+enhancements to our Go, Node and Python client libraries [1]. We
+have also started auditing our codebase to ensure that  recent
+category-x licensing changes [2] that occurred due to the Facebook
+BSD+patents license changes do not impact Apache Thrift.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:            Nobuaki Sukegawa, 1.25.2016
+* Committer addition:   James King, 10.18.2016
+
+Issue backlog status since last report:
+
+* Created:   87
+* Resolved:  57
+
+Mailing list activity since last report:
+
+* @dev    1145 messages
+* @user   36 messages
+
+Releases
+---
+Last release: 0.10.0, Release Date: 1.3.2017
+Cut 0.11.0 branch, release candidate creation and testing in progress
+
+[1]: https://git-wip-us.apache.org/repos/asf?p=thrift.git;a=tree;h=refs/heads/0.11.0;hb=refs/heads/0.11.0
+[2]: https://www.apache.org/legal/resolved.html#category-x</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-BT">2017-07-19</a> &mdash; Jake Farrell<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community continues to see consistent growth with submissions
+from new contributors for bug fixes and client library improvements. There have
+been a number of stability and performance enhancements to our Go, Node and
+Python client libraries and we have just cut the 0.11.0 branch [1] and are
+beginning testing in preparation for our 0.11.0 release candidate.
+
+A code audit is also starting to take place to ensure that Apache Thrift is
+compliant with the recent category-x licensing changes [2] that occurred due to
+the Facebook BSD+patents license changes.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         Nobuaki Sukegawa, 1.25.2016
+* Committer addition:   James King, 10.18.2016
+
+Issue backlog status since last report:
+
+* Created:   79
+* Resolved:  46
+
+Mailing list activity since last report:
+
+* @dev    1026 messages
+* @user   44 messages
+
+Releases
+---
+Last release: 0.10.0, Release Date: 1.3.2017
+Cut 0.11.0 branch, release candidate creation and testing in progress
+
+[1]: https://git-wip-us.apache.org/repos/asf?p=thrift.git;a=tree;h=refs/heads/0.11.0;hb=refs/heads/0.11.0
+[2]: https://www.apache.org/legal/resolved.html#category-x</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#attachment-BI">2017-04-19</a> &mdash; Jake Farrell<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community is happy to announce that we have expanded our
+client library offering to 25 languages now with the new addition of Rust. We
+are addressing some performance regressions that occurred in some of our client
+libraries in the Apache Thrift 0.10.0 release and are planning on a 0.11-rc0 to be
+packaged and ready for vote before the end of April.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:       Nobuaki Sukegawa, 1.25.2016
+* Committer addition: James King, 10.18.2016
+
+Issue backlog status since last report:
+
+* Created:  143
+* Resolved: 142
+
+Mailing list activity since last report:
+
+* @dev  2467 messages
+* @user 28 messages
+
+Releases
+---
+Last release: 0.10.0, Release Date: 1.3.2017</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#attachment-BI">2017-01-18</a> &mdash; Jake Farrell<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community recently published our 0.10.0 release which included
+a fix for a known security vulnerability, CVE-2016-5397. We are in the process of
+reviewing a new client library for Rust and are seeing a number of bug fixes and client
+library patches being submitted from new contributors.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         Nobuaki Sukegawa, 1.25.2016
+* Committer addition:   James King, 10.18.2016
+
+Issue backlog status since last report:
+
+* Created:   84
+* Resolved:  48
+
+Mailing list activity since last report:
+
+* @dev    1207 messages
+* @user   25 messages
+
+Releases
+---
+Last release: 0.10.0, Release Date: 1.3.2017</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#attachment-BD">2016-10-19</a> &mdash; Jake Farrell<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community has been working diligently to get our CI back on
+track and prepare for our next release. With the new workflow in place and CI
+builds green once again we have created the Apache Thrift 0.10.0-rc0 release
+candidate and it is now up for review and vote. We have also added a new
+committer to the project, James King.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         Nobuaki Sukegawa, 1.25.2016
+* Committer addition:   James King, 10.18.2016
+
+Issue backlog status since last report:
+
+* Created:   66
+* Resolved:  62
+
+Mailing list activity since last report:
+
+* @dev    1294 messages
+* @user   36 messages
+
+Releases
+---
+Last release: 0.9.3, Release Date: Oct 6, 2015
+Vote in progress: 0.10.0-rc0, Vote started: Oct 18, 2016</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#attachment-BF">2016-07-20</a> &mdash; Jake Farrell<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community has seen a drop in activity this quarter due to
+issues with our CI pipeline and the ability for us to quickly test new
+contributions. Our backlog was spread across multiple systems and we had
+multiple ways a new code contribution could be submitted with multiple CI
+systems all testing different things and having their own set of problems.
+
+The Apache Thrift community discussed what was occurring on the dev@ list and
+the consensus was made to create a single work flow which would involve moving
+fully over to Github for all code contributions, stopping use of the ASF
+Jenkins for CI and using Travis and AppVeyor to meet our needs. We now have
+this new single work flow in place and are seeing successful green builds on
+master again for new contributions.
+
+We are now discussing how to best go back through the backlog and test
+previously contributed patches in the new work flow while we continue working
+to improve our test speed and coverage.
+
+With the new work flow in place and successful builds from our CI we
+are planning to cut our 0.10.0 release candidate before the end of July.
+
+
+Community
+---
+Latest Additions:
+
+* PMC addition:          Nobuaki Sukegawa, 1.25.2016
+* Contributor addition:  Simon South, 2.1.2016
+                         Mark Erickson, 2.15.2016
+
+Issue backlog status since last report:
+
+* Created:   89
+* Resolved:  49
+
+Mailing list activity since last report:
+
+* @dev    1436 messages
+* @user   71 messages
+
+Releases
+---
+Last release: 0.9.3, Release Date: Oct 6, 2015</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#attachment-BH">2016-04-20</a> &mdash; Jake Farrell<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and
+serialization.
+
+Project Status
+---------
+The Apache Thrift community continues to see consistent growth with
+submissions from new contributors for bug fixes and client library
+improvements. There have been a number of stability enhancements to
+our C++, Go, Node and Python client libraries. We are close to cutting
+our 0.10.0 release candidate and have spent time focusing on getting
+our CI pipeline back in order after experiencing a lapse in successful
+passing builds.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:          Nobuaki Sukegawa, 1.25.2016
+* Contributor addition:  Simon South, 2.1.2016
+                         Mark Erickson, 2.15.2016
+
+Issue backlog status since last report:
+
+* Created:   233
+* Resolved:  324
+
+Mailing list activity since last report:
+
+* @dev    3320 messages
+* @user   82 messages
+
+Releases
+---
+Last release: 0.9.3, Release Date: Oct 6, 2015</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#attachment-BJ">2016-01-20</a> &mdash; Jake Farrell<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Thrift community continues to see consistent growth with submissions
+from new contributors for bug fixes and client library improvements. A
+lot of focus has has been going into our cross library test coverage and
+progress has been made on our next release candidate which we hope to
+have it available before the end of this month. The Thrift PMC has also
+added a new committer, Nobuaki Sukegawa.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:         Randy Abernethy, 7.31.2015
+* Contributor addition: Nobuaki Sukegawa, 10.13.2015
+
+Issue backlog status since last report:
+
+* Created:  165
+* Resolved: 190
+
+Mailing list activity since last report:
+
+* @dev  2465 messages
+* @user 127 messages
+
+Releases
+---
+Last release: 0.9.3, Release Date: Oct 6, 2015</pre>
+<h3 id="2015-10-21"><a href="2015/board_minutes_2015_10_21.html#attachment-BE">2015-10-21</a> &mdash; Jake Farrell<a class="headerlink" href="#2015-10-21" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+Since our last board report Apache Thrift 0.9.3 has successfully been released.
+This release resolved a security vulnerability, CVE-2015-3254, and added new
+features focused on improved our client library stability. The Apache Thrift
+community continues to see consistent growth from new contributors for bug
+fixes and client library improvements and we have added a new PMC member,
+Randy Abernethy. We have starting work towards our next release candidate
+which will focus on making multi OS builds easier.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:            Randy Abernethy, 7.31.2015
+* Contributor addition:  Konrad Grochowski, 9.22.2014
+
+Issue backlog status since last report:
+
+* Created:    138
+* Resolved:  139
+
+Mailing list activity since last report:
+
+* @dev   1626 messages
+* @user  114 messages
+
+Releases
+---
+Last release: 0.9.3, Release Date: Oct 6, 2015</pre>
+<h3 id="2015-07-15"><a href="2015/board_minutes_2015_07_15.html#attachment-BF">2015-07-15</a> &mdash; Jake Farrell<a class="headerlink" href="#2015-07-15" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+Since our last 0.9.2 release Apache Thrift has seen a number of bugs
+addressed and new features added to improve our multi os build
+capabilities. We have also resolved security vulnerabilities raised and are
+planning on our 0.9.3 rc being cut and voted on this month
+
+Community
+---
+Latest Additions:
+
+* PMC addition:          Ben Craig, 3.20.2014
+                         Henrique Mendonca, 3.20.2014
+* Contributor addition:  Konrad Grochowski, 9.22.2014
+
+Issue backlog status since last report:
+
+* Created:   148
+* Resolved:  156
+
+Mailing list activity since last report:
+
+* @dev   2386 messages
+* @user  80 messages
+
+Releases
+---
+Last release: 0.9.2, Release Date: Nov 7, 2014</pre>
+<h3 id="2015-04-22"><a href="2015/board_minutes_2015_04_22.html#attachment-BH">2015-04-22</a> &mdash; Jake Farrell<a class="headerlink" href="#2015-04-22" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+Since our last 0.9.2 release Apache Thrift has seen an increase in user
+list traffic as well as activity from pull requests coming in from Github. We
+have been working towards our next release, 0.9.3, which will contain developer
+velocity improvements such as docker build environments, improved test
+coverage, py3 support and initial cmake support. We anticipate having a release
+candidate available soon
+
+Community
+---
+Latest Additions:
+
+* PMC addition:          Ben Craig, 3.20.2014
+                         Henrique Mendonca, 3.20.2014
+* Contributor addition:  Konrad Grochowski, 9.22.2014
+
+Issue backlog status since last report:
+
+* Created:    154
+* Resolved:  105
+
+Mailing list activity since last report:
+
+* @dev   1693 messages
+* @user  116 messages
+
+Releases
+---
+Last release: 0.9.2, Release Date: Nov 7, 2014</pre>
+<h3 id="2015-01-21"><a href="2015/board_minutes_2015_01_21.html#attachment-BG">2015-01-21</a> &mdash; Jake Farrell<a class="headerlink" href="#2015-01-21" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+Since releasing Apache Thrift 0.9.2 the Apache Thrift community has been working
+on developer velocity, test fixes and minor client library improvements.
+Discussions around build tooling and multi-system support occurred on the dev
+list and within jira and we are planning to have a release candidate shortly
+which will address items from these discussions.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:           Ben Craig, 3.20.2014
+                          Henrique Mendonca, 3.20.2014
+* Contributor addition:   Konrad Grochowski, 9.22.2014
+
+Issue backlog status since last report:
+
+* Created:    154
+* Resolved:  120
+
+Mailing list activity since last report:
+
+* @dev   2493 messages
+* @user  96 messages
+
+Releases
+---
+Last release: 0.9.2, Release Date: Nov 7, 2014</pre>
+<h3 id="2014-10-15"><a href="2014/board_minutes_2014_10_15.html#attachment-AX">2014-10-15</a> &mdash; Jake Farrell<a class="headerlink" href="#2014-10-15" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community continues to see consistent growth with submissions
+from new contributors for bug fixes and client library improvements (Haxe
+support coming soon). Since our last report we have been fixing issues found in
+our 0.9.2-rc0 release candidate and are planning on a vote for the 0.9.2-rc1
+release candidate within the next week. We also added a new committer, Konrad
+Grochowski.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:           Ben Craig, 3.20.2014
+                          Henrique Mendonca, 3.20.2014
+* Contributor addition:   Konrad Grochowski, 9.22.2014
+
+Issue backlog status since last report:
+
+* Created:   154
+* Resolved:  147
+
+Mailing list activity since last report:
+
+* @dev   1991 messages
+* @user  94 messages
+
+Releases
+---
+Last release: 0.9.1, Release Date: Aug 21, 2013
+
+0.9.2-rc1 release candidate vote in the next week
+
+Board Action
+---
+The Apache Thrift PMC has voted to remove one of the PMC members who is
+considered emeritus by the project. The notice and resolution are available at:
+
+http://s.apache.org/oey</pre>
+<h3 id="2014-07-16"><a href="2014/board_minutes_2014_07_16.html#attachment-BA">2014-07-16</a> &mdash; Jake Farrell<a class="headerlink" href="#2014-07-16" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community continues to see consistent growth with submissions
+from new contributors for bug fixes and client library improvements. Since our
+last report we have been working towards our next release and the Apache Thrift
+0.9.2 release candidate is currently under vote. We have also been involved in
+the GSoC mentoring participants with the focus on our test harmonization
+framework.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:           Ben Craig, 3.20.2014
+                          Henrique Mendonca, 3.20.2014
+* Contributor addition:   Randy Abernethy, 3.17.2014
+
+Issue backlog status since last report:
+
+* Created:    71
+* Resolved:  120
+
+Mailing list activity since last report:
+
+* @dev   2034 messages
+* @user  119 messages
+
+Releases
+---
+Last release: 0.9.1, Release Date: Aug 21, 2013
+
+Apache Thrift 0.9.2 release candidate vote is currently in process</pre>
+<h3 id="2014-04-16"><a href="2014/board_minutes_2014_04_16.html#attachment-BB">2014-04-16</a> &mdash; Jake Farrell<a class="headerlink" href="#2014-04-16" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Apache Thrift community continues to see consistent growth with
+submissions from new contributors for bug fixes and client library
+improvements. Since our last report we have added two new PMC members, a new
+committer and are close to having a release candidate ready for our Apache
+Thrift 0.9.2 release.
+
+We have switched over to using the Apache CMS for our website from local content
+generation with nanoc and svn pubsub. A blog post was created detailing the new
+additions to the Apache CMS
+
+  http://blogs.apache.org/infra/entry/scaling_down_the_cms_to
+
+Community
+---
+Latest Additions:
+
+* PMC addition:           Ben Craig, 3.20.2014
+                                  Henrique Mendonca, 3.20.2014
+* Contributor addition:   Randy Abernethy, 3.17.2014
+
+Issue backlog status since last report:
+
+* Created:    80
+* Resolved:  143
+
+Mailing list activity since last report:
+
+* @dev   1828 messages
+* @user  170 messages
+
+Releases
+---
+Last release: 0.9.1, Release Date: Aug 21, 2013
+
+We are preparing for our 0.9.2 release candidate and estimate that it will be
+available within the next week.</pre>
+<h3 id="2014-01-15"><a href="2014/board_minutes_2014_01_15.html#attachment-AZ">2014-01-15</a> &mdash; Jake Farrell<a class="headerlink" href="#2014-01-15" title="Permalink">&para;</a></h3>
+<pre>Apache Thrift is a framework for providing cross-platform RPC and
+serialization.
+
+Project Status
+---------
+The Apache Thrift community continues to see consistent growth with
+submissions from new contributors for bug fixes and client library
+improvements.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:           Jens Geyer, 5.02.2013
+* Contributor addition:   Ben Craig, 8.23.2013
+
+Issue backlog status since last report:
+
+* Created: 89
+* Resolved: 76
+
+Mailing list activity since last report:
+
+* @dev   946 messages
+* @user  96 messages
+
+Releases
+---
+Last release: 0.9.1, Release Date: Aug 21, 2013
+
+We are preparing for our next release candidate and addressing build issues
+seen across different platforms. Our 0.9.2 release will be focused on client
+library additions, easier build options and enhanced unit tests.</pre>
+<h3 id="2013-10-16"><a href="2013/board_minutes_2013_10_16.html#attachment-AU">2013-10-16</a> &mdash; Jake Farrell<a class="headerlink" href="#2013-10-16" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Thrift community continues to see consistent growth with submissions from
+new contributors for bug fixes and new feature requests. Over the past 30 days
+there have been 53 new tickets created and 33 tickets resolved. We are seeing
+an increase in github pull requests from new contributors interested in helping
+in several different client libraries.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:           Jens Geyer, 5.02.2013
+* Contributor addition:   Ben Craig, 8.23.2013
+
+Mailing list activity since last report:
+
+* @dev   1151 messages
+* @user  166 messages
+
+Releases
+---
+Last release: 0.9.1, Release Date: Aug 21, 2013
+
+As we progress towards our 1.0 release we have decided to create a 0.9.2
+release which will focus on unit testing and our cross language test suite.</pre>
+<h3 id="2013-07-17"><a href="2013/board_minutes_2013_07_17.html#attachment-AU">2013-07-17</a> &mdash; Jake Farrell<a class="headerlink" href="#2013-07-17" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Thrift community continues to see consistent growth with submissions from
+new contributors for bug fixes and new feature requests. Over the past 30 days
+there have been 87 new tickets created and 194 tickets resolved.
+
+Community
+---
+Latest Additions:
+
+* PMC addition:             Jens Geyer, 5.02.2013
+* Contributor addition:   Carl Yeksigian, 05.30.2013
+
+Mailing list activity since last report:
+
+* @dev 1419 messages
+* @user 122 messages
+
+Releases
+---
+Last release: 0.9.0, Release Date: 14/Oct/12
+
+As we progress towards our 1.0 release we have decided to create a 0.9.1
+release due to the number of resolved issues and date since last release.
+We are finalizing preparation for our 0.9.1rc and are planning for this to
+be released later this month.
+
+Closed issues in upcoming release: ~160</pre>
+<h3 id="2013-04-17"><a href="2013/board_minutes_2013_04_17.html#attachment-AZ">2013-04-17</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2013-04-17" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+---------
+The Thrift community continues to see consistent growth with an increase in
+new contributors. The adoption of git as our primary source repository has been
+extremely well received, over the past 30 days there have been 43 new tickets
+created and 42 tickets resolved.
+
+
+Community
+-------
+Bryan Duxbury has elected to step down as the Thrift PMC chair. The PMC has
+voted a new chair and a resolution has been sent to the board.
+
+
+Releases
+--------
+Progress continues towards our 1.0 release with improvements to automated
+testing, version upgrades, and bug fixes to the client libraries.</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#attachment-AR">2013-01-16</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+
+The Thrift community continues to see consistent growth with an increase in
+new contributors. Since our recent 0.9 release we have resolved almost 50
+tickets and we are working towards our milestone 1.0 release.
+
+Releases
+Version 0.9.0 released.
+
+General
+
+The Apache Thrift PMC voted to switch from svn to git as our primary source
+control management. The website and svn repo has been updated with the links
+to the new repository and we are seeing an overwhelming positive response
+from the community for this change.</pre>
+<h3 id="2012-10-17"><a href="2012/board_minutes_2012_10_17.html#attachment-AM">2012-10-17</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2012-10-17" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+The Thrift community continues to see consistent growth with new contributors
+enchaining Thrift and closing bugs at a steady rate. The upcoming release
+shows this growth in having 50+ more tickets resolved than past releases.
+
+Releases
+With help from Gavin @infra the jenkins build slaves have been upgraded to
+help Thrift utilize the newest versions of client library dependencies.
+
+The 0.9 release candidate is in the process of being packaged for a vote with
+THRIFT-1721 as the only remaining blocker which has a patch available and is
+currently getting tested (sub-ticket THRIFT-1722 breaks deb build which is
+needed for INFRA-4081).
+
+Website
+Community contributions for documentation and updates to the website are
+coming in and the tutorials section of the site is starting to take shape
+with new content and examples.</pre>
+<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#attachment-AQ">2012-07-25</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+The Thrift community continues to see consistent growth with submissions from
+new contributors for bug fixes and new feature requests.
+
+I am also happy to announce the addition of a new committer to the Apache
+Thrift project, Henrique Mendonca.
+
+Releases
+We are finalizing preparation for our 0.9rc and are planning for the release
+later this month.
+
+Website
+Updates to documentation and examples are in progress to go out with our 0.9
+release. We will also be finalizing the svnpubsub switch over for the website
+this month (INFRA-5031 and INFRA-5032).</pre>
+<h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#attachment-AO">2012-04-18</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+The Thrift community has seen nice consistent traffic of contributions and
+tickets.
+
+Releases
+We are prepping for an 0.9 release in the coming months.
+
+Website
+We completed the release of a new website that addressed the Apache branding
+requirements and in general improved the content, appearance, and
+maintainability of the website.</pre>
+<h3 id="2012-03-21"><a href="2012/board_minutes_2012_03_21.html#attachment-AS">2012-03-21</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2012-03-21" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Project Status
+--------------
+
+This is a status report on the Apache Thrift website as requested by
+Greg Stein on Sunday, March 4, 2012. The Apache Thrift website has
+been minimally maintained since the projects initial incubation and is
+currently in the process of a new reworking. We are investigating
+different build mechanisms which will allow for us to use markdown as
+the primary site language to facilitate easier community contributions
+as well as a new site structure. We are also looking at possibly
+moving our tutorials and how-to guides from the Apache provided wiki
+and integrate them directly into the Apache Thrift site.
+
+The following is our progress in updating the content on the new
+Apache Thrift website to meet the requirements in the Branding Report
+Checklist:
+
+Project Website Basics
+       - Complete
+
+Project Naming And Descriptions
+       - In progress: updating all references throughout the site to
+         comply with the ASF standard, "Apache Thrift"
+
+Website Navigation Links
+       - In progress: adding appropriate links
+
+Trademark Attributions
+       - Complete. added to new footer
+
+Logos And Graphics
+       - Complete. currently no logo or graphics.
+
+Project Metadata
+       - complete.
+
+
+Community
+---------
+Roger Meier was voted into the Apache Thrift PMC.
+
+Community activity is very strong. We are seeing a growth around new
+client libraries and new users submitting tickets along with patches
+for issues.
+
+
+Releases
+--------
+11.29.2011 release version 0.8.0. Starting organization for our next
+major release, 0.9.0.</pre>
+<h3 id="2012-01-24"><a href="2012/board_minutes_2012_01_24.html#attachment-AG">2012-01-24</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2012-01-24" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+No new committers since the last report, but we've seen a steady flow of new
+contributors sending in patches. The software seems to be improving at a fair
+clip.
+
+Releases
+We released Thrift 0.8 and are accumulating issues into Thrift 0.9.</pre>
+<h3 id="2011-10-26"><a href="2011/board_minutes_2011_10_26.html#attachment-AE">2011-10-26</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2011-10-26" title="Permalink">&para;</a></h3>
+<pre>Community
+The community has seen nice growth. We have a few new committers and
+have elected a new PMC member, Jake Farrell.
+
+Releases
+We released Thrift 0.7. There are no immediate plans for Thrift 0.8.</pre>
+<h3 id="2011-07-20"><a href="2011/board_minutes_2011_07_20.html#attachment-AD">2011-07-20</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2011-07-20" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+Contribution traffic has been moderate. No new committers have been
+added since the last report.
+
+Releases
+There have been no new releases. The 0.7 release should happen sometime
+in the next month or so.</pre>
+<h3 id="2011-04-20"><a href="2011/board_minutes_2011_04_20.html#attachment-AE">2011-04-20</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2011-04-20" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+We have received a fair number of contributions from new contributors. We
+have voted in one new committer, Jake Farrell, who has invested a lot of
+time in helping us get Thrift published via Maven.
+
+Releases
+We completed the 0.6 release and have loosely proposed starting on the 0.7
+release.</pre>
+<h3 id="2011-01-19"><a href="2011/board_minutes_2011_01_19.html#attachment-AD">2011-01-19</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2011-01-19" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+We have not added any new committers this month.
+
+Releases
+We are currently iterating on a second release candidate of Thrift 0.6. Some
+contentious backwards compatibility issues in the Java library arose at the
+last second.</pre>
+<h3 id="2010-12-15"><a href="2010/board_minutes_2010_12_15.html#attachment-AC">2010-12-15</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2010-12-15" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+Community
+We have not added any new committers this month. There has been a relatively
+steady flow of issues and patches, though.
+
+Releases
+We've informally voted to roll an 0.6 release soon. This should be completed
+by the next board meeting.</pre>
+<h3 id="2010-11-17"><a href="2010/board_minutes_2010_11_17.html#attachment-AB">2010-11-17</a> &mdash; Bryan Duxbury<a class="headerlink" href="#2010-11-17" title="Permalink">&para;</a></h3>
+<pre>Thrift is a framework for providing cross-platform RPC and serialization.
+
+This is Thrift's first report as a TLP project.
+
+Community
+We've added one committer, Christian Lavoie, since graduating. In general,
+the traffic on the user and dev lists has picked up nicely. A steady amount
+of work is being done to improve the build system and bring some of the
+lesser-maintained language libraries up to date. There appears to be a
+growing set of users who would like Thrift to be usable natively on Windows.
+
+Releases
+We haven't made any releases since graduation, though we have likely
+accumulated enough fixes to warrant an 0.6 release.
+
+Branding
+A branding audit has not yet been undertaken.</pre>
+<h3 id="2008-06-25"><a href="2008/board_minutes_2008_06_25.html#thrift">2008-06-25</a> &mdash; in the Incubator's report<a class="headerlink" href="#2008-06-25" title="Permalink">&para;</a></h3>
+<pre>Thrift is a software framework for scalable cross-language services
+development. Thrift allows you to define data types and service
+interfaces in a simple definition file. Taking that file as input, the
+compiler generates code to be used to easily build RPC clients and
+servers that communicate seamlessly across programming languages.
+
+Incubating since May 2008
+
+Status:
+ * The SVN repository has been moved to Apache.
+ * Mailing lists and JIRA have been set up.
+ * Have 9 committers (6.5 from Facebook, 2.5 not from Facebook).
+
+Plans:
+ * Adapt to the JIRA workflow.
+ * Improve (wiki) documentation.
+ * Complete a release cycle plan. (What/when/how defines the release of a
+   version?)
+ * Find and establish best practices of Git as a contribution tool.
+   (Background: we are very happy with the way Git worked for us before
+   incubation, and we want to find a way to make it continue to work
+   within the Apache Way).
+ * Finish rounding up Software Grant forms.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Kudu | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Kudu';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Kudu';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Kudu</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="kudu">Kudu<a class="headerlink" href="#kudu" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-07-21</td>
+<td><a href="2021/board_minutes_2021_07_21.html#section-7C">Appointed Andrew Wong</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2019-08-21</td>
+<td><a href="2019/board_minutes_2019_08_21.html#section-7A">Appointed Adar Dembo</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2016-07-20</td>
+<td><a href="2016/board_minutes_2016_07_20.html#section-7A">Appointed Todd Lipcon</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016-07-20</td>
+<td><a href="2016/board_minutes_2016_07_20.html#section-7A">Establish the Apache Kudu Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-AT">2026-04-15</a> &mdash; Andrew Wong<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (10 years ago)
+There are currently 33 committers and 33 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chovan Zoltan on 2025-11-17.
+- No new committers. Last addition was Chovan Zoltan on 2025-11-17.
+
+## Project Activity:
+- 1.18.1 was released on 2026-01-09
+- 1.18.0 was released on 2025-07-10
+- 1.17.1 was released on 2024-11-15.
+
+## Community Health:
+- Development activity measured in the number of commits dropped (43 vs 73 last
+  quarter), and the number of unique developers is down a bit (11 vs 12 last
+  quarter).
+
+- Traffic to dev mailing lists dropped 37%. This is due to Kudu 1.18.1 release
+  discussions that occurred last quarter.
+
+- Traffic to reviews mailing lists dropped by 15%.
+
+- Community activity measured in community Slack is as follows: the number of
+  weekly active users is generally stable (~12), and weekly public posters is
+  also stable (~6).
+
+- Technical highlights
+  - JDK 17 migration: updated the project infrastructure and core dependencies
+    to align with Java 17.
+  - Range-aware auto-rebalancing: enhanced cluster-wide replica distribution
+    logic for more stable and automated operations.
+  - IPv6 support: added several changes to build towards IPv6 support.
+  - Various bug fixes, build fixes, and tooling improvements.</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-AP">2026-01-21</a> &mdash; Andrew Wong<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (9 years ago)
+There are currently 33 committers and 33 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Chovan Zoltan was added to the PMC on 2025-11-17
+- Chovan Zoltan was added as committer on 2025-11-17
+
+## Project Activity:
+- 1.18.1 was released on 2026-01-09
+- 1.18.0 was released on 2025-07-10
+- 1.17.1 was released on 2024-11-15.
+
+## Community Health:
+- Development activity measured in the number of commits and the
+  number of unique developers has remained constant.
+
+- Traffic to dev mailing lists increased by 177%. This is primarily due to
+  release process related mails.
+
+- Traffic to reviews mailing lists dropped by 34% due to the holiday season.
+
+- Community activity measured in community Slack is as follows: (the
+  number of weekly active users dipped by 1.6%, and weekly public
+  posters increased by 21%).</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-AR">2025-10-15</a> &mdash; Andrew Wong<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (9 years ago)
+There are currently 32 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ke Deng on 2024-09-13.
+- No new committers. Last addition was Xixu Wang on 2024-09-14.
+
+## Project Activity:
+- 1.18.1 release in progress
+- 1.18.0 was released on 2025-07-10
+- 1.17.1 was released on 2024-11-15.
+
+## Community Health:
+- Development activity measured in the number of commits has increased by 25%
+  and the number of unique developers stays at 11.
+
+- Traffic to dev mailing lists increased by 140%. This is primarily due to
+  discussions on releases and moving to JDK 17.
+
+- Traffic to issues and reviews mailing lists increased by 7% and 32%
+  respectively.
+
+- Community activity measured in community Slack has slightly declined. (the
+  number of weekly active users -4.8%, and weekly public posters -13%).</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-AS">2025-07-16</a> &mdash; Andrew Wong<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (9 years ago)
+There are currently 32 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ke Deng on 2024-09-13.
+- No new committers. Last addition was Xixu Wang on 2024-09-14.
+
+## Project Activity:
+- 1.18.0 release in progress
+- 1.17.1 was released on 2024-11-15.
+- 1.17.0 was released on 2023-09-01.
+- 1.16.0 was released on 2022-04-11.
+
+## Community Health:
+- Development activity measured in the number of commits has decreased by 30%.
+  This is due to projects being in the design phase/collaborating with other
+  projects. Development measured in the number of unique developers increased
+  by 1.
+
+- Traffic to dev mailing lists decreased by 28%.
+  Traffic to issues and reviews mailing lists increased by 21% and 15%.
+  respectively.
+
+- Community activity measured in community Slack has declined. (the number of
+  weekly active users -8%, and weekly public posters -11%).</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-AM">2025-04-16</a> &mdash; Andrew Wong<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (9 years ago)
+There are currently 32 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ke Deng on 2024-09-13.
+- No new committers. Last addition was Xixu Wang on 2024-09-14.
+
+## Project Activity:
+- 1.17.1 was released on 2024-11-15.
+- 1.17.0 was released on 2023-09-01.
+- 1.16.0 was released on 2022-04-11.
+
+## Community Health:
+- Development activity measured in the number of commits has increased by 1%.
+  Development measured in the number of unique developers dropped by 1 to 12.
+
+- Traffic to the dev mailing list decreased by 53%. This is due to the new Kudu
+  release in the previous quarter. Traffic to issues and reviews mailing lists
+  increased by 21% and 15%. This is due holidays in the previous activity where
+  the dev activity was slower.
+
+- Community activity measured in community Slack has declined. (the number of
+  weekly active users -23%, and weekly public posters -25%).</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-AL">2025-01-15</a> &mdash; Andrew Wong<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (8 years ago)
+There are currently 32 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ke Deng on 2024-09-13.
+- No new committers. Last addition was Xixu Wang on 2024-09-14.
+
+## Project Activity:
+- 1.17.1 was released on 2024-11-15.
+- 1.17.0 was released on 2023-09-01.
+- 1.16.0 was released on 2022-04-11.
+
+## Community Health:
+- Development activity measured in the number of commits has increased by 11%.
+  Development measured in the number of unique developers reached back to 13.
+
+- Traffic to the dev mailing list decreased by 40%. This is mainly due to
+  release planning and other discussions about the project in the previous
+  quarter.
+
+- The number of issues opened has decreased (15 issues opened, -64%) due to the
+  holiday season.
+
+- Community activity measured in community Slack is steady (the number of
+  weekly active users -6%, and public posters +8%).</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-AN">2024-10-16</a> &mdash; Andrew Wong<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (8 years ago)
+There are currently 32 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Ke Deng was added to the PMC on 2024-09-13
+- Xixu Wang was added to the PMC on 2024-09-13
+- Ke Deng was added as committer on 2024-09-13
+- Xixu Wang was added as committer on 2024-09-14
+
+## Project Activity:
+- 1.17.0 was released on 2023-09-01.
+- 1.16.0 was released on 2022-04-11.
+- 1.15.0 was released on 2021-06-22.
+
+## Community Health:
+- Development activity measured in the number of commits has dipped slightly
+  (-11%) due to developers being on holidays. Development measured in the
+  number of unique developers decreased slightly (13 to 11).
+
+- Traffic to the dev mailing list increased by 442%. This is mainly due to
+  release planning and other discussions about the project.
+
+- Community activity measured in community Slack is steady (the number of
+  weekly active users +4%, and public posters -8%).</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-AP">2024-07-17</a> &mdash; Andrew Wong<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (8 years ago)
+There are currently 30 committers and 30 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Marton Greber on 2023-11-09.
+- No new committers. Last addition was Marton Greber on 2023-11-09.
+
+## Project Activity:
+- 1.17.0 was released on 2023-09-01.
+- 1.16.0 was released on 2022-04-11.
+- 1.15.0 was released on 2021-06-22.
+
+## Community Health:
+- Development activity measured in the number of commits has increased (+22%).
+  Development measured in the number of unique developers increased slightly
+  (11 to 13). The previous quarter had a dip in activity on account of
+  developers being out and a Jenkins upgrade taking some bandwidth.
+
+- Traffic across the dev mailing list is down slightly (-13%).
+
+- Community activity measured in community Slack is steady (the number of
+  weekly active users +1%, and public posters -8%).</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-AL">2024-06-19</a> &mdash; Andrew Wong<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (8 years ago)
+There are currently 30 committers and 30 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Marton Greber on 2023-11-09.
+- No new committers. Last addition was Marton Greber on 2023-11-09.
+
+## Project Activity:
+- 1.17.0 was released on 2023-09-01.
+- 1.16.0 was released on 2022-04-11.
+- 1.15.0 was released on 2021-06-22.
+
+## Community Health:
+- Development activity measured in the number of commits has increased (+31%).
+  Development measured in the number of unique developers increased slightly
+  (11 to 14). The previous quarter had a dip in activity on account of
+  developers being out and a Jenkins upgrade taking some bandwidth.
+
+- The number of issues opened has decreased (4 issues opened, -85%), while the
+  number of issues closed has increased slightly (7 issues closed, +40%).
+
+- Traffic across all mailing lists is up (dev@ +42%, issues@ +26%, reviews@
+  +62%).
+
+- Community activity measured in community Slack is steady (the number of
+  weekly active users -5%, and public posters +9%).</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-AM">2024-05-15</a> &mdash; Andrew Wong<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (8 years ago)
+There are currently 30 committers and 30 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Marton Greber on 2023-11-09.
+- No new committers. Last addition was Marton Greber on 2023-11-09.
+
+## Project Activity:
+- 1.17.0 was released on 2023-09-01.
+- 1.16.0 was released on 2022-04-11.
+- 1.15.0 was released on 2021-06-22.
+
+## Community Health:
+- The Jenkins deployment that backed the CI/CD pipeline has been upgraded in
+  response to CVE-2024-23897 in Jenkins reported to the private@ mailing list.
+
+- Development activity measured in the number of commits has dipped (-36%).
+  Development measured in the number of unique developers decreased slightly
+  (13 to 11). Some factors that may have contributed to this dip are the
+  Jenkins upgrade taking some developer cycles, and various developers being
+  out of office.
+
+- Traffic across all mailing lists is down slightly (dev@ -17%, issues@ -13%,
+  reviews@ -17%).
+
+- The number of issues opened has decreased (15 issues opened, -44%), while the
+  number of issues closed has increased slightly (9 issues closed, +12%).
+
+- Community activity measured in community Slack is down, with the number of
+  weekly active users and public posters dropping 20% and 7% respectively.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#section-6AO">2024-04-17</a> &mdash; Andrew Wong<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-AY">2024-01-17</a> &mdash; Andrew Wong<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (7 years ago)
+There are currently 30 committers and 30 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Marton Greber was added to the PMC on 2023-11-09
+- Marton Greber was added as committer on 2023-11-09
+
+## Project Activity:
+1.17.0 was released on 2023-09-01.
+1.16.0 was released on 2022-04-11.
+1.15.0 was released on 2021-06-22.
+1.14.0 was released on 2021-01-27.
+
+## Community Health:
+- Traffic to the dev mailing list decreased (13 emails, 57% decrease). The dip
+  can be attributed to last quarter's active threads pertaining to the 1.17.0
+  release.
+
+- Development activity measured in the number of commits has dipped (-25%),
+  though the traffic to the reviews mailing list has increased (+15%).
+  Activity measured in number of opened and closed issues decreased (13 opened:
+  -53%, and 7 closed: -68%).
+
+- Development measured in the number of unique developers decreased slightly
+  (15 to 13).
+
+- Community activity measured in community Slack is down, with the number of
+  daily active users dropping 20%. The average number of users posting in
+  public channels didn't change.</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-AO">2023-10-18</a> &mdash; Andrew Wong<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (7 years ago)
+There are currently 29 committers and 29 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Yuqi Du on 2023-05-31.
+- No new committers. Last addition was Yuqi Du on 2023-05-30.
+
+## Project Activity:
+1.17.0 was released on 2023-09-01.
+1.16.0 was released on 2022-04-11.
+1.15.0 was released on 2021-06-22.
+1.14.0 was released on 2021-01-27.
+
+## Community Health:
+- Traffic to the dev mailing list remained steady (30 emails, 3% increase) as
+  the release process wrapped for the 1.17.0 release.
+
+- Development activity measured in the number of commits has dipped (-29%),
+  following last quarter's push to get many changes into this quarter's
+  release. Activity measured in number of opened and closed issues increased
+  (28 opened: +40%, and 22 closed: +100%).
+
+- Development measured in the number of unique developers decreased slightly
+  (17 to 15).
+
+- Community activity measured in community Slack is down, with the number of
+  daily active users and public posters dropping 10% and 15% respectively.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-AT">2023-08-16</a> &mdash; Andrew Wong<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (7 years ago)
+There are currently 29 committers and 29 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Yuqi Du was added to the PMC on 2023-05-31
+- Yuqi Du was added as committer on 2023-05-30
+
+## Project Activity:
+Recent releases:
+1.17.0 is in the process of a vote on a release candidate.
+1.16.0 was released on 2022-04-11.
+1.15.0 was released on 2021-06-22.
+1.14.0 was released on 2021-01-27.
+
+## Community Health:
+- Development activity measured in the number of commits has increased
+  significantly this quarter (94% increase). This quarter saw the completion
+  of several major features to be landed in the 1.17.0 release.
+
+- Development activity measured in the number of code contributors increased a
+  bit (from 15 to 17).
+
+- Community activity measured in Slack is down slightly, with the number of
+  daily active users and public posters dropping 6% and 15% respectively.</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#section-6AN">2023-07-19</a> &mdash; Andrew Wong<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-AR">2023-04-19</a> &mdash; Andrew Wong<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (6 years ago)
+There are currently 28 committers and 28 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Abhishek Chennaka was added to the PMC on 2023-02-11
+- Abhishek Chennaka was added as committer on 2023-02-10
+
+## Project Activity:
+1.17.0 has branched and is waiting on some fixes before proceeding
+1.16.0 was released on 2022-04-11.
+1.15.0 was released on 2021-06-22.
+1.14.0 was released on 2021-01-27.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org has increased (42 emails compared to 7), as it
+  has been used more this quarter to share several design docs (improved
+  caching, multi-tenancy, dynamic master changes for the client), to discuss
+  the 1.17 release, and to welcome Abhishek to the PMC.
+
+- Development activity measured in the number of commits has remained steady
+  (+1% increase). Activity measured in open and closed issues was mixed (36
+  issues opened, +28%; 11 closed, -21% change).
+
+- Development activity measured in the number of unique contributors increased
+  (16 contributors, a 23% increase).
+
+- Public IM activity over the community Slack channel is steady, measured by
+  average daily posting members (roughly 4) and average weekly posting members
+  (roughly 12).</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-AR">2023-01-18</a> &mdash; Andrew Wong<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (6 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+1.16.0 was released on 2022-04-11.
+1.15.0 was released on 2021-06-22.
+1.14.0 was released on 2021-01-27.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org had a 66% increase this past quarter, with an
+  upcoming release being proposed.
+
+- Public IM activity over the community Slack channel is down, measured by
+  daily active users (-15%) and weekly active users (-13%).
+
+- Development activity measured in the number of commits was steady (+4%).
+  Activity measured in open and closed issues was mixed (+22% opened, -12%
+  closed).
+
+- Development activity measured in number of contributors was steady
+  (no change).</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-AQ">2022-10-19</a> &mdash; Andrew Wong<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (6 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+- 1.16.0 was released on 2022-04-11.
+- 1.15.0 was released on 2021-06-22.
+- 1.14.0 was released on 2021-01-27.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org had a 66% increase in traffic this past
+  quarter, though this channel tends to be less widely used than public IM.
+
+- Public IM activity over the community Slack channel is steady,
+  measured by daily active users (-1.6%) and weekly active users (-1.5%).
+
+- Development activity measured in the number of commits was steady (-8%).
+  Activity measured in open and closed issues was up (+23% opened, +88%
+  closed), as development has shifted from few larger projects to more
+  incremental improvements.
+
+- Development activity measured in number of contributors went up slightly
+  (+15%). One first-time contributor submitted code this quarter.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-AS">2022-07-20</a> &mdash; Andrew Wong<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (6 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+- 1.16.0 was released on 2022-04-11.
+- 1.15.0 was released on 2021-06-22.
+- 1.14.0 was released on 2021-01-27.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org had a 66% increase in traffic this past
+  quarter. Traffic has been low here for a while so this metric is a bit noisy;
+  people tend to prefer asking questions and holding discussions on Slack.
+
+- Public IM activity over the community Slack channel is down slightly,
+  measured by daily active users (-6.6%) and weekly active users (-4%).
+
+- Development activity measured in the number of commits went down (-17%).
+  Activity measured in open and closed issues was mixed (+66% opened, -40%
+  closed).
+
+- Development activity measured in number of contributors went down slightly
+  (-23%). The drop can be attributed to some contributors shifting focus
+  (either away from code contribution to the project, or away from the project
+  entirely). Two first-time contributors submitted code this quarter.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-AH">2022-05-18</a> &mdash; Andrew Wong<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-20 (6 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-18.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+Recent releases:
+- 1.16.0 was released on 2022-04-11.
+- 1.15.0 was released on 2021-06-22.
+- 1.14.0 was released on 2021-01-27.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org had a 66% increase in traffic in the past
+  quarter (5 emails compared to 3) due to the 1.16.0 release and vote threads.
+
+- Public IM activity over the community Slack channel remained steady,
+  measured by daily active users (+4%) and weekly active users (+0%).
+
+- Development activity measured in the number of commits is steady at 79
+  commits (-4% change from previous quarter).
+
+- Development activity measured in the number of closed JIRA issues is down to
+  13 issues (-31% change from previous quarter).
+
+- Number of code contributors increased by 54% compared to the past quarter to
+  17.
+
+- Website traffic is steady, +0.44% users and -1.78% in sessions.</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#section-6AJ">2022-04-20</a> &mdash; Andrew Wong<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-AL">2022-01-19</a> &mdash; Andrew Wong<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (5 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+- A thread has been started to kickstart the 1.16.0 release.
+- 1.15.0 was released on 2021-06-22.
+- 1.14.0 was released on 2021-01-27.
+- 1.13.0 was released on 2020-09-17.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org had a 66% increase this past quarter,
+  due to initial messaging around the start of the coming 1.16.0 release
+  process.
+
+- Public IM activity over the community Slack channel is down slightly,
+  measured by daily active users (-15%) and weekly active users (-10%).
+
+- Development activity measured in the number of commits stayed steady (-4%),
+  though with a dip in number of unique contributors (-26%).
+
+- Development activity measured by closed issues has increased (+45%), likely
+  as a push to land bug fixes in before the release.
+
+- Website traffic increased slightly, with +11.8% measured number of users and
+  +2.8% sessions in the last 90 days, according to Google Analytics.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-AV">2021-10-20</a> &mdash; Andrew Wong<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (5 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+- 1.15.0 was released on 2021-06-22.
+- 1.14.0 was released on 2021-01-27.
+- 1.13.0 was released on 2020-09-17.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org had a 94% decrease in traffic in the past
+  quarter. The decrease can be attributed to the 1.15.0 release process, which
+  dominated the mailing list traffic last quarter. Additionally, a
+  long-standing trend has been that communication between developers and users
+  tends to happen over both public and private IMs.
+
+- Public IM activity over the community Slack channel is up slightly, measured
+  by daily active users (+14%) and weekly active users (+13%).
+
+- Development activity measured in the number of commits has decreased
+  (-52%) from 15 unique contributors (+25%), three of whom are new to the
+  project. The drop can be attributed to some senior contributors shifting
+  focus (either away from code contribution to the project, or away from the
+  project entirely).
+
+- Development activity measured by opened and closed issues has decreased
+  (-30% opened tickets, -61% closed tickets), again partially due to the shift
+  in focus of some contributors, and also due to the large granularity of
+  certain features being worked on.
+
+- Website traffic decreased slightly, with -3.6% measured number of users and
+  -7.5% sessions in the last 90 days, according to Google Analytics.</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-AP">2021-07-21</a> &mdash; Adar Dembo<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+A thread on the private list has been started to vote on a new PMC chair. There
+are no other issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (5 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+- 1.15.0 was released on 2021-06-22.
+- 1.14.0 was released on 2021-01-27.
+- 1.13.0 was released on 2020-09-17.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org had a 45% increase in traffic in the past
+  quarter, due to the Kudu 1.15.0 release process.
+
+- Development activity measured in the number of commits has remained steady
+  (-3%) from 13 unique contributors (+18%), none of whom are new to the project.
+
+- Development activity measured by opened and closed issues has decreased
+  (-30% opened tickets, -12% closed tickets), again partially due to the coarse
+  granularity of the tasks being worked on.
+
+- Public IM activity over the community Slack channel is down slightly, measured
+  by daily active users (-12%) and weekly active users (-9%).
+
+- Website traffic decreased slightly, with -7.1% measured number of users and
+  -10.9% sessions in the last 90 days, according to Google Analytics.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-AN">2021-04-21</a> &mdash; Adar Dembo<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (4 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+Recent releases:
+- 1.14.0 was released on 2021-01-27.
+- 1.13.0 was released on 2020-09-17.
+- 1.12.0 was released on 2020-05-11.
+
+## Community Health:
+- Traffic to dev@kudu.apache.org had a 122% increase in traffic in the past
+  quarter. The increase is due to the Kudu 1.14.0 release process and some
+  project proposals.
+
+- Traffic to user@kudu.apache.org had a 70% decrease in traffic in the past
+  quarter. Similar to past reports, this is likely due to the increased usage
+  of the community slack.
+
+- Development activity measured in the number of commits has increased (+4%)
+  by 11 unique contributors (+0%), 3 of which were first-time contributors to
+  the project.
+
+- Development activity measured by opened and closed issues has decreased
+  (-35% opened tickets, -47% closed tickets), partially due to the coarse
+  granularity of tasks being worked on.
+
+- Public IM activity over the community Slack channel remains steady.
+
+- Website traffic increased slightly, with +12.7% measured number of users and
+  +17.1% sessions in the last 90 days, according to Google Analytics.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-AN">2021-01-20</a> &mdash; Adar Dembo<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (4 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+Recent releases:
+- Discussions have started regarding a 1.14.0 release. The release management
+  process is expected to commence in the coming week or two.
+- 1.13.0 was released on 2020-09-17.
+- 1.12.0 was released on 2020-05-11.
+- 1.10.1 was released on 2019-11-20.
+- 1.11.1 was released on 2019-11-20.
+
+## Community Health:
+- Traffic to the dev and user mailing lists decreased significantly (-84% and
+  -53% respectively), with more questions popping up on the community Slack.
+
+- Public IM activity over the community Slack channel is up, with the average
+  daily and weekly active members remaining steady (under 3% difference for
+  each), but average daily number of posts in public channels having increased
+  +60%.
+
+- Website traffic decreased slightly, with around -7% measured number of users
+  and sessions in the last 90 days, according to Google Analytics.
+
+- Development activity measured in the number of commits is down (-16%).
+  Contributions were authored by 11 unique contributors (-15%), one of which was
+  a first-time contributor to the project.
+
+- Development activity measured by opened and closed issues has decreased
+  (-20% opened tickets, -71% closed tickets), partially due to the coarse
+  granularity of tasks being worked on.</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#attachment-AL">2020-10-21</a> &mdash; Adar Dembo<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (4 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bankim Bhavsar on 2020-04-17.
+- No new committers. Last addition was Bankim Bhavsar on 2020-04-17.
+
+## Project Activity:
+Recent releases:
+- 1.13.0 was released on 2020-09-17.
+- 1.12.0 was released on 2020-05-11.
+- 1.10.1 was released on 2019-11-20.
+- 1.11.1 was released on 2019-11-20.
+
+## Community Health:
+- Traffic to the dev mailing list increased slightly (3%) in the last quarter,
+  though traffic to the users mailing list has dropped significantly (-49%).
+
+- Website traffic decreased slightly, with between 0% and 6% decreases
+  measured in users, new users, sessions, page views, and page sessions,
+  according to Google Analytics.
+
+- Public IM activity over the community Slack channel is down somewhat, with
+  the average daily number of posts in public channels having dropped 23%, and
+  weekly and daily active users averaged across the quarters dipping 14% and
+  19% respectively.
+
+- Development activity measured in the number of commits has dropped slightly
+  (-2%) by 13 unique contributors (-35%), 6 of which were first-time
+  contributors to Kudu. Development activity measured by opened and closed
+  issues has decreased (-49% opened tickets, -84% closed tickets), likely due
+  to the fact that a few larger features are currently being worked with
+  sub-tasks that are not tracked on Jira.</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-AN">2020-07-15</a> &mdash; Adar Dembo<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (4 years ago)
+There are currently 27 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Bankim Bhavsar was added to the PMC on 2020-04-17
+- Bankim Bhavsar was added as committer on 2020-04-17
+
+## Project Activity:
+Recent releases:
+- 1.12.0 was released on 2020-05-11.
+- 1.10.1 was released on 2019-11-20.
+- 1.11.1 was released on 2019-11-20.
+
+## Community Health:
+- Traffic to the dev mailing list had a 55% increase since the past quarter.
+
+- Website traffic has remained mostly steady, increasing between 0% and 7%
+  across users, new users, sessions, sessions per user, page views, and page
+  sessions; and decreasing 2% in average session duration.
+
+- Public IM activity over the community Slack channel is down somewhat, with
+  the average daily number of posts in public channels having dropped 36%, and
+  both weekly and daily active users averaged across the quarters changing
+  less than 3% each.
+
+- Development activity measured in number of commits has reduced significantly
+  (-54%), likely due to a combination of developers shifting roles, a couple of
+  projects being in the design phase for much of the quarter, and several
+  developers' changes in  working environments and schedules on account of
+  COVID-19. Code was authored by 14 contributors (down 46% since last
+  quarter), 2 of which are new to the project.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-AN">2020-04-15</a> &mdash; Adar Dembo<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop
+ecosystem.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-20 (3 years and 8 months ago) There are
+currently 26 committers and 26 PMC members in this project. The
+Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+ - Last PMC addition: Zhang Yifan (2020-01-07)
+ - No new PMC members in the last 3 months.
+
+## Project Activity:
+We are currently in the process of wrapping feature development work for Kudu
+1.12.0 and will begin the release process in the next few weeks.
+
+Recent releases:
+- 1.11.1 was released on 2019-11-20.
+- 1.10.1 was released on 2019-11-20.
+- 1.10.0 was released on 2019-11-01.
+
+## Community Health:
+- Traffic to the dev mailing list had a 64% decrease in the past quarter.
+  However, that is due to the unusual spike in traffic last quarter.
+- Traffic to the user mailing list had a 69% increase in traffic in the past
+  quarter.
+- Developer activity is up by every metric we track, except for JIRAs (opened
+  down 8%, closed down 18%): reviews +19%%, commits +1%.
+- Code was authored by 26 contributors (up 8% since last quarter), 3 of which
+  are new to the project.
+- Website traffic is down slightly by ~3% unique users and 10% by page views.</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-AM">2020-01-15</a> &mdash; Adar Dembo<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software related
+to a distributed columnar storage engine built for the Apache Hadoop ecosystem.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-20 (3 years ago)
+There are currently 26 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Zhang Yifan was added to the PMC on 2020-01-07
+- Zhang Yifan was added as committer on 2020-01-07
+
+## Project Activity:
+We found a licensing issue in a transitive dependency that has been present
+since Kudu 1.10.0. The memkind library was added as a dependency to this
+version. This depends on libnuma which is licensed under LGPL. We released
+1.11.0 before noticing the issue and then released both 1.10.1 and 1.11.1 to
+address the issue. Details on this can be found in the release notes and in
+KUDU-2990.
+
+Recent releases:
+- 1.10.1 was released on 2019-11-20.
+- 1.11.1 was released on 2019-11-20.
+- 1.10.0 was released on 2019-11-01.
+
+## Community Health:
+- Traffic to the dev mailing list is up by 190% which can be attributed to the 3
+  releases and several other larger topics we discussed on the list. User list
+  traffic is down 30%.
+- Website traffic is slightly down, by 7% both by number of unique users and
+  visits.
+- Developer activity is up by every metric we track, except for open JIRAs (down
+  15%): reviews +40%, issues closed +16%, commits +80%.
+- Code was authored by 23 contributors (down 4% since last quarter), 6 of
+  which are new to the project.</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-AM">2019-10-16</a> &mdash; Adar Dembo<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Kudu is the creation and maintenance of software
+related to a distributed columnar storage engine built for the Apache Hadoop
+ecosystem.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Kudu was founded 2016-07-19 (3 years ago)
+There are currently 25 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- LiFu He was added to the PMC on 2019-08-21
+- Yao Xu was added to the PMC on 2019-08-21
+- Yao Zhang was added to the PMC on 2019-08-21
+- LiFu He was added as committer on 2019-08-22
+- Yao Xu was added as committer on 2019-08-22
+- Yao Zhang was added as committer on 2019-08-22
+
+## Project Activity:
+The community is in the process of preparing the next minor version release,
+Apache Kudu 1.11.0.
+
+The previous release was Apache Kudu 1.10.0, on Tue Jul 9 2019.
+
+## Community Health:
+- Traffic to the dev mailing list is down by 47%. Most threads are responded
+  to in a timely manner, but this decline can be explained by developers'
+  preference to instant messaging and face-to-face conversations that get
+  eventually distilled and shared with the mailing list.
+
+- Website traffic appears largely flat, with the number of users down 4%,
+  sessions down 3%, and average session duration up 4%.
+
+- Developer activity (measured by code reviews, commits, open JIRAs, and
+  closed JIRA) is noticeably down (35%, 55%, 41%, 68% respectively). The
+  previous quarter saw many large, multi-quarter feature efforts come to a
+  close, and so this decline is understandable, with a few larger projects
+  beginning their design phases.
+
+- Commits were authored by 24 contributors (-14% since last quarter), 5 of
+  which are new to the project.
+
+## Report Feedback
+In response to our last report, the board offered this feedback:
+
+druggeri: I can appreciate the comment about using instant messaging
+            rather than mailing list. Just to be clear, is the project
+            being sure to return all decisions back to the mailing
+            list?
+
+We have been congnizant of this and have tried to ensure that once discussed,
+important topics are surfaced to the mailing lists with in-depth summaries of
+the discussion so far, allowing for further discussion.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-AK">2019-07-17</a> &mdash; Todd Lipcon<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Kudu is a distributed columnar storage engine built for the Apache
+   Hadoop ecosystem.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - Apache Kudu 1.10.0 has been released with several long-awaited new features
+   and improvements, including fine-grained authorization backed by Apache
+   Sentry, synchronization of metadata with Apache Hive Metastore, and table
+   backup and restore using Apache Spark.
+
+## Health report:
+
+ - User and dev mailing list subscriber growth up by 3% and 4% respectively,
+   but their traffic is down by 36% and 21% respectively. Most questions are
+   answered relatively quickly, but this decline can most likely be explained
+   by people preferring instant messaging on Slack over the mailing list.
+
+ - Website traffic remains the same, users and sessions both up less than 1%.
+   We continued working on the revival of the blog with 2 new posts, although
+   both were published early in the quarter. The blog traffic is up
+   significantly, page views and unique page views both up by 20% compared to
+   last quarter's traffic.
+
+ - Development activity (measured by code review, JIRA traffic and number of
+   commits) is up overall (reviews -2%, issues +37%, commits +10%). Commits
+   were authored by 22 unique contributors (-1 since last quarter).
+
+## PMC changes:
+
+ - Currently 22 PMC members.
+ - Yingchun Lai was added to the PMC on Wed Jun 05 2019
+
+## Committer base changes:
+
+ - Currently 22 committers.
+ - Yingchun Lai was added as a committer on Thu May 30 2019
+
+## Releases:
+
+ - Last release was 1.10.0 on Tue Jul 9 2019
+
+## JIRA activity:
+
+ - 120 JIRA tickets created in the last 3 months
+ - 101 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#attachment-AK">2019-04-17</a> &mdash; Todd Lipcon<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - Apache Kudu is a distributed columnar storage engine built for the Apache
+   Hadoop ecosystem.
+
+## Issues:
+
+ - There are no issues requiring board attention at this time
+
+## Activity:
+
+ - Apache Kudu 1.9.0 was released on Mar 11 2019, which includes several new
+   features like location awareness, experimental Docker support for testing
+   and development, and support for writing Java tests against Kudu without
+   having to build it locally by making platform-specific binaries available
+   through Gradle and Maven.
+
+## Health report:
+
+ - User and dev mailing list subscriber growth are both insignificant (less
+   than 2%), but the traffic on the user list decreased by 8% while the dev
+   list's traffic increased by 90%.
+
+ - Website traffic remains the same, users and sessions both up 1%. In the
+   previous reports we talked about reviving the blog, in this quarter we
+   published 2 new posts excluding the release announcement. The section's
+   traffic is up, by 4% and 15% for users and sessions respectively.
+
+ - Development activity (measured by code review, JIRA traffic and number of
+   commits) is up (reviews +58%, issues +62%, commits +1%). Code was authored
+   by 23 unique contributors (+7 since last quarter).
+
+## PMC changes:
+
+ - Currently 21 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Attila Bukor on Sun Jul 22 2018
+
+## Committer base changes:
+
+ - Currently 21 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Attila Bukor at Mon Jul 23 2018
+
+## Releases:
+
+ - 1.9.0 was released on Mon Mar 11 2019
+
+## Mailing list activity:
+
+ - The traffic on the dev@ list is significant, there was a lot of discussion
+   about the 1.9.0 release, the migration to GitBox and whether to use GitHub
+   for contributions and code reviews aside from the regular discussions.
+
+ - dev@kudu.apache.org:
+    - 152 subscribers (up 2 in the last 3 months):
+    - 82 emails sent to list (43 in previous quarter)
+
+ - issues@kudu.apache.org:
+    - 54 subscribers (up 0 in the last 3 months):
+    - 550 emails sent to list (339 in previous quarter)
+
+ - reviews@kudu.apache.org:
+    - 37 subscribers (up 0 in the last 3 months):
+    - 3869 emails sent to list (2441 in previous quarter)
+
+ - user@kudu.apache.org:
+    - 222 subscribers (up 3 in the last 3 months):
+    - 67 emails sent to list (73 in previous quarter)
+
+## JIRA activity:
+
+ - 111 JIRA tickets created in the last 3 months
+ - 69 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#attachment-AQ">2019-01-16</a> &mdash; Todd Lipcon<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - Apache Kudu is a distributed columnar storage engine built for the Apache
+   Hadoop ecosystem.
+
+## Issues:
+
+ - No issues requiring the board's attention at this time.
+
+## Activity:
+
+ - Kudu 1.8.0 was released on October 23rd, 2018, with support for a manual
+   rebalancer that can be used to redistribute table replicas among tablet
+   servers. The release also included the usual bevy of bug fixes and
+   performance improvements, as well as some smaller features based on user and
+   operator feedback from past releases.
+
+## Health report:
+
+ - User mailing list subscriptions didn't grow, and traffic is down about 25%
+   this quarter, most likely due to US holidays. Questions are generally
+   answered quickly and overall traffic is quite bursty.
+
+ - Website traffic growth is down: about -7% for users and -9% for sessions
+   since the last quarter. This is within our normal quarterly fluctuation.
+   In the last board report we talked about reviving the Kudu blog to grow
+   interest in the project, and although that hasn't happened yet, we do have
+   several blog posts currently in review.
+
+ - Development activity (measured by code review and JIRA traffic) is down
+   somewhat (reviews -9%, JIRA -20%, commits +36%). Code was authored by
+   16 unique contributors (-12 since last quarter) of whom 2 were new to the
+   project (-7 since last quarter). Commit activity was inflated due to the
+   1.8.0 release; the rest of the metrics reflect the fact that several key
+   developers have tapered down their involvement in Kudu for various reasons.
+
+ - In the last board report we wrote about how we're working on a process to
+   publish test artifacts as part of Kudu releases. Progress has been made but
+   the new process is not yet ready for primetime.
+
+## PMC changes:
+
+ - Currently 21 PMC members.
+ - No new PMC members in the last 3 months.
+ - Last PMC addition: Sun Jul 22 2018 (Attila Bukor)
+
+## Committer base changes:
+
+ - Currently 21 committers.
+ - No new committers in the last 3 months.
+ - Last committer addition: Mon Jul 23 2018 (Attila Bukor)
+
+## Releases:
+
+ - Last release was 1.8.0 on Tue Oct 23 2018
+
+## JIRA activity:
+
+ - 54 JIRA tickets created in the last 3 months
+ - 49 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-AI">2018-10-17</a> &mdash; Todd Lipcon<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - Apache Kudu is a distributed columnar storage engine built for the Apache
+   Hadoop ecosystem.
+
+## Issues:
+
+ - No issues requiring the board's attention at this time.
+
+## Activity:
+
+ - Since the last report, we haven't had any releases (the last release was
+   1.7.1, on June 7th). However, we are working on the next minor release which
+   we expect to publish in mid-October. It will include the usual bevy of bug
+   fixes and performance improvements, as well as some smaller features based on
+   user and operator feedback from past releases.
+
+## Health report:
+
+ - User mailing list subscriptions didn't grow, and traffic was up 10% this
+   quarter. We've noted this in past board reports but it bears repeating: it's
+   difficult to learn anything from these metrics. Questions are generally
+   answered quickly and overall traffic is quite bursty.
+
+ - Website traffic growth is down slightly: about -2% for users and -5% for
+   sessions since the last quarter. This is within our normal quarterly
+   fluctuation. Relatedly, the Kudu blog has been quiet for most of 2018, but
+   we've been working to change that. We published two new posts in September
+   which is a lot when the average monthly post count is zero.
+
+ - Development activity (measured by code review and JIRA traffic) is down
+   slightly (reviews -13%, JIRA +12%, commits -17%). Code was authored by
+   28 unique contributors (+10 since last quarter) of whom 9 were new to the
+   project (+6 since last quarter). So no real change in activity, though
+   it's heartening to see so many different contributors, and quite a few of
+   them new to the project at that.
+
+ - We've been working on a process to publish test artifacts as part of Kudu
+   releases so that other projects can better test their Kudu integrations. An
+   Apache Beam contributor helped develop a proof of concept which can be found
+   here: https://s.apache.org/dj5N.
+
+## PMC changes:
+
+ - Currently 21 PMC members.
+ - New PMC members:
+    - Attila Bukor was added to the PMC on Sun Jul 22 2018
+    - Sailesh Mukil was added to the PMC on Mon Jul 16 2018
+
+## Committer base changes:
+
+ - Currently 21 committers.
+ - New commmitters:
+    - Attila Bukor was added as a committer on Mon Jul 23 2018
+    - Sailesh Mukil was added as a committer on Mon Jul 16 2018
+
+## Releases:
+
+ - Last release was 1.7.1 on Wed Jun 06 2018
+
+## JIRA activity:
+
+ - 105 JIRA tickets created in the last 3 months
+ - 53 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-AK">2018-07-18</a> &mdash; Todd Lipcon<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report, we've made one maintenance release (1.7.1).
+The 1.7.1 release included critical bug fixes discovered in 1.7.0.
+Work continues on further new features including deeper integration
+with Apache Hive, support for backup and recovery (using Apache Spark
+as an execution building block), and more.
+
+## Health report:
+
+- User mailing list didn't grow much in this quarter, and traffic was
+  also down 10%. It's hard to discern an obvious pattern here - most
+  questions are answered relatively quickly after they appear on the list.
+  Perhaps we are doing a good job of improving documentation and, as
+  common questions are captured in the mailing list archives, fewer people
+  need to ask questions on the list?
+
+- Website traffic growth is up a bit: Around +6% for both users and
+  sessions vs the prior quarter. The previous report asked how these
+  numbers are calculated. We are currently using Google Analytics
+  on our site.
+
+- Development activity (measured by code review and JIRA traffic) is down
+  noticeably (reviews -14%, JIRA -40%, commits -36%). Code was authored by
+  18 unique contributors (-4 since last quarter) of whom 3 were new
+  to the project (-5 since last quarter). Again no obvious trend here
+  since activity was way up last quarter -- just seems to be a noisy
+  metric.
+
+- It's been a while since we added a committer, but some promising
+  votes are currently going on on the private list.
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Hao Hao on Wed Dec 13 2017
+
+## Committer base changes:
+
+ - Currently 19 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Hao Hao at Wed Dec 13 2017
+
+## Releases:
+
+ - 1.7.1 was released on Wed Jun 06 2018
+
+## JIRA activity:
+
+ - 91 JIRA tickets created in the last 3 months
+ - 64 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-AM">2018-04-18</a> &mdash; Todd Lipcon<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report, we've made one minor release (1.7.0).
+
+The 1.7.0 release included some major improvements to our design for
+re-replicating data after machine failure, support for DECIMAL types,
+and various other smaller features and improvements based on user and
+operator feedback from prior releases.
+
+
+## Health report:
+
+- User mailing list growth continues at historical rates (8% this quarter).
+  User list traffic is down again after a bump up in the previous quarter.
+  Looking historically it seems like "messages sent" is a pretty noisy
+  metric with big bursts of activity due to popular threads, followed by
+  periods of quietness. We don't believe there is anything to be learned
+  from this.
+
+- Website traffic grew again slightly - sessions +2.7%, users +2.3%.
+
+- Development activity grew substantially (measured by code review and
+  JIRA traffic): reviews +34%, jira +119%. In the previous report we
+  mentioned that it was down due to the holiday season so this is likely
+  just the normal activity resuming in the new year.
+
+- This quarter (Jan-Mar), we committed code authored by 22 distinct
+  contributors (+5 since last quarter) of whom 8 (+5 since last quarter)
+  were new to the project.
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Hao Hao on Wed Dec 13 2017
+
+## Committer base changes:
+
+ - Currently 19 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Hao Hao at Wed Dec 13 2017
+
+## Releases:
+
+ - 1.7.0 was released on Tue Mar 20 2018
+
+## JIRA activity:
+
+ - 150 JIRA tickets created in the last 3 months
+ - 96 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-AL">2018-01-17</a> &mdash; Todd Lipcon<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report, we've made one minor release (1.6.0).
+
+The 1.6.0 release focused on bug fixes, stability, and performance. Notably,
+Kudu can now gracefully handle failures of local disk drives without crashing
+the process.
+
+Work over the holiday period has been a bit slower, but we continue
+to make progress around similar goals of stability and easier operations
+for our next release.
+
+In response to our last report, the board offered this feedback:
+
+  rb: Some projects find that separating committer and PMC gives you
+      the opportunity to be more generous with commit rights without
+      necessarily adding everyone to the PMC. It would be a shame to
+      have those 6 new contributors go away feeling unwelcomed.
+
+We discussed this briefly on the private list and the consensus seemed to be
+that we haven't felt any hesitation to add committers due to the combined
+PMC/committer list. In this period we added three new PMC/committers so we
+don't feel like splitting the list is necessary at this point.
+
+## Health report:
+
+- Subscriptions to the user mailing list are up slightly over last quarter.
+  In the previous quarter we noted that mailing list traffic was significantly
+  down, but in this quarter it has doubled back to previous levels.
+  It appears that the quiet couple of months was not indicative of any
+  trend.
+
+- Website traffic is slightly up (unique users up 4.4%, sessions up 8.6%).
+  This is within our normal quarterly fluctuation.
+
+- Development activity as measured by code reviews and JIRA traffic is down
+  a bit from the previous quarter, probably due to the holiday season.
+
+- This quarter (Oct-Dec), we committed code authored by 17 distinct
+  contributors, of whom 3 were new to the project. We added three new
+  committers and PMC members.
+
+- Collaboration continues with the Apache Impala project around our shared
+  RPC library code. This has been beneficial to both projects.
+
+## PMC/Committer changes:
+
+ - Currently 19 PMC members and committers (all committers are PMC)
+ - Last committer/PMC additions:
+ -- Andrew Wong was added as a committer and PMC on Mon Oct 30 2017
+ -- Grant Henke was added as a committer and PMC on Fri Oct 27 2017
+ -- Hao Hao was added as a committer and PMC on Wed Dec 13 2017
+
+## Releases:
+
+ - Apache Kudu 1.6.0 was released on December 6th, 2017.</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-AL">2017-10-18</a> &mdash; Todd Lipcon<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report, we've made one minor release (1.5.0).
+
+Development continues in the same areas as the last report: operability,
+stability, security, and incremental performance improvements. We plan to
+continue making minor releases with no reason for a major
+(compatibility-breaking) release on the horizon.
+
+## Health report:
+
+- Subscriptions to the user mailing list are up slightly over last quarter,
+  but traffic down significantly. It's not clear if there is anything
+  to learn from this, but we'll make sure to look over recent weeks and see
+  if any questions have been going un-answered.
+
+- Website traffic (unique user count) is down about 9% since last quarter.
+  Our blog continues to be rather quiet of late -- contributors have spent
+  more time on code and less on publicity. A few posts are now in the queue
+  and hoping they'll bring this back up next quarter.
+
+- Development velocity is pretty constant from last quarter measured by
+  review traffic and JIRA (commits slightly down, JIRA up significantly,
+  reviews about even).
+
+- This quarter (July-Sep), we committed code authored by 24 distinct
+  contributors, of whom 6 were new to the project. Similar diversity and
+  growth.
+
+  Discussion continues on the private list for new committers. The latest
+  discussions were positive and seems like a vote should be called soon.
+
+- The Kudu project has been collaborating closely with the Impala incubator
+  podling community. Specifically, Impala is adopting Kudu's RPC library for
+  their own internal usage. This is in addition to the actual user-facing
+  integration between the projects that has been ongoing for upwards of a year.
+  This has resulted in a number of new Kudu contributions from committers on
+  that project.
+
+## PMC/Committer changes:
+
+ - Currently 16 PMC members and committers (all committers are PMC)
+ - Last committer/PMC addition: Jordan Birdsell was added on Nov 8, 2016.
+
+## Releases:
+
+ - Apache Kudu 1.5.0 was released on September 13, 2017.</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-AN">2017-07-19</a> &mdash; Todd Lipcon<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report, we've made one minor release (1.4.0) and one patch
+release (1.3.1).
+
+Development continues to focus around operability, stability, security,
+and incremental performance improvements. We plan to continue making
+minor releases with no reason for a major (compatibility-breaking) release
+on the horizon.
+
+## Health report:
+
+- Subscriptions to the user mailing list are up 9% over last quarter, with
+  traffic up 20%. Subscriptions to development-related lists have grown
+  at a similar rate (~9%), with traffic about even.
+
+  Questions on both the mailing list and our Slack channel are typically
+  answered within a day.
+
+- Website traffic (unique user count) is down about 20% since last quarter.
+  We attribute this to two factors: (1) less regular postings on our blog,
+  and (2) a big spike of traffic due to some vendor announcements falling in
+  Q1.
+
+- Development velocity is pretty constant from last quarter (within 10% on
+  reviews and commits, JIRA a bit down due to natural fluctuations)
+
+- This quarter (April-Jun), we committed code authored by 21 distinct
+  contributors, of whom 8 were new to the project. Of the 8 new contributors, 5
+  are unaffiliated with Cloudera, who employs the majority of active
+  committers. This follows the pattern over the previous several quarters.
+
+  We are continuing to keep an eye out for committer candidates -- some of the
+  newer contributors are getting close to the thresholds at which we have
+  previously invited new contributors. The PMC expects to discuss and likely
+  add new committers this coming quarter.
+
+## PMC/Committer changes:
+
+ - Currently 16 PMC members and committers (all committers are PMC)
+ - Last committer/PMC addition: Jordan Birdsell was added on Nov 8, 2016.
+
+## Releases:
+
+ - Apache Kudu 1.4.0 was released on June 13, 2017.
+ - Apache Kudu 1.3.1 was released on April 19, 2017.</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#attachment-AG">2017-04-19</a> &mdash; Todd Lipcon<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report, we've made two minor releases: 1.2 just after
+the prior report, and 1.3 a few weeks back.
+
+Kudu 1.3 is an important milestone for the project, as it now includes
+support for strong authentication (via Kerberos) and TLS wire encryption.
+Based on feedback from the community over the last year, we think this
+will substantially increase adoption in environments with more requirements
+around data security.
+
+## Health report:
+
+- Subscriptions to the user mailing list are up 8% over last quarter, with
+  traffic up 14%. Subscriptions to development-related lists have grown
+  at a similar rate (~9%), with traffic down 30%. The drop in dev traffic
+  just seems to be natural fluctuation of design discussion vs implementation
+  focus of the team.
+
+  Questions on both the mailing list and our Slack channel are typically
+  answered within a day.
+
+- Global interest in Apache Kudu continues to increase at a good clip.
+  Website traffic (by user count) on http://kudu.apache.org/ was up 73%
+  this quarter vs last.
+
+- Development velocity is pretty constant from last quarter (commits and JIRA
+  traffic about constant, code review traffic +10%).
+
+- This quarter (Jan-Mar), we committed code authored by 26 distinct
+  contributors, of whom 8 were new to the project. Of the 8 new contributors, 5
+  are unaffiliated with Cloudera, who employs the majority of active
+  committers.
+
+  We reported similar stats last quarter, and noted that we are happy with the
+  diversity of contributors. The board noted "hopefully some of these new
+  contributors will develop into committers". We are keeping an eye out for
+  potential committers, but we have mostly observed a "long tail" pattern -- of
+  the 37 non-committer contributors over the past year, 23 have contributed
+  only one or two patches, so we don't feel that any is yet ready for
+  committership.
+
+  We'll continue to keep an eye out for potential committers over the coming
+  quarter. If the above pattern persists, we will consider surveying the "long
+  tail" contributors to see if there are any changes we could make to encourage
+  continued participation.
+
+
+## PMC/Committer changes:
+
+ - Currently 16 PMC members and committers (all committers are PMC)
+ - Last committer/PMC addition: Jordan Birdsell was added on Nov 8, 2016.
+
+## Releases:
+
+ - Apache Kudu 1.3.0 was released on March 20, 2017.
+ - Apache Kudu 1.2.0 was released on January 18, 2017.</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#attachment-AJ">2017-01-18</a> &mdash; Todd Lipcon<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report, we've made one minor release and one bug fix release.
+Additionally, we branched for Kudu 1.2 which we expect to release by the
+end of January.
+
+In addition to the features that have landed in Kudu 1.1 and the upcoming
+1.2, we have also made initial progress on adding various security-related
+functionality to Kudu. It is not yet usable by end users, but some
+infrastructure has landed in our master branch and we expect to provide
+some basic security functionality in Kudu 1.3. Many users have cited lack
+of security functionality as a barrier to adoption, so we expect to see an
+up-tick in usage later this year as it becomes available.
+
+## Health report:
+
+- Subscriptions to the user mailing list are up 14% over last quarter, with
+  a comparable growth in traffic. Subscriptions to development-related lists
+  have grown at a slower rate (~5%). Questions on both the mailing list
+  and our Slack channel are typically answered within a day.
+
+- Development velocity (as measured by commits and dev list traffic) is
+  is slightly down from the previous quarter, likely due to a relatively
+  quiet holiday period in December. That said, absolute levels are still
+  healthy (4-5 commits per day)
+
+- This quarter, we committed code authored by 21 distinct contributors, of
+  whom 9 were new to the project. Of the 9 new contributors, 7 are unaffiliated
+  with Cloudera, who employs the majority of active committers. This is a good
+  sign for long term project diversity, though we still need to cultivate the
+  new contributors and encourage continued involvement.
+
+## PMC/Committer changes:
+
+ - Currently 16 PMC members and committers (all committers are PMC)
+ - Last committer/PMC addition: Jordan Birdsell was added on Nov 8, 2016.
+
+## Releases:
+
+ - Apache Kudu 1.0.1 was released on Tue Oct 11 2016
+ - Apache Kudu 1.1.0 was released on Mon Nov 21 2016</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#attachment-AD">2016-10-19</a> &mdash; Todd Lipcon<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report:
+ - We released Kudu 1.0 in mid September, and issued a corresponding press
+   release. Thanks, Sally, for the support!
+
+ - The 1.0 release and corresponding press generated record traffic to our
+   project web site. It has since tapered off but remains higher than
+   historic levels.
+
+ - The community is currently voting on a 1.0.1 bug-fix release to address a
+   few issues discovered in 1.0.0.
+
+ - Kudu was featured in 5 talks at the Strata+Hadoop World conference in
+   NYC in September. Two talks were delivered by a member of the PMC, but
+   three were delivered by real-world users about their use cases. These
+   user talks had positive things to say about their adoption.
+
+## Health report:
+
+- Mailing list subscribership is up slightly in the last month, and traffic
+  is stable.
+
+- We committed code from one brand new contributor in the past month.
+  Many new users have shown up on mailing lists and our Slack-based user chat.
+
+- JIRA tickets are being created at a slightly higher rate than they are
+  being resolved, as a lot of contributors are working on scoping out
+  upcoming post-1.0 development work. Nevertheless, new bugs reported by
+  users are being triaged and addressed quickly.
+
+## PMC/Committer changes:
+
+ - Currently 15 PMC members and committers (all committers are PMC)
+ - Last committer/PMC additions: 2 added on 9/14/2016.
+
+## Releases:
+
+ - September 19, 2016: Kudu 1.0.0 released.</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#attachment-AE">2016-09-21</a> &mdash; Todd Lipcon<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the Apache
+Hadoop ecosystem.
+
+## Issues:
+
+No issues requiring the board's attention at this time.
+
+## Activity:
+
+Since the last report:
+ - Now that we're a TLP, we updated our maven artifacts to be under the
+   org.apache Java namespace and group ID.
+
+ - Released Apache Kudu 0.10.0, our first release as a TLP.
+
+ - Currently planning for our 1.0.0 release for mid September.
+
+## Health report:
+
+ - Activity on mailing lists, JIRA, and git seems to be pretty stable.
+   Some developers were quieter than usual over the proceeding couple
+   months due to personal reasons and summer travel, but have
+   re-appeared and begun contributing again.
+
+ - Mailing list subscriber count is continuing to grow at a healthy pace
+   (dev +20%, reviews +39%, user +31% in the last three months).
+
+ - This month we committed first patches from three new brand new
+   contributors.
+
+## PMC changes:
+
+ - Currently 15 PMC members.
+ - New PMC members:
+    - Alexey Serbin was added to the PMC on Tue Sep 13 2016
+    - William Berkeley was added to the PMC on Tue Sep 13 2016
+
+## Committer base changes:
+
+ - Currently 15 committers.
+ - New committers:
+   - Alexey Serbin was added as a committer on Wed Sep 14 2016
+   - William Berkeley was added as a committer on Wed Sep 14 2016
+
+## Releases:
+
+ - August 22, 2016: Apache Kudu 0.10.0 released.</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#attachment-AK">2016-08-17</a> &mdash; Todd Lipcon<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Kudu is a distributed columnar storage engine built for the
+Apache Hadoop ecosystem.
+
+## Activity:
+
+* Graduated from the Incubator in July, 7.20.2016.
+* Press and blog post went out announcing Apache Kudu as TLP
+* Discussing started regarding our first release out of incubation
+  targeting 0.10.0 release candidate sometime in August
+
+## Issues
+
+No major issues at this time
+
+## Community
+Latest Additions:
+
+* PMC addition:            Established as a TLP 7.20.2016
+* Contributor addition:  Binglin Chang, 4.4.2016
+
+### Issue backlog status since last report:
+
+* Created:   115
+* Resolved:  76
+
+### Mailing list activity since last report:
+
+* @dev    1369 messages
+* @user   237 messages
+
+## Releases
+Last release: 0.9.1-incubating, Release Date: 6.30.2016</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#kudu">2016-05-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>Kudu is a distributed columnar storage engine built for the Apache Hadoop
+ecosystem.
+
+Kudu has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Build a more diverse developer and user community
+2. Migrate our web site under apache.org
+3. Continue to make regular Apache releases
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+None.
+
+How has the community developed since the last report?
+
+The PPMC invited Binglin Chang as a new committer and PPMC member. Binglin
+has continued to increase his involvement and some of his colleagues are
+now becoming more involved as well.
+
+Since the last report, we had contributions from several new contributors,
+including five new contributors from outside Cloudera (the initial code
+grantor). Of those, two were substantial pieces of new functionality: a
+new sink to ingest data from Apache Flume, and an improved integration
+with Apache Spark. We hope that the authors of these contributions will
+continue to be involved in the community and grow into committers.
+
+In March, one of our mentors approached the development community with
+some ideas to make the project more approachable for developers. As a
+result of this, we've been working on a few action items:
+
+1) We started a project blog and have been posting weekly updates on
+   development progress as well as more detailed posts on new features or
+   project news.  We've heard from community members that this is an easy
+   way to track the project without subscribing to high-volume dev lists.
+
+2) Our dev@ list is currently very noisy with a lot of code review
+   comments.  For more casual contributors this can be overwhelming as
+   code review is intermingled with higher level project discussions. The
+   community discussed the issue and decided to split the code review
+   traffic to a new mailing list (currently awaiting infra to create it)
+
+3) We've started an informal policy of emailing the dev list with a
+   heads-up whenever any new larger feature first shows up on gerrit or
+   JIRA, to make it easier for people to give input on large items without
+   having to see every bug fix or small improvement. For example, whenever
+   design discussion starts on a new feature, the contributor sends a
+   'heads-up' email to dev@.
+
+Development activity continues to be healthy. Mailing list traffic for the
+dev list in April and May was similar to the preceding months. Patch
+contribution level is also fairly stable (50-80 commits/month) with lulls
+around releases as people focus on release testing, documentation, etc.
+
+User mailing list traffic is steadily increasing in quantity and
+diversity: 108 messages in April vs 51 in March, 40 in Feb. April saw 26
+distinct people contribute to the user list discussion vs 15 in Feb.
+Website traffic also indicates growing interest, with April having 30%
+more traffic than Feb.
+
+In the last two months, Kudu-related talks were delivered in San
+Francisco, San Jose, Beijing, Boston, DC, Detroit, London, and Dublin.
+More talks are scheduled for the upcoming months at ApacheCon Big Data,
+Strata/Hadoop World, Berlin Buzzwords, and various local meetups.
+
+How has the project developed since the last report?
+
+Since the last report, we've accomplished the following milestones:
+
+- We released Apache Kudu 0.7.1-incubating on 3/9/2016 to fix a few issues
+  found in the 0.7.0 release.
+- We released Apache Kudu 0.8.0-incubating on 4/10/2016 with various new
+  features and improvements.
+
+Date of last release:
+
+April 10, 2016: Apache Kudu 0.8.0-incubating
+
+When were the last committers or PMC members elected?
+
+- Binglin Chang was added as a committer and PPMC member on April 4, 2016.
+
+Signed-off-by:
+
+[X](kudu) Jake Farrell
+[ ](kudu) Brock Noland
+[ ](kudu) Michael Stack
+[ ](kudu) Jarek Jarcec Cecho
+[ ](kudu) Chris Mattmann
+[ ](kudu) Julien Le Dem
+[ ](kudu) Carl Steinbach</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#kudu">2016-03-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>Kudu is a distributed columnar storage engine built for the Apache Hadoop
+ecosystem.
+
+Kudu has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Build a more diverse developer and user community
+2. Migrate our web site under apache.org
+3. Continue to make regular Apache releases
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+How has the community developed since the last report?
+
+- In February, we only received one patch from a new contributor (3 total
+  from non-committers). We're continuing to focus on building a more
+  diverse developer community.
+
+  Although recruiting new contributors to Kudu itself have been slow, we
+  had community members report beginnings of a Presto integration, an
+  Apache Flume sink, and Rust language bindings. We are considering
+  whether it makes sense to develop these things within the Kudu project
+  or external locations.
+
+- Overall development velocity continues to be pretty good: 94 patches
+  committed since the last report, representing about 3.5kloc of new code
+  and 4kloc of changes.  This is slightly down from last month, as we
+  spent a bit more time on managing our first release and fixing bugs
+  rather than adding new features.
+
+  Dev list traffic is similar to January (1032 messages vs 1144 in Jan).
+
+- Community members continue to give public talks about Kudu at various
+  conferences and meetups. Talks were delivered at conferences or meetups
+  in Tokyo (x2), Sunnyvale, Krakow, San Francisco (x2), and Seattle. More
+  are planned for March.
+
+  We are also encouraged that at least two Kudu meetup talks were
+  delivered by new members of the community outside the core development
+  team. We hope to see the "grassroots community" trend continue.
+
+- The public Kudu Slack channel continues to be popular. It has grown from
+  116 members last month to 150 this month. Discussion between users and
+  devs is quite active, with daily participation from a global community
+  (USA, China, Poland, Japan, et al). Many users seem to prefer this
+  method over the traditional user mailing list.
+
+How has the project developed since the last report?
+
+Since the last report, we've accomplished the following milestones:
+
+- We successfully migrated our issue tracking to the Apache JIRA. Special
+  thanks to Gavin on the infra team and Mike Percy on the Kudu project for
+  hard work on this transition.
+
+- We cleaned up our license documentation and successfully published our
+  first official release as an incubating project (0.7.0)!
+
+Date of last release:
+
+Feb 25, 2016: Apache Kudu 0.7.0-incubating
+
+When were the last committers or PMC members elected?
+
+None since initial incubation.
+
+Signed-off-by:
+
+[ ](kudu) Jake Farrell
+[ ](kudu) Brock Noland
+[X](kudu) Michael Stack
+[ ](kudu) Jarek Jarcec Cecho
+[X](kudu) Chris Mattmann
+[X](kudu) Julien Le Dem
+[ ](kudu) Carl Steinbach
+
+Shepherd/Mentor notes:
+
+KUDU is very active. We need to get our website done and branded
+as an Incubator and eventually TLP site. Good progress.</pre>
+<h3 id="2016-02-17"><a href="2016/board_minutes_2016_02_17.html#kudu">2016-02-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-02-17" title="Permalink">&para;</a></h3>
+<pre>Kudu is a distributed columnar storage engine built for the Apache Hadoop
+ecosystem.
+
+Kudu has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Continue to move over infrastructure (JIRA, etc) to ASF
+  2. Build a more diverse development and user community
+  3. Perform releases under the ASF
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  None.
+
+How has the community developed since the last report?
+
+  - In January, we have received patches from three new contributors.  The
+    patches were of varying size (from trivial to quite significant) but
+    we're encouraged that new developers are finding the patch submission
+    process approachable.
+
+  - Overall &gt;110 patches were committed in January from 11 developers
+    representing three organizations. Discounting some large patches which
+    replaced our copyright boilerplate, license notices, etc, around
+    10-12kloc were changed in January. This is a substantial increase
+    compared to December which had only 29 patches, representing less than
+    1000 lines of changed code.
+
+    Lines of code are not a primary metric we track, but the above shows
+    that the community is getting back into rapid and lively development
+    after a lull during the holiday season. This is also evident in the dev
+    list traffic (1084 messages so far in January).
+
+  - Community members continue to give public talks about Kudu at various
+    conferences and meetups. Talks were delivered at meetups in Atlanta and
+    Palo Alto, and more are being scheduled for the coming months.
+
+  - The public Kudu Slack channel has proven fairly popular among both the
+    developer and user communities. The group now has 116 members, of which
+    ~20 are typically active on an average weekday.
+
+How has the project developed since the last report?
+
+  Since the last report, we've accomplished the following milestones:
+
+  - We set up a workflow and scripting for committers to easily push work
+    that has been reviewed on Gerrit into our official ASF repository. We
+    are following the best practices established by the AsterixDB podling.
+
+  - We moved over our user and developer discussions to ASF mailing lists
+    and discontinued usage of our old Google Groups. Migration of JIRA is an
+    ongoing project which we hope to close out this coming month.
+
+  - We set up publicly-accessible precommit builds so that non-Cloudera
+    contributors can see automated test results for their contributions.
+
+  - We adjusted our licensing boilerplate and documentation to comply with
+    our understanding of ASF policies. We also started to build scripting
+    for doing ASF-style source releases. We are planning on doing our first
+    release in the incubator in early Feb.
+
+Date of last release:
+
+  None under the ASF. Outside of the ASF, we released 0.6.0 on 11/24/2015.
+
+When were the last committers or PMC members elected?
+
+  None since initial incubation.
+
+Signed-off-by:
+
+  [x](kudu) Jake Farrell
+  [ ](kudu) Brock Noland
+  [x](kudu) Michael Stack
+  [ ](kudu) Jarek Jarcec Cecho
+  [ ](kudu) Chris Mattmann
+  [ ](kudu) Julien Le Dem
+  [ ](kudu) Carl Steinbach
+
+Shepherd/Mentor notes:</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#kudu">2016-01-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>Kudu is a distributed columnar storage engine built for the Apache Hadoop
+ecosystem.
+
+Kudu has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Move development to the Apache-hosted git repository, bug tracking, and
+   code review.
+2. Build a more diverse development and user community
+3. Perform releases under the ASF
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None so far.
+
+How has the community developed since the last report?
+
+- The development community has remained about the same since the initial
+  proposal, with overall code contribution levels a bit lower than
+  historical averages due to the end-of-year holidays.
+- Xiaomi reported that they are now running Kudu in a production use case
+  on ~70 nodes ingesting 10B rows/day. This is Kudu's first known
+  production use case, and we expect continuing and increasing
+  participation from developers at Xiaomi.
+- To spread the word about Kudu, various community members have given a
+  number of talks over the last 6 weeks, including: Strata/Hadoop World
+  (Singapore), Big Data Tech Con (Beijing), Shanghai Streaming Meetup,
+  Korea Big Data Think Tank (Seoul), San Francisco Spark Hackers, The Hive
+  Big Data Think Tank (Palo Alto), Charlotte Hadoop User Group, Cloudera
+  World Tokyo, Big Data Warehousing Meetup (NYC), and more.
+- Members of the Kudu community met up with Apache Drill contributors and
+  built an initial version of Kudu/Drill integration. We anticipate
+  further collaboration with Drill and other ASF TLPs.
+
+How has the project developed since the last report?
+
+This is our first report since incubation. In the past month, we've
+accomplished a few milestones:
+
+- filed an SGA as well as ICLAs for initial committers
+- granted karma, created mailing lists, and subscribed mentors/committers
+- updated our web site to comply with ASF branding
+- filed INFRA requests to start working on git and JIRA migration
+  (INFRA-10959, INFRA-10983)
+
+Progress has slowed in the second half of December due to the holiday
+season, but we anticipate picking momentum back up in January.
+
+Date of last release:
+
+None under the ASF. Outside of the ASF, we released 0.6.0 on 11/24/2015.
+
+When were the last committers or PMC members elected?
+
+None since initial incubation.
+
+Signed-off-by:
+
+[X](kudu) Jake Farrell
+[ ](kudu) Brock Noland
+[x](kudu) Michael Stack
+[ ](kudu) Jarek Jarcec Cecho
+[x](kudu) Chris Mattmann
+[ ](kudu) Julien Le Dem
+[ ](kudu) Carl Steinbach
+
+Shepherd/Mentor notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

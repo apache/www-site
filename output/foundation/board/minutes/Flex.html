@@ -1,0 +1,3209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Flex | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Flex';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Flex';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Flex</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="flex">Flex<a class="headerlink" href="#flex" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023-03-22</td>
+<td><a href="2023/board_minutes_2023_03_22.html#section-7A">Appointed Harbs</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2019-01-16</td>
+<td><a href="2019/board_minutes_2019_01_16.html#section-7C">Appointed Olaf Kr&uuml;ger</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2017-09-20</td>
+<td><a href="2017/board_minutes_2017_09_20.html#section-7F">Appointed Tom Chiverton</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2012-12-19</td>
+<td><a href="2012/board_minutes_2012_12_19.html#section-7D">Appointed Alex Harui</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2012-12-19</td>
+<td><a href="2012/board_minutes_2012_12_19.html#section-7D">Establish the Apache Flex Project</a></td>
+<td>special order</td>
+<td>no outcome recorded</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#section-6Y">2026-08-19</a> &mdash; Harbs<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#section-6Y">2026-06-17</a> &mdash; Harbs<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-AC">2026-04-15</a> &mdash; Harbs<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: Dormant Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (13 years ago) There are currently 67
+committers and 45 PMC members in this project. The Committer-to-PMC ratio is
+roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+Some work as done recently related to BlazeDS. There is a release of that in
+progress
+
+## Community Health:
+There is not a lot of activity, but PMC members are still responsive when
+necessary.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#section-6Z">2026-03-18</a> &mdash; Harbs<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-AB">2025-12-17</a> &mdash; Harbs<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: Stable Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (13 years ago) There are currently 67
+committers and 45 PMC members in this project. The Committer-to-PMC ratio is
+roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+There was work done recently by one PMC member to update documentation which
+used to be hosted by Adobe.
+
+## Community Health:
+There has been a few emails to the lists. Although it's been quiet there is
+still enough PMC to handle anything which comes up.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-X">2025-09-24</a> &mdash; Harbs<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: For the first time in years, one of the PMC members is
+doing work to update some of the components.
+
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (13 years ago) There are currently 67
+committers and 45 PMC members in this project. The Committer-to-PMC ratio is
+roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+There was an uptick in activity this month due to work being done.
+
+## Community Health:
+The community is quiet but stable. There was discussion a couple of months ago
+about possibly retiring the project and the consensus was that it's not
+appropriate at this time.</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-V">2025-08-20</a> &mdash; Harbs<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: Stable and very little activity Issues for the board:
+None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (13 years ago) There are currently 67
+committers and 45 PMC members in this project. The Committer-to-PMC ratio is
+roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+No change. We missed filing the report the last two months. There was a brief
+discussion about retiring the project a few weeks ago. One PMC member
+expressed a desire to implement some new features. The consensus was that
+there was no reason to retire the project at this time.
+
+## Community Health:
+There has been very little activity, but there is clearly still enough of the
+PMC around to maintain the project.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#section-6AC">2025-07-16</a> &mdash; Harbs<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#section-6V">2025-06-18</a> &mdash; Harbs<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-W">2025-03-19</a> &mdash; Harbs<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: Stable with little activity
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (12 years ago)
+There are currently 67 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+There has been almost no activity in the last quarter
+
+## Community Health:
+No change in community health. There were a couple of emails as well as a
+single Github PR.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-W">2024-12-18</a> &mdash; Harbs<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: Stable with little activity
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (12 years ago)
+There are currently 67 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+No activity in the last quarter.
+    Apache Flex BlazeDS 4.8.0 was released on 2023-04-17.
+    flex-maven-tools/flex-sdk-converter 1.1.0 was released on 2023-02-20.
+    Install Apache Flex 3.3.2 was released on 2018-07-09.
+
+## Community Health:
+There has been no activity in the last quarter. There's nothing significant
+to report here.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-U">2024-09-18</a> &mdash; Harbs<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: The project is stable with little activity.
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (12 years ago)
+There are currently 67 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+There has been very little activity in the last quarter.
+
+## Community Health:
+There has been no changes in the community. Almost no email activity, but
+there was two PRs closed.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-W">2024-06-19</a> &mdash; Harbs<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: Project is stable
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (11 years ago)
+There are currently 67 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+There was an issue with spam going undetected to the commits list. Apparently
+noone on the PMC was subscribed to that list and spam protection was not
+turned on. Infra turned on spam protection and at least one PMC member is now
+subscribed to that list.
+
+## Community Health:
+Email activity has been very light. There has been little change for a long
+time.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-Z">2024-04-17</a> &mdash; Harbs<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: The project is stable with little activity
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (11 years ago)
+There are currently 67 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+There is little activity. There were some commits this quarter updating
+supported versions.
+
+## Community Health:
+There was a slight uptick in activity this quarter, but it's still very low
+volume.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#section-6W">2024-03-20</a> &mdash; Harbs<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-AF">2024-01-17</a> &mdash; Harbs<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: No recent ativity
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (11 years ago)
+There are currently 67 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+Recent releases:
+
+    Apache Flex BlazeDS 4.8.0 was released on 2023-04-17.
+    flex-maven-tools/flex-sdk-converter 1.1.0 was released on 2023-02-20.
+    Install Apache Flex 3.3.2 was released on 2018-07-09.
+
+## Community Health:
+There has not been a lot of community activity.
+
+There was almost no activity on the dev@ list this past quarter.
+Some light discussion on the users@ list.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#section-6Z">2023-12-20</a> &mdash; Harbs<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-Y">2023-09-20</a> &mdash; Harbs<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: The project is stable with little activity
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (11 years ago)
+There are currently 68 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+The is little activity. There was a bit of work done on BlazeDS this quarter
+and the website was updated with some BlazeDS information.
+- Apache Flex BlazeDS 4.8.0 was released on 2023-04-17.
+- flex-maven-tools/flex-sdk-converter 1.1.0 was released on 2023-02-20.
+- Install Apache Flex 3.3.2 was released on 2018-07-09.
+
+## Community Health:
+No significant change. There has been a slight increase in activity this
+quarter mostly related to BlazeDS.
+
+- dev@flex.apache.org had a 18% increase in traffic in the past quarter (26
+  emails compared to 22)
+- 1 issue opened in JIRA, past quarter (100% increase)
+- 22 commits in the past quarter (175% increase)
+- 4 code contributors in the past quarter (no change)
+- 4 PRs opened on GitHub, past quarter (33% increase)
+- 3 PRs closed on GitHub, past quarter (300% increase)</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-AB">2023-06-21</a> &mdash; Harbs<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Project Status:
+Current project status: Stable
+Issues for the board: None
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (10 years ago)
+There are currently 68 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Dove on 2023-03-03.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+A security update of BlazeDS was released on 2023-04-17.
+
+## Community Health:
+The community is largely unchanged. There has been little activity since the
+chair change and the BlazeDS release.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-Y">2023-03-22</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+No issues at this time.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 There are currently 68 committers and 46
+PMC members in this project. Of those PMC members an estimated 5 or 6 are
+active.
+
+Community changes, past quarter:
+- Greg Dove was added as a PMC member.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+The project is stable. There is a need to update BlazeDS for security updates
+and support more modern dependencies. One necessary dependency was released on
+February 21. There is currently an ongoing vote to release a new version of
+BlazeDS. Harbs was voted and requested to become the new chair pending the
+upcoming board meeting.
+
+## Community Health:
+The project is stable and there's little activity. There is little discussion.
+It took longer than desired to fix the BlazeDS issue. That's mostly because
+very few PMC members have experience with that piece of code. Most of the
+recent discussion was involving BlazeDS and switching the chair.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-Y">2023-01-18</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+BlazeDS Log4J dependencies
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (10 years ago)
+There are currently 68 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+Some guys are working on a BlazeDS release in order to fix the Log4J issues.
+https://lists.apache.org/thread/5mjwoc6tt1wcq24hkwlfv18y99f92ppr
+
+## Community Health:
+There is nearly no mailing list activity at the Flex lists. Some Flex related
+discussions are held at the Apache Royale lists. Olaf Kr&uuml;ger has resigned as
+chairman, Harbs is the only one who has offered to take on the task so far:
+https://lists.apache.org/thread/s70fn0fjopr5s7sx096wcfmvvx7j3ccz
+
+Note from Olaf: I am totally inactive on the Flex project since a very long
+time. It looks like the remaining community still wants to keep the project
+alive instead of retiring it.
+I have done my best to prepare this and previous reports.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#section-6AA">2022-12-21</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-Y">2022-10-19</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (10 years ago)
+There are currently 68 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+No changes have been made to the Flex framework for a long
+time.
+
+## Community Health:
+There is nearly no mailing list activity at the Flex lists. Some Flex related
+discussions are held at the Apache Royale lists.
+The project is searching for a new chair.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#section-6AB">2022-09-21</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-AA">2022-06-15</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (9 years ago)
+There are currently 68 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+No changes have been made to the Flex framework for a long
+time and it is unlikely that another release will appear.
+We should think about retiring the project.
+
+## Releases:
+- Apache Flex SDK 4.16.1 on 2017-11-25
+- Apache Flex Installer 3.3.2 on 2018-07-14.
+
+## Community Health:
+During the last quarter, there was no mailing list activity at dev and nearly
+no activity at users.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-X">2022-03-16</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (9 years ago)
+There are currently 68 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+No changes have been made to the Flex framework for a long
+time and it is unlikely that another release will appear.
+Until now, no effort has been started in order to archive the project.
+
+## Community Health:
+During the last quarter, there was no mailing list activity at dev and nearly
+no activity at users.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-AC">2021-12-15</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (9 years ago)
+There are currently 68 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+No changes have been made to the Flex framework for a long
+time and it is unlikely that another release will appear.
+We maybe should think about archiving the project in 2022.
+
+## Community Health:
+During the last quarter, there was nearly no mailing list activity at users
+and dev.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-AB">2021-09-15</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (9 years ago)
+There are currently 68 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+No changes have been made to the Flex framework for a long
+time and it is unlikely that another release will appear.
+
+## Community Health:
+During the last quarter, there was nearly no mailing list activity at users
+and dev.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-Y">2021-06-16</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+There are no issues requiring board attention
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (8 years ago)
+There are currently 68 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+No changes have been made to the Flex framework for a long
+time and it is unlikely that another release will appear.
+
+## Community Health:
+Even the daily mailing list activity is decreasing,
+users still come back when issues needs to be resolved.</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-Z">2021-03-17</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive applications that deploy to desktops
+and devices (including smartphones, tablets and tv)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (8 years ago)
+There are currently 68 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+Flash has been blocked by Adobe since January 2021 and is therefore no longer
+available within the browser. The only remaining supported runtime is AIR,
+maintained by Harman. No changes have been made to the Flex framework for a long
+time and it is unlikely that another release will appear.
+
+## Community Health:
+Even the daily mailing list activity is decreasing,
+users still come back when issues needs to be resolved.</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#attachment-W">2020-12-16</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv).
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (8 years ago).
+There are currently 69 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+The website migration off the Apache CMS is still in process.
+The installer was broken and has been fixed.
+
+## Community Health:
+The community is trying to help each other wherever it can, even if only a few
+active users are left.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-Y">2020-09-16</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Flex project is to create and maintain software
+related to the development of expressive web applications that deploy to all
+major browsers, desktops and devices (including smartphones, tablets and tv)
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (8 years ago)
+There are currently 69 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+The community is evaluating options of migrating the Flex website. The current
+website is based on the Apache CMS which reaches its end-of-life.
+
+## Community Health:
+A discussion about starting the process to attic the Flex project begun. There
+was no vote about it, but it seems that there's a consensus to not start the
+attic process as long as Harman will support Flex/AIR and as long our
+community is able to meet the Apache criteria for an active project.</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-Z">2020-06-17</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop. Because the
+FlashPlayer reaches its EOL at the end of 2020, we won't be able to
+target the browser with Flex after 2020.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (7 years ago)
+There are currently 69 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+After a few uncertainties, it turned out that Harman feels obliged to pay
+attention to Flex in case of AIR updates. Adobe has removed the entire Flex,
+AIR and Flash documentation from their website and put it into an accessable
+archive. The community started a discussion about saving this stuff and making
+it available through Apache.
+
+## Community Health:
+There is nearly no activity on the dev list. On the users list, questions
+about the Flex framework itself are getting fewer. Most of the users list
+activity is related to AIR, recurring issues with the Flex installer and
+migration paths.</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#attachment-Z">2020-03-18</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop. Because the
+FlashPlayer reaches its EOL at the end of 2020, we won't be able to
+target the browser with Flex after 2020.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (7 years ago)
+There are currently 69 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+The latest AIR update breaks Flex.
+The community is discussing how to fix this issue.
+
+## Community Health:
+Even the daily mailing list activity is decreasing, users still come back when
+issues needs to be resolved.</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#attachment-W">2019-12-18</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop. Because the
+FlashPlayer reaches its EOL at the end of 2020, we won't be able to
+target the browser with Flex after 2020.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Flex was founded 2012-12-19 (7 years ago)
+There are currently 69 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Olaf Kr&uuml;ger on 2017-08-28.
+- No new committers. Last addition was Greg Dove on 2016-09-07.
+
+## Project Activity:
+The "flex-dk-converter-maven-extension" was released in order to simplify Flex
+and Apache Royale builds. With this release current projects using this
+extension can simplify the command line instructions by removing "-s
+settings-template.xml" and not depending on that xml file anymore. That makes
+the build process less verbose and more easy for the users.
+
+## Community Health:
+Activity on users list is still decreasing. Activity on dev list is
+increasing, mainly because of the latest Maven related activities.</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#attachment-Y">2019-09-18</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Flex runtimes
+The available, free to use Flex runtimes are the Adobe Flash Player and Adobe
+AIR. In 2017, Adobe already announced the EOL of the Flash Player for the end
+of 2020. Since June 2019, Harman has undertaken AIR platform support and
+feature development. Harman provides AIR on a commercial basis, with a free
+version available for certain eligible individuals/companies. [1] Users can
+subscribe to the Harman mailing list in order to get the latest AIR related
+news.
+
+## Activity:
+Activity on the mailing lists among the users decreased by about an average of
+50% the previous three months. It's obvious that the upcoming EOL of the
+FlashPlayer has an impact on Flex and its user base. Some folks migrate to AIR
+and stick with Flex, others porting their apps to other technologies.
+
+## PMC changes:
+- Currently 45 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Olaf Kr&uuml;ger on Mon Aug 28 2017
+
+## Committer base changes:
+- Currently 69 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Greg Dove at Wed Sep 07 2016
+
+## Releases:
+- Apache Flex SDK 4.16.1 on 2017-11-22
+- Apache Flex Installer 3.3.2 on 2018-07-09.
+
+## JIRA activity:
+- 3 JIRA tickets created in the last 3 months
+- 0 JIRA tickets closed/resolved in the last 3 months
+
+
+[1] https://airsdk.harman.com/</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#attachment-Z">2019-06-19</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Flex runtimes
+The available, free to use Flex runtimes are the Adobe Flash Player and Adobe
+AIR.
+
+In 2017, Adobe already announced the EOL of the Flash Player for 2020.
+
+In May 2019, Adobe announced that it would transition ongoing platform support
+and feature development of AIR to Harman as of June 2019. [1][2]
+
+The community is discussing this profound change [3] and is waiting for more
+details to be published by Harman.
+
+## Activity:
+Activity on the mailing list among the users stayed the same as in the
+previous three months.
+
+## PMC changes:
+- Currently 45 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Olaf Kr&uuml;ger on Mon Aug 28 2017
+
+## Committer base changes:
+- Currently 69 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Greg Dove at Wed Sep 07 2016
+
+## Releases:
+- Apache Flex SDK 4.16.1 on 2017-11-22
+- Apache Flex Installer 3.3.2 on 2018-07-09.
+
+## JIRA activity:
+- 1 JIRA tickets created in the last 3 months
+- 0 JIRA tickets closed/resolved in the last 3 months
+
+
+
+[1] https://theblog.adobe.com/the-future-of-adobe-air/
+[2] https://services.harman.com/partners/adobe
+[3] http://apache-flex-users.2333346.n4.nabble.com/Adobe-AIR-Maintenance-and-support-changes-td17766.html</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#attachment-X">2019-03-20</a> &mdash; Olaf Kr&uuml;ger<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+Activity on the mailing list among the users stayed the same as in the
+previous three months. We are responding when users have problems with
+downloading the SDK due to changes related to the MD5 signature on the Adobe
+side.
+
+Repositories of the project were migrated to gitbox. A vote on the move to the
+github wiki and github issues has received no majority [1].
+
+There is an ongoing trademark issue that the PMC and trademarks are dealing
+with: The Xeptor issue is resolved, the MagicMotorsprot issue remains to be
+resolved.
+
+## PMC changes:
+- Currently 45 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Olaf Kr&uuml;ger on Mon Aug 28 2017
+- Dave Fisher resigned from PMC
+- Carol Frampton resigned from PMC
+- Olaf Kr&uuml;ger was approved as the new chair in January 2019
+
+## Committer base changes:
+- Currently 69 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Greg Dove at Wed Sep 07 2016
+
+## Releases:
+- Apache Flex SDK 4.16.1 on 2017-11-22
+- Apache Flex Installer 3.3.2 on 2018-07-09.
+
+## JIRA activity:
+- 3 JIRA tickets created in the last 3 months
+- 0 JIRA tickets closed/resolved in the last 3 months
+
+[1]
+http://apache-flex-development.2333347.n4. nabble.com/Vote-Moving-JIRA-issues-and-Confluence-Wiki-to-GitHub-td65616.html</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#attachment-Y">2019-01-16</a> &mdash; Tom Chiverton<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+## Issues:
+There are no issues requiring board attention at this time.
+## Activity:
+Activity on mailing list among the users stayed the same as in previous three
+months. We are taking care if users have problems with downloading SDK in case
+of changes related to MD5 signature on Adobe side. There is an ongoing
+trademark issue that the PMC and trademarks are dealing with.
+## PMC changes:
+- Currently 47 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Olaf Kr&uuml;ger on Mon Aug 28 2017
+- Scott Guthmann stepped down from the PMC due to changing careers
+- Tom Chiverton has posted at 2018-12-12 at private@ that he wants to step
+  aside as chair
+- The community has proposed Olaf Kr&uuml;ger as new chair
+## Committer base changes:
+- Currently 69 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Greg Dove at Wed Sep 07 2016
+## Releases:
+- Apache Flex SDK 4.16.1 on 2017-11-22
+- Apache Flex Installer 3.3.2 on 2018-07-09.
+## JIRA activity:
+- 2 JIRA tickets created in the last 3 months
+- 1 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#section-6W">2018-12-19</a> &mdash; Tom Chiverton<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#attachment-W">2018-09-19</a> &mdash; Tom Chiverton<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop. RELEASES
+
+Apache Flex SDK Installer 3.3.2 - a bug fix release for an issue on Windows
+with large downloads. In order to work around this issue, the 32-bit based
+installer runs a 64-bit version of the installer now.
+
+Older Releases:
+
+-Apache Flex SDK 4.16.1 was released on 2017-11-22
+-Apache Flex BlazeDS 4.7.3 was released on 3/31/17.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+
+ACTIVITY &amp; COMMUNITY
+
+We are constantly helping users on dev and users list if any requests come
+out.
+
+Last PMC addition: Mon Aug 28 2017
+Last committer addition: Wed Sep 07 2016
+
+TRADEMARKS
+
+VP-Brand notified the PMC of three potentially infringing trademarks, and has
+instructed legal to oppose.
+
+
+SECURITY
+
+Nothing to report.</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#attachment-X">2018-06-20</a> &mdash; Tom Chiverton<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+
+Apache Flex SDK Installer 3.3.1 was released on 2018-04-18 - this was an
+update to match the latest Flash Player SDK.
+
+Older Releases:
+-Apache Flex SDK 4.16.1 was released on 2017-11-22
+-Apache Flex BlazeDS 4.7.3 was released on 3/31/17.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+
+ACTIVITY
+
+Dev@ has seen a recent uptick in emails, and user@ has also seen a sharp
+increase in posts. These seem to be driven largely by installer-related
+issues.
+
+Last PMC addition: Mon Aug 28 2017 (Olaf Kr&uuml;ger)
+
+Last committer addition: Wed Sep 07 2016 (Greg Dove)
+
+COMMUNITY
+
+The Apache Flex community feels like a calmer and more stable place, with
+conversations driven directly by features or bug reports rather than
+discussions over process. This suggests we're doing the right thing compared
+to a year ago.
+
+TRADEMARKS
+
+Nothing noted.
+
+SECURITY
+
+Nothing to report.</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#attachment-Y">2018-03-21</a> &mdash; Tom Chiverton<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+
+No new releases in the last quarter.
+
+Older Releases:
+
+-Apache Flex SDK Installer 3.3 was released on 2017-11-16
+-Apache Flex SDK 4.16.1 was released on 2017-11-22
+-Apache Flex BlazeDS 4.7.3 was released on 3/31/17.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+
+ACTIVITY
+
+There are still questions being asked on users@ and bugs being filed in JIRA.
+Activity on dev@ continues at it's reduced level since the Royal
+(https://royale.apache.org/) project split at the end of 2017.
+
+There are issues downloading a dependency from SourceForge.  It is an MPL
+binary from Adobe.
+
+A migration to SHA1 checksums (per the updated Apache policy) is being
+discussed.
+
+COMMUNITY
+
+Flex is using the Wiki to draft Board reports successfully.
+
+TRADEMARKS
+
+Nothing noted.
+
+SECURITY
+
+Nothing to report.</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#attachment-AB">2017-12-20</a> &mdash; Tom Chiverton<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+Apache Flex SDK Installer 3.3 was released on 2017-11-16 This update provides
+a fix for an out of memory exception when user downloads the Apache Flex SDK
+with Adobe AIR versions greater than 23 on the Windows platform.
+
+Apache Flex SDK 4.16.1 was released on 2017-11-22 The Apache Flex SDK 4.16.1
+is an update to Apache Flex SDK 4.16.0 that adds support for the latest Flash
+Player and AIR runtimes and some bug fixes. For more details, see the release
+notes at: http://www.apache.org/dist/flex/4.16.1/RELEASE_NOTES
+
+Older Releases:
+-Apache Flex BlazeDS 4.7.3 was released on 3/31/17.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+
+ACTIVITY
+Apache FlexJS was renamed to Royale and established as its own top level
+project at Apache. Since the Royale project was created, the dev community
+seems to be less active. The users list is still seeing questions quite often.
+
+The board approved a change of Flex PMC chair from Alex Harui to Tom Chiverton
+
+COMMUNITY
+Apache Flex investigates use of it's Wiki to draft Board reports. This should
+make the process easier and more co-operative for the community.
+
+The last committer was elected on 9/5/16.
+
+The last PMC member was elected on 8/28/17.
+
+We lost Christophe Herreman and Scott Delamater from the PMC. Both felt that
+they were inactive, and in at least one case no longer actively using Apache
+Flex.
+
+TRADEMARKS
+A company is promoting a software product called Flex that
+appears to be related to themes/styles for website visuals. Despite several
+attempts to contact them, they have not responded. The ASF VP Trademarks sent
+them an email on 11/3/16.  There has not been any more signs of confusion from
+the community.  Maybe we should just not pursue it any more?
+
+SECURITY
+Nothing to report.</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-AA">2017-09-20</a> &mdash; Alex Harui<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache FlexJS 0.8.0 was released on 6/25/17.
+
+-Apache Flex SDK 4.16.0 was released on 3/10/17.
+-Apache Flex BlazeDS 4.7.3 was released on 3/31/17.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache Flex Installer 3.2.0 was released on 6/23/15.
+
+
+ACTIVITY
+The past three months saw the release of Apache FlexJS 0.8.0.  This
+belatedly fulfilled our obligation to remove org.json dependencies from our
+releases.
+
+On 7/25, Adobe announced the end-of-life for Flash Player in browsers in 2020.
+This eliminates a significant runtime environment for Apache Flex. This news
+resulted in a slight increase in interest in FlexJS and some new features were
+developed in response to user requests.
+
+The drop in mailing list and commit activity reported in the prior quarter
+seems to have been temporary.
+
+The Apache Flex Installer assists users in the downloading and expanding
+of the runtime prerequisites such as the Adobe AIR SDK and is having running
+out of memory dealing with increasingly large artifacts from Adobe.  As such,
+there is a good chance that fewer successful installs are being tracked by the
+Apache Flex Installer as more folks may be opting for alternative ways to
+install our releases.
+
+COMMUNITY
+-Last committer as added on 9/5/16.  A discussion started last quarter about a
+new candidate but that candidate has not been very active lately so the
+discussion seems to have been suspended.
+-Olaf Kr&uuml;ger was added to the PMC on 8/28/17.
+-A resolution to make Tom Chiverton the next Apache Flex chair has been
+presented to the board.
+-A proposal to create a new top-level project called Apache Royale has been
+presented to the board.  Apache Royale will take responsibility for
+what is now Apache FlexJS and related repos.
+-Latest analytics include around 800 hits per day on the Website during the
+work week (less on weekends).  It used to be closer to 1000 hits per day but
+better than the 500 hits per day reported last quarter.
+-There were more than 2700 installs of Apache Flex 4.16.0 since its release in
+March 2017.
+
+TRADEMARKS
+-A company is promoting a software product called Flex that appears to be
+related to themes/styles for website visuals. Despite several attempts to
+contact them, they have not responded. The ASF VP Trademarks sent them an
+email on 11/3/16.  I did not see a response and their website is still up.
+What is the next step?
+
+SECURITY
+Nothing to report (finally).</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#attachment-Y">2017-06-21</a> &mdash; Alex Harui<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex SDK 4.16.0 was released on 3/10/17.
+-Apache Flex BlazeDS 4.7.3 was released on 3/31/17.
+-Preparing to vote on Apache FlexJS 0.8.0.
+
+-Apache FlexJS 0.7.0 was released on 9/7/16.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache Flex Installer 3.2.0 was released on 6/23/15.
+
+
+ACTIVITY
+The past three months saw the release of Apache Flex SDK 4.16.0 and
+Apache Flex BlazeDS 4.7.3, the latter addressing CVE-2017-5641. Apache Flex
+SDK 4.16.0 contained a fix for FLEX-35123, an XSS issue reported in prior
+board reports.  It is only exploitable in really old versions of Safari.  We
+did not get a CVE for it.  Maybe we should?  It seems almost more academic
+than actual.
+
+Christofer Dutz organized the FlexJS Summit at ApacheCon. Several committers
+met for the first time and reportedly had a great time.  A list of priorities
+for FlexJS and other products we release also came out of the summit.
+
+An attempt was made to get the Apache FlexJS 0.8.0 release out by the end of
+April in order to meet the org.json deadline, but many major bugs were found
+after feature freeze started on April 21 (known as "Last Call" on our dev@
+list).  We next tried to get the release out for ApacheCon, but as of May 31
+we are still fixing bugs.  There is something inefficient about the release
+process for Apache Flex releases.  As the release manager for Apache FlexJS
+0.8.0, it doesn't feel like the community focuses on trying to get the release
+out, but rather, reasons to put off the release.  The Apache Flex SDK 4.16.0
+only had 3 voters.  And after it went out, we found out that the installer
+didn't work in some common scenarios.  We are unable to reach quality in a
+timely manner.  There have been no new volunteers to be Release Manager for
+several years now.  Being RM is one of the things I dread doing.  As I (Alex
+Harui, PMC Chair) file this report, we still won't have a release out since a
+couple of PMC members did not bother to examine the artifacts during "Last
+Call", waited for the RC to be posted, and now want major restructuring of the
+release artifacts.
+
+Mailing list activity on dev@ dropped by 30% around the end of March and
+remains down.  Commit activity from folks who were active in the prior quarter
+is down as well.  I am hopeful that this is because one committer ran out of
+time to contribute recently and the others finished most of the work on the
+libraries they were working on and are now building apps for their employers
+on top of those libraries.
+
+COMMUNITY
+-Last committer as added on 9/5/16.  A discussion has started about a new
+candidate.
+-Yishay Weiss was added to the PMC on 1/20/17.
+-Latest analytics include a little less than 500 hits per day on the Website
+during the work week (less on weekends).  It used to be closer to 1000 hits
+per day.
+-There were more than 2700 installs Apache Flex 4.16.0 since its release in
+March 2017.
+-More than 130,000 people have run the Tour De Flex application.  Tour De Flex
+is a set of examples folks use to learn how to develop Flex applications.
+
+TRADEMARKS
+-A company is promoting a software product called Flex that appears to be
+related to themes/styles for website visuals. Despite several attempts to
+contact them, they have not responded. The ASF VP Trademarks sent them an
+email on 11/3/16.  I did not see a response and their website is still up.
+What is the next step?
+-Trademarks@ notified us that a company in Europe is applying to register the
+word FLEX for a software product that runs gas stations, but still might cause
+confusion.  The recommendation from trademarks@ and consensus from the Flex
+PMC is to have Apache counsel write them a nice letter asking them to limit
+the scope of their application to their industry.</pre>
+<h3 id="2017-03-15"><a href="2017/board_minutes_2017_03_15.html#attachment-V">2017-03-15</a> &mdash; Alex Harui<a class="headerlink" href="#2017-03-15" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+
+- Apache Flex FalconJX 0.7.0 was released on 9/7/16.
+- Voting still underway for Apache Flex SDK 4.16.0.
+- Preparing to vote on Apache Flex BlazeDS 4.7.3.
+
+- Apache Flex SDK 4.15.0 was released on 1/9/16.
+- Apache Flex BlazeDS 4.7.2 was released on 11/16/15.
+- Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+- Apache Flex Tool API 1.0.0 was released on 11/20/14
+- Apache Flex Squiggly 1.1 was released on 10/26/14
+- Apache Flex Installer 3.2.0 was released on 6/23/15.
+
+ACTIVITY
+
+The past three months saw further increase in committer activity
+around FlexJS.  FlexJS is the next generation of Flex that provides
+application developers with a highly productive framework and tool chain for
+developing web apps, mobile apps and desktop apps.  Traditional Flex
+applications require Adobe Flash/AIR runtimes (or tools to pre-compile them to
+Android/IOS).  FlexJS applications output HTML/JS/CSS and can even be used to
+create Apache Cordova applications.
+
+Christofer Dutz has taken the lead on the first ever FlexJS Summit at
+ApacheCon NA in Miami.  About 6 other PMC members have helped to get the word
+out, and proposed talks.  One new company announced on the dev list that they
+are planning to attend.  So far, no other new names have stated that they will
+attend.
+
+A few new names have appeared on the mailing list, indicating that interest is
+up.  There is at least one person we are watching as a potential committer
+candidate.
+
+COMMUNITY
+
+- Last committer as added on 9/5/16.
+- Yishay Weiss was added to the PMC on 1/20/17.
+- Latest analytics include a little less than 1000 hits per day on the website
+  during the work week (less on weekends).
+- There were more than 16000 installs of Apache Flex 4.15.0 since its release
+  in January 2016.
+- More than 115,000 people have run the Tour De Flex application.  Tour De
+  Flex is a set of examples folks use to learn how to develop Flex
+  applications.
+
+TRADEMARKS
+
+- A company is promoting a software product called Flex that appears to be
+  related to themes/styles for website visuals. Despite several attempts to
+  contact them, they have not responded. The ASF VP Trademarks sent them an
+  email on 11/3/16.  I did not see a response and their website is still up.
+  What is the next step?</pre>
+<h3 id="2016-12-21"><a href="2016/board_minutes_2016_12_21.html#attachment-V">2016-12-21</a> &mdash; Alex Harui<a class="headerlink" href="#2016-12-21" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+
+- Apache Flex FalconJX 0.7.0 was released on 9/7/16. Voting underway for
+  Apache Flex SDK 4.16.0.
+
+- Apache Flex SDK 4.15.0 was released on 1/9/16.
+- Apache Flex BlazeDS 4.7.2 was released on 11/16/15.
+- Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+- Apache Flex Tool API 1.0.0 was released on 11/20/14
+- Apache Flex Squiggly 1.1 was released on 10/26/14
+- Apache Flex Installer 3.2.0 was released on 6/23/15.
+
+ACTIVITY
+
+The past three months saw a significant increase in committer activity around
+FlexJS.  FlexJS is the next generation of Flex that provides application
+developers with a highly productive framework and tool chain for developing
+web apps, mobile apps and desktop apps.  Traditional Flex applications
+require Adobe Flash/AIR runtimes (or tools to pre-compile them to
+Android/IOS).  FlexJS applications output HTML/JS/CSS and can even be used to
+create Apache Cordova applications.
+
+A few new names have appeared, but none are at the point of being
+committer-candidates yet.  But two existing committers have jumped in, making
+significant contributions to the UI toolkit by creating a library with a
+Material Design look-and-feel.
+
+COMMUNITY
+
+- Greg Dove was added as a committer.
+- No new PMC members this quarter either.
+- Last PMC addition was Josh Tynjala on Wed Sep 16 2015. Flex has recently
+  attracted committers that show up for 3 months and just as we are thinking
+  they are ready for PMC nomination, they go quiet.  But I am encouraging one
+  PMC member to nominate one recent committer so hopefully that will happen
+  before the next report.
+- Latest analytics include a little less than 1000 hits per day on the
+  website during the work week (less on weekends).
+- There were more than 14,000 installs of Apache Flex 4.15.0 since its
+  release in January.
+- Almost 115,000 people have run the Tour De Flex application.  Tour De Flex
+  is a set of examples folks use to learn how to develop Flex applications.
+
+TRADEMARKS
+- A company is promoting a software product called Flex that appears to be
+  related to themes/styles for website visuals. Despite several attempts to
+  contact them, they have not responded. The ASF VP Trademarks sent them an
+  email on 11/3/16.  I did not see a response and their website is still up.
+  What is the next step?</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#attachment-W">2016-09-21</a> &mdash; Alex Harui<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex FalconJX 0.6.0 was released on 4/3/16. Voting underway for Apache
+Flex FlexJS/FalconJX 0.7.0.
+
+-Apache Flex SDK 4.15.0 was released on 1/9/16.
+-Apache Flex BlazeDS 4.7.2 was released on 11/16/15.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache Flex Installer 3.2.0 was released on 6/23/15.
+
+
+ACTIVITY The past three months saw the creation of the first FlexJS job!
+FlexJS is the next generation of Flex that provides application developers
+with a highly productive framework and tool chain for developing web apps,
+mobile apps and desktop apps.  Traditional Flex applications require Adobe
+Flash/AIR runtimes (or tools to pre-compile them to Android/IOS).  FlexJS
+applications output HTML/JS/CSS and can even be used to create Apache Cordova
+applications.  FlexJS continues to be the main focus of development.  The new
+job was created by the employer of a current committer and both are now
+contributing to FlexJS as part of their
+$dayjob.  Another committer-candidate has appeared as well, making significant
+contributions in the compiler, a place most folks don't like to go.  A release
+vote is underway for our 0.7.0 release that includes Maven artifacts for the
+first time, which was the highest voted JIRA wish for Flex.
+
+COMMUNITY
+-Yishaw Weiss was added as a committer.  Another vote on another candidate is
+in progress.
+-No new PMC members this quarter.
+-Last PMC addition was Josh Tynjala on Wed Sep 16 2015. We will probably
+promote a few new committers this quarter as we now have new committers that
+are more active.
+
+-Latest analytics include over 1000 hits per day on the website during the
+work week (less on weekends).
+-There were more than 11,000 installs of Apache Flex 4.15.0 since its release
+in January.
+-More than 100,000 people have run the Tour De Flex application.  Tour De Flex
+is a set of examples folks use to learn how to develop Flex applications.
+
+TRADEMARKS
+-A company is promoting a software product called Flex that appears to be
+related to themes/styles for website visuals. Despite several attempts to
+contact them, they have not responded. In June, we asked Trademarks@ for
+advice on next steps.  We have not heard back from Trademarks.</pre>
+<h3 id="2016-06-15"><a href="2016/board_minutes_2016_06_15.html#attachment-X">2016-06-15</a> &mdash; Alex Harui<a class="headerlink" href="#2016-06-15" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex FalconJX 0.6.0 was released on 4/3/16.
+
+-Apache Flex SDK 4.15.0 was released on 1/9/16.
+-Apache Flex BlazeDS 4.7.2 was released on 11/16/15.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache Flex Installer 3.2.0 was released on 6/23/15.
+
+
+ACTIVITY
+The past three months saw the first of what we hope are many "Apache
+FlexJS World Tour" events.  In early April we invited people to attend a one-
+day orientation and hackathon on FlexJS, a version of Flex that is independent
+from the Adobe Flash Platform.  Many folks attended on-line as well.  Some
+potential committers are hopefully among them.   In addition, 2 PMC members
+attended ApacheCon NA and reported larger than expected attendance.  Most
+activity seems to be centered around FlexJS, with the main focus being on
+Maven Integration, plus efforts to show that FlexJS is a more efficient way to
+build applications with other JS frameworks and even for building Apache
+Cordova apps.  New capabilities like XML support and source maps have also
+been added.
+
+COMMUNITY
+-Olaf Kr&uuml;ger was added as a committer.
+-No new PMC members this quarter.
+-Last PMC addition was Josh Tynjala on Wed Sep 16 2015.  Committers not on the
+PMC haven't been highly active, so we have not discussed promoting any of them
+to the PMC at this time.
+
+-Latest analytics include over 1000 hits per day on the website during the
+work week (less on weekends).
+-There were more than 7000 installs of Apache Flex 4.15.0 since its release in
+January.
+-There were more than 200 installs of Apache FlexJS 0.6.0 since its release in
+April.
+-Over 71,000 people have run the Tour De Flex application.  Tour De Flex is a
+set of examples folks use to learn how to develop Flex applications.
+
+TRADEMARKS
+-A company is promoting a software product called Flex that appears to be
+related to themes/styles for website visuals. Despite several attempts to
+contact them, they have not responded. We have asked Trademarks@ for advice on
+next steps.</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#attachment-Z">2016-03-16</a> &mdash; Alex Harui<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex SDK 4.15.0 was released on 1/9/16.
+
+-Apache FlexJS 0.5.0 was released on 11/14/15.
+-Apache Flex FalconJX 0.5.0 was released on 11/14/15.
+-Apache Flex BlazeDS 4.7.2 was released on 11/16/15.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache Flex Installer 3.2.0 was released on 6/23/15.
+
+
+ACTIVITY
+The past three months saw the release of Apache Flex SDK 4.15.0.  Bug fix
+activity continues on even after the release.  There seems to be gradually
+increasing interest in FlexJS, a version of Flex that is independent from
+the Adobe Flash Platform.  We continue to see new names with new
+questions.  Some potential committers are hopefully among them.  Three
+members of the PMC are hosting a FlexJS education and training event in
+San Francisco on April 4.  One committer is working on distributing FlexJS
+as an NPM module.  Work on Maven integration continues.
+
+3 PMC members had presentations accepted for ApacheCon NA.  The Flex
+community tried to coordinate a Client Track for ApacheCon with folks from
+the Cordova community, but apparently the Linux Foundation wasn't
+interested in having such a track since some presentations were rejected.
+
+A revamp of the flex.a.o website is underway.  It isn't ready for branding
+review just yet.
+
+CODE ADOPTION
+In the prior report we discussed the adoption of non-ASF code bases that
+are already licensed under ALv2.  I think the community will eventually
+undertake one or more of the adoptions utilizing advice from the board but
+it didn't happen this quarter simply from lack of a volunteer to make it
+happen.
+
+COMMUNITY
+-Andy Dufilie was added as a committer.
+-No new PMC members this quarter.
+-Last PMC addition was Josh Tynjala on Wed Sep 16 2015
+
+-A few PMC members were nominated for ASF membership.
+-Latest analytics include a little over 1000 hits per day on the
+website during the work week (less on weekends).
+-There were more than 3000 installs of Apache Flex 4.15.0 since its
+release in January.
+-Almost 65,000 people have run the Tour De Flex application.  Tour De Flex
+is a set of examples folks use to learn how to develop Flex applications.
+
+TRADEMARKS
+-In the last report, we reported that  a company is promoting a software
+product called Flex that appears to be related to themes/styles for
+website visuals. Despite several attempts to contact them, they have not
+responded.  We will start a thread on trademarks@ shortly to determine the
+next steps.
+-A trademark issue with a com.br website was handled and closed.</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#attachment-V">2015-12-16</a> &mdash; Alex Harui<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache FlexJS 0.5.0 was released on 11/14/15.
+-Apache Flex FalconJX 0.5.0 was released on 11/14/15.
+-Apache Flex BlazeDS 4.7.2 was released on 11/16/15.
+
+-Apache Flex SDK 4.14.1 was released on 3/30/15.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache Flex Installer 3.2.0 was released on 6/23/15.
+
+
+ACTIVITY
+The past three months saw continued activity related to FlexJS, a version
+of Flex that is independent from the Adobe Flash Platform. After the
+release in mid-November, mailing list activity related to FlexJS feels
+like it has reached new heights with new names posting. Another security
+issue was discovered in the BlazeDS 4.7.1 release resulting in the Blaze
+4.7.2 release. Meanwhile, a release manager has volunteered to release
+Apache Flex SDK 4.15.0 and there is activity around bug fixes to that
+code. Work on Maven integration continues. Mailing list traffic is down,
+but not an issue yet.
+
+At some point in time, a change to the CMS was made and when we updated
+our website with news of the FlexJS release, those changes affected the
+output from the mirrors.cgi and broke our installer. I was able to find a
+workaround and we'll have to eventually ship a new Installer release that
+uses JSON output from the cgi.
+
+3 PMC members presented a Flex track at ApacheCon EU and discussion are
+underway for ApacheCon NA.
+
+CODE ADOPTION
+Based on threads on general@incubator and legal-discuss, we are now
+discussing the notion of adopting non-ASF code bases that are already
+licensed under ALv2. One code base is Swiz which was approved for
+donation by vote over two year ago and reported in prior board reports but
+was never completed probably because the donor was having trouble tracking
+everyone down who needed to sign the Software Grant. The other is
+AS3Commons, which is currently under discussion leading to a vote.
+
+The understanding we have is that a Software Grant is not needed to accept
+these code bases since they are under ALv2. We will contact the major
+contributors from each code base to make sure there aren't conflicts or
+other objections to have Apache Flex adopt this code. There is no
+community around these code bases right now as the major contributors have
+moved on to other projects so we will accept responses from the major
+contributors as speaking for the community.
+
+COMMUNITY
+-Josh Tynjala was added as a PMC member.
+-A discussion is underway about a new committer.
+-Latest analytics include a little less than 1000 hits per day on the
+website during the work week (less on weekends).
+-There were more than 17,500 installs of Apache Flex 4.14.1 since its
+release about nine months ago.
+-Almost 85,000 people have run the Tour De Flex application. Tour De Flex
+is a set of examples folks use to learn how to develop Flex applications.
+
+TRADEMARKS
+-The apacheflex.com site we reported in the prior two reports seems to be
+gone. We never received any response to our request other than the site
+finally going away.
+-A PMC member reported that a company is promoting a software product
+called Flex that appears to be related to themes/styles for website
+visuals. I used their contact page to deliver the standard trademark
+violation template just before writing up this report so they haven't had
+a chance to respond.</pre>
+<h3 id="2015-09-16"><a href="2015/board_minutes_2015_09_16.html#attachment-V">2015-09-16</a> &mdash; Alex Harui<a class="headerlink" href="#2015-09-16" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex Installer 3.2.0 was also released on 6/23/15.
+-Apache Flex BlazeDS 4.7.1 was released on 8/6/15.
+
+-Apache Flex SDK 4.14.1 was released on 3/30/15.
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache FlexJS 0.0.2 was released on 7/17/14.
+-Apache Flex FalconJX 0.0.2 was released on 7/17/14.
+
+ACTIVITY
+The past three months saw continued activity related to FlexJS, a
+version of Flex that is independent from the Adobe Flash Platform.  Some
+interesting new features were added, such as integration with the IntelliJ IDE
+and the ability to write low-level JavaScript applications in ActionScript.
+Stabilizing the code for release has taken longer than expected, but I expect
+the vote to start in September.  Another distraction was responding to a CVE
+that resulted in the BlazeDS 4.7.1 release.  Meanwhile, there is activity
+around various bug fixes to other Apache Flex releases and better Maven
+integration.  Mailing list traffic is down, but not an issue yet.
+
+The recent changes to the mirrors.cgi broke our installer.  Infra has put in a
+temporary workaround, but we will be forced to release a newer installer that
+uses the newer mirror JSON.
+
+COMMUNITY
+-Joseph Labrecque was added as a committer.
+-A vote is about to start on a new PMC member.
+-Latest analytics include a little less than 2000 hits per day on the website
+during the work week (less on weekends).
+-There were more than 12,500 installs of Apache Flex 4.14.1 since its release
+about two months ago.
+-Almost 75,000 people have run the Tour De Flex application.  Tour De Flex is
+a set of examples folks use to learn how to develop Flex applications.
+
+TRADEMARKS
+-We discovered that yet another apacheflex.com site has been created. The last
+time (September 2013) it was resolved easily, but I guess someone else grabbed
+and is now using it. An email was sent, but no response. What should we do
+next?</pre>
+<h3 id="2015-06-17"><a href="2015/board_minutes_2015_06_17.html#attachment-Y">2015-06-17</a> &mdash; Alex Harui<a class="headerlink" href="#2015-06-17" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex SDK 4.14.1 was released on 3/30/15.
+-Apache Flex BlazeDS 4.7 was released on 3/6/15.
+
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache Flex Installer 3.1.0 was also released on 7/14/14.
+-Apache FlexJS 0.0.2 was released on 7/17/14.
+-Apache Flex FalconJX 0.0.2 was released on 7/17/14.
+
+ACTIVITY
+The past couple of months saw a dramatic increase in activity related to
+FlexJS, a version of Flex that is independent from the Adobe Flash
+Platform. Two new committers have joined in and at least two long-time
+committers increased their participation significantly. Meanwhile, other
+committers are working on the Installer, various bug fixes to other Apache
+Flex releases and better Maven integration.
+
+Adobe also donated a set of Flex documentation. That is being updated for
+our web site.
+
+COMMUNITY
+-Josh Tynjala and Kevin Godell were added as committers.
+-Latest analytics include a little less than 2000 hits per day on the website
+during the work week (less on weekends). We are seeing a slight downward
+trend.
+-There were more than 6000 installs of Apache Flex 4.14.1 since its release
+about two months ago.
+-Almost 60,000 people have run the Tour De Flex application. Tour De
+Flex is a set of examples folks use to learn how to develop Flex
+applications.
+
+TRADEMARKS
+-We discovered that yet another apacheflex.com site has been created.
+The last time (September 2013) it was resolved easily, but I guess
+someone else grabbed and is now using it.  We are currently drafting a
+&ldquo;friendly&rdquo; email that we will send to an email address on their web site.</pre>
+<h3 id="2015-03-18"><a href="2015/board_minutes_2015_03_18.html#attachment-Y">2015-03-18</a> &mdash; Alex Harui<a class="headerlink" href="#2015-03-18" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex SDK 4.14.0 was released on 1/26/14.
+-A vote for Apache Flex BlazeDS 4.7 was in progress.
+
+-Apache Flex Tour De Flex Component Explorer 1.2 was released on 11/28/14.
+-Apache Flex Tool API 1.0.0 was released on 11/20/14
+-Apache Flex Squiggly 1.1 was released on 10/26/14
+-Apache Flex Installer 3.1.0 was also released on 7/14/14.
+-Apache FlexJS 0.0.2 was released on 7/17/14.
+-Apache Flex FalconJX 0.0.2 was released on 7/17/14.
+
+ACTIVITY
+Activity in Apache Flex is becoming more diverse.  While there is still
+work going on fixing bugs in the existing Adobe Flash Platform-dependent
+code base, and on FlexJS, a version of Flex that is independent from the
+Adobe Flash Platform, the past three months saw contributions to the
+Installer, the preparation of a BlazeDS release, and discussion leading
+towards a PMD release, a new Installer release, and a 4.14.1 bug fix
+release.
+
+In the past two months, it feels like activity has slowed a bit:
+- The gap is widening between bugs filed vs bugs fixed and the bug fix
+  rate is slightly slowing.
+- We&rsquo;ve had two months of lower email traffic on dev@, but that might
+  just mean there are fewer long controversial discussions.
+- We only elected two new committers and didn&rsquo;t promote anyone to the PMC.
+
+IP Issues
+In the course of reviewing the 4.14.0 release, we found several IP issues,
+one with the release artifacts itself, and the other in one of our Git
+repos.
+
+The source artifact was missing attribution for some of the W3C code we
+bundle from Batik.  The binary artifact bundled other binaries and hadn&rsquo;t
+copied all of the content from NOTICE files from the bundled binaries.  We
+also found that some of the jar files in the binary artifact were missing
+or didn&rsquo;t have the right LICENSE and NOTICE files bundled into the
+artifact.
+
+We think we&rsquo;ve addressed all of these issues, but are wondering whether we
+have to go back and fix older releases.
+
+Also during the release review, a PMC member did a full review of one of
+the Git repos that has a subset of its files bundled into the source
+artifact.  He discovered that some of the files that don&rsquo;t go into the
+release had IP issues.  These files were brought in during incubation, but
+because they never got released, they never got a serious IP review.  I&rsquo;m
+wondering if we missed a step before graduation where we were supposed to
+review every file.  There are probably other files in other repos that
+might have the same issue.  What is the priority level on doing such a
+review?
+
+The main issue was that there was public domain content in some of the
+test media that didn&rsquo;t have attribution anywhere.  There was much debate
+on how to deal with the headers on some of these files.  There was also
+some content that was copyright to Adobe, the UN or NY Times.  This
+content has been replaced.  Adobe&rsquo;s legal team was notified since the
+donated code came from a SourceForge repo and thus had the same missing
+attribution.  Adobe chose a different way to provide attribution for the
+public domain content.
+
+Code Donation Update
+-Swiz donation is still pending.  The donor has not filed the paperwork.
+The main issue was collecting signatures from the many major
+Contributors who have all moved on to new things.
+
+COMMUNITY
+-Aaron Nash, Maxim Solovodnik were added as a committers.
+-Latest analytics include around 2000 hits per day on the website during
+the work week (less on weekends).  That&rsquo;s about the same as previous
+report.
+-There were more than 4,500 installs of 4.14.0 in the month its release.
+-More than 40,000 people have run the Tour De Flex application.  Tour De
+Flex is a set of examples folks use to learn how to develop Flex
+applications.
+-The number of people subscribed to the dev list has fallen from 854
+about a year ago to 799 now.</pre>
+<h3 id="2014-12-17"><a href="2014/board_minutes_2014_12_17.html#attachment-X">2014-12-17</a> &mdash; Alex Harui<a class="headerlink" href="#2014-12-17" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building
+Flash-based applications for mobile devices, the browser and
+desktop.
+
+RELEASES
+- Apache Flex Tour De Flex Component Explorer 1.2 was
+  released on 11/28/14.
+- Apache Flex Tool API 1.0.0 was released on 11/20/14
+- Apache Flex Squiggly 1.1 was released on 10/26/14
+- Apache Flex Tour De Flex Component Explorer 1.1 was
+  released on 9/24/14.
+- Apache Flex Squiggly 1.0 was released on 9/3/14
+
+- Apache Flex Installer 3.1.0 was released on 7/14/14.
+- Apache Flex SDK 4.13.0 was released on 7/16/14.
+- Apache Flex FlexUnit 4.2.0 was released on 4/13/14.
+- Apache FlexJS 0.0.2 was released on 7/17/14.
+- Apache Flex FalconJX 0.0.2 was released on 7/17/14.
+
+ACTIVITY
+Activity in Apache Flex is becoming more diverse.  While there is
+still work going on fixing bugs in the existing Adobe Flash
+Platform-dependent code base, and on FlexJS, a version of Flex
+that is independent from the Adobe Flash Platform, there has been
+more tangible activity working on Maven support for the various
+releases, contributions to the Installer, Tour De Flex, the
+Squiggly Spell Checking library, Text Layout Framework, Android
+and IOS skins, and more.
+
+In the past three months we've continued to see:
+- Continued JIRA activity (more bugs raised than resolved however)
+- New committers and potential committers.
+
+Code Donation Update
+- Swiz donation is still pending.  The donor has not filed the
+  paperwork.
+- Mahmoud Ali and Bruno Pacola donated the FlatSpark theme.
+
+COMMUNITY
+- Mahmoud Ali, Bruno Pacola, Curtis Aube, Neil Madsen and Jorge
+  Yabra were added as committers.
+- Tom Chiverton, Piotr Zarzycki, Chris Martin and Mihai Chira were
+  promoted from committer to PMC member.
+- Latest analytics include around 2000 hits per day on the website
+  during the work week (less on weekends).  That&rsquo;s about the same
+  as previous report.
+- There were more than 10,000 installs of 4.13.0 since its release.
+- More than 20,000 people have run the Tour De Flex application.
+  Tour De Flex is a set of examples folks use to learn how to
+  develop Flex applications.</pre>
+<h3 id="2014-09-17"><a href="2014/board_minutes_2014_09_17.html#attachment-V">2014-09-17</a> &mdash; Alex Harui<a class="headerlink" href="#2014-09-17" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex Installer 3.1.0 was also released on 7/14/14.
+-Apache Flex SDK 4.13.0 was released on 7/16/14.
+-Apache FlexJS 0.0.2 was released on 7/17/14.
+-Apache Flex FalconJX 0.0.2 was released on 7/17/14.
+-Apache Flex Tour De Flex Component Explorer was released on 8/21/14.
+
+ACTIVITY
+Activity in Apache Flex is becoming more diverse. While there is still
+work going on fixing bugs in the existing Adobe Flash Platform-dependent
+code base, and on FlexJS, a version of Flex that is independent from the
+Adobe Flash Platform, there has been more tangible activity working on
+Maven support for the various releases, another release of the Installer
+that better tracks why Apache Flex installs have a high failure rate, the
+donated Tour De Flex was released, a release of a Spell Checking library
+is in progress, and a committer and recently-added committer are working
+on TLF Table support in a GitHub fork.
+
+Also, we reconfigured both the Flex SDK and FlexJS SDK install scripts to
+use download servers that are not blocked in China, and had the install
+scripts localized to Chinese, enabling what we hope will eventually become
+a significant population of users. On our website, China is not too far
+behind the US as the most frequent visitors.
+
+Adobe is starting to shutdown some of its Flex-related web sites.  We
+had to reconfigure our installer to download some optional Flex
+dependencies from different servers, but installs of older Apache Flex
+releases are now broken.  One a good note, Adobe did install redirects
+from its version of Tour De Flex to ours, resulting in a significant
+boost in traffic and attention.
+
+In the past three months we've continued to see:
+- Continued JIRA activity (more bugs raised than resolved however)
+- New committers and potential committers.
+
+Code Donation Update
+-Swiz donation is still pending. The donor has not filed the paperwork.
+-Judah Frangipane donated the Radii8 code base. It is a tool to help
+Apache Flex users design their UI.
+
+COMMUNITY
+-Chris Martin, Darkstone and Judah Frangipane were added as committers
+-Latest analytics include around 2000 hits per day on the website during
+the work week (less on weekends). That's slightly down from before.
+-There were more than 4,000 installs of 4.13.0 in the 6 weeks since its release.
+-There were more than 120 installs of FlexJS in the 6 weeks since its release.
+-There have now been more than 60,000 installs of the Apache Flex SDK.</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#attachment-U">2014-06-18</a> &mdash; Alex Harui<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex SDK 4.12.0 was released on 3/10/14.
+-Apache Flex SDK 4.12.1 was released on 5/02/14.
+-Apache Flex Installer 3.0.0 was also released on 5/02/14.
+-Apache Flex FlexUnit 4.2.0 was released on 4/15/14.
+-Apache FlexJS 0.0.1 was released on 4/23/14.
+-Apache Flex FalconJX 0.0.1 was released on 4/23/14.
+
+ACTIVITY
+Activity in Apache Flex continues to be in two main areas: improvements
+To the existing Adobe Flash Platform-dependent code base, and FlexJS,
+a version of Flex that is independent from the Adobe Flash Platform.
+There is another group working on Maven-related tools for the existing
+code base, and significant work on the Installer, which can now run a
+subset of Apache Ant in Adobe AIR without Java or Ant prerequisites.
+One committer has taken on integrating the multi-threaded debugger
+support into the development branch.  Another committer and a potential
+Committer are working on TLF Table support.
+
+In the past three months we've continued to see:
+- Continued JIRA activity (more bugs raised than resolved however)
+- More committers becoming active again.
+- Fewer new folks contributing and eventually becoming committers.
+
+Other highlights:
+-Two committers gave presentations on Flex at ApacheCon 2014.
+-Seven committers gave presentations on Flex at the 360|Flex conference.
+
+Code Donation Update
+-Swiz donation is still pending. The donor has not filed the paperwork.
+-Adobe completed the donation of several Flex-related code bases, including
+the remaining pieces of BlazeDS, the TourDeFlex sample apps, the FlexPMD
+Project, the Squiggly spell checker, multi-threaded support in the
+Debugger, and several popular web articles.
+
+COMMUNITY
+-Piotr Zarzycki and Mihai Chira were added as committers
+-Carlos Rovira and Christopher Dutz were added to the PMC.
+-Latest analytics include over 2500 hits per day on the website during the
+work week (less on weekends).
+-There were more than 12,000 installs of 4.12.x since its release.
+-There were more than 300 installs of FlexJS.</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#attachment-X">2014-03-19</a> &mdash; Alex Harui<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+-Apache Flex SDK 4.11.0 was released on 10/28/13.
+-Voting is in progress for SDK 4.12.0
+-Apache Flex Installer 2.7.0 was also released on 10/28/13.
+-Voting is also in progress for Installer 3.0.0 which has the new
+ capability to use Ant script syntax to drive the install process.
+
+ACTIVITY
+Activity in Apache Flex continues to be in two main areas:  improvements
+to the existing Adobe Flash Platform-dependent code base, including the
+releases listed above, and prototyping ways to create a version of Flex
+that is independent from the Adobe Flash Platform.  There is another group
+working on Maven-related tools for the existing code base.
+
+In the past three months we've seen:
+- Continued JIRA activity (more bugs raised than resolved however)
+- More committers becoming active again.
+- Fewer new folks contributing and eventually becoming committers.
+
+Other highlights:
+-Over 70 bugs have been fixed in 4.12.0.
+-Three committers will be giving presentations on Flex at ApacheCon 2014.
+
+Code Donation Update
+-FlexUnit was donated but has yet to be formulated into a release.
+-Swiz donation is still pending.  The donator has not filed the paperwork.
+-BlazeDS donation paperwork was submitted but the code is not yet in the
+ repo because it was discovered that some pieces were missing.  We hope to
+ get the missing pieces soon.  The missing pieces are stuck in IP review at
+ Adobe.
+
+COMMUNITY
+-One person who has been helpful on the mailing list and in JIRA was
+ invited as a committer and declined.
+-No other candidates for new committer or promotions of committers to PMC
+ in this reporting period.
+-A non-committer claims to be starting on a book about Apache Flex.
+-Latest analytics include over 3000 hits per day on the website during the
+ work week (less on weekends).
+-There were more than 14,000 installs of 4.11.0 since its release.
+-It feels like there is more interest from users based on activity on
+ users@.
+-Slight decrease in activity-level and number of committers working on SDK
+ repo but more activity and committers working on FlexJS.
+-Several Apache Flex committers will be presenting at the 360 Flex
+ conference in May
+
+TRADEMARKS
+-The new version of Flex is going to be called FlexJS.  We have begun
+ associating the TM symbol with FlexJS per advice from trademarks@
+-This site is hopefully in compliance with Apache trademark policy
+ http://www.madeinflex.com/terminos-legales/
+
+INFRASTRUCTURE
+* I'm still hoping to find time to resolve INFRA-4380 (attachments in old
+Flex bugs).</pre>
+<h3 id="2013-12-18"><a href="2013/board_minutes_2013_12_18.html#attachment-W">2013-12-18</a> &mdash; Alex Harui<a class="headerlink" href="#2013-12-18" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+Apache Flex SDK 4.11.0 was released on 10/28/13.
+Apache Flex Installer 2.7.0 was also released on 10/28/13.
+
+ACTIVITY
+Activity in Apache Flex continues to be in two main areas:  improvements
+To the existing Adobe Flash Platform-dependent code base, including the
+releases listed above, and prototyping ways to create a version of Flex
+that is independent from the Adobe Flash Platform.  There is another group
+working on Maven-related tools for the existing code base.
+
+In the past three months we've seen:
+- Continued JIRA activity (more bugs raised than resolved however)
+- More folks contributing and eventually becoming committers.
+
+Other highlights:
+-Over 60 bugs were fixed in 4.11.0.
+-We adopted a set of guidelines/by-laws.  They are on our wiki at:
+https://cwiki.apache.org/confluence/display/FLEX/Guidelines
+
+Code Donation Update
+-FlexUnit was donated but has yet to be formulated into a release.
+-Swiz donation is still pending.  The donator has not filed the paperwork.
+-BlazeDS donation paperwork was submitted but the code is not yet in the
+repo because it was discovered that some pieces were missing.  We hope to
+get the missing pieces before the next report, maybe even by end of year.
+
+COMMUNITY
+-Stephan Plath added as committer on 11/17/13.
+-Cosma Colanicchia added as committer on 10/17/13.
+-Tom Chiverton added as a committer on 9/30/13.
+-Maurice Amsellem added as a committer on 9/28/13.
+-Darrell Loverin added as a committer on 9/13/13.
+-Maurice Amsellem promoted from committer to PMC on 11/9/13.
+-Latest analytics include over 3000 hits per day on the website during the
+work week (less on weekends).
+-There were more than 3000 installs of 4.11.0 in
+the month since its release.
+
+AREAS OF CONCERN (FROM LAST REPORT)
+-RELEASE EFFORT: In the last report we reported that "getting a release
+out seems more difficult than it should be because folks don't start
+serious testing on the first RCs so important bugs are found just before
+the VOTE ends and another RC has to be made."
+For the 4.11 release, we adopted "carry-over" voting based on a
+suggestion from a board member.  If there were minor changes to the
+release artifacts, you could carry over your vote from the prior
+release candidate.  That, and I think just having more
+experience in cutting releases made the 4.11 release go much more smoothly.
+-NUMBER OF ACTIVE COMMITTERS: In the last report we reported that "even
+though 200 bugs were fixed in 4.10.0, the majority were done by one
+committer."  Over the past 3 months, six new people made contributions and
+were voted in as committers.
+
+TRADEMARKS
+-It was discovered that an external entity was using http://apacheflex.com
+to redirect to their web site.  They were notified and have changed the
+redirect to the Apache Flex website.  They have offered to have Apache
+take over the domain http://apacheflex.com.  We need to figure out
+how to do this.
+-It looks like the new version of Flex is going to be called FlexJS.  We
+need to find out if we need to trademark that name.  We will be contacting
+trademarks@ shortly.
+
+
+INFRASTRUCTURE
+* I'm still hoping to find time to resolve INFRA-4380 (attachments in old
+Flex bugs).</pre>
+<h3 id="2013-09-18"><a href="2013/board_minutes_2013_09_18.html#attachment-T">2013-09-18</a> &mdash; Alex Harui<a class="headerlink" href="#2013-09-18" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+Apache Flex SDK 4.10.0 was released on 8/6/13.
+Apache Flex Installer 2.6.0 was released on 8/6/13.
+
+ACTIVITY
+Activity in Apache Flex continues to be in  two main areas:  improvements
+To the existing Adobe Flash Platform-dependent code base, including the
+releases listed above, and prototyping ways to create a version of Flex
+that is independent from the Adobe Flash Platform.  There is another group
+working on Maven-related tools for the existing code base.
+
+Since the 4.10 release we've seen:
+- Significant web visits increase (especially for the week after the
+release up 100% or more)
+- More JIRA activity (more bugs raised than resolved however)
+- More activity on the users mailing list (flex-users markmail archive is
+broken so I can't see exact numbers)
+
+
+Other highlights:
+-Over 200 bugs were fixed in 4.10.0.
+-4.10.0 supports Linux.
+-FlexUnit was finally committed to its repo.
+-Several users have submitted applications for a "showcase"
+-Flex CI now runs over 30,000 tests.
+-One committer overhauled the wiki to make it better organized.
+-Adobe submitted the software grant for the BlazeDS software.  There are
+some .jar files in the donation that need to be removed and replaced and
+that is holding up the actual committing of the code to the repo.
+
+COMMUNITY
+-Cyrill Zadra promoted from committer to PMC on 6/11/13.
+-Mark Kessler promoted from committer to PMC on 8/13/13.
+-Scott Guthmann added as committer and PMC on 7/19/13.  Scott's main
+contributions will be on the marketing side.
+-Latest analytics include over 600,000 hits on the website in the last six
+months.
+- Since April 11, 2013, the Installer has been used to install over
+16,000 copies of the SDK.  There were more than 5000 installs of 4.10.0 in
+the month since its release.
+-Several Apache Flex committers presented at 360|Stack which is the
+largest Flex-oriented conference in the world.
+-Flex mailing lists are now 'mirrored' on Nabble.  Mailing list traffic is
+so high that many folks I talked to at 360|Stack have stopped reading
+emails.  Many of our committers are unable to keep up.  June and July
+almost hit 1000 emails per month each.  Folks requested a "forum" interface
+as being more friendly than the archive or mailing list interfaces.
+
+AREAS OF CONCERN
+-RELEASE EFFORT:  Getting a release out seems more difficult than it
+should be because  folks don't start serious testing on the first RCs so
+important bugs are found just before the VOTE ends and another RC has to
+be made.  For 4.10.0, the 72 hours had just passed and VOTE results sent
+out when a critical issue was found.  And, on each subsequent RC, fewer
+and fewer people vote.  Not sure what can be done about this but this
+tends to make folks want to avoid becoming the release manager.  One
+thought is that, if the area of code change for a critical issue is small,
+then past votes should still count in the total.
+-NUMBER OF ACTIVE COMMITTERS:  Even though 200 bugs were fixed in 4.10.0,
+the majority were done by one committer.  Only six of the nearly 40
+committers have committed something to the main repo in this reporting
+period.  There is activity in the other repos though.  Not a critical
+issue yet, but worth noting.
+
+
+INFRASTRUCTURE
+* I'm still hoping to find time to resolve INFRA-4380 (attachments in old
+Flex bugs).</pre>
+<h3 id="2013-06-19"><a href="2013/board_minutes_2013_06_19.html#attachment-R">2013-06-19</a> &mdash; Alex Harui<a class="headerlink" href="#2013-06-19" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+Apache Flex SDK 4.9.1 was released on 2/28/13.
+Apache Flex Installer 2.5.4 was released on 4/11/13.
+The community is currently preparing its next release of both the SDK and
+Installer.
+
+ACTIVITY
+Activity in Apache Flex continues to be in two main areas:  improvements to
+the existing Adobe Flash Platform-dependent code base, including the
+releases listed above, and prototyping ways to create a version of Flex that
+is independent from the Adobe Flash Platform.  There is another group
+working on Maven-related tools for the existing code base. Just in the past
+30 days, 130 JIRA issues were resolved.  JIRA activity is so high, a vote is
+underway to split JIRA notifications off to its own mailing list
+(issues@flex.a.o)
+
+Getting used to Git was still a frequent topic in April and May.  Because
+Git does not support partial checkouts, the community prototyped using
+GitHub for the whiteboards.  GitHub notifications are sent to the commits@
+list just like any other Apache Git commit.  The PMC then voted to approve
+this workflow.  And because we do our work in a branch and have trunk only
+have released sources, we had to ask Infra to update the mirrors to work
+from that branch.
+
+The owner of a popular application-framework that leverages the Flex SDK
+has offered to donate the code to the project.  This has met with some
+opposition from those who use competing application-frameworks.  The
+ensuing discussion indicated that the PMC is in favor of accepting
+donations from the these other frameworks should they choose to donate, so
+we believe we are not endorsing or showing favoritism.
+
+COMMUNITY
+No new committers in the last 90 days.  A vote is underway to promote a
+committer to the PMC.  Latest analytics include over 4000 downloads since
+4/11/2013, and an average of 3000 hits per day during weekdays.
+
+INFRASTRUCTURE
+* Infra attempted to resolve INFRA-4380 but ran into problems.  I have
+approval to try to use the SOAP interface to pull the current state of
+JIRA issues, merge them with the original attachments and provide a new
+import file for INFRA.  That task has been delayed by other issues like
+getting new releases out, but we will get to it eventually.
+
+BRANDING
+We have noted that Apache projects are forming that use code module names
+that are used in Apache Flex.  Namely 'Falcon' and now 'Spark'.  These two
+words are used often on the mailing lists when discussing the related code
+which then finds its way into the search engines.  Is this an issue?</pre>
+<h3 id="2013-04-17"><a href="2013/board_minutes_2013_04_17.html#attachment-T">2013-04-17</a> &mdash; Alex Harui<a class="headerlink" href="#2013-04-17" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+Apache Flex 4.9.1 was released on 2/28/13.
+Apache Flex Installer 2.0.x was released on 1/9/13.  The next version of the
+Installer is being voted on as of this writing.
+
+ACTIVITY
+Activity in Apache Flex continues to be in two main areas:  improvements to
+the existing Adobe Flash Platform-dependent code base, including the
+releases listed above, and prototyping ways to create a version of Flex that
+is independent from the Adobe Flash Platform.  There is another group
+working on Maven-related tools for the existing code base.
+
+We moved our code base from SVN to Git in mid-March.  It has been a much
+more difficult transition than expected.  Three weeks later, folks are still
+confused about how to use Git as it has many options for performing tasks
+that can have significant implications.  Git's database model is not suited
+for partial checkouts like SVN, making the management of our "whiteboard" (a
+playground for committers) much more difficult as you have to download the
+entire whiteboard (currently 245MB) first.  There is discussion of managing
+the whiteboard on GitHub, but others feel that it doesn't conform to the
+Apache way.
+
+The move to Git has slowed contributions from some committers as folks
+aren't sure they have the time to learn to use Git and are afraid of using
+the wrong options.  Hopefully, the net benefit promised by the Git
+supporters will eventually be realized.
+
+The move to Git has also broken our release and build scripts and we are in
+the process of fixing them.  We also need to get the Git mirrors working
+again, as well as our CI implementation.
+
+The FishEye plug-in was added to our JIRA project.
+
+COMMUNITY
+Harbs and Mark Kessler were added as committers.
+
+Frederic Thomas was added to the PMC.
+
+PRESS
+Per a request from the Apache Press VP, I was interviewed by a writer from
+InfoWorld in early February and the article was finally published in March.
+The link is:
+http://www.computerworld.com.au/slideshow/455802/pictures_15_high-impact_apa
+che_projects/?image=1
+
+Nick Kwaitkowski presented on Apache Flex at the Flex Users Group in
+Chicago.  Mike Labriola also presented on his Randori framework which uses
+compiler source from Apache Flex.
+
+INFRASTRUCTURE
+ * Infra attempted to resolve INFRA-4380 but ran into problems.  In the last
+   report I thought we had a solution, but it appears that we are back to
+   trying to devise a new solution.  Tony has been helpful, but his time is
+   limited.  Every month we spend a few minutes discussing solutions.
+   JIRA's migration tools are definitely insufficient, and Apache's desire
+   to have one large centralized JIRA DB makes it difficult or impractical
+   to experiment with custom solutions.</pre>
+<h3 id="2013-03-20"><a href="2013/board_minutes_2013_03_20.html#attachment-Q">2013-03-20</a> &mdash; Alex Harui<a class="headerlink" href="#2013-03-20" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+Apache Flex 4.9.1 was released on 2/28/13.
+Apache Flex Installer 2.0.x was released on 1/9/13.
+
+ACTIVITY
+Activity in Apache Flex continues to be in two main areas:  improvements to
+the existing Adobe Flash Platform-dependent code base, including the
+releases listed above, and prototyping ways to create a version of Flex that
+is independent from the Adobe Flash Platform.  There is another group
+working on Maven-related tools for the existing code base.
+
+Justin McLean presented on Apache Flex at ApacheCon NA 2013.
+
+COMMUNITY
+No changes to our set of committers or PMC members.  We did implement
+analytics on the Apache Flex website and in the month of February we had
+100,000 page views and more than 36,000 visitors.  That is way more than
+anyone would have expected.
+
+The estimated number of Flex SDK 4.9.0 downloads from the Apache Flex
+website is 16,701.  This is from the day it went live on December 27th
+2012, through Feb 27th, 2013.  This includes downloads directly off our
+website and people who downloaded the SDK via the Installer.  We don't know
+how many additional downloads occurred directly from our mirrors or other
+hosts.
+
+PRESS
+Per a request from the Apache Press VP, I was interviewed by a writer from
+InfoWorld, but it appears that the article has not been published.
+
+Harbs was interviewed for an article published on http://www.pro-linux.de.
+
+LEGAL
+Nothing to report.
+
+TLP MIGRATION
+The last of our repos was reconnected to Git-syncing this weekend.  I don't
+know of any other remaining migration issues.
+
+INFRASTRUCTURE
+ * Infra attempted to resolve INFRA-4380 but ran into problems.  In the last
+   report I thought we had a solution, but it appears that we are back to
+   trying to devise a new solution.  Tony has been helpful, but he was away
+   for a bit, so we'll re-start on this when he gets caught up after his
+   return.
+ * We will be trying to migrate from SVN to Git as soon as possible.  We
+   have opened https://issues.apache.org/jira/browse/INFRA-5549 and are
+   awaiting infra response.
+ * The build system keeps failing for lack of disk space.  I've seen this
+   complaint brought up by other projects as well.
+
+BRANDING
+No issues at this time.</pre>
+<h3 id="2013-02-20"><a href="2013/board_minutes_2013_02_20.html#attachment-P">2013-02-20</a> &mdash; Alex Harui<a class="headerlink" href="#2013-02-20" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+Apache Flex 4.9.0 was released on 12/27/12.
+Apache Flex Installer 2.0.x was released on 1/9/13.
+
+ACTIVITY
+Activity in Apache Flex is in two main areas:  improvements to the existing
+Adobe Flash-dependent code base, including the two releases listed above,
+and prototyping ways to create a version of Flex that is independent from
+Adobe Flash.  There is another group working on Maven-related tools for the
+existing code base.
+
+Nick Kwaitkowski and other community members totally revamped the
+flex.apache.org site.  Trademarks reviewed the site before it went live on
+1/31/13.  Analytics were also added to the site.  In the first two days we
+had 4,228 (3,534 unique) visitors and 11,965 page views.
+
+COMMUNITY
+Roland Zwaga was approved as committer on 1/15/13.
+
+PRESS
+Scott Guthmann worked with Press@a.o to publish a press release about
+Apache Flex on 1/14/13.  One link to it is here:
+http://globenewswire.com/news-release/2013/01/14/516186/10017952/en/The-Apache-Software-Foundation-Announces-Apache-Flex-tm-as-a-Top-Level-Project.html
+
+LEGAL
+Nothing to report.
+
+TLP MIGRATION
+The TLP migration was completed on January 5, 2012.  I think we've
+completed all of the necessary steps.
+
+Task Status:
+ * Infrastructure migration complete
+ * All code &amp; web pages have been updated to reflect new status
+ * Final incubator status done
+ * committee-info.txt updated with PMC details
+ * Officer info updated for new chair
+ * Clean up incubator version of website, dist done
+
+INFRASTRUCTURE
+ * Infrastructure migration from the incubator is complete and the project
+   website has been transferred to flex.apache.org.
+ * Infra attempted to resolve INFRA-4380 but ran into problems.  The
+   problem appears to be resolved so INFRA-4380 will likely be
+   resolved by the time of the board meeting.
+ * We will be trying to migrate from SVN to Git as soon as possible.
+
+BRANDING
+The flex.apache.org site is undergoing a major overhaul.  We will
+review the new site against this checklist.
+* Project Naming And Descriptions : Done
+* Website Navigation Links : Done
+* Trademark Attributions : Done
+* Logos and Graphics : Done
+* Project Metadata : Done</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#attachment-O">2013-01-16</a> &mdash; Alex Harui<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+RELEASES
+Apache Flex 4.9.0 was released on 12/27/12.
+Apache Flex Installer 2.0.x is in RC3 and should be released before the
+board meeting.
+
+ACTIVITY
+Activity in Apache Flex is in two main areas:  improvements to the existing
+Adobe Flash-dependent code base, including the two releases listed above,
+and prototyping ways to create a version of Flex that is independent from
+Adobe Flash.  There is another group working on Maven-related tools for the
+existing code base.
+
+COMMUNITY
+Vote is underway to approve a new committer.
+
+PRESS
+We are planning to make some noise about our recent graduation and releases.
+
+LEGAL
+Nothing to report.
+
+TLP MIGRATION
+The TLP migration was completed on January 5, 2012.  It took a bit longer
+than we would have liked, but everything seems to be in order now.
+
+Task Status:
+ * Infrastructure migration complete
+ * All code &amp; web pages have been updated to reflect new status
+ * Final incubator status done
+ * committee-info.txt updated with PMC details
+ * Officer info updated for new chair
+ * Clean up incubator version of website, dist in progress
+
+INFRASTRUCTURE
+ * Infrastructure migration from the incubator is complete and the project
+   website has been transferred to flex.apache.org.
+ * Every once in a while, we run into the fact that INFRA-4380 is still not
+   completed.
+ * We will be trying to migrate from SVN to Git as soon as possible.
+
+BRANDING
+The flex.apache.org site is undergoing a major overhaul.  We will review the
+new site against this checklist. Progress can be tracked here [1]
+* Project Naming And Descriptions : TODO
+* Website Navigation Links : TODO
+* Trademark Attributions : TODO
+* Logos and Graphics : TODO
+* Project Metadata : DOAP completed
+
+[1] https://issues.apache.org/jira/browse/FLEX-33343</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#flex">2012-12-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+Date of entry to the Incubator:  December 31, 2011
+
+Top three items to resolve before graduation:
+   Flex has their graduation resolution on the agenda for the December board
+   meeting.
+
+Is there anything that the Incubator PMC or ASF Board specifically needs
+to address?
+   Only the graduation resolution.
+
+Are there any legal, infrastructure, cross-project or personal issues that
+need to be addressed? (Are there any stumbling blocks that impede the podling?)
+   The Flex community really wants to move from SVN to Git/GitHub.  We are
+   eager to see Infra fully support read/write Git repos.
+
+   Also, we are still waiting for INFRA-4380 (import the old Flex JIRA data) to
+   be resolved.
+
+Check that the project's Incubation Status file up to date.
+
+  http://incubator.apache.org/projects/flex
+
+What has been done (releases, milestones, etc.) since the last report?
+   -We approved 6 new committers
+   -We released Apache Flex SDK Installer 1.0.9-incubating.
+   -Adobe Systems Inc. donated both the Falcon compiler and the FalconJS
+    cross-compiler.
+   -Christopher Dutz donated Maven support tools for Flex
+   -We voted to graduate.
+   -We started work on a next-generation of Flex designed to target browsers
+    and devices without Flash.
+
+What are the plans and expectations for the next period?
+
+   -Go through the transition to being a TLP
+   -Continue with the next-generation Flex work
+   -Release several bug-fixes and new locales in the current Flex code base.
+
+Are there any recommendations for how incubation could run more smoothly
+for you?
+   No.  We thank you for your support.
+
+Signed off by mentor: Dave Fisher (wave), Greg Reddin (greddin), bdelacretaz, adc</pre>
+<h3 id="2012-09-19"><a href="2012/board_minutes_2012_09_19.html#flex">2012-09-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-09-19" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+Summary: A large community is waiting to see if committer activity will increase
+and starting to think about graduating.
+
+Date of entry to the Incubator:  December 31, 2011
+
+Top three items to resolve before graduation:
+
+- Get better at resolving issues the Apache Way
+- Get more initial committers to commit something
+- Make another release with more non-Adobe involvement
+
+Is there anything that the Incubator PMC or ASF Board specifically needs
+to address?
+
+There was discussion about letting Flex graduate with the requirement that
+one or two mentors remain on the PMC.
+
+Are there any legal, infrastructure, cross-project or personal issues that
+need to be addressed? (Are there any stumbling blocks that impede the podling?)
+
+The issue regarding the import of attachments for existing
+JIRA bugs remains open (INFRA-4380).  It is not critical, but it would be
+nice to get this resolved soon.
+
+The PPMC has voted to move from SVN to Git.  Having Apache approve read/write
+Git repositories would be helpful.
+
+Check that the project's Incubation Status file up to date.
+
+http://incubator.apache.org/projects/flex
+
+What has been done (releases, milestones, etc.) since the last report?
+
+- We released Apache Flex 4.8.0 (incubating).
+
+- OmPrakash Muppirala and Erik de Bruin were added as a committer and
+  PPMC member due to their work on the installer.  Peter Ent and
+  Gordon Smith from Adobe were also added as committers as they are
+  shepherding large donations from Adobe.
+
+- Adobe completed the trademark donation.
+
+- Adobe donated the Text Layout Framework, the rest of the Mustella
+  test suite and signed off on the Falcon compiler donation.
+
+- OmPrakash Muppirala has been leading the development of a tool that
+  allows IDEs like Adobe Flash Builder to work better with Apache Flex
+  releases.  Justin McLean, Stephen Downs, Roland Zwaga, Tomasz Maciag,
+  and Erik de Bruin have also contributed to the tool.
+
+- We have accepted several patches from the community to address issues
+  with our test suite.
+
+- After much discussion, we voted to move from SVN to Git and employ
+  something known as the Git Branching Model.
+
+What are the plans and expectations for the next period?
+
+- We hope to finalize the release of the installer.
+
+- Adobe will submit the Falcon compiler source
+
+- We will get the test suite stable on Mac desktops and then on Windows
+  and mobile configurations.  This should remove the last excuse for
+  committers who are afraid to make changes without a validation suite
+
+- We hope to complete the transition from SVN to Git.
+
+Are there any recommendations for how incubation could run more smoothly
+for you?
+
+Our mentors continue to be very helpful.
+
+Signed off by mentor: wave, bdelacretaz, bmargulies</pre>
+<h3 id="2012-06-20"><a href="2012/board_minutes_2012_06_20.html#flex">2012-06-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-06-20" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+Summary: A large community is losing momentum as it waits for Adobe to
+complete the source code transition and infrastructure.
+
+Date of entry to the Incubator:  December 31, 2011
+
+Top three items to resolve before graduation:
+
+- Resolve trademark donation or licensing
+- Complete code and bug database donation
+- Make at least one release
+
+Is there anything that the Incubator PMC or ASF Board specifically needs
+to address?
+
+The ASF legal team will have to agree to a custom Trademark licensing.
+Adobe submitted an initial proposal for the agreement at the end of May.
+
+Are there any legal, infrastructure, cross-project or personal issues that
+need to be addressed? (Are there any stumbling blocks that impede the podling?)
+
+Besides the trademark issue mentioned previously, the import of existing
+JIRA bugs is blocked by an issue with Apache JIRA's import utility (INFRA-4380).
+We just got news that this should now be resolved, the PPMC is testing
+the results of the import before activating it.
+
+Check that the project's Incubation Status file up to date.
+
+http://incubator.apache.org/projects/flex
+
+What has been done (releases, milestones, etc.) since the last report?
+
+- Carol Frampton is the release manager for our first release and has
+  prepared some initial release candidates.  We are continuing to refine
+  the release candidates to respond to various licensing and policy issues.
+- Christophe Herreman was added as a committer and PPMC member due to his
+  offering patches for issues with the release candidates.
+- OmPrakash Muppirala has been leading the development of a tool that
+  allows IDEs like Adobe Flash Builder to work better with Apache Flex
+  releases.  Justin McLean, Stephen Downs, Roland Zwaga, and Tomasz Maciag
+  have also contributed to the tool.
+
+What are the plans and expectations for the next period?
+
+Adobe expects to complete the transfer of the mustella test suite.
+We hope to get an initial release approved by IPMC.
+
+Are there any recommendations for how incubation could run more smoothly
+for you?
+
+Our mentors continue to be very helpful.
+
+See May 2012 report for other concerns related to JIRA and svn imports,
+but as mentioned above it looks like the JIRA import problems are fixed
+now.
+
+Signed off by mentor: greddin, wave
+Shepherd: Matt Franklin</pre>
+<h3 id="2012-05-16"><a href="2012/board_minutes_2012_05_16.html#flex(extrareport)">2012-05-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-05-16" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+Summary: A large community is losing momentum as it waits for Adobe to
+complete the source code transition and infrastructure.
+
+Date of entry to the Incubator:  December 31, 2011
+
+Top three items to resolve before graduation:
+
+- Resolve trademark donation or licensing
+- Complete code and bug database donation
+- Make at least one release
+
+Is there anything that the Incubator PMC or ASF Board specifically needs
+to address?
+
+The ASF legal team will have to agree to a custom Trademark licensing.
+Adobe is still finalizing its proposal for the agreement.
+
+Are there any legal, infrastructure, cross-project or personal issues that
+need to be addressed? (Are there any stumbling blocks that impede the podling?)
+
+Besides the trademark issue mentioned previously, the import of existing
+JIRA bugs is blocked by an issue with Apache JIRA's import utility. It has
+failed to import the data file supplied by Adobe. Infra has opened a support
+ticket with Atlassian, but the problem remains unresolved two months later.
+
+Check that the project's Incubation Status file up to date.
+
+http://incubator.apache.org/projects/flex
+
+What has been done (releases, milestones, etc.) since the last report?
+
+- The Flex compiler source code, including history, was imported into
+  the SVN repository.
+- Additional localization resources have been donated.
+- Carol Frampton is working to create a release candidate.  We expect
+  the initial RC's to be rejected as we finalize licensing and other
+  policy issues.
+
+What are the plans and expectations for the next period?
+
+Adobe expects to complete the transfer of the mustella test suite.
+We hope to get an initial release approved by IPMC.
+
+Are there any recommendations for how incubation could run more smoothly
+for you?
+
+Our mentors continue to be very helpful.
+
+We really need to get JIRA up and running.  I still would like the incubator
+to consider separate servers for projects.  Having to set up external
+servers as an interim is a lot of work and adds confusion when you want
+to move to a final server or url later and you could have migration
+issues if you didn't set up the server in a compatible way.
+
+Signed off by mentor:</pre>
+<h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#flex">2012-04-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+Summary: A highly energetic community waits for Adobe to complete the
+source code transition and infrastructure.
+
+Date of entry to the Incubator:  December 31, 2011
+
+Top three items to resolve before graduation:
+
+  - Resolve trademark donation or licensing
+  - Complete code and bug database donation
+  - Make at least one release
+
+Is there anything that the Incubator PMC or ASF Board specifically needs
+to address?
+
+  The ASF legal team may have to agree to a custom Trademark licensing.
+  Adobe is currently evaluating the parameters of a custom Trademark license
+  proposed by an ASF Board member.  If approved, a custom agreement will be
+  drafted and signed by both parties.  Apache is waiting on Adobe to approve
+  the latest Apache proposal.
+
+Are there any legal, infrastructure, cross-project or personal issues that
+need to be addressed? (Are there any stumbling blocks that impede the podling?)
+
+  Besides the trademark issue mentioned previously, the import of existing
+  JIRA bugs is blocked by an issue with Apache JIRA's import utility. It has
+  failed to import the data file supplied by Adobe. Infra has opened a support
+  ticket with Atlassian, but the problem remains unresolved one month later.
+
+Check that the project's Incubation Status file up to date.
+
+  http://incubator.apache.org/projects/flex
+
+What has been done (releases, milestones, etc.) since the last report?
+
+  - The Flex compiler source code, including history, was donated to Apache.
+    It is pending import into the SVN repository
+  - Other initial committers have donated code to the whiteboard.
+  - Martin Heidegger was accepted as committer to the podling.
+
+What are the plans and expectations for the next period?
+
+  Adobe expects to complete the transfer the mustella test suite.
+  We hope to make progress on an initial release.
+
+Are there any recommendations for how incubation could run more smoothly
+for you?
+
+  Our mentors are great. We are wondering if Apache has considered giving
+  large projects like Flex their own SVN and JIRA servers. Recently, we pushed
+  really hard to get a software grant signed (An Adobe VP even came in
+  to sign it while he was taking time off to move to a new house) in order to
+  try to make the weekend deadline for getting code imported into SVN.  We
+  are in a hurry because we have seen signs we are losing momentum (mailing
+  list traffic is much lower) and a key Flex conference is coming up on
+  April 15. Being able to announce that new code was in SVN would be a good
+  boost and good timing.
+
+  We submitted a software grant and code on Friday afternoon, but were
+  too late to have the secretary record the software grant and that meant
+  that Infra couldn't import the code since they only do that on weekends,
+  and so we are now waiting for the next weekend.  Having our own separate
+  SVN repository would make weeknight imports possible and maybe not tax
+  a single database as much.  Large projects like Flex have tons of files.
+
+  The same holds true for the bug database as well.  We submitted the
+  JIRA import file on Feb 1.  Infra has been unable to get the import to
+  succeed (it worked on a test instance on my computer) and has had to file
+  a bug with Atlassian (JIRA's maker).  We asked about using the SOAP
+  interface to import bugs but Infra is concerned that some problem in
+  that process would screw up JIRA for everyone and/or cause performance
+  issues.  Having our own JIRA instance would allow us to try alternate
+  means of getting around the JIRA issue.  A SOAP import utility exists and
+  was used to successfully import all 30,000 issues into a test instance
+  but there is risk of having some other issue show up when we add that many
+  issues to an existing database.
+
+Signed off by mentor: bdelacretaz, greddin, wavw</pre>
+<h3 id="2012-03-21"><a href="2012/board_minutes_2012_03_21.html#flex">2012-03-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-03-21" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+Summary: A highly energetic community waits for Adobe to complete the
+source code transition and infrastructure.
+
+Date of entry to the Incubator:  December 31, 2011
+
+Top three items to resolve before graduation:
+
+1. Resolve trademark donation or licensing
+2. Complete code and bug database donation
+3. Make at least one release
+
+Is there anything that the Incubator PMC or ASF Board specifically needs
+to address?
+
+The ASF legal team may have to agree to a custom Trademark licensing.
+Adobe is currently evaluating the parameters of a custom Trademark license
+proposed by an ASF Board member.  If approved, a custom agreement will be
+drafted and signed by both parties.
+
+Are there any legal, infrastructure, cross-project or personal issues that
+need to be addressed? (Are there any stumbling blocks that impede the podling?)
+
+Besides the trademark issue mentioned previously, the import of existing
+JIRA bugs is blocked by an issue with Apache JIRA's import utility. It has
+failed to import the data file supplied by Adobe. Infra is supposed to
+open a support ticket with Atlassian.
+
+Check that the project's Incubation Status file up to date.
+
+http://incubator.apache.org/projects/flex
+
+What has been done (releases, milestones, etc.) since the last report?
+
+- An initial set of Flex source (base framework code), including history,
+  was checked into the trunk area of the podling&rsquo;s Subversion repository.
+- Other initial committers have donated code to the whiteboard.
+- Updates to the podling's wiki including a getting started area for
+  reference to new project members.
+- Justin Mclean was accepted as committer to the podling.
+
+What are the plans and expectations for the next period?
+
+Adobe expects to complete the transfer of the bug database. Adobe also
+hopes to contribute the compiler and test suite as well. And there is hope
+for an initial release.
+
+Are there any recommendations for how incubation could run more smoothly
+for you?
+
+Incubation has been working well.  Our mentors are great.
+
+Signed off by mentor: wave, bdelacretaz, greddin</pre>
+<h3 id="2012-02-15"><a href="2012/board_minutes_2012_02_15.html#flex">2012-02-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-02-15" title="Permalink">&para;</a></h3>
+<pre>Apache Flex is an application framework for easily building Flash-based
+applications for mobile devices, the browser and desktop.
+
+Summary: A highly energetic community waits for Adobe to transition code
+and infrastructure.
+
+Date of entry to the Incubator:  December 31, 2011
+
+Top four items to resolve before graduation:
+
+1. Resolve trademark donation or licensing
+2. Complete code and bug database donation
+3. Make at least one release
+4. Add new committers
+
+Is there anything that the Incubator PMC or ASF Board specifically needs
+to address?
+
+The ASF legal team will have to work with Adobe on the Trademark
+licensing issue.  Adobe legal is still drafting the proposal before
+presenting to Apache.
+
+Are there any legal, infrastructure, cross-project or personal issues that
+need to be addressed? (Are there any stumbling blocks that impede the
+podling?)
+
+Besides the trademark issue mentioned previously, the code donation and
+bug database donation are being slowed by infrastructure issues at both
+Adobe and Apache, mainly the lack of ways to easily transfer multi-GB
+files.
+
+Check that the project's Incubation Status file up to date.
+
+http://incubator.apache.org/projects/flex
+
+What has been done (releases, milestones, etc.) since the last report?
+
+- An initial set of Flex source (minus Subversion history) was checked into
+  the whiteboard area of the podling's Subversion repository.
+- Other initial committers have donated code to the whiteboard.
+- A logo contest was held.  Over 50 entries were submitted.
+- The mailing lists were established.  Over 200 people joined in the
+  first 30 days and the traffic averaged over 100 emails a day.  It has
+  quieted down now that the logo contest has concluded.
+
+What are the plans and expectations for the next period?
+
+Adobe expects to complete the transfer of the bug database and the initial
+set of code with history.  Adobe also hopes to contribute the compiler and
+test suite as well.  And there is hope for an initial release.
+
+Are there any recommendations for how incubation could run more smoothly for
+you?
+
+Incubation has been working well.  Our mentors are great.
+
+Signed off by mentor: bdelacretaz, wave</pre>
+<h3 id="2012-01-24"><a href="2012/board_minutes_2012_01_24.html#flex">2012-01-24</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-01-24" title="Permalink">&para;</a></h3>
+<pre>Flex is an application framework for building Flash-based applications.
+
+Entered incubation December 30th, 2011.
+
+The podling is just getting started, accounts and infrastructure are being
+created.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

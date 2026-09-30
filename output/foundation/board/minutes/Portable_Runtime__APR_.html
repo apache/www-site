@@ -1,0 +1,4098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Portable Runtime (APR) | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Portable Runtime (APR)';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Portable Runtime (APR)';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Portable Runtime (APR)</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="portable-runtime-apr">Portable Runtime (APR)<a class="headerlink" href="#portable-runtime-apr" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023-02-15</td>
+<td><a href="2023/board_minutes_2023_02_15.html#section-7F">Appointed Yann Ylavic</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2016-11-16</td>
+<td><a href="2016/board_minutes_2016_11_16.html#section-7A">Appointed Nick Kew</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2010-06-16</td>
+<td><a href="2010/board_minutes_2010_06_16.html#section-7C">Appointed Jeff Trawick</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2008-06-25</td>
+<td><a href="2008/board_minutes_2008_06_25.html#section-7E">Appointed Bojan Smojver</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2006-01-18</td>
+<td><a href="2006/board_minutes_2006_01_18.html#section-6A">Appointed Garrett Rooney</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2002-10-16</td>
+<td><a href="2002/board_minutes_2002_10_16.html#section-6C">Appointed Cliff Woolley</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2000-12-20</td>
+<td><a href="2000/board_minutes_2000_12-20.html#section-6A">Appointed Ryan Bloom</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-09-16</td>
+<td>New chair, R&uuml;diger Pl&uuml;m</td>
+<td>action without a meeting</td>
+<td>approved, minutes pending approval</td>
+</tr>
+<tr>
+<td>2007-04-25</td>
+<td><a href="2007/board_minutes_2007_04_25.html#section-7A">Change the Apache Portable Runtime Project Chair</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>2002-10-16</td>
+<td><a href="2002/board_minutes_2002_10_16.html#section-6C">Reestablish Apache Portable Runtime Project</a></td>
+<td>special order</td>
+<td>no outcome recorded</td>
+</tr>
+<tr>
+<td>2000-12-20</td>
+<td><a href="2000/board_minutes_2000_12-20.html#section-6A">Apache Portable Runtime Project</a></td>
+<td>special order</td>
+<td>no outcome recorded</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-BG">2026-06-17</a> &mdash; Yann Ylavic<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: Ongoing with low activity
+Issues for the board: None
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (26 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Daniel Sahlberg on 2025-08-07.
+- No new committers. Last addition was Daniel Sahlberg on 2025-08-07.
+
+## Project Activity:
+The metrics show increased activity on the public dev list where
+various topics around support for some dead OS or build systems took
+place and resulted in some commits.
+
+## Community Health:</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-BJ">2026-03-18</a> &mdash; Yann Ylavic<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing with low activity
+Issues for the board: none
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (25 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Daniel Sahlberg on 2025-08-07.
+- No new committers. Last addition was Daniel Sahlberg on 2025-08-07.
+
+## Project Activity:
+
+Some discussions around using the OpenSSL checksum implementations.
+Last APR release was apr-1.7.6 on 2025-05-16.
+Last APR-UTIL release was apr-util-1.6.3 on 2024-02-01
+
+## Community Health:
+
+Activity was quiet this quarter, nothing unusual:
+- ~6 messages on bugs@ (All of them SPAM)
+- ~7 messages on dev@</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#section-6BH">2026-02-18</a> &mdash; Yann Ylavic<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#section-6BI">2026-01-21</a> &mdash; Yann Ylavic<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#section-6BJ">2025-12-17</a> &mdash; Yann Ylavic<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-BL">2025-10-15</a> &mdash; Yann Ylavic<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing with low activity
+Issues for the board: none
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (25 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Daniel Sahlberg was added to the PMC on 2025-08-07
+- Daniel Sahlberg was added as committer on 2025-08-07
+
+## Project Activity:
+Welcome Daniel Sahlberg as new PMC member and committer.
+
+Great work on a new APR logo with oak leaf, makeover of apr.a.o and docs
+improvments.
+
+## Community Health:
+
+Activity was quiet this quarter, nothing unusual:
+- ~10 messages on bugs@
+- ~60 messages on dev</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#section-6BO">2025-09-24</a> &mdash; Yann Ylavic<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-BD">2025-06-18</a> &mdash; Yann Ylavic<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (25 years ago)
+There are currently 67 committers and 42 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+apr-1.7.6 was released on 2025-05-16.
+apr-util-1.6.4 is being worked on.
+
+## Community Health:
+The apr-1.7.6 release has generated the usual increase of activity on dev@ and
+svn@, things have become quieter (as usual still) since then, probably meaning
+that 1.7.6 is working as expected.</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-BH">2025-04-16</a> &mdash; Yann Ylavic<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: no issues requiring board attention
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (24 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+No new release this quarter, new releases for both APR and APR-util are being
+actively discussed on dev@, pre-release testing in ongoing.
+The CI is greatly improving too with more systems being tested, notably Windows.
+
+## Community Health:
+As usual at (pre-)release time, the activity on the lists (mainly dev@) and svn
+grows, with new features being tested and reported bugs fixed.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#section-6BE">2025-03-19</a> &mdash; Yann Ylavic<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-BE">2024-12-18</a> &mdash; Yann Ylavic<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: no issues requiring board attention
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (24 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+No new release this quarter.
+Low activity, nothing unusual, the CI set up in recent quarters is in place
+and green.
+
+## Community Health:
+The activity was quiet too from the community, the recent release looks stable.
+A regression needs addressing but not urgently (reported and fixed downstream
+already by the BSD team).</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-BH">2024-09-18</a> &mdash; Yann Ylavic<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: no issues requiring board attention
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (24 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+apr-1.7.5 was released on 2024-08-26, fixing a few bugs and a security issue.
+A new apr-util release is being discussed, waiting for a few merges and the CI
+set up on github.
+
+Big thanks to Ivan Zhakov for his enormous (and great!) work on the CMake build,
+the github CI (including apr-util 1.7.x branch) and the tests framework which
+can now be run on Windows!
+
+## Community Health:
+Commit and mailing lists activities have increased with the new releases being
+prepared (as usual).
+There seem to be more github Pull Requests being opened (and treated), thanks
+to the CI in place it's also used by the committers to test their changes before
+applying them to a branch.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-BF">2024-06-19</a> &mdash; Yann Ylavic<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: no issues requiring board attention
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (24 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+The quarter activity was moderate, nothing unusual.
+Great work from ivan to improve the cmake/vcpkg build system and running the
+tests suite on windows.
+With more contributions comes more code review which shows up on dev@ activity
+too.
+No new release this quarter.
+
+## Community Health:
+Some discussions started about how APR-2 (trunk) could be (re)modularized, not
+like APR-1 and APR1-util with different repositories, but rather how the build
+from a single code base could produce separate libraries for each non-core
+feature (DB, crypto, xml, ldap, ...) which apps/distros could link to as needed
+without depending on the rest.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-BH">2024-03-20</a> &mdash; Yann Ylavic<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing.
+Issues for the board: no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (23 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+The quarter was quiet, but nothing unusual, presumably the sign that current
+versions work as expected.
+No new releae discussed for now.
+
+## Community Health:
+Low activity for both the mailing lists and commits, it usually increases
+at release time or when something needs fixing.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#attachment-BE">2023-12-20</a> &mdash; Yann Ylavic<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing.
+Issues for the board: no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (23 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+Latest apr-1.7.4 was released on 2023-04-16 and apr-util-1.6.3 on 2023-02-01.
+The quarter was quiet, nothing unusual.
+Usual commits/PRs to keep up with new compilers (warnings) and API
+changes for the dependencies.
+After some discussions about the lack of thread-safety for some legacy and
+lightweight DB drivers, it was decided to not address this inside the APR
+but let users select a safe driver or provide their own locking. A new
+thread-safe/lightweight DB driver was contributed and committed to provide
+a native/builtin alternative still.
+
+## Community Health:
+The project remains healthy, though quiet.
+Low activity on the dev@ mailing list and bugzilla/github.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-BH">2023-09-20</a> &mdash; Yann Ylavic<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing.
+Issues for the board: no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (23 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+Northern summertime was quiet, nothing unusual.
+No new release this quarter, latest apr-1.7.4 was released on 2023-04-16
+and apr-util-1.6.3 on 2023-02-01.
+New apr-1.8.0 and apr-util-1.7.0 versions with interesting features are
+considered/discussed for release, though no progress was made this quarter.
+
+## Community Health:
+The project remains healthy, though quiet.
+Low activity on the dev@ mailing list and bugzilla/github.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-BH">2023-06-21</a> &mdash; Yann Ylavic<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Project Status:
+Current project status: ongoing.
+Issues for the board: no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (23 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steffen Land on 2023-03-02.
+- No new committers. Last addition was Steffen Land on 2023-02-27.
+
+## Project Activity:
+The project has released two APR versions this quarter, 1.7.3 with bugfixes and
+improvements (no security issue) and 1.7.4 to address a regression in 1.7.3.
+An apr-1.8.0 version is being prepared with no (needed) rush.
+
+## Community Health:
+The project remains healthy, though quiet.
+Low to moderate (at release time) activity on the dev@ mailing list.
+Low activity on bugzilla/github too, vendors/distros usually provide the patch
+to build with new versions of a dependency software when a compatibility issue
+arises.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-BD">2023-03-22</a> &mdash; Yann Ylavic<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (22 years ago)
+There are currently 69 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Yann Ylavic as new PMC Chair on 2023-02-16.
+- Steffen Land was added as committer on 2023-02-27
+- Steffen Land was added to the PMC on 2023-03-02
+
+Big thanks to Nick Kew for his great service as APR PMC Chair for 6 years!
+
+## Project Activity:
+The project has released one APR and one APR-util versions, including bug
+fixes and addressing three long standing security issues with moderate impact
+ratings. apr-1.7.2 and apr-util-1.6.3 were released on 2023-02-01 after a couple
+of release candidates and un-announced 1.7.1/1.6.2 with tarball issues (new
+release scripts borrowed from httpd left some -rcX in the base directory).
+
+A new github actions/ci system was put in place which greatly helps maintainers'
+work and confidence in the releases quality. It's testing the three linux, macos
+and windows systems. Huge thanks to Ivan Zhakov for this work!
+
+## Community Health:
+The project remains broadly healthy, though quiet.
+Activity increased on the dev@ mailing list mainly due to the release process.
+Bugzilla activity decreased but nothing worrisome given the usual moderate
+traffic.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-BR">2023-02-15</a> &mdash; Nick Kew<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (22 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+Project activity has (as ever) been light, focusing on maintenance
+rather than new development.  Work has been primarily directed towards
+a minor (bugfix) release.  Although it is outside the reporting period,
+a release of APR 1.7.2 and APR-UTIL 1.6.3 took place on Feb. 1st.
+
+As indicated in the last report, your PMC chair has (very recently)
+indicated his wish to step down from that role.
+
+## Community Health:
+The community, being drawn primarily from related ASF projects
+(HTTPD, subversion) serves the needs of those projects as and when
+they arise.  It also remains responsive to issues arising externally.
+
+There is sometimes an issue with platform-specific and (in APR-UTIL)
+system-specific components such as SQL databases, where the expertise
+to maintain interfaces with third-party systems may be thin or outdated.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#section-6BS">2023-01-18</a> &mdash; Nick Kew<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#section-6BI">2022-12-21</a> &mdash; Nick Kew<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-BL">2022-10-19</a> &mdash; Nick Kew<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (22 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+The project remains at low-activity.  A long-overdue new release
+remains stalled, essentially on platform and interface issues where
+correct behaviour is in some question.
+
+## Community Health:
+Metrics from the statistics wizard show activity reducing, with the
+exception of traffic to the dev@ list which is 40% up on the previous
+quarter.  This increase is driven largely by discussion around certain
+commits, typically where refinement has been required.
+
+Whereas several PMC members are active, your chair has been woefully
+absent suffering burnout.  If I am unable to reverse this at least
+partially before the next report falls due, I propose to offer my
+resignation.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#section-6BG">2022-09-21</a> &mdash; Nick Kew<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-BK">2022-07-20</a> &mdash; Nick Kew<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+No current issues for the Board.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (22 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+Towards the end of the period (and ongoing) there has been a sharp
+rise in activity directed towards a new release.  The project has
+otherwise been, as usual, quiet.
+
+## Community Health:
+No real change, though as noted above there has been a recent flurry
+of activity, with increased mailinglist traffic and most strikingly
+commits (up 286% to 174 according to reporter.a.o tools).</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#section-6BE">2022-06-15</a> &mdash; Nick Kew<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-BB">2022-03-16</a> &mdash; Nick Kew<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (21 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+Project activity is (remains) very slow.  There has been some effort in
+forking a new branch 1.8, so that a new 1.7 release can be limited to
+small but important bugfixes without reference to new changes.  The
+community has also agreed to drop what vestigial support remains for
+the long-defunct Netware platform, and platform-specific code has been
+stripped from Trunk.
+
+However, a new release still remains pending several months since
+it was agreed in principle.
+
+## Community Health:
+No change to community health.  There is a long-term issue of low
+activity, manifesting in the delay to a release.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-BE">2021-12-15</a> &mdash; Nick Kew<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+No issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (21 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+As ever, activity has been low, though there have been several fixes
+dealing largely with changes to the operating systems supported.
+It has recently been proposed that remaining vestiges of support for
+operating systems long-abandoned by their erstwhile vendors (specifically
+OS/2 and Netware) be cleanly removed, and that is now likely to happen.
+
+A new release was mooted in September, but progress on that is
+currently stalled.
+
+## Community Health:
+The community remains broadly healthy, but lack of momentum towards
+a proposed release may raise a question over its vigor.  Your humble
+reporter hopes to push the release if noone else steps up.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-BR">2021-10-20</a> &mdash; Nick Kew<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+No issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (21 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+As usual, activity is low.  However, September has seen discussion of a new
+release to bring the release package up-to-date.  It is hoped this may now
+happen in the near future.
+
+## Community Health:
+Again, nothing to report.  The community predominantly revolves around those
+active in ASF projects using APR, including HTTPD and SVN.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#section-6BF">2021-09-15</a> &mdash; Nick Kew<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-AZ">2021-06-16</a> &mdash; Nick Kew<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:]
+No issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (21 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+The project has again been very quiet.
+
+Externally (at github), the apr-tools project has grown to three
+commandline tools harnessing APR/APR-UTIL capabilities.
+
+## Community Health:
+The project is so quiet it's hard to say convincingly it's
+healthy or otherwise.  However it remains responsive when
+issues arise, and is predominantly driven by related ASF
+projects like HTTPD and SVN.</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-BC">2021-03-17</a> &mdash; Nick Kew<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+No issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (20 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+The project has again been quiet.  One matter of possible interest:
+there is a proposal (from a longstanding member of the community) for
+an associated commandline toolkit apr-tools.  The proposer has
+announced the first such tool, currently at github.
+
+No release since 1.7.0 (April 2019), nor is a new release imminent.  In the
+absence of a major bug or security issue, the most likely trigger for a new
+1.7 release is to resolve glitches reported with new/updated toolchains
+including Xcode 12 (Mac) and autoconf 2.69/2.70 (Gnu).
+
+## Community Health
+The community remains stable, with ASF projects using APR always a prime
+focus. As is often the case with APR, there has been no proactive effort,
+but we are responsive to questions and issues raised by users.</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#attachment-AZ">2020-12-16</a> &mdash; Nick Kew<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+No issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (20 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2020-08-29.
+- No new committers. Last addition was Michael Osipov on 2020-08-29.
+
+## Project Activity:
+The project has again been quiet, with small amounts of activity concentrated
+on matters of technical detail in two areas: build toolchains and Windows
+platform esoterica.
+
+No release since 1.7.0 (April 2019), nor is a new release imminent.  In the
+absence of a major bug or security issue, the most likely trigger for a new
+1.7 release is to resolve glitches reported with new/updated toolchains
+including Xcode 12 (Mac) and autoconf 2.69/2.70 (Gnu).
+
+## Community Health
+The community remains stable, with ASF projects using APR always a prime
+focus. As is often the case with APR, there has been no proactive effort,
+but we are responsive to questions and issues raised by users.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-BC">2020-09-16</a> &mdash; Nick Kew<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent
+interface to underlying platform-specific implementations. The primary goal is
+to provide an API to which software developers may code and be assured of
+predictable if not identical behaviour regardless of the platform on which
+their software is built, relieving them of the need to code special-case
+conditions to work around or take advantage of platform-specific deficiencies
+or features.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (20 years ago)
+There are currently 68 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Michael Osipov was added to the PMC on 2020-08-29
+- Michael Osipov was added as committer on 2020-08-29
+
+## Project Activity:
+The project has been very quiet even by APR's standards.  Nothing of interest
+to report.
+
+The most recent release was 1.7.0 in April 2019.
+
+Regarding nh comment on the previous report:
+
+ nh: Has APR looked into expanding the scope with abstractions of
+      modern architecture to get new traction and excitement, or has
+      it decided to remain what it currently is? Examples; GPUs and
+      FPGAs are making in-roads to "general computing", Security
+      Hardware Accelerators, fingerprint sensors are on many
+      laptops,... Just a thought from peanut gallery.
+
+The answer is No and No.  We haven't considered it as of now, but we are
+always open to new proposals if someone is driving them.  If someone comes
+forward with a credible proposal or an existing piece of work that might
+integrate with APR, we would expect to consider that on its merits.
+
+## Community Health
+The community is quiet, reflecting the lack of activity.  Working on the
+principle of "scratch your own itch", noone is itching.  We believe we retain
+the capacity to respond to new proposals or to new issues, though none have
+arisen in the quarter.</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-AZ">2020-06-17</a> &mdash; Nick Kew<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent
+interface to underlying platform-specific implementations. APR provides an API
+to which software developers may code and be assured of predictable if not
+identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+Consistent abstractions are provided both for host platforms and for utilities
+such as databases.  In addition, APR provides a range of general-purpose
+utilities.
+
+## Issues:
+  I'm sorry, I don't know if this merits highlighting here.  It is not
+  an issue of tension or conflict, or any ill feeling.
+  An ongoing issue marked private in this report highlights historic
+  segmentation in our community, with Windows platform expertise being
+  relatively sparse compared to *X.  Our most recent community members
+  have windows expertise, but are dealing with arcane detail while
+  others (including your humble scribe) have nothing to contribute.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (19 years ago)
+There are currently 67 committers and 42 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ivan Zhakov on 2019-11-05.
+- No new committers. Last addition was Evgeny Kotkov on 2017-09-13.
+
+## Project Activity
+Activity has again been low.  Apart from Windows platform issues, the
+main topic of discussion has been the question of back-compatibility
+vs build cleanup for a prospective APR 2.0.
+
+Last releases:
+  APR 1.7.0 was released on April 5th, 2019
+  APR-util 1.6.1 and APR-iconv 1.2.2 were released on October 22nd 2017
+
+## Community Health:
+The community remains stable and broadly healthy.  In the absence of
+substantial new development we are slow to attract interest, but
+neither are we losing people!</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#attachment-BB">2020-03-18</a> &mdash; Nick Kew<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent
+interface to underlying platform-specific implementations. APR provides an API
+to which software developers may code and be assured of predictable if not
+identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+Consistent abstractions are provided both for host platforms and for utilities
+such as databases.  In addition, APR provides a range of general-purpose
+utilities.
+
+## Issues:
+  There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (19 years ago)
+There are currently 67 committers and 42 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ivan Zhakov on 2019-11-05.
+- No new committers. Last addition was Evgeny Kotkov on 2017-09-13.
+
+## Project Activity
+The project has been very quiet in the quarter.  Nothing of note to report.
+
+## Community Health:
+The community remains broadly healthy.  Although there is no significant
+development on the horizon, there is capacity to act if a new need is
+identified, or to react to a security report.</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#attachment-AX">2019-12-18</a> &mdash; Nick Kew<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+No issues at this time.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (19 years ago)
+There are currently 67 committers and 42 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Ivan Zhakov was added to the PMC on 2019-11-05
+- No new committers. Last addition was Evgeny Kotkov on 2017-09-13.
+
+## Project Activity:
+Nothing to report in the project.  Activity has been subdued,
+with a small amount of work focussed on Windows platform issues.
+No milestones are in view.  This may be seen as a reasonable
+baseline state for a project that is stable and mature.
+
+## Community Health:
+The community remains quiet but responsive.  In the short term, no change,
+but perhaps worth noting that we may have improved since a few years ago,
+as relatively-recent team members have somewhat rebalanced the project's
+platform expertise towards Windows where we have at times been thin.</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#attachment-AY">2019-09-18</a> &mdash; Nick Kew<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+
+## Issues:
+  No issues requiring board attention at this time.
+  On a personal note, this reporter has just moved house and currently
+  has no internet connection except a mobile one for the macbook,
+  which is not normally used for development or ASF work.
+
+## Membership Data:
+Apache Portable Runtime (APR) was founded 2000-12-01 (19 years ago)
+There are currently 67 committers and 41 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Evgeny Kotkov on 2017-09-12.
+- No new committers. Last addition was Evgeny Kotkov on 2017-09-13.
+
+## Project Activity:
+Since the release of APR 1.7.0 in April, activity has been modest,
+and focussed on bug fixing.  One new suggestion has been raised:
+a prospective apr-tools subproject providing commandline tools based
+on the library.  The suggestion met with mixed reaction.
+
+## Community Health:
+The community remains long-term stable.  We maintain the steady hand
+of a mature community more than the vigour of a youthful one.</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#attachment-BB">2019-06-19</a> &mdash; Nick Kew<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Portable Runtime (APR) project creates and maintains
+   software libraries that provide a predictable and consistent interface
+   to underlying platform-specific implementations.  There are three
+   sub-projects: APR, APR-UTIL and APR-ICONV, of which the first two
+   are the main focus of developer interest.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+   The project is broadly stable and activity has, as usual, been modest.
+   The highlight of the period was a new release APR-1.7.0, bringing a
+   number of minor updates.  Thanks to Bill Rowe for driving the release.
+
+## Health report:
+ - The project remains quiet but healthy.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Evgeny Kotkov on Wed Sep 13 2017
+
+## Committer base changes:
+
+ - Currently 67 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Evgeny Kotkov at Wed Sep 13 2017
+
+## Releases
+   APR-1.7.0 was released on April 5th, 2019.
+
+## Mailing list activity (from reporter.apache.org):
+
+ - There is no known reason for the modest reduction in subscribers
+   to our dev list, so natural attrition seems likely.
+
+ - dev@apr.apache.org:
+    - 316 subscribers (down -13 in the last 3 months):
+    - 126 emails sent to list (60 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 41 emails sent to list (43 in previous quarter)
+
+## Bugzilla Statistics:
+
+ - 9 Bugzilla tickets created in the last 3 months
+ - 13 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#attachment-AX">2019-03-20</a> &mdash; Nick Kew<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Portable Runtime (APR) project creates and maintains
+   software libraries that provide a predictable and consistent interface
+   to underlying platform-specific implementations.  There are three
+   sub-projects: APR, APR-UTIL and APR-ICONV, of which the first two
+   are the main focus of developer interest.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+   The project is broadly stable, and there has been little activity.
+   Towards the end of the period, it was proposed we push for an
+   APR-1.7 release.  This may be hoped for with APR within the
+   next reporting period.  An APR-UTIL 1.7 release is likely to
+   be further away, as there is more work to be done including some
+   substantial backports from trunk.
+
+## Health report:
+ - The project remains quiet but healthy.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Evgeny Kotkov on Wed Sep 13 2017
+
+## Committer base changes:
+
+ - Currently 67 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Evgeny Kotkov at Wed Sep 13 2017
+
+## Releases:
+
+ - No new releases in the reporting period.  The last release was a
+   bugfix (APR-1.6.5) in September 2018.
+
+## Mailing list activity (from reporter.apache.org):
+
+ - The subscriber base remains stable.
+
+ - dev@apr.apache.org:
+    - 330 subscribers (up 1 in the last 3 months):
+    - 64 emails sent to list (91 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 43 emails sent to list (22 in previous quarter)
+
+## Bugzilla Statistics:
+
+ - 4 Bugzilla tickets created in the last 3 months
+ - 2 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#attachment-AX">2018-12-19</a> &mdash; Nick Kew<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Portable Runtime (APR) project creates and maintains
+   software libraries that provide a predictable and consistent interface
+   to underlying platform-specific implementations.  There are three
+   sub-projects: APR, APR-UTIL and APR-ICONV, of which the first two
+   are the main focus of developer interest.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+ - Most of the activity this quarter has been around the bugfix
+   release in September.  Apart from that, the project has
+   reverted to quiet and stable.
+
+## Health report:
+ - The project remains quiet but healthy.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Evgeny Kotkov on Wed Sep 13 2017
+
+## Committer base changes:
+
+ - Currently 67 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Evgeny Kotkov at Wed Sep 13 2017
+
+## Releases:
+
+ - A bugfix release APR-1.6.5 was released on September 14th 2018.
+   No new releases of APR-UTIL or APR-ICONV.
+
+## Mailing list activity (from reporter.apache.org):
+
+ - The subscriber base remains stable.
+
+ - dev@apr.apache.org:
+    - 328 subscribers (down -1 in the last 3 months):
+    - 91 emails sent to list (198 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 22 emails sent to list (37 in previous quarter)
+
+## Bugzilla Statistics:
+
+ - 5 Bugzilla tickets created in the last 3 months
+ - 2 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#attachment-AV">2018-09-19</a> &mdash; Nick Kew<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Portable Runtime (APR) project creates and maintains
+   software libraries that provide a predictable and consistent interface
+   to underlying platform-specific implementations.  There are three
+   sub-projects: APR, APR-UTIL and APR-ICONV, of which the first two
+   are the main focus of developer interest.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+ - This quarter has seen increased activity in trunk.  The big
+   event is that an APR-JSON module, originally developed by
+   a third-party, has been adopted by the project (the original
+   author has moved on and was happy to donate but not to join
+   the team).  Another activity has been crypto updates
+   reflecting OpenSSL updates and deprecations.
+
+   There have been some platform changes, with Windows updates
+   reserved for future versions, and a bugfix affecting Solaris.
+   The latter calls for a new bugfix release, which is anticipated
+   very shortly.
+
+## Health report:
+ - The project remains basically healthy.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Evgeny Kotkov on Tue Sep 12 2017
+
+## Committer base changes:
+
+ - Currently 67 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Evgeny Kotkov at Wed Sep 13 2017
+
+## Releases:
+
+ - None in the period.  Last release was a joint release of
+   APR-1.6.3, APR-UTIL-1.6.1 and APR-ICONV-1.2.2 in October 2017.
+   A new bugfix release (of APR only) is anticipated in September.
+
+## Mailing list activity:
+
+ - The subscriber base remains stable.  Reasons for renewed activity
+   are described above.
+
+ - dev@apr.apache.org:
+    - 329 subscribers (down -4 in the last 3 months):
+    - 214 emails sent to list (79 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 38 emails sent to list (50 in previous quarter)
+
+   COMMENT: these figures are from reporter.apache.org, but are not
+   consistent, in that the "previous quarter" numbers disagree with
+   those then reported.  The differences are not significant.
+
+## Bugzilla Statistics:
+
+ - 4 Bugzilla tickets created in the last 3 months
+ - 1 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#attachment-AZ">2018-06-20</a> &mdash; Nick Kew<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Portable Runtime (APR) project creates and maintains
+   software libraries that provide a predictable and consistent interface
+   to underlying platform-specific implementations.  There are three
+   sub-projects: APR, APR-UTIL and APR-ICONV, of which the first two
+   are the main focus of developer interest.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+ - This has been a quiet period in a stable project with a slow but
+   comfortable life cycle.  Activity has been low.
+
+## Health report:
+ - Following a new release and a followup release for errata in 2017,
+   activity has fallen back to a now-customary low level.  The
+   underlying condition of the project remains quiet but healthy.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Evgeny Kotkov on Tue Sep 12 2017
+
+## Committer base changes:
+
+ - Currently 67 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Evgeny Kotkov at Wed Sep 13 2017
+
+## Releases:
+
+ - None in the period.  Last release was a joint release of
+   APR-1.6.3, APR-UTIL-1.6.1 and APR-ICONV-1.2.2 in October 2017.
+
+## Mailing list activity:
+
+ - The subscriber base remains stable.  Activity is sharply down
+   as described above.
+
+ - dev@apr.apache.org:
+    - 334 subscribers (down -2 in the last 3 months):
+    - 82 emails sent to list (60 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 52 emails sent to list (42 in previous quarter)
+
+   COMMENT: these figures are from reporter.apache.org, but are not
+   consistent, in that the "previous quarter" numbers disagree with
+   those then reported.  The differences are not significant.
+
+## Bugzilla Statistics:
+
+ - 4 Bugzilla tickets created in the last 3 months
+ - 5 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#attachment-AZ">2018-03-21</a> &mdash; Nick Kew<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Portable Runtime (APR) project creates and maintains
+   software libraries that provide a predictable and consistent interface
+   to underlying platform-specific implementations.  There are three
+   sub-projects: APR, APR-UTIL and APR-ICONV, of which the first two
+   are the main focus of developer interest.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+ - This has been a quiet period in a stable project with a slow but
+   comfortable life cycle.  Activity has been low.
+
+## Health report:
+ - Following a new release and a followup release for errata in 2017,
+   it is to be expected that activity should fall back.  The underlying
+   condition of the project remains quiet but healthy.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Evgeny Kotkov on Tue Sep 12 2017
+
+## Committer base changes:
+
+ - Currently 67 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Evgeny Kotkov at Wed Sep 13 2017
+
+## Releases:
+
+ - None in the period.  Last release was a joint release of
+   APR-1.6.3, APR-UTIL-1.6.1 and APR-ICONV-1.2.2 in October 2017.
+
+## Mailing list activity:
+
+ - The subscriber base remains stable.  Activity is sharply down
+   as described above.
+
+ - dev@apr.apache.org:
+    - 335 subscribers (down -1 in the last 3 months):
+    - 59 emails sent to list (164 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 44 emails sent to list (45 in previous quarter)
+
+
+## Bugzilla Statistics:
+
+ - 8 Bugzilla tickets created in the last 3 months
+ - 3 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#attachment-BD">2017-12-20</a> &mdash; Nick Kew<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Portable Runtime (APR) project creates and maintains
+   software libraries that provide a predictable and consistent interface
+   to underlying platform-specific implementations.  There are three
+   sub-projects: APR, APR-UTIL and APR-ICONV, of which the first two
+   are the main focus of developer interest.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+ - This is a stable project, and new development activity is low.
+ - Total activity has been at an intermediate level, including
+   feedback from the initial 1.6 release in June, and a minor
+   vulnerability report and fix in each of APR and APR-UTIL.
+   A new set of releases on October 22nd fixed the vulnerabilities
+   along with some build issues arising from the unbundling of
+   the third-party "expat" library, and in the case of APR-ICONV
+   to build with modern toolchains on the Windows platform.
+
+## Health report:
+ - The project remains reasonably healthy, with a number of
+   developers active on-list and responsive to reports and questions.
+ - There is a backlog of bugzilla issues going back to 2006.  A high
+   proportion are of indeterminate status.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - Evgeny Kotkov was added to the PMC on Tue Sep 12 2017
+
+## Committer base changes:
+
+ - Currently 67 committers.
+ - Evgeny Kotkov was added as a committer on Wed Sep 13 2017
+
+## Releases:
+
+ - A joint release of APR-1.6.3, APR-UTIL-1.6.1 and APR-ICONV-1.2.2
+   was made on October 22nd.  Thanks to William Rowe for driving
+   the release process.
+
+## Mailing list activity:
+
+ - dev@apr.apache.org:
+    - 335 subscribers (up 4 in the last 3 months):
+    - 167 emails sent to list (145 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 20 subscribers (down -2 in the last 3 months):
+    - 48 emails sent to list (46 in previous quarter)
+
+
+## Bugzilla Statistics:
+
+ - 4 Bugzilla tickets created in the last 3 months
+ - 1 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-AZ">2017-09-20</a> &mdash; Nick Kew<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Portable Runtime (APR) project creates and maintains
+  software libraries that provide a predictable and consistent interface
+  to underlying platform-specific implementations.  The sub-projects
+  which are released somewhat regularly are APR and APR-util.  In
+  addition, the APR-iconv sub-project is commonly used but has not had
+  a release since 2007.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+ - Following the release of APR-1.6.2 and APR-UTIL 1.6.0 at the
+   beginning of the period, activity has reverted to a low level
+   typical of recent years.
+
+## Health report:
+ - The project remains broadly healthy, though quiet.
+
+## PMC changes:
+
+ - Currently 40 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Christophe Jaillet on Sun Oct 30 2016
+
+## Committer base changes:
+
+ - Currently 66 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Ivan Zhakov at Fri Oct 28 2016
+
+## Releases:
+
+ - APR 1.6.2 and APR-UTIL 1.6.0 were released jointly on June 14th 2017.
+
+## Mailing list activity:
+
+    Activity dropped after the release in mid-June.
+    Note: these figures are from reporter.apache.org, and differ
+    from numbers at mail-archives.apache.org.  They also differ from
+    reporter.apache.org's own figures regarding the previous quarter.
+    Differences are small.
+
+ - dev@apr.apache.org:
+    - 331 subscribers (up 1 in the last 3 months):
+    - 118 emails sent to list (333 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 22 subscribers (up 0 in the last 3 months):
+    - 47 emails sent to list (32 in previous quarter)
+
+
+## Bugzilla Statistics:
+
+ - 7 Bugzilla tickets created in the last 3 months
+ - 4 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#attachment-AV">2017-06-21</a> &mdash; Nick Kew<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In
+addition, the APR-iconv sub-project is commonly used but has not had
+a release since 2007.
+
+## Issues:
+   There are no issues requiring board attention at this time.
+
+## Activity:
+ - Activity has been substantially above average as we have worked
+   towards a new release 1.6 of APR and APR-UTIL.
+   Release candidates APR-1.6.0 and APR-UTIL-1.6.0 were tagged on
+   April 15th.  After identifying problems with the APR candidate,
+   further work led to tagging APR-1.6.1 on May 31st, but that too
+   had a problem.
+   Since the end of the period, APR-1.6.2 has been tagged,
+   and voted for release along with APR-UTIL-1.6.0.
+
+## Health report:
+ - The release process has highlighted the difficulty (of which
+   we have long been aware) of supporting platforms outside those
+   regularly used by the core team.  A proposal to help deal with
+   this problem is being floated.
+
+## PMC changes:
+
+ - Currently 40 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Christophe Jaillet on Sun Oct 30 2016
+
+## Committer base changes:
+
+ - Currently 66 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Ivan Zhakov at Fri Oct 28 2016
+
+## Releases:
+
+ - Last releases were APR-1.5.2 on Wed Apr 29 2015 and APR-UTIL-1.5.4
+   on Sept 22 2014.
+
+## Mailing list activity:
+
+ - Increased activity due primarily to release drive.
+   Fewer subscribers: we can only speculate that the increased activity
+   has prompted people who are no longer interested to unsubscribe.
+
+ - dev@apr.apache.org:
+    - 329 subscribers (down -10 in the last 3 months):
+    - 365 emails sent to list (194 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 22 subscribers (up 0 in the last 3 months):
+    - 33 emails sent to list (29 in previous quarter)
+
+
+## Bugzilla Statistics:
+
+ - 4 Bugzilla tickets created in the last 3 months
+ - 3 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2017-03-15"><a href="2017/board_minutes_2017_03_15.html#attachment-AR">2017-03-15</a> &mdash; Nick Kew<a class="headerlink" href="#2017-03-15" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In
+addition, the APR-iconv sub-project is commonly used but has not had
+a release since 2007.
+
+## Issues:
+
+   There are no issues requiring board attention at this time.
+
+## Activity:
+
+ - There has been above-average activity (for this project), as reflected
+   in higher-than-usual traffic on the dev list.  This has comprised
+   several substantive technical discussions, and a brief discussion
+   on the (legacy) problems of bundling a third-party library (expat).
+
+## Health report:
+
+ - Nothing to report, except as above.  Health is unchanged.
+   A new release of APR-1.x is needed to bring a backlog of activity
+   into a released version, including unbundling expat.
+
+## PMC changes:
+
+ - Currently 40 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Christophe Jaillet on Sun Oct 30 2016
+
+## Committer base changes:
+
+ - Currently 66 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Ivan Zhakov at Fri Oct 28 2016
+
+## Releases:
+
+ - Last release was 1.5.2 on Wed Apr 29 2015
+
+## Mailing list activity:
+
+ - The increased traffic to dev@ is a modest spike in regular activity:
+   several extended technical discussions.  There is no reason
+   to suppose it predicts future activity levels.
+
+ - dev@apr.apache.org:
+    - 339 subscribers (down -9 in the last 3 months):
+    - 219 emails sent to list (41 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 22 subscribers (up 1 in the last 3 months):
+    - 31 emails sent to list (37 in previous quarter)
+
+## Bugzilla Statistics:
+
+ - 3 Bugzilla tickets created in the last 3 months
+ - 2 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2016-12-21"><a href="2016/board_minutes_2016_12_21.html#attachment-AP">2016-12-21</a> &mdash; Nick Kew<a class="headerlink" href="#2016-12-21" title="Permalink">&para;</a></h3>
+<pre>## Short version of report:
+
+ No releases, modest activity.  Some growth of the community,
+ and a new PMC chair.
+
+## Description:
+
+ The Apache Portable Runtime (APR) project creates and maintains
+ software libraries that provide a predictable and consistent interface
+ to underlying platform-specific implementations.  The sub-projects
+ which are released somewhat regularly are APR and APR-util.  In
+ addition, the APR-iconv sub-project is commonly used but has not had
+ a release since 2007.
+
+## Issues:
+- The board may be interested in the FOSSA security report,
+  commissioned by the EU commission into Apache HTTPD core
+  and extending into APR.  This was handled by Dirk van Gulik
+  for the ASF.  Summary details in Dirk's email at
+  http://mail-archives.apache.org/mod_mbox/apr-dev/201611.mbox/%3C9643AB52-078F-4779-B80C-9CE39A2121AF%40webweaving.org%3E
+- No issues requiring board attention at this time.
+
+## Activity:
+- Commit activity remains low.
+- Mailing list activity remains low.
+- The number of open issues on Bugzilla is stable.
+
+## Health report:
+- This is a mature project, and most of its development activity is
+  driven by the needs of established users.
+  In this quarter, a new apr_redis module has been introduced.
+- There is little impetus to develop the software further to meet the
+  needs of potential new users.
+- Since a few patches have been languishing committed but unreleased
+  for some time, we have identified a need for a new release and
+  anticipate one within the next quarter.
+
+## Personnel changes:
+
+- Jeff Trawick having indicated his desire to step down from the role
+  of PMC chair, Nick Kew has stepped into that role.
+- Currently 67 committers and 40 PMC members.
+- Christophe Jaillet was added to the PMC in October.
+- Ivan Zhakov joined the team as committer in October.
+
+## Releases:
+
+- No releases in this quarter
+- APR 1.5.2, released April 29, 2015
+- APR-util 1.5.4, released September 22, 2014
+- APR-iconv 1.2.1, released November 26, 2007
+
+## Mailing list activity:
+
+ Traffic has been predominantly of a routine nature.  The increase
+ on last quarter is partially down to discussion of the new apr_redis.
+
+- dev@apr.apache.org:
+   - 349 subscribers (down -9 in the last 3 months):
+   - 66 emails sent to list (43 in previous quarter)
+
+- bugs@apr.apache.org:
+   - 21 subscribers (down -1 in the last 3 months):
+   - 39 emails sent to list (62 in previous quarter)
+
+## Bugzilla Statistics:
+
+- 2 Bugzilla tickets created in the last 3 months
+- 2 Bugzilla tickets resolved in the last 3 months</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#attachment-AQ">2016-09-21</a> &mdash; Jeff Trawick<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>## Short version of report:
+
+  No releases, modest activity, effort to add to our roster, effort to
+  select a new PMC chair underway
+
+## Description:
+
+  The Apache Portable Runtime (APR) project creates and maintains
+  software libraries that provide a predictable and consistent interface
+  to underlying platform-specific implementations.  The sub-projects
+  which are released somewhat regularly are APR and APR-util.  In addition,
+  the APR-iconv sub-project is commonly used but has not had a release
+  since 2007.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+ - Expect a proposed resolution soon for changing the PMC chair
+
+## Activity:
+ - Commit activity has been low.
+ - Mailing list activity has been low.
+ - Thirteen unique, non-accidental bugs were opened during the reporting
+   period, and two had followup (closure or discussion).
+
+## Health report:
+ - This is a mature project, and most of its development activity is
+   driven by the needs of the same small number of applications that have
+   used it for many years.  The project members are more than able to
+   meet the requirements that arise from that use.
+ - The needs of the small number of other users are not met very well;
+   bug reports languish and mailing list posters may not receive timely
+   responses.  The amount of help provided is probably not sufficient
+   to serve as encouragement to potential new users of APR.
+
+## PMC/Committer changes:
+
+ - Currently 66 committers and 39 PMC members.
+ - No new PMC members added in the last 3 months, but we expect to send
+   an invitation shortly after the board notification time has elapsed
+ - Last PMC addition was Yann Ylavic on Wed May 13 2015
+ - No new committers added in the last 3 months; an invitation was
+   sent during the quarter but was declined
+ - Last committer addition was Brian Havard on Wed May 04 2016
+
+## Releases:
+
+ - No releases in this quarter
+ - APR 1.5.2, released April 29, 2015
+ - APR-util 1.5.4, released September 22, 2014
+ - APR-iconv 1.2.1, released November 26, 2007
+
+## Mailing list activity:
+
+ - dev@apr.apache.org:
+    - 356 subscribers
+    - 40 emails sent to list (31 in previous quarter)
+
+ - commits@apr.apache.org:
+    - 75 subscribers
+    - 46 emails sent to list (38 in previous quarter)</pre>
+<h3 id="2016-06-15"><a href="2016/board_minutes_2016_06_15.html#attachment-AS">2016-06-15</a> &mdash; Jeff Trawick<a class="headerlink" href="#2016-06-15" title="Permalink">&para;</a></h3>
+<pre>## Short version of report:
+
+  No releases, no committee/committer changes, modest other activity
+  (Same summary as for the March 2016 report)
+
+## Description:
+
+  The Apache Portable Runtime (APR) project creates and maintains
+  software libraries that provide a predictable and consistent interface
+  to underlying platform-specific implementations.  The sub-projects
+  which are released somewhat regularly are APR and APR-util.  In addition,
+  the APR-iconv sub-project is commonly used but has not had a release
+  since 2007.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+ - APR provided an interim report in May 2016 to address a security
+   response issue.
+
+## Activity:
+ - Commit activity has been low.
+ - Mailing list activity has been very low.
+ - Five unique, non-SPAM bugs were opened during the reporting period, and
+   four had followup (closure or discussion).
+
+## Health report:
+ - This is a mature project, and most of its development activity is
+   driven by the needs of the same small number of applications that have
+   used it for many years.  The project members are more than able to
+   meet the requirements that arise from that use.
+ - The needs of the small number of other users are not met very well;
+   bug reports languish and mailing list posters may not receive timely
+   responses.  The amount of help provided is probably not sufficient
+   to serve as encouragement to potential new users of APR.
+
+## PMC/Committer changes:
+
+ - Currently 66 committers and 39 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Yann Ylavic on Wed May 13 2015
+ - One committer added in the last 3 months
+ - Last committer addition was Brian Havard on Wed May 04 2016
+
+## Releases:
+
+ - No releases in this quarter
+ - APR 1.5.2, released April 29, 2015
+ - APR-util 1.5.4, released September 22, 2014
+ - APR-iconv 1.2.1, released November 26, 2007
+
+## Mailing list activity:
+
+ - dev@apr.apache.org:
+    - 360 subscribers
+    - 30 emails sent to list (86 in previous quarter)
+
+ - commits@apr.apache.org:
+    - 75 subscribers
+    - 34 emails sent to list (59 in previous quarter)</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#attachment-BW">2016-05-18</a> &mdash; Jeff Trawick<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In addition,
+the APR-iconv sub-project is commonly used but has not had a release
+since 2007.
+
+## Reason for this interim report
+
+The project did not respond to a vulnerability report from October
+2015 nor did it respond to pings from the security team until this
+week.  The board requested either an out of band report or working with
+the security team on the need to prevent this in the future.  At this
+point in time, the reporter has been contacted and told of the intention
+to improve the code but not to formally mark the issue as a vulnerability,
+and the security team has been made aware of the essence of the rest of
+this report.
+
+## The essence of the problem
+
+After the reporter's original e-mail there was a small amount of
+discussion, the consensus was that it was not a vulnerability, and there
+was some disagreement on whether certain code should be improved along the
+lines that the reporter suggested, or removed to be more emphatic that APR
+was not promising a certain type of processing in the particular API.
+
+After one ping from the security team, a flurry of e-mails on the issue
+followed but noone took initiative to propose a summary to send to the
+reporter.  After two more pings from the security team, a PMC member
+proposed a summary to send to the reporter; it was ACKed and sent to
+the reporter cc: security@.  (The summary: not a vulnerability, intention
+to improve the code in the next non-emergency release, contact us again
+if you disagree.)
+
+## Action taken to try to prevent this from happening in the future
+
+My best guess at the cause of PMC failure is that the lack of severity of
+the issue combined with the fact that a handful of people participated in
+in the e-mail thread led others to believe that the issue was being handled
+-- i.e., most of the PMC did not note the e-mail thread as an issue to
+be concerned with.  Additionally, there was no recognition of the passage
+of time.
+
+APR had no PMC-level tracking in place to ensure nothing fell through the
+cracks, and no one took enough interest in this particular issue to drive
+it to completion.  I've established a simple tracking mechanism in the APR
+private repository to clearly show the status of outstanding issues.  I
+anticipate that the entire PMC will consider it their shared responsibility
+to ensure that the status of issues is represented there and ignored issues
+raised to the group's attention, even if a relatively small subset is
+working to resolve a particular report.</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#attachment-AW">2016-03-16</a> &mdash; Jeff Trawick<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>## Short version of report:
+
+  No releases, no committee/committer changes, modest other activity
+  (Same summary as for the December 2015 report)
+
+## Description:
+
+  The Apache Portable Runtime (APR) project creates and maintains
+  software libraries that provide a predictable and consistent interface
+  to underlying platform-specific implementations.  The sub-projects
+  which are released somewhat regularly are APR and APR-util.  In addition,
+  the APR-iconv sub-project is commonly used but has not had a release
+  since 2007.
+
+## Activity:
+ - Commit activity has been modest, though much higher than in the previous
+   two quarters even discounting copyright changes.  This brought some small
+   features and compatibility with a newer OpenSSL version.
+ - Mailing list activity has been relatively low.
+ - Six unique bugs were opened during the reporting period, and eight had
+   followup (closure or discussion).
+
+## Health report:
+ - This is a mature project, and most of its development activity is
+   driven by the needs of the same small number of applications that have
+   used it for many years.  The project members are more than able to
+   meet the requirements that arise from that use.
+ - The needs of the small number of other users are not met very well;
+   bug reports languish and mailing list posters may not receive timely
+   responses.  The amount of help provided is probably not sufficient
+   to serve as encouragement to potential new users of APR.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## LDAP committee group/Committership changes:
+
+ - Currently 65 committers and 39 LDAP committee group members.
+ - No new LDAP committee group members added in the last 3 months
+ - Last LDAP committee group addition was Yann Ylavic at Wed May 13 2015
+ - No new committers added in the last 3 months
+ - Last committer addition was Christophe Jaillet at Sat Mar 14 2015
+
+## Releases:
+
+ - No releases in this quarter
+ - APR 1.5.2, released April 29, 2015
+ - APR-util 1.5.4, released September 22, 2014
+ - APR-iconv 1.2.1, released November 26, 2007
+
+## Mailing list activity:
+
+ - dev@apr.apache.org:
+    - 360 subscribers
+    - 86 emails sent to list (103 in previous quarter)
+
+ - commits@apr.apache.org:
+    - 74 subscribers
+    - 59 emails sent to list (9 in previous quarter)</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#attachment-AU">2015-12-16</a> &mdash; Jeff Trawick<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>## Short version of report:
+
+  No releases, no committee/committer changes, modest other activity
+
+## Description:
+
+  The Apache Portable Runtime (APR) project creates and maintains
+  software libraries that provide a predictable and consistent interface
+  to underlying platform-specific implementations.  The sub-projects
+  which are released somewhat regularly are APR and APR-util.  In addition,
+  the APR-iconv sub-project is commonly used but has not had a release
+  since 2007.
+
+## Activity:
+ - Commits have been minuscule.
+ - Mailing list activity has been about normal for the project.
+ - Five unique bugs were opened during the reporting period, and two had
+   followup (closure or discussion).
+
+## Health report:
+ - This is a mature project, and most of its development activity is
+   driven by the needs of the same small number of applications that have
+   used it for many years.  The project members are more than able to
+   meet the requirements that arise from that use.
+ - The needs of the small number of other users are not met very well;
+   bug reports languish and mailing list posters may not receive timely
+   responses.  The amount of help provided is probably not sufficient
+   to serve as encouragement to potential new users of APR.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## LDAP committee group/Committership changes:
+
+ - Currently 65 committers and 39 LDAP committee group members.
+ - No new LDAP committee group members added in the last 3 months
+ - Last LDAP committee group addition was Yann Ylavic at Wed May 13 2015
+ - No new committers added in the last 3 months
+ - Last committer addition was Christophe Jaillet at Sat Mar 14 2015
+
+## Releases:
+
+ - No releases in this quarter
+ - APR 1.5.2, released April 29, 2015
+ - APR-util 1.5.4, released September 22, 2014
+ - APR-iconv 1.2.1, released November 26, 2007
+
+## Mailing list activity:
+
+ - dev@apr.apache.org:
+    - 360 subscribers (up 0 in the last 3 months):
+    - 112 emails sent to list (85 in previous quarter)
+
+ - commits@apr.apache.org:
+    - 73 subscribers (up 1 in the last 3 months):
+    - 9 emails sent to list (20 in previous quarter)</pre>
+<h3 id="2015-09-16"><a href="2015/board_minutes_2015_09_16.html#attachment-C">2015-09-16</a> &mdash; Jeff Trawick<a class="headerlink" href="#2015-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+  The Apache Portable Runtime (APR) project creates and maintains
+  software libraries that provide a predictable and consistent interface
+  to underlying platform-specific implementations.  The sub-projects
+  which are released somewhat regularly are APR and APR-util.  In addition,
+  the APR-iconv sub-project is commonly used but has not had a release
+  since 2007.
+
+## Activity:
+ - Commits have been low, as is typical in a quarter with no release-
+   related activity.
+ - Mailing list activity has also been low aside from a discussion about
+   future APR 2.0, which has had major structural changes implemented
+   (consolidation of APR and APR-util) for a number of years but which
+   thus far has not had the developer support to push it towards a release.
+ - Six bugs were opened during the reporting period, and only one bug had
+   any followup (closure or discussion).
+
+## Health report:
+ - This is a mature project, and most of its development activity is
+   driven by the needs of the same small number of applications that have
+   used it for many years.  The project members are more than able to
+   meet the requirements that arise from that use.
+ - The needs of the small number of other users are not met very well;
+   bug reports languish and mailing list posters may not receive timely
+   responses.  The amount of help provided is probably not sufficient
+   to serve as encouragement to potential new users of APR.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## LDAP committee group/Committership changes:
+
+ - Currently 65 committers and 39 LDAP committee group members.
+ - No new LDAP committee group members added in the last 3 months
+ - Last LDAP committee group addition was Yann Ylavic at Wed May 13 2015
+ - No new committers added in the last 3 months
+ - Last committer addition was Christophe Jaillet at Sat Mar 14 2015
+
+## Releases:
+
+ - No releases in this quarter
+ - APR 1.5.2, released April 29, 2015
+ - APR-util 1.5.4, released September 22, 2014
+ - APR-iconv 1.2.1, released November 26, 2007
+
+## Mailing list activity:
+
+ - dev@apr.apache.org:
+    - 360 subscribers (up 3 in the last 3 months):
+    - 85 emails sent to list (135 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 19 subscribers (up 0 in the last 3 months):
+    - 26 emails sent to list (55 in previous quarter)</pre>
+<h3 id="2015-06-17"><a href="2015/board_minutes_2015_06_17.html#attachment-E">2015-06-17</a> &mdash; Jeff Trawick<a class="headerlink" href="#2015-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+  The Apache Portable Runtime (APR) project creates and maintains
+  software libraries that provide a predictable and consistent interface
+  to underlying platform-specific implementations.  The sub-projects
+  which are released somewhat regularly are APR and APR-util.  In addition,
+  the APR-iconv sub-project is commonly used but has not had a release
+  since 2007.
+
+## Activity:
+
+- Mailing list activity was relatively heavy during discussion of APR
+  1.5.2 (released this quarter) but has been minimal since then.
+
+- Commit activity has been low since APR 1.5.2 was released.
+
+- Six bugs were opened during the reporting period, and around
+  fifteen bugs had followup (closure or discussion) during the period.
+  (A number of these with followup were fixed in APR 1.5.2.)
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## PMC/Committership changes:
+
+ - Currently 65 committers and 39 PMC members in the project.
+ - Yann Ylavic was added to the PMC on Wed May 13 2015
+ - Christophe Jaillet was added as a committer on Sat Mar 14 2015
+
+## Releases:
+
+ - 1.5.2 was released on Wed Apr 29 2015
+
+## Mailing list activity:
+
+ - dev@apr.apache.org:
+    - 357 subscribers (down -2 in the last 3 months):
+    - 136 emails sent to list (55 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 19 subscribers (up 1 in the last 3 months):
+    - 54 emails sent to list (27 in previous quarter)</pre>
+<h3 id="2015-03-18"><a href="2015/board_minutes_2015_03_18.html#attachment-E">2015-03-18</a> &mdash; Jeff Trawick<a class="headerlink" href="#2015-03-18" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In addition,
+the APR-iconv sub-project is commonly used but has not had a release
+since 2007.
+
+Releases
+========
+The project has not produced any releases this quarter.  APR 1.5.1 was
+released on April 21, 2014.  APR-util 1.5.3 was released on November 18,
+2013.
+
+A maintenance release of APR is needed, and should be anticipated this
+quarter.  (This is essentially the same statement as in the prior APR
+board report; no release was prepared since that report.)
+
+Community
+=========
+Currently APR has 64 committers and 38 PMC members.
+
+New PMC members: none
+The last new PMC member was added in November of 2013.
+
+New committers: none
+The last two committers were added in June of 2014.
+
+From reporter.apache.org:
+
+ - dev@apr.apache.org:
+    - 360 subscribers (down -5 in the last 3 months):
+    - 60 emails sent to list (71 in previous quarter)
+
+ - bugs@apr.apache.org:
+    - 18 subscribers (down -1 in the last 3 months):
+    - 28 emails sent to list (65 in previous quarter)
+
+Activity
+========
+
+Mailing list activity has been the lightest in this quarter (thus far) as
+in any quarter in the history of the project.  (The same statement was
+valid for the previous quarter.)
+
+Commit activity is low.
+
+Seven bugs were opened during the reporting period.  Only one bug has had
+any developer followup (closure or discussion) during the period, and only
+because the chair noticed a problematic bug report while preparing this
+report.
+
+Issues
+======
+There are no board-level issues at this time.  That being said, project
+members should be aware of the need to react more quickly to users, at the
+very least to offer encouragement to those submitting patches in hopes of
+growing the developer community.</pre>
+<h3 id="2014-12-17"><a href="2014/board_minutes_2014_12_17.html#attachment-E">2014-12-17</a> &mdash; Jeff Trawick<a class="headerlink" href="#2014-12-17" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In addition,
+the APR-iconv sub-project is commonly used but has not had a release
+since 2007.
+
+Releases
+========
+The project has not produced any releases this quarter.  APR 1.5.1 was
+released on April 21, 2014.  APR-util 1.5.3 was released on November 18,
+2013.
+
+A maintenance release of APR is needed, and should be anticipated in
+early 2015.
+
+Community
+=========
+New PMC members: none
+The last new PMC member was added in November of 2013.
+
+New committers: none
+The last two committers were added in June of 2014.
+
+Six bugs were opened during the reporting period, with some sort
+of developer followup (closure or discussion) on four bugs.
+
+Mailing list activity has been the lightest in this quarter (thus far) as
+in any quarter in the history of the project.
+
+Development
+===========
+Nothing to report
+
+Issues
+======
+There are no board-level issues at this time.</pre>
+<h3 id="2014-09-17"><a href="2014/board_minutes_2014_09_17.html#attachment-C">2014-09-17</a> &mdash; Jeff Trawick<a class="headerlink" href="#2014-09-17" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In addition,
+the APR-iconv sub-project is commonly used but has not had a release
+since 2007.
+
+Releases
+========
+The project has not produced any releases this quarter.  APR 1.5.1 was
+released on April 21, 2014.  APR-util 1.5.3 was released on November 18,
+2013.
+
+Community
+=========
+New PMC members: none
+The last new PMC member was added in November of 2013.
+
+Two committers were added during the quarter, both existing committers
+on other ASF projects:
+
+  Takashi Soto
+  Yann Ylavic
+
+Nine bugs were opened during the reporting period, with some sort
+of developer followup (closure or discussion) on eight bugs.
+
+Mailing list activity has been very light this quarter, mostly related
+to a handful of code issues.
+
+Development
+===========
+Nothing to report
+
+Issues
+======
+There are no board-level issues at this time.</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#attachment-D">2014-06-18</a> &mdash; Jeff Trawick<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In addition,
+the APR-iconv sub-project is commonly used but has not had a release
+since 2007.
+
+Releases
+--------
+APR 1.5.1 was released on April 21, 2014.  APR-util 1.5.3 was
+released on November 18, 2013.
+
+Community
+---------
+New PMC members: none
+The last new PMC member was added in November of 2013.
+
+New committers: none
+The last new committer was added in March of 2013.
+
+Seven bugs were opened during the reporting period, with some
+sort of developer followup (closure or discussion) on fifteen
+bugs.
+
+Mailing list activity has been modest this quarter.  The
+most active topics have been APR 1.5.1 release issues, the
+new APR 1.6.x branch, and a few potential features.
+
+Development
+-----------
+A new 1.6.x branch for APR has been created with a handful
+of new API features and new memory debugging capabilities.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#attachment-C">2014-03-19</a> &mdash; Jeff Trawick<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In addition,
+the APR-iconv sub-project is commonly used but has not had a release
+since 2007.
+
+Releases:
+---------
+Nothing was released this quarter.  APR 1.5.0 and APR-util 1.5.3 were
+released November 18, 2013.
+
+Community
+---------
+
+New PMC members: none
+The last new PMC member was added in November of 2013.
+
+New committers: none
+The last new committer was added in March of 2013.
+
+Ten bugs were opened during the reporting period, with some
+sort of developer followup (closure or discussion) on four bugs.
+(Additionally, a number of bugs that had been left open after
+being fixed in older releases have been cleaned up.)
+
+Mailing list activity has been very quiet this quarter, with no
+release activity and limited discussion of bugs.
+
+Development
+-----------
+Development has been very light this quarter.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2013-12-18"><a href="2013/board_minutes_2013_12_18.html#attachment-D">2013-12-18</a> &mdash; Jeff Trawick<a class="headerlink" href="#2013-12-18" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In addition,
+the APR-iconv sub-project is commonly used but has not had a release
+since 2007.
+
+Releases:
+---------
+APR 1.5.0 and APR-util 1.5.3 were released November 18, 2013.
+
+Notification was provided that the legacy APR 0.9.x and APR-util
+0.9.x branches, last released in 2011 and 1010, have been retired
+and will receive no further security patches or releases.  These
+branches were used primarily by Apache HTTP Server 2.0.x, which
+has also been retired.
+
+Community
+---------
+
+New PMC members: Greg Smith
+
+New committers: none
+The last new committer was added in March of 2013.
+
+Four bugs were opened during the reporting period, with some
+sort of developer followup (closure or discussion) on four bugs.
+
+Mailing list activity has been relative heavy, dominated by
+issues being resolved in this quarter's releases.
+
+Development
+-----------
+Development was relatively heavy during the quarter as several
+new features were readied for their first release with APR 1.5.0.
+(For comparison, there have not been as many commits during a
+quarter since Spring of 2011.)
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2013-09-18"><a href="2013/board_minutes_2013_09_18.html#attachment-B">2013-09-18</a> &mdash; Jeff Trawick<a class="headerlink" href="#2013-09-18" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.  The sub-projects
+which are released somewhat regularly are APR and APR-util.  In addition,
+the APR-iconv sub-project is commonly used but has not had a release
+since 2007.
+
+Releases
+--------
+APR 1.4.8 was released on June 21, 2013.  The previous stable
+APR-util release was in April of 2013.
+
+The most recent release of the legacy APR 0.9.x branch was in
+September of 2011.  The most recent release of the legacy
+APR-util 0.9.x branch was in October of 2010.  Both of these
+legacy branches were used primarily by Apache HTTP Server 2.0 (retired),
+so additional releases of these branches are unlikely.
+
+Community
+---------
+
+New PMC members: none
+The last new PMC member was added in November of 2011.
+
+New committers: none
+The last new committer was added in March of 2013.
+
+About 12 bugs were opened during the reporting period, with some
+sort of developer followup (closure or discussion) on 5 bugs.
+
+Mailing list activity has been modest this quarter, dominated by
+a couple of Windows-specific issues.
+
+Development
+-----------
+Activity has been low overall.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2013-06-19"><a href="2013/board_minutes_2013_06_19.html#attachment-B">2013-06-19</a> &mdash; Jeff Trawick<a class="headerlink" href="#2013-06-19" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.
+
+Releases
+--------
+APR-util 1.5.2 was released on April 4, 2013.  A release of APR 1.4.7
+was attempted, but a regression was found prior to release and it
+was cancelled.  We anticipate that a potential APR 1.4.x release
+wlll be tagged soon and prepared for testing.
+
+The previous stable APR release was in February of 2012.
+
+The most recent release of the legacy APR 0.9.x branch was in
+September of 2011.  The most recent release of the legacy
+APR-Util 0.9.x branch was in October of 2010.
+
+Community
+---------
+
+New PMC members: none
+
+New committers: Gregg Smith (avail id gsmith)
+
+About 7 bugs were opened during the reporting period, with some
+sort of activity on 29 bugs.
+
+Mailing list activity is very modest though the activity was higher
+than normal this quarter due to discussions around two possible
+releases.
+
+Development
+-----------
+Activity has been higher than the last couple of quarters, primarily
+consisting of bug fixes for stable releases.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2013-03-20"><a href="2013/board_minutes_2013_03_20.html#attachment-C">2013-03-20</a> &mdash; Jeff Trawick<a class="headerlink" href="#2013-03-20" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.
+
+Releases
+--------
+There have been no new releases during the quarter.  Discussion
+has begun around the future next APR-util 1.5.x release.
+
+The previous stable APR release was in February of 2012, and the
+previous stable APR-Util release was in October of 2012.
+
+The most recent release of the legacy APR 0.9.x branch was in
+September of 2011.  The most recent release of the legacy
+APR-Util 0.9.x branch was in October of 2010.
+
+Community
+---------
+New PMC members or committers: none
+
+Votes for two possible committers are on-going at the time of
+this report.
+
+About 13 bugs have been opened during the reporting period, with
+4 bugs resolved.  (Progress was made on 3 other bugs.)
+
+Mailing list activity is minimal and is slightly less than in the
+previous quarter.
+
+Development
+-----------
+Activity has been minimal.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#attachment-D">2012-12-19</a> &mdash; Jeff Trawick<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.
+
+Releases
+--------
+APR-util 1.5.1 was released in October, 2012.  This was a feature-
+bearing release since it was the first release from the 1.5.x
+branch.  In addition, a number of bugs were fixed.  With this
+release, the existing APR-Util 1.4.x branch is unlikely to see
+any further activity.
+
+The previous stable APR release was in February of 2012.  The
+most recent release of the legacy APR 0.9.x branch was in
+September of 2011.  The most recent release of the legacy
+APR-Util 0.9.x branch was in October of 2010.
+
+Community
+---------
+New PMC members or committers: none
+
+About 10 bugs have been opened during the reporting period, with
+about 4 bugs resolved.  (Progress was made on a handful of
+other bugs.)
+
+Mailing list activity has decreased significantly from the previous
+quarter.  (Discussion around the new APR-util 1.5.1 release had
+largely completed by the end of the previous quarter.)
+
+Development
+-----------
+Activity has been minimal.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2012-09-19"><a href="2012/board_minutes_2012_09_19.html#attachment-A">2012-09-19</a> &mdash; Jeff Trawick<a class="headerlink" href="#2012-09-19" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.
+
+Releases
+--------
+
+No new versions have been released this quarter, though APR-util 1.5.1
+is currently being tested.  A previous candidate, APR-util 1.5.0, was
+not released.
+
+The previous stable APR release was in February of 2012 and the
+previous stable APR-util release was in December of 2011.  The
+most recent release of the legacy APR 0.9.x branch was in
+September of 2011.
+
+Community
+---------
+New PMC members or committers: none
+
+About 15 bugs have been opened during the reporting period, with
+about 7 bugs resolved.
+
+Mailing list activity has decreased from the previous quarter.
+
+Development
+-----------
+Activity has been moderate compared with recent reporting periods,
+with most activity centered around APR-util 1.5.x and preparing
+the initial release of that branch.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2012-06-20"><a href="2012/board_minutes_2012_06_20.html#attachment-C">2012-06-20</a> &mdash; Jeff Trawick<a class="headerlink" href="#2012-06-20" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.
+
+Releases
+--------
+
+No new versions have been released this quarter and none are in
+progress.  The previous stable APR release was in February of 2012
+and the previous stable APR-util release was in December of 2011.
+The most recent release of the legacy APR 0.9.x branch was in
+September of 2011.
+
+Community
+---------
+New PMC members or committers: none
+
+About 4 bugs have been opened during the reporting period, with
+2 bugs resolved.
+
+Mailing list activity has decreased sharply during the quarter, as
+is typical when a new release is not being discussed.
+
+Development
+-----------
+Activity has been minimal, with a handful of fixes committed to the
+stable branches of APR and APR-util.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2012-03-21"><a href="2012/board_minutes_2012_03_21.html#attachment-B">2012-03-21</a> &mdash; Jeff Trawick<a class="headerlink" href="#2012-03-21" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.
+
+Releases
+--------
+
+apr-util 1.4.1 was in progress at the time of the previous board
+report and was released December 15, 2011.  This was the first
+release from this branch and introduced several new features,
+the most important of which is access to certain crypto capabilities
+in other libraries.  The branch had been in development for several
+years without a release.  (Subsequent httpd releases switched
+from apr-util 1.3.latest to apr-util 1.4.1 for those httpd release
+tarballs.)
+
+apr 1.4.6 was released February 14, 2012.  It included various
+bug fixes from committers and users.  Notably, it included a change
+to the hashing algorithm to randomize hashes.  This was initially
+assigned a CVE id, but it is not considered a security fix in APR.
+(The change may or may not help resolve a vulnerability in an
+application which uses APR.  We are not aware of any such
+vulnerabilities at this time.)
+
+The most recent release of the legacy APR 0.9.x branch was in
+September 2011.
+
+Community
+---------
+New PMC members or committers: none
+
+Only 2 bugs have been closed during the reporting period, with
+about 12 new ones opened.
+
+Mailing list activity has increased dramatically during the quarter
+but has been concentrated on three topics:
+
+* finalization of the apr-util 1.4.1 release
+* the apr 1.4.6 release
+* hash collision vectors
+
+Development
+-----------
+Activity has been minimal aside from the three topics listed
+previously.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2011-12-21"><a href="2011/board_minutes_2011_12_21.html#attachment-A">2011-12-21</a> &mdash; Jeff Trawick<a class="headerlink" href="#2011-12-21" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.
+
+Releases
+--------
+
+The first apr-util 1.4.x release is in progress.  The 1.4.x branch
+maintains the interfaces of the 1.3.x branch (the stable branch since
+June 2008) and introduces several new features, the most important
+of which is access to certain crypto capabilities in other libraries.
+The branch has been in development for several years without a release.
+
+The active branches had releases in May of this year.  The most
+recent release of any branch was of the legacy APR 0.9.x branch in
+September 2011.
+
+Community
+---------
+New PMC members or committers: none
+
+The number of open bugs and enhancement requests has grown slightly
+to 138 during the current reporting period, with little developer
+activity focused on them, such that the newly opened bugs are mostly
+unaddressed.
+
+Mailing list activity has increased dramatically due to the activity
+around the apr-util 1.4.x release, but is otherwise very low.
+
+Development
+-----------
+Activity has been minimal other than resolving issues found while
+preparing and testing the apr-util 1.4.x release.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2011-09-21"><a href="2011/board_minutes_2011_09_21.html#attachment-B">2011-09-21</a> &mdash; Jeff Trawick<a class="headerlink" href="#2011-09-21" title="Permalink">&para;</a></h3>
+<pre>The Apache Portable Runtime (APR) project creates and maintains
+software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations.
+
+Releases
+--------
+
+Version 0.9.20 of the legacy APR 0.9 series was released September
+16, 2011 to deliver a security fix which was already available in
+the current series.
+
+(The active branches had releases in May of this year.)
+
+Community
+---------
+New PMC members or committers: none
+
+The number of open bugs and enhancement requests has grown slightly
+to 133 during the current reporting period, with little developer
+activity focused on them, such that the newly opened bugs are mostly
+unaddressed.
+
+Mailing list activity is relatively low at present.
+
+Development
+-----------
+Activity has been minimal.
+
+Issues
+------
+There are no board-level issues at this time.</pre>
+<h3 id="2011-06-15"><a href="2011/board_minutes_2011_06_15.html#attachment-A">2011-06-15</a> &mdash; Jeff Trawick<a class="headerlink" href="#2011-06-15" title="Permalink">&para;</a></h3>
+<pre>Releases
+--------
+
+After just over a year with no releases in the current stable APR series,
+1.4.4 and 1.4.5 were released in quick succession, first to resolve a
+vulnerability affecting some APR applications, then to resolve regressions
+in 1.4.4.
+
+The current stable APR-Util series also had two releases in quick
+succession -- 1.3.11 and 1.3.12.
+
+Community
+---------
+
+New PMC members or committers: none
+
+As of June 10, sixteen bugs and enhancements have been opened during
+the current quarter, but the total number of outstanding bugs and
+enhancements, 126, is almost exactly the same as last quarter,
+indicating that at least a moderate amount of attention is being paid
+to these reports.
+
+Mailing list activity has grown significantly since last quarter,
+due mostly to a small set of topics which generated a lot of discussion.
+
+Development
+-----------
+
+Efforts in support of APR-Util 1.next and APR 2.0 have been revived
+in recent weeks.  APR and APR-Util have been largely in maintenance
+mode for several years, but there are some new features, as well as
+a major packaging change, awaiting release for some time.
+
+Issues
+------
+
+There are no board-level issues at this time.</pre>
+<h3 id="2011-03-16"><a href="2011/board_minutes_2011_03_16.html#attachment-A">2011-03-16</a> &mdash; Jeff Trawick<a class="headerlink" href="#2011-03-16" title="Permalink">&para;</a></h3>
+<pre>Releases
+--------
+
+There have been no releases of APR, APR-util, or APR-iconv in
+the last quarter.  It has been nearly a year since the last
+release of the current stable branch of APR, and there are a
+number of bug fixes awaiting release.
+
+In the last quarter's report, a release of APR was anticipated
+by the end of December but that did not take place.  A new release
+in the coming quarter will be important.
+
+Community
+---------
+
+New PMC members: Stefan Fritsch
+
+New committers:  none
+
+There are no obvious candidates for committership at present, as
+the typical contributor, other than current committers, has an
+issue or two of interest to them and then disappears.
+
+Approximately 46 feature requests and 75 bug reports are open at
+this time, about the same as last quarter.  About 11 of these were
+reported in the last six months.
+
+Mailing list activity has diminished significantly since last
+quarter, primarily due to the lack of a release to discuss.  In
+general, mailing list activity has been low.
+
+Development
+-----------
+
+APR and APR-Util are in maintenance mode.  Only a few small
+features have been added in the last year, and these have not been
+released.  There is no consensus for releasing newer 1.x branches
+(where some features have been added) or 2.0 (where some additional
+features have been added, and some incompatible changes have been
+made).
+
+Issues
+------
+
+There are no board-level issues at this time.</pre>
+<h3 id="2010-12-15"><a href="2010/board_minutes_2010_12_15.html#attachment-A">2010-12-15</a> &mdash; Jeff Trawick<a class="headerlink" href="#2010-12-15" title="Permalink">&para;</a></h3>
+<pre>Releases
+--------
+
+APR 0.9.19 and APR-Util 0.9.19
+- Released October 17, 2010; four security issues were among the bug
+  fixes.  Two of the security fixes had been available for some time
+  as patches.
+- These are legacy releases primarily for Apache httpd 2.0.x.
+
+APR-Util 1.3.10
+- Released October 4, 2010; two security fixes were among numerous bug
+  fixes.  A lot of time was spent with current Bugzilla reports,
+  particularly those with patches from the community, prior to this
+  release.
+- This is the current stable branch.
+
+There are tentative plans for a release of the current APR stable
+branch in late December 2010.
+
+Community
+---------
+
+New PMC members: Eric Covener
+                 Rainer Jung
+
+New committer:  Sander Temme
+
+Approximately 45 feature requests and 75 bug reports are open at this
+time.  (Last quarter, about five more bug reports were open)
+
+Mailing list activity increased dramatically in October due to
+discussions of pending releases.  Otherwise, activity has been lower
+than corresponding months in the previous year.
+
+Development
+-----------
+
+APR and APR-Util are in maintenance mode.  The last feature change to
+APR/APR-Util trunk was in April.
+
+Issues
+------
+
+There are no board-level issues at this time.
+
+An ongoing project-level concern is to ensure that adequate attention
+is paid to members of the broader community reporting bugs and/or
+providing patches.</pre>
+<h3 id="2010-09-22"><a href="2010/board_minutes_2010_09_22.html#attachment-A">2010-09-22</a> &mdash; Jeff Trawick<a class="headerlink" href="#2010-09-22" title="Permalink">&para;</a></h3>
+<pre>Releases
+--------
+
+There have been no new releases from the APR project in this period.  There
+are a handful of fixes ready to release in the current stable branches of
+both APR and APR-Util.
+
+Community
+---------
+
+New committers: Dan Poirier
+                Philip M. Gollucci
+                Stefan Fritsch
+                Rainer Jung
+                Paul J. Reder
+                Neil Conway
+
+Of these six, Neil is new to the ASF as a committer, while the others have
+been committers on other ASF projects.
+
+Additionally, commit access was offered to another member of the community
+-- Kevac Marko -- but no response was received.
+
+This relatively high influx of committers represents a thorough search of
+candidates for committership and subsequent discussion among PMC members.
+
+Approxmiately 45 feature requests and 80 bug reports are open at this time.
+
+Mailing list activity has been relatively low for the past four to five
+months. (One cause may be that there have been no proposed releases being
+discussed or voted on.)
+
+Development
+-----------
+
+APR and APR-Util are mostly in maintenance mode.  The bulk of the commits in
+this quarter have been for compatibility with more build tool versions or
+for general cleanup.
+
+Issues
+------
+
+There are no board-level issues at this time.
+
+An ongoing project-level concern is to ensure that adequate attention is
+paid to members of the broader community reporting bugs and/or providing
+patches.</pre>
+<h3 id="2010-06-16"><a href="2010/board_minutes_2010_06_16.html#attachment-B">2010-06-16</a> &mdash; Bojan Smojver<a class="headerlink" href="#2010-06-16" title="Permalink">&para;</a></h3>
+<pre>Releases
+--------
+
+No new releases of APR and APU in this period.
+
+Community
+---------
+
+New committer: Hyrum K. Wright
+
+Change of chair: Bojan Smojver stepped down, Jeff Trawick voted new chair
+
+Development
+-----------
+
+APR and APU is mostly in maintenance mode, with commits and patches to the
+list addressing various issues.
+
+Issues
+------
+
+Change of chair special order.</pre>
+<h3 id="2010-03-17"><a href="2010/board_minutes_2010_03_17.html#attachment-A">2010-03-17</a> &mdash; Bojan Smojver<a class="headerlink" href="#2010-03-17" title="Permalink">&para;</a></h3>
+<pre>The activity on the project in the last 3 months (Dec 14 2009 to Mar 15 2010)
+was as follows:
+
+APR trunk:        99 commits
+APR 1.5.x:        14 commits
+APR util 1.5.x:    8 commits
+APR 1.4.x:        24 commits
+APR util 1.4.x:   10 commits
+APR 1.3.x:        19 commits
+APR util 1.3.x:    2 commits
+APR 0.9.x:         1 commits
+APR util 0.9.x:    1 commits
+APR iconv trunk:   0 commits
+APR iconv 0.9.x:   0 commits
+site:              3 commits
+
+Current stable releases of APR are 1.4.2 and 1.3.12, released Jan 26 2010 and
+Feb 11 2010, respectively. Legacy release 0.9.18 remained current + 1
+security patch.
+
+Current stable release of APR util is 1.3.9, released Aug 6 2009. Legacy
+release 0.9.17 remained current + 1 security patch.
+
+Current stable APR iconv release is 1.2.1, released Nov 15 2007.
+
+As of Mar 15 2010, there were 108 APR related bugs outstanding in Bugzilla.</pre>
+<h3 id="2009-12-16"><a href="2009/board_minutes_2009_12_16.html#attachment-A">2009-12-16</a> &mdash; Bojan Smojver<a class="headerlink" href="#2009-12-16" title="Permalink">&para;</a></h3>
+<pre>The activity on the project in the last 3 months (Sep 20 2009 to Dec 14
+2009) was as follows:
+
+APR trunk:        61 commits
+APR 1.5.x:        56 commits*
+APR util 1.5.x:   17 commits*
+APR 1.4.x:        57 commits
+APR util 1.4.x:   16 commits
+APR 1.3.x:        30 commits
+APR util 1.3.x:   10 commits
+APR 0.9.x:         0 commits
+APR util 0.9.x:    0 commits
+APR iconv trunk:   0 commits
+APR iconv 0.9.x:   0 commits
+site:             10 commits
+
+* These were copied from 1.4.x recently, so the number of commits
+actually reflects mostly activity on the 1.4.x branch.
+
+Current stable release of APR is 1.3.9, released Sep 25 2009. Legacy
+release 0.9.18 remained current + 1 security patch.
+
+Current stable release of APR util is 1.3.9, released Aug 6 2009. Legacy
+release 0.9.17 remained current + 1 security patch.
+
+Current stable APR iconv release is 1.2.1, released Nov 15 2007.
+
+As of Dec 14 2009, there were 99 APR related bugs outstanding in Bugzilla.
+
+Preparations are under way to release APR and APR util 1.4.x.</pre>
+<h3 id="2009-09-23"><a href="2009/board_minutes_2009_09_23.html#attachment-B">2009-09-23</a> &mdash; Bojan Smojver<a class="headerlink" href="#2009-09-23" title="Permalink">&para;</a></h3>
+<pre>The activity on the project in the last 3 months (Jun 18 2009 to Sep 20
+2009) was as follows:
+
+APR trunk:        95 commits
+APR util trunk:    0 commits (obsolete)
+APR 1.4.x:        32 commits
+APR util 1.4.x:   22 commits
+APR 1.3.x:        38 commits
+APR util 1.3.x:   29 commits
+APR 0.9.x:        11 commits
+APR util 0.9.x:    6 commits
+APR iconv trunk:   0 commits
+APR iconv 0.9.x:   0 commits
+site:             27 commits
+
+Current stable release of APR is 1.3.8, released Aug 6 2009. Legacy
+release 0.9.18 received a security patch for the CVE mentioned below.
+
+Current stable release of APR util is 1.3.9, released Aug 6 2009. Legacy
+release 0.9.17 received a security patch for the CVE mentioned below.
+
+Current stable APR iconv release is 1.2.1, released Nov 15 2007.
+
+A security issue has been fixed in the latest round of releases and
+patches:
+
+CVE-2009-2412: Overflow in pools and rmm, due to size alignment.
+
+As of Sep 13 2009, there were 88 APR related bugs outstanding in
+Bugzilla.</pre>
+<h3 id="2009-07-15"><a href="2009/board_minutes_2009_07_15.html#attachment-B">2009-07-15</a> &mdash; Bojan Smojver<a class="headerlink" href="#2009-07-15" title="Permalink">&para;</a></h3>
+<pre>The activity on the project in the last 3 months (Mar 9 2009 to Jun 18
+2009) was as follows:
+
+APR trunk:      100 commits
+APR util trunk:   2 commits
+APR 1.4.x:       10 commits
+APR util 1.4.x:  15 commits
+APR 1.3.x:       14 commits
+APR util 1.3.x:  22 commits
+APR 0.9.x:        4 commits
+APR util 0.9.x:   8 commits
+APR iconv trunk:  0 commits
+APR iconv 0.9.x:  0 commits
+site:             8 commits
+
+Current stable release of APR is 1.3.5, released Jun 5 2009. Legacy
+release 0.9.18 occurred on the same day.
+
+Current stable release of APR util is 1.3.7, released Jun 5 2009. Legacy
+release 0.9.17 occurred on the same day.
+
+Current stable APR iconv release is 1.2.1, released Nov 15 2007.
+
+Several security issues have been fixed in the latest round of releases:
+
+CVE-2009-1955: apr-util billion laughs attack
+CVE-2009-1956: apr-util single NULL byte buffer overflow
+CVE-2009-0023: apr-util heap buffer underwrite
+
+On the development front, the trunk of apr-util has been folded into
+apr. From version 2.0 onward, these two will be one and the same
+library.</pre>
+<h3 id="2009-06-17"><a href="2009/board_minutes_2009_06_17.html#attachment-B">2009-06-17</a> &mdash; Bojan Smojver<a class="headerlink" href="#2009-06-17" title="Permalink">&para;</a></h3>
+<pre>The activity on the project in the last 3 months (Mar 9 2009 to Jun 18
+2009) was as follows:
+
+APR trunk:      100 commits
+APR util trunk:   2 commits
+APR 1.4.x:       10 commits
+APR util 1.4.x:  15 commits
+APR 1.3.x:       14 commits
+APR util 1.3.x:  22 commits
+APR 0.9.x:        4 commits
+APR util 0.9.x:   8 commits
+APR iconv trunk:  0 commits
+APR iconv 0.9.x:  0 commits
+site:             8 commits
+
+Current stable release of APR is 1.3.5, released Jun 5 2009. Legacy release
+0.9.18 occurred on the same day.
+
+Current stable release of APR util is 1.3.7, released Jun 5 2009. Legacy
+release 0.9.17 occurred on the same day.
+
+Current stable APR iconv release is 1.2.1, released Nov 15 2007.
+
+Several security issues have been fixed in the latest round of releases:
+
+CVE-2009-1955: apr-util billion laughs attack
+CVE-2009-1956: apr-util single NULL byte buffer overflow
+CVE-2009-0023: apr-util heap buffer underwrite
+
+On the development front, the trunk of apr-util has been folded into apr. From
+version 2.0 onward, these two will be one and the same library.</pre>
+<h3 id="2009-03-18"><a href="2009/board_minutes_2009_03_18.html#attachment-B">2009-03-18</a> &mdash; Bojan Smojver<a class="headerlink" href="#2009-03-18" title="Permalink">&para;</a></h3>
+<pre>The activity on the project in the last 3 months (Dec 9 2008 to Mar 9
+2009) was as follows:
+
+APR trunk:      101 commits
+APR util trunk:  32 commits
+APR 1.4.x:       17 commits
+APR util 1.4.x:  27 commits
+APR 1.3.x:       13 commits
+APR util 1.3.x:  16 commits
+APR 0.9.x:        0 commits
+APR util 0.9.x:   1 commit
+APR iconv trunk:  0 commits
+APR iconv 0.9.x:  0 commits
+site:             1 commit
+
+Current stable release of APR is 1.3.3, released Aug 14 2008.
+
+Current stable release of APR util is 1.3.4, released Aug 15 2008.
+
+Current stable APR iconv release is 1.2.1, released Nov 15 2007.
+
+APR/APU trunk is now targeting 2.x, a new major version. A new branch, 1.4.x
+has been started as well, to cover all desired 1.x features that cannot go
+into 1.3.x, due to versioning rules. The 1.3.x. branch received quite a few
+bug fixes, many of which were backports from the trunk.</pre>
+<h3 id="2008-12-17"><a href="2008/board_minutes_2008_12_17.html#attachment-C">2008-12-17</a> &mdash; Bojan Smojver<a class="headerlink" href="#2008-12-17" title="Permalink">&para;</a></h3>
+<pre>The activity on the project in the last 3 months (Sept 9 2008 to Dec 13
+2008) was as follows:
+
+APR trunk:       11 commits
+APR util trunk:  29 commits
+APR 1.3.x:        3 commits
+APR util 1.3.x:  16 commits
+APR 0.9.x:        2 commits
+APR util 0.9.x:   1 commit
+APR iconv trunk:  0 commits
+APR iconv 0.9.x:  0 commits
+site:             1 commit
+
+Current stable release of APR is 1.3.3, released Aug 14 2008.
+
+Current stable release of APR util is 1.3.4, released Aug 15 2008.
+
+Current stable APR iconv release is 1.2.1, released Nov 15 2007.
+
+Apart from regular bug fixing, APR util received DSO handling of db,
+gdbm and ndbm drivers.</pre>
+<h3 id="2008-09-17"><a href="2008/board_minutes_2008_09_17.html#attachment-A">2008-09-17</a> &mdash; Bojan Smojver<a class="headerlink" href="#2008-09-17" title="Permalink">&para;</a></h3>
+<pre>The activity on the project in the last 3 months (June 9 2008 to Sept 9
+2008) was as follows:
+
+APR trunk:       29 commits
+APR util trunk:  67 commits
+APR 1.3.x:       36 commits
+APR util 1.3.x:  64 commits
+APR 1.2.x:        1 commit
+APR util 1.2.x:   0 commits
+APR 0.9.x:        3 commits
+APR util 0.9.x:   0 commits
+APR iconv trunk:  0 commits
+APR iconv 0.9.x:  0 commits
+site:             5 commits
+
+Current stable release of APR is 1.3.3, released August 14. There was
+another release (1.3.2) in this period, on June 23.
+
+Current stable release of APR util is 1.3.4, released August 15. There
+was another release (1.3.2) in the period, on June 23.
+
+There were no new APR iconv releases.
+
+The 1.2.x branches of APR/APR util are now obsolete and will not have
+any more releases.
+
+In this period the project was mostly busy fixing bugs in releases based
+on new stable branches. Talk about the new stable release already
+started, with clean compilation on MinGW platform flagged as one of the
+goals. And, of course, more bug fixing.
+
+Most recently, new work on apr_crypto implementations based on OpenSSL
+and Mozilla NSS has been committed to trunk.</pre>
+<h3 id="2008-06-25"><a href="2008/board_minutes_2008_06_25.html#attachment-B">2008-06-25</a> &mdash; Bill Rowe<a class="headerlink" href="#2008-06-25" title="Permalink">&para;</a></h3>
+<pre>The last quarter was marked by some activity around releasing version 1.3.0
+of the apr and apr-util libraries, reflecting new APIs and interfaces.  The
+version 1.3.2 was released shortly thereafter to fix a small number of new
+bugs and pick up improvements in autoconf / libtool for portability.  This
+will likely be followed shortly by another release resolving some warning
+message regressions introduced in the more recent flavor of autoconf.
+
+Much of the activity has come from the most recently added new committers.
+During this period, covener, henryjen, issac, tdonovan were added as new
+committers to apr.  There were no changes to the PMC roster in this period.
+
+However, Will Rowe decided it's time to step back from chairing this PMC,
+and focus on coding at APR, and on his board and committee responsibilities
+at other areas of the foundation.  Bojan Smojver was nominated and ratified
+as the new chair by a vote of 14 in favor and none against.  Ref. List-ID
+&lt;private.apr.apache.org&gt;, Thread &lt;485AF04B.6060408@apache.org&gt;.  The project
+respectfully requests that the board install Bojan as VP, APR Project at the
+coming meeting.
+
+There are no other issues requiring board attention at this time.</pre>
+<h3 id="2008-03-19"><a href="2008/board_minutes_2008_03_19.html#attachment-A">2008-03-19</a> &mdash; Bill Rowe<a class="headerlink" href="#2008-03-19" title="Permalink">&para;</a></h3>
+<pre>Activity on the APR project has been very quiet this past quarter.
+There has been relatively little bugzilla or dev forum traffic,
+relatively little commit activity, and no releases nor activity
+towards a release since Nov '07 (reflecting the general stability
+of the project at this time).  No committee members or committers
+have changed in this period.
+
+Some proposals for new APIs are being floated; since APR is consumer
+driven (by projects that have adopted it), this likely reflects a quiet
+period from its users development goals.
+
+The APR project is in compliance with the Crypto policy, has been subject
+to this, and is exporting socket encryption wrappers in the development
+'trunk' of the apr-util subproject (not yet shipped within a release).</pre>
+<h3 id="2007-12-19"><a href="2007/board_minutes_2007_12_19.html#attachment-A">2007-12-19</a> &mdash; Bill Rowe<a class="headerlink" href="#2007-12-19" title="Permalink">&para;</a></h3>
+<pre>Activity has picked up since the previous board report.  For the period
+Sept through Nov, we had some 365 commits to the core apr, apr-util and
+apr-iconv trunks by 19 active committers, many maintenance commits on
+the legacy branches, and some 15 APR and 8 APR-util bugs were resolved
+this period, with some 24 open bugs remaining.  There were new 1.2
+maintenance releases of all three libraries, and an 0.9 apr maintenance
+release in this period.
+
+No significant pressure has occurred to push to the next 1.3 or 2.0
+release, although several new API issues were raised and several patches
+have been committed and others are under consideration at this time.
+
+No new committers were added this past quarter.
+
+Twelve individuals who had committed in the past 12 months were nominated
+and invited to participate in the PMC.  Of these, eight accepted and were
+added to the committee roster.  They are Davi Arnaut, Jean-Frederic Clere,
+Max Bowsher, Martin Kraemer, Mladen Turk, R&uuml;diger Pluem, Guenter Knauf
+and Bojan Smojver.
+
+Chuck Murco left the committee as emeritus, while Ben Laurie, Jim Blandy,
+and Ralf Engelschall were removed from the roster after no response to
+requests confirming their ongoing participation in the PMC.  This had no
+impact on their commit status; the request had the additional benefit of
+identifying one lost PMC member who since rejoined the pmc list, while
+Ralf has begun committing again, reaffirming the idea that it never hurts
+to just ask.</pre>
+<h3 id="2007-09-19"><a href="2007/board_minutes_2007_09_19.html#attachment-A">2007-09-19</a> &mdash; Bill Rowe<a class="headerlink" href="#2007-09-19" title="Permalink">&para;</a></h3>
+<pre>It seems that this report again coincides with new releases. Immediately
+following our June report, apr 1.2.9/0.9.14, apr-util 1.2.8/0.9.13 and
+apr-iconv 1.2.0 were all released smoothly as expected.
+
+This month, APR 1.2.11/0.9.16, and APR-util 1.2.10/0.9.15 libraries were
+released.  Both were re-rolled after the first try to pick up heavy activity
+around the regression tests and to accommodate some of the platform tweaks.
+Two interesting tweaks in the recent release may have interesting side
+effects; APR determined to respect Mac OS/X's claim to handle only utf-8
+filenaming conventions (as their UI, Aqua does) while on Win32 the process
+creation was tweaked to mirror Unix's behavior for pipe inheritance and
+therefore avoid leaking handles (in fact this leveraged the implementation
+in OS2's APR code).  Apparently some third party libraries are negatively
+impacted by this second adjustment, since they had relied on the side effects
+of the old Win32-only behavior.  Work is in progress and a dialog is ongoing
+to address those users concerns and provide them an alternate behavior which
+is portable.
+
+From June to date in September, we had some 12 commits to apr-iconv/trunk,
+64 commits to apr-util/trunk and 97 commits to apr/trunk (the future 1.3
+or 2.0 version and first stop of all bug fixes on their way to a release
+branch), by 14 active committers, many maintenance commits on the legacy
+branches.  From early July through early August the bugs were brought down
+to some 25 open incidents at a time, since then this has crept back up to
+to the low 30's, below the previous average.  Some 36 bugs were closed,
+and 6 tagged needing feedback, leaving 16 active bugs and 4 stale bugs
+looking for some resolution.
+
+Nothing much to report on community activity, two committers were added
+in this period, davi and rpluem, both of whom were then active in this
+period.  One request for commit karma was returned to the requester, with
+a counter-request for that individual to submit patches.  Based on those,
+they would be considered again for commit access at a later date.  This was
+in contrast to an earlier policy, which brought in httpd, svn and similar
+users with minimal scrutiny, if they came from any sibling community.  It
+seems that policy may no longer fit the apr pmc's wishes, so I would expect
+all commit karma moving forwards will follow the typical route of accepting
+patches, granting committer status to frequent patch submitters, and then
+considering active committers for PMC membership.</pre>
+<h3 id="2007-06-20"><a href="2007/board_minutes_2007_06_20.html#attachment-A">2007-06-20</a> &mdash; William Rowe Jr<a class="headerlink" href="#2007-06-20" title="Permalink">&para;</a></h3>
+<pre>Activity has been slow/steady since the previous board report.  For the
+period March through May, we had some 75 commits to trunk (the future 1.3
+or 2.0 version) by 11 active committers, many maintenance commits on the
+legacy branches, and some 25 APR, 3 APR-iconv and 10 APR-util bugs were
+resolved this period, with some 37 open bugs remaining.  There were no new
+releases in that period.  (Three packages were tagged in June for release
+votes - still ongoing.)
+
+No significant interest/pressure has occurred to push to the next 1.3 or
+2.0 release.  By APR versioning rules, 2.0 occurs once there is action
+to fix broken ABI or naming convention issues which render the libraries
+incompatible, and this isn't foreseen at this time.  It's very possible
+that either httpd or another consuming project will be the driving factor
+for development of, and for shipping the next version.  Prior to releasing
+1.3 or 2.0, the md4/md5 code license issue raised by the BSD project is
+the only apparent showstopper (RSA license grant).  The project welcomes
+appropriate patches to resolve that.
+
+Three committers were added, fuankg, davi and rpluem.  There were no new
+PMC members added, and this is a yellow-flag that the project should now
+be considering PMC nominations.  Garrett, as mentioned in March, did step
+down from the Chair of the APR project, and the project members thank him
+for his service and dedication as Chairman.
+
+As an incoming project chair, I was able to take advantage of Sally's
+Media Training in Amsterdam, and strongly encourage the board to convince
+her to repeat this, and find the funding to make it happen, at future
+ApacheCon events for our PRC members, project chairman, as well as other
+ASF contributors as space permits.  I believe it's a win for our projects
+to gain some of her insight into communicating with the technical press.</pre>
+<h3 id="2007-03-28"><a href="2007/board_minutes_2007_03_28.html#attachment-A">2007-03-28</a> &mdash; Garrett Rooney<a class="headerlink" href="#2007-03-28" title="Permalink">&para;</a></h3>
+<pre>Life in APR land continues along as usual.  There is the usual amount
+of mailing list discussion and bug fixing, with no major flame wars.
+While various people have had discussions about directions for the
+next major version of the library there has been no large scale
+attempts to move beyond discussions at this time.
+
+In personnel issues the PMC voted to give Guenter Knauf commit access,
+although at this time he has not yet replied to the invite (which was
+just recently sent).  Also the PMC chair has decided to step down due
+to time issues, and the project is in the process of nominating a
+replacement.  Expect a resolution to change the chair in time for next
+months board meeting.
+
+The only other issue of consequence remains the md4/md5 code license
+issue, which has stalled due to the fact that the person who brought
+the issue to our attention has not had the time to finish his code
+contribution that would resolve the problem.  This will certainly need
+to be dealt with before another release can occur, but nobody seems to
+have risen to the occasion at this time.</pre>
+<h3 id="2007-01-17"><a href="2007/board_minutes_2007_01_17.html#attachment-S">2007-01-17</a> &mdash; Garrett Rooney<a class="headerlink" href="#2007-01-17" title="Permalink">&para;</a></h3>
+<pre>Just a quick update this month on the status of the RSA md4/md5 issue,
+as requested.  Discussions regarding the issue with the md4/md5 code
+seem to indicate that we will have to remove the code.  Asking RSA for
+an additional grant seems unlikely to be useful due to the fact that
+they've already issued an IPR statement which seems to be not free
+enough from our perspective and rather final:
+
+http://www.ietf.org/ietf/IPR/RSA-MD-all
+
+With that in mind work has started on a solution to this based on the
+research done by Roy on the alternative implementations out there.  It
+looks like we'll probably want to go with the dovecot implementation,
+as it covers more of our needs and has already had much of the
+integration work done.  For more details see current posts to the
+associated mailing list threads on dev@apr.a.o.  Hopefully this will
+be resolved in the very near future as soon as some technical issues
+with the patch can be worked out.
+
+There are no other issues requiring board attention at this time.</pre>
+<h3 id="2006-12-20"><a href="2006/board_minutes_2006_12_20.html#attachment-A">2006-12-20</a> &mdash; Garrett Rooney<a class="headerlink" href="#2006-12-20" title="Permalink">&para;</a></h3>
+<pre>APR currently has a few legal issues that need to be resolved, but
+other than that there are no issues that currently require the board
+attention.
+
+Since the last board report we released APR 1.2.8 and 0.9.13, two bug
+fix releases that as far as I can tell have been well received, with
+no catastrophic problems being found post-release.  There has also
+been the usual series of bug fixes and new patches, but there has been
+no substantial work towards a new major version or anything of that
+sort.  While people have ideas for what an APR 2.0 would do, actual
+coding work seems to be hung up waiting on someone having a burning
+need for one of these new features, so APR 1.x seems to be APR 2.x's
+biggest enemy.  It works well enough for what people require.
+
+There have been no new committers added, and no changes to the
+membership of the PMC.
+
+In the legal realm we still have the Crypto notification paperwork to
+file.  I will be taking care of that this weekend, and I wish to make
+it clear that it's solely my fault that it's taken this long to get
+finished.
+
+Additionally, in October some questions were raised about the legality
+of the MD4/MD5 code we currently have in our tree (and have had for
+approximately 10 years).  Looking over the mailing list archives there
+appears to be some lack of consensus as to what needs to happen,
+although there are a number of people who feel we need clarification
+from RSA about the issue.  I plan to reread the mailing list threads
+and post a summary to the list asking for input as to the proper
+approach to take.  Note that there is also an alternative
+implementation that we may be able to use, but it seems kind of scary
+to replace such old and well tested code.
+
+The only other issue currently facing the APR project remains the fact
+that there are few active developers, and keeping on top of patches
+and whatnot can be difficult.  Specifically, we have some fairly large
+contributions (the one that sticks out in my mind is the apr
+threadpool stuff) that have not yet been integrated simply because of
+a lack of interested developers with suitable free time.  I hope this
+issue will work itself out over time as more new developers present
+themselves.</pre>
+<h3 id="2006-09-20"><a href="2006/board_minutes_2006_09_20.html#attachment-A">2006-09-20</a> &mdash; Garrett Rooney<a class="headerlink" href="#2006-09-20" title="Permalink">&para;</a></h3>
+<pre>Things have been largely quiet in APR since the last board report.
+
+The only issues currently requiring board attention are legal in
+nature.  We are still waiting for resolution on the third party code
+policy, as well as on the new policies for dealing with crypto code.
+Details on both of these issues appeared in the last board report, and
+little has changed since then as we are in a holding pattern until the
+VP of Legal Affairs finalizes the policies.
+
+Since the last report Ian Holsman resigned from the PMC, citing his
+lack of activity in APR over the past year.  He will of course be
+welcomed back should there he wish to return at any point in the
+future.
+
+We have had a few people proposed for commit access, but there was a
+lack of sufficient support to justify granting it.  I intend to make a
+pass through the various people who have been nominated over the past
+6 months or so soon, to see if any of them have contributed further
+and deserve to be brought up again, so hopefully by the next board
+report we'll have some new committers and PMC members to talk about.
+
+On the technical front, there continues to be a fairly steady stream
+of minor features and bug fixes.  Most new feature work continues to
+be in the DBD code in APR-Util, although that seems to have slowed
+slightly lately.
+
+There have been no new releases, but it appears that people are
+starting to talk about doing some from our current release branches
+(0.9.x and 1.2.x) in the near future.</pre>
+<h3 id="2006-07-19"><a href="2006/board_minutes_2006_07_19.html#attachment-A">2006-07-19</a> &mdash; Garrett Rooney<a class="headerlink" href="#2006-07-19" title="Permalink">&para;</a></h3>
+<pre>Since our last report the APR project has been progressing largely as
+usual.  There has been activity in a few areas, along with a little
+reshuffling of the committers and PMC, along with one release.
+
+The only issues I am aware of that require the board's attention are
+legal related.
+
+First, we are still awaiting finalized versions of the third party
+code licensing policy, and although we are unaware of any problems
+with the current draft policies it would be awfully nice to get them
+officially finalized.
+
+Second, work has begun on an addition to APR-Util that provides an SSL
+socket abstraction.  This will mean that we are for the first time
+shipping code that depends on cryptographic libraries, and will have
+to learn the current best practices for dealing with that.  At the
+moment, the current plan is to use whatever the HTTP Server project is
+doing as a template for our handling of this issue, but an ASF wide
+"way to deal with this stuff" would certainly be nice to have.
+
+On the personel front, Nick Kew was added to the PMC, Bojan Smojver
+was voted in as a committer for his work on the DBD portions of
+APR-Util, and Brian Pane resigned from the PMC due to a lack of time
+to work on APR.  He will, of course, be welcomed back should he decide
+to become active again.
+
+One thing to note regarding new committers/PMC members is that we are
+finding that much of our new activity is in the DBD library in
+APR-Util, which is making it somewhat hard to elect new committers due
+to the lack of PMC members who are actively involved in that work.
+I'm sure this is a problem that will work itself out as new PMC
+members emerge from that part of the project.
+
+We have also had two releases since the last report, APR/APR-Util
+1.2.7 and APR/APR-Util 0.9.12.  These were entirely bug fix releases,
+mainly needed to fix build issues on Win32/Netware, and there were no
+new features included.
+
+Other than that, activity on the mailing lists seems reasonable, we're
+getting a fair amount of activity originating from users of the
+project, and all seems to generally be well in APR land.</pre>
+<h3 id="2006-06-27"><a href="2006/board_minutes_2006_06_27.html#attachment-A">2006-06-27</a> &mdash; Garrett Rooney<a class="headerlink" href="#2006-06-27" title="Permalink">&para;</a></h3>
+<pre>Since our last report the APR project has been progressing largely as
+usual.  There has been activity in a few areas, along with a little
+reshuffling of the committers and PMC, along with one release.
+
+The only issues I am aware of that require the board's attention are
+legal related.
+
+First, we are still awaiting finalized versions of the third party
+code licensing policy, and although we are unaware of any problems
+with the current draft policies it would be awfully nice to get them
+officially finalized.
+
+Second, work has begun on an addition to APR-Util that provides an SSL
+socket abstraction.  This will mean that we are for the first time
+shipping code that depends on cryptographic libraries, and will have
+to learn the current best practices for dealing with that.  At the
+moment, the current plan is to use whatever the HTTP Server project is
+doing as a template for our handling of this issue, but an ASF wide
+"way to deal with this stuff" would certainly be nice to have.
+
+On the personel front, Nick Kew was added to the PMC, Bojan Smojver
+was voted in as a committer for his work on the DBD portions of
+APR-Util, and Brian Pane resigned from the PMC due to a lack of time
+to work on APR.  He will, of course, be welcomed back should he decide
+to become active again.
+
+One thing to note regarding new committers/PMC members is that we are
+finding that much of our new activity is in the DBD library in
+APR-Util, which is making it somewhat hard to elect new committers due
+to the lack of PMC members who are actively involved in that work.
+I'm sure this is a problem that will work itself out as new PMC
+members emerge from that part of the project.
+
+We have also had two releases since the last report, APR/APR-Util
+1.2.7 and APR/APR-Util 0.9.12.  These were entirely bug fix releases,
+mainly needed to fix build issues on Win32/Netware, and there were no
+new features included.
+
+Other than that, activity on the mailing lists seems reasonable, we're
+getting a fair amount of activity originating from users of the
+project, and all seems to generally be well in APR land.</pre>
+<h3 id="2006-03-15"><a href="2006/board_minutes_2006_03_15.html#attachment-A">2006-03-15</a> &mdash; Garrett Rooney<a class="headerlink" href="#2006-03-15" title="Permalink">&para;</a></h3>
+<pre>Just to get it out of the way, the only issue in APR that currently
+requires board attention is the forthcoming licensing policy.
+Anything that can be done to get the policy finalized would be greatly
+appreciated, as dealing with licensing issues (see the section later
+in this report concerning GDBM and Berkeley DB) without an official
+policy to refer to is rather difficult.  That said, I'm sure
+everything that can be done in that department is being done, so just
+keep doing what you're doing.  On with the rest of the report.
+
+Since it's last board report the APR project has been through a few
+small changes.
+
+As noted in our last report, our former PMC chair, Cliff Woolley,
+stepped down and he has now been replaced by a new chair, Garrett
+Rooney.
+
+We voted to give commit access to Max Bowsher.  His paperwork has made
+it's way through the system, and he has now been set up with his
+commit access.  A few other developers were nominated for commit
+access, and one committer has been nominated for PMC membership, but
+those votes are still ongoing at this time.  It seems that there has
+been an upswing in contributions from the APR community recently, so
+it seems likely that in the near future we will be able to recruit
+some more active developers from these new contributors.
+
+We made several attempts to release new versions off of our 0.9.x and
+1.2.x branches, but a variety of problems were found at the last
+minute preventing them from being made publicly available.  On the
+bright side, those releases spurred a few developers into making a
+number of fixes, so hopefully a new set of releases will be available
+soon.
+
+There have been a few debates on the development list concerning what
+sort of software is suitable for inclusion in APR and APR-Util.
+Specifically, there was some concern from a few people about the
+memcache client code that was added to APR-Util fairly recently.
+While most APR developers thought it was sufficiently small and useful
+to warrant inclusion, there were others who felt that it was not
+suitable for inclusion in a portable runtime because unlike other
+systems (APR-Util's DBM or DBD layers, for example) it only works with
+a single server implementation and doesn't allow you to write code
+that portably makes use of multiple cache implementations.  The
+conflict has resolved itself on its own, by virtue of the fact that
+another server using the memcache client protocol has appeared, but
+the issue of what is suitable to include in APR/APR-Util and what is
+not is clearly one that will require more discussion among the
+developers.
+
+The other significant issue has been with our handling of the various
+DBM libraries the APR-Util DBM code links against.  For some time we
+have had the ability to link against Berkeley DB and GDBM, which are
+under the SleepyCat license and the GPL, respectively.  After reading
+the initial drafts of the proposed ASF licensing policy it seemed
+clear that the default behavior of the build system with regard to
+determining which libraries to link against should change, avoiding
+linking against anything with a viral license unless the user
+specifically requested it.  These changes have been made, and are
+simply awaiting a release.  It's important to note that legally
+speaking we have always been in the clear, as we have never been
+distributing Berkeley DB or GDBM ourselves, but it was felt that it
+was too easy for users to end up inadvertantly linking against
+libraries with unwelcome license requirements, and thus the change in
+behavior.</pre>
+<h3 id="2006-01-18"><a href="2006/board_minutes_2006_01_18.html#attachment-N">2006-01-18</a> &mdash; Cliff Woolley<a class="headerlink" href="#2006-01-18" title="Permalink">&para;</a></h3>
+<pre>This quarter, we added a new PMC member: Colm MacCarthaigh.  David
+Reid has asked to step down from the PMC, citing a lack of time for
+contribution.  Following suit, I (Cliff Woolley) have just notified
+the PMC of my intention to step down as well for the same reason.  I
+have asked them for nominations for a replacement PMC Chair.  I will
+remain active and in the post until such time as a new Chair is
+selected and approved by the board, at which time I will convert my
+PMC membership to emeritus status.
+
+Fortunately, with the new blood coming on board as of late, progress
+is still being made.  APR 1.2.2 and APR-util 1.2.2 were released this
+quarter.  Also, the HTTP Server Project shipped a new version of
+httpd, which had the side effect of bringing the APR 1.0+ API into
+potentially much broader visibility.
+
+
+------------------------------------------------------
+End of minutes for the January 18, 2006 board meeting.</pre>
+<h3 id="2005-12-21"><a href="2005/board_minutes_2005_12_21.html#attachment-A">2005-12-21</a> &mdash; Cliff Woolley<a class="headerlink" href="#2005-12-21" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2005-09-21"><a href="2005/board_minutes_2005_09_21.html#attachment-A">2005-09-21</a> &mdash; Cliff Woolley<a class="headerlink" href="#2005-09-21" title="Permalink">&para;</a></h3>
+<pre>This quarter in APR-land, we added Garrett Rooney as a new PMC member
+and Colm MacCarthaigh as a new committer.  APR and APR-util 1.2.1 were
+released in mid-August; versions 1.2.0 were not released due to a
+showstopper bug on win32 (if I recall correctly).
+
+We seem to be getting a reasonably steady stream of people coming
+through sending in patches and reporting bugs, so I consider that to
+be a good thing.</pre>
+<h3 id="2005-06-22"><a href="2005/board_minutes_2005_06_22.html#attachment-A">2005-06-22</a> &mdash; Cliff Woolley<a class="headerlink" href="#2005-06-22" title="Permalink">&para;</a></h3>
+<pre>Not much news this quarter in APR.  No new releases, though there
+has been a bit of discussion in the last week or so about pushing
+out a new point release to get some bug fixes out to our end users.
+
+Paul Querna was added as a new PMC member immediately after last
+quarter's reporting cycle.  No new committers this quarter.
+
+We haven't made a final decision yet on the ultimate disposition
+of the apr-iconv subproject, which as I mentioned last quarter is
+under debate.</pre>
+<h3 id="2005-03-30"><a href="2005/board_minutes_2005_03_30.html#attachment-A">2005-03-30</a> &mdash; Cliff Woolley<a class="headerlink" href="#2005-03-30" title="Permalink">&para;</a></h3>
+<pre>NO SUBMITTED REPORT</pre>
+<h3 id="2004-12-15"><a href="2004/board_minutes_2004_12_15.html#attachment-A">2004-12-15</a> &mdash; Cliff Woolley<a class="headerlink" href="#2004-12-15" title="Permalink">&para;</a></h3>
+<pre>ApacheCon was particularly good for the APR project (and several
+others apparently) this year.  In previous quarters we reported
+somewhat of a stagnation of the project, but that we hoped that
+some of the new committers we were bringing in would help to
+freshen up the overall level of interest in the project.  That
+has indeed proved true, but furthermore, getting all of us
+together and having us duke it out over several days' worth of
+friendly but very heated lunchtime discussions has served to
+re-ignite the spark of interest that has historically kept this
+group motivated.
+
+In the time during and since the 'Con, we have migrated to
+Subversion, brought in a couple of more new committers, released
+APR 0.9.5 and 1.0.1, and begun the process of moving toward
+either APR 1.1.x or 2.0.x (the latter might be necessary due to
+versioning rules and some problems that were discovered recently
+in our 64-bit ABI).
+
+We feel that it would be in the best interests of this and other
+projects if "mini-hackathons" could be held several times per
+year -- these would be informal (likely project-specific)
+gatherings of people who are within reasonable geographical
+proximity of each other to allow them to just Get Things Done.
+While decisions would still be made on the mailing list as
+always, it's amazing what a difference being in the same room
+makes in terms of lowering the latency in big debates and in
+terms of keeping people focused on big coding endeavors.  These
+sessions could perhaps be hosted at the offices of some of the
+project members involved so that overhead is minimal.  To the
+extent that the board can facilitate such events (without having
+them turn into full-fledged conferences requiring the
+intervention of 3rd-party planners), that would quite likely be
+worthwhile.</pre>
+<h3 id="2004-09-22"><a href="2004/board_minutes_2004_09_22.html#attachment-A">2004-09-22</a> &mdash; Cliff Woolley<a class="headerlink" href="#2004-09-22" title="Permalink">&para;</a></h3>
+<pre>A few new committers on the APR project this quarter; no
+particular problems to report.
+
+The only real news item this month in the APR Project is that
+APR 1.0.0 was finally released on September 1, 2004!  Many of
+us still haven't gotten back from the party.  :)</pre>
+<h3 id="2004-06-23"><a href="2004/board_minutes_2004_06_23.html#attachment-J">2004-06-23</a> &mdash; Cliff Woolley<a class="headerlink" href="#2004-06-23" title="Permalink">&para;</a></h3>
+<pre>The APR project has several new committers this quarter, which
+we hope is helping to alleviate the "falling-through-the-cracks"
+problems we reported last quarter.
+
+Work continues on test suite improvements, and David Reid has
+been helpful in pushing through toward a 1.0 release candidate.
+
+No new-subprojects or new problems to report.  The biggest
+remaining hurdle is still the "it has to be perfect" syndrome,
+which we are attempting to actively combat.</pre>
+<h3 id="2004-03-17"><a href="2004/board_minutes_2004_03_17.html#attachment-A">2004-03-17</a> &mdash; Cliff Woolley<a class="headerlink" href="#2004-03-17" title="Permalink">&para;</a></h3>
+<pre>A few things to report in the APR project this quarter.  First,
+by popular demand we are releasing an 0.9.5 release (the T&amp;R
+process is ongoing as of the time of this writing).  At the same
+time, we are splitting HEAD into an APR_1_0 branch (as we
+reported we would in our last report).  We had originally done
+this at ApacheCon but then backed it out for short-term
+convenience... we probably should have just left it in as
+a forcing function.  Oh well.
+
+That brings up the second and more important point, however,
+which is that we've had trouble lately with new contributors
+to our project finding more and more frequently that their
+submissions (by way of email) go unanswered.  No one has the
+time.  We recognize this as more of a social problem than a
+technical one, but it's one that we're seeking both social
+and technical solutions for.  Several suggestions have been
+made on the PMC mailing list, and we will be following up
+on them.  We'll keep the board up-to-date on whatever corrective
+action we take -- surely this problem is not unique to our
+project.
+
+No new sub-projects this quarter.  No *new* committers or PMC
+members this quarter, though we did welcome back Ryan Bloom
+as a re-activated (no longer emeritus) committer.</pre>
+<h3 id="2004-01-21"><a href="2004/board_minutes_2004_01_21.html#section-6I">2004-01-21</a> &mdash; Cliff Woolley<a class="headerlink" href="#2004-01-21" title="Permalink">&para;</a></h3>
+<pre>The report, as noted in Attachment I, was approved by General Consent.</pre>
+<h3 id="2003-09-17"><a href="2003/board_minutes_2003_09_17.html#attachment-A">2003-09-17</a> &mdash; Cliff Woolley<a class="headerlink" href="#2003-09-17" title="Permalink">&para;</a></h3>
+<pre>We have reached a big milestone in the APR project: we finally
+tagged away APR 0.9 as a branch (to maintain compatibility with
+existing applications, e.g. httpd 2.0) and have begun the
+removal of all deprecated APIs and some final related cleanups
+prior to APR 1.0.  httpd 2.1 has been ported to the APR 1.0
+API and will continue to follow our latest developments.
+
+We hope to begin tagging release candidates for APR 1.0 within
+the next week or two, with a final release likely to be ready
+sometime close to ApacheCon.
+
+The apr-serf sub-project has been officially handed off to the
+Apache Commons Project.
+
+No new subprojects or particular problems to report... as with
+last quarter, APR continues to be relatively controversy-free.</pre>
+<h3 id="2003-06-25"><a href="2003/board_minutes_2003_06_25.html#attachment-A">2003-06-25</a> &mdash; Cliff Woolley<a class="headerlink" href="#2003-06-25" title="Permalink">&para;</a></h3>
+<pre>It has been a relatively slow quarter for the Apache Portable
+Runtime Project, with most of our effort focusing on maintenance,
+bug fixes, and performance tweaks.  This is to be expected,
+of course, since we have spent the last year stabilizing our
+codebase and API for a 1.0 release of our library.
+
+We have been pleased to see a further increase in the quantity
+and quality of contributions from various third parties.  This
+would seem to indicate further interest and acceptance of our
+project within the development community.
+
+The stemming of the tide of major changes is indicative of the
+fact that our stabilization period has been successful and that
+now is the time to press forward and get version 1.0 out the
+door; that will likely be the focus of our project in the
+upcoming quarter.</pre>
+<h3 id="2003-03-19"><a href="2003/board_minutes_2003_03_19.html#attachment-A">2003-03-19</a> &mdash; Cliff Woolley<a class="headerlink" href="#2003-03-19" title="Permalink">&para;</a></h3>
+<pre>The APR Project is finally nearing a 0.9.2 release.  This will allow us to
+make the final changes in our API prior a 1.0 release (which should follow
+in the near future) while minimizing headaches for our sister projects
+(e.g., httpd).
+
+Since our last report, we have finalized our new mission statement by
+unanimous vote of the Project Management Committee.  The new statement is
+as follows:
+
+    The mission of the APR project is to create and maintain software
+    libraries that provide a predictable and consistent interface to
+    underlying platform-specific implementations.  The primary goal is
+    to provide an API to which software developers may code and be
+    assured of predictable if not identical behaviour regardless of
+    the platform on which their software is built, relieving them of
+    the need to code special-case conditions to work around or take
+    advantage of platform-specific deficiencies or features.</pre>
+<h3 id="2002-12-18"><a href="2002/board_minutes_2002_12_18.html#attachment-A">2002-12-18</a> &mdash; Cliff Woolley<a class="headerlink" href="#2002-12-18" title="Permalink">&para;</a></h3>
+<pre>The APR Project continues to press toward a 1.0 release.  Our most recent
+"official alpha" (0.9.1) was released at roughly the time of our last
+report; since then, we have introduced versioning and backward-
+compatibility guidelines and have been stabilizing our API.
+
+Also at the time of our last report, we were in the process of redefining
+our mission statement (which is still being fine-tuned) and of electing a
+new PMC Chair (this is my first report in that role).
+
+As a side note, we wish to congratulate our outgoing Chair on the
+Thanksgiving-day birth of his daughter, Abby.  The entire family is doing
+well.
+
+We are in the process of building a comprehensive test suite to ensure
+cross-platform consistency, and this combined with user reports have
+helped us to shake out a number of pre-1.0 bugs.
+
+Given the increasing number of user bug reports and API inquiries, the
+project seems to be gaining wider interest throughout the development
+community; http://apr.apache.org/projects.html now lists a several
+significant applications besides just HTTPD and Subversion that are using
+APR, and there are several other projects that have expressed an interest
+in doing so.</pre>
+<h3 id="2002-09-18"><a href="2002/board_minutes_2002_09_18.html#attachment-F">2002-09-18</a> &mdash; Ryan Bloom<a class="headerlink" href="#2002-09-18" title="Permalink">&para;</a></h3>
+<pre>The APR project has continued to make progress over the last year.  We are
+nearing our first release, and we are working to get our release process
+correct.  Our source code base is growing, and since the last STATUS
+report, we have added apr-serf, a portable HTTP-client library.
+
+There are a couple of important votes underway in the PMC.  First, we are
+electing a new PMC Chair, although I have volunteered to remain in the
+position until a new is elected.  Also, we are currently in the process of
+redefining our mission statement.  There are a number of opinions about
+what our goals should be, and we are trying to come to consensus now.
+
+Recently, we had a bit of a shake-up with the El-Kabong donation from
+Covalent.  We have decided to respect Jon Travis' wishes and not use the
+code.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

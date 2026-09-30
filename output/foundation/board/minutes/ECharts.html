@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: ECharts | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: ECharts';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: ECharts';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: ECharts</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="echarts">ECharts<a class="headerlink" href="#echarts" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-12-16</td>
+<td><a href="2020/board_minutes_2020_12_16.html#section-7C">Appointed Wenli Zhang</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-12-16</td>
+<td><a href="2020/board_minutes_2020_12_16.html#section-7C">Establish the Apache ECharts Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-W">2026-06-17</a> &mdash; Wenli Zhang<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (5 years ago) There are currently 31
+committers and 15 PMC members in this project. The Committer-to-PMC ratio is
+roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was ShiZhao Pan on 2025-01-09.
+- No new committers. Last addition was Zisen Jin on 2025-11-01.
+
+## Project Activity:
+We released v6.1.0 recently on 2026-05-19 and are working towards v6.1.1,
+which will contain some small bug fixes. Recently, we have fixed a series of
+reported or publicized the potential security issues of ECharts.
+
+## Community Health:
+The overall community health of ECharts is good. There's a steady influx of
+new developers contributing to the project. Regular discussions on GitHub
+issues and mailing lists keep the ideas flowing. Bugs are identified and fixed
+in a timely manner. The release of new versions with enhanced features
+showcases the community's vitality and collaborative efforts to keep ECharts
+evolving.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-X">2026-03-18</a> &mdash; Wenli Zhang<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing, with low activity
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (5 years ago)
+There are currently 31 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was ShiZhao Pan on 2025-01-09.
+- No new committers. Last addition was Zisen Jin on 2025-11-01.
+
+## Project Activity:
+
+At present, the functionality of the project is relatively complete.
+Most of the code modifications mainly focus on bug fixes.
+
+We are currently engaged in the release work of the next version, 6.1.0.
+Previously, due to the inclusion of some relatively complex new features
+in the plan, the release time is a bit later than expected. We hope that
+the release frequency in the future can be maintained at least one version
+every six months.
+
+## Community Health:
+
+The community for our project is at a medium level of activity.
+There is an average number of pull requests and issue reports, with a fair
+amount of them being addressed in a timely manner.
+Overall, while the community is steadily contributing, there is still room
+for growth to increase the level of engagement and the speed at which
+projects are advanced.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-Z">2025-12-17</a> &mdash; Wenli Zhang<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (5 years ago)
+There are currently 31 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was ShiZhao Pan on 2025-01-09.
+- Zisen Jin was added as committer on 2025-11-01
+
+## Project Activity:
+We released our major version 6.0.0 on July 30, 2025. Currently, we are testing
+the next iteration, version 6.0.1, which is scheduled for release in the coming
+weeks. The project is now in a phase of moderate-paced development, primarily
+focused on integrating and reviewing pull requests from our community
+contributors.
+
+## Community Health:
+Following the well-received launch of Apache ECharts 6.0 with its twelve
+significant features, our community remains energized. Development continues
+at a steady pace, sustained by the valuable contributions from our members.
+This collective momentum is actively strengthening the project, and we invite
+everyone to join in shaping its future.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-U">2025-09-24</a> &mdash; Wenli Zhang<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (5 years ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was ShiZhao Pan on 2025-01-09.
+- No new committers. Last addition was ShiZhao Pan on 2025-01-05.
+
+## Project Activity:
+
+On July 30th, we released the major version Apache ECharts 6.0 and
+carried out promotional activities, receiving warm praise from the
+community. In this version, we have upgraded 12 major features,
+including new themes, dynamic theme switching, chord charts,
+beeswarm charts, broken axes, and reusable custom series.
+
+## Community Health:
+
+The release of Apache ECharts 6.0 was well received
+by the community. With the 12 major feature upgrades, the community
+has been developing in a stable and orderly manner. Community
+members are actively contributing. This positive atmosphere is
+fueling the continuous growth and enhancement of Apache ECharts 6.0.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-T">2025-06-18</a> &mdash; Wenli Zhang<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (4 years ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was ShiZhao Pan on 2025-01-09.
+- No new committers. Last addition was ShiZhao Pan on 2025-01-05.
+
+## Project Activity:
+
+We are working towards our next major release 6.0.0 and should start release
+voting in about two weeks. In this version, we are going to release important
+features like matrix layout, advanced custom series, chord series, and so on.
+
+## Community Health:
+
+The community is developing steadily. There are no major issues that are
+particularly worthy of concern. We can look forward to more exciting progress
+and achievements after the release of 6.0.0.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-U">2025-03-19</a> &mdash; Wenli Zhang<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (4 years ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- ShiZhao Pan was added to the PMC on 2025-01-09
+- ShiZhao Pan was added as committer on 2025-01-05
+
+## Project Activity:
+
+We are working towards the next major release, Apache ECharts 6.0.0,
+which is about 90% done and is expected to be released by the end of March
+or early April. In this version, we are going to introduce a lot of new
+features, like Matrix coordinate, Break axis, Chord series, Scatter jittering
+and so on.
+
+## Community Health:
+
+The community is developing steadily. There are no major issues that are
+particularly worthy of concern. We can look forward to more exciting progress
+and achievements after the release of 6.0.0.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-U">2024-12-18</a> &mdash; Wenli Zhang<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (4 years ago)
+There are currently 29 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- No new committers. Last addition was Linghao Su on 2023-08-01.
+
+We are voting for a new PMC member now.
+
+## Project Activity:
+
+We are testing and preparing for the next release 5.6.0, which is expected to
+be voted before the end of this week.
+
+We are also developing for the next major release 6.0.0, which is expected to
+be completed around the end of February next year. This major release includes
+a lot of exciting new features and we've completed about 70% of the features.
+
+## Community Health:
+
+Since we are mainly working for the next major release 6.0.0 and commits are
+pushed to a separate branch instead of the main branch, the commit rate may
+seem to have dropped but we believe the overall contribution is in a healthy
+state.
+
+We see some new contributors in the community and we try to encourage them to
+contribute continuously and become one of our committers.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-S">2024-09-18</a> &mdash; Wenli Zhang<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (4 years ago)
+There are currently 29 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- No new committers. Last addition was Linghao Su on 2023-08-01.
+
+## Project Activity:
+
+We released the last version v5.5.1 on 2024.06.27. And we are working
+at the next major release v6.0, which is expected to be released earlier
+next year. The developing progress is under control.
+
+## Community Health:
+
+The Apache ECharts community is regularly active, with core developers
+consistently contributing despite balancing other commitments. Contributors
+provide a steady stream of code improvements, new features, and bug fixes,
+while users actively engage by seeking help, sharing experiences, and
+providing feedback.
+
+Code review and feedback frequency can be improved in the future so that the
+contributors can get contructive feedback from core developers.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-U">2024-06-19</a> &mdash; Wenli Zhang<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing: We are currently focusing on the development of
+the next major release, Apache ECharts 6.0. Consequently, updates to the 5.x
+version will primarily consist of bug fixes.
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (3 years ago)
+There are currently 29 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- No new committers. Last addition was Linghao Su on 2023-08-01.
+
+## Project Activity:
+
+We are currently focusing on the development of the next major release, Apache
+ECharts 6.0, which is expected to be available early next year. Key features of
+this release include:
+
+- A new matrix layout that can be utilized with various chart types such as
+scatter plots, heatmaps, graphs, and more.
+- Axis breaks, which allow for the representation of discontinuities in axes.
+- Enhanced candlestick series, designed to improve usability in real-world stock
+market scenarios.
+- Violin plots, to better illustrate data distribution.
+- Scatter plot jittering, which helps depict data density and prevent overlap.
+- And additional features.
+
+By the end of this month, we plan to release a candidate for the next minor
+update, version 5.5.1, which will primarily address bug fixes and introduce a
+few new features.
+
+## Community Health:
+
+The decline in commit activity can be attributed to our primary focus on the
+upcoming major release. Consequently, pull requests are not being merged
+into the master branch as frequently, and the larger size of these PRs means
+they require more time for both submission and review.
+
+Additionally, we should be aware of the declining number of contributors and
+take proactive measures to address this. Many of our existing committers have
+new priorities in their lives, resulting in reduced contribution time.
+Furthermore, we are experiencing a shortage of new, continuous contributions
+that could lead to new committers. It is crucial that we concentrate on
+reviewing current PRs and providing feedback more consistently to encourage
+community participation.
+
+While the number of releases on npm is increasing, the decline in email activity
+and the number of open issues on GitHub should not cause much concern. This
+trend may indicate that the software is becoming more stable. Therefore, we
+should aim to introduce exciting new features and enhancements in the next major
+release to generate enthusiasm within the community. By doing so, we can
+reinvigorate interest and engagement among our contributors and users.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-U">2024-03-20</a> &mdash; Wenli Zhang<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing: With moderate activity both in code and
+the community
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (3 years ago)
+There are currently 29 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- No new committers. Last addition was Linghao Su on 2023-08-01.
+
+## Project Activity:
+The project status is actively developing with the recent release of Apache
+ECharts 5.5.0 on 2024-02-18, which included several new features and
+enhancements. The development team has implemented changes to the default ESM
+package, added server-side rendering and client hydration capabilities, and
+introduced support for multi-level drill-down transitions. Additionally, new
+options such as padAngle and endAngle control for pie charts and
+angleAxis.endAngle setting for polar charts have been added to improve user
+experience.
+
+## Community Health:
+The community is developing stably. The Apache ECharts project has seen an
+increase in traffic on the dev@echarts.apache.org mailing list and commits on
+GitHub in the past quarter, indicating growing interest and active development.
+ However, there has been a decrease in the number of code contributors and
+negative changes in the number of opened and closed pull requests and issues on
+GitHub. We should focus on encouraging people in the community to contribute.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-AC">2024-01-17</a> &mdash; Wenli Zhang<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (3 years ago)
+There are currently 29 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- No new committers. Last addition was Linghao Su on 2023-08-01.
+
+## Project Activity:
+
+We are working on the next major release 5.5.0, which should start testing
+tomorrow. We usually release a version every 4 months but this version takes
+longer time because it's a major release and delayed for some time because we
+believe some features should be included. We are expected to start the release
+job this week and should keep the release frequency more strictly in the future.
+
+## Community Health:
+
+The development of the community has remained essentially unchanged; we have
+quite a few new contributors, but currently, there is still a lack of developers
+with successful committer qualifications. We should still encourage more people
+to contribute continuously so that they can become committers.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#section-6X">2023-12-20</a> &mdash; Wenli Zhang<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-W">2023-09-20</a> &mdash; Wenli Zhang<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: Dormant
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (3 years ago)
+There are currently 29 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- Linghao Su was added as committer on 2023-08-01
+
+## Project Activity:
+
+The Apache ECharts project has been actively working on various features
+and bug fixes, as evidenced by recent contributions from community members
+and version 5.4.3 was released on 2023-07-18.
+
+## Community Health:
+
+The Apache ECharts project has seen a decrease in mailing list traffic and
+ contributors but an increase in commits and PRs opened on GitHub.
+Overall, the project maintains a healthy level of activity and engagement,
+ with ongoing development and community involvement.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-X">2023-06-21</a> &mdash; Wenli Zhang<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Project Status:
+Current project status: With consistent releases and an engaged developer
+base, Apache ECharts remains highly relevant in the open source ecosystem.
+Issues for the board: NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (2 years ago)
+There are currently 28 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- No new committers. Last addition was He Hao on 2022-07-06.
+
+## Project Activity:
+Apache ECharts has maintained a consistent and reliable release cycle,
+delivering new versions to users and incorporating valuable updates and
+bug fixes. Recent releases include:
+
+5.4.2, released on 2023-03-23.
+5.4.1, released on 2022-12-09.
+5.4.0, released on 2022-09-25.
+These releases demonstrate the project's commitment to providing timely
+improvements and enhancements to its users, ensuring the stability and
+quality of the software.
+
+## Community Health:
+The Apache ECharts community is vibrant and active, with increased mailing
+list engagement and ongoing development efforts. The project maintains a
+healthy flow of pull requests on GitHub, responsive issue resolution, and
+a dedicated group of contributors, ensuring a positive and collaborative
+environment.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-W">2023-03-22</a> &mdash; Wenli Zhang<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (2 years ago)
+There are currently 28 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- No new committers. Last addition was He Hao on 2022-07-06.
+
+A new committer is under discussion.
+
+## Project Activity:
+
+We are testing the next version 5.4.2 and is expected to release in two weeks.
+
+## Community Health:
+
+There has been an increase in communication and engagement within the
+community. The mailing list experienced a significant increase in traffic,
+indicating that members are more actively participating in discussions and
+exchanging information.
+
+Overall, the community's health appears to be stable, with an increase in
+communication but a decrease in code contributions. It is crucial for us to
+continue monitoring and evaluating these metrics to ensure the
+community's continued growth and health.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#attachment-Y">2022-12-21</a> &mdash; Wenli Zhang<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (2 years ago)
+There are currently 28 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was He Hao on 2022-07-06.
+- No new committers. Last addition was He Hao on 2022-07-06.
+
+## Project Activity:
+
+v5.4.1 was released on 2022-12-09. The frequency of releasing new versions
+has been fixed to be around two months, which is a good thing to see. The
+project is developing stably.
+
+## Community Health:
+
+The community is growing steadily. We see some new contributors who are
+potential candidates to be new committers but waiting to see more
+contribution from them.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-Z">2022-09-21</a> &mdash; Wenli Zhang<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (2 years ago)
+There are currently 28 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- He Hao was added to the PMC on 2022-07-06
+- He Hao was added as committer on 2022-07-06
+
+## Project Activity:
+
+We are working on the release candidate of the next version 5.4.0 and
+it should be ready in less than a week.
+
+In this version, we supported new features to improve mobile interaction
+experience. For example, touch points are enlarged so that touching near
+the target point will also trigger touch events. We also introduced a new
+language, Ukrainian.
+
+We improved milestone management so that both the release manager and
+developers from the community can have a better idea about the issues
+to be included in a certain version. We believe this can help us track
+the issues better.
+
+## Community Health:
+
+We have a new PMC member on July 6th, which is the first new PMC member
+since our graduation. He is actively contributing to the project and we
+are excited to have him on board.
+
+On the other hand, we should encourage more long-term contributors.
+Currently, we have many unreviewed pull requests and it would be
+discouraging for contributors if their first pull request is not
+reviewed for a long time. So, the project's PMC members should spend
+more time reviewing the current open pull requests, starting from recent
+ones. Hopefully, this can help encourage the contributors to continue
+contributing to our project.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-Y">2022-06-15</a> &mdash; Wenli Zhang<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (a year ago)
+There are currently 27 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Houjin Huang on 2020-12-16.
+- Fu Chunhui was added as committer on 2022-04-12
+- Wang Suyan was added as committer on 2022-05-28
+
+## Project Activity:
+
+We released v5.3.2 on 2022-04-01 and is going to test and review v5.3.3 soon.
+
+## Community Health:
+
+We have two new committers this quarter and in the last few months, we
+found more contributors in our projects and can be potential committers
+to Apache ECharts.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-V">2022-03-16</a> &mdash; Wenli Zhang<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (a year ago)
+There are currently 26 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Houjin Huang on 2020-12-16.
+- No new committers. Last addition was Han Minghao on 2021-09-21.
+
+## Project Activity:
+
+We release 2 versions since last report.
+5.3.0 was released on 2022-01-27.
+5.3.1 was released on 2022-03-07.
+
+We introduced many new features in these two versions, including new
+keyframe based animation to graphic component and custom series,
+transition animation in the graphic component, a new SVG renderer and so on.
+These new features can help developers better create data visualization
+works and convey the meesage behind the data.
+
+## Community Health:
+
+We are working on helping new contributors to start their first contribution
+by providing a clearer instruction on how to contribute and what to help
+and we see more first-time contributors in the project's pull requests and
+there's a 25% increase in code contributors since last report.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-AA">2021-12-15</a> &mdash; Wenli Zhang<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+No.
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (a year ago)
+There are currently 26 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Houjin Huang on 2020-12-16.
+- Han Minghao was added as committer on 2021-09-21
+
+## Project Activity:
+
+- We have released two versions since last board meeting, the last of
+    which was on 2021.11.01.
+- We are working towards the next version 5.3.0, which is expected to
+    be released within a month.
+
+## Community Health:
+
+There is a notable increase in the number of emails in our mailing
+list and most of our users can get feedback from the community in time.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-Z">2021-09-15</a> &mdash; Wenli Zhang<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+
+A website redirecting issue[1] we are working on it.
+
+[1] https://github.com/apache/echarts/issues/15620
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (9 months ago)
+There are currently 25 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Houjin Huang on 2020-12-16.
+- Shen Shuntian was added as committer on 2021-07-09.
+A new committer has passed vote and is under processing.
+
+## Project Activity:
+
+- We released 5.2.0[2] at 1st Sep which contains a lot of new features
+like universal transition, new color palette picking strategy, labels for
+polar bar charts and etc. These new features helps users to create more
+powerful visualization works.
+
+- We are working towards the next version 5.2.1 which is expected to be
+voted for release in a week.
+
+- We have changed the example code from JavaScript into TypeScript and
+we are going to release it along with the next version. Hopefully,
+this can help us find more typing issues and provides a better
+developping experience to our users.
+
+- We are working on a bar-racing chart generating tool that can generate
+code and video automatically from chart data so that users don't have
+to write complex code to do it.
+
+[2] https://echarts.apache.org/handbook/en/basics/release-note/5-2-0
+
+## Community Health:
+
+- We released a "Handbook"[3] recently, which contains online documents from
+how to get started to detailed tutorials on various topics. This can help
+users better understand ECharts and have a better developing experience.
+
+[3] https://echarts.apache.org/handbook/en/get-started/</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-W">2021-06-16</a> &mdash; Wenli Zhang<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (6 months ago)
+There are currently 24 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Houjin Huang on 2020-12-16.
+- Nick He was added as committer on 2021-03-19
+- Ville Brofeldt was added as committer on 2021-05-24
+
+## Project Activity:
+- We released v5.1.1 on April 10.
+- v5.1.2 is currently under test and should be voted in a few more days.
+- We are working on the next version v5.2.0.
+
+## Community Health:
+
+- Discussion on the mailing list is active (with a 78% increase)
+- We see more issues are in English and we employed a translator bot
+that translates the issues in Chinese into English
+- We joined a summer event to encourage university students contribute
+to the project this summer. [1]
+- There would be several topics on Apache ECharts at ApacheCon Asia 2021
+
+[1] https://echarts.apache.org/en/events/2021-05-13-iscas.html</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-X">2021-03-17</a> &mdash; Wenli Zhang<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (3 months ago)
+There are currently 22 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- No new committers were added.
+
+A new committer has just passed voting and under invitation.
+
+## Project Activity:
+- The last version was released on 6th Feb.
+- We are working on the next version 5.1.0 which will start testing from
+31th March.
+
+## Community Health:
+We see more contributors to the project and the issues opened and closed
+are both increasing. This is probably caused by our new major version
+release. We see some of the new contributors are encouraged by our current
+committers to start contributing with minor changes to the project. This
+is a good thing to see and we plan to attract more people to contribute.</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-R">2021-02-17</a> &mdash; Wenli Zhang<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache ECharts is the creation and maintenance of software
+related to a charting and data visualization library written in JavaScript
+
+## Issues:
+NA
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (2 months ago)
+There are currently 22 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- No new committers were added.
+
+## Project Activity:
+A new version v5.0.2 was release on 2021/02/06.
+We are mainly working on fixing bugs of v5.0 major release and write
+tutorials about the new features.
+
+We hold an online release of v5.0.0 on 2021/01/28.
+The recorded video will be released on YouTube in a few more weeks.
+
+## Community Health:
+The graduation blog post of ECharts was officially released on 2021/01/26. [1]
+
+We installed a translation bot on GitHub issues that translate Chinese
+issues into English since we have many Chinese users asking questions
+in Chinese in issues. [2] Hopefully, this can help more developers
+understand the topic in the issue.
+
+[1] https://blogs.apache.org/foundation/entry/the-apache-software-
+foundation-announces71
+[2] https://github.com/apache/echarts/issues/14237#issuecomment-774642287</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-V">2021-01-20</a> &mdash; Wenli Zhang<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache ECharts is a powerful, interactive charting and data visualization
+library for browser.
+
+## Issues:
+We have completed the new TLP tasks at jira
+https://issues.apache.org/jira/browse/INFRA-21290 .
+
+## Membership Data:
+Apache ECharts was founded 2020-12-16 (23 days ago)
+There are currently 22 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- No new committers were added.
+
+No new PMC member or committers added this quarter because we are mainly
+working for the graduation and the major release. But we do find some
+qualified candidates and should take further look next quarter.
+
+## Project Activity:
+
+We released a major version 5.0.0 on 2020/12/02.
+In this version, we provide more than 15 new features. The overall
+consideration is to make it easier for developers to tell a better story
+with Apache ECharts. Features include:
+- Story-telling: We improved the ability to provide an easier way to show
+    the changes of data overtime.
+- Visual Design: We optimized design based on visualization theory to
+    allow readers to have a better understanding of the data.
+- Interaction: Multi-state design allows readers to participate in the
+    interaction, the richness and fluency of the interaction makes the
+    users understand the association between data more deeply.
+- Developer Experience: More powerful and better to use by default, so
+    that developers do not need to worry about data processing, i18n and
+    other issues, so that they can focus on telling a better story of the
+    data.
+- Accessibility: With a more accessible default theme and using decal
+    patterns to distinguish data, ECharts 5 make it easier for developers
+    to enable accessibility design for their charts and let more people
+    understand the story behind the data.
+
+We are also working on more tutorial posts and videos
+to help the users learn about this major release. These promoting jobs
+should be done before the end of Jan 2020.
+
+We are currently testing our next release and hopefully should start
+voting next week.
+
+## Community Health:
+
+We are working with Sally Khudairi on the graduation announcement.
+Thanks to Sally's help, it's almost finished now. We plan to announce
+the graduation in Jan 2021 soon.
+
+Commit activity:
+473 commits in the past quarter (-29% decrease)
+17 code contributors in the past quarter (-22% decrease)
+
+GitHub PR activity:
+128 PRs opened on GitHub, past quarter (18% increase)
+136 PRs closed on GitHub, past quarter (17% increase)
+
+GitHub issues:
+458 issues opened on GitHub, past quarter (20% increase)
+330 issues closed on GitHub, past quarter (-13% decrease)</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#echarts">2020-11-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Discuss and vote on graduation proposal.
+
+Our maturity model is available at
+https://cwiki.apache.org/confluence/display/ECHARTS/Apache+Maturity+Model
++Assessment+for+ECharts
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+We have solved the branding issue of a third-party product and we are
+going to
+vote again in the project's mailing list and go through the graduation
+procedures.
+
+### How has the community developed since the last report?
+
+The community is healthy and people are helping contribute to the project.
+
+### How has the project developed since the last report?
+
+We are working on the next major release of Apache ECharts (incubating),
+which is under testing
+now and is expected to start the release vote in November.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-08-28
+
+### When were the last committers or PPMC members elected?
+
+Committer: 2020-10-15, Quill Qian
+PPMC: 2020-07-27, Zak Wu
+
+### Have your mentors been helpful and responsive?
+
+Yes. Mentors offered a lot help.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+We have fixed a lot of third-party extensions' descriptions and readme
+files to make sure they reference the project as "Apache ECharts" and
+correct the Website reference to be Apache domain.
+And we have solved the branding issue of a third-party product,
+redirecting from https://gallery.echartsjs.com/ to a domain that does
+not contain "echarts" https://www.makeapie.com.
+
+### Signed-off-by:
+
+- [X] (echarts) Kevin A. McGrail
+   Comments:  Expecting graduation in December.
+- [X] (echarts) Dave Fisher
+   Comments:  Expecting graduation in December.
+- [ ] (echarts) Ted Liu
+   Comments:
+- [X] (echarts) Sheng Wu
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#echarts">2020-08-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Ensure Mentors and IPMC have no remaining issues for graduating
+     We are currently discussing graduation related topics under podling's
+     dev mailing list and make sure PPMC and mentors have no remaining
+issues
+     before we start discussing under general@incubator.
+2. Prepare a resolution
+3. Propose votes in incubator and general mailing list
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+We have solved the CDN issue in China by providing a Cloud Service account
+that can be accessed by PPMCs and found the donor for the CDN fees. The
+donor
+Ming Zu is a senior manager of Baidu and fan of ECharts.
+
+### How has the community developed since the last report?
+The community has grown fast and more people are contributing to the
+project.
+73 people have contributed to the project during incubation.
+Committers work for more than 6 different companies and from 3 different
+countries.
+We elected two committers to be PPMC members since last report.
+
+### How has the project developed since the last report?
+We have released a new version 4.8.0 and an alpha version 5.0.0-alpha.1
+and
+we are working
+toward the official release of 5.0.0.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+We have made the maturity assessment [1] and are currently discussing in
+the
+project's dev mailing list about it.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [X] Other: reviewing and discussing graduation requirements
+
+[1]
+
+
+https://cwiki.apache.org/confluence/display/ECHARTS/Apache+Maturity+Model+As
+sessment+for+ECharts
+
+### Date of last release:
+
+2020-05-28
+
+### When were the last committers or PPMC members elected?
+
+2020-07-27
+
+### Have your mentors been helpful and responsive?
+Yes. Mentors have been very helpful and responsive.
+
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+No.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+The PPMC is managing the brand and trademarks. No problems found
+about this.
+
+### Signed-off-by:
+
+- [X] (echarts) Kevin A. McGrail
+   Comments:  ECharts is doing well.
+- [X] (echarts) Dave Fisher
+   Comments:  I expect that ECharts will graduate in the next month or
+   two.
+- [ ] (echarts) Ted Liu
+   Comments:
+- [X] (echarts) Sheng Wu
+   Comments:  Expect the echarts will be ready for TLP soon.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#echarts">2020-05-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Redirecting echartsjs.com to echarts.apache.org. See reason in the
+next question.
+2.
+3.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+https://echarts.apache.org/ recently changed to a different CDN as a work
+around for HTTPS CA expiration problem. (See
+
+
+https://issues.apache.org/jira/browse/INFRA-20185?page=com.atlassian.jira.pl
+ugin.system.issuetabpanels%3Aall-tabpanel )
+The CDN change makes the website slow, at least in China as we tested.
+Our next step is to use echarts.apache.org as domain name and use
+echarts.cdn.apache.org as resource server.
+After fixing this problem, we will redirect echartsjs.com to
+echarts.apache.org so that the website redirection problem can be finally
+solved.
+
+### How has the community developed since the last report?
+The community has been more active on the mailing list and pull requests.
+We have been working on encouraging the community to contribute in varied
+forms and it seems to take effect. We received 23 pull requests from
+non-committers since last report.
+
+### How has the project developed since the last report?
+We release a new version since last report and is discussing and working
+on the next big version.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-03-18
+
+### When were the last committers or PPMC members elected?
+
+2020-02-21
+
+### Have your mentors been helpful and responsive?
+Mentors are very helpful and responsive.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+https://github.com/echarts-maps This GitHub user is creating ECharts
+related projects. We asked him to add notations stating that these are
+not official Apache ECharts (incubating) project. It has this
+description now:
+"All projects are NOT associated with official Apache ECharts
+(incubating)
+project and are independently maintained by chfw.".
+We also asked the author to add this notice to the readme of each
+projects but he has not finished this yet because there are many projects
+need to change. We are under communication with him about this.
+
+### Signed-off-by:
+
+- [X] (echarts) Kevin A. McGrail
+   Comments:
+- [X] (echarts) Dave Fisher
+   Comments: I think that the project is getting close. Thanks KAM for
+   helping with the CDN issues.
+- [ ] (echarts) Ted Liu
+   Comments:
+- [X] (echarts) Sheng Wu
+   Comments: The project has a good progress.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#echarts">2020-02-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Status page ( https://incubator.apache.org/projects/echarts.html ) has
+not been updated and we are going to do this within a month.
+2. Official Website: We have redirected echarts.baidu.com to
+echartsjs.com and put a banner in echartsjs.com stating that the official
+Website is echarts.apache.org but we still need to come to a conclusion
+about whether CDN still has a problem with the access in China. If so, we
+should probably make echartsjs.com as a mirror site with a clear
+specification about the main site. If not, we should redirect
+echartsjs.com to echarts.apache.org.
+3. Currently the collaborator of [echarts npm
+package](https://www.npmjs.com/package/echarts) is ecomfe and we should
+move it to echarts.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No.
+
+### How has the community developed since the last report?
+More people from the community become contributors, either in the form of
+answering questions in the issues, fixing the document or making pull
+requests with the code. We did more public introduction about the
+community and welcome others to contribute and it did show some positive
+effects recently.
+
+### How has the project developed since the last report?
+The monthly release became quite on time recently and in each release, we
+have several pull requests from the community.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2019-12-29
+
+### When were the last committers or PPMC members elected?
+
+2020.01.15
+
+### Have your mentors been helpful and responsive?
+Yes, mentors are very helpful and responsive.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Yes.
+
+### Signed-off-by:
+
+- [X] (echarts) Kevin A. McGrail
+   Comments: Looking forward to a graduation readiness review/exercise
+- [X] (echarts) Dave Fisher
+   Comments: Definitely nearing graduation
+- [ ] (echarts) Ted Liu
+   Comments:
+- [X] (echarts) Sheng Wu
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#echarts">2019-11-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Solve CDN issue and redirect echarts.baidu.com to echarts.apache.org.
+2. Vote for more PPMC and bring diversity to it.
+3. Check tutorials and other documents to make sure users can find what
+they need, and the information is up-to-date. Keep the content of Chinese
+version and English version to be the same.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+We are still working on the Website speed problem before we can transfer
+it to Apache server.
+We are trying the CDN as suggested by Dave and York Shen. It may take
+several days before we can get conclusion. If this works, we will ask the
+infra for help with this CDN, if not, we should find other solutions.
+Currently, we put a banner stating "Apache ECharts is an effort
+undergoing incubation at The Apache Software Foundation (ASF), sponsored
+by the Apache Incubator.We are working on redirecting this Website to
+https://echarts.apache.org. You may visit our new official Website now.".
+Hopefully, this can help with the branding before we do the redirection.
+
+### How has the community developed since the last report?
+
+1. We got more contributors from the community. Last month alone, there
+are more than 10 non-committer contributors whose pull requests were merged
+in incubator-echarts project or doc project.
+2. The mailing list has been much more active these months. We are
+publicly discussing issues,monthly release plans, future plans and so on.
+And more people asked for help and have their problem solved from the
+mailing list.
+3. We are using social medias like YouTube, Twitter and Medium to help
+promote our project internationally and grow the community.
+4. We used labels to state the difficulty of fixing to make it easier for
+contributors to find bugs that are supposed to be fixed by beginners.
+
+### How has the project developed since the last report?
+
+We have released 2 versions since the last report and we are working on
+the vote of the third one these days. We have formed a monthly release
+procedure and made the process public.
+
+We made an automatic visual test framework, so that the testing job can
+be made more easily and more bugs can be found during pull request or
+testing stage before release.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [x] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2019-10-15
+
+### When were the last committers or PPMC members elected?
+
+2019-10-16
+
+### Have your mentors been helpful and responsive?
+
+Yes. They helped us a lot on the Website and suggestion of how to grow
+our community.
+
+### Signed-off-by:
+
+- [X] (echarts) Kevin A. McGrail
+   Comments:  Continuing to make good and stready progress!
+- [X] (echarts) Dave Fisher
+   Comments:  Making progress. Looking forward to the resolution of the
+              CDN issues.
+- [ ] (echarts) Ted Liu
+   Comments:
+- [x] (echarts) Sheng Wu
+   Comments:  Project PPMC has made a good progress toward the Apache
+              way. Look forward you could make the community more active
+              and diversity.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#echarts">2019-08-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Redirecting echarts.baidu.com to echarts.apache.org. Because we found
+some speed problem of Apache CDN in China, we haven't done the redirecting
+job yet. We will do more test and ask for help if necessary.
+2. Podling name search. We will try to complete it within this month.
+3. Releasing new versions more frequently.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No.
+
+### How has the community developed since the last report?
+
+Two new committers are accepted.
+
+### How has the project developed since the last report?
+
+We received more pull requests from the community.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [x] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2019-03-21
+
+### When were the last committers or PPMC members elected?
+
+2019-06-11
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Signed-off-by:
+
+- [ ] (echarts) John D. Ament
+   Comments:
+- [X] (echarts) Kevin A. McGrail
+   Comments: I agree with Dave.  I saw the close to graduation and it
+   surprised me as well.  How is the CDN solution working so we can
+   unblock the website transition?
+- [X] (echarts) Dave Fisher
+   Comments:  I don't think that the polling is close to graduation at
+   all. I missed any communication about the CDN issues. There needs
+   to be more communication on dev@.
+- [ ] (echarts) Ted Liu
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#echarts">2019-05-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important unfinished issues to address before graduating:
+
+  1. Apache domain name should be used for the Website.
+  echartsjs.com and echarts.baidu.com should redirect to
+  echarts.apache.org.
+  Currently they are not redirecting due to slow loading time in China.
+  We are working on with a CDN to improve the loading time in China.
+  2. Website Analytics information should be accessed by PPMC members.
+  We are going to create an Analytics account that can be accessed by PPMC
+  members.
+  3. Develop more committers from the community.
+  Currently there are some contributors in the community that have
+  contributed continuously and should be considered as new committers.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+  We haven't come to a conclusion whether we could use Baidu Tongji in the
+  Website,
+  which is a product quiet similar to Google Analytics.
+  We've consulted John Kinsella &lt;jlkinsel@gmail.com&gt; as our mentor
+  suggested, but got no reply. See
+  https://lists.apache.org/thread.html/efa62d1ace0cc27f7ee4e47df94c346e863b6419f1d1e3ea6fe32c10@%3Cdev.echarts.apache.org%3E
+  My suggestion is to use both Baidu Tongji and Google Analytics. The
+  reason is that Baitu Tongji has only Chinese UI, while Google Analytics
+  may have the potential of losing some data in China since many Google products
+  are not accessible in China.
+  If IPMC and ASF Board are OK with it, we will start a vote for the plan.
+
+How has the community developed since the last report?
+  We have announced our first new committer from the community.
+  More people come to contribute in the community, in the forms of code
+  changes, document mending, and so on.
+
+How has the project developed since the last report?
+  We released v4.2.1.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [ ] Working towards first release
+  [x] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  2019-03-21
+
+When were the last committers or PPMC members elected?
+
+  2019-04-03
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+  Yes.
+
+Signed-off-by:
+
+  [X](echarts) John D. Ament
+  Comments: Glad to see issues getting unblocked as well as semi-recent
+  release.
+  [X](echarts) Kevin A. McGrail
+  Comments: Nice to see things getting unblocked.  I think a Terms &amp;
+      Conditions will be needed for my signoff on using Baidu's analytics
+      but I'm not against it.
+  [X](echarts) Dave Fisher
+  Comments: Thanks to Infra the issues blocking a full move to apache.org
+  domains are being addressed.
+  The change is to build a one off CDN in China.
+  [ ](echarts) Ted Liu
+  Comments:
+  Justin Mclean: Is Baidu analytics compliant with the GDPR (EU General Data
+  Protection Regulation)?
+  You might also want to see MXNet's report about needing an ICP filing when
+  setting up CDN in China. I assume infra is handling this?
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#echarts">2019-02-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important issues to address in the move towards graduation:
+
+1. Initiating a new release candidate (v4.2.1-rc1) on 2019-01-25.
+2. Discussing having a new committer.
+3. Discussing develop and release workflow.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+1. The entrance of Website with Chinese version is under discussion.
+2. Currently, the latest version on npm is an rc version. We are working
+   on retagging or deprecating it.
+3. Legal problems are under discussion about third party license header.
+
+How has the community developed since the last report?
+
+More issues are in English now due to our encouragement.
+
+How has the project developed since the last report?
+
+The project has been improved and we issued a new release candidate on
+2019-01-25.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[x] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2018-08-04
+
+When were the last committers or PPMC members elected?
+
+NA.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes.
+
+Signed-off-by:
+
+[ ](echarts) John D. Ament
+   Comments:
+[X](echarts) Kevin A. McGrail
+   Comments:I will continue to work with the podling to improve things
+especially regarding unofficial releases.
+[X](echarts) Dave Fisher
+   Comments: We have provided guidance to the podling about pre-Apache
+         releases and unapproved releases.
+         There is a thread which discusses an issue where code was
+         inspired by code another a different license,
+         but this was not a copy. If there is no conclusion on
+         legal-discuss@ then we will need to ask on a
+         LEGAL JIRA.
+
+IPMC/Shepherd notes:
+Justin Mclean: I think this report could have more detail and misses a
+  number of things that are report worthy. Next time carefully go
+  though the mail list and add anything that the IPMC (and board) would
+  want to know about.</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#echarts">2018-11-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Have merged several pull request from community.
+  2. Received ICLA files from new contributors.
+  3. Preparing version 4.2.0 release.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  No.
+
+How has the community developed since the last report?
+
+  Several new contributors joined community, sending PR and helping answer
+  questions.
+
+How has the project developed since the last report?
+
+  Preparing the 4.2.0 release and add some new features and fixed bugs.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [ ] Working towards first release
+  [x] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  2018-08-04
+
+When were the last committers or PPMC members elected?
+
+  N/A
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+  Yes. They helped a lot and solved many of our problems.
+
+Signed-off-by:
+
+  [X](echarts) John D. Ament
+     Comments:
+  [ ](echarts) Kevin A. McGrail
+     Comments:
+  [X](echarts) Dave Fisher
+     Comments: I met with Wenli in Shenzhen.
+               None of the PPMC had subscribed to the private email list.
+               We discussed and this was corrected.
+               More work is coming to the dev@ list and a new release is
+               being Voted on.
+               Looking forward to more discussion on dev@.
+               Next report should have a better discussion about steps to
+               graduation.
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-11-21-2"><a href="2018/board_minutes_2018_11_21.html#echarts">2018-11-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-11-21-2" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Have merged several pull request from community.
+  2. Received ICLA files from new contributors.
+  3. Preparing version 4.2.0 release.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  No.
+
+How has the community developed since the last report?
+
+  Several new contributors joined community, sending PR and helping answer
+  questions.
+
+How has the project developed since the last report?
+
+  Preparing the 4.2.0 release and add some new features and fixed bugs.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [ ] Working towards first release
+  [x] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  2018-08-04
+
+When were the last committers or PPMC members elected?
+
+  N/A
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+  Yes. They helped a lot and solved many of our problems.
+
+Signed-off-by:
+
+  [X](echarts) John D. Ament
+     Comments:
+  [ ](echarts) Kevin A. McGrail
+     Comments:
+  [X](echarts) Dave Fisher
+     Comments: I met with Wenli in Shenzhen.
+               None of the PPMC had subscribed to the private email list.
+               We discussed and this was corrected.
+               More work is coming to the dev@ list and a new release is
+               being Voted on.
+               Looking forward to more discussion on dev@.
+               Next report should have a better discussion about steps to
+               graduation.
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#echarts">2018-08-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Complete releasing the v4.1.0 version, which is the first version
+since incubation.
+  2. Release website at https://echarts.apache.org/
+  3. N/A
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No.
+
+How has the community developed since the last report?
+
+N/A
+
+How has the project developed since the last report?
+
+N/A
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [ ] Working towards first release
+  [x] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  2018-8-4
+
+When were the last committers or PPMC members elected?
+
+  N/A
+
+Signed-off-by:
+
+  [ ](echarts) John D. Ament
+     Comments:
+  [ ](echarts) Daniel Gruno
+     Comments:
+  [ ](echarts) Kevin A. McGrail
+     Comments:
+  [X](echarts) Dave Fisher
+     Comments: Going to need to provide guidance on filling out this
+report. Too much N/A.
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#echarts">2018-05-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Prepare for v4.1.0 release.
+  2. Get familiar with release procedure and moving towards first release.
+  3. Get started with website for project.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+N/A.
+
+How has the community developed since the last report?
+
+N/A.
+
+How has the project developed since the last report?
+
+Almost ready for the first release.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [x] Working towards first release
+  [ ] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+N/A.
+
+When were the last committers or PPMC members elected?
+
+N/A.
+
+Signed-off-by:
+
+  [X](echarts) John D. Ament
+     Comments: Podling is working through their first release, and getting through the incubator has begun.
+  [ ](echarts) Daniel Gruno
+     Comments:
+  [ ](echarts) Kevin A. McGrail
+     Comments:
+  [X](echarts) Dave Fisher
+     Comments: Project is getting started and is asking questions. Kevin and John are handling most of the interaction.</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#echarts">2018-04-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Get repo moved to https://github.com/apache/incubator-echarts.
+  2. Get GitHub ID linked and 2FA enabled.
+  3. First pushed to https://github.com/apache/incubator-echarts.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+Currently the setting page of GitHub is not visible to us. There may be a
+problem when we need to configure it (e.g.: see if anything goes wrong when
+building gh-pages branch) but communication is delayed via email. So we'd like
+to ask if it is possible for at least one of us core committers to have the
+admin right.
+
+How has the community developed since the last report?
+
+We released the information that ECharts has become a repo of Apache, and
+received positive feedback from the community.
+
+How has the project developed since the last report?
+
+None.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [x] Working towards first release
+  [ ] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+N/A
+
+When were the last committers or PPMC members elected?
+
+N/A
+
+
+Signed-off-by:
+
+  [X](echarts) John D. Ament
+     Comments: Lots of development activities picking
+   up.  Need to encourage more on list discussion.  Its often hard to sift
+   through the developer list due to gitbox notifications.
+  [ ](echarts) Daniel Gruno
+     Comments:
+  [ ](echarts) Kevin A. McGrail
+     Comments:
+  [X](echarts) Dave Fisher
+     Comments: They are really just getting started now
+   that the repos is transferred. The mentors are going to need to educate the
+   podling more, but they have found infra users ML and have asked about how
+   to split up the email flows. One thing I have noticed about GitBox projects
+   is that it is harder to understand what is happening in those notifications
+   vs. JIRAs. (That's just an observation, not sure of the Way yet.</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#echarts">2018-03-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Move GitHub repository to apache/incubator-echarts.
+  2. Working towards first ASF release.
+  3. Build the community and attract more committers.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+How has the community developed since the last report?
+
+1. Got all ICLA signed of initial committers.
+2. Updated the license to apache v2
+
+How has the project developed since the last report?
+
+None
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [x] Initial setup
+  [ ] Working towards first release
+  [ ] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+N/A
+
+When were the last committers or PPMC members elected?
+
+N/A
+
+
+Signed-off-by:
+
+  [X](echarts) John D. Ament
+     Comments: No on list discussion of report.  Some more user based discussions happening, no development activities.
+  [ ](echarts) Daniel Gruno
+     Comments:
+  [ ](echarts) Kevin A. McGrail
+     Comments:
+  [X](echarts) Dave Fisher
+     Comments: Slow startup.</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#echarts">2018-02-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important issues to address in the move towards graduation:
+
+ 1. Get all ICLA signed of initial committers.
+ 2. Move GitHub repository to apache/incubator-echarts, update license to apache v2.
+ 3. Working towards first ASF release.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+ None.
+
+How has the community developed since the last report?
+
+ N/A(This is the first report); most developers have signed ICLAs, SGA is in
+ flight.
+
+How has the project developed since the last report?
+
+ N/A(This is the first report)
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+ [X] Initial setup
+ [ ] Working towards first release
+ [ ] Community building
+ [ ] Nearing graduation
+ [ ] Other:
+
+Date of last release:
+
+ N/A(This is the first report)
+
+When were the last committers or PPMC members elected?
+
+ 2018-01-18(entering incubation)
+
+Signed-off-by:
+
+ [X](echarts) John D. Ament
+    Comments:
+ [ ](echarts) Daniel Gruno
+    Comments:
+ [ ](echarts) Kevin A. McGrail
+    Comments:
+ [X](echarts) Dave Fisher
+    Comments:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

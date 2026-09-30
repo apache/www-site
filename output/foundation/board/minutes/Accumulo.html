@@ -1,0 +1,3232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Accumulo | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Accumulo';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Accumulo';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Accumulo</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="accumulo">Accumulo<a class="headerlink" href="#accumulo" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-11-18</td>
+<td><a href="2020/board_minutes_2020_11_18.html#section-7E">Appointed Ed Coleman</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2017-03-15</td>
+<td><a href="2017/board_minutes_2017_03_15.html#section-7A">Appointed Michael Wall</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2012-03-21</td>
+<td><a href="2012/board_minutes_2012_03_21.html#section-7D">Appointed Billie Rinaldi</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-07-15</td>
+<td>New chair, Marc Parisi</td>
+<td>special order</td>
+<td>approved, minutes pending approval</td>
+</tr>
+<tr>
+<td>2012-03-21</td>
+<td><a href="2012/board_minutes_2012_03_21.html#section-7D">Establish the Apache Accumulo Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-A">2026-04-15</a> &mdash; Ed Coleman<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+Current project status: Ongoing with moderate to high activity.
+Issues for the board: None.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (14 years ago)
+There are currently 43 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5. It is our practice to
+invite committers to be PMC members at the same time. The difference between
+committers and PMC members is because some PMC members have elected to go
+emeritus.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Kevin Rathbun on 2024-07-24.
+- No new committers. Last addition was John Kucera on 2025-06-04.
+
+## Project Activity:
+Accumulo wrapped up the previously reported development effort to develop a
+new context classloader factory for use with Accumulo deployments, to
+facilitate user plugins being deployed to a remote location that is accessible
+to a running system. This resulted in the release of
+accumulo-classloader-extras-1.0.0 on 2026-03-02.
+
+The effort to improve the separate access control library was released as
+accumulo-access-1.0.0-beta2 on 2026-04-01.
+
+Ongoing works includes:
+- Continuing to improve the stability of 2.1 and preparing for another 2.1
+  release (the last one was 2.1.4 on 2025-08-20).
+- Continuing work towards supporting more dynamic scaling in a future 4.0
+  version.
+- Adding support for multiple manager processes for a future 4.0 version.
+- Improve test code and quality control for both active development branches
+  (2.1 and 4.0/main)
+
+### Recent releases:
+- accumulo-access-1.0.0-beta2 was released on 2026-04-01.
+- accumulo-classloader-extras-1.0.0 was released on 2026-03-02.
+- accumulo-2.1.4 was released on 2025-08-20.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent. The
+low email traffic on the dev list reflects the community preference of using
+GitHub projects and issues for planning and PRs for code discussions, but this
+activity is also reflected in the notifications list, for anybody who prefers
+not to engage on GitHub (this is rare for our community).</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-A">2026-02-18</a> &mdash; Ed Coleman<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+Current project status: Ongoing with moderate to high activity.
+Issues for the board: None.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (14 years ago) There are currently 43
+committers and 39 PMC members in this project. The Committer-to-PMC ratio is
+roughly 6:5. It is our practice to invite committers to be PMC members at the
+same time. The difference between committers and PMC members is because some
+PMC members have elected to go emeritus.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Kevin Rathbun on 2024-07-24.
+- No new committers. Last addition was John Kucera on 2025-06-04.
+
+## Project Activity:
+Accumulo is currently working on several development efforts:
+- Developing a new context classloader factory for use with Accumulo
+  deployments, to facilitate user plugins being deployed to a remote location
+  that is accessible to a running system
+- Improving the access library that was placed in its own module for
+  independent releasing, to implement Accumulo access controls
+- Continuing to improve the stability of 2.1 and preparing for a 2.1.5 release
+- Continuing work towards supporting more dynamic scaling in a future 4.0
+  version
+- Improving scripts and user command-line experience for version 4.0
+
+### Releases:
+- accumulo-2.1.4 was released on 2025-08-20.
+- accumulo-2.1.3 was released on 2024-08-12.
+- accumulo-access-1.0.0-beta was released on 2024-02-17.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent. The
+low email traffic on the dev list reflects the community preference of using
+GitHub projects and issues for planning and PRs for code discussions, but this
+activity is also reflected in the notifications list, for anybody who prefers
+not to engage on GitHub (this is rare for our community).</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#section-6A">2026-01-21</a> &mdash; Ed Coleman<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-A">2025-10-15</a> &mdash; Ed Coleman<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+- Current project status: Ongoing with high activity.
+- Issues for the board: None.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (14 years ago) There are currently 44
+committers and 39 PMC members in this project. The Committer-to-PMC ratio is
+roughly 6:5. It is our practice to invite committers to be PMC members at the
+same time. The difference between committers and PMC members is because some
+PMC members have elected to go emeritus.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Kevin Rathbun on 2024-07-24.
+- No new committers. Last addition was John Kucera on 2025-06-04.
+
+## Project Activity:
+Accumulo is currently working on some significant development efforts.
+- Improving the performance and stability of the with the patch release of 2.1.4
+- The current plan for 3.1 is to identify all of the deprecated items for the
+  4.0 release for semver compliance.
+- 4.0 is the evolution of the processing model to support dynamic scaling and
+  provide elasticity.
+
+### Fluo:
+INFRA completed all the actions needed to transition the Fluo repos and
+website to the Accumulo PMC. The Fluo mailing lists were archived, and repos
+renamed. After some issues we were able to get the Fluo website to build again
+and have made some minor updates to it so far, with more changes expected
+soon.
+
+### Releses:
+- accumulo-1.10.4 (EOL) was released on 2023-11-16.
+- accumulo-2.1.4 (LTM) was released on 2025-08-20.
+- accumulo-3.0.0 (non-LTM) was released on 2023-08-21.
+- accumulo-access-1.0.0-beta was released on 2024-02-17.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent. The
+email traffic reflects the community preference of using GitHub projects and
+issues for planning and PRs for code discussions. We also use our slack
+channel for day-to-day communications. We continue to use the mailing list for
+official Apache business and remains a channel for users to contact us.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-A">2025-07-16</a> &mdash; Ed Coleman<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+Current project status: Ongoing with High Activity
+Issues for the board: None
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (13 years ago)
+There are currently 44 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Kevin Rathbun on 2024-07-24.
+- John Kucera was added as committer on 2025-06-04
+
+## Project Activity:
+The primary Accumulo project activity continues to remain focused on work
+towards 2.1.4, 3.1, and 4.0 releases.  The test release candidate 2.1.4-rc0
+was created 2025-04-02.
+
+### Accumulo Fluo.
+
+As reported in the May update[1] the functionality of the fluo.apache.org
+website has been restored.
+
+There is no update on the INFRA Jira ticket[2] to perform the necessary
+disposition tasks of the Fluo PMC permissions/groups/memberships and assign
+permissions to the Accumulo PMC. This is not a blocker. While we wait on
+INFRA, we will continue to focus on the main Accumulo project work, and
+continue to make updates to the Fluo website, as needed.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent. The
+email traffic reflects the community preference of using GitHub projects and
+issues for PRs discussions. We also use our slack channel for day-to-day
+communications. We continue to use the mailing list for official Apache
+business and it remains a channel for users to contact us.
+
+## Links
+[1] https://lists.apache.org/thread/ykg68x8t38012on2glcvy0b5w0q6p5zt
+[2] https://issues.apache.org/jira/browse/INFRA-26799</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-A">2025-05-21</a> &mdash; Ed Coleman<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (13 years ago)
+There are currently 43 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Kevin Rathbun on 2024-07-24.
+- No new committers. Last addition was Kevin Rathbun on 2024-07-25.
+
+## Project Activity:
+
+The primary Accumulo project activity remains focused on work towards 2.1.4,
+3.1, and 4.0 releases, as reported in our normal quarterly report last month.
+Some draft release notes were added to the accumulo.apache.org website to
+prepare for publishing for when those releases are performed.
+
+In addition, the PMC was asked to provide a report this month to communicate
+our progress migrating the Apache Fluo TLP to be a subproject of Accumulo, as
+per the resolution from the April board meeting. We are making progress in
+this regard. To date, we have:
+
+1) sent an email notification to relevant list subscribers of dev@fluo,
+dev@accumulo, user@accumulo, and also a courtesy copy to dev@rya, since we
+were aware that Apache Rya has an optional dependency on Fluo. The email sent
+was https://lists.apache.org/thread/g809tdpfrbry8vpploogksgrj93607rl
+
+2) restored the functionality of the fluo.apache.org website; it had been
+non-functional due to the use of 3rd party JavaScript and CSS web assets that
+no longer work on apache.org sites, due to policy changes, and
+
+3) created a ticket for INFRA to perform the necessary disposition tasks of
+the Fluo PMC permissions/groups/memberships and assign permissions to the
+Accumulo PMC (https://issues.apache.org/jira/browse/INFRA-26799). We
+identified at least one possible issue that we will need to work with INFRA to
+determine the best path forward. Specifically, we encountered a rule that
+prevents setting a notification or commits email address in a git repo's
+".asf.yaml" file to a domain other than the inferred TLP domain based on the
+git repo's name. INFRA may suggest a different solution, but the two obvious
+solutions appear to be to either keep the current mailing lists (at least as
+an alias for their corresponding @accumulo lists), or rename the git repos
+to match the conventions currently enforced. We will likely rely on INFRA's
+advice for the best path forward for that.
+
+We are currently awaiting INFRA to make the changes in the ticket. However,
+this is not a blocker. While we wait on INFRA, we will continue to focus on
+the main Accumulo project work, and continue to make updates to the Fluo
+website, as needed.
+
+## Community Health:
+Overall community health is good and GitHub and mailing list activity remains
+consistent (no substantial change to report from our regular quarterly report
+provided last month).</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-A">2025-04-16</a> &mdash; Ed Coleman<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+Current project status: Ongoing with high activity
+
+Issues for the board: Discussion on folding Fluo under the Accumulo PMC.
+
+The Accumulo PMC is working with the Fluo PMC on a forthcoming proposed
+resolution for the board to consider regarding the future of the Fluo project.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (13 years ago)
+There are currently 43 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Kevin Rathbun on 2024-07-24.
+- No new committers. Last addition was Kevin Rathbun on 2024-07-24.
+
+## Project Activity:
+
+### Releases:
+- accumulo-1.10.4 (legacy) was released on 2023-11-16.
+- accumulo-2.1.3 (LTM) was released on 2024-08-12.
+- accumulo-3.0.0 was released on 2023-08-21.
+- accumulo-access-1.0.0-beta was released on 2024-02-17.
+
+### Planned Release Activity:
+
+Release planning for 2.1.4, 3.1 and 4.0 has been started on the dev list [3].
+The release work for 2.1.4 is under way. The 3.1 branch has being prepared for
+release with the deprecations required by semver to mark removals that are
+planned to occur in the 4.0 release.
+
+The upcoming 4.0 release will be a significant change to Accumulo and is an
+evolution of the processing model to support dynamic scaling and provide
+elasticity for improved cost and performance management.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent. The
+email traffic reflects the community preference of using GitHub projects and
+issues for PRs discussions. We also use our slack channel for day-to-day
+communications. We continue to use the mailing list for official Apache
+business and it remains a channel for users to contact us.
+
+## Links
+[3] https://lists.apache.org/thread/ktpj3165v99gsw8s8lr5qh35r230mkym</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-A">2025-01-15</a> &mdash; Ed Coleman<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+Current project status: Ongoing with high activity.
+Issues for the board: None
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (13 years ago)
+There are currently 43 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Kevin Rathbun on 2024-07-24.
+- No new committers. Last addition was Kevin Rathbun on 2024-07-25.
+
+## Project Activity:
+
+### Releases:
+- accumulo-1.10.4 (legacy) was released on 2023-11-16.
+- accumulo-2.1.3 (LTM) was released on 2024-08-12.
+- accumulo-3.0.0 was released on 2023-08-21.
+- accumulo-access-1.0.0-beta was released on 2024-02-17.
+
+### Planned Release Activity:
+
+Accumulo is currently working on some significant development efforts. With
+the release of 2.1.3, we have begun formalizing future release plans:
+- Continue with critical bug fixes of the 2.1.x line.
+- Work continues on 3.1 branch to prepare for a feature-freeze and a release
+  preparation. No traget date has been set.
+- We continue to work towards a 4.0.0-alpha release. These changes are the
+  evolution of the processing model to support dynamic scaling and provide
+  elasticity for improved cost and performance management. These changes are
+  outlined in [1]
+
+### Notable Work:
+- Metrics improvements
+- Monitor rework to support new processing model
+- Stability and scaling improvements to support elasticity
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent. The
+email traffic reflects the community preference of using GitHub projects and
+issues for PRs discussions. We also use our slack channel for day-to-day
+communications. We continue to use the mailing list for official Apache
+business and it remains a channel for users to contact us.
+
+## Links:
+[1] https://accumulo.apache.org/blog/2024/10/07/accumulo4-preview.html</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-A">2024-10-16</a> &mdash; Ed Coleman<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+Current project status: Ongoing with high activity.
+Issues for the board: None
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (13 years ago)
+There are currently 43 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- Kevin Rathbun was added to the PMC on 2024-07-24 [1]
+- Kevin Rathbun was added as committer on 2024-07-25 [1]
+
+- John Vines elected to move to PMC emeritus status on 2024-07-22
+
+## Project Activity:
+
+### Releases:
+  - accumulo-1.10.4 (legacy) was released on 2023-11-16.
+  - accumulo-2.1.3 (LTM)  was released on 2024-08-12.
+  - accumulo-3.0.0 was released on 2023-08-21.
+  - accumulo-access-1.0.0-beta was released on 2024-02-17.
+
+The Accumulo 1-10.x line reached end-of-life and Accumulo-1.10.4 was the
+final release. The vote thread can be found at [2]
+The vote thread for 2.1.3 can be found at [3]
+Work on 3.1.0 and future 4.0.0 branches remain very active.
+
+### Planned Release Activity:
+Accumulo is currently working on some significant development efforts.
+With the release of 2.1.3, we have begun formalizing future release plans:
+  - Continue with critical bug fixes of the 2.1.x line.
+  - Created 3.1 branch to prepare for a feature-freeze and a release
+preparation.
+  - Changes from the elasticity branch have been merged to the git main
+branch and we are preparing a 4.0.0-alpha release.  These changes are the
+evolution of the processing model to support dynamic scaling and provide
+elasticity for improved cost and performance management.
+
+### Other:
+  - Migration from GitHub Classic Projects.  The community discussed the
+sun-setting of GitHub Classic projects that we used to track release
+changes. The community consensus was to switch to using release milestones
+and using new project boards for collaboration on specific topics.
+ - Updated bylaws to align with the PMC membership change from the ASF
+board. The changes included simplifying the bylaw text by replacing text
+with links to the relevant ASF documentation and clarifying our community
+practices.  The discussion was held on the dev mailing list at [4] and in
+the PR [5]. The changes passed with 11 +1 and no other votes [6]
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+The email traffic reflects the community preference of using GitHub
+projects and issues for planning and PRs for code discussions. We also use
+our slack channel for day-to-day communications. We continue to use the
+mailing list for official Apache business and remains a channel for users
+to contact us.
+
+## Links
+[1] (private access only)
+[2] https://lists.apache.org/thread/6jy0v0qk14163xx19ocz4l3xxc1rzr3z
+[3] https://lists.apache.org/thread/qwghptxc1ws2brcpsb9fd2nlftsr3rhk
+[4] https://lists.apache.org/thread/mlkq52wj7bmffnq5cv49xgnzfxz0rkyb
+[5] https://github.com/apache/accumulo-website/pull/431
+[6] (private access only)</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-A">2024-07-17</a> &mdash; Ed Coleman<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+- Current project status: Ongoing with high activity.
+- Issues for the board: None.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (12 years ago) There are currently 42
+committers and 39 PMC members in this project. The Committer-to-PMC ratio is
+roughly 1:1. It is our practice to invite committers to be PMC members at the
+same time. The difference between committers and PMC members is because some
+PMC members have elected to go emeritus.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Daniel Roberts on 2023-08-08.
+- No new committers. Last addition was Daniel Roberts on 2023-08-10.
+
+## Project Activity:
+
+Accumulo is currently working on some significant development efforts.
+- Improving the performance and stability of the 2.1.x line
+- Adding new features and performance improvements to 3.1 line
+- The evolution of the processing model to support dynamic scaling and provide
+  elasticity.
+
+### Releases:
+- accumulo-1.10.4 was released on 2023-11-16.
+- accumulo-2.1.2 was released on 2023-08-21.
+- accumulo-3.0.0 was released on 2023-08-21.
+- accumulo-access-1.0.0-beta was released on 2024-02-17.
+
+The Accumulo 1-10.x line reached end-of-life and Accumulo-1.10.4 is the final
+release. The vote thread can be found at [1]
+
+Release activity for a 2.1.3 release has started. A pre-release RC-0 vote
+started on 2 July 2024.  (The pre-release vote is to validate the release
+process before formal releases are created.)
+
+Work on 3.1.0 and future elasticity branches remain very active.
+
+### Other:
+During the past quarter, Accumulo had an opportunity to perform at-scale
+testing of 2.1 experimental features, namely ScanServers and External
+Compactors. This testing period did uncover an important performance issue
+with ScanServers that has now been resolved in the 2.1.3 version. The at-scale
+testing also exposed the need for additional metric and logging changes. At
+present, most of these minor issues have been resolved and incorporated into
+2.1.3 and future release branches. Overall, the testing successfully validated
+scalability and performance improvements and demonstrated the stability of new
+Accumulo features at scale.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.  The
+email traffic reflects the community preference of using GitHub projects and
+issues for planning and PRs for code discussions. We also use our slack
+channel for day-to-day communications. We continue to use the mailing list for
+official Apache business and remains a channel for users to contact us.
+
+## Links
+[1] https://lists.apache.org/thread/6jy0v0qk14163xx19ocz4l3xxc1rzr3z
+[2] https://lists.apache.org/thread/5tlykw1o5rcz5vps5gz4vo1o7kjnpsld</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-A">2024-04-17</a> &mdash; Ed Coleman<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+- Current project status: Ongoing with high activity.
+- Issues for the board: None.
+
+Accumulo is currently working on some significant development efforts. Improving
+the performance and stability of the 2.1.x line, adding new features and
+performance improvements to 3.1 line, and the evolution of the processing
+model to support dynamic scaling and provide elasticity.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-21 (12 years ago) There are currently 42
+committers and 39 PMC members in this project. The Committer-to-PMC ratio is
+roughly 1:1. It is our practice to invite committers to be PMC members at the
+same time. The difference between committers and PMC members is due to some
+PMC members electing to go emeritus.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Daniel Roberts on 2023-08-09.
+- No new committers. Last addition was Daniel Roberts on 2023-08-10.
+
+## Project Activity:
+
+### Releases:
+- accumulo-access-1.0.0-beta was released on 2024-02-17
+- accumulo-1.10.4 was released on 2023-11-16.
+- accumulo-2.1.2 was released on 2023-08-21.
+- accumulo-3.0.0 was released on 2023-08-21.
+
+The Accumulo 1-10.x line reached end-of-life and Accumulo-1.10.4 is the final
+release. The vote thread can be found at [1]
+
+Activity on the next release of 2.1.3, has been very active with bug-fixes and
+performance improvements that are being driven by community adoption of
+2.1.x. Currently 174 PRs have been merged, and there are 21 open issues with 1
+labeled as a blocker for the release.
+
+Work is actively proceeding on 3.1.0 that will contain new features and
+performance improvements. Currently, 3.1.0 has 266 merged PRs.
+
+In parallel to 3.1, work continues on the evolution of the Accumulo processing
+model to support dynamic scaling and provide elasticity [2]. The goal for
+Accumulo is to move from a model where active table metadata and table data
+management is hosted in active processes to a model that can dynamically scale
+server components on-demand to provide configurable latency and higher
+scalability.
+
+The Accumulo Access library provides a stand-alone java library with an
+AccessExpression syntax and an ANTLRv4 grammar to enable reuse separate from
+Accumulo.  Within Accumulo, the AccessExpression is used in the
+ColumnVisibility and VisibilityEvaluator to provide column-level authorization
+for data access. The vote thread is available at [3]
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+The email traffic reflects the community preference of using GitHub projects
+and issues for planning and PRs for code discussions. We also use our slack
+channel for day-to-day communications. We continue to use the mailing list for
+official Apache business and it remains a channel for users to contact us.
+
+## Links
+[1] https://lists.apache.org/thread/6jy0v0qk14163xx19ocz4l3xxc1rzr3z
+[2] https://github.com/orgs/apache/projects/164/views/1
+[3] https://lists.apache.org/thread/q96v767png90mfm4t330kfbjvml0rc37</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-A">2024-01-17</a> &mdash; Ed Coleman<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+- Current project status: Ongoing with high activity.
+- Issues for the board: None.
+
+Accumulo is currently working some significant development efforts. Improving
+the performance and stability of the 2.1.x line, adding new features and
+performance improvements to 3.1 line, and the evolution of the processing
+model to support dynamic scaling and provide elasticity.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-21 (12 years ago) There are currently 42
+committers and 39 PMC members in this project. The Committer-to-PMC ratio is
+roughly 1:1. It is our practice to invite committers to be PMC members at the
+same time. The difference between committer and PMC members is because some
+PMC members have elected to go emeritus.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Daniel Roberts on 2023-08-09.
+- No new committers. Last addition was Daniel Roberts on 2023-08-10.
+
+## Project Activity:
+
+### Releases:
+
+- accumulo-1.10.4 was released on 2023-11-16.
+- accumulo-2.1.2 was released on 2023-08-21.
+- accumulo-3.0.0 was released on 2023-08-21.
+
+The Accumulo 1-10.x line has reached end-of-life and Accumulo-1.10.4 is the
+final release. The vote thread can be found at [1]
+
+Activity on the next release of 2.1.3, has been very active with bug-fixes
+and performance improvements that are being driven by community adoption of
+2.1.x. It is expected that we will release 2.1.3 in this quarter. Currently
+106 PRs have been merged, and there are 18 open issues with 2 labeled as a
+blocker for the release.
+
+Work is actively proceeding on 3.1.0 that will contain new features and
+performance improvements.  Currently, 3.1.0 has 187 merged PRs.
+
+In parallel to 3.1, work continues on the evolution of the Accumulo processing
+model to support dynamic scaling and provide elasticity [2]. The goal for
+Accumulo is to move from a model where active table metadata and table data
+management is hosted in active processes to a model that can dynamically scale
+server components on-demand to provide configurable latency and higher
+scalability.
+
+## Community Health:
+
+Overall community health is good and GitHub activity remains consistent.
+
+The low email traffic reflects the community preference of using GitHub
+projects and issues for planning and PRs for code discussions.  We also use
+our slack channel for day-to-day communications.  We continue to use the
+mailing list for official Apache business and remains a channel for users to
+contact us.
+
+## Links
+[1] https://lists.apache.org/thread/6jy0v0qk14163xx19ocz4l3xxc1rzr3z
+[2] https://github.com/orgs/apache/projects/164/views/1</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-A">2023-10-18</a> &mdash; Ed Coleman<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+- Current project status: Ongoing with high activity.
+- Issues for the board: None.
+
+Accumulo is currently working some significant development efforts. Improving
+the performance and stability of the 2.1.x line, adding new features and
+performance improvements to 3.1 line, and the evolution of the processing
+model to support dynamic scaling and provide elasticity.
+
+The issue concerning accumulodata.com domain was raised at the last board
+meeting. We have not been reporting on the issue because there has been no
+progress and we stopped actively pursuing the issue (see past reports for
+details.) The domain was registered and is owned by an Accumulo PMC member,
+but the domain was registered using an account that is not longer accessible.
+Without access to that account, the registrar will not take any action.  For
+some reason, the domain continues to be auto-renewed.  The domain clearly
+provides historical information and points to the official Accumulo ASF site
+for downloads. There seems little incentive to use volunteer's time to pursue
+the issue at this time.  Unless things change, we will not continue to report
+on this issue in future reports.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-21 (12 years ago) There are currently 42
+committers and 39 PMC members in this project. Our committer and PMC ratio is
+roughly 1:1. It is our practice to invite committers to be PMC members at the
+same time. The difference between committer and PMC members is because some
+PMC members have elected to go emeritus.
+
+Community changes, past quarter:
+- Daniel Roberts was added to the PMC on 2023-08-09
+- Daniel Roberts was added as committer on 2023-08-10
+
+## Project Activity:
+
+### Releases:
+
+- accumulo-2.1.2 was released on 2023-08-21.
+- accumulo-3.0.0 was released on 2023-08-21.
+- accumulo-1.10.3 was released on 2023-04-13.
+
+Activity on 2.1.3 has been very active with bug-fixes and performance
+improvements that are being driven by community adoption of 2.1.x as
+1.10.x approaches end of life.
+
+Accumulo is planning on a 2.1.3 release [1] this quarter with additional bug
+fixes and performance improvements. As of 2023-09-27, there have been 40
+issues / PR closed since 2.1.2 was released.  There are just a few items that
+have been marked as blockers for 2.1.3, and they are actively being worked.
+
+Accumulo is planning on a 1.10.4 release [2] this quarter as the last release
+of the 1.10 line reaches declared end-of-life 2023-11-01.
+
+The Accumulo 3.0.0 release was a removal of deprecated items as permitted by
+semver. Work is actively proceeding on 3.1 that will contain new features and
+performance improvements.
+
+In parallel to 3.1, work continues on the evolution of the Accumulo processing
+model to support dynamic scaling and provide elasticity [3]. The goal for
+Accumulo is to move from a model where active table metadata and table data
+management is hosted in active processes to a model that can dynamically scale
+server components on-demand to provide configurable latency and higher
+scalability. The work being performed on elasticity will likely be a 4.0
+release, but that has not been formally decided by the community.
+
+## Community Health:
+
+Overall community health is good and GitHub activity remains consistent.
+
+- The current variations in GitHub activity are due to quiet post-release
+  activity and work concentrating on a redesign efforts, including activity
+  occurring on Confluence
+
+- Accumulo has transitioned from Jira to GitHub issues. The remaining Jira
+  activity reflects closing obsolete issues.
+
+## Links
+[1] https://github.com/apache/accumulo/projects/30
+[2] https://github.com/apache/accumulo/projects/27
+[3] https://github.com/orgs/apache/projects/164/views/1</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#attachment-A">2023-07-19</a> &mdash; Ed Coleman<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Project Status:
+Current project status: Ongoing with moderate activity.
+Issues for the board: none.
+
+Accumulo is currently working two significant development efforts.  Improving
+the performance and stability of the 2.1.x line and the evolution of the
+processing model to support dynamic scaling and provide elasticity.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-21 (11 years ago)
+There are currently 41 committers and 38 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Christopher L. Shannon on 2022-09-27.
+- No new committers. Last addition was Christopher L. Shannon on 2022-09-27.
+
+## Project Activity:
+
+Releases:
+- accumulo-2.1.1 was released on 2023-06-19.
+- accumulo-1.10.3 was released on 2023-04-13.  1.x is planned to be end of
+  life on or around 2023-11-01, with an expected final release of any
+  ready-to-ship bug fixes.
+
+The 2.1.1 release closes CVE-2023-34340. Accumulo 2.1.0 contains a defect in
+the user authentication process that may succeed when invalid credentials are
+provided. The CVE was reported on 2023-06-01 and was closed with the release
+on 2023-06-19.
+
+Activity on 2.1 has been very active with bug-fixes and performance
+improvements that are being driven by increased community adoption of 2.1.x as
+1.10.x approaches end of life. Accumulo is planning on a 2.1.2 release this
+quarter that includes items that were slated for 2.1.1, but were bumped
+because of the need for a quick release to resolve the CVE.
+
+A release of 3.0 is also expected this quarter. It is planned to be a removal
+of deprecated items as permitted by semver, but with minimal other changes.
+The 3.0 release will also complete the removal of potentially offensive terms.
+
+Work continues on the evolution of the Accumulo processing model to support
+dynamic scaling and provide elasticity.  The goal for Accumulo is to move from
+a model where active table metadata and table data management is hosted in
+active processes to a model that can dynamically scale server components
+on-demand to provide configurable latency and higher scalability. The
+community has not decided if the redesign will be a 3.x or a 4.0 release.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+- Accumulo development centers on GitHub as reflected in the GitHub activity
+  (both pull requests and issues) compared to email list activity.  Community
+   discussions also occur on the the-asf Accumulo slack channel.
+- The increase in GitHub activity is due to robust development on the 2.1.1
+  and 2.1.2 (planned) releases and the work on providing dynamic scaling and
+  elasticity.
+- (as of 2023-07-10) The large number of issues opened (133) vs closed (77)
+  reflects issues being created as work on elasticity changes are identified.
+  Currently there are 71 open issues against the elasticity project, compared
+  with 10 open and 2 in progress issues against the 2.1 branch and 2 open and
+  5 in progress issues against the 3.0 branch.
+## Links
+[1] https://www.cve.org/CVERecord?id=CVE-2023-34340</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-A">2023-04-19</a> &mdash; Ed Coleman<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-21 (11 years ago) There are currently 41
+committers and 39 PMC members in this project. The Committer-to-PMC ratio is
+roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Christopher L. Shannon on 2022-09-27.
+- No new committers. Last addition was Christopher L. Shannon on 2022-09-27.
+
+The following individuals stepped down from the PMC and are now considered PMC
+Emeritus:
+- Arvind Shyamsundar (arvindsh)
+- David Medinets (medined)
+
+## Project Activity:
+Accumulo has started discussions and work to change the processing model to
+support dynamic scaling and provide elasticity. The Accumulo Confluence
+space[1] was activated to host the design documents and provide a
+collaboration platform for developers and users. The goal for Accumulo is to
+move from a model where active table metatdata and table data management is
+hosted in active processes to a model that can dynamically scale server
+components on-demand to provide configurable latency and higher scalability.
+
+Upcoming planned releases expected in the next quarter.
+- Maintenance releases of 1.10.3 and 2.1.1, The the legacy 1.x line will reach
+  end-of-life on 2022-11-01. Release voting for 1.10.3 is in-progress as of
+  2023-04-10.
+- The 3.0 release is planned to be a removal of deprecated items as permitted
+  by semver, but with minimal other changes. The 3.0 release will also
+  complete the removal of potentially offensive terms. The 3.0 release will be
+  a baseline for redesign work but the community has not decided if the
+  redesign will be a 3.1 or a 4.0 release. Those discussions will occur as the
+  design continues to evolve.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+- The current decline in GitHub activity is due to quiet post-release activity
+  and work concentrating on a redesign efforts, including activity
+  occurring on Confluence
+
+- Accumulo has transitioned from Jira to GitHub issues. The remaining Jira
+  activity reflects closing obsolete issues.
+
+## Links
+[1] https://cwiki.apache.org/confluence/display/ACCUMULO/Apache+Accumulo+Home</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-A">2023-01-18</a> &mdash; Ed Coleman<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo is a robust, scalable, distributed key/value store that
+provides robust, scalable data storage and retrieval. With Apache Accumulo,
+users can store and manage large data sets across a cluster. Accumulo uses
+Apache Hadoop's HDFS to store its data and Apache ZooKeeper for consensus.
+
+## Issues:
+There are no new issues requiring board attention.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (11 years ago)
+There are currently 41 committers and 41 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Christopher L. Shannon on 2022-09-26.
+- No new committers. Last addition was Christopher L. Shannon on 2022-09-27.
+
+## Project Activity:
+Apache Accumulo 2.1 was released on Nov 1, 2022 as a Long-Term Maintenance
+(LTM) release. The release contains numerous features and improvements with
+ over 1200 contributions from over 50 contributors. [1]
+
+Work on version 3.0 is in progress [2]. The 3.0 release plan release is to
+provide a quick turn-around release to remove deprecated code that was
+maintained in 2.1, in compliance with semver requirements.  This will complete
+the removal of terms that have been identified as being potentially offensive.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+- Community activity remains healthy and centers on GitHub. The decline in
+  GitHub activity this quarter reflects a return to normal activity after
+  increased activity in the prior quarter due to the 2.1 release. This
+  reporting quarter also includes reduced activity during the US Thanksgiving
+  and Christmas holiday periods.
+
+- Accumulo has transitioned from Jira to GitHub issues. The remaining Jira
+  activity reflects closing obsolete issues.
+
+## Links
+[1] https://accumulo.apache.org/release/accumulo-2.1.0/
+[2] https://github.com/apache/accumulo/projects/11</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-A">2022-10-19</a> &mdash; Ed Coleman<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo is a robust, scalable, distributed key/value store with
+cell-based access control and customizable server-side processing.
+
+## Issues:
+There are no new issues requiring board attention.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (11 years ago)
+There are currently 41 committers and 41 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Christopher L. Shannon was added to the PMC on 2022-09-26
+- Christopher L. Shannon was added as committer on 2022-09-27
+
+## Project Activity:
+Project activity on the next release remains active with significant
+improvements to the current baseline. Currently, Accumulo is targeting an
+October / November release of version 2.1.  We expect to start the release
+process with an rc0 candidate soon, with the remaining issues being actively
+worked. The GitHub 2.1 project dashboard is available at [5] and an email
+discussion is available on thread [6]
+
+Current 2.1 progress includes:
+
+  - 26 pull requests that are currently in progress.
+  - 28 issues that are open, but a lot of these will get bumped to the next
+    version.
+  - 1369 issues that have been resolved.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+- Community activity remains healthy and centers on GitHub, which is reflected
+  by robust GitHub activity and and offsets the corresponding decrease in email
+  traffic.
+- Accumulo has transitioned from Jira to GitHub issues. The remaining  Jira
+  activity reflects closing obsolete issues.
+
+## Links
+[5]: https://github.com/apache/accumulo/projects/3
+[6]: https://lists.apache.org/thread/0nx7ml312v13chdk6xgcwn0vryr5v0xc</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-A">2022-07-20</a> &mdash; Ed Coleman<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo is a robust, scalable, distributed key/value store with
+cell-based access control and customizable server-side processing.
+
+## Issues:
+There are no new issues requiring board attention.
+
+The trademark issue with http:www.accumulodata.com is still open and there
+have been no changes since last few reports. The domain owner does not have
+access to the domain registration and the expiration is now 2022-06-28. No
+action has been required and allowing the domain to expire was deemed a viable
+option by Brand Management VP in Jan-2021 as discussed in (private)[1].
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (10 years ago)
+There are currently 40 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dominic Garguilo on 2021-07-28.
+- No new committers. Last addition was Dominic Garguilo on 2021-07-29.
+
+## Project Activity:
+Project activity on the next release remains active with significant
+improvements to the current baseline and the remaining issues are being
+actively worked. Currently, Accumulo is closing in on a release of version 2.1
+[2] and as discussed in thread [3]. There are two major issues that are
+currently in review that are desired to be included in a 2.1 release, see [4]
+and [5] for progress on those issues.
+
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+- Community participation remains healthy with discussions on the mailing lists
+and GitHub issues and pull-requests.
+- Accumulo has transitioned from Jira to GitHub issues. Jira activity
+reflects clean up of obsolete issues. All new activity uses GitHub issues.
+
+## Links
+(private)[1] https://lists.apache.org/thread/d999tzdwns8mgptfjm8z3o167ngjj899
+[2] https://github.com/apache/accumulo/projects/3
+[3] https://lists.apache.org/thread/0nx7ml312v13chdk6xgcwn0vryr5v0xc
+[4] https://github.com/apache/accumulo/pull/2665
+[5] https://github.com/apache/accumulo/pull/2197</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#attachment-A">2022-04-20</a> &mdash; Ed Coleman<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo is a robust, scalable, distributed key/value store with
+cell-based access control and customizable server-side processing.
+
+## Issues:
+There are no new issues requiring board attention.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (10 years ago)
+There are currently 40 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dominic Garguilo on 2021-07-28.
+- No new committers. Last addition was Dominic Garguilo on 2021-07-29.
+
+## Project Activity:
+Project activity on the next release remains active with significant
+improvements to the current baseline. The remaining issues are being actively
+worked. Currently, Accumulo is targeting a June release of version 2.1.
+
+Current 2.1 progress is discussed in this thread
+  - https://lists.apache.org/thread/0nx7ml312v13chdk6xgcwn0vryr5v0xc
+
+and includes:
+
+  - 15 pull requests that are currently in progress.
+  - 32 pull requests that are open as TODO. But a lot of these will get bumped
+    to the next version.
+  - 1,025 pull requests have been merged.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+- Community participation remains healthy with discussions on the mailing lists
+  and GitHub issues and pull-requests.
+- Accumulo continues to transition from Jira to GitHub issues. Jira activity
+  reflects transition to using GitHub issues as obsolete issues are closed and
+  open issues are transitioned to GitHub issues.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-A">2022-01-19</a> &mdash; Ed Coleman<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo is a robust, scalable, distributed key/value store with
+cell-based access control and customizable server-side processing.
+
+## Issues:
+There are no new issues requiring board attention.
+
+The trademark issue with http:www.accumulodata.com is still open and there has
+been no change since the last report. The core of the issue is the domain owner
+does not have access to the domain registration, the domain appears to have
+automatically renewed, and the expiration is now 2022-06-28. Email from the
+private list discussing this are at [1], [2] and [3]. No action has been
+required and allowing the domain to expire was deemed a viable option by Brand
+Management VP in Jan-2021 (private)[4] to minimize volunteer efforts.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-21 (10 years ago)
+There are currently 40 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dominic Garguilo on 2021-07-29.
+- No new committers. Last addition was Dominic Garguilo on 2021-07-29.
+
+## Project Activity:
+- The current development branch is up to date with the latest log4j2 release.
+  Previous versions do not use log4j2 and are not impacted by the latest
+  reported vulnerabilities.
+- No new releases this reporting period. Project activity on the next release
+  remains active with significant improvements to the current baseline. The
+  remaining issues are being actively worked. Last release dates:
+   - accumulo-2.0.1 was released on 2020-12-24.
+   - accumulo-1.10.1 was released on 2020-12-22.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+- Accumulo participated in the Hacktoberfest 2021.
+- Community participation remains healthy with discussions on the mailing lists
+and GitHub issues and pull-requests.
+- Accumulo continues to transition from Jira to GitHub issues. Jira activity
+reflects transition to using GitHub issues as obsolete issues are closed and
+open issues are transitioned to GitHub issues.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-A">2021-10-20</a> &mdash; Ed Coleman<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo is a robust, scalable, distributed key/value store with
+cell-based access control and customizable server-side processing.
+
+## Issues:
+There are no new issues requiring board attention.
+
+The trademark issue with http:www.accumulodata.com is still open. Although
+the domain owner does not have access to the domain registration, the domain
+appears to have automatically renewed, and the expiration is now 2022-06-28.
+No action has been required and allowing the domain to expire was deemed a
+viable option by Brand Management VP in Jan-2021 to minimize volunteer work.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-21 (10 years ago)
+There are currently 40 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Dominic Garguilo was added to the PMC on 2021-07-29
+- Dominic Garguilo was added as committer on 2021-07-29
+
+## Project Activity:
+No new releases this reporting period. Last release dates:
+- accumulo-2.0.1 was released on 2020-12-24.
+- accumulo-1.10.1 was released on 2020-12-22.
+
+Project activity on the next release remains active with significant
+improvements to the current baseline. The remaining issues are being actively
+worked.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+- Accumulo is participating in the Hacktoberfest 2021.
+- Community participation remains healthy with discussions on the mailing lists
+  and GitHub issues and pull-requests.
+- Accumulo continues to transition from Jira to GitHub issues. Jira activity
+  reflects transition to using GitHub issues as obsolete issues are closed and
+  open issues are transitioned to GitHub issues.</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-A">2021-07-21</a> &mdash; Ed Coleman<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo is a robust, scalable, distributed key/value store with
+cell-based access control and customizable server-side processing.
+
+## Issues:
+There are no new issues requiring board attention.
+
+The trademark issue with http:www.accumulodata.com is still open. The domain
+was to have expired on 2021-06-28 and had entered the grace period when
+checked on 2021-06-29. However, as of 2021-07-14 it looks like the
+registration was extended for another year, the expiration is now 2022-06-28.
+I reached out to the owner for clarification.  No action has been required and
+allowing the domain to expire was deemed a viable option by Brand Management
+VP in Jan-2021 to minimize volunteer efforts.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (9 years ago) There are currently 39
+committers and 39 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Karthick Narendran on 2021-01-21.
+- No new committers. Last addition was Karthick Narendran on 2021-01-22.
+
+## Project Activity:
+No new releases this reporting period. Last release dates:
+- accumulo-2.0.1 was released on 2020-12-24.
+- accumulo-1.10.1 was released on 2020-12-22.
+
+Project activity on the next release remains active with significant
+improvements to the current baseline. The remaining issues are being actively
+worked.
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+
+- Increase in code contributor 81% (21 individuals) Driven by successful
+  participation in an Open Source Hackathon for Diversity (April 29-30) The
+  goal of the Hackathon was to kick-start involvement in the OSS community and
+  foster an environment for contributions and increase the diversity of the
+  OSS communities.  Overall, 6 new contributors successfully submitted code
+  contributions as part of the Hackathon.
+- Mailing list / GitHub activity.  The continued decreases in mailing list
+  activity reflect the community leveraging GitHub for community
+  collaboration.
+- Jira Activity (65 issues closed, 66% increase). The increase in Jira
+  activity reflects transition to using GitHub issues as obsolete issues are
+  closed and open issues are transitioned to GitHub issues.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-A">2021-04-21</a> &mdash; Ed Coleman<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Accumulo is a robust, scalable, distributed key/value store with
+cell-based access control and customizable server-side processing.
+
+## Issues:
+There are no new issues requiring board attention.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-21 (9 years ago)
+There are currently 39 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Karthick Narendran was added to the PMC on 2021-01-22
+- Karthick Narendran was added as committer on 2021-01-22
+
+## Project Activity:
+No new releases this reporting period. Last release dates:
+- accumulo-2.0.1 was released on 2020-12-24.
+- accumulo-1.10.1 was released on 2020-12-22.
+
+Project activity on the next release remains active with significant
+improvements to the current baseline. The remaining issues are being actively
+worked.  Highlights of changes this reporting period:
+- Removal of potentially harmfully terminology to more inclusive terms
+  continues.
+- Formalization of public API. Previously, certain internal classes were
+  necessary for users for some functions (iterators) - the interface has been
+  extracted and formally declared as part of the Accumulo public API.
+- The Apache Accumulo PMC agreed to participate in an Open Source Hackathon
+  for Diversity (April 29-30) The goal of the hackathon is to kick-start
+  involvement in the OSS community and foster an environment for contributions
+  and increase the diversity of the OSS communities. Event details at: [open
+  source hackathon](
+  https://www.eventbrite.com/e/open-source-hackathon-tickets-150583967701)
+
+## Community Health:
+Overall community health is good and GitHub activity remains consistent.
+- Decreases in Jira and dev mailing list activity reflect the community
+transition to using GitHub as a focal point for development.  This is
+reflected in the increased activity for PRs and GitHub issues.
+- contributions from 14 individuals reflecting continued community involvement
+  and consistent participation.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-A">2021-01-20</a> &mdash; Ed Coleman<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Accumulo is the creation and maintenance of software
+related to a robust, scalable, distributed key/value store with cell-based
+access control and customizable server-side processing. It is based on
+Google's BigTable design and is built on top of Apache Hadoop, Zookeeper, and
+Thrift.
+
+## Issues:
+Trademark issue with http://www.accumulodata.com: The owner of no longer has
+access to the email used to register the domain, and the registrar will not
+accept communications from alternate accounts.  Currently, the domain is set
+to expire on 2021-06-28, and without access by the owner, should automatically
+expire. The Accumulo PMC is currently trying to determine if other actions are
+required. Initial emails are at [1] and follow-up discussions at [4].  Advice
+received Brand Management VP suggested that allowing the domain to expire in 6
+months is a viable option and allows volunteer efforts to be put towards
+better uses.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (9 years ago)
+There are currently 38 committers and 38 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Ed Coleman approved on 2020-11-18 as PMC Chair and Vice President of Apache
+  Accumulo.
+- Jeffrey Manno was added to the PMC on 2020-11-01
+- Jeffrey Manno was added as committer on 2020-11-02
+
+
+## Project Release Activity:
+- accumulo-1.10.1 was released on 2020-12-22 [2]
+- accumulo-2.0.1 was released on 2020-12-24. [3]
+
+## Project Activity:
+- CVE-2020-17533 [5] was reported on 2020-12-09 and resolved within 14 days.
+  The CVE concerned allowed authenticated users to perform certain
+  administrative operations without having the appropriate permissions.
+- Project activity on the next release remains active with significant
+  improvements to the current baseline. The remaining issues are being
+  actively worked.
+- There is community interest in improving support for cloud computing
+  platforms (AWS, Azure) and alternate files systems.
+
+## Community Health:
+- Mailing list participation and GitHub issues are consistent.
+- The large JIRA activity increase reflects migration or closing old JIRA
+  issues in favor of using GitHub for issue tracking.
+- 3 new contributors, each from different organizations showing continued
+  interest from a diverse community:
+  - Szabolcs Bukros [Cloudera](https://www.cloudera.com/)
+  - Seth Falco [Elypia](https://elypia.org/en-US/)
+  - Dominic Garguilo [Arctic Slope Regional Corp](https://www.asrc.com/)
+
+## Links
+
+[2]:https://lists.apache.org/thread.html/r947a56c98d0a8e009fa93df3b19e93761bfea8b236f30fb0c21b1992%40%3Cuser.accumulo.apache.org%3E
+[3]:https://lists.apache.org/thread.html/r38b0920499c9c88de282ca783debb9fbb8dc8ed88f5fc0ad9981bf97%40%3Cuser.accumulo.apache.org%3E
+[5]:https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17533</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#attachment-A">2020-10-21</a> &mdash; Michael Wall<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo sorted, distributed key/value store is a robust, scalable,
+high performance data storage system that features cell-based access control
+and customizable server-side processing. It is based on Google's BigTable
+design and is built on top of Apache Hadoop, Zookeeper, and Thrift.
+
+## Issues:
+We continue to track the redirect or shutdown of http://www.accumulodata.com.
+The owner is still trying to reach an actual person at Amazon to figure out the
+appropriate account that was used and reactivate it.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (9 years ago)
+There are currently 37 committers and 37 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Arvind Shyamsundar on 2020-04-15.
+- No new committers. Last addition was Arvind Shyamsundar on 2020-04-16.
+
+
+## Project Activity:
+- We completed our rename of our git branch to 'main' [2] and have begun
+making changes to transition away from other potentially harmfully terminology
+such as renaming out 'master' component to 'manager' [3].  This effort will
+take some time and potentially several releases to complete.
+- Apache Accumulo 1.10 was completed, our first LTM or Long Term Maintenance
+release [4].
+
+## Community Health:
+- Christopher Tubbs updated all our projects [5] with the tag #hacktober to
+increase community participation as part of Digital Ocean's Hacktoberfest [6].
+Hard to track actual metrics as a result of this change, but we have added 5
+new contributors since the last report and 2 in the past week [7].
+- Mailing list particpation and github issues are at least consistent, perhaps
+slightly increased.
+
+[2]:https://lists.apache.org/thread.html/ra4b972e27eef1d21a33b9e64a8be5ffd7bbef30b8cd965465e32bdc8%40%3Cdev.accumulo.apache.org%3E
+[3]:https://lists.apache.org/thread.html/rb68e1264d49b98a06719c0954f5a99732d21fbbafd8030fa226a976e%40%3Cdev.accumulo.apache.org%3E
+[4]:https://lists.apache.org/thread.html/ra5aed36cf93e62f3110ce94193a098c3710f26e64584f6e1d1f9bca3%40%3Cuser.accumulo.apache.org%3E
+[5]:https://lists.apache.org/thread.html/ra5aed36cf93e62f3110ce94193a098c3710f26e64584f6e1d1f9bca3%40%3Cuser.accumulo.apache.org%3E
+[6]:https://hacktoberfest.digitalocean.com/
+[7]:https://github.com/apache/accumulo-website/commits/main/pages/people.md</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-A">2020-07-15</a> &mdash; Michael Wall<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache Accumulo sorted, distributed key/value store is a robust, scalable,
+high performance data storage system that features cell-based access control
+and customizable server-side processing. It is based on Google's BigTable
+design and is built on top of Apache Hadoop, Zookeeper, and Thrift.
+
+## Issues:
+
+The Apr report listed a discussion about a trademark issue at
+http://www.accumulodata.com [1], but the link was incorrect. The owner is
+actively working with Amazon to reactivate the account that managed that
+domain and is awaiting a response. The site will either be shutdown or
+repointed to https://accumulo.apache.org.
+
+## Membership Data:
+
+Apache Accumulo was founded 2012-03-20 (8 years ago) There are currently 37
+committers and 37 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+Community changes, past quarter:
+- Arvind Shyamsundar was added to the PMC on 2020-04-15
+- Arvind Shyamsundar was added as committer on 2020-04-16
+
+## Project Activity:
+
+- No new releases this quarter, although 1.10 is still in the works.
+The 1.10 releases will also be our first LTS release [2].
+- There was a public chat on slack on May 13 [3].
+- The PMC started a discussion about renaming the Accumulo Master server [4].
+
+## Community Health:
+
+- Activity in the community is consistent.  There is less activity on
+the user mailing lists but more on the dev mailing list [5].
+
+[1]:[redacted private link]
+[2]:https://lists.apache.org/thread.html/43f051404bc5f15cde8f971ccbdc4cf7b017cc014affd914c357eaad%40%3Cdev.accumulo.apache.org%3E
+[3]:https://lists.apache.org/thread.html/r5c5e87461b6e0a6e6e904a8725b8604d29b6ba4d720ceef1039873af%40%3Cdev.accumulo.apache.org%3E
+[4]:https://lists.apache.org/thread.html/redcea10fc3c705491b9792b2b0bafa12b9bd246b64394c4dea2d9be0%40%3Cdev.accumulo.apache.org%3E
+[5]:https://reporter.apache.org/wizard/statistics?accumulo</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-A">2020-04-15</a> &mdash; Michael Wall<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Accumulo sorted, distributed key/value store is a robust, scalable,
+high performance data storage system that features cell-based access control
+and customizable server-side processing. It is based on Google's BigTable
+design and is built on top of Apache Hadoop, Zookeeper, and Thrift.
+
+## Issues:
+The Oct report listed a discussion about a trademark issue at
+http://www.accumulodata.com [1]. The owner has acknowledged and agreed to
+repoint to https://accumulo.apache.org.  The PMC is waiting on that change by
+the owner.
+
+## Membership Data:
+Apache Accumulo was founded 2012-03-20 (8 years ago)
+There are currently 36 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Holly Keebler on 2019-08-08.
+- No new committers. Last addition was Holly Keebler on 2019-08-09.
+- Ongoing discussion about adding a new member.
+
+## Project Activity:
+- No new releases this quarter, although 1.10 is still in the works. The 1.10
+  releases will also be our first LTS release [2].
+- There was work done to improve the website generation using github actions
+  [3].
+- The monthly "Hack Day" continues in Columbia MD. There was nothing of note
+  posted from the meetings in Jan[4] and Feb[5]. The March Hack Day had a few
+  notes[6].
+- Some of the developers participated in a slack call[7] on Mar 24, notes were
+  written to the mailing list[8].
+
+## Community Health:
+- Activity in the community is consistent.  There is less activity on the
+  mailing lists but more on github issues and and PRs [9].
+
+[1]:https://lists.apache.org/thread.html/514d3cf9162e72f4aa13be1db5d6685999fc83755695308a529de4d6@%3Cprivate.accumulo.apache.org
+[2]:https://lists.apache.org/thread.html/43f051404bc5f15cde8f971ccbdc4cf7b017cc014affd914c357eaad%40%3Cdev.accumulo.apache.org%3E
+[3]:https://lists.apache.org/thread.html/rc9dacacb7bafd1d2289cdfa67ab31d5f4c0c1c47eb1afc905d62ef77%40%3Cdev.accumulo.apache.org%3E
+[4]:https://lists.apache.org/thread.html/r873b186740d0c1c078edafbf0af4fab0158f85aabc74348cfdf8acc8%40%3Cdev.accumulo.apache.org%3E
+[5]:https://lists.apache.org/thread.html/r0c43fdc622d446a0f5cbec79085de86e8ad098a173a73739e86c98fd%40%3Cdev.accumulo.apache.org%3E
+[6]:https://lists.apache.org/thread.html/r3753f5ee8caba67fc00a4a6af36c75018349085f9c5fd7892ba7d7aa%40%3Cdev.accumulo.apache.org%3E
+[7]:https://lists.apache.org/thread.html/r494ba26ee4e8f16fc1b865bb363f3e4a9035738d8c49f10505d6e4f5%40%3Cdev.accumulo.apache.org%3E
+[8]:https://lists.apache.org/thread.html/r2ae8f3375fc2c2e36b11e576456b8697f29057c06d0bf89c6e165d14%40%3Cdev.accumulo.apache.org%3E
+[9]:https://reporter.apache.org/wizard/statistics?accumulo</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-A">2020-01-15</a> &mdash; Michael Wall<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache Accumulo sorted, distributed key/value store is a robust, scalable,
+high performance data storage system that features cell-based access control
+and customizable server-side processing. It is based on Google's BigTable
+design and is built on top of Apache Hadoop, Zookeeper, and Thrift.
+
+## Issues:
+
+The Oct report listed a discussion about a trademark issue at
+http://www.accumulodata.com [1]. We are still waiting for the owner to repoint
+to https://accumulo.apache.org.
+
+
+## Membership Data:
+
+Apache Accumulo was founded 2012-03-20 (8 years ago)
+There are currently 36 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Holly Keebler on 2019-08-08.
+- No new committers. Last addition was Holly Keebler on 2019-08-09.
+
+## Project Activity:
+
+- No new releases this quarter, although 1.10 is in discussion [2] and [3],
+which is the 1.9 line with the minimum JDK moved to 1.8.  The 1.10 releases
+will also be our first LTS release [4].
+- The monthly "Hack Day" continues in Columbia MD. There was nothing of note
+posted from the meetings in Oct[5] and Dec[6].  The Nov[7] meetup was
+mirrored on the west coast and some issues labeling for 'good first issue' was
+accomplished [8].
+
+## Community Health:
+
+- Activity in the community was lower this quarter than last, but
+consistent with prior quarters.  The uptick last quarter was most likely
+due the surge to release 2.0.
+
+[1]:https://lists.apache.org/thread.html/514d3cf9162e72f4aa13be1db5d6685999fc83755695308a529de4d6@%3Cprivate.accumulo.apache.org
+[2]:https://lists.apache.org/thread.html/ee05bb430a28dfa5f6cab0eec18be26926e7404182102667ea14cc56%40%3Cdev.accumulo.apache.org%3E
+[3]:https://lists.apache.org/thread.html/266d114a0638accba6b9dc3768474cf43d6b965149572cf07bcf4cdb%40%3Cdev.accumulo.apache.org%3E
+[4]:https://lists.apache.org/thread.html/43f051404bc5f15cde8f971ccbdc4cf7b017cc014affd914c357eaad%40%3Cdev.accumulo.apache.org%3E
+[5]:https://lists.apache.org/thread.html/05b21f61ca4bd3fe2610984953990bca041dc9a7f74a3bd0f70c6f99%40%3Cdev.accumulo.apache.org%3E
+[6]:https://lists.apache.org/thread.html/cc3c8b81ee1a0f946cef0b84c756f2a199a320c3f81e63054bfdb072%40%3Cdev.accumulo.apache.org%3E
+[7]:https://lists.apache.org/thread.html/19dc06fa9f649adc3bb70ca6e6cbdf8c5f8d1525a57f17b6e6d315db%40%3Cdev.accumulo.apache.org%3E
+[8]:https://github.com/apache/accumulo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-A">2019-10-16</a> &mdash; Michael Wall<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache Accumulo sorted, distributed key/value store is a robust, scalable,
+high performance data storage system that features cell-based access control
+and customizable server-side processing.  It is based on Google's BigTable
+design and is built on top of Apache Hadoop, Zookeeper, and Thrift.
+
+## Issues:
+
+There was a discussion about a trademark issue at http://www.accumulodata.com
+[1]. The owner of the site is a PMC member and has offered to repoint to
+https://accumulo.apache.org.
+
+## Membership Data:
+
+Apache Accumulo was founded 2012-03-20 (8 years ago) There are currently 36
+committers and 36 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+Community changes, past quarter:
+- Adam Lerman was added to the PMC on 2019-08-06
+- Holly Keebler was added to the PMC on 2019-08-08
+- Adam Lerman was added as committer on 2019-08-08
+- Holly Keebler was added as committer on 2019-08-09
+
+## Project Activity:
+
+- We have finally released Apache Accumulo 2.0.0 on 2019-08-02 [2].
+- We also released the Apache Accumulo2 Maven Plugin on 2019-08-07 [3].
+- The monthly "Hack Day" continues in Columbia MD.  There was nothing of note
+  posted from the meetings in Jul, Sep or Aug.
+
+## Community Health:
+
+Activity in the community remains pretty constant.  The exception is that the
+user list felt like it had a little more activity over the past quarter which
+is supported by the metrics showing a 195% increase in emails (59 compared to
+20).  Many of those emails were people new to the community asking questions
+or getting support.  We have also been attempting to encourage participation
+among newcomers by inviting them to subscribe and introduce themselves on the
+dev list.
+
+[1]:https://lists.apache.org/thread.html/514d3cf9162e72f4aa13be1db5d6685999fc83755695308a529de4d6@%3Cprivate.accumulo.apache.org
+[2]:https://lists.apache.org/thread.html/5421727924d60a20e20af356cda0c4f1daf685be9266d1aebc2f34fd@%3Cannounce.apache.org%
+[3]:https://lists.apache.org/thread.html/344b402281d50e62a78d4770727fd4630fe0dad6ac62584ec7236c05@%3Cdev.accumulo.apache.org%3E</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-A">2019-07-17</a> &mdash; Michael Wall<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Accumulo sorted, distributed key/value store is a robust,
+   scalable, high performance data storage system that features cell-based
+   access control and customizable server-side processing.  It is based on
+   Google's BigTable design and is built on top of Apache Hadoop, Zookeeper,
+   and Thrift.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - The last release was 1.9.3 on Apr 9 2019 [1].
+ - The community continues to march toward the 2.0.0 release.  This includes
+   closing old issues on Jira and moving still relevant issues to github
+   issues.
+ - The monthly "Hack Day" continues in Columbia MD.  There was nothing of note
+   posted from the May meeting, but a summary of June's meeting is at
+   [2].  There was a meeting on Jul 10, but no notes from that yet.
+
+## Health report:
+ - The project remains healthy.  Activity levels on mailing lists, issues and
+   pull requests remain constant.
+
+## PMC changes:
+ - Currently 34 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Felts on Thu Mar 22 2018
+
+## Committer base changes:
+ - All Committers are also PMC members, see the PMC Changes section for
+   details
+
+## Releases:
+ - accumulo-1.9.3 was released on Wed Apr 10 2019
+
+## Mailing list activity:
+ - Nothing significant in the figures
+
+## Issue activity:
+ - 86 issues created [3] and 70 closed [4] across all the Accumulo repos since
+   the last report.
+ - 134 pull requests created [5] and 135 closed [6] across all the Accumulo
+   repos since the last report.
+
+[1]: https://accumulo.apache.org/release/accumulo-1.9.3/
+[2]: https://lists.apache.org/thread.html/953ddb7f3d621daa1cc068804dd7d813469c147b29778e68081a310f@%3Cdev.accumulo.apache.org%3E
+[3]: https://github.com/search?q=is:issue+created:2019-04-17..2019-07-17+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikisearch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache/accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[4]: https://github.com/search?q=is:issue+closed:2019-04-17..2019-07-17+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikisearch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache/accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[5]: https://github.com/search?q=is:pr+created:2019-04-17..2019-07-17+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikisearch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache/accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[6]: https://github.com/search?q=is:pr+closed:2019-04-17..2019-07-17+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikisearch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache/accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#attachment-A">2019-04-17</a> &mdash; Michael Wall<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Accumulo sorted, distributed key/value store is a robust,
+   scalable, high performance data storage system that features cell-based
+   access control and customizable server-side processing.  It is based on
+   Google's BigTable design and is built on top of Apache Hadoop, Zookeeper,
+   and Thrift.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - There was 1 new release, Accumulo-2.0.0-alpha-2 since the last report [1].
+   Progress toward the 2.0.0 release continues.
+ - A 1.9.3 is in the works with a release soon [2].
+ - The community once again started a monthly "Hack Day" in Columbia MD that
+   is open to all contributors [3].  No decisions will be made off list at
+   these events and a summary will be posted to the mailing list.
+
+## Health report:
+ - The project remains healthy.  Activity levels on mailing lists, issues and
+   pull requests remain constant.
+
+## PMC changes:
+ - Currently 34 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Felts on Thu Mar 22 2018
+
+## Committer base changes:
+ - All Committers are also PMC members, see the PMC Changes section for
+   details
+
+## Releases:
+ - accumulo-2.0.0-alpha-2 was released on Wed Jan 30 2019
+
+## Mailing list activity:
+ - Nothing significant in the figures
+
+## Issue activity:
+ - 78 issues created [4] and 55 closed [5] across all the Accumulo repos since
+   the last report.
+ - 153 pull requests created [6] and 152 closed [7] across all the Accumulo
+   repos since the last report.
+
+[1]: https://accumulo.apache.org/release/accumulo-2.0.0-alpha-2/
+[2]: https://accumulo.apache.org/release/accumulo-1.9.3/
+[3]:
+https://lists.apache.org/thread.html/981796200 4326e233b8360f945420a3ffed4526f181098aaf4b76e66@%3Cdev.accumulo.apache.org%3E
+[4]:
+https://github.com/search?q=is:issue+created:2019-01-17..2019-04-17+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikisearch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache /accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[5]:
+https://github.com/search?q=is:issue+closed:2019-01-17..2019-04-17+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikisearch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache /accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[6]:
+https://github.com/search?q=is:pr+created:2019-01-17..2019-04-17+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikisearch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache /accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[7]:
+https://github.com/search?q=is:pr+closed:2019-01-17..2019-04-17+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikisearch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache /accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#attachment-A">2019-01-16</a> &mdash; Michael Wall<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Accumulo sorted, distributed key/value store is a robust,
+   scalable, high performance data storage system that features cell-based
+   access control and customizable server-side processing.  It is based on
+   Google's BigTable design and is built on top of Apache Hadoop, Zookeeper,
+   and Thrift.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - There was 1 new release, Accumulo-2.0.0-alpha-1 since the last report [1]
+   to coincide with the Accumulo Summit which was held on Oct 15 [2].
+ - The PMC decided to stop using IRC and started a new channel on Slack for
+   communication with the community [3].
+ - There have been a few critical fixes warranting 1.9.3 release soon [4].
+
+## Health report:
+ - The project remains healthy.  Activity levels on mailing lists, issues and
+   pull requests remain constant.
+
+## PMC changes:
+ - Currently 34 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Felts on Thu Mar 22 2018
+
+## Committer base changes:
+  - All Committers are also PMC members, see the PMC Changes section for
+    details
+
+## Releases:
+ - accumulo-2.0.0-alpha-1 was released on Sat Oct 13 2018
+
+## Mailing list activity:
+ - Nothing significant in the figures
+
+## Issue activity:
+ - 68 issues created [5] and 48 closed [6] across all the Accumulo repos since
+   the last report.
+ - 140 pull requests created [7] and 136 closed [8] across all the Accumulo
+   repos since the last report.
+
+[1]: https://accumulo.apache.org/release/accumulo-2.0.0-alpha-1/
+[2]: http://accumulosummit.com/
+[3]: https://the-asf.slack.com/messages/CERNB8NDC
+[4]: https://github.com/apache/accumulo/issues?q=is%3Aissue+is%3Aclosed+label%3Av1.9.3
+[5]:https://github.com/search?q=is:issue+created:2018-10-17..2019-01-16+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikise arch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache/accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[6]: https://github.com/search?q=is:issue+closed:2018-10-17..2019-01-16+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikise arch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache/accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[7]: https://github.com/search?q=is:pr+created:2018-10-17..2019-01-16+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikise arch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache/accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp
+[8]: https://github.com/search?q=is:pr+closed:2018-10-17..2019-01-16+repo:apache/accumulo+repo:apache/accumulo-website+repo:apache/accumulo-examples+repo:apache/accumulo-docker+repo:apache/accumulo-testing+repo:apache/accumulo-wikise arch+repo:apache/accumulo-proxy+repo:apache/accumulo-maven-plugin+repo:apache/accumulo-pig+repo:apache/accumulo-instamo-archetype+repo:apache/accumulo-bsp</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-A">2018-10-17</a> &mdash; Michael Wall<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - The Apache Accumulo sorted, distributed key/value store is a robust,
+   scalable, high performance data storage system that features cell-based
+   access control and customizable server-side processing.  It is based on
+   Google's BigTable design and is built on top of Apache Hadoop, Zookeeper,
+   and Thrift.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - There was 1 new release, Accumulo 1.9.2 since the last report [1].
+ - There were no new committers since the last report.  All committers are
+   also PMC members.
+ - The fifth annual Accumulo Summit will be held on Oct 15 in Columbia, MD
+   [2].
+
+## Health report:
+ - The project remains healthy.  Activity levels on mailing lists, issues and
+   pull requests remain constant.
+
+## PMC changes:
+ - Currently 34 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Felts on Thu Mar 22 2018
+
+## Committer base changes:
+ - All committers are PMC members
+
+## Releases:
+ - accumulo-1.9.2 was released on Wed Jul 18 2018
+
+## Mailing list activity:
+ - Nothing significant in the figures
+
+## Issue activity:
+ - 39 issues created [3] and 25 issued [4] closed in the last 3 months
+ - 81 pull requests created [5] and 81 closed [6] in the last 3 months
+
+[1]: https://accumulo.apache.org/release/accumulo-1.9.2/
+[2]: http://accumulosummit.com/
+[3]: https://github.com/apache/accumulo/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+created%3A2018-07-18..2018-10-17+
+[4]: https://github.com/apache/accumulo/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+closed%3A2018-07-18..2018-10-17+
+[5]: https://github.com/apache/accumulo/pulls?q=is%3Apr+created%3A2018-07-18..2018-10-17
+[6]: https://github.com/apache/accumulo/pulls?q=is%3Apr+closed%3A2018-07-18..2018-10-17</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-A">2018-07-18</a> &mdash; Michael Wall<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - The Apache Accumulo sorted, distributed key/value store is a robust,
+   scalable, high performance data storage system that features cell-based
+   access control and customizable server-side processing.  It is based on
+   Google's BigTable design and is built on top of Apache Hadoop, Zookeeper,
+   and Thrift.
+
+## Issues:
+
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+
+ - There were 2 new releases, Accumulo 1.9.0 and Accumulo 1.9.1 since the last
+   report.  The 1.9.0 release [1] had a critical bug in the Write Ahead Log
+   (WAL) process that is fixed in 1.9.1 [2].
+ - The PMC approved the use of the Apache Accumulo trademark for the 5th
+   annual Accumulo Summit, to be held on October 15, 2018 in Columbia, MD.
+ - There were no new committers since the last report.  All committers are
+   also PMC members.  We will review contributors during the next 3 months to
+   see if anyone should be invited to become a committer.
+ - The PMC decided to switch to using github issue for the project and all
+   subprojects [3], which is why the Jira activity dropped off.  Github issues
+   and pull request statistics are included below.
+ - Another bug has been found in the WAL process and a 1.9.2 is in the works.
+
+## Health report:
+
+ - The project remains healthy.  Activity levels on mailing lists, issues and
+   pull requests remain constant.
+
+## PMC changes:
+
+ - Currently 34 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Felts on Thu Mar 22 2018
+
+## Committer base changes:
+
+ - See PMC changes, all committers are PMC members currently.
+
+## Releases:
+
+ - accumulo-1.9.0 was released on Tue Apr 17 2018
+ - accumulo-1.9.1 was released on Sun May 13 2018
+
+## Mailing list activity:
+
+ - Nothing significant in the figures
+
+## Issue activity:
+
+ - 49 issued created [4] and 28 closed [5] in the last 3 months
+ - 75 pull requests created [6] and 67 closed [7] in the last 3 months
+
+[1]: https://accumulo.apache.org/release/accumulo-1.9.0/
+[2]: https://accumulo.apache.org/release/accumulo-1.9.1/
+[3]: https://accumulo.apache.org/blog/2018/03/16/moving-to-github-issues.html
+[4]: https://github.com/apache/accumulo/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+created%3A2018-04-18..2018-07-17+
+[5]: https://github.com/apache/accumulo/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+closed%3A2018-04-18..2018-07-17+
+[6]: https://github.com/apache/accumulo/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+created%3A2018-04-18..2018-07-17+
+[7]: https://github.com/apache/accumulo/pulls?q=is%3Apr+closed%3A2018-04-18..2018-07-17+</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-A">2018-04-18</a> &mdash; Michael Wall<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - The Apache Accumulo sorted, distributed key/value store is a robust,
+   scalable, high performance data storage system that features cell-based
+   access control and customizable server-side processing.  It is based on
+   Google's BigTable design and is built on top of Apache Hadoop, Zookeeper,
+   and Thrift.
+
+## Issues:
+
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+
+ - There was 1 new release, Accumulo 1.7.4, since the last report. [1]
+ - There were 4 new committers since the last report.  All committers are
+   also PMC members.
+ - The PMC decided to switch to using github issue for the project and all
+   subprojects. [2]
+ - The PMC decided to drop support for Hadoop 2 in the Accumulo 2.0.
+ - A contributor requested permission to use the Accumulo logo on t-shirts
+   and/or stickers to promote projects he uses.  VP Brand Management and the
+   PMC had no objections.
+ - PMC is working on a 1.9.0 release.
+
+## Health report:
+
+ - The project remains healthy.  Activity levels on mailing lists, git and
+   JIRA remain constant.
+
+## PMC changes:
+
+ - Currently 34 PMC members.
+ - New PMC members:
+    - Adam J. Shook was added to the PMC on Wed Jan 24 2018
+    - Mark Owens was added to the PMC on Tue Mar 20 2018
+    - Luis Tavarez was added to the PMC on Tue Mar 20 2018
+    - Nick Felts was added to the PMC on Thu Mar 22 2018
+
+## Committer base changes:
+
+ - See PMC changes, all committers are PMC members currently.
+
+## Releases:
+
+ - accumulo-1.7.4 was released on Thu Mar 22 2018
+
+## Mailing list activity:
+
+ - Nothing significant in the figures
+
+## JIRA activity:
+
+ - 65 JIRA tickets created in the last 3 months
+ - 101 JIRA tickets closed/resolved in the last 3 months
+
+[1]: http://accumulo.apache.org/release/accumulo-1.7.4/
+[2]: http://accumulo.apache.org/blog/2018/03/16/moving-to-github-issues.html</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-A">2018-01-17</a> &mdash; Michael Wall<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+  - The Apache Accumulo sorted, distributed key/value store is a robust,
+    scalable, high performance data storage system that features cell-based
+    access control and customizable server-side processing.  It is based on
+    Google's BigTable design and is built on top of Apache Hadoop, Zookeeper,
+    and Thrift.
+
+## Issues:
+  - There are no issues requiring board attention at this time.
+
+## Activity:
+  - There were no new releases during the current reporting period.
+  - There were 4 new contributors added since the last report.
+  - The 4th annual Accumulo Summit was held just after the last report was
+    submitted.  The PMC has approved the use of the Apache Accumulo trademark.
+    Slides from the talks can be viewed on the summit website. [1]
+  - Apache Accumulo now has a hands-on tour that introduces users to key
+    Accumulo concepts by completing a series of programming exercises. [2]
+  - Work to support Apache Accumulo in Docker has begun.  It is based on the
+    unreleased 2.0 line, so you will have to build your your image. [3]
+  - Community is discussing a 1.9 release instead of going from 1.8 to 2.0.
+    The release of Hadoop 3.0 and how Accumulo will support it started the
+    discussion.
+
+## Health report:
+  - The project remains healthy.  Activity levels on mailing lists, git and
+    JIRA remain constant.
+
+## PMC changes:
+  - Currently 30 PMC members.
+  - No new committers added in the last 3 months
+  - Last committer addition was Ivan Bella at Wed Jul 12 2017
+
+## Committer base changes:
+  - Currently 30 committers.
+  - No new committers added in the last 3 months
+  - Last committer addition was Ivan Bella at Wed Jul 12 2017
+
+## Releases:
+  - Last release was 1.7.3 on Sat Mar 25 2017
+
+## Mailing list activity:
+  - Nothing significant in the figures
+
+## JIRA activity:
+  - 60 JIRA tickets created in the last 3 months
+  - 61 JIRA tickets closed/resolved in the last 3 months
+
+[1]: http://accumulosummit.com/program/schedule/
+[2]: http://accumulo.apache.org/blog/2017/12/12/take-the-accumulo-tour.html
+[3]: https://github.com/apache/accumulo-docker</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-A">2017-10-18</a> &mdash; Michael Wall<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based access
+control and customizable server-side processing.  It is based on Google's
+BigTable design and is built on top of Apache Hadoop, Zookeeper, and Thrift.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+- There were no new releases during the current reporting period.
+- There were 3 new contributors added since the last report, and 3 during the
+prior quarter.
+- The 4th annual Accumulo Summit will be held on Oct 16th in Columbia, MD.
+The PMC has approved the use of the Apache Accumulo trademark.
+
+## Health report:
+- The project remains healthy.  Activity levels on mailing lists, git and JIRA
+remain constant.
+
+## PMC changes:
+- Currently 30 PMC members.
+- Ivan Bella was added to the PMC on Tue Jul 11 2017
+
+## Committer base changes:
+- Currently 30 committers.
+- Ivan Bella was added as a committer on Wed Jul 12 2017
+
+## Releases:
+- Last release was 1.7.3 on Sat Mar 25 2017
+
+## Mailing list activity:
+- Nothing significant in the figures
+
+## JIRA activity:
+- 43 JIRA tickets created in the last 3 months
+- 36 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-A">2017-07-19</a> &mdash; Michael Wall<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based access
+control and customizable server-side processing.  It is based on Google's
+BigTable design and is built on top of Apache Hadoop, Zookeeper, and Thrift.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+- There were no new releases during the current reporting period.
+- The PMC approved the use of the Apache Accumulo trademark for the
+4th annual Accumulo Summit, to be held on October 16th, 2017 in Columbia, MD.
+- Since the last report, there has been a focus on documentation clean up and
+paying down some technical debt in our integration test suite.
+
+## Health report:
+- The project remains healthy.  Activity levels on mailing lists, git and
+JIRA remain constant.
+
+## PMC changes:
+- Currently 30 PMC members.
+- Ivan Bella was added to the PMC on Tue Jul 11 2017
+
+## Committer base changes:
+- Currently 30 committers.
+- Ivan Bella was added as a committer on Wed Jul 12 2017
+
+## Releases:
+- Last release was 1.7.3 on Sat Mar 25 2017
+
+## Mailing list activity:
+- dev@accumulo.apache.org:
+- 232 subscribers (up 4 in the last 3 months):
+- 1072 emails sent to list (1012 in previous quarter)
+
+- notifications@accumulo.apache.org:
+- 63 subscribers (down -1 in the last 3 months):
+- 578 emails sent to list (589 in previous quarter)
+
+- user@accumulo.apache.org:
+- 398 subscribers (up 2 in the last 3 months):
+- 121 emails sent to list (120 in previous quarter)
+
+## JIRA activity:
+- 56 JIRA tickets created in the last 3 months
+- 52 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#attachment-A">2017-04-19</a> &mdash; Michael Wall<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based access
+control and customizable server-side processing.  It is based on Google's
+BigTable design and is built on top of Apache Hadoop, Zookeeper, and Thrift.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- Apache Accumulo celebrated its 5th anniversary as a top level project on Mar
+21 [1].
+- We've just finished up two releases. 1.7.3 was a bug-fix release on one of
+our stable release lines.  Momentum on 1.7  has dropped off over time and
+1.7.3 may be the final release on that line. The 1.8.1
+release was the first bug-fix release on the 1.8 line. We'll be
+continuing to try to push users to 1.8 releases (thus, the releases
+happening in close proximity) as we try to finalize what the 2.0.0
+release will look like.
+
+## Health report:
+
+- The project remains healthy.  Activity levels on mailing lists, git and
+JIRA remain constant.
+
+## PMC changes:
+
+- After 5 years of Billie Rinaldi's service, Michael Wall was adopted
+as the new PMC Chair in Mar.
+- Currently 29 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Mike Walch on Wed Nov 02 2016
+
+## Committer base changes:
+
+- Currently 29 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Mike Walch at Thu Nov 03 2016
+
+## Releases:
+
+- 1.7.3 was released on Sat Mar 25 2017
+- 1.8.1 was released on Sun Feb 26 2017
+
+## Mailing list activity:
+
+- dev@accumulo.apache.org:
+ - 229 subscribers (down -2 in the last 3 months):
+ - 1063 emails sent to list (592 in previous quarter)
+
+- notifications@accumulo.apache.org:
+ - 65 subscribers (up 0 in the last 3 months):
+ - 635 emails sent to list (574 in previous quarter)
+
+- user@accumulo.apache.org:
+ - 397 subscribers (down -1 in the last 3 months):
+ - 129 emails sent to list (252 in previous quarter)
+
+## JIRA activity:
+
+- 64 JIRA tickets created in the last 3 months
+- 58 JIRA tickets closed/resolved in the last 3 months
+
+[1]:
+https://accumulo.apache.org/blog/2017/03/21/happy-anniversary-accumulo.html</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#attachment-B">2017-01-18</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Summary
+
+The project is active and there are no Board-level issues at this time.
+We have made no new releases since the previous report and have
+added two committers/PMC members. We forgot to mention in our last
+report that our trademark registration for ACCUMULO in the US has
+been granted! We also amicably resolved a trademark issue with the
+GitHub organization "accumulo" [1].
+
+Releases
+
+There have been no new releases since the last report.
+The latest release was version 1.6.6 on 9/18/2016.
+
+Activity
+
+The number of subscribers to the dev list and the user list has
+decreased slightly. User list activity has increased slightly, while
+activity for other mailing lists has decreased from the previous quarter.
+Activity is still generally strong.
+
+In the past 3 months, there have been 81 commits to the master branch
+from 14 authors, 5 of whom are not yet committers.
+
+We have not begun release planning for our next release, but have
+63 of 122 issues resolved towards a 1.7.3 release, 31 issues resolved
+for the 1.8 branch, and 58 issues resolved for the master (2.0) branch.
+
+Community
+
+Mike Miller was added as a committer and PMC member on 10/24/2016.
+Mike Walch was added as a committer and PMC member on 11/3/2016.
+
+Branding
+
+We noticed that the "accumulo" organization on GitHub did not meet third
+party branding guidelines. After we discussed this with the owners of the
+organization, they transferred control of the organization to the Apache
+Accumulo PMC and moved all third party repositories that had been
+associated with the organization.
+
+[1]: https://github.com/accumulo</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#attachment-B">2016-10-19</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Summary
+The project is active and there are no Board-level issues at this time.
+We have made one new release since the previous report and have
+not added any committers/PMC members.
+
+Releases
+Version 1.8.0 was released on 9/6/2016!
+Version 1.6.6 was released on 9/18/2016.
+
+Activity
+The number of subscribers to the dev list has decreased slightly, while
+the user list subscribers have stayed constant. Mailing list and commit
+activity are up significantly over the previous quarter.
+
+In the past 3 months, there have been 295 commits to the master branch
+from 16 authors, 7 of whom are not yet committers.
+
+Version 1.6.6 has been released and we have ceased active development
+on the 1.6 release line. We will only make another 1.6 release if a
+severe issue requires it, and this will be the last release line to
+support Java 6 and Hadoop 1.x.
+
+Version 1.8.0 was released, our first significant, non-bugfix release
+since May 2015. There was a discussion about dropping Java 7 support for
+this release, but ultimately we decided to push that off until the next
+major release.
+
+The third annual Apache Accumulo Summit took place on October 11, 2016
+(http://accumulosummit.com) and was very successful, with two tracks of
+talks and over 200 attendees.
+
+Community
+Marc Parisi was added as a committer and PMC member on 8/31/2016.</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#attachment-A">2016-07-20</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Summary
+The project is active and there are no Board-level issues at this time.
+We have made one new release since the previous report and have
+not added any committers/PMC members.
+
+Releases
+Version 1.7.2 was released on 6/20/2016.
+
+Activity
+The number of subscribers to the user and dev lists has increased
+slightly and mailing list / commit activity is up slightly over the
+previous quarter.
+
+In the past 3 months, there have been 211 commits to the master branch
+from 13 authors, 4 of whom are not yet committers.
+
+Version 1.7.2 has been released and we are wrapping up a handful of
+issues for the 1.8.0 release. After 1.8.0 is released, we may make a
+1.6.6 bugfix release before retiring the 1.6 branch.
+
+Around 15 people attended an Accumulo meetup in San Jose, where
+Josh Elser spoke about features that have been completed for 1.8.0
+and Bill Slacum discussed how to build resilient applications on
+Accumulo.
+
+Registration and a call for speakers are now open for the Apache
+Accumulo Summit in October 2016 (http://accumulosummit.com).
+
+Community
+Michael Wall was added as a committer and PMC member on 4/11/2016.
+No new committers or PMC members have been added since the last
+report.</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#attachment-A">2016-04-20</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Summary
+The project is active and there are no Board-level issues at this time.
+We have added one new committer / PMC member and made two new
+releases since the previous report. We have had some discussion about
+whether the community is stagnating and how we could attract the
+interest of new developers.
+
+Releases
+Version 1.7.1 was released on 2/26/2016.
+Version 1.6.5 was released on 2/17/2016.
+
+Activity
+The number of subscribers to the user and dev lists have both increased
+slightly and mailing lists remain active.
+
+In the past 3 months, there have been 155 commits to the master branch
+from 12 authors, 5 of whom are not yet committers.
+
+Versions 1.7.1 and 1.6.5 have been released and we have not yet begun
+planning for the next major release.
+
+The PMC has approved the use of the Apache Accumulo mark for the
+next Accumulo Summit, to be held in October 2016.
+
+Community
+Michael Wall was added as a committer and PMC member on 4/11/2016.</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#attachment-A">2016-01-20</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Summary
+The project is active and there are no Board-level issues at this time.
+No new committers have been added since the previous report, nor have
+there been new releases. We are excited to have a new pre-commit build
+for Accumulo using Yetus.
+
+Releases
+Version 1.6.4 was released on 10/3/2015.
+
+Activity
+The number of subscribers to the user list increased by 2 to 397 and the
+number of subscribers to the dev list increased by 5 to 230. Mailing lists
+remain active.
+
+In the past 3 months, there have been 170 commits to the master branch
+from 8 authors, 2 of whom are not yet committers.
+
+Versions 1.7.1 and 1.6.5 will likely be released soon, with 150 of 164
+and 41 of 44 issues fixed for those versions, respectively.
+
+Community
+Dylan Hutchison and Russ Weeks were added as committers and PMC members
+on 10/7/2015.</pre>
+<h3 id="2015-10-21"><a href="2015/board_minutes_2015_10_21.html#attachment-A">2015-10-21</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2015-10-21" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Summary
+The project is active and there are no Board-level issues at this time.
+Two new committers have been added since the previous report. We have
+made two releases and have overhauled the license and notice files so
+that each release artifact has its own tailored license and notice (as
+opposed to a single all-encompassing L&amp;N for all).
+
+Releases
+Version 1.6.4 was released on 10/3/2015.
+Version 1.5.4 was released on 9/20/2015.
+
+Activity
+The number of subscribers to the user list increased by 4 to 395 and the
+number of subscribers to the dev list decreased by 6 to 225. Mailing list
+activity has been lower than in the previous quarter, but lists are still
+active.
+
+In the past 3 months, there have been 226 commits to the master branch
+from 13 authors, 4 of whom are not yet committers.
+
+After the recent release of 1.5.4, we have retired the 1.5 branch. For
+the upcoming 1.7.1 release, 108 of 149 issues have been resolved.
+
+Community
+Dylan Hutchison and Russ Weeks were added as committers and PMC members
+on 10/7/2015.</pre>
+<h3 id="2015-07-15"><a href="2015/board_minutes_2015_07_15.html#attachment-B">2015-07-15</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2015-07-15" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Summary
+The project is active and there are no Board-level issues at this time.
+Three new committers have been added since the previous report,
+addressing the community's concerns about stagnation.  We have made
+releases from every active branch, including a substantial 1.7.0 release.
+
+Releases
+Version 1.6.3 was released on 7/4/2015.
+Version 1.5.3 was released on 6/25/2015.
+Version 1.7.0 was released on 5/19/2015.
+
+Activity
+The number of subscribers to the user list increased by 7 to 391 and the
+number of subscribers to the dev list increased by 4 to 231. Mailing lists
+are active.
+
+In the past 3 months, there have been 590 commits from 22 authors, 12 of
+whom are not yet committers. The Accumulo website has had 100,000 views
+since the beginning of the year, 56% of which were from first-time
+viewers.
+
+After three recent releases, we are just beginning to plan for future
+releases. We have also discussed retiring the 1.5 branch.
+
+Community
+Ed Coleman, Sean Hickey, and Vikram Srivastava were added as committers
+and PMC members on 5/14/2015.
+
+The Accumulo Summit in April was successful, with over 300 attendees and
+40% more talks than the previous year. An O'Reilly book on Accumulo is in
+the final stages of production and will be released this month.</pre>
+<h3 id="2015-04-22"><a href="2015/board_minutes_2015_04_22.html#attachment-B">2015-04-22</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2015-04-22" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.6.2 was released on 2/16/2015.
+
+Activity
+The number of subscribers to the user list is the same as in the last
+report, 384; however, 28 subscribers left and 28 were added.  The dev
+list went down by 6 to 227 subscribers, with 16 leaving and 10 new.
+Mailing lists are active.
+
+In the past 3 months, there have been 345 commits from 14 authors,
+5 of whom are not yet committers.
+
+We are in the process of triaging open tickets for 1.7.0 and will
+begin testing it on Monday April 13th in preparation for a release.
+
+Community
+Sean Busbey was added as a committer and PMC member on 1/09/2014.
+No new committers have been added since the last report.  We have a
+couple of contributors actively working on patches.
+
+This month will be the second annual Accumulo conference [1].
+
+[1]: http://accumulosummit.com/</pre>
+<h3 id="2015-01-21"><a href="2015/board_minutes_2015_01_21.html#attachment-B">2015-01-21</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2015-01-21" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.6.1 was released on 9/24/2014.
+No releases have been made since the last report.
+
+Activity
+For the first time, the numbers of subscribers to both the dev and user
+lists have decreased slightly.  The dev and commits lists are
+maintaining steady activity, while the user list activity has decreased.
+The average number of messages per month for August - December 2014 is
+roughly half that of the preceding six months.  Most months, we are
+still seeing upwards of 70 messages per month to the user list.
+
+We are planning to release 1.6.2 very soon and 1.7.0 moderately soon.
+
+Community
+Sean Busbey was added as a committer and PMC member on 1/09/2014.
+No new committers have been added since the last report, but we are
+actively discussing how to grow our community.
+
+The second annual Accumulo conference has been scheduled for April [1].
+
+In late November into December we experienced what might have been our
+first vehement disagreement over a code change.  The issue was
+ultimately resolved amicably.  One notable outcome of the process was a
+decision by our community to adopt semantic versioning 2.0 for our
+releases.
+
+[1]: http://accumulosummit.com/</pre>
+<h3 id="2014-10-15"><a href="2014/board_minutes_2014_10_15.html#attachment-A">2014-10-15</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2014-10-15" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.6.1 was released on 9/24/2014.
+Version 1.5.2 was released on 9/22/2014.
+
+Activity
+Mailing list activity has been a bit lower than usual, while commits
+have been steady.  The dev list has increased by 5 subscribers to 240,
+and the user list has increased by 18 subscribers to 388.
+
+Recently having produced releases from both of our current major lines,
+we are beginning to revisit the 1.7.0/2.0.0 release plan and are
+adjusting its schedule.
+
+Accumulo storage formats for Pig and Hive have been accepted by both of
+those projects.  There is also a notable new implementation of
+Percolator for Accumulo [1].
+
+Community
+Sean Busbey was added as a committer and PMC member on 1/09/2014.
+No new committers have been added since the last report.
+
+[1]: https://github.com/fluo-io/fluo</pre>
+<h3 id="2014-07-16"><a href="2014/board_minutes_2014_07_16.html#attachment-A">2014-07-16</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2014-07-16" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.6.0 was released on 5/6/2014.
+
+Activity
+The mailing lists have been active.  The dev list has increased by 4
+subscribers to 235, and the user list has increased by 7 subscribers to
+370.
+
+A release plan has been submitted for the next major version, which is
+tentatively planned to be 2.0.0 unless we decide there is a particular
+need for 1.7.0.  Minor releases 1.5.2 and 1.6.1 are also beginning to be
+discussed.
+
+Community
+Sean Busbey was added as a committer and PMC member on 1/09/2014.
+No new committers have been added since the last report.
+
+The first Accumulo Summit that was held in June was very successful with
+over 300 attendees.</pre>
+<h3 id="2014-04-16"><a href="2014/board_minutes_2014_04_16.html#attachment-A">2014-04-16</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2014-04-16" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.5.1 was released on 2/27/2014.
+Version 1.4.5 was released on 4/03/2014.
+
+Activity
+The mailing lists have been active.  The dev list has increased by 16
+subscribers to 231, and the user list has increased by 25 subscribers to
+363.  In March 2014, we again surpassed our previous record for number
+of commits per month.
+
+Testing is still ongoing for 1.6.0 and we have not begun voting on its
+release yet.
+
+Community
+Sean Busbey was added as a committer and PMC member on 1/09/2014.
+
+Over recent months we have engaged in much discussion regarding
+codifying our bylaws, which has resulted in [1].  The initial version has
+been approved by vote [2].  Since there was majority, but not resounding
+approval, we are in the process of making clarifications and adjustments.
+It is largely a recording of our previously accepted practices, with a
+few exceptions, one of which is that we have added some structure around
+release planning that we hope will tighten our release process for major
+releases.
+
+Also, we look forward to the first ever Accumulo Summit on June 12th [3].
+
+[1]: http://accumulo.apache.org/bylaws.html
+[2]: http://s.apache.org/YSn
+[3]: http://accumulosummit.com</pre>
+<h3 id="2014-01-15"><a href="2014/board_minutes_2014_01_15.html#attachment-B">2014-01-15</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2014-01-15" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+No new releases since the last report.
+Version 1.4.4 was released on 8/23/2013.
+
+Activity
+The mailing lists have been active.  The dev list has increased by 3
+subscribers to 215, and the user list has increased by 22 subscribers to
+338.  November and December 2013 marked our highest ever number of commits
+per month (though there has been an overall increase in commit count due
+to our switch to git).
+
+The feature freeze date for 1.6.0 has passed.  We are still working out bugs
+in the new features and anticipate a release in about a month.  New
+releases for the 1.4 and 1.5 branches will also be prepared in this
+timeframe.
+
+Community
+Bill Havanki was added as a committer and PMC member on 1/05/2014.</pre>
+<h3 id="2013-10-16"><a href="2013/board_minutes_2013_10_16.html#attachment-A">2013-10-16</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2013-10-16" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.4.4 was released on 8/23/2013.
+
+Activity
+The mailing lists have been active.  The dev list has increased by 16
+subscribers to 212, and the user list has increased by 27 subscribers to
+316.
+
+We have set a feature freeze date for 1.6.0 to November 1st.  We have
+voted on a process to take if there is disagreement about whether a
+major feature has been tested enough at the feature freeze date to be
+included in the release, as we had difficulty in 1.5.0 with incomplete
+features coming in and extending the testing cycle unreasonably.
+
+We have successfully switched from svn to git.
+
+Community
+No new committers since the last report.
+Mike Drob was added as a committer on 6/27/2013.</pre>
+<h3 id="2013-07-17"><a href="2013/board_minutes_2013_07_17.html#attachment-A">2013-07-17</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2013-07-17" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.5.0 was released on 5/24/2013.
+
+Activity
+The mailing lists have been active.  The dev list has increased by 31
+subscribers to 196, and the user list has increased by 43 subscribers to
+289.  Development is also active.
+
+We have begun discussing major features to be included in the 1.6.0
+release and also have discussed things we would have liked to do
+differently for the 1.5.0 release.
+
+We are intending to switch from svn to git.
+
+Community
+Corey Nolet was added as a committer on 5/6/2013.
+Mike Drob was added as a committer on 6/27/2013.</pre>
+<h3 id="2013-04-17"><a href="2013/board_minutes_2013_04_17.html#attachment-A">2013-04-17</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2013-04-17" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.4.3 was released on 3/18/2012.
+
+Activity
+The mailing lists have been active.  The dev list has increased by 15
+subscribers to 165, and the user list has increased by 20 subscribers to
+246.  Note that I accidentally switched the user and dev list numbers
+in my last report.
+
+Development is active.  New features are no longer being added to the
+1.5 branch and 1.5.0 is undergoing heavy testing in preparation for
+release.  January, March, and February 2013 (in that order) mark our
+highest ever number of commits per month.
+
+Community
+Brian Loss was added as a committer on 2/12/2013.
+There have been 7 new contributors since the last report.</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#attachment-A">2013-01-16</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.4.2 was released on 11/14/2012.
+
+Activity
+The mailing lists have been active.  The dev list has increased by 87
+subscribers to 226, while the user list decreased by 42 subscribers to
+150.  I was momentarily concerned until I verified that we only lost 7
+subscribers overall since the last report, and that the rest of those 42
+either switched to the dev list or were already subscribed there.
+
+Development is active.  We have set a feature freeze date for version
+1.5.0 of January 18th, after which we plan a month of testing before
+release.
+
+Community
+Drew Farris was added as a new committer on 11/01/2012.
+
+(Non-)Issues
+A friend of Accumulo who is not involved with the project was using the
+Twitter account @ApacheAccumulo.  We asked if he would be willing to
+donate the account to the PMC, and he graciously agreed.
+
+In early December, the Senate passed a version of the 2013 NDAA that
+contained a section prohibiting use of Accumulo by some parts of the
+government unless Accumulo was deemed to be a successful open source
+project.  The version of the bill the House had passed did not contain
+this section, and when the differences between the two versions were
+reconciled the Accumulo section was removed [1][2][3].  Last week,
+the President signed the bill, which we can hope brings an end to
+Accumulo-related legislation.
+
+[1]: http://www.wired.com/wiredenterprise/2012/12/nsa-accumulo/
+[2]: http://gpo.gov/fdsys/pkg/CREC-2012-12-18/pdf/CREC-2012-12-18-house.pdf
+[3]: http://thomas.loc.gov/cgi-bin/query/z?c112:H.R.4310:</pre>
+<h3 id="2012-10-17"><a href="2012/board_minutes_2012_10_17.html#attachment-A">2012-10-17</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2012-10-17" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+There have been no releases since the last report.
+
+Activity
+The mailing list activity has been steady and there has been an increase
+to 192 subscribers to the user list and 139 subscribers to the dev list.
+Development is active and major features are still being added to the
+trunk (1.5 branch).
+
+Community
+Josh Elser added as a new committer 07/26/2012.
+Bill Slacum added as a new committer 07/31/2012.
+Christopher Tubbs added as a new committer 09/18/2012.
+Dave Marion added as a new committer 09/18/2012.
+
+The PMC voted on 08/07/2012 that all current and future committers should
+be invited to be PMC members.
+
+In addition to the new committers, there has been an increase in community
+diversity as three committers from the same organization (NSA) have moved
+to two different organizations (Sqrrl and Hortonworks).
+
+Issues
+It is still uncertain whether the bill affecting Accumulo will be passed
+in the Senate (see Section 929 of [1]).  There has been no further
+activity or press since the Wired article [2] that came out in July just
+after our last board report.  Most articles focus on other controversial
+aspects of the 2013 NDAA.
+
+[1]: http://www.govtrack.us/congress/bills/112/s3254/text
+[2]: http://s.apache.org/Us0</pre>
+<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#attachment-A">2012-07-25</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+1.4.1 and 1.3.6 were released since the last report.
+
+Activity
+The mailing lists have been active and there has been an increase to 156
+subscribers to the user list and 127 subscribers to the dev list.
+Development is active and major features are still being added to the
+trunk (1.5).  We anticipate releasing 1.5.0 in early autumn.
+
+Community
+No new contributors since the last report.
+
+Issues
+None at this time.</pre>
+<h3 id="2012-06-20"><a href="2012/board_minutes_2012_06_20.html#attachment-B">2012-06-20</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2012-06-20" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+None since the last report.
+
+Activity
+The mailing lists have been active and there has been an increase to 144
+subscribers to the user list and 118 subscribers to the dev list.  The
+website is nearing 100,000 page views and has seen more than 12,000
+unique visitors.  Development is active and preparations are being made
+to release versions 1.3.6 and 1.4.1.  Major development is occurring in
+the trunk (1.5) as Accumulo's custom write-ahead log is being replaced
+with an HDFS write-ahead log, which is showing improved performance
+during testing.
+
+Community
+One new contributor since the last report.
+
+Issues
+None at this time.
+
+The following [article][1] may be of interest to the board. It discusses
+recommendations made by the Senate Armed Services Committee regarding
+the use of Accumulo by the Department of Defense.
+
+[1]: http://s.apache.org/CTe</pre>
+<h3 id="2012-05-16"><a href="2012/board_minutes_2012_05_16.html#attachment-B">2012-05-16</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2012-05-16" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+None since the last report.
+
+Activity
+The mailing lists have been active and version 1.4.0 has been downloaded
+150 times.  There has been an increase to 126 subscribers to the user
+list.  Development is active.  There is beginning to be interest by
+other projects in developing interfaces to Accumulo, e.g. Giraph, Gora,
+Hama, Nutch, and Whirr.  Some of the code will be contributed to the
+Accumulo project, and some will live in the other projects.
+
+Community
+One new contributor since the last report.
+
+Issues
+None at this time.</pre>
+<h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#attachment-A">2012-04-18</a> &mdash; Billie Rinaldi<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
+<pre>The Apache Accumulo sorted, distributed key/value store is a robust,
+scalable, high performance data storage system that features cell-based
+access control and customizable server-side processing.  It is based on
+Google's BigTable design and is built on top of Apache Hadoop,
+Zookeeper, and Thrift.
+
+Releases
+Version 1.4.0 was released on 3 April 2012.
+
+Activity
+The transition to TLP has been fairly smooth.  Mailing lists, subversion
+repository, website, project pages, and DOAP file have all been updated.
+The mailing lists have been active with hundreds of messages per month
+on the dev and commits lists.  The user list is still below 200 messages
+per month, but appears to be increasing.  There are approximately 100
+subscribers each for the dev and user lists.  Most emails receive
+responses promptly.  We anticipate making a 1.3.6 release soon to
+supersede 1.3.5-incubating.  Major features to be implemented in 1.5
+have yet to be decided, but there are currently 87 open tickets with Fix
+Version 1.5.0.
+
+Community
+Jason Trost became a new committer on 20 March 2012.
+
+Branding
+"TM" has been added to the Accumulo logo and to the first text reference
+to Apache Accumulo on each web page.  "Apache Accumulo, Accumulo,
+Apache, the Apache feather logo, and the Apache Accumulo project logo
+are trademarks of the Apache Software Foundation" has been added to the
+footer of each web page.
+
+Issues
+INFRA-4571 pointed out a violation of policy on the Accumulo website.  A
+committer had put a thrift jar on the Accumulo site because the jar was
+no longer available through any maven repository.  The jar was removed
+promptly.  Instructions have been added for building the necessary jar
+from the corresponding thrift tag.</pre>
+<h3 id="2011-12-21"><a href="2011/board_minutes_2011_12_21.html#accumulo">2011-12-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2011-12-21" title="Permalink">&para;</a></h3>
+<pre>Accumulo is a sorted, distributed key/value store based on BigTable's
+design.  Accumulo entered incubation in September 2011.
+
+In the move towards graduation, we must address:
+1. Learning Apache procedures
+2. Creating releases
+3. Building a community
+
+Community Development:
+* active discussion on mailing lists and on JIRA tickets
+* three new contributors have submitted patches this month
+* logo voted upon
+
+Project Development:
+* made progress towards releasing 1.3.5 (now on candidate 10)
+* incorporated lessons from failed release candidates into redesign of
+release process for trunk
+* fixed bugs / tested code / added documentation</pre>
+<h3 id="2011-12-21-2"><a href="2011/board_minutes_2011_12_21.html#accumulo">2011-12-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2011-12-21-2" title="Permalink">&para;</a></h3>
+<pre>Accumulo is a sorted, distributed key/value store based on BigTable's
+design.  Accumulo entered incubation in September 2011.
+
+In the move towards graduation, we must address:
+1. Learning Apache procedures
+2. Creating releases
+3. Building a community
+
+Community Development:
+* active discussion on mailing lists and on JIRA tickets
+* two new contributors have submitted patches
+* web site created
+* procedures and decision processes beginning to take form
+
+Project Development:
+* podling voted on release candidate for 1.3.5 (soon to be submitted to
+incubator PMC)
+* documented release process
+* applied formatting and licenses
+* fixed bugs / tested code / added documentation</pre>
+<h3 id="2011-11-16"><a href="2011/board_minutes_2011_11_16.html#accumulo">2011-11-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2011-11-16" title="Permalink">&para;</a></h3>
+<pre>Accumulo is a sorted, distributed key/value store based on BigTable's
+design.  Accumulo entered incubation in September 2011.
+
+In the move towards graduation, we must address:
+1. Learning Apache procedures
+2. Creating releases
+3. Building a community
+
+Community Development:
+* active discussion on mailing lists and on JIRA tickets
+* two new contributors have submitted patches
+* web site created
+* procedures and decision processes beginning to take form
+
+Project Development:
+* podling voted on release candidate for 1.3.5 (soon to be submitted to
+incubator PMC)
+* documented release process
+* applied formatting and licenses
+* fixed bugs / tested code / added documentation</pre>
+<h3 id="2011-10-26"><a href="2011/board_minutes_2011_10_26.html#accumulo">2011-10-26</a> &mdash; in the Incubator's report<a class="headerlink" href="#2011-10-26" title="Permalink">&para;</a></h3>
+<pre>Accumulo is a sorted, distributed key/value store based on BigTable's
+design.  Accumulo entered incubation in September 2011.
+
+In the move towards graduation, we must address:
+1. Learning Apache procedures
+2. Creating releases
+3. Building a community
+
+Any issues that the Incubator PMC or ASF Board might wish/need to be aware
+of:
+Discussion is ongoing as to whether agreements other than ICLAs are needed
+or desirable for people employed by the US government to make contributions
+to Apache (see LEGAL-100).
+
+Developments since entering incubation:
+* mailing lists created
+* JIRA created
+* SVN directory and git mirror created
+* accounts for initial committers created
+* ICLAs and Software Grant filed
+* CMS-ready site begun
+* initial code uploaded
+* Jenkins build created
+* ReviewBoard group created</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

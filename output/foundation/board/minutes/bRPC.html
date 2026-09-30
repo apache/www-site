@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: bRPC | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: bRPC';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: bRPC';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: bRPC</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="brpc">bRPC<a class="headerlink" href="#brpc" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-12-21</td>
+<td><a href="2022/board_minutes_2022_12_21.html#section-7C">Appointed James Ge</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-12-21</td>
+<td><a href="2022/board_minutes_2022_12_21.html#section-7C">Establish the Apache bRPC Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-L">2026-04-15</a> &mdash; James Ge<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and
+high-performance services
+
+## Project Status:
+Current project status: ONGOING Issues for the board: NONE
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (3 years ago) There are currently 21
+committers and 14 PMC members in this project. The Committer-to-PMC ratio is
+3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Guangming Chen on 2025-01-06.
+- No new committers. Last addition was Yang Liming on 2024-03-24.
+
+## Project Activity:
+bRPC v1.16.0 was released on 2026-01-25 with the following new features:
+- Add RISC-V architecture support
+- Add Couchbase support for CRUD operations
+- Add support for checking all living bthreads
+- Support higher performance bvar with babylon counter
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the past quarter, about 32 new emails were received and answered
+weekly.</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-N">2026-01-21</a> &mdash; James Ge<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and
+high-performance services
+
+## Project Status:
+Current project status: ONGOING Issues for the board: NONE
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (3 years ago) There are currently 21
+committers and 14 PMC members in this project. The Committer-to-PMC ratio is
+3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Guangming Chen on 2025-01-06.
+- No new committers. Last addition was Yang Liming on 2024-03-24.
+
+## Project Activity:
+bRPC v1.15.0 was released on 2025-10-27 with the following new features:
+- Support custom ParkingLot number
+- Add pb2json depth limit
+- Tens of bug fix and enhancement
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the past quarter, about 52 new emails were received and answered
+weekly.</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-K">2025-10-15</a> &mdash; James Ge<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and
+high-performance services
+
+## Project Status:
+Current project status: ONGOING Issues for the board: NONE
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (3 years ago) There are currently 21
+committers and 14 PMC members in this project. The Committer-to-PMC ratio is
+3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Guangming Chen on 2025-01-06.
+- No new committers. Last addition was Yang Liming on 2024-03-24.
+
+## Project Activity:
+bRPC v1.14.1 was released on 2025-08-06 with the following new features:
+- Support generics for MultiDimension APIs
+- Support rpc checksum
+- Support RDMA polling mode
+- Support epoll bthread deal first
+
+CVE Fixes:
+- redis parser remote denial of service(CVE-2025-54472)
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the past quarter, about 58 new emails were received and answered
+weekly.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-M">2025-07-16</a> &mdash; James Ge<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and high-performance
+services
+
+## Project Status:
+Current project status: ONGOING
+Issues for the board: NONE
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (3 years ago)
+There are currently 21 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Guangming Chen on 2025-01-06.
+- No new committers. Last addition was Yang Liming on 2024-03-24.
+
+## Project Activity:
+bRPC v1.13.0 was released on 2025-05-19 with the following new features:
+- Support ProtoJson formatted http body
+- support dynamic update method concurrency
+- Support various payload of baidu-std: json, proto-json and proto-text
+- Support AddressSanitizer
+- Support keep session info in RedisConnContext
+
+## Community Health:
+We created a maillist at issues@brpc.apache.org to filter out issue-related
+emails and make the brpc maillist more focused on inner discussions between
+developers. Committers take turns responding user emails and issues on a
+weekly basis.</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-K">2025-04-16</a> &mdash; James Ge<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and high-performance
+services
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (2 years ago)
+There are currently 21 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 3:2.
+
+Community changes, past quarter:
+- Guangming Chen was added to the PMC on 2025-01-06
+- No new committers. Last addition was Yang Liming on 2024-03-24.
+
+## Project Activity:
+bRPC v1.12.0 was released on 2025-01-15 with the following new features:
+- Support task tracer.
+- Add NonreflectableMessage and support Protobuf v5.
+- Method level option to ignore server eovercrowded.
+- Add support for bthread cpu usage.
+- Small FlatMap optimization with default initialization.
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the past quarter, about 51 new emails were received and answered
+weekly. 88 commits were made in the past quarter by 12 code contributors.</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-K">2025-01-15</a> &mdash; James Ge<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of Apache bRPC is the creation and maintenance of software related
+
+to an industrial-grade RPC framework for building reliable and high-performance
+
+services
+
+## Project Status:
+
+Current project status: Ongoing
+
+Issues for the board: None
+
+## Membership Data:
+
+Apache bRPC was founded 2022-12-21 (2 years ago)
+
+There are currently 21 committers and 13 PMC members in this project.
+
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+
+- Guangming Chen, who contributed 120 commits and 16k LOC, was added as a new
+  PMC member on 2025-01-06.
+
+- No new committers. Last addition was Yang Liming on 2024-03-24.
+
+## Project Activity:
+
+bRPC v1.11.0 was released on October 27th with the following new features:
+
+- Support pthread mutex deadlock detection
+
+- Support bzlmod
+
+- Support multiple RPCs parsing in wireshark dissector for baidu_std
+
+- Support jemalloc profiler and stats print
+
+- Support rpc protobuf message factory interface
+
+- Support arena rpc pb message factory
+
+- Support backup request policy
+
+- Support semaphore and rwlock for bthread
+
+- Support batch create and accept stream
+
+- Support timedlock of fast/hook pthread and bthread::Mutex
+
+## Community Health:
+
+Committers take turns responding user emails and issues on a weekly basis.
+
+During the past quarter, about 55 new emails were received and answered
+
+weekly. 103 commits were made in the past quarter by 22 code contributors.</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-J">2024-10-16</a> &mdash; James Ge<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and high-performance
+services
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (2 years ago)
+There are currently 21 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Cai Daojin on 2022-12-21.
+- No new committers. Last addition was Yang Liming on 2024-03-24.
+
+## Project Activity:
+bRPC v1.10.0 was released on July 19th with the following updates:
+ Support connect on socket create
+- Support more meta for ServerNode
+- Support proxy and generic call of baidu_std protocol
+- Support thread-local object iteration
+- Support half-open state in circuit breaker
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the past quarter, about 50 new emails were received and answered
+weekly. 66 commits were made in the past quarter by 13 code contributors.</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-K">2024-07-17</a> &mdash; James Ge<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and high-performance
+services
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (2 years ago)
+There are currently 21 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Cai Daojin on 2022-12-21.
+- Last addition was Yang Liming on 2024-03-24.
+
+## Project Activity:
+bRPC v1.9.0 was released on April 26th with the following updates:
+- Support gc for ListOfABAFreeId
+- Support timed connect for both bthread and pthread
+- Support bthread_once and bthread singleton
+- Support span for new bthread
+- Support Protobuf 22
+- Support compatible with cmake &lt; 3.7
+- Support bthread primitive cross different worker pools
+- Support on_failed callback for streaming rpc
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the past quarter, about 50 new emails were received and answered
+weekly. 104 commits were made in the past quarter by 18 code contributors.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-K">2024-04-17</a> &mdash; James Ge<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and high-performance
+services
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (16 months ago)
+There are currently 21 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Cai Daojin on 2022-12-21.
+- Yang Liming was added as committer on 2024-03-24.
+
+## Project Activity:
+bRPC 1.8.0 was released on February 2024 with the following updates:
+- Support multi bthread worker group with tag
+- Support user callback after sending response before request/response
+object destruction
+- Support url safe base64
+- Support loongarch64
+- Support compile with boringssl
+- Support user fields of baidu protocol
+- Support client ALPN
+- Support c++20 coroutine
+- Support grpc health check
+- Support A Multiple Producer, Single Consumer Queue
+- Support async logging
+- Support memory builtin service
+
+## Community Health:
+Yang Liming was added as new committer in last month. Liming started
+contributing PRs about 2 years ago, some PRs are large and really value-able
+to bRPC, namely adding multiple task groups to the bthread.
+
+Committers take turns to respond user emails and issues on a weekly basis.
+During the past quarter, about 60 new emails were received and answered
+weekly. 148 commits were made in the past quarter by 29 code contributors.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-P">2024-01-17</a> &mdash; James Ge<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and high-performance
+services
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (a year ago)
+There are currently 20 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Cai Daojin on 2022-12-21.
+- No new committers. Last addition was Zhaogeng Li on 2023-02-11.
+
+## Project Activity:
+bRPC 1.7.0 was released on Nov. 4th with the following updates:
+- Support pthread mode for ExecutionQueue
+- Add Wireshark dissector for baidu_std protocol
+- Selective_channel supports response_attachment
+- Add option for StreamWrite and Async RPC to write to socket in
+background bthread.
+- Server support ALPN with OpenSSL
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the last quarter, 123 commits were made by 33 code contributors.</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-K">2023-10-18</a> &mdash; James Ge<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and high-performance
+services
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (10 months ago)
+There are currently 20 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Cai Daojin on 2022-12-21.
+- No new committers. Last addition was Zhaogeng Li on 2023-02-11.
+
+## Project Activity:
+bRPC v1.6.0 was released on August 2nd with several new features such as user
+interceptor of server and TCP heartbeat of client. Version 1.6.1 was released
+on October 14th to fix an XSS issue. The release work for bRPC v1.7.0 is in
+progress.
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the past quarter, about 100 new emails were received and answered
+weekly. 127 commits were made in the past quarter by 27 code contributors.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-J">2023-08-16</a> &mdash; James Ge<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache bRPC is the creation and maintenance of software related
+to an industrial-grade RPC framework for building reliable and high-performance
+services
+
+## Project Status:
+Current project status: ongoing with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache bRPC was founded 2022-12-21 (8 months ago)
+There are currently 20 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Cai Daojin on 2022-12-21.
+- No new committers. Last addition was Zhaogeng Li on 2023-02-11.
+
+## Project Activity:
+We made two new releases since the last report was sent in early April.
+Apache bRPC 1.5.0. was released on April 27th. Brief notes of this release:
+- Support IPv6 for DNS resolve
+- Support naming timer sampling and worker threads
+- Add bvar is_hidden
+- Add server concurrency in status builtin service
+- Fix the issue of const unused in the example of RDMA
+- Fix domain naming service host name buffer length
+- Remove wordexp
+- Reject initializing FlatMap when nbucket is 0
+
+Apache bRPC 1.6.0. was released on August 2nd. Brief notes of this release:
+- Support user interceptor of server
+- Support TCP heartbeat of client
+- Support function name in logging
+- Support server-end progressive reader for http protocol
+- Support new DoublyBufferedData for suspended bthread
+- Support force SSL for all connections of Acceptor
+- Support fixed and jittered retry backoff policy
+- Support release assert
+- Support rvalue task in execution_queue_execute
+- Support graceful exit gflag for SIGHUP
+
+## Community Health:
+Committers take turns responding user emails and issues on a weekly basis.
+During the past quarter, about 60 new emails were received and answered
+  weekly. 165 commits were made in the past quarter by 39 code contributors.</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#section-6K">2023-07-19</a> &mdash; James Ge<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-M">2023-04-19</a> &mdash; James Ge<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description
+ - bRPC is an industrial-grade RPC framework for building reliable and
+   high-performance services.
+ - bRPC was graduated as Top Level Project in December 2022.
+
+## Issues
+ There are no Board-level issues at this time.
+
+## Membership Data
+- PMC Members: 13
+- Committers: 17
+- Contributors: 129
+- Date of newest committer: Feb. 13th, 2023
+- Date of newest PMC Member: Jun. 22th, 2022
+- Diversity: 129 contributors are from 20 more unique organizations, and 16
+  committers are from 9 unique organizations including Baidu, ByteDance,
+  Google, 4Paradigm, Momemta. AI, Shopee, Tecent, JOYY.
+
+## Project Activity
+- In Q1 2023, we released bRPC v1.4.0 with new features such as the
+  RDMA support and bazel third_party support, along with several bug fixes.
+
+## Community Health
+- On Feb. 13th, Zhaogeng Li who has contributed the RDMA patch to bRPC became
+  the new committer.
+- On Feb. 16th, there was a live interview organized by OSCHINA to James Ge
+  and Weibing Wang on history and the future roadmap of brpc.
+- On Mar. 29th, all committers have a online meeting to discuss the
+  development of brpc and personal career planning.
+- During the past quarter, about 100 new emails were received and answered
+  weekly. Committers take turns to answer users&rsquo; questions on a weekly basis
+  and complicated issues are encouraged to send to all committers to raise
+  more in-depth discussions. A summarizing oncall report will be sent to all
+  committers to make the transition to next committer smoother.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-L">2023-03-22</a> &mdash; James Ge<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>## Description
+ - bRPC is an industrial-grade RPC framework for building reliable and
+   high-performance services.
+ - bRPC was graduated as Top Level Project in December 2022.
+
+## Issues
+ There are no Board-level issues at this time.
+
+## Membership Data
+- PMC Members: 13
+- Committers: 17
+- Contributors: 129
+- Date of newest committer: Feb. 13th, 2023
+- Date of newest PMC Member: Jun. 22th, 2022
+- Diversity: 129 contributors are from 20 more unique organizations, and 16
+  committers are from 9 unique organizations including Baidu, ByteDance,
+  Google, 4Paradigm, Momemta. AI, Shopee, Tecent, JOYY.
+
+## Project Activity
+- On Feb. 7th, 2023, we released bRPC v1.4.0 with new features such as the
+  RDMA support and bazel third_party support, along with several bug fixes.
+
+## Community Health
+- On Feb. 13th，Zhaogeng Li who has contributed the RDMA patch to bRPC became
+  the new committer.
+- Committers take turns responding user emails and issues on a weekly basis.
+  During the past quarter, about 100 new emails were received and answered
+  weekly.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-I">2023-02-15</a> &mdash; James Ge<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description
+ - bRPC is an industrial-grade RPC framework for building reliable and
+   high-performance services.
+ - bRPC was graduated as Top Level Project in December 2022.
+
+## Issues
+ There are no Board-level issues at this time.
+
+## Membership Data
+- PMC Members: 13
+- Committers: 16
+- Contributors: 129
+- Date of newest committer: Nov. 1st, 2022
+- Date of newest PMC Member: Jun. 22th, 2022
+- Diversity: 129 contributors are from 20 more unique organizations, and 16
+  committers are from 9 unique organizations including Baidu, ByteDance,
+  Google, 4Paradigm, Momemta. AI, Shopee, Tecent, JOYY.
+
+## Project Activity
+- On Feb. 2nd, 2023, we released bRPC v1.4.0 with new features such as the
+  RDMA support and bazel third_party support, along with several bug fixes.
+
+## Community Health
+- Committers take turns responding user emails and issues on a weekly basis.
+  During the past quarter, about 100 new emails were received and answered
+  weekly.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-M">2023-01-18</a> &mdash; James Ge<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>bRPC quarterly report(Q4 2022)
+●Brief description of bRPC. bRPC is an industrial-grade RPC framework for
+ building reliable and high- performance services.
+●The overall status and health of bRPC and the community. Apache bRPC is just
+ graduated as Top Level Project in December. 129 developers from 20 more
+ companies and organizations have contributed to the bRPC project, including
+ 10 PMC members and another 6 committers. Committers take turns responding
+ user emails and issues on a weekly basis. Due to efforts of the whole
+ community, the mailing list (and issue board) of Apache bRPC stays active. We
+ released v1.3.0 in last october and plans to make the next release this month
+ including several new features and bug fixes.
+●Are there any issues for the Board to act on? There are no Board-level issues
+ at this time.
+●When did the project last make any releases? * bRPC v1.3.0 was released on
+ Oct. 25th with several bug fixes and new features such as gcc support on
+ Linux arm64.
+●The overall activity in the project over the past quarter. We got 25 +1, and
+ no -1 during the Vote to graduation of bRPC in the IPMC community in December
+ 2022. On Dec. 22th, the ASF board comfirmed the graduation of bRPC to TLP.
+ bRPC v1.3.0 was released on Oct. 25th with several bug fixes and new features
+ such as gcc support on Linux arm64. One new committer was added in Novemeber.
+ During the past quarter, about 100 new emails were received and answered
+ weekly.
+●The current plans of bRPC. The release work for bRPC v1.4.0 is in progress,
+ in which several improtant features will be included such as the RDMA support
+ and bazel third_party support.  Meanwhile, we are arranging PR announcement
+ for the graduation to TLP and developing new committers as always.
+●When were the newest committers or PMC members elected? * On November 1st,
+ 2022 we elected the newest committer Chen Guangming. On June 22th, 2022 we
+ added three new PMC members: Cai Daojin, Helei and Lilei.
+●PMC and committer diversity. 16 PMC members and committers are from 9 unique
+ organizations (including one freelancer): Baidu, ByteDance, Google,
+ 4Paradigm, Momemta. AI, Shopee, Tecent, JOYY.
+●Project branding or naming issues, either in the project or externally. There
+ are no known branding or naming issues.
+●Legal issues or questions. There are no known legal issues or questions.
+●Infrastructure issues or strategic needs. There are no infrastructure issues
+ or strategic needs at this time.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#brpc">2022-12-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>bRPC is an industrial-grade RPC framework for building reliable and high-
+performance services.  bRPC has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+The Vote to graduate bRPC to TLP has been closed as pass in the IPMC
+community.
+we got 25 +1, and no -1.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No.
+
+### How has the community developed since the last report?
+We added a new committer --- Chen Guangming.
+
+### How has the project developed since the last report?
+We release a new apache release 1.3 by Hu Xiguo.
+And RDMA support feature has been integrated into trunk, will be included
+in 1.4 release.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [X] Other:
+  The vote to graduate bRPC to TPL has been closed as Pass in IPMC
+community.
+
+### Date of last release:
+
+2022-10-25
+
+### When were the last committers or PPMC members elected?
+2022-11-01
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+All mentors have supported the gradutation of bRPC and are willing to stay
+as PMC member after graduation.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+The Brand VP has approved the project name.
+see it at https://issues.apache.org/jira/browse/PODLINGNAMESEARCH-202
+
+### Signed-off-by:
+
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+  Comments:  Congrats for graduation!
+- [X] (brpc) Von Gosling
+  Comments:
+- [X] (brpc) Juan Pan
+  Comments:  Congrats for the graduation!
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#brpc">2022-09-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Attract more committer
+2. Regular Apache Release by more release manager
+3. Fix Branding Issue
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+  No issues.
+
+### How has the community developed since the last report?
+
+  We add two committers， they are Wang Xiaofeng，Hu Xiguo。
+  And we add 3 PPMC members ，they are Cai Daojin，Helei，Lilei.
+
+  we particpated in ApacheCon Asia 2022, PPMC Wang Weibing was the co-chair of the RPC track.
+  there were about 3 sessions in that track.
+
+
+### How has the project developed since the last report?
+  brpc 1.2.0 has been released by a new release manager ---liu shuai,
+  which add apple m1 support.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2022-08-03
+
+### When were the last committers or PPMC members elected?
+2022-07-18
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+we invited our mentor Pan Juan to join our offline dinner meeting on Oct 4th,
+she gave me many suggestion about graduation,
+including discussing more in the mail list.
+we quite appreciate these ideas, and follows her suggestion accordingly.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+I create an issue to registe brpc's branding, here it is.
+ https://issues.apache.org/jira/browse/PODLINGNAMESEARCH-202
+but there is no reply for it.
+
+### Signed-off-by:
+
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (brpc) Von Gosling
+   Comments:
+- [X] (brpc) Juan Pan
+   Comments:  It looks that we have more fellow joined, nice!
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#brpc">2022-05-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1.Regular Apache Release by more release manager
+2.Attract more committer and PPMC member
+3.Fix Branding issue
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No
+
+### How has the community developed since the last report?
+we add one PPMC member Wang Weibing from Baidu, and one Committer Liu
+Shuai from Baidu also.Also we launched the new website of our project,
+using new style, looking much better than old one.
+
+### How has the project developed since the last report?
+1.1.0 release has been finished by new release manager Wang Weibing.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2022-04-11
+
+### When were the last committers or PPMC members elected?
+2022-04-01 Liu Shuai
+
+### Have your mentors been helpful and responsive?
+
+Kevin just decided to end his mentorship in this project due to limited
+time. We miss him.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+I will check it out before next pod report.
+
+### Signed-off-by:
+
+- [ ] (brpc) Kevin A. McGrail
+   Comments:
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (brpc) Von Gosling
+   Comments:
+- [X] (brpc) Juan Pan
+   Comments:  BTW, could we delete the original notice words, e.g., "Are
+   things falling through the cracks?..."? It's confusing at my first glance,
+   Thanks. Sorry to hear that Kevin will leave us, but I respect his thoughts.
+   If it's decided, resignation is supposed to be on our schedule, Thanks.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#brpc">2021-12-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Regular apache release
+2. Adding more committer
+3. Fix Branding issue
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No.
+
+### How has the community developed since the last report?
+we added one new committer named wangwei, he is an active contributor
+from Vivo Mobile.
+And we have our offline dinner meeting together on 12/3 in beijing, to
+get to know each other face2face.
+
+### How has the project developed since the last report?
+we got our 1.0.0 version released,
+Since then, we will branch 1.0 out for stable release, and accept bigger
+feature into trunk.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2021-11-30 1.0.0
+
+### When were the last committers or PPMC members elected?
+2021-09-14 Wangwei
+
+### Have your mentors been helpful and responsive?
+Pan Juan is very helpful, she gave us many intructions.
+
+### Is the PPMC managing the podling's brand / trademarks?
+I will check it out before next pod report.
+
+### Signed-off-by:
+
+- [ ] (brpc) Kevin A. McGrail
+   Comments:
+- [ ] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (brpc) Von Gosling
+   Comments:
+- [X] (brpc) Juan Pan
+   Comments:  Congrats, our 1.0.0 release.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#brpc">2021-09-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1.More apache release, not WIP release
+2.Find more users and more usage
+3.Grow developers community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+None
+
+### How has the community developed since the last report?
+1. we got approved for our first apache release-1.0.rc02，not WIP release
+2. committer lorin has gaved a talk about image graph usage using brpc on
+ApacheCon Asia 2021,and got many positive interest.
+3. we have setup our regular oncall plan, every week there will be an
+engineer who take care of new issues and finish report
+
+### How has the project developed since the last report?
+No answer.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2021-08-29
+
+### When were the last committers or PPMC members elected?
+2021-03-09
+
+### Have your mentors been helpful and responsive?
+Panjuan are very helpful to our project and community.
+she gaved many suggestions about release and promotion.
+
+### Is the PPMC managing the podling's brand / trademarks?
+we will check it after our 1.0 release.
+
+### Signed-off-by:
+
+- [X] (brpc) Kevin A. McGrail
+   Comments:  Good report and agree completely with it.  Great progress.
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (brpc) Von Gosling
+   Comments:
+- [X] (brpc) Juan Pan
+   Comments:  It looks great we did a release with non-WIP.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#brpc">2021-06-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1. More apache release, not WIP release
+2. Find more users and more usage
+3. Grow developers community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+none
+
+### How has the community developed since the last report?
+we got a new mentor PanJuan, she will help to check our release and
+community building.
+and we have one proposal to be selected on ApacheCon Asia,
+it is about brpc's usage in bytedance's graphdb.
+it will be given by our new committer- lorinLee.
+
+### How has the project developed since the last report?
+we have fixed some bugs that prevent us to make an apache release, most
+are license related.
+we plan to release 1.0 next month.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+  2020-06-15
+
+### When were the last committers or PPMC members elected?
+  2021-03-09
+
+### Have your mentors been helpful and responsive?
+Yes, our mentors have been supportive and responsive.
+
+### Is the PPMC managing the podling's brand / trademarks?
+we will check it after our 1.0 release.
+
+### Signed-off-by:
+
+- [ ] (brpc) Kevin A. McGrail
+   Comments:
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (brpc) Von Gosling
+   Comments:
+- [X] (brpc) Pan Juan
+   Comments: Look forward to our next release.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#brpc">2021-03-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1.Release apache release, and not WIP release
+2.Attract more users and contributors
+3.Add more committers to develop the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No
+
+### How has the community developed since the last report?
+After voting from our PMC member, we are happy to welcome a new
+committer, he is Lorin-lilei. He is from bytedance, working in graph
+database and graph computing. Their projects are using brpc as their RPC
+framework, he contributed a lot bug fixes in the brpc community. So PMC
+recognize his contributions.
+
+### How has the project developed since the last report?
+We have fixed some license issues that long existed in the code
+base. Next we will check all code for license compatible.We will try
+to release version 1.0 next month.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+2020-06-15
+
+### When were the last committers or PPMC members elected?
+2021-03-09
+
+### Have your mentors been helpful and responsive?
+Yes, they remind me to finish pod report and hire new committers.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Not ready for that issue, will take care of it after version 1.0
+release.
+
+### Signed-off-by:
+
+- [x] (brpc) Kevin A. McGrail
+   Comments:  great job with the new committer and the licensing fix
+- [ ] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (brpc) Von Gosling
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#brpc">2021-02-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+  1. Release apache release, and not WIP release
+  2. Attract more users and contributors
+  3. Add more committers to develop the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+  No
+
+### How has the community developed since the last report?
+  It developed slowly.
+  More companies are beginning to adopt brpc in their products, including
+  cloudset and DiDi.
+  We are discussing to add one new committer.
+
+### How has the project developed since the last report?
+  We have integrated some bugs fixes, including fix build in MacOS.
+  And add some features, such as improvement of protobuf-json
+  conversation, support logging to json format.
+
+### How would you assess the podling's maturity?
+  Please feel free to add your own commentary.
+
+  - [ ] Initial setup
+  - [ ] Working towards first release
+  - [X] Community building
+  - [ ] Nearing graduation
+  - [ ] Other:
+
+### Date of last release:
+  2020-06-15
+
+### When were the last committers or PPMC members elected?
+  2019-12-24
+
+### Have your mentors been helpful and responsive?
+  Yes, they remind me to finish pod report and hire new committers.
+
+### Is the PPMC managing the podling's brand / trademarks?
+  No answer.
+
+### Signed-off-by:
+
+  - [ ] (brpc) Kevin A. McGrail
+     Comments:
+  - [ ] (brpc) Jean-Baptiste Onofr&eacute;
+     Comments:
+  - [X] (brpc) Von Gosling
+     Comments: The project seems to have had some small trouble with
+     community building, with few new committers absorbed over the past
+     year.
+     Hopefully, we could better absorb fresh blood through the local
+     community.
+
+### IPMC/Shepherd notes:
+  Justin Mclean: Pleas make sure to answer all sections of the report.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#brpc">2020-09-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1.release Apache standard releases regularly
+2.attract more contributors and committers
+3.clean branding issue
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No big issues.
+
+### How has the community developed since the last report?
+We had one online meeting on Aug to talk about the task lists of
+near future.
+It includes several tasks.
+1. Let new PPMC member to involve into release related things
+2. Add &ldquo;good first issue&rdquo; to several GitHub issues for beginner
+3. Plan to have monthly online meeting
+
+And we found that there are several engineers from tencent were
+using brpc too.
+We have invited them to join the dev@ mail list.
+
+### How has the project developed since the last report?
+Build 0.9.8-rc01 is released,  this time our new PPMC member helei
+made the build.
+we are planning for our next release as 1.0.0 before the end of
+this year.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-08-05 vote passed for 0.9.8-rc01
+
+### When were the last committers or PPMC members elected?
+2019-12-24
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+Von suggest that we need to fix compliance issue and make a
+standard apache release next time.
+And we are planning that we will fix these issues on our next build
+which will become 1.0.0.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+Not ready for the branding issue, will check it next time.
+
+### Signed-off-by:
+
+- [X] (brpc) Kevin A. McGrail
+   Comments: Any chance we can get more committers?
+- [ ] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (brpc) Von Gosling
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#brpc">2020-06-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1. release Apache standard releases regularly
+2. attract more contributors and committers
+3. clean branding issue
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No big issues
+
+### How has the community developed since the last report?
+we organized a meeting to listen to Apache ShardingSphere's chair
+-zhangliang,
+he shared his experience on how to develop his project's community and
+how to
+graduate. we learned a lot.
+
+### How has the project developed since the last report?
+we discussed about the release schedule of brpc, maybe a quarter per
+release will be ok for now.
+And new PPMC member helei will participate into the work of release.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-01-16
+
+### When were the last committers or PPMC members elected?
+2019-12-24
+
+### Have your mentors been helpful and responsive?
+Kevin reminded us for our incubator report, thanks for his reminder.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Not ready for the branding issue, will check it next time.
+
+### Signed-off-by:
+
+- [X] (brpc) Kevin A. McGrail
+   Comments:  No comments just keep trucking.
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (brpc) Von Gosling
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#brpc">2020-03-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1. release apache standard release regularly
+2. attract more contributors and committers
+3. clean branding issue
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No big issues
+
+### How has the community developed since the last report?
+We added three new committers, they are helei, cai Daojin, mu gaidong.
+they are all from iqiyi company , using brpc for their business,
+and contributing a lot to brpc projects, including bugfix/feature/code
+review/evangelism.
+
+### How has the project developed since the last report?
+1. vote for release 0.97 rc2 failed due to some license issue
+2. vote for release 0.97 rc3 is still ongoing, with WIP disclaimer,
+hopefully will be done next week
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-01-16
+
+### When were the last committers or PPMC members elected?
+2019-12-24
+
+### Have your mentors been helpful and responsive?
+von helped a lot with the release discussion,
+and JB/kevin also help to vote for new committers.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Not ready for the branding issue, will check it next time.
+
+### Signed-off-by:
+
+- [X] (brpc) Kevin A. McGrail
+   Comments: Nicely done this quarter.
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [x] (brpc) Von Gosling
+   Comments:  As we get closer to the first apache release, the community
+   needs to further strengthen the building and increase developer
+activity.
+
+### IPMC/Shepherd notes:
+Justin Mclean: It seems your release has not been placed in the offical
+release area. Please do so.</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#brpc">2019-12-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1. make more apache release
+2. attract more committer
+3. clean branding issue
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No big issues.
+
+### How has the community developed since the last report?
+1. Website for brpc has been setup, https://brpc.apache.org
+2. Organized brpc workshop on coscon 2019 Shanghai, more than 30 people
+attended
+
+### How has the project developed since the last report?
+1. released 0.97 rc1
+2. vote for apache release 0.97 rc1 failed ，due to some minor problem
+3. working on 0.97rc2 release, will call for vote in one week
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [x] Working towards first release
+- [x] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+still on first apache release
+
+### When were the last committers or PPMC members elected?
+No new committer, will search for some candidate next.
+
+### Have your mentors been helpful and responsive?
+Our mentor Von pointed out some minor problem for 0.97 rc1，
+and gave some detail instruction through phone calls.
+JB and Kevin helped to sign the pod report。
+
+### Is the PPMC managing the podling's brand / trademarks?
+Not ready for the branding issue, will check it next month.
+
+### Signed-off-by:
+
+- [X] (brpc) Kevin A. McGrail
+   Comments: None
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (brpc) Von Gosling
+   Comments: In terms of brand / trademarks, I have read github and
+   website briefly, haven't found any problem at present.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#brpc">2019-09-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+brpc has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1. finish Apache release regularly
+2. attract more users and contributors
+3. build website
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+None.
+
+### How has the community developed since the last report?
+brpc team had organized a forum on Aug 3rd in Shanghai China,  over 100
+engineers attended it,
+Contributors from Baidu/bilibili/iQiyi shared their experience on using
+brpc in their projects.
+we hope to attract more engineers to use and contribute to brpc project.
+
+A new team from baidu shanghai office have began to working on brpc,
+including liuzhiwei, shizhan, tangjie, xingyongxu and yuhao.
+
+### How has the project developed since the last report?
+we proposed the first apache release,
+the vote of rc1 was failed due to one 3rd party's license missed from
+LICENSE.
+the vote of rc2 was still on, waiting for JB's comments.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [x] Working towards first release
+- [x] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+Still working on the first release
+
+### When were the last committers or PPMC members elected?
+No new ones.
+
+### Have your mentors been helpful and responsive?
+JB promised to check our release candidate 2.
+Von gave us many suggestions about how to discuss in maillist.
+
+### Signed-off-by:
+
+- [X] (brpc) Kevin A. McGrail
+   Comments:  None. Good work on the rc2 work.  Thanks to Von and JB for
+   their input.
+- [ ] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (brpc) Von Gosling
+   Comments: There is some issues about rc2, begin to prepare rc3. What's
+   more, I'm encouraging them to interact more in the community,
+   and I'm sure their first major release will be back soon after enter
+   the incubator
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#brpc">2019-07-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+BRPC has been incubating since 2018-11-13.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Check all third-party dependency, and remove unused NSPR files
+2. Update all source files to add unified header
+3. Plan to have a offline forum in Shanghai to prompt brpc
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No
+
+### How has the community developed since the last report?
+It is very near to its first Apache release.
+
+### How has the project developed since the last report?
+We have made a large progress toward Apache release,
+and planed a forum to attract more users.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [x] Working towards first release
+- [x] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+Still working on the first release
+
+### When were the last committers or PPMC members elected?
+
+No answer.
+
+### Have your mentors been helpful and responsive?
+
+No answer.
+
+### Signed-off-by:
+
+- [X] (brpc) Kevin A. McGrail
+   Comments:  Love the forum idea to build the community.
+- [X] (brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (brpc) Von Gosling
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#brpc">2019-05-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and
+high-performance services.
+
+brpc has been incubating since 2018-11-13.
+
+Three most important issues to address in the move towards graduation:
+  1. We begin to prepare an apache release, including prepare for unified
+  License/Copyright, clean dependencies.
+  2. We depend on npsr&rsquo; time, it is MPL/LGPL license, we need to find
+  another lib for it.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+  No
+
+How has the community developed since the last report?
+
+  Added two potential committers, they are huwenwei and wangweibing ,
+  they will participate in the work of first apache release , and take some
+  tasks already.  .
+
+How has the project developed since the last report?
+
+  There are many bugfix into the trunk.
+
+How would you assess the podling's maturity?
+
+  Still in early stage
+
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  Still working on the first release
+
+When were the last committers or PPMC members elected?
+
+  2019/2. Jerrytan became a new member of PPMC
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Signed-off-by:
+
+  [X](brpc) Kevin A. McGrail
+     Comments: Improving steadily.
+  [ ](brpc) Jean-Baptiste Onofr&eacute;
+     Comments:
+  [X](brpc) Von Gosling
+     Comments:
+
+IPMC/Shepherd notes:
+  Von Gosling: brpc community should pay more warm in the community building
+  except the first release.</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#brpc">2019-03-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>BRPC is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+BRPC has been incubating since 2018-11-13.
+
+Three most important issues to address in the move towards graduation:
+
+1. Repo has been just moved to apache org，thanks for apache infra&lsquo;s help
+2. Begin to prepare an apache release
+3. Community buidling is going on
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+Community is a little shy, some more activities could be occurred in the
+mail list.
+
+How has the community developed since the last report?
+
+Added one PPMC member
+
+How has the project developed since the last report?
+
+The repo has been moved to apache git hosted on github, committers are
+working on remaining commit permission issues
+
+How would you assess the podling's maturity?
+
+Very beginning of the podling
+
+Please feel free to add your own commentary.
+
+[x] Initial setup
+[x] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+No Apache release
+
+When were the last committers or PPMC members elected?
+
+Added one PPMC member-JerryTan
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Dave is very helpful to push apache infra to work on repo transfer, and
+added jerrytan as new PPMC member.
+Von Gosling is also trying his best to encourage ppmc members to be more
+active and make discussion about the feature development in the community.
+
+Signed-off-by:
+
+[X](brpc) Kevin A. McGrail
+   Comments: I'll try and be more helpful. I've subscribed to dev
+   and private.
+[ ](brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+[x](brpc) Von Gosling
+   Comments:
+
+IPMC/Shepherd notes:
+Dave Fisher: now the the git repository has finally been transferred and
+the correct membership is on the PPMC the podling can finally get some
+community traction.
+I plan to keep a close eye and will ask to officially mentor if needed.
+Von Gosling: community should be encouraged to make more discussion in the
+mail list.</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#brpc">2019-01-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>brpc is an industrial-grade RPC framework for building reliable and high-
+performance services.
+
+BRPC has been incubating since 2018-11-13.
+
+Three most important issues to address in the move towards graduation:
+
+1. TBD
+2. TBD
+3. TBD
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No
+
+How has the community developed since the last report?
+
+Brpc is still on early stage of incubating。
+
+How has the project developed since the last report?
+
+We have finished the sign of SGA and ICLA, setup dev@brpc.apache.org
+email list, and add Gosling Von as our mentors.
+And begin to transfer repo.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[X] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+N/A
+
+When were the last committers or PPMC members elected?
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Signed-off-by:
+
+[X](brpc) Kevin A. McGrail
+   Comments:
+[X](brpc) Jean-Baptiste Onofr&eacute;
+   Comments:
+[X](brpc) Von Gosling
+   Comments:
+
+IPMC/Shepherd notes:
+Von Gosling: we have discussed the TBD parts in the report,
+more attention will be paid in the next report.
+Justin Mclean: Can you also state if your mentors have been helpful.</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#brpc">2018-12-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>BRPC is an industrial-grade RPC framework for building reliable and
+high-performance services.
+
+BRPC has been incubating since 2018-11-13.
+
+Three most important issues to address in the move towards graduation:
+
+1. Collect the SGA and ICLAs of the Initial COmmitters
+2. Create the Mailing Lists and Subscribe
+3. Move the Repository under Apache.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No.
+
+How has the community developed since the last report?
+
+Just getting started. A little slowness on the Mentor / Champion side on
+the setup.
+
+How has the project developed since the last report?
+
+First report.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[X] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+No Apache Releases.
+
+When were the last committers or PPMC members elected?
+
+None.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Mailing list creation fell through the cracks. Corrected now.
+
+Signed-off-by:
+
+[ ](brpc) Jean-Baptiste Onofre
+[X](brpc) Kevin A. McGrail
+[ ](brpc) Von Gosling
+
+IPMC/Shepherd notes:
+  Dave Fisher: I wrote up this report and made the mailing list request.
+  Justin Mclean: LDAP and DNS also feel between the cracks. Mentors were
+  pinged but no response. I think it would be good for this project to
+  have an extra mentor.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

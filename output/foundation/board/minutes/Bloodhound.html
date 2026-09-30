@@ -1,0 +1,2693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Bloodhound | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Bloodhound';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Bloodhound';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Bloodhound</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="bloodhound">Bloodhound<a class="headerlink" href="#bloodhound" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2013-03-20</td>
+<td><a href="2013/board_minutes_2013_03_20.html#section-7B">Appointed Gary Martin</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-07-17</td>
+<td><a href="2024/board_minutes_2024_07_17.html#section-7C">Terminate the Apache Bloodhound Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>2016-06-15</td>
+<td><a href="2016/board_minutes_2016_06_15.html#section-7D">Terminate the Apache Bloodhound Project</a></td>
+<td>special order</td>
+<td>tabled</td>
+</tr>
+<tr>
+<td>2013-03-20</td>
+<td><a href="2013/board_minutes_2013_03_20.html#section-7B">Establish the Apache Bloodhound Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-I">2024-06-19</a> &mdash; Gary Martin<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The PMC has been discussing whether it is time to retire the project to the
+attic. This is further discussed in the Community &amp; Development section below.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+The PMC has been prompted to discuss moving Apache Bloodhound to the Attic. A
+number of the PMC members are supporting this move, pointing out that energy
+levels have remained stubbornly low. At this point there is more support for
+retirement.
+
+The chair has held off from casting a vote on the proposal if it was deemed
+appropriate to try again to get the attention of the dev list and get new
+people involved. The activity generated by the previous call was not sustained
+and so it would not be surprising if this happened again.
+
+Further input from the board on these issues will be welcomed.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#section-6F">2024-05-15</a> &mdash; Gary Martin<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Shane: follow up on Attic</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#section-6J">2024-04-17</a> &mdash; Gary Martin<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#section-6H">2024-03-20</a> &mdash; Gary Martin<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-O">2024-01-17</a> &mdash; Gary Martin<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+The development community has been a lot quieter since the last report. New
+Hackdays will be announced shortly to attempt to build on the activity and
+interest from outside of the PMC.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#section-6J">2023-12-20</a> &mdash; Gary Martin<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-I">2023-09-20</a> &mdash; Gary Martin<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+Following the welcome intervention of the board, suggesting that Apache
+Bloodhound should be moved to the Attic, there has been some renewed
+discussions from a number of members of the community expressing interest in
+continuing the project outside of the Attic.
+
+While the activity following this has died down a bit, we saw a number of
+people who appeared to be willing to be involved, along with all the recently
+active PMC members (chambej, dammina, gjm and gstein) engaging to various
+extents with the community.
+
+The activity resulted in the following actions:
+
+ * The original Apache Bloodhound svn repo has been made readonly reflecting
+   previous decisions to use git for development to make it easier for new
+   contributors.
+ * The Apache Bloodhound website has been converted to use Pelican and has
+   been given its own bloodhound-site repo.
+
+Given this interest and activity it is still believed to be premature to move
+the project to the attic.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#section-6G">2023-08-16</a> &mdash; Gary Martin<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Shane: pursue a report for Bloodhound</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#section-6J">2023-07-19</a> &mdash; Gary Martin<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#section-6L">2023-06-21</a> &mdash; Gary Martin<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-K">2023-03-22</a> &mdash; Gary Martin<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+Development progress over the last three months remains slow. More Hackdays
+for March and April have recently been announced to try to move things along.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#attachment-J">2022-12-21</a> &mdash; Gary Martin<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+Development progress remains slow since the last submitted report but focus
+remains on the bloodhound-core project.
+
+Two Hackdays have very recently been proposed for January to encourage some
+dedicated time for work on the project.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-L">2022-09-21</a> &mdash; Gary Martin<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+Development progress remains slow since the last submitted report but focus
+remains on the bloodhound-core project.
+
+In the last report, it was mentioned that there was a desire to hold a number
+of hack days. No such events have happened yet but the intention to do so
+remains. It was suggested that this could manifest itself as an online event
+for a number of Fridays in a row, potentially making use of the #bloodhound
+channel on libera.chat, slack and/or matrix channels.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-O">2022-07-20</a> &mdash; Gary Martin<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+Development progress remains slow since the last submitted report and focus
+remains on the bloodhound-core project, making sure that the old database can
+be migrated from and working on the new API.
+
+Given the lack of activity, the project chair has suggested that there should
+be a regular series of hack days to encourage further progress.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#section-6L">2022-06-15</a> &mdash; Gary Martin<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-J">2022-03-16</a> &mdash; Gary Martin<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+Development progress remains slow since the last submitted report. The focus
+remains on the bloodhound-core project and playing with ideas around the new
+API.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#section-6B">2022-02-16</a> &mdash; Gary Martin<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#section-6J">2022-01-19</a> &mdash; Gary Martin<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#section-6K">2021-12-15</a> &mdash; Gary Martin<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-L">2021-09-15</a> &mdash; Gary Martin<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were in
+April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+The main activities since the last submitted report have been focusing on
+making progress on the bloodhound-core project. Support for being able to
+start from an existing, legacy bloodhound database has been prioritised
+alongside work on an API to interact with the database.
+
+Progress is slow but potentially getting more steady.
+
+Finally, we continue to be able to demonstrate that there are four PMC members
+who are able to assert their ongoing oversight of the project.
+
+Replies to Board Feedback
+=========================
+
+&gt; jm: It been a long time since any committer or PMC members added. Do
+&gt;     you have any potential candidates?
+
+At this point there may not be clear evidence of candidates. That said, the
+recent increase in activity is considered essential for generating more
+interest.
+
+&gt; sw: Does the community consider any new release? The last release
+&gt;     was over 7 years ago.
+
+Currently there is no timeline for getting to a new release. The PMC
+recognises that a release is likely to generate more interest in the project.
+Further releases of the trac-based version of the project are not considered
+likely and so we will be waiting for the new project to become usable enough
+before coming to a decision.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#section-6D">2021-08-18</a> &mdash; Gary Martin<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Justin: pursue a report for Bloodhound</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#section-6L">2021-07-21</a> &mdash; Gary Martin<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#section-6J">2021-06-16</a> &mdash; Gary Martin<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-C">2021-05-19</a> &mdash; Gary Martin<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+Progress remains slow but in the background there has been some progress
+including ironing out issues with the setup of live.bloodhound.a.o.
+
+Some plans to describe the ideas behind the ongoing development of Apache
+Bloodhound have begun to be drawn up with the intention of encouraging some
+engagement from the dev community to contribute to these.
+
+With the current plan describing the ability to migrate from the legacy
+Trac-based database schema, we can anticipate initial progress on modelling
+to be fairly swift, ready for further experimentation.
+
+While the new architecture for Apache Bloodhound will hopefully be fairly
+straight forward, it is recognized that there may need to be some kind of
+introduction to Django for those who have not used it before. As such a new
+document has been added to the wiki to give some hints around how to set up
+a development environment appropriate for following the official Django
+tutorial.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#section-6K">2021-04-21</a> &mdash; Gary Martin<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#section-6J">2021-03-17</a> &mdash; Gary Martin<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-K">2021-01-20</a> &mdash; Gary Martin<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+As noted in the last report to the board in September, discussions around
+the idea of migrating the project to the attic on the dev list appeared to
+demonstrate enough ongoing interest to continue the project. The PMC roll
+call email confirmed that there were 4 PMC members willing to provide the
+required oversight for the project.
+
+Development progress remains slow but it was agreed that the project would
+move to using git for new work.</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#section-6J">2020-12-16</a> &mdash; Gary Martin<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-L">2020-09-16</a> &mdash; Gary Martin<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+There are no issues to raise to the Board at this time.
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Community &amp; Development
+=======================
+
+Unfortunately a long time has gone by since the last board report with no
+real progress being demonstrated.
+
+A message on the dev list from a Director asking if it was time to move the
+project to the attic produced a quick response from members of the PMC and
+others indicating that despite the silence, oversight was being provided by
+at least 4 PMC members. A roll call email has been sent to the private PMC
+list to see if other PMC members are available.
+
+In order to make progress, one PMC member has specified their expected
+availability over the week of September 21st for working on the project and
+encouraging others to engage to any extent that they feel they are able
+over this time. At this point further plans for what to do with this time
+and further preparations still need announcing.
+
+Alongside this, there has been some effort to migrate a bloodhound vm with
+the help of INFRA. Progress has also stalled on this but there is not
+expected to be much more to do to complete this.</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#section-6E">2020-08-19</a> &mdash; Gary Martin<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Shane: pursue a report for Bloodhound</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#section-6J">2020-07-15</a> &mdash; Gary Martin<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#section-6L">2020-06-17</a> &mdash; Gary Martin<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-D">2020-05-20</a> &mdash; Gary Martin<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+Releases
+========
+
+There have been no releases since the last report. The last release was
+towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+Since the last board report there has been some discussion in the project
+community suggesting that there is ongoing interest in continuing the
+project outside of the Attic.
+
+A request from the board for a roll-call resulted in the PMC confirming that
+there are enough PMC members continuing to provide oversight. [1]
+
+We have slowly continued some discussions with the community and this
+ultimately resulted in some activity around email and experiments with the
+ASF slack workspace where a number of us are now in the #bloodhound channel,
+including a member of the community who is continuing to express interest in
+contributing to the project reboot.
+
+Further activity included work to restore access to the issue tracker for
+the project with help from INFRA which was much appreciated.
+
+[1] https://s.apache.org/h96wx</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#section-6J">2020-04-15</a> &mdash; Gary Martin<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Justin: pursue a report for Bloodhound and consider pursing
+Attic if necessary</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#section-6K">2020-03-18</a> &mdash; Gary Martin<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Daniel: pursue a report for Bloodhound</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-I">2020-01-15</a> &mdash; Gary Martin<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+With the continuing lack of progress as noted, the chair has initiated
+new discussions to either get some momentum behind the project or look at
+migrating the project to the attic. The content of the email was more
+biased towards continuing the project, mentioning ideas for the direction
+of the project and trying to encourage the community to offer advice on
+libraries and architectural decisions.
+
+At the time of writing there has been one response from someone expressing
+interest in involvement and noting some of the shortcomings around the
+information available about the project. One reason for this is that the
+project VM which hosts the issue tracker appears to be inaccessible. The
+project may be able to hold off on requesting INFRA intervention on this in
+the short term if we can come to a relatively quick initial decision
+around whether to retire the project.</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#section-6K">2019-12-18</a> &mdash; Gary Martin<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Myrle: pursue Attic resolution for Bloodhound</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-I">2019-10-16</a> &mdash; Gary Martin<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+There has been no significant progress since the last report. As there
+have been a number of missed reports, the PMC have been contacted by the
+board to ensure that there are at least three PMC members providing
+oversight for the project. We were able to confirm that this was still
+the case with the following PMC members indicating their ongoing interest
+in the project:
+
+ * chambej
+ * dammina
+ * gjm
+ * gstein
+
+Given the ongoing lack of progress, the chair is expected to bring some
+discussion to the dev list about the possibility of moving the project to
+the attic.</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#section-6K">2019-09-18</a> &mdash; Gary Martin<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#section-6K">2019-06-19</a> &mdash; Gary Martin<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Roman: pursue a report for Bloodhound</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#attachment-K">2019-03-20</a> &mdash; Gary Martin<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+In the month since the last report, there is not much further progress to
+report. As mentioned in previous reports, the chair is arranging sprint
+days to get PMC members and potentially other interested parties together
+to give some dedicated time to work on the project.
+
+One sprint has been announced for the last Saturday of March.</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-F">2019-02-20</a> &mdash; Gary Martin<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+As for previous reports, progress continues to be slow.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+After the progress reported in the November report, progress stalled a bit
+again. A few opportunities to report to the board have also been missed for
+which the chair of the project apologises on behalf of the PMC. The PMC has
+been able to confirm to the board that there is oversight of the project
+from the PMC that exceeds the requirement of three PMC members.
+
+Development effort on Bloodhound has focused on the api of the proposed
+bloodhound core.
+
+The mailing lists remain quiet although after a very recent announcement of
+proposed updates to the api, it was good to see a positive response from
+someone who wished to remind the project that the ability to host multiple
+projects from a single bloodhound instance would be good to address early
+in the api design.
+
+As mentioned in the last report, the chair was expecting to arrange some
+sprint days to bring interested parties together over the same time. These
+have not yet happened but should be arranged for the coming months.</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#section-6M">2019-01-16</a> &mdash; Gary Martin<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Phil: pursue a report for Bloodhound</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#section-6J">2018-12-19</a> &mdash; Gary Martin<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-C">2018-11-21</a> &mdash; Gary Martin<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+Note that this report will be limited as it only covers one month. This
+is primarily being used as an opportunity to respond to the query raised
+following the report submitted in October. See below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+Since the last report, the sprint mentioned in the report from October has
+happened. As a first sprint the main thrust of this was to iron out some
+details and agree on some limited goals to progress work on the bloodhound
+core experiment. The chair is expected to arrange further sprints to help
+define a definite period over which they can look to try to work on the
+project with some immediate advice being available from others.
+
+Further discussion on this may be expected in the December report.
+
+Responses to Board Queries
+==========================
+
+&gt; idf: Can you please check/ confirm that there are at least three PMC
+&gt;        members providing oversight?
+
+We can confirm that this is the case at the moment. We are cutting it fine
+at three PMC members who are active enough to qualify for the moment. These
+are John Chambers, Gary Martin and Dammina Sahabandu. There have been the
+occasional interjections from others but we stop short of suggesting any
+more than three are active for the moment.
+
+We are obviously concerned with this but consider the best way to deal with
+this is to make progress, look more appealing (by the move to frameworks
+that are either already more familiar or would benefit new committers to
+learn and apply beyond this project) and generally easier to contribute
+(looking at the use of git as a more familiar tool and looking at how other
+Apache projects make use of pull requests.)</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-J">2018-10-17</a> &mdash; Gary Martin<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+As for previous reports, activity remains on the low side. Progress on the
+project has been made in further development on the new experimental core
+branch.
+
+See further information below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+Since the last report progress remained pretty slow until the PMC Chair
+attended PyConUK and announced Apache Bloodhound as one of the projects
+interested in running a sprint. This brought at least enough interest that
+the Chair was not left working by himself! While this did not result in
+anyone being interested enough to contribute directly to the project, the
+willingness to help out with advice resulted in a fair amount of progress
+through the addition of django-rest-framework and django rest swagger. The
+results of this work have recently been added to the experimental django
+based core branch in the svn repository.
+
+In the last report it was implied that there was a desire to look into
+working on the bloodhound core experiment with git. No firm progress has
+been made on this but it is high on the Chair's agenda to look into making
+this happen and see how other projects interact with github.
+
+Although progress may continue to look disappointing, the PMC Chair
+continues to suggests on behalf of the PMC that there is an ongoing desire
+to defer the proposal to move Apache Bloodhound to the Attic to beyond the
+next report to the board.
+
+Two PMC members have also been discussing the possibility of organising a
+sprint. Details of this are still to be worked out but it can be expected
+that any such event will look to be accessible to a wide audience beyond
+current project committers.</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#section-6J">2018-09-19</a> &mdash; Gary Martin<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Ted: pursue a report for Bloodhound</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#attachment-J">2018-06-20</a> &mdash; Gary Martin<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+As for previous reports, activity remains on the low side. Some progress
+has been achieved with experimentation with a new core model.
+
+See further information below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+With the previous report mainly able to focus on infrastructure issues,
+such as restoration of issue tracking for the project through migration
+of the main Apache Bloodhound instance to new hardware, this quarter
+we have considered moving the development of new sub projects in git
+instead of Apache Subversion and experimenting with Django as a means
+to replace Trac as the base for the project.
+
+The idea of moving to git appeared to have backing from the community.
+While the community generally avoided spelling out their reasons for
+wanting to move, it may be that the move will benefit the project from
+more people being used to using git than Subversion. Progress to make
+this decision final has not yet been sought but discussion of this may
+be expected in the next report. Certainly the PMC is not treating this
+as something to rush as it does not actively block progress.
+
+The new bloodhound core experiment has begun with a new branch of the
+subversion repository dedicated to looking at making the core database
+model with Django tooling. The current state of this is still fairly
+basic but flexible. With decisions to be made about the direction to
+take from this point, opinions have been sought by the chair to attempt
+to encourage more engagement from those that have expressed interest
+in the project.
+
+Despite perhaps a disappointing amount of progress, the project Chair
+suggests on behalf of the PMC that there is a continued wish to defer
+the proposal to move Apache Bloodhound to the Attic for another three
+months.</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#attachment-J">2018-03-21</a> &mdash; Gary Martin<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The project remains in a low activity mode although there have been
+continuing discussions. Good progress has been made on infrastructure
+related issues. There have also been recent discussions on a new core
+component as a means to migrate away from using Trac as a backend.
+
+See further information below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+The main progress since the last report has been an effort by John
+Chambers to restore issue tracking to the project. Now this work has been
+completed to a reasonable point. The linking to source control for repo
+browsing has been changed to use the git repo instead of the main
+subversion repository. This has the benefit that we do not need to rely
+on continuing maintenance of some kind of local mirroring of an svn repo
+which did not prove to be a robust solution before. One downside is that
+old links to patchsets via their revision number are not expected to
+work and we do not envisage using up any effort to fix this automatically.
+
+There is a continuing need to raise activity in other areas. Discussions
+up to the previous report gave some confidence that there was a community
+with an interest in moving the project on and that they were willing to
+consider the migration away from Trac to be viable. Since then, a further
+proposal has been made to create a core project based on Django to
+experiment with the basic data model for issue tracking. This resulted in
+a moderate response but this has been seen by the project chair as excuse
+enough to go ahead with the experiment.
+
+Along the lines of suggestions in the last report, we will take the
+opportunity to look into the use of git for source control. The ability of
+our issue tracker to browse to such a git repo with relative ease makes
+splitting new work out to a new repository straight forward. Opinions of
+the community are currently being sought on this matter. This choice does
+not block progress.
+
+As expressed in the previous month, with some progress still in evidence
+the PMC wish to repeat deferral of the proposal to move Apache Bloodhound
+to the Attic for another three months. The PMC is aware that it will need
+to continue to engage with the community for determining direction and
+attempting to recognise contributors as potential PMC members at the
+earliest opportunity.</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#attachment-K">2017-12-20</a> &mdash; Gary Martin<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The project can still be considered to be in a low activity mode although
+there appear to be some good progress in the form of discussions. See
+further information below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+With the recognition of the previous report that there was an urgent need
+to discuss the ongoing inactivity with the wider community, an email was
+sent to the dev list to determine what appetite there was for continuing.
+The initial discussion showed up a similar desire to continue the project
+instead of allowing it to move to the Attic as the last time but it was
+recognised that there would need to be further changes to the project to
+foster ongoing development.
+
+One of the changes that seemed to inspire some enthusiasm was the idea
+of a potential break from the use of Trac as the base of the project.
+This is being explored in further detail with a proposal to migrate the
+project to use the Django web framework. Whilst it was recognised that
+Trac has provided a solid base, the attractiveness of Bloodhound for
+potential contributors is not particularly helped by needing to learn
+so much about Trac.
+
+Progress has also been made with reinstating the main instance of Apache
+Bloodhound for self-hosting of issue tracking. John Chambers has pushed
+this work forward, for which the rest of the PMC are grateful. In order
+to complete this work, it was requested that a VM be prepared to host
+the issue tracker and in response INFRA-13255 was reopened.
+
+Further items of note include a recent proposal to look at the use of
+gitbox and github mirroring for future work.
+
+While it is recognised by the PMC that the above represents only limited
+progress, the desire of the community appears to be to continue with the
+project and so the PMC wishes to defer the proposal to move Apache
+Bloodhound to the Attic for another three months. The PMC will continue
+to encourage the community to contribute to the direction and look at
+bringing in more contributors onto the PMC at the earliest opportunity.</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-L">2017-10-18</a> &mdash; Gary Martin<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache Bloodhound committee [Gary Martin]
+
+Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The threat of moving the project to the attic is ongoing given limited PMC
+input to the project over several months. With recent board feedback
+suggesting it is time again to look at moving to the attic this is being
+considered as described below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+With no real progress over recent months the PMC is in the position of
+having to seriously consider a move to the attic. This has recently been
+brought to the attention of the dev community shortly to give an
+opportunity for the wider community to take note and react if they wish
+to avert this. The PMC chair remains committed to supporting any
+community move to continue development.
+
+The user email list remains quiet; prior to the message to the dev list
+mentioned above, there was only one contributor to this list since the
+last report.</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#section-6L">2017-09-20</a> &mdash; Gary Martin<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-G">2017-08-16</a> &mdash; Gary Martin<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The threat of moving the project to the attic is ongoing. Further concerns
+have been expressed about the long term viability and a further suggestion
+from a current PMC member that the project moves to the attic.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 14 PMC members on the project. The last changes were
+in April 2017.
+
+The last new committers were added in May 2014.
+
+The last addition to the PMC was in January 2017 (dammina)
+
+Ryan Ollos resigned from the PMC in April 2017.
+
+Community &amp; Development
+=======================
+
+Work on the project has once again stagnated and the positive effect of
+the last addition to the PMC has worn off. Since the last report we have
+had one further resignation from the PMC with Ryan Ollos noting his lack
+of time to contribute towards the project. There has also been a further
+suggestion from a current PMC member that the project should move to the
+attic due to the lack of community interest. This has not provoked any
+further discussion.
+
+Some limited activity has been attempted with Gary Martin's attempt to
+restore the salt provisioning for the development environment which had
+hampered previous efforts. Additionally with INFRA's requirement for the
+migration of bloodhound vms, including the main issue tracker from old
+hardware, a new vm was requested and migration to this is in progress,
+albeit rather slower than desired. The initial plan of migrating to a
+puppet based setup has been postponed with the intention of getting the
+tracker up faster but an unexpected issue with upgrading the database
+to use the latest version of Bloodhound has further delayed this work.
+
+Activity on the user list remains negligible. The dev list is similarly
+quiet with a few messages from Gary Martin discussing ideas of making
+greater use of git mirrors to reduce barriers to contribution to the
+project and of puppet configuration.</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#section-6N">2017-07-19</a> &mdash; Gary Martin<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Brett: pursue a report for Bloodhound</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#section-6J">2017-06-21</a> &mdash; Gary Martin<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2017-03-15"><a href="2017/board_minutes_2017_03_15.html#attachment-I">2017-03-15</a> &mdash; Gary Martin<a class="headerlink" href="#2017-03-15" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The threat of moving the project to the attic is ongoing with further
+concerns expressed on the long term viability of the project.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project. The last changes were
+in December 2016.
+
+The last new committers were added in May 2014.
+
+Community &amp; Development
+=======================
+
+The addition of Dammina Sahabandu to the PMC has had a positive effect on
+the development activity and, together with Ryan Ollos, there is evidence
+of work going into the project.
+
+In particular, over the last few months there has been an ongoing effort
+to clean up work from previous GSoC projects for merging into the main
+project. One of these, a wiki macro to manage multiple tickets creations
+within the wiki view, has been completed and merged.
+
+There is currently an expectation for further new feature branches to be
+examined and brought into the project over the next few months.
+
+The project is also looking into the possibility of involvement with GSoC
+for 2017 with projects being proposed. This has led to interest from some
+prospective students to get involved with the project. If this comes to
+fruition it could have further benefits for the Bloodhound project if it
+is possible to translate such interest to new PMC members.
+
+Activity on the user list remains negligible.</pre>
+<h3 id="2016-12-21"><a href="2016/board_minutes_2016_12_21.html#attachment-I">2016-12-21</a> &mdash; Gary Martin<a class="headerlink" href="#2016-12-21" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The threat of moving the project to the attic is ongoing but further
+progress has been acheived in the form of promoting a GSoC student to be
+a full committer on the project.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project with the last changes
+in December 2016:
+
+Resignations:
+ * Mat Booth (12th December 2016)
+
+Additions:
+ * Dammina Sahabandu (13th December 2016)
+
+The last new committers were added in May 2014.
+
+Community &amp; Development
+=======================
+
+The relatively small numbers of PMC members who are able to contribute
+necessary skills for the continuation of the project remains a concern
+although it has been mitigated by the addition of Dammina to the PMC.
+Dammina was already one of the most active contributors and so it is
+hoped that his addition will help drive the project forward.
+
+It was also sad to see the resignation of Mat Booth from the PMC but he
+had not considered himself to be one of the active contributors for a
+long time. His advice will of course be missed.
+
+The details for these PMC changes will be updated shortly.
+
+There has been a modest increase in the number of emails to the dev list
+over the previous quarter. Much of this was driven by Dammina with
+discussions of what might go into a new release, updates to Trac and new
+ideas around potential changes to the standard icon provider for the
+project. In addition there were some queries from users indicating a
+few problems with installation documentation and multi-product use cases
+that we could better support.
+
+Activity on the user list is negligible.</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#attachment-I">2016-09-21</a> &mdash; Gary Martin<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The threat of moving the project to the attic is ongoing but some progress
+has been made after an emailed plea for more contributors sent to the dev
+email list. A summary of the discussion is provided below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project with the last additions
+in January 2014.
+
+The last new committers were added in May 2014.
+
+Community &amp; Development
+=======================
+
+As discussed in the last report there are currently not considered to be
+enough PMC members with the necessary skills to continue the project.
+Since then an email was sent to the dev list as encouraged by the board
+and after this there have been 27 emails to the list that discuss interest
+in the project or otherwise represent some attempt to make progress. Of
+these there are some responses from GSoC students who might be able to
+make a quick transition to be on the PMC.
+
+Areas of progress include restoring the main issue tracker to working
+order after it became non-responsive and one potential contributor is
+looking at updating the version of Trac upon which Bloodhound is based.
+
+With these discussions ongoing it is probably prudent to take some further
+time to encourage the new potential committers to translate interest in
+involvement into contributions.</pre>
+<h3 id="2016-06-15"><a href="2016/board_minutes_2016_06_15.html#attachment-K">2016-06-15</a> &mdash; Gary Martin<a class="headerlink" href="#2016-06-15" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The board should be aware that the Bloodhound PMC has voted on moving the
+project to the attic as discussed below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was towards the end of 2014:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project with the last additions
+in January 2014.
+
+The last new committers were added in May 2014.
+
+Community &amp; Development
+=======================
+
+As discussed in the last report, due to there not being enough active PMC
+members with the necessary skills to keep the project going, there has
+been discussion of moving the project to the Attic. As such a vote has been
+undertaken to make an official decision on this, which was passed with the
+following results:
+
++1: (7) brane, chambej, gjm, matevz, mbooth, rjollos, saintgermain
+0: (0)
+-1: (0)
+
+A link to the summary email for this is here: https://s.apache.org/qqj0
+
+The resolution to terminate the Apache Bloodhound project has therefore
+been added as item D of the Special Orders section of the board agenda for
+this month.</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#attachment-L">2016-04-20</a> &mdash; Gary Martin<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+The board should be aware that the Bloodhound PMC is discussing moving
+the project to the attic as discussed below.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was in fact towards the end of last year:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project with the last additions
+in January 2014.
+
+The last new committers were added in May 2014.
+
+Community &amp; Development
+=======================
+
+Committer activity has remained stubbornly low with very little activity
+on the development mailing list.
+
+The continued lack of activity led the PMC to discuss whether there are
+enough active members of the PMC who have the time, interest and necessary
+skills to keep the project going. At this point, only one member of the
+PMC has stated that they would be prepared to continue. Three others have
+indicated that they are in favour of moving to the attic.
+
+An alternative suggestion for further development to continue by moving
+away from Trac as the basis for the project was raised. This was suggested
+to be a radical departure from the work of Bloodhound that, if there was
+interest in that direction, it could be done outside of the ASF.
+
+Discussion having died down on the above topic, there will shortly be a
+formal vote on the motion to move to the attic which will take place on
+the private mailing list.</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#section-6J">2016-03-16</a> &mdash; Gary Martin<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Shane: pursue a report for Bloodhound</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#attachment-I">2016-01-20</a> &mdash; Gary Martin<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues requiring board attention at the current time.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was in fact towards the end of last year:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project with the last additions
+in January 2014.
+
+The last new committers were added in May 2014.
+
+Community &amp; Development
+=======================
+
+Committer activity is extremely low, as evidence from email lists show.
+For this to be addressed, we need a concerted effort to get committers
+talking on the dev list again to see who has time to help progress the
+project and build enthusiasm for continuing.
+
+Recent developments do include a prospective GSoC student enquiring as
+to whether we would be a suitable project which is fantastic. It is not
+clear whether we would be suitable for such a scheme this year but the
+project chair has indicated that he would make time to mentor a student if
+it were deemed appropriate. In particular this should require a backup
+mentor from the PMC to ensure any student project is given appropriate
+attention. A decision on this from the PMC is required in a short time to
+avoid prejudicing the enquiring student's chances of finding another
+project.</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#section-6G">2015-12-16</a> &mdash; Gary Martin<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2015-10-21"><a href="2015/board_minutes_2015_10_21.html#attachment-H">2015-10-21</a> &mdash; Gary Martin<a class="headerlink" href="#2015-10-21" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing
+
+Issues
+======
+
+There are no issues requiring board attention at the current time.
+
+Releases
+========
+
+There have been no releases over the last three months. The last release
+was in fact towards the end of last year:
+
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project with the last additions
+in January 2014.
+
+The last new committers were added in May 2014.
+
+Community &amp; Development
+=======================
+
+Committer activity remains stubbornly low. Email discussions related to
+tickets deemed necessary for the next release continued along with some
+discussions of plans for future developments. This resulted in two of
+our GSoC students responding indicating an interest in helping out.
+
+Such GSoC students in the short term might be considered the best source
+for new additions to the PMC. The current low activity should be thought
+of as counter-productive to encouraging the GSoC students' interest and
+more generally is a barrier to interest from new developers.
+
+There are currently 7 remaining active tickets that are incomplete and
+marked to be in the next release.
+
+Email discussions in general are still decreasing in volume though the
+user list does appear to get reasonably timely responses to queries.
+
+We have also experienced some periods of downtime on the main bloodhound
+issue tracker which managed to go un-noticed for a few days. This would
+have been quicker to spot with heavier use from the developer community
+but also points at the need to improve our site monitoring.</pre>
+<h3 id="2015-09-16"><a href="2015/board_minutes_2015_09_16.html#section-6H">2015-09-16</a> &mdash; Gary Martin<a class="headerlink" href="#2015-09-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Shane: pursue a report for Bloodhound</pre>
+<h3 id="2015-07-15"><a href="2015/board_minutes_2015_07_15.html#attachment-K">2015-07-15</a> &mdash; Gary Martin<a class="headerlink" href="#2015-07-15" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+
+There are no issues requiring board attention at the current time.
+
+Releases
+========
+There has no release over the last three months. The last releases
+were:
+
+ * apache-bloodhound-0.6 (16th July 2013)
+ * apache-bloodhound-0.7 (23rd August 2013)
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project.
+ * PMC members:
+   * Last additions were in January 2014.
+   * No further changes since last report.
+
+The last new committers were added in May 2014 for the GSoC scheme.
+
+Community &amp; Development
+=======================
+
+Committer activity has remained low and so progress towards the next release
+remains slow. Recent emails to the Bloodhound dev list have looked to discuss
+the tickets sheduled in the current milestone and tickets are in progress.
+
+As previously reported, the INFRA ticket for the broken read-only nfs mount
+of the svn repository remains incomplete, leaving Bloodhound's repository
+browser out of commission.
+
+As in other areas, progress towards upgrading the main Bloodhound issue
+tracker to the newest version has also been slow. As part of this effort,
+problems with the stability of the two demo sites were looked into. One of
+the demos has subsequently been disabled.
+
+The user email list activity has dropped back considerably as the effect of
+the previous release properly passed by.</pre>
+<h3 id="2015-06-17"><a href="2015/board_minutes_2015_06_17.html#section-6J">2015-06-17</a> &mdash; Gary Martin<a class="headerlink" href="#2015-06-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2015-04-22"><a href="2015/board_minutes_2015_04_22.html#attachment-L">2015-04-22</a> &mdash; Gary Martin<a class="headerlink" href="#2015-04-22" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+
+There are no issues requiring board attention at the current time.
+
+Releases
+========
+There has no release over the last three months. The last releases
+were:
+
+ * apache-bloodhound-0.6 (16th July 2013)
+ * apache-bloodhound-0.7 (23rd August 2013)
+ * apache-bloodhound-0.8 (11th December 2014)
+
+PMC/Committer Changes
+=====================
+
+There are currently 15 PMC members on the project.
+ * New PMC members:
+   * Last additions were in January 2014
+ * Resigning PMC members:
+   * Hyrum K Wright resigned on 16th February 2015
+
+The last new committers were added in May 2014 for the GSoC scheme.
+
+Community &amp; Development
+=======================
+
+Committer activity has remained low over this quarter though there have been
+efforts from committers to get unstable automated builds working and we have
+also been taking time to update the issue tracker to the latest version of
+Bloodhound. This in particular has brought one of our original PMC members
+into a position to increase his involvement in the project.
+
+There have been a few long running INFRA tickets for work related to
+Bloodhound that remain open. In particular access to a read-only nfs mount
+of the bloodhound svn repository continues to be missing. However, no
+attempt has been made to press for progress on this issue from the PMC.
+
+In contrast INFRA were able to provide site monitoring for the main issue
+tracker and demo sites in a reasonable time. This gives us good confidence
+in the stability of the main issue tracker but appear to show that our demo
+servers are struggling under their load.
+
+Although we have been involved with GSoC for the previous two years, we did
+not organise ourselves to continue for this year. It was also suggested that
+we should put more effort into the integration of previous work before
+considering taking on further students.
+
+The user email list has increased in response to our release in December.
+Discussions on the dev mailing list have also increased in comparison to
+the previous quarter.</pre>
+<h3 id="2015-03-18"><a href="2015/board_minutes_2015_03_18.html#section-6I">2015-03-18</a> &mdash; Gary Martin<a class="headerlink" href="#2015-03-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2014-12-17"><a href="2014/board_minutes_2014_12_17.html#attachment-I">2014-12-17</a> &mdash; Gary Martin<a class="headerlink" href="#2014-12-17" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+It is worth the board noting that there have been concerns raised about
+the rate of development and the inability to create a release. While
+there has since been a release, this is discussed below.
+
+Releases
+========
+There has been one release over the last three months. The last releases
+were:
+
+ * apache-bloodhound-0.6 (16th July 2013)
+ * apache-bloodhound-0.7 (23rd August 2013)
+ * apache-bloodhound-0.8 (11th December 2014)
+
+Community &amp; Development
+=======================
+No new committee members have been added this quarter. The last new
+committee members to be added joined in January 2014. The last new
+committers were added in May 2014 for the GSoC scheme.
+
+Concerns have been raised on the private list about the rate of
+development to the extent of a suggestion of moving the project to the
+attic. This has not resulted in any great response but the reasons for
+this are not clear. However, one outcome from this suggestion was that
+a release was finally created and the vote passed smoothly.
+
+It was also good to see demonstrations of continued interest from some
+of the GSoC students.
+
+It is clear that the rate of development has to increase again. Given
+the recent progress, the situation will hopefully become clearer over
+the next three to six months.</pre>
+<h3 id="2014-09-17"><a href="2014/board_minutes_2014_09_17.html#attachment-G">2014-09-17</a> &mdash; Gary Martin<a class="headerlink" href="#2014-09-17" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+There are no issues that we believe currently require the board's attention.
+
+Releases
+========
+There have been no releases over the last three months. The last releases
+were:
+
+ * apache-bloodhound-0.6 (16th July 2013)
+ * apache-bloodhound-0.7 (23rd August 2013)
+
+Community &amp; Development
+=======================
+No new committee members have been added this quarter. The last new
+committee members to be added joined in January 2013.
+
+As mentioned in the previous report, Apache Bloodhound was involved in GSoC
+for a second year, and we were able to accept three students with three
+PMC members able to take on the duties of mentorship. In contrast with the
+previous year where we only had one successful student, this year all of our
+students were able to complete their projects successfully.
+
+Following on from GSoC, we are beginning to look at the possible path of the
+students to graduate to the PMC. Up until now we have not made any judgement
+on whether the work towards GSoC is enough to warrant an automatic promotion
+to the PMC.
+
+Work towards a new release is ongoing. Currently there are no issues that
+have been identified as blocking and so a candidate release is likely to be
+ready for the community to vote on within a week.
+
+In June and July we experienced some issues with the project's VMs which
+appeared to be a result of the distribution upgrades that were required on
+6th June. After requests to improve the puppet manifests to avoid excess
+work on the main VM, the situation looks to have been resolved. However,
+problems are sometimes reported with one of the two demos running on the
+second VM.</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#attachment-H">2014-06-18</a> &mdash; Gary Martin<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+There are no issues that we believe currently require the board's attention.
+
+Releases
+========
+There have been no releases over the last three months. The last releases
+were:
+
+ * apache-bloodhound-0.6 (16th July 2013)
+ * apache-bloodhound-0.7 (23rd August 2013)
+
+Community &amp; Development
+=======================
+No new committee members have been added this quarter. The last new
+committee members to be added joined in January 2013. Unfortunately, Gavin
+McDonald chose to leave the committee this month citing a lack of time for
+involvment. Gavin will of course be welcomed back to the committee should
+he find time again.
+
+Bloodhound attracted a number of GSoC student applications, a number of
+which were considered high enough quality to expect success. We were able
+to accept three projects and, as in previous mentoring schemes, we have
+voted to allow the students committer access.
+
+Development effort has slowed of late and it is disappointing that we have
+not been able to create a release in the last few months. This should be
+rectified fairly shortly.</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#attachment-G">2014-03-19</a> &mdash; Gary Martin<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+
+There are no issues that we believe currently require the board's attention.
+
+Releases
+========
+
+There have been no releases over the last three months. The last releases
+were:
+
+* apache-bloodhound-0.6 (16th July 2013)
+* apache-bloodhound-0.7 (23rd August 2013)
+
+Preparation of a new release is expected within around a week.
+
+Community &amp; Development
+=======================
+
+Two new committee members have been added this quarter:
+
+* SaintGermain (1st January 2014)
+* Antony Semonella (9th January 2014)
+
+Bloodhound is once again looking to become involved with GSoC this year and
+the community has prepared a number of sample projects for students interest.
+This has already seen six students discussing projects on the dev mailing
+list who all seem to have been engaged with promptly in order to hold their
+interest. We have three PMC members who have put themselves forward for
+mentorship. This has also being used as an informal opportunity for those
+mentors to discuss GSoC with local students which may benefit projects beyond
+Bloodhound with potential students.
+
+Development effort has increased again after a slow January but the mailing
+list traffic has remained healthy with new contributors appearing fairly
+regularly. This activity has obviously been boosted significantly by the GSoC
+related discussions.</pre>
+<h3 id="2013-12-18"><a href="2013/board_minutes_2013_12_18.html#attachment-I">2013-12-18</a> &mdash; Gary Martin<a class="headerlink" href="#2013-12-18" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+
+There are no issues that we believe currently require the board's attention.
+
+Releases
+========
+
+There have been no releases over the last three months. The last releases
+were:
+
+* apache-bloodhound-0.6 (16th July 2013)
+* apache-bloodhound-0.7 (23rd August 2013)
+
+Community &amp; Development
+=======================
+
+No new committee members have been added this quarter. The last addition to
+the committee was on 10th April 2013.
+
+The involvement of Bloodhound with the GSoC and ASF-ICFOSS mentoring schemes
+is now complete. The GSoC student who passed the mid term review went on to
+complete a successful project. There has not been much further contact from
+this student after project completion at this point and so a possible invite
+to join the PMC has not yet been considered. Unfortunately, the ASF-ICFOSS
+student did not complete the process successfully. As in the case of the
+GSoC students, we have left this student with commit access which will allow
+the project to be completed if the student desires.
+
+Over the last few months there has been an increase in contributions from
+some new developers which may result in new committee members to announce in
+the next report.</pre>
+<h3 id="2013-09-18"><a href="2013/board_minutes_2013_09_18.html#attachment-F">2013-09-18</a> &mdash; Gary Martin<a class="headerlink" href="#2013-09-18" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+
+There are no issues that we believe currently require the board's attention.
+
+Releases
+========
+
+There have been two releases over the last three months. The last releases
+were:
+
+* apache-bloodhound-0.6 (16th July 2013)
+* apache-bloodhound-0.7 (23rd August 2013)
+
+Community &amp; Development
+=======================
+
+No new committee members have been added this quarter. The last addition to
+the committee was on 10th April 2013.
+
+Bloodhound continues to be involved with GSoC with one of the three projects
+passing the mid term review. As mentioned in the June 2013 report to the
+board, all the students were granted access to the Bloodhound repositories.
+Although it is disappointing to see two of the projects fail, the committee
+has left the associated students with committer access and have encouraged
+these students to continue if they wish. This is not expected to have any
+impact on their ability to join the committee in the future.
+
+Bloodhound is also involved in the ASF-ICFOSS mentoring scheme where we have
+one student. As for the GSoC scheme, we have granted this student commit
+access.</pre>
+<h3 id="2013-06-19"><a href="2013/board_minutes_2013_06_19.html#attachment-F">2013-06-19</a> &mdash; Gary Martin<a class="headerlink" href="#2013-06-19" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+
+There are no issues that we believe currently require the board's attention.
+
+Releases
+========
+
+There have been no releases this month. The last releases were:
+
+* apache-bloodhound-0.5.2-incubating (1st April 2013)
+* apache-bloodhound-0.5.3 (15th April 2013)
+
+A 0.6 Release is considered to be imminent but at the time of writing, there
+are blocking issues.
+
+Community &amp; Development
+=======================
+
+No new committee members have been added this month. The last addition to
+the committee was on 10th April 2013.
+
+Bloodhound continues to be involved with GSoC and three projects have been
+accepted. We anticipate granting all three GSoC project students access to
+the bloodhound repositories, at least for the duration of their projects,
+with the hope that they will remain involved in Bloodhound beyond the end of
+these projects.</pre>
+<h3 id="2013-05-15"><a href="2013/board_minutes_2013_05_15.html#attachment-C">2013-05-15</a> &mdash; Gary Martin<a class="headerlink" href="#2013-05-15" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Bloodhound is a software development collaboration tool, including
+issue tracking, wiki and repository browsing.
+
+Issues
+======
+
+There are no issues that we believe currently require the board's attention.
+
+Releases
+========
+
+There have been no releases this month. The last releases were:
+
+* apache-bloodhound-0.5.2-incubating (1st April 2013)
+* apache-bloodhound-0.5.3 (15th April 2013)
+
+A discussion about the next releases has recently begun.
+
+Community &amp; Development
+=======================
+
+No new committee members have been added this month. The last addition to
+the committee was on 10th April 2013.
+
+Bloodhound has submitted projects for GSoC and has put a good amount of
+effort into encouraging prospective students to get involved and interact on
+the mailing list. We appear to have four valid proposals from students.
+
+In addition to the interesting discussions resulting from GSoC, the dev
+mailing list has been very active covering a good range of topics. And we
+appear to be remaining responsive to questions. Post graduation interest
+appears to be ongoing with some more voices appearing on the dev list. We
+have also seen bloodhound specific questions appearing on the external
+trac-user mailing list. Although it is good to see interest anywhere, we
+have attempted to encourage this kind of discussion to move to bloodhound
+lists.
+
+A conversation regarding a potential 1.0 release has also begun as we have
+recently made very good progress on the initial aims of the project.</pre>
+<h3 id="2013-04-17"><a href="2013/board_minutes_2013_04_17.html#attachment-H">2013-04-17</a> &mdash; Gary Martin<a class="headerlink" href="#2013-04-17" title="Permalink">&para;</a></h3>
+<pre>What is Bloodhound?
+=========================
+Apache Bloodhound is a software development collaboration tool, including issue
+tracking, wiki and repository browsing.
+
+Issues
+=========================
+There are no issues that need the board's attention.
+
+Releases
+=========================
+There have been two releases this month:
+
+* apache-bloodhound-0.5.2-incubating (1st April 2013)
+* apache-bloodhound-0.5.3 (15th April 2013)
+
+Community &amp; Development
+=========================
+Bloodhound graduated to TLP based on a resolution passed by the board at the
+meeting of 20th March 2013. Common tasks for migration to TLP have been
+completed by INFRA. Updates to websites to conform to Apache standards are
+ongoing.
+
+In addition to the new committee members added at the point of graduation, one
+further committee member was voted in on 10th April 2013.
+
+Bloodhound has also submitted projects for GSoC.</pre>
+<h3 id="2013-03-20"><a href="2013/board_minutes_2013_03_20.html#bloodhound">2013-03-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-03-20" title="Permalink">&para;</a></h3>
+<pre>Bloodhound is a software development collaboration tool,
+including issue tracking, wiki and repository browsing.
+
+Bloodhound has been incubating since 2011-12-23.
+
+The most important issue the Bloodhound community needs to address
+is diversifying the community, but we believe this is no longer
+any impediment to graduation.
+
+We're hoping to graduate soon, before the next report. While
+growing our community further continues to be important, we
+have seen more outside interest recently. This addresses the
+only barrier to graduation raised after the December2012 report.
+We have further prepared by completing the PODLINGNAMESEARCH,
+and just recently completed the community vote on graduation
+readiness.
+
+The project now has two online demo instances running of
+Apache Bloodhound, one of which shows the current state of the
+trunk branch [ http://bh-demo1.apache.org ] and providing
+a first implementation of the new search functionality,
+responsive layout and multi-product architecture that has
+been developed. Together these represent the main strands of
+what Apache Bloodhound set out to achieve. Unfortunately,
+we do not yet have the ability to make use of the repository
+browser, which was something that was brought up in the
+previous report.
+
+We added two new committers to the project in January, and
+a fourth incubation release. We have also seen more interest
+in the project from a number of channels including irc and
+the dev mailing list which we are, as ever, hoping to convert
+into growth of the developer community and continue to improve
+upon diversity.
+
+Signed-off-by:
+Hyrum Wright: [ ](bloodhound)
+Greg Stein: [ ](bloodhound)
+Branko &Ccaron;ibej: [x](bloodhound)
+
+P.S.: The Incubator vote to graduate Bloodhound passed on 2013-03-13.
+     A resolution to establish the Apache Bloodhound TLP has been
+     submitted to the Board.
+
+
+Shepherd notes:</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#bloodhound">2012-12-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>Bloodhound is an issue tracker derivative of Trac, with the goal of making
+deployment easy, and usage intuitive.
+
+Bloodhound has been incubating since December 2011.
+
+The top three issues that need to be addressed to move toward graduation are:
+
+  1. Improve community diversity
+  2. Growth of user community
+  3. Lowering the barrier to entry and development
+
+Since the last report, Bloodhound has successfully created two more releases.
+The problems highlighted in the September report, regarding the use of an
+external site for the download of some of the dependencies, have been largely
+solved by working with their maintainers to ensure that their packages are
+available through a standard location (pypi).
+
+Releases themselves are beginning to become a little more routine although the
+time between the initiation of the vote for release of 0.2.0 and the
+subsequent announcement of the result was of concern. In contrast the 0.3.0
+release was significantly smoother.
+
+Three new committers have been added to the project and they have driven
+considerable conversation on the mailing lists in a relatively short time. The
+barriers to contributing have been reduced significantly and we plan to
+continue to work on this area. In addition to the identification of tickets
+that are suitable for newcomers we now have documentation of aspects of ticket
+management and the workflow that we use. Proposals for larger enhancements are
+also documented on the wiki in such a way that they reflect the decisions made
+on the project dev mailing list, reducing the work associated with digging
+through the mailing list.
+
+From the infrastructure side the project has two open requests. One of these
+requests was opened in July, requesting a means for the Bloodhound source
+browser to have effective access to a local copy of the svn repository.
+Alternatives have been suggested but there is no obvious resolution to this
+issue at this point.
+
+Signed-off-by: brane, jukka</pre>
+<h3 id="2012-09-19"><a href="2012/board_minutes_2012_09_19.html#bloodhound">2012-09-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-09-19" title="Permalink">&para;</a></h3>
+<pre>Bloodhound is an issue tracker derivative of Trac, with the goal of making
+deployment easy, and usage intuitive.
+
+Bloodhound has been incubating since December 2011.
+
+The top three issues that need to be addressed to move toward graduation are:
+
+1. Improve community diversity
+2. Lowering the barrier to entry and development
+3. Establish a frequent release cycle
+
+Since our last report Bloodhound has had its first release, version 0.1.0-RC1.
+This was promptly followed by one external website hosting resources required
+during the installation to go offline. At the time of writing this is
+unresolved, although a temporary fix has been identified and suggestions for a
+more permanent fix have been made.
+
+Our project issue tracking system has now also been upgraded to this first
+release of Bloodhound. Predictably the number of issues raised since has risen
+significantly since as it exposed many minor shortcomings not obvious
+when not used daily.
+
+Conversations have also started on how to highlight issues that potential new
+contributors would find engaging and manageable in complexity. This is mainly
+to address point 2 of the issues listed above.
+
+Signed-off-by: gstein, jukka</pre>
+<h3 id="2012-06-20"><a href="2012/board_minutes_2012_06_20.html#bloodhound">2012-06-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-06-20" title="Permalink">&para;</a></h3>
+<pre>Bloodhound is an issue tracker derivative of Trac, with the goal of making
+deployment easy, and usage intuitive.
+
+Bloodhound has been incubating since December 2011.
+
+The top three issues that need to be addressed to move toward graduation are
+still:
+
+1. Improving community diversity
+2. Lowering the barrier to entry and development
+3. Creating shippable releases and getting user feedback
+
+Over the last three months there has been significant design and development
+effort into the project, taking the codebase from being a basic installer to
+adding a new interface. The front-end design is considered to be complete at
+this stage but more work is required to implement this design. Despite this,
+the project remains installable and it has become possible for new developers
+to contribute relatively quickly.
+
+No new committers have been added over the last three months but we have had
+very welcome patches from new contributors. Activity on the developer mailing
+list seems to have reduced which is disappointing. This may be remedied in
+part by encouraging more discussion that currently takes place in the issue
+tracker to take place in the mailing list.
+
+The target of creating an initial release is ongoing. With the conversion of
+most of the interface to a new basic design, it is only completion of a subset
+of the dashboard design that should be seen as a requirement for an initial
+release. This remains the immediate primary goal of the community, and should
+help community diversity by increasing the exposure of the project.
+
+Signed off by mentor: hwright, gstein
+Shepherd: Dave Fisher</pre>
+<h3 id="2012-03-21"><a href="2012/board_minutes_2012_03_21.html#bloodhound">2012-03-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-03-21" title="Permalink">&para;</a></h3>
+<pre>Bloodhound is an issue tracker derivative of Trac, with the goal of making
+deployment easy, and usage intuitive.
+
+Bloodhound has been incubating since December 2011.
+
+The current three most important issues toward graduation remain unchanged
+from last month, and are:
+
+1. Improving community diversity
+2. Lowering the barrier to entry and development
+3. Creating shippable releases and getting user feedback
+
+The last month saw the addition of one committer, Joachim Dreimann, as well
+as increased technical discussion on the mailing lists, particularly around
+the areas of user interface, multi-project support and rudimentary
+installation capabilities. In addition, the first commits of code that
+should form part of the distribution have been achieved, providing the
+basis for multi-project support and a very basic installer script.
+
+The primary goals of the community remain getting something potential
+developers can play with into the repository, and creating a release to
+get some widespread exposure to the project.
+
+Signed off by mentor: hwright, gstein</pre>
+<h3 id="2012-02-15"><a href="2012/board_minutes_2012_02_15.html#bloodhound">2012-02-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-02-15" title="Permalink">&para;</a></h3>
+<pre>Bloodhound is an issue tracker derivative of Trac, with the goal of making
+deployment easy, and usage intuitive.
+
+Bloodhound has been incubating since December 2011.
+
+The current three most important issues toward graduation are:
+
+1. Improving community diversity
+2. Lowering the barrier to entry and development
+3. Creating shippable releases and getting user feedback
+
+We missed the report last month, largely due to inattention.  There were
+a number of discussions about the relationship between Bloodhound and Trac
+in early January, but those appear to have been resolved to the satisfaction
+of both sets of developers and the Incubator PMC.
+
+Since incubation some effort has gone into setting up some of our ASF
+infrastructure, most notably a VM to host an instance of Trac to use for
+project and issue planning.  This instance will hopefully be migrated to
+Bloodhound soon, as we hope to be self-hosting.  We also have set up:
+
+- Mailing lists
+- Commit access for all the initial committers
+- Placeholder pages for the main website and Trac/Bloodhound front pages
+
+The community is going through a learning process about how the ASF
+functions, and how to be inclusive of the external community.  Although
+most of the current developers are colocated, the mailing lists have
+started to see increased activity, as the existing community learns to
+work in a more open manner.  A couple of additional people have expressed
+interest in participating, and are actively posting to the mailing list.
+A number of mockup designs have started to flow into the repository.
+
+The primary goals of the community include getting something potential
+developers can play with into the repository, and creating a release to
+get some widespread exposure to the project.
+
+Signed off by mentor: gstein, hwright</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

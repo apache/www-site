@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Data Privacy | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Data Privacy';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Data Privacy';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Data Privacy</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="data-privacy">Data Privacy<a class="headerlink" href="#data-privacy" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-09-16</td>
+<td><a href="2020/board_minutes_2020_09_16.html#section-4B">Appointed Christian Grobmeier</a></td>
+<td>the President, reported to the board</td>
+</tr>
+<tr>
+<td>2019-12-18</td>
+<td><a href="2019/board_minutes_2019_12_18.html#section-7B">Appointed Dirk-Willem van Gulik</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2019-02-20</td>
+<td><a href="2019/board_minutes_2019_02_20.html#section-8C">Appointed John Kinsella</a></td>
+<td>the board, by consent</td>
+</tr>
+<tr>
+<td>2018-07-18</td>
+<td><a href="2018/board_minutes_2018_07_18.html#section-7E">Appointed Chris Mattmann</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-06-15</td>
+<td><a href="2022/board_minutes_2022_06_15.html#section-8A">Data Privacy</a></td>
+<td>discussion</td>
+<td>discussed</td>
+</tr>
+<tr>
+<td>2019-01-16</td>
+<td><a href="2019/board_minutes_2019_01_16.html#section-8B">VP, Data Privacy</a></td>
+<td>discussion</td>
+<td>discussed</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-9">2026-08-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-9">2026-06-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+## Privacy Committee
+
+The _privacy committee_ is a group of volunteers actively working for more
+privacy towards the ASF. Committee members have become more active in
+supporting projects for a few weeks.
+
+## Privacy complaints / Removal requests
+
+We have received multiple requests directed at VP-Privacy. The number of
+private complaints is generally rising, and the requests usually look valid,
+not automated.
+
+## Drafting an AI recommendation
+
+I have been drafting a recommendation on the use of AI from a privacy
+perspective. Although I have already progressed far, I haven't yet completed
+it. This draft will be sent to the privacy@ list for further feedback and
+discussion first.
+
+Several questions came up in the past weeks, asking for clarification.
+
+# Open tasks
+
+I am currently reviewing the accuracy of our documentation. For that reason, I
+have not added any more open tasks.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-9">2026-05-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-9">2026-04-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-9">2026-03-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-9">2026-02-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-9">2026-01-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+The last Data Privacy Report was in July 2025 and this report is for the
+period since the last report.
+
+## Privacy Committee
+
+The _privacy committee_ are volunteers actively working for more privacy
+within the ASF. There are four members of the Privacy committee.
+
+## Privacy complaints / Removal requests
+
+We received 2 requests since the last report in July 2025.
+
+## Data Privacy Policies
+
+There are seven Data Privacy policies listed on the policies page:
+
+https://privacy.apache.org/policies/
+
+The website policy was ratified by the board in January 2023 and the other six
+policies are all in DRAFT form.
+
+### Telemetry Usage in Downloaded/Installed Software
+
+No work has been done on this since the last report. The Airflow PMC asked the
+Board about their Telemetry usage in their Board Report in September 2025 and
+received positive feedback.
+
+The current policy is still in DRAFT format:
+
+https://privacy.apache.org/policies/privacy-products-policy-medium.html
+
+## Matomo
+
+The ASF started hosting its own Matomo instance in March 2022 to provide
+analytics for project websites that respected user's privacy:
+
+https://analytics.apache.org/
+
+In November 2025 the handover of the Matomo instance and VM to the
+Infrastructure team was completed. The Privacy team appreciates all the work
+Infra has done to achieve this and the fact that Infra is now supporting
+Matomo. https://issues.apache.org/jira/browse/INFRA-26367
+
+Currently, 78 Matomo _Tracking Codes_ have been issued, 9 since the last
+report in July 2025. There are 9 Matomo sites that don't receive traffic at
+this point.
+
+## Content Security Policy (CSP)
+
+We continue to receive queries from projects about permissable modification of
+the Content Security Policy for their websites.
+
+## Analytics Usage Campaign
+
+The _Privacy Committee_ receives a monthly report of ASF websites that utilise
+external trackers/analytics that are not permitted by the _Privacy Policy_.
+
+The number of websites using proscribed analytics on the monthly report has
+reduced from 103 to 3 in the last 12 months (-97%).
+
+# Open tasks
+
+- Provide guidelines for advertising user mailing lists
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is
+  covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+  the website
+- Investigate TAC for data privacy and develop a targeted version for the
+  committee
+- Clarify status of "donate.apache.org"
+- Clarify status of "status.apache.org"</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-9">2025-12-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-9">2025-11-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-9">2025-10-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-9">2025-09-24</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-9">2025-08-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-9">2025-07-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+## Privacy Committee
+
+The _privacy committee_ are volunteers actively working for more privacy
+within the ASF. There are four members of the Privacy committee.
+
+## Privacy complaints / Removal requests
+
+We received 7 requests since the last report in March 2025, three of which
+came in directly to vp-privacy.
+
+## Data Privacy Policies
+
+There are seven Data Privacy policies listed on the policies page:
+
+    https://privacy.apache.org/policies/
+
+The website policy was ratified by the board in January 2023 and the
+other six policies are all in DRAFT form.
+
+### Telemetry Usage in Downloaded/Installed Software
+
+At the end of 2024 the Apache Airflow project initiated a discussion about
+the collection of telemetry data in installed Airflow instances. As a
+result of that discussion a DRAFT policy was developed:
+
+    https://privacy.apache.org/policies/privacy-products-policy-medium.html
+
+Airflow recently revived that discussion seeking clarity on what the ASF
+policy is for their use-case and the committee is working with them on this
+with the aim of having a ratified policy that they can comply with.
+
+## Matomo
+
+The ASF started hosting its own Matomo instance in March 2022 to provide
+analytics for project websites that respected user's privacy:
+
+    https://analytics.apache.org/
+
+Currently, 69 Matomo _Tracking Codes_ have been issued, 11 since the start of
+2025. There are 7 Matomo sites that don't receive traffic at this point.
+
+Seven projects that were not using the Matomo tracking code generated for them
+were contacted in March to remind them that they were available for their use.
+This resulted in one projected starting to use Matomo.
+
+#### Responsibility for the Matomo VM
+
+Infra will take over the responsibility for the Matomo VM.
+The current progress is tracked here:
+https://issues.apache.org/jira/browse/INFRA-26367
+
+## New services
+
+A request to be able to use "dynamic images" from pepy.tech was received and
+the process to consider whether we want to sign a DPA with that Org is being
+considered.
+
+## Content Security Policy
+
+The Infrastructure team implemented a _Content Security Policy_ (CSP) at the
+start of March 2025 which prevents project websites from using trackers or
+loading resources which are not permitted by the ASF Privacy Policy.
+
+Quite a few projects have issues to fix due to external resources that are
+now blocked by the CSP. There have been discussions around some external usage
+and whether they could be permitted under the Privacy Policy (e.g. sign a DPA)
+or provide a technical solution that would make usage compliant.
+
+## Analytics Usage Campaign
+
+The _Privacy Committee_ receives a monthly report of ASF websites that utilise
+external trackers/analytics that are not permitted by the _Privacy Policy_.
+From December 2023 to January 2025, the number of ASF websites using
+proscribed analytics had reduced from 113 to 103 (-9%).
+
+In January 2025 the _Privacy Committee_ started a campaign to encourage
+projects to remove those analytics.
+
+The number of websites using proscribed analytics on the monthly report has
+now reduced to 9 (-91% since January 2025).
+
+# Open tasks
+
+- Provide guidelines for advertising user mailing lists
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+ the website
+- Investigate TAC for data privacy and develop a targeted version for the committee
+- Clarify responsibility for the Matomo VM
+ https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+ https://issues.apache.org/jira/browse/INFRA-25432
+- Clarify status of "donate.apache.org"
+- Clarify status of "status.apache.org"</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-9">2025-06-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>Nothing to report this month.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-9">2025-05-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-9">2025-04-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-9">2025-03-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+## Privacy Committee
+
+The _privacy committee_ are volunteers actively working for more privacy
+towards the ASF. Committee members have become more active supporting projects
+for a few weeks.
+
+## Privacy complaints / Removal requests
+
+We received 4 requests since the start of 2025.
+Several others came in directly to vp-privacy.
+
+## Matomo
+
+The ASF started hosting its own Matomo instance in March 2022 to provide
+analytics for project websites that respected user's privacy:
+
+    https://analytics.apache.org/
+
+Currently, 67 Matomo _Tracking Codes_ have been issued, 9 since the start of
+2025. There are 9 Matomo sites that don't receive traffic at this point.
+
+#### Responsibility for the Matomo VM
+
+Infra will take over the responsibility for the Matomo VM.
+The current progress is tracked here:
+https://issues.apache.org/jira/browse/INFRA-26367
+
+## New services
+
+Project websites can embed Kapa.AI for an improved documentation experience.
+While a DPA is on file, ASF projects need to turn on the "explicit consent"
+option provided by Kapa.AI.
+
+## Content Security Policy
+
+The Infrastructure team implemented a _Content Security Policy_ (CSP) at the
+start of March 2025 which prevents project websites from using trackers or
+loading resources which are not permitted by the ASF Privacy Policy.
+
+Quite a few projects have issues to fix due to external resources that are
+now blocked by the CSP. There have been discussions around some external usage
+and whether they could be permitted under the Privacy Policy (e.g. sign a DPA)
+or provide a technical solution that would make usage compliant.
+
+## Analytics Usage Campaign
+
+The _Privacy Committee_ receives a monthly report of ASF websites that utilise
+external trackers/analytics that are not permitted by the _Privacy Policy_.
+From December 2023 to January 2025, the number of ASF websites using
+proscribed analytics had reduced from 113 to 103 (-9%).
+
+In January 2025 the _Privacy Committee_ started a campaign to encourage
+projects to remove those analytics. Issue Tickets were created for 87
+projects which included PRs/patches for 67.
+
+Over the last two months, the number of websites using proscribed analytics
+on the monthly report has reduced from 103 to 52 (-50%). Of the remaining
+52 sites, 27 are retired projects in the Attic.
+
+While the use of external trackers is no longer an issue since the CSP started
+blocking them, we believe its a good idea to encourage projects to clean up
+their sites and point out that Matomo can provide analytics for them.
+
+# Open tasks
+
+- Provide guidelines for advertising user mailing lists
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+ the website
+- Investigate TAC for data privacy and develop a targeted version for the committee
+- Clarify responsibility for the Matomo VM
+ https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+ https://issues.apache.org/jira/browse/INFRA-25432
+- Clarify status of "donate.apache.org"
+- Clarify status of "status.apache.org"</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-9">2025-02-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-9">2025-01-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-9">2024-12-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+One question about handling of mailing lists may require board input:
+Should posting to a mailing list without a subscription be allowed or not?
+(details below).
+
+Currently, 66 tracking codes were requested (+13).
+22 Matomo sites don't receive traffic at this point (+7).
+
+1 Person was added to the privacy committee.
+
+## Shadowing and Privacy Committee
+
+I have offered an opportunity to "shadow" and also
+renewed the offer to join the "privacy committee."
+I plan to train a person to take over the privacy office
+when it is time or at least have a group of people
+in the committee, who feel responsible for handling the requests.
+
+Niall Pemberton has accepted the offer to join the committee.
+Alin Jerpelea has expressed interest in shadowing the privacy office.
+
+## Privacy policies for downloadable products
+
+Products that can be used for end users (like OpenOffice) may need a privacy policy regarding how they track users of their software.
+Some products (like Airflow) may use Scarf for user behavior tracking; some may not track at all. For both categories of products, a privacy policy that can be linked from within the product is needed.
+
+* https://privacy.apache.org/policies/privacy-products-policy-high.html
+* https://privacy.apache.org/policies/privacy-products-policy-medium.html
+
+Both policies are still in discussion. Scarf is a problematic v&aring;endor,
+so please consider both policies as work in progress.
+
+## Repeated Mailinglist archive requests
+
+### Normal requests
+
+Users have sent emails in the past and wish they had been redacted now.
+The GDPR demands we remove those emails. We have previously stretched
+and said, "No, because we can't." We considered the public distribution of the
+emails and rejected it as excessive.
+
+With Niall volunteering to help, we plan to redact
+specific user information from emails if requested. The problem is that we will
+need to adjust responses sometimes, too, since a signature might be quoted.
+
+After some time, we will report how many archive modifications we have received and if this can be handled.
+
+We have handled our first two of these kind of requests.
+If you want to learn about the details, please see this thread:
+https://lists.apache.org/thread/yqkfl9o37hjw0vq7f794g7ckt0k35ck8
+
+### Requests that clearly demand redaction
+
+Some projects allow users to click a button and post to a mailing list.
+Users sometimes don't know that this is public and ask for redaction.
+These redactions need to be made. To reduce the number of those requests,
+I am recommending either:
+
+a) add a clear warning to every button that the content will be public
+b) remove the feature to post to the mailing list without a subscription, and receive proper information about the nature of a mailing list.
+
+I ask the board to decide if a specific proposal is preferred.
+
+## Responsibility for the Matomo VM
+
+Currently asked in:
+https://issues.apache.org/jira/browse/INFRA-26365
+
+## Kapa.AI
+
+Kapa changes were applied, and the service is now usable.
+Once the signature is done, I will store the DPA in our repo.
+
+# Open tasks
+
+- Provide guidelines for advertising user mailing lists
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+ the website
+- Investigate TAC for data privacy and develop a targeted version for the committee
+- Clarify responsibility for the Matomo VM
+ https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+ https://issues.apache.org/jira/browse/INFRA-25432
+- Clarify status of "donate.apache.org"
+- Clarify status of "status.apache.org"</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-9">2024-11-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-9">2024-10-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Currently, 53 tracking codes were requested (+2).
+15 Matomo sites don't receive traffic at this point.
+
+After discussing this with the users of Kapa.ai, I suggested changes to make
+it possible for them to use their service. They have agreed to those changes,
+and if they are implemented, we can use their service.
+
+Multiple questions directed at vp-privacy@ were answered.
+
+There is need for a privacy policy for software that is downloaded
+and installed on end-user devices. The first projects in question
+are Apache OpenOffice and Apache Airflow.
+
+Questions around mailing list privacy have risen and need to be handled.
+Due to the many questions since the last period, this was not handled yet.
+
+# Open tasks
+
+- Provide guidelines for advertising user mailing lists
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is
+  covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+  the website
+- Review TAC policy for data privacy and develop a targeted version for the
+  committee
+- Clarify responsibility for the Matomo VM
+ https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+ https://issues.apache.org/jira/browse/INFRA-25432
+- Clarify status of "donate.apache.org"
+- Clarify status of "status.apache.org"</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-9">2024-09-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Currently, 53 Matomo tracking codes were requested (+2 this month).
+15 Matomo sites don't receive traffic at this point.
+
+As VP of Data Privacy, I was given access to
+mailing list management tools to redact messages from our systems.
+Since this only changes our systems but not mirrors,
+our usual response will stay the same.
+
+The Founder of Kapa has reached out to discuss privacy concerns.
+A meeting will happen this or next week.
+
+As usual, several data removal requests were processed directly through
+vp-privacy@.
+
+# Open tasks
+
+- Discuss Kapa.ai
+- Provide guidelines for advertising user mailing lists
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is
+  covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+  the website
+- Review TAC policies for data privacy and develop a targeted version for the
+  committee
+- Clarify responsibility for the Matomo VM
+  https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+  https://issues.apache.org/jira/browse/INFRA-25432
+- Clarify status of "donate.apache.org"
+- Clarify status of "status.apache.org"</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-9">2024-08-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Currently, 51 tracking codes were requested (+0).
+11 Matomo sites don't receive traffic at this point (not yet implemented).
+
+- Added a new Guide for adding YouTube by using a Jekyll plugin:
+  https://privacy.apache.org/guides/jekyll-youtube-plugin.html
+- Responded to whether using the GitHub API is acceptable from a privacy perspective: a DPA is already on file, and there are no objections.
+- Infra removed a message from "lists.apache.org" on my request.
+  It is possible to send messages to user lists without knowing that this email
+  is going to be public. The privacy team will work on recommendations to make this more transparent.
+
+# Open tasks
+
+- Provide guidelines for advertising user mailing lists
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+  the website
+- Investigate TAC for data privacy and develop a targeted version for the committee
+- Clarify responsibility for the Matomo VM
+  https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+  https://issues.apache.org/jira/browse/INFRA-25432
+- Clarify status of "donate.apache.org"
+- Clarify status of "status.apache.org"</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-9">2024-07-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Currently, 51 tracking codes were requested (+0). 11 Matomo sites don't
+receive traffic at this point (not yet implemented).
+
+A question about using "Kapa AI" was raised and addressed on the mailing list.
+
+As the ASF, we are responsible for all websites and services we use and
+provide to our users. This includes tools such as Kapa AI embedded in our
+websites. If a project&rsquo;s website uses this tool, we are accountable for
+ensuring data privacy compliance.
+
+According to my recent assessments, Kapa AI does not support the GDPR. The
+company does not provide a Data Processing Agreement (DPA). In addition, it
+also embeds additional tools such as Google Analytics.
+"Data removal", as required by various privacy frameworks such as the GDPR or
+ the CCPA, is limited to minors. Even then, the privacy terms remain vague.
+
+Even if Kapa AI would provide a DPA, we would only be able to sign it when the
+ASF is convinced that the provider is trustworthy enough to comply. This is
+generally true for all services we use and is problematic in the GDPR. Extra
+caution is advised regarding AI services since it is usually unclear how user
+data is used and processed.
+
+At this time, I cannot recommend the use of Kapa AI on our websites.
+
+If there is an urgent necessity to use Kapa AI, website maintainers must
+obtain user consent before loading the tool. This is very similar to embedding
+YouTube videos as described in the FAQ:
+https://privacy.apache.org/faq/committers.html
+
+A follow-up question asked whether one can use Kapa AI outside the project's
+website. Generally, the ASF is only responsible for its channels. This
+includes our websites and services that pay for and operate on our behalf. All
+websites, tools (such as Discord) or similar which are run and operated by
+enthusiasts outside the control of the ASF is the operator's responsibility.
+
+Very similar to trademark policies, it is advised that all services operated
+by third parties are easily identified as not being part of the ASF.
+
+# Open tasks
+
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is
+  covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+  the website
+- Investigate TAC for data privacy and develop a targeted version for the
+  committee
+- Clarify responsibility for the Matomo VM
+  https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+  https://issues.apache.org/jira/browse/INFRA-25432
+- Clarify status of "donate.apache.org"
+- Clarify status of "status.apache.org"</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-8">2024-06-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Currently, 50 tracking codes were requested (+1).
+10 Matomo sites don't receive traffic at this point (not yet implemented).
+
+We signed a DPA with AUTOMATTIC for the WordPress hosting.
+
+Multiple questions about embedding resources were handled.
+
+# Open tasks
+
+- Create a list of WordPress sites
+- Create a list of domains that are allowed to connect because a DPA is covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+  the website
+- Investigate TAC for data privacy and develop a targeted version for the committee
+- Clarify responsibility for the Matomo VM
+  https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+  https://issues.apache.org/jira/browse/INFRA-25432</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-8">2024-05-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Currently, 50 tracking codes were requested (+1).
+10 Matomo sites don't receive traffic at this point (not yet implemented).
+
+Multiple questions about embedding resources were handled.
+
+# Open tasks
+
+- Create a list of Wordpress sites and sign a DPA with Wordpress
+- Create a list of domains that are allowed to connect because a DPA is covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Add "canned responses" and instructions on how to run the privacy office to
+  the website
+- Investigate TAC for data privacy and develop a targeted version for the committee
+- Clarify responsibility for the Matomo VM
+  https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+  https://issues.apache.org/jira/browse/INFRA-25432</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-8">2024-04-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Currently, 49 tracking codes were requested (+2).
+10 Matomo sites don't receive traffic at this point (not yet implemented).
+
+* After blocking 3rd party dependencies, questions arose about embedding resources.
+
+* Concerning DPAs, the ASF currently lets the VP of Data Privacy sign them.
+  However, it's worth mentioning to the board that any authorized (board) member can also sign.
+  To keep overhead low, I recommend to stick with the current process.
+
+* New requests for DPAs with previously unsupported companies will be
+  reviewed on the privacy@ mailing list. This process allows for community input
+  on these tools, encourages suggestions for alternatives, and aims to keep our list of providers small.
+
+# Open tasks
+
+- Create a list of domains that are allowed to connect because a DPA is covering it (improved Whimsy support)
+- Better documentation about DPAs
+- Follow up on the idea of blocking 3rd party tracking on the infra-level.
+  Tracked on: https://issues.apache.org/jira/browse/INFRA-25518
+- Add "canned responses" and instructions on how to run the privacy office to
+  the website
+- Investigate TAC for data privacy and develop a targeted version for the committee
+- Clarify responsibility for the Matomo VM
+  https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+  https://issues.apache.org/jira/browse/INFRA-25432</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-8">2024-03-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Currently, 47 projects have requested a Matomo code (+5).
+10 Matomo sites don't receive traffic at this point (not yet implemented).
+
+# Open tasks
+
+- Follow up on the idea of blocking 3rd party tracking on the infra-level.
+  Tracked on: https://issues.apache.org/jira/browse/INFRA-25518
+- Add "canned responses" and instructions on how to run the privacy office to the website
+- Investigate TAC for data privacy and develop a targeted version for the committee
+- Clarify responsibility for the Matomo VM
+  https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+  https://issues.apache.org/jira/browse/INFRA-25432</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-8">2024-02-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+# Newly identified tasks
+
+TAC deals with personal data, so a particular form of privacy policy may be needed.
+
+Related to Matomo, one question came up that needs clarification:
+
+In late 2022, it seemed ASF Infra took over responsibility for the Matomo VM:
+https://lists.apache.org/thread/6c7dn3ot494pxdlfxfn1pngbcpzj5g08
+This issue indicated otherwise:
+https://issues.apache.org/jira/browse/INFRA-25432
+The DP office will follow up with the Infra team to clarify this situation.
+
+Currently, 42 projects have requested a Matomo code; 1 is about to be created.
+Thirty-one projects are actively using Matomo, and 9 of them appear not to include the Matomo code.
+
+# Open tasks
+
+- Follow up on the idea of blocking 3rd party tracking on the infra-level.
+  Tracked on: https://issues.apache.org/jira/browse/INFRA-25518
+- Add "canned responses" and instructions on how to run the privacy office to the website
+- Investigate TAC for data privacy and develop a targeted version for the committee</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-8">2024-01-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+It was confirmed to a board member's question that blocking 3rd party tracking tools on the infra-level is indeed helpful.
+
+The usual requests from automated tools happened.
+
+One person was added to be a moderator for the privacy@
+mailing list. They wanted to help with moderating and responding to automated requests.
+
+As a next step, the privacy website will soon see a collection
+of canned responses, so other interested persons can help
+with handling them.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#attachment-8">2023-12-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre># General
+
+There are no issues that need urgent attention.
+
+Please see this report for decision to make shortly:
+"Should the website policy be enforced? If yes, how?"
+
+## Non-Policy conform websites
+
+The projects using Google Analytics remains almost unchanged:
+https://github.com/search?q=org%3Aapache+analytics.com&amp;type=code&amp;p=2
+
+More than 100 projects appear to have Google Analytics on their sites.
+
+On occasional check, I have seen the Apache Beam project is not only using
+Google Analytics, but also Hotjar which is used for even more critical user
+tracking. I have sent an e-mail with my recommendations to the Beam private
+list, but no response:
+
+https://lists.apache.org/thread/hsxpb3j4m3k3gpcj7hysbxv8gsz53q01
+
+This raises an important question to me:
+
+According to the GDPR, the DPO is only responsible for recognizing these kind
+of issues, but not for enforcing their correction. Enforcement is done (or
+not) by the Board.
+
+I recommend to decide if the website policy should be enforced on projects or
+not. If it should be enforced, there needs to be a decision who should enforce
+it and how.
+
+## Increased questions around licenses
+
+There has been a spike of questions around our license. All questions are not
+related to data privacy and could be ommitted, but demonstrate a confusion on
+our license.
+
+Example:
+
+"I have a phone, and I found the Apache license on it. I never allowed you to
+ install software. Please remove it."
+
+This is non critical, and will provide the responses I write on the privacy
+website for future DPOs soon.
+
+Note: most of these request go to vp-privacy directly and not to the mailing
+list.
+
+## Question on SurveyTools from ASF Cordova
+
+The Apache Cordova project raised the question of a survey tool. I recommended
+sticking with their idea of Google Forms, but to make it very clear what kind
+of tooling is used, that the survey is optional and that not further personal
+data is asked.
+
+The Cordova team wrote an excellent invitation to the survey that made it
+possible to use Google Forms.
+
+## Confirmation of RingCentral
+
+RingCentral bought Hopin with which we have a DPA. While RingCentral seems not
+to be that supportive to the GDPR as Hopin was, I recommended to stick with
+the platform for now. The DPA should be still valid.
+
+## Subscription information for every new subscriber
+
+Thanks to the good work of our Infra team and @Sebb, we now have subscriber
+information on every mailing list.
+https://issues.apache.org/jira/browse/INFRA-23011?filter=-2
+
+While this may not seem like a big deal, this change allows us to justify to
+*not* delete mailing list messages.</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-8">2023-11-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-8">2023-10-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre># General
+
+No issue requiring board attention at this time.
+
+While more and more websites are using Matomo, provided by our Infrastructure
+team, we still have plenty of projects using GA:
+https://github.com/search?q=org%3Aapache+analytics.com&amp;type=code&amp;p=2
+
+I received a proposal for an automated, monthly email report about websites
+using GA. The idea is to open issues for projects using GA and recommend
+migration.
+
+D&amp;I requested to use existing data for further analysis. Since the purpose is
+the same and no new data is retrieved, the privacy office agree to the new
+research.
+
+Hopin, our provider for conference related services, was bought by Ring Central.
+Although Ring Central does not provide DPAs, we still have a DPA with Hopin.
+Given they refer to current privacy regulations, I consider them safe. However,
+privacy protecting solutions are preferred in general; the recommendation was
+to stay for now, and leave whenever we find a better solution.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-8">2023-09-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre># General
+
+No issue requiring board attention at this time.
+
+There have been many unfounded requests to vp-privacy@
+related to "privacy requests." These requests look a lot
+like spam.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-8">2023-08-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre># General
+
+No issue requiring board attention at this time.
+
+- We published our first guide to help with ASF event photography:
+  https://privacy.apache.org/guides/event-photography.html</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#attachment-8">2023-07-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-8">2023-06-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre># General
+
+No issues requiring board attention at this time.
+
+## First online meeting on 28 Jun 2023
+
+One of the roles of the DPO is to educate. I am trying a new format in the
+form of an online meeting to respond to all questions committers might have
+around their projects, websites or just in general.
+
+# Recommendations
+
+## Add subscription information to every new subscriber of a mailing list
+
+Tracked as: https://issues.apache.org/jira/browse/INFRA-23011?filter=-2
+(open since 18/Mar/22)
+
+Adding this kind of information will tell users how mailing lists work and we
+can act based on user consent.
+
+## Access to ICLAs should be more restrictive
+This task is currently work in progress.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-8">2023-05-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>No issues requiring board attention.
+
+Few emails were received on the VPs address, but most of them were spam</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-8">2023-04-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>No specific issue which requires board attention.
+
+Usual activities: requests for data erasure requests were responded to, Matomo
+IDs were added. There were no conversations that needed specific highlighting.
+
+The ASF Trademarks team has reported a 3rd party has used our logo without
+permission after being added to the privacy policy. To avoid these kind of
+things, VP privacy will add a note to 3rd parties to contact ASF Trademarks
+when there is an idea to use our brands. Also, we will make sure to notify
+trademarks@ and operations@ three days before we add a provider to the privacy
+policy. This planned change to process will be documented in the privacy
+website for future VPs and will probably be adjusted with the input of the
+privacy@ mailing list once it will publish it there for discussion.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-8">2023-03-22</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-8">2023-02-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>There was almost no activity in the past month.
+
+One data removal request was fulfilled.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-8">2023-01-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>Privacy Policy:
+
+We have submitted a new try for getting the privacy policy for public websites
+ratified. Some projects expressed to only apply those privacy policy if
+approved from the board.
+
+As there always might be a language barrier, here is the intent of what I am
+trying to achieve: to have a common, generic privacy policy all projects
+follow. This of course has some impact. In example, Google Analytics cannot be
+used anymore. Instead, the policy provides an alternative in terms of Matomo.
+
+Question:
+
+Updates to this policy may be necessary, when new data processors are added or
+services are altered. I would like to send updates to the board so they can be
+vetoed in a lazy way. Is this process acceptable for you?
+
+Operations:
+
+I have added Scarf and DinoSource ApS to the list of vendors. Scarf is a new
+service asked by some project to track their download statistics. The service
+supports the GDPR and also was cooperative when working with them. DinoSource
+is providing PonyMail and was known as Quenda before. The DPA was filed
+earlier, but without signature and adding DinoSource was just a formality.
+
+We had some removal requests. Automated requests where rejected. One person
+request was rejected as well since it implied mailinglist removals.
+
+So far, no rejections received any follow ups.
+
+Next goals:
+
+The privacy office will work harder on the committer privacy once the public
+privacy policy was ratified. Also, I'd like to find a system to help projects
+migrate to the new policy.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#attachment-8">2022-12-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>There is a proposed privacy resolution on the agenda.
+
+We were receiving many requests for data deletion from a tool called "Mine". I have decided to ignore those requests
+as they are unjustified in most cases and automatically sent.
+
+From a privacy perspective, I am also very happy to see the Infrastructure team supporting our efforts greatly
+by proactively working on better privacy for LDAP and taking over control of the Matomo (Web Analytics) instance. The latter one will not only lead to more professionally cared services but also help to handle additional load which we might have from applying the privacy policy to our websites.
+
+There is minor activity around a new DPA with Scarf and working on further policies.</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#attachment-8">2022-11-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-8">2022-10-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>Currently a draft of an upcoming resolution was posted here for review:
+https://lists.apache.org/thread/zh3hpzqbk677ttotltjyqqmm3r824kp8
+I did not yet submit it yet, since I hope for more feedback first.
+
+A first draft for the committer exists here:
+https://privacy.apache.org/policies/privacy-policy-committer.html
+
+I am also trying to collect all open issues in a document now as
+current issues are hard to track as it is now.
+
+We keep getting requests from tools like "Mine" which basically
+search email inboxes and complain if you ever received an email from the ASF,
+like a subscription confirmation or similar. I will need to read if
+these kind of "mass complaints" have to be handled or can be ignored.
+
+Apart from that, no unusual activities.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-8">2022-09-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>Data Privacy was out of office most of the August and partially in September.
+All important messages (mailing list and private messages) were responded too.
+
+I have recognised more messages coming in from tools like "privacy hawk" or
+similar. I am in contact with them if we can reduce the often unjustified
+messages.
+
+I am also in touch with "Scarf" to complete working on usage of this tooling
+too.
+
+Next tasks will be to submit the privacy resolution (as discussed) for the
+next board meeting and complete other privacy policy related tasks (committer
+policy, members policy etc)</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-8">2022-08-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-8">2022-07-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-8">2022-06-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-8">2022-05-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>Privacy has received several "data removal requests", but apart from that, no
+bigger issues.
+
+We have published our privacy policy for public services (for all visitors on
+websites): https://privacy.apache.org/policies/privacy-policy-public.html
+
+With the announcement we have received generally good feedback. At this point,
+already 22 projects have migrated to Matomo, the new ASF service we provide:
+https://analytics.apache.org/
+
+VP Data Privacy is grateful for the help of some volunteers, specifically
+Martijn Visser, who was recently elected as committer, but also helps a lot
+with creating new accounts on Matomo.
+
+One interesting question was raised on the mailing list regarding the
+"enforcement" of those policies. If interested in the context:
+https://lists.apache.org/thread/vf4drk82so4k4tcw188h9370grzy8wz1
+
+As it was explained, the privacy office can only give recommendations to apply
+privacy practices, but cannot enforce it. As per GDPR, the board is
+responsible for ultimately enforcing the privacy policy. This is a duty which
+cannot be outsourced.
+
+If the privacy policy is not enforced to all projects, we cannot consider our
+organisation GDPR compliant. I ask the board to give a recommendation how the
+privacy policies worked on in the privacy office (as part of the president
+office) should be enforced (or if).
+
+At the moment privacy list is not yet cleared of all open requests, but once
+the number of requests goes down, a proposal for the new "mailing list policy"
+and also "committer policies" will follow.
+
+Policy-wise, end of summer might be a good time think of the ASF as GDPR
+compliant. Implementation wise, it will be difficult to convince all projects
+to support the new privacy policy or have the work done. An answer to the
+above question about enforcement of the GDPR will definitely help.</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#attachment-8">2022-04-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-8">2022-03-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>The ASF is on it's way to remove Google Analytics. As a replacement for
+projects who need website analytics we have discussed to use Matomo.
+
+The new Matomo instance is running (in beta) for some projects:
+https://matomo.privacy.apache.org/
+
+Thanks to Martijn Visser and Benjamin Marwell to make this happen.
+
+A draft for the message of website policy changes can be found here:
+https://docs.google.com/document/d/1HQibaSbfoioGAW4ugvo8meA_oDJ6Lz6VNUeOXtvnd7Y/edit
+Some feedback was already worked in. In a few days this message will be sent,
+except there is further feedback.
+
+We have been granted with a "premium" account for free for a tool called
+"Mine", which sends us user complaints. I am still undecided if this is a good
+thing to use or if it is necessary to use it.
+
+Usual discussions and daily operations aside, there is nothing more to report.
+Once the above mentioned email is out, I expect the privacy list will have to
+handle support questions.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-8">2022-02-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>We have installed Matomo (Google Analytics replacement) on a Privacy
+maintained VM. Two projects are currently trying out if the software is
+meeting our requirements (Apache Flink and Apache Shiro). Once we learn more
+about the system, VP Privacy will send out a first email informing the
+projects about the upcoming changes to privacy (and asking for feedback).
+
+On another note we have received many privacy complaints from users who used
+the Mine software (saymine.com). This software analyses emails and makes
+assumption on unused "accounts". Because some users received emails from our
+email lists, Mine recommended to contact us. These emails mentioned there "is
+proof". I have looked into Mine and tried the "free account". All emails I
+found where "false positives" and it looked like people unsubscribed at some
+point. I contacted Mine so they don't recommend sending us further emails;
+outcome is still open.
+
+Another request to sign a DPA with Warner Bros was rejected; the law firm
+contacting us where searching for "Apache Solutions Ltd".
+
+Apart from that only routine work was done.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-8">2022-01-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>Data Privacy is currently in the process of finishing the webpage privacy
+statement. We are currently working in feedback and try to find a way to roll
+out the new policy. The board can expect more on this in the next two, three
+weeks.
+
+According to the austrian and german DSB (data privacy agencies), Google
+Analytics is no longer allowed in the EU because it is not compliant to the
+GDPR:
+https://gdprhub.eu/index.php?title=DSB_(Austria)_-_2021-0.586.257_(D155.027)
+
+For this reason, I believe it is necessary to remove Google Analytics from our
+websites. There is a proposal to use Matomo, which is compliant. The current
+idea is to add ASF volunteers to a privacy committee, which is responsible for
+maintaining and supporting a VM running Matomo for the whole ASF.
+
+Apart from these next steps, there is only "business as usual". Some requests
+for data removal, all of them not valid were made. A higher level of spam was
+observed with moderation.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-8">2021-12-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-8">2021-11-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>No items requiring board attention for now.
+
+Discussion around "user website tracking" al&aacute; Google Analytics started at the
+mailing list.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-8">2021-10-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-8">2021-09-15</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>Due to relocation no progress policy-wise was made this month.
+
+The mailing list was moderated and responses to deletion requests were given.
+
+No other requests were made so far.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-8">2021-08-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>Due to holiday seasons and personal changes not much has changed since the
+last report and nothing which requires board attention.
+
+For the next report I expect movement in applying the new policies mentioned
+in the previous report.</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-8">2021-07-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>Data removals:
+
+There was one serious request to remove data; however, it turned out the 18
+year old emails are not hosted by the ASF.
+
+General activities:
+
+We have drafted the new website policy:
+https://privacy.apache.org/policies/privacy-policy-public.html
+
+There are also new draft versions of internal policies for mailing lists and
+websites: https://privacy.apache.org/policies/
+
+Initial work on the catalog of services was done as well
+(with focus on public facing services).
+
+Several data protection agreements (DPAs) were collected. We are well on our
+way to have working privacy policies for our public webpages soon.
+
+Next action items:
+
+ - complete and communicate new policies
+ - clarify with infra if self hosted plausible.io is a possible alternative to
+   Google Analytics
+ - work on contributor and committer privacy policies</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-8">2021-06-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>There is nothing new to report in this period.
+
+Interesting items:
+
+ - We had one data removal request, but the requestor did not clarify their
+   country of origin
+
+Next action items:
+
+ - A discussion about member PI was "finished", but has not had any
+   consequences yet.
+ - collect more DPAs
+ - discourage Google Analytics
+ - Update privacy terms on the main website</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-8">2021-05-19</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>There were no issues requiring board attention so far.
+
+Changes:
+
+VP Privacy will maintain this directory for now:
+https://svn.apache.org/repos/private/foundation/dataprivacy/
+It will contain recent requests, TODOs, DPAs and general discussions.
+"User requests" should be privacy-committee only.
+
+A basic website was created here which will contain FAQ and policies:
+https://privacy.apache.org/
+
+Interesting items:
+
+- one data removal request (Jira) was done without problems
+- one data removal requests was denied since the request did not look legit
+- discussion about ICLA and how to store it took place, no conclusion so far
+
+Next action items:
+
+- collect more DPAs
+- discourage Google Analytics
+- Update privacy terms on the main website</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-8">2021-04-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-8">2021-03-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-8">2021-02-17</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-8">2021-01-20</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#attachment-9">2020-12-16</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-9">2020-11-18</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#attachment-9">2020-10-21</a> &mdash; Christian Grobmeier<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-9">2020-09-16</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-9">2020-08-19</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-9">2020-07-15</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-9">2020-06-17</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-9">2020-05-20</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>Dirk has been recruited as a Special Adviser to the Dutch and EC with regard
+to architecture, privacy, anonymity and what not around the Corona response
+effort. Including the public oriented app. So, he won't have any available
+time for the ASF over the next 3 to 5 weeks.
+
+Christian Grobmeier has volunteered the following report for the privacy
+effort:
+
+So far, we have one missing report and also one open privacy incident (basic
+request from deleting user data from the OOo forums). The incident has not
+been responded so far.
+
+I have asked on feedback of how I'd handle this request, but no response. I am
+not happy with performing any actions without approval.
+
+Does the board have any input/ideas/suggestions here?</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-9">2020-04-15</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>Apologies for a late report - Corona related things took over.
+
+No substancial process on the organisational side.
+
+Few RQ related things got processed in time, commmunicated timely to
+requestor, etc. Currently no tickets open that require action or have
+deadlines. One ticket 'dead' where the requestors email ceased to work (and it
+may have been a fluff/experimental/vigiliante style request).</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#attachment-9">2020-03-18</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>Operational: First genuine GDPR request (removal) handled; but actual
+governance &amp; long term recording not yet sorted properly (e.g. making sure
+that the details of this request are automatically purged when they hit
+delaware record law limits, etc).
+
+Strategic: Not made as much progress as I wanted - largely due to the chair
+(personally) being swamped &amp; not enough delegation.  The latter should become
+unstuck as we start creating deliverables.
+
+Next: Define these deliverables/plan; find 3-6 volunteers for the operational
+part &amp; write down SOPs; talk to infra to figure out what is practically
+possible around retention.</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-9">2020-02-19</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>My personal take is that there are now enough people on the list (-and- the 12
+`sample' cases discussed sofar seem to all have headed for sufficient
+consensus) that it is fair to now draft what should be our GDPR stance from
+which we can derive a guideline and policy. And with that concept not coming
+as a surprise.
+
+We have about 6 more legal/complex points for expects sofar (such as to what
+extent can you push things back for `self service' to the complainant). These
+may require legal attention at some point.
+
+Actual GDPR and similar requests: two in flight; neither contentious. Tracked
+in JIRA.</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-9">2020-01-15</a> &mdash; Dirk-Willem van Gulik<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>Progress: Work rekindled.
+
+- Call for any interested members gone out to subscribe to privacy@; people
+  moderated through.
+
+- General approach mail gone out &amp; slowly posting a list of around 20 example
+  cases (most collected over the past 12 months).
+
+- Speaking to pro-bono and specialist (but paid) legal folks to get the lay of
+  the land (Delaware, but wanting to do this right in CA, EU and UK - despite
+  conflicting rules).
+
+- Dealing with one 'want to be forgotten' request; next step here is to get a
+  private JIRA set up - or postpone &amp; keep this in a president private SVN
+  repo for now.
+
+Problems: None yet
+
+Plan: Go through a set of examples to derive what we value as a community and
+then work top down again. Establish a private JIRA or similar. Establish a
+private channel to operations. Figure out if some of our existing (iCLA filing
+services) can be subverted to also handle the mechanical aspect of things and
+what they need (beyond a runbook).</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#attachment-12">2019-12-18</a> &mdash; John Kinsella<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>Having been unable to devote enough time to the role John Kinsella has
+indicated privately that he wishes to stand down. Given the need for action to
+unblock operational risks a proposal to move the VP role to the President has
+been added to the agenda as item 7B. Dirk-Willem van Gulik has agreed to
+volunteer. (danny@)</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#section-5D">2019-11-20</a> &mdash; John Kinsella<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Danny: pursue a change of chair for Data Privacy</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-12">2019-10-16</a> &mdash; John Kinsella<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>(Apologies for delay in getting this report in. Setting reminder to go off a
+ little earlier next month)
+
+October was quieter than intended - got initial wiki page and call for
+volunteers out. Intention is doing a "soft launch" to members@, then after a
+week or two of hopefully wise Member feedback, opening volunteer call to wider
+committers@.
+
+Outside, engaging with privacy/legal contacts with hope of getting them to
+contribute in some manner, as well.
+
+As requested in last month's (good) feedback, will list goals for the coming
+months for the next quarter or so as momentum is established.
+
+October Goals
+* Grow privacy-discuss subscribers
+* Gather feedback on initial topics/priorities for Data Privacy to address
+* Build out wiki with assistance from others - I can write this, but intent is
+  to get community to contribute.
+
+Stats for September 2019:
+* 1 still open Jira ticket (Intention is to move LEGAL-383 to PRIVACY)
+* 0 closed issues
+* Next report will start to report on subscription/discussion stats.</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#attachment-12">2019-09-18</a> &mdash; John Kinsella<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>After too long a period of silence (emailed last report April 2019[1] - just
+noticed it doesn&rsquo;t seem to have made it to whimsy), renewing push to get Data
+Privacy up and running.
+
+Structure for data-privacy has been set up - mailing lists[2][3], jira
+group[4], and wiki[5] created.
+
+Since last board report, have talked with others with previous
+experience/thoughts on ASF data privacy topics. Short-term goal is to start
+outlining topics to address and areas of help needed on the wiki, then send
+call for volunteers to members@a.o.
+
+Goal right now is to start to get volunteers involved, come up with list of
+priorities, and start being more useful to requests from projects.
+
+I've been reviewing report formats from others, will be adding a bit more
+structure to this in coming months, along with several calendar reminders.
+Also planning a chat room for more interactive and regularly scheduled
+discussions to continue to drive movement.
+
+Stats for August, 2019:
+ * 1 still open Jira ticket (Intention is to move LEGAL-383 to PRIVACY)
+ * 0 closed issues
+
+1: https://lists.apache.org/thread.html/6ac38660931f60d3634aaab569967c5261004c78ff070a56a1be3655@%3Coperations.apache.org%3E
+2: privacy@apache.org - 1 person has already organically found and subscribed.
+3: privacy-discuss@apache.org
+4: https://issues.apache.org/jira/projects/PRIVACY/issues
+5: https://cwiki.apache.org/confluence/display/PRIVACY/Home</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-12">2019-08-21</a> &mdash; John Kinsella<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>There has been no report from the VP.
+
+Activity: I have kicked off call for volunteers on board@ and reached out to
+incumbent VP today 21-Aug
+
+Next steps: Engage volunteers and agree definition of done, define next
+steps/mechanism to clarify the role, report back to the board.
+
+danny@</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#section-5D">2019-07-17</a> &mdash; John Kinsella<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Danny: Document the data privacy needs of the organization.</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#section-5D">2019-06-19</a> &mdash; John Kinsella<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+Additional officer reports approved as submitted by General Consent.</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-11">2019-05-15</a> &mdash; John Kinsella<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>Working on setting up structure for data-privacy. Modified
+personnel-duties/vp-data-privacy.txt, will update further once mailing lists
+are set up. Stalled on setting up mailing lists as I was going to start
+conversation on legal ML first, but just going to create lists and run with
+it.
+
+Working on syncing up with others who have worked on data-privacy matters over
+the last year and talked to counsel. Once that's accomplished, will stat work
+to review data privacy policy and engage with projects looking for assistance.
+
+Stats for April, 2019:
+ * 2 open Jira tickets
+ * 0 closed issues</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#section-5D">2019-04-17</a> &mdash; John Kinsella<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+Additional officer reports approved as submitted by General Consent.</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#section-5D">2019-03-20</a> &mdash; Chris Mattmann<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Phil pursue a report for Data Privacy
+
+Additional officer reports approved as submitted by General Consent.</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#section-5D">2019-02-20</a> &mdash; Chris Mattmann<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+Additional officer reports approved as submitted by General Consent.</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#section-5D">2019-01-16</a> &mdash; Chris Mattmann<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+Additional officer reports approved as submitted by General Consent.</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#section-5D">2018-12-19</a> &mdash; Chris Mattmann<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+Additional officer reports approved as submitted by General Consent.</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-11">2018-11-21</a> &mdash; Chris Mattmann<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>The RFC period is underway for our draft privacy policy. Several members and
+VP infrastructure have weighed in. I will continue to collect feedback through
+the CY, and publish the draft in Jan 2019 with whatever feedback and comments
+received by then. Keep them coming.</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-11">2018-10-17</a> &mdash; Chris Mattmann<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>This month we will send an RFC to the board and legal on our updates to the
+ASF data privacy policy that VPs Infrastructure and Privacy worked on. The
+draft is currently in GDocs and we should move it to a draft ASF page on the
+web site.</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#attachment-11">2018-09-19</a> &mdash; Chris Mattmann<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>Nothing much to report this month other than still working on the Privacy
+Draft. For those interested, contact myself or VP, Infra to see a draft.</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-11">2018-08-15</a> &mdash; Chris Mattmann<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>VP, Infra, VP, Data Privacy &amp; Legal, and our counsel had a telecon on 7/19 and
+discussed ASF strategy with respect to the EU's General Data Protection
+Regulation (GDPR).
+
+We have decided to continue with our updates to the infrastructure
+team's mail archival policy and our policy and procedures for how we deal
+with removal requests. The policy updates are currently under review by
+Legal, and Data Privacy and we expect to publish them in the next month.
+
+We have received a few GDPR requests, with only one current request being
+actively worked, and few queued as far as I can tell (less than 5).</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

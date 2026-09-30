@@ -1,0 +1,2982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Spark | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Spark';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Spark';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Spark</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="spark">Spark<a class="headerlink" href="#spark" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2014-02-19</td>
+<td><a href="2014/board_minutes_2014_02_19.html#section-7C">Appointed Matei Zaharia</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2014-02-19</td>
+<td><a href="2014/board_minutes_2014_02_19.html#section-7C">Establish the Apache Spark Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-BY">2026-08-19</a> &mdash; Matei Zaharia<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Spark is the creation and maintenance of software related to
+large-scale data processing and machine learning.
+
+## Project Status:
+- Project state: Ongoing, with high activity. We made six software releases in
+  the last quarter and added four committers and one PMC member.
+- Issues for the board: None.
+- We started using https://reporter.apache.org/ instead of the Board Agenda
+  Tool to organize our report, so hopefully it will have the expected sections
+  now, but let us know if anything is missing.
+
+## Membership Data:
+Apache Spark was founded 2014-02-18 (12 years ago)
+There are currently 103 committers and 65 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- Peter Toth was added to the PMC on 2026-05-20
+- Tian Gao was added as committer on 2026-05-28
+- Szehon Ho was added as committer on 2026-05-28
+- Uro&scaron; Bojani&cacute; was added as committer on 2026-06-02
+- Yicong Huang was added as committer on 2026-05-26
+
+## Project Activity:
+- The Spark 4.3 release branch has been cut. Spark 4.3 is the first feature
+  release under the new quarterly release cadence, with QA planned for
+  mid-August and release candidates planned for late August.
+- The following major Spark Improvement Proposals (SPIPs) were accepted
+  through public discussions and votes. a. NEAREST BY Top-K Ranking Join b.
+  Faster queries in local laptop mode for Apache Spark c. Timestamps with
+  nanosecond precision d. OIDC Credential Propagation e. Write schema
+  narrowing for column-level UPDATE and MERGE in DSv2 f. Cloud Credential
+  Refresh and Distribution Without Kerberos
+- Releases in the past quarter:
+   - Apache Spark Kubernetes Operator 1.0.0 was released on Jul 26, 2026. This
+     was the first stable release of the Kubernetes operator.
+   - Apache Spark Connect Swift Client 0.7.0 was released on Jul 25, 2026.
+   - Apache Spark 3.5.9 was released on Jul 16, 2026.
+   - Apache Spark 4.1.3 was released on Jul 15, 2026.
+   - Apache Spark 4.0.4 was released on Jul 15, 2026.
+   - Apache Spark 4.2.0 was released on Jul 14, 2026.
+
+## Community Health:
+- Overall community health is good.
+- Development and governance activity remained high during the reporting
+  period. Apache Spark 4.2.0 addressed more than 1,700 JIRA tickets, with
+  contributions from more than 250 individuals.
+- New contributors also continued to engage on the development mailing list
+  and receive guidance from established contributors. No community health
+  concerns were identified.
+- The project added four new committers (Szehon Ho, Yicong Huang, Tian Gao,
+  and Uro&scaron; Bojani&cacute;), and one new PMC member (Peter Toth).
+- The project made 6 releases and voted to accept 6 major Spark Improvement
+  Proposals (SPIPs), as described in the previous section.
+- Mailing list stats:
+   - dev@spark.apache.org had a 17% increase in traffic in the past quarter
+     (635 emails compared to 539)
+   - issues@spark.apache.org had a 31% increase in traffic in the past quarter
+     (9630 emails compared to 7306)
+   - reviews@spark.apache.org had a 30% increase in traffic in the past
+     quarter (16179 emails compared to 12438)
+   - 1841 JIRA tickets opened and 1733 closed in the past quarter.
+
+## Trademarks:
+- No changes since the last report.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-BP">2026-05-20</a> &mdash; Matei Zaharia<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+## Project Status:
+
+- Apache Spark 4.2.0 is currently in the QA phase
+- Released Apache Spark 4.2.0-preview5 on May 2, 2026.
+- Released Apache Spark Connect Swift Client 0.6.0 on Apr 10, 2026.
+- Released Apache Spark 4.2.0-preview4 on Apr 8, 2026.
+- Released Apache Spark Kubernetes Operator 0.8.0 on Mar 15, 2026.
+- Released Apache Spark 4.2.0-preview3 on Mar 13, 2026.
+- Several SPIPs were accepted since the previous report:
+  1. Extending the Spark 3.5 LTS Period With Security Fixes
+  2. DSV2 Enhanced Partition Stats Filtering
+  3. Change Data Capture (CDC) Support
+  4. Auto CDC Support for Apache Spark
+  5. Unified UDF Execution Protocol and Worker Specification for
+  Multi-Language UDFs
+- Notable changes adopted by community:
+  1. GitHub Issues opened as an experimental issue-tracking option alongside
+  JIRA
+  2. A buffer / grace period before adopting upstream dependency upgrades
+  3. Drop support for PyPy in PySpark
+  4. Replacing black with ruff as the Python formatter
+
+## Trademarks:
+
+- No changes since last report.
+
+## Latest Releases:
+
+- Spark 4.0.2 was released on Feb 5, 2026
+- Spark 3.5.8 was released on Jan 23, 2026
+- Spark 4.1.1 was released on Jan 9, 2026
+
+## Committers and PMC:
+
+- The latest committer was added on Feb 9, 2026 (Cheng Pan).
+- The latest PMC member was added on Jan 21, 2025 (Jie Yang).</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-BX">2026-02-18</a> &mdash; Matei Zaharia<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data processing. It offers high-level APIs in Java, Scala, Python, R and SQL as well as a rich set of libraries including stream processing, machine learning, and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project Status:
+
+- The community voted on and approved three SPIPs since the last report:
+  1. Improving Spark SQL UDFs with Transpilation
+  2. Accelerating Apache Spark Release Cadence
+  3. Metrics &amp; semantic modeling in Spark
+- The community recently voted to stop making preview releases, as a step in
+  moving toward a regularly scheduled and faster cadence of regular releases.
+- We added a new committer, Cheng Pan, on Feb 9th.
+- We released Apache Spark 4.0.2 on Feb 5, 2026.
+- We released Apache Spark 3.5.8 on Jan 23, 2026.
+- We released Apache Spark 4.2.0 preview1 on Jan 11, 2026.
+- We released Apache Spark 4.1.1 on Jan 9, 2026.
+- We released Apache Spark 4.1.0 on Dec 16, 2025.
+- We released Apache Spark Connect Swift Client 0.5.0 on Jan 15, 2026.
+- We released Apache Spark K8S Operator 0.7.0 on Jan 15, 2026.
+
+Trademarks:
+
+- No changes since last report.
+
+Latest releases:
+
+- Spark 4.0.2 was released on Feb 5, 2026
+- Spark 3.5.8 was released on Jan 23, 2026
+- Spark 4.1.1 was released on Jan 9, 2026
+
+Committers and PMC:
+
+- The latest committer was added on Feb 9, 2026 (Cheng Pan).
+- The latest PMC member was added on Jan 21st, 2025 (Jie Yang).</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-BR">2025-11-19</a> &mdash; Matei Zaharia<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project Status:
+
+- The Apache Spark 4.1 branch has been cut, and Spark 4.1 has entered the QA
+  stage.
+- Released Apache Spark 4.1.0 preview2 on Sept 28, 2025 and preview3 releases
+  on Oct 29, 2025.
+- Released Apache Spark 4.0.1 on Sept 7, 2025.
+- Released Apache Spark 3.5.7 on Sept 29, 2025.
+- Released Apache Spark Kubernetes Operator 0.5.0 on Oct 3, 2025; 0.6.0 on Nov
+  7, 2025
+- Released Apache Spark Connect Swift Client 0.4.0 on Oct 1, 2025.
+- Two SPIPs were recently accepted by the community:
+  1. JDBC Driver for Spark Connect
+  2. Add llms.txt files to Spark Documentation
+
+Trademarks:
+
+- We engaged with one company that used Spark in a product name.
+
+Latest releases:
+
+- Spark 3.5.7 was released on Sept 29, 2025
+- Spark 4.0.1 was released on Sept 7, 2025
+- Spark 3.5.6 was released on May 29, 2025
+
+Committers and PMC:
+
+- The latest committer was added on July 1, 2025 (Anton Okolnychyi).
+- The latest PMC member was added on Jan 21st, 2025 (Jie Yang).</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-BP">2025-08-20</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>Project Status:
+
+- We released Apache Spark 4.0 on May 23, 2025, and Apache Spark 3.5.6 on May
+  29, 2025.
+- We released Apache Spark Connect Swift Client 0.1.0 on May 8, 2025;
+0.2.0 on May 20, 2025; and 0.3.0 on June 4, 2025.
+- We released Apache Spark Kubernetes Operator 0.2.0 on May 29, 2025, and
+  0.3.0 on June 4, 2025.
+- We implemented release automation using GitHub Actions workflow, with Spark
+  3.5.6 as the first release under this new system.
+- "Apache Spark 4.1 Preview 1" and "Apache Spark Connect Go Client
+0.1.0" have successfully passed; the community is actively preparing the final
+releases.
+- Two SPIPs were recently accepted:
+1. Real-Time Mode in Apache Spark Structured Streaming
+2. Monthly Preview Release
+- The PMC voted to add three new committers: Anton Okolnychyi, Daniel
+  Tenedorio and Anish Shrigondekar
+
+Trademarks:
+
+- No changes since last report.
+
+Latest releases:
+
+- Spark 3.5.6 was released on May 29, 2025
+- Spark 4.0.0 was released on May 23, 2024
+- Spark 3.5.5 was released on Feb 27, 2025
+
+Committers and PMC:
+
+- The latest committer was added on July 1, 2025 (Anton Okolnychyi).
+- The latest PMC member was added on Jan 21st, 2025 (Jie Yang).</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-BI">2025-05-21</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project Status:
+
+- Release candidates for Spark 4.0 have been created and the release has
+  entered the voting stage, currently on release candidate 6.
+- Four SPIPs were recently accepted:
+       1. Introduction of the time data type
+       2. Support for constraints in DataSource V2 (DSv2)
+       3. Declarative pipelines
+       4. Add geospatial types to Spark
+- The following votes have successfully passed:
+       1. Publish an additional Spark distribution with Spark Connect enabled
+       2. Release Apache Spark 3.5.5, deprecating spark.databricks.*
+       configuration
+       3. Retain migration logic for incorrect spark.databricks.*
+       configurations in Spark 4.0.x
+- The PySpark User Guide has been merged into the official Spark documentation
+  site: https://github.com/apache/spark/pull/50589
+
+Latest Releases:
+
+- Spark 3.5.5 was released on February 27, 2025
+- Spark 3.5.4 was released on December 20, 2024
+- Spark 3.4.4 was released on October 27, 2024
+
+Committers and PMC:
+
+- The latest committer was added on Nov 13, 2024 (Bingkun Pan).
+- The latest PMC member was added on Jan 21st, 2025 (Jie Yang).</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-BQ">2025-02-19</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- The Spark 4.0 branch has been cut and has entered the QA stage. We encourage
+  the community to test it out and give feedback to help with the release!
+- We released Spark 3.5.4 on December 20th, 2024.
+- The PMC voted to add one new committer (Bingkun Pan) and one new PMC member
+  (Jie Yang) to the project.
+- The proposal to "Use plain text logs by default" was successfully passed.
+
+Trademarks:
+
+- No changes since last report.
+
+Latest releases:
+
+- Spark 3.5.4 was released on Dec 20, 2024
+- Spark 3.4.4 was released on Oct 27, 2024
+- Spark 4.0 Preview 2 was released on Sept 26, 2024
+
+Committers and PMC:
+
+- The latest committer was added on Nov 13, 2024 (Bingkun Pan).
+- The latest PMC member was added on Jan 21st, 2025 (Jie Yang).</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-BN">2024-11-20</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- The community decided that Apache Spark 3.5 will receive support and
+  maintenance for 31 months, with an end-of-life date set for April 12, 2026.
+- We made four releases since the last report:
+    1) Spark 3.5.2: Released on August 12, 2024.
+    2) Spark 3.5.3: Released on September 24, 2024.
+    3) Spark 4.0 Preview 2: Released on September 26, 2024.
+    4) Spark 3.4.4: Released on October 27, 2024. This will be the final
+       maintenance release for the 3.4 series.
+- A vote to deprecate SparkR in Spark 4.0 has passed.
+- The community is discussing how to manage the graph components of Spark
+  going forward, e.g., deprecating GraphX, or bringing the external
+  GraphFrames project into Apache Spark. We encourage potential contributors
+  to these components to join the discussions on our dev mailing list.
+- The vote for "Document and Feature Preview via GitHub Pages" passed. As a
+  result, documentation for the master development branch of Spark is now
+  available at https://apache.github.io/spark/.
+- The following other votes on development matters passed:
+    1) "Move Variant to Parquet"
+    2) "SPIP: Single-pass Analyzer for Catalyst"
+    3) "Archive Spark Documentations in Apache Archives"
+    4) "Using Github Issues for Spark-Connect-Go _only_ issues"
+
+Trademarks:
+
+- No changes since last report.
+
+Latest releases:
+
+- Spark 3.4.4 was released on Oct 27, 2024.
+- Spark 4.0 Preview 2 was released on Sept 26, 2024.
+- Spark 3.5.3 was released on Sept 24, 2024.
+
+Committers and PMC:
+
+- The latest committer was added on July 15, 2024 (Allison Wang).
+- The latest PMC member was added on Aug 8th, 2024 (Kent Yao).</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-BT">2024-08-21</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We released Apache Spark 4.0 Preview 1 on June 3rd, 2024.
+- We released Apache Spark 3.5.2 on August 10th, 2024.
+- We added three new committers (Allison Wang, Martin Grund, and Haejoon Lee)
+  and one new PMC member (Kent Yao) to the project.
+- The votes for two infrastructure changes have passed: "Move Spark Connect
+  server to built-in package (Client API layer remains external)" and "Allow
+  GitHub Actions runs for contributors' PRs without approvals in
+  apache/spark-connect-go."
+- The votes on "SPIP: Stored Procedures API for Catalogs" and "Differentiate
+  Spark without Spark Connect from Spark Connect" have passed.
+- We clarified our committer guidelines at
+  https://spark.apache.org/committers.html, including reminding committers
+  about leaving sufficient time for reviews.
+
+Trademarks:
+
+- No changes since last report.
+
+Latest releases:
+
+- Spark 3.5.2 was released on August 10, 2024
+- Spark 4.0 Preview 1 was released on June 3, 2024
+- Spark 3.4.3 was released on April 18, 2024
+
+Committers and PMC:
+
+- The latest committers were added on July 10th, 2023 (Allison Wang, Martin
+  Grund, and Haejoon Lee).
+- The latest PMC member was added on Aug 8th, 2024 (Kent Yao).</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-BO">2024-05-15</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We made two patch releases: Spark 3.5.1 on February 28, 2024, and Spark
+  3.4.2 on April 18, 2024.
+- We've started working toward a preview release for Spark 4.0 to give the
+  community an easy way to try the next major version.
+- The votes on "SPIP: Structured Logging Framework for Apache Spark" and "Pure
+  Python Package in PyPI (Spark Connect)" have passed.
+- The votes for two behavior changes have passed: "SPARK-44444: Use ANSI SQL
+  mode by default" and "SPARK-46122: Set
+  spark.sql.legacy.createHiveTableByDefault to false".
+- The community decided that the Spark 4.0 release will drop support for
+  Python 3.8.
+- We started a discussion about the definition of behavior changes that is
+  critical for version upgrades and user experience.
+- We've opened a dedicated repository for the Spark Kubernetes Operator at
+  https://github.com/apache/spark-kubernetes-operator. We added a new version
+  in Apache Spark JIRA for versioning of the Spark operator based on a vote
+  result.
+
+Trademarks:
+
+- No major changes since the last report.
+
+Latest releases:
+- Spark 3.4.3 was released on April 18, 2024
+- Spark 3.5.1 was released on February 28, 2024
+- Spark 3.3.4 was released on December 16, 2023
+
+Committers and PMC:
+
+- The latest committer was added on Oct 2nd, 2023 (Jiaan Geng).
+- The latest PMC members were added on Oct 2nd, 2023 (Yuanjian Li and Yikun
+  Jiang).</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-BQ">2024-02-21</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We made two patch releases: Spark 3.3.4 (EOL release) on December 16, 2023,
+  and Spark 3.4.2 on November 30, 2023.
+- We have begun voting for a Spark 3.5.1 maintenance release.
+- The vote on "SPIP: Structured Streaming - Arbitrary State API v2" has
+  passed.
+- We transitioned to an ASF-hosted analytics service, Matomo. For details,
+  visit https://analytics.apache.org/index.php?module=CoreHome&amp;action=index&amp;date=yesterday&amp;period=day&amp;idSite=40.
+- Arrow Datafusion Comet, a plugin designed to accelerate Spark query
+  execution by leveraging DataFusion and Arrow, is in the process of being
+  open-sourced under the Apache Arrow project. For more information, visit
+  https://github.com/apache/arrow-datafusion-comet.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.3.4 was released on December 16, 2023
+- Spark 3.4.2 was released on November 30, 2023
+- Spark 3.5.0 was released on September 13, 2023
+
+Committers and PMC:
+
+- The latest committer was added on Oct 2nd, 2023 (Jiaan Geng).
+- The latest PMC members were added on Oct 2nd, 2023 (Yuanjian Li and Yikun
+  Jiang).</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-BL">2023-11-15</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We released Apache Spark 3.5 on September 15, a feature release with over
+  1300 patches. This release introduced more scenarios with general
+  availability for Spark Connect, like Scala and Go client, distributed
+  training and inference support, and enhancement of compatibility for
+  Structured streaming. It also introduced new PySpark and SQL functionality,
+  including the SQL IDENTIFIER clause, named argument support for SQL function
+  calls, SQL function support for HyperLogLog approximate aggregations, and
+  Python user-defined table functions; simplified distributed training with
+  DeepSpeed; introduced watermark propagation among operators; and added the
+  dropDuplicatesWithinWatermark operation in Structured Streaming.
+- We made a patch release, Spark 3.3.3, on August 21, 2023.
+- Apache Spark 4.0.0-SNAPSHOT is now ready for Java 21. [SPARK-43831]
+- We have begun planning for a Spark 3.4.2 maintenance release (discussion at
+  https://lists.apache.org/thread/35o2169l5r05k2mknqjy9mztq3ty1btr) and a
+  Spark 3.3.4 EOL branch release (targeting December 16th).
+- The vote on "Updating documentation hosted for EOL and maintenance releases"
+  has passed.
+- The vote on the Spark Project Improvement Proposals (SPIPs) for "State Data
+  Source - Reader" has passed.
+- The PMC has voted to add two new PMC members, Yuanjian Li and Yikun Jiang,
+  and one new committer, Jiaan Geng, to the project.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.5.0 was released on September 13, 2023
+- Spark 3.3.3 was released on August 21, 2023
+- Spark 3.4.1 was released on June 23, 2023
+
+Committers and PMC:
+
+- The latest committer was added on Oct 2nd, 2023 (Jiaan Geng).
+- The latest PMC members were added on Oct 2nd, 2023 (Yuanjian Li and Yikun
+  Jiang).</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-BX">2023-08-16</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We cut the branch Spark 3.5.0 on July 17th 2023. The community is working on
+  bug fixes, tests, stability and documentation.
+- We made a patch release, Spark 3.4.1, on June 23, 2023.
+- We are preparing a Spark 3.3.3 release for later this month
+  (https://lists.apache.org/thread/0kgnw8njjnfgc5nghx60mn7oojvrqwj7).
+- Votes on three Spark Project Improvement Proposals (SPIP) passed: "XML data
+  source support", "Python Data Source API", and "PySpark Test Framework".
+- A vote for "Apache Spark PMC asks Databricks to differentiate its Spark
+  version string" did not pass. This was asking a company to change the string
+  returned by Spark APIs in a product that packages a modified version of
+  Apache Spark.
+- The community decided to release Apache Spark 4.0.0 after the 3.5.0 version.
+  We are tracking issues that may target this release at
+  https://issues.apache.org/jira/browse/SPARK-44111.
+- An official Apache Spark Docker image is now available at
+  https://hub.docker.com/_/spark
+- A new repository, https://github.com/apache/spark-connect-go, was created
+  for the Go client of Spark Connect.
+- The PMC voted to add two new committers to the project, XiDuo You and Peter
+  Toth
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- We released Apache Spark 3.4.1 on June 23, 2023
+- We released Apache Spark 3.2.4 on April 13, 2023
+- We released Spark 3.3.2 on February 17, 2023
+
+Committers and PMC:
+
+- The latest committers were added on July 11th, 2023 (XiDuo You and Peter
+  Toth).
+- The latest PMC members were added on May 10th, 2023 (Chao Sun, Xinrong Meng
+  and Ruifeng Zheng) and May 14th, 2023 (Yuming Wang).</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-BN">2023-05-17</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>Issues for the board:
+
+- None
+
+Project status:
+
+- We released Apache Spark 3.4 on April 13th, a feature release with over 2600
+  patches. This release introduces Python client for Spark Connect, augments
+  Structured Streaming with async progress tracking and Python arbitrary
+  stateful processing, increases Pandas API coverage and provides NumPy input
+  support, simplifies the migration from traditional data warehouses to Apache
+  Spark by improving ANSI compliance and implementing dozens of new built-in
+  functions, and boosts development productivity and debuggability with memory
+  profiling.
+
+- We made two patch releases: Spark 3.2.4 on April 13th and Spark 3.3.2 on
+  February 17th. These have bug fixes to the corresponding branches of the
+  project.
+
+- The PMC voted to add three new PMC members to the project.
+
+- A vote on a Spark Project Improvement Proposals (SPIP) for "Lazy
+  Materialization for Parquet Read Performance Improvement" passed.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.4.0 was released on April 13, 2023
+- Spark 3.2.4 on April 13, 2023
+- Spark 3.3.2 on February 17, 2023
+
+Committers and PMC:
+
+- The latest committer was added on Oct 2nd, 2022 (Yikun Jiang).
+- The latest PMC members were added on May 10th, 2023 (Chao Sun, Xinrong Meng
+  and Ruifeng Zheng).</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-CF">2023-02-15</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>Issues for the board:
+
+- None
+
+Project status:
+
+- We cut the branch Spark 3.4.0 on Jan 24th 2023. The community is working on
+  bug fixes, tests, stability and documentation.
+- We are preparing a Spark 3.3.2 release for later this month
+  (https://lists.apache.org/thread/nwzr3o2cxyyf6sbb37b8yylgcvmbtp16)
+- Starting in Spark 3.4, we are also attaching an SBOM to Apache Spark Maven
+  artifacts [SPARK-41893] in line with other ASF projects.
+- We released Apache Spark 3.2.3, a bug fix release for the 3.2 line, on Nov
+  28th 2022.
+- Votes on the Spark Project Improvement Proposals (SPIPs) for "Asynchronous
+  Offset Management in Structured Streaming" and "Better Spark UI scalability
+  and Driver stability for large applications" passed.
+- The DStream API will be deprecated in the upcoming Apache Spark 3.4 release
+  to focus work on the Structured Streaming APIs. [SPARK-42075]
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.2.3 was released on Nov 28, 2022.
+- Spark 3.3.1 was released on Oct 25, 2022.
+- Spark 3.3.0 was released on June 16, 2022.
+
+Committers and PMC:
+
+- The latest committer was added on Oct 2nd, 2022 (Yikun Jiang).
+- The latest PMC member was added on June 28th, 2022 (Huaxin Gao).</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#attachment-BM">2022-11-16</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We released Apache Spark 3.3.1, a bug fix release for the 3.3 line, on
+  October 25th. We are also currently preparing a Spark 3.2.3 release.
+- The vote on the Spark Project Improvement Proposal (SPIP) for "Support
+  Docker Official Image for Spark" passed. We created a new Github repository
+  https://github.com/apache/spark-docker for building the official Docker
+  image.
+- We decided to drop the Apache Spark Hadoop 2 binary distribution in future
+  releases.
+- We added a new committer, Yikun Jiang, in October 2022.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.3.1 was released on Oct 25, 2022.
+- Spark 3.3.0 was released on June 16, 2022.
+- Spark 3.2.2 was released on July 17, 2022.
+
+Committers and PMC:
+
+- The latest committer was added on Oct 2nd, 2022 (Yikun Jiang).
+- The latest PMC member was added on June 28th, 2022 (Huaxin Gao).</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-BM">2022-08-17</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- Apache Spark was honored to receive the SIGMOD System Award this year, given
+  by SIGMOD (the ACM&rsquo;s data management research organization) to impactful
+  real-world and research systems.
+
+- We recently released Apache Spark 3.3.0, a feature release that improves
+  join query performance via Bloom filters, increases the Pandas API coverage
+  with the support of popular Pandas features such as datetime.timedelta and
+  merge_asof, simplifies the migration from traditional data warehouses by
+  improving ANSI SQL compliance and supporting dozens of new built-in
+  functions, boosts development productivity with better error handling,
+  autocompletion, performance, and profiling.
+
+- We released Apache Spark 3.2.2, a bug fix release for the 3.2 line, on July
+  17th.
+
+- A Spark Project Improvement Proposal (SPIP) for Spark Connect was voted on
+  and accepted. Spark Connect introduces a lightweight client/server API for
+  Spark (https://issues.apache.org/jira/browse/SPARK-39375) that will allow
+  applications to submit work to a remote Spark cluster without running the
+  heavyweight query planner in the client, and will also decouple the client
+  version from the server version, making it possible to update Spark without
+  updating all the applications.
+
+- The community started a major effort to improve Structured Streaming
+  performance, usability, APIs, and connectors called Project Lightspeed
+  (https://issues.apache.org/jira/browse/SPARK-40025), and we'd love to get
+  feedback and contributions on that.
+
+- We added three new PMC members, Huaxin Gao, Gengliang Wang and Maxim Gekk,
+  in June 2022.
+
+- We added a new committer, Xinrong Meng, in July 2022.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.3.0 was released on June 16, 2022.
+- Spark 3.2.2 was released on July 17, 2022.
+- Spark 3.1.3 was released on February 18, 2022.
+
+Committers and PMC:
+
+- The latest committer was added on July 13rd, 2022 (Xinrong Meng).
+- The latest PMC member was added on June 28th, 2022 (Huaxin Gao).</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-BG">2022-05-18</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We are working on the release of Spark 3.3.0, with Release Candidate 1
+  currently being tested and voted on.
+
+- We released Apache Spark 3.1.3, a bug fix release for the 3.1 line, on
+  February 18th.
+
+- We started publishing official Docker images of Apache Spark in Docker Hub,
+  at https://hub.docker.com/r/apache/spark/tags
+
+- A new Spark Project Improvement Proposal (SPIP) is being discussed by the
+  community to offer a simplified API for deep learning inference, including
+  built-in integration with popular libraries such as Tensorflow, PyTorch and
+  HuggingFace (https://issues.apache.org/jira/browse/SPARK-38648).
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.1.3 was released on February 18, 2022.
+- Spark 3.2.1 was released on January 26, 2022.
+- Spark 3.2.0 was released on October 13, 2021.
+
+Committers and PMC:
+- The latest committer was added on Dec 20th, 2021 (Yuanjian Li).
+- The latest PMC member was added on Jan 19th, 2022 (Maciej Szymkiewicz).</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-BJ">2022-02-16</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We released Apache Spark 3.2.1, a bug fix release for the 3.2 line,
+  in January.
+
+- Two Spark Project Improvement Proposals (SPIPs) were recently accepted
+  by the community: Support for Customized Kubernetes Schedulers
+  (https://issues.apache.org/jira/browse/SPARK-36057) and Storage Partitioned
+  Join for Data Source V2 (https://issues.apache.org/jira/browse/SPARK-37375).
+
+- We've migrated away from Spark&rsquo;s original Jenkins CI/CD infrastructure,
+  which was graciously hosted by UC Berkeley on their clusters since 2013,
+  to GitHub Actions. Thanks to the Berkeley EECS department for hosting this
+  for so long!
+
+- We added a new committer, Yuanjian Li, in December 2021.
+
+- We added a new PMC member, Maciej Szymkiewicz, in January 2022.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.2.1 was released on January 26, 2022.
+- Spark 3.2.0 was released on October 13, 2021.
+- Spark 3.1.2 was released on June 23rd, 2021.
+
+Committers and PMC:
+
+- The latest committer was added on Dec 20th, 2021 (Yuanjian Li).
+- The latest PMC member was added on Jan 19th, 2022 (Maciej Szymkiewicz).</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-BR">2021-11-17</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We recently released Apache Spark 3.2, a feature release that adds several
+  large pieces of functionality. Spark 3.2 includes a new Pandas API for
+  Apache Spark based on the Koalas project, a new push-based shuffle
+  implementation, a more efficient RocksDB state store for Structured
+  Streaming, native support for session windows, error message
+  standardization, and significant improvements to Spark SQL, such as the use
+  of adaptive query execution by default and GA status for the ANSI SQL
+  language mode.
+
+- We updated the Apache Spark homepage with a new design and more examples.
+
+- We added a new committer, Chao Sun, in November 2021.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.2.0 was released on October 13, 2021.
+- Spark 3.1.2 was released on June 23rd, 2021.
+- Spark 3.0.3 was released on June 1st, 2021.
+
+Committers and PMC:
+
+- The latest committer was added on November 5th, 2021 (Chao Sun).
+- The latest PMC member was added on June 20th, 2021 (Kousuke Saruta).</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-BL">2021-08-18</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python, R and SQL as well as a rich set
+of libraries including stream processing, machine learning, and graph
+analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We made a number of maintenance releases in the past three months. We
+  released Apache Spark 3.1.2 and 3.0.3 in June as maintenance releases for
+  the 3.x branches. We also released Apache Spark 2.4.8 on May 17 as a bug fix
+  release for the Spark 2.x line. This may be the last release on 2.x unless
+  major new bugs are found.
+
+- We added three PMC members: Liang-Chi Hsieh, Kousuke Saruta and Takeshi
+  Yamamuro.
+
+- We are working on Spark 3.2.0 as our next release, with a release candidate
+  likely to come soon. Spark 3.2 includes a new Pandas API for Apache Spark
+  based on the Koalas project, a new push-based shuffle implementation, a more
+  efficient RocksDB state store for Structured Streaming, native support for
+  session windows, error message standardization, and significant improvements
+  to Spark SQL, such as the use of adaptive query execution by default.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 3.1.2 was released on June 23rd, 2021.
+- Spark 3.0.3 was released on June 1st, 2021.
+- Spark 2.4.8 was released on May 17th, 2021.
+
+Committers and PMC:
+
+- The latest committers were added on March 11th, 2021 (Atilla Zsolt Piros,
+  Gabor Somogyi, Kent Yao, Maciej Szymkiewicz, Max Gekk, and Yi Wu).
+- The latest PMC member was added on June 20th, 2021 (Kousuke Saruta).</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-BJ">2021-05-19</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python, R and SQL as well as a rich set
+of libraries including stream processing, machine learning, and graph
+analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- We released Apache Spark 3.1.1, a major update release for the 3.x branch,
+  on March 2nd. This release includes updates to improve Python usability and
+  error messages, ANSI SQL support, the streaming UI, and support for running
+  Apache Spark on Kubernetes, which is now marked GA. Overall, the release
+  includes about 1500 patches.
+
+- We are voting on an Apache Spark 2.4.8 bug fix release with for the Spark
+  2.x line. This may be the last release on 2.x.
+
+- We added six new committers in the past three months: Atilla Zsolt Piros,
+  Gabor Somogyi, Kent Yao, Maciej Szymkiewicz, Max Gekk, and Yi Wu.
+
+- Several SPIPs (major project improvement proposals) were voted on and
+  accepted, including adding a Function Catalog in Spark SQL and adding a
+  Pandas API layer for PySpark based on the Koalas project. We've also started
+  an effort to standardize error message reporting in Apache Spark
+  (https://spark.apache.org/error-message-guidelines.html) so that messages
+   are easier to understand and users can quickly figure out how to fix them.
+
+Trademarks:
+
+- The PMC is investigating a potential trademark issue with another open
+  source project.
+
+Latest releases:
+
+- Spark 3.1.1 was released on March 2nd, 2021.
+- Spark 3.0.2 was released on February 19th, 2021.
+- Spark 2.4.7 was released on September 12th, 2020.
+
+Committers and PMC:
+
+- The latest committers were added on March 18th, 2021 (Atilla Zsolt Piros,
+  Gabor Somogyi, Kent Yao, Maciej Szymkiewicz, Max Gekk, and Yi Wu).
+- The latest PMC member was added on Sept 4th, 2019 (Dongjoon Hyun). The PMC
+  has been discussing some new PMC candidates.</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-BI">2021-02-17</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python, R and SQL as well as a rich set
+of libraries including stream processing, machine learning, and graph
+analytics.
+
+Project status:
+
+- The community is close to finalizing the first Spark 3.1.x release, which
+  will be Spark 3.1.1. There was a problem with our release candidate
+  packaging scripts that caused us to accidentally publish a 3.1.0 version to
+  Maven Central before it was ready, so we&rsquo;ve deleted that and will not use
+  that version number. Several release candidates for 3.1.1 have gone out to
+  the dev mailing list and we&rsquo;re tracking the last remaining issues.
+
+- Several proposals for significant new features are being discussed on the
+  dev mailing list, including a function catalog for Spark SQL, a RocksDB
+  based state store for streaming applications, and public APIs for creating
+  user-defined types (UDTs) in Spark SQL. We would welcome feedback on these
+  from interested community members.
+
+Trademarks:
+
+- No changes since the last report.
+
+Latest releases:
+
+- Spark 2.4.7 was released on September 12th, 2020.
+- Spark 3.0.1 was released on September 8th, 2020.
+- Spark 3.0.0 was released on June 18th, 2020.
+
+Committers and PMC:
+
+- The latest committers were added on July 14th, 2020 (Huaxin Gao, Jungtaek
+  Lim and Dilip Biswal).
+- The latest PMC member was added on Sept 4th, 2019 (Dongjoon Hyun). The PMC
+  has been discussing some new PMC candidates.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-BH">2020-11-18</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python, R and SQL as well as a rich set
+of libraries including stream processing, machine learning, and graph
+analytics.
+
+Project status:
+
+- We released Apache Spark 3.0.1 on September 8th and Spark 2.4.7 on September
+  12th as maintenance releases with bug fixes to these two branches.
+
+- The community is working on a number of new features in the Spark 3.x
+  branch, including improved data catalog APIs, a push-based shuffle
+  implementation, and better error messages to make Spark applications easier
+  to debug. The largest changes have are being discussed as SPIPs on our
+  mailing list.
+
+- The new policy about -1 votes on patches that we discussed in the last
+  report is now agreed-upon and active, although some developers in one area
+  of the project are still concerned that their feedback was inappropriately
+  ignored in the past. The PMC is communicating with those developers to
+  understand their perspectives and suggest ways to improve trust and
+  collaboration (including clarifying what behavior is acceptable).
+
+Trademarks:
+
+- One of the two software projects we reached out to July to change its name
+  due to a trademark issue has changed it. We are still waiting for a reply
+  from the other one, but it may be that development there has stopped.
+
+Latest releases:
+
+- Spark 2.4.7 was released on September 12th, 2020.
+- Spark 3.0.1 was released on September 8th, 2020.
+- Spark 3.0.0 was released on June 18th, 2020.
+
+Committers and PMC:
+
+- The latest committers were added on July 14th, 2020 (Huaxin Gao, Jungtaek
+  Lim and Dilip Biswal).
+- The latest PMC member was added on Sept 4th, 2019 (Dongjoon Hyun). The PMC
+  has been discussing some new candidates to add as PMC members.</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-BK">2020-08-19</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python, R and SQL as well as a rich set
+of libraries including stream processing, machine learning, and graph
+analytics.
+
+Project status:
+
+- We released Apache Spark 3.0.0 on June 18th, 2020. This was our largest
+  release yet, containing over 3400 patches from the community, including
+  significant improvements to SQL performance, ANSI SQL compatibility, Python
+  APIs, SparkR performance, error reporting and monitoring tools. This release
+  also enhances Spark&rsquo;s job scheduler to support adaptive execution (changing
+  query plans at runtime to reduce the need for configuration) and workloads
+  that need hardware accelerators.
+
+- We released Apache Spark 2.4.6 on June 5th with bug fixes to the 2.4 line.
+
+- The community is working on 3.0.1 and 2.4.7 releases with bug fixes to these
+  two branches. There are also a number of new SPIPs proposed for large
+  features to add after 3.0, including Kotlin language support, push-based
+  shuffle, materialized views and support for views in the catalog API. These
+  discussions can be followed on our dev list and the corresponding JIRAs.
+
+- We had a discussion on the dev list about clarifying our process for
+  handling -1 votes on patches, as well as other discussions on the
+  development process. The PMC is working to resolve any misunderstandings and
+  make the expected process around consensus and -1 votes clear on our
+  website.
+
+- We added three new committers to the project since the last report: Huaxin
+  Gao, Jungtaek Lim and Dilip Biswal.
+
+Trademarks:
+
+- We engaged with three organizations that had created products with &ldquo;Spark&rdquo;
+  in the name to ask them to follow our trademark guidelines.
+
+Latest releases:
+
+- Spark 3.0.0 was released on June 18th, 2020.
+- Spark 2.4.6 was released on June 5th, 2020.
+- Spark 2.4.5 was released on Feb 8th, 2020.
+
+Committers and PMC:
+
+- The latest PMC member was added on Sept 4th, 2019 (Dongjoon Hyun).
+- The latest committers were added on July 7th, 2020 (Huaxin Gao, Jungtaek Lim
+  and Dilip Biswal).</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-BJ">2020-05-20</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- Progress is continuing on the upcoming Apache Spark 3.0 release, with the
+  first votes on release candidates. This will be a major release with various
+  API and SQL language updates, so we&rsquo;ve tried to solicit broad input on it
+  through two preview releases and a lot of JIRA and mailing list discussion.
+
+- The community is also voting on a release candidate for Apache Spark 2.4.6,
+  bringing bug fixes to the 2.4 branch.
+
+Trademarks:
+
+- Nothing new to report in the past 3 months.
+
+Latest releases:
+
+- Spark 2.4.5 was released on Feb 8th, 2020.
+- Spark 3.0.0-preview2 was released on Dec 23rd, 2019.
+- Spark 3.0.0-preview was released on Nov 6th, 2019.
+- Spark 2.3.4 was released on Sept 9th, 2019.
+
+Committers and PMC:
+
+- The latest PMC member was added on Sept 4th, 2019 (Dongjoon Hyun).
+- The latest committer was added on Sept 9th, 2019 (Weichen Xu).</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-BI">2020-02-19</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including SQL, streaming, machine learning, and graph analytics.
+
+Project status:
+
+- We have cut a release branch for Apache Spark 3.0, which is now undergoing
+  testing and bug fixes before the final release. In December, we also
+  published a new preview release for the 3.0 branch that the community can
+  use to test and give feedback:
+  https://spark.apache.org/news/spark-3.0.0-preview2.html. Spark 3.0 includes
+  a range of new features and dependency upgrades (e.g. Java 11) but remains
+  largely compatible with Spark&rsquo;s current API.
+
+- We published Apache Spark 2.4.5 on Feb 8th with bug fixes for the 2.4 branch
+  of Spark.
+
+Trademarks:
+
+- Nothing new to report in the past 3 months.
+
+Latest releases:
+
+- Spark 2.4.5 was released on Feb 8th, 2020.
+- Spark 3.0.0-preview2 was released on Dec 23rd, 2019.
+- Spark 3.0.0-preview was released on Nov 6th, 2019.
+- Spark 2.3.4 was released on Sept 9th, 2019.
+
+Committers and PMC:
+
+- The latest PMC member was added on Sept 4th, 2019 (Dongjoon Hyun).
+- The latest committer was added on Sept 9th, 2019 (Weichen Xu). We also added
+  Ryan Blue, L.C. Hsieh, Gengliang Wang, Yuming Wang and Ruifeng Zheng as
+  committers in the past three months.</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#attachment-BH">2019-11-20</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We made the first preview release for Spark 3.0 on November 6th. This
+  release aims to get early feedback on the new APIs and functionality
+  targeting Spark 3.0 but does not provide API or stability guarantees. We
+  encourage community members to try this release and leave feedback on JIRA.
+  More info about what's new and how to report feedback is available at
+  https://spark.apache.org/news/spark-3.0.0-preview.html.
+
+- We published Spark 2.4.4. and 2.3.4 as maintenance releases to fix bugs in
+  the 2.4 and 2.3 branches.
+
+- We added one new PMC members and six committers to the project in August and
+  September, covering data sources, streaming, SQL, ML and other components of
+  the project.
+
+Trademarks:
+
+- Nothing new to report since August.
+
+Latest releases:
+
+- Spark 3.0.0-preview was released on Nov 6th, 2019.
+- Spark 2.3.4 was released on Sept 9th, 2019.
+- Spark 2.4.4 was released on Sept 1st, 2019.
+
+Committers and PMC:
+
+- The latest PMC member was added on Sept 4th, 2019 (Dongjoon Hyun).
+- The latest committer was added on Sept 9th, 2019 (Weichen Xu). We also added
+  Ryan Blue, L.C. Hsieh, Gengliang Wang, Yuming Wang and Ruifeng Zheng as
+  committers in the past three months.</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-BI">2019-08-21</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- Discussions are continuing about our next feature release, which will
+  likely be Spark 3.0, on the dev and user mailing lists. Some key questions
+  include whether to remove various deprecated APIs, and which minimum
+  versions of Java, Python, Scala, etc to support. There are also a number of
+  new features targeting this release. We encourage everyone in the community
+  to give feedback on these discussions through our mailing lists or issue
+  tracker.
+
+- We announced a plan to stop supporting Python 2 in our next major release,
+  as many other projects in the Python ecosystem are now dropping support
+  (https://spark.apache.org/news/plan-for-dropping-python-2-support.html).
+
+- We added three new PMC members to the project in May: Takuya Ueshin, Jerry
+  Shao and Hyukjin Kwon.
+
+- There is an ongoing discussion on our dev list about whether to consider
+  adding project committers who do not contribute to the code or docs in the
+  project, and what the criteria might be for those. (Note that the project
+  does solicit committers who only work on docs, and has also added
+  committers who work on other tasks, like maintaining our build
+  infrastructure).
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- May 8th, 2018: Spark 2.4.3
+- April 23rd, 2019: Spark 2.4.2
+- March 31st, 2019: Spark 2.4.1
+- Feb 15th, 2019: Spark 2.3.3
+
+Committers and PMC:
+
+- The latest committer was added on Jan 29th, 2019 (Jose Torres).
+- The latest PMC members were added on May 21st, 2019 (Jerry Shao, Takuya
+  Ueshin and Hyukjin Kwon).</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-BI">2019-05-15</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We released Apache Spark 2.4.1, 2.4.2, 2.4.3 and 2.3.3 in the past three
+  months to fix issues in the 2.3 and 2.4 branches.
+
+- Discussions are under way about the next feature release, which will likely
+  be Spark 3.0, on our dev and user mailing lists. Some key questions include
+  whether to remove various deprecated APIs, and which minimum versions of
+  Java, Python, Scala, etc to support. There are also a number of new features
+  targeting this release. We encourage everyone in the community to give
+  feedback on these discussions through our mailing lists or issue tracker.
+
+- Several Spark Project Improvement Proposals (SPIPs) for major additions to
+  Spark were discussed on the dev list in the past three months. These include
+  support for passing columnar data efficiently into external engines (e.g.
+  GPU based libraries), accelerator-aware scheduling, new data source APIs,
+  and .NET support. Some of these have been accepted (e.g. table metadata and
+  accelerator aware scheduling proposals) while others are still being
+  discussed.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- May 8th, 2018: Spark 2.4.3
+- April 23rd, 2019: Spark 2.4.2
+- March 31st, 2019: Spark 2.4.1
+- Feb 15th, 2019: Spark 2.3.3
+
+Committers and PMC:
+
+- The latest committer was added on Jan 29th, 2019 (Jose Torres).
+- The latest PMC member was added on Jan 12th, 2018 (Xiao Li).</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-BM">2019-02-20</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We created a security@spark.apache.org mailing list to discuss security
+  reports in their own location (as was also suggested by Mark T in November).
+
+- We released Apache Spark 2.2.3 on January 11th to fix bugs in the 2.2
+  branch. The community is also currently voting on a 2.3.3 release to bring
+  recent fixes to the Spark 2.3 branch.
+
+- Discussions are under way about the next feature release, which will likely
+  be Spark 3.0, on our dev and user mailing lists. Some key questions include
+  whether to remove various deprecated APIs, and which minimum versions of
+  Java, Python, Scala, etc to support. There are also a number of new features
+  targeting this release. We encourage everyone in the community to give
+  feedback on these discussions through our mailing lists or issue tracker.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- Jan 11th, 2019: Spark 2.2.3
+- Nov 2nd, 2018: Spark 2.4.0
+- Sept 24th, 2018: Spark 2.3.2
+
+Committers and PMC:
+
+- There was a discussion about lack of available review bandwidth for
+  streaming on the dev list in January. The PMC discussed this and added a new
+  committer, Jose Torres, specializing in streaming. We are continuing to look
+  for other contributors who'd make good committers here and in other areas.
+- The latest committer was added on January 29th, 2019 (Jose Torres).
+- The latest PMC member was added on January 12th, 2018 (Xiao Li).</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-BI">2018-11-21</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We released Apache Spark 2.4.0 on Nov 2nd, 2018 as our newest feature
+  release. Spark 2.4's features include a barrier execution mode for machine
+  learning computations, higher-order functions in Spark SQL, pivot syntax in
+  SQL, a built-in Apache Avro data source, Kubernetes improvements, and
+  experimental support for Scala 2.12, as well as multiple smaller features
+  and fixes. The release notes are available at
+  http://spark.apache.org/releases/spark-release-2-4-0.html.
+
+- We released Apache Spark 2.3.2 on Sept 24th, 2018 as a bug fix release for
+  the 2.3 branch.
+
+- Multiple dev discussions are under way about the next feature release, which
+  is likely to be Spark 3.0, on our dev and user mailing lists. Some of the
+  key questions are which JDK, Scala, Python, R, Hadoop and Hive versions to
+  support, as well as whether to remove certain deprecated APIs. We encourage
+  everyone in the community to give feedback on these discussions through the
+  mailing lists and JIRA.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- Nov 2nd, 2018: Spark 2.4.0
+- Sept 24th, 2018: Spark 2.3.2
+- July 2nd, 2018: Spark 2.2.2
+
+Committers and PMC:
+
+- We added six new committers since the last report: Shane Knapp, Dongjoon
+  Hyun, Kazuaki Ishizaki, Xingbo Jiang, Yinan Li, and Takeshi Yamamuro.
+- The latest committer was added on Sept 18th, 2018 (Kazuaki Ishizaki).
+- The latest PMC member was added on Jan 12th, 2018 (Xiao Li).</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-BD">2018-08-15</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We made several maintenance releases in the past 3 months,
+  including Spark 2.3.1, 2.2.2 and 2.1.3, to fix various bugs and
+  issues present in the past 3 released branches.
+
+- We are close to cutting a branch for Spark 2.4, which will then
+  go through community testing over the next several weeks to
+  produce RCs and then the final release. Spark 2.4 is slated to
+  include several large features, such as a barrier execution mode
+  to run MPI-like machine learning computations in Spark jobs,
+  various improvements to the millisecond-latency Continuous
+  Processing mode for Structured Streaming, and much of the
+  groundwork for supporting Scala 2.12.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- July 2nd, 2018: Spark 2.2.2
+- June 29th, 2018: Spark 2.1.3
+- June 8th, 2018: Spark 2.3.1
+
+Committers and PMC:
+
+- The latest committer was added on March 22nd, 2018
+  (Zhenhua Wang).
+- The latest PMC member was added on Jan 12th, 2017
+  (Xiao Li).</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#attachment-BH">2018-05-16</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We released Apache Spark 2.3.0 on Feb 28, 2018. This includes Kubernetes
+  support, a low-latency continuous processing mode for streaming
+  applications that wish to prioritize latency, faster UDFs in Python using
+  data batching through Apache Arrow, images as a data type in the machine
+  learning library, and various other new features.
+
+- Work is under way to expand several of these new features in upcoming minor
+  and major releases.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- February 28, 2018: Spark 2.3.0
+- December 1, 2017: Spark 2.2.1
+- October 9, 2017: Spark 2.1.2
+- July 11, 2017: Spark 2.2.0
+
+Committers and PMC:
+
+- We added seven committers in the past three months: Anirudh Ramanathan,
+  Bryan Cutler, Cody Koeninger, Erik Erlandson, Matt Cheah, Seth Hendrickson
+  and Zhenhua Wang.
+- The latest committer was added on March 28th, 2018 (Zhenhua Wang).
+- The latest PMC member was added on Jan 12th, 2017 (Xiao Li).</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#attachment-BG">2018-02-21</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We released Spark 2.2.1 on Dec 1st, 2017, with bug fixes for the 2.2 line.
+  Like our previous release, this was done by a new release manager.
+
+- Voting is under way for Spark 2.3.0, a new feature release that will bring
+  several large features. These includes support for running on Kubernetes
+  (now merged into the project), a low-latency continuous processing mode
+  for applications that wish to prioritize latency, faster UDFs in Python
+  using data batching through Apache Arrow, images as a data type for the ML
+  library, and other features. All of the larger features mentioned here
+  were proposed as SPIPs in the last year.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- December 1, 2017: Spark 2.2.1
+- October 9, 2017: Spark 2.1.2
+- July 11, 2017: Spark 2.2.0
+- May 2, 2017: Spark 2.1.1
+
+Committers and PMC:
+
+- We added four new PMC members in the past three months
+  (Felix Cheung, Holden Karau, Yanbo Liang and Xiao Li).
+- The latest committer was added on September 22nd, 2017
+  (Tejas Patil). Votes are currently in progress for
+  several other new committers based on recent contributions.</pre>
+<h3 id="2017-11-15"><a href="2017/board_minutes_2017_11_15.html#attachment-BL">2017-11-15</a> &mdash; Matei Alexandru Zaharia<a class="headerlink" href="#2017-11-15" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We released Spark 2.1.2 on October 9th, with maintenance fixes for the
+  2.1 branch. This release was also managed by a new committer, which
+  helped expose issues in the release process documentation that we've
+  fixed. We are encouraging more new committers to be RMs for upcoming
+  releases like 2.2.1.
+
+- The Spark Summit Europe conference ran in Dublin, Ireland in October
+  with 1200 attendees.
+
+- Work is under way to merge Kubernetes support for Spark 2.3.0, with
+  the first major pull requisition having undergone a bunch of review
+  and getting close to merging. We need one more pull request beyond
+  this for basic support.
+
+SPIPs:
+
+We wanted to give an update on Spark Project Improvement Proposals
+(SPIPs), the process we started to formally propose large changes
+before having an implementation. Since we started the process, there
+have been seven SPIPs proposed on the mailing list with the first in
+June 2017, which are all listed in JIRA at https://s.apache.org/aMHI.
+So far all the voted-on SPIPs have been accepted and it seems that
+the discussions, both on our dev list and in JIRA, have been useful,
+resulting in design changes, better understanding of each idea, and
+feedback from a wide range of Spark users. Some of the major SPIPs
+discussed and accepted include Kubernetes support, images as a
+first-class data type in MLlib, updates to the data source API, and low
+latency continuous processing. We will continue to encourage people to
+write large proposals as SPIPs to generate this type of discussion.
+
+Trademarks:
+
+- No large issues to report in the past 3 months.
+
+Latest releases:
+
+- October 9, 2017: Spark 2.1.2
+- July 11, 2017: Spark 2.2.0
+- May 02, 2017: Spark 2.1.1
+- Dec 28, 2016: Spark 2.1.0
+
+Committers and PMC:
+
+- The latest committer was added on September 22nd, 2017
+  (Tejas Patil).
+- The latest PMC members were added on June 16th, 2017
+  (six new PMC members from the existing committers).</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-BJ">2017-08-16</a> &mdash; Matei Zaharia<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We released Spark 2.2.0 on July 11th, with 1100 patches since the last
+  version. Some of the major features released included a cost-based
+  optimizer for Spark SQL / DataFrames, PyPI publishing, and the first
+  production version of the new high-level Structured Streaming API (losing
+  the experimental tag because the API has been stabilized). More details
+  are available at spark.apache.org/releases/spark-release-2-2-0.html.
+
+- The Spark Summit conference ran in June with around 3000 attendees.
+
+- Work is under way for Spark 2.3.0, with the current target to close the
+  new feature window and cut a release branch in November 2017.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- July 11, 2017: Spark 2.2.0
+- May 02, 2017: Spark 2.1.1
+- Dec 28, 2016: Spark 2.1.0
+- Nov 14, 2016: Spark 2.0.2
+- Nov 07, 2016: Spark 1.6.3
+
+Committers and PMC:
+
+- The last committers were added on July 27th, 2017
+  (Hyukjin Kwon and Sameer Agarwal).
+- The last PMC members were added on June 16th, 2017
+  (six new PMC members from the existing committers).</pre>
+<h3 id="2017-05-17"><a href="2017/board_minutes_2017_05_17.html#attachment-BF">2017-05-17</a> &mdash; Matei Zaharia<a class="headerlink" href="#2017-05-17" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- The community released Apache Spark 2.1.1 on May 2nd with bug fixes for
+  the 2.1 branch, and is currently voting on release candidates for 2.2.0.
+  This will be a major release with various new features in streaming, SQL,
+  machine learning and other areas of the project.
+
+- We have been making significant progress to publish Apache Spark in the
+  standard Python and R package repositories (PyPI and CRAN) to make it
+  easier to install for Python and R users.
+
+- We documented the "Spark improvement proposal" process described
+  earlier for proposing large new features on our website. It just defines
+  a short format for writing a proposal and a JIRA tag to place on such
+  documents so that they can all be viewed in one place.
+
+- The Spark Summit East conference ran Feb 7th to 9th in Boston.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- May 02, 2017: Spark 2.1.1
+- Dec 28, 2016: Spark 2.1.0
+- Nov 14, 2016: Spark 2.0.2
+- Nov 07, 2016: Spark 1.6.3
+- Oct 03, 2016: Spark 2.0.1
+- July 26, 2016: Spark 2.0.0
+
+Committers and PMC:
+
+- The last committer was added on Feb 10th, 2017
+(Takuya Ueshin).
+- The last PMC members were added on Feb 15th, 2016
+(Joseph Bradley, Sean Owen and Yin Huai).</pre>
+<h3 id="2017-02-27"><a href="2017/board_minutes_2017_02_27.html#attachment-BF">2017-02-27</a> &mdash; Matei Zaharia<a class="headerlink" href="#2017-02-27" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- The community released Apache Spark 2.1.0 on Dec 28 with a variety of
+  new features for the 2.x branch, most notably improvements to streaming
+  (http://spark.apache.org/releases/spark-release-2-1-0.html). We also
+  released Spark 2.0.2 on Nov 14 with bug fixes for the 2.0.x branch.
+
+- The Spark Summit East conference is running Feb 7th to 9th in Boston.
+
+- We've continued discussions on a "Spark Improvement Proposal" format
+  for documenting large proposed additions over the dev list and are
+  converging towards a final version that we want to post on our website.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+- Dec 28, 2016: Spark 2.1.0
+- Nov 14, 2016: Spark 2.0.2
+- Nov 07, 2016: Spark 1.6.3
+- Oct 03, 2016: Spark 2.0.1
+- July 26, 2016: Spark 2.0.0
+
+Committers and PMC:
+
+- The last committers were added on Jan 24th, 2017
+  (Holden Karau and Burak Yavuz).
+- The last PMC members were added on Feb 15th, 2016
+  (Joseph Bradley, Sean Owen and Yin Huai).</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#attachment-AZ">2016-11-16</a> &mdash; Matei Zaharia<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- The community released Apache Spark 2.0.1 on October 3rd, 2016 as the
+  first patch release for the 2.x branch. We also released Spark 1.6.3 on
+  November 7th to continue patching the 1.x branch, and started voting on
+  release candidates for Spark 2.0.2 with more patches to 2.x.
+
+- The Spark Summit Europe conference ran in Brussels on Oct 25-27 with
+  around 1000 attendees, including presentations on new use cases at
+  Microsoft and Facebook.
+
+- There've been several discussions on the dev list about making the
+  development process easier to follow and giving feedback to contributors
+  faster. One concrete thing we'd like to implement is a process to post
+  "improvement proposals" scoping a new feature before detailed design
+  begins, so that developers can solicit feedback from users earlier, and
+  users can easily see the project's high-level roadmap in one place. The
+  most recent writeup on this is at https://s.apache.org/ndAX and seems to
+  be welcomed by contributors who've used a similar process in other ASF
+  projects. Other things that contributors are working on are creating a
+  template for design documents and cleaning up JIRA.
+
+Trademarks:
+
+- We are continuing engagement with various organizations.
+
+Latest releases:
+
+Nov 07, 2016: Spark 1.6.3
+Oct 03, 2016: Spark 2.0.1
+July 26, 2016: Spark 2.0.0
+June 25, 2016: Spark 1.6.2
+May 26, 2016: Spark 2.0.0-preview
+
+Committers and PMC:
+
+The last committer was added on Sept 29th, 2016 (Xiao Li).
+
+The last PMC members were added on Feb 15th, 2016
+(Joseph Bradley, Sean Owen and Yin Huai).</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#attachment-BG">2016-08-17</a> &mdash; Matei Zaharia<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- The community released Apache Spark 2.0 on July 26, 2016. This was a big
+  release after nearly 6 months of effort that puts in a strong foundation
+  for the 2.x line and multiple new components while remaining highly
+  compatible with 1.x. Full release notes are available at
+  http://spark.apache.org/releases/spark-release-2-0-0.html.
+
+Trademarks:
+
+- We posted a trademarks summary page on our website after discussions
+  with trademarks@ to let users easily find out about the trademark policy:
+  https://spark.apache.org/trademarks.html
+
+- We are continuing engagement with the organizations discussed earlier.
+
+Latest releases:
+
+- July 26, 2016: Spark 2.0.0
+- June 25, 2016: Spark 1.6.2
+- May 26, 2016: Spark 2.0.0-preview
+- Mar 9, 2016: Spark 1.6.1
+- Jan 4, 2016: Spark 1.6.0
+
+Committers and PMC:
+
+The last committer was added on August 6th, 2016 (Felix Cheung).
+
+The last PMC members were added Feb 15th, 2016
+(Joseph Bradley, Sean Owen and Yin Huai)</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#attachment-AX">2016-07-20</a> &mdash; Matei Zaharia<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- The community is continuing to make progress towards its 2.0 release,
+  with two release candidates having been posted. Apache Spark 2.0 is a major
+  release that includes a new SQL-based high-level streaming API, machine
+  learning model persistence, and cleanup of Spark's dependencies and internal
+  APIs. The full list of changes in Apache Spark 2.0 is available at
+  http://s.apache.org/spark-2.0-features.
+
+- We released Spark 1.6.2 on June 26th, with bug fixes for the 1.6
+  branch of the project (https://s.apache.org/spark-1.6.2).
+
+Trademarks:
+
+- The PMC is engaging with several third parties that are using Spark
+  in product names, branding, etc.
+
+- The PMC has been working on a page about trademark guidelines to include
+  on the Spark website (https://s.apache.org/PaXo). It would be great to get
+  feedback on this (several board members said it was a good idea to create
+  such a page after we suggested it in our last report).
+
+- To make the project's association with the ASF clearer in news articles
+  and corporate materials, we have updated its logo to include "Apache":
+  https://s.apache.org/Jf7J. This change is live on the website, JIRA, etc.
+
+Latest releases:
+
+June 25, 2016: Spark 1.6.2
+May 26, 2016: Spark 2.0.0-preview
+Mar 9, 2016: Spark 1.6.1
+Jan 4, 2016: Spark 1.6.0
+Nov 09, 2015: Spark 1.5.2
+
+Committers and PMC:
+
+The last committer was added on May 23, 2016 (Yanbo Liang).
+
+The last PMC members were added Feb 15, 2016
+(Joseph Bradley, Sean Owen and Yin Huai)</pre>
+<h3 id="2016-06-15"><a href="2016/board_minutes_2016_06_15.html#attachment-AZ">2016-06-15</a> &mdash; Matei Zaharia<a class="headerlink" href="#2016-06-15" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- The community is in the QA phase for Spark 2.0, our second major
+  version since joining Apache. There are a large number of additions in
+  2.0, including a higher-level streaming API, improved runtime code
+  generation for SQL, and improved export for machine learning models.
+  We are also using this release to clean up some experimental APIs,
+  remove some dependencies, add support for Scala 2.12. The full list
+  of changes is available at http://s.apache.org/spark-2.0-features.
+  We also released a 2.0.0-preview package to let users broadly
+  participate in testing the new APIs.
+
+- We released Spark 1.6.1 in March, with bug fixes for the 1.6 branch.
+
+- For Apache Spark 2.0, the community decided to move some of the
+  less used data source connectors for Spark Streaming to a separate
+  project, Apache Bahir (http://bahir.apache.org). We proposed a new
+  project in order to maintain ASF governance of these components.
+
+- The project removed the role of "maintainers" for reviewing changes to
+  specific components (originally added 1.5 years ago) in response to
+  concerns from some ASF members that it makes the project appear less
+  welcoming, as well as the conclusion that it did not have a noticeable
+  impact in practice (https://s.apache.org/DUTB, https://s.apache.org/AgCt).
+
+Trademarks:
+
+In the past few weeks, there have been several discussions asking for more
+attention to trademark use from the PMC. Some of the main issues were:
+- A vendor offering a "technical preview" package of Apache Spark 2.0
+  before there was any official PMC release.
+- A vendor claiming to offer "early access" to the project's roadmap.
+- Various corporate and open source products whose name includes "Spark".
+- Corporate pages were the most prominent mention says "Spark"
+  instead of "Apache Spark".
+
+The PMC is addressing these issues in several ways:
+
+- Reaching out to the organizations involved.
+
+- To make the project's association with the ASF clearer in news articles
+  and corporate materials, we are working to update the logo to include
+  "Apache": https://s.apache.org/Jf7J. We also added a FAQ entry about
+  using the logo that links to the ASF trademarks page.
+
+- Continuing to review news articles, product announcements, etc.
+
+- Starting with this board report, we will have a section on
+  trademarks in our reports to track brand activity.
+
+- Question for the board: Would it be helpful to put a summary of the
+  trademark policy on spark.apache.org? It would be nice to have this
+  more visible (e.g. in the site's navigation menu), but either way is
+  fine. We can draft a version and sent it to trademarks@.
+
+Events:
+
+- The Spark Summit community conference in San Francisco ran June 6-8.
+  There were close to 100 talks from at least 50 organizations.
+
+Latest releases:
+
+- May 26, 2016: Spark 2.0.0-preview
+- Mar 9, 2016: Spark 1.6.1
+- Jan 4, 2016: Spark 1.6.0
+- Nov 09, 2015: Spark 1.5.2
+- Oct 02, 2015: Spark 1.5.1
+
+Committers and PMC:
+
+- The last committer was added on May 23, 2016 (Yanbo Liang).
+
+- The last PMC members were added Feb 15, 2016
+  (Joseph Bradley, Sean Owen and Yin Huai)</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#attachment-BI">2016-05-18</a> &mdash; Matei Zaharia<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- The community is entering the QA phase for Spark 2.0, our second major
+ version since joining Apache. There are a large number of additions in
+ 2.0, including a higher-level streaming API, improved runtime code
+ generation for SQL, and improved export for machine learning models.
+ We are also using this release to clean up some experimental APIs,
+ remove some dependencies, add support for Scala 2.12. The full list
+ of changes is available at http://s.apache.org/spark-2.0-features.
+
+- We released Spark 1.6.1 in March, with bug fixes for the 1.6 branch.
+ In general, we have seen fast adoption of Spark 1.6, with many
+ organizations adding support right away.
+
+- For Apache Spark 2.0, the community decided to move some of the lesser
+  used data source connectors for Spark Streaming to a separate ASF
+  project, which has been proposed as Apache Bahir. We proposed a new
+  project in order to maintain ASF governance of these components.
+
+- In the past few weeks, there have been several discussions asking
+  for more attention to trademark use from this PMC. Some of the main
+  issues were:
+  - A vendor offering a "technical preview" package of Apache Spark 2.0
+    before there was any official PMC release.
+  - A vendor claiming to offer "early access" to the project's roadmap.
+  - Multiple vendors offering products were one component is labeled
+    "Spark", without this component being an ASF release.
+  - Corporate pages were the most prominent mention says "Spark"
+    instead of "Apache Spark".
+  In response to these issues, we will be reviewing all corporate uses
+  of "Spark" on the trademarks list in the coming weeks and working to
+  clarify the trademark rules on the project website as well as within
+  the PMC and committer community.
+
+Latest releases:
+
+Mar 9, 2016: Spark 1.6.1
+Jan 4, 2016: Spark 1.6.0
+Nov 09, 2015: Spark 1.5.2
+Oct 02, 2015: Spark 1.5.1
+Sept 09, 2015: Spark 1.5.0
+
+Committers and PMC:
+
+The last committers were added on Feb 8, 2016
+(Wenchen Fan) and Feb 3, 2016 (Herman von Hovell).
+
+The last PMC members were added Feb 15, 2016
+(Joseph Bradley, Sean Owen and Yin Huai)
+
+Mailing list stats:
+
+4509 subscribers to user list (up 249 in the last 3 months)
+2570 subscribers to dev list (up 173 in the last 3 months)</pre>
+<h3 id="2016-02-17"><a href="2016/board_minutes_2016_02_17.html#attachment-BE">2016-02-17</a> &mdash; Matei Zaharia<a class="headerlink" href="#2016-02-17" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We posted our 1.6.0 release in January, with contributions from 248
+developers. This release included a new typed API for working with
+DataFrames, faster state management in Spark Streaming, support
+for persisting and loading ML pipelines, various optimizations, and a
+variety of new advanced analytics APIs. Full release notes are at
+http://spark.apache.org/releases/spark-release-1-6-0.html.
+
+- We are currently collecting changes for a Spark 1.6.1 maintenance
+release, which will likely happen within several weeks.
+
+- The community also agreed to make our next release 2.0, which
+will be a chance to fix small dependency and API problems in
+addition to releasing new features. Partial list of planned changes:
+http://s.apache.org/spark-2.0-features.
+
+Latest releases:
+
+Jan 4, 2016: Spark 1.6.0
+Nov 09, 2015: Spark 1.5.2
+Oct 02, 2015: Spark 1.5.1
+Sept 09, 2015: Spark 1.5.0
+
+Committers and PMC:
+
+The last committers were added on Feb 8, 2016
+(Wenchen Fan) and Feb 3, 2016 (Herman von Hovell).
+
+We just voted in three PMC members on Feb 10, 2016
+(Joseph Bradley, Sean Owen, Yin Huai).
+
+Mailing list stats:
+
+4249 subscribers to user list (up 286 in the last 3 months)
+2380 subscribers to dev list (up 196 in the last 3 months)</pre>
+<h3 id="2015-11-18"><a href="2015/board_minutes_2015_11_18.html#attachment-BB">2015-11-18</a> &mdash; Matei Zaharia<a class="headerlink" href="#2015-11-18" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We posted our 1.5.0 release in June, with contributions from 230
+  developers. This release included many new APIs throughout Spark,
+  more R support, UI improvements, and the start of a new low-level
+  execution layer that acts directly on binary data (Tungsten). It had
+  the most contributors of any release so far. Full release notes are at
+  http://spark.apache.org/releases/spark-release-1-5-0.html.
+
+- We made a Spark 1.5.1 maintenance release in October and a Spark
+  1.5.2 release this week with bug fixes to the 1.5 line.
+
+- The community is currently QAing Spark 1.6.0, which is expected to
+  come out in about a month based on the QA process. Some notable
+  features include a type-safe API on the Tungsten execution layer
+  and better APIs for managing state in Spark Streaming.
+
+Latest releases:
+
+Nov 09, 2015: Spark 1.5.2
+Oct 02, 2015: Spark 1.5.1
+Sept 09, 2015: Spark 1.5.0
+July 15, 2015: Spark 1.4.1
+
+Committers and PMC:
+
+The last committers added were on July 20th, 2015
+(Marcelo Vanzin) and June 8th, 2015 (DB Tsai).
+
+The last PMC members were added August 12th, 2014
+(Joseph Gonzalez and Andrew Or).
+
+Mailing list stats:
+
+3946 subscribers to user list (up 419 in the last 3 months)
+2181 subscribers to dev list (up 211 in the last 3 months)</pre>
+<h3 id="2015-08-19"><a href="2015/board_minutes_2015_08_19.html#attachment-BA">2015-08-19</a> &mdash; Matei Zaharia<a class="headerlink" href="#2015-08-19" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, Python and R as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We posted our 1.4.0 release in June, with contributions from 210
+  developers. The biggest addition was support for the R programming
+  language, along with many improvements in debugging tools, built-in
+  libraries, SQL language coverage, and machine learning functions
+  (http://spark.apache.org/releases/spark-release-1-4-0.html).
+
+- We posted a Spark 1.4.1 maintenance release in July.
+
+- We've started the QA process for Spark 1.5.0, which should be
+  released in around one month. The biggest features here are large
+  performance improvements for Spark SQL / DataFrames, as well
+  as further enriched support for R (e.g. exposing Spark's machine
+  learning libraries in R).
+
+Latest releases:
+
+July 15, 2015: Spark 1.4.1
+June 11, 2015: Spark 1.4.0
+April 17, 2015: Spark 1.2.2 and 1.3.1
+March 13, 2015: Spark 1.3.0
+
+Committers and PMC:
+
+The last committers added were on July 20th, 2015
+(Marcelo Vanzin) and June 8th, 2015 (DB Tsai).
+
+The last PMC members were added August 12th, 2014
+(Joseph Gonzalez and Andrew Or).
+
+Mailing list stats:
+
+3501 subscribers to user list (up 493 in the last 3 months)
+1947 subscribers to dev list (up 255 in the last 3 months)</pre>
+<h3 id="2015-05-20"><a href="2015/board_minutes_2015_05_20.html#attachment-BH">2015-05-20</a> &mdash; Matei Zaharia<a class="headerlink" href="#2015-05-20" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, and Python as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We posted our 1.3.0 release in March, with contributions from 174
+developers. Major features included a DataFrame API for working with
+structured data, a pluggable data source API, streaming input source
+improvements, and many new machine learning algorithms
+(http://spark.apache.org/releases/spark-release-1-3-0.html).
+
+- We posted the Spark 1.2.2 and 1.3.1 maintenance releases in April.
+
+- We cut a release branch and started QA for Spark 1.4.0, which should
+be released in June. The biggest feature there is R language support,
+along with SQL window functions, support for new Hive versions, and
+quite a few improvements to debugging and monitoring tools.
+
+Latest releases:
+
+April 17, 2016: Spark 1.2.2 and 1.3.1
+March 13, 2015: Spark 1.3.0
+February 9, 2015: Spark 1.2.1
+December 18, 2014: Spark 1.2.0
+
+Committers and PMC:
+
+We voted to add four new committers on May 2nd, 2015
+(Sandy Ryza, Yun Huai, Kousuke Saruta, Davies Liu)
+
+The last PMC members were added August 12th, 2014
+(Joseph Gonzalez and Andrew Or).
+
+Mailing list traffic:
+
+2979 subscribers to user list, 7469 emails in past 3 months
+1692 subscribers to dev list, 1622 emails in past 3 months</pre>
+<h3 id="2015-02-18"><a href="2015/board_minutes_2015_02_18.html#attachment-BS">2015-02-18</a> &mdash; Matei Zaharia<a class="headerlink" href="#2015-02-18" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, and Python as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+- We posted our 1.2.0 release in December, with contributions from 172
+developers. Major features included stable APIs for Spark's graph
+processing module (GraphX), a high-level pipeline API for machine
+learning, an external data source API, better H/A for streaming, and
+networking performance optimizations.
+
+- We posted the Spark 1.2.1 maintenance release on February 9th, with
+contributions from 69 developers.
+
+- We cut a release branch and started QA for Spark 1.3.0, which should
+be released sometime in March. Some features coming there include a
+data frame API similar to R and Python, write support for external data
+sources, and quite a few new machine learning algorithms.
+
+- We had a discussion about adding a committer role to the project that
+is separate from PMC (before, Spark had PMC = C) to bring in people
+sooner, and decided to do that from this point on.
+
+Releases:
+
+Our last few releases were:
+
+February 9, 2015: Spark 1.2.1
+December 18, 2014: Spark 1.2.0
+November 26, 2014: Spark 1.1.1
+September 11, 2014: Spark 1.1.0
+
+Committers and PMC:
+
+The last committers were added February 2nd, 2015
+(Joseph Bradley, Cheng Lian and Sean Owen)
+
+The last PMC members were added August 12th, 2014
+(Joseph Gonzalez and Andrew Or).</pre>
+<h3 id="2014-11-19"><a href="2014/board_minutes_2014_11_19.html#attachment-AT">2014-11-19</a> &mdash; Matei Zaharia<a class="headerlink" href="#2014-11-19" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, and Python as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+This has been an eventful three months for Spark. Some major happenings are:
+
+- We posted our 1.1.0 release in September, with contributions from 171
+  developers (our largest number yet). Major features were performance and
+  scalability optimizations, JSON import and schema inference in Spark SQL,
+  feature extraction and statistics libraries, and a JDBC server.
+
+- We recently cut a release branch and started QA for Spark 1.2.0, which
+  is targeted for release in December.
+
+- Apache Spark won this year's large-scale sort benchmark
+  (http://sortbenchmark.org/), sorting 100 TB of data 3x faster than the
+  previous record. It tied with a MapReduce-like system optimized for sorting.
+
+- The community voted to implement a maintainer model for reviewing some
+  modules, where changes in architecture and API should be reviewed by a
+  maintainer before a merge (http://s.apache.org/Dqz). There was concern
+  from some external commenters (Greg Stein, Arun Murthy, Vinod Vavilapalli)
+  that this reduces the power of each PMC member (requiring a review from a
+  specific set of people); we are looking to test how this works and possibly
+  tweak the model.
+
+Releases:
+
+Our last few releases were:
+
+September 11, 2014: Spark 1.1.0
+August 5, 2014: Spark 1.0.2
+July 23, 2014: Spark 0.9.2
+July 11, 2014: Spark 1.0.1
+
+Committers and PMC:
+
+The last committers and PMC members were added August 12, 2014
+(Joseph Gonzalez and Andrew Or).</pre>
+<h3 id="2014-08-20"><a href="2014/board_minutes_2014_08_20.html#attachment-AX">2014-08-20</a> &mdash; Matei Zaharia<a class="headerlink" href="#2014-08-20" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala, and Python as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+Spark made its 1.0.0 release on May 30th, bringing API stability for the 1.X
+line and a variety of new features. The community is now QAing the 1.1.0
+branch for release later this month. (We follow a regular 3-month schedule
+for releases.) The community held a user conference, Spark Summit, in July,
+sponsored by 25 companies. We continue to see growth in the number of users
+and contributors, with over 120 people contributing to 1.1.0.
+
+Some of the big features in 1.1 include JSON loading in Spark SQL, a new
+statistics library, streaming machine learning algorithms, improvements to
+the Python API, and many stability and performance improvements.
+
+Releases:
+
+Our last few releases were:
+
+August 5, 2014: Spark 1.0.2
+July 23, 2014: Spark 0.9.2
+July 11, 2014: Spark 1.0.1
+May 30, 2014: Spark 1.0.0
+
+Committers and PMC:
+
+We closed votes to add two new committers and PMC members on August 7th.
+Before that, we added two committers and PMC members in May 2014.</pre>
+<h3 id="2014-05-21"><a href="2014/board_minutes_2014_05_21.html#attachment-AW">2014-05-21</a> &mdash; Matei Zaharia<a class="headerlink" href="#2014-05-21" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala and Python as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+The project is closing out the work for its 1.0.0 release, which will be a
+major milestone introducing both new functionality and API compatibility
+guarantees across the 1.X series. We&rsquo;ve had one release candidate posted and
+are working on the next after a period of heavy QA. The project continues to
+see fast community growth &mdash; over 100 people submitted patches for 1.0.
+
+Some of the major features in 1.0 include:
+- A new Spark SQL component for accessing structured data within Spark
+  programs
+- Java 8 lambda syntax support to make Spark programming in Java easier
+- Sparse data support, model evaluation, matrix algorithms and decision trees
+  in MLlib
+- Long-lived monitoring dashboard
+- Common job submission script for all cluster managers
+- Revamped docs including new detailed docs for all the ML algorithms
+- Full integration with Hadoop YARN security model
+- API stability across the entire 1.X line
+
+Releases:
+
+Our last few releases were:
+
+Apr 9, 2014: Spark 0.9.1
+Feb 2, 2014: Spark 0.9.0-incubating
+Dec 19, 2013: Spark 0.8.1-incubating
+Sept 25, 2013: Spark 0.8.0-incubating
+
+Committers and PMC:
+
+We just opened votes for two new committers and PMC members on May 12th.
+The last committers and (podling) PMC members were added on Dec 22, 2013</pre>
+<h3 id="2014-04-16"><a href="2014/board_minutes_2014_04_16.html#attachment-AU">2014-04-16</a> &mdash; Matei Zaharia<a class="headerlink" href="#2014-04-16" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala and Python as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+---------------
+
+The project recently became a TLP and continues to grow in terms of community
+size. We finished switching our infrastructure to spark.apache.org, including
+recently importing our JIRA instance. We completed the vote on a 0.9.1 minor
+release last week (it will be posted on April 9th), and we reached the
+feature freeze and QA point for our 1.0 release, which is coming in a few
+weeks. Apart from the new features coming in 1.0, a major update in the
+community has been a change towards a Semantic Versioning-like policy, where
+maintenance releases are clearly marked and API compatibility is preserved
+across all minor releases (i.e. all 1.x.y will be compatible). This has been
+put in action for both 0.9.x and 1.x.
+
+Releases:
+---------
+
+Our last few releases were:
+
+Apr 9, 2014: Spark 0.9.1
+Feb 2, 2014: Spark 0.9.0-incubating
+Dec 19, 2013: Spark 0.8.1-incubating
+Sept 25, 2013: Spark 0.8.0-incubating
+
+Committers and PMC:
+-------------------
+
+The last committers and (podling) PMC members were added on Dec 22, 2013.</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#attachment-AW">2014-03-19</a> &mdash; Matei Zaharia<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>Apache Spark is a fast and general engine for large-scale data processing. It
+offers high-level APIs in Java, Scala and Python as well as a rich set of
+libraries including stream processing, machine learning, and graph analytics.
+
+Project status:
+
+The project recently became a TLP and continues to grow in terms of community
+size. We switched all our infrastructure out of the incubator and to
+spark.apache.org domains / repos (though the old site still needs a redirect).
+We have a new minor release being finalized for later this month, and a Spark
+1.0 release targeting end of April. Recent activity includes new machine
+learning algorithms, updating the Spark Java API to work with Java 8 lambda
+syntax, Python API extensions, and improved support for Hadoop YARN.
+
+Releases:
+
+Our last few releases were:
+
+Feb 2, 2014: Spark 0.9.0-incubating
+Dec 19, 2013: Spark 0.8.1-incubating
+Sept 25, 2013: Spark 0.8.0-incubating
+
+Committers and PMC:
+
+The last committers and (podling) PMC members were added on Dec 22, 2013.</pre>
+<h3 id="2014-01-15"><a href="2014/board_minutes_2014_01_15.html#spark">2014-01-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-01-15" title="Permalink">&para;</a></h3>
+<pre>Spark is an open source system for fast and flexible large-scale data
+analysis. Spark provides a general purpose runtime that supports
+low-latency execution in several forms.
+
+Spark has been incubating since 2013-06-19.
+
+Three most important issues to address in the move towards graduation:
+
+1. Pretty much the only issue remaining is importing our old JIRA
+ into Apache (https://issues.apache.org/jira/browse/INFRA-6419).
+ Unfortunately, although we've been trying to do this since June,
+ we haven't had much luck with it, as the INFRA people who tried
+ to help out have been busy and software version numbers have
+ often been incompatible (we have a hosted JIRA instance from
+ Atlassian that they regularly update). We believe that there are
+ some export dumps on that issue that are compatible with the ASF's
+ current JIRA version, but if we can't get this resolved in the
+ next 2-3 weeks, we may simply forgo importing our old issues.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+It would be really great to get a contact who can sit down with us
+and do the JIRA import. We're not sure who from INFRA leads these
+tasks.
+
+How has the community developed since the last report?
+
+We made a Spark 0.8.1 release in December, and are working on a new
+major release (0.9) this month. We added two new committers, Aaron
+Davidson and Kay Ousterhout.
+
+How has the project developed since the last report?
+
+We made the Spark 0.8.1 release mentioned above, with a number of
+new features detailed at
+http://spark.incubator.apache.org/releases/spark-release-0-8-1.html.
+We also have some exciting features coming up in Spark 0.9, such as
+support for Scala 2.10, parallel machine learning libraries in
+Python, and improvements to Spark Streaming.
+
+Date of last release:
+
+2013-12-19
+
+When were the last committers or PMC members elected?
+
+2013-12-30
+
+Signed-off-by:
+
+[ ](spark) Chris Mattmann
+[ ](spark) Paul Ramirez
+[ ](spark) Andrew Hart
+[ ](spark) Thomas Dudziak
+[X](spark) Suresh Marru
+[X](spark) Henry Saputra
+[X](spark) Roman Shaposhnik
+
+Shepherd/Mentor notes:
+
+Alan Cabrera (acabrera):
+
+Seems like a nice active project.  IMO, there's no need to wait import
+to JIRA to graduate. Seems like they can graduate now.</pre>
+<h3 id="2013-10-16"><a href="2013/board_minutes_2013_10_16.html#spark">2013-10-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-10-16" title="Permalink">&para;</a></h3>
+<pre>Spark is an open source system for fast and flexible large-scale data
+analysis. Spark provides a general purpose runtime that supports
+low-latency execution in several forms.
+
+Spark has been incubating since 2013-06-19.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Move JIRA over to Apache (still haven't gotten success from INFRA
+     on this: https://issues.apache.org/jira/browse/INFRA-6419)
+  2. Add more committers under Apache process
+  3. Make further Apache releases
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  We still need some help importing our JIRA -- see INFRA-6419. For some
+  reason we've had a lot of trouble with this. It should be easier now
+  because Apache's JIRA was updated and now matches our version.
+
+How has the community developed since the last report?
+
+  We made the Spark 0.8.0 release, which was the biggest so far, with 67
+  developers from 24 organizations contributing. The release shows how far
+  our community has grown -- our 0.6 release last October had only 17
+  contributors, and our 0.7 release in February had 31. Most of the
+  contributors are now external to the original UC Berkeley team.
+
+How has the project developed since the last report?
+
+  We made the Spark 0.8.0 release mentioned above, which so far seems to
+  be doing well. It brings a number of deployability features, improved
+  Python support, and a new standard library for machine learning; see
+  http://spark.incubator.apache.org/releases/spark-release-0-8-0.html
+  for what's new in the release.
+
+Date of last release:
+
+  2013-09-25
+
+When were the last committers or PMC members elected?
+
+  June 2013
+
+Signed-off-by:
+
+  [X](spark) Chris Mattmann
+  [ ](spark) Paul Ramirez
+  [ ](spark) Andrew Hart
+  [ ](spark) Thomas Dudziak
+  [ ](spark) Suresh Marru
+  [X](spark) Henry Saputra
+  [X](spark) Roman Shaposhnik
+
+Shepherd notes:
+
+  Dave Fisher (wave):
+
+    Very active community on a fast track. Good report. Get your JIRA over
+    and you are getting close.  (Oct. 7)
+
+  Marvin Humphrey (marvin):
+
+    Report not filed in time for shepherd review.</pre>
+<h3 id="2013-09-18"><a href="2013/board_minutes_2013_09_18.html#spark">2013-09-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-09-18" title="Permalink">&para;</a></h3>
+<pre>Spark is an open source system for fast and flexible large-scale data
+analysis. Spark provides a general purpose runtime that supports low-latency
+execution in several forms.
+
+Spark has been incubating since 2013-06-19.
+
+Three most important issues to address in the move towards graduation:
+
+1. Make a first Apache release (we're in the final stages of this)
+2. Move JIRA over to Apache (https://issues.apache.org/jira/browse/INFRA-6419)
+3. Move development to Apache repo (in progress)
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+We still need some help importing our JIRA, though Michael Joyce and INFRA
+have looked into it (see &lt;http://s.apache.org/fi&gt;).
+
+How has the community developed since the last report?
+
+We're continuing to get a lot of great contributions to Spark. UC Berkeley
+also recently hosted a two-day training on Spark and related technologies
+(http://ampcamp.berkeley.edu/3/) that was highly attended -- we sold out at
+over 200 on-site attendees, and had 1000+ people watch online. User meetups
+included a well-attended meetup on Shark (Hive on Spark) contributions at
+Yahoo!.
+
+How has the project developed since the last report?
+
+We've made a lot of progress towards a first Apache release of Spark,
+including changing the package name to org.apache.spark, documenting the
+third-party licenses as required in LICENSE / NOTICE, and updating the
+documentation to reflect the transition. This month we've also moved our
+website to an apache.org domain (http://spark.incubator.apache.org) and
+updated the branding there. Finally, on the code side, we have continued to
+make bug fixes and improvements for the 0.8 release. Some recently merged
+improvements include simplified packaging and Python API support for
+Windows.
+
+Date of last release:
+
+No Apache releases yet
+
+When were the last committers or PMC members elected?
+
+June 2013
+
+Signed-off-by:
+
+[x](spark) Chris Mattmann
+[ ](spark) Paul Ramirez
+[x](spark) Andrew Hart
+[ ](spark) Thomas Dudziak
+[x](spark) Suresh Marru
+[x](spark) Henry Saputra
+[x](spark) Roman Shaposhnik
+
+Shepherd notes:</pre>
+<h3 id="2013-08-21"><a href="2013/board_minutes_2013_08_21.html#spark">2013-08-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-08-21" title="Permalink">&para;</a></h3>
+<pre>Spark is an open source system for fast and flexible large-scale data
+analysis. Spark provides a general purpose runtime that supports low-latency
+execution in several forms.
+
+Spark has been incubating since 2013-06-19.
+
+Three most important issues to address in the move towards graduation:
+
+1. Finish bringing up Apache infrastructure (the only system missing
+   is JIRA, but we also still need to move out website to Apache)
+2. Switch development to work directly against Apache repo
+3. Make a Spark 0.8 release through the Apache process
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+Nothing major. We've gotten a lot of help setting up infrastructure and the
+last piece missing is importing issues from our old JIRA, which we're
+working with INFRA on (https://issues.apache.org/jira/browse/INFRA-6419).
+
+How has the community developed since the last report?
+
+We've continued to get and accept a number of external contributions,
+including metrics infrastructure, improved web UI, several optimizations and
+bug fixes.  We held a meetup on machine learning on Spark in San Francisco
+that got around 200 attendees. Finally, we've set up Apache mailing lists
+and warned users of the migration, which will complete at the beginning of
+September.
+
+How has the project developed since the last report?
+
+We are finishing some bug fixes and merges to do a first Apache release of
+Spark later this month. During this release we'll go through the process of
+checking that the right license headers are in place, NOTICE file is
+present, etc, and we'll complete a website on Apache.
+
+Date of last release:
+
+None yet.
+
+Signed-off-by:
+
+[X](spark) Chris Mattmann
+[ ](spark) Paul Ramirez
+[ ](spark) Andrew Hart
+[ ](spark) Thomas Dudziak
+[X](spark) Suresh Marru
+[X](spark) Henry Saputra
+[X](spark) Roman Shaposhnik
+
+Shepherd notes:</pre>
+<h3 id="2013-07-17"><a href="2013/board_minutes_2013_07_17.html#spark">2013-07-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-07-17" title="Permalink">&para;</a></h3>
+<pre>Spark is an open source system for fast and flexible large-scale data
+analysis. Spark provides a general purpose runtime that supports low-latency
+execution in several forms.
+
+Spark has been incubating since 2013-06-19.
+
+Three most important issues to address in the move towards graduation:
+
+1. Finish bringing up infrastructure on Apache (JIRA, "user" mailing list,
+   SVN repo for website)
+2. Migrate mailing lists and development to Apache
+3. Make a Spark 0.8 under the Apache Incubator
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+While most of our infrastructure is now up, it has taken a while to get a
+JIRA, a SVN repo for our website (so we can use the CMS), and a
+user@spark.incubator.apache.org mailing list (so we can move our existing
+user list, which is large).
+
+How has the community developed since the last report?
+
+We only entered the Apache Incubator at the end of June, but in the existing
+developer community keeps expanding and we are seeing many new features from
+new contributors.
+
+How has the project developed since the last report?
+
+In terms of the Apache incubation process, we filed our IP papers and got a
+decent part of the infrastructure set up (Git, dev list, wiki, Jenkins
+group).
+
+Date of last release:
+
+None
+
+Signed-off-by:
+
+[X](spark) Chris Mattmann
+[ ](spark) Paul Ramirez
+[ ](spark) Andrew Hart
+[ ](spark) Thomas Dudziak
+[X](spark) Suresh Marru
+[x](spark) Henry Saputra
+[ ](spark) Roman Shaposhnik
+
+Shepherd notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,4074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: DB | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: DB';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: DB';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: DB</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="db">DB<a class="headerlink" href="#db" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-01-21</td>
+<td><a href="2026/board_minutes_2026_01_21.html#section-7B">Appointed Jeffery Painter</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2015-05-20</td>
+<td><a href="2015/board_minutes_2015_05_20.html#section-7E">Appointed Bryan Pendleton</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2012-10-17</td>
+<td><a href="2012/board_minutes_2012_10_17.html#section-7A">Appointed Myrna van Lunteren</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2010-10-20</td>
+<td><a href="2010/board_minutes_2010_10_20.html#section-7C">Appointed Kristian Waagan</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2008-10-15</td>
+<td><a href="2008/board_minutes_2008_10_15.html#section-7A">Appointed Richard Hillegas</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2006-10-25</td>
+<td><a href="2006/board_minutes_2006_10_25.html#section-6C">Appointed Jean Anderson</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2005-09-21</td>
+<td><a href="2005/board_minutes_2005_09_21.html#section-6A">Appointed Brian McCallister</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2003-09-17</td>
+<td><a href="2003/board_minutes_2003_09_17.html#section-6A">Appointed John McNally</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2002-07-17</td>
+<td><a href="2002/board_minutes_2002_07_17.html#section-6B">Appointed Jason van Zyl</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2004-08-18</td>
+<td><a href="2004/board_minutes_2004_08_18.html#section-6C">Derby code drop</a></td>
+<td>discussion</td>
+<td>tabled</td>
+</tr>
+<tr>
+<td>2002-07-17</td>
+<td><a href="2002/board_minutes_2002_07_17.html#section-6B">Apache DB project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-V">2026-04-15</a> &mdash; Jeffery Painter<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following sub-projects:
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+Please see the Project Activity section of our report for recent updates.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (24 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-15.
+
+## Project Activity:
+
+### Apache JDO
+
+The JDO project remains active and responsive, with ongoing engagement on
+mailing lists and issue tracking.
+
+Recent efforts have focused on:
+
+ - Continued improvements to the codebase driven by SonarCloud analysis,
+   including addressing code quality issues and reducing technical debt.
+ - Ongoing updates to build and CI infrastructure to align with current Maven
+   and Apache POM standards.
+ - Progress toward a future release, pending completion of minor code
+   improvements.
+
+Additional technical discussions and work include:
+
+ - Investigation into raising the minimum supported Java version (JDO-812).
+ - Work toward generating SBOM files (JDO-847).
+ - Continued refinement of code quality issues identified in SonarCloud, with
+   active pull requests and incremental progress.
+
+The project has also encountered some issues with the Trusted Release process,
+particularly related to signing artifacts and build failures in release
+profiles, and is working with the appropriate ASF teams to resolve these.
+
+### Apache Torque
+
+Activity in the Torque project this quarter has been relatively light,
+consisting primarily of minor bug fixes and maintenance.
+
+The community has begun discussing several potential future directions,
+including:
+
+ - Planning for a potential major release.
+ - Evaluating database support strategy, including possibly focusing on
+   MySQL/MariaDB based on community usage.
+ - Considering an upgrade to newer Java versions (Java 21 or later).
+ - Reassessing a potential migration from Subversion to Git, though this
+   remains under discussion due to the associated effort.
+ - Continued improvements to the Maven build system and project documentation.
+
+Security posture was reviewed in light of recent ASF guidance, and no issues
+were identified.
+
+### Project-Level Updates
+
+ - The Apache DB project has completed the PMC Chair transition, with Jeffery
+   Painter now serving as PMC Chair. All onboarding steps have been completed
+   in accordance with ASF guidelines.
+
+## Community Health:
+
+The Apache DB project remains stable and in good health.
+
+The JDO subproject continues to demonstrate steady development activity, with
+regular attention to code quality, infrastructure updates, and release
+planning. The Torque subproject, while quieter this quarter, maintains a
+stable codebase and ongoing community discussion about its future direction.
+
+PMC engagement remains solid, with active participation in project discussions
+and decision-making. There are no current concerns requiring board attention.</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-V">2026-01-21</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+Please see the Project Activity section of our report for some
+significant updates.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (23 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+
+The JDO project is working on cleaning up the TCK to make multithreaded
+queries more efficient and has encountered some underlying issues
+that are taking a while to resolve. Once these are resolved,
+we will start looking at making a release.
+
+Two significant changes are underway in the DB project:
+
+- Apache DB have voted to select a new PMC chair, Jeffery Painter, and
+  approved the proposal with 10 positive votes. The Special Order to
+  ratify the new chair is in this month's agenda.
+
+- The Derby codebase has been moved to read-only state. This
+  includes the website (https://db.apache.org/derby/), mailing lists, wiki
+  (https://cwiki.apache.org/confluence/display/DERBY/FrontPage),
+  Subversion repository, and JIRA bug tracker. Official distributions
+  remain available on an as-is basis at
+  https://db.apache.org/derby/derby_downloads.html.
+
+## Community Health:
+Although the action to move the Derby codebase to read-only state
+reflects a general decline in community interest in the Derby
+software, overall the DB project remains in good health. Both the
+JDO and Torque communities experience steady activity, with
+ongoing development and periodic releases in both codebases.
+
+PMC participation in the recent decisions described above was
+strong, with a dozen PMC members participating in the discussions
+and broad consensus to make the changes described, including from
+3 PMC members in the Derby community.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-R">2025-11-19</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (23 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+
+Recent releases:
+- Torque 7.0 was released on 2025-08-13.
+- Torque 6.0 was released on 2024-05-22.
+- Derby-10.17.1.0 was released on 2023-11-14.
+
+## Community Health:
+
+The DB community have reached consensus that the Derby software
+is no longer actively being maintained and should be retired.
+A public vote on the derby-dev list confirmed that consensus,
+and the PMC are working to implement a subset of the Apache Attic
+process to reflect that decision and to make the status be clearly
+communicated to future visitors of the Db project site.
+
+The JDO and Torque communities do not expect any major issues
+with our use of Derby when the Derby project retires.
+
+The Torque community voted on the Torque 7.0 release and it
+was approved and released on 2025-08-13. The Torque developers
+are working on a new approach to a performance problem in the
+processRow method of RecordMappers (TORQUE-364).
+
+The JDO team continues to work toward the next release, 3.2.2.
+No date yet but we have a number of fixes and improvements that
+make it seem like a good time to make a dot release. JDO have
+put SBOM creation into the normal build process. Two flavors
+of SBOM have been built. and we expect to incorporate them into
+the release process. The JDO team are working on the alpha version
+of Apache Trusted Release; nothing official yet.
+
+The JDO team helped with the DB project logo update to use
+the Oak Leaf instead of the Feather.</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#section-6S">2025-10-15</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-U">2025-07-16</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (23 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+DB project activity was steady but quiet this spring. Each of
+the DB project communities continued planned work while addressing
+queries and contributions from the community.
+
+Recent releases:
+Torque 6.0 was released on 2024-05-22.
+Derby-10.17.1.0 was released on 2023-11-14.
+
+The JDO community received a vulnerability report from security
+regarding JDOHelper.getPersistenceManagerFactory. The community
+evaluated the report with the assistance of the PMC and responded
+to the reporter with their analysis.
+
+The Torque community continue their discussions about possibly
+switching their source control tooling to git. There is no
+clear consensus yet so no switch has been made, nor ruled out.
+Meanwhile the Torque community continue to resolve open issues.
+
+The JDO community continued their work on the 3.2.2 release.
+No critical features or bug fixes have been identified. During
+this quarter, the JDO web site was updated based on advice
+from Infrastructure that simplifies publishing the site.
+
+The Derby community have recently been working to ensure Derby
+compatibility with recent releases of Java. Derby changes to
+be compatible with OpenJDK 24 were completed in the late winter
+under DERBY-7171, and Derby changes to be compatible with
+OpenJDK 25 were active during the spring under DERBY-7175.
+
+## Community Health:
+
+Community health across all three Apache DB communities
+was low, but not atypically so. None of the communities
+reported any concern about project health, and the DB PMC
+remains active and engaged across all three communities.</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-R">2025-04-16</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (23 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+DB project activity was steady throughout the winter quarter. Each of
+the DB project communities continued planned work while addressing
+queries and contributions from the community.
+
+Recent releases:
+Torque 6.0 was released on 2024-05-22.
+Derby-10.17.1.0 was released on 2023-11-14.
+
+## Community Health:
+The Torque community completed an important fix in TORQUE-372. The
+community is in ongoing discussion about version control and
+deprecated frameworks in TORQUE-371.
+
+The JDO community were active in a number of areas:
+- Work continues on improving the documentation on type safe queries.
+- SBOMs which are required for security have been generated
+  and will be merged into the standard builds, pending the automated
+  build process that infra is working on.
+- Work continues on removing dependencies on external interfaces,
+  which are only used for a small number of cases.
+
+The Derby community was very quiet this winter. The team did some
+work on the website and are working on correcting the links to the
+email archives, which are stale.</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-R">2025-01-15</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+Current project status: Ongoing, with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (22 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+Recent releases:
+Torque 6.0 was released on 2024-05-22.
+Derby-10.17.1.0 was released on 2023-11-14.
+Derby-10.16.1.1 was released on 2022-06-15.
+
+This fall, all the Apache DB communities continued their normal
+development work.
+
+The Torque community incorporated some fixes in code
+(e.g TORQUE-368) and an ongoing discussion for a new
+illustrative use case (TORQUE-369).
+
+In the JDO community, work continued on adapting the release
+process to incorporate the SBOM files for improved security
+transparency. The community also continue to work on moving
+to JDK 11 as the lowest supported version.
+
+The Derby community is working on verifying compatibility
+with Open JDK 24 in DERBY-7171. This release of Java
+removes several long-deprecated features from the Java platform.
+There was some discussion about the challenges of updating
+older releases to incorporate security fixes.
+
+## Community Health:
+Community health across all three Apache DB communities
+was low, but was typical for these stable, mature projects.</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-R">2024-10-16</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+Current project status: Ongoing, with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (22 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+
+Recent releases:
+Torque 6.0 was released on 2024-05-22.
+Derby-10.17.1.0 was released on 2023-11-14.
+
+
+## Community Health:
+As is common for the DB community, the summer quarter was quiet.
+
+In the JDO community, regular weekly developer meetings
+continue to happen, and the community continue to work to
+optimize the TCK.
+
+In the Torque community, some smaller code changes did happen
+and the discussion about Java 17 in the dev mailing list is
+now almost closed with consistently positive support.
+Preparation for this is under way. Alongside this discussion,
+proposals were made like moving to GIT, modernize template code,
+add/use a gradle build plugin with kotlin, which are in
+the state of further consideration.
+
+In the Derby community, several questions were asked
+and answered on the mailing lists and some new bugs were filed.</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-T">2024-07-17</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+Current project status: Ongoing, with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (22 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- Max Philipp Wriedt was added to the PMC on 2024-07-03
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+
+Torque 6.0 was released on 2024-05-22. It contained a number of
+performance improvements and bug fixes.
+
+Optimizing and extending the TCK remains the focus of the JDO
+community. This spring the JDO community refreshed their page
+on the Apache DOAP registry. The JDO team are also
+continuing to work with the DataNucleus community to resolve issues.
+
+The Derby community added support for timestamp types introduced by Java
+8, thanks to a recent code contribution. The Derby community continues
+their work to keep Derby up to date with new Java releases, including
+JDK 22 and 23 this spring.
+
+## Community Health:
+
+DB project health was good this spring: a Torque committer
+was added to the DB PMC and a new Torque release was made.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-S">2024-04-17</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+
+## Project Status:
+Current project status: Ongoing, with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (22 years ago)
+There are currently 48 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Tobias Bouschen on 2023-08-27.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+Several security issues were brought to the DB project's attention
+this quarter, and were addressed by various community members:
+- JDO community addressed an XSS vulnerability in the project's
+  old archived Javadocs by removing the no-longer-required Javadocs
+  from the project website.
+- DB community addressed an XSS vulnerability in the (retired) ddlutils
+  Javadocs by removing the no-longer-required Javadocs from the
+  project website.
+- Derby community examined an arbitrary file write vulnerability
+  in the Derby client libraries and determined that it was best
+  addressed via a combination of
+  - documentation of the requirement for users to use this
+    particular log-tracing feature with care,
+  - and notice to known clients.
+
+Apache security team assisted with the resolution of these security
+issues and we are grateful as always for their prompt and thorough
+help!
+
+Torque team are readying a new release and discussing whether it
+should be classified as a minor release or a major release based
+on its changes. It would probably become either release 5.2 or 6.0,
+depending on the outcome of the discussions.
+
+Derby team have been verifying Derby compatibility with JDKs 21
+and 22. No new problems have been revealed.
+
+JDO team have been investigating several issues uncovered by
+runs of the TCK.
+
+## Community Health:
+DB project health was good over the winter. All the project
+teams were actively discussing development issues and working
+on fixes and enhancements.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-X">2024-01-17</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+
+## Project Status:
+Current project status: Ongoing, with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (21 years ago)
+There are currently 48 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Tobias Bouschen on 2023-08-27.
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+The JDO project have a number of code improvements currently active.
+We are investigating use of automated release artifact signing to
+streamline release preparation. We have updated our automatic
+CI build to test with JDK 21 while maintaining compatibility
+with JDK 8 target (still seems to be the most popular deployment).
+
+JDO is also working on improving performance of TCK tests by
+taking advantage of new features in JUnit 5 that allow for
+parallel execution of test cases where no changes to the datastore
+are made. This includes most query tests.
+
+JDO also continues to work on code quality issues reported by SonarCloud.
+
+In the Torque community there was some code activity to
+fix time duration handling (resolving JIRA issue TORQUE-362)
+and to remedy build failures (in Jenkins job).
+
+The Derby community achieved two milestones in this quarter:
+- The Derby 10.17.1 release.
+  Derby 10.17.1.0 has been built and tested on the Java SE 21
+  platform, and will run only on Java SE 21 and newer Java platforms.
+  Derby 10.17.1.0 cannot be used with older Java platforms.
+- Derby 10.17.1.0 fixes a flaw in Derby's LDAP authentication
+  logic (CVE-2022-46337). DB team thanks Arnout and the security@
+  team for all their help with the resolution of CVE-2022-46337.
+
+## Community Health:
+DB project health was good in this quarter. All the project
+communities were active and working toward achieving development
+milestones for their communities. A new release was made. It
+was all nice to see!</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-S">2023-10-18</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+
+## Project Status:
+Current project status: Ongoing, with low activity
+
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (21 years ago)
+There are currently 48 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- Tobias Bouschen was added to the PMC on 2023-08-27
+- No new committers. Last addition was Max Philipp Wriedt on 2023-04-14.
+
+## Project Activity:
+DB Project welcomes Tobias Bouschen as the latest member of the DB PMC!
+
+JDO project are incorporating various Java upgrades. JDO currently
+supports JDK 8, 11, and 17. We have tested JDK 20 and it looks good.
+Now that JDK 21 is GA, we will start CI testing using JDK 21 and
+look at testing with target JDK 11, 17, and 21 instead of target JDK 8.
+
+JDO project also look to upgrade from JUnit 3 and are now looking
+to improve the TCK configuration specifications.
+
+Derby project are also moving to the latest version of Java. Derby
+developers are discussing the preparation of a 10.17 release this
+fall to include the JDK 21 support.
+
+## Community Health:
+The DB project user communities were fairly quiet this summer,
+with occasional questions being asked and answered, and
+occasional suggestions being made and recorded in JIRA.
+
+The low user community activity is not unusual in the summer.</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#attachment-R">2023-07-19</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+Current project status: Ongoing, with moderate activity.
+
+Issues for the board: none
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (21 years ago)
+There are currently 48 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- Max Philipp Wriedt was added as committer on 2023-04-14
+
+## Project Activity:
+Recent releases:
+Derby-10.16.1.1 was released on 2022-06-15.
+JDO 3.2.1 was released on 2022-05-25.
+JDO 3.2 was released on 2022-02-01.
+
+Torque team are happy that we have a new committer, Max Philip Wriedt!
+Find the announcement here in torque-dev mailing list:
+https://lists.apache.org/thread/n3mdmpb4jmj67l9rh6d1gd029f5zohl3
+
+Status of JDO is ongoing, low activity.
+No new releases since the last report.
+
+The JDO project is continuing to work on improving support for
+current and future JDKs. Currently supporting JDK 7, 11, and 17.
+Looking to JDK 21 for the next supported release. We are also
+upgrading the JUnit dependency from JUnit 3 to JUnit 5 so
+we can more easily take advantage of potential
+performance improvements.
+
+Derby was very quiet this quarter, though the team did fix
+an error in the Derby DOAP release paperwork.
+
+
+## Community Health:
+JDO and Torque teams saw a continuation of the increased
+community activity from last winter, which is great!
+Mailing list and development activity in the Torque
+and JDO communities has been quite healthy.
+
+Derby project activity has been very low throughout 2023.
+Although Derby development activity continues at its normal (low)
+pace, Derby user community activity has dropped to nearly
+nothing, probably indicating that external usage of Derby
+is dropping as well.</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-T">2023-04-19</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (21 years ago)
+There are currently 47 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- No new committers. Last addition was Tobias Bouschen on 2021-01-19.
+
+## Project Activity:
+Recent releases:
+
+Derby-10.16.1.1 was released on 2022-06-15.
+JDO 3.2.1 was released on 2022-05-25.
+JDO 3.2 was released on 2022-02-01.
+
+- The Derby community successfully completed their verification
+of Derby support for JDK 20.
+
+- JDO project is working on sonar cloud reports that will improve
+the quality of the code. We have already fixed reports under
+the category of Reliability and Security. Still working on Maintainability.
+
+- The Torque community are continuing development work on the
+version 5.2 code. There has been some new interest in the Torque
+user community with some new contributions from the community.
+
+## Community Health:
+It was a quiet winter for the DB subprojects, with reduced activity
+in some areas but a few welcome increases in activity, such as the
+new user community interest on the Torque subproject and the
+appearance of a possible new Torque committer. Torque community
+have called a vote for the new committer; the results are expected
+in the next reporting period.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-S">2023-01-18</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (20 years ago)
+There are currently 47 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- No new committers. Last addition was Tobias Bouschen on 2021-01-19.
+
+## Project Activity:
+Recent releases:
+
+- Derby-10.16.1.1 was released on 2022-06-15.
+- JDO 3.2.1 was released on 2022-05-25.
+- JDO 3.2 was released on 2022-02-01.
+- Torque 5.1 was released on 2022-01-31.
+
+- The Derby community received a security vulnerability report
+and have addressed it; it is tracked as CVE-2022-46337. The
+fix in already in the source tree and will be delivered with
+Derby's next release, which is not yet scheduled.
+- The Derby community have also been testing with new builds
+of the upcoming JDK 20; Derby's testing processes may have
+found a bug in one of the JDK 20 features as a result which
+is good.
+
+- The JDO community evaluated the Derby vulnerability
+report to see if it applied to JDO's use of Derby; no JDO
+vulnerability was found as a result.
+- The JDO community are working on moving from JDK 8 to JDK 11,
+which will be a significant change and require a new 3.3
+release, which is not yet scheduled.
+- The JDO community are working on improving code quality via
+feedback solicited from a code analysis tool called SonarCloud.
+SonarCloud itself is not open source but is free to analyze
+open source projects. A number of issues reported by the tool
+have been merged to the main branch and several others are
+currently being worked.
+
+- The Torque community have completed source modifications
+to move from JDK 8 to JDK 11. The changes are anticipated
+to be delivered as a new release 5.2, which is not yet
+scheduled.
+
+## Community Health:
+Community health seems good across the project. All the
+mailing lists were at typical levels, and source contributions
+and fixes have been proceeding at a normal pace. All the
+project repositories are in a development stage trying to
+work toward future releases.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-S">2022-10-19</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (20 years ago)
+There are currently 47 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- No new committers. Last addition was Tobias Bouschen on 2021-01-19.
+
+## Project Activity:
+Recent releases:
+
+- Derby-10.16.1.1 was released on 2022-06-15.
+- JDO 3.2.1 was released on 2022-05-25.
+- JDO 3.2 was released on 2022-02-01.
+- Torque 5.1 was released on 2022-01-31.
+
+## Community Health:
+This was a very quiet quarter for the DB subprojects, but all
+the communities had fairly typical activity: questions were
+asked and answered on the community mailing lists, issues were
+raised and fixes were discussed and committed.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-U">2022-07-20</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (20 years ago)
+There are currently 47 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- No new committers. Last addition was Tobias Bouschen on 2021-01-19.
+
+## Project Activity:
+Recent releases:
+ - Derby 10.16.1.1 was released on 2022-06-15
+ - JDO 3.2.1 was released on 2022-05-25.
+ - JDO 3.2 was released on 2022-02-01.
+ - Torque 5.1 was released on 2022-01-31.
+
+This was a fairly quiet quarter for the DB project, yet still
+two new releases were made:
+ - The Derby community completed and released Derby 10.16.1.1,
+   which provides support for Java 17+.
+ - The JDO community completed and released JDO 3.2.1, which
+   moved metadata file references from the obsolete sun/oracle
+   location to the JDO web site, and provided a workaround
+   for the Java security manager issue.
+
+## Community Health:
+DB mailing lists were quiet this quarter, but not alarmingly so.
+Project release activities and release votes are proceeding normally.</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#attachment-O">2022-04-20</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (20 years ago)
+There are currently 47 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- No new committers. Last addition was Tobias Bouschen on 2021-01-19.
+
+## Project Activity:
+Recent releases:
+- JDO 3.2 was released on 2022-02-01.
+- Torque 5.1 was released on 2022-01-31.
+- Torque 5.0 was released on 2020-09-22.
+
+All of the DB subprojects were actively working on new releases
+during this quarter, with both the JDO and Torque subprojects
+completing their new releases.
+
+Additionally, members from the entire DB community collaborated
+this quarter to migrate the various project websites to the
+new hosting system, and we thank the Infrastructure team for
+their assistance with several requests during the migration.
+
+Notable projects that got underway this quarter include:
+- the JDO community are migrating the xml name space away
+from jcp.org which is no longer maintained
+- the JDO community are working on maintaining compatibility
+with JDK 8 and 9 while accommodating JDK 18 and JDK 19
+- the Derby community are working on an upcoming 10.16
+release to address compatibility with JDK 17+.
+
+## Community Health:
+DB mailing lists show typical levels of activity and appear healthy.
+Project release activities and release votes are proceeding normally.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-P">2022-01-19</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (19 years ago)
+There are currently 47 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- No new committers. Last addition was Tobias Bouschen on 2021-01-19.
+
+## Project Activity:
+- Torque 5.0 was released on 2020-09-22.
+- Derby-10.15.2.0 was released on 2020-02-18.
+- JDO 3.1 was released on 2015-03-19
+
+The Torque community are preparing their 5.1 release, which contains multiple
+new features as well as security fixes. An initial release candidate was voted
+on, then withdrawn, due to ongoing work to address the Log4J security fixes. A
+subsequent release candidate has been prepared and will be voted upon by the
+community.
+
+JDO has prepared release 3.2 and the DB PMC has voted to approve it. The vote
+was prior to the log4j2 disclosure and jdo had a dependency on an affected
+release of log4j2. This dependency was only for running the TCK so it is not a
+critical issue. However, the dependency has been updated for the official
+release.
+
+The JCP has completed the Maintenance Draft Review 5 and has scheduled the
+Maintenance Review Ballot for January 11 through January 17. We are expecting
+a positive result. Once the Ballot is approved we will do a final update of
+JDO 3.2 and have a final vote by the DB PMC.
+
+The Derby community have had some discussions as to whether a new
+major release of Derby will be needed to support JDK 18. Certain
+Derby features may be removed due to underlying changes in the JDK and
+the Derby community will need to communicate this to the users of the software.
+
+The DB project has discussed the upcoming shutdown of the CMS and the move
+of the ci.apache.org support to the new ci2.apache.org that will occur at
+the end of January, and the sub projects will make the necessary changes.
+
+## Community Health:
+DB mailing lists show typical levels of activity and appear healthy.
+Project release activities and release votes are proceeding normally.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-X">2021-10-20</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (19 years ago)
+There are currently 47 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- No new committers. Last addition was Tobias Bouschen on 2021-01-19.
+
+## Project Activity:
+The DB project received a report of a CWE-502 vulnerability in the retired
+DdlUtils source code. Although the DdlUtils subproject is retired and no
+longer actively developed, the DB project decided to address the
+vulnerability, which is now tracked as CVE-2021-41616, and removed the
+insecure source code from the source repository. The DB project also removed
+the DdlUtils-1.0 release from distribution via the Apache mirrors, and updated
+the DdlUtils web site to make it more clear that DdlUtils is retired and no
+longer actively developed.
+
+The JDO team have been making changes suggested by the Apache Diversity
+Conscious Language Checker, including changing the name of the git branch from
+master to main, and resolving all issues in the source code and web site.
+https://clc.diversity.apache.org/analysis.html?project=db-jdo.git
+https://clc.diversity.apache.org/analysis.html?project=db-jdo-site.git
+
+The JDO project is ready to ask the Java Community Process (JCP) to approve
+the latest release, JDO 3.2. We have asked for specific guidance to submit the
+release to be voted by the JCP. Once the JCP approves the Maintenance Release,
+we will formally make the Apache release via the usual DB PMC process.
+
+The Derby team have validated Derby behavior with Java 17. This involved
+significant work to address changes due to JEP411.
+
+## Community Health:
+DB community health seemed robust this quarter. Questions were asked and
+answered on the mailing lists, and project teams collaborated on releases
+and other efforts.</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-S">2021-07-21</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (19 years ago)
+There are currently 47 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- No new committers. Last addition was Tobias Bouschen on 2021-01-19.
+
+## Project Activity:
+JDO project is getting ready to finalize 3.2. All issues
+scheduled for 3.2 have been resolved. Working to finalize
+the specification.
+
+Derby project has been continuing to test with Java 17 early
+access releases.
+
+## Community Health:
+This has been a very quiet quarter for Apache DB. Yet steady
+activity continues in all the DB projects: users ask questions
+and discuss the software; problems are addressed by contributors
+and commits are made; contributions and suggestions continue
+to arrive from the community.
+
+The project overall seems quiet but stable.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-R">2021-04-21</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (19 years ago)
+There are currently 47 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- Tobias Bouschen was added as committer on 2021-01-19
+
+## Project Activity:
+The JDO project is still working on the 3.2 release.
+The new team web site db.apache.org/jdo is up and running.
+
+The Derby community continues to work closely with the broader Java
+community to ensure Derby compatibility with newer Java releases.
+During this period, Derby was tested with Java 16 and Java 17.
+
+## Community Health:
+Activity in the DB community mailing lists, issue trackers, and
+source repositories was healthy and stable during this quarter.
+All the teams had good activity on both the developer and user
+mailing lists.</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-O">2021-02-17</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (19 years ago)
+There are currently 47 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Georg Kallidis on 2020-08-26.
+- Tobias Bouschen was added as committer on 2021-01-19
+
+## Project Activity:
+Torque team have addressed two recently reported security warnings
+in module dependencies (CVE-2020-8908 and CVE-2020-9488)
+by upgrading to the fixed version of the relevant packages. Note
+that these were not security problems in the Torque code itself,
+rather they were out of date versions of log4j2 and guava that
+were being used by Torque.
+
+The JDO project are continuing to evolve the web presence.
+We successfully migrated the site to a combination of GitHub Actions
+and ASF processing to automatically publish "source" changes
+to the web site.
+
+We are working toward a JDO 3.2 release, with a few items still
+left to complete.
+
+
+## Community Health:
+All of the DB project teams experienced normal or higher activity
+levels during this quarter. Community members were busy answering
+user questions, fixing bugs, improving documentation, readying
+releases, etc. In the previous quarter we thought activity levels
+were a bit lower, but they seem to have resumed their normal
+pace this quarter.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#section-6R">2021-01-20</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#attachment-P">2020-10-21</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software licensed
+to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (18 years ago)
+There are currently 46 committers and 45 PMC members in this project.
+
+Community changes, past quarter:
+- Georg Kallidis was added to the PMC on 2020-08-26
+- Jeffery Painter was added to the PMC on 2020-08-26
+- Long time Torque committer and PMC member Thomas Fox has
+  retired from the project.
+
+## Project Activity:
+- Torque 5.0 was released on 2020-09-22. The Torque community is
+  grateful to Infra for help in resolving a website publishing issue
+  (INFRA-20929)
+- JDO completed the migration of the code repository from svn to git
+  and the web presence to a new repository in git
+- The Derby community has not yet made the transition from Jenkins
+  to CloudBees. We are not blocked by anything; we just haven't
+  yet found the time.
+
+## Community Health:
+It was a quiet quarter, possibly due to worldwide COVID concerns.
+But overall the DB community continues to be healthy, with two
+new PMC members added and a new release (Torque 5.0) published.</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-Q">2020-07-15</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention at this time
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (18 years ago)
+There are currently 47 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Tilmann Z&auml;schke on 2019-02-27.
+- No new committers. Last addition was Laura Stewart on 2019-03-08.
+
+## Project Activity:
+Derby-10.15.2.0 was released on 2020-02-18.
+
+The JDO community continue to work on preparing the 3.2 release.
+
+The Derby community has voted to sunset support for Java 9 and 10.
+
+## Community Health:
+The DB project communities have been fairly quiet. I think that the
+overall reduction in activity is probably to a major extent due to
+the international health challenges around COVID-19. But traffic
+on the email lists and issue trackers continues at a mostly typical pace.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-S">2020-04-15</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+There are no issues requiring board attention at this time
+
+## Membership Data:
+Apache DB was founded 2002-07-16 (18 years ago)
+There are currently 47 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Tilmann Z&auml;schke on 2019-02-27.
+- No new committers. Last addition was Laura Stewart on 2019-03-08.
+
+Camilla Haase has notified the DB PMC of her decision to resign
+her PMC membership; I will update the board records in April.
+
+## Project Activity:
+Derby-10.15.2.0 was released on 2020-02-18.
+
+The JDO community continue to work on preparing the 3.2 release.
+
+Torque tests are now running with Docker Testcontainer
+for Mysql and Postgresql,
+
+## Community Health:
+The DB project communities seem healthy and stable this quarter.
+There was a small increase in traffic on the Derby mailing lists
+due to the 10.15.2.0 release.</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-Q">2020-01-15</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Membership Data:
+
+Apache DB was founded 2002-07-16 (17 years ago)
+There are currently 47 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Tilmann Z&auml;schke on 2019-02-27.
+- No new committers. Last addition was Laura Stewart on 2019-03-08.
+
+## Project Activity:
+
+There are no imminent releases. The JDO developers are working on
+updating the JDO web site to use asciidoctor markup and making
+updates to the typed query functionality. The Derby developers are
+discussing a possible 10.15.2 release for late winter and are
+addressing the complications of supporting Java 8, Java 9, and
+Java 11.
+
+## Community Health:
+
+It was a quiet quarter for the Apache DB projects. There is a steady
+flow of questions and discussions on the mailing lists, but not a lot
+of new development activity, which is not surprising for these
+mature projects.</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-Q">2019-10-16</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Activity:
+
+- The Derby project corrected a website mistake which was directing
+  users with trademark questions to an outdated Apache resource.
+  We thank the VP, Brand Management for help in clearing this up.
+
+- The JDO community are currently finalizing the contents of JDO 3.2
+   and working through the associated JIRAs.
+
+## Health report:
+
+Regular project activity levels continue, with activity primarily
+in the areas of bug-fixing and documentation improvements this summer.
+
+## PMC changes:
+
+ - There are currently 47 committers and 44 PMC members in this project.
+ - No new PMC members. Last addition was Tilmann Z&auml;schke on 2019-02-27.
+
+## Committer base changes:
+
+ - Currently 47 committers.
+ - No new committers added in the last 3 months
+
+## Releases:
+
+ - Last release was Derby-10.15.1.3 on Sun Mar 10 2019</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-R">2019-07-17</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Activity:
+
+- The Derby project has completed migration of the community wiki
+  to the new Confluence location, using the Infra-provided tools.
+
+- The JDO community is working toward a 3.2 release, but has not
+  published the new release yet.
+
+## Health report:
+
+Regular project activity levels continue. The recent Derby release
+has resulted in a small uptick in community activity as Derby users
+gain experience with the Java 8 to Java 9 transition.
+
+## PMC changes:
+
+ - Currently 44 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Tilmann Z&auml;schke on Wed Feb 27 2019
+
+## Committer base changes:
+
+ - Currently 47 committers.
+ - No new committers added in the last 3 months
+
+## Releases:
+
+ - Last release was Derby-10.15.1.3 on Sun Mar 10 2019</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#attachment-S">2019-04-17</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Activity:
+
+- Derby community released Derby-10.15.1.3.
+
+- PMC members are migrating the various Moin wikis
+
+   - The JDO project is planning on creating a new web site and then
+     migrating the JDO wiki to the web site. We're planning on using
+     markdown instead of xdoc so it might take a while.
+
+   - The Derby project is working with Infra to resolve some issues
+     with the Moin-to-Confluence tool, then plans to use that tool.
+
+## Health report:
+
+The Apache DB subprojects were typically quiet this quarter.
+Regular project activity levels continue.
+
+## PMC changes:
+
+- Tilmann Z&auml;schke was added to the PMC on Thu Feb 28 2019
+- Last PMC addition: Thu Feb 28 2019 (Tilmann Z&auml;schke)
+- Currently 47 committers and 44 PMC members.
+
+## Committer base changes:
+
+Please note that, on March 8, 2019, longtime DB committer
+and PMC member Laura Stewart was added to the members list,
+which causes reporter.apache.com to report the following,
+although Laura has actually been a DB project committer
+since 2007. Many thanks to Sebastian for helping us understand
+this behavior.
+
+- Laura Stewart was added as a committer on Fri Mar 08 2019
+- Last committer addition: Fri Mar 08 2019 (Laura Stewart)
+
+## Releases:
+
+ - Derby-10.15.1.3 was released on Sun Mar 10 2019
+
+## JIRA activity:
+
+ - 22 JIRA tickets created in the last 3 months
+ - 9 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#attachment-V">2019-01-16</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Activity:
+
+The Derby subproject has finished development of its new Java 9 Modules
+support. Discussion and planning is underway to produce a 10.15.1
+release of Derby in early 2019.
+
+## Health report:
+
+The Apache DB subprojects are mature and generally quiet.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 46 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Georg Kallidis at Sat May 05 2018
+
+## Releases:
+
+ - Last release was Derby-10.14.2.0 on Wed May 02 2018
+
+## JIRA activity:
+
+ - 19 JIRA tickets created in the last 3 months
+ - 11 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-R">2018-10-17</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Activity:
+
+This was a very quiet summer for the DB project, but activity continues.
+
+The JDO subproject is small but active. We are making progress toward
+a 3.2 release with several JIRAs resolved and a few JIRAs still being
+worked on, including enhanced query capabilities.
+
+The Derby subproject is now testing its new Java 9 Modules support
+using the Apache Jenkins infrastructure. We are planning to release
+this new functionality once the community feels it is stable.
+
+## Health report:
+
+The Apache DB subprojects are mature and generally quiet.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 46 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Georg Kallidis at Sat May 05 2018
+
+## Releases:
+
+ - Last release was Derby-10.14.2.0 on Wed May 02 2018</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-T">2018-07-18</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Activity:
+
+Derby-10.14.2.0 was released on Wed May 02 2018. This Derby release
+included several fixes to address CVE-2018-1313, which was reported
+to security@ by an external party on Feb 08, 2018.
+
+New DB project committers Georg Kallidis and Jeffery Painter were
+welcomed by community votes in May, 2018.
+
+## Health report:
+
+All 3 of the DB sub-projects showed healthy activity this quarter.
+To quote from a JDO community member: "The JDO sub-project is small
+but there are four active developers on JIRA and mail lists."
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 46 committers.
+ - Georg Kallidis was added as a committer on Sat May 05 2018
+ - Jeffery Painter was added as a committer on Sat May 05 2018
+
+## Releases:
+
+ - Last release was Derby-10.14.2.0 on Wed May 02 2018</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-U">2018-04-18</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+## Activity:
+
+Derby 10.14.1.0 was released on Oct 13, 2017. Work on Derby 10.14.2.0
+is underway and the release is anticipated in the next quarter.
+
+## Health report:
+
+In general, the software in the DB project is mature and reliable,
+and isn't undergoing much change. Activity continues to be low, but
+stable. Periodic releases occur, primarily containing bug fixes,
+and are successfully voted on.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 44 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Brett Bergquist at Tue Aug 30 2016
+
+## Releases:
+
+ - Last release was Derby-10.14.1.0 on Fri Oct 13 2017</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-R">2018-01-17</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+Derby 10.14.1.0 was released on Oct 13, 2017.
+
+During the fall, an audit revealed that some paperwork was missing from an
+old Derby security vulnerability (CVE-2010-2232) in the MITRE CVE database.
+The missing paperwork has now been supplied and the database is accurate.
+
+Following a successful vote, the Derby community has decided to sunset
+Java 8.  Derby 10.14 was the last release to support Java 8; the community
+is actively working on an upcoming release which will require Java 9.
+
+## Health report:
+
+In general, the software in the DB project is mature and reliable,
+and isn't undergoing much change. Activity continues to be low, but
+stable. Periodic releases occur, primarily containing bug fixes,
+and are successfully voted on.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 44 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Brett Bergquist at Tue Aug 30 2016
+
+## Releases:
+
+ - Derby 10.14.1.0 was released on Oct 13, 2017.</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-S">2017-10-18</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+The Derby community is working on a new release, Derby 10.14, which
+is anticipated to be released this fall.
+
+The Derby community had one student participate in the Google Summer
+of Code; the project completed successfully.
+
+## Health report:
+
+In general, the software in the DB project is mature and reliable,
+and isn't undergoing much change. Activity continues to be low, but
+stable. Periodic releases occur, primarily containing bug fixes,
+and are successfully voted on.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 44 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Brett Bergquist at Tue Aug 30 2016
+
+## Releases:
+
+ - Derby-10.13.1.1 was released on Mon Oct 24 2016</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-V">2017-07-19</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+The JDO community is busy working on release 3.2. There are a number
+of JIRA issues with bug fixes and new features included.
+
+The JDO specification is led by Oracle with Craig Russell acting as
+Oracle's representative. With Craig's retirement from Oracle, the JDO
+project will need to find a new specification lead. There are a few
+alternatives, including finding another specification lead from the
+active JDO contributors and Craig continuing to serve as specification
+lead as an individual. Craig is working with Oracle to resolve this.
+
+The Derby community has begun work on a new release, scheduled
+for the fall, and has proposed that this will be the last Derby release
+that will support Java 8.
+
+The Derby community is mentoring a student in the Google Summer
+of Code; he has passed his mid-term project evaluation successfully.
+
+## Health report:
+
+In general, the software in the DB project is mature and reliable,
+and isn't undergoing much change, so periods of low activity occur.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 44 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Brett Bergquist at Tue Aug 30 2016
+
+## Releases:
+
+ - Derby-10.13.1.1 was released on Mon Oct 24 2016</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#attachment-R">2017-04-19</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache DB Project  [Bryan Pendleton]
+
+## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+Activity in the DB project was at typical levels this quarter.
+
+The JDO project is busy finalizing the content of JDO 3.2. No ship date
+yet, but we have a number of features and bug fixes being actively worked.
+
+The Derby community is hoping to mentor a student in the
+Google Summer of Code, and have had several students express interest.
+
+The Derby community continues its long-running effort to ensure
+that Derby is compatible with the upcoming Java 9 release; members
+of the Derby community are engaged with the Java 9 community to
+test Derby using early access builds of Java 9.
+
+## Health report:
+
+In general, the software in the DB project is mature and reliable,
+and isn't undergoing much change, so periods of low activity occur.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 44 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Brett Bergquist at Tue Aug 30 2016
+
+## Releases:
+
+ - Derby-10.13.1.1 was released on Mon Oct 24 2016</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#attachment-T">2017-01-18</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+Activity in the DB project was quite low this quarter, although we
+did complete the Derby 10.13 release that was begun in the previous
+quarter.
+
+## Health report:
+
+In general, the software in the DB project is mature and sophisticated,
+and isn't undergoing much change, so periods of low activity occur.
+
+In the Derby community, the largest project underway involves an
+effort to ensure that Derby is compatible with the upcoming Java 9
+release; members of the Derby community are engaged with the Java 9
+community to test Derby using early access builds of Java 9.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 44 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Brett Bergquist at Tue Aug 30 2016
+
+## Releases:
+
+ - Derby-10.13.1.1 was released on Mon Oct 24 2016</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#attachment-Q">2016-10-19</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+1) After our July, 2016 report, we received feedback from the board:
+
+  mt: Thanks for the thoughtful response to the merging lists idea.
+      Does the PMC have any ideas/plans for the DdlUtils sub-project?
+
+  Since that time, the DB community have reached consensus that DdlUtils
+  is retired. A public vote on the DdlUtils list confirmed that consensus,
+  and the PMC are working to implement a subset of the Apache Attic
+  process to reflect that decision and to make the status be clearly
+  communicated to future visitors of the Db project site.
+
+2) The Derby student who participated in the 2016 Google Summer of Code
+   completed her project successfully
+
+3) Apache DB welcomed two new committers this quarter:
+   - Tilmann Z&auml;schke was added as a committer on Fri Jul 15 2016
+   - Brett Bergquist was added as a committer on Tue Aug 30 2016
+
+## Health report:
+
+Activity in the Apache DB community this quarter was low, but steady.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 44 committers (up 2 this quarter).
+
+## Releases:
+
+ - Last release was Derby-10.12.1.1 on Sun Oct 11 2015
+
+ - A Derby 10.13 release is underway, and will probably complete next quarter.</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#attachment-R">2016-07-20</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+1) One Google Summer of Code student is actively working on Derby development
+this summer, and has successfully passed the Google mid-term evaluation.
+
+2) A change to the Jenkins Content Security Policy (see INFRA-11746) briefly
+caused some website issues for Derby; it was successfully resolved with
+the help of the Infra team (thanks!).
+
+3) After our April, 2016 report, we received feedback from the board:
+
+  mt: Has the community considered merging some of the lower activity
+      mailing lists? It might help foster cross-component interest /
+      involvement.
+
+The DB PMC discussed this feedback (see private@db archives for June,
+2016). Since the DB project is an "umbrella" project comprised of
+several related, but mostly independent, sub-projects, the consensus
+was that trying to share mailing lists across the different sub-projects
+would be undesirable. Consolidating lists within the Derby sub-project
+was also discussed on the derby-user mailing list, and again the consensus
+was that the Derby user community would prefer to keep the current
+mailing list structure.
+
+Some of the DB sub-projects are much more active than others. For example,
+the Derby, JDO, and Torque projects remain quite active, while the DDLUtils
+sub-project is not active at all.
+
+It seems that the bottom line, for now, is that there is not much
+cross-component interest/involvement, but it is not clear that structural
+changes such as merging the mailing lists would succeed in stimulating
+such activity, because the sub-projects are, fundamentally, independent.
+
+Further suggestions from the board are certainly welcome, of course!
+
+## Health report:
+
+Activity in the Apache DB community this quarter was low, but steady.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 42 committers.
+ - No new changes to the committer base since last report.
+   BUT, an election is underway at this time for a new committer.
+
+## Releases:
+
+ - Last release was Derby-10.12.1.1 on Sun Oct 11 2015</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#attachment-S">2016-04-20</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+Two students have submitted applications for the Google Summer of Code 2016
+opening in the Derby project.
+
+Nominated and seconded by Apache DB community members, I am now
+a Member of the Apache Software Foundation. Thanks!
+
+## Health report:
+
+Activity in the Apache DB community remains low, but steady.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams on Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 42 committers.
+ - No new changes to the committer base since last report.
+
+## Releases:
+
+ - Last release was Derby-10.12.1.1 on Sun Oct 11 2015</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#attachment-Q">2016-01-20</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Activity:
+
+ - Derby-10.12.1.1 was released on Sun Oct 11 2015
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Health report:
+
+Activity in the Apache DB community remains low, but steady. Questions are
+asked and answered, issues are raised and addressed, enhancements are
+suggested, considered, and discussed.
+
+In addition to activity on the Apache-provided infrastructure (mailing
+lists, issue trackers, etc.), there is steady interest in Apache DB
+projects on other fora (e.g., StackOverflow).
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams at Sun Jan 19 2014
+
+## Committer base changes:
+
+ - Currently 42 committers.
+ - No new changes to the committer base since last report.
+
+## Releases:
+
+ - Derby-10.12.1.1 was released on Sun Oct 11 2015</pre>
+<h3 id="2015-10-21"><a href="2015/board_minutes_2015_10_21.html#attachment-M">2015-10-21</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2015-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+## Activity:
+
+Activities over the last quarter
+
+ o Google Summer of Code project in Derby came to a successful conclusion
+ o Derby 10.12 release is underway: release candidates are
+   being tested, and the release is anticipated in October.
+ o The Derby community successfully held several votes, including
+   a vote on sunsetting support for Java 7.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## PMC changes:
+
+ - Currently 43 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Matthew Adams at Sun Jan 19 2014
+
+## LDAP changes:
+
+ - Currently 42 committers and 43 committee group members.
+ - No new changes to the committee group or committership since last report.
+
+## Releases:
+
+ - Last release was JDO 3.1 on Thu Mar 19 2015</pre>
+<h3 id="2015-07-15"><a href="2015/board_minutes_2015_07_15.html#attachment-P">2015-07-15</a> &mdash; Bryan Pendleton<a class="headerlink" href="#2015-07-15" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : a relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+
+a) New project chair (Bryan Pendleton) effective May 20, 2015
+b) Google Summer of Code student in Derby has passed mid-term successfully
+c) A security vulnerability in Derby XML processing was reported on April 29
+   and acknowledged by the community. A fix is under review and will be
+   included in the next Derby release. It is registered as CVE-2015-1832
+
+=== Community ===
+No PMC changes since October 2014.
+No new committers since August 2010.</pre>
+<h3 id="2015-04-22"><a href="2015/board_minutes_2015_04_22.html#attachment-S">2015-04-22</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2015-04-22" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils: a small, easy-to-use component for working with Database
+             Definition (DDL) files.
+ o Derby: an open source relational database implemented entirely in Java.
+ o JDO: focused on building the API and the TCK for compatibility testing of
+        Java Data Object implementations providing data persistence.
+ o Torque: an object-relational mapper for Java.
+
+== Status ==
+
+Issues requiring attention from the board:
+
+At this time, I'd like to gently alert the board to the fact that I have sent
+a message to private@db to indicate my intention to resign the chair position
+because of time constraints and to ask for a volunteer to replace me. This was
+on March 23. No one has stepped up yet. It is now clear that the Derby
+project, which was the most active of our subprojects until October 2014, is
+suffering because key companies have pulled back their support of the
+project. Although some people are still monitoring the lists, the effects are
+very obvious. The last several PMC chairs (including myself) all have been
+from the Derby project, and this well has now dried up. It seems possible that
+taking on the responsibilities for all subprojects is a hurdle in finding a
+replacement for the chair position. I will follow up on this when I have more
+time to look into things.
+
+Activities over the last quarter
+
+a) The JDO community released JDO version 3.1. in March.
+b) The Derby community has embarked on a Google Summer of Code project, with
+   a mentor and student.
+c) The Derby community is still answering questions. However, new development
+   outside of GSoC has stopped.
+
+=== Community ===
+No PMC changes since January 2014.
+No new committers since August 2010.</pre>
+<h3 id="2015-01-21"><a href="2015/board_minutes_2015_01_21.html#attachment-Q">2015-01-21</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2015-01-21" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+                      Database Definition (DDL) files.
+ o Derby     : an open source relational database implemented entirely in Java.
+ o JDO        : focused on building the API and the TCK for compatibility
+                      testing of Java Data Object implementations providing data
+                      persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+a) The Derby community is adding features and fixes and working towards a
+  10.12 release
+b) Rick Hillegas of the Derby community created a 'Powered by Apache' Logo for
+  Derby. The other sub-projects have not created such logos.
+c) Activity review; the overall DB project is healthy and alive. Various
+  projects do seem to show a slowing down compared to a few years ago:
+  - an attempt a few years ago to move DdlUtils to the attic was called off by
+    its user community, but not much further activity has ensued.
+  - Derby user-list activity is still lively, but activity on the developer
+    list has recently appeared slower (e.g. 175 posts in Nov, vs. 524 posts in
+    Nov last year).
+  - Overall JDO postings have gone down, but development activity is ongoing.
+  - Torque list postings are down from a few years ago, but still show regular
+    activity.
+
+=== Community ===
+No PMC changes since January 2014.
+No new committers since August 2010.</pre>
+<h3 id="2014-10-15"><a href="2014/board_minutes_2014_10_15.html#attachment-M">2014-10-15</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2014-10-15" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+                      Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+                      testing of Java Data Object implementations providing data
+                      persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+a) The Derby Community released 10.11.1.1, a feature release
+b) The DDLUtils Community has seen activity over the last few months after
+   being almost relegated to the attic.
+c) The community continues to log and fix bugs, and ask and answer questions.
+
+=== Community ===
+No PMC changes since January 2014.
+No new committers since August 2010.</pre>
+<h3 id="2014-07-16"><a href="2014/board_minutes_2014_07_16.html#attachment-L">2014-07-16</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2014-07-16" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+a) The Derby Community released 10.10.2, a bug fix release
+b) The Derby Community is finalizing development/documentation for the 10.11
+   feature release, currently aimed for release in August.
+c) The community continues to log and fix bugs, and ask and answer questions
+   in the Derby, JDO and Torque subprojects.
+
+=== Community ===
+No PMC changes since January 2014.
+No new committers since August 2010.</pre>
+<h3 id="2014-04-16"><a href="2014/board_minutes_2014_04_16.html#attachment-O">2014-04-16</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2014-04-16" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+a) Matthew Adams joined the PMC in January.
+b) The Derby Community is testing and voting on a 10.10.2 bug fix release
+c) The Derby Community is adding features and fixes for a 10.11 feature release
+d) The DB community has voted to use svnpubsub to publish project release
+   artifacts
+e) The community continues to log and fix bugs, and ask and answer questions
+   in the Derby, JDO and Torque subprojects.
+
+=== Community ===
+No PMC changes since January 2014.
+No new committers since August 2010.</pre>
+<h3 id="2014-01-15"><a href="2014/board_minutes_2014_01_15.html#attachment-N">2014-01-15</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2014-01-15" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+a) The PMC elected Matthew Adams to join the PMC.
+b) JDO released JDO 3.1-rc1.
+c) We have adjusted the copyright notices in the Apache DB and Apache Derby
+   part of the web pages to better reflect Apache branding.
+d) The community continues to log and fix bugs in the Derby, JDO and Torque
+   subprojects.
+
+=== Community ===
+No PMC changes since August 2011.
+No new committers since August 2010.</pre>
+<h3 id="2013-10-16"><a href="2013/board_minutes_2013_10_16.html#attachment-M">2013-10-16</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2013-10-16" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ * DdlUtils : a small, easy-to-use component for working with
+                  Database Definition (DDL) files.
+ * Derby    : an open source relational database implemented entirely in Java.
+ * JDO      : focused on building the API and the TCK for compatibility
+                  testing of Java Data Object implementations providing data
+                  persistence.
+ * Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+* Derby decided to postpone the 10.10.2 release until there are officially
+  released binaries for Java 8.
+* Derby's GSoC student's project finished successfully to mutual benefit of the
+  student and Derby.
+* JDO voted to release JDO 3.1-rc1.
+* The DB PMC has received interest in reviving DDLUtils community, and so the move to
+  the Attic was postponed.
+
+=== Community ===
+No PMC changes since August 2011.
+No new committers since August 2010.</pre>
+<h3 id="2013-07-17"><a href="2013/board_minutes_2013_07_17.html#attachment-K">2013-07-17</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2013-07-17" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+
+DdlUtils is on its way to the Attic.
+
+Activities over the last quarter
+a) - Derby is preparing for a 10.10.2 maintenance/bug fix release in September/October, and working towards a next release 10.11 thereafter.
+b) Derby has 1 GSoc student working on increasing test code coverage.
+c) The Derby team updated the javadoc on our web site after Oracle's report of a vulnerability.
+d) Derby took advantage of the svngit2jira service.
+e) Torque tightened their wiki because of increased spam-attacks.
+f) JDO is working on a 3.1 Release.
+
+=== Community ===
+No PMC changes since August 2011.
+No new committers since August 2010.
+
+=== Releases ===
+- Derby 10.10.1. was released on April 15, 2013.</pre>
+<h3 id="2013-04-17"><a href="2013/board_minutes_2013_04_17.html#attachment-O">2013-04-17</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2013-04-17" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ * DdlUtils : a small, easy-to-use component for working with
+                  Database Definition (DDL) files.
+ * Derby    : an open source relational database implemented entirely in Java.
+ * JDO      : focused on building the API and the TCK for compatibility
+                  testing of Java Data Object implementations providing data
+                  persistence.
+ * Torque   : an object-relational mapper for Java.
+
+-- Status --
+There are no issues requiring board attention at this time.
+
+-- Activities over the last quarter --
+* Torque has released version 4.0.
+* Derby is testing version 10.10.1.
+* Branding: the Derby web pages were checked for the first step of
+  the Branding requirements - links were put in to point to the Apache
+  pages. This was already in place for the top level (DB) project page.
+* The Derby wiki pages have become a target of spammers.
+  The community has decided to lock the wiki down and only allow
+  changes by approved editors.
+* The PMC has not take any further action regarding moving DdlUtils
+  to the Attic - it was discussed before the October report.
+
+-- Community --
+No PMC changes since August 2011.
+No new committers since August 2010.
+
+-- Releases --
+- Torque version 4.0 was released
+- releases testing/voting in progress for Derby 10.10.1.</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#attachment-K">2013-01-16</a> &mdash; Myrna van Lunteren<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely
+              in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+a) The effort to migrate the DB site to the CMS is complete.
+b) The PMC has not take any further action regarding moving DdlUtils
+to the Attic - it was discussed before the October report.
+c) Torque has been working on version 4.0; a vote was called but the
+release is not yet official.
+d) The JDO project is finalizing the 3.1 release; the logistical
+component related to the Java Community Process (of which JDO is part),
+is underway.
+e) Derby voted and approved a the 10.8.3 maintenance release, the
+final publishing/announcement steps are in progress.
+f) Derby is working on a 10.9 maintenance release, but it was decided
+to hold until the site migration had been completed.
+g) Derby is working towards a 10.10 release.
+
+=== Community ===
+No PMC changes since August 2011.
+No new committers since August 2010.
+
+=== Releases ===
+- releases voting/publishing/announcing in progress:
+   Torque 4.0, JDO 3.1, Derby 10.8.3.</pre>
+<h3 id="2012-10-17"><a href="2012/board_minutes_2012_10_17.html#attachment-I">2012-10-17</a> &mdash; Kristian Waagan<a class="headerlink" href="#2012-10-17" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java.
+ o JDO      : focused on building the API and the TCK for compatibility
+              testing of Java Data Object implementations providing data
+              persistence.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter
+a) A new PMC chair was elected - congratulations to Myrna van Lunteren :)
+   (resolution proposed for the October board meeting)
+b) An effort is ongoing to migrate the DB site to the CMS.
+c) The two GSoC students working in the Derby community passed.
+d) The PMC discussed moving DdlUtils to the Attic - no action taken yet.
+e) Torque released version 4.0beta1.
+f) Derby is working on a 10.8 maintenance release.
+g) Derby is working on a 10.9 maintenance release.
+h) An informal Derby-lunch was held in San Francisco, allowing those
+   interested and being able to to meet up over their lunch-boxes :)
+
+=== Community ===
+No PMC changes since August 2011.
+No new committers since August 2010.
+The above facts caused the board to inquiry about the situation. A reply [1]
+was compiled after gathering feedback from the PMC. The PMC is aware of
+the situation, but doesn't consider it as a reason for major concern.
+
+This quarter was somewhat more lively for some of the subprojects, with
+a moderate increase on the user and/or dev lists.
+
+=== Releases ===
+Torque: beta feature release 4.0beta1 (September 24, 2012)
+
+
+[1] The board was CC'ed, see thread "[REPORT] Apache DB July 2012".</pre>
+<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#attachment-I">2012-07-25</a> &mdash; Kristian Waagan<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java
+ o JDO      : focused on building the JDO API and the TCK for
+              compatibility testing of JDO implementations.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter, which has been very quiet for the PMC:
+ 1) Two students were selected for their GSoC 2012 proposals for Derby.
+ 2) Derby posted Maven artifacts for the latest release on
+    repository.apache.org (people.a.o phased out).
+ 3) Issue regarding distribution of a file without redistribution rights in
+    Derby has been addressed.
+
+Outstanding work:
+ a) Wrap up branding requirements compliance check.
+ b) Address the svnpubsub migration for the web sites.
+
+== Community ==
+No PMC changes since August 2011.
+No new committers since August 2010.
+
+Traffic on the user lists is pretty low. User questions are generally being
+answered. A few unanswered questions on one (very low-volume) list, will
+follow up.
+
+== Releases ==
+Derby: feature release 10.9.1.0 (June 25, 2012)</pre>
+<h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#attachment-K">2012-04-18</a> &mdash; Kristian Waagan<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with
+              Database Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java
+ o JDO      : focused on building the JDO API and the TCK for
+              compatibility testing of JDO implementations.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter, which has been a quiet one for the PMC:
+ 1) Apache DB is still not fully compliant with the branding
+    requirements. No progress this quarter (same as last quarter).
+ 2) Discussed an issue regarding distribution of a file without
+    redistribution rights in Derby. Changes are being implemented.
+ 3) Discussed an incoming new project proposal (proposed once before)
+    and answered the inquiry.
+ 4) Three PMC members have flagged their interest to be mentors in
+    Google Summer of Code.
+
+== Community ==
+No PMC changes since August 2011.
+No new committers since August 2010.
+Traffic on the user lists is pretty low. User questions are being answered.
+
+== Releases ==
+No releases this quarter.
+Derby is working on the 10.9 feature release.
+JDO is working on the 3.1 maintenance release.
+Torque is working on the 4.0 feature release</pre>
+<h3 id="2012-01-24"><a href="2012/board_minutes_2012_01_24.html#attachment-I">2012-01-24</a> &mdash; Kristian Waagan<a class="headerlink" href="#2012-01-24" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with Database
+              Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java
+ o JDO      : focused on building the JDO API and the TCK for
+              compatibility testing of JDO implementations.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter:
+ 1) Apache DB is still not fully compliant with the branding
+    requirements. No progress this quarter (same as last quarter).
+ 2) Ongoing efforts in the subprojects:
+     o DdlUtils: low activity maintenance
+     o Derby: focus on bugfixing, some feature work
+     o JDO: continued work on 3.1 maintenance release
+     o Torque: continued work on Torque 4
+
+== Community ==
+No PMC changes since August 2011.
+No new committers since August 2010.
+
+List subscriber counts stable (see July 2011 report for numbers).
+
+== Releases ==
+Derby: maintenance release 10.8.2.2 (October 24, 2011)
+JDO: maintenance release 3.0.1 (November 13, 2011)</pre>
+<h3 id="2011-10-26"><a href="2011/board_minutes_2011_10_26.html#attachment-H">2011-10-26</a> &mdash; Kristian Waagan<a class="headerlink" href="#2011-10-26" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with Database
+              Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java
+ o JDO      : focused on building the JDO API and the TCK for
+              compatibility testing of JDO implementations.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter:
+ 1) Apache DB is still not fully compliant with the branding
+    requirements. No progress this quarter.
+ 2) Ongoing efforts in the subprojects:
+     o DdlUtils: low activity maintenance
+     o Derby: continued work on 10.8.2 maintenance release, postponed
+       due to technical issues (progress is made, RC3 being tested)
+     o JDO: work on 3.1 maintenance release, and a 3.0.1 release
+       (OSGi usability integration).
+     o Torque: continued work on Torque 4
+ 3) A few potential Derby security issues were discussed by the PMC.
+ 4) The two GSoC students both passed.
+ 5) Derby decided to drop support for J2SE 1.4 in the next feature
+    release (most likely 10.9).
+
+== Community ==
+Tiago Espinha joined the DB PMC in August 2011.
+No new committers since August 2010.
+
+List subscriber counts stable (see July report for numbers).
+
+== Releases ==
+No new releases this quarter.</pre>
+<h3 id="2011-07-20"><a href="2011/board_minutes_2011_07_20.html#attachment-F">2011-07-20</a> &mdash; Kristian Waagan<a class="headerlink" href="#2011-07-20" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils : a small, easy-to-use component for working with Database
+              Definition (DDL) files.
+ o Derby    : an open source relational database implemented entirely in Java
+ o JDO      : focused on building the JDO API and the TCK for compatibility
+              testing of JDO implementations.
+ o Torque   : an object-relational mapper for Java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter:
+ 1) Apache DB is still not fully compliant with the branding
+    requirements. Little progress this quarter.
+ 2) Ongoing efforts in the subprojects:
+     o DdlUtils: low activity maintenance
+     o Derby: work on 10.8.2 maintenance release
+     o JDO: work on 3.1 maintenance release
+     o Torque: continued work on Torque 4
+ 3) Two GSoC students are being mentored in the Derby project.
+ 4) OJB (ObJectRelationalBridge) has been retired and moved
+    to the Attic.
+
+== Community ==
+No PMC changes since December 2010.
+No new committers since August 2010.
+
+List subscribers (user/dev):
+     o DdlUtils:   119/ 63
+     o Derby:      510/203
+     o JDO:         74/ 53
+     o Torque:     167/ 70
+
+== Releases ==
+Derby: feature release 10.8.1.2, April 29 2011</pre>
+<h3 id="2011-04-20"><a href="2011/board_minutes_2011_04_20.html#attachment-G">2011-04-20</a> &mdash; Kristian Waagan<a class="headerlink" href="#2011-04-20" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+ o DdlUtils - a small, easy-to-use component for working with Database
+              Definition (DDL) files.
+ o Derby    - an open source relational database implemented entirely in Java
+ o JDO      - focused on building the JDO API and the TCK for compatibility
+              testing of JDO implementations.
+ o Torque   - an object-relational mapper for java.
+
+== Status ==
+There are no issues requiring board attention at this time.
+
+Activities over the last quarter:
+ 1) The PMC discussed concerns regarding licensing for Apache Derby and
+    JDBC 4.1. Legal was consulted, see LEGAL-86. The conclusion reached is that
+    Derby doesn't violate any licensing terms by releasing 10.8.1 with JDBC 4.1
+    support.
+ 2) Some trademarks work done, more work remains. DB is not yet compliant.
+ 3) Moving OJB to the Attic is still in progress, see issue ATTIC-113 for
+    details.
+ 4) Removed old releases from dist.
+ 5) The Derby community is about to push 10.8.1 out the door.
+
+== Community ==
+No PMC changes since December 2010.
+No new committers since August 2010.
+
+== Releases ==
+No new releases, see previous board report for details.</pre>
+<h3 id="2011-01-19"><a href="2011/board_minutes_2011_01_19.html#attachment-F">2011-01-19</a> &mdash; Kristian Waagan<a class="headerlink" href="#2011-01-19" title="Permalink">&para;</a></h3>
+<pre>The Apache DB TLP consists of the following subprojects:
+o DdlUtils - a small, easy-to-use component for working with Database
+  Definition (DDL) files.
+o Derby - an open source relational database implemented entirely in Java
+o JDO - focused on building the JDO API and the TCK for compatibility
+  testing of JDO implementations.
+o ObJectRelationalBridge (OJB) - an Object/Relational mapping tool that
+  allows transparent persistence for Java Objects against relational
+  databases.
+o Torque - an object-relational mapper for java.
+
+Activities over the last quarter:
+1) Asked trademarks@ for clarification on how to use a trademark
+   (adjective vs noun/verb). Feedback received, work on implementing the
+   guidelines not started.
+2) The PMC voted to retire the OJB subproject and move it to the Attic.
+   Process in progress.
+3) Project name reservations on apache-extras.org .
+
+Community
+==========
+Lily Wei and Greg Monroe were added to the PMC.
+No new committers since August 2010.
+
+Traffic on the lists for Derby and JDO is steady, both have most activity
+on the dev lists.
+Torque has some traffic, whereas DdlUtils has very little (the PMC
+discussed this issue earlier and still considers the project to be
+useful).
+OJB will be retired.
+
+Releases
+=======
+DdlUtils: no new releases (1.0, June 2007)
+Derby: feature release 10.7.1.1, December 14 2010
+JDO: no new releases (3.0, April 2010)
+Torque: no new releases (3.3, February 2008)</pre>
+<h3 id="2010-10-20"><a href="2010/board_minutes_2010_10_20.html#attachment-E">2010-10-20</a> &mdash; Rick Hillegas<a class="headerlink" href="#2010-10-20" title="Permalink">&para;</a></h3>
+<pre>Development in the DB project continued over the last quarter:
+
+1) The PMC elected Kristian Waagan as its next chair, pending board approval.
+
+2) Derby approved a maintenance release, 10.6.2.1. Planning has started for a
+10.7 feature release later this year.
+
+3) Derby's 3 summer-of-code projects completed successfully.
+
+4) Tiago Espinha was elected as a Derby committer.
+
+5) JDO published a maintenance release, 3.0.</pre>
+<h3 id="2010-07-21"><a href="2010/board_minutes_2010_07_21.html#attachment-E">2010-07-21</a> &mdash; Rick Hillegas<a class="headerlink" href="#2010-07-21" title="Permalink">&para;</a></h3>
+<pre>Development in the DB project continued over the last quarter:
+
+1) Derby published a feature release, 10.6.1.0. Derby developers are now
+working on a 10.6.2 distribution for release later this year. Developers
+are also working on the next feature vehicle, 10.7.1.
+
+2) Derby committers are mentoring three summer-of-code projects.
+
+3) Lily Wei was elected as a Derby committer.
+
+4) JDO is vetting release 3.0.
+
+5) Work by Torque's one active committer continues steadily.
+
+6) Users continue to log Ddlutils issues although mailing list traffic is
+light and six months have passed since the last commit. The DB PMC
+believes that Ddlutils is still a living albeit quiet project.
+
+7) The DB PMC broached the topic of moving ObjectRelationalBridge to the
+Attic. However, no action was taken.
+
+8) The topic of DB's umbrella nature came up again. There was consensus
+that we adequately oversee two active projects, Derby and JDO. No one had
+a better idea of how to oversee less active projects like Torque and
+Ddlutils.</pre>
+<h3 id="2010-04-21"><a href="2010/board_minutes_2010_04_21.html#attachment-E">2010-04-21</a> &mdash; Rick Hillegas<a class="headerlink" href="#2010-04-21" title="Permalink">&para;</a></h3>
+<pre>*** Private note on. ***
+
+The DB PMC approved a plan for handling a security flaw in one of the DB
+projects. A fix for the flaw will be released soon. The flaw is tracked by
+this Common Vulnerabilities and Exposures id: CVE-2009-4269.
+
+*** Private note off. ***
+
+Development in the DB project continued over the last quarter:
+
+1) Derby is wrapping up work for the next feature release, 10.6.
+   See http://wiki.apache.org/db-derby/DerbyTenSixOneRelease
+
+2) Summer-of-code students are discussing potential projects with
+   Derby committers.
+
+3) Thomas Fischer contributed a major rewrite of Torque's generator module,
+   making it more flexible and easier to maintain.
+
+4) No status updates were received from DdlUtils, JDO, or
+   ObjectRelationalBridge.</pre>
+<h3 id="2010-01-20"><a href="2010/board_minutes_2010_01_20.html#attachment-G">2010-01-20</a> &mdash; Rick Hillegas<a class="headerlink" href="#2010-01-20" title="Permalink">&para;</a></h3>
+<pre>Development in the DB project continued over the last quarter:
+
+1) Derby is working on a new feature release, 10.6. Derby's summer-of-code
+   mentees continue to contribute.
+
+2) JDO is preparing for a maintenance release, JDO 2.3.
+
+3) Torque is relatively quiet, some ideas are being discussed for a major
+   4.0 release.
+
+4) DdlUtils and ObjectRelationalBridge did not report any status updates
+   this quarter.
+
+5) For the first time in my memory, a security issue came to the DB PMC.
+   We are following the Apache security process (
+   http://www.apache.org/security/committers.html ) and have mapped out a
+   solution which satisfies the person who raised this security issue. Given
+   the small number of vulnerabilities which come to us, we are not inclined
+   to create a special mailing list for DB security discussions; the full PMC
+   list seems adequate.</pre>
+<h3 id="2009-10-21"><a href="2009/board_minutes_2009_10_21.html#attachment-F">2009-10-21</a> &mdash; Rick Hillegas<a class="headerlink" href="#2009-10-21" title="Permalink">&para;</a></h3>
+<pre>Over the past quarter, development in the DB project continued:
+
+1) Derby produced a bug-fix release, 10.5.2.0. This was deprecated
+soon afterwards.
+
+2) Derby produced a replacement release, including more bug-fixes: 10.5.3.0.
+
+3) Derby mentored four summer-of-code students, all of whom made
+valuable contributions and received passing grades.
+
+4) Derby posted plans for an upcoming feature release, 10.6.1.</pre>
+<h3 id="2009-07-15"><a href="2009/board_minutes_2009_07_15.html#attachment-F">2009-07-15</a> &mdash; Rick Hillegas<a class="headerlink" href="#2009-07-15" title="Permalink">&para;</a></h3>
+<pre>Over the past quarter, development in the DB projects continued steadily:
+
+1) Derby produced a major feature release, 10.5.1. The community then
+proceeded to work on a follow-on maintenance release, 10.5.2, slated for
+delivery in August.
+
+2) Java Data Objects produced an early access release, 2.3.
+
+3) Ole Solberg was elected as a Derby committer.
+
+4) Derby mentored four summer-of-code students.</pre>
+<h3 id="2009-04-15"><a href="2009/board_minutes_2009_04_15.html#attachment-I">2009-04-15</a> &mdash; Rick Hillegas<a class="headerlink" href="#2009-04-15" title="Permalink">&para;</a></h3>
+<pre>During the last quarter, January - March 2009:
+
+1) Derby began vetting release 10.5.1.
+
+2) Summer of Code proposals were posted and mentors volunteered.
+
+3) JDO 2.2 fixes were applied to multiply-mirrored maven metadata.
+
+4) JDO 2.3 work continued with contributions from four of the committers
+   and feedback from the community and members of the JDO expert group.
+
+5) Google announced that their first Java App Engine offering would include
+   JDO as an application interface to BigTable, using the JDO 2 API and the
+   JDO RI (DataNucleus) as the implementation.
+
+6) Torque-4 development fixes were applied.
+
+7) Reorganization of the Torque source tree continued.</pre>
+<h3 id="2009-01-21"><a href="2009/board_minutes_2009_01_21.html#attachment-I">2009-01-21</a> &mdash; Rick Hillegas<a class="headerlink" href="#2009-01-21" title="Permalink">&para;</a></h3>
+<pre>During the last quarter, October-December 2008:
+
+1) Jean Anderson resigned as DB chair and the PMC elected Rick
+Hillegas to succeed her.
+
+2) The DB PMC inducted Kim Haase.
+
+3) The DB PMC released JDO 2.2.</pre>
+<h3 id="2008-10-15"><a href="2008/board_minutes_2008_10_15.html#attachment-D">2008-10-15</a> &mdash; Jean T. Anderson<a class="headerlink" href="#2008-10-15" title="Permalink">&para;</a></h3>
+<pre>During July-September 2008 two Apache DB subprojects produced releases
+and we also made changes to the PMC. Apache DB was otherwise pretty quiet.
+Details are below.
+
+Releases:
+  - JDO 2.1.1
+  - Derby 10.4.2.0
+
+PMC Changes:
+  - Andy Jefferson was added as a PMC member.
+  - Jean Anderson announced her intention to step down as PMC chair when
+    a new chair has been selected.</pre>
+<h3 id="2008-07-16"><a href="2008/board_minutes_2008_07_16.html#section-6D">2008-07-16</a> &mdash; Jean T. Anderson<a class="headerlink" href="#2008-07-16" title="Permalink">&para;</a></h3>
+<pre>See Attachment  D</pre>
+<h3 id="2008-04-16"><a href="2008/board_minutes_2008_04_16.html#attachment-E">2008-04-16</a> &mdash; Jean T. Anderson<a class="headerlink" href="#2008-04-16" title="Permalink">&para;</a></h3>
+<pre>It was a busy quarter for Apache DB. Two releases were produced and progress
+made towards a third. Three new committers were added, and subprojects were
+reviewed for compliance with the export notification policy. Details are below.
+
+Releases:
+
+- Torque 3.3-RC3 released as 3.3
+- JDO 2.1
+- Derby is working on version 10.4
+
+New committers:
+
+- Camilla Haase (Derby)
+- John Embretsen (Derby)
+- Thomas Nielsen (Derby)
+
+Export notification policy:
+
+- TSU notifications are in place for DdlUtils, Derby, OJB, and Torque.
+- No notice is needed for JDO.</pre>
+<h3 id="2008-01-16"><a href="2008/board_minutes_2008_01_16.html#attachment-D">2008-01-16</a> &mdash; Jean T. Anderson<a class="headerlink" href="#2008-01-16" title="Permalink">&para;</a></h3>
+<pre>During the last quarter in Apache DB, we added one new PMC member and
+worked on two software releases. Many attended ApacheCon US in Atlanta,
+and there were two presentations. There are no gnarly issues that
+require board attention. Details are below.
+
+New PMC Member:
+
+- Laura Stewart
+
+Releases:
+
+- Derby 10.3.2.1 (released on December 10, 2007)
+- Torque 3.3-RC3 (released on January 11, 2008)
+
+ApacheCon:
+
+There were two Derby sessions at ApacheCon US in Atlanta in November:
+- Rick Hillegas presented on "Saucer Separation".
+- Jeanfrancois Arcand and Francois Orsini presented on "Real-Time RIA's
+  with Apache Derby and Grizzly Comet".</pre>
+<h3 id="2007-10-17"><a href="2007/board_minutes_2007_10_17.html#attachment-C">2007-10-17</a> &mdash; Jean T. Anderson<a class="headerlink" href="#2007-10-17" title="Permalink">&para;</a></h3>
+<pre>Apache DB October 2007
+======================
+
+Summary
+-------
+This was a busy quarter for Apache DB. There was one
+software release, 3 new committers, 6 new pmc members,
+and progress on processing the software grant for the
+contribution of the Village code to Torque. More details
+are below.
+
+Releases
+--------
+Derby 10.3.1.4 was released on August 10.
+
+New Committers
+--------------
+- Andy Jefferson (JDO)
+- Dyre Tjeldvoll (Derby)
+- &Oslash;ystein Gr&oslash;vlen (Derby)
+
+New DB PMC Members
+------------------
+- Army Brown
+- Myrna van Lunteren
+- Mamta Satoor
+- Suresh Thalamati
+- Kristian Waagan
+- Dag Wanvik
+
+Followups
+---------
+The July 2007 report noted that the author of Village offered
+the code to Torque and faxed in the software grant.  There was
+something of a mixup in the recording of the grant, but that has
+been sorted out now and we're proceeding with the Incubator's
+"short form" IP clearance process.
+
+New Issues
+----------
+There was a discussion on whether Derby should propose that it
+move out of DB and into its own top level project. Most feedback
+so far indicates Derby would like to stay put for now, but there
+is acknowledgement that it might move at some point in the future.</pre>
+<h3 id="2007-07-18"><a href="2007/board_minutes_2007_07_18.html#attachment-C">2007-07-18</a> &mdash; Jean T. Anderson<a class="headerlink" href="#2007-07-18" title="Permalink">&para;</a></h3>
+<pre>Apache DB quarterly report - July 2007
+
+Committers / PMC Members:
+No new committers or PMC members were added.
+
+DdlUtils released 1.0 in June -- its first! Congratulations!
+
+Derby is working energetically on its 10.3 release.
+
+JDO is busy implementing the JSR-243 API and TCK in the open,
+corresponding to the changes to the JCP-approved JDO 2.1
+specification, also being done in the open. No release date
+is planned yet.
+
+Torque uses Village, a Java API that uses JDBC to simplify
+SQL access to databases. The author of Village announced his
+intent to stop hosting the CVS/SVN tree and offered the code
+to Torque. He faxed in the software grant and Torque is waiting
+for it to be recorded.
+
+Issues:
+Regarding the contribution of Village code to Torque, some feel
+that the bureaucracy associated with code contributions is
+unnecessarily weighty. In particular, some feel that a software
+grant should not have been necessary in this case because the
+Village author is himself an ASF member.</pre>
+<h3 id="2007-04-25"><a href="2007/board_minutes_2007_04_25.html#attachment-C">2007-04-25</a> &mdash; Jean T. Anderson<a class="headerlink" href="#2007-04-25" title="Permalink">&para;</a></h3>
+<pre>During January-March 2007 Apache DB added one committer, released
+one product, processed two software grants, and started discussions
+with the XML PMC regarding a potential move of Xindice to DB.
+
+New committers:
+  * Dag Wanvik (Derby)
+
+Releases:
+  * Torque released 3.3-RC2
+  * Derby started discussing its next release.
+
+Legal:
+  * Two IBM software grants were processed for contributions to Derby.
+    Note: these were done according to the Incubator's "short form" IP
+    clearance process for expediency.
+
+Projects:
+  * Initial discussions occurred with the XML PMC regarding Xindice,
+    and whether the developers would like to move to the DB PMC.  Next
+    step is for the XML PMC to start discussions on the Xindice dev
+    list.</pre>
+<h3 id="2007-01-17"><a href="2007/board_minutes_2007_01_17.html#attachment-C">2007-01-17</a> &mdash; Jean T. Anderson<a class="headerlink" href="#2007-01-17" title="Permalink">&para;</a></h3>
+<pre>It was a busy quarter for the DB Project. We added seven
+committers, released two products, and one of the projects
+we sponsored in the Incubator graduated. By now most DB
+subprojects have updated source code headers to comply with
+the new policy at www.apache.org/legal/src-headers.html,
+and Derby complied with the cryptographic requirements
+outlined at www.apache.org/dev/crypto.html.
+
+New committers:
+ * Army Brown (Derby)
+ * Greg Monroe (Torque)
+ * Fernanda Pizzorno (Derby)
+ * Mamta Satoor (Derby)
+ * Laura Stewart (Derby)
+ * Myrna van Lunteren (Derby)
+ * Kristian Waagan (Derby)
+
+Releases:
+ * Derby 10.2.2.0
+ * Torque 3.3-RC1
+
+Incubator:
+ * Cayenne graduated into a top level project
+
+These projects have completed source code header updates:
+ * DdlUtils
+ * Derby
+ * JDO
+ * Torque
+
+Follow up from October Board report:
+Brian McCallister's 10/17/2006 DB report to the Board
+mentioned the "chicken and egg problem" with the Derby
+10.2.1.6 release. In short, code implementing JDBC 4
+features could not be released in binary form until
+after Java SE 6 was released, so 10.2.1.6 included only
+source with instructions on how to build it. Java SE 6
+was released in December and Derby subsequently released
+10.2.2.0, which includes the compiled JDBC 4 apis along
+with some bug fixes.</pre>
+<h3 id="2006-10-25"><a href="2006/board_minutes_2006_10_25.html#attachment-C">2006-10-25</a> &mdash; Brian McCallister<a class="headerlink" href="#2006-10-25" title="Permalink">&para;</a></h3>
+<pre>Releases:
+       Derby released version 10.2.1.6 in early October.
+
+Derby and JDBC 4.0:
+
+Some interesting thing have happened with regard to Sun's decision to
+include Derby as part of the Java Development Kit version 1.6 (or 6.0,
+depends on where you look). There was a bit of a chicken and egg
+problem where the we wanted this to happen so tried to work towards
+getting a JDBC 4.0 (the JDBC version for JDK 1.6) release out in the
+right time frame, but not being able to make a release against the new
+APIs until after JDK 1.6 was released.
+
+At one point some code was checked in which made Derby unreleasable
+under the licensing terms of the JDBC 4 specification. The short
+summary is that until jdk 1.6 is released, there is some code
+implementing its features in the repository, which is legally alright,
+but which cannot be included in a binary distribution. The 10.2.1.6
+release includes this code in source format, with instructions on how
+to make use of it. After jdk 1.6 is released it is expected that Derby
+will cut another release on the 10.2 branch which includes compiled
+JDBC 4 apis.
+
+Geir Magnusson, Jr., has done extraordinary work navigating JCP
+licensing and arranging for this to happen. Not everyone on the DB PMC
+is satisfied with the current situation, and an ongoing effort is
+underway to make sure things like this are handled better in the
+future. Geir has stated his intention to more fully explore the
+situation in the JCP Committee report, so I will leave the deeper
+licensing details to Geir.
+
+
+ApacheCon US:
+       There were a number of excellent talks on DB subprojects at
+       ApacheCon US this month!
+
+
+I (Brian McCallister) have announced my intention to step down as PMC
+chair when a new chair has been selected.</pre>
+<h3 id="2006-07-19"><a href="2006/board_minutes_2006_07_19.html#attachment-T">2006-07-19</a> &mdash; Brian McCallister<a class="headerlink" href="#2006-07-19" title="Permalink">&para;</a></h3>
+<pre>It has been an exciting quarter for the DB project. We added nine
+folks to the PMC, have two exciting projects which we are sponsoring
+in the Incubator, and
+
+PMC Additions:
+    Thomas Vandahl
+    Andrew McIntyre
+    Rick Hillegas
+    Knut Anders Hatlen
+    Kathey Marsden
+    Mike Matrigali
+    Satheesh Bandaram
+    Bernt Johnsen
+    Bryan Pendleton
+
+New Committers:
+    Halley Pacheco de Oliveira (derby)
+    Suresh Thalamati (derby)
+    Andreas Kornelliussen (derby)
+
+Releases:
+    Derby released 10.1.3
+    JDO Released the JSR-243 API and TCK under the Apache License
+
+Incubator Action:
+    Cayenne
+        Made final non-Apache release, seem to be doing well.
+        Has a quite happy and productive community going.
+
+    OpenJPA
+        Initial codebase import has been made!
+
+Various Notes:
+    Craig Russell: "[JDO] continues to make progress toward a maintenance
+                    release of the API and TCK, using the wiki and email
+                    as communication vehicles."
+
+    Geir Magnusson, Jr.: "Apache JDO rocks! :)"
+
+    Thomas Fischer: "Torque is making progress to the 3.2.1 release."
+
+    Derby is scheduled to be included as part of Sun's Java 6 development kit.</pre>
+<h3 id="2006-04-26"><a href="2006/board_minutes_2006_04_26.html#attachment-C">2006-04-26</a> &mdash; Brian McCallister<a class="headerlink" href="#2006-04-26" title="Permalink">&para;</a></h3>
+<pre>New PMC Members:
+* Michelle Caisse
+* Michael Bouschen
+
+New Committers:
+* Bryan Pendleton (Derby)
+* Rick Hillegas (Derby)
+* Knut Anders Hatlen (Derby)
+
+Releases:
+* JDO 2 API Released
+
+Incubator Activity:
+* Cayenne entered incubation sponsored by the DB project. Bill
+Dudney, Jim Jagielski, Jean Anderson, and Brian McCallister are
+serving as mentors.
+
+* OpenJPA entered incubation under sponsorship of the Incubator PMC.
+This is not a DB project but is closely related to the DB project and
+hopefully we will all be able to help each other out more.
+
+* Support for Axion's incubation has been officially withdrawn by the
+DB project.
+
+Noteworthy Events:
+* JDO 2 JSR passes in the Java Community Process. API's, TCK, and RI
+are all open source.</pre>
+<h3 id="2006-01-18"><a href="2006/board_minutes_2006_01_18.html#attachment-C">2006-01-18</a> &mdash; Brian McCallister<a class="headerlink" href="#2006-01-18" title="Permalink">&para;</a></h3>
+<pre>PMC:
+* Added Craig Russell
+* Added David Van Couvering
+
+Derby:
+* Released version 10.1.2.1
+* Decided on a logo
+
+Torque:
+* Released version 3.2
+* Added Thomas Vandahl as a committer
+
+OJB:
+* Released version 1.0.4
+* Finished moving to subversion
+
+JDO:
+* Graduated incubator
+
+DdlUtils:
+* Added Martin van den Memt as a committer
+* Presently preparing for a 1.0 release
+
+Notes:
+* In process of officially withdrawing support for Axion and asking
+  incubator to remove resources
+* Some concern has been expressed about DB becoming an umbrella
+  prokect</pre>
+<h3 id="2005-10-26"><a href="2005/board_minutes_2005_10_26.html#attachment-B">2005-10-26</a> &mdash; Brian McCallister<a class="headerlink" href="#2005-10-26" title="Permalink">&para;</a></h3>
+<pre>With Derby's graduation from the incubator the DB project has three
+products on which to report.
+
+Derby added 3 new PMC members immediately:  Jean T. Anderson, Daniel
+John Debrunner, and Tomohito Nakayama.  Recently a fourth was nominated
+and David Van Couvering is awaiting acknowledgement by a board member.
+Three new Derby committers were added in July: David Van Couvering,
+Bernt Johnsen and Oyvind Bakksjo.  Derby graduated out of the Apache
+Incubator at the end of July to join the DB Project, and it made its
+first official release, 10.1.1.0, available on August 3. The developer
+and user communities are both thriving with 242 and 356 subscribers,
+respectively.  There has been a increase in proposal collaboration since
+the creation of the Derby wiki in September.
+
+OJB has added a committer, Vadim Gritsenko, and is preparing for a
+release in the near future.  They are delaying conversion to svn until
+the 1.0.4 release can be made. The Torque project is busily working
+towards its 3.2 release. It has put out two RCs and a final release is
+expected near the end of October.  The code repository has been moved
+from CVS to Subversion.  The project is currently encouraging longtime
+contributors to become committers; Thomas Vandahl has been voted in as a
+committer. The users list shows an active and growing community around
+Torque. There has been some restructuring of documentation, though that
+is still seen as an area needing improvement.
+
+Finally, at my request that someone else be given the helm, the DB PMC
+voted that Brian McCallister be appointed Chair and I submitted a draft
+proposal to that effect in August.</pre>
+<h3 id="2005-07-28"><a href="2005/board_minutes_2005_07_28.html#attachment-B">2005-07-28</a> &mdash; John McNally<a class="headerlink" href="#2005-07-28" title="Permalink">&para;</a></h3>
+<pre>Development
+-----------
+
+Torque produced a release candidate, torque-3.2-rc1.  OJB did not have
+a release this quarter, though the project is healthy and work
+continues on a 1.1 release.
+
+Infrastructure
+--------------
+
+Torque is in the process of converting to svn, likely complete by the
+date of board meeting.
+
+Management
+----------
+
+Thomas Fischer is added to the PMC.
+
+Derby is in the process of graduating from the incubator.
+
+At my request for volunteers for PMC chair, Brian McCallister raised
+his hand.  The PMC has not discussed this further or voted on this
+yet, but it is likely to come as a request in the next board meeting.</pre>
+<h3 id="2005-07-28-2"><a href="2005/board_minutes_2005_07_28.html#derby">2005-07-28</a> &mdash; as Derby, in the Incubator's report<a class="headerlink" href="#2005-07-28-2" title="Permalink">&para;</a></h3>
+<pre>[Note: Derby is about to leave the Incubator, and enter the DB PMC]
+
+Here is what Derby has been up to in Q2 (April-June).
+
+Derby added Tomohito Nakayama as a new committer.
+[Early Q3 note: two more committers were added and derby-dev is voting
+on another.]
+
+Plans were completed for a 10.1 incubator release and candidate jars
+were made available for testing and review.  [Early Q3 note: the vote
+passed for the candidate and Andrew McIntyre requested permission from
+general@incubator.apache.org to make it available as an incubator release.]
+
+The Derby community is thriving. Today
+http://people.apache.org/~coar/mlists.html#db.apache.org shows that the
+derby-dev list is up to 225 subscribers and derby-user up to 322 (both
+figures include digest subscribers).
+
+There is heavy development activity on both the code front and the doc
+front.
+
+Many code challenges are being worked on via the derby-dev list and the
+number of Derby developers working on Jira issues has increased to 36
+(the number in the derby-developers Jira group).
+
+One doc challenge is how to make a DITA stylesheet, which is under the
+CPL license, available on incubator.apache.org/derby to improve the
+format of the html documentation. A Derby mentor advised asking the
+author if he would be willing to license that particular file to the ASF
+under the Apache License. It turns out the DITA Toolkit team is
+interested in releasing the Toolkit itself under the Apache license, and
+hopefully all details will get worked out in Q3.</pre>
+<h3 id="2005-07-28-3"><a href="2005/board_minutes_2005_07_28.html#jdo">2005-07-28</a> &mdash; as JDO, in the Incubator's report<a class="headerlink" href="#2005-07-28-3" title="Permalink">&para;</a></h3>
+<pre>New committers were added to the project: Matthew Adams, Xcalia; Erik
+Bengtson, JPOX. We might have a quorum of independent committers: Sun,
+Xcalia, JPOX, tech@spree although I'd like to see more commit action
+from everyone.
+
+JIRA accounts have been set up for everyone who needs them.
+
+The API sub-project has been synchronized with the latest version of
+the specification. The TCK sub-project is about 80% complete. Still
+lacks full testing for O/R mapping and detached objects.
+
+The Apache JDO web site is now active at http://incubator.apache.org/jdo</pre>
+<h3 id="2005-04-27"><a href="2005/board_minutes_2005_04_27.html#attachment-A">2005-04-27</a> &mdash; John McNally<a class="headerlink" href="#2005-04-27" title="Permalink">&para;</a></h3>
+<pre>Torque did not have any releases this quarter but bug fixes, unit
+tests, and refactoring continue.  User questions get asked and
+answered.
+
+OJB released 1.0.2 followed quickly by 1.0.3 to solve some bugs.  OJB
+also switched to JIRA during the quarter.
+
+The Jakarta and DB PMCs agreed to move the Jakarta commons sandbox
+project "sql" to DB as "ddlutils" subproject.  As it is used primarily
+by OJB and has its roots with Torque, it was felt it would be a good
+place to have some collaboration between the groups.  This transition
+is still in process.</pre>
+<h3 id="2005-04-27-2"><a href="2005/board_minutes_2005_04_27.html#jdo">2005-04-27</a> &mdash; as JDO, in the Incubator's report<a class="headerlink" href="#2005-04-27-2" title="Permalink">&para;</a></h3>
+<pre>The Apache JDO project is chugging along. The 1.X reference
+implementation, API spec (javax.jdo interfaces), and TCK have been
+migrated to the ASF subversion repository, and the 2.0 API spec and
+TCK are under development. Expert Group communication is being
+migrated or mirrored to the ASF mailing lists as much as possible,
+including the regular conference call minutes.
+
+Two additional committers, Matthew Adams and Erik Bengtson, have been
+added to the project this quarter, in addition to the initial project
+committers. Both Matthew and Erik are members of the JSR 243 expert
+group, as well.</pre>
+<h3 id="2005-04-27-3"><a href="2005/board_minutes_2005_04_27.html#derby">2005-04-27</a> &mdash; as Derby, in the Incubator's report<a class="headerlink" href="#2005-04-27-3" title="Permalink">&para;</a></h3>
+<pre>- Recently, IBM posted a contribution of a JDBC network client driver.
+The community voted to accept the submission, but there was some
+question as to whether or not such a significant contribution is
+covered by the original Derby CCLA or whether it will require a new
+one.  This was resolved by IBM submitting an amendment to the original
+CCLA/software grant listing the files in the new contribution.  The
+amendment has been faxed to Noel and is being snailed to the ASF
+secretary.
+
+[Update: On 27-April-2005, the ASF received an addendum to the Derby
+CCLA and Software Grant via the Incubator PMC Chair]
+
+- The Derby logo vote was temporarily shelved due to voting irregularities.
+
+- Derby has satisifed all requirements necessary to graduate from
+incubation except for diversity of committership. Recent discussions
+on general@incubator seem to point to this being the only barrier to
+graduation that needs to be overcome. Jeremy Boynes was added as a
+committer earlier this year, but he remains the only non-IBM
+committer. New developers are getting up to speed, however, as
+evidenced by the acceptance of recent contributions by non-IBM
+developers Tomohito Nakayama and Shreyas Kraushik.
+
+- mailing list activity continues to grow steadily, both in number of
+subscribers and in overall activity. Recent stats show about 1000
+posts to derby-dev in the last 3 months, around 2700 total in the nine
+months since inception, and about 500 posts to derby-user since
+inception.</pre>
+<h3 id="2005-01-19"><a href="2005/board_minutes_2005_01_19.html#attachment-A">2005-01-19</a> &mdash; John McNally<a class="headerlink" href="#2005-01-19" title="Permalink">&para;</a></h3>
+<pre>The DB project continues with its primary task of oversight of the OJB
+and Torque subprojects.  There was conversation between DB and Jakarta
+on movement of commons-sql from Jakarta to DB as a  common base
+component of OJB and Torque.  The vote was favorable all around, so it
+is now a matter of determining the mechanics.
+
+The mailing lists for Torque and OJB projects remain active and with no
+conflict to note.  OJB planned to wrap up a 1.0.2 maintenance release
+but that slipped into the next quarter; work also continues work towards
+a 1.1 release.  Torque tagged a 3.1.1 maintenance release.
+
+Henning P. Schmiedehausen was added to the DB PMC.  Torque added Thomas
+Fischer as a new committer.  It was noted that overall, Derby appears to
+be making good progress in the incubator.  DB also voted to support a
+JDO project for incubation.</pre>
+<h3 id="2004-10-20"><a href="2004/board_minutes_2004_10_20.html#attachment-A">2004-10-20</a> &mdash; John McNally<a class="headerlink" href="#2004-10-20" title="Permalink">&para;</a></h3>
+<pre>The DB project continues with its primary task of oversight of the OJB
+and Torque subprojects.  The mailing lists for both projects remain
+active and with no conflict to note.  OJB released a 1.0.1 maintenance
+release and continues work towards a 1.0.2 release as well as a 1.1
+release.  Torque has tagged a couple release candidates this quarter,
+but the 3.1.1 release will likely fall into the first week of next
+quarter.
+
+The PMC recently voted for the nomination of Henning P. Schmiedehausen
+to serve on the PMC and is awaiting acceptance prior to official
+notification.  The PMC also voted to update its bylaws.  The changes
+were primarily to clarify the status quo.  I'll finish the report with
+the resulting text:
+
+Project Management Committee Bylaws
+
+The Project Management Committee (PMC) was formed by the Apache Board
+on 17 July 2002.  The bylaws were last amended on 7 October
+2004. There is no preset number of seats on the PMC.  The PMC will
+strive to add every committer within DB that, in the opinion of the
+PMC as determined by a vote, displays the capability and desire to
+help guide the DB project.  The PMC will present the board with a
+recommendation of a chairperson from amongst their ranks.  The list of
+current members can be found in our &lt;a href="./whoweare.html"&gt; Project
+Credits&lt;/a&gt;.
+
+Roles
+
+The PMC is responsible for the strategic direction and success of the
+DB Project. This governing body is expected to ensure the project's
+welfare and guide its overall direction. The PMC may not necessarily
+participate in the day-to-day coding but is involved in the overall
+development plans, the alleviation of any bottlenecks, the resolution
+of conflicts, and the overall technical success of the project.
+
+The PMC is responsible for any and all official releases by any part
+of the DB project.  Implicit approval by the PMC for a release can be
+assumed if at least three committers voting for the release also serve
+on the PMC and there are no negative votes.  Explicit approval by vote
+on the PMC mailing list is required prior to the release, if the
+preceeding conditions are not met.  The PMC must be notified of all
+releases.
+
+The PMC is answerable to the Apache Board with its Chairman serving as
+primary liaison.
+
+Meetings
+
+The PMC discusses issues and determines strategic direction via mail
+list.  Discussions and votes specific to a particular codebase
+associated with a subproject generally occur on subproject dev lists.
+All binding votes happen on the PMC list except release votes can
+occur on the subproject dev list with a summary of results posted to
+the PMC list.
+
+Voting
+
+The call for a vote on issues not detailed here may specify
+requirements for passage. The minimum and default requirement for a
+passing vote is simple majority of PMC members casting ballots.  The
+default voting period is 10 days and the minimum is 7 days unless the
+success or failure is arithmetically known.
+
+Membership
+
+PMC members may resign at any time. A committer will remain on the DB
+PMC until removed by desire of the committer, action of the board, or
+vote by the PMC.  The Chairman may resign as Chairman at any time
+without resigning membership to the PMC. The chairperson will serve
+until voluntary resignation, action of the board, or vote by the PMC.
+The Chairman or any member may be removed from the PMC by a 3/4 vote
+of the PMC.
+
+In order to be elected to the PMC, a person must have served as a &lt;a
+href="roles.html"&gt;Committer&lt;/a&gt; and be nominated by a PMC Member. The
+nominee must receive 3/4 positive vote with a minimum of 3 positive
+votes.  Abstaining or non-participating PMC voters do not affect the
+result.
+
+Creation of Subprojects
+
+PMC members may propose the creation of new subprojects. Creation of a
+new subproject requires approval by 3/4 positve vote with a minimum of
+3 positive votes of the PMC.  Abstaining PMC voters do not affect the
+result.  New code enters the DB project in accordance with ASF policy.
+
+(End of bylaws text)</pre>
+<h3 id="2004-08-18"><a href="2004/board_minutes_2004_08_18.html#attachment-I">2004-08-18</a> &mdash; John McNally<a class="headerlink" href="#2004-08-18" title="Permalink">&para;</a></h3>
+<pre>Torque has not had much new development though bug fixes have been
+committed. The user list remains active.
+
+OJB has the big news this quarter, achieving 1.0 release.  New members
+of the PMC include: Matthew Baird, Thomas Dudziak, and Brian
+McCallister.  And two new committers: Martin Kalen and Robert Sfeir.
+
+DB is currently sponsoring the Axion project within incubator which
+has stagnated, but showed signs of progress again last week with a
+request for creation of cvs module and mailing lists.
+
+That's it.  No controversy to report.</pre>
+<h3 id="2004-07-21"><a href="2004/board_minutes_2004_07_21.html#attachment-A">2004-07-21</a> &mdash; John McNally<a class="headerlink" href="#2004-07-21" title="Permalink">&para;</a></h3>
+<pre>Torque has not had much new development though bug fixes have been
+committed. The user list remains active.
+
+OJB has the big news this quarter, achieving 1.0 release.  New members
+of the PMC include: Matthew Baird, Thomas Dudziak, and Brian
+McCallister.  And two new committers: Martin Kalen and Robert Sfeir.
+
+DB is currently sponsoring the Axion project within incubator which
+has stagnated, but showed signs of progress again last week with a
+request for creation of cvs module and mailing lists.
+
+That's it.  No controversy to report.</pre>
+<h3 id="2004-04-21"><a href="2004/board_minutes_2004_04_21.html#attachment-A">2004-04-21</a> &mdash; John McNally<a class="headerlink" href="#2004-04-21" title="Permalink">&para;</a></h3>
+<pre>* PMC Changes - 4 new additions to the PMC: Scott Eade, Brian
+McCallister, Daniel Rall, Armin Weibel.
+
+* OJB - OJB was close to release for much of this quarter.  The license
+change and request by the Chair that they increase their PMC
+participation were among the hold ups.  Both of these have been resolved
+and release of 1.0 is imminent.
+
+* Torque - Development continues in maintenance mode.
+
+* Problems - No conflicts.  Mailing list traffic remains civil.
+
+* Goals for next quarter - I'd like to see Axion's incubation progress
+to completion, or at least be very close.</pre>
+<h3 id="2004-01-21"><a href="2004/board_minutes_2004_01_21.html#section-6A">2004-01-21</a> &mdash; John McNally<a class="headerlink" href="#2004-01-21" title="Permalink">&para;</a></h3>
+<pre>The report, as noted in Attachment A, was approved by General Consent.</pre>
+<h3 id="2003-10-22"><a href="2003/board_minutes_2003_10_22.html#section-7A">2003-10-22</a> &mdash; John McNally<a class="headerlink" href="#2003-10-22" title="Permalink">&para;</a></h3>
+<pre>No report.</pre>
+<h3 id="2003-07-16"><a href="2003/board_minutes_2003_07_16.html#attachment-A">2003-07-16</a> &mdash; Jason van Zyl<a class="headerlink" href="#2003-07-16" title="Permalink">&para;</a></h3>
+<pre>[ received from John McNally ]
+
+Releases
+
+Torque did an alpha release of 3.1 in April and a couple bug fix
+releases (3.0.1 and 3.0.2) in June.
+
+OJB put up a 1.0rc3 release in May.
+
+Problems
+No problems to speak of.  Mail list activity on both subprojects
+indicates forward progress and no flame wars.
+
+News
+
+A presentation on OJB was given at javaone
+TS-3368
+Applying Open Source Web Technologies Together: Struts and OJB</pre>
+<h3 id="2003-01-22"><a href="2003/board_minutes_2003_01_22.html#attachment-A">2003-01-22</a> &mdash; Jason van Zyl<a class="headerlink" href="#2003-01-22" title="Permalink">&para;</a></h3>
+<pre>As yet there is no site or charter for db.apache.org but I wanted to
+assure the board that the desire to bring db.apache.org to fruition
+hasn't waned. I know that all the the PMC members have been busy with
+their projects and I would like some things to happen before the site
+is launched.
+
+I would like the site to be generated as changes are made to the
+individual projects in as much an automated fashion as possible. I
+want to be notified of exceptions: I don't want anyone to have to
+manage this manually. I do not want to foist yet another disparate,
+incoherent website on an unsuspecting crowd. I would like
+db.apache.org to be an example of what an OSS website can be. I also
+don't want this process to consume my life, or anyone else's.
+
+To this end, over the last while I've been working on Maven, Plexus,
+Continuum and have hired Bob McWhirter to improve Drools and create
+Werkflow: the only OSSPetrinet-based workflow engine that I'm aware
+of. I'm using all these tools as part of my daytime work but slight
+adjustments have been made here and there to accomodate things I would
+like for db.apache.org. I would like the site and infrastructure to be
+manageable from day one.
+
+If there were projects that were planned to be released for the first
+time on db.apache.org then I would certainly be guilty of not pushing
+hard enough to get the site, charter and infrastructure in order. But
+none of the projects that are initially taking part are being dealt
+any life threatening blows due to the non-existence of the
+db.apache.org site.
+
+I would like the PMC to have the time to get the project together as
+we see fit. I realize that the DB PMC has not made much progress on
+the infrastructure side but none of us have been idle. I am trying to
+make some tools I think will be valuable and genuinely help. Axion,
+Torque, and OJB are also getting in a lot better shape to the point
+where real releases could be made available when the site launches
+which I think is a good thing.
+
+I myself can't commit to a date for the launch (someone else may want
+to) as this is purely volunteer and my day job takes precendence but I
+think it holds true that each of the PMC members want to see this
+happen.
+
+If it is the case that we must have something by a date to satisfy the
+board then I will not personally commit and will let someone else
+commit and take over the chair position. I feel I would rather wait
+and make something worthfile then procure something to satisfy an
+artificial requirement. As I noted before, I don't think any harm is
+being done by not launching. As an aside I'm curious as to the history
+surrounding the nascent Jakarta and XML projects? Were there in fact
+deadlines or was the time taken to get things in order properly?
+
+If we need things like the charter then we could probably borrow one
+from an existing project and ratify it in short order, but I would
+still like to wait on the launch of the site.
+
+---
+
+[1] Maven: http://jakarta.apache.org/turbine/maven
+[2] Plexus: A application container based on Avalon. Maven will eventually
+    be a Plexus application.
+[3] Continuum: A continuous integration tool using Plexus, Drools, and Werkflow
+[4] Drools: OO-Rete based rules engine.
+[5] Werkflow: Petrinet-based workflow engine using Drools.</pre>
+<h3 id="2002-11-18"><a href="2002/board_minutes_2002_11_18.html#attachment-E">2002-11-18</a> &mdash; Jason van Zyl<a class="headerlink" href="#2002-11-18" title="Permalink">&para;</a></h3>
+<pre>Things are pretty much in a state of hibernation at the moment. Between
+Maven and the Day Job(tm) I've got zero time currently. All of the other
+PMC members seem to be in the same boat. Geir takes on more
+responsibility daily, John McNally is more than busy with Scarab, Thomas
+with OJB and Rodney with the day job.
+
+None of the projects are suffering because db.apache.org isn't up and I
+don't really see it as a problem though I saw that you and Sam don't
+like it much. I would rather wait until myself or someone else has the
+time to do it right.
+
+I figure I'll let one of the other projects get off the ground, like
+Avalon, then I'll steal their charter and guidelines :-)
+
+My priority is work and Maven and I won't even attempt db.apache.org
+until Maven is 1.0. So if this is unacceptable for some reason then I
+will follow whatever course of action you suggest.</pre>
+<h3 id="2002-09-18"><a href="2002/board_minutes_2002_09_18.html#section-5G">2002-09-18</a> &mdash; Jason van Zyl<a class="headerlink" href="#2002-09-18" title="Permalink">&para;</a></h3>
+<pre>This report was not submitted before the meeting. Please see
+the supplementary report.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

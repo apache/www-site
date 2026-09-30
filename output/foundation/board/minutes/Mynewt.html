@@ -1,0 +1,2511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Mynewt | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Mynewt';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Mynewt';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Mynewt</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="mynewt">Mynewt<a class="headerlink" href="#mynewt" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-06-16</td>
+<td><a href="2021/board_minutes_2021_06_16.html#section-7C">Appointed Szymon Janc</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2017-06-21</td>
+<td><a href="2017/board_minutes_2017_06_21.html#section-7F">Appointed Justin Mclean</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017-06-21</td>
+<td><a href="2017/board_minutes_2017_06_21.html#section-7F">Establish the Apache Mynewt Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#section-6AY">2026-08-19</a> &mdash; Szymon Janc<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#section-6AV">2026-06-17</a> &mdash; Szymon Janc<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-AX">2026-03-18</a> &mdash; Szymon Janc<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (9 years ago)
+There are currently 37 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Micha&lstrok; G&oacute;recki on 2024-06-27.
+
+## Project Activity:
+Added CI workers that run tests on selected real HW boards. More imported code
+is removed in favor of using external modules (avoid code copying and makes
+updates much easier). Removal of deprecated code is ongoing to reduce
+maintenance burden. IP stack related work is ongoing. Various bugfixes are being
+committed. On Bluetooth side qualification bugfixes and Channel Sounding is
+being owrked on.
+
+## Community Health:
+Core developers are active on regular basis. We increased number of security
+related reports.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-AY">2025-12-17</a> &mdash; Szymon Janc<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (8 years ago)
+There are currently 37 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Micha&lstrok; G&oacute;recki on 2024-06-27.
+
+## Project Activity:
+Work is mainly focused on bugfixes (both in core and NimBLE Bluetooth stack)
+related to release which is planned in December 2025. Continued work on
+automated tests on real hardware.
+
+## Community Health:
+Core developers are active on regular (yet slightly less frequent) basis.
+Most work is Bluetooth related.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-BB">2025-09-24</a> &mdash; Szymon Janc<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (8 years ago)
+There are currently 37 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Micha&lstrok; G&oacute;recki on 2024-06-27.
+
+## Project Activity:
+Work is ongoing in several areas, mainly improvements in BSP and MCU support
+(eg. Nordic nRF54H20), as well as some core subsystems work (LVGL, shell,
+logging etc).
+
+Continued work on Nordic nRF54L15 support and Bluetooth 6.0 features
+(eg Channel Sounding). Continued work on LE Audio (Broadcast Sink).
+There is also ongoing work  on fixing NimBLE bugs that are affecting Bluetooth
+Qualification (both host and controller).
+
+Various bugfixes in preparation for next release. Project is also working
+on adding more automated tests on real hardware to reduce regressions and
+manual testing for releases.
+
+## Community Health:
+Core developers are active on regular basis. Most work is Bluetooth related.
+New contributors showing up.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-BB">2025-07-16</a> &mdash; Szymon Janc<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (8 years ago)
+There are currently 37 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Micha&lstrok; G&oacute;recki on 2024-06-27.
+
+## Project Activity:
+Work is ongoing in several areas, mainly improvements in BSP and MCU support
+(eg. Nordic nRF54H20), as well as some core subsystems work (LVGL, shell,
+logging etc).
+
+Continued work on Nordic nRF54L15 support and Bluetooth 6.0 features
+(eg Channel Sounding). Continued work on LE Audio (Broadcast Sink).
+There is also ongoing work  on fixing NimBLE bugs that are affecting Bluetooth
+Qualification (both host and controller).
+
+Github Actions CI improvements for helping PR handling.
+
+Initially planned June release was postponed to July/August.
+
+## Community Health:
+Core developers are active on regular basis. Most work is Bluetooth related.
+We see more interest from other projects in using NimBLE port (various bugfixes
+contributed!).</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#section-6AS">2025-06-18</a> &mdash; Szymon Janc<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-AS">2025-03-19</a> &mdash; Szymon Janc<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (8 years ago)
+There are currently 37 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Micha&lstrok; G&oacute;recki on 2024-06-27.
+
+## Project Activity:
+Work is ongoing in several areas, mainly improvements in BSP and MCU support.
+
+Continued work on Nordic nRF54L15 support and Bluetooth 6.0 features (eg Channel
+Sounding). There is also ongoing work on fixing NimBLE bugs that are affecting
+Bluetooth Qualification (both host and controller).
+
+Tentative plan for next release is June 2025.
+
+## Community Health:
+Core developers are active on regular basis. Most work is Bluetooth releated.
+We see more interest from other projects in using NimBLE port.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-AR">2024-12-18</a> &mdash; Szymon Janc<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (7 years ago)
+There are currently 37 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Micha&lstrok; G&oacute;recki on 2024-06-27.
+
+## Project Activity:
+Apache Mynewt-1.13.0 and Apache NimBLE-1.8.0 were released on 2024-11-25.
+
+Work is ongoing in several areas, mainly improvements in BSP and MCU support
+(Nordic nRF54 fmaily) and tooling (newt and scripts).
+On Bluetooth support side there is ongoing work for LE Audio support and
+Channel Sounding (BT 6). There is also work on implementing missing optional
+features from previous Bluetooth Core Specifications (5.4 and older).
+
+
+## Community Health:
+Core developers are active on regular basis. We see more
+new users support request recently (after latest release).</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-AY">2024-10-16</a> &mdash; Szymon Janc<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (7 years ago)
+There are currently 37 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- Micha&lstrok; G&oacute;recki was added as committer on 2024-06-27
+
+## Project Activity:
+Work is ongoing in several areas, mainly improvements in BSP and MCU support.
+NXP MCU support is now based on external SDK repository instead of local copy.
+Some improvements to FCB filesystem, USB support and New LVGL driver for ft6x36
+touchscreen were added.
+
+On Bluetooth side work is being continued on adding LE Audio support as well as
+various bugfixes for host and controller. There is also initial work on
+Bluetooth Core 6.0 support i.e. Channel Sounding.
+
+Project is planning for new release by the end of October 2024.
+
+## Community Health:
+Core developers are active on regular basis (with some drop due to summer
+season). We also see some past contributors getting active again. We see more
+new users support request recently.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#section-6AU">2024-09-18</a> &mdash; Szymon Janc<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-AS">2024-08-21</a> &mdash; Szymon Janc<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (7 years ago)
+There are currently 37 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- Micha&lstrok; G&oacute;recki was added as committer on 2024-06-27
+
+## Project Activity:
+Work is ongoing in several areas, mainly improvements in BSP/MCU support
+(common startup code for STM family, Nordic nRF5x family is now using nrfx SDK
+for drivers). There has been significant work on improving project documentation
+(Doxygen for API, improvements to website, automation of website deployment). On
+Bluetooth side work is being continued on adding LE Audio support.
+
+Github email notifications from project repositories are now also configured
+according to suggestions from Board few months back.
+
+## Community Health:
+Core developers are active on regular basis (with some drop due to summer
+season). We also see some past contributors getting active again. For now we are
+not going to do anything with inactive PMC members so this is causing no issues
+to the project currently.</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#section-6AY">2024-07-17</a> &mdash; Szymon Janc<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#section-6AS">2024-06-19</a> &mdash; Szymon Janc<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-AW">2024-04-17</a> &mdash; Szymon Janc<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: some PMC members are no longer active in the project,
+                      how should this be handled by project?
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (7 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+Community work in several areas including:
+tooling and CI improvements, new MCUs support (STM32G20), Bluetooth host
+qualification improvements continued work on Bluetooth LE Audio.
+
+Apache Mynewt 1.12.0 (and Apache NimBLE 1.7.0) were released last week.
+
+## Community Health:
+Number of contributors is stable, "core" developers are contributing code on
+regular basis. We see more support request from new users.
+
+Mailing list see little activity as most discussions happen on Github.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#section-6AW">2024-03-20</a> &mdash; Szymon Janc<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#attachment-AV">2023-12-20</a> &mdash; Szymon Janc<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+No issues.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (6 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+Community work in several areas including:
+improved GUI support (LVGL), CI improvements, new MCUs
+support (STM32G4) and continued work on Bluetooth LE Audio.
+
+## Community Health:
+Number of contributors is stable, "core" developers are contributing code on
+regular basis. We see more support request from new users.
+
+Mailing list see little activity as most discussions happen on Slack and Github.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-AX">2023-09-20</a> &mdash; Szymon Janc<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+No issues.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (6 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+
+Apache Mynewt 1.11.0 (along with Apache Nimble 1.6.0) were released in September
+2023. This release includes number of new features like touchscreens support
+(along LVGL integration), external modules and initial work on Bluetooth LE
+Audio support.
+
+Project is working towards more automated testing which would decrease
+testing effort on releases and allow for more frequent releases (3-4 per year).
+
+Development is focusing on Bluetooth LE Audio as well as improving support for
+USB and GUI.
+
+## Community Health:
+Most discussions happen on project Slack and github. Mailing list seems to be
+less used. Number of code changes is stable. We see increased interest in NimBLE
+(Bluetooth stack) usage outside of Mynewt.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-AY">2023-06-21</a> &mdash; Szymon Janc<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (6 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+Community work in several areas including:
+test facilities, tooling, improvements in MCU and BSP support, qualification
+fixes for Bluetooth stack, USB support, bug fixes.
+
+Support for GUI (via LVGL) and various touchscreens was added.
+
+Working on support for Bluetooth LE Audio (broadcast support).
+
+## Community Health:
+Number of contributors is stable, "core" developers are contributing code on
+regular basis.
+
+Mailing list see little activity as most discussions happen on Slack and Github.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-AS">2023-03-22</a> &mdash; Szymon Janc<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+None.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (6 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+No new release was made in past quarter. Next release is tentatively
+planned on late Q1 (early Q2) 2023.
+
+Community work in several areas including:
+test facilities, tooling, improvements in MCU and BSP support, qualification
+fixes for Bluetooth stack, USB support, bug fixes.
+
+Initial work on adding support for Bluetooth LE Audio has started.
+
+
+## Community Health:
+We see some new (first time) contributors recently to the project,
+currently their PRs are pending review.
+
+Mailing list see little activity as most discussions happen on Slack and Github.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-BD">2023-01-18</a> &mdash; Szymon Janc<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+None
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (6 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+Project is preparing for next release in Q1 2023.
+Mostly working on improving support Nordic nRF5340 chip and tooling.
+
+## Community Health:
+We see drop in activity on github and mailinglist, although "core"
+developers are active.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#section-6AV">2022-12-21</a> &mdash; Szymon Janc<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-AW">2022-09-21</a> &mdash; Szymon Janc<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+None.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (5 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+No new release was made in past quarter. There was a plan for release in
+August but that didn't happen. We stil plan to do next release early Q4 2022.
+
+Community work in improvements in USB support, BSP and Bluetooth (major rework
+of controller radio drivers for Nordic nRF5x chips and Front-End-Module support,
+qualification related fixes). Few new sample applications were added to help
+newcomers.
+
+Bluetooth stack will require new Qualification Design ID from Bluetooth SIG and
+there is some initial discussion/questions in community on how this can be
+handled (in terms of work and fees).
+
+## Community Health:
+We see decrease in overall number of PRs (related to summer holidays?).
+Questions on mailing list are answered timely.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-AU">2022-06-15</a> &mdash; Szymon Janc<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+None.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (5 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+Mynewt-1.10.0 and NimBLE-1.5.0 were release in May 2022.
+
+Community work in several areas including:
+test facilities, improvements in MCU and BSP support, qualification
+fixes for Bluetooth stack, new Bluetooth stack ports, bug fixes
+
+Project is preparing for next release in mid-Q3. We plan to do releases more
+frequently (3-4 per year).
+
+
+## Community Health:
+We see overall increase in github activity (PRs, issues reported, commits)
+in last quarter.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-AP">2022-03-16</a> &mdash; Szymon Janc<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+None.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (5 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+No new release was made in past quarter. Next release is tentatively
+planned in March/April 2022.
+
+Community work in several areas including:
+test facilities, improvements in MCU and BSP support, USB support, qualification
+fixes for Bluetooth stack, new Bluetooth features (LE Audio), bug fixes
+
+## Community Health:
+- Number of opened PRs dropped slightly compared to last quarter (but is stil
+  way above 100)
+- Number of commits and code contributors is slightly lower comparing to last
+  quarter
+- We see some new first-time contributors
+- Issue types seen include change/feature requests, bug reports,
+contributions/PR, Q&amp;A</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-AT">2021-12-15</a> &mdash; Szymon Janc<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+Bluetooth SIG manufacturer ID for ASF issue is stil not resolved.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (4 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+No new release was made in past quarter. Next release is tentatively
+planned on early Q1 2022.
+
+Community work in several areas including:
+ - improvements in MCU and BSP support
+ - security improvement (ARM TrustZone support)
+ - USB support improvements
+ - BLE stack refactoring for future Bluetooth LE Audio support
+ - Bluetooth Mesh improvements
+ - bug fixes
+
+## Community Health:
+Mailing list traffic dropped as people tend to discuss more on github or
+slack. Code wise (commits, PRs, issues) project is back on usual level after
+summer drop.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-AU">2021-09-15</a> &mdash; Szymon Janc<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+BT SIG manufacturer ID - can this be handled by Mynewt PMC chair or board
+action is required?
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (4 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+- Szymon Janc is new Apache Mynewt PMC chair.
+
+## Project Activity:
+Next release is tentatively planned on Q4 2022.
+
+Community work in several areas including:
+test facilities, improvements in MCU and BSP support, bug fixes
+
+
+## Community Health:
+Due to summer and vacations season last quarter was quite calm.
+
+Mailing list activity:
+- Mailing list activity has dropped compared to last quarter
+- Questions on mailing list are responded promptly
+- Slack activity dropped
+
+# GitHub activity:
+- Number of opened PRs dropped  compared to last quarter
+- Number of commits and code contributors is similar to last quarter
+- Issue types seen include change/feature requests, bug reports,
+contributions/PR, Q&amp;A</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-AO">2021-06-16</a> &mdash; Justin Mclean<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+Bluetooth SIG manufacturer ID for ASF is stil missing.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (4 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Krzysztof Kopy&sacute;ci&nacute;ski on 2021-01-26.
+
+## Project Activity:
+Mynewt-1.9.0 NimBLE-1.4.0 was released on 2021-04-07.
+
+Community work in several areas including:
+automated test facilities (automated Bluetooth host qualification tool),
+improvements in MCU and BSP support, C++ support improvements, bug fixes
+
+## Community Health:
+# Mailing list activity:
+- Mailing list activity has increased compared to last quarter
+- Slack activity remains on same level
+
+# GitHub activity:
+Although github activity dropped slightly in last quarter we see new
+companies joining community.</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-AR">2021-03-17</a> &mdash; Justin Mclean<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+Bluetooth SIG manufacturer ID for ASF issue is stil not resolved and our pings
+on this matter are being ignored.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (4 years ago)
+There are currently 36 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- Krzysztof Kopy&sacute;ci&nacute;ski was added as committer on 2021-01-26
+
+## Project Activity:
+No new release was made in past quarter. Community is currently working
+on preparing RC1 for 1.9 release.
+
+Community work in several areas including:
+test facilities, improvements in MCU and BSP support, qualification
+fixes for Bluetooth stack, new Bluetooth stack ports, bug fixes
+
+Automated static code analysis tool (Coverity Scan) was setup and lots
+of reported issues were already fixed. Bi-weekly runs should help keep
+code more secure.
+
+## Community Health:
+# Mailing list activity:
+- Mailing list activity has increased significantly compared to last quarter
+- Some questions on mailing list remained without response
+- Slack activity remains on same level
+
+# GitHub activity:
+- Number of opened and closed PRs and commits has increased significantly
+  compared to last quarter
+- Number of code contributors is similar to last quarter but they originate
+  from larger number of companies comparing to last quarter
+- Issue types seen include change/feature requests, bug reports,
+contributions/PR, Q&amp;A</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#attachment-AN">2020-12-16</a> &mdash; Justin Mclean<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+Bluetooth SIG manufacturer ID for ASF issue is stil not resolved.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (3 years ago)
+There are currently 35 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Andy Gross on 2020-05-04.
+
+## Project Activity:
+No new release was made in past quarter. Next release is tentatively
+planned on Q1 2021.
+
+Community work in several areas including:
+test facilities, improvements in MCU and BSP support, qualification
+fixes for Bluetooth stack, BLE Mesh improvements, new Bluetooth stack ports,
+bug fixes
+
+## Community Health:
+# Mailing list activity:
+- Mailing list activity has dropped significantly compared to last quarter
+- Some questions on mailing list remained without response
+- Slack activity remains on same level
+
+# GitHub activity:
+- Number of opened PRs dropped slightly compared to last quarter
+- Number of commits and code contributors is similar to last quarter
+- Issue types seen include change/feature requests, bug reports,
+contributions/PR, Q&amp;A</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-AQ">2020-09-16</a> &mdash; Justin Mclean<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+Bluetooth SIG manufacturer ID for ASF issue is stil not resolved.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (3 years ago)
+There are currently 35 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Andy Gross on 2020-05-04.
+
+## Project Activity:
+Community work in several areas including:
+test facilities, new MCU and BSP support, new BLE features,
+internal code improvements and refactoring,
+new core features (eg audio support)
+
+Plan to release new version on Q4 20202.
+
+## Community Health:
+# Mailing list activity:
+
+- Mailing list activity seeing new users and responders to questions asked
+(esp. questions from newcomers)
+- Mailing list exchanges are mostly around BLE, upgrading to new version,
+ low level core details
+- Mailing list activity has decreased compared to last quarter
+- Some questions on mailing list remained without response
+- Slack activity decreased compared to last quarter
+
+# GitHub Issues activity:
+- Issue types seen include change/feature requests, bug reports,
+contributions/PR, Q&amp;A</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-AO">2020-06-17</a> &mdash; Justin Mclean<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+Bluetooth SIG manufacturer ID for ASF issue is stil not resolved.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (3 years ago)
+There are currently 35 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- Andy Gross was added as committer on 2020-05-04
+- Naveen Kaje was added as committer on 2020-05-04
+
+## Project Activity:
+Apache Mynewt 1.8.0 and Apache NimBLE 1.3.0 were released on 9th April 2020.
+
+Community work in several areas including:
+test facilities, new MCU and BSP support, new BLE features,
+internal code improvements and refactoring,
+new core features (eg USB support)
+
+## Community Health:
+# Mailing list activity:
+- Mailing list activity seeing new users and responders to questions asked
+(esp. questions from newcomers)
+- Mailing list exchanges are mostly around BLE, upgrading to new version,
+  low level core details
+- Mailing list activity has increased compared to last quarter
+- Some questions on mailing list remained without response
+- Slack activity remains on same level
+
+# GitHub Issues activity:
+- Issue types seen include change/feature requests, bug reports,
+contributions/PR, Q&amp;A
+ - Numer of PR/commits decreased in last quarter</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#attachment-AR">2020-03-18</a> &mdash; Justin Mclean<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+ASF membership in Bluetooth SIG (for NimBLE stack being able to use
+manufacturer ID of ASF) was raised on private@. Creating account
+requires "Company's formation document" and "signing authority" and this matter
+seems to be stuck and is not moving forward since January.
+
+## Membership Data:
+Community changes, past quarter:
+- No new PMC members. Last addition was Jerzy Kasenberg on 2019-10-24.
+- No new committers. Last addition was Hauke Petersen on 2019-11-13.
+
+## Project Activity:
+- Work on release 1.8.0 in March 2020
+- NimBLE 1.3 stack release at same time
+- Community work in several areas including:
+  - CI and test facilities,
+  - Bluetooth 5.1 and 5.2 features
+  - Improvements to internal components like console, sensors drivers etc
+  - More BSP supported
+  - tooling improvements (newt and newtmgr)
+
+Release is overdue initial plans due to mcumgr component decoupling
+(completed now).
+
+## Community Health:
+- Mailing list activity seeing new users
+- Mailing list exchanges are mostly around BLE, tooling and Windows support
+- Mailing list activity has dropped compared to last quarter
+- Some mailing list messages remain unanswered
+- Slack remains active and is primary place for development discussions
+  and user support</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#attachment-AM">2019-12-18</a> &mdash; Justin Mclean<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+None.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (2 years ago)
+There are currently 33 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Jerzy Kasenberg was added to the PMC on 2019-10-24
+- Hauke Petersen was added as committer on 2019-11-13
+- Niklas Casaril was added as committer on 2019-11-12
+
+## Project Activity:
+ Work on release 1.8.0 in January 2020
+- NimBLE 1.3 stack release at same time
+- BT 5.1 features are being added to NimBLE stack
+- Community work in several areas including:
+    test facilities, new BLE features, internal code improvements and
+    refactoring, new core features (eg USB support)
+- Continued work on core decoupling - next release will be first to use
+  apache-mcumgr instead of internal fork
+- github PRs are mostly reviewed in timed fashion
+
+## Community Health:
+# Mailing list activity:
+
+- Mailing list activity seeing new users and responders to questions asked
+ (esp. questions from newcomers)
+- Mailing list exchanges are mostly around BLE, image management and low level
+  core details
+- Mailing list activity has dropped slightly compared to last quarter
+- Some questions on mailing list remained without response
+- Slack activity is up and more users have joined
+
+# GitHub Issues activity:
+- Issue types seen include change/feature requests, bug reports,
+ contributions/PR, Q&amp;A</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-AV">2019-10-16</a> &mdash; Justin Mclean<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Mynewt is the creation and maintenance of software
+related to an embedded OS optimized for networking and built for remote
+management of constrained devices that are incapable of running either Linux or
+Android
+
+## Issues:
+None.
+
+## Membership Data:
+Apache Mynewt was founded 2017-06-21 (2 years ago)
+There are currently 31 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Aditi Hilbert on 2017-06-21.
+- Amr Bekhit was added as committer on 2019-07-30
+
+## Project Activity:
+- Apache Mynewt 1.7.0 released in August 2019
+- Apache NimBLE 1.2 stack released at same time
+- BT SIG qualification done for NimBLE 1.2
+- Community work in several areas (test facilities. new BSPs, core decoupling)
+
+## Community Health:
+- Mailing list activity seeing new users and responders to questions asked
+  (esp. questions from newcomers)
+- Mailing list exchanges are mostly around NFC, BLE (and BLE mesh), test
+  facilities, LoRa and core decoupling into subprojects.
+- Mailing list activity has slightly dropped compared to last quarter
+- Slack activity is up and more users have joined
+- Justin Mclean gave talk about Apache Mynewt at ApacheCon 2019
+- Szymon Janc gave talk about Apache NimBLE at RIOT Summit 2019</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#section-6AN">2019-09-18</a> &mdash; Justin Mclean<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Daniel: pursue a report for Mynewt</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#attachment-AQ">2019-06-19</a> &mdash; Justin Mclean<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+## Issues:
+None.
+
+## Activity:
+- Work on release 1.6.0 in April 2019
+- NimBLE controller stack release at same time
+- Community work in several areas including test facilities
+
+## Health report:
+- Users questions and contributor's pull requests are quickly dealt with
+- ApacheCan NA accepted a talk on Apache Mynewt
+- There's seems to be lack of activity of PMC on the private list
+- Large amount of private messages on slack (70-80% of all messages)
+- It's been a long time since any PMC members have been voted in
+
+## PMC changes:
+- Currently 19 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Aditi Hilbert on Wed Jun 21 2017
+
+## Committer base changes:
+- Currently 30 committers
+- No new committers added or voted on since last report
+- Last committer addition was on 1/16/2019 - Martin Turon and Ben McCrea
+
+## Releases:
+- Apache Mynewt 1.6.0 and Apache NimBLE 1.1.0 released April 9th
+
+## Mailing list activity:
+
+- Mailing list activity seeing new users and responders to questions asked
+ (esp. questions from newcomers)
+- Mailing list exchanges are mostly around NFC, BLE (and BLE mesh), test
+facilities and LoRa
+- Mailing list activity has dropped compared to last quarter
+- Slack activity is up and more users have joined
+
+## GitHub Issues activity:
+- Issue types seen include change/feature requests, bug reports,
+ contributions/PR, Q&amp;A</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#attachment-AO">2019-03-20</a> &mdash; Justin Mclean<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+## Issues:
+None.
+
+## Activity:
+- Ongoing preparation for upcoming Release 1.6.0 around mid-March 2019
+- Testing and bug fixes completed to pass Bluetooth SIG qualification of the
+  NimBLE controller stack, paperwork started
+- Community work in serval areas including test utilities, low power support
+  in LoRa, Cortex M33 support, Power management support for bus devices, log
+  level manipulation flexibility, porting of NimBLE stack to Linux and more.
+
+## Health report:
+- PMC and committers are active
+- Users questions and contributor's pull requests are quickly dealt with
+- Promotion of Apache Mynewt at Embedded World Nuremberg, Feb 2019
+
+## PMC changes:
+
+- Currently 19 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Aditi Hilbert on Wed Jun 21 2017
+
+## Committer base changes:
+
+- Currently 30 committers
+- Two new committers added or voted on since last report
+- Last committer addition was on 1/16/2019 - Martin Turon and Ben McCrea
+
+## Releases:
+- 1.6.0 slated for release mid-March, 2019
+- Last release was 1.5.0 on Nov 5, 2018
+
+## Mailing list activity:
+
+- Mailing list activity seeing new users and responders to questions asked
+  (esp. questions from newcomers)
+- Mailing list exchanges are mostly around test facilities, LoRa, BLE,
+  hardware support and performance
+- Mailing list average activity (# of topics, messages, people responding)
+  dropped by about 20% compared to previous quarter.
+- Slack activity up significantly and weekly/daily active users up 10% from
+  last period (from 415 to 458 active users)
+
+## GitHub Issues activity:
+- Issue types seen include change/feature requests, bug reports,
+  contributions/PR, Q&amp;A</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#attachment-AN">2018-12-19</a> &mdash; Justin Mclean<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+## Issues:
+  None.
+
+## Activity:
+  - Release 1.5.0 completed on Nov 5, 2018 following release 1.4.1 on July 1,
+    2018
+  - Community work in serval areas including encrypted flash support, new
+    Cortex-M3 and Cortex M-7 MCUs,logging enhancements, improved RTT
+    integration, common set of error codes for the I2C HAL, drivers for new
+    sensors and more.
+  - Travis Continuous Integration (CI) can now be used to build and test
+    Apache Mynewt on both Linux and OSX systems.
+
+## Health report:
+  - PMC and committers are active
+  - Users questions and contributor's pull requests are quickly dealt with
+  - Promotion of Apache Mynewt at Embedded Linux Conference + OpenIoT Summit
+    Europe, Oct 2018
+  - Talk on MyNewt at ApacheCon in Montreal
+  - Talk at 2018 China Open Source Conference (which was live translated and
+    video recorded)
+
+## PMC changes:
+
+  - Currently 19 PMC members.
+  - No new PMC members added in the last 3 months
+  - Last PMC addition was Aditi Hilbert on Wed Jun 21 2017
+
+## Committer base changes:
+
+  - Currently 28 committers
+  - No new committers added or voted on since last report
+
+## Releases:
+  - 1.5.0 was released on Nov 5, 2018
+  - 1.4.1 was released on July 1, 2018
+  - Making mcuboot the default bootloader for Apache Mynewt and splitting out
+    component nffs into a separate repo planned for next release
+
+## Mailing list activity:
+
+  - Mailing list activity seeing new users and responders to questions asked
+    (esp. questions from newcomers)
+  - Mailing list exchanges are mostly around BLE, graceful shutdown, error
+    recovery and reporting, Mynewt 1.5 release, bootloaders.
+  - Mailing list average activity (# of topics, messages, people responding)
+    dropped by about a third compared to previous quarter.
+  - Slack activity up significantly and weekly/daily active users up 15% from
+    last period (from 362 to 415 active users)
+
+## GitHub Issues activity:
+  - Issue types seen include change/feature requests, bug reports,
+    contributions/PR, Q&amp;A</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#attachment-AL">2018-09-19</a> &mdash; Justin Mclean<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+## Issues:
+None.
+
+## Activity:
+- Release 1.4.1 completed on July 1, 2018 following release 1.4 on June 12,
+  2018
+- Bluetooth component split out into a different repo on a separate release
+  track. The first NimBLE Bluetooth protocol stack 1.0.0 was released on June
+  13, 2018.
+- Community work in serval areas including logging enhancements, sensor
+  additions, Bluetooth mesh profiles, Bluetooth SIG certification fixes,
+  LoRa/LoraWAN testing, support for UCIFI comms, expansion of MCU
+  architectures supported
+- Documentation now has doxygen-based APIs generated for all component code in
+  the project.
+
+## Health report:
+- PMC and committers are active
+- Users questions and contributor's pull requests are quickly dealt with
+- Four new committers added since last board report in April
+- talk and demos of Apache Mynewt BLE and LoRa at Open IoT Summit, Portland,
+  Feb 2018
+- participation in LoRa demo table at Mobile World Congress, Feb 2018
+- Mynewt talk at Apache Roadshow in Berlin
+- Mynewt demos planned at Runtime booth at Bluetooth World, Sep 2018
+
+## PMC changes:
+
+- Currently 19 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Aditi Hilbert on Wed Jun 21 2017
+
+## Committer base changes:
+
+- Currently 28 committers
+- 5 new committer voted on and added since last report Kevin Townsend (July
+  17) Jerzy Kasenberg (June 21) Stephane D'Alu (April 19) Markus Lampert
+  (April 19) Matthew Warnes (April 19)
+
+## Releases:
+- 1.4.1 was released on July 1, 2018
+- 1.4.0 was released on June 12, 2018
+- planning on 1.5 release is currently underway
+
+## Mailing list activity:
+
+- Mailing list activity seeing several new users.
+- Mailing list exchanges are mostly around BLE, BLE mesh, API enhancements,
+  sensor support additions, build and usage issues, newt tool and newtmgr
+  issues
+- Mailing list average activity (# of topics, messages, people responding) has
+  held steady over the past few months.
+- Slack activity up significantly and weekly/daily active users up 50% from
+  last period (currently at 362 active users), new channels added.
+
+## GitHub Issues activity:
+- Issue tracking for each repo moved over to corresponding GitHub Issues after
+  discussion on mailing list</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-AS">2018-07-18</a> &mdash; Justin Mclean<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+## Issues:
+None. Sorry for the late report.
+
+## Activity:
+- Releases 1.4.0 and 1.4.1
+- Spilt into several repos complete
+
+## Health report:
+- PMC and committers are active
+- A new committer is currently being voted on
+- Talk at Apache Roadshow in Berlin (special thanks to Christopher Dutz who
+  filled in at last minute)
+- Talk scheduled for ApacheCon North America 2018
+- Seeing more pull requests from contributors
+- More questions from new contributors on the mailing list and slack
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Aditi Hilbert on Wed Jun 21 2017
+
+## Committer base changes:
+
+- Currently 24 committers
+- Three new committers voted on and added since last report
+- Currently voting on another one
+- Tue Jun 26 2018 Jerzy Kasenberg
+
+## Releases:
+- 1.4.1 was released on June 28th 2018
+- 1.4.0 was released on June 13th 2018
+
+## Mailing list activity:
+
+- Mailing list activity seeing several new users
+- Mailing list exchanges are mostly around BLE and BLE mesh, security, Zypher
+  integration, sensor API, logging changes, and new releases
+- Mailing list activity steady over previous period
+- Slack channel activity steady over previous period
+
+## JIRA activity:
+- JIRAs is hardly active as issue tracking has moved to GitHub issues
+- Github issues has increased activity and pull requests are being merged</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#section-6AP">2018-06-20</a> &mdash; Justin Mclean<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Isabel: pursue a report for Mynewt</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-AW">2018-04-18</a> &mdash; Justin Mclean<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+## Issues:
+None. A minor security issue was raised and resolved.
+
+## Activity:
+- Release 1.3 completed on Dec 13, 2017
+- Community work in splitting out major components into different repos e.g.
+repo for Bluetooth protocol stack (NimBLE), Newtron Flash File System (NFFS)
+etc.
+- Community work in serval areas including working on upcoming 1.4 core
+release, discussions on how to bundle component repos, build tool (Newt)
+enhancements, additional transport protocol support, and sensor support
+- Doxygen-based API generation for docs incorporated in the project
+documentation and receiving contributions from community
+
+## Health report:
+- PMC and committers are active
+- Users questions and contributor's pull requests are quickly dealt with
+- Several new committer are currently being voted on
+- talk and demos of Apache Mynewt BLE and LoRa at Open IoT Summit, Portland,
+Feb 2017
+- participation in LoRa demo table at Mobile World Congress, Feb 2017
+- Mynewy talk accepted for upcoming Apache Roadshow in Berlin
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Aditi Hilbert on Wed Jun 21 2017
+
+## Committer base changes:
+
+- Currently 24 committers
+- One new committer voted on and added since last report
+- Miguel Azevedo on Sun Sep 17 2017
+
+## Releases:
+- 1.3 was released on December 13th 2017
+- planning on 1.4 release is currently underway
+
+## Mailing list activity:
+
+- Mailing list activity seeing several new users.
+- Mailing list exchanges are mostly around BLE, BLE mesh, Hardware Abstraction
+Layers, MCU ports, Lora, Newt tool enhancements to make build process easier,
+and new releases
+- Mailing list activity up over previous period
+- Slack channel activity up significantly and weekly/daily active users up 50%
+from last period
+
+## JIRA activity:
+-  JIRAs activity down over previous period
+- Issue tracking for each repo moved over to corresponding GitHub Issues after
+discussion on mailing list</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#section-6AO">2018-03-21</a> &mdash; Justin Mclean<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Ted: pursue a report for Mynewt</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#attachment-AS">2017-12-20</a> &mdash; Justin Mclean<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+## Issues:
+
+A couple of "category X" files (4-clause BSD files) were found in a release
+candidate and previous releases. The issue is being dealt with. [1]
+
+1. https://issues.apache.org/jira/browse/LEGAL-355
+
+## Activity:
+- Community work in serval areas including working on new 1.3 releases,
+  improved documentation, updated security libraries and sensor support
+- There's been a number of workshops, conference talks about Apache Mynewt
+
+## Health report
+- PMC and committers are active
+- Users questions and contributor's pull requests are quickly dealt with
+
+## PMC changes:
+- Currently 19 PMC members
+- Last PMC addition was everyone on 21st June
+- No new PMC members added this reporting period
+
+## Committer base changes:
+- Currently 24 committers
+- One new committer voted on and added since last report
+- Miguel Azevedo on Sun Sep 17 2017
+
+## Releases:
+- 1.2 was released on September 12th 2017
+- 1.3 was released on December 11th 2017
+
+## Mailing list activity:
+- Mailing list activity is mainly around BLE, Lora and new releases
+- Mailing list activity up slightly over previous 3 months
+- Slack channel activity up significantly and users up 50% from 3 month ago
+
+## JIRA activity:
+-  JIRAs activity down over previous 3 month</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-AQ">2017-09-20</a> &mdash; Justin Mclean<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M, RISC-V and MIPS
+architectures.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+- Talks about Mynewt were given at a couple of conferences to improve project
+visibility in the community
+- Community work in serval areas including support for Bluetooth Mesh,
+Bluetooth 5, LoRa and new boards support
+- Coverity scan is now run periodically on Mynewt codebase to improve overall
+code quality and reduce bugs
+
+## Health report:
+
+- PMC and committers are active
+- Users questions and contributor's pull requests are dealt with in a timely
+manner
+
+## PMC changes:
+
+- Currently 19 PMC members
+-  Last PMC addition was everyone on 21st June
+
+## Committer base changes:
+
+- Currently 23 committers
+- One new committer voted on and added since last report - Miguel Arevedo on
+September 11th 2017
+
+## Releases:
+
+- 1.2 was released on September 12th 2017
+
+## Mailing list activity:
+
+- Mailing list activity is mainly around new feature descriptions and request
+for comments, voting for releases, questions that would be of general interest
+(e.g. code size increase/trimming)
+- Mailing list activity (number of emails, participant count, topics started)
+increased compared to previous month.
+- Lots of usage Q&amp;A and error clarification on Slack channel - up to 96 users
+on Slack channel
+
+## JIRA activity:
+
+- Activity similar to last month with similar number of JIRAs raised and
+closed. The average number of days taken to resolve issues dropped by a week
+from July to August.</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-AV">2017-08-16</a> &mdash; Justin Mclean<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+- Move to TLP  complete
+- Made first release as a TLP
+- Community work in several areas including new PWM driver and support for
+other boards
+
+## Health report:
+
+- PMC and committers are active
+- Users questions and contributor's pull requests are dealt with in a timely
+manner
+
+## PMC changes:
+
+- Currently 19 PMC members
+- No new PMC members added since last report
+- Last PMC addition was everyone on 21st June
+
+## Committer base changes:
+
+- Currently 23 committers
+- No new committers added since last report
+- Last committer addition was Jacob Rosenthal on 13th June 2017
+
+## Releases:
+
+- 1.1 was released on  Aug 01 2017
+
+## Mailing list activity:
+
+- Activity a little down on last month.
+
+## JIRA activity:
+
+- Activity less than last month with more JIRAs closed than raised.</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-AW">2017-07-19</a> &mdash; Justin Mclean<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+- Just become a TLP. Move to TLP has been fairly smooth with minimal
+infrastructure issues.
+- Took part in the Apache IoT track at ApacheCon Miami with 3 talks on Mynewt
+- Work on how to report security issues
+- Community work on porting to new platforms and supporting new languages
+(MicroPython) is on going
+- Working towards a mid-July release of 1.1
+
+## Health report:
+
+- PMC and committers are active
+- Users questions and contributor's pull requests are dealt with in a timely
+manner
+
+## PMC changes:
+
+- Currently 19 PMC members
+- Last PMC addition was everyone on 21st June
+
+## Committer base changes:
+
+- Currently 23 committers
+- Last committer addition was Jacob Rosenthal on 13th June 2017
+
+## Releases:
+
+- Last release was 1.0 on March 22nd, 2017
+
+## Mailing list activity:
+
+- Compared to previous period activity down a little on list as user some user
+question are being answered on Slack (mynewt.slack.com) but there's 26 new
+subscribers.
+
+## JIRA activity:
+
+- Activity about the same as previous period (100 odd JIRAs) with more JIRAs
+closed than raised.</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#mynewt">2017-04-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+Mynewt has been incubating since 2015-10-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Demonstrate the capability to do point and major releases that can be
+   used to build downloadable RTOS images for multiple MCU architectures,
+   peripherals, and network connectivity protocols. The goal of having a
+   first major (1.0) release in the first quarter of 2017 was met. The
+   releases are intended to demonstrate and solidify the repeatability,
+   usability, and maturity of process.
+2. Continue to develop and execute policies that enable project
+   contributors to achieve self-governance.
+3. Expand community - attract new project contributors, get users with
+   diverse backgrounds applying project to new use cases and encouraging
+   adoption, grow committer base.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+How has the community developed since the last report?
+
+1. Active mailing lists with increasing numbers of subscribers. 19 new
+   subscribers on dev@ mailing list since last report resulting in a total
+   of 160 subscribers.
+2. Increased participation by several new contributors through pull
+   requests for new MCU support, merges by new committers, new BSP support,
+   connectivity features, and test cases and test results. There is a
+   measurable increase in usage of the project for 3rd-party products and
+   demos. Outreach continues via conferences, exhibits, one on one
+   meetings, tutorials, beta testers, prototype and performance testing
+   with multiple organizations.  For example, 255 Pull Requests have been
+   closed on GitHub.
+3. Vigorous discussions, feature proposals, optimizations, code behavior
+   analysis, user interface improvements, and implementation debates on
+   @dev mailing list. Activity on dev@ list averaged 192 msgs/month in 2016
+
+How has the project developed since the last report?
+
+1. The first major release (1.0) was successfully completed on March 22nd.
+   Two beta releases led up to the first major release - first on December
+   13, 2016, the second on Feb 24, 2017, with the final month before the
+   release (between beta2 and 1.0) focusing on bug fixes, performance
+   tuning, and code cleanup for a robust first release. An example of
+   policy developed and executed is the Release Policy:
+   https://cwiki.apache.org/confluence/display/MYNEWT/Release+and+Support+Policy
+2. Planning: Issues including bug reports, features, and wish list captured
+   and tracked in ASF JIRA by members of the community. Proposals for new
+   features are posted on the dev@ mailing list and voted on by community
+   members.
+3. Effort towards self governance: Voting successfully completed to grant
+   committer status to five new candidates since last report. New committer
+   acceptance policy defined and followed:
+   https://cwiki.apache.org/confluence/display/MYNEWT/New+Committer+Acceptance+Process
+   Another example of policy developed and executed is the Release Policy:
+   https://cwiki.apache.org/confluence/display/MYNEWT/Release+and+Support+Policy
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[x] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2017-03-22
+
+When were the last committers or PPMC members elected?
+
+2017-03-28
+
+Signed-off-by:
+
+[ ](mynewt) Sterling Hughes
+   Comments:
+[X](mynewt) Jim Jagielski
+   Comments:
+[X](mynewt) Justin Mclean
+   Comments:
+[ ](mynewt) Greg Stein
+   Comments:
+[x](mynewt) P. Taylor Goetz
+   Comments:
+       In my opinion Mynewt is ready to graduate. I will
+       bring up that prospect with the podling.</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#mynewt">2017-01-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+Mynewt has been incubating since 2015-10-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Make further point releases capable of producing a downloadable RTOS
+   image with support for multiple MCU architectures, peripherals, and
+   network connectivity protocols with the goal of the first major (1.0)
+   release in the first quarter of 2017. These point releases are intended
+   to demonstrate and solidify the repeatability, usability, and maturity
+   of process.
+2. Continue to develop and execute policies that enable project
+   contributors to achieve self-governance.
+3. Expand community - attract new project contributors, get users with
+   diverse backgrounds applying project to new use cases and encouraging
+   adoption, grow committer base.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+How has the community developed since the last report?
+
+1. Active mailing lists with increasing numbers of subscribers. 23 new
+   subscribers on dev@ mailing list since last report.
+2. Increased participation by several new contributors through pull
+   requests for new MCU support, new BSP support, features, and test cases
+   and test results. Increased usage of the project for 3rd-party products
+   or demos. Outreach continues via conferences, exhibits, one on one
+   meetings, tutorials, beta testers.
+3. Vigorous discussions on feature proposals, code behavior analysis, API,
+   code usability, and implementation specifics on @dev mailing list.
+
+How has the project developed since the last report?
+
+1. The first beta release of the first major release (1.0.0-b1) was
+   completed on December 13, 2016. A second beta is being considered before
+   the first release in Q1, 2017 to facilitate a smooth major release.
+2. Planning: Issues including bug reports, features, and wish list captured
+   and tracked in ASF JIRA by members of the community.
+3. Effort towards self governance: Voting successfully completed to grant
+   committer status to two new candidates since last report.
+
+Date of last release:
+
+2016-12-13
+
+When were the last committers or PPMC members elected?
+
+2016-12-6
+
+Signed-off-by:
+
+[ ](mynewt) Sterling Hughes
+[X](mynewt) Jim Jagielski
+[x](mynewt) Justin Mclean
+[ ](mynewt) Greg Stein
+[x](mynewt) P. Taylor Goetz</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#mynewt">2016-10-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+Mynewt has been incubating since 2015-10-20.
+
+Three most important issues to address in the move towards graduation:
+
+ 1. Make further point releases capable of producing a downloadable RTOS image
+   with support for multiple peripherals and network connectivity with the
+   goals of the first major (1.0) release in the last quarter of 2016 and
+   continued demonstration of thorough understanding, repeatability, and
+   maturity of process.
+ 2. Continue to develop and execute policies that enable project contributors
+   to achieve self-governance.
+ 3. Expand community - attract new project contributors and users with diverse
+   backgrounds, grow committer base.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+None
+
+How has the community developed since the last report?
+
+1. Active mailing lists with increasing numbers of subscribers. 15 new
+subscribers on dev@ mailing list since last report. 2. Increased participation
+by 3rd parties through pull requests for new BSP support, features, and test
+cases. Outreach continues via conferences, exhibits, one on one meetings, beta
+testers, GSoC participation. 3. Vigorous discussions, feature proposals, and
+implementation suggestions on @dev mailing list.
+
+How has the project developed since the last report?
+
+1. Releases: No new releases since June 6th but work on several branches are
+being merged for first 1.0 beta release in October. The project has now closed
+100+ pull requests. 2. Planning: Issues including bug reports, features, and
+wish list captured and tracked in ASF JIRA by members of the community. Work
+continues against 125 tickets opened for 1.0 releases (beta and GA). 3. Effort
+towards self governance: Voting successfully completed to grant committer
+status to one new candidate since last report.
+
+Date of last release:
+
+ 2016-06-06
+
+When were the last committers or PMC members elected?
+
+ 2016-10-04
+
+Signed-off-by:
+
+ [ ](mynewt) Sterling Hughes
+ [X](mynewt) Jim Jagielski
+ [X](mynewt) Justin Mclean
+ [ ](mynewt) Greg Stein
+ [X](mynewt) P. Taylor Goetz</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#mynewt">2016-07-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+Mynewt has been incubating since 2015-10-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Make further point releases capable of producing a downloadable RTOS
+   image with support for multiple peripherals and network connectivity
+   with the goals of the first major (1.0) release in the last quarter of
+   2016 and continued demonstration of thorough understanding,
+   repeatability, and maturity of process.
+2. Continue to develop and execute policies that enable project
+   contributors to achieve self-governance
+3. Expand community - attract new project contributors and users, grow
+   committer base
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+How has the community developed since the last report?
+
+1. Active mailing lists with increasing numbers of subscribers. The
+   subscriber count more than doubled since the April report.
+2. Continued outside interest by 3rd parties as evidenced by use in
+   multiple new devices, bug reporting and fixing, feature additions.
+   Outreach via conferences, exhibits, one on one meetings, beta testers,
+   GSoC participation.
+3. Vigorous discussions and implementation decisions via proposals and
+   voting on @dev mailing list.
+
+How has the project developed since the last report?
+
+1. Releases: Four releases so far, two since the last report. The latest
+   was version 0.9 on June 9th.
+   - Regular process established and followed to check for license issues
+     esp. with third party software
+   - Tagging process and release candidate naming process tested and used
+   - Voting process and timelines established and used
+2. Documentation support: In addition to committers, several
+   non-committers added documentation through pull requests on github
+   mirror according to defined process.
+   - Support for versioning of documents added - to be used starting next
+     release.
+3. Effort towards self governance:
+   - Four releases completed successfully.
+   - Voting successfully completed to grant committer status to two
+     candidates after meeting threshold of patch submissions. Several new
+     committer candidates are in the pipeline.
+
+Date of last release:
+
+2016-06-06
+
+When were the last committers or PMC members elected?
+
+At the start
+
+Signed-off-by:
+
+[ ](mynewt) Sterling Hughes
+[X](mynewt) Jim Jagielski
+[X](mynewt) Justin Mclean
+[ ](mynewt) Greg Stein
+[X](mynewt) P. Taylor Goetz
+
+Shepherd/Mentor notes:
+
+Drew Farris:
+
+  Three mentors active on mailing lists. High activity on mailing lists.</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#mynewt">2016-04-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+Mynewt has been incubating since 2015-10-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Make further releases capable of producing a downloadable RTOS image
+   with support for multiple peripherals and network connectivity. Do
+   subsequent releases to indicate thorough understanding, repeatability,
+   and maturity of process.
+2. Continue to develop and execute policies that enable project
+   contributors to achieve self-governance
+3. Expand community - attract new project contributors and users, grow
+   committer base
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+ None
+
+How has the community developed since the last report?
+
+1. Healthy, active mailing lists with increasing numbers of subscribers
+2. Continual outside interest by 3rd parties. Outreach via conferences,
+   exhibits, one on one meetings, beta testers, GSoC participation.
+3. Vigorous discussions and implementation decisions via proposals and
+   voting on @dev mailing list.
+
+How has the project developed since the last report?
+
+1. Releases:  Two releases so far - first on 22nd Feb, next on 18th March
+   - Identified and fixed license issues, regular process established to
+     check for license issues esp. with third party software
+   - Tagging process and release candidate naming process tested and used
+   - Voting process and timelines established and used
+2. Documentation support: Several committers added documentation either
+   through direct git pushes or pull requests on github mirror.
+3. Effort towards self governance:
+   - Two releases completed successfully.
+   - Two committer candidates going through voting for committer status
+     after meeting threshold of patch submissions.
+
+Date of last release:
+
+2016-03-18
+
+When were the last committers or PMC members elected?
+
+At the start
+
+Signed-off-by:
+
+[ ](mynewt) Sterling Hughes
+[X](mynewt) Jim Jagielski
+[X](mynewt) Justin Mclean
+[ ](mynewt) Greg Stein
+[ ](mynewt) P. Taylor Goetz</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#mynewt">2016-01-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+Mynewt has been incubating since 2015-10-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Do a first Apache release capable of producing a downloadable RTOS
+   image with support for multiple peripherals and network connectivity.
+2. Develop and execute policies that enable project contributors to
+   achieve self-governance
+3. Expand community - attract new project contributors and users, grow
+   committer base
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+How has the community developed since the last report?
+1. Mailing list activity since last report:
+   @dev      52 messages (1 Dec to 5 Jan), 1 new subscribers (20 total)
+   @commits  150+ messages
+2. Repo is being cloned and looked at by several outside parties - need
+   to get all interested parties on the dev mailing list.
+3. Participation on the @dev mailing list covered a range of topics
+   including feature implementation approaches, coding practices, website,
+   and documentation rules discussions.
+
+How has the project developed since the last report?
+
+1. Feature support: 2 new JIRA issues were created to facilitate feature
+   implementation and website discussions
+2. Documentation support: Two new committers have started adding material
+   to technical documentation.
+3. Effort towards community growth: We have redesigned the project website
+   to organize and present content more clearly and to highlight upcoming
+   events where the project will have exposure.
+4. Effort towards self governance: Consensus reached on how a potential
+   contributor is accepted over time as a committer based on quality of
+   work.
+
+Date of last release:
+
+XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+[ ](mynewt) Sterling Hughes
+[X](mynewt) Jim Jagielski
+[X](mynewt) Justin Mclean
+[X](mynewt) Greg Stein
+[X](mynewt) P. Taylor Goetz
+
+Shepherd/Mentor notes:</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#mynewt">2015-12-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+Mynewt has been incubating since 2015-10-20.
+
+1. Do a first Apache release capable of producing a downloadable RTOS
+   image with support for multiple peripherals and network connectivity.
+2. Expand community - attract new project contributors and users &amp; grow
+   committer base
+3. Develop a roadmap and release schedule for the Mynewt Operating System
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+How has the community developed since the last report?
+
+1. Mailing list activity since last report:
+   @dev      48 messages, 2 new subscribers
+   @commits  140 messages
+2. Committer workflow was tested on documentation site.
+3. Participation on the @dev mailing list covered a range of topics
+   including feature priorities, coding practices, Go package handling
+   options, and logo discussions.
+
+How has the project developed since the last report?
+
+1. Feature support: 12 JIRA issues were created and are in various stages
+   of progress after discussion about relative priorities on @dev mailing
+   list.
+2. Documentation support: non-committer workflow discussed and tested on
+   site.
+3. Progress towards self-governance: We have a potential new committer
+   already, and the community is discussing its policy/culture about
+   adding committers and PMC members.
+
+Date of last release:
+
+No release yet.
+
+When were the last committers or PMC members elected?
+
+At the start of the project (2015-10-20)
+
+Signed-off-by:
+
+[X](mynewt) Sterling Hughes
+[X](mynewt) Jim Jagielski
+[X](mynewt) Justin Mclean
+[X](mynewt) Greg Stein
+[X](mynewt) P. Taylor Goetz
+
+Shepherd/Mentor notes:</pre>
+<h3 id="2015-11-18"><a href="2015/board_minutes_2015_11_18.html#mynewt">2015-11-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2015-11-18" title="Permalink">&para;</a></h3>
+<pre>Mynewt is a real-time operating system for constrained embedded systems like
+wearables, lightbulbs, locks and doorbells. It works on a variety of 32-bit
+MCUs (microcontrollers), including ARM Cortex-M and MIPS architectures.
+
+Mynewt has been incubating since 2015-10-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Produce a first Apache release of downloadable RTOS image with
+   support for multiple peripherals and network connectivity.
+2. Develop a roadmap and release schedule for the Mynewt Operating System
+3. Expand the community, increase dev list activity, and add new
+   committers/pmc members.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+Just started incubation, nothing specific to report at this time.
+
+How has the community developed since the last report?
+
+We are approximately 2 weeks into the incubation process.
+
+1. Core infrastructure has been set up. Core contributors have completed
+   their ICLA&rsquo;s. Apache accounts, mailing lists, JIRA, and website are in
+   place.
+2. First drop of documentation is linked to the incubator website on AFS.
+3. Participation on the @dev mailing list was seen with installation
+   queries and troubleshooting questions from mentors and 1 new
+   subscriber.
+
+How has the project developed since the last report?
+
+Early activity:
+
+1. Initial code drop on Apache git repository for Mynewt RTOS for M4 and
+   M3 architectures in debug environment
+2. Initial code drop on Apache git repository for newt tool to build basic
+   RTOS images
+3. Core infrastructure is set up
+
+Date of last release:
+
+No release yet.
+
+When were the last committers or PMC members elected?
+
+Initial list of committers have been on-boarded.
+No new members added on top of the initial committer list.
+
+Signed-off-by:
+
+[x](mynewt) Sterling Hughes
+[x](mynewt) Jim Jagielski
+[x](mynewt) Justin Mclean
+[X](mynewt) Greg Stein
+[x](mynewt) P. Taylor Goetz
+
+Shepherd/Mentor notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

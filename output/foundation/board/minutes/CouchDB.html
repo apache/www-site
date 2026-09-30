@@ -1,0 +1,3486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: CouchDB | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: CouchDB';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: CouchDB';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: CouchDB</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="couchdb">CouchDB<a class="headerlink" href="#couchdb" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2011-04-20</td>
+<td><a href="2011/board_minutes_2011_04_20.html#section-7A">Appointed Jan Lehnardt</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2008-11-19</td>
+<td><a href="2008/board_minutes_2008_11_19.html#section-7A">Appointed Damien Katz</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2008-11-19</td>
+<td><a href="2008/board_minutes_2008_11_19.html#section-7A">Establish the Apache CouchDB project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#section-6P">2026-08-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#section-6O">2026-06-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#section-6N">2026-05-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-Q">2026-02-18</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing with moderate activity (as usual)
+Issues for the board: none
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (17 years ago)
+There are currently 73 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Tony Schmidt on 2025-03-31.
+
+## Project Activity:
+- Continued development on major features reaching maturity.
+- This includes work for multiple point releases that should be landing in
+quicker-than-usual succession once the first of these lands. Part of the
+stack-up is making sure we have a solid upgrading with backwards
+compatibility story.
+- Part of that work is supported by the Sovereign Tech Agency, which we
+thank them for.
+
+## Community Health:
+Business as usual as far as we are concerned, which means slow but steady
+progress over all.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-O">2025-11-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (17 years ago)
+There are currently 73 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Tony Schmidt on 2025-03-31.
+
+## Project Activity:
+- CouchDB has applied to the Sovereign Tech Agency (STA) Bug Resilience
+  Programme and has been accepted. The work items being tackled
+  under the programme will be developer experience and automated
+  testing improvements, that will make CouchDB easier to contribute
+  to by new and existing contributors. It will also reduce maintenance
+  burden.
+  - The STA partner for doing this work is CouchDB PMC Chair Jan Lehnardt&rsquo;s
+    company Neighbourhoodie. Jan has abstained from any project decisions
+    about this to avoid a conflict of interest. In addition, the STA is
+    aware of all this and all safeguards are in place to avoid any potential
+    issues.
+- A set of major new features have been merged into main that will address
+  very longstanding issues with CouchDB when it comes to storing time-series
+  data. We are still refining some configuration API details, but a new feature
+  version 3.6.0 will include the new fixes.
+- In the meantime, the vote to release bugfix version 3.5.1 is underway at the
+  time of writing.
+
+## Community Health:
+It&rsquo;s a normal y/y quarter for CouchDB, development has picked up after the
+northern hemisphere summer quarter as per usual.</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-M">2025-08-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (17 years ago)
+There are currently 73 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Tony Schmidt on 2025-03-31.
+
+## Project Activity:
+- multiple parallel feature developments are ongoing.
+
+## Community Health:
+- northern hemisphere summer makes things a little slower as usual,
+  but nothing unusual to report.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-M">2025-05-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (16 years ago)
+There are currently 73 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- Tony Schmidt was added as committer on 2025-03-31
+
+## Project Activity:
+- 3.4.3 bugfix release went out fine.
+- Final prep being done for the 3.5.0 feature release. It&rsquo;ll have an exciting
+  new feature that enables even more throughput at high read/write concurrency.
+- Feature planning, design and implementation for the next three feature
+  releases is commencing with above average speed.
+- 3.4.x beta feature Nouveau, the new Lucene integration, is getting good
+  traction based on support requests and issues we are seeing filed.
+
+## Community Health:
+- We&rsquo;re seeing a healthy hum on all channels. Mailing list and GitHub metrics
+  are all trending upwards after the usually slower end-of-year quarter.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-L">2025-02-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (16 years ago)
+There are currently 72 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Jiahui Li on 2023-08-24.
+
+## Project Activity:
+- multiple new features for a new feature release are in development
+- starting the next release round for both feature and bug fix releases
+- monthly developer meetings continue to be useful
+
+## Community Health:
+- while the winter break slowed down the mailing lists a bit, GitHub
+  discussions and chat support are as active as ever.</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-M">2024-11-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (16 years ago)
+There are currently 72 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Jiahui Li on 2023-08-24.
+
+## Project Activity:
+- We had a curious release process for the long-awaited 3.4.0 feature release:
+  - an hour before we had agreed to announce the release, we found a showstopper
+    issue, but the vote, release artefact, convenience binaries, all were locked
+    in an ready to go.
+  - we chose to fix the issue, start the release procedure of 3.4.1 and to just
+    not announce 3.4.0.
+  - we took a bit of a marketing hit because folks do not pay attention to .1
+    releases as much and this release had two new flagship features, but we
+    opted to be rather safe than sorry to keep the long-term trust our end-users
+    have.
+  - See https://blog.couchdb.org/2024/09/27/3-4-1/ for more details.
+- We did release the 3.4.x series after a few months of working out new release
+  infrastructure details necessitated by the new features.
+- The release finally unblocked work on future features that should now arrive
+  in more quickly succession.
+- We also already released 3.4.2 to address a few annoying issues introduced in
+  3.4.0/3.4.1.
+- So far the reception has been great.
+
+## Community Health:
+Nothing unusual to report, release and post-release activity has been higher
+than normal, as anticipated. We are expecting this to continue as folks find
+time to upgrade.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-K">2024-08-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (16 years ago)
+There are currently 72 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Jiahui Li on 2023-08-24.
+
+## Project Activity:
+- slowly but surely prodding along for the new 3.4.0 release. As mentioned
+  in the last report, there are some new packaging challenges because of
+  new dependencies, so this takes a little longer than a usual release.
+- fixed a good bunch of hairy bugs along the way
+
+## Community Health:
+- the northern hemisphere summer lull is in full swing, but we are getting
+  renewed interested in taking over maintainership of our web UI component.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-N">2024-05-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (15 years ago)
+There are currently 72 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Jiahui Li on 2023-08-24.
+
+## Project Activity:
+- still preparing the next feature release, including a new
+  experimental full text search extension (based on Apache Lucene)
+- possibly also including a new JavaScript engine (QuickJS)
+
+## Community Health:
+- it&rsquo;s a slower than usual quarter, but things are humming along
+  in a normal way</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-K">2024-02-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (15 years ago)
+There are currently 72 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:1.
+
+In response to rbowen&rsquo;s note about our high Committer-to-PMC ratio:
+most active committers are on the PMC. We collected a lot of committers
+over the last 15 years that dropped off the project before making it
+into the PMC. We are not in the habit of forcibly retiring committers.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Jiahui Li on 2023-08-24.
+
+## Project Activity:
+- 3.3.3 was released on 2023-12-04 (h/t cdutz)
+- we are still preparing the next feature release 3.4.0 which is currently
+  held up by a single remaining issue.
+
+## Community Health:
+- community interaction is steady with a slight uptick as is normal after
+  a release.
+- dev activity has slowed a little, but not unreasonably so for this quarter.</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-K">2023-11-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing with moderate activity.
+Issues for the board: none.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (15 years ago)
+There are currently 72 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- Jiahui Li was added as committer on 2023-08-24
+- P&aacute;li G&aacute;bor was added as committer on 2023-08-24
+
+## Project Activity:
+- Continued preparation for our next feature release 3.4.0 featuring the first
+  (experimental) release of a from-scratch modern Apache Lucene-based clustered
+  full-text search add-on.
+- Update CI infra including new FreeBSD builders, new binary-package base
+  images with newer dependencies.
+- Our team (@vatamane) has reported multiple issues to our dependency Erlang,
+  which we hope can be addressed soon.
+- Continued work on adding a full Windows-based CI worker.
+
+## Community Health:
+- while GitHub interactions are down a little over the mid-year period, our
+  unofficial Slack support channel is continuing to see decent traffic with
+  both new and existing users reaching out for help.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-O">2023-08-16</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: Issues for the board: none.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (15 years ago)
+There are currently 70 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Ronny Berndt on 2022-04-08.
+
+## Project Activity:
+
+- RE: &ldquo;cd: Could you please elaborate a bit on the relation of Apache
+    CouchDB and PouchDB ... sibling sort of implies that there is a
+    relation.&rdquo;
+  - PouchDB is a re-implementation of the CouchDB API and replication
+    protocol in JavaScript for use in browsers and Node.js. The project
+    are not formally linked, but some folks work on both sides and when
+    coordination is required, the two project teams collaborate.
+
+- work on major new features continues.
+- work on CI infrastructure continues.
+- we started discussing the next feature release.
+
+
+## Community Health:
+- this is a northern hemisphere summer quarter and things are a little
+  slower than usual, but nothing less than expected.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-S">2023-06-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (15 years ago)
+There are currently 70 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:1.
+
+Community changes, past quarter:
+- Ronny Berndt was added to the PMC on 2023-03-04
+- No new committers. Last addition was Ronny Berndt on 2022-04-08.
+
+## Project Activity:
+
+- Next feature release (3.4.0) planning started, major new feature:
+ - new modern Lucene integration for full-text and multi-facet search
+- New JS evaluation infrastructure (first attempt to refactor this core
+  part of CouchDB. Feature complete, but some build issues remaining.
+  Slated for 3.5.0 unless miraculously ready in time for 3.4.0.
+- slow but steady progress of other keystone features for future 3.x
+  releases.
+
+## Community Health:
+- the community engagement is steady as usual with the expected uptick
+  around new releases.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#section-6K">2023-05-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-O">2023-02-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+- not an issue, but board feedback requested we add more PMCs:
+ - we are taking the feedback to heart and looking for active candidates
+   right now. The project just likes to note that we got unlucky a few
+   times in the past few years of having folks drop off right after they
+   were made committer.
+
+- board feedback also asked about the relationship between Apache CouchDB
+  and PouchDB: PouchDB is a non-ASF project that implements the CouchDB
+  API and replication/sync HTTP/JSON protocol for the Browser environment.
+  Together with CouchDB, it allows building fully offline-capable web
+  applications (it&rsquo;s pretty cool). There are people who work on both sides
+  of the project and we occasionally collaborate on new features, performance
+  improvements and security issues.
+
+- PMC Chair is curious about the new-ish 2-monthly reporting period. IIRC
+  that was quarterly in the past and wondering if we can get back to that,
+  as we are a one of the slow-and-steady type of projects where there just
+  isn't as much activity in two months, especially over the Christmas and
+  northern hemisphere summer periods.
+
+
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (14 years ago)
+There are currently 70 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- No new committers. Last addition was Ronny Berndt on 2022-04-08.
+
+
+## Project Activity:
+
+- 3.3.0 was released on 2022-12-28, greatly improving CouchDB replication
+  performance. Details: https://blog.couchdb.org/2023/01/03/3-3-0/
+- 3.3.1 was released on 2023-01-10, bugfix release.
+- New CI nodes for macOS (arm64) and FreeBSD (arm64 &amp; x86_64) have been
+donated and commissioned. A new Windows (x86_64) node has been donated and
+is being commissioned at the moment.
+- Made good progress on the keystone features for the next major version.
+
+## Community Health:
+Activity us up on all metrics expected to go up adjacent with new
+version releases.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#attachment-S">2022-12-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (14 years ago)
+There are currently 70 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- No new committers. Last addition was Ronny Berndt on 2022-04-08.
+
+## Project Activity:
+
+- Continued success with monthly zoom dev meetings to discuss higher-level
+  project features.
+- These discussions helped us outline a nice set of features for our next
+  major version release.
+- Preparing a new release with significant improvements: 3.3.0 (a lot of
+  performance work went into this one).
+- Non-ASF-sibling project PouchDB has released version 8.0.0 this week,
+  a major milestone.
+
+
+## Community Health:
+
+We continue to see good engagement on various community channels,
+including the unofficial Slack that isn&rsquo;t listed in our stats here.</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#section-6K">2022-11-16</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-K">2022-08-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (14 years ago)
+There are currently 70 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- No new committers. Last addition was Ronny Berndt on 2022-04-08.
+
+
+## Project Activity:
+- Started a monthly synchronous developer meeting via Zoom, with notes
+  and recordings for posterity. First iteration went very well. This
+  helps with discussing technical challenges in ~90 minute deep-dives.
+- Started roadmapping new plans for next major version 4.0 after
+  abandoning previous FoundationDB plans earlier this year.
+- A shortlist of marquee features for the 4.0 release is already in
+  place.
+- Further discussion about future direction beyond 4.0 has also started.
+
+
+## Community Health:
+- Nothing special to report here, we are chugging along nicely on all metrics.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-T">2022-06-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (14 years ago)
+There are currently 70 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- Ronny Berndt was added as committer on 2022-04-08
+
+## Project Activity:
+- we started attracting new committers who are already contributing regularly.
+- after a bit of a tedious security release we are now re-focussing efforts on
+  our next proper feature release.
+
+## Community Health:
+- We&rsquo;re seeing an uptick in most project activity metrics and the community is
+  humming along nicely.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#section-6I">2022-05-18</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-K">2022-02-16</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (13 years ago)
+There are currently 68 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- No new committers. Last addition was Bal&aacute;zs Don&aacute;t Bessenyei on 2021-01-14.
+
+## Project Activity:
+- major feature and bugfix work has continued at a regular pace
+- a new release is on the horizon
+
+
+## Community Health:
+- we started attracting a few new contributors to the project who have
+  contributed across the board from big bug fixes, new feature proposals
+  to packaging and release support.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-T">2021-12-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (13 years ago)
+There are currently 68 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- No new committers. Last addition was Bal&aacute;zs Don&aacute;t Bessenyei on 2021-01-14.
+
+
+## Project Activity:
+- released 3.2.0 to acclaim as well as 3.2.1.
+- extended ownership of convenience windows binaries from one individual
+  contributor to a team that includes entirely new contributors (ongoing).
+- increased visibility of CouchDB sub-components that might be useful
+  for other Erlang-based projects (as a trojan horse to attract new
+  contributors, and initial reactions are promising).
+
+
+## Community Health:
+- notable uptake in unofficial Slack support community including more folks
+  helping out with answering questions.
+- increase in all around project activity as well.</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#section-6O">2021-11-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-M">2021-08-18</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (13 years ago)
+There are currently 68 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- No new committers. Last addition was Bal&aacute;zs Don&aacute;t Bessenyei on 2021-01-14.
+
+## Project Activity:
+- Due to summer in the northern hemisphere and [points at state of the world]
+  slow progress on the project, but we are continuing to chug along on next
+  releases 3.2.0 and 4.0.0
+
+## Community Health:
+- overall activity is down due to the summer for most contributors. Meanwhile
+  our unofficial Slack channel continues to see steady flow of visitors seeking
+  help and guidance.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-K">2021-05-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (12 years ago)
+There are currently 68 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- No new committers. Last addition was Bal&aacute;zs Don&aacute;t Bessenyei on 2021-01-14.
+
+## Project Activity:
+
+- spent significant amounts of time dealing with the bintray/artifactory
+  migration
+- preparing a 3.2 release, including some new-contributor submitted
+  features and bugfixes
+- continued progress on the next major release (4.x, details in reports from
+  last year)
+
+
+## Community Health:
+- activity across the board is picking up, including new contributors
+  getting patches in</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-L">2021-02-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (12 years ago)
+There are currently 68 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- Bal&aacute;zs Don&aacute;t Bessenyei was added as committer on 2021-01-14
+
+
+## Project Activity:
+
+- Foundational work for the big 4.0 release continues at pace (see
+  previous reports for details).
+- Meanwhile the 3.x continues to receives new features and bug fixes.
+
+
+## Community Health:
+
+- things are a little slower overall, due to the pandemic, but overall
+  activity is still at relatively normal levels.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-J">2020-11-18</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (12 years ago)
+There are currently 67 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- 1 new PMC members: Glynn Bird on 2020-09-19.
+- No new committers. Last addition was Alessio Biancalana on 2020-02-27.
+
+
+## Project Activity:
+
+Version 3.1.1 was released on 2020-09-18. This is a bugfix release.
+
+Foundational work for the upcoming 4.0 version is still going strong. There are
+no immediate release plans, but the `main` development branch is now
+representing this future release. Current stable releases are still maintained
+on the `3.x` branch.
+
+We are in the process of switching all `master` branches to `main`.
+
+
+## Community Health:
+
+Development activity is up on all metrics after a usual slower summer quarter.
+
+user@ discussions are declining, but other forums of community support like
+GitHub Dissuasions and the community Slack are bustling.</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-M">2020-08-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+Response to feedback from last report:
+
+&gt;  jm: What was stopping users of this unauthorized binary provider
+     from providing the patches directly to the Apache project?
+
+Nothing, that&rsquo;s not what happened. Patches for bugs found running the
+unauthorised binaries went directly into Apache CouchDB. This issue
+was about a third party making binaries available for the Apache CouchDB
+master branch, which is prohibited by ASF policy.
+
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (12 years ago)
+There are currently 67 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jonathan Hall on 2020-02-12.
+- No new committers. Last addition was Alessio Biancalana on 2020-02-27.
+
+## Project Activity:
+
+Significant progress has been made to add features and bugfixes to the
+3.x release line, a new release here is in on the horizon.
+
+Also, significant progress is being made on the design and implementation
+of the next major release 4.0 in line with our expectations of progress here.
+See previous reports for more details on 3.x and 4.x.
+
+We are trialling GitHub&rsquo;s new Discussions feature for end-user support. It
+is being used in excess of our expectations and helps us to keep the bug
+tracker clean: https://github.com/apache/couchdb/discussions &mdash; We appreciate
+INFRA&rsquo;s help in getting this set up.
+
+
+
+## Community Health:
+
+It being the summer quarter for most contributors plus the COVID-19 situation
+has decreased overall project activity. That said, end-user support continues
+tat normal levels.</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-L">2020-05-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention. However, various board members
+requested clarification on this item from the last report:
+
+- a rogue source that provided binary builds off of CouchDB master has been
+  shut down. Unbeknownst to the project, a good number of critical fixes for
+  the 3.0.0 release were found by users of this unauthorized binary provider.
+  We are happy to continue to make sure the project complies with ASF policy,
+  but we also want to highlight that we benefited from something that was
+  technically forbidden, so maybe it is worth reconsidering some of this. Due
+  to the release process, we are currently not in the position to bring this
+  up in the form of a regular policy change request, we just wanted to flag
+  this, in case someone wants to take up this cause.
+
+df: this wasn&rsquo;t a trademark issue, but rather a third party providing binaries
+off of CouchDB `master` to the general public, rather than just dev@, which is
+not permitted as per ASF policy.
+
+da: done ;)
+
+rb, curcuru: apologies for not being clearer, this wasn&rsquo;t just third party
+binaries, but binaries off of `master` for the general public.
+
+&mdash;
+
+In addition: we appreciate the guidance on permitting HTML emails on-list.
+
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (11 years ago)
+There are currently 67 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- Jonathan Hall was added to the PMC on 2020-02-12
+- Deni Burroughs was added as committer on 2020-02-15
+- Alessio Biancalana was added as committer on 2020-02-27
+- Juanjo Rodriguez was added as committer on 2020-02-07
+
+## Project Activity:
+- Released 3.0.0 to great success and accolades.
+  - see https://blog.couchdb.org/2020/02/26/the-road-to-couchdb-3-0/ for details
+- We&rsquo;re seeing increased beginner support inquiries on our various channels
+  which we attribute to the major version release.
+- Started 3.0.1 and 3.1.0 release processes.
+- Continued work on 4.0 design and development (see previous reports for
+  details).
+
+## Community Health:
+
+Significantly increased mailing list, GitHub and (unofficial) Slack usage
+supports increased project buzz post 3.0.0. We&rsquo;re happy and chugging along.</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-J">2020-02-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (11 years ago)
+There are currently 65 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- Jonathan Hall was added to the PMC on 2020-02-12
+- Juanjo Rodriguez was added as committer on 2020-02-07
+
+
+## Project Activity:
+
+- The release process for CouchDB 3.0.0 has started. We expect a release
+shortly. See board reports from last year about the exact nature of this
+release, including a discussion on features and backwards compatibility.
+- a blog post campaign to accompany the campaign is in the works as well.
+- a rogue source that provided binary builds off of CouchDB master has
+been shut down. Unbeknownst to the project, a good number of critical fixes
+for the 3.0.0 release were found by users of this unauthorized binary provider.
+We are happy to continue to make sure the project complies with ASF policy, but
+we also want to highlight that we benefited from something that was
+technically forbidden, so maybe it is worth reconsidering some of this.
+Due to the release process, we are currently not in the position to bring
+this up in the form of a regular policy change request, we just wanted to
+flag this, in case someone wants to take up this cause.
+- a large corporate contributor to CouchDB has an infrastructure policy of
+only allowing outbound HTML emails, while the ASF mail servers allow
+absolutely no HTML. This has lead to friction in getting individuals from that
+corporation to participate in the official channels of the project. We&rsquo;ve made
+due for the moment, but this is hurting our official activity as people will
+go the route of least friction and start discussions outside of official
+channels. While those discussions are not of a nature that make decisions for
+the project, we are careful about keeping those on dev@, it leads to folks
+missing out on discussions, if they don&rsquo;t happen to be part of a discussion
+channel that&rsquo;s more accessible than the plaintext mailing list. Again,
+we are not in a position to pick up the mantle for this surely larger
+discussion, we just bring up another data point on the issue.
+
+
+## Community Health:
+Community activity is in line with our expectations. We are seeing an uptick
+of new contributions around in the lead up of 3.0.0, which people are genuinely
+excited about.</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#attachment-J">2019-11-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache CouchDB software is a document-oriented database that can be queried and
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers
+incremental replication with bi-directional conflict detection and resolution.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (11 years ago)
+There are currently 64 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Nick Vatamaniuc on 2017-11-07.
+- No new committers. Last addition was Jay Doane on 2019-01-05.
+
+## Project Activity:
+- project management tasks and work tickets to close up all remaining tasks
+  for the 3.0 release are commencing nicely.
+- foundational work for 4.0 is going on concurrently.
+- a number of our committers are attending the FoundationDB Summit this week,
+  to meet with the larger FoundationDB community (see previous reports for
+  a detailed explanation)
+
+## Community Health:
+In the past quarter we&rsquo;ve been in chugging-along mode mostly on all
+official channels. The unofficial CouchDB Slack instance is seeing a continuous
+uptick in activity, which might explain the decrease in user@ traffic.
+
+A lot of work is happening in PRs as opposed to merges to master at the
+moment, which explains the relative shift in numbers there.
+
+dev@couchdb.apache.org had a 2% decrease in traffic in the past
+quarter (153 emails compared to 156)
+user@couchdb.apache.org had a 75% decrease in traffic in the past
+quarter (36 emails compared to 140)
+318 commits in the past quarter (-19% decrease)
+32 code contributors in the past quarter (28% increase)
+147 PRs opened on GitHub, past quarter (59% increase)
+135 PRs closed on GitHub, past quarter (62% increase)
+113 issues opened on GitHub, past quarter (43% increase)
+70 issues closed on GitHub, past quarter (79% increase)</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-M">2019-08-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Seamless multi-master sync, that scales from Big Data to Mobile,
+with an Intuitive HTTP/JSON API and designed for Reliability.
+
+## Issues:
+There are no issues requiring board attention
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (11 years ago)
+There are currently 64 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Nick Vatamaniuc on 2017-11-07.
+- No new committers. Last addition was Jay Doane on 2019-01-05.
+
+## Project Activity:
+
+The Vote[1] to adopt FoundationDB as CouchDB&rsquo;s future underlying distribution
+and storage technology has passed unanimously.
+
+See the two previous board reports for more context.
+
+Current planning includes both a CouchDB 3.0 and a CouchDB 4.0 milestone. 3.0
+will include the best version of the current, mostly Erlang-based project,
+with many new features contributed by various project partners (but notably
+IBM). This will be the LTS version for people who won&rsquo;t be able to migrate to
+the newer technology foundation. There are a number of technical limitations
+that we are happy to adopt as a project going forward, but that might be deal-
+breakers for some users. As such, we&rsquo;ll serve those users best with an excellent
+edition of the original technology stack. LTS-timelines are TBD.
+
+CouchDB 4.0 which is already under development concurrently will include a
+mostly[tm] API compatible version of CouchDB built on top of FoundationDB. API
+differences are going to be communicated clearly and migration paths documented
+thoroughly.
+
+For a little bit of context: with the addition of clustering, CouchDB 2.x turned
+from an accidentally strongly consistent database (because it was a single-node
+database) to an eventually consistent database, losing some essential properties
+in favour of scalability and fault tolerance.
+
+With the help of FoundationDB, those properties lost after 1.x are going to be
+regained, while retaining scalability and fault tolerance, and while putting the
+CouchDB foundational underpinnings on a modern distributed database stack that
+would easily take us 10+ years to build.
+
+IBM is spearheading this effort within the ASF and is adding more resources to
+the CouchDB project in terms of development, release management, infrastructure
+as well as project management
+
+[1]: https://s.apache.org/couchdb-fib-vote
+
+## Community Health:
+
+All parts of the existing community are participating in the 3.x and 4.x
+efforts. While no new committer-candidates have emerged yet, there is a small
+influx of new and promising voices.</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-J">2019-05-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Seamless multi-master sync, that scales from Big Data to Mobile,
+  with an Intuitive HTTP/JSON API and designed for Reliability.
+
+## Issues:
+ - there are no issues requiring board attention at this time.
+
+## Activity:
+ - Technical discussion for the move to FoundationDB outlined in the
+   last report is ongoing and fruitful.
+ - At the same time new features are added and bugs are fixed for existing
+   release lines.
+ - We are getting close to fully supporting arm64, specifically with pre-built
+   binaries and CI coverage.
+
+## Health report:
+ - Discussion levels are normal and focussed on the tasks at hand.
+
+## PMC changes:
+
+ - Currently 15 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Vatamaniuc on Tue Nov 07 2017
+
+## Committer base changes:
+
+ - Currently 64 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Jay Doane at Sat Jan 05 2019
+
+## Releases:
+
+ - 2.3.1 was released on Mon Mar 11 2019</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-N">2019-02-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Seamless multi-master sync, that scales from Big Data to Mobile,
+  with an Intuitive HTTP/JSON API and designed for Reliability.
+
+## Issues:
+ - there are no issues requiring board attention at this time.
+
+## Activity:
+ - Big News&trade;: The IBM Cloudant team has started a discussion around
+   replacing the bottom ~2/3s of CouchDB (file storage, btree,
+   distributed computing layer) with FoundationDB, keeping most
+   API semantics, but allowing for faster evolution of much needed
+   CouchDB features while building on a reliable, wait for it,
+   foundation.
+
+   For now this is a discussion, ranging across many threads covering
+   everyting from FDB governance considerations, the detailed tech bits
+   as they pertain to CouchDB, as well as overall project roadmap.
+
+   This is sparked a huge, and very fruitful discussion, including a
+   transition phase and long-term support for existing users, who for
+   one reason or another couldn&rsquo;t do the future transition.
+
+   Tentatively, this would be CouchDB 4.0 while the next major release
+   would be aimed at being &ldquo;The best version of CouchDB we can make
+   without FoundationDB&rdquo;, including several long-awaited features that
+   have either recently landed or are nearing completion at the moment.
+   Curiously, discussing a potential 4.0 has sparked activity around
+   getting 3.0 done sooner.
+
+   We expect the discussion threads to wrap up before long, after which
+   we should have talked through all the relevant details so we can
+   make an informed Vote.
+
+ - Preparation of versions 2.3.1 (bugfix) and 2.4.0 (major new features).
+
+## Health report:
+ - The aboforementioned discussion has raised dev@ mail traffic to
+   rarely seen heights.
+
+## PMC changes:
+ - Currently 15 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Vatamaniuc on Tue Nov 07 2017
+
+## Committer base changes:
+ - Currently 64 committers.
+ - Jay Doane was added as a committer on Sat Jan 05 2019
+
+## Releases:
+ - 2.3.0 was released on Thu Dec 06 2018
+
+## Mailing list activity:
+ - Just to show the increase in activity on dev@ alone due to the
+   FoundationDB discussion.
+
+ - dev@couchdb.apache.org:
+    - 538 subscribers (down -12 in the last 3 months):
+    - 254 emails sent to list (34 in previous quarter)</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-K">2018-11-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Seamless multi-master sync, that scales from Big Data to Mobile,
+   with an Intuitive HTTP/JSON API and designed for Reliability.
+
+## Issues:
+ - there are no issues requiring board attention at this time.
+
+## Activity:
+ - Gear-up for the 2.3.0 release continuing our pattern of one
+   big feature for every feature release. This time, clustered
+   purge that even replication clients can make use of.
+ - Near completion of getting CouchDB to build an run on arm64.
+ - Continued activity on infrastructure like build tooling, CI,
+   test suites (including a completely new test suite written in
+   Elixir) to streamline our release processes, and simplify
+   consumption of CouchDB in various shapes and forms.
+ - Presence at ApacheCon NA in Montreal with two talks.
+
+## Health report:
+ - Project activity is steady and as expected.
+
+## PMC changes:
+ - Currently 15 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Vatamaniuc on Tue Nov 07 2017
+
+## Committer base changes:
+ - Currently 63 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Peng Hui Jiang at Sat Mar 03 2018
+
+## Releases:
+ - Last release was 2.2.0 on Tue Aug 07 2018</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-K">2018-08-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- CouchDB is a HTTP/JSON Database with unique data replication
+
+## Issues:
+- there are no issues requiring board attention at this time
+
+## Activity:
+- Major update, released 2.2.0 with many new features and long awaited
+bugfixes as well as a sizeable number of significant perofmance
+improvements.
+- Started in-depth roadmap planning, which brought 30+ new issues in
+with extensive discussions on many new features and improvements.
+- Joan "wohali" Touzet represents us at ApacheCon in Toronto with two
+talks.
+
+## Health report:
+- We had a decent push on getting the latest release out and activity
+is currently as expected in post-release and late-summer timeframes.
+
+## PMC changes:
+
+- Currently 15 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Nick Vatamaniuc on Tue Nov 07 2017
+
+## Committer base changes:
+
+- Currently 63 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Peng Hui Jiang at Sat Mar 03 2018
+
+## Releases:
+
+- 1.7.2 was released on Tue Jul 10 2018
+- 2.1.2 was released on Tue Jul 10 2018
+- 2.2.0 was released on Tue Aug 07 2018</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#attachment-L">2018-05-16</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Seamless multi-master sync, that scales from Big Data to Mobile,
+  with an Intuitive HTTP/JSON API and designed for Reliability.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - We worked through a gnarly set of issues in 2.1.1 that will culminate
+   in the soon-ish 2.2.0 and 2.1.2 set of releases. This was a multi-month
+   cross-team effort that resulted in many happy end-users.
+ - Updated CI infrastructure and convenience build dependencies due to
+   major repos dropping one of our dependencies (SpiderMonkey 1.8.5).
+ - We will have presence at ApacheCon in Montreal thanks to Joan @woahli
+   Touzet.
+ - A number of PMC members attended long-time contributor Robert Newson&rsquo;s
+   wedding in Windsor: https://twitter.com/rnewson/status/988141902313779200
+
+## Health report:
+ - Slowed down activity after busy Q4/17 &amp; Q1/18, some of it due to
+   industry-wide generally busyness because of SPECTRE, MELTDOWN &amp; GDPR.
+ - The project is doing fine overall, and is looking forward to after
+   May 25th.
+
+## PMC changes:
+
+ - Currently 15 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Vatamaniuc on Tue Nov 07 2017
+
+## Committer base changes:
+
+ - Currently 63 committers.
+ - Peng Hui Jiang was added as a committer on Sat Mar 03 2018
+
+## Releases:
+ - Last release was 2.1.1 on Mon Jan 29 2018</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#attachment-K">2018-02-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- A database with seamless multi-master sync, that scales from Big Data
+  to Mobile, with an Intuitive HTTP/JSON API and designed for Reliability.
+
+## Issues:
+
+ - there are no issues requiring board attention at this time.
+
+## Activity:
+
+ - As per trademarks@, &ldquo;CouchDB&rdquo; is now a USPTO registered trademark.
+   The project thanks Shane Curcuru for his perseverance in getting this
+   resolved.
+ - The severe CVEs reported in the last report are in the news again this
+   month, as hackers are using it to install cryptocurrency miners. From
+   a project perspective, there isn&rsquo;t much more we could do to reach out
+   to users (short of scanning the internet ourselves), but we continue
+   to discuss better community engagement strategies, so more users do
+   update in case of severe security issues (however futile the situation,
+   we&rsquo;re still hopeful we can improve).
+ - Clarified PR-merge policy after an (in the end harmless) incident that
+   saw a seemingly semver-major change hit master where two employees from
+   a single contributing employer proposed and approved a PR. We now wait
+   72 hours for semver-major PRs hitting master or release branches.
+
+## Health report:
+
+ - CouchDB issue #745 is currently binding most of the project&rsquo;s resources,
+   and impacts a number of higher-profiler users. Progress is steady, but
+   slow. A new release is planned with the future fix, which will also
+   address a number of issues left after the last 2.1.1 release.
+
+## PMC changes:
+
+ - Currently 15 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Nick Vatamaniuc on Tue Nov 07 2017
+
+## Committer base changes:
+
+ - Currently 62 committers.
+ - New commmitters:
+    - Alexis C&ocirc;t&eacute; was added as a committer on Thu Nov 30 2017
+    - Antonio Maranhao was added as a committer on Wed Dec 06 2017</pre>
+<h3 id="2017-11-15"><a href="2017/board_minutes_2017_11_15.html#attachment-M">2017-11-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2017-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Seamless multi-master sync, that scales from Big Data to Mobile,
+  with an Intuitive HTTP/JSON API and designed for Reliability.
+
+## Issues:
+- there are no issues requiring board attention at this time
+
+## Activity:
+- Released versions 2.1.1 and 1.7.0 in response to a critical
+  security vulnerability being reported. Details are embargoed
+  for a few more days at the time of writing of this report.
+  CVE&rsquo;s have been filed and should be out by the time of the
+  board meeting.
+- Released version 1.7.1 because 1.7.0 included an unintentional
+  API break.
+- Barring any other major security issues, this will have been
+  the last release in the 1.x.x line.
+- 2.1.1 included a flurry of other improvements and performance
+  advancements an follows relatively shortly after 2.1.0 (August),
+  showcasing the advance in CI reliability and breadth allowing
+  for faster and more confident releases (just wish we had that
+  in place for 1.x.x so we could have avoided 1.7.1, alas).
+- Late response to a March Board Report question by `mt`
+  (again, all formal apologies for the delay). In January 2017,
+  CouchDB was in the news about data leaks and ransom scenarios,
+  citing CouchDB&rsquo;s &ldquo;open by default&rdquo; setup. In short CouchDB 1.x
+  has followed an open-by-default strategy to make it easy for
+  new users to get started. The main mitigating factor only
+  binding to 127.0.0.1, and requiring an explicit admin step
+  to bind to a public IP. 10 years in the strategy worked, but
+  it is also time to shed that legacy. CouchDB 2.x default
+  setup requires an admin password to be set, even on 127.0.0.1.
+  This is a big improvement, but leaves a few more ways until
+  we get to a closed-by-default sitaution. We&rsquo;re expecting a
+  full transition to be done by CouchDB 3.0.
+
+
+## Health report:
+- CouchDB is doing fine. Unprecedented activity in Q3 of work
+  that ended up in a release already. We aim to keep up a
+  quarterly release cadence.
+
+## PMC changes:
+
+- Currently 15 PMC members.
+- Nick Vatamaniuc was added to the PMC on Tue Nov 07 2017
+
+## Committer base changes:
+
+- Currently 60 committers.
+- New commmitters:
+   - Mayya Sharipova was added as a committer on Thu Aug 31 2017
+   - Will Holley was added as a committer on Thu Aug 31 2017
+
+## Releases:
+
+- 1.7.0 was released on Mon Nov 06 2017
+- 1.7.1 was released on Sat Nov 11 2017
+- 2.1.1 was released on Mon Nov 06 2017</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-P">2017-08-16</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Seamless multi-master sync, that scales from Big Data to Mobile,
+   with an Intuitive HTTP/JSON API and designed for Reliability.
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## Activity:
+ - Released version 2.1.0, details on the blog:
+   https://blog.couchdb.org/2017/08/07/2-1/ (tl;dr: a major new feature
+   for users at scale, tons of post 2.0.0 bugfixes, and:
+ - Massively overhauled test suites, jenkins setup, worked with Infra around
+   lots of little and gnarly issues; all this resulting in being able to
+   make more reliable release in quicker succession from now on. We haven&rsquo;t
+   settled on anything yet, but are discussing a release per quarter plus
+   security ad bugfix releases as needed. Special shout out for PMC member
+   Joan &ldquo;wohali&rdquo; Touzet, for primarily driving this effort to success.
+ - Currently awaiting Facebook&rsquo;s decision on licensing their React &amp; adjunct
+   JavaScript frameworks, which are in use in our admin UI Fauxton:
+   https://github.com/facebook/react/issues/10191 &mdash; We have discussed
+   alternatives, but made no contingency plans just yet.
+
+## Health report:
+ - The project is doing fine overall. We&rsquo;ll be doing a dedicated drive for
+   JavaScript contributors for our admin UI after the licensing discussion
+   is over, and we have more certainty about future direction. Current
+   contributors are moving towards other areas of the projects, and it&rsquo;s
+   a great place for people to get into the project without having to
+   learn Erlang.
+
+## PMC changes:
+ - Currently 14 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Garren Smith on Mon Oct 19 2015
+
+## Committer base changes:
+
+ - Currently 58 committers.
+ - Glynn Bird was added as a committer on Mon May 29 2017
+
+## Releases:
+
+ - 2.1.0 was released on Mon Aug 07 2017</pre>
+<h3 id="2017-05-17"><a href="2017/board_minutes_2017_05_17.html#attachment-N">2017-05-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2017-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- CouchDB is a database with seamless multi-master sync that scales from Big Data
+  to Mobile, with an intuitive HTTP/JSON API, and designed for reliability.
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## Activity:
+ - Beta phase for Debian/Ubuntu and RedHat native system packages
+ - 2.1 release cycle starts
+ - Major new replication scheduler feature landed and is slated for 2.2
+ - Major CI overhaul done
+ - Ran the 2017 Annual CouchDB Survey, result analysis is TBD
+ - Adopted gitbox.a.o
+
+## Health report:
+ - Project is running smoothly
+
+## PMC changes:
+
+ - Currently 14 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Garren Smith on Mon Oct 19 2015
+
+## Committer base changes:
+
+ - Currently 57 committers.
+ - Jonathan Hall was added as a committer on Wed May 10 2017
+
+## Releases:
+
+ - Last release was 2.0.0.1 on Thu Dec 08 2016</pre>
+<h3 id="2017-02-27"><a href="2017/board_minutes_2017_02_27.html#attachment-N">2017-02-27</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2017-02-27" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- CouchDB is a database with seamless multi-master sync that scales from Big
+  Data to Mobile, with an intuitive HTTP/JSON API, and designed for reliability.
+
+## Issues:
+- There are no issues requiring board attention at this time
+
+## Activity:
+- Post 2.0 release activities including helping users with new onboarding
+  and migration of existing apps (it is straightforward), Sorting out all
+  the small things that people find after a major release.
+- Continue to prepare a 2.1.0 release.
+- More in-depth discussion about project direction for 3.0 and beyond.
+- The 2017 CouchDB Dev Summit just concluded, results publication is
+  forthcoming.
+  - The Dev Summit is a small group face-to-face meeting (last held in 2012)
+    that produces recommendations for the developer mailing list.
+
+## Health report:
+- Nothing outstanding to report, the project is humming along nicely.
+  Nevertheless, we are working on measures to increase contribution yet
+  again.
+
+## PMC changes:
+
+- Currently 14 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Garren Smith on Mon Oct 19 2015
+
+## Committer base changes:
+
+- Currently 56 committers.
+- Michael Hall was added as a committer on Sat Dec 31 2016
+
+## Releases:
+
+- 2.0.0 was released on Tue Sep 20 2016
+
+## JIRA activity:
+
+- 63 JIRA tickets created in the last 3 months
+- 35 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#attachment-L">2016-11-16</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - CouchDB is a database with seamless multi-master sync that scales from Big Data
+   to Mobile, with an intuitive HTTP/JSON API, and designed for reliability.
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## Activity:
+ - Shipped 2.0, 4 years in the making, 10+ years planning, finally coming together
+   The release was a huge success, adoption, based on mailing list and JIRA traffic,
+   is going well.
+ - New logo (see http://couchdb.apache.org)
+ - New slogan (see &ldquo;Description&rdquo; above)
+ - Preparating for 2.0.1 and genereally faster releases (again).
+ - Discussion about 3.0 and beyond scope. Lots of contributions.
+ - Total of six talks at ApacheCon EU and Apache BigData EU.
+
+## Health report:
+ - Project is buzzing as expected. Decent update in activity post 2.0, mostly
+   end-user support and fixing little issues. All well!
+
+## PMC changes:
+
+ - Currently 14 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Garren Smith on Mon Oct 19 2015
+
+## Committer base changes:
+
+ - Currently 55 committers.
+ - Benjamin Anderson was added as a committer on Mon Oct 31 2016
+
+## Releases:
+
+ - 2.0.0 was released on Tue Sep 20 2016
+
+## JIRA activity:
+
+ - 129 JIRA tickets created in the last 3 months
+ - 55 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#attachment-P">2016-08-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - NoSQL document database using HTTP, JSON, and MapReduce
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## Activity:
+ - Final, final stretches for major 2.0 release (see last report for more details)
+ - We are currently making release candidates available on a weekly basis for
+   larger community feedback.
+ - We are also running a blog-post series on various 2.0-related topics, two posts
+   a week until end of August.
+
+## Health report:
+ - 2.0 release preparation buzz is envigorating, the whole team is coming together
+   coding, testing, wrapping up lose ends, finishing docs, and the wider community is
+   reporting back their experiences with the 2.0 release candidates. Despite the usual
+   (northern hemisphere-) summer-lull, things feel very active and exciting.
+
+## PMC changes:
+
+ - Currently 14 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Garren Smith on Mon Oct 19 2015
+
+## Committer base changes:
+
+ - Currently 54 committers.
+ - Nick Vatamaniuc was added as a committer on Thu Jun 16 2016
+
+## Releases:
+
+ - Last release was 1.6.1 on Wed Sep 03 2014
+
+## Mailing Lists
+
+- Business as usual
+
+## JIRA activity:
+
+ - 81 JIRA tickets created in the last 3 months
+ - 39 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#attachment-R">2016-05-18</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - NoSQL document database using HTTP, JSON, and MapReduce
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## Activity:
+ - &ldquo;Releasing a 1.0 is not going to kill you, but it will try.&rdquo;
+   - This is also true for a 2.0. We are now, for really-real
+     in the final stages of getting release candidates out for
+     the much famed Apache CouchDB 2.0 release, promised!
+ - The marketing team ran the 2016 Annual* CouchDB User Survey with
+   150+ responses and fascinating results:
+   - Executive summary: https://s.apache.org/couchdb-user-survey-2016-summary
+   - Raw results: https://s.apache.org/couchdb-user-survey-2016-results
+   * This was the first year.
+
+## Health report:
+ - Most activity currently is on notifications@ which aggregates all
+   pull request and issue activities. In gearing up for 2.0, traffic
+   there is going up accordingly.
+
+## PMC changes:
+
+ - Currently 14 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Garren Smith on Mon Oct 19 2015
+
+## Committer base changes:
+
+ - Currently 53 committers.
+ - Nolan Lawson was added as a committer on Tue Apr 19 2016
+
+## Releases:
+
+ - Last release was 1.6.1 on Wed Sep 03 2014
+
+## Mailing list activity:
+
+ - notifications@ is swelling with activity and everything else
+   is holding their breath in preparation for the big 2.0 release,
+   marketing@ is busy as usual.
+
+ - dev@couchdb.apache.org:
+    - 590 subscribers (up 1 in the last 3 months):
+    - 256 emails sent to list (206 in previous quarter)
+
+ - announce@couchdb.apache.org:
+    - 302 subscribers (up 19 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - couchapp@couchdb.apache.org:
+    - 54 subscribers (up 7 in the last 3 months):
+    - 9 emails sent to list (134 in previous quarter)
+
+ - design@couchdb.apache.org:
+    - 19 subscribers (up 3 in the last 3 months):
+    - 3 emails sent to list (5 in previous quarter)
+
+ - erlang@couchdb.apache.org:
+    - 190 subscribers (up 0 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - l10n@couchdb.apache.org:
+    - 45 subscribers (up 1 in the last 3 months):
+    - 0 emails sent to list (5 in previous quarter)
+
+ - marketing@couchdb.apache.org:
+    - 62 subscribers (up 3 in the last 3 months):
+    - 94 emails sent to list (96 in previous quarter)
+
+ - notifications@couchdb.apache.org:
+    - 17 subscribers (up 3 in the last 3 months):
+    - 1791 emails sent to list (1311 in previous quarter)
+
+ - replication@couchdb.apache.org:
+    - 85 subscribers (up 1 in the last 3 months):
+    - 1 emails sent to list (1 in previous quarter)
+
+ - user@couchdb.apache.org:
+    - 1289 subscribers (down -24 in the last 3 months):
+    - 164 emails sent to list (199 in previous quarter)
+
+ - www@couchdb.apache.org:
+    - 18 subscribers (up 1 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+## JIRA activity:
+
+ - 65 JIRA tickets created in the last 3 months
+ - 31 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-02-17"><a href="2016/board_minutes_2016_02_17.html#attachment-N">2016-02-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2016-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   NoSQL document database using HTTP, JSON, and MapReduce
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## Activity:
+ - Start on official Docker image for CouchDB 1.x and 2.x.
+ - Fully automated and scripted CI on builds.a.o.
+ - Started to seed &ldquo;alpha&rdquo; tarballs to early 2.0 build testers
+   (These are not Apache Releases, just tarballs people can test).
+   - Started receiving feedback and started work on resolving
+     reported issues.
+ - Continued flushing out of last issues for upcoming 2.0 release
+   found by the dev team.
+ - Both CouchDB proper and the Fauxton (admin interface) sub-proejct
+   have each been accepted as projects at the RailsGirls Summer of Code
+   (think Google Summer of Code, but with a focus on getting women* into
+   Open Source).
+
+## Health report:
+ - Nothing special to report, the project and community are gearing up
+   for the 2.0 release, and activity is according to expectations.
+
+## PMC changes:
+
+ - Currently 14 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michelle Phung on Mon Oct 19 2015
+
+## Committer base changes:
+
+ - Currently 52 committers.
+ - Ilya Khlopotov was added as a committer on Thu Jan 14 2016
+
+## Releases:
+
+ - Last release was 1.6.1 on Wed Sep 03 2014
+
+## Mailing list activity:
+
+ - dev@couchdb.apache.org:
+    - 587 subscribers (up 1 in the last 3 months):
+    - 219 emails sent to list (332 in previous quarter)
+
+ - notifications@couchdb.apache.org:
+    - 14 subscribers (up 0 in the last 3 months):
+    - 1437 emails sent to list (2660 in previous quarter)
+
+ - couchapp@couchdb.apache.org:
+    - 46 subscribers (up 21 in the last 3 months):
+    - 142 emails sent to list (0 in previous quarter)
+
+ - replication@couchdb.apache.org:
+    - 84 subscribers (up 4 in the last 3 months):
+    - 1 emails sent to list (0 in previous quarter)
+
+ - user@couchdb.apache.org:
+    - 1315 subscribers (up 2 in the last 3 months):
+    - 221 emails sent to list (207 in previous quarter)
+
+ - erlang@couchdb.apache.org:
+    - 190 subscribers (up 1 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - announce@couchdb.apache.org:
+    - 282 subscribers (up 21 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - www@couchdb.apache.org:
+    - 17 subscribers (up 4 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - design@couchdb.apache.org:
+    - 16 subscribers (up 1 in the last 3 months):
+    - 5 emails sent to list (8 in previous quarter)
+
+ - l10n@couchdb.apache.org:
+    - 44 subscribers (up 3 in the last 3 months):
+    - 5 emails sent to list (4 in previous quarter)
+
+ - marketing@couchdb.apache.org:
+    - 59 subscribers (up 1 in the last 3 months):
+    - 100 emails sent to list (167 in previous quarter)
+
+
+## JIRA activity:
+
+ - 74 JIRA tickets created in the last 3 months
+ - 47 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-11-18"><a href="2015/board_minutes_2015_11_18.html#attachment-M">2015-11-18</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2015-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   NoSQL document database using HTTP, JSON, and MapReduce
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## Activity:
+ - Finally final preparations for the major 2.0 milestone, including:
+   - major overhaul of test suites to acommodate new clustering facilities
+     while rataining as many integration tests as possible.
+   - implementation of the last missing bits in the 2.0 API.
+   - start of plan to release a beta release to the larger community.
+
+ - Major discussion (again) about the future of the &ldquo;CouchApps&rdquo;-aspect
+   of CouchDB. Current resolution: CouchApps are not part of the project&rsquo;s
+   focus at this point, but we have created a new mailing list where
+   CouchApp enthusiasts can continue their discussion and maybe even
+   work on improvements without disrupting the mainline efforts of the
+   project. &mdash; Special thanks to Greg Stein for advice on this.
+
+## Health report:
+ - We&rsquo;ve added new PMC members Michelle and Garren in recognition of their
+   continued overall contributions to the project.
+ - dev@ mail activity is down from the summer quarter because we switched
+   from discussing what needs to be done for the upcoming 2.0 release to
+   doing the things that need to be done for 2.0.
+ - notificatoins@ traffic is up nearly 2x for the same reason.
+
+## PMC changes:
+
+ - Currently 14 PMC members.
+ - New PMC members:
+    - Michelle Phung was added to the PMC on Mon Oct 19 2015
+    - Garren Smith was added to the PMC on Mon Oct 19 2015
+
+## Committer base changes:
+
+ - Currently 51 committers.
+ - New commmitters:
+    - Constantin Angheloiu was added as a committer on Mon Aug 17 2015
+    - klaemo was added as a committer on Mon Aug 24 2015
+
+## Releases:
+
+ - Last release was 1.6.1 on Wed Sep 03 2014
+
+## Mailing list activity:
+
+ - dev@couchdb.apache.org:
+    - 586 subscribers (up 5 in the last 3 months):
+    - 342 emails sent to list (933 in previous quarter)
+
+ - notifications@couchdb.apache.org:
+    - 14 subscribers (up 3 in the last 3 months):
+    - 2797 emails sent to list (1578 in previous quarter)
+
+ - couchapp@couchdb.apache.org:
+    - 33 subscribers (up 33 in the last 3 months):
+    - 33 emails sent to list (0 in previous quarter)
+
+ - replication@couchdb.apache.org:
+    - 80 subscribers (up 2 in the last 3 months):
+    - 0 emails sent to list (8 in previous quarter)
+
+ - user@couchdb.apache.org:
+    - 1313 subscribers (down -11 in the last 3 months):
+    - 235 emails sent to list (216 in previous quarter)
+
+ - erlang@couchdb.apache.org:
+    - 189 subscribers (up 0 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - announce@couchdb.apache.org:
+    - 261 subscribers (up 7 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - www@couchdb.apache.org:
+    - 13 subscribers (up 2 in the last 3 months):
+    - 0 emails sent to list (8 in previous quarter)
+
+ - design@couchdb.apache.org:
+    - 15 subscribers (up 15 in the last 3 months):
+    - 8 emails sent to list (0 in previous quarter)
+
+ - l10n@couchdb.apache.org:
+    - 41 subscribers (down -1 in the last 3 months):
+    - 4 emails sent to list (7 in previous quarter)
+
+ - marketing@couchdb.apache.org:
+    - 58 subscribers (up 1 in the last 3 months):
+    - 168 emails sent to list (206 in previous quarter)
+
+
+## JIRA activity:
+
+ - 101 JIRA tickets created in the last 3 months
+ - 84 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-08-19"><a href="2015/board_minutes_2015_08_19.html#attachment-N">2015-08-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2015-08-19" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache CouchDB committee [Jan Lehnardt]
+
+## Description:
+   NoSQL document database using HTTP, JSON, and MapReduce
+
+## Activity:
+ - Finished import of third-party donations: Nano, couchperuser and
+   couchdb-docker.
+ - Started establishing release procedure for new project Nano.
+ - Finishing up last blockers before 2.0 release candidates and final release.
+
+## Health report:
+ - Current activity is good, albeit a little damped quarter-to-quarter because
+   of summer.
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## LDAP committee group/Committership changes:
+
+ - Currently 49 committers and 12 LDAP committee group members.
+ - No new LDAP committee group members added in the last 3 months
+ - Last LDAP committee group addition was Robert Kowalski at Fri Oct 24 2014
+ - New commmitters:
+    - Bastian Krol was added as a committer on Thu Jul 30 2015
+    - Johannes J&ouml;rg Schmidt was added as a committer on Wed Jul 01 2015
+
+## Releases:
+
+ - Last release was 1.6.1 on Wed Sep 03 2014
+
+## Mailing list activity:
+
+ - dev@couchdb.apache.org:
+    - 581 subscribers (up 0 in the last 3 months):
+    - 792 emails sent to list (3012 in previous quarter)
+
+ - notifications@couchdb.apache.org:
+    - 11 subscribers (up 2 in the last 3 months):
+    - 1762 emails sent to list (88 in previous quarter)
+
+ - replication@couchdb.apache.org:
+    - 78 subscribers (up 4 in the last 3 months):
+    - 8 emails sent to list (6 in previous quarter)
+
+ - user@couchdb.apache.org:
+    - 1324 subscribers (down -5 in the last 3 months):
+    - 195 emails sent to list (322 in previous quarter)
+
+ - erlang@couchdb.apache.org:
+    - 189 subscribers (up 0 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - announce@couchdb.apache.org:
+    - 254 subscribers (up 15 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - www@couchdb.apache.org:
+    - 11 subscribers (up 1 in the last 3 months):
+    - 7 emails sent to list (8 in previous quarter)
+
+ - l10n@couchdb.apache.org:
+    - 42 subscribers (up 0 in the last 3 months):
+    - 9 emails sent to list (6 in previous quarter)
+
+ - marketing@couchdb.apache.org:
+    - 57 subscribers (up 2 in the last 3 months):
+    - 148 emails sent to list (450 in previous quarter)
+
+
+## JIRA activity:
+
+ - 84 JIRA tickets created in the last 3 months
+ - 65 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-05-20"><a href="2015/board_minutes_2015_05_20.html#attachment-P">2015-05-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2015-05-20" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache CouchDB project [Jan Lehnardt]
+
+## Description:
+   NoSQL document database using HTTP, JSON, and MapReduce
+
+## Activity:
+ - Massive uptake in marketing@ activity, specifically pertaining
+   the framing of &ldquo;The CouchDB Story&rdquo;, i.e. how we communicate what
+   we do to the world.
+ - Switched website to git deploy, seeing immediate uptake in
+   website contributions.
+ - Ongoing effort to get over the last humps for our major 2.0
+   release.
+ - Accepted the Nano project (a Node.js library for CouchDB) into
+   Apache CouchDB. This took a while because IP-clearance for a
+   GitHub project is, well, interesting.
+ - CouchDB will participage in the Google Summer of Code with at
+   least one project.
+ - Community vote for a new project logo. The PMC is now working
+   with the most favoured designers for a final selection.
+ - (Not necessarily Board Report material, but still a big dael,
+   so I am going to include it: CouchDB made the ThoughtWorks
+   Technology Radar: http://www.thoughtworks.com/radar/techniques
+   in the &ldquo;Offline First&rdquo; category \o/)
+ - Finally, I&rsquo;d like to voice my appreciation for the new board
+   report tool. Thank you all who made this happen!
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## PMC/Committership changes:
+
+ - Currently 47 committers and 12 PMC members in the project.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Robert Kowalski at Fri Oct 24 2014
+ - New commmitters:
+    - Michelle Phung was added as a committer on Thu Feb 26 2015
+    - Tony Sun was added as a committer on Tue Feb 17 2015
+    - Eric Avdey was added as a committer on Wed Feb 18 2015
+    - Maria Andersson was added as a committer on Wed Apr 29 2015
+
+## Releases:
+
+ - Last release was 1.6.1 on Wed Sep 03 2014
+
+## Mailing list activity:
+
+ - dev@couchdb.apache.org:
+    - 579 subscribers (up 14 in the last 3 months):
+    - 2999 emails sent to list (2695 in previous quarter)
+
+ - notifications@couchdb.apache.org:
+    - 9 subscribers (up 9 in the last 3 months):
+    - 87 emails sent to list (0 in previous quarter)
+
+ - replication@couchdb.apache.org:
+    - 74 subscribers (up 6 in the last 3 months):
+    - 6 emails sent to list (1 in previous quarter)
+
+ - user@couchdb.apache.org:
+    - 1334 subscribers (up 3 in the last 3 months):
+    - 313 emails sent to list (363 in previous quarter)
+
+ - erlang@couchdb.apache.org:
+    - 189 subscribers (up 0 in the last 3 months):
+    - 0 emails sent to list (1 in previous quarter)
+
+ - announce@couchdb.apache.org:
+    - 238 subscribers (up 16 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - www@couchdb.apache.org:
+    - 9 subscribers (up 9 in the last 3 months):
+    - 8 emails sent to list (0 in previous quarter)
+
+ - l10n@couchdb.apache.org:
+    - 42 subscribers (up 1 in the last 3 months):
+    - 6 emails sent to list (1 in previous quarter)
+
+ - marketing@couchdb.apache.org:
+    - 55 subscribers (up 11 in the last 3 months):
+    - 458 emails sent to list (325 in previous quarter)
+
+
+## JIRA activity:
+
+ - 110 JIRA tickets created in the last 3 months
+ - 70 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-02-18"><a href="2015/board_minutes_2015_02_18.html#attachment-R">2015-02-18</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2015-02-18" title="Permalink">&para;</a></h3>
+<pre>Description
+
+  Apache CouchDB is a database that uses JSON for documents, JavaScript
+  for MapReduce queries, and regular HTTP for an API.
+
+Releases
+
+  None this quarter. Everyone is working hard to get 2.0 out.
+
+Recent Activity
+
+- Added Mango query language, contributed by IBM/Cloudant
+- Final stages of 2.0 release preparations
+- Continued major improvements to Fauxton admin UI.
+
+Community
+
+Including the following additions, CouchDB has 47 committers and 12 PMC members.
+
+New committers:
+  Lynette Nolan
+  Michelle Phung
+  Kyle Snavely
+  Tony Sun
+  Eric Avdey
+
+New PMC members:
+  None
+
+Mailing list stats:
+
+(Now generated automatically with [COUCHDB-1])
+
+  couchdb-announce:
+  0 message since end of October (-2)
+  222 subscribers (+15)
+
+  couchdb-user:
+  282 messages since end of October (-449)
+  1334 subscibers (-10)
+
+  couchdb-erlang:
+  1 message since end of October (-3)
+  We retired this mailing list
+
+  couchdb-dev:
+  3021 messages since end of October (+370)
+  569 subscribers (-5)
+
+  couchdb-commits:
+  659 messages since end of October (-2046)
+  97 subscribers (-1)
+
+  couchdb-l10n:
+  10 messages since end of October (+6)
+  41 subscribers (+-0)
+
+  couchdb-replication:
+  1 message since end of October (-50)
+  68 subscribers (+5)
+
+  couchdb-marketing:
+  317 messages since end of October (+84)
+  44 subscribers (+2)
+
+Issues
+  There are recently no issues we would like to address to the board
+
+[COUHCDB-1]: https://git1-us-west.apache.org/repos/asf?p=couchdb-admin.git;a=tree;f=board-report;</pre>
+<h3 id="2014-11-19"><a href="2014/board_minutes_2014_11_19.html#attachment-J">2014-11-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2014-11-19" title="Permalink">&para;</a></h3>
+<pre>Description
+
+Apache CouchDB is a database that uses JSON for documents, JavaScript
+for MapReduce queries, and regular HTTP for an API.
+
+Releases
+
+1.6.1 (2014-09-03)
+http://docs.couchdb.org/en/latest/whatsnew/1.6.html#version-1-6-1
+
+Recent Activity
+
+- preperartion for CouchDB 2.0 GA release starting
+- increased marketing activity for CouchDB 2.0
+- BigCouch merge is in full progress
+- Fauxton webinterface work in full progress
+- many new committers and one new PMC member
+- a lot of marketing activities like AdvocatHub and press release
+  for upcoming CouchDB 2.0
+- various CouchDB talks at ApacheCon
+
+Community
+
+Including the following additions, CouchDB has 42 committers and
+12 PMC members.
+
+New committers:
+- Benjamin Bastian
+- Ben Keen
+- Christian Hogan
+- Javier Candeira
+- Sebastian Rothbucher
+
+New PMC members:
+- Robert Kowalski
+
+Mailing list stats:
+announce
+207 subscribers (0)
+2 message since August (1)
+
+user
+1344 subscribers (-24)
+758 messages since August (+437)
+
+erlang
+186 subscribers (+12)
+4 messages since August (+4)
+
+replication
+63 subscribers (+5)
+51 messages since August (+40)
+
+l10n
+41 subscribers (+5)
+13 messages since August (+12)
+
+marketing
+42 subscribers (+6)
+368 messages since August (-43)
+
+dev
+574 subscribers (-12)
+3411 messages since August (+2563)
+
+commits
+98 subscribers (-6)
+2885 messages since August (+711)
+
+Issues
+
+There are recently no issues we would like to address to the board</pre>
+<h3 id="2014-08-20"><a href="2014/board_minutes_2014_08_20.html#attachment-K">2014-08-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2014-08-20" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a database that uses JSON for documents, JavaScript
+for MapReduce queries, and regular HTTP for an API.
+
+Releases:
+
+1.6.0 (2014-06-06)
+http://www.apache.org/dist/couchdb/notes/1.6.0/apache-couchdb-1.6.0.html
+
+
+Recent Activity:
+- Bylaws passed
+- Code of Conduct and Diversity Statement passed
+- BigCouch merge in progress and testing phase
+- New home of the CouchDB Blog is http://blog.couchdb.org
+- Moving content form the old Moin Moin wiki to Cwiki and documentation in
+  progress
+
+
+Community:
+
+Including the following additions, CouchDB has 36 committers and 12 PMC members.
+
+New committers:
+ - Lena Reinhard
+
+New PMC members:
+ - Joan Touzet (most recent PMC addition from  April 10th 2014)
+
+
+Mailing list stats:
+
+announce
+ - 187 subscribers (0)
+ - 1 message since May (0)
+
+user
+ - 1368 subscribers (18)
+ - 321 messages since May (-429)
+
+erlang
+ - 174 subscribers (+7)
+ - 1 messages since May (0)
+
+replication
+ - 58 subscribers (+4)
+ - 11 messages since May (-42)
+
+l10n
+ - 36 subscribers (0)
+ - 1 messages since May (-15)
+
+marketing
+ - 36 subscribers (+5)
+ - 411 messages since May (+99)
+
+dev
+ - 586 subscribers (-13)
+ - 1848 messages since May (-782)
+
+commits
+ - 104 subscribers (0)
+ - 2174 messages since May (-481)
+
+
+Board Issues:
+
+We would like to see the board drive more standardized bylaws, community
+guidelines, code of conduct and anti-discrimination policies across all
+projects. We are able to share our experiences in building this for our
+community.</pre>
+<h3 id="2014-05-21"><a href="2014/board_minutes_2014_05_21.html#attachment-N">2014-05-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2014-05-21" title="Permalink">&para;</a></h3>
+<pre>Description
+
+Apache CouchDB is a database that uses JSON for documents, JavaScript
+for MapReduce queries, and regular HTTP for an API.
+
+Releases
+1.5.1 (2014-04-08)
+http://www.apache.org/dist/couchdb/notes/1.5.1/apache-couchdb-1.5.1.html
+Recent Activity
+ &bull;    Started with weekly news with great success. Also available
+      at https://blogs.apache.org/couchdb/
+ &bull;    The community is in the process of creating a CoC and bylaws
+ &bull;    Ongoing work on the release 1.6.0. Actually voting on Apache
+      CouchDB 1.6.0-rc.4
+ &bull;    Working on the BigCouch merge from Cloudant
+ &bull;    Good progress in reviewing the rcouch merge
+ &bull;    Community work on migrating content to the new wiki started
+ &bull;    Translation work going well
+
+Community
+
+Including the following additions, CouchDB has 35 committers and 12 PMC members.
+
+New committers:
+Robert Kowalski (2014-03-28)
+
+New PMC members:
+Joan Touzet (2014-04-10)
+
+Mailing list stats:
+
+announce
+ 175 subscribers (+24)
+ 1 message since February (1)
+user
+ 1386 subscribers (-19)
+ 750 messages since February (-336)
+erlang
+ 167 subscribers (+13)
+ 1 messages since February (-13)
+dev
+ 599 subscribers (-3)
+ 2630 messages since February (+1306)
+commits
+ 104 subscribers (0)
+ 2655 messages since February (-80)
+marketing
+ 31 subscribers
+ 312 messages since February
+l10n
+ 36 subscribers (+5)
+ 16 messages since May (-191)
+replication
+ 54 subscribers (+7)
+ 53 messages since February (+28)
+
+Issues
+
+None.</pre>
+<h3 id="2014-02-19"><a href="2014/board_minutes_2014_02_19.html#attachment-K">2014-02-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2014-02-19" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a database that uses JSON for documents, JavaScript for
+MapReduce queries, and regular HTTP for an API.
+
+Releases
+
+  No releases in this time period.
+
+  Release has been blocked on a number of issues, but is actively being
+  worked on.
+
+
+Recent Activity
+
+ - Number of the core devs met in Vienna to discuss the pending merges.
+ - Finalising the merge of Benoit Chesneau&rsquo;s rcouch fork.
+ - Working on the BigCouch merge from Cloudant.
+ - Created a replication list to discuss specific replication topics.
+ - New marketing list about to be created for new marketing team.
+ - Confluence wiki set up, and migration being planned.
+ - Review Board instance set up, and discussion about review ongoing.
+ - Translation work going well.
+ - Community-provided packages added for Ubuntu Precise and upcoming
+   Trusty release.
+ - Community
+
+
+Including the following additions, CouchDB has 31 committers and
+9 PMC members.
+
+New committers:
+
+  Nick North
+
+No new PMC members. Most recent PMC addition Nov 9th, 2012.
+
+
+Mailing list stats:
+
+announce
+ - 151 subscribers (+20)
+ - 1 message since May (-1)
+
+user
+ - 1405 subscribers (-26)
+ - 1086 messages since May (+280)
+
+erlang
+ - 154 subscribers (+8)
+ - 14 messages since May (-8)
+
+dev
+ - 602 subscribers (-4)
+ - 1977 messages since May (+1097)
+
+commits
+ - 104 subscribers (-1)
+ - 2735 messages since May (+1694)
+
+l10n
+ - 31 subscribers (+10)
+ - 207 messages since May (+104)
+
+replication
+ - 47 subscribers
+ - 35 messages since May
+
+
+Issues
+
+None.</pre>
+<h3 id="2013-11-20"><a href="2013/board_minutes_2013_11_20.html#attachment-N">2013-11-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2013-11-20" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a database that uses JSON for documents, JavaScript for
+MapReduce queries, and regular HTTP for an API.
+
+Releases
+
+1.4.0 (2013-09-04)
+http://www.apache.org/dist/couchdb/notes/1.4.0/apache-couchdb-1.4.0.html
+
+1.5.0 (2013-11-06)
+http://www.apache.org/dist/couchdb/notes/1.5.0/apache-couchdb-1.5.0.html
+
+
+Recent Activity
+
+- Finalising the merge of Benoit Chesneau&rsquo;s rcouch fork.
+- Preparation of CouchCamp Vienna, a community run weekend hackathon.
+- Successful run of CouchDB Conf Vancouver with ~80 attendees, 13 speakers.
+  Videos will be available. Details are at http://conf.couchdb.org.
+- Created an I18N list and translation team to drive translation efforts.
+- Passed a proposal on using Influitive to boost our community engagement.
+
+
+Community
+
+Including the following additions, CouchDB has 29 committers and 9 PMC members.
+
+
+New committers:
+
+Andy Wenk
+
+No new PMC members. Most recent PMC addition Nov 9th, 2012.
+
+
+Mailing list stats:
+
+announce
+- 131 subscribers (+37)
+- 2 message since August (+1)
+
+user
+- 1431 subscribers (-10)
+- 806 messages since August (+310)
+
+erlang
+- 146 subscribers (+25)
+- 22 messages since August (15)
+
+dev
+- 606 subscribers (+7)
+- 880 messages since August (-130)
+
+commits
+- 105 subscribers (-2)
+- 1041 messages since August (+344)
+
+l10n
+- 21 subscribers (+21)
+- 103 messages since August (+103)
+
+
+Issues
+
+None.</pre>
+<h3 id="2013-08-21"><a href="2013/board_minutes_2013_08_21.html#attachment-J">2013-08-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2013-08-21" title="Permalink">&para;</a></h3>
+<pre>Description
+
+Apache CouchDB is a database that uses JSON for documents, JavaScript
+for MapReduce queries, and regular HTTP for an API.
+
+Releases
+
+ * 1.3.1 (27 June 2013)
+   * http://www.apache.org/dist/couchdb/notes/1.3.1/apache-couchdb-1.3.1.html
+
+Recent Activity
+
+ * Support added for latest Erlang/OTP releases.
+ * Preparation for 1.4.0 release cycle has begun.
+ * Work is underway to document an official project vision.
+ * Work is underway to release in Cloudant's Fauxton overhaul of the
+   CouchDB admin interface.
+ * Work is underway to merge in Cloudant's BigCouch fork which will
+   add clustering capabilities to CouchDB.
+ * Work is underway to merge in parts of Beno&icirc;t Chesneau's rcouch fork
+   which improves the build system, refactored internal applications,
+   and additional user-facing functionality such as bonjour/zeroconf
+   awareness, global db changes feeds, replications and changes feeds
+   across views.
+ * Work is underway on a plugin system, with early results already
+   shared with the community.
+ * Cloudant announced the BigCouch merge, generating lots of press
+   activity.
+ * Cloudant hosted a CouchDB booth and CouchDB party at OSCON.
+ * Cloudant are organising 'Apache CouchDB Conf, Vancouver' on November
+   13th, 2013 (in line with ASF branding and CouchDB PMC cooperation).
+
+Our GitHub comment notifications have not been set up yet, due to lack
+of progress with necessary infrastructure tasks.
+
+Community
+
+Including the following additions, CouchDB has 28 committers and 9 PMC
+members.
+
+New committers:
+
+ * Dirk Ochtman
+ * Sue 'deathbear' Lockwood
+
+No new PMC members.
+
+Mailing list stats:
+
+ * announce
+   * 94 subscribers (''+38'')
+   * 1 message since May (''-1'')
+ * user
+   * 1441 subscribers (''-15'')
+   * 496 messages since May (''-561'')
+ * erlang
+   * 121 subscribers (''+16'')
+   * 7 messages since May (''-7'')
+ * dev
+   * 599 subscribers (''-2'')
+   * 1010 messages since May (''-996'')
+ * commits
+   * 107 subscribers (''+6'')
+   * 697 messages since May (''-262'')
+
+Issues
+
+No issues for the board at this time.</pre>
+<h3 id="2013-05-15"><a href="2013/board_minutes_2013_05_15.html#attachment-M">2013-05-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2013-05-15" title="Permalink">&para;</a></h3>
+<pre>DESCRIPTION
+
+Apache CouchDB is a database that uses JSON for documents, JavaScript for
+MapReduce queries, and regular HTTP for an API.
+
+RELEASES
+
+   - 1.2.2 (4th April 2013)
+       -
+http://www.apache.org/dist/couchdb/notes/1.2.2/apache-couchdb-1.2.2.html
+
+   - 1.3.0 (24th April 2013)
+       -
+http://www.apache.org/dist/couchdb/notes/1.3.0/apache-couchdb-1.3.0.html
+
+CURRENT ACTIVITY
+
+   - Work is underway to merge in Cloudant's BigCouch fork which will add
+     clustering capabilities to CouchDB.
+   - Work is underway to merge in Cloudant's Fauxton overhaul of the
+     CouchDB admin interface.
+   - Work is underway to merge in parts of Beno&icirc;t Chesneau's rcouch fork
+     which improves the build system.
+   - Work is underway to improve our test suite with a view toward making
+     it more stable.
+   - The documentation donation from Couchbase was merged in and shipped
+     with CouchDB 1.3.0.
+
+The docs are also available at:
+
+    http://docs.couchdb.org/en/latest/
+
+The project is undergoing an expansionist phase. The PMC is
+focusing on bolstering the committer base, and the committer
+base is focusing on bolstering CouchDB. As part of this, we
+are also conducting several restructuring exercises. These
+include: recruiting more committers, re-enforcing expectations
+around consensus building and decision making processes,
+re-evaluating our Git workflow, and switching to regular
+time-based releases. These exercises are going very well
+so far.
+
+We have established consensus to have GitHub pull request
+comment notifications sent to the development mailing list.
+This will be an experiment. Our goal is to increase the
+visibility of important activity that is happening away
+from the lists. Our success criteria will be increased
+activity and attention to contributions coming in from
+GitHub. We will re-enforce the primacy of the mailing list
+for development discussion and decision making, and will
+keep a watchful eye for any issues.
+
+COMMUNITY
+
+Including the following additions, CouchDB has 27 committers and 9 PMC
+members.
+
+New committers:
+
+    - Dale Harvey
+    - Wendall Cada
+    - Alexander Shorin
+    - Ryan Ramage
+
+No new PMC members.
+
+Mailing list stats:
+
+   - announce
+       - 56 subscribers
+       - 2 messages since February
+   - user
+       - 1456 subscribers
+       - 1,057 messages since February
+   - erlang
+       - 105 subscribers
+       - 14 messages since February
+   - dev
+       - 601 subscribers
+       - 2,006 messages since February
+   - commits
+       - 101 subscribers
+       - 959 messages since February
+
+ISSUES
+
+No issues for the board at this time.</pre>
+<h3 id="2013-02-20"><a href="2013/board_minutes_2013_02_20.html#attachment-K">2013-02-20</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2013-02-20" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a distributed JSON document database with an HTTP API.
+
+Released version 1.0.4, 1.1.2 and 1.2.1 to address CVE-2012-5641,
+CVE-2012-5650 and CVE-2012-5651 among other minor bugfixes.
+
+Imported the codebase for a new, work-in-progress admin utility donated
+by a set of users.
+
+Added 5 new committers (among them the contributors &amp; donators of the new
+admin utility).
+
+Starting the release procedure for 1.3.0.
+
+Held a successful CouchDB Conf (http://conf.couchdb.org) bringing users
+and committers together. ~70 people total over 3 days.
+
+Branding Status: The project website and assorted assets are up to date
+with the Branding Board Report Checklist[1].
+
+[1]: http://apache.org/foundation/marks/pmcs#checklist</pre>
+<h3 id="2012-11-21"><a href="2012/board_minutes_2012_11_21.html#attachment-O">2012-11-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2012-11-21" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a database that uses JSON for documents,
+JavaScript for MapReduce queries, and regular HTTP for an API.
+
+Sorted out legal and integration issues for the documentation
+grant from Couchbase.
+
+Sorting out final blockers before 1.3.0 release.
+
+PMC changes:
++ Benoit Chesneau (benoitc)
++ Robert Newson (rnewson)
++ Dave Cottlehuber (dch).
++ Jason Smith (jason).
+- J Chris Anderson (jchris).
+
+Started a weekly IRC meeting to check status and discuss current
+issues. Reports are sent to dev@ for final decision making.
+
+Preliminary planning for a CouchHack community event in Berlin
+in January and participation at ApacheCon NA in February.
+
+Notable take-up on project activity.
+
+Started an erlang@c.a.o mailing list for people who want to
+learn about the CouchDB codebase. It has already proven useful
+to get new people into the codebase.</pre>
+<h3 id="2012-08-15"><a href="2012/board_minutes_2012_08_15.html#attachment-J">2012-08-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2012-08-15" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a database that uses JSON for documents,
+JavaScript for MapReduce queries, and regular HTTP for an API.
+
+Started migration of donated documentation to master. Couchbase
+have donated API docs and a DocBook build system that we are
+working through to integrate. We'll be reaching out for legal
+advice on integrating CC-licensed documentation and are looking
+for prior art of this form.
+
+We are currently working through a number of JIRA issues before
+starting the 1.3 release process.</pre>
+<h3 id="2012-05-16"><a href="2012/board_minutes_2012_05_16.html#attachment-M">2012-05-16</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2012-05-16" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a database that uses JSON for documents, JavaScript for
+MapReduce queries, and regular HTTP for an API.
+
+Released Apache CouchDB 1.2.0.
+
+Provided Windows binaries for user-convenience for the first time along with a
+source release.
+
+Unveiled a new website design that was created with help from the Apache
+Cordova team: http://couchdb.apache.org/
+
+A subset of the developer community met in Boston and Dublin in April. The
+results from various discussions are currently being prepared to be put up for
+online discussion on dev@.
+
+Successfully started to integrate source contributions via GitHub Pull
+Requests.</pre>
+<h3 id="2012-03-21"><a href="2012/board_minutes_2012_03_21.html#attachment-M">2012-03-21</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2012-03-21" title="Permalink">&para;</a></h3>
+<pre>We added two new Committers to the project: Jason Smith and Dave
+Cottlehuber. Both have been contributing to the CouchDB ecosystem and
+Apache CouchDB in particular for quite some time.
+
+The PMC chair finally got around to announce Paul Davis as a new member
+of the PMC, the vote for which occurred last year.
+
+A new major release 1.2.0 is around the corner. For 1.2.0, for the first
+time, we will be voting on official Windows release binaries (courtesy
+of Dave Cottlehuber's work).
+
+Noticeable pick-up of activity around pressing issues, including
+community members publicly applauding the efforts.
+
+Git integration is going well. Developers are getting into the habit of
+regular branching and merging of features and bugfixes. Sharing of
+changes for testing and review is becoming easier as well. As cases in
+point, a large refactoring of an internal component[1] went very smooth
+as did the collaboration on a new security related feature. Regular,
+smaller work and bugfixes have been going on at the same time and was in
+no way hindered. We started documenting committer and contributor
+workflows on the wiki.
+
+PMC member Noah Slater started an inquiry with trademarks@ about a
+potential confusion with the Couchbase brand. While the thread is
+ongoing, Couchbase have already signalled eagerness to help resolve any
+issues. In the past, a similar inquiry about Couchbase's line CouchConf
+conferences was resolved to mutual satisfaction as well.
+
+Project founder Damien Katz resigned from the PMC after posting
+controversial blog posts challenging the future of the project.
+
+[1]: https://issues.apache.org/jira/browse/COUCHDB-1270</pre>
+<h3 id="2012-02-15"><a href="2012/board_minutes_2012_02_15.html#section-6K">2012-02-15</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2012-02-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted
+
+AI: Shane to pursue a report for CouchDB</pre>
+<h3 id="2011-11-16"><a href="2011/board_minutes_2011_11_16.html#attachment-K">2011-11-16</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2011-11-16" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a distributed JSON document database with HTTP API.
+
+Released 1.1.1, a maintenance release with many important bugfixes.
+
+Branched 1.2.x for our next release.
+
+Moved development to git as a testbed for the ASF.
+
+Verified in person that PMC member Noah Slater is in fact a human and
+not as previously assumed a very advanced shell script.</pre>
+<h3 id="2011-08-17"><a href="2011/board_minutes_2011_08_17.html#attachment-J">2011-08-17</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2011-08-17" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a distributed JSON document database with HTTP API.
+
+New feature release 1.1.0, including
+
+- native SSL support,
+- many fixes to edge-cases in replication,
+- database for persistent replication setups,
+- HTTP range request support,
+- new, scalable OS process handling,
+- native HTTP proxy support for externals.
+
+Discussions about moving documentation from the wiki to a more structured
+documentation system.
+
+Discussion about moving the main CouchDB repository from SVN to git.
+
+Discussions about solving various flaws with the JavaScript test suite by
+moving it to a designated runtime that ships with CouchDB instead of
+relying on different browsers (thus avoiding the related issues).</pre>
+<h3 id="2011-05-19"><a href="2011/board_minutes_2011_05_19.html#attachment-K">2011-05-19</a> &mdash; Jan Lehnardt<a class="headerlink" href="#2011-05-19" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a distributed JSON document database with HTTP API.
+
+Change of PMC Chair from Damien Katz to Jan Lehnardt.
+
+Added Robert Dionne and Randall Leeds as committers.
+
+About to release maintenance version 1.0.3 as well as a new feature release
+1.1.0. New features include:
+
+- native SSL support,
+- many fixes to edge-cases in replication,
+- database for persistent replication setups,
+- HTTP range request support,
+- new, scalable OS process handling,
+- native HTTP proxy support for externals,
+
+The 1.1.0 release was announced in the previous board report but was delayed
+due to bug fixing efforts as well as a delay in the release procedure. The
+release process is ongoing now, though.
+
+Major cleanup of JIRA issues.</pre>
+<h3 id="2011-02-16"><a href="2011/board_minutes_2011_02_16.html#attachment-K">2011-02-16</a> &mdash; Damien Katz<a class="headerlink" href="#2011-02-16" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a distributed JSON document database with an HTTP API.
+
+Released version 1.0.2, a maintenance release that fixes CVE-2010-3854 as well
+as a few larger and many minor issues around replication.
+
+Began discussion on dev@ about a detailed road map for the 1.x series.
+
+Continued process to procure an IANA port for the CouchDB API over HTTPs.
+
+New volunteers on dev@ to help out with the Windows port.
+
+Adam Kocoloski was added to the PMC.
+
+Jim Jagielski identified a press article about the newly formed Couchbase that
+used incorrect and misleading language describing the Couchbase relationship
+to the open source project, and also a failure to identify the project as
+Apache CouchDB. The marketing and PR folks for Couchbase have been notified
+about the mistakes and informed of correct usage of Apache CouchDB trademarks.
+
+Branding Status: The project website and assorted assets are up to date with
+the Branding Board Report Checklist[1].
+
+[1]: http://apache.org/foundation/marks/pmcs#checklist</pre>
+<h3 id="2010-11-17"><a href="2010/board_minutes_2010_11_17.html#attachment-J">2010-11-17</a> &mdash; Damien Katz<a class="headerlink" href="#2010-11-17" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a distributed JSON document database with HTTP API.
+
+About to release maintenance version 1.0.2 as well as a new feature release
+1.1.0. New features include:
+- native SSL support,
+- many fixes to edge-cases in replication,
+- database for persistent replication setups,
+- HTTP range request support,
+- new, scalable OS process handling,
+- native HTTP proxy support for externals,
+
+Major improvements on new replicator by Filipe Manana (development branch).
+
+Discussions and steps towards integrating Cloudant's BigCouch, a dynamo-style
+sharding solution with Apache CouchDB.
+
+Discussions of integrating with more Erlang-native build systems.
+
+Classified JIRA issues into "easy for new contributors", "medium" and "hard"
+to allow new contributors find easy tickets to work on.</pre>
+<h3 id="2010-08-18"><a href="2010/board_minutes_2010_08_18.html#attachment-J">2010-08-18</a> &mdash; Damien Katz<a class="headerlink" href="#2010-08-18" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a distributed JSON document database with HTTP API.
+
+1.0.0 and 0.11.1 Released In July.
+
+Discovered a data-inaccessibility bug pertaining to the 1.0 release.
+Community developers quickly released a detailed announcement and repair tool
+both receiving praise from users. http://couchdb.apache.org/notice/1.0.1.html
+
+Just released 0.11.2 and 1.0.1 as maintenance versions, the later containing a
+fix for the aforementioned bug
+
+CVE-2010-2234: "Apache CouchDB Cross Site Request Forgery Attack" versions
+prior to version 0.11.1 are vulnerable to cross site request forgery (CSRF)
+attacks.
+
+Filipe Manana and Robert Newson were added as CouchDB committers.
+
+Jason Smith released and maintains turn-key Apache CouchDB installer for Linux
+users.
+
+Lots of name recognition on a CouchDB application hosting and reporting the
+Afghanistan Wikileaks data.
+
+Couchio ported CouchDB for Android. Download and update through the
+marketplace. iOS support is underway.
+
+Cloudant makes fascinating teaser blog post about their high-availability
+CouchDB clusters for their hosting service.</pre>
+<h3 id="2010-05-19"><a href="2010/board_minutes_2010_05_19.html#attachment-M">2010-05-19</a> &mdash; Damien Katz<a class="headerlink" href="#2010-05-19" title="Permalink">&para;</a></h3>
+<pre>Apache CouchDB is a distributed JSON document database with HTTP API.
+
+0.11.0 was released, a beta release. The next major release will be 1.0.
+
+0.10.2 was released (security fix CVE 2010-0009).
+
+Enhancements to the replicator, optimizations to file io and fixes to
+configuration are now in trunk.
+
+Full windows support is coming with the latest releases of Erlang + CouchDB
+
+CouchDB: The Definitive Guide has been published with O'Reilly. There's
+ongoing work to make the sources available to the open source community.
+
+Our documentation wiki got a lot of attention thanks to Sebastian Cohnen.
+
+Palm announces replication interop of their embedded DB8 with CouchDB. Work
+to port CouchDB to Android is nearly complete.</pre>
+<h3 id="2010-02-17"><a href="2010/board_minutes_2010_02_17.html#attachment-J">2010-02-17</a> &mdash; Damien Katz<a class="headerlink" href="#2010-02-17" title="Permalink">&para;</a></h3>
+<pre>This is the quarterly ASF board report for Apache CouchDB.
+
+--Releases--
+0.11.0 Branch created. Feature frozen for 1.0.
+
+New features in 0.11:
+Enhanced authentication and authorization support
+Attachment compression
+UI enhancements to Futon
+
+--Community--
+Added new committer Benoit Chesneau.
+
+O'Reilly's CouchDB: The Definitive Guide is now available.
+
+Added new security related mailing list after a security issue was found.
+
+Couchio, a startup created by some CouchDB PMC members, obtains VC funding
+and begins offering support.</pre>
+<h3 id="2009-11-18"><a href="2009/board_minutes_2009_11_18.html#attachment-H">2009-11-18</a> &mdash; Damien Katz<a class="headerlink" href="#2009-11-18" title="Permalink">&para;</a></h3>
+<pre>--Releases--
+Released 0.10.0 our first beta.
+
+New features in 0.10.0:
+Cookie and OAuth authentication support
+Windows build supports.
+Continuous replication
+Pure tail-append storage
+More reliable and faster replication
+Better RFC 2616 compliance
+Several Futon (Admin UI) improvements
+Native Erlang view servers
+Filter API for filtered replication
+Update API to parse client requests in JS
+Windows Support
+
+We are planning on 0.11.0 release for Feb. 1 and put CouchDB into feature
+freeze for 1.0
+
+--Community--
+
+Voted to add new committer. We haven't finalized it yet,
+
+CouchDB is included in every Ubuntu 9.10 install.
+
+Mozilla Raindrop, a messaging platform built on CouchDB, was released.</pre>
+<h3 id="2009-08-19"><a href="2009/board_minutes_2009_08_19.html#attachment-I">2009-08-19</a> &mdash; Damien Katz<a class="headerlink" href="#2009-08-19" title="Permalink">&para;</a></h3>
+<pre>--Releases--
+Released 0.9.1, lots of bug fixes.
+
+We are about to branch 0.10.0, which is our first beta.
+
+New features in 0.10.0:
+Cookie and OAuth authentication support
+Windows build supports.
+Continuous replication
+Pure tail-append storage
+More reliable and faster replication
+Better RFC 2616 compliance
+Several Futon (Admin UI) improvements
+Native Erlang view servers
+Filter API for filtered replication
+Update API to parse client requests in JS
+
+--Community--
+
+Added 2 committers, Jason Davies and Mark Hammond.
+
+O'Reilly, Manning, Apress have books in development, and Wrox is looking
+for writers for a 4th book.
+
+Canonical has announced CouchDB based services in Ubuntu, putting us into
+the default Ubuntu distribution and ~ 10 million desktops.
+
+Libraries:
+- 10 Libraries in PERL&rsquo;s CPAN
+- 10 Python Packages (pypi.python.org)
+- 12 Debian Ruby Gems (debgem.com)
+
+Projects:
+- 27 project repos on Bitbuckets
+- 314 project repos on Github!
+
+--Legal--
+
+We had some small issues with our third party libs we include in our source
+tree. While we haven't found any code in our repos that is improperly
+licensed, we did find places where we failed to follow correct procedure
+and checks importing the code to the repos.
+
+--Awesomeness--
+
+Our awesomeness is increasing by 53 Awesome Units a day.</pre>
+<h3 id="2009-05-20"><a href="2009/board_minutes_2009_05_20.html#attachment-I">2009-05-20</a> &mdash; Damien Katz<a class="headerlink" href="#2009-05-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2009-04-15"><a href="2009/board_minutes_2009_04_15.html#attachment-G">2009-04-15</a> &mdash; Damien Katz<a class="headerlink" href="#2009-04-15" title="Permalink">&para;</a></h3>
+<pre>CouchDB is a document oriented database.
+
+- Community -
+
+CouchHack is a informal CouchDB hacker event being held in Asheville April
+19-22. We currently have 6 people attending and a sponsor. http://couchhack.org
+
+- Releases -
+
+CouchDB 0.9.0 has been released.</pre>
+<h3 id="2009-03-18"><a href="2009/board_minutes_2009_03_18.html#attachment-I">2009-03-18</a> &mdash; Damien Katz<a class="headerlink" href="#2009-03-18" title="Permalink">&para;</a></h3>
+<pre>CouchDB is a document oriented database.
+
+- Community -
+
+Continued growth on the mailing lists, In Feburary 800+ messages on
+dev and 500+ on user.
+
+New chapters of the upcoming O'Reilly book on CouchDB have been
+released and are receiving feedback.
+
+The 2 new committers we voted in last month, Paul Davis and Adam
+Kocoloski, are now actively checking in code.
+
+- Releases -
+
+We've a lot of progress releasing 0.9.0, the first beta release of
+Couchdb. We are now feature complete and we have 12 tickets are
+currently blocking the 0.9 release. With feature work done things
+should stabilize quickly.</pre>
+<h3 id="2009-02-18"><a href="2009/board_minutes_2009_02_18.html#attachment-I">2009-02-18</a> &mdash; Damien Katz<a class="headerlink" href="#2009-02-18" title="Permalink">&para;</a></h3>
+<pre>CouchDB is a document oriented database.
+
+- Community -
+
+Jan and Chris Anderson are giving CouchDB Trainings at ApacheCon EU and
+Erlang Factory in SF, where Damien is a giving a keynote as well.
+
+Mailing list activity continues to grow, the user list had 761 messages in
+January, compared to 365 and 462 in November and December, respectively.
+
+The PMC has voted in 2 new committers: Adam Kocoloski and Paul Davis.
+
+
+- Releases -
+
+Less than 20 tickets are currently blocking the 0.9 release, and we've had
+a lot of community support in knocking out tickets. The replication
+security patch isn't done and may not make 0.9.0, in which case 0.9.0 will
+be another alpha release.
+
+- Community Problem -
+
+CouchDB as a project uses IRC too liberally and refers users and community
+with questions and concerns to IRC chat for both new discussions and
+decisions that have previously been considered. Because of this failure,
+we've projected the notion that we make make project decisions on IRC, and
+that those not on IRC are excluded. This can really hurt people's feelings.
+Instead we need to direct people to voice concerns and questions in the
+appropriate mailing lists so they can be discussed by the larger community.
+
+We have kicked off new discussions in the mailing lists about the core
+technical directions and upcoming releases:
+
+http://mail-archives.apache.org/mod_mbox/couchdb-dev/200902.mbox/%3c84F66023-030A-4669-B75C-3DCC92D71A78@yahoo.com%3e
+http://mail-archives.apache.org/mod_mbox/couchdb-dev/200902.mbox/%3c5B2D5ED2-6B85-41D7-BA78-3DD4BE7AFE13@apache.org%3e
+http://mail-archives.apache.org/mod_mbox/couchdb-dev/200902.mbox/%3cA5884A28-A73A-427E-A4B8-2BB1DCF3D6C2@apache.org%3e
+http://mail-archives.apache.org/mod_mbox/couchdb-dev/200902.mbox/%3ce282921e0902091306l7c478594vbfe8d6eb7a14e978@mail.gmail.com%3e
+
+We also now have written policies around limiting IRC usage on the
+communtiy wiki.
+
+Project members and the community have referred to me as BDFL. No PMC
+member gets special treatment, and we should actively discourage such
+notions. No one in the community is more special than others. If someone
+wants to contribute, their contributions and concerns should have a chance
+be considered by the wider community in the mailing lists, regardless if
+they are PMC or not.
+
+The failure of the CouchDB PMC on these issues is to ensure the community
+feels like their voice, concerns and contributions get a fair airing.</pre>
+<h3 id="2009-01-21"><a href="2009/board_minutes_2009_01_21.html#attachment-G">2009-01-21</a> &mdash; Damien Katz<a class="headerlink" href="#2009-01-21" title="Permalink">&para;</a></h3>
+<pre>CouchDB is a distributed document-oriented database system written in Erlang.
+The project graduated to TLP in November 2008 and Damien Katz was approved as
+the Apache CouchDB PMC chair.
+
+
+= Community =
+
+The community around CouchDB grew in the last couple of months quite a bit. We
+gain attention in early adaptor markets and can look at the first production
+grade setups running on CouchDB (iWantMyName, pcapr.net&lt;http://www.pcapr.net&gt;).
+
+The mailing list traffic grew and so did the number of third party library
+implementations that interact with CouchDB. More and more support on the mailing
+list comes from outside the core team which proves that there is an active
+community growing.
+
+Multiple open source projects and commercial projects and products built on
+CouchDB have been released or launched in the last few weeks. We are trying to
+keep track of them onhttp://wiki.apache.org/couchdb/CouchDB_in_the_wild on
+github reveals around 30 projects around CouchDB.
+
+The three committers Chris Anderson, Noah Slater and Jan Lehnardt started
+releasing chapters from their work-in-progress book "CouchDB: The Definitive
+Guide" on http://books.couchdb.org/ The content will be licensed under Apache
+2.0 and published in print by O'Reilly Media. The book mailing list has 340+
+subscribers and the feedback is immense.
+
+For the book, Chris and Jan are working on CouchApp, a toolkit for writing
+standalone CouchDB applications that is gaining traction on its own.
+
+
+= Development =
+
+We are now looking to release CouchDB 0.9.0 in January, our first as TLP and our
+first BETA release.
+
+New features currently in trunk for 0.9.0:
+ * Security and data validation functionality
+ * View server internals re-architecture to allow the ability to quickly read
+    stale views as indexes are being updated.
+ * Multi-key view lookup enhancements
+ * Include_docs. Ability to load full documents with view rows.
+ * Btree performance improvements
+ * Faster and more compact internal JSON term format, that is also the new
+    Erlang canonical JSON term format. Additionally, when a low level JSON
+    parser is implemented in core Erlang, it is will use this format and we'll
+    gain more performance for free.
+ * Ability to run a CouchDB server right from the project source directory,
+    for development purposes
+ * Streaming attachment writes
+ * Support for on the fly converting json documents to other formats (XML, HTML,
+    etc)
+ * Deferred commits (optional acid) for faster update and replication speed
+
+
+= Infrastructure =
+We have now transfered all couchdb assets over to the final TLP locations,
+including the couchdb.apache.org site, the mailing lists and the SVN
+repositories.</pre>
+<h3 id="2008-12-17"><a href="2008/board_minutes_2008_12_17.html#attachment-J">2008-12-17</a> &mdash; Damien Katz<a class="headerlink" href="#2008-12-17" title="Permalink">&para;</a></h3>
+<pre>CouchDB is a distributed document-oriented database system written in
+Erlang. The project graduated to TLP in November 2008 and Damien Katz was
+approved as the Apache CouchDB PMC.
+
+- Community
+
+Damien Katz was named Erlanger of the Year at the 2008 Erlang User
+Conference in Stockholm for his work with CouchDB.
+
+Noah Slater is super awesome. Claims to have award as proof (other project
+members skeptical).
+
+- Development
+
+We are now looking to release CouchDB 0.9.0 in early January, our first a
+TLP and our first BETA release.
+
+New features currently in trunk for 0.9.0:
+- Security and data validation functionality
+- View server internals re-architecture to allow the ability to quickly
+  read stale views as indexes are being updated.
+- Multi-key view lookup enhancements
+- Include_docs. Ability to load full documents with view rows.
+- Btree performance improvements
+- Faster and more compact internal JSON term format, that is also the new
+  Erlang canonical JSON term format. Additionally, when a low level JSON
+  parser is implemented in core Erlang, it is will use this format and we'll
+  gain more performance for free.
+- Ability to run a CouchDB server right from the project source directory,
+  for development purposes
+
+- Infrastructure
+
+We have now transfered all couchdb assets over to the final TLP locations,
+including the couchdb.apache.org site, the mailing lists and the SVN
+repositories. The last remaining item is to setup a redirect from
+incubator.apache.org/couchdb/ to couchdb.apache.org.
+
+We have a daily build site hosted by Jan Lenhardt. http://build.couchdb.org/</pre>
+<h3 id="2008-08-20"><a href="2008/board_minutes_2008_08_20.html#couchdb">2008-08-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2008-08-20" title="Permalink">&para;</a></h3>
+<pre>CouchDB is a distributed document-oriented database system written in
+Erlang. The project entered incubation on February 12th, 2008.
+
+We have released CouchDB 0.8.0, our first podling release. New features
+include incremental reduce, compaction, the Mochiweb erlang HTTP library,
+enhancements to the ui interface (Futon) and build system (w/ spidermonkey
+now an external dependency). We are also about to release a 0.8.1 to fix
+bugs.
+
+The number of libraries and project integrating with CouchDB continues to
+grow, as does the number of contributors. We will likely be adding a new
+project member soon. CouchDB is now fully integrated with the Apache
+resources (bug system, mailing list, wiki, website, etc) and we believe
+CouchDB is satisfying all its community requirements to graduate to a full
+Apache project.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,3894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Beam | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Beam';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Beam';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Beam</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="beam">Beam<a class="headerlink" href="#beam" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018-09-19</td>
+<td><a href="2018/board_minutes_2018_09_19.html#section-7B">Appointed Kenneth Knowles</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2016-12-21</td>
+<td><a href="2016/board_minutes_2016_12_21.html#section-7C">Appointed Davor Bonaci</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016-12-21</td>
+<td><a href="2016/board_minutes_2016_12_21.html#section-7C">Establish the Apache Beam Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-G">2026-06-17</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (9 years ago)
+There are currently 102 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Danny McCormick on 2024-12-12.
+- Derrick Williams was added as committer on 2026-04-28
+
+## Project Activity:
+
+Recent releases:
+- 2.74.0 was released on 2026-06-02.
+- 2.73.0 was released on 2026-04-30.
+
+First, highlighting major events:
+ - Beam College took place in late april
+ - Beam Summit will take place in a week
+
+A theme of CDC work taking place in a few ways:
+ - Iceberg CDC support improved
+ - BigQuery CDC made more efficient
+ - BigQuery CDC streaming source for Python (previously just Java)
+ - Spanner ChangeStreams can union of TVF streams
+ - Persisting Debezium CDC offsets across pipeline restarts
+ - At the core of the Beam model, new per-element metadata being leveraged to
+   make streaming of CDC data through all transforms a "default" way of
+   processing
+
+Compatibility / new versions / dropping dead versions
+- added Flink 2.0 support
+- added Spark 4 support
+- added Python 3.14 support
+- dropped Java 8 support
+- minimum Go version to 1.26.1
+- dropped SamzaRunner support
+
+Google Summer of Code projects active &amp; ongoing:
+ - Portable Kafka Streams Runner [kafka]
+ - Native Python Streaming Transforms [nativepy]
+ - Test Optimization &amp; Monitoring System Integration [testopt]
+
+[kafka]  https://issues.apache.org/jira/browse/GSOC-305
+[nativepy] https://issues.apache.org/jira/browse/GSOC-315
+[testopt] https://issues.apache.org/jira/browse/GSOC-273
+
+
+AI features:
+ - Qdrant vector database sink
+ - Google ADK Agent Handler
+ - Huggingface and Tensorflow image embedding for RAG
+
+Connectors:
+ - Iceberg source had a ton of work
+ - Delta Lake source designed and implemented
+ - MQTT connector made available for Python use via multi-language pipelines
+
+Other Designs
+- Rust-based Python tooling [pyrust]
+- Python Memory Profiling Capabilities: [pymem]
+- AsyncDoFn for Java [async]
+
+[pyrust] https://s.apache.org/beam-python-rust-tooling
+[async] https://lists.apache.org/thread/x9jbvjvy8njnljo57y1f9lmssltxk022
+[pymem] https://s.apache.org/beam-python-memory-profiling
+
+## Community Health:
+Nothing novel to report. Steady community health. We see a marked increase in
+github@beam.apache.org emails which is a notification list that indicates dev
+activity. There's been a lot of AI code and AI reviews which tend to move
+quickly and generate noise.</pre>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-K">2026-04-15</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (9 years ago)
+There are currently 101 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Danny McCormick on 2024-12-12.
+- Rados&lstrok;aw Stankiewicz was added as committer on 2026-03-20
+
+## Project Activity:
+
+Recent releases:
+ - 2.72.0 was released on 2026-03-30.
+
+There has been a flurry of CVE resolution by dependency upgrades. Good thing
+to focus on what with AI advancements in producing exploits.
+
+ - ActiveMQ from 5.14.5 to 5.19.2
+ - PostgreSQL JDBC Driver from 42.2.16 to 42.6.2
+ - Minimum Go version from 1.25.2 to 1.26.1
+ - Added support for Python version 3.14
+
+Quite a few threads expressing interest or discussing designs for Google
+Summer of Code 2026 [gsoc]. Perhaps worth highlighting a few of what those
+projects might be:
+
+ - Native python streaming transforms (currently the Python SDK utilizes these
+   from Java) including...
+ - Ordering support for Python (a topic that is generally coming up quite
+   often)
+ - Using accelerators for learning
+ - IO resource lifecycle hardening
+ - Beam infrastructure improvements
+
+[gsoc] https://lists.apache.org/list?header_subject=GSOC
+
+## Community Health:
+Nothing novel to report. Steady community health. The increase in traffic on
+dev@ is due to GSoC, and the overall numbers are steadily low (in a good way)
+so any activity can look like a large % change..</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#section-6F">2026-03-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-I">2026-02-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (9 years ago)
+There are currently 100 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Danny McCormick on 2024-12-12.
+- Claude van der Merwe was added as committer on 2025-12-03
+
+## Project Activity:
+
+Community activities:
+- Beam Summit 2026 scheduled for June 22&ndash;23 in New York City
+
+Quite a few interesting designs coming out:
+
+ - GenAI optimizations for RunInference [genai]
+ - "Forked" PCollections in Python SDK [forked]
+ - Content-aware dynamic batch for RunInference [batching]
+ - Iceberg incremental CDC source [cdc]
+ - Parallel reader in SparkReceiverIO [spark]
+ - Java native remote inference [java]
+ - Distribution metrics using TDigest [tdigest]
+
+[genai] https://lists.apache.org/thread/mf6frdv7nlpry6d2hzxqns8s05oz2c9c
+[forked] https://lists.apache.org/thread/2qggng4nsn6ytl7lbb0c1thwwrozg12l
+[batching] https://lists.apache.org/thread/zo255j517p2jflpfh4vfjonhw87c2z5p
+[cdc] https://lists.apache.org/thread/vjsr1xlvzstv6orzc1spyfvwxtd35mtj
+[spark] https://lists.apache.org/thread/php2kskjgprdrlz7nxbp5f6kt6w1280z
+[java] https://lists.apache.org/thread/mbmn8qlw8fqk5zcns0l3s6noznczdnvl
+[tdigest] https://lists.apache.org/thread/dokywqbbln54yh7dp6nf4ddydhcqvw43
+
+Integrations/support changes:
+- Added DatadogIO
+- Flink 1.20 support added
+- ElasticSearch 9 support added
+- Java 25 support added
+- Python 3.9 support removed
+- Minimum Go version 1.25.2
+- Hadoop 2.10.2 and 3.2.4 support removed from Iceberg connector
+- Removed PubsubliteIO, since the service is deprecated March 2026
+
+Recent releases:
+- 2.71.0 was released on 2026-01-22.
+- 2.70.0 was released on 2025-12-16.
+- 2.69.0 was released on 2025-10-28.
+
+## Community Health:
+Dev list traffic is slightly down, expected for winter holidays. The use of
+the dev list to share design docs is looking very good.
+
+We have moved all lists to unmoderated subscriber-only, because incoming spam
+to moderate was overwhelming and far more than our real traffic, and it was
+beyond our volunteer resources to look over every spam for those very few that
+were legitimate messages.</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#section-6M">2026-01-21</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#section-6H">2025-12-17</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-E">2025-09-24</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (9 years ago)
+There are currently 99 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Danny McCormick on 2024-12-12.
+- Joey Tran was added as committer on 2025-08-20
+
+## Project Activity:
+
+ - Beam Summit 2025: The annual Beam Summit was held in New York City on July
+   8th and 9th. We also held the mini-online session on July 30. All the
+   videos are available at Apache Beam YouTube channel
+(https://www.youtube.com/channel/UChNnb_YO_7B0HlW6FhAXZZQ).
+ - Google Summer of Code (GSoC) 2025: The Beam project has several proposed
+   projects for the 2025 Google Summer of Code, which were finished
+   successfully. The proposed projects include work on the JupyterLab
+   sidepanel, Beam YAML, integrations with vector databases and feature
+   stores, and enhancements to the platform's infrastructure and accessibility
+   .
+ - Beam 3.0: A community-led effort has started to define the scope of a
+   future "Beam 3.0" major version and the progress is tracked by
+   https://github.com/apache/beam/milestone/31. Some deprecations and removals
+   are done for Beam 3.0:
+    - Java 8 support is now deprecated and is scheduled for removal in Beam
+      3.0.
+    - Additionally, cross-language pipelines using the IO expansion-service
+      now require a Java 11+ runtime.
+    - The previously deprecated Beam ZetaSQL component has been removed, and
+      users are advised to migrate to Calcite SQL with the BigQuery dialect.
+     - The native SpannerIO in the Python SDK is now deprecated in favor of
+       the cross-language wrapper.
+     - The Samza and Twister2 runners are deprecated and scheduled for removal
+       in Beam 3.0.
+
+
+**Interesting Technical Discussions**
+
+ - Modernizing GCS Integration: A proposal has been drafted to modernize the
+   GCSUtil in the Beam Java SDK
+(https://s.apache.org/beam-gcsutil-modernization).
+ - IcebergIO Improvements: There have been discussions around improving
+   timestamp handling in IcebergIO
+(https://s.apache.org/beam-timestamp-strategy) and addressing gaps in metadata
+ management for better usability.
+ - Portable Raw Type: a proposal to allow Beam to further embrace structured
+   data by allowing easier embedding of less-structured data within structured
+   rows (https://s.apache.org/beam-portable-raw-type)
+ - Multimodal embeddings: design for supporting these in Beam Python/ML
+   https://s.apache.org/beam-multimodal-embeddings
+
+## Community Health:
+Community activity remains essentially flat. The user list is more and more
+rarely used, which may be a sign of the times. The dev list has roughly the
+same amount of design and discussion.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-F">2025-06-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (8 years ago)
+There are currently 98 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Danny McCormick on 2024-12-12.
+- Shunping Huang was added as committer on 2025-05-29
+- Vitalii Terentev was added as committer on 2025-03-24
+
+## Project Activity:
+Recent releases:
+ - 2.65.0 was released on 2025-05-12.
+ - 2.64.0 was released on 2025-03-31.
+
+Technical highlights:
+ - Developments in the the new Managed API (which is configuration-driven and
+   easy for runners to host and manage, versus Beam's traditional code-driven
+   API):  Both Java and Python support key I/O connectors Iceberg, Kafka, and
+   BigQuery.
+ - In the YAML SDK, managed is becoming the default as connectors become
+   available, and that now includes the Kafka connector.
+ - Beam reports lineage metadata starting in 2.63.0, with support added to the
+   Dataflow Runner.
+ - Increased integration with Apache Iceberg:
+    - Added a streaming source
+    - Available in Python and YAML SDKs
+
+Community highlights:
+ - The Beam College 2025 event (https://beamcollege.dev/) was held May 15-18,
+   2025, including new training videos and a hackathon. Hackathon challenges
+   include AI-Powered Data Processing, building data pipelines without coding
+   using Beam YAML, Real-time Anomaly Detection, leveraging Managed I/O with
+   Iceberg/Kafka/BigQuery, and an Open Challenge.
+ - Beam Summit 2025 (https://beamsummit.org/) will be held in New York City on
+   July 8th &amp; 9th. The Call for Papers (CFP) was open until April 2025. And
+   the proposed schedule is available (https://beamsummit.org/program/). Four
+ - Google Summer of Code (GSoC) 2025 projects for Apache Beam have been
+   proposed:
+     - Enhancing Apache Beam JupyterLab Sidepanel for JupyterLab 4.x and
+   Improved UI/UX
+   ([GSOC-277](https://issues.apache.org/jira/browse/GSOC-277)).
+     -   Beam ML Vector DB/Feature Store integrations
+         ([GSOC-279](https://issues.apache.org/jira/browse/GSOC-279)).
+     -   Simplify management of Beam infrastructure, access control and
+         permissions via Platform features
+         ([GSOC-273](https://issues.apache.org/jira/browse/GSOC-273)).
+     -   Beam YAML ML, Iceberg, and Kafka User Accessibility
+         ([GSOC-278](https://issues.apache.org/jira/browse/GSOC-278)).
+ - Some community members have begun gathering changes that they propose to be
+   part of a "Beam 3" major version bump: i
+   https://github.com/apache/beam/milestone/31
+
+## Community Health:
+Community health is steady. No great increase or decrease in dev@ or user@
+traffic. What discussion there is tends to be more focused on specific design
+and implementation proposals. A minor note that will have an interesting effect
+on metrics and visibility is new automation to mark old issues stale after
+180 days and close after a further 30.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-F">2025-03-19</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (8 years ago)
+There are currently 96 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+- Danny McCormick was added to the PMC on 2024-12-12
+- No new committers. Last addition was XQ Hu on 2024-06-24.
+
+## Project Activity:
+
+Technical highlights:
+ - Stateful processing added to the Spark Runner.
+ - Beam reports lineage metadata starting in 2.63.0, with support added to the
+   Dataflow Runner.
+ - Managed IcebergIO: added time-based partitioning, BigQuery MetaStore
+     support, large performance improvements, autosharding
+ - BigQueryIO: create managed BigLake tables dynamically
+ - ML: added RAG chunking embedding, LangChain chunking, BigQuery
+   vector/embedding and HuggingFace embedding
+
+Major maintenance/upgrades/breaking changes:
+ - Minimum Go version for Beam Go updated to 1.22.10
+ - Upgraded to protobuf 4
+ - Dropped AWS V1 connectors
+ - Upgraded ZetaSQL to 2024.11.1 (requires Java 11+)
+
+See https://github.com/apache/beam/blob/master/CHANGES.md for detailed change
+notes.
+
+Recent releases: Automatically generated by reporter.apache.org
+- 2.63.0 was released on 2025-02-18.
+- 2.62.0 was released on 2025-01-21.
+- 2.61.0 was released on 2024-11-25.
+
+Highlights of community activities:
+- The Beam College 2025 event (https://beamcollege.dev/) will be held May
+  15-17, 2025, and will include new training videos and a hackathon.
+- Beam Summit 2025 (https://beamsummit.org/) is back to New York City, which
+  will be held on July 8th &amp; 9th. CFP is open until Apr 18, 2025.
+- Five GSOC projects
+(https://issues.apache.org/jira/browse/GSOC-279) are proposed for the
+ community.
+
+## Community Health:
+
+- Email, issues, commits, and pull requests are all steady.
+- Pull Requests have been closed at the same rate they have been opened, so we
+  are keeping up.
+- Issues have also been closed at the same rate as being opened, which is
+  unusual - healthy projects like Beam _always_ have more issues opened than
+  closed. This may be a quarterly blip due to some special circumstance or it
+  may reflect some change in how the project is communicating.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-G">2024-12-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+
+Apache Beam was founded 2016-12-20 (8 years ago)
+There are currently 96 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Alex Van Boxel on 2023-10-01.
+- No new committers. Last addition was XQ Hu on 2024-06-24.
+
+## Project Activity:
+
+Recent releases:
+- 2.61.0 was released on 2024-11-25.
+- 2.60.0 was released on 2024-10-17.
+
+New use case studies published:
+- [Yelp](https://beam.apache.org/case-studies/yelp_streaming/)
+- [Accenture](https://beam.apache.org/case-studies/accenture_baltics/)
+
+Technical highlights:
+- Iceberg / Configuration Driven / Managed Transforms: mentioned in June,
+  there is a new direction with some momentum to make Beam transforms
+  configuration-driven (see also: Beam YAML). This can also more easily enable
+  a runner to read the configuration and understand the _intent_ of the
+  pipeline, rather than having to simply execute user code as a black box.
+  Since last report, the API to use this was added to Python SDK and many
+  connectors have been added as capabilities. Most notably this is the primary
+  way we are recommending users to use the new IcebergIO which has gotten a
+  lot of attention and matured rapidly.
+- The Prism runner, our at-long-last answer to having a fully capable
+  multi-language runner, continues to approach full parity. A large number of
+  model compliance tests pass. Soon it will be ready to be default for
+  applicable users.
+- Healthy breadth of work: Many other incremental features and optimizations
+  (the lifeblood of a project) added to MqttIO, SparkRunner, compression
+   support, RunInference, BigQueryIO, KafkaIO,
+
+Dependencies/integrations updates:
+- Added support for Flink 1.19 and removed support for Flink 1.15 and 1.16
+  (our informal policy is to support three versions, currently 1.17, 1.18, and
+   1.19)
+- Removed support for Python 3.8 (it is approaching EOL)
+
+
+## Community Health:
+
+Discussions on dev@ seem to be slowing, but the ones that happen are
+substantive, to the point, and resolve quickly with useful action. It has,
+however, made it more difficult to identify new committers (we look at a wide
+variety of data sources, but dev@ is critical).
+
+- The amount of spam reaching human moderation and lack of round-robin to
+  spread the moderation load makes it somewhat infeasible to filter actual
+  user-authored moderated messages, but happily the spam does not read the
+  user or dev community.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-F">2024-09-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (8 years ago)
+There are currently 96 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Alex Van Boxel on 2023-10-01.
+- XQ Hu was added as committer on 2024-06-24
+
+## Project Activity:
+
+Recent releases:
+- 2.59.0 was released on 2024-09-11.
+- 2.58.1 was released on 2024-08-16.
+- 2.58.0 was released on 2024-08-06.
+- 2.57.0 was released on 2024-06-26.
+
+Technical and community activity highlights:
+
+- We just held the 2024 Beam Summit which saw 170+ people from 23 countries,
+  with 50+ speakers. Highlights:
+   - heavy emphasis on ML-related talks, which comprised about 1/3
+   - notably high volume of Beam-on-Flink subject matter (including talks on
+     other topics)
+   - continued emphasis on new ways of using Beam's core tech: _another_ Go
+     SDK, a Swift SDK, YAML pipelines, data lineage
+- There has been some discussion of Beam 3.0 and what it would mean for our
+  community. There is early consensus is that we do not intend to break
+  backwards compatibility, and we do want to make 3.0 features available
+  early, but still want to signal a new era of Beam releases.
+- Through continuous refinement of our release process, we are able to execute
+  patch releases when necessary. An example of this is the release of version
+  2.58.1 to resolve an issue in our KafkaIO connector. Additionally, we have
+  established a policy specifically tailored for patch releases.
+- Initial experimental support for using Prism with the Java and Python SDKs.
+  This is our project to have a single performant local/testing runner that
+  supports all of Beam's new advanced features. Instead of one local runner
+  per SDK language, with lots of drift between them, we have one that is built
+  in Go. Also, notably, Beam pipelines are inherently multi-language, so it is
+  a benefit that the runner be implemented with no bias toward any SDK.
+
+Dependencies/integrations updates:
+- First release with Flink 1.18 support
+- First release with Python 3.12 support
+- Go SDK Minimum Go Version updated to 1.21
+- Added Feast feature store handler for enrichment transform (Python)
+- Support for Solace source (SolaceIO.Read) added (Java)
+
+Detailed release notes at
+https://github.com/apache/beam/blob/master/CHANGES.md
+
+## Community Health:
+Community health metrics are about the same, perhaps a bit lower than
+previous. The activity that is taking place is transparent and good open
+source spirit.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-G">2024-06-19</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (7 years ago)
+There are currently 95 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Alex Van Boxel on 2023-10-01.
+- No new committers. Last addition was Svetak Sundhar on 2024-02-09.
+
+## Project Activity:
+
+Recent releases:
+
+ - 2.56.0 was released on 2024-05-02.
+ - 2.55.1 was released on 2024-04-08.
+   Notably, Beam's first point release!
+   Our release automation has gotten much better so this was finally
+   worthwhile to do.
+ - 2.55.0 was released on 2024-03-25.
+
+Technical development notes:
+
+ - Added a new API for "Managed" transforms that represents an innovative
+   direction for Beam: these transforms are explicitly constructed from
+   a machine-readable config rather than just code, with the intention
+   that OSS runners and/or Cloud providers can use the config to
+   manage them more effectively. Up to this point, with a few exceptions,
+   Beam transforms have been "guest" code managed by the user, with runners
+   treating them as black boxes. With this API, we hope to enable even
+   smoother user experience than Beam's portability APIs enabled, for example
+   transparently applying upgrades to address CVEs, etc.
+ - New Ordered Processing PTransform added for encapsulating a common
+   pattern for processing order-sensitive stateful data.
+ - Added bad record handling for BigQueryIO and PubsubIO connectors.
+ - Added Vertex AI Feature Store handler for the Enrichment transform (a
+   best-effort pseudo-join for when just grabbing data from an auxiliary
+   store is good enough).
+
+Dependency/related project updates:
+
+ - Arrow version was bumped to 15.0.0 from 5.0.0 (a breaking change
+   that we determined was justified)
+ - Go SDK base container image moved to distroless/base-nossl-debian12,
+   reducing vulnerable container surface to kernel and glibc (also
+   potentially breaking change per Hyrum's Pitfall [1]
+   since container surface reduced)
+ - First release with Flink 1.17 support.
+ - Added Flink 1.18 support
+
+[1] https://www.hyrumslaw.com/
+
+## Community Health:
+Community health is steady. Traffic on dev@ list has settled in to a new
+activity level that isn't changing too much. The same is true for code
+contributions, bug reports, and code review.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-F">2024-03-20</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (7 years ago)
+There are currently 95 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Alex Van Boxel on 2023-10-01.
+- Svetak Sundhar was added as committer on 2024-02-09
+
+## Project Activity:
+
+Recent releases:
+- 2.54.0 was released on 2024-02-14.
+
+Highlighted technical developments:
+ - New capability to auto-generated Python wrappers for Java-based transforms,
+   which will rapidly increase the features available to Python users.
+ - Added new Enrichment transform for joining a data stream with side storage,
+   with support for BigTable and Vertex Feature Store
+ - Added DLQ supports to MLTransform and many widely-used connectors
+ - New transform "RequestResponseIO" to read/write Web APIs without
+   overwhelming them or getting banned.
+
+Dependency upgrades: we are continuing to improve processes to stay
+ahead of emerging vulnerabilities, so it is worth reporting on some
+highlights here.
+ - Java: Upgraded GCP libraries BOM to 26.32.0 (a major lift that upgrades
+   a huge number of dependencies)
+ - Python: Upgraded for a very old and deprecated GCS client to the latest
+   recommended by GCP.
+ - Go (used in our containers as well as SDK): upgraded to 1.21.6
+
+## Community Health:
+
+The overall volume on the mailing list has decreased, but there has
+been a greater focus on proposals and design discussions. The average
+volume on dev@beam seems steady, though lower than late 2023 due to a spike
+last fall. The volume on user@beam is steady.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-M">2024-01-17</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (7 years ago)
+There are currently 94 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:1.
+
+Community changes since last report:
+ - Valentyn Tymofieiev was added to the PMC on 2023-10-02
+ - Robert Burke was added to the PMC on 2023-10-02
+ - Alex Van Boxel was added to the PMC on 2023-10-02
+
+ - Sam Whittle was added as committer on 2023-10-09
+ - Byron Ellis was added as a committer on 2023-10-13
+
+## Project Activity:
+
+Recent releases:
+ - 2.53.0 was released on 2024-01-05.
+ - 2.52.0 was released on 2023-11-17.
+ - 2.51.0 was released on 2023-10-11.
+
+Highlighted technical developments
+ - Beam YAML (a YAML format for writing a pipeline) has its
+   stable release!
+ - Lots of focus on Beam ML, a collection of utility transforms
+   that handle loading models, performing inference, and increasingly
+   pre- and post-processing steps specific to ML workloads.
+ - Running multi-language pipelines locally no longer requires docker. This
+   addresses pain points for users of operating systems with less
+   great docker support, as well as corporate policies that
+   forbid it.
+ - Avro dependency finally removed from the core SDK, fixing dependency
+   conflicts that plagued users.
+ - Explicit java 21 support added to our released artifacts.
+ - Deprecated Euphoria DSL due to being obsoleted by Beam main SDK
+ - Finished migrating all of Jenkins jobs to GitHub actions
+ - Upgraded to golang 1.21.5
+
+Highlights of community activities:
+ - Beam College 2023 (https://beamcollege.dev/step/2023/) took place from
+   October 23 -  November 3, 2023 as an online training event.  More than 800
+   attendees joined this season It contains three tracks:
+   - Dive into data processing
+   - Hands-on Apache Beam
+   - Graduate to streaming.
+ - Beam Blogs have been active and varied, for example:
+   - Two part series on scaling up Beam on Flink
+     (https://beam.apache.org/blog/apache-beam-flink-and-kubernetes/)
+   - A "Contributor spotlight" [blog]
+
+[blog](https://beam.apache.org/blog/contributor-spotlight-johanna-ojeling/)
+
+
+## Community Health:
+Variations in community metrics are within normal variations,
+especially considering the season.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#section-6H">2023-12-20</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-G">2023-09-20</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (7 years ago)
+There are currently 92 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is approximately 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jan Lukavsk&yacute; on 2023-02-14.
+- Ahmed Abualsaud was added as committer on 2023-08-24
+
+## Project Activity:
+
+Top-level technical notes to show direction of the project:
+ - The "Prism Runner", mentioned in prior reports, is now complete enough and
+   the default for the Go SDK. Next up is to make it the best local runner
+   for other SDKs to test multi-language pipelines (which are expected to
+   be the norm, not the exception, as major libraries are built in one language
+   and used in all languages).
+ - Multi-language pipelines continue to get easier and more transparent to
+   author, this time with a new automatically launched and managed subprocess
+   that can serve multiple "external" transforms.
+ - BigTable Change Streams support was added. While it is just one connector,
+   it is notable for being part of an increased interest in streaming
+   applications, in which most storage may be shipping changes around,
+   including those not traditionally considered "streaming" systems.
+ - ML conveniences continue to be added to Beam Python, such as:
+   - hugging face model handler
+   - Vertex AI model handler
+   - new "MLTransform" for pre/postprocessing, complementing RunInference
+   - prebuilding docker containers to bundle large dependencies
+ - All Beam released container images are now multi-arch images that support
+   both x86 and ARM CPU architectures.
+ - Go SDK requires Go 1.2.0 to build
+ - SparkRunner now defaults to Spark 3.2.2
+
+Community:
+- Beam Summit 2023 was a huge success. Beam Summit 2023
+  &lt;https://beamsummit.org/&gt; was the eighth and the biggest edition of the
+   flagship conference for the Apache Beam community. Beam Summit 2023 took
+   place on June 13 - 15, 2023 as an in-person event, bringing the community
+   together in NYC, and on July 18-20, 2023 as a virtual edition. [impact
+   report]
+
+[impact report] https://lists.apache.org/thread/l7hxz8wpl9rqt8jotv64620sl2zmdx2p
+
+Recent releases:
+- 2.50.0 was released on 2023-08-30.
+- 2.49.0 was released on 2023-07-17.
+
+Our 6 week release cadence is going quite well. Increased release automation
+has reduced the time from cutting a release branch to finalizing a release.
+
+## Community Health:
+
+Issues and code traffic are within normal variation, aka flat. No growth or
+shrinking trends.
+
+Community faced email delivery issues, causing friction when communicating on
+the email lists, and making project activities (e.g. release validation)
+difficult to coordinate. Even though issues were addressed, we are not sure if
+we will run into these issues again because there was not a permanent fix.
+(Examples: https://issues.apache.org/jira/browse/INFRA-24574
+https://issues.apache.org/jira/browse/INFRA-24790
+https://issues.apache.org/jira/browse/INFRA-24872)</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-J">2023-06-21</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (6 years ago)
+There are currently 91 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jan Lukavsk&yacute; on 2023-02-14.
+- Anand Inguva was added as committer on 2023-04-21.
+- Damon Douglas was added as committer on 2023-04-21.
+
+## Project Activity:
+
+- 2.48.0 was released on 2023-06-03.
+- 2.47.0 was released on 2023-05-10.
+
+Highlights of community activities:
+
+- Beam Summit 2023 (https://beamsummit.org/) was just held June 13-15. Summit
+  reached 500+ registrations. This is the 6th iteration of this annual
+  community-organized summit.
+- Interactive Beam Playground updated with lots of new features
+  (https://lists.apache.org/thread/15phr0h5q007pjgfotwqcvdr7hyotks1).
+- Google Cloud Skills Boost launched a Beam "quest"
+  (https://www.cloudskillsboost.google/quests/310), paid educational content
+   where users earn a completion "badge".
+
+Some technical highlights relevant to community development:
+
+- Python 3.11 support added
+- Flink 1.16.x support added
+- The Go SDK is now very nearly at feature parity with Python and Java. The
+  gaps are small enough that they are more than compensated for by the
+  qualitative differences between the SDKs, and the existing gaps and bugs in
+  each. It has arrived!
+- "Experimental" annotation cleanup: the annotation and concept have been
+   removed from Beam to avoid the misperception of code as "not ready". They
+   were there to signal that something might change or disappear, but in
+   practice we rarely did so and we almost always neglected to "graduate"
+   features from this status. We will just make case-by-case judgment.
+- A new local Beam runner called the "Prism Runner" is authored in Go and
+  poised to become the definitive local portable runner, serving as a proper
+  reference for the Beam model. Rapid developments in Beam have resulted in a
+  major gap in this area, with no runner supporting every corner of the model
+  so users could reliably test their work prior to running on a cloud service.
+
+## Community Health:
+
+Traffic on various communication channels is roughly stable. The number and
+variety of attendees at the Beam Summit shows a very healthy diversity of
+stakeholders in Beam and interest in the project's development. There were
+many talks of unexpected and interesting work that took place outside the
+project's communication channels and code repository. Creating an ecosystem
+bigger than itself is a good sign, but also some of these may be opportunities
+to invite work to merge into Beam itself to grow committers and PMC members
+from those stakeholders.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-I">2023-03-22</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (6 years ago)
+There are currently 90 committers and 24 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:2.
+
+Community changes, past quarter:
+- Jan Lukavsk&yacute; was added to the PMC on 2023-02-14
+- No new committers. Last addition was Yi Hu on 2022-11-05.
+
+## Project Activity:
+- Google Summer of Code processes are kicked off, and there are a few project
+proposals.
+- Beam Summit 2023 will be held in New York, and the CFP recently closed.
+
+Recent releases:
+- 2.46.0 was released on 2023-03-10
+- 2.45.0 was released on 2023-02-15
+
+## Community Health:
+There is an across the board 20-30% reduction in many measures of
+community health traffic. This is not a cause for concern (yet). One
+could speculate about how global events and major disruptions in
+big tech could influence activity over this period.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-L">2023-01-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (6 years ago) There are currently 90
+committers and 23 PMC members in this project. The Committer-to-PMC ratio is
+roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chamikara Madhusanka Jayalath on
+  2021-01-20.
+- Ritesh Ghorse was added as committer on 2022-11-02
+- Yi Hu was added as committer on 2022-11-05
+
+## Project Activity:
+
+Highlights of community activities:
+- We started planning the Beam Summit for June 13-15th, 2023 in NYC.
+- New webpage on ML/RunInference
+- Java Multi-language pipelines support including support for using Python
+  RunInference from Java SDK.
+- We have been using GitHub Issues for a while now, and community response is
+  overall positive.
+- There is a trend of many IO connectors being made into "schema transforms"
+  which means they have a cross-language schema and become more language-SDK
+  agnostic. It signals the continued trend of Beam as a language-independent
+  framework to be used with any big data processin gengine.
+
+
+Recent releases:
+
+- 2.44.0 was released on 2023-01-13.
+- 2.43.0 was released on 2022-11-17.
+- 2.42.0 was released on 2022-10-16.
+
+## Community Health:
+The community on the mailing list and in code seems to be holding steady. We
+have had departures of very active committers but also addition of new ones.
+If you aren't growing you are shrinking! Change is the only constant! :-)</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#section-6H">2022-12-21</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-J">2022-09-21</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (6 years ago) There are currently 88
+committers and 23 PMC members in this project. The Committer-to-PMC ratio is
+roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chamikara Madhusanka Jayalath on
+  2021-01-20.
+- John Casey was added as committer on 2022-07-27
+- Steve Niemitz was added as committer on 2022-07-19
+
+## Project Activity:
+
+### Recent releases
+
+- 2.41.0 was released on 2022-08-23.
+
+### Integrations and deprecations
+
+- Support for Spark 2.4.x is deprecated and will be dropped with the release
+  of Beam 2.44.0 or soon after.
+- The modules amazon-web-services and kinesis for AWS Java SDK v1 are
+  deprecated in favor of amazon-web-services2 and will be eventually removed
+  after a few Beam releases
+
+### Events
+
+ - Beam Summit held as a hybrid event in Austin, TX, USA with about 200
+   in-person attendees and 2000+ online attendees.
+
+## Community Health:
+Issues, pull requests, and dev list all holding at the roughly the same activity
+level.
+
+We have additional metrics at https://metrics.beam.apache.org/d/code_velocity/
+which show some improvements in "time to first response" on pull requests.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-N">2022-07-20</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (6 years ago) There are currently 86
+committers and 23 PMC members in this project. The Committer-to-PMC ratio is
+roughly 9:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chamikara Madhusanka Jayalath on
+  2021-01-20.
+- Danny McCormick was added as committer on 2022-06-17
+- Jack McCluskey was added as committer on 2022-06-17
+- Ke Wu was added as committer on 2022-05-27
+
+## Project Activity:
+
+### Recent releases:
+
+- 2.40.0 was released on 2022-06-28.
+- 2.39.0 was released on 2022-05-26.
+- 2.38.0 was released on 2022-04-20.
+
+We continue to average one release every six weeks, per our intention. To keep
+the number of changes in each release roughly comparable, we cut a branch
+every six weeks regardless of how long it takes to finalize each release.
+
+### Misc Highlights
+
+ - We have completed our migration from Jira to GitHub Issues.
+ - The TypeScript SDK has been merged to the repository.
+ - New RunInference API, a framework agnostic transform for ML inference,
+   supporting PyTorch and Sckit-learn.
+ - Beam Summit will take place July 18-20. There are 180 in-person
+   registrations and 2100 online registrations.
+
+### Go SDK
+
+ - Go 1.18 required to support generics.
+ - Watermark estimation supported.
+ - Pipeline drain support added.
+ - Generic function registration for optimizing DoFn execution.
+ - TextIO moved to Splittable DoFn.
+ - User can author self-checkpointing Splittable DoFns to read from
+   streaming sources.
+
+### Runner ecosystem
+
+ - Flink 1.14.x support added.
+ - Beam 2.38.0 will be the last minor release to support Flink 1.11
+ - Scala 2.12 support added for Flink,
+   because most of the libraries support version 2.12 onwards.
+ - Support for Spark 2.4.x is deprecated and will be dropped with the release
+   of Beam 2.44.0 or soon after.
+ - Interactive Beam supports remotely executing Flink pipelines on
+   Google Cloud Dataproc via JupyterLab extension.
+ - Support for impersonation credentials added to dataflow runner in the Java
+   and Python SDK.
+ - Two new Python-native runners proposed and under way! Dask and Ray.
+
+### IO ecosystem and other integrations
+
+ - Significant work on CdapIO which gives access to a whole ecosystem
+   of connectors maintained by CDAP.
+ - Support for Elasticsearch 8.x
+ - Upgrade to ZetaSQL 2022.04.1
+ - More IO standard documents proposed and reviewed
+   (https://s.apache.org/beam-io-api-standard-documentation &amp;
+   https://s.apache.org/beam-io-api-standard).
+ - A new IO for Neo4j graph databases was added with the ability to update
+   nodes and relationships using UNWIND statements and to read data using
+   cypher statements with parameters.
+ - Connectors for AWS v2 APIs reached parity, and additionally support for
+   Kinesis writes and sharded record aggregation, plus fixes to
+   connectors for S3, DynamoDB, and SQS. The previous
+   modules for AWS v1 and Kinesis are now deprecated.
+ - The march of progress toward eliminating null pointer exceptions in all
+   code proceeding to include much of KafkaIO, BigQueryIO, and the core SDK,
+   but not before high profile NPEs had caused major user problems.
+ - ExternalPythonTransform API added for easily invoking Python transforms
+   from Java. Previously, multi-language pipelines were focused on making
+   mature Java connectors available to other languages. This one, conversely,
+   makes ML and scientific transforms available in Java.
+ - JmsIO gains dynamic writes and more flexible input handling.
+ - Upgraded to Hive 3.1.3 for HCatalogIO. Users can still provide their own
+   version of Hive.
+ - Implemented Apache PulsarIO.
+
+### Other developments worth noting
+
+ - Early projection pushdown optimizer to the Java SDK. Somewhat limited in
+   which pipelines it applies to, but proving the concept.
+ - Pandas compatibility continues to improve, specifically adding
+   unstack, stack, and pivot.
+
+## Community Health:
+
+Both dev@ and user@ traffic declined during this period, but the community is
+still very active. The overall throughput of pull requests is nearly
+identical.
+
+With the Go SDK reaching maturity we are somewhat hopeful that we will reach
+a new community of users that previously had nothing comparable available
+to them.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#section-6J">2022-06-15</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-H">2022-03-16</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (5 years ago) There are currently 82
+committers and 23 PMC members in this project. The Committer-to-PMC ratio is
+roughly 4:1.
+
+Community changes, past quarter:
+
+- No new PMC members. Last addition was Chamikara Madhusanka Jayalath on
+  2021-01-20.
+- Kiley Sok was added as committer on 2022-01-27
+- Moritz Mack was added as committer on 2022-03-04
+
+## Project Activity:
+
+### Recent releases
+
+ - 2.37.0 was released on 2022-03-04.
+ - 2.36.0 was released on 2022-02-07.
+ - 2.35.0 was released on 2021-12-29.
+
+We continue to average one release every six weeks, per our intention. To keep
+the number of changes in each release roughly comparable, we cut a branch
+every six weeks regardless of how long it takes to finalize each release.
+
+### log4j
+
+While the core of Apache Beam does not depend on log4j, many transitive
+dependencies do, since Beam integrates with "every" storage system, at least
+in theory. Our community really came together around this very quickly.
+
+ - Upgraded test setup to test non-vulnerable recent versions of log4j2
+ - Upgrade transitive dependencies to non-vulnerable versions
+ - Upgrade to Gradle 7, a multi-week, multi-person effort
+   (https://lists.apache.org/thread/ovn4f7ymg6dcy1yn7pdljh4v094yjyrg).
+
+### Ecosystems
+
+ - Added Java 17 support and testing
+ - Added Python 3.9 support and testing
+ - Added pandas 1.4 support and testing
+
+Previously such changes were difficult one-off endeavors, but they are
+becoming part of the project's routine now.
+
+### Multi-language
+
+Parity across languages continues to improve, with Go and Python adding more
+core model features to match our first language, Java.
+
+Most notably, though, Beam's central technology - a language-and-engine
+agnostic model of big data computation - has yielded rapid progress in
+multiple arenas.
+
+ - Go SDK connectors. By leveraging the existing Java-based connectors, Go SDK
+   gained access to JDBC, Debezium, SQL, BigQuery, and Kafka.
+ - TypeScript / JavaScript SDK! At a new-year hackathon, about a half dozen
+   contributors (a few experienced and the rest quite new) built
+   a working SDK for TypeScript in a single week!
+   (https://lists.apache.org/thread/orxnz7p8mg22ys92dbo034g9335oc2sl)
+
+### Ease of onboarding
+
+ - Beam Playground, a new online interface for getting to know Beam
+   (https://lists.apache.org/thread/r088lzjnk4khfrcp8m0q1oymw1mmtmo0)
+ - Starter repositories, template repositories instead of maven archetypes or
+   less-discoverable subdirectories of our main repo
+   (https://lists.apache.org/thread/x16ykz3lrtc48sgo4m7sxgjlyp1y1ffl)
+
+### Other notable developments and discussions
+
+ - IO standards for APIs, testing, and documentation. This should help the
+   community and software grow while having some regularity and reliability
+   for users
+   (https://lists.apache.org/thread/pl13km8y6xo448q9jbrftqblodks831w)
+ - Kafka Streams runner proposed
+   (https://lists.apache.org/thread/sp9yvbxyfn4mrbmj91d2trhk8hs7ln7n)
+ - Automated reviewer assignment. Like many OSS projects, we have a review
+   latency and backlog problem. Previous attempts at this were not successful,
+   but we still need to keep trying things to solve the problem.
+   (https://lists.apache.org/thread/6xg35sw72k8k1rj4od86q9wrsol8p7dc)
+ - Migrating from Jira to GitHub issues now has consensus and is in the
+   planning stage
+   (https://lists.apache.org/thread/zh2t7ql83z45syqj4yd75dgstlo14nmp)
+
+### Beam Summit
+
+Beam Summit 2022 is accepting submissions:
+https://lists.apache.org/thread/js0vfljlkvs9l1k1knpwsbxw8obsl56f
+
+## Community Health:
+
+We have seen an influx of new contributors, with a lot of new ideas mentioned
+in "project activity". A lot of the ideas are specifically around improving
+community health.
+
+Mailing lists were a bit quieter this round, but probably just due to the
+winter holidays. There has been very good transparency and discussion on the
+lists on all major developments, and there have been quite a few of them.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-I">2021-12-15</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (5 years ago) There are currently 80
+committers and 23 PMC members in this project. The Committer-to-PMC ratio is
+roughly 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chamikara Madhusanka Jayalath on
+  2021-01-20.
+- No new committers. Last addition was Emily Ye on 2021-07-22.
+
+## Project Activity:
+Releases:
+- 2.34.0 was released on 2021-11-11
+
+Notable technical developments:
+- The Beam Java API for inserting SQL into a pipeline is no longer
+  "experimental". This has been available for users for many years, but this
+  represents a declaration of confidence to our users.
+- New support for `pip install apache-beam[dataframe]` to track the pandas
+  versions that we have compatibility with.
+- Experimental support for the new BigQuery Storage Read API, which should
+  be a simpler and more efficient choice for many use cases.
+
+Detailed technical change log at
+https://github.com/apache/beam/blob/master/CHANGES.md
+
+Notable discussions:
+- There seems to be consensus to migrate from Jira to GitHub Issues,
+  with the primary goal being familiarity for new and/or casual
+  contributors. The technical effort involved is not yet clear. [issues]
+- An update to schema-aware transforms, to use this system for
+  even more of Beam. These are transforms that have a known schema
+  for their configuration parameters and also have schemas for their
+  input and output (vs just passing blobs of bytes). The increased
+  development and adoption of this should be good for debugging
+  and performance. [schema]
+
+[issues] https://lists.apache.org/thread/q5nbwxqvfkzlz664c4kchzkbj26c3r89
+[schema] https://lists.apache.org/thread/8yxt3bo5h6xs4vqhvch7mrpln04sjtqj
+
+## Community Health:
+Community metrics show nothing remarkable. A typical dip in the later part of
+the year and otherwise largely stable.</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-E">2021-11-17</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (5 years ago) There are currently 80
+committers and 23 PMC members in this project. The Committer-to-PMC ratio is
+roughly 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chamikara Madhusanka Jayalath on
+  2021-01-20.
+- No new committers. Last addition was Emily Ye on 2021-07-22.
+
+## Project Activity:
+
+Recent releases:
+- 2.33.0 was released on 2021-10-07 (6 weeks from 2.32.0)
+- 2.32.0 was released on 2021-08-26 (7 weeks from 2.31.0)
+- 2.31.0 was released on 2021-07-08 (4 weeks from 2.30.0)
+
+Notable developments:
+- Beam's Go SDK exits "experimental" status, bringing in a third ecosystem
+  and community! https://beam.apache.org/blog/go-sdk-release/
+- Beam's Dataframe API (mentioned last report) also has graduated out of
+  "experimental" status.
+- Beam Summit was held online August 4-6, 2021. https://2021.beamsummit.org/
+  850 live attendees from 50+ countries. 4.58/5 Average Event Rating
+
+Interesting functional improvements to Beam:
+- Initial support for pushing projections into sources when programming
+  using Beam's schema-driven transforms, for some big performance gains
+- Google Cloud Firestore connector
+- Beam SQL supports `CREATE FUNCTION` syntax from Calcite
+- New append-only variant of ElasticSearch sink
+- Partitioned reads over JDBC
+- Improved Beam schema / Avro schema / JDBC schema interoperability
+
+## Community Health:
+Community metrics are about the same, in terms of dev list, user list, GitHub
+pull requests, and Jira.
+
+There is a statistical uptick in emails to the dev list, but this is due to
+automated alerts about high priority issues in Jira. There does seem to be a
+major increase in Jira issues closed, but I think this is due to clean up.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#section-6N">2021-10-20</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#section-6J">2021-09-15</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-H">2021-06-16</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (4 years ago) There are currently 79
+committers and 23 PMC members in this project. The Committer-to-PMC ratio is
+roughly 8:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chamikara Madhusanka Jayalath on
+  2021-01-20.
+- Ning was added as committer on 2021-03-18
+- Tomo Suzuki was added as committer on 2021-03-31
+- Yichi Zhang was added as committer on 2021-04-13
+
+## Project Activity:
+
+Recent releases (we start release process every 6 weeks):
+- 2.30.0 was released on 2021-06-08 (6 weeks since 2.29.0).
+- 2.29.0 was released on 2021-04-27 (9 weeks since 2.28.0).
+
+Maintenance work on runners and Java ecosystem:
+- Drop support for Flink 1.10.
+- Spark Classic and Portable runners officially support Spark 3.
+- Official Java 11 support for most runners (Dataflow, Flink, Spark).
+
+Some new features integrating with other notable projects:
+- Pandas-compatible DataFrame API: Added support for collecting DataFrame
+  objects in interactive Beam. Interactive Beam is how one uses Beam in a
+  notebook, so there is a good synergy.
+- DebeziumIO cross-language wrapper for Python.
+
+Misc work worth noting:
+- New contributor flow improvements (CI, documentation, automation).
+
+Issue management:
+
+We were starting to develop a large backlog of "P1" issues. This priority is
+reserved for critical issues, including failing tests that obscure visibility
+into health of the code [beam-jira-priorities]. This backlog was largely
+invisible to the broader community. To increase awareness and voluntary
+activity around this we started automated daily emails (our policy is
+continuous updates on P1s after all) listing and linking to all of them. It
+seems to have helped somewhat for both flakes [beam-flake-trend] and non-flake
+P1s [beam-p1-trend] but there is more to do. Another area where we have a
+backlog that most community members ignore are untriaged issues, which you
+could view as a contrast (no email - significant backlog growth)
+[beam-triage-trend].
+
+[beam-jira-priorities] https://beam.apache.org/contribute/jira-priorities/
+[beam-flake-trend] https://s.apache.org/beam-flake-trend
+[beam-p1-trend] https://s.apache.org/beam-p1-trend
+[beam-triage-trend] https://s.apache.org/beam-triage-trend
+
+## Community Health:
+Community health metrics are remarkably stable again. Exactly the same number
+of code contributors and closed PRs as last quarter. Almost the same
+number of Jiras were opened and closed. Mailing list traffic is up, but that
+fluctuates a lot anyhow, and we added two daily emails which account for a
+significant fraction.</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-H">2021-03-17</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (4 years ago)
+There are currently 76 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+- Chamikara Madhusanka Jayalath was added to the PMC on 2021-01-20
+- Piotr Szuberski was added as committer on 2021-01-19
+
+## Project Activity:
+
+Recent releases:
+- 2.28.0 was released on 2021-02-22.
+- 2.27.0 was released on 2021-01-08.
+- 2.26.0 was released on 2020-12-11.
+
+Technical improvements are steady. There are no disruptive technical changes
+to mention, just healthy enhancements and bugfixes for a variety of modules:
+ParquetIO, BigQueryIO, PubsubIO, SQL. [changes]
+
+Highlights of community activities:
+
+- A new design for the website is now done and deployed [website].
+- Beam College [college] starts on April 7th. This is a training event
+  offering five single-day sessions for Beam users to go deep on topics.
+- Beam Summit 2021 planning has begun [summit].
+
+[changes] https://github.com/apache/beam/blob/master/CHANGES.md
+[website] https://s.apache.org/7rr5d
+[college] http://beamcollege.dev/
+[summit] https://s.apache.org/8cp13
+
+## Community Health:
+Community health metrics are remarkably stable across all mailing lists and
+code review. I will mention one specific statistic so that no one is
+concerned. In the data, we see "300 issues closed in JIRA, past quarter (782%
+increase)" but this is due to breakage and subsequent repair of our Jira
+workflows.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-J">2021-01-20</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (4 years ago)
+There are currently 75 committers and 22 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+
+- No new PMC members. Last addition was Alexey Romanenko on 2020-06-11.
+- No new committers. Last addition was Heejong Lee on 2020-09-03.
+
+The cause of the stall is simply lowered PMC activity. It has been noted
+by the PMC and we are getting it moving again.
+
+## Project Activity:
+
+In the core model there is big news: "Splittable DoFn" is now the default
+recommended way to write new data connectors. In simple terms: data sources
+are now dynamic. Previously, data connectors were a root of the computation
+graph (no inputs) and you said what you wanted to read before you started your
+job. Now data connectors take their input specification at runtime. This opens
+up a whole new realm of data processing, as you can take a "big data" number
+of Kafka topics or HDFS paths on input and read from all of them, and the
+rest of the Beam model "just works" with this (including unification of bounded
+and unbounded data and watermarks, etc).
+
+In the Python realm:
+- Python 2 and Python 3.5 support dropped!
+- Performance-driven type checking added (opt-in) [pytypes].
+- An exciting new avenue for users is a Pandas compatible API. The goal is
+exact compatibility. To that end, we are running Pandas own test suite
+against the Beam module.
+- Beam's cross-language capabilities continue to expand: Java-based KinesisIO,
+SnowflakeIO, are available for Beam Python users
+
+In the Java realm:
+- Java 11 is officially supported and tested. Users are invited to use
+  Java 11.
+- We have started to develop BOMs that simplify dependency management for
+  users who have committed to a particular ecosystem (where "ecosystem" is
+  deliberately undefined and user demand can drive new BOMs being made).
+- Our Hadoop connectors are now tested against Hadoop 3.
+
+In the SQL realm: a bunch more connector capabilities:
+- Avro, JSON, and Protobuf over Kafka
+- Avro over Pubsub
+- Bigtable connector
+- Thrift format support
+
+For the Flink runner there is a major change in the works: it was cloning
+every item of data needlessly. This was noticed, diagnosed, and fixed, reducing
+some pipeline runtimes by 80%.
+
+For the Dataflow runner there is a major migration happening: "Dataflow V2"
+is going more "all in" on Beam. Rather than translating Beam's pipeline model
+to the Dataflow API it is using Beam's model directly. This also enables
+cross-language pipelines and users to have simplified custom containers for
+their UDFs. FlinkRunner and SparkRunner already had "portable" variants, and
+this is the "portable" variant of Dataflow. (the term "portable" refers to using
+Beam's new "portability" APIs that allow all the language-agnostic goodness).
+
+Recent releases (we have a target cadence of 6 weeks):
+
+- 2.27.0 was released on 2021-01-08.
+- 2.26.0 was released on 2020-12-11.
+- 2.25.0 was released on 2020-10-23.
+
+([pytypes](https://beam.apache.org/blog/python-performance-runtime-type-checking/)
+
+
+## Community Health:
+
+There is an overall trend of reduced activity. The variance in usual quarters
+is pretty high, but I would guess the pandemic has had a significant effect.
+
+Verbatim stats, for reference:
+
+- dev@beam.apache.org had a 21% decrease in traffic in the past quarter (811
+  emails compared to 1017)
+- github@beam.apache.org had a 37% decrease in traffic in the past quarter
+  (7584 emails compared to 11968)
+- issues@beam.apache.org had a 39% decrease in traffic in the past quarter
+  (13471 emails compared to 21750)
+- 565 issues opened in JIRA, past quarter (3% increase)
+- 697 commits in the past quarter (-37% decrease)
+- 120 code contributors in the past quarter (-27% decrease)
+- 610 PRs opened on GitHub, past quarter (-27% decrease)
+- 586 PRs closed on GitHub, past quarter (-30% decrease)
+- 114 issues closed in JIRA, past quarter (570% increase)</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#section-6H">2020-12-16</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-J">2020-09-16</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+
+There are no issues requiring board attention.
+
+## Membership Data:
+
+Apache Beam was founded 2016-12-20 (3.75 years ago)
+There are currently 75 committers and 22 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+- Alexey Romanenko was added to the PMC on 2020-06-11
+- Aizhamal Nurmamat kyzy was added as committer on 2020-06-17
+- Austin Bennett was added as committer on 2020-06-22
+- Heejong Lee was added as committer on 2020-09-03
+- Reza Ardeshir Rokni was added as committer on 2020-08-17
+
+## Project Activity:
+
+- Beam 2.24.0 is the last release with Python 2 and Python 3.5 support.
+- &ldquo;Cross-language transforms&rdquo; continue to grow: JdbcIO (Java-based) now
+  available to Beam Python users.
+- Twister2 runner is merged
+- Python 3.8 support added
+- More effort on Splunk, Snowflake, and Google Healthcare API integrations
+
+Recent releases:
+
+- 2.23.0 was released on 2020-07-29.
+- 2.22.0 was released on 2020-06-08.
+- 2.21.0 was released on 2020-05-27.
+
+## Community Health:
+
+Community metrics steady:
+ - Mailing list activity about the same on user@ (about 500) and
+   dev@ (between 1000 and 1500)
+ - Pull request open and close rate about the same (just under 800). The fact
+   that equal numbers of pull requests are opened and closed is nice.
+
+The board may enjoy this basic analysis [1] of code contributors presented at
+the Beam Summit. Highlighted points:
+
+ - Each release has a bit under 100 unique contributors (steady for a long
+   time)
+ - About 20 of which are new each time (which means 20 depart as well)
+ - This is explained because the majority of Beam's contributors have under
+   10 commits total, perhaps mostly "scratching an itch" by fixing a one-off
+   issue.
+
+[1] https://s.apache.org/beam-summit-code-contributor-analysis</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-J">2020-06-17</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (3 years ago)
+There are currently 71 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+
+- No new PMC members. Last addition was Pablo Estrada on 2019-05-13.
+- Robin Qiu was added as committer on 2020-05-18
+
+## Project Activity:
+
+Some updates:
+
+- Last report, the community had received drafts of our new mascot, the
+  firefly. Now the final drafts are done and committed to the website.
+  [mascot]
+- Last report, website migration to Hugo/docsy was just beginning. It is now
+  complete, ready for i18n.
+- Last report, we were working on moving to a dedicated Jenkins instance. That
+  stalled for a bit, but in the last couple of days moved rapidly and is
+  almost done.
+
+[mascot] https://beam.apache.org/community/mascot/
+
+Other milestones:
+
+- As of April, docker containers that Beam releases adhere to the guidance of
+  LEGAL-503. [LEGAL-503]
+- Beam's "cross-language" features are maturing, with a focus on making Beam
+  Java features available for Beam Python. This is not just bridging
+  languages, but communities/ecosystems. Only some runners support executing
+  such a pipeline for now; as each one fully migrates to Beam's
+  "portability framework" this will be enabled. What can Pythonistas use on
+   enabled runners now?
+    - SQL (Java-based, built on Apache Calcite)
+    - KafkaIO (a connector to Apache Kafka authored in Java)
+- New IO Connectors: Beam now has IO connectors for Snowflake and Google
+  Healthcare APIs.
+
+[LEGAL-503] https://issues.apache.org/jira/browse/LEGAL-503
+
+Some work on project health, removing things we don't want/need to maintain:
+
+- Following Gearpump retiring from the incubator, the Gearpump runner was
+  removed.
+- Following Apex moving to the attic, the Apex runner will be removed.
+
+Other highlighted activity:
+
+- The community discussed how many / which Python 3.x versions Beam should
+  support concurrently, with the conclusion that 3.5 and 3.7 were highest
+  priority. [py3]
+- A Beam "fixit" week was proposed. Contributors would add testing /
+  reliability / quality related Jiras to a label `beam-fixit` and we could fix
+  some. 105 Jiras were added to the label, and about 30 were fixed.
+- Beam has 3 Google Summer of Code students working on Beam SQL and Beam
+  Python
+- Beam was accepted to Google Season of Docs program. Currently the project is
+  accepting proposals for tech writers to improve documentation.
+- We moved to our own Jira priority scheme, strictly numerical (P0, P1, etc)
+  with tooltips we authored, and explanations on the Beam site
+  [jira-priorities]. This reduced friction for users and release managers,
+   since Jira's built-in priorities like "Blocker", "Critical", "Major" were
+   amgibuous and caused confusion.
+- We activated Jira automation to:
+  - Unassign issues that were likely forgotten. This identified many issues
+    that could be picked up by new contributors, and many that could be
+    closed.
+  - Lower priority from P2 ("default") to P3 ("nice to have") for unassigned
+    issues that were very old, to match how they were prioritized in practice.
+    This identified many issues at the wrong priority, and also prompted
+    discussions between users and Beam developers.
+
+[py3] https://s.apache.org/beam-py3-discussion
+[jira-priorities] https://beam.apache.org/contribute/jira-priorities/
+
+In the current pandemic situation, conferences have been altered or canceled,
+but we have activity to note:
+
+- "Distributed Processing for Machine Learning Production Pipelines" presented
+  at Flink Forward Virtual 2020 (https://www.youtube.com/embed/jV1WFTmm4qg)
+- Beam Summit organizers committed to working more transparently with the
+  community [beam-summit-transparency]. In June we have received weekly status
+  reports. [beam-summit-20200603] [beam-summit-2020-0610]
+- Beam Summit 2020 rescheduled and converted to Beam Digital Summit.
+  [beam-digital-summit]
+- Organized a May digital learning month, to keep community engaged with
+  weekly talks during COVID19. Hosted 4 webinars introducing different
+  features of Apache Beam. Received 100~200 viewers on average for each
+  webinar.
+
+[beam-summit-transparency] https://s.apache.org/beam-summit-transparency
+[beam-summit-20200603] https://s.apache.org/beam-summit-20200603
+[beam-summit-20200610] https://s.apache.org/beam-summit-20200610
+[beam-digital-summit] https://s.apache.org/beam-digital-summit
+
+Recent releases:
+
+- 2.22.0 was released on 2020-06-08.
+- 2.21.0 was released on 2020-05-27.
+- 2.20.0 was released on 2020-04-15.
+
+
+## Community Health:
+- Traffic on dev@ was about the same, PRs and commits about the same.
+- Traffic on user@ was double, seemingly a real and sustained increase.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-I">2020-04-15</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+
+There are no issues requiring board attention.
+
+## Membership Data:
+
+Apache Beam was founded 2016-12-20 (3 years ago)
+There are currently 70 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+
+- No new PMC members. Last addition was Pablo Estrada on 2019-05-13.
+- Alex Van Boxel was added as committer on 2020-02-03
+- Chad Dombrova was added as committer on 2020-02-20
+- Hannah Jiang was added as committer on 2020-02-03
+- Jincheng Sun was added as committer on 2020-02-18
+- Kamil Wasilewski was added as committer on 2020-02-27
+- Katarzyna Kucharczyk was added as committer on 2019-12-19
+- Micha&lstrok; Walenia was added as committer on 2020-01-25
+
+## Project Activity:
+
+- Improvements and fixes on several IOs have been done or on the way (updated
+  ElasticsearchIO, JmsIO new message types support, &hellip;)
+- Beam now has an official Beam Improvement Proposal (BIP) process [bip] and a
+  first BIP [bip1]. This gives a clear way for people to proposal
+  enhancements, followed by an official voting process. We are looking forward
+  to evolving the process as we gain experience, in order to be more clear
+  about the status of proposals, for the Beam dev community and also broader
+  community including users.
+- Last report, the community had chosen the firefly as mascot. Now we have
+  received some draft artwork from a vendor.
+- Lots of activity around Google Summer of Code projects. Beam docker images
+  are now transitioned to the apache org (off the apachebeam). [docker]
+- A draft communications strategy makes for really interesting reading about
+  outreach and awareness. [comms]
+- The new twister2 runner is approaching merge. [twister2]
+- Website transition to docsy has an update that it is beginning shortly.
+   [docsy]
+- Starting with Beam 2.21.0 support for Flink 1.7 will be removed. [flink17]
+- Starting with Beam 2.21.0 support for Flink 1.10 has been added. [flink110]
+- Starting with the approach to the 2.20.0 release, Beam has adopted a
+  CHANGES.md file to track and draft release notes. It should also help make
+  it easier to have informative board reports.
+- We still have not got the isolated Jenkins instance finished, which would
+  allow precommits to run on pull requests from untrusted parties.
+
+[bip] https://s.apache.org/iwaoz
+[bip1] https://s.apache.org/yo5zh
+[docker] https://s.apache.org/y5cmf
+[twister2] https://s.apache.org/iwuuw
+[docsy] https://s.apache.org/j5nds
+[comms] https://s.apache.org/ccqs8
+[flink17] https://s.apache.org/8dky5
+[flink110] https://issues.apache.org/jira/browse/BEAM-9295
+
+Recent releases:
+
+- 2.19.0 was released on 2020-02-03.
+- 2.18.0 was released on 2020-01-23.
+- 2.17.0 was released on 2020-01-06.
+
+## Community Health:
+
+Busiest email thread: this thread has been re-used over time for people to
+request a committer to trigger testing on the PR
+
+ - dev@beam.apache.org Jenkins jobs not running for my PR 10438(98 emails)
+
+The traffic on builds@ indicates a lot more test failures on master. It does
+mean the community needs to communicate and come together around test health.
+
+- builds@beam.apache.org had a 56% increase in traffic in the past quarter
+  (11442 emails compared to 7317):
+
+Traffic on dev@, issues@, and user@ don't show interesting changes.
+
+JIRA continues to grow faster than it shrinks, in a healthy ratio:
+
+- 514 issues opened in JIRA, past quarter (-29% decrease)
+- 398 issues closed in JIRA, past quarter (4% increase)
+
+Could we possibly be catching up on PRs? Let's wait and see. We are down to
+118 open at the time of this writing (we were previously on the move from
+about 100 open all the time up to 150+ open all the time).
+
+GitHub PR activity:
+
+- 720 PRs opened on GitHub, past quarter (-11% decrease)
+- 745 PRs closed on GitHub, past quarter (-6% decrease)</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#section-6I">2020-03-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Rich: pursue a report for Beam</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#attachment-I">2019-12-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Beam is the creation and maintenance of software related
+to a unified programming model for both batch and streaming data processing,
+enabling efficient execution across diverse distributed execution engines and
+providing extensibility points for connecting to different technologies and
+user communities.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Beam was founded 2016-12-20 (3 years ago)
+There are currently 63 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is 3:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Pablo Estrada on 2019-05-13.
+- Alan Myrvold was added as committer on 2019-09-24
+- Brian Hulette was added as committer on 2019-11-14
+- Daniel Oliveira was added as committer on 2019-11-20
+
+## Project Activity:
+We crossed 10,000 pull requests! That is just a cumulative milestone, but this
+quarter alone was extremely active. Number of days from PR #1 and PR #1000:
+211. Number of days from PR #9000 and PR #10000: 71
+
+Some notable technical developments, focusing mostly on integrations:
+ - A new experimental Spark runner based on Spark structured streaming
+   framework is available on master for testing. To fully support the Beam
+   model, it will require Spark structured streaming to support multiple
+   aggregations, but it can be tested for batch jobs in the meantime. [1]
+ - A new Jupyter notebook integration, dubbed "interactive beam", was proposed
+   and implemented, and remains under heavy development. [2]
+ - Portability continues to mature, with significant use and development of
+   Python on Flink, and maturation of multi-language pipelines, in which a
+   "Beam Python" pipeline can include connectors and SQL from Java. The Go SDK
+    intends to primarily support this mode, to avoid re-implementing any
+    connectors, so this will lead to "Go on any data processing engine".
+ - The beginning of transition from AWS v1 to AWS v2 [3]. Many other
+   improvements across a many connectors to storage systems.
+
+[1] https://lists.apache.org/thread.html/0135c726ab
+ f454ea381c1075fe6b588b42b8e6b1e69964e749a0621d%40%3Cdev.beam.apache.org%3E
+[2] https://lists.apache.org/thread.html/6ed9a4100
+ 89b86c7c99a0f0ad8e9ce97b6414eb95ffb69f5a52dc0dc%40%3Cdev.beam.apache.org%3E
+[3] [https://lists.apache.org/thread.html/130cb60e6b
+ cdd58c5afdd0c375663eaf05e705aab9ee0196535cd17f%40%3Cdev.beam.apache.org%3E]
+
+Some notable community resolutions and discussions:
+ - Discussion of Beam Summit 2020 [4]
+ - The Beam community has decided to adopt a mascot, the Firefly. [5] [6]
+   Currently being designed by community members.
+ - We documented Jira priority explanations and release blocking policies [7]
+ - We joined a pledge on https://python3statement.org/ to discontinue Python 2
+   support in 2020. [8]
+ - A renewed discussion and interest is communicating effectively with Beam
+   users the maturity and stability of different components. [9]
+ - Another renewed conversation around a more formal "BIP" (Beam Improvement
+   Proposal) process, to improve clarity of approval and development of bigger
+   changes. [10]
+- Our Outreachy proposals did not receive contributions in the needed
+  timeframe, despite some initial interest. They may not have been
+  appropriately scoped for an Outreachy internship. [11]
+- LTS (Long Term Support) version has not been very successful, with zero
+  patch releases, because no one really seemed to want one. We may designate
+  another one and try harder next time to really finish a patch release and
+  measure its uptake.
+  [12]
+
+[4] https://lists.apache.org/thread.html/bd9a1cebbcc
+ 6994b0f9a5f1cdb402a19efe9c5acc54d6aa65bc671a2%40%3Cdev.beam.apache.org%3E][5]
+ https://lists.apache.org/thread.html/ff60eabbf8
+ 349ba6951633869000356c2c2feb48bbff187cf3c60039%40%3Cdev.beam.apache.org%3E
+[6] https://lists.apache.org/thread.html/fd8146e3e7
+ 9fc41e8c760924be3b29b1c5314024336f473f9f0e7723%40%3Cdev.beam.apache.org%3E
+[7] https://lists.apache.org/thread.html/05fa80345
+ f9e9ed5c9233f1dd2aa7ffbf1b5691dfeef5b449f6be338%40%3Cdev.beam.apache.org%3E
+[8] https://lists.apache.org/thread.html/634f7346
+ b607e779622d0437ed0eca783f474dea8976adf41556845b%40%3Cdev.beam.apache.org%[9]
+ https://lists.apache.org/thread.html/0f76973
+ 6be1cf2fc5227f7a25dd3fdbb9296afe8a071761cb91f588a%40%3Cdev.beam.apache.org%3E
+[10] https://lists.apache.org/thread.html/9236522d90
+ 06d6b8747d179bc369f5b082801e31fbecd4bdfce8f3e1%40%3Cdev.beam.apache.org%3E
+[11] https://lists.apache.org/thread.html/217daec97f
+ bcf04c71a93a2d306593f01c18f09aaad7abd69ec33eef%40%3Cdev.beam.apache.org%3E
+[12] https://lists.apache.org/thread.html/100e13251b
+ 31ca601ddd53ab7e819de0960e826e96a0aece43045861%40%3Cdev.beam.apache.org%3E
+
+A continuing pain point is our release process being slow and cumbersome. The
+2.17.0 release has been underway for over 6 weeks. Such a burden is not
+approachable for volunteer contributors.
+
+
+## Community Health:
+The community is vigorous, but the balance of activities is imperfect.
+
+Mailing list stats are worth mentioning because dev@ traffic is getting *very*
+large. It does not include Jira/Jenkins/GitHub notifications. Even some steady
+contributors have indicated that they cannot really follow the dev@ list.
+
+- dev@beam.apache.org had a 23% increase in traffic in the past quarter (1820
+  emails compared to 1478)
+- user@beam.apache.org had a 32% increase in traffic in the past quarter (446
+  emails compared to 336)
+
+The open PR count (steady state) has climbed from about 100 to over 150. This
+is not due to more PRs being opened. The PR open rate is about the same. The
+PR close rate is also about the same. I think this implies we have been
+steadily falling behind further and further. Cultivating new
+contributors/committers may help, as well as highlighting or trying to
+incentivize code review by existing committers and also by non-committers.</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#attachment-I">2019-09-18</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Beam is a unified programming model for both batch and streaming
+   data processing, enabling efficient execution across diverse distributed
+   execution engines and providing extensibility points for connecting to
+   different technologies and user communities.
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+
+Beam Summit NA occurred at ApacheCon NA. About 80 people attending 20 talks in
+2 rooms over 2 days, plus a day-long Beam introductory workshop. Good
+cross-pollination of talks and audience: 4 Beam related talks on other tracks;
+2 non-Beam talks by Beam Summit organizers on community track; Beam Summit
+attendees and speakers checked out the other tracks; other ApacheCon attendees
+lured into Beam Summit :-)
+
+Many large contributions:
+ - A translator from Google's recently open sourced ZetaSQL dialect into
+   Apache Calcite's relational algebra. This enables ZetaSQL as a choice of
+   dialect for using Beam SQL.
+ - An integration with ZetaSketch HyperLogLog algorithm, recently open sourced
+   as well.
+ - A new sort-merge join algorithm from Spotify. Still under discussion and
+   review.
+
+Technically, there is a noticeable trend into schema-aware data processing,
+expanding from Beam SQL to other proposals like dataframe-style APIs and
+columnar processing using Apache Arrow.
+
+A SQL collaboration: PMC from Flink, Beam, and Calcite, together with
+researchers from Oakridge National Lab that sit on the ISO SQL committee,
+wrote a proposal for what streaming SQL should look like across their projects
+and the industry as a whole, to influence streaming SQL standardization.
+Presented to SIGMOD industry track and later at ApacheCon (and other venues).
+
+Other dev list discussions of interest, due to community relevance or
+integrations with other Apache projects:
+ - A new integration - Ananas Analytics Desktop, a GUI for building pipelines.
+   Built without Beam's involvement; a sign of relevance and accessibility.
+   [0]
+ - How to support users best, across user@, StackOverflow, and Slack: Covered
+   tradeoffs between synchronous vs asynchonous, mostly. Did not get into
+   ASF-hosted vs third party, nor was licensing of code snippets discussed.
+   [1]
+ - Which Flink versions to support and how best to support multiple versions.
+   [2]
+ - One Google Summer of Code project wrapped up, on optimized inserts to
+   BigQuery. [3]
+ - We have improved issue triage significantly. We added a default Jira status
+   of "Needs Triage" to make sure all bugs get some attention from a
+   knowledgeable community member. I asked for help triaging, and the
+   community collaboratively kept untriaged issues steadily under 100, for the
+   first time in a long time. [4]
+ - Protocol for managing Beam's social media presence were discussed more, and
+   we have a system in place (after long discussion) where the community can
+   contribute easily and the PMC can review and approve. [5]
+ - Improvements to our release process of vendored artifacts and documentation
+   of it. [6]
+
+[0] https://lists.apache.org/thread.html/ce3a051789868e362680e358569da26711d6b513cf2396094a242230@%3Cdev.beam.apache.org%3E
+[1] https://lists.apache.org/thread.html/ed90f898d571856a5b92df23150d3417732a9f5f1b4c6ff2a41bf237@%3Cdev.beam.apache.org%3E
+[2] https://lists.apache.org/thread.html/124200de15d88321d590bf83be3ba0e8bdfc3a161a0bcd66a12921ed@%3Cdev.beam.apache.org%3E
+[3] https://gist.github.com/ttanay/80f84b7b852e0867d5a00d3b345e1dad
+[4] https://lists.apache.org/thread.html/dd0048c68c1b5511ca5a0f668a848159fd441d51c21f332b43510163@%3Cdev.beam.apache.org%3E
+[5] https://lists.apache.org/thread.html/babceeb52624fd4dd129c259db8ee9017cb68cba069b68fca7480c41@%3Cdev.beam.apache.org%3E
+[6] https://lists.apache.org/thread.html/e2c49a5efaee2ad416b083fbf3b9b6db60fdb04750208bfc34cecaf0@%3Cdev.beam.apache.org%3E
+
+## Health report:
+
+Dev and user list subscription and traffic steady.
+
+Each release continues to include commits from 60-100 contributors.
+
+One sign of community bonding I've noticed happily was people letting dev@
+know when they were going on vacation.
+
+## PMC changes:
+
+ - Currently 21 PMC members.
+ - No new PMC members. Last addition was Pablo Estrada on 2019-05-13.
+
+## Committer base changes:
+
+ - Currently 60 committers.
+ - New committers:
+    - Rui Wang was added as committer on 2019-07-30
+    - Kyle Weaver was added as committer on 2019-08-02
+    - Jan Lukavsk&yacute; was added as committer on 2019-07-25
+    - Robert Burke was added as committer on 2019-06-28
+    - Mikhail Gryzykhin was added as committer on 2019-06-16
+    - Valentyn Tymofieiev was added as committer on 2019-08-09
+
+## Releases:
+
+ - 2.15.0 was released on 2019-08-22.
+ - 2.14.0 was released on 2019-08-01.
+ - 2.13.0 was released on 2019-06-04.
+
+## Mailing list activity:
+
+Mailing list activity does not indicate any significant change.
+
+ - dev@beam.apache.org:
+    - 627 subscribers (up 17 in the last 3 months):
+    - 1549 emails sent to list (2110 in previous quarter)
+
+ - user@beam.apache.org:
+    - 641 subscribers (up 14 in the last 3 months):
+    - 359 emails sent to list (416 in previous quarter)
+
+## JIRA activity:
+
+ - 615 JIRA tickets created in the last 3 months
+ - 334 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#attachment-I">2019-06-19</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Beam is a unified programming model for both batch and streaming
+   data processing, enabling efficient execution across diverse distributed
+   execution engines and providing extensibility points for connecting to
+   different technologies and user communities.
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+
+ - A portable Spark runner added capable of running Python and Go pipelines in
+   Batch mode.
+ - A new runner has been added based upon Hazelcast Jet, with "experimental"
+   status, a signal to users that it is new and may have breaking changes
+   before it becomes finalized.
+ - Beam Katas (interactive programming exercises of gradually increasing
+   complexity) based on JetBrains Education Products have been added to the
+   project to aid increasing user growth. They are available for Python and
+   Java.
+ - Cross-language transform support for Flink runner was added. It now
+   possible (with some effort) to build a pipeline in Python that utilizes
+   transforms authored in Java.
+
+
+## Health report:
+
+Dev and user list subscription steady, but great increase in traffic on dev@.
+There have been healthy discussions around technical decisions.
+
+Each release tends to include commits from 60-100 contributors.
+
+## PMC changes:
+
+ - Currently 21 PMC members.
+ - Pablo Estrada was added to the PMC on Mon May 13 2019
+
+## Committer base changes:
+
+ - Currently 54 committers.
+ - New commmitters:
+    - Boyuan Zhang was added as a committer on Tue Apr 09 2019
+    - Jozef Vilcek was added as a committer on Sat Jun 08 2019
+    - Udi Meiri was added as a committer on Fri May 03 2019
+    - Yifan Zou was added as a committer on Mon Apr 22 2019
+
+## Releases:
+
+ - 2.12.0 was released on Wed Apr 24 2019
+ - 2.13.0 was released on Tue Jun 04 2019
+
+## Mailing list activity:
+
+ - dev@beam.apache.org:
+    - 627 subscribers (up 17 in the last 3 months):
+    - 2110 emails sent to list (1352 in previous quarter)
+
+ - user@beam.apache.org:
+    - 641 subscribers (up 14 in the last 3 months):
+    - 416 emails sent to list (383 in previous quarter)
+
+## JIRA activity:
+
+ - 719 JIRA tickets created in the last 3 months
+ - 610 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#attachment-I">2019-03-20</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+There are no issues requiring board attention at this time
+
+## Activity:
+Apache Beam has a number of major technical endeavors maturing. As usual for
+Beam, these include many integrations with other projects / communities:
+
+ - Beam Python can be executed on Flink and is reported to be used in
+   production
+ - Beam Java on Samza is reported to be used in production, and some success
+   reported running Beam Python on Samza
+ - Our first release with partial Python 3 support
+ - Beam's IO connector ecosystem is healthy, with additions or upgrades to
+   connectivity to RabbitMQ, Redis, Spanner, Parquet, Hadoop, MongoDb, Kafka,
+   BigQuery, Cassandra, JDBC. And Beam SQL has added Hive Metastore support.
+   This reflects the growing diversity of users and use cases represented in
+   the Beam community.
+
+Community event activity has seen good developments and cross-community
+building too:
+
+ - A San Francisco-based Beam meetup group started and seems self-sustaining
+ - Beam Python on Flink has gained interest and was presented at a Seattle
+   Flink Meetup
+ - Kettle on Beam was presented at a London Pentaho Meetup
+
+Beam Summit Europe 2019 is approved, to occur June 19-20 in Berlin (convenient
+to Berlin Buzzwords).
+
+There have been three Beam Newsletters [1, 2, 3] since the last report was
+authored. There are collaboratively authored - anyone can suggest content
+about technical achievements, what they are working on, events, blog posts,
+etc. Much of the above and other details can be found in the newsletter.
+
+A nice community touch is that the newsletter also gathers information from
+threads where people introduce themselves, so it is a place to learn/reflect
+on new members of the community.
+
+The community has recently discussed moving finalized newsletter to the blog
+or creating a "News" section on the website to boost visibility of the
+information and clarity around the newsletter's publication date.
+
+[1] https://s.apache.org/beam-newsletter-2018-12
+[2] https://s.apache.org/beam-newsletter-2019-01
+[3] https://s.apache.org/beam-newsletter-2019-02
+
+## Health report:
+
+Dev and user list subscription is slightly up, while traffic is slightly down.
+There's no indication of major health changes. The content of both lists
+remains qualitatively about the same.
+
+Each release tends to include commits from 60-100 contributors.
+
+## PMC changes:
+
+ - Currently 20 PMC members.
+ - Etienne Chauchot was added to the PMC on Thu Jan 24 2019
+
+## Committer base changes:
+
+- Currently 50 committers.
+   - New commmitters:
+      - Gleb Kanterov was added as a committer on Thu Jan 24 2019
+      - Mark Liu was added as a committer on Fri Mar 08 2019
+      - Michael Luckey was added as a committer on Fri Feb 22 2019
+      - Raghu Angadi was added as a committer on Thu Mar 07 2019
+
+## Releases:
+
+ - 2.9.0 was released on Thu Dec 13 2018
+ - 2.10.0 was released on Sun Feb 10 2019
+ - 2.11.0 was released on Thu Feb 28 2019
+
+## Mailing list activity:
+
+ - dev@beam.apache.org:
+    - 613 subscribers (up 28 in the last 3 months):
+    - 1464 emails sent to list (1941 in previous quarter)
+
+
+ - user@beam.apache.org:
+    - 627 subscribers (up 28 in the last 3 months):
+    - 391 emails sent to list (465 in previous quarter)
+
+## JIRA activity:
+
+ - 607 JIRA tickets created in the last 3 months
+ - 462 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#attachment-H">2018-12-19</a> &mdash; Kenneth Knowles<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Beam is a unified programming model for both batch and streaming
+   data processing, enabling efficient execution across diverse distributed
+   execution engines and providing extensibility points for connecting to
+   different technologies and user communities.
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - We are happy to welcome a new integration: A Beam runner for Apache Nemo
+   (incubating) has been authored, and resides in the Nemo repository.
+ - The community held a 2-day Beam Summit London in October with 80 attendees,
+   mostly users. Considered a success, the community intends to hold more,
+   likely planning a bit more in advance.
+
+ - The project has also added a &ldquo;Roadmap&rdquo; to the website, to share with users
+   exciting developments underway that are otherwise only discoverable on
+   dev@. Based on a good discussion, it emphasizes how a roadmap for a
+   community driven ASF project differs from a commercial roadmap.
+
+ - Other recent community decisions include:
+   - Releasing &ldquo;vendored&rdquo; artifacts as an alternative to shading, much as
+     Apache Flink does.
+   - Clarifying the conditions under which Beam&rsquo;s &ldquo;rollback first&rdquo; policy
+     applies. Notably, it does not apply to downstream (potentially
+     non-public) integrations.
+   - Send Jira and Jenkins notifications to separate lists issues@ and
+     builds@, respectively.
+   - Previously, the community agreed to establish a long-term support (LTS)
+     branch. This quarter, the 2.7 minor release family was chosen for a 6
+     month pilot.
+
+ - IP clearance has been completed for:
+   - Dataflow Java Worker
+
+## Health report:
+ - Notable this quarter is greatly increased attention to the website and wiki
+   pages pertaining to onboarding new contributors.
+ - The dev@ and user@ mailing lists continue the prior modest linear growth
+   trend.
+ - Email volume to dev@ has increased markedly, especially noting that we have
+   rerouting all automated emails to issues@beam.apache.org and
+   builds@beam.apache.org.
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Thomas Weise on Fri Jun 08 2018
+
+## Committer base changes:
+
+ - Currently 46 committers.
+ - New commmitters:
+    - David Mor&aacute;vek was added as a committer on Mon Oct 29 2018
+    - Ankur Goenka was added as a committer on Mon Oct 22 2018
+    - Matthias Baetens was added as a committer on Mon Nov 26 2018
+    - Xinyu Liu was added as a committer on Mon Oct 15 2018
+
+## Releases:
+
+ - Since the last report, Apache Beam has published two releases, with one
+   more currently in progress:
+   - 2.7.0 was released on Fri Sep 28 2018
+   - 2.8.0 was released on Thu Oct 25 2018
+   - 2.9.0 is in progress
+
+ - The community determined to start the release process every 6 weeks, and we
+   have stuck to this. The smaller gap between 2.7.0 and
+  2.8.0 is due to variance in the time to a final RC.
+
+## Mailing list activity:
+
+ - dev@beam.apache.org:
+    - 575 subscribers (up 28 in the last 3 months):
+    - 1939 emails sent to list (1937 in previous quarter)
+
+ - user@beam.apache.org:
+    - 593 subscribers (up 17 in the last 3 months):
+    - 416 emails sent to list (559 in previous quarter)
+
+## JIRA activity:
+ - 881 JIRA tickets created in the last 3 months (811 in the previous quarter)
+ - 622 JIRA tickets closed/resolved in the last 3 months (501 in the previous
+   quarter)</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#attachment-H">2018-09-19</a> &mdash; Davor Bonaci<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+The Board is presented with a Special Order 7B to appoint Kenneth Knowles
+(kenn) to the office of Vice President, Apache Beam. Kenneth has served on the
+ PMC since its inception, and is very active and effective in growing the
+ community. His exemplary posts have been cited in other projects.
+
+## Activity:
+
+Apache Beam is now approaching its second anniversary as a top-level project.
+Major technical efforts going on include:
+  - Finishing the portable Flink runner, which adds support for Python and Go
+    SDKs.
+  - Adding Schema support.
+  - Beam SQL.
+  - Infrastructure and automation.
+
+Recent community decisions include:
+  - Providing designated "Long Term Support" releases.
+  - Better management of outdated dependencies.
+  - Using JIRA to track and highlight non-code contributions.
+
+Several blog posts have been published this quarter, primarily promoting the
+releases. Google is organizing a Beam Summit in London next month, expecting
+modest attendance. Additionally, Beam was featured at several conferences,
+including Flink Forward 2018 in Berlin.
+
+Going forward, the main focus should be on the community growth, particularly
+on the user side using non-proprietary engines. This goes hand-in hand with
+the next major technical milestone of delivering on the portability framework,
+making Beam available to Python and Go communities.
+
+## Health report:
+
+The user community grew modestly, as evidenced by the increased mailing list
+activity, which is encouraging.
+
+Activity on the development mailing list decreased, but there were quite a few
+new contributors joining, improving the diversity. Lifetime unique code
+contributors grew to 322, with 53 new first-time contributors.
+
+## PMC changes:
+
+Currently 19 PMC members. No new PMC members have been added since the last
+report. The last PMC addition was Thomas Weise on Fri Jun 08 2018.
+
+Frances Perry requested to resign from the PMC, though that resignation has
+been put on hold pending discussions around establishing an emeritus policy
+instead, taking into account recent Board discussions and recommendations to
+other projects.
+
+## Committer base changes:
+
+Currently 42 committers. Five new committers have been added since the last
+report. New committers:
+  - Scott Wegner was added as a committer on Thu Jun 21 2018.
+  - &Lstrok;ukasz Gajowy was added as a committer on Wed Jun 27 2018.
+  - Anton Kedin was added as a committer on Wed Aug 01 2018.
+  - Andrew Pilloud was added as a committer on Wed Aug 01 2018.
+  - Tim Robertson was added as a committer on Thu Aug 23 2018.
+
+The PMC recognizes two areas for improvement: (1) diversity of affiliations
+among active committers, and (2) an imbalance of contributors to active
+committers. The main cause of these recent imbalances is turnover over the
+last year, perhaps among some others. The plan of inviting quite a few new
+committers over a period of time has materialized. We continue to be cautious
+not to grow too quickly to jeopardize the community, or negatively affect
+where the project business is handled.
+
+## Releases:
+
+Since the last report, Apache Beam has published two releases, with one more
+currently in progress:
+  - 2.5.0 was released on Thu Jun 21 2018.
+  - 2.6.0 was released on Tue Aug 07 2018.
+  - 2.7.0 is currently under preparation.
+
+Going forward, we expect to publish a release every 6 weeks, a target that we
+have become better at achieving.
+
+## Mailing list activity:
+
+Mailing list subscriptions and activity continues to increase modestly. The
+activity on the development mailing list is down compared to the previous
+quarter, likely due to seasonal effects of summer vacations. The activity on
+the user mailing list has increased to a new high, which is very encouraging.
+
+- dev@beam.apache.org
+  - 547 subscribers (up 27 in the last 3 months).
+  - 1757 emails sent to list (2000 in previous quarter).
+
+- user@beam.apache.org
+  - 574 subscribers (up 25 in the last 3 months).
+  - 525 emails sent to list (353 in previous quarter).
+
+## JIRA activity:
+
+For the third quarter in a row, the JIRA activity is increasing, turning over
+the earlier trend.
+
+- 811 JIRA tickets created in the last 3 months (705 in the previous quarter).
+- 501 JIRA tickets closed/resolved in the last 3 months (368 in the previous
+  quarter).</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#attachment-H">2018-06-20</a> &mdash; Davor Bonaci<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+There are no issues that require the Board's attention at this time.
+
+## Activity:
+
+Apache Beam is now in its second year as a top-level project, and just
+celebrated one-year anniversary of its first stable release.
+
+Major technical efforts going on include:
+  - Building a portable Flink runner, which adds support for Python and Go
+    SDKs.
+  - Beam SQL.
+  - Infrastructure and automation.
+
+Beam desires to serve as a glue in the ecosystem, interconnecting SDKs,
+engines and storage/messaging systems. On the execution side, Apache Samza
+runner has seen increased activity, while other prototype runners are mostly
+dormant on feature branches. On the IO connector side, the healthy growth
+continues, with new connectors being contributed or improved month-over-month.
+
+IP clearances have been completed for:
+  - Euphoria API.
+  - Go SDK.
+
+Recent community decisions include:
+  - Publishing guidelines for becoming (and behaving as) a Beam committer.
+  - Releasing Go SDK.
+  - Automation of stale pull requests.
+
+No blog posts have been published this quarter. Beam was featured at several
+conferences, including Flink Forward San Francisco, and DataWorks Summit
+Berlin.
+
+Going forward, the main focus should be on the community growth, particularly
+on the user side using non-proprietary engines. This goes hand-in hand with
+the next major technical milestone of delivering on the portability framework,
+making Beam available to Python and Go communities.
+
+## Health report:
+
+The community continues to grow steadily, as follows:
+  - Lifetime unique contributors grew to 269, with 24 new first-time
+    contributors.
+  - Increased subscriptions and activity on the mailing list and in JIRA.
+  - Contribution of new components into the project by external entities.
+
+The amount of open discussion and design on the mailing list is at a new high,
+benefited by arrival of new contributors and increased openness by existing
+contributors.
+
+## PMC changes:
+
+Currently 19 PMC members. One PMC member has been added since the last report:
+  - Thomas Weise was added to the PMC on Fri Jun 08 2018.
+
+## Committer base changes:
+
+Currently 37 committers. Six new committers have been added since the last
+report. New committers:
+  - Jason Kuster was added as a committer on Fri Apr 27 2018.
+  - Pablo Estrada was added as a committer on Fri Apr 27 2018.
+  - Gris Cuevas was added as a committer on Thu May 03 2018.
+  - Charles Chen was added as a committer on Fri Jun 08 2018.
+  - Henning Rohde was added as a committer on Fri Jun 08 2018.
+  - Alexey Romanenko was added as a committer on Tue Jun 12 2018.
+
+The PMC recognizes two areas for improvement: (1) diversity of affiliations
+among active committers, and (2) an imbalance of contributors to active
+committers. The main cause of these recent imbalances is turnover over the
+last year, perhaps among some others. The general plan is to invite quite a
+few new committers over the next period of time, but not too quickly to
+jeopardize the community, or negatively affect where the project business is
+handled.
+
+Other recent actions include:
+  - Revision of new contributor materials to be more welcoming.
+  - Publishing the (subjective) guidelines for becoming a committer.
+  - Adding an explicit "Community" section to the web site, highlighting
+    ongoing projects to join.
+
+PMC member Kenneth Knowles deserves (a rare) mention by name for proactively
+reaching out to a large number of contributors, offering encouragement and
+individual coaching to those interested. This effort meaningfully moved the
+needle forward.
+
+## Releases:
+
+Since the last report, Apache Beam has published one release, with one more
+currently in progress:
+  - 2.4.0 was released on Mon Mar 19 2018.
+  - 2.5.0 is currently under preparation and voting.
+
+Version 2.0.0 was the first release that comes with API stability guarantees.
+Going forward, we expect to publish a release every 6 weeks. We have been
+short of our declared goal recently; however, the community is tackling this
+issue.
+
+## Mailing list activity:
+
+Mailing list subscriptions and activity continues to increase modestly. The
+number of emails on the development mailing list is up ~47%, and the number of
+threads is up ~45%. We continue to see an increase in frequency and depth of
+mailing list discussions, as well as better participation and diversity of
+opinion compared to last year.
+
+- dev@beam.apache.org
+  - 519 subscribers (up 15 in the last 3 months).
+  - 2127 emails sent to list (1393 in previous quarter).
+
+- user@beam.apache.org
+  - 548 subscribers (up 15 in the last 3 months).
+  - 389 emails sent to list (456 in previous quarter).
+
+## JIRA activity:
+
+For the second quarter in a row, the JIRA activity is increasing, turning over
+the earlier trend.
+
+- 705 JIRA tickets created in the last 3 months (507 in the previous quarter).
+- 368 JIRA tickets closed/resolved in the last 3 months (324 in the previous
+  quarter).</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#attachment-H">2018-03-21</a> &mdash; Davor Bonaci<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+There are no issues that require the Board's attention at this time.
+
+## Activity:
+
+Apache Beam is now in its second year as a top-level project, and the
+community continues to grow modestly.
+
+In this quarter, the main technical focus continues to be on the portability
+framework, and its adoption across all components of the project, which would,
+among other benefits, extend the Python and Go SDKs to all Beam runners. A
+sizeable portion of the community is working on this effort.
+
+As usual, the project kept interconnecting additional execution engines and
+data storage/messaging systems, and serves as a glue in the ecosystem. On the
+execution side, runners for JStorm, Apache Hadoop MapReduce, Apache Samza and
+Apache Tez are being prototyped in feature branches, but without too much
+recent activity. On the IO connector side, the healthy growth continues, with
+new connectors being contributed or improved month-over-month.
+
+Seznam.cz decided to donate the Euphoria API to Apache Beam. Also, an SGA for
+Google&rsquo;s previous donation of the Go SDK is still pending. Both IP clearances
+should complete by the next report.
+
+Recent major community decisions include:
+- Dropping Java 7 support, and requiring users to upgrade to Java 8.
+- Dropping Apache Spark 1.6 support, and requiring users to upgrade to a Spark
+  2.x cluster.
+- Completely switching the build system to Gradle.
+
+In this quarter, the community published two blog posts, one as a look-back at
+2017 and one about the most recent release. Beam was featured at Strata Data
+Conference San Jose 2017. Additionally, Google hosted a day-long Beam Summit
+with solid participation.
+
+Going forward, the main focus should be on the community growth, particularly
+on the user side using non-proprietary engines. On the technical side, the
+next major milestone is the completion of the portability framework across all
+components of the project.
+
+## Health report:
+
+The community continues to grow steadily, as follows:
+- Lifetime unique contributors grew to 245, with 30 new first-time
+  contributors.
+- Increased mailing list subscriber/activity.
+- Increased JIRA activity.
+- Contribution of new components into the project by external entities.
+- Continued release cadence.
+
+The overall health is solid, improving from a recent low, and is benefited by
+addition of new community members with foundation membership and/or experience
+in other projects.
+
+## PMC changes:
+
+Currently 18 PMC members. No new members have been added since the last
+report. Last PMC addition was on Wed Nov 08 2017. We are watching several
+potential candidates.
+
+## Committer base changes:
+
+Currently 31 committers. No new members have been added since the last report.
+Last committer addition was on Wed Nov 08 2017.
+
+There are clear candidates, probably five or so. I&rsquo;m confident the PMC will
+address this very quickly.
+
+## Releases:
+
+Since the last report, Apache Beam has published one release:
+- 2.3.0 was released on Thu Feb 15 2018.
+
+Version 2.0.0 was the first release that comes with API stability guarantees.
+Going forward, we expect to publish a release every 2 months.
+
+## Mailing list activity:
+
+Mailing list subscriptions and activity continues to increase modestly. It is
+worth noting that we saw an increase in frequency and depth of mailing list
+discussions, as well as better participation and diversity of opinion compared
+to last year.
+
+- dev@beam.apache.org
+  - 501 subscribers (up 28 in the last 3 months).
+  - 1595 emails sent to list (1452 in previous quarter).
+
+- user@beam.apache.org
+  - 530 subscribers (up 36 in the last 3 months).
+  - 503 emails sent to list (456 in previous quarter).
+
+## JIRA activity:
+
+Whereas JIRA activity was going down for a few quarters, it is great to report
+that we&rsquo;ve turned the trend back upwards.
+
+- 507 JIRA tickets created in the last 3 months (449 in the previous quarter).
+- 324 JIRA tickets closed/resolved in the last 3 months (171 in the previous
+  quarter).</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#attachment-I">2017-12-20</a> &mdash; Davor Bonaci<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+There are no issues that require the Board's attention at this time.
+
+While the project is doing well, I do want to point out that for the first
+time there have been some departures from the community as noted in the Health
+report below. This is to be expected with projects of this size and requires
+no Board attention at this time.
+
+## Activity:
+
+This month we are celebrating the one year anniversary of becoming a top-level
+project. Over the past year, the project has grown substantially, crossing 200
+lifetime individual contributors, and nearing 500 mailing list subscribers.
+The project published 7 releases, including a major one, version 2.0.0, the
+first release that comes with an API stability promise.
+
+In this quarter, the main technical focus continues to be on the portability
+framework, and its adoption across all components of the project, which would,
+among other benefits, extend the Python SDK to all Beam runners. A sizeable
+portion of the community is working on this effort.
+
+An SDK for Go has been contributed/donated to the project by Google, after
+design and initial development stage outside of the community. The project has
+accepted this contribution, and it is currently managed as a new component in
+a feature branch. Hopefully, with community involvement, the component can be
+merged into master sometime next year.
+
+As usual, the project kept interconnecting additional execution engines and
+data storage/messaging systems, and serves as a glue in the ecosystem. On the
+execution side, runners for JStorm, Apache Hadoop MapReduce, Apache Samza and
+Apache Tez are being prototyped in feature branches, but without too much
+recent activity. The Spark runner migration from Apache Spark 1.6 to 2.x is
+nearing completion. On the IO connector side, the healthy growth continues,
+with new connectors being contributed month-over-month (Redis, RabbitMQ, and
+others).
+
+Out of the major discussions that affect the future of the project, it is
+worth noting the following discussions:
+- Continuing to support Java 7 vs. requiring users to upgrade to Java 8 in a
+  future release.
+- Continuing to support Apache Spark 1.6 vs. requiring users to have a Spark
+  2.x cluster.
+- Switching the build system from Apache Maven to Gradle.
+
+In all three cases, the majority preference seem to be trending towards
+upgrading, but with varying degrees of opposing opinion as well.
+
+With respect to outreach, there have been no blog posts or press releases this
+quarter. Beam was featured at Strata Data Conference New York and Singapore,
+QCon San Francisco, as well as several local meetups in the Bay Area, New
+York, London, Singapore, Guadalajara and Stockholm.
+
+Outside the project, IBM launched an Apache Beam runner for IBM Streams as a
+part of their cloud offering.  Enabling users to easily run Beam pipelines on
+IBM Cloud is good for the overall project growth.
+
+Going forward, the main focus should to be on the community growth,
+particularly on the user side using non-proprietary engines. On the technical
+side, the next major milestone is the completion of the portability framework
+across all components of the project.
+
+## Health report:
+
+The community continues to grow steadily, as follows:
+- Lifetime unique contributors grew to 215, with 19 new first-time
+  contributors.
+- Both PMC and committer base grew by 2 members each.
+- Mailing list subscribers/activity continue the healthy growth, with over 40
+  new user@ mailing list subscribers and 50% increase in dev@ email volume.
+- The release cadence continues, albeit significantly slower than before.
+
+The community diversity has decreased somewhat with the departure or
+inactivity of a handful of early PMC members that were community champions.
+The effects are visible in the community tone, behavior and consensus
+building. This is not unexpected for a project of this size and at this point
+in time, but it is something that we will work to regain over the next few
+months.
+
+## PMC changes:
+
+Currently 18 PMC members. Two new PMC members have been added since the last
+report:
+- Isma&euml;l Mej&iacute;a was added to the PMC on Wed Nov 08 2017.
+- Reuven Lax was added to the PMC on Wed Nov 08 2017.
+
+## Committer base changes:
+
+Currently 31 committers. Two new committers have been added since the last
+report:
+- Etienne Chauchot was added as a committer on Wed Nov 08 2017.
+- Melissa Pashniak was added as a committer on Wed Nov 08 2017.
+
+## Releases:
+
+Since the last report, Apache Beam has published one feature release, as well
+as one patch release:
+- 2.2.0 was released on Sat Dec 02 2017.
+- 2.1.1 was released on Fri Sep 22 2017.
+
+Version 2.0.0 was the first release that comes with API stability guarantees.
+Going forward, we expect to publish a release every 2 months.
+
+## Mailing list activity:
+
+Mailing list subscriptions continue to increase modestly, along with the
+healthy increases in the overall email volume. It is worth noting that we saw
+an increase in frequency and depth of mailing list discussions, as well as
+better participation and diversity of opinion compared to the previous
+quarter.
+
+- dev@beam.apache.org
+  - 467 subscribers (up 16 in the last 3 months).
+  - 1499 emails sent to list (934 in previous quarter).
+
+- user@beam.apache.org
+  - 487 subscribers (up 42 in the last 3 months).
+  - 483 emails sent to list (404 in previous quarter).
+
+## JIRA activity:
+
+While JIRA activity continues to be healthy, this is the second quarter with
+decreasing participation. Earlier in the year, when the community was working
+towards the first stable release, we had 650 resolved issues in the quarter,
+falling first to 278, and now dropping to 171. Going forward, this is an area
+for improvement for the community, as we make sure to hear user feedback.
+
+- 449 JIRA tickets created in the last 3 months (505 in the previous quarter).
+- 171 JIRA tickets closed/resolved in the last 3 months (278 in the previous
+  quarter).</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-J">2017-09-20</a> &mdash; Davor Bonaci<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+There are no issues that require the Board's attention at this time.
+
+## Activity:
+
+In the previous quarter, we had achieved a major milestone for the project --
+the completion of the first stable release, version 2.0.0. It signified a
+statement from the community that it intends to maintain API stability with
+all releases for the foreseeable future, and making Beam suitable for
+enterprise deployment.
+
+In this quarter, we continued to build on that momentum and kept
+interconnecting additional execution engines and data storage/messaging
+systems, and serve as a glue in the ecosystem. On the execution side, the
+Apache Gearpump (incubating) runner effort has merged into the master branch
+as a new component, and will be included in the next release. JStorm, Apache
+Hadoop MapReduce, and Apache Tez runners are making further progress. The
+Spark runner migration from Apache Spark 1.6 to 2.x is nearing completion.
+
+A major effort to create an SQL extension, based on Apache Calcite, got merged
+into the master branch as a new component, and is slated for the next release.
+
+On the IO connector side, a connector for Apache Solr has been contributed,
+and additional connectors for Redis, Apache DistributedLog (incubating),
+Apache Parquet, RabbitMQ, and Advanced Message Queuing Protocol (AMQP) are in
+progress. Major improvements to file-based connectors have been contributed,
+making them capable of handling dynamic source and sink locations.
+
+We have published two technical blog posts regarding the recent innovation in
+the project:
+- Powerful and modular IO connectors with Splittable DoFn in Apache Beam
+- Timely (and Stateful) Processing with Apache Beam
+
+Beam was covered at several industry conferences over the past quarter,
+including the DataWorks Summit Sydney 2017, Kafka Summit San Francisco 2017,
+YOW! Data Sydney 2017, and Flink Forward Berlin 2017.
+
+Going forward, the main focus continues to be on the user growth, with
+outreach continuing across conferences and meetups. On the technical side, the
+next major milestone is the completion of the portability framework across all
+components of the project, which would, among other benefits, extend the
+Python SDK to all Beam runners.
+
+## Health report:
+
+The community continues to grow steadily, as follows:
+- For the first time since the top-level project was established, we have
+added new PMC members, and have added a record of five new committers in the
+quarter.
+- The number of contributors continues to increase. We are now at 196 unique
+code contributors, up from 176 in the last report.
+- Releases continue at a regular pace of 1-2 months per release.
+- The mailing list subscribers continue to increase.
+
+## PMC changes:
+
+Currently 16 PMC members. Two new PMC members have been added since the last
+report:
+- Ahmet Altay was added to the PMC on Thu Aug 10 2017.
+- Aviem Zur was added to the PMC on Thu Aug 10 2017.
+
+## Committer base changes:
+
+Currently 29 committers. Five new committers have been added since the last
+report:
+- Jingsong Lee was added as a committer on Thu Jun 22 2017.
+- Reuven Lax was added as a committer on Fri Aug 11 2017.
+- James Xu was added as a committer on Fri Aug 11 2017.
+- Mingmin Xu was added as a committer on Fri Aug 11 2017.
+- Manu Zhang was added as a committer on Fri Aug 11 2017.
+
+## Releases:
+
+Since the last report, Apache Beam has published one release with another one
+currently being worked on:
+- 2.1.0 was released on Mon Aug 21 2017.
+- 2.2.0 is being prepared, with an expected publication in September 2017.
+
+Version 2.0.0 was the first release that comes with API stability guarantees.
+Going forward, we expect to publish a release every 1-2 months.
+
+## Mailing list activity:
+
+Mailing list subscriptions continues to increase. The small decrease in the
+email volume is the effect of comparison with the previous quarter, which
+included the major effort of publishing the first stable release.
+
+- dev@beam.apache.org
+  - 451 subscribers (up 26 in the last 3 months).
+  - 1024 emails sent to list (1139 in previous quarter).
+
+- user@beam.apache.org
+  - 445 subscribers (up 56 in the last 3 months).
+  - 413 emails sent to list (512 in previous quarter).
+
+## JIRA activity:
+
+JIRA activity continues to be healthy. The small decrease is the effect of
+comparison with the previous quarter, which included the major effort of
+publishing the first stable release.
+
+- 505 JIRA tickets created in the last 3 months (725 in the previous quarter).
+- 278 JIRA tickets closed/resolved in the last 3 months (650 in the previous
+quarter).</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#attachment-H">2017-06-21</a> &mdash; Davor Bonaci<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+There are no issues that require the Board's attention at this time.
+
+## Activity:
+
+We have achieved a major milestone for the project -- the completion of the
+first stable release, version 2.0.0. It signifies a statement from the
+community that it intends to maintain API stability with all releases for the
+foreseeable future, and making Beam suitable for enterprise deployment.
+Additionally, version 2.0.0 improves user experience across the project,
+focusing on seamless portability across execution environments, including
+engines, operating systems, on-premise clusters, cloud providers, and data
+storage systems.
+
+Beam continues to interconnect additional execution engines and data
+storage/messaging systems, and serves as a glue in the ecosystem. On the
+execution side, the work continues on the Apache Gearpump (incubating) runner,
+and a new effort on the JStorm runner has started. On the IO connector side,
+connectors for Apache Cassandra and Apache Hive&rsquo;s HCatalog have been
+contributed, and additional connectors for Redis, Apache DistributedLog
+(incubating), Apache Solr, Apache Parquet, RabbitMQ, and Advanced Message
+Queuing Protocol (AMQP) are in progress. Finally, we have started a major
+effort to create a SQL extension, based on Apache Calcite.
+
+We have published a press release and a blog post regarding the first stable
+release:
+- https://blogs.apache.org/foundation/entry/the-apache-software-foundation-
+  announces12
+- https://beam.apache.org/blog/2017/05/17/beam-first-stable-release.html
+We have also refreshed the design of our website.
+
+Beam was covered at seven major industry conferences over the past quarter,
+including the "Apache: Big Data" conference in Miami, FL, where we have had 4
+talks, a birds-of-a-feather session and a social event. Additionally, we
+organized the first meetup in the Bay Area, hosted by Hortonworks and Future
+of Data.
+
+Going forward, the main focus continues to be on the user growth, with
+outreach continuing across conferences and meetups. On the technical side, the
+next major milestone is the completion of the portability framework across all
+components of the project, which would, among other benefits, extend Python
+SDK to all Beam runners.
+
+## Health report:
+
+The community continues to grow steadily, as follows:
+- The number of contributors continues to increase. We are now at 179 unique
+  code contributors, with 76 individuals contributing to the latest release
+  alone (which spanned less than 2 months).
+- Releases continue at a regular pace of 1-2 months per release.
+- The activity on the user@ mailing list more than doubled.
+
+## PMC changes:
+
+Currently 14 PMC members. No new PMC members have been added since graduation
+six months ago.
+
+We are watching for potential new PMC members.
+
+## Committer base changes:
+
+Currently 24 committers. Four new committers have been added since the last
+report:
+- Aviem Zur was added as a committer on Fri Mar 17 2017.
+- Chamikara Jayalath was added as a committer on Fri Mar 17 2017.
+- Isma&euml;l Mej&iacute;a was added as a committer on Fri Mar 17 2017.
+- Eugene Kirpichov was added as a committer on Fri Mar 17 2017.
+
+## Releases:
+
+Since the last report, Apache Beam has published two releases:
+- 0.6.0 was released on Mon Mar 13 2017.
+- 2.0.0 was released on Mon May 15 2017.
+
+Version 2.0.0 is the first release that comes with API stability guarantees.
+Going forward, we expect to publish a release every 1-2 months.
+
+## Mailing list activity:
+
+Mailing list activity continues to increase across all metrics, with the
+number of user@ emails more than doubling compared to the previous quarter.
+
+- dev@beam.apache.org
+  - 424 subscribers (up 63 in the last 3 months).
+  - 1162 emails sent to list (1094 in previous quarter).
+
+- user@beam.apache.org
+  - 384 subscribers (up 73 in the last 3 months).
+  - 547 emails sent to list (250 in previous quarter).
+
+## JIRA activity:
+
+JIRA activity continues to increase across all metrics, with the number of
+resolved issues nearly doubling.
+
+- 725 JIRA tickets created in the last 3 months (542 in the previous quarter).
+- 650 JIRA tickets closed/resolved in the last 3 months (347 in the previous
+  quarter).</pre>
+<h3 id="2017-03-15"><a href="2017/board_minutes_2017_03_15.html#attachment-G">2017-03-15</a> &mdash; Davor Bonaci<a class="headerlink" href="#2017-03-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+There are no issues that require the Board's attention at this time.
+
+## Activity:
+
+Apache Beam was established as a top-level project at December&rsquo;s Board
+meeting. This is the third in the series of three consecutive monthly reports
+for new projects.
+
+Since last month's report, we have started work on the next release, version
+0.6.0. This will be the first release with the new Python SDK, a highly
+anticipated component that opens up a new user community. Pipelines built with
+Python SDK currently run on a limited number of runners, but work is ongoing
+to extend runner support.
+
+Beam continues to interconnect additional execution engines and data
+storage/messaging systems. Since the last report, IO connector for Apache
+HBase has been contributed, and additional connectors for Redis, Apache
+Cassandra, Apache DistributedLog, Apache Parquet, Apache Solr, RabbitMQ, and
+Advanced Message Queuing Protocol (AMQP) are in progress. The work has resumed
+on the Apache Gearpump (incubating) runner.
+
+Going forward, the main focus continues to be on the community growth,
+particularly users. Beam will be covered at 6 major conferences over the next
+2 months, including 2 talks and a tutorial at the upcoming Apache: Big Data
+North America 2017 conference.
+
+On the technical side, the next major milestone is the availability of the
+first stable release, which will include backward-compatibility guarantees.
+This stabilization effort has started recently.
+
+## Health report:
+
+The community continues to grow steadily, as follows:
+
+- The number of contributors continues to increase.
+- Releases continue at a regular pace of 1-1.5 months per release.
+- Mailing list activity continues to increase significantly.
+
+## PMC changes:
+
+Currently 14 PMC members. No new PMC members have been added since graduation
+three months ago.
+
+## Committer base changes:
+
+Currently 20 committers. Three new committers have been added since
+graduation:
+
+- Ahmet Altay was added as a committer on Tue Jan 31 2017.
+- Pei He was added as a committer on Tue Jan 31 2017.
+- Stas Levin was added as a committer on Tue Jan 31 2017.
+
+## Releases:
+
+In the two months following graduation, Apache Beam has published two
+releases:
+
+- 0.4.0 was released on Sun Jan 01 2017.
+- 0.5.0 was released on Mon Feb 06 2017.
+
+In addition, the 0.6.0 release is in progress.
+
+## Mailing list activity:
+
+Mailing list activity continues to increase across all metrics.
+
+- dev@beam.apache.org
+- 351 subscribers (up 60 in the last 3 months)
+- 1161 emails sent to list (866 in previous quarter)
+
+- user@beam.apache.org
+- 298 subscribers (up 58 in the last 3 months)
+- 282 emails sent to list (241 in previous quarter)
+
+## JIRA activity:
+
+- 542 JIRA tickets created in the last 3 months
+- 347 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-02-27"><a href="2017/board_minutes_2017_02_27.html#attachment-F">2017-02-27</a> &mdash; Davor Bonaci<a class="headerlink" href="#2017-02-27" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+There are no issues that require the Board's attention at this time.
+
+## Activity:
+
+Apache Beam was established as a top-level project at December&rsquo;s Board
+meeting. This is the second in the series of three consecutive monthly reports
+for new projects.
+
+Since last month's report, we have:
+- published the second post-graduation release, version 0.5.0,
+- added 3 new committers from two different organizations,
+- promoted the Python SDK to the master branch with support for two runners.
+
+Over the last month, Apache Beam graduation has been covered in more than a
+dozen technical publications and received endorsements from multiple
+organizations.
+
+Beam continues to interconnect additional execution engines and data
+storage/messaging systems. Since the last report, IO connectors for
+Elasticsearch and MQ Telemetry Transport have been released, and additional
+connectors for Redis, Apache Cassandra, Apache DistributedLog, Apache Parquet,
+RabbitMQ, and Advanced Message Queuing Protocol (AMQP) are in progress.
+
+Going forward, the main focus continues to be on the community growth. On the
+technical side, the next major milestone is the availability of the first
+stable release, which will include backward-compatibility guarantees.
+
+## Health report:
+
+The community continues to grow steadily, as follows:
+- The number of contributors continues to increase.
+- Releases continue at a regular pace of 1-1.5 months per release.
+- Mailing list activity continues to increase significantly.
+
+## PMC changes:
+
+Currently 14 PMC members. No new PMC members have been added since graduation
+two months ago.
+
+## Committer base changes:
+
+Currently 20 committers. Three new committers have been added in the last
+month:
+- Ahmet Altay was added as a committer on Tue Jan 31 2017.
+- Pei He was added as a committer on Tue Jan 31 2017.
+- Stas Levin was added as a committer on Tue Jan 31 2017.
+
+## Releases:
+
+In the two months following graduation, Apache Beam has published two
+releases:
+- 0.4.0 was released on Sun Jan 01 2017.
+- 0.5.0 was released on Mon Feb 06 2017.
+
+## Mailing list activity:
+
+Mailing list activity continues to increase across all metrics.
+
+- dev@beam.apache.org
+- 332 subscribers (up 56 in the last 3 months)
+- 1032 emails sent to list (762 in previous quarter)
+
+- user@beam.apache.org
+- 276 subscribers (up 50 in the last 3 months)
+- 301 emails sent to list (203 in previous quarter)
+
+## JIRA activity:
+
+- 481 JIRA tickets created in the last 3 months
+- 322 JIRA tickets closed/resolved in the last 3 months
+
+## Appendix:
+
+More details about graduation media coverage are available in the &ldquo;media
+recap&rdquo; blog post:
+https://beam.apache.org/blog/2017/02/01/graduation-media-recap.html</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#attachment-M">2017-01-18</a> &mdash; Davor Bonaci<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Beam is a unified programming model for both batch and streaming data
+processing, enabling efficient execution across diverse distributed execution
+engines and providing extensibility points for connecting to different
+technologies and user communities.
+
+## Issues:
+
+There are no issues that require the Board's attention at this time.
+
+## Activity:
+
+Apache Beam was established as a top-level project at last month's Board
+meeting. This is the first in the series of three consecutive monthly reports
+for new projects.
+
+Since becoming a top-level project, we have:
+* completed administrative and infrastructure-related tasks to transition from
+  a podling to a TLP,
+* published the press release and a follow-up blog,
+* published the first non-incubating release, version 0.4.0.
+
+In addition, since the last report, we have participated in major conferences
+and meetups, including:
+* presented at Apache: Big Data Europe 2016 and ApacheCon's Podling Shark
+  Tank, as well as and the Birds of Feather session,
+* presented at QCon San Francisco 2016,
+* presented at Strata + Hadoop World Singapore 2016, along with a hands-on
+  Beam tutorial,
+* co-organized a meetup with an Apache Apex user group, and presented at
+  another meetup.
+
+Beam continues to interconnect additional execution engines and data
+storage/messaging systems. Since the last report, a runner for Apache Apex was
+merged from a feature branch and released, and IO connectors for Elasticsearch
+and MQ Telemetry Transport have been contributed.
+
+Going forward, the main focus continues to be on community growth. On the
+technical side, the next major milestone is the availability of the first
+stable release, which will include backward-compatibility guarantees.
+
+## Health report:
+
+The community continues to grow steadily, as follows:
+* The number of contributors continues to increase, with an expectation of
+  additional committers in the near future.
+* Releases continue at a regular pace of 1-1.5 months per release.
+* Mailing list activity continues to increase, with some metrics doubling
+  quarter-over-quarter (see below).
+
+## PMC changes:
+
+Currently 14 PMC members. No new PMC members have been added since graduation
+a month ago.
+
+## Committer base changes:
+
+Currently 17 committers. No new committers have been added since graduation a
+month ago.
+
+## Releases:
+
+The first post-graduation release, version 0.4.0, was published on January 1,
+2017.
+
+## Mailing list activity:
+
+Mailing list activity continues to increase, with some metrics doubling
+quarter-over-quarter.
+
+- dev@beam.apache.org:
+   - 310 subscribers (up 49 in the last 3 months)
+   - 1079 emails sent to list (519 in previous quarter)
+
+- user@beam.apache.org:
+   - 261 subscribers (up 54 in the last 3 months)
+   - 231 emails sent to list (246 in previous quarter)
+
+## JIRA activity:
+
+- 512 JIRA tickets created in the last 3 months
+- 338 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#beam">2016-11-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>Apache Beam is an open source, unified model and set of language-specific
+SDKs for defining and executing data processing workflows, and also data
+ingestion and integration flows, supporting Enterprise Integration Patterns
+(EIPs) and Domain Specific Languages (DSLs). Beam pipelines simplify the
+mechanics of large-scale batch and streaming data processing and can run on
+a number of runtimes such as Apache Flink, Apache Gearpump, Apache Apex,
+Apache Spark, and Google Cloud Dataflow. Beam also brings SDKs in different
+languages, allowing users to easily implement their data integration
+processes.
+
+Beam has been incubating since 2016-02-01.
+
+The most important issue to address in the move towards graduation:
+
+1. Make it easier for the Beam community to to learn, use, and grow by
+   expanding and improving the Beam documentation, code samples, and the
+   website
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+None.
+
+How has the community developed since the last report?
+
+* 441 closed/merged pull requests
+* High engagement on dev and user mailing lists (742 / 179 messages)
+* Several public talks, articles, and videos including:
+  - @Scale San Jose (&ldquo;No shard left behind: APIs for massive parallel
+    efficiency in Apache Beam&rdquo;)
+  - Strata + Hadoop World NYC (&ldquo;Learn stream processing with Apache Beam&rdquo;)
+  - Paris Spark Meetup (&ldquo;Introduction to Apache Beam&rdquo;)
+  - Hadoop Summit Melbourne (&ldquo;Stream/Batch processing portable across
+    on-prem (Spark, Flink) and Cloud with Apache Beam&rdquo;)
+  - Hadoop User Group Taipei (&ldquo;Stream Processing with Beam and Google Cloud
+    Dataflow&rdquo;)
+  - Data Science Lab London (&ldquo;Apache Beam: Stream and Batch Processing;
+    Unified and Portable!&rdquo;)
+
+How has the project developed since the last report?
+
+Major developments on the project since last report include the following:
+
+* Second and third incubating release (0.2.0 and 0.3.0) and a release
+  guide [1]
+* New DirectRunner support for testing streaming pipelines[2]
+* Continued improvements to the Flink, Spark, and Dataflow runners
+* Added support for new IO connectors, including MongoDB, Kinesis, and JDBC
+  with Cassandra, MQTT support pending in pull requests
+* Addition of the Apache Apex runner on a feature branch, and continued
+  work on the Apache Gearpump runner and Python SDK feature branches. [3]
+* Continued reorganization and refactoring of the project
+* Continued improvements to documentation and testing
+
+[1]: http://beam.incubator.apache.org/contribute/release-guide/
+[2]: http://beam.incubator.apache.org/blog/2016/10/20/test-stream.html
+[3]: http://beam.incubator.apache.org/contribute/work-in-progress/#feature-branches
+
+Dates of last releases:
+
+* 2016/08/07 - 0.2.0-incubating
+* 2016/10/31 - 0.3.0-incubating
+
+When were the last committers or PMC members elected?
+
+The following committers were elected on 2016/10/20:
+
+* Thomas Weise
+* Jesse Anderson
+* Thomas Groh
+
+Signed-off-by:
+[X](beam) Jean-Baptiste Onofr&eacute;
+[ ](beam) Venkatesh Seetharam
+[ ](beam) Ted Dunning</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#beam">2016-08-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>Apache Beam is an open source, unified model and set of language-specific SDKs
+for defining and executing data processing workflows, and also data ingestion
+and integration flows, supporting Enterprise Integration Patterns
+(EIPs) and Domain Specific Languages (DSLs). Beam pipelines simplify the
+mechanics of large-scale batch and streaming data processing and can run on a
+number of runtimes such as Apache Flink, Apache Gearpump, Apache Spark, and
+Google Cloud Dataflow (a cloud service). Beam also brings SDKs in different
+languages, allowing users to easily implement their data integration
+processes.
+
+Beam has been incubating since 2016-02-01.
+
+Three most important issues to address in the move towards graduation:
+
+1. Additional and continued Beam releases
+2. Grow the community of Beam users and contributors
+3. Add to and improve upon documentation, code samples, and project
+   website
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of? None.
+
+How has the community developed since the last report?
+
+* 425 closed/merged pull requests
+* High engagement on dev and user mailing lists (590 / 455 messages)
+* Several public talks, articles, and videos including:
+* Hadoop Summit San Jose ("Apache Beam: A Unified Model for Batch and
+  Streaming Data Processing" &amp; "The Next Generation of Data Processing &amp;
+  OSS")
+* O&rsquo;Reilly &amp; The New Stack ("Future-proof and scale-proof your code")
+* QCon NY ("Apache Beam: The Case for Unifying Streaming API's")
+* JBCN Barcelona ("Introduction to Apache Beam")
+
+How has the project developed since the last report?
+
+Major developments on the project since last report include the following:
+
+* First incubating release (0.1.0-incubating)
+* Second incubating release (0.2.0-incubating)
+* Addition of Apache Beam Python SDK
+* Addition of the Apache Gearpump runner
+* Added support for writing to Apache Kafka clusters
+* Added support for reading from and writing to Java Message Services,
+  including Apache ActiveMQ, GeronimoJMS, and RabbitMQ
+* Ratified new Beam model APIs to improve efficiency and failure handling:
+  DoFn setup, teardown, and reuse
+* Optimized key components such as data serialization and shuffle
+* Continued improvements to the Flink, Spark, and Dataflow runners
+* Continued reorganization and refactoring of the project
+* Continued improvements to documentation and testing
+
+Date of last release:
+
+* 2016/06/15 - 0.1.0-incubating
+* 2016/08/08 - 0.2.0-incubating)
+
+When were the last committers or PMC members elected?
+
+N/A - no changes since last report.
+
+Signed-off-by:
+
+[X](beam) Jean-Baptiste Onofre
+[ ](beam) Venkatesh Seetharam
+[X](beam) Bertrand Delacretaz
+[X](beam) Ted Dunning</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#beam">2016-05-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>Apache Beam is an open source, unified model and set of language-specific SDKs
+for defining and executing data processing workflows, and also data ingestion
+and integration flows, supporting Enterprise Integration Patterns
+(EIPs) and Domain Specific Languages (DSLs). Dataflow pipelines simplify the
+mechanics of large-scale batch and streaming data processing and can run on a
+number of runtimes like Apache Flink, Apache Spark, and Google Cloud Dataflow
+(a cloud service). Beam also brings DSL in different languages, allowing users
+to easily implement their data integration processes.
+
+Beam has been incubating since 2016-02-01.
+
+Three most important issues to address in the move towards graduation:
+
+1. Continued releases
+2. Grow up user and contributor communities
+3. Improve and extend documentation and samples on the website
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+None
+
+How has the community developed since the last report?
+
+* Both user and dev mailing lists activity increased
+* We sustain a high level of activity on the pull request cycles (submit,
+  review, ...)
+
+How has the project developed since the last report?
+
+* All resources have been created (website, Jira, git &amp; github mirror, ...)
+* The code donation has been completed
+* The website has been published, we are still in the process of donated
+  documentation and samples resources
+* We renamed all package to match the Apache convention
+* We started the re-organization and refactoring of the project structure
+  (isolating and moving some modules)
+
+Date of last release:
+
+N/A
+
+When were the last committers or PMC members elected?
+
+N/A
+
+Signed-off-by:
+
+[X](beam) Jean-Baptiste Onofre
+[X](beam) Jim Jagielski
+[X](beam) Venkatesh Seetharam
+[ ](beam) Bertrand Delacretaz
+[X](beam) Ted Dunning</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

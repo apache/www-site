@@ -1,0 +1,2722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Helix | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Helix';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Helix';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Helix</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="helix">Helix<a class="headerlink" href="#helix" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-10-19</td>
+<td><a href="2022/board_minutes_2022_10_19.html#section-7A">Appointed Junkai Xue</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2013-12-18</td>
+<td><a href="2013/board_minutes_2013_12_18.html#section-7A">Appointed Kishore Gopalakrishna</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2013-12-18</td>
+<td><a href="2013/board_minutes_2013_12_18.html#section-7A">Establish the Apache Helix Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-AF">2026-06-17</a> &mdash; Junkai Xue<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: Ongoing, Low
+Issues for the board: N/A
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (12 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 2.0.0 was released on 2026-06-03
+- 1.3.2 was released on 2025-07-02
+- 1.4.3 was release on 2025-01-29
+
+## Community Health:
+- Apache Helix 2.0.0 release out: finally released Apache Helix 2.0.0 including
+major feature change gateway for language agnostic support. Also removed risky
+and deprecated UI components.
+
+- Repo stabilization: Apache Helix main branch tests has been stabilized with
+several fixes and rewrite of test cases.
+
+- Glasswing scan: project requested glasswing scan and reviewing the security
+mode.
+
+- Light weighted Helix library (Tendril): plan to start this project to have
+better support and K8s native based shard management. But need to consider
+whether still have active committers to perform it.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-AH">2026-03-18</a> &mdash; Junkai Xue<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: moderate, ongoing
+Issues for the board: N/A
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (12 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 1.3.2 was released on 2025-08-29
+- 1.4.3 was released on 2025-02-04
+
+## Community Health:
+- Final round of 2.0 pre release:
+Helix 2.0 code are feature completed and tested. Before 2.0 release,
+there are recent fixings for unstable tests from 50% pass rate to 80%
+(latest 10 CIs on main branch).
+
+- Potential 1.3.x release
+Seemed to be a lot of users staying with 1.3.x. There are recent bug fix
+PRs preferred to backport to 1.3.x. If more people asks, 1.3.x releases
+ will perform.
+
+- More new contributors
+Observing more contributors from users point view trying Helix. Activities
+increased a lot comparing as before.
+
+- Light weight helix-tendril project in planning
+Once 2.0 release is done. A light weighed Helix management lib should be started
+with development.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-AI">2025-12-17</a> &mdash; Junkai Xue<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: Low, Ongoing
+Issues for the board: N/A
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (12 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 1.3.2 was released on 2025-08-29
+- 1.4.3 was released on 2025-02-04
+- 1.4.2 was released on 2024-12-07
+
+## Community Health:
+- The Apache Helix Gateway Service has been tested and merged
+into the main branch. It is language-agnostic and serves as a
+modern sharding solution for containerized environments. Documentation
+and tutorials are in progress.
+
+- The Apache 2.0 release is targeted for the first quarter of 2026.
+This release will include major gateway features and the removal of
+several deprecated components.
+
+- With many major contributors on holiday, development velocity has
+slowed.
+
+- Additionally, most new contributors are coming from the same company.
+Apache Helix PMCs and Committers are working to maintain feature quality,
+as some recent check-ins have introduced issues and did not adhere to
+coding standards.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-AH">2025-09-24</a> &mdash; Junkai Xue<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: Ongoing with moderate/low activity.
+Issues for the board: N/A
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (12 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 1.3.2 was released on 2025-07-02.
+- 1.4.3 was released on 2024-02-04.
+- 1.4.2 was released on 2024-11-28.
+
+## Community Health:
+- Apache 2.0 final testing: there was a performance testing result lost.
+Before merge the code to main branch, would like to perform the testing
+in a reasonable environment again. Looking for release Apache Helix 2.0
+by end of 2025.
+
+- Minor bug fixings for several other open source projects such as: Venice,
+Apache Pinot.
+
+- Revisiting the major feature for cloud support: virtual topology grouping
+ collaborating users to enhance the feature.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-AC">2025-06-18</a> &mdash; Junkai Xue<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: Nothing
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (11 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+ - 1.4.3 was release 2025-01-28
+ - 1.4.2 was release 2024-11-18
+
+## Community Health:
+ Two major items the community are working on:
+1. Helix 2.0 release: Helix 2.0 features are completed in development. The
+tests were performed. Waiting for final walk through then merge to main
+branch. Target to release in July.
+
+2. Usability and stability improvements: a couple of usability and stability
+improvements are in reviewing including test fixing, npe avoidance and etc.
+
+3. Seeing more new contributors start investigating Helix codebase.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-AB">2025-03-19</a> &mdash; Junkai Xue<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: Ongoing, Moderate
+Issues for the board: no issues
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (11 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 1.4.3 was released on 2025-02-04
+- 1.4.2 was released on 2024-12-27
+- 1.4.1 was released on 2024-09-23
+- 1.4.0 was released on 2024-06-21
+
+## Community Health:
+
+Recently, the changes are majorly focusing on improving stability and
+reliability of Helix. Release 1.4.3 are critical fixes that impact
+other Apache projects, such as Apache Pinot.
+
+Major projects for Helix 2.0 is still under development. Instead of supporting
+language agnostic. We also plan to support following two directions:
+1. Expand integration for modern cloud from only Azure to AWS.
+2. Provides a more lightweight version of Helix component for simple sharding
+usecases for easy usage and better performance.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-AB">2024-12-18</a> &mdash; Junkai Xue<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: Ongoing, Moderate
+Issues for the board: No major issue.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (11 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 1.4.2 was released on 2024-11-28
+- 1.4.1 was released on 2024-09-23
+- 1.4.0 was released on 2024-06-21
+- 1.3.1 was released on 2023-09-28
+
+## Community Health:
+- Two more releases for Helix:
+1) 1.4.1 for minor fixes.
+2) 1.4.2 contains the new metadata clients with advanced features.
+
+- Helix 2.0: Helix 2.0 stage 1 features development done. The testing
+is in progress. When it is ready, it will merge into main branch and
+release. Target for Jan 2025.
+
+- Stage 2 discussion will be started. Proposing to have a library based
+more light weighted shard management sharing same placement algorithms
+and better performance. Leave more flexibility to users.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-AB">2024-09-18</a> &mdash; Junkai Xue<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: ongoing, active
+Issues for the board: no issues for board attention
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (11 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 1.4.0 was released on 2024-06-21
+- 1.3.1 was released on 2023-09-28
+- 1.3.0 was released on 2023-07-25
+
+## Community Health:
+
+- New initiative of Helix 2.0: Helix 2.0 project was proposed and started. The
+development work is in progress. The overall proposal is here
+[https://github.com/apache/helix/wiki/Apache-Helix-2.0-Overview]. In phase 1, we
+plan to support a gateway service for multi-language users.
+
+- Improvement on Helix scheduling algorithms planned along with Helix 2.0
+
+- helix-front and helix-webapp were sunset and will be removed in 2.0 release.
+
+- 10+ unstable tests have been fixed to stable the CI testing.
+
+- Issues reduced from 76 to 28 to keep important issues.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-AC">2024-06-19</a> &mdash; Junkai Xue<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: ongoing, moderate
+Issues for the board: no major issue.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (10 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 1.4.0 is in progress and plan to release on June
+- 1.3.1 was released on 2023-09-18
+- 1.3.0 was released on 2023-07-25
+- 1.2.0 was released on 2023-05-02
+- 1.1.0 was released on 2023-01-04
+
+## Community Health:
+- One discussion still in the dev channel is deprecating helix-front, which
+is the UI support. As Helix has limited UI expert and CVE usually comes from
+this component.
+
+- Recent dev work focus on container based support such as redefining instance
+operation types.
+
+- Helix 2.0 topic will be raised up for boarder discussion. High level direction
+is to 1) simplify Helix APIs for usage 2) multi language support and 3) better
+flexibility and data model for better performance.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-AF">2024-03-20</a> &mdash; Junkai Xue<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: ongoing, moderate
+Issues for the board: Limited UI experts for UI support.
+Due to role of product and lack of experts in UI, we are thinking of deprecating
+UI support.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (10 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+ - 1.3.1 was released on 2023-09-28
+ - 1.3.0 was released on 2023-07-25
+ - 1.2.0 was released on 2023-05-02
+ - 1.1.0 was released on 2023-01-04.
+ - 1.0.4 was released on 2022-06-09.
+
+## Community Health:
+Overall activities:
+- 82 commits in the past quarter.(12% increase)
+- 14 code contributors in the past quarter (16% increase)
+- Closed all issues which have not updated from 2022 as they are either
+non-critical or even logic outdated.
+
+Would like to share some update for following topics:
+1. Release
+Current release is onholding for completion of the feature. The feature was
+supporting operations in Helix like draining partitions, 1-1 instance swaps.
+We would like to give user an unified experience in API instead of breaking
+things in the middle. Some changes will be completed in this quarter and move
+forward for releasing.
+
+2. UI issues
+We do encounter an problem mentioned in issue section. We had limited
+contributors in UI. And ALL CVE issues are coming from UI. It is hard for
+us to maintain the UI. In addition, UI is just a nice to have product. We
+are thinking to deprecate the support.
+
+3. Next gen of shard management
+Existing Helix is heavy and complicated. It is not user friendly to most of
+lightweight use cases. We are in planning of proposing some lightweight version
+in Helix and making sure it converging with Helix with leverage.
+
+4. Other continuous improvments
+- Fixing unstable tests
+- Adding container world support features and so on.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#attachment-AF">2023-12-20</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: ongoing, moderate
+Issues for the board: no major issue.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (10 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Molly Gao on 2023-06-06.
+
+## Project Activity:
+- 1.3.1 was released on 2023-09-28
+- 1.3.0 was released on 2023-07-25
+
+
+## Community Health:
+Recently, Helix finished two projects:
+1. Instance evacuate support: gracefully bootstrap data to new instances and
+remove the partition from the old one.
+2. Swap instance support: smoothly bootstrapping all replicas to new instance
+and deprecate the old instance, which is transparent to user.
+
+Additionally, there are several ongoing discussion about Helix logging in Helix
+slack channel.
+
+For next quarter, continuously improvement on evacuate need to be done:
+1. Standardize the operation states including evacuate, disable and etc.
+2. Transactionally get evacuated partition assignment align with eventual
+assignment to avoid multi round shuffling.
+
+A new release of 1.4.0 will come soon.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-AF">2023-09-20</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: ongoing, moderate
+Issues for the board: no major issue.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (10 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- Molly Gao was added as committer on 2023-06-06
+
+## Project Activity:
+- 1.3.0 was released on 2023-07-25
+- 1.2.0 was released on 2023-05-02
+- 1.1.0 was released on 2023-01-04
+
+## Community Health:
+The better operability improvement project is in the progress:
+1. Ondemand partition rebalance - completed
+2. Node evacuation partition from a target node - completed
+3. Node 1:1 partition swapping - in progress
+
+Next target for the coming quarter:
+The Helix REST have management API for users to do fleet management,
+including health check, customized check, parallel instance pre stop, etc.
+But now the REST has performance issue with fanout querying Zookeeper. It can
+lead regular shard management to slow reading ZK data.
+
+Concrete target:
+1. Improve Helix REST service with caching + ZK notification
+2. Improve management APIs usability including cross fault zone parallel
+pre instance stop, more flexible customized check.
+3. Node auto populate toplogical information.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-CP">2023-08-16</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: ongoing, moderate
+
+## Issues for the board: no major issue.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (10 years ago) There are currently 28
+committers and 18 PMC members in this project. The Committer-to-PMC ratio is
+roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- Molly Gao was added as committer on 2023-06-06
+- Quincy Qu was added as committer on 2023-05-19
+
+## Project Activity:
+- 1.3.0 was released on 2023-07-25
+- 1.2.0 was released on 2023-05-02
+- 1.1.0 was released on 2023-01-04
+
+## Community Health:
+We finished a project supporting generic metadata client, which is API
+backward compatible with Zookeeper (released in 1.3.0). The motivation to
+support this project is to let Helix can use any customized underneath storage
+with certain APIs implementation due to Zookeeper performance limitation.
+
+Related data: 182 commits in the past quarter (59% increase) 16 code
+contributors in the past quarter (33% increase)
+
+At the same time, we are actively fixing unstable tests with closing CI
+triggered tickets creation.
+
+Related data: 76 issues closed on GitHub, past quarter (181% increase)
+dev@helix.apache.org had a 25% increase in traffic in the past quarter
+
+The next focus is the operation optimization asked from Apache helix slack
+channel including:
+1. Node smooth evacuating partitions.
+2. 1 to 1 partition movements from old node to new node. All these two
+   operations respect the N -&gt; N + 1 -&gt; N replicas rule.
+
+------------------------------------------------------
+End of minutes for the August 16, 2023 board meeting.</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#attachment-CC">2023-07-19</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: ongoing, moderate
+Issues for the board: no major issue
+
+As the board is interested in more details, here is what Helix targeted
+recently: Helix is the framework focusing on managing large data systems. When
+the data onboards cloud, more container maintenance/deployment can lead Helix
+to believe instances lost. Active moving around partition data is not a proper
+solution. Helix now is trying to build a smart solution to guarantee data
+movement smooth
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (10 years ago)
+There are currently 28 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- Molly Gao was added as committer on 2023-06-06
+- Quincy Qu was added as committer on 2023-05-19
+
+## Project Activity:
+- 1.2.0 was released on 2023-05-02
+- 1.1.0 was released on 2023-01-04.
+- 1.0.4 was released on 2022-06-09.
+
+## Community Health:
+Helix has three major tasks:
+1. Stabilize the integration test. So we saw see the CI failure rate going
+   down 212 commits in the past quarter (216% increase) 14 code contributors
+   in the past quarter (40% increase)
+
+2. More discussion from users actually in Helix slack. We got several
+   questions from some company teams such as Uber, Pinterest.
+
+3. Cloud support development. As mentioned above, Helix is trying to develop a
+   smart partition movement. Helix will bootstrap a new replica to a new
+   assigned instance. Once it bootstrapped, Helix started dropping the old
+   one. This require a lot of effort since we need to handle different edge
+   cases and rearchitect parts of Helix. Related to this, we have several
+   items: 1) fix N replica -&gt; N + 1 issue 2) support one stop operation to
+   evacuate host and 3) support better deployment delay on partition movement.
+
+------------------------------------------------------
+End of minutes for the July 19, 2023 board meeting.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-AI">2023-06-21</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board:
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (9 years ago)
+There are currently 27 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- Molly Gao was added as committer on 2023-06-06
+
+## Project Activity:
+- 1.2.0 was released on 2023-05-02
+- 1.1.0 was released on 2023-01-04.
+- 1.0.4 was released on 2022-06-09.
+
+## Community Health:
+- 89 PRs opened on GitHub, past quarter (58% increase)
+  91 PRs closed on GitHub, past quarter (68% increase)
+  172 commits in the past quarter (117% increase)
+
+  Helix recently done with branch development of multi quarter project,
+  Metaclient. It generalized the store from Zookeeper expanding to other
+  potential better solutions.
+
+- Next quarter, we will focus on improving the multi dimension assignment
+  with better performance. And will start thinking about container management
+  integration proposal.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-AB">2023-05-17</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+Discussion the possibility of making helix-ui to a separate repo.
+
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (9 years ago)
+There are currently 26 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jiajun Wang on 2022-11-02.
+- No new committers. Last addition was Xiaoyuan Lu on 2023-01-03.
+- Proposed new committers Quincy Qu and Molly Gao waiting for iCLA
+
+## Project Activity:
+ 1.2.0 was released on 2023-05-02
+ Resolved CVE-2022-47500
+
+## Community Health:
+112 commits in the past quarter (31% increase)
+75 PRs opened on GitHub, past quarter (29% increase)
+73 PRs closed on GitHub, past quarter (37% increase)</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#section-6AH">2023-04-19</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Craig: pursue PMC to elect a new chair</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#section-6AE">2023-03-22</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Craig: pursue a roll call for Helix</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#section-6AE">2023-02-15</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#section-6AG">2023-01-18</a> &mdash; Junkai Xue<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#section-6AH">2022-12-21</a> &mdash; Junkai Xue<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-AH">2022-09-21</a> &mdash; Kishore G<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+- PMC chair change voted and resolution submitted. Need approval from board.
+- Need guidance on non active PMCs. Lack of PMCs for regular release voting.
+
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (9 years ago)
+There are currently 24 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Neal Sun on 2021-10-06.
+
+## Project Activity:
+- 1.0.4 was released on 2022-06-09.
+- Will start new initiative for Apache Helix rearchitect for Helix 2.0
+
+## Community Health:
+- More questions brought from community through email list.23 emails
+- Contribution decreased recently as recent does not have too many issue report.
+- 29 PRs opened on GitHub, past quarter
+- 25 PRs closed on GitHub, past quarter</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-AH">2022-06-15</a> &mdash; Kishore G<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Helix PMC Chair change vote done. New PMC Chair is Junkai Xue.
+Need ASF board's approval.
+
+Apache Helix was founded 2013-12-17 (8 years ago)
+There are currently 24 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Neal Sun on 2021-10-06.
+
+## Project Activity:
+1.0.3 was released on 2022-04-27
+1.0.4 release is on going.
+
+## Community Health:
+103 commits in the past quarter (171% increase)
+19 code contributors in the past quarter (58% increase)
+user@helix.apache.org had a 86% decrease in traffic in the past quarter
+71 PRs opened on GitHub, past quarter (115% increase)
+61 PRs closed on GitHub, past quarter (84% increase)
+67 issues opened on GitHub, past quarter (191% increase)
+33 issues closed on GitHub, past quarter (73% increase)</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-AC">2022-03-16</a> &mdash; Kishore G<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+No existing issues.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (8 years ago)
+There are currently 24 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Neal Sun on 2021-10-06.
+
+## Project Activity:
+Plan to have 1.0.3 release starting from April.
+0.9.10 was released 2021-12.
+
+## Community Health:
+13 code contributors in the past quarter
+30 PRs opened on GitHub, past quarter
+22 issues closed on GitHub, past quarter</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-AI">2021-12-15</a> &mdash; Kishore G<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+No Issue needs attention.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (8 years ago)
+There are currently 24 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- Neal Sun was added as committer on 2021-10-06
+
+## Project Activity:
+1.0.2 was released on 2021-09-02
+0.9.9 was released on 2021-11-21
+
+## Community Health:
+dev@helix.apache.org had a 100% increase in traffic in the past quarter
+7 code contributors in the past quarter (16% increase)
+10 issues closed on GitHub, past quarter</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-AG">2021-09-15</a> &mdash; Kishore G<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+No issues for the board.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (8 years ago)
+There are currently 23 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Meng Zhang on 2021-01-22.
+
+## Project Activity:
+- 1.0.2 was released on 2020-09-01.
+- Deprecating old 0.6.* and 0.7.* releases
+
+## Community Health:
+- Discussion performed normal in open source.
+- The user questions increased recently.
+- Will try to hold another virtual meet up.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-AD">2021-06-16</a> &mdash; Kishore G<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+Working with INFRA team for failure of publishing release snapshot.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (7 years ago)
+There are currently 23 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Meng Zhang on 2021-01-22.
+
+## Project Activity:
+Apache Helix 2021 virtual meet up was hold on 2021-03-04.
+Working on Apache release 1.0.2, which is blocked now.
+
+## Community Health:
+87 commits in the past quarter (102% increase)
+67 PRs opened on GitHub, past quarter (59% increase)
+70 PRs closed on GitHub, past quarter (45% increase)
+user@helix.apache.org had a 84% decrease in traffic in the past quarter</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-AF">2021-03-17</a> &mdash; Kishore G<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (7 years ago)
+There are currently 23 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- Meng Zhang was added as committer on 2021-01-22
+
+## Project Activity:
+Features are keeping in development.
+1.0.2 was release 2020-07-29
+
+## Community Health:
+Apache Helix hold the first meetup in 2021 and more than 30 people joined.
+user@helix.apache.org had a 56% decrease in traffic in the past quarter.</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#attachment-AB">2020-12-16</a> &mdash; Kishore G<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+No obvious issues are observed.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (7 years ago)
+There are currently 22 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Huizhi Lu on 2020-08-04.
+
+## Project Activity:
+0.9,8 was released on 2020-10-19
+0.9.9 release is in progress
+
+## Community Health:
+user@helix.apache.org had a 94% increase
+17 code contributors in the past quarter (13% increase)</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-AC">2020-09-16</a> &mdash; Kishore G<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+No blocking issues.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (7 years ago)
+There are currently 22 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- Ali Reza Zamani was added as committer on 2020-08-03
+- Huizhi Lu was added as committer on 2020-08-04
+
+## Project Activity:
+Apache Helix 1.0.1 released on 2020-07-29.
+Apache Helix 1.0.1 released on 2020-05-18.
+
+## Community Health:
+dev@helix.apache.org had a 16% increase in traffic in the past quarter.
+152 issues opened on GitHub, past quarter (61% increase)
+106 PRs opened on GitHub, past quarter (-3% decrease)
+104 PRs closed on GitHub, past quarter (-1% decrease)</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-AD">2020-06-17</a> &mdash; Kishore G<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+No blocking issue now.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (6 years ago)
+There are currently 20 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Hunter Lee on 2019-03-12.
+
+## Project Activity:
+Helix 0.9.7 was released on 2020-05-18
+Helix 1.0.0 was released on 2020-05-19
+
+## Community Health:
+dev@helix.apache.org had a 76% increase
+user@helix.apache.org had a 63% increase in traffic in the past quarter
+97 issues closed on GitHub, past quarter (22% increase)</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#attachment-AG">2020-03-18</a> &mdash; Kishore G<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+No major issues for project.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (6 years ago)
+There are currently 20 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Hunter Lee on 2019-03-12.
+
+## Project Activity:
+Active projects still ongoing: ZkCient module separation.
+                               Cloud support for Helix.
+                               Distributed lock
+                               WAGED rebalancer
+
+## Community Health:
+We do have user requests and questions increased.
+More discussion in the dev channel.
+105 PRs opened on GitHub, past quarter (3% increase)
+101 PRs closed on GitHub, past quarter (3% increase)</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#section-6Y">2020-02-19</a> &mdash; Kishore G<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Craig: pursue a report for Helix</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-AC">2020-01-15</a> &mdash; Kishore G<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+Currently, we have many inactive PMCs and Committers.
+Now we have 2 active PMC, 4 active committers. There are around 10 contributors
+
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (6 years ago)
+There are currently 20 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Hunter Lee on 2019-03-12.
+
+## Project Activity:
+There are several projects ongoing:
+1. New generation rebalancer, which is the project involved with 4 contributors
+2. Helix cloud environment support.
+3. Zookeeper client routing.
+
+## Community Health:
+Dev channel decreases is because we move review notice to helix-reviews.
+We have more user questions compare to last quarter.
+Github engagement started increasing.</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#section-6AB">2019-12-18</a> &mdash; Kishore G<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Roman: pursue a report for Helix</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-AB">2019-10-16</a> &mdash; Kishore G<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Helix is the creation and maintenance of software related to A
+cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+We need bring more active PMCs/Committer to help us manage the project.
+
+## Membership Data:
+Apache Helix was founded 2013-12-17 (6 years ago)
+There are currently 20 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Junkai Xue on 2017-07-03.
+- No new committers. Last addition was Hunter Lee on 2019-03-12.
+
+## Project Activity:
+Apache Helix 0.9.1 was released on 2019-08-19 with new features.
+
+## Community Health:
+dev@helix.apache.org had a 711% increase in traffic in the past quarter
+reviews@helix.apache.org had a big increase in traffic in the past quarter
+2 issues opened in JIRA, past quarter (100% increase)
+156 commits in the past quarter (56% increase)
+17 code contributors in the past quarter (142% increase)
+103 PRs opened on GitHub, past quarter (3333% increase)
+111 PRs closed on GitHub, past quarter (11000% increase)
+71 issues opened on GitHub, past quarter (688% increase)
+38 issues closed on GitHub, past quarter (1800% increase)</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#section-6AD">2019-09-18</a> &mdash; Kishore G<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Myrle: pursue a report for Helix</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#attachment-AD">2019-06-19</a> &mdash; Kishore G<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - A cluster management framework for partitioned and replicated
+distributed resources.
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Health report:
+ - Release 0.9.0 is in preparation.
+ - There is regular level of activities on commits, pull requests and
+releases.
+ - Dev mail list activities was normal, user email activities dropped. We
+have moved the discussion into Slack channels.
+
+## PMC changes:
+ - Currently 18 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Junkai Xue on Mon Jul 03 2017
+
+## Committer base changes:
+ - Currently 20 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Hunter Lee at Tue Mar 12 2019
+
+## Releases:
+ - Last release was 0.8.4 on Mar. 6 2019
+
+## Mailing list activity:
+ - Discussion in dev mail group is regular, discussion in user group is
+less active.
+ - dev@helix.apache.org:
+    - 68 subscribers (up 0 in the last 3 months):
+    - 92 emails sent to list (172 in previous quarter)
+ - user@helix.apache.org:
+    - 106 subscribers (up 0 in the last 3 months):
+    - 1 emails sent to list (5 in previous quarter)
+
+## JIRA activity:
+ - We are moving issues management to github issues.
+ - 2 JIRA tickets created in the last 3 months
+ - 0 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#attachment-AC">2019-03-20</a> &mdash; Kishore G<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- A cluster management framework for partitioned and
+  replicated distributed resources.
+
+## Issues:
+- There are no issues requiring board attention at this time
+
+## Health report: - Release 0.8.4 was out in Mar. 6 2019.
+- There is regular level of activities on commits, pull requests and
+  releases.- Dev mail list activities was normal, user email activities
+  dropped. We have moved the discussion into Slack channels.-
+- One new committer added.  Many of current committers are not quite active in
+  terms of daily developments and pull request review, need to look for
+  potential new committers from the community.
+
+## PMC changes:
+ - Currently 18 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Junkai Xue on Mon Jul 03 2017
+
+## Committer base changes:
+ - Currently 20 committers.
+ - Hunter Lee was added as a committer on Tue Mar 12 2019
+
+## Releases:
+ - Last release was 0.6.9 on Sat Oct 14 2017
+
+## Mailing list activity:
+ - dev@helix.apache.org:
+    - 68 subscribers (down -2 in the last 3 months):
+    - 172 emails sent to list (246 in previous quarter)
+ - user@helix.apache.org:
+    - 106 subscribers (up 2 in the last 3 months):
+    - 5 emails sent to list (54 in previous quarter)
+
+## JIRA activity:
+ - 24 JIRA tickets created in the last 3 months
+ - 17 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-AC">2019-02-20</a> &mdash; Kishore G<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - A cluster management framework for partitioned and replicated distributed
+   resources
+
+## Issues:
+
+ - There are no issues requiring board attention at this time.
+
+## Health report:
+
+ - Release 0.8.3 was a bit delayed, but is in preparation, we expect it to be
+   out in end of Feb, 2019.
+
+ - There is regular level of activities on commits, pull requests and
+   releases.
+
+ - Dev mail list activities was normal, user email activities dropped. We are
+   in progress of moving the discussion into Slack channels.
+
+ - Many of current committers are not quite active in terms of daily
+   developments and pull request review, need to look for potential new
+   committers from the community.
+
+## PMC changes:
+
+ - Currently 18 PMC members.
+
+ - No new PMC members added in the last 3 months
+
+ - Last PMC addition was Junkai Xue on Mon Jul 03 2017
+
+## Committer base changes:
+
+ - Currently 19 committers.
+
+ - No new committers added in the last 3 months
+
+ - Last committer addition was Jiajun Wang at Fri Jul 13 2018
+
+## Releases:
+
+ - Last release was 0.8.2 on Sat July 25 2018
+
+## Mailing list activity:
+
+ - dev@helix.apache.org:
+
+    - 69 subscribers (down -1 in the last 3 months):
+
+    - 147 emails sent to list (150 in previous quarter)
+
+ - user@helix.apache.org:
+
+    - 104 subscribers (up 0 in the last 3 months):
+
+    - 4 emails sent to list (53 in previous quarter)
+
+## JIRA activity:
+
+ - 2 JIRA tickets created in the last 3 months
+
+ - 0 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#section-6AG">2019-01-16</a> &mdash; Kishore G<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Phil: pursue a report for Helix</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#section-6AD">2018-12-19</a> &mdash; Kishore G<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-Z">2018-11-21</a> &mdash; Kishore G<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - A cluster management framework for partitioned and replicated distributed resources
+
+## Issues:
+ - NO
+
+## Activity:
+ -
+
+## Health report:
+ - 0.8.3 release is in prepare, will be released in early December.
+ - There is regular level of activities on commits, pull requests and releases.
+ - The dev@ list traffic is healthy, user@ list traffic is increasing.
+
+## PMC changes:
+
+ - Currently 18 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Junkai Xue on Mon Jul 03 2017
+
+## Committer base changes:
+
+ - Currently 19 committers.
+ - Jiajun Wang was added as a committer on Fri Jul 13 2018
+
+## Releases:
+
+ - Last release was 0.8.2 on July 30 2017
+
+## Mailing list activity:
+
+ - Mailing list activity is in normal level.
+
+ - dev@helix.apache.org:
+    - 70 subscribers (up 1 in the last 3 months):
+    - 245 emails sent to list (336 in previous quarter)
+
+ - user@helix.apache.org:
+    - 104 subscribers (up 0 in the last 3 months):
+    - 55 emails sent to list (24 in previous quarter)
+
+
+## JIRA activity:
+
+ - 38 JIRA tickets created in the last 3 months
+ - 0 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-Z">2018-10-17</a> &mdash; Kishore G<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - A cluster management framework for partitioned and replicated distributed resources
+
+## Issues:
+ - NO
+
+## Health report:
+ - 0.8.2 was released in July, and 0.8.3 will be released shortly.
+ - There is a regular level of activities on commits, pull requests and releases.
+ - The dev@ list traffic is healthy, user@ list traffic is decreasing.
+ - One more committer joined in July 2018.
+
+## PMC changes:
+
+ - Currently 18 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Junkai Xue on Mon Jul 03 2017
+
+## Committer base changes:
+
+ - Currently 19 committers.
+ - Jiajun Wang was added as a committer on Fri Jul 13 2018
+
+## Releases:
+
+ - Last release was 0.8.3 on July 30 2017
+
+- dev@helix.apache.org:
+    - 70 subscribers (up 2 in the last 3 months):
+    - 212 emails sent to list (323 in previous quarter)
+
+ - user@helix.apache.org:
+    - 105 subscribers (up 2 in the last 3 months):
+    - 47 emails sent to list (24 in previous quarter)
+
+
+## JIRA activity:
+
+ - 21 JIRA tickets created in the last 3 months
+ - 0 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#section-6AB">2018-09-19</a> &mdash; Kishore G<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Ted: pursue a report for Helix</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-AA">2018-07-18</a> &mdash; Kishore G<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - A cluster management framework for partitioned and replicated distributed
+   resources
+
+## Issues:
+ - NO.
+
+## Activity:
+ - 10 pull requests merged in last 3 months.
+ - 26 commits in last 3 months.
+
+## Health report:
+ - 0.8.1 was released in April, and 0.8.2 is in prepare, will be released in
+   mid July.
+ - New major adoption of Helix outside of LinkedIn.
+(by Pinterest Engineer team:
+https://medium.com/@Pinterest_Engineer ing/automated-cluster-management-and-recovery-for-rocksplicator-f1f8fd35c833)
+ - There is regular level of activities on commits, pull requests and
+   releases.
+ - The dev@ list traffic is healthy, user@ list traffic is decreasing.
+ - Many of current committers are not quite active in terms of daily
+   developments and discussions, need to look for potential new committers
+   from the community.
+
+## PMC changes:
+
+ - Currently 18 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Junkai Xue on Mon Jul 03 2017
+
+## Committer base changes:
+
+ - Currently 18 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Junkai Xue at Mon Apr 03 2017
+
+## Releases:
+
+ - Last release was 0.8.1 on April 30 2018
+
+## Mailing list activity:
+
+ - dev@helix.apache.org:
+    - 70 subscribers (up 0 in the last 3 months):
+    - 245 emails sent to list (391 in previous quarter)
+
+ - user@helix.apache.org:
+    - 104 subscribers (up 6 in the last 3 months):
+    - 23 emails sent to list (68 in previous quarter)
+
+
+## JIRA activity:
+
+ - 19 JIRA tickets created in the last 3 months
+ - 4 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#section-6AE">2018-06-20</a> &mdash; Kishore G<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Phil: pursue a report for Helix</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#attachment-AE">2018-03-21</a> &mdash; Kishore G<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - A cluster management framework for partitioned and replicated distributed
+   resources
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - New major release 0.8.0 is out.
+ - 29 pull requests merged in last 3 months.
+
+
+## Health report:
+ - New major release 0.8 is officially out in Feb 2018.
+ - There is a regular level of activities on commits, pull requests and
+   releases.
+ - The dev@ and user@ list traffic is increasing after new release out.
+ - Many of current committers are not quite active in terms of daily
+   developments and pull request review, need to look for potential new
+   committers from the community.
+
+## PMC changes:
+
+ - Currently 18 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Junkai Xue on Mon Jul 03 2017
+
+## Committer base changes:
+
+ - Currently 18 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Junkai Xue at Mon Apr 03 2017
+
+## Releases:
+
+ - Last release was 0.6.9 on Sat Oct 14 2017
+
+## Mailing list activity:
+
+ - dev@helix.apache.org:
+    - 70 subscribers (up 3 in the last 3 months):
+    - 249 emails sent to list (108 in previous quarter)
+
+ - user@helix.apache.org:
+    - 97 subscribers (up 0 in the last 3 months):
+    - 68 emails sent to list (11 in previous quarter)
+
+
+## JIRA activity:
+
+ - 10 JIRA tickets created in the last 3 months
+ - 7 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-Z">2018-01-17</a> &mdash; Kishore G<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+  A cluster management framework for partitioned and replicated distributed
+  resources
+
+## Issues:
+ - NO
+
+## Activity:
+
+ - 10 pull requests merged in last 3 months.
+ - 26 commits in last 3 months.
+
+## Health report:
+
+ - Helix 0.6.9 was released in Oct. 13. 2017.
+ - New major release 0.8 is in preparation, currently working on renewing all
+   documents. The release is expected to be out in Feb 2018.
+ - There is regular level of activities on commits, pull requests and
+   releases.
+ - The dev@ list traffic is healthy, user@ list traffic is decreasing.
+ - Many of current committers are not quite active in terms of daily
+   developments and discussions, need to look for potential new committers
+   from the community.
+
+## PMC changes:
+
+ - Currently 18 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Junkai Xue on Mon Jul 03 2017
+
+## Committer base changes:
+
+ - Currently 18 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Junkai Xue at Mon Apr 03 2017
+
+## Releases:
+
+ - 0.6.9 was released on Sat Oct 14 2017
+
+## Mailing list activity:
+
+ - dev@helix.apache.org:
+    - 68 subscribers (up 2 in the last 3 months):
+    - 101 emails sent to list (84 in previous quarter)
+
+ - user@helix.apache.org:
+    - 98 subscribers (down -1 in the last 3 months):
+    - 21 emails sent to list (3 in previous quarter)
+
+
+## JIRA activity:
+
+ - 1 JIRA tickets created in the last 3 months
+ - 1 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#section-6AG">2017-12-20</a> &mdash; Kishore G<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Mark: pursue a report for Helix</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-AC">2017-10-18</a> &mdash; Kishore G<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+  A cluster management framework for partitioned and replicated distributed
+  resources
+
+## Issues:
+ - No
+
+## Activity:
+ - 15 pull requests merged in last 3 months.
+ - 39 commits in last 3 months.
+
+## Health report:
+ - Release 0.6.9 is in progress.
+ - New major release 0.8 is in discussion and in preparation.
+ - commits, pull requests and releases continue to happen at a regular cadence
+ - We have presented Helix at conferences, including @Scale, Qcon, etc, and
+   gained many interests from industrial companies.
+ - The dev@ list traffic is healthy, user@ list traffic is decreasing.
+ - Many of current committers are not quite active in terms of daily
+   developments and discussions, need to look for potential new committers from
+   the community.
+
+## PMC changes:
+ - Currently 18 PMC members.
+ - Last PMC (Junkai Xue) added in July 4. 2017.
+
+## Committer base changes:
+ - Currently 19 committers.
+ - Last committer (Junkai Xue) added in April, 2017.
+
+## Releases:
+ - Last release was 0.6.8 on June 19, 2017.
+
+## Mailing list activity:
+ - dev@helix.apache.org:
+    - 69 subscribers (up 2 in the last 3 months):  -- need update.
+    - 79 emails sent to list (179 in previous quarter)
+
+ - user@helix.apache.org:
+    - 98 subscribers (up 3 in the last 3 months):  -- need update.
+    - 9 emails sent to list (14 in previous quarter)</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#section-6AG">2017-09-20</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-AE">2017-08-16</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+  A cluster management framework for partitioned and replicated distributed resources
+
+## Issues:
+ - Need merge selective changes from 0.7 branch into current master branch.
+
+## Activity:
+ - 19 pull requests merged in last 3 months.
+ - 22 commits in last 3 months.
+ - New master branch created.
+
+## Health report:
+
+## PMC changes:
+ - Currently 18 PMC members.
+ - One new PMC (Junkai Xue) added in July 4. 2017.
+
+## Committer base changes:
+ - Currently 19 committers.
+ - No new committer added in last 3 months.
+
+## Releases:
+ - Last release was 0.6.8 on June 19, 2017.
+
+## Mailing list activity:
+ - dev@helix.apache.org:
+    - 69 subscribers (up 2 in the last 3 months):  -- need update.
+    - 188 emails sent to list (108 in previous quarter)
+
+ - user@helix.apache.org:
+    - 98 subscribers (up 3 in the last 3 months):  -- need update.
+    - 18 emails sent to list (21 in previous quarter)
+
+## JIRA activity:
+   - 10 JIRA tickets created in the last 3 months
+   - 4 JIRA tickets resolved in the last 3 months</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#section-6AE">2017-07-19</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Mark: pursue a report for Helix</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#section-6AD">2017-06-21</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#attachment-X">2017-04-19</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+  A cluster management framework for partitioned and replicated distributed
+  resources
+
+## Issues:
+ - Need a new master branch that merges 0.6.x and 0.7 branches.
+
+## Activity:
+ - 18 pull requests merged in last 3 months.
+ - 20 commits in last 3 months.
+
+## Health report:
+ - We see an increase in the number of releases and commits.
+ - we are requesting users who ping committers directly on IM to post questions
+   on the mailing list.
+
+## PMC changes:
+ - Currently 17 PMC members.
+ - No new PMC member added in the last 3 months.
+
+## Committer base changes:
+ - Currently 18 committers.
+ - One new committer (Junkai Xue) added in Feb. 24.
+
+## Releases:
+ - Last release was 0.6.7 on Jan. 26, 2017.
+
+## Mailing list activity:
+ - dev@helix.apache.org:
+    - 69 subscribers (up 2 in the last 3 months):  -- need update.
+    - 108 emails sent to list (125 in previous quarter)
+
+ - user@helix.apache.org:
+    - 98 subscribers (up 3 in the last 3 months):  -- need update.
+    - 21 emails sent to list (35 in previous quarter)
+
+## JIRA activity:
+
+ - 3 JIRA tickets created in the last 3 months
+ - 11 JIRA tickets resolved in the last 3 months</pre>
+<h3 id="2017-03-15"><a href="2017/board_minutes_2017_03_15.html#section-6AB">2017-03-15</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2017-03-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Mark: pursue a report for Helix</pre>
+<h3 id="2016-12-21"><a href="2016/board_minutes_2016_12_21.html#attachment-Z">2016-12-21</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2016-12-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+-   A cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+- None
+
+## Activity:
+- Activity has been increased in the last quarter with multiple contributions.
+- 13 pull requests merged in last 3 months.
+- 43 commits in last 3 months.
+
+## Health report:
+- Project had a release recently and added a new PMC
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- Lei Xia was added to the PMC on Tue Dec 06 2016
+
+## Committer base changes:
+
+- Currently 17 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Lei Xia at Tue May 10 2016
+
+## Releases:
+
+- Last release was 0.6.6 on Oct 31 2016
+
+## Mailing list activity:
+
+- dev@helix.apache.org:
+   - 69 subscribers (up 0 in the last 3 months):
+   - 162 emails sent to list (65 in previous quarter)
+
+- user@helix.apache.org:
+   - 100 subscribers (up 2 in the last 3 months):
+   - 35 emails sent to list (10 in previous quarter)
+
+
+## JIRA activity:
+
+- 12 JIRA tickets created in the last 3 months
+- 9 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#attachment-Z">2016-09-21</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+  A cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+ - low activity on the mailing list and no release in a long time.
+
+## Activity:
+ - Activity has picked up a bit in the last month with multiple contributions.
+
+## Health report:
+ - No much activity on the mailing list. Most users reach out to committers
+   directly.
+
+## PMC changes:
+
+ - Currently 16 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Terence Yim on Tue Dec 17 2013
+
+## Committer base changes:
+
+ - Currently 17 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Lei Xia at Tue May 10 2016
+
+## Releases:
+
+ - Last release was 0.6.5 on Tue Mar 24 2015
+
+## Mailing list activity:
+
+ - dev@helix.apache.org:
+    - 69 subscribers (up 2 in the last 3 months):
+    - 75 emails sent to list (47 in previous quarter)
+
+ - user@helix.apache.org:
+    - 98 subscribers (up 3 in the last 3 months):
+    - 10 emails sent to list (20 in previous quarter)
+
+
+## JIRA activity:
+
+ - 5 JIRA tickets created in the last 3 months
+ - 10 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#attachment-AC">2016-08-17</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>A cluster management framework for partitioned and replicated distributed
+resources
+
+## Issues:
+- No feature requests from users stalling the project development.
+
+## Activity:
+- low.
+
+## Health report:
+- No active development in the project but members are active and respond to
+questions. LinkedIn has modified the task framework and plan to contribute it
+back to the project. We plan to create a new release in next 2 months.
+
+## PMC changes:
+
+- Currently 16 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Terence Yim on Tue Dec 17 2013
+
+## Committer base changes:
+
+- Currently 17 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Lei Xia at Tue May 10 2016
+
+## Releases:
+
+- Last release was 0.6.5 on Tue Mar 24 2015
+
+## Mailing list activity:
+
+- dev@helix.apache.org:
+   - 69 subscribers (up 3 in the last 3 months):
+   - 40 emails sent to list (35 in previous quarter)
+
+- user@helix.apache.org:
+   - 97 subscribers (up 5 in the last 3 months):
+   - 9 emails sent to list (34 in previous quarter)
+
+
+## JIRA activity:
+
+- 3 JIRA tickets created in the last 3 months
+- 0 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#section-6W">2016-07-20</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2016-06-15"><a href="2016/board_minutes_2016_06_15.html#section-6AA">2016-06-15</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2016-06-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#attachment-X">2016-04-20</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ -&nbsp;A cluster management framework for partitioned and replicated distributed
+   resources
+
+## Issues:
+ - None
+
+## Activity:
+ - Low.
+
+## Health report:
+ - Project is stable and mature. We continue to see increase in adoption but
+   no new feature requests from users. There is a plan to re-write the api's
+   but there is no pressing need for that.
+
+## PMC changes:
+
+ - Currently 16 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Terence Yim on Tue Dec 17 2013
+
+## Committer base changes:
+
+ - Currently 16 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Greg Brandt at Mon Jul 06 2015
+
+## Releases:
+
+ - Last release was 0.6.5 on Tue Mar 24 2015
+
+## Mailing list activity:
+
+ - dev@helix.apache.org:
+    - 63 subscribers (up 3 in the last 3 months):
+    - 73 emails sent to list (53 in previous quarter)
+
+ - user@helix.apache.org:
+    - 92 subscribers (up 8 in the last 3 months):
+    - 39 emails sent to list (18 in previous quarter)
+
+## JIRA activity:
+
+ - 6 JIRA tickets created in the last 3 months
+ - 2 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#section-6AD">2016-03-16</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#attachment-X">2016-01-20</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   A cluster management framework for partitioned and replicated distributed
+   resources
+
+## Issues:
+ - None
+
+## Activity:
+ - Low. No active development.
+
+## Health report:
+ - Project is stable and mature and development activity has reduced
+   drastically. We only work on feature requests from users.
+
+## PMC changes:
+
+ - Currently 16 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Kapil Surlaker on Tue Dec 17 2013
+
+## Committer base changes:
+
+ - Currently 16 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Greg Brandt at Mon Jul 06 2015
+
+## Releases:
+
+ - Last release was 0.6.5 on Tue Mar 24 2015
+
+## Mailing list activity:
+
+ - dev@helix.apache.org:
+    - 60 subscribers (up 2 in the last 3 months):
+    - 68 emails sent to list (113 in previous quarter)
+
+ - user@helix.apache.org:
+    - 84 subscribers (up 2 in the last 3 months):
+    - 22 emails sent to list (23 in previous quarter)
+
+
+## JIRA activity:
+
+ - 12 JIRA tickets created in the last 3 months
+ - 4 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#section-6AB">2015-12-16</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2015-10-21"><a href="2015/board_minutes_2015_10_21.html#attachment-S">2015-10-21</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2015-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   A cluster management framework for partitioned and replicated distributed
+   resources
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - Most commits are from external contributors in the form of PRs.
+ - Discussion around new rebalancers
+ - Increase in adoption.
+
+## Health report:
+ - Project is in stable state with not many new features added. This explains
+   less emails on mailing list and drop in JIRA activity.
+
+## PMC changes:
+
+ - Currently 16 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Kapil Surlaker at Tue Dec 17 2013
+
+## LDAP changes:
+
+ - Currently 16 committers and 16 committee group members.
+ - No new committee group members added in the last 3 months
+ - No new committers added in the last 3 months
+ - Last committer addition was Greg Brandt at Mon Jul 06 2015
+
+## Releases:
+
+ - Last release was 0.6.5 on Tue Mar 24 2015
+
+## Mailing list activity:
+
+ - dev@helix.apache.org:
+    - 58 subscribers (up 0 in the last 3 months):
+    - 74 emails sent to list (187 in previous quarter)
+
+ - user@helix.apache.org:
+    - 82 subscribers (down -3 in the last 3 months):
+    - 18 emails sent to list (60 in previous quarter)
+
+
+## JIRA activity:
+
+ - 7 JIRA tickets created in the last 3 months
+ - 0 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-09-16"><a href="2015/board_minutes_2015_09_16.html#section-6Z">2015-09-16</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2015-09-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Jim: pursue a report for Helix</pre>
+<h3 id="2015-06-17"><a href="2015/board_minutes_2015_06_17.html#attachment-AC">2015-06-17</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2015-06-17" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Helix is a generic cluster management framework used for the automatic
+management of partitioned, replicated and distributed resources hosted on a
+cluster of nodes. Helix automates reassignment of resources in the face of
+node failure and recovery, cluster expansion, and reconfiguration
+
+Development
+===========
+- Task framework improvements
+- Message throttling bug fix contributed by the community
+- 19 jira created, 9 resolved
+- 6 merged pull requests on github
+
+Community
+=========
+- 70+ emails on the dev list
+- 40+ emails on the user list
+- Community effort in fixing message throttling bug
+- Last committer added on 2013-09-20, Last release 0.6.5 and 0.7.1 on 2015-03-25
+- Seeing increased in adoption of Helix but not seeing conversion of users to
+  committers. Need more meet ups.</pre>
+<h3 id="2015-04-22"><a href="2015/board_minutes_2015_04_22.html#attachment-Z">2015-04-22</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2015-04-22" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Helix is a generic cluster management framework used for the
+automatic management of partitioned, replicated and distributed resources
+hosted on a cluster of nodes. Helix automates reassignment of resources in
+the face of node failure and recovery, cluster expansion, and
+reconfiguration
+
+Development
+===========
+- 0.6.5 Release with support for handling thousands of partitions
+- Improved activity on github PR. 9 PR's merged.
+- New visualization module (helix-ui) contributed.
+- 28 new JIRAS since last report
+- 37 issues resolved in last 12 weeks
+
+Community
+=========
+- 40+ emails on the dev list
+- 150+ emails on the user list</pre>
+<h3 id="2015-03-18"><a href="2015/board_minutes_2015_03_18.html#section-6AC">2015-03-18</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2015-03-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2014-12-17"><a href="2014/board_minutes_2014_12_17.html#attachment-AA">2014-12-17</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2014-12-17" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Helix is a generic cluster management framework used for the
+automatic management of partitioned, replicated and distributed resources
+hosted on a cluster of nodes. Helix automates reassignment of resources in
+the face of node failure and recovery, cluster expansion, and
+reconfiguration
+
+Development
+===========
+- Task framework integrated with a product service
+- REST API for task framework
+- Python Helix admin library contributed by the community
+- 41 new JIRAS since last report
+- 22 issues resolved
+
+Community
+=========
+- 200+ emails on the dev list
+- 50+ emails on the user list
+- Community effort in building Python Helix admin library
+- Community effort in evaluating Helix controller performance</pre>
+<h3 id="2014-09-17"><a href="2014/board_minutes_2014_09_17.html#attachment-X">2014-09-17</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2014-09-17" title="Permalink">&para;</a></h3>
+<pre>Project Description
+===================
+Apache Helix is a generic cluster management framework used to build
+distributed systems and provides automatic partition management, fault
+tolerance and elasticity.
+
+Development
+===========
+- Implemented extensions to task framework, including smarter retry logic and
+  queuing of jobs
+- Dashboard contributed by a GSOC student
+- Netty-based IPC framework contributed by the community
+- Task framework with YARN integration tested on a live YARN deployment
+- 48 new JIRAS since last report
+- 56 issues resolved
+
+Community
+=========
+- 100+ emails on the dev list
+- 90+ emails on the user list
+- Community effort in designing the IPC framework, including email threads,
+  wiki pages, and GitHub pull request comments
+
+Releases
+=========
+- Two new releases are approved and will soon be announced:
+  -- 0.6.4: Bug fixes and support for task framework
+  -- 0.7.1 beta: Bug fixes, task framework, YARN integration, performant IPC</pre>
+<h3 id="2014-07-16"><a href="2014/board_minutes_2014_07_16.html#attachment-R">2014-07-16</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2014-07-16" title="Permalink">&para;</a></h3>
+<pre>Description
+==========
+Apache Helix is a generic cluster management framework used to build
+distributed systems and provides automatic partition management, fault
+tolerance and elasticity.
+
+Development
+===========
+- Initial version of the Helix task framework is now complete, enabling
+  scheduling and intelligent placement of jobs with DAG dependencies.
+- Client-side robustness improvements
+- Continued work in defining separation of API, SPI, and implementation
+- Progress in building a Helix dashboard by a GSOC student
+- 94 new JIRAS since last report
+- 58 Issues resolved
+
+Community
+=========
+- 270+ emails on the dev list
+- 130+ emails on the user list
+- Presentations at ApacheCon and Hadoop Summit
+- Organized first public Helix meetup in the SF Bay Area
+
+Releases
+=========
+
+- Making progress on 0.7.x stability
+- Released 0.6.3 with critical bug fixes and security patches, the first
+  release as TLP</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#section-6W">2014-06-18</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#attachment-AA">2014-03-19</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>Development
+===========
+Fixed minor bugs and added new features on the main release branches
+- Significant performance improvements to the Helix controller
+- Improved CI health
+- 20 new JIRAS since last report.
+- 9 issues resolved.
+
+Progress on integrating with provisioners like YARN
+- Fully-functional example of Helix demonstrating the ability to integrate
+  with YARN and manage containers
+- Initial work on integrating existing task framework to run within
+  provisioned containers
+- Initial exploration of Mesos integration
+
+Progress on pluggable monitoring
+- Initial code for plugging in monitoring frameworks like Riemann to support
+  centralized actionable alerts
+
+Community
+=========
+- 100+ emails on the dev list
+- 70+ emails on the user list
+- Establishment of regular meetings on #apachehelix
+- Receiving significant community input related to improving Helix APIs
+  through IRC and the mailing lists
+- Last committer 05/18/13
+- Last PPMC 11/7/13
+
+Releases
+=========
+
+- Making progress on 0.7.x stability
+- Plan to release 0.6.3 with critical bug fixes/features.</pre>
+<h3 id="2014-02-19"><a href="2014/board_minutes_2014_02_19.html#attachment-V">2014-02-19</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2014-02-19" title="Permalink">&para;</a></h3>
+<pre>Apache Helix is a generic cluster management framework used to build
+distributed systems and provides automatic partition management, fault
+tolerance and elasticity.
+
+Development
+===========
+
+Fixed minor bugs and added new features.
+- Initial provisioning work to integrate with Resource managers like YARN and
+  Mesos
+- Controller pipeline performance improvements.
+- Task framework for tasks associated with resources
+- Design and initial code for monitoring with Helix
+- Atomic API to support admin operations like cluster creation etc.
+- 150 new JIRAS since last report.
+- 220 issues resolved.
+
+- Redesigned website. Added version specific docs.
+- Completed most of the work related to graduation
+
+Community
+=========
+- 550+ emails on the dev list
+- 100+ emails on the user list
+
+Releases
+=========
+
+- Released 0.6.2 with critical bug fixes and security patches. [Stable]
+- Released 0.7.0 with new high level api. [Alpha]
+- Plan to release 0.7.x stable version.</pre>
+<h3 id="2014-01-15"><a href="2014/board_minutes_2014_01_15.html#section-6T">2014-01-15</a> &mdash; Kishore Gopalakrishna<a class="headerlink" href="#2014-01-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+AI: Doug to pursue a report for Helix</pre>
+<h3 id="2013-10-16"><a href="2013/board_minutes_2013_10_16.html#helix">2013-10-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-10-16" title="Permalink">&para;</a></h3>
+<pre>Apache Helix is a generic cluster management framework used to build
+distributed systems and provides automatic partition management, fault
+tolerance and elasticity.
+
+Helix has been incubating since 2012-10-14.
+
+We feel that we are ready for graduation and have started the discussion
+internally. We need to update the status page with new committers and also
+resolve trade mark.Our processes are continuing to improve and adoption is
+increasing both inside and outside of LinkedIn.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+  - NONE
+
+
+How has the community developed since the last report?
+
+  - Added Kanak Biscuitwala as a committer
+  - Receiving external contribution in developing JavaScript bindings for
+    Helix (see https://github.com/sudowork/node-helix-participant)
+  - Steady activity on the mailing list
+
+
+How has the project developed since the last report?
+
+  - Making progress on 0.7.0, a release that examines and rethinks every
+    interaction that Helix exposes to increase ease of use. We hope to
+    release this month.
+  - Introduced new coding style guidelines, and simplified the code review
+    process with new scripts
+  - Increased documentation of the development process on JIRA pages
+  - Actively populating the developer wiki and increased the amount of
+    documentation on the project website
+  - Received a patch integrating Helix with YARN, to automate management of
+    YARN containers.
+
+Date of last release:
+
+  2013-05-30 (0.6.1-incubating)
+
+When were the last committers or PMC members elected?
+
+  - Kanak Biscuitwala (committer) - 2013-09-20
+
+Signed-off-by:
+
+  [X](helix) Patrick Hunt
+  [X](helix) Olivier Lamy
+  [ ](helix) Mahadev Konar
+  [ ](helix) Owen O'Malley
+
+Shepherd notes:
+
+  Roman Shaposhnik (rvs):
+
+    A very solid project on the clear path to graduation.</pre>
+<h3 id="2013-07-17"><a href="2013/board_minutes_2013_07_17.html#helix">2013-07-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-07-17" title="Permalink">&para;</a></h3>
+<pre>Apache Helix is a generic cluster management framework used to build
+distributed systems and provides automatic partition management, fault
+tolerance and elasticity.
+
+Helix has been incubating since 2012-10-14.
+
+We feel we are good to graduate, we have had two smooth releases and are
+working on next release 0.6.2 soon.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+- NONE
+
+How has the community developed since the last report?
+
+-- Added 2 committers Shirshanka Das( LinkedIn) and Vinayak Borkar (UC
+   Irvine)
+-- Good activity on mailing list.
+-- Increase in adoption of Helix outside of LinkedIn
+
+How has the project developed since the last report?
+
+-- Released 0.6.1-incubating with lot of new features.
+-- Issues:  54 created, 25 resolved
+-- Next release 0.6.2 will focus of api refactoring without adding major
+   features.
+
+Date of last release:
+
+05/30/2013 (0.6.1-incubating)
+
+Signed-off-by:
+
+[x](helix) Patrick Hunt
+[x](helix) Olivier Lamy
+[x](helix) Mahadev Konar
+[ ](helix) Owen O'Malley
+
+Shepherd notes:
+
+Suresh Marru: The podling is healthy and I echo it seems ready to graduate.
+They have cut few releases, are engaging well with contributors and voted in
+two new committers. Its a small group with activity on the low end but the
+diversity is decent enough and podling seems to be ready for
+self-governance.  If the project decides to graduate, it might be advisable
+for one or two mentors continue through for a little while.</pre>
+<h3 id="2013-04-17"><a href="2013/board_minutes_2013_04_17.html#helix">2013-04-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-04-17" title="Permalink">&para;</a></h3>
+<pre>Apache Helix is a generic cluster management framework used to build
+distributed systems and provides automatic partition management, fault
+tolerance and elasticity.
+
+Helix has been incubating since 2012-10-14.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Add new committers.
+  2. Grow community.
+  3. Better documentation to increase adoption.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware of?
+- None
+
+How has the community developed since the last report?
+There has been significant increase in the activity since last report
+resulting in good discussions on the mailing list.
+
+How has the project developed since the last report?
+We had our first Apache Incubator release in January and we are in the
+process of making another release shortly.  Lots of new features and
+bug fixes added.
+- Issues +58 issues created, 35 resolved.
+- Additional features to be part of 0.6.2-incubating release
+-- Standalone Helix agent
+-- Task execution recipe
+-- Task scheduling and support for custom re-balancer.
+- S4 integration with Helix in progress.
+
+Please check this [X] when you have filled in the report for Helix.
+
+Signed-off-by:
+Patrick Hunt: [X](helix)
+Olivier Lamy: [X](helix)
+Mahadev Konar: [ ](helix)
+Owen O'Malley: [ ](helix)
+
+
+Shepherd notes:</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#helix">2013-01-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>Apache Helix is a generic cluster management framework used to build
+distributed systems and provides automatic partition management, fault
+tolerance and elasticity.
+
+Helix has been incubating since 2012-10-14.
+
+Three most important issues to address in the move towards graduation:
+
+1. Make a release, taking longer than expected. Lack of Apache process
+   experience in making releases apart from mentors.
+2. Develop user community and increase adoption.
+3. Come up with tutorial/use cases where Helix can be used out of
+   the box.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+None
+
+How has the community developed since the last report?
+- users +2
+- little activity on user mailing list. Hopefully release should help.
+- Current integration
+-- S4.
+-- In talks with Archiva, Bigtop on potential integration.
+
+How has the project developed since the last report?
+-- Issues (11 created, 8 resolved)
+-- Additional recipes ( distributed lock manager )
+-- Work on standalone Helix agent.
+
+Signed-off-by:
+Olivier Lamy: [X](helix)
+Patrick Hunt: [X](helix)
+Mahadev Konar: [ ](helix)
+Owen O'Malley: [ ](helix)
+
+Shepherd notes:</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#helix">2012-12-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>Helix entered incubation on 14 October 2012.
+
+Three most important issues to address in the move towards graduation:
+- Increase visibility and develop the community by blogs, better
+  documentation and new use cases.
+- Identify existing distributed systems that can benefit from using Helix.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware of?
+- None
+
+How has the community developed since the last report?
+- 9 Jiras created, 3 resolved.
+- Low activity on user mailing lists. Users @18 , Dev @15
+
+
+How has the project developed since the last report?
+- Ready for first release.
+- In progress: Enhancement of Apache S4 using Helix.
+- Still working on stabilizing tests that depend on time.
+- Additional use cases/recipes with documentation.
+
+
+Signed-off-by: olamy, phunt, rvs</pre>
+<h3 id="2012-11-21"><a href="2012/board_minutes_2012_11_21.html#helix">2012-11-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-11-21" title="Permalink">&para;</a></h3>
+<pre>Started incubating October 15th
+
+Apache Helix is a generic cluster management framework used to build
+distributed systems and provides automatic partition management, fault
+tolerance and elasticity.
+
+Issues needing Board/Incubator PMC Attention:
+
+  None.
+
+Key Activities:
+
+  - Website setup at http://incubator.apache.org/helix/. All
+    committers submitted ICLA.
+  - Source code migrated to Apache Git
+  - Working on first release. Possibly in November.
+  - Build integration
+    - Integrated with Jenkins, Sonar, Apache Rat
+    - Working on stabilizing tests that depend on time.
+  - Code clean up and Documentation
+
+Community:
+
+  - 11 Jiras created, 3 resolved. Mostly on improvements.
+  - Subscriptions: users@ - 18; dev@ - 15
+  - Most activity on dev, little activity on user.
+
+Next milestones
+
+- First release
+- Identify potential use cases for Helix.
+
+Signed-off-by: olamy</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

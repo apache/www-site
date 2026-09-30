@@ -1,0 +1,4446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Arrow | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Arrow';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Arrow';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Arrow</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="arrow">Arrow<a class="headerlink" href="#arrow" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-11-19</td>
+<td><a href="2025/board_minutes_2025_11_19.html#section-7A">Appointed Antoine Pitrou</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2024-10-16</td>
+<td><a href="2024/board_minutes_2024_10_16.html#section-7C">Appointed Neal Richardson</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2023-11-15</td>
+<td><a href="2023/board_minutes_2023_11_15.html#section-7E">Appointed Andrew Grove</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2022-12-21</td>
+<td><a href="2022/board_minutes_2022_12_21.html#section-7D">Appointed Andrew Lamb</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2022-01-19</td>
+<td><a href="2022/board_minutes_2022_01_19.html#section-7E">Appointed Kouhei Sutou</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2020-10-21</td>
+<td><a href="2020/board_minutes_2020_10_21.html#section-7D">Appointed Wes McKinney</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2016-01-20</td>
+<td><a href="2016/board_minutes_2016_01_20.html#section-7A">Appointed Jacques Nadeau</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016-01-20</td>
+<td><a href="2016/board_minutes_2016_01_20.html#section-7A">Establish the Apache Arrow Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-G">2026-04-15</a> &mdash; Antoine Pitrou<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software
+related to columnar in-memory processing and data interchange. More
+information can be found at https://arrow.apache.org/overview/
+
+## Project Status:
+Current project status: Ongoing (high activity)
+
+Issues for the board:
+* (from the PMC chair) Not really an &ldquo;issue&rdquo;, but it would be nice if
+  the initial reminder for board reports came a bit earlier - say,
+  3 weeks before the deadline.
+
+Side note:
+* (from the PMC chair) The ASF Board Report Wizard told me
+  "Your project is not expected to report this month", so I used the
+  Board Agenda Tool instead. Hopefully everything worked fine.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19... or 2016-01-20, according
+to the latest stats (which one is it? 🙃).
+
+There are currently 117 committers and 61 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+* No new PMC members. Last addition was Rossi Sun on 2025-10-06.
+* Ryan Johnson was added as committer on 2026-01-30.
+
+Here are short updates on topics that we inquired about last time.
+
+* Potential &ldquo;emeritus&rdquo; status for long-time inactive maintainers:
+  a preliminary investigation using a conservative estimate suggests
+  there are 30 "inactive" non-PMC committers out of 56, and
+  24 "inactive" PMC members out of 61. In total this is roughly
+  half of the official set of project maintainers. We have started
+  discussing possible avenues but haven&rsquo;t come to a consensus.
+
+* Measuring and increasing diversity: unfortunately we haven&rsquo;t started
+  on this (yet?).
+
+## Project Activity:
+
+The project has an [active blog](https://arrow.apache.org/blog/) where you can
+find more information on recent releases.
+
+### Community Initiatives
+
+We are planning a joint Arrow / Parquet meetup in Paris, kindly hosted by
+Datadog.
+
+Notable blog posts:
+* [Apache Arrow is 10 years old 🎉]
+  (https://arrow.apache.org/blog/2026/02/12/arrow-anniversary/)
+* [Community Highlights 2025]
+  (https://arrow.apache.org/blog/2026/03/19/arrow-2025-highlights/)
+
+### Community Organization
+
+The Arrow project is increasingly organized as different communities focused
+on the different Arrow language implementations (e.g C++ and bindings like
+Python, Rust, Go, etc). These communities collaborate on the overall Arrow
+specification and interoperability issues. This structure seems to be working
+well as the project grows and matures.
+
+### Security Model
+
+Gently prodded by the Apache Security Team, we have authored a
+[security model](https://arrow.apache.org/docs/dev/format/Security.html)
+ covering the Arrow specifications. Individual Arrow implementations are
+ expected to produce similar documents for concrete API usage; Arrow C++ has
+ [published one](https://arrow.apache.org/docs/dev/cpp/security.html).
+
+### AI-Generated Contributions
+
+We have devised a [policy around AI-generated code contributions]
+(https://arrow.apache.org/docs/dev/developers/overview.html#ai-generated-code).
+ The most obvious use of AI seems to come from novice contributors who
+ sometimes regurgitate AI output in their code changes, pull request
+ descriptions and/or comments.
+
+A more annoying category of AI-generated contributions has come under the form
+of ill-informed or low quality security reports. What makes it annoying is
+that the expectations around security reports are stronger than around regular
+contributions: they have to be handled swiftly, and rejections have to be duly
+motivated. We had a peak of such reports around December-January, things have
+settled since then.
+
+Sporadically, we also get mailing-list messages, obviously AI-generated, that
+pretend to offer an informed opinion on a topic under discussion but with
+little to no added value.
+
+### Recent Releases:
+
+* JAVA-19.0.0 was released on 2026-03-16.
+* GO-18.5.2 was released on 2026-03-04.
+* RS-58.0.0 was released on 2026-02-23.
+* 23.0.1 was released on 2026-02-16.
+* NANOARROW-0.8.0 was released on 2026-02-09.
+* RS-57.3.0 was released on 2026-02-06.
+* GO-18.5.1 was released on 2026-01-26.
+* RS-OS-0.12.5 was released on 2026-01-19.
+* RS-OS-0.13.1 was released on 2026-01-19.
+* 23.0.0 was released on 2026-01-18.
+* JULIA-2.8.1 was released on 2026-01-14.
+* RS-57.2.0 was released on 2026-01-11.
+* ADBC-22 was released on 2026-01-09.
+
+#### arrow-rs
+
+The Rust implementation continues a monthly release cadence. Development work
+has focused recently on improving performance, filling out ListView and REE
+support in the compute kernels, and a new avro implementation.
+
+
+## Community Health:
+
+Based on mailing-list volume, project activity remains steady.
+Quarter-to-quarter variations can probably be attributed to random oscillation
+rather than any structural change. Of note, several projects such as Arrow C++
+and Arrow Rust have GitHub discussions enabled to help with user questions
+(those are echoed on user@arrow.apache.org, so are still accounted for in the
+ mailing-list stats).</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-H">2026-01-21</a> &mdash; Antoine Pitrou<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Project Status:
+Current project status: Ongoing (high activity)
+Community Health Score (Chi): 10.00 (Super Healthy)
+* Score note: More than 4 emails per day to all MLs combined in the past
+  quarter (+1.00氣)
+* Score note: New members() added to the LDAP committee group within the last
+  six months (+0.50氣)
+* Score note: New committer(s) invited within the last three months (+0.75氣)
+
+Issues for the board:
+
+* A release announcement for ADBC-22 was rejected by announce@apache.org,
+  though the format is the same as previous announcements. Are there new
+  requirements? Are the rules for posting to announce@a.o spelled out clearly
+  somewhere?
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (10 years ago! 🎉)
+
+There are currently 116 committers and 61 PMC members in this project. The
+Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+* Rossi Sun was added to the PMC on 2025-10-06
+* Kyle Barron was added as committer on 2025-10-07
+
+We don&rsquo;t have any diversity stats (gender, nationality, etc.) but there&rsquo;s
+probably a massive imbalance. We would welcome opinions from the ASF board on
+how to gather such data and improve things in that regard.
+
+Another topic that might be worth addressing is whether we need some kind of
+emeritus status for long-time inactive project members.
+
+## Project Activity:
+
+The project has an [active blog](https://arrow.apache.org/blog/) where you can
+find more information on recent releases.
+
+### Community events
+
+We have held the [first Arrow summit]
+(https://www.meetup.com/pydata-paris/events/310646396/) in October 2025,
+co-located with the PyData Paris conference. The event was open to everyone
+and entrance was free. There were around 35 attendees, half experienced Arrow
+contributors and half interested onlookers. The day consisted mostly of small
+presentations and free discussions around the attendees. We consider the
+event to be a success as it allowed tightening social bonds among a rather
+diverse community comprised of numerous sub- and side-projects.
+
+No recording is available as we didn&rsquo;t have any A/V apparatus in the room.
+
+### Final demise of Voltron Data
+
+Voltron Data, who until 2024 employed many Arrow contributors, has finally
+ended all activity. This isn&rsquo;t affecting the project&rsquo;s sustainability as most
+Arrow contributors had already been laid off one year ago, but some pieces of
+infrastructure that were still managed by Voltron Data had to be migrated
+urgently. We have averted all immediate risks and development has resumed as
+normal, though a couple minor issues remain to be resolved.
+
+### Final end of the monorepo
+
+We have completed the envisioned codebase splits to organize the various
+language implementations as independent git repositories (still under the
+Apache Arrow umbrella, though). The ex-monorepo (`apache/arrow` on GitHub)
+lives on as the home for the C++ implementation and its dependent language
+bindings (Python, R, Ruby, MATLAB, C/GLib).
+
+### Community Organization
+
+The Arrow project is increasingly organized as different communities focused
+on the different Arrow language implementations (e.g C++ and bindings like
+Python, Rust, Go, etc). These communities collaborate on the overall Arrow
+specification and interoperability issues. This structure seems to be working
+well as the project grows and matures and there are newly separate
+repositories for arrow-go, arrow-dotnet, arrow-julia, arrow-swift.
+
+### Recent Releases:
+
+* RS-OS-0.13.0 was released on 2025-12-23.
+* GO-18.5.0 was released on 2025-12-12.
+* RS-57.1.0 was released on 2025-11-24.
+* ADBC-21 was released on 2025-11-07.
+* 22.0.0 was released on 2025-10-24.
+* RS-57.0.0 was released on 2025-10-23.
+* DOTNET-22.1.0 was released on 2025-10-17.
+* JS-21.1.0 was released on 2025-10-07.
+
+#### arrow-rs
+
+The Rust implementation continues a monthly release cadence. We have been
+focusing on expanding coverage for newer Arrow array types such as ListView
+and RunEndEncoded. We have also invested heavily in the Rust parquet reader,
+which is described in several blogs [1] [2]. A new optimized reader to read
+avro to Arrow arrays was also released, see [3].
+
+[1]: https://s.apache.org/parquet-rs-late-materialization-deep-dive
+[2]: https://arrow.apache.org/blog/2025/10/23/rust-parquet-metadata/
+[3]: https://arrow.apache.org/blog/2025/10/23/introducing-arrow-avro/
+
+## Community Health:
+Based on mailing-list volume, project activity remains steady.
+Quarter-to-quarter variations can probably be attributed to random oscillation
+rather than any structural change. Of note, several projects such as Arrow C++
+and Arrow Rust have GitHub discussions enabled to help with user questions
+(those are echoed on user@arrow.apache.org, so are still accounted for in the
+stats below).
+
+All metrics from https://reporter.apache.org/wizard/?arrow#, for posterity:
+
+* builds@arrow.apache.org had a 55% increase in traffic in the past quarter
+  (462 emails compared to 297)
+* dev@arrow.apache.org had a 60% increase in traffic in the past quarter (290
+  emails compared to 181)
+* github@arrow.apache.org had a 4% increase in traffic in the past quarter
+  (15882 emails compared to 15201)
+* issues@arrow.apache.org had a 69% increase in traffic in the past quarter
+  (1737 emails compared to 1022)
+* user@arrow.apache.org had a 40% decrease in traffic in the past quarter (98
+  emails compared to 162)</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-G">2025-10-15</a> &mdash; Neal Richardson<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Project Status:
+Current project status: Ongoing (high activity)
+
+Issues for the board: none
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (10 years ago)
+There are currently 116 committers and 61 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Adam Reeve was added to the PMC on 2025-10-02
+- Matthijs Brobbel was added to the PMC on 2025-10-01
+- Rossi Sun was added to the PMC on 2025-10-05
+- Kyle Barron was added as committer on 2025-10-07
+
+## Project Activity:
+
+### Community events
+
+On October 2, 2025, we held the first ever Apache Arrow Summit in Paris.
+Program details and agenda are here:
+https://www.meetup.com/pydata-paris/events/310646396/
+
+There were around 35 attendees, of which ~20 were existing core developers or
+PMC members. The Summit was overwhelmingly described as a success, with a
+friendly atmosphere between all participants. Unfortunately, no A/V recording
+system was available for this event.
+
+### Sovereign Tech Fund grant
+
+The German government-backed Sovereign Tech Agency has decided to fund
+critical maintenance and infrastructure-related tasks for Apache Arrow. The
+grant is handled by QuantStack, a French open source company already employing
+two Arrow PMC members. This allows funding core work that is unlikely to be
+paid for by regular corporate clients, and represents around 0.8 FTE during 2
+years.
+
+See announcement at
+https://medium.com/@QuantStack/sovereign-tech-agency-invests-in-apache-arrows-future-with-quantstack-d2f84c21c2cc
+
+### Project organization
+
+The Arrow project spans multiple implementations in different programming
+languages. While it used to be organized as a single centralized GitHub
+monorepo, various frictions around development and the perceived lack of
+velocity led us to progressively move individual implementations into their
+own GitHub repositories. The latest candidate for this has been the C#
+implementation of Arrow, which is now hosted under the repository
+&ldquo;apache/arrow-dotnet&rdquo;.
+
+The remaining implementations hosted in the &ldquo;apache/arrow&rdquo; repository are C++
+and some of the language bindings based off of it: Python, Ruby, R, C/GLib and
+Matlab. There are currently no plans to further split them up.
+
+### Recent Releases:
+
+    JS-21.1.0 was released on 2025-10-07.
+    RS-56.2.0 was released on 2025-09-23.
+    RS-OS-0.12.4 was released on 2025-09-23.
+    DOTNET-22.0.1 was released on 2025-09-19.
+    ADBC-20 was released on 2025-09-12.
+    DOTNET-22.0.0 was released on 2025-09-12.
+    GO-18.4.1 was released on 2025-09-04.
+    56.1.0 was released on 2025-08-25.
+    RS-56.0.0 was released on 2025-08-01.
+    GO-18.4.0 was released on 2025-07-21.
+    21.0.0 was released on 2025-07-17.
+    RS-OS-0.12.3 was released on 2025-07-16.
+
+## Community Health:
+
+GitHub activity is up slightly over the last quarter but most other mailing
+list activity is down. Looking back at the Arrow board reports from October
+2024 and 2023, we see a similar dip, which suggests that this could just be a
+seasonal effect with northern hemisphere summer vacations in July and August
+leading to reduced activity. As a result, we are not concerned at this time.
+
+Metrics:
+
+* github@arrow.apache.org had a 5% increase in traffic in the past quarter
+  (16093 emails compared to 15193)
+
+* dev@arrow.apache.org had a 27% decrease in traffic in the past quarter (273
+  emails compared to 371)
+
+* user@arrow.apache.org had a 4% decrease in traffic in the past quarter (178
+  emails compared to 184)
+
+* issues@arrow.apache.org had a 28% decrease in traffic in the past quarter
+  (1115 emails compared to 1535)</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-H">2025-07-16</a> &mdash; Neal Richardson<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Project Status:
+Current project status: Ongoing (high activity)
+
+Issues for the board: none
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (9 years ago)
+There are currently 115 committers and 58 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Alenka Frim was added to the PMC on 2025-06-30
+- No new committers. Last addition was Matthijs Brobbel on 2025-03-24.
+
+## Project Activity:
+
+### Community events
+
+We will be holding an Arrow summit in October 2025, co-located with the PyData
+Paris conference. ASF Trademarks &amp; Brand Management has approved. The PMC has
+selected a conference selection committee to review submissions, which are
+currently open. [1]
+
+### Splitting projects out of the monorepo
+
+With many implementations in apache/arrow, the maintenance/release costs for
+apache/arrow is high. So we&rsquo;re extracting some implementations from
+apache/arrow to apache/arrow-*
+
+#### JavaScript
+
+We extracted the JavaScript implementation from apache/arrow to
+apache/arrow-js for ease of maintenance and releasing. We have released Apache
+Arrow JavaScript from apache/arrow-js, which means that we completed the
+extraction. We&rsquo;ll be able to maintain/release the JavaScript implementation in
+apache/arrow-js.
+
+#### Swift
+
+We also extracted the Swift implementation from apache/arrow-swift and have
+released Apache Arrow Swift from apache/arrow-swift. Going forward, we will
+maintain/release the Swift implementation in apache/arrow-swift.
+
+#### C#
+
+We reached consensus to extract the C# implementation from apache/arrow to
+apache/arrow-dotnet, but we haven&rsquo;t done it yet. We&rsquo;ll do it this year.
+
+#### Skyhook
+
+We merged Skyhook, a Ceph integration, in 2022, but it is no longer
+maintained. So we&rsquo;ll extract it from apache/arrow to apache/arrow-skyhook.
+
+### Tooling/LLMs
+
+We&rsquo;ve seen strong uptake of the Kapa.ai documentation assistant (~850
+queries/month), which is helping users discover relevant docs and resolve
+common questions without needing to open issues or join mailing lists.
+
+There is renewed interest in community health tooling&mdash;such as dashboards
+[2] tracking stale issues and unmaintained components&mdash;driven by a desire to
+ improve contributor visibility and sustainability.
+
+That dashboard also makes use of an LLM to provide a summary of dev mailing
+list traffic, which was used to help draft the following highlights:
+
+### Intervals and Standards Alignment
+
+The Iceberg community has proposed a new 128-bit ANSI SQL-compatible interval
+type. Arrow contributors are considering whether this should be adopted
+natively or handled as an extension type. This work is part of broader efforts
+to ensure Arrow remains compatible with evolving lakehouse and SQL engine
+standards.
+
+The community is also discussing a proposal to canonicalize the variant
+extension type across Arrow implementations. This would improve cross-language
+interoperability for mixed-type columns (e.g., from Parquet). Contributors are
+weighing whether Arrow should define and maintain a standard set of extension
+types going forward.
+
+### CI &amp; Infrastructure
+
+Thanks to newly granted AWS credits, we are expanding our CI and benchmarking
+infrastructure. This includes adding GPU runners, improving performance
+tracking, and supporting larger-memory workloads. These improvements are
+expected to improve release robustness and enable performance monitoring
+across languages.
+
+### Benchmarks
+
+Several contributors are working to make benchmarking more visible and
+comparable across C++, Python, and R. This includes discussions around
+standardized benchmark suites and dashboards to detect regressions
+earlier&mdash;motivated in part by recent performance issues observed in Arrow R
+19.x and 20.x.
+
+### Recent Releases:
+
+    ADBC-19 was released on 2025-07-07.
+    SWIFT-21.0.0 was released on 2025-07-07.
+    JS-21.0.0 was released on 2025-07-04.
+    NANOARROW-0.7.0 was released on 2025-07-03.
+    RS-55.2.0 was released on 2025-06-26.
+    GO-18.3.1 was released on 2025-06-20.
+    RS-OS-0.12.2 was released on 2025-06-10.
+    JAVA-18.3.0 was released on 2025-05-13.
+    RS-55.1.0 was released on 2025-05-13.
+    RS-OS-0.12.1 was released on 2025-05-13.
+    GO-18.3.0 was released on 2025-05-09.
+    ADBC-18 was released on 2025-05-06.
+    20.0.0 was released on 2025-04-26.
+    RS-55.0.0 was released on 2025-04-11.
+
+
+## Community Health:
+
+Based on mailing list volume, project activity remains steady. While messages
+on the dev mailing list dipped slightly, messages on the user list more than
+doubled. And GitHub activity is up 25% over last quarter.
+
+Metrics:
+
+* builds@arrow.apache.org had a 3% decrease in traffic in the past quarter
+  (247 emails compared to 253)
+* dev@arrow.apache.org had a 12% decrease in traffic in the past quarter (408
+  emails compared to 460)
+* github@arrow.apache.org had a 25% increase in traffic in the past quarter
+  (16152 emails compared to 12911)
+* issues@arrow.apache.org had a 38% increase in traffic in the past quarter
+  (1597 emails compared to 1150)
+* user@arrow.apache.org had a 124% increase in traffic in the past quarter
+  (191 emails compared to 85)
+
+[1]: https://sessionize.com/arrow-summit-2025/
+[2]: https://arrow-maintenance.github.io/arrowdash/</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-G">2025-04-16</a> &mdash; Neal Richardson<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Project Status:
+Current project status: Ongoing (high activity)
+Issues for the board: none
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (9 years ago)
+There are currently 115 committers and 57 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Jacob Wujciak was added to the PMC on 2025-03-16
+- Bryce Mecum was added to the PMC on 2025-02-04
+- Ian Cook was added to the PMC on 2025-03-19
+- Rok Mihevc was added to the PMC on 2025-03-18
+- Ed Seidl was added as committer on 2025-02-05
+- Jean-Baptiste Onofr&eacute; was added as committer on 2025-03-10
+- Matthijs Brobbel was added as committer on 2025-03-24
+
+## Project Activity:
+
+### Community events
+
+The organization of a Arrow summit sometimes in H2 2025 or H1 2026 is being
+discussed. We have been gathering potential opportunities for colocating the
+summit with an existing open source conference, to reduce costs and
+organization overhead. We have good hope to move this forward in the coming
+weeks or months.
+
+### Recent releases:
+
+    RS-53.4.1 was released on 2025-03-30. RS-54.3.0 was released on
+    2025-03-21. GO-18.2.0 was released on 2025-03-16. RS-OS-0.12.0 was
+    released on 2025-03-09. ADBC-17 was released on 2025-03-07. RS-54.2.1 was
+    released on 2025-02-27.
+    19.0.1 was released on 2025-02-16. RS-54.2.0 was released on 2025-02-16.
+    JAVA-18.2.0 was released on 2025-02-12. RS-54.1.0 was released on
+    2025-02-02. ADBC-16 was released on 2025-01-21. RS-53.4.0 was released on
+    2025-01-18.
+    19.0.0 was released on 2025-01-15. GO-18.1.0 was released on 2025-01-13.
+
+Selected subproject updates:
+
+### C++ (and Python, R, Ruby)
+
+In preparation for the upcoming major release 20.0.0, we've made significant
+enhancements in functionality, stability and performance within the Acero &amp;
+Compute subprojects.
+
+### C#
+
+We will split the C# implementation to apache/arrow-dotnet from apache/arrow
+like we did for the Go implementation and the Java implementation.
+
+### Java
+
+We split the Java implementation to apache/arrow-java from apache/arrow and
+released a new version (18.2.0) from apache/arrow-java. This will reduce
+maintenance cost in apache/arrow and increase activities in apache/arrow-java.
+
+### Rust (arrow-rs)
+
+We continue to crank out releases every month with major versions every
+quarter. We have moved the object_store crate into its own repository to
+streamline development operations
+
+We have had major contributions for our parquet implementation such as
+encryption support and Arrow implementation such as support for extension
+types. While review bandwidth is (as always) limited we review most PRs within
+a few days and the code keeps flowing.
+
+## Community Health:
+
+In January, we reported a 20-30% drop in GitHub activity in the previous
+quarter. We said that this was consistent with the effects of the major
+layoffs of paid Arrow contributors mentioned in the October 2024 board update,
+and that as other companies pick up part of the workload, and some of those
+affected by the layoffs have found Arrow-related positions in other companies,
+we expected that dropoff to stabilize and perhaps recover this quarter.
+
+The metrics this quarter show signs of recovery. github@arrow.apache.org had a
+39% increase in traffic, bringing the number of messages up to 13,863,
+approaching the 14,773 number from the pre-layoff Q3 2024. Traffic on the dev@
+and user@ mailing lists are also up significantly. Statistics from GitHub show
+smaller changes, but the total number of commits is up to 2,297, a notable
+increase over 1,878 last quarter and approaching 2024 highs.</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-G">2025-01-15</a> &mdash; Neal Richardson<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange. More
+information can be found at https://arrow.apache.org/overview/.
+
+## Project Status:
+Current project status: Ongoing (high activity)
+Issues for the board: none
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (9 years ago)
+There are currently 112 committers and 53 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Curt Hagenlocher was added to the PMC on 2024-10-29
+- Gang Wu was added to the PMC on 2024-12-02
+- Adam Reeve was added as committer on 2024-11-18
+- Laurent Goujon was added as committer on 2024-11-25
+- Rossi Sun was added as committer on 2024-10-22
+
+## Project Activity:
+
+### Recent releases:
+
+* RS-OS-0.11.2 was released on 2024-12-24.
+* RS-54.0.0 was released on 2024-12-23.
+* JULIA-2.8.0 was released on 2024-12-06.
+* 18.1.0 was released on 2024-11-21.
+* RS-53.3.0 was released on 2024-11-20.
+* ADBC-15 was released on 2024-11-13.
+* JULIA-2.7.4 was released on 2024-10-30.
+* 18.0.0 was released on 2024-10-28.
+* RS-53.2.0 was released on 2024-10-24.
+* GO-18.0.0 was released on 2024-10-22.
+* RS-OS-0.11.1 was released on 2024-10-20.
+* NANOARROW-0.6.0 was released on 2024-10-13.
+
+Selected sub-project activity:
+
+### Arrow C Data Interface
+
+The proposed asynchronous version of the C Data Interface was merged:
+https://github.com/apache/arrow/pull/43632
+
+### Format
+
+We&rsquo;ve added a new experimental standard for statistics:
+https://arrow.apache.org/docs/dev/format/StatisticsSchema.html
+
+### Go
+
+We&rsquo;ve released a new version from the split repository (apache/arrow-go).
+We&rsquo;ll be able to maintain the Go implementation in this development style.
+
+### Java
+
+Like Go, the Java implementation has been moved to its repository to make
+independent releases. This will not require users to make any changes, but
+(like Go) will need work to set up independent CI and release processes.
+
+### MATLAB
+
+Initial support for reading and writing the Arrow IPC Stream Format was added.
+This work was done in part to enable
+[Arrow-over-HTTP](https://github.com/apache/arrow-experiments/tree/main/http/get_simple)
+workflows.
+
+### nanoarrow
+
+Version 0.6.0 was added, which included an IPC writer, CMake and meson
+configuration improvements, and DLPack/non-CPU device support in the Python
+bindings.
+
+### R
+
+A CVE was filed for arbitrary code execution when loading a malicious data
+file: https://www.cve.org/CVERecord?id=CVE-2024-52338
+
+### Rust
+
+The Rust implementation continues monthly releases, with breaking API changes
+restricted to every 3 months. This process seems to be working well and we
+have had less community pushback due to breaking changes. We continue to
+encourage additional community help maintaining / reviewing PRs, though PRs
+are still bottlenecked by reviewer bandwidth.
+
+Overall the focus has been on filling out DataType support in kernels, and
+interoperability with other implementations (Dictionary handling, ListArray
+field naming, etc.)
+
+Most work for the Rust object store has been related to incremental features,
+and small bug fixes. We are prioritizing stability.
+
+
+## Community Health:
+
+GitHub statistics show a 20-30% drop in activity this quarter:
+
+* github@arrow.apache.org had a 30% decrease in traffic in the past quarter
+(10460 emails compared to 14773)
+* 1878 commits in the past quarter (-21% change)
+* 1616 PRs opened on GitHub, past quarter (-27% change)
+* 1666 PRs closed on GitHub, past quarter (-22% change)
+* 1034 issues opened on GitHub, past quarter (-31% change)
+* 899 issues closed on GitHub, past quarter (-23% change)
+
+Given that the number of commits is down less than the traffic on the github@
+mailing list, we can infer that this means that PR review activity was more
+significantly reduced: there were fewer issues, PRs, and commits, and those
+that did occur got less discussion.
+
+Dev mailing list traffic is stable/slightly increased, as is the number of
+unique code contributors.
+
+This is all consistent with the effects of the major layoffs of paid Arrow
+contributors mentioned in the previous board update. If that is in fact the
+cause, we should expect that decrease to stabilize in the next quarter.
+Moreover, some of those affected by the layoffs have found Arrow-related
+positions in other companies (with at least one open source company stepping
+up to provide maintenance for Arrow), so we may see these numbers recover in
+the future.</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-F">2024-10-16</a> &mdash; Andrew Grove<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Project Status:
+Current project status: Ongoing (high activity)
+
+Issues for the board: None
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (9 years ago)
+There are currently 109 committers and 51 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ra&uacute;l Cumplido on 2023-11-12.
+- Will Ayd was added as committer on 2024-09-30
+
+## Project Activity:
+
+32- and 64-bits have been accepted as allowable bit-widths for the Decimal
+data types to expand compatibility with other systems.
+
+### Concerns over sustainability
+
+Major layoffs at one of the primary corporate contributors to Arrow are
+questioning the sustainability of ongoing maintenance and development of some
+Arrow implementations. Arrow is a successful and widely-used technology, so we
+believe that there should be potential funding opportunities out there, but
+how to materialize those opportunities is an open question.
+
+### Sub Project Updates
+
+Arrow has several subprojects, as listed on https://arrow.apache.org/
+
+### Arrow C data interface
+
+We&rsquo;re discussing the specification to pass statistics through the Arrow C data
+interface: https://github.com/apache/arrow/issues/38837
+
+### ADBC
+
+The last ADBC Libraries release featured a contributed BigQuery driver and
+Rust driver manager that is now available on crates.io. The forthcoming
+release features improvements in PostgreSQL type support and improvements in
+the C++ driver framework to make it easier for others to build new ADBC
+drivers.
+
+### Arrow Flight
+
+Based on continued interest from users in exposing more and more features from
+the underlying gRPC library, we would like to explore how we can simplify
+Flight and expose gRPC directly rather than spend more maintainer effort
+continually wrapping these APIs.
+
+### Arrow Flight SQL
+
+We&rsquo;re discussing a potential &lsquo;v2&rsquo; in the long term, based on the experiences
+of the Rust subproject: https://github.com/apache/arrow/issues/41840
+
+### Arrow Flight SQL adapter for PostgreSQL
+
+No progress. We&rsquo;re working on making COPY TO/FROM format extendable in
+PostgreSQL instead in this period. We can implement Arrow input/output support
+by this extendable point.
+
+### nanoarrow
+
+The forthcoming release of nanoarrow 0.6.0 is scheduled for the week of
+October 1 and features an IPC writer to match its IPC reader and StringView
+support. In addition to ADBC and the Snowflake Python connector, NVIDIA&rsquo;s cudf
+will use nanoarrow in its forthcoming version to power connectivity via the
+Arrow C Data/Device interface.
+
+### C++
+
+We&rsquo;ve added support for attaching statistics to read Arrow data.
+
+#### Dataset
+
+No update
+
+#### Parquet
+
+We&rsquo;ve added support for attaching Parquet statistics to read Arrow data.
+
+#### Acero &amp; Compute
+
+We've improved the internal row-oriented representation in compute module by
+widening the offset type to 64-bit (#43389). This enhancement resolves crashes
+and data corruption issues in aggregation and hash-join operations on large
+datasets due to offset overflow, significantly expanding the range of
+supported use cases.
+
+We've enhanced the performance of ordered aggregation in compute module
+(#44053), offering potential benefits for time-series applications.
+
+#### Gandiva
+
+We&rsquo;ve added support for LLVM 19.1.
+
+### C#
+
+No update
+
+### Go
+
+The go implementation has moved to its own GitHub repository in order to make
+independent releases. This will help both the Go implementation which won&rsquo;t
+have to perform major releases every quarter, with the given burden to update
+import paths to the users and the main implementation reducing the complexity
+on verification, release, CI. Decimal32 and Decimal64 have been added to the
+Go implementation, along with the C Data interface integrations.
+
+### Java
+
+Overall, we are trying to keep up with developments in other implementations
+and preparing for changes in Java 22 and beyond around off-heap memory (such
+as the FFM module). ListView and LargeListView have been added along with the
+C Data interface integrations. The REE core component has also been added. We
+have also removed a large number of build warnings from some of the modules.
+Memory-core now uses long in place of integer as a precursor for the FFM
+integration.
+
+### JavaScript
+
+No update
+
+### Julia
+
+No update
+
+### Rust
+
+The Rust community has mostly been focused on filling out missing feature
+gaps, including StringViewArray and BinaryViewArray support, optimizing
+kernels, new UnionArray kernels, and improving the parquet metadata API.
+
+As the crate matures, we have adopted a new release and versioning schedule[2]
+that tries to balance adding new features and minimizes API breakages. So far
+it seems to be working well.
+
+We are also working to expand out review capacity and community size (see very
+positive discussion on [1]) and the community has been responding well.
+[1]: https://github.com/apache/arrow-rs/issues/6418
+[2]: https://github.com/apache/arrow-rs?
+tab=readme-ov-file#release-versioning-and-schedule
+
+### C (GLib)
+
+We&rsquo;ve added more bindings of C++.
+
+We&rsquo;ve added support for MSVC.
+
+### MATLAB
+
+We attempted to integrate the release artifacts for the MATLAB interface with
+the MathWorks File Exchange (analogous to pypi.org or rubygems.org), but were
+blocked by:
+
+1. The inability to allow write permissions for the official MATLAB and
+   SImulink Integration GitHub app to the apache/arrow GitHub repository.
+2. The inability to upload MLTBX files containing binary files (e.g. .dll) to
+   the MathWorks File Exchange.
+
+### Python
+
+Python support for 3.13 has been added and Python 3.8 support has been
+dropped, starting on pyarrow 18.0.0. A free threaded build wheel has been also
+added for Python 3.13. From 18.0.0 onwards pyarrow can be installed without
+Numpy as a runtime dependency.
+
+### R
+
+No update
+
+### Ruby
+
+We&rsquo;ve added more bindings of C++.
+
+### Swift
+
+No update
+
+### Recent releases
+
+- RS-53.1.0 was released on 2024-10-06.
+- ADBC-14 was released on 2024-09-05.
+- RS-53.0.0 was released on 2024-09-03.
+- JULIA-2.7.3 was released on 2024-08-30.
+- RS-OS-0.11.0 was released on 2024-08-16.
+- RS-52.2.0 was released on 2024-07-28.
+- RS-OS-0.10.2 was released on 2024-07-21.
+- 17.0.0 was released on 2024-07-16.
+
+## Community Health:
+Community communication continues to be strong.
+
+A second edition of the book "In-Memory Analytics with Apache Arrow" was
+recently published.
+
+There has been one blog post published to https://arrow.apache.org/blog/ since
+the previous board report.
+
+The mailing lists are active
+
+- dev@arrow.apache.org had a 27% decrease in traffic in the past quarter (385
+emails compared to 523)
+- 1468 commits in the past quarter (-49% change)
+- 212 code contributors in the past quarter (-26% change)
+- 1353 PRs opened on GitHub, past quarter (-39% change)
+- 1264 PRs closed on GitHub, past quarter (-43% change)
+- 950 issues opened on GitHub, past quarter (-38% change)
+- 691 issues closed on GitHub, past quarter (-44% change)</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-F">2024-07-17</a> &mdash; Andrew Grove<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: None
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (8 years ago)
+There are currently 108 committers and 51 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ra&uacute;l Cumplido on 2023-11-12.
+- Dane Pitkin was added as committer on 2024-05-08
+- Sarah Gilmore was added as committer on 2024-04-10
+
+## Project Activity:
+
+
+The DataFusion and Ballista subprojects successfully moved to a
+new top-level
+Apache DataFusion project.
+
+
+Arrow has several subprojects, as listed on
+https://arrow.apache.org/
+
+### ADBC
+
+The 1.0.0 release (release &lsquo;12&rsquo;) was completed and the 1.1.0 (&lsquo;13&rsquo;) release is
+in progress. External contributors are working on support for Google BigQuery.
+
+### Arrow Flight
+
+The Disassociated IPC proposal was accepted, and the existing UCX prototype
+will be deprecated in favor of the new design.
+### Arrow Flight SQL
+
+We are still working through the process of the ODBC driver donation. Also,
+there&rsquo;s been some informal agreement among some committers that we may want to
+consider an updated version of the protocol.
+
+### Arrow Flight SQL adapter for PostgreSQL
+
+There is no progress in this period. We are working on a related approach
+(Improving Apache Arrow integration in the upstream PostgreSQL) and the
+ approach is not completed yet. We will restart this after the related
+ approach is completed.
+
+### nanoarrow
+
+The nanoarrow subproject continues to see increased engagement from users and
+contributors. Python bindings, non-CPU device support, and build system
+support were the primary development priorities in the last few months,
+whereas type support, non-CPU testing, and an IPC writer are the current areas
+of development.
+
+### C++
+
+No update provided
+#### Dataset
+
+There is no significant change in this period.
+
+#### Parquet
+
+We&rsquo;ve fixed some problems and improved performance.
+
+We&rsquo;ve migrated the issue tracking system to GitHub issues from JIRA.
+
+#### Acero &amp; Compute
+
+We&rsquo;ve improved list view support.
+
+#### Gandiva
+
+There is no significant change in this period.
+
+### C#
+
+We&rsquo;ve upgraded the required .NET version to 8 from 7. We are working on adding
+bindings of C++ dataset. We&rsquo;ll use the GLib bindings for it.
+
+### Go
+
+We&rsquo;ve implemented a new Apache Arrow Flight SQL bulk integration feature.
+We&rsquo;ve implemented a new Apache Arrow Flight SQL stateless prepared statement.
+### Java
+
+We have continued our work in adding new features and improving the developer
+experience. Adding support for StringView with C Data interface and
+experimental Listview support are main feature-wise contribution.
+
+Update Java Unit tests to use JUNIT5: resolved via multiple PRs and tracked
+via: #41680 Adding Basic StringView Implementation: Merged #40340 Adding C
+Data Interface for StringView Implementation: Merged #41967 Enable Spotless
+Plugin for code formatting: Resolved via multiple PRs and tracked via #40757
+Adding Basic ListViewVector Implementation: Merged #41285
+
+
+### JavaScript
+
+No update
+
+### Julia
+
+We&rsquo;ve released one new version.
+
+### Rust
+
+We are working to balance the need of API stability and to introduce breaking
+API changes and are trying to keep our monthly release cadence, but only
+release breaking API changes once a quarter. See [1] for more details We are
+still averaging several commits a day on average. Major items were a bug in
+the Interval implementation (fields were reversed) [2] and implementing
+StringView (especially an optimized reader from Parquet)[3]. Our documentation
+also continues to improve over time.
+
+[1] https://github.com/apache/arrow-rs?
+tab=readme-ov-file#release-versioning-and-schedule
+[2]: https://github.com/apache/arrow-rs/issues/5654
+[3]: https://github.com/apache/arrow-rs/issues/5374
+
+### C (GLib)
+
+We&rsquo;ve added support for Microsoft Visual C++.
+
+### MATLAB
+
+Basic C Data Interface support was merged in #41737. Basic Arrow IPC
+read/write support was merged in #42201. Support for GitHub Releases
+integration was merged in #41131. This work was done in support of enabling
+seamless integration between MathWorks File Exchange and the upstream Apache
+Arrow GitHub Releases area. However, this integration is currently blocked due
+to issues with the File Exchange GitHub App permissions. See the following
+mailing list thread.
+
+
+### Python
+
+There has been ongoing work to improve Python bindings support for non-CPU
+data. Especially as new features have been added on the C++ side when dealing
+with different devices, equivalent bindings are being developed on the Python
+side. Conversion from RecordBatch to Tensor has been added, Table to Tensor
+conversion is under review. This will enable ML libraries to use the memory
+representation of the data that fits their needs. PyArrow is now published as
+three separate packages on conda-forge, each package providing varying levels
+of functionality.
+
+### R
+
+There has been continued work on the package build system to adapt to CRAN
+requirements and make the package easier to install.
+### Ruby
+
+There is no significant change in this period.
+
+### Swift
+
+We&rsquo;ve added support for the C data interface. We&rsquo;ve added support for Codable.
+We&rsquo;ve added support for struct type.
+
+### Recent Releases
+
+- RS-52.1.0 was released on 2024-07-06.
+- ADBC-13 was released on 2024-07-05.
+- RS-52.0.0 was released on 2024-06-06.
+- NANOARROW-0.5.0 was released on 2024-05-26.
+- ADBC-12 was released on 2024-05-21.
+- 16.1.0 was released on 2024-05-14.
+- RS-OS-0.10.1 was released on 2024-05-14.
+- JULIA-2.7.2 was released on 2024-05-08.
+- RS-DATAFUSION-37.1.0 was released on 2024-04-22.
+- RS-OS-0.10.0 was released on 2024-04-22.
+- 16.0.0 was released on 2024-04-20.
+
+## Community Health:
+
+Community communication continues to be strong.
+
+There have been five blog posts published to
+https://arrow.apache.org/blog/ since the previous board report.
+
+The mailing lists are active.
+
+builds@arrow.apache.org had a 7% increase in traffic in
+ the past quarter (282 emails compared to 263).
+
+dev@arrow.apache.org had a 9% decrease in traffic in the
+past quarter (545 emails compared to 598). This is possibly
+related to DataFusion moving to a new TLP.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-F">2024-04-17</a> &mdash; Andrew Grove<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Project Status:
+Current project status: Ongoing (high activity)
+
+Issues for the board:
+
+The community has discussed and approved splitting the DataFusion subproject
+into its own top level Apache Project.  Please find a proposed resolution
+below for your consideration. The full proposal, discussion, IP Clearance and
+related material can be found on the mailing list thread
+https://lists.apache.org/thread/tv8s8ootxf7nrsp3vo1mt8mtxxt5qcor
+
+
+
+Resolution to Create the Apache DataFusion Project from the Apache Arrow
+DataFusion Sub Project
+
+=============================================================
+
+X. Establish the Apache DataFusion Project
+
+WHEREAS, the Board of Directors deems it to be in the best interests of the
+Foundation and consistent with the Foundation's purpose to establish a Project
+Management Committee charged with the creation and maintenance of open-source
+software related to an extensible query engine for distribution at no charge
+to the public.
+
+NOW, THEREFORE, BE IT RESOLVED, that a Project Management Committee (PMC), to
+be known as the "Apache DataFusion Project", be and hereby is established
+pursuant to Bylaws of the Foundation; and be it further
+
+RESOLVED, that the Apache DataFusion Project be and hereby is responsible for
+the creation and maintenance of software related to an extensible query
+engine; and be it further
+
+RESOLVED, that the office of "Vice President, Apache DataFusion" be and hereby
+is created, the person holding such office to serve at the direction of the
+Board of Directors as the chair of the Apache DataFusion Project, and to have
+primary responsibility for management of the projects within the scope of
+responsibility of the Apache DataFusion Project; and be it further
+
+RESOLVED, that the persons listed immediately below be and hereby are
+appointed to serve as the initial members of the Apache DataFusion Project:
+
+* Andy Grove (agrove@apache.org)
+* Andrew Lamb (alamb@apache.org)
+* Dani&euml;l Heres (dheres@apache.org)
+* Jie Wen (jakevin@apache.org)
+* Kun Liu (liukun@apache.org)
+* Liang-Chi Hsieh (viirya@apache.org)
+* Qingping Hou: (houqp@apache.org)
+* Wes McKinney(wesm@apache.org)
+* Will Jones (wjones127@apache.org)
+
+RESOLVED, that the Apache DataFusion Project be and hereby is tasked with the
+migration and rationalization of the Apache Arrow DataFusion sub-project; and
+be it further
+
+RESOLVED, that all responsibilities pertaining to the Apache Arrow DataFusion
+sub-project encumbered upon the Apache Arrow Project are hereafter discharged.
+
+NOW, THEREFORE, BE IT FURTHER RESOLVED, that Andrew Lamb be appointed to the
+office of Vice President, Apache DataFusion, to serve in accordance with and
+subject to the direction of the Board of Directors and the Bylaws of the
+Foundation until death, resignation, retirement, removal or disqualification,
+or until a successor is appointed.
+
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (8 years ago)
+There are currently 107 committers and 52 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ra&uacute;l Cumplido on 2023-11-12.
+- Bryce Mecum was added as committer on 2024-03-18
+- Jay Zhan was added as committer on 2024-02-15
+- Jeffrey Vo was added as committer on 2024-01-31
+- Joel Lubinitsky was added as committer on 2024-03-31
+
+## Project Activity:
+
+Arrow has several subprojects, as listed on https://arrow.apache.org/
+
+### ADBC
+
+ADBC 0.10.0 and 0.11.0 were released, and the project is aiming for a 1.0.0
+release next. In the meantime, we&rsquo;ve done heavy refactoring to unify the
+separate driver codebases and are adding C#/.NET to the released packages. The
+drivers themselves are continuing to gain performance and feature
+improvements, such as a much faster bulk table upload for the Snowflake
+driver.
+
+### Arrow Flight
+
+We are working on a set of experimental proposals to extend Flight to work
+with UCX [1] and HTTP-based transports, in addition to the current support for
+gRPC, and to extend the Flight &ldquo;result set&rdquo; to cover &ldquo;cloud fetch&rdquo; use cases
+[2]. UCX support will enable better Arrow integration with hardware
+accelerators, while the &ldquo;cloud fetch&rdquo; concept will allow Arrow-based services
+to scale better horizontally and work better with cloud provider services.
+
+[1] https://openucx.org/
+[2] https://lists.apache.org/thread/wknj72clsf1ty9q9s18brw9qpsrp5p39
+
+### Arrow Flight SQL
+
+There is community interest in implementing and extending an ODBC driver for
+Arrow Flight SQL, and we are still in the process of accepting an ODBC
+driver[1] to support that interest.
+
+[1] https://lists.apache.org/thread/t109wsn86cnk5kbc390snco0s751qhpv
+
+Various community members representing different organizations continue to
+update the protocol with new features and clarifications, such as session
+variable support and stateless prepared statements.
+
+
+### Arrow Flight SQL adapter for PostgreSQL
+
+There were some feedback after the first release and we solved most of them.
+We&rsquo;ll release the next version in a few months.
+
+Additionally, an Arrow developer has been working towards upstream support for
+Arrow in PostgreSQL&rsquo;s COPY command ([1][2]).
+
+[1] https://www.postgresql.org/message-id/
+20240124.144936.67229716500876806.kou%40clear-code.com
+[2] https://slide.rabbit-shocker.org/authors/kou/
+postgresql-conference-japan-2023/
+
+### DataFusion &amp; Ballista
+
+DataFusion
+
+DataFusion continues releasing regularly (approximately once per month) We
+have had a paper describing the system accepted to the ACM SIGMOD
+conference[1] The community approved a proposal to promote DataFusion
+(including the Ballista and Comet subprojects) to a top-level ASF project, and
+the proposed resolution is at the top of this email We published a blog post
+that describes major projects underway [2] Major areas of activity include
+improved planning performance, and making it easier to customize DataFusion
+via expanded UDF APIs.
+
+Ballista 0.12 was released on 2/6. This is the first major release in ~10
+months. There continues to be interest in Ballista from the community, but the
+project is not receiving regular contributions currently.
+
+The &ldquo;Comet&rdquo; Spark Accelerator, built on DataFusion, was donated to the project
+this year: [3]
+
+[1]: https://github.com/apache/arrow-datafusion/issues/8373
+#issuecomment-2025133714
+[2]: https://arrow.apache.org/blog/2024/01/19/datafusion-34.0.0/
+[3]: https://arrow.apache.org/blog/2024/03/06/comet-donation/
+
+
+
+### nanoarrow
+
+Arrow nanoarrow continues its ~quarterly release cadence with active
+improvement to the C, R, and Python implementations scheduled for release in
+mid-January as nanoarrow 0.4.
+
+### Language Area Updates
+
+Arrow has at least 13 different language implementations, as explained in
+https://arrow.apache.org/overview/
+
+Arrow 15.0.0, 15.0.1 and 15.0.2 were released from the monorepo:
+
+https://arrow.apache.org/blog/2024/01/10/15.0.0-release/
+https://arrow.apache.org/blog/2024/03/07/15.0.1-release/
+https://arrow.apache.org/blog/2024/03/18/15.0.2-release/
+
+### C++
+
+Fixed shape tensor extension type has been added as a new canonical extension
+type in release 12.0.0 and variable shape tensor extension is now being under
+review for the next release (16.0.0).
+
+AzureFileSystem is feature complete and ready for the 16.0 release. It can
+detect Hierarchical Namespace support and automatically use the Azure Data
+Lake Gen 2 APIs or fall back to the Azure Blobs API.
+
+#### Dataset &amp; Parquet
+
+Added support for reading and writing the newly added Parquet float16 logical
+type.
+
+Added support for Parquet modular encryption.
+
+#### Acero &amp; Compute
+
+Improvements were made to several compute functions.
+
+Added support for serializing and deserializing compute expressions using
+Substrait.
+
+#### Gandiva
+
+Migrated LLVM JIT engine from MCJIT to ORC v2/LLJIT.
+
+Added support for the latest LLVM (17).
+
+Added support for registering external function registries.
+
+Added support for registering external C functions.
+
+### C#
+
+The C# implementation has been steadily improving its compatibility with the
+standard. Since the last report, it has gained support for duration and
+interval types, as well as the new types utf8 view, binary view and list view.
+Dictionaries now work correctly in file and memory implementations, and there
+are only four explicit exclusions for C# in the Archery integration tests.
+
+### Go
+
+Integration testing for the C Data API has been added to the CI for Go and
+other implementations. The Parquet implementation continues to gain fixes for
+different encoding/decoding types and bug fixes. Also fixed Go release
+verification for arm64.
+
+### Java
+
+We are working on adding nullability annotations and enabling module support
+for Java 9+.
+
+### JavaScript
+
+No update
+
+### Julia
+
+Version 2.7.0 was released on 10 December 2023
+
+
+### Rust
+
+The parquet implementation continues to mature, for example supporting new
+statistics metadata. The FFI bindings have been improved as well, and are now
+integration tested against arrow-cpp (among others)
+
+The community is working on support for the newly added StringView, BinaryView
+and ListView array types
+
+The object_store module, developed as part of this project, allows for
+generically interacting with object store systems such as AWS S3, Google Cloud
+Storage, and Azure Blob Storage. This crate has seen significant adoption
+outside of the arrow community, for example the crates.io service itself.
+
+
+### C (GLib)
+
+No update
+
+### MATLAB
+
+We are currently working on integrating with the project release tooling to
+make it possible to distribute pre-built MLTBX files for easy installation of
+the MATLAB interface.
+
+### Python
+
+There has been ongoing work on improving interoperability with other
+Python
+projects for example adding C Data Interface PyCapsule protocol and
+implementing the usage of capsules in ADBC and nanoarrow-python. We have also
+implemented the DLPack protocol on Arrow Arrays that is used to move the data
+to ML libraries.
+
+A critical security vulnerability was discovered in PyArrow versions 0.14.0 to
+14.0.0 that allowed arbitrary code execution when loading a malicious Arrow
+IPC, Feather, or Parquet data file (CVE-2023-47248). The vulnerability was
+patched in PyArrow version 14.0.1. A hotfix package was released to patch the
+vulnerability in all other versions of PyArrow for users unable to immediately
+upgrade.
+
+### R
+
+
+Continued work on the build system to adapt to new requirements by CRAN and
+streamline the submission process.
+
+### Ruby
+
+Added some convenient APIs.
+
+### Swift
+
+Improved Flight SQL implementation.
+
+Recent releases:
+
+    RS-DATAFUSION-37.0.0 was released on 2024-04-04. ADBC-0.11.0 was released
+    on 2024-03-31.
+    15.0.2 was released on 2024-03-18. RS-51.0.0 was released on 2024-03-18.
+    RS-DATAFUSION-PYTHON-36.0.0 was released on 2024-03-10.
+    15.0.1 was released on 2024-03-07. RS-OS-0.9.1 was released on 2024-03-05.
+    ADBC-0.10.0 was released on 2024-02-22. RS-DATAFUSION-36.0.0 was released
+    on 2024-02-19. RS-BALLISTA-0.12.0 was released on 2024-02-06.
+    RS-DATAFUSION-PYTHON-35.0.0 was released on 2024-02-04. JULIA-2.7.1 was
+    released on 2024-02-01. NANOARROW-0.4.0 was released on 2024-02-01.
+    RS-DATAFUSION-35.0.0 was released on 2024-01-25.
+    15.0.0 was released on 2024-01-21. RS-50.0.0 was released on 2024-01-12.
+    ADBC-0.9.0 was released on 2024-01-08. RS-OS-0.9.0 was released on
+    2024-01-08.
+
+## Community Health:
+
+Community communication continues to be strong.
+
+There have been 9 blog posts published to https://arrow.apache.org/blog/  in
+the last 3 months.
+
+The mailing lists are active
+
+
+dev@arrow.apache.org had a 7% decrease in traffic in the past quarter (612
+emails compared to 657) 2517 commits in the past quarter (3% increase) 296
+code contributors in the past quarter (16% increase) 1931 PRs opened on
+GitHub, past quarter (6% increase) 1909 PRs closed on GitHub, past quarter (8%
+increase) 1633 issues opened on GitHub, past quarter (17% increase) 1196
+issues closed on GitHub, past quarter (10% increase)</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-H">2024-01-17</a> &mdash; Andrew Grove<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Project Status:
+Current project status:Ongoing (high activity)
+
+Issues for the board:None
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (8 years ago)
+There are currently 103 committers and 52 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Jonathan Keane was added to the PMC on 2023-10-13
+- Ra&uacute;l Cumplido was added to the PMC on 2023-11-12
+- Curt Hagenlocher was added as committer on 2023-10-14
+- Felipe Oliveira Carvalho was added as committer on 2023-12-06
+- James Duong was added as committer on 2023-11-16
+- Xuwei Fu was added as committer on 2023-10-22
+
+## Project Activity:
+
+### Sub Project Updates
+Arrow has several subprojects, as listed on https://arrow.apache.org/
+
+### ADBC
+
+ADBC 0.8.0 was released on 9 November 2023. Highlights:
+
+C#/.NET has added a BigQuery driver. Also, it now can be used through ADO.NET.
+The R bindings now use the ADBC 1.1.0 specification, and more packages are now
+available on CRAN. The Snowflake driver now has an option to control whether
+to return decimal types or attempt to convert to integers/floats. The
+PostgreSQL driver now uses COPY for bulk ingestion, which Pandas has found is
+approximately 35x faster than their previous method. The SQLite driver can now
+load extensions and supports more data types, including Arrow binary (SQL
+BLOB), and supports binding some dictionary-encoded types (which will be
+unpacked).
+
+### Arrow Flight
+
+No update
+
+### Arrow Flight SQL
+
+There is community interest in implementing and extending an ODBC driver for
+Arrow Flight SQL, and we are in the process of accepting an ODBC driver[1] to
+support that interest.
+
+[1] https://lists.apache.org/thread/t109wsn86cnk5kbc390snco0s751qhpv
+
+
+### Arrow Flight SQL adapter for PostgreSQL
+
+There were some feedback after the first release and we solved most of them.
+We&rsquo;ll release the next version in a few months.
+
+### DataFusion &amp; Ballista
+
+DataFusion continues releasing regularly. We have submitted a proposed paper
+describing the system to the ACM SIGMOD conference and in general are trying
+to scale the project as it grows in popularity. There is a draft proposal for
+promoting DataFusion (including Ballista) to a top-level ASF project, and we
+hope to have a proposed board resolution for the April board meeting.
+
+Ballista is not very active but continues to receive occasional contributions.
+
+
+### nanoarrow
+
+Arrow nanoarrow continues its ~quarterly release cadence with active
+improvement to the C, R, and Python implementations scheduled for release in
+mid-January as nanoarrow 0.4.
+
+### Language Area Updates
+
+Arrow has at least 13 different language implementations, as explained in
+https://arrow.apache.org/overview/
+
+Arrow 14.0.0 was released from the monorepo:
+https://arrow.apache.org/blog/2023/11/01/14.0.0-release/
+
+### C++
+
+Fixed shape tensor extension type has been added as a new canonical extension
+type in release 12.0.0 and variable shape tensor extension is now being under
+review for the next release (16.0.0).
+
+#### Dataset &amp; Parquet
+
+Added support for reading and writing the newly added Parquet float16 logical
+type.
+
+Added support for Parquet modular encryption.
+
+#### Acero &amp; Compute
+
+Improvements were made to several compute functions.
+
+Added support for serializing and deserializing compute expressions using
+Substrait.
+
+#### Gandiva
+
+Migrated LLVM JIT engine from MCJIT to ORC v2/LLJIT.
+
+Added support for the latest LLVM (17).
+
+Added support for registering external function registries.
+
+Added support for registering external C functions.
+
+### C#
+
+The C# implementation has been steadily improving its compatibility with the
+standard. Since the last report, it has gained support for duration and
+interval types, as well as the new types utf8 view, binary view and list view.
+Dictionaries now work correctly in file and memory implementations, and there
+are only four explicit exclusions for C# in the Archery integration tests.
+
+### Go
+
+Integration testing for the C Data API has been added to the CI for Go and
+other implementations. The Parquet implementation continues to gain fixes for
+different encoding/decoding types and bug fixes. Also fixed Go release
+verification for arm64.
+
+### Java
+
+We are working on adding nullability annotations and enabling module support
+for Java 9+.
+
+### JavaScript
+
+No update
+
+### Julia
+
+Version 2.7.0 was released on 10 December 2023
+
+
+### Rust
+
+The parquet implementation continues to mature, for example supporting new
+statistics metadata. The FFI bindings have been improved as well, and are now
+integration tested against arrow-cpp (among others)
+
+The object_store module, developed as part of this project, allows for
+generically interacting with object store systems such as AWS S3, Google Cloud
+Storage, and Azure Blob Storage. This crate has seen significant adoption
+outside of the arrow community, for example the crates.io service itself.
+
+
+### C (GLib)
+
+No update
+
+### MATLAB
+
+We are currently working on integrating with the project release tooling to
+make it possible to distribute pre-built MLTBX files for easy installation of
+the MATLAB interface.
+
+### Python
+
+There has been ongoing work on improving interoperability with other Python
+projects for example adding C Data Interface PyCapsule protocol and
+implementing the usage of capsules in ADBC and nanoarrow-python. We have also
+implemented the DLPack protocol on Arrow Arrays that is used to move the data
+to ML libraries.
+
+A critical security vulnerability was discovered in PyArrow versions 0.14.0 to
+14.0.0 that allowed arbitrary code execution when loading a malicious Arrow
+IPC, Feather, or Parquet data file (CVE-2023-47248). The vulnerability was
+patched in PyArrow version 14.0.1. A hotfix package was released to patch the
+vulnerability in all other versions of PyArrow for users unable to immediately
+upgrade.
+
+### R
+
+Completed large parts of a major rework of the Arrow R package build system.
+These changes aim to reduce maintenance burden and streamline new-contributor
+experience e.g. by automating the use of nightly builds which enables
+contributions to the R package without having to setup a C++ development
+environment.
+
+### Ruby
+
+Added some convenient APIs.
+
+### Swift
+
+Improved Flight SQL implementation.
+
+## Community Health:
+Community communication continues to be strong.
+
+There have been 5 blog posts published to https://arrow.apache.org/blog/  in
+the last 3 months.
+
+The mailing lists are active</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-G">2023-10-18</a> &mdash; Andrew Lamb<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software
+related to columnar in-memory processing and data interchange. More
+information can be found at https://arrow.apache.org/overview/
+
+## Project Status:
+
+Current project status: Ongoing (high activity)
+
+Issues for the board: None
+
+## Membership Data:
+
+Apache Arrow was founded 2016-01-19 (8 years ago)
+There are currently 99 committers and 50 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dewey Dunnington on 2023-06-22.
+- Oleks V. was added as committer on 2023-09-30
+- Metehan Yildirim was added as committer on 2023-08-29
+
+
+## Project Activity:
+
+We added a new array layout, [Utf8View] to the Arrow spec, which allows more
+efficient variable length string handling. There has also been much
+[Utf8ViewDiscussion] about how to use this new layout to interoperate better
+ with the broader ecosystem
+
+We have started adding cross-language integration tests for the [C Data
+Interface], ensuring that implementations comply with the spec and are
+concretely interoperable. This is in addition to the existing integration
+tests for the [IPC format] and for the [Flight RPC] protocol.
+
+We registered our DOAP file: https://projects.apache.org/project.html?arrow
+
+[Utf8View]: https://s.apache.org/ldd1b
+[Utf8ViewDiscussion]: https://s.apache.org/a1v8o
+
+[C Data Interface]: https://arrow.apache.org/docs/format/CDataInterface.html
+
+[IPC format]: https://s.apache.org/5uwhb
+
+[Flight RPC]: https://arrow.apache.org/docs/format/Flight.html
+
+[ListView and LargeListView]: We have also finalized adding alternative
+ layouts to variable-length list arrays that require an extra buffer with
+ sizes, a layout found in other systems such as DuckDB and Velox. This in turn
+ allows offsets to be out of order. Elements of the child array do not have to
+ be stored in the same order they logically appear in the list elements of the
+ parent array.
+
+[C Data Interface]: ArrowDeviceArray and ArrowDeviceArrayStream structs were
+ added to the spec to allow support for Arrow Arrays whose buffers are on a
+ non-CPU device.
+
+## Sub Project Updates
+Arrow has several subprojects, as listed on https://arrow.apache.org/
+
+### ADBC
+
+Version 0.7.0 was released, along with a 1.1.0 revision of the API
+specification it implements.
+
+### Arrow Flight
+
+We added support for long-running queries use case.
+
+### Arrow Flight SQL
+
+There have been a few discussions about small improvements as systems
+implement FlightSQL more broadly
+
+### Arrow Flight SQL adapter for PostgreSQL
+
+This is a new sub project that adds Arrow Flight SQL endpoint to PostgreSQL.
+
+We have released the first version:
+https://arrow.apache.org/blog/2023/09/13/flight-sql-postgresql-0.1.0-release/
+
+
+### DataFusion
+
+DataFusion continues releasing regularly. We are working on a paper
+describing the system for ACM SIGMOD, and in general are trying to scale the
+project as it grows in popularity. We have added User Defined Window
+functions, much improved List and Struct support, Spillable Hashing, better
+join performance, parallel writes, and a new library user guide.
+
+### Acero
+
+No Update
+
+### nanoarrow
+
+We released version 0.3.0, which focused on solidifying the C library and IPC
+implementation.
+
+## Language Area Updates
+
+Arrow has at least 13 different language implementations, as explained in
+https://arrow.apache.org/overview/
+
+Arrow 13.0.0 was released from the monorepo:
+https://arrow.apache.org/blog/2023/08/24/13.0.0-release/
+
+### C++
+
+StringView and ListView data types were added to the C++ implementation, along
+with ArrowDeviceArray and ArrowDeviceArrayStreams for non-CPU devices.
+
+### C#
+
+The C# implementation gained support for Flight SQL servers and clients. It
+also added support for fixed-size lists, dense and sparse unions and maps, and
+is now complete enough to express the types used in ADBC schemas. Its C API
+support has been hooked up to the formal C Data interface integration testing.
+
+### Go
+
+StringView and ListView data types are added to the Go implementation.
+
+### Java
+Support for Java 21 has been added.
+
+### JavaScript
+
+### Julia
+
+No highlight.
+
+### Rust
+
+The Rust implementation reworked the computation kernels, and is in the
+process of adding StringView.
+
+### C (GLib)
+
+We have added new bindings continually as usual.
+
+### MATLAB
+
+We started to use GitHub Projects to organize the MATLAB bindings tasks:
+https://github.com/orgs/apache/projects/289. We have also continued to expand
+the MATLAB bindings by adding tabular types (i.e. RecordBatch and Table), more
+Array types (struct, date, time, timestamp, &hellip;), and CSV file I/O. We are
+actively working towards cutting an initial &ldquo;0.1&rdquo; release of the MATLAB
+bindings in the coming weeks.
+
+### Python
+
+
+
+### R
+
+Added bindings to the C++ functionality for reading ND-JSON, and continued to
+work to ensure dplyr compatibility.
+
+### Ruby
+
+We have added new bindings continually as usual.
+
+### Swift
+
+No highlight.
+
+## Recent Releases:
+* NANOARROW-0.3.0 was released on 2023-09-29.
+* RS-OS-0.7.1 was released on 2023-09-29.
+* ADBC-0.7.0 was released on 2023-09-23.
+* RS-47.0.0 was released on 2023-09-22.
+* RS-DATAFUSION-PYTHON-31.0.0 was released on 2023-09-18.
+* FLIGHT-SQL-POSTGRESQL-0.1.0 was released on 2023-09-13.
+* RS-DATAFUSION-31.0.0 was released on 2023-09-11.
+* ADBC-0.6.0 was released on 2023-08-28.
+* RS-DATAFUSION-30.0.0 was released on 2023-08-25.
+* RS-46.0.0 was released on 2023-08-24.
+* 13.0.0 was released on 2023-08-23.
+* RS-OS-0.7.0 was released on 2023-08-18.
+* RS-DATAFUSION-29.0.0 was released on 2023-08-14.
+* RS-45.0.0 was released on 2023-08-02.
+* RS-DATAFUSION-28.0.0 was released on 2023-07-25.
+* RS-44.0.0 was released on 2023-07-18.
+
+
+## Community Health:
+Community communication continues to be strong.
+
+There have been 5 blog posts published to https://arrow.apache.org/blog/  in
+the last 3 months.
+
+The mailing lists are active
+
+
+* dev@arrow.apache.org had a 32% decrease in traffic in the past quarter (545
+  emails compared to 798)
+* user@arrow.apache.org had a 37% decrease in traffic in the past quarter (76
+  emails compared to 120)
+
+For the mono repo:
+
+* 2266 commits in the past quarter (-2% change)
+* 249 code contributors in the past quarter (no change)
+* 1788 PRs opened on GitHub, past quarter (-12% change)
+* 1682 PRs closed on GitHub, past quarter (-16% change)
+* 1499 issues opened on GitHub, past quarter (-8% change)
+* 1211 issues closed on GitHub, past quarter (-11% change)</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#attachment-F">2023-07-19</a> &mdash; Andrew Lamb<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software
+related to columnar in-memory processing and data interchange. More
+information can be found at https://arrow.apache.org/overview/
+
+## Project Status:
+
+Current project status: Ongoing (high activity)
+
+Issues for the board: None
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (7 years ago)
+There are currently 97 committers and 50 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Ben Baumgold was added to the PMC on 2023-06-19
+- Jie Wen was added to the PMC on 2023-06-10
+- Dewey Dunnington was added to the PMC on 2023-06-22
+- Matthew Topol was added to the PMC on 2023-05-02
+- Gang Wu was added as committer on 2023-05-15
+- Kevin Gurney was added as committer on 2023-07-04
+- Marco Neumann was added as committer on 2023-05-11
+- Mehmet Ozan Kabak was added as committer on 2023-06-10
+- Ruihang Xia was added as committer on 2023-04-15
+
+## Project Activity:
+
+There has been healthy debate about adding new formats, [StringArray] and
+[ListView], focused on increasing Arrow&rsquo;s appeal in high performance
+ computation engines.
+
+We have completed the transition from JIRA to using GitHub issues for the mono
+repo and that appears to be going well.
+
+The DataFusion subproject is considering applying to become its own top level
+Apache project (see DataFusion update below)
+
+[StringArray]: https://lists.apache.org/thread/c6frlr9gcxy8qdhbmv8cn3rdjbrqxb1v
+[ListView]: https://lists.apache.org/thread/r28rw5n39jwtvn08oljl09d4q2c1ysvb
+
+
+## Sub Project Updates
+Arrow has several subprojects, as listed on https://arrow.apache.org/
+
+### ADBC
+
+We have released 2 new minor versions. They include new drivers and new
+implementations.
+
+### Arrow Flight
+
+We have added new features to the Arrow Flight specification:
+
+1. Ordered data support: https://github.com/apache/arrow/issues/34852
+2. Resultset expiration support: https://github.com/apache/arrow/issues/35500
+
+### Arrow Flight SQL
+
+We have updated the Arrow Flight SQL specifications based on the above Arrow
+Flight update.
+
+### DataFusion
+
+DataFusion continues to grow and mature. The community added many new features
+as described in the latest [blog] post, and discussed and came to consensus on
+the [goals] of the project and is discussing a [move to its own top level
+Apache project]. Current development focus is on performance and adding better
+support for structured types such as Lists and Structs. We expect more work on
+improving documentation and communicating externally over the next quarter.
+
+[blog]: https://arrow.apache.org/blog/2023/06/24/datafusion-25.0.0/
+[goals]: https://github.com/apache/arrow-datafusion/discussions/6441
+[move to its own top level Apache project]:
+ https://github.com/apache/arrow-datafusion/discussions/6475
+
+
+## Language Area Updates
+
+Arrow has at least 12 different language implementations, as explained in
+https://arrow.apache.org/overview/
+
+Arrow 12.0.0 was released from the monorepo:
+https://arrow.apache.org/blog/2023/05/02/12.0.0-release/
+
+### C++
+
+PRs have been created with example implementations of two new layouts, Array
+View and String View.  These layouts are motivated by Arrow-compatible engines
+which found these layouts to be more efficient for their workflows.
+
+As mentioned in the previous report, the C++ compute engine Acero was broken
+out into a separate module and Arrow-C++ can now be built without it, allowing
+for more modular feature configuration.
+
+### C#
+
+C# now has a complete implementation of the C data interface, allowing for
+efficient intra-process communication between C# and other languages.  In
+addition, there has been some early discussion
+
+### Go
+
+PRs were created with the example implementation of StringView for Go to be
+the second implementation in order to vote on the layout. Changes were
+introduced to improve compatibility with x86 (32-bit) systems and TinyGo
+builds for WebAssembly builds, along with corresponding CI builds.
+
+A default Arrow Flight middleware was added for handling Cookies via gRPC
+headers.
+
+Usage of the Go implementation continues to grow and expand in the community.
+
+### Java
+
+Ongoing maintenance of the Arrow Java implementation remains steady.
+
+### JavaScript
+
+### Julia
+We have released new versions rapidly when we fix a problem.
+
+New PMC member who focuses on Julia has joined. There are 2 PMC members who
+focus on Julia now.
+
+### nanoarrow
+
+The 0.2.0 release of nanoarrow featured support for decoding the Arrow IPC
+format and included a number of interface improvements and bugfixes resulting
+from early usage. Ongoing work includes support for non-CPU data via the Arrow
+C Device interface and documentation improvements suggested by early users of
+the library.
+
+
+### Rust
+
+The Rust implementation has been focused on improving the UX of the API, the
+speed, consistency and correctness (timezones!) of the kernels.
+
+### C (GLib)
+
+We have added new bindings continually as usual.
+
+### MATLAB
+
+New committer who focuses on MATLAB has joined. The committer is the first
+committer who focuses on MATLAB. We&rsquo;ll expand the MATLAB community.
+
+Integrated support for mathworks/libmexclass, enabling streamlined development
+of the MATLAB interface. As a result, significant progress has been made on
+public MATLAB APIs, including support for Array and RecordBatch construction
+from equivalent MATLAB types (e.g. table).
+
+Recently merged Windows and ccache CI support, bridging the platform gap for
+MATLAB qualification. This will help ensure quality of PRs and improve
+developer confidence when making changes.
+
+Next steps for the MATLAB interface include working on compound / nested data
+types and tabular file I/O workflows.
+
+### Python
+
+The python community is embracing &ldquo;protocols&rdquo;, which allow for
+library-agnostic interchange and duck-typing.  Pyarrow has added support for
+the dataframe interchange protocol which maps to pyarrow&rsquo;s Table class.  In
+addition, some early discussion has begun around a dataset protocol based on
+pyarrow&rsquo;s datasets API.
+
+### R
+
+The R bindings now support JSON Datasets and continue to benefit from ongoing
+performance enhancements and feature additions in the C++ library.
+
+### Ruby
+
+Ruby related questions/issue reports were increased. It shows that user base
+of the Ruby bindings is increasing.
+
+### Swift
+
+We have started implementing Arrow Flight.
+
+## Community Health:
+Community communication continues to be strong.
+
+There have been 9 blog posts published to https://arrow.apache.org/blog/  in
+the last 3 months, including two from community members on their use of Arrow
+
+The mailing lists are active
+
+* dev@arrow.apache.org had a 10% decrease in traffic in the past quarter (779
+  emails compared to 858)
+* jira@arrow.apache.org had a 100% decrease in traffic in the past quarter (0
+  emails compared to 10778)
+
+For the mono repo:
+
+* 2275 commits in the past quarter (5% increase)
+* 254 code contributors in the past quarter (1% increase)
+* 1986 PRs opened on GitHub, past quarter (-6% change)
+* (1954 PRs closed on GitHub, past quarter (-11% change)
+* 1573 issues opened on GitHub, past quarter (-11% change)
+* 1342 issues closed on GitHub, past quarter (-5% change)</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-I">2023-04-19</a> &mdash; Andrew Lamb<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software
+related to columnar in-memory processing and data interchange. More
+information can be found at https://arrow.apache.org/overview/
+
+
+## Issues:
+There are no specific issues to report
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (7 years ago)
+There are currently 92 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- Will Jones was added to the PMC on 2023-03-12
+- Mustafa Akur was added as committer on 2023-04-05
+- Brent Gardner was added as committer on 2023-01-17
+- Wang Mingming was added as committer on 2023-02-21
+
+## Project Activity:
+
+The main mono repo moved to github and from JIRA for issues reporting, to
+lower the friction for new contributors to participate. This friction was
+partly caused by the new requirement for PMC to create JIRA accounts, as well
+as the need for 2 separate accounts (JIRA and github).
+
+A run-end encoded (REE) layout has been added to the Arrow Columnar Format:
+https://arrow.apache.org/docs/format/Columnar.html#run-end-encoded-layout REE
+is a variation of run-length encoding (RLE) and is well-suited for
+representing data containing sequences of the same value in a way that allows
+efficient random access from a logical index using binary search.
+
+The Arrow Columnar Format now defines canonical extension types:
+https://arrow.apache.org/docs/dev/format/CanonicalExtensions.html#official-list
+This provides a way to extend Arrow data types by including the specification
+in the official Arrow documentation. This way the extension type is specified
+as a canonical extension type. The first canonical extension type to be added
+to the list is Fixed Shape Tensor Extension Type. The implementation of which
+will also be added into the Arrow C++.
+
+
+## Community Health:
+
+In response to several queries about becoming a committer, the PMC agreed upon
+a public description of the criteria used, which is now posted posted at
+https://arrow.apache.org/committers/
+
+There have been 8 blog posts published to https://arrow.apache.org/blog/  in
+the last 3 months, including one from the community
+https://arrow.apache.org/blog/2023/04/11/our-journey-at-f5-with-apache-arrow-part-1/
+about mapping telemetry data into Arrow.
+
+## Language Area Updates
+
+
+Arrow has at least 12 different language implementations, as explained in
+https://arrow.apache.org/overview/
+
+Arrow 11.0.0 was released from the monorepo:
+https://arrow.apache.org/blog/2023/01/25/11.0.0-release/
+
+### ADBC
+Arrow ADBC was released as part of a larger effort to foster integration at a
+higher level. See the relevant blog entries
+https://arrow.apache.org/blog/2023/02/16/adbc-0.2.0-release/ and
+https://arrow.apache.org/blog/2023/03/21/adbc-0.3.0-release/ for more detail
+
+A proposal for Rust support is underway, and there are discussions about
+extending the API specification as well.
+
+### C++
+
+The new run-end encoded array type has been added to the C++ implementation.
+This array type was inspired by Arrow-compatible engines. Work will continue
+in the subsequent releases to integrate this data type into additional parts
+of the C++ codebase, such as the compute kernels.
+
+The Plasma subproject will be removed in the 12.0.0 release. It was originally
+donated by the Ray project, but the original maintainers from Ray forked it
+and reintegrated it as a private utility for Ray, since a tighter coupling
+allowed them to make better optimizations. The Arrow subproject has been
+mostly unmaintained since. However, in the meantime Arrow has added its own
+homegrown protocols for exchanging data: Flight RPC and the C Data Interface.
+
+The Acero compute engine, currently embedded within the core libarrow shared
+library, is being pulled out into a separate library. This will allow the C++
+distribution to be more modular and also help support splitting the
+higher-level bindings (such as Python) into smaller sub-packages.
+
+### C#
+
+Work has started on adding the C Data Interface to the C# implementation. This
+will allow this implementation to create C# wrappers around Arrow libraries
+implemented in other languages, such as the C++ Parquet reader or the
+DataFusion query engine.
+
+### Go
+
+The Go implementation has released various compute functionality natively in
+Go, leveraging SIMD where able. This includes various arithmetic functions
+along with filter mechanisms for Arrays, Records and Tables. Work has also
+started on integrating Substrait with this compute functionality.
+
+The new run-end encoded type array was added to the Go implementation,
+inspired by Arrow-compatible engines. This has been integrated into additional
+parts of the code-base including scalars, and parts of the compute package.
+
+ADBC has a native Go definition via interfaces along with native Go
+implementations for the Flight SQL driver and CGO implementations to load any
+other desired ADBC drivers. There is also an adapter to leverage any ADBC
+drivers via Go&rsquo;s standard database/sql package. The Go Flight SQL driver is
+utilized and wrapped to be deployed with the Python ADBC package as a shared
+library with almost no dependencies, making it ideal for use in the python
+wheels.
+
+There&rsquo;s been a significant uptick in community contributions and interest in
+the Go implementation. In particular, significant contributions have been
+coming from CloudQuery (https://github.com/cloudquery/cloudquery) as they
+shift to leverage Arrow as their primary type system and move their codebase
+to utilizing Arrow. We&rsquo;ve also seen OpenTelemetry utilize the Go Arrow
+implementation to prototype shifting their telemetry memory format to using
+Arrow for communication benefits, leading to a series of blog posts (the first
+of which has been posted:
+https://arrow.apache.org/blog/2023/04/11/our-journey-at-f5-with-apache-arrow-part-1/).
+
+### Java
+
+Publish modules also as a Software Bill of Materials SBOM artifacts thru
+CycloneDX plugin.
+
+Expose writer compression supports Lz4/Zstd for
+ArrowFileWriter/ArrowStreamWriter.
+
+Split flight-sql-jdbc-driver module to facilitate reuse.
+
+Working to incorporate Substrait consumer into Dataset module thru JNI binding
+to call Acero.
+
+
+### JavaScript
+
+### Julia
+
+### nanoarrow
+
+The nanoarrow C library and associated R bindings had their first release:
+https://arrow.apache.org/blog/2023/03/07/nanoarrow-0.1.0-release/.
+Additionally, support for reading Arrow IPC streams is mostly complete and
+will be included in the forthcoming 0.2 release
+
+### Rust
+Rust has several projects: arrow-rs (arrow, parquet, arrow-flight object_store
+implementations) arrow-datafusion: Rust query engine arrow-ballista:
+Distributed query engine
+
+The arrow-rs Rust implementation has been working on improving the lower level
+array implementations both for better use of ergonomics as well as
+interoperability with another, non ASF governed Rust Arrow implementation,
+arrow2. The communities of arrow and arrow2 are working on a high level plan
+to merge to combine resources. See
+https://github.com/jorgecarleitao/arrow2/issues/1429 . We also made
+substantial performance improvements to CSV parsing, JSON parsing, and date /
+timestamp parsing and hope to blog about that soon
+
+The DataFusion project gained several new public users, and contributions to
+it have grown substantially. We continue to struggle to with finding enough
+review capacity to keep up with contributions. On the upside there are several
+maintainers who regularly review and merge code regularly.  We are also
+working on improving our documentation site
+https://arrow.apache.org/datafusion/ which is  now more regularly updated.
+
+We also continue calendar based (every 2 weeks) release train which has served
+the projects well.
+
+### C (GLib)
+
+We added more bindings of the C++ implementation.
+
+### MATLAB
+
+1. In response to helpful feedback from the community [1], a significant
+   refactor [2] was done to mathworks/libmexclass [3] (a framework which makes
+   it possible to implement MATLAB classes in terms of corresponding C++
+   classes using MEX [4]) in order to support tighter integration with the
+   upstream Apache Arrow codebase.
+
+There is an open pull request to merge in the refactored libmexclass code
+here:
+
+https://github.com/apache/arrow/pull/34563
+
+2. The first arrow.array.&lt;Array&gt; class (i.e. arrow.array.Float64Array) is also
+   included as part of this pull request. After this pull request has been
+   merged, development efforts will continue to be focused on building out the
+   MATLAB Interface to Arrow, starting with the rest of the core
+   arrow.array.&lt;Array&gt; types.
+
+[1] https://github.com/apache/arrow/pull/34563#discussion_r1137910630
+[2] https://github.com/mathworks/libmexclass/pull/55
+[3] https://github.com/mathworks/libmexclass
+[4] https://www.mathworks.com/help/matlab/matlab_external/structure-of-c-mex-function.html
+
+
+### Python
+
+The Dataframe Interchange Protocol
+(https://data-apis.org/dataframe-protocol/latest/index.html) is now
+implemented for pyarrow Table and RecordBatch. The protocol enables conversion
+for basic data types between Python dataframe libraries that have the protocol
+implemented and therefore serves the same purpose as the Arrow C Data
+Interface but with less data type coverage. As it is a Python protocol it is a
+bit easier for the Python libraries to implement. With it PyArrow will be able
+to exchange data with the libraries that do not support Arrow format. Some
+examples of the libraries that currently support the protocol are: cuDF,
+modin, pandas, polars and vaex.
+
+### R
+
+The nanoarrow project had its first CRAN release; this provides users with a
+minimal set of bindings to work with Arrow C Data and/or Arrow C Stream
+structures in circumstances where they wish to work with Arrow but cannot or
+do not want to work with the full library.  There has been a substantial
+rewrite of the docs, which should make it easier for users to find help with
+the R package, and we've written some new functions to simplify the process of
+working with datasets.  Various updates have been done to ensure that the
+package is compatible with the latest version of dplyr, the API which the
+arrow R package implements..
+
+### Ruby
+
+We added more Ruby-ish APIs.
+
+### Swift
+
+We started implementing the Swift implementation.
+
+## Release activity
+
+Recent releases:
+* RS-37.0.0 was released on 2023-04-10.
+* RS-OS-0.5.6 was released on 2023-04-03.
+* RS-DATAFUSION-21.1.0: was released on 2023-04-02.
+* RS-36.0.0 was released on 2023-03-28.
+* RS-DATAFUSION-21.0.0 was released on 2023-03-27.
+* ADBC-0.3.0 was released on 2023-03-21.
+* RS-DATAFUSION-PYTHON-20.0.0 was released on 2023-03-20.
+* JULIA-2.5.0 was released on 2023-03-16.
+* RS-DATAFUSION-20.0.0 was released on 2023-03-14.
+* RS-35.0.0 was released on 2023-03-13.
+* NANOARROW-0.1.0 was released on 2023-03-07.
+* RS-OS-0.5.5 was released on 2023-03-02.
+* RS-34.0.0 was released on 2023-02-27.
+* ADBC-0.2.0 was released on 2023-02-15.
+* RS-33.0.0 was released on 2023-02-13.
+* RS-DATAFUSION-18.0.0 was released on 2023-02-13.
+* RS-OS-0.5.4 was released on 2023-02-07.
+* JULIA-2.4.3 was released on 2023-02-04.
+* RS-32.0.0 was released on 2023-01-30.
+* RS-DATAFUSION-17.0.0 was released on 2023-01-30.
+* 11.0.0 was released on 2023-01-25.
+* RS-31.0.0 was released on 2023-01-16.
+* JULIA-2.4.2 was released on 2023-01-15.
+* RS-DATAFUSION-16.0.0 was released on 2023-01-15.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-H">2023-01-18</a> &mdash; Andrew Lamb<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Issues:
+Lack of ASF sponsored invite-free chat service is a minor source of friction
+for community building. Most subprojects now use github for tickets to lower
+the barrier to entry for new / casual contributors, but we still have fragmented
+stories for group chat. ASF Slack requires an invite and some sub communities
+use other chat-like services.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-20 (7 years ago)
+There are currently 89 committers and 45 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Kun Liu was added to the PMC on 2022-11-13
+- Jacob Quinn was added to the PMC on 2022-10-25
+- Nicola Crane was added to the PMC on 2022-10-25
+- Jacob Wujciak was added as committer on 2022-12-19
+- Ben Baumgold was added as committer on 2022-10-26
+- Bogumi&lstrok; Kami&nacute;ski was added as committer on 2022-10-24
+- Eric Hanson was added as committer on 2022-10-26
+- Jie Wen was added as committer on 2023-01-08
+- Jarrett Revels was added as committer on 2022-11-02
+- Curtis Vogt was added as committer on 2022-11-02
+- Ra&uacute;l Cumplido was added as committer on 2022-12-05
+- Will Jones was added as committer on 2022-10-28
+- Yang Jiang was added as committer on 2022-11-02
+
+## Project Activity:
+* Switching from JIRA to github issues in order to keep the overhead for new
+  contributors low (no need to register for an ASF JIRA account)
+* [ADBC] (Arrow Database Connectivity) first release:
+* Community voted to add RLE to the specification
+* Additional subproject updates are below
+* We continue to release several different products and releases per quarter
+
+[ADBC]: https://arrow.apache.org/blog/2023/01/05/introducing-arrow-adbc/
+
+Recent releases:
+ADBC-0.1.0 was released on 2023-01-10.
+RS-30.0.1 was released on 2023-01-08.
+RS-OS-0.5.3 was released on 2023-01-08.
+RS-30.0.0 was released on 2023-01-03.
+RS-29.0.0 was released on 2022-12-12.
+RS-OS-0.5.2 was released on 2022-12-07.
+RS-DATAFUSION-15.0.0 was released on 2022-12-05.
+DATAFUSION-PYTHON-0.7.0 was released on 2022-11-29.
+RS-28.0.0 was released on 2022-11-28.
+10.0.1 was released on 2022-11-22.
+RS-BALLISTA-0.10.0 was released on 2022-11-21.
+JULIA-2.4.1 was released on 2022-11-18.
+RS-27.0.0 was released on 2022-11-15.
+RS-DATAFUSION-14.0.0 was released on 2022-11-07.
+RS-26.0.0 was released on 2022-11-03.
+10.0.0 was released on 2022-10-26.
+JULIA-2.4.0 was released on 2022-10-26.
+RS-BALLISTA-0.9.0 was released on 2022-10-26.
+RS-25.0.0 was released on 2022-10-17.
+
+## Community Health:
+The community health appears good, discussions on the mailing lists and github
+are productive. We recently had a nice discussion on the State of the Project:
+https://lists.apache.org/thread/r8gl3wvjgy9k8n2t194r0bbdbxx6ksqc  and discussed
+various ways to keep encouraging the community.
+
+## Language Area Updates
+
+Arrow has at least 12 different language bindings, as explained in
+https://arrow.apache.org/overview/
+
+Arrow 10.0.0 release: https://arrow.apache.org/blog/2022/10/31/10.0.0-release/
+
+### C++
+
+### C#
+
+### Go
+
+We&rsquo;re seeing significant increases in interest and usage of the Arrow Go
+library. From startups like Spice.AI to being incorporated and used in Google
+BigQuery&rsquo;s quickstart example and more. 2022 was a big year of updates, fixes,
+and drumming up interest for the Go module that we hope to continue for
+increased adoption and usage. The Go module, along with C++, is used as the
+initial implementation for the Run-End Encoding array implementation.
+
+Future development plans are to continue to expand the compute capabilities of
+the Go module and extend integration with Substrait.
+
+### Java
+
+### JavaScript
+
+### Julia
+We&rsquo;ve worked again on simplifying and streamlining the administrative side for
+the Julia implementation; adding additional committers, simplifying the
+release process, etc. This has increased the rate of contributions, as
+expected. There&rsquo;s interest in finishing the C data/stream interfaces for the
+Julia implementation soon.
+
+### Rust
+Rust has several projects: arrow-rs (arrow, parquet, arrow-flight object_store
+implementations) arrow-datafusion: rust query engine arrow-ballista:
+distributed query engine
+
+We are working to incorporate substrait into DataFusion
+
+Working on external communication with several blog posts about technology on
+sorting Fast and Memory Efficient Multi-Column Sorts in Apache Arrow Rust,
+Part 1 and Querying Parquet with Millisecond Latency
+
+We also continue calendar based release train with good results.
+
+### C (GLib)
+
+We&rsquo;ve added support for 16-bit float type.
+
+### MATLAB
+1. We have been focusing development efforts on implementing an "object
+   dispatch layer" that uses MEX to "connect" MATLAB objects with
+   corresponding C++ objects. This code is being actively developed at
+   github.com/mathworks/libmexclass. See the following Arrow mailing list
+   discussion for more context.
+
+We hope to upstream the changes needed to make the MATLAB Interface to Arrow
+use libmexclass under the hood in the coming months. This should enable the
+MATLAB interface to wrap relevant Arrow C++ objects (e.g. arrow::Array,
+arrow::Table) and expose them to MATLAB.
+
+2. We have been continuing to investigate Windows CI support for the MATLAB
+   interface. Currently, only Linux and macOS are supported.
+
+### Python
+
+### R
+
+### Ruby
+
+We&rsquo;ve added support for 16-bit float type.
+
+There is a new contributor who develops a new data frame library based on the
+Ruby bindings. The new contributor upstreamed some improvements implemented in
+the downstream data frame library.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-H">2022-10-19</a> &mdash; Kouhei Sutou<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-20 (7 years ago)
+There are currently 79 committers and 42 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- Raphael Taylor-Davies was added to the PMC on 2022-09-20
+- L. C. Hsieh was added to the PMC on 2022-09-03
+- Weston Pace was added to the PMC on 2022-09-05
+- Zhong Yanghong was added as committer on 2022-09-08
+- Remzi Yang was added as committer on 2022-09-09
+- Daniel Harris was added as committer on 2022-09-23
+
+## Project Activity:
+- RS-24.0.0 was released on 2022-10-03.
+- RS-BALLISTA-0.8.0 was released on 2022-09-20.
+- RS-23.0.0 was released on 2022-09-19.
+- RS-DF-12.0.0 was released on 2022-09-16.
+- RS-OS-0.5.0 was released on 2022-09-11.
+- RS-22.0.0 was released on 2022-09-05.
+- RS-21.0.0 was released on 2022-08-30.
+- RS-DF-11.0.0 was released on 2022-08-19.
+- RS-OS-0.4.0 was released on 2022-08-13.
+- RS-20.0.0 was released on 2022-08-09.
+- RS-19.0.0 was released on 2022-07-26.
+- 6.0.2 was released on 2022-07-19.
+- 7.0.1 was released on 2022-07-19.
+- 8.0.1 was released on 2022-07-19.
+- RS-DF-10.0.0 was released on 2022-07-15.
+- RS-18.0.0 was released on 2022-07-11.
+
+## Community Health:
+
+- We're voting a new Apache Arrow Database Connectivity (ADBC)
+  interface developing at https://github.com/apache/arrow-adbc .
+- We'll deprecate unmaintained Apache Arrow Plasma object store.
+- We've accepted Apache Arrow Flight SQL JDBC driver donation.
+- We've switched required C++ specification to C++17 from C++11.
+- We've changed issue assign policy on Jira: All users can assign
+  themselves as assignee for easy to contribute.
+- We've accepted Apache Arrow Rust Object Store donation.
+- We've backed Apache Arrow DataFusion Python bindings to ASF.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-I">2022-07-20</a> &mdash; Kouhei Sutou<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-20 (6 years ago)
+There are currently 76 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was QP Hou on 2022-02-17.
+- Alenka Frim was added as committer on 2022-06-23
+- Dewey Dunnington was added as committer on 2022-06-15
+- Rok Mihevc was added as committer on 2022-06-15
+- L. C. Hsieh was added as committer on 2022-04-28
+
+## Project Activity:
+Recent releases:
+
+- RS-17.0.0 was released on 2022-06-28.
+- RS-16.0.0 was released on 2022-06-13.
+- RS-15.0.0 was released on 2022-05-30.
+- RS-14.0.0 was released on 2022-05-16.
+- 8.0.0 was released on 2022-05-07.
+- RS-13.0.0 was released on 2022-05-03.
+- RS-12.0.0 was released on 2022-04-19.
+- RS-DF-7.1.0 was released on 2022-04-18.
+- JULIA-2.3.0 was released on 2022-04-12.
+
+## Community Health:
+
+- A book about Apache Arrow was published from a community member.
+https://www.packtpub.com/product/in-memory-analytics-with-apache-arrow/9781801071031
+- We've split Apache Arrow Ballista to
+  https://github.com/apache/arrow-ballista from
+  https://github.com/apache/arrow-datafusion .
+- We've marked Apache Arrow C Streaming Interface stable.
+- A conference that focuses on Apache Arrow was held by community members.
+  https://thedatathread.com/
+- We're improving our release process to reduce release management cost.
+- We've accepted donation of Apache Arrow Flight SQL JDBC driver.</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#attachment-F">2022-04-20</a> &mdash; Kouhei Sutou<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-20 (6 years ago)
+There are currently 72 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- QP Hou was added to the PMC on 2022-02-17
+- Kun Liu was added as committer on 2022-03-09
+- Jacob Quinn was added as committer on 2022-02-23
+- Raphael Taylor-Davies was added as committer on 2022-03-24
+- Xudong Wang was added as committer on 2022-03-16
+- Yijie Shen was added as committer on 2022-03-09
+
+## Project Activity:
+Recent releases:
+
+- RS-11.1.0 was released on 2022-04-04.
+- RS-11.0.0 was released on 2022-03-21.
+- JULIA-2.2.1 was released on 2022-03-08.
+- RS-10.0.0 was released on 2022-03-08.
+- RS-9.1.0 was released on 2022-02-22.
+- RS-DF-7.0.0 was released on 2022-02-17.
+- RS-9.0.2 was released on 2022-02-13.
+- 7.0.0 was released on 2022-02-03.
+- RS-8.0.0 was released on 2022-01-25.
+- RS-7.0.0 was released on 2022-01-12.
+
+## Community Health:
+
+- We've released a new version of Apache Arrow Julia after it was re-donated.
+- We'll start IP clearance for Apache Arrow Flight SQL JDBC driver donation.
+- We may register Apache Arrow as a Digital Public Good like Apache
+  Fineract: https://digitalpublicgoods.net/registry/apache-fineract.html
+- We'll rename the "master" branch to "main":
+  https://issues.apache.org/jira/browse/ARROW-15689
+  We'll be asking INFRA for support on this when we're ready.
+- We've rotated the PMC chair.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-F">2022-01-19</a> &mdash; Wes McKinney<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Issues:
+* https://github.com/apache/arrow-julia is blocked by Infra on CI:
+* https://issues.apache.org/jira/browse/INFRA-22676 isn&rsquo;t triaged.
+* https://github.com/apache/arrow-julia wants to run CI before merging pull
+  requests.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (6 years ago)
+There are currently 67 committers and 38 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Dani&euml;l Heres was added to the PMC on 2021-12-20
+- Joris Van den Bossche was added to the PMC on 2021-11-21
+- Yibo Cai was added to the PMC on 2022-01-03
+- Alessandro Molina was added as committer on 2022-01-04
+- R&eacute;mi Dettai was added as committer on 2021-12-07
+
+## Project Activity:
+Recent releases:
+* RS-6.5.0 was released on 2021-12-29.
+* RS-6.4.0 was released on 2021-12-14.
+* RS-6.3.0 was released on 2021-11-29.
+* 6.0.1 was released on 2021-11-18.
+* RS-DF-6.0.0 was released on 2021-11-17.
+* RS-6.2.0 was released on 2021-11-15.
+* RS-6.1.0 was released on 2021-11-03.
+* 6.0.0 was released on 2021-10-26.
+* RS-6.0.0 was released on 2021-10-17.
+
+Planned releases:
+* 7.0.0 in mid-January
+
+## Community Health:
+* Apache Arrow Julia was re-donated https://s.apache.org/arrow-jl-donation
+* We&rsquo;ve created a repository for collaborative prototyping + algorithms /
+  performance research https://github.com/apache/arrow-experiments
+* Discussions around adding new columnar memory layouts to Arrow (in-memory,
+  IPC, C ABI)
+* Discussions around community maintained extension repos for Apache Arrow
+  Datafusion https://github.com/datafusion-contrib
+* We&rsquo;ll rotate the PMC chair in 2022-01
+* We&rsquo;ve started Apache Arrow Cookbook to accept more new users. We&rsquo;ll create
+  similar documentation for new contributors.
+  https://arrow.apache.org/cookbook/
+* Rust continues releases every other week and is trying to balance open group
+  collaboration and fast iterations:
+  https://github.com/apache/arrow-rs/issues/1120
+* Rust Arrow2 project, https://github.com/jorgecarleitao/arrow2,
+  implementation of Arrow developed outside ASF, continues to generate
+  community questions about if/when it will be brought into ASF.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-H">2021-10-20</a> &mdash; Wes McKinney<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (6 years ago)
+There are currently 64 committers and 35 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Neville Dipale was added to the PMC on 2021-07-28
+- QP Hou was added as committer on 2021-07-26
+- Nicola Crane was added as committer on 2021-09-08
+- Weston Pace was added as committer on 2021-07-09
+- Matthew Topol was added as committer on 2021-08-27
+- Jiayu Liu was added as committer on on 2021-10-07
+
+## Project Activity:
+- Planned upcoming 6.0 release in mid-October
+- Rust migration to multiple repositories (arrow-rs, arrow-datafusion) has
+  been successful and the community has been consistently making releases.
+
+## Community Health:
+- We&rsquo;ve re-engaged with maintainers of the Julia port and are working on
+  implementing the same development process that Rust has adopted (separate
+  apache Repo).  IP clearance will need to be redone.
+- Discussions around using Github issues as a support mechanism in conjunction
+  or to replace user@</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-G">2021-07-21</a> &mdash; Wes McKinney<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Issues:
+
+* Most issues from previous board reports have been addressed though we would
+  benefit as discussed from more mentorship in the Apache Way for
+  new contributors.
+* Long GitHub Actions queueing times for CI jobs have been an occasional
+  concern. We are aware that we are one of the most greedy consumers of GHA
+  minutes in the ASF, so we will continue to think about future strategies to
+  supplement GitHub Actions with dedicated build infrastructure. Our CI/CD
+  needs are some of the most complex that we've observed in mainstream open
+  source software.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (5 years ago)
+There are currently 61 committers and 34 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Ben Kietzman was added to the PMC on 2021-05-20
+- David Li was added to the PMC on 2021-06-20
+- Dani&euml;l Heres was added as committer on 2021-04-26
+- Dominik Moritz was added as committer on 2021-06-02
+- Ian Cook was added as committer on 2021-04-27
+- Jonathan Keane was added as committer on 2021-04-27
+- Kazuaki Ishizaki was added as committer on 2021-06-06
+- Weston Pace was added as committer on 2021-07-09
+
+## Project Activity:
+
+* The Rust projects have successfully migrated to independent arrow-*
+  repositories and begun making biweekly releases on a schedule. This progress
+  seems to be going reasonably smoothly and the prior issues have been
+  adequately addressed.
+* We are progressing as usual toward making our ~quarterly major release, now
+  5.0.0.
+
+## Community Health:
+
+* We've succeeded at significantly expanding the committership and PMC this
+  quarter, and our community growth in general continues to be robust.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-F">2021-04-21</a> &mdash; Wes McKinney<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Issues:
+* CI Issues continue to be a problem.  With the increase in utilization of
+  ASF&rsquo;s allotment of Github Actions we&rsquo;ve seen CI build time go from 20-30
+  minutes to as long as 5 hours
+* There have been several issues around understanding exact requirements for
+  what it means to follow the Apache way and developing code within the
+  community:
+    * Several Rust projects were developed outside of the ASF repos and then
+      had proposals to be donated back.
+    * After accepting the donation of Julia developers continued to develop in
+      the original Julia repo and only make PRs back to the Arrow repo on an
+      intermittent basis. Since the Arrow community has been growing rapidly,
+      we had not done a thorough enough job of educating newcomers what it
+      means to develop &ldquo;inside the community&rdquo;.
+        * It appears a development model similar to what Rust is proposing
+          (see community health) will mitigate technical concerns for why this
+           was the development model chosen.
+    * It is unclear if JIRA use is required / encouraged for Apache projects
+      or if using a non Apache hosted system such as GitHub issues for parts
+      of the project is sufficiently community friendly
+    * In both cases it seems exact requirements of the ASF are not clear.
+      Through discussion it became apparent that the preferred method for
+      revolutionary changes to the existing code bases is by creating separate
+      development branches for prototyping with updates back to the community.
+* ASF&rsquo;s Artifactory isn&rsquo;t ready yet. We don&rsquo;t know the current status. See
+  also https://lists.apache.org/thread.html/r9200fe
+  d3fa812f8c7de07a2500425f258db3231baa8e05f288175e4a%40%3Cbuilds.apache.org%3E
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (5 years ago)
+There are currently 55 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Andrew Lamb was added to the PMC on 2021-03-07
+- Jorge Leit&atilde;o was added to the PMC on 2021-03-07
+- Yibo Cai was added as committer on 2021-03-05
+
+## Project Activity:
+We are aiming to have a 4.0 release this month.
+
+
+## Community Health:
+* Rust members of the community have proposed to follow a new development
+  workflow using separate Arrow github repos specifically for Rust components
+  and migrating away from JIRA to Github for issue tracking.  Rust will also
+  start releasing on a different cadence then the rest of the language
+  bindings.
+  * The releases will still follow Apache Arrow governance (voting for
+    releases, etc)
+  * Depending on the experience of the Rust community, the Julia community may
+    follow a similar path in the future</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-F">2021-01-20</a> &mdash; Wes McKinney<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange
+
+## Issues:
+
+* After our past issues around scarce CI resources, we had managed to
+  stabilize our CI setup around the relatively generous execution
+  facilities provided by Github Actions, and a bunch of additional
+  builds on other platforms (mostly for nightly builds). That
+  equilibrium was unfortunately shattered after INFRA suddenly
+  disallowed most third-party Github Actions helpers in response to
+  security concerns. Our remaining Github Actions builds also seem to
+  be queued longer. This has now been resolved
+  (https://issues.apache.org/jira/browse/INFRA-21239) but it was
+  hugely disruptive to our community.
+
+  Concurrently, Travis-CI also started to be much stricter with
+  resource consumption, which is currently affecting several of our
+  nightly builds until we manage to migrate them to other CI services.
+
+  These factors compounded mean we'll finally need to provide and set
+  up our own CI resources. We hope to be able to migrate a significant
+  number of builds to Buildkite, using execution resources paid by our
+  sponsors.  We also hope that INFRA rules around repository access
+  and configuration won't stifle that endeavour.
+
+## Membership Data:
+
+Apache Arrow was founded 2016-01-19 (5 years ago)
+There are currently 54 committers and 30 PMC members in this project.
+The Committer-to-PMC ratio is 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Francois Saint-Jacques on 2020-03-04.
+- Andrew Lamb was added as committer on 2020-11-06
+
+## Project Activity:
+
+- We'd like to release Arrow 3.0 around mid-January. The issues
+  discussed above (diminished CI coverage due to disallowed
+  third-party Github Actions, blocked nightly builds on Travis-CI,
+  complex release procedure) make it more difficult than we'd like.
+
+- There seems to be growing interest in zero-copy zero-dependency
+  cross-runtime interoperability using our "C data interface". It is
+  now concretely possible to share data in-process between R, Python
+  and Rust, without any shared code and without going through IPC
+  mechanisms (the latter still possible, of course, using the Arrow
+  IPC format). Other projects such as DuckDB have started using this
+  interface.
+
+- The Arrow in-memory format is regularly being adopted and/or adapted
+  to in other projects, especially in the dataframe and database
+  communities.
+
+## Community Health:
+
+* The project is overall very active. The Rust implementation is
+  especially thriving, with numerous pull requests being submitted and
+  merged in due time. The C++ implementation is advancing at similar
+  speed as in previous reports. A Julia implementation was recently
+  contributed.
+
+* Our pull request backlog has also grown slightly as a result of
+  increased activity, but it does not seem to be posing a real problem
+  for now.
+
+* The weight of our release procedure puts a burden on our capacity to
+  release often. The "weight" is a function of the project complexity
+  but also limitations in our CI/CD resources and feedback cycles
+  (e.g. builds that run only once a day overnight often fail and we
+  end up blocked on releasing until those failures are resolved). Our
+  goal is to cut a new feature release roughly once every two months,
+  which often ends up challenging. This situation also makes us
+  reluctant to put out bugfix releases in-between, except for critical
+  fixes. Improved CI/CD along with improvements to streamline the
+  release process itself (for example, addressing procedural issues
+  with preparing the Java project to release) would help a great
+  deal. We also need more PMC members to step up and help with release
+  management. Most of the release management over the lifetime of the
+  project has fallen on the shoulders of only 4 out of our 30 PMCs.</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#attachment-G">2020-10-21</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software
+related to columnar in-memory processing and data interchange
+
+## Issues:
+There are no issues needing board attention at this time.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (5 years ago) There are currently 53
+committers and 30 PMC members in this project. The Committer-to-PMC ratio is
+roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Francois Saint-Jacques on 2020-03-04.
+- Jorge Leit&atilde;o was added as committer on 2020-09-29
+
+## Project Activity:
+The project has good activity with between five and ten commits most days. Dev
+email list activity was down in August and September (~50% over earlier in the
+year) but some of that is likely due to all the energy leading up to the 1.0
+release. We should continue to monitor the mail trends to see if there are any
+systemic changes or concerns.
+
+## Community Health:
+Github actions have substantially relieved the CI pain within the project.
+Arrow continues to see a diverse set of contributions with the total number of
+code contributors approaching 500. The project decided to move to a rotating
+PMC chair, with the first rotation planned for this month.</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-E">2020-07-15</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange. The project has some
+level of support for 11 different programming languages.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (4 years ago)
+There are currently 52 committers and 30 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Francois Saint-Jacques on 2020-03-04.
+- Liya Fan was added as committer on 2020-06-09
+- Ji Liu was added as committer on 2020-06-09
+
+## Project Activity:
+
+- We made the 0.17.0 and 0.17.1 releases since the last board report. The
+  community is readying a 1.0.0 release which will formally mark stability in
+  the Arrow columnar format binary protocol and a move to semantic versioning
+  of the Arrow libraries.
+- We moved new JIRA issue notifications off of the dev@ mailing list to issues@
+  and created a new jira@ mailing list to capture the full JIRA firehose. The
+  reasoning is that this could help encourage more participating in mailing
+  list discussions.
+- We made changes in the codebase to remove uses of potentially non-neutral
+  language that has been changed in many other open source projects.
+
+## Community Health:
+
+The project and contributor base continues to grow in size and
+scope. We now have over 500 unique contributors since the
+creation of the project.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-E">2020-04-15</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of Apache Arrow is the creation and maintenance of software related
+to columnar in-memory processing and data interchange. The project has some
+level of support for 11 different programming languages.
+
+## Issues:
+
+- We are continuing to work with INFRA on issues related to self-hosted CI
+  machines integrated with our GitHub-based pull request workflows. There are
+  two avenues we are exploring (and we may well use both of them), GitHub
+  Actions Self-hosted and Buildkite. Per INFRA-19217 Buildkite has just been
+  approved for the @apache GitHub organization and we have validated that
+  we can successfully use this with the free Arrow organization that Buildkite
+  has provided us. CI/CD is likely to require an ongoing significant investment
+  of time, and we are doing the best we can try avoid overburdening ASF Infra
+  with requests.
+
+## Membership Data:
+
+Apache Arrow was founded 2016-01-19 (4 years ago)
+There are currently 50 committers and 30 PMC members in this project.
+The Committer-to-PMC ratio is 5:3.
+
+Community changes, past quarter:
+- Francois Saint-Jacques was added to the PMC on 2020-03-04
+- Neal Richardson was added to the PMC on 2020-03-04
+- No new committers. Last addition was Joris Van den Bossche on 2019-12-06.
+
+## Project Activity:
+
+- 0.16.0 was released at the end of January. We are close to
+  releasing 0.17.0, with a 1.0.0 release hopefully sometime in
+  2020.
+- Three months ago, Apache Arrow was accepted for continuous fuzzing in the
+  OSS-Fuzz infrastructure.  We have now finally stabilized the situation by
+  fixing all detected issues in the Arrow C++ IPC implementation, and are
+  actively fixing issues in the Arrow C++ Parquet reader.
+- We just adopted a "C Data Interface" for the project which will open many new
+  opportunities for integrations with third party projects.
+
+## Community Health:
+
+The project and contributor base continues to grow in size and
+scope. We now have over 400 unique contributors since the
+creation of the project.</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-E">2020-01-15</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of Apache Arrow is the creation and maintenance of software
+related to columnar in-memory processing and data interchange
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Arrow was founded 2016-01-19 (4 years ago) There are currently 50
+committers and 28 PMC members in this project. The Committer-to-PMC ratio is
+roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Micah Kornfield on 2019-08-21.
+- Eric Erhardt was added as committer on 2019-10-18
+- Joris Van den Bossche was added as committer on 2019-12-06
+
+## Project Activity:
+
+* We have completed our initial migration away from Travis CI for continuous
+  integration and patch validation to use the new GitHub Actions (GHA)
+  service. We are much happier with the compute resource allocation provided
+  by GitHub but longer term we are concerned that the generous free allocation
+  may not continue and would be interested to know what kinds of guarantees
+  (if any) GitHub may make to the ASF regarding GHA.
+* We are not out of the woods on CI/CD as there are features of Apache Arrow
+  that we cannot test in GitHub Actions. We are still considering options for
+  running these optional test workloads as well as other kinds of periodic
+  workloads like benchmarking
+* We hope to make a 1.0.0 release of the project in early 2020. We had thought
+  that our next major release after 0.15.0 would be 1.0.0 but we have not yet
+  completed some necessary work items that the community has agreed are
+  essential to graduate to 1.0.0
+
+Recent releases:
+0.15.0 was released on 2019-10-05.
+0.14.1 was released on 2019-07-21.
+0.14.0 was released on 2019-07-04.
+
+## Community Health:
+
+The developer community is healthy and continues to grow.</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-E">2019-10-16</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Arrow is the creation and maintenance of software
+related to columnar in-memory processing and data interchange
+
+## Issues:
+* There are no issues requiring board attention at this time.
+
+## Membership Data:
+* Apache Arrow was founded 2016-01-19 (4 years ago)
+* There are currently 48 committers and 28 PMC members in this project.
+* The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Micah Kornfield was added to the PMC on 2019-08-21
+- Sebastien Binet was added to the PMC on 2019-08-21
+- Ben Kietzman was added as committer on 2019-09-07
+- David Li was added as committer on 2019-08-30
+- Kenta Murata was added as committer on 2019-09-05
+- Neal Richardson was added as committer on 2019-09-05
+- Praveen Kumar was added as committer on 2019-07-14
+
+## Project Activity:
+
+* The project has just made a 0.15.0 release.
+* We are discussing ways to make the Arrow libraries as accessible as possible
+  to downstream projects for minimal use cases while allowing the development
+  of more comprehensive "standard libraries" with larger dependency stacks in
+  the project
+* We plan to make a 1.0.0 release as our next major release, at which time we
+  will declare that the Arrow binary protocol is stable with forward and
+  backward compatibility guarantees
+
+## Community Health:
+
+* The community is continuing to grow at a great rate. We see good adoption
+  among many other projects and fast growth of key metrics.
+* Many contributors are struggling with the slowness of pre-commit CI. Arrow
+  has a large number of different platforms and components and a complex build
+  matrix. As new commits come in, they frequently take a long time to
+  complete. The community is trying several ways to solve this. There is
+  bubbling frustration in the community around the GitHub repo rules for using
+  third party services. This is especially challenging when there are free
+  solutions to relieve the community pressure but the community is unable to
+  access these resources. This frustration is greatest among people who work
+  on many non-asf OSS projects which don't have such restrictive rules
+  around GitHub.  Some examples of ways the community has tried to resolve
+  these have included:
+  * Try to use CircleCI, rejected in INFRA-15964
+  * Try to use Azure Pipelines, rejected in INFRA-17030
+  * Try to resolves Issues with Travis CI capacity: INFRA-18533 &amp;
+    https://s.apache.org/ci-capacity (no resolution beyond "find donations")
+  * The creation of new infrastructure design (in progress but a huge amount of
+    thankless work)
+* While the community has seen great growth in contribution (more than 300
+  unique contributors at this point), the vast majority are casual
+  contributors. The daily active committers (the workhorses of the project
+  that bear the load committing the constant PRs, more than 5000 closed at
+  this point) have been growing slower than adoption. This is despite the fact
+  that the community has been very aggressive at being inclusive of new
+  committers (with likelihood to have more than 50 in the next week). The
+  community is still continuing to try to brainstorm ways to improve this.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-F">2019-07-17</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Arrow is a cross-language development platform for in-memory
+data. It specifies a standardized language-independent columnar memory
+format for flat and hierarchical data, organized for efficient
+analytic operations on modern hardware. It also provides computational
+libraries and zero-copy streaming messaging and interprocess
+communication. Languages currently supported include C, C++, C#, Go,
+Java, JavaScript, MATLAB, Python, R, Ruby, and Rust.
+
+## Issues:
+- There are no issues requiring board attention at this time
+
+## Activity:
+- The community is discussing a 1.0.0 release featuring
+  forward-looking binary format stability guarantees. Given the
+  nature of the project, this is obviously an important milestone
+  for adoption and user support
+- Since the last report, a new Buildbot-based CI system has been
+  connected to apache/arrow to provide additional build capacity, with
+  a bot system called "ursabot" to provide on demand builds, benchmark
+  comparisons, and other tools to assist the developer community
+
+## Health report:
+- We have been having significant problems with CI build times and are
+  discussing strategies to decouple our de velopment process from the
+  shared pool of ASF-managed cloud CI resources like Travis CI and
+  Appveyor
+- The community is healthy, though there were some concerns
+  around the 0.14.0 release vote and we are discussing
+  conventions around handling issues raised during release
+  candidate vetting.
+
+## PMC changes:
+
+ - Currently 26 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Andrew Grove on Sun Feb 03 2019
+
+## Committer base changes:
+
+ - Currently 43 committers.
+ - New committers:
+    - Francois Saint-Jacques was added as a committer on Wed Jun 12 2019
+    - Neville Dipale was added as a committer on Mon May 13 2019
+    - Praveen Kumar has also been invited to be a committer and accepted.
+      Acct request is in process.
+
+## Releases:
+
+ - 0.14.0 was released on Wed Jul 03 2019
+
+## JIRA activity:
+
+ - 735 JIRA tickets created in the last 3 months
+ - 690 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#attachment-G">2019-04-17</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Arrow is a cross-language development platform for in-memory data. It
+specifies a standardized language-independent columnar memory format for flat
+and hierarchical data, organized for efficient analytic operations on modern
+hardware. It also provides computational libraries and zero-copy streaming
+messaging and interprocess communication. Languages currently supported
+include C, C++, C#, Go, Java, JavaScript, MATLAB, Python, R, Ruby, and Rust.
+
+## Issues:
+- There are no issues requiring board attention at this time
+
+## Activity:
+ - The project received a donation of DataFusion, a Rust-based query
+engine for Apache Arrow
+
+## Health report:
+- The project is very healthy, with a growing number and diversity of
+   contributors
+
+## PMC changes:
+
+ - Currently 26 PMC members.
+ - Andrew Grove was added to the PMC on Sun Feb 03 2019
+
+## Committer base changes:
+
+ - Currently 41 committers.
+ - New commmitters:
+    - Micah Kornfield was added as a committer on Fri Mar 08 2019
+    - Deepak Majeti was added as a committer on Thu Jan 31 2019
+    - Paddy Horan was added as a committer on Fri Feb 08 2019
+    - Ravindra Pindikura was added as a committer on Fri Feb 01 2019
+    - Sun Chao was added as a committer on Fri Feb 22 2019
+
+## Releases:
+
+ - 0.12.0 was released on Sat Jan 26 2019
+ - 0.12.1 was released on Sun Feb 24 2019
+ - 0.13.0 was released on Sun Mar 31 2019
+ - JS-0.4.0 was released on Tue Feb 05 2019
+ - JS-0.4.1 was released on Sat Mar 23 2019
+
+## JIRA activity:
+
+ - 969 JIRA tickets created in the last 3 months
+ - 861 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#attachment-H">2019-01-16</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Arrow is a cross-language development platform for in-memory data. It
+  specifies a standardized language-independent columnar memory format for flat
+  and hierarchical data, organized for efficient analytic operations on modern
+  hardware. It also provides computational libraries and zero-copy streaming
+  messaging and interprocess communication. Languages currently supported
+  include C, C++, C#, Go, Java, JavaScript, MATLAB, Python, R, Ruby, and Rust.
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - The project received 3 code donations in the last quarter: a native C#
+   library, a Parquet integration library for Ruby, and a native Parquet
+   implementation in Rust
+ - The community is considering a donation of DataFusion an in-memory query
+   engine built on top of the Rust Arrow library
+ - Community is actively working on 0.12 release
+ - Community has discussed starting to do time-based releases approximately
+   every two months
+
+## Health report:
+ - The project is very healthy, with a growing number and diversity of
+   contributors
+
+
+## PMC changes:
+
+ - Currently 25 PMC members.
+ - Krisztian Szucs was added to the PMC on Wed Nov 07 2018
+
+## Committer base changes:
+
+ - Currently 36 committers.
+ - New commmitters:
+    - Romain Francois was added as a committer on Fri Nov 09 2018
+    - Sebastien Binet was added as a committer on Thu Nov 08 2018
+    - Yosuke Shiro was added as a committer on Thu Nov 08 2018
+
+## Releases:
+
+ - 0.11.1 was released on Mon Oct 22 2018
+
+## JIRA activity:
+
+ - 712 JIRA tickets created in the last 3 months
+ - 601 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-F">2018-10-17</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Arrow is a cross-language development platform for in-memory data. It
+specifies a standardized language-independent columnar memory format for flat
+and hierarchical data, organized for efficient analytic operations on modern
+hardware. It also provides computational libraries and zero-copy streaming
+messaging and interprocess communication. Languages currently supported include
+C, C++, Go, Java, JavaScript, MATLAB, Python, R, Ruby, and Rust.
+
+## Issues:
+
+- There are no issues requiring board attention at this time
+
+## Activity:
+
+- The Arrow and Parquet communities resolved by vote to merge their respective
+  C++ codebases in the Apache Arrow repository. This work was completed this
+  quarter
+- The project received two code donations via IP clearance: a GLib interface to
+  the Parquet C++ libraries, and the Gandiva LLVM vectorized Arrow expression
+  compiler
+- Work has commenced on R language integration with the C++ libraries
+- An initial MATLAB binding to the C++ libraries was contributed
+- The community is discussing receiving a proposed native implementation of
+  Arrow in C# .NET
+
+## Health report:
+- The project is very healthy, though rapid user and contributor growth has
+  stressed the limits of our developer tooling and put a great deal of burden
+  on the active project maintainers
+
+## PMC changes:
+
+ - Currently 24 PMC members.
+ - Antoine Pitrou was added to the PMC on Mon Aug 20 2018
+
+## Committer base changes:
+
+ - Currently 33 committers.
+ - New commmitters:
+    - Andrew Grove was added as a committer on Tue Aug 07 2018
+    - Krisztian Szucs was added as a committer on Thu Aug 16 2018
+
+## Releases:
+
+ - 0.10.0 was released on Sun Aug 05 2018
+ - 0.11.0 was released on Sun Oct 07 2018
+
+## JIRA activity:
+
+ - 649 JIRA tickets created in the last 3 months
+ - 476 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-H">2018-07-18</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Arrow is a cross-language development platform for in-memory data. It
+specifies a standardized language-independent columnar memory format for flat
+and hierarchical data, organized for efficient analytic operations on modern
+hardware. It also provides computational libraries and zero-copy streaming
+messaging and interprocess communication. Languages currently supported include
+C, C++, Go, Java, JavaScript, Python, Ruby, and Rust.
+
+## Issues:
+- There are no issues requiring board attention at this time
+
+## Activity:
+- We have not released since March as we work to improve our release and build
+  automation. We plan to include binary artifacts in our next release vote,
+  where we have only had source artifacts in past releases.
+- We received a code donation of a Ruby interface via the usual IP Clearance
+  process
+- There is a new Arrow + LLVM analytics project (Gandiva) happening outside of
+  the Arrow community. We discussed incorporating this work into Apache Arrow
+  but have not made any decisions yet.
+
+## Health report:
+
+The project's user and contributor base is growing rapidly. We are struggling a
+bit with maintainer bandwidth. As an example, 2 committers have merged 84% of
+patches (where there have been nearly 2000) since the project's inception. We
+are discussing ways to grow the maintainer base on the mailing list.
+
+## PMC changes:
+
+ - Currently 23 PMC members.
+ - Siddharth Teotia was added to the PMC on Thu May 17 2018
+
+## Committer base changes:
+
+ - Currently 31 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Antoine Pitrou at Tue Apr 03 2018
+
+## Releases:
+
+ - Last release was 0.9.0 on Mon Mar 19 2018
+
+## JIRA activity:
+
+ - 392 JIRA tickets created in the last 3 months
+ - 303 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-G">2018-04-18</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Arrow is a cross-language development platform for in-memory data. It
+specifies a standardized language-independent columnar memory format for flat
+and hierarchical data, organized for efficient analytic operations on modern
+hardware. It also provides computational libraries and zero-copy streaming
+messaging and interprocess communication. Languages currently supported include
+C, C++, Go, Java, JavaScript, Python, Ruby, and Rust.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Activity:
+ - We received a donation of a Go implementation since the last report
+ - New contributors have started developing native Rust bindings. Given its
+   early development, community will likely start by doing regular Rust-only
+   releases at a higher velocity than primary releases (similar to JS)
+ - Given the number of different artifacts developed, the build and release
+   complexity has gotten too difficult (too many manual steps). The
+   community is discussing ways to improve the process to simplify development.
+
+## Health report:
+
+Project is very healthy with a growing developer and user community.
+Overall development activity has increased since the prior quarter
+with the addition of two new programming languages (Go, Rust) to the
+project.
+
+## PMC changes:
+
+ - Currently 22 PMC members.
+ - New PMC members:
+    - Phillip Cloud was added to the PMC on Thu Mar 15 2018
+    - Philipp Moritz was added to the PMC on Thu Mar 15 2018
+
+## Committer base changes:
+
+ - Currently 31 committers.
+ - New commmitters:
+    - Antoine Pitrou was added as a committer on Tue Apr 03 2018
+    - Brian Hulette was added as a committer on Mon Feb 12 2018
+    - Robert Nishihara was added as a committer on Mon Feb 19 2018
+
+## Releases:
+
+ - 0.9.0 was released on Mon Mar 19 2018
+ - JS-0.3.0 was released on Wed Feb 21 2018
+ - JS-0.3.1 was released on Fri Mar 16 2018
+
+## JIRA activity:
+
+ - 464 JIRA tickets created in the last 3 months
+ - 358 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-G">2018-01-17</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Arrow is a cross-language development platform for in-memory data. It
+specifies a standardized language-independent columnar memory format for flat
+and hierarchical data, organized for efficient analytic operations on modern
+hardware. It also provides computational libraries and zero-copy streaming
+messaging and interprocess communication. Languages currently supported include
+C, C++, Java, JavaScript, Python, and Ruby.
+
+## Issues:
+
+There are no issues requiring board attention at this time
+
+## Activity:
+
+- Steady development activity from previous quarter and continued growth in
+  contributor base
+- Added 5 new committers
+- First JavaScript-only release (0.2.0) made on December 1
+
+## Health report:
+
+Project is very healthy with a growing developer and user community.
+
+## PMC changes:
+
+ - Currently 20 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Kouhei Sutou on Fri Sep 15 2017
+
+## Committer base changes:
+
+ - Currently 28 committers.
+ - New commmitters:
+    - Phillip Cloud was added as a committer on Tue Oct 03 2017
+    - Bryan Cutler was added as a committer on Wed Oct 04 2017
+    - Li Jin was added as a committer on Fri Oct 06 2017
+    - Paul Taylor was added as a committer on Fri Oct 06 2017
+    - Siddharth Teotia was added as a committer on Wed Oct 04 2017
+
+## Releases:
+
+ - 0.8.0 was released on Sat Dec 16 2017
+ - JS-0.2.0 was released on Fri Dec 01 2017
+
+## JIRA activity:
+
+ - 323 JIRA tickets created in the last 3 months
+ - 300 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-G">2017-10-18</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Arrow is a columnar in-memory analytics layer designed to accelerate big data.
+It houses a set of canonical in-memory representations of flat and
+hierarchical data along with multiple language-bindings for structure
+manipulation. It also provides IPC and common algorithm implementations.
+
+Arrow contains implementations or bindings in various stages in Java, C++, C,
+Ruby, Python, and JavaScript.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- We have added 6 new committers to the project
+
+- Continued development activity and growing community since the last board
+ report. We have made 4 releases, with the next release 0.8.0 coming in a
+ month or so
+
+- Development activity is increasing in JavaScript, and we are also looking to
+ grow a community of R language developers in the coming quarters.
+
+## Health report:
+
+- Arrow activity continues to increase with community interest and adoption.
+
+## PMC changes:
+
+- Currently 20 PMC members.
+- Kouhei Sutou was added to the PMC on Fri Sep 15 2017
+
+## Committer base changes:
+
+- Currently 28 committers.
+- New commmitters:
+   - Phillip Cloud was added as a committer on Tue Oct 03 2017
+   - Bryan Cutler was added as a committer on Wed Oct 04 2017
+   - Li Jin was added as a committer on Fri Oct 06 2017
+   - Philipp Moritz was added as a committer on Mon Aug 14 2017
+   - Paul Taylor was added as a committer on Fri Oct 06 2017
+   - Siddharth Teotia was added as a committer on Wed Oct 04 2017
+
+## Releases:
+
+- 0.5.0 was released on Sun Jul 23 2017
+- 0.6.0 was released on Mon Aug 14 2017
+- 0.7.0 was released on Sat Sep 16 2017
+- 0.7.1 was released on Sun Oct 01 2017
+
+## JIRA activity:
+
+- 460 JIRA tickets created in the last 3 months
+- 382 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-G">2017-07-19</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Arrow is a columnar in-memory analytics layer designed to accelerate big data.
+It houses a set of canonical in-memory representations of flat and hierarchical
+data along with multiple language-bindings for structure manipulation. It also
+provides IPC and common algorithm implementations.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- Heavy development activity and growing community since the last board
+  report. We have made 3 releases, with the next release 0.5.0 coming soon.
+
+- The Arrow 0.3.0 release on May 2 included C and Ruby bindings for the Arrow
+  C++ libraries. We have also seen a native JavaScript (TypeScript)
+  implementation appear for use.
+
+- The TurbODBC C++ and Python project released version 2.0.0
+  which included support for converting ODBC data to Apache
+  Arrow. This was enabled by an internal C++ API to the Python
+  Arrow bindings, and will help provide a blueprint for future
+  thirdparty Python libraries that use Arrow.
+
+- The Ray project for machine learning from the UC Berkeley RISELab contributed
+  a large software component, a shared memory object store ("Plasma"), to the
+  Apache Arrow project.
+
+- We have made significant progress toward completing compatibility between the
+  Java and C++ implementations of the Arrow memory format. As soon as we
+  achieve reasonable completeness, we should consider leaping to Arrow 1.0.0 to
+  communicate to the rest of the open source world that Arrow is no longer as
+  much of a work-in-progress and ready for more widespread use.
+
+- We have created the arrow-dist git repo to assist with cross-language and
+  cross-platform packaging.
+
+- Apache Spark has merged its first Arrow integration, SPARK-13534
+
+- The external GPU Open Analytics Initiative is using Apache Arrow as its data
+  interchange format
+
+## Health report:
+
+- Arrow is seeing an uptick in community interest and adoption. The increase in
+  activity reflects the project's scope expanding (i.e. more programming
+  languages) and increase in use in other projects. We expect this trend to
+  continue as Arrow's perception changes to be deemed more production-ready and
+  stable.
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Uwe Korn on Wed Apr 12 2017
+
+## Committer base changes:
+
+ - Currently 22 committers.
+ - Kouhei Sutou was added as a committer on Wed May 10 2017
+
+## Releases:
+
+ - 0.3.0 was released on Thu May 04 2017
+ - 0.4.0 was released on Mon May 22 2017
+ - 0.4.1 was released on Thu Jun 08 2017
+
+## Mailing list activity:
+
+ - We changed our JIRA notification schema to send only issue *creation*
+   e-mails to the primary mailing list, with further comments and edits going
+   to issues@
+
+ - dev@arrow.apache.org:
+    - 547 subscribers (up 17 in the last 3 months):
+    - 622 emails sent to list (1098 in previous quarter)
+
+ - issues@arrow.apache.org:
+    - 11 subscribers (up 0 in the last 3 months):
+    - 1985 emails sent to list (1255 in previous quarter)
+
+ - reviews@arrow.apache.org:
+    - 9 subscribers (up 9 in the last 3 months)
+
+
+## JIRA activity:
+
+ - 395 JIRA tickets created in the last 3 months
+ - 333 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#attachment-H">2017-04-19</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Arrow is a columnar in-memory analytics layer designed to accelerate big data.
+It houses a set of canonical in-memory representations of flat and
+hierarchical data along with multiple language-bindings for structure
+manipulation. It also provides IPC and common algorithm implementations.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+ - CodeBase/Format:
+   - Substantial progress and a 0.2 release since last report, close to 0.3
+   - Example additions include: Large contribution of GLIB from support from new
+     contributor adding support for Ruby, Lua, Go, Enhancements to HDFS support
+     including partitioned directories, clarification &amp; improvements to Time
+     types, Tensor Flow compatibility, support for fixed with binary types,
+     Python read enhancements, Incorporation of Feather file format, and many
+     other items.
+   - Spark integration (https://s.apache.org/arrowspark) looks promising and
+     will hopefully expose Arrow to a large group of additional users.
+
+ - Awareness and evangelism:
+   - Talks at conferences and meetups including:
+      Spark Summit East https://s.apache.org/arrowss17
+      Strata San Jose https://s.apache.org/arrowstrata17
+      Dataworks Munich https://s.apache.org/arrowdataworks17
+
+ - Community:
+   - Continued influx of new contributors. Some PMC members have been
+     especially effective at engaging new communities, through discussions on
+     Twitter as well as other means.
+
+## Health report:
+ - Double the number of dev and issue emails over the previous quarter mean
+   that the people who are active in the community are very active.
+ - At the same time, the PMC just started a discussion about how to continue to
+   grow the team. There have been various casual contributions which is good but
+   the core group of prolific contributors is growing slowly.
+ - We need to continue to make a concerted effort to provide example use cases
+   to help more people understand and appreciate Arrow benefits.
+ - We're seeing demand for this type of solution by other groups of people,
+   some inside the foundation, some outside. We're doing community outreach to
+   try to engage others but always worry about NIH thinking. Our open and
+   collaborative approach to building and extending the Arrow format and
+   software will hopefully convince more people to join the project rather than
+   creating competing technologies. Only time will tell in each case.
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - Last PMC addition was Uwe Korn on Thu Apr 13 2017
+
+## Committer base changes:
+
+ - Currently 21 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Uwe Korn at Thu Oct 27 2016
+
+## Releases:
+
+ - 0.2.0 was released on Sat Feb 18 2017
+
+## JIRA activity:
+
+ - 332 JIRA tickets created in the last 3 months
+ - 282 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#attachment-I">2017-01-18</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Arrow is a columnar in-memory analytics layer designed to accelerate big data.
+It houses a set of canonical in-memory representations of flat and
+hierarchical data along with multiple language-bindings for structure
+manipulation. It also provides IPC and common algorithm implementations.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+- Arrow has made great progress since the last report.
+- The community has actively been driving towards a set of cross-language
+  compatibility tests. These are now complete.
+- The compatibility tests were a key gate identified to seeing the
+  specification as solidified. Now that it is, the community will be starting
+  work on our second release.
+- This release will show the arrow projects java arrow, arrow-cpp, py-arrow
+  and Parquet's parquet-cpp all working nicely together.
+
+## Health report:
+- A core group of community members continue to make good progress on various
+  aspects of both the Java, C++ and python projects.
+- We're seen a small number of casual contributors arrive and provide
+  additional patches to the project.
+- Multiple people have been doing community outreach through the various blog
+  posts, meetups and conference presentations. Examples include
+  - Upcoming talk at Strata San Jose in March
+  - Upcoming talk at Dataworks Summit Munich in April
+  - Arrow and Pandas vision: https://s.apache.org/arrow_1701_01
+  - Python Data Wrangling talk: https://s.apache.org/arrow_1701_02
+- We continue to see nice growth in mailing list and jira activity.
+
+## PMC changes:
+
+- Currently 18 PMC members.
+- Wes McKinney was added to the PMC on Wed Oct 19 2016
+
+## Committer base changes:
+
+- Currently 21 committers.
+- Uwe Korn was added as a committer on Thu Oct 27 2016
+
+## Releases:
+
+- Last release was 0.1.0 on Tue Oct 11 2016
+
+## JIRA activity:
+
+- 140 JIRA tickets created in the last 3 months
+- 117 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#attachment-H">2016-10-19</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Arrow is a columnar in-memory analytics layer designed to accelerate big data.
+It houses a set of canonical in-memory representations of flat and hierarchical
+data along with multiple language-bindings for structure manipulation. It also
+provides IPC and common algorithm implementations.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+- Arrow made its first release.
+- In preparation of the release, multiple discussions were focused on
+  formalizing various Arrow specification details.
+- Discussion was good and we reworked some integration to invert the
+  dependency model between the Parquet project and the Arrow project.
+- A new Arrow file format was defined and implemented in both Java and C++.
+  It is also available from Python.
+- Community members covered Arrow at multiple conferences including Strata
+  NYC.
+- Arrow &lt;&gt; Parquet interchange has been made available in C++.
+- The new Arrow file format is planned to be used to move forward on both
+  cross-language IPC implementations and enabling cross-language compatibility
+  tests.
+- We've seen good growth in the Arrow developer mailing list, having increased
+  to 467 subscribers (up 43 in the last 3 months):
+
+## Health report:
+- The first release is a good step in engaging a broader range of contributors
+  and users. Having bits for use, albeit alpha, allows us to engage a wider
+  range of engineers.
+- We need to continue to add new examples and more documentation to better
+  describe how to use and extend Arrow.
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Abdel Hakim Deneche on Tue Jan 19 2016
+
+## Committer base changes:
+
+- Currently 20 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Ippokratis Pandis at Thu Feb 18 2016
+
+## Releases:
+
+- 0.1.0 was released on Wed Oct 12 2016
+
+## JIRA activity:
+
+- 95 JIRA tickets created in the last 3 months
+- 73 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#attachment-G">2016-07-20</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Arrow is a columnar in-memory analytics layer designed to accelerate big data.
+It houses a set of canonical in-memory representations of flat and
+hierarchical data along with multiple language-bindings for structure
+manipulation. It also provides IPC and common algorithm implementations.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- Awareness continues to increase with the community having done presentations
+  at various meetups as well as the following conferences: Pydata Paris, Hadoop
+  Summit Ireland, Hadoop Summit San Jose and Berlin Buzzwords.
+- The CPP work has made good progress.
+- The cross-project work with Parquet has seen substantial work (both in the
+  Parquet project and the Arrow project). This should be a great first example
+  proof-of-concept integration showing the benefits of in-memory columnar
+  layer.
+- There has been substantial progress on development of for the IPC / memory
+  sharing.
+- Java development has slowed some but appears to be picking up again.
+- A new independent project called Feather is using Arrow as a format for
+  writing to disk. This has also increased engagement with Arrow itself and we
+  have a number excited communities including R &amp; Python (and the Julia
+  community experimenting).
+
+## Health report:
+
+- We've seen good discussion and development activity since the last report.
+- We need to get to a first release.
+- Prior to doing so, the community is working on rudimentary integration tests
+  between Java and C++ and more formal format specification.
+- More work can be done to make the project approachable to newly interested
+  parties by creating additional documentation and quickstart. A sample
+  application will also help.
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- No new PMC members added in the last 3 months.
+- Last PMC addition was Abdel Hakim Deneche on Tue Jan 20 2016
+
+## Committer base changes:
+
+- Currently 20 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Ippokratis Pandis at Thu Feb 18 2016
+
+## Releases:
+
+- No releases yet.
+
+## JIRA activity:
+
+- 71 JIRA tickets created in the last 3 months
+- 40 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#attachment-H">2016-04-20</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Arrow is a columnar in-memory analytics layer designed to accelerate big
+data. It houses a set of canonical in-memory representations of flat and
+hierarchical data along with multiple language-bindings for structure
+manipulation. It also provides IPC and common algorithm implementations.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- A number of public presentations have been done about Arrow including at
+  Strata SJ, Hadoop Summit Europe and various meetups. Response at each was
+  strong and we saw subsequent increased interaction on the mailing list.
+- We've seen a great new project Feather, a collaboration between the Python
+  and R communities build on top of Arrow to provide an ephemeral cross system
+  format that performs faster and has better typing than the traditionally
+  used CSV format.
+- A number of interested organizations have posted blogs about their interest
+  in and support for Arrow.
+
+## Health report:
+
+- We continue to see new community members engage.
+- Public discussions and contributions from both committers and casual
+  contributors continue to improve the Arrow specification.
+- We're working with the incubating Mnemonic community to support alternatives
+  to ephemeral memory for storing Arrow vectors. This will likely first appear
+  as an optional extension module of the Java api.
+- We're still negotiating the final Arrow switch over in the Drill community.
+  The goal is to do it as part of the 2.0 branch to avoid any disruption to
+  the active stable branch (master).
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- No new PMC members added in the last 3 months
+
+## Committer base changes:
+
+- Currently 20 committers.
+- Most recently added committers:
+   - Ippokratis Pandis was added as a committer on Thu Feb 18 2016
+   - David Alves was added as a committer on Wed Feb 17 2016
+   - Wes McKinney was added as a committer on Mon Feb 01 2016
+
+## Releases:
+
+- No releases yet.
+
+## JIRA activity:
+
+- 100 JIRA tickets created in the last 3 months
+- 67 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#attachment-F">2016-03-16</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Arrow is a columnar in-memory analytics layer designed to accelerate big
+data. It houses a set of canonical in-memory representations of flat and
+hierarchical data along with multiple language-bindings for structure
+manipulation. It also provides IPC and common algorithm implementations.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- A number of articles were posted about Arrow in the last month. This has
+brought in a large number of interested parties and we've seen nice increase
+in community engagement.
+- There has been solid ideation and design discussions around IPC, metadata
+and shared memory semantics.
+- Development of the Python bindings is underway with a number of JIRAs
+focused on that component.
+- Since people have become aware of the project, we've seen a nice increase in
+activity on the mailing list. Within that last month we've gone from 17
+subscribers to 263 on the dev list and have seen 136 messages on the list.
+
+## Health report:
+
+- JIRAs are being opened and closed at a solid rate given the freshness of the
+project.
+- A number of design discussions have included great feedback and engagement
+people outside the initial PMC/committers.
+- We've seen several code contributions from first-time contributors.
+- The final separation of code from the Drill codebase is up for review and
+will likely move forward after the 1.6 Drill release (voting nearly underway).
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- No new PMC members since project was established.
+
+## Committer base changes:
+
+- Currently 20 committers.
+- New committers:
+- Ippokratis Pandis was added as a committer on Thu Feb 18 2016
+- Wes McKinney was added as a committer on Mon Feb 01 2016
+
+## Releases:
+
+- No releases yet.
+
+## JIRA activity:
+
+- 41 JIRA tickets created in the last 3 months
+- 20 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-02-17"><a href="2016/board_minutes_2016_02_17.html#attachment-E">2016-02-17</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2016-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Arrow is a columnar in-memory analytics layer designed to accelerate big
+data. It houses a set of canonical in-memory representations of flat and
+hierarchical data along with multiple language-bindings for structure
+manipulation. It also provides IPC and common algorithm implementations.
+
+## Issues:
+- there are no issues requiring board attention at this time
+
+## Activity:
+- The project was established at the last board meeting.
+- Mailing lists, repositories and issue tracking have been established by
+infrastructure.
+- An initial website is underway and should be available by the time of the
+board meeting.
+- The community also has worked with Sally from press@ to announce the project
+via a press release on February 17th.
+-  Various community members are working on putting together better
+documentation and communication around Arrow.
+
+
+## Health report:
+- The project is just getting started as an independent project.
+- One of the key initial efforts is finalizing the extraction of code from the
+Drill codebase. This is tracking well and we hope to complete this before the
+next board report.
+- A number of community talks are being submitted to upcoming conferences and
+meetups to make more people aware of Arrow.
+- We need to start spending more time growing the community beyond the initial
+PMC and committers.
+ - The Project voted to add 5 additional committers to the core project due to
+   their involvement initial Arrow discussions.
+
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- No new PMC members added since the project was established.
+
+## Committer base changes:
+
+- Currently 18 committers.
+- Wes McKinney was added as a committer on Mon Feb 01 2016
+- Offers are out to four other community members to become committers.
+
+## Releases:
+
+- No Arrow releases have yet been made.
+
+## Mailing list activity:
+
+- dev@arrow.apache.org:
+   - 17 subscribers (up 17 in the last 3 months)
+
+- issues@arrow.apache.org:
+   - 4 subscribers (up 4 in the last 3 months)</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

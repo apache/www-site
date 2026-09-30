@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Tooling | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Tooling';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Tooling';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Tooling</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="tooling">Tooling<a class="headerlink" href="#tooling" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-06-19</td>
+<td><a href="2024/board_minutes_2024_06_19.html#section-7E">Appointed Myrle Krantz</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-5">2026-08-19</a> &mdash; David Fisher<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre># Tooling Initiative
+
+## Apache Trusted Releases
+
+We are building the ATR production server and preparing the Beta release. When
+ready we will be sending an announcement to all PMCs.
+
+Highlights include:
+
+- Catalog of All ASF Releases including Archived Releases. A complete
+  inventory ASF release artifacts was used to build a full catalog. The test
+  catalog is available at https://release-catalog-test.apache.org/
+- Identifying sub-projects is imperfect and complex. We are prepared to reseed
+  after interacting with PMCs once complex sub-project organization is
+  confirmed.
+- ATR watches svn:dist:release changes using pubsub to capture non-ATR
+  releases and archivals.
+- Release records are emailed to releases@tooling.apache.org
+- Expedited security releases are secret. They are completely private which
+  was a challenge.
+- Project metadata and policies are derived from DOAP and can be maintained in
+  both ATR and .asf.yaml. ATR has a yaml export for projects allowing these
+  records to be synchronized.
+- Tooling now has a self hosted GH Runner which means that staff remains
+  productive despite GH Runner contention.
+
+ATR Releases since July 1, 2026
+
+- Cordova File Transfer Plugin 2.0.1
+- Maven Toolchains Plugin 3.3.0
+- Maven Resolver 2.0.21
+- Maven JAR Plugin 3.5.1
+- Cordova Android 15.1.0
+- Maven Resolver Ant Tasks 1.6.1
+
+## Board Agenda Tool
+
+Sander and Thomas have been making a very large number of AI assisted
+improvements to the tool related to new agenda creation, presentation mode,
+executive sessions, actions without a meeting, and a redesign of the site. The
+new UX is on agenda-dev.apache.org Work is being done to fully replace
+whimsy's board minutes views with much more accurate history to be fully
+hosted on www.apache.org.
+
+## Responsible AI Tooling
+
+We are working with RAI to build out the tooling framework. We added Greg
+Stein to the Tooling committee to support work on our model gateway called
+LLMAO. llm.apache.org
+
+Tooling has been covering small charges for tokens and hosted LLMs in our
+limited budget. These items are now appropriately shifted to the RAI budget. I
+would need to review with the Treasurer next month what our spend this fiscal
+has been on these items.
+
+Please note that one of the Tooling staff members is now dedicated to RAI.</pre>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-5">2026-06-17</a> &mdash; Dave Fisher<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Tooling
+
+### Apache Trusted Releases (ATR)
+
+We are finishing all of the UI improvements and have soft launched Alpha3 in
+early June. New features include releasing to a test repository: dist/atr. We
+are working delivering important features including a full release catalog and
+a .asf.yaml project feature.
+
+In May the following releases were made using ATR:
+- Cordova iOS 8.1.0
+- Cordova Network Information Plugin 3.1.0
+- Mahout 0.6
+- Maven 3.9.16
+- Maven Changelog Plugin 3.0.0-M2
+- Maven Dependency Analyzer 1.17.1
+- Maven Dependency Plugin 3.11.0
+- Maven Enforcer 3.6.3
+- Maven Parent POMs 48
+- Maven Resolver 2.0.18
+- NetBeans Maven Utilities 14.5
+- (Maven) Apache Software Foundation Parent POM 38
+
+Draft release candidates:
+- DB JDO 3.3
+- Maven Build Cache Extension 1.2.3
+
+### Tooling President's Committee
+
+In order to support contributions to tooling by non-staff volunteers we are
+forming a Tooling committee: Dave Fisher, Thomas Neidhart, Sean Palmer,
+Andrew Musselman, Alastair McFarlane, Herv&eacute; Boutemy, Tam&aacute;s Cserven&aacute;k,
+Slawomir Jaranowski, and Daniel Gruno.
+
+### ATR Maven Plugin
+
+Some of the Maven PMC have joined with the tooling team to build a maven
+plugin that will allow an ATR draft release to be uploaded with a mvn command.
+
+### Board Agenda Tool (BAT)
+
+Thomas continues to support BAT as a volunteer and Sander has been working on
+some improvements.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-5">2026-05-20</a> &mdash; Dave Fisher<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>## Tooling
+
+### Apache Trusted Releases (ATR)
+
+We are finishing all of the UI improvements and moving towards an Alpha3 by
+the end of this month and then Beta by the end of June.
+
+### Board Agenda Tool (BAT)
+
+We will need to discuss next improvements with the board.</pre>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-5">2026-04-15</a> &mdash; Dave Fisher<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Tooling
+
+### Apache Trusted Releases (ATR)
+
+Our AI driven ASVS L1 and L2 security audit was completed. We are moving
+through these issues.
+
+- 9 critical issues - all closed
+- 28 high with 22 closed and 1 deferred intil after the beta release
+- 78 medium with 25 closed and 13 deferred
+- 65 lows with 40 closed and 6 deferred (so far)
+
+The bulk of these ASVS issues lead to improved code quality, security
+resilience, and documentation.
+
+We are offering to help PMCs with an ASVS audit.
+
+ATR is part of Infra's new test of MFA login services. It works quite well.
+
+We missed doing a quick Alpha 3 in late March or early April, but early May
+looks feasible. Currently we plan to release a near production beta in this
+calendar quarter.
+
+### Board Agenda Tool (BAT)
+
+We will need to discuss with the board any new or enhanced features before
+committing to further development.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-5">2026-03-18</a> &mdash; Dave Fisher<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+This month's report will consist of a quick progress report.
+
+## Apache Trusted Releases (ATR)
+
+Our current development focus includes the following tasks.
+
+1. Our ASVS security review generated about 150 GH issues. We now have less
+   than 20 remaining before we re-run L1 and run L2 requirements. The exercise
+   has been a very helpful code review.
+2. We added the quarantine phase to validate upload artifact archives as safe
+   for expansion and free from zip bombs, path traversal, duplicate paths,
+   etcetera. This work proceeds with tightening up preparations for a vote.
+3. We refactored the codebase for type safety.
+4. Preparing for a quick Alpha 3 in late March or early April.
+5. Beta is planned for sometime in Q2.
+
+## Board Agenda Tool (BAT)
+
+The reporter.apache.org website is fully integrated. Also, Whimsy is now only
+doing minutes views. We are ready to discuss what improvements the new board
+of directors would like implemented. We have a test instance for working on
+reporter changes and are open to volunteer help.</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-5">2026-02-18</a> &mdash; Dave Fisher<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+This month's report will take a different approach as we are celebrating the
+first anniversary of our first staff member.
+
+## Staff highlights
+
+### Sean B Palmer
+
+Sean started on February 1, 2025. He has mostly worked on the Apache Trusted
+Releases (ATR) platform. He helped the Infrastructure team extensively on the
+MFA implementation. He takes meticulous notes on his daily activity which was
+incredibly helpful in writing our annual report and blog post.
+
+### Thomas Neidhart
+
+Thomas started on March 1, 2025. He helped establish our initial frameworks.
+He then did brilliant and quick work reshaping and completing the core
+functionalities of the Board Agenda Tool (BAT). Even though he resigned from
+his staff position effective October 3 he has continued to support additional
+work on the BAT as an ASF Member volunteer.
+
+### Andrew Musselman
+
+Andrew started about November 1, 2025 as a temporary staff member while we
+continued to search for Thomas's replacement. I was intrigued with his idea of
+using Agentic AI to analyze software. He has been the main force as we have
+iterated on ASVS security analysis of ATR (and now ASF-Quart).
+
+### Alastair McFarland
+
+Alastair joined the staff on December 7, 2025. By happenstance he was
+committer #10,000. He has been fantastic so far working on SBOM generation,
+dependency analysis, and validation. He also has set up GitHub workflows to
+help with publishing workflows to the NX3 upgrade of repository.apache.org.
+
+## Apache Trusted Releases (ATR)
+
+Our current development focus includes the following tasks.
+
+1. Extending our ASVS security review to include ASF Quart
+2. Adding a quarantine phase to validate upload artifact archives as safe for
+   expansion and free from bombs, path traversal, duplicate paths, etcetera
+3. Scenarios where committers are release managers
+4. Preparing for a quick Alpha 3 in March.
+
+## Board Agenda Tool (BAT)
+
+There is now a tested api for reporter.apache.org to access. The reporter will
+be enabled after this board meeting.</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-5">2026-01-21</a> &mdash; Dave Fisher<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+Our new team member has settle in. The team is happy to have him. I have
+extended our extra developer through March 31, 2026.
+
+## Apache Trusted Releases (ATR)
+
+Our current development focus is on the following tasks.
+
+1. Publishing to Distribution channels with a focus on Nexus3 first
+2. Completing the candidate checks in the composition phase
+3. ASVS security review and necessary fixes
+4. Aligning work issues to completion of features for the Beta
+5. Preparing policy discussions related to the ATR
+
+The repository is open for contributions and we have had several third party
+contributions, few of which are any good. We have improved our developer
+documentation and these are less of a distraction.
+
+## Board Agenda Tool (BAT)
+
+The tool is now stable and nearly complete. There are some improvements
+waiting for volunteer developer time. Reporter integration with BAT is
+progressing. We have a volunteer.
+
+## Improvements to projects.apache.org and reporter.apache.org
+
+We completed a long discussion on board@ about the reasons and plans for
+Tooling to take charge of these services. The plan was brought to
+dev@community. We now have the expected volunteer.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-5">2025-12-17</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+With help from many in amplifying our job search we found and contracted a
+well qualified engineer. We also contracted a short term engineer. We remain
+below the tooling staff budget.
+
+## Apache Trusted Releases (ATR)
+
+The Alpha 2 testers have found several bugs and edges which are repairing.
+
+Our current development focus is on the following tasks.
+
+1. Supporting PMC Alpha 2 testing with bug fixes and feature improvements
+2. ASVS security review and necessary fixes
+3. SBOM analysis and generation
+4. Preparing policy discussions related to the ATR
+
+The repository is open for contributions and we have had one succesful "drive
+by" PR and a few bad ones. We are requiring that new contributers introduce
+themselves on the dev mailing list. We have had commits contributed by nine
+developers.
+
+We plan to add re-platforming of projects.apache.org as part of our Release
+Catalog in the Beta development plan.
+
+## Board Agenda Tool (BAT)
+
+The tool is now stable and nearly complete. There are some improvements
+waiting for volunteer developer time.
+
+Reporter integration needs to be done which will require careful planning for
+re-platforming of reporter.apache.org. An additional volunteer here would be
+helpful.
+
+## Secretary's Workbench
+
+It has become clear that we will need to wait a few more months until we can
+focus on this task.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-5">2025-11-19</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+The team continues to work hard building systems.
+
+## Apache Trusted Releases (ATR)
+
+The ASF published a blog post announcing the second alpha. The announcement
+included information about how to contribute to the stack. The alpha is going
+very well.
+
+Our current development focus is on the following tasks.
+
+1. Supporting PMC Alpha 2 testing with bug fixes and feature improvements
+2. ASVS security review and necessary fixes
+3. Changes needed for proper production configuration
+
+## Board Agenda Tool (BAT)
+
+The tool is now stable and essentially complete. There are some improvements
+waiting for volunteer developer time. Please let the tooling team know if
+there are any urgent issues.
+
+## Secretary's Workbench
+
+The repository is now open to all foundation members. Per a conversation with
+the Chair at the C/C Conference the Roster tool is in scope. While our focus
+is on ATR, we will validate if the requirements differ from the current Whimsy
+implementations.
+
+## Staffing
+
+We are still searching for a replacement developer. We are getting some
+support from volunteers.</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-5">2025-10-15</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+The team continues to work hard building systems.
+
+## Apache Trusted Releases (ATR)
+
+We announced a second Alpha at C/C Minneapolis and are preparing a blog post.
+A functional MFA is one of our requirements for an integrated Beta and we have
+been focusing our efforts the last few weeks on MFA.
+
+## Board Agenda Tool (BAT)
+
+The September meeting used of the new agenda tool. While there are a number of
+small improvements in process the tool is nearly feature complete! Going
+forward the Chair and Secretary with their Assistants will be the important
+stakeholders.
+
+## Secretary's Workbench
+
+Several members of the Secretary's team have confirmed access to the
+`tooling-secretary` repository.
+
+## MFA POC Support
+
+The team has helped Infrastructure get to the point of demonstrating required
+functionality using Authentik.
+
+## Staffing
+
+One of our team members has decided to resign from the team. We thank Thomas
+Neidhart for his excellent work. He has volunteered to continue to support BAT
+development as a foundation member.
+
+We have started our search for a replacement developer.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-5">2025-09-24</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+The team continues to work hard building systems.
+
+## Operations
+
+## Apache Trusted Releases (ATR)
+
+We have begin to code SBOM checking process while building release candidates
+with a goal to handle various dependency checks like licenses and
+vulnerability checks. We will use some third party tools for some of this
+functionality. These checks will help the Release Manager learn if there are
+license changes or vulnerabilities in their dependencies.
+
+We will be announcing a second Alpha at C/C Minneapolis and are confirming our
+list of "Customer 0" PMCs.
+
+## Board Agenda Tool (BAT)
+
+The Board Agenda Tool should be ready to perform almost every meeting step
+completely. The September meeting should not require use of the Whimsy tool.
+
+## Workbench
+
+Nothing much to report.
+
+## MFA
+
+It is a priority of the team to have MFA in place before releasing an ATR Beta.
+We will be actively assisting INFRA with MFA implementation.</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-5">2025-08-20</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+The team continues to work hard building systems and playing well with others.
+
+# Operations
+
+## Apache Trusted Releases
+
+We completed the initial Python CLI Client and Server API endpoints. We added
+support for PAT and JWT Tokens. We adding Distribution Channel declaration.
+Once that is done we will begin work on GitHub actions and will prepare for a
+second Alpha round.
+
+We will initially continue with an implicit identification of products
+releases through the ATR.
+
+## Board Agenda Tool
+
+This month the new tool is being used for the whole Board Report cycle. We are
+planning for the complete cycle through creating the September agenda.
+
+## Secretary's Workbench
+
+The repository is set up for the Secretary's workbench and later this month we
+will review requirements and begin building the tool.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-5">2025-07-16</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+The team continues to work hard building systems and playing well with others.
+
+## Operations
+
+### Apache Trusted Releases
+
+We completed a round of updates to the ATR Alpha and have improved Candidate
+checks and Voting process.
+
+We've started on a Python CLI Client to the Server API endpoints. This will
+enable RMs, GitHub workflows, and the general public to interact with the ATR.
+
+We continued our research on the ASF project count, and while one could
+interpret our results as there being at least 1023 "projects". After a
+conversation on members@ the conclusion is that many of these are best thought
+of as "products'. We will make an explicit or implicit identification of
+products part of the ATR. There are PMCs that may release dozens of products
+in a release. We will be able to accommodate this.
+
+### Board Agenda Tool
+
+The Vice Chair used the tool to run last month's Board Meeting. This allowed
+attendees to follow as they navigated through the Agenda. The experience was
+improved.
+
+We have much of the editing capabilities completed, but due to the security
+model in BAT we need to wait for Infrastructure to complete a software update
+and migration of the ASF's svn servers. This is nearly completed.
+
+### Workbench
+
+No progress to report this month.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-5">2025-06-18</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre># Tooling
+
+The team has been working hard building systems and playing well with others.
+
+## Apache Trusted Releases.
+
+We started an internal Alpha Test at release-test.apache.org with seven PMCs
+so far:
+
+- Airflow
+- Commons
+- Logging Services
+- Maven
+- Pekko
+- Sling
+- Tomcat
+
+Great feedback through several issues which we are handling. The Alpha will be
+announced to ASF Members once a couple of workflow issues are handled.
+
+We worked with ComDev to enhance their project json feed to include TLPs
+without DOAP files. We believe that the 385 projects number is an
+understatement. We are planning to make it easy for PMCs to declare projects
+in .asf.yaml files.
+
+We are discussing what additional metadata file formats should be maintained
+and offered to the public.
+
+We had a discussion with our targeted sponsor about leveraging an update of
+repository.apache.org to Nexus3 and how that can enhance release metadata,
+sbom generation, and potentially handle multiple distribution channels.
+
+## Board Agenda Tool
+
+The Chair used the tool to run last month's Board Meeting. This allowed
+attendees to follow the Chair as they navigated through the Agenda.
+
+We added views of foundation leadership, committees, and committers which are
+both generally useful and will support the Secretary's actions when a Special
+Order passes.
+
+We are working with Infra so that commits to the agenda will have the correct
+author.
+
+## Workbench
+
+We met with the Treasurers and are making plans to support the tooling they
+are building to support their operations.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-5">2025-05-21</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>The Tooling team is currently working on these projects.
+
+1. Apache Trusted Release (ATR) platform where we are about to announce an
+   Alpha test to the whole membership. This version shows an end to end
+   release process that follows current Release Policy.
+
+2. Board Agenda Tool (BAT) where the UX is improved and we are starting to
+   show support for agenda updates.
+
+3. Working with Infrastructure on proposed improvements to committee-info.txt
+   beyond being a fragile text format.
+
+4. Working with Treasury to provide a framework for their use on a Workbench
+   platform.</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-5">2025-04-16</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>The Tooling team is hard at work on our projects.
+
+1. The Apache Trusted Release platform is nearly ready for Alpha level
+   user testing of the Release Candidate framework. Alpha testing will
+   be in two phases. (a) selected users and (b) open to all members.
+
+2. Board Agenda Tool project has restarted and we have a development
+   plan available in the repository.
+
+The team has contributed to Infrastructure on asfyaml, asfpy, and
+asfquart.
+
+We are starting plans for the third project, the Secretary's Workbench.
+I received a request from the Treasury team for help. The third project
+will be recast as Workbench which will be a framework that includes the
+Secretary's written by the Tooling team and the Treasurer's written by
+them with our support. There will be room for other subprojects.
+
+As part of research into the Agenda Tool I would like to ask Directors
+to let me know when and where they read this report.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-5">2025-03-19</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre># Tooling Team Report
+
+Our two contractors Sean B Palmer (sbp) and Thomas Neidhart (tn) are on board.
+The website is up on tooling.apache.org (source is
+https://github.com/apache/tooling-docs/).
+
+## Projects
+
+Working documentation can be found on github here:
+https://github.com/apache/tooling-docs/.
+
+### Apache Trusted Release
+
+We are working on the platform here:
+https://github.com/apache/tooling-trusted-release/. We just renamed this from
+our experimental area. We are beginning to contribute fixes back upstream to
+Infrastructure for some of the required dependencies.
+
+We plan to provide guidance to projects about how to achieve reproducible
+builds and produce SBOMs in their specific build pipelines.
+
+### Board Agenda Tool
+
+We will ramp up work on the Board Agenda Tool during this month's board
+meeting. The tooling team is now responsible for assuring that
+agenda-test.apache.org is running starting from the board meeting. We will
+need to work with the Secretary and Chair to make sure that every requirement
+is captured.
+
+### Other Projects
+
+There was a discussion after the Member's Meeting about where Daniel Gruno's
+asfmm code might land. One thought is that Tooling could become more of a
+committee, and could incorporate projects that are supported by member and
+staff volunteers. There would need to be thought put into governance if it is
+decided to expand tooling's scope.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-5">2025-02-19</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>Tooling Team Report
+
+We are contracting two Senior Software Engineers, Tooling. One started on
+February 1, and the other officially starts on March 1. Those are the contract
+dates. The team has already established a good working relationship.
+
+## Projects
+
+Working documentation can be found on github here:
+- https://github.com/apache/tooling-docs/.
+
+### Apache Trusted Release
+
+1. We have requirements and a framework plan for the first part of the work.
+
+2. Work has started in an "experimental repository".
+
+### Board Agenda Tool
+
+1. An experimental whimsy installation was created so that we have a working
+   reference to study.
+
+2. We will study the read only tool to see what the remaining requirements
+   are.
+
+3. We will be ready to confirm true requirements once the new Board has
+   established itself in March.</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-5">2025-01-15</a> &mdash; Dave Fisher<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>General
+======
+
+Tooling began the interview process for a contractor position - Senior
+Engineer, Tooling. We had over 200 applications and despite the holidays we
+narrowed our short list to five. We are likely to contract two engineers as
+combined with existing Budget plus an expected sponsorship our costs will be
+easily covered for at least 2025.
+
+Bootstrap
+=======
+
+- Tooling mailing lists are created: dev@tooling.apache.org and
+  private@tooling.apache.org
+- There is a slack channel: #tooling-discuss
+- An existing discussion infra slack channel is open and renamed
+  #apache-trusted-releases
+
+January Goals
+==========
+
+1. Begin on boarding of contractor(s) and start organizing requirements.
+
+2. Work on the web presence for https://tooling.apache.org</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-5">2024-12-18</a> &mdash; Dave Fisher<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>November through Dec 9
+
+Onboarded as VP, Tooling. Working with the Infrastructure Admin Chris
+Lambertus to post the Senior Engineer, Tooling position on Indeed. Worked with
+the VP of Fundraising Bob Paulin on two possible funding sponsorships.
+
+Plan for the Tooling position is as follows:
+1. Hire for the position. I have some volunteers to help with the interview
+   process.
+2. Onboarding.
+3. Review the status of the Apache Trusted Release initiative and create a
+   Statement of Work to incorporate plan and deliverables.
+4. Review the state of the Board Agenda tool and then create a Statement of
+   Work to plan to deliver the updated tool. We should make progress on this
+   list before adding additional tasks.</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-5">2024-11-20</a> &mdash; Myrle Krantz<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-5">2024-10-16</a> &mdash; Myrle Krantz<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-5">2024-09-18</a> &mdash; Myrle Krantz<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>The job description for a tooling developer has been finalized, and is
+in-progress on announcement and launch of the hiring process. Pending
+a hire, this Office remains quiet.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-5">2024-08-21</a> &mdash; Myrle Krantz<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-5">2024-07-17</a> &mdash; Myrle Krantz<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>NOTE: no current issues requiring escalation or attention from the
+President or the Board.
+
+Several activities have happened since the VP Tooling office creation
+and appointment occurred last month:
+
+* A job description for a full-time developer has been drafted and is
+  under review now.
+
+* With the assistance of the Fundraising team, we have been put into
+  contact with one of our sponsors, to help with the hiring process.
+
+* Coordination with the InfraAdmin to incorporate staffing amounts
+  into the (Infrastructure) FY25 budget. Unlike prior years, Infra's
+  "Staffing" budget line will move to become part of the Foundation's
+  General Administration roll up account.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

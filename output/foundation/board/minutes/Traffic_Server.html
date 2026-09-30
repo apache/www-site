@@ -1,0 +1,3813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Traffic Server | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Traffic Server';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Traffic Server';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Traffic Server</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="traffic-server">Traffic Server<a class="headerlink" href="#traffic-server" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016-10-19</td>
+<td><a href="2016/board_minutes_2016_10_19.html#section-7A">Appointed Bryan Call</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2010-04-21</td>
+<td><a href="2010/board_minutes_2010_04_21.html#section-7D">Appointed Leif Hedstrom</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2015-07-15</td>
+<td><a href="2015/board_minutes_2015_07_15.html#section-7E">Change the Apache Traffic Server Project Management Committee</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>2010-04-21</td>
+<td><a href="2010/board_minutes_2010_04_21.html#section-7D">Establish the Apache Traffic Server Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-CI">2026-08-19</a> &mdash; Bryan Call<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of a
+high-performance, scalable HTTP/1.1 and HTTP/2 caching proxy server that
+powers major CDNs worldwide.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (16 years ago)
+There are currently 72 committers and 58 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mo Chen on 2024-04-15.
+- No new committers. Last addition was Jake Champion on 2026-04-06.
+
+## Project Activity:
+This was our most active quarter in over a year.
+
+Traffic Server now builds against OpenSSL 4.0. That migration ran across
+two quarters and let us delete a large amount of code the new library no
+longer supports. We added HTTP/3 over TCP, so operators can offer HTTP/3 on
+networks that block the UDP traffic QUIC needs. The in-memory cache index
+now survives a restart instead of being rebuilt from disk, which turns a
+multi-minute startup into milliseconds on a large cache.
+
+We shipped four releases this quarter. 9.2.14 and 10.1.3 were announced on
+July 15 and fixed a single denial of service issue. 9.2.15 and 10.1.4
+followed on July 28 and 29 and resolved 151 security findings, published as
+38 CVEs. This was by a wide margin the largest security release the project
+has done.
+
+The volume of that security work pushed our feature releases back. 10.2.0
+is in vote this week. ATS 11.0.0 has been deferred and does not have a
+target date.
+
+Development activity grew by every measure. Comparing the 15 weeks since
+the last report against the 15 weeks before it, contributors went up 14%
+(22 -&gt; 25) and pull requests merged to master went up 26% (199 -&gt; 250).
+Commits went up 92% (208 -&gt; 399), growing faster than pull requests because
+the security fixes were prepared privately and landed in batches.
+
+## Community Health:
+We held a virtual ATS Summit on May 20-21, 2026, over two half-days. Topics
+covered the release roadmap, the OpenSSL migration, the state of HTTP/3,
+and a proposal to improve our logging.
+
+We continue to hold weekly bug and issue scrubs every Monday.
+
+The issue backlog shrank sharply, mostly from a deliberate effort to work
+through the oldest issues rather than a change in incoming volume. Issues
+closed went up 243% (60 -&gt; 206) while issues opened held flat (44 -&gt; 44).
+That leaves 217 issues and 67 pull requests open.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-CA">2026-05-20</a> &mdash; Bryan Call<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of a
+high-performance, scalable HTTP/1.1 and HTTP/2 caching proxy server that
+powers major CDNs worldwide.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (16 years ago).
+There are currently 72 committers and 58 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mo Chen on 2024-04-15.
+- Jake Champion was added as a committer on 2026-04-06.
+
+## Project Activity:
+Notable work this quarter includes shipping the ssl_multicert configuration
+in YAML form, parallelizing SSL certificate load at startup, adding a
+ja4_fingerprint plugin with BoringSSL support and a new jax_fingerprint
+plugin, adding a filter_body plugin for request and response body content
+filtering, adding Cache Groups concepts to Cripts, implementing RFC 9213
+Targeted HTTP Cache Control with a CDN-Cache-Control default, ignoring
+malformed Cache-Control directives per RFC 7234, adding Lua plugin support
+for the connection exempt list, fixing cache directory corruption in
+parallel directory sync, and adding a parallel autest runner that
+materially reduces CI time.
+
+We also did substantial portability and TLS library work, including a fix
+to build with OpenSSL 3.5+ after the engine API was removed, additional
+BoringSSL compatibility, OCSP stapling crash and timeout hardening, and
+making the 9.2.x branch build on macOS 26.
+
+Development remains healthy with 20 active contributors merging 256 pull
+requests across 174 commits to master. The project closed more issues
+than were opened (66 closed vs. 51 created), continuing to reduce our
+backlog.
+
+We shipped four bug fix releases this quarter: 9.2.12 and 10.1.1 on
+February 6, followed by 9.2.13 and 10.1.2 on April 2-3. Work on the next
+feature release, 10.2.0, is underway on the 10.2.x branch. ATS 11.0.0
+remains targeted for late summer.
+
+## Community Health:
+We are holding a virtual ATS Summit on May 20-21, 2026, two remote
+half-days. Planned topics include the state of the project, the ATS 11
+roadmap, AI-assisted code review and development workflows, CI and
+testing improvements, and documentation and onboarding.
+
+We continue to hold weekly bug and issue scrubs every Monday, ensuring
+timely review of pull requests and resolution of user-reported issues.
+
+The project continues to close more issues than are opened, indicating
+good maintenance of the codebase. There is active participation in code
+reviews and discussions on the dev mailing list.</pre>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#section-6CD">2026-04-15</a> &mdash; Bryan Call<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-CC">2026-01-21</a> &mdash; Bryan Call<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of a
+high-performance, scalable HTTP/1.1 and HTTP/2 caching proxy server that
+powers major CDNs worldwide.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (16 years ago).
+There are currently 71 committers and 58 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mo Chen on 2024-04-15.
+- No new committers. Last addition was Jasmine Emanouel on 2025-09-26.
+
+## Project Activity:
+Notable work this quarter includes adding Zstandard (zstd) compression
+support, completing the migration from PCRE to PCRE2, adding USDT probes
+for cache directory operations, adding a per-client connection exempt list
+feature, adding certificate info retrieval in the Lua plugin, and multiple
+cache stability and HTTP compliance fixes.
+
+Development remains healthy with 25 active contributors merging 183 pull
+requests. The project closed nearly twice as many issues as were opened,
+continuing to reduce our backlog.
+
+We are currently working toward ATS 10.1.1 and 9.2.12 bug fix releases. The
+next feature release, 10.2.0, is planned for late Q1, and ATS 11.0.0 is
+targeted for late summer.
+
+## Community Health:
+We held a Fall Summit remotely on October 15-16, 2025. Travel budgets
+continue to be tight for some companies.
+
+We continue to hold weekly bug and issue scrubs every Monday, ensuring
+timely review of pull requests and resolution of user-reported issues.
+
+The project continues to close more issues than are opened, indicating
+good maintenance of the codebase. There is active participation in code
+reviews and discussions on the dev mailing list.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#section-6BZ">2025-12-17</a> &mdash; Bryan Call<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#section-6CA">2025-11-19</a> &mdash; Bryan Call<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#section-6CE">2025-10-15</a> &mdash; Bryan Call<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-CF">2025-09-24</a> &mdash; Bryan Call<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is to develop and maintain a high-performance,
+scalable, and extensible caching proxy server that fully supports HTTP/1.1 and
+HTTP/2 protocols.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (15 years ago)
+There are currently 70 committers and 58 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mo Chen on 2024-04-15.
+- No new committers. Last addition was Josiah VanderZee on 2024-01-07.
+
+## Project Activity:
+Over the past quarter, our team successfully delivered three critical updates,
+focusing on bug fixes and enhanced security measures. We are actively
+developing the next major feature release, version 10.2.0, slated for launch
+in Q1 of next year. Additionally, we continue to maintain two active release
+branches: the 9.2.x Long-Term Support (LTS) and the 10.1.x Stable Release,
+ensuring ongoing stability and reliability for our users.
+
+## Community Health:
+We&rsquo;re excited to announce the planning of our upcoming ATS Fall Summit, which
+will be hosted virtually to connect our global community.
+
+Our weekly bug and issue scrubs, held every Monday, remain a cornerstone of
+our commitment to quality, facilitating prompt review of pull requests and
+resolution of user-reported issues. Community engagement is on the rise, with
+growing participation and collaboration across our platforms.</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#section-6BY">2025-08-20</a> &mdash; Bryan Call<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#section-6CF">2025-07-16</a> &mdash; Bryan Call<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-BX">2025-06-18</a> &mdash; Bryan Call<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable, and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (15 years ago)
+There are currently 70 committers and 58 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mo Chen on 2024-04-15.
+- No new committers. Last addition was Josiah VanderZee on 2024-01-07.
+
+## Project Activity:
+In the past quarter, we released 3 bug fix and security updates. The adoption
+of ATS 10.x continues to progress, with two major companies expanding their
+production deployments following successful testing. Preparations for the next
+minor version, ATS 10.1.0, are on track, with a planned release in July 2025.
+Development focus remains on performance enhancements and new feature
+integration based on community feedback.
+
+## Community Health:
+We successfully hosted the ATS Spring Summit 2025 virtually, focusing on
+roadmap planning for ATS 10.X and ATS 11.x releases and discussing scalability
+improvements. Approximately 21 participants joined, fostering strong
+collaboration.  We are planning on having a half day summit at the end of
+August, for our first Summer Summit.
+
+Weekly bug and issue scrubs continue every Monday, ensuring timely review of
+pull requests and resolution of user-reported issues. Community engagement
+remains steady, with active participation in discussions and contributions
+from both new and existing contributors.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#section-6BT">2025-05-21</a> &mdash; Bryan Call<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#section-6BY">2025-04-16</a> &mdash; Bryan Call<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-CB">2025-02-19</a> &mdash; Bryan Call<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (15 years ago)
+There are currently 71 committers and 59 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mo Chen on 2024-04-15.
+- No new committers. Last addition was Josiah VanderZee on 2024-01-07.
+
+## Project Activity:
+We released 4 bug fix and security releases in the last quarter.  Two major
+companies are testing the next major release of ATS (ATS 10.x) in production
+and will be rolling it out to more production servers in Q1 of 2025.  We are
+also getting ready for our next minor version (10.1.0) of ATS.
+
+## Community Health:
+We held our ATS Fall Summit in Denver, CO.  We focused mainly on the
+development of ATS and put together a release schedule with features and
+enhancements for the next year.  There were about 20 people in attendance and
+we also had remote participation.
+
+We continue to hold our weekly bug and issue scrubs every Monday, where
+committers are assigned to review PRs and address issues submitted by the user
+community.</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#section-6BX">2025-01-15</a> &mdash; Bryan Call<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-CF">2024-10-16</a> &mdash; Bryan Call<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (14 years ago)
+There are currently 71 committers and 59 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mo Chen on 2024-04-15.
+- No new committers. Last addition was Josiah VanderZee on 2024-01-07.
+
+## Project Activity:
+In the past quarter, we made five releases, including the next major release of
+version 10.0.0. Notable new features include H2 to origin support and
+experimental H3 support for clients. This release saw over 2,200 commits,
+marking significant progress for the project. We also announced the end of
+support for the 8.1.x branch, effective November 1st of this year.
+
+In addition, we addressed security concerns with four dedicated security
+releases&mdash;two on the 9.2.x branch and two on the 8.1.x branch.
+## Community Health:
+We're excited to announce that the ATS Fall Summit is scheduled for November
+19th-21st in Denver, CO. Signup forms and event details are now available to
+the public.
+
+As anticipated, GitHub PR activity has slowed following the release of ATS
+10.0.0.
+
+We continue to hold our weekly bug and issue scrubs every Monday, where
+committers are assigned to review PRs and address issues submitted by the user
+community.</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-CD">2024-07-17</a> &mdash; Bryan Call<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (14 years ago)
+There are currently 71 committers and 59 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- Mo Chen was added to the PMC on 2024-04-15
+- No new committers. Last addition was Josiah VanderZee on 2024-01-07.
+
+## Project Activity:
+We pushed out the release of ATS 10.0.0 until the end of July, so we could
+release bug fix releases for the 8.1.x and 9.2.x branches before the next
+major release.  We have two companies testing ATS 10.0.0 in production and
+have a couple blocking issues to fix before the release.
+
+## Community Health:
+We had our ATS Spring Summit in Denver, CO on May 7-9 there were around 20
+people that attended in person and we had the ability for people to also
+attend remotely.  This was a developer focused event were we talk about design
+and architecture features and issues.
+
+We are continuing to have our weekly PR and issue scrubs on Mondays and design
+and status meetings for ATS 10 and HTTP/3 on Thursday mornings.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-CE">2024-04-17</a> &mdash; Bryan Call<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: Would like to see community health metrics for the project
+over a longer span of time (ability to compare years).  It is hard to see how
+we are trending over time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (14 years ago)
+There are currently 71 committers and 56 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damian Meden on 2022-12-14.
+- No new committers. Last addition was Josiah VanderZee on 2024-01-07.
+
+## Project Activity:
+We are working on our next major release of ATS, 10.0.0.  We are
+currently testing the release in production at two major companies and should
+have the release finalized in Q2.
+
+We had two security and bug fix releases that went out on 4/3 (9.2.4 and 8.1.9).
+These releases including mitigation for the HTTP/2 CONTINUATION frame flood
+DDoS.
+
+## Community Health:
+We will be having our next Spring Summit in Q2 in Denver, CO on May 7-9.  It
+will be primarily a developer focused event with architecture and design
+discussions.
+
+We are continuing to have our weekly PR and issue scrubs on Mondays and design
+and status meetings for ATS 10 and HTTP/3 on Tuesdays.
+
+Activity on the mailing lists dropped significantly this last quarter between
+42% to 62%.  Also, commits and contributors have dropped 26% and 22%
+respectively.  Hard to tell if this is a long term trend or just down for this
+quarter.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-CN">2024-01-17</a> &mdash; Bryan Call<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (14 years ago)
+There are currently 71 committers and 56 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damian Meden on 2022-12-14.
+- Josiah VanderZee was added as committer on 2024-01-07
+- Zhengxi Li was added as committer on 2023-11-16
+
+## Project Activity:
+We made two bug fix and security related releases last quarter (8.1.9 and
+9.2.3).    These releases had patches to help with the HTTP/2 Rapid Reset
+attack.
+
+We are working on the next major release, scheduled for Q1 2024.  We have
+moved our build and CI system to cmake as part of this release.  The release
+will have HTTP/2 to origin support and experimental HTTP/3 support.
+
+## Community Health:
+We had our ATS Fall Summit remotely on November 14th and 15th with good
+attendance numbers, approximately 45 people.  We are in the process of
+figuring out if we will have our spring summit remote or in person and where.
+
+Due to the holidays some of our standup meetings were canceled, but they are
+back on schedule for the new year.  We are meeting on Monday for PR and issue
+scrubs and on Tuesdays for the ATS 10 release.
+
+Most of the community health metrics are down, which normally happens in Q4 of
+each year, because of holiday vacations.</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-CA">2023-10-18</a> &mdash; Bryan Call<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (13 years ago)
+There are currently 70 committers and 57 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damian Meden on 2022-12-14.
+- No new committers. Last addition was Chris McFarlen on 2022-10-11.
+
+## Project Activity:
+We had two security releases last quarter (8.1.8 and 9.2.2).  We were pulled
+into the HTTP/2 Rapid Reset security issue and made security enhancements to
+ATS to mitigate the issue.  Those changes were released in Q4 (8.1.9 and 9.2.3).
+
+We are working on our next major release (ATS 10.0.0) that will have HTTP/3
+client support and HTTP/2 to the origin support.  We are in the process of
+moving to cmake for the ATS 10 release and restructuring our code base to
+remove circular dependencies and clean up the dependency hierarchy.  Our
+current goal is to branch ATS 10 on November 1st and release ATS 10 in Q1 of
+next year.  There is one company, at the moment, testing the new release in
+production.
+
+## Community Health:
+The ATS Fall Summit is scheduled for November 14th and 15th.  The summit will be
+remote, due to limited travel budgets of companies.
+
+Yahoo hired an intern during the summer that made great progress on converting
+our build system over to cmake.  Most of our GitHub PR build jobs have moved
+over to use cmake.  He is continuing to work on ATS on his own time while
+attending school.
+
+We started having ATS 10 and HTTP/3 status meetings alternating every week to
+help track the progress of the release.  We are continuing to have our weekly
+PR and issue scrub meetings every Monday.
+
+All of the community health metrics are up.  The community is actively working
+on getting features completed for the ATS 10 release.
+
+All of the community health metrics are up.  The community is actively working
+on getting features completed for the ATS 10 release.</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#attachment-BZ">2023-07-19</a> &mdash; Bryan Call<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (13 years ago)
+There are currently 70 committers and 57 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damian Meden on 2022-12-14.
+- No new committers. Last addition was Chris McFarlen on 2022-10-11.
+
+## Project Activity:
+We had two security releases last quarter (8.1.7 and 9.2.1).  We are working
+on our next major release (ATS 10.0.0) that will have HTTP/3 client support
+and HTTP/2 to the origin support.  We are also going to have a JSON RPC for
+clients to read stats and modify configuration.  There is one company at the
+moment testing the new release in production.
+
+## Community Health:
+We had a remote ATS Spring Summit on May and plan to have another remote
+summit in October.  It doesn't look like companies are opening up budgets to
+travel until next year at this point.
+
+We are continuing to have our weekly PR and issue scrub meetings every Monday
+and HTTP/3 meetings on Tuesdays.
+
+All of the community health metrics are up.  We have a couple new people that
+have joined the community during this time and are being paid to work on ATS
+full time.</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-CH">2023-04-19</a> &mdash; Bryan Call<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (13 years ago)
+There are currently 70 committers and 57 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damian Meden on 2022-12-14.
+- No new committers. Last addition was Chris McFarlen on 2022-10-11.
+
+## Project Activity:
+We released our latest feature release of 9.2.0 this quarter.  We are
+currently working on our next major release that will have: HTTP/3, HTTP/2 to
+the origin, JSON RPC, and many more features.  We are testing HTTP/2 to the
+origin and JSON RPC in production and will start testing HTTP/3 very soon.
+
+Giving the amount of work we still have to do for ATS 10, the release date
+should be sometime in Q3.
+
+## Community Health:
+We have scheduled our ATS Spring Summit for May 16th and 17th.  Unfortunately
+we are going to have the summit remote, due to travel restrictions from
+companies that what to reduce their budgets.  This is a setback from having
+our Fall Summit in person in December after having the summits for three years
+remotely.
+
+We are continuing to have our weekly PR and issue scrub meetings every Monday
+and HTTP/3 meetings on Tuesdays.
+
+GitHub PRs opened and closed have greatly increased over Q4, 72% and 59%
+respectively.  This seems to be a normal pattern where development slows
+around the holidays and picks up in Q1.  All stats were up except for the
+number of contributors, which is surprising at -6%.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-CO">2023-01-18</a> &mdash; Bryan Call<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (13 years ago)
+There are currently 70 committers and 57 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:8.
+
+Community changes, past quarter:
+- Damian Meden was added to the PMC on 2022-12-14
+- No new committers. Last addition was Chris McFarlen on 2022-10-11.
+
+## Project Activity:
+We released 8.1.6 and 9.1.3 this quarter fixing security issues and bugs.  We
+are working on the 9.2.0 release, which is our next feature release and that
+will be completed in Q1 of 2023.
+
+We are also preparing for our next major release, 10.0.0, and we are planning
+to release that in Q2 of 2023.  Companies will start testing 10.0.0 in
+production in Q1 of this year. It will have features: HTTP/3, HTTP/2 to the
+origin, JSON RPC, and many more features.
+
+## Community Health:
+We had our first in person event since the fall of 2019 (before COVID).
+Linkedin generously hosted the event.  There were 62 people that signed up for
+the summit and 36 signed up in person.  This is much lower than our pre-COVID
+numbers of 82 people signed up to attend in person.  Hopefully attendance will
+pick up for our fall summit this year.
+
+We are planning on having a developer focused summit this spring.  We are
+looking at the possibility of having it in Ireland.
+
+We are continuing to have our weekly PR and issue scrub meetings every Monday.
+
+Commits and unique committers were down in Q4 of 2022, 21% and 16%
+respectively.  This normally happens around the holidays and picks up Q1.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-CE">2022-10-19</a> &mdash; Bryan Call<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (12 years ago)
+There are currently 70 committers and 55 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:6.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Robert Butts on 2021-07-13.
+- Chris McFarlen was added as committer on 2022-10-11
+- Serris Lew was added as committer on 2022-10-05
+- Mo Chen was added as committer on 2022-10-11
+
+## Project Activity:
+We released 8.1.5 and 9.1.3 this quarter fixing security issues and bugs.  We
+are working on another bug fix release and the next feature release that will
+happen this coming quarter.  We will also be branching for the next major
+release (10.0.0).  It will have features: HTTP/3, HTTP/2 to the origin, JSON
+RPC, and many more features.
+
+## Community Health:
+We are having our ATS Fall Summit in person for the first time in three years,
+this December.  It will be hosted by LinkedIn at their Mountain View office.
+
+We are continuing to have our weekly PR and issue scrub meetings every Monday.
+
+On a positive note it was great to see that the number of code committers
+increase this quarter by 16%.  However, the number of closed issues was down
+this quarter by 23%.  We had some support issues filed and we need to do a
+better job of resolving them quickly.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-CB">2022-07-20</a> &mdash; Bryan Call<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (12 years ago)
+There are currently 67 committers and 55 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Robert Butts on 2021-07-13.
+- No new committers. Last addition was Jeff Elsloo on 2021-11-01.
+
+## Project Activity:
+We are testing in production and preparing for another bug and issue release
+for the month of July.  We are also testing out next feature release of 9.2.0
+in production at multiple companies.
+
+## Community Health:
+We had our ATS Spring Summit on May 24th and 25th remotely after trying to
+plan for it in person.  It was not feasible to have it in person at the time.
+We hope to have our Fall Summit in person in the bay area this year.
+
+We are continuing to have our weekly PR and issue scrub.  Some people are
+taking summer vacation, so the attendance has fluctuated.
+
+The number of code committers dropped this quarter by 23% after increasing last
+quarter by 39%.
+
+We are keeping up with our PRs and issues with a net positive closing of 7 for
+PRs and for issues we have a net opening of 3.</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#attachment-BR">2022-04-20</a> &mdash; Bryan Call<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (12 years ago)
+There are currently 67 committers and 55 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Robert Butts on 2021-07-13.
+- No new committers. Last addition was Jeff Elsloo on 2021-11-01.
+
+## Project Activity:
+We made three bug and security releases this quarter.  We are preparing
+another bug and issue release for this quarter along with our next feature
+release of 9.2.0.  Multiple companies are currently testing 9.2.0 in
+production before the release.
+
+## Community Health:
+We tried to schedule an in person ATS Spring Summit this quarter.  However, it
+is not feasible at this time with companies limiting travel and offices
+starting to open up.  We are going to have the our summit online May 24th and
+25th and will try to have an in person summit in the fall.
+
+We continue to have our weekly PR and issues scrub and it has been well
+attended.  It has been very helpful on assigning people PR to review and issues
+to fix.
+
+We saw a good increase in the number of contributors by 39%.  We also had two
+developers hired by a large company to work on ATS development this quarter.
+
+The number of issues closed was down this quarter by 30%.  In our weekly issue
+meetings we have been primarily focusing on current PRs and issue and haven't
+had enough time in the meetings to look at the backlog of older issues.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-BU">2022-01-19</a> &mdash; Bryan Call<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (12 years ago)
+There are currently 67 committers and 55 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Robert Butts on 2021-07-13.
+- Jeff Elsloo was added as committer on 2021-11-01
+
+## Project Activity:
+We made a feature release of 9.1.0 and two security releases (8.1.3 and 9.1.1)
+this quarter.
+
+We are preparing a 9.1.2 bug fix release that will happen in the next couple
+weeks and the next feature release of 9.2.0 that will happen in Q1 this year.
+
+## Community Health:
+We had a remote ATS Fall summit on 11/17 and 11/18, which was attended by 40
+people. We are continuing to have our weekly  PR and issue scrub meeting.
+These have been helpful on assigning PR and issues as well as getting the
+community involved with the project and knowing what changes are being made.
+
+We will start to plan our Spring Summit event.  We have not determined if it
+will be remote of in person.  If it is in person we will hold our summit in
+the Bay Area.
+
+Github PR open and closes are down, 46% and 47% respectively.  This is normal
+to see a drop in community activity in Q4, with people taking vacation.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-CJ">2021-10-20</a> &mdash; Bryan Call<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (11 years ago)
+There are currently 66 committers and 55 PMC members in this project.
+The Committer-to-PMC ratio is 6:5.
+
+Community changes, past quarter:
+- Robert Butts was added to the PMC on 2021-07-13
+- Damian Meden was added as committer on 2021-08-13
+
+## Project Activity:
+We made two security and bug fix releases in June and also released our next
+feature release 9.1.0 in August.  We are planning for another two bug fix
+releases in Q4 of this year.
+
+We branched for our 9.2.0 release and already have close to 400 changes on the
+branch.  We are planning to have this release completed in January of next
+year.
+
+## Community Health:
+We are going to have our ATS Fall Summit on 11/17 to 11/18 (remote).  We
+continue to have weekly PR and issue scrub meetings every Monday and they have
+been well attended.
+
+The number of PR and commits have dropped in the last quarter (both down 23%).
+This is something that we need to continue tracking and see if it continues to
+be lower.</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-CB">2021-07-21</a> &mdash; Bryan Call<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (11 years ago)
+There are currently 65 committers and 54 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Brian Olsen on 2021-02-23.
+- Robert Butts was added as committer on 2021-06-24
+
+## Project Activity:
+We released ATS 9.01 and 9.0.2, which is our latest bug fix release.  We also
+released 8.1.2, which is a bug fix release for our LTS branch.
+
+We are working on our next minor release 9.1.x and testing it in production.
+
+## Community Health:
+We had our ATS Spring summit in June where 42 people joined remotely.  We are
+also continuing to hold monthly ATS meetings.
+
+We continue to have an increase in GitHub PR (19%) and issue (87%) close rate.
+This is primarily do to weekly PR and issue scrub.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-BZ">2021-04-21</a> &mdash; Bryan Call<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (11 years ago)
+There are currently 64 committers and 54 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- Brian Olsen was added to the PMC on 2021-02-23
+- No new committers. Last addition was Brian Neradt on 2020-08-31.
+
+## Project Activity:
+We released ATS 9.0.1, which is our latest bug fix release.  We also released
+7.1.12, which is a bug fix release for our LTS branch.
+
+We are working on our next minor release 9.1.x and testing it in production.
+
+We have created a road map for the year and when major features will be added
+to our release branches.  A couple of our major features this year will be
+HTTP/3 support and HTTP/2 origin support.
+
+## Community Health:
+We started having weekly PR and issue scrubs, which has greatly increased the
+amount of opened (67% increase) and closed PRs (95% increase) and closed
+GitHub issues (45% increase) for the quarter.  Code commits also jumped by
+125% and the number of contributors by 36%.  The stats around community
+engagement for the first quarter of the year is great news.
+
+We are also continuing to hold monthly half day meetings and we are planning
+on having a remote Spring summit.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-BW">2021-01-20</a> &mdash; Bryan Call<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to a fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (11 years ago)
+There are currently 64 committers and 53 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- Brian Neradt was added to the PMC on 2020-10-23
+- No new committers. Last addition was Brian Neradt on 2020-08-31.
+
+## Project Activity:
+We released ATS 9.0.0, our next major release of ATS. We also made two
+additional security and bug fix releases for the 7.1.x and 8.1.x branches.
+
+With the 9.0.0 release we are ending support for the 7.1.x branch.  ATS 8.1.x
+is now our LTS release branch.
+
+## Community Health:
+We held our Fall summit remote in October of last year.  The summit was well
+attended and we had people join and present from countries around the world.
+Our Spring and Fall summit this year will be remote.
+
+We are continuing to have monthly meetups during the pandemic to help keep the
+community socializing and communicating about current projects and corrdinate
+releases.
+
+In general statistics for the mailing lists and GitHub are down last quarter
+and this is normal for the time of year.  The activity on GitHub and the
+mailing lists should increase this quarter.</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#attachment-BT">2020-10-21</a> &mdash; Bryan Call<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to A fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (10 years ago)
+There are currently 64 committers and 52 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Valentin Gutierrez on 2020-04-16.
+- Brian Neradt was added as committer on 2020-08-31
+
+## Project Activity:
+We are working on our ATS 9.0.0 release and planning for the first
+release candidate to be made on 11/2/2020. LinkedIn and Verizon Media have
+fully deployed ATS 9.0.0 prerelease into production.  There is one other large
+company that has deployed the prerelease on a few servers into production.
+
+We are also continuing to support the 8.1.x and 7.1.x release branches.  ATS
+8.1.0 was released on 8/28/2020 and large companies running 8.0.x have moved
+over to the feature release.  ATS 7.1.x will stop being supported when the ATS
+9.0.0 final release is made.  ATS 8.1.x will become our LTS release branch.
+
+## Community Health:
+We have been having monthly online meetups to help with getting the community
+together and talk about the ATS 9.0.0 release and current projects and issues.
+We are having our Fall Summit on 10/27/2020 and 10/28/2020 and have finalized
+the schedule.  The summit will be remote and follow the format of the ATS
+Spring Summit.
+
+Activity on dev and users mailing lists is down significantly, by 44% and 47%
+respectively.  However, there was a large increase the previous quarter.
+
+Issues closures are up by 43%, due to closing issues in preparation of the ATS
+9.0.0 release.  New GitHub PRs are down by 24% as we are focusing on
+stability before the 9.0.0. release.</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-BW">2020-07-15</a> &mdash; Bryan Call<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to A fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (10 years ago)
+There are currently 63 committers and 52 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- Valentin Gutierrez was added to the PMC on 2020-04-16
+- Brian Olsen was added as committer on 2020-05-13
+- Walt Karas was added as committer on 2020-05-29
+
+## Project Activity:
+We are working on our ATS 9.0.0 release, which will be finialized this
+quarter. Three companies have deployed prerelease versions of 9.0.0 to some of
+their production servers.
+
+We are also continuing to support the 8.0.x and 7.1.x release branches.  We
+made two security releases on each of our release branches,
+which closed out two CVEs.
+
+## Community Health:
+We had our ATS Spring Summit remotely.  We had at least 30 people attend and
+had a guest speaker from Apple talk about MPTCP (the author of the RFC).  We
+are planning on having monthly meetups to discuss releases and significant
+bugs.  Also, we are planning on having our fall summit remote this year.
+
+Activity on dev and users mailing lists has increased significantly, by 77%
+and 85% respectively.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-CB">2020-04-15</a> &mdash; Bryan Call<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to A fast, scalable and extensible HTTP/1.1 compliant caching proxy
+server
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (10 years ago)
+There are currently 61 committers and 51 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- David Calavera was added to the PMC on 2020-01-13
+- Valentin Gutierrez was added as committer on 2020-03-23
+
+## Project Activity:
+We are working on our ATS 9.0.0 release, which the release has been pushed to
+Q3 of 2020.  Verizon Media has deployed a prereleases version of ATS 9.0.0 in
+one colo. We are also continuing to support making bug fixes and updates to
+the 8.0.x and 7.1.x release branches.
+
+We made two security releases 8.0.6 and 7.1.9, which closed out 3 CVEs
+regarding various smuggle attacks.
+
+## Community Health:
+We has an ATS Spring Summit planned for June in London, England.  However, do
+to the coronavirus we canceled the summit and will have a 2 day remote summit.
+We also are planning on a Hackathon in late April of May for the ATS 9.0.0
+release.
+
+Activity on dev and users mailing lists has increased significatly, by 76% and
+97% respectively.  I believe this is do to winter vacations in the preceding
+quarter.</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-BW">2020-01-15</a> &mdash; Bryan Call<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to A fast, scalable and extensible HTTP/1.1 compliant caching proxy
+server
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (10 years ago)
+There are currently 60 committers and 50 PMC members in this project.
+The Committer-to-PMC ratio is 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Aaron Canary on 2019-09-29.
+- David Calavera was added as committer on 2019-12-09
+
+## Project Activity:
+We are working on our ATS 9.0.0 release, which will be released this quarter.
+Verizon Media has deployed a prereleases version of ATS 9.0.0 in one colo. We
+are also continuing to support making bug fixes and updates to the 8.0.x and
+7.1.x release branches.
+
+## Community Health:
+We had our Fall Summit at Verizon Media in Sunnyvale, CA.  80 people signed up
+for the event and we had guest speakers from Google and Apple talking about
+WASM and low latency video serving.  We had 18 presentations over a two day
+period and had one day designated for a hackathon.
+
+The number of commits are up for the quarter by 37%, which is surprising
+considering winter break.  Also, the number of code contributors also went up
+by 14%, which is another pleasant surprise.</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-BX">2019-10-16</a> &mdash; Bryan Call<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Traffic Server is the creation and maintenance of software
+related to A fast, scalable and extensible HTTP/1.1 and HTTP/2 compliant
+caching proxy server
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Server was founded 2010-04-20 (9 years ago)
+There are currently 59 committers and 50 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- Aaron Canary was added to the PMC on 2019-09-29
+- Aaron Canary was added as committer on 2019-09-05
+
+## Project Activity:
+- Our ATS Fall Summit will be held this coming week, 10/8 to 10/10, at the
+  Verizon Media Campus in Sunnyvale, CA.  There are currently 71 attendees
+  singed up for the event and we are going to to have two guest speakers.
+
+- We made four security releases related to HTTP/2 security issues this
+  quarter. We are currently working on our next major release 9.0.0 and it is
+  currently being used on a few production servers while we work out some
+  issues.
+
+## Community Health:
+- Community engagement is down across the board.  I feel this is the biggest
+  area of concern for the project.  Overtime the number of subscribers to the
+  mailing lists have been declining.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-BW">2019-07-17</a> &mdash; Bryan Call<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is a HTTP and HTTP/2 proxy server and cache.  What makes
+ATS unique across the landscape of HTTP proxy caches is a focus on
+extensibility (plugins), HTTP and HTTP/2 protocol conformity, and performance.
+ATS is driving some of the largest CDNs in the world, delivering a significant
+portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - We had our ATS Spring Summit in Beijing China and it had great attendance
+with 24 people singing up for the event.  The event was hosted by one of our
+PMC members from Skyguard and they did a fabulous job on scheduling meals and a
+social event to see the Great Wall.
+
+- Our ATS Fall Summit will be held in the Bay Area and will be hosted by
+Verizon Media.  Summits in the Bay Area tend to have a much larger number of
+attendees.
+
+## Health report:
+- ATS 8.0.3 was released in March as planned.  We are working on a 7.1.7 and
+8.0.4 releases and they will be released in August.
+
+## PMC changes:
+
+ - Currently 49 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Evan Zelkowitz on Mon Apr 01 2019
+
+## Committer base changes:
+
+ - Currently 58 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Evan Zelkowitz at Fri Feb 22 2019
+
+## Releases:
+
+ - Last release was 8.0.3 on Wed Mar 20 2019
+
+## Mailing list activity:
+
+ - The number of users email subscribers went down 3.2% and the number of
+subscribers on the dev mailing list went down 1.3%.  The number of commits and
+authors went surprisingly down by 49% and 28% respectively.  Hopefully the
+number of commits and authors will increase with the release of 9.0.0 in
+October.
+
+ - users@trafficserver.apache.org:
+    - 456 subscribers (down -15 in the last 3 months):
+    - 135 emails sent to list (226 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 309 subscribers (down -4 in the last 3 months):
+    - 305 emails sent to list (184 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 18 subscribers (up 1 in the last 3 months):
+    - 0 emails sent to list (7 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 28 subscribers (up 0 in the last 3 months):
+    - 0 emails sent to list (0 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 17 subscribers (up 0 in the last 3 months)
+
+## Commit activity:
+ - 61,459 lines of code changed (up 49%)
+ - 420 commits (down 44%)
+    - 20 committer email addresses (down 10%)
+    - 39 author email addresses (down 28%)</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#attachment-BO">2019-04-17</a> &mdash; Bryan Call<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is a HTTP and HTTP/2 proxy server and cache.  What makes
+ATS unique across the landscape of HTTP proxy caches is a focus on
+extensibility (plugins), HTTP and HTTP/2 protocol conformity, and performance.
+ATS is driving some of the largest CDNs in the world, delivering a significant
+portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - We are having our next ATS Spring Summit in Beijing China, April 22nd to
+25th.  One of the PMC members from Skyguard will be hosting the event.  18
+people have signed up so far which in good for having a summit in China, due
+to the travel expense and visas.
+
+## Health report:
+ - ATS 7.1.6 and 8.0.2 were released in January and 8.0.3 was released in
+March.  One large customer is already running 8.0.3 across their entire CDN.
+
+ - We added a new committer and PMC member this quarter and he is been quite
+ active in the ATS Community.
+
+## PMC changes:
+
+ - Currently 49 PMC members.
+ - Evan Zelkowitz was added to the PMC on Mon Apr 01 2019
+
+## Committer base changes:
+
+ - Currently 58 committers.
+ - Evan Zelkowitz was added as a committer on Fri Feb 22 2019
+
+## Releases:
+
+ - 7.1.6 was released on Mon Jan 28 2019
+ - 8.0.2 was released on Mon Jan 28 2019
+ - 8.0.3 was released on Wed Mar 20 2019
+
+## Mailing list activity:
+
+ - The number of commits and line changes have increased a lot over the last
+ quarter, 38% and 49% increase respectively.  The number of email subscribers
+ went down 2.3% while the number of subscribers on the dev mailing list went
+ up .9%.
+
+ - users@trafficserver.apache.org:
+    - 474 subscribers (down -11 in the last 3 months):
+    - 206 emails sent to list (185 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 313 subscribers (up 3 in the last 3 months):
+    - 205 emails sent to list (221 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 17 subscribers (up 0 in the last 3 months):
+    - 5 emails sent to list (2 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 28 subscribers (up 0 in the last 3 months):
+    - 0 emails sent to list (192 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 17 subscribers (up 0 in the last 3 months)
+
+## Commit activity:
+ - 98,246 lines of code changed (up 49%)
+ - 719 commits (up 38%)
+    - 21 committer email addresses (down 5%)
+    - 54 author email addresses (up 28%)</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#attachment-CA">2019-01-16</a> &mdash; Bryan Call<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is a HTTP and HTTP/2 proxy server and cache.  What makes
+ATS unique across the landscape of HTTP proxy caches is a focus on
+extensibility (plugins), HTTP and HTTP/2 protocol conformity, and performance.
+ATS is driving some of the largest CDNs in the world, delivering a significant
+portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - There was an ATS QUIC summit in Tokyo at the Apple office in November.  Six
+   ATS Committers attended and we worked on resolving issue and increasing the
+   performance of the IETF QUIC implementation in ATS.
+
+## Health report:
+ - ATS 8.0.1 and 7.1.5 were released and included bug fixes for our LTS and
+   our newest major release.  We are working on the ATS 8.0.2 and 7.1.6
+   releases and should be released in January.  One major user of ATS is
+   running our latest 8.0.1 release of ATS.
+
+## PMC changes:
+
+ - Currently 48 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Randall Meyer on Thu Aug 02 2018
+
+## Committer base changes:
+
+ - Currently 57 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Randall Meyer at Fri Jul 06 2018
+
+## Releases:
+
+ - 7.1.5 was released on Fri Nov 23 2018
+ - 8.0.1 was released on Wed Nov 28 2018
+
+## Mailing list activity:
+
+ - I am still concerned that the number of subscribers continue to decline.
+   On the positive side the activity on the mailing lists have increased
+   year over year.
+
+ - users@trafficserver.apache.org:
+    - 484 subscribers (down -1 in the last 3 months):
+    - 174 emails sent to list (123 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 309 subscribers (down -6 in the last 3 months):
+    - 218 emails sent to list (268 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 17 subscribers (up 0 in the last 3 months):
+    - 2 emails sent to list (16 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 28 subscribers (up 0 in the last 3 months):
+    - 190 emails sent to list (295 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 17 subscribers (up 0 in the last 3 months)
+
+## GitHub Issue activity:
+ - 58 issues created in the last 3 months
+ - 21 issues closed in the last 3 months
+
+## Commit activity:
+ - 65,626 lines of code changed (down 27%)
+ - 518 commits (down 25%)
+    - 22 committer email addresses (up 10%)
+    - 42 author email addresses (down 11%)</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-BS">2018-10-17</a> &mdash; Bryan Call<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is a HTTP and HTTP/2 proxy server and cache.  What makes
+ATS unique across the landscape of HTTP proxy caches is a focus on
+extensibility (plugins), HTTP and HTTP/2 protocol conformity, and performance.
+ATS is driving some of the largest CDNs in the world, delivering a significant
+portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - There was an ATS Fall Summit in Mountain View, CA and there were 87 that
+   registered for the event.  LinkedIn was gracious to host the event at their
+   campus.  We had 17 presentations and people from at least 12 different
+   companies and organizations attend.
+
+## Health report:
+ - ATS 6.2.3 and 7.1.4 were released allowing us to publicly announce some CVEs
+   that have been lingering.  We also released ATS 8.0.0, our next major release,
+   this quarter.
+
+## PMC changes:
+
+ - Currently 48 PMC members.
+ - Randall Meyer was added to the PMC on Thu Aug 02 2018
+
+## Committer base changes:
+
+ - Currently 57 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Randall Meyer at Fri Jul 06 2018
+
+## Releases:
+
+ - 6.2.3 was released on Fri Aug 03 2018
+ - 7.1.4 was released on Tue Jul 31 2018
+ - 8.0.0 was released on Mon Sep 24 2018
+
+## Mailing list activity:
+
+ - I am concerned that the number of email subscribers continues to decline
+   slowly over the last few quarters.  Activity on the developers mailing list
+   is above where it was a year ago (up 73%), but the activity on the users
+   mailing list has declined (down 19%).
+
+ - users@trafficserver.apache.org:
+    - 485 subscribers (down -10 in the last 3 months):
+    - 137 emails sent to list (103 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 316 subscribers (down -8 in the last 3 months):
+    - 274 emails sent to list (267 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 17 subscribers (up 0 in the last 3 months):
+    - 16 emails sent to list (3 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 28 subscribers (down -2 in the last 3 months):
+    - 295 emails sent to list (354 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 17 subscribers (up 0 in the last 3 months)
+
+## GitHub Issue activity:
+ - 42 issues created in the last 3 months
+ - 48 issues closed in the last 3 months
+
+## Commit activity:
+ - 89,229 lines of code changed (down 61%)
+ - 682 commits (down 14%)
+    - 20 committer email addresses (same)
+    - 47 author email addresses (up 17%)</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-BT">2018-07-18</a> &mdash; Bryan Call<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is a HTTP and HTTP/2 proxy server and cache.  What makes
+ATS unique across the landscape of HTTP proxy caches is a focus on
+extensibility (plugins), HTTP and HTTP/2 protocol conformity, and performance.
+ATS is driving some of the largest CDNs in the world, delivering a significant
+portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - There was an ATS Spring Summit in Cork, Ireland in May in which 18 people
+   attended.  It was a mixture of presentations and working groups to clean
+   up the code.  Many proposals where made on the direction of the project
+   and decisions were finalized on the mailing list.
+
+## Health report:
+ - ATS 7.1.3 was released and had good adoption.  We are currently working
+   on the ATS 7.1.4 release and the 8.0.0 release that will both happen this
+   quarter.
+
+## PMC changes:
+
+ - Currently 47 PMC members.
+ - New PMC members:
+    - Derek Dagit was added to the PMC on Sun May 13 2018
+    - Jason Kenny was added to the PMC on Mon May 07 2018
+    - Fei Deng was added to the PMC on Mon May 14 2018
+    - Steven Feltner was added to the PMC on Mon May 07 2018
+    - Chenwei Song was added to the PMC on Mon May 07 2018
+    - Zizhong Zhang was added to the PMC on Tue May 08 2018
+
+## Committer base changes:
+
+ - Currently 57 committers.
+ - Randall Meyer was added as a committer on Fri Jul 06 2018
+
+## Releases:
+
+ - 7.1.3 was released on Sun Apr 15 2018
+
+## Mailing list activity:
+
+ - There continues to be a large growth in the number emails to the
+   development mailing list, a 70% increase, while the user mailing list
+   had 26% less emails.
+
+ - users@trafficserver.apache.org:
+    - 496 subscribers (up 0 in the last 3 months):
+    - 104 emails sent to list (141 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 324 subscribers (down -5 in the last 3 months):
+    - 267 emails sent to list (157 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 17 subscribers (up 1 in the last 3 months):
+    - 3 emails sent to list (2 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 30 subscribers (down -1 in the last 3 months):
+    - 436 emails sent to list (380 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 17 subscribers (up 0 in the last 3 months)
+
+## GitHub Issue activity:
+ - 59 issues created in the last 3 months
+ - 40 issues closed in the last 3 months
+
+## Commit activity:
+ - 219,168 lines of code changed (up 213%)
+ - 775 commits (up 40%)
+    - 21 committer email addresses (up 5%)
+    - 41 author email addresses (down 17%)</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-BV">2018-04-18</a> &mdash; Bryan Call<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is a HTTP and HTTP/2 proxy server and cache.  What makes
+ATS unique across the landscape of HTTP proxy caches is a focus on
+extensibility (plugins), HTTP and HTTP/2 protocol conformity, and performance.
+ATS is driving some of the largest CDNs in the world, delivering a significant
+portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - There was a QUIC Hackaton in January in Tokyo, Japan.  There were 6 people
+   that attended and worked on the design and implementation of IETF QUIC
+   inside of ATS.
+
+ - We have an ATS Spring Summit schedule in Cork, Ireland for the week of May
+   6th.  18 people have signed up and there are going to be presentations and
+   planned events around cleanup of the code and bug reports.
+
+## Health report:
+ - We had a successful 7.1.2 release in January and there at least two major
+   companies running the release in full production.  The first 7.1.3 release
+   candidate came out this week and we are in the middle of voting on it.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Gancho Tenev on Sun Jun 04 2017
+
+## Committer base changes:
+
+ - Currently 56 committers.
+ - New commmitters:
+    - Derek Dagit was added as a committer on Mon Mar 26 2018
+    - Fei Deng was added as a committer on Wed Mar 14 2018
+    - Zizhong Zhang was added as a committer on Wed Mar 28 2018
+
+## Releases:
+
+ - Last release was 7.1.2 on Wed Jan 10 2018
+
+## Mailing list activity:
+
+ - User mailing was higher than normal the previous quarter (Q4 of 20017) and
+   now is back to normal levels. The dev email list is up 56% this quarter.
+
+ - users@trafficserver.apache.org:
+    - 495 subscribers (down -3 in the last 3 months):
+    - 129 emails sent to list (226 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 329 subscribers (up 0 in the last 3 months):
+    - 156 emails sent to list (100 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 16 subscribers (up 0 in the last 3 months):
+    - 3 emails sent to list (0 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 31 subscribers (down -2 in the last 3 months):
+    - 471 emails sent to list (274 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 17 subscribers (up 2 in the last 3 months)
+
+## GitHub Issue activity:
+ - 37 issues created in the last 3 months
+ - 40 issues closed in the last 3 months
+
+## Commit activity:
+ - 64,512 lines of code changed (down -18%)
+ - 502 commits (up 2%)
+    - 20 committer email addresses (up 17%)
+    - 48 author email addresses (down 12%)</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-BX">2018-01-17</a> &mdash; Bryan Call<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is a HTTP and HTTP/2 proxy server and cache.  What makes
+ATS unique across the landscape of HTTP proxy caches is a focus on
+extensibility (plugins), HTTP and HTTP/2 protocol conformity, and performance.
+ATS is driving some of the largest CDNs in the world, delivering a significant
+portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - We had a successful ATS Fall Summit, on 10/24 and 10/25, at Yahoo in
+   Sunnyvale.  Over 70 people attended and we had guest speakers from Netflix
+   and Intel.
+
+ - We are planning to have our second ATS Reliability Summit in Cork Ireland
+   and are seeing a lot of interest for people attending in the ATS Community.
+
+## Health report:
+ - We were working on releasing ATS 7.1.2 and it was delayed over the holidays.
+   The release is running in production for at least two large companies and
+   the vote passed on 1/10/18.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Gancho Tenev on Sun Jun 04 2017
+
+## Committer base changes:
+
+ - Currently 53 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Chenwei Song at Fri Jun 30 2017
+
+## Releases:
+
+ - 7.1.2 was released on Wed Jan 10 2018
+
+## Mailing list activity:
+
+ - The user mailing activity increased by 62% while the developer mailing
+   activity has been flat.
+
+ - users@trafficserver.apache.org:
+    - 498 subscribers (up 0 in the last 3 months):
+    - 227 emails sent to list (140 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 329 subscribers (down -2 in the last 3 months):
+    - 106 emails sent to list (106 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 16 subscribers (up 0 in the last 3 months):
+    - 0 emails sent to list (3 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 33 subscribers (up 0 in the last 3 months):
+    - 274 emails sent to list (246 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 15 subscribers (up 0 in the last 3 months)
+
+## GitHub Issue activity:
+ - 63 issues created in the last 3 months
+ - 61 issues closed in the last 3 months
+
+## Commit activity:
+ - 80,448 lines of code changed (down -60%)
+ - 501 commits (up 14%)
+    - 17 committer email addresses (up 0%)
+    - 54 author email addresses (up 17%)</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-BV">2017-10-18</a> &mdash; Bryan Call<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features. What makes ATS unique across the
+landscape of HTTP proxy caches is a focus on extensibility (plugins), HTTP
+protocol conformity and performance. ATS is driving some of the largest CDNs
+in the world, delivering a significant portion of all Internet traffic.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+We are having our Fall Summit on 10/24 and 10/25, that will be hosted by
+Yahoo.  There are currently 62 people signed up for the summit and more
+people continue to register everyday.
+
+We have resolved all security issues, except for one.  There are two CVEs
+that are ready to be announced.
+
+## Health report:
+7.1.0 and 7.1.1 were released.  Two large deployments have moved to 7.1.1
+and we are seeing smaller deployment moving over to 7.1.1.
+
+6.2.2 was also released with bug fixes for our long term support release.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Gancho Tenev on Sun Jun 04 2017
+
+## Committer base changes:
+
+ - Currently 53 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Chenwei Song at Fri Jun 30 2017
+
+## Releases:
+
+ - 6.2.2 was released on Wed Aug 09 2017
+ - 7.1.0 was released on Sun Jul 23 2017
+ - 7.1.1 was released on Thu Sep 07 2017
+
+## Mailing list activity:
+
+ - Email subscriptions and activity was flat over the last quarter.
+
+ - users@trafficserver.apache.org:
+    - 496 subscribers (down -5 in the last 3 months):
+    - 141 emails sent to list (127 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 330 subscribers (down -2 in the last 3 months):
+    - 114 emails sent to list (154 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 16 subscribers (up 1 in the last 3 months):
+    - 3 emails sent to list (2 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 33 subscribers (down -1 in the last 3 months):
+    - 258 emails sent to list (399 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 15 subscribers (up 0 in the last 3 months)
+
+## GitHub Issue activity:
+ - 78 issues created in the last 3 months
+ - 42 issues closed in the last 3 months
+
+## Commit activity:
+ - 100,426 lines of code changed (up 216%)
+ - 498 commits (up 35%)
+    - 20 committer email addresses (down 10%)
+    - 46 author email addresses (down 5%)
+- 15 new code contributers</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-BX">2017-07-19</a> &mdash; Bryan Call<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features. What makes ATS unique across the
+landscape of HTTP proxy caches is a focus on extensibility (plugins), HTTP
+protocol conformity and performance. ATS is driving some of the largest CDNs
+in the world, delivering a significant portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - We had our first ATS Reliability summit in St. Croix.  We focused on
+   closing out Coverity issues and went from 367 issues down to 122 issues.
+
+ - We had the ATS Summit combined with the Traffic Control Summit, 2 days
+   before ApacheCon (5/14 and 5/15), at the InterContiental in Miami.  There
+   were 50 people that attended both summits.
+
+## Health report:
+ - We are continuing to stabilize the 7.1.0 release and a couple of large
+   companies are running it in production on a limited number of servers.
+   It is taking longer than expected to make the 7.1.0 release and it will
+   be coming out soon.
+
+## PMC changes:
+
+ - Currently 41 PMC members.
+ - New PMC members:
+    - Gancho Tenev was added to the PMC on Sun Jun 04 2017
+    - Persia Aziz was added to the PMC on Sun Jun 04 2017
+
+## Committer base changes:
+
+ - Currently 53 committers.
+ - New committers:
+    - Jason Kenny was added as a committer on Fri May 26 2017
+    - Daniel Xu was added as a committer on Wed May 10 2017
+    - Steven Feltner was added as a committer on Fri May 26 2017
+    - Chenwei Song was added as a committer on Fri Jun 30 2017
+
+## Releases:
+
+ - Last release was 6.2.1 on Thu Jan 19 2017
+
+## Mailing list activity:
+
+ - The dev mailing list activity has picked up lot (up 64%).  Other mailing
+   list activity is flat
+
+ - users@trafficserver.apache.org:
+    - 499 subscribers (down -3 in the last 3 months):
+    - 128 emails sent to list (138 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 332 subscribers (up 9 in the last 3 months):
+    - 162 emails sent to list (99 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 15 subscribers (down -1 in the last 3 months):
+    - 2 emails sent to list (1 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 34 subscribers (down -1 in the last 3 months):
+    - 411 emails sent to list (4087 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 15 subscribers (up 0 in the last 3 months)
+
+## GitHub Issue activity:
+ - 78 issues created in the last 3 months
+ - 42 issues closed in the last 3 months
+ - 22 new issue contributers
+
+## Commit activity:
+ - 100,426 lines of code changed (up 216%)
+ - 498 commits (up 35%)
+    - 20 committer email addresses (down 10%)
+    - 46 author email addresses (down 5%)
+- 15 new code contributers</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#attachment-BM">2017-04-19</a> &mdash; Bryan Call<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features. What makes ATS unique across the
+landscape of HTTP proxy caches is a focus on extensibility (plugins), HTTP
+protocol conformity and performance. ATS is driving some of the largest CDNs
+in the world, delivering a significant portion of all Internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - We have an ATS Summit coming up next month, 2 days before ApacheCon
+  (5/14 and 5/15), at the InterContiental in Miami.  There is also going to
+  be a Traffic Control Summit at the same time and we are coordinating with
+  registration and the schedule.
+
+ - We switched from Jira to Github for tickets/issues on January 1st.  We
+   will have a discussion about the change at the ATS Summit and ask for
+   feedback.
+
+## Health report:
+ - We are continuing to stabilize the 7.1.0 release and a couple of large
+   companies are running it in production on a limited number of servers.
+   We will be making the first release candidate within a week.
+
+## PMC changes:
+ - Currently 39 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Chao Xu on Sun Sep 18 2016
+
+## Committer base changes:
+ - Currently 49 committers.
+ - New committers:
+    - Gancho Tenev was added as a committer on Wed Apr 05 2017
+    - Persia Aziz was added as a committer on Fri Apr 07 2017
+
+## Releases:
+ - 6.2.1 was released on Thu Jan 19 2017
+
+## Mailing list activity:
+ - Mailing list activity is down by half.  We hope that will pick up after
+   the release of 7.1.0 when people start moving to the new release.
+
+ - users@trafficserver.apache.org:
+    - 503 subscribers (up 2 in the last 3 months):
+    - 119 emails sent to list (214 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 323 subscribers (up 2 in the last 3 months):
+    - 80 emails sent to list (209 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 16 subscribers (up 0 in the last 3 months):
+    - 1 emails sent to list (1 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 35 subscribers (down -1 in the last 3 months):
+    - 3853 emails sent to list (4496 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 15 subscribers (up 0 in the last 3 months)
+
+## GitHub Issue activity:
+ - 78 issues created in the last 3 months
+ - 42 issues closed in the last 3 months
+ - 22 new issue contributers
+
+## Commit activity:
+ - 34,078 lines of code changed (down 54%)
+ - 375 commits (up 45%)
+    - 22 committer email addresses (up 22%)
+    - 48 author email addresses (up 23%)
+- 15 new code contributers</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#attachment-BM">2017-01-18</a> &mdash; Bryan Call<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+ and Varnish in functionality and features. What makes ATS unique across the
+ landscape of HTTP proxy caches is a focus on extensibility (plugins), HTTP
+ protocol conformity and performance. ATS is driving some of the largest CDNs
+ in the world, delivering a significant portion of all internet traffic.
+
+## Issues:
+
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+
+ - We held our Fall Summit in Sunnyvale, at Linkedin.  There were over 80
+   people that registered and approximately that many attended.  There were
+   a number of great presentations from the ATS Community and we had two
+   companies give talks on products that support ATS.
+
+ - At the Fall Summit the ATS Community discussed moving to GitHub for issue
+   tracking and at the beginning of the year (1/1/2017) we made the
+   transition.
+
+ - We are discussing having the 2017 Spring Summit at ApacheCon in May.
+
+ - Five people from the ATS Community attended the IETF 97 meeting in Seoul in
+   November.  There is an interest in the QUIC protocol in the ATS Community
+   and a few of us will be attending the IETF QUIC Interim Meeting in January
+   in Tokyo.
+
+## Health report:
+
+ - We have branched the v7.1.0 release and are working on finalizing the
+   release.
+
+ - We expect continued increase in committers, partially thanks to the Github
+   migration which we feel continues to encourage and simplify user
+   participation.
+
+ - Commits are down from the previous quarter.  We were preparing for the
+   v7.0.0 release in the previous quarter and v7.0.0 had more changes in the
+   release then we normally have, more than 400 issues closed.
+
+## PMC changes:
+
+ - Currently 39 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Chao Xu on Sun Sep 18 2016
+
+## Committer base changes:
+
+ - Currently 47 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Chao Xu at Wed Sep 14 2016
+ - We extended an invitation to Gancho Tenev and he hasn't accepted yet
+
+## Releases:
+
+ - 7.0.0 was released on Sun Nov 06 2016
+
+## Mailing list activity:
+
+ - Mailing list activity stayed relatively flat over the last quarter, which
+   is good considering holiday vacation.
+
+ - users@trafficserver.apache.org:
+    - 503 subscribers (up 3 in the last 3 months):
+    - 223 emails sent to list (234 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 322 subscribers (down -1 in the last 3 months):
+    - 211 emails sent to list (253 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 16 subscribers (up 1 in the last 3 months):
+    - 1 emails sent to list (1 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 36 subscribers (down -1 in the last 3 months):
+    - 5170 emails sent to list (9249 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 15 subscribers (up 1 in the last 3 months)
+
+## JIRA activity:
+
+ - 153 JIRA tickets created in the last 3 months
+ - 126 JIRA tickets closed/resolved in the last 3 months
+
+## Commit activity:
+
+ - 76,998 lines of code changed (down -2%)
+ - 313 commits (down -21%)
+    - 18 committer email addresses (down -54%)
+    - 39 author email addresses (down -12%)</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#attachment-BH">2016-10-19</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+ and Varnish in functionality and features. What makes ATS unique across the
+ landscape of HTTP proxy caches is a focus on extensibility (plugins), HTTP
+ protocol conformity and performance. ATS is driving some of the largest CDNs
+ in the world, delivering a significant portion of all internet traffic.
+
+## Issues:
+ - I (Leif Hedstrom) have decided to step down as PMC chair. The ATS PMC has
+   voted on a replacement, and is recommending Bryan Call as new PMC chair.
+   (See Special Orders 7A).
+ - This is my last Board report for the project , and I'd like to thank the
+   Board and the entire Apache Community for the support and trust.
+
+## Activity:
+ - No events were planned or held in the last quarter, however the community
+   has worked hard organizing our upcoming ATS Fall Summit. Details for the
+   summit is still being finalized, see our Wiki for more information:
+
+      https://cwiki.apache.org/confluence/display/TS/Fall+2016+Summit
+
+## Health report:
+ - ATS v7.0.0 is in its final stages of being released, hopefully in the next
+   few weeks we'll have a candidate.
+ - We expect continued increase in committers, partially thanks to the Github
+   migration which we feel continues to encourage and simplify user
+   participation.
+
+## PMC changes:
+ - Currently 39 PMC members.
+ - Chao Xu was added to the PMC on Sun Sep 18 2016
+
+## Committer base changes:
+ - Currently 47 committers.
+ - Chao Xu was added as a committer on Wed Sep 14 2016
+
+## Releases:
+ - 6.2.0 was released on Sun Jul 24 2016
+
+## Mailing list activity:
+ - Again, the drop in email activity is because of our changes to Github, and
+   we ended up duplicating a noticeable amount of automated emails for a
+   quarter. That has now settled, and we're back to normal levels. Hence the
+   dramatic changes in traffic to some lists, which are as expected.
+
+ - users@trafficserver.apache.org:
+    - 500 subscribers (up 16 in the last 3 months):
+    - 243 emails sent to list (up 40%)
+        - 49 active participants/authors (up 22%)
+        - 46 topics (up 4%)
+
+ - dev@trafficserver.apache.org:
+    - 323 subscribers (up 11 in the last 3 months):
+    - 256 emails sent to list (down 90%)
+        - 39 active participants/authors (down 18%)
+        - 50 topics (down 85%)
+
+ - announce@trafficserver.apache.org:
+    - 15 subscribers (up 1 in the last 3 months):
+    - 1 emails sent to list (0 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 37 subscribers (up 0 in the last 3 months):
+    - 9734 emails sent to list (5982 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 14 subscribers (up 0 in the last 3 months)
+
+## JIRA activity:
+ - 305 JIRA tickets created in the last 3 months
+ - 358 JIRA tickets closed/resolved in the last 3 months
+
+## IRC activity (#traffic-server):
+ - 62 users (25 active)
+ - 1,938 messages sent
+
+(note: The IRC metrics are new, and only partial for this quarter).</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#attachment-BJ">2016-07-20</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+ and Varnish in functionality and features. What makes ATS unique across the
+ landscape of HTTP proxy caches is a focus on extensibility (plugins), HTTP
+ protocol conformity and performance. ATS is driving some of the largest CDNs
+ in the world, delivering a significant portion of all internet traffic.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - We held our Spring Summit in Vancouver, just before the ApacheCon
+   conference. In a packed room, we shared and discussed use cases of ATS,
+   complex problems and solutions, and some future directions. Emails and
+   Jira's were created where we agreed on concrete proposals (such as the
+   updated release schedules).
+
+ - At ApacheCon, several ATS related presentations were made during the
+   conferences.
+
+ - We have decided to skip one releaes this release year, bringing us down to
+   only 3 planned releases. Details on the planned releases is available at
+
+     https://cwiki.apache.org/confluence/display/TS/Release+Management
+
+ - We have migrated to the new MATT system succesfully, and we are seeing a
+   stready stream of contributions on the Github pull requests. Not only from
+   current committers, but also from new contributors. We have had two minor
+   issues with the synchronization, both of which were automatically detected
+   by MATT, and subsequently quickly resolved by Infra.
+
+ - In addition, we've added support for our Jenkins CI to also allow for
+   builds on two platforms (Linux and FreeBSD) of all Github PRs. This has
+   helped us tremedeusly in code reviews as well as quality, avoding
+   committing changes that would otherwise break the CI builds.
+
+ - Committers from the ATS community are participating in the upcoming HTTP
+   Workshop in Stockholm, in July.
+
+## Health report:
+ - ATS v6.2.0 is currently in RC3 release, and we're aiming for a final
+   release in July. v7.0.0 is now scheduled for mid-october (pushed out by ~1
+   month).
+
+ - Activity on mailing lists is normal. However, the numbers below are
+   somewhat skewed due to the Github integration. This has been addressed
+   (thanks infra!) and we expect the number of emails to dev@ to return to
+   normal for the next report.
+
+ - It's still early to say, but our migration to Github and the eco-system
+   around Github Pull Requests seems to have a postive impact on community
+   participation. We are seeing roughly a 20% increase in contributors
+   compared to previous report. This is very positive, and we hope this will
+   also lead to new committers being added in the upcoming months and year.
+
+## PMC changes:
+ - Currently 38 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was John Rushford on Sat Feb 20 2016
+
+## Committer base changes:
+ - Currently 46 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was John Rushford at Thu Feb 18 2016
+
+## Releases:
+ - Last release was 6.1.1 on Fri Feb 05 2016
+
+## Mailing list activity:
+ - As mentioned before, the activity on the dev@ mailing list is skewed by a
+   very high activity of emails from Github. This has already been addressed.
+
+ - users@trafficserver.apache.org:
+     - 482 subscribers (up 5 in the last 3 months):
+     - 117 emails sent to list (down -64%)
+         - 38 active participants/authors (down -26%)
+         - 29 topics (down -60%)
+
+ - dev@trafficserver.apache.org:
+     - 313 subscribers (down -3 in the last 3 months):
+     - 2,139 emails sent to list (up 83%)
+         - 41 active participants/authors (up 2%)
+         - 317 topics (up 7%)
+
+ - announce@trafficserver.apache.org:
+     - 14 subscribers (up 0 in the last 3 months):
+     - 0 emails sent to list (1 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+     - 36 subscribers (up 1 in the last 3 months):
+     - 6139 emails sent to list (2920 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+     - 14 subscribers (up 0 in the last 3 months)
+
+## JIRA activity:
+ - 305 JIRA tickets created in the last 3 months (up 36%)
+     - 72 People creating issues (up 20%)
+ - 212 JIRA tickets closed in the last 3 months (up 28%)
+     - 21 People closing issues (up 5%)
+
+## Github activity:
+ - 227 issues (PRs) created in the last 3 months (up 49%)
+     - 48 People creating issues - Up 23% since last period
+ - 230 issues (PRs) resolved in the last 3 months (up 50%)
+     - 48 People closing issues - Up 23% since last period
+ - Details at: https://github.com/apache/trafficserver/pulls
+
+## Commit activity:
+ - 854,497 accumulated lines of code changed (up 2,655%)
+ - 684 commits (up 114%)
+     - 38 committer email addresses (up 54%)
+     - 52 author email addresses (up 13%)</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#attachment-BK">2016-04-20</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+ and Varnish in functionality and features.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - Planning for the 2016 Spring Summit has begun, and we're finalizing our
+   agenda. Details are on
+
+      https://cwiki.apache.org/confluence/display/TS/Spring+2016+Summit
+
+ - The ATS project is as of 4/10/2016 enabled to use the Git-Dual system
+ provided by Infra! This is very exciting, and we think this will continue
+ increasing community participation and growth. It also really simplifies the
+ work done by committers dealing with an increase in Pull Requests (we've had
+ over 500 github PRs, total).
+
+ Many thanks to the entire Infra team for making this happen! Special thanks
+ to Daniel Gruno for for going above and beyond his duty, making the
+ migration seemless and painless (so far :).
+
+## Health report:
+ - Activity in the community is healthy, with pretty significant increase in
+ mailing list activity and community participation. We continue adding new
+ committers this quarter  as well.
+
+ - ATS v6.2.0 is being prepared as we speak, and we expect this LTS release to
+ be ready for the planned 05/15/2016 release schedule.
+
+ - ATS is becoming recognized as a leader in the HTTP/2 server space, and the
+ team developing this is continuing making significant improvements with every
+ release.
+
+## PMC changes:
+ - Currently 38 PMC members.
+ - New PMC members:
+     - John Rushford was added to the PMC on Sat Feb 20 2016
+     - Jon Sime was added to the PMC on Thu Feb 11 2016
+
+## Committer base changes:
+ - Currently 46 committers.
+ - New commmitters:
+     - John Rushford was added as a committer on Thu Feb 18 2016
+     - Jon Sime was added as a committer on Thu Feb 04 2016
+
+## Releases:
+ - 6.1.0 was released on Wed Jan 27 2016
+ - 6.1.1 was released on Fri Feb 05 2016
+
+## Mailing list activity:
+ - users@trafficserver.apache.org:
+     - 477 subscribers (up 2 in the last 3 months):
+     - 372 emails sent to list (120 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+     - 316 subscribers (up 8 in the last 3 months):
+     - 954 emails sent to list (616 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+     - 14 subscribers (up 0 in the last 3 months):
+     - 1 emails sent to list (0 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+     - 35 subscribers (down -2 in the last 3 months):
+     - 3192 emails sent to list (2290 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+     - 14 subscribers (up 1 in the last 3 months)
+
+## JIRA activity:
+ - 215 JIRA tickets created in the last 3 months
+ - 165 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#attachment-BN">2016-01-20</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+ and Varnish in functionality and features.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - The 2015 Fall Summit was hosted by, and held at, Yahoo! campus. Roughly 80
+   participants were  present. The Summit was very well received.
+ - We are starting planning for our Spring Summit, which likely will be held
+   in combination with ACNA'16.
+
+## Health report:
+ - We are happy to announce that since last board report, three new committers
+   have been voted into the community! This is particularly exciting since
+   they all three have been focusing on our HTTP/2 efforts.
+ - We're in the final stages of a new v6.1.0 release, scheduled for January
+   2016 release. No new releases were made since the last report, but our
+   releases are following expected release schedules for the year.
+
+## PMC changes:
+ - Currently 36 PMC members.
+ - New PMC members:
+    - Masaori Koshiba was added to the PMC on Sun Nov 29 2015
+    - Ryo Okubo was added to the PMC on Sun Nov 29 2015
+    - Masakazu Kitajo was added to the PMC on Sun Dec 20 2015
+
+## Committer base changes:
+ - Currently 44 committers.
+ - New commmitters:
+    - Ryo Okubo was added as a committer on Wed Nov 18 2015
+    - Masakazu Kitajo was added as a committer on Mon Dec 14 2015
+    - Masaori Koshiba was added as a committer on Wed Nov 18 2015
+
+## Releases:
+ - Last release was 6.0.0 on Mon Sep 21 2015
+
+## Mailing list activity:
+ - users@trafficserver.apache.org:
+    - 476 subscribers (up 5 in the last 3 months):
+    - 120 emails sent to list (248 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+    - 308 subscribers (up 12 in the last 3 months):
+    - 617 emails sent to list (553 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+    - 14 subscribers (up 2 in the last 3 months):
+    - 0 emails sent to list (2 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+    - 37 subscribers (up 3 in the last 3 months):
+    - 2304 emails sent to list (4723 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+    - 13 subscribers (up 2 in the last 3 months)
+
+
+## JIRA activity:
+ - 156 JIRA tickets created in the last 3 months
+ - 133 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-10-21"><a href="2015/board_minutes_2015_10_21.html#attachment-BH">2015-10-21</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2015-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+ and Varnish in functionality and features.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - Our Fall 2015 Summit is planned for Mon-Tue Nov 16-17. A "barcamp" is
+   planned for Sun Nov 15 as well. For more details see
+
+      https://cwiki.apache.org/confluence/display/TS/Fall+2015+Summit
+
+## Health report:
+ - The lack of new committers has been discussed, and we have at least 3 more
+   candidates that we are considering for vote. But we are seeing normal
+   activity both on releases, contributions and mailing lists.
+ - The PMC voted to remove 6 PMC members that were unreachable or unresponsive
+   to several emails. This was a "Special Orders" agenda for the July 2015
+   board meeting (see Item E). The removed PMC members are welcome back at any
+   time. This explains the drop in PMC members compared to previous report.
+
+## PMC changes:
+ - Currently 33 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Thomas Jackson at Thu Feb 12 2015
+
+## LDAP changes:
+ - Currently 41 committers and 33 committee group members.
+ - No new committee group members added in the last 3 months
+ - No new committers added in the last 3 months
+ - Last committer addition was Thomas Jackson at Tue Feb 10 2015
+
+## Releases:
+ - 6.0.0 was released on Mon Sep 21 2015
+ - 5.3.2 was released on Sun Sep 13 2015
+
+## Mailing list activity:
+ - users@trafficserver.apache.org:
+     - 470 subscribers (up 6 in the last 3 months):
+     - 245 emails sent to list (217 in previous quarter)
+
+ - dev@trafficserver.apache.org:
+     - 296 subscribers (down -1 in the last 3 months):
+     - 496 emails sent to list (590 in previous quarter)
+
+ - announce@trafficserver.apache.org:
+     - 12 subscribers (up 1 in the last 3 months):
+     - 2 emails sent to list (0 in previous quarter)
+
+ - issues@trafficserver.apache.org:
+     - 34 subscribers (up 1 in the last 3 months):
+     - 4266 emails sent to list (4221 in previous quarter)
+
+ - summits@trafficserver.apache.org:
+     - 11 subscribers (up 0 in the last 3 months)
+
+## JIRA activity:
+ - 202 JIRA tickets created in the last 3 months
+ - 163 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-07-15"><a href="2015/board_minutes_2015_07_15.html#attachment-BI">2015-07-15</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2015-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+  Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+  and Varnish in functionality and features.
+
+## Activity:
+  The community has worked feverishly to finish the upcoming v6.0.0 release.
+  Expected release date is mid to end of July. On an interesting side note,
+  Comcast has Open Sourced a management portal around Traffic Server:
+
+      https://github.com/Comcast/traffic_control
+
+  This was announced on our mailing list, and it's unclear at this point if
+  the project will stay on Github, or move to ASF. We will keep both the
+  Incubator PMC and Board in the loop.
+
+## Issues:
+  There are no issues requiring Board attention at this time.
+
+## LDAP committee/Committership changes:
+  - Currently 41 committers and 39 LDAP committee members.
+  - No new LDAP committee members added in the last 3 months
+  - Last LDAP committee addition was Thomas Jackson at Fri Feb 13 2015
+  - No new committers added in the last 3 months
+  - Last committer addition was Thomas Jackson at Tue Feb 10 2015
+
+## Releases:
+  - 5.3.1 was released on Sat Jul 04 2015
+  - 5.3.0 was released on Mon May 11 2015
+
+## Mailing list activity:
+  - users@trafficserver.apache.org:
+    - 462 subscribers (up 2 in the last 3 months):
+    - 287 emails sent to list (300 in previous quarter)
+
+  - dev@trafficserver.apache.org:
+    - 297 subscribers (up 0 in the last 3 months):
+    - 575 emails sent to list (459 in previous quarter)
+
+## JIRA activity:
+  - 239 JIRA tickets created in the last 3 months (216 previous quarter)
+  - 308 JIRA tickets resolved in the last 3 months (167 previous quarter)</pre>
+<h3 id="2015-04-22"><a href="2015/board_minutes_2015_04_22.html#attachment-BK">2015-04-22</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2015-04-22" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+Community
+=========
+
+One new committer was added since last report, leaving us with a total of 41
+committers and 40 PMC members.  Our last committer and PMC member was added on
+2/13/2015. Activity on mailing list is normal, growth in subscriber list is
+less than previous reports:
+
+    users@ - 461 subscribers (up 1% since last report)
+    dev@ - 298 subscribers (identical to last report)
+
+In Jira, 216 new tickets were opened and 167 were resolved or closed since
+the last board report, which had 178 and 258 respectively. 459 changes were
+committed to our git repository from 36 contributors. Last report had 786
+commits from 31 contributors.
+
+Events
+======
+
+In addition to several presentations being given at ApacheCon in Austin, we're
+also holding our Spring Summit Thu-Fri the same week. More details at
+
+    https://cwiki.apache.org/confluence/display/TS/Spring+2015+Summit
+
+Releases
+========
+
+Three new releases were made since last report:
+
+ - v5.2.1 was released on Mon Mar 30 2015 (latest release)
+ - v4.2.3 was released on Tue Feb 03 2015
+
+The v4.2.x versions will be supported until Q3 2015, this is extended by an
+additional 6 month from the initial plan. Future adjustments to the release
+schedules are planned after the v6.0.0 release.
+
+Planned releases include:
+
+ -  v5.3.0: April 2015 (currently in -RC1)
+ -  v6.0.0: July 2015</pre>
+<h3 id="2015-01-21"><a href="2015/board_minutes_2015_01_21.html#attachment-BL">2015-01-21</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2015-01-21" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+One new committer was added since last report, leaving us with a total of 40
+committers.  Our last committer and PMC member was added on 12/16/2014.
+Activity on mailing list is normal, growth in subscriber list is almost
+identical to the previous quarter:
+
+    users@ - 457 subscribers (up 3% since last report)
+    dev@ - 298 subscribers (up 3% since last report)
+
+In Jira, 168 new tickets were opened and 258 were resolved or closed since
+the last board report, which had 202 and 103 respectively. 786 changes were
+committed to our git repository from 31 contributors. Last report had 624
+commits from 44 contributors.
+
+
+Events
+======
+
+The Fall 2014 ATS Summit was held at LinkedIn's offices in Sunnyvale. It was
+well received, with participants from committers, developers and users. Slides
+from most of the topics are available at
+
+     https://cwiki.apache.org/confluence/display/TS/Presentations+-+2014
+
+A Bug Scrub event was held in the Chicago area, going through a large number
+of issues.
+
+We are planning for our next Summit event adjacent to the 2015 ApacheCon
+NA. In addition to that, we plan on holding "Hackathon" sessions before,
+during and after the conference.
+
+
+Releases
+========
+
+Three new releases were made since last report:
+
+    Apache Traffic Server v5.2.0 (released 1/14/2015)
+    Apache Traffic Server v5.1.2 (released 12/16/2014)
+    Apache Traffic Server v5.1.1 (released 10/31/2014)
+
+The v4.2.x version will be supported until Q3 2015, this is extended by an
+additional 6 month from the initial plan. We have decided to avoid making
+releases during the holidays around Thanksgiving and in December, and adjusted
+our release schedules accordingly. The 5.2.0 release was delayed for a full
+month as well. Learning from this, we expect release schedules to be further
+adjusted in the 2015-2016 plans.
+
+Planned releases include:
+
+   * 5.3.0: April 2015
+   * 6.0.0: July 2015</pre>
+<h3 id="2014-10-15"><a href="2014/board_minutes_2014_10_15.html#attachment-BA">2014-10-15</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2014-10-15" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+One new committer was added since last report, leaving us with a total of 39
+committers.  Our last committer and PMC member was added on 8/27/2014.
+Activity on mailing list is normal, and we are seeing normal, steady growth in
+mailing list subscribers:
+
+    users@ - 445 subscribers (up 3% since last report)
+    dev@ - 290 subscribers (up 3% since last report)
+
+In Jira, 202 new tickets were opened and 103 were resolved or closed since
+the last board report, which had 218 and 136 respectively. 624 changes were
+committed to our git repository from 44 contributors. Last report had ~800
+commits from 38 contributors.
+
+
+Events
+======
+
+Several ATS related conference presentations were made at Velocity China '14
+as well as at OSCON '14. Our Fall 2014 Summit is schedule for October 21-22,
+in Mountain View, California. The event is hosted by LinkedIn.
+
+Releases
+========
+
+Four new releases were made since last report:
+
+    Apache Traffic Server v5.1.0 (released 9/18/2014)
+    Apache Traffic Server v5.0.1 (released 7/23/2014)
+    Apache Traffic Server v4.2.1.1 (released 7/23/2014)
+    Apache Traffic Server v4.2.2 (released 9/4/2014)
+
+The v4.2.x version will be supported until v6.0.0 is released, roughly May
+2015, and we expect a number of releases to be made in the next year. The
+v4.2.1.1 and v5.0.1 releases were made exclusively to address CVE-2014-3525.
+
+Planned releases include:
+
+   * Soon: v5.1.1
+   * December: v5.2.0</pre>
+<h3 id="2014-07-16"><a href="2014/board_minutes_2014_07_16.html#attachment-BD">2014-07-16</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2014-07-16" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+Two new committers were added since last report, leaving us with a total of 38
+committers (note, there was a typo in the last report, which claimed we had 35
+committers, when in reality it was 36). Our last committer was added on
+05/28/2014. Activity on mailing list is normal, and we are seeing normal,
+steady growth in mailing list subscribers:
+
+    users@ - 432 subscribers (up 4% since last report)
+    dev@ - 281 subscribers (up 2.5% since last report)
+
+
+In Jira, 218 new tickets were opened and 136 were resolved or closed since
+the last board report, which had 222 and 241 respectively. 830 changes were
+committed to our git repository from 38 contributors. The number of unique
+contributors is identical to the last report, but the number of commits were
+almost twice as high.
+
+Events
+======
+
+At ApacheCon 2014, we were represented with a full day track dedicated to
+Traffic Server. Our spring Summit was held over two days at the same venue in
+Denver, and was well received. We're planning for a fall Summit, the initial
+idea was to do it in Budapest, but there seems to be little interest from the
+community so far. We'll make a decision on where to host the next Summit soon,
+but right now it looks like we'll do it in California instead.
+
+Two Traffic Server community members will go to Velocity China in August and
+talk about our project.
+
+Releases
+========
+
+Two new releases were made since last report:
+
+    Apache Traffic Server v4.2.1 (released 4/29/2014)
+    Apache Traffic Server v5.0.0 (released 6/17/2014)
+
+The v4.2.x family of releases is also a LTS branch, and this release marks
+the EOL of all v4.1.x releases. The v4.2.x version will be supported until
+v6.0.0 is released, roughly May 2015, and we expect a number of releases to be
+made in the next year.
+
+Upcoming releases include:
+
+   * Soon: v4.2.2, fixing a few critical cache related issues etc.
+   * Possibly: v5.0.1 in July
+   * August: v5.1.0
+
+Our v5.0.0 release also marked the End-Of-Life of the old v3.2.x release. No
+further releases will be made for this version.</pre>
+<h3 id="2014-04-16"><a href="2014/board_minutes_2014_04_16.html#attachment-BE">2014-04-16</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2014-04-16" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+No new committers were added since last report, leaving us with a total of 35
+committers. We do however expect a number of new committers and PMC members to
+get voted on in the near future. Our last committer was added on 11/7/2013.
+Activity on mailing list is normal, and we are seeing normal, steady growth in
+mailing list subscribers:
+
+    users@ - 416 subscribers (up 3.5% since last report)
+    dev@ - 274 subscribers (up 4% since last report)
+
+
+In Jira, 222 new tickets were opened and 241 were resolved or closed since
+the last board report, which had 215 and 115 respectively. 450 changes were
+committed to our git repository from 39 contributors. The number of unique
+contributors is identical to last report (also 39).
+
+Events
+======
+
+At ApacheCon 2014, we are represented with a full day track dedicated to
+Traffic Server. In addition, the spring 2014 ATS Summit is being held at the
+same conference venue, Thursday and Friday. Many thanks to the ACNA organizers
+for helping us planning this summit! Dinners are planned for the community
+both on Wednesday night and Thursday night.
+
+Releases
+========
+
+One new release was made since last report, and it's worth repeating that all
+ATS releases are considered stable.
+
+    Apache Traffic Server v4.2.0 (released 3/19/2014)
+
+The v4.2.x family of releases is also a LTS branch, and this release marks
+the EOL of all v4.1.x releases. The v4.2.x version will be supported until
+v6.0.0 is released, roughly May 2015, and we expect a number of releases to be
+made in the next year. Our normal release cycles continues of course, with the
+next stable release being v5.0.0.
+
+Upcoming releases include
+
+   * Soon: v4.2.1, fixing a few critical cache related issues
+   * May: v5.0.0, which starts our new major release cycle.
+
+The release of v5.0.0 will also see the end of life of the old v3.2.x
+releases. No further releases in the v3.2.x family is expected, we will make
+public announcements of this in the near future. We know the ASF is still
+running some servers on v3.2.x, and we'd be happy to provide resources to help
+a smooth migration to a newer version.</pre>
+<h3 id="2014-01-15"><a href="2014/board_minutes_2014_01_15.html#attachment-BC">2014-01-15</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2014-01-15" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+One new committer (and PMC) member joined our ranks, bringing us to a total
+of 35 currently active committers. Activity on mailing list is normal, but the
+increase to mailing list subscriptions are slightly lower than usual:
+
+    users@ - 402 subscribers (up 3% since last report)
+    dev@ - 263 subscribers (up 4% since last report)
+
+
+In Jira, 215 new tickets were opened and 115 were resolved or closed since
+the last board report, which had 226 and 171 respectively. 405 changes were
+committed to our git repository from 39 contributors. Although the number of
+commits are very similar to last report, the number of contributors has
+increased by over 50%. That is good news.
+
+
+Events
+======
+
+Our first official Summit was held October 16-17, hosted by Yahoo Inc! This
+was well received, and one of the outcomes was to aim for two summits per year
+going forward. Hence, our next Spring Summit is planned for April 2014.
+
+A mini-BarCamp is planned for January 20-21, in Zurich, Switzerland.
+
+
+Releases
+========
+
+Two releases were made since the last report, including one new minor
+release which is our currently supported stable release:
+
+    Apache Traffic Server v4.1.2 (current stable, recommended release)
+    Apache Traffic Server v4.0.2 (EOLifed by v4.1.2)
+
+
+Upcoming releases include
+
+   * Likely: v4.1.3, fixing any critical v4.1.2 issues
+   * February: v4.2.0 (which will also be an LTS release)</pre>
+<h3 id="2013-10-16"><a href="2013/board_minutes_2013_10_16.html#attachment-AY">2013-10-16</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2013-10-16" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+One new committer (and PMC) member joined our ranks, bringing it to a total
+of 34 currently active committers. Our primary mailing lists are seeing more
+activity, and more new subscribers than normal:
+
+    users@ - 388 subscribers (up 12.5% since last report)
+    dev@ - 252 subscribers (up 6.5% since last report)
+
+
+In Jira, 226 new tickets were created, and 171 were resolved or closed since
+the last board report. 425 changes were committed to our git repository from
+25 contributors.
+
+The project made the "Apache Software Foundation: 10 Projects That Are
+Making a Difference" EWeek article.
+
+Yahoo! officially announced their intention to once again become a large,
+active contributor to the project. The community is very excited to see
+Yahoo! return, with all their expertise and experienced developers.
+
+
+Events
+======
+
+A BarCamp was held July 9-10th in Denver. This was received as an overall
+positive experience, and as such, we're doing it again. October 16-17 we'll
+hold our 2013 Fall Summit, hosted by Yahoo! More information is available at
+
+    https://cwiki.apache.org/confluence/display/TS/Fall+2013+Summit
+
+The tentatively planned BarCamp in China was unfortunately canceled. We hope
+to revisit this next year.
+
+
+Releases
+========
+
+Three releases were made in the last quarter, 1 development and two stable
+releases. This includes the latest, new stable release, v4.0.1.
+
+    Apache Traffic Server v4.0.1
+    Apache Traffic Server v3.2.5
+    Apache Traffic Server v3.3.5
+
+This also marks a major update to our release process. For more details, see
+https://cwiki.apache.org/confluence/display/TS/Release+Management. Some
+highlights from this are:
+
+   * Strict Semantic Versioning. Upgrading within a major version is always
+     compatible from APIs, ABIs and configurations perspective.
+   * Patch releases (e.g. v4.0.2) are made for security and critical bugs.
+   * All releases are considered stable (i.e. no more development release).
+   * Quarterly minor releases, on fixed schedules (May, Aug, Nov and Feb).
+   * Major releases at the most once a year, but could be longer.
+
+Upcoming releases include
+
+   * Imminent: v4.0.2, fixing 4 critical bugs in v4.0.1.
+   * November: v4.1.0</pre>
+<h3 id="2013-07-17"><a href="2013/board_minutes_2013_07_17.html#attachment-AX">2013-07-17</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2013-07-17" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+No new committers or PMC members  were added since last report, we're still
+at 33 currently active committers. Our primary mailing lists are seeing
+small but steady increase, and normal activity:
+
+    users@   - 344 subscribers (up 4.5% since last report)
+    dev@     - 236 subscribers (up 2% since last report)
+
+
+In Jira, 167 new tickets were created, and 150 were resolved or closed since
+the last board report. 292 changes were committed to our git repository from
+23 contributors.
+
+Participation from community members on our official Blog site and Twitter
+account is good, but this is still an area that needs more work. We're to
+the point where we need to evangelize the project and software to attract
+more contributors, to continue innovation and improve code stability.
+
+
+Events
+======
+
+Comcast made an interesting presentation at the CDN Summit in New York,
+showing how they built their next generation CDN on Apache Traffic Server.
+
+At Velocity, LinkedIn presented their entire content management and delivery
+tools stack, based on Apache Traffic Server and plugins. They also announced
+their PageSpeed plugin, which they will release to the ASF and the Apache
+Traffic Server project soon.
+
+A BarCamp is planned for July 9-10th in Denver. More details are available
+at https://cwiki.apache.org/confluence/display/TS/BarCamp+Denver+2013 .
+
+We are also contemplating either hosting or participating in a BarCamp in
+China this year. This is an area where there is a lot of potential growth
+for our community, and we already have many active contributors and
+committers in the area.
+
+
+Releases
+========
+
+Two developer releases were prepared:
+
+    Apache Traffic Server v3.3.2
+    Apache Traffic Server v3.3.4
+
+
+Our last stable release was v3.2.4, released on January 25. Our hope is that
+the next major release, v3.4.0, should be ready by the end of July. This is
+later than expected, we're currently 4-6 weeks behind schedule. A v3.2.5
+stable release is also imminent.</pre>
+<h3 id="2013-04-17"><a href="2013/board_minutes_2013_04_17.html#attachment-BC">2013-04-17</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2013-04-17" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+One new committer was added since the last report, for a total of 33
+currently active committers. The mailing lists are seeing an increase
+in growth on the users mailing list, but flat on the developer list:
+
+    users@   - 344 subscribers (up 5% since last report)
+    dev@     - 231 subscribers (same as last report)
+
+
+Several ATS or ATS related presentations were given at ACNA-13. Thanks
+to the conference organizers, and our presenters! We had several ATS
+Hackathon / Bar Camp events, with participants from all over the world.
+All in all, it was a great event for the community.
+
+There is renewed activity among our committers, with a large number
+of commits and Jira tickets resolved in the last few months. Overall
+activity is up about 20% compared to the last 12 months average.
+
+It is exciting to see the increased commercial use of Apache Traffic
+Server. For some examples of who are using ATS, see
+
+    http://trafficserver.apache.org/users.html
+
+
+Releases
+========
+
+Two releases were prepared:
+
+    Apache Traffic Server v3.2.4 (stable branch)
+    Apache Traffic Server v3.3.1 (developer branch)
+
+
+We are planning one developer release per month going forward, with a
+new stable release planned for June/July 2013 time-frame.</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#attachment-AU">2013-01-16</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the board's attention.
+
+
+Community
+=========
+
+Two new committers were added since the last report, bringing us to a
+total of 33 active committers. The mailing lists are seeing less growth
+than previous quarters:
+
+    users@   - 328 subscribers (up 1% since last report)
+    dev@     - 231 subscribers (up 5% since last report)
+
+
+An introduction to Apache Traffic Server was presented at ApacheCon-EU
+in November. Two ATS presentations were accepted to ACNA-13, and one
+plugin authoring tutorial session is scheduled. Many of our committers
+are attending ACNA13, and we look forward to meet and hack with the
+communities.
+
+A Usenix LISA presentation on the topic of choosing HTTP intermediaries,
+including ATS, was given in December.
+
+
+Releases
+========
+
+No releases since last report, but we have two releases planned for the
+very near future.</pre>
+<h3 id="2012-10-17"><a href="2012/board_minutes_2012_10_17.html#attachment-AO">2012-10-17</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2012-10-17" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+Three new committers were added since the last report, bringing us to a
+total of 31 active committers. Paul Querna has stepped down from the PMC,
+going emeritus for the time being. We would like to thank Paul for all his
+contributions to the project, in particularly during incubation and the
+early stages joining the Apache Foundation. The mailing lists are seeing
+slightly less growth than previous quarters:
+
+    users@   - 324 subscribers (up 8% since last report)
+    dev@     - 219 subscribers (up 8% since last report)
+
+
+The PMC has decided to combine the committer and PMC membership votes into
+one. Going forward, new committers that are voted in have a choice to join
+either as both committer and PMC member, or just as a committer.
+
+We had a successful Traffic Server Hackathon at OSCON in Portland, and on
+10/18 several of our committers are attending the Web Caches Meetup hosted
+by Yahoo (http://s.apache.org/c1a).
+
+An introduction to Apache Traffic Server will be presented at ApacheCon-EU
+in November.
+
+
+Releases
+========
+
+Development has been somewhat slow over the summer months, but we made one
+release:
+
+    3.3.0           - The first development release after v3.2.
+
+This version includes several new experimental plugins, including a Lua
+plugin framework (to write plugins in Lua scripts), and a plugin to
+handle stale content (RFC 5861).
+
+On further positive notes, a SPDY plugin has been committed to the main
+git repository. It's still in somewhat rough shape, but shows promise of
+having full SPDY support soon. Parties interested in SPDY are encouraged
+to help with the development on this plugin.</pre>
+<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#attachment-AS">2012-07-25</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+Two new committers were added since the last report, bringing us to a
+total of 29 committers. The mailing lists are seeing normal steady growth,
+the current tallies are:
+
+    users@   - 301 subscribers (up 16% since last report)
+    dev@     - 203 subscribers (up 9% since last report)
+
+A new "who's using" page was created, to show some of the users and
+supporters of our software and community:
+
+    http://trafficserver.apache.org/users.html
+
+A Traffic Server Hackathon and get-together is planned for the upcoming
+OSCON in Portland, for both Monday and Tuesday. Many of the core Traffic
+Server developers will be there, and we look forward to meet many of our
+users.
+
+
+Releases
+========
+
+Three releases have been made since the last status report:
+
+    3.2.0           - Our latest, greatest stable release
+    3.0.5           - Patch release for our 3.0.x stable release
+    3.1.4           - The final development release before 3.2.0.
+
+A press announcement was made for the v3.2.0 release, for more details see
+
+  https://blogs.apache.org/foundation/entry/media_alert_the_apache_software2
+
+Many thanks to Sally and the PR team for helping us with this milestone
+release. A year in the making, v3.2.0 fixes hundreds of bugs and adds many
+significant new features.
+
+Development on the v3.3.0 branch has begun already, and we will use the
+OSCON sessions to work on several interesting new projects. Of particular
+interest is the new Lua plugin, which will (hopefully) make it into either
+v3.3.0 or v3.3.1.</pre>
+<h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#attachment-AQ">2012-04-18</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+Three new committers and PMC members were added since the last report, and
+we're very excited with our developer community growth. The mailing lists
+are seeing somewhat less growth than normal, the current tallies are:
+
+    users@   - 259 subscribers (up 7% since last report)
+    dev@     - 187 subscribers (up 7% since last report)
+
+The community dealt with a security incident, CVE 2012-0256, which led to
+the release of v3.0.4 and v3.1.3. Everything went very well, and it showed
+that our process for dealing with security incidents is solid.
+
+The Apache Traffic Server community volunteered to participate in the git
+trials. As of 1/28 we are fully migrated to the new git infrastructure.
+So far, it's been a good experience, with an expected hurdle of the steep
+learning curve of git. The infrastructure team have been tremendously
+helpful getting everything configured, and minor issues resolved.
+
+
+Releases
+========
+
+Four releases have been made since the last status report:
+
+    3.0.3 and 3.0.4 - New stable releases.
+    3.1.2 and 3.1.3 - Development releases.
+
+Primary focus right now includes
+
+    * Stability and bug fixes, without performance regressions
+    * Finishing up for a v3.2 release in April - May time frame
+
+Many interesting features have been added since v3.0, including SNI and
+NPN support for TLS. NPN is an enabler for developing a SPDY plugin for
+example. Full IPv6 support is also completed. Many performance
+improvements have been made, including better connection pooling. A number
+of stable plugins are now included with the main software distribution,
+and will be part of the next stable release.
+
+In total, over 200 bugs, improvements and new features have been fixed
+since v3.0.</pre>
+<h3 id="2012-01-24"><a href="2012/board_minutes_2012_01_24.html#attachment-AI">2012-01-24</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2012-01-24" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+No new committers were added since the last report, but several new
+contributors have appeared, submitting excellent bug reports and
+patches. The hope is that some of these contributors will become
+committers in the future. The mailing lists are seeing our normal growth,
+the current tallies are:
+
+    users@   - 243 subscribers (up 15% since last report)
+    dev@     - 175 subscribers (up 11% since last report)
+
+Three presentations related to Apache Traffic Server were given in the
+last quarter: two at ApacheCon 2011 (Vancouver), and one at Usenix LISA
+(Boston). We're planning a Feathercast session in the near future.
+
+
+Releases
+========
+
+Two releases have been made since the last status report:
+
+    3.0.2 - The second stable release update on the 3.0 branch
+    3.1.1 - Additional trunk development towards v3.2.
+
+Primary focus right now includes
+
+    * Stability and bug fixes, without performance regressions
+    * Full IPv6
+    * Improvements related to SSL and addition of features such as SNI and
+      NPN, and public APIs related to such features.
+    * Continued improvements and additions to the plugin APIs.
+
+
+The v3.2 release is delayed, probably close to 3 months later than we had
+initially expected (and hoped for). v3.1.2 is almost ready for release,
+and will be followed by at least a v3.1.3 and most likely a v3.1.4
+release. The new goal is for a v3.2 release sometime in Q1 of 2012.</pre>
+<h3 id="2011-10-26"><a href="2011/board_minutes_2011_10_26.html#attachment-AG">2011-10-26</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2011-10-26" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+Lian Zhang ("mohan_zl") and William Bardwell have joined the community as
+committers and PMC members. Both are great additions, welcome! Activity on
+mailing lists is healthy, and subscriptions continue to grow:
+
+    users@   - 210 subscribers (up 13%)
+    dev@     - 158 subscribers (up 11%)
+
+Three presentations are scheduled for November and December: Two for
+ApacheCon 2011 (Vancouver), and one for Usenix LISA (Boston)
+
+
+Releases
+========
+
+Two releases have been made since the last status report:
+
+    3.0.1 - Our first stable update to the 3.0 release
+    3.1.0 - Our first development release
+
+
+We're moving steadily towards both a 3.0.2 release, and a v3.2 release
+later this year, or possibly early next year. The goal is to try to keep
+up with frequent releases (monthly) as well as major releases on a
+rough 6 month schedule.</pre>
+<h3 id="2011-07-20"><a href="2011/board_minutes_2011_07_20.html#attachment-AF">2011-07-20</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2011-07-20" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+and Varnish in functionality and features.
+
+
+Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+The Apache Traffic Server community is very happy to announce the addition
+of Zhao Yongming as a committer. Zhao is a hero on mailing lists, bugs,
+patches and all other community activities.
+
+Activity on mailing lists and Jira tickets continue to increase. Our
+mailing lists are now reaching well over 100 users and contributors each:
+
+    users@  - 186 subscribers
+    dev@    - 142 subscribers
+
+
+Three Traffic Server presentations are scheduled so far for 2011. Two for
+ApacheCon 2011, and one for OSCON 2011. We're looking forward to meet and
+talk about our projects and software.
+
+
+Releases
+========
+
+The community is incredibly excited to announce our first stable release
+in over a year: Apache Traffic Server v3.0.0 was released June 14 2011. We
+would also like to thank the PR group for coordinating a press release for
+this occasion. We got some significant media attention for our 3.0.0
+release.
+
+The old 2.0.x branch is being phased out, and instead we will focus our
+efforts on the 3.0.x stable branch, as well as the bleeding edge
+trunk. Igor Galic is the release manager for the 3.0.x branch. Going
+forward, the community is planning on at least two stable major releases
+per year (6 months schedule) as well as patch releases on the stable
+branch.
+
+Buildbots are setup for all major platforms, and now also includes builds
+for the 3.0.x release branch. Many thanks to the infra-ops team for
+supporting our CI infrastructure, it's truly invaluable.
+
+
+Branding
+========
+
+We believe the project has completed all the Branding requirements.</pre>
+<h3 id="2011-04-20"><a href="2011/board_minutes_2011_04_20.html#attachment-AH">2011-04-20</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2011-04-20" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to
+Squid in functionality and features.
+
+
+Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+Activity in the community has slowed down a little bit, but a couple
+of new contributors have emerged. Overall, the community seems healthy
+and we expect to add a few new committers in the next quarter.
+
+Documentation efforts are well underway, migrating all our docs (and
+eventually site) to use the new Apache CMS.
+
+A presentation on Apache Traffic Server was accepted to the "Russian
+Internet Technologies" conference, to be held in April 2011.
+
+
+Releases
+========
+
+The community has produced two releases since our last report:
+
+    v2.1.6 - Major plugin API improvements and updates
+    v2.1.7 - Bug fixes primarily to improve cache efficiency
+
+The v2.1.6 once again breaks compatibility with previous releases, as
+is our intended goal with the v2.1.x release cycle. v3.0 will be the
+next stable release, where existing APIs and ABIs are frozen.
+
+
+Branding
+========
+
+We believe the project has completed the Branding requirements, the
+final piece was to add a DOAP file (done).</pre>
+<h3 id="2011-01-19"><a href="2011/board_minutes_2011_01_19.html#attachment-AF">2011-01-19</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2011-01-19" title="Permalink">&para;</a></h3>
+<pre>Apache Traffic Server is an HTTP proxy server and cache, similar to Squid
+in functionality and features.
+
+Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+Igor Galic has joined the Traffic Server PMC. Activity on mailing lists
+is very good, and the community is still seeing a slow, but healthy,
+growth. Several community members are actively working towards including
+Apache Traffic Server in various Linux distributions.
+
+
+Releases
+========
+
+The community has produced two releases since our last report:
+
+    v2.1.4 - Primarily a large bug fix release
+    v2.1.5 - Many Bug fixes and several new features (see below)
+
+
+Version 2.1.5 adds several new interesting features, including
+
+    - WCCP v2 (experimental)
+    - Per transaction overridable configurations
+    - IPv6 has finally landed (for client connections)
+    - Much better (consistent) 64-bit support, particularly in the plugin
+      SDK APIs.
+
+Some of the changes made in the v2.1.5 (and upcoming v2.1.6) release makes
+it incompatible with earlier releases. Therefore, the community has
+decided that the next major, stable release will be v3.0. The expectation
+is that we'll do at least one more developer release (v2.1.6) before v3.0.</pre>
+<h3 id="2010-10-20"><a href="2010/board_minutes_2010_10_20.html#attachment-AF">2010-10-20</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2010-10-20" title="Permalink">&para;</a></h3>
+<pre>Issues
+======
+
+There are no issues that needs the boards attention.
+
+
+Community
+=========
+
+The community has added one new committer since our last report, Igor
+Galic has joined as a committer. We are seeing continued increase in
+mailing list traffic as well as IRC chat room.
+
+Apache Traffic Server was presented at OSCON 2010.  We got some very
+positive feedback about the software and the progress we're making with
+our community building efforts.
+
+A proposal for a Bylaw is being developed, and discussed on the dev@
+mailing list.
+
+
+Releases
+========
+
+We have made three releases since the last report:
+
+    v2.0.1 - Primary a security release, to improve DNS resilience.
+    v2.1.2 - Same DNS fixes, and a number of other improvements.
+    v2.1.3 - Fixes for the cache corruptions introduced earlier.
+
+v2.1.4 is expected to be released soon, which we hope will be the final
+release before the next stable release, v2.2. Detailed descriptions of
+all releases are available on our website.
+
+Finally, we are very excited to announce that support for intercepting
+(aka transparent) proxy has landed on trunk. This is currently only
+supported on the Linux platforms.</pre>
+<h3 id="2010-07-21"><a href="2010/board_minutes_2010_07_21.html#attachment-AC">2010-07-21</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2010-07-21" title="Permalink">&para;</a></h3>
+<pre>The TS community is continuing work on closing all new feature
+requests and bugs for a v2.2 release. No date has been set for this
+release, but we are still aiming for a "late summer" target. No
+other releases have been made in the last month.
+
+The Traffic Server community is pleased to report the addition of
+two new committers and PMC members this month! The community is
+vibrant, and we see a steady increase in interest and attention from
+both users and developers.
+
+Our CI infrastructure is continuously improving, with additions of
+Solaris and Fedora Core buildbots. This is in addition to our
+existing Ubuntu and FreeBSD builds. Props to infra ops for providing
+these critical services!
+
+Apache Traffic Server was presented at Velocity 2010, and another
+presentation is planned for OSCon 2010.
+
+
+------------------------------------------------------
+End of minutes for the July 21, 2010 board meeting.</pre>
+<h3 id="2010-06-16"><a href="2010/board_minutes_2010_06_16.html#attachment-AL">2010-06-16</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2010-06-16" title="Permalink">&para;</a></h3>
+<pre>The Traffic Server community has released our first two development
+releases, TS v2.1.0 and v2.1.1. These releases includes a number of
+improvements, and feature additions:
+
+* Major performance improvements in most layers, increasing throughput by up
+  to 2x in some benchmarks.
+* Increased cache capacity, we now support up to 0.5PB per disk spindle. A
+  new RAM cache algorithm is also added.
+* Support for most Unix flavors, including FreeBSD, MacOSX and Solaris.
+* Completely new, flexible configuration layout, simplifying the build and
+  packaging task for binary distributions.
+* Improved 64-bit support.
+
+The project is on track for a late summer / early fall release of v2.2.0,
+which will probably be the next public release (there is no immediate need
+for a v2.0.x release). This schedule will be adjusted as necessary though.
+
+The community is continuing to see an increase in activity, with questions,
+bugs and patches from several new (and returning) participants. At least one
+new committer is expected to join the team in the next few weeks.
+
+There are no outstanding issues with our transition from Incubator to TLP.</pre>
+<h3 id="2010-05-19"><a href="2010/board_minutes_2010_05_19.html#attachment-AH">2010-05-19</a> &mdash; Leif Hedstrom<a class="headerlink" href="#2010-05-19" title="Permalink">&para;</a></h3>
+<pre>This is the first report for Apache Traffic Server since our graduation
+from the Incubator in April 2010. Working with the Infra-ops team, we have
+successfully moved all our resources out of the incubator area, and into
+the trafficserver.apache.org domain.  This includes our new web site, at
+http://trafficserver.apache.org/.
+
+The community has released the first official Apache Traffic Server
+release, v2.0.0. This release is available from the dist mirrors, in the
+appropriate trafficserver area. The community has also grown with the
+addition of Jason Giedymin as a new committer.
+
+Work is in progress to release the first developer release (v2.1.0), the
+goal is to have this completed before end of May. In parallel, we are
+making fixes to the 2.0.0 release branch, in preparation for our first
+bug-fix release (v2.0.1).</pre>
+<h3 id="2009-09-23"><a href="2009/board_minutes_2009_09_23.html#trafficserver">2009-09-23</a> &mdash; in the Incubator's report<a class="headerlink" href="#2009-09-23" title="Permalink">&para;</a></h3>
+<pre>This last month, the team has worked hard on code cleanup, preparing the
+code for submission into the Incubator SVN server. We still have some
+cleanup to do, but there is light at the end of the tunnel. Traffic Server
+is having a Meetup at ApacheCon, Tuesday night, where we will present our
+progress, as well as give an overview of the code architecture, and typical
+use case scenarios for TS. Our goal is of course to be done with the code
+cleanup, and SVN migration, well before ApacheCon.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

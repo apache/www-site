@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board minutes, 2019-05-16 | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board minutes, 2019-05-16';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board minutes, 2019-05-16';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board minutes, 2019-05-16</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <p>[<a href="https://www.apache.org/foundation/records/minutes/2019/board_minutes_2019_05_16.txt">raw</a>] the published text, which is the record. [<a href="./">2019</a>] [<a href="../">main index</a>]</p>
+<pre>
+                     The Apache Software Foundation
+
+                  Board of Directors Meeting Minutes
+
+                             May 15-16, 2019
+
+
+ <a class="selflink" href="#section-1" id="section-1">1. Call to order</a>
+
+    The meeting was scheduled for 9:00 a.m. (Central) and began at
+    9:14 a.m. (Central) when a sufficient attendance to constitute a
+    quorum was recognized by the Vice Chairman.
+
+    The meeting was held in person at Google in Chicago.
+
+ <a class="selflink" href="#section-2" id="section-2">2. Roll Call</a>
+
+    Directors Present:
+
+      Rich Bowen
+      Shane Curcuru
+      Jim Jagielski
+      Myrle Krantz
+      Daniel Ruggeri
+      Craig L Russell
+      Roman Shaposhnik
+      Joan Touzet
+
+    Executive Officers Present:
+
+      Tom Pappas
+      Sam Ruby
+      Matt Sicker
+
+    Guests Present:
+
+      Robin Anil
+      Brian Fitzpatrick
+      Sally Khudairi
+      David Nalley
+      Greg Stein
+
+ <a class="selflink" href="#section-3" id="section-3">3. Discussion Items</a>
+
+    <a class="selflink" href="#section-3A" id="section-3A">A. Agenda</a>
+
+     Vice Chairman Shane asked that everyone observe the current 
+     agenda to ensure we cover all points in a timely manner.
+
+    <a class="selflink" href="#section-3B" id="section-3B">B. Recent Resignations</a>
+
+     Phil recently resigned from the Board, and Ross resigned as
+     Executive Vice President. We would like to thank both Phil and 
+     Ross for their service.
+
+    <a class="selflink" href="#section-3C" id="section-3C">C. Introductions</a>
+
+     Each Director introduced themself to the Board.
+
+    <a class="selflink" href="#section-3D" id="section-3D">D. Board List Communications</a>
+
+     The Board mailing list has been suffering from high volume with
+     varying topics that have been challenging for subscribers to
+     keep abreast of, particularly as the vast majority of
+     participants are volunteers. Some new Directors and list
+     followers (for example PMC Chairs, for whom subscription is
+     required) have been surprised by the volume of the list traffic.
+
+     Shane pointed out that how we choose to communicate on some
+     mailing lists may be more problematic than the topics
+     themselves.
+
+     There was consensus that successful Boards of Directors are ones
+     that focus on strategic details and not on operations.
+
+     To protect our existing communities, it has been suggested that
+     the Board's list discussions remain focused on items that need
+     specific attention from the Board, and to redirect other issues
+     that can be addressed elsewhere, for example: Operations.
+
+     Scaling back list volume and how to best handle items that
+     require longer-term discussion still need to be addressed. The
+     need to remain focused without dismissing issues brought forth
+     to the Board, and the style of some communications are of
+     particular concern. We need to remain aware that some
+     participants interpret the tone of some messages in a particular
+     way doesn&rsquo;t mean that others are having the same experience.
+
+     Several future discussion items 8D - 8G were put on the next
+     meeting  agenda to work on improvements in board list
+     communications.
+
+    <a class="selflink" href="#section-3E" id="section-3E">E. Apache Project Leadership</a>
+
+     Joan opened the discussion if we should expect PMC members to be
+     held to a higher standard than other members of the community,
+     with PMC Chairs even more so. That is, do people look to the
+     Board and Directors or executive officers for cues on how to
+     behave?  If so, should we  work on documenting expected
+     behaviors from directors?
+
+     Rich shared that the same discussion took place a year ago, with
+     no consensus reached.
+
+     At times, discussions on-list or disagreement in position are
+     being interpreted as hostile.  Several list participants also
+     expressed surprise at the volume of email on the board's list.
+
+     Daniel stated that those who wish to express non-popular
+     opinions should be able to do so freely.
+
+    <a class="selflink" href="#section-3F" id="section-3F">F. Board Votes And Consensus</a>
+
+     Discussion opened about how using voting to solve an issue is
+     often seen  as a failure of consensus (i.e., non-unaminous votes
+     seem to be avoided).
+
+     Historically, the Board has believed that if a vote is not
+     unanimous, it indicates that consensus has not been reached,
+     therefore further discussion may still be necessary.
+
+     Suggestion: the Board could utilize +0 and -0 votes (expressing
+     an acceptance of a position without fully agreeing/disagreeing),
+     despite that Delaware corporate law does not recognize votes like
+     that, but only has yes, no, or abstain.
+
+     Unlike other foundations, once the ASF Board has voted on
+     something, speaks in one voice and all directors commit to support
+     the decision within the Foundation regardless of their individual
+     votes. There were many nods of agreement to this.
+
+     There was a thorough discussion of of both the historical tendency
+     of past boards to avoid non-unanimous votes, along with ideas of
+     how we can make board-level decisions more efficient while
+     respectfully allowing dissenting voices a chance to be heard and
+     debated.
+
+     Myrle requested that we do not be normative on the meaning of &ldquo;no&rdquo;
+     and &ldquo;abstain&rdquo; votes; this was moved forward as a future discussion
+     item for documenting how directors express formal votes, both
+     during a meeting  and in our formal published minutes.
+
+     While some sort of consensus is needed on this topic, it doesn't
+     solve the communication issue. We had a discussion regarding possible
+     separation of public and private minutes with respect to votes as
+     well as the canonical meaning of said votes. Tom confirmed from DE
+     law that the identities of who-voted-what is not required to be
+     public. The minutes, however, should indicate if a director
+     revised the resolution themself or if a director dissents from
+     the vote being conducted at all (e.g., a point of order over the
+     voting process).
+
+     Craig suggested that we use alternate venues for directors to
+     express disagreement and dissenting views such as the board@ and
+     members@ mailing lists.
+
+     David shared subscriber statistics for the board@ mailing list.
+     The trend shows that the subscriber count has been consistently
+     increasing, with a handful of unsubscriptions within a single
+     month. These figures  do not reflect any subscribers who may
+     simply filter out these emails.
+
+    <a class="selflink" href="#section-3G" id="section-3G">G. Documentation</a>
+
+     Greg suggests adding a highlights section to Infrastructure board
+     reports of notable changes affecting either projects or operations
+     areas.
+
+     * Action-Item: Greg/David to update monthly Infrastructure board
+     report format.
+
+     Matt suggests a form email for new directors similar to the new
+     PMC chairs email with how-to information. This should likely be
+     emailed  from the outgoing Chairperson each year.
+
+     Craig suggests updating the ICLA form to use given name and family
+     name fields to help reduce confusion in the ordering of names from
+     various languages.
+
+     * Action-Item: Joan to improve documentation on how Code of
+     Conduct violations are resolved.
+
+    <a class="selflink" href="#section-3H" id="section-3H">H. Bill Payment Processing</a>
+
+     Myrle notes that our current bill pay workflow combined with our
+     current accounting roles has created a situation in which it is
+     difficult for the Treasurer to check that all outstanding bills
+     are being paid.  This will be brought back to the list for action.
+
+    <a class="selflink" href="#section-3I" id="section-3I">I. Executive Session</a>
+
+     There was a 30 minute executive session from 12:00PM to 12:30PM.
+     All Directors were present along with the Secretary.
+
+    <a class="selflink" href="#section-3J" id="section-3J">J. Monthly Board Meeting</a>
+
+     At 12:30PM the normal monthly May 2019 Board meeting took place.
+     The agenda and minutes for this meeting will be published 
+     after the usual board review.
+
+     The monthly meeting adjourned at 1:45 PM. This was followed 
+     by a one hour break.
+
+    <a class="selflink" href="#section-3K" id="section-3K">K. President and EVP Discussion on Operations</a>
+
+     Sam noted that we shouldn't get hung up on the word "operations"
+     in terms of describing various non-project officers doing work.
+     Notifications from Operations to the Board need to be proactive 
+     and broken out clearly in reports. Operations is empowered to do 
+     things within their specific areas of responsibility on their 
+     own if necessary.
+
+     We like to follow the principle of least astonishment. Mistakes
+     will be made, and are expected.
+
+    H. Five Year Strategic Plan
+
+     With a new board we discussed updates to director sheperds to:
+       https://www.apache.org/board/plan.html 
+
+     @Myrle @Shane: help Rich with the Conferences section
+
+     @Daniel: add topic on paid fundraising position.
+
+     @Joan: Help shepherd the governance and PMC lifecycle sections.
+
+     @Tom: Help shepherd the financial aspects.
+
+     @Gris: Author proposals for diversity and inclusion.
+
+     @Myrle: Make sure every current director has access to the asf-p wiki.
+
+     @Greg: Make sure all current directors have write access to
+     https://www.apache.org/board/ source repository.
+
+     @Matt: Start thread about ASF policies page to help with Incubator.
+
+ <a class="selflink" href="#section-4" id="section-4">4. Recess</a>
+
+    The meeting was recessed at 5:00 p.m. (Central) until the following day,
+    16 May 2019, at 9:00 a.m. (Central), at the same location.
+
+ <a class="selflink" href="#section-5" id="section-5">5. Reconvene</a>
+
+    The meeting was reconvened on 16 May 2019 at 9:10 a.m. (Central) and
+    began as soon thereafter that a sufficient attendance to constitute a
+    quorum was recognized by the Vice Chairman.
+
+ <a class="selflink" href="#section-6" id="section-6">6. Roll Call</a>
+
+    Directors Present:
+
+        Rich Bowen
+        Shane Curcuru
+        Myrle Krantz
+        Daniel Ruggeri
+        Craig L Russell
+        Roman Shaposhnik
+        Joan Touzet
+        Danny Angus joined 9:36
+
+    Directors Absent:
+
+        none
+
+    Executive Officers Present:
+
+        David Nalley
+        Tom Pappas
+        Sam Ruby
+        Matt Sicker
+
+    Executive Officers Absent:
+
+        Ross Gardler
+        Ulrich St&auml;rk
+
+    Guests:
+
+        Robin Anil
+        Brian Fitzpatrick
+        Sally Khudairi
+        Greg Stein joined 9:29
+
+  7. Discussion Items
+
+     A. The Board accepted the resignations of Phil Steitz and
+        Jim Jagielski by general consent.
+
+     B. Roman suggested we fill the two vacant director positions before
+        choosing the new chair. He proposed that Vice Chairman Shane
+        continue as the acting chair.
+
+     C. A question was raised whether or not we can choose a chair that
+        is not a director, though no action was taken on this.
+
+     D. To fill the vacant director seats, the Board first considered the
+        runners up in the most recent election. The Board appointed Danny
+        Angus to the board of directors by general consent. As there were
+        no other runners up, the Board postponed discussion of filling 
+        the remaining director seat until Danny could join the meeting.
+
+     E. Daniel gave an explicit vote of confidence in Sam Ruby as
+        President; there were several concurrences.
+
+     F. The Board welcomed Danny Angus as Director who joined the
+        meeting via telephone.
+
+     G. The Board declined to make any further officer changes, noting 
+        that David Nalley had been appointed EVP during the May meeting.
+
+     H. Joan volunteered to run small event funding.
+
+     I. The Board further considered Directors from the previous term
+        to fill the remaining board seat. After considerations and 
+        contact with candidates, the Board appointed Ted Dunning to the 
+        board of directors by general consent.
+
+     J. Roman complimented Infrastructure about the smooth transition 
+        of many project repositories from SVN to GitHub.
+
+  8. Adjournment
+
+     Adjourned at 10:50 a.m. (Central)
+------------------------------------------------------
+End of minutes for the May 15-16, 2019 board meeting.
+
+</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

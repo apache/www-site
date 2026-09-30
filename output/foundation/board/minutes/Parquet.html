@@ -1,0 +1,2692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Parquet | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Parquet';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Parquet';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Parquet</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="parquet">Parquet<a class="headerlink" href="#parquet" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-06-19</td>
+<td><a href="2024/board_minutes_2024_06_19.html#section-7F">Appointed Julien Le Dem</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2021-05-19</td>
+<td><a href="2021/board_minutes_2021_05_19.html#section-7A">Appointed Xinli Shang</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2015-04-22</td>
+<td><a href="2015/board_minutes_2015_04_22.html#section-7D">Appointed Julien Le Dem</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2015-04-22</td>
+<td><a href="2015/board_minutes_2015_04_22.html#section-7D">Establish the Apache Parquet Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-BI">2026-04-15</a> &mdash; Julien Le Dem<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+Parquet consists of a format specification (the Parquet format) and several
+implementations, one of which (Parquet Java) is developed directly under the
+umbrella of the Apache Parquet project. Several implementations such as
+Parquet C++, Parquet Go, and Parquet Rust are developed as part of the Apache
+Arrow project.  Non-Apache implementations also exist, some of them closed
+source.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (11 years ago)
+There are currently 40 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is 5:4.
+
+Community changes, past quarter:
+- Andrew Lamb was added to the PMC on 2026-01-20
+- No new committers. Last addition was Andrew Lamb on 2025-09-30.
+
+## Project Activity:
+Releases:
+Parquet-Java
+  1.16.0 was released on 2025-09-03.
+  1.15.2 was released on 2025-05-01.
+Parquet-Format
+  2.12.0 was released on 2025-08-28.
+Parquet-Go:
+  Arrow GO-18.5.2 was released on 2026-03-04.
+  Arrow GO-18.5.1 was released on 2026-01-26.
+Parquet-Rust:
+  Arrow RS-58.0.0 was released on 2026-02-23.
+  Arrow RS-57.3.0 was released on 2026-02-06.
+  Arrow RS-57.2.0 was released on 2026-01-11.
+Parquet-Cpp:
+  Arrow 23.0.1 was released on 2026-02-16.
+  Arrow 23.0.0 was released on 2026-01-18.
+(Note that Parquet Go, Rust and Cpp implementations are part of the Arrow code
+ base and released with Arrow. Parquet Go&rsquo;s and Parquet Rust&rsquo;s governance is
+managed by the Arrow PMC)
+
+We published two blog posts to highlight recent additions to the format:
+  Geospatial types:
+https://parquet.apache.org/blog/2026/02/13/native-geospatial-types-in-apache-parquet/
+  Variant type:
+https://parquet.apache.org/blog/2026/02/27/variant-type-in-apache-parquet-for-semi-structured-data/
+
+Upcoming community meetups:
+  in Seattle: scheduled for May
+  In Paris: in the planning phase.
+
+Work in progress:
+  New encoding POCs in progress:
+    ALP: We are finalizing implementations and cross compatibility testing
+    FSST: Active proposal, still finalizing reviews with the community. FSST
+          PoC
+implementation is ready.
+    PFOR: initial PoC and discussion started.
+  New flatbuffer based metadata: finalizing the spec.
+  Introducing IEEE 754 total order and nan_count to handle NaNs in statistics
+    Java and Rust PoCs ready
+  Discussion of storing columns in separate Parquet files has moved to the
+Iceberg project.
+  An independent project is building a fast Parquet parser in java without
+  Hadoop dependencies:
+  https://www.morling.dev/blog/hardwood-new-parser-for-apache-parquet/
+
+## Community Health:
+Discussions are regularly happening on the mailing list, in PRs/Issues on
+Github and on a regular sync meeting held on zoom (notes are posted on the list)
+https://reporter.apache.org/chi.py#parquet
+Chi for Apache Parquet: Super Healthy (9.60)</pre>
+<h3 id="2026-01-21"><a href="2026/board_minutes_2026_01_21.html#attachment-BE">2026-01-21</a> &mdash; Julien Le Dem<a class="headerlink" href="#2026-01-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+Parquet consists of a format specification (the Parquet format) and several
+implementations, one of which (Parquet Java) is developed directly under the
+umbrella of the Apache Parquet project. Several implementations such as
+Parquet C++, Parquet Go, and Parquet Rust are developed as part of the Apache
+Arrow project.  Non-Apache implementations also exist, some of them closed
+source.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (11 years ago)
+There are currently 40 committers and 31 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Fokko Driesprong on 2025-01-23.
+- No new committers. Last addition was Andrew Lamb on 2025-09-30.
+
+## Project Activity:
+Parquet Java 1.16.0 was released on 2025-09-03.
+        Java 1.17.0 was released on 2026-01-13.
+Parquet Format 2.12.0 was released on 2025-08-28.
+Parquet rust (part of arrow-rust): Arrow RS-57.2.0 was released on 2026-01-11.
+Parquet cpp (part of arrow-cpp): Arrow 22.0.0 was released on 2025-10-24.
+Parquet go (part of arrow-go): Arrow GO-18.5.0 was released on 2025-12-12
+
+Work in progress:
+ - New encoding POCs in progress:
+    ALP: The spec is ready for review. Numbers from the evaluation are strong.
+    FSST: Active proposal, currently being finalized by the community.
+      FSST PoC implementation is ready,
+      we should be able to move forward to the implementation stage in ~2 weeks
+      after the community review.
+    PFOR: initial PoC and discussion started
+    New discussion started on supporting composite encodings in Parquet:
+      Active proposals and benchmarks are released,
+      currently being reviewed by the community.
+ - New flatbuffer based metadata: spec in review
+
+## Community Health:
+Discussions are regularly happening on the mailing list, in PRs/Issues on
+Github and on a regular sync meeting held on zoom (notes are posted on the list)
+https://reporter.apache.org/chi.py#parquet
+Chi for Apache Parquet: Healthy (7.96)</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-AZ">2025-11-19</a> &mdash; Julien Le Dem<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>Parquet Report November 2025
+
+## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+Parquet consists of a format specification (the Parquet format) and several
+implementations, one of which (Parquet Java) is developed directly under the
+umbrella of the Apache Parquet project. Non-Apache implementations also exist,
+some of them closed source.
+
+## Project Status:
+Current project status: Ongoing
+Recent addition of Variant and geo types.
+Ongoing work for addition of new SIMD/GPU friendly encodings like ALP and FSST
+Issues for the board: none
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (11 years ago)
+There are currently 40 committers and 31 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Fokko Driesprong on 2025-01-23.
+- Andrew Lamb was added as committer on 2025-09-30
+
+## Project Activity:
+Recent releases:
+Java 1.16.0 was released on 2025-09-03.
+Format 2.12.0 was released on 2025-08-28.
+1.15.2 was released on 2025-05-01.
+
+In particular we recently added support for:
+- the new Variant type
+- geo related types.
+
+Ongoing projects for addition of:
+- ALP encoding for floating points
+- FSST encoding for strings
+- flatbuffer based footer
+
+## Community Health:
+The community is collaborating well on adding new functionality to the project
+and integrating them in the broader ecosystem of vendors.
+Healthy discussions on the mailing list and collaboration in regular online
+syncs.
+Website updates are happening, focusing on community and broader ecosystem</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#section-6BH">2025-10-15</a> &mdash; Julien Le Dem<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-07-16"><a href="2025/board_minutes_2025_07_16.html#attachment-BK">2025-07-16</a> &mdash; Julien Le Dem<a class="headerlink" href="#2025-07-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+Parquet consists of a format specification (the Parquet format) and several
+implementations, one of which (Parquet Java) is developed directly under the
+umbrella of the Apache Parquet project. Non-Apache implementations also exist,
+some of them closed source.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Parquet was founded 2015-04-22 (10 years ago)
+There are currently 39 committers and 31 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Fokko Driesprong on 2025-01-24.
+- No new committers. Last addition was Xuwei Fu on 2024-07-11.
+
+## Project Activity:
+
+Current work:
+ - Int96 timestamp deprecation discussion
+ - Variant type implementation is ongoing and progressing well
+ - Interval Type discussion
+ - Work in progress on defining the process to accept new Encodings with a
+   goal to add new numeric encodings
+ - Work in progress on defining a new metadata footer format.
+ - Work in progress to define floating point decimal data type
+ - Geo Types in progress
+
+Recent releases:
+- parquet-java 1.15.2 was released on 2025-05-01.
+- parquet-Format 2.11.0 was released on 2025-03-23.
+- parquet-java 1.15.1 was released on 2025-03-16.
+
+## Community Health:
+Discussions are regularly happening on the mailing list, in PRs/Issues on
+Github and on a regular sync meeting held on zoom (notes are posted on the list)</pre>
+<h3 id="2025-04-16"><a href="2025/board_minutes_2025_04_16.html#attachment-BC">2025-04-16</a> &mdash; Julien Le Dem<a class="headerlink" href="#2025-04-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+Parquet consists of a format specification (the Parquet format) and several
+implementations, one of which (Parquet Java) is developed directly under the
+umbrella of the Apache Parquet project. Non-Apache implementations also exist,
+some of them closed source.
+
+
+## Project Status:
+Current project status: Ongoing
+
+Multiple features involving coordination between multiple projects (Iceberg,
+Spark, Arrow, ...) are currently actively worked on. (see Project Activity)
+
+Issues for the board: None
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (10 years ago)
+There are currently 39 committers and 31 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- Fokko Driesprong was added to the PMC on 2025-01-23
+- No new committers. Last addition was Xuwei Fu on 2024-07-11.
+
+## Project Activity:
+Recent releases:
+- Format 2.11.0 was released on 2025-03-23.
+- 1.15.1 was released on 2025-03-16.
+- 1.15.0 was released on 2024-12-02.
+
+Current efforts:
+ - improve Parquet footer metadata using Flatbuffers. This has been a bit on
+   hold but is an important project we expect to resume soon.
+ - Define a Variant type based on the work from the Spark and Iceberg
+   projects. This is has been actively worked on and involves collaboration
+   across multiple projects.
+ - Add Geometry and Geography types. This is also actively been worked on and
+   progressing steadily.
+ - Defining new encodings: there is interest in the community and we're
+   defining a process to select new encodings so that we can make improvements
+   to the format in a sustainable way that is widely adopted in the ecosystem.
+
+## Community Health:
+Discussions are regularly happening on the mailing list, in PRs/Issues on
+Github and on a regular sync meeting held on zoom (notes are posted on the list)</pre>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#attachment-BD">2025-01-15</a> &mdash; Julien Le Dem<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>Parquet Report Jan 2025
+## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+Parquet consists of a format specification (the Parquet format) and several
+implementations, one of which (Parquet Java) is developed directly under the
+umbrella of the Apache Parquet project. Non-Apache implementations also exist,
+some of them closed source.
+
+## Project Status:
+Current project status: Ongoing
+ - improve Parquet footer metadata using Flatbuffers.
+ - Define a Variant type based on the work from the Spark project
+ - Add Geometry types
+
+## Issues for the board: none
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (10 years ago) There are currently 39
+committers and 30 PMC members in this project. The Committer-to-PMC ratio is
+roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Antoine Pitrou on 2024-07-17.
+- No new committers. Last addition was Xuwei Fu on 2024-07-11.
+
+## Project Activity:
+Recent Parquet Java releases:
+1.14.3 was released on 2024-10-05.
+1.14.2 was released on 2024-08-28.
+1.14.1 was released on 2024-06-16.
+
+Other Parquet open source implementations are released on their own basis by
+their respective Apache projects (notably Arrow C++, Arrow Rust, Arrow Go).
+
+- The Variant type spec is fairly close to being complete and the shredding spec
+is being finalized. Outstanding discussion related to whether we should have
+undefined behavior or not in the presence of incorrect shredding. We need an
+owner for driving the implementation of a second implementation of the spec
+besides parquet-java. The two main candidates are either C++ (in Arrow/cpp) or
+Rust (in arrow-rs). https://github.com/apache/arrow-rs/issues/6736
+
+- Parquet footer improvement experimentations to be further discussed. The POC
+for the new footer is in progress. Some of the metadata removed for
+compactness is needed by some readers. We need to iterate to solve this.
+https://github.com/apache/arrow/pull/43793
+
+- Geometry type: The main discussion is happening in the Iceberg ticket.
+ Follow up work in Parquet is expected to come from the conclusions of that
+ discussion. Iceberg Geometry/Geography type PR:
+ https://github.com/apache/iceberg/pull/10981 Parquet Geometry type PR:
+ https://github.com/apache/parquet-format/pull/240
+
+ ## Community Health: Healthy community. Regular discussions are held:
+- on the mailing list and github
+- in a recurring bi-weekly online meeting open to all and notes are posted on
+  the mailing list.</pre>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#attachment-BI">2024-10-16</a> &mdash; Julien Le Dem<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+## Project Status:
+Current project status: Ongoing
+ - improve Parquet footer metadata using Flatbuffers.
+ - Define a Variant type based on the work from the Spark project
+ - encryption feature improvements
+ - new geometry logical type
+Issues for the board: none
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (9 years ago)
+There are currently 39 committers and 30 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- Antoine Pitrou was added to the PMC on 2024-07-17
+- Micah Kornfield was added to the PMC on 2024-07-17
+- No new committers. Last addition was Xuwei Fu on 2024-07-11.
+
+## Project Activity:
+There are a couple ongoing projects in the community. Highlighting two in
+particular.
+
+Improved metadata footer:
+ - the mechanism for replacing the existing footer in a backwards compatible
+   way with a transition period is approved
+ - the new footer in flatbuffers format is under POC. Parquet users are
+   encouraged to donate anonymized footers to test performance on real-life
+   metadata.
+
+New Variant type:
+ - The Parquet community as agreed on principle to adopt the binary format
+   defined in the Spark community
+ - The spec is being iterated on as part of the parquet-format repo
+ - implementations will be contributed as well
+ - a columnar shredding algorithm is also under discussion
+
+New geometry type:
+- Two PoC (java and c++) implementations are finished
+- The spec proposal has reached consensus from other communities (GeoParquet,
+  Sedona, Iceberg)
+- Parquet community is finalizing the spec and hopefully will be released with
+  Iceberg V3 together.
+
+## Community Health:
+Healthy community. Regular discussions are held:
+- on the mailing list
+(traffic is back to normal after a surge of discussions around the start of
+the V3 effort)
+- in a recurring bi-weekly online meeting open to all and notes are posted
+on the mailing list.</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#attachment-BH">2024-07-17</a> &mdash; Julien Le Dem<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+## Project Status:
+Current project status: Parquet is an ongoing, fairly mature project. As a file
+format, new features are added relatively slowly as backward compatibility is
+required. There is an increase of activity towards making changes to
+improve the format under the "Parquet V3" label (see project activity below).
+Issues for the board: none
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (9 years ago)
+There are currently 38 committers and 28 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- Gang Wu was added to the PMC on 2024-05-10
+- No new committers. Last addition was Gang Wu on 2023-02-28.
+- Julien Le Dem is now the PMC chair. Thank you Xinli for your service!
+
+## Project Activity:
+- Discussions on adding Parquet extension support: (Parquet extensions:
+https://docs.google.com/document/d/1KkoR0DjzYnLQXO-d0oRBv2k157IZU0_injqd4eV4WiI/edit).
+ The end goal is to allow fast iteration for new features and
+  accelerate innovation.
+
+- Adding support for geo data types in Parquet. This is a feature that
+  progresses in the wider Open Source data ecosystem
+(including in Iceberg for example).
+
+- There are discussions to clarify the process for adopting new features for
+  parquet-format and release for Parquet Java
+  https://lists.apache.org/thread/nq7n6pbp222txrfo232ybgpvlvpmykbp
+
+- "Parquet V3":
+   parquet-format 2.10.0 was released on 2023-11-20
+   There are a few discussions under the "Parquet V3" label. I
+   put this in quotes as the goal is not to make a major incompatible release
+   but instead to add functionality or change the format in a backwards
+   compatible way in a few areas:
+  - Improve footer metadata format to improve wide schemas access: Wide
+    schemas are schemas with many columns (1000s. 10,000s or more) Currently,
+    the footer is one thrift data structure. This means that when reading a
+    few columns of a very wide file, one must scan all the columns' metadata
+    to read the few interesting columns. When the metadata is large, this is
+    significant overhead. Current discussion includes splitting the thrift
+    metadata or using flatbuffers (like the Arrow project). In particular this
+    requires a mechanism to add a new footer in a way that doesn't break old
+    readers in the transition period.
+  - New encodings: In particular, encodings that compress better time series
+    or strings. Consensus is to add few encodings that will solve this well on
+    average. A few research papers on this topic have been mentioned.
+  - Cross validation: As the ecosystem has grown quite a bit since the initial
+    release of Parquet. There are discussions to introduce a new cross
+    compatibility testing framework to ensure various integrations in open
+    source or proprietary projects are compatible and respect the same
+    semantics. See https://github.com/apache/parquet-format/issues/441
+
+- The Parquet-MR has been renamed to Parquet-Java to better reflect what&rsquo;s in
+  the repository. Parquet-Java has done two releases: 1.14.0 in May 2024,
+  and 1.14.1 in June 2024.
+
+- Parquet C++ implementation location: A while back the Parquet C++ was moved
+  to the Arrow repo to ease dependency management between the 2 code bases.
+  The C++ language in particular makes cross repo dependencies difficult. This
+  has raised questions on whether the Parquet C++ code base should move back
+  to its own repo to clarify governance. The current consensus (across the
+  Parquet and Arrow PMCs) is to keep it as is because of technical
+  difficulties to move it without making C++ development across the two repo
+  painful.
+
+- Issue migration to GitHub: as issue tracking was being migrated for the
+  parquet-cpp codebase, moving other issues to GitHub added relatively little
+  overhead. We migrated 2485 past and current issues from Parquet Jira to
+  GitHub issue trackers. We strived to keep contents and metadata as close to
+  the originals as possible to minimize disruption to work of contributors and
+  keep the historical record of work. Comments, issue crosslinks, attachments,
+  versions, priorities and labels were preserved wherever possible. Authorship
+  is indicated with Jira and GitHub (where known) usernames. All issues for
+  Apache Parquet are now tracked in GitHub issue trackers of parquet-java,
+  parquet-format, parquet-testing, parquet-site and arrow (for parquet-cpp).
+
+- There is some effort to document the client feature compatibility matrix
+  across the ecosystem that is currently under discussion:
+  https://github.com/apache/parquet-site/pull/34
+
+## Community Health:
+There is a surge in email traffic linked to the "Parquet V3" discussion
+summarized above (~+300% on the dev list). This should sustain over the next
+few quarters as we make progress towards a V3.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-BG">2024-04-17</a> &mdash; Xinli Shang<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (9 years ago)
+There are currently 38 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- No new committers. Last addition was Gang Wu on 2023-02-28.
+
+## Project Activity:
+Recent releases:
+Format 2.10.0 was released on 2023-11-20.
+1.13.1 was released on 2023-05-18.
+MR-1.11.2 was released on 2021-10-06.
+
+## Community Health:
+dev@ had a 87% decrease in traffic (190 emails compared to 1436)
+issues@ had a 352% increase in traffic (661 emails compared to 146)
+Low number of issues or PRs are seen in past quarter.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-BQ">2024-01-17</a> &mdash; Xinli Shang<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop
+ecosystem
+
+## Project Status:
+Current project status: Ongoing Issues for the board: n/a
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (9 years ago) There are currently 38
+committers and 27 PMC members in this project. The Committer-to-PMC ratio is
+roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- No new committers. Last addition was Gang Wu on 2023-02-28.
+
+## Project Activity:
+Format 2.10.0 was released on 2023-11-20.
+1.13.1 was released on 2023-05-18. MR-1.11.2 was released on 2021-10-06.
+
+## Community Health:
+dev@parquet.apache.org had a 88% increase in traffic in the past quarter
+issues@parquet.apache.org had a big increase in traffic in the past quarter
+47 issues opened in JIRA, past quarter (17% increase)
+62 issues closed in JIRA, past quarter (195% increase)
+100 commits in the past quarter (100% increase)
+22 code contributors in the past quarter (100% increase)
+77 PRs opened on GitHub, past quarter (37% increase)
+86 PRs closed on GitHub, past quarter (79% increase)</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-BE">2023-10-18</a> &mdash; Xinli Shang<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (8 years ago)
+There are currently 38 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- No new committers. Last addition was Gang Wu on 2023-02-28.
+
+## Project Activity:
+Recent releases:
+MR-1.13.1 was released on 2023-05-18.
+MR-1.11.2 was released on 2021-10-06.
+MR-1.12.2 was released on 2021-10-06.
+
+## Community Health:
+dev@parquet.apache.org had 842 emails in the past quarter(-42% change)
+39 issues opened in JIRA, past quarter (-30% change)
+23 issues closed in JIRA, past quarter (-41% change)
+48 commits in the past quarter (-65% change)
+12 code contributors in the past quarter (-55% change)
+49 PRs opened on GitHub, past quarter (-46% change)
+46 PRs closed on GitHub, past quarter (-47% change)</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#attachment-BE">2023-07-19</a> &mdash; Xinli Shang<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Project Status:
+Current project status: green
+Issues for the board: no issues
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (8 years ago)
+There are currently 38 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- No new committers. Last addition was Gang Wu on 2023-02-28.
+
+## Project Activity:
+Recent releases:
+1.13.1 was released on 2023-05-18.
+MR-1.11.2 was released on 2021-10-06.
+MR-1.12.2 was released on 2021-10-06.
+
+## Community Health:
+dev@parquet.apache.org had a 28% decrease in traffic in the past quarter
+43 issues opened in JIRA, past quarter (-15% change)
+25 issues closed in JIRA, past quarter (-58% change)
+109 commits in the past quarter (37% increase)
+21 code contributors in the past quarter (-22% change)
+65 PRs opened on GitHub, past quarter (-4% change)
+68 PRs closed on GitHub, past quarter (17% increase)</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-BJ">2023-04-19</a> &mdash; Xinli Shang<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Issues:
+There was no issues found in the community.
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (8 years ago)
+There are currently 38 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- Gang Wu was added as committer on 2023-02-28
+
+## Project Activity:
+MR-1.13.0 was released on 2023-04-06.
+MR-1.12.3 was released on 2022-05-26.
+MR-1.12.2 was released on 2021-10-06.
+MR-1.11.2 was released on 2021-10-06.
+
+## Community Health:
+40 issues opened in JIRA, past quarter (81% increase)
+44 issues closed in JIRA, past quarter (238% increase)
+48 commits in the past quarter (242% increase)
+22 code contributors in the past quarter (100% increase)
+46 PRs opened on GitHub, past quarter (100% increase)
+40 PRs closed on GitHub, past quarter (100% increase)
+dev@parquet.apache.org had a 151% increase in traffic in the past quarter</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-BN">2023-01-18</a> &mdash; Xinli Shang<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Issues:
+No issues found
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (8 years ago)
+There are currently 37 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- No new committers. Last addition was Gidon Gershinsky on 2021-04-05.
+
+## Project Activity:
+Recent releases:
+MR-1.11.2 was released on 2021-10-06.
+MR-1.12.2 was released on 2021-10-06.
+MR-1.12.0 was released on 2021-03-25.
+
+## Community Health:
+dev@parquet.apache.org had a 65% decrease in traffic in the past quarter
+28 issues opened in JIRA, past quarter (-22% change)
+14 issues closed in JIRA, past quarter (40% increase)
+16 commits in the past quarter (-27% change)
+12 code contributors in the past quarter (-33% change)
+25 PRs opened on GitHub, past quarter (-24% change)
+22 PRs closed on GitHub, past quarter (-8% change</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-BG">2022-10-19</a> &mdash; Xinli Shang<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Issues:
+No issues found
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (7 years ago)
+There are currently 37 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- No new committers. Last addition was Gidon Gershinsky on 2021-04-05.
+
+## Project Activity:
+Recent releases:
+MR-1.11.2 was released on 2021-10-06.
+MR-1.12.2 was released on 2021-10-06.
+MR-1.12.0 was released on 2021-03-25.
+
+## Community Health:
+dev@parquet.apache.org had a 65 decrease in traffic
+37 issues opened in JIRA, past quarter (32% increase)
+9 issues closed in JIRA, past quarter (no change)
+23 commits in the past quarter (-41% change)
+17 code contributors in the past quarter (30% increase)
+34 PRs opened on GitHub, past quarter (21% increase)
+22 PRs closed on GitHub, past quarter (29% increase)</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-BG">2022-07-20</a> &mdash; Xinli Shang<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Issues:
+There is no issue found.
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (7 years ago)
+There are currently 37 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- No new committers. Last addition was Gidon Gershinsky on 2021-04-05.
+
+## Project Activity:
+MR-1.12.3 was released on 2022-05-26.
+MR-1.11.2 was released on 2021-10-06.
+MR-1.12.2 was released on 2021-10-06.
+MR-1.12.0 was released on 2021-03-25.
+
+## Community Health:
+dev@ had a 65% decrease in the past quarter (270 emails compared to 751)
+27 issues opened in JIRA, past quarter (no change)
+8 issues closed in JIRA, past quarter (-52% change)
+38 commits in the past quarter (18% increase)
+12 code contributors in the past quarter (20% increase)
+27 PRs opened on GitHub, past quarter (-20% change)
+17 PRs closed on GitHub, past quarter (-43% change</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#attachment-AW">2022-04-20</a> &mdash; Xinli Shang<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Issues:
+No issues found
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (7 years ago)
+There are currently 37 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gidon Gershinsky on 2021-11-23.
+- No new committers. Last addition was Gidon Gershinsky on 2021-04-05.
+
+## Project Activity:
+Recent releases:
+MR-1.11.2 was released on 2021-10-06
+MR-1.12.2 was released on 2021-10-06
+MR-1.12.0 was released on 2021-03-25
+New website parquet.apache.org was launched in March 2022
+
+## Community Health:
+25 issues opened in JIRA, past quarter (150% increase)
+18 issues closed in JIRA, past quarter (63% increase)
+30 commits in the past quarter (172% increase)
+10 code contributors in the past quarter (42% increase)
+32 PRs opened on GitHub, past quarter (190% increase)
+29 PRs closed on GitHub, past quarter (163% increase)
+dev@parquet.apache.org had a 65% decrease in traffic in the past quarter</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-BA">2022-01-19</a> &mdash; Xinli Shang<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Parquet is the creation and maintenance of software related to
+columnar storage format available to any project in the Apache Hadoop ecosystem
+
+## Issues:
+No issues found
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (7 years ago)
+There are currently 37 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- Gidon Gershinsky was added to the PMC on 2021-11-23
+- No new committers. Last addition was Gidon Gershinsky on 2021-04-05.
+
+## Project Activity:
+Recent releases:
+MR-1.11.2 was released on 2021-10-06.
+MR-1.12.2 was released on 2021-10-06.
+## Community Health:
+dev@parquet.apache.org had a 65% decrease in traffic in the past quarter
+9 issues opened in JIRA, past quarter (-75% change)
+11 issues closed in JIRA, past quarter (-45% change)
+7 commits in the past quarter (-85% change)
+7 code contributors in the past quarter (-53% change)
+11 PRs opened on GitHub, past quarter (-47% change)
+10 PRs closed on GitHub, past quarter (-54% change)</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-BM">2021-10-20</a> &mdash; Xinli Shang<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (6 years ago)
+There are currently 37 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Xinli Shang on 2020-11-09.
+- No new committers. Last addition was Gidon Gershinsky on 2021-04-05.
+
+## Project Activity:
+- Released parquet-mr 1.12.1 on 2021-09-13.
+- Adding high throughput column encryption rewriter.
+- Support native 'in' predicate in FilterAPI
+- Bug fixes
+
+## Community Health:
+Commit activity has dropped over the summer, with a
+decrease (-26%). The overall activities are lower than last quarter.
+We will see if it can regain in next quarter.</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-BF">2021-07-21</a> &mdash; Xinli Shang<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (6 years ago)
+There are currently 37 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Xinli Shang on 2020-11-09.
+- Gidon Gershinsky was added as committer on 2021-04-05
+
+## Project Activity:
+- define core features / compliance levels for different implementations of
+  parquet-format.
+- bug fixes
+- improvements related to ZSTD, INT96, and reliability
+
+## Community Health:
+The regained activity continues, although it is slightly down in June. It
+could be attributed to the coming of summer.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-BB">2021-04-21</a> &mdash; Julien Le Dem<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (6 years ago)
+There are currently 37 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Xinli Shang on 2020-11-09.
+- Gidon Gershinsky was added as committer on 2021-04-05
+
+## Project Activity:
+Latest release: MR-1.12.0 was released on 2021-03-25.
+main features:
+ - encryption
+ - bloom filter
+ - BYTE_STREAM_SPLIT encoding
+many bug fixes
+https://github.com/apache/parquet-mr/blob/master/CHANGES.md#version-1120
+
+## Community Health:
+Nice to see an increase in activity after the somewhat slower activity for
+the past year.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-BC">2021-01-20</a> &mdash; Julien Le Dem<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (6 years ago)
+There are currently 36 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- Xinli Shang was added to the PMC on 2020-11-09
+- No new committers. Last addition was Antoine Pitrou on 2020-05-21.
+
+## Project Activity:
+- bug fixes
+- improvements related to encryption feature
+- dependency maintenance updates
+
+## Community Health:
+Regain of activity after the pandemic slow down,
+in particular on the mailing list and contributors on github.</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#attachment-BA">2020-10-21</a> &mdash; Julien Le Dem<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (5 years ago)
+There are currently 36 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was G&aacute;bor Sz&aacute;dovszky on 2019-06-27.
+- No new committers. Last addition was Antoine Pitrou on 2020-05-21.
+
+## Project Activity:
+Ongoing efforts:
+ - encryption
+ - integrations improvements / bug fixes: (avro, thrift, protobuf)
+ - release
+
+## Community Health:
+ - Still lower activity at the moment. Possibly attributed to the pandemic.
+ - github activity is picking up.</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-BD">2020-07-15</a> &mdash; Julien Le Dem<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (5 years ago)
+There are currently 36 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was G&aacute;bor Sz&aacute;dovszky on 2019-06-27.
+- Antoine Pitrou was added as committer on 2020-05-21
+- Micah Kornfield was added as committer on 2020-05-21
+
+## Project Activity:
+Ongoing discussion regarding:
+ - encryption feature (now used in production at Uber)
+ - Hardware acceleration (in particular for compression)
+ - bug fixes
+ - next release
+
+## Community Health:
+- Somewhat lower activity this quarter that might be related to the ongoing
+  pandemic.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-BF">2020-04-15</a> &mdash; Julien Le Dem<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (5 years ago)
+There are currently 34 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was G&aacute;bor Sz&aacute;dovszky on 2019-06-27.
+- Xinli Shang was added as committer on 2020-03-12
+
+## Project Activity:
+Work in progress:
+- encryption
+- bloom filters
+- improvements to CLI
+working on release 1.11.1
+
+Recent releases:
+- Parquet Format 2.8.0 was released on 2020-01-13.
+- Parquet 1.11.0 was released on 2019-12-06.
+- Parquet Format 2.7.0 was released on 2019-09-29.
+
+## Community Health:
+JIRA and PRs are opened and resolved at a healthy pace
+discussions happening around: releases, encryption, bloom filters,
+CLI improvement</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#attachment-BB">2020-01-15</a> &mdash; Julien Le Dem<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (5 years ago)
+There are currently 33 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was G&aacute;bor Sz&aacute;dovszky on 2019-06-27.
+- No new committers. Last addition was Fokko Driesprong on 2019-06-25.
+
+## Project Activity:
+We released 1.11.0:
+ https://github.com/apache/parquet-mr/blob/master/CHANGES.md#version-1110
+In particular, it includes:
+ - column indexes.
+ - new logical types
+ - nanosecond precision timestamps
+also many bug fixes and dependencies updates.
+
+Still in progress: encryption
+
+Recent releases:
+1.11.0 was released on 2019-12-06.
+Format 2.7.0 was released on 2019-09-29.
+
+## Community Health:
+dev@parquet.apache.org had a 9% increase in traffic in the past quarter
+(624 emails compared to 569)
+We're closing tickets at a reasonable rate
+61 issues opened in JIRA, past quarter (17% increase)
+54 issues closed in JIRA, past quarter (8% increase)</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-BE">2019-10-16</a> &mdash; Julien Le Dem<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (4 years ago)
+There are currently 33 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was G&aacute;bor Sz&aacute;dovszky on 2019-06-27.
+- No new committers. Last addition was Fokko Driesprong on 2019-06-25.
+
+## Project Activity:
+- Format 2.7.0 was released on 2019-09-29.
+working towards a parquet-mr release to go with it.
+
+## Community Health:
+JIRA activity is fairly stable, tickets are opened and closed at a similar
+rate.
+- 51 issues opened in JIRA, past quarter (-21% decrease)
+- 46 issues closed in JIRA, past quarter (-4% decrease)
+there is a bit of activity in finalizing big efforts that have
+been in the work for a while (encryption, bloom filters)
+- 40 commits in the past quarter (21% increase)
+- 19 code contributors in the past quarter (72% increase)
+- 40 PRs opened on GitHub, past quarter (-16% decrease)
+- 49 PRs closed on GitHub, past quarter (40% increase)
+Nice exploration of floating point compression from the community.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-BC">2019-07-17</a> &mdash; Julien Le Dem<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Activity:
+Following up on activity from last report. We have recently added new
+committers and a PMC member. We are still working on releasing 1.10. There&rsquo;s
+been agreement on a plan to get there but is still slow moving.
+
+ ## Health report:
+The discussion volume on the mailing lists is stable.
+Tickets get created and closed at a reasonable pace.
+
+## PMC changes:
+
+ - Currently 25 PMC members.
+ - G&aacute;bor Sz&aacute;dovszky was added to the PMC on Fri Jun 28 2019
+
+## Committer base changes:
+
+ - Currently 33 committers.
+ - New commmitters:
+    - Fokko Driesprong was added as a committer on Tue Jun 25 2019
+    - N&aacute;ndor Koll&aacute;r was added as a committer on Tue Jun 25 2019
+
+## Releases:
+
+ - Last release was Format 2.6.0 on Tue Oct 02 2018
+
+## Mailing list activity:
+
+ - dev@parquet.apache.org:
+    - 238 subscribers (up 14 in the last 3 months):
+    - 693 emails sent to list (684 in previous quarter)
+
+
+## JIRA activity:
+
+ - 63 JIRA tickets created in the last 3 months
+ - 48 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#attachment-AZ">2019-04-17</a> &mdash; Julien Le Dem<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration. (Now as part of apache arrow)
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Activity:
+We have been working towards releasing parquet 1.11.0
+We have been slow at validating the release.
+This is dues in part to the scope of the release affecting the file
+format itself and warranting more scrutiny to ensure backwards compatibility.
+We are actively discussing how to improve our processes.
+Current actions considered:
+ - Clarify the vetting process for such releases.
+ - Simplify/Automate the release validation process.
+ - Review potential PMC candidates in our current contributors.
+
+## Health report:
+The discussion volume on the mailing lists is stable.
+Tickets get created and closed at a reasonable pace.
+
+## PMC changes:
+
+ - Currently 24 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Zoltan Ivanfi on Sun Apr 15 2018
+
+## Committer base changes:
+
+ - Currently 31 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Benoit Hanotte at Mon May 28 2018
+
+## Releases:
+
+ - Last release was Format 2.6.0 on Mon Oct 01 2018
+
+## Mailing list activity:
+
+ - email volume is stable, JIRA opened and closed at a similar pace
+
+ - dev@parquet.apache.org:
+    - 224 subscribers (up 5 in the last 3 months):
+    - 684 emails sent to list (517 in previous quarter)
+
+
+## JIRA activity:
+
+ - 66 JIRA tickets created in the last 3 months
+ - 65 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#attachment-BH">2019-01-16</a> &mdash; Julien Le Dem<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format for efficient
+analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+  definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+  integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+  bindings and arrow integration.
+
+## Issues:
+ No issue at this time
+
+## Activity:
+Current activity around: encryption Page indexing cutting a new release
+improvement on parquet-proto
+
+## Health report:
+The discussion volume on the mailing lists is stable. Tickets get created and
+closed at a reasonable pace.
+
+## PMC changes:
+
+ - Currently 24 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Zoltan Ivanfi on Sun Apr 15 2018
+
+## Committer base changes:
+
+ - Currently 31 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Benoit Hanotte at Mon May 28 2018
+
+## Releases:
+
+ - Last release was Format 2.6.0 on Mon Oct 01 2018
+
+## Mailing list activity:
+
+ - dev@parquet.apache.org:
+    - 216 subscribers (up 2 in the last 3 months):
+    - 529 emails sent to list (757 in previous quarter)
+
+
+## JIRA activity:
+
+ - 49 JIRA tickets created in the last 3 months
+ - 65 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-AZ">2018-10-17</a> &mdash; Julien Le Dem<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration.
+
+## Issues:
+  No issue at this time
+
+## Activity:
+As mentioned in the Arrow report:
+ - the Arrow and Parquet communities resolved by vote to merge their respective
+  C++ codebases in the Apache Arrow repository. This work was completed this
+  quarter.
+ - We now need to update the parquet-cpp repository accordingly.
+
+Current activity around:
+- encryption
+- Page indexing
+- Bug fixes
+
+## Health report:
+The discussion volume on the mailing lists is stable.
+Tickets get created and closed at a reasonable pace
+
+## PMC changes:
+- Currently 24 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Zoltan Ivanfi on Sun Apr 15 2018
+
+## Committer base changes:
+- Currently 31 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Benoit Hanotte at Mon May 28 2018
+
+## Releases:
+- CPP-1.5.0 was released on Wed Sep 19 2018
+- Format 2.6.0 was released on Mon Oct 01 2018
+
+## Mailing list activity:
+- dev@parquet.apache.org:
+    - 215 subscribers (up 7 in the last 3 months):
+    - 797 emails sent to list (880 in previous quarter)
+
+## JIRA activity:
+- 94 JIRA tickets created in the last 3 months
+- 55 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-BA">2018-07-18</a> &mdash; Julien Le Dem<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration.
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Activity:
+Progress on encryption functionality
+bloom filters discussions
+Page indexes implementation
+
+## Health report:
+The discussion volume on the mailing lists is increasing.
+ Tickets get created and closed at a reasonable pace
+
+## PMC changes:
+
+ - Currently 24 PMC members.
+ - Zoltan Ivanfi was added to the PMC on Mon Apr 16 2018
+
+## Committer base changes:
+
+ - Currently 31 committers.
+ - New commmitters:
+    - Benoit Hanotte was added as a committer on Mon May 28 2018
+    - Costi Muraru was added as a committer on Sat May 19 2018
+    - G&aacute;bor Sz&aacute;dovszky was added as a committer on Wed May 16 2018
+
+## Releases:
+
+ - 1.8.3 was released on Fri May 11 2018
+ - Format 2.5.0 was released on Wed Apr 18 2018
+
+## Mailing list activity:
+
+Steady activity
+
+ - dev@parquet.apache.org:
+    - 208 subscribers (up 3 in the last 3 months):
+    - 898 emails sent to list (875 in previous quarter)
+
+
+## JIRA activity:
+
+ - 77 JIRA tickets created in the last 3 months
+ - 61 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-BF">2018-04-18</a> &mdash; Julien Le Dem<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format for efficient
+analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+  definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+  integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+  bindings and arrow integration.
+
+## Issues:
+  No issue at this time
+
+## Activity:
+ - Statistics bug fixes
+ - ongoing votes for parquet-format and parquet-mr release
+ - ongoing votes for parquet-rust contribution
+ - parquet-proto improvements and new contributors
+
+## Health report:
+ The discussion volume on the mailing lists is increasing. Tickets get created
+ and closed at a reasonable pace
+
+## PMC changes:
+ - Currently 23 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Uwe Korn on Sun Mar 26 2017
+
+## Committer base changes:
+ - Currently 28 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Zoltan Ivanfi at Fri Oct 27 2017
+
+## Releases:
+ - CPP-1.4.0 was released on Mon Mar 05 2018
+
+## Mailing list activity:
+ - mailing list activity up this quarter
+ - dev@parquet.apache.org:
+    - 202 subscribers (up 5 in the last 3 months):
+    - 933 emails sent to list (573 in previous quarter)
+
+## JIRA activity:
+ - 77 JIRA tickets created in the last 3 months
+ - 54 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-BG">2018-01-17</a> &mdash; Julien Le Dem<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration.
+
+## Issues:
+  No issue at this time
+
+## Activity:
+Current activity around:
+Deprecating int96 timestamp
+Preparing for a release
+Supporting dot net integration
+Min max stats improvement
+Page indexing new features
+Bloom filters support
+
+## Health report:
+The discussion volume on the mailing lists is stable.
+Tickets get created and closed at a reasonable pace
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Uwe Korn on Sun Mar 26 2017
+
+## Committer base changes:
+
+- Currently 28 committers.
+- New commmitters:
+    - Lars Volker was added as a committer on Mon Oct 16 2017
+    - Zoltan Ivanfi was added as a committer on Fri Oct 27 2017
+
+## Releases:
+
+- CPP-1.3.1 was released on Fri Oct 27 2017
+- Format 2.4.0 was released on Sat Oct 21 2017
+
+## Mailing list activity:
+- dev@parquet.apache.org:
+    - 200 subscribers (up 12 in the last 3 months):
+    - 633 emails sent to list (432 in previous quarter)
+
+
+## JIRA activity:
+
+- 54 JIRA tickets created in the last 3 months
+- 41 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-BD">2017-10-18</a> &mdash; Julien Le Dem<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format for efficient
+analytics.
+
+## Issues:
+there are no issues requiring board attention at this time.
+
+## Activity:
+- Ongoing work to add Bloom Filters to parquet format. Discussion around the
+prototype and java&lt;-&gt;cpp interoperability
+- Prototype is ready for adding page offset metadata in the footer and using
+it for better push down. Ready to proceed with merging metadata.
+- compression with Brotli and Zstandard
+- Preparing a parquet-format release
+
+## Health report:
+- issues: tickets closed about at the same rate they are opened
+- mailing list email level is stable.
+
+## PMC changes:
+- Currently 23 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Uwe Korn on Sun Mar 26 2017
+
+## Committer base changes:
+- Currently 26 committers.
+- Deepak Majeti was added as a committer on Tue Aug 01 2017
+
+## Releases:
+
+- CPP-1.2.0 was released on Sun Jul 30 2017
+- CPP-1.3.0 was released on Sun Sep 24 2017
+
+## Mailing list activity:
+- activity stable since the last report
+
+- dev@parquet.apache.org:
+   - 188 subscribers (up 3 in the last 3 months):
+   - 468 emails sent to list (618 in previous quarter)
+
+
+## JIRA activity:
+- 74 JIRA tickets created in the last 3 months
+- 54 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-BF">2017-07-19</a> &mdash; Julien Le Dem<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description: Parquet is a standard and interoperable columnar file format
+for efficient analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration.
+
+## Issues: there are no issues requiring board attention at this time.
+
+## Activity:
+- Ongoing work to add Bloom Filters to parquet format. Discussion around the
+prototype and java&lt;-&gt;cpp interoperability
+- Ongoing prototype for adding page offset metadata in the footer and using it
+for better push down.
+- Preparing a patch level release of parquet-mr
+- Planning release 1.2.0 of parquet-cpp
+- activity around protocol buffer integration
+
+## Health report:
+- issues: tickets closed about at the same rate they are opened
+- mailing list email level is stable.
+
+## PMC changes:
+- Currently 23 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Uwe Korn on Sun Mar 26 2017
+
+## Committer base changes:
+- Currently 25 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Uwe Korn at Sun Sep 04 2016
+
+## Releases:
+- CPP-1.1.0 was released on Sun May 21 2017
+
+## Mailing list activity:
+- activity stable since the last report
+- dev@parquet.apache.org:
+   - 185 subscribers (up 8 in the last 3 months):
+   - 637 emails sent to list (638 in previous quarter)
+
+## JIRA activity:
+- 101 JIRA tickets created in the last 3 months
+- 91 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#attachment-AV">2017-04-19</a> &mdash; Julien Le Dem<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format for efficient
+analytics. Parquet has 3 sub-projects:
+- parquet-format: format reference doc along with thrift based metadata
+definition (used by both sub-projects bellow)
+- parquet-mr: java apis and implementation of the format along with
+integrations to various projects (thrift, pig, protobuf, avro, ...)
+- parquet-cpp: C++ apis and implementation of the format along with Python
+bindings and arrow integration.
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Activity:
+- We had our first parquet-cpp release (kudos Uwe and Wes!)
+- Several threads relating to time types and statistics.
+
+## Health report:
+We host regular public sync ups on hangout. Notes are sent to the mailing list
+and follow ups happen on JIRA and github pull requests. Recently we're also
+using google docs attached to JIRAs to drive the discussion.
+
+## PMC changes:
+- Currently 23 PMC members.
+- Uwe Korn was added to the PMC on Sun Mar 26 2017
+
+## Committer base changes:
+- Currently 25 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Uwe Korn at Sun Sep 04 2016
+
+## Releases:
+- 1.8.2 was released on Mon Jan 23 2017
+- CPP-1.0.0 was released on Mon Mar 13 2017
+
+## Mailing list activity:
+Some of the extra activity related to 1.8.2 release for spark, time types
+discussion, parquet-cpp release, statistics discussions.
+
+- dev@parquet.apache.org:
+   - 178 subscribers (up 2 in the last 3 months):
+   - 656 emails sent to list (418 in previous quarter)
+
+## JIRA activity:
+- 120 JIRA tickets created in the last 3 months
+- 90 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#attachment-AX">2017-01-18</a> &mdash; Julien Le Dem<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format
+for efficient analytics.
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Activity:
+- parquet-arrow integration has been added in parquet-cpp
+- We're preparing a 1.8.2 patch release for the Apache Spark project
+- We're preparing parquet-cpp 0.1: its first release (PARQUET-713)
+
+## Health report:
+Discussion is happening on the mailing list, JIRA and
+regular hangout sync up. Notes are sent to the mailing list.
+
+## PMC changes:
+- Currently 22 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Wes McKinney on Thu Sep 01 2016
+
+## Committer base changes:
+- Currently 25 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Uwe Korn at Sun Sep 04 2016
+
+## Releases:
+- 1.9.0 was released on Sun Oct 23 2016
+
+## Mailing list activity:
+- Activity on the mailing list is still relatively the same
+- JIRAS are resolved about at the same pace they are opened.
+
+- dev@parquet.apache.org:
+- 176 subscribers (up 3 in the last 3 months):
+- 452 emails sent to list (436 in previous quarter)
+
+## JIRA activity:
+- 81 JIRA tickets created in the last 3 months
+- 67 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#attachment-AR">2016-10-19</a> &mdash; Julien Le Dem<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>Report from the Apache Parquet committee [Julien Le Dem]
+
+## Description:
+Parquet is a standard and interoperable columnar file format for
+efficient analytics.
+
+## Issues:
+there are no issues requiring board attention at this time
+
+## Activity:
+The community has been converging toward a 1.9 release. The vote will start in
+the coming days. Discussion about better encoding and vectorization apis are
+ongoing.  The parquet-cpp repo has reached a stable state and should release
+soon. Integration with arrow-cpp is now in the parquet-cpp repo.
+
+## Health report:
+The PMC and committer list are growing. Discussion is happening on the mailing
+list, JIRA and regular hangout sync up. Notes are sent to the mailing list.
+
+## PMC changes:
+ - Currently 22 PMC members.
+ - Wes McKinney was added to the PMC on Thu Sep 01 2016
+
+## Committer base changes:
+ - Currently 25 committers.
+ - Uwe Korn was added as a committer on Sun Sep 04 2016
+
+## Releases:
+ - Last release was Format 2.3.1 on Thu Dec 17 2015
+ - parquet-mr 1.9.0 vote ongoing
+
+## Mailing list activity:
+ - Activity on the mailing list is still relatively the same
+ - JIRAS are resolved about at the same pace they are opened.
+
+ - dev@parquet.apache.org:
+    - 172 subscribers (up 9 in the last 3 months):
+    - 486 emails sent to list (394 in previous quarter)
+
+## JIRA activity:
+ - 85 JIRA tickets created in the last 3 months
+ - 74 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-07-20"><a href="2016/board_minutes_2016_07_20.html#attachment-AT">2016-07-20</a> &mdash; Julien Le Dem<a class="headerlink" href="#2016-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Parquet is a standard and interoperable columnar file format for
+efficient analytics.
+
+## Issues:
+there are no issues requiring board attention at this time
+
+ ## Activity:
+- Work on stabilizing master preparing for a release of parquet-mr (ByteBuffer)
+- encoding strategy experiments
+- Bytebuffer stabilization.
+- Brotli compression experiments
+- parquet-cpp development
+- discussion about vectorized reads and Apache Arrow integration
+
+ ## Health report:
+- JIRAs opened and closed at the same rate
+- email activity was more important last quarter due to parquet-cpp kickoff and discussions.
+
+ ## PMC changes:
+ - Currently 21 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Alex Levenson on Tue Apr 21 2015
+
+ ## Committer base changes:
+ - Currently 24 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Wes McKinney at Thu Mar 03 2016
+
+ ## Releases:
+ - Last release was Format 2.3.1 on Thu Dec 17 2015
+
+ ## Mailing list activity:
+Last quarter had more email activity dues to the kickoff of parquet-cpp
+- dev@parquet.apache.org:
+ - 163 subscribers (up 5 in the last 3 months):
+ - 427 emails sent to list (901 in previous quarter)
+
+ ## JIRA activity:
+ - 81 JIRA tickets created in the last 3 months
+ - 80 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#attachment-AU">2016-04-20</a> &mdash; Julien Le Dem<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Parquet is a standard and interoperable columnar file format for
+efficient analytics.
+
+## Issues:
+ there are no issues requiring board attention at this time
+
+## Activity:
+There is a surge of activity related to the development of the Parquet-cpp
+library.
+Initially Parquet had a java implementation as well as reference
+implementations for some encodings in C++. The C++ version is now being
+fully implemented. A new committer has been recently invited based on that
+work.
+
+## Health report:
+ The project is healthy. We have new contributors. Communication happens
+on the mailing list and on regular public hangout sync ups for which
+notes are published on the mailing list.
+
+## PMC changes:
+ - Currently 21 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Alex Levenson on Tue Apr 21 2015
+
+## Committer base changes:
+ - Currently 24 committers.
+ - Wes McKinney was added as a committer on Thu Mar 03 2016
+
+## Releases:
+ - Format 2.3.1 was released on Thu Dec 17 2015
+
+## Mailing list activity:
+   A surge of emails related to the development of parquet-cpp
+
+ - dev@parquet.apache.org:
+    - 152 subscribers (up 14 in the last 3 months):
+    - 940 emails sent to list (361 in previous quarter)
+
+## JIRA activity:
+ - 158 JIRA tickets created in the last 3 months
+ - 109 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#attachment-AV">2016-01-20</a> &mdash; Julien Le Dem<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   Apache Parquet is a general-purpose columnar storage format.
+
+## Issues:
+  there are no issues requiring board attention at this time
+
+## Activity:
+ All changes required by Apache Drill have been merged into Apache Parquet,
+ getting Drill off of its Parquet fork.  Releases are ongoing to allow Drill
+ to upgrade its dependencies.  Several efforts are ongoing to improve
+ vectorized reads from Java and C++ They involve collaboration of several
+ organizations.  Communication is happening in JIRA
+
+## Health report:
+  We have now a rotation to have someone responsible for answering JIRAs and
+  emails each week.  Level of ticket creation and resolution is about the
+  same, keeping opened tickets to a reasonable amount.  Typically user
+  activity shows up in the user lists of other projects depending on parquet
+  (drill, impala, presto, spark, ...)
+
+## PMC changes:
+
+ - Currently 21 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Alex Levenson on Tue Apr 21 2015
+
+## Committer base changes:
+
+ - Currently 23 committers.
+ - New commmitters:
+    - Cheng Lian was added as a committer on Wed Dec 02 2015
+    - Sergio Pe&ntilde;a was added as a committer on Wed Dec 02 2015
+
+## Releases:
+
+ - Parquet-Format 2.3.1 was released on Thu Dec 17 2015
+ - Parquet-mr 1.9.0 in preparation
+
+## Mailing list activity:
+
+ - dev@parquet.apache.org:
+    - 147 subscribers (up 17 in the last 3 months):
+    - 466 emails sent to list (396 in previous quarter)
+
+## JIRA activity:
+
+ - 40 JIRA tickets created in the last 3 months
+ - 36 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-10-21"><a href="2015/board_minutes_2015_10_21.html#attachment-AR">2015-10-21</a> &mdash; Julien Le Dem<a class="headerlink" href="#2015-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Apache Parquet is a general-purpose columnar storage format.
+## Issues:
+there are no issues requiring board attention at this time
+## Activity:
+- Bloom filters: need to finalize the design. Have use cases to validate it
+  (query execution, etc)
+ - Vectorized read API: refactoring of the code based on feedback.
+ - Using dict in filter push down: rework to have better code reuse.
+ - ByteBuffer: close to being merged.
+## Health report:
+The project is fairly stable with new features and
+compatibility testing underway.
+## PMC changes:
+- Currently 21 PMC members
+. - No new PMC members added in the last 3 months
+- Last PMC addition was Alex Levenson at Tue Apr 21 2015
+## LDAP changes:
+- Currently 21 committers and 21 committee group members.
+- No new changes to the committee group or committership since last report.
+## Releases:
+- 1.8.1 was released on Tue Jul 21 2015
+## Mailing list activity:
+- dev@parquet.apache.org:
+- 130 subscribers (up 13 in the last 3 months):
+- 367 emails sent to list (705 in previous quarter)
+## JIRA activity:
+- 53 JIRA tickets created in the last 3 months
+- 25 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-07-15"><a href="2015/board_minutes_2015_07_15.html#attachment-AS">2015-07-15</a> &mdash; Julien Le Dem<a class="headerlink" href="#2015-07-15" title="Permalink">&para;</a></h3>
+<pre>Apache Parquet is a general-purpose columnar storage format.
+
+## Activity:
+We're working towards a 1.8.0 release and merging the ByteBuffer PR (ZeroCopy
+HDFS reads) Our goal is to keep master in a releasable state and to do
+releases quickly.
+
+## Issues:
+- there are no issues requiring board attention at this time
+
+## LDAP committee group/Committership changes:
+- Currently 21 committers and 21 LDAP committee group members.
+- No new changes to the LDAP committee group or committership since last
+  report. Two new PMC members Alex Levenson and Daniel Weeks were added on Dec
+  28th 2014
+
+## Releases:
+- 1.7.0 was released on Mon May 18 2015
+- 1.8.0 is being voted on.
+
+## Mailing list activity:
+- dev@parquet.apache.org:
+- 116 subscribers (up 5 in the last 3 months):
+- 707 emails sent to list (722 in previous quarter)
+
+## JIRA activity:
+- 79 JIRA tickets created in the last 3 months
+- 64 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-06-17"><a href="2015/board_minutes_2015_06_17.html#attachment-AV">2015-06-17</a> &mdash; Julien Le Dem<a class="headerlink" href="#2015-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   Apache Parquet is a general-purpose columnar storage format.
+
+## Activity:
+We're working towards a 1.8.0 release and merging the ByteBuffer PR (ZeroCopy
+HDFS reads) Our goal is to keep master in a releasable state and to do
+releases quickly.
+
+## Issues:
+ there are no issues requiring board attention at this time
+
+## PMC/Committership changes:
+
+ - Currently 21 committers and 21 PMC members in the project.
+ - No new changes to the PMC or committership since last report. Two new PMC
+   members Alex Levenson and Daniel Weeks were added on Dec 28th 2014
+
+## Releases:
+
+ - 1.7.0 was released on Mon May 18 2015
+
+## Mailing list activity:
+
+ - dev@parquet.apache.org:
+
+    - 112 subscribers (up 12 in the last 3 months):
+    - 829 emails sent to list (459 in previous quarter)
+
+
+## JIRA activity:
+
+ - 91 JIRA tickets created in the last 3 months
+ - 57 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-05-20"><a href="2015/board_minutes_2015_05_20.html#attachment-AY">2015-05-20</a> &mdash; Julien Le Dem<a class="headerlink" href="#2015-05-20" title="Permalink">&para;</a></h3>
+<pre>Parquet is a columnar file format for Hadoop.
+
+## Project Status
+
+The project just graduated from the incubator and is voting on its first
+release as a TLP.  No issues to report.
+
+## Community
+
+ - Two new PMC members Alex Levenson and Daniel Weeks on Dec 28th 2014
+ - No new committer or PMC member since last report in April
+ - JIRA past 30 days: 30 created and 22 resolved as of May 18th
+https://issues.apache.org/jira/browse/PARQUET
+ - 114 subscribers to the dev mailing list as of May 18th
+ - emails on the dev list: Apr: 397, Mar: 319, Feb: 135, Jan: 112
+http://mail-archives.apache.org/mod_mbox/parquet-dev/
+ - commits: Apr: 84, Mar: 38, Feb: 47, Jan: 9
+http://mail-archives.apache.org/mod_mbox/parquet-commits/
+ - regular project sync ups are held on hangout.
+They are open to anyone and advertised on the dev mailing list
+notes are then published on the list as well
+ - several Parquet related presentations scheduled at the Hadoop summit in June
+http://2015.hadoopsummit.org/san-jose/agenda/
+
+# Community Objectives
+
+The community main objectives (not excluding other efforts also ongoing)
+ - Working towards merging the ByteBuffer access work
+ - Vectorized execution improvements (and integration with Apache Drill,
+   Apache Hive, Presto)
+ - Improving Projection and Predicate APIs
+ - Standardizing nested type representations (thrift and avro write-side)
+ - Improving high-level type specs (microsecond time/timestamp)
+
+## Releases
+
+ - Last releases:
+    - parquet-mr 1.6.0-incubating on Apr 12th:
+https://dist.apache.org/repos/dist/release/parquet/parquet-mr-1.6.0-incubating/
+    - parquet-mr 1.7.0 on May 18th (just voted):
+https://dist.apache.org/repos/dist/release/parquet/parquet-mr-1.7.0/
+ - Next release: a parquet-format release will happen soon.</pre>
+<h3 id="2015-04-22"><a href="2015/board_minutes_2015_04_22.html#parquet">2015-04-22</a> &mdash; in the Incubator's report<a class="headerlink" href="#2015-04-22" title="Permalink">&para;</a></h3>
+<pre>Parquet is a columnar storage format for Hadoop.
+
+Parquet has been incubating since 2014-05-20.
+
+Three most important issues
+
+- 1st releases toward org.apache Parquet 1.6.0 GA
+- Expanding the community and adding new committers
+- Ensuring timely code reviews by committers, developing reviewers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+- None at this time
+
+Latest Additions:
+
+* PMC addition:        None
+* Committer addition:  Dan Weeks and Alex Levenson (from last report)
+
+Issue backlog status since last report:
+
+* Created:   34
+* Resolved:  50
+
+Mailing list activity since last report:
+
+* dev      560 messages: 111 in Jan, 136 in Feb, and 313 in Mar
+
+How has the project developed since the last report?
+
+- Preparing last commits for the first parquet-mr release candidate
+- Planned parquet-mr 1.6.0 release schedule
+- ASF required changes to parquet-mr are finished
+- Released parquet-format 2.3.0, with org.apache packages
+- Parquet presentation at Strata 2015 San Jose and the Presto meetup
+
+Date of last release:
+
+- parquet-format 2.3.0 released 19 Feb
+- Not yet released: parquet-mr and parquet-cpp
+
+Signed-off-by:
+
+[ ](parquet) Todd Lipcon
+[X](parquet) Jake Farrell
+[X](parquet) Chris Mattmann
+[X](parquet) Roman Shaposhnik
+[ ](parquet) Tom White</pre>
+<h3 id="2015-01-21"><a href="2015/board_minutes_2015_01_21.html#parquet">2015-01-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2015-01-21" title="Permalink">&para;</a></h3>
+<pre>Parquet is a columnar storage format for Hadoop.
+
+Parquet has been incubating since 2014-05-20 .
+
+Three most important issues
+
+- Expanding the community and adding new committers
+- 1st releases toward org.apache Parquet 1.6.0 GA
+- Identifying how to ensure timely code reviews by committers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+- None at this time
+
+Latest Additions:
+
+* PMC addition:          None
+* Contributor addition:  Dan Weeks and Alex Levenson
+
+Issue backlog status since last report:
+
+* Created:   45
+* Resolved:  20
+
+Mailing list activity since last report:
+
+* dev      310 messages: 90 in Oct, 126 in Nov, and 94 in Dec
+
+How has the project developed since the last report?
+
+- Completed first release, Apache Parquet Format (incubating) 2.2.0
+- Established a by-law for adding committers
+- Added 2 new committers
+- Parquet presentation accepted for Strata San Jose
+
+Date of last release:
+
+- parquet-format released 14 November 2014
+- Not yet released: parquet-mr and parquet-cpp
+
+Signed-off-by:
+
+[ ](parquet) Todd Lipcon
+[X](parquet) Jake Farrell
+[X](parquet) Chris Mattmann
+[X](parquet) Roman Shaposhnik
+[ ](parquet) Tom White
+
+Shepherd/Mentor notes:
+
+Mailing lists are active; most mentors are active.</pre>
+<h3 id="2014-10-15"><a href="2014/board_minutes_2014_10_15.html#parquet">2014-10-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-10-15" title="Permalink">&para;</a></h3>
+<pre>Parquet is a columnar storage format for Hadoop.
+
+Parquet has been incubating since 2014-05-20 .
+
+Three most important issues
+
+- Expanding the community and adding new committers
+- 1st releases
+- Identifying how to ensure timely code reviews by committers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+- None at this time
+
+Latest Additions:
+
+* PMC addition:          N/A
+* Contributor addition:  N/A
+
+Issue backlog status since last report:
+
+* Created:   27
+* Resolved:  19
+
+Mailing list activity since last report:
+
+* dev      144 messages
+
+How has the project developed since the last report?
+
+- Attempted parquet-format release twice, next RC in early October.
+- Assembled tasks to complete for a parquet-mr release
+- New push-down filter API and task-side block metadata reading
+
+Date of last release:
+
+- No releases as of yet.
+
+Signed-off-by:
+
+[ ](parquet) Todd Lipcon
+[X](parquet) Jake Farrell
+[ ](parquet) Chris Mattmann
+[X](parquet) Roman Shaposhnik
+[X](parquet) Tom White</pre>
+<h3 id="2014-08-20"><a href="2014/board_minutes_2014_08_20.html#parquet">2014-08-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-08-20" title="Permalink">&para;</a></h3>
+<pre>Parquet is a columnar storage format for Hadoop.
+
+Parquet has been incubating since 2014-05-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Expanding the community and adding new committers
+2. 1st release
+3. Identifying how to ensure timely code reviews by committers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None at this time
+
+Latest Additions:
+
+* PMC addition:          N/A
+* Contributor addition:  N/A
+
+Issue backlog status since last report:
+
+* Created:   60
+* Resolved:  17
+
+Mailing list activity since last report:
+
+* dev      212 messages
+
+How has the project developed since the last report?
+
+* New commit workflow has been documented and commits have been
+increasing using the commit script.
+* Project website is posted: parquet.incubator.apache.org, working on
+moving more content from github hosting
+* Moved to issues.apache.org for all new issues
+* Planning first release of parquet-format and parquet-mr. Using
+parquet-format release to identify steps needed to release the
+larger projects (e.g., parquet-mr)
+* Adding documentation on reviews and contacts for specific modules
+
+Signed-off-by:
+
+[X](parquet) Jake Farrell
+[ ](parquet) Chris Mattmann
+[ ](parquet) Roman Shaposhnik
+[X](parquet) Tom White
+[X](parquet) Todd Lipcon
+
+Shepherd/Mentor notes:
+Mailing list has a healthy traffic, mostly bug reports. Mentors are
+active and participating in the community.</pre>
+<h3 id="2014-07-16"><a href="2014/board_minutes_2014_07_16.html#parquet">2014-07-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-07-16" title="Permalink">&para;</a></h3>
+<pre>Parquet is a columnar storage format for Hadoop.
+
+Parquet has been incubating since 2014-05-20 .
+
+Three most important issues
+
+- Finish bootstrapping project(completed), IP clearance (completed),
+initial website (in progress)
+- Expanding the community and adding new committers
+- 1st release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+- None at this time
+
+Latest Additions:
+
+* PMC addition:          N/A
+* Contributor addition:  N/A
+
+Issue backlog status since last report:
+
+* Created:   8
+* Resolved:  2
+
+Mailing list activity since last report:
+
+* @dev       69 messages
+
+How has the project developed since the last report?
+
+- All bootstrap tickets have been completed and status page updated
+  - Mailing lists created, Jira setup, Code imported
+- Jira issues starting to be imported to issues.apache.org
+- Website in the works and will be available soon, infra for this is
+all ready setup
+- Working on documenting contributing guide and committers workflow
+  - We have now setup the mechanisms to accept contributions through
+  the Apache Github and have already accepted one external contribution.
+
+Date of last release:
+
+- No releases as of yet.
+
+Signed-off-by:
+
+[X](parquet) Todd Lipcon
+[X](parquet) Jake Farrell
+[ ](parquet) Chris Mattmann
+[X](parquet) Roman Shaposhnik
+[X](parquet) Tom White</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#parquet">2014-06-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>Parquet is a columnar storage format for Hadoop.
+
+Parquet has been incubating since 2014-05-20 .
+
+Three most important issues
+
+  - Finish bootstrapping project, IP clearance, initial website
+  - Expanding the community and adding new committers
+  - 1st release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  - None at this time
+
+How has the community developed since the last report?
+
+  - All initial committers have submitted ICLAs and the accounts have been
+    created. The mailing lists have been setup and we are starting to use
+    them for communication.
+
+How has the project developed since the last report?
+
+  - We have setup the incubator status page and are waiting on the final
+    SGA to be sent in to start the code import (INFRA-7782)
+
+Date of last release
+
+  - No releases as of yet. Working through initial IP clearance.
+
+When were the last committers or PMC members elected?
+
+  - N/A, still bootstrapping the project.
+
+Signed-off-by:
+
+  [ ](parquet) Todd Lipcon
+  [X](parquet) Jake Farrell
+  [ ](parquet) Chris Mattmann
+  [X](parquet) Roman Shaposhnik
+  [X](parquet) Tom White</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

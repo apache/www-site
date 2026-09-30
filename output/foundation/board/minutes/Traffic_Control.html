@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Traffic Control | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Traffic Control';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Traffic Control';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Traffic Control</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="traffic-control">Traffic Control<a class="headerlink" href="#traffic-control" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-04-21</td>
+<td><a href="2021/board_minutes_2021_04_21.html#section-7A">Appointed Eric Friedrich</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2018-05-16</td>
+<td><a href="2018/board_minutes_2018_05_16.html#section-7D">Appointed David Neuman</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-10-15</td>
+<td><a href="2025/board_minutes_2025_10_15.html#section-7A">Terminate the Apache Traffic Control Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>2018-05-16</td>
+<td><a href="2018/board_minutes_2018_05_16.html#section-7D">Establish the Apache Traffic Control Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-BX">2025-08-20</a> &mdash; Eric Friedrich<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: At risk Issues for the board: Challenges getting
+sufficient review for PRs
+
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (7 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Abdulrahman Elawady on 2023-09-21.
+
+## Project Activity:
+Project is mostly dormant of new development. Two new bugfix PRs were opened
+by an contributor, but also did not receive reviews.
+
+## Community Health:
+Minimal mailing list traffic. Infrequent comments/questions on Slack channels,
+but these are mainly from users. Minimal PMC responses, its more often users
+helping users.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-BS">2025-05-21</a> &mdash; Eric Friedrich<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: Dormant
+Issues for the board: None
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (7 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Abdulrahman Elawady on 2023-09-21.
+
+## Project Activity:
+Minor project activity - almost no new development is ongoing.
+
+## Community Health:
+Slack channels have a few messages a week, we have a small but active user
+community.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-CA">2025-02-19</a> &mdash; Eric Friedrich<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: Dormant
+Issues for the board: None
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (7 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Abdulrahman Elawady on 2023-09-21.
+
+## Project Activity:
+Minimal Activity since the last release 8.0.2 release on Oct 2, 2024
+
+## Community Health:
+Discussion on both mailing lists and Slack channel is minimal. There are
+still several PMC members active and ready to engage on security fixes
+or releases if needed.</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-BW">2024-11-20</a> &mdash; Eric Friedrich<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: Dormant
+Issues for the board: None
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (6 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Abdulrahman Elawady on 2023-09-21.
+
+## Project Activity:
+Almost all new development has stopped on Traffic Control. There are
+occasional commits to keep CI jobs healthy and running. Most of the commit
+activity is automated commits such as build jobs and Github's dependabot.
+
+A reported security vulnerability (CVE-2024-45387) was fixed, resulting in
+a patch release - 8.0.2 on Oct 4, 2024
+
+
+## Community Health:
+Discussion on both mailing lists and Slack channel is minimal. There are
+still several PMC members active and ready to engage on security fixes
+or releases if needed.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-CC">2024-08-21</a> &mdash; Eric Friedrich<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: Dormant
+Issues for the board: None
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (6 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Abdulrahman Elawady on 2023-09-21.
+
+## Project Activity:
+Almost all new development has stopped on Traffic Control. There are
+occasional commits to keep CI jobs healthy and running. Most of the commit
+activity is automated commits such as build jobs and Github's dependabot.
+
+A few new small features have recently been driven/collaborated on by a newer
+contributor:
+- Grafana Dashboards to Scenes
+- Updated TSB ATS version to 9.2.4
+- Logfile cleanup
+
+The most recent release was 8.0.1 on April 3, 2024.
+
+## Community Health:
+Discussion on both mailing lists and Slack channel is minimal. There are
+still several PMC members active and ready to engage on security fixes
+or releases if needed.
+
+A newer contributor is becoming more active, having several features
+merged and providing reviews for others.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-BX">2024-05-15</a> &mdash; Eric Friedrich<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: Ongoing - Low activity
+Issues for the board: No issues for the board
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (6 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Abdulrahman Elawady on 2023-09-21.
+
+## Project Activity:
+
+New Development has mostly stopped, but there is a small amount of maintenance
+and bug fixing ongoing.
+
+April 3, 2024 - Traffic Control 8.0.1 was released. This was a patch release
+against our Jan 2024 8.0.0 major release. This fixed two small bugs in the
+Traffic Ops management component.
+
+## Community Health:
+The automated metrics appear off, listing 0 PRs opened and 0 issues or PRs
+closed in the past quarter. In fact, there have been 66 PRs opened[1] and 74
+PRs closed[2] since Feb 8 2024. A good chunk of these are automated PRs, i.e.
+dependabot or asf-ci.
+
+Users do sometimes stop by our Slack channel asking for help and there is
+almost always someone around to offer advice.
+
+[1]https://github.com/apache/trafficcontrol/pulls?q=is:pr+created:%3E2024-02-08+
+[2]https://github.com/apache/trafficcontrol/pulls?q=is:pr+is:closed+closed:%3E2024-02-08+</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-BY">2024-02-21</a> &mdash; Eric Friedrich<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: At risk - see community health
+Issues for the board: No issues
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (6 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Abdulrahman Elawady on 2023-09-21.
+
+## Project Activity:
+Traffic Control 8 was release on Jan 30, 2024. This included the following
+features:
+  - Client Certificate Authentication for the control API
+  - Origin connection count limitation
+  - New Role based permissions to enable key rotation specific users
+  - OAuth for user login to web portal
+
+There is no currently planned next release. As a community we'll be evaluating
+what the next steps are given the exit of many of the active contributors.
+
+## Community Health:
+The Traffic Control community is currently in a state of flux. A large number
+of active contributors with a shared employer have recently stopped
+participation in the project. Since that time, the number of commits has
+dropped drastically (down 90%). However, we passed a Roll Call vote and were
+able to successfully vote on a release. This shows that we still have enough
+engagement from PMC members to stay as an active TLP project. We will now be
+discussing ways to refocus the project to better address the needs and goals
+of the active participants.</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-BT">2023-11-15</a> &mdash; Eric Friedrich<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues requiring board attention
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (5 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- Abdulrahman Elawady was added as committer on 2023-09-21
+
+## Project Activity:
+A release vote for Traffic Control 8.0.0 is currently open. Another RC will
+likely be coming next week. This release includes:
+  - Update to new client API v5
+  - Many small bug fixes and enhancements
+
+
+## Community Health:
+Community Health is currently good. Participation is also good - we sponsored
+a Google Summer of Code project this past summer, resulting in a new
+committer. This GSoC project also widened the number of caches Traffic Control
+integrates with.
+
+Velocity on traffic control is slowing somewhat (PRs merged down about 20% in
+the last quarter), partly because the project is reaching maturity and partly
+because some contributors are moving on to other projects.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-CG">2023-08-16</a> &mdash; Eric Friedrich<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: Ongoing - Moderate Activity
+Issues for the board: None
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (5 years ago)
+There are currently 30 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Eric Holguin on 2023-04-15.
+
+## Project Activity:
+- Last release - 7.0.1 August, 2022
+- New features
+ - Traffic Ops TLS Certificate Auth
+ - Traffic Portal V2 Development: Inspect cert/DS, Update to Angular 16
+- Google Summer of Google: Varnish Cache Support
+  - 1 Full Time Student. Progress is on schedule and has already demoed basic
+    functionality
+- 152 PRs Merged
+- 148 Issues Opened (130 of those closed)
+
+
+## Community Health:
+Community Health is currently good. Participation is active and we are
+sponsoring a GSoC project as well.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-BV">2023-05-17</a> &mdash; Eric Friedrich<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+No Issues requiring board attention
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (5 years ago)
+There are currently 30 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- Eric Holguin was added as committer on 2023-04-15
+- Rima Shah was added as committer on 2023-02-08
+
+## Project Activity:
+ - 113 Pull Requests merged this quarter (some automated), including 22 bug
+   fixes
+ - Last Release was 7.0.1 in August 2022
+ - Next release (ATC8) is not yet planned (this is a fairly large gap between
+   releases for us)
+ - Features in active development:
+    - Traffic Portal v2 improves our using facing web app
+
+## Community Health:
+ Community health is currently fair. The #traffic-control ASF Slack channel is
+ fairly active. Most day to day development discussion occurs within Github
+ Issues/PRs. We're also proud to be sponsoring our first Google Summer of Code
+ project this summer. Development is primarily occurring at one company,
+ although the user base is widespread. No undue influence, but if the primary
+ employer were to change directions the project's health would be at risk.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-CO">2023-02-15</a> &mdash; Eric Friedrich<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (4 years ago) There are
+currently 29 committers and 19 PMC members in this project. The
+Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- One new PMC member in progress. Invitation outstanding to one current
+  committer [1]
+- One new committer. Last addition was Rima Shah on 2023-02-01. (Not yet
+  reflected in Whimsy, account creation in progress) [2]
+
+
+## Project Activity:
+ - 7.0.1 was released on 2022-08-25.
+ - Ongoing cleanup/scrub of stale issues in Github and dead/unused code
+ - Added code coverage tooling
+ - Since last report:
+   - 27 new Issues (Bugs + Features)
+   - 117 PRs Merged
+
+ATC8 is in progress. No targeted release date yet. It will bring:
+  - Traffic Ops API v5 upgrade
+  - Support for development on ARM64 architecture
+  - Potential conversion of Traffic Router from Java to Kotlin
+
+A previously open security report was closed because the reported was unable
+to reproduce and provide sufficient details.
+
+## Community Health:
+Community health is currently good. The mailing lists are fairly quiet, but
+healthy discussion - mainly support, is happening in Slack channels and Github
+Issues. Some members participate in an optional biweekly working group zoom call
+to discuss ongoing projects.
+
+The majority of new development is provided by committers employed by a single
+company. There are a handful of active committers split among another 2 or 3
+other companies.</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#attachment-BT">2022-11-16</a> &mdash; Eric Friedrich<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (4 years ago) There are
+currently 28 committers and 18 PMC members in this project. The
+Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zach Hoffman on 2021-11-18.
+- No new committers. Last addition was Srijeet Chatterjee on 2021-12-31.
+
+We are currently discussing potential several new committers and one new PMC
+member
+
+## Project Activity:
+ - 7.0.1 was released on 2022-08-25.
+
+ATC8 is in progress. No targeted release date yet. It will bring:
+  - Support for development on ARM64 architecture
+  - Potential conversion of Traffic Router from Java to Kotlin
+  - Upgrade from Apache TrafficServer 8.1 to TrafficServer 9.1
+
+We have one open security report pending that has not yet been confirmed.
+
+## Community Health:
+Community health is currently good. The mailing lists are fairly quiet, but
+healthy discussion - mainly support, is happening in Slack channels and Github
+Issues. Some members participate in an optional weekly working group zoom call
+to discuss ongoing projects.
+
+The majority of new development is provided by committers employed by a single
+company. There are a handful of active committers split among another 2 or 3
+other companies.
+
+We also had 4 documentation PRs merged last month from outside contributors
+as part of Hacktoberfest</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-BX">2022-09-21</a> &mdash; Eric Friedrich<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a
+large scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (4 years ago) There are
+currently 28 committers and 18 PMC members in this project. The
+Committer-to-PMC ratio is roughly 1.6:1.
+
+Community changes, past quarter:
+- Zero new PMC members. Last addition was Zach Hoffman on 2021-11-19.
+- Zero new committer. Last addition was Srijeet Chatterjee on 2022-01-03.
+
+## Project Activity:
+ - 7.0.1 was released on 2022-08-25.
+ - 7.0.0 was released on 2022-08-09.
+
+ATC7 includes the following new features:
+- Traffic Ops API and authentication improvements
+- Add ability for Traffic Ops to reverse proxy for other services
+- Traffic Ops API v2 was removed
+- Traffic Ops API v3 was deprecated in favor of API v4
+- Scaling Improvements for Traffic Monitor (sharding of polling large numbers
+ of caches)
+- Traffic Router local fetch of geolocation database
+- Traffic Monitor access log enabled
+- Removed Centos8 support in favor of Rocky
+
+Next release:
+- Potential conversion of Traffic Router from Java to Kotlin under discussion
+- Discussion around upgrade from Apache TrafficServer 8.1 to TrafficServer 9.1
+
+
+## Community Health:
+Community health is currently good. The mailing lists are fairly quiet, but
+healthy discussion - mainly support, is happening in Slack channels and Github
+Issues. Some members participate in an optional weekly working group zoom call
+to discuss</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#section-6BS">2022-08-17</a> &mdash; Eric Friedrich<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-BN">2022-05-18</a> &mdash; Eric Friedrich<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a
+large scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (3 years ago) There are
+currently 28 committers and 18 PMC members in this project. The
+Committer-to-PMC ratio is roughly 1.6:1.
+
+Community changes, past quarter:
+- Zero new PMC members. Last addition was Zach Hoffman on 2021-11-19.
+- Zero new committer. Last addition was Srijeet Chatterjee on 2022-01-03.
+
+## Project Activity:
+The community is making progress towards our next major release ATC 7.0.
+
+- Traffic Ops API and authentication improvements
+- Add ability for Traffic Ops to reverse proxy for other services
+- Move Traffic Ops from APIv2 to APIv3
+- Scaling Improvements for Traffic Monitor (sharding of polling large numbers
+  of caches)
+- Traffic Router local fetch of geolocation database
+- Traffic Monitor access log enabled
+- 25 bug fixes
+- Removed Centos8 support in favor of Rocky
+
+ATC7 will be released once last few milestones are completed in the TO API.
+
+## Community Health:
+Community health is currently good. The mailing lists are fairly quiet, but
+healthy discussion - mainly support, is happening in Slack channels and Github
+Issues.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-BP">2022-02-16</a> &mdash; Eric Friedrich<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a
+large scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (3 years ago) There are
+currently 28 committers and 18 PMC members in this project. The
+Committer-to-PMC ratio is roughly 1.6:1.
+
+Community changes, past quarter:
+- One new PMC members. Last addition was Zach Hoffman on 2021-11-19.
+- One new committer. Last addition was Srijeet Chatterjee on 2022-01-03.
+
+## Project Activity:
+The community shipped a new minor release, ATC 6.1, on February 4. In this, we
+addressed CVE-2022-23206. This CVE was also back ported to our previous major
+version and ATC 5.1.4 was also
+
+Prior to the minor release, we also published security fixes for log4j related
+issues.
+
+
+New features included in 6.1 are:
+- Purge/Refetch based content invalidation
+- Improved handling of TLS certificates on Traffic Ops
+- Introduction of permission based roles for access control
+- Support for Java 11 in Traffic Router
+- Traffic Router performance improvements
+
+There is also one currently outstanding security issue that will be addressed
+in an upcoming patch.
+
+Work towards the next release is in progress, with a look towards Q2 2022 as
+the target date.
+
+## Community Health:
+Community health is currently good. New users are regularly coming into the
+Slack instance and participating in discussions.
+
+We have also received and addressed 1 CVE in the past quarter, which was
+reported by a non-committer. Several additional security reports were
+received, but were not deemed to be valid security issues.</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-BX">2021-11-17</a> &mdash; Eric Friedrich<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a
+large scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (3 years ago) There are
+currently 27 committers and 17 PMC members in this project. The
+Committer-to-PMC ratio is roughly 1.6:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Brennan Fieck on 2021-02-17.
+- One new committer. Last addition was Steve Hamrick on 2021-08-27.
+
+## Project Activity:
+The community shipped a new major release, ATC 6.0, on October 11. We also
+released two security patches for CVE-2021-43350 and CVE-2021-42009. Work
+towards the next minor release is in progress, with a look towards January
+2022 as the target date.
+
+New features included in 6.0 are:
+- Improved multi-user locking to prevent conflicting configuration deployments
+- Removing deprecated dependencies Riak and Goose
+- Rewriting/Refactoring a hard to maintain Perl deployment script into simpler
+  individual Go tools
+- Removing old API routes that have more efficient replacements
+
+## Community Health:
+Community health is currently good. New users are regularly coming into the
+Slack instance and participating in discussions.
+
+We have also received and addressed 2 CVEs in the past quarter, one from an
+non-committer.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-BS">2021-08-18</a> &mdash; Eric Friedrich<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a
+large scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (3 years ago) There are
+currently 26 committers and 17 PMC members in this project. The
+Committer-to-PMC ratio is roughly 1.5:1.
+
+Community changes, past quarter:
+- One new PMC member. Last addition was Brennan Fieck on 2021-02-17.
+- No new committers. Last addition was Zach Hoffman on 2020-09-03.
+
+## Project Activity:
+The community is working towards a new major release (6.0) scheduled for this
+summer. Some features are taking longer to complete, so the release date has
+been pushed back several times. For context, the last minor release was on May
+17, 2021, and the last major release in January 2021.
+
+New features planned for 6.0 include:
+- Improved multi-user locking to prevent conflicting configuration deployments
+- Removing deprecated dependencies Riak and Goose
+- Rewriting/Refactoring a hard to maintain Perl deployment script into simpler
+  individual Go tools
+- Removing old API routes that have more efficient replacements
+
+## Community Health:
+Community health is currently good. Mailing lists are fairly quiet, but new
+users to Traffic Control often come to Slack for support.
+
+Over the last few months, we also migrated from a private Slack instance into
+the official Apache Slack to lower bar for entry to new users.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-BQ">2021-05-19</a> &mdash; Eric Friedrich<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a
+large scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (3 years ago) There are
+currently 26 committers and 17 PMC members in this project. The
+Committer-to-PMC ratio is roughly 1.5:1.
+
+Community changes, past quarter:
+- One new PMC member. Last addition was Brennan Fieck on 2021-02-17.
+- No new committers. Last addition was Zach Hoffman on 2020-09-03.
+
+## Project Activity:
+The community completed a minor 5.1 release (March 11, 2021) and a bug fix
+5.1.1 release (April 1, 2021). Development is well underway for the 6.0 major
+release currently targeted to begin release candidates in July.
+
+The next release will include the replacement of an unmaintained dependency
+(Riak NoSQL DB) by Postgres, already a heavily used component of the project.
+
+The community also completed the long in-progress conversion of our perl based
+configuration application into a much more extensible and performant Go based
+application.
+
+In the last 3 months, we registered just under 200 new commits from 25
+different contributors, many of which are not yet committers.
+
+
+## Community Health:
+In the last 3 months, we added one new PMC member.
+
+The community is healthy.  Overall the community remains healthy even though
+the majority of contributions are primarily coming from one company with a
+small number of contributions coming from others.  We continue to see new
+users join our community and set up Traffic Control, however we still struggle
+to turn them into contributors.
+
+Finally, this is my first board report as PMC Chair. The community sends
+gratitude to Dave Neuman for guiding Traffic Control through its first three
+years.</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-BO">2021-02-17</a> &mdash; David Neuman<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (3 years ago)
+There are currently 26 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Robert Butts on 2020-03-12.
+- No new committers. Last addition was Zach Hoffman on 2020-09-03.
+
+## Project Activity:
+The community worked hard to get our 4.1.1 and 5.0 release candidates tested
+and released.  We had some discussion about our next release and decided we
+would try to do a quick 5.1 release to address a few minor bugs and then plan
+on a 6.0 release in the spring.
+
+Our Traffic Ops working groups spent a fair amount of time cleaning up old
+issues in Github which allowed us to get a good sense for things that we need
+to revisit and things that are no longer valid.
+
+We recently merged a PR to make ATC a go module.
+
+
+## Community Health:
+Overall the community remains healthy even though the majority of
+contributions are primarily coming from one company with a small number of
+contributions coming from others.  We continue to see new users join our
+community and set up Traffic Control, however we still struggle to turn them
+into contributors.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-BN">2020-11-18</a> &mdash; David Neuman<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (2 years ago)
+There are currently 26 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Robert Butts on 2020-03-12.
+- Zach Hoffman was added as committer on 2020-09-03
+
+## Project Activity:
+The community is working on hard on both a 4.1.1 release and a 5.0.0 release.
+Both have release candidates available are close to be approved.  Since we
+have a couple of releases in flight, and since we had ApacheCon in September,
+the project is currently very active.
+
+## Community Health:
+We added a new committer, Zach Hoffman!
+We had a single day track as part of ApacheCon @ Home.  By all accounts this
+was successful and the community was extremely excited that we were able to
+get together, even if it was remotely.  We continue to see new users starting
+to use our project which is encouraging however, we are still figuring out how
+to get them to also be contributors.</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-BQ">2020-08-19</a> &mdash; David Neuman<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (2 years ago)
+There are currently 25 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Robert Butts on 2020-03-12.
+- No new committers. Last addition was Matthew Jackson on 2020-02-26.
+
+## Project Activity:
+Traffic Control 4.1 was released on 06-17-2020.  This was our second release
+this year, which was a great accomplishment for the community.  We are hoping
+to have our next release out before ApacheCon. We have scheduled a one day
+track for ApacheCon and the community is looking forward to it.  The community
+is hopeful that we can get as much out of the online format as we do in
+person.
+
+## Community Health:
+The community continues to be challenged in finding diversity, especially in
+terms of contributors.  We continue to see new users joining the community and
+we are retaining the users we have, but it seems as if the types of users that
+are coming to the project are not the ones that contribute back.  We continue
+to discuss ways that we can encourage more contribution for our user base.  We
+still feel like we have a healthy community despite the continued lack of
+diversity.</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-BO">2020-05-20</a> &mdash; David Neuman<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring the board's attention.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (2 years ago)
+There are currently 25 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Robert Butts was added to the PMC on 2020-03-12
+- Matthew Jackson was added as committer on 2020-02-26
+
+## Project Activity:
+Apache Traffic Control 4.0 was released on 2020-03-26. This was a huge release
+for Traffic Control containing over a year's worth of development. The
+community is poised to release more often and as a result, a release for the
+4.1 version of Traffic Control is already available for review. The community
+is starting to plan the 5.0 release, targeting the end of Q2 for our first
+release candidate.
+
+## Community Health:
+The community continues to be challenged in finding diversity, especially in
+terms of contributors.  We continue to see new users joining the community and
+we are retaining the users we have, but it seems as if the types of users that
+are coming to the project are not the ones that contribute back.  We continue
+to discuss ways that we can encourage more contribution for our user base.  We
+still feel like we have a healthy community despite the continued lack of
+diversity.</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-BQ">2020-02-19</a> &mdash; David Neuman<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring board attention
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (2 years ago)
+There are currently 24 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Derek Gelinas on 2019-03-17.
+- No new committers. Last addition was Brennan Fieck on 2019-07-27.
+
+## Project Activity:
+ATC 4.0 release candidate is out for vote.  We are up to RC4 and have been
+getting good feedback on our releases. Our ATC Robots working group - designed
+to discuss ATC automation - had it's first meeting.  The Traffic Control
+working group has been working on defining our 3.0 API which will be
+implemented in a future release. The working groups are doing a good job of
+following up on list after their meetings.
+
+## Community Health:
+The communinity health is good.  We seem to be getting a lot of good
+participations from new users which is encouraging even though it seems like
+most of them are just users and are not necessarily contributing code.  We
+recognize that providing good feedback is valuable and we are happy to see
+more people active in our community.</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#attachment-BR">2019-11-20</a> &mdash; David Neuman<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning large
+scale content delivery networks (CDN)
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (a year and a half ago)
+There are currently 24 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Derek Gelinas on 2019-03-17.
+- No new committers. Last addition was Brennan Fieck on 2019-07-26.
+
+## Project Activity:
+Took part in ApacheCon NA as part of the Content Delivery Track.  This was a
+great experience for our community and something we look forward to doing
+again.
+
+Release Apache Traffic Control 3.0.2 to address a security issue.
+
+Released Apache Traffic Control 3.1.0
+
+## Community Health:
+The community is healthy! We have definitely seen the "post summit bump" where
+the community gets re-invested after a conference/summit that has lead us to
+having more contributions and activity on the mailing lists.  We are starting
+to become more mature as a community by agreeing to get better at how we do
+releases and working towards a more consistent cadence.</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-BO">2019-08-21</a> &mdash; David Neuman<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Traffic Control is the creation and maintenance of
+software related to building, monitoring, configuring, and provisioning a large
+scale content delivery network (CDN)
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (a year ago)
+There are currently 24 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Derek Gelinas on 2019-03-17.
+- Jonathan Gray was added as committer on 2019-06-12
+- Brennan Fieck was added as committer on 2019-07-26
+
+## Project Activity:
+- Planned a Content Delivery Track for ApacheCon NA
+- Agreed to do a 3.1 release before our next major release.  This release will
+  contain fixes for some regressions found in the 3.0.1 release as well as
+  some key performance improvements made since the 3.0.1 release was made.
+- There has been a lot of discussion around a few new features, github
+  milestones, and LTS for our releases
+- We have also agreed that it is time to start planning our next major
+  release, but we haven't nailed down a scope yet.
+
+## Community Health:
+The community is healthy. We have less commits and code contributors since our
+last report, but we have had an increase in issues closed.  This is due to
+some of our key committers working on larger features and our community being
+focused on product stability over new features.  We also switched to a squash
+and merge strategy for pull requests, which leads to less overall commits.
+
+We have had conversations with several new users which is encouraging for the
+overall diversity of our communities.
+
+We are looking forward to having to getting the community together at
+ApacheCon which always helps to inject enthusiasm into the project.
+
+See below for specifics on mailing list and github activity:
+- dev@trafficcontrol.apache.org had a 21% decrease in traffic in the past
+  quarter (167 emails compared to 209)
+- 96 commits in the past quarter (-35% decrease)
+- 16 code contributors in the past quarter (-51% decrease)
+- 138 PRs opened on GitHub, past quarter (6% increase)
+- 113 PRs closed on GitHub, past quarter (-15% decrease)
+- 154 issues opened on GitHub, past quarter (31% increase)
+- 51 issues closed on GitHub, past quarter (8% increase)</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-BN">2019-05-15</a> &mdash; David Neuman<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Traffic Control can be used to build, monitor, configure, and
+   provision a large-scale content delivery network (CDN).
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - Released 3.0 and 3.0.1
+- Added 2 new PMC members and 1 new committer
+- There was a lengthy debate in the community around API versioning, I think
+  we have finally come to a consensus.
+- Spent time working on rounding up presentations for the Content Delivery
+  Track at Apachecon NA
+
+## Health report:
+ - The project is healthy.  We have had some challenges with mailing list
+   discussions going on too long and some cases of comments getting personal
+   on PRs.  These have been addressed via face to face conversations.
+
+## PMC changes:
+
+ - Currently 15 PMC members.
+ - New PMC members:
+    - Derek Gelinas was added to the PMC on Sun Mar 17 2019
+    - Rawlin Peters was added to the PMC on Mon Feb 25 2019
+
+## Committer base changes:
+
+ - Currently 22 committers.
+ - Shihta Kuan was added as a committer on Mon Mar 25 2019
+
+## Releases:
+
+ - apache-trafficcontrol-3.0.0 was released on Tue Mar 05 2019
+ - apache-trafficcontrol-3.0.1 was released on Tue Apr 16 2019
+
+## Mailing list activity:
+
+ - users@trafficcontrol.apache.org:
+    - 102 subscribers (down -2 in the last 3 months):
+    - 11 emails sent to list (19 in previous quarter)
+
+ - dev@trafficcontrol.apache.org:
+    - 94 subscribers (up 0 in the last 3 months):
+    - 196 emails sent to list (197 in previous quarter)
+
+## Github Activity
+- 117 Pull requests submitted in the last quarter
+- 108 Pull Requests merged/closed in the last quarter
+- 112 issues created in quarter
+- 40 issues closed in the quarter</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-BT">2019-02-20</a> &mdash; David Neuman<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Traffic Control can be used to build, monitor, configure, and
+   provision a large-scale content delivery network (CDN).
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - Continued to try to get our 3.0 release out.  We are up to RC5, hopefully
+   we have all of the issues worked out.
+- Added a new Commiter, Mike Sandman
+- Continued to support new users and make our CDN in a box solution better
+
+## Health report:
+ - The Project is healthy but our PMC involvement has seemed to slow down.  I
+   think it's time we consider adding new PMC members.
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Eric Covener on Tue May 15 2018
+
+## Committer base changes:
+
+ - Currently 21 committers.
+ - Mike Sandman was added as a committer on Fri Dec 07 2018
+
+## Releases:
+
+ - Last release was apache-trafficcontrol-2.2.0 on Mon Jun 25 2018
+- RC5 for 3.0 is available for testing
+
+## Mailing list activity:
+
+ - users@trafficcontrol.apache.org:
+    - 103 subscribers (down -3 in the last 3 months):
+    - 16 emails sent to list (38 in previous quarter)
+
+ - dev@trafficcontrol.apache.org:
+    - 94 subscribers (up 1 in the last 3 months):
+    - 200 emails sent to list (184 in previous quarter)
+
+## GitHub activity:
+- 198 Pull requests submitted in the last quarter
+- 183 Pull Requests merged/closed in the last quarter
+- 112 issues created in quarter
+- 71 issues closed in the last 30 days</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-BP">2018-11-21</a> &mdash; David Neuman<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Traffic Control can be used to build, monitor, configure, and
+  provision a large-scale content delivery network (CDN).
+
+## Issues:
+
+- There are no issues requiring board attention at this time
+
+## Activity:
+ - Held our annual fall summit in Denver in October, which had over 30
+   registered attendees.  These summits are always great for getting the
+   community together and injecting some enthusiasm.  Summits also usually
+   lead to an increase in activity on the mailing lists because that is where
+   decisions are made.
+ - Announced a Release Candidate for Traffic Control 3.0
+ - A few PMC members attended and spoke at ApacheCon NA!
+
+## Health report:
+ - The Project is healthy.  The project seems to have gained some interest
+   over the past few months which is encouraging!
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Eric Covener on Tue May 15 2018
+
+## Committer base changes:
+
+ - Currently 20 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Dylan Volz at Mon Jul 23 2018
+
+## Releases:
+
+ - Last release was apache-trafficcontrol-2.2.0 on Mon Jun 25 2018
+
+## Mailing list activity:
+
+
+ - users@trafficcontrol.apache.org:
+    - 106 subscribers (up 4 in the last 3 months):
+    - 43 emails sent to list (27 in previous quarter)
+
+ - dev@trafficcontrol.apache.org:
+    - 97 subscribers (up 1 in the last 3 months):
+    - 187 emails sent to list (173 in previous quarter)
+
+
+## GitHub activity:
+- 238 Pull requests submitted in the last quarter
+- 239 Pull Requests merged/closed in the last quarter
+- 149 issues created in quarter
+- 152 issues closed in the last 30 days</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-BI">2018-08-15</a> &mdash; David Neuman<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Traffic Control can be used to build, monitor, configure, and
+   provision a large-scale content delivery network (CDN).
+
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - Worked on defining scope and cadence for Traffic Control 3.0 release
+ - Started discussing a fall summit to get everyone together
+ - Named two new committers (Rawlin Peter and Dylan Volz)
+ - Identified the need for a 2.1 release, will work our RM to make it happen
+
+
+## Health report:
+ - The project is healthy
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+
+## Committer base changes:
+
+ - Currently 20 committers.
+ - New commmitters:
+    - Dylan Volz was added as a committer on Mon Jul 23 2018
+    - Rawlin Peters was added as a committer on Mon Jul 23 2018
+
+## Releases:
+
+ - apache-trafficcontrol-2.2.0 was released on Mon Jun 25 2018
+
+## Mailing list activity:
+
+
+- Mailing list activity remains healthy.  Since we had a release last month,
+  we can see that the dev@ posts are down and the users@ posts are up.  This
+  is a sign of users deploying the new release.
+
+- users@trafficcontrol.apache.org:
+    - 101 subscribers (up 10 in the last 3 months, 6 in the last month)
+    - 21 emails sent in the last month, 1 in the month prior
+
+- dev@trafficcontrol.apache.org:
+    - 95 subscribers (up 3 in the last 3 months, 2 in the last month)
+    - 18 emails sent to the list (57 sent in the month prior)
+
+
+## GitHub activity:
+- 80 Pull requests submitted in the last 30 days (93 in the month prior)
+- 80 Pull Requests merged in the last 30 days (85 in the month prior)
+- 51 issues created in the last 30 days (27 in the month prior)
+- 46 issues closed in the last 30 days(23 in the month prior)
+- 214 stars on the Traffic Control repo</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-BS">2018-07-18</a> &mdash; David Neuman<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Traffic Control can be used to build, monitor, configure, and
+   provision a large-scale content delivery network (CDN).
+
+## Issues:
+- How can we fix our committee health score?
+  [https://reporter.apache.org/chi.py#trafficcontrol]
+- No other issues requiring board attention at this time
+
+## Activity:
+
+- Announced the 2.2 release of Traffic Control
+- Started working on finalizing scope and a Release Manager for 3.0
+- There has been some discussion around PMC vs Committer and how to best allow
+  our committers to perform releases without being PMC. As a new TLP this is
+  something that we need to work out.
+
+## Health report:
+ - The project is healthy.
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+
+## Committer base changes:
+
+ - Currently 18 committers.
+ - No changes (the PMC was established in the last 3 months)
+
+## Releases:
+
+ - apache-trafficcontrol-2.2.0 was released on Mon Jun 25 2018
+
+## Mailing list activity:
+
+ - Overall mailing list activity seems to be pretty consistent over the last
+   month.  We tend to use dev@ more heavily than other lists, maybe we should
+   consider using users@ a little more.
+
+ - users@trafficcontrol.apache.org:
+    - 95 subscribers (up 7 in the last 3 months)
+    - only 1 email sent over the last month (compared to 7 in the current
+      month prior)
+    - most of our communication happens on dev@, perhaps we can get better at
+      using the users list.
+
+ - dev@trafficcontrol.apache.org:
+    - 93 subscribers (up 4 in the last 3 months)
+    - 77 emails sent to the list (up about 5% from the last month)
+
+ - issues@trafficcontrol.apache.org:
+    - 29 subscribers (up 0 in the last 3 months)
+    - &gt; 1000 emails over the last month (actually a 1% decrease)
+    - This list is primarily automated emails from github so statistics are
+      not too interesting
+
+ - summits@trafficcontrol.apache.org:
+    - 6 subscribers (up 0 in the last 3 months)
+    - this list is meant for users to submit CFPs for summits, therefore it is
+      hardly used.
+
+
+## GitHub activity:
+ - 93 Pull requests submitted in the last 30 days
+ - 85 Pull Requests merged in the last 30 days
+ - 27 issues created in the last 30 days
+ - 23 issues closed in the last 30 days
+ - 205 stars on the Traffic Control repo
+
+## Commit activity:
+ - &gt;8,500 lines of code changed
+ - 235 commits in the last 30 days
+ - 16 authors in the last 30 days</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#attachment-BQ">2018-06-20</a> &mdash; David Neuman<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Apache Traffic Control can be used to build, monitor, configure, and
+   provision a large-scale content delivery network (CDN).
+
+## Issues:
+ - Waiting on Infra to complete Graduation ticket:
+   https://issues.apache.org/jira/browse/INFRA-16631
+ - We have a release ready to be announced but PMC members can't upload
+   binaries to dist.apache.org until the infra ticket is complete and we get
+   the proper permissions.
+
+## Activity:
+ - Worked on a press release announcing our graduation.
+ - Worked on figuring out what the next steps are for becoming a TLP
+ - Opened INFRA ticket to take care of incubator -&gt; TLP migration
+ - Called the vote on the Traffic Control 2.2 release (waiting for Infra
+   ticket before announcing - see issues above)
+ - Agreed on versioning for next release, currently working on naming a
+   release manager and defining scope.
+
+## Health report:
+ - Just became a TLP
+ - The entire community is very excited to graduate from the Incubator and
+   become a TLP
+ - The project is healthy.
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+
+## Committer base changes:
+
+ - Currently 18 committers.
+ - No changes (the PMC was established in the last 3 months)
+
+## Releases:
+
+ - Traffic Control 2.1 was released on 1/22/2018
+ - The vote for Traffic Control 2.2 was called as passed on 6/7/2018
+ - Traffic Control 3.0 is currently being defined.</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#trafficcontrol">2018-04-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>Traffic Control is a set of components that can be used to build, monitor,
+configure, and provision a large scale content delivery network (CDN).
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+1. A successful graduation vote by project community
+2. A successful graduation vote by the IPMC
+3. A successful acceptance of our graduation resolution by the apache board
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+None.
+
+How has the community developed since the last report (January 2018)?
+
+Since January the Traffic Control community has worked on the following:
+* Getting Traffic Control 2.1 released
+* Getting Traffic Control 2.2 ready for release candidates
+* Supporting new users with installing and configuring traffic control
+* Tie up loose ends and prepare ourselves for graduation
+* Planning a spring summit to be held April 2018 in Boston, MA
+
+How has the project developed since the last report?
+
+  Since the last report (January 2018), we have
+
+  * Merged 199 Pull Requests with 673 commits from 27 unique contributors
+  * Opened 217 Github issues
+  * Closed 214 Github issues
+  * 301 emails sent by 46 people on the dev@ list
+  * 26 emails sent by 10 people on the users@ list
+
+How would you assess the podling's maturity?
+
+We have started the graduation process!  We voted on starting the graduation
+process, chose a project chair, and have started the Project vote on the
+graduation resolution.
+
+  [ ] Initial setup
+  [ ] Working towards first release (wip)
+  [ ] Community building (wip)
+  [X] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  Traffic Control 2.1 was released on January 22, 2017.
+
+  Traffic Control 2.2 is currently on RC 3 and we hope to have 2.2 released by
+  the end of April, 2018.
+
+
+When were the last committers or PPMC members elected?
+
+In October, Traffic Control added 1 new committer: Nir Sopher.
+
+Signed-off-by:
+
+  [X](trafficcontrol) Phil Sorber
+     Comments: I think this project is in good
+   shape, hopefully we see a graduation resolution in the IPMC for it soon.
+  [X](trafficcontrol) Eric Covener
+     Comments:
+  [X](trafficcontrol) Leif Hedstrom
+     Comments:</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#trafficcontrol">2018-01-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>Traffic Control is a set of components that can be used to build, monitor,
+configure, and provision a large scale content delivery network (CDN).
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+1. Enhance automation to make it easier to build, install, and configure each
+component. 2. Improve documentation to ease ramp-up time for new community
+members and make it easier for existing community members to find what they
+are looking for. 3. Complete at least two releases without license issues.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+None.
+
+How has the community developed since the last report (October 2017)?
+
+We held a fall summit in October in Atlanta.  This summit was attended by over
+20 participants from 5 different companies.  The discussions were great and we
+made sure to take any discussion that could potentially affect the community
+to the mailing lists.
+
+We cleaned up our mentors a bit by removing a few mentors who have asked to be
+removed and/or have not contributed at all.
+
+We have seen a few new users join our community, and our community has done a
+good job of helping the new users get Traffic Control up and running.
+
+The community has been working hard to get a new release out, which will be
+Traffic Control 2.1.
+
+How has the project developed since the last report?
+
+  Since the last report (October 2017), we have
+
+  * Merged 218 Pull Requests with 392 commits from 34 contributors
+  * Opened 135 Github issues
+  * Closed 70 Github issues
+  * 233 emails sent by 36 people on the dev@ list
+  * 25 emails sent by 12 people on the users@ list
+
+How would you assess the podling's maturity? Please feel free to add your own
+commentary.
+
+We have started discussions about graduation and we all agree that we should
+try to focus on graduating in 2018.  As we see it, the biggest hurdles we
+still face are: 1) Getting releases through the incubator without licensing
+issues - we would like to be able to get at least two releases through without
+licensing issues. 2) Removing dependencies with incompatible licenses;
+specifically JSON.org and jdnssec
+(https://github.com/dblacka/jdnssec-tools/blob/master/licenses/java-dnssec-tools-LICENSE.txt)
+- our plan is to have these two mitigated by the end of Q1 2018.
+
+  [ ] Initial setup
+  [ ] Working towards first release (wip)
+  [] Community building (wip)
+  [x ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  Traffic Control 2.0 was released on July 7th, 2017.
+
+  Traffic Control 2.1 has passed the PPMC vote and was submitted to IPMC on
+  January 2nd.
+
+When were the last committers or PPMC members elected?
+
+In October, Traffic Control added 1 new committer: Nir Sopher.
+
+Signed-off-by:
+
+  [x](trafficcontrol) Phil Sorber
+     Comments:
+  [](trafficcontrol) Eric Covener
+     Comments:
+  [x](trafficcontrol) Leif Hedstrom
+     Comments:</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#trafficcontrol">2017-10-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>Traffic Control is a set of components that can be used to build, monitor, configure, and provision a large scale content delivery network (CDN).
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+1. Enhance automation to make it easier to build, install, and configure each component.
+2. Improve documentation to ease ramp-up time for new community members and make it easier for existing community members to find what they are looking for.
+3. Grow the community.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+How has the community developed since the last report?
+
+The community took a vote and decided to move to full GitHub for source code management and to use github for issue tracking instead of Jira.
+
+Traffic Control will be holding its fall summit on October 17th and 18th in Atlanta, GA.  There are currently over 20 participants from 5 different companies registered to join.
+
+How has the project developed since the last report?
+
+  Since the last report (July 2017), we have
+
+  * Merged 93 Pull Requests with 609 commits from 21 contributors
+  * Opened 284 Github/Jira issues
+  * Closed 83 Github/Jira issues
+  * 284 emails sent by 39 people on the dev@ list
+  * 5 emails sent by 2 people on the users@ list
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+At our next summit (Oct 2017), we will be discussing what steps we need to take to get to graduation.  We still have some hurdles to clear, but it&rsquo;s good that we have recognized we need to start the discussion.
+
+  [ ] Initial setup
+  [ ] Working towards first release (wip)
+  [x] Community building (wip)
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  Traffic Control 2.0 was released on July 7th, 2017.
+
+When were the last committers or PPMC members elected?
+
+In August, Traffic Control added 3 new committers from 2 different companies: Derek Gelinas (Comcast), Rob Butts (Comcast) , and Peter Ryder (Cisco)
+
+Signed-off-by:
+
+  [X](trafficcontrol) Phil Sorber
+     Comments:
+  [](trafficcontrol) Eric Covener
+     Comments:
+  [X](trafficcontrol) Leif Hedstrom
+     Comments:
+
+IPMC/Shepherd notes:
+
+  johndament: It's great to see a community driven in person event being scheduled.  However, the podling should be cautious and ensure that all information discussed in person is brought back to the list when complete.</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#trafficcontrol">2017-07-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>Traffic Control allows you to build a large scale content delivery network
+using open source.
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+1. Enhance automation to facilitate committer voting on new releases.
+2. Enhance documentation to ease ramp-up time for new community members.
+3. Grow the community.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+Traffic Control held a summit with Traffic Server during ApacheCon North
+America.  This helped bring more attention to our project and encouraged
+cross-pollination between the two projects.  In total there were 45 confirmed
+attendees with 23 signing up as having interest in Traffic Control.
+
+Traffic Control added 5 new contributors (went from 65 to 70 total unique
+              contributors).
+
+How has the project developed since the last report?
+
+Since the last report (April 2017), we have
+
+* Merged 225 Pull Requests with 714 commits from 27 contributors
+* Opened 189 JIRA issues
+* Closed 97 JIRA issues
+* 393 emails sent by 44 people on the dev@ list
+* 15 emails sent by 9 people on the users@ list
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release (wip)
+[x] Community building (wip)
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+Traffic Control 1.8.1 was released on 6/13/2017.
+Traffic Control 2.0 has passed the project team and IPMC vote and a release
+announcement should be sent out this week.
+
+When were the last committers or PPMC members elected?
+
+No new committers or PPMC members yet.
+
+Signed-off-by:
+
+[X](trafficcontrol) Phil Sorber
+   Comments:
+[X](trafficcontrol) Eric Covener
+   Comments:
+[ ](trafficcontrol) Daniel Gruno
+   Comments:
+[ ](trafficcontrol) J. Aaron Farr
+   Comments:
+
+IPMC/Shepherd notes:
+
+johndament: The podling has grown quite a bit, once they start growing
+outside of their initial committer set they should think about graduation.</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#trafficcontrol">2017-04-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>Traffic Control allows you to build a large scale content delivery network
+using open source.
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+1. Enhance automation to facilitate committer voting on new releases.
+2. Enhance documentation to ease ramp-up time for new community members.
+3. Grow the community.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+Several new people have become active on the project. A 2 week hackathon
+was organized to on-board some new contributors from Qwilt.
+
+How has the project developed since the last report?
+
+Traffic Control 1.8 was released on 3/7/2017 after a lot of cleanup of
+licenses and dependencies! Traffic Control 2.0 is converging on the first
+release candidate.
+
+Since the last report (January 2017), we have
+
+* Merged 232 Pull Requests with 441 commits from 16 contributors
+* Opened 135 JIRA issues
+* Closed 68 JIRA issues
+* Seen 105 messages on the dev@ list.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release (wip)
+[ ] Community building (wip)
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+Traffic Control 1.8 was released on 3/7/2017.
+
+When were the last committers or PPMC members elected?
+
+No new committers or PPMC members yet.
+
+Signed-off-by:
+
+[X](trafficcontrol) Phil Sorber
+   Comments:
+[ ](trafficcontrol) Eric Covener
+   Comments:
+[ ](trafficcontrol) Daniel Gruno
+   Comments:
+[ ](trafficcontrol) J. Aaron Farr
+   Comments:</pre>
+<h3 id="2017-01-18"><a href="2017/board_minutes_2017_01_18.html#trafficcontrol">2017-01-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-01-18" title="Permalink">&para;</a></h3>
+<pre>Traffic Control allows you to build a large scale content delivery network
+using open source.
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+1. Licenses and legal details. Traffic Control is a project made up of
+   several different components, and includes or depends on an extensive
+   list of software. We are working on making sure all source files have
+   the right headers, all the licenses of included software are compatible
+   and the LICENSE and NOTICE are correct.
+2. Enhance automation to facilitate committer voting on new releases.
+3. Enhance documentation to ease ramp-up time for new community members.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+We hosted a 2 day user / dev meetup in the Bay Area in October that was
+attended by 16 people representing 5 companies.
+
+How has the project developed since the last report?
+
+All code has been move to Apache git. All new issues are being opened
+in Apache JIRA. All email communications have been moved to to Apache
+email lists. Our website has been moved to
+http://trafficcontrol.incubator.apache.org/ .
+
+Since the last report (October 2016), we have
+
+* Merged 145 Pull Requests with 314 commits from 19 contributors
+* Opened 83 JIRA issues
+* Closed 45 JIRA issues
+* Seen 81 messages on the dev@ list in December (before December we
+  had commit messages going to dev@ as well, so those numbers are not
+  indicative of dev communications)
+
+Date of last release:
+
+None yet. We are addressing issues with release 1.8-incubating RC5.
+
+When were the last committers or PPMC members elected?
+
+No new committers or PPMC members yet.
+
+Signed-off-by:
+
+[X](trafficcontrol) Phil Sorber
+[x](trafficcontrol) Eric Covener
+[ ](trafficcontrol) Daniel Gruno
+[ ](trafficcontrol) J. Aaron Farr
+
+Shepherd/Mentor notes:
+
+Drew Farris (shepherd):
+
+  Healthy activity on mailing lists, one mentor active.</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#trafficcontrol">2016-10-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>Traffic Control allows you to build a large scale content delivery network
+using open source.
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+ 1. Move code, issues, email lists and release process to ASF
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+
+How has the community developed since the last report?
+
+ All CCLAs and ICLAs have been signed, and we are clear to proceed with
+ moving the source from github.com to Apache. We are cleaning up the
+ issues and open PRs at this time, and should be able to move the code
+ before mid October.
+
+How has the project developed since the last report?
+
+ - All legal hurdles for software grant have been cleared.
+
+Date of last release:
+
+ We are trying to release 1.7 using the old process and git before the move
+ in to Apache git.
+
+When were the last committers or PMC members elected?
+
+ 2016-07-12 - initial committer list.
+
+Signed-off-by:
+
+ [x](trafficcontrol) Phil Sorber
+ [ ](trafficcontrol) Eric Covener
+ [ ](trafficcontrol) Daniel Gruno
+ [ ](trafficcontrol) J. Aaron Farr
+
+Shepherd/Mentor notes:
+
+   Drew Farris (shepherd): Still getting off the ground, mailing lists are
+     new. No observable mentor activity.
+
+   Phil Sorber (mentor): There were some struggles getting all the legal ducks
+     in a row but that's all complete now so expect decent uptick in activity.</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#trafficcontrol">2016-09-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>Traffic Control allows you to build a large scale content delivery network
+using open source.
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+1. Software grant from Comcast and others active in the current
+   github.com/Comcast project to ASF. Discussion between Comcast and ASF
+   legal on-going, this is blocking all other progress.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+See above issue 1.
+
+How has the community developed since the last report?
+
+Established apache.org accounts for all of the initial committers.
+
+How has the project developed since the last report?
+
+- Setup git repo and mailing lists.
+- Started Software Grant process.
+
+Date of last release:
+
+We released 1.6.0 on 2016-07-29 under the old process, because the release
+process (candidates and votes) had already started before our official
+entry in the incubator. We have started release 1.7.0 under the old process
+as well, since we don't have the necessary ASF infrastructure in place, and
+this is pending the SGA.
+
+When were the last committers or PMC members elected?
+
+2016-07-12 - initial committer list.
+
+Signed-off-by:
+
+[X](trafficcontrol) Phil Sorber
+[X](trafficcontrol) Eric Covener
+[ ](trafficcontrol) Daniel Gruno
+[ ](trafficcontrol) J. Aaron Farr</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#trafficcontrol">2016-08-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>Traffic Control allows you to build a large scale content delivery network
+using open source.
+
+Traffic Control has been incubating since 2016-07-12.
+
+Three most important issues to address in the move towards graduation:
+
+1. Get set up with all resources (git / mailing lists / JIRA / irc / etc)
+2. Name search / name sign off
+3. Prepare for next release under apache process
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+No.
+
+How has the community developed since the last report?
+
+This is the first report, we are just getting started.
+
+How has the project developed since the last report?
+
+This is the first report, we are just getting started. ICLAs are done.
+
+Date of last release:
+
+We released 1.6.0 on 2016-07-29 under the old process, because the release
+process (candidates and votes) had already started before our official
+entry in the incubator. Our next release will be the first release where
+we will follow the Apache incubator process.
+
+When were the last committers or PMC members elected?
+
+2016-07-12 - initial committer list.
+
+Signed-off-by:
+
+[x](trafficcontrol) Phil Sorber
+[x](trafficcontrol) Eric Covener
+[ ](trafficcontrol) Daniel Gruno
+[ ](trafficcontrol) J. Aaron Farr</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>
