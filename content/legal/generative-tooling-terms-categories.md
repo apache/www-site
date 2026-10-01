@@ -24,6 +24,18 @@ Obligations on downstream recipients. Apache releases cannot carry obligations o
 
 Tier and feature dependencies. Check whether the terms say that rights differ by plan, or that particular features (search grounding, provenance data, beta services, third-party content) have their own terms. If so, the answer you reach is only good for the tier and features it covers.
 
+## Rules about your use of the service {#service-use}
+
+Condition 1 of the [Generative Tooling Guidance](/legal/generative-tooling.html) asks two things. The terms must not restrict use of the output in a way that conflicts with the [Open Source Definition](https://opensource.org/osd/), and they must give you rights broad enough to license that output under Apache-2.0. Read the whole terms. A clause counts toward the category only when it fails one of those two tests.
+
+A rule that binds your account, and does not limit the license you can grant, fails neither. Acceptable-use rules, the vendor's right to close the account, and indemnity are in that group. So is a compete clause that binds you and does not bind people who later receive the code. You can still grant Apache-2.0. The Open Source Definition's rule against fields-of-endeavour limits is about that grant, not about a side promise you made to the vendor. If the terms limit the license itself, or limit what software containing the output may be used for, that is the X-like case below.
+
+A vendor requirement that you label your own output is the notice described in [Saying that output is AI generated](/legal/generative-tooling-terms-other-risks.html#ai-disclosure). The guidance's Generated-by line already meets it. That requirement does not restrict use of the output, and it does not make the row B-like.
+
+B-like handling remains how you get under the terms you checked: the tier, the feature, or the model a client connects to.
+
+Nothing in this section reclassifies a row on the [review page](/legal/generative-tooling-terms-reviewed.html). A row changes only when that row is edited.
+
 ## A-like: nothing in the terms restricts the output {#a-like}
 
 You obtained the actual terms for the exact tool, tier, and access path you used. They either give you the output or claim no rights in it, and they contain none of the restrictions or downstream obligations described above.
@@ -32,13 +44,15 @@ In this case the terms condition of the [Generative Tooling Guidance](/legal/gen
 
 ## B-like: usable with specific handling {#b-like}
 
-Nothing in the terms clearly blocks the output, but something needs to be handled before you rely on them. Common examples: the rights you checked apply to a paid or API tier, so you must actually be on that tier; a particular feature carries restrictions, so you must avoid that feature; the tool is a client or local runtime, so you must also check the terms of the model or provider it connects to; or the terms are unclear on one point that needs a question to legal-discuss.
+Nothing in the terms clearly blocks the output, but something needs to be handled before you rely on them. The handling is about which terms govern the output. Common examples: the rights you checked apply to a paid or API tier, so you must actually be on that tier; a particular feature carries restrictions, so you must avoid that feature; the tool is a client or local runtime, so you must also check the terms of the model or provider it connects to; or the terms are unclear on one point that needs a question to legal-discuss.
 
 A B-like answer only holds when its condition is met. If the terms are acceptable on the API tier, that says nothing about the free tier; if they are acceptable with a particular feature avoided, they apply only when you avoided that feature.
 
 ## X-like: the terms restrict the output {#x-like}
 
 The terms claim vendor ownership of the output, limit commercial use or fields of use of software containing it, restrict redistribution or modification, or oblige whoever receives your code to do something for the vendor, such as accepting their terms or leaving embedded provenance data untouched.
+
+The same answer applies when the license on a set of model weights does not grant use of those weights to produce ASF or other production code. That is a non-production license, a use restriction the license requires to be passed on with the weights, or a non-commercial limit that attaches to the weights or to derivatives of them. You were not granted the right to run that generator for this work, and the limit is a term of the weights, so Condition 1 fails. A service agreement that leaves you free to grant Apache-2.0 does not fail Condition 1. The vendor's remedy there is against your account.
 
 Do not contribute output generated under those terms. If the restriction is tied to a specific feature or tier, the problem may be limited to that feature or tier; check whether an unrestricted path exists. If you believe the terms are being read too broadly, ask on [legal-discuss@](/foundation/mailinglists.html#foundation-legal) before contributing.
 
