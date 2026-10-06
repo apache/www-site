@@ -9,6 +9,9 @@ Redirect /apache-name /history
 
 Redirect 301 /press/media /press/
 
+# ATR redirect for new format PURLs - anything apache.org/xxx@yyy (the @ is effectively what identifies this as a PURL request)
+RewriteRule ^([^/@]+@[^/]+)/?$ https://release-catalog.apache.org/$1 [R=302,L]
+
 ErrorDocument 404 /404
 
 # Expose this for CSP builders
