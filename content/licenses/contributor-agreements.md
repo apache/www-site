@@ -104,8 +104,9 @@ The files you submit should be named
   - ccla.pdf and ccla.pdf.asc  for corporate agreements
   - software-grant.pdf and software-grant.pdf.asc for grants
 
-We do not accept zip files or other archives.
-We do not accept links to files; you must attach the files to the email.
+**We do not accept zip files or other archives.**
+
+**We do not accept links to files; you must attach the files to the email.**
 
 Note that typing your name in the field at the bottom of the document is not signing,
 regardless of the font that you use.
