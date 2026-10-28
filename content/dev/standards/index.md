@@ -17,7 +17,7 @@ Guides are available for projects that want to get involved with standards
 processes:
 
 -  <a href="/jcp/" target="_blank">Java Specification Requests</a>
--  The ASF has an officer for [W3C Relations](https://whimsy.apache.org/board/minutes/W3C_Relations.html)
+-  The ASF has an officer for [W3C Relations](/foundation/board/minutes/W3C_Relations.html)
 
 
 ### What is a reference implementation?  {#reference-implementation}
