@@ -143,6 +143,7 @@ that apparent, separate from any general project news.
   - You should seek input from your PMC, but it is mainly your report to the board on behalf of your project. The chair does not report
 to the PMC - the chair reports to the board (and ultimately to the ASF membership).
   - You can use the [**Apache Committee Reporter** tool](https://reporter.apache.org/) to simplify some data collection for your report.
+  - Submit the report with the [Board Agenda Tool](https://agenda.apache.org/meetings/current) (_BAT_, requires Apache login). Only PMC Chairs and ASF Members can use _BAT_. Other PMC members need to use the [Apache Committee Reporter](https://reporter.apache.org/) tool.
   - Examples of past project reports are in the [Board Meetings and Calendar](../foundation/board/calendar.html).
 
 Remember that, as in any committee, the chair is a **facilitator** and their role within the PMC

@@ -71,7 +71,7 @@ agenda with the [Board Agenda Tool][2] (requires Apache login).
 Reminders are then sent out to all PMCs about the due dates for reports for 
 the next meeting.  An early reminder (and a followup) is helpful given the distributed and all 
 volunteer nature of Apache PMCs.  Projects typically submit their reports to 
-the board (via the mailing list and by checking into Whimsy) anywhere from
+the board (via the mailing list and by using the [Board Agenda Tool][2]) anywhere from
 three weeks to a few hours beforehand (which may not be accepted
 if the directors don't have sufficient time to review them).
 
@@ -146,14 +146,17 @@ actions either at the next month's meeting, or in the PMC's next normal quarterl
 
 ## Board meeting tools  {#tools}
 
-With the creation of the [Apache Whimsy project](https://whimsy.apache.org/), we now have a number of 
-tools that aid in creation and management of the agenda; workflow 
-functions for submitting, commenting, and approving reports; and a handy, 
-categorized view of the current agenda and the minutes of past meetings.
+The [Board Agenda Tool][2] (_BAT_) provides tools that aid in creation and
+management of the agenda, and workflow functions for submitting, commenting,
+and approving reports.  It also gives a categorized view of the current agenda
+and the minutes of past meetings.
 
-While most Whimsy features are restricted to Apache Committers (and much of
-that is further restricted to Members, Officers, or even a specific officer),
-the [categorized listing of past board minutes](https://whimsy.apache.org/board/minutes/)
+_BAT_ requires an Apache login.  It is for PMC Chairs and ASF Members, and for
+the board and officers.  Other PMC members can use the
+[Apache Committee Reporter](https://reporter.apache.org/) tool to prepare
+their project's report.
+
+The [categorized listing of past board minutes](https://whimsy.apache.org/board/minutes/)
 is public.  This allows anyone to easily review all past board meetings by
 date, by PMC, or by major special resolutions.  We provide this access as a convenience. The official/canonical version of this data is
 in our [formal publication of all past board meeting minutes](/foundation/board/calendar.html)
