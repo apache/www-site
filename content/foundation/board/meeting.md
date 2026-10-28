@@ -156,7 +156,7 @@ the board and officers.  Other PMC members can use the
 [Apache Committee Reporter](https://reporter.apache.org/) tool to prepare
 their project's report.
 
-The [categorized listing of past board minutes](https://whimsy.apache.org/board/minutes/)
+The [categorized listing of past board minutes](https://www.apache.org/foundation/board/minutes/)
 is public.  This allows anyone to easily review all past board meetings by
 date, by PMC, or by major special resolutions.  We provide this access as a convenience. The official/canonical version of this data is
 in our [formal publication of all past board meeting minutes](/foundation/board/calendar.html)
