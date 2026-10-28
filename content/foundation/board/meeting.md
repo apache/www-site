@@ -71,7 +71,7 @@ agenda with the [Board Agenda Tool][2] (requires Apache login).
 Reminders are then sent out to all PMCs about the due dates for reports for 
 the next meeting.  An early reminder (and a followup) is helpful given the distributed and all 
 volunteer nature of Apache PMCs.  Projects typically submit their reports to 
-the board (via the mailing list and by using the [Board Agenda Tool][2]) anywhere from
+the board (by using the [Board Agenda Tool][2]) anywhere from
 three weeks to a few hours beforehand (which may not be accepted
 if the directors don't have sufficient time to review them).
 
