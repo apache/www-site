@@ -14,7 +14,7 @@ the board on a monthly basis.
 
 <div class=".pull-right" style="float:right; border-style:dotted; width:200px; padding:5px; margin:5px">
 
-See also Board Meeting Minutes: [Calendar View](/foundation/board/calendar.html) / [Categorized view](https://whimsy.apache.org/board/minutes/).
+See also Board Meeting Minutes: [Calendar View](/foundation/board/calendar.html) / [Categorized view](/foundation/board/minutes/).
 
 </div>
 

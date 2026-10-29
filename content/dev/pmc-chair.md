@@ -25,7 +25,7 @@ Please run through the following checklist **now** to take action to accept your
 - Chairs may attend [monthly Board meetings](https://apache.org/foundation/board/meeting#attend), and many Chairs have found it useful to see how Board meetings work.
 - You may want to review these *private* repositories for more information about the Board, reporting, and PMC governance.  These directories are private to ASF officers and ASF Members only, so do not share this information elsewhere.  You can use Subversion to checkout the directories below, or simply use your browser to login with your ASF credentials and view files.
   - `https://svn.apache.org/repos/private/foundation/officers` - data files and some tools about ICLAs and other records.
-  - `https://svn.apache.org/repos/private/foundation/board` - current Board meeting *agendas*, or see all past [Board *minutes*](https://whimsy.apache.org/board/minutes/).
+  - `https://svn.apache.org/repos/private/foundation/board` - current Board meeting *agendas*, or see all past [Board *minutes*](/foundation/board/minutes/).
   - `https://svn.apache.org/repos/private/committers/board` - official Board calendar and PMC committee-info.txt listings.
 - If your project website lists PMC members, be sure to update your name as the Chair. 
 - This is also a great time to *thank the outgoing PMC Chair* for their work!
