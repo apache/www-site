@@ -274,6 +274,67 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-07-15"><a href="2026/board_minutes_2026_07_15.html#attachment-AN">2026-07-15</a> &mdash; Charles Zhang<a class="headerlink" href="#2026-07-15" title="Permalink">&para;</a></h3>
+<pre># Apache InLong Board Report
+
+## Description
+
+The mission of Apache InLong is the creation and maintenance of software
+related to a one-stop data integration framework that provides automatic,
+secure, and reliable data transmission capabilities. InLong supports both batch
+and stream data processing at the same time, which offers great power to build
+data analysis, modeling, and other real-time applications based on streaming
+data.
+
+## Project Status
+
+Current project status: Ongoing, with moderate activity.
+
+Issues for the board: There are no issues requiring board attention at this time.
+
+## Membership Data
+
+Apache InLong was founded 2022-06-15 (4 years ago).
+
+There are currently 54 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+
+- No new PMC members. Last addition was Doley Zi on 2025-11-25.
+- No new committers. Last addition was Guang Li on 2025-09-05.
+
+## Project Activity
+
+The project is working on 2.4.0, which will be released
+in July. The main features and improvements include:
+
+- **SDK**: Transform SDK added multi-ProtoBuf file and nested-type
+  decode/encode, map node parsing, and List/Struct/Binary field encoding;
+  introduced `concat_struct`, `extract_struct`, and `extract_binary` functions;
+  Protobuf SQL alias parsing. DataProxy Go SDK improved worker selection,
+  connection timeout, and remote-address logging. Python SDK switched to
+  PEP-517 wheel builds. Common added a Json configuration module.
+- **Manager &amp; Security**: Fixed SQL injection and
+  `/api/cluster/testConnection` and `/api/node/testConnection` vulnerabilities;
+  added permission checks for streamsource deletion; set
+  `openapi.auth.enabled` default to `true`; various input-validation,
+  permission, and audit-query fixes.
+- **Audit**: Fixed high-concurrency thread-safety issues; routing data source
+  now supports domain names; fixed a ClassLoader leak caused by a static
+  `ScheduledExecutorService` in PulsarSink.
+- **Sort**: Fixed an NPE in `SortConfigUtil.checkUpdate` when
+  `DataFlowConfig.version` is null, which could stall config reload.
+
+## Community Health
+
+The community health looks good overall.
+
+- dev@inlong.apache.org had a 12% increase in traffic in the past quarter
+(46 emails compared to 41).
+
+The dev mailing list traffic picked up a bit, and the project is still
+undergoing normal iteration and evolution, with a slight rebound.</pre>
 <h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-AN">2026-04-15</a> &mdash; Charles Zhang<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
 <pre>## Description:
 The mission of Apache InLong is the creation and maintenance of software

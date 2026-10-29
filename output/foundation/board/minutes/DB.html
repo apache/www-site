@@ -320,6 +320,162 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-07-15"><a href="2026/board_minutes_2026_07_15.html#attachment-V">2026-07-15</a> &mdash; Jeffery Painter<a class="headerlink" href="#2026-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software
+licensed to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following sub-projects:
+
+o JDO      : focused on building the API and the TCK for compatibility
+testing of Java Data Object implementations providing data
+persistence.
+
+o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+
+Current project status: ongoing
+Issues for the board: none
+
+Please see the Project Activity section of our report for recent updates.
+
+## Membership Data:
+
+Apache DB was founded 2002-07-16 (24 years ago)
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+
+* No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+* No new committers. Last addition was Max Philipp Wriedt on 2023-04-15.
+
+## Project Activity:
+
+### Apache JDO
+
+The JDO project remains active and responsive, with regular participation in
+weekly project meetings and continued attention to release readiness, code
+quality, security posture, and build infrastructure.
+
+Recent work has focused on preparing the project for a future release. The
+community has continued working through issues identified by the Trusted
+Release process, including license header updates, RAT configuration issues,
+and project POM changes needed to support release validation. Several related
+pull requests were merged during the quarter, including fixes for Apache
+license headers and build configuration changes. The project also identified
+and reported a Trusted Release workflow issue in which a test vote was
+sent to
+the wrong mailing list, and the community is working with the appropriate ASF
+teams to resolve this before proceeding further.
+
+Release planning is currently tied to completion of the initial security-scan
+work. The project expects to revisit a possible JDO 3.2.2 release once the
+initial scan-related issues have been addressed.
+
+Security review has become a significant area of activity this quarter.  A draft project security threat model was proposed, along
+with
+SECURITY.md and AGENTS.md files to support external review. The project has
+requested a security scan using these files. The community is also monitoring
+ASF guidance and related work from other projects while questions around
+model
+access and external scanning are resolved.
+
+In parallel, the project reviewed results from an AI-assisted scan of the
+db-jdo repository, tracked under JDO-861. Several resulting issues were
+investigated, including proposed fixes for IntIdentity/LongIdentity
+comparison
+overflow and LegacyJava/JDOHelper-related concerns. Some findings were
+determined to be false positives or not applicable, while remaining items are
+being addressed before JDO-861 is closed.
+
+Code quality work also continued. The community is still reviewing SonarCloud
+findings under JDO-819 and JDO-823, including raw type warnings and cognitive
+complexity findings. Some reported issues require careful review because they
+relate to public API constraints or TCK structure where a straightforward
+code
+change may not be appropriate. In these cases, the project is evaluating
+whether to adjust code, annotate specific methods or interfaces, or otherwise
+document why a finding should be ignored.
+
+Additional ongoing technical discussions include:
+
+* Continuing investigation of JDO-812, which would raise the minimum
+  supported Java version to JDK 11.
+* Continued work on JDO-847 to generate SBOM files.
+* Review of SPDX and CycloneDX-related warnings in the build.
+* Follow-up on possible API enhancements, including Map.containsEntry-style
+  functionality.
+* Long-running discussion items such as Android compatibility, Java Records,
+  and possible future specification work.
+
+### Apache Torque
+
+Activity in the Torque project remains relatively light, but there was
+renewed
+technical discussion and development activity during the quarter.
+
+The main area of recent work has been support for the Java Time API. A new
+improvement issue was opened to replace use of java.util.Date with the
+java.time API. Initial patches were submitted for torque-runtime, followed by
+updates covering torque-template, generated primary key handling, tests, and
+documentation. The work has included mapping SQL date/time types to the
+corresponding Java Time classes, including LocalDate, LocalTime,
+LocalDateTime, OffsetDateTime, and OffsetTime.
+
+Testing of the Java Time work has identified some database and
+driver-specific
+issues, particularly around Derby support. The project discussed whether
+Derby
+remains a suitable test target given its retirement and limited support
+for the
+Java Time API. Subsequent testing shifted toward HSQLDB and PostgreSQL, with
+patches updated to address test failures and align behavior across supported
+databases.
+
+The community also discussed possible Java version upgrades for a future
+Torque
+release. One proposal suggested moving the next development version to Torque
+8.0-SNAPSHOT and raising the Java baseline from Java 17 to Java 21. The main
+motivation discussed was alignment with related Apache Turbine modernization
+work and potential database dependency considerations. The discussion also
+recognized that, as a library, Torque should be cautious about raising its
+minimum Java requirement too quickly because downstream applications may
+still
+depend on older Java versions.
+
+Other than these discussions and patches, project activity has remained
+modest.
+The Torque codebase remains stable, and the community continues to consider
+future direction around Java baseline, database support, and modernization of
+the runtime, templates, tests, and documentation.
+
+### Project-Level Updates
+
+No project-level issues require board attention at this time.
+
+## Community Health:
+
+The Apache DB project remains stable and in good health.
+
+The JDO subproject continues to show steady development and maintenance
+activity, with regular meeting participation, active review of pull requests,
+and ongoing attention to release readiness, security posture, code
+quality, and
+infrastructure improvements. The community is responsive to ASF-wide guidance
+around release process and security review.
+
+The Torque subproject remains quieter, but recent discussion and patch
+activity
+around Java Time support and future Java version requirements show that the
+community remains engaged in maintaining and modernizing the codebase.
+
+PMC engagement remains solid, with active participation in project
+discussions
+and decision-making. There are no current concerns requiring board attention.</pre>
 <h3 id="2026-04-15"><a href="2026/board_minutes_2026_04_15.html#attachment-V">2026-04-15</a> &mdash; Jeffery Painter<a class="headerlink" href="#2026-04-15" title="Permalink">&para;</a></h3>
 <pre>## Description:
 The mission of the Apache DB project is to create and maintain

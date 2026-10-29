@@ -241,6 +241,21 @@ most recent first. Generated from the published minutes.</p>
 <p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
 <p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
 <p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-07-15</td>
+<td><a href="2026/board_minutes_2026_07_15.html#section-7I">Appointed Rich Bowen</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
 <h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
 <table class="table">
 <thead>
@@ -254,9 +269,9 @@ most recent first. Generated from the published minutes.</p>
 <tbody>
 <tr>
 <td>2026-07-15</td>
-<td>Established, Rich Bowen as VP</td>
+<td><a href="2026/board_minutes_2026_07_15.html#section-7I">Establish the Apache Pony Mail Project</a></td>
 <td>special order</td>
-<td>approved, minutes pending approval</td>
+<td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
 <h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-BJ">2026-08-19</a> &mdash; Rich Bowen<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
@@ -361,6 +376,119 @@ Near-term priorities:
 This is the first of three required monthly reports following graduation
 (August, September, October 2026). After October, the project will move to its
 assigned quarterly rotation.</pre>
+<h3 id="2026-07-15"><a href="2026/board_minutes_2026_07_15.html#ponymail">2026-07-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2026-07-15" title="Permalink">&para;</a></h3>
+<pre>Pony Mail is a mail-archiving, archive viewing, and interaction
+service, that can be integrated with many email platforms.
+
+Pony Mail has been incubating since 2016-05-27.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Cut the first formal ASF release of the Foal (Python) rewrite.
+2. Start the graduation discussion on general@incubator.
+3. Migrate the project website to reflect current Foal documentation.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+CVE-2026-41873 (critical severity) was published 2026-04-28
+disclosing an admin account takeover via HTTP request smuggling in
+the legacy Lua implementation. The Lua version is retired and
+unsupported; the Python Foal rewrite &mdash; which is the active
+development line and powers lists.apache.org &mdash; is not affected.
+This CVE is resolved from the project's perspective.
+
+ASF Infrastructure requested confirmation on the
+foal-demo.ponymail.apache.org DNS entry (INFRA-27692). The PPMC
+will respond.
+
+### How has the community developed since the last report?
+
+Active contributors this quarter: rbowen, wave (Dave Fisher),
+sbp (Sean Palmer), sebb, jmclean (Justin Mclean), Bob Thomson,
+Arnout Engelen. Code review activity increased in June with
+multiple PRs reviewed and merged collaboratively. The project
+continues to benefit from the existing committer base who are
+familiar with the codebase and operational deployment at the ASF.
+
+### How has the project developed since the last report?
+
+Significant documentation and code activity this quarter:
+
+Merged PRs:
+- #313: API documentation for all Foal HTTP endpoints
+- #314: Search query syntax documentation
+- #316: Configuration reference for all ponymail.yaml options
+- #317: Comprehensive documentation suite (installation,
+  architecture, operator guide, user guide, admin guide, plugin
+  guide, API client guide, release process, AGENTS.md)
+
+Open PRs:
+- #315: URL-encode search queries in pushState URLs
+- #318: Filter stopwords from word-cloud results
+- #319: Expanded database schema documentation
+
+Infrastructure:
+- sebb fixed CI workflows (pinned Actions, mypy, indentation)
+- ASF Infra applied branch protection rulesets to all repos
+- Transitioned documentation from ElasticSearch to OpenSearch
+
+### How would you assess the podling's maturity?
+
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+Commentary: Pony Mail Foal is the production system powering
+lists.apache.org for the entire ASF. The codebase is mature,
+actively maintained, and has a robust PPMC. The project is
+ready to begin the graduation process.
+
+### Date of last release:
+
+No formal ASF release yet. The software is deployed in production
+at the ASF from the main branch.
+
+### When were the last committers or PPMC members elected?
+
+The PPMC roster has been stable. Current PPMC (11 members):
+humbedooh, wave, jim, johndament, rbowen, rubys, sbp, sebb,
+curcuru, pctony, ucb.
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Are things falling through the cracks? If so, please list any open
+issues that need to be addressed.
+
+No. The project intends to start the graduation discussion
+following this report.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes. The Pony Mail name and brand are managed by the PPMC.
+No known third-party misuse.
+
+### Are 3rd parties respecting and correctly using the podlings name and
+brand? If not what actions has the PPMC taken to correct this? Has the VP,
+Brand approved the project name?
+
+Yes. No issues. VP, Brand has approved the project name.
+
+### Signed-off-by:
+
+- [ ] (ponymail) John D. Ament
+- [X] (ponymail) Dave Fisher
+
+### Comments:
+
+### IPMC/Shepherd notes:
+
+We see no reason not to graduate. Thanks Rich for creating this report.</pre>
 <h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#ponymail">2025-11-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
 <pre>Pony Mail is a mail-archiving, archive viewing, and interaction service,
 that can be integrated with many email platforms.

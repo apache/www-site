@@ -408,6 +408,166 @@ avoid those in the future.
 A sustained good first issue programme has raised around 60 curated newcomer
 issues, with 45 closed and roughly 25 distinct external contributors, with
 several now repeat contributors.</pre>
+<h3 id="2026-07-15"><a href="2026/board_minutes_2026_07_15.html#attachment-AX">2026-07-15</a> &mdash; Jarek Potiuk<a class="headerlink" href="#2026-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Magpie is responsible for the creation and maintenance of software
+related to agent-assisted repository maintainership and development &mdash;
+including issue and pull-request triage, contributor mentoring, agent-drafted
+remediation, developer-side development-cycle skills, and narrowly-scoped
+fix-and-merge automation. Magpie is deliberately governance-agnostic: it is
+built to be adopted by ASF projects and by non-ASF open-source projects alike,
+with no ASF-only assumption baked into the install path.
+
+## Project Status:
+
+### Status:
+
+New Top-Level Project, established directly by Board resolution (not via the
+Incubator). Status: ongoing, high activity &mdash; in the bootstrapping phase. The
+project is standing up its infrastructure and framework, onboarding its
+founding PMC, and preparing its first Apache release. No issues require Board
+attention at this time.
+
+* Established: 2026-06-17 (name confirmed via PODLINGSEARCH during the 8&ndash;12
+  May 2026 naming discussion).
+* PMC: 22 members at establishment.
+* Chair: Jarek Potiuk.
+* No committers or PMC members have been added or removed since establishment
+  (project is newly formed).
+* Diversity: the founding PMC spans a broad set of ASF projects (Airflow,
+  Arrow, Iceberg, Polaris, Groovy, Grails, Superset, Beam, Pulsar,
+  Log4j/Logging Services, Mahout, Doris, Geode, Accumulo, HBase, Lucene/Solr,
+  Tomcat, ComDev, Incubator, Security, Training) and multiple organisational
+  affiliations, with no single employer holding a majority &mdash; a deliberate
+  design goal given the contributor-data surface the project touches.
+* There are first new adopters discussing Magpie Adoption (Apache JMeter in
+  the ASF, but also we have a discussion with Eclipse Foundation Leadership
+  and we have active discussions with Python Software Foundation - and in the
+  week of 13-19 of July at Europython we are planning to work with release
+  managers and triagers of Python to help them to adopt Magpie and possibly
+  expose their SKILLs via trusted 3rd-party mechanism of Magpie.
+
+### Issues for the board:
+
+The announcement of Apache Magpie triggered immediate adoption interest
+aligning perfectly with our core mission. This momentum extends well beyond
+the ASF; we are seeing active usage and contributions from independent
+maintainers, alongside formal interest from both the Python Software
+Foundation and the Eclipse Foundation.
+
+This "grass-roots" pull comes from maintainers seeking to reclaim their time
+through Magpie's automation. While this outreach intersects with broader
+initiatives like RAI, the PMC views this as project-specific work addressing
+universal OSS maintainership challenges. We intend to continue these
+cross-organizational collaborations&mdash;engaging Marketing &amp; Publicity should they
+evolve into formal public partnerships&mdash;to ensure Magpie remains a
+governance-agnostic solution for the entire ecosystem.
+
+Question to the board:
+
+Does the Board have any objections to the PMC pursuing these relationships
+with other open-source organizations, or do you have any other expectations or
+constraints regarding them?
+
+### Releases
+
+* No releases yet. The project has made no Apache release to date
+* The first release, Apache Magpie 0.1.0, is being run
+  https://lists.apache.org/thread/4cxf84q5vwxd85dj5yx6vhj2bzr46111.
+* Magpie intended to cut its releases through the Apache Trusted Releases
+  (ATR) platform (ASF Tooling) with traditional manual release process as
+  fallback - dogfooding its own release process, which turned out to be good
+  idea as we could fallback to manual process when ATR hit some
+  un-workaroundable issues.
+* Releasing Magpie using release SKILS in Magpie is a fantastic way to
+  dog-food what we are doing and shows the true value of Magpie - the whole
+  release process was generally following &ldquo;release Magpie&rdquo; Agentic command -
+  with conversational interface guiding release manager - including automated
+  installation of dependencies, generating keys etc. It was as easy as
+  following the instructions of the agent.
+
+
+## Membership Data:
+Apache Magpie was founded 2026-06-17 (22 days ago)
+There are currently 22 committers and 22 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- No new committers were added.
+
+## Project Activity:
+
+Since establishment the project has focused on infrastructure and framework
+build-out:
+ * Repository and framework. github.com/apache/magpie is stood up with the
+   skills framework, contributor documentation, and CI. The framework ships as
+   reusable "skills" a project adopts via a snapshot-based adoption mechanism,
+   with per-adopter and per-user configuration layers and a strict
+   human-in-the-loop state-change discipline (the agent drafts; the human
+   acts).
+* Magpie Website reflecting Maintainer focus and agreed Taxonomy Targeted to
+  maintainers who are main audience for Magpie has been published - promotion
+  of the &ldquo;Give maintainers time back&rdquo; theme is happening in various media to
+  attract contributors: https://magpie.apache.org/
+* Skill families in place across the project's agentic modes: security-issue
+  handling (intake &rarr; triage &rarr; CVE allocation &rarr; fix &rarr; disclosure), release
+  management (full lifecycle, both svnpubsub and ATR backends), PR management
+  (triage, review, quick-merge, stats), issue management (triage,
+  deduplication, reproduction, stale sweeps), contributor/committer
+  (nomination, activity, onboarding), and audit (CI-runner, dependency,
+  license-compliance, flaky-test).
+* Pilots. Onboarding friendly pilot projects &mdash; an ASF PMC running the full
+  security-issue flow (Apache Airflow, Apache Groovy, Apache Burr, Apache
+  JMeter)
+* Trusted-release collaboration. Working with the ASF Tooling team on the ATR
+  platform, adopting it for Magpie's own first release as an early real-world
+  test.
+* Vendor neutrality - discussions started on vendor neutrality of the project
+  being aspirational vs. achieved - this resulted in implementing components
+  and defining contracts that allow Magpie to claim Vendor neutrality status.
+  Vendor neutrality is automatically assessed at
+  https://magpie.apache.org/#vendor-neutrality The current state: 10/10
+  Capability contracts 100% work across 2+ vendors 69/69 Skills carry no
+  vendor lock-in 22/22 Agent harness 100% harness-neutral
+* Organization agnosticism - discussions started with Python Software
+  Foundation and Eclipse Foundation on a way for Magpie to become a way to
+  also distribute other organization skills via trusted skills
+  https://magpie.apache.org/#organisation-agnostic
+
+## Community Health:
+
+Healthy for a project at this stage. Development activity is high (framework
+and skill build-out proceeding steadily); the PMC is engaged and drawn from
+experienced ASF contributors with a bias toward developer-experience and
+community-development work.
+
+Mailing lists (dev@, private@, commits@) and GitHub Issues are active for
+coordination. The immediate community-building priorities are landing the
+first release, converting pilot usage into external adopters, and beginning to
+grow committership beyond the founding grant.
+
+We have a great deal of contributions - mainly from involved founding team
+members. Jarek Potiuk, Justin McLean - who both happen to have more time to
+dedicate for Magpie - are most active contributors. However we make an effort
+to get more feedback from other founding team members in the decision making
+process and project daily operations - we also have founding team members
+contributing and new, individual contributors who contribute occasionally.
+
+We have active discussion on Slack #magpie channel created on ASF slack, and
+we are discussing about adding extra channels (Discord) for ad-hoc discussions
+and ASF slack adds friction in adding non-ASF community members - that have to
+be personally invited and approved as guests, we want to make sure we are as
+open as inclusive as possible to all kinds of organizations and individuals -
+in- and out- of ASF.
+
+The &ldquo;Mischief Makers&rdquo; is a term we seem to be coining to name community
+members - which seems a pretty natural choice.
+
+Thanks to Agentic assistance it progresses very fast - we have now 10
+contracts, 5 substrates, 69 skills, 45 tools, 9 skill families that are ready
+to serve Maintainers all-around globe.</pre>
 
 </div>  </main>
   <section class="newsletter-signup grad-purple">
