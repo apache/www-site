@@ -26,7 +26,7 @@ Marketing & Publicity
 - [Publicity Guidelines for Incubating Projects](https://incubator.apache.org/guides/branding.html)
 - [Publicity Guidelines for Apache Top-Level Projects](/press/#project-guides)
 - [Media & Analyst Training (Introductory Session)](pdf/ASF-Media-and-Analyst-Training-Beginner-Self2019.pdf)
-- [Official ASF logo, Apache Feather, and "Powered By Apache" assets](/foundation/press/kit/) 
+- [Official ASF logo, Apache Oak Leaf, and "Powered By Apache" assets](/foundation/press/kit/) 
 - [Central Services Support Request](/foundation/press/central-services-request)
 - [Feathercast -- the voice of the ASF](https://feathercast.apache.org/) 
 - [ASF on Twitter](https://twitter.com/TheASF) 
