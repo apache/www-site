@@ -15,7 +15,7 @@ The Apache Software Foundation ("ASF") is based in the United States and is reco
 - [The Apache Way](/theapacheway/index.html) is our set of behaviors for community-led projects.
 - We work on [many publicly archived mailing lists](https://lists.apache.org/) for the [100's of ASF projects](https://projects.apache.org/).
 - All [ASF code is free to use](/free/) and provided under [our Apache-2.0 license](/licenses/), and we have a [license FAQ](/legal/resolved.html).
-- We publish [Board of Directors minutes](https://whimsy.apache.org/board/minutes/) as well as [corporate public records](/foundation/records/).
+- We publish [Board of Directors minutes](/foundation/board/minutes/) as well as [corporate public records](/foundation/records/).
 - The [ASF infrastructure team](https://infra.apache.org/) can **only** answer questions about the ASF's own officially provided services.
 
 ## Codes Of Conduct And Communication Etiquette {#conduct}

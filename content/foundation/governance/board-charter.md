@@ -28,7 +28,7 @@ While the Board has traditionally taken on many activities, described below, its
 ### 3.1 Governance and Legal Oversight
 
 - Ensure compliance with applicable laws, regulations, and [ASF Bylaws](https://www.apache.org/foundation/bylaws.html).
-- Provide oversight of all ASF projects to ensure they operate within [ASF's mission](https://www.apache.org/foundation/) and principles and follow [ASF policy](https://www.apache.org/board/policies). Review [quarterly project reports](https://whimsy.apache.org/board/minutes/) to monitor project status and support oversight.
+- Provide oversight of all ASF projects to ensure they operate within [ASF's mission](https://www.apache.org/foundation/) and principles and follow [ASF policy](https://www.apache.org/board/policies). Review [quarterly project reports](/foundation/board/minutes/) to monitor project status and support oversight.
 - Perform their fiduciary duties as required by their moral, ethical, and legal responsibilities.
 
 ### 3.2 Financial Oversight
@@ -115,7 +115,7 @@ The Board encourages [diverse representation and inclusive participation in lead
 - Quorum and voting procedures are governed by the [ASF Bylaws](https://www.apache.org/foundation/bylaws.html).
 - The Board may move the meeting into executive session for consideration of confidential or personnel issues.
 - ASF project chairs and Members are welcome to attend meetings, except during executive sessions.
-- Board and project [reports are made publicly available](https://whimsy.apache.org/board/minutes/) to promote transparency, excluding content from executive sessions.
+- Board and project [reports are made publicly available](/foundation/board/minutes/) to promote transparency, excluding content from executive sessions.
 - Reports are typically reviewed and approved for publication at the next Board meeting.
 
 ### 5.1 Optional Board Face-to-Face Meetings

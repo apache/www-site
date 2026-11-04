@@ -174,7 +174,7 @@ committers.
 ## Key Differences from 2015 targeted sponsorship proposal
 
 The original idea was proposed by Ross Gardler at
-[Board Meeting Minutes, January 21, 2015](https://whimsy.apache.org/board/minutes/President.html#minutes_2015_01_21):
+[Board Meeting Minutes, January 21, 2015](/foundation/board/minutes/President.html#2015-01-21):
 
 - This is not a proof of concept.
 - We are aligning in-kind Infrastructure Sponsorship with Targeted Sponsorship. As such,
