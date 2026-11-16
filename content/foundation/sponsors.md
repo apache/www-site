@@ -73,13 +73,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
 
 
 <h3 class="h1"style="text-align: center;">Gold Sponsors:</h3>  <!-- 223x100 --> <!-- Gold images should be exact size for CSS -->
-<div id="gold" class="sponsor-cards sponsor-cards--gold mb-xl">
-    <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="https://aiven.io/">
-            <img src="images/aiven-gold.png"/>
-            <div class="logo-caption">Aiven</div>
-        </a>
-    </div>
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://apache.org/">
             <img src="images/blank.png"/>
@@ -120,6 +113,13 @@ read our [sponsorship page](/foundation/sponsorship.html).
 
 
 <h3 class="h1"style="text-align: center;">Silver Sponsors:</h3>  <!-- 150x67 -->
+<div id="silver" class="sponsor-cards sponsor-cards--silver mb-xl">
+    <div class="logo-card">
+        <a target="_blank" rel="sponsored" href="https://aiven.io/">
+            <img src="images/aiven-gold.png"/>
+            <div class="logo-caption">Aiven</div>
+        </a>
+    </div>
 <div id="silver" class="sponsor-cards sponsor-cards--silver mb-xl">
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://www.americanexpress.com/en-us/careers/career-areas/technology/">
