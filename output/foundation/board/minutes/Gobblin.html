@@ -1,0 +1,3295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Gobblin | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Gobblin';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Gobblin';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Gobblin</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="gobblin">Gobblin<a class="headerlink" href="#gobblin" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-01-20</td>
+<td><a href="2021/board_minutes_2021_01_20.html#section-7B">Appointed Abhishek Tiwari</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-01-20</td>
+<td><a href="2021/board_minutes_2021_01_20.html#section-7B">Establish the Apache Gobblin Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-AB">2026-06-17</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (5 years ago)
+There are currently 23 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Abhishek Mahendra Jain on 2025-01-18.
+
+## Project Activity:
+_ Removed WARN log aggregation from AutomaticTroubleshooter to reduce noisy
+  issue reporting.
+- Fixed RecursiveCopyableDataset handling for empty source directories by
+  skipping directory entries during recursive copy.
+- Restored backward compatibility in Gobblin-Iceberg partition handling where
+  CURRENT_DATE produces the expected '-00' suffix.
+- Fixed a null pointer exception when accessing the current snapshot for
+  Iceberg tables with no snapshot.
+- Increased Temporal gRPC retry budget to better tolerate throttling and
+  improve workflow resilience.
+- Added configurable partition filtering with hourly lookback support for
+  Gobblin-Iceberg workflows.
+- Added flow-group prefix based concurrency overrides for better control of
+  workflow execution.
+- Added batched parallel processing to ManifestBasedDataset to improve
+  copy-discovery and manifest-processing performance.
+- Tuned RPC retry policy to tolerate short Temporal gRPC throttling windows.
+- Parallelized flow compilation on the submission path to improve GaaS
+  submission latency.
+
+## Community Health:
+Since the Mar 2026 report, there have been 10 commits. Activity this quarter
+continued to focus on Gobblin reliability, GaaS orchestration
+performance, Iceberg compatibility, and manifest-based copy improvements.
+
+Recent contributions came from multiple contributors across the Gobblin
+community, including both established and relatively newer contributors.
+Abhishek Mahendra Jain and Vivek Rai were voted in Jan, 2025 as committers. We
+constantly look for consistent contributors to vote them in as Committers.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-AD">2026-03-18</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing Issues for the board: None
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (5 years ago) There are currently 23
+committers and 12 PMC members in this project. The Committer-to-PMC ratio is
+roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Abhishek Mahendra Jain on 2025-01-18.
+
+## Project Activity:
+- Enabled independent dynamic scaling for different activities within a
+  workflow, including memory and container configuration per stage and proper
+  queue routing.
+- Added fast-failure support for workflows on quota-exceeded and other
+  non-retryable exceptions to surface errors sooner.
+- Implemented Orchestration Layer issue capturing to surface and emit
+  service-layer errors as structured issues.
+- Added configurable timeout to GoblinTaskRunner shutdown and improved metrics
+  reporting lifecycle ordering.
+- Enhanced Iceberg source lineage tracking by adding fsUri and missing
+  source/destination metadata to dataset descriptors.
+- Added a configurable skip-permission-check flag for files already existing
+  at the target location, improving copy-discovery performance.
+- Fixed incorrect job execution ID resolution when fetching job status in GaaS
+  flows, with safe fallback handling and added unit tests.
+- Added cleanup logic for staging directories during graceful flow shutdown,
+  including GRACEFUL_SHUTDOWN signaling in the Yarn launcher.
+- Made Orchestrator MDM metric dimensions configurable for job-success events.
+- Updated JAR cache directory partitioning to bi-monthly intervals.
+
+## Community Health:
+- Since Sep 2025, there have been 12 commits - 9 were from relatively new,
+  non-committer contributors.
+- Abhishek Mahendra Jain and Vivek Rai were voted in Jan, 2025 as committers.
+  We constantly look for consistent contributors to vote them in as
+  Committers.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-AD">2025-12-17</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (5 years ago)
+There are currently 23 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Abhishek Mahendra Jain on 2025-01-18.
+
+## Project Activity:
+- Added certificate-based authentication support in MySQL shared-Gobblin
+  modules.
+- Enhanced commit policies by enabling partial commits only when explicitly
+  configured.
+- Introduced PushMessagesSync API to support synchronous GTE emission.
+- Improved Apache Iceberg-based ingestion:
+- - Added pre-publish steps for IcebergSource
+- - Added partition-aware extractors for Iceberg file copy
+- - Enabled schema evolution for partition copies
+- - Enabled constructing Iceberg data files during commit for efficiency
+- - Removed unsupported cipher suites from default SSL settings.
+- Made AvroUtils compatible with Avro 1.10 to ensure broader schema
+  interoperability.
+- Cleaned up stats by removing dataset-URN-specific properties.
+- Fixed multiple file-system permission/ACL consistency issues for paths that
+  already exist at the destination.
+- Added ability to access the datastate store during work discovery.
+- Emitted job-level metrics at RM level for improved observability.
+- Made DAG action/spec store monitor initialization configuration-driven.
+- Rewrote and optimized WorkUnit serialization, including introducing random
+  IDs when recovery helper is not initialized.
+- Last Release date: 30th August, 2023.
+
+## Community Health:
+- Since Sep 2025, there have been 19 commits - 13 were from relatively new,
+ non-committer contributors.
+- Abhishek Mahendra Jain and Vivek Rai were voted in Jan, 2025 as committers.
+ We constantly look for consistent contributors to vote them in as
+ Committers.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-AC">2025-09-24</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (4 years ago)
+There are currently 23 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Abhishek Mahendra Jain on 2025-01-18.
+- Vivek Rai was added as committer on 2025-01-18.
+
+## Project Activity:
+- Added an error-classification framework that prioritizes and tags job
+  failures using configurable pattern matching, integrated with existing issue
+  handling.
+- Added emission of a flow-level event when a flow deadline is exceeded to
+  improve SLA tracking.
+- Added emission of metrics when DAG action fails, improving observability of
+  orchestration failures.
+- Enhanced tasks with no effective copy work to be marked for data quality
+  evaluation, alongwith bytes-read/bytes-written metrics.
+- Optimized Apache Iceberg data-file payloads from byte array to base64
+  strings for significantly faster (and lower-memory) (de)serialization.
+- Enhanced construction of Apache Iceberg data-file lists during the commit
+  step (instead of accumulating everything earlier), reducing heavy
+  serialization/deserialization and proven on a 35 TB/66k-partition copy.
+- Added improvement to propagate file-system job properties into WorkUnit
+  metadata to carry FS context through workflows.
+- Removed an unnecessary CopyEntity deserialization by reusing the in-scope
+  object, shaving overhead in copy flows.
+- Added a write-path optimization for serialized WorkUnits.
+- Last Release date: 30th August, 2023.
+
+## Community Health:
+- Since June 2025, there have been 17 commits - all made by relatively new,
+  non-committer contributors.
+- Abhishek Mahendra Jain and Vivek Rai were voted in Jan, 2025 as committers.
+  We constantly look for consistent contributors to vote them in as
+  Committers.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-X">2025-06-18</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (4 years ago)
+There are currently 23 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Abhishek Mahendra Jain on 2025-01-18.
+- Vivek Rai was added as committer on 2025-01-18.
+
+## Project Activity:
+- Fixed ACL mismatch during manifest-based copy by removing destination ACLs
+  after directory creation and copying source directory ACLs.
+- Made the temporal unique classifier GaaS attempt-aware for better tracking
+  of job attempts.
+- Fixed the issue of an extra permission bit being set in Manifest-based
+  DistCp.
+- Added a data quality field in GaaSJobObservabilityEvent to enhance
+  observability of job quality.
+- Support added for Delete Manifests in Apache Iceberg Full Table Replication.
+- Support added for more fine grained tracking by switching from cumulative to
+  delta aggregation in Open Telemetry metrics.
+- Handled exceptions in DagProcessingEngine to log errors instead of throwing
+  exceptions, preventing thread termination and allowing continued Dag
+  processing.
+- Made Orchestrator support generic by replacing Azkaban execution ID with
+  GaaS execution ID, while ensuring backward compatibility.
+- Added support for dynamic container scaling, based on target completion time
+  and work unit count, to optimize resource allocation and improve job
+  efficiency.
+
+* Last Release date: 30th August, 2023.
+
+## Community Health:
+- There have been 12 commits since Mar 2025.
+- 8 commits have been from non-committers.
+- Abhishek Mahendra Jain and Vivek Rai were voted in Jan, 2025 as
+ committers. We constantly look for consistent contributors to vote them in
+ as Committers.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-Y">2025-03-19</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-20 (4 years ago)
+There are currently 23 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-20.
+- Abhishek Mahendra Jain was added as committer on 2025-01-19
+- Vivek Rai was added as committer on 2025-01-19
+
+## Project Activity:
+- Stablized DagProcessingEngine thread termination through graceful exception
+  handling
+- Parameterized ActivityOptions creation
+- Expanded Activity to support SubmitGTE activity
+- Upgraded Hadoop-Azure-Datalake support
+- Modified Temporal task queue name due to length constraints
+- Fixed Temporal metrics by closing scope on job completion
+- Added Temportal worker metrics
+- Improved ExecutorService to do a graceful shutdown of Temporal Application
+  Master
+- Added ActivityType &amp; HeartBeats for Temporal Activities
+- Added ContainerCompletion callback support in DynamicScalingYarnService
+- Defined Initializer.AfterInitializeMemento for Gobblin on Temporal to tunnel
+  state from GenerateWorkUnits to CommitActivity
+- Added support to emit Gobblin on Temporal GTEs to time WorkUnit preparation
+- Added support for Gobblin on Temporal Dynamic Auto-Scaling using heuristics
+  based on WorkUnitsSizeSummary
+- Enhanced GoT observability with WorkUnitsSizeSummary and WorkUnitSizeInfo
+- Support to set default authenticator in Yarn Temporal containers
+- Support to proceed with commit in case of exception from Temporal workload
+  execution
+- Added Gobblin on Temporal YarnService Integration with DynamicScaling
+- Fixed other issues like Nan while generating size summary, cleanup of
+  workdir in Gobblin on Temporal execution, handling of non transient
+  exceptions, avoid shutting down QueueProcessor on non-InterruptedException
+
+* Last Release date: 30th August, 2023
+
+## Community Health:
+- There have been 34 commits since December 2024.
+- 4 commits have been from non-committers.
+- Abhishek Mahendra Jain and Vivek Rai were voted in Jan, 2025 as a
+  committers. We constantly look for consistent contributors to vote them in
+  as Committers.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-Y">2024-12-18</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (4 years ago)
+There are currently 21 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Kip Kohn on 2024-07-09.
+
+## Project Activity:
+- Enhanced GoT observability with WorkUnitsSizeSummary and WorkUnitSizeInfo
+- Simplify config by setting default authenticator in Yarn Temporal containers
+- GoT YarnService integrated with DynamicScaling
+- Prevent issues by avoiding Adhoc flow spec addition for non leasable entity
+- Support for sending proxy jvm args to Yarn AM and Containers
+- Streamlined log messages for easier debugging of GaaS multi-active DAG
+  processing
+- Fix NPE while overwrite if table has no previous snapshot
+- Support to allow filtering of Hive datasets by underlying HDFS folder
+  location
+- Defined Gobblin-on-Temporal dynamic ScalingDirectives with parser and
+  FsScalingDirectiveSource
+- Added Azkaban fields in RMAppSummaryEvent for GoT jobs
+- Support added for partial commit semantic from CopyDataPublisher
+- Added default value for OpenTelemetry attribute
+- Added Iceberg TableMetadata Validator
+- Config support to set logExporter classname
+- Optimization to only load added jars in the cache
+- Support for configuring openTelemetry metric exporter as logExporter
+- Added support for partition level copy in Iceberg distcp
+- Support to copy table properties in iceberg distcp
+- Fix bug where empty delete activity result was not deserialized
+
+* Last Release date: 30th August, 2023
+
+## Community Health:
+- There have been 32 commits since September 2024.
+- 15 commits have been from non-committers.
+- Kip Kohn was voted in June, 2024 as a committer. We constantly
+ look for consistent contributors to vote them in as Committers.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-X">2024-09-18</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing.
+Issues for the board: None.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (4 years ago)
+There are currently 21 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- Kip Kohn was added as committer on 2024-06-29
+
+## Project Activity:
+* Enhanced Gobblin writers to support atomic commits
+* Improvement to consider flows that run beyond job start &amp; finish deadlines
+  during concurrency checks
+* Ability to trigger cancellation flow events when job is killed by TTL
+  timeouts
+* Simplified and consolidated various resource handlers for flow configs
+* Fix to prevent GenerateWorkUnitsImpl from inadvertently cleaning up
+  intermediate data
+* Fix to handle concurrent DAG evaluate for cancelled DAG nodes consistently
+* Fix of bugs related to determine if DAG has been terminated or not
+* For better status update, mark all dependent jobs skipped for a cancelled
+  job
+* Addition of job future handler for Spec producer
+* Capability to ship logs to OpenTelemetry for debugging
+* Ability to set flow event field in DAG and emit events when flow is
+  submitted for execution
+* Performance improvement by processing of all DAG action events in parallel
+  at startup
+* Fix of race condition between DAG node addition and deletion in DAG
+* Fix of bugs in set permission step for files
+* Improvement to avoid emission of GaaSObservabilityEvent for a failed jobs
+  which is being retried
+* Ability to remote set permission step for pre-existing directories
+* Ability to limit retries to transient failures
+* Ability to redirect kill requests to DAG proc engine
+* Capability to create re-evaluate DAG action for jobs in pending_retry state
+* Fix for marking DAG actions appropriately
+* Opimization for number of network calls while fetching Kafka offsets during
+  startup
+* Ability to ignore addition of deadline DAG actions if already present
+* Updates to Hive retention to add table location retention dataset root
+* Ability to show delta between consumer and producer ends
+* Ability to process headbeat DAG action CDC messages with empty
+  FlowExecutionId
+* Ability to configure retry exception predicate in RetryerFactory
+* Implementation of new DAG node state store
+* Addition of logging to DAG management and DAGActionReminderScheduler
+* Fix to delete of adhoc flowspecs from flowcatalog
+* Addition of event time to DAG Action reminder key
+* Addition of safety check to ensure destination path does not exist before
+  renaming during Gobblin compaction
+* Fix in GaaS to update flowgrpah and templates if file lengths are same
+  between changes
+* Ability to set owner / group recursively through ancestors in manifest
+  distcp when pre-creating directories before commit
+* Ability to retry transient SQL exceptions
+* Ability to validate DAG actions in DAG procs
+* Fix API response for flow executions to return 404 when flow execution
+  doesn't exists
+* Enhancement in DatasetHiveSchemaContainsNonOptionalUnion to support optional
+  database name
+* Several other minor fixes and improvements
+
+* Last Release date: 30th August, 2023
+
+## Community Health:
+- There have been 78 commits since June 2024.
+- 25 commits have been from non-committers.
+- Kip Kohn was voted in June, 2024 as a committer. We constantly
+ look for consistent contributors to vote them in as Committers.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-Z">2024-06-19</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing.
+Issues for the board: None.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (3 years ago)
+There are currently 20 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Arjun Singh Bora on 2023-10-09.
+
+## Project Activity:
+
+* Feature added to disable DAG manager when DAG proc engine is enabled.
+* Retry logic added to Iceberg replication.
+* Support to delete triggers whenever deadline enforcement DAG actions are
+  deleted.
+* Increased ExecuteGobblinWorkflow &amp; WorkFulfillmentWorker execution
+  concurrency.
+* Optimize max connections to DB through Docker.
+* Support for long execution ids.
+* Changed permissions setup before commit for consistent ACLs.
+* Capability to handle multiple job runs in DAG procs.
+* Enforcement to not run DAG prod code when DAG prog engine is not enabled.
+* Clean-up of config ambiguity.
+* Support for connection timeout option in Couchbase writer.
+* Fix in JobSpec so that properties are fully reflected from Job configs.
+* Fix of permission issues with chid directories in CopyDataPublisher.
+* Addition of DAG action store within DAGManagementStateStore.
+* Addition of execution start timer to Temporal.
+* Support for previous event time for lease arbitration of reminder DAG
+  actions.
+* Addition of eventTimeMillis to leaseAttemptStatus for adhoc flows where
+  flowExecutionId is different than the event time of the lease.
+* Implementation of DAG proces to enforce job start deadline and DAG
+  completion deadline.
+* Support to make offset range in Gobblin Metadata pipeline configurable.
+* Improvement to not prematurely initialize DAGManagementStateStore.
+* Improvement to ensure Orchestrator cleans up FlowSpec even when
+  orchestration fails.
+* Addition of GaaSObservabilityEvent for better insights into GaaS operations.
+* Support for resuming DAG proc.
+* Support to release containers which are running Helix tasks and stuck in any
+  state.
+* Addition of settings to allow for fully cleanup in GobblinYarnAppLauncher.
+* Addition of config to fail Gobblin Distcp writer if setting permissions
+  fails.
+* Integration of AutomaticTroubleShooter with Gobblin on Temporal.
+* Generalization of ProcessWorkUnit beyond CopyEntity in Gobblin on Temporal.
+* Addition of loggin exceptions in HighLevelConsumer queue consumption.
+* Support to set execute bit only for new folders in manifest Distcp.
+* Support to handle multiple failure scenarios in multi-leader compilation
+  startup.
+* Improvement to start DAGActionMonitor only after its dependencies are ready.
+* Other misc fixes and improvement in  DAGProcessingEngine, Telemetry,
+  ComparableWatermark, CommitActivity, FlowLaunchHandler, DAGActionStore,
+  FlowGraph validation, CopySource, SchedulerLeaseArbiter, Icerberg file
+  metrics.
+
+* Last Release date: 30th August, 2023
+
+## Community Health:
+- There have been 60 commits since March 2024.
+- 22 commits have been from non-committers.
+- Arjun Singh Bora was voted in October, 2023 as a committer. We constantly
+ look for consistent contributors to vote them in as Committers.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-AA">2024-03-20</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing.
+Issues for the board: None.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (3 years ago)
+There are currently 20 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Arjun Singh Bora on 2023-10-09.
+
+## Project Activity:
+
+* Added Temporal metadata tags to temporal parent workflow for GaaS
+  communication
+* Implemented LaunchDagProc to handle new dag launches
+* Added Helix-free Yarn app launcher
+* Improved logic to set permissions and ACL as appropriate
+* Implemented Distributed Data Movement (DDM) Gobblin-on-Temporal end-to-end
+  Workflow for arbitrary job config
+* Generalized lease arbiter after patch
+* Added an iterator for fetching dataset versions with glob and in batch
+* Fixed code to use correct root path when finding relative paths on
+  destination side
+* Implemented Distributed Data Movement (DDM) Gobblin-on-Temporal WorkUnit
+  generation (for arbitrary Source)
+* Reworked MR-related job execution for reuse in Temporal-based execution
+* Created MostlyInMemoryDagManagementStateStore to merge UserQuotaManager
+* Added configuration to disable task failed event from emitting
+* Fixed iceberg-distcp dest-side TableMetadata consistency check to accurately
+  detect stale table metadata
+* Added logging for concurrent flow status check
+* Added logic to ignore concurrent check if the flow execution ID is the same
+  as the currently running flow execution ID to handle race condition of
+  concurrent hosts misreporting status
+* Added logic to avoid deletion of flowSpec too early
+* Added support to ensure Iceberg-distcp consistency by using same
+  TableMetadata for both WU planning and final commit
+* Added iceberg-distcp config to exclude copying manifest.json files
+* Added support to set (target) dataset path correctly in
+  RecursiveCopyableDataset
+* Added ability for Yarn app to terminate on finishing of temporal flow
+* Updated GobblinServiceManagerTest to reduce flakiness
+* Added logic to fail the streaming container when OOM issue happens
+* Added support to allow run-immediately flows to execute in multi-active
+  scheduler mode
+* Added logging for FileStatus for only the first N inputs in
+  GobblinWorkUnitsInputFormat
+* Incorporated the mod time of enclosing dirs into the
+  SourceHadoopFsEndPoint.getWatermark
+* Added DagProcEngine, DagManagement, DagTask, DagProc, and other abstractions
+  for refactored DAG management
+* Added consensus flowExecutionId to FlowSpec to use for compilation
+* Removed Optionals to make DagManager, EventSubmitter, and TopologyCatalog
+  required for GaaS operation
+* Added suppor to show a consistent flowExecutionId between Compilation &amp;
+  Execution
+* Renamed writer.path.type config name as it has a type conflict with
+  writer.path
+* Pared down TaskStateCollectorService failure logging, to avoid flooding logs
+  during widespread failure
+* Added implementation of GTE for GaaS Observability Event in MR alternative
+  for distcp
+
+* Last Release date: 30th August, 2023
+
+## Community Health:
+- There have been 48 commits since December 2023.
+- 27 commits have been from non-committers.
+- Arjun Singh Bora was voted in October, 2023 as a committer. We constantly
+ look for consistent contributors to vote them in as Committers.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#attachment-AB">2023-12-20</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing.
+Issues for the board: None.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (3 years ago)
+There are currently 20 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- Arjun Singh Bora was added as committer on 2023-10-09
+
+## Project Activity:
+- Improved logging for PasswordManager in Gobblin
+- Added capability for Apache Iceberg Catalog to override dataset descriptor
+  for Iceberg Tables
+- Addition of immutability for job names in GaaS
+- Added capability to execute flows in multi-active scheduler state
+- Addition of external data node for generic ingress/egress on GaaS
+- Improvement in DistCp logic to compare permissions of soure and destination
+  files
+- Support added in IcebergDatasetFinder to use separate names for source vs
+  destination DB and Tables
+- Improved IcebergTable dataset descriptor to use DB-qualified table ID
+- Added emission of audit counts after commit in IcerbergMetadataWriter
+- Addition of semantics for failure on partial success
+- Added consistentcy in handling of flow executions errors for Kill and Resume
+  actions
+- Early stage Temporal integration
+- Improved GobblinORCWriter to handle large records
+- Kafka streaming pipeline improved to configure max poll records during
+  runtime
+- Addition of metric to tune LeaseArbiterLinger metric
+- Added capability to extend functions in GobblinMCEPublisher and
+  customization of fileList file metrics
+- Added capability to detect malformed ORC during commit
+- Added framework and unit tests for DAGActionStoreChangeMonitor
+- Added implementation of Distributed Data Movement (DDM) Gobblin-on-Temporal
+  Workunit evaluation
+- Added gobblin-temporal load generator for a single subsuming super-workflow
+  with a configurable number of activites
+- Made KafkaTopicGroupingWorkUnitPacker configurable with desired number of
+  containers
+- Developed Temporal abstractions including Workload for workflows of
+  unbounded size through sub-workflow nesting
+- Added functions to fetch record partionColumn value and customize default
+  record timestamp
+- Added quantification of Missed Work completed by Reminders
+- Added capability to skip null DAG action types
+- Updated logic in completeness verifier to support multi-reference tier
+- Added monitoring of High Level Consumer queue size
+- Added capability to monitor x bit in manifest file based copy
+- Added custom partioner partioning based on record timestamp
+- Implementation of fet dataset path for IcerbergDataset and
+  RecursiveCopyableDataset
+- Addition of function in Kafka Source to recompute workunits for filtered
+  partitions
+- Code improvements like consolidation of all DAG actions processing to one
+  code path, addition of exception message in ORC writers, emission of GTE
+  when corrupted ORC files are deleted, refactor of DAG actions, multi-active
+  related logs and metrics
+- Various fixes like avoiding CopyDataPublisher committing workunits before
+  they actually run, prevention of NPE in FlowCompilationValidationHelper,
+  FlowSpec update function bug, FlowExecutionId made consistent across
+  participants
+
+Last Release date: 30th August, 2023
+
+## Community Health:
+- There have been 80 commits since September 2023.
+- 60 commits have been from non-committers.
+- Arjun Singh Bora was voted in October, 2023 as a committer. We constantly
+  look for consistent contributors to vote them in as Committers.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-AB">2023-09-20</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues worth board attention
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (3 years ago)
+There are currently 19 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was William Lo on 2022-08-31.
+
+## Project Activity:
+- Salesforce Source was refactored for improved testability
+- Generalize WorkUnit persistence to support frameworks other that MR
+- Performance of ORC Writer improved
+- Ability added in Kafka source to filter topics
+- Support added to process GMCEs from different Kafka brokers
+- Total DAG count metric added for DAG state store
+- Self tuning buffered ORC writer added
+- High watermark metadata query for SFDC optimized for performance
+- Apache Helix integration upgraded to Helix 1.0
+- Improved encapsulation of FlowTriggerHandler and related helper functions
+- Standardized all logging to UTC
+- Support for multiple tokens in ProxiedFileSystem
+- Set default trigger time for adhoc flows
+- Improved handling of invalid cron schedules
+- Enhance ManifestBasedDatasetFinder with config for specifying an alternate
+  FS solely for reading manifests
+- Improve Kafka source / extractor utility to get simple names for Kafka
+  brokers
+- Enabled scheduler for non-leader in multi-active scheduler configuration
+- Fixed HiveMetadataWriter bug to ensure that hive schema columns are
+  consistent with the Avro.schema.literal
+- Fixed missing flow execution id causing SQL Errors
+- New instrumend ORC writer added
+- Introduced FlowCompilationValidationHelper &amp; SharedFlowMetricsSingleton for
+  sharing between Orchestrator &amp; DagManager
+- Support added to preserve sticky bit across distcp copies
+- Override flag added to force generate a job execution id based on Gobblin
+  cluster system time
+- Metadata writer tests improved to work with Iceberg 1.2.0
+- Flow trigger handler leasing metrics added
+- Reduced number of Hive calls during schema related updates in metadata
+  registration
+- Support to emit warning for retention of Snapshot Hive Tables instead of
+  failing job
+- Added Flow Group &amp; Name to Job Config for Job Scheduler
+- Tags added to dagmanager metrics for extensibility
+- Support to delete existing workflows on exceptions in the JobLauncher
+- Improve calculation of container count based on workflows marked for
+  deletion
+- Optimized disabling of current live instances at GobblinClusterManager
+  startup
+- Changed parallelstream to stream in DatasetsFinderFilteringDecorator to
+  prevent classloader issues
+- Utility added for detecting non optional unions and convert dataset urn to
+  hive compatible format
+- Fixed Helix Job scheduler to prevent replacement of running workflow if
+  within configured time
+- Multi-active, non blocking host leader was added for better performance
+- Task Reliability was improved by handling Job Cancellation and Graceful
+  Exits for Error-Free Completion
+- Apache Iceberg integration was upgraded from v0.11.1 to v1.2.0
+- Improved Container Calculation and Allocation Methodology
+- Improved logging, additional unit tests added, and multiple bug fixes
+
+Last Release date: 0.17.0 on 30th Aug, 2023.
+
+## Community Health:
+- There have been 65 commits since June 2023.
+- 53 commits have been from non-committers.
+- William Lo was voted in Aug, 2022 as a committer. We constantly look for
+ consistent contributors to vote them in as Committers.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-AE">2023-06-21</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues worth board attention
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (2 years ago)
+There are currently 19 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was William Lo on 2022-08-31.
+
+## Project Activity:
+- Ensured Task Reliability: Handle Job Cancellation and Graceful Exits for
+  Error-Free Completion
+- Support added for watermark for the most recent hour for quiet topics
+- Emit completeness watermark information in SnapshotCommitEvent
+- Emit warning instead of failing job in retention
+- Added usage of flowexecutionid in kafka monitor and jobnames
+- Improved Container Transition Tracking in Streaming Data Ingestion
+- Improved Container Calculation and Allocation Methodology
+- Fixed bug where the wrong workunit event was being tracked
+- Implemention of Timeout for Creating Writer Functionality
+- Added check that if nested field is optional and has a non-null default
+- Fail Hive retention job if deleting underlying files fail
+- Improved efficiency of Work Planning in Manifest-Based DistCp Jobs
+- Addition of Logging for Abnormal Helix Task States
+- Allow flow execution ID propagate to the Job ID if it exists
+- Added null default value to observability events
+- Logging of helix workflow information and timeout information during
+  submission wait / polling
+- Support for general Iceberg catalog (support configurable behavior for
+  metadata retention policy)
+- Initilaize yarn clients in yarn app launcher so that a child class can
+  override the yarn client creation logic
+- Apache Helix workflows submission timeouts made configurable
+- Added job properties and GaaS instance ID to observability event
+- Added MRJobLauncher configurability for any failing mapper to be fatal to
+  the MR job
+- Fixed Apache Iceberg Registration Serialization
+- Support for general Iceberg catalog in IcebergMetadataWriter
+- Yarn app launchers refactor to support class extension for custom usecases
+- Added new lookback version finder for use with Apache Iceberg retention
+- Emit dataset summary event post commit and its integration into
+  GaaSObservabilityEvent
+- Code cleanup: Merged similar logic between
+  FlowConfig{,V2}ResourceLocalHandler.update into single base class
+  implementation
+- Added mechanism to reject flow config updates that would fail compilation by
+  returning service error
+- Added capability to register Apache Iceberg table metadata update with
+  destination side catalog
+- Fixed add spec and actual number flows scheduled metrics
+- Added backoff retry when accessing db for flow spec or dag action
+- Added logging of startup command when container fails to startup
+- Updated Manifest based copy to support facl
+- Added defaults to newly added fields in observability events
+- Added metrics to measure and isolate bottleneck for init
+- Added protection to prevent the adding of flowspec compilation errors to the
+  scheduler
+- Added and changed appropriate job status fields for observability events
+- Ability to filter datasets that contain non optional unions
+- Capability to create Generic Apache Iceberg Data Node to Support Different
+  Types of Catalogs
+- Ability to delete multiple watermarks in a state store
+- Support for Other Catalog Types for Apache Iceberg Distcp
+
+Last Release date: 0.16.0 on 3rd Feb, 2022. New release of version 0.17.0 is in
+progress
+
+Question in last release:: jmclean: Please include the date(s) of your last
+release(s) in future reports. It has been more than a year since your last
+release are you planning to have a new release?
+
+Answer:: abti: We have included date of last release in the report. Thanks for
+pointing that out. We are also working on a new release (0.17.0), and we will
+establish a more defined release cadence going forward.
+
+## Community Health:
+- There have been 51 commits since March 2023.
+- 28 commits have been from non-committers.
+- William Lo was voted in Aug, 2022 as a committer. We constantly look for
+ consistent contributors to vote them in as Committers.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-AA">2023-03-22</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (2 years ago)
+There are currently 19 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was William Lo on 2022-08-31.
+
+## Project Activity:
+- Enhanced logging to help with debugging multi-hop flows creation,
+  progression, and cleanup
+- Support added for xz-compressed Avro files
+- Observability related events added for GaaS
+- Fix for race-conditions in FS Template catalog
+- Improved error reporting for flow config resolution
+- Fix for state store change monitors
+- Support for extended ACLs and sticky bit in File based DistCP
+- Fix for Multi-hop jobs skipping flows intermitently
+- Improved and refactored manifest, reader, writer, and iterator for efficient
+  reading
+- Support for Hadoop v2.10.0 added
+- Support for syncing directory metadata in manifest based data copy
+- Metrics added for measuring lag between producer and consumers
+- Fix constructor for KafkaJobStatusMonitor to make it injectable
+- Improve noisy logging about queue capacity to make it more consumable
+- Null value support for fields in GaaSObservabilityEvents
+- Support to help GMIP Hive metadata writer to fail gracefully and avoid
+  aborts
+- Support to register guage metrics for change monitors
+- Added house-keeping support in DAG Manager to periodically sync in-memory
+  state with database
+- Improved Helix offline instance purger to be thread safe
+- Improved state merging process for Flows pending resume
+- Support for multiple catalog types in Icerberg based DistCP
+- Improved logging in State Store to catch any possible memory leaks
+- GobblinMCEWriter was made public to build specialized Writers
+- Addition of capability to filter databases by union data types
+- Support for FACL in Manifest based data copy
+- Added optimization for not scheduling flows far into future
+
+
+## Community Health:
+- There have been 52 commits since 1st December 2022.
+- 33 commits have been from non-committers.
+- William Lo was voted in Aug, 2022 as a committer. We constantly look for
+  consistent contributors to vote them in as Committers.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#attachment-AD">2022-12-21</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (2 years ago)
+There are currently 19 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was William Lo on 2022-08-31.
+
+## Project Activity:
+- Support for MySQL backed user quota manager was added including metrics for
+  it.
+- Flow graph was improved to dynamically update based on file changes.
+- Enhancement to handle flow config changes regarding of resource handler&rsquo;s
+  leader status
+- Better observer ability of compaction jobs through log improvements to track
+  fine-grained progress of reducer task
+- New service was added to monitor changes to Flow Spec store.
+- New DAG Action Store was added to store the actions on kill or resume of
+  flow execution, related listeners were also added.
+- Iceberg metadata collection for snapshot data.
+- Distcp enhancement to support Iceberg datasets.
+- Improvement to Time Aware Recursive Dataset copy module to look back into
+  date folders that specifically match a range.
+- Upgrade to Avro 1.9 for Apache Gobblin.
+- Support for shared flow-graph layout in Gobblin-as-a-Service, support of
+  multi-node types.
+- Support for Manifest based dataset finders.
+- Addition of fs.uri to support volumes copy in GaaS.
+- Several other bug fixes and improvements to: avoid double quota increase for
+  adhoc flows, avoid blocking deployment on failure to add spec executors,
+  clean-up of unused dependencies, purge offline Helix instances at startup,
+  fail container for transient exceptions to avoid data loss, addition of SQL
+  source validation, exception type improvement for files status in source /
+  target, moveToTrash was replaced with moveToAppropriateTrash for Hadoop,
+  support vectorized row batch pooling, improvement of Iceberg data copy to
+  detect presence of files on destination to only copy delta, addition of
+  ancestors owner permission preservation for Iceberg distcp, logs for
+  committing/retrieving watermarks in streaming, use of delete API to delete
+  Helix jobs instead of stop API, fix of YarnService incorrect container
+  behavior, fix for correcting log line and GTE with correct number of total
+  task count, fix DestinationDatasetHandler to work on streaming sources, fix
+  premature closure of DestinationDatasetHandlerService to work with streaming
+  sources, logging addition to multi-hop flows creation, progression, cleanup.
+
+## Community Health:
+- There have been 63 commits since 1st September 2022.
+- 46 commits have been from non-committers.
+- William Lo was voted in Aug, 2022 as a committer. We constantly look for
+  consistent contributors to vote them in as Committers.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-AD">2022-09-21</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (2 years ago)
+There are currently 19 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- William Lo was added as committer on 2022-08-31
+
+## Project Activity:
+- Apache Iceberg support was added to Gobblin Distcp, with
+ eventual goal for full support.
+- New MySQL User quota manager was added.
+- New Gobblin Metadata change events were added for Hive commit.
+- Compiler and scheduler were decoupled to support warm standby mode.
+- Fast failure mode for work unit generation was added.
+- Improvements were made in Helix integration, fix for spec executors.
+- Better logging in reducer tasks and ORC writers, audit counts in Iceberg
+  integration was added.
+- Progress was made towards dynamic work unit allocation through message
+  exchange framework between task runner and application master.
+- Cleanup of unused dependencies, Git flowgraph was refactored to make it
+  extensible.
+- Error handling was improved for TimeAware finder.
+- Pagination was added for GaaS on server side.
+- New predicate called ExistingPartitionSkipPredicate was added.
+- Support for true abort on existing entity was added.
+- Container request count was improved to consider allocated count.
+- Yarn container and Helix instance allocation group tagging was added.
+- Gobblin starter scripts were fixed to add external jars as needed, typos in
+  Gobblin CLI was fixed, table flush was added after write failure, running
+  counts for retried flows was fixed, and several other minor optimizations
+  and fixes.
+
+Last release (v0.16.0) was done on: Feb 3, 2022.
+
+## Community Health:
+- There have been 36 commits since 1st June 2022.
+- 22 commits have been from non-committers.
+- William Lo was voted in Aug, 2022 as a committer. We constantly look for
+  consistent contributors to vote them in as Committers.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-AC">2022-06-15</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-20 (a year ago)
+There are currently 19 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-20.
+- No new committers. Last addition was Zihan Li on 2021-10-14.
+
+## Project Activity:
+- FlowGroup quotas added for Dag Manager.
+- Addition of capacity floor to avoid aggressive resource requests.
+- Fine grain configuration added and optimizations done to reduce noise in
+  metrics of workunits.
+- Config store performance improved by lazy loading environment configuration
+- Retries added to flow SLA kills.
+- Yarn container allocation grouping support added by Helix tags.
+- Metadata writers field were added to GMCE (Gobblin Metadata Change Event)
+  schema, Hive commit GTE added Hive Metadata writer.
+- Heartbeats added to DAGManagerThread to improve liveliness checks.
+- Compaction was made more consistent to deal with failures.
+- Helix Re-triggering updated to emit events on job skips.
+- Log config levels were made configurable.
+- Partitioned tables were updated to handle equality in paths.
+- SalesforceSource, RESTApiConnector, DatasetCleaner was updated to clean
+  resources, NPE was fixed.
+
+Last release (v0.16.0) was done on: Feb 3, 2022.
+
+## Community Health:
+- There have been 41 commits since 1st Mar 2022.
+- 30 commits have been from non-committers.
+- We constantly look for consistent contributors to vote them in as Committers
+ and PMC. (Zihan was voted in Oct, 2021)</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-Z">2022-03-16</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (a year ago)
+There are currently 19 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- No new committers. Last addition was Zihan Li on 2021-10-13.
+
+## Project Activity:
+- Support for Avro 1.9.2 was added.
+- Metrics reporting and monitoring was improved in DAG Manager in
+  Gobblin-as-a-Service.
+- HadoopUtils was made more configurable, system level SLA was added.
+- Several bug fixes, and optimizations.
+- CVE: CVE-2021-36151 and CVE-2021-36152 were resolved.
+
+Last release (v0.16.0) was done on: Feb 3, 2022.
+
+## Community Health:
+- There have been 31 commits since 1st Dec 2021.
+- 23 commits have been from non-committers.
+- We constantly look for consistent contributors to vote them in as Committers
+  and PMC. (Zihan was voted in Oct, 2021)
+- dev@gobblin.apache.org had 654 new emails last quarter.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-AE">2021-12-15</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (a year ago)
+There are currently 19 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- Zihan Li was added as committer on 2021-10-13
+
+## Project Activity:
+- Completeness watermark support was added for Apache Iceberg tables
+- GridFS related cleanup and refactoring was done
+- Improvement in completion watermark checkpointing
+- Avro-Hive Conversion utils were refactored
+- Integration with Helix APIs to add or remove tasks was done
+- Local mode was created for streaming Kafka jobs to help users
+- Support for RDBMS backed Job catalogs was added
+- Several minor improvements like enhanced robustness (retries), better
+  logging, bug fixes, performance improvement (lazy loading) and addition of
+  configuration knobs
+
+Last release (v0.15.0) was done on: Dec 10, 2020. Current release (v0.16.0)
+vote passed, and is being published.
+
+## Community Health:
+- There have been 49 commits since 1st Sep 2021.
+- 33 commits have been from non-committers.
+- We constantly look for consistent contributors to vote them in as Committers
+  and PMC. (Zihan was voted in October)
+- dev@gobblin.apache.org had 1448 new emails last quarter.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-AD">2021-09-15</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (8 months ago)
+There are currently 18 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- Alexander Prokofiev was added as committer on 2021-07-15
+
+## Project Activity:
+
+- Support for Kafka 1.1 writer was added.
+- Logical types support was added in Avro to ORC.
+- Support for running a single ingestion job using Gobblin CLI was added.
+- Improvements in Gobblin Cluster &amp; GaaS: TaskResult logging improvements,
+  failure propagation from StatsTracker, support for task interruption
+  optionality, RestLI action added for flow resume, improved error reporting
+  for flow configs.
+- Improvements in Source, Extractor, Writer: HadoopFileInputSource was made
+  file split size aware, additional attributes added to metrics in the
+  Extractor, execution handling, and logging in FS Data Writer was improved.
+- Hive Registration changes: dataset-specific DB name support was added,
+  stability of the Hive Registration module was improved (handling empty
+  strings, close HiveRegister in completion action step, abort operation
+  against a view, logging with exception propagation).
+- Several other minor enhancements and bug fixes.
+
+Last release (v0.15.0) was done on: Dec 10, 2020.
+Current release (v0.16.0) is
+being voted on.
+
+## Community Health:
+- There have been 106 commits since 1st June 2021.
+- 76 commits have been from non-committers.
+- We constantly look for consistent contributors to vote them in as Committers
+  and PMC. (A DISCUSS thread is ongoing to vote in a committer as we speak)
+- dev@gobblin.apache.org had 2187 new emails last quarter.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-AA">2021-06-16</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (5 months ago)
+There are currently 17 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Abhishek Tiwari on 2021-01-19.
+- Jay Sen was added as committer on 2021-04-01
+
+## Project Activity:
+- Secure TrustManager for LDAP utils was added.
+- Hive client was made more configurable.
+- Support to load failed DAGs in GaaS during resume was added.
+- Bug fixes in HiveWriter.
+- Meters for successful / failed DAGs were added.
+- Row batch size in ORC writer was made configurable.
+- Config support for authenticator for a job was added.
+- New status gauge in DagManager was added.
+- Support to control Event reporter queue capacity was added.
+- Hadoop version support was bumped to 2.9
+- Bug fixes in Flow lifecycle.
+- Bug fixes in Avro to ORC conversion.
+- Race condition was fixed in Helix task cancellation.
+
+Last release (v0.15.0) was done on: Dec 10, 2020
+
+## Community Health:
+Last board report was sent on Apr 16th, since then:
+- There have been 41 commits.
+- 32 commits have been from non-committers.
+- We constantly look for consistent contributors to vote them in as Committers
+  and PMC.
+- dev@gobblin.apache.org had 797 new emails since last report.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-Z">2021-04-21</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (3 months ago)
+There are currently 17 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- Jay Sen was added as committer on 2021-04-01
+
+## Project Activity:
+- Since last month report, a new committer was voted in.
+- ReadMe and FAQ where updated for better onboarding experience.
+
+On technical front:
+- HiveWriter was enabled to consume GCME and register into Hive metadata store.
+- Schema checker was made configurable.
+- Flow requester and owner list were made updatable.
+- KafkaIngestionHealth check was enhanced to use auto-tuned consumer.
+- Job authenticator was made configurable.
+- Event reporter queue capacity was made configurable.
+- Flakiness in Github actions was fixed.
+- Support for Hadoop 2.9 was added.
+- Various bug fixes.
+
+## Community Health:
+Last board report was sent on Mar 17th, since then:
+- There have been 23 commits.
+- 18 commits ie. 82% contributions have been from non-committers
+- We constantly look for consistent contributors to vote them in as Committers
+  and PMC.
+- dev@gobblin.apache.org had 490 new emails in Mar and Apr 2021.</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-AB">2021-03-17</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (2 months ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- No new committers were added.
+
+## Project Activity:
+- We worked with the Apache's Marketing &amp; Publicity to issue a PR about
+  Gobblin's graduation to TLP: https://s.apache.org/5h9gx
+- Gobblin's documentation and website were updated to reflect graduation.
+
+On technical front:
+- Schema checks were made configurable.
+- Capability to update flow requester and owner was added.
+- Offset lag was set to 0 for Kafka topics with no previous watermark.
+- Capability to filter Kafka topics with no schema in registry was added.
+- Capabilities to run subset of jobs from job repository was added.
+- Function added for access of dataset failures from job context.
+- Several bug fixes, and documentation update.
+
+## Community Health:
+Last board report was sent on Feb 17th, since then:
+- There have been 20 commits
+- 13 commits ie. 65% contributions have been from non-committers
+- We constantly look for consistent contributors to vote them in as Committers
+  and PMC.
+- dev@gobblin.apache.org had 322 new emails in Feb and Mar 2021.</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-X">2021-02-17</a> &mdash; Abhishek Tiwari<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Gobblin is the creation and maintenance of software
+related to a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems
+
+## Issues:
+No issues to report.
+
+## Membership Data:
+Apache Gobblin was founded 2021-01-19 (21 days ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- No new committers were added.
+
+## Project Activity:
+- We are working with Apache's Marketing &amp; Publicity to issue a PR about
+  Gobblin's graduation to TLP.
+- Gobblin's infra was moved out of Incubator, and post graduation activities
+  were undertaken including documentation and website update.
+
+On technical front:
+- Retention support was added to failed DAG state store.
+- Changes in default compaction configurations.
+- New guide for Docker support.
+- Support for flow resume action via Restli, Github Action workflow for tests.
+- Capability to add zip files to Gobblin Yarn application as resources.
+- Configuration to control containers per Kafka topic, task cancellation,
+  option to skip Hadoop token initialization.
+- Scripts for state store CLI.
+- Hive Registration support in compaction.
+- Fixes for retries in DataWriter, task hang after restart, Helix workflows
+  clean-up, and other fixes.
+
+## Community Health:
+Last board report was sent on Jan 3rd, since then:
+- There have been 41 commits
+- 25 commits ie. 61% contributions have been from non-committers
+- We constantly look for consistent contributors to vote them in as Committers
+  and PMC.
+- dev@gobblin.apache.org had 723 new emails in Jan and Feb 2021.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#gobblin">2021-01-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Discuss and Vote in progress in general@incubator mailing list for
+graduation to TLP.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No.
+
+### How has the community developed since the last report?
+- Email stats since last report: dev@gobblin.incubator.apache.org : 505
+(Oct), 324 (Nov), 313 (Dec)
+- There have been 63 Commits since last report: git log --format='%ci' |
+grep -cE '((2020-1(0|1|2)))'
+- 29 ie. 46% of those commits were by non-committers: git log
+--format='%ae %ci' | grep -E '(2020-1(0|1|2))' | cut -d ' ' -f 1 | sort |
+uniq -c | sort -n
+
+### How has the project developed since the last report?
+1. Vote within community for graduation to TLP was passed after a
+discussion. Discuss and vote was started in general@incubator.
+2. Roster, project page, documentation, website, and wiki were reviewed
+and updated.
+3. Evaluation under Apache maturity model for graduation was done.
+4. Podling name search was done.
+5. New version (0.15.0) was approved and released.
+
+On technical side, the following was added:
+1. Support for Kafka 1.1.
+2. Decimal type support in GobblinORCWriter.
+4. LDAP based group ownership support.
+5. New Groups ownership service.
+6. Azkaban OAuth token support.
+7. Gradle version was upgraded.
+8. Auto-tune of ORC writer params.
+9. Support for multiple DFS tokens fetch for HDFS federation.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-12-10
+
+### When were the last committers or PPMC members elected?
+Tam&aacute;s N&eacute;meth and Sudarshan Vasudevan for PPMC in June, 2020.
+
+### Have your mentors been helpful and responsive?
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Yes.
+
+### Signed-off-by:
+
+- [X] (gobblin) Jean-Baptiste Onofre
+   Comments:
+- [ ] (gobblin) Olivier Lamy
+   Comments:
+- [X] (gobblin) Owen O'Malley
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#gobblin">2020-10-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Maturity model review and work on associated tasks (in progress).
+2. Podling namesearch (in progress).
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No.
+
+### How has the community developed since the last report?
+
+- Email stats since last report: dev@gobblin.incubator.apache.org : 625
+(August), 314 (September)
+- There have been 47 Commits since last report: git log --format='%ci' |
+grep -cE '((2020-0(8|9))|(2020-10))'
+- 15 ie. 32% of those commits were by non-committers: git log
+--format='%ae
+%ci' | grep -E '((2020-0(8|9))|(2020-10))' | cut -d ' ' -f 1 | sort | uniq
+-c | sort -n
+
+### How has the project developed since the last report?
+
+- Whimsy roster was fixed.
+- Graduation discussion has started, and community is working towards it.
+- RC1 for new release is in progress.
+
+On technical side:
+- New multi event metadata generator.
+- Metrics for Jobstatus schema.
+- New workunit tracker for GaaS.
+- Lineage events for Gobblin streaming mode.
+- Dataset specific database registration.
+- Migration of pdsc schemas to pdl.
+- Better logging and debugging for GobblinHelixTask.
+- Compiler health awareness for scheduling flows.
+- New ORC writer.
+- Multiple bug fixes and performance improvements.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2018-12-09
+(RC1 for new release is in progress, after issues were identified in RC0)
+
+### When were the last committers or PPMC members elected?
+
+Tam&aacute;s N&eacute;meth and Sudarshan Vasudevan for PPMC in June, 2020.
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes, but we have to perform podling name search.
+
+### Signed-off-by:
+
+- [X] (gobblin) Jean-Baptiste Onofre
+   Comments:
+- [X] (gobblin) Olivier Lamy
+   Comments:
+- [ ] (gobblin) Owen O'Malley
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#gobblin">2020-07-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Review of maturity model and associated tasks (in progress).
+2. Address gaps identified on whimsy, podling namesearch (in progress).
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No.
+
+### How has the community developed since the last report?
+- Email stats since last report: dev@gobblin.incubator.apache.org : 410
+(May), 561 (June)
+- There have been 64 Commits since last report: git log --format='%ci' |
+grep -cE '((2020-0(5|6)))'
+- 41 ie. 64% of those commits were by non-committers: git log
+--format='%ae %ci' | grep -E '((2020-0(5|6)))' | cut -d ' ' -f 1 | sort |
+uniq -c | sort -n
+
+### How has the project developed since the last report?
+- Owen O'Malley joined the Gobblin community as a mentor.
+- Discussion about graduation has started, and community is working
+towards it.
+- Two PPMC members were voted in.
+- Work on new release has started.
+
+On technical side:
+- Compaction suite was revamped to make action configurable.
+- Flow remove feature for Spec executors was added.
+- LogCopier was improved for long running jobs.
+- New API for proxy users in Azkaban.
+- Support for common properties in Helix job scheduler.
+- Hive Distcp support filter on partitioned or snapshot tables.
+- Generic wrapper producer client added for Kafka.
+- Autocommit added in JDBCWriters.
+- Metrics added in all SpecStore implementations.
+- Support in GobblinYarnAppLauncher to detach from Yarn app.
+- Support for overprovisioning Gobblin Yarn containers.
+- Enabled dataset cleaner to emit Kafka events.
+- Several other enhancements and bug fixes.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2018-12-09 (work on new release has started)
+
+### When were the last committers or PPMC members elected?
+
+Tam&aacute;s N&eacute;meth and Sudarshan Vasudevan for PPMC in June, 2020.
+
+### Have your mentors been helpful and responsive?
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Yes, but we have to perform podling name search.
+
+### Signed-off-by:
+
+- [X] (gobblin) Jean-Baptiste Onofre
+   Comments:
+- [ ] (gobblin) Olivier Lamy
+   Comments:
+- [ ] (gobblin) Owen O'Malley
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#gobblin">2020-05-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Revisit Apache Maturity Model assessment. [In progress since last
+report]
+2. Complete house-keeping tasks like revamp website, podling namesearch.
+[In progress since last report]
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+Yes, we were asked to report again this month since our mentors couldn't
+sign off the report. We would recommend IPMC or ASF Board to establish a
+documented process this situation.
+
+### How has the community developed since the last report?
+
+* Email stats since last report: dev@gobblin.incubator.apache.org : 504
+(April), 79 (May, so far)
+* There have been 30 Commits since last report: git log --format='%ci' |
+grep -cE '((2020-0(4|5)))'
+* 17 ie. 56% of those commits were by non-committers: git log
+--format='%ae %ci' | grep -E '((2020-0(4|5)))' | cut -d ' ' -f 1 | sort |
+uniq -c | sort -n
+
+### How has the project developed since the last report?
+* Support for common job properties in Helix job scheduler
+* New API for getting list of proxy users from Azkaban project
+* New API for adding proxy user to Azkaban project
+* Refresh capability in LogCopier for long running job use-cases
+* Back flow remove feature for Spec executors in DAG manager
+* Support for complete action configuration in Compaction suite
+* New metrics to measure job status state store performance
+* Orchestration delay reporter for Gobblin service flows
+* Dependency version upgrades for Helix, ORC, MySQL
+* Bug fixes in YarnService to use new token for new containers
+* Enhance HelixManager to reinitialize when Helx participant check happens
+* Enable close-on-flush for quality checker
+* Enable record count verification for ORC format
+* Add flow level data movement authorization in GaaS
+* OrcValueMapper schema evolution up-conversion support
+* Multiple bug fixes and optimizations
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2018-12-09
+
+### When were the last committers or PPMC members elected?
+Kuai Yu in January 2020 and Lei Sun in February 2020
+
+### Have your mentors been helpful and responsive?
+Yes, but they missed to sign off last quarterly report.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Yes, but we have to perform podling namesearch.
+
+### Signed-off-by:
+
+- [X] (gobblin) Jean-Baptiste Onofre
+   Comments:  I think the podling is close to graduation. Maybe worth to
+   start a discussion.
+- [ ] (gobblin) Olivier Lamy
+   Comments:
+- [ ] (gobblin) Jim Jagielski
+   Comments:
+
+### IPMC/Shepherd notes:
+Justin Mclean: If a report doesn't get sign off you need to report next
+month. This is documented incubator policy. I suggest you reach out to
+your mentors if you don't see sign-off on your report. The IPMC also
+notifies mentors of late reports or reports without sign offs.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#gobblin">2020-04-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Revisit Apache Maturity Model assessment. [In progress since last
+report]
+2. Complete house-keeping tasks like revamp website, podling namesearch.
+   [In progress since last report]
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No.
+
+### How has the community developed since the last report?
+* New committers Lei Sun (lesun) and Kuai Yu (kuyu).
+* Email stats since last report: user@gobblin.incubator.apache.org : 9
+dev@gobblin.incubator.apache.org : 1689
+* There have been 76 Commits since last report: git log
+  --format='%ci' | grep -cE '((2020-0(1|2|3)))'
+* 43 ie. 56% of those commits were by non-committers: git log
+  --format='%ae %ci' | grep -E '((2020-0(1|2|3)))' | cut -d ' ' -f 1 |
+  sort | uniq -c | sort -n
+
+### How has the project developed since the last report?
+* Handle orphaned Yarn containers in Gobblin-on-Yarn clusters
+* Track and report histogram of observed lag from Gobblin Kafka pipeline
+* Refresh flowgraph when templates are modified
+* HighLevelConsumer re-design by removing references to ConsumerConnector
+and KafkaStream
+* Add SFTP DataNode type in Gobblin-as-a-Service
+* Optimize unnecessary RPCs in distcp-ng
+* Supporting Avro logical type recognition in Avro-to-ORC transformation
+* Support for direct Avro and Protobuf formats through Parquet writer
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2018-12-09
+
+### When were the last committers or PPMC members elected?
+Kuai Yu in January 2020 and Lei Sun in February 2020
+
+### Have your mentors been helpful and responsive?
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Yes, but we have to perform podling namesearch.
+
+### Signed-off-by:
+
+- [ ] (gobblin) Jean-Baptiste Onofre
+   Comments:
+- [ ] (gobblin) Olivier Lamy
+   Comments:
+- [ ] (gobblin) Jim Jagielski
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#gobblin">2020-01-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Revisit Apache Maturity Model assessment. [In progress since last
+report]
+2. Ensure heavy contributors are awarded committership. [In progress
+since last report]
+3. Complete house-keeping tasks like revisiting website, podling
+namesearch. [In progress since last report]
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No.
+
+### How has the community developed since the last report?
+
+* 84% of commits were from non-committer contributors. (Active
+contributors
+are being discussed for being voted as committers)
+* Healthy engagement and activity of committers and contributors.
+* Email stats since last report: user@gobblin.incubator.apache.org : 23
+dev@gobblin.incubator.apache.org : 2010
+* There have been 94 Commits since last report: git log --format='%ci' |
+grep -cE '((2019-1(0|1|2)))'
+* 79 ie. 84% of those commits were by non-committers: git log
+--format='%ae
+%ci' | grep -E '((2019-1(0|1|2)))' | cut -d ' ' -f 1 | sort | uniq -c |
+sort -n
+
+### How has the project developed since the last report?
+* Add support to deploy GaaS in Azure.
+* Converter to eliminate recursion in Avro schemas.
+* Make token refresh mechanism pluggable for long running Gobblin-on-Yarn
+applications.
+* Refactor code for reporting Kafka Extractor stats to allow greater
+reuse.
+* Add support in GaaS to recognize Http and Hive based datasets.
+* Add multi-dataset support in GaaS to allow movement of multiple
+datasets in a single flow.
+* Add support to recognize datasets with Unix timestamp based versions
+for file based distcp.
+* Custom progress reporting from jobs running in MR mode to enable
+speculative execution.
+* Source-based PK chunking for the Salesforce connector to use a single
+PK chunking query to improve chunk distribution and conserve batch API
+calls.
+* Parquet support for complex types and support both apache parquet and
+twitter parquet
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2018-12-09
+
+### When were the last committers or PPMC members elected?
+
+Sudarshan Vasudevan in January, 2019. (Active contributors are being
+discussed for being voted as committers)
+
+### Have your mentors been helpful and responsive?
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Yes.
+
+### Signed-off-by:
+
+- [X] (gobblin) Jean-Baptiste Onofre
+   Comments:
+- [ ] (gobblin) Olivier Lamy
+   Comments:
+- [X] (gobblin) Jim Jagielski
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#gobblin">2019-10-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Revisit Apache Maturity Model assessment. [In progress since last
+report]
+2. Ensure heavy contributors are awarded committership. [In progress
+since last report]
+3. Complete house-keeping tasks like revisiting website, podling
+namesearch. [In progress since last report]
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No.
+
+### How has the community developed since the last report?
+
+*  65% of commits were from non-committer contributors. (Active
+contributors are being discussed for being voted as committers)
+*  Healthy engagement and activity of committers and contributors.
+*  Email stats since last report: user@gobblin.incubator.apache.org : 14
+dev@gobblin.incubator.apache.org : 1426
+*  There have been 101 Commits since last report: git log --format='%ae
+%ci' | grep -E '((2019-(0|1)(4|5|6|7|0)))' | cut -d ' ' -f 1 | sort |
+uniq -c | sort -n
+*  66 ie. 65% of those commits were by non-committers: git log
+--format='%ae %ci' | grep -E '((2019-(0|1)(4|5|6|7|0)))' | cut -d ' ' -f
+1 | sort | uniq -c | sort -n
+*  Gobblin was presented in ApacheCon NA 2019. (jointly by Paypal and
+LinkedIn engineers).
+
+### How has the project developed since the last report?
+
+*  Support for filtering and tagging job status in GaaS.
+*  General purpose UniversalKafkaSource, and enhanced metrics.
+*  Docker support for Gobblin.
+*  Revamped Gobblin launcer and setup process.
+*  Secure template support in GaaS.
+*  ORC schema evolution support in MR mode.
+*  Support for new Couchbase version connectors.
+*  Pluggable Workunit packer and size-estimators.
+*  Encryption support in SFDC connector.
+*  Addition of flow level SLAs.
+*  Dynamic config support for JobSpec, and DAG enhancements.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [x] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2018-12-09
+
+### When were the last committers or PPMC members elected?
+
+Sudarshan Vasudevan in January, 2019.
+(Active contributors are being discussed for being voted as committers)
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Signed-off-by:
+
+- [X] (gobblin) Jean-Baptiste Onofre
+   Comments:
+- [X] (gobblin) Olivier Lamy
+   Comments:
+- [ ] (gobblin) Jim Jagielski
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#gobblin">2019-07-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Revisit Apache Maturity Model assessment. [In progress]
+2. Ensure heavy contributors are awarded committership. [In progress]
+3. Complete house-keeping tasks like revisiting website, podling
+namesearch. [In progress]
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No.
+
+### How has the community developed since the last report?
+
+* 62% of commits were from non-committer contributors.
+* Healthy engagement and activity of committers and contributors.
+* Email stats since last report:
+  user@gobblin.incubator.apache.org : 21
+  dev@gobblin.incubator.apache.org : 1744
+* There have been 82 Commits since last report:
+  git log --format='%ci' | grep -cE '((2019-0(4|5|6|7)))'
+* 51 ie. 62% of those commits were by non-committers:
+  git log --format='%ae %ci' | grep -E '((2019-0(4|5|6|7)))'
+  | cut -d ' ' -f 1 | sort | uniq -c | sort -n
+* Community's proposal to present in ApacheCon NA 2019 was accepted.
+  (joint presentation by Paypal and LinkedIn engineers).
+
+### How has the project developed since the last report?
+
+* Encryption support for Salesforce connector.
+* GobblinEventBuilder enhancements.
+* Metric reporter integration with dataset discovery.
+* Enhancement to RateBasedLimiter.
+* Dynamic config support in JobSpecs.
+* GaaS disaster recovery mode skeleton.
+* Addition of MySQL based DAG State store.
+* New filesystem based SpecProducer.
+* Auto-scalability in Gobblin on Yarn mode.
+* Container request and allocation optimizations.
+* New SQL dataset descriptor for JDBC sourced datasets.
+* Speculative safety checks in HiveWritable writer.
+* New Async loadable FlowSpecs.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2018-12-09
+
+### When were the last committers or PPMC members elected?
+
+Sudarshan Vasudevan in January, 2019.
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Signed-off-by:
+
+- [X] (gobblin) Jean-Baptiste Onofre
+   Comments:
+- [ ] (gobblin) Olivier Lamy
+   Comments:
+- [ ] (gobblin) Jim Jagielski
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#gobblin">2019-04-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+Nothing at this time.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No.
+
+How has the community developed since the last report?
+
+* 53% of commits were from non-committer contributors.
+* Another committer was voted it, building a healthy cadence of
+  contributors stepping up and being voted in as committers.
+* Email stats since last report:
+  user@gobblin.incubator.apache.org : 30
+  dev@gobblin.incubator.apache.org : 692
+* There have been 53 Commits since last report:
+  git log --format='%ci' | grep -cE '((2019-0(1|2|3|4)))'
+* 28 ie. 53% of those commits were by non-committers:
+  git log --format='%ae %ci' | grep -E '((2019-0(1|2|3|4)))'|
+  cut -d ' ' -f 1 | sort | uniq -c | sort -n
+* After ApacheCon NA 2018, CrunchConf Budapest 2018, community is
+  planning to present in ApacheCon NA 2019, ApacheCon EU 2019.
+
+How has the project developed since the last report?
+
+* Enhancement to GaaS scheduler (more features like query for last k
+  flow executions, explain query, auto state store cleanup,
+  Azkaban client improvement, etc.).
+* Watermark manager improvements for streaming use-cases.
+* Lineage support for filesystem based sources.
+* Job catalog memory usage optimizations.
+* New versioning strategy for config based datasets in Distcp.
+* Dynamic mappers support.
+* Pluggable format-specific components in Gobblin compaction.
+* ORC based Gobblin compaction.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[x] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2018-12-09
+
+When were the last committers or PPMC members elected?
+
+Sudarshan Vasudevan in January, 2019.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes.
+
+Signed-off-by:
+
+[X](gobblin) Jean-Baptiste Onofre
+   Comments:
+[X](gobblin) Olivier Lamy
+   Comments: Very healthy project with a lot of activities!
+[X](gobblin) Jim Jagielski
+   Comments:
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#gobblin">2019-01-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+Nothing at this time.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No.
+
+How has the community developed since the last report?
+
+* 92% of commits were from non-committer contributors.
+* Email stats since last report:
+  user@gobblin.incubator.apache.org : 27
+  dev@gobblin.incubator.apache.org : 218
+* There have been 61 Commits since last report:
+  git log --format='%ci' | grep -cE '((2018-1(0|1|2))|(2019-01))'
+* 56 ie. 92% of those commits were by non-committers:
+  git log --format='%ae %ci' | grep -E '((2018-1(0|1|2))|(2019-01))'|
+  cut -d ' ' -f 1 | sort | uniq -c | sort -n
+* Recurring video conference based meet-up has been happening every
+  month with a healthy attendance.
+* After ApacheCon NA 2018, Gobblin was also presented in CrunchConf
+  Budapest 2018, and has independently been featured in various
+  meet-ups / conferences around the world.
+
+How has the project developed since the last report?
+
+* Multi-hop support in Gobblin-as-a-Service with in built workflow
+manager.
+* Multicast through Multi-hop flow compiler.
+* Gobblin-as-a-Service integration with Azkaban.
+* New Elasticsearch writer intergration.
+* Optimized block level distcp-ng copy support.
+* HOCON support for flow requests to GaaS.
+* Ability to fork jobs when concatenating Dags
+* ServiceManager to manage GitFlowGraphMonitor in multihop flow compiler.
+* Distributed job launcher with Helix tagging support.
+* Several more enhancements and feature add-ons.
+  Full list across last two releases.
+* Release 0.14.0 done.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[x] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2018-12-09
+
+When were the last committers or PPMC members elected?
+
+Tamas Nemeth in November, 2018.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes.
+
+Signed-off-by:
+
+[X](gobblin) Jean-Baptiste Onofre
+   Comments:
+[ ](gobblin) Olivier Lamy
+   Comments:
+[X](gobblin) Jim Jagielski
+   Comments:
+
+IPMC/Shepherd notes:
+Justin Mclean: Given that 92% of commit are from non-committers why does
+the project not vote more committers in? I can only see one committer
+voted in in the previous year. For a project nearing graduation I'd expect
+to see a lot more people voted in. I also don't see what is discussed in the
+video conferences being brought back to the list.</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#gobblin">2018-10-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+Nothing at this time.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No.
+
+How has the community developed since the last report?
+
+* 74% of commits were from non-committer contributors.
+* Email stats since last report:
+  user@gobblin.incubator.apache.org : 10
+  dev@gobblin.incubator.apache.org : 243
+* There have been 61 Commits since last report:
+  git log --format='%ci' | grep -cE '((2018-0(7|8|9))|(2018-10))'
+* 45 ie. 74% of those commits were by non-committers:
+  git log --format='%ae %ci' | grep -E '((2018-0(7|8|9))|(2018-10))'|
+  cut -d ' ' -f 1 | sort | uniq -c | sort -n
+* Recurring video conference based meet-up has been happening every
+  month with a healthy attendance.
+* Gobblin had a presentation in ApacheCon NA 2018, and has independently
+  been featured in various meet-ups / conferences around the world.
+
+How has the project developed since the last report?
+
+* Gobblin's evolution as Platform-as-a-Service is near GA - driven by
+  couple of non-committers.
+* Comprehensive work to stabilize Gobblin cluster at extreme scale by
+  non-committer contributor.
+* Streaming pipeline simplification and enhancements.
+* New ElasticSearch support.
+* Gobblin - Azkaban integration.
+* Job quotas in Gobblin cluster mode through Apache Helix.
+* Couchbase integration enhancement.
+* New optimized Config store implementation.
+* Block level distcp-ng in progress.
+* Release 0.13.0 done.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[x] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2018-09-20
+
+When were the last committers or PPMC members elected?
+
+Joel Baranick in December, 2017.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes.
+
+Signed-off-by:
+
+[X](gobblin) Jean-Baptiste Onofre
+   Comments: Great presentation at ApacheCon (which convince me again to
+   contribute on the codebase).
+[X](gobblin) Olivier Lamy
+   Comments:
+[X](gobblin) Jim Jagielski
+   Comments:
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#gobblin">2018-07-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+    1. Make frequent releases
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  No
+
+How has the community developed since the last report?
+
+* Various major components and futuristic features are being driven by the
+community
+  (non-committers) thus building a very healthy pool of contributors that
+can be voted
+  in as committers.
+* Continued growth in engagement over Gitter IRC, and mailing lists.
+* 79% of commits (a record in Gobblin community) were from non-committer
+contributors.
+* Email stats since last report:
+  user@gobblin.incubator.apache.org : 44 dev@gobblin.incubator.apache.org :
+200
+* There have been 66 Commits since last report:
+    git log --format='%ci' | grep -cE '(2018-0(4|5|6|7))'
+* 52 ie. 79% of those commits were by non-committers:
+   git log --format='%ae %ci' | grep -E '(2018-0(4|5|6|7))' | cut -d ' ' -f 1
+   | sort | uniq -c | sort -n
+* Recurring video conference based meetup has been happening every month
+with a
+  healthy attendance.
+* Gobblin was presented and well received in various meetups / conferences
+  around the world (independently by Apache community members).
+
+How has the project developed since the last report?
+
+* Major progress in Gobblin's evolution as Platform-as-a-Service - being
+driven
+  by couple of non-committers.
+* Comprehensive work being driven by a non-committer for stability of
+Gobblin
+  cluster at extreme scale.
+* Enhancements to key integrations such as Salesforce, Couchbase, Kafka,
+etc.
+* Addition of features for compliance and security. Increased adoption in
+this
+  area by the community (for critical use-cases such as GDPR).
+* Release 0.12.0 done.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [ ] Working towards first release
+  [x] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  2018-07-02
+
+When were the last committers or PPMC members elected?
+
+  Joel Baranick in December, 2017.
+
+Signed-off-by:
+
+  [X](gobblin) Jean-Baptiste Onofre
+     Comments:
+  [X](gobblin) Olivier Lamy
+     Comments:
+  [X](gobblin) Jim Jagielski
+     Comments:
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-07-18-2"><a href="2018/board_minutes_2018_07_18.html#gobblin">2018-07-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-07-18-2" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+    1. Make frequent releases
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  No
+
+How has the community developed since the last report?
+
+* Various major components and futuristic features are being driven by the
+community
+  (non-committers) thus building a very healthy pool of contributors that
+can be voted
+  in as committers.
+* Continued growth in engagement over Gitter IRC, and mailing lists.
+* 79% of commits (a record in Gobblin community) were from non-committer
+contributors.
+* Email stats since last report:
+  user@gobblin.incubator.apache.org : 44 dev@gobblin.incubator.apache.org :
+200
+* There have been 66 Commits since last report:
+    git log --format='%ci' | grep -cE '(2018-0(4|5|6|7))'
+* 52 ie. 79% of those commits were by non-committers:
+   git log --format='%ae %ci' | grep -E '(2018-0(4|5|6|7))' | cut -d ' ' -f 1
+   | sort | uniq -c | sort -n
+* Recurring video conference based meetup has been happening every month
+with a
+  healthy attendance.
+* Gobblin was presented and well received in various meetups / conferences
+  around the world (independently by Apache community members).
+
+How has the project developed since the last report?
+
+* Major progress in Gobblin's evolution as Platform-as-a-Service - being
+driven
+  by couple of non-committers.
+* Comprehensive work being driven by a non-committer for stability of
+Gobblin
+  cluster at extreme scale.
+* Enhancements to key integrations such as Salesforce, Couchbase, Kafka,
+etc.
+* Addition of features for compliance and security. Increased adoption in
+this
+  area by the community (for critical use-cases such as GDPR).
+* Release 0.12.0 done.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [ ] Working towards first release
+  [x] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  2018-07-02
+
+When were the last committers or PPMC members elected?
+
+  Joel Baranick in December, 2017.
+
+Signed-off-by:
+
+  [X](gobblin) Jean-Baptiste Onofre
+     Comments:
+  [X](gobblin) Olivier Lamy
+     Comments:
+  [X](gobblin) Jim Jagielski
+     Comments:
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#gobblin">2018-04-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Make frequent releases
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+  None
+
+How has the community developed since the last report?
+
+* Gobblin community has continued to grow and engage more (on mailing lists
+  and Gitter IRC).
+* 51% of commits have been from non-committer contributors.
+* Email stats since last report:
+  user@gobblin.incubator.apache.org : 47 dev@gobblin.incubator.apache.org :
+  694
+* There have been 121 Commits since last report:
+    git log --format='%ci' | grep -cE '(2018-0(1|2|3|4))'
+* 62 ie. 51% of those commits were by non-committers:
+   git log --format='%ae %ci' | grep -E '(2018-0(1|2|3|4))' | cut -d ' ' -f 1
+   | sort | uniq -c | sort -n
+* Recurring video conference based meetup has been happening every month with
+  healthy attendance.
+* Gobblin was presented and well received in various meetups / conferences
+  around the world (independently by Apache community members) eg. Strata etc.
+
+How has the project developed since the last report?
+
+* Various new connectors for integration with more systems, and several
+  enhancements / feature development.
+* Continued development of Gobblin-as-a-Service (PaaS for Gobblin as well as
+  non-Gobblin systems). More engagement of community on this front.
+* Enhancements to website, and packaging / distribution of Gobblin.
+* Release v0.12.0 is being voted on right now.
+
+How would you assess the podling's maturity?
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  v0.12.0 is being voted on right now.
+
+When were the last committers or PPMC members elected?
+
+  Joel Baranick in December, 2017.
+  (A few more contributors in the community are ready to be elected.)
+
+Signed-off-by:
+
+  [X](gobblin) Jean-Baptiste Onofr&eacute;
+     Comments:
+  [X](gobblin) Olivier Lamy
+     Comments:
+  [X](gobblin) Jim Jagielski
+     Comments: release process being better defined
+   the 0.12 RC efforts. NOTICE requirements better understood.</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#gobblin">2018-01-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Make frequent releases
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+  None
+
+How has the community developed since the last report?
+
+* Gobblin has seen an exciting growth on the community front. It has grown
+  into a diverse self-sustained community, where non-committer members are
+  often seen helping out each other on mailing lists and Gitter IRC (on most
+  days more than the committers). Many contributors have also stepped up and
+  contributed with important features and taken up ownership of critical
+  components.
+* 70% of commits have been from non-committer contributors.
+* Email stats since last report: user@gobblin.incubator.apache.org : 92
+  dev@gobblin.incubator.apache.org : 671
+* Heavy activity on Gitter IRC channel (while the community uses Gitter IRC,
+  it also does self policing and consciously moves any discussion-thread
+  beyond casual chatter to the mailing lists)
+* There have been 148 Commits since last report: git log --format='%ci' | grep
+  -cE '(2017-0(9))|(2017-1(0|1|2)|(2018-0(1)))'
+* 103 ie. 70% of those commits were by non-committers: git log --format='%ae
+  %ci' | grep -E '(2017-0(9))|(2017-1(0|1|2)|(2018-0(1)))' | cut -d ' ' -f 1 |
+  sort | uniq -c | sort -n
+* Recurring video conference based meetup has been happening every month with
+  healthy attendance.
+* Gobblin was presented and well received in various conferences eg. Strata
+  etc.
+* More companies have adopted Gobblin, and different members of PPMC have
+  received positive feedback and interest.
+
+How has the project developed since the last report?
+
+* Several new powerful features have been added to Gobblin that have enhanced
+  Gobblin to be more valuable in Stream processing as it is in batch data
+  world.
+* Gobblin interestingly has started to evolve into an ecosystem rather than a
+  singular platform with addition of major sub-systems such as
+  Gobblin-as-a-Service (PaaS for Gobblin as well as non-Gobblin systems),
+  Global Throttling (can be used with any distributed system) and existing
+  Gobblin metrics.
+* Documentation and stability has improved across the board.
+* Release v0.12.0 is being voted on right now.
+* The Apache way has become the normal way of doing things.
+
+How would you assess the podling's maturity?
+
+Gobblin has made good progress on the Community front and overall as a
+project. However, before calling it nearing graduation, we will like to make
+atleast couple of releases.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  v0.12.0 is being voted on right now.
+
+When were the last committers or PPMC members elected?
+
+  Joel Baranick in December, 2017.
+  (We have a few more strong contributors that we are looking to vote in soon)
+
+Signed-off-by:
+
+  [ ](gobblin) Jean-Baptiste Onofr&eacute;
+     Comments:
+  [X](gobblin) Olivier Lamy
+     Comments:
+  [X](gobblin) Jim Jagielski
+     Comments:</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#gobblin">2017-10-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Cut our first release.
+  2. Elect new Committer(s) / PPMC.
+  3. Update links on website and documentation.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  None
+
+How has the community developed since the last report?
+
+* 15+ major companies, startups, universites and research institutes are now using Gobblin (refer to Powered-by section [1] here: https://gobblin.apache.org/ )
+* Email stats for last month:
+  user@gobblin.incubator.apache.org : 25
+  dev@gobblin.incubator.apache.org : 163
+* There have been 40 Commits in last month:
+    git log --format='%ci' | grep -cE '2017-0(9)'
+* 29 of those commits were by non-committers:
+   git log --format='%ae %ci' | grep -E '2017-0(9)' | cut -d ' ' -f 1 | sort | uniq -c | sort -n
+* Another video conference based meetup happened last month with good attendance and interest.
+* We are continuing to work towards our first release.
+
+[1] This data was collected before incubation via a survey. It was expanded to include more companies as and when requested by respective contributors.
+
+How has the project developed since the last report?
+
+* Continued active development.
+* Progress continues to be tracked via JIRA / Sprint dashboard.
+
+How would you assess the podling's maturity?
+
+There is an all around progress, and the podling is working towards its first release.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  N/A
+
+When were the last committers or PPMC members elected?
+
+  N/A
+
+Signed-off-by:
+
+  [ ](gobblin) Jean-Baptiste Onofr&eacute;
+     Comments:
+  [ ](gobblin) Olivier Lamy
+     Comments:
+  [X](gobblin) Jim Jagielski
+     Comments:
+
+IPMC/Shepherd notes:
+
+  johndament: The podling has the right notion of next steps, website is probably the biggest area of work needed.</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#gobblin">2017-09-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Cut our first release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  None
+
+How has the community developed since the last report?
+
+* We are working towards our first release.
+* Email stats for last month:
+  user@gobblin.incubator.apache.org : 14
+  dev@gobblin.incubator.apache.org : 259
+* There have been 54 Commits in last month:
+    git log --format='%ci' | grep -cE '2017-0(8)'
+* 30 of those commits were by non-committers:
+   git log --format='%ae %ci' | grep -E '2017-0(8)' | cut -d ' ' -f 1 | sort | uniq -c | sort -n
+* A video conference based meetup happened last month.
+
+How has the project developed since the last report?
+
+* Site has been setup.
+* Apache wiki has been populated with relevant content.
+* Code development is actively being tracked via JIRA / Sprint dashboard.
+
+How would you assess the podling's maturity?
+
+The podling is working towards its first release. Like last time, continued progress and activity on all fronts.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  N/A
+
+When were the last committers or PPMC members elected?
+
+  N/A
+
+Signed-off-by:
+
+  [ ](gobblin) Jean-Baptiste Onofr&eacute;
+     Comments: Waiting the board report. I will help/ping.
+  [X](gobblin) Olivier Lamy
+     Comments:
+  [ ](gobblin) Jim Jagielski
+     Comments:</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#gobblin">2017-08-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Three most important issues to address in the move towards graduation:
+
+1. Cut our first release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+How has the community developed since the last report?
+
+We are very first steps of the project
+
+How has the project developed since the last report?
+
+* The code has been migrated now to the Apache Git Infra
+* Issues has been migrated to Apache Jira Infra
+* Site infrastructure has been created (now working on imported the content)
+* Discussion on setup Jenkins build
+
+How would you assess the podling's maturity?
+
+The podling is still on early stage. But a lot of progress and activities has been made recently.
+
+[ ] Initial setup
+[X] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+N/A
+
+When were the last committers or PPMC members elected?
+
+N/A
+
+Signed-off-by:
+
+[X](gobblin) Olivier Lamy
+   Comments:
+[](gobblin) Jean-Baptiste Onofre
+   Comments:
+[X](gobblin) Jim Jagielski
+   Comments:</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#gobblin">2017-06-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Few first steps has been made:
+
+* mailing list setup
+* jira setup
+* few Apache account creation for new committers.
+
+Three most important issues to address in the move towards graduation:
+
+ 1. Code import. Still need agreement from LinkedIn/Microsoft
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+ None
+
+How has the community developed since the last report?
+
+ We are very first steps of the project
+
+How has the project developed since the last report?
+
+ Not much. We are waiting code donation before start building the community.
+
+
+How would you assess the podling's maturity? Please feel free to add your own
+commentary.
+
+ [X] Initial setup
+ [ ] Working towards first release
+ [ ] Community building
+ [ ] Nearing graduation
+ [ ] Other:
+
+Date of last release:
+
+ N/A
+
+When were the last committers or PPMC members elected?
+
+ N/A
+
+Signed-off-by:
+
+ [X](gobblin) Olivier Lamy
+    Comments:
+ [ ](gobblin) Jean-Baptiste Onofre
+    Comments:
+ [X](gobblin) Jim Jagielski
+    Comments:</pre>
+<h3 id="2017-04-19"><a href="2017/board_minutes_2017_04_19.html#gobblin">2017-04-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-04-19" title="Permalink">&para;</a></h3>
+<pre>Gobblin is a distributed data integration framework that simplifies common
+aspects of big data integration such as data ingestion, replication,
+organization and lifecycle management for both streaming and batch data
+ecosystems.
+
+Gobblin has been incubating since 2017-02-23.
+
+Few first steps has been made:
+
+* mailing list setup
+* jira setup
+* few Apache account creation for new committers.
+
+Three most important issues to address in the move towards graduation:
+
+1. Code import. Still need agreement from LinkedIn/Microsoft
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+How has the community developed since the last report?
+
+We are very first steps of the project
+
+How has the project developed since the last report?
+
+First report :-)
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[X] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+N/A
+
+When were the last committers or PPMC members elected?
+
+N/A
+
+Signed-off-by:
+
+[X](gobblin) Olivier Lamy
+   Comments:
+[X](gobblin) Jean-Baptiste Onofre
+   Comments:
+[X](gobblin) Jim Jagielski
+   Comments:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

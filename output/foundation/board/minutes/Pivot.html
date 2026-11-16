@@ -1,0 +1,3077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Pivot | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Pivot';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Pivot';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Pivot</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="pivot">Pivot<a class="headerlink" href="#pivot" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2013-04-17</td>
+<td><a href="2013/board_minutes_2013_04_17.html#section-7A">Appointed Roger Whitcomb</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2012-01-24</td>
+<td><a href="2012/board_minutes_2012_01_24.html#section-7B">Appointed Sandro Martini</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2011-02-16</td>
+<td><a href="2011/board_minutes_2011_02_16.html#section-7C">Appointed Todd Volkert</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2009-12-16</td>
+<td><a href="2009/board_minutes_2009_12_16.html#section-7A">Appointed Greg Brown</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-01-15</td>
+<td><a href="2025/board_minutes_2025_01_15.html#section-7D">Terminate the Apache Pivot Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>2009-12-16</td>
+<td><a href="2009/board_minutes_2009_12_16.html#section-7A">Establish the Apache Pivot Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2025-01-15"><a href="2025/board_minutes_2025_01_15.html#section-6BH">2025-01-15</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2025-01-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#section-6BC">2024-12-18</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-BF">2024-09-18</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Project Status:
+Current project status: Pending retirement to the Attic, after a final release.
+Issues for the board: Nothing needed at the moment.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (15 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gavin McDonald on 2022-04-13.
+- No new committers. Last addition was Gavin McDonald on 2022-04-14.
+
+## Project Activity:
+Apologies that I have not had time this summer to do anything due to many
+personal issues. As things get less complicated this fall I should be able to
+finish the tasks needed for the final release. So, hopefully this can happen
+before our next Board Report is due.
+
+## Community Health:
+No one stepped up to help with the Release Notes, etc., further highlighting
+the lack of participation by the community.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#section-6BC">2024-08-21</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#section-6BL">2024-07-17</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#section-6BD">2024-06-19</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-BM">2024-04-17</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Project Status:
+Current project status: Vote completed to move to the Attic, following a final
+release. This release is in progress, waiting on final editing of Release
+Notes and then final build.
+Issues for the board: Only patience as we finish up.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (14 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gavin McDonald on 2022-04-13.
+- No new committers. Last addition was Gavin McDonald on 2022-04-14.
+
+## Project Activity:
+A few late emails pertaining to the final build. Release VM is setup, all info
+needed for the final Release Notes has been gathered, pending editing. If all
+goes well, the Attic move can commence once the final build has been made
+(hopefully in the next few weeks). Beginning discussion on Legal mailing list
+of how to migrate to GitHub.
+
+## Community Health:
+User and Dev lists have been notified (again) of impending Attic move; no
+responses, confirming the lack of interest in the project.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#section-6BF">2024-03-20</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-BB">2024-02-21</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Project Status:
+Current project status: Vote was taken and passed to retire Pivot to the
+Attic. PMC is currently preparing a terminal release to end the project.
+Issues for the board: No issues for the board at this time. Apologies for
+missing this report the last few months due to personal issues.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (14 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gavin McDonald on 2022-04-13.
+- No new committers. Last addition was Gavin McDonald on 2022-04-14.
+
+## Project Activity:
+Build area setup for the terminal release. All pending code changes have been
+committed. But we're having difficulty preparing the lists of bug fixes and
+other changes since it is a huge list after the 778 revisions, 96 resolved
+issues, and 314 other revisions over the last 10 years since the last
+significant release. But we'll get there.
+
+## Community Health:
+Dead community, hence the Attic. Fortunately we still have 3 PMC members to
+finish this last release.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#section-6BU">2024-01-17</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#section-6BC">2023-12-20</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-BI">2023-10-18</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java.
+
+## Project Status:
+Current project status: Dormant, and considering moving to the Attic. The last
+post to the Dev and User lists (2023-07-20) was a message about probably
+sunsetting, to which there was no response from anyone.
+
+Issues for the board: There are no issues for the Board at this time. There
+was a possible security issue (January 2023) that was addressed with
+code/documentation changes.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (14 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gavin McDonald on 2022-04-13.
+- No new committers. Last addition was Gavin McDonald on 2022-04-14.
+
+## Project Activity:
+Recent releases:
+
+2.0.5 was released on 2017-07-04.
+2.0.4 was released on 2014-05-19.
+2.0.3 was released on 2013-08-01.
+
+No development activity since January 2023, and no emails on Dev or User lists
+since the aforementioned notice of sunsetting in July.
+
+## Community Health:
+Essentially non-existent, except that I still have changes pending and planned
+for the "terminal" 2.1.0 release. Personal issues, including retirement, have
+delayed this final release.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#section-6BF">2023-09-20</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-BF">2023-06-21</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Project Status:
+Current project status: The project is very quiet currently. No appreciable
+activity in the last couple of years, apart from some discussion of a security
+problem last quarter.
+Issues for the board: As noted in the board comments from last time, a dev@
+email should go out (again) related to probable move to the Attic.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (14 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gavin McDonald on 2022-04-13.
+- No new committers. Last addition was Gavin McDonald on 2022-04-14.
+
+## Project Activity:
+Essentially nothing since the last report. Since it has only been two months
+since the last (delayed) status, nothing has happened. Expect a new dev@
+mailing this week about a move to the Attic. I also expect to make some new
+commits now that summer is here and there is a little more time.
+
+## Community Health:
+There is sufficient oversight still on the PMC, but we are essentially
+finished, with the (increasingly unlikely) potential to make a terminal
+release (now delayed by 3-4 years).</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-BN">2023-04-19</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Issues:
+No Board-level issues at this time. A potential security vulnerability
+came up this quarter, which was investigated and deemed non-critical,
+albeit with some documentation changes. Apologies for missing the report
+last month, as I was dealing with a death in the family.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (13 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gavin McDonald on 2022-04-13.
+- No new committers. Last addition was Gavin McDonald on 2022-04-14.
+
+## Project Activity:
+Other than the security investigation, no real development activity since
+last report. Still intend to make final release *soon*. Expect to start a
+mailing list announcement / discussion on this in the next few weeks. But
+otherwise mailing lists are quiet (as usual).
+
+## Community Health:
+Interesting that the potential security issue came up, but having such
+little community activity was a big factor in downgrading the problem.
+Expect discussion of the end-of-life situation in the next report.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#section-6BB">2023-03-22</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-BR">2023-01-18</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Issues:
+No issues requiring Board attention at this time.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (13 years ago) There are currently 10
+committers and 7 PMC members in this project. The Committer-to-PMC ratio is
+roughly 5:4.
+
+Community changes, past year:
+- No new PMC members. Last addition was Gavin McDonald on 2022-04-13.
+- No new committers. Last addition was Gavin McDonald on 2022-04-14.
+
+## Project Activity:
+No commit activity this last quarter, and only a minuscule number of emails.
+
+Recent releases:
+* 2.0.5 was released on 2017-07-04.
+* 2.0.4 was released on 2014-05-19.
+
+## Community Health:
+No new development activity this quarter. Still anticipating a final release
+followed by moving to the Attic, unless some totally unexpected community
+begins to develop again.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#section-6BG">2022-12-21</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-BK">2022-10-19</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Issues:
+No issues requiring Board attention at this time.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (13 years ago) There are currently 10
+committers and 7 PMC members in this project. The Committer-to-PMC ratio is
+roughly 5:4.
+
+Community changes, past year:
+- No new PMC members. Last addition was Gavin McDonald on 2022-04-13.
+- No new committers. Last addition was Gavin McDonald on 2022-04-14.
+
+## Project Activity:
+One new JIRA issue opened and two closed since last report, related
+to the feature set and timeline for what will probably be our final
+release.
+
+Recent releases:
+* 2.0.5 was released on 2017-07-04.
+* 2.0.4 was released on 2014-05-19.
+
+## Community Health:
+Basically unchanged from the last two reports this year, except that the final
+release development activity has slowed somewhat. I'm thinking that not all
+the final release objectives can realistically be met, given the lack of
+development resources, but there is certainly enough done that can be released
+at any point we decide to. I expect some discussion this next quarter on
+what would be realistic to accomplish.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#section-6BE">2022-09-21</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-BC">2022-06-15</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Issues:
+No Board-level issues at this time. With the appointment of Gavin McDonald to
+the PMC and as a committer we have sufficient PMC oversight now.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (12 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- Gavin McDonald was added to the PMC on 2022-04-13
+- Gavin McDonald was added as committer on 2022-04-14
+
+## Project Activity:
+No new JIRA issues since last report, no commits. Some minor mailing list
+activity. We are included in an Infra trial of mailing list migration.
+
+Recent releases:
+* 2.0.5 was released on 2017-07-04.
+* 2.0.4 was released on 2014-05-19.
+
+## Community Health:
+In response to questions from last report: Yes, the plan is to finish work on
+a terminal release and then propose moving the project to the Attic. In the
+event that new community involvement appears we can certainly readjust this
+plan. Currently no certain timeframe for this last release, but there is no
+hurry.</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#attachment-BA">2022-04-20</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Issues:
+No Board-level issues at this time. There are still some discrepancies in the
+PMC and committer lists that need to be rectified. But one new PMC member
+added to ensure proper project oversight.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (12 years ago)
+There are currently 10 committers and 7 PMC members listed in this project.
+The Committer-to-PMC ratio is 10:7. Figures based on Whimsy.
+
+Community changes, past quarter:
+- Gavin McDonald (finally) added as PMC Member (2022-04-14)
+- Niclas Hedhman (also finally) removed from the project and PMC.
+- No new committers were added.
+
+## Releases
+- Latest version 2.0.5 was released on 2017-07-04.
+- New version 2.1.0 currently late but still planned for soon.
+
+## Project Activity:
+Very little activity since the last report (2022-02) but one new
+issue created.
+
+## Community Health:
+Mostly no community any more, but one active developer still working. There are
+possibly some avenues for further development, but which would require
+significant work. The immediate needs are finishing the coding for a
+(possible) final release, unless a new community starts to develop.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#section-6AZ">2022-03-16</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-AU">2022-02-16</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java.
+
+## Issues:
+No Board-level issues at this time. A new PMC member has been chosen
+(waiting on 72-hour notice period) which will bring us back to at least
+three voting members.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (12 years ago)
+There are currently 9 committers and 8 PMC members in this project.
+The Committer-to-PMC ratio is 9:8.
+
+## Community changes, past quarter:
+- One new PMC member appointed. Previous addition was Niclas
+  Hedhman on 2016-01-13 who has subsequently resigned.
+- No new committers were added.
+- I believe the PMC / committer lists need to be updated to
+  reflect current reality.
+
+## Project Activity:
+There continues to be development activity towards a new release.
+
+## Community Health:
+Nothing new except the above.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#section-6BE">2022-01-19</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#section-6BC">2021-12-15</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-BD">2021-09-15</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java.
+
+## Issues:
+As suggested by the Board from our last report and discussion on Legal
+a Discussion Item A has been added (above) to consider appointing a
+new PMC Member to provide project oversight. A separate email thread
+on ComDev is also active (per Board request) to discuss community
+development.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (11 years ago)
+There are currently 9 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is 9:7.
+Note: this data seems to be in error, based on activity, so an update
+needs to be made.
+
+## Community changes, past quarter:
+- No new PMC members. Last addition was Niclas Hedhman on 2016-01-13.
+- Niclas Hedhman has asked to be removed from the PMC.
+- No new committers were added.
+
+## Project Activity:
+There continues to be development activity, leading up to a new release,
+now scheduled for the end of 2021.
+
+## Community Health:
+Following up on the Legal and ComDev discussions should provide insight
+into the next steps for the project, which should include website updates
+as well as appeals on the mailing lists.</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#attachment-BI">2021-07-21</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java.
+
+## Issues:
+As documented in our last report, there does not seem to be sufficient
+oversight on the PMC. So, in response to Board comments I would like to
+request help from the Board or Members to either:
+* find someone who would join the PMC temporarily to oversee a final
+  release and the transition to the Attic,
+* or help with attracting some new users / developers.
+I will email the Users and Developers lists with this same appeal.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (11 years ago)
+There are currently 9 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Niclas Hedhman on 2016-01-13.
+- Niclas Hedhman has asked to be removed from the PMC.
+- No new committers were added.
+
+## Project Activity:
+There has been some development activity in this last quarter, including
+some new issues, but not enough for the envisioned release this summer.
+
+## Community Health:
+The community seems to be completely gone except for myself, but I will
+make one last appeal on the mailing lists.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#section-6AX">2021-06-16</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-BG">2021-04-21</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java.
+
+## Issues:
+With the abrupt departure of one of the PMC members I have been attempting
+to contact other PMC members to see if we still have 3 votes. Have not heard
+from anyone, though. So, I would say the project now has insufficient oversight.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (11 years ago)
+There are currently 9 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Niclas Hedhman on 2016-01-13.
+- Niclas Hedhman has asked to be removed from the PMC, but the motion
+  has not been filed yet.
+- No new committers were added.
+
+## Project Activity:
+There has been a lot of development activity in the last few months, on a
+timeline for the "terminal" release probably this summer.
+
+## Community Health:
+Not good. Only myself working on development and no other user or developer
+activity. Attempting to contact any of the other committers or developers in
+order to reestablish sufficient project oversight.</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#section-6BA">2021-03-17</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#attachment-AX">2020-12-16</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>## Description
+The mission of Pivot is the creation and maintenance of software related
+to Rich Internet applications in Java
+
+## Issues
+Very little activity, but no issues arose this quarter. Three PMC members
+are still available to vote, and some small amount of development toward
+what is likely to be a final release is still ongoing.
+
+## Membership Data
+Apache Pivot was founded on 2009-12-15 (11 years ago).
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+## Community Changes Past Quarter
+- No new PMC members. Last addition was Niclas Hedhman on 2016-01-13.
+- No new committers. Last addition was Niclas Hedhman on 2020-02-05.
+
+## Project Release Activity
+- The planned 2.1 release for the end of 2020 will likely now be Q1
+  or Q2 of 2021.
+- 2.0.5 was released on 2017-07-04.
+- 2.0.4 was released on 2014-05-19.
+- 2.0.3 was released on 2013-08-01.
+
+## Project Activity
+There was no mailing list activity this last quarter, and no commits
+or issues changed. Some development activity continued in the
+background, but without commits yet.
+
+## Community Health
+The same as the last several years, there is no visible community,
+except for the one developer / PMC chair who is still doing work.
+The Attic seems inevitable once the hoped for and planned 2.1
+release is done.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-BA">2020-09-16</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java
+
+## Issues:
+There are no new issues this quarter: little to no activity, but at least
+three PMC members are still available. Some small amount of development
+still ongoing.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-15 (11 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+## Community changes, past quarter:
+- No new PMC members. Last addition was Niclas Hedhman on 2016-01-13.
+- No new committers. Last addition was Niclas Hedhman on 2020-02-05.
+
+## Project Activity:
+Still hoping to get to a 2.1.0 (likely final) release in the near
+future. There will need to be some decisions made for future Java
+compatibility before release.
+
+## Community Health:
+The community has mostly disappeared, but there is still one developer
+doing work, who is also available for security fixes, if necessary.</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-AX">2020-06-17</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Pivot is an open-source platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and usability
+features of a modern user interface toolkit with the robustness of the Java
+platform.
+
+## Issues:
+Community health has been very weak for many years already, and there are no
+signs of it improving. Since the PMC Chair (and only active committer) has
+been going through personal issues, discussion about moving to the Attic has
+once again picked up.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-16 (10 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+## Community changes, past quarter:
+- No new PMC members. Last addition was Niclas Hedhman on 2016-01-14.
+- No new committers. Last addition was Niclas Hedhman on 2020-02-06.
+
+## Project Activity:
+Activity is very low, with a flurry of new activity this quarter from
+the single developer still active, but little external interest. The
+current activity is still aimed toward what we anticipate to be a final
+2.1 release with possible conclusion this year.
+
+## Community Health:
+Community health is not great, although 3 PMC members are still available to
+make decisions, but there are no new committers or PMC Members in sight.</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-AV">2020-05-20</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Pivot is the creation and maintenance of software related to
+Rich Internet applications in Java.
+
+## Issues:
+Community health has been very weak for many years already, and there are no
+signs of it improving. It is likely that Pivot will go to the Attic soon.
+
+## Membership Data:
+Apache Pivot was founded 2009-12-16 (10 years ago)
+There are currently 10 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Niclas Hedhman on 2016-01-14.
+- No new committers. Last addition was Niclas Hedhman on 2020-02-06.
+
+## Project Activity:
+Activity is very low, and effectively a single developer effort, and very
+little (but not none) external interest. There has been a small uptick of
+activity after February, and there is work on-going, steady, albeit slow,
+progress towards a 2.1 release, but it is difficult to estimate when
+(and if) that will be ready.
+
+
+## Community Health:
+Community health is not great, and the PMC should discuss whether the
+project should be placed into the Attic. 3 PMC members are still available to
+make decisions, but there are no new committers or PMC Members in sight.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#section-6BI">2020-04-15</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Niclas: pursue a report for Pivot</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#section-6AZ">2020-03-18</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Ted: pursue a report for Pivot</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#attachment-AV">2019-12-18</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>Description:
+Apache Pivot is an open-source platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and usability
+features of a modern user interface toolkit with the robustness of the
+Java platform.
+
+Issues:
+No board-level issues at this time.
+
+Activity:
+A little bit of development work continued toward the 2.1.0 release, and
+so there were some dev emails because of that. But no traffic on user mailing
+list.
+
+Development continues toward the 2.1.0 release, including testing/changes with
+the latest (9,10,11,etc.) Java releases.
+
+Health Report:
+Basically unchanged again this quarter, although there was some small amount
+of development activity. Users remain quiet.
+
+PMC changes:
+ - Currently 7 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016
+
+Committer base changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 03 2017
+ - Still some development on next major version (2.1.0).
+
+Mailing list activity:
+ - dev@pivot.apache.org:
+    - 13 emails sent to list (13 in previous quarter)
+
+ - user@pivot.apache.org:
+    - No emails sent to list (none in previous quarter either)
+
+JIRA activity:
+ - No JIRA activity in the last quarter.</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#attachment-AW">2019-09-18</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>Description:
+Apache Pivot is an open-source platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and usability
+features of a modern user interface toolkit with the robustness of the
+Java platform.
+
+Issues:
+No board-level issues at this time.
+
+Activity:
+A little bit of development work continued toward the 2.1.0 release. But
+essentially no other traffic on either dev or user mailing lists.
+
+Essentially the same theme as the last report (July 2019) in that after
+this release some serious decisions need to be made about the future of
+the project. I have some hope that we might pick up some interest from
+the mobile (Android) community, and/or something, but this seems unlikely
+given the current climate.
+
+Health Report:
+Basically unchanged again this quarter, although there was some small amount
+of development activity. Users remain quiet.
+
+PMC changes:
+ - Currently 7 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016
+
+Committer base changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 03 2017
+ - Still some development on next major version (2.1.0).
+
+Mailing list activity:
+ - dev@pivot.apache.org:
+    - 13 emails sent to list (6 in previous quarter)
+
+ - user@pivot.apache.org:
+    - No emails sent to list (1 in previous quarter)
+
+JIRA activity:
+ - Two (2) JIRA tickets opened in the last quarter.
+ - One (1) JIRA ticket closed/resolved in the last quarter.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-CB">2019-07-17</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>(postponed from June 2019)
+
+Description:
+Apache Pivot is an open-source platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and usability
+features of a modern user interface toolkit with the robustness of the
+Java platform.
+
+Issues:
+This is a postponed report from June 2019, but otherwise no board-level
+issues at this time.
+
+Activity:
+Some development work has picked up again. No user activity on the mailing
+lists. I intend to finish the long-delayed 2.1 release this calendar year,
+at which time it seems appropriate to have a discussion about the future of
+the project, given the continuing low level of activity. There are now code
+issues with the latest versions of Java (9, 10, 11, etc.) that have not been
+addressed, and which could become serious impediments in the coming year.
+
+Health Report:
+Basically unchanged again this quarter, although there was some small amount
+of development activity. Users remain quiet.
+
+PMC changes:
+ - Currently 7 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016
+
+Committer base changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 03 2017
+ - Still some development on next major version (2.1.0).
+
+Mailing list activity:
+ - dev@pivot.apache.org:
+    - 62 subscribers (up 0 in the last 3 months):
+    - 6 emails sent to list (8 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 168 subscribers (down -1 in the last 3 months):
+    - 1 emails sent to list (1 in previous quarter)
+
+JIRA activity:
+ - No JIRA tickets created in the last 4 months.
+ - One JIRA ticket closed/resolved in the last 4 months.
+
+------------------------------------------------------
+End of minutes for the July 17, 2019 board meeting.</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#section-6AZ">2019-06-19</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Shane: pursue a report for Pivot</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#attachment-AW">2019-03-20</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>Description:
+Apache Pivot is an open-source platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and usability
+features of a modern user interface toolkit with the robustness of the
+Java platform.
+
+Issues:
+There are no board-level issues at this time.
+
+Activity:
+Again, very little (almost no) development activity this quarter; combination
+of work pressures and ongoing personal challenges. A tiny uptick in dev and
+user emails, which still shows some interest. Otherwise no change from
+previous quarters. Deprecations in the latest Java versions (esp. Applet and
+Nashorn engine) will require serious development efforts to address, thus
+some suggestions for different backends.
+
+Health report:
+Basically unchanged for several years:  development is ongoing, but users
+are quiet.
+
+PMC changes:
+ - Currently 7 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016
+
+Committer base changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 03 2017
+ - Still some development on next major version (2.1.0).
+
+Mailing list activity:
+- dev@pivot.apache.org:
+    - 62 subscribers (up one in the last 3 months)
+    - 10 emails sent to list (20 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 169 subscribers (unchanged over the last 3 months)
+    - 1 email sent to list (1 in previous quarter)
+
+JIRA activity:
+ - No JIRA tickets created in the last 3 months
+ - One JIRA ticket closed/resolved in the last 3 months</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#attachment-AV">2018-12-19</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable
+   Internet applications (IIAs). It combines the enhanced productivity and
+   usability features of a modern user interface toolkit with the robustness of
+   the Java platform.
+
+Issues:
+   There are no board-level issues at this time.
+
+Activity:
+   Very little development activity this quarter, mostly due to my personal
+   issues (death of my wife). Otherwise same low level of user activity as
+   the past couple of years. We will need some serious work related to Java
+   applets being gone and the Nashorn engine going away soon as well.
+
+Health report:
+   Basically unchanged for several years:  development is ongoing, but users
+   are quiet.
+
+PMC changes:
+ - Currently 7 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016
+
+Committer base changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 03 2017
+ - Still active development on next major version (2.1.0).
+
+Mailing list activity:
+- dev@pivot.apache.org:
+    - 61 subscribers (down one in the last 3 months)
+    - 20 emails sent to list (44 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 169 subscribers (down 2 in the last 3 months)
+    - 1 email sent to list (1 in previous quarter)
+
+JIRA activity:
+ - 3 JIRA tickets created in the last 3 months
+ - No JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#attachment-AT">2018-09-19</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable
+   Internet applications (IIAs). It combines the enhanced productivity and
+   usability features of a modern user interface toolkit with the robustness of
+   the Java platform.
+
+Issues:
+   There are no board-level issues at this time.
+
+Activity:
+   Development activity continues toward the 2.1.0 release, which still should
+   be *soon*, although a bit slower due to summer vacations. Builds were done
+   using Java 10, and numerous issues fixed, so we are well-positioned for
+   going forward.  Community is very silent as usual these last few years.
+
+Health report:
+   Basically unchanged for several years:  development is ongoing, but users
+   are quiet.
+
+PMC changes:
+ - Currently 7 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016
+
+Committer base changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 03 2017
+ - Still active development on next major version (2.1.0).
+
+Mailing list activity:
+- dev@pivot.apache.org:
+    - 62 subscribers (unchanged in the last 3 months)
+    - 56 emails sent to list (46 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 171 subscribers (unchanged in the last 3 months)
+    - 2 emails sent to list (4 in previous quarter)
+
+JIRA activity:
+ - 7 JIRA tickets created in the last 3 months
+ - 7 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#attachment-AX">2018-06-20</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and usability
+   features of a modern user interface toolkit with the robustness of the
+   Java platform.
+
+Issues:
+   There are no board-level issues at the moment.
+
+Activity:
+    One new potential developer showed up this quarter, so mailing lists
+    are up by one. Development of the next version (2.1) is still ongoing,
+    although slower than last quarter. I anticipate an attempt to release
+    in a few weeks time.
+
+Health Report:
+    Basically unchanged since the last report.  Users are still generally
+    quiet. Development on the next version is still ongoing.
+
+PMC Changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months.
+ - Last PMC re-addition was Niclas Hedhman on Wed Jan 13 2016.
+
+Committer Base Changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 3 2017
+ - Still active development on next major version (2.1)
+
+Mailing List Activity:
+ - All mailing list activity (except private@) is down this quarter,
+   even though we gained a subscriber. Note: these numbers are from
+   the reporter app.
+
+ - dev@pivot.apache.org
+    - 62 subscribers (up +1 from last report)
+    - 48 emails sent to list (270 in previous quarter)
+
+ - user@pivot.apache.org
+    - 171 subscribers (up +1 from last report)
+    - 4 emails sent to list (15 in previous quarter)
+
+ - commits@pivot.apache.org
+    - 19 subscribers (unchanged from last time)
+    - 56 emails this quarter (vs. 151 in last quarter)</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#attachment-AX">2018-03-21</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and usability
+   features of a modern user interface toolkit with the robustness of the
+   Java platform.
+
+Issues:
+   There are no board-level issues at the moment.
+
+Activity:
+    The long-awaited 2.1 release is closer than ever -- at least two big
+    refactoring projects for this release are done, and a host of other,
+    smaller changes have been made.  Expectations are now that we will be
+    able to release this next quarter.  A new user has recently gotten
+    Pivot to work with NetReXX, which is a very interesting development.
+    The project builds and runs with JDK 9, although no "modularization"
+    has taken place yet.  There has been a lot of "commit" traffic from
+    the new development, and a larger number both of new JIRA tickets,
+    but also JIRA tickets fixed this quarter.
+
+Health Report:
+    Basically unchanged since the last report.  Users are generally quiet
+    and a new user appeared.  Development on the next version is very
+    active.
+
+PMC Changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months.
+ - Last PMC re-addition was Niclas Hedhman on Wed Jan 13 2016.
+
+Committer Base Changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 3 2017
+ - Still active development on next major version (2.1)
+
+Mailing List Activity:
+ - All mailing list activity (except private@) is up this quarter, although
+   subscribers are down a bit. Note: these stats for last quarter are the
+   same as the previous report, but differ from the "reporter" app --
+   probably because of timing differences for the "quarter".
+
+ - dev@pivot.apache.org
+    - 61 subscribers (unchanged from last report)
+    - 270 emails sent to list (143 in previous quarter)
+
+ - user@pivot.apache.org
+    - 170 subscribers (down two from last report)
+    - 15 emails sent to list (1 in previous quarter)
+
+ - commits@pivot.apache.org
+    - 19 subscribers (down -1 from last time)
+    - 151 emails this quarter (vs. 91 in last quarter)
+
+ - private@pivot.apache.org
+    - 12 subscribers (unchanged from last quarter)
+    - Just a few emails this quarter also
+
+JIRA Activity:
+ - 16 JIRA tickets created this quarter
+ - Also 15 JIRA tickets closed/resolved this period</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#attachment-BB">2017-12-20</a> &mdash; Roger Lee Whitcomb<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and usability
+   features of a modern user interface toolkit with the robustness of the
+   Java platform.
+
+Issues:
+   There are no board-level issues at the moment.
+
+Activity:
+    The small flurry of activity from the 2.0.5 maintenance release has
+    quieted, but there has been a steady stream of commits to the trunk
+    in preparation for a 2.1 release, possibly in the first part of 2018.
+    The question of discontinuing applet support has been tabled for now.
+    User mailing list activity has been non-existent, but hopefully will
+    pick up some with the discussions around the 2.1 release.  Sufficient
+    PMC representation still remains. Starting to build with Java 9 with
+    no problems found.
+
+Health Report:
+    Basically unchanged since the last report.  Users are generally quiet
+    and no new users are appearing, but development continues.
+
+PMC Changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months.
+ - Last PMC re-addition was Niclas Hedhman on Wed Jan 13 2016.
+
+Committer Base Changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 3 2017
+ - Still active development on next major version (2.1)
+
+Mailing List Activity:
+ - Dev and Commits lists activities are up, User activity way down. One
+   subscriber to the private and commits list left (probably an ASF observer).
+
+ - dev@pivot.apache.org
+    - 61 subscribers (unchanged from last report)
+    - 143 emails sent to list (89 in previous quarter)
+
+ - user@pivot.apache.org
+    - 172 subscribers (also unchanged from last report)
+    - 1 email sent to list (12 in previous quarter)
+
+ - commits@pivot.apache.org
+    - 20 subscribers (down -1 from last time)
+    - 91 emails this quarter (vs. 70 in last quarter)
+
+ - private@pivot.apache.org
+    - 12 subscribers (down -1, probably the +1 from last quarter)
+    - Just a few emails this quarter
+
+JIRA Activity:
+ - 11 JIRA tickets created this quarter
+ - Also 11 JIRA tickets closed/resolved this period</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-AX">2017-09-20</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and usability
+   features of a modern user interface toolkit with the robustness of the
+   Java platform.
+
+Issues:
+   There are no board-level issues at the moment.
+
+Activity:
+    We finally have released the long-awaited 2.0.5 maintenance version,
+    with no new problems reported against it so far.  Development has
+    continued (albeit more slowly than last quarter) on the 2.1.0 version.
+    We have started discussion about removing applet support entirely
+    but have not come to any firm conclusions yet.
+
+Health Report:
+    Unchanged from last report -- although the new release has not resulted
+    in any net gain in interest that we can see.  There are still at least
+    three PMC members listening for votes, etc.
+
+PMC Changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months.
+ - Last PMC re-addition was Niclas Hedhman on Wed Jan 13 2016.
+
+Committer Base Changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.5 on Mon Jul 3 2017
+ - Still active development on next major version (2.1.0)
+
+Mailing List Activity:
+ - Steady, overall roughly the same as previous quarter.
+
+ - dev@pivot.apache.org
+    - 61 subscribers (actually down -1 from last report)
+    - 100 emails sent to list (131 from last report)
+
+ - user@pivot.apache.org
+    - 172 subscribers (down -2 from last report)
+    - 12 emails this quarter (vs. 5 last time)
+
+ - commits@pivot.apache.org
+    - 21 subscribers (up +1 from last time)
+    - 71 emails this time (vs. 78 in last quarter)
+
+ - private@pivot.apache.org
+    - 13 subscribers (up +1 for the first time in a long time)
+    - No mails sent
+
+JIRA Activity:
+ - 6 JIRA tickets created this quarter
+ - Also 6 JIRA tickets closed/resolved this period</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#attachment-AT">2017-06-21</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and usability
+   features of a modern user interface toolkit with the robustness of the
+   Java platform.
+
+Issues:
+   There are no board-level issues at the moment.
+
+Activity:
+   There has been a lot of activity (relatively-speaking) this quarter:
+   a "show-stopper" issue showed up with the release of Java 8u131 that
+   required an immediate fix, which was done within a few days; much
+   work is being done in "trunk" on implement Input Method Editor
+   support for text controls; and the next maintenance release is
+   just about to happen.
+
+Health report:
+   With the "show-stopper" issue a number of people who had been
+   quietly using Pivot in the background "resurfaced" to weigh in,
+   which indicated that there are more people interested in the
+   project than is reflected in the mailing list statistics. This
+   is heartening. The upcoming maintenance release should help as
+   well, hopefully, to revive some interest.
+
+PMC changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months.
+ - Last PMC re-addition was Niclas Hedhman on Wed Jan 13 2016.
+
+Committer base changes:
+ - Currently 9 committers.
+ - No new changes to the committer base since last report.
+
+ - No new committers added in the last 3 months
+ - Last committer addition was more than 2 years ago
+
+Releases:
+ - Last release was 2.0.4 on Sun May 18 2014
+ - Next release (2.0.5) is in process.
+
+Mailing list activity:
+The developer list activity is way up due to the increased
+coding in "trunk" and fixing the "show-stopper" issue in the
+maintenance branch. Incidentally the change in mailing list
+subscribers was actually due to a user changing his email
+address, and he contacted us for help.
+
+ - dev@pivot.apache.org:
+    - 62 subscribers (down -1 in the last 3 months):
+    - 131 emails sent to list (21 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 174 subscribers (down -1 in the last 3 months):
+    - 5 emails sent to list (6 in previous quarter)
+
+JIRA activity:
+ - 7 JIRA tickets created in the last 3 months
+ - 2 JIRA tickets closed/resolved in the last 3 months
+ - About 5 tickets were also changed to move them out from
+   2.0.5 to 2.1 in order to expedite the 2.0.5 release.</pre>
+<h3 id="2017-03-15"><a href="2017/board_minutes_2017_03_15.html#attachment-AP">2017-03-15</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2017-03-15" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and usability
+   features of a modern user interface toolkit with the robustness of the
+   Java platform.
+
+Issues:
+  There are no board-level issues at this time.
+
+Activity:
+  Activity remains low, but there was a bit of an uptick this quarter from
+  last.  A familiar user returned asking about a new release, which has still
+  not happened, but definitely could happen this quarter.
+
+Health report:
+  Definitely a "stable" product looking for new blood.  I think there are
+  several directions we could go, but I have no significant time to devote.
+  I will start some discussions soon on the "dev" list about these ideas.
+
+PMC changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016
+
+Committer base changes:
+ - Currently 5 active (that is, not emeritus) committers.
+ - No new changes to the committer base since last report.
+ - No new committers added in the last 3 months.
+ - Last committer addition was more than 2 years ago.
+
+Releases:
+ - Last release was 2.0.4 on Mon May 19 2014
+
+Mailing list activity:
+  Some development / bug fixing was done this quarter, so a slight uptick
+  in activity. As noted above, one long-time user returned asking for a
+  new release; that discussion is ongoing.
+
+ - dev@pivot.apache.org:
+    - 62 subscribers (up 0 in the last 3 months):
+    - 21 emails sent to list (7 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 174 subscribers (down -1 in the last 3 months):
+    - 6 emails sent to list (2 in previous quarter)
+
+JIRA activity:
+ - 2 JIRA tickets created in the last 3 months
+ - 0 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-12-21"><a href="2016/board_minutes_2016_12_21.html#attachment-AO">2016-12-21</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2016-12-21" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and usability
+   features of a modern user interface toolkit with the robustness of the
+   Java platform.
+
+Issues:
+   There are no board-level issues at this time.
+
+Activity:
+   Activity has been way down this quarter (see stats below). The long-
+   delayed next release did not happen this past quarter, but we are
+   ready to do it when the chair can get some cycles.
+
+Health report:
+   The ongoing issue remains lack of activity on the project.  Active
+   development was being done by myself, but my employment has changed
+   technologies, and is no longer interested in Pivot, so it is hard to
+   find the time to do much more. I will push through the 2.0.5 release
+   in the next few months and we will see if that helps any.
+
+   There are also many changes in "trunk" that could almost warrant
+   a 2.1 release (but there is no "killer" feature yet), but that
+   might produce an uptick as well.
+
+   When I get time, I will try to reach out some more using any of
+   the available means to try to stimulate some interest.
+
+PMC Changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016
+
+Committer base changes:
+ - Currently 5 active (that is, not emeritus) committers.
+ - No new changes to the committer base since last report.
+ - No new committers added in the last 3 months.
+ - Last committer addition was more than 2 years ago.
+
+Releases:
+ - Last release was 2.0.4 on Mon May 19 2014
+
+Mailing list activity:
+  As you can see from the following statistics there was virtually
+  no activity this last quarter.
+
+ - dev@pivot.apache.org:
+    - 62 subscribers (no change)
+    - 7 emails sent to list (23 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 175 subscribers (no change)
+    - 2 emails sent to list (11 in previous quarter)</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#attachment-AP">2016-09-21</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and
+   usability features of a modern user interface toolkit with the
+   robustness of the Java platform.
+
+Issues:
+   There are no board-level issues at this time.
+
+Activity:
+   Activity has been down this quarter (see stats below).  But we should
+   be ready for a new release this coming quarter.
+
+Health report:
+   The ongoing issue is lack of activity in the project.  While we still
+   have enough PMC members to do a vote currently, and some users still
+   using the product, new development is very slow and there doesn't
+   seem to be much of a market for the product anymore.  Attempts to
+   attract cross-pollinization with other Apache projects have not been
+   very successful.
+
+PMC changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months.
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016.
+
+Committer base changes:
+ - Currently 5 active (that is, not emeritus) committers.
+ - No new changes to the committer base since last report.
+ - No new committers added in the last 3 months.
+ - Last committer addition was more than 2 years ago.
+
+Releases:
+ - Last release was 2.0.4 on Mon May 19 2014
+
+Mailing list activity:
+   As evidenced by these figures, activity has been down this quarter.
+   Actually in comparison to the quarter before that, it was even slower.
+
+ - dev@pivot.apache.org:
+    - 62 subscribers (down -1 in the last 3 months)
+    - 23 emails sent to list (31 in previous quarter, 55 the quarter before)
+
+ - user@pivot.apache.org:
+    - 175 subscribers (down -1 in the last 3 months)
+    - 11 emails sent to list (22 in previous quarter, 28 the quarter before)
+
+JIRA activity:
+   But as evidenced by these figures, there is still some development
+   going on, and bugs are getting addressed (albeit slowly).
+
+ - 1 JIRA tickets created in the last 3 months
+ - 5 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-06-15"><a href="2016/board_minutes_2016_06_15.html#attachment-AR">2016-06-15</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2016-06-15" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and
+   usability features of a modern user interface toolkit with the
+   robustness of the Java platform.
+
+Issues:
+   I see the information about migration of Pivot-Extras, but haven't had
+   time to pursue it since the last report.  Would appreciate a bit of
+   help digging into the process.
+   Otherwise, there are no board-level issues this time around.
+
+Activity:
+   Activity has been up a bit from last quarter with the new users still
+   working and asking (a few) questions.  There has been some bug fix
+   activity.  We should be able to do a new release (2.0.5) after one
+   more bug is resolved (a Java 8 issue).
+
+Health report:
+   The new users we got recently and continued development by me has kept
+   things going this quarter.  Long-term prospects are still uncertain
+   as the market moves away from these kinds of platforms.  We still have
+   three PMC members for votes.
+
+PMC changes:
+ - Currently 4 PMC members.
+ - No new PMC members added in the last 3 months.
+ - Last PMC addition was Niclas Hedhman on Wed Jan 13 2016.
+
+Committer base changes:
+ - Currently 5 active (that is, not emeritus) committers.
+ - No new changes to the committer base since last report.
+ - No new committers added in the last 3 months.
+ - Last committer addition was more than 2 years ago.
+
+Releases:
+ - Last release was 2.0.4 on Mon May 19 2014
+
+Mailing list activity:
+   A couple more users started asking development questions, which is
+   good.  But it was a slow quarter as far as actual development goes.
+   The new users contributed some good questions, which were all
+   resolved (I think).  Not quite as slow as some quarters go, so
+   actually not bad.
+
+ - dev@pivot.apache.org:
+    - 63 subscribers (up 2 in the last 3 months):
+    - 33 emails sent to list (55 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 176 subscribers (up 2 in the last 3 months):
+    - 22 emails sent to list (28 in previous quarter)
+
+JIRA activity:
+ - 2 JIRA tickets created in the last 3 months.
+ - 2 JIRA tickets closed/resolved in the last 3 months.
+ - Activity has picked up just this last week (that is, after the
+   reporting period).</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#attachment-AV">2016-03-16</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>Description:
+  Apache Pivot is an open-source platform for building installable Internet
+  applications (IIAs). It combines the enhanced productivity and usability
+  features of a modern user interface toolkit with the robustness of the
+  Java platform.
+
+Issues:
+  - I do not think there are any board-level issues with Pivot at this time.
+  - We may need to have a discussion about moving to the Attic *soon*, but
+    not right now.
+
+Activity:
+  Since our last report there has been a downtick in mailing list activity
+  but not to historic lows, but there has been a slight uptick in the
+  meta-activity around the project:
+  - I have volunteered to possibly be a mentor for GSOC in conjunction
+    with Airavata.
+  - An emeritus PMC member has rejoined to help with votes and
+    administrative issues.
+  - Several new users have shown up.
+  - We are close to a new release with only one (known) issue to resolve.
+  - Rich Bowen published the podcast he did with me last year at the
+    feathercast.apache.org site.
+
+Health report:
+ - I would say the project is borderline at the moment, but no worse than
+   last report (in fact, maybe a bit better).
+ - With the final death blow to Java applets coming in September with the
+   release of Java 9, the traditional market for Pivot will shrink
+   dramatically.
+ - I am still trying to work within the ASF and elsewhere to move
+   into new areas.  This is an ongoing effort.
+ - But, even with some new users, there are no new candidates for
+   committership or PMC membership, which remains a big issue.
+
+PMC changes:
+ - Currently 4 PMC members.
+ - Niclas Hedhman was added back to the PMC on Wed Jan 13 2016.
+
+Committer base changes:
+ - Currently 9 committers, of whom 2 are currently active.
+ - No changes to the committer base since last report.
+ - Last committer addition Piotr Ko&lstrok;aczkowski (pkolaczk) was in
+   May 2012.
+
+Releases:
+ - Last release was 2.0.4 on Mon May 19 2014.
+
+Mailing list activity:
+ - We have several new mailing list subscribers corresponding to the
+   new users, although activity has been slower this last quarter.
+
+ - dev@pivot.apache.org:
+    - 61 subscribers (up 3 in the last 3 months)
+    - 55 emails sent to list (77 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 175 subscribers (up 3 in the last 3 months)
+    - 28 emails sent to list (43 in previous quarter)
+
+JIRA activity:
+ - JIRA activity is a bit slow, but at least one critical Java 8
+   issue was resolved, meaning the 2.0.5 release is closer now.
+ - 5 JIRA tickets created in the last 3 months.
+ - 2 JIRA tickets closed/resolved in the last 3 months.</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#attachment-AT">2015-12-16</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and
+   usability features of a modern user interface toolkit with the
+   robustness of the Java platform.
+
+Activity:
+ - User activity was up a little bit this quarter, with some more new
+   users needing help.
+ - There was some development activity, but less than the previous
+   quarter, although progress was made on a gnarly Java 8 issue.
+ - One of the emeritus PMC members has agreed to become active again
+   and to devote a little time to help with administrative things. This
+   will potentially help with adding some other PMC members and/or
+   whatever we need to do going forward (Attic? or ?).
+ - One other ASF Member has joined the private mailing list, also to
+   help in some way.
+ - I am still investigating ways to revive interest in the project
+   (other than myself).
+
+Health report:
+ - The Reporter app still reports us in an unhealthy state. But I think
+   we are making a little progress toward "something".
+ - The industry has really gone far away from the types of things that
+   Pivot is good at, so we are near a cusp here -- either find a way to
+   make it attractive to users again, or retire the code. To me, finding
+   a niche in the mobile market might be a good future direction, so I'm
+   investigating that.
+ - Although we did get a couple new users this quarter, so there is still
+   some interest (based on actual emails, not the list subscriptions).
+
+Issues:
+ - Still looking for help with the Apache Extras issue (no news from the
+   Board since the last report in September).
+
+PMC changes:
+ - Currently 3 PMC members.
+ - No new PMC members added in the last 3 months, although Niclas Hedhman
+   (niclas at apache.org) has agreed to rejoin the PMC (ASF records not
+   updated yet); that will make 4 on the PMC.
+ - Last PMC addition was Roger Whitcomb on Mon Oct 24 2011.
+
+Committer base changes:
+ - Currently 5 active (that is, not emeritus) committers.
+ - No new changes to the committer base since last report.
+
+Releases:
+ - Last release was 2.0.4 on Mon May 19 2014.
+
+Mailing list activity:
+ - dev@pivot.apache.org:
+    - 58 subscribers (up 1 in the last 3 months):
+    - 78 emails sent to list (104 in previous quarter)
+ - user@pivot.apache.org:
+    - 172 subscribers (down -2 in the last 3 months):
+    - 45 emails sent to list (3 in previous quarter)
+
+JIRA activity:
+ - 2 JIRA tickets created in the last 3 months
+ - 6 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-09-16"><a href="2015/board_minutes_2015_09_16.html#attachment-AU">2015-09-16</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2015-09-16" title="Permalink">&para;</a></h3>
+<pre>Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and
+   usability features of a modern user interface toolkit with the
+   robustness of the Java platform.
+
+Activity:
+ - User activity was very low this quarter, the lowest I've ever seen,
+   although there were two (apparently) new users.
+ - Development activity was all from myself -- I have many ideas for
+   enhancements, but not much time.  No other committer (with one exception)
+   seems interested in (or available to) do anything.
+
+Health report:
+ - The Reporter facility says that we are in an unhealthy state because of
+   no recent releases and no new committers and no PMC changes for several
+   years.  I concur.
+ - The topic of moving to the Attic comes up at least once a quarter in
+   private correspondence.  Since I am actively using it I would hate to see
+   that, but I am doubtful we could raise 3 PMC members for a vote at this
+   moment.  I think we could (and should) release a new maintenance version
+   in the next quarter, so I will push for that, and see if we can raise the
+   votes for it.
+ - I reached out to ComDev last quarter for ideas/help in building community
+   and heard nothing back.  I will do some further reaching out in the next
+   few weeks.
+ - As I mentioned last quarter, the move by Google (final as of last week) to
+   no longer support Java applets in the browser means that approximately 25%
+   of the browser market is no longer available for the kind of applications
+   that can be developed using Pivot (IIAs).
+
+Issues:
+ - There are still two issues brought up last quarter that need Board
+   attention:  Apache-Extras and the ASF "cookie" policy.
+
+LDAP committee group/Committership changes:
+ - Currently 9 committers and 6 LDAP committee group members.
+ - No new changes to the LDAP committee group or committership since last
+   report.
+ - Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+ - Latest PMC Changes:
+   Roger Whitcomb (rwhitcomb) was added to PMC on 27 Oct 2011,
+   Martijn Dashorst (dashorst) went Emeritus in July 2012,
+   Greg Brown (gbrown) went Emeritus on 10 Sept 2013.
+
+Releases:
+ - Last release was 2.0.4 on Mon May 19 2014
+
+Mailing list activity:
+ - dev@pivot.apache.org:
+    - 57 subscribers (up 0 in the last 3 months):
+    - 102 emails sent to list (58 in previous quarter)
+ - user@pivot.apache.org:
+    - 174 subscribers (up 0 in the last 3 months):
+    - 3 emails sent to list (5 in previous quarter)
+
+JIRA activity:
+ - 8 JIRA tickets created in the last 3 months
+ - 4 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-06-17"><a href="2015/board_minutes_2015_06_17.html#attachment-AY">2015-06-17</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2015-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and
+   usability features of a modern user interface toolkit with the
+   robustness of the Java platform.
+
+## Activity:
+ - Activity remains low this quarter.  Very little User list activity, but
+   definitely some bugs fixed and new development going on, mostly from
+   one developer (myself).
+ - I have reached out (just lately) to the ComDev members for help with
+   building the Pivot community.
+
+## Issues:
+ - The move by Google to eliminate Java applet support in the Chrome
+   browser further diminishes the utility of IIAs in general, so this
+   is definitely a concern for the project.
+ - Still have not heard from ComDev about what Apache Extras is going
+   to do.  We need a decision before our next Board report is due.
+ - We have just heard of an issue in Europe (specifically Italy) where
+   websites that use cookies are required to document this, provide a
+   privacy policy, etc.  Have requested official ASF policy about this
+   because it seems that many ASF project sites are involved.  The Pivot
+   site specifically uses Google Analytics.
+
+## PMC/Committership changes:
+ - Currently 9 committers and 6 PMC members in the project.
+ - No new changes to the PMC or committership since last report.
+ - Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+ - Latest PMC Changes:
+   Roger Whitcomb (rwhitcomb) was added to PMC on 27 Oct 2011,
+   Martijn Dashorst (dashorst) went Emeritus in July 2012,
+   Greg Brown (gbrown) went Emeritus on 10 Sept 2013.
+
+## Releases:
+ - Last release was 2.0.4 on Mon May 19 2014
+
+## Mailing list activity:
+ - dev@pivot.apache.org:
+    - 57 subscribers (down -2 in the last 3 months):
+    - 59 emails sent to list (46 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 174 subscribers (down -1 in the last 3 months):
+    - 5 emails sent to list (8 in previous quarter)
+
+## JIRA activity:
+ - 5 JIRA tickets created in the last 3 months
+ - 3 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-03-18"><a href="2015/board_minutes_2015_03_18.html#attachment-AX">2015-03-18</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2015-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   Apache Pivot is an open-source platform for building installable Internet
+   applications (IIAs). It combines the enhanced productivity and
+   usability features of a modern user interface toolkit with the
+   robustness of the Java platform.
+
+## Activity:
+ - Very slow this last quarter -- most of the dev list emails were from
+   the Jenkins build farm.  We did pick up one user list subscriber and
+   had a couple of issues raised from (apparently) new users, though.
+ - A new maintenance release (2.0.5) is in discussion, but probably
+   some time away still.  A new major release has gotten very little
+   attention, although some ideas have been put forward.
+
+## Issues:
+ - Using the new Apache Report template -- thank you very much!
+ - The migration of Apache-Extras is getting closer.
+ - It has come up (again) in discussions about whether Pivot is ready
+   to be moved to the Attic.  As I am actively using it, I am not
+   willing for that, but very few new people seem to be interested, so
+   as a project we seem to be "mature".  I have seen discussions around
+   other Apache projects that may be in similar straits, and since we
+   still are able to come up with 3 PMC votes I think for now we should
+   remain. Open to Board feedback on this. The possibility of recruiting
+   some active users to committership (as was suggested by the Board
+   the last time I raised this issue) essentially went away as the
+   people in question went silent. My own experience with Pivot is
+   that it works "well enough" (although I have a number of ideas
+   for improvement), so I *think* our users have mostly built their
+   applications, they work, they are happy, and then they move on.
+
+## PMC/Committership changes:
+ - Currently 9 committers and 6 PMC members in the project.
+ - No new changes to the PMC or committership since last report.
+ - Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+ - Latest PMC Changes:
+   Greg Brown (gbrown) went Emeritus on 10 Sept 2013,
+   Martijn Dashorst (dashorst) went Emeritus in July 2012.
+
+## Releases:
+ - Last release was 2.0.4 on Mon May 19 2014
+
+## Mailing list activity:
+ - dev@pivot.apache.org:
+    - 59 subscribers (down -2 in the last 3 months):
+    - 47 emails sent to list (90 in previous quarter)
+
+ - user@pivot.apache.org:
+    - 175 subscribers (up 1 in the last 3 months):
+    - 8 emails sent to list (8 in previous quarter)
+
+## JIRA activity:
+ - 3 JIRA tickets created in the last 3 months
+ - 0 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2014-12-17"><a href="2014/board_minutes_2014_12_17.html#attachment-AS">2014-12-17</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2014-12-17" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+Status:
+Project activity has been very slow this quarter -- very little user
+mailing list (only 6 postings).  Some development activity, and
+discussions about the next (2.0.5) release, which we expect sometime
+in the next quarter.
+
+There are some questions about Pivot on StackOverflow lately, which show
+some interest.
+
+There were 5 issues created in JIRA, and 7 resolved during the quarter.
+
+Board Issues:
+None that I know of.
+
+Releases:
+Last release was 2.0.4, published 19-May-2014.
+
+Branding/Naming issues:
+None.
+
+Legal issues:
+None.
+
+Infrastructure Issues/Needs:
+The migration of Apache-Extras has gotten some attention again, which
+I have been following.
+
+Community:
+Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+Latest PMC Changes: Greg Brown (gbrown) went Emeritus on 10 Sept 2013,
+Martijn Dashorst (dashorst) went Emeritus in July 2012.</pre>
+<h3 id="2014-09-17"><a href="2014/board_minutes_2014_09_17.html#attachment-AO">2014-09-17</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2014-09-17" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+Status:
+Project activity is about the same as last quarter, but with some
+increased developer activity.  We are targeting a new maintenance
+release next month, and still preparing for the next major release.
+
+User mailing list activity (maybe because of summer holidays) has
+been slower than usual.
+
+There has been recent discussion about creating a "Powered By
+Pivot" section on the web site to try to build some developer
+interest.
+
+There were 6 new issues created this quarter, and 8 resolved.
+
+Board Issues:
+None that I know of.
+
+Releases:
+Last release was 2.0.4, published 19-May-2014.
+
+Branding/Naming issues:
+None.
+
+Legal issues:
+None.
+
+Infrastructure Issues/Needs:
+Still do not have a definitive answer about Apache Extras, but we
+are still able to use the current setup.
+
+Community:
+Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+Latest PMC Changes: Greg Brown (gbrown) went Emeritus on 10 Sept 2013,
+Martijn Dashorst (dashorst) went Emeritus in July 2012.</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#attachment-AN">2014-06-18</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+Status:
+Project activity is a little slower than it has been, but still going on.
+We got the next maintenance release (2.0.4) finished this quarter.
+
+There is renewed interest from at least one other long-time user who would
+like to help with development.
+
+We have been tracking JDK updates, and have built successfully with Java 8
+(with one problem re: web deployments).
+
+There were 12 new issues created this quarter, and 12 resolved.
+
+Board Issues:
+None that I know of.
+
+Releases:
+Last release was 2.0.4, published 19-May-2014.
+
+Branding/Naming issues:
+None.
+
+Legal issues:
+None.
+
+Infrastructure Issues/Needs:
+Still waiting on a definitive answer about Apache Extras.
+
+Community:
+Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#attachment-AQ">2014-03-19</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+Status:
+Still slow but pretty steady traffic these last three months.  It appears
+there were several new people starting Pivot projects, so there were spikes
+in the User list traffic.  There have definitely been some things brought
+up that could use some development attention in the coming months, as well
+as some ideas for future development (integration with Piccolo2D among them).
+
+There is still development going on for the 2.1 version, although I think
+the 2.0.4 (maintenance) version is probably stable.  There have been only
+four new issues opened in JIRA since the last report, and three were
+resolved.  So, basically the product seems to be pretty stable and the
+PMC are busy with other things at the moment.
+
+Issues:
+None that I know of.
+
+Releases:
+Last release was 2.0.3, published 01 Aug 2013.
+
+Branding/Naming issues:
+None.
+
+Legal issues:
+None.
+
+Infrastructure Issues/Needs:
+We have been trying to figure out what's happening with the Apache Extras
+site (hosted on Google Code).  ComDev was looking into things as of October
+and Luciano said in early January that they were still waiting on Google
+contacts for an answer.  I can't follow the email discussion which is on
+a "members-only" mailing list.
+
+Community:
+Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.</pre>
+<h3 id="2013-12-18"><a href="2013/board_minutes_2013_12_18.html#attachment-AN">2013-12-18</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2013-12-18" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+Status:
+Somewhat lower traffic the last three months.  We continue to have
+projects just "chugging along" with the technology.  Development
+has been slow for the new version, but we are continuing.
+Issue activity has also been low (which could be a good sign):
+11 new issues in the last 90 days, and 8 resolved.
+
+Issues:
+No real issues at this time.
+
+Releases:
+Last Release was 2.0.3, published 01 August 2013.
+
+Branding/Naming issues:
+None.
+
+Legal issues:
+None.
+
+Infrastructure Issues/Needs:
+None.
+
+Community:
+Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+
+
+Respectfully,
+Roger Whitcomb on behalf of the Apache Pivot PMC</pre>
+<h3 id="2013-09-18"><a href="2013/board_minutes_2013_09_18.html#attachment-AM">2013-09-18</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2013-09-18" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+Status:
+Relatively steady (but low) traffic for the last six months.  We have
+some first time users showing up asking good questions.  There is
+one new user in the ASF-ICFOSS program who is using Pivot to build
+a new GUI for parts of Lucene.  Another user has tried to run a
+Pivot app on the Raspberry Pi machine, and others are trying Pivot
+with JRuby and Jython.
+
+Most user's questions are answered within a day or so, many within
+a few hours.  There have been 12 new issues created since the last
+Board report, and 6 resolved.
+
+The Pivot 2.0.3 maintenance release was finally approved.  Some
+work has been done toward the next 2.0.4 release, and work has
+definitely started on the next (2.1) release.  We have switched new
+coding to Java 7.
+
+Issues:
+No real issues at this time.
+
+Releases:
+Last Release was 2.0.3, published 01 August 2013.
+
+Branding/Naming issues:
+None.
+
+Legal issues:
+None.
+
+Infrastructure Issues/Needs:
+Jenkins build problems seem to have been resolved.  The new Javadoc
+was generated from latest Java 7 JDK, so the (one) Javadoc vulnerability
+on our site has been handled.
+
+Community Changes:
+One of the founders of the Pivot project and a PMC Member, Greg Brown
+(gbrown), has asked today (10 Sep 2013) to be moved to Emeritus status.
+Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+
+Still looking for more committers.  Most users seem to be taking up Pivot
+to build their applications and when they are done, they are done. But
+that could be good too, meaning the code is overall of good quality and
+usefulness.
+
+Respectfully,
+Roger Whitcomb on behalf of the Apache Pivot PMC</pre>
+<h3 id="2013-06-19"><a href="2013/board_minutes_2013_06_19.html#attachment-AJ">2013-06-19</a> &mdash; Roger Whitcomb<a class="headerlink" href="#2013-06-19" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+Status:
+This is my first report, so pardon if it is not as brief as it
+probably could be.
+
+Relatively low traffic still, although Users list is a little more
+active the last month or so.  It feels like we have some "silent"
+users who are just picking up the technology and using it with
+relatively little problem or need for help, which is good.
+
+A little bit of development toward the 2.1 branch in that I started
+to commit some changes to make a File Browser using Apache Commons
+VFS.  Also one company is interested in donating some code to help
+interact between Pivot and Java Swing and Java FX.
+
+Several PMC members, however, have expressed privately that they
+are no longer interested in the product.  But one PMC member is now
+coming back online after a period of silence.  So, we may (again)
+have a quorum to be able to get a full vote on Releases.
+
+Some developers have expressed the opinion that Pivot is not that
+relevant anymore with the latest developments of Java FX and the
+fact that it doesn't interact well with Swing.  I don't agree
+and think that we can improve the interactions too.
+
+I have started making some overtures to other Apache Projects
+(Commons and Flex and a couple others) to see if there are any
+potential interactions with Pivot.  Not any response yet, though.
+
+Issues:
+We tried for the second time to vote on releasing a 2.0.3 version
+but fell short after Chris was unable to finish his testing in time.
+
+We have had almost daily Jenkins build failures due to lack of space
+on the build machine.  I have pinged INFRA about this but have had
+no response.  Probably have to raise an issue with them.
+
+There is one high-priority outstanding issue with IME support on OSX
+which I have tried to address, but it seems to be complicated, so no
+progress yet.
+
+Releases:
+Last Release was 2.0.2, published 21 May 2012.
+We have started two votes on releasing 2.0.3, and fell short of the
+required number of votes both times.
+
+Branding/Naming issues:
+None.
+
+Legal issues:
+I reached out to legal-discuss about attribution of the proposed
+donation of some code, and have the answer in hand.
+Nothing else.
+
+Infrastructure Issues/Needs:
+Just the space issue on the Jenkins build machine.
+
+Community Changes:
+Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+I have been grooming a co-worker, who has a lot of Pivot experience
+now, to get more active on the mailing lists, in view of him becoming
+a committer. Still a work-in-progress.</pre>
+<h3 id="2013-03-20"><a href="2013/board_minutes_2013_03_20.html#attachment-AJ">2013-03-20</a> &mdash; Sandro Martini<a class="headerlink" href="#2013-03-20" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+
+Status
+
+As usual, low levels of traffic in our users mailing lists.
+Low activity on dev mail list, mainly automated emails from the issue tracker.
+
+Developments on our next major release 2.1 (on trunk) at the moment
+are limited to merge fixes from the maintenance branch, and
+discussing some important feature to put in that release in our mailing lists.
+
+We get some interests from users with other JVM languages (Groovy and Scala).
+
+One of our PMC members, Roger Whitcomb, attended the ApacheCon NA conference
+in Portland the last week of February.  He reports that he got a lot of
+helpful information from the sessions and was able to connect personally with
+a number of people: some looking to use Pivot in other Apache projects, some
+working on other Apache projects that may be helpful in his work, and also
+with some Apache board members.  There may be some opportunities to
+collaborate with the Apache Flex project, which we are also exploring.
+
+Roger Whitcomb has expressed his interest in becoming the new PMC Chair, and
+after one year that I'm in that role and the experience gain in doing that I
+think it's a good choice (even to do a kind of rotation between PMC Members
+in the Chair role, as done in the past), and note that Roger has been
+valuable in this project.  I'll submit the resolution next month.
+
+
+Issues
+We delayed a little our 2.0.3 release due to some strange issues in applications
+of some our users. We still have some important fixes to do but only on Mac
+with Asian languages, so we moved to next maintenance release.
+
+
+Releases
+Last Release was 2.0.2, published 21 May 2012.
+Since past Friday we are in the voting process for 2.0.3 .
+
+
+Branding/naming issues:
+None.
+
+Legal issues:
+None.
+
+Infrastructure issues/needs:
+None.
+
+Community changes
+Last Committer Piotr Kolaczkowski (pkolaczk) was created 09 May 2012.
+A user ask me commit rights in one of our subprojects at Apache-Extras,
+to put there an extension for Dependency Injection. I hope to be able
+to get him as a Committer in the future (currently he is not interested).</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#attachment-AF">2012-12-19</a> &mdash; Sandro Martini<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+
+Status
+
+As usual, low levels of traffic in our users mailing lists,
+with little longer time in sending answers to our users
+Low activity on dev mail list, mainly automated emails from the issue tracker.
+
+Our Mailing lists have these numbers:
+   commits -   22 subscribers
+   dev     -   71 subscribers
+   users   -  188 subscribers
+
+Commits since last report (approx): 85, from the same 2 PMC members reported
+above.
+
+During last months and mainly for increased load at work (for me and for
+the other active PMC Member) I have seen a little slowdown, but we are
+still working on our maintenance branch. Developments on our next major
+release 2.1 (on trunk) at the moment are limited to merge fixes from the
+maintenance branch (we prefer to wait a little and start this new release
+on a solid base), even because we are trying to get more
+feedback/interest/participation from users, discussing some important
+feature to put in that release in our mailing lists.
+
+Some work has been done in the Web Site, to update/clarifying info and some
+technical details in tutorials, as requested by users.
+
+Generally speaking, I think that this project is no more so attractive for
+the people, for many reasons (see my previous reports). If someone at Board
+has some suggestion, I'll be happy to discuss with all PMC Members.
+
+
+Issues
+We are working on important fixes for the 2.0.x maintenance branch: some of
+them already committed, while for others (strange issues) we have problems
+reproducing them, so we have some delay here. We are thinking to move some
+of them to a next maintenance release, to speedup the current 2.0.3 (maybe
+to release it in January).
+
+
+Releases
+no new releases.
+
+
+Branding/naming issues:
+None.
+
+Legal issues:
+None.
+
+
+Infrastructure issues/needs:
+None.
+
+
+Community changes
+None.</pre>
+<h3 id="2012-09-19"><a href="2012/board_minutes_2012_09_19.html#attachment-AC">2012-09-19</a> &mdash; Sandro Martini<a class="headerlink" href="#2012-09-19" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+
+Status
+
+As usual we had a low levels of traffic in our users mailing lists,
+but usually we are able to give an answer on fast time.
+Little activity on dev mail list and issue tracker.
+
+Our Mailing lists have these numbers:
+   commits -   22 subscribers
+   dev     -   71 subscribers
+   users   -  188 subscribers
+
+Commits since last report (approx): 90 , from only 2 PMC members.
+
+On the progress of the project, we are still working on important fixes
+for the 2.0.x maintenance branch (some of them already committed),
+and we have started some developments on 2.1 (now on trunk).
+Some work has been done even in the Web Site, mainly to update/clarifying
+info and some technical details in tutorials, as requested by users.
+
+
+Issues
+During last months I have seen a little slowdown both in posts on our
+mailing lists and worst a slowdown from all developers in development
+activity (both as commits and as discussions between us). All my
+tentatives (since last report) to expand the community up to now gave no
+real effect.
+
+Some time ago I started to integrate our trunk with GIT (but staying on
+subversion of course), to see if a better integration with git could help
+us to get some interest from developers using it, even for patches.
+
+As written in August to board, the 3 September I sent an email to our
+users and dev mailing lists to propose an evolution project for
+mid/long-term just created by me on GitHub (and return to Apache when we
+reach a minimal community), but without any comment from anyone. Of course
+this is not as a replacement for Pivot, but as an evolution (fully
+incompatible) of it, targeting only HTML 5 UI. So even this tentative to
+expand the community up to now had no effect.
+
+
+Releases
+no new releases.
+
+
+Branding/naming issues:
+Remaining issues are (with tracking on JIRA:
+https://issues.apache.org/jira/browse/PIVOT-750 ):
+* main site navigation needs some additional links - DONE
+  Note that to have the ASF logo looks good with our graphic style I had
+  to put online a version of it with a transparent background. If it's not
+  so good tell me.
+
+
+Legal issues:
+None.
+
+
+Infrastructure issues/needs:
+I have started to look at the Apache CMS for future evolutions of the
+site, but I have to ask to infra some info before enabling CMS for us, and
+then start the transition to it.
+
+
+Community changes
+None.</pre>
+<h3 id="2012-06-20"><a href="2012/board_minutes_2012_06_20.html#attachment-AH">2012-06-20</a> &mdash; Sandro Martini<a class="headerlink" href="#2012-06-20" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+
+Status
+
+As usual we had a low levels of traffic in our users mailing lists,
+but usually we are able to give an answer on fast time.
+Little activity on dev mail list and issue tracker.
+
+Our Mailing lists have these numbers:
+   commits -   22 subscribers
+   dev     -   71 subscribers
+   users   -  188 subscribers
+
+Commits since last report (approx): 124 .
+
+On the progress of the project, we are still working on some important fixes
+for the 2.0.x maintenance branch, and we have just started some developments
+on 2.1 (now on trunk).
+Some work has been done even in the Web Site, to update/fix small things, and
+to move some content in the Wiki.
+
+
+Issues
+
+My concern is that during this year only three PMC members are active in the
+project and we have two active committers but up to now they have been doing
+very little (so for example this is critical even in voting process), so I'm
+doing all that I can to try to keep it alive and to expand the community, but
+it's a hard task.
+I didn't close the remaining Branding/naming issue due to a lack of time, but
+I'll do it asap.
+Of course I'm available to suggestions and to give more info.
+
+
+Releases
+In May we voted and the released (21 May) our maintenance release 2.0.2 .
+
+
+Branding/naming issues:
+Remaining issues are:
+* main site navigation needs some additional links
+
+
+Legal issues:
+None.
+
+
+Infrastructure issues/needs:
+None.
+
+
+Community changes
+Our new Committer (Piotr Kolaczkowski) is ready.
+There are no diversity issues regarding the PMC.</pre>
+<h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#attachment-AV">2012-04-18</a> &mdash; Sandro Martini<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs).  It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+
+Status
+
+As usual we had a low levels of traffic in our users mailing lists,
+but usually we are able to give an answer on fast time.
+Little activity on dev mail list and issue tracker, but sometimes we
+receive some patches from our users via JIRA.
+
+Our Mailing lists have these numbers:
+   commits -  22 subscribers
+   dev     -  71 subscribers
+   users   - 188 subscribers
+
+On the progress of the project, we are still working on bug fixing,
+and we proceed slowly because all of us can work on it only at spare time.
+In last weeks we have some trouble with Mac users because none of us
+has a Mac to use for manual GUI tests, but we are trying to solve
+problems the same, only more time is needed.
+
+After fixing current bugs we'll start to develop our next release with
+many new features, and in the meantime we are discussing many new
+features to include in that release.
+
+
+Issues
+
+There are no issues that require the board's attention at this time.
+
+
+Releases
+No new Release, but we are still working on a maintenance one: 2.0.2,
+to be releases in a few months.
+
+
+Branding/naming issues:
+* create a DOAP file  -- DONE
+Remaining issues are:
+* main site navigation needs some additional links
+
+
+Legal issues:
+None.
+
+
+Infrastructure issues/needs:
+None.
+
+
+Community changes
+After many time, a new Committer (Piotr Ko&lstrok;aczkowski) were voted in,
+but we are still waiting him to sign the ICLA.
+There are no diversity issues regarding the PMC.</pre>
+<h3 id="2012-03-21"><a href="2012/board_minutes_2012_03_21.html#attachment-AD">2012-03-21</a> &mdash; Sandro Martini<a class="headerlink" href="#2012-03-21" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+
+Status
+
+As usual we had a low levels of traffic in our users mailing lists,
+but usually we are able to give an answer on fast time.
+Little activity on dev mail list and issue tracker, but sometimes we
+receive some patches from our users via JIRA.
+I tried many times to get more committers, but nothing new at the moment.
+
+On the progress of the project, we are still working on bug fixing,
+and we proceed slowly because all of us can work on it only at spare time.
+After we'll start to develop our next release with many new features.
+
+
+Issues
+
+There are no issues that require the board's attention at this time.
+
+
+Releases
+No new Release, but we are working on a maintenance one: 2.0.2,
+to be releases in a few months.
+
+
+Branding/naming issues:
+During the last quarter I re-read the revised branding docs, identify
+all things that has to be done, and fix some of them.
+Remaining issues are:
+* main site navigation needs some additional links
+* create a DOAP file
+
+
+Legal issues:
+None.
+
+
+Infrastructure issues/needs:
+INFRA-4355: Enable svnpubsub for Pivot web site - resolved
+INFRA-4356: Enable svnpubsub for Pivot distrib - resolved
+
+
+Community changes
+No new committers were voted in since the last board report.
+A PMC Member, Christopher Brind (brindy) has indicated (after a long
+inactivity period) that he wants to leave the Pivot PMC.
+There are no diversity issues regarding the PMC.
+
+
+Note:
+To try to get more interest from people, during last month I committed
+and published some Pivot-related things under Apache-Extras (pivot-stuff).</pre>
+<h3 id="2012-02-15"><a href="2012/board_minutes_2012_02_15.html#attachment-AL">2012-02-15</a> &mdash; Sandro Martini<a class="headerlink" href="#2012-02-15" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building installable Internet
+applications (IIAs). It combines the enhanced productivity and
+usability features of a modern user interface toolkit with the
+robustness of the Java platform.
+
+
+Status
+
+As usual we had a low levels of traffic in our users mailing lists,
+but usually we are able to give an answer on fast time, and by more
+than one.
+Little activity on dev mail list and issue tracker, but sometimes we
+receive some patches from our users via JIRA.
+I tried many times to get more committers, but nothing new at the moment.
+
+On the progress of the project, we are actively working on bug fixing
+(at least for some months from now), so after this we'll start to
+develop the next release, but not before due to time constraints. One
+of our major next features (due to market requiring this) will be to
+handle a multi-platform GUI backend, but this is a big task so
+probably we'll try to do it during next n releases.
+
+
+Issues
+
+There are no issues that require the board's attention at this time.
+
+
+Releases
+After 1 year, many bugs fixed, and a team restructuring, in January
+we released the 2.0.1 version.
+It took to us so much time even because many tasks related to release,
+build, and documentation wasn't documented nor explained to other PMC
+members, and was done by another PMC Member, so we have to learn how
+to do all (now I have documented some steps and I have to finish to
+write some additional info). Long time was needed even because we are
+a small team, none of us is working full time on Pivot, and I'm sorry
+to say that some in the team aren't active in development nor in other
+areas, for many reasons.
+I expect the next maintenance release (2.0.2) to be available shortly.
+
+
+Branding/naming issues:
+During the last quarter I re-read the revised branding docs, identify
+all things that has to be done, and fix some of them.
+Remaining issues are:
+* main site navigation needs some additional links
+* create a DOAP file
+
+
+Legal issues:
+None.
+
+
+Infrastructure issues/needs:
+None.
+
+
+Community changes
+No new committers were voted in since the last board report.
+A PMC Member, Niclas Hedhman (niclas) resigned from the project, due
+to time constraints.
+The last PMC Member added is Roger Whitcomb (rwhitcomb) from Actian
+Corporation, voting closed 2011-10-25 .
+There are no diversity issues regarding the PMC.
+
+
+Note:
+The Report for Pivot was expected in December 2011, but due to the
+resignation of the previous PMC Chair and my election in January, this is
+my first Report.
+
+To try to get more interest from people, during last months I opened
+some Pivot-related projects under Apache-Extras, and some
+contributions has been given there, but of course nothing has been
+moved in the main code base, and no Committers from there into Pivot,
+I hope someone could join us in the future.
+Some experimental code has been put in some project under
+Apache-Extras, to let users play with incompatible changes for future
+releases, to start discuss/share some idea.
+
+
+------------------------------------------------------
+End of minutes for the February 15, 2012 board meeting.</pre>
+<h3 id="2011-12-21"><a href="2011/board_minutes_2011_12_21.html#attachment-X">2011-12-21</a> &mdash; Todd Volkert<a class="headerlink" href="#2011-12-21" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is an open-source platform for building installable
+Internet applications on the Java platform, by implementing a full
+windowing toolkit, cross-network UI serialization and a fresh
+Look&amp;Feel.
+
+The present PMC Chair, Todd Volkert, announced Oct 10 that he wished
+to step down, citing a busy private life (3 kids under 6), but the PMC
+wasn't 'engaged' enough to recommend a replacement. I will initiate
+this and come back with a resolution proposal by next Board meeting in
+January.
+
+In the past quarter, the main activity has been work to get the next
+release (2.0.1) out the door and to comply with trademarks policy.
+There has been significant progress on both, but neither is completed.
+The fact that Todd has "always" been the release manager, has strained
+the community, but hopefully in a positive way, to not rely on a
+single person.
+
+
+The PMC grew with one new member in the past quarter; Roger Whitcomb.
+The user community is steadily growing and I suspect a few will grow
+into committers soon.
+
+No issues require Board's attention at this point in time, other than
+PMC Chair situation.</pre>
+<h3 id="2011-09-21"><a href="2011/board_minutes_2011_09_21.html#attachment-Y">2011-09-21</a> &mdash; Todd Volkert<a class="headerlink" href="#2011-09-21" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is an open-source platform for building installable Internet
+applications (IIAs) in Java.
+
+Although Pivot's dev and user list traffic, as well as its commits, were
+healthy in the last quarter, the project suffered a lull in terms of
+releases and branding checklist items.  This was primarily driven by
+Todd Volkert (PMC chair) being a new father and not having the time to
+drive those items.  Hopefully it will turn a corner in the coming
+quarter, as the 2.0.1 release has been tagged for some time and ready to
+package for a vote.  On the positive side, we seem to have weathered the
+drop in commits from Greg Brown, as commits traffic was fairly good this
+quarter despite having only 1 commit from Greg.
+
+Releases:
+* No releases this quarter
+* Most recent release is 2.0 (January 10, 2011)
+
+Committers:
+* 111 commits since last board report
+* New committer (Edvin Syse) voted in on June 23
+
+Community:
+* User list traffic showed a slight decline but still healthy at about
+  1.2 threads per day
+* Dev traffic healthy at ~1.6 threads per day
+* 164 subscribers to the user mailing list
+* 64 subscribers to the dev mailing list
+
+Status of branding checklist:
+
+Unfortunately, no work was done on this.  We'll seek to remedy that in
+the next quarter.
+
+Project Naming and Description: NOT STARTED
+Website Navigation Links: NOT STARTED
+Trademark Attributions: NOT STARTED
+Logos and Graphics: NOT STARTED
+Project Metadata: NOT STARTED</pre>
+<h3 id="2011-06-15"><a href="2011/board_minutes_2011_06_15.html#attachment-V">2011-06-15</a> &mdash; Todd Volkert<a class="headerlink" href="#2011-06-15" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is an open-source platform for building installable Internet
+applications (IIAs) in Java.
+
+Commits by Greg Brown (the perennial committer) dropped significantly
+in the last quarter due to conflicting commitments, but the slack was
+somewhat picked up by Sandro Martini and Noel Grandin.  Greg also has
+remained very active on the mailing lists, answering questions of both
+users and developers.  We also saw increased contributions from Roger
+Whitcomb and voted him in as a new committer on May 20.  Though the
+list traffic is healthy, in general we're in a time of transition away
+from heavy reliance on the commits of one person (Greg).
+
+Pivot is currently finalizing the few remaining JIRA issues in preparation
+for the 2.0.1 release.
+
+Releases:
+* No releases this quarter (aiming for late June release of 2.0.1)
+* Most recent release is 2.0 (January 10, 2011)
+
+Committers:
+* New committer (Roger Whitcomb) voted in on May 20
+
+Community:
+* User list traffic volume steady at about 2 threads per day
+* 176 subscribers to the user mailing list
+* 63 subscribers to the dev mailing list
+
+Status of branding checklist:
+
+This wasn't on our radar until we saw the mail from Shane Curcuru
+on May 31.  As such, all items are NOT STARTED but being tracked
+in PIVOT-750.
+
+Project Naming and Description: NOT STARTED
+Website Navigation Links: NOT STARTED
+Trademark Attributions: NOT STARTED
+Logos and Graphics: NOT STARTED
+Project Metadata: NOT STARTED</pre>
+<h3 id="2011-03-16"><a href="2011/board_minutes_2011_03_16.html#attachment-W">2011-03-16</a> &mdash; Todd Volkert<a class="headerlink" href="#2011-03-16" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is an open-source platform for building installable Internet
+applications (IIAs) in Java.
+
+- Pivot 2.0 released on January 10
+- User list traffic showing increase after 2.0 release
+- No new committers added since last report
+- Chris Bartlett added as PMC member
+- Todd Volkert replaced Greg Brown as PMC chair</pre>
+<h3 id="2010-12-15"><a href="2010/board_minutes_2010_12_15.html#attachment-V">2010-12-15</a> &mdash; Greg Brown<a class="headerlink" href="#2010-12-15" title="Permalink">&para;</a></h3>
+<pre>- Pivot 1.5.2 released on November 1
+- Work nearly complete on Pivot 2.0 - planning for launch in early January
+- Fairly strong user list traffic
+- No new committers or PMC members added since last report</pre>
+<h3 id="2010-09-22"><a href="2010/board_minutes_2010_09_22.html#attachment-T">2010-09-22</a> &mdash; Greg Brown<a class="headerlink" href="#2010-09-22" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is an open-source platform for building rich Internet
+applications in Java.
+
+Development:
+- Pivot 1.5.1 was released on August 20. Work continues on both Pivot 1.5.2
+  and Pivot 2.0.
+
+Community:
+- Chris Bartlett was added as a committer in July. Dev and user lists
+  continue to be active.
+
+Board:
+- There are no issues that require the board's attention at this time.</pre>
+<h3 id="2010-06-16"><a href="2010/board_minutes_2010_06_16.html#attachment-AA">2010-06-16</a> &mdash; Greg Brown<a class="headerlink" href="#2010-06-16" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot (http://pivot.apache.org) is a platform for building rich
+Internet applications (RIAs) in Java. Pivot graduated from the Apache
+Incubator in December, 2009.
+
+Pivot 1.5 was released on June 4. This release focused primarily on improving
+the overall application development experience. Complete release notes are
+available here:
+
+ https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12314034
+    &amp;styleName=Html&amp;projectId=12310863&amp;Create=Create
+
+On May 28, PMC member Sandro Martini presented Pivot to the Java User Group in
+Torino, Italy. Upcoming presentations include:
+
+&nbsp;New England Java User Group - Greg Brown, Todd Volkert, 6/10/2010
+&nbsp;Boston Java Meetup - Greg Brown, 7/12/2010
+&nbsp;Maine Java User Group - Greg Brown, 9/21/2010
+
+Additionally, PMC Chair Greg Brown will be hosting a Pivot training session at
+ApacheCon 2010.</pre>
+<h3 id="2010-03-17"><a href="2010/board_minutes_2010_03_17.html#attachment-U">2010-03-17</a> &mdash; Greg Brown<a class="headerlink" href="#2010-03-17" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building rich Internet applications in Java.
+Pivot graduated from the Incubator in December 2009.
+
+We are continuing to work on Pivot 1.4.1, which we expect to release within
+the next month or so. We have also begun some preliminary discussion about
+Pivot 2.0, which will most likely be the next major release.
+
+Note that will be be the last monthly report for Pivot. We will be switching
+to a quarterly report moving forward and will report again in June.</pre>
+<h3 id="2010-02-17"><a href="2010/board_minutes_2010_02_17.html#attachment-S">2010-02-17</a> &mdash; Greg Brown<a class="headerlink" href="#2010-02-17" title="Permalink">&para;</a></h3>
+<pre>Apache Pivot is a platform for building rich Internet applications in Java.
+Pivot graduated from the Incubator in December. Version 1.4 was released in
+early January, and a press release was issued in late January announcing
+Pivot's graduation. The announcement was accompanied by a site redesign
+(http://pivot.apache.org).
+
+The team is actively working on Pivot 1.4.1, tentatively scheduled for
+release in March.</pre>
+<h3 id="2010-01-20"><a href="2010/board_minutes_2010_01_20.html#attachment-W">2010-01-20</a> &mdash; Greg Brown<a class="headerlink" href="#2010-01-20" title="Permalink">&para;</a></h3>
+<pre>Pivot is a platform for building rich internet applications in Java. Pivot
+graduated from the Incubator in December 2009. Version 1.4 was released last
+week to coincide with the graduation, and the team is currently in the
+process of migrating content from the Incubator to pivot.apache.org. We are
+also actively working on version 1.4.1, which will primarily include bug
+fixes and minor feature enhancements.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

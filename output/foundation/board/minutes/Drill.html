@@ -1,0 +1,4346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Drill | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Drill';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Drill';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Drill</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="drill">Drill<a class="headerlink" href="#drill" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019-08-21</td>
+<td><a href="2019/board_minutes_2019_08_21.html#section-7B">Appointed Charles Givre</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2018-07-18</td>
+<td><a href="2018/board_minutes_2018_07_18.html#section-7D">Appointed Arina Ielchiieva</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2017-06-21</td>
+<td><a href="2017/board_minutes_2017_06_21.html#section-7B">Appointed Aman Sinha</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2016-05-18</td>
+<td><a href="2016/board_minutes_2016_05_18.html#section-7H">Appointed Parth Chandra</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2014-11-19</td>
+<td><a href="2014/board_minutes_2014_11_19.html#section-7C">Appointed Jacques Nadeau</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2014-11-19</td>
+<td><a href="2014/board_minutes_2014_11_19.html#section-7C">Establish the Apache Drill Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#section-6V">2026-08-19</a> &mdash; Charles Givre<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-U">2026-06-17</a> &mdash; Charles Givre<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues for board consideration.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (12 years ago)
+There are currently 62 committers and 28 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Maksym Rymar on 2025-09-30.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+The PMC approved Steve Lawrence as a new committer and his paperwork is
+in progress.
+
+## Project Activity:
+
+We are preparing a new release and will likely release it in the end of June
+or early July.
+
+There are several large segments of work in flight:
+1.  A complete UI refactor. (Very major)
+2.  Support for Materialized Views
+3.  Storage plugin for Microsoft Sentinel
+4.  Update to Apache Calcite to version 1.42.
+
+The long awaited integration between Apache Daffodil and Drill has been
+approved and will be merged shortly.
+
+Recent Releases
+1.22.0 was released on 2025-06-28.
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+
+## Community Health:
+This quarter was fairly quiet.  However, there is additional activity on the
+"unofficial" slack channel, but I've not found metrics on that.
+
+* dev@drill.apache.org had a 16% decrease in traffic in the past quarter
+(50 emails compared to 59)
+* issues@drill.apache.org had a 65% decrease in traffic in the past quarter
+(14 emails compared to 40)
+* user@drill.apache.org had a 60% decrease in traffic in the past quarter
+(8 emails compared to 20)
+* 2 JIRA tickets opened and 0 closed in the past quarter.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#section-6T">2026-05-20</a> &mdash; Charles Givre<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-W">2026-02-18</a> &mdash; Charles Givre<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Project is ongoing.
+Issues for the board: No issues which require board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (11 years ago)
+There are currently 62 committers and 28 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Maksym Rymar on 2025-09-30.
+- 1 new committer.  Steve Lawrence was just approved as a new committer.  We
+will be sending the documents shortly.
+
+## Project Activity:
+We are currently preparing for our next release.  As mentioned in the previous
+report, we have several PR which constituted major surgery.  Some of these have
+been merged. Others are awaiting review.  Lastly, there is a major UI refactor
+which adds all kinds of new functionality to include visualization,
+dashboards, and more.
+
+Recent Pull Requests:
+* DRILL-3962:  Add Support For ROLLUP, CUBE, GROUPING SETS, GROUPING,
+GROUPING_ID, GROUP_ID (Merged)
+* DRILL-8540:  Update Jetty to Version 12 (Merged)
+* DRILL-8542:  Support Paimon Format Plugin (Merged)
+* DRILL-8474:  Add Apache Daffodil Format Plugin (Approved)
+* DRILL-8543:  Add support for Materialized Views (Late Stage Review)
+* DRILL-8529:  Query Plan Caching (Late stage review)
+* DRILL-8537:  Update Calcite (Early Review)
+
+Recent releases:
+
+1.22.0 was released on 2025-06-28.
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+
+## Community Health:
+Drill has an unofficial slack channel and I am unable to get usage
+metrics from it.
+
+
+* dev@drill.apache.org had a 41% decrease in traffic in the past quarter
+(74 emails compared to 125)
+* issues@drill.apache.org had a 35% decrease in traffic in the past quarter
+(49 emails compared to 75)
+* user@drill.apache.org had a 112% increase in traffic in the past quarter
+(17 emails compared to 8)
+* 3 JIRA tickets opened and 0 closed in the past quarter.
+
+Some other metrics: Drill's dialect for SQL Alchemy.  This dialect is
+used to connect Drill to Apache Superset.
+Downloads last day: 110,551
+Downloads last week: 730,253
+Downloads last month: 2,167,760
+
+Drill's Docker container has had 35906 pulls since 28 December.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-W">2025-11-19</a> &mdash; Charles Givre<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Ongoing.
+Issues for the board: None
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (11 years ago)
+There are currently 62 committers and 28 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Maksym Rymar was added to the PMC on 2025-09-30
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+* 1.22.0 was released on 2025-06-28.
+* 1.21.1 was released on 2023-04-29.
+* 1.21.0 was released on 2023-02-21.
+
+Since the release of Drill 1.22, there have been some significant updates both
+committed and in progress. Many of these are what I would classify as
+"major surgery", even though they do not sound like it.  As a result of these
+updates, the next version of Drill drops support for Hadoop 2, and Java 8
+and 11.
+
+Additionally, we are working on updating Drill's Hive dependencies which have
+not been updated in some time.  Drill currently has dependencies for Hive 3.1.x
+for which there are many CVEs and requires Java 8.  Updating Drill's dependency
+to Hive 4 is a major update and requires a complete refactoring of the test
+infrastructure for this plugin.  It is in progress but we do not have a PR
+yet for that.
+
+(Merged)
+* DRILL-3962: Add Support For ROLLUP, CUBE, GROUPING SETS,
+GROUPING, GROUPING_ID,GROUP_ID (Merged)
+* DRILL-8534: Update Kafka to 3.9 / 3.9.1 (Non-trivial update)
+* DRILL-8531: Update Libraries due to CVEs (Non-trivial updates)
+* DRILL-8528: HBase Limit Pushdown
+
+(In Progress)
+* DRILL-8540: Update Jetty to Version 12 (Non-trivial update)
+* DRILL-8474: Apache Daffodil Integration
+* DRILL-8537: Update Calcite (Very Non-Trivial Update)
+
+
+## Community Health:
+Note that we do not have metrics for our Slack channel.
+
+* dev@drill.apache.org had a 7% increase in traffic in the past quarter
+(128 emails compared to 119)
+* user@drill.apache.org had a 50% increase in traffic in the past quarter
+(15 emails compared to 10)
+* 12 JIRA tickets opened and 0 closed in the past quarter.</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-S">2025-08-20</a> &mdash; Charles Givre<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board:  No issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (11 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+In June, we released Drill 1.22 which contained many bug fixes, maintenance
+updates and new functionality.  Release notes here:
+https://drill.apache.org/docs/apache-drill-1-22-0-release-notes/
+
+We recently merged some significant performance
+improvements to the Hive and HBase plugins--specificially filter and limit
+pushdowns for Hive and limit pushdown for HBase.  Work continues on the
+integration with Apache Daffodil.
+
+(No the em-dash was not generated by ChatGPT. I use them in my writing)
+
+Recent releases:
+1.22.0 was released on 2025-06-28.
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+
+## Community Health:
+The Drill community continues to develop Drill, albeit at a somewhat slower
+pace than in the past.
+
+dev@drill.apache.org had a 84% increase in traffic in the past quarter
+(122 emails compared to 66)
+issues@drill.apache.org had a 126% increase in traffic in the past quarter
+(93 emails compared to 41)
+user@drill.apache.org had a big increase in traffic in the past quarter
+(16 emails compared to 0)
+4 JIRA tickets opened and 12 closed in the past quarter.
+15 Pull requests merged in the last quarter.
+
+A minor issue, but I did appreciate the statistics from
+GitHub that used to appear in the reporting tool.  Most of the Drill
+community activity occurs in Slack and via Github, so the activity metrics
+reported here reflect less activity than there actually is.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-S">2025-06-18</a> &mdash; Charles Givre<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (11 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+We are still working out some bugs but will have a bug fix and major release
+out shortly.
+
+Recent releases:
+
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+1.20.3 was released on 2023-01-07.
+
+## Community Health:
+Community health is ongoing but relatively quiet.  We are getting a
+steady flow of issues and PRs resolves.  Much of the user activity
+is on an apparently unofficial Slack channel for which we do not have
+metrics.
+
+I see that the reporting tool has removed the mailing list stats, as
+well as code commit statistics.  It would be helpful if those were restored.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#section-6R">2025-05-21</a> &mdash; Charles Givre<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-R">2025-02-19</a> &mdash; Charles Givre<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Ongoing
+No issues which require Board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (10 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+We will likely release Drill 1.22 this quarter as we have not had a
+major release in some time.
+
+Recent releases:
+
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+1.20.3 was released on 2023-01-07.
+
+
+## Community Health:
+We had a fairly quiet quarter as reflected by the metrics below, however
+there is traffic on our Slack channel for which we do not have great
+metrics.  We will likely release Drill 1.22 this quarter.
+
+dev@drill.apache.org had a 50% decrease in traffic in the past quarter
+issues@drill.apache.org had a 67% decrease in traffic in the past quarter
+16 commits in the past quarter (-30% change)
+4 code contributors in the past quarter (-60% change)
+10 PRs opened on GitHub, past quarter (-58% change)
+10 PRs closed on GitHub, past quarter (-33% change)
+8 issues opened on GitHub, past quarter (14% increase)
+3 issues closed on GitHub, past quarter (50% increase)</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#section-6S">2024-11-20</a> &mdash; Charles Givre<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-Q">2024-08-21</a> &mdash; Charles Givre<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Project is ongoing.
+Issues for the board: No issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (10 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+Drill 1.21.2, a significant bug fix release was released in June 2024.
+We are close to releasing Drill 1.22, which will contain an integration between
+Drill and Apache Daffodil as well as other significant improvements.
+
+Recent releases:
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+1.20.3 was released on 2023-01-07.
+## Community Health:
+The statistics seems to have disappeared from the reporter tool.  However,
+anecdotally, we have a good throughput of new issues, pull requests, and
+questions.  Our slack channel is generally active as well.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-T">2024-05-15</a> &mdash; Charles Givre<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status:  Project is ongoing.
+Issues for the board:  One minor issue that we see is that a lot of Drill
+activity is migrating to our Slack Channel instead of GitHub issues or Jira.
+While this is good, we also do not really have any way of reporting on this.
+
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (9 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+We are in the process of releasing both a bug fix release (1.21.2) and
+a new version 1.22.0.
+
+We discovered a few significant regressions which took some time to address,
+which unfortunately delayed the bug fix release.
+
+Version 1.22.0 will feature an integration between the Apache Daffodil
+project and Drill.  We had to wait for a new version of Daffodil to be
+released and deployed to MVN Central before we could proceed.  Mike Bekerle
+from Daffodil is nearing completion of the remaining pieces.
+
+Recent releases:
+
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+1.20.3 was released on 2023-01-07.
+
+## Community Health:
+We are seeing less activity on the "official" channels, however we are seeing
+a good deal of activity on Drill's Slack channel.
+
+dev@drill.apache.org had a 38% decrease in traffic in the past quarter
+(189 emails compared to 301)
+issues@drill.apache.org had a 47% decrease in traffic in the past quarter
+(140 emails compared to 264)
+6 issues opened in JIRA, past quarter (-68% change)
+0 issues closed in JIRA, past quarter (-100% change)
+40 commits in the past quarter (21% increase)
+9 code contributors in the past quarter (-10% change)
+22 PRs opened on GitHub, past quarter (-8% change)
+23 PRs closed on GitHub, past quarter (no change)
+10 issues opened on GitHub, past quarter (-9% change)
+9 issues closed on GitHub, past quarter (350% increase)</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-T">2024-03-20</a> &mdash; Charles Givre<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (9 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+We are overdue for the release od Drill 1.21.2 AND 1.22.0.  Regarding the minor
+release, we had a license file issue which took some time to resolve and then
+we've had a number of recent bug submissions which were promptly fixed.  I would
+anticipate 1.21.1 being released before the end of the month.
+
+For 1.22, we have been collaborating with the Mike Bekerle from Daffodil.
+The goal is to use Apache Daffodil to provide schema information to Drill for
+querying non-traditional files.  We're waiting for the release of Daffodil 3.7
+which has some functionalities that we need for the integration. Hopefully this
+month or next we will be able to complete this work.
+
+Recent releases:
+
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+1.20.3 was released on 2023-01-07.
+
+
+## Community Health:
+The Drill community remains healthy.
+
+dev@drill.apache.org had a 112% increase in traffic in the past quarter
+(323 emails compared to 152)
+issues@drill.apache.org had a 186% increase in traffic in the past quarter
+(278 emails compared to 97)
+user@drill.apache.org had a 76% decrease in traffic in the past quarter
+(6 emails compared to 25)
+
+33 commits in the past quarter (65% increase)
+10 code contributors in the past quarter (42% increase)
+21 PRs opened on GitHub, past quarter (16% increase)
+22 PRs closed on GitHub, past quarter (46% increase)
+10 issues opened on GitHub, past quarter (-9% change)
+2 issues closed on GitHub, past quarter (-33% change)</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#section-6Q">2024-02-21</a> &mdash; Charles Givre<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#attachment-V">2023-12-20</a> &mdash; Charles Givre<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (9 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+We had a relatively quiet quarter:
+Recent releases:
+
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+1.20.3 was released on 2023-01-07.
+
+We are planning a maintenance release (v 1.21.2) which we will release before
+the end of the year.
+
+Additionally, for the last few months, we have been collaborating with
+Mike Bekerle from the Apache Daffodil project.  The goal being to enable
+Drill to use Daffodil schemata to read and parse data.  We are maybe 60%
+complete with this task.  This also has a dependency on Apache Daffodil
+as Mike is developing some custom features for Daffodil.
+
+Big thanks to Mike for taking on this project.
+
+
+## Community Health:
+Overall the community is healthy.  We are working on some major improvements
+such as the Daffodil integration and an XSD reader so the total number of
+tickets is lower this quarter.
+
+* 11 issues opened in JIRA, past quarter (-21% change)
+* 10 issues closed in JIRA, past quarter (150% increase)
+* 20 commits in the past quarter (-20% change)
+* 7 code contributors in the past quarter (-12% change)
+* 18 PRs opened on GitHub, past quarter (38% increase)
+* 15 PRs closed on GitHub, past quarter (15% increase)
+* 11 issues opened on GitHub, past quarter (57% increase)
+* 3 issues closed on GitHub, past quarter (-25% change)</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#section-6Q">2023-11-15</a> &mdash; Charles Givre<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-U">2023-09-20</a> &mdash; Charles Givre<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Project Status:
+Current project status: Project is ongoing.
+Issues for the board: No issues for the Board.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (9 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+We had a relatively quiet quarter.  Our last bug fix release was in April.
+We will likely release 1.21.2 in the next quarter.
+Recent releases:
+
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+1.20.3 was released on 2023-01-07.
+
+## Community Health:
+The Drill community remains strong and engaged, but we did have a quieter
+summer.  We have a fairly significant component which we are working on
+which is the integration of Apache Daffodil and Drill, as well as an XSD
+reader for XML.
+
+* dev@drill.apache.org had a 18% decrease in traffic
+in the past quarter (198 emails compared to 239)
+* issues@drill.apache.org had a 48% decrease in traffic
+in the past quarter (129 emails compared to 245)
+* user@drill.apache.org had a 39% increase in traffic
+in the past quarter (32 emails compared to 23)
+14 issues opened in JIRA, past quarter (-51% change)
+4 issues closed in JIRA, past quarter (-81% change)
+25 commits in the past quarter (-50% change)
+8 code contributors in the past quarter (-27% change)
+13 PRs opened on GitHub, past quarter (-45% change)
+13 PRs closed on GitHub, past quarter (-53% change)
+7 issues opened on GitHub, past quarter (-36% change)
+4 issues closed on GitHub, past quarter (100% increase)</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#section-6V">2023-08-16</a> &mdash; Charles Givre<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-Q">2023-05-17</a> &mdash; Charles Givre<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+No issues requriing Board attention.
+The PMC would like to express a little disappointment with the rather tepid
+response to our request for a release announcement.  Drill 1.21 was a very
+significant release from a functionality perspective, and the only
+announcements we received were buried in other announcements.
+
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (8 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+Since the last report, we released Drill 1.21.0 and a bugfix release of
+1.21.1.
+
+1.21 was quite a significant release in that we eliminated the fork of Apache
+Calcite that Drill was using and now Drill is running on the main branch of
+Calcite, 1.34.  The result was a significant improvement in stability and
+overall ease of use.  Another very significant improvement was the work done
+to improve implicit casting.  One of the main challenges of Drill was querying
+data without a schema.  When it works, the exprience is magical, but when it
+doesn't, the user was often confronted with a barrage of incomprehensible errors
+Drill 1.21.0 largely fixes both of these issues and by in
+large, "it just works"!
+
+Drill 1.21 also adds new connectors/plugins for:
+* GoogleSheets
+* Box File System
+* MS Access
+
+Drill 1.21 also adds the ability for Drill to query other Drill clusters.  This
+is particularly useful if a user has data in multiple public clouds. In this
+scenario, Drill can be installed in both environments, and then connected
+using the new Drill-on-Drill plugin.  From there, a user can query across
+environments without incurring massive data transfer costs.
+
+Lastly, Drill 1.21 user translation to the security settings.  User translation
+allows users to use individual credentials instead of service accounts to query
+data in systems like Splunk or ElasticSearch.
+
+1.21.1 is a minor bugfix release which fixed a significant regression in
+Calcite's date functions as well as some other minor bugs.
+
+
+1.21.1 was released on 2023-04-29.
+1.21.0 was released on 2023-02-21.
+1.20.3 was released on 2023-01-07.
+
+
+## Community Health:
+Drill's community health remains strong.
+
+dev@drill.apache.org had a 4% increase in traffic in the past quarter
+(349 emails compared to 335)
+issues@drill.apache.org had a 52% increase in traffic in the past quarter
+(495 emails compared to 324)
+29 issues opened in JIRA, past quarter (-32% change)
+35 issues closed in JIRA, past quarter (-7% change)
+112 commits in the past quarter (13% increase)
+11 code contributors in the past quarter (-8% change)
+34 PRs opened on GitHub, past quarter (-20% change)
+34 PRs closed on GitHub, past quarter (-27% change)
+11 issues opened on GitHub, past quarter (37% increase)
+4 issues closed on GitHub, past quarter (33% increase)</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-V">2023-02-15</a> &mdash; Charles Givre<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+No issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (8 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Maksym Rymar on 2022-10-19.
+
+## Project Activity:
+We recently released a bug-fix release, 1.20.3 in early January.
+We are 2 PRs away from beginning the release process for Drill 1.21.
+Drill 1.21 is a very significant release for Drill. New features include:
+
+* Format readers for Apache Iceberg, Delta Lake, and MS Access.
+* Storage Plugins (Connectors) for GoogleSheets
+* We've also added a storage plugin to allow Drill to connect to other Drill
+clusters.  This enables efficient cross-cloud queries.
+* Until Drill 1.21, Drill had been using a fork of Calcite. For Drill 1.21,
+we have eliminated this and Drill is now running on the latest version of
+Calcite.  When we merged this, we were able to close numerous bug reports.
+There are numerous stability improvements as well.
+* Support for PIVOT, UNPIVOT, REGR_SLOPE and many other operators.
+* Improved implicit casting rules which dramatically reduce the number of
+schema change exceptions
+* We've implemented user translation which allows users to use individual
+credentials in the various storage plugins.  Of the storage plugins that
+have individual credentials, only MongoDB remains to be updated to support
+user translation
+* Support for INSERT. Drill now supports INSERT operations for JDBC data
+sources, Splunk, and GoogleSheets
+* Write capability has also been extended to many of the storage plugins.
+
+Recent releases:
+
+1.20.3 was released on 2023-01-07.
+1.20.2 was released on 2022-08-03.
+1.20.1 was released on 2022-05-16.
+
+## Community Health:
+The Drill community remains small but strong.
+
+dev@drill.apache.org had a 80% increase in traffic in the past quarter
+(1147 emails compared to 635)
+issues@drill.apache.org had a 79% increase in traffic in the past quarter
+(1033 emails compared to 576)
+37 issues opened in JIRA, past quarter (-53% change)
+37 issues closed in JIRA, past quarter (-42% change)
+93 commits in the past quarter (-15% change)
+12 code contributors in the past quarter (-20% change)
+38 PRs opened on GitHub, past quarter (-50% change)
+39 PRs closed on GitHub, past quarter (-52% change)
+8 issues opened on GitHub, past quarter (-11% change)
+3 issues closed on GitHub, past quarter (-62% change)</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#attachment-P">2022-11-16</a> &mdash; Charles Givre<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+No issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (8 years ago)
+There are currently 62 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- Maksym Rymar was added as committer on 2022-10-19
+
+## Project Activity:
+The Drill community plans on another bugfix release, 1.20.3 in the next few
+weeks.  Additionally, we will begin discussions for the release of Drill 2.0.
+
+Drill 2.0 will have significant improvements over Drill 1.x including:
+
+### New Data Formats
+* GoogleSheets
+* Apache Phoenix
+* Delta Lake
+* Apache Iceberg
+
+### Calcite Upgrade
+Most significantly, 2.0 dispenses with the need for Drill to maintain a fork
+of Apache Calcite. Drill 2.0 is now running on the latest version of Calcite
+which has enabled us to close numerous query planning bugs.  Additionally
+query planning performance is approximately 30-40% faster than with the
+old fork.
+
+### Security Improvements
+Drill 2.0 also introduces the concept of user-translation which allows
+users to use their own credentials when querying external, non-file based
+storage.
+
+### Other Improvements
+There are other significant improvements, but one of the most signficant
+is the refactoring of Drill's implicit casting which makes it so that
+Drill queries fail much less frequently due to schema change exceptions.
+
+
+1.20.2 was released on 2022-08-03.
+1.20.1 was released on 2022-05-16.
+1.20.0 was released on 2022-02-25.
+1.19.0 was released on 2021-06-10.
+
+
+## Community Health:
+The Drill community remains healthy.  In addition to the statistics
+below, we are maintaining an active Slack channel.
+
+* dev@drill.apache.org had a 80% increase in traffic in the past quarter
+(1147 emails compared to 635)
+* issues@drill.apache.org had a 79% increase in
+ traffic in the past quarter (1033 emails compared to 576)
+* 78 issues opened in JIRA, past quarter (44% increase)
+64 issues closed in JIRA, past quarter (-43% change)
+110 commits in the past quarter (-5% change)
+15 code contributors in the past quarter (15% increase)
+75 PRs opened on GitHub, past quarter (19% increase)
+81 PRs closed on GitHub, past quarter (20% increase)
+9 issues opened on GitHub, past quarter (-18% change)
+8 issues closed on GitHub, past quarter (60% increase)</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-P">2022-08-17</a> &mdash; Charles Givre<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+There are no issues requiring Board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (8 years ago)
+There are currently 61 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- No new committers. Last addition was Tengfei Wang on 2022-02-22.
+
+## Project Activity:
+Drill 1.20.2 was released on August 3rd. This is a largely bugfix release and
+complete release notes are available here:
+https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12313820&amp;version=12351742
+
+
+Also of note is that the Drill community is working on Drill 2.0 which will
+have significant improvements from Drill 1.XX. Thanks to Vova Vystoskyi, we
+recently merged a very significant pull request.  For the last three years,
+Drill has been using a fork of Calcite, which effectively meant that we were
+stuck with a rapidly aging version of Calcite.  More importantly was that
+we were missing out on the last three years of bug fixes and performance
+improvements in Calcite. A few weeks ago, we merged this pull request and we
+are seeing significant performance improvements.
+
+James Turton did some initial benchmarks on the TPC-H queries and found that
+Drill with the new Calcite is about 50% faster than Drill with the old version
+of Calcite.
+
+    1.21  1.31
+0  10561  6950
+1  10761  7176
+2  10322  6839
+3  10442  6662
+4  10304  6766
+
+               1.21         1.31
+count      5.000000     5.000000
+mean   10478.000000  6878.600000
+std      189.001323   196.664181
+min    10304.000000  6662.000000
+25%    10322.000000  6766.000000
+50%    10442.000000  6839.000000
+75%    10561.000000  6950.000000
+max    10761.000000  7176.000000
+
+In addition Drill 2.0 will have significant security improvements as well as
+additional integrations to include Google Sheets which we just merged.
+
+
+Past Releases:
+* 1.20.1 was released on 2022-05-16.
+* 1.20.0 was released on 2022-02-25.
+* 1.19.0 was released on 2021-06-10.
+
+
+## Community Health:
+The Drill community health is good:
+
+dev@drill.apache.org had a 80% increase in traffic in the past quarter
+(1147 emails compared to 635)
+issues@drill.apache.org had a 79% increase in traffic in the past quarter
+(1033 emails compared to 576)
+53 issues opened in JIRA, past quarter (-43% change)
+124 issues closed in JIRA, past quarter (210% increase)
+126 commits in the past quarter (10% increase)
+13 code contributors in the past quarter (-35% change)
+63 PRs opened on GitHub, past quarter (-30% change)
+69 PRs closed on GitHub, past quarter (-18% change)
+11 issues opened on GitHub, past quarter (120% increase)
+5 issues closed on GitHub, past quarter (no change)
+We have 417 active accounts in our Slack channel.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-M">2022-05-18</a> &mdash; Charles Givre<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+No significant issues to report.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (7 years ago)
+There are currently 61 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was James Turton on 2022-01-23.
+- Tengfei Wang was added as committer on 2022-02-22
+
+## Project Activity:
+The Drill project released a bug fix release on May 16, 2022.  The bug fix
+release deals with a number of critical CVEs.  Release notes will be published
+shortly.
+
+* 1.20.1 was released on 2022-05-16.
+* 1.20.0 was released on 2022-02-25.
+* 1.19.0 was released on 2021-06-10.
+
+Conversations continue about Drill 2.0.  We have merged a very significant
+improvement which we are calling user translation.  Currently, Drill can
+impersonate a user for file systems, however for connections to data sources
+which do not have the concept of user impersonation.  For instance, relational
+databases generally require usernames and passwords. Prior to these mods
+Drill would only allow one set of shared credentials for these plugins.
+With user translation, users must supply their own individual credentials
+for all plugins.  This option is configurable for each plugin, so users
+can still use a shared user or user translation.
+
+Another area of ongoing work for Drill 2.0 is to eliminate the need for
+Drill to maintain our own fork of Calcite.  The unfortunate result of this
+has been that Drill is stuck on a version of Calcite that is several years old
+and not benefiting from all the work that is going on in the Calcite community.
+This is ongoing work.
+
+## Community Health:
+The Drill community health is strong.  What isn't reflected in the metrics
+below are the complexity of some of the pull requests which were merged,
+particularly those around access controls.
+
+* dev@drill.apache.org had a 80% increase in traffic in the past quarter
+(1147 emails compared to 635)
+* issues@drill.apache.org had a 79% increase in traffic in the past quarter
+(1033 emails compared to 576)
+* 82 issues opened in JIRA, past quarter (-14% change)
+* 37 issues closed in JIRA, past quarter (-59% change)
+* 113 commits in the past quarter (-16% change)
+* 20 code contributors in the past quarter (-4% change)
+* 83 PRs opened on GitHub, past quarter (-3% change)
+* 81 PRs closed on GitHub, past quarter (-8% change)
+* 3 issues opened on GitHub, past quarter (-80% change)
+* 4 issues closed on GitHub, past quarter (-60% change)
+* 375 users on the Apache Drill slack channel.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-O">2022-02-16</a> &mdash; Charles Givre<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+No blocking issues.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (7 years ago)
+There are currently 60 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- James Turton was added to the PMC on 2022-01-23
+- PJ Fanning was added as committer on 2022-01-19
+
+## Project Activity:
+The Drill team is preparing to release Drill 1.20.
+We released RC0 for Drill 1.20 on 5 February. One minor bug was found,
+so we will likely be putting out RC1 shortly.
+
+Drill 1.20 is significant in that in addition to new functionality and bug fixes
+the new version has backwards compatibility with Hadoop 2.  This limitation
+meant that many organizations could not upgrade past Drill circa 1.17.
+
+Some highlights of Drill 1.20 are:
+* Storage plugin for Apache Phoenix
+* Format plugin for Apache Iceberg
+* Upgrade Parquet reader to Parquet v2
+* Support for automatic de-pagination for REST plugin
+* Support for OAuth2.0 for REST queries
+* Refactoring pushdowns for Mongo
+much more...
+
+The Drill community has been holding monthly hangout meetings which James Turton
+has organized. We've been discussing building a Drill 2.0 and what that would
+entail. There are a few key themes of things which we should revise which would
+necessarily break some existing functionality.
+
+* 1.19.0 was released on 2021-06-10.
+* 1.18.0 was released on 2020-09-04.
+* 1.17.0 was released on 2019-12-26.
+
+## Community Health:
+
+The Drill community is growing and I would say strong. As mentioned above
+there has been a good conversation for the last few months about Drill 2.0.
+
+* dev@drill.apache.org had a 80% increase in traffic in the past quarter
+(1147 emails compared to 635)
+* issues@drill.apache.org had a 79% increase in traffic in the past quarter
+(1033 emails compared to 576)
+* 83 issues opened in JIRA, past quarter (45% increase)
+* 82 issues closed in JIRA, past quarter (105% increase)
+* 135 commits in the past quarter (-18% change)
+* 21 code contributors in the past quarter (61% increase)
+* 76 PRs opened on GitHub, past quarter (10% increase)
+* 82 PRs closed on GitHub, past quarter (22% increase)
+* 13 issues opened on GitHub, past quarter (-40% change)
+* 10 issues closed on GitHub, past quarter (-16% change)
+* 342 members of Drill slack channel.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-Y">2021-12-15</a> &mdash; Charles Givre<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+No issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (7 years ago)
+There are currently 59 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bohdan Kazydub on 2020-01-28.
+- No new committers. Last addition was Cong Luo on 2021-01-19.
+
+## Project Activity:
+We are gearing up to release Drill 1.20.0 before the end of the calendar
+year.  Some highlights for Drill 1.20.0 include:
+
+* Format plugins for Iceberg Tables, SAS files and a fixed width reader.
+* New Storage Plugin for Apache Phoenix
+* Writing capability for JDBC data sources
+* Update to Parquet V2
+* Schema provisioning for JSON and Excel readers
+Numerous other bug fixes and enhancements.
+
+Recent releases:
+
+1.19.0 was released on 2021-06-10.
+1.18.0 was released on 2020-09-04.
+1.17.0 was released on 2019-12-26.
+
+## Community Health:
+The Drill community hosted our first meetup in a long time.  We had
+attendees from Germany, China, South Africa, Ukraine and various parts
+of the US.  We will be resuming a monthly cadence for these sessions.
+
+dev@drill.apache.org had a 83% increase in traffic in the past quarter
+(1116 emails compared to 608)
+issues@drill.apache.org had a 74% increase in traffic in the past quarter
+(964 emails compared to 553)
+user@drill.apache.org had a 62% increase in traffic in the past quarter
+(94 emails compared to 58)
+75 issues opened in JIRA, past quarter (78% increase)
+70 issues closed in JIRA, past quarter (288% increase)
+153 commits in the past quarter (-24% change)
+15 code contributors in the past quarter (-16% change)
+72 PRs opened on GitHub, past quarter (44% increase)
+66 PRs closed on GitHub, past quarter (29% increase)
+20 issues opened on GitHub, past quarter (100% increase)
+13 issues closed on GitHub, past quarter (333% increase)
+
+In addition to the metrics above, the Apache Drill slack channel has 309
+members.</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#section-6S">2021-11-17</a> &mdash; Charles Givre<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-Y">2021-09-15</a> &mdash; Charles Givre<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+Nothing significant to report. We appreciate INFRA team's support adding
+the LGTM code checks to the Drill repository.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (7 years ago)
+There are currently 59 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bohdan Kazydub on 2020-01-28.
+- No new committers. Last addition was Cong Luo on 2021-01-19.
+
+## Project Activity:
+1.19.0 was released on 2021-06-10.  We'd like to thank Sally Khudairi for
+assisting us in crafting press releases. Drill's most recent release was
+featured in VentureBeat and a few other tech publications!
+
+Drill will be targeting to release our next version in the fall, exact
+timing is TBD.  We have a few large pull requests in flight which will
+add significant functionality in Drill. The first is DRILL-7985 [1] which
+refactors Drill's pushdown API. The effect of this is that it will be easier
+to write storage plugins and it will be possible and easier to add more
+optimizations to existing plugins.  This PR has one approval and is likely
+to be committed in the next few days.
+
+Another very significant addition to Drill is DRILL-7871 [2] which enables
+access controls around storage plugin configurations.  This is the first
+step towards making Drill truly multi-tenant.
+
+
+[1]: https://github.com/apache/drill/pull/2289
+[2]: https://github.com/apache/drill/pull/2251
+## Community Health:
+Community health remains strong.  Some of the recent pull requests
+are much more complex, so as a result we are seeing fewer pull requests.
+
+Drill is transitioning to using github Issues as well as our Slack channel.
+For the next quarterly report, I will see how I can gather Slack metrics and
+include them as well. (Slack limits the data for unpaid plans unfortunately)
+
+* dev@drill.apache.org had a 11% decrease in traffic in the
+past quarter (668 emails compared to 746)
+* 41 issues opened in JIRA, past quarter (-45% change)
+* 16 issues closed in JIRA, past quarter (-75% change)
+* 201 commits in the past quarter (89% increase)
+* 18 code contributors in the past quarter (-10% change)
+* 49 PRs opened on GitHub, past quarter (-30% change)
+* 47 PRs closed on GitHub, past quarter (-30% change)
+* 9 issues opened on GitHub, past quarter (350% increase)
+* 3 issues closed on GitHub, past quarter (300% increase)</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#section-6Q">2021-08-18</a> &mdash; Charles Givre<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-Q">2021-05-19</a> &mdash; Charles Givre<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+One minor issue.  We requested some config changes to the Drill github
+repository (https://issues.apache.org/jira/browse/INFRA-218050) and have
+not received any response on this.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (6 years ago)
+There are currently 59 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bohdan Kazydub on 2020-01-28.
+- No new committers. Last addition was Cong Luo on 2021-01-19.
+
+## Project Activity:
+The Drill community is gearing up for the release of Drill 1.19 which will be a
+a very large improvement over Drill 1.18. We project a release date of mid June.
+Drill 1.19 will include:
+
+* New connectors for Cassandra/Scylla and ElasticSearch
+* Streaming REST API
+* Improvements to the Kafka, Kudu, and Mongo connectors
+* Updates to the parquet reader
+* A format reader for XML data, as well as integration with the REST plugin
+* Integration of a streaming Excel reader so Drill can read Excel files of
+arbitrary size
+* Security improvements to incorporate a password vault
+* Access controls around storage plugins
+* Resolution of numerous CVEs
+* Much more...
+
+The Drill community has been requesting more frequent (but smaller) releases,
+so after Drill 1.19 is released, we will make every effort to move to quarterly
+releases rather than biannual releases.
+
+Recent releases:
+
+* 1.18.0 was released on 2020-09-04.
+* 1.17.0 was released on 2019-12-26.
+* 1.16.0 was released on 2019-05-02.
+
+## Community Health:
+The Drill community is healthy with actiivty comparable to last quarter.
+One metric not reflected here, is that our Slack channel has grown considerably
+over the last quarter.  More dev and user interaction is happening there
+than via the email lists. Slack doesn't seem to have quarterly metrics, but I
+will attempt to gather some metrics for the next report.
+
+* dev@drill.apache.org had a 21% increase in traffic in the past quarter
+(622 emails compared to 514)
+* user@drill.apache.org had a 295% increase in traffic in the past quarter
+(83 emails compared to 21)
+* 62 issues opened in JIRA, past quarter (14% increase)
+* 44 issues closed in JIRA, past quarter (-18% change)
+* 78 commits in the past quarter (-16% change)
+* 17 code contributors in the past quarter (13% increase)
+* 48 PRs opened on GitHub, past quarter (-20% change)
+* 52 PRs closed on GitHub, past quarter (-8% change)</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-Q">2021-02-17</a> &mdash; Charles Givre<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (6 years ago)
+There are currently 59 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bohdan Kazydub on 2020-01-28.
+- James Turton was added as committer on 2020-11-20
+- Cong Luo was added as committer on 2021-01-19
+
+## Project Activity:
+We are discussing the next release of Drill.  We are targeting end of
+Q1 for the release.  The new release will contain a number of very
+significant improvements including:
+
+* An XML Reader for Drill
+* Drill plugin for Elasticsearch based on Calcite adapters
+* Cassandra/Scylla plugin for Drill also based on Calcite adapters
+* Numerous optimizations including limit pushdowns for files
+* Security enhancements including a password vault integration
+
+Recent releases:
+
+1.18.0 was released on 2020-09-04.
+1.17.0 was released on 2019-12-26.
+1.16.0 was released on 2019-05-02.
+
+## Community Health:
+Drill has had a significant uptick in activity in the last quarter.  In addition
+to the metrics below, Drill's Slack channel has had a lot more activity.
+
+* dev@drill.apache.org had a 115% increase in traffic in the past quarter
+(546 emails compared to 253)
+* issues@drill.apache.org had a 117% increase in traffic in the past quarter
+(625 emails compared to 288)
+* user@drill.apache.org had a 69% decrease in traffic in the past quarter
+(25 emails compared to 80)
+* 47 issues opened in JIRA, past quarter (88% increase)
+* 51 issues closed in JIRA, past quarter (919% increase)
+* 90 commits in the past quarter (328% increase)
+* 15 code contributors in the past quarter (50% increase)
+* 50 PRs opened on GitHub, past quarter (163% increase)
+* 52 PRs closed on GitHub, past quarter (173% increase)</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-M">2020-11-18</a> &mdash; Charles Givre<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+Nothing significant to report.
+
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (6 years ago)
+There are currently 57 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bohdan Kazydub on 2020-01-28.
+- No new committers. Last addition was Ankush Kapur on 2020-07-31.
+
+Note that James Turton approved as committer on 11-10-2020.
+
+## Project Activity:
+Drill released version 1.18 in the beginning of September this year.  The
+latest version included a number of significant improvements and enhancements
+including a connector for REST APIs, Apache Druid as well as a format plugin for
+SPSS files.
+
+Recent releases:
+1.18.0 was released on 2020-09-04.
+1.17.0 was released on 2019-12-26.
+1.16.0 was released on 2019-05-02.
+
+## Community Health:
+The Drill community has been quieter this quieter since HPE withdrew
+their engineers from the Drill project.  However, we anticipate an increase
+in activity in the next quarter as a new startup has committed engineering
+resources to Drill.
+
+dev@drill.apache.org had a 20% decrease in traffic in the
+past quarter (260 emails compared to 325)
+user@drill.apache.org had a 46% decrease in traffic in the
+past quarter (80 emails compared to 147)
+
+23 issues opened in JIRA, past quarter (-42% decrease)
+5 issues closed in JIRA, past quarter (-77% decrease)
+16 commits in the past quarter (-20% decrease)
+8 code contributors in the past quarter (-11% decrease)
+15 PRs opened on GitHub, past quarter (-11% decrease)
+16 PRs closed on GitHub, past quarter (-11% decrease)</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-Q">2020-08-19</a> &mdash; Charles Givre<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+No significant issues to report.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (6 years ago)
+There are currently 57 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bohdan Kazydub on 2020-01-28.
+- Ankush Kapur was added as committer on 2020-07-31
+
+## Project Activity:
+Due to the withdrawal of HPE, the 1.18 release has been delayed, however, we
+do have a release manager and I anticipate releasing 1.18 sometime in
+mid-September.
+
+Drill 1.18 will have numerous improvements including:
+- Drill-Druid Storage Plugin
+- Drill-HTTP REST Storage plugin
+- RDBMS Metastore
+- Streaming Excel Reader
+- Greatly improved documentation
+
+
+## Community Health:
+There is considerably less activity in the Drill community from the last
+quarter due to HPE's withdrawal from supporting Drill.
+
+- dev@drill.apache.org had a 85% decrease in traffic in the past quarter (346
+  emails compared to 2229)
+- issues@drill.apache.org had a 84% decrease in
+  traffic in the past quarter (411 emails compared to 2539)
+- user@drill.apache.org had a 47% decrease in traffic in the past quarter (149
+  emails compared to 278)
+- 35 issues opened in JIRA, past quarter (-76%
+  decrease)
+- 22 issues closed in JIRA, past quarter (-80% decrease)
+- 20 commits in the past quarter (-80% decrease)
+- 9 code contributors in the past quarter
+  (-30% decrease)
+- 15 PRs opened on GitHub, past quarter (-84% decrease)
+- 18 PRs closed on GitHub, past quarter (-81% decrease)</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-Q">2020-05-20</a> &mdash; Charles Givre<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (5 years ago)
+There are currently 56 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bohdan Kazydub on 2020-01-28.
+- No new committers. Last addition was Denys Ordynskiy on 2019-12-26.
+
+## Project Activity:
+Since the last board report there has been considerable work done to Drill in
+preparation for the 1.18 release. Unfortunately the situation with COVID-19
+has affected the development schedule.
+
+We have committed the following PRs of interest:
+- RDBMS Metastore for Drill
+- Significantly Refactored and Improved JSON Readers
+- Various Improvements to REST API
+- Time bucket and other UDFs to facilitate time series analysis
+- Storage plugin for REST APIs (https://youtu.be/oEOhFWm3D9A for demo)
+- Improvements to Excel Reader to allow large files
+- Format Plugin for SPSS files
+
+
+Additionally we have the following new functionality near completion:
+- Storage Plugin for Apache Druid
+
+In response to the questions from the last Board report, the Drill community
+has held two hangouts. Since the main developers are based in the US on
+both coasts, and in Ukraine, we held them at 10AM ET which is 7AM PT, and
+1600 CET (Ukraine). The hangout was in English as everyone in the community
+does speak English. We didn't take minutes, but there were some follow on
+discussions over email and one concrete result was that Drill's error messages
+have been significantly improved.
+
+
+## Community Health:
+dev@drill.apache.org had a 24% increase in traffic
+user@drill.apache.org had a 60% increase in traffic
+158 issues opened in JIRA (15% increase)
+117 issues closed in JIRA (17% increase)
+106 commits in the past quarter (6% increase)
+13 code contributors (-18% decrease)
+102 PRs opened on GitHub (27% increase)
+107 PRs closed on GitHub (42% increase)</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-N">2020-02-19</a> &mdash; Charles Givre<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+Nothing significant to report.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (5 years ago)
+There are currently 56 committers and 26 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Bohdan Kazydub was added to the PMC on 2020-01-28
+- Igor Guzenko was added to the PMC on 2019-12-12
+- Denys Ordynskiy was added as committer on 2019-12-26
+
+## Project Activity:
+Drill 1.17 was released on 2019-12-26 which contains a significant number of
+bugfixes and improvements.
+(https://drill.apache.org/docs/apache-drill-1-17-0-release-notes/).
+
+The Drill Community had a Hangout meeting and will be working towards a number
+of strategic goals:
+1. Increase the size of community
+2. Reduce obstacles to use, such as improving documentation and website.
+3. Work on publicity
+
+We have averaged about two releases per year.  Going forward, we will try for
+smaller releases more frequently.  Our next release is targeted for early Q2.
+
+Interesting work underway:
+- Storage plugins for Apache Druid, Apache Cassandra, Elasticsearch, and
+  general HTTP/REST.
+- Significant code improvements to facilitate storage and format plugin
+  development.
+- Integrations with Docker and K8s.
+- Documentation improvements to include website re-work.
+
+
+
+## Community Health:
+- dev@drill.apache.org had a 35% increase in traffic in the past quarter (2169
+  emails compared to 1606)
+- user@drill.apache.org had a 97% increase in traffic in the past quarter (231
+  emails compared to 117)
+- 129 issues opened in JIRA, past quarter (28% increase)
+- 99 issues closed in JIRA, past quarter (15% increase)
+- 100 commits in the past quarter (78% increase)
+- 16 code contributors in the past quarter (6% increase)
+- 74 PRs opened on GitHub, past quarter (29% increase)
+- 75 PRs closed on GitHub, past quarter (15% increase)</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#attachment-N">2019-11-20</a> &mdash; Charles Givre<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Drill is the creation and maintenance of software related to
+Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Drill was founded 2014-11-18 (5 years ago)
+There are currently 55 committers and 24 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Sorabh Hamirwasia on 2019-04-04.
+- No new committers. Last addition was Anton Gozhiy on 2019-07-22.
+
+## Project Activity:
+- Drill 1.16 was released on 2019-05-02.
+- Drill 1.17 was delayed until end of November.
+
+### Next Release
+The next release of Drill (1.17) resolved many issues and added a lot of new
+functionality including:
+ - Enhanced Drill metastore
+- Hive complex types support (arrays, structs, union)
+- Canonical Map&lt;K, V&gt; support
+- Schema provisioning via table function
+- Empty parquet files read / write support
+- Run-time row group pruning
+- Numerous enhancements and upgrades to Drill with Hive
+- Format plugin for Excel Files
+- Format plugin for ESRI Shape Files
+- Add Variable Argument UDFs
+- Add UDF to parse user agent strings
+
+### Future Functionality in Development
+There are a number of enhancements for which there are active PRs or discussions
+on the various boards.
+- Integration between Apache Drill and Apache Daffodil (Incubating)
+- Storage plugin for Apache Druid
+- Upgrading Drill to use Hadoop v. 3.0
+- Format plugin for HDF5
+
+
+## Community Health:
+Drill seems to be recovering from the collapse of Drill's major backer MapR.
+
+### Development Activity
+- 96 issues opened in JIRA (1% increase from last quarter)
+- 85 issues closed in JIRA (28% increase from last quarter)
+- 55 commits in past quarter (14% increase from last quarter)
+- 15 contributors from last quarter (25% increase)
+- 53 PRs opened on GitHub (no change from last quarter)
+- 63 PRs closed on GitHub (no change from last quarter)
+
+### Email Lists
+- dev@drill.apache.org
+  - 46% increase in traffic in past quarter (1574 compared to 1073)
+
+- issues@drill.apache.org
+  - 47% increase in traffic in past quarter (2027 compared to 1377)
+
+- users@drill.apache.org
+ - 27% decrease in traffic in past quarter (116 compared to 157)</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-Q">2019-08-21</a> &mdash; Arina Ielchiieva<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud
+   Storage.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - Drill User Meetup was held on May 22, 2019.
+ - Drill 1.17.0 release is planned in the end of August / beginning of
+   September.
+
+## Health report:
+ - Development activity is almost 50% down due to acquisition of one of the
+   main Drill vendors.
+ - Activity on the dev and user mailing lists is slightly down compared to
+   previous periods.
+ - Four committers were added in the last period.
+
+## PMC changes:
+
+ - Currently 24 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Sorabh Hamirwasia on Fri Apr 05 2019
+
+## Committer base changes:
+
+ - Currently 55 committers.
+ - New commmitters:
+    - Anton Gozhiy was added as a committer on Mon Jul 22 2019
+    - Bohdan Kazydub was added as a committer on Mon Jul 15 2019
+    - Igor Guzenko was added as a committer on Mon Jul 22 2019
+    - Venkata Jyothsna Donapati was added as a committer on Mon May 13 2019
+
+## Releases:
+
+ - Last release was 1.16.0 on Thu May 02 2019
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 403 subscribers (down -5 in the last 3 months):
+    - 1156 emails sent to list (2222 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 17 subscribers (up 0 in the last 3 months):
+    - 1496 emails sent to list (2315 in previous quarter)
+
+ - user@drill.apache.org:
+    - 575 subscribers (down -6 in the last 3 months):
+    - 157 emails sent to list (230 in previous quarter)
+
+## JIRA activity:
+
+ - 96 JIRA tickets created in the last 3 months
+ - 68 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-O">2019-05-15</a> &mdash; Arina Ielchiieva<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+- Since the last board report, Drill has released version 1.16.0, including
+  the following enhancements:
+  - CREATE OR REPLACE SCHEMA command to define a schema for text files
+  - REFRESH TABLE METADATA command can generate metadata cache files for
+    specific columns
+  - ANALYZE TABLE statement to computes statistics on Parquet data
+  - SYSLOG (RFC-5424) Format Plugin
+  - NEAREST DATE function to facilitate time series analysis
+  - Format plugin for LTSV files
+  - Ability to query Hive views
+  - Upgrade to SQLLine 1.7
+  - Apache Calcite upgrade to 1.18.0
+  - Several Drill Web UI improvements, including:
+     - Storage plugin management improvements
+     - Query progress indicators and warnings
+     - Ability to limit the result size for better UI response
+     - Ability to sort the list of profiles in the Drill Web UI
+     - Display query state in query result page
+     - Button to reset the options filter
+
+- Drill User Meetup will be held on May 22, 2019. Two talks are planned:
+  - Alibaba's Usage of Apache Drill for querying a Time Series Database
+  - What&rsquo;s new with Apache Drill 1.16 &amp; a demo of Schema Provisioning
+
+## Health report:
+- The project is healthy. Development activity as reflected in the pull
+  requests and JIRAs is good.
+- Activity on the dev and user mailing lists are stable.
+- One PMC member was added in the last period.
+
+## PMC changes:
+
+- Currently 24 PMC members.
+- Sorabh Hamirwasia was added to the PMC on Fri Apr 05 2019
+
+## Committer base changes:
+
+- Currently 51 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Salim Achouche at Mon Dec 17 2018
+
+## Releases:
+
+- 1.16.0 was released on Thu May 02 2019
+
+## Mailing list activity:
+
+- dev@drill.apache.org:
+   - 406 subscribers (down -10 in the last 3 months):
+   - 2299 emails sent to list (1903 in previous quarter)
+
+- issues@drill.apache.org:
+   - 17 subscribers (down -1 in the last 3 months):
+   - 2373 emails sent to list (2233 in previous quarter)
+
+- user@drill.apache.org:
+   - 582 subscribers (down -15 in the last 3 months):
+   - 235 emails sent to list (227 in previous quarter)
+
+## JIRA activity:
+
+- 214 JIRA tickets created in the last 3 months
+- 212 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-R">2019-02-20</a> &mdash; Arina Ielchiieva<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud
+   Storage.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - Since the last board report, Drill has released version 1.15.0, including
+   the following enhancements:
+   - Add capability to do index based planning and execution
+   - CROSS join support
+   - INFORMATION_SCHEMA FILES and FUNCTIONS were added
+   - Support for TIMESTAMPADD and TIMESTAMPDIFF functions
+   - Ability to secure znodes with custom ACLs
+   - Upgrade to SQLLine 1.6
+   - Parquet filter pushdown for VARCHAR and DECIMAL data types
+   - Support JPPD (Join Predicate Push Down)
+   - Lateral join functionality was enabled by default
+   - Multiple Web UI improvements to simplify the use of options and submit
+     queries
+   - Query performance with the semi-join functionality was improved
+   - Support for aliases in the GROUP BY clause
+   - Option to prevent Drill from returning a result set for DDL statements
+   - Storage plugin names became case-insensitive
+
+- Drill Developer Day was held on November 14, 2018: a variety of technical
+  design issues were discussed, including Apache Arrow integration, Metadata
+  and Resource management, Storage plugins, etc.
+
+- Drill User Meetup was held on November 14, 2018: use cases of Drill and
+  indexing support were presented.
+
+## Health report:
+ - The project is healthy. Development activity as reflected in the pull
+   requests and JIRAs is good.
+ - Activity on the dev and user mailing lists are stable.
+ - Three committers were added in the last period.
+
+## PMC changes:
+
+ - Currently 23 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Charles Givre on Mon Sep 03 2018
+
+## Committer base changes:
+
+ - Currently 51 committers.
+ - New commmitters:
+    - Hanumath Rao Maduri was added as a committer on Thu Nov 01 2018
+    - Karthikeyan Manivannan was added as a committer on Fri Dec 07 2018
+    - Salim Achouche was added as a committer on Mon Dec 17 2018
+
+## Releases:
+
+ - 1.15.0 was released on Mon Dec 31 2018
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 415 subscribers (down -12 in the last 3 months):
+    - 2066 emails sent to list (2653 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 18 subscribers (up 0 in the last 3 months):
+    - 2480 emails sent to list (3228 in previous quarter)
+
+ - user@drill.apache.org:
+    - 592 subscribers (down -5 in the last 3 months):
+    - 249 emails sent to list (310 in previous quarter)
+
+## JIRA activity:
+
+ - 196 JIRA tickets created in the last 3 months
+ - 171 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-O">2018-11-21</a> &mdash; Arina Ielchiieva<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud
+   Storage.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - Since the last board report, Drill has released version 1.14.0, including
+   the following enhancements:
+ - Drill in a Docker container
+ - Image metadata format plugin
+ - Upgrade to Calcite 1.16.0
+ - Kafka plugin push down support
+ - Phonetic and String functions
+ - Enhanced decimal data support
+ - Spill to disk for the Hash Join support
+ - CGROUPs resource management support
+ - Lateral / Unnest support (disabled by default)
+ - Support Transitive Closure during Filter Push Down and Partition Pruning
+ - Batch processing improvements to limit the amount of memory for Hash Join,
+   Union All, Project, Hash Aggregate and Nested Loop Join.
+ - There were active discussions about schema provision in Drill. Based on
+   these discussions two projects are currently evolving: Drill metastore and
+   schema provision in the file and in a query.
+ - Apache Drill book has been written by two PMC members (Charles and Paul).
+ - Drill developer meet up will be held on November 14, 2018.
+
+   The following areas are going to be discussed:
+ - Storage plugins
+ - Schema discovery &amp; Evolution
+ - Metadata Management
+ - Resource management
+ - Integration with Apache Arrow
+
+## Health report:
+ - The project is healthy. Development activity as reflected in the pull
+   requests and JIRAs is good.
+ - Activity on the dev and user mailing lists are stable.
+ - Three committers and three new PMC member were added in the last period.
+
+## PMC changes:
+
+ - Currently 23 PMC members.
+ - New PMC members:
+    - Boaz Ben-Zvi was added to the PMC on Fri Aug 17 2018
+    - Charles Givre was added to the PMC on Mon Sep 03 2018
+    - Vova Vysotskyi was added to the PMC on Fri Aug 24 2018
+
+## Committer base changes:
+
+ - Currently 49 committers.
+ - New commmitters:
+    - Chunhui Shi was added as a committer on Thu Sep 27 2018
+    - Gautam Parai was added as a committer on Mon Oct 22 2018
+ - Hanumath Rao Maduri was added as a committer on Thu Nov 01 2018
+    - Weijie Tong was added as a committer on Fri Aug 31 2018
+
+## Releases:
+
+ - 1.14.0 was released on Sat Aug 04 2018
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 427 subscribers (down -6 in the last 3 months):
+    - 2827 emails sent to list (2126 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 18 subscribers (down -1 in the last 3 months):
+    - 3487 emails sent to list (4769 in previous quarter)
+
+ - user@drill.apache.org:
+    - 597 subscribers (down -6 in the last 3 months):
+    - 332 emails sent to list (346 in previous quarter)
+
+
+## JIRA activity:
+
+ - 164 JIRA tickets created in the last 3 months
+ - 128 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-O">2018-08-15</a> &mdash; Arina Ielchiieva<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud
+   Storage.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+ - Apache Drill 1.14.0 was released. The release provides the following many
+   new features and improvements besides numerous bug fixes:
+  - Decimal data type enhancements
+  - Generic Logfile Format Plugin
+  - Image Metadata Format Plugin
+  - Official Drill Docker Container
+  - Spill to disk for the Hash Join implementation
+  - Drill Plugins Handler
+  - Support CGROUPs resource management
+  - Support Phonetic and String Distance functions
+
+## Health report:
+ - The project is healthy. Development activity as reflected in the pull
+   requests and JIRAs is good.
+ - Activity on the dev and user mailing lists are stable.
+ - Two new committers and one new PMC member were added in the last period.
+
+## PMC changes:
+
+ - Currently 20 PMC members.
+ - Vitalii Diravka was added to the PMC on Tue Jun 26 2018
+ - Arina Ielchiieva was elected as new PMC Chair on Wed Jul 30 2018
+
+## Committer base changes:
+
+ - Currently 45 committers.
+ - New commmitters:
+    - Padma Penumarthy was added as a committer on Mon Jun 18 2018
+    - Timothy Farkas was added as a committer on Fri May 25 2018
+
+## Releases:
+
+ - 1.14.0 was released on Sat Aug 04 2018
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 432 subscribers (down -4 in the last 3 months):
+    - 2444 emails sent to list (2549 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 19 subscribers (up 0 in the last 3 months):
+    - 5097 emails sent to list (3418 in previous quarter)
+
+ - user@drill.apache.org:
+    - 605 subscribers (up 0 in the last 3 months):
+    - 375 emails sent to list (339 in previous quarter)
+
+
+## JIRA activity:
+
+ - 281 JIRA tickets created in the last 3 months
+ - 224 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#attachment-Q">2018-05-16</a> &mdash; Aman Sinha<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - Since the last board report, Drill has released version 1.13.0.  The following is a partial list of
+   new features/enhancements that were added in addition to many other bug fixes:
+     - JDK 8 support.
+     - Upgrade to Apache Calcite version 1.15.
+     - JDBC Statement.setQueryTimeout(int) support.
+     - Batch sizing improvements.
+     - Support for SPNEGO to extend Kerberos to Web applications through HTTP.
+     - Ability to run Drill under YARN.
+     - Parquet filter pushdown improvements and related performance improvements.
+     - Hive client for Drill is updated to version 2.3.2.
+     - Ability to automatically manage memory allocations during Drill startup.
+     - Support SQL syntax highlighting of queries, auto-complete support in SQL editors, and snippets.
+     - Improved performance of the Single Merge Exchange operator.
+     - Like operator optimization.
+     - User/Distribution-specific configuration checks during startup.
+
+## Health report:
+ - The project is quite healthy. Development activity as reflected in the pull requests and JIRAs
+   is good.  Activity on the dev and user mailing lists continues to be strong.
+   Three new committers were added in the last period.
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Paul Rogers on Mon Jan 29 2018
+
+## Committer base changes:
+
+ - Currently 43 committers.
+ - New commmitters:
+    - Kunal Khatua was added as a committer on Tue Feb 27 2018
+    - Vova Vysotskyi was added as a committer on Thu Mar 15 2018
+    - Sorabh Hamirwasia was added as a committer on Fri Apr 27 2018
+
+## Releases:
+
+ - 1.13.0 was released on Sun Mar 18 2018
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 437 subscribers (down -9 in the last 3 months):
+    - 2582 emails sent to list (2244 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 19 subscribers (up 0 in the last 3 months):
+    - 3652 emails sent to list (3088 in previous quarter)
+
+ - user@drill.apache.org:
+    - 605 subscribers (down -8 in the last 3 months):
+    - 356 emails sent to list (181 in previous quarter)
+
+
+## JIRA activity:
+
+ - 252 JIRA tickets created in the last 3 months
+ - 183 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#attachment-O">2018-02-21</a> &mdash; Aman Sinha<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - Since the last board report, Drill has released version 1.12.0. The
+   following is a partial list of new features/enhancements that were added in
+   addition to many other bug fixes:
+    - Kafka and OpenTSDB Storage Plugins.
+    - Queue-Based memory assignment for buffering operators (Throttling).
+    - Networking Functions.
+    - SSL Support.
+    - Network Encryption Support.
+    - System options improvements, including a new internal system options
+      table.
+    - Access to paths outside the current workspace.
+ - Drill completed a substantial effort to rebase on Apache Calcite 1.15
+   (previously, Drill was using Calcite 1.4 along with several cherry-picked
+   changes on top).  An upcoming release 1.13 will contain the result of this
+   work.
+
+## Health report:
+ - The project is healthy. Development activity as reflected in the pull
+   requests and JIRAs is good.  Activity on the dev mailing list continues to
+   be strong.  Activity on the user mailing list had a decline compared to
+   prior reporting period possibly due to the holiday season. Two new
+   committers and one new PMC member were added in the last period.
+
+## PMC changes:
+
+ - Currently 19 PMC members.
+ - Paul Rogers was added to the PMC on Mon Jan 29 2018
+
+## Committer base changes:
+
+ - Currently 40 committers.
+ - New commmitters:
+    - Boaz Ben-Zvi was added as a committer on Tue Dec 12 2017
+    - Vitalii Diravka was added as a committer on Sat Dec 09 2017
+
+## Releases:
+
+ - 1.12.0 was released on Thu Dec 14 2017
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 445 subscribers (down -6 in the last 3 months):
+    - 2185 emails sent to list (2665 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 19 subscribers (up 0 in the last 3 months):
+    - 2993 emails sent to list (3486 in previous quarter)
+
+ - user@drill.apache.org:
+    - 612 subscribers (down -4 in the last 3 months):
+    - 186 emails sent to list (435 in previous quarter)
+
+
+## JIRA activity:
+
+ - 195 JIRA tickets created in the last 3 months
+ - 124 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-11-15"><a href="2017/board_minutes_2017_11_15.html#attachment-R">2017-11-15</a> &mdash; Aman Sinha<a class="headerlink" href="#2017-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage.
+
+## Issues:
+- There are no issues requiring board attention at this time
+
+## Activity:
+- An all-day Drill 2.0 Hackathon was organized on Sept 18th in San Jose at a
+participating company's headquarters. 27 developers registered and
+participated in the hackathon. It was a productive day of technical design
+discussions on topics related to a major 2.0 release next year.
+- The community is actively working towards an upcoming 1.12 release sometime
+in late November.
+- There is a noticeable uptick in contributions of storage/format plugins for
+Drill; PCAP, OpenTSDB, Kafka plugins are either committed or nearing
+completion.
+
+## Health report:
+- The project is healthy. Development activity based on the pull requests and
+JIRAs is quite good and growing, as evidenced by 63 more JIRA tickets resolved
+in this reporting period compared to the prior one. Activity on the dev list
+showed a 48% jump compared to the previous quarter and activity on the user
+list showed a moderate increase.  Two new committers were added in the last
+period.
+
+## PMC changes:
+
+- Currently 18 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Arina Ielchiieva on Tue Aug 01 2017
+
+## Committer base changes:
+
+- Currently 38 committers.
+- New commmitters:
+- AnilKumar B was added as a committer on Wed Oct 25 2017
+- Kamesh Bhallamudi was added as a committer on Wed Oct 25 2017
+
+## Releases:
+
+- Last release was 1.11.0 on Thu Jul 27 2017
+
+## Mailing list activity:
+
+- dev@drill.apache.org:
+- 450 subscribers (up 2 in the last 3 months):
+- 2683 emails sent to list (1810 in previous quarter)
+
+- issues@drill.apache.org:
+- 19 subscribers (up 1 in the last 3 months):
+- 3453 emails sent to list (2582 in previous quarter)
+
+- user@drill.apache.org:
+- 615 subscribers (up 6 in the last 3 months):
+- 454 emails sent to list (432 in previous quarter)
+
+
+## JIRA activity:
+
+- 228 JIRA tickets created in the last 3 months
+- 164 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-T">2017-08-16</a> &mdash; Aman Sinha<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+- There are no issues requiring board attention at this time
+
+## Activity:
+- Since the last board report, Drill has released version 1.11.0. The
+following new features/enhancements
+were added in addition to many other bug fixes:
+   - Cryptography-related functions.
+   - Spill to disk for the hash aggregate operator.
+   - Format plugin support for PCAP files.
+   - Ability to change the HDFS block Size for Parquet files.
+   - Ability to store query profiles in memory.
+   - Configurable CTAS directory and file permissions option.
+   - Support for network encryption.
+   - Relative paths stored in the metadata file.
+   - Support for ANSI_QUOTES.
+
+## Health report:
+
+- The project is healthy. Development activity as reflected in the pull
+requests and JIRAs
+  is good.  Activity on the dev and user mailing lists has shown a slight
+    increase compared
+  to previous period. Three new committers and one new PMC member were added
+    in the last period.
+
+## PMC changes:
+
+- Currently 18 PMC members.
+- Arina Ielchiieva was added to the PMC on Tue Aug 01 2017
+
+## Committer base changes:
+
+- Currently 36 committers.
+- New commmitters:
+   - Charles Givre was added as a committer on Mon Jun 12 2017
+   - Laurent Goujon was added as a committer on Thu Jun 08 2017
+   - Paul Rogers was added as a committer on Fri May 19 2017
+
+## Releases:
+
+- 1.11.0 was released on Thu Jul 27 2017
+
+## Mailing list activity:
+
+- dev@drill.apache.org:
+   - 444 subscribers (up 8 in the last 3 months):
+   - 1928 emails sent to list (1918 in previous quarter)
+
+- issues@drill.apache.org:
+   - 18 subscribers (down -2 in the last 3 months):
+   - 2748 emails sent to list (2964 in previous quarter)
+
+- user@drill.apache.org:
+   - 609 subscribers (up 23 in the last 3 months):
+   - 454 emails sent to list (362 in previous quarter)
+
+
+## JIRA activity:
+
+- 234 JIRA tickets created in the last 3 months
+- 101 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-05-17"><a href="2017/board_minutes_2017_05_17.html#attachment-Q">2017-05-17</a> &mdash; Parth Chandra<a class="headerlink" href="#2017-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+ - There are no issues requiring board attention at this time
+
+## Activity:
+ - Since the last board report, Drill has released version 1.10
+ - Drill has added many improvements since the last report including
+    - Support for left outer joins with nested loop joins
+    &ndash; Support for ANSI_QUOTES option to allow alternatives to backtick for
+      quoting strings
+    &ndash; New sub-operator test framework
+    &ndash; Fixed missing query text in prepared statement
+    &ndash; Fixed new external sort when data contains map type columns
+    &ndash; Improved query planning time against MapR-DB tables via caching of row
+      count metadata
+    &ndash; Improved query planning time by using runtime metadata dispatchers
+
+## Health report:
+
+The project is healthy. Development activity is at the same level as the
+previous period. Activity on the dev mailing list, JIRAs, and pull requests is
+the same or higher than in the previous period. Three new committers were added
+in the last period.
+
+
+## PMC changes:
+
+ - Currently 17 PMC members.
+ - No new PMC members added in the last 3 months
+ - One PMC member has resigned due to lack of time.
+ - Last PMC addition was Sudheesh Katkam on Wed Oct 05 2016
+
+## Committer base changes:
+
+ - Currently 33 committers.
+ - New commmitters:
+    - Abhishek Girish was added as a committer on Mon Feb 13 2017
+    - Arina Ielchiieva was added as a committer on Thu Feb 23 2017
+    - Rahul Kumar Challapalli was added as a committer on Wed Feb 15 2017
+
+## Releases:
+
+ - 1.10.0 was released on Tue Mar 14 2017
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 436 subscribers (up 0 in the last 3 months):
+    - 2066 emails sent to list (1758 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 3118 emails sent to list (2499 in previous quarter)
+
+ - user@drill.apache.org:
+    - 586 subscribers (up 9 in the last 3 months):
+    - 382 emails sent to list (374 in previous quarter)
+
+
+## JIRA activity:
+
+ - 220 JIRA tickets created in the last 3 months
+ - 166 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-02-27"><a href="2017/board_minutes_2017_02_27.html#attachment-R">2017-02-27</a> &mdash; Parth Chandra<a class="headerlink" href="#2017-02-27" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+
+ - There are no issues requiring board attention at this time
+
+## Activity:
+
+ - Since the last board report, Drill has released version 1.9
+ - Drill has added many new features since the last report. More Parquet
+   reader performance improvements, temp tables support, an improved work
+   assignment algorithm,  and an httpd format plugin.
+ - Work continues on improved use of statistics, and security enhancements
+   (including support for Kerberos) and a sort with managed memory usage.
+
+## Health report:
+
+ - The project is healthy. Development activity is high and is reflected in an
+   increase in the number of mails to the mailing list, many new pull requests
+   and increased activity in JIRA. Two new committers were added in the last
+   period.
+
+## PMC changes:
+
+ - Currently 18 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Sudheesh Katkam on Wed Oct 05 2016
+
+## Committer base changes:
+
+ - Currently 30 committers.
+ - New commmitters:
+   - Chris Westin was added as a committer on Wed Nov 30 2016
+   - Neeraja Rentachintala was added as a committer on Wed Nov 16 2016
+
+## Releases:
+
+ - 1.9.0 was released on Mon Nov 28 2016
+
+## Mailing list activity:
+
+ - Mailing list activity is healthy.
+
+ - dev@drill.apache.org:
+    - 436 subscribers (up 2 in the last 3 months):
+    - 1919 emails sent to list (1599 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 2618 emails sent to list (2003 in previous quarter)
+
+ - user@drill.apache.org:
+    - 577 subscribers (up 12 in the last 3 months):
+    - 372 emails sent to list (430 in previous quarter)
+
+## JIRA activity:
+
+ - 236 JIRA tickets created in the last 3 months
+ - 85 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#attachment-P">2016-11-16</a> &mdash; Parth Chandra<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ - Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+
+ - There are no issues requiring board attention at this time
+
+## Activity:
+
+ - Since the last board report, Drill has released version 1.8
+ - Drill has added many new features reffered to in the last report. Dynamic
+   UDFs, Parquet reader performance improvements, filter pushdown for Parquet,
+   and improved support for Metadata in the clients has been added.
+ - Improved use of statistics, and security enhancements (including support for
+   Kerberos) continue to be in the works. Also in progress is an improvement to
+   the data locality algorithm.
+
+## Health report:
+
+ - There has been a good increase in the number posts in the dev and jira
+   lists. This reflects the increased activity on the development front. User
+   list activity is down this period, but not a concern at the moment.
+
+## PMC changes:
+
+ - Currently 18 PMC members.
+ - Sudheesh Katkam was added to the PMC on Wed Oct 05 2016
+
+## Committer base changes:
+
+ - Currently 28 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Hsuan-Yi Chu at Thu Apr 07 2016
+
+## Releases:
+
+ - 1.8.0 was released on Mon Aug 29 2016
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 436 subscribers (down -10 in the last 3 months):
+    - 1797 emails sent to list (1231 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 20 subscribers (up 0 in the last 3 months):
+    - 2188 emails sent to list (1550 in previous quarter)
+
+ - user@drill.apache.org:
+    - 567 subscribers (down -14 in the last 3 months):
+    - 436 emails sent to list (824 in previous quarter)
+
+## JIRA activity:
+
+ - 173 JIRA tickets created in the last 3 months
+ - 88 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#attachment-U">2016-08-17</a> &mdash; Parth Chandra<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Drill is a Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+
+## Activity:
+
+- Since the last board report, Drill has released version 1.7
+- The focus of the releases continues to be on stability and performance.
+- We've seen a nice trend in design discussions with developers writing
+  detailed design documents that is leading to good feedback.
+- Work is in progress on multiple features including dynamic loading of UDF's,
+  resource management with YARN, enhanced security, improved use of
+  statistics, and performance of reading parquet files. A large part of these
+  are being done by new contributors.
+
+## Health report:
+
+- We are continuing to add new users at a steady pace with a healthy number
+  of emails being posted by new users.
+- The developer community has seen a small growth in the number of people
+  providing new contributions both in code and in the discussions. As indicated
+  above, we hope to see larger contributions from some of the new contributors.
+
+## PMC changes:
+
+ - Currently 17 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Hanifi Gunes on Thu Feb 11 2016
+
+## Committer base changes:
+
+ - Currently 28 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Hsuan-Yi Chu at Thu Apr 07 2016
+
+## Releases:
+
+ - 1.7.0 was released on Mon Jun 27 2016</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#attachment-V">2016-05-18</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- A distributed SQL MPP for Hadoop and NoSQL
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+- Since the last board report, Drill has released versions 1.5 and 1.6.
+- These releases saw a continued focus on stability, reliability and
+  performance.
+- There have been good discussions on the mailing list around items including
+  backwards compatibility, performance improvements and technical debt.
+- There has been good initial discussions around key development foci for
+  Drill 2.0.
+- We've seen a nice uptick in discussions about implementing new workload
+  management capabilities. A nice attribute of this is combined discussion
+  that includes both long-time and newer contributors.
+
+
+## Health report:
+- New user engagement and adoption is on the rise. We've seen new
+  interactions from a large number of different users across a wide range of
+  use cases.
+- The developer community has seen a small growth in the number of people
+  providing new code contributions.
+- The community continues to find new ways to make development and code
+  contribution easier. Recently a powerful new unit testing framework should
+  allow easier development of unit tests for new contributors.
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- Hanifi Gunes was added to the PMC on Thu Feb 11 2016
+
+## Committer base changes:
+
+- Currently 28 committers.
+- Hsuan-Yi Chu was added as a committer on Thu Apr 07 2016
+
+## Releases:
+
+- 1.5.0 was released on Tue Feb 16 2016
+- 1.6.0 was released on Wed Mar 16 2016
+
+## JIRA activity:
+
+- 275 JIRA tickets created in the last 3 months
+- 122 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-02-17"><a href="2016/board_minutes_2016_02_17.html#attachment-R">2016-02-17</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2016-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- A distributed SQL MPP for Hadoop and NoSQL
+
+## Issues:
+- there are no issues requiring board attention at this time
+
+## Activity:
+- The Drill community has released 1.3, 1.4 since the last board report. The
+community vote is also underway for the 1.5 release at the time of this
+writing.
+- Drill has added a number of powerful capabilities around partition
+optimizations
+- Work is underway to leverage secondary indexes for improving query
+performance
+- New connectors have been contributed to work with JDBC sources and image
+metadata formats
+- Substantial refactoring of the memory allocation and accounting layer was
+completed.
+- Web and REST security features were added.
+- The Drill development community is also working with the newly formed Arrow
+community.
+
+
+## Health report:
+- Drill is in a strong phase of user and developer growth. Daily we see new
+interested community members providing patches, test and documentation
+feedback and general project engagement.
+- A number of people are working on specific JIRAs to help improve code
+approachability, testing and documentation.
+- Two new PMC members have driven there first release, helping to broaden the
+responsibility of release management.
+- Weekly Google hangouts are well attended and continue to help welcome new
+members in a personal way. Decisions continue to happen on list with any
+discussions from hangouts reported to the list.
+
+## PMC changes:
+
+- Currently 17 PMC members.
+- Hanifi Gunes was added to the PMC on Friday Feb 12 2016
+
+## Committer base changes:
+
+- Currently 27 committers.
+- New commmitters:
+   - Ellen Friedman was added as a committer on Sun Nov 22 2015
+   - Kris Hahn was added as a committer on Fri Dec 04 2015
+
+## Releases:
+
+- 1.4.0 was released on Sat Dec 14 2015
+- 1.3.0 was released on Sat Nov 21 2015
+
+## Mailing list activity:
+
+- dev@drill.apache.org:
+   - 412 subscribers (up 6 in the last 3 months):
+   - 1960 emails sent to list (2576 in previous quarter)
+
+- issues@drill.apache.org:
+   - 19 subscribers (up 2 in the last 3 months):
+   - 2873 emails sent to list (4068 in previous quarter)
+
+- user@drill.apache.org:
+   - 511 subscribers (up 25 in the last 3 months):
+   - 979 emails sent to list (1006 in previous quarter)
+
+
+## JIRA activity:
+
+- 310 JIRA tickets created in the last 3 months
+- 156 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-11-18"><a href="2015/board_minutes_2015_11_18.html#attachment-Q">2015-11-18</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2015-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   A distributed SQL MPP for Hadoop and NoSQL
+
+## Issues:
+ - Not at this time.
+
+## Activity:
+ - The Drill development community has decided to move back to ~monthly
+   releases after having a long gap between the 1.1 and 1.2 releases.
+ - A lot of work is currently focused on continued stabilization of the
+   codebase as we see larger and more complex user deployments.
+ - The community released 1.2 in October and is in the process of releasing 1.3.
+ - Some recent new features like access to JDBC sources have drawn in new users.
+ - The community is working on a new ValueVector initiative that will broaden
+   collaboration on a piece of the Drill codebase. This should help increase
+   cross-pollination between the Drill community and other Apache projects.
+ - Some recent committers have shown great Apache mentality so it seems likely
+   we will add new PMC members shortly. (something that we haven't done since
+   we graduated)
+ - The community is actively voting on adding a couple new committers whose
+   primary contributions are doc and social media related rather than code
+   development.
+ - We've added two new committers in the last quarter.
+
+
+## Health report:
+ - The community members get along well and are productive.
+ - We continue to see nice growth in the user community.
+ - New developer contributions have been less frequent that we would like to
+   see.
+ - Some new developers have found it hard to get started. As such, we continue
+   to try to make efforts to ease the effort required around becoming a casual
+   contributor. This includes:
+   - trying to speed up the unit test suite
+   - reducing the memory requirements for the unit test suite
+   - switching to a pull request contribution model as opposed to a
+     reviewboard/patch model
+   - improving developer documentation
+   - exploring options for how to ease effort executing the extended test suite
+   - marking Newbie tasks on JIRA
+
+
+## PMC changes:
+
+ - Currently 16 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Parth Chandra on Tue Nov 18 2014
+
+## Committer base changes:
+
+ - Currently 25 committers.
+ - New commmitters:
+    - Sudheesh Katkam was added as a committer on Tue Nov 03 2015
+    - Abdel Hakim Deneche was added as a committer on Mon Aug 31 2015
+    - Three votes are new committers
+
+## Releases:
+
+ - 1.2.0 was released on Fri Oct 16 2015
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 406 subscribers (up 3 in the last 3 months):
+    - 2865 emails sent to list (2112 in previous quarter)
+
+ - user@drill.apache.org:
+    - 486 subscribers (up 43 in the last 3 months):
+    - 1113 emails sent to list (1020 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 17 subscribers (down -1 in the last 3 months):
+    - 4375 emails sent to list (4667 in previous quarter)
+
+
+## JIRA activity:
+
+ - 440 JIRA tickets created in the last 3 months
+ - 256 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-10-21"><a href="2015/board_minutes_2015_10_21.html#attachment-O">2015-10-21</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2015-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   A distributed SQL MPP for Hadoop and NoSQL
+
+## Activity:
+ - Drill adoption has seen strong increases in the last few months. This is
+   expected as Drill is now something useful to end users (as opposed to being
+   mostly in development).
+ - There have been a number of community events that have been helpful in
+   continuing to drive adoption and awareness of the project. This includes
+   countless meetups, talks and tutorials at a number of major conferences (such
+   as NoSQL Now &amp; Strata/Hadoop World NYC).
+ - The community has been primarily focused on addressing user issues for the
+   last few months. Activity continues to increase on the user list post the
+   1.0 release of Drill.
+ - Code contributors are starting to appear more frequently. These new
+   contributions are most often focused on extending Drill (such as storage
+   plugins, format plugins and udfs)
+ - A key corporate contributor has created a new extended test suite for
+   Drill. This will likely be considered for incorporation into the Drill
+   codebase to provide additional support for product quality goals.
+
+## Health report:
+ - Drill's community diversity is increasing as we see a broadening of
+   companies sponsoring engineers to work on Drill. This is due to both new
+   contributors and existing contributors moving to new companies.
+ - New contributors are arriving but we need to continue to ease their
+   experience.
+   - New contributors currently struggle with a lack of code documentation.
+     The community is working on improving this to ease the newbie experience.
+   - New (and existing) contributors find Drill's precommit testing
+     requirement to be burdensome as the tests typically take 30-40 minutes to
+     complete. As such the community is looking at ways to speed this up.
+
+## Issues:
+ - There are currently no issues that require board attention.
+
+## PMC changes:
+
+ - Currently 16 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Parth Chandra at Tue Nov 18 2014
+
+## LDAP changes:
+
+ - Currently 24 committers and 16 committee group members.
+ - No new committee group members added in the last 3 months
+ - Abdel Hakim Deneche was added as a committer on Mon Aug 31 2015
+
+## Releases:
+
+ - Last release was 1.1.0 on Sun Jul 05 2015
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 408 subscribers (up 11 in the last 3 months):
+    - 2155 emails sent to list (2859 in previous quarter)
+
+ - user@drill.apache.org:
+    - 467 subscribers (up 45 in the last 3 months):
+    - 1033 emails sent to list (855 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 18 subscribers (up 0 in the last 3 months):
+    - 3755 emails sent to list (7519 in previous quarter)
+
+
+## JIRA activity:
+
+ - 431 JIRA tickets created in the last 3 months
+ - 229 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-09-16"><a href="2015/board_minutes_2015_09_16.html#section-6S">2015-09-16</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2015-09-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2015-08-19"><a href="2015/board_minutes_2015_08_19.html#section-6R">2015-08-19</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2015-08-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2015-05-20"><a href="2015/board_minutes_2015_05_20.html#attachment-V">2015-05-20</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2015-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   A distributed SQL MPP for Hadoop and NoSQL
+
+## Activity:
+ - The community is very active, driving towards a 1.0 release.  The last two
+   releases have driven additional engagement on the user mailing list.  While
+   we've had some development interest from beyond the core community, there
+   is a hope among the PMC that having a 1.0 release will provide an easier
+   foundation upon which new contributors can engage in the project.
+
+## Issues:
+ - there are no issues requiring board attention at this time
+
+## PMC/Committership changes:
+
+ - Currently 23 committers and 16 PMC members in the project.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Venki Korukanti at Wed Nov 26 2014
+ - Hanifi Gunes was added as a committer on Thu Apr 16 2015
+
+## Releases:
+
+ - 0.9.0 was released on Sun May 03 2015
+ - 0.8.0 was released on Mon Mar 30 2015
+
+## Mailing list activity:
+
+ - dev@drill.apache.org:
+    - 394 subscribers (down -5 in the last 3 months):
+    - 2899 emails sent to list (1313 in previous quarter)
+
+ - user@drill.apache.org:
+    - 403 subscribers (up 28 in the last 3 months):
+    - 628 emails sent to list (662 in previous quarter)
+
+ - issues@drill.apache.org:
+    - 19 subscribers (up 1 in the last 3 months):
+    - 7790 emails sent to list (3764 in previous quarter)
+
+
+## JIRA activity:
+
+ - 841 JIRA tickets created in the last 3 months
+ - 602 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-02-18"><a href="2015/board_minutes_2015_02_18.html#attachment-Y">2015-02-18</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2015-02-18" title="Permalink">&para;</a></h3>
+<pre>Description:
+Apache Drill is a distributed query layer that supports querying JSON, NoSQL
+and Hadoop using SQL.
+
+Current Activity:
+There is lots of activity around Drill.  JIRA issues continue to be opened and
+closed at a rapid rate.  Regular Google Hangouts also bring the community
+closer together to better discuss questions and welcome new contributors to
+the community.  Community is working towards the release of Drill 0.8.
+
+
+Releases:
+* No new releases since last report.
+* The 0.7 release of Drill was released on 12/23/2014.
+
+Community:
+* 530 emails on the dev mailing list in January
+* 402 subscribers to dev mailing list
+* 219 emails on the user mailing list in January
+* 374 subscribers to user mailing list
+* 1624 emails to issues list reflecting substantial activity on JIRA and
+  commits.
+
+* The PMC has 16 members
+* Newest committer: Bridget Bevens (2/2/2015)
+* Newest PMC: None added since graduation
+
+Issues:
+* There are no issues requiring board attention at this time.</pre>
+<h3 id="2015-01-21"><a href="2015/board_minutes_2015_01_21.html#attachment-V">2015-01-21</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2015-01-21" title="Permalink">&para;</a></h3>
+<pre>Description: Apache Drill is a distributed query layer that supports querying
+JSON, NoSQL and Hadoop using SQL.
+
+Current Activity: Drill continues to see positive energy and discussion on the
+mailing lists.  One of the great things we are now seeing is a broader set of
+users answering new user queries on the mailing list.  This is a positive sign
+towards further diversification and health of the community. The website also
+has moved to be being based on Jekyll and markdown, which has reduced the
+burden for update and thus increased the number of updates and freshness of
+the content.
+
+Releases:
+* The 0.7 release of Drill was released on 12/23/2014.  This was Drill's first
+TLP release and included more than 230 closed JIRAs.
+
+Community:
+* 334 emails on the dev mailing list in December
+* 177 emails on the user mailing list in December
+* The PMC has 16 members
+* No new committers or PMC members added since graduation
+
+Issues:
+* There are no issues requiring board attention at this time.</pre>
+<h3 id="2014-12-17"><a href="2014/board_minutes_2014_12_17.html#attachment-V">2014-12-17</a> &mdash; Jacques Nadeau<a class="headerlink" href="#2014-12-17" title="Permalink">&para;</a></h3>
+<pre>Description:
+Apache Drill is a distributed query layer that supports querying JSON, NoSQL
+and Hadoop using SQL.
+
+Current Activity:
+Drill graduated to a TLP at the last board meeting.  Since then, Drill has
+migrated mailing lists, the website and the git repository to top-level
+resources. Traffic is good on the user and dev mailing lists within many new
+user and contributor engagements.
+
+Releases:
+* The 0.6 release of Drill was on 10/26/2014
+* The 0.7 release is targeted for a release vote in the next couple weeks.
+  This will be the first release as a top-level project.
+
+Community:
+* 335 emails on the dev mailing list in November
+* 204 emails on the user mailing list in November
+* The PMC has 16 members
+* No new committers or PMC members added since graduation
+
+Issues:
+* There are no issues requiring board attention at this time.</pre>
+<h3 id="2014-09-17"><a href="2014/board_minutes_2014_09_17.html#drill">2014-09-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-09-17" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Drill is a distributed system for interactive analysis of
+large-scale datasets that is based on Google's Dremel. Its goal is to
+efficiently process nested data, scale to 10,000 servers or more and to be
+able to process petabyes of data and trillions of records in seconds.
+
+Drill has been incubating since 2012-08-11.
+
+In the previous reports, the following were listed as goals before
+graduation
+
+1. Complete the feature set
+2. Continue to attract new developers/contributors with a variety of
+   skills and viewpoints
+3. Continue the outreach activities to build the early user community for
+   the technology
+
+These have been achieved and the podling has made several releases with no
+more than minor issues that were related to changing requirements for
+notices in incubator projects. The next release (0.5) is currently being
+voted on.  Subsequent to that, the podling is likely to vote to request the
+board to graduate Drill to TLP status.
+
+Issues to Call to Attention of PMC or ASF Board:
+
+None
+
+How community has developed since last report:
+
+Community awareness and outreach were strengthened in multiple forums as
+below
+
+8/7/14  Big Data Analytics Melbourne         MC Srivas
+8/13/14 Chicago HUG        Chicago           Jim Scott
+8/20/14 Pittsburgh HUG     Pittsburgh        Andy Pernsteiner
+8/21/14 Heartland Big Data Omaha, NE         Neeraja Rentachintala
+8/26/14 Data Mining        San Francisco, CA Tomer Shiran
+
+Mailing list discussions:
+
+Activity summary for the user mailing list:
+
+  http://mail-archives.apache.org/mod_mbox/incubator-drill-user/
+
+  * June 2014: 79
+  * July 2014, 12
+  * August 2014, 63
+
+Activity summary for the dev mailing list:
+
+  http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+
+  * June 2014, 374
+  * July 2014, 294
+  * August 2014, 247
+
+For details of code commits, see
+https://github.com/apache/incubator-drill/graphs/commit-activity (about
+400 commits in the past 3 months)
+
+31 contributors have participated in GitHUB code activity; there have
+been 152 forks.
+
+Community Interactions
+
+Monthly Drill hangout continues, conducted remotely through Google
+hangouts Tuesday mornings 10am Pacific Time to keep core developers in
+contact in realtime despite geographical separation.
+
+Community stays in touch through @ApacheDrill Twitter ID, and by postings
+on various blogs including Apache Drill User http://drill-user.org/ which
+has had several updates and through international presentations at
+conferences.
+
+Articles
+
+Examples of articles or reports on Apache Drill since last report
+include:
+
+* Self Service Data Exploration is Here by Neeraja Rentachintala
+
+Social Networking
+
+@ApacheDrill Twitter entity is active and has grown substantially by 20%,
+to 1057 followers.
+
+How project has developed since last report
+
+Web-site clean slate revamp
+
+Significant progress has been made in performance and stability
+
+New functionality has been added to the product including reading and
+writing complex types in Parquet, as well as using hadoop 2 API for
+Parquet
+
+Nearly ~450 bugs filed and ~550 bugs resolved
+
+New docs have been published on Drill wiki ( Develop Custom Functions,
+Querying HBase Tables, Querying Complex Data)
+
+Started monthly releases. 0.4 release at end of July.
+Announcement: http://s.apache.org/t0a
+
+0.5 release currently up for vote.
+
+Signed-off-by:
+
+[x](drill) Ted Dunning
+[x](drill) Grant Ingersoll
+[ ](drill) Isabel Drost-Fromm
+[X](drill) Sebastian Schelter</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#drill">2014-06-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Drill is a distributed system for interactive analysis of large-scale
+datasets that is based on Google's Dremel. Its goal is to efficiently
+process nested data, scale to 10,000 servers or more and to be able to
+process petabyes of data and trillions of records in seconds.
+
+Drill has been incubating since 2012-08-11.
+
+Three Issues to Address in Move to Graduation:
+
+  1. Complete the 1.0 feature set (team targets next release and graduation
+     in the month of July)
+  2. Continue to attract new developers/contributors with a variety of
+     skills and viewpoints
+  3. Continue the outreach activities to build the early user community for
+     the technology
+
+Issues to Call to Attention of PMC or ASF Board:
+
+  None
+
+How community has developed since last report:
+
+  Community awareness and outreach were strengthened in multiple forums as
+  below
+
+  * First Apache Drill Hackathon was organized on 4/24. Over 40 participants
+    including members from Visa, Linkedin, Cisco, Hortonworks worked to
+    harden/enhance Drill project. Several new features have been added to
+    Drill product Array reference functions, enhanced Optiq support, Kafka
+    storage plugin, robust testing framework etc
+
+  * Hive big data think tank meet up on 5/14- Talk by MC Srivas, with ~200
+    member participation
+  * Open Source Cloud meet up on 4/23 - Talk by Keys Botzum
+  * Apache Conference session on 4/8 - Talk by Neeraja Rentachintala, with
+    ~100 members participation
+
+  Apache Drill is also showcased at the Hadoop Summit 6/3-6/5
+
+  Mailing list discussions:
+
+  Activity summary for the user mailing list:
+
+    http://mail-archives.apache.org/mod_mbox/incubator-drill-user/
+
+    * June to date 6/10: 28
+    * May 2014, 82
+    * March 2013, 15
+
+  Activity summary for the dev mailing list:
+
+    http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+
+    * June to date 6/10: 87 (jira focussed discussions were removed from
+      this thread recently)
+    * May 2014, 1183(jira, focused discussions)
+    * April 2014, 772 (jira; focused discussions)
+
+  For details of code commits, see
+  https://github.com/apache/incubator-drill/graphs/commit-activity (about
+  300 commits in the past 3 months)
+
+  26 contributors have participated in GitHUB code activity; there have been
+  142 forks.
+
+  Community Interactions
+
+  Weekly Drill hangout continues, conducted remotely through Google hangouts
+  Tuesday mornings 10am Pacific Time to keep core developers in contact in
+  realtime despite geographical separation.
+
+  Community stays in touch through @ApacheDrill Twitter ID, and by postings
+  on various blogs including Apache Drill User http://drill-user.org/ which
+  has had several updates and through international presentations at
+  conferences.
+
+  Articles
+
+  Examples of articles or reports on Apache Drill since last report include:
+
+  * Drill Hackathon summary blog post by Jacques Nadeau
+  * Drill milestone roadmap blog post by Neeraja Rentachintala
+  * Drill code samples by Nitin Bandugula
+
+  Social Networking
+
+  @ApacheDrill Twitter entity is active and has grown substantially by 19%,
+  to 887 followers.
+
+How project has developed since last report
+
+  Significant progress is being made on the performance and distributed
+  optimization
+
+  C++ client API and ODBC driver leveraging the C++ API was built for Drill
+  by a group led by George Chow in Vancouver. The initial drops for the
+  driver are available
+
+  New functionality has been added to the product namely distributed
+  optimization, join order optimization, Table/view creation, repeated map
+  support, HBase support, expanded SQL support, Text readers, new data types
+  and functions, Session options for query tuning and lot more
+
+  Nearly ~500 bugs files and ~400 bugs resolved
+
+  Significant progress on running ANSI standard queries such as TPC-H
+
+  Significant code drops have been checked in from a number of contributors
+  and committers
+
+  New docs have been published on Drill wiki (Apache Drill in 10 mins,
+  Working with various data sources and Installing and Running Apache Drill
+  on a cluster)
+
+  Work toward a Beta milestone is progressing substantially.
+
+Signed-off-by:
+
+  [x](drill) Ted Dunning
+  [x](drill) Grant Ingersoll
+  [ ](drill) Isabel Drost-Fromm
+  [x](drill) Sebastian Schelter
+
+Shepherd/Mentor notes:
+
+  Konstantin Boudnik (cos):
+
+    Project's dev@ list is very active both with the JIRA traffic and
+    otherwise.  June report to the board hasn't been sent on time.</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#apache:projectdrill">2014-03-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Drill is a distributed system for interactive analysis of large-scale
+datasets that is based on Google's Dremel. Its goal is to efficiently
+process nested data, scale to 10,000 servers or more and to be able to
+process petabyes of data and trillions of records in seconds.
+
+Drill has been incubating since 2012-08-11.
+
+Three Issues to Address in Move to Graduation:
+
+1. Continue to attract new developers and and early users with a variety
+   of skills and viewpoints
+2. Continue to develop deeper community skills and knowledge by building
+   additional releases
+3. Demonstrate community robustness by rotating project tasks among
+   multiple project members
+
+Issues to Call to Attention of PMC or ASF Board:
+
+None
+
+How community has developed since last report:
+
+Community awareness and participation were strengthened through a meeting
+of the Bay Area Apache Drill User Group in San Jose sponsored by Yahoo!
+This event expanded participation to include many new to Drill and
+particularly those interested as potential users (analysts rather than
+developers).
+
+Speakers included Drill project mentor Ted Dunning from MapR, Data
+Scientist Will Ford from Alpine Data Labs, new Drill committer Julian Hyde
+from HortonWorks and Aman Sinha, MapR Drill engineer.
+
+Additional events include:
+
+&bull; Two new Drill committers accepted appointment: Julian Hyde (HortonWorks)
+  and Tim Chen (Microsoft).
+&bull; Drill has a new project mentor, Sebastian Schelter.
+
+Mailing list discussions:
+
+Subscriptions to the Drill mailing lists have risen to 399 on dev list and
+308 on the user list and 508 uniques across both lists.  There has been
+active and increasing participation in discussions on the developer
+mailing list, including new participants and developers. Participation on
+the user list is growing although still small; mainly activity takes place
+on developer mailing list.
+
+Activity summary for the user mailing list:
+
+http://mail-archives.apache.org/mod_mbox/incubator-drill-user/
+
+  February to date 02/26/2014: 25
+  January 2014, 12
+  December 2013, 62
+
+Topics in discussion on the user mailing list included but not limited to:
+
+&bull; Feb 2014: Connecting Drill to HBase, Support for Distinct/Count
+&bull; Jan 2014: Loading Data into Drill, Data Locality
+&bull; December 2013: Loading Data into Drill, Setting Drill with HDFS and
+  other Storage engines
+
+Activity summary for the dev mailing list:
+
+  http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+  February to date 02/26/2014: 250 (jira; discussion; review requests)
+  January 2014, 156 (jira; focused discussions)
+  December 2013, 51 (jira; focused discussions)
+
+Topics in discussion on the dev mailing list included but not limited to:
+
+&bull; February to date 02/26/2014: How to contribute to Drill; review requests
+  for Drill 357, 346, 366, 364; status of Drill functions including Hash
+  functions; support operators +,- for date and interval arithmetic
+&bull; January: Sql Options discussions, Casting discussions, Multiplex Data
+  Channel feedbacks
+&bull; December: Guide for new comers contribution, Aggregate functions code
+  gen feedback Code
+
+For details of code commits, see http://bit.ly/14YPXN9
+There has been continued activity in code commits
+
+19 contributors have participated in GitHUB code activity; there have been
+116 forks.
+
+February code commits include but not limited to: Support for
+Information_schema, Hive storage and metastore integration, Optiq JDBC
+thinning and refactoring, Math functions rework to use codegen, Column
+pruning for Parquet/Json, Moving Sql parsing into Drillbit server side,
+TravisCI setup
+
+January code commits include but not limited to: Implicit and explicit
+casting support, Broadcast Sender exchange, add TPC-H test queries,
+Refactor memory allocation to use hierarchical memory allocation and
+freeing.
+
+Community Interactions
+
+Weekly Drill hangout continues, conducted remotely through Google hangouts
+Tuesday mornings 9am Pacific Time to keep core developers in contact in
+realtime despite geographical separation.
+
+Community stays in touch through @ApacheDrill Twitter ID, and by postings
+on various blogs including Apache Drill User http://drill-user.org/ which
+has had several updates and through international presentations at
+conferences.
+
+Viability of community is also apparent through active participation in
+the Bay Area Apache Drill User group meeting in early November, which has
+grown to 440 members.
+
+Sample presentations:
+
+&bull; &ldquo;How to Use Drill&rdquo; by Ted Dunning and Will Ford, Bay Area Apache Drill
+  Meet-up 24 February
+&bull; &ldquo;How Drill Addresses Dynamic Typing&rdquo; by Julian Hyde, Bay Area Apache
+   Drill Meet-up 24 February
+&bull; &ldquo;New Features and Infrastructure Improvements&rdquo; by Aman Sinha, Bay Area
+   Apache Drill Meet-up 24 February
+
+Articles
+
+Examples of articles or reports on Apache Drill since last report include:
+
+&bull; Drill blog post by Ellen Friedman at Apache Drill User updating
+  community on how people will use Drill and inviting comments/ questions
+  from remote participants as part of the Drill User Group
+  http://bit.ly/1p1Qvgn
+&bull; Drill blog post by Ellen Friedman at Apache Drill User reports on
+  appointment of new Drill committers and new mentor http://bit.ly/JIcwQe
+
+Social Networking
+
+@ApacheDrill Twitter entity is active and has grown substantially by 19%,
+to 744 followers.
+
+How project has developed since last report:
+
+1. Significant progress is being made on execution engine and sql front
+   end to support more functionality, also more integrations with storage
+   engines.
+2. Work on ODBC driver has begun with a new group led by George Chow in
+   Vancouver.
+3. Significant code drops have been checked in from a number of
+   contributors and committers
+4. Work toward 2nd milestone is progressing substantially.
+
+Signed-off-by:
+
+[x](drill) Ted Dunning
+[x](drill) Grant Ingersoll
+[x](drill) Isabel Drost-Fromm
+[x](drill) Sebastian Schelter
+
+Shepherd/Mentor notes:
+
+Isabel Drost-Fromm (isabel):
+
+  For the next report, please include information on date of last
+  release and when last committer/PMC member was elected.</pre>
+<h3 id="2013-12-18"><a href="2013/board_minutes_2013_12_18.html#apache:projectdrill">2013-12-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-12-18" title="Permalink">&para;</a></h3>
+<pre>Apache Drill is a distributed system for interactive analysis of large-scale
+datasets that is based on Google's Dremel. Its goal is to efficiently process
+nested data, scale to 10,000 servers or more and to be able to process
+petabyes of data and trillions of records in seconds.
+
+Drill has been incubating since 2012-08-11.
+
+Three Issues to Address in Move to Graduation:
+
+  1. Continue to attract new developers and and early users with a variety of
+     skills and viewpoints
+  2. Continue to develop deeper community skills and knowledge by building
+     additional releases
+  3. Demonstrate community robustness by rotating project tasks among
+     multiple project members.
+
+  The community has made significant progress on items 1 and 2.
+
+Issues to Call to Attention of PMC or ASF Board:
+
+  none
+
+How community has developed since last report:
+
+  Community awareness and participation were strengthened through a meeting
+  of the Bay Area Apache Drill User Group with over 100 participants locally
+  in San Jose and remotely via Cisco-hosted Webex. On site speakers included
+  3 Drill contributors, two from San Jose and one from Seattle
+  http://www.meetup.com/Bay-Area-Apache-Drill-User-Group/
+
+  Additional events include:
+
+    * Code for 1st milestone release was posted and made available via
+      project website; release was socialized via mailing list, Twitter,
+      blogs and presentations
+    * Several new full-time developers joined the project
+    * Apache Drill received a Bossie award "Best open source big data tools"
+      17 September 2013 http://s.apache.org/B3H (infoworld.com)
+
+  Mailing list discussions:
+
+    Subscriptions to the Drill mailing lists have risen to 415. There has
+    been active and increasing participation in discussions on the developer
+    mailing list, including new participants and developers. Participation
+    on the user list is growing although still small; mainly activity takes
+    place on developer mailing list.
+
+  Activity summary for the user mailing list:
+
+    http://mail-archives.apache.org/mod_mbox/incubator-drill-user/
+    December to date 12/5/2013: 14
+    November 2013, 28
+    October 2013, 37
+    September 2013, 13
+
+  Topics in discussion on the user mailing list included but not limited to:
+
+    How to load data into Drill; use of distributed mode; direction to study
+    the src
+
+  Activity summary for the dev mailing list:
+
+    http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+
+    * December to date 12/6/2013: 35 (mainly jira; some discussion)
+    * November 2013, 347  (jira, focused discussions)
+    * October 2013, 299  (jira; focused discussions)
+    * September 2013, 659 (jira, focused discussions)
+
+  Recent topics on the dev mailing list have included:
+
+    * Buffer allocation of cast into var length type.
+    * Improve Parquet read  performance.
+    * Schema discovery tool for scanning raw files and generating optiq schema.
+    * Discussions on CAST functionality.
+    * sqlline connect to Remote Drill
+    * Limit operator end-to-end
+    * many focused discussions about 1st milestone release
+
+  Code
+
+    Total Commits from 01/09/2013 - 06/012/2013: 106
+
+    Detailed information regarding the commits is shown in this chart from
+    GitHub: http://s.apache.org/MnI (github.com)
+
+    Nine contributors have participated in this GitHub code activity; there
+    have been 101 forks of the Apache Drill project on GitHub which is a
+    good indicator of strong interest outside the group of core
+    contributors.
+
+    Code commits (during the period 01/09/2013 - 06/012/2013) include but
+    not limited to following:
+
+    * Spooling batch buffer
+    * Fix over memory pre-allocation within ParquetRecordReader.
+    * Implement simple metrics framework
+    * prepare release drill-1.0.0-m1.
+    * Implement builders for Scan, Sort, LogicalPlan and PlanProp.
+
+  Community Interactions
+
+    The weekly Drill hangout continues, conducted remotely through Google
+    hangouts Tuesday mornings 9am Pacific Time to keep core developers in
+    contact in realtime despite geographical separation. A Gdoc is being
+    updated regarding the discussions during hangout.
+    http://s.apache.org/4Gc (docs.google.com)
+
+    The community stays in touch through @ApacheDrill Twitter ID, and by
+    postings on various blogs including Apache Drill User
+    http://drill-user.org/ which has had several updates and through
+    international presentations at conferences.
+
+    Viability of the community is also apparent as participants in the open
+    source Apache Drill community came together on November 4th meet-up of
+    the Bay Area Apache Drill User Group, with 391 members enrolled. The
+    group looked at how Drill works now and what will be the next steps in
+    the project. The event marked the recent first official release of the
+    Apache Drill project.
+
+  Presentations
+
+    * A talk on Apache Drill by Michael Hausenblas is scheduled on Tue 10
+      Dec "Query engine for heterogenous large scale datasets" at Decemberi
+      Big Data Meetup in Budapest
+      http://www.meetup.com/Big-Data-Meetup-Budapest/events/138089032/
+    * WebEx of talks by Jacques Nadeau, Tim Chen and Steven Phillips at Bay
+      Area Drill User Group; play video:
+      http://s.apache.org/eN (cisco.webex.com)
+    * Drill talk by Michael Hausenblas at JAX London "Large-scale,
+      interactive ad-hoc queries over different data stores with Apache
+      Drill" including demo, 29 October 2013
+    * Podcast by Jacques Nadeau at All Things Hadoop, episode 17: "Using
+      Apache Drill for Large Scale, Interactive, Real-Time Analytic Queries"
+      http://s.apache.org/8ZM (allthingshadoop.com)
+    * Drill talk by Michael Hausenblas at the Stockholm HUG "Interactive
+      analytics for large-scale data-sets"
+      https://speakerdeck.com/mhausenblas/hug-stockholm-apache-drill
+
+  Sample Articles/presentations (out of many):
+
+    * How to use Apache Drill (inc distributed mode) Detailed description is
+      available via Drill Github sandbox.
+      https://github.com/mhausenblas/apache-drill-sandbox/tree/master/M1
+    * Interactive analytics: large scale data-set
+      https://speakerdeck.com/mhausenblas/hug-stockholm-apache-drill
+    * Lifetime of a Query in Drill by Timothy Chen, includes link to his
+      slides.  http://s.apache.org/INZ (tnachen.wordpress.com)
+    * Drill blog post by Ellen Friedman at Apache Drill User reports on
+      meet-up of the Bay Area Apache Drill User Group
+      http://s.apache.org/a8r (drill-user.org)
+    * Drill article posted by Ted Dunning on MapR Technologies blog site 8
+      November 2013: "Apache Drill Achieves 1st Milestone Release"
+      http://www.mapr.com/blog?s=Apache+Drill
+    * Blog post by Yash Sharma on "How to Contribute to Apache Drill:
+      Implementing Drill Math Functions"
+      http://s.apache.org/od (confusedcoders.com)
+
+  Social Networking
+
+    @ApacheDrill Twitter entity is active and has grown by ~44%, to 632
+    followers.
+
+How project has developed since last report:
+
+  1. Approval of first release of Apache Drill - M1 achieved; code posted
+     via project website
+  2. Query now works in distributed mode
+  3. Significant code drops have been checked in from a number of developers
+     to achieve Milestone 2 release.
+  4. New developers are contributing.
+
+Signed-off-by:
+
+  [x](drill) Ted Dunning
+  [x](drill) Grant Ingersoll
+  [x](drill) Sebastian Schelter
+
+Shepherd notes:
+
+  Matt Franklin (mfranklin):
+
+    I have reviewed the community and have concluded that it is very active and
+    healthy.  IMO, #3 in the issues to address before graduation is not critical
+    and can be successfully mitigated by documenting the tasks that are currently
+    being executed by single individuals.  My recommendation is that the Drill
+    podling begin the graduation process after completion of the next release.
+
+  Marvin Humphrey (marvin):
+
+    The report is admirably thorough and must have taken a long time to
+    prepare.  Perhaps consider that a report with a reduced level of detail
+    similar to the other reports may be more in line with Board
+    expectations.
+
+    The report was filed too late to be incorporated into a review by the
+    assigned shepherd.  Please file on time.
+
+    Please wrap future reports at 77 columns, and please take more care with
+    making indentation reflect logical hierarchy.  Also, use only
+    s.apache.org URL shorteners in future reports.  Otherwise, someone
+    downstream must clean up the report -- either someone from the IPMC (I
+    took care of reformatting this month) or the Board -- before it is
+    published in the official Board minutes.</pre>
+<h3 id="2013-09-18"><a href="2013/board_minutes_2013_09_18.html#apache:projectdrill">2013-09-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-09-18" title="Permalink">&para;</a></h3>
+<pre>Apache Drill is a distributed system for interactive analysis of large-scale
+datasets that is based on Google's Dremel. Its goal is to efficiently process
+nested data, scale to 10,000 servers or more and to be able to process
+petabyes of data and trillions of records in seconds.
+
+Drill has been incubating since 2012-08-11.
+
+Three Issues to Address in Move to Graduation:
+
+1. Continue to attract new developers and and early users with a variety of
+   skills and viewpoints
+2. Continue to develop deeper community skills and knowledge by building
+   additional releases
+3. Demonstrate community robustness by rotating project tasks among
+   multiple project members
+
+The community has made significant progress on items 1 and 2.
+
+Issues to Call to Attention of PMC or ASF Board:
+
+none
+
+How community has developed since last report:
+
+The most important activity is the run up to the Milestone 1 release.
+
+Additional events include:
+
+  * Apache Drill project website redesigned to have a new look:
+    http://incubator.apache.org/drill/
+
+  * Interactive "How to Run Drill" demo added to the Apache Drill wiki:
+    https://cwiki.apache.org/confluence/display/DRILL/Demo+HowTo
+
+Mailing list discussions:
+
+  Subscriptions to the Drill mailing lists have risen to 383. There has
+  been active and increasing participation in discussions on the developer
+  mailing list, including new participants and developers. Participation on
+  the user list is growing although still small; mainly activity takes
+  place on developer mailing list.
+
+Activity summary for the dev mailing list:
+
+  http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+
+  * September to date 05/010/2013: 397(mainly jira; some discussion)
+  * August 2013, 394  (jira, focused discussions)
+  * July 2013,370  (jira; focused discussions)
+  * June 2013,297 (jira, focused discussions)
+
+Recent topics on the dev mailing list have included:
+
+  * Usability and introductory tutorials
+  * SQL semantics and extensions to type inference cases
+  * Implementation of various storage engines, including Parquet and ORC.
+  * Optimizer rewrites and operator implementations.
+
+Code
+
+  For details of code commits, see http://bit.ly/14YPXN9
+
+  There has been a very significant ramp up of code commits during this
+  quarter, as shown in this chart from GitHub:
+
+  Ten contributors have participated in this GitHub code activity; there
+  have been 77 forks of the Apache Drill project on GitHub which is a good
+  indicator of strong interest outside the group of core contributors.
+
+  Recent code commits include but not limited to:
+
+    * full end-to-end execution of queries
+    * reorganization of the source tree to simplify initial user experience
+    * a number of new operators for the execution engine
+    * a pro tempore query optimizer that allows a physical plans to be
+      generated
+    * the entire code generation framework
+    * Value Vector implementation
+
+Community Interactions
+
+  The weekly Drill hangout continues, conducted remotely through Google
+  hangouts Tuesday mornings 9am Pacific Time to keep core developers in
+  contact in realtime despite geographical separation.
+
+  The community stays in touch through @ApacheDrill Twitter ID, and by
+  postings on various blogs including Apache Drill User
+  http://drill-user.org/
+
+  Viability of community is also apparent through interest in next meet-up
+  event for the Bay Area Apache Drill User group in late September, which
+  is already attracting a robust audience. Volunteers are coming forward
+  from audience members of presentations, such as the Drill workshop in
+  July (see following).
+
+Presentations
+
+  There have been presentations and a Drill workshop from community members
+  at conferences and meet-ups.
+
+  Several Drill contributors have other talks scheduled with different
+  meetups in the upcoming months.
+
+Sample presentations (out of many):
+
+  * Drill talks by @mhausenblas at Hive London and in Paris in June
+  * Talk on Apache Drill by @mhausenblas and @ted_dunning at Berlin
+    Buzzwords
+  * Apache Drill hands-on workshop by @ted_dunning and @intjesus at OSCON
+    in Portland, Oregon USA in July for ~40 participants.
+  * Apache Drill project featured by panelist @tshiran in Aug for the
+    "Hadoop + SQL" Hive Data Think Tank event in California Bay Area.
+  * Next meeting for the Bay Area Apache Drill User group is planned for
+    September with talk and demo by Steve Phillips
+
+Slides
+
+  Slides from Drill presentations posted online such as at slideshare get a
+  large number of views.
+
+  Example:
+
+    OSCON Apache Drill workshop posted 1 Aug 2013 by Ted Dunning and
+    Jacques Nadeau, 436 views.
+
+Articles
+
+  Examples of articles on Apache Drill since last report include:
+
+  * Article by @mhausenblas and @intjesus "Introduction to Apache Drill:
+    Interactive Ad-Hoc Query for Large-scale Datasets"  Michael Hausenblas
+    and Jacques Nadeau. Big Data. June 2013, 1(2): 100-104.
+    doi:10.1089/big.2013.0011. http://bit.ly/15101Y7
+  * A blog post by @Ellen_Friedman reports on that Drill-via-Amazon-Cloud
+    event and includes links to slides: http://bit.ly/18aS3Lk
+  * Drill  blog article by S. J. Vaughan-Nichols "Drilling into Big Data
+    with Apache Drill" in Aug:  http://bit.ly/1309MXA
+  * A blog posting on Drill by T. Shiran as a prelude to the Hadoop + SQL
+    event by Hive Data Think Tank can be found here: http://bit.ly/1cvxn5D
+
+Social Networking
+
+  @ApacheDrill Twitter entity is active and has grown by ~20%, to 437
+  followers.
+
+How project has developed since last report:
+
+1. Website homepage has a new design
+2. Wiki has been updated
+3. Significant code drops have been checked in from a number of developers
+4. Started to create release candidates for the milestone one [first]
+   release of Drill
+5. New developers are contributing.
+6. Additional non-code contributors have become active and are being
+   encouraged
+
+Signed-off-by:
+
+[ ](drill) Ted Dunning
+[X](drill) Grant Ingersoll
+[X](drill) Isabel Drost-Fromm</pre>
+<h3 id="2013-06-19"><a href="2013/board_minutes_2013_06_19.html#drill">2013-06-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-06-19" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Drill is a distributed system for interactive analysis of
+large-scale datasets that is based on Google's Dremel. Its goal is to
+efficiently process nested data, scale to 10,000 servers or more and
+to be able to process petabyes of data and trillions of records in
+seconds.
+
+Drill has been incubating since 2012-08-11.
+
+Three Issues to Address in Move to Graduation:
+
+1. Continue to attract new developers with a variety of skills and viewpoints
+2. Develop community skills and knowledge by building some releases
+3. Demonstrate community robustness by rotating project tasks among multiple
+   project members
+
+Issues to Call to Attention of PMC or ASF Board:
+
+none
+
+How community has developed since last report:
+
+Mailing list discussions:
+
+There has been active participation in discussions on the developer mailing
+list, including new participants and developers. A few have participated in
+the users list; mainly activity takes place on developer mailing list.
+
+Activity summary:
+
+http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+June to date 5 June, 29 (mainly jira; some discussion)
+May 2013, 135  (jira, focused discussions)
+April 2013, 188  (jira; focused discussions)
+March 2013 260 (jira, focused discussions)
+
+Topics in discussion on the dev mailing list included but not limited to:
+
+* Evolution of logical plan syntax with addition of operators including
+  the Value and Union Distinct operators
+
+* Advantages and disadvantages of Parquet versus ORC
+
+* ValueVector construct and requirements
+
+* The relative performance of Janino based compilation versus
+  javax.tools.Javacompiler
+
+* Initial development of execution engine environment
+
+* Discussion of various types of large array and off heap data structure
+  libraries
+
+* RPC protocol and framework
+
+
+Code
+
+For details of code commits, see http://bit.ly/14YPXN9 and http://bit.ly/19IyID1
+There has been great progress around both evolution of the reference interpreter and
+
+In the last three months, there have been many commits including:
+
+* Initial implementation of RPC framework
+
+* Base client and Zookeeper based client abstraction
+
+* SQL parser with JDBC driver
+
+* Distributed query scheduling framework
+
+* ValueVector implementations
+
+* Large number of reference interpreter tests and fixes
+
+
+Community Interactions
+
+There is now a weekly Drill hangout conducted remotely through Google
+hangouts Tuesday mornings 9am Pacific Time to keep core developers in
+contact in realtime despite geographical separation.  Results from
+these discussions are shared with the discussion list through meeting
+minutes and all are welcome to attend.  This has been helpful in
+speeding development and averages attendance of 8-10 developers each
+week.
+
+Presentations
+
+There have been presentations from community members at conferences, meet-ups
+and through the weekly Google hangout.
+
+* As you can see from http://drill-user.org/ there were few more
+  HUGs/BUGs where Drill was presented/discussed (in Europe) - the blog
+  itself might also be considered to manifest a contribution (?)
+
+* We have published an article on Drill in the Big Data journal
+  http://www.liebertpub.com/big
+
+Sample presentations:
+* Introduction to Apache Drill, Bay Area Analytics Group 2 April 2013 by
+  Tomer Shiran
+
+* Interactive Ad hoc query at scale: talk at Hadoop User Group UK by
+  @mhausenblas
+
+* Apache Drill Technical Overview: talk at Google Hangout, May 22 by
+  Jacques Nadeau available at http://slidesha.re/123mSDh
+
+* Drill Technical update @April 16 Hangout by Jacques Nadeau available at
+  http://slidesha.re/ZDBvWP
+
+* Drill Dissection at NoSQL matters (April) @mhausenblas video available
+  at http://bit.ly/13Ffk7b
+
+* All You Need to Know About Drill, talk during Big Data Week #bdw13 by
+  Michael Hausenblas on 26 April http://bit.ly/17L1rD
+
+* Deep Dive into Drill Implementation 3 June at Berlin Buzzwords by Ted
+  Dunning and Michael Hausenblas
+
+
+Slides
+
+Slides from Drill presentations posted online such as at slideshare get a
+large number and increasing number of views.
+
+Articles
+
+An invited interview with Ted Dunning in an O&rsquo;Reilly white paper by
+Mike Barlow titled &ldquo;Real Time Big Data Analytics: Emerging
+Architecture&rdquo; discussed Apache Drill; there have been a number of blog
+posts.
+
+Social Networking
+
+@ApacheDrill Twitter entity is active and has grown to 362 followers.
+
+How project has developed since last report:
+
+1. Wiki has been updated regularly
+2. Significant code drops have been checked in from a number of developers
+3. Significant design documents have been created and discussed
+4. Additional non-code contributors have become active and are being encouraged
+
+Please check this [ ] when you have filled in the report for Drill.
+
+Signed-off-by:
+Ted Dunning: [x](drill)
+Grant Ingersoll: [x](drill)
+Isabel Drost-Fromm: [x](drill)</pre>
+<h3 id="2013-03-20"><a href="2013/board_minutes_2013_03_20.html#apache:projectdrill">2013-03-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-03-20" title="Permalink">&para;</a></h3>
+<pre>Description:
+
+Apache Drill is a distributed system for interactive analysis of
+large-scale datasets that is based on Google's Dremel. Its goal is to
+efficiently process nested data, scale to 10,000 servers or more and to
+be able to process petabyes of data and trillions of records in seconds.
+
+Drill has been incubating since 2012-08-11.
+
+Three Issues to Address in Move to Graduation:
+
+1. Continue to attract new developers with a variety of skills and
+viewpoints
+2. Develop community skills and knowledge by building some releases
+3. Demonstrate community robustness by rotating project tasks among
+multiple project members
+
+Issues to Call to Attention of PMC or ASF Board:
+
+none
+
+How community has developed since last report:
+
+Mailing list discussions:
+
+There has been active participation in discussions on the developer
+mailing list, including new participants and developers. A few have
+participated in the users list; mainly activity takes place on developer
+mailing list.
+
+Activity summary:
+
+http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+March 2012, 21 by 6th of March (mainly jira; some discussion)
+February 2013, 227 (jira, focused discussions)
+January 2013, 169 (jira; focused discussions)
+Dec 2012, 51 (jira, focused discussions)
+
+Topics in discussion on the dev mailing list included but not limited to:
+
+* JSON scanner API
+* implementation of reference interpreter
+* building SQL parser
+* implementation of a variety of reference operators including flatten
+and WindowsPane
+* Mocking Library
+* Drill plus behavioral data
+
+Presentations
+
+There have been more than a dozen presentations from community members
+at international Hadoop conferences, Strata Conference, HUGs, JUG and
+an Apache Drill Users Group in at least four countries.
+
+Slides
+
+Slides from Drill presentations posted online such as at slideshare get
+a large number of views. Examples:
+
+Japan Hadoop Conf. 2013 Winter, 2114 views
+Boulder/Denver HUG, 848 views
+PJUG Portland Oregon, 404 views
+HUG Munich, 475 views
+
+Articles
+
+An invited article on Apache Drill, &ldquo;Apache Drill: Newcomer in the
+Hadoop Ecosystem&rdquo; appeared in the 30 January 2013 Software Developers
+Journal, authored by Ted Dunning and Jacques Nadeau.
+
+In addition there have been a variety of blog postings about Drill.
+
+Social Networking
+
+@ApacheDrill Twitter entity is active and has grown to 147 followers.
+
+How project has developed since last report:
+
+1. Wiki has been built
+2. Significant code drops have been checked in from a number of new
+developers
+3. Added our first additional committer and PMC member, additional
+candidates are developing
+4. Additional non-code contributors have become active and are being
+encouraged
+
+Signed-off-by:
+Ted Dunning: [x](drill)
+Grant Ingersoll: [ ](drill)
+Isabel Drost: [ ](drill)
+
+
+Shepherd notes:
+
+Drill appears to be healthy.  Mailing lists are seeing a ton of traffic
+and work in the sandbox seems to be progressing at a reasonable pace.
+Question to the community: When do you estimate that you would want to
+start putting a preliminary release of some kind together?  I assume
+this would require identifying at least some components that should be
+moved from "sandbox".</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#drill">2013-01-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>Project Summary:
+
+Drill is a distributed system for interactive analysis of large-scale
+datasets, inspired by Google's Dremel.
+
+Drill has been incubating since 2012-08-11.
+
+
+Issues:
+
+Discussions on these key areas were __very focused__ and productive toward
+this project's graduation goals:
+
+Healthy discussion of target use cases from the community
+
+New Syntax Interpreter
+
+Continued Logical Plan Syntax discussion &amp; development (with focus on JSON)
+
+Leveraging existing ideas/lessons learned from Optiq, LucidDB, DynamoBI,
+Eigenbase and Saffron
+
+How has the community &amp; project developed since the last report:
+
+User interest has slowed due to the Holiday season but discussion on the
+the above topics is healthy. Commit and list activity are consistent with
+the above. Development is continuing onward.
+
+An addition of employer supported contributor to the project.
+
+New users continue to ask to be formally part of this project.
+
+On going discussion with schema-less data scanners amongst the project
+members.
+
+There is some cause for concern due to a drift toward isolated
+development of components with less on-list discussion than before.
+We will work to encourage more public styles of work.
+
+List Summary:
+* http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+* Jan 2013, ? subscribers
+* Dec 2012, 264 subscribers
+* Nov 2012, 73 (jira, focused discussions)
+* Oct 2012, 214 (svn, discussions, jira)
+* Sep 2012, 413
+* Aug 2012, 85
+
+Signed-off-by:
+Ted Dunning: [x](drill)
+Grant Ingersoll: [x](drill)
+Isabel Drost: [ ](drill)
+
+
+Shepherd notes: No report as of 1/9/13</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#apachedrill">2012-12-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>Issues:
+Discussions on these key areas were __very focused__ and productive toward
+this project's graduation goals:
+1.) Logical Plan Expressions, syntax, and parser
+2.) Schema-less Management
+3.) Wire Protocols
+
+User interest has increased (thanks to the media) and as the project's
+source commitments increase so will user interaction within the next
+quarter.
+
+How has the community developed since the last report:
+Discussion counts have gotten smaller from the month of October through
+November 2012.
+For all intents and purposes initial code was checked in and builds running
+during the middle of October 2012 and from that time focused discussion and
+development have occurred.
+
+Many new users joined the list as well as asking formally to be part of the
+community.
+
+List Summary:
+  * http://mail-archives.apache.org/mod_mbox/incubator-drill-dev/
+  * Dec 2012, [current], 264 subscribers
+  * Nov 2012, 73 (jira, focused discussions)
+  * Oct 2012, 214 (svn, discussions, jira)
+  * Sep 2012, 413
+  * Aug 2012, 85
+
+How has the project developed since the last report:
+== Milestones ==
+1.) During the month of October, the SVN repository was initiated and
+initial source checked in.
+2.) ~88% of JIRA tasks were created during the months October through
+November, showing growth and healthy discussion.
+3.) Post initial commit, many users have come forth asking to engage in
+active development, showing healthy growth and interest amongst the
+developer community at large regarding the goals of this project.
+
+Signed-off-by: tdunning, berndf, gsingers, isabel</pre>
+<h3 id="2012-11-21"><a href="2012/board_minutes_2012_11_21.html#drill">2012-11-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-11-21" title="Permalink">&para;</a></h3>
+<pre>Drill's goal is to build an open source clone of Dremel with appropriate
+extensions to foster greater flexibility.
+
+Drill has been incubating since September of 2012.
+
+Since last month, we have been working on bringing in existing code assets.
+We now have the following items in our source repository:
+
+  - A web-based GUI front-end for DRILL
+  - A query parser for a Dremel equivalent language
+  - An early prototype of a physical plan interpreter
+
+The web front-end and query parser still need formalized IP clearance
+including ICLA's or CCLA's as appropriate.  Informal clearances have been
+granted on all components.
+
+In terms of infrastructure, the project web site has been incorporated into CMS.
+
+Graduation is still very far away, but the community activity has been high
+and the mailing list has been active with over 200 postings in October.
+Numerous public presentations have been made since the last report.
+
+Most important issues to address before we can graduate:
+
+  Get the basics in place, build up a working code base, make releases
+  (that is, everything)
+
+Any issues the Incubator PMC or ASF board need to be aware of:
+
+  None at this time
+
+How has the community developed since the last report:
+
+  The active contributors mentioned in the previous report continue to
+  be active and additional contributors have been identified.  At least
+  one corporate supporter of the project has hired a full-time engineer
+  to focus on Drill. We are working to bind these new contributors into the
+  community and several appear likely to become committers over time.
+
+How has the project developed since the last report:
+
+  The community has continued to make progress and substantial code assets
+  are in the process of being contributed.
+
+Signed-off-by: berndf</pre>
+<h3 id="2012-10-17"><a href="2012/board_minutes_2012_10_17.html#drill">2012-10-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-10-17" title="Permalink">&para;</a></h3>
+<pre>Drill's goal is to build an open source clone of Dremel with appropriate
+extensions to foster greater flexibility.
+
+Drill has been incubating since September of 2012.
+
+Since last month, we have been working on infrastructure. A prototype
+web-site is ready and several code contributions are nearly ready to commit.
+
+Graduation is still very far away, but the community activity has been high
+and the mailing list has been active.  Numerous public presentations have
+been made and several Drill Users' Groups have been formed and meetings held.
+
+Most important issues to address before we can graduate:
+
+Get the basics in place, build up a working code base, make releases
+(that is, everything)
+
+Any issues the Incubator PMC or ASF board need to be aware of:
+
+None at this time
+
+How has the community developed since the last report:
+
+Several active contributors outside the current committer group
+have emerged. We are working to bind these new contributors into the
+community and several appear likely to become committers over time.
+
+How has the project developed since the last report:
+
+The community has begun to gel nicely and significant code contributions
+have moved forward.
+
+Signed-off-by: Ted Dunning acting for Grant Ingersoll</pre>
+<h3 id="2012-09-19"><a href="2012/board_minutes_2012_09_19.html#drill">2012-09-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-09-19" title="Permalink">&para;</a></h3>
+<pre>Drill is a distributed system for interactive analysis of large-scale datasets,
+inspired by Google's Dremel.
+
+We have just started and have mailing lists and svn up.  Git has been delayed
+by issues in infra.
+
+Community development is progressing well with several companies offering paid
+developers and 90 subscribers to the dev list.
+
+A hackathon in the SF bay area is scheduled.  A lunchtime meetup is
+scheduled for Boston.  Additional meetups in New York and London are in
+the planning stages.  All such physical meetups will have remote access if
+possible (probably not for the lunch) and all will be reported back to the
+mailing list to be sure to include those in different places and time zones
+can participate.
+
+Graduation is still a distant vision since we haven't got all the basic
+mechanics in place yet.  The community side of things is going well and the
+development of a realistic release looks like it will be moving shortly.
+
+Signed-off-by: tdunning</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: DataSketches | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: DataSketches';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: DataSketches';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: DataSketches</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="datasketches">DataSketches<a class="headerlink" href="#datasketches" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-12-16</td>
+<td><a href="2020/board_minutes_2020_12_16.html#section-7D">Appointed Lee Rhodes</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-12-16</td>
+<td><a href="2020/board_minutes_2020_12_16.html#section-7D">Establish the Apache DataSketches Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-S">2026-08-19</a> &mdash; Lee Rhodes<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing and growing activity. Our DataSketches Library
+is now available in 5 languages: Java, C++, Python, Go, Rust. And work is
+progressing to add a 6th: CUDA.
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (6 years ago)
+There are currently 26 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- Filippo Rossi was added to the PMC on 2026-05-20
+- Hyeonho Kim was added to the PMC on 2026-06-21
+- Yijun Zhao was added as a committer on 2026-08-10
+- Daniel Juenger was added as a committer on 2026-06-15
+- Yunsong Wang was added as a committer on 2026-06-15
+
+## Project Activity:
+We had a special request from the Spark community to do a single java
+release that will operate on Java 17, 21, and 25. The first part of
+that was the datasketches-memory 7.0.0 release in June. A new release
+of Java that works with the new memory version is in-process.
+
+An updated version of datasketches-bigquery library was released to the
+Google-BigQuery platform. This update was required due to a new
+version of the enscripten compiler.
+
+The data sketches-rust team released a 0.3.0 version on May 18.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are
+experiencing growing interest from major corporations in our
+multi-language libraries. The most recent corporate interest is
+Nvidia, who has assigned a small team of C++/CUDA engineers to
+work with us on migrating our library to CUDA.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research
+and consult with us on improving the mathematical rigor of our sketches.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-Q">2026-05-20</a> &mdash; Lee Rhodes<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing and growing activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (5 years ago)
+There are currently 23 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zili Chen on 2026-01-05.
+- Zejiong Dong was added as committer on 2026-03-11
+
+## Project Activity:
+Two recent releases that were not previously recorded in the database:
+datasketches-rust-0.2.0 on Jan 13, 2026
+datasketches-go-v0.1.0 on Mar 27, 2026
+Future releases that are in the works include: Rust, Go, Memory, and Java.
+
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research
+and consult with us on improving the mathematical rigor of our sketches.</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-S">2026-02-18</a> &mdash; Lee Rhodes<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing and growing activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (5 years ago)
+There are currently 22 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Zili Chen was added to the PMC on 2026-01-05
+- Filippo Rossi was added as committer on 2026-01-19
+- Hyeonho Kim was added as committer on 2026-01-14
+- Chojan Shang was added as committer on 2026-02-07
+- Zili Chen was added as committer on 2026-01-06
+
+## Project Activity:
+This past quarter has seen a significant uptake in participation in our
+project.  We have a new community of contributors actively committing
+to our new DataSketches Rust library as well as fixing errors and
+inconsistencies across our other languages! This is huge! We have added
+Zili Chen to our PMC as well as 3 more committers! Welcome!
+
+We just released DataSketches-Rust 0.2.0 and working on a 0.3.0 to be
+released soon.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research
+and consult with us on improving the mathematical rigor of our sketches.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-Q">2025-11-19</a> &mdash; Lee Rhodes<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (5 years ago)
+There are currently 18 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 6:5.
+
+Community changes, past quarter:
+- Pierre Lacave was added to the PMC on 2025-08-12
+- Will Lauer was added to the PMC on 2025-08-12
+- No new committers. Last addition was Nikunj Bhartia on 2025-06-11.
+
+## Project Activity:
+The datasketches-java (ds-java) library has been moving quickly to keep
+pace with the new Java language releases. DS-java 8.0.0 was released in
+April supporting Java 21. We are currently busy refactoring the entire
+ds-java library to migrate to the new Java FFM API, which had its
+first LTS release with the Java 25 this past September. We hope to have
+this release out by next quarter.
+This migration will eliminate the current dependency on the
+datasketches-memory repo, which was created 10 years ago to enable
+fast off-heap management of data structures and state-machines.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+The Google adoption is strong evidence of that.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research.</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-P">2025-08-20</a> &mdash; Lee Rhodes<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (5 years ago)
+There are currently 18 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- Nikunj Bhartia was added as committer on 2025-06-11
+- 2 new PMC members are in process of being approved
+
+## Project Activity:
+The Apache/datasketches/bigquery (ds-bq) library continues to make progress
+with more users making suggestions for improvements, and we have responded
+with a minor release and a bug release (e.g., ds-bq 1.1.0, 1.1.1).
+
+The datasketches-java (ds-java) library has been moving quickly to keep
+pace with the new Java language releases. DS-java 8.0.0 was released in
+April supporting Java 21. We are currently busy refactoring the entire
+ds-java library to migrate to the new Java FFM API, which will have its
+first LTS release with the upcoming Java 25 this coming September.
+This migration will eliminate the current dependency on the
+datasketches-memory repo, which was created 10 years ago to enable
+fast off-heap management of data structures and state-machines.
+
+We are still working on a GO release, but our principal committer is on
+leave for several weeks. We hope to continue with that effort when he
+returns. There is increased interest in developing a parallel Rust library
+in the near future.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+The Google adoption is strong evidence of that.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-O">2025-05-21</a> &mdash; Lee Rhodes<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (4 years ago)
+There are currently 17 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- Frank Grimes was added as committer on 2025-02-13
+
+## Project Activity:
+The Apache/datasketches/bigquery (ds-bq) repo continues to make progress
+with more users making suggestions for improvements, and we have responded
+with a few bug releases and a minor release (e.g., ds-bq 1.0.3, 1.1.0).
+
+We are also making progress moving the java repos forward to new java versions,
+e.g., both ds-java and ds-memory are now running on Java 21.
+
+We have a growing interest from the Go community. We hope to have a Go
+repository release soon.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+The Google adoption is strong evidence of that.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-O">2025-02-19</a> &mdash; Lee Rhodes<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (4 years ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- No new committers. Last addition was Pierre Lacave on 2024-03-12.
+- One new committer in process.
+
+## Project Activity:
+It is now official that the GoogleCloudPlatform/bigquery-utils
+repository incorporates the DataSketches Library for use by
+any users of Google BigQuery SQL services. See this link:
+https://github.com/GoogleCloudPlatform/
+bigquery-utils/blob/master/udfs/datasketches/README.md
+
+The link on that page points to our
+Apache/datasketches/bigquery repo, which contains all of
+our sketch adaptors for BQ/SQL.
+
+Our DataSketches-java library is now available supporting Java 17.
+We are making progress on supporting Java 21.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+The Google adoption is strong evidence of that.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research.</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-O">2024-11-20</a> &mdash; Lee Rhodes<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (4 years ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- No new committers. Last addition was Pierre Lacave on 2024-03-12.
+
+## Project Activity:
+We are making good progress with our collaboration with Google and the
+creation of our apache/datasketches-bigquery repository that will be
+imported into the GoogleCloudPlatform/bigquery-utils repository soon.
+
+This repo contains "adaptors" that adapt key sketches from our
+datasketches-cpp (C++) library to javascript methods called directly
+by GCP/BQ SQL queries.
+
+We are also making progress on the conversion of our Java library so
+that it can operate with Java 17 and Java 21.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-N">2024-08-21</a> &mdash; Lee Rhodes<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (4 years ago)
+There are currently 17 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- No new committers. Last addition was Pierre Lacave on 2024-03-12.
+
+## Project Activity:
+Big News: Google BigQuery has agreed to support our DataSketches library in
+their github.com/GoogleCloudPlatform/bigquery-utils repo.  This means that
+all BQ users will be able to use Apache DataSketches in their SQL queries.
+
+A dedicated apache/datasketches-bigquery repo has been set up for the
+development of adaptors that connect BQ/SQL to the datasketches-cpp (C++)
+library of sketches. No formal releases as of today, but will be soon.
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues.
+We are experiencing growing interest from major corporations and
+database platforms in our multi-language libraries.
+
+Of special interest is that our project is frequently referenced
+in scientific papers in the areas of streaming algorithms and sketches.
+In these papers the Apache DataSketches project is often referenced to as
+the most widely used and best known library of open-source sketches.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-Q">2024-05-15</a> &mdash; Lee Rhodes<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (3 years ago)
+There are currently 17 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- Pierre Lacave was added as committer on 2024-03-12
+
+## Project Activity:
+We release a major new version of our Java library with several new sketches
+including an improved implementation of the well known T-Digest quantiles
+sketch and a high performing implementation of the well known Bloom Filter.
+
+The KLL sketches have new vector and weighted update capabilities and a new
+partitioning capability for very large data sets.
+
+Our Go library continues in development and our Python and C++ libraries
+received some new bug-fix releases.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+
+Of special interest is that our project is frequently referenced
+in scientific papers in the area of streaming algorithms and sketches.
+In these papers the Apache DataSketches project is often referenced as
+the most widely used and best known library of open source sketches.</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-N">2024-02-21</a> &mdash; Lee Rhodes<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (3 years ago)
+There are currently 16 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- No new committers. Last addition was Will Lauer on 2022-03-07.
+
+## Project Activity:
+We now have a separate repo for our Python library which largely
+parallels our C++ and Java libraries.  The Python library started out
+as a sub-folder of the C++ repo, but it has grown and now it is
+large enough to be in its own repo. All of the Python code is backed by
+C++ for high performance.
+
+We also have in development a parallel GoLang library in development.
+This will be a valuable contribution to the overall codebase so that
+our users will be able to access our sketches in 4 languages: Java, C++,
+Python, and Go!
+
+During this period we released 2 new C++ versions, 2 new Python versions
+(in the new repo), and 2 new Java versions.
+
+## Community Health:
+Our project is healthy. We have a small but loyal community
+of users that contact us when they have questions or issues.
+Of special interest is that our project is now frequently referenced
+in scientific papers in the area of streaming sketches.  In these
+papers the Apache DataSketches project is often referenced as the most
+widely used and best known library of open source sketches
+(in the research community anyway!).</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-M">2023-11-15</a> &mdash; Lee Rhodes<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (3 years ago)
+There are currently 16 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- No new committers. Last addition was Will Lauer on 2022-03-07.
+
+## Project Activity:
+Releases in addition to the releases found by your Bot:
+C++ PostgreSQL Adapter 1.6.0, 2023-05-15
+C++, Python Core 4.1.0, 2023-05-03
+
+We were invited to present a talk at the Simons Institute (UC Berkeley)
+at their international conference on "Sketching and Algorithm Design",
+Oct 9-13, 2023. Our talk was titled "Insights from Engineering Sketches
+for Production and Using Sketches at Scale."  This is important recognition
+that our work is becoming widely recognized, especially in the academic
+and research communities.
+
+We also presented a paper at the BigDataLDN 2023 conference in London,
+Sep 20 &amp; 21, 2023.
+
+## Community Health:
+Our project is healthy. We have a small but loyal community
+of users that contact us when they have questions or issues.
+Of special interest is that our project is now frequently referenced
+in scientific papers in the area of streaming sketches.  In these
+papers the Apache DataSketches project is often referenced as the most
+widely used and best known library of open source sketches
+(in the research community anyway!).</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-R">2023-08-16</a> &mdash; Lee Rhodes<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing.
+
+Issues for the board: None.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (3 years ago)
+There are currently 16 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 8:7.
+
+Community changes, past quarter:
+- Charlie Dickens was added to the PMC on 2023-07-04
+- No new committers. Last addition was Will Lauer on 2022-03-07.
+
+## Project Activity:
+In addition to the 3 releases found by your bot, We have developed
+some new sketches for density analysis for Python as well as a wrapper for
+our Tuple sketch now available in Python mostly for experimental research.
+We are also starting a major overhaul of our website, which is
+clearly showing its age.
+
+We also took advantage of the suggestion from Matt Sicker &amp; Chris Dutz and
+added their suggestions to our asf.yaml file.  We are still learning what impact
+it has and will do the same on our other web sites over time.
+
+## Community Health:
+Our project is healthy we have a small but loyal community
+of users that contact us when they have questions or issues.
+Of special interest is that our project is now frequently referenced
+in scientific papers in the area of streaming sketches.  In these
+papers the Apache DataSketches project is often referenced as the most
+widely used and best known library of open source sketches
+(in the research community anyway!).
+
+We discovered recently that Microsoft was using our sketches extensively
+in their internal research and has been doing so for a number of years!
+We had no idea!</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-N">2023-05-17</a> &mdash; Lee Rhodes<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (2 years ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was David Cromberge on 2021-09-22.
+- No new committers. Last addition was Will Lauer on 2022-03-07.
+
+## Project Activity:
+As part of our releases (see project statistics):
+ - A new Density Sketch and new Count Min Sketch have been released to our C++
+   Library along with their bindings in the Python Library.
+
+ - Our Python sketch library has been extended so that all of our
+   "container' type sketches (e.g., quantile, frequency sketches) can handle
+   arbitrary objects, along with Python-defined comparators and combination
+   policy logic where relevant. This brings the Python sketch library to full
+   parity with the offerings in the C++ library.
+
+Charlie Dickens has been accepted at the Big Data LDN, Fall 2023 conference to
+present a paper about our Apache DataSketches project.
+
+Charlie has also been chosen as Industry Supervisor for a Master-of-Science
+summer project at a University in the UK, where the intention is for the
+students to develop a machine learning model using the new Count Min sketch.
+
+## Community Health:
+The DataSketches project is healthy. Most of our interactions with
+users are through GitHub or through Slack. We are continuing to work
+with some of the largest cloud providers on adoption of our library.
+We are also working closely with the Java Project Panama.
+We are also seeing some interest in our technology from government
+agencies, including international agencies.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-S">2023-02-15</a> &mdash; Lee Rhodes<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (2 years ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was David Cromberge on 2021-09-22.
+- No new committers. Last addition was Will Lauer on 2022-03-07.
+
+## Project Activity:
+We were invited to make a presentation to one of the top-three cloud providers
+about our project. And we are in discussion with two other top cloud providers
+about adopting our technology for broad use by their customers.
+Unfortunately, this is a long and slow process.
+
+We have also decided to refactor our website to be more focused on the Python
+user communities since Python is so widely used by the scientific communities.
+
+## Community Health:
+The DataSketches project is healthy. Most of our interactions with
+users are through GitHub or through Slack. We are continuing to work
+with some of the largest cloud providers on adoption of our library.
+We are also working closely with the Java Project Panama.
+We are also seeing some interest in our technology from government
+agencies, including international agencies.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#attachment-W">2022-12-21</a> &mdash; Lee Rhodes<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (2 years ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was David Cromberge on 2021-09-22.
+- No new committers. Last addition was Will Lauer on 2022-03-07.
+
+## Project Activity:
+Releases since last Report (August 2022):
+- Nov 5, 2022: C++/Python Core 3.5.1
+- Dec 5, 2022: C++/Python Core 4.0.0
+- Aug 15, 2022: Java Memory 2.2.0
+
+Three of our committers, Charlie Dickens, Justin Thaler (PMC),
+and Daniel Ting (PMC), just published and presented a paper
+on sketching and differential privacy at the NeurIPS 2022 Conference
+in New Orleans, which was just held November 26 - December 4, 2022.
+Our DataSketches Library is referenced several times in the paper.
+https://arxiv.org/abs/2203.15400
+
+Also, one of our committers (and PMC member) Edo Liberty, has recently
+contributed a new experimental Python sketch to our library that
+can be used for multi-dimensional density estimation, k-means estimation
+and other related kernel functions.
+This will find interest in the Machine Learning and AI communities.
+This sketch is based on his research paper (with Zohar Karnin):
+"Discrepancy, Coresets, and Sketches in Machine Learning", 2019,
+https://arxiv.org/abs/1906.04845.
+
+## Community Health:
+The DataSketches project is healthy. Most of our interactions with
+users are through GitHub or through Slack. We are continuing to work
+with some of the largest cloud providers on adoption of our library.
+We are also working closely with the Java Project Panama.
+We are also seeing some interest in our technology from government
+agencies, including international agencies.</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#section-6M">2022-11-16</a> &mdash; Lee Rhodes<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-M">2022-08-17</a> &mdash; Lee Rhodes<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (2 years ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was David Cromberge on 2021-09-22.
+- No new committers. Last addition was Will Lauer on 2022-03-07.
+
+## Project Activity:
+Releases since last Report (May 2022):
+Jul 13, 2022: C++/Python Core 3.5.0
+Jun 6, 2022: Released Java Core 3.3.0
+May 19, 2022: Java Memory 2.1.0
+Our research work on Differential Privacy
+with Sketching has received positive reviews.
+
+
+## Community Health:
+The DataSketches project is healthy. Most of our interactions with
+users are through GitHub or through Slack. We are continuing to work
+with some of the largest cloud providers on adoption of our library.
+We are also working closely with the Java Project Panama.
+We are also seeing some interest in our technology from government
+agencies.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-K">2022-05-18</a> &mdash; Lee Rhodes<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (a year ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was David Cromberge on 2021-09-22.
+- Will Lauer was added as committer on 2022-03-07
+
+## Project Activity:
+Releases since last Report (Feb, 2022):
+Apr 27, 2022: Released Java Core 3.2.0
+Mar 3, 2022: Released Java Hive Adaptor 1.2.0
+Feb 17, 2022: Released Java Pig Adaptor 1.1.0
+Our recent research work is now published on arXiv.org:
+[(Nearly) All Cardinality Estimators Are Differentially
+Private](https://arxiv.org/pdf/2203.15400.pdf).
+It is also being submitted to some major journals for publication.
+
+
+## Community Health:
+The DataSketches project is healthy. Most of our interactions with users are
+through GitHub or through Slack, both of which are easier to use and more
+interactive than the dev@ list. So the decrease in dev@ usage is
+understandable. But on the whole, the activity on the DataSketches project is
+growing.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-M">2022-02-16</a> &mdash; Lee Rhodes<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (a year ago)
+There are currently 15 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was David Cromberge on 2021-09-22.
+- No new committers. Last addition was Charlie Dickens on 2020-12-18.
+
+## Project Activity:
+Dec 2021: Released datasketches-cpp 3.3.0
+Jan 2022: Released datasketches-java 3.1.0
+Considerable work on synchronizing sketch behavior across C++ and Java.
+Added comprehensive modeling to check corner cases in set operations.
+This was inspired by a reported bug (datasketches-java issue #368).
+We subsequently created this comprehensive model to test for all
+possible combinations of such issues. All of this has now been released
+in datasketches-java 3.1.0 and -cpp 3.3.0.  This is all documented on our
+website as well.  Our research work is in the area of using sketches for
+differential privacy.  We hope the paper will be published soon.
+
+
+## Community Health:
+The DataSketches project is healthy. Most of our interactions with users are
+through GitHub or through Slack, both of which are easier to use and more
+interactive than the dev@ list. So the decrease in dev@ usage is
+understandable. But on the whole, the activity on the DataSketches project is
+growing.</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-Q">2021-11-17</a> &mdash; Lee Rhodes<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention at this time. However, we have
+identified some other sites that may be misusing our copyrights.  We will be
+contacting legal@apache.org to help us understand whether these other site are
+actually in violation or not.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (a year ago) There are currently 15
+committers and 13 PMC members in this project. The Committer-to-PMC ratio is
+roughly 8:7.
+
+Community changes, past quarter:
+- David Cromberge was added to the PMC on 2021-09-22
+- No new committers. Last addition was Charlie Dickens on 2020-12-18.
+
+## Project Activity:
+Although readers can see the 4 releases of this past quarter from the
+statistics page, probably the most significant release was the Memory-2.0.0
+release on 2021-09-14.  This release enables the dependant Java components to
+be able to compile and run with JDK 8 through JDK 13.  Once this was released,
+it enabled the following core Java component release 3.0.0 on 2021-10-02 to
+also compile and run with JDK 8-13.
+
+This coming year we will be working on a release train that will enable the
+DataSketches Java components to run on JDK17 and beyond.
+
+Not immediately obvious from the stats is the work we have done with Python,
+released with datasketches-cpp on 2021-09-29, which allows Python users access
+to the DataSketches algorithms with a simple PIP install.
+
+## Community Health:
+The DataSketches project is healthy. Most of our interactions with users are
+through GitHub or through Slack, both of which are easier to use and more
+interactive than the dev@ list. So the decrease in dev@ usage is
+understandable. But on the whole, the activity on the DataSketches project is
+growing.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-O">2021-08-18</a> &mdash; Lee Rhodes<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (8 months ago)
+There are currently 15 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Alexander Saydakov on 2020-12-15.
+- No new committers. Last addition was Charlie Dickens on 2020-12-18.
+
+## Project Activity:
+datasketches-postgresql-1.5.0 was released on 2021-08-09.
+datasketches-cpp-3.1.0 was released on 2021-07-16.
+datasketches-postgresql-1.4.0 was released on 2021-05-17.
+In addition, the team has been busy refactoring our Java code
+so that it is compatible with the newer JDK versions 9 and beyond.
+This has been particularly challenging as there is little that
+has been published on how to do testing in a JPMS environment.
+
+We also have seen a significant interest and uptick in our C++
+and PostgreSQL implementations.
+
+## Community Health:
+Our health is good, given that we have a small and specialized
+community focused on the science and practice of streaming
+algorithms. We are seeing more interest from a number of
+scientists that are interested in contributing and are
+encouraging that.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-N">2021-05-19</a> &mdash; Lee Rhodes<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (5 months ago)
+There are currently 15 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Alexander Saydakov on 2020-12-15.
+- No new committers. Last addition was Charlie Dickens on 2020-12-18.
+
+## Project Activity:
+Internal work on Java library for JDK 9+ and new C++ Memory model.
+
+## Community Health:
+Good Health. LinkedIn adopted our library via Apache Pinot (uses DataSketches)..</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-V">2021-03-17</a> &mdash; Lee Rhodes<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (3 months ago)
+There are currently 15 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 5:4.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- Charlie Dickens was added as committer on 2020-12-18
+
+## Project Activity:
+DataSketches-java (java core) 2.0.0 was released 2021-02-22.
+DataSketches-cpp (C++ core) 3.0.0 will be released week of 2021-03-08.
+
+## Community Health:
+Health is good. We are getting new sources of contribution: Ex: Prof Braverman
+at Johns Hopkins wants to contribute to our library.</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-N">2021-02-17</a> &mdash; Lee Rhodes<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (2 months ago)
+There are currently 15 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 5:4.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- Charlie Dickens was added as committer on 2020-12-18
+
+## Project Activity:
+We have completed the transition from podling to TLP.
+DataSketches-memory was released Jan 22nd.
+DataSketches-java (Java-core) is expected in the next week.
+The ASF Press-Release graduation announcement was Feb 3rd.
+
+## Community Health:
+Health is good. We are continuing to get new inquiries about
+our project. Ex: We were asked to do a comparison of BlinkDB to DataSketches.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-Q">2021-01-20</a> &mdash; Lee Rhodes<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache DataSketches is the creation and maintenance of software
+related to an open source, high-performance library of streaming algorithms
+commonly called "sketches" in the data sciences. Sketches are small, stateful
+programs that process massive data as a stream and can provide approximate
+answers, with mathematical guarantees, to computationally difficult queries
+orders-of-magnitude faster than traditional, exact methods
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (a month ago)
+There are currently 15 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 5:4.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- Charlie Dickens was added as committer on 2020-12-18
+
+## Project Activity:
+Over the past month (since graduation) we have been busy with the transition.
+With the holidays, we have had only two weeks to work on the transition,
+nonetheless, as of this writing, we are about 95% complete. We have a number
+of releases to do, which will be a strong test that we have all the pieces
+in the right place.
+
+Our last release was our C++, Python Core on Sep 22, 2020.
+We plan for a new release of Java Memory this month with a new release of
+our Java core shortly thereafter.
+
+## Community Health:
+We suspect that some of the decrease in traffic on dev@ and users@ may be due
+to the holidays. Also, much of our code has been very stable in its quality,
+which is a good thing. We will be introducing some new sketches soon, which
+will indubitably have concomitant traffic.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#datasketches">2020-11-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches are small, stateful programs that process massive data as a stream
+and can provide approximate answers, with mathematical guarantees, to
+computationally difficult queries orders-of-magnitude faster than
+traditional, exact methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Adding more committers. We added one last quarter and we have a
+   few more individuals that we have been considering.
+2. We have created a draft Maturity model, which is undergoing review.
+3. Prepare for Graduation. We have a Graduation checklist that we are
+   going through
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No.
+
+### How has the community developed since the last report?
+Public presentations since last report:
+
+- ACM-KDD conference in August.
+- DataCon2020 in Taiwan in September.
+- ApacheCon 2020 in September.
+
+We are seeing increased interest from scientific communities that
+work with big data and platforms that want to use our code
+(e.g. Apache Impala).
+
+### How has the project developed since the last report?
+
+We released a new minor release of C++: 2.1.0.
+
+Based on feedback from our community, we are developing a Docker
+deployable version of our library, which hopefully will be
+released soon.
+
+We are working on a brand new sketch as part of the Quantiles family.
+
+To the best of our knowledge all of our licensing and website issues
+have been addressed and have been implemented in formal releases or
+are in master-branch staging, awaiting the next release.
+
+We are continuing to respond to new user's requests for help.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+- 2020-06-19 incubating-datasketches-cpp  2.1.0
+
+### When were the last committers or PPMC members elected?
+
+- 2020-08-17 (LDAP create date)
+
+### Have your mentors been helpful and responsive?
+
+Generally our mentors have been very helpful. However, a
+little more help from our mentors on timely approval of
+our releases would be appreciated. Our last release took
+18 days to get 3 IPMC members to vote. We don't know what
+is typical, but this seems a bit long. Please advise.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+To the best of our knowledge, yes.
+
+* Are 3rd parties respecting and correctly using the podlings
+ name and brand?
+
+ As far as we know, yes.
+
+* If not what actions has the PPMC taken to correct this?
+
+  We have not had to face this issue yet.
+
+* Has the VP, Brand approved the project name?
+
+ Yes, and it is clearly stated as such on
+ http://incubator.apache.org/projects/datasketches.html
+
+### Signed-off-by:
+
+- [ ] (datasketches) Liang Chen
+   Comments:
+- [ ] (datasketches) Kenneth Knowles
+   Comments:
+- [X] (datasketches) Furkan Kamaci
+   Comments:
+- [X] (datasketches) Evans Ye
+   Comments:
+- [X] (datasketches) Dave Fisher
+   Comments:  I think that DataSketches will be ready to graduate at the
+     December Board meeting.
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#datasketches">2020-08-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches are small, stateful programs that process massive data as a stream
+and can provide approximate answers, with mathematical guarantees, to
+computationally difficult queries orders-of-magnitude faster than
+traditional, exact methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Adding more committers. We have just added our first new committer
+   since incubation! We have a few more individuals that have been
+   consistent contributors to the project that we will soon want to
+   go through the new committer election process. This is a big change
+   from our last report where we had no candidates at all.
+2. Fill out the Maturity Model
+3. Prepare for Graduation.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+We could use some help in finding people who would find working in
+the sketching algorithms area really interesting and would want
+to work with us to become committers.
+
+### How has the community developed since the last report?
+
+The word is getting out! We presented talks at the USPTO 2020 tech
+conference and the Spark &amp; AI 2020 conference, mentioned in the last
+report, with lots of good feedback.
+
+We will be co-authors in a tutorial on sketching technology at the
+upcoming ACM-KDD conference in August with one of the world's
+leading scientists in streaming algorithms and sketching.
+
+We have been invited to give a keynote talk at the upcoming
+DataCon2020 in Taiwan in early September.
+
+We have been accepted for a talk at ApacheCon again this year.
+
+We also are seeing a big increase in the number of single PRs coming
+from a number of different people, especially for our C++ components,
+which is very good news. This proves that there is growing
+interest in the project and there are folks out there that want to
+contribute to the project.
+
+### How has the project developed since the last report?
+
+See the releases since the last report below.
+
+In addition we have made significant improvements to our website
+thanks to some external contributors!
+
+To the best of our knowledge all of our licensing and website issues
+have been addressed and have been implemented in formal releases or
+are in master-branch staging, awaiting the next release.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+- 2020-07-06 incubating-datasketches-hive 1.1.0
+- 2020-06-19 incubating-datasketches-cpp  2.0.0
+- 2020-05-07 incubating-datasketches-java 1.3.0
+
+### When were the last committers or PPMC members elected?
+
+August, 2020
+
+### Have your mentors been helpful and responsive?
+
+Yes, in general. However, we do have to prod them with reminders
+to check-off our releases. Our releases have been taking
+longer and longer to get through the voting process especially
+when it is in the 2nd IPMC phase. A little help here would
+be appreciated.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+To the best of our knowledge, yes.
+
+* Are 3rd parties respecting and correctly using the podlings
+  name and brand?
+
+  As far as we know, yes.
+
+* If not what actions has the PPMC taken to correct this?
+
+  We have not had to face this issue yet.
+
+* Has the VP, Brand approved the project name?
+
+  Yes, and it is clearly stated as such on
+  http://incubator.apache.org/projects/datasketches.html
+
+### Signed-off-by:
+
+- [X] (datasketches) Liang Chen
+   Comments:
+- [X] (datasketches) Kenneth Knowles
+   Comments:
+- [X] (datasketches) Furkan Kamaci
+   Comments:
+- [X] (datasketches) Dave Fisher
+   Comments:
+- [X] (datasketches) Evans Ye
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#datasketches">2020-05-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches are small, stateful programs that process massive data as a
+stream and can provide approximate answers, with mathematical
+guarantees, to computationally difficult queries orders-of-magnitude
+faster than traditional, exact methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Clearly, the most important issue for us is to add more committers.
+   From the Clutch and Podling Website reports, this is the last
+   major issue for us.
+
+   We have tried to encourage folks that ask questions or raise issues
+   to get more involved, and we have one or two folks that have
+   expressed interest in submitting PRs or even a new sketch. But,
+   alas, none have followed through, yet.
+
+   Developing sketch code is very tricky and understanding how these
+   algorithms work, and the math and statistics behind them, is a hurdle
+   for most people. Yet, we have been very clear that we are prepared to
+   train someone to become a committer.  All we ask is that the
+   candidate be open to learning about these fascinating algorithms and
+   committed to work with us. We could use some active help from our
+   Mentors or from the Board to help us find someone that would find
+   this work interesting.
+
+   I am convinced that there are folks in the greater Apache community
+   that would really enjoy working on this library, we just need to
+   discover who they are!
+
+2. Referring to last month's report, we have made progress in setting up
+   TODO lists on our major sites: Java and C++. And we keep working
+   away at these lists.  We have also improved our Downloads page and
+   brought it up to Apache standards. I don't feel these should be
+   issues for graduation.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+The issue mentioned above. We could use some help in finding someone
+who would find working in the sketching algorithms area really
+interesting and would want to work with us to become a committer.
+
+### How has the community developed since the last report?
+
+We have been accepted to present at two conferences this Summer, the
+USPTO technology conference and the Spark &amp; AI conference.
+
+We also have interest from Apache Flink and Apache Impala to
+integrate sketches into their systems. There has also been interest
+from Apache Beam, but so far no action.
+
+### How has the project developed since the last report?
+
+We have done a lot of work making the C++ code more robust and will
+likely have a major new release of the C++ library before this
+report is read by the Board.  We also in the voting process for a
+new Java release that cleans up some licensing glitches and fixes
+a bug found by Druid.
+
+Our activity on Slack has increased quite a bit with
+interesting queries from all over.
+
+We also have done a lot of work on the website, adding content and
+improving navigation. The Community and Downloads pages are all new.
+Please have a look!
+
+We continue to improve our release process with more guided scripts
+and fix issues as we discover them.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building -- this is a continuous, on-going effort
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+* 2020-01-26 Java release 1.2.0-incubating.
+* The Java 1.3.0-incubating release will be out before the Board
+  meeting.
+* A new C++ 2.0.0-incubating release may be out before
+  the Board meeting.
+
+### When were the last committers or PPMC members elected?
+
+No new committers since April, 2019.
+
+### Have your mentors been helpful and responsive?
+
+Yes. No open issues.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+ To the best of our knowledge, yes.
+
+* Are 3rd parties respecting and correctly using the podlings name and
+ brand?
+
+ As far as we know, yes.
+
+* If not what actions has the PPMC taken to correct this?
+
+ We have not had to face this issue yet.
+
+* Has the VP, Brand approved the project name?
+
+ Yes, and it is clearly stated as such on
+ http://incubator.apache.org/projects/datasketches.html
+
+### Signed-off-by:
+
+- [X] (datasketches) Liang Chen
+   Comments:
+- [ ] (datasketches) Kenneth Knowles
+   Comments:
+- [X] (datasketches) Furkan Kamaci
+   Comments:
+- [X] (datasketches) Dave Fisher
+   Comments:
+- [X] (datasketches) Evans Ye
+   Comments:
+
+### IPMC/Shepherd notes:
+Justin Mclean: Perhaps one way of attracting more interest is to have more
+conversation on the mailing list?</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#datasketches">2020-02-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches are small, stateful programs that process massive data as a stream
+and can provide approximate answers, with mathematical guarantees, to
+computationally difficult queries orders-of-magnitude faster than
+traditional, exact methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Be more communicative and document our code changes more clearly.
+2. We need to have more substantive discussions on dev@ especially about
+   our growing
+   TODO list and how we plan to address them -- create a roadmap as a
+   guide for others to contribute.
+3. Find / Attract new code committers outside Yahoo!
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+No
+
+### How has the community developed since the last report?
+We are presenting at more conferences which has attracted some interest.
+We are definitely getting more traffic on our forum, GitHub issues
+and email lists.  We recently added two channels on the-asf@slack:
+#datasketches and #datasketches-dev. The traffic has been fairly low on
+Slack as well as the forum. We could do more to publicize the slack
+channels.  I could be optimistic and believe the low traffic is due to
+the holidays -- or that the code just works :)
+
+Nonetheless, the download traffic measured by repository.a.o
+has grown exponentially since our first Apache release on Sep 23. We are
+over 1000
+unique IPs/ month and had a recent high of 22K downloads/ month.  Bear in
+mind
+that this is all traffic that has migrated from the older, pre-Apache
+artifacts
+at com.yahoo.datasketches and is already higher than our peak downloads
+prior to
+Apache. These numbers also do not reflect any downloads of our Zip
+artifacts
+from a.o./dist (which includes our C++ artifacts) or other external
+download
+repositories (for example, specific to PostgreSQL).
+
+### How has the project developed since the last report?
+Our releases are becoming easier, more polished and routine.
+Nonetheless, our website needs a lot of work (as mentioned above) and
+this will become our focus for the next month or so.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+These are the major components and their last release dates:
+
+* DataSketches-Java       2020-01-26
+* DataSketches-Memory     2019-11-21
+* DataSketches-CPP        2019-09-17
+* DataSketches-Hive       2019-10-11
+* DataSketches-Pig        2019-10-18
+* DataSketches-Postgresql 2019-10-29
+
+### When were the last committers or PPMC members elected?
+No new committers since April, 2019.
+
+### Have your mentors been helpful and responsive?
+Yes.
+No open issues.
+
+### Is the PPMC managing the podling's brand / trademarks?
+To the best of our knowledge, yes.
+
+* Are 3rd parties respecting and correctly using the podlings name and
+brand?
+  As far as we know, yes.
+
+* If not what actions has the PPMC taken to correct this?
+  We have not had to face this issue yet.
+
+* Has the VP, Brand approved the project name?
+  Yes, and it is clearly stated as such on
+  http://incubator.apache.org/projects/datasketches.html
+
+### Signed-off-by:
+
+- [X] (datasketches) Liang Chen
+   Comments:
+- [X] (datasketches) Kenneth Knowles
+   Comments:
+- [X] (datasketches) Furkan Kamaci
+   Comments:
+- [X] (datasketches) Dave Fisher
+   Comments:
+- [X] (datasketches) Evans Ye
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#datasketches">2019-11-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches are small, stateful programs that process massive data as a stream
+and can provide approximate answers, with mathematical guarantees, to
+computationally difficult queries orders-of-magnitude faster than
+traditional, exact methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Finish the transfer and bring-up of our website to
+   github.com/apache/...  This is now in process.
+2. __Team Interactions:__ We want to have our exchanges on the ASF
+   Slack DataSketches-dev channel posted to our dev@datasketches.a.o
+   list on a daily basis for improved visibility and searchability.
+   We have an open INFRA ticket on this issue.
+   We are searching for a solution to provide more open access to
+   our video conference sessions when we have them. We are in the
+   process of moving more of our interactions into the slack
+   DS-dev channel and dev@ list. This is a culture change for us
+   and will take some getting used to. We clearly want open
+   access to our team discussions.
+3. We would like to see a few more folks
+   join our contributors list.  We have several folks that
+   have come forward and offered help because they are interested
+   in the project.  This is great.  It is our hope that they will
+   grow into active contributors.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+None
+
+### How has the community developed since the last report?
+* We have added 1 new Mentor, Dave Fisher (thank you!) to our project
+  and we have been approached by another Apache member
+  who would also like to be a mentor, and eventually a contributor
+  as well. This is very positive!
+
+### How has the project developed since the last report?
+
+* We have now managed 7 releases,  6 Java releases and 1 C++ release.
+  We have one more C++ release pending.  These are across 6 different
+  components of the DataSketches library.  With the last pending C++
+  release, all of the code components targeted for release will
+  be complete.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2019-10-19  01:55 GMT DataSketches-pig
+
+### When were the last committers or PPMC members elected?
+* Dave Fisher: 16 Sep 2019
+
+### Have your mentors been helpful and responsive?
+* Helpful and responsive, Yes.
+  Having additional mentors has helped the voting
+  move forward more expeditiously!
+* I want to thank Dave Fisher for jumping in and helping us
+  with a number of issues!
+
+
+### Signed-off-by:
+
+- [X] (datasketches) Liang Chen
+   Comments:
+- [x] (datasketches) Kenneth Knowles
+   Comments:
+- [X] (datasketches) Furkan Kamaci
+   Comments:
+- [X] (datasketches) Dave Fisher
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#datasketches">2019-08-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches are small, stateful programs that process massive data as a stream
+and can provide approximate answers, with mathematical guarantees, to
+computationally difficult queries orders-of-magnitude faster than
+traditional, exact methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Our vote letter on general@ had no responses from anyone (not just
+   IPMC members) for the first 73 hours. After sending a pleading
+   reminder email I finally got 3 +1 binding votes. I'm trying to be
+   polite and not needle folks, but I need guidance on how to get IPMC
+   members' attention. I realize the vote  must stay open for at least
+   72 hours, but having to wait until the last minute get any response
+   is very aggravating. Would it be fair to send out reminder notices on
+   24 hour intervals?
+2. Continue to perfect the release process.
+3. After we get this first release, we need to finish migrating the
+   remaining repos.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+1. Yes. In addition to #1 above, not all of our Mentors have been
+   involved. Why do Mentors sign up if they do not or cannot mentor?
+
+### How has the community developed since the last report?
+Not too much at the committer level. We have drawn the
+interest of a few new scientists in our work, but they did not
+learn of our work from Apache.
+It is still very early.  I am speaking at ApacheCon
+In September, hopefully we can attract some interest there.
+I am hoping to attract some committers.
+
+### How has the project developed since the last report?
+We continue to evolve the project and make commits to the code base.
+We are also heavily integrated into the Druid platform.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [X] Working towards next release
+- [ ] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2019-08-02 Our First release of our first component!
+Thanks to: Kenneth Knowles, Furkan Kamaci, Paul King and
+Justin Mclean for their help.
+
+### When were the last committers or PPMC members elected?
+When we entered incubation.
+
+### Have your mentors been helpful and responsive?
+Two (of 3) of our Mentors have been responsive when they are not
+otherwise unavailable (vacation, work, etc.)
+
+### Signed-off-by:
+
+- [X] (datasketches) Liang Chen
+   Comments:
+- [ ] (datasketches) Kenneth Knowles
+   Comments:
+- [X] (datasketches) Furkan Kamaci
+   Comments:
+
+### IPMC/Shepherd notes:
+Justin Mclean: 72 hours is a minimum and a podling may not attract
+all needed votes in that time. I understand it may be frustrating
+but remember IPMC member are volunteers and mostly do this work
+unpaid in their spare time. If you need more Mentors just ask on
+the incubator general list.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#datasketches">2019-07-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches are small, stateful programs that process massive data as a stream
+and can provide approximate answers, with mathematical guarantees, to
+computationally difficult queries orders-of-magnitude faster than
+traditional, exact methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Complete a successful 1st snapshot release of Memory repo to DIST and
+Nexus. This is a blocking issue.
+2. Finish refactoring/snapshot releasing the other repos, which depend on
+#1.
+3. Move, refactor Website.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+For the IPMC:
+As a newbie podling, my experience so far has been exasperating. Finding
+how to accomplish key tasks is difficult.  The information is spread all
+over and the essential details of how to actually
+accomplish tasks are often missing.
+
+I have run into multiple roadblocks, especially with regards to
+permissions. I have to keep filing new tickets with INFRA to setup access
+to infrastructure and they reply that the Mentors need to do this. When
+I ask on general@incubator, the replies I get suggest I need to file
+tickets with INFRA. So I am  confused.
+
+### How has the community developed since the last report?
+Not much. I wish I could spend more time on this, but I need to get
+the migration done.
+
+### How has the project developed since the last report?
+We continue to evolve the project's functionality with commits to our
+GitHub repos.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [x] Initial setup
+- [x] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+No releases yet.
+
+### When were the last committers or PPMC members elected?
+At the initial incubation date.
+
+### Have your mentors been helpful and responsive?
+
+1. I have opened INFRA issues that have not yet been addressed and there
+will be more to come.
+2. I could REALLY use some 1:1 help from an experienced release engineer
+(perhaps from another project),that is very familiar with the Apache/Maven
+release process and POM to get us off the ground.
+Once we have created our first release, we can continue from there. But
+getting this first one is out is turning out to be quite a challenge.
+I don't think we need more than an hour with an experienced Apache
+release engineer, our project just isn't that complicated.
+3. I haven't heard from any of the mentors for the last week or so,
+perhaps they are all on vacation.
+
+### Signed-off-by:
+
+- [ ] (datasketches) Liang Chen
+   Comments:
+- [X] (datasketches) Kenneth Knowles
+   Comments:
+- [ ] (datasketches) Furkan Kamaci
+   Comments:
+
+### IPMC/Shepherd notes:
+Justin Mclean: Please ask your mentors for help, they can setup most
+things or direct yo to when you can get help. If your mentors can't help
+then ask on teh incubator general list.</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#datasketches">2019-06-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches
+are small, stateful programs that process massive data as a stream and can
+provide approximate answers, with mathematical guarantees, to
+computationally
+difficult queries orders-of-magnitude faster than traditional, exact
+methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Finish code migration
+2. Set up automated builds
+3. Establish code review practices
+
+### Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of
+
+No
+
+### How has the community developed since the last report?
+
+We are still in the process of setting up permissions and figuring out
+Apache environment.
+
+### How has the project developed since the last report?
+
+Most DataSketches repos have been moved to Apache repos.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+No releases yet
+
+### When were the last committers or PPMC members elected?
+
+We have just signed up our initial committers
+
+### Have your mentors been helpful?
+
+Yes, very helpful.
+
+### Signed-off-by:
+
+- [ ] (datasketches) Liang Chen
+   Comments:
+- [X] (datasketches) Kenneth Knowles
+   Comments:
+- [X] (datasketches) Furkan Kamaci
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#datasketches">2019-05-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences.
+Sketches
+are small, stateful programs that process massive data as a stream and can
+provide approximate answers, with mathematical guarantees, to
+computationally
+difficult queries orders-of-magnitude faster than traditional, exact
+methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+Three most important unfinished issues to address before graduating:
+
+  1. Finish IP Assignments
+  2. Code Migration
+  3. Perform a Release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  No
+
+How has the community developed since the last report?
+
+  We have the key committers signed up. We are all learning how
+  to navigate in the Apache environment and how to find things.
+
+How has the project developed since the last report?
+
+  This is our first report.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [X] Initial setup
+  [ ] Working towards first release
+  [ ] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  Our DataSketches.GitHub.io site is quite active as we are
+  very active with new code and releases from this site.
+  For example, our latest release of sketches-core was yesterday,
+  25 April 2019.
+
+  We are a long way from being able to release from the migrated
+  Apache code base as it doesn't yet exist.
+
+  XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+  We have just signed up are initial list of committers.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+  Kenneth Knowles has been extremely helpful! Thank you!
+
+Signed-off-by:
+
+  [X](datasketches) Liang Chen
+  Comments:
+  [X](datasketches) Kenneth Knowles
+  Comments: Initial set up has been a bit slow; that's on me
+  [X](datasketches) Furkan Kamaci
+  Comments:
+
+IPMC/Shepherd notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

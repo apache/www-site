@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: SystemDS | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: SystemDS';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: SystemDS';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: SystemDS</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="systemds">SystemDS<a class="headerlink" href="#systemds" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-09-16</td>
+<td><a href="2020/board_minutes_2020_09_16.html#section-7C">Appointed Matthias Boehm</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2017-05-17</td>
+<td><a href="2017/board_minutes_2017_05_17.html#section-7C">Appointed Deron Eriksson</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017-05-17</td>
+<td><a href="2017/board_minutes_2017_05_17.html#section-7C">Establish the Apache SystemML Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-CF">2026-08-19</a> &mdash; Matthias Boehm<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Project Status:
+- Just released SystemDS 3.4 and in process of definining GenAI policy
+- Current work focuses on adding the missing primitives for a number
+  benchmarks, a new API for the alignment of multimodal datasets (scuro),
+  a new backend for singlenode out-of-core operations, and incremental
+  refinements of major internal components for compression, GPUs,
+  federated operations, and the use of the Java vector API.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2026-01-07 (Christina Dionysio)
+- Last committers added 2026-01-07 (Jannik Lindemann, Rene Enjilian)
+- There are currently 39 committers and 29 PMC members in the project.
+
+## Project Activity:
+- Code activity is healthy with 89 commits (+82%) in the last 3 months.
+- Community growth is healthy with 13 active contributors (-35%)
+  in the last 3 months
+- Releases
+  Apache SystemDS 3.4.0 was released on 2026-07-24.
+  Apache SystemDS 3.3.0 was released on 2025-04-22.
+  Apache SystemDS 3.2.0 was released on 2024-03-17.
+  Apache SystemDS 3.1.0 was released on 2023-03-13.
+  Apache SystemDS 3.0.0 was released on 2022-06-20.
+  Apache SystemDS 2.2.2 was released on 2022-06-25.
+  Apache SystemDS 2.2.1 was released on 2021-12-02.
+  Apache SystemDS 2.2.0 was released on 2021-10-30.
+  Apache SystemDS 2.1.0 was released on 2021-06-28.
+  Apache SystemDS 2.0.0 was released on 2020-10-14.
+  Apache SystemML 1.2.0 was released on 2018-08-24.
+
+## Community Health:
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-BW">2026-05-20</a> &mdash; Matthias Boehm<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for a number
+  benchmarks, a new API for the alignment of multimodal datasets (scuro),
+  a new backend for singlenode out-of-core operations, and incremental
+  refinements of major internal components for compression, GPUs,
+  federated operations, and the use of the Java vector API.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2026-01-07 (Christina Dionysio)
+- Last committers added 2026-01-07 (Jannik Lindemann, Rene Enjilian)
+- There are currently 39 committers and 29 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 49 commits (+2%) in the last 3 months.
+- Community growth is healthy with 20 active contributors (+53%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.3.0 was released on 2025-04-22.
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-CE">2026-02-18</a> &mdash; Matthias Boehm<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for a number
+  benchmarks, a new API for the alignment of multimodal datasets,
+  a new backend for singlenode out-of-core operations, and incremental
+  refinements of major internal components for compression, GPUs,
+  federated operations, and the use of the Java vector API.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2026-01-07 (Christina Dionysio)
+- Last committers added 2026-01-07 (Jannik Lindemann, Rene Enjilian)
+- There are currently 39 committers and 29 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 48 commits (-22%) in the last 3 months.
+- Community growth is healthy with 13 active contributors (-13%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.3.0 was released on 2025-04-22.
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-BX">2025-11-19</a> &mdash; Matthias Boehm<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for a number
+  benchmarks, a new API for the alignment of multimodal datasets,
+  a new backend for singlenode out-of-core operations, and incremental
+  refinements of major internal components for compression, GPUs,
+  federated operations, and the use of the Java vector API.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2025-04-30 (Elias Strauss)
+- Last committers added 2025-04-30 (Christina Dionysio)
+- There are currently 37 committers and 28 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 61 commits (+-0%) in the last 3 months.
+- Community growth is healthy with 15 active contributors (-25%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.3.0 was released on 2025-04-22.
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-BV">2025-08-20</a> &mdash; Matthias Boehm<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for a number
+  benchmarks, a new API for the alignment of multimodal datasets,
+  a new backend for singlenode out-of-core operations, and incremental
+  refinements of major internal components for compression, GPUs,
+  federated operations, and the use of the Java vector API.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2025-04-30 (Elias Strauss)
+- Last committers added 2025-04-30 (Christina Dionysio)
+- There are currently 37 committers and 28 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 61 commits (-12%) in the last 3 months.
+- Community growth is healthy with 20 active contributors (+17%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.3.0 was released on 2025-04-22.
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-BO">2025-05-21</a> &mdash; Matthias Boehm<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for
+  a number benchmarks such as TPCx-AI and MLPerf on SystemDS, new APIs
+  for the alignment of multimodal datasets, the integration of Java's
+  new vector and foreign memory API, and incremental refinements
+  of major internal components for compression, reuse, as well as
+  multiple GPU devices, and distributed and federated operations.
+- We just released SystemDS 3.3 and switched from JDK11 to JDK17.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2025-04-30 (Elias Strauss)
+- Last committers added 2025-04-30 (Christina Dionysio)
+- There are currently 37 committers and 28 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 69 commits (-51%) in the last 3 months
+  (the reduction is largely due to careful release preparation).
+- Community growth is healthy with 17 active contributors (-11%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.3.0 was released on 2025-04-22.
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-BX">2025-02-19</a> &mdash; Matthias Boehm<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for
+  a number benchmarks such as TPCx-AI and MLPerf on SystemDS, new APIs
+  for the alignment of multimodal datasets, an exploration of Java's
+  new vector and foreign memory API, and incremental refinements
+  of major internal components for compression, reuse, as well as
+  multiple GPU devices, and distributed and federated operations.
+- We are in the process of preparing the release of SystemDS 3.3
+  (last release on JDK 11, afterwards switch to JDK 17)
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2024-03-28 (Olga Ovcharenko)
+- Last committer added 2024-09-09 (Elias Strauss)
+- There are currently 36 committers and 27 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 141 commits (+7%) in the last 3 months.
+- Community growth is healthy with 19 active contributors (+-36%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-BS">2024-11-20</a> &mdash; Matthias Boehm<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for
+  a number benchmarks such as TPCx-AI and MLPerf on SystemDS, new APIs
+  for the alignment of multimodal datasets, an exploration of Java's
+  new vector and foreign memory API, and incremental refinements
+  of major internal components for compression, reuse, as well as
+  multiple GPU devices, and distributed and federated operations.
+- We added automated code coverage enforcements in order to motivate
+  continuous improvements of the testsuite's code coverage
+- Activity is ramping up again (new committer, more contributions)
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2024-03-28 (Olga Ovcharenko)
+- Last committer added 2024-09-09 (Elias Strauss)
+- There are currently 36 committers and 27 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 132 commits (+158%) in the last 3 months.
+- Community growth is healthy with 14 active contributors (+-0%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-BZ">2024-08-21</a> &mdash; Matthias Boehm<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for
+  a number benchmarks such as TPCx-AI and MLPerf on SystemDS, new APIs
+  for the alignment of multimodal datasets, an exploration of Java's
+  new vector and foreign memory APIs, and incremental refinements
+  of major internal components for compression, reuse, as well as
+  multiple GPU devices, and distributed and federated operations.
+- We added automated code coverage enforcements in order to motivate
+  continuous improvements of the testsuite's code coverage
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2024-03-28 (Olga Ovcharenko)
+- Last committer added 2022-12-14 (Badrul Chowdhury)
+- There are currently 35 committers and 27 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 51 commits (-46%) in the last 3 months
+  (summer break for many involved researchers and students).
+- Community growth is healthy with 14 active contributors (-22%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-BV">2024-05-15</a> &mdash; Matthias Boehm<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end data
+science lifecycle from data preparation and cleaning, over efficient ML model
+training, to scoring and debugging. ML algorithms or pipelines are specified
+in a high-level language with R-like syntax, or related Python and Java APIs,
+and the system automatically generates hybrid runtime plans of local,
+in-memory operations and distributed operations on Apache Spark.
+
+## Issues for the Board:
+- RE cdutz: the discussion of lowering the bar for new committers led to a
+  change of internal policy and the addition of Badrul Chowdhury in Dec 2022.
+  The number of unique contributors is currently ramping up again, and we look
+  forward to starting the committer discussion for new candidates
+
+## Project Status:
+- We released Apache SystemDS 3.2.0 in March
+- Current work focuses on adding the missing primitives for a number
+  benchmarks such as TPCx-AI and MLPerf on SystemDS, new APIs for the
+  alignment of multimodal datasets, and incremental refinements of major
+  internal components for compression, reuse, as well as multiple GPU devices,
+  and distributed and federated operations.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2024-03-28 (Olga Ovcharenko)
+- Last committer added 2022-12-14 (Badrul Chowdhury)
+- There are currently 35 committers and 27 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 94 commits (+25%) in the last 3 months.
+- Community growth is healthy with 18 active contributors (+38%) in the last 3
+  months
+- Communication is healthy, mailing list activity is improving, additional
+  work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-BW">2024-02-21</a> &mdash; Matthias Boehm<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- Sorry for missing the "comments w/o responses" (2023-05/2023-02).
+  Thanks for the suggestions on improving the dev-list, we will have a
+  look and reach out if needed. Regarding new committer candidates, we
+  do have a continuous stream of new contributors (mostly students), but
+  need to find better ways to bring them on-board as committers
+  (beyond their initial one-off projects). We are very optimistic though
+  to get multiple new committers in 2024.
+
+## Project Status:
+- Current work focuses on extending the compression framework,
+  multi-backend lineage-based reuse, various data-centric ML
+  primitives (DSL-based builtins) for increased functionality,
+  and an improved test framework for functionality and performance.
+- We are in the process of releasing SystemDS 3.2 (cut first RC).
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2022-05-03 (Shafaq Siddiqi)
+- Last committer added 2022-12-14 (Badrul Chowdhury)
+- There are currently 35 committers and 26 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 75 commits (-32%) in the last 3 months.
+- Community growth is healthy with 13 active contributors (+30%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-BR">2023-11-15</a> &mdash; Matthias Boehm<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on extending the compression framework,
+  multi-backend lineage-based reuse, various data-centric ML
+  primitives (DSL-based builtins) for increased functionality,
+  and an improved test framework for functionality and performance.
+- We are planning to release SystemDS 3.2 in December.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2022-05-03 (Shafaq Siddiqi)
+- Last committer added 2022-12-14 (Badrul Chowdhury)
+- There are currently 35 committers and 26 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 109 commits (+6%) in the last 3 months.
+- Community growth is healthy with 10 active contributors (-9%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-CE">2023-08-16</a> &mdash; Matthias Boehm<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on extending the compression framework,
+  multi-backend lineage-based reuse, various data-centric ML
+  primitives (DSL-based builtins) for increased functionality,
+  and an improved test framework for functionality and performance.
+- In the past 5 months, since the release of SystemDS 3.1, we
+  made a number of fixes and improvements which motivates planning
+  for a SystemDS 3.2 release in the fall.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2022-05-03 (Shafaq Siddiqi)
+- Last committer added 2022-12-14 (Badrul Chowdhury)
+- There are currently 35 committers and 26 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 103 commits (+49%) in the last 3 months.
+- Community growth is healthy with 11 active contributors (+57%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-BS">2023-05-17</a> &mdash; Matthias Boehm<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end data
+science lifecycle from data preparation and cleaning, over efficient ML model
+training, to scoring and debugging. ML algorithms or pipelines are specified
+in a high-level language with R-like syntax, or related Python and Java APIs,
+and the system automatically generates hybrid runtime plans of local,
+in-memory operations and distributed operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- We recently released Apache SystemDS 3.1 on March 13.
+- Current work focuses on extending the compression framework, multi-backend
+  lineage-based reuse, and various data-centric ML primitives (DSL-based
+  builtins) for increased functionality.
+- After three of the top-5 contributors moved to TU Berlin end of last year
+  (which caused a dip in commit activities), we are ramping up the development
+  again.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2022-05-03 (Shafaq Siddiqi)
+- Last committer added 2022-12-14 (Badrul Chowdhury)
+- There are currently 35 committers and 26 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 69 commits (-23%) in the last 3 months.
+- Community growth is healthy with 7 active contributors (-13%) in the last 3
+  months
+- Communication is healthy, mailing list activity is improving, additional
+  work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-CM">2023-02-15</a> &mdash; Matthias Boehm<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- We are entering the release process for Apache SystemDS 3.1 soon,
+   the feature freeze is February 10
+- Current work focuses on extending the compression framework,
+   multi-backend lineage-based reuse, and various data-centric ML
+   primitives (DSL-based builtins) for increased functionality.
+- After three of the top-5 contributors moved to TU Berlin end of
+   last year (which caused a dip in commit activities), we are
+   ramping up the development again.
+- A discussion on the private mailing list on lowering the bar for
+   new committers came to the conclusion that besides the history
+   of contributions (in the past, ~20 commits) and representation
+   of the project, we will use the committer status more actively as
+   a means of motivation. At the same time, we will actively mitigate
+   implicit bias and keep a minimum bar of ~5 non-trivial commits,
+   in order to avoid an unintended impression of arbitrary decisions.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+   2015-11-02)
+- Last PMC members added 2022-05-03 (Shafaq Siddiqi)
+- Last committer added 2022-12-14 (Badrul Chowdhury)
+- There are currently 35 committers and 26 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 89 commits (+25%) in the last 3 months,
+   despite the holiday break.
+- Community growth is healthy with 8 active contributors (-20%)
+   in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+   additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#attachment-BR">2022-11-16</a> &mdash; Matthias Boehm<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- We released Apache SystemDS 3.0 end of June, as the first release
+   on Java 11, Spark 3, and Hadoop 3.
+- We are planning to release Apache SystemDS 3.1 end of December
+- Current work focuses on finalizing the federated learning backend,
+   efficient local and federated feature transformations, various
+   runtime improvements, a monitoring tool for federated learning,
+   as well as new primitives such as tuning data cleaning pipelines.
+- Three of the top-5 contributors recently moved to TU Berlin, which
+   increases the diversity of the active PMC, explains the temporary
+   30% drop in code activity, and ensures more resources for the
+   future development of Apache SystemDS.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+   2015-11-02)
+- Last PMC members added 2022-05-03 (Shafaq Siddiqi)
+- Last committer added 2021-09-23 (David Weissteiner)
+   but currently discussing a lower bar to motivate recent contributors
+- There are currently 34 committers and 26 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 71 commits (-31%) in the last 3 months.
+- Community growth is healthy with 10 active contributors (-37%)
+   in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+   additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-BQ">2022-08-17</a> &mdash; Matthias Boehm<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- We recently released Apache SystemDS 3.0, as the first release
+   on Java 11, Spark 3, and Hadoop 3.
+- Current work centers around finalizing the new federated learning
+   backend, efficient local and federated feature transformations,
+   various runtime improvements, and new primitives such as tuning
+   data cleaning pipelines
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+   2015-11-02)
+- Last PMC members added 2022-05-03 (Shafaq Siddiqi)
+- Last committer added 2021-09-23 (David Weissteiner)
+- There are currently 34 committers and 26 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 104 commits (-10%) in the last 3 months.
+- Community growth is healthy with 16 active contributors (+-0%)
+   in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+   additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-BL">2022-05-18</a> &mdash; Matthias Boehm<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- We are currently working on releasing Apache SystemDS 3.0,
+   which is the first release on Java 11, Spark 3, and Hadoop 3.
+- SystemDS 3.0 also comprises important new features including
+   federated learning and federated data cleaning/preparation,
+   data cleaning pipelines, task-parallel feature transformations,
+   generalized dynamic function loading and execution, as well as
+   lossless compression, reuse, and memory management
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+   2015-11-02)
+- Last PMC members added 2022-05-03 (Shafaq Siddiqi)
+- Last committer added 2021-09-23 (David Weissteiner)
+- There are currently 34 committers and 26 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 115 commits (-21%) in the last 3 months.
+- Community growth is healthy with 16 active contributors (-20%)
+   in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+   additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-BN">2022-02-16</a> &mdash; Matthias Boehm<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end data
+science lifecycle from data preparation and cleaning, over efficient ML model
+training, to scoring and debugging. ML algorithms or pipelines are specified
+in a high-level language with R-like syntax, or related Python and Java APIs,
+and the system automatically generates hybrid runtime plans of local,
+in-memory operations and distributed operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- We recently released Apache SystemDS 2.2 and switched the main branch to
+  Java 11, Spark 3, and Hadoop 3.
+- We are currently working on the next feature release including federated
+  learning and federated data cleaning/preparation, data cleaning pipelines,
+  task-parallel feature transformations, as well as lossless compression,
+  reuse, and memory management.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2021-10-18 (Janardhan Pulivarthi)
+- Last committer added 2021-09-23 (David Weissteiner)
+- There are currently 34 committers and 25 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 147 commits (+6%) in the last 3 months.
+- Community growth is healthy with 20 active contributors (+18%) in the last 3
+  months
+- Communication is healthy, mailing list activity is improving, additional
+  work on better documentation.
+
+## Releases:
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-BV">2021-11-17</a> &mdash; Matthias Boehm<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- We recently released Apache SystemDS 2.2 (last release on Java 8,
+Spark 2.x, and Hadoop 2.x) and now switched the main branch to
+Java 11, Spark 3, and Hadoop 3.
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+2015-11-02)
+- Last PMC members added 2021-10-18 (Janardhan Pulivarthi)
+- Last committer added 2021-09-23 (David Weissteiner)
+- There are currently 34 committers and 25 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 139 commits (-31%) in the last 3 months.
+- Community growth is healthy with 17 active contributors (-42%)
+in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-BQ">2021-08-18</a> &mdash; Matthias Boehm<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- We recently released Apache SystemDS 2.1 (likely, the last release on
+   Spark 2.x, Hadoop 2.x, and Java 8) with major improvements of existing
+   features, a large number of fixes, and several experimental features
+   to better support the end-to-end data science lifecycle
+- In the next months, we will switch to Spark 3, Hadoop 3, and Java 11,
+   and extend many features including our Python APIs, primitives
+   for lifecycle tasks such feature transformations and data cleaning,
+   as well as system internals such as federated learning, lineage-based
+   reuse, memory management, and lossless compression
+- A paper on SliceLine, a new model debugging feature in SystemDS,
+   won the SIGMOD 2021 Data Science and Engineering Best Paper Award
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+   2015-11-02)
+- Last PMC members added 2020-10-07 (Arnab Phani, Sebastian Baunsgaard)
+- Last committer added 2021-04-10 (Olga Ovcharenko)
+- There are currently 33 committers and 24 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 201 commits (+6%) in the last 3 months.
+- Community growth is healthy with 29 active contributors (+12%)
+   in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+   additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-BO">2021-05-19</a> &mdash; Matthias Boehm<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Project Status:
+- We are working towards the SystemDS 2.1 release (planned for June),
+   which will be the last release on Spark 2.x, Hadoop 2.x, and Java 8
+   (before switching to Spark 3, Hadoop 3, and Java 11).
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+2015-11-02)
+- Last PMC members added 2020-10-07 (Arnab Phani, Sebastian Baunsgaard)
+- Last committer added 2021-04-10 (Olga Ovcharenko)
+- There are currently 33 committers and 24 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 190 commits (+44%) in the last 3 months.
+- Community growth is healthy with 1 new committer and 26 active
+   contributors (+30%) in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+   additional work better documentation.
+
+## Releases:
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-BM">2021-02-17</a> &mdash; Matthias Boehm<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Project Status:
+- Current major focus areas are the new backend for federated learning,
+  various improvements across many components, and work towards an
+  additional release on Spark 2.x and Java 8 (before we potentially move
+  to Spark 3 and Java 11).
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- 2 new PMC members were added 2020-10-07
+  (Arnab Phani, Sebastian Baunsgaard)
+- 1 new committer was added 2021-02-08 (Sebastian Benjamin Wrede)
+- There are currently 32 committers and 24 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 132 commits (-42%) in the last 3 months.
+- Community growth is healthy with 1 new committer and 20 active
+  contributors (+33%) in the last 3 months
+- Communication is healthy, mailing list activity is improving.
+
+## Releases:
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-BL">2020-11-18</a> &mdash; Matthias Boehm<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle including data preparation and cleaning, as
+well as ML model training, scoring, and debugging. ML algorithms or
+pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system generates hybrid
+runtime plans of single node, in-memory operations and distributed
+operations on Apache Spark.
+
+## Project Status:
+- The SystemDS community successfully completed the major SystemDS
+   2.0.0 release as an important milestone, namely the first release
+   after merging Apache SystemML and SystemDS into Apache SystemDS
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+2015-11-02)
+- 2 new PMC members were added 2020-10-07 (Arnab Phani, Sebastian
+Baunsgaard)
+- There are currently 31 committers and 24 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 224 commits (+28%) in the last 3 months.
+- Community growth is healthy with 2 new PMC members and 15 active
+   contributors in the last 3 months
+- Communication is healthy mailing list activity is improving.
+
+## Releases:
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-BS">2020-09-16</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation, validation, and cleaning,
+over efficient ML training, to model debugging and deployment. Data
+scientists specify ML algorithms or ML pipelines in a high-level
+language with R-like syntax - or through related Python and Java APIs,
+and the system automatically generates hybrid runtime plans of single
+node, in-memory operations as well as distributed operations on top of
+Apache Spark.
+
+## Project Status:
+- The name change from Apache SystemML to Apache SystemDS has been
+   completed (thanks to the INFRA team for changing all relevant services
+   such as JIRA, Github URLs, website, and mailing lists).
+
+- We're currently in preparation of the SystemDS 2.0 release,
+   hopefully to be released by end of September.
+
+- Change PMC chair: According to the board feedback on our 08/2020
+   report, we had an explicit vote on changing the PMC chair, and this
+   resolution has been submitted to the board for approval.
+
+## Membership Data:
+- Apache SystemML - now SystemDS - was founded 2017-05-16
+   (incubator process entered 2015-11-02)
+- 4 new committers have been added 2020-05-01
+   (Arnab Phani, Mark Dokter, Shafaq Siddiqi, and Kevin Innerebner).
+- 1 new committer has been added 2020-06-08
+   (Sebastian Baunsgaard)
+- Rich Bowen has resigned from the PMC 2020-08-19
+- There are currently 31 committers and 22 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 175 commits in the last 3 months.
+- Community growth is healthy with 1 new committer and 20 active
+   contributors in the last 3 months
+- Communication is healthy but mailing list activity can be improved.
+
+## Releases:
+- Apache SystemML 1.2.0 was released on 2018-08-24.
+- SystemDS 0.2.0 was released (outside ASF) on 2020-03-24
+   https://github.com/tugraz-isds/systemds/releases
+- in progress of preparing the SystemDS 2.0 release
+   (for reconciling the previous SystemML and SystemDS version lines)
+
+## Answers to Board Questions:
+- ss: I'm unclear what this means, could you please clarify? "-
+       SystemDS 0.2.0 was released (outside ASF) on 2020-03-24"
+
+   ps: The situation is complicated by a merge and name change from
+       SystemML to SystemDS, but neither set of mailing lists seems to
+       have a release vote early this year.
+
+This statement referred to the System 0.2 release [1]. SystemDS was
+forked from Apache SystemML in Sep 2018, and this v0.2 was the last
+release of the forked, non-ASF open source system (Mar 2020). After
+PMC discussions end of 2019, we merged SystemDS with Apache SystemML
+in Apr 2020, to form Apache SystemDS.
+
+[1] https://github.com/tugraz-isds/systemds/releases/tag/v0.2.0
+
+- curcuru: Reminder: to change the PMC's chair, you should have a PMC
+            vote, and you must submit a resolution to the board.
+            https://apache.org/dev/pmc#newchair
+
+Thanks, I misinterpreted the guidelines. We now had a successful vote
+and we have submitted the resolution to the board.</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-BN">2020-08-19</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation, validation, and cleaning,
+over efficient ML training, to model debugging and deployment. Data
+scientists specify ML algorithms or ML pipelines in a high-level
+language with R-like syntax - or through related Python and Java APIs,
+and the system automatically generates hybrid runtime plans of single
+node, in-memory operations as well as distributed operations on top of
+Apache Spark.
+
+## Project Status:
+- The name change from Apache SystemML to Apache SystemDS has been
+   completed (thanks to the INFRA team for changing all relevant services
+   such as JIRA, Github URLs, website, and mailing lists).
+
+- We're currently in preparation the SystemDS 2.0 release,
+   hopefully to be released by end of August or soon thereafter.
+
+- Change project chair: The SystemDS PMC (including its chair Jon Deron
+   Eriksson) agreed to the resolution of making Matthias Boehm the new
+   SystemDS chair (see private@ message, May 13), and Matthias is happy
+   to take over this responsibility.
+
+## Membership Data:
+- Apache SystemML - now SystemDS - was founded 2017-05-16
+   (incubator process entered 2015-11-02)
+- 4 new committers have been added 2020-05-01
+   (Arnab Phani, Mark Dokter, Shafaq Siddiqi, and Kevin Innerebner).
+- 1 new committer has been added 2020-06-08
+   (Sebastian Baunsgaard)
+- There are currently 31 committers and 23 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 142 commits in the last 3 months.
+- Community growth is healthy with 1 new committer and 22 active
+   contributors in the last 3 months
+- Communication is healthy but mailing list activity can be improved.
+
+## Releases:
+- Apache SystemML 1.2.0 was released on 2018-08-24.
+- SystemDS 0.2.0 was released (outside ASF) on 2020-03-24
+- in progress of preparing the SystemDS 2.0 release
+   (for reconciling the previous SystemML and SystemDS version lines)</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-BM">2020-05-20</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+SystemML is a declarative large-scale machine learning (ML) system that
+allows the flexible specification of ML algorithms via an R-like syntax
+and automatically generates hybrid runtime plans of single node,
+in-memory operations as well as distributed operations on top of Apache
+Spark. SystemDS extends this scope to the end-to-end data science
+lifecycle (from data cleaning and preparation, over model training, to
+debugging and deployment) as well as privacy-preserving federated learning.
+
+## Project Status:
+- After an internal discussion and positive feedback, the SystemDS fork
+of Apache SystemML has been merged back into the Apache repository on
+2020-03-27. This merge preserved the history of individual commits (430)
+and respective contributors (16 of 17 new to SystemML).
+
+- The name change to Apache SystemDS has been approved
+(PODLINGNAMESEARCH-179), and we intend (after this report has been
+approved) to work with the INFRA team to change the Github repo, JIRA, etc.
+
+- Once the name change has been completed, we intend to release Apache
+SystemDS 2.0 (to continue the Apache SystemML releases, but clearly
+communicate the new scope).
+
+## Membership Data:
+- Apache SystemML was founded 2017-05-16 (incubator process entered
+2015-11-02)
+- There are currently 30 committers and 23 PMC members in the project.
+- 4 new committers have been added 2020-05-01 (Arnab Phani, Mark Dokter,
+Shafaq Siddiqi, and Kevin Innerebner).
+
+## Activity and Health:
+- Code activity is healthy with 149 commits in the last 3 months.
+- Community growth is healthy with 4 new committers and 20 active
+contributors in the last 3 months
+- Communication is healthy but mailing list activity can be improved.
+
+## Releases:
+- Apache SystemML 1.2.0 was released on 2018-08-24.
+- SystemDS 0.2.0 was released (outside ASF) on 2020-03-24</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-BN">2020-02-19</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+Little development has happened in the main project in the last year. On the
+private list, there is discussion about merging an active fork of SystemML
+back into the main project. This fork is SystemDS, led by Matthias Boehm, the
+largest contributor to SystemML. Matthias has proposed nominating the 4 most
+active SystemDS team members to be committers. He has stated that he would
+require that the project name is changed to SystemDS. He has discussed this
+name change process with Mark Thomas. The responses on the private list
+regarding merging of the active fork have been positive.
+
+## Membership Data:
+Apache SystemML was founded 2017-05-16 (3 years ago)
+There are currently 26 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:6.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Arvind Surve on 2017-05-16.
+- No new committers. Last addition was Guobao Li on 2018-08-28.
+
+## Project Activity:
+There was one commit to the project this quarter.
+One pull request was opened and closed this quarter.
+The most recent release was 1.2.0 on Aug 24, 2018.
+
+## Community Health:
+The community is currently unhealthy.
+There is little email activity.
+Community health should significantly improve if SystemDS is merged into the
+main project.
+
+## Answers to Board Questions:
+
+myrle: Thank you for your clear and frank assessment of the state of
+       the project community. Is it time to retire SystemML?
+
+Henry Saputra initiated a discussion about possibly retiring SystemML to the
+attic. In this discussion, the possibility of merging the active SystemDS fork
+into the main Apache project was discussed. All responses on the private list
+to the proposal to merge SystemDS into SystemML have been positive.</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#attachment-BM">2019-11-20</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+There were no commits to the project this quarter. Activity on the project has
+largely stopped.
+
+## Membership Data:
+Apache SystemML was founded 2017-05-16 (2 years ago)
+There are currently 26 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:6.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Arvind Surve on 2017-05-16.
+- No new committers. Last addition was Guobao Li on 2018-08-28.
+
+## Project Activity:
+There has been only 1 commit since May.
+No pull requests have been opened or closed since May.
+The most recent release was 1.2.0 on Aug 24, 2018.
+
+## Community Health:
+The community is unhealthy.
+There is little email activity.
+Adding significant features to the project in the future will be difficult
+without support from existing contributors with a deep knowledge of SystemML,
+and these contributors do not appear to be active anymore.
+
+## Answers to Board Questions:
+
+myrle: Thank you for answering my question. Are there any plans to
+       add new committers or make the existing committers PMC
+       members? It might help with project activity levels and with
+       working through your hanging pull requests
+
+Currently there are no plans to add new committers since there is so little
+activity on the project. There are only 2 commits from people who are
+not already committers in the last year. WRT PMC members, 23 of the 26
+committers are already PMC members, and there is no activity in the last year
+from 2 of the 3 committers who are not PMC members, and only 3 commits from
+the other committer, so my feeling is that making existing committers PMC
+members probably would not help jumpstart project activity.</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-BL">2019-08-21</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+Project activity has dropped off significantly this quarter.
+
+## Membership Data:
+Apache SystemML was founded 2017-05-17 (2 years ago)
+There are currently 26 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:6.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Arvind Surve on 2017-05-17.
+- No new committers. Last addition was Guobao Li on 2018-08-29.
+
+## Project Activity:
+Activity has dropped significantly.
+- There were 3 emails on the dev list this quarter.
+- There has been only 1 commit since May.
+- No pull requests have been opened or closed this quarter.
+
+The most recent release was 1.2.0 on Aug 24, 2018.
+
+## Community Health:
+The SystemML community currently is unhealthy.
+Email activity appears to indicate a declining interest in the project.
+Activity has dropped off from the two most active committers to the
+project in the last year (114 of the 135 total commits). This is concerning
+in terms of community health because it will make it difficult to review
+new contributions without the assistance of existing committers with a
+deep knowledge of the project.
+
+## Answers to Board Questions:
+
+ mk: I notice you have some very old pull requests that haven't
+      received feedback. j143-bot in particular seems to be getting
+      "starved". Do you have enough active committers to handle
+      contributions from non-committers?
+
+Great question. I believe j143-bot/j143-zz/j143 all refer to one of our
+most active committers (with over 30 commits) in the past 2 years. I
+believe the SystemML community has done a great job of welcoming
+contributions from both committers and non-committers in the past. However,
+I do believe this will be difficult to do in the future (not enough active
+committers) if the current activity trend continues.</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-BL">2019-05-15</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - SystemML provides declarative large-scale machine learning (ML) that aims
+   at flexible specification of ML algorithms and automatic generation of
+   hybrid runtime plans ranging from single node, in-memory computations, to
+   distributed computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+
+ - The latest release, 1.2.0, was approved on August 24th, 2018.
+ - No new committers were added this quarter.
+
+## Health report:
+
+ - Code activity is healthy with 27 commits in the last 3 months.
+ - Community growth is healthy with our last new committer approved in August.
+ - Communication on the dev mailing list is significantly up. 126 emails were
+   sent to the dev list this quarter.
+
+## PMC changes:
+
+ - Currently 23 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Arvind Surve on Tue May 16 2017
+
+## Committer base changes:
+
+ - Currently 26 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Guobao Li at Tue Aug 28 2018
+
+## Releases:
+
+ - Last release was 1.2.0, released on Fri Aug 24 2018
+
+## Mailing list activity:
+
+ - We observed significantly higher email traffic to dev and issues.
+
+ - dev@systemml.apache.org:
+    - 109 subscribers (down -4 in the last 3 months):
+    - 126 emails sent to list (6 in previous quarter)
+
+ - issues@systemml.apache.org:
+    - 14 subscribers (down -1 in the last 3 months):
+    - 60 emails sent to list (23 in previous quarter)
+
+
+## JIRA activity:
+
+ - 20 JIRA tickets created in the last 3 months
+ - 12 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-BQ">2019-02-20</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- The latest release, 1.2.0, was approved on August 24th, 2018.
+- No new committers were added this quarter.
+
+## Health report:
+
+- Code activity is healthy with 25 commits in the last 3 months.
+- Community growth is healthy with our last new committer approved in August.
+- Communication on the dev mailing list is down. 6 emails were sent to the dev
+  list this quarter.
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- No new PMC members were added in the last 3 months.
+
+## Committer base changes:
+
+- Currently 26 committers.
+- No new committers added in the last 3 months.
+- Guobao Li was added as a committer on August 28, 2018.
+
+## Releases:
+
+- Version 1.2.0 was released on August 24, 2018.</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-BN">2018-11-21</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- The latest release, 1.2.0, was approved on August 24th, 2018.
+- One new committer was added this quarter.
+
+## Health report:
+
+- Code activity is healthy with 69 commits in the last 3 months.
+- Community growth is healthy with our last new committer approved in August.
+- Communication on the dev mailing list is down. 30 emails were sent to the
+  dev list this quarter but no emails in the last 2 months.
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- No new PMC members were added in the last 3 months.
+
+## Committer base changes:
+
+- Currently 26 committers.
+- Guobao Li was added as a committer on August 28, 2018.
+
+## Releases:
+
+- Version 1.2.0 was released on August 24, 2018.</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-BH">2018-08-15</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- The latest release, 1.1.0, was approved on March 28, 2018.
+- No new committers were added this quarter.
+- Release planning for 1.2 was discussed on the mailing list but no action has
+  been taken so far.
+
+## Health report:
+
+- Code activity is healthy with 232 commits in the last 3 months.
+- Community growth is relatively healthy with our last new committer approved
+  in March.
+- Communication is healthy on pull requests. Communication on the mailing list
+  is down but there were still 61 emails sent to the list this quarter.
+
+## PMC changes:
+
+ - Currently 23 PMC members.
+ - No new PMC members have been added since we became a top-level project.
+
+## Committer base changes:
+
+ - Currently 25 committers.
+ - Janardhan Pulivarthi was added as a committer on March 19, 2018.
+
+## Releases:
+
+ - Version 1.1.0 was released on March 28, 2018.</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#attachment-BK">2018-05-16</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- The Apache SystemML 1.1.0 release was approved on March 28, 2018.
+- We added our second committer since becoming a top-level project.
+- We are currently planning our 1.2 release.
+
+## Health report:
+
+- Code activity is healthy with 226 commits in the last 3 months.
+- Community growth is healthy with our last new committer approved in March.
+- Communication is healthy on mailing list, JIRAs, and pull requests.
+
+## PMC changes:
+
+ - Currently 23 PMC members.
+ - No new PMC members have been added since we became a top-level project.
+
+## Committer base changes:
+
+ - Currently 25 committers.
+ - Janardhan Pulivarthi was added as a committer on March 19, 2018.
+
+## Releases:
+
+ - Version 1.1.0 was released on March 28, 2018.</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#attachment-BJ">2018-02-21</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- The Apache SystemML 1.0.0 release was approved on December 12, 2017.
+- We added our first new committer since becoming a top-level project on
+  October 25, 2017.
+- We are currently planning our 1.1 release.
+
+## Health report:
+
+- Code activity is healthy with 237 commits in the last 3 months.
+- Community growth is healthy with our last new committer approved in October.
+- Communication is healthy on mailing list, JIRAs, and pull requests.
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- Felix Sch&uuml;ler was elected as PMC member on April 19, 2017.
+
+## Committer base changes:
+
+- Currently 24 committers.
+- Krishna Kalyan was added as a committer on October 25, 2017.
+
+## Releases:
+
+- Version 1.0.0 was released on December 12, 2017.</pre>
+<h3 id="2017-11-15"><a href="2017/board_minutes_2017_11_15.html#attachment-BP">2017-11-15</a> &mdash; Jon Deron Eriksson<a class="headerlink" href="#2017-11-15" title="Permalink">&para;</a></h3>
+<pre>[REPORT] Apache SystemML - November 2017
+
+## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- We graduated as an Apache top-level project on May 18, 2017.
+- Our first top-level project release (0.15.0) was approved on September,
+  13, 2017.
+- We added our first new committer since becoming a top-level project on
+  October 25, 2017.
+- We are planning our 1.0.0 release.
+
+## Health report:
+
+- Code activity is healthy with 270 commits in the last 3 months.
+- Community growth is healthy with 1 new contributor and 1 new committer in
+  the last 3 months.
+- Communication is healthy on mailing list, JIRAs, and pull requests.
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- Felix Sch&uuml;ler was elected as PMC member on April 19, 2017.
+
+## Committer base changes:
+
+- Currently 24 committers.
+- Krishna Kalyan was added as a committer on October 25, 2017.
+
+## Releases:
+
+- Version 0.15.0 was released on September 13, 2017.</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-BK">2017-09-20</a> &mdash; Deron Eriksson<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- We graduated as an Apache top-level project on May 18, 2017.
+- Third phase of GSoC project completed to automate performance testing.
+- We are currently voting on our first top-level project release (0.15.0).
+
+## Health report:
+
+- Code activity is healthy with 285 commits in the last 3 months.
+- Community growth is healthy with 4 new contributors in the last 3 months.
+- Communication at a healthy level on mailing list, JIRAs, and pull requests.
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- Felix Sch&uuml;ler was elected as PMC member on April 19, 2017.
+
+## Committer base changes:
+
+- Currently 23 committers.
+- Felix Sch&uuml;ler was elected as committer on April 19, 2017.
+
+## Releases:
+
+- Version 0.14.0-incubating was released on May 8, 2017.</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-BN">2017-08-16</a> &mdash; Deron Eriksson<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- We graduated as an Apache top-level project on May 18, 2017.
+- We are working towards our first top-level project release.
+- Second phase of GSoC project completed to automate performance testing.
+
+## Health report:
+
+- Code activity is healthy with 299 commits in the last 3 months.
+- Community growth is healthy with 4 new contributors in the last 2 months.
+- Communication at a healthy level on mailing list, JIRAs, and pull requests.
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- Felix Sch&uuml;ler was elected as PMC member on April 19, 2017.
+
+## Committer base changes:
+
+- Currently 23 committers.
+- Felix Sch&uuml;ler was elected as committer on April 19, 2017.
+
+## Releases:
+
+- Version 0.14.0-incubating was released on May 8, 2017.</pre>
+<h3 id="2017-07-19"><a href="2017/board_minutes_2017_07_19.html#attachment-BP">2017-07-19</a> &mdash; Deron Eriksson<a class="headerlink" href="#2017-07-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- We graduated as an Apache top-level project on May 18, 2017.
+- We continue to work towards our first release (1.0.0) as an Apache top-
+level project.
+- First phase of GSoC project completed to automate performance testing and
+reporting by Krishna Kalyan and mentored by Nakul Jindal.
+
+## Health report:
+
+- Code activity is healthy with 324 commits in the last 3 months.
+- Community growth looks healthy. 3 new contributors in the last month.
+- Communication at a healthy level.
+- SystemML GitHub mirror has 538 stars and 197 forks.
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- Felix Sch&uuml;ler was elected as PMC member on April 19, 2017.
+
+## Committer base changes:
+
+- Currently 23 committers.
+- Felix Sch&uuml;ler was elected as committer on April 19, 2017.
+
+## Releases:
+
+- Version 0.14.0-incubating was released on May 8, 2017.
+
+## Mailing list activity:
+
+- dev@systemml.apache.org:
+ - 111 subscribers (up 4 in the last 3 months):
+ - 326 emails sent to list (353 in previous quarter)
+
+- issues@systemml.apache.org:
+ - 11 subscribers (up 2 in the last 3 months):
+ - 1437 emails sent to list (1405 in previous quarter)
+
+## JIRA activity:
+
+- 248 JIRA tickets created in the last 3 months
+- 188 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#attachment-BF">2017-06-21</a> &mdash; Deron Eriksson<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Activity:
+
+- We graduated as an Apache top-level project on May 18, 2017.
+- We are working towards our first release as a top-level project.
+
+## Health report:
+
+- Code contribution is at a healthy level with 342 commits in the last 3
+  months.
+- Community growth looks healthy. 1 new PMC member and 4 new contributors
+  in the last 3 months.
+- Communication at a healthy level.
+
+## PMC changes:
+
+- Currently 23 PMC members.
+- Felix Sch&uuml;ler was elected as PMC member on April 19, 2017.
+
+## Committer base changes:
+
+- Currently 23 committers.
+- Felix Sch&uuml;ler was elected as committer on April 19, 2017.
+
+## Releases:
+
+- Version 0.14.0-incubating was released on May 8, 2017.
+
+## Mailing list activity:
+
+- dev@systemml.apache.org:
+   - 110 subscribers (up 6 in the last 3 months)
+   - 334 emails sent to list (315 in previous quarter)
+
+- issues@systemml.apache.org:
+   - 10 subscribers (up 1 in the last 3 months)
+   - 1439 emails sent to list (1077 in previous quarter)
+
+## JIRA activity:
+
+- 282 JIRA tickets created in the last 3 months
+- 217 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-05-17"><a href="2017/board_minutes_2017_05_17.html#systemml">2017-05-17</a> &mdash; as SystemML, in the Incubator's report<a class="headerlink" href="#2017-05-17" title="Permalink">&para;</a></h3>
+<pre>SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Grow SystemML community: increase mailing list activity,
+   increase adoption of SystemML for scalable machine learning, encourage data
+   scientists to adopt DML algorithm scripts, respond to user feedback to
+   ensure SystemML meets the requirements of real-world situations, and present
+   talks about SystemML.
+  2. Continue to produce releases.
+  3. Increase the diversity of our project's contributors and committers.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+ NONE.
+
+How has the community developed since the last report?
+ Our mailing list from February through April had 350 messages on a variety
+ of topics. We gained 1 new contributor to the project since February 1. On
+ GitHub, the project has been starred 487 times and forked 184 times.
+
+How has the project developed since the last report?
+ The main project has had 334 commits since February 1. 112 pull requests have
+ been created since February 1, and 103 pull requests have been closed. Since
+ February 1, 348 issues have been reported on our JIRA site and 249 of these
+ have been resolved.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [ ] Working towards first release
+  [X] Community building
+  [X] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  2017-03-02 (version 0.13.0-incubating)
+
+When were the last committers or PPMC members elected?
+  2017-05-01 Felix Sch&uuml;ler (PPMC)
+
+Signed-off-by:
+
+  [x](systemml) Luciano Resende
+     Comments:
+  [X](systemml) Henry Saputra
+     Comments:
+  [ ](systemml) Patrick Wendell
+     Comments:
+  [ ](systemml) Reynold Xin
+     Comments:
+  [ ](systemml) Rich Bowen
+     Comments:
+
+IPMC/Shepherd notes:
+
+    Drew Farris (shepherd): Healthy activity on the mailing lists.
+       Two mentors active. Looking good.</pre>
+<h3 id="2017-02-27"><a href="2017/board_minutes_2017_02_27.html#systemml">2017-02-27</a> &mdash; as SystemML, in the Incubator's report<a class="headerlink" href="#2017-02-27" title="Permalink">&para;</a></h3>
+<pre>SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations running on Apache Hadoop MapReduce and Apache Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+1. Grow SystemML community: increase mailing list activity, increase
+   adoption of SystemML for scalable machine learning, encourage data
+   scientists to adopt DML and PyDML algorithm scripts, respond to user
+   feedback to ensure SystemML meets the requirements of real-world
+   situations, write papers, and present talks about SystemML.
+2. Continue to produce releases.
+3. Increase the diversity of our project's contributors and committers.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+NONE.
+
+How has the community developed since the last report?
+
+Our mailing list from November through January had 249 messages on a
+variety of topics. We gained 2 new contributors to the project since
+November 1. On GitHub, the project has been starred 451 times and forked
+168 times. Elgamal et al wrote the paper "SPOOF: Sum-Product Optimization
+and Operator Fusion for Large-Scale Machine Learning," which was presented
+at CIDR'17 in January.
+
+How has the project developed since the last report?
+
+The main project has had 114 commits since November 1. 90 pull requests
+have been created since November 1, and 79 pull requests have been closed.
+Since November 1, 143 issues have been reported on our JIRA site and 64 of
+these have been resolved or closed.
+
+Date of last release:
+
+2016-11-13 (version 0.11.0-incubating)
+
+When were the last committers or PPMC members elected?
+
+2017-01-19 Nakul Jindal (Committer and PPMC)
+
+Signed-off-by:
+
+[x](systemml) Henry Saputra
+[x](systemml) Luciano Resende
+[ ](systemml) Patrick Wendell
+[ ](systemml) Reynold Xin
+[ ](systemml) Rich Bowen</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#systemml">2016-11-16</a> &mdash; as SystemML, in the Incubator's report<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations running on Apache Hadoop MapReduce and Apache Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+- Grow SystemML community: increase mailing list activity,
+  increase adoption of SystemML for scalable machine learning, encourage
+  data scientists to adopt DML and PyDML algorithm scripts, respond to
+  user feedback to ensure SystemML meets the requirements of real-world
+  situations, write papers, and present talks about SystemML.
+- Continue to produce releases.
+- Increase the diversity of our project's contributors and committers.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+NONE.
+
+How has the community developed since the last report?
+
+Our mailing list from August through October had 375 messages on a wide
+range of topics. We have gained 4 new contributors to the main project since
+August 1st. Our website has been redesigned with the help of several design
+engineers and we have commits from 3 new contributors to the website
+project. On GitHub, the project has been starred 417 times and forked 156
+times.
+
+Niketan Pansare gave a talk with the title "Apache SystemML - Declarative
+Machine Learning at Scale" on October 7th in the CS graduate seminar at UC
+Merced. Matthias Boehm gave a talk on "Compressed Linear Algebra for Large-
+Scale Machine Learning" at TU Dresden on August 30th. We presented the
+papers "Compressed Linear Algebra for Large-Scale Machine Learning"
+(research paper + poster) and "SystemML: Declarative Machine Learning on
+Spark" (industry paper) at VLDB'16. The "Compressed Linear Algebra for
+Large-Scale Machine Learning" paper won the VLDB 2016 Best Paper Award. We
+gave two 90 minute tutorials at the BOSS'16 workshop, co-located with
+VLDB'16, and our paper "SPOOF: Sum-Product Optimization and Operator Fusion
+for Large-Scale Machine Learning" has been accepted at CIDR'17.
+
+How has the project developed since the last report?
+
+The main project has had 213 commits since August 1. The website project has
+had 51 commits since August 1. Since August 1, 241 issues have been reported
+on our JIRA site and 137 issues have been resolved or closed. 79 pull
+requests have been created since August 1, and 72 pull requests have been
+closed.
+
+Date of last release:
+
+2016-06-15 (version 0.10.0-incubating)
+
+When were the last committers or PMC members elected?
+
+2016-05-07 Glenn Weidner
+2016-05-07 Faraz Makari Manshadi
+
+Signed-off-by:
+
+[x](systemml) Luciano Resende
+[ ](systemml) Patrick Wendell
+[ ](systemml) Reynold Xin
+[ ](systemml) Rich Bowen</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#systemml">2016-08-17</a> &mdash; as SystemML, in the Incubator's report<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations running on Apache Hadoop MapReduce and Apache Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+- Grow SystemML community: increase mailing list activity,
+  increase adoption of SystemML for scalable machine learning, encourage
+  data scientists to adopt DML and PyDML algorithm scripts, respond to
+  user feedback to ensure SystemML meets the requirements of real-world
+  situations, write papers, and present talks about SystemML.
+- Continue to produce releases.
+- Increase the diversity of our project's contributors and committers.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+NONE.
+
+How has the community developed since the last report?
+
+Our mailing list from May through July had 237 messages including a wide
+range of topics. We have gained 6 new contributors since May 1st. On
+GitHub, the project has been starred 365 times and forked 129 times. Fred
+Reiss spoke at Spark Summit West on June 7 about building custom machine
+learning algorithms with SystemML. Mike Dusenberry presented about
+SystemML on May 19 at Datapalooza Denver. Elgohary, Boehm, Haas, Reiss,
+and Reinwald published Compressed Linear Algebra for Large-Scale Machine
+Learning.
+
+How has the project developed since the last report?
+
+We produced our second Apache release, version 0.10.0-incubating. The
+project has had 205 commits since May 1. 187 issues have been reported on
+our JIRA site and 127 issues have been resolved. 70 pull requests have
+been created since May 1, and 63 of these have been closed.
+
+Date of last release:
+
+2016-06-15 (version 0.10.0-incubating)
+
+When were the last committers or PMC members elected?
+
+2016-05-07 Glenn Weidner
+2016-05-07 Faraz Makari Manshadi
+
+Signed-off-by:
+
+[x](systemml) Luciano Resende
+[ ](systemml) Patrick Wendell
+[ ](systemml) Reynold Xin
+[ ](systemml) Rich Bowen</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#systemml">2016-05-18</a> &mdash; as SystemML, in the Incubator's report<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations running on Apache Hadoop MapReduce and Apache Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+- Grow SystemML community: increase mailing list activity,
+  increase adoption of SystemML for scalable machine learning, encourage
+  data scientists to adopt DML and PyDML algorithm scripts, respond to
+  user feedback to ensure SystemML meets the requirements of real-world
+  situations, write papers, and present talks about SystemML.
+- Continue to produce releases.
+- Increase the diversity of our project's contributors and committers.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+NONE.
+
+How has the community developed since the last report?
+
+Our mailing list from February through April had 199 messages involving
+topics such as algorithms, DML functionality, usability, and bug fixes. In
+addition, we have had many discussions on our JIRA site and in pull
+request conversations. Fred Reiss presented at Spark Summit East on
+February 17 about SystemML internals. Berthold Reinwald spoke at the Spark
+Technology Center on March 9 about scalable machine learning with
+SystemML. Niketan Pansare spoke on April 28 at Datapalooza in Austin and
+on April 29 at Rice University about declarative machine learning at scale
+with SystemML. Researchers in Germany are working to add Flink as an
+additional SystemML backend. On GitHub, the project has been starred 267
+times and forked 92 times. We have gained two new contributors since
+February 1st.
+
+How has the project developed since the last report?
+
+We produced our first Apache release, version 0.9.0-incubating. Numerous
+additions have been made to the project, including core functionality,
+usability improvements, and documentation. The project has had 204 commits
+since February 1. In the same time frame, 155 new issues have been
+reported on our JIRA site and 77 issues have been resolved. 114 pull
+requests opened since Febrary 1 have been closed. We are preparing to
+produce our second incubator release.
+
+Date of last release:
+
+2016-02-15 (version 0.9.0-incubating)
+
+When were the last committers or PMC members elected?
+
+NONE
+
+Signed-off-by:
+
+[x](systemml) Luciano Resende
+[ ](systemml) Patrick Wendell
+[ ](systemml) Reynold Xin
+[ ](systemml) Rich Bowen</pre>
+<h3 id="2016-02-17"><a href="2016/board_minutes_2016_02_17.html#systemml">2016-02-17</a> &mdash; as SystemML, in the Incubator's report<a class="headerlink" href="#2016-02-17" title="Permalink">&para;</a></h3>
+<pre>SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to
+distributed computations running on Apache Hadoop MapReduce and Apache
+Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+  - Grow SystemML community: increase mailing list activity,
+    increase adoption of SystemML for scalable machine learning, encourage
+    data scientists to adopt DML and PyDML algorithm scripts, respond to
+    user feedback to ensure SystemML meets the requirements of real-world
+    situations, write papers, and present talks about SystemML.
+  - Produce a release (in progress).
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  NONE. We have resolved our blocking infrastructure issues related to
+  project JIRA.
+
+How has the community developed since the last report?
+
+  Our mailing list in January had 123 messages (7 of which were Jenkins). We
+  have had several useful discussions on the mailing list concerning various
+  aspects of SystemML. We have had several additional discussions on our
+  JIRA site and in our Pull Request conversations. We have received
+  usability feedback which includes filing JIRA issues and mailing list
+  activity.
+
+How has the project developed since the last report?
+
+  Numerous additions have been made to the project, including core
+  functionality, usability improvements, and documentation. The project has
+  had 96 commits since January 6. In the last 30 days, 126 new issues have
+  been reported on our JIRA site and 68 issues have been resolved. We are in
+  the process of producing our first Apache release, version 0.9.0.  RC3
+  passed the SystemML PMC vote and is currently being voted on by the IPMC.
+
+Date of last release:
+
+  NONE
+
+When were the last committers or PMC members elected?
+
+  NONE
+
+Signed-off-by:
+
+  [x](systemml) Luciano Resende
+  [ ](systemml) Patrick Wendell
+  [ ](systemml) Reynold Xin
+  [ ](systemml) Rich Bowen
+
+Shepherd/Mentor notes:</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#systemml">2016-01-20</a> &mdash; as SystemML, in the Incubator's report<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to
+distributed computations such as Apache Hadoop MapReduce and Apache Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+1. Grow SystemML community: increase mailing list activity,
+   increase adoption of SystemML for scalable machine learning, encourage
+   data scientists to adopt DML and PyDML algorithm scripts, respond to
+   user feedback to ensure SystemML meets the requirements of real-world
+   situations, write papers, and present talks about SystemML.
+2. Core library improvements, including Apache Spark integration.
+3. Produce a release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+The community has been blocked by INFRA-10714 since November.
+Beginning Jan 6th, we are manually updating the missing fields in JIRA so
+that we can properly manage project issues and delegate issues to new
+users to grow our community.
+
+How has the community developed since the last report?
+
+Users have asked several excellent questions on the dev list, and existing
+committers are actively helping these users. The project is receiving pull
+requests from contributors, committers have discussed these pull requests
+with their contributors, and contributions have been merged into the
+project.  Matthias Boehm has presented talks regarding the SystemML
+Optimizer at TU Dresden, HTW Dresden, and TU Berlin. Fred Reiss presented
+a talk on Dec 8th.
+
+How has the project developed since the last report?
+
+Numerous core library improvements have been made to project. Additional
+documentation has been created to help new users. The test suite has been
+refactored to increase maintainability and performance. Contributions have
+been made by non-IBM contributors. We are developing our 2016 roadmap,
+as seen in the "[DISCUSS] Project Roadmap" thread on the mailing list at
+&lt;http://s.apache.org/9hK&gt;.
+
+Date of last release:
+
+NONE
+
+When were the last committers or PMC members elected?
+
+NONE
+
+Signed-off-by:
+
+[x](systemml) Luciano Resende
+[ ](systemml) Patrick Wendell
+[ ](systemml) Reynold Xin
+[ ](systemml) Rich Bowen
+
+Shepherd/Mentor notes:</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#systemml">2015-12-16</a> &mdash; as SystemML, in the Incubator's report<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to
+distributed computations such as Apache Hadoop MapReduce and Apache Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+1. Grow SystemML community: increase mailing list activity,
+   increase adoption of SystemML for scalable machine learning, encourage
+   data scientists to adopt DML and PyDML algorithm scripts, respond to
+   user feedback to ensure SystemML meets the requirements of real-world
+   situations, write papers, and present SystemML at conferences.
+2. Core library improvements, including Apache Spark integration.
+3. Improved SystemML documentation to lower the learning curve.
+4. Produce a release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+The community is blocked, and expects that the SystemML Apache JIRA
+site will be available shortly, as detailed in INFRA-10714.
+
+How has the community developed since the last report?
+
+We have started to see few non original committers ask questions on the
+dev list, and the existing committers are actively helping these
+contributors.
+
+How has the project developed since the last report?
+
+All infrastructure, except for JIRA, are in place and in use by the
+community.
+
+Date of last release:
+
+NONE
+
+When were the last committers or PMC members elected?
+
+NONE
+
+Signed-off-by:
+
+[x](systemml) Luciano Resende
+[ ](systemml) Patrick Wendell
+[ ](systemml) Reynold Xin
+[ ](systemml) Rich Bowen
+
+Shepherd/Mentor notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

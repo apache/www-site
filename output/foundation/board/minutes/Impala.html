@@ -1,0 +1,2628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Impala | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Impala';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Impala';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Impala</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="impala">Impala<a class="headerlink" href="#impala" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-06-19</td>
+<td><a href="2024/board_minutes_2024_06_19.html#section-7A">Appointed Zolt&aacute;n Bor&oacute;k-Nagy</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2017-11-15</td>
+<td><a href="2017/board_minutes_2017_11_15.html#section-7D">Appointed Jim Apple</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017-11-15</td>
+<td><a href="2017/board_minutes_2017_11_15.html#section-7D">Establish the Apache Impala Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-AJ">2026-08-19</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+
+Issues for the board: None
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (9 years ago)
+There are currently 72 committers and 42 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Stephen Carlin was added to the PMC on 2026-07-31
+- No new committers. Last addition was No&eacute;mi Pap-Tak&aacute;cs on 2025-03-12.
+
+## Project Activity:
+- Apache Calcite planner integration
+- Apache Iceberg V3 support
+- New type-system work: VARIANT, UUID
+- Histogram-Based Optimization
+- Kubernetes operator and Helm chart support
+- OpenTelemetry integration
+- Lineage improvements for UPDATE/MERGE statements
+- Event-processing scalability
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 4250 emails to that list in June, July,
+and August (until 4th)</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-AH">2026-05-20</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: None
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (8 years ago)
+There are currently 72 committers and 41 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jason Fehr on 2025-09-10.
+- No new committers. Last addition was No&eacute;mi Pap-Tak&aacute;cs on 2025-03-12.
+
+## Project Activity:
+- Integration with Apache Calcite
+- Apache Iceberg V3 support
+- Iceberg metadata handling optimizations
+- Event processing improvements
+- Lineage improvements
+- Event processor improvements
+- Parquet reader enhancements
+- Observability improvements
+- OpenTelemetry integration
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 2888 emails to that list in March, Apry,
+and May (until 12nd)</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-AL">2026-02-18</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: None
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (8 years ago)
+There are currently 72 committers and 41 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jason Fehr on 2025-09-10.
+- No new committers. Last addition was No&eacute;mi Pap-Tak&aacute;cs on 2025-03-12.
+
+## Project Activity:
+- In progress integration with Apache Calcite
+- Apache Iceberg V3 support
+- Support for Apache Paimon
+- Integration with OpenTelemetry
+- Geospatial improvements
+- Enhancements to aggregated runtime profiles
+- Resurrect Apache Hive 2 support
+- impala-shell improvements
+- Memory optimizations of admission control
+- SAML2 for web ui
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 3093 emails to that list in December, January,
+and February (until 11th)</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-AL">2025-11-19</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: None
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (8 years ago)
+There are currently 72 committers and 41 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Jason Fehr was added to the PMC on 2025-09-10
+- No new committers. Last addition was No&eacute;mi Pap-Tak&aacute;cs on 2025-03-12.
+
+## Project Activity:
+- In progress integration with Apache Calcite
+- Iceberg REST support improvements
+- Multi catalog support
+- Initial work on Apache Paimon support
+- Integration with OpenTelemetry
+- Tuple caching enhancements
+- Hierarchical event processor
+- Optimizations for JDBC tables
+- Test infra improvements
+- Enable aggregated runtime profiles
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 2916 emails to that list in September, October,
+and November (until 11th)</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-AH">2025-08-20</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (8 years ago)
+There are currently 73 committers and 41 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Peter Rozsa on 2025-03-21.
+- No new committers. Last addition was No&eacute;mi Pap-Tak&aacute;cs on 2025-03-12.
+
+## Project Activity:
+- Working on Iceberg REST catalog integration
+- Command for remove orphan files of Iceberg table
+- Calcite planner integration
+- Planner enhancements
+- ipv6 support
+- CatalogD stabilization
+- Tuple cache improvements
+- Commands for query cancellation
+- Enhancements to Impala's web UI
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 3761 emails to that list in June, July,
+and August (until 12th)</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-AC">2025-05-21</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (7 years ago)
+There are currently 73 committers and 41 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- Peter Rozsa was added to the PMC on 2025-03-21
+- No&eacute;mi Pap-Tak&aacute;cs was added as committer on 2025-03-12
+
+## Project Activity:
+- Improvements to the Iceberg integration
+- Adding support for Iceberg REST Catalog
+- Continuous work on the new Calcite planner
+- Fixes in the legacy planner
+- Intermediate result caching
+- AI functions
+- Web UI improvements
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were around 4000 emails to that list in March, April,
+and May (until 9th)</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-AF">2025-02-19</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (7 years ago)
+There are currently 72 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Riza Suminto on 2024-03-06.
+- No new committers. Last addition was Stephen Carlin on 2024-11-01.
+
+## Project Activity:
+- New release is in progress: Impala 4.5.0
+- Added user quotas to Admission Control
+- Calcite planner integration
+- MERGE statement
+- Improvement for Iceberg integration: puffin stats, memory usage optimizations
+- Query timelines
+- OAuth support
+- Various perf improvements
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 3320 emails to that list in December, January,
+and February (until 10th)</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-AE">2024-11-20</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: None
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (7 years ago)
+There are currently 72 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Riza Suminto on 2024-03-06.
+- Jason Fehr was added as committer on 2024-08-27
+- Stephen Carlin was added as committer on 2024-11-01
+
+## Project Activity:
+Over the last three months, the Impala community has implemented the following:
+- MERGE statement for Iceberg tables
+- Progress was made on the new Calcite planner
+- Enabling new Clang tidy checks
+- Improved Workload Management features
+- Perf improvements to Iceberg V2 tables
+- Reading column statistics from Puffin files
+- Improved visualization of query timelines
+- Filtering criteria for the OPTIMIZE statement
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were a bit over 3000 emails to that list in September, October,
+and November (until 11th)</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-AE">2024-08-21</a> &mdash; Zolt&aacute;n Bor&oacute;k-Nagy<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (7 years ago)
+There are currently 70 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Riza Suminto on 2024-03-06.
+- No new committers. Last addition was Zihao Ye on 2024-03-24.
+
+## Project Activity:
+Impala 4.4.0 was released on May 25th
+Impala 3.4.2 was released on June 22nd
+
+Over the last three months, the Impala community has implemented the following:
+- Continuous work on using Calcite for query planning
+- Improvements and fixes for the current query planner
+- Improvements to CatalogD and event handling
+- Iceberg V2 read performance improvements
+- JDBC table enhancements
+- Numerous bug fixes
+- Performance improvements
+- Test improvements
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 2100 emails to that list in June, July, and Aug (until 9th)</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-AF">2024-05-15</a> &mdash; Jim Apple<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Healthy and active
+Issues for the board: None
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (6 years ago)
+There are currently 70 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 7:4.
+
+Community changes, past quarter:
+- Riza Suminto was added to the PMC on 2024-03-06
+- Zihao Ye was added as committer on 2024-03-24
+- Peter Rozsa was added as committer on 2024-03-02
+
+## Project Activity:
+Over the last three months, the Impala community has implemented the following:
+- Numerous test fixes and test coverage improvements.
+- Enhancements for Data Source table Scanner
+- New features for Iceberg table format:
+   - Query nested columns from metadata views
+   - Create table with primary keys
+   - SHOW METADATA TABLES IN
+- Intermediate result caching node
+- Query history table
+- JDBC table enhancements
+- Observability enhancements for query profiles
+- Enhancements for BINARY type
+- Event processor bug fixes and improvements
+- Introduced Calcite in query planning for simple queries
+- Numerous bug fixes
+- Numerous performance improvements
+
+The last release (4.3) was in last October, however, 4.4 is on the way now.
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were a bit over 4000 emails to that list in March, April,
+and May (until 8th)</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-AJ">2024-03-20</a> &mdash; Jim Apple<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (6 years ago)
+There are currently 69 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Riza Suminto was added to the PMC on 2024-03-06
+- Peter Rozsa was added as committer on 2024-03-02
+
+## Project Activity:
+Over the last three months, the Impala community has implemented the following:
+- Improvements Iceberg support (UPDATE, equality deletes, metadata tables)
+- Table maintenance operations for Iceberg tables (OPTIMIZE)
+- Workload management functionalities
+- Improvements to the event processor
+- Improvements to JSON support
+- Impala to Impala federation
+- Predicate push down to external data sources
+- Various optimizations (count star, intra-node communication, etc.)
+- Numerous bug fixes
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 3628 emails to that list in January, February, and March (until 15th)</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#section-6AF">2024-02-21</a> &mdash; Jim Apple<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-AO">2024-01-17</a> &mdash; Jim Apple<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (6 years ago)
+There are currently 68 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Michael Smith was added to the PMC on 2023-11-02
+- No new committers. Last addition was Gergely F&uuml;rnst&aacute;hl on 2023-08-12.
+
+## Project Activity:
+The latest release was 4.3.0 on 2023-10-03.
+
+Over the last three months, the Impala community has implemented the following:
+- Improved support for JDK 17, aarch64, Python 3, and Unicode names
+- Improvements to Iceberg support
+- A graphical timeline view of query execution
+- Support for querying external RDBMS via JDBC
+- Improved memory tracking for codegen caching
+- High availability for Impala's Statestore
+- Implemented small string optimization for StringValue to speed serialization
+- Improvements to Hive Metastore event processing
+- Improvements to cardinality estimation
+- Improvements to runtime filter aggregation
+- Numerous bug fixes
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were 3921 emails to that list in October, November, and December.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#section-6AK">2023-12-20</a> &mdash; Jim Apple<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#section-6AD">2023-11-15</a> &mdash; Jim Apple<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-AM">2023-08-16</a> &mdash; Jim Apple<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (6 years ago)
+There are currently 67 committers and 38 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Andrew Sherman on 2023-04-20.
+- Kurt Deschler was added as committer on 2023-07-03
+
+## Project Activity:
+
+The latest release was 4.1.2 on 2023-04-10.
+
+Over the last three months, the Impala community has implemented the
+following:
+
+- Fixed numerous race conditions and one null pointer exception
+- Fixed several build failures (flaky pre-merge tests)
+- Improved compatibility with JDK, aarch64, cgroups, Redhat and Ubuntu, LLVM,
+  OpenSSL, and Spring
+- Improved compatibility with Apache projects Ozone, Maven, Hive, Iceberg,
+  Avro, Hadoop, Atlas, Ranger, Thrift, Kudu, and ORC
+- Added high availability to the catalog service
+- Added support for building DEB and RPM packages
+- Improved performance on TPC-DS
+- Fixed two query correctness bugs
+- Made many improvements to cardinality estimations
+
+## Community Health:
+
+In answer to the question about community health from the last board report,
+each patch produces several emails - every review, commit, new version of a
+patch, and bot linter run produces an email.
+
+reviews@ is the most reliable metric of Impala community activity level. There
+were 4042 emails to that list in June, July, and August.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-AG">2023-05-17</a> &mdash; Jim Apple<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (5 years ago)
+There are currently 66 committers and 38 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Andrew Sherman was added to the PMC on 2023-04-21
+- Fang-Yu Rao was added as committer on 2023-03-10
+
+Inactive PMC members:
+After the recent message from the ASF Board about PMC member responsibilities
+we've identified 13 PMC members who are not subscribed to the project's private@
+mailing list. We sent them an initial reminder about their responsibilities
+hoping they become active again.
+
+## Project Activity:
+4.1.2 was released on 2023-04-10.
+4.2.0 was released 2022-12-12.
+
+The Impala community had implemented the following over the last three
+months:
+- Bug fixes for nested types handling
+- Various improvements on the Web UI
+- Apache Iceberg support improvements
+- Apache Kudu support improvements
+- Fix for incorrectly written Iceberg test data
+- Added Hive's ESRI geospatial functions
+- Document changes
+- Various performance improvements
+- Improved logging for different existing features
+- Apache Ozone support improvements
+- Introduced support for OBS file system
+- Various test fixes
+- Switch to C++17
+- Bumped versions for various dependencies
+- Improved decision making in query Planner
+- Various improvements for Python3 support
+- Fixes and improvements for impala-shell
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level. There
+were 3606 emails to that list in February, March and April together. This is one
+of the highest numbers for a quarter in recent years. Impala remains a vibrant
+project.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-AK">2023-02-15</a> &mdash; Jim Apple<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (5 years ago)
+There are currently 65 committers and 37 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Daniel Becker was added to the PMC on 2023-01-16
+- Yida Wu was added as committer on 2023-01-20
+- Li Penglin was added as committer on 2022-12-20
+- Michael Smith was added as committer on 2022-11-07
+
+## Project Activity:
+
+The Impala community had implemented the following over the last three months:
+
+- Improved support for Apache projects including Iceberg, Hadoop,
+  Ozone, Thrift, Ranger, Hive, Parquet, Avro, Hudi, and Kudu
+- Multiple dependency upgrades due to their CVEs
+- Multiple tracing and debugging improvements
+- Multiple fixes for flaky tests
+- Numerous documentation fixes
+- Some tightening of authorization constraints
+- DDL support for bucketed tables
+- Improved support for Docker and for Ubuntu 16.04
+- Made the docs much prettier
+- Added support for Aliyun Object Storage Service
+- Fixed multiple crashes
+
+
+## Community Health:
+
+4.2.0 was released 2022-12-12.
+
+reviews@ is the most reliable metric of Impala community activity
+level. There were 2980 emails to that list in November, December, and
+January. Impala remains a vibrant project.</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#attachment-AE">2022-11-16</a> &mdash; Jim Apple<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of
+software related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (5 years ago)
+There are currently 63 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Tam&aacute;s M&aacute;t&eacute; on 2022-07-10.
+- No new committers in August, September, and October. Michael Smith
+  was added as committer on 2022-11-07
+
+## Project Activity:
+
+ - Improved support for Apache projects including Hadoop, Iceberg,
+   Hive, Ozone, Commons, Kudu, Ranger, ORC, Parquet, Tez, and Thrift
+ - Improved support for Guava, Jackson, AWS S3, Tencent COS, Ubuntu
+   18+, log4j 1.x -&gt; reload 4j, Docker, Java 11, Redhat and
+   Redhat-based Linux distributions, Spring, flatbuffers, GCC 10.4,
+   Docker, zlib, and zstd
+ - Reduced compile times and built binaries' size
+ - Improved debugging support
+ - Increased decimal performance
+ - Added support for TBLPROPERTIES on views
+ - Fixed multiple flaky tests
+ - Fixed multiple memory leaks
+ - Added support for map type in SELECT list
+ - Added support for TLS 1.3
+ - Added support for BINARY columns
+ - Made multiple improvements to code review tooling
+
+## Community Health:
+
+reviews@ is the most reliable metric of Impala community activity
+level. There were 3847 emails to that list in August, September, and
+October. Impala remains a vibrant project.
+
+4.1.1 was released on 2022-10-20.</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-AE">2022-08-17</a> &mdash; Jim Apple<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (5 years ago)
+There are currently 62 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Tam&aacute;s M&aacute;t&eacute; was added to the PMC on 2022-07-10
+- Riza Suminto was added as committer on 2022-05-27
+
+## Project Activity:
+
+ - Improved support for Apache projects including Iceberg, Parquet,
+   Ozone, Kudu, Hive, Avro, HBase, ORC, Ranger, Thrift, Tez, YARN, and
+   Hadoop
+ - Improved support for re2, Google Cloud, Ubuntu 20, Kerberos,
+   CentOS, and Tlinux
+ - Multiple improvements to the build system
+ - Improved support for timestamps
+ - Improved support for views
+ - Fix multiple undefined behaviors in C++ code
+ - Multiple flaky test improvements
+ - Multiple improvements to our Python test and shell environments,
+   including transposed result printing
+ - Increase security of transport protocols by eliminating default
+   support for RC4
+ - Support for various statistical UDAFs
+
+## Community Health:
+
+reviews@ is the most reliable metric of Impala community activity
+level. There were 3083 emails to that list in May, June, and
+July. Impala remains a vibrant project.
+
+4.1.0 was released on 2022-06-01.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-AA">2022-05-18</a> &mdash; Jim Apple<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (4 years ago).
+There are currently 61 committers and 35 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Laszlo Gaal on 2022-01-20.
+- No new committers. Last addition was Daniel Becker on 2021-12-07.
+
+## Project Activity:
+
+ - Improved support for compatibility with Apache projects Iceberg,
+   ORC, Hive, Ranger, Parquet, Thrift, and Kudu
+ - Many fixes for flaky tests
+ - Improved support for materialized views
+ - Upgraded Spring past three CVEs
+ - Upgraded other packages past other CVEs
+ - Numerous performance improvements, including some queries improved
+   by 50% or more
+
+## Community Health:
+reviews@ is the best gauge of Impala community activity. There were
+2532 emails to reviews@ in the last three months; Impala remains a
+busy community.
+
+The most recent release was Impala 3.4.1, on 2022-04-07.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-AB">2022-02-16</a> &mdash; Jim Apple<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (4 years ago).
+There are currently 61 committers and 35 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Laszlo Gaal was added to the PMC on 2022-01-20.
+- Amogh Margoor was added as committer on 2021-11-23.
+- Daniel Becker was added as committer on 2021-12-07.
+
+## Project Activity:
+- Improved support for compatibility with Apache projects Iceberg,
+  Parquet, Kudu, Hive, DataSketches, ORC, and HBase
+- Improved support for or compatibility with protobuf, Java UDFs,
+  Boost, glog, gutil, the HTTP/1.1 RFC, and PEP-0503
+- Support for multiple resource groups (unfinished)
+- Fixes for multiple flaky tests
+- Faster query analysis for queries containing VALUES()
+- Multiple fixes for more consistent metadata change application
+- Support for Tencent Cloud Object Storage
+- Support for zipping when unnesting arrays
+
+## Community Health:
+reviews@ is the best gauge of Impala community activity. There were
+2180 emails to reviews@ in the last three months; Impala remains a
+busy community.
+
+The most recent release was Impala 4.0.0, on 2021-07-12.</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-AF">2021-11-17</a> &mdash; Jim Apple<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (4 years ago)
+There are currently 59 committers and 34 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Vihang Karajgaonkar on 2021-06-03.
+- No new committers. Last addition was Wenzhe Zhou on 2021-07-09.
+
+## Project Activity:
+
+During August, September, and October, the Impala community:
+
+- Improved support for integrations with Apache projects Ozone, ORC,
+  Iceberg, Hive, Ranger, Kudu, DataSketches, Parquet, and HDFS
+
+- Improved integration with non-Apache projects, formats, or protocols
+  S3, CentOS 7, PyPi, flame graphs, Docker, and LDAP
+
+This quarter few new features landed that weren't integrations as
+mentioned above. Most other patches were bug fixes.
+
+## Community Health:
+
+Perhaps the most stable indicator of Impala activity is reviews@,
+which registers an email for each code review, each submit, and each
+Jenkins job completion. This decreased this quarter to 2415 from 2819,
+a 14% decline. Impala is still a thriving community.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-AD">2021-08-18</a> &mdash; Jim Apple<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (4 years ago)
+There are currently 59 committers and 34 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Vihang Karajgaonkar was added to the PMC on 2021-06-03
+- Qifan Chen was added as committer on 2021-06-25
+- Tam&aacute;s M&aacute;t&eacute; was added as committer on 2021-06-11
+- Wenzhe Zhou was added as committer on 2021-07-09
+
+## Project Activity:
+
+Impala 4.0.0 was released on 2021-07-12.
+
+CVE-2021-28131 was filed, fixed, and announced.
+
+The Impala community also accomplished:
+
+ * Increased compatibility with other Apache projects, including
+   Parquet, Hive, Iceberg, ORC, Ranger, Kudu, DataSketches
+ * Improved support for z-order
+ * Added functionality to impala-shell (a rarely touched part of the
+   codebase)
+ * Added support for JSON Web Tokens ("JWT")
+ * Added more support for running Impala in containers
+ * Fixed multiple DDL race conditions
+ * Added multiple planner heuristic improvements to join cardinality
+   estimates
+ * Added multiple expansions to use of min/max filters
+ * Added some support for Alibaba cloud
+ * Made multiple fixes to ACID table support
+
+## Community Health:
+
+Perhaps the most stable indicator of Impala activity is reviews@,
+which registers an email for each code review, each submit, and each
+Jenkins job completion. This decreased this quarter to 2902 from 3153,
+an 8% decline. Impala is still a thriving community.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-AC">2021-05-19</a> &mdash; Jim Apple<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (3 years ago)
+There are currently 56 committers and 33 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Csaba Ringhofer on 2020-02-18.
+- No new committers. Last addition was Abhishek Rawat on 2020-12-08.
+
+## Project Activity: During February, March, and April, the Impala
+community:
+
+ * Upgrad dependencies: DataSketches, thrift, Impyla, Bzip2, LZ4,
+   Snappy, Zlib, ZStd, urllib3, python requests, Paramiko,
+   springframework, JacksonDatabing, and slf4j
+ * Added improvements to compatibility with ABFS, RHEL 8, Iceberg, S3,
+   Ubuntu 20.04, Ranger, Kudu, Calcite, Google Cloud Storage, UTF-8,
+   Hive, ORC, and docker hub
+ * Addressed reliability for failed nodes and teardowns
+ * Added result spooling
+ * De-flaked many tests
+ * Added most components needed for supporting external frontends
+ * Added support for spilling to S3
+
+## Community Health:
+
+The community is overall healthy. This quarter has a common amount of
+variability in some previous metrics. It is not infrequent that this
+variability has no plainly obvious cause.
+
+ * 157 patches were committed this quarter, vs. 153 the previous
+   quarter
+ * 212 tickets were opened, up 24%, and 152 tickets were closed, down 67%
+ * reviews@ traffic was up 33% to 3288 emails</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-AD">2021-02-17</a> &mdash; Jim Apple<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (3 years ago)
+There are currently 56 committers and 33 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Csaba Ringhofer on 2020-02-18.
+- Abhishek Rawat was added as committer on 2020-12-08
+
+## Project Activity: During November, December, and January, the Impala
+community added support (or improved support) for:
+
+ - Codegen in the sorter
+
+ - FIPS compliance
+
+ - More sketches from Apache DataSketches
+
+ - Cookie authentication in impala-shell
+
+ - Numerous fixes for flaky tests, including many with timing requirements that
+   were too tight
+
+ - More support for parallelism within a single node ("dop")
+
+ - Role-related statements using Apache Ranger
+
+ - Unicode
+
+ - An admission control daemon
+
+ - More integration with Apache Iceberg
+
+## Community Health:
+
+The community is overall healthy. This quarter has a common amount of
+variability in some previous metrics. It is not infrequent that this
+variability has no plainly obvious cause, though the US holiday season is
+sometimes correlated with lower activity.
+
+ - 2,576 reviews were sent to reviews@, 39% down from the previous
+   quarter. This metric is the most notable change.
+
+ - 170 new JIRA tickets were filed, 28% lower than the previous quarter.
+
+ - 153 patches were committed this quarter, 15% down from last quarter. There
+   is a notable dip around Christmas, in which weekly commits increased from 3
+   to 22 within a week.
+
+ - Notable increases in activity are visible in total JIRA traffic as well as a
+   125% increase in JIRAs closed.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-Z">2020-11-18</a> &mdash; Jim Apple<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (3 years ago)
+There are currently 55 committers and 33 PMC members in this project.
+The Committer-to-PMC ratio is 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Csaba Ringhofer on 2020-02-18.
+- Aman Sinha was added as committer on 2020-09-08
+- Shant Hovsepian was added as committer on 2020-10-13
+- Sheng Wang was added as committer on 2020-11-06
+
+## Project Activity: During August, September, and October, the Impala community
+added support (or improved support) for:
+
+ - More Iceberg support, including ALTER TABLE, INSERT INTO for (non-partitioned
+   tables), ORC, and more
+
+ - Movement towards FIPS compliance
+
+ - Error message readability and location improvements
+
+ - System internals visibility improvements into artifacts like like queues and
+   skews
+
+ - Daily aarch64 build-and-test runs
+
+ - Many more patches than a typical quarter about developer
+   experience. Eyeballing it, maybe twice as much? This includes fixing some
+   long-standing build and test issues.
+
+ - Impala's first patches from contributors at @tencent.com
+
+ - The addition of support for Alluxio
+
+ - First SIMD support outside of the x86-64 family
+
+## Community Health:
+
+The community is overall healthy. This quarter has a common amount of
+variability in some previous metrics. It is not infrequent that this
+variability has no plainly obvious cause.
+
+ - 4,278 reviews were sent to reviews@, 2% down from the previous quarter
+
+ - 272 new JIRA tickets were filed vs. 315 last quarter
+
+ - 184 patches were committed this quarter, 5% down from last quarter
+
+ - user@ and saw traffic decrease (31 emails to 19), while dev@ saw it increase
+   (73 emails to 89)</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-AD">2020-08-19</a> &mdash; Jim Apple<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (3 years ago)
+There are currently 52 committers and 33 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Csaba Ringhofer on 2020-02-18.
+- Anurag Mantripragada was added as committer on 2020-05-13
+
+## Project Activity:
+This quarter, the Impala community added support (or improved support) for:
+ - GROUPING, INTERSECT DISTINCT, EXCEPT DISTINCT, and uncorrelated subqueries
+   in HAVING
+ - Development environment bootstrapping with GCC 7 and on Ubuntu 20.04 and
+   SLES12 sp5
+ - Sanitizers like ASAN and TSAN in developer testing
+ - Asynchronous code execution so a query can start in interpreted mode and
+   switch to native code when code generation is complete
+ - TPCDS queries in the test suite
+ - Running in containerized environments
+
+The Impala community improved compatibility with other Apache projects by:
+ - Adopting Apache DataSketches KLL structure for quantile estimation
+ - Recognizing the new ASF URL practices when downloading Maven and Ant
+ - Improving support for Apache Hive ACID tables
+ - Adding Apache Iceberg CREATE TABLE support
+ - Adding a number of Apache Kudu compatibility improvements
+ - Supporting Apache Parquet FIXED_LEN_BYTE_ARRAY DECIMAL
+ - Supporting Apache Hadoop Ozone in "load data inpath"
+
+The Impala community removed some or all support for the following in the 4.0
+branch:
+ - Dateless timestamps
+ - Impala-lzo
+ - Sentry
+ - Hive 2
+
+## Community Health:
+
+The community is overall healthy. This quarter has a common amount of
+variability in some previous metrics. It is not infrequent that this
+variability has no plainly obvious cause.
+
+ - Commits are down this quarter from 221 to 197.
+ - Six community members authored their first patch.
+ - JIRAs created is down to 315 from 360; JIRAs resolved are up
+   to 357 from 243. A significant number of these are Later, WontFix,
+   CannotReproduce, etc.
+ - user@ traffic is up 50% to 30 emails; dev@ traffic is down 48% to 69 emails.</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-AC">2020-05-20</a> &mdash; Jim Apple<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (2 years ago) There are currently 51
+committers and 33 PMC members in this project. The Committer-to-PMC ratio is
+roughly 3:2.
+
+Community changes, past quarter:
+- Csaba Ringhofer was added to the PMC on 2020-02-18
+- Norbert Luksa was added as committer on 2020-04-09
+
+## Project Activity:
+
+ - Support for Apache Hudi tables
+ - 3.4.0 release and move of HEAD to 4.0, allowing breaking changes to land
+ - Fix numerous flaky tests caused by races, including many found using
+   ThreadSanitizer.
+ - Improvements to interoperability (or interoperability documentation) with
+   many Apache projects, including Parquet, Kudu, Ranger, HDFS Ozone, and ORC
+ - Continued significant efforts towards aarch64 support
+ - Improvements to zstd read support
+ - Reduction in duplicate codegen work by sharing codegen models between
+   fragment instances
+ - Numerous improvements to Kerberos ergonomics
+ - Significant performance improvements via query rewrites as well as work
+   sharing of codegen and join builds
+ - Support for CentOS 8.1 and Ubuntu 18.04
+
+## Community Health:
+
+Activity on most metrics increased last quarter: dev@ +86%, issues@
++56%, reviews@ +33%, commits +37%.</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-AC">2020-02-19</a> &mdash; Jim Apple<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Impala is the creation and maintenance of software
+related to a high-performance distributed SQL engine
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (2 years ago) There are currently 50
+committers and 32 PMC members in this project. The Committer-to-PMC ratio is
+roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Fredy Wijaya on 2019-07-27.
+- No new committers. Last addition was Laszlo Gaal on 2019-06-19.
+
+## Project Activity:
+
+ - Discussions on a release of 3.4 have begun
+ - Planner and executor improvements for multi-threaded execution
+ - Improvements to tests on ACID tables
+ - Continued iterations on local catalog mode
+ - The enablement of primary/foreign key hints during table creation
+ - A number of improvements to test reproducability
+ - A correctness fix for negative zero
+ - Numerous improvements to ORC file handling
+ - Several Apache Ranger related improvements, including support for column
+   masking
+ - Ten tickets with activity on aarch64 support; Impala has traditionally only
+   supported x86-64
+
+## Community Health:
+
+Activity on many metrics decreased last quarter. This is typical for the
+project, and it corresponds to the US holiday season.
+
+The most prominent decrease was in the number of commits, which was down to
+164. The November-December-January quarter has, in years past, seen 238, 258,
+     310, 199, and 183 commits (reverse chronological order).</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#attachment-AA">2019-11-20</a> &mdash; Jim Apple<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Impala is a high-performance distributed SQL engine.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (2 years ago)
+There are currently 50 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+ - No new PMC members. Last addition was Fredy Wijaya on 2019-07-27.
+ - No new committers. Last addition was Laszlo Gaal on 2019-06-19.
+
+## Project Activity:
+Notable activity in the last quarter includes:
+
+ - Version 3.3.0 was released on August 22
+ - A number of correctness and functional-parity fixes for
+   transactional tables and their tests. Transactional tables are
+   relatively new in Impala
+ - A number of minor improvements to the webui
+ - Improves memory estimation for clusters with dedicated coordinators
+   (i.e. nodes that are not acting as executors)
+ - Continued support for the new catalog version in the pre-merge
+   tests
+ - A JSON formatting of the query profile. For years, the query
+   profile has been unstable, in that the developers reserved the
+   right to change it or its formatting at any time. This is a first
+   step in the direction of stability, which could increase usability
+   and allow tooling built on top of the profile to be more reliable.
+ - Support for .DEFLATE text data files in tables
+ - By default, limits SQL statements to 16 million characters or fewer
+ - A variety of improvements to compatibility with other Apache
+   projects, including Knox, Tez, Derby, Kudu, Ranger, and Hive
+ - The publication of CVE-2019-10084
+ - Support for cookie-based authentication
+ - Numerous improvements to the end-stages of query lifespans,
+   including some enhancements in resource deallocation
+ - A large number of commits about spooling, which had zero presence
+   in the commit log before July of 2019
+ - Some support for ZORDER
+ - The addition of DATE support for Avro files; the removal of DATE
+   support for the year 0
+ - Support for distributable impala-shell. It can be installed
+   from pypi
+
+## Community Health:
+While the number of commits labeled a "fix" has held steady over the
+last three quarters at 58, 54, and 59, this last quarter the number of
+non-"fix" commits dropped to 196 from 252 and 247 the previous
+quarters. Impala has not had this few commits (of any flavor) in an
+August-September-October timeframe before (although the repository
+contains an anomaly in which almost all pre-2014 commits landed in a
+single moment in January 2014).
+
+Overall activity is a mixed bag, but mostly down, with a decrease in
+email traffic, JIRA activity, and number of distinct patch authors, in
+addition to the commit number mentioned above. Furthermore, there is
+usually a lull in activity during our November-December-January
+reporting quarter due to US holidays.
+
+While this is a slowdown, development activity is still high in the
+context of open-source projects, with dozens of patch authors and
+activity on hundreds of JIRAs.</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-AE">2019-08-21</a> &mdash; Jim Apple<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Impala is a high-performance distributed SQL engine.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Impala was founded 2017-11-14 (2 years ago)
+There are currently 50 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Bikramjeet Vig was added to the PMC on 2019-05-29
+- Fredy Wijaya was added to the PMC on 2019-07-27
+- Gabor Kaszab was added to the PMC on 2019-05-22
+- Andrew Sherman was added as committer on 2019-06-07
+- Laszlo Gaal was added as committer on 2019-06-19
+- Sahil Takiar was added as committer on 2019-05-22
+- Vihang Karajgaonkar was added as committer on 2019-05-14
+
+## Project Activity:
+Notable activity in the last quarter includes:
+
+ - Numerous commits related to support for Hive's ACID table format
+ - Improvements to the consideration of nodes as individual executors
+   or coordinators, including:
+     - Improvements to admission control and executor pool management when
+       there is a dedicated coordinator
+     - "Executor groups", a feature that allows users to run different
+       queries in disjoint sets of executors
+     - The addition of admission control parameters that scale with
+       the number of executors
+ - Improvements the developer experience on Docker
+ - Increased compatibility with Apache projects, including Hive 3,
+   erasure coding and S3Guard in HDFS, page skipping and Zstd and lz4
+   compression in Parquet, and miscellaneous compatibility improvements
+   for Ranger, Knox, Kudu, and Atlas
+ - The addition of several built-in functions for the DATE type as
+   well as the ability to read and write DATE in Parquet
+ - Move closer to deprecating the Beeswax protocol by adding HS2
+   support to the Impala shell
+ - Numerous patches improving tracing, logging, and metrics
+ - Multiple improvements to build times or isolation
+ - The addition of a data cache for remote reads, improving TPC-DS
+   performance on S3 by 30% in one scenario, which made S3 performance
+   as good as HDFS-on-EBS
+
+## Community Health:
+By almost all metrics, Impala activity is down quarter-over-quarter
+and year-over-year. That said, the project is still very active, with
+each day featuring approximately:
+
+ - Three commits
+ - Two dev@ emails
+ - 25 JIRA updates
+ - 70 code reviews or patch updates</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-AB">2019-05-15</a> &mdash; Jim Apple<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Impala is a high-performance distributed SQL engine.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity and health report:
+
+The previous three months had 237 patches to the master branch, while this
+three-month period had 286. This is likely the recovery from the usual
+seasonal dip around the end of each calendar year.
+
+Prominent work in the last three months includes:
+
+ - An admission controller debugging page
+
+ - Thousands of lines of new planner tests
+
+ - A number of improvements to the shell scripts used to build and to start
+   the various daemons
+
+ - A few patches that reduced the disk space needed for development by tens of
+   gigabytes
+
+ - Support for development on Ubuntu 18.04.
+
+ - Support for Apache Ranger and decoupling Apache Sentry
+
+ - Support for complex types in ORC files
+
+ - Better hardware detection
+
+ - Compatibility with Hive 3.x for data loading and the Metastore
+
+ - Numerous improvements to metrics and counters
+
+ - Continued work on supporting Docker in development environments and in
+   production
+
+ - Initial support for a timeless DATE type
+
+Health is a subjective metric, but the increased compatibility with other open
+source and Apache projects is a good sign, as is the nine new patch authors.
+
+## PMC changes:
+
+ - Currently 29 PMC members.
+ - Quanlong Huang was added to the PMC on Sun Mar 10 2019
+
+## Committer base changes:
+
+ - Currently 46 committers.
+ - New committers:
+    - Pooja Nilangekar was added as a committer on Tue Apr 09 2019
+    - Paul Rogers was added as a committer on Mon Feb 04 2019
+
+## Releases:
+
+ - 3.2.0 was released on Wed Mar 27 2019
+
+## JIRA activity:
+
+ - 326 JIRA tickets created in the last 3 months
+ - 296 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-AG">2019-02-20</a> &mdash; Jim Apple<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Impala is a high-performance distributed SQL engine.
+
+## Activity:
+
+The previous three months had 330 patches to the master branch, while this
+three-month period had 237. This is likely a seasonal dip.
+
+Prominent work in the last three months includes:
+
+ - The revival of the 2.x branch
+
+ - Modernization of the documentation of the HBase integration
+
+ - Significant changes to enable Impala to run better in containers
+
+ - Improvements to the user experience of dealing with changing metadata
+
+ - Multiple improvements to profile statistics
+
+ - Numerous build process improvements for performance
+
+ - Support for reading additional Parquet field types
+
+## Health report:
+
+The project remains healthy and metrics (number of commits, bugs filed, and
+mailing list activity) remain healthy.
+
+Three new contributors had patches committed.
+
+## PMC changes:
+
+ - Currently 28 PMC members.
+ - Zolt&aacute;n Bor&oacute;k-Nagy was added to the PMC on Thu Jan 03 2019
+
+## Committer base changes:
+
+ - Currently 45 committers.
+ - Paul Rogers was added as a committer on Mon Feb 04 2019
+ - Zoram Thanga was added as a committer on Fri Nov 16 2018
+
+## Releases:
+
+ - 3.1.0 was released on Wed Dec 05 2018
+
+## Mailing list and JIRA activity:
+
+Activity dropped, consistent with a seasonal dip during US holidays that
+Impala sees every year: reviews@, issues@, dev@ traffic decreased by about
+30%.</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-AD">2018-11-21</a> &mdash; Jim Apple<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Impala is a high-performance distributed SQL engine.
+
+## Activity:
+
+The previous three months had 350 patches to the master branch, while this
+three-month period had 330.
+
+Prominent work in the last three months includes:
+
+ - Support for multiple DISTINCT
+
+ - The first Apache two-dot release (3.0.1) was made; normally we only do
+   x.y.0 releases. This was done to fix two security issues.
+
+ - Official CentOS support for developers.
+
+ - A number of changes to make the C++ code have a reduced number of undefined
+   behaviors.
+
+ - Support for Hadoop's connector for Azure's new storage system,
+   "Azure Data Lake Storage Gen2".
+
+ - Multiple improvements in resource estimation and resource management.
+
+ - Continued improvements in "local catalog" mode.
+
+ - The addition of builtin JSON parsing functions.
+
+ - Graceful node shutdown (with drain/quiesce).
+
+## Health report:
+
+The project remains healthy and metrics (number of commits, bugs filed, and
+mailing list activity) remain healthy.
+
+Four new contributors had patches committed.
+
+## PMC changes:
+
+ - Currently 27 PMC members.
+ - Joe McDonnell was added to the PMC on Mon Aug 20 2018
+
+## Committer base changes:
+
+ - Currently 44 committers.
+ - Quanlong Huang was added as a committer on Thu Aug 23 2018
+
+## Releases:
+
+ - 3.0.1 was released on Tue Oct 23 2018
+
+## Mailing list activity:
+
+Mailing lists metrics that held steady:
+
+ - user@: 83 emails sent in the past 3 months, 87 in the previous cycle.
+
+Mailing list metrics that changed more:
+
+ - dev@: 205 emails sent in the past 3 months, 299 in the previous cycle.
+   There is no obvious immediate cause and this is likely just statistical
+   fluctuation.
+
+ - reviews@: 7312 emails sent in the past 3 months, 5638 in the previous
+   cycle.
+
+## JIRA activity:
+
+ - 409 JIRA tickets created in the last 3 months
+
+ - 386 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-AB">2018-08-15</a> &mdash; Jim Apple<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Impala is a high-performance distributed SQL engine.
+
+## Issues:
+
+As mentioned in the May report, Impala asked Google to add a disclaimer to
+their "IMPALA: Scalable Distributed DeepRL in DMLab-30"[0] acknowledging that
+the ASF owns the Impala trademark. Google had declined to do so, but as of
+June 5th, they
+"made a decision to launch the code by reference to its full name
+(Importance Weighted Actor-Learner Architecture) - i.e. we will no longer be
+ using the acronym IMPALA".
+
+A project named "Palo" was accepted into the Incubator as "Doris". It is based
+on a forked Impala code base and a few Impala PMC members have expressed
+concern about some of their previous practices from a community-oriented
+perspective. These were addressed directly by the Palo/Doris community in the
+incubation proposal and there will hopefully be upcoming opportunities for
+both projects to start more direct contributions to each other.
+
+## Activity:
+
+The previous three months had 364 patches to the master branch, while this
+three-month period had 350.
+
+Prominent work in the last three months includes:
+
+ - The release of Impala 3.0
+ - The start of a very large effort to enable Impala to run without catalogd,
+   which can sometimes be a bottleneck
+ - A number of improvements to developer workflow, including documentation
+   build changes and improvements to automate our CI system even more
+ - The addition of fine-grained privileges
+
+A new book with multiple chapters about Impala was published,
+"Next-Generation Big Data: A Practical Guide to Apache Kudu, Impala, and
+ Spark", by Butch Quinto.
+
+## Health report:
+
+The project remains healthy and the cadence of most metrics (number of
+commits, emails, releases) is steady compared to previous quarters.
+
+One notable change is user@, which declined in volume by roughly 64%. The
+previous quarter, some large threads dominated user@:
+
+ - A user inquiry on local join vs. exchange (10%)
+ - A user inquiry on installation on Ubuntu (10%)
+ - A user inquiry on admission control (7%)
+ - A user inquiry on memory estimation (10%)
+
+## PMC changes:
+
+ - Currently 26 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Philip Zeyliger on Sun Apr 22 2018
+
+## Committer base changes:
+
+ - Currently 42 committers.
+ - New committers:
+   - Attila Jeges was added as a committer on Fri May 18 2018
+   - Zolt&aacute;n Bor&oacute;k-Nagy was added as a committer on Fri May 04 2018
+   - Csaba Ringhofer was added as a committer on Mon May 28 2018
+   - Fredy Wijaya was added as a committer on Mon Jun 25 2018
+   - Gabor Kaszab was added as a committer on Fri May 18 2018
+   - Jin Chul Kim was added as a committer on Fri May 18 2018
+
+## Releases:
+
+ - 3.0.0 was released on Sun May 06 2018
+
+## Mailing list activity:
+
+Mailing lists metrics that held very steady:
+
+ - dev@: 341 emails (309 in previous quarter)
+ - issues@: 932 emails (929 in previous quarter)
+ - reviews@: 6250 emails (6502 in previous quarter)
+
+## JIRA activity:
+
+ - 419 JIRA tickets created in the last 3 months
+ - 418 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#attachment-AD">2018-05-16</a> &mdash; Jim Apple<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre># Description:
+
+Impala is a high-performance distributed SQL engine.
+
+## Issues:
+
+The PMC requested that Google, the owners of "IMPALA: Scalable Distributed
+DeepRL in DMLab-30"[0], add a disclaimer acknowledging that the ASF owns the
+Impala trademark. Google declined to do so.
+
+We engaged with Mark Thomas, ASF's VP, Brand. He suggested we not pursue this
+further. See [1] for details.
+
+0: https://deepmind.com/blog/impala-scalable-distributed-deeprl-dmlab-30/
+
+1: https://s.apache.org/impala-deeprl-rm
+
+## Activity:
+
+The previous three months had 248 patches to the master branch, while this
+three-month period had 364. This pattern in the past was usually a result of a
+slowdown during the US winter holiday months, and I expect that's true of this
+uptick, as well.
+
+Prominent work in the last three months includes:
+
+ - Decimal support in Kudu tables
+ - End-to-end compression of metadata
+ - Support for LLVM 5
+ - Support for Hadoop 3
+ - Support for the ORC format
+
+## Health report:
+
+The project remains very active. Statistics pertaining to this are covered
+above and below: more than 100 commits per month, more than 100 JIRAs resolved
+per month, four new people added as PMC members or committers. We have
+continued a release cadence of about once per quarter.
+
+## PMC changes:
+
+ - Currently 26 PMC members.
+ - New PMC members:
+    - Philip Zeyliger was added to the PMC on Sun Apr 22 2018
+    - Thomas Marshall was added to the PMC on Sun Feb 04 2018
+
+## Committer base changes:
+
+ - Currently 36 committers.
+ - New committers:
+    - Alexandra Rodoni was added as a committer on Fri Apr 06 2018
+    - Vuk Ercegovac was added as a committer on Tue Apr 03 2018
+
+## Releases:
+
+ - 2.12.0 was released on Mon Apr 23 2018
+ - 3.0 is being voted on as of May 3.
+
+## JIRA activity:
+
+ - 504 JIRA tickets created in the last 3 months
+ - 408 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#attachment-AB">2018-02-21</a> &mdash; Jim Apple<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Impala is a high-performance distributed SQL engine.
+
+## Issues:
+
+There are no special issues the board should be aware of.
+
+## Activity:
+
+The most prominent activity in January was the branching to prepare for a 3.0
+release. Version 2.11.0 was also released in January, and a 2.x branch is
+maintained with the anticipated possible release of versions 2.12.0 and
+beyond. This branching enabled a number of breaking changes to finally land.
+
+Other notable efforts include:
+
+  * Enhancements to sampled statistics collection
+  * The continuation of long-term efforts around the buffer pool
+  * The continuation of long-term efforts around Kudu's RPC
+  * The enablement of different decimal semantics (for the 3.x branch only)
+  * Improved usage of OpenSSL (both performance and correctness)
+  * The exposure of more system information in the web UI
+  * Multiple improvements to test parallelism performance and correctness
+
+## Health report:
+
+The project remains healthy. There were 124 dev@emails, 62 user@ emails, 106
+tickets opened and 104 resolved, and three new patch authors. There were 98
+commits, which is consistent with the average rate over 2017 of 92 commits per
+month.
+
+## PMC and committer changes:
+
+Tianyi Wang was added as a committer on January 5. Philip Zeyliger was added
+as a committer on January 9. The most recent new PMC member was added on
+2017-09-27.
+
+## Releases:
+
+2.11.0 was released on January 18.</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-AA">2018-01-17</a> &mdash; Jim Apple<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Impala is a high-performance distributed SQL engine.
+
+## Issues:
+
+There are no special issues the board should be aware of.
+
+## Activity:
+
+Notable efforts in December include work on decimal and floating point
+correctness, test and build infrastructure refactoring, the addition of more
+debugging and profiling information (and the removal of some less helpful
+information), perfomance improvements for computing table statistics, support
+for processors with AVX-512, a variety of fixes to runtime filters, and
+kerberos handling improvements.
+
+## Health report:
+
+The project is healthy. December was a slower month than November, likely due
+to two US holidays at the end of the month. There were 60 commits, 112 dev@
+emails, 45 user@ emails, 66 tickets resolved, and 94 tickets opened.
+
+## PMC and committer changes:
+
+Greg Rahn was added as a committer on December 12.  The most recent new PMC
+member was added on 2017-09-27.
+
+## Releases:
+
+The release process for 2.11 is underway:
+https://s.apache.org/impala-2.11-vote-results</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#attachment-AI">2017-12-20</a> &mdash; Jim Apple<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Impala is a high-performance distributed SQL engine.
+
+## Issues:
+
+There are no special issues the board should be aware of.
+
+## Activity:
+
+Impala graduated from the incubator to a TLP on 15 November 2017. The
+incubator report covering August, September, and October is available at
+https://wiki.apache.org/incubator/November2017.
+
+Notable efforts in November include Hadoop 3.0 compatibility work, TABLESAMPLE
+work to compute statistics more quickly, test reliability, decimal arithmetic
+type changes, client connectivity bug fixes, and changing the RPC mechanism
+for data stream service.
+
+## Health report:
+
+The project is healthy. November had 90 commits, the same as October. The dev
+list had 139 emails, compared to 175 in the previous 30 days. The user list
+had 31 emails, compared to 17 in the previous 30 days. 109 tickets were
+resolved, compared to 101 in October. 122 tickets were created, compared to
+130 in October.
+
+Several new contributors have been active.
+
+## PMC and committer changes:
+
+The most recent new PMC member was added on 2017-09-27. Two new committers
+were added on 2017-09-29.
+
+## Releases:
+
+The last release was 2017-09-14. Discussions for the next release are in
+progress. Discussions of a major (compatibility-breaking) release have
+occurred, but there does not appear to be much enthusiasm to do such a release
+right now. Some compat-breaking changes, like DECIMAL_V2, are available
+already behind feature flags.</pre>
+<h3 id="2017-11-15"><a href="2017/board_minutes_2017_11_15.html#impala">2017-11-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-11-15" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored in
+Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+Our graduation proposal is in the works.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No
+
+How has the community developed since the last report?
+
+There have been 279 Commits:
+ git log --format='%ci' | grep -cE '2017-(08|09|10)'
+
+62 of those commits were by non-committers:
+ git log --format='%an %ci' | grep -E '2017-(08|09|10)' | tr -d '0-9\-' | cut -d ' ' -f -2 | sort | uniq -c | sort -n
+
+Of the 37 patch authors, 16 were not committers at the beginning of this reporting period.
+
+There are three new committers members and one new PPMC member:
+ https://lists.apache.org/list.html?dev@impala.apache.org:dfr=2017-8-1|dto=2017-10-31:%22has%20invited%22
+
+Impala has done a fourth release with a third release manager.
+
+Impala has begun graduation procedures: we have held a community discussion and a
+community vote on graduation, both unanimous. We have established our intended PMC.
+Next, we will draft our charter and hold a discussion on general@incubator.
+
+How has the project developed since the last report?
+
+Impala has removed the old unpartitioned hash and aggregation nodes, relics from
+years ago that were kept around for backwards compatibility: the new buffer management
+makes these obsolete. Code generation for decimal and timestamp types has been added
+to the text scanner, increasing the performance of some queries by up to 19%. More
+robust query plans in case of data skew have made some aggregations eight times as fast.
+A number of large changes are in-flight, including changes to equivalence class computation
+in the planner, more decimal semantics adjustments, min-max filters for Kudu, and
+multi-threaded metadata loading that increases the performance of some metadata operations by 8x.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[X] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2017-09-14
+
+When were the last committers or PPMC members elected?
+
+2017-09-29
+
+Signed-off-by:
+
+[ ](impala) Tom White
+  Comments:
+[X](impala) Todd Lipcon
+  Comments:
+[ ](impala) Carl Steinbach
+  Comments:
+[X](impala) Brock Noland
+  Comments:
+
+IPMC/Shepherd notes:
+
+Drew Farris (shepherd): Three mentors active on the mailing lists, healthy project, excellent progress towards graduation.</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#impala">2017-08-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored in
+Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Growth of the developer community
+2.
+3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No
+
+How has the community developed since the last report?
+
+There have been 268 Commits:
+ git log --format='%ci' | grep -cE '2017-0(5|6|7)'
+
+51 of those commits were by non-committers:
+ git log --format='%ae %ci' | grep -E '2017-0(5|6|7)' | cut -d ' ' -f 1 | sort | uniq -c | sort -n
+
+There are two new PPMC members:
+ https://lists.apache.org/list.html?dev@impala.apache.org:dfr=2017-2-1|dto=2017-4-30:%22has%20invited%22
+
+Impala has done a third release with a second release manager. Two CVEs were issued, our first ones under the Apache security guidelines.
+
+How has the project developed since the last report?
+
+There have been big changes to the buffer pool, as outlined in https://lists.apache.org/thread.html/f573698455bf2ff9ac2073c778802d0d5c9f3c8be43ede80614259cb@%3Cdev.impala.apache.org%3E . There have also been big changes landing to the RPC layer to improve scalability. Impala now has TABLESAMPLE to allow running queries on only a small percentage of the table for experimenting with queries quickly, and it now works on ADLS.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[X] Community building
+[X] Nearing graduation
+[ ] Other:
+
+Once the developer community has grown a bit, Impala will be ready
+to contemplate graduation.
+
+Date of last release:
+
+2017-06-16
+
+When were the last committers or PPMC members elected?
+
+2017-07-17
+
+Signed-off-by:
+
+[ ](impala) Tom White
+  Comments:
+[x](impala) Todd Lipcon
+  Comments:
+[x](impala) Carl Steinbach
+  Comments:
+[ ](impala) Brock Noland
+  Comments:</pre>
+<h3 id="2017-05-17"><a href="2017/board_minutes_2017_05_17.html#impala">2017-05-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-05-17" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored in
+Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Growth of the developer community
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  No
+
+How has the community developed since the last report?
+
+  There have been 267 Commits:
+    git log --format='%ci' | grep -cE '2017-0(2|3|4)'
+
+  42 of those commits were by non-committers:
+    git log --format='%ae %ci' | grep -E '2017-0(2|3|4)' | cut -d ' ' -f 1 | sort | uniq -c | sort -n
+
+  There were 114 emails to the user list. Of the top nine
+  participants, six were not committers:
+    https://lists.apache.org/trends.html?user@impala.apache.org:dfr=2017-2-1|dto=2017-4-30:
+
+  There are six new committers:
+    https://lists.apache.org/list.html?dev@impala.apache.org:dfr=2017-2-1|dto=2017-4-30:%22has%20invited%22
+
+  Two new contributors have announced plans to take on large
+  development efforts (JSON support and ppc64le support).
+
+How has the project developed since the last report?
+
+  Two of the "three most important issues to address in the move
+  towards graduation" from our last report in February have been
+  completed: The bug tracker was transitioned to issues.apache.org,
+  and the documentation now describes Apache Impala specifically, not
+  any non-Apache extensions. The documentation has also been posted to
+  http://impala.incubator.apache.org/docs/build/html/index.html and
+  http://impala.incubator.apache.org/docs/build/impala.pdf.
+
+  Many commits have landed since our last report towards increasing
+  the performance of metadata.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [ ] Working towards first release
+  [X] Community building
+  [X] Nearing graduation
+  [ ] Other:
+
+  Once the developer community has grown a bit, Impala will be ready
+  to contemplate graduation.
+
+Date of last release:
+
+  2017-01-22
+
+When were the last committers or PPMC members elected?
+
+  2017-04-24
+
+Signed-off-by:
+
+  [X](impala) Tom White
+     Comments:
+  [X](impala) Todd Lipcon
+     Comments:
+  [X](impala) Carl Steinbach
+     Comments:
+  [X](impala) Brock Noland
+     Comments:</pre>
+<h3 id="2017-02-27"><a href="2017/board_minutes_2017_02_27.html#impala">2017-02-27</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-02-27" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored in
+Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth
+2. Transition of bug tracker to issues.apache.org
+3. Evolution of documentation to describe specifically Apache Impala
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No
+
+How have the community and project developed since the last report?
+
+Our last report was in November. Since then, there have been 148
+commits. 49 commits were authored by non-committers, of which 4 new
+commits come from 3 new contributors. dev@ received 496 emails and
+user@ received 53. 443 new issues have been filed. There has been one
+release (our second Apache release) and we have added one new PPMC
+member. Our infrastructure has been transitioning: we moved our
+pre-commit testing out of our old, pre-Apache hosting and we have been
+actively working with Gavin McDonald on migrating our JIRA hosting.
+
+Date of last release:
+
+2017-01-22
+
+When were the last committers or PPMC members elected?
+
+2017-01-12
+
+Signed-off-by:
+
+[x](impala) Tom White
+[x](impala) Todd Lipcon
+[ ](impala) Carl Steinbach
+[ ](impala) Brock Noland</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#impala">2016-11-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored in
+Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth
+2. Transition of user documentation to Apache hosting
+3. Migration of pre-commit continuous integration testing to
+   publicly-available infrastructure
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No
+
+How has the community developed since the last report?
+
+Our last report was in August. Since then, we have five new
+contributors who have authored patches, while two relatively recent
+contributors who were active before August have continued their
+involvement by authoring new patches. Traffic to our developer mailing
+list has grown by about 60%.
+
+How has the project developed since the last report?
+
+There have been 241 commits since the last report.
+
+Our status website now has 16 of the 17 listed work items complete. We
+had our first Apache release and have a wiki page describing how to
+perform the release in detail. We scrubbed our code using the RAT tool
+for copyright notices not compliant with the ASF rules. We wrote
+guidelines for contributors on how to become a committer and added a
+new committer. All developer documentation has now moved to the
+Apache-hosted wiki.
+
+Date of last release:
+
+2016-10-05
+
+When were the last committers or PMC members elected?
+
+2016-08-18
+
+Signed-off-by:
+
+[X](impala) Tom White
+[ ](impala) Todd Lipcon
+[ ](impala) Carl Steinbach
+[ ](impala) Brock Noland</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#impala">2016-08-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored in
+Apache Hadoop-based clusters.
+
+Three most important issues to address in the move towards graduation:
+
+1. Transition of development workflows to ASF (see
+   https://issues.cloudera.org/browse/IMPALA-3221)
+2. Initial release as incubating project.
+3. Community growth
+
+Any issues that the Incubator PMC or ASF Board might wish/need to be aware of?
+
+No.
+
+How has the community developed since the last report?
+
+Our last report was in April. Since then
+
+* Six new contributors have submitted patches for review, and two
+  contributors new to the project since incubation have continued to send
+  patches.
+* Mailing list activity more than doubled in the four months since our
+  last report compared to the four months before that, from 31 threads to
+  75 threads (excluding patch review comments)
+
+How has the project developed since the last report?
+
+* The podling name search was completed:
+  https://issues.apache.org/jira/browse/PODLINGNAMESEARCH-96
+* Trademark handoff was completed
+* Impala's git repository is now hosted on ASF infrastructure
+* Impala's website's source is hosted on ASF&rsquo;s git infrastructure and the
+  website is now available on https://impala.apache.org
+* Project bylaws have been ratified: https://impala.apache.org/bylaws.html
+* Developer documentation has started to move to the ASF-hosted wiki:
+  https://cwiki.apache.org/confluence/collector/pages.action?key=IMPALA
+* Work has begun in migrating to ASF-hosted JIRA
+* A patch changing the copyright headers is in review
+
+Date of last release:
+
+No releases have been made yet.
+
+When were the last committers or PMC members elected?
+
+No committers or PMC members have been added since incubation began.
+
+Signed-off-by:
+
+[X](impala) Tom White
+[ ](impala) Todd Lipcon
+[ ](impala) Carl Steinbach
+[ ](impala) Brock Noland</pre>
+<h3 id="2016-04-20"><a href="2016/board_minutes_2016_04_20.html#impala">2016-04-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-04-20" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored
+in Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Transition of development workflows to ASF (see
+   https://issues.cloudera.org/browse/IMPALA-3221)
+2. Initial release as incubating project.
+3. Community growth
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+How has the community developed since the last report?
+
+There have been no additions to the committer or PMC lists since
+incubation began. We continue to see an uptick in external contributions,
+with two patches from new contributors this month. One contributor
+pleasingly reported it was "great to work closely with Impala community".
+
+How has the project developed since the last report?
+
+We have put together a list of tasks required to move development of
+Impala from Cloudera's infrastructure to the ASF. Since Impala was already
+a well-established project before the Incubator proposal, there is perhaps
+more decoupling required than for more nascent projects. The list is at
+https://issues.cloudera.org/browse/IMPALA-3221, and is being actively
+worked on. Note that this doesn't cover the standard podling tasks (like
+name search, etc).
+
+Date of last release:
+
+None since entering incubation.
+
+When were the last committers or PMC members elected?
+
+None since entering incubation.
+
+Signed-off-by:
+
+[X](impala) Tom White
+[ ](impala) Todd Lipcon
+[ ](impala) Carl Steinbach
+[ ](impala) Brock Noland</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#impala">2016-03-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored
+in Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Movement of existing JIRA / Git / wiki resources to Apache
+   equivalents
+2. Initial release as incubating project.
+3. Community growth
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+How has the community developed since the last report?
+
+There have been no additions to the committer or PMC lists since
+incubation began. However, we have seen an uptick in external
+contributions, both through code, and in discussion on the mailing list.
+One contributor has been attempting to port Impala to PPC, and has
+reported some success after asking many questions.
+
+How has the project developed since the last report?
+
+We have made some slow progress with our initial infrastructure tasks.
+Code review traffic is now copied to dev@impala.incubator.apache.org,
+which means that developer discussions are now happening on the mailing
+lists.
+
+We have a number of infrastructure tasks ahead of us which are blocked on
+the current Impala team at Cloudera being very busy with an internal
+release (this is one reason we look forward to a more diverse community!).
+For example:
+
+1. We would like to move our Git repository to .apache.org in short order,
+   but as it stands the existing repo is 10GB large and historically
+   contains many binary artifacts that, while acceptably licensed, have no
+   useful place in Impala's repository. We need to strip these artifacts
+   from the Git history, and then adjust Gerrit to commit to the new
+   branch in the new repo. This is not hard but takes some time.
+2. We would also like to move our JIRA tickets from issues.cloudera.org to
+   issues.apache.org. Experience in a sister podling has shown that this
+   isn't straightforward if we wish to preserve existing release labels,
+   user assignments and so on, so requires some time.
+
+We anticipate having much more time to work on these basic issues after
+the end of February. We look forward to getting Impala into a position
+where it is easier for the larger community to collaborate on these kinds
+of project management issues.
+
+Date of last release:
+
+None since entering incubation.
+
+When were the last committers or PMC members elected?
+
+None since entering incubation.
+
+Signed-off-by:
+
+[X](impala) Tom White
+[ ](impala) Todd Lipcon
+[ ](impala) Carl Steinbach
+[ ](impala) Brock Noland</pre>
+<h3 id="2016-01-20"><a href="2016/board_minutes_2016_01_20.html#impala">2016-01-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-01-20" title="Permalink">&para;</a></h3>
+<pre>Impala is a high-performance C++ and Java SQL query engine for data stored
+in Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+1. Resolve any issues around use of Gerrit as code-review tool.
+2. Movement of existing JIRA / Git / wiki / e-mail resources to Apache
+   equivalents
+3. Initial release as incubating project.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+How has the community developed since the last report?
+
+Slowly - Impala is still in the very early stages of incubation, and
+performing the mechanical tasks of code movement and infrastructure setup
+is our first priority. The holiday period in the United States has slowed
+this effort slightly, but we look forward to picking up pace in early
+2016.  There have been no additions to the committer or PMC lists since
+incubation began.
+
+How has the project developed since the last report?
+
+We have performed some of the basic initial tasks for incubation -
+establishing wiki pages, Git repositories and accounts for the initial
+committer set. Our next steps are:
+
+1. Finalize the SGA from Cloudera
+2. Move existing @cloudera.org e-mail aliases to their
+   @impala.incubator.apache.org equivalents.
+3. Move source code from Cloudera git repository to Apache git repo.
+4. Improve out-of-box build and test experience so that community can
+   easily evaluate release artifacts.
+5. Migrate cloudera.org JIRA tickets to issues.apache.org.
+
+Date of last release:
+
+NA
+
+When were the last committers or PMC members elected?
+
+At the time of the Incubation vote, 2015-12-03.
+
+Signed-off-by:
+
+[X](impala) Tom White
+[X](impala) Todd Lipcon
+[ ](impala) Carl Steinbach
+[ ](impala) Brock Noland
+
+Shepherd/Mentor notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

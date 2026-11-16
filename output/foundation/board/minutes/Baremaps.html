@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Baremaps | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Baremaps';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Baremaps';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Baremaps</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="baremaps">Baremaps<a class="headerlink" href="#baremaps" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#baremaps">2026-03-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### How has the project developed since the last report?
+
+  Baremaps has voted to retire from the Incubator, the corresponding
+  Incubator PMC vote is ongoing.
+
+### Have your mentors been helpful and responsive?
+
+  Mentors have been involved in the retirement decision.
+
+### Signed-off-by:
+
+  - [X] (baremaps) Bertrand Delacr&eacute;taz
+     Comments:
+  - [ ] (baremaps) Martin Desruisseaux
+     Comments:
+  - [ ] (baremaps) Julian Hyde
+     Comments:
+  - [X] (baremaps) Calvin Kirs
+     Comments: Voting on retirement.
+  - [ ] (baremaps) George Percivall
+     Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#baremaps">2025-12-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Discussing the future of the project
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+The project is used in production by a few companies, but we struggle to
+build a sustainable community. We will initiate a discussion on the
+project's future early in 2026. A possibility would be to retire it from
+the Apache Incubator and to continue the development under a lighter
+process within its original organization.
+
+### How has the community developed since the last report?
+
+The project activity decreased further since the last report.
+
+### How has the project developed since the last report?
+
+We fixed minor issues.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2025-02-07
+
+### When were the last committers or PPMC members elected?
+
+In June 2024.
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes.
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacr&eacute;taz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments: Activity is low, and even though Baremaps has users
+     in production, the community is not increasing in size. The
+     project should consider retirement. (And it is.)
+- [ ] (baremaps) Calvin Kirs
+   Comments:
+- [ ] (baremaps) George Percivall
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#baremaps">2025-09-24</a> &mdash; in the Incubator's report<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Expanding the community
+2. Making releases
+3. Discussing the future of the project
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+We recognize the need to further expand the community and strengthen
+contributor retention. We aim to make progress on this in the coming
+year.
+If these challenges cannot be addressed, we will initiate a discussion on
+the project&rsquo;s future, including the possibility of retiring it from the
+Apache Incubator. In that case, development may continue under a lighter
+process within its original organization.
+
+### How has the community developed since the last report?
+
+The project activity slowed during the summer but is expected to resume
+in the coming months.
+
+### How has the project developed since the last report?
+
+We have addressed security issues and introduced security guidelines.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2025-02-07
+
+### When were the last committers or PPMC members elected?
+
+In June 2024.
+
+### Have your mentors been helpful and responsive?
+
+Yes, Julian Hyde and Calvin Kirs remain responsive and provide support as
+needed.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments:
+- [X] (baremaps) Calvin Kirs
+   Comments:  The community has shown very little activity.
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#baremaps">2025-06-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Expanding the community
+2. Making releases
+3. Starting the graduation process
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No
+
+### How has the community developed since the last report?
+
+There has been an uptick in activity early this year, which has since
+slowed down.
+One difficulty we face is related to the onboarding and retention of new
+contributors.
+We have a number of easy bug fixes that are suitable for newcomers, but we
+also have advanced features that require a deeper understanding of the
+codebase.
+This can be intimidating for new contributors, leading to a lack of
+engagement after initial contributions.
+
+### How has the project developed since the last report?
+
+We released version 0.8.2 in February 2025.
+Since then, we have added support for Apache Calcite, which will open the
+door to spatial SQL queries on various data sources (flatgeobuf, PostGIS,
+geopackage, geoparquet, etc.).
+We also fixed a number of bugs and upgraded dependencies.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2025-02-07
+
+### When were the last committers or PPMC members elected?
+
+S&eacute;bastien Riollet in June 2024
+
+### Have your mentors been helpful and responsive?
+
+Yes, Julian Hyde and Calvin Kirs provided valuable feedback.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [ ] (baremaps) Julian Hyde
+   Comments:
+- [X] (baremaps) Calvin Kirs
+   Comments:
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:
+
+PJF: The BareMaps active community remains small. Possibly, too small to
+be be able to become a self-managing PMC on graduation.
+
+JM: They have added 3 committers. I would suggest they look to see if any
+of those or any other committers can be made PPMC members.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#baremaps">2025-03-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Reviewing compliance with Apache standards.
+2. Expanding the community.
+3. Making releases.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No.
+
+### How has the community developed since the last report?
+
+Since the December release in 2024, there has been an uptick in
+contributions. We still struggle with the pace of releases, but the overall
+involvement seems to be increasing.
+
+### How has the project developed since the last report?
+
+The February release summarizes well the latest developments:
+https://github.com/apache/incubator-baremaps/releases/tag/v0.8.2
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2025-02-26
+
+### When were the last committers or PPMC members elected?
+
+S&eacute;bastien Riollet in June 2024.
+
+### Have your mentors been helpful and responsive?
+
+Yes, the mentors are helpful.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes.
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments: Project is indeed near graduation. I recommend that
+     they start graduation discussions on dev@.
+     My takeaway from the recent release is diversity of
+     contributors; 12 issues fixed by 6 contributors is an
+     indication that the project is becoming more broad-based.
+- [X] (baremaps) Calvin Kirs
+   Comments:  We're going to start assessing what still needs to be done
+before graduation.
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#baremaps">2025-02-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Reviewing compliance with Apache standards.
+2. Expanding the community.
+3. Making releases.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+Several animated discussions allowed us to address licensing issues.
+The fact that practices vary widely across top-level projects does not
+make
+the process easier.
+
+### How has the community developed since the last report?
+
+Since the last release in December 2024, there has been an uptick in
+contributions.
+We still struggle with the pace of releases, but the overall involvement
+seems to be increasing.
+
+### How has the project developed since the last report?
+
+The last release effectively summarizes the project's development since
+the
+previous report.
+https://github.com/apache/incubator-baremaps/releases/tag/v0.8.1
+
+More recently, we welcomed three new contributors.
+Yongjun Hong contributed issue templates and github actions to facilitate
+the onboarding of new commers.
+Alex Gacon fixed performance issues affecting the latest release.
+Rohit Yaduvanshi improved the maven artifacts.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+0.8.1 in December 2024
+
+### When were the last committers or PPMC members elected?
+
+S&eacute;bastien Riollet in June 2024
+
+### Have your mentors been helpful and responsive?
+
+Julian Hyde and Calvin Kirs provided valuable feedback.
+More generally, we struggle to get sufficient votes from PPMC members on
+our dev mailing list, which slows down the release process.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [ ] (baremaps) Julian Hyde
+   Comments:
+- [X] (baremaps) Calvin Kirs
+   Comments:
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:
+
+Justin Mclean:
+I would take care in copying what TLP do, as you may not understand why they
+did things in a certain way, you are better off following teh current
+Incubator guidances.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#baremaps">2024-06-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Reviewing the changes made to make the code and documentation website
+compliant with Apache standards
+2. Growing the community
+3. Making releases
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+We believe that most of the issues related to licensing have now been
+addressed. The next step is to remove the DISCLAIMER-WIP in future releases.
+
+### How has the community developed since the last report?
+
+No new committer joined the project, but a few issues, documentation
+improvements, and pull requests were submitted by external contributors.
+
+### How has the project developed since the last report?
+
+We released a new version of Baremaps and the process went relatively
+smoothly. A nice collaborative effort also started to implement a
+GeoParquet reader and to support OvertureMaps files.
+
+### How would you assess the podling's maturity?
+
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2024-04-27
+
+### When were the last committers or PPMC members elected?
+
+2023-08-31
+
+### Have your mentors been helpful and responsive?
+
+Yes
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments:
+- [X] (baremaps) Calvin Kirs
+   Comments:
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#baremaps">2024-03-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Reviewing the changes made to make the code and documentation website
+compliant with Apache standards
+
+2. Growing the community
+
+3. Making releases
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+We underestimated the effort required to make the project compliant with
+Apache guidelines.
+In particular, some datasets used in the code (EPSG) and in the tests
+(OpenStreetMap, NaturalEarth, Ripe, etc.) were causing licensing issues.
+We hope that closing these issues will help us increase the release
+frequency and focus on growing the community.
+
+### How has the community developed since the last report?
+
+No new committer joined the project.
+
+### How has the project developed since the last report?
+
+We have now been able to remove all the licensed datasets with synthetic
+ones, and we should be able to remove the disclaimer-wip soon.
+We improved the style and the tileset of the basemap.
+We introduced a new workflow for the daylight map distribution (Microsoft
+and Google Building Footprints, Facebook Experimental ML Roads, etc.)[1,2].
+We added support for the PMTiles format.
+
+[1] https://daylightmap.org/
+[2] https://daylight.baremaps.com/
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2023-08-31
+
+### When were the last committers or PPMC members elected?
+
+When we joined the incubator.
+
+### Have your mentors been helpful and responsive?
+
+Yes, the mentors' advice has been helpful, especially in removing the
+problematic datasets.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments:
+- [X] (baremaps) Calvin Kirs
+   Comments:  Good to see the team is making progress on License-related
+   work.
+- [ ] (baremaps) George Percivall
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#baremaps">2023-12-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Getting the code and documentation website in compliance with Apache
+standards.
+2. Growing the community
+3. Making releases
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+We acknowledge that we need to make progress on community building and will
+try to focus on this aspect in 2024.
+
+### How has the community developed since the last report?
+
+We had a few external contributions to the project, but no new committer
+joined the community. Most notably, Joe Polastre, from FlightAware, the
+world's largest flight tracking and data platform, created a fast tile
+exporter for Baremaps written in Go [1]. Some of his ideas have already
+been contributed back to the project. We also started interesting
+discussions with the Apache SIS community regarding spatial data codecs [2].
+
+[1] https://github.com/flightaware/baremaps-exporter
+
+[2] https://github.com/apache/incubator-baremaps/discussions/805
+
+### How has the project developed since the last report?
+
+- We addressed many of the podling requirements for the latest release.
+- We also added support for PMTiles, 3D building extrusion, and
+minutely/hourly/daily diffs from OpenStreetMap.
+
+### How would you assess the podling's maturity?
+
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2023-11-20
+
+### When were the last committers or PPMC members elected?
+
+2023-08-31
+
+### Have your mentors been helpful and responsive?
+
+Yes, the mentors' advice has been very helpful, especially in addressing
+issues that appeared during the last release.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments:  Podling is going well. The discussions with SIS are
+   encouraging.
+- [ ] (baremaps) Calvin Kirs
+   Comments:
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#baremaps">2023-09-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+  1. Getting the code and documentation website in compliance with Apache
+     standards
+  2. Growing the community
+  3. Making releases
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+  No
+
+### How has the community developed since the last report?
+
+  We have had several new commiters join the project. We are also seeing
+  new activity from people asking questions and creating issues.
+
+### How has the project developed since the last report?
+
+  - We addressed most of the podling website requirements and updated the
+    content and layout of the website
+  - We implemented new features and fixed numerous issues.
+
+### How would you assess the podling's maturity?
+
+  Please feel free to add your own commentary.
+
+  - [X] Initial setup
+  - [X] Working towards first release
+  - [X] Community building
+  - [ ] Nearing graduation
+  - [ ] Other:
+
+### Date of last release:
+
+  2023-04-04
+
+  We are working on a new release (the vote for the first release candidate
+  failed).
+
+### When were the last committers or PPMC members elected?
+
+  2023-08-31
+
+### Have your mentors been helpful and responsive?
+
+  Yes, the mentors' advice has been very helpful especially to comply to
+  Apache licensing issues and guidelines.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+  Yes
+
+### Signed-off-by:
+
+  - [ ] (baremaps) Bertrand Delacretaz
+     Comments:
+  - [ ] (baremaps) Martin Desruisseaux
+     Comments:
+  - [X] (baremaps) Julian Hyde
+     Comments:  Community seems to be growing and evolving well
+       (judging by commit activity, new committers, moderate dev
+       list activity, bugs being logged). I would like to hear
+       more about Baremaps' efforts to grow community (e.g. talks
+       at meetups, online demos) and will ask them for an update
+       next reporting cycle.
+  - [X] (baremaps) Calvin Kirs
+     Comments:
+  - [ ] (baremaps) George Percivall
+     Comments:
+  - [ ] (baremaps) Martin Desruisseaux
+     Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#baremaps">2023-06-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Getting the code in compliance with Apache standards
+2. Making releases
+3. Growing the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+Someone submitted our website to HackerNews and we remained on the
+frontpage for about 16 hours [1]. Our demonstration server hosted on
+Hetzner (16 cores; 128GB of RAM; 8TB of NVMe SSD) successfully sustained
+this load and served more than 40GB of tiles from Postgis during this
+period of time [2]. Additionally, the OpenStreetMap Wiki now offers the
+possibility to display vector maps based on Baremaps on its pages [3].
+This
+raises the following question: Could the demonstration server be hosted by
+the ASF at some point?
+
+[1] https://news.ycombinator.com/item?id=36106695
+
+[2] https://demo.baremaps.com/#14/46.5197/6.6323
+
+[3] https://wiki.openstreetmap.org/wiki/Template:Vector_map
+
+### How has the community developed since the last report?
+
+The activity has increased. Five people made their first contribution to
+the code base since the last report, one of whom has been elected as a
+committer in May. The activity on the mailing list is very low, but the
+number of exchanges on GitHub increased.
+
+### How has the project developed since the last report?
+
+We significantly improved the basemap at low zoom levels
+We improved the layout and the content of the web site
+We continued to address licensing issues
+We attended the OGC/OSGeo/ASF code sprint and improve support for OGC API
+We fixed bugs and addressed issues
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [X] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2023-04-04
+
+### When were the last committers or PPMC members elected?
+
+Leonard Cseres was elected as a committer in May.
+
+### Have your mentors been helpful and responsive?
+
+Yes, the mentors have been very helpful on several topics (community
+building, licensing, etc.). The discussions with Martin Desruisseaux at
+the
+OGC/OSGeo/ASF code sprint greatly helped at identifying avenues to address
+our licensing issues.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments:  Congratulations on the HN coverage and traffic.
+     (Back in the day, getting Slashdotted was a rite of passage.)
+     I'd say this puts you in the 'community building' phase.
+     Regarding hosting, let's discuss on dev,
+     with the aim of creating an INFRA case if necessary.
+- [X] (baremaps) Calvin Kirs
+   Comments:
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#baremaps">2023-03-22</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+  1. Getting the code in compliance with Apache standards
+  2. Making releases
+  3. Growing the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+  No
+
+### How has the community developed since the last report?
+
+  The activity has been low in December and January, but the community has
+  stayed steady.
+
+### How has the project developed since the last report?
+
+  - We addressed most of the critical licensing issues and identified minor
+  issues with license of the data used in the tests
+  - We improved the layout and the content of the web site
+  - We launched a vote for a first release candidate with a DISCLAIMER-WIP
+  file
+  - Some of us will attend the OGC/OSGeo/ASF code sprint with the intent to
+  work on Baremaps
+
+### How would you assess the podling's maturity?
+  Please feel free to add your own commentary.
+
+  - [X] Initial setup
+  - [X] Working towards first release
+  - [ ] Community building
+  - [ ] Nearing graduation
+  - [ ] Other:
+
+### Date of last release:
+
+  N/A
+
+### When were the last committers or PPMC members elected?
+
+  When the project entered incubation.
+
+### Have your mentors been helpful and responsive?
+
+  Yes, the mentors have been very helpful on several topics (community
+  building, licensing, etc.)
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+  Yes
+
+### Signed-off-by:
+
+  - [X] (baremaps) Bertrand Delacretaz
+     Comments:
+  - [ ] (baremaps) Martin Desruisseaux
+     Comments:
+  - [X] (baremaps) Julian Hyde
+     Comments:  Reviewing the first release candidate now, and quality
+       looks good for a podling's first RC. Development has been rather
+       narrow (in a few individuals), so I'm hoping to see broadening
+       of community participation around the first release.
+  - [X] (baremaps) Calvin Kirs
+     Comments:
+  - [ ] (baremaps) George Percivall
+     Comments:
+  - [ ] (baremaps) Martin Desruisseaux
+     Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#baremaps">2023-01-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+ 1. Getting the code in compliance with Apache standards
+ 2. Making releases
+ 3. Growing the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No
+
+### How has the community developed since the last report?
+
+The community has stayed steady.
+
+### How has the project developed since the last report?
+
+- We progressed on some critical licensing issues and made upstream
+contributions to Proj4J
+- We improved the web site
+- We made small steps toward a first release
+- We experimented with support for the 3D tiles next format
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [X] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+N/A
+
+### When were the last committers or PPMC members elected?
+
+When the project entered incubation.
+
+### Have your mentors been helpful and responsive?
+
+Yes, the mentors have been very helpful on several topics (community
+building, licensing, etc.)
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes
+
+### Signed-off-by:
+
+- [X] (baremaps) Bertrand Delacretaz
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments: Baremaps is progressing well.
+- [X] (baremaps) Calvin Kirs
+   Comments:
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#baremaps">2022-12-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Getting the code in compliance with Apache standards
+   2. Making releases
+3. Growing the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+* No
+
+### How has the community developed since the last report?
+
+* The community has been steady
+
+### How has the project developed since the last report?
+* With the help of the mentor, we progressed on some critical licensing
+issues (i.e. Proj4J and EPSG dataset)
+* We published a first version of the web site
+* We drafted the release process
+* We improved the base map
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+* N/A
+
+### When were the last committers or PPMC members elected?
+
+* When the project entered incubation
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+* Mentors have been attentive
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+* We are working to get the project name approved.
+    * https://issues.apache.org/jira/browse/TM-144
+
+### Signed-off-by:
+
+- [ ] (baremaps) Bertrand Delacretaz
+  Comments:
+- [ ] (baremaps) Martin Desruisseaux
+  Comments:
+- [X] (baremaps) Julian Hyde
+  Comments: Good momentum.
+  Lots of detailed effort going into the first release.
+  I was involved in the EPSG issue, and it's great to see a
+  project at this stage taking licensing issues seriously.
+- [X] (baremaps) Calvin Kirs
+  Comments:  The community is actively preparing for the first release.
+- [ ] (baremaps) George Percivall
+  Comments:
+- [ ] (baremaps) Martin Desruisseaux
+  Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#baremaps">2022-11-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>Apache Baremaps is a toolkit and a set of infrastructure components for
+creating, publishing, and operating online maps.
+
+Baremaps has been incubating since 2022-10-10.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Learning the apache way, getting the code in compliance with Apache
+standards
+2. Making our first release
+3. Growing the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+* N/A
+
+### How has the community developed since the last report?
+
+* This is our first report.
+
+### How has the project developed since the last report?
+
+* This is our first report.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+* N/A
+
+### When were the last committers or PPMC members elected?
+
+* 2022-10-14, when the project was accepted into the incubator.
+
+### Have your mentors been helpful and responsive?
+
+* The mentors have been super helpful.
+* The meeting with mentors, committers and stakeholders was an excellent
+way to kick off the project.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+ * we are in progress
+
+### Signed-off-by:
+
+- [X] (baremaps) Bertrand Delacretaz
+   Comments: All looks good so far, great energy and collaboration!
+- [X] (baremaps) Martin Desruisseaux
+   Comments:
+- [X] (baremaps) Julian Hyde
+   Comments: Project has gotten off to a great start.
+     Good positive energy on the dev list. The kickoff
+     meeting was fun, with good attendance by mentors
+     and initial committers.
+- [X] (baremaps) Calvin Kirs
+   Comments:
+- [ ] (baremaps) George Percivall
+   Comments:
+- [ ] (baremaps) Martin Desruisseaux
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

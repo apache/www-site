@@ -1,0 +1,3974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Cassandra | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Cassandra';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Cassandra';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Cassandra</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="cassandra">Cassandra<a class="headerlink" href="#cassandra" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-24</td>
+<td><a href="2025/board_minutes_2025_09_24.html#section-7A">Appointed Ekaterina Dimitrova</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2024-06-19</td>
+<td><a href="2024/board_minutes_2024_06_19.html#section-7C">Appointed Dinesh Joshi</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2023-03-22</td>
+<td><a href="2023/board_minutes_2023_03_22.html#section-7I">Appointed Josh McKenzie</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2022-03-16</td>
+<td><a href="2022/board_minutes_2022_03_16.html#section-7E">Appointed Michael Semb Wever</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2016-09-21</td>
+<td><a href="2016/board_minutes_2016_09_21.html#section-7A">Appointed Nate McCall</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2010-02-17</td>
+<td><a href="2010/board_minutes_2010_02_17.html#section-7B">Appointed Jonathan Ellis</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2010-02-17</td>
+<td><a href="2010/board_minutes_2010_02_17.html#section-7B">Establish the Apache Cassandra Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-L">2026-08-19</a> &mdash; Ekaterina Dimitrova<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>-----------8&lt;----------
+
+Are you able to provide adequate oversight of your project? That is, are there
+
+at least three PMC members who are engaged enough to respond in the event of a
+
+CVE or similar crisis?
+
+Yes, we maintain adequate project oversight and can address CVEs. Twenty-four
+
+PMC members responded to the last roll call. Numerous PMC members actively
+
+participate in both dev and private list discussions, ensuring that we have
+
+more than the requisite three members available for rapid response to a CVE or
+
+similar event.
+
+Are there current or upcoming risks that threaten the sustainability of your
+
+project? This could be anything from a change in employment of prolific
+
+contributors, to an acquisition affecting a significant corporate contributor,
+
+to a change in the technology landscape that makes your project less (or more)
+
+relevant.
+
+We currently do not see any specific risks threatening the project's
+
+sustainability. We are focused on long-term health through deliberate
+
+diversification and expansion of our contributor base.
+
+We added a new PMC member - Andy Tolbert.
+
+Additional indicators of Project Health and Growth this Quarter:
+
+Releases: We shipped new versions of the: Cassandra server; Java, NodeJS, and
+Python drivers; Cassandra analytics.
+
+Community: The project will have its own track at Community over Code EU
+2026. There is good interest and participation, and the community keeps on
+      adding new interesting talks to YouTube Planet Cassandra.
+
+What can the Foundation do to more effectively make your project more
+
+successful in its mission of providing software for the public good?
+
+Nothing at this point.
+
+
+-----------&gt;8----------</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-K">2026-05-20</a> &mdash; Ekaterina Dimitrova<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>Are you able to provide adequate oversight of your project? That is, are there
+at least three PMC members who are engaged enough to respond in the event of a
+CVE or similar crisis?
+
+Yes, we maintain adequate project oversight and can address CVEs. Twenty-four
+PMC members responded to the last roll call. Numerous PMC members actively
+participate in both dev and private list discussions, ensuring that we have
+more than the requisite three members available for rapid response to a CVE or
+similar event.
+
+Are there current or upcoming risks that threaten the sustainability of your
+project? This could be anything from a change in employment of prolific
+contributors, to an acquisition affecting a significant corporate contributor,
+to a change in the technology landscape that makes your project less (or more)
+relevant.
+
+We currently do not see any specific risks threatening the project's
+sustainability. We are focused on long-term health through deliberate
+diversification and expansion of our contributor base.
+
+We just added 1 new PMC member and 3 new committers to the project.
+
+Additional indicators of Project Health and Growth this Quarter:
+
+Releases: We shipped new versions of the: Cassandra server; Java, GoCQL and
+Python drivers; Cassandra sidecar; Cassandra analytics; Our next major
+Cassandra release got its first alpha.
+
+Community: The project will have its own track at Community over Code EU 2026.
+There was a strong submission participation. We managed to fill a three-day
+schedule and still have certain submissions wait-listed. The project will also
+support the GSOC program. We already have registered mentors and projects for
+a few interested students.
+
+What can the Foundation do to more effectively make your project more
+successful in its mission of providing software for the public good?
+
+Nothing at this point.</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-N">2026-02-18</a> &mdash; Ekaterina Dimitrova<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Are you able to provide adequate oversight of your project? That is, are there at least three PMC members who are engaged enough to respond in the event of a CVE or similar crisis?
+
+Yes, we maintain adequate project oversight and can address CVEs. Twenty-four
+PMC members responded to the last roll call. Numerous PMC members actively
+participate in both dev and private list discussions, ensuring that we have
+more than the requisite three members available for rapid response to a CVE or
+similar event.
+
+## Are there current or upcoming risks that threaten the sustainability of your project? This could be anything from a change in employment of prolific contributors, to an acquisition affecting a significant corporate contributor, to a change in the technology landscape that makes your project less (or more) relevant.
+
+We currently do not see any specific risks threatening the project's
+sustainability. We are focused on long-term health through deliberate
+diversification and expansion of our contributor base.
+
+We just added 1 new PMC member.
+
+## Additional indicators of Project Health and
+Growth this Quarter:
+
+**Releases:** We shipped new versions of the:
+
+- Cassandra server
+- Java drivers
+- Cassandra analytics
+
+The project is very close to the alpha release of our next major release -
+6.0. This will be a huge milestone. We formalized our release cadence plans
+and alpha releases.
+
+**Community:** The PMC supervised successful meetups. The project is going to
+  have its own track at Community over Code EU 2026.
+
+**Software grants:** The ASF received software grants from DataStax (IBM) for
+  python-driver, cpp-driver, nodejs-driver, csharp-driver.  All finalized
+  during this quarter.
+
+## What can the Foundation do to more effectively make your project more
+successful in its mission of providing software for the public good?
+
+Nothing at this point.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-K">2025-11-19</a> &mdash; Ekaterina Dimitrova<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>-----------8&lt;----------
+
+&gt; Are you able to provide adequate oversight of your project? That is, are
+&gt; there at least three PMC members who are engaged enough to respond in the
+&gt; event of a CVE or similar crisis?
+
+Yes, we maintain adequate project oversight and can address CVEs. Twenty-five
+PMC members responded to the last roll call. Numerous PMC members actively
+participate in both dev and private list discussions, ensuring that we have
+more than the requisite three members available for rapid response to a CVE
+or similar event.
+
+&gt; Are there current or upcoming risks that threaten the sustainability of
+&gt; your project? This could be anything from a change in employment of
+&gt; prolific contributors, to an acquisition affecting a significant corporate
+&gt; contributor, to a change in the technology landscape that makes your
+&gt; project less (or more) relevant.
+
+We currently do not see any specific risks threatening the project's
+sustainability. We are focused on long-term health through deliberate
+diversification and expansion of our contributor base.
+
+This quarter, we successfully added 1 new PMC member and 4 new committers,
+and another PMC addition is currently under discussion.
+
+Additional indicators of Project Health and Growth this Quarter:
+
+   - Infrastructure: We successfully implemented pre-commit CI (available at
+     pre-ci.cassandra.apache.org), made possible by a generous infrastructure
+     donation from Amazon.
+   - Releases: We shipped new versions of the:
+     - Cassandra server
+     - Java drivers
+     - GoCQL drivers
+     - Sidecar
+     - dtest-api
+   - Community: The PMC supervised several successful new meetups and
+     organized a popular and well-attended Cassandra track at ApacheCon.
+   - Software grants: The ASF received software grants from DataStax (IBM)
+     for python-driver, cpp-driver, nodejs-driver, csharp-driver.  The first
+     three are in progress (the latter is still being considered for acceptance
+     by the project &ndash; if there are enough maintainers for it present).
+
+&gt; What can the Foundation do to more effectively make your project more
+&gt; successful in its mission of providing software for the public good?
+
+None at this time
+-----------&gt;8----------</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-I">2025-08-20</a> &mdash; Dinesh Joshi<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>Are you able to provide adequate oversight of your project? That is, are there
+at least three PMC members who are engaged enough to respond in the event of a
+CVE or similar crisis?
+
+Yes. There are many PMC members actively participating in dev and private list
+conversations.
+
+
+Are there current or upcoming risks that threaten the sustainability of your
+project? This could be anything from a change in employment of prolific
+contributors, to an acquisition affecting a significant corporate contributor,
+to a change in the technology landscape that makes your project less (or more)
+relevant.
+
+No current or upcoming risks known at this time. We are continuing to see
+robust new contributions coming in from diverse corporate contributors. The
+PMC has been considering several new individuals for Committer and PMC roles.
+There are active discussions out. Of note, the project also released the first
+version of the Cassandra Sidecar and Cassandra Analytics sub-projects. These
+sub-projects have attracted new contributions from contributors with diverse
+corporate backgrounds.
+
+What can the Foundation do to more effectively make your project more
+successful in its mission of providing software for the public good?
+
+None at this time.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-I">2025-05-21</a> &mdash; Dinesh Joshi<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>Are you able to provide adequate oversight of your project? That is, are there
+at least three PMC members who are engaged enough to respond in the event of a
+CVE or similar crisis?
+
+Yes. There are many PMC members actively participating in dev and private list
+conversations. The recent PMC roll call was 25 compared to 22 the last time.
+The level of engagement in the PMC is high with active conversations and
+debates.
+
+
+Are there current or upcoming risks that threaten the sustainability of your
+project? This could be anything from a change in employment of prolific
+contributors, to an acquisition affecting a significant corporate contributor,
+to a change in the technology landscape that makes your project less (or more)
+relevant.
+
+No current or upcoming risks known at this time. Over the past 3 months we
+have welcomed 7 new Committers and 4 PMC members with diverse corporate
+backgrounds and functional roles in the project. This represents a healthy
+pace of growth and broadening of skill sets in our community.
+
+
+What can the Foundation do to more effectively make your project more
+successful in its mission of providing software for the public good?
+
+N/A.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-I">2025-02-19</a> &mdash; Dinesh Joshi<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>Are you able to provide adequate oversight of your project? That is, are there
+at least three PMC members who are engaged enough to respond in the event of a
+CVE or similar crisis?
+
+Yes. There are many PMC members actively participating in dev and private list
+conversations. The recent roll call was responded to by 22 PMC members
+compared to 19 in the previous roll call.
+
+
+Are there current or upcoming risks that threaten the sustainability of your
+project? This could be anything from a change in employment of prolific
+contributors, to an acquisition affecting a significant corporate contributor,
+to a change in the technology landscape that makes your project less (or more)
+relevant.
+
+No current or upcoming risks known at this time. We continue to expand the
+roster of the PMC with individuals with diverse corporate sponsorship
+backgrounds as well as representation of our sub-projects. The PMC has been
+discussing ways to establish a list of candidates for Committers and PMC
+members. There are 2 active VOTE threads for Committers on going and
+discussions around adding new PMC members with healthy debate. As mentioned in
+the past report, 2024 saw a shift in resourcing in companies&rsquo; investment of
+employees&rsquo; time to the project. We have seen the void being filled by other
+individual contributors from the community which is a good sign that the
+community is adapting to shifting resourcing. It is also creating space for
+new contributors to drive different areas of the project. The project released
+new versions of the Cassandra server and Java drivers. The project also
+addressed concerns about content violating ASF&rsquo;s trademarks.
+
+
+What can the Foundation do to more effectively make your project more
+successful in its mission of providing software for the public good?
+
+Same as last report &ndash; It would be helpful for the Foundation to support the
+project in areas such as infrastructure to periodically scan for security
+vulnerabilities, PMC-private vulnerability report tracking, additional self
+service options for qbot configuration, dockerhub repository creation, etc.</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-I">2024-11-20</a> &mdash; Dinesh Joshi<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>Are you able to provide adequate oversight of your project? That is, are there
+at least three PMC members who are engaged enough to respond in the event of a
+CVE or similar crisis?
+
+Yes. There are many PMC members actively participating in dev and private list
+conversations. As mentioned in the last board report 19 PMC members have
+responded to the roll call. A fresh roll call is in progress as of writing
+this board report.
+
+
+Are there current or upcoming risks that threaten the sustainability of your
+project? This could be anything from a change in employment of prolific
+contributors, to an acquisition affecting a significant corporate contributor,
+to a change in the technology landscape that makes your project less (or more)
+relevant.
+
+No current or upcoming risks known at this time. We continue to expand the
+roster of the PMC with individuals with diverse corporate sponsorship
+backgrounds as well as representation of our sub-projects. The project has a
+new major release of Cassandra &ndash; 5.0 with 2 fast follow patch releases. The
+project also had new releases of Cassandra 4.1 and 4.0. Discussions around
+releases for the sub-projects are also in progress. We also have new code
+donations coming in.
+
+2024 has seen a shift in companies' investment of employees' time in the
+project.  Some of this is aligned with already known priorities from these
+companies investing into different major versions. This is not impacting the
+project's momentum or sustainability, as the diversity of contributor
+employers continues to grow.
+
+
+What can the Foundation do to more effectively make your project more
+successful in its mission of providing software for the public good?
+
+It would be helpful for the Foundation to support the project in areas such as
+infrastructure to periodically scan for security vulnerabilities, PMC-private
+vulnerability report tracking, additional self service options for qbot
+configuration, dockerhub repository creation, etc.</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-G">2024-08-21</a> &mdash; Dinesh Joshi<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Project Status:
+Current project status: Ongoing. Continuing to drive towards Cassandra 5.0
+release. Issues for the board: None
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-16 (14 years ago) There are currently 82
+committers and 38 PMC members in this project. The Committer-to-PMC ratio is
+roughly 2:1.
+
+Community changes, past quarter:
+- Stefan Miklosovic was added to the PMC on 2024-08-14
+- Jordan West was added to the PMC on 2024-08-14
+- C. Scott Andreas was added to the PMC on 2024-05-21
+- Joey Lynch was added to the PMC on 2024-07-09
+- C. Scott Andreas was added as committer on 2024-05-20
+
+
+## Are you able to provide adequate oversight of your project? That is, are
+   there at least three PMC members who are engaged enough to respond in the
+   event of a CVE or similar crisis?
+
+Yes. Cassandra PMC regularly conducts roll calls. In the last roll call 19 PMC
+Members have responded[1]. Critically, the private@ list as well as dev@ list
+shows participation from PMCs as well as Committers. In the past 3 months we
+have had 3 security related reports / discussions in private@ list which
+received responses in a timely manner.
+
+## Are there current or upcoming risks that threaten the sustainability of
+   your project? This could be anything from a change in employment of
+   prolific contributors, to an acquisition affecting a significant corporate
+   contributor, to a change in the technology landscape that makes your
+   project less (or more) relevant.
+
+No current or upcoming risks known at this time. We continue to expand the
+roster of the PMC with individuals with diverse corporate sponsorship
+backgrounds as well as representation of our sub-projects. We are in the final
+stages of vetting our next major release &ndash; 5.0; it&rsquo;s historically a long
+process and there&rsquo;s shifting engagement from the community on release
+validation. Given the vast majority of our contributions are from full-time
+individuals sponsored to work on the project, we continue to keep an eye on
+and consider governance or release changes that may be necessary to help align
+disparate incentives.
+
+
+## What can the Foundation do to more effectively make your project more
+   successful in its mission of providing software for the public good?
+
+Nothing specifically stands out at this time.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-J">2024-05-15</a> &mdash; Josh McKenzie<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Project Status:
+Current project status: Ongoing. Driving towards 5.0 release. Recent fixes to
+CI infrastructure plus working through a long-running bug have unblocked the
+release. Issues for the board: No issues for the board at this time.
+
+The Java Driver as a subproject has settled and is seeing good velocity on
+issue open / fix and community collaboration. Slow in lead up to 5.0 major.
+
+The Spark Bulk Writer, Spark Bulk Reader, and Cassandra Sidecar projects
+(shared under JIRA CASSANDRASC) are likewise moving along well w/diverse and
+active contribution and collaboration.
+
+We don't yet have the same muscle around direction / roadmap for our side
+projects as we do for the primary project; now that they've started to settle
+and are being more broadly interfaced with as a community we can start
+discussions on the ML about where we'd like to take things.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-16 (14 years ago)
+There are currently 81 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is 9:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-19.
+ - We just voted in Scott Andreas to the PMC in April; processing
+- Brad Schoening was added as committer on 2024-02-09
+- Bret McGuire was added as committer on 2024-02-07 (java driver focused)
+- Erik Merkle was added as committer on 2024-04-18 (java driver focused)
+- Andy Tolbert was added as committer on 2024-04-12 (java driver focused)
+
+## Project Activity:
+### Recent releases:
+- 3.0.30 was released on 2024-04-15.
+- 4.1.4 was released on 2024-02-14.
+- 4.0.12 was released on 2024-01-24.
+### Release votes in-flight:
+- 4.1.5
+- 4.0.13
+
+The new 5.0 major release has 3 tickets blocking its release. We're close.
+
+## Community Health:
+- Dev list conversations are down compared to last quarter. Given we have
+  several ratified CEP's in flight, are close to a major release, and have many
+  contributors active on major features for our next major release, this is not
+  a cause for concern at this time. We can expect to see this pick up after 5.0
+  releases.
+
+## Previous comments / other:
+- re: PMC composition not changing: Scott Andreas was voted in to the PMC in
+  April 2024. We agree that 2 years is too long; will take on discussing this
+  as a PMC, especially w/the new subprojects on board.
+- re: PMC members from subprojects: the committers on these projects need time
+  to get to know The Apache Way. We'll focus on raising them to the PMC as
+  they get acclimated to ASF processes now that the donation has cleared. Re:
+  subscribers to private@ that aren't pmc members, as of manual audit last
+  year it was pmc members using personal email to sub instead of apache
+  emails.</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-H">2024-02-21</a> &mdash; Josh McKenzie<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Project Status:
+Current project status: The project is Ongoing and healthy. We had a successful
+Cassandra Summit back in December and we're lined up for a C* track at
+Community Over Code EU and CoC US in 2024.
+
+We're pushing towards a 5.0 release with many new features the community is
+excited for. Stabilizing that now, and hope to have that out H1'24.
+
+Committer roster continues to grow with diverse folks from many different areas,
+and the subprojects are providing smoother easier on-ramps into the ecosystem
+for new contributors as hoped.
+
+Issues for the board: No issues for the board at this time.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-16 (14 years ago)
+There are currently 79 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-19.
+- Bret McGuire was added as committer on 2024-02-07
+- Alexandre Dutra was added as committer on 2024-01-03
+- Brad Schoening was added as committer on 2024-02-09
+- Francisco Guerrero was added as committer on 2023-11-28
+- Mike Adamson was added as committer on 2023-12-10
+- Maxim Muzafarov was added as committer on 2024-01-08
+- Olivier Michallat was added as committer on 2024-01-18
+
+NOTE: When we bring in a subproject, our approach is to offer the commit bit to
+the top contributors on that project (barring any argument otherwise by existing
+PMC / committers), so they can continue to work on that project with momentum.
+We don't want donating to the foundation to be a hit and run because people
+can't continue working on the thing they built or are blocked on review, etc.
+
+In the event a large project largely funded by one entity is donated to the
+foundation, we expect to see several people raised to committer that work for
+one company at that time. Since we treat "area of committing" as a social
+contract (i.e. only commit code to the area you know about; we don't enforce
+limitations on commit bit from a technical perspective), this doesn't represent
+any change in control or influence across the full project ecosystem.
+
+## Project Activity:
+5.0-beta1 was released on 2023-12-05.
+4.1.4 vote passed morning of 2024-02-14 and should release shortly.
+
+Holiday periods are always slower for us, as are ramps up to a major release as
+people focus on burning down CI flakies. No exception this quarter, but activity
+remains healthy and within expectations.
+
+We're pushing to validate a 5.0 release and hope to fast-follow with 5.1 as
+soon as the Accord feature (distributed ACID transactions w/novel Paxos
+algorithm) is stabilized.
+
+## Community Health:
+Participation on dev list, user list, forums, slack, etc continues at similar
+paces to previous years. Project remains healthy.
+
+## Other notes:
+### Subprojects, governance
+Cassandra isn't an umbrella project nor pushing to be one. We're a distributed
+system that has multiple dependencies and components in its ecocystem which
+only work with the core DB, and the core DB ultimately only works if they're
+present or some other component like them is (i.e. k8s operator, sidecar,
+driver, etc).
+
+Historically the drivers were in-tree then moved out; we've now brought them
+back in. The ecosystem is large enough that no one person can be deep experts
+in the entire set of codebases so we've split up to the "social contract"
+of a global commit-bit with agreed-upon expectations to not review or commit
+code in a place you're not familiar with. Not different than how we've always
+operated on the core database just with more clearly articulated boundaries.
+
+We require at least 3 PMC members to volunteer to be accountable for a
+subproject as we need at least 3 members to vote on releases and need the
+broader view of the ecosystem to integrate w/those projects. The entire PMC
+remains fully responsible for the health, integration, and releases of all
+subprojects. So far this has worked well.
+
+No sub-project will come into the ecosystem without a 100% explicit dependency
+on the core apache cassandra database.
+
+### Planet Cassandra, mark management, marketing
+We've reached out to brand about handling potential mark infringement on
+https://cassandra.alteroot.org.
+
+We've had to go back and forth educating users and vendors on appropriate
+boundaries and balancing / excluding bias, as well as clear respect for the
+foundation and project's marks. The site continues to improve in this regard.
+
+We've had discussions with the folks who run Planet Cassandra about potentially
+donating the site to the ASF (dns record, hosting). They're very excited and
+receptive to this idea; the PMC hasn't had cycles to move on that yet due to
+holiday season and upcoming release. Also, ASF Infra has historically indicated
+to us a general reluctance to take on more domain name registrations or site
+hosting.
+
+We'll have to continue to thread the needle of allowing self-promoting, ASF
+project complementary content on that site that's by definition not vendor
+neutral while the PMC continues to push for keeping the entire property as both
+vendor-neutral and vendor-enabling as possible. Having the site under the
+foundation could only make this process easier for us to continue to refine;
+we'll continue to pursue that.
+
+Project marketing group has been renamed to comdev as seen as more fitting
+for an ASF project.</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-H">2023-11-15</a> &mdash; Josh McKenzie<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+ database.
+
+## Project Status:
+Current project status: the project is healthy and we're driving towards a 5.0
+GA release, hopefully in CY 2023.
+
+Issues for the board: no issues require board attention at this time, but
+feedback on a number of open issues will be provided below.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-16 (14 years ago)
+There are currently 72 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+No new PMC members. Last addition was Dinesh Joshi on 2021-05-19.
+No new committers. Last addition was Patrick McFadin on 2023-03-13.
+
+Discussions are ongoing about new committers (Mike Adamson, Francisco Guerrero
+Hernandez, etc), both for the primary project but also subprojects we've brought
+in this year. We expect the Java Driver donation to lead to quite a few new
+committers as well.
+
+## Project Activity:
+We're optimistic that we can get 5.0 to GA this calendar year; if it slips,
+however, that'd break us free from the "December release" pressure we have if we
+want to hit once a year CY releases, and many users are during change freeze
+from before Thanksgiving so aren't available to really heavily engage in testing
+during this window of time.
+
+### Recent releases:
+5.0-alpha2 was released on 2023-11-04.
+5.0-alpha1 was released on 2023-09-08.
+3.11.16 was released on 2023-08-20.
+
+## Community Health:
+Community engagement in terms of dev and user ML, slack channels, meetups, etc.
+remains healthy. No concerns here, and we have a summit coming in early December
+for the project that should be good for the community.
+
+## Other Updates
+### PlanetCassandra:
+We continue to work with the folks from https://anant.us/ who put
+PlanetCassandra together on guiding their usage of the mark and keeping a
+neutral balance that's inviting to external vendors to participate.
+
+#### Site Contents:
+We've opened some discussions about the possibility of donating the site and the
+property to the ASF. Mark opened up a very helpful thread on our private@
+clarifying some of the things we should work on w/Anant, and there are github
+issues tracking that work now. Patrick McFadin indicated that the code for
+PlanetCassandra is intended to be open sourced; I'll follow up with Rahul
+(w/Anant) on both this and the donation angle.
+
+While the pmc has approved, and has killswitch access credentials and full
+line-of-sight on all activities, it's not PMC managed at this time. It's not
+currently an ASF property and non-committers can and do submit content to the
+site. There's also news aggregation that takes place on the site (where we often
+discover mark violations as the content gets pulled in), which is a great way to
+see it in one place and be helpfully informing vendors about our brand
+requirements.
+
+A number of types of content has been identified as needing or being more
+appropriate to be on the formal project website and have since been moved.
+
+#### Domain:
+The owners of the domain registration (DataStax employees) state they have
+offered to donate the domain to the ASF multiple times but been repeatedly
+turned down. Not sure the details here; we will pursue this.
+
+https://cassandra.alteroot.org (Alteroot clone of Planet Cassandra)
+This site isn't maintained by the pmc or C* community. If brand could follow up
+with the maintainers of this site we'd appreciate it.
+
+### Catalyst Program (formerly Cassandra MVP)
+Discussion continues with particular care taken to funnel all activity
+appropriate for ASF merit into those existing channels, and clearly demarcating
+what the program is intended to target (community building efforts) vs.
+committer (project building, code building efforts).
+
+### Java Driver Donation
+Mick forgot to add general@incubator on the vote thread so we're working through
+anything that was missed there, e.g. some issues legally blocking distribution.
+We're receiving immediate help on this so we're unblocked and making progress.
+
+### Subprojects
+Ecosystem is evolving and going well; as discussed above we're moving to raise
+committers for existing sub-projects and should be able to do the same for the
+Java Driver this quarter
+
+### Dependencies and clarification on generative AI
+See https://issues.apache.org/jira/browse/LEGAL-656. The author of the jvector
+library our project took a dependency on was very clear about their usage of
+generative AI during authorship of the work and some PMC members were concerned
+that might have implications with us taking a dependency on this for a core
+feature in our upcoming release. We got clarification on the legal JIRA and the
+authors of the work clarified their compliance with ICLA clauses #5 and #7 in
+the comments on https://issues.apache.org/jira/browse/CASSANDRA-18715,
+clarifying any ambiguity there on rights and assignment.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-L">2023-08-16</a> &mdash; Josh McKenzie<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues for the board at this time
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-16 (13 years ago)
+There are currently 72 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-19.
+- No new committers. Last addition was Patrick McFadin on 2023-03-13.
+
+## Project Activity:
+We've had new releases on our 2 primary lines, 4.1.3 and 4.0.11, both back in
+July. We're on track for releasing a very significant major (5.0) with many
+novel new features, and this is planned to cut within a year of our last major
+.0 release as committed to the community.
+
+Discussions around donations of the Java and python drivers from DataStax to
+the Apache Foundation have resumed now that IP clearance has been worked
+through.
+
+## Community Health:
+Engagement on dev list and user list as well as dev and user slack remains
+healthy and consistent; we expect to see a bump in both as we cut an alpha for
+5.0 and start calling on the community to test out the new features coming up.
+Contributions leading up to the new release remain high.
+
+Some stats:
+- dev@cassandra.apache.org had a 9% increase in traffic in the past quarter
+(814 emails compared to 741)
+- 488 commits in the past quarter (17% increase)
+- 77 code contributors in the past quarter (50% increase)
+
+
+## Conversation from the last board report
+&gt; Having a look at your "pr@" list...
+Thanks for the feedback; we're looking into this.
+
+&gt; Going through your mailing list subscriptions I noticed a large number of non
+&gt;   PMC members and non ASF Members being subscribed. Some are committers and
+&gt;   some absolutely not related to the project...
+- povel.y@gmail.com, jonathan.haddad@gmail.com are PMC members.
+- We know who Prashant Malik and Avinash Lakshman are. They've declined PMC
+    membership.
+- Looks like Kannan is a committer on HBase but nobody on the PMC has stepped
+    forward as knowing him. To our knowledge he's not active in the Cassandra
+    Community or on the project.
+
+&gt; I also stumbled over your marketing@ list...
+&gt; it feels as if all of this stuff is run by Datastax employees... to me it all
+&gt;   looks very corporaty and not quite sure this is how things should be done
+&gt;   for an apache open-source project.
+We discussed the creation of this list on dev@ here:
+https://lists.apache.org/thread/cd75fx95l827bdf7om9v52zp414vjmv1 and settled via
+lazy consensus.
+
+Patrick drove establishing the list on the ML but organization is primarily
+being led by people not employed by DataStax, and there are regularly
+participants from Constantia, Axon, Instaclustr, Aiven, and PMC members employed
+by various other companies on these calls.
+
+The meetings and minutes are all under PMC and ASF infra control here:
+https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=240883297
+
+&gt; Patrick McFadin who sort of feels like he's "running cassandra marketing" and
+&gt;   is "only" a committer in the project.
+We've been working on adjusting our bar for the commit bit for a few years now
+(see email thread from Jon Haddad on private@ from April 2022 for some perspectives).
+
+Raising doc contributors in early 2022 and Patrick as a non-code, community
+committer earlier this year are steps in the right direction. More work to be done.
+
+&gt; The website PlanetCassandra.org seems to be considered the most important
+&gt;   source of education in the meeting minutes for "management meetings"
+&gt;   (https://docs.google.com/document/d/1_73-iSjo1ZKKFn410rOCqNctnhNJOFLvbVA225OdrXY),
+&gt;   while I didn't see any explicit mention of DataStax, the domain however
+&gt;   belongs to DataStax.
+I'm not sure what the "management meetings" bit is referring to here, but the
+stated goals of cassandra.apache.org vs. planet cassandra are long-term durable
+education vs. short-term, user-led use-case sharing and social connectivity.
+
+We've had a lot of discussion about demarcations between the two sites as well
+as the cost/benefit of having 2 sites serving different personas and needs, and
+friction w/contribution of content to cassandra.apache.org vs. other sites, and
+these conversations are still ongoing.
+
+Of note, the PMC has admin access to Planet Cassandra's site and all socials.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-H">2023-05-17</a> &mdash; Josh McKenzie<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-16 (13 years ago)
+There are currently 72 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-19.
+- Patrick McFadin was added as committer on 2023-03-13
+
+## Project Activity:
+3.11.15 was released on 2023-05-05.
+4.0.9 was released on 2023-04-14.
+4.1.1 was released on 2023-03-21.
+
+The 3.0 line continues to have special dispensation as our oldest supported
+release; when 5.0 releases we'll be dropping support for 3.0 and 3.11 both,
+leaving 4.0, 4.1, and 5.0 as our supported lines.  Continued releases on the
+4.0 line (post major stabilization) and 4.1 line (release line with
+significant operator tooling and stability features added) has seen good
+uptake in migration without any major surprises in terms of defects.
+
+There's a significant amount of work leading up to the 5.0 release; we have
+not yet concluded when to set a drop-dead date to cut the release as there's
+healthy tension between wanting to keep to a healthy yearly cadence and some
+very significant new features (multi-key transactions w/1 round-trip
+uncontended, strongly consistent cluster topology, some major data structure
+enhancements). No blockers and communication is healthy here.
+
+## Community Health:
+We expect to see several committer nominations in the near future when the
+CEP-28 work lands (Spark bulk reader / writer in the Sidecar). These will be
+our first committers in an ecosystem subproject since we codified our
+governance structure for subprojects recently.
+
+Activity is picking up as we head into spring and summer, as well as the
+expected upcoming major 5.0 release. Some highlights: dev@cassandra.apache.org
+had a 58% increase in traffic in the past quarter (794 emails compared to 500)
+user@cassandra.apache.org had a 42% increase in traffic in the past quarter
+(151 emails compared to 106) 267 issues opened in JIRA, past quarter (25%
+increase) 190 issues closed in JIRA, past quarter (43% increase) 401 commits
+in the past quarter (45% increase)
+
+Moving some of our major work (mentioned above) into feature branches rather
+than on personal forks has given much more visibility into the amount of
+attention going into these major efforts and been effective in attracting more
+collaboration.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-K">2023-02-15</a> &mdash; Michael Semb Wever<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+
+## Issues:
+
+No action required from the board.
+
+We are still in a grace period before removing all older deb and rpm packages
+from dist.a.o and archive.a.o . Newer releases are now only found on
+apache.jfrog.io
+
+The vulnerability reported in December: around yaml parsing; is evaluated as
+non-critical and does not qualify as a CVE. Surface area is restricted to
+trusted operators. Yaml loading has been hardened as an extra line of defence:
+https://issues.apache.org/jira/browse/CASSANDRA-18150
+
+Further information on CVEs we have evaluated, and suppressed, as not relevant
+can be found in
+https://github.com/apache/cassandra/blob/trunk/.build/dependency-check-suppressions.xml
+
+
+## Membership Data:
+
+Apache Cassandra was founded 2010-02-17 (13 years ago) There are currently 72
+committers and 36 PMC members in this project. The Committer-to-PMC ratio is
+roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-20.
+- The latest new committer is Patrick McFadin. Added last week, his id creation
+  still in progress.
+
+
+## Project Activity:
+
+The project planned the Cassandra Summit, a Linux Foundation Event, for March.
+We received a record amount of submitted talks. Due to the current economic
+environment the event has been moved back to December 12-13th. The existing
+date will host instead a new online event: Cassandra Forward.
+
+https://lists.apache.org/thread/g4rsqjysn4fqw34z6ro5q6ywml6mnrzd
+
+In December we saw the Cassandra Day China event. We are working on making it
+easier for anyone to host and repeat our Cassandra Day events.
+https://cassandra.apache.org/_/events/20221222-cday-china.html
+
+The project has created a marketing@ ML and a dedicated Publicity
+&amp; Marketing Group that meets monthly. Media and Social activity continues in
+  collaboration with the individuals from Constantia.
+
+https://lists.apache.org/thread/cd75fx95l827bdf7om9v52zp414vjmv1
+
+Additional governance rules have been created to cater for the inclusion of
+subprojects and the growing community ecosystem. This includes the notion of
+partial, or per-subproject, committers. This is socially enforced in the
+project.
+
+https://lists.apache.org/thread/tgbqpq5x03b7ssoplccxompxj6d1gw90
+
+
+Recent releases:
+- 4.1.0 (GA) was released on 2022-12-13.
+- 4.1-rc1 was released on 2022-11-22.
+- 3.11.14 was released on 2022-10-24.
+
+4.0.8 is cut and being voted on. 3.0.29 and 3.11.15 are being cut.
+
+
+The PMC Chair will rotate before the next board report.
+
+
+## Community Health:
+
+The community can be considered healthy and growing.
+
+Cassandra project status updates are emailed regularly to dev@, these are
+worth reading for a more detailed view on current state of affairs in the
+project. See https://s.apache.org/0heaa</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#attachment-H">2022-11-16</a> &mdash; Michael Semb Wever<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Issues:
+
+Per INFRA's notice, all our debian and redhat packages on dist.a.o will be
+removed. These convenience binaries are already on apache.jfrog.io . Newer
+releases are now only found on apache.jfrog.io. We are in a grace period
+before removing all older packages from dist.a.o and archive.a.o
+
+Answering rbowen's question from last report, the project's involvement in the
+Grace Hopper Open Source Day September conference was primarily offering
+mentoring to some of our lhf jira tickets, and was with PMC approval.
+
+## Membership Data:
+
+Apache Cassandra was founded 2010-02-17 (13 years ago)
+There are currently 71 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-20.
+- No new committers. Last addition was Jacek Lewandowski on 2022-07-14.
+
+## Project Activity:
+
+There has been numerous events, 9 different Cassandra Days (Europe, Asia,
+USA), and our participation in ApacheCON.
+
+With the Cassandra project rebuilding its momentum and looking to build a more
+diverse community, ApacheCON occurred at the perfect time for us. From
+bringing new contributors into the loop with what's possible with the
+technology (the invisible roadmap), to spending time with them to re-affirm
+the community's open (and welcoming) position to all commercial actors, to
+just a focus on renewed energy among the project's existing committers. We are
+very thankful for everyone that worked so hard to make it happen.
+
+The project is now planning Cassandra Summit, a Linux Foundation Event, for
+next March. Will be hybrid, the onsite at San Jose. CFP is open and we are
+actively looking for sponsors.
+
+Due to the increase in events the Cassandra website now has a dedicated page
+for all community, and PMC+Trademarks approved, events:
+https://cassandra.apache.org/_/events.html
+
+Media and Social activity continues in collaboration with the individuals from
+Constantia. This is proving to be of critical value, delivering quality to the
+community that the engineering community struggles with. The PMC continues to
+work with Constantia to ensure things are in accordance with ASF requirements
+and values, but this is now only a formality.
+
+Recent patch releases were:
+4.1-beta1 was released on 2022-10-12.
+4.0.7 was released on 2022-10-24.
+4.0.6 was released on 2022-08-25.
+3.11.14 was released on 2022-10-24.
+3.0.28 was released on 2022-10-23.
+
+The current priority in the community remains getting 4.1 to GA. Fixing a
+small handful of flaky tests, that fail 1:100 or 1:1000 runs, on the ASF CI
+cluster of donated heterogenous agents, amongst our test suite of ~50k tests,
+remains an interesting and time-consuming pursuit. The project is discussing
+how we can improve this situation without becoming dependent on proprietary CI
+solutions (like circleci). Development over the next year looks to be ramping
+up with the CEPs in progress, putting additional pressure on the need to
+stabilise and mature our CI. Additional testing frameworks need to be plugged
+in and made available to the public, particularly integrating our exploratory
+fuzz testing framework.
+
+## Community Health:
+
+The community can be considered healthy and growing.
+
+Cassandra project status updates are emailed regularly to dev@, these are
+worth reading for a more detailed view on current state of affairs in the
+project. See https://s.apache.org/0heaa</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-G">2022-08-17</a> &mdash; Michael Semb Wever<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Issues:
+
+Per INFRA's notice all debian and redhat packages on dist.a.o will be removed,
+as they are already checked and signed per disto norms and the project does
+not wish to add superfluous checks and sigs (and have to re-vote on all past
+releases). The project will host these convenience binaries instead on
+apache.jfrog.io (which is also better purposed for such).
+
+## Membership Data:
+
+Apache Cassandra was founded 2010-02-17 (12 years ago)
+There are currently 71 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-20.
+- Jacek Lewandowski was added as committer on 2022-07-14
+
+## Project Activity:
+
+Project releases since last report: 4.1-alpha1, 4.0.5, 4.0.4, 3.11.13 and
+3.0.27.
+
+The community's focus is currently on fixing flaky tests to be able to release
+4.1-beta1. Progress is visible at https://s.apache.org/usdv9
+
+The project organised the Cassandra World Party in the beginning of August,
+and is helping to organise Cassandra Days Berlin later in August and ApacheCon
+in October. The Cassandra track received more than three times as many talks
+as we could accept. More Cassandra Days are planned this year and next. The
+community will also participate in the Grace Hopper Conference in September.
+
+Community blog posts and changelog articles continue to come out on a regular
+basis, thanks to Chris Thornett, Diogenese Topper and Erick Ramirez. 14 blogs
+have been published in the past quarter, these include feature deep-dives,
+project activity reports (changelogs), contributor interviews, and company
+case studies.
+
+## Community Health:
+
+Community health is strong. New contributors continue to appear.
+
+Keeping a stable trunk remains a challenge. Particularly when suites of ~50k
+tests can be run on different hardware and CI systems. Average test failures
+on builds for each branch continue to drop (bc lots of hard work).
+
+Cassandra project status updates are emailed regularly to dev@, these are
+worth reading for a more detailed view on current state of affairs in the
+project. See https://s.apache.org/0heaa</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-E">2022-05-18</a> &mdash; Michael Semb Wever<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Issues:
+
+There are no issues requiring board attention.
+
+## Membership Data:
+
+Apache Cassandra was founded 2010-02-16 (12 years ago) There are currently 70
+committers and 36 PMC members in this project. The Committer-to-PMC ratio is
+roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-19.
+- Anthony Grasso was added as committer on 2022-02-17
+- Alex Sorokoumov was added as committer on 2022-03-21
+- Erick Ramirez was added as committer on 2022-02-11
+- Lorina Poland was added as committer on 2022-02-17
+
+Anthony, Erick, and Lorina were contributors to the website and docs. Their
+inclusion as committers came as a result of the PMC agreeing to broaden the
+scope and trust to who could be committers.
+
+## Project Activity:
+
+The cassandra-4.1 release branch was created on the 1st May. The community has
+held its agreement to a yearly major release cadence.
+
+Some statistics on the last years worth of work are:
+- 89 unique contributors
+- 498 jira issues (43% bugs)
+- over 3k files touched
+- over 65k added LOC, &gt;310k deleted LOC
+
+The community will now maintain four release branches: 3.0, 3.11, 4.0, 4.1;
+over the next year and then (next May) will drop maintenance of both the 3.0
+and 3.11 branches.
+
+Recent releases:
+4.0.3 was released on 2022-02-17.
+3.0.26 was released on 2022-02-11.
+3.11.12 was released on 2022-02-11.
+
+New release 4.0.4, 3.11.13, 3.0.27 are currently being voted on.
+
+An interview with GigaOm was recently done, it has not yet been published.
+
+## Community Health:
+
+Keeping a stable trunk remains a challenge. Test failures on 4.0 remain low
+(single-digit) and serve as a control test that the CI infrastructure is
+ working (ci-cassandra.a.o still suffers high saturation and on occasion full
+ disks). While in trunk (4.1) over the past year the failures have increased
+ and are typically collateral damage from poorly written past tests and/or
+ unforeseen setup/teardown requirements. These failures need to be address
+ before any releases are cut off the 4.1 branch. The number of tests in trunk
+ has increased significantly, with a 30% increase in test LOC. The community
+ has introduced a build lead role that rotates every week, to keep track of
+ failures and CI infra, ensuring test failures are associated to a jira
+ ticket. This work is facilitated with the use of the Butler tool/website.
+
+Community blog posts and changelog articles continue to come out on a regular
+basis, thanks to Chris Thornett, Diogenese Topper and Erick Ramirez. Efforts
+are also underway around coordinating and pushing marketing efforts. And a
+number of folk are organising the Cassandra track at the ACNA, the number of
+submissions remain low and more effort will be required to get the word out.
+
+Cassandra project status updates are emailed regularly to dev@, these are
+worth reading for a more detailed view on current state of affairs in the
+project.
+https://lists.apache.org/list?dev@cassandra.apache.org:lte=2y:%22Cassandra%20project%22%20%22status%20update%22</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-F">2022-02-16</a> &mdash; Nate McCall<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-17 (12 years ago) There are currently 66
+committers and 36 PMC members in this project. The Committer-to-PMC ratio is
+roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-20.
+- No new committers. Last addition was Sumanth Pasupuleti on 2021-10-27.
+
+
+## Project Activity:
+There has been no releases this quarter. Most activity and
+community focus has been on trunk development which will not see a release
+until May.
+
+Patch releases 4.0.2 and 3.11.12 are quite probable in the near term.
+
+A lot of effort is still going into CI and establishing a Stable Trunk
+development approach. The introduction of https://butler.cassandra.apache.org/
+and a rotating build lead role is helping to correlate CI results to trends
+and to jira tickets.
+
+
+## Community Health:
+Community health is strong.
+
+Extra effort has been put into regular website content and blogs, and to the
+twitter account. The twitter account @cassandra is aiming to post twice a day.
+
+A quick sample survey showed &gt;20% of our users have upgraded to 4.0
+
+Cassandra project status updates are emailed regularly to dev@, these are
+worth reading for a more detailed view on current state of affairs in the
+project.
+https://lists.apache.org/list?dev@cassandra.apache.org:lte=2y:%22Cassandra%20project%22%20%22status%20update%22</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-K">2021-11-17</a> &mdash; Nate McCall<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Issues:
+No issues to raise with the board this quarter.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-17 (12 years ago)
+There are currently 66 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Dinesh Joshi on 2021-05-20.
+- Aleksei Zotov was added as committer on 2021-09-21
+- Adam Holmberg was added as committer on 2021-08-10
+- Sumanth Pasupuleti was added as committer on 2021-10-27
+
+## Project Activity:
+Three patch releases have been published this quarter.
+
+Lots of new activity on all fronts, often an increase from 25 to 60% (mailing
+lists, pull requests, jiras, etc). Commits being merged has dropped,
+but that is due to current activities, post the 4.0 release and its feature
+freeze being lifted, shifting to CEPS and planning major new features.
+
+## Community Health:
+Community health is strong and improving. The community is finding its feet
+with its new Cassandra Enhancement Proposal (CEP) process, and collaborating
+across a more diverse landscape. Efforts continue to ensure newcomers are
+attracted and welcomed. Maintaining CI test results, while accelerating dev
+efforts is also an ongoing focus.
+
+Cassandra project status updates are emailed regularly to dev@, these are
+worth reading for a more detailed view on current state of affairs in the
+project.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-H">2021-08-18</a> &mdash; Nate McCall<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Issues:
+
+There are no issues requiring board attention.
+
+## Membership Data:
+
+Apache Cassandra was founded 2010-02-17 (11 years ago)
+There are currently 64 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Dinesh Joshi was added to the PMC on 2021-05-20
+- Adam Holmberg was added as committer on 2021-08-10
+- Jon Meredith was added as committer on 2021-07-29
+- Caleb Rackliffe was added as committer on 2021-05-14
+
+## Project Activity:
+
+Recent releases:
+4.0.0 was released on 2021-07-26.
+4.0-rc2 was released on 2021-06-30.
+3.11.11 was released on 2021-07-28.
+3.0.25 was released on 2021-07-28.
+
+The 4.0.0 release was a major milestone, years in the making. With
+coordination by ASF Press (Sally Khudairi) and Constantia (Melissa Logan)
+there was lots of media attention.
+
+The 4.0.0 release took four staging attempts and three voting rounds. PMC
+involvement and willingness to appropriately veto releases is demonstrating
+the community's seriousness for high quality releases.
+
+In coordination with the 4.0.0 release, a new design of the website was
+launched. The new version changes from ReStructuredText, Sphinx and Jekyll, to
+Asciidoc and Antora. This includes new content contributions from vendors and
+book authors, as well as making it easier to provide versioned docs for each
+release and for different languages.
+
+More information on can be read in our last Project Status email report:
+https://lists.apache.org/thread.html/r102752c080db48e34daadd575d11714ddfc6f773810c7a82556c05d3%40%3Cdev.cassandra.apache.org%3E
+
+## Community Health:
+
+The reporter statistics report the project as Super Healthy to which we agree.
+This quarter has been a highlight for the project.
+
+The discussion of encouraging new and active contributors continues. This
+includes the topics of better visualising contributor metrics, JIRA ticket
+hygiene, establishing the Cassandra Enhancement Proposals (CEP) process and
+practice, and addressing our limited Reviewer capacity.
+
+For JIRA ticket hygiene we are looking into JIRA automations to notify on
+stale tickets, and to eventually transition such tickets to more appropriate
+statues.
+
+For contributions metrics we have evolved Subversion's contribulyze.py
+statistics for our needs. These statistics, currently under evaluation, are
+available for different time periods here:
+https://nightlies.apache.org/cassandra/devbranch/misc/contribulyze/html/
+
+For CEPs, with development on Cassandra 4.1 now active, a number of new CEPs
+in action are helping to iron out the finer details. ref:
+https://lists.apache.org/thread.html/r232a87ccd0c5c08ce9c40cf8e5936c47270b59ff5d94d1fb33a80f21%40%3Cdev.cassandra.apache.org%3E
+
+For Reviewer capacity we remain challenged. The project requires two reviewers
+on most code contributions, or two committers involved on any ticket. On the
+more involved areas of the codebase we typically see three or more involved.
+This is critical for the quality and safety of end-users' data, but places a
+burden on the project to find enough volunteers and keep contributions from
+stagnating.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-G">2021-05-19</a> &mdash; Nate McCall<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Cassandra software is a highly scalable second-generation distributed
+database.
+
+## Issues:
+
+The project is waiting on clear documentation on the policy of the permitted
+composition of releases.
+
+The project is following the same release procedure it has for the past 11
+years, as it was developed in the incubator. This procedure adheres to all
+current documentation of the ASF's release policy. The project was recently
+told this was not the case.
+
+The project requests this policy documentation be clarified. The project has
+applied what it presumes to be an accurate and efficient fix to trunk, but not
+on our older release branches: 2.2, 3.0 and 3.11. Addressing the issue
+involved significant effort over a number of codebases, and distracted many
+from fixing critical technical issues in the 4.0 code. This was the project's
+first 4.0 RC release after many years of feature freeze (on the whole project)
+as it focuses on stabilisation efforts. At a critical point in time for the
+project, with a number of community events coordinated, it was unfortunate
+timing for the issue to be raised and demanded to be immediately fixed.
+
+The project is interested in improving how communication happens across the
+ASF. Recent interjections have disrupted the health of the community. Despite
+best intentions to be constructive the issues were raised in an authoritative
+manner over the project, and with only a little homework were quickly proven
+as factually wrong. While these issues could have been easily raised by a
+contributor without controversy, they also demonstrate the challenges of good
+communication.
+
+
+## Membership Data:
+
+Apache Cassandra was founded 2010-02-17 (11 years ago) There are currently 61
+committers and 35 PMC members in this project. The Committer-to-PMC ratio is
+roughly 8:5.
+
+Community changes, past quarter:
+- Paulo Motta was added to the PMC on 2021-02-09
+- Berenguer Blasi was added as committer on 2021-04-01
+- &Scaron;tefan Miklo&scaron;ovi&ccaron; was added as committer on 2021-05-02
+
+The PMC currently consists of 35 members. 38% work at Apple, 22% at DataStax.
+The remaining 40% do not share the any same employer. The project considers
+this a healthy ratio.
+
+## Project Activity:
+
+Recent releases:
+4.0-rc1 was released on 2021-04-25. After a previous failed attempt.
+3.0.24 was released on 2021-02-01.
+3.11.10 was released on 2021-02-01.
+
+A newly designed website was launched for Apache Cassandra. With a heavy focus
+on the community and the extent of Cassandra deployments. Work is ongoing with
+contributions to the documentation and providing versioned documentation for
+each release.
+
+The community is collecting its own website traffic stats using a self-hosted
+Plausible server. The project recommends ASF Infra considers evaluating
+hosting this for all projects.
+https://plausible.cassandra.apache.org/cassandra.apache.org
+
+The community organised the Apache Cassandra World Party, hosting
+presentations and lightning talks in three timezones (APAC, EMEA, AMER),
+attracting over a thousand participants.
+https://hopin.com/events/apache-cassandra-4-0-world-party
+
+Trademark issue with Aiven remain in discussion.
+
+## Community Health:
+
+All MLs have seen a significant increase in traffic, attributed to the RC
+release of 4.0, the feature freeze on trunk ending, and ongoing efforts to
+build community momentum.
+
+The PMC takes regular discussions on how to improve community growth and
+encouraging contributors. The last thread on it received a lot of engagement,
+especially as new contributors are appearing now that the feature freeze on
+trunk is lifted. This thread started before a Board member interjected about
+not enough being done. Focus is currently on reviewer bandwidth and Jira
+ticket hygiene.
+https://lists.apache.org/thread.html/ra364097c4dafeeac52934bbf08687b3b54445c5758824c53bcb901b0%40%3Cdev.cassandra.apache.org%3E</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-G">2021-02-17</a> &mdash; Nate McCall<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues to bring to the board's attention at this time. The PMC
+has been actively dealing with CVE and trademark issues, as they are brought
+to our attention.
+
+## Membership Data:
+There are currently 59 committers and 34 PMC members in this project. The
+Committer-to-PMC ratio is roughly 8:5.
+
+PMC and committer additions this quarter:
+- Adding a new PMC member in currently in progress. The last PMC addition was
+  Michael Semb Wever on 2020-04-09.
+- Ekaterina Dimitrova was added as committer on 2020-12-10
+- Yifan Cai was added as committer on 2020-12-19
+
+## Project Activity:
+The project's focus remains on testing 4.0 beta, with trunk remaining in
+feature freeze. A 4.0 RC release is looking likely in the this quarter. A 4.0
+GA looks to be soon after. This progress is being regularly reported with the
+'Cassandra 4.0 Status' emails on the dev ML, and can also be visualised via
+the jira board:
+https://issues.apache.org/jira/secure/RapidBoard.jspa?rapidView=355&amp;view=detail&amp;selectedIssue=CASSANDRA-16382&amp;quickFilter=1661
+
+The releases 3.0.24 and 3.11.10 address CVE-2020-17516. This took some time to
+release and report but it was being actively addressed during what appeared
+the waiting period. Furthermore, these releases were cut and published by a
+new release manager, a positive sign in seeing the release manager become a
+more rotating role.
+
+The community is receiving and publishing monthly changelog blogs, which
+include reaching out to users and getting use-case descriptions and quotes.
+There also looks to be momentum in Cassandra getting involved in GSoC 2021.
+
+Recent releases:
+* 3.0.24 was released on 2021-02-01.
+* 3.11.10 was released on 2021-02-01.
+* 4.0-beta4 was released on 2020-12-30.
+
+## Community Health:
+The community appears to be in good health. The past quarter has seen a slight
+reduction in activity but that would appear to be only to do with the time of
+year.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-F">2020-11-18</a> &mdash; Nate McCall<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues to bring to the board's attention at this time.
+
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-17 (11 years ago)
+There are currently 57 committers and 34 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Semb Wever on 2020-04-09.
+- Zhao Yang was added as committer on 2020-09-23
+
+## Project Activity:
+The project's focus remains on testing 4.0 beta, with the trunk code remaining
+in feature freeze. A 4.0 GA release is looking likely in the next quarter. The
+community continues to build momentum, with an increases in dev mailing list
+traffic, number of jira tickets closed, and in commits. There have been more
+releases than usual as the community has responded promptly to issues and bugs.
+
+Notable activities in the past quarter are:
+- Harry - a fuzz testing tool for the project, was donated, having gone
+  through the Incubator's IP Clearance.
+- Discussions on the various Kubernetes Operators and whether to promote one,
+  merge, or re-invent, continue with a healthy and engaged diversity between
+  implementations.
+- The project's governance has become better agreed upon and documented, with
+  the past quarter demonstrating it in play with the PMC trending to use the
+  dev ML more than the private ML.
+- The project's website, and its documentation, is undergoing efforts to
+  redesign and improve layout and navigation around the bulk of documentation
+  that continues to be donated to the project.
+
+Recent releases:
+* 2.2.19 was released on 2020-11-04.
+* 3.0.23 was released on 2020-11-04.
+* 3.11.9 was released on 2020-11-04.
+* 4.0-beta3 was released on 2020-11-04.
+* 2.1.22 was released on 2020-08-31.
+* 2.2.18 was released on 2020-08-31.
+* 3.0.22 was released on 2020-08-31.
+* 3.11.8 was released on 2020-08-31.
+* 4.0-beta2 was released on 2020-08-31.
+
+## Community Health:
+We feel the community is building momentum. Folk are anxious to get 4.0
+released and to end the feature freeze encouraging the larger contributions
+and new contributors into the project. This has energised the community in
+what appears to be the last stretch of testing for 4.0.</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-I">2020-08-19</a> &mdash; Nate McCall<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues at this time.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-17 (10 years ago)
+There are currently 56 committers and 34 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Semb Wever on 2020-04-09.
+- David Capwell was added as committer on 2020-07-22
+
+## Project Activity:
+This has been a busy quarter:
+- We have 19 talks accepted for ApacheCon
+- We have received a proposal for a sizeable code donation of all the client
+  driver libraries maintained by DataStax. We are currently discussing how
+  this would work in terms of onboarding committers, integrating with
+  community, and structuring of artifacts and release cadences. We will most
+  likely import the java-driver first (following the incubator process for
+  donation) as a trial run to work out the process.
+- DataStax has also offered to donate a substantial amount of documentation to
+  the project along with resources for maintenance
+- We have released 4.0-beta1 and received a good amount of press
+
+Recent releases:
+3.0.21 was released on 2020-07-29.
+2.2.17 was released on 2020-07-24.
+3.11.7 was released on 2020-07-24.
+4.0-beta1 was released on 2020-07-20.
+
+## Community Health:
+Between the number of talks submitted for ApacheCon, the recent donations,
+and the interest from 4.0-beta1, we feel the community is doing quite well.
+
+There is daily participation on both the user and dev slack channels and
+the number of users therein continues to increase.
+
+Traffic to dev@cassandra.apache.org had a 21% increase in the past quarter.</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-H">2020-05-20</a> &mdash; Nate McCall<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues to report at this time.
+
+This quarter, we were able to come to an amicable resolution with AWS
+concerning the use of our Apache Cassandra trademark in their Cassandra SaaS
+offering. The AWS folks were amenable and gracious through the whole process
+and have rebranded to "AWS Keyspaces."
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-17 (10 years ago)
+There are currently 55 committers and 34 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- Michael Semb Wever was added to the PMC on 2020-04-09
+- Jordan West was added as committer on 2020-04-29
+
+## Project Activity:
+4.0-alpha4 was released on 2020-04-24 as we continue to gather feedback on our
+upcoming 4.0 release.
+
+The following maintenance releases were made for existing versions:
+- 2.2.16 was released on 2020-02-14
+- 3.0.20 was released on 2020-02-14
+- 3.11.6 was released on 2020-02-14
+
+## Community Health:
+We have continued with weekly updates to the dev list on the progress of bugs
+and issues open for 4.0. There has also been a significant uptick in
+participation as more folks pitch in to help get our release out. The
+following statistics show this increased effort:
+
+- 232 issues opened in JIRA, past quarter (51% increase)
+- 217 issues closed in JIRA, past quarter (143% increase)
+- 242 commits in the past quarter (101% increase)
+- 60 code contributors in the past quarter (66% increase)
+- 168 PRs opened on GitHub, past quarter (162% increase)
+- 119 PRs closed on GitHub, past quarter (376% increase)
+
+Additionally, we have had some very robust discussions on guidelines for PMC
+membership as well as process based votes in general. We are working to
+produce some project level documentation so that we have a shared
+understanding of this for ourselves as PMC members and, more importantly, for
+our community.</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-F">2020-02-19</a> &mdash; Nate McCall<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues to report at this time.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-17 (10 years ago)
+There are currently 54 committers and 33 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chris Lohfink on 2019-10-01.
+- No new committers. Last addition was Dinesh Joshi on 2019-03-05.
+
+## Project Activity:
+We released 4.0-alpha3 on 2020-02-06 to gather community feedback and get more
+folks actively involved in testing. We have started a detailed tracking board
+on JIRA and have been sending out regular updates on status. An example email
+can be found here: https://s.apache.org/r56u3
+
+Other releases:
+- 2.2.15 was released on 2019-10-29.
+- 3.0.19 was released on 2019-10-29.
+
+Note: new releases of each 3.11, 3.0, and 2.2 branches are currently under vote.
+
+## Community Health:
+We've had a substantial uptick in traffic over the past quarter as a result of
+folks getting back involved in the release of 4.0 after the holidays. The
+following stats are pertinent:
+- 79 issues closed in JIRA, past quarter (21% increase)
+- 115 commits in the past quarter (57% increase)
+- 35 code contributors in the past quarter (40% increase)
+- 63 PRs opened on GitHub, past quarter (36% increase)
+
+We continue to see an increase in user participation in both #cassandra and
+#cassandra-dev Slack channels. This is now our most popular avenue for helping
+new users.
+
+We are looking forward to our Apache Cassandra track at this years ApacheConNA
+and have again requested three days. CFP announcements for such have been sent
+to the dev and users mail lists.</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#attachment-F">2019-11-20</a> &mdash; Nate McCall<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+No issues to report at this time.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-17 (10 years ago)
+There are currently 54 committers and 33 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Chris Lohfink was added to the PMC on 2019-10-01
+- No new committers this quarter.
+
+## Project Activity:
+This quarter has been active. We have had a very successful ApacheCon with 2
+well attended tracks over three days. Of the vendors there, five of them had
+Cassandra product offerings while two were focused exclusively on Cassandra.
+We have already begun talking a similar sized effort for ApacheCon NA 2020.
+
+We have begun migrating our site off of SVN as that has been a barrier to
+entry in accepting documentation patches in a timely manner.
+
+We have released two alphas of the upcoming 4.0 and received helpful feedback
+and bug reports from the community. All other active versions were released as
+well. A list of releases follows:
+
+- 2.2.15 was released on 2019-10-29.
+- 3.0.19 was released on 2019-10-29.
+- 3.11.5 was released on 2019-10-29.
+- 4.0-alpha2 was released on 2019-10-29.
+- 2.2.15 was released on 2019-10-29.
+
+## Community Health:
+Interesting statistics from community health:
+- dev@cassandra.apache.org had a 163% increase in traffic in the past quarter
+  (329 emails compared to 125)
+- 44 PRs opened on GitHub, past quarter (69% increase)
+- 20 PRs closed on GitHub, past quarter (53% increase)
+- 124 issues opened in JIRA, past quarter (-21% decrease)
+- 52 issues closed in JIRA, past quarter (-40% decrease)
+
+We think this reduction of new and closed issues in JIRA in conjunction with
+the rate of PRs addressed is indicative of the community efforts focused on
+the alpha releases of 4.0. Dev list traffic is up as a result of some good
+discussions regarding development processes (soon to be published), releases
+and documentation.</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-I">2019-08-21</a> &mdash; Nate McCall<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+We have sent off a trademark violation to aiven.io and have not heard a
+response after five days.
+
+We have moved off of IRC onto the ASF's Slack Instance. This has (anecdotally
+as we don't have exact numbers) driven a large uptick in active conversations
+on both #cassandra and #cassandra-dev over their IRC counterparts.
+
+## Membership Data:
+Apache Cassandra was founded 2010-02-17 (9 years ago) There are currently 54
+committers and 32 PMC members in this project. The Committer-to-PMC ratio is
+roughly 7:4.
+
+We have had no new committers added this quarter. We think this may be the
+result of feature work being frozen and we are primarily focused on testing
+for our upcoming 4.0 release. Given that last quarter saw the addition of
+three committers, we do not see this as a negative for the project's health.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Alex Petrov on 2019-04-09.
+- No new committers. Last addition was Dinesh Joshi on 2019-03-05.
+
+## Project Activity:
+We are eagerly anticipating this year's ApacheConNA as we have expanded our
+track to three days.
+
+We have been assigned a doc writer through Google Season
+of Docs and will begin working with them on our outstanding documentation
+projects shortly.
+
+## Community Health:
+We are continue to track and prioritize issues as we approach 4.0:
+https://cwiki.apache.org/confluence/display/CASSANDRA/4.0%3A+Open+Issues+by+Component
+Interesting statistics this quarter:
+- dev@cassandra.apache.org had a 39% decrease in traffic in the past quarter
+  (133 emails compared to 217)
+- 84 issues closed in JIRA, past quarter (35% increase)
+- 66 commits in the past quarter (17% increase)
+
+The dip in development list activity could be a result of the increased
+participation in our slack channel. We have both an increase in the number of
+commits and the number of closed issues for this quarter, so overall the
+numbers seem healthy.</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-F">2019-05-15</a> &mdash; Nate McCall<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+
+## Activity:
+We were accepted as Google Season of Docs participants. We have already
+received four inbounds from potential documentation writers even though the
+program has not officially begun.
+
+Additionally, we have expanded our ApacheCon request to a two day track. The
+first day will be our developer centric conference known as Next Generation
+Cassandra Conference (NGCC). The second day will be a general-purpose
+sponsorship. We have already attracted a pair of sponsors and received some
+high-quality submissions from some of our largest users for both days of the
+conference.
+
+## Health report:
+We are continue to track and prioritize issues as we approach 4.0:
+https://cwiki.apache.org/confluence/display/CASSANDRA/4.0%3A+Open+Issues+by+Component
+
+## PMC changes:
+Alex Petrov was added to the PMC on Tue Apr 09 2019. There are currently 32
+PMC members.
+
+## Committer base changes:
+Three new committers were added this quarter, bringing our total to 54:
+- Dinesh Joshi was added as a committer on Tue Mar 05 2019
+- Joey Lynch was added as a committer on Thu Feb 28 2019
+- Vinay Chella was added as a committer on Sat Feb 23 2019
+
+## Releases:
+The project made the following releases this quarter:
+ - 2.1.21 was released on Mon Feb 11 2019
+ - 2.2.14 was released on Mon Feb 11 2019
+ - 3.0.18 was released on Mon Feb 11 2019
+ - 3.11.4 was released on Mon Feb 11 2019
+
+## Mailing list activity:
+We had a marginal fall off of mail list activity this quarter, but the overall
+traffic to both dev and user lists is still healthy.
+
+dev@cassandra.apache.org:
+- 1554 subscribers (down -43 in the last 3 months):
+- 279 emails sent to list (273 in previous quarter)
+
+user@cassandra.apache.org:
+- 2945 subscribers (down -45 in the last 3 months):
+- 660 emails sent to list (436 in previous quarter)
+
+
+## JIRA activity:
+ - 112 JIRA tickets created in the last 3 months
+ - 65 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-J">2019-02-20</a> &mdash; Nate McCall<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+We have had a very positive response to our blog and should have some more
+articles posted shortly. We have also requested a day long track for ApacheCon
+2019 and are looking forward to participating.
+
+## Health report:
+We are continue to track and prioritize issues as we approach 4.0:
+https://cwiki.apache.org/confluence/display/CASSANDRA/4.0%3A+Open+Issues+by+Component
+
+We have a number of community members actively testing snapshots of 4.0 with
+replays of production workloads using audit logging
+(http://cassandra.apache.org/blog/2018/10/29/audit_logging_cassandra.html).
+This in combination with recent improvements in property-based testing
+(http://cassandra.apache.org/blog/2018/10/17/finding_bugs_with_property_based_testing.html)
+has led to the discovery of a number of bugs that would have, in previous
+major releases, been left for users to discover on their own.
+
+## PMC changes:
+There are currently 31 PMC members. No new PMC members added in the last 3
+months. The last PMC addition was Stefania Alborghetti on Thu Sep 27 2018.
+
+## Committer base changes:
+There are Currently 51 committers. Chris Lohfink was added as a committer on
+Sat Dec 01 2018
+
+## Releases:
+We recently made the following releases across four versions:
+ - 2.1.21 was released on Mon Feb 11 2019
+ - 2.2.14 was released on Mon Feb 11 2019
+ - 3.0.18 was released on Mon Feb 11 2019
+ - 3.11.4 was released on Mon Feb 11 2019
+
+## Mailing list activity:
+Mailing list activity is down for both user and dev lists. This may just be a
+result of nothing new to discuss given the lack of a major release.
+
+dev@cassandra.apache.org:
+- 1597 subscribers (down -27 in the last 3 months):
+- 361 emails sent to list (460 in previous quarter)
+
+pr@cassandra.apache.org:
+- 14 subscribers (up 1 in the last 3 months):
+- 141 emails sent to list (585 in previous quarter)
+
+user@cassandra.apache.org:
+- 2996 subscribers (down -23 in the last 3 months):
+- 481 emails sent to list (791 in previous quarter)
+
+
+## JIRA activity:
+ - 128 JIRA tickets created in the last 3 months
+ - 128 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-G">2018-11-21</a> &mdash; Nate McCall<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+Several months ago, DataStax had made a change around an assignment of IP
+clause in the ICLA for their Java Driver (which serves as a reference
+implementation for the native protocol) that had prevented some users from
+contributing. We were able to work with them to get that change rolled back.
+This was a pretty serious issue given that some features in-tree rely on the
+driver as a dependency. We have asked to have the driver donated to the
+project and they have declined.
+
+We have recently voted to begin the process of importing the GoCQL driver, but
+that project's policy of making every contributor an author may make this
+impossible given we would have to get signoff from each person:
+https://github.com/gocql/gocql/blob/master/AUTHORS
+
+This quarter, we started a series of blog posts and have had a steady stream
+of community contributions for content: http://cassandra.apache.org/blog/
+
+The blog has been well received and is serving as a method for distributing
+information about the changes we have been making for 4.0.
+## Health report:
+Project activity is up substantially in the context of development
+discussions. We have moved into a freeze in anticipation of testing 4.0 and
+have worked with the community to put together a testing plan for which many
+members of the community have already signed up:
+https://cwiki.apache.org/confluence/display/CASSANDRA/4.0+Quality%3A+Components+and+Test+Plans
+
+In parallel we have begun performance testing 4.0 and have already seen order
+of magnitude improvements of cluster startup times, streaming data to new
+nodes and internode messaging. This has been the direct result of a re-write
+of the internode communication layer to rely on NIO via the Netty API. These
+improvements have been tracked on the following parent issue:
+https://issues.apache.org/jira/browse/CASSANDRA-14746
+
+## PMC changes:
+We have added four new PMC members during this period. There are currently 31
+PMC members.
+ - New PMC members:
+    - Ariel Weisberg was added to the PMC on Tue Sep 25 2018
+    - Benedict Elliott Smith was added to the PMC on Tue Sep 25 2018
+    - Benjamin Lerer was added to the PMC on Wed Aug 15 2018
+    - Stefania Alborghetti was added to the PMC on Thu Sep 27 2018
+
+## Committer base changes:
+There are currently 50 committers. No new committers added in the last 3
+months.
+
+## Releases:
+The last release was 2.2.13 on Wed Aug 01 2018.
+
+## Mailing list activity:
+We have had a substantial uptick in traffic on the development mailing list as
+a result of robust discussions around a feature freeze for 4.0, calls for
+participation for testing 4.0, and inclusion of a side-car management process
+for repair.
+
+ - dev@cassandra.apache.org:
+    - 1624 subscribers (down -1 in the last 3 months):
+    - 482 emails sent to list (303 in previous quarter)
+
+ - pr@cassandra.apache.org:
+    - 13 subscribers (up 1 in the last 3 months):
+    - 595 emails sent to list (514 in previous quarter)
+
+ - user@cassandra.apache.org:
+    - 3020 subscribers (down -43 in the last 3 months):
+    - 815 emails sent to list (874 in previous quarter)
+
+## JIRA activity:
+JIRA activity is lower this quarter as we have been primarily focused around
+fixing bugs for 4.0.
+ - 245 JIRA tickets created in the last 3 months
+ - 133 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-G">2018-08-15</a> &mdash; Nate McCall<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+We have spent this quarter working on preparations for getting the community
+involved and excited about the upcoming release of 4.0. This effort includes:
+- Agreeing upon the timeline for a feature freeze
+- Updating our site to add a blog section with our first community submitted
+  blog
+- Adding a Confluence space to track testing progress towards 4.0
+
+In other news, we filed CVE-2018-8016 for a regression vulnerability.
+Fortunately this had already been fixed in the latest release by the time the
+issue was identified and the CVE created.
+
+## PMC changes:
+ - There are currently 27 PMC members.
+ - Benjamin Lerer was voted onto the PMC. If no objections from the board are
+   received, he will be invited to join shortly.
+ - Last PMC addition was Sam Tunnicliffe on Tue Apr 03 2018
+
+## Committer base changes:
+ - There are Currently 50 committers.
+ - No new committers have been added in the last 3 months
+ - The last committer addition was Jay Zhuang on 2018-02-27
+
+## Releases:
+We recently had three releases across the following versions
+ - 2.2.13 was released on Wed Aug 01 2018
+ - 3.0.17 was released on Wed Aug 01 2018
+ - 3.11.3 was released on Wed Aug 01 2018
+
+## Mailing list activity:
+Mail list activity is down from the previous quarter. We see this as a
+function having no new major releases in conjunction with a focus on getting
+4.0 ready to freeze. Mail list interactions remain healthy with a core group
+of contributors answering questions.
+
+dev@cassandra.apache.org:
+- 1628 subscribers (up 2 in the last 3 months):
+- 306 emails sent to list (671 in previous quarter)
+
+user@cassandra.apache.org:
+- 3060 subscribers (up 1 in the last 3 months):
+- 910 emails sent to list (1406 in previous quarter)
+
+
+## JIRA activity:
+ - 185 JIRA tickets created in the last 3 months
+ - 132 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#attachment-H">2018-05-16</a> &mdash; Nate McCall<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data. Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+After several lengthy mail list discussions, a consensus reached on the
+timeframe of early September for creating a 4.0 branch and what the rough
+goals are going to be for a feature set. This consensus has been in the making
+for some time, so we are glad to have it.
+
+## Health report:
+As seen from the mail list activity and committer and PMC additions, overall
+the project is healthy.
+
+## PMC changes:
+There are currently 27 PMC members. Three New PMC members were added during
+this reporting period:
+- Blake Eggleston on Wed Mar 28 2018
+- Sam Tunnicliffe on Tue Apr 03 2018
+- Stefan Podkowinski on Wed Mar 07 2018
+
+## Committer base changes:
+There are currently 50 committers. One committer was added during this
+reporting period:
+- Jay Zhuang on Wed Feb 28 2018
+
+## Releases:
+We had a minor release on each of our four supported branches:
+- 2.1.20 was released on Fri Feb 16 2018
+- 2.2.12 was released on Fri Feb 16 2018
+- 3.0.16 was released on Mon Feb 19 2018
+- 3.11.2 was released on Mon Feb 19 2018
+
+## Mailing list activity:
+Mail list activity on the dev and user lists has been up substantially. We
+attribute the rise in dev list activity to a series of robust discussions
+regarding the timeline of branching and releasing a forthcoming 4.0.
+
+dev@cassandra.apache.org:
+- 1626 subscribers (down -4 in the last 3 months):
+- 703 emails sent to list (180 in previous quarter)
+
+user@cassandra.apache.org:
+- 3060 subscribers (down -35 in the last 3 months):
+- 1487 emails sent to list (721 in previous quarter)
+
+
+## JIRA activity:
+- 230 JIRA tickets created in the last 3 months
+- 190 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#attachment-G">2018-02-21</a> &mdash; Nate McCall<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data.Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+We have had a major refactoring of our distributed test infrastructure to
+modernize the underlying python API and provide for a much higher degree of
+parallelism in test execution. This should pay off quickly in an faster
+development cycle for fixing more nuanced issues common in a distributed
+database.
+
+We received a vulnerability report this quarter that was more a
+mis-understanding of how internode communication and security works with a
+default installation. The only action needed was an update of our
+documentation with specific details on mitigating this issue through correct
+setup of security configuration options.
+
+We continue to maintain four active branches as well as working towards our
+eventual goal of releasing 4.0. Though the changelog for this next version is
+becoming quite long, we are not under any pressure from external vendors and
+are therefore taking "as long as is needed" to release something stable that
+committers and contributors are comfortable running in production (and thus
+comfortable recommending such to users). Given our project's track record of
+"it's not stable until X.X.6," we feel strongly that this is the correct
+ approach.
+
+## Health report:
+
+Overall the project is healthy. We've seen several new contributors recently
+working on core components such as compaction and storage.
+
+## PMC changes:
+
+There are currently 24 PMC members. No new PMC members have been added in the
+last 3 months. The last PMC addition was Jon Haddad on Sun Aug 20 2017
+
+## Committer base changes:
+
+There are currently 47 committers. No new committers have been added in the
+last 3 months. The last committer addition was Jon Haddad at Sat Aug 19 2017.
+
+## Releases:
+
+The last release was 3.0.15 on Tue Oct 10 2017. However, we just opened a vote
+on releasing bug fixes across the following active branches: 2.1.20,
+2.2.12, 3.0.16, and 3.11.2.
+
+## Mailing list activity:
+
+Subscriptions for dev@ have gone up, potentially reflecting more participation
+from newer contributors. We attribute the downward trend in messages sent to
+the holiday period this quarter.
+
+dev@cassandra.apache.org:
+- 1630 subscribers (up 6 in the last 3 months):
+- 189 emails sent to list (340 in previous quarter)
+
+pr@cassandra.apache.org:
+- 10 subscribers (up 0 in the last 3 months):
+- 149 emails sent to list (110 in previous quarter)
+
+user@cassandra.apache.org:
+- 3093 subscribers (down -11 in the last 3 months):
+- 894 emails sent to list (1109 in previous quarter)
+
+
+## JIRA activity:
+
+- 218 JIRA tickets created in the last 3 months
+- 134 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-11-15"><a href="2017/board_minutes_2017_11_15.html#attachment-H">2017-11-15</a> &mdash; Nate McCall<a class="headerlink" href="#2017-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data.Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+The Next Generation Cassandra Conference
+(https://www.eventbrite.com/e/next-generation-cassandra-conference-ngcc-ticket
+s-36160855091#) was recently held in San Antonio, TX. This conference was
+planned and run solely by the community coordinated on the private,
+development and user mail lists (as appropriate) with no vendor influence.
+Talks were selected directly by the PMC. A summary of the event posted to the
+dev list can be found here:
+https://lists.apache.org/thread.html/5ab801e508a792d81defe092a77c59df862ce36b1
+4c1a41445367190@%3Cdev.cassandra.apache.org%3E
+
+Great care was taken to summarize any major discussions back to their
+respective JIRA tickets as well as summarize and continue conversations on the
+development mailing list after the event to facilitate larger community
+participation.
+
+A huge thanks to long-time PMC members Gary Dusbabek and Eric Evans for doing
+all the leg work in putting this event on.
+
+## Health report:
+Overall the project is healthy. We continue to leverage the lack of any vendor
+influence by focusing the current work on stability and testing.
+
+## PMC changes:
+There were three new PMC members added this quarter:
+- Josh McKenzie was added to the PMC on Fri Aug 18 2017
+- Marcus Eriksson was added to the PMC on Fri Aug 18 2017
+- Jon Haddad was added to the PMC on Sun Aug 20 2017
+
+## Committer base changes:
+There was one committer added this quarter:
+- Jon Haddad was added as a committer on Sat Aug 19 2017
+
+## Releases:
+- 2.1.19 was released on Thu Oct 05 2017
+- 2.2.11 was released on Thu Oct 05 2017
+- 3.0.15 was released on Tue Oct 10 2017
+- 3.11.1 was released on Tue Oct 10 2017
+
+## Mailing list activity:
+Development list activity saw a substantial uptick as the result of
+continuation of discussion from topics presented at the NGCC. User list
+activity remained stable.
+
+dev@cassandra.apache.org:
+- 1626 subscribers (up 5 in the last 3 months):
+- 349 emails sent to list (316 in previous quarter)
+
+user@cassandra.apache.org:
+- 3102 subscribers (down -6 in the last 3 months):
+- 1150 emails sent to list (1133 in previous quarter)
+
+## JIRA activity:
+- 249 JIRA tickets created in the last 3 months
+- 211 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-L">2017-08-16</a> &mdash; Nate McCall<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data.Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity and Health:
+Overall the project is healthy. It's been about a year since the inquiry from
+the board and we've continued to make progress expanding the committer base
+and PMC membership while moving forward with development.
+
+We very much appreciate the involvement of the management, membership and
+community with the resolution of LEGAL-303. The paves the way for a first
+implementation of new functionality around pluggable storage engines.
+
+The cassandra-dtest project made it through the ASF code donation process.
+This has removed a small bottleneck and source of occasional test errors by
+allowing committers to commit distributed test suites at the same as code
+commits to the core project.
+
+## PMC changes:
+There are currently 21 PMC members. No new PMC members added in the last 3
+months. The last PMC addition was Sankalp Kohli on Mon Oct 24 2016. Note that
+there are currently open votes for four additional PMC members. They should be
+resolved by the time the board meets.
+
+## Committer base changes:
+There are currently 46 committers. Philip Thompson was added as a committer on
+Fri Jun 23 2017.
+
+## Releases:
+The final release of the 2.1.x series was done this quarter. Maintenance
+releases were done on the 2.2.x, 3.0.x, 3.11.x branches. We anticipate a
+release of 4.0 in the next quarter.
+- 2.1.18 was released on Mon Jun 26 2017
+- 2.2.10 was released on Mon Jun 26 2017
+- 3.0.14 was released on Fri Jun 23 2017
+- 3.11.0 was released on Fri Jun 23 2017
+
+## Mailing list activity: The participation on the dev list was down this
+quarter, perhaps attributed to summer holidays and the lack of anything
+contentious. However, user list participation was up slightly which is a good
+sign of positive community engagement.
+
+dev@cassandra.apache.org:
+- 1625 subscribers (down -2 in the last 3 months):
+- 320 emails sent to list (474 in previous quarter)
+
+user@cassandra.apache.org:
+- 3112 subscribers (down -18 in the last 3 months):
+- 1112 emails sent to list (1107 in previous quarter)
+
+## JIRA activity:
+- 230 JIRA tickets created in the last 3 months
+- 156 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-05-17"><a href="2017/board_minutes_2017_05_17.html#attachment-I">2017-05-17</a> &mdash; Nate McCall<a class="headerlink" href="#2017-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The Apache Cassandra database is the right choice when you need scalability
+and high availability without compromising performance. Linear scalability and
+proven fault-tolerance on commodity hardware or cloud infrastructure make it
+the perfect platform for mission-critical data.Cassandra's support for
+replicating across multiple datacenters is best-in-class, providing lower
+latency for your users and the peace of mind of knowing that you can survive
+regional outages.
+
+## Health Report:
+Community activity continues to stabilize. We have added additional avenues of
+test resource integration (specifically providing base Travis and CircleCI
+configurations in tree) for any member in the community to take advantage of
+for their personal development branches. Note that ASF Jenkins is still used
+exclusively for committed code. The benefits of this have been a wider
+participation from newer community members, as we are taking advantage of
+"free" resources for open source projects offered by those companies for day
+to day development.
+
+Overall, we have increased our velocity over the past quarter and are closing
+tickets a faster pace than the previous two quarters.
+
+## Issues:
+There are no new issues requiring board attention at this time.
+
+## Releases:
+Apache Cassandra has had the following releases:
+- 2.1.17 was released on Mon Feb 20 2017
+- 2.2.9 was released on Mon Feb 20 2017
+- 3.0.11 was released on Mon Feb 20 2017
+- 3.0.12 was released on Thu Mar 09 2017
+- 3.0.13 was released on Thu Apr 13 2017
+
+## PMC changes:
+Currently 21 PMC members. No new PMC members added in the last 3 months.
+
+## Committer base changes:
+Five new committers have been added in the past quarter:
+- Ariel Weisberg was added as a committer on Mon Feb 13 2017
+- Blake Eggleston was added as a committer on Mon Feb 13 2017
+- Alex Petrov was added as a committer on Mon Feb 13 2017
+- Joel Knighton was added as a committer on Tue Feb 14 2017
+- Stefan Podkowinski was added as a committer on Sat Feb 18 2017
+
+## Mailing list activity:
+Subscriptions to the user list are off slightly but the number of messages has
+increased. This could be a result of efforts to make unsubscribing from the
+mail list a little easier. Dev list activity is down compared to the previous
+quarter but still healthy. Note that the previous quarter can be considered an
+outlier given the volume of messages during discussions of changing the
+release process.
+
+dev@cassandra.apache.org:
+- 1615 subscribers (up 0 in the last 3 months):
+- 515 emails sent to list (560 in previous quarter)
+
+user@cassandra.apache.org:
+- 3132 subscribers (down -10 in the last 3 months):
+- 1153 emails sent to list (1115 in previous quarter)
+
+## JIRA activity:
+As mentioned above, the number of closed/resolved tickets has increased almost
+30% over the previous quarter.
+- 316 JIRA tickets created in the last 3 months
+- 259 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-02-27"><a href="2017/board_minutes_2017_02_27.html#attachment-J">2017-02-27</a> &mdash; Nate McCall<a class="headerlink" href="#2017-02-27" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Since the last report, things have stabilized a bit in the community and we
+are getting down to business.
+
+After several long conversations on the dev list, we have agreed on the best
+way forward of streamlining our release process. Specifically, we have moved
+away from the TicTock scheme used throughout the 3.x releases. Though it had
+the benefit of creating a better culture of testing, this process proved to be
+both incredibly confusing for users as to the current stable version and
+overly difficult to maintain for developers for the number of active branches
+required.
+
+Our development velocity is lower than I would like. We are still recovering
+from the pull out of a large commercial vendor in the space, but independent
+activity is increasing and we are steadily adding committers.
+
+It took five voting rounds to release 3.10, but that is more a function of our
+agreement to insist on a green test board and being more stringent on blocking
+for known issues. I see this particularly as a positive sign of higher
+community involvement in the development process as three of the vote vetoes
+were a result of end-user discovered issues.
+
+## Issues:
+There are no new issues requiring board attention at this time.
+
+## Release Activity:
+Apache Cassandra has had the following releases:
+- 3.0.10 was released on Wed Nov 16 2016
+- 3.10 was released on Fri Feb 03 2017
+
+We are currently working towards an alpha of 4.0 that is a cleanup and
+refactoring of some major components.
+
+## PMC changes:
+Currently 21 PMC members. No new PMC members added in the last 3 months.
+
+## Committer base changes:
+Three new committers have been added in the past quarter:
+- Branimir Lambov was added as a committer on Tue Nov 08 2016
+- Paulo Motta was added as a committer on Wed Dec 07 2016
+- Stefan Powkowinski was voted in, but is pending an ICLA review by his
+employer
+
+## Mailing list activity:
+Subscriber increases on both mailing lists are marginal, but they are
+increases. Activity on the user mailing list is down, but we see that as a
+function of not having any new releases before and during the holiday period.
+
+dev@cassandra.apache.org:
+- 1613 subscribers (up 28 in the last 3 months):
+- 573 emails sent to list (611 in previous quarter)
+
+user@cassandra.apache.org:
+- 3135 subscribers (up 30 in the last 3 months):
+- 1142 emails sent to list (1548 in previous quarter)
+
+## JIRA activity:
+The ratio of closed to created tickets is high, reflective of previous
+comments regarding velocity.
+- 302 JIRA tickets created in the last 3 months
+- 190 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#attachment-G">2016-11-16</a> &mdash; Nate McCall<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The past couple of months have been difficult for us. For posterity, the
+August [0] and September[1] board agendas provide details of changes
+affecting the project and subsequent PMC efforts to address board requested
+action items. We will continue to work constructively with the board on the
+points therein.
+
+With that said, we would like to express not only our optimism (more below)
+but our thanks to those within the ASF who have spent substantial amounts of
+time to help us get moving in the right direction. Of particular note have
+been the ongoing efforts Mark Thomas and Jake Farrell. Without them, it would
+have been much more difficult to deduce what to do next and how to go about
+doing it. For everyone else, a large thank you as well. If nothing else, it's
+clear we all care very deeply about having successful open source software
+projects.
+
+## Issues:
+
+A long-time vendor who has been a large benefactor of the project through
+contribution of resources, has re-focused said resources to more internal
+efforts[2]. While many of their staff are still involved in day-to-day
+activities, it has left something of a hole for the PMC to fill in terms of
+handling day-to-day resourcing of issues.
+
+Discussions are ongoing on how best to do this, but we remain optimistic that
+the size, diversity and skill of the community are enough that we will find
+solutions.
+
+## Release Activity:
+Apache Cassandra has had the following releases:
+- 2.1.16 was released on Mon Oct 10 2016
+- 2.2.8 was released on Wed Sep 28 2016
+- 3.8 was released on Thu Sep 29 2016
+- 3.9 was released on Thu Sep 29 2016
+
+We have recently moved trunk up to 4.0 and are currently discussing a roadmap
+for such on the development mailing list.
+
+Note: 3.10 and 3.0.10 were scheduled to be released, but were voted down due
+to a regression bug discovered by the community.
+
+## Health report:
+
+From the past several weeks of mailing list and social media activity, one
+can draw the following conclusions regarding the health of Cassandra:
+- our large, diverse community of users care deeply about the project and are
+  not afraid to very publicly ask hard questions
+- the board cares deeply about our project as can be seen by amount of effort
+  expended in handling not only Cassandra but the larger issues brought about
+  by the point above
+- the PMC wants very much to do the right thing and is doing its best to
+  constructively move forward
+
+In short, we do not lack for passion at any level of the project. It is
+therefore our game to lose and we intend to put our best efforts in over the
+next quarter.
+
+## PMC changes:
+
+ - Currently 21 PMC members.
+ - There are two new PMC members:
+    - Sankalp Kohli was added to the PMC on Mon Oct 24 2016
+    - Michael Shuler was added to the PMC on Thu Sep 22 2016
+
+## Committer base changes:
+
+ - Currently 38 committers.
+ - There are three new commmitters:
+    - Dikang Gu was added as a committer on Fri Nov 04 2016
+    - Sankalp Kohli was added as a committer on Tue Oct 25 2016
+    - Branimir Lambov was voted in and accepted, we are awaiting ICLA
+      submission
+
+## Mailing list activity:
+
+Activity on both dev and user mail lists have increased substantially over
+last quarter. We have no direct quantitative information as to why, but
+anecdotally it appears that we have knowledgeable users appearing more
+often to answer other users's questions.
+
+ - dev@cassandra.apache.org:
+    - 1582 subscribers (down -3 in the last 3 months):
+    - 709 emails sent to list (452 in previous quarter)
+    - Though not as high and some is resulting to larger political
+      discussions, we still have over 60% growth in traffic.
+
+ - user@cassandra.apache.org:
+    - 3109 subscribers (down -6 in the last 3 months):
+    - 1597 emails sent to list (901 in previous quarter)
+    - Mail list activity has increased over 50% from the last quarter.
+
+## JIRA activity:
+
+As discussed above in Issues we would like the number of resolved issues
+to be higher, but over 75% is not a bad place to be and we are actively
+working on getting more community involvement.
+
+ - 480 JIRA tickets created in the last 3 months
+ - 372 JIRA tickets closed/resolved in the last 3 months
+
+## Trademark Enforcement
+
+Three requests were sent out regarding our trademarks, all of which were
+immediately complied with by the recipients:
+- Clarified appropriate use of trademark and guidelines for a third party
+  vendor providing backports of Apache Cassandra patches to a custom long
+term release version [3]
+- Use of trademark in project name [4]
+- Use of trademark in project name [5]
+
+## 'dtest' Project Contribution
+
+DataStax recently offered to donate the dtest distributed testing suite to
+the project [6],[7]. This was voted on in the dev mailing list and passed
+[8]. Filing the appropriate forms with the Incubator folks for review will be
+done shortly.
+
+## References
+
+[0]
+https://www.apache.org/foundation/records/minutes/2016/board_minutes_2016_08_17.txt
+[1]
+https://www.apache.org/foundation/records/minutes/2016/board_minutes_2016_09_21.txt
+[2] http://www.datastax.com/2016/11/serving-customers-serving-the-community
+[3]
+https://lists.apache.org/thread.html/69d87a0d59a23a4ee7578563785581d5daa5cb248987d67a70c44b86@%3Cprivate.cassandra.apache.org%3E
+[4]
+https://lists.apache.org/list.html?private@cassandra.apache.org:lte=1M:Apache%20trademark%20and%20Spring%20project%20names
+[5] https://mesosphere.github.io/cassandra-mesos/
+[6] https://github.com/riptano/cassandra-dtest
+[7]
+https://lists.apache.org/thread.html/d43300016d3871587c43eea8cd4223221904fddc7916d9d6d858bd29@%3Cprivate.cassandra.apache.org%3E
+[8]
+https://lists.apache.org/thread.html/d9e694ba8eaac8e8c70cbfd3f6ee249d43f8c67279882ffc65e56cac@%3Cdev.cassandra.apache.org%3E</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#attachment-L">2016-09-21</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - This report is was created in response to a request from Mark Thomas on
+   behalf of the ASF board. This request listed 10 specific action items to be
+   undertaken by the PMC including the creation of this report outside of the
+   project's normal reporting cycle. The content of the original email has
+   been added to the PMC's svn repository and was used as a checklist [0] to
+   organize PMC efforts in addressing these action items.
+
+ - This report includes a "Board Requested Actions" section which provides a
+   summary of said actions followed by specific activity undertaken by the PMC
+   for each.
+
+## Board Requested Actions
+
+- Review of Apache trademark policy by PMC members
+
+  The following PMC members have signed off as having reviewed ASF
+  trademark policy:
+
+    amorton
+    dbrosius
+    eevans
+    gdusbabek
+    jake
+    jasobrown
+    jbellis
+    jfarrell
+    jjirsa
+    slebresne
+    tylerhobbs
+    zznate
+
+- Review DataStax controlled web properties for clear separation between
+  DataStax and Cassandra
+
+  DataStax web properties were reviewed and several small issues identified.
+  An email was sent on by Nate McCall on behalf of the PMC to Christian Hasker
+  (identified by Jonathan Ellis for the DataStax point of contact) requesting
+  that they be addressed. Christian replied twice indicating that they were
+  taking immediate action and to later update on progress. A correspondence
+  email [1] has been uploaded.
+
+- Review project controlled web properties for clear separation between
+  DataStax and Cassandra
+
+  The remaining references to DataStax on the project's web properties
+  are under the Documentation section and take one of two forms:
+
+  - links to contextually relevant blog posts under datastax.com
+  - references to client driver projects
+
+- Review release artifacts and documentation for clear separation between
+  DataStax and Cassandra
+
+  The project's downloads page lists ASF Debian packages as official binaries.
+  Binaries managed by DataStax have been moved towards the bottom stating
+  explicitly that they are not endorsed.
+
+- Identify a process for ongoing monitoring of the projects marks
+
+  The PMC has not yet discussed a process for monitoring the projects marks.
+
+- Ensure the Cassandra Summit follows the ASF guidelines for events
+
+  Jake Luciani reached out to the organizers on behalf of the PMC and uploaded
+  correspondence emails [2] with conference organizer who addressed/documented
+  the points raised. The document includes email threads of ASF channels used
+  for trademark and cfp requests.
+
+- Replacement for Jonathan after stepping down as chair
+
+  The following three PMC members were nominated: Eric Evans, Jake Luciani,
+  Nate McCall.
+
+  Nate McCall was voted as successor and was put forward to the board.
+
+- Review DataStax's "Cassandra MVP" program for a clear separation between
+  DataStax and Cassandra
+
+  A review of current DataStax content for the MVP program (including this
+  year's Cassandra Summit) shows the primary wording is now "DataStax MVP for
+  Apache Cassandra." There are, however, two older community-contributed posts
+  on the Planet Cassandra property that use the phrase "DataStax Cassandra
+  MVP."
+
+- Stop using non-ASF, non-archived back channels for discussion
+
+  The project is now using ASFBot for logging the #cassandra-dev [3] IRC
+  conversations.
+
+## PMC changes:
+
+ - There are currently 19 PMC members.
+ - Since the August report, the following new PMC members have been added:
+    - Jason Brown (Mon Aug 22 2016)
+    - Jake Farrell (Mon Aug 22 2016)
+    - Jeff Jirsa (Mon Aug 22 2016)
+    - Nate McCall (Mon Aug 22 2016)
+
+## Committer changes:
+
+ - There are currently 36 committers.
+ - Since the august report, the following new committers have been added:
+    - Andres de la Pe&ntilde;a (Tue Aug 23 2016)
+    - Jake Farrell (Fri Aug 26 2016)
+    - Michael Semb Wever (Wed Aug 17 2016)
+    - Nate McCall (Fri Aug 26 2016)
+
+## Releases:
+
+ - No new releases have been made since the previous report.
+
+## References
+
+ [0] https://svn.apache.org/repos/private/pmc/cassandra/board_action_items.txt
+ [1] https://svn.apache.org/repos/private/pmc/cassandra/datastax_web_property_discussion.txt
+ [2] https://svn.apache.org/repos/private/pmc/cassandra/summit_2016_event_discussion.txt
+ [3] http://wilderness.apache.org/channels/#logs-#cassandra-dev</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#attachment-L">2016-08-17</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>Releases
+--------
+
+2.1.15 (7 Jul 2016)
+2.2.6 (6 Jul 2016)
+3.7 (14 Jun 2016)
+3.0.7 (14 Jun 2016)
+
+Community
+---------
+
+NGCC (Next Generation Cassandra Conference) took place in Austin, TX.
+Sixty committers and contributors attended.  Day 1 saw presentations
+from engineers from Apple, DataStax, Eriksson, Instagram, The Last
+Pickle, Protectwise, Stratio, and Yahoo Japan. These presentations
+were followed on Day 2 by an unconference discussion.  My notes are
+here [1] and videos are here [2].
+
+O&rsquo;Reilly&rsquo;s Cassandra: The Definitive Guide 2nd Edition [3] is out.  This
+is the first book to cover Cassandra 3.0.
+
+PMC &amp; Committers
+----------------
+
+Jeff Jirsa was added as committer on 15 Jun 2016.  Dave Brosius, Tyler
+Hobbs, and Aaron Morton were added as PMC members on 10 Jun 2016.
+
+1 committer and 5 PMC member votes are currently in progress.
+
+[1] https://docs.google.com/document/d/1rYyJWDsiwGmc3IUNCV_AKhzUJghLwA_iWDzog-eDSSE
+[2] https://www.youtube.com/user/PlanetCassandra/videos
+[3] http://shop.oreilly.com/product/0636920043041.do</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#attachment-M">2016-05-18</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+3.6       13 May 2016 (Expected)
+3.0.6     13 May 2016 (Expected)
+2.2.6     26 Apr 2016
+2.1.14    26 Apr 2016
+3.5       13 Apr 2016
+3.0.5     11 Apr 2016
+3.4       8 Mar 2016
+3.0.4     8 Mar 2016
+
+Development:
+
+Cassandra has moved to a monthly release schedule, with even releases
+(3.4) including new features, and odd releases (3.5) only bug fixes.
+
+3.4 includes the new SASI feature (SSTable-Attached Secondary Indexes).
+Unlike Cassandra's older indexes, SASI are btree-based, allowing range
+scans and full-text indexing.
+
+3.6, whose vote is in progress as of this writing, adds support for
+much larger partitions, which makes it easier to build Cassandra data
+models where the "natural" partitioning would generate millions of
+rows per partition.
+
+Community:
+
+The NGCC (Next Generation Cassandra Conference), for Cassandra
+committers and contributors, was moved to June to avoid conflict with
+ApacheCon NA.  ApacheCon saw five talks on Cassandra from five
+different companies, anchoring the NoSQL category.
+
+Cassandra passed MS Access to take the #7 spot on DB-Engines' database
+popularity ranking [1].  Of course, the two systems are not remotely
+comparable, but this is a positive sign for adoption.
+
+Committers Yuki Morishita and Jake Luciani have experimented with
+teaching workshops on contributing to Apache Cassandra at two
+different companies in an effort to accellerate the pool of
+contributors and committers.  So far, this has resulted in some small
+patches from engineers at Yahoo Japan; we hope to see more from them
+soon.
+
+Kaide Mu's proposal to add an sstable downgrade tool was accepted for
+Google Summer of Code, under mentors Paulo Motta and Yuki Morishita.
+
+Most recent committer and PMC changes:
+
+Stefania Alborghetti was added as committer on 11 Apr 2016.
+Aleksey Yeshchenko was added as PMC member on 7 Aug 2014.
+
+[1] http://db-engines.com/en/ranking</pre>
+<h3 id="2016-02-17"><a href="2016/board_minutes_2016_02_17.html#attachment-I">2016-02-17</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2016-02-17" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+2.1.12    7 Dec 2015
+3.0.1     8 Dec 2015
+3.1       8 Dec 2015
+3.2       12 Jan 2016
+2.1.13    8 Feb 2016
+2.2.5     8 Feb 2016
+3.3       9 Feb 2016
+
+Development:
+
+Cassandra has moved to a monthly release schedule [1], with even releases
+(3.2) including new features, and odd releases (3.1., 3.3) only bug fixes.
+
+A good summary of what's new in 3.2 is at [2].
+
+Community:
+
+Pretty quiet start to the year.  I am in the initial stages of planning
+NGCC (Next Generation Cassandra Conference, for Cassandra committers
+and contributors, not end users) 2016, probably for late April.
+
+Most recent committer and PMC changes:
+
+Carl Yeksigian was added as committer on 4 Jan 2016.
+Aleksey Yeshchenko was added as PMC member on 7 Aug 2014.
+
+[1] http://www.planetcassandra.org/blog/cassandra-2-2-3-0-and-beyond/
+[2] http://rustyrazorblade.com/2016/01/cassandra-32-overview/</pre>
+<h3 id="2015-11-18"><a href="2015/board_minutes_2015_11_18.html#attachment-H">2015-11-18</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2015-11-18" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+3.0.0     10 Nov 2015
+2.2.3     16 Oct 2015
+2.1.11    16 Oct 2015
+2.2.2     5 Oct 2015
+2.1.10    5 Oct 2015
+2.2.1     1 Sep 2015
+2.1.9     28 Aug 2015
+3.0b1     24 Aug 2015
+
+Development:
+
+Cassandra 3.0 is out! [1] Headlining features include a CQL-based
+storage engine (blog post forthcoming), materialized views [2], and
+optimzied hint storage [3].
+
+Community:
+
+The 2015 Cassandra Summit in San Francisco was September 22-24.  For
+the first time, this was a two day conference, and attracted over
+3,200 attendees.  I believe this makes it the largest NoSQL conference
+in the world.  Open Source Connections has a good writeup at [4].
+
+Most recent committer and PMC changes:
+
+Sam Tunnicliffe was added as committer on 18 May 2015.
+Aleksey Yeshchenko was added as PMC member on 7 Aug 2014.
+
+[1] https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces82
+[2] http://www.datastax.com/dev/blog/new-in-cassandra-3-0-materialized-views
+[3] http://www.datastax.com/dev/blog/whats-coming-to-cassandra-in-3-0-improved-hint-storage-and-delivery
+[4] http://opensourceconnections.com/blog/2015/10/21/recap-cassandra-summit-2015</pre>
+<h3 id="2015-08-19"><a href="2015/board_minutes_2015_08_19.html#attachment-H">2015-08-19</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2015-08-19" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+2.2.0     20 Jul 2015
+2.2rc2    9 Jul 2015
+2.1.8     9 Jul 2015
+2.1.7     22 Jun 2015
+2.0.16    22 Jun 2015
+2.2rc1    8 Jun 2015
+2.1.6     8 Jun 2015
+2.2b1     19 May 2015
+
+Development:
+
+With most of Cassandra 3.0 development complete, but with release
+stalled by continuing difficulties in finishing CASSANDRA-8099 (a
+rewrite of the storage engine around CQL principles rather than the
+old Thrift API), we decided to release the-features-formerly-known-
+as-3.0 as 2.2 as soon as possible, followed by a 3.0 release later
+based on 8099.
+
+2.2 has now been released successfully.  I summarized the new features
+in [1].
+
+Community:
+
+Gearing up for the 2015 Cassandra Summit in San Francisco, September
+22-24.  For the first time, this will be a two-day cconference, plua a
+day of hands-on training.
+
+Most recent committer and PMC changes:
+
+Sam Tunnicliffe was added as committer on 18 May 2015.
+Aleksey Yeshchenko was added as PMC member on 7 Aug 2014.
+
+[1] http://www.datastax.com/dev/blog/cassandra-2-2</pre>
+<h3 id="2015-05-20"><a href="2015/board_minutes_2015_05_20.html#attachment-J">2015-05-20</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2015-05-20" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+2.0.15    29 Apr 2015
+2.1.4     1 Apr 2015
+2.0.14    1 Apr 2015
+2.1.3     16 Mar 2015
+
+Development:
+
+A security issue was reported to Apache that Cassandra's default
+configuration allowed arbitrary code to be executed remotely via JMX.
+We followed Apache protocol and developed a fix as a PMC (led by Eric
+Evans and Jake Luciani) resulting in the 2.0.14 and 2.1.4 releases
+prior to the public announcement of the vulnerability [1].
+
+With most of Cassandra 3.0 development complete, but with release
+stalled by continuing difficulties in finishing CASSANDRA-8099 (a
+rewrite of the storage engine around CQL principles rather than the
+old Thrift API), we decided to release the-features-formerly-known-
+as-3.0 as 2.2 as soon as possible, followed by a 3.0 release later
+based on 8099.  I expect a vote to begin on 2.2 beta 1 by the time the
+board meets.
+
+Community:
+
+We had our second annual Next Generation Cassandra Conference for
+Cassandra developers.  (I.e., much smaller than a user-oriented
+conference.)  We had just over 50 developers attend this year in
+Austin in conjunction with ApacheCon.  Speakers included committers
+and contributors from Apple, DataStax, Mesosphere, SVDS, and Vast.
+
+Tokyo Cassandra Summit saw 500 registrations for the April event [2],
+about double last year's.  This puts it about on par with our San
+Francisco summit from 2011, although the two events are not directly
+comparable.  (San Fransisco charged a fee to attendees, while Tokyo's
+cost was borne entirely by sponsors, in large part because Tokyo was
+able to find a sponsor willing to provide the venue for free.)
+
+As you know, it is often difficult for Western open source projects to
+gain traction in Japan (and vice versa) because of the language
+barrier, so I am glad to see this growth.  One analyst who attended
+commented to me that he found it notable that by his estimate, about
+40% of the audience at the Tokyo Summit were businessmen, compared to
+virtually none at the MongoDB event that he attended recently.  He
+interpreted this to mean that Cassandra is more interesting to the
+enterprise market that makes up so much of the Japanese industry.
+
+Most recent committer and PMC changes:
+
+Robert Stupp was added as committer on 15 Jan 2015.*
+Aleksey Yeshchenko was added as PMC member on 7 Aug 2014.
+
+*Sam Tunnicliffe has been voted in as committer, but has not submitted
+ his ICLA as of this writing.  I expect that to be done by the time
+ the board meets.
+
+[1] http://www.mail-archive.com/user@cassandra.apache.org/msg41819.html
+[2] http://cassandrajp.connpass.com/event/12041/</pre>
+<h3 id="2015-03-18"><a href="2015/board_minutes_2015_03_18.html#attachment-M">2015-03-18</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2015-03-18" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+2.0.12    20 Jan 2015
+2.1.3     17 Feb 2015
+
+Development:
+
+Cassandra developers are working on delivering 3.0 in the first half
+of 2015, with user-defined functions [1], JSON support [2], disk-aware
+vnodes [3], role-based access control [4], specialized hint storage
+[5], global indexes [6], and Windows support.
+
+Community:
+
+Cassandra Day Los Angeles was a free, four-track conference that drew
+about 600 attendees. [7] (The linked article says 1,000 registered;
+40% did not show up, which is typical for free events.)  The next
+Cassandra Day (19 March) will be done in Atlanta by the time the board
+meets.
+
+Most recent committer and PMC changes:
+
+Robert Stupp was added as committer on 15 Jan 2015.
+Aleksey Yeshchenko was added as PMC member on 7 Aug 2014.
+
+[1] http://planetcassandra.org/blog/user-defined-functions-presentation-at-cassandra-eu-summit-2014/
+[2] CASSANDRA-7970
+[3] CASSANDRA-6696
+[4] CASSANDRA-7653
+[5] CASSANDRA-6230
+[6] CASSANDRA-6477
+[7] http://www.datastax.com/2015/02/first-ever-cassandra-day-in-the-city-of-angels</pre>
+<h3 id="2015-02-18"><a href="2015/board_minutes_2015_02_18.html#section-6K">2015-02-18</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2015-02-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2014-11-19"><a href="2014/board_minutes_2014_11_19.html#attachment-E">2014-11-19</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2014-11-19" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+2.0.10        25 Aug 2014
+2.1.0         11 Sep 2014
+2.0.11        24 Oct 2014
+2.1.1         24 Oct 2014
+2.1.2         10 Nov 2014
+
+Development:
+
+2.1 is released with optimized repair [1] and off-heap memtables [2]
+joining user-defined types [3] and collection indexing [4].  Counters
+have been rewritten [5], and compaction has been tuned to be
+page-cache-aware [6].
+
+Community:
+
+September saw 1,800 Cassandra users (and another 1,000 online) attend
+the 2014 Cassandra Summit in San Francisco.  This represents a sold
+out venue, up from the 1,100 from 2013.  Videos are up at [7] and a
+good writeup is at [8].
+
+Most recent committer and PMC changes:
+
+Joshua McKenzie was added as committer on 29 Jul 2014.
+
+Aleksey Yeshchenko was added as PMC member on 7 Aug 2014.
+
+[1] https://issues.apache.org/jira/browse/CASSANDRA-5351
+[2] https://issues.apache.org/jira/browse/CASSANDRA-6694
+[3] https://issues.apache.org/jira/browse/CASSANDRA-5590
+[4] https://issues.apache.org/jira/browse/CASSANDRA-4511
+[5] https://issues.apache.org/jira/browse/CASSANDRA-6504
+[6] http://www.datastax.com/dev/blog/compaction-improvements-in-cassandra-21
+[7] https://www.youtube.com/playlist?list=PLqcm6qE9lgKJkxYZUOIykswDndrOItnn2
+[8] http://doanduyhai.wordpress.com/2014/09/17/feedback-from-sf-cassandra-summit/</pre>
+<h3 id="2014-08-20"><a href="2014/board_minutes_2014_08_20.html#attachment-E">2014-08-20</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2014-08-20" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+2.0.8         29 May 2014
+2.0.9         30 Jun 2014
+1.2.17        30 Jun 2014
+1.2.18        3 Jul 2014
+2.1 rc1..rc6  May-Aug 2014
+
+Development:
+
+2.1 is feature complete with optimized repair [1] and off-heap
+memtables [2] joining user-defined types [3] and collection indexing
+[4].  Counters have been rewritten [5], and compaction has been tuned
+to be page-cache-aware [6].
+
+We have required more release candidates than expected.  I believe
+that this is due to increased efforts around QA rather than worse
+code quality than previous releases.
+
+Community:
+
+Joshua McKenzie was added as committer on 29 Jul 2014.
+
+Aleksey Yeshchenko was added as PMC member on August 7 2014.
+
+P.S.: I apologize for the late report.
+
+[1] https://issues.apache.org/jira/browse/CASSANDRA-5351
+[2] https://issues.apache.org/jira/browse/CASSANDRA-6694
+[3] https://issues.apache.org/jira/browse/CASSANDRA-5590
+[4] https://issues.apache.org/jira/browse/CASSANDRA-4511
+[5] https://issues.apache.org/jira/browse/CASSANDRA-6504
+[6] http://www.datastax.com/dev/blog/compaction-improvements-in-cassandra-21</pre>
+<h3 id="2014-05-21"><a href="2014/board_minutes_2014_05_21.html#attachment-H">2014-05-21</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2014-05-21" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+1.2.15     02 Feb 2014
+2.0.5      06 Feb 2014
+2.1 beta1  19 Feb 2014
+2.0.6      09 Mar 2014
+1.2.16     30 Mar 2014
+2.0.7      17 Apr 2014
+2.1 beta2  04 May 2014
+
+Development:
+
+2.1 is feature complete with optimized repair [1] and off-heap
+memtables [2] joining user-defined types [3] and collection indexing
+[4].  Counters have been rewritten [5], and compaction has been tuned
+to be page-cache-aware [6].  We expect the first release candidate
+this month.
+
+Community:
+
+Tyler Hobbs was added as committer on 27 Feb 2014.
+
+The last PMC addition was Jake Luciani in August 2013.
+
+[1] https://issues.apache.org/jira/browse/CASSANDRA-5351
+[2] https://issues.apache.org/jira/browse/CASSANDRA-6694
+[3] https://issues.apache.org/jira/browse/CASSANDRA-5590
+[4] https://issues.apache.org/jira/browse/CASSANDRA-4511
+[5] https://issues.apache.org/jira/browse/CASSANDRA-6504
+[6] http://www.datastax.com/dev/blog/compaction-improvements-in-cassandra-21</pre>
+<h3 id="2014-02-19"><a href="2014/board_minutes_2014_02_19.html#attachment-E">2014-02-19</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2014-02-19" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+2.0.3  25 Nov 13
+1.2.12 25 Nov 13
+1.2.13 20 Dec 13
+2.0.4  30 Dec 13
+1.2.14  3 Feb 14
+
+Development:
+
+Work on 2.1 continues.  User-defined types [1] and collection indexing [2]
+are complete, and internal optimization is ongoing: we have added a persistent,
+atomic b-tree that saves 60% heap space compared to SnapTreeMap [3].
+
+Community:
+
+The January 2014 Cassandra Summit Japan [4] [5] saw about 100 attendees, a small
+increase over December 2012.  About 2/3 of the audience were running Cassandra
+in production.  There was widespread agreement that the English language
+is the largest barrier to Cassandra use in Japan, and growth will not take off
+until Japanese documentation is available.
+
+Mikhail Stepura was added as committer 16 Jan 2014.
+
+[1] https://issues.apache.org/jira/browse/CASSANDRA-5590
+[2] https://issues.apache.org/jira/browse/CASSANDRA-4511
+[3] https://git-wip-us.apache.org/repos/asf?p=cassandra.git;a=tree;f=src/java/org/apache/cassandra/utils/btree;h=20bf514a69d2ba368adea16388670b7b2ee257bf;hb=HEAD
+[4] http://b-rabbit.jp/cassandra/cstk2014/
+[5] http://d.hatena.ne.jp/oranie/20140127/1390798275</pre>
+<h3 id="2013-11-20"><a href="2013/board_minutes_2013_11_20.html#attachment-G">2013-11-20</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2013-11-20" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+1.2.6  25 Jun 13
+1.2.7  25 Jul 13
+1.2.8  27 Jul 13
+1.2.9  29 Aug 13
+2.0.0  02 Sep 13
+1.2.10 22 Sep 13
+2.0.1  22 Sep 13
+1.2.11 21 Oct 13
+2.0.2  27 Oct 13
+
+Development:
+
+Cassandra 2.0.x is improving with the expected maintenance releases
+[1].  Work is proceeding on 2.1, which aside from user-defined types
+[2] and collection indexing [3] is focusing on performance and
+stability [4] [5].
+
+Community:
+
+The 2013 Cassandra Summit Europe [6] in October sold out with 350
+attendees, more than double 2012's figure.
+
+[1] http://www.datastax.com/dev/blog/cassandra-2-0-1-2-0-2-and-a-quick-peek-at-2-0-3
+[2] https://issues.apache.org/jira/browse/CASSANDRA-5590
+[3] https://issues.apache.org/jira/browse/CASSANDRA-4511
+[4] http://www.mail-archive.com/dev@cassandra.apache.org/msg06682.html
+[5] http://www.mail-archive.com/dev@cassandra.apache.org/msg06731.html
+[6] http://www.planetcassandra.org/blog/post/cassandra-summit-eu-2013---video-recordings-and-slideshare-sessions</pre>
+<h3 id="2013-08-21"><a href="2013/board_minutes_2013_08_21.html#attachment-D">2013-08-21</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2013-08-21" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+1.2.5 19/May/13
+1.1.12 27/May/13
+1.2.6 26/Jun/13
+2.0b1 12/Jul/13
+2.0b2 25/Jul/13
+1.2.7 26/Jul/13
+1.2.8 28/Jul/13
+2.0rc1 8/Aug/13
+
+Development:
+
+Cassandra 2.0 warrants our first major version change in two years for
+two main reasons:
+
+1. Lightweight transactions are a first for a system built on eventual
+consistency, and allows opting in to linearizable consistency when
+necessary, giving users the best of both worlds [1].
+
+2. We're dropping a lot of legacy baggage (but not API compatibility),
+requiring users to upgrade through 1.2 first if they are on an earlier
+release [2].
+
+Community:
+
+The 2013 Cassandra Summit was a two-day event for the first time and
+saw over 1,100 attendees in SF [3].
+
+Jake Luciani was added to the PMC on August 12.
+
+[1] http://www.datastax.com/dev/blog/lightweight-transactions-in-cassandra-2-0
+[2] https://git-wip-us.apache.org/repos/asf?p=cassandra.git;a=blob_plain;f=NEWS.txt;hb=cassandra-2.0.0
+[3] http://www.datastax.com/company/news-and-events/events/cassandrasummit2013</pre>
+<h3 id="2013-05-15"><a href="2013/board_minutes_2013_05_15.html#attachment-F">2013-05-15</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2013-05-15" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+1.1.10 14/Feb/13
+1.2.2 24/Feb/13
+1.2.3 17/Mar/13
+1.2.4 10/Apr/13
+1.1.11 18/Apr/13
+
+Development:
+
+The Cassandra committers held an in-person roadmap discussion in San
+Mateo, CA at the end of February.  Besides those based in the Bay
+area, several committers flew in from out of town.  Aleksey Yeschenko
+and Jake Luciani attended remotely via Google Hangout.  General
+sentiment was that the meeting was a success, but we will try our next
+meeting entirely virtually over Hangout, both to reduce the travel
+overhead and to make everyone more of an equal participant.
+
+I wrote up notes of the meeting itself at [1] [2] [3].
+
+Community:
+
+Marcus Eriksson was added as a committer.
+
+[1] http://grokbase.com/t/cassandra/dev/132s40hvm4/notes-from-committers-meeting-overview
+[2] http://grokbase.com/t/cassandra/dev/132tc8nppj/notes-from-committers-meeting-counters
+[3] http://grokbase.com/t/cassandra/dev/132s6sh415/notes-from-committers-meeting-streaming-and-repair</pre>
+<h3 id="2013-02-20"><a href="2013/board_minutes_2013_02_20.html#attachment-F">2013-02-20</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2013-02-20" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+1.1.7, 1.1.8, 1.1.9, 1.2.0, 1.2.1
+
+Development:
+
+Cassandra 1.2 was released at the beginning of January.  New features
+include
+
+- virtual nodes [1]
+- collections [2]
+- improved support for auto-expired data [3]
+- startup optimization [4]
+- atomic batches [5]
+
+Community:
+
+Jason Brown was added as a committer.
+
+The Tokyo Cassandra community organized their second yearly conference
+at the end of November, drawing a crowd of about 100.  Last year most
+attendees were evaluating Cassandra, but this year saw many of them
+discussing production experiences.
+
+[1] http://www.acunu.com/2/post/2012/07/virtual-nodes-strategies.html
+[2] http://www.datastax.com/dev/blog/simple-data-importing-and-exporting-with-cassandra
+[3] http://www.datastax.com/dev/blog/tombstone-removal-improvement-in-1-2
+[4] http://www.datastax.com/dev/blog/1-2-startup-time-improvements
+[5] http://www.datastax.com/dev/blog/atomic-batches-in-cassandra-1-2
+[6] http://b-rabbit.jp/cct2012/</pre>
+<h3 id="2012-11-21"><a href="2012/board_minutes_2012_11_21.html#attachment-I">2012-11-21</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2012-11-21" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+Releases:
+
+1.0.11, 1.0.12, 1.1.4, 1.1.5, 1.6, 1.2beta1, 1.2beta2
+
+Development:
+
+Cassandra 1.2 is feature-frozen with the second beta release out.
+Release candidates will follow shortly.  Some new features include
+
+- virtual nodes [1]
+- collections [2]
+- improved support for auto-expired data [3]
+- startup optimization [4]
+- atomic batches [5]
+
+Community:
+
+Aleksey Yeschenko was added as a committer.
+
+The Cassandra Summit in late August saw over 800 attendees across four
+tracks.  Slides and videos are archived at [6].
+
+[1] http://www.acunu.com/2/post/2012/07/virtual-nodes-strategies.html
+[2] http://www.datastax.com/dev/blog/simple-data-importing-and-exporting-with-cassandra
+[3] http://www.datastax.com/dev/blog/tombstone-removal-improvement-in-1-2
+[4] http://www.datastax.com/dev/blog/1-2-startup-time-improvements
+[5] http://www.datastax.com/dev/blog/atomic-batches-in-cassandra-1-2
+[6] http://www.datastax.com/events/cassandrasummit2012/presentations</pre>
+<h3 id="2012-08-15"><a href="2012/board_minutes_2012_08_15.html#attachment-E">2012-08-15</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2012-08-15" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database providing massive scalability,
+high performance, and high availability.
+
+--Releases--
+
+1.0.10, 1.0.11, 1.1.1, 1.1.2, 1.1.3
+
+--Development--
+
+Cassandra 1.2 is nearing code freeze.  Some new features include
+
+- virtual nodes [1]
+- collections [2]
+- COPY command [3]
+- improved support for auto-expired data [4]
+- startup optimization [5]
+
+[1] http://www.acunu.com/2/post/2012/07/virtual-nodes-strategies.html
+[2] http://www.datastax.com/dev/blog/simple-data-importing-and-exporting-with-cassandra
+[3] http://www.datastax.com/dev/blog/simple-data-importing-and-exporting-with-cassandra
+[4] http://www.datastax.com/dev/blog/tombstone-removal-improvement-in-1-2
+[5] http://www.datastax.com/dev/blog/1-2-startup-time-improvements
+
+--Community--
+
+Dave Brosius and Yuki Morishita were added as committers.</pre>
+<h3 id="2012-05-16"><a href="2012/board_minutes_2012_05_16.html#attachment-H">2012-05-16</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2012-05-16" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database combining the best of Google's
+Bigtable and Amazon's Dynamo.
+
+--Highlights--
+
+Cassandra Europe [1] was a full-day, two track conference that drew about 160
+attendees.
+
+Cassandra 1.1 was released, with many enhancements. [2]
+
+[1] http://www.cassandra-eu.org/schedule
+[2] https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces26
+
+--Releases--
+
+0.8.10, 1.0.8, 1.0.9, 1.1.0
+
+--Community--
+
+Trivium: Cassandra downloads have roughly doubled vs a year ago.</pre>
+<h3 id="2012-02-15"><a href="2012/board_minutes_2012_02_15.html#attachment-F">2012-02-15</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2012-02-15" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database combining the best of Google's
+Bigtable and Amazon's Dynamo.
+
+--Highlights--
+
+Cassandra NYC [1] was a full-day, two track conference that drew about 150
+attendees.
+
+[1] http://www.datastax.com/events/cassandranyc2011
+
+--Releases--
+
+0.8.8, 0.8.9, 1.0.3, 1.0.4, 1.0.5, 1.0.6, 1.0.7
+
+--Community--
+
+Added committers Vijay Parthasarathy from Netflix, and Aaron Morton, an
+independent consultant.</pre>
+<h3 id="2011-11-16"><a href="2011/board_minutes_2011_11_16.html#attachment-F">2011-11-16</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2011-11-16" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database combining the best of Google's
+Bigtable and Amazon's Dynamo.
+
+--Highlights--
+
+Releasing 1.0.0 was a big deal [1] [2].  We added the overwhelmingly most
+popular feature request (compression) and addressed some long-standing
+weaknesses in the storage engine.  We also continued our efforts to make
+Cassandra more accessible to mainstream developers and ops teams.
+
+[1] http://mail-archives.apache.org/mod_mbox/cassandra-user/201110.mbox/%3CCAKkz8Q2HCV7GCwdTErcDhBwvOBCuVTUo%2BP1hERLTH5E_tSAyvg%40mail.gmail.com%3E
+[2] https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces18
+
+--Releases--
+
+0.7.9, 0.7.10, 0.8.3, 0.8.4, 0.8.5, 0.8.6, 0.8.7, 1.0.0 beta1 + rc1 + rc2,
+1.0.0, 1.0.1, 1.0.2
+
+Cassandra has attempted a 4-month release schedule for the last two major
+releases (0.8.0 and 1.0.0).  0.8.0 was a month late; 1.0.0 was a week late.
+This is not perfect, but it's progress.
+
+The 1.0.0 feature freeze period also more participation than we've
+seen before, particularly from the Rakuten and Gemini teams in Japan.
+1.0.0 was easily our most solid .0 release yet.  Still, most teams wait
+for the final release before testing in earnest.
+
+--Community--
+
+To celebrate 1.0.0, I offered a "Cassandra Bug Hunter" shirt to everyone
+who has contributed one or more patches to Cassandra (we track these
+as "contributors" in Jira).  There were 189.</pre>
+<h3 id="2011-08-17"><a href="2011/board_minutes_2011_08_17.html#attachment-E">2011-08-17</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2011-08-17" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database combining the best of Google's
+Bigtable and Amazon's Dynamo.
+
+--Highlights--
+
+The Cassandra SF 2011 conference was a resounding success.  We reached
+the venue's capacity and had to cap attendance at about 450, over twice
+last year's attendance.  We were also able to increase from two tracks
+of talks, to three.
+
+After 0.7, Cassandra switched to a time-based release process.  0.8.0
+was the first release under this system and was our most stable .0
+release yet.  We consider the change a success and plan to release
+1.0 under a similar plan in October.
+
+--Releases--
+
+0.7.6, 0.7.7, 0.7.8, 0.8.0, 0.8.1, 0.8.2
+
+0.6 has been put out to pasture.  There have been no new bug reports
+and we do not anticipate any releases after April's 0.6.13.
+
+--Community--
+
+Added Pavel Yaskevich as committer.</pre>
+<h3 id="2011-05-19"><a href="2011/board_minutes_2011_05_19.html#attachment-E">2011-05-19</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2011-05-19" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database combining the best of Google's
+Bigtable and Amazon's Dynamo.
+
+--Highlights--
+
+After a prolonged 0.7 release with a lot of feature creep, Cassandra
+has switched to a time-based release for 0.8 and expect to have it
+out by the end of May.  Notable features include counter support
+and CQL, an SQL-based query language with extensions for Cassandra's
+sparse-row data model.
+
+--Releases--
+
+0.6.12, 0.6.13, 0.7.1, 0.7.2, 0.7.3, 0.7.4, 0.7.5, 0.8b1, 0.8b2
+
+--Community--
+
+Added Sylvain Lebresne as committer.</pre>
+<h3 id="2011-02-16"><a href="2011/board_minutes_2011_02_16.html#attachment-F">2011-02-16</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2011-02-16" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database combining the best of Google's
+Bigtable and Amazon's Dynamo.
+
+--Highlights--
+
+Several Cassandra deployments have gotten positive press recently,
+including Netflix, Openwave, and Twitter's Rainbird.
+
+0.7.0 was released with many new features, including index
+queries against column values.
+
+--Releases--
+
+0.6.9, 0.6.10, 0.6.11, 0.7.0
+
+--Community--
+
+Added Jake Luciani as committer.</pre>
+<h3 id="2010-11-17"><a href="2010/board_minutes_2010_11_17.html#attachment-E">2010-11-17</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2010-11-17" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database combining the best of Google's
+Bigtable and Amazon's Dynamo.
+
+--Highlights--
+
+The ApacheCon Cassandra/NoSQL track went extremely well, with great
+talks that often saw standing-room-only attendance.  The Cassandra
+meetup at ApacheCon also saw a good turnout.
+
+Cassandra got a lot of positive attention recently when Digital
+Reasoning announced that the US Government has a 400 node Cassandra
+cluster.
+
+--Releases--
+
+0.6.5, 0.6.7, 0.6.8
+0.7-beta2, 0.7-beta3
+
+0.7-final is taking longer than expected, primarily because of some
+corner cases of the new schema modification code.  While we work out
+those last details, we've branched 0.7 so work on new features for the
+next major release can proceed in parallel.
+
+--Community--
+
+Cassandra has been getting a lot of positive attention at conferences,
+including JavaOne, CME, Oredev, Devoxx, and NoSQL Japan, as well as
+ApacheCon.
+
+We have no new committers since the last board report, but we do see a
+long tail distribution of contributions from the community -- we
+recently passed the 100-person mark of contributors who have had at
+least one patch accepted.  With luck we will be able to help some of
+these move towards becoming a full committer.</pre>
+<h3 id="2010-08-18"><a href="2010/board_minutes_2010_08_18.html#attachment-E">2010-08-18</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2010-08-18" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database similar to Google's Bigtable
+or Amazon's Dynamo.
+
+--Highlights--
+
+The first Cassandra Summit was held in San Francisco on August 10
+with almost 200 attendees.  The 0.7 release is coming along nicely,
+with a large amount of new features and performance improvements.
+
+--Releases--
+
+0.6.1, 0.6.2, 0.6.3, 0.6.4
+0.7-beta1
+
+--Community--
+
+Gary Dusbabek has been added to the PMC.  Brandon Williams was added
+as committer.</pre>
+<h3 id="2010-05-19"><a href="2010/board_minutes_2010_05_19.html#attachment-H">2010-05-19</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2010-05-19" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database similar to Google's Bigtable
+or Amazon's Dynamo.
+
+--Highlights--
+
+Digg hosted a Cassandra meetup and Hackathon in San Francisco. [1]
+Cassandra was represented at NoSQL EU (dubbed "VolcaNoSQL") and
+will be at this year's JavaOne [no link available yet].
+
+[1] http://cassandrahackathon.eventbrite.com/
+[2] http://www.slideshare.net/jbellis/cassandra-nosql-eu-2010
+
+--Releases--
+
+0.6.1
+
+--Community--
+
+Mailing list participation grew from 960 in March to 1495 in April.
+
+Gary Dusbabek was voted into the PMC.</pre>
+<h3 id="2010-04-21"><a href="2010/board_minutes_2010_04_21.html#attachment-C">2010-04-21</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2010-04-21" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database similar to Google's Bigtable
+or Amazon's Dynamo.
+
+--Highlights--
+
+Cassandra continues to get a lot of attention as one of the big
+names in "NoSQL."  Since the last board report, this includes
+adoption by Reddit [1] and representation at several conferences
+(e.g., [2], [3]).
+
+The graduation-and-0.6-final press release has been well-received [4].
+
+--Releases--
+
+0.6 beta3
+0.6 rc1, promoted to -final
+
+--Community--
+
+Mailing list participation grew from 419 in February to user@ to 960
+in March to 521 in April as of this writing (2010/04/13). IRC
+participation is also up.
+
+[1] http://blog.reddit.com/2010/03/she-who-entangles-men.html
+[2] http://phillyemergingtech.com/sessions/cassandra-your-new-best-girl
+[3] http://nosqleu.com/#agenda
+[4] https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces3</pre>
+<h3 id="2010-03-17"><a href="2010/board_minutes_2010_03_17.html#attachment-E">2010-03-17</a> &mdash; Jonathan Ellis<a class="headerlink" href="#2010-03-17" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed database similar to Google's Bigtable
+or Amazon's Dynamo.
+
+--Highlights--
+
+We're is getting a lot of positive press about Twitter's adoption of
+Cassandra (see e.g. [1]).  Cassandra will be represented at at least
+one conference a month until Summer.  OSCON specifically requested a
+Cassandra tutorial.
+
+[1] http://nosql.mypopescu.com/post/407159447/cassandra-twitter-an-interview-with-ryan-king
+
+--Releases--
+
+0.5.1, a bug fix release.
+0.6 beta2, containing new features like row cache and Hadoop support
+
+We will start voting on 0.6 RC1 soon.
+
+--Community--
+
+Mailing list participation is up, from 379 on -users in January to 419
+in February to 237 as of this writing (2010/03/09) in March.  IRC
+participation is also up.</pre>
+<h3 id="2009-09-23"><a href="2009/board_minutes_2009_09_23.html#cassandra">2009-09-23</a> &mdash; in the Incubator's report<a class="headerlink" href="#2009-09-23" title="Permalink">&para;</a></h3>
+<pre>Cassandra is a distributed storage system providing reliability at a massive
+scale. Started incubation: 01/2009. Opened to community in 03/2009.
+
+Past action items:
+
+   * Vote on committers Eric Evans and Jun Rao.  Done.  (And accepted.)
+   * Get 0.3.0 release out.  Done.
+
+Other notable milestones:
+
+   * Digg is running a Cassandra cluster of almost 10 TB now.
+
+Next steps:
+
+   * Get 0.4.0 release out.  (Beta1 was released a couple weeks ago; RC1 is
+being voted on now.)</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

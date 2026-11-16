@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Streams | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Streams';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Streams';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Streams</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="streams">Streams<a class="headerlink" href="#streams" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017-07-19</td>
+<td><a href="2017/board_minutes_2017_07_19.html#section-7C">Appointed Stephen D Blackmon</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-10-16</td>
+<td><a href="2024/board_minutes_2024_10_16.html#section-7B">Terminate the Apache Streams Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>2017-07-19</td>
+<td><a href="2017/board_minutes_2017_07_19.html#section-7C">Establish the Apache Streams Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2024-10-16"><a href="2024/board_minutes_2024_10_16.html#section-6BU">2024-10-16</a> &mdash; Steve Blackmon<a class="headerlink" href="#2024-10-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-BT">2024-09-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Streams is the creation and maintenance of software
+related to interoperability of online profiles and activity feeds
+
+## Project Status:
+Current project status: Dormant
+Issues for the board: none. A couple of
+directors showed interest in details of project management recently, including
+a motion to send the project to the attic without a roll call. This kicked off
+a thread where 4 PMCs (and counting) and other community members responded,
+which we hope will serve as a de facto roll call, demonstrating that there is
+sufficient PMC oversight, and the board can let the PMC continue to manage the
+project.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (7 years ago)
+There are currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Brian Hodge on 2020-06-18.
+- No new committers. Last addition was Brian Hodge on 2020-05-04.
+
+## Project Activity:
+.6.1 was released on 2020-03-20.
+0.6.0 was released on 2018-06-28.
+
+## Community Health:
+Activity was down over summer as the PMC members (who have other day jobs)
+focused on their families (many with young children) for summer break. We
+apologize for lack of board reports during this time, and have seen a
+(somewhat expedited in our opinion) call for us to be moved to the attic. As
+the internet (and world in general) moves to a 'post social media' state, we
+are internally debating future directions for the project (including pivoting
+the direction, or possibly retiring the project, the right way).</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#section-6BV">2024-08-21</a> &mdash; Steve Blackmon<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-07-17"><a href="2024/board_minutes_2024_07_17.html#section-6BU">2024-07-17</a> &mdash; Steve Blackmon<a class="headerlink" href="#2024-07-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Rich: pursue a report for Streams</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#section-6BS">2024-06-19</a> &mdash; Steve Blackmon<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#section-6BQ">2024-05-15</a> &mdash; Steve Blackmon<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#section-6BU">2024-04-17</a> &mdash; Steve Blackmon<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-CD">2024-01-17</a> &mdash; Steve Blackmon<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+The project code and community has become stagnant, and with the end of
+Twitter's free API, there is now very little code in the project today
+useful enough to attract users or developers.  It's been several years
+since the community rallied around a project, much less followed through
+on it, unfortunately.  I (Steve) am trying very hard to change that by
+inspiring the community toward a new 'North Star'.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (6 years ago). There are
+currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- The next Apache Streams release will be the first compatible with JDK11
+  and JDK17.
+- 2021 and 2022 and 2023 all had minimal commit and mailing list and
+  discussions.
+- 2024 is different - there are conversations and planning underway to reboot
+  the project in an exciting direction that should have wide appeal (see below)
+
+## Other Comments:
+- Twitter's pay-walling of the free API is quite unfortunate.  Streams
+most mature and powerful libraries and examples are all based on these APIs.
+- A silver lining with the turmoil at Twitter is rapidly growing interest in
+open alternatives based on ActivityPub ex. Mastadon.  This offers the
+project a path to new life, as ActivityPub is based on ActivityStreams.
+- Addition of Pekko (incubating) to the wider community is an opportunity to
+clean house on the code base, switching plumbing to more suitable patterns, and
+supporting scala developmers natively.
+- The new 'North Star' under discussion is for Apache Streams to release a
+  cloud-native ActivityPub server akin to Mastadon, but optimized for
+  deployments to customize the experience, for the community to add new
+  features, and able to support massive user bases.
+- We need to get the upgrades on our main branch released ASAP.
+- We need to better reach out to new users and developers to reinvigorate the
+  project, and expand influence and awareness among the ActivityPub ecosystem.
+  Now that we have a new exciting relevant objective this is a high priority!</pre>
+<h3 id="2023-10-18"><a href="2023/board_minutes_2023_10_18.html#attachment-BR">2023-10-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2023-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+The project code and community has become stagnant, and with the end of
+Twitter's free API, there is now very little code in the project today
+useful enough to attract users or developers.  It's been several years
+since the community rallied around a project, much less followed through
+on it, unfortunately.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (6 years ago). There are
+currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- The next Apache Streams release will be the first compatible with JDK11.
+- 2021 and 2022 and 2023 all had minimal commit and mailing list and discussions.
+- Several recent board reports have been missed.  Very sorry about that.
+
+## Other Comments:
+- Twitter's pay-walling of the free API is quite unfortunate.  Streams
+most mature and powerful libraries and examples are all based on these APIs.
+- A silver lining with the turmoil at Twitter is rapidly growing interest in
+open alternatives based on ActivityPub ex. Mastadon.  This offers the
+project a path to new life, as ActivityPub is based on ActivityStreams.
+- Addition of Pekko (incubating) to the wider community is an opportunity to
+clean house on the code base, switching plumbing to more suitable patterns, and
+supporting scala developmers natively.
+- We need to get the upgrades on our main branch released ASAP.
+- We need to better reach out to users and developers to reinvigorate the project.
+- We need to lean further into the ActivityPub ecosystem to become relevant again.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#section-6BV">2023-09-20</a> &mdash; Steve Blackmon<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#section-6CA">2023-08-16</a> &mdash; Steve Blackmon<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-07-19"><a href="2023/board_minutes_2023_07_19.html#section-6BR">2023-07-19</a> &mdash; Steve Blackmon<a class="headerlink" href="#2023-07-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-BW">2023-04-19</a> &mdash; Steve Blackmon<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (5 1/2 years ago). There are currently 9
+committers and 9 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- The next Apache Streams release will be the first compatible with JDK11.
+- 2021 and 2022 both had minimal commit and mailing list and discussions.
+- Several recent board reports have been missed.  Very sorry about that.
+
+## Other Comments:
+- Twitter's imminent pay-walling of the free API is quite unfortunate.
+  Streams most mature and powerful libraries and examples are all based on
+  these APIs.
+- A silver lining with the turmoil at Twitter is rapidly growing interest in
+  open alternatives based on ActivityPub ex. Mastadon.  This offers the
+  project a path to new life, as ActivityPub is based on ActivityStreams.
+- We need to get the upgrades on our main branch released ASAP.
+- We need to better reach out to users and developers to reinvigorate the
+  project.
+- We need to lean further into the ActivityPub ecosystem to become relevant
+  again.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-CI">2023-02-15</a> &mdash; Steve Blackmon<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (4 3/4 years ago).
+There are currently 9committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Next Apache Streams release will be the first compatible with JDK11.
+- 2021 and 2022 both had minimal commits and discussions.
+- Recent board reports have been missed.  Very sorry about that.
+
+## Other Comments:
+- Twitter's imminent pay-walling of the free API is unfortunate.  Streams most
+  mature and powerful libraries are based on this API.
+- A silver lining with the turmoil at Twitter is rapidly growing interest in
+  open alternatives based on ActivityPub ex. Mastadon.  This offers the
+  project a path to new life, as ActivityPub is based on ActivityStreams.
+- We need to get the upgrades on our main branch released ASAP.
+- We need to better reach out to users and developers to reinvigorate the
+  project.
+- We need to lean further into the ActivityPub ecosystem to become relevant
+  again.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#section-6CF">2023-01-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#section-6BV">2022-12-21</a> &mdash; Steve Blackmon<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#section-6BN">2022-11-16</a> &mdash; Steve Blackmon<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#section-6BV">2022-10-19</a> &mdash; Steve Blackmon<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-BR">2022-07-20</a> &mdash; Steve Blackmon<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (4 3/4 years ago). There are
+currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Next Apache Streams release will be the first compatible with JDK11.
+- There was discussion last year about path and priorities to 1.0 release
+and roadmap beyond, but not many discussions or commits in 2021 or 2022
+thus far.
+
+## Community Health:
+- We need to get the upgrades on our main branch released ASAP. Q3 or bust!
+- We need to conduct more regular roadmap planning, create and deliver
+based on a planned release schedule.
+- We need to identify and execute strategies to reach out to likely
+interested users and developers to reinvigorate the project.
+- We need to be willing to evolve the project toward new use cases if
+necessary to expand the community.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-BH">2022-05-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (4 3/4 years ago). There are currently 9
+committers and 9 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Next Apache Streams release will be the first compatible with JDK11.
+- There was discussion last year about path and priorities to 1.0 release and
+  roadmap beyond, but not many discussions or commits in 2021 or 2022 thus
+  far.
+
+## Community Health:
+- We need to get the upgrades on our main branch released asap.
+- We need to conduct more regular roadmap planning, create and deliver based
+  on a planned release schedule.
+- We need to identify and execute strategies to reach out to likely interested
+  users and developers to reinvigorate the project.
+- We need to be willing to evolve the project toward new use cases if
+  necessary to expand the community.</pre>
+<h3 id="2022-04-20"><a href="2022/board_minutes_2022_04_20.html#section-6BJ">2022-04-20</a> &mdash; Steve Blackmon<a class="headerlink" href="#2022-04-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#attachment-BL">2022-01-19</a> &mdash; Steve Blackmon<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (4 1/2 years ago). There are currently 9
+committers and 9 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Next Apache Streams release will be the first compatible with JDK11.
+- There was a recent discussion about path and priorities to 1.0 release
+ and roadmap beyond, but not many discussions or commits in 2021.
+- Two PMC members presented work based on Apache Streams during ApacheCon
+ 2021.
+
+## Community Health:
+- We need to conduct more regular roadmap planning, create and deliver based
+ on a planned release schedule.
+- We need to identify and execute strategies to reach out to likely interested
+ users and developers to reinvigorate the project.
+- We need to be willing to evolve the project toward new use cases if necessary
+ to expand the community.</pre>
+<h3 id="2021-10-20"><a href="2021/board_minutes_2021_10_20.html#attachment-CA">2021-10-20</a> &mdash; Steve Blackmon<a class="headerlink" href="#2021-10-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (4 years ago). There are currently 9
+committers and 9 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Next Apache Streams release will be the first compatible with JDK11.
+- Two PMC members presented work based on Apache Streams for ApacheCon
+  2021.
+- There is an ongoing discussion about path and priorities to 1.0 release
+  and roadmap beyond.
+
+## Community Health:
+- Adding committers and growing the PMC will remain a focus.
+- We need to identify and execute strategies to reach out to likely interested
+  users and developers, including evolving the project for new use cases.
+- We need to conduct more regular roadmap planning, create and deliver based
+  on a planned release schedule.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-BP">2021-09-15</a> &mdash; Steve Blackmon<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (4 years ago). There are currently 9
+committers and 9 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Next Apache Streams release will be the first compatible with JDK11.
+- Necessary work to enable an Apache Streams binary/bytecode release so far
+  has stalled: curation of an accurate NOTICE file is required and no one has
+  demonstrated interest/time to complete this effort.
+- Two PMC members are presenting work based on Apache Streams for ApacheCon
+  2021.
+- Not much code or mailing list discussion since Q2 board report :(
+- There is an ongoing discussion about path and priorities to 1.0 release.
+
+## Community Health:
+- Adding committers and growing the PMC will remain a focus.
+- We need to identify and execute strategies to reach out to likely interested
+  users and developers, including evolving the project for new use cases.
+- We need to conduct more regular roadmap planning, create and deliver based
+  on a release schedule.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#section-6BM">2021-08-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Sander: pursue a report for Streams</pre>
+<h3 id="2021-07-21"><a href="2021/board_minutes_2021_07_21.html#section-6BS">2021-07-21</a> &mdash; Steve Blackmon<a class="headerlink" href="#2021-07-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2021-04-21"><a href="2021/board_minutes_2021_04_21.html#attachment-BR">2021-04-21</a> &mdash; Steve Blackmon<a class="headerlink" href="#2021-04-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (3 years ago) There are currently 9
+committers and 9 PMC members in this project. The Committer-to-PMC ratio is
+1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Apache Streams 0.7.0 will be the first compatible with JDK11.
+- No pull requests or mailing list discussion since Q1 board report :(
+- Necessary work to enable Apache Streams 0.7.0 binary/bytecode release seems
+  to have stalled: curation of an accurate NOTICE file is required and no one
+  has demonstrated interest/time to do this work.
+- Activity will likely be high(er) into and through summer, with work
+  supporting ApacheCon Social Data track presentations.
+
+## Community Health:
+- Adding committers and growing the PMC will remain a focus.
+- We need to identify and execute strategies to reach out to likely interested
+  users and developers.
+- We need to conduct more regular roadmap planning, create and deliver based
+  on a release schedule.</pre>
+<h3 id="2021-01-20"><a href="2021/board_minutes_2021_01_20.html#attachment-BM">2021-01-20</a> &mdash; Steve Blackmon<a class="headerlink" href="#2021-01-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (3 years ago)
+There are currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Apache Streams 0.7.0 will be the first compatible with JDK11.
+- 6 pull requests merged since Q4 board report.
+- Necessary work to enable Apache Streams 0.7.0 binary/bytecode release is in
+  progress: curation of a NOTICE file.
+
+## Community Health:
+- Adding committers and growing the PMC will remain a focus.
+- We need to identify and execute strategies to reach out to likely
+  interested users and developers.
+- We need to conduct more regular roadmap planning, create and deliver based
+  on a release schedule.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-BI">2020-11-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (3 years ago)
+There are currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Numerous improvements made to the twitter SDK and example streams that use
+  it since last report.
+- Apache Streams 0.7.0 release (first binary/bytecode release) preparation is
+  in progress; LICENSE work is done but NOTICE file work remains.
+
+## Community Health:
+- Adding committers and growing the PMC will remain a focus.
+- We need to identify and execute strategies to reach out to likely
+  interested users and developers.
+- We need to conduct more regular roadmap planning, create and deliver based
+  on a release schedule.</pre>
+<h3 id="2020-10-21"><a href="2020/board_minutes_2020_10_21.html#section-6BK">2020-10-21</a> &mdash; Steve Blackmon<a class="headerlink" href="#2020-10-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-BN">2020-07-15</a> &mdash; Steve Blackmon<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (3 years ago)
+There are currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+## Community changes:
+- Brian Hodge joined PMC on 2020-04-26
+- Brian Hodge became a committer on 2020-04-26
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+- Apache Streams 0.6.2-SNAPSHOT is now compatible with JDK11 !!!
+- Necessary work to enable Apache Streams 0.7.0 binary/bytecode release is in
+  progress, principally curating new LICENSE and NOTICE files.
+
+## Community Health:
+- Adding committers and growing the PMC will remain a focus.
+- We need to identify and execute strategies to reach out to likely
+  interested users and developers.
+- We need to conduct more regular roadmap planning, create and deliver based
+  on a release schedule.</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#attachment-BT">2020-04-15</a> &mdash; Steve Blackmon<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (3 years ago) There are currently 9
+committers and 9 PMC members in this project. The Committer-to-PMC ratio is
+1:1. Community changes, past quarter:
+- One new PMC member - Brian Hodge added on 2020-04-08
+- One new committer - Brian Hodge added on 2020-04-08
+
+## Project Activity:
+- Apache Streams 0.6.1 was released in March 2020.
+
+## Community Health:
+- Adding committers and growing the PMC will remain a focus.
+- We need to identify and execute strategies to reach out to likely interested
+  users and developers.
+- We need to conduct more regular roadmap planning, create and deliver based
+  on a release schedule.</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-BK">2020-02-19</a> &mdash; Steve Blackmon<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (3 years ago)
+There are currently 8 committers and 8 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ate Douma on 2017-07-18.
+- No new committers were added.
+
+## Project Activity:
+- Three modules are new or materially improved this quarter.
+- One module was submitted (and several reviewed) by a new project participant
+  bhodge.
+
+## Community Health:
+- Mailing list and commit participation was low again.  Adding committers and
+  growing the PMC needs to be a focus.
+- Streams is over-due for a release to incorporate new ActivityStreams
+  2.0 support and updates to several of our core dependencies.</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#section-6BN">2020-01-15</a> &mdash; Steve Blackmon<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Ted: pursue a report for Streams</pre>
+<h3 id="2019-10-16"><a href="2019/board_minutes_2019_10_16.html#attachment-BO">2019-10-16</a> &mdash; Steve Blackmon<a class="headerlink" href="#2019-10-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+- Keeping the existing community active and growing the community remains a
+  challenge.
+
+## Membership Data:
+Apache Streams was founded 2017-07-18 (2 years ago)
+There are currently 8 committers and 8 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ate Douma on 2017-07-18.
+- No new committers were added.
+
+## Project Activity:
+- Activity was low again this quarter
+- Most development focused on integrating person &amp; company data enrichment
+  services.
+- Several PMC members will be participating in the upcoming ACEU 2019
+  hackathon.
+
+## Community Health:
+- Mailing list and commit participation was low again.  Adding committers and
+  growing the PMC needs to be a focus.
+- Streams is over-due for a release to incorporate new ActivityStreams
+  2.0 support and updates to several of our core dependencies.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#attachment-BN">2019-07-17</a> &mdash; Steve Blackmon<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Streams unifies a diverse world of digital profiles and online
+  activities into common formats and vocabularies, and makes these datasets
+  accessible across a variety of databases, devices, and platforms for
+  streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+
+- Keeping the existing community active and growing the community remains a
+  challenge.
+
+## Activity:
+
+- Activity was low again this quarter, but a check-in thread in Q1 confirmed 4
+  attentive PMC members [1]
+- Some development occurred this quarter, primarily maintaining and
+  modernizing existing modules.
+- Several interesting new data integrations are being actively developed but
+  have not yet merged.
+- Several PMC members are committed to code and community development
+  activities during ACNA 2019 hackathon, and ACEU 2019 hackathon, maybe also
+  at Flink Forward Berlin 2019.
+- Streams-related presentation at Chicago Roadshow in May
+
+## Health report:
+
+- Mailing list and commit participation was low again.  Adding committers and
+  growing the PMC needs to be a focus this year.
+- Streams is still over-due for a release to incorporate new ActivityStreams
+2.0 support and updates to several of our core dependencies.
+
+## PMC changes:
+
+- None. There are currently 8 PMC members.  The most recent PMC addition
+  occurred on July 19, 2017.
+
+## Committer base changes:
+
+- None. There are currently 8 committers.  The most recent PMC addition
+  occurred on July 19, 2017.
+
+## Releases:
+
+- Apache Streams 0.6.0 was released on June 17, 2018
+
+## Upcoming Project Initiatives:
+
+- Perform first binary release
+- Additional examples in source tree and on the web
+- Export archives of more online services
+- Integrations with additional APIs containing profile and activity data
+- More support for Activity Streams 2.0
+- Reduce disparities between normalized activities and objects of like type
+  collected from various data sources.- Deprecate and delete non-essential
+  modules
+- Drop non-essential third-party maven dependencies
+- Support JDKs &gt; 8
+
+[1] https://lists.apache.org/thread.html/677af59d2b30e4b2793e49f434d16a7ace5c9d88b65d5e3332c3552e@%3Cprivate.streams.apache.org%3E</pre>
+<h3 id="2019-04-17"><a href="2019/board_minutes_2019_04_17.html#attachment-BG">2019-04-17</a> &mdash; Steve Blackmon<a class="headerlink" href="#2019-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Streams unifies a diverse world of digital profiles and online
+  activities into common formats and vocabularies, and makes these datasets
+  accessible across a variety of databases, devices, and platforms for
+  streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+
+- More code has been unintentionally deprecated due to loss of functionality
+  of upstream APIs.
+- Keeping the existing community active and growing the community remains a
+  challenge.
+
+## Activity:
+
+- Some additional development occurred on existing modules but activity was
+  low again this quarter.
+- Project is over-due for a release to incorporate new ActivityStreams
+2.0 support and updates to several of our core dependencies.
+- Three Apache members have recently expressed some interest in getting
+  involved, potentially joining PMC, although not yet officially on-list.
+- Some progress was made on firming up a project roadmap on email list, in
+  confluence, and a public summary of the roadmap is now on the website.
+
+## Health report:
+
+- Mailing list and commit participation was low again.  Adding committers and
+  growing the PMC needs to be a focus this year.
+
+## PMC changes:
+
+- None. There are currently 8 PMC members.  The most recent PMC addition
+  occurred on July 19, 2017.
+
+## Committer base changes:
+
+- None. There are currently 8 committers.  The most recent PMC addition
+  occurred on July 19, 2017.
+
+## Releases:
+
+- Apache Streams 0.6.0 was released on June 17, 2018
+
+## Upcoming Project Initiatives:
+
+- Build a library of examples in source tree and on the web
+- Deprecate and delete non-essential modules
+- Drop non-essential third-party maven dependencies
+- Export archives of online services
+- Harmonize Provider Configurations
+- More support for Activity Streams 2.0
+- Support JDKs &gt; 8
+- Perform first binary release
+- Reduce disparities between normalized activities and objects of like type
+  collected from various data sources.</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#attachment-BR">2019-01-16</a> &mdash; Steve Blackmon<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Streams unifies a diverse world of digital profiles and online
+  activities into common formats and vocabularies, and makes these datasets
+  accessible across a variety of databases, devices, and platforms for
+  streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+
+- More code has been unintentionally deprecated due to loss of functionality
+  of upstream APIs.
+- Instagram turned off quite a few endpoints this quarter and Google announced
+  they will shut down Google+ entirely.
+
+## Activity:
+
+- Some additional development occurred on existing modules and one new module
+  is in an open pull request, but activity was low this quarter.
+- Project is over-due for a release to incorporate new ActivityStreams 2.0
+  support and updates to several of our core dependencies
+- Three Apache members have recently expressed some interest in getting
+  involved, potentially joining PMC, although not yet officially on-list.
+
+## Health report:
+
+- Mailing list and commit participation was low again.  Adding committers and
+  growing the PMC needs to be a focus this year.
+
+## PMC changes:
+
+- None. There are currently 8 PMC members.  The most recent PMC addition
+  occurred on July 19, 2017.
+
+## Committer base changes:
+
+- None. There are currently 8 committers.  The most recent PMC addition
+  occurred on July 19, 2017.
+
+## Releases:
+
+- Apache Streams 0.6.0 was released on June 17, 2018
+
+## Upcoming Project Initiatives:
+
+- More support for RDF/JSON-LD Activity Streams 2.0 vocabulary as well as JSON
+  Activity Streams 1.0 vocabulary.
+- Continue developing the new functionality that sources data from export
+  archives of online services (twitter, facebook, google, etc).
+- Complete release version that includes binary distribution and official
+  docker container.
+- Drop remaining maven dependencies on java SDKs for accessing third-party
+  APIs in favor of HTTP/REST interfaces via Apache Foundation code.
+- Reduce disparities between normalized activities and objects of like type
+  collected from various data sources.
+- Reduce disparities between the configuration objects that initialize similar
+  providers from various data sources.
+- More tweets and blog posts of zeppelin notebooks demonstrating data
+  pipelines and analyses based on Apache Streams.
+- More official examples in source tree demonstrating integration of Apache
+  Streams with complementary technologies.
+- Improve the interfaces by which components are created, configured,
+  activated, and executed via SDK and CLI.
+- Joint development with complementary projects including Apache Any23, Apache
+  Juneau, and Apache Kibble.
+- Refactoring work to support compiling and tests passing on newer JDK
+  versions 9, 10, and 11.</pre>
+<h3 id="2018-10-17"><a href="2018/board_minutes_2018_10_17.html#attachment-BI">2018-10-17</a> &mdash; Steve Blackmon<a class="headerlink" href="#2018-10-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Streams unifies a diverse world of digital profiles and online activities into common formats and vocabularies, and makes these datasets accessible across a variety of databases, devices, and platforms for streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+
+- There are a lot of changes occurring in the APIs of our supported data sources.  Due primarily to the EU's GDPR legislation, a user's ability to collect profiles and posts from accounts other than the authenticated account is being limited.
+- On the other hand comprehensive data about the authenticated account (sometimes via bulk export not via API) is becoming richer, presenting an opportunity for the project to assist users in awareness of the data collected about them by third-parties, and with data portability between systems using bulk export archives.
+
+## Activity:
+
+- Steve Blackmon presented initial support for social media export archives and Activity Streams 2.0 at ApacheCon NA 2018.
+
+## Health report:
+
+Mailing list and commit participation was reduced this quarter.  Adding committers and growing the PMC needs to be a focus this year.
+
+## PMC changes:
+
+- None. There are currently 8 PMC members.  The most recent PMC addition occurred on July 19, 2017.
+
+ ## Committer base changes:
+
+- None. There are currently 8 committers.  The most recent PMC addition occurred on July 19, 2017.
+
+## Releases:
+
+- Apache Streams 0.6.0 was released on June 17, 2018
+
+## Upcoming Project Initiatives:
+
+- More support for RDF/JSON-LD Activity Streams 2.0 vocabulary as well as JSON Activity Streams 1.0 vocabulary.
+- Continue developing the new functionality that sources data from export archives of online services (twitter, facebook, google, etc).
+- Complete release version that includes binary distribution and official docker container.
+- Drop remaining maven dependencies on java SDKs for accessing third-party APIs in favor of HTTP/REST interfaces via Apache Foundation code.
+- Reduce disparities between normalized activities and objects of like type collected from various data sources.
+- Reduce disparities between the configuration objects that initialize similar providers from various data sources.
+- More tweets and blog posts of zeppelin notebooks demonstrating data pipelines and analyses based on Apache Streams.
+- More official examples in source tree demonstrating integration of Apache Streams with complementary technologies.
+- Improve the interfaces by which components are created, configured, activated, and executed via SDK and CLI.
+- Joint development with complementary projects including Apache Any23, Apache Juneau, and Apache Kibble.
+- Refactoring work to support compiling and tests passing on newer JDK versions 9, 10, and 11.</pre>
+<h3 id="2018-07-18"><a href="2018/board_minutes_2018_07_18.html#attachment-BJ">2018-07-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2018-07-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Streams unifies a diverse world of digital profiles and online
+  activities into common formats and vocabularies, and makes these datasets
+  accessible across a variety of databases, devices, and platforms for
+  streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+
+- There are a lot of changes occurring in the APIs of our supported data
+  sources.  Due primarily to the EU's GDPR legislation, a user's ability to
+  collect profiles and posts from accounts other than the authenticated
+  account is being limited.
+- On the other hand comprehensive data about the authenticated account
+  (sometimes via bulk export not via API) is becoming richer, presenting an
+  opportunity for the project to assist users in awareness of the data
+  collected about them by third-parties, and with data portability between
+  systems using bulk export archives.
+
+## Activity:
+
+- We released Apache Streams 0.6.0, coordinated by a new release manager
+  (number 5).
+- We made progress toward including a binary artifact in an upcoming release.
+
+## Health report:
+
+Significant new features are expected this quarter.  Adding committers and
+growing the PMC needs to be a focus this year.
+
+## PMC changes:
+
+- None. There are currently 8 PMC members.  The most recent PMC addition
+  occurred on July 19, 2017.
+
+## Committer base changes:
+
+- None. There are currently 8 committers.  The most recent PMC addition
+  occurred on July 19, 2017.
+
+## Releases:
+
+- Apache Streams 0.6.0 was released on June 17, 2018
+
+## Mailing list activity: (3 month)
+
+19 Emails sent during these 91 days, down 18 (-45%) compared to previous 91
+days. 8 topics started during these 91 days, down 6 (-42%) compared to
+previous 91 days. 6 Participants during these 91 days, down 2 (-25%) compared
+to previous 91 days.
+
+## JIRA Statistics: (3 month)
+
+12 new, 15 resolved
+
+## Website Traffic: (3 month)
+
+1,187 sessions, up 5.89% compared to previous 3 months. 1,107 users, up 10.04%
+compared to previous 3 months.
+
+## Upcoming Project Initiatives:
+- Complete preparations for a binary release.
+- Add new providers that source streams from export archives of existing data
+  sources (twitter, facebook, google).
+- Integrate binary release with Apache Kibble.
+- More tweets and blog posts of zeppelin notebooks demonstrating data
+  pipelines and analyses based on Apache Streams.
+- More official examples in source tree demonstrating integration of Apache
+  Streams with complementary technologies.
+- Drop remaining maven dependencies on java SDKs for accessing third-party
+  APIs in favor of HTTP/REST interfaces powered by Apache Juneau Remoteable
+  Annotations.
+- Improve the interfaces by which components are created, configured,
+  activated, and executed via SDK and CLI.
+- Reduce disparities between normalized activities and objects of like type
+  collected from various data sources.
+- Reduce disparities between the configuration objects that initialize similar
+  providers from various data sources.
+- Add official support for Schema.org and Activity Streams 2.0 data types.</pre>
+<h3 id="2018-04-18"><a href="2018/board_minutes_2018_04_18.html#attachment-BM">2018-04-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2018-04-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Apache Streams unifies a diverse world of digital profiles and online
+  activities into common formats and vocabularies, and makes these datasets
+  accessible across a variety of databases, devices, and platforms for
+  streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+- There are a lot of changes occurring in the APIs of our supported data
+  sources.  Due primarily to the EU's GDPR legislation, a user's ability to
+  collect profiles and posts from accounts other than the authenticated
+  account is being limited. On the other hand comprehensive data about the
+  authenticated account (sometimes via bulk export not via API) is becoming
+  richer, presenting an opportunity for the project to assist users in
+  awareness of the data collected about them by third-parties, and with data
+  portability between systems using bulk export archives.
+
+## Activity:
+- We are preparing to release Apache Streams 0.6.0 - the first to include a
+  binary artifact allowing users to run Streams classes from their terminal
+  without building the project or wrapping it's modules in custom code.
+- We ran a comprehensive audit of dependencies (including transitive
+  dependencies) and removed all items with undesirable licenses.  The license
+  audit now gets published to the website, and the maven plugins involved can
+  used to help us maintain our NOTICE file.
+- We revamped the way that configuration details are provided to classes
+  rather substantially, making it more flexible, powerful, and easier to
+  understand.
+- The secondary apache/streams-examples repository has been integrated into
+  apache/streams.
+
+## Health report:
+Streams graduated to TLP on July 19 2017.  New features and platform
+improvements are happening at a steady pace.  Adding committers and growing
+the PMC needs to be a focus this year.
+
+## PMC changes:
+None. There are currently 8 PMC members.
+
+## Committer base changes:
+None. There are currently 8 committers.
+
+## Releases:
+- Apache Streams 0.5.1 was released on January 09, 2018
+- Apache Streams 0.6.0 is targeted for release this month (April 2018)
+
+## Upcoming Project Initiatives:
+- Integrate new binary release with Apache Kibble, and with the Apache
+  Software Foundation instance of Kibble.
+- Add new providers that source streams from export archives of existing data
+  sources (twitter, facebook, google).
+- More tweets and blog posts of zeppelin notebooks demonstrating data
+  pipelines and analyses based on Apache Streams.
+- More official examples in source tree demonstrating integration of Apache
+  Streams with complementary technologies.
+- Drop remaining maven dependencies on java SDKs for accessing third-party
+  APIs in favor of HTTP/REST interfaces powered by Apache Juneau Remoteable
+  Annotations.
+- Improve the interfaces by which components are created, configured,
+  activated, and executed via SDK and CLI.- Reduce disparities between
+  normalized activities and objects of like type collected from various data
+  sources.
+- Reduce disparities between the configuration objects that initialize similar
+  providers from various data sources.
+- Add official support for Schema.org and Activity Streams 2.0 data types.</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#attachment-BN">2018-01-17</a> &mdash; Steve Blackmon<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Apache Streams unifies a diverse world of digital profiles and online
+  activities into common formats and vocabularies, and makes these datasets
+  accessible across a variety of databases, devices, and platforms for
+  streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+## Activity:
+- We have completed all known PMC setup, infra, code, and website refactoring
+  work due to graduation.
+- We now have streams.apache.org on CI/CD with no manual steps for the first
+  time ever.
+- We have completed our first TLP release, Apache Streams 0.5.1.
+- Apache Streams 0.5.1 adds code for interfacing with Twitter&rsquo;s new account
+  activity and enterprise search APIs, and removes our dependency on the
+  external twitter4j project (which had a category X json.org dependency)
+- Apache Kibble expressed interested in integrating Streams to collect social
+  media profiles and activity - a perfect use case and opportunity to grow the
+  community.
+- Several new faces submitted and reviewed pull requests this quarter.
+
+## Health report:
+Streams graduated to TLP on July 19 2017.  Activity and email traffic has been
+light, but new features and platform improvements are happening at a steady
+pace.
+
+## PMC changes:
+- None. There are currently 8 PMC members.
+
+ ## Committer base changes:
+- None. There are currently 8 committers.
+
+## Releases:
+- Apache Streams 0.5.1 was released on January 09, 2018
+- We now have four experienced release managers on the PMC
+
+## Mailing list activity:
+21 Emails sent during these 92 days, up 0 (0%) compared to previous 92 days. 6
+topics started during these 92 days, down 3 (-33%) compared to previous 92
+days. 6 Participants during these 92 days, down 5 (-45%) compared to previous
+92 days. Streams &gt; Board Report - January 2018 &gt; PonyMail.png
+https://s.apache.org/GTrn
+
+## JIRA Statistics:
+36 new, 28 resolved Streams &gt; Board Report - January 2018 &gt; Jira.png
+https://s.apache.org/plwc
+
+## Website Traffic (3 month)
+1141 sessions, up 20.11% compared to previous 3 months. 1014 users, up 17.77%
+compared to previous 3 months. Streams &gt; Board Report - January 2018 &gt; Streams
+Web Site Data January 2018.pdf https://s.apache.org/D0pl
+
+## Upcoming Project Initiatives:
+- Add official support for Schema.org and Activity Streams 2.0 data types.
+- Consolidate streams-examples into primary streams repository, simplifying
+  deployment and release process.
+- Drop remaining maven dependencies on java SDKs for accessing third-party
+  APIs in favor of HTTP/REST interfaces powered by Apache Juneau Remoteable
+  Annotations.
+- More tweets and blog posts of zeppelin notebooks demonstrating data
+  pipelines and analyses based on Apache Streams.
+- More official examples in source tree demonstrating integration of Apache
+  Streams with complementary technologies.
+- Improve the interfaces by which components are created, configured,
+  activated, and executed via SDK and CLI.
+- Official Binaries and Containers that can be integrated with Apache Kibble.
+- Reduce disparities between normalized activities and objects of like type
+  collected from various data sources.
+- Reduce disparities between the configuration objects that initialize similar
+  providers from various data sources.</pre>
+<h3 id="2017-10-18"><a href="2017/board_minutes_2017_10_18.html#attachment-BM">2017-10-18</a> &mdash; Steve Blackmon<a class="headerlink" href="#2017-10-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Apache Streams&nbsp;unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+##&nbsp;Activity:
+- Updates to the twitter integration enabling bi-directional data-flow and new
+applications, such as DM chatbots.
+- Our final graduation task remaining is to cease hosting the website from the
+incubator svn, we&rsquo;re working with infra on this.
+
+## Health report:
+- Streams graduated to&nbsp;TLP on July 19 2017.
+- Eight PPMC members have joined the new PMC.
+- Email activity been low since graduation, though pull request and code
+reviews have continued at pace.
+- Streams PMC needs to focus on increasing users and committers.
+
+## PMC changes:
+- None. There are currently 8 PMC members.
+
+## Committer base changes:
+- None. There are currently 8 committers.
+
+## Releases:
+- Prior release was 0.5-incubating on March 20, 2017
+- Next release will be 0.6.0 - discussion on list has started.
+
+## Mailing list activity: (3 month) 60 subscribers (47 to dev@ 13 to
+commits@). 21 emails sent by 10 people, down 47 (-69%) compared to previous 92
+days. 6 topics started during these 92 days, down&nbsp;18 (-75%) compared to
+previous 92 days. 10 Participants during these 92 days, down 4 (-28%) compared
+to previous 92 days. https://s.apache.org/nmFn
+
+## JIRA Statistics:&nbsp;(3 month) 21 new, 16 resolved https://s.apache.org/BcPL
+
+## Website activity: (3 month) 953 sessions, up 59.90% compared to previous 3
+months. 865 users, up 89.28% compared to previous 3 months.
+https://s.apache.org/fgno
+
+## Upcoming Project Initiatives:
+- Reduce disparities between normalized activities and objects of like type
+collected from various data sources.
+- Reduce disparities between the configuration objects that initialize similar
+providers from various data sources.
+- Improve the interfaces by which components are created, configured,
+activated, and executed via SDK and CLI.
+- Drop remaining maven dependencies on java SDKs for accessing&nbsp;third-party
+HTTP APIs in favor of interfaces&nbsp;powered by Apache Juneau (incubating)
+Remoteable Annotations.
+- Add official support for&nbsp;Schema.org&nbsp;and&nbsp;Activity Streams 2.0 data types.
+- More&nbsp;tweets and&nbsp;blog posts of zeppelin notebooks demonstrating data
+pipelines and analyses based on Apache Streams.
+- More official examples in source tree demonstrating integration of Apache
+Streams with complementary technologies.</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-BI">2017-09-20</a> &mdash; Steve Blackmon<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+- Apache Streams&nbsp;unifies a diverse world of digital profiles and online activities into common formats and vocabularies, and makes these datasets accessible across a variety of databases, devices, and platforms for streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+- There are no issues requiring board attention at this time.
+
+##&nbsp;Activity:
+- We have completed almost all known PMC setup, infra, code, and website refactoring work due to graduation.
+- The final task remaining is to stop hosting the website from the incubator svn.
+- We now have our pull requests under continuous integration via jenkins.
+
+## Health report:
+Streams graduated to&nbsp;TLP on July 19 2017. &nbsp;Eight PPMC members have joined the new PMC. &nbsp;Enthusiasm is strong and there is a lot of important work ahead.
+
+## PMC changes:
+- None. There are currently 8 PMC members.
+
+## Committer base changes:
+- None. There are currently 8 committers.
+
+## Releases:
+- Prior release was 0.5-incubating on March 20, 2017
+- Next release will be 0.6.0 - discussion on list has started.
+
+## Mailing list activity: (3 month)
+50 emails sent by 15 people, down 1 (-1%) compared to previous 92 days.
+9 topics started during these 92 days, down&nbsp;15 (-62%) compared to previous 92 days.
+16 Participants during these 92 days, up&nbsp;2 (14%) compared to previous 92 days.
+https://s.apache.org/QNOh
+
+## JIRA Statistics:&nbsp;(3 month)
+14 new, 15 resolved
+https://s.apache.org/Bm5T
+
+## Website activity: (3 month)
+800 sessions, up 9.44% compared to previous 3 months.
+728 users, up 46.5% compared to previous 3 months.
+https://s.apache.org/XGBW
+
+## Upcoming Project Initiatives:
+- Reduce disparities between normalized activities and objects of like type collected from various data sources.
+- Reduce disparities between the configuration objects that initialize similar providers from various data sources.
+- Improve the interfaces by which components are created, configured, activated, and executed via SDK and CLI.
+- Drop remaining maven dependencies on java SDKs for accessing&nbsp;third-party HTTP APIs in favor of interfaces&nbsp;powered by Apache Juneau (incubating) Remoteable Annotations.
+- Add official support for&nbsp;Schema.org&nbsp;and&nbsp;Activity Streams 2.0 data types.
+- More&nbsp;tweets and&nbsp;blog posts of zeppelin notebooks demonstrating data pipelines and analyses based on Apache Streams.
+- More official examples in source tree demonstrating integration of Apache Streams with complementary technologies.</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-BK">2017-08-16</a> &mdash; Stephen D Blackmon<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+- Apache Streams unifies a diverse world of digital profiles and online
+activities into common formats and vocabularies, and makes these datasets
+accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+## Activity:
+
+- Most recent activity has been focused on graduation and TLP
+post-graduation tasks.
+- We have completed most PMC setup and infra tasks; some code and website
+refactoring work remains.
+
+## Health report:
+
+Streams graduated to TLP on July 19 2017.  Eight PPMC members have joined
+the new PMC.  Enthusiasm is strong and there is a lot of important work
+ahead.
+
+## PMC changes:
+- PMC has been just formalized as part of the graduation resolution.
+- Currently 8 PMC members.
+
+## Committer base changes:
+
+- PMC has been just formalized as part of the graduation resolution.
+- Currently 8 committers.
+
+## Releases:
+
+- Prior release was 0.5-incubating on March 20, 2017
+
+- Next release will be 0.6.0 - discussion on list has started.
+
+## Mailing list activity: (3 month)
+
+81 Emails sent during these 92 days, up 32 (65%) compared to previous 92
+days.
+
+25 topics started during these 92 days, up 10 (66%) compared to previous 92
+days.
+17 Participants during these 92 days, up 6 (54%) compared to previous 92
+days.
+
+https://s.apache.org/yYqm
+
+## JIRA Statistics: (3 month)
+
+13 new, 7 resolved
+
+https://s.apache.org/72GL
+
+## Upcoming Project Initiatives:
+
+- Work to reduce disparities between normalized activities and objects of
+like type collected from various data sources.
+
+- Work to reduce disparities between the configuration objects that
+initialize similar providers from various data sources.
+
+- Drop remaining maven dependencies on java SDKs for accessing third-party
+HTTP APIs in favor of interfaces powered by Apache Juneau (incubating)
+Remoteable Annotations.
+
+- Add official support for Schema.org &lt;http://schema.org/&gt; and Activity
+Streams 2.0 data types.
+
+- More tweets and blog posts of zeppelin notebooks demonstrating data
+pipelines and analyses based on Apache Streams.
+
+- More official examples in source tree demonstrating integration of Apache
+Streams with complementary technologies.</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#streams">2017-06-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) unifies a diverse world of digital profiles and
+online activities into common formats and vocabularies, and makes these
+datasets accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity. 2. Demonstrate a consistent release
+schedule. 3. Participation of project community within related
+standards-bodies and Apache projects.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+The community has completed an internal assessment using the Apache Maturity
+Model to identify gaps that should be addressed before graduation.
+
+The community is working against a task list of graduation TODOs:
+https://cwiki.apache.org/confluence/display/STREAMS/Graduation+TODOs
+
+It is likely that Streams will pursue graduation to TLP during the coming
+quarter.
+
+How has the community developed since the last report?
+
+Dev List
+57 emails sent by 12 people, divided into 20 topics
+
+Web Page
+820 Sessions (up ~75%), 508 Users (up ~50%), 1507 Pageviews (up ~30%).
+
+Public Slack: apachestreams.slack.com
+1202 Messages, 11 Files
+
+Committers Slack: the-asf.slack.com #dev-streams 157 Messages, 3 Files
+
+How has the project developed since the last report?
+
+Source Control
+https://github.com/apache/incubator-streams Excluding merges, 4 authors have
+pushed 29 commits to master. On master, 165 files have changed and there have
+been 5,891 additions and 1,647 deletions.
+
+https://github.com/apache/incubator-streams-examples Excluding merges, 3
+authors have pushed 4 commits to master. On master, 10 files have changed and
+there have been 18 additions and 72 deletions.
+
+JIRA
+
+24 issues closed with 0.5-incubating release 7 issues closed after
+0.5-incubating release 18 new issues opened this period
+
+Date of last release:
+
+2017-03-20 : 0.5-incubating release
+
+When were the last committers or PMC members elected?
+
+2017-04-14: Trevor Grant elected as committer / PPMC member
+
+Signed-off-by:
+
+ [X](streams) Matt Franklin
+    Comments: The community is small, but diverse and dedicated.  I look
+      forward to seeing them move past the incubator and hopefully continuing
+      to add new contributors.
+ [X](streams) Ate Douma
+    Comments:
+ [X](streams) Suneel Marthi
+    Comments:</pre>
+<h3 id="2017-03-15"><a href="2017/board_minutes_2017_03_15.html#streams">2017-03-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-03-15" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity.
+2. Demonstrate a consistent release schedule.
+3. Participation of project community within related standards-bodies
+   and Apache projects.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+The podling has satisfied all of the requirements as laid down in the Apache
+Maturity Model and is ready to graduate to TLP.
+
+The Apache Maturity Model Assessment for Streams can be found at:
+https://cwiki.apache.org/confluence/display/STREAMS/Apache+Maturity+Model+Assessment+for+Streams
+
+How has the community developed since the last report?
+
+Dev List
+60 emails sent by 14 people, divided into 27 topics.
+
+Web Page
+844 Sessions, 631 Users, 2183 Pageviews.
+
+How has the project developed since the last report?
+
+Source Control
+https://github.com/apache/incubator-streams
+
+Excluding merges, 5 authors have pushed 46 commits to master. On master,
+446 files have changed and there have been 22,388 additions and 13,129
+deletions.
+
+https://github.com/apache/incubator-streams-examples
+
+Excluding merges, 2 authors have pushed 29 commits to master and 2
+commits to all branches. On master, 79 files have changed and there
+have been 2655 additions and 2458 deletions.
+
+Team presently has a 0.5-incubating release candidate out for PPMC voting
+and will be pushing the same for IPMC vote the week of March 5, 2017.
+
+Since September 2016, the project has had 4 releases and has been having
+consistent activity.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[X] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2016-12-26
+
+When were the last committers or PPMC members elected?
+
+2016-10-27: Joey Frazee elected as committer / PPMC member
+2016-09-28: Suneel Marthi elected as mentor / PPMC member
+
+Signed-off-by:
+
+[X](streams) Matt Franklin
+   Comments:
+
+      The podling has a small, but invested community from multiple
+      different companies.  I agree with Suneel that we should consider
+      graduation.
+
+[X](streams) Ate Douma
+   Comments:
+
+      Getting close to termination a little over 6 months ago because of
+      lack of activity, the podling has remarkably revived and revitalized
+      itself, and IMO now is in good shape, ready to graduate.
+
+[X](streams) Suneel Marthi
+   Comments:
+
+      This podling is ready to graduate and has fulfilled all the criteria
+      as laid down in the Apache Maturity Model Assessment.  The discussion
+      to graduate the podling can start off once the in progress Streams
+      0.5-incubating release is through.</pre>
+<h3 id="2016-12-21"><a href="2016/board_minutes_2016_12_21.html#streams">2016-12-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-12-21" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) unifies a diverse world of digital profiles
+and online activities into common formats and vocabularies, and makes
+these datasets accessible across a variety of databases, devices, and
+platforms for streaming, browsing, search, sharing, and analytics
+use-cases.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity.
+2. Demonstrate a consistent release schedule.
+3. Participation of project community within related standards-bodies
+  and Apache projects.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+The community has begun an internal assessment using the Apache
+Maturity Model to identify gaps that should be addressed before
+graduation.
+
+How has the community developed since the last report?
+
+Dev List
+117 emails sent by 16 people, divided into 32 topics.
+
+Web Page
+498 Sessions (up ~150%), 341 Users (up ~35%), 1178 Pageviews (up 10%).
+
+How has the project developed since the last report?
+
+Source Control
+https://github.com/apache/incubator-streams
+
+Excluding merges, 2 authors have pushed 17 commits to master and 17
+commits to all branches. On master, 816 files have changed and there
+have been 36,280 additions and 38,567 deletions.
+
+https://github.com/apache/incubator-streams-examples
+
+Excluding merges, 2 authors have pushed 2 commits to master and 2
+commits to all branches. On master, 8 files have changed and there
+have been 323 additions and 301 deletions.
+
+Steve Blackmon presented Apache Streams at Shark Tank, ApacheCon
+Europe, Seville, Spain on Nov 18, 2016.
+
+Team is presently working on 0.4.1-incubating release scheduled for
+the week of Dec 5, 2016.
+
+Work has been scoped out for an upcoming 0.5-incubating release
+scheduled for later this year.
+
+JIRA
+
+52 issues closed with 0.4-incubating release
+12 issues closed after 0.4-incubating release
+16 new issues opened in November.
+
+Date of last release:
+
+2016-11-11 : 0.4-incubating release
+
+When were the last committers or PMC members elected?
+
+2016-10-27: Joey Frazee elected as committer / PPMC member
+2016-09-28: Suneel Marthi elected as mentor / PPMC member
+
+Signed-off-by:
+
+[X](streams) Matt Franklin
+[X](streams) Ate Douma
+[X](streams) Suneel Marthi
+
+Shepherd/Mentor notes:
+
+Suneel Marthi:
+
+  There's been lot of activity on the project since Sep 2016 and the
+  project has had 2 releases since then. The project's on track for
+  TLP graduation.</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#streams">2016-11-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) unifies a diverse world of digital profiles and
+online activities into common formats and vocabularies, and makes these
+datasets accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity.
+2. Demonstrate a consistent release schedule.
+3. Participation of project community within related standards-bodies and
+  Apache projects.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+The project is now on a monthly reporting schedule to monitor effective
+progress in growing the community and active participation.
+
+How has the community developed since the last report?
+
+dev@streams.incubator.apache.org
+115 emails (up &gt;100%) sent by 16 people (+1), divided into 36 topics (up
+400%).
+
+http://streams.incubator.apache.org
+196 Sessions (up ~60%), 247 Users (up ~35%), 1110 Pageviews (up &gt;100%).
+
+How has the project developed since the last report?
+
+https://github.com/apache/incubator-streams-master
+Excluding merges, 4 authors (+3) have pushed 32 commits (up ~375%) to
+master.  On master, 22 files (up 250%) have changed.
+
+https://github.com/apache/incubator-streams
+Excluding merges, 7 authors (+6) have pushed 106 commits (up &gt;1000%) to
+master.  On master, 868 files (up &gt;1000%) have changed.
+
+https://github.com/apache/incubator-streams-examples
+Excluding merges, 3 authors (+2) have pushed 7 commits (+1) to master.
+On master, 24 files have changed.
+
+52 Issues closed for the upcoming 0.4-incubating release
+35 new Issues opened (+28)
+
+Date of last release:
+
+2016-10-03 : 0.3-incubating release
+
+When were the last committers or PMC members elected?
+
+2016-10-27: Joey Frazee elected as committer / PPMC member
+2016-09-28: Suneel Marthi elected as mentor / PPMC member
+
+Signed-off-by:
+
+[X](streams) Ate Douma
+[X](streams) Matt Franklin
+[X](streams) Suneel Marthi
+
+Shepherd/Mentor notes:
+
+Suneel Marthi:
+
+  Healthy community activity, following the 0.3 release on Oct 3, 0.4
+  release is presently in the works and work has been scoped out for the 0.5
+  release.
+
+Ate Douma:
+
+  The Streams podling is getting back on track, making good progress:
+
+  * new community participants
+  * good mailing list discussions
+  * elected a new committer and ppmc member (Joey)
+  * a new release candidate 0.4-incubating is in progress</pre>
+<h3 id="2016-10-19"><a href="2016/board_minutes_2016_10_19.html#streams">2016-10-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-10-19" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) unifies a diverse world of digital profiles and
+online activities into common formats and vocabularies, and makes these
+datasets accessible across a variety of databases, devices, and platforms for
+streaming, browsing, search, sharing, and analytics use-cases.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+ 1. Community growth and PMC maturity.
+ 2. Demonstrate a consistent release schedule.
+ 3. Participation of project community within related standards-bodies and
+   Apache projects.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+ A vote to retire the project was initiated but cancelled after several
+ individuals on the IPMC list expressed new interest in helping the project
+ continue to grow and eventually graduate. The project is now on a monthly
+ reporting schedule to monitor effective progress in growing the community
+ and active participation.
+
+How has the community developed since the last report?
+
+ dev@streams.incubator.apache.org
+ 46 emails sent by 15 people, divided into 9 topics.
+
+ http://streams.incubator.apache.org
+ 196 Sessions, 170 Users, 512 Pageviews
+
+How has the project developed since the last report?
+
+ https://github.com/apache/incubator-streams-master
+ Excluding merges, 1 author has pushed 9 commits to master and 9 commits to
+   all branches.
+ On master, 8 files have changed and there have been 114 additions and 193
+   deletions.
+
+ https://github.com/apache/incubator-streams
+ Excluding merges, 1 author has pushed 6 commits to master and 6 commits to
+   all branches.
+ On master, 61 files have changed and there have been 85 additions and 66
+   deletions.
+
+ https://github.com/apache/incubator-streams-examples
+ Excluding merges, 1 author has pushed 12 commits to master and 15 commits to
+   all branches.
+ On master, 67 files have changed and there have been 549 additions and 761
+   deletions.
+
+ 92 Issues closed with release of 0.3-incubating
+ 7 new Issues opened
+
+Date of last release:
+
+ 2016-10-03 : 03-incubating release
+
+When were the last committers or PMC members elected?
+
+ 2016-09-28: Suneel Marthi elected as mentor / PMC member
+
+Signed-off-by:
+
+ [X](streams) Ate Douma
+ [ ](streams) Matt Franklin
+ [X](streams) Suneel Marthi
+
+Shepherd/Mentor notes:
+ Ate Douma: I see promising improvements with open discussions about next
+   steps
+ and future plans, both technically and to broaden the community involvement.
+ It's still wait and see however if and how the community does pick this up.</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#streams">2016-09-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) unifies a diverse world of digital profiles
+and online activities into common formats and vocabularies, and makes
+these datasets accessible across a variety of databases, devices, and
+platforms for streaming, browsing, search, sharing, and analytics use-cases.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity.
+2. Demonstrate a consistent release schedule.
+3. Participation of project community within related standards-bodies and
+   Apache projects.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No commits or mailing list activity since the last report.
+
+How has the community developed since the last report?
+
+No commits or mailing list activity since the last report.
+
+How has the project developed since the last report?
+
+No commits or mailing list activity since the last report.
+
+No issues resolved
+
+Date of last release:
+
+2015-04-26
+
+When were the last committers or PMC members elected?
+
+2015-02-23: Robert Douglas elected as committer / PMC member
+
+Signed-off-by:
+
+[ ](streams) Matt Franklin
+[X](streams) Ate Douma
+[ ](streams) Craig McClanahan
+
+Shepherd/Mentor notes:
+
+Ate Douma:
+
+  As indicated in the report, the activity and community of the project
+  has dwindled down to practically zero.  As a consequence I've now raised
+  the question on the dev list if better to retire the project. Unless
+  this triggers some serious activity and interest from the community, I
+  expect an actual vote to retire before the next board report.</pre>
+<h3 id="2016-06-15"><a href="2016/board_minutes_2016_06_15.html#streams">2016-06-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-06-15" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) unifies a diverse world of digital profiles
+and online activities into common formats and vocabularies, and makes
+these datasets accessible across a variety of databases, devices, and
+platforms for streaming, browsing, search, sharing, and analytics use-cases.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity.
+2. Demonstrate a consistent release schedule.
+3. Participation of project community within related standards-bodies and
+   Apache projects.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+# of contributors submitting and reviewing pull requests and participating
+in discussions is still too low.  Getting the attention of developers who
+work with social datasets and highlighting the ways that adopting and
+contributing to streams could provide value for their projects remains our
+biggest challenge and opportunity in community growth.
+
+How has the community developed since the last report?
+
+Several recently in-active project contributors participated again this
+quarter.
+
+How has the project developed since the last report?
+
+http://streams.incubator.apache.org has been completely overhauled, and
+following several talks given at ApacheCon NA 2016, a new blog post, and a
+renewed focus on marketing we&rsquo;re beginning to see a payoff in the form of
+a consistent level of unique visitors, according to google analytics.
+
+25 Issues resolved + 4 Issues resolved by open pull requests
+
+Date of last release:
+
+2015-04-26
+
+When were the last committers or PMC members elected?
+
+2015-02-23: Robert Douglas elected as committer / PMC member
+
+Signed-off-by:
+
+[ ](streams) Matt Franklin
+[X](streams) Ate Douma
+[ ](streams) Craig McClanahan</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#streams">2016-03-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) unifies a diverse world of digital profiles
+and online activities into common formats and vocabularies, and makes
+these datasets accessible across a variety of databases, devices,
+and platforms for streaming, browsing, search, sharing, and analytics use-cases.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity.
+2. Demonstrate a consistent release schedule.
+3. Collaborate with other Apache projects to improve integrations
+   with their software.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+# of contributors submitting and reviewing pull requests has remained
+low this quarter.
+
+How has the community developed since the last report?
+
+no demonstrable progress in community growth.
+
+How has the project developed since the last report?
+
+5 issues created / 1 resolved this quarter
+at mentors suggestion, this quarter the project focused on
+documenting project purpose, philosophies, place in ecosystem,
+how to get started, etc... as part of a web site overhaul.
+the new version is hosted at streams.staging.apache.org and will go
+live at streams.incubator.apache.org soon.
+
+Date of last release:
+
+ 2015-04-26
+
+When were the last committers or PMC members elected?
+
+2015-02-23: Robert Douglas elected as committer / PMC member
+
+Signed-off-by:
+
+[ ](streams) Matt Franklin
+[X](streams) Ate Douma
+[ ](streams) Craig McClanahan</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#streams">2015-12-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) is a lightweight (yet scalable) framework for
+ActivityStreams.  Streams contains a commons for Rest API connectors and
+data schemas, and support normalization of digital events and entities into
+the industry-standard Activity Streams format.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity.
+2. Demonstrate a consistent release schedule.
+3. Collaborate with other Apache projects to improve integrations
+   with their software.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+# of contributors submitting and reviewing pull requests has remained
+low this quarter. mentor participation has been low. the last PPMC vote
+for a release had no -1's but failed to gain the necessary support for
+submission to the IPMC.
+
+How has the community developed since the last report?
+
+~25 ApacheCon Europe attendees came to project presentation, but otherwise
+no measurable progress in community growth.
+
+How has the project developed since the last report?
+
+34 issues created / 21 merged / 1 in pull request this quarter
+
+Date of last release:
+
+ 2015-04-26
+
+When were the last committers or PMC members elected?
+
+2015-02-23: Robert Douglas elected as committer / PMC member
+
+Signed-off-by:
+
+[ ](streams) Matt Franklin
+[X](streams) Ate Douma
+[ ](streams) Craig McClanahan
+
+Shepherd/Mentor notes:
+
+Ate Douma (ate):
+
+  As reported above, mentor support has been too low, including my own.
+  I find the dwindling down of participation and contributions other than
+  from only one (very) active committer (Steve Blackmon) worrisome.
+  More or even primary focus should be turned towards community
+  development instead of only churning out code.
+  I've suggested some concrete steps for this and propose to give the
+  project a bit more time to try building up a community and more
+  contributor involvement. As a mentor I'll try to help out more as well.
+  However, if there is no substantial improvement within one or two
+  reporting periods, it might be better to consider retirement instead.
+
+Timothy Chen (tnachen):
+
+  Seems like there is one active committer as mentioned, and the majority
+  of the mailing list activity is from JIRA and github from the same
+  committer as well.  Also second that will need to consider retirement if
+  this continues.</pre>
+<h3 id="2015-09-16"><a href="2015/board_minutes_2015_09_16.html#streams">2015-09-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2015-09-16" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) is a lightweight (yet scalable) framework for
+ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community growth and PMC maturity.
+2. Demonstrate a consistent release schedule.
+3. Collaborate with other Apache projects to improve integrations
+   with their software.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+# of contributors submitting and reviewing pull requests has been
+uncharacteristically low in 2015.
+
+How has the community developed since the last report?
+
+# of contributors submitting and reviewing pull requests has been
+uncharacteristically low in 2015.
+
+How has the project developed since the last report?
+
+26 issues created / 21 merged / 4 in pull request this quarter
+
+Date of last release:
+
+ 2015-04-26
+
+When were the last committers or PMC members elected?
+
+2015-02-23: Robert Douglas elected as committer / PMC member
+
+Signed-off-by:
+
+[ ](streams) Matt Franklin
+[X](streams) Ate Douma
+[ ](streams) Craig McClanahan
+
+Shepherd/Mentor notes:
+
+John D. Ament (johndament):
+
+  Most mailing list activity is JIRA/Github.  Little live communication
+  occurring.</pre>
+<h3 id="2015-06-17"><a href="2015/board_minutes_2015_06_17.html#streams">2015-06-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2015-06-17" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server framework for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+  1.  Community growth and PMC maturity.
+  2.  Demonstrate a consistent release schedule.
+  3.  Collaborate with other Apache projects to improve integrations with
+      their software.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  # of contributors submitting and reviewing pull requests dropped this quarter.
+
+How has the community developed since the last report?
+
+  # of contributors submitting and reviewing pull requests dropped this quarter.
+
+How has the project developed since the last report?
+
+  1. second comprehensive source release
+  2. official examples source repository contains 6 well-documented
+     ready-to-run streams
+  3. official examples source repository in vote for release
+  4. 40 issues created / 6 resolved / 13 in pull request this quarter
+
+Date of last release:
+
+  2015-04-26
+
+When were the last committers or PMC members elected?
+
+  2015-02-23: Robert Douglas elected as committer / PMC member
+
+Signed-off-by:
+
+  [ ](streams) Matt Franklin
+  [ ](streams) Ate Douma
+  [ ](streams) Craig McClanahan
+
+Shepherd/Mentor notes:</pre>
+<h3 id="2015-03-18"><a href="2015/board_minutes_2015_03_18.html#streams">2015-03-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2015-03-18" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) is a lightweight (yet scalable) framework for
+ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1.  Community growth and PMC maturity.
+2.  Demonstrate a consistent release schedule.
+3.  Increase quality of code, documentation, and automated testing.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+No.
+
+How has the community developed since the last report?
+
+Two individuals contributed pull requests / pull request reviews for the
+first time.
+
+How has the project developed since the last report?
+
+1. first comprehensive source release
+2. creation of an official examples source repository
+   (git://git.apache.org/incubator-streams-examples.git) and jenkins job
+3. one example has been merged, one is in pull request, three are
+   in-progress
+4. 35 issues created, 23 issues closed so far in 2015
+
+Date of last release:
+
+2015-02-02: Streams Project v0.1-incubating released.
+
+When were the last committers or PMC members elected?
+
+2015-02-23: Robert Douglas elected as committer / PMC member
+
+Signed-off-by:
+
+[x](streams) Matt Franklin
+[x](streams) Ate Douma
+[ ](streams) Craig McClanahan</pre>
+<h3 id="2014-12-17"><a href="2014/board_minutes_2014_12_17.html#streams">2014-12-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-12-17" title="Permalink">&para;</a></h3>
+<pre>Apache Streams (incubating) is a lightweight (yet scalable) framework for
+ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+  The project provides a framework for abstracting away individual data
+  schemas and API protocols from solutions built to collect, publish,
+  process, and analyze digital activity data, as well as a community-
+  driven process for determining best practice usage of the ActivityStreams
+  specification with real-world datasets - valuing working, tested,
+  adaptable, useful code over strict adherence to existing specs.
+  Importantly, the project does not impose one execution framework -
+  modules built to Apache Streams interfaces and coding standards may
+  be instantiated within multiple JVM-based runtime containers, including
+  popular &lsquo;big-data' frameworks.
+
+Three most important issues to address in the move towards graduation:
+
+  1.  Establish and maintain a consistent release process.
+  2.  Improve quality of code, tests, documentation, and examples.
+  3.  PPMC must relieve project mentors of all responsibility for the
+      project's adherence to the Apache Way and long-term viability.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  No.
+
+How has the community developed since the last report?
+
+  Ryan Ebanks was voted in as committer and PPMC member on 10-17-2014.
+
+How has the project developed since the last report?
+
+  Since the last report, 50 pull requests were submitted and merged to
+  master, 43 issues were marked resolved, and 78 issues were created.
+
+Date of last release:
+
+  streams-master:0.1-incubating Jan-2013
+  incubator-streams:0.1-incubating in progress, ETC Dec-2014
+
+When were the last committers or PMC members elected?
+
+  Ryan Ebanks, committer and PPMC, 10-17-2014
+
+Signed-off-by:
+
+  [ ](streams) Matt Franklin
+  [X](streams) Ate Douma
+  [ ](streams) Craig McClanahan</pre>
+<h3 id="2014-10-15"><a href="2014/board_minutes_2014_10_15.html#streams">2014-10-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-10-15" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Community Growth
+2. PPMC picks up the duties required of it, rather than rely on the mentors
+   or let them languish
+3. Generate Documentation
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+N/A
+
+How has the community developed since the last report?
+
+The community engagement has been strong for this period. The list serve has
+had multiple discussions around project standards and generating
+documentation.  Also the number of community members comment on pull requests
+has increased.
+
+How has the project developed since the last report?
+
+20 pull requests have been open in Sept.
+15 pull requests have been merged in Sept.
+55 comments have been made on those pull requests
+6 community members have opened pull requests in Sept.
+
+Date of last release:
+
+2013-01-09
+
+When were the last committers or PMC members elected?
+
+2014-01-14 (Carol Hansen)
+
+Signed-off-by:
+
+[x](streams) Matt Franklin
+[x](streams) Ate Douma
+[ ](streams) Craig McClanahan</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#streams">2014-06-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Growing the community
+  2. Consolidate codebase and produce a release
+  3. Continue to implement the Apache way and community decision making
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  None
+
+How has the community developed since the last report?
+
+  There are contributions from new individuals and an increase in new faces
+  on the dev list.
+
+How has the project developed since the last report?
+
+  There has been a significant increase in development and communication on
+  the dev list; but, the community still needs to grow in size and adoption
+  of the Apache Way.
+
+Date of last release:
+
+  2013-01-09
+
+When were the last committers or PMC members elected?
+
+  2014-01-14 (Carol Hansen)
+
+Signed-off-by:
+
+  [ ](streams) Matt Franklin
+  [x](streams) Ate Douma
+  [ ](streams) Craig McClanahan</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#streams">2014-03-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Growing the active developer community
+2. Making a secondary incubator release
+3. Develop concrete use cases and providing tutorials for users
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+Since the last report we have admitted a new committer Carol Hansen, who
+has provided an interface for streams. We have started discussions on
+modules to possible incorporate into Streams, which Steve Blackmon has
+spearheaded. We have also received pull requests from outside developers
+and started a migration from svn to git. Discussions have also begun on
+schema clarification which is a pressing issue as the project becomes
+standardized.
+
+How has the project developed since the last report?
+
+A substantial commit was made by Steve Blackmon including a Twitter
+Firehose attachment and a Apache Storm. It has laid the ground work for
+additional attachments. A Lucene connector and Elastic Search connector
+are being planned.
+
+Date of last release:
+
+2013-01-09
+
+When were the last committers or PMC members elected?
+
+2014-01-14 (Carol Hansen)
+
+Signed-off-by:
+
+[x](streams) Matt Franklin
+[x](streams) Ate Douma
+[ ](streams) Craig McClanahan</pre>
+<h3 id="2013-12-18"><a href="2013/board_minutes_2013_12_18.html#streams">2013-12-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-12-18" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Growing the active developer community
+  2. Making our second incubating release
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+  Received and incorporated community code contributions from Carol Hansen
+  for Streams Web interface.
+
+How has the project developed since the last report?
+
+  Switched to using Apache Cassandra for default persistent storage.
+  Very good community based architectural discussions, like about using
+  Apache Camel vs Web Services vs SpringMVC, possible integration of Apache
+  Storm, etc.
+  Evaluation of alternatives done in separate branch from trunk.
+
+
+Date of last release:
+
+  2013-01-09
+
+When were the last committers or PMC members elected?
+
+  2013-07-18 (Danny Sullivan)
+
+Signed-off-by:
+
+  [X](streams) Matt Franklin
+  [X](streams) Ate Douma
+  [ ](streams) Craig McClanahan</pre>
+<h3 id="2013-09-18"><a href="2013/board_minutes_2013_09_18.html#streams">2013-09-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-09-18" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Growing the active developer community
+2. Making our second incubating release
+3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+The community has welcomed one new committer, Danny Sullivan, to the team.
+
+
+How has the project developed since the last report?
+
+Architectural discussions (e.g.: handling issues of condensing unusually
+high volume/noisy streams, publisher identification, message splitting,
+etc.) continue to happen on-list and provoke thoughtful responses. We have
+also heard from a number of outside individuals about issues and questions
+related to deployment of our first incubating release. Several of these
+have turned into deeper relationships including the addition of Danny
+Sullivan as a committer/PPMC member last month. Streams is now working to
+create our second incubating release.
+
+Date of last release:
+
+2013-01-09
+
+When were the last committers or PMC members elected?
+
+2013-07-18
+
+Signed-off-by:
+
+[ ](streams) Matt Franklin
+[ ](streams) Ate Douma
+[ ](streams) Craig McClanahan
+
+Shepherd notes:
+
+(rvs) Look like project is on track. Nothing jumped out at me as requiring
+any special attention, except it would be nice to have to have a second
+release out (since the first release was done immediately after entering an
+incubation).</pre>
+<h3 id="2013-06-19"><a href="2013/board_minutes_2013_06_19.html#streams">2013-06-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-06-19" title="Permalink">&para;</a></h3>
+<pre> Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Diverse participation in development.  More of the community
+needs to be actively engaged.
+  2. Increase the codebase
+  3. Develop a larger community.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware of?
+Not at this time
+
+How has the community developed since the last report?
+Streams was discussed at the Apache BarCamp in Boston during the month of May.
+
+How has the project developed since the last report?  Some discussions
+have occurred on list for improved documentation for new users as well
+as some architectural discussion.  After a period of inactivity, the
+discussions have picked up as of late.
+
+Please check this [ ] when you have filled in the report for Streams.
+
+Signed-off-by:
+Matt Franklin: [x](streams)
+Ate Douma: [x](streams)
+Craig McClanahan: [ ](streams)
+Andrew Hart: [ ](streams)
+
+Shepherd notes:</pre>
+<h3 id="2013-03-20"><a href="2013/board_minutes_2013_03_20.html#streams">2013-03-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-03-20" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+ 1. Diverse participation in development.  More of the community needs
+ to be actively engaged.
+ 2. Increase the codebase
+ 3. Develop a larger community.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+Not at this time
+
+How has the community developed since the last report?
+Craig McClanahan gave a presentation on Apache Streams at ApacheCon
+North America.
+
+How has the project developed since the last report?
+Discussions initiated at ApacheCon have recently been continued on the
+list and the major issues are being addressed.
+
+Signed-off-by:
+Matt Franklin: [X](streams)
+Ate Douma: [X](streams)
+Craig McClanahan: [ ](streams)
+Andrew Hart: [ ](streams)
+
+
+Shepherd notes:</pre>
+<h3 id="2013-02-20"><a href="2013/board_minutes_2013_02_20.html#streams">2013-02-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-02-20" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Diverse participation in development.  More of the community needs to
+     be actively engaged.
+  2. Increase the codebase
+  3. Develop a larger community.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to
+be aware of?
+Not at this time
+
+How has the community developed since the last report?
+Discussions are starting to include a wider group of participants.
+
+How has the project developed since the last report?
+The community successfully voted on a new logo.
+Streams had its first minor release (Streams Master POM 0.1-incubating)
+
+Signed-off-by:
+Matt Franklin: [X](streams)
+Ate Douma: [X](streams)
+Craig McClanahan: [ ](streams)
+
+
+Shepherd notes:</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#streams">2013-01-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams has been incubating since 2012-11-20.
+
+Three most important issues to address in the move towards graduation:
+
+1. Getting started ;)
+2. Build a code base
+3. Build a community
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+How has the community developed since the last report?
+
+No changes
+
+How has the project developed since the last report?
+
+Most infrastructural services like mailing lists, svn, website, wiki
+and JIRA are now setup.
+
+First code has been committed and work is underway to get a first minimal
+release done ASAP. We will thereafter strive for a monthly release cycle.
+
+Next steps:
+* Select a Streams logo.
+* Get a first initial release out.
+* Start building up the code base.
+
+Signed-off-by:
+Matt Franklin: [X](streams)
+Ate Douma: [X](streams)
+Craig McClanahan: [ ](streams)
+Andrew Hart: [ ](streams)
+
+Shepherd notes:</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#streams">2012-12-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>Apache Streams is a lightweight server for ActivityStreams.
+
+Streams just entered incubation on November 20 2012, this is our first board
+report.
+
+Mailing lists, SVN and user accounts have been created or are pending request.
+
+Website creation and management is underway, using cms.apache.org, but
+pending some INFRA tasks.
+
+Discussion has started on topics like what wiki to use and about ideas for a
+logo.
+
+Next steps:
+ * Get needed services like wiki, issue tracking etc. setup.
+ * Get the Streams website ready for publishing and select a Streams logo.
+ * Get started on importing, verifying and accepting the initial code donation.
+
+Signed-off-by: ate, mfranklin, craigmcc, ahart</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

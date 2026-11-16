@@ -1,0 +1,2736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Iceberg | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Iceberg';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Iceberg';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Iceberg</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="iceberg">Iceberg<a class="headerlink" href="#iceberg" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-05-20</td>
+<td><a href="2020/board_minutes_2020_05_20.html#section-7G">Appointed Ryan Blue</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-05-20</td>
+<td><a href="2020/board_minutes_2020_05_20.html#section-7G">Establish the Apache Iceberg Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-AK">2026-06-17</a> &mdash; Ryan Blue<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (6 years ago)
+There are currently 39 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Prashant Singh on 2026-02-23.
+- Andrei Tserakhau was added as committer on 2026-04-28
+- Shawn Chang was added as committer on 2026-04-13
+
+## Project Activity:
+Releases
+- Go 0.6.0 was released on 2026-05-28
+- Java 1.11.0 was released on 2026-05-20
+- Java 1.10.2 was released on 2026-05-18
+- Rust 0.9.1 was released on 2026-05-06
+- Rust 0.9.0 was released on 2026-03-18
+
+Specs:
+- Created drafts for expressions exchange and an embedded bitmap format
+- REST protocol: Added list/load for functions, unregister table, S3 signing,
+  and clarified identifier handling. Read restrictions are close to completion
+- v4 tables: added relative path support and columnar stats to the spec, added
+  column overwrite and append to scope
+- Indexes: determined scope, definition is progressing
+
+Java
+- Added new CI validation for Jars in bundled artifacts
+- Thoroughly reviewed LICENSE and NOTICE for 1.10 and 1.11 releases
+- Kafka connect publishing is blocked until LICENSE/NOTICE is fixed
+- Adding classes to support v4: TrackedFile, Tracking, etc.
+- Spark: Added variant shredding
+- Flink: Added variant support +shredding
+- Added FileIO to the scan API for server-side planning to inject FileIO config
+
+Python:
+- Added support for Python 3.14 to CI and build
+- Added support for paginated REST catalog listing
+- Added View object API and REST catalog interactions
+
+Rust:
+- Added encryption manager with KEK/DEK envelope encryption
+- Implemented AES-GCM stream encryption
+- Updated to honor metadata.json compression settings
+
+Go:
+- Added golden round-trip tests
+- Added variant type support (non-shredded)
+- Added maintenance CLI command
+- Added OCC conflict validation framework with isolation levels and validators
+- Added DV support for v3
+- Added row lineage support for v3
+- Added write-default and initial-default support during Arrow projection
+
+C++:
+- Added Puffin file reader and writer with compression support
+- Adding support for merge-based snapshot operations
+- Added delete filter support for merge-on-read
+- Added changelog scanning
+
+## Community Health:
+The community continues to be healthy.
+
+Iceberg Summit 2026 was a success! Videos of talks are posted on the youtube
+channel. Discussion for 2027 has already begun. We are also looking forward to
+the Lakehouse Day EU that just announced several Iceberg sessions.
+
+There is a lot of progress happening on new specs for storing/exchanging
+expressions, indexes, v4 tables, and catalog interaction. The community also
+quickly solved CI resource consumption.
+
+The community also addressed 44 security reports this quarter. The majority were
+AI-generated and specious. This put a notable strain on PMC bandwidth, despite
+updating our procedure to streamline evaluating AI-generated reports. Even using
+LLM-based tools to assist in evaluation, it took real human time to understand
+both analyses (original and triaged) and respond. We don't have a great solution
+for this problem yet.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-AL">2026-03-18</a> &mdash; Ryan Blue<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (6 years ago)
+There are currently 37 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- Prashant Singh was added to the PMC on 2026-02-23
+- Sung Yun was added to the PMC on 2026-02-23
+- Drew Gallardo was added as committer on 2026-02-23
+
+## Project Activity:
+
+Releases:
+- Go 0.5.0 was released on 2026-03-05
+- PyIceberg 0.11.1 was released on 2026-03-02
+- PyIceberg 0.11.0 was released on 2026-02-09
+- C++ 0.2.0 was released on 2026-01-26
+- Rust 0.8.0 was released on 2026-01-16
+- Java 1.10.1 was released on 2025-12-22
+
+REST specs:
+- Adopted a spec for exchanging SQL UDFs
+- Added referenced-by to table/view loading to support secure DEFINER views
+
+v4 table spec:
+- Design docs for v4 are reaching consensus and next up are the spec changes
+- Prototypes are going into Iceberg Java for content stats and adaptive metadata
+- Added column overwrite and append to the v4 goals
+- Discussing extending the expressions that can be exchanged for new use cases
+- Ongoing discussion for adding secondary indexes, but the timeline is unclear
+
+Java:
+- Adding remote scan planning implementation
+- Committed the pluggable file format APIs
+- Implemented freshness-aware table loading for REST catalog
+- Implemented idempotency tokens for REST catalog updates
+- Made separator character configurable for REST catalogs
+- Spark: Added module for version 4.1
+- Spark: Added schema evolution in MERGE commands
+- Flink: Added maintenance that does not require other engines
+- Dropped support for Java 11
+
+PyIceberg:
+- Added Python 3.13 support
+- Added rollback support
+- Added REST scan planning support
+- Added support for storage-credentials
+- Now supports timestamptz, geometry, and geography
+
+Rust:
+- Discussing how to refactor and modularize
+- Added Arrow schema conversion with field IDs
+- Adding more DataFusion integrations: create/drop table, LIKE, LIMIT
+- Added support for v2 to v3 upgrades with existing data
+- Added storage trait for FileIO implementations, replacing direct OpenDAL
+- Added support for compressed metadata.json files
+
+Go:
+- Added support for AuthManager
+- Added support for views
+- Working on row lineage support from v3
+- Added support for unknown type
+- Improving write support with overwrite, copy-on-write, and merge-on-read
+- Supports rolling at file size limit
+- Added Hive Catalog client
+
+C++:
+- Website is live at https://cpp.iceberg.apache.org/
+- Adding update and write support, including fast appends
+- Added REST catalog auth API, basic auth
+- Implemented DataWriter for Parquet and Avro files
+- Implemented SnapshotManager
+
+Created a new repo for a terraform provider and added a Flink quickstart guide.
+
+## Community Health:
+
+We are happy to welcome Prashant and Sung as a PMC members and Drew as a new
+committer!
+
+The community shows steady health metrics this quarter. There was an increase in
+dev list traffic, but this metric tends to fluctuate based on development cycles
+and other factors like holidays. Unfortunately, PR and git metrics were not
+available.
+
+The community is also planning the third Iceberg Summit in early April 2026. See
+https://www.icebergsummit.org/ for the agenda and details.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-AM">2025-12-17</a> &mdash; Ryan Blue<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+
+Apache Iceberg was founded 2020-05-19 (6 years ago)
+There are currently 36 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Kevin Liu was added to the PMC on 2025-11-16
+- Matthew Topol was added to the PMC on 2025-11-23
+- Gang Wu was added as committer on 2025-10-15
+
+## Project Activity:
+
+Releases:
+- Go 0.4.0 was released on 2025-10-13.
+- Rust 0.7.0 was released on 2025-10-11.
+
+Project:
+- Separated CI emails to a new ci-jobs ML
+- Removed blogs/ and talks/ pages from the site
+- Added ASF-approved web analytics
+- Added markdown and yaml lint checks
+
+REST catalog spec:
+- Added min-rows-requested to server-side planning
+- Added storage credentials to server-side planning
+- Added idempotency tokens to the spec
+- Discussing adding etags to responses
+
+UDF spec is nearing completion, added null handling and has settled on structure
+
+Java:
+- File format API reviews are ongoing; close to completion
+- Merged encryption integration and tests for Hive catalog
+- Flink: Added write support for v3 DVs
+- Added support for custom internal types with Parquet files
+- Added BigQuery catalog support to to runtime Jars
+
+PyIceberg:
+- Removed Python 3.9 support
+- Added support for v3 row lineage
+- Added expression serialization
+- Improvements to CI and build
+
+Rust:
+- Added support for v3 metadata
+- Added update_table for MemoryCatalog and GlueCatalog
+- Introduced catalog loader for multiple catalogs.
+- Added PartitionSplitter, RollingFileWriter, and partition-aware locations.
+- DataFusion: Added write and commit execution plans enabling INSERT INTO.
+- Added support for loading equality deletes during scans.
+- DataFusion v48 support.
+
+Go:
+- Improvements to unit tests and docker images for testing configurations
+- Fixing a crash when writing a map column with multiple entries per row
+- Several improvements to the release scripts
+- Support for writing to a Partitioned Iceberg tables!
+- Initial support for v3 metadata
+- Implemented the views spec
+- Added schema evolution support and timestamp(9)
+
+C++:
+- Can write Avro metadata files
+- Added REST request/response models
+- Implemented TableMetadataBuilder
+- Added scaffolding for expressions
+- Added binary literal serialization
+
+## Community Health:
+
+We are happy to welcome Gang as a new committer and Matt Topol and Kevin Liu as
+new PMC members!
+
+The Iceberg PMC has encouraged community-driven meetups by providing guidelines
+for meetup organizers. This has been very successful and there have been meetups
+in many different locations: Amsterdam, Bangalore, Paris, Warsaw, Budapest,
+Pittsburgh, Hamburg, Goteborg, Munich, Atlanta, Seattle, London, North Carolina,
+and Menlo Park. The community has also worked to improve these guidelines and
+ensure that they are small events that do not conflict with ASF events, since
+there was an event almost too large near Community over Code.</pre>
+<h3 id="2025-10-15"><a href="2025/board_minutes_2025_10_15.html#attachment-AJ">2025-10-15</a> &mdash; Ryan Blue<a class="headerlink" href="#2025-10-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (5 years ago)
+There are currently 35 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Amogh Jahagirdar on 2024-08-12.
+- Prashant Singh was added as committer on 2025-07-21
+
+## Project Activity:
+Releases:
+- C++ 0.1.0: 2025-09-15
+- 1.10.0: 2025-09-11
+- PyIceberg 0.10.0: 2025-09-11
+- Rust 0.6.0: 2025-07-30
+- 1.9.2: 2025-07-18
+- Rust 0.5.1: 2025-05-31
+- Go 0.3.0: 2025-05-29
+
+v4 Spec:
+- Making progress on designs for relative paths, columnar stats, Parquet
+  metadata, and adaptive metadata tree proposals.
+- Working on prototype implementations of new metadata
+
+REST catalog spec:
+- Implementation of server-side planning progressing
+- Consensus on a design for /events endpoint
+- Discussing fine-grained access control decisions from loadTable
+- Ongoing collaboration on SQL UDF support
+- Adding idempotency tokens to recover from transient errors
+- Added REST spec to iceberg.apache.org
+
+Java:
+- Ongoing work to build an API for plugging in new file formats
+- Fixed dropping columns referenced by stale partition fields
+- Fixed column metrics limits with nested structs
+- Committed manifest list encryption
+- Spark: Added support for Spark 4, with row lineage metadata and variants
+- Flink: Merged dynamic sync supporting multiple tables and schema evolution
+- Flink: Added row lineage readers
+- Added Google Auth support
+
+Python:
+- Added support for writing to branches
+- Working on v3 implementation
+- Added DataFusion integration
+- Moving some functionality to iceberg-rust
+- Added custom AuthManager support
+- Added ADLS support
+
+Rust:
+- Working on v3 implementation
+- Added support for positional deletes, parsing equality deletes
+- Added metadata tables for DataFusion
+- Improved DataFusion write support
+- Added REST catalog loader and builder
+- Added registerTable support for REST catalog
+- Added retry logic for transactions
+
+Go:
+- Enabled Iceberg/Spark integration tests
+- Added support for v3 manifests
+- Added fanout partition writer and rolling data writer
+
+C++:
+- First C++ release!
+
+## Community Health:
+
+The initial C++ release highlights that the community continues to expand with
+new languages and contributors interested in those implementations. The
+community is also collaborating on the next iteration of the Iceberg spec.
+Metrics also indicate general community health.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#section-6AN">2025-09-24</a> &mdash; Ryan Blue<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-AG">2025-06-18</a> &mdash; Ryan Blue<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (5 years ago)
+There are currently 34 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Amogh Jahagirdar on 2024-08-12.
+- No new committers. Last addition was Huaxin Gao on 2025-02-06.
+
+## Project Activity:
+
+Releases:
+- Table spec v3 was adopted on 2025-05-22
+- Java 1.9.1 was released on 2025-05-28
+- Java 1.9.0 was released on 2025-04-28
+- Java 1.7.2 was released on 2025-03-19
+- PyIceberg 0.9.1 was released on 2025-04-30
+- Rust 0.5.1 was released on 2025-05-31
+- Rust 0.5.0 was released on 2025-05-26
+- Go 0.3.0 was released on 2025-05-29
+- Go 0.2.0 was released on 2025-03-26
+
+Table spec:
+- v3 of the Iceberg spec was adopted by a community vote! Full support for v3 is
+  targeted for the upcoming Java 1.10.0 release and other implementations are
+  adding support.
+- Planning for Iceberg v4 has started, with groups self-organizing around
+  projects like faster commits, columnar metadata, and relative path support
+
+Java:
+- Added support for Spark 4.0, removing support for 3.3
+- Implemented v3 row lineage support in Spark MERGE and UPDATE
+- Added a connector for the BigQuery catalog
+- Added support for Flink 2.0 and removed Flink 1.18
+- Ongoing work to develop a dynamic Flink sync handles table schema changes
+- Added Zookeeper locking for Flink table maintenance
+- Refactored REST catalog client to use AuthManager
+- Added reader/writer for partition stats files
+- Completed the core implementation of Variant type
+
+PyIceberg:
+- Exceeded 500,000 downloads in a single day
+- Refactoring OAuth for REST catalogs with an AuthManager, like Java
+- Working on adding optimistic concurrency
+- Added support for decimal backed by int32/int64
+- Fixed "upsert" with complex types
+
+Rust:
+- Adding support for v3 metadata fields and encryption fields
+- Now exports DataFusion table provider to Python bindings
+- Added support to add existing Parquet files
+- Added support for Apache Arrow dictionary type
+- Added support for writing Puffin files
+- Runs sqllogictests using DataFusion
+
+Go:
+- Added write and commit support
+- Added support for the Glue catalog
+- Supports REST catalog integration tests
+
+C++:
+- Added virtual classes for API concepts: Catalog, Table, file readers/writers
+- Added manifest and manifest list structures
+- Added TypeVisitor, support for converting schemas to Avro
+- Added expressions, sort orders, and partition specs
+- Added support for configuration files similar to those used by PyIceberg
+
+## Community Health:
+
+Health metrics:
+- Code contributors increased by 23%, on top of a 20% rise last quarter!
+- Most metrics were stable; issues closed dropped due to an outlier day
+
+Iceberg Summit 2025 was held April 8th (in person) and 9th (virtual). 62 talks
+are now available from the project's youtube channel.
+https://www.youtube.com/playlist?list=PLkifVhhWtccxMcqWlXXFvjJybisFF7ESh
+
+In the 11 months between Iceberg Summit 2024 and 2025, there were:
+- 16 releases across Java, Python, Rust, and Go
+- 250 new contributors
+- 7 new committers
+- 5 new PMC members
+- 1 new language implementation (C++)</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-AF">2025-03-19</a> &mdash; Ryan Blue<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (5 years ago)
+There are currently 34 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Amogh Jahagirdar on 2024-08-12.
+- Huaxin Gao was added as committer on 2025-02-06
+- Scott Donnelly was added as committer on 2024-12-12
+
+## Project Activity:
+
+Releases:
+- Java 1.7.1 was released on 2024-12-06
+- Java 1.8.0 was released on 2025-02-13
+- Java 1.8.1 was released on 2025-02-28
+- PyIceberg 0.8.1 was released on 2024-12-06
+- PyIceberg 0.9.0 was released on 2025-03-06
+- Rust 0.4.0 was released on 2024-12-23
+- Go 0.1.0 was released on 2024-11-18
+
+Java:
+- License cleanup to ensure all distributed source and binaries are compliant
+- Ongoing work to implement the v3 format before adoption
+- Deletion vectors have been added
+- Default value support was implemented
+- Readers and writers for unknown, timestamp(9), and variant are committed
+- Expression support for filtering on shredded variant metrics was completed
+- Spark support for Datafusion Comet integration
+- Added support for v3 row lineage to api/core
+- Added InternalData to allow using columnar formats for table metadata
+
+PyIceberg:
+- Support for upsert operations
+- Added residuals for scan tasks
+- Use partition values from metadata
+- Support for reading v3 DVs
+- Write support for bucket and truncate transforms
+
+Rust:
+- Support for reading puffin file metadata
+- Added manifest metadata table
+
+Go:
+- Added create/commit table support
+- Completed commit updates/requirements for REST Catalog
+- Add support for register table
+- Add view support
+- Add listing pagination support
+- Improved manifest scanning
+
+C++
+- Added Schema and Types
+- New language repository!
+
+## Community Health:
+
+The community has seen new first-time contributors across all projects with
+recent releases including:
+- Java: 37 new contributors as of 1.8.1 release
+- Python: 33 new contributors as of 0.9.0 release
+- Rust: 17 new contributors as of 0.4.0 release
+
+This quarter also saw a 20% increase in the number of contributors.
+
+The community has self-organized a significant number of Iceberg-focused
+meetups spanning the globe with recent meetups in the following locations:
+- Austin, TX
+- Palo Alto, CA
+- San Francisco, CA
+- Seattle, WA
+- Singapore
+- Tokyo, Japan
+- Hyderabad, India
+
+The PMC will discuss and document guidelines for using the trademark to make it
+easier for meetups to happen while meeting the ASF requirements.
+
+A second Iceberg Summit will be April 8th &amp; 9th 2025. It combines in-person
+and virtual events.
+
+Last, I want to clarify that what I said on PR 11670 was this:
+&gt; Right now, we're focusing on describing how the community operates, rather
+&gt; than discussing how it might operate in the future.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-AE">2024-12-18</a> &mdash; Ryan Blue<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (5 years ago)
+There are currently 32 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 4:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Amogh Jahagirdar on 2024-08-12.
+- Matthew Topol was added as committer on 2024-12-09
+- Scott Donnelly was added as committer on 2024-12-10
+
+## Project Activity:
+
+Releases
+- 1.7.1 was released on 2024-12-06.
+- 1.7.0 was released on 2024-11-08.
+- PyIceberg 0.8.1 was released on 2024-12-06.
+- PyIceberg 0.8.0 was released on 2024-11-18.
+- Go 0.1.0 was released on 2024-11-18.
+
+Table format (v3)
+- Added deletion vectors and synchronous maintenance to improve row-level ops
+- Added row lineage fields and requirements for fine-grained row tracking
+- Proposal for geography and geometry types is close to consensus
+- Update to add Parquet's variant type is approved, waiting on Parquet upstream
+- Finalized new type promotion rules
+
+Puffin format
+- Added deletion vector blob type to support DVs in tables
+
+REST catalog spec
+- Added storage credentials passing
+- Added credential refresh
+- Created a docker image for catalog testing
+- Discussing proposal for partial metadata commits
+- Discussed partial metadata loading
+
+Views
+- Discussions about materialized view metadata are ongoing
+
+Java
+- Released new Kafka Connect sink
+- Added default values implementation for Avro
+- Added nanosecond timestamps
+- Added v3 DV support in core, ongoing work in Spark
+- Flink: Made FLIP-27 source the default
+- Spark: Removed Spark 3.3 support
+- Hive: Removing Hive 2.x and 3.x (Iceberg support is in Hive for 4.x and on)
+- Pig: Removed the iceberg-pig module that is no longer used
+
+PyIceberg
+- Support: Added Python 3.12, dropped Python 3.8
+
+Rust
+- Support for default values and type promotion in reads
+- Added TableMetadataBuilder
+- Implemented table requirements
+
+Go
+- Produced the first go release!
+- Supports scan planning and reading (data and metadata)
+- Supports loading and listing tables with the Glue catalog
+- Supports local and S3 storage
+
+C++
+- Added a C++ repository for a Puffin implementation
+
+## Community Health:
+
+The PMC has published guidelines for contributors that want to know more about
+how they can become committers on the Iceberg site. This guide should help
+contributors understand how Iceberg and other ASF communities decide and add
+committers, and should set expectations clearly. This was the most important
+follow up from discussions on the dev list earlier this year, where it became
+clear that contributors did not understand the requirements or process.
+
+The community has started planning a second Iceberg Summit, intended to be held
+in Spring of 2025. The proposal details are being finalized (such as the members
+of the selection committee) and will be submitted for approval in the next few
+weeks.
+
+The community added two new committers this quarter and had a slight increase in
+the number of contributors.
+
+There were also a number of commercial announcements from companies adding or
+expanding support for Iceberg.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-AF">2024-09-18</a> &mdash; Ryan Blue<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (4 years ago)
+There are currently 31 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 4:3.
+
+Community changes, past quarter:
+- Amogh Jahagirdar was added to the PMC on 2024-08-12
+- Eduard Tudenhoefner was added to the PMC on 2024-08-12
+- Honah J. was added to the PMC on 2024-07-22
+- Renjie Liu was added to the PMC on 2024-07-22
+- Peter Vary was added to the PMC on 2024-08-12
+- Piotr Findeisen was added as committer on 2024-07-24
+- Kevin Liu was added as committer on 2024-07-24
+- Sung Yun was added as committer on 2024-07-24
+- Hao Ding was added as committer on 2024-07-23
+
+## Project Activity:
+Releases:
+- Java 1.6.1 was released on 2024-08-28
+- Rust 0.3.0 was released on 2024-08-20
+- PyIceberg 0.7.1 was released on 2024-08-18
+- PyIceberg 0.7.0 was released on 2024-07-30
+- Java 1.6.0 was released on 2024-07-23
+
+Table format:
+- Work for v3 is picking up
+- Committed timestamp_ns implementation
+- Ongoing discussion/proposal for improvements to row-level deletes
+- Ongoing discussion/proposal for row-level metadata for change tracking
+- Discussion for adding variant type and where to maintain the spec (Parquet)
+- Making progress on geometry types
+- Clarified transform requirements to add transforms as needed (to support geo)
+- Discovered issues affecting new type promotion cases, reduced scope
+
+View format:
+- Ongoing discussions for tracking metadata for materialized views
+
+REST protocol specification:
+- Added server-side scan planning
+- Support for removing partition specs
+- Support for endpoint discovery for future additions
+- Clarified failure requirements for unknown actions or validations
+
+Java:
+- Added classes for v3 table writes
+- Fixed rewrites in tables with 1000+ columns
+- Added Kafka Connect runtime bundle
+- Support for Flink 1.20
+- Added range distribution support in Flink
+- Dropped support for Java 8
+
+PyIceberg:
+- Discussed adding a dependency on iceberg-rust for native extensions
+- Write support for time and identity transforms
+- Parallelized large writes
+- Support for deletes using filter predicates
+- Staged table creation for atomic CTAS
+- Support manifest merging on write
+- Better integration with PyArrow to produce lazy readers from scans
+- New API to add existing Parquet files
+- Support custom catalogs
+
+Rust:
+- Established subproject pyiceberg_core to support PyIceberg
+- Implemented OAuth for catalog REST client
+- Added Parquet writer and reader capabilities with support for data projection.
+- Introduced memory catalog and memory file IO support
+- Initialized SQL Catalog
+- Added support for GCS storage and AWS session tokens
+- Implemented concurrent table scans and data file fetching
+- Enhanced predicate builders and expression evaluators
+- Added support for timestamp columns in row filters
+
+Go:
+- Implemented expressions and expression visitors
+
+## Community Health:
+Several new committers and PMC members were added this quarter, which is a good
+indicator for community health. There was also a significant number of threads
+on the mailing list about setting expectations for contributors and clearly
+document how the community operates. New guidelines for merging PRs have been
+added to the website and the community is also discussing guidelines for how
+contributors can become committers. This builds on work from last quarter that
+clarified the process for design discussions.
+
+Many of the topics under discussion were raised because of the acquisition that
+was noted in the last board report. The community has been working to address
+the concerns raised, which are primarily in 3 areas:
+- How decisions are made about designs and commits (now clarified)
+- How contributors become committers and PMC members (under discussion)
+- How the community operates when people cannot reach consensus
+
+The last concern has historically not been a problem; people have so far
+chosen to "disagree and commit" when a large majority in the community has
+a different opinion. However, the first instance of this was encountered near
+the end of the quarter. The community and PMC need to discuss how to make
+progress on the issue.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-AF">2024-06-19</a> &mdash; Ryan Blue<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (4 years ago)
+There are currently 27 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Szehon Ho on 2023-04-20.
+- No new committers. Last addition was Renjie Liu on 2024-03-06.
+
+## Project Activity:
+
+Releases:
+- 1.5.1 was released on 2024-04-25
+- 1.5.2 was released on 2024-05-09
+- PyIceberg 0.6.1 was released on 2024-04-30
+
+PyIceberg:
+- Contributors are working to release more often
+- Improved retries for Hive catalog locking
+- Added register table support for Glue catalogs
+- Adding metadata table support (snapshots, manifests, etc.)
+- Working toward 0.7.0 release with partitioned writes and staged table creation
+
+Rust:
+- Implemented projection to support partition-based file pruning
+- Implemented the inclusive metrics evaluator and predicate pushdown to Parquet
+- Added Hive catalog support
+- Improved REST catalog with OAuth2 and custom headers
+- Added integration with DataFusion
+
+Go:
+- Working toward full expression support; added literals
+
+Iceberg Java:
+- The next Java release, 1.6.0, is targeted for release in June
+-
+
+Specs:
+- Discussions about standardizing metadata for materialized views have made good
+  progress. The community decided to use existing objects rather than creating a
+  new combined table/view object and is working on metadata details.
+- An extension to the REST protocol for privilege GRANT and REVOKE operations
+  was proposed.
+- Many discussions for extending the REST protocol are ongoing, including adding
+  routes to plan scans, adding auth decisions, and appending data files
+- There are also discussions for v3 features, like additional types (variant,
+  timestampns, and others)
+
+## Community Health:
+
+The Iceberg community continues to be healthy, with a large number of commits
+and individual contributors over the past quarter. Although overall commits
+decreased, the change corresponds with the number of opened PRs so the change is
+not a concern for health; PRs are getting reviewed.
+
+The community is formalizing design discussions and has added github labels and
+documented a process for making changes to community specs.
+
+The community also held the first Iceberg Summit this quarter, with 32 sessions
+that are now available on the YouTube (https://tinyurl.com/iceberg-summit).
+Community members also spoke at CoC EU.
+
+A company that employs 3 PMC members and 2 committers was acquired. The PMC
+members (2 of whom are ASF members) have been reminded to act as individuals,
+not as representatives of their employer, when interacting in the community.
+Concentrations of PMC members is a risk that the community is aware of and will
+note in future board reports.
+
+Other projects and announcements:
+- Trino added support for Iceberg views
+- Beam has added an Iceberg sink
+- Confluent, Terradata, and Oracle announced Iceberg support
+- Snowflake announced a new open source REST catalog project, Polaris
+- Databricks released its Unity catalog that implements the REST protocol
+- Nessie added support for the Iceberg REST catalog protocol
+- Gravino, which supports the REST protocol, was added to the incubator</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-AI">2024-03-20</a> &mdash; Ryan Blue<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (4 years ago)
+There are currently 27 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Szehon Ho on 2023-04-20.
+- Bryan Keller was added as committer on 2024-03-02
+- Honah J. was added as committer on 2024-01-11
+- Renjie Liu was added as committer on 2024-03-06
+
+## Project Activity:
+
+Releases:
+- Java 1.5.0 was released on 2024-03-11
+- Rust 0.2.0 was released on 2024-02-20 (first release!)
+- PyIceberg 0.6.0 was released on 2024-02-19
+- Java 1.4.3 was released on 2023-12-27
+
+Java implementation:
+- 1.5.0 is the first release supporting Iceberg Views
+- Added View resolution support in Spark engine integration
+- Added View commands to Spark (SHOW/CREATE/DROP/etc.)
+- View support in Trino is unblocked by the 1.5.0 release
+- Added View support to REST, Nessie, and JDBC catalogs
+- Discussing Materialized View extensions to Iceberg specs
+- Added EncryptingFileIO to minimize encryption-related API changes
+- Added StandardEncryptionManager to implement Iceberg Encryption spec
+- Added Parquet (native) and Avro (AES GCM) encryption support
+- Added pagination to listing in the REST catalog protocol
+- Discussing multiple extensions to the REST protocol (appends, planning)
+- Added delete file cache to Spark
+- Added support for Flink 1.18
+- Removed support for Spark 3.2
+
+PyIceberg Python implementation:
+- 0.6.0 is the first release supporting native writes
+- Append and full table overwrite are supported
+- Only writes to unpartitioned tables are supported
+- Added commit support to JDBC, Glue, and Hive catalogs
+- Implemented name mapping support for reading Parquet files without field IDs
+- Actively working on writes to partitioned tables and engine integration
+
+Rust implementation:
+- 0.2.0 is the first Rust release
+- Supports reading metadata files
+- Supports REST catalog interaction
+- Scan planning is the next active area of work
+
+Documentation:
+- Switched to new site build in the iceberg repository so contributing is easier
+
+## Community Health:
+
+The Iceberg community continues to be healthy. Although commit and PR activity
+declined, the metrics indicate that activity was still strong (with 70
+contributors and nearly 1,000 commits). This quarter also included holidays
+(which usually have decreased activity) and a huge increase in mailing list
+traffic (60%) because the community has been having many design discussions
+about evolving the REST spec, introducing new specs (materialized views), and
+discussions around how to keep track of new design proposals.
+
+The community also started organizing an Iceberg Summit, to be held May 14-15.
+The summit has been cleared by trademarks and the call for proposals has been
+posted. More information can be found at:
+* The Iceberg Summit website: https://iceberg-summit.org/
+* The Call for Proposals: https://sessionize.com/iceberg-summit-2024/</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-AN">2024-01-17</a> &mdash; Ryan Blue<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (4 years ago)
+There are currently 24 committers and 17 PMC members in this project.
+The Committer-to-PMC ratio is 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Szehon Ho on 2023-04-20.
+- Rushan Jiang was added as a committer on 2023-01-05.
+
+## Project Activity:
+
+Releases:
+- 1.4.3 was released on 2022-12-27.
+- 1.4.2 was released on 2023-11-02.
+- Python 0.5.0 was released on 2023-09-18.
+
+REST protocol spec:
+- Considering an extension to delegate scan planning to the catalog
+- Discussing how to exchange access decisions/restrictions for tables
+- An extension was proposed for server-side commits
+
+Java:
+- Started planning for a 2.0.0 release to clean up deprecated APIs
+- Added an encryption manager that supports Parquet native encryption
+- Ongoing effort to add encryption for table metadata using AES GCM streams
+- Added support for Flink 1.18
+- Completed the view API and support in the REST and Nessie catalogs
+- Added view read support in Spark
+- Ongoing work to improve Spark delete file performance
+
+PyIceberg:
+- Write support is nearing completion
+
+Rust:
+- Working toward first release (documentation, additional tests)
+- Readers and writers for manifests and manifest lists were committed
+
+Documentation:
+- The Iceberg site is moving back into the main repo to make contribution easier
+
+## Community Health:
+
+The project continues to be healthy, with no concerning changes to metrics.
+Technical progress is strong and growing in the new language implementations.
+The community also expects a proposal for a third-party organized Iceberg
+conference.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#section-6AJ">2023-12-20</a> &mdash; Ryan Blue<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-AK">2023-09-20</a> &mdash; Ryan Blue<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (3 years ago)
+There are currently 24 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Szehon Ho on 2023-04-20.
+- No new committers. Last addition was Amogh Jahagirdar on 2023-04-25.
+
+## Project Activity:
+
+Releases:
+* PyIcberg 0.4.0 was released on 2023-07-23
+* 1.3.1 was released on 2023-07-25
+
+Java:
+* Preparing for a 1.4.0 release in Sept/Oct
+* Added dependency bundles for AWS, GCP, and Azure
+* Added Azure FileIO implementation
+* Added API for multi-table commits
+* Performance optimizations for delete file scan planning
+* Spark: Implemented adaptive split sizing
+* Spark: Implemented function pushdown in v2 expressions
+* Flink: Added bucketing only key-by strategy
+* Build: Updated to Gradle version catalog
+* Making progress on the reference implementation of common views
+* Continuing work on table encryption
+
+Python:
+* 0.5.0 rc1 vote is under way
+* Added support for serverless environments
+* Implemented schema evolution
+* Moved to Pydantic v2
+* Added support for positional deletes
+* Substantially improved Avro read performance
+* Added conversion from Parquet to Iceberg schemas
+* Added support for FSSpec and HDFS data
+* Added SQL filter parsing
+
+Rust:
+* Created a repository for the Rust implementation, iceberg-rust
+* 25 PRs merged
+* Implemented base table metadata (e.g., types, transforms)
+* Implemented visitors for working with nested structures
+* Added Avro/Iceberg schema conversion
+* Added build tooling
+
+Go:
+* Created a repository for the Go implementation, iceberg-go
+* Added schema and types
+
+## Community Health:
+
+The largest development in the community is the addition of the Rust and Go
+repositories, which is shown in the increase in code contributors this quarter.
+The new implementations will also lead to new committers and PMC members. The
+community has had good discussions about how manage contributions, to build
+confidence in the implementations as well as to help new contributors become
+familiar with the way the Apache community operates. (Along with ASF
+requirements like license documentation.)
+
+Two community metrics show decreases. Dev list traffic tends to vary because of
+how the community uses the dev list -- that is, mostly for large design
+discussions. The number of issues closed was also lower than normal and is not
+expected to fluctuate. We will take a look and see what the difference is.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-AL">2023-06-21</a> &mdash; Ryan Blue<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (3 years ago)
+There are currently 24 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is 3:2.
+
+Community changes, past quarter:
+- Fokko Driesprong was added to the PMC on 2023-04-06
+- Steven Wu was added to the PMC on 2023-04-06
+- Szehon Ho was added to the PMC on 2023-04-20
+- Yufei Gu was added to the PMC on 2023-04-06
+- Amogh Jahagirdar was added as committer on 2023-04-25
+- Eduard Tudenhoefner was added as committer on 2023-04-25
+
+## Project Activity:
+
+* 1.3.0 was released on 2023-05-26
+* 1.2.1 was released on 2023-04-01
+* 1.2.0 was released on 2023-03-20
+
+The 1.3.0 release added support for Spark 3.4 and Flink 1.17. It also included
+several updates and fixes, including:
+* Better Spark file distribution for row-level plans like MERGE
+* Improved bit density in the object storage layout
+* Readable metrics in metadata tables
+* Optimized vectorized reads for decimal types
+* Spark timestamp_ntz and UUID support
+
+The Python implementation is nearing an 0.4.0 release that will include:
+* Delete file support
+* Metadata updates for tables
+* Improved compatibility
+
+The community is also continuing to build a view specification, expand REST
+catalog support, and add encryption to the table spec.
+
+## Community Health:
+
+The community continues to be healthy, with most metrics steady this quarter.</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#attachment-AI">2023-04-19</a> &mdash; Ryan Blue<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+
+There are no issues requiring board attention.
+
+## Membership Data:
+
+Apache Iceberg was founded 2020-05-19 (3 years ago)
+There are currently 22 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Fokko Driesprong was added to the PMC on 2023-04-06
+- Steven Wu was added to the PMC on 2023-04-06
+- Yufei Gu was added to the PMC on 2023-04-06
+- No new committers. Last addition was Steven Wu on 2022-10-07.
+
+## Project Activity:
+
+Releases:
+* 1.2.0 was released on 2023-03-20, followed by 1.2.1 on 2023-04-11
+* Python 0.3.0 was released on 2023-02-09
+
+The Python implementation has reached feature parity with the "legacy" codebase,
+so the legacy code that was never part of an ASF release has been removed! The
+Python implementation now supports full read planing, including parallel
+metadata reads, manifest pruning, partition pruning, and column stats pruning.
+Python frameworks that use Apache Arrow can use data from Iceberg tables,
+including Arrow compute, Pandas, DuckDB, and Ray. Write support is the next
+milestone for the Python implementation.
+
+The Java implementation's latest release included several new capabilities:
+* Branching and tagging, with support in Flink and Spark using VERSION AS OF
+* Spark DDL for branches and tags
+* Metadata query pushdown in Spark
+* Changelog reads in Spark
+* Throttling for streaming reads in Flink
+* FileIO support for ORC readers and writers
+* SigV4 support for REST catalog auth
+* Remote signing client for S3
+* The ability to read Snowflake Iceberg tables
+
+There are also efforts to add encryption to the format and to support multi-
+table transactions.
+
+The community is also discussing a Rust or C++ implementation hosted by the ASF.
+
+## Community Health:
+
+The community remains healthy, with a reasonable increase in both opened and
+closed pull requests, as well as a stead number of unique contributors. The
+Python implementation has been bringing a lot of new contributors.
+
+Iceberg was featured in 14 talks at Subsurface, as well as in a panel.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#section-6AH">2023-03-22</a> &mdash; Ryan Blue<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+@Sander: pursue a roll call for Iceberg</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#section-6AI">2023-02-15</a> &mdash; Ryan Blue<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#section-6AH">2023-01-18</a> &mdash; Ryan Blue<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#section-6AK">2022-12-21</a> &mdash; Ryan Blue<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-10-19"><a href="2022/board_minutes_2022_10_19.html#attachment-AG">2022-10-19</a> &mdash; Ryan Blue<a class="headerlink" href="#2022-10-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (2 years ago)
+There are currently 22 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jack Ye on 2021-11-14.
+- Fokko Driesprong was added as committer on 2022-08-21
+- Steven Wu was added as committer on 2022-10-07
+- Yufei Gu was added as committer on 2022-08-25
+
+## Project Activity:
+The community had 2 releases in the 0.14.x line and an initial Python release,
+0.1.0. In addition, the vote for a 1.0.0 release is currently passing.
+
+The Python release is the result of significant community effort and includes
+a new CLI utility (pyiceberg), support for Hive and REST catalogs, and the
+ability to read table metadata. The next goal is a 0.2.0 release that can handle
+query planning to enable reads in Python and Python-based engines.
+
+The 1.0.0 JVM release adds API guarantees to the API module, but is closely
+based on 0.14.1 to make transitioning to a new major version simple.
+
+Next, the community is preparing a 1.1.0 release with significant new updates:
+* The ability to read and write table branches
+* Scan metrics reporting
+* Support for Spark FunctionCatalog
+* FLIP-27 reader support in Flink SQL
+* Z-order support when rewriting or compacting data files
+* Support for Puffin stats in table metadata
+
+## Community Health:
+The community continues to be healthy in terms of commits. The number of
+unique contributors decreased slightly, which indicates the community should
+ensure pull requests from contributors are getting enough attention.
+
+The increase of issues closed is due to setting up a stale issues bot to help
+keep issues fresh and relevant. The community also added issue templates to
+make bug reports and feature requests better and more clear.
+
+This year, there were 4 presentations about Iceberg at ApacheCon:
+* Accelerate Data Lakehouse deployment with Apache Iceberg in Cloudera Data
+  Platform  (Attila Turoczy, Bill Zhang)
+* Apache Iceberg's REST Catalog - A Gateway to Enriching Data Access via the
+  Simplicity of an HTTP Service (Sam Redai)
+* Iceberg's Best Secret: Exploring Metadata Tables (Szehon Ho)
+* Integrated Audits: Streamlined Data Observability with Apache Iceberg
+  (Sam Redai)
+
+There were also 2 Iceberg presentations at Flink Forward:
+* Batch Processing at Scale with Flink &amp; Iceberg (Andreas Hailu)
+* Tame the small files problem and optimize data layout for streaming ingestion
+  to Iceberg (Steven Wu, Gang Ye)</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#section-6AL">2022-09-21</a> &mdash; Ryan Blue<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-07-20"><a href="2022/board_minutes_2022_07_20.html#attachment-AI">2022-07-20</a> &mdash; Ryan Blue<a class="headerlink" href="#2022-07-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (2 years ago)
+There are currently 19 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jack Ye on 2021-11-14.
+- No new committers. Last addition was Szehon Ho on 2022-03-07.
+
+## Project Activity:
+The community recently released 0.13.2 on 2022-06-13 and is currently voting on
+a candidate for the 0.14.0 release. 0.14.0 will be followed closely by a 1.0.0,
+which will make API stability guarantees.
+
+The 0.14.0 release contains significant new features, including:
+* Support for Apache Spark 3.3
+* Support for Apache Flink 1.15
+* MERGE and UPDATE plans using row-level deletes
+* A FLIP-27 reader for Flink
+* The new REST catalog implementation with change-based commits
+* A new file format for index and stats data, Puffin
+* Zorder sorting when rewriting data files
+* Range and tail reads for IO
+* Additional metrics collection
+
+The community has also been working on new features, including:
+* Table-level statistics and data sketches using Puffin
+* Table branching and tagging
+* View metadata tracking
+* Default values in schemas
+* A native Python implementation
+
+The python implementation has been making good progress and may see a release
+next quarter.
+
+The project has also been working to improve documentation and has a new site
+design that tracks older versions.
+
+## Community Health:
+Community health continues to be good. The community's primary gauge of activity
+is pull requests and commits, and there were 1088 PRs opened this quarter a
+(5% increase) and 780 commits (a slight decrease). There were approximately the
+same number of contributors as the previous quarter, 79.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#section-6AK">2022-06-15</a> &mdash; Ryan Blue<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-AG">2022-03-16</a> &mdash; Ryan Blue<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (2 years ago)
+There are currently 19 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jack Ye on 2021-11-14.
+- Szehon Ho was added as committer on 2022-03-07
+
+## Project Activity:
+Iceberg 0.13.0 was released on 2022-02-01, and was followed quickly by 0.13.1 on
+2022-02-14 to fix a performance regression.
+
+The 0.13 release included many significant new features:
+* Spark 3.2 support and overhauled row-level plans
+* Flink 1.13 and 1.14 support
+* Spark and Flink modules built and tested against each engine version
+* GCS and Aliyun OSS IO integration
+
+The community has also been working on some major features:
+* Delta-based MERGE INTO and UPDATE plans for Spark (complete)
+* Scala 2.13 support for Spark 3.2 (complete)
+* IO metrics collection (complete)
+* Vectorized reads with delete files (complete)
+* An implementation of table branching and tagging
+* Addition of a REST catalog spec, like the Hive Thrift interface for Iceberg
+* Addition of a view spec that tracks SQL or other plan representations
+* Spec updates for secondary indexes and metrics
+* Spec updates for default values
+
+In addition to features, the community also overhauled the ASF site. The new
+site better communicates Iceberg's major features and has version-specific docs.
+
+There were 6 Iceberg talks at the Subsurface conference and the conference
+organizers noted it was a major theme. On the last report, we were asked whether
+the presentations are available on the Iceberg site. They are present under the
+Talks tab.
+
+## Community Health:
+Community health continues to be good. There were some decreases this quarter in
+metrics like dev list traffic and issues opened, but this isn't concerning with
+the context of the last few quarters of growth and that this report includes
+December when many people are on holiday. In addition, the number of unique
+contributors increased to 81 (20% higher).</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-AL">2021-12-15</a> &mdash; Ryan Blue<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (2 years ago)
+There are currently 18 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 3:2.
+
+Community changes, past quarter:
+- Jack Ye was added to the PMC on 2021-11-14
+- Russell Spitzer was added to the PMC on 2021-11-13
+- No new committers. Last addition was Jack Ye on 2021-07-02.
+
+## Project Activity:
+0.12.1 was released on 2021-11-08. The community is also working on the next
+release, 0.13.0.
+
+* A spec for table branching and tagging was written and is nearing completion
+* Iceberg's documentation is being updated so that multiple versions can be
+  easily maintained and updated.
+* Delete file compaction was added to the rewrite files action and stored
+  procedure. Additional compaction options are planned.
+* Sort based compaction was added
+* Flink and Spark plugins have been refactored so that each version is
+  independent and is compiled against the correct engine version. While this
+  duplicates some code, it makes integrating new features easier and reduces
+  the risk of runtime incompatibilities.
+* Added support for Flink 1.14.x and Spark 3.2.x
+* A REST catalog API spec is taking shape. This should standardize an interface
+  for providing a table catalog, similar to the thrift metastore interface used
+  by Hive.
+* Aliyun OSS support was added as an IO module
+* The community decided on goals for a 1.0 release, targeted for early next year
+* Python implementation is making progress
+
+## Community Health:
+Community metrics show healthy growth. Notably, there were 66 unique
+contributors this quarter, up from 50 last quarter. Total PRs submitted was more
+than 750, about 50% more than the 500 last quarter. Similarly, PRs closed also
+increased to 682 from about 400 last quarter, a 64% increase.
+
+The most significant stat is the increase in unique contributors, which signals
+that more people are interested in the project.
+
+This quarter, there were talks featuring Iceberg at AWS re:Invent (where
+Athena announced support), Trino summit, and community events for PrestoDB,
+lakeFS, and SF Big Analytics.</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-AJ">2021-09-15</a> &mdash; Ryan Blue<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (a year ago)
+There are currently 18 committers and 10 PMC members in this project.
+The Committer-to-PMC ratio is 9:5.
+
+Community changes, past quarter:
+- Zheng Hu was added to the PMC on 2021-06-28
+- Jack Ye was added as committer on 2021-07-02
+
+## Project Activity:
+0.12.0 was released on 2021-08-15 and is a significant update from 0.11.1.
+
+The community voted to adopt version 2 of the Iceberg table format that adds
+row-level updates and deletes.
+
+The community is also working on several improvements:
+* Preparing for 1.0 of the Java reference implementation
+* Adding an Iceberg specification for SQL views
+* Spark implementations of MERGE and UPDATE that use row-level deletes
+* Flink UPSERT support
+* Z-order specification
+* Relative path support for disaster recovery
+* Branching and tagging table snapshots
+* Additional storage integration modules (Dell EMC, Aliyun OSS)
+* Encryption
+
+## Community Health:
+The community is healthy and continues to grow. Unique contributors grew by
+2% this quarter to 50. Contributions increased to more than 500 PRs and more
+than 400 PRs were addressed.
+
+The community is discussing how to scale and coordinate with a published roadmap
+and github projects to link the roadmap to individual issues.
+
+The community is also forming a new group of contributors around Python. This
+group has held sync meetings and is planning to make the python API more
+pythonic and to get to an initial python release.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-AG">2021-06-16</a> &mdash; Ryan Blue<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+Apologies that this report is late.
+The community will report next month if needed.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (a year ago)
+There are currently 17 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Anton Okolnychyi on 2020-05-19.
+- Ted Gooch was added as committer on 2021-05-11
+- Russell Spitzer was added as committer on 2021-04-02
+- Ryan Murray was added as committer on 2021-03-26
+- Yan Yan was added as committer on 2021-03-23
+
+## Project Activity:
+
+0.11.1 was released on 2021-04-03.
+
+The community is currently working on the 0.12.0 release, which will
+update support for Spark 3.1 to fix the Iceberg SQL extensions.
+
+Several features were finished:
+* Spark UPDATE support was committed
+* Row identifier fields were added to schemas to support Flink UPSERT
+* An action to import existing data files was added
+* Hive integration has been updated to allow using multiple catalogs
+
+In addition, there are several on-going projects:
+* The community is working on updates for Spark 3.1
+* Spark data file compaction strategies and a new implementation have been
+  discussed and should be available in 0.12.0
+* A design for encryption support has been proposed that will support
+  Parquet and ORC encryption, as well as encryption for the metadata tree.
+* There have been design discussions for adding secondary indexes that can be
+  updated asynchronously to keep commit latency low.
+* There have been design discussions for adding default field values
+* Support for Spark 3.0 structured streaming with the DSv2 API is under review
+* A DynamoDB catalog has been submitted as a PR
+
+
+## Community Health:
+The community is healthy and showed an increase in contributors in the past
+quarter. New contributors are working on significant projects, like Spark
+streaming support and default values.
+
+The community also added 4 new committers in the past quarter!</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-AI">2021-03-17</a> &mdash; Ryan Blue<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (9 months ago)
+There are currently 13 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Anton Okolnychyi on 2020-05-19.
+- Peter Vary was added as committer on 2021-01-23
+
+## Project Activity:
+0.11.0 was released on 2021-01-26 and included several important new features:
+* Support for partition evolution
+* Spark SQL extensions with support for MERGE INTO, DELETE FROM, and new DDL
+* Spark support for table maintenance through stored procedures
+* Streaming reads, filter pushdown, and experimental CDC writes in Flink
+* AWS module with better integration for S3 and Glue metastore
+* Nessie metastore module
+
+The community is working toward finalizing the v2 format spec and the next
+release. There is good progress on metrics collection for Avro data files,
+Hive integration, Spark UPDATE support, and more table maintenance actions.
+
+## Community Health:
+The overall number of pull requests merged in the last quarter decreased from
+the previous quarter, but this is mostly due to annual holidays. Leading up to
+the release in January, the project set a new record at 78 PRs merged in a week.
+More importantly, although there was a decrease in PRs merged, the number of
+contributors still increased slightly, to 50 code contributors in the quarter.
+Peter Vary was also added as a committer in January.</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#attachment-AE">2020-12-16</a> &mdash; Ryan Blue<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (7 months ago)
+There are currently 12 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 4:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Anton Okolnychyi on 2020-05-19.
+- Jingsong Lee was added as committer on 2020-10-09
+- Zheng Hu was added as committer on 2020-10-09
+
+## Project Activity:
+Recent releases:
+* 0.10.0 was released on 2020-11-11.
+
+The 0.10.0 release included:
+* A new Flink module supporting DataStreams and SQL writes and (batch) reads
+* A new Hive module supporting reads
+* Row-level delete implementation, part of the v2 spec, for engine integration
+
+More recently, the community has added:
+* Stored procedures for Spark that perform table maintenance from SQL
+* New catalog implementations for Nessie and Glue
+* Writers to support Flink CDC events and Spark MERGE plans
+* Handling for NaN values in metadata, and NaN predicates
+
+The project is making significant progress.
+
+## Community Health:
+Community activity continues to increase. Recent video sync calls have had 20+
+participants, code contributions are increasing in frequency (588 PRs opened and
+552 PRs closed), and there are many new community members joining in.
+
+The community added two new committers this quarter.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-AF">2020-09-16</a> &mdash; Ryan Blue<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (4 months ago)
+There are currently 10 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members since graduation on 2020-05-19
+- Shardul Mahadik was added as committer on 2020-07-25
+
+## Project Activity:
+Recent releases:
+* 0.9.0 was released on 2020-07-13
+* 0.9.1 was released on 2020-08-14
+
+The community expects to release 0.10.0 soon with support for Hive reads,
+Flink writes, and the utilities needed to implement row-level deletes in
+external processing engines, like Presto.
+
+Notable improvements this month include:
+* Implemented end-to-end row-level deletes in the client library (direct reads)
+* Committed Flink write support for both DataStreams and SQL
+* Added Hive predicate pushdown and a runtime bundle
+* Committed name mapping support for reading ORC files from non-Iceberg tables
+* Added a new snapshot expiration action that runs in parallel using Spark
+* Added metadata to configure tables with a preferred sort order
+
+The community is actively working on Hive column pruning, Hive write support,
+Flink read support, and row-level deletes in more processing engines.
+
+## Community Health:
+The number of unique contributors increased in the last month to 26, from the
+previous high watermark of 21. Contributions are still healthy, with 74 commits
+in the past month. New community members have been contributing documentation
+and build improvements (PR labels, fixing warnings); it is great to have these
+valuable contributions in addition to features and bug fixes.</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-AB">2020-08-19</a> &mdash; Ryan Blue<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (2 months ago)
+There are currently 10 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- Shardul Mahadik was added as committer on 2020-07-25
+
+## Project Activity:
+0.9.0 was released, including support for Spark 3 and SQL DDL commands, support
+for JDK 11, vectorized Parquet reads, and an action to compact data files.
+
+Since the 0.9.0 release, the community has made progress in several areas:
+- The Hive StorageHandler now provides access to query Iceberg tables
+  (work is ongoing to implement projection and predicate pushdown).
+- Flink integration has made substantial progress toward using native RowData,
+  and the first stage of the Flink sink (data file writers) has been committed.
+- An action to expire snapshots using Spark was added and is an improvement on
+  the incremental approach because it compares the reachable file sets.
+- The implementation of row-level deletes is nearing completion. Scan planning
+  now supports delete files, merge-based and set-based row filters have been
+  committed, and delete file writers are under review. The delete file writers
+  allow storing deleted row data in support of Flink CDC use cases.
+
+Releases:
+- 0.9.0 was released on 2020-07-13
+- 0.9.1 has an ongoing vote
+
+## Community Health:
+The month since the last report has been one of the busiest since the project
+started. 80 pull requests were merged in the last 4 weeks, and more importantly,
+came from 21 different contributors. Both of these are new high watermarks.
+
+Community members gave 2 Iceberg talks at Subsurface Conf, on enabling Hive
+queries against Iceberg tables and working with petabyte-scale Iceberg tables.
+Iceberg was also mentioned in the keynotes.</pre>
+<h3 id="2020-07-15"><a href="2020/board_minutes_2020_07_15.html#attachment-AD">2020-07-15</a> &mdash; Ryan Blue<a class="headerlink" href="#2020-07-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (2 months ago)
+There are currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- No new committers were added.
+
+## Project Activity:
+In July, the community held one sync meeting to discuss general topics, and
+one specifically to discuss how to include both groups that have been working
+on integration with Hive.
+
+To address the question on the last board report, the community sync meetings
+are video conferences that anyone in the community is welcome to attend. The
+discussion is documented and summarized for anyone that can't attend. We have
+found these to be a good way to exchange context and ideas more quickly, but
+recognize that this isn't the best way for some people to participate and so
+we don't consider these a forum for making decisions or voting. If we come to
+a tentative conclusion on a topic, it is still open for further discussion
+on the dev list. The idea for this comes from the Parquet community that has
+been doing this for several years.
+
+Development activity:
+* Spark vectorized reads for flat schemas was merged and benchmarked
+* The Spark 3 integration branch was merged into master
+* Name mapping for Parquet files without IDs was committed
+* And action to compact data files was added
+* Support was added for managing and adding delete files in table metadata
+* Refactoring to support reuse Spark components for Flink
+* Several PRs for Flink support have been committed and more are open
+* CI tests for JDK 11 have been added
+
+The community also plans to release 0.9.0 with Spark 3 support soon.
+
+## Community Health:
+Most community metrics have again increased in the last month, although dev
+list traffic is a bit lower. More importantly, the community has made further
+progress on several large areas with different groups leading the efforts,
+like Hive support, Spark 3 support, and Flink support.</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-AG">2020-06-17</a> &mdash; Ryan Blue<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Iceberg is a table format for huge analytic datasets that is designed
+for high performance and ease of use.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache Iceberg was founded 2020-05-19 (21 days ago)
+There are currently 9 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members (project graduated recently).
+- No new committers were added.
+
+## Project Activity:
+There were two community syncs in May, with good discussions on adding secondary
+indexes and fixing some persistent issues, like Guava library conflicts and how
+to support multiple Spark versions.
+
+Development activity:
+- Row-level delete progress continues with several PRs merged
+- Added support for ORC predicate push-down and metrics filtering, which is a
+  significant step toward performance parity with Parquet
+- The vectorized Parquet read path is passing end-to-end tests for flat data
+- Guava is now shaded and relocated, unblocking integration with Hive
+- The build changed dependency locking plugins to unblock Hive and Spark 3 work
+- Flink contributors opened pull requests to merge the prototype sink
+
+## Community Health:
+Nearly all metrics (list traffic, pull requests, and issues opened) are showing
+an increase in the last month, and the community has made significant progress
+on several large extensions (ORC and Flink, notably).</pre>
+<h3 id="2020-04-15"><a href="2020/board_minutes_2020_04_15.html#iceberg">2020-04-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-04-15" title="Permalink">&para;</a></h3>
+<pre>Iceberg is a table format for large, slow-moving tabular data.
+
+Iceberg has been incubating since 2018-11-16.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the Iceberg community
+2. Add more committers and PPMC members
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No issues.
+
+### How has the community developed since the last report?
+
+- The community added a committer and PPMC member, Ratandeep Ratti.
+  Ratandeep is the 4th new PPMC member.
+- In the 3 months since the last report, 76 pull requests were merged,
+  for an average of 25 per month so the contribution rate is still
+  active and healthy
+- The community had a video sync with about 20 attendees. These will
+  be held about every 3 weeks at alternating times so that contributors
+  in Europe and Asia can attend
+- The community is working toward an 0.8.0 release in mid-April
+
+### How has the project developed since the last report?
+
+- The community is building support for the upcoming Spark 3.0 release
+  and working on moving this to master
+- More Parquet vectorization PRs have been merged, showing significant
+  progress
+- A contributor has built support for Spark streaming, which is under
+  review
+- Members of the Apache Flink community have been discussing integration
+  and have contributed an early Flink sink
+- Support for ORC files is nearly done. Schema evolution, type promotion,
+  and support for generics have been recently added
+- Support for cherry-picking append snapshots was added
+- Added new metadata table
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+- 0.7.0-incubating was released 25 October 2019
+
+### When were the last committers or PPMC members elected?
+
+- Ratandeep Ratti was added 30 August 2019
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes, the podling is managing the brand and is not aware of any issues.
+The project name has been approved.
+
+### Signed-off-by:
+
+- [X] (iceberg) Ryan Blue
+   Comments:
+- [ ] (iceberg) Julien Le Dem
+   Comments:
+- [X] (iceberg) Owen O'Malley
+   Comments:
+- [ ] (iceberg) James Taylor
+   Comments:
+- [X] (iceberg) Carl Steinbach
+   Comments:</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#iceberg">2020-01-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>Iceberg is a table format for large, slow-moving tabular data.
+
+Iceberg has been incubating since 2018-11-16.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the Iceberg community
+2. Add more committers and PPMC members
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No issues.
+
+### How has the community developed since the last report?
+
+In the 4 months since the last report, 138 pull requests were merged for an
+average of 34.5 per month. While this is down from the previous monthly
+average of 49.6 per month for June through August, this contribution rate
+is still very active and healthy. Contributions are coming from a regular
+group of contributors outside of the initial set of committers, which is a
+positive indication for adding new committers and PPMC members over the
+next few months.
+
+The community released the first version of Apache Iceberg,
+0.7.0-incubating. This release used the "standard" incubator disclaimer and
+included convenience binaries. The release candidate votes were very active
+with community members testing out the release and reporting problems.
+
+There was an Apache Iceberg talk at ApacheCon NA in September.
+
+### How has the project developed since the last report?
+
+- The community is building support for the upcoming Spark 3.0 release
+- The first PR from the vectorization branch has been merged into master
+- Support for IN and NOT IN predicates was contributed
+- Python added support for Hive metastore tables and the read path is
+near commit
+- Flaky tests have been fixed
+- Baseline checks (style, errorprone, findbugs) are now applied to all
+modules
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [x] Community building
+- [x] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+- 0.7.0-incubating was released 25 October 2019
+
+### When were the last committers or PPMC members elected?
+
+- Anton Okolnychyi was added 30 August 2019
+
+### Have your mentors been helpful and responsive?
+
+Yes. 4 of 5 mentors voted on the 0.7.0-incubating IPMC vote. Thanks to our
+mentors for being active!
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes, the podling is managing the brand and is not aware of any issues.
+The project name has been approved.
+
+### Signed-off-by:
+
+- [x] (iceberg) Ryan Blue
+   Comments:
+- [ ] (iceberg) Julien Le Dem
+   Comments:
+- [X] (iceberg) Owen O'Malley
+   Comments:
+- [ ] (iceberg) James Taylor
+   Comments:
+- [ ] (iceberg) Carl Steinbach
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#iceberg">2019-09-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>Iceberg is a table format for large, slow-moving tabular data.
+
+Iceberg has been incubating since 2018-11-16.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Make the first Apache release.
+(https://github.com/apache/incubator-iceberg/milestone/1)
+2. Grow the Iceberg community
+3. Add more committers and PPMC members
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+No issues.
+
+### How has the community developed since the last report?
+
+The community continues to grow steadily. In the last month:
+* 59 pull requests have been merged
+* 17 people contributed the merged PRs
+* 18 issues have been closed, 22 issues were opened
+
+For comparison, the last report had 74 pull requests merged over 3 months.
+
+### How has the project developed since the last report?
+
+* License documentation has been completed for the Java project,
+unblocking
+the first release
+* Added more documentation to iceberg.apache.org
+* Started vectorized read branch with significantly better performance
+* Added metadata tables
+* Added configuration to control statistics and truncate long values
+* Improved Hive Metastore integration
+* A working python read path has been submitted in PRs
+
+### How would you assess the podling's maturity?
+
+- [ ] Initial setup
+- [x] Working towards first release
+- [x] Community building
+- [x] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+* No release yet
+
+### When were the last committers or PPMC members elected?
+
+* Anton Okolnychyi was added 30 August 2019
+
+### Have your mentors been helpful and responsive?
+
+Yes
+
+### Signed-off-by:
+
+- [x] (iceberg) Ryan Blue
+   Comments:
+- [ ] (iceberg) Julien Le Dem
+   Comments:
+- [X] (iceberg) Owen O'Malley
+   Comments:
+     The project also gave two presentations:
+       * Berlin Buzzwords (June 2019)
+       * ApacheCon NA (Sep 2019)
+     Iceberg is being used in production at Netflix on huge tables, up to
+25 petabytes.
+
+- [X] (iceberg) James Taylor
+   Comments:
+- [X] (iceberg) Carl Steinbach
+   Comments:
+     Approval added by Ryan Blue, Carl had trouble editing the new report
+     location
+
+### IPMC/Shepherd notes:
+Justin Mclean: The included stats don't really mean much to anyone
+outside of your project, please drop them from future reports.
+The community growth section might as well be blank.
+I find it surprising that this project thinks that it is near graduation.
+Please discuss this with your mentors.</pre>
+<h3 id="2019-07-17"><a href="2019/board_minutes_2019_07_17.html#iceberg">2019-07-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-07-17" title="Permalink">&para;</a></h3>
+<pre>Iceberg is a table format for large, slow-moving tabular data.
+Iceberg has been incubating since 2018-11-16.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Update build for Apache release, add LICENSE/NOTICE to Jars.
+2. Make the first Apache release.
+(https://github.com/apache/incubator-iceberg/milestone/1)
+3. Grow the Iceberg community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+* No issues that require attention.
+
+### How has the community developed since the last report?
+
+* Community growth has continued with several new contributors and
+reviewers
+* Community has decided on style and added checking to CI for most modules
+* Community has started work on extending the spec for new use cases
+
+### How has the project developed since the last report?
+
+* Much more content on iceberg.apache.org has been added
+* 74 pull requests have been merged, many reviewed by new community
+members
+* Work has begun to add row-level deletes and upserts to the format
+* Added support for Spark streaming, a catalog API, and numerous bug fixes
+* Contributors are reviewing code, submitting substantial features, and
+improving dev practices
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup (name clearance approval pending)
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+None yet
+
+### When were the last committers or PPMC members elected?
+
+None yet
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Signed-off-by:
+
+- [X](iceberg) Ryan Blue
+   Comments: I wrote the first pass of the report.
+- [ ](iceberg) Julien Le Dem
+   Comments:
+- [X](iceberg) Owen O'Malley
+   Comments: +1 from discussion on dev list
+- [ ](iceberg) James Taylor
+   Comments:
+- [ ](iceberg) Carl Steinbach
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#iceberg">2019-03-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>Iceberg is a table format for large, slow-moving tabular data.
+
+Iceberg has been incubating since 2018-11-16.
+
+Three most important issues to address in the move towards graduation:
+
+1. Update build for Apache release, add LICENSE/NOTICE to Jars.
+2. Make the first Apache release.
+(https://github.com/apache/incubator-iceberg/milestone/1)
+3. Grow the Iceberg community
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+* No issues that require attention.
+
+How has the community developed since the last report?
+
+* The community has continued to receive new contributors
+* Several contributors are reliable helping review pull requests. Because
+  of these review contributions and the small number of committers, the
+  community voted to relax the RTC requirements and allow committers to
+  push their own changes if the community has reviewed the PR. This helps
+  develop reviewers and gets changes in faster. The vote also set reasonable
+  limits for this practice: PRs must be up for at least 2 days and this is only
+  for the first year, while we are working with a small set of committers.
+
+How has the project developed since the last report?
+
+* Podling name search concluded that Iceberg is a suitable name.
+  (See PODLINGNAMESEARCH-163)
+* The community voted to accept a large PR with a Python implementation.
+* Contributors are fixing important predicate push-down issues, including
+  case sensitivity, filtering on nested types, missing file metrics, etc.
+* Contributors added support for plugging in file stream encryption.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup (name clearance approval pending)
+[X] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+None yet
+
+When were the last committers or PPMC members elected?
+
+None yet
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes.
+
+Signed-off-by:
+
+[X](iceberg) Ryan Blue
+   Comments: I wrote the first pass of the report.
+[ ](iceberg) Julien Le Dem
+   Comments:
+[X](iceberg) Owen O'Malley
+   Comments: (Approval copied from +1 on dev list)
+[ ](iceberg) James Taylor
+   Comments:
+[ ](iceberg) Carl Steinbach
+   Comments:</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#iceberg">2019-02-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>Iceberg is a table format for large, slow-moving tabular data.
+
+Iceberg has been incubating since 2018-11-16.
+
+Three most important issues to address in the move towards graduation:
+
+1. Update build for Apache release, add LICENSE/NOTICE to Jars.
+2. Make the first Apache release.
+(https://github.com/apache/incubator-iceberg/milestone/1)
+3. Grow the Iceberg community
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+* No issues that require attention.
+
+How has the community developed since the last report?
+
+* Pull requests from 6 contributors were merged, 7 new contributors
+
+How has the project developed since the last report?
+
+* Submitted evidence for podling name search: PODLINGNAMESEARCH-163
+* Netflix submitted a revised trademark agreement for counter-signing
+* Abstracted data file locations for community use cases
+* Reviewing proposed API update for file stream encryption plugins
+* New contributor highlights:
+  - A new contributor is fixing case sensitivity in expressions
+  - A new contributor opened a PR to add a startsWith predicate
+  - A new contributor reviewed 4 pull requests and opened another
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[X] Initial setup (name clearance approval pending)
+[X] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+None yet
+
+When were the last committers or PPMC members elected?
+
+None yet
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes.
+
+Signed-off-by:
+
+[X](iceberg) Ryan Blue
+   Comments: dev list traffic appears to be increasing also
+[ ](iceberg) Julien Le Dem
+   Comments:
+[ ](iceberg) Owen O'Malley
+   Comments:
+[x](iceberg) James Taylor
+   Comments:
+[X](iceberg) Carl Steinbach
+   Comments: From dev list: "Looks good to me. +1"
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2019-01-16"><a href="2019/board_minutes_2019_01_16.html#iceberg">2019-01-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-01-16" title="Permalink">&para;</a></h3>
+<pre>Iceberg is a table format for large, slow-moving tabular data.
+
+Iceberg has been incubating since 2018-11-16.
+
+Three most important issues to address in the move towards graduation:
+
+1. Finish the name clearance and trademark agreement.
+2. Make the first Apache release.
+(https://github.com/apache/incubator-iceberg/milestone/1)
+3. Grow the Iceberg community
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+* Gitbox traffic is now going to issues@. The community was losing dev@
+  subscribers because of the high volume of traffic from Gitbox. However,
+  now all updates are sent to issues@. It would be nice to have emails
+  from creation go to dev@, while updates and resolutions would go the
+  issues@.
+* The trademark agreement proposed by Netflix was not acceptable to the
+  ASF. It would be helpful if the ASF published the terms that the ASF
+  requires to avoid trial and error. Netflix is drafting a new agreement.
+
+How has the community developed since the last report?
+
+* Moved gitbox notifications to avoid loss of dev@ subscribers
+(self-reported leaving dev@).
+* New contributor activity: 3 new issues opened, 4 PRs submitted
+* 5 PRs from non-committers merged
+* 2 contributors started reviewing PRs
+* New design doc proposed by a community contributor
+* Moved issues from Netflix repository to Apache repository
+
+How has the project developed since the last report?
+
+* Planned blockers for first release, 0.1.0, in milestone 1
+* Partial python implementation submitted
+* Manifest listing file added to the spec and implementation committed
+(blocker for initial release). Resulted in a significant improvement in
+query planning time for large tables.
+* Abstracted file IO API to support community use cases
+* Reviewing community proposal for external plugins to support file-level
+encryption
+* Added doc strings to schemas
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[X] Initial setup (name clearance pending)
+[X] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+None yet
+
+When were the last committers or PPMC members elected?
+
+None yet
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Last month was December, so traffic has been low and both PPMC members and
+mentors were slow to respond. This is not abnormal, but the PPMC missed
+the deadline to file this report. We will ensure this doesn't recur.
+
+Signed-off-by:
+
+[X](iceberg) Ryan Blue
+   Comments: I wrote the first pass of the report, but after the deadline.
+[ ](iceberg) Julien Le Dem
+   Comments:
+[X](iceberg) Owen O'Malley
+   Comments: Approval from +1 on dev list.
+[ ](iceberg) James Taylor
+   Comments:
+[ ](iceberg) Carl Steinbach
+   Comments:</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#iceberg">2018-12-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>Iceberg is a table format for large, slow-moving tabular data.
+
+Iceberg has been incubating since 2018-11-16.
+
+Three most important issues to address in the move towards graduation:
+
+1. Get the SGA accepted.
+2. Finish the name clearance.
+3. Make the first Apache release.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+* Gitbox integration has helped a lot, although it is frustrating that
+  the team members are not allowed to configure the project and must go
+  through infra for every change.
+* The traffic on the dev list from Github pull requests and issues is
+  pretty heavy. It would be nice to have emails from creation go to dev@,
+  while updates and resolutions would go the issues@.
+
+How has the community developed since the last report?
+
+This is the first report.
+
+How has the project developed since the last report?
+
+This is the first report.
+Both the software grant and trademark agreements have been submitted.
+Code has been imported and updated to use the ASF license header. LICENSE
+and NOTICE files have been updated to comply with ASF policy.
+Podling website is up at https://iceberg.apache.org.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[X] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+None yet
+
+When were the last committers or PPMC members elected?
+
+None yet
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+We're working through the issues as they come up.
+
+Signed-off-by:
+
+[X](iceberg) Ryan Blue
+   Comments:
+[ ](iceberg) Julien Le Dem
+   Comments:
+[X](iceberg) Owen O'Malley
+   Comments: I wrote the first pass of the report.
+[X](iceberg) James Taylor
+   Comments:
+[X](iceberg) Carl Steinbach
+   Comments:
+
+IPMC/Shepherd notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

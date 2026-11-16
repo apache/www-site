@@ -1,0 +1,3896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: ZooKeeper | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: ZooKeeper';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: ZooKeeper';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: ZooKeeper</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="zookeeper">ZooKeeper<a class="headerlink" href="#zookeeper" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016-03-16</td>
+<td><a href="2016/board_minutes_2016_03_16.html#section-7E">Appointed Flavio Junqueira</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2015-01-21</td>
+<td><a href="2015/board_minutes_2015_01_21.html#section-7D">Appointed Michi Mutsuzaki</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2013-04-17</td>
+<td><a href="2013/board_minutes_2013_04_17.html#section-7B">Appointed Flavio Junqueira</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2012-02-15</td>
+<td><a href="2012/board_minutes_2012_02_15.html#section-7C">Appointed Mahadev Konar</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2010-11-17</td>
+<td><a href="2010/board_minutes_2010_11_17.html#section-7B">Appointed Patrick Hunt</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2010-11-17</td>
+<td><a href="2010/board_minutes_2010_11_17.html#section-7B">Establish the Apache ZooKeeper Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-CE">2026-06-17</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (16 years ago)
+There are currently 34 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Kezhu Wang on 2026-01-19.
+- No new committers. Last addition was Christopher Tubbs on 2025-11-18.
+
+## Project Activity:
+No release during the period, although there has been a noticeable increase
+project traffic, see traffic in lists such as dev@ and issues@. The community
+plans to continue working towards the next maintenance release of 3.9 and a
+major 3.10.0 release.
+
+## Community Health:
+The mailing list metrics indicate an increase in project traffic, which
+is clearly positive from a project health perspective.
+
+- dev@zookeeper.apache.org had a 105% increase in traffic in the
+  past quarter (123 emails compared to 60)
+- issues@zookeeper.apache.org had a 110% increase in traffic in the
+  past quarter (221 emails compared to 105)
+- notifications@zookeeper.apache.org had a 106% increase in traffic
+  in the past quarter (305 emails compared to 148)
+- user@zookeeper.apache.org had a 34% decrease in traffic in the past
+  quarter (8 emails compared to 12)
+- 29 JIRA tickets opened and 17 closed in the past quarter.
+
+
+------------------------------------------------------
+End of minutes for the June 17, 2026 board meeting.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-CG">2026-03-18</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (15 years ago)
+There are currently 34 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Kezhu Wang was added to the PMC on 2026-01-19
+- No new committers. Last addition was Christopher Tubbs on 2025-11-18.
+
+## Project Activity:
+Recent releases:
+3.9.5 was released on 2026-03-05.
+3.8.6 was released on 2026-02-11.
+
+## Community Health:
+It has been a good quarter for the project with a couple of maintenance
+releases, a new PMC member and the community health score of 9.6 indicates
+a good amount of activity. Thanks community!
+
+https://reporter.apache.org/wizard/statistics?zookeeper
+
+
+------------------------------------------------------
+End of minutes for the March 18, 2026 board meeting.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-CK">2025-12-17</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (15 years ago)
+There are currently 34 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damien Diederen on 2024-04-16.
+- Christopher Tubbs was added as committer on 2025-11-18
+
+## Project Activity:
+
+- 3.8.5 was released on 2025-09-18.
+- Community focus is on 3.10.0 and 4.0.0 as per this email thread:
+https://lists.apache.org/thread/q2jcnlfyw2yc4o87b7kppwvw25p1kq0s
+
+## Community Health:
+The metrics show a drop in the dev activity post release 3.8.5. There
+was an initial burst of interest in the following releases right after
+3.8.5, but it did persist throughout this past period. I don't have a
+good explanation for the drop, perhaps it can be attributed to contributors
+switching context to other things, but again, there is no data to back it.
+
+On the comments from the board on the last report, thanks for raising the
+point about the bar being high and Tison for bringing a new committer
+forward. It doesn't seem to be a matter of a high bar, but more of PMC
+members grooming/mentoring contributors to become committers. Perhaps a
+good course of action for the present PMC would be to identify and refresh
+the PMC with some new members. It hasn't happened in a while and it is needed.
+As part of preparing this report, I am going to propose to the remainder of
+the PMC that look into potential candidates from the present active committers
+and invite accordingly.
+
+
+------------------------------------------------------
+End of minutes for the December 17, 2025 board meeting.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-CQ">2025-09-24</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (15 years ago)
+There are currently 33 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damien Diederen on 2024-04-16.
+- No new committers. Last addition was Kezhu Wang on 2024-08-02.
+
+## Project Activity:
+Recent releases:
+3.9.4 was released on 2025-08-29.
+3.8.5 being voted
+
+## Community Health:
+The same observation from the last report still holds about committer and PMC
+participation, although we have improved participation metrics in this period
+from the email and jira metrics. We are copying the observation from the last
+report here for completeness.
+
+We seem to have an issue of committer and PMC participation in the community.
+We observe questions and discussion threads on the project lists, but not
+enough committer and PMC engagement to drive the work forward. We would need
+more engagement to be able to work with current developers to eventually offer
+them committership and ensure that the community can continue to exist, grow
+and thrive.
+
+
+------------------------------------------------------
+End of minutes for the September 24, 2025 board meeting.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-CH">2025-06-18</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing, low activity
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (15 years ago)
+There are currently 33 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damien Diederen on 2024-04-16.
+- No new committers. Last addition was Kezhu Wang on 2024-08-02.
+
+## Project Activity:
+There is code activity on the dev list, but it is not materializing into
+a release. There is a thread started for the rc0 of 3.9.4, but it has
+not completed. Overall, it is missing more committer and PMC activity. There
+are questions about upcoming releases, showing interest, but again, not
+enough dev activity.
+
+## Community Health:
+We seem to have an issue of committer and PMC participation in the
+community. We observe questions and discussion threads on the project
+lists, but not enough committer and PMC engagement to drive the work
+forward. We would need more engagement to be able to work with current
+developers to eventually offer them committership and ensure that the
+community can continue to grow and thrive.
+
+
+------------------------------------------------------
+End of minutes for the June 18, 2025 board meeting.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-CE">2025-03-19</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (14 years ago)
+There are currently 33 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damien Diederen on 2024-04-16.
+- No new committers. Last addition was Kezhu Wang on 2024-08-02.
+
+We need to focus on inviting new committers.
+
+## Project Activity:
+There hasn't been release activity during this period, the last release
+was in Oct. 2024. There is email, commit and PR activity, but we haven't
+driven a release. We will look into driving at least a maintenance release
+in the next period.
+
+## Community Health:
+The metrics shown in reporter are broken, they say no commits or PRs, but
+that's incorrect. The github repository shows otherwise, and we have started
+an email thread to look into it (https://lists.apache.org/
+thread/6w4qyg5mfcxhkk7z37scmv3xpxtt21yg).
+
+As mentioned above, we haven't had release activity in this period, but we
+have had a regular project activity around email exchanges, issues, PRs and
+commits. We did notice that Apache Curator, which is a downstream project of
+Apache ZooKeeper, cut a new release 5.8.0.
+
+
+------------------------------------------------------
+End of minutes for the March 19, 2025 board meeting.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-CD">2024-12-18</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (14 years ago)
+There are currently 33 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1. We did not extend invitations
+to new committers or PMC members during this period.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damien Diederen on 2024-04-16.
+- No new committers. Last addition was Kezhu Wang on 2024-08-02.
+
+## Project Activity:
+The latest release is 3.9.3 released on 2024-10-24. On releases, there was
+this comment from the board:
+
+&gt; I saw several vote threads that started with "RE" so I increased the
+&gt; search range and saw that the last release votes took almost a full month
+&gt; to reach the 3 binding +1 votes. - ZooKeeper 3.9.2: Started on 12th Feb,
+&gt; Finished 11th Mar - ZooKeeper 3.8.4: Started on 12th Feb, Finished 4th Mar
+&gt; Not sure the project could fire out a release quickly, if needed.
+
+Using 3.9.3 as a recent example:
+- There was a release prep thread that started on Sep. 17th and ended
+on Oct. 1st.
+- The vote for rc0 started on Oct. 1st and closed on Oct. 8th
+- The vote for rc1 started on Oct. 9th and closed on Oct. 17th.
+- The vote for rc2 started on Oct. 18th and closed on Oct. 24th
+
+It is accurate that the whole process took over a month, but the individual
+discussion and vote threads took a very reasonable amount of time as
+we give time for input and there were multiple release candidates. The PMC
+consequently does not perceive a problem with our ability to release quickly.
+
+## Community Health:
+The project historically has had more activity in the dev list than in the
+user list. It remains the same, and while we see some messages coming in the
+user list, most of the activity for the period is in the dev list. There are
+multiple contributions about maintaining the project and the code base. One
+noticeable point is that there has been some interest from the community about
+a Rust client for ZooKeeper, and there is some initial effort ongoing:
+
+https://github.com/fanyang89/fastkeeper
+
+
+------------------------------------------------------
+End of minutes for the December 18, 2024 board meeting.</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-CE">2024-09-18</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (14 years ago)
+There are currently 33 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Damien Diederen on 2024-04-16.
+- Kezhu Wang was added as committer on 2024-08-02
+
+## Project Activity:
+There hasn't been any release in this last period, although there is development
+traffic as observed from the issues created and updated. It could be in part due
+to contributors being away during the summer months, but some of the issues
+about activity have been observed previously or even repeatedly:
+
+- As raised in a comment from the previous report, the release process has been
+slow and it puts in question the ability of this community to produce a release
+fast if needed.
+- There are a number of user questions that go unanswered
+- The PMC overall has not been very active in driving the community, and in
+particular, could be playing a more active role in driving releases and
+mentoring contributors to become new committers and PMC members.
+
+Overall, we have been observing over time a drop in activity due to more
+options of projects in this space and options of distributed systems
+architecture.
+## Community Health:
+The community is making progress with issues and features, but there has been
+no release, and overall activity has been dropping over time. It is lacking a
+more active role of the PMC (as a whole, since there are always exceptional
+individuals who step up) when it comes to providing guidance and driving the
+community work. Releases are consequently affected by the lack of guidance.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-CC">2024-06-19</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (14 years ago)
+There are currently 32 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Damien Diederen was added to the PMC on 2024-04-16
+- Zili Chen was added to the PMC on 2024-04-16
+- No new committers. Last addition was Li Wang on 2023-03-17.
+
+## Project Activity:
+The most recent releases from March 2024 have been reported already,
+I'm repeating them here for convenience:
+
+- 3.9.2 was released on 2024-03-12.
+- 3.8.4 was released on 2024-03-05.
+
+## Community Health:
+It has not been a quarter with a lot of community activity. We intend to
+assess interest on the next major release 3.10.0 and minor releases of the 3.8
+and 3.9 branches, and drive the development accordingly.
+
+- dev@zookeeper.apache.org had a 22% decrease in traffic in the past quarter
+ (75 emails compared to 95)
+- user@zookeeper.apache.org had a 83% increase in traffic in the past quarter
+ (11 emails compared to 6)
+- 6 issues opened in JIRA, past quarter (-84% change)
+- 4 issues closed in JIRA, past quarter (-78% change)
+- 3 commits in the past quarter (-95% change)
+- 4 code contributors in the past quarter (-78% change)
+
+
+------------------------------------------------------
+End of minutes for the June 19, 2024 board meeting.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-CI">2024-03-20</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (13 years ago)
+There are currently 32 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mate Szalay-Beko on 2022-03-28.
+- No new committers. Last addition was Li Wang on 2023-03-17.
+
+## Project Activity:
+The community released two minor versions in the last reporting period:
+
+3.9.2 was released on 2024-03-12.
+3.8.4 was released on 2024-03-05.
+
+## Community Health:
+The traffic increase on the dev list is due to the releases.
+
+- dev@zookeeper.apache.org had a 26% increase in traffic in the past quarter
+ (106 emails compared to 84)
+- user@zookeeper.apache.org had a 56% decrease in
+ traffic in the past quarter (9 emails compared to 20)
+
+The numbers below are not correct as they are not supposed to be zero, we are
+not sure why these metrics are being reported incorrectly.
+
+- 0 issues opened in JIRA, past quarter (-100% change) 0 issues closed in
+ JIRA, past quarter (-100% change)
+- 0 commits in the past quarter (-100% change) 0 code contributors in the
+ past quarter (-100% change)
+- 0 PRs opened on GitHub, past quarter (-100% change) 0 PRs closed on GitHub,
+ past quarter (-100% change)
+
+
+------------------------------------------------------
+End of minutes for the March 20, 2024 board meeting.</pre>
+<h3 id="2024-01-17"><a href="2024/board_minutes_2024_01_17.html#attachment-CS">2024-01-17</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2024-01-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (13 years ago)
+There are currently 32 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mate Szalay-Beko on 2022-03-28.
+- No new committers. Last addition was Li Wang on 2023-03-17.
+
+## Project Activity:
+The community has proudly delivered three minor releases with multiple
+improvements and bug fixes:
+- 3.7.2 was released on 2023-10-09.
+- 3.8.3 was released on 2023-10-09.
+- 3.9.1 was released on 2023-10-09.
+
+## Community Health:
+Traffic dropped with the releases and the end-of-year break. The community
+plans to continue to work on the issues for 3.10.0 and minor releases of
+existing branches (3.7, 3.8, and 3.9) which are still broadly used.
+
+- dev@zookeeper.apache.org had a 22% decrease in traffic in the past quarter (79
+emails compared to 101)
+- issues@zookeeper.apache.org had a 35% decrease in
+traffic in the past quarter (138 emails compared to 211)
+- notifications@zookeeper.apache.org had a 46% decrease in traffic in the past
+quarter (164 emails compared to 303)
+- user@zookeeper.apache.org had a 62%
+decrease in traffic in the past quarter (16 emails compared to 42)
+- 17 issues opened in JIRA, past quarter (-58% change)
+- 6 issues closed in JIRA, past quarter (-81% change)
+- 23 commits in the past quarter (-73% change)
+- 10 code contributors in the past quarter (-47% change)
+- 18 PRs opened on GitHub, past quarter (-60% change)
+- 13 PRs closed on GitHub, past quarter (-58% change)
+
+
+------------------------------------------------------
+End of minutes for the January 17, 2024 board meeting.</pre>
+<h3 id="2023-12-20"><a href="2023/board_minutes_2023_12_20.html#section-6CE">2023-12-20</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2023-12-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+Committee reports approved as submitted by General Consent.</pre>
+<h3 id="2023-09-20"><a href="2023/board_minutes_2023_09_20.html#attachment-CI">2023-09-20</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2023-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (13 years ago)
+There are currently 32 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mate Szalay-Beko on 2022-03-28.
+- No new committers. Last addition was Li Wang on 2023-03-17.
+
+## Project Activity:
+Recent releases:
+3.9.0 was released on 2023-08-03.
+3.8.2 was released on 2023-07-17.
+
+## Community Health:
+
+There has been two releases in the past quarter, including a major release,
+which led to an overall increase of project traffic.
+
+- dev@zookeeper.apache.org had a 257% increase in traffic in the past
+ quarter (168 emails compared to 47)
+- notifications@zookeeper.apache.org had a 173% increase in traffic
+ in the past quarter (353 emails compared to 129)
+- user@zookeeper.apache.org had a 100% increase in traffic in the
+ past quarter (62 emails compared to 31)
+- 35 issues opened in JIRA, past quarter (45% increase)
+- 22 issues closed in JIRA, past quarter (-38% change)
+- 57 commits in the past quarter (185% increase)
+- 18 code contributors in the past quarter (260% increase)
+- 48 PRs opened on GitHub, past quarter (128% increase)
+- 35 PRs closed on GitHub, past quarter (52% increase)
+
+
+------------------------------------------------------
+End of minutes for the September 20, 2023 board meeting.</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#attachment-CE">2023-06-21</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Project Status:
+Current project status: Ongoing, moderate to low activity
+Issues for the board: None
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (13 years ago)
+There are currently 32 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mate Szalay-Beko on 2022-03-28.
+- Li Wang was added as committer on 2023-03-17
+
+## Project Activity:
+The most recent release is 3.8.1, which was released on 2023-01-30. There
+is an ongoing thread about cutting a 3.9.0 major release, and minor releases
+for the 3.7.and 3.8 branches.
+
+## Community Health:
+We have added a new committer, and the community is discussing the scope
+and management of upcoming releases, major and minor. The dev traffic metrics
+are low, and it is possibly due to the absence of release in the period. User
+traffic has increased compared to the previous period.
+
+- dev@zookeeper.apache.org had a 73% decrease in traffic
+in the past quarter (47 emails compared to 168)
+- notifications@zookeeper.apache.org had a 64% decrease
+in traffic in the past quarter (131 emails compared to 359)
+- user@zookeeper.apache.org had a 106% increase in traffic
+in the past quarter (31 emails compared to 15)
+- 23 issues opened in JIRA, past quarter (-32% change)
+- 27 issues closed in JIRA, past quarter (-3% change)
+- 7 commits in the past quarter (-91% change)
+- 4 code contributors in the past quarter (-78% change)
+- 15 PRs opened on GitHub, past quarter (-51% change)
+- 11 PRs closed on GitHub, past quarter (-71% change)
+
+
+------------------------------------------------------
+End of minutes for the June 21, 2023 board meeting.</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#attachment-CB">2023-03-22</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables the
+implementation of a variety of primitives and mechanisms that are critical for
+safety and liveness in distributed settings, e.g., distributed locks, master
+election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (12 years ago) There are currently 31
+committers and 16 PMC members in this project. The Committer-to-PMC ratio is
+roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mate Szalay-Beko on 2022-03-28.
+- Zili Chen was added as committer on 2023-01-31
+
+## Project Activity:
+- 3.8.1 was released on 2023-01-30
+- 3.6.4 was released on 2022-12-30.
+
+## Community Health:
+The community released two new versions of the software, both bug-fix
+releases. A new committer has been onboarded and the community is working
+towards future maintenance and major releases.
+
+
+------------------------------------------------------
+End of minutes for the March 22, 2023 board meeting.</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#attachment-CJ">2022-12-21</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (12 years ago)
+There are currently 30 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mate Szalay-Beko on 2022-03-28.
+- No new committers. Last addition was Ling Mao on 2021-01-16.
+
+Currently discussing among the PMC potential contributors to discuss, vote on
+and offer committership.
+
+## Project Activity:
+The main activity has been the preparation of version 3.6.4, a maintenance
+release of the 3.6 branch. The latest branch is 3.8.
+
+## Community Health:
+Increased activity compared to the last period, note issues closed, commits
+and code contributions metrics. We noticed less email activity overall, though.
+
+- dev@zookeeper.apache.org had a 31% decrease in traffic in the past
+quarter (74 emails compared to 106)
+- issues@zookeeper.apache.org had a 32% decrease in traffic in the past
+ quarter (195 emails compared to 286)
+- notifications@zookeeper.apache.org had a 36% decrease in traffic in the
+past quarter (244 emails compared to 377)
+- user@zookeeper.apache.org had a 55% increase in traffic in the past quarter
+(56 emails compared to 36)
+- 34 issues opened in JIRA, past quarter (-39% change)
+- 13 issues closed in JIRA, past quarter (-27% change)
+- 15 commits in the past quarter (-25% change)
+- 6 code contributors in the past quarter (-33% change)
+- 35 PRs opened on GitHub, past quarter (34% increase)
+- 11 PRs closed on GitHub, past quarter (-31% change)
+
+
+------------------------------------------------------
+End of minutes for the December 21, 2022 board meeting.</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#attachment-CH">2022-09-21</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (12 years ago)
+There are currently 30 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mate Szalay-Beko on 2022-03-28.
+- No new committers. Last addition was Ling Mao on 2021-01-16.
+
+## Project Activity:
+No release in the reporting period. Release branch 3.5 was made end-of-line,
+and the community is now focusing on release branches 3.6 through 3.8. Release
+3.7.1 is the latest stable release while we stabilize the 3.8 branch.
+
+## Community Health:
+We have been observing in the recent past projects that have historically
+used ZooKeeper for distributed coordination moving to alternatives, such as
+other coordination systems or their own Raft implementation. Project traffic,
+consequently, has been dropping, although there is still sufficient interest
+in maintaining the project as many applications still rely on ZooKeeper. In
+this last reporting period, however, traffic was very low across multiple
+metrics, see below. It is possible that it is at least in part due to summer
+break, but we will regardless keep tracking traffic metrics to determine
+whether this is a trend or seasonal. We will also continue to work with the
+community to encourage more participation, especially from new contributors.
+
+
+- dev@zookeeper.apache.org had a 31% decrease in traffic in the past quarter (74
+emails compared to 106)
+- issues@zookeeper.apache.org had a 32% decrease in
+traffic in the past quarter (195 emails compared to 286)
+- notifications@zookeeper.apache.org had a 36% decrease in traffic in the past
+quarter (244 emails compared to 377)
+- user@zookeeper.apache.org had a 55%
+increase in traffic in the past quarter (56 emails compared to 36)
+- 51 issues opened in JIRA, past quarter (-21% change)
+- 14 issues closed in JIRA, past quarter (-67% change)
+- 17 commits in the past quarter (-85% change)
+- 9 code contributors in the past quarter (-64% change)
+- 27 PRs opened on GitHub, past quarter (-52% change)
+- 16 PRs closed on GitHub, past quarter (-62% change)
+
+
+------------------------------------------------------
+End of minutes for the September 21, 2022 board meeting.</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#attachment-CE">2022-06-15</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (12 years ago)
+There are currently 30 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Mate Szalay-Beko was added to the PMC on 2022-03-28
+- No new committers. Last addition was Ling Mao on 2021-01-16.
+
+## Project Activity:
+Recent releases:
+
+3.5.10 was released on 2022-06-04.
+3.7.1 was released on 2022-05-11.
+3.8.0 was released on 2022-03-07.
+
+## Community Health:
+
+Increase in commit and number of code contributors in the period due to
+recent release traffic.
+
+- dev@zookeeper.apache.org had a 31% decrease in traffic in the
+ past quarter (74 emails compared to 106)
+- issues@zookeeper.apache.org had a 32% decrease in traffic in the
+ past quarter (195 emails compared to 286)
+- notifications@zookeeper.apache.org had a 36% decrease in traffic in the
+ past quarter (244 emails compared to 377)
+- user@zookeeper.apache.org had a 55% increase in traffic in the
+ past quarter (56 emails compared to 36)
+- 62 issues opened in JIRA, past quarter (-10% change)
+- 40 issues closed in JIRA, past quarter (-2% change)
+- 113 commits in the past quarter (44% increase)
+- 26 code contributors in the past quarter (62% increase)
+- 55 PRs opened on GitHub, past quarter (no change)
+- 41 PRs closed on GitHub, past quarter (no change)
+
+
+------------------------------------------------------
+End of minutes for the June 15, 2022 board meeting.</pre>
+<h3 id="2022-03-16"><a href="2022/board_minutes_2022_03_16.html#attachment-BX">2022-03-16</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2022-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (11 years ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Enrico Olivelli on 2020-01-15.
+- No new committers. Last addition was Ling Mao on 2021-01-16.
+
+## Project Activity:
+Releases during the reporting period:
+- 3.8.0 was released on 2022-03-07.
+
+## Community Health:
+Overall project activity increased due to release work compared to previous
+period.
+
+- dev@zookeeper.apache.org had a 31% decrease in traffic in the past quarter (74
+emails compared to 106)
+- issues@zookeeper.apache.org had a 32% decrease in
+traffic in the past quarter (195 emails compared to 286)
+- notifications@zookeeper.apache.org had a 36% decrease in traffic in the past
+quarter (244 emails compared to 377)
+- user@zookeeper.apache.org had a 55%
+increase in traffic in the past quarter (56 emails compared to 36)
+- 65 issues opened in JIRA, past quarter (22% increase)
+- 40 issues closed in JIRA, past quarter (122% increase)
+- 76 commits in the past quarter (130% increase)
+- 16 code contributors in the past quarter (no change)
+- 50 PRs opened on GitHub, past quarter (47% increase)
+- 39 PRs closed on GitHub, past quarter (25% increase)
+
+
+------------------------------------------------------
+End of minutes for the March 16, 2022 board meeting.</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#attachment-CG">2021-12-15</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issue requires board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (11 years ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Enrico Olivelli on 2020-01-15.
+- No new committers. Last addition was Ling Mao on 2021-01-16.
+
+## Project Activity:
+There has been no new release in the last period. It is clear that the
+community activity has dropped and the PMC will discuss how to proceed
+about it.
+
+## Community Health:
+- dev@zookeeper.apache.org had a 24% decrease in traffic in the past
+ quarter (74 emails compared to 97)
+- notifications@zookeeper.apache.org had a 32% decrease in traffic
+ in the past quarter (284 emails compared to 417)
+- 45 issues opened in JIRA, past quarter (-26% change)
+- 14 issues closed in JIRA, past quarter (-60% change)
+- 31 commits in the past quarter (-36% change)
+- 16 code contributors in the past quarter (-20% change)
+- 30 PRs opened on GitHub, past quarter (-28% change)
+- 29 PRs closed on GitHub, past quarter (-30% change)</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#attachment-CB">2021-09-15</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issue requires board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (11 years ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Enrico Olivelli on 2020-01-15.
+- No new committers. Last addition was Ling Mao on 2021-01-16.
+
+## Project Activity:
+There was no release in the period, although the community is working
+towards 3.7.1. We did have two releases in the last period, though.
+
+## Community Health:
+Metrics indicate a drop on the activity across email lists and GitHub.
+Summer months tend to be a bit quiet, but we will keep monitoring the
+metrics in the near future.
+
+
+------------------------------------------------------
+End of minutes for the September 15, 2021 board meeting.</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#attachment-BW">2021-06-16</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (11 years ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Enrico Olivelli on 2020-01-15.
+- No new committers. Last addition was Ling Mao on 2021-01-16.
+
+## Project Activity:
+Releases during the reporting period:
+- 3.6.3 was released on 2021-04-12.
+- 3.7.0 was released on 2021-03-27.
+
+## Community Health:
+
+There was a fair amount of activity for release 3.7.0, and after the
+release, the communication channels have gone a bit quiet. We will keep
+watching the trend of the community health metrics in the next reporting
+periods.
+
+- dev@zookeeper.apache.org had a 54% decrease in traffic in the past
+ quarter (185 emails compared to 395)
+- user@zookeeper.apache.org had a 30% decrease in traffic in the past
+ quarter (56 emails compared to 80)
+- 63 issues opened in JIRA, past quarter (-36% change)
+- 42 issues closed in JIRA, past quarter (-43% change)
+- 97 commits in the past quarter (-29% change)
+- 27 code contributors in the past quarter (-12% change)
+- 69 PRs opened on GitHub, past quarter (-15% change)
+- 58 PRs closed on GitHub, past quarter (-27% change)
+
+
+------------------------------------------------------
+End of minutes for the June 16, 2021 board meeting.</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#attachment-CC">2021-03-17</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (10 years ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Enrico Olivelli on 2020-01-15.
+- Ling Mao was added as committer on 2021-01-16
+
+## Project Activity:
+3.5.9 was released on 2021-01-14.
+3.6.3 and 3.7.0 are in progress
+
+The community has focused on minor releases of the 3.6. branch
+and it is also getting ready to release 3.7.0. 3.7.0 has had a release
+candidate, but it has not passed the vote. The work towards cutting
+these releases will continue in the next period.
+
+
+## Community Health:
+
+The project overall had more discussion and more commits as part
+of closing on releases, but fewer GitHub PRs have been created
+and closed compared to the previous reporting period. The difference
+reflects the current community focus on releases.
+
+- dev@zookeeper.apache.org had a 34% increase in traffic in the past quarter
+(402 emails compared to 298)
+- notifications@zookeeper.apache.org had a 38%
+decrease in traffic in the past quarter (650 emails compared to 1035)
+- user@zookeeper.apache.org had a 50% increase in traffic in the past quarter
+(90 emails compared to 60)
+- 115 commits in the past quarter (26% increase)
+- 31 code contributors in the past quarter (3% increase)
+- 68 PRs opened on GitHub, past quarter (-35% decrease)
+- 57 PRs closed on GitHub, past quarter (-44% decrease)
+
+
+------------------------------------------------------
+End of minutes for the March 17, 2021 board meeting.</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#attachment-BW">2020-12-16</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issue requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (10 years ago)
+There are currently 29 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Enrico Olivelli on 2020-01-15.
+- Damien Diederen was added as committer on 2020-10-27
+
+## Project Activity:
+Recent releases:
+
+3.6.2 was released on 2020-09-09.
+3.5.8 was released on 2020-05-11.
+3.6.1 was released on 2020-04-30.
+
+## Community Health:
+All metrics indicate an increase in development activity during the period.
+The user list is the only one that has presented a drop. Historically, the
+user list hasn't been a very active list.
+
+- dev@zookeeper.apache.org had a 50% increase in traffic in the past quarter
+(309 emails compared to 206)
+- issues@zookeeper.apache.org had a 29% increase in
+traffic in the past quarter (572 emails compared to 441)
+- user@zookeeper.apache.org had a 42% decrease in traffic in the past quarter
+(60 emails compared to 103)
+- 71 issues opened in JIRA, past quarter (no change)
+- 63 issues closed in JIRA, past quarter (117% increase)
+- 96 commits in the past quarter (43% increase)
+- 30 code contributors in the past quarter (87% increase)
+- 104 PRs opened on GitHub, past quarter (38% increase)
+- 97 PRs closed on GitHub, past quarter (86% increase)
+
+
+------------------------------------------------------
+End of minutes for the December 16, 2020 board meeting.</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#attachment-CE">2020-09-16</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issues require board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (10 years ago)
+There are currently 28 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Enrico Olivelli on 2020-01-15.
+- No new committers. Last addition was Mate Szalay-Beko on 2020-04-03.
+
+## Project Activity:
+- Community is working on a bug fix release, 3.6.2.
+- Talk by Christopher Bunn, a Facebook Engineer, at Systems @Scale Remote
+Edition on containerizing ZooKeeper:
+https://atscaleconference.com/events/systems-scale-summer-2020/
+
+## Community Health:
+It is the second quarter in a row in which activity is dropping, even though
+the summer months tend to be slower in general because of vacation time.
+
+- dev@zookeeper.apache.org had a 54% decrease in traffic in the past quarter
+ (236 emails compared to 506)
+- issues@zookeeper.apache.org had a 45% decrease in traffic in the past
+ quarter (456 emails compared to 817)
+- user@zookeeper.apache.org had a 35% decrease in traffic in the past quarter
+ (103 emails compared to 158)
+- 67 issues opened in JIRA, past quarter (-36% decrease)
+- 28 issues closed in JIRA, past quarter (-62% decrease)
+- 64 commits in the past quarter (-59% decrease)
+- 16 code contributors in the past quarter (-44% decrease)
+- 71 PRs opened on GitHub, past quarter (-25% decrease)
+- 50 PRs closed on GitHub, past quarter (-50% decrease)
+
+
+------------------------------------------------------
+End of minutes for the September 16, 2020 board meeting.</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#attachment-BW">2020-06-17</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issue require board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (10 years ago)
+There are currently 28 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Enrico Olivelli on 2020-01-15.
+- Mate Szalay-Beko was added as committer on 2020-04-03
+
+## Project Activity:
+Recent releases:
+3.5.8 was released on 2020-05-11.
+3.6.1 was released on 2020-04-30.
+
+## Community Health:
+There has been an overall drop of activity according to the metrics
+below, but the community has delivered successfully two bug-fix
+releases. It is unclear whether that is of concern, but we will keep
+an eye on the trend for the next report cycles.
+
+- dev@zookeeper.apache.org had a 54% decrease in traffic in the past
+quarter (513 emails compared to 1107)
+- notifications@zookeeper.apache.org had a 44% increase in traffic
+in the past quarter (1609 emails compared to 1115)
+- user@zookeeper.apache.org had a 45% decrease in traffic in the
+past quarter (160 emails compared to 286)
+- 99 issues opened in JIRA, past quarter (-10% decrease)
+- 61 issues closed in JIRA, past quarter (-11% decrease)
+- 146 commits in the past quarter (-18% decrease)
+- 29 code contributors in the past quarter (-3% decrease)
+- 90 PRs opened on GitHub, past quarter (-17% decrease)
+- 94 PRs closed on GitHub, past quarter (6% increase)
+
+
+------------------------------------------------------
+End of minutes for the June 17, 2020 board meeting.</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#attachment-CC">2020-03-18</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (9 years ago)
+There are currently 27 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 9:5.
+
+Community changes, past quarter:
+- Enrico Olivelli was added to the PMC on 2020-01-15
+- No new committers. Last addition was Brian Nixon on 2019-09-24.
+
+## Project Activity:
+- Recent releases:
+   * 3.6.0 was released on 2020-03-03.
+   * 3.5.7 was released on 2020-02-14.
+   * 3.5.6 was released on 2019-10-18.
+- No new security vulnerability reported
+
+## Community Health:
+The community has worked on three releases in this period: two bug-fix
+releases and one major release. The activity increase observed across
+the dev list, issues opened/closed, commits and code contributions reflects
+all the effort from the community to cut all these releases. It was certainly
+a good quarter for the project.
+
+Health indicators:
+- dev@zookeeper.apache.org had a 13% increase in traffic in the
+past quarter (1170 emails compared to 1034)
+- issues@zookeeper.apache.org had a 27% decrease in traffic in
+the past quarter (788 emails compared to 1065)
+- 106 issues opened in JIRA, past quarter (no change)
+- 65 issues closed in JIRA, past quarter (30% increase)
+- 166 commits in the past quarter (107% increase)
+- 30 code contributors in the past quarter (20% increase)
+- 103 PRs opened on GitHub, past quarter (10% increase)
+- 80 PRs closed on GitHub, past quarter (1% increase)
+
+
+------------------------------------------------------
+End of minutes for the March 18, 2020 board meeting.</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#attachment-BW">2019-12-18</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (9 years ago)
+There are currently 27 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Andor Molnar on 2019-04-08.
+- Brian Nixon was added as committer on 2019-09-24
+
+## Project Activity:
+* Recent releases:
+ &bull; 3.5.6 was released on 2019-10-18.
+ &bull; 3.5.5 was released on 2019-05-20.
+ &bull; 3.4.14 was released on 2019-04-01.
+
+* No new security vulnerabilities identified during the period
+
+## Community Health:
+It has been a slow period with respect to contributions. Overall, contributions
+and discussions on the dev list have dropped, but the traffic on the user list
+has gone up with various questions ranging from semantics to upgrades.
+
+- dev@zookeeper.apache.org had a 2% decrease in traffic in the past quarter
+(1076 emails compared to 1096)
+- issues@zookeeper.apache.org had a 29% increase in traffic in the past quarter
+(1097 emails compared to 844)
+- user@zookeeper.apache.org had a 59% increase in traffic in the past quarter
+(279 emails compared to 175)
+- 99 issues opened in JIRA, past quarter (-14% decrease) 45 issues closed in
+JIRA, past quarter (-49% decrease)
+- 70 commits in the past quarter (-36% decrease) 25 code contributors in the
+past quarter (-21% decrease)
+- 82 PRs opened on GitHub, past quarter (-19% decrease) 74 PRs closed on GitHub,
+past quarter (-30% decrease)
+
+
+------------------------------------------------------
+End of minutes for the December 18, 2019 board meeting.</pre>
+<h3 id="2019-09-18"><a href="2019/board_minutes_2019_09_18.html#attachment-BW">2019-09-18</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2019-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a software system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No specific issues to the board.
+
+## Membership Data:
+Apache ZooKeeper was founded 2010-11-17 (9 years ago)
+There are currently 26 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Andor Molnar on 2019-04-08.
+- No new committers. Last addition was Enrico Olivelli on 2019-05-19.
+
+## Project Activity:
+No new releases during the reporting period.The latest releases are:
+
+* 3.5.5 was released on 2019-05-20.
+* 3.4.14 was released on 2019-04-01.
+* 3.4.13 was released on 2018-07-16.
+
+## Community Health:
+The traffic on the dev list has dropped during the period due to us shifting
+some of the notification traffic from dev to the notifications@ list. We had a
+spike on the issues@ list due to bulk changes to Jira issues (version
+updates). We also observed more traffic on the user list, which are general
+questions about ZooKeeper. We did observe a good number of questions around
+the internals (Zab and reconfiguration) of ZooKeeper.
+
+* dev@zookeeper.apache.org had a 44% decrease in traffic in the past quarter
+(1231 emails compared to 2169)
+* issues@zookeeper.apache.org had a 3130% increase in traffic in the past
+quarter (1260 emails compared to 39)
+* notifications@zookeeper.apache.org had a 1276% increase in traffic in the
+past quarter (1666 emails compared to 121)
+* user@zookeeper.apache.org had a 183% increase in traffic in the past
+quarter (184 emails compared to 65)
+* 112 issues opened in JIRA, past quarter (-1% decrease)
+* 83 issues closed in JIRA, past quarter (2% increase)
+* 102 commits in the past quarter (-18% decrease)
+* 32 code contributors in the past quarter (39% increase)
+* 96 PRs opened on GitHub, past
+quarter (-29% decrease)
+* 102 PRs closed on GitHub, past quarter (-7% decrease)
+
+
+------------------------------------------------------
+End of minutes for the September 18, 2019 board meeting.</pre>
+<h3 id="2019-06-19"><a href="2019/board_minutes_2019_06_19.html#attachment-CB">2019-06-19</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2019-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issue requires board attention
+
+## Activity:
+ - We have cut two releases in this period. 3.4.14 is a bug-fix release
+of the 3.4 branch, while the 3.5.5 release is the one in which we transitioned
+from beta to GA in the 3.5 branch. To recap, the 3.5 branch contains
+reconfiguration work, which took a long time to stabilize, and it is in fact
+a major milestone for the community.
+ - Both releases fix the security vulnerability reported in CVE-2019-0201.
+ - We have invited one committer to join the PMC, and offered committership
+to two new contributors.
+
+## Health report:
+The community is stable at the moment, and there has been no significant
+change to email and issue traffic. The community has been able to cut two
+releases and increase the group of committers and the PMC. We are continuously
+looking for opportunities to engage new contributors and offer committership
+to the ones that make important community contributions. Overall, there
+is no health concern.
+
+## PMC changes:
+
+ - Currently 14 PMC members.
+ - Andor Molnar was added to the PMC on Mon Apr 08 2019
+
+## Committer base changes:
+
+ - Currently 26 committers.
+ - New committers:
+    - Enrico Olivelli was added as a committer on Sun May 19 2019
+    - Norbert Kalm&aacute;r was added as a committer on Sat May 18 2019
+
+## Releases:
+
+ - 3.4.14 was released on Mon Apr 01 2019
+ - 3.5.5 was released on Mon May 20 2019
+
+## Mailing list activity:
+
+ We have added a mailing list for GitHub notifications. Otherwise, the traffic
+has not changed significantly.
+
+ - dev@zookeeper.apache.org:
+    - 475 subscribers (down -16 in the last 3 months):
+    - 2193 emails sent to list (2492 in previous quarter)
+
+ - issues@zookeeper.apache.org:
+    - 11 subscribers (up 11 in the last 3 months):
+    - 97 emails sent to list (0 in previous quarter)
+
+ - notifications@zookeeper.apache.org:
+    - 11 subscribers (up 11 in the last 3 months):
+    - 211 emails sent to list (0 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1175 subscribers (down -32 in the last 3 months):
+    - 75 emails sent to list (79 in previous quarter)
+
+
+## JIRA activity:
+
+ - 115 JIRA tickets created in the last 3 months
+ - 80 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2019-03-20"><a href="2019/board_minutes_2019_03_20.html#attachment-BX">2019-03-20</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2019-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issues requiring board attention.
+
+## Activity:
+No new releases, only development work during the period.
+
+## Health report:
+There has been no new release during the period, but we have bootstrapped
+the release process of 3.4.14, and it is currently being voted.
+
+The email activity has dropped compared to the last period, but the
+Jira activity has increased slightly. It has been a quiet period overall.
+
+The PMC continues to mentor contributors to eventually offer committership
+to the ones that show a strong commitment to the community.
+
+## PMC changes:
+
+- Currently 13 PMC members.
+- No new PMC members added in the last 3 months
+- Last PMC addition was Michael Han on Wed Jun 21 2017
+
+## Committer base changes:
+
+- Currently 24 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Fangmin Lv at Wed Oct 24 2018
+
+## Releases:
+
+- Last release was 3.4.13 on Mon Jul 16 2018
+
+## Mailing list activity:
+
+
+- dev@zookeeper.apache.org:
+   - 495 subscribers (down -8 in the last 3 months):
+   - 2691 emails sent to list (3691 in previous quarter)
+
+- user@zookeeper.apache.org:
+   - 1205 subscribers (down -12 in the last 3 months):
+   - 82 emails sent to list (136 in previous quarter)
+
+
+## JIRA activity:
+
+- 97 JIRA tickets created in the last 3 months
+- 81 JIRA tickets closed/resolved in the last 3 months
+
+
+------------------------------------------------------
+End of minutes for the March 20, 2019 board meeting.</pre>
+<h3 id="2018-12-19"><a href="2018/board_minutes_2018_12_19.html#attachment-BY">2018-12-19</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2018-12-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issues requiring board attention.
+
+## Activity:
+ - No new releases during the reporting period.
+ - Facebook hosted a ZooKeeper meetup on Nov. 08.
+   (https://www.facebook.com/zkmeetup)
+ - We had one issue reported to the security list, which is under
+   discussion.
+
+## Health report:
+ - We added one new committer during the reporting period and we are
+always on the look for new contributors who are interested in stepping
+their community participation up.
+ - We had a significant growth in the dev list activity: 62% increase
+compared to the previous quarter.
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michael Han on Wed Jun 21 2017
+
+## Committer base changes:
+
+ - Currently 24 committers.
+ - Fangmin Lv was added as a committer on Wed Oct 24 2018
+
+## Releases:
+
+ - Last release was 3.4.13 on Mon Jul 16 2018
+
+## Mailing list activity:
+
+We observed a 62% increase in the dev list traffic compared to the previous
+reporting period, and a negligible decrease (3%) on the user list traffic. The
+user has not been heavily used historically in this project historically.
+
+ - dev@zookeeper.apache.org:
+    - 501 subscribers (down -6 in the last 3 months):
+    - 3850 emails sent to list (2362 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1217 subscribers (down -3 in the last 3 months):
+    - 150 emails sent to list (155 in previous quarter)
+
+
+## JIRA activity:
+
+ - 70 JIRA tickets created in the last 3 months
+ - 69 JIRA tickets closed/resolved in the last 3 months
+
+
+------------------------------------------------------
+End of minutes for the December 19, 2018 board meeting.</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#attachment-BV">2018-09-19</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+No issue requiring board attention
+
+## Activity:
+- The community has released a bug-fix version of the 3.4 branch.
+- The community organised a meetup in Budapest in June:
+  https://www.meetup.com/Cloudera-Tech-Meetup/events/250837466/
+
+## Health report:
+The summer months are typically not that active because of school breaks.
+For this past period, the activity has remained roughly constant with some
+minor changes. The community continues to work with contributors to offer
+committership.
+
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michael Han on Wed Jun 21 2017
+
+## Committer base changes:
+
+ - Currently 23 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Andor Molnar at Fri Jun 01 2018
+
+## Releases:
+
+ - 3.4.13 was released on Mon Jul 16 2018
+
+## Mailing list activity:
+
+The activity of the dev list has increased by roughly 13%, while the
+activity of the user list has dropped by roughly 8%. The user list has
+not been very active in the recent past, while the dev list has traditionally
+been more active.
+
+ - dev@zookeeper.apache.org:
+    - 510 subscribers (up 2 in the last 3 months):
+    - 2632 emails sent to list (2320 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1219 subscribers (down -11 in the last 3 months):
+    - 176 emails sent to list (191 in previous quarter)
+
+
+## JIRA activity:
+
+ - 85 JIRA tickets created in the last 3 months
+ - 66 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-06-20"><a href="2018/board_minutes_2018_06_20.html#attachment-BY">2018-06-20</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2018-06-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+  No issue requiring board attention
+
+## Activity:
+  The community has released versions 3.4.12 and 3.5.4 during the
+  reporting period:
+
+  - Release 3.4.12: This release fixes 22 issues, including issues that
+  affect incorrect handling of the dataDir and the dataLogDir as reported
+  in the previous version of the 3.4 branch.
+
+  - Release 3.5.4: 3.5.4-beta is the second beta in the planned 3.5 release
+  line leading up to a stable 3.5 release. It comprises 113 bug fixes and
+  improvements. The previous release of branch 3.5, release 3.5.3, added
+  a new feature ZOOKEEPER-2169 &ldquo;Enable creation of nodes with TTLs&rdquo;. There
+  was a major oversight when TTL nodes were implemented, and ZOOKEEPER-2901
+  fixes the issue.
+
+## Health report:
+  - The community has released two new versions of Apache ZooKeeper, and has
+  Successfully worked towards those releases.
+  - The PMC has invited one new committer.
+  - Apache ZooKeeper meetup in the Bay Area hosted by Cloudera:
+  https://www.meetup.com/Bay-Area-Cloudera-User-Group/events/250182745/
+  - Mailing list is mostly stable, except for a spike on dev due to the
+  Coordination around the releases.
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michael Han on Wed Jun 21 2017
+
+## Committer base changes:
+
+ - Currently 23 committers.
+ - Andor Molnar was added as a committer on Fri Jun 01 2018
+
+## Releases:
+
+ - 3.4.12 was released on Wed Apr 25 2018
+ - 3.5.4 was released on Wed May 16 2018
+
+## Mailing list activity:
+
+ We had more activity on the dev list due to the two releases we
+ Have cut in the reporting period.
+
+ - dev@zookeeper.apache.org:
+    - 510 subscribers (down -2 in the last 3 months):
+    - 2454 emails sent to list (1847 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1230 subscribers (down -10 in the last 3 months):
+    - 194 emails sent to list (120 in previous quarter)
+
+
+## JIRA activity:
+
+ - 63 JIRA tickets created in the last 3 months
+ - 51 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2018-03-21"><a href="2018/board_minutes_2018_03_21.html#attachment-BW">2018-03-21</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2018-03-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+ No issue requiring board attention
+
+## Activity:
+ - Community is working towards releasing 3.5.4. There are currently 10
+   listed blocker issues.
+ - Release 3.4.11 had a regression and 3.4.12 is on the way, we are ready
+   to cut a release candidate.
+ - There has been questions and work in the security list around
+   vulnerabilities, but there has been no disclosure in this period.
+
+## Health report:
+ The project activity is currently at a low. It has been fairly stable
+ during the past year, but we are still suffering from the
+ fact that a good chunk of the project committers are busy with other
+ activities. Our goal has been to work with contributors to offer them
+ committership to guarantee that we have a continuous flow of
+ contributions being merged.
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michael Han on Wed Jun 21 2017
+
+## Committer base changes:
+
+ - Currently 22 committers.
+ - Abraham Fine was added as a committer on Tue Jan 30 2018
+
+## Releases:
+
+ - Last release was 3.4.11 on Wed Nov 08 2017
+
+## Mailing list activity:
+
+ There has been a 15% and 35% drop in the dev and user lists,
+ respectively. This is significant and we attribute it to the
+ fact that we haven&rsquo;t had enough committer activity in the
+ project during this period.
+
+ - dev@zookeeper.apache.org:
+    - 512 subscribers (down -9 in the last 3 months):
+    - 2052 emails sent to list (2426 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1236 subscribers (up 8 in the last 3 months):
+    - 77 emails sent to list (118 in previous quarter)
+
+
+## JIRA activity:
+
+ - 46 JIRA tickets created in the last 3 months
+ - 25 JIRA tickets closed/resolved in the last 3 months
+
+
+------------------------------------------------------
+End of minutes for the March 21, 2018 board meeting.</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#attachment-CC">2017-12-20</a> &mdash; Flavio Paiva Junqueira<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache ZooKeeper is a system for distributed coordination. It enables
+the implementation of a variety of primitives and mechanisms that are
+critical for safety and liveness in distributed settings, e.g.,
+distributed locks, master election, group membership, and configuration.
+
+## Issues:
+
+No issue requiring board attention.
+
+
+## Activity:
+
+Key points:
+- There has been no addition to the set of committers or PMC;
+- The traffic of mailing lists has dropped both on
+user and dev;
+- There has been fewer jiras created and resolved compared to
+the previous period;
+- We moved from CMS to gitpubsub for our website. This required
+code and process changes within the community;
+- We are moving our documentation to use markdown instead of xml;
+- We sent to Mitre the details of the vulnerability report
+with identifier CVE-2017-5637 as requested. This security
+issue has been considered moderate, and we have fixed the issue
+in release 3.4.10;
+- We have released a new bug fix version of the 3.4 branch;
+- We continue to work towards making the 3.5 branch GA. It
+is still beta due to the introduction of the reconfiguration
+feature in that branch. We are currently working towards
+producing a 3.5 release candidate.
+
+
+## Health report:
+
+The PMC has been working with contributors and committers to
+get them to the point that both committership and PMC membership,
+respectively, can be offered.
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michael Han on Wed Jun 21 2017
+
+## Committer base changes:
+
+ - Currently 21 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Mohammad Arshad at Mon Jan 23 2017
+
+## Releases:
+
+ - 3.4.11 was released on Wed Nov 08 2017
+
+## Mailing list activity:
+
+Traffic on dev and user have dropped by 18% and 15%, respectively,
+compared to the previous period. The number of subscribers, however,
+has slightly increased. We attribute the drop on mailing list traffic
+to some key contributors being busy with work outside the scope of
+the community.
+
+ - dev@zookeeper.apache.org:
+    - 521 subscribers (up 1 in the last 3 months):
+    - 2458 emails sent to list (3029 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1225 subscribers (up 9 in the last 3 months):
+    - 122 emails sent to list (144 in previous quarter)
+
+
+## JIRA activity:
+
+ - 57 JIRA tickets created in the last 3 months
+ - 31 JIRA tickets closed/resolved in the last 3 months
+
+
+------------------------------------------------------
+End of minutes for the December 20, 2017 board meeting.</pre>
+<h3 id="2017-09-20"><a href="2017/board_minutes_2017_09_20.html#attachment-BU">2017-09-20</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2017-09-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ Apache ZooKeeper is a system for distributed coordination. It enables
+distributed systems to implement a variety of primitives and mechanisms
+that are critical for them to function, e.g., distributed locks, master
+election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+There has been no significant change to the project status
+since the last report. There has been no addition to the
+set of committers or PMC. The traffic of mailing lists has
+not changed significantly, although the number of subscribers
+has increased slightly and the overall number of messages
+to the dev list has dropped.
+
+## Health report:
+The PMC has been working with contributors and committers to
+get them to the point that both committership and PMC membership,
+respectively, can be offered.
+
+## PMC changes:
+
+ - Currently 13 PMC members.
+ - Michael Han was added to the PMC on Wed Jun 21 2017
+
+## Committer base changes:
+
+ - Currently 21 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Mohammad Arshad at Mon Jan 23 2017
+
+## Releases:
+
+ - Last release was 3.5.3 on Mon Apr 17 2017
+
+## Mailing list activity:
+
+Dev list traffic has dropped by ~10%. User list traffic has increases
+by 15%. The traffic drop of the mailing lists is very likely due to
+the summer vacation period, which is typically a bit slower.
+
+ - dev@zookeeper.apache.org:
+    - 520 subscribers (up 4 in the last 3 months):
+    - 3257 emails sent to list (3622 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1216 subscribers (up 17 in the last 3 months):
+    - 150 emails sent to list (131 in previous quarter)
+
+
+## JIRA activity:
+
+ - 90 JIRA tickets created in the last 3 months
+ - 44 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2017-06-21"><a href="2017/board_minutes_2017_06_21.html#attachment-BO">2017-06-21</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2017-06-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+distributed systems to implement a variety of primitives and mechanisms that
+are critical for them to function, e.g., distributed locks, master
+election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention at this time
+
+## Activity:
+ We have completed two releases since March and the community is now working
+ towards the first stable release of the 3.5 branch. There isn&rsquo;t much to
+ report other than the fact that there is work going on in the community,
+ see for example, mailing list and lira numbers below.
+
+## Health report:
+ Number of subscribers and emails sent to the user/dev lists have grown
+ only slightly. The size of the community has been roughly stable, although
+ the slight growth is an indication of health: we still occasionally get
+ new joiners and the overall numbers aren&rsquo;t dropping.
+
+ We are also working with various contributors in the community to get them
+ to a stage that we can offer them committership. We also have just voted a
+ new PMC member, but this PMC Chair hasn&rsquo;t processed the new member yet.
+
+## PMC changes:
+
+ - Currently 12 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Rakesh Radhakrishnan on Fri Mar 03 2017
+
+## Committer base changes:
+
+ - Currently 21 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Mohammad Arshad at Tue Jan 24 2017
+
+## Releases:
+
+ - 3.4.10 was released on Thu Mar 30 2017
+ - 3.5.3 was released on Mon Apr 17 2017
+
+## Mailing list activity:
+ Number of dev subscribers has grown by 2%, while the number of user
+ subscribers has grown by less than 1%. As I have explained in a previous
+ report, typically questions on ZooKeeper are asked in the dev list. In
+ fact, the number of messages sent to the user list is small compared
+ to the dev list.
+
+ - dev@zookeeper.apache.org:
+    - 517 subscribers (up 10 in the last 3 months):
+    - 3774 emails sent to list (3741 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1200 subscribers (up 7 in the last 3 months):
+    - 131 emails sent to list (168 in previous quarter)
+
+
+## JIRA activity:
+
+ - 86 JIRA tickets created in the last 3 months
+ - 53 JIRA tickets closed/resolved in the last 3 months
+
+
+------------------------------------------------------
+End of minutes for the June 21, 2017 board meeting.</pre>
+<h3 id="2017-03-15"><a href="2017/board_minutes_2017_03_15.html#attachment-BM">2017-03-15</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2017-03-15" title="Permalink">&para;</a></h3>
+<pre>## Description: Apache ZooKeeper is a system for distributed coordination. It
+enables distributed systems to implement a variety of primitives and
+mechanisms that are critical for them to function, e.g., distributed locks,
+master election, group membership, and configuration.
+
+## Issues: There are no issues requiring board attention at this time.
+
+## Activity:
+The community has been very active on the discussion of issues as we can
+observe by the number of messages sent to the dev list. This number is
+actually larger compared to the previous period.
+
+We have also been receiving a few security reports over time (one in the last
+period) and have needed to act upon them. Our community is still a bit
+immature with respect to dealing with security, which mainly stems from the
+fact that Apache ZooKeeper has traditionally assumed that it runs behind
+secure boundaries, and only recently security has become of greater interest
+to our users. We are making progress on learning how to deal with such
+security issues and reports, though.
+
+As for releases, we have been discussing two releases for a while, 3.4.10 and
+3.5.3, but unfortunately, they didn&rsquo;t happen in this period. The PMC expects
+at least one release to happen in the upcoming period.
+
+## Health report:
+We have added two new committers and one new PMC member. The dev activity is
+high, while the user activity is steady. We have not had high activity on the
+user list in the recent past, mainly because of the nature of the project.
+Users of Apache ZooKeeper tend to be interested in its internals and questions
+are often sent directly to dev.
+
+
+## PMC changes:
+
+- Currently 12 PMC members.
+- Rakesh Radhakrishnan was added to the PMC on Fri Mar 03 2017
+
+## Committer base changes:
+
+- Currently 21 committers.
+- New commmitters:
+   - Mohammad Arshad was added as a committer on Mon Jan 23 2017
+   - Michael Han was added as a committer on Tue Dec 20 2016
+
+## Releases:
+
+- Last release was 3.4.9 on Sat Sep 03 2016
+
+## Mailing list activity:
+
+The dev list activity has increased compared to the last period. There is no
+special reason for it to happen other than interest of contributors and
+committers being more available to interact with the community. As we
+mentioned above, the traffic of the user list has been steady for quite a
+while. Members of the Apache ZooKeeper community tend to ask questions
+directly on the dev list as they are often interested in the internals and
+contributing as well.
+
+
+- dev@zookeeper.apache.org:
+   - 504 subscribers (up 4 in the last 3 months):
+   - 3842 emails sent to list (3322 in previous quarter)
+
+- user@zookeeper.apache.org:
+   - 1189 subscribers (up 6 in the last 3 months):
+   - 187 emails sent to list (185 in previous quarter)
+
+
+## JIRA activity:
+
+- 68 JIRA tickets created in the last 3 months
+- 52 JIRA tickets closed/resolved in the last 3 months
+
+
+------------------------------------------------------
+End of minutes for the March 15, 2017 board meeting.</pre>
+<h3 id="2016-12-21"><a href="2016/board_minutes_2016_12_21.html#attachment-BL">2016-12-21</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2016-12-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache ZooKeeper is a system for distributed coordination. It enables
+distributed systems to implement a variety of primitives and mechanisms that
+are critical for such systems to function, e.g., distributed locks, master
+election, group membership, and configuration.
+
+## Issues:
+There are no issues requiring board attention at this time.
+
+## Activity:
+The focus of the community has been to lift the alpha label of the 3.5 branch.
+We have solved the main remaining issue (ZOOKEEPER-2014) and we are now getting
+ready to release 3.5.3, which is supposed to be the last alpha release of the
+3.5 branch.
+
+The 3.5 branch has a number of important new features,
+including reconfiguration, which has been the main culprit for the stabilization
+of the branch.
+
+We have additionally been preparing a new release of our stable branch, 3.4.10.
+It will include bug fixes and one contribution that improves security for
+server-to-server communication.
+
+Both these releases are very close to coming out.
+
+We have organized a meetup at the Facebook HQ back in November.
+
+## Health report:
+There has been a good amount of activity on all lists, new contributors, and new
+features proposed. There are potentially new committers currently being discussed
+on the private list.
+
+
+## PMC changes:
+
+ - Currently 11 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Chris Nauroth on Sun Aug 07 2016
+
+## Committer base changes:
+
+ - Currently 19 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Chris Nauroth at Wed Sep 09 2015
+
+## Releases:
+
+ - Last release was 3.4.9 on Sat Sep 03 2016
+
+## Mailing list activity:
+ The activity on the dev list remained roughly constant while the activity of the
+user list dropped. This is an artifact of questions now being asked on the dev list
+mostly because they often involve more than just a clarification over the API. The
+community has been favoring discussions on the dev list and slowly moving more
+towards asking questions directly on that dev list. We don&rsquo;t really make an effort
+to have a clear separation between the two, although we suggest that API and use
+case questions are better on the user list.
+
+
+ - dev@zookeeper.apache.org:
+    - 500 subscribers (up 2 in the last 3 months):
+    - 3251 emails sent to list (3252 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1182 subscribers (up 6 in the last 3 months):
+    - 186 emails sent to list (300 in previous quarter)
+
+
+## JIRA activity:
+The number of issues created has been greater than the number of issues resolved,
+creating a backlog. We need more committer cycles to help with the backlog, and
+we are working on inviting new committers.
+
+ - 67 JIRA tickets created in the last 3 months
+ - 33 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2016-09-21"><a href="2016/board_minutes_2016_09_21.html#attachment-BL">2016-09-21</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2016-09-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+ - Apache ZooKeeper is a system for distributed coordination. It enables
+distributed systems to implement a variety of primitives and mechanisms that
+are critical for such systems to function, e.g., distributed locks, master
+election, group membership, and configuration.
+
+## Issues:
+
+ - There are no issues requiring board attention at this time.
+
+## Activity:
+
+ - For the last period, there are two points to highlight:
+   * We have had two releases, one for the 3.4 branch and another for
+     the 3.5. Releases of the 3.5 branch are still alpha, and the community
+     has been working hard to resolve the issues pending to make it stable
+     (GA).
+   * Traffic on the dev list and number of commits has increases significantly
+     compared to the last period. Traffic on the dev list has increased by
+     roughly 70% while the traffic on the commit list has increased by over
+     5x.  Interestingly, the number of subscribers to the dev list has dropped
+     by 10 subscribers, which we attribute to natural churn.
+## Health report:
+
+ - The activity of the mailing list had dropped in the previous reporting
+   periods, but it has picked up again from the current numbers. We did some
+   effort to bring in new contributors by mentoring interested developers
+   (e.g., developers who showed interest on the mailing list, developers we&rsquo;ve
+   met offline, meetups) and reached out to former contributors to help with
+   closure on outstanding issues.
+ - We have some potential committers coming, and we are considering offering
+   committership to such contributors after the next upcoming release: 3.5.3.
+   Their contributions have been strong so far.
+
+## PMC changes:
+
+ - Currently 11 PMC members.
+ - Chris Nauroth was added to the PMC on Sun Aug 07 2016
+
+## Committer base changes:
+
+ - Currently 19 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Chris Nauroth at Wed Sep 09 2015
+
+## Releases:
+
+ - 3.4.9 was released on Sat Sep 03 2016
+ - 3.5.2 was released on Thu Jul 21 2016
+
+## Mailing list activity:
+
+ - dev@zookeeper.apache.org:
+    - 499 subscribers (down -10 in the last 3 months):
+    - 3285 emails sent to list (1917 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1178 subscribers (up 7 in the last 3 months):
+    - 282 emails sent to list (267 in previous quarter)
+
+ - The dev list traffic increased quite substantially from the previous period
+   due to our efforts to increase the development activity. Interestingly, the
+   number of subscribers dropped slightly, which we attribute to natural churn
+   (e.g., people move on to a different project). The traffic of the user list
+   has increased slightly, but not as much compared to the increase of the dev
+   list. We have been getting the same rate of questions compared to the last
+   period.
+
+## JIRA activity:
+
+ - 129 JIRA tickets created in the last 3 months
+ - 50 JIRA tickets closed/resolved in the last 3 months
+
+------------------------------------------------------
+End of minutes for the September 21, 2016 board meeting.</pre>
+<h3 id="2016-06-15"><a href="2016/board_minutes_2016_06_15.html#attachment-BQ">2016-06-15</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2016-06-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache ZooKeeper is a system for distributed coordination. It enables
+distributed systems to implement a variety of primitives and mechanisms that
+are critical for such systems to function, e.g., distributed locks, master
+election, group membership, and configuration.
+
+## Issues:
+
+&nbsp;There are no issues requiring board attention at this time.
+
+## Activity:
+
+- Release 3.4.7 contains a number of bug fixes,
+&nbsp;&nbsp;including:
+&nbsp;&nbsp;&nbsp;&nbsp;- ZOOKEEPER-1506: Retry DNS resolution on connection failures.
+&nbsp;&nbsp;&nbsp;&nbsp;- ZOOKEEPER-1833: Improve the quality of Windows build.
+&nbsp;&nbsp;&nbsp;&nbsp;- ZOOKEEPER-1907: Improve thread handling.
+- Release 3.4.8 mainly fixes a deadlock introduced in 3.4.7:
+    - ZOOKEEPER-2347: Deadlock shutting down zookeeper
+- Chris Nauroth is the release manager for the next alpha release 3.5.2.  The
+  community is currently working towards releasing 3.5.2 and stabilizing the
+  3.5 branch which is currently alpha.
+- Rakesh Radhakrishnan has been driving the effort to add server-to-server
+&nbsp;&nbsp;authentication (ZOOKEEPER-1045).
+
+## Health report
+
+The mailing list activity remains comparable to the one of the previous
+period with a slight increase on the number of subscribers. The number of
+commits has dropped significantly compared to the previous period based on
+the number of messages for commits@zookeeper.apache.org. The PMC is actively
+looking into inviting contributors to become committers.
+
+## PMC changes:
+
+- Currently 10 PMC members.
+- The last PMC member added was Ra&uacute;l Gutierrez Gonzales on Feb. 2, 2016.
+
+## Committer base changes:
+
+- Currently 19 committers.
+- No new committers added in the last 3 months
+- Last committer addition was Chris Nauroth at Wed Sep 09 2015
+
+## Releases:
+
+- 3.4.7 released on Wed Dec 02 2015 has been withdrawn due to a serious
+  deadlock bug.
+- 3.4.8 was released on Feb. 20, 2016.
+
+## Mailing list activity:
+
+The number of subscriptions has increased both for the user and the
+dev lists. The number of messages on the user list has dropped slightly
+(roughly 5%). The number of commits has dropped significantly.
+
+ - commits@zookeeper.apache.org
+    - 110 subscribers (up 6 in the last 3 months)
+    - 70 emails sent in the past 3 months (317 in the previous cycle)
+
+ - dev@zookeeper.apache.org:
+    - 507 subscribers (up 19 in the last 3 months):
+    - 2161 emails sent to list (1148 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1170 subscribers (up 27 in the last 3 months):
+    - 296 emails sent to list (314 in previous quarter)
+
+## JIRA activity:
+ - 55 JIRA tickets created in the last 3 months
+ - 32 JIRA tickets closed/resolved in the last 3 months
+
+------------------------------------------------------
+End of minutes for the June 15, 2016 board meeting.</pre>
+<h3 id="2016-03-16"><a href="2016/board_minutes_2016_03_16.html#attachment-BS">2016-03-16</a> &mdash; Michi Mutsuzaki<a class="headerlink" href="#2016-03-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+ -  A distributed computing platform.
+
+## Issues:
+  There are no issues requiring board attention at this time.
+
+## Activity:
+ - The PMC has appointed Flavio Junqueira (fpj) as new PMC chair. The votes
+   can be found here: https://s.apache.org/36nv
+ - Released 3.4.8, which contains a fix for the deadlocking issue that was
+   introduced in 3.4.7 (ZOOKEEPER-2347).
+ - Now we are focusing on releasing 3.5.2-alpha.
+ - Started a discussion around how to manage pull requests from github.
+   Currently we do not accept github pull requests.
+
+## Health report:
+
+ - Both dev@ and user@ mailing lists have been active:
+
+   - dev@zookeeper.apache.org:
+      - 487 subscribers (up 18 in the last 3 months):
+      - 1462 emails sent to list (1167 in previous quarter)
+
+   - user@zookeeper.apache.org:
+      - 1142 subscribers (up 27 in the last 3 months):
+      - 346 emails sent to list (297 in previous quarter)
+
+## PMC changes:
+
+ - Currently 10 PMC members.
+ - Raul Gutierrez Segales was added to the PMC on Tue Feb 02 2016
+
+## Committer base changes:
+
+ - Currently 19 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Chris Nauroth at Wed Sep 09 2015
+
+## JIRA activity:
+
+ - 44 JIRA tickets created in the last 3 months
+ - 38 JIRA tickets closed/resolved in the last 3 months
+
+------------------------------------------------------
+End of minutes for the March 16, 2016 board meeting.</pre>
+<h3 id="2015-12-16"><a href="2015/board_minutes_2015_12_16.html#attachment-BR">2015-12-16</a> &mdash; Michi Mutsuzaki<a class="headerlink" href="#2015-12-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   A distributed computing platform.
+
+## Issues:
+  There are no issues requiring board attention at this time.
+
+## Activity:
+ - Released a stable release 3.4.7. This release contains many bug fixes,
+   including:
+     - ZOOKEEPER-1506: Retry DNS resolution on connection failures.
+     - ZOOKEEPER-1833: Improve the quality of Windows build.
+     - ZOOKEEPER-1907: Improve thread handling.
+ - Nominated Chris Nauroth to be the release manager for the next alpha
+   release 3.5.2.
+ - Rakesh Radhakrishnan has been driving the effort to add server-to-server
+   authentication (ZOOKEEPER-1045).
+
+## PMC changes:
+
+ - Currently 9 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michi Mutsuzaki on Sat Sep 28 2013
+
+## Committer base changes:
+
+ - Currently 19 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Chris Nauroth at Wed Sep 09 2015
+
+## Releases:
+
+ - 3.4.7 was released on Wed Dec 02 2015
+
+## Mailing list activity:
+
+ - dev@zookeeper.apache.org:
+    - 467 subscribers (up 13 in the last 3 months):
+    - 1392 emails sent to list (1459 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1110 subscribers (up 30 in the last 3 months):
+    - 320 emails sent to list (350 in previous quarter)
+
+## JIRA activity:
+
+ - 71 JIRA tickets created in the last 3 months
+ - 46 JIRA tickets closed/resolved in the last 3 months
+
+------------------------------------------------------
+End of minutes for the December 16, 2015 board meeting.</pre>
+<h3 id="2015-09-16"><a href="2015/board_minutes_2015_09_16.html#attachment-BP">2015-09-16</a> &mdash; Michi Mutsuzaki<a class="headerlink" href="#2015-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   A distributed computing platform.
+
+## Activity:
+  - Released 3.5.1-alpha, which includes new features such as container znodes
+    and SSL support for client-server communication.
+  - Added Chris Nauroth as a committer.
+  - Shifted our focus on the next stable release 3.4.7.
+
+## Health report:
+  - Our committee health score is 5.92 (Healthy).
+  - The user mailing list is very active and stable.
+
+## Issues:
+  - There are no issues requiring board attention at this time.
+
+## LDAP committee group/Committership changes:
+
+ - Currently 19 committers and 9 LDAP committee group members.
+ - No new LDAP committee group members added in the last 3 months
+ - Chris Nauroth was added as a committer on Wed Sep 09 2015
+
+## Releases:
+
+ - 3.5.1 was released on Wed Sep 02 2015
+
+## Mailing list activity:
+
+ - dev@zookeeper.apache.org:
+    - 452 subscribers (up 8 in the last 3 months):
+    - 1378 emails sent to list (2585 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1079 subscribers (up 38 in the last 3 months):
+    - 358 emails sent to list (287 in previous quarter)
+
+
+## JIRA activity:
+
+ - 56 JIRA tickets created in the last 3 months
+ - 33 JIRA tickets closed/resolved in the last 3 months</pre>
+<h3 id="2015-06-17"><a href="2015/board_minutes_2015_06_17.html#attachment-BU">2015-06-17</a> &mdash; Michi Mutsuzaki<a class="headerlink" href="#2015-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+   A distributed computing platform.
+
+## Activity:
+ - Working on making 2 releases, 3.5.1 (alpha) and 3.4.7 (stable).
+ - ZOOKEEPER-2163: Added a new 'container' type znode that gets deleted
+   automatically when all the child znodes get deleted.
+ - ZOOKEEPER-2183: Addd an option to run tests in parallel using multiple
+   threads. This reduced our build time significantly (from ~50 minutes to
+   ~15 minutes).
+ - Working on fixing several bugs related to dynamic reconfiguration in
+   3.5.0-alpha.
+
+## Issues:
+  There are no issues requiring board attention at this time.
+
+## PMC/Committership changes:
+
+ - Currently 18 committers and 9 PMC members in the project.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michi Mutsuzaki at Wed Sep 25 2013
+ - New commmitters:
+    - Ra&uacute;l Guti&eacute;rrez Segal&eacute;s was added as a committer on Thu Apr 02 2015
+    - Hongchao Deng was added as a committer on Thu Apr 02 2015
+
+## Releases:
+
+ - Last release was 3.5.0 on Mon Aug 04 2014
+
+## Mailing list activity:
+
+ - dev@zookeeper.apache.org:
+    - 444 subscribers (up 1 in the last 3 months):
+    - 2589 emails sent to list (1330 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1038 subscribers (up 28 in the last 3 months):
+    - 291 emails sent to list (218 in previous quarter)
+
+## JIRA activity:
+
+ - 76 JIRA tickets created in the last 3 months
+ - 49 JIRA tickets closed/resolved in the last 3 months
+
+
+------------------------------------------------------
+End of minutes for the June 17, 2015 board meeting.</pre>
+<h3 id="2015-03-18"><a href="2015/board_minutes_2015_03_18.html#attachment-BT">2015-03-18</a> &mdash; Michi Mutsuzaki<a class="headerlink" href="#2015-03-18" title="Permalink">&para;</a></h3>
+<pre>A distributed computing platform.
+   ZooKeeper is a centralized service for maintaining configuration
+   information, naming, providing distributed synchronization, and
+   providing group services
+
+## Activity:
+ - Currently actively working on releasing 3.5.1. This release will
+   introduce a new feature that enables dynamic reconfiguration of
+   ZooKeeper clusters. With this release, you can add and/or remove
+   nodes from a ZooKeeper cluster without restarting the cluster.
+ - ZOOKEEPER-2094: Working on adding SSL support for client-server
+   communication.
+ - ZOOKEEPER-2135: Recently the build has become less stable. We are
+   working on fixing intermittent build failures to keep it green.
+
+## Issues:
+ - There are no issues requiring board attention at this time.
+
+## PMC/Committership changes:
+
+ - Currently 16 committers and 9 PMC members in the project.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Michi Mutsuzaki at Wed Sep 25 2013
+ - No new committers added in the last 3 months
+ - Last committer addition was Rakesh Radhakrishnan at Fri Apr 11 2014
+
+## Releases:
+
+ - No new release in the last 3 months.
+
+## Mailing list activity:
+
+ - dev@zookeeper.apache.org:
+    - 444 subscribers (up 7 in the last 3 months):
+    - 1391 emails sent to list (1548 in previous quarter)
+
+ - user@zookeeper.apache.org:
+    - 1010 subscribers (up 17 in the last 3 months):
+    - 222 emails sent to list (459 in previous quarter)
+
+
+## JIRA activity:
+
+ - 43 JIRA tickets created in the last 3 months
+ - 22 JIRA tickets closed/resolved in the last 3 months
+
+
+------------------------------------------------------
+End of minutes for the March 18, 2015 board meeting.</pre>
+<h3 id="2014-12-17"><a href="2014/board_minutes_2014_12_17.html#attachment-BL">2014-12-17</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2014-12-17" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed systems.
+
+We have released an alpha version of the 3.5 branch on Aug. 06, 2014.
+This release includes important features such as reconfiguration. It fixes
+a significant number of bugs and includes smaller improvements both in
+the server and client. The community is now focusing on the stability of the
+branch. There is also ongoing work to introduce SSL support. This is a
+feature that has been long awaited.
+
+No infrastructure issues:
+
+Community:
+
+* Mailing list activity hasn&rsquo;t changed significantly.
+* 11 active committers representing 10 unique organizations. No change
+to the list of committers.
+* &nbsp;9 active PMC members representing 8 unique organizations. No change
+to the list of PMC members.
+* 437 subscribers on dev (up from 435 last quarter).
+* 988 subscribers on user (up from 974 last quarter).
+* 2093 jira issues have been created to date (38 more since last
+quarter)
+
+------------------------------------------------------
+End of minutes for the December 17, 2014 board meeting.</pre>
+<h3 id="2014-10-15"><a href="2014/board_minutes_2014_10_15.html#attachment-BE">2014-10-15</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2014-10-15" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed systems.
+
+We have released an alpha version of the 3.5 branch on Aug. 06, 2014.
+This release includes important features such as reconfiguration. It fixes
+a significant number of bugs and includes smaller improvements both in
+the server and client. The community is now focusing on the stability of the
+branch.
+
+No infrastructure issues.
+
+Community:
+
+* Mailing list activity and number of contributed patches has increased
+  noticeably.
+* Cloudera is organizing a meetup in November in their office in the
+  Bay Area.
+* Rakesh Radhakrishnan is going to present at ApacheCon Europe.
+* Flavio Junqueira has given an O&rsquo;Reilly Webcast in September.
+
+* 11 active committers representing 10 unique organizations. No change
+  to the list of committers.
+* 9 active PMC members representing 8 unique organizations. No change
+  to the list of PMC members.
+* 435 subscribers on dev (up from 424 last quarter).
+* 974 subscribers on user (up from 938 last quarter).
+* 2055 jira issues have been created to date (122 more since last
+quarter)
+
+========
+Apache BookKeeper (subproject)
+
+Bookkeeper is a distributed, reliable, and high performance logging
+service. The project also includes Hedwig which is a highly scalable
+Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+durability guarantees.
+
+We released version 4.2.3 on the 27th of June. The release was focussed
+mainly on bugfixes and addressing operational annoyances.
+
+We are currently voting on the first release candidate for version
+4.3.0, so we expect that to be released within the next week. This
+release includes a lot of improvements to the bookie on-disk
+performance, a new statistics framework, and protobuffer protocol
+support along with numerous bugfixes.
+
+We welcomed one new committer, Rakesh Radhakrishnan, during the last
+period. Once 4.3.0 is released, we also plan to extend committership to
+a couple more people. We will all seek to become a TLP at that point.
+
+Infrastructure issues:
+
+No issues.
+
+Community:
+
+50 subscribers to bookkeeper-dev
+66 subscribers to bookkeeper-user
+
+780 issues opened to date, 22 since 2014-06-12
+543 issues resolved to date, 26 since 2014-06-12
+47 people have reported issues, 5 since 2014-06-12
+20 people have contributed patches, 5 since 2014-06-12
+
+
+------------------------------------------------------
+End of minutes for the October 15, 2014 board meeting.</pre>
+<h3 id="2014-09-17"><a href="2014/board_minutes_2014_09_17.html#section-6BI">2014-09-17</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2014-09-17" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2014-06-18"><a href="2014/board_minutes_2014_06_18.html#attachment-BE">2014-06-18</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2014-06-18" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed systems.
+
+Trunk is still under development for an eventual 3.5.0 release. A couple
+of important improvements on the way for 3.5.0:
+
+- One important new feature in 3.5.0 will be the ability to reconfigure
+a ZooKeeper ensemble. This feature was discussed a long time in
+ZOOKEEPER-107 and we have converged and committed it;
+- We are also focusing on a number of improvements over the code that
+performs recovery. In particular, we are targeting an implementation that
+avoids sending and taking unnecessary snapshots, which reduces time to
+recover in the presence of crashes.
+
+Also, the release is supposed to address scalability, jdk7 and openjdk support,
+maven build/rel, testing and audit logging. There are other various patches
+we are working on related code cleanup and refactoring.
+
+We have released 3.4.6 on March 10, 2014. 3.5.0 release date is not defined
+yet.
+
+No infrastructure issues.
+
+Community:
+
+Mailing list activity is moderate and the number of patch reviews and
+commits has dropped significantly.
+
+* 11 active committers representing 10 unique organizations. One new committer
+has been voted: Rakesh R, Huawei.
+* &nbsp;9 active PMC members representing 8 unique organizations. No change to
+the list of PMC members.
+* 424 subscribers on dev (up from 421 since December 2013).
+* 938 subscribers on user (up from 927 last quarter).
+* 1933 jira issues have been created to date (42 more since March
+2014)
+
+========
+Apache BookKeeper (subproject)
+
+Bookkeeper is a distributed, reliable, and high performance logging
+service. The project also includes Hedwig which is a highly scalable
+Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+durability guarantees.
+
+We continue to work towards the 4.3.0 release, which has slowly been
+moving towards a release. We project that it will be released in
+August. This release includes a lot of improvements to the bookie
+on-disk performance, a new statistics framework, and protobuffer
+protocol support along with numerous bugfixes.
+
+A release candidate for 4.2.3 is currently being voted on. This
+release's focus was mainly to remove some operational annoyances
+along with other bugfixes.
+
+The last release was 4.2.2 in October, 2013.
+
+Infrastructure issues:
+
+No issues.
+
+Community:
+
+No new committer has been added during the last period.
+
+51 subscribers to bookkeeper-dev
+66 subscribers to bookkeeper-user
+
+757 issues opened to date, 27 since 2014-03-12
+517 issues resolved to date, 21 since 2014-03-12
+45 people have reported issues, 5 since 2014-03-12
+19 people have contributed patches, 6 since 2014-03-12
+
+------------------------------------------------------
+End of minutes for the June 18, 2014 board meeting.</pre>
+<h3 id="2014-03-19"><a href="2014/board_minutes_2014_03_19.html#attachment-BH">2014-03-19</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2014-03-19" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed systems.
+
+Bug-fix release 3.4.6 has been voted this week and we are in the process
+of publishing it.
+
+Trunk is still under development for an eventual 3.5.0 release. A couple
+of important improvements on the way for 3.5.0:
+
+- One important new feature in 3.5.0 will be the ability to reconfigure
+a ZooKeeper ensemble. This feature was discussed a long time in
+ZOOKEEPER-107 and we have converged and committed it;
+- We are also focusing on a number of improvements over the code that
+performs recovery. In particular, we are targeting an implementation that
+avoids sending and taking unnecessary snapshots, which reduces time to
+recover in the presence of crashes.
+
+Also, the release is supposed to address scalability, jdk7 and openjdk support,
+maven build/rel, testing and audit logging. There are other various patches
+we are working on related code cleanup and refactoring.
+
+Note that the status of releases hasn't changed since the last board report.
+3.5.0 release date is not defined yet.
+
+No infrastructure issues.
+
+Community:
+
+Mailing list activity is moderate and the number of patch reviews and
+commits has dropped significantly.
+
+* 10 active committers representing 8 unique organizations. No change to
+the list of committers.
+*&nbsp; 9 active PMC members representing 7 unique organizations. No change to
+the list of PMC members.
+* 421 subscribers on dev (up from 408 since December 2013).
+* 927 subscribers on user (up from 891 last quarter).
+* 1891 jira issues have been created to date (58 more since December
+2013)
+
+========
+Apache BookKeeper (subproject)
+
+Bookkeeper is a distributed, reliable, and high performance logging
+service. The project also includes Hedwig which is a highly scalable
+Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+durability guarantees.
+
+We are currently working towards the 4.3.0 release, which is in its
+final phase now. We project that it will be released early in April.
+This release includes a lot of improvements to the bookie on-disk
+performance, a new statistics framework, and protobuffer protocol
+support along with numerous bugfixes.
+
+We will also release a bugfix release on the 4.2 branch, 4.2.3, in the
+next fortnight.
+
+Infrastructure issues:
+
+No issues.
+
+Community:
+
+51 subscribers to bookkeeper-dev
+68 subscribers to bookkeeper-user
+
+730 issues opened to date, 27 since 2013-12-12
+496 issues resolved to date, 30 since 2013-12-12
+44 people have reported issues, 3 since 2013-12-12
+18 people have contributed patches, 5 since 2013-12-12</pre>
+<h3 id="2013-12-18"><a href="2013/board_minutes_2013_12_18.html#attachment-BD">2013-12-18</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2013-12-18" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed applications.
+
+Trunk is still under development for an eventual 3.5.0 release. A couple
+of important improvements on the way for 3.5.0:
+
+- One important new feature in 3.5.0 will be the ability to reconfigure
+a ZooKeeper ensemble. This feature was discussed a long time in
+ZOOKEEPER-107 and we have converged and committed it;
+- We are also focusing on a number of improvements over the code that
+performs recovery. In particular, we are targeting an implementation that
+avoids sending and taking unnecessary snapshots, which reduces time to
+recover in the presence of crashes.
+
+Also, release is supposed to address scalability, jdk7 and openjdk support,
+maven build/rel, testing and audit logging. There are other various patches
+we are working on related code cleanup and refactoring.
+
+Note that the status of releases hasn't changed since the last board report.
+3.5.0 release date is not defined yet.
+
+A bug fix release 3.4.6 is also expected to go out soon. There are two jiras
+currently blocking the release.
+
+The last release has been 3.4.5 on November 18, 2012.
+
+No infrastructure issues.
+
+Community:
+
+Mailing list activity is moderate and the number of patch reviews and
+commits has dropped significantly.
+
+* 10 active committers representing 8 unique organizations. No change to
+the list of committers.
+*  9 active PMC members representing 7 unique organizations. No change to
+the list of committers.
+* 408 subscribers on dev (hasn't changed in the last quarter).
+* 891 subscribers on user (up from 866 last quarter).
+* 1833 jira issues have been created to date (77 more since September
+2013)
+
+=== BookKeeper (subproject)
+
+Bookkeeper is a distributed, reliable, and high performance logging service.
+The project also includes Hedwig which is a highly scalable Pub/Sub service
+built on top of ZooKeeper and Bookkeeper with strong durability guarantees.
+
+We released Bookkeeper 4.2.2 on the 10th October 2013. This was a bugfix
+release, but also exposed some new administrative functions for dealing with
+ledgers.
+
+We continue to work towards 4.3.0. The final scope of the release has been
+decided on. It will include improved bookie on-disk performance, a new
+statistics collection framework and SSL support, among other things. We
+hope to release 4.3.0 in Q1 of 2014.
+
+Infrastructure issues:
+No issues.
+
+Community:
+52 subscribers to bookkeeper-dev
+67 subscribers to bookkeeper-user
+
+701 issues opened to date, 29 since Sept 1, 2013
+465 issues resolved to date, 36 since Sept 1, 2013
+7 reports of Jira issues since Sept 1, 2013
+7 patch contributors since Sept 1, 2013</pre>
+<h3 id="2013-09-18"><a href="2013/board_minutes_2013_09_18.html#attachment-BD">2013-09-18</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2013-09-18" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed
+applications.
+
+Trunk is under development for an eventual 3.5.0 release. A couple of
+important improvements on the way for 3.5.0:
+
+- One important new feature in 3.5.0 will be the ability to reconfigure a
+ZooKeeper ensemble. This feature was discussed a long time in
+ZOOKEEPER-107 and we have finally converged and committed it;
+- We are also focusing on a number of improvements over the code that
+performs recovery. In particular, we are targeting an implementation that
+avoids sending and taking unnecessary snapshots, which reduces time
+to recover in the presence of crashes.
+
+There are other various patches we are working on related code cleanup
+and refactoring.
+
+Note that the status of releases hasn't changed since the last board report.
+3.5.0 release date is not defined yet.  Our focus is on scalability, jdk7 and
+openjdk support,  maven build/rel, testing and audit logging.
+
+A bug fix release 3.4.6 is also expected to go out, but given the low traffic
+of reviews and patches committed, it is unclear when it will happen.
+
+Community:
+
+Mailing list activity is moderate and the number of patch reviews
+and commits has dropped significantly.
+
+* 10 active committers representing 8 unique organizations. No change to
+the list of committers.
+*  9 active PMC members representing 7 unique organizations. No change
+to the list of committers. I'd like to note that the name of Michi Mutsuzaki
+still doesn't show up in the list of PMC members for the project in the
+committee-info.txt file. He has been voted and the board has acknowledged
+on May 14, 2013.
+* 408 subscribers on dev (up from 387 last quarter).
+* 866 subscribers on user (up from 816 last quarter).
+* 1756 jira issues have been created to date (45 more since June 2013)
+* Patrick Hunt has given a talk at Airbnb
+
+=== Apache BookKeeper (subproject)
+
+Bookkeeper is a distributed, reliable, and high performance
+logging service. The project also includes Hedwig which is
+a highly scalable Pub/Sub service built on top of ZooKeeper
+and Bookkeeper with strong durability guarantees.
+
+Focus in the last quarter has been on the 4.2.2 release which at the
+time of writing has a release candidate under consideration. 4.2.2 is
+a mostly a bugfix release, though we have also exposed some new
+administrative functionality.
+
+Release 4.3.0 is still being worked on, though scope may be reduced to
+allow for a more regular release cycle.
+
+Infrastructure issues:
+No issues.
+
+Graduation:
+The community overall feels that we should consider graduation after
+release 4.3.0. We plan to have release 4.3.0 before the end of this
+calendar year.
+
+Community building:
+The community growth has settled down and there's now a core set of
+people across 4 companies regularly contributing to the project.
+
+Community:
+* 53 subscribers to bookkeeper-dev
+* 66 subscribers to bookkeeper-user
+* 670 issues opened to date, 64 since June 1, 2013
+* 438 issues resolved to date, 40 since June 1, 2013
+* 41 reporters of Jira issues, 9 since June 1, 2013
+* 20 patch contributors, 7 since June 1, 2013
+
+
+------------------------------------------------------
+End of minutes for the September 18, 2013 board meeting.</pre>
+<h3 id="2013-06-19"><a href="2013/board_minutes_2013_06_19.html#attachment-BB">2013-06-19</a> &mdash; Flavio Junqueira<a class="headerlink" href="#2013-06-19" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed
+applications.
+
+Trunk is under development for an eventual 3.5.0 release. A couple of
+important improvements on the way for 3.5.0:
+
+- One important new feature in 3.5.0 will be the ability to reconfigure a
+ZooKeeper ensemble. This feature was discussed a long time in
+ZOOKEEPER-107 and we have finally converged and committed it;
+- We are also focusing on a number of improvements over the code that
+performs recovery. In particular, we are targeting an implementation that
+avoids sending and taking unnecessary snapshots, which reduces time
+to recover in the presence of crashes.
+
+There are other various patches we are working on related code cleanup
+and refactoring.
+
+3.5.0 release date is not defined yet.  Our focus is on scalability, jdk7 and
+openjdk support, maven build/rel, testing and audit logging.
+
+A bug fix release 3.4.6 is also expected to go out, but given the low traffic
+of reviews and patches committed, it is unclear when it will happen.
+
+Community:
+
+Mailing list activity continues to be high, although the number of patch reviews
+and commits has dropped significantly.
+
+* 10 active committers representing 8 unique organizations; one new member
+has been voted and has accepted: Michi Mutsuzaki.
+*  9 active PMC members representing 7 unique organizations; two new
+committers have been voted in this period and have accepted: Thawan
+Kooburat and Alexander Shraer.
+* 387 subscribers on dev (up from 384 last quarter).
+* 816 subscribers on user (up from 784 last quarter).
+
+=== BookKeeper Board Report - June 2013 (subproject)
+
+Bookkeeper is a distributed, reliable, and high performance
+logging service. The project also includes Hedwig which is
+a highly scalable Pub/Sub service built on top of ZooKeeper
+and Bookkeeper with strong durability guarantees.
+
+Trunk has been progressing towards the 4.3.0 release which has been
+planned for the 31st of July 2013. This will be a big release
+including a switch to netty and protobuf for RPC, SSL &amp; auth support
+and significant improvements to on disk storage performance.
+
+As 4.3.0 is a big change, we will also be releasing 4.2.2, a bugfix
+release which also includes some small features which have been
+requested by the community.
+
+Infrastructure issues:
+No issues.
+
+Community building:
+Flavio Junqueira presented bookkeeper at Hadoop Summit EU in Amsterdam
+in March. This generated significant interest.
+While the number of people reporting issues has dropped, the diversity
+in terms of number of companies, has grown (out of 9 reporters, there
+are 6 companies).
+
+Community:
+* 54 subscribers to bookkeeper-dev
+* 65 subscribers to bookkeeper-user
+* 612 issues opened to date, 42 opened since Mar 1, 2013
+* 41 reporters of Jira issues, 9 since Mar 1, 2013
+* 20 patch contributors</pre>
+<h3 id="2013-03-20"><a href="2013/board_minutes_2013_03_20.html#attachment-BA">2013-03-20</a> &mdash; Mahadev Konar<a class="headerlink" href="#2013-03-20" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed
+applications.
+
+
+Trunk is under development for an eventual 3.5.0 release. So far
+primarily code cleanup and refactoring has been applied to trunk.
+3.5.0 release date is still TBD.  Our focus is
+on scalability, jdk7 and openjdk support, maven build/rel, testing and
+audit logging.
+
+A bug fix release 3.4.6 is also expected to go out soon with bugs
+found in 3.4.5 release.
+
+Community:
+
+Mailing list activity continues to be high.
+
+* 8 active committers representing 5 unique organizations
+* 8 active PMC members representing 4 unique organizations
+* 384 subscribers on dev (up from 363 last quarter)
+* 784 subscribers on user (up from 743 last quarter)
+* A new contributor was voted in  as a committer. He
+is still waiting on ok from his employer to agree to become a
+committer for ZooKeeper.
+
+BookKeeper status report for March, 2013.
+
+Bookkeeper is a distributed, reliable, and high performance logging
+service. The project also includes Hedwig which is a highly scalable
+Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+durability guarantees.
+
+We have released version 4.2.0 in January 2013. It resolves 189 jira issues
+and features a new autorecovery mechanism for BookKeeper
+ledgers, read-only bookie mode, improved scalability for Hedwig,
+message filtering in Hedwig and much more. In February, we have
+released version 4.2.1, a bug fix release that resolves 6 jira issues.
+
+Infrastructure issues:
+No issues.
+
+Community building:
+We have been consistently receiving more contributions from developers
+across different companies. We have two new committers, Uma Maheswara
+Rao G (Huawei) and Jiannan Wang (Yahoo!). In general, we have been able
+to grow the community and increase diversity.
+
+Community:
+ * 51 subscribers to bookkeeper-dev
+ * 64 subscribers to bookkeeper-user
+ * 573 issues opened to date, 160 opened since Oct 1, 2012
+ * 37 reporters of Jira issues, 15 since Oct 1, 2012
+ * 16 patch contributors
+
+
+------------------------------------------------------
+End of minutes for the March 20, 2013 board meeting.</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#attachment-AY">2012-12-19</a> &mdash; Mahadev Konar<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed
+applications.
+
+There was one new release in the last quarter: 3.4.5 which was a bug
+fix release and is marked as stable.
+
+Trunk is also under development for an eventual 3.5.0 release. So far
+primarily code cleanup and refactoring has been applied to trunk.
+3.5.0 release date is still TBD.  Our focus is
+on scalability, jdk7 and openjdk support, maven build/rel, testing and
+audit logging.
+
+Community:
+
+Apache ZooKeeper had its third official meetup around Hadoop World:
+http://www.meetup.com/zookeeperusergroup/events/81954542/
+
+ Around 10 people attended.
+
+ Mailing list activity continues to be high.
+
+ * 8 active committers representing 5 unique organizations
+ * 8 active PMC members representing 4 unique organizations
+ * 363 subscribers on dev (up from 342 last quarter)
+ * 743 subscribers on user (up from 692 last quarter)
+
+ Subprojects:
+
+ BookKeeper status report for December 19, 2012
+
+ Bookkeeper is a distributed, reliable, and high performance logging
+ service. The project also includes Hedwig which is a highly scalable
+ Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+ durability guarantees.
+
+ We are currently preparing for release 4.2.0, our third release as a
+ ZooKeeper sub-project. The scope of this release has grown since the
+ last report. It will now include Hedwig message filtering and readonly
+ bookies along with auto recovery. There have also been a lot of
+ scalability improvements to allow us to handle millions of concurrent
+ logs. We hope to get release 4.2.0 out before the end of the year or
+ very early next year.
+
+ BookKeeper and Hedwig have both gone into production use within Yahoo!
+ and we have also had reports of production use of BookKeeper in
+ HubSpot. Huawei continue to evaluate HDFS+BK for their internal use.
+
+ Infrastructure issues:
+ No issues.
+
+ Community building:
+
+ The community has continued to grow in the last few months. We now
+ have very active contributors from Yahoo!, Twitter and Huawei.
+
+ Community:
+  * 50 subscribers to bookkeeper-dev
+  * 57 subscribers to bookkeeper-user
+  * 482 issues opened to date, 89 opened since September 12, 2012
+  * 81 issues resolved since September 12, 2012
+  * 17 contributors to trunk, 13 since September 12, 2012
+  * 37 reporters of Jira issues, 13 since September 12 2012
+
+------------------------------------------------------
+End of minutes for the December 19, 2012 board meeting.</pre>
+<h3 id="2012-09-19"><a href="2012/board_minutes_2012_09_19.html#attachment-AS">2012-09-19</a> &mdash; Mahadev Konar<a class="headerlink" href="#2012-09-19" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed
+applications.
+
+There was one new release in the last quarter: 3.3.6 which was a bug
+fix release and is marked as stable. 3.4.4 release (bugfix release) is
+expected to happen within the next week.
+
+Trunk is also under development for an eventual 3.5.0 release. So far
+primarily code cleanup and refactoring has been applied to trunk.  3.5.0
+release date is a TBD.  Our focus is on scalability, jdk7 and openjdk
+support, maven build/rel, testing and audit logging.
+
+
+Community:
+
+Apache ZooKeeper had its second official meetup:
+http://www.meetup.com/zookeeperusergroup/events/67732652/
+
+ Around 40 people attended  and  there was excitement on upcoming
+  features/improvements in ZooKeeper.
+
+  Ivan Kelly was added as a PMC member for ZooKeeper.
+
+  Mailing list activity continues to be high.
+
+  * 8 active committers representing 5 unique organizations
+  * 8 active PMC members representing 4 unique organizations
+  * 342 subscribers on dev (up from 323 last quarter)
+  * 692 subscribers on user (up from 653 last quarter)
+
+  BOOKKEEPER
+
+  Bookkeeper is a distributed, reliable, and high performance logging
+  service. The project also includes Hedwig which is a highly scalable
+  Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+  durability guarantees.
+
+  Our second release as a sub-project of ZooKeeper, 4.1.0, was released
+  on June 13th. It fixes 102 issues of both BookKeeper and Hedwig. New
+  features include JMX instrumentation and a CLI interface to Hedwig. We
+  are aiming for a new release within a month, and this release will include
+  an important new feature: auto-replication.
+
+  Infrastructure issues:
+  No issues.
+
+  Community building:
+  We have been consistently receiving more contributions from developers
+  across different companies, in particular Huawei. They have expressed
+  strong interest in the project due to its coupling with HDFS. There has
+  been smaller contributions and bug reports from Twitter and Hubspot,
+  and contributions from Twitter folks have been increasing lately. In
+  general, we have been able to grow the community and increase diversity.
+
+  Community:
+  * 47 subscribers to bookkeeper-dev
+  * 52 subscribers to bookkeeper-user
+  * 389 issues opened to date, 108 opened since Jun 1, 2012
+  * 31 reporters of Jira issues, 15 since Jun 1, 2012</pre>
+<h3 id="2012-06-20"><a href="2012/board_minutes_2012_06_20.html#attachment-AW">2012-06-20</a> &mdash; Mahadev Konar<a class="headerlink" href="#2012-06-20" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed
+applications.
+
+There was one new release in the last quarter: 3.3.5 which was a bug
+fix release.
+
+Trunk is under development for an eventual 3.5.0 release. So far primarily
+code cleanup and refactoring has been applied to trunk.  We intend to do a
+3.5.0 release in the next month or so.  Our focus is on scalability, jdk7 and
+openjdk support, maven build/rel, testing and audit logging.
+
+
+Community:
+
+Apache ZooKeeper will be having its second official meetup:
+http://www.meetup.com/zookeeperusergroup/events/67732652/
+
+There seems to be good attendance and excitement on upcoming
+features/improvements in ZooKeeper.
+
+
+Mailing list activity continues to be high and we are seeing more
+contributor activity than we've seen in past quarters.
+
+* 8 active committers representing 5 unique organizations
+* 7 active PMC members representing 4 unique organizations
+* 323 subscribers on dev (up from 298 last quarter)
+* 653 subscribers on user (up from 597 last quarter)
+
+BOOKKEEPER
+
+
+Bookkeeper is a distributed, reliable, and high performance logging
+service. The project also includes Hedwig which is a highly scalable
+Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+durability guarantees.
+
+Our second release as a sub-project of ZooKeeper, 4.1.0, was released
+on June 13th. It fixes 102 issues of both BookKeeper and Hedwig. New
+features include JMX instrumentation and a CLI interface to Hedwig.
+
+Infrastructure issues:
+There is a minor issue with Jira. One of applications of BookKeeper is
+journaling for the HDFS namenode. There has been cases in which we
+needed to move jiras from one project to the other, but the current
+jira configuration does not allow contributors to move jira
+issues. Interestingly, the hadoop jira configuration does allow such
+moves, but our request to change the Jira configuration for BookKeeper
+so far has not been accepted.
+
+Community building:
+Since the previous release, we have started receiving more
+contributions from developers across different companies, in
+particular Huawei. They have expressed strong interest in the project
+due to its coupling with HDFS. There has been smaller contributions
+and bug reports from Twitter and Hubspot. In general, we have been
+able to grow the community and increase diversity.
+
+Community:
+* 42 subscribers to bookkeeper-dev
+* 48 subscribers to bookkeeper-user
+* 287 issues opened to date, 140 opened since Jan 1, 2012
+* 24 reporters of Jira issues, 14 since Jan 1, 2012
+* 10 patch contributors</pre>
+<h3 id="2012-03-21"><a href="2012/board_minutes_2012_03_21.html#attachment-AR">2012-03-21</a> &mdash; Mahadev Konar<a class="headerlink" href="#2012-03-21" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed
+applications.
+
+There were three new releases in the last quarter; 3.4.1, 3.4.2,
+3.4.3. All of them are bug fix releases. 3.3.5 is expected soon as a
+bug fix release on the 3.3 branch.
+
+Trunk is also under development for an eventual 3.5.0 release. So far
+primarily code cleanup and refactoring has been applied to trunk.
+We intend to do a 3.5.0 release in June.  Our focus is on scalability,
+jdk7 and openjdk support, maven build/rel, testing and audit logging.
+
+
+Community:
+
+Apache ZooKeeper had its first official meetup in Feb.
+http://www.meetup.com/zookeeperusergroup/events/49372662/
+
+It was very well attended and received good feedback. This was an
+effort to collect feedback from users and to create a more vibrant
+developer community for ZooKeeper. We intend to do it every 3
+months and get more participation from our users.
+
+
+Mailing list activity continues to be high and we are seeing more
+contributor activity than we've seen in past quarters.
+
+* 8 active committers representing 5 unique organizations
+* 7 active PMC members representing 4 unique organizations
+* 298 subscribers on dev (up from 276 last quarter)
+* 597 subscribers on user (up from 551 last quarter)
+
+BOOKKEEPER
+
+Bookkeeper is a distributed, reliable, and high performance logging
+service. The project also includes Hedwig which is a highly scalable
+Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+durability guarantees.
+
+We are working towards our next release, 4.1.0, and we are planning
+on having it out late March. We are also getting ready for our first
+large-scale deployment at Yahoo!. We will report on our experience as
+soon as we have concrete information.
+
+Community:
+* 33 subscribers to bookkeeper-dev
+* 35 subscribers to bookkeeper-user
+* 16 reporters of Jira issues
+* 6 patch contributors</pre>
+<h3 id="2011-12-21"><a href="2011/board_minutes_2011_12_21.html#attachment-AL">2011-12-21</a> &mdash; Patrick Hunt<a class="headerlink" href="#2011-12-21" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper status report for December 2011.
+
+ZooKeeper is a reliable coordination service for distributed
+applications.
+
+There were two new releases in the last quarter; 3.3.4 and
+3.4.0. 3.3.4 is a fix release while version 3.4.0 includes a number of
+new features and is under active development (3.4.1 is expected soon).
+
+Trunk is also under development for an eventual 3.5.0 release. So far
+primarily code cleanup and refactoring has been applied to trunk.
+
+Camille Fournier joined the ZooKeeper PMC during the past quarter.
+
+Community:
+
+Recently the new S4 project has been accepted into the Incubator -- it
+is using ZooKeeper.
+
+A discussion is currently under way regarding the possibility of
+merging the recently open sourced "Curator" source base from
+Netflix. These are client implementations of ZooKeeper "recipes"
+(e.g. leadership election, group membership, etc...) which simplify
+the act of using ZooKeeper in client side applications.
+
+The authors of Curator are unwilling to join the incubator, this is
+based on their past experience as well as some of the ongoing issues
+they are seeing wrt projects entering the incubator. They have
+expressed a preference to come in either as a subproject or as a
+separate release artifact of the TLP.
+
+A public meetup has been discussed for January and is currently being
+debated/planned on the ZooKeeper developer's list.
+
+Mailing list activity continues to be high and we are seeing more
+contributor activity than we've seen in past quarters.
+
+* 8 active committers representing 4 unique organizations
+* 7 active PMC members representing 4 unique organizations
+* 276 subscribers on dev (up from 255 last quarter)
+* 551 subscribers on user (up from 504 last quarter)
+
+BOOKKEEPER (ZooKeeper subproject)
+
+BookKeeper status report for December 2011.
+
+Bookkeeper is a distributed, reliable, and high performance logging
+service. The project also includes Hedwig which is a highly scalable
+Pub/Sub service built on top of ZooKeeper and Bookkeeper with strong
+durability guarantees.
+
+Our initial release 4.0.0 as a sub-project of ZooKeeper is out. It fixes
+76 issues, and includes new important features such as fencing and
+reading from open ledgers. Reading from open ledgers enables warm
+standbys when using BookKeeper to propagate state updates to
+backup replicas.
+
+We are currently working the next release, 4.1.0, which we plan to have
+during the first quarter of 2012.
+
+Community:
+* 28 subscribers to bookkeeper-dev
+* 30 subscribers to bookkeeper-user
+* 140 issues opened to date, 77 opened since Sep 1, 2011
+* 14 reporters of Jira issues
+* 6 patch contributors
+
+------------------------------------------------------
+End of minutes for the December 21, 2011 board meeting.</pre>
+<h3 id="2011-09-21"><a href="2011/board_minutes_2011_09_21.html#attachment-AM">2011-09-21</a> &mdash; Patrick Hunt<a class="headerlink" href="#2011-09-21" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper status report for September 2011.
+
+ZooKeeper is a reliable coordination service for distributed
+applications.
+
+No new releases during the last quarter. A 3.4.0 release is planned
+and has a release manager assigned. A 3.4 branch has been cut and
+final blocker issues are being resolved, see: http://s.apache.org/Z5x
+
+A 3.3.4 release has been proposed and will likely be cut during the
+next quarter, see: http://s.apache.org/Cug
+
+No changes to Committer/PMC membership.
+
+Community:
+
+Recently a number of new Incubator projects have been accepted which
+are using ZooKeeper; Flume, Kafka, Accumulo, Giraph
+
+Mailing list activity continues to be high and we are seeing more
+contributor activity than we've seen in past quarters.
+
+A public meetup was held subsequent to the recent Hadoop summit,
+meeting notes can be found here: http://s.apache.org/TDR and
+http://s.apache.org/QGY
+
+* 8 active committers representing 4 unique organizations
+* 6 PMC members representing 3 unique organizations
+* 255 subscribers on dev (up from 230 last month)
+* 504 subscribers on user (up from 465 last month)
+
+BOOKKEEPER
+
+Bookkeeper is a distributed, reliable, and high performance logging
+service. The project also includes Hedwig which is a highly scalable
+Pub/Sub service built on top of ZooKeeper and Bookkeeper.
+
+The website, jira, and mailing lists are all setup and functional.
+
+We have some dependencies on the next release of ZooKeeper 3.4.0. Once
+that release goes out, we will make our first release as a subproject
+of ZooKeeper.
+
+Current work is mostly focused on code stabilization, scaling the
+number of topics supported to millions, and JMS bindings.
+
+Community:
+
+* 19 subscribers to bookkeeper-dev
+* 16 subscribers to bookkeeper-user
+* 67 issues opened to date
+* 17 participants on Jira issues
+* 9 patch contributors</pre>
+<h3 id="2011-06-15"><a href="2011/board_minutes_2011_06_15.html#attachment-AI">2011-06-15</a> &mdash; Patrick Hunt<a class="headerlink" href="#2011-06-15" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper status report for June 2011.
+
+ZooKeeper is a reliable coordination service for distributed
+applications.
+
+No new releases during the last quarter. A 3.4.0 release is planned
+and has a release manager assigned.
+
+BookKeeper &amp; Hedwig, previously ZooKeeper contribs, have moved to
+  subproject status (combined as "Apache
+  BookKeeper"). http://zookeeper.apache.org/bookkeeper/
+
+Two new committers have been on-boarded this month: Michi and
+Camille. There are now have 8 committers total representing 4
+organizations.
+
+One new PMC member has been on-boarded this month: Ted Dunning. There
+are now 6 PMC members total representing 3 organizations.
+
+Community:
+
+Mailing list activity continues to be high (400-500 messages per
+month for each of user and dev lists).
+
+A public meetup is planned during the upcoming Hadoop summit.
+
+* 8 active committers representing 4 unique organizations
+* 6 PMC members representing 3 unique organizations
+* 230 subscribers on dev (up from 206 last month)
+* 465 subscribers on user (up from 420 last month)
+
+BOOKKEEPER
+
+The Apache BookKeeper subproject of ZooKeeper is made up of a
+distributed logging service called BookKeeper and a distribute
+publish/subscribe system build on top of BookKeeper called Hedwig.
+
+* project is up and running with patches going through jira and web site is up
+* we have 10 subscriptions to the dev list and 8 subscriptions to the user list
+* we have 5 committers from 3 different organizations
+* utkarsh will be presenting hedwig at the hadoop summit</pre>
+<h3 id="2011-03-16"><a href="2011/board_minutes_2011_03_16.html#attachment-AK">2011-03-16</a> &mdash; Patrick Hunt<a class="headerlink" href="#2011-03-16" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper status report for March 2011.
+
+ZooKeeper is a reliable coordination service for distributed
+applications.
+
+The work of moving us to TLP has been underway for the past four
+months and is essentially complete at this time. An umbrella JIRA is
+available for tracking progress:
+https://issues.apache.org/jira/browse/ZOOKEEPER-940
+
+ZooKeeper 3.3.3 was released on 27 Feb, 2011
+
+Three new committers were voted on and approved this month.
+
+Community:
+
+* 9 active committers representing 4 unique organizations
+* 5 PMC members representing 2 unique organizations
+* 206 subscribers on dev
+* 420 subscribers on user
+
+
+------------------------------------------------------
+End of minutes for the March 16, 2011 board meeting.</pre>
+<h3 id="2011-02-16"><a href="2011/board_minutes_2011_02_16.html#attachment-AK">2011-02-16</a> &mdash; Patrick Hunt<a class="headerlink" href="#2011-02-16" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper status report for February 2011.
+
+ZooKeeper is a reliable coordination service for distributed
+applications.
+
+The work of moving us to TLP has been underway for the past three
+months, an umbrella JIRA is available for tracking progress:
+https://issues.apache.org/jira/browse/ZOOKEEPER-940
+
+Over the last month porting of the legacy site to the new TLP location
+http://zookeeper.apache.org/ has completed. All wiki pages have also
+been moved to cwiki
+https://cwiki.apache.org/confluence/display/ZOOKEEPER/Index
+
+All requirements detailed on the project branding requirements page
+have been integrated into the new TLP website:
+http://www.apache.org/foundation/marks/pmcs.html
+
+Bylaws have been voted on and approved
+http://zookeeper.apache.org/bylaws.html
+
+Release management guidelines have been put in place:
+https://cwiki.apache.org/confluence/display/ZOOKEEPER/ReleaseManagement
+
+Guidelines for committership are being worked out:
+https://cwiki.apache.org/confluence/display/ZOOKEEPER/CommitterCriteria
+
+New committers:
+None. However this issue has been under active discussion for the past
+several months. Now that TLP related work is completed we are
+officially considering a number of new committers (contributors we've
+been actively mentoring).
+
+Two releases are in progress, near term (Q1) a 3.3.3 fix release
+(RM assigned), and longer term 3.4.0 feature release.
+
+The ZooKeeper PMC has voted to accept "Clusterlib" as a subproject
+(probably under a different, less general name):
+http://s.apache.org/yK
+
+Community:
+
+* 6 active committers
+* 5 PMC members representing 2 unique organizations
+* 199 subscribers on dev
+* 398 subscribers on user
+
+
+------------------------------------------------------
+End of minutes for the February 16, 2011 board meeting.</pre>
+<h3 id="2011-01-19"><a href="2011/board_minutes_2011_01_19.html#attachment-AI">2011-01-19</a> &mdash; Patrick Hunt<a class="headerlink" href="#2011-01-19" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper is a reliable coordination service for distributed
+applications.
+
+The work of moving us to TLP has been underway for the past two
+months, an umbrella JIRA is available for tracking progress:
+https://issues.apache.org/jira/browse/ZOOKEEPER-940
+
+Over the last month significant progress has been made in porting our
+legacy site to the new location http://zookeeper.apache.org/ This
+work, along with moving all of the wiki pages, is still in progress.
+
+There is also active discussion on bylaws, a WIP draft can be found
+here:
+https://cwiki.apache.org/confluence/display/ZOOKEEPER/ZooKeeperBylawsProposal
+
+Releases:
+* 3.3.2 fix release on November 11th.
+
+Two releases are in progress, near term (Q1) a 3.3.3 fix release, and
+longer term 3.4.0 feature release.
+
+New committers:
+None. However this issue has been under active discussion for the past
+several months. Once the initial TLP related work is completed we will
+be officially considering a number of new committers (contributors we've
+been actively mentoring).
+
+Community:
+
+* 6 active committers
+* 5 PMC members representing 2 unique organizations
+* 185 subscribers on dev
+* 384 subscribers on user
+
+
+------------------------------------------------------
+End of minutes for the January 19, 2011 board meeting.</pre>
+<h3 id="2010-12-15"><a href="2010/board_minutes_2010_12_15.html#attachment-AJ">2010-12-15</a> &mdash; Patrick Hunt<a class="headerlink" href="#2010-12-15" title="Permalink">&para;</a></h3>
+<pre>ZooKeeper status report for December 2010.
+
+ZooKeeper is a reliable coordination service for distributed
+applications.
+
+As of November 17, 2010 ZooKeeper became a TLP. Prior to this move ZK
+was a subproject of Hadoop. The work of moving us to TLP has been
+underway for the past couple weeks, an umbrella JIRA is available for
+tracking progress:
+https://issues.apache.org/jira/browse/ZOOKEEPER-940
+
+HUGE thanks to the Infrastructure team for setting up the TLP
+infrastructure so quickly/efficiently:
+https://issues.apache.org/jira/browse/INFRA-3228
+
+The community has been actively working toward the 3.3.2 release for
+the past several months, released on November 11th. Mailing list
+activity (questions and answers) has been steadily increasing, both on
+the dev and user lists.
+
+Releases:
+* 3.3.2 fix release on November 11th.
+
+Two releases are in progress, near term (Q1) a 3.3.3 fix release, and
+longer term 3.4.0 feature release.
+
+New committers:
+None. However this issue has been under active discussion for the past
+several months. Once the initial TLP related work is completed we will
+be officially considering a number of new committers (contributors we've
+been actively mentoring).
+
+Community:
+
+* 6 active committers
+* 5 PMC members representing 2 unique organizations
+* 182 subscribers on dev
+* 375 subscribers on user
+
+------------------------------------------------------
+End of minutes for the December 15, 2010 board meeting.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

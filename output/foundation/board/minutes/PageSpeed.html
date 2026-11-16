@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: PageSpeed | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: PageSpeed';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: PageSpeed';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: PageSpeed</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="pagespeed">PageSpeed<a class="headerlink" href="#pagespeed" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#pagespeed">2022-11-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+The project has been in the incubator for a long time.
+
+While the project enjoys a strong user base that has grown during this
+time, the project has not succeeded to grow a strong developer base to
+match this.
+Therefore we think the project should withdraw from the incubator.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:
+- [ ] (pagespeed) Atri Sharma
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#pagespeed">2022-09-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1.Grow the number of active developers
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+While there is a healthy user base, the number of active developers remains
+persistently low.  This seems to be a hard to address challenge.
+
+### How has the community developed since the last report?
+
+Mailing lists and git issues are active. The number of active developers is
+unchanged.
+
+### How has the project developed since the last report?
+
+Minor activity. notably, ngx_pagespeed's build broke as of nginx 1.23, a fix
+was contributed addressing this in a backwards compatible manner.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [x] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+The week of May 11th, 2020
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+As far as we know the brand is respected by third parties.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Jukka Zitting
+   Comments:
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#pagespeed">2022-05-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the number of active developers
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+While there is a healthy user base, the number of active developers remains
+persistently low.
+This seems to be a hard to address challenge.
+
+### How has the community developed since the last report?
+
+Mailing lists and git issues are active. The number of active developers is
+unchanged.
+
+### How has the project developed since the last report?
+
+Minor activity.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+The week of May 11th, 2020
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+As far as we know the brand is respected by third parties.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:  One mentor having just stepped down, it's encouraging
+              that a new mentor has stepped up!
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-01-19"><a href="2022/board_minutes_2022_01_19.html#pagespeed">2022-01-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-01-19" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help make
+the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+  1. Grow the number of active developers
+  2. Enhance the release process: switch to github tagged release to
+  simplify.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+  While there is a healthy user base, the number of active developers
+  remains persistently low.  This seems to be a hard to address challenge.
+
+### How has the community developed since the last report?
+
+  Mailing lists and git issues are active. The number of active developers
+  is unchanged.
+
+### How has the project developed since the last report?
+
+  Minor activity.
+
+### How would you assess the podling's maturity?
+  Please feel free to add your own commentary.
+
+  - [ ] Initial setup
+  - [ ] Working towards first release
+  - [X] Community building
+  - [ ] Nearing graduation
+  - [ ] Other:
+
+### Date of last release:
+
+  The week of May 11th, 2020
+
+### When were the last committers or PPMC members elected?
+
+  May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+
+  Yes
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+  As far as we know the brand is respected by third parties.
+
+### Signed-off-by:
+
+  - [ ] (pagespeed) Jukka Zitting
+     Comments:
+  - [ ] (pagespeed) Leif Hedstrom
+     Comments:
+  - [X] (pagespeed) Nick Kew
+     Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#pagespeed">2021-08-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the number of active developers
+2. Enhance the release process: switch to github tagged release to
+simplify.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+While there is a healthy user base, the number of active developers
+remains persistently low.  This seems to be a hard to address challenge.
+
+### How has the community developed since the last report?
+
+Mailing lists and git issues are active. The number of active developers
+is unchanged.
+
+### How has the project developed since the last report?
+
+Minor activity.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [X] Other:
+We'll be blogging about the 2.0 Envoy PoC,
+hopefully that will get some developer interest as we pivot into the
+service mesh world
+
+### Date of last release:
+
+The week of May 11th, 2020
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+As far as we know the brand is respected by third parties.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Jukka Zitting
+   Comments:
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#pagespeed">2021-05-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help make the web
+faster by rewriting web pages to reduce latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+1. Grow the number of active developers
+2. Enhance the release process: switch to github tagged release to simplify.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+While there is a healthy user base, the number of active developers remains
+persistently low. This seems to be a hard to address challenge.
+
+### How has the community developed since the last report?
+Mailing lists and git issues are active. The number of active developers is
+unchanged.
+
+### How has the project developed since the last report?
+Minor activity, updating deps on the 2.0-alpha.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+We'll be blogging about the 2.0 Envoy PoC, hopefully that will get some
+developer interest as we pivot into the service mesh world
+
+### Date of last release:
+
+The week of May 11th, 2020
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+As far as we know the brand is respected by third parties.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Jukka Zitting Comments:
+- [ ] (pagespeed) Leif Hedstrom Comments:
+- [X] (pagespeed) Nick Kew Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#pagespeed">2020-11-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the number of active developers
+2. Enhance the release process: switch to github tagged release to
+simplify.
+3.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+While there is a healthy user base, the number of active developers
+remains persistently low. This seems to be a hard to address challenge.
+
+### How has the community developed since the last report?
+
+Mailing lists and git issues are active. The number of active developers
+is unchanged.
+
+### How has the project developed since the last report?
+
+Minor activity, iterating on the 2.0 version.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+The week of May 11th, 2020
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+- As far as we know the brand is respected by third parties. We-Amp
+mirrors the incubator site over at modpagespeed.com - but will work
+on transferring the domain name to the ASF this quarter.
+- It's not known if the VP, brand has explicitly approved, so that is
+something we need to make sure about and resolve.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Jukka Zitting
+   Comments:
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#pagespeed">2020-08-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the number of active developers
+2. Enhance the release process: switch to github tagged release to
+simplify.
+3.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+### How has the community developed since the last report?
+
+Mailing lists and git issues are active. The number of active developers
+is unchanged.
+
+### How has the project developed since the last report?
+
+The first incubator release has been announced after field-testing.
+Furthermore, small enhancements are being contributed from people outside
+of
+the initial committer group. Major changes have landed on master: the
+build
+system has been refreshed to leverage bazel, c++17, abseil and Envoy. All
+dependencies have been refreshed and sanitized where possible.
+As a side-effect, some of the remaining issues from the WIP-DISCLAIMER
+have
+been addressed.
+
+- MPL licensed source code for http date parsing replaced with our own
+version
+which leans on abseil. That part is all Apache licensed now.
+- The no longer contains compiled code pulled in from dependencies.
+
+A simple PoC port to Envoy has landed, as a first step towards running
+PageSpeed
+as a stand-alone sidecar service (where traffic of arbitrary servers can
+be
+routed
+through it via transparent proxying or L7 routing).
+
+### How would you assess the podling's maturity?
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+The week of May 11th, 2020
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+- As far as we know the brand is respected by third parties. We-Amp
+mirrors the incubator site over at modpagespeed.com - but will work
+on transferring the domain name to the ASF this quarter.
+- It's not known if the VP, brand has explicitly approved, so that is
+something we need to make sure about and resolve.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Jukka Zitting
+   Comments:
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#pagespeed">2020-05-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the number of active developers
+2. Enhance the release process.
+3.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+A first incubator release was approved by both the developer group and
+the
+IPMC!
+
+### How has the community developed since the last report?
+
+Mailing lists and git issues are active. The number of active developers
+is unchanged.
+
+### How has the project developed since the last report?
+
+A handful of minor fixes/enhancements have been landed
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+E.T.A The week of May 11th
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+- As far as we know the brand is respected by third parties. We-Amp
+mirrors the incubator site over at modpagespeed.com - but will work
+on transferring the domain name to the ASF this quarter.
+- It's not known if the VP, brand has explicitly approved, so that is
+something we need to make sure about and resolve.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Jukka Zitting
+   Comments:
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:
+
+### IPMC/Shepherd notes:
+justin Mclean: Congratulations on your release!</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#pagespeed">2020-03-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Produce a release
+2. Increase the number of active developers
+3.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+After a series of release candidates, a first incubator release was
+approved
+by both the developer group and the IPMC. However, while doing the final
+release preparation a blocking issue was observed: the scripts that
+package
+the product would still point to dl.google.com as a repo source.
+This is being addressed.
+
+### How has the community developed since the last report?
+
+Mailing lists and git issues are active. The number of active developers
+is steady.
+
+### How has the project developed since the last report?
+
+A first WIP incubator release made it through the voting rounds, but
+needs some small changes to address a blocking issue observed during
+finalization. Those have been made, and another vote is in progress.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+N/A
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+
+Yes
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+As far as we know the brand is respected by third parties
+It's not known if the VP, brand has explicitly approved, so
+that is something we need to make sure about and resolve.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Jukka Zitting
+   Comments:
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [x] (pagespeed) Nick Kew
+   Comments:
+
+### IPMC/Shepherd notes:
+Justin Mclean: It seems your release has not been placed in the offical
+release area. Please do so.</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#pagespeed">2019-11-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Produce first release
+2. Grow the number of active developers
+3.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+We need more IPMC votes on a proposed release candidate which has passed our
+own PMC review.
+
+### How has the community developed since the last report?
+
+User-activity is healthy as always. Developer activity is still limited
+to the original contributor group, plus recently a new committer (lofesa@).
+
+### How has the project developed since the last report?
+
+- There is a release staged in review with some good fixes &amp; features.
+- Work on modernizing the project's build system has progressed well.
+- Also, there is a PoC for running PageSpeed via Envoy, which opens a great
+path towards materializing a 2.0 version.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+None.
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+
+No answer.
+
+### Signed-off-by:
+
+- [ ] (pagespeed) Jukka Zitting
+   Comments:
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:
+- [ ] (pagespeed) Phil Sorber
+   Comments:
+
+### IPMC/Shepherd notes:
+Justin Mclean: I think you may have a misunderstanding about the release
+process, you need to post to general to get IPMC votes on releases.</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#pagespeed">2019-08-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Produce a release
+2. Grow more active contributors
+3.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+What has been falling through the cracks is actually producing a release
+for review. That has been looked into [1] but the artifact needs a few
+tweaks to get it right according to ASF standards before it makes sense to
+enter the process.
+
+[1] http://people.apache.org/~oschaaf/mod_pagespeed/
+
+### How has the community developed since the last report?
+
+One new committer/ppmc member was voted in after contributing
+a series of code changes to the core product.
+
+### How has the project developed since the last report?
+
+A significant effort is in progress to modernize some aspects of
+the project as well as simplify the build and dependency management
+by porting the build system from gyp to bazel.
+This is a first step towards the PageSpeed 2.0 plan that was initially
+proposed when entering the incubator.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+XXXX-XX-XX
+
+### When were the last committers or PPMC members elected?
+
+May 27 2019 (Longinos Ferrando, elected as both committer and PMC member)
+
+### Have your mentors been helpful and responsive?
+
+Mentors have been helpful.
+
+### Signed-off-by:
+
+- [x] (pagespeed) Jukka Zitting
+   Comments: The community needs more help from mentors to get the first
+   ASF release out. Unfortunately my availability continues to be fairly
+   limited, to the point where I might need to resign and ask someone else
+   to fill in. I'll try to help push things along before our next report,
+   and will re-evaluate my usefulness as mentor then.
+- [ ] (pagespeed) Leif Hedstrom
+   Comments:
+- [X] (pagespeed) Nick Kew
+   Comments:
+- [ ] (pagespeed) Phil Sorber
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#pagespeed">2019-05-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help
+make the web faster by rewriting web pages to reduce latency and
+bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important unfinished issues to address before graduating:
+
+  1. Get the project site in order
+  2. Start releasing
+  3. Engage more active developers, expanding the community
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+How has the community developed since the last report?
+
+  The number of active developers is low, we are still working
+  to follow up on the recommendation to create a release.
+
+How has the project developed since the last report?
+
+  - A first draft-release is being manually checked for policy compliance.
+  We expect
+  to be able to raise a thread on general soon to discuss/vote.
+  - There has been some discussion how to get the project site in-order,
+  and there's
+  a plan for that now (transfer modpagespeed.com to the AFS, duplicate
+  contents to
+  pagespeed.incubator.apache.org).
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+  Feb 2 2018 (Huibao Lin, elected as both committer and PMC member)
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+  Mentors have been helpful.
+
+Signed-off-by:
+
+  [ ](pagespeed) Jukka Zitting
+  Comments:
+  [ ](pagespeed) Leif Hedstrom
+  Comments:
+  [X](pagespeed) Nick Kew
+  Comments:
+  [ ](pagespeed) Phil Sorber
+  Comments:
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#pagespeed">2019-02-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to
+help make the web faster by rewriting web pages to reduce
+latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+1. The project needs more active developers.
+2. Create a first release
+3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+The number of active developers is low. It was suggested that a release
+may help attract community members. This was started, but stalled because
+of us feeling that we wanted to land a certain bug-fix. This release
+process will be re-spun and we should have a first incubator release
+candidate ready for review somewhere in the next couple of weeks.
+
+How has the community developed since the last report?
+
+One new developer was invited to be added as a committer, but ended up
+declining.
+
+How has the project developed since the last report?
+
+There have been significant contributions to the core product, which is
+an improvement. Frequency is still low.
+
+How would you assess the podling's maturity?
+
+[ ] Initial setup
+[X] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+XXXX-XX-XX (First release being prepared, finally)
+
+When were the last committers or PPMC members elected?
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Mentors have been helpful.
+
+Signed-off-by:
+
+[ ](pagespeed) Jukka Zitting
+   Comments:
+[ ](pagespeed) Leif Hedstrom
+   Comments:
+[*](pagespeed) Nick Kew
+   Comments: As ever, ample git activity, very little discussion on-list.
+[ ](pagespeed) Phil Sorber
+   Comments:
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#pagespeed">2018-11-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help
+make the  web faster by rewriting web pages to reduce latency and
+bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+  1. The project needs more active developers.
+  2. Create a first release
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  The number of active developers is low.
+  It looks like we cannot leave this up to organic growth and would like to
+  brainstorm on ways to engage more developers.
+
+How has the community developed since the last report?
+
+  One new developer was proposed to be added as a committer, but nobody
+  voted, so the vote failed. This vote may have been initiated too early.
+  In terms of users the project seems to be growing slightly still, but in
+  terms  of developers we seem to be stalled.
+
+How has the project developed since the last report?
+
+  A docker image for Alpine support was merged, which constitutes a non-
+  trivial contribution.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+  Feb 2 2018 (Huibao Lin, elected as both committer and PMC member)
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Mentors have been helpful.
+
+Signed-off-by:
+
+  [ ](pagespeed) Jukka Zitting
+     Comments:
+  [ ](pagespeed) Leif Hedstrom
+     Comments:
+  [X](pagespeed) Nick Kew
+     Comments: Iterating my comment from the last report: this looks like
+               a healthy github project but the Apache part is less clear.
+  [ ](pagespeed) Phil Sorber
+     Comments:
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-11-21-2"><a href="2018/board_minutes_2018_11_21.html#pagespeed">2018-11-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-11-21-2" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help
+make the  web faster by rewriting web pages to reduce latency and
+bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+  1. The project needs more active developers.
+  2. Create a first release
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  The number of active developers is low.
+  It looks like we cannot leave this up to organic growth and would like to
+  brainstorm on ways to engage more developers.
+
+How has the community developed since the last report?
+
+  One new developer was proposed to be added as a committer, but nobody
+  voted, so the vote failed. This vote may have been initiated too early.
+  In terms of users the project seems to be growing slightly still, but in
+  terms  of developers we seem to be stalled.
+
+How has the project developed since the last report?
+
+  A docker image for Alpine support was merged, which constitutes a non-
+  trivial contribution.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+  Feb 2 2018 (Huibao Lin, elected as both committer and PMC member)
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Mentors have been helpful.
+
+Signed-off-by:
+
+  [ ](pagespeed) Jukka Zitting
+     Comments:
+  [ ](pagespeed) Leif Hedstrom
+     Comments:
+  [X](pagespeed) Nick Kew
+     Comments: Iterating my comment from the last report: this looks like
+               a healthy github project but the Apache part is less clear.
+  [ ](pagespeed) Phil Sorber
+     Comments:
+
+IPMC/Shepherd notes:</pre>
+<h3 id="2018-09-19"><a href="2018/board_minutes_2018_09_19.html#pagespeed">2018-09-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-09-19" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help make the
+web faster by rewriting web pages to reduce latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+1. Create a first release
+2. The project needs more active developers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+The last report being missed was my bad (oschaaf), I was on vacation
+and forgot to ask someone else to do it.
+
+How has the community developed since the last report?
+
+Again, there have been very limited external contributions, two
+contributions to the core code-base.
+We do see certain users committing to helping out others on the google
+group and github, some of them consistently for months now.
+In terms of user engagement activity continues to be healthy.
+
+How has the project developed since the last report?
+
+- Problems with Travis timeouts have been mostly fixed
+- Flaking dependencies hosted on sourcefourge have been fixed
+- Work is still in progress for a particularly nasty bug, which
+  would be great to have fixed in a first release.
+- An external contributor has been maintaining a docker image
+  for ngx_pagespeed, which should be proposed for inclusion into
+  the ASF repo soon
+
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[X] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+N/A
+
+When were the last committers or PPMC members elected?
+
+Feb 2 2018 (Huibao Lin, elected as both committer and PMC member)
+
+Signed-off-by:
+
+[ ](pagespeed) Jukka Zitting
+   Comments:
+[ ](pagespeed) Leif Hedstrom
+   Comments:
+[X](pagespeed) Nick Kew
+   Comments: A healthy level of activity in github/issues, but the dev
+   list is looking thin (I don't recollect any of the issues reported
+   above discussed there), and community development seems slow.
+[ ](pagespeed) Phil Sorber
+   Comments:</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#pagespeed">2018-05-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help make the web
+faster by rewriting web pages to reduce latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Work on ASF compliance with regard to the code base and website
+     needs review.
+  2. Create a first release
+  3. Engage more active developers, expanding the community
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  None.
+
+How has the community developed since the last report?
+
+  One new pmc member/committer joined. There have been external contributions to
+  the code, but those have been mostly one-offs and not to the core product.
+  We do see certain users committing to helping out others on the google group
+  and github, some of them consistently for months now.
+  In terms of user engagement activity continues to be healthy.
+  (lots of questions, some of which have been added to the FAQ).
+
+
+How has the project developed since the last report?
+
+  Changes with regard to ASF/incubator compliance for the code-base,
+  dependencies, and existing website have been made for mod_pagespeed.
+
+  There have been non-trivial dependency upgrades to address platform
+  compatibility issues.
+
+  A bug fix for a relatively frequently reported issue is under review.
+
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+
+
+Date of last release:
+
+  N/A
+
+  A discussion on dev@ will be initiated to gauge consensus for spinning up
+  the release process based on the current code-base. The advantage is that
+  doing so would make transitioning from Google- to ASF- signed releases
+  low friction.
+
+When were the last committers or PPMC members elected?
+
+  Feb 2 2018 (Huibao Lin, elected as both committer and PMC member)
+
+Signed-off-by:
+
+  [ ](pagespeed) Jukka Zitting
+     Comments:
+  [X](pagespeed) Leif Hedstrom
+     Comments:
+  [X](pagespeed) Nick Kew
+     Comments:
+  [X](pagespeed) Phil Sorber
+     Comments:</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#pagespeed">2018-02-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help make the web
+faster by rewriting web pages to reduce latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+ 1. Community building
+ 2. Wrap up ASF license policy compliance
+ 3. Create a first release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+
+How has the community developed since the last report?
+
+The dev list is showing much more activity since the last board report:
+- Gitbox notifications are now reflected to dev@
+- Most discussions by devs have had dev@ looped in
+
+One of the original team members from Google has been invited to join
+as a PMC member/committer.
+
+Limited contributions from outside of the initial committer group:
+Documentation fixes, cpanel support.
+
+How has the project developed since the last report?
+
+- The initial code drop has been performed
+- The project was voted to switch to Commit-to-Review while we work
+ on license compliance and lots of small changes are anticipated.
+- It looks like RAT compliance is close to being done.
+- A first pass for assembling NOTICE and LICENSE for mod_pagespeed
+ is under review.
+- Dependencies have been updated, a reliability fix was merged
+- There have been discussions on designs for new features
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+ [ ] Initial setup
+ [X] Working towards first release
+ [X] Community building
+ [ ] Nearing graduation
+ [ ] Other:
+
+Date of last release:
+
+ N/A
+
+When were the last committers or PPMC members elected?
+
+ 2017-09-30 (entering incubation, one new member is pending acceptation)
+
+Signed-off-by:
+
+ [ ](pagespeed) Jukka Zitting
+    Comments:
+ [X](pagespeed) Leif Hedstrom
+    Comments:
+ [x](pagespeed) Nick Kew
+    Comments:
+ [ ](pagespeed) Phil Sorber
+    Comments:
+
+IPMC/Shepherd notes:
+ Dave Fisher: LGTM</pre>
+<h3 id="2018-01-17"><a href="2018/board_minutes_2018_01_17.html#pagespeed">2018-01-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2018-01-17" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help make the web
+faster by rewriting web pages to reduce latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+  1.  Finish project setup 2.  Community building 3.  Create a first release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+  None
+
+
+How has the community developed since the last report?
+
+- Continued healthy activity has shown on the x-pagespeed-discuss groups and
+  github issue system.
+- There have been limited contributions to pagespeed repositories from outside
+  of the current committer group.
+
+How has the project developed since the last report?
+
+- There have been bug fixes and feature progress
+- Transfers of the pagespeed repositories to the ASF have been initiated
+- RAT has been successfully run and an in-detail review of project
+  dependencies is in progress. So far no blockers or critical issues have been
+  identified.
+
+How would you assess the podling's maturity? Please feel free to add your own
+commentary.
+
+  [X] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release: N/A
+
+When were the last committers or PPMC members elected? 2017-09-30 (entering
+incubation)
+
+
+Signed-off-by:
+
+  [x](pagespeed) Jukka Zitting
+     Comments:
+  [x](pagespeed) Leif Hedstrom
+     Comments:
+  [X](pagespeed) Nick Kew
+     Comments:
+  [x](pagespeed) Phil Sorber
+     Comments:</pre>
+<h3 id="2017-12-20"><a href="2017/board_minutes_2017_12_20.html#pagespeed">2017-12-20</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-12-20" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help make the web
+faster by rewriting web pages to reduce latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+  1.  Finish project setup
+  2.  Community building
+  3.  Create a first release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  None
+
+
+How has the community developed since the last report?
+
+- A new potential committer indicated interest in joining the PageSpeed initiative
+by maintaining the FreeBSD port he contributed and updating it to the latest, and
+upstreaming required changes to support the new platform to make future updates
+easier.
+
+How has the project developed since the last report?
+
+- Some technical hurdles were encountered while trying to run the RAT tools on
+the codebase. The plan is to pick this up again after the initial code drop has been
+performed to the ASF repo.
+- We are working on getting the source code into the ASF repository.
+- Progress was made on new features and getting the module distributed more widely.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [X] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+  N/A
+
+When were the last committers or PPMC members elected?
+  2017-09-30 (entering incubation)
+
+
+Signed-off-by:
+
+  [ ](pagespeed) Jukka Zitting
+     Comments:
+  [X](pagespeed) Leif Hedstrom
+     Comments:
+  [X](pagespeed) Nick Kew
+     Comments:
+  [ ](pagespeed) Phil Sorber
+     Comments:</pre>
+<h3 id="2017-11-15"><a href="2017/board_minutes_2017_11_15.html#pagespeed">2017-11-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2017-11-15" title="Permalink">&para;</a></h3>
+<pre>PageSpeed represents a series of open source technologies to help make the web
+faster by rewriting web pages to reduce latency and bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important issues to address in the move towards graduation:
+
+1.  Finish project setup
+2.  Community building
+3.  Create a first release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None.
+
+How has the community developed since the last report?
+
+- The initial committers have submitted ICLAs (when needed), and accounts
+ have been setup. Mailing list were created.
+- We have seen activity from two unaffiliated developers. One is contributing
+ to solving a complex issue and another is helping out with FreeBSD platform
+ support.
+
+How has the project developed since the last report?
+
+- We are working on the transfer of IP from Google to the ASF.
+- Someone worked on FreeBSD compatibility and added a port based on the
+ latest stable mod_pagespeed release:
+ https://svnweb.freebsd.org/changeset/ports/452011
+- Progress was made on Alpine support.
+- Progress was made on Content-Security-Policy support.
+- A couple of bugs have been solved.
+- The Google hosted pagespeed-dev@ mailing list was been notified of the newly
+ created dev@ list.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[X] Initial setup
+[ ] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+N/A
+
+When were the last committers or PPMC members elected?
+
+2017-09-30
+
+Signed-off-by:
+
+[X](pagespeed) Jukka Zitting
+   Comments:
+[X](pagespeed) Leif Hedstrom
+   Comments:
+[X](pagespeed) Nick Kew
+   Comments:
+[ ](pagespeed) Phil Sorber
+   Comments:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: StreamPipes | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: StreamPipes';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: StreamPipes';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: StreamPipes</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="streampipes">StreamPipes<a class="headerlink" href="#streampipes" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-11-16</td>
+<td><a href="2022/board_minutes_2022_11_16.html#section-7D">Appointed Philipp Zehnder</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-11-16</td>
+<td><a href="2022/board_minutes_2022_11_16.html#section-7D">Establish the Apache StreamPipes Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-CB">2026-08-19</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (4 years ago)
+There are currently 35 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Sven Oehler on 2025-10-30.
+- Jacqueline H&ouml;llig was added as committer on 2026-06-08
+
+## Project Activity:
+- Extended the functionality of the Python client
+- Continued harmonizing functionality and user interaction across different
+  StreamPipes resource types to provide a more consistent user experience.
+- Added support for shortcuts to enable faster navigation and more efficient
+interaction with frequently used functionality.
+
+## Community Health:
+- Community activity remains stable, with ongoing contributions and discussions.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-BR">2026-05-20</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (3 years ago)
+There are currently 34 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Sven Oehler on 2025-10-30.
+- Xinhao Liu was added as committer on 2026-04-10
+
+## Project Activity:
+
+* Improved OPC UA support, including support for events and complex data types
+* Implemented an initial NATS-based broker communication mode for
+  core-to-extension requests, enabling HTTP-free extension
+  connectivity while preserving backward compatibility through
+  configurable dual transport support.
+* Added functionality to directly import CSV data into data sets.
+
+## Community Health:
+* Presentationat Community Over Code in Glasgow.
+* Community members plan to participate in the hackathon at Community Over Code</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-CA">2026-02-18</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (3 years ago)
+There are currently 33 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Sven Oehler on 2025-10-30.
+- No new committers. Last addition was Marcel Frueholz on 2025-01-23.
+
+## Project Activity:
+- Performed release 0.98.0 on 2025-12-15
+- Improved the connect module by adding support for script-based
+  preprocessing
+- Introduced retention policies for time series data storage, including
+  options to move older data to cold storage
+- Further integrated asset-centric organization of resources, including a new
+  home screen focused on assets
+- Added preview functionality for resources
+- Promoted data sets to a top-level resource within the platform
+
+## Community Health
+- Continued community visibility through multiple posts and discussions on
+  LinkedIn</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-BT">2025-11-19</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (3 years ago)
+There are currently 33 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:4.
+
+Community changes, past quarter:
+- Sven Oehler was added to the PMC on 2025-10-30
+- No new committers. Last addition was Marcel Frueholz on 2025-01-23.
+
+## Project Activity:
+- Preparing release v0.98.0
+- Integrated Develocity for enhanced build insights
+- Added translation support to improve accessibility
+- Implemented a LoadBalancer for StreamPipes with:
+ - Three allocation strategies
+ - Dynamic migration algorithms to maintain runtime balance.
+ - New monitoring metrics for adapter/pipeline counts and migration performance.
+
+## Community Health:
+- Successfully supervised an OSPP project
+- Increased discussions and reported issues from users on GitHub</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-BR">2025-08-20</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (3 years ago)
+There are currently 33 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zhenyu Luo on 2023-10-17.
+- No new committers. Last addition was Marcel Frueholz on 2025-01-23.
+
+## Project Activity:
+- Added support for OPC UA certificate-based authentication to enhance security
+- Improved Data Explorer functionality
+- Addressed minor issues and implemented various bug fixes to
+improve overall system stability and performance
+
+## Community Health:
+- Mentored a student as part of the Google Summer of Code program,
+ supporting contributions to the project
+- There will be a StreamPipes presentation by members of the
+community at the upcoming Community Over Code</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-BK">2025-05-21</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (2 years ago)
+There are currently 33 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zhenyu Luo on 2023-10-17.
+- No new committers. Last addition was Marcel Frueholz on 2025-01-23.
+
+## Project Activity:
+- We released version 0.97.0 (2025-02-17)
+- Introduced a new processing element, MultiModelPromptProcessor
+  - This processor enables users to forward stream data to an
+ LLM and incorporate its response directly within the pipeline
+- Added a new data sink, TsFileSink
+  - This sink allows users to persist data in TS file format
+- Enhanced the Data Explorer with expanded features (e.g., status heatmap)
+- Implemented multi-language support across several modules
+
+## Community Health:
+- The number of blog posts has steadily increased over the past few months
+- In addition to blog posts, we have expanded our
+presence on social media platforms</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-BT">2025-02-19</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (2 years ago)
+There are currently 33 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zhenyu Luo on 2023-10-17.
+- Marcel Frueholz was added as committer on 2025-01-23
+
+## Project Activity:
+- We are currently preparing for the upcoming 0.97.0 release.
+- The old Live Dashboard has been removed and replaced with the
+new Data Explorer dashboard for improved data visualization and analysis.
+- The asset concept has been further integrated
+ into the software, enhancing its usability.
+
+## Community Health:
+- Several new feature ideas were submitted by the community
+via GitHub discussion</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-BO">2024-11-20</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (2 years ago)
+There are currently 32 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zhenyu Luo on 2023-10-17.
+- Baiqi Lu was added as committer on 2024-09-07
+
+## Project Activity:
+- Added multiple new processing elements contributed by the community
+- Streamlined the dashboard and data explorer for improved usability
+- Extended the asset model concept to support broader use cases
+- Developed new APIs to enable adding adapters and pipelines through REST calls
+- Actively preparing for the upcoming release
+
+## Community Health:
+- We reached 600 Stars on GitHub
+- Quite a few new Pull Requests from new contributors</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-BU">2024-08-21</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (2 years ago)
+There are currently 31 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zhenyu Luo on 2023-10-17.
+- No new committers. Last addition was Isaak Krut on 2024-04-24.
+
+## Project Activity:
+- **New Releases:**
+  - Version 0.95.0 released on June 13, 2024
+  - Version 0.95.1 released on June 26, 2024
+
+- **Technical Highlights from Latest Releases:**
+  - Added support for Open Industry 4.0 devices with a new adapter,
+ enhancing compatibility with modern manufacturing technologies.
+  - Resolved issues with S7 PLC connections to ensure more
+reliable integration for users.
+  - Fixed functionality problems with the OPCUA Adapter's
+"Add All Direct Children" button, improving user experience.
+  - Enhanced the MS Teams sink with a silent period feature,
+allowing users to manage notification timing more effectively
+and reduce notification overload.
+
+## Community Health:
+The project activity remains high, with a significant volume
+of new GitHub discussions and community interactions.
+There is a marked increase in community-contributed fixes
+and improvements, reflecting active engagement from external developers.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-BP">2024-05-15</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (a year ago)
+There are currently 31 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zhenyu Luo on 2023-10-17.
+- Isaak Krut was added as committer on 2024-04-24
+
+## Project Activity:
+- Latest Release: 2023-11-28 (v0.93.0)
+- Commenced testing for upcoming release and established release
+branch for v0.95.0
+- Enhanced time series data store API to prepare the integration of
+Apache IoTDB
+- Augmented code testability
+- Implemented Go support for the StreamPipes client
+
+## Community Health:
+- Increased engagement on social media platforms
+- Published a new blog post focusing on the Python
+client and integration with ONNX models</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-BR">2024-02-21</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (a year ago)
+There are currently 30 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zhenyu Luo on 2023-10-17.
+- MuYang Ye was added as committer on 2023-11-29
+
+## Project Activity:
+- New Release: 2023-11-28 (v0.93.0)
+- Refactoring Data Explorer (Migrated visualizations to Apache Echarts)
+- Working towards improved permission management
+- Working on a new go client
+
+## Community Health:
+- We have a lot more people opening discussions on GitHub
+- Several new contributors have opened PRs
+- We had a talk at the AI for Industry Event of the Hanover Fair,
+highlighting the need for open source in manufacturing</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-BM">2023-11-15</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (a year ago)
+There are currently 29 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- Zhenyu Luo was added to the PMC on 2023-10-17
+
+## Project Activity:
+- We are currently preparing the release 0.93.0
+- Enhanced update process between versions
+  - Developers of processing elements now have the option of implement
+pdate scripts
+  - Streamlining the adapter model
+- Improve StreamPipes documentation
+- Documentation system improved to automatically create
+up-to-date docs from pipeline elements
+- Increased End-to-End (e2e) Test Coverage
+
+## Community Health:
+- Two projects were supervised by community members at the OSPP challenge
+- Maintained consistent engagement in social media outreach efforts
+- Successful contributions to the Hacktoberfest
+- Several new contributors have appeared with first-time contributions
+- We are very pleased with the progress of our Github
+ discussion page, where users ask for help and background information</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-BZ">2023-08-16</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (9 months ago)
+There are currently 28 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zike Yang on 2022-11-26.
+- Lukas Ott was added as committer on 2023-06-23
+
+## Project Activity:
+- Version 0.92.0 was released (June 21, 2023) [1]
+- Updating Angular and fixing material design brakes changes
+- Reduce bundle size by restructuring the protocol layout packages
+- StreamPipes now supports Python 3.11
+- The website was completely revised
+
+## Community Health:
+- One online community meeting was held (2023-07-26) [2]
+- There are two topics at the OSPP supervised by the community
+- Two presentations at a meetup in germany
+- A live talk was given at Industry40tv [3]
+- An increased number of user questions that could be solved via
+GitHub Discussion
+- The project has started weekly social media activities on Twitter
+ and LinkedIn to attract more users
+
+[1] https://github.com/apache/streampipes/blob/release/0.92.0/RELEASE_NOTES.md
+[2] https://cwiki.apache.org/confluence/display/STREAMPIPES/SPCM-2023-07-26
+[3] https://www.youtube.com/live/0iP9E8-yEkg?feature=share</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-BO">2023-05-17</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Issues:
+No Issues
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (6 months ago)
+There are currently 27 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zike Yang on 2022-11-26.
+- Xiao Liu was added as committer on 2023-04-21
+- Steve Yurong Su was added as committer on 2023-02-27
+
+## Project Activity:
+- Version 0.91.0 was released (April 14, 2023) [1].
+- Release of python library
+- Discussion and first implementation to replace InfluxDB
+with Apache IoTDB.
+- Refactoring of the Connect library
+- Various automations added to GitHub workflows
+to improve code quality and the PR process
+
+## Community Health:
+- Two online community meetings (2023-02-22, 2023-04-05) [2][3]
+- Presentation at the BuildingIoT conference in Munich
+- Talk at FOSSGIS conference in Berlin
+- Talk at PyCon in Berlin
+- Through the discussions on GitHub, we were able to get
+some feedback from new users
+- Several proposals were submitted for GSoC
+- Two topics were submitted for the OSPP
+
+[1] https://github.com/apache/streampipes/blob/release/0.91.0/RELEASE_NOTES.md
+[2] https://cwiki.apache.org/confluence/display/STREAMPIPES/SPCM-2023-02-22
+[3] https://cwiki.apache.org/confluence/display/STREAMPIPES/SPCM-2023-04-05</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-CH">2023-02-15</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Issues:
+No Issues
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (3 months ago)
+There are currently 25 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Zike Yang was added to the PMC on 2022-11-26
+- Cedric Kulbach was added as committer on 2022-12-15
+- Sven Oehler was added as committer on 2022-12-15
+- Samuel Abt was added as committer on 2023-01-17
+- Xin Wang was added as committer on 2022-11-25
+
+## Project Activity:
+- Work on the Python Client continues to progress
+- Version 0.90.0 was released (January 17th 2023) [1]
+- The discussion for the next release has already started
+on the mailing list [2]
+- The project has updated its third-party service dependencies
+- The team is working to simplify the model used in the background to
+ make it easier to use and understand, especially for new developers.
+
+## Community Health:
+-  The project recently held its first online community meeting,
+which was a success.
+The meeting details can be found here [3] and were also distributed
+to the dev list
+-  The mailing list has seen a constant increase in traffic, with
+ December's count at 468 and January's count at 734
+-  The switch to GitHub discussions has led to an increase in mailing
+ list traffic, and we've tried several settings to make the list
+manageable again
+
+[1] https://github.com/apache/streampipes/blob/release/0.90.0/RELEASE_NOTES.md
+[2] https://lists.apache.org/list?dev@streampipes.apache.org:lte
+=1M:Already%20time%20for%20preparing%20the%20next%20release
+[3] https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=240881564</pre>
+<h3 id="2023-01-18"><a href="2023/board_minutes_2023_01_18.html#attachment-CE">2023-01-18</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2023-01-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Issues:
+No Issues
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (2 months ago)
+There are currently 24 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Zike Yang was added to the PMC on 2022-11-26
+- Cedric Kulbach was added as committer on 2022-12-15
+- Sven Oehler was added as committer on 2022-12-15
+- Xin Wang was added as committer on 2022-11-25
+
+## Project Activity:
+- Improve the setup of GitHub to make it more friendly for new developers
+  - e.g. mark more issues with the tag 'good first issue'
+- The project is currently in the release process for version 0.90.0
+  - Last release (0.70.0) October 13, 2022
+- Code improvement, dependency update and code base cleanup
+
+
+## Community Health:
+- Constantly growing traffic on the mailing list (November: 399, December: 468).
+- Several PRs were submitted by new developers
+- Organization of the first community call for the end of January</pre>
+<h3 id="2022-12-21"><a href="2022/board_minutes_2022_12_21.html#attachment-BU">2022-12-21</a> &mdash; Philipp Zehnder<a class="headerlink" href="#2022-12-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software
+related to a self-service Industrial IoT toolbox which enables non-technical
+users to connect, analyze and explore IoT data streams
+
+## Issues:
+No Issues
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (a month ago)
+There are currently 22 committers and 14 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Zike Yang was added to the PMC on 2022-11-26
+- Xin Wang was added as committer on 2022-11-25
+
+## Project Activity:
+- Last Release: 2022-10-13
+- The ticket system was migrated from Jira to GitHub Issues
+- We have also enabled GitHub Discussions to lower the barrier
+for discussions about problems and new features (with all
+discussions being forwarded to the dev-list)
+- A release branch was created for the next release (0.90.0)
+- A Python client is developed that gives Python developers
+ access to the data processed in StreamPipes
+- Several bug fixes and improvements
+- Resources have been transferred from the Incubator to the new PMC
+
+## Community Health:
+- Growing community with several new committers and a new PMC
+- Increased traffic on the mailing list (October: 175, November: 399)
+- Several new contributors appeared asking for help</pre>
+<h3 id="2022-09-21"><a href="2022/board_minutes_2022_09_21.html#streampipes">2022-09-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-09-21" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Release version 0.70.0
+2. Prepare graduation process
+3.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+There are no issues right now.
+
+### How has the community developed since the last report?
+1. We had increased traffic on the mailing list during the last months
+2. Also, the user mailing list had more traffic with serveral users asking for help
+3. Several contributions and PRs from new contributors were made
+4. Number of Github stars increased (last report: 315, current: 338)
+5. We will have a talk at ApacheCon NA
+
+### How has the project developed since the last report?
+1. The community has worked on several new features and improvements towards release 0.70.0
+2. For this release, we focused on bug fixes and improvements towards production usage
+3. Release 0.70. is currently under vote
+4. After the release, we plan to start discussion on graduation
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [x] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2022-03-21
+
+### When were the last committers or PPMC members elected?
+
+2022-03-16
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+Yes, mentors are helpful.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+Name is approved and we are actively monitoring the brand.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [ ] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:  No report filled yet
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [ ] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-06-15"><a href="2022/board_minutes_2022_06_15.html#streampipes">2022-06-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-06-15" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Complete maturity assessment
+2. Prepare graduation process
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+There are no issues right now.
+
+### How has the community developed since the last report?
+
+Several active discussions on the mailing list
+
+Several users have asked for help on the user mailing list, further they
+provide new contributions to the project
+
+Number of Twitter followers has increased (last report: 208, current: 226)
+
+Number of Github stars increased (last report: 307, current: 315)
+
+### How has the project developed since the last report?
+
+The focus is on improvements and bug fixes. We plan to have a first
+stable release 1.0 within the next months.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2022-03-21
+
+### When were the last committers or PPMC members elected?
+
+2022-03-16 (Stefan Obermeier)
+
+### Have your mentors been helpful and responsive?
+
+Yes, our mentors are helpful.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes, project name is approved and the brand is actively managed.
+
+### Signed-off-by:
+
+- [ ] (streampipes) Christofer Dutz
+   Comments:
+- [X] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:  I think streampipes is not so far from graduation.
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#streampipes">2022-05-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Complete maturity assessment
+2. Prepare graduation process
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+There are no issues right now.
+
+### How has the community developed since the last report?
+
+* The community focused on the new release
+* Several active discussions on the mailing list
+* Several users have asked for help on the user mailing list
+* Number of Twitter followers has increased (last report: 208, current:
+219)
+* Number of Github stars increased (last report: 274, current: 307)
+
+### How has the project developed since the last report?
+
+* This reporting period was focused on finishing the next release 0.69.0
+* Release 0.69.0 was successfully published
+* We plan to have a first stable release 1.0 within the next months
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2022-03-21 (next release is under vote)
+
+### When were the last committers or PPMC members elected?
+
+2022-03-16 (Stefan Obermeier)
+
+### Have your mentors been helpful and responsive?
+
+Yes, our mentors are helpful.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes, project name is approved and the brand is actively managed.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments: This podling is doing great. Looking forwards to the
+   graduation party.
+- [X] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:  Great podling, I think they are quite ready to graduate.
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-12-15"><a href="2021/board_minutes_2021_12_15.html#streampipes">2021-12-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-12-15" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Make more releases
+2. Complete Maturity assessment
+3. Prepare graduation process
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+There are no issues right now.
+
+### How has the community developed since the last report?
+
+* Multiple of the contributors that we mentioned in the previous report
+were elected as committers
+* We've seen increased discussions on the dev mailing list (159 mails in
+October, 97 mails in November) and have many fruitful discussions
+* We received an increased amount of bug reports and questions from users,
+which shows increased adoption
+* We've seen a few applied research papers where StreamPipes was used as a
+basis for digital twin management
+* An article about StreamPipes in the US Linux magazine which was
+published
+in March is now also available online:
+
+https://www.linuxpromagazine.com/Issues/2021/244/Apache-StreamPipes/(languag
+e)/eng-US
+* Community members held two talks in the ApacheCon IoT track
+* Number of Twitter followers has increased (last report: 199, currently:
+208)
+* Number of Github stars increased (last report: 255, currently: 274)
+
+### How has the project developed since the last report?
+*  During the reporting period multiple large improvements were developed
+by the community
+* A completely renewed data explorer to visualise historic
+time-series data
+* Advanced user and role management to handle multiple users and
+define individual data access
+* A new stateless authentication system
+* A testing framework for e2e tests to continually improve the
+software quality
+* The community decided to merge the three repositories
+(incubator-streampipes, incubator-streampipes-extensions,
+ and incubator-streampipes-installer) into one to ease the release
+process which had previously three release artifacts
+* Currently preparations for the next release 0.69.0 are performed and we
+are slowly but steadily nearing towards a 1.0 release
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2021-07-22
+
+### When were the last committers or PPMC members elected?
+
+2021-12-04: Patrick Philipp
+
+2021-11-30: Hrushikesh Rao
+
+2021-10-20: Stefan Obermeier
+
+### Have your mentors been helpful and responsive?
+
+Yes, our mentors are helpful and responsive as usual.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+We are actively managing the brand and did not discover any issues
+related to incorrect brand use.
+The new logo is now available in the current development version and the
+full rebranding will take place right after the next release.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [ ] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [S] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-09-15"><a href="2021/board_minutes_2021_09_15.html#streampipes">2021-09-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-09-15" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the community
+2. Make more releases
+3. Complete Maturity assessment
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+There are no issues right now.
+
+### How has the community developed since the last report?
+* Two community talks were given at ApacheCon Asia 2021
+* Two talks are also accepted for ApacheCon @Home
+* Several new contributors appeared on the mailing list and submitted
+pull requests
+* We've seen increased activity on the user mailing list and more
+traction in general
+* Number of Twitter followers has increased (last report: 188, currently:
+199)
+* Number of Github stars increased (last report: 234, currently: 255)
+
+### How has the project developed since the last report?
+* A new release 0.68.0 was published in July
+* Community members are currently working on several larger improvements,
+  such as a completely renewed data explorer and better service discovery
+* Several bugs were fixed
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2021-07-22
+
+### When were the last committers or PPMC members elected?
+
+2021-05-28
+
+### Have your mentors been helpful and responsive?
+
+Yes, our mentors are helpful and responsive.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+We are actively managing the brand and did not discover any issues
+related to incorrect brand use.
+Next step related to brand management is to incorporate the new logo into
+the website and application.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [X] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-06-16"><a href="2021/board_minutes_2021_06_16.html#streampipes">2021-06-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-06-16" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the community
+2. Make more releases
+3. Complete Maturity assessment
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+There are no issues right now.
+
+### How has the community developed since the last report?
+* In general, there was a little less activity on the mailing list during
+the last reporting period, but a more diverse set of contributors has
+actively participated in discussions.
+* We had several pull requests from new contributors
+* We had several proposed projects and applicants for Google Summer of
+Code proposed by various PPMC members, but unfortunately, no projects were
+selected
+* 1 new PPMC member and 1 new committer elected (see below)
+* Number of Twitter followers has increased (last report: 171, currently:
+188)
+* Number of Github stars increased (last report: 205, currently: 234)
+
+### How has the project developed since the last report?
+* Release 0.68.0 is delayed and still in the pipeline, but will hopefully
+be finished this month
+* We put large effort into fixing several bugs that affected the
+stability of StreamPipes, e.g., auto restart of pipelines
+* Several UI improvements (pipeline preview, improvements to the live
+dashboard,
+and many more) will be part of the next release which are intended to
+attract more users
+* Some new community members have added new pipeline elements to
+StreamPipes
+* Another major improvement are refactored SQL-based data sinks to the
+extensions project
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-10-28
+
+### When were the last committers or PPMC members elected?
+
+Since last report:
+* New PPMC member (Tim Bossenmaier, 2021-03-30)
+* New Committer (Mohanadarshan Vivekanandalingam, 2021-05-28)
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+Yes, our mentors are helpful and responsive.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+We are actively managing the brand and did not discover any issues
+related to incorrect brand use.
+Next step related to brand management is to incorporate the new logo into
+the website and application.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [X] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2021-03-17"><a href="2021/board_minutes_2021_03_17.html#streampipes">2021-03-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2021-03-17" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the community
+2. Attract more developers
+3. Complete maturity assessment
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+There are no issues right now.
+
+### How has the community developed since the last report?
+
+* In general, the community has grown since the last report and there is
+regular traffic
+on the mailing list (~50 mailing list discussions/month excluding commits
+&amp; issues).
+* Community members have proposed several projects for Google Summer of
+Code 2021
+* 2 new committers and 2 new PPMC members have been elected since the
+last report (see details below)
+* An article about Apache StreamPipes has appeared in the Linux Magazine
+(https://www.linux-magazine.com/Issues/2021/244/Apache-StreamPipes/)
+* We had several remote training sessions to show users how to use
+StreamPipes
+* The community has voted on a new logo for Apache StreamPipes
+* Number of Twitter followers increased (last report: 156, currently: 171)
+* Number of Github stars increased (last report: 186, currently: 205)
+
+### How has the project developed since the last report?
+
+* Currently in the final steps to release the next version 0.68.0
+* Notable new features the community has worked on:
+  * Edge extensions for moving pipeline elements between edge nodes
+  * Pipeline monitoring
+  * API &amp; StreamPipes Client for external access to StreamPipes resources
+  * OPC UA integration
+  * Extensions to the data explorer
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-10-28
+
+### When were the last committers or PPMC members elected?
+
+Since last report:
+
+* 2021-02-08 (New committers: Tim Bossenmaier, Daniel Gomm)
+* 2021-01-29 (New PPMC member: Grainier Perera)
+* 2021-12-08 (New PPMC member: Marco Heyden)
+
+### Have your mentors been helpful and responsive?
+
+Yes, mentors are helpful and responsive. We get quick feedback in case
+there are any questions.
+
+### Is the PPMC managing the podling's brand / trademarks
+
+Yes, we are managing the brand. We are not aware of any incorrect use of
+the podling
+name and brand so far.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [ ] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments: Thanks for the detailed report.
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-12-16"><a href="2020/board_minutes_2020_12_16.html#streampipes">2020-12-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-12-16" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the community
+2. Attract more users
+3. Complete maturity assessment
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+There are no issues right now.
+
+### How has the community developed since the last report?
+
+* First of all, we are quite happy with the current
+  community-driven development and all major things are being
+  discussed on the mailing lists
+* We gave several talks at meetups and events during the past months
+  * Two talks at ApacheCon @Home
+  * SF Big Analytics Meetups
+  * StreamPipesWebinar Brazil
+  * several industry-focused talks
+  * All the talks are available on YouTube
+* A large german computer magazine published an article about StreamPipes
+  (https://www.linux-magazin.de/ausgaben/2020/12/apache-streampipes/)
+* We had several remote training sessions to show users how to use
+  StreamPipes
+* There is a continuous flow of messages on the mailing list and more
+  people are contributing to discussions and give feedback
+* Several new people showed up on the mailing list asking for
+  support or reporting problems
+* We updated the installation guide to ease the first steps with
+StreamPipes
+* Number of Twitter followers increased (last report: 148, currently: 156)
+* Number of Github stars increased (last report: 163, currently: 186)
+
+### How has the project developed since the last report?
+* We released version 0.67.0, our second release in the ASF
+* Currently, most contributors are working on issues around stability bug
+  fixing
+* The community currently discusses the future roadmap and there are some
+  new features community members are working on
+  * mqtt support
+  * pipeline monitoring
+  * python wrapper
+  * externally exposed REST APIs for pipelines and pipeline elements
+* We are currently discussing the integration of
+  incubator-streampipes-extensions into the core project to ease future
+  release processes
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-10-28
+
+### When were the last committers or PPMC members elected?
+
+2020-05-22, but we expect several new committers and PPMC members to
+being elected soon
+
+### Have your mentors been helpful and responsive?
+
+Yes, mentors are helpful and responsive. We get quick feedback in case
+there are any questions.
+Thanks to all mentors and IPMC members who took the time to vote on our
+last release.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes, we are actively managing the brand.
+New logo is still an open issue that is being discussed in the community.
+The project name has been approved.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [ ] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-09-16"><a href="2020/board_minutes_2020_09_16.html#streampipes">2020-09-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-09-16" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Multiple Apache releases
+2. Grow the developer community
+3. Attract more users
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+There are no issues right now.
+
+### How has the community developed since the last report?
+
+- We have two accepted talks for the ApacheCon @Home, one about flexible
+Industrial IoT Management and one joint talk with PLC4X about data
+analyzing with PLC4X and StreamPipes
+- StreamPipes was elected for the AI-Champions Award (awarded by the
+German state of Baden-Wurttemberg, Germany), which created more visibility
+in the IIoT domain
+- New users have joined the mailing list, and there is an increasing
+amount of traffic on the dev mailing list
+- We had several remote training sessions to show users how to use
+StreamPipes
+- We are updating the documentation for a better overview over all
+features of StreamPipes and a better onboarding for new users
+(https://s.apache.org/8rfq8 &lt;https://s.apache.org/8rfq8&gt;)
+- We updated the README&rsquo;s for the upcoming release for a quicker entry of
+new developers
+- Gathered more feedback from manufacturing companies how they use
+StreamPipes for IIoT analytics
+- Number of Twitter followers increased (last report: 128, currently: 148)
+- Number of Github stars increased (last report: 144, currently: 163)
+
+### How has the project developed since the last report?
+
+- Refactor UI and remove all AngularJS components. This is a big
+improvement for the code base, because new changes and features are now
+much easier to accomplish. This especially improves experience for new
+developers.
+- Created release branch and perform final testing for our second release
+(version 0.67.0), with around 70 bug fixes/improvements/new features
+- New Features:
+  - Add Data Explorer to explore historic data
+  - Rework the installer and command line tool
+  - Remove AngularJS from UI
+  - Several new processors and adapters
+  - We added the Apache Maturity Model to our developer wiki:
+https://s.apache.org/owbuc
+-  This month, we plan to perform our release and discuss about
+future developments.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-05-19 (Version 0.66.0)
+
+### When were the last committers or PPMC members elected?
+
+2020-05-22
+
+### Have your mentors been helpful and responsive?
+Are things falling through the cracks? If so, please list any
+open issues that need to be addressed.
+
+Our mentors always provided very good feedback and support.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+- We started a discussion in the community about our new logo
+https://s.apache.org/x5rtr &lt;https://s.apache.org/x5rtr&gt;
+- We are constantly monitoring the usage of the Apache StreamPipes name
+in external websites and posts
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [ ] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (streampipes) Julian Feinauer
+   Comments: There is a lot of development going on in the project and
+   the core community is very active. I hope that more contributors will join
+   the community in the near future.
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-06-17"><a href="2020/board_minutes_2020_06_17.html#streampipes">2020-06-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-06-17" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Multiple Apache releases
+2. Grow the developer community
+3. Attract more users
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+There are no issues right now.
+
+### How has the community developed since the last report?
+
+In the past three months, the community developed rather well: New users
+appeared on the mailing lists, and we were able to elect the first
+external committers. The mailing list activity has increased and many
+discussions on development-related tasks were done on the developer
+mailing list. Overall, we feel that the community is more and more
+following the Apache way.
+
+Some specific community development activities include:
+- We updated the wiki with developer information, getting started guides
+  and step-by-step manuals for release management (see
+  https://s.apache.org/ocz7t)
+- Updated website to include better overview of existing pipeline elements
+- Intensified work with manufacturing company to use StreamPipes for IIoT
+  analytics
+- We published a blog post on how to run StreamPipes on Kubernetes, we now
+  plan to publish blog posts at regular intervals
+- Added "communication channels &amp; strategy" page in the wiki and gathered
+  potential communication channels in close exchange with our mentors
+  planning to intensify community growth
+- Took part in webinar series about open source for small and medium
+  sized companies (video on YouTube, currently only in German)
+- Number of Twitter followers increased (last report: 103, currently: 128)
+- Number of Github stars increased (last report: 109, currently: 144)
+
+### How has the project developed since the last report?
+
+- We successfully released our first official Apache release (version
+  0.66.0) including several improvements (see release notes
+  https://s.apache.org/2grsk), to name the most prominent changes:
+  completely new dashboard and notification design in UI, more pipeline
+  elements and improved connectors
+- Many new pipeline elements have been added by newly elected committers
+- Both documentation and website were improved in order to increase the
+  adoption of Apache StreamPipes and grow the user base
+
+In the next month, we plan to add better support for edge computing and
+improve the UI.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2020-05-19 (Version 0.66.0)
+
+### When were the last committers or PPMC members elected?
+
+Four new committers were elected and joined the team since the last report
+aiding in contributing/maturing the project.
+
+- Florian Micklich (2020-03-26)
+- Daniel Ebi (2020-05-12)
+- Felix John (2020-05-12)
+- Grainier Perera (2020-05-22)
+
+### Have your mentors been helpful and responsive?
+
+Our mentors provided very good support in preparing and performing our
+first Apache release. We would like to thank them for very helpful advice,
+also for some licensing questions we had on the list.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes, we started to prepare a wiki page to develop a communication
+strategy, which also includes brand management. The next step is to
+create a new logo that will be voted on by the community. We are
+constantly monitoring the usage of the Apache StreamPipes name in
+external websites and posts.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments: Looking forward to them starting to use the normal
+   incubation disclaimer as they are on a pretty good path with
+   their release.
+- [X] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (streampipes) Julian Feinauer
+   Comments: I think the project really adopts the Apache Way
+   and I am happy to see that more and more Comitters are
+   added to the lineup!
+- [X] (streampipes) Justin Mclean
+   Comments: Congratulations on the new committers.
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:
+Dave Fisher: Podling looks to be very much on track!</pre>
+<h3 id="2020-03-18"><a href="2020/board_minutes_2020_03_18.html#streampipes">2020-03-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-03-18" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Make a first Apache release
+2. Grow the community
+3. Diversify PPMC members &amp; committers
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+There are no issues right now.
+
+### How has the community developed since the last report?
+* We gave a talk about StreamPipes at Bosch Connected World 2020 (~100
+participants in the talk)
+* We gave several IIoT demos involving Apache StreamPipes at FZI Open
+ House (~300 participants)
+* There was a lot more communication on the mailing list concerning
+the discussion on upcoming features and improvements
+* An external company mentioned their usage of StreamPipes in one
+of their upcoming products
+* Some new contributions/pull requests from external contributors
+* The number of Twitter followers has increased (currently at 113)
+* The number of Github stars has increased (currently at 117)
+
+### How has the project developed since the last report?
+* The community is currently working on the final steps concerned
+with the preparation of the first ASF release
+* We performed an upgrade of the UI components to Angular 9, which
+improves performance
+* We implemented a new live dashboard
+* We refactored the code base and removed/rewrote components which
+relied on non-ASF conformant licenses, e.g., kafka-rest
+* LICENSE and NOTICE files have been created for the
+incubator-streampipes project
+
+The first release is planned within the next few weeks.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+XXXX-XX-XX
+
+### When were the last committers or PPMC members elected?
+No new committers have been added so far.
+
+### Have your mentors been helpful and responsive?
+Our mentors are very responsive and provide good feedback.
+
+### Is the PPMC managing the podling's brand / trademarks?
+* Currently, no issues are known related to brand misuse, but
+there are still some open issues concerning the transition to
+the ASF infrastructure (e.g., shutting down the old streampipes
+organization on Github to avoid confusion)
+* We started to contact external websites who provided links
+to the old streampipes.org website and asked them (or created
+pull requests) to change this to the new streampipes.apache.org
+domain.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments: Perhaps it would help assigning streampipes.org domain
+   to apache and have auto-redirect?
+- [X] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments: The highest priority is a first release and it's planned in
+   few weeks.
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#streampipes">2020-02-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Finish license review of third-party dependencies
+2. Make a first Apache release
+3. Grow the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+There are no issues right now.
+
+### How has the community developed since the last report?
+In the last month, our focus was on setting up some structures that help
+growing the community:
+
+* Further people appeared on the mailing list expressing their interest
+to develop StreamPipes components
+* We added issues in Jira that are targeted at new developers
+(marked with a newbie tag)
+* We migrated the previously internal Wiki to Confluence and added
+developer information to lower the entry barrier to contribute
+* Blog post on how to run StreamPipes on a Raspberry Pi, we now plan to
+publish blog posts at regular intervals
+* Contact to sensor producer, and first integrations with their sensors,
+which should help growing the ecosystem
+* Meeting with a manufacturing company to present StreamPipes and talk
+about cooperation possibilities
+* We started to plan ApacheCon talks (also a joint talk together with
+Apache PLC4X)
+* The number of Twitter followers has increased (currently at 103)
+* The number of Github stars has increased (currently at 109)
+
+### How has the project developed since the last report?
+* Successfully migrated complete development cycle to new GitHub and
+Docker Hub repositories
+* Optimized containers to run on ARM architectures
+* Implemented further algorithms to merge data streams and pre-process
+data for machine learning tasks
+* Checking licences of the UI and adding checklist to Wiki
+* Checking licenses of the backend and populated the LICENSE-binary file
+* Currently, we are finishing a license review to properly create LICENSE
+and NOTICE files
+
+In the next month, we plan to continue our work towards the first Apache
+release.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+XXXX-XX-XX
+
+### When were the last committers or PPMC members elected?
+No new committers were elected beyond the initial committers. Two people
+mentioned on the mailing list that they might be willing to contribute to
+StreamPipes.
+
+### Have your mentors been helpful and responsive?
+Our mentors are very responsive and provide good feedback. We discovered
+an issue that some mentors are not subscribed to the private mailing list
+and got in contact with them to fix this issue.
+
+### Is the PPMC managing the podling's brand / trademarks?
+* We are currently preparing a new logo
+* Currently, no issues are known related to brand misuse, but there are
+still some open issues concerning the transition to the ASF infrastructure
+(e.g., shutting down the old streampipes organization on Github to avoid
+confusion)
+* We've started to research best-practices related to brand management
+(other ASF projects) and intend to add a section in the Confluence Wiki
+on brand management.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [ ] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [X] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2020-01-15"><a href="2020/board_minutes_2020_01_15.html#streampipes">2020-01-15</a> &mdash; in the Incubator's report<a class="headerlink" href="#2020-01-15" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Finish license review of third-party dependencies
+2. Make a first Apache release
+3. Grow the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+There are no issues right now.
+
+### How has the community developed since the last report?
+Although our priority in the last reporting period was on finishing the
+initial setup, there are some notable things regarding community
+development:
+- A few new people appeared on the mailing list expressing their interest
+to contribute to StreamPipes
+- First pull requests from an external committer were merged
+- Many users appeared on the Slack channel or sent emails and asked
+questions around the installation/usage of StreamPipes, we hope that some
+of them will consider to contribute in the future
+- We met people from two companies and talked about the possibility to
+contribute to StreamPipes
+- The number of Twitter followers has increased (currently at 94)
+- The number of Github stars has increased (currently at 102)
+
+Community development will be the focus of the next reporting period.
+
+### How has the project developed since the last report?
+We finished the initial setup:
+* The website is now online at streampipes.apache.org, and we added pages
+that explain how to participate in the project
+* All Git repos were transferred to the ASF
+* Setup of several CI/CD pipelines based on Github Actions to build the
+website and code
+* Setup of a CI/CD pipeline in the ASF Jenkins to publish snapshots to
+the ASF Nexus
+* Finished setup of Jira and migrated old issues from the previous Gitlab
+to Jira
+* Finished setup of the StreamPipes Confluence space and moved existing
+content to Confluence
+* Currently, we are finishing a license review to properly create LICENSE
+and NOTICE files
+* Having completed the initial setup, we are now shifting the focus back
+to feature development
+
+In the next month, we plan to work towards the first Apache release and
+also intensify work on community development.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [x] Working towards first release
+- [x] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+No answer.
+
+### When were the last committers or PPMC members elected?
+No new committers were elected beyond the initial committers. Two people
+mentioned on the mailing list that they might be willing to contribute to
+StreamPipes.
+
+### Have your mentors been helpful and responsive?
+
+Our mentors are very responsive and provide good feedback. They provided
+very good guidance during the initial setup phase of the project, thanks
+a lot. We would also like to thank the people from INFRA who were very
+responsive and helpful in getting some issues resolved during the
+transition phase.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+* The project name StreamPipes got approved by VP, Brand on December 2nd.
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [X] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:
+Justin Mclean: There is more to managing the brand than just having
+the project name approved.</pre>
+<h3 id="2019-12-18"><a href="2019/board_minutes_2019_12_18.html#streampipes">2019-12-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2019-12-18" title="Permalink">&para;</a></h3>
+<pre>StreamPipes is a self-service (Industrial) IoT toolbox to enable non-
+technical users to connect, analyze and explore (Industrial) IoT data
+streams.
+
+StreamPipes has been incubating since 2019-11-11.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Finish the initial setup
+2. Make a first Apache release
+3. Grow the community
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+There are no issues right now.
+
+### How has the community developed since the last report?
+
+All initial committers have subscribed to the new mailing list.
+We started to spread the project on Twitter and other channels to
+reach more potential community members, but currently, the main priority
+is to move the project infrastructure to Apache.
+There was also one event focused on extending the developer base:
+* We gave a talk at a meetup on "Self-Service IoT Data Analytics with
+StreamPipes" (~70 participants)
+
+### How has the project developed since the last report?
+
+This is the first report after StreamPipes joined the incubator on
+November 11th.
+Most work during the last month was focused around setting up StreamPipes
+and doing some legal paperwork to transition StreamPipes to Apache:
+
+* Creation of mailing lists
+* Setting up the new StreamPipes Jira
+* We made a last pre-Apache release and started to refactor our code
+(restructuring the code base to reflect the new repository structure)
+* The website and documentation is already moved to Apache Git
+repositories,
+and a draft is online at streampipes.apache.org, however, we need to wait
+to "announce" the web page   and forward traffic from the existing
+domains untilthe Git repos are all transferred
+* All initial committers have signed and submitted their ICLAs
+* FZI has submitted a CCLA and donated the initial code base to Apache
+* Right now, we are waiting to transfer our existing Git repos from the
+streampipes organization to the Apache organization on Github
+* We are also waiting to get admin access to the StreamPipes instance on
+Jira to import existing issues to the new issue tracker
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [x] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+XXXX-XX-XX
+
+### When were the last committers or PPMC members elected?
+
+No new committers were elected beyond the initial committers.
+We'll focus on attracting new committers once the initial setup is
+finished.
+
+### Have your mentors been helpful and responsive?
+
+We would really like to thank our mentors. Chris was very helpful and
+responsive in setting up the infrastructure, and all questions we had
+on the mailing list were answered immediately by our mentors.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+* We initiated an initial podling name search and created a ticket to get
+the name approved in Jira (November 25th).
+* The name "Apache StreamPipes" got approved by VP Brand Management on
+December, 12th
+
+### Signed-off-by:
+
+- [X] (streampipes) Christofer Dutz
+   Comments:
+- [ ] (streampipes) Jean-Baptiste Onofr&eacute;
+   Comments:
+- [ ] (streampipes) Julian Feinauer
+   Comments:
+- [X] (streampipes) Justin Mclean
+   Comments:
+- [ ] (streampipes) Kenneth Knowles
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

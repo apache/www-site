@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: OpenDAL | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: OpenDAL';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: OpenDAL';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: OpenDAL</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="opendal">OpenDAL<a class="headerlink" href="#opendal" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-01-17</td>
+<td><a href="2024/board_minutes_2024_01_17.html#section-7B">Appointed Hao Ding</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-01-17</td>
+<td><a href="2024/board_minutes_2024_01_17.html#section-7B">Establish the Apache OpenDAL Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-AY">2026-06-17</a> &mdash; Hao Ding<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+OpenDAL is an Open Data Access Layer that enables seamless interaction with
+diverse storage services. Its development is guided by the vision "One Layer,
+All Storage" and the following principles:
+
+- Open Community
+- Solid Foundation
+- Fast Access
+- Object Storage First
+- Extensible Architecture
+
+## Project Status:
+
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+
+Apache OpenDAL was founded on 2024-01-17. There are currently 39 committers
+and 23 PMC members in this project. The Committer-to-PMC ratio is roughly 1.7.
+
+Community changes, past quarter:
+
+- Hao Jiang (dentiny) was added as committer on 2026-03-30
+- Fatorin was added as committer on 2026-04-03
+- Krisztian Szucs was added as committer on 2026-05-28
+- Hao Jiang (dentiny) was added as PMC member on 2026-06-02
+
+## Project Activity:
+
+OpenDAL has the following releases since the last report:
+
+- Apache OpenDAL Reqsign v0.20.0 was released on 2026-03-23
+- Apache OpenDAL v0.56.0 was released on 2026-05-01
+- Apache OpenDAL v0.57.0 was released on 2026-06-01
+- Apache OpenDAL Reqsign v0.20.1 was released on 2026-06-01
+
+Notable project activity this quarter:
+
+- The Rust core has been split into a facade crate plus smaller core, service,
+  and layer crates. This makes service and layer development more independent
+  while preserving the user-facing facade.
+- The community continued to improve OpenDAL's cross-language bindings,
+  including Ruby publication work, .NET binding work, Python and Node.js API
+  coverage, Java platform support, and Go/C layer support.
+- The core APIs gained richer operation metadata, including copy/read
+  metadata, copier support, and service-operation labels for HTTP metrics.
+- Storage service coverage and behavior continued to expand, including
+  Volcengine TOS, GooseFS, OPFS, Hugging Face improvements, user-defined
+  metadata support, and stronger S3-compatible service behavior.
+- Apache OpenDAL Reqsign delivered two releases, adding Volcengine TOS
+  support, Google external account credential providers, expanded Aliyun OSS
+  support, and dependency hygiene improvements.
+
+Since 2026-03-18, the main OpenDAL repository merged 264 pull requests from 43
+contributors and closed 91 issues. The opendal-reqsign repository merged 42
+pull requests from 6 contributors.
+
+## Community Health:
+
+### Are there any risks to the sustainability of the project?
+
+OpenDAL remains in good health. The project continues to receive steady code,
+documentation, release, CI, and binding contributions from both existing
+committers and new contributors. The main repository currently has more than
+5,100 GitHub stars and more than 760 forks, and development velocity remained
+steady throughout the quarter.
+
+The PMC is also continuing to grow the committer pipeline. The vote to add
+Trim21 as a committer has passed and an invitation has been sent; the roster
+change is still pending acceptance and ASF account completion.
+
+### Is the PMC capable of responding to security issues and performing
+    releases if needed?
+
+Yes. The PMC continues to make regular Apache releases for both OpenDAL and
+OpenDAL Reqsign, and release processes are documented and repeatable. The PMC
+is also capable of responding to security reports and coordinating with the
+ASF Security Team when needed.
+
+### Does the PMC need anything from the Foundation to improve on contributing
+    to our mission of delivering software for the public good?
+
+The PMC would benefit from more GitHub Actions runner capacity for the large
+cross-platform CI matrix, especially for release validation and behavior tests
+across storage services and language bindings.
+
+PMC members would also benefit from access to token quota for state-of-the-art
+AI models. We expect to use this for project maintenance work such as code
+review assistance, issue triage, release preparation, documentation updates,
+and debugging complex cross-language or cross-service failures.</pre>
+<h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#attachment-BA">2026-03-18</a> &mdash; Hao Ding<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+OpenDAL is an Open Data Access Layer that enables seamless interaction with
+diverse storage services. Its development is guided by the vision "One Layer,
+All Storage" and the following principles:
+
+- Open Community
+- Solid Foundation
+- Fast Access
+- Object Storage First
+- Extensible Architecture
+
+## Project Status:
+
+Current project status: Ongoing Issues for the board: None
+
+## Membership Data:
+
+Apache OpenDAL was founded on 2024-01-17 (a little over two years ago). There
+are currently 36 committers and 22 PMC members in the project. The
+committer-to-PMC ratio is roughly 1.6.
+
+Community changes, past quarter:
+- The project added one new committer during this quarter.
+- The PMC roster remained unchanged during this quarter.
+
+## Project Activity:
+
+- No new core stable release was cut in this quarter; the latest stable
+  release remains v0.55.0, released on 2025-11-24.
+- Development remained active, with 191 PRs merged from 47 authors between
+  2025-12-01 and 2026-03-10.
+- The project continued modularization work by splitting more services and
+  layers into separate crates and repositories so components can evolve at
+  different paces.
+- Major implementation work this quarter included reqsign v2 migrations across
+  multiple services, continued .NET binding work, and new capabilities across
+  Swift, S3, and local key-value backends.
+- Weekly "This Week in OpenDAL" discussions continued on GitHub Discussions
+  alongside ongoing community Q&amp;A.
+
+## Community Health:
+
+### Are there any risks to the sustainability of the project?
+
+OpenDAL remains healthy. While this quarter did not include a new core stable
+release, the project maintained strong development velocity and broad
+contributor participation. The project now has 36 committers and 22 PMC
+members, and recent work shows continued progress on modularization,
+integrations, and cross-language bindings.
+
+OpenDAL continues to be used by multiple database systems and infrastructure
+tools. The PMC's earlier decision to split more components into separate
+repositories is translating into concrete engineering work, which should
+improve long-term maintainability without reducing community cohesion.
+
+### Is the PMC capable of responding to security issues and
+performing releases if needed?
+
+Yes. The PMC has an established release process, has demonstrated the ability
+to handle routine dependency maintenance, and continues to make coordinated
+technical changes across services, layers, and bindings. If needed, the PMC
+can organize releases and respond to security issues in a timely manner.
+
+### Does the PMC need anything from the Foundation to improve on
+contributing to our mission of delivering software for the public good?
+
+No requests at this time.</pre>
+<h3 id="2025-12-17"><a href="2025/board_minutes_2025_12_17.html#attachment-BC">2025-12-17</a> &mdash; Hao Ding<a class="headerlink" href="#2025-12-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+OpenDAL is an Open Data Access Layer that enables seamless interaction with
+diverse storage services. Its development is guided by the vision &ldquo;One Layer,
+All Storage&rdquo; and the following principles:
+
+- Open Community
+- Solid Foundation
+- Fast Access
+- Object Storage First
+- Extensible Architecture
+
+## Project Status:
+
+Current project status: Ongoing Issues for the board: None
+
+## Membership Data:
+Apache OpenDAL was founded 2024-01-17 (a year ago) There are currently 35
+committers and 22 PMC members in this project. The Committer-to-PMC ratio is
+roughly 1.6.
+
+Community changes, past quarter:
+- Erick Guan was added as PMC Member on 2025-10-13
+- Jianping Huang was added as PMC Member on 2025-10-16
+- Tenny Zhuang was added as committer on 2025-10-22
+- Qinxuan Chen was added as PMC Member on 2025-11-17
+
+## Project Activity:
+
+- v0.54.1 was released on 2025-09-11
+- v0.55.0 was released on 2025-11-24
+
+
+## Community Health:
+
+### Are there any risks to the sustainability of the project?
+
+OpenDAL remains in excellent health. The core crate has nearly 1000 dependents
+on github and is used in production by multiple database systems (Databend,
+GreptimeDB, RisingWave) and tools
+(e.g., sccache, Vector). Development velocity is steady, with one PRs merged
+ daily.
+
+The OpenDAL PMC has decided to split more OpenDAL components into multiple
+GitHub repositories to enable them to develop at different paces.
+
+### Is the PMC capable of responding to security issues and
+performing releases if needed?
+
+Yes. The PMC has repeatedly demonstrated the ability to quickly release fixes
+and monthly tagged versions. Releases are made in a timely manner and
+dependency hygiene is maintained actively.
+
+### Does the PMC need anything from the Foundation to improve on
+contributing to our mission of delivering software for the public good?
+
+No requests at this time.</pre>
+<h3 id="2025-09-24"><a href="2025/board_minutes_2025_09_24.html#attachment-BF">2025-09-24</a> &mdash; Hao Ding<a class="headerlink" href="#2025-09-24" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+OpenDAL is an Open Data Access Layer that enables seamless interaction with
+diverse storage services. Its development is guided by the vision &ldquo;One Layer,
+All Storage&rdquo; and the following principles:
+
+- Open Community
+- Solid Foundation
+- Fast Access
+- Object Storage First
+- Extensible Architecture
+
+## Project Status:
+
+Current project status: Ongoing Issues for the board: None
+
+## Membership Data:
+Apache OpenDAL was founded 2024-01-17 (a year ago) There are currently 34
+committers and 19 PMC members in this project. The Committer-to-PMC ratio is
+roughly 9:5.
+
+Community changes, past quarter:
+- Kingsword was added as committer on 2025-07-31
+
+## Project Activity:
+
+- v0.54.0 was released on 2025-07-17
+- v0.54.1 is ongoing.
+
+## Community Health:
+
+### Are there any risks to the sustainability of the project?
+
+OpenDAL remains in excellent health. The core crate has nearly 1000 dependents
+on github and is used in production by multiple database systems (Databend,
+GreptimeDB, RisingWave) and tools
+(e.g., sccache, Vector). Development velocity is steady, with one PRs merged
+ daily.
+
+The OpenDAL PMC has decided to accept reqsign as a sub-project. The IP
+clearance process has been completed, and the code has been imported. The
+OpenDAL PMC is now working on building the first ASF release for
+opendal-reqsign.
+
+### Is the PMC capable of responding to security issues and
+performing releases if needed?
+
+Yes. The PMC has repeatedly demonstrated the ability to quickly release fixes
+and monthly tagged versions. Releases are made in a timely manner and
+dependency hygiene is maintained actively.
+
+### Does the PMC need anything from the Foundation to improve on
+contributing to our mission of delivering software for the public good?
+
+No requests at this time.</pre>
+<h3 id="2025-06-18"><a href="2025/board_minutes_2025_06_18.html#attachment-AW">2025-06-18</a> &mdash; Hao Ding<a class="headerlink" href="#2025-06-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+OpenDAL is an Open Data Access Layer that enables seamless interaction with
+diverse storage services. Its development is guided by the vision &ldquo;One Layer,
+All Storage&rdquo; and the following principles:
+
+- Open Community
+- Solid Foundation
+- Fast Access
+- Object Storage First
+- Extensible Architecture
+
+## Project Status:
+
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache OpenDAL was founded 2024-01-17 (a year ago)
+There are currently 33 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- Wenchuang Gan was added to the PMC on 2025-03-14
+- Asuka Minato was added as committer on 2025-04-29
+- Erick Guan was added as committer on 2025-04-01
+- Miro Kwok was added as committer on 2025-04-17
+- Yi Hong was added as committer on 2025-03-24
+
+## Project Activity:
+
+- v0.53.3 was released on 2025-05-26
+- v0.53.2 was released on 2025-05-13
+- v0.53.1 was released on 2025-04-19
+- v0.53.0 was released on 2025-04-05
+
+## Community Health:
+
+### Are there any risks to the sustainability of the project?
+
+OpenDAL remains in excellent health. The core crate has nearly
+800 dependents on github and is used in production by multiple
+database systems (Databend, GreptimeDB, RisingWave) and tools
+(e.g., sccache, Vector). Development velocity is steady,
+with 3&ndash;5 PRs merged daily.
+
+### Is the PMC capable of responding to security issues and
+performing releases if needed?
+
+Yes. The PMC has repeatedly demonstrated the ability to quickly
+release fixes and monthly tagged versions. Releases are made in
+a timely manner and dependency hygiene is maintained actively.
+
+### Does the PMC need anything from the Foundation to improve on
+contributing to our mission of delivering software for the public good?
+
+No requests at this time.</pre>
+<h3 id="2025-03-19"><a href="2025/board_minutes_2025_03_19.html#attachment-AW">2025-03-19</a> &mdash; Hao Ding<a class="headerlink" href="#2025-03-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+OpenDAL is an Open Data Access Layer that enables seamless interaction with
+diverse storage services.
+
+OpenDAL's development is guided by its vision of One Layer, All Storage and
+its core principles: Open Community, Solid Foundation, Fast Access, Object
+Storage First, and Extensible Architecture.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+
+Apache OpenDAL was founded 2024-01-17 (a year ago)
+There are currently 29 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Lusheng Lyu was added to the PMC on 2025-01-09
+- Wenchuang Gan was added as committer on 2024-12-12
+- Shen Tianxiao was added as committer on 2025-02-24
+
+## Project Activity:
+
+OpenDAL has the following release since last report:
+
+- v0.52.0 was released on 2025-02-24
+- v0.51.2 was released on 2025-02-07
+- v0.51.1 was released on 2025-01-13
+- v0.51.0 was released on 2024-12-24
+
+## Community Health:
+
+### Are there any risks to the sustainability of a project?
+
+OpenDAL is in excellent health at the moment. We merge about five PRs per day,
+and our releases follow a stable pace.
+
+### Is the PMC capable of responding to security issues and performing a
+    release of its projects if needed?
+
+Yes, as I demonstrated in the Project Activity, we release at least one
+version per month and can release more if necessary. The PMC also does its
+best to maintain good dependencies.
+
+### Does the PMC need anything from the Foundation to improve on contributing
+    to our mission of delivering software for the public good?
+
+No requests for now.</pre>
+<h3 id="2024-12-18"><a href="2024/board_minutes_2024_12_18.html#attachment-AV">2024-12-18</a> &mdash; Hao Ding<a class="headerlink" href="#2024-12-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+OpenDAL is an Open Data Access Layer that enables seamless interaction with
+diverse storage services.
+
+OpenDAL's development is guided by its vision of One Layer, All Storage and
+its core principles: Open Community, Solid Foundation, Fast Access, Object
+Storage First, and Extensible Architecture.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache OpenDAL was founded 2024-01-17 (a year ago)
+There are currently 27 committers and 17 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- Wenchuang Gan was invited as committer on 2024-12-10
+
+## Project Activity:
+
+OpenDAL has the following release since last report:
+
+- v0.50.2: 2024-11-07
+- v0.50.1: 2024-10-23
+- v0.50.0: 2024-09-18
+- v0.49.2: 2024-08-29
+- v0.49.1: 2024-08-20
+
+## Community Health:
+
+### Are there any risks to the sustainability of a project?
+
+No, OpenDAL is in super healthy at the moment. I'm proud of that.
+
+### Is the PMC capable of responding to security issues and performing a
+    release of its projects if needed?
+
+Yes, as I have demonstrated in the Project Activity, we release at least one
+version per month and can release more if necessary. The PMC is also prepared
+to handle security issues, although we haven't encountered any yet (thanks to
+our Rust core).
+
+### Does the PMC need anything from the Foundation to improve on contributing
+    to our mission of delivering software for the public good?
+
+Yes.
+
+The OpenDAL PMC has switched its primary communication channel from the
+mailing list to GitHub Discussions. A forward from GitHub Discussions to the
+mailing list has been set up to ensure all discussions are archived and
+accessible to mailing list subscribers. This change has been highly
+beneficial, as we've seen increased participation in discussions and more
+contributors joining as a result.
+
+The next area we aim to improve is the release process. We want to create a
+fully automated release workflow where committers only need to tag on GitHub,
+and everything else can be handled automatically without human interaction.
+
+We want the board to assist us in cleaning up the possibility: Can we set up a
+bot account for the OpenDAL PMC to establish a workflow that allows it to
+write to SVN?</pre>
+<h3 id="2024-09-18"><a href="2024/board_minutes_2024_09_18.html#attachment-AY">2024-09-18</a> &mdash; Hao Ding<a class="headerlink" href="#2024-09-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache OpenDAL is a data access layer that allows users to easily and
+efficiently retrieve data from various storage services in a unified way.
+
+Its vision centers on enabling **access data freely**, with the goal of
+empowering ALL users to freely access ANY storage service in ANY way they
+choose.
+
+## Project Status:
+
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+
+Apache OpenDAL was founded 2024-01-17 (8 months ago)
+There are currently 26 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+### Community changes, past quarter:
+
+- No new PMC members. Last addition was Yang Shuai on 2024-03-18.
+- George Miao was added as committer on 2024-06-28
+- Hanchin Hsieh was added as committer on 2024-07-25
+- Huang Feihan was added as committer on 2024-08-06
+
+## Project Activity:
+
+### New Release
+
+- 0.47.0 was released on 2024-06-10.
+- 0.47.1 was released on 2024-06-21.
+- 0.47.2 was released on 2024-07-03.
+- 0.47.3 was released on 2024-07-07.
+- 0.48.0 was released on 2024-07-29.
+- 0.49.0 was released on 2024-08-13.
+- 0.49.1 was released on 2024-08-19.
+- 0.49.2 was released on 2024-08-29.
+
+OpenDAL will release its 0.50.0 version this week.
+
+At the same time, OpenDAL is preparing its first v1.0 release, marking its
+stable promise and readiness for broader adoption.
+
+### Events
+
+#### Results of GSoC
+
+All three GSoC projects have been successfully completed, and the three
+participating students have been nominated as OpenDAL committers. Nice!
+
+#### Results of OSPP
+
+One of the students works actively and is a great potential candidate as an
+OpenDAL committer. However, the other two students show no activity. The
+OpenDAL PMC are contacting them to help remove the blockers of contribution.
+
+
+## Community Health:
+
+### Mailing List
+
+No reports of the mailing list have been generated. However, I feel that only
+a few people actually read the dev list. Most communication happens off-list
+on GitHub and Discord. I have been trying to change this trend, but it hasn't
+worked well. Maybe the board can give us some suggestions.
+
+### Contributors
+
+Since our last update, the OpenDAL community has integrated 222 pull requests
+across 777 files, thanks to the efforts of 49 contributors. Our total number
+of contributors has now reached 224, an increase of 20 from our previous
+report.</pre>
+<h3 id="2024-06-19"><a href="2024/board_minutes_2024_06_19.html#attachment-AW">2024-06-19</a> &mdash; Hao Ding<a class="headerlink" href="#2024-06-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache OpenDAL is a data access layer that allows users to easily and
+efficiently retrieve data from various storage services in a unified way.
+
+Its vision centers on enabling **access data freely**, with the goal of
+empowering ALL users to freely access ANY storage service in ANY way they
+choose.
+
+## Project Status:
+
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+
+-   There are currently 23 committers and 16 PMC members in this project.
+-   The Committer-to-PMC ratio is roughly 3:2.
+
+#### Community changes, past quarter:
+
+-   Yang Shuai was added to the PMC on 2024-03-18
+-   Runjie Yu was added as committer on 2024-06-10
+
+## Project Activity:
+
+### New Release
+
+OpenDAL released version 0.47.0 this week.
+
+Now, OpenDAL integrates seamlessly with the developing Apache Iceberg Rust and
+Apache Arrow Rust. Additionally, the community is interested in collaborating
+with more open source communities.
+
+### Events
+
+The two student-related events, GSoC and OSPP, were successful. Six students
+were selected to work on various projects, ranging from additional storage
+service support (monofs, opfs) to enhanced protocol support (fuse fs, virtio
+fs, ftp), among others.
+
+One student has been nominated as a committer, and two others are strong
+candidates for the new committer role. The OpenDAL PMC expect most students at
+this event to become OpenDAL committers.
+
+## Community Health:
+
+### Mailing List
+
+-   dev@opendal.apache.org had a 50% decrease in traffic in the past quarter
+    (106 emails compared to 209)
+
+This is the first time the OpenDAL PMC has performed quarterly reports. Our
+data are compared with our graduation discussion, which is quite extensive and
+active.
+
+However, the OpenDAL PMC acknowledges that most discussions occur on Discord
+and GitHub, which are not sufficiently public. We plan to shift more formal
+discussions to a mailing list to ensure the entire community is informed about
+our progress, rather than just those who follow GitHub events or have joined
+our Discord.
+
+### Contributors
+
+Since our last update, the OpenDAL community has integrated 219 pull requests
+across 757 files, thanks to the efforts of 41 contributors. Our total number
+of contributors has now reached 204, an increase of 16 from our previous
+report.
+
+The OpenDAL PMC has completed the internal refactor, establishing a strong
+foundation to attract more contributors and users. We will pay closer
+attention to our integrations (such as arrow_rs object_store, webdav, ftp) and
+binaries (including opendal command line, opendal gateway, opendal fs). We aim
+to broaden the use cases for OpenDAL and ultimately increase our contributor
+base.</pre>
+<h3 id="2024-04-17"><a href="2024/board_minutes_2024_04_17.html#attachment-BA">2024-04-17</a> &mdash; Hao Ding<a class="headerlink" href="#2024-04-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache OpenDAL is a data access layer that allows users to easily and
+efficiently retrieve data from various storage services in a unified way.
+
+Its vision centers on enabling **access data freely**, with the goal of
+empowering ALL users to freely access ANY storage service in ANY way they
+choose.
+
+## Project Status:
+
+Current project status: New
+Issues for the board: None
+
+## Membership Data:
+
+-   There are currently 22 committers and 16 PMC members in this project.
+-   The Committer-to-PMC ratio is roughly 3:2.
+
+#### Community changes, past quarter:
+
+-   Yang Shuai was added to the PMC on 2024-03-18
+-   Liuqing Yue was added to the PMC on 2024-01-22
+-   Yang Shuai was added as committer on 2024-01-23
+
+
+## Project Activity:
+
+The OpenDAL community is working on a huge refactor focused on simplifying the
+implementation and improving performance. We expect this to significantly
+simplify the maintenance and extension of opendal in the future.
+
+Meanwhile, the OpenDAL community is involved in GSoC and OSPP events. We've
+welcomed several new contributors, with one in particular actively
+participating. We see this individual as a potential new committer.
+
+## Community Health:
+
+### Mailing List
+
+dev@opendal.apache.org had a 26% decrease in traffic in the past quarter (167
+emails compared to 223).
+
+This report is the first to exclude our discussion on graduation. Therefore, a
+decrease is expected. However, as the GSoC and OSPP events continue, we
+anticipate a slight increase in traffic.
+
+### Contributors
+
+Since our last update, the OpenDAL community has integrated 66 pull requests
+across 526 files, thanks to the efforts of 16 contributors. Our total
+contributor count has now risen to 188, an increase of 2 from our previous
+report.
+
+Our contributor growth has stagnated, with no new committers nominated since
+the last report. The PMC has proposed several strategies to address this
+issue, and we are actively working on them. Our primary focus is to streamline
+the implementation. After these refinements, it will become
+significantly easier for newcomers to contribute.</pre>
+<h3 id="2024-03-20"><a href="2024/board_minutes_2024_03_20.html#attachment-BA">2024-03-20</a> &mdash; Hao Ding<a class="headerlink" href="#2024-03-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache OpenDAL is a data access layer that allows users to easily and
+efficiently retrieve data from various storage services in a unified way.
+
+Its vision centers on enabling **access data freely**, with the goal of
+empowering ALL users to freely access ANY storage service in ANY way they
+choose.
+
+## Project Status:
+
+Current project status: New
+Issues for the board: None
+
+## Membership Data:
+
+Apache OpenDAL was founded 2024-01-17 (2 months ago)
+There are currently 22 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Liuqing Yue was added to the PMC on 2024-01-22
+- Yang Shuai was added as committer on 2024-01-23
+
+## Project Activity:
+
+OpenDAL community made one releases since last report (2024-02):
+
+- 0.45.1 was released on 2024-03-02.
+
+The OpenDAL community participates in GSoC events and has submitted three
+ideas. We've gained new contributors, some of whom we anticipate will become
+new committers to OpenDAL.
+
+## Community Health:
+
+### Mailing List
+
+dev@opendal.apache.org had a 40% increase in traffic in the past quarter (210
+emails compared to 150)
+
+As GSoC progresses, we anticipate an increase in traffic in the upcoming
+report.
+
+### Contributors
+
+Since our last report, the OpenDAL community has merged 100 PRs across 209
+files, thanks to the work of 18 contributors. Our total number of contributors
+has now reached 184, marking an increase of 4 since the last report.
+
+Our contributor growth has slowed, and no new committers have been nominated
+since the last report, which is concerning. The OpenDAL PMC plans to implement
+the following actions to address this:
+
+- Participate in GSoC to attract more contributors to OpenDAL.
+- Enhance documentation for OpenDAL, benefiting both developers and users.
+- Simplify the internal implementation logic to make contributions easier.
+
+We expect to see more committers in the next report.</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-AS">2024-02-21</a> &mdash; Hao Ding<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Apache OpenDAL is a data access layer that allows users to easily and
+efficiently retrieve data from various storage services in a unified way.
+
+Its vision centers on enabling **access data freely**, with the goal of
+empowering ALL users to freely access ANY storage service in ANY way they
+choose.
+
+## Project Status:
+
+Current project status: New
+Issues for the board: None
+
+## Membership Data:
+
+Apache OpenDAL was founded 2024-01-17 (21 days ago)
+There are currently 22 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Liuqing Yue was added to the PMC on 2024-01-22
+- Yang Shuai was added as committer on 2024-01-23
+
+## Project Activity:
+
+OpenDAL community made two releases after TLP setup:
+
+- 0.45.0 was released on 2024-02-05.
+- 0.44.2 was released on 2024-01-20.
+
+The community has just set its 2024 goal:
+
+- Improve the stability of its Rust core.
+- Enhance the usability of its language bindings, including Python,
+  Node.js, and Java.
+- Implement more possible ways for users to access data: FUSE, WebDAV, FTP.
+- Explore additional platforms like WASM.
+
+
+## Community Health:
+
+### Mailing List
+
+dev@opendal.apache.org had a 150% increase in traffic in the past quarter (260
+emails compared to 104).
+
+This mainly discusses OpenDAL's recent graduation discussion and release
+efforts. We expect to see a drop in new report.
+
+### Contributors
+
+Since becoming a TLP, the OpenDAL community has merged 95 PRs, affecting 368
+files, thanks to the efforts of 26 contributors. Our contributor count has now
+reached 180, an increase of 16 from the initial 164 at TLP establishment.
+
+We're setting our sights on expanding our project with more components such as
+fuse, webdav, and ftp support. Additionally, we're excited to participate in
+GSoC events. We look forward to welcoming even more contributors in our next
+report.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#opendal">2023-08-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>Open Data Access Layer: Access data freely, painlessly, and efficiently.
+
+OpenDAL has been incubating since 2023-02-27.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Higher Quality Release Workflow
+2. Grow the community.
+3. Collect more use cases.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+None.
+
+### How has the community developed since the last report?
+
+According to incomplete statistics from GitHub, Opendal currently has 114
+contributors and is being used by 205 projects.
+
+### How has the project developed since the last report?
+
+Added support for storage services such as tikv, persy and dropbox, as
+well as  language bindings for haskell, zig, lua, etc. In addition, we have
+also implemented  the sink API for cloud storage services.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [X] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2023-07-21 v0.38.1
+
+### When were the last committers or PPMC members elected?
+
+2023-07-21
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes.
+
+### Signed-off-by:
+
+- [ ] (opendal) tison
+   Comments:
+- [ ] (opendal) Willem Ning Jiang
+   Comments:
+- [ ] (opendal) Sheng Wu
+   Comments:
+- [ ] (opendal) Ted Liu
+   Comments:
+- [ ] (opendal) Xiaoqiao He
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-06-21"><a href="2023/board_minutes_2023_06_21.html#opendal">2023-06-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-06-21" title="Permalink">&para;</a></h3>
+<pre>Open Data Access Layer: Access data freely, painlessly, and efficiently.
+
+OpenDAL has been incubating since 2023-02-27.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Making the first release.
+2. Grow the community.
+3. Collect more use cases.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+None.
+
+### How has the community developed since the last report?
+
+In the past month, we have welcomed 5 new contributors, bringing the total
+number to 91.
+
+### How has the project developed since the last report?
+
+In the past month, we added new services integrations like sftp, supabase,
+vercel artifacts and cos.
+
+### How would you assess the podling's maturity?
+
+- [X] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2023-05-23
+
+### When were the last committers or PPMC members elected?
+
+2023-05-29
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes.
+
+### Signed-off-by:
+
+- [ ] (opendal) tison
+   Comments:
+- [X] (opendal) Willem Ning Jiang
+   Comments: Good to see OpenDAL made a big step to cut the first Apache
+   release.
+- [ ] (opendal) Sheng Wu
+   Comments:
+- [ ] (opendal) Ted Liu
+   Comments:
+- [ ] (opendal) Xiaoqiao He
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#opendal">2023-05-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>Open Data Access Layer: Access data freely, painlessly, and efficiently.
+OpenDAL has been incubating since 2023-02-27.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the community(attracting more committers, contributors, and users)
+2. Publish Apache releases(resolving logistics on Apache releases)
+3. Improve project structure and documentation
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+None
+
+### How has the community developed since the last report?
+
+We have added support for Supabase, SFTP, OneDrive, Google Drive, and
+Vercel Artifacts (Vercel Remote Caching), providing more choices to our
+users.
+We have noticed that some new projects have adopted OpenDAL, and there
+are also new users for our bindings who have achieved great results.
+We have launched a new project called Oay (OpenDAL Gateway). By providing
+a native gateway, we empower users to access different storage through the
+same API.
+We have also participated in open-source community activities. We are
+excited to be part of the Open Source Promotion Plan (OSPP) 2023, a summer
+program that encourages students to contribute to open-source projects.
+
+We have improved our documentation for new users and developers and set
+up a fast development environment to make it easier for them to use and
+contribute.
+
+In the past month, we have welcomed 26 new contributors, bringing the
+total number to 86.
+
+### How has the project developed since the last report?
+
+- Core:  We have added support for several new services and made
+improvements to performance and usability.
+- Cli: There have been no changes from the last report.
+- Bindings: We made some improvements to the existing bindings, adding
+new Java and C bindings with basic functions.
+- Gateway: We are still developing the MVP.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2023-04-27
+
+NOTE: v0.33.2 - 2023-04-27 is not yet an official ASF release. We are
+still in the process of learning how to create a formal one.
+
+### When were the last committers or PPMC members elected?
+
+April 24th, 2023. In the last month, we selected one PPMC member who was
+involved in the implementation of several features and reviewed most of the
+PRs.
+
+### Have your mentors been helpful and responsive?
+
+Yes
+
+### Is the PPMC managing the podling's brand / trademarks
+
+N/A
+
+### Signed-off-by:
+
+- [X] (opendal) tison
+   Comments:
+- [X] (opendal) Willem Ning Jiang
+   Comments: The podling is in a good track.
+- [ ] (opendal) Sheng Wu
+   Comments:
+- [ ] (opendal) Ted Liu
+   Comments:
+- [ ] (opendal) Xiaoqiao He
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-04-19"><a href="2023/board_minutes_2023_04_19.html#opendal">2023-04-19</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-04-19" title="Permalink">&para;</a></h3>
+<pre>Open Data Access Layer: Access data freely, painlessly, and efficiently.
+
+OpenDAL has been incubating since 2023-02-27.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Grow the community (attracting more committers, contributors, users)
+2. Publish Apache releases (resolving logistics on Apache release)
+3. Improve project structure and documentation
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+None
+
+### How has the community developed since the last report?
+
+OpenDAL has now been adopted by llama-hub to provide support for cloud
+object storage services. Additionally, we have noticed that a command-line
+tool called dilu has been using OpenDAL. We are also planning to provide
+webhdfs support for object store in the near future.
+
+In the past month, we have had close to 20 new contributors and elected
+two new committers.
+
+### How has the project developed since the last report?
+
+- Core: We are now pushing for support for copy/rename.
+- Cli: The implementation of the oli command-line tool is still ongoing,
+and we support configuration files and some common operations such as `ls`
+and `cat`.
+- Bindings: We now have a basic Ruby binding implementation, and further
+improvements have been made to Python and Node.js bindings.
+
+### How would you assess the podling's maturity?
+
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+2023-03-31
+
+NOTE: v0.30.5 - 2023-03-31 is not yet an official ASF release. We are
+still in the process of learning how to create a formal one.
+
+### When were the last committers or PPMC members elected?
+
+March 24th, 2023. In the last month, we selected two committers who are
+maintainers of python bindings and nodejs bindings, respectively.
+
+### Have your mentors been helpful and responsive?
+
+Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+Are 3rd parties respecting and correctly using the podlings
+name and brand? If not what actions has the PPMC taken to
+correct this? Has the VP, Brand approved the project name?
+
+N/A
+
+### Signed-off-by:
+
+- [ ] (opendal) tison
+   Comments:
+- [X] (opendal) Willem Ning Jiang
+   Comments: Good to see OpenDAL made it's first release.
+- [ ] (opendal) Sheng Wu
+   Comments:
+- [ ] (opendal) Ted Liu
+   Comments:
+- [ ] (opendal) Xiaoqiao He
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
+<h3 id="2023-03-22"><a href="2023/board_minutes_2023_03_22.html#opendal">2023-03-22</a> &mdash; in the Incubator's report<a class="headerlink" href="#2023-03-22" title="Permalink">&para;</a></h3>
+<pre>Open Data Access Layer: Access data freely, painlessly, and efficiently.
+
+OpenDAL has been incubating since 2023-02-27.
+
+### Three most important unfinished issues to address before graduating:
+
+  1. The majority of contributions to the OpenDAL project were made by only
+  four committers, with Xuanwo being the most prolific contributor.
+  2. The adoption rate of OpenDAL has been relatively low, with only a few
+  projects currently using it.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+  N/A
+
+### How has the community developed since the last report?
+
+  This is the first report of OpenDAL.
+
+  Over the past two weeks, the project has successfully attracted four new
+  contributors, one of whom has shown great promise and potential to be
+  considered for committer status in the future.
+
+### How has the project developed since the last report?
+
+  This is the first report of OpenDAL.
+
+  During the past two weeks, OpenDAL has added support for the append
+  function and is currently working on developing Python and Node.js
+  bindings. These updates are expected to be included in the upcoming Apache
+  release.
+
+### How would you assess the podling's maturity?
+  Please feel free to add your own commentary.
+
+  - [X] Initial setup
+  - [X] Working towards first release
+  - [ ] Community building
+  - [ ] Nearing graduation
+  - [ ] Other:
+
+### Date of last release:
+
+  NOTE: it's not an Apache release, because our repo trasnfer is not DONE
+  yet.
+
+  2023-03-02
+
+### When were the last committers or PPMC members elected?
+
+  OpenDAL has been in incubation since February 27th, 2023. As of yet, no
+  committers have been elected for the project.
+
+### Have your mentors been helpful and responsive?
+
+  Yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+  N/A
+
+### Signed-off-by:
+
+  - [X] (opendal) tison
+     Comments:
+  - [X] (opendal) Willem Ning Jiang
+     Comments: Just finished the project setup work
+  - [ ] (opendal) Sheng Wu
+     Comments:
+  - [ ] (opendal) Ted Liu
+     Comments:
+  - [X] (opendal) Xiaoqiao He
+     Comments:
+
+### IPMC/Shepherd notes:</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

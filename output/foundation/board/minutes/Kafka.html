@@ -1,0 +1,2776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: Kafka | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: Kafka';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: Kafka';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: Kafka</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="kafka">Kafka<a class="headerlink" href="#kafka" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023-04-19</td>
+<td><a href="2023/board_minutes_2023_04_19.html#section-7A">Appointed Mickael Maison</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2012-11-21</td>
+<td><a href="2012/board_minutes_2012_11_21.html#section-7C">Appointed Jun Rao</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2012-11-21</td>
+<td><a href="2012/board_minutes_2012_11_21.html#section-7C">Establish the Apache Kafka Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-AN">2026-08-19</a> &mdash; Mickael Maison<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (14 years ago)
+There are currently 71 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Christo Lolov on 2026-02-23.
+- No new committers. Last addition was Sean Quah on 2026-04-29.
+
+## Project Activity:
+In the past quarter we released:
+- 4.3.1 was released on 2026-06-23.
+- 4.2.1 was released on 2026-05-30.
+- 4.3.0 was released on 2026-05-22.
+4.3.1 and 4.2.1 are bugfix releases to address CVEs
+
+4.3.0 is a feature release that introduces significant improvements
+ to all components:
+- Mechanism to cordon brokers and log directories
+- Improvements to share groups (queues)
+- Monitoring improvements
+- Improvements to GlobalKTable exceptions handling in Streams
+- Support for headers in Streams state stores
+- Support for KIP-877 metrics in MirrorMaker
+
+We currently have 1 release in progress:
+- 4.4.0 (expected for September)
+
+## Community Health:
+The project activity on mailing lists, Jira and GitHub remains high.
+The number of opened pull requests is growing due to an increase new
+PR creations while our merge velocity is stable.</pre>
+<h3 id="2026-05-20"><a href="2026/board_minutes_2026_05_20.html#attachment-AL">2026-05-20</a> &mdash; Mickael Maison<a class="headerlink" href="#2026-05-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software
+related to Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (13 years ago)
+There are currently 71 committers and 44 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Christo Lolov was added to the PMC on 2026-02-23
+- Kamal Chandraprakash was added to the PMC on 2026-02-22
+- Lianet Magrans was added to the PMC on 2026-02-21
+- Andrew Schofield was added to the PMC on 2026-02-23
+- Viktor Somogyi-Vass was added to the PMC on 2026-02-23
+- Kirk True was added as committer on 2026-03-24
+- Sean Quah was added as committer on 2026-04-29
+
+## Project Activity:
+In the past quarter we released:
+- 4.0.2 was released on 2026-03-20
+- 4.1.2 was released on 2026-03-17
+- 3.9.2 was released on 2026-02-21
+These are bugfix releases to address CVEs
+
+- 4.2.0 was released on 2026-02-16:
+This is a feature release that introduces significant improvements to
+all components:
+- Kafka Queues are now production ready
+- Major monitoring improvements
+- Auto join feature for KRaft voters
+- New Kafka Streams rebalance protocol
+- DLQ support for Kafka Streams
+
+We currently have 2 releases in progress:
+- 4.3.0 (RC1 vote in progress)
+- 4.2.1 (RC3 vote in progress)
+
+## Community Health:
+The project activity on mailing lists, Jira and GitHub remains high and stable.</pre>
+<h3 id="2026-02-18"><a href="2026/board_minutes_2026_02_18.html#attachment-AQ">2026-02-18</a> &mdash; Mickael Maison<a class="headerlink" href="#2026-02-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (13 years ago) There are currently 69
+committers and 39 PMC members in this project. The Committer-to-PMC ratio is
+roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Lucas Brutschy on 2025-07-14.
+- No new committers. Last addition was PoAn Yang on 2025-07-12.
+
+We have several discussion threads on-going to invite new committers and PMC
+members.
+
+## Project Activity:
+In the past quarter we released Kafka 4.1.1.
+
+We have 4 releases in progress:
+- 4.2.0: An issue was found in RC3, we're working a new RC
+- 3.9.2: The vote on RC1 is currently in progress
+- 4.1.2: The 1st release candidate is expected this month
+- 4.0.2: The 1st release candidate is expected this month
+
+## Community Health:
+The project activity on mailing lists, Jira and GitHub remains high and stable.</pre>
+<h3 id="2025-11-19"><a href="2025/board_minutes_2025_11_19.html#attachment-AO">2025-11-19</a> &mdash; Mickael Maison<a class="headerlink" href="#2025-11-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software
+related to Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (13 years ago)
+There are currently 69 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Lucas Brutschy on 2025-07-14.
+- No new committers. Last addition was PoAn Yang on 2025-07-12.
+
+## Project Activity:
+In the past quarter we released Kafka 4.0.1 and 4.1.0.
+
+Kafka 4.1.0 includes:
+- Queues for Kafka now in preview
+- New Streams rebalance protocol
+- Mechanism for plugins to register metrics
+- Support for running multiple versions on Connectors
+- Support for OAuth jwt-bearer grant type
+
+We have 2 releases in progress:
+- 4.1.1: Planned for November, the vote on RC2 is currently ongoing
+- 4.2.0: Planned for January
+
+## Community Health:
+The project activity on mailing lists, Jira and GitHub is stable
+and stays relatively high.</pre>
+<h3 id="2025-08-20"><a href="2025/board_minutes_2025_08_20.html#attachment-AL">2025-08-20</a> &mdash; Mickael Maison<a class="headerlink" href="#2025-08-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software
+related to Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (13 years ago)
+There are currently 69 committers and 39 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Jos&eacute; Armando Garc&iacute;a Sancio was added to the PMC on 2025-06-15
+- Lucas Brutschy was added to the PMC on 2025-07-14
+- Omnia Ibrahim was added as committer on 2025-06-25
+- PoAn Yang was added as committer on 2025-07-12
+
+## Project Activity:
+In the past quarter we released Kafka 3.9.1.
+
+We have 2 releases in progress:
+- 4.1.0: Planned for August, RC0 and RC1 out already, working on a new RC
+- 4.0.1: Planned for August, RC0 out already, working on a new RC
+
+## Community Health:
+The community health is good. The number of contributors remains steady,
+and the community is working on new big features (diskless).
+The traffic on the mailing lists has decreased but still remains high with
+over 1500 emails on the dev list this quarter.</pre>
+<h3 id="2025-05-21"><a href="2025/board_minutes_2025_05_21.html#attachment-AF">2025-05-21</a> &mdash; Mickael Maison<a class="headerlink" href="#2025-05-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (12 years ago)
+There are currently 67 committers and 37 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Josep Prat on 2024-09-06.
+- TengYao Chi was added as committer on 2025-04-09
+- Apoorv Mittal was added as committer on 2025-04-09
+
+## Project Activity:
+In the past quarter we released Kafka 4.0.0 which is a major milestone
+for the project.
+This release removes ZooKeeper support and also introduces several new major
+features and changes:
+- New consumer group rebalance is now production ready
+- Support for Queues in early access
+- Improvements to KRaft
+- Removal of Java 8 support. Clients now require 11, brokers require 17
+- Upgrade to log4j2
+- Removal of old protocol APIs (older than Kafka 2.1)
+
+We have 2 releases in progress:
+- 3.9.1: Vote for release is on-going
+- 4.1.0: Planned for July
+
+## Community Health:
+The project activity on mailing lists, Jira and GitHub remains high.
+
+The decrease in commits (-48%) and emails on the dev list (-14%) is
+a return to normal activity after last quarter which was extremely
+busy due to the work around the 4.0.0 release.
+
+The decrease in PRs closed (-59%) is also also a return to normal activity as
+last quarter we enabled the stale PR GitHub action which closed a huge
+number of old PRs.</pre>
+<h3 id="2025-02-19"><a href="2025/board_minutes_2025_02_19.html#attachment-AJ">2025-02-19</a> &mdash; Mickael Maison<a class="headerlink" href="#2025-02-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (12 years ago)
+There are currently 65 committers and 37 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Josep Prat on 2024-09-06.
+- Andrew Schofield was added as committer on 2024-12-05
+
+## Project Activity:
+In the past quarter we released Kafka 3.7.2 which is a bugfix release.
+
+Kafka 4.0.0 is currently in progress.
+This release will remove ZooKeeper support. The release is currently
+in code freeze. We expect to have the 1st release candidate in the
+coming weeks.
+
+## Community Health:
+The project activity on mailing lists, Jira and GitHub is high.
+The increase in commits and PRs opened is mostly due to the work
+around ZooKeeper removal.
+The massive increase in PRs closed is due to old PRs being
+automatically closed by the stale PR GitHub action we put in place a
+few months ago.</pre>
+<h3 id="2024-11-20"><a href="2024/board_minutes_2024_11_20.html#attachment-AH">2024-11-20</a> &mdash; Mickael Maison<a class="headerlink" href="#2024-11-20" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related
+to Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (12 years ago)
+There are currently 64 committers and 37 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Josep Prat was added to the PMC on 2024-09-06
+- Jeff Kim was added as committer on 2024-09-07
+- Kamal Chandraprakash was added as committer on 2024-09-26
+- Lianet Magrans was added as committer on 2024-08-28
+
+## Project Activity:
+In the past quarter we released 3.8.1 and 3.9.0.
+Kafka 3.9.0 is the last 3.X minor release with ZooKeeper support
+It contains a lot of new features (11 KIPs) and improvements
+in all components.
+Brokers:
+- Dynamic KRaft controller membership
+- Tiered storage disablement and quotas
+Clients:
+- Improve OAuth OIDC support
+- Expose tiered storage offsets
+Streams:
+- Improve exception handling
+- Make log processing configurable
+Connect:
+- New healthcheck endpoint
+- Support disabling MirrorMaker offset translation
+- Improve handling of nullable values in transformations
+
+Apache Kafka 3.7.2 (planned for November) and 4.0.0 (planned for
+February) are currently in progress.
+
+We also migrated our build infrastructure from Jenkins to GitHub Actions.
+
+## Community Health:
+The project activity on mailing lists, Jira and GitHub is high and stable.
+
+In the last 3 months we've had:
+- 116 authors (128 last quarter) - trend: flat
+- 707 commits (704 last quarter) - trend: flat
+- 670 Jiras created (608 last quarter) - trend: ~+10%
+- 626 Jiras resolved (539 last quarter) - trend: ~+15%</pre>
+<h3 id="2024-08-21"><a href="2024/board_minutes_2024_08_21.html#attachment-AJ">2024-08-21</a> &mdash; Mickael Maison<a class="headerlink" href="#2024-08-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: See the section below
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (12 years ago)
+There are currently 61 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Greg Harris on 2024-04-13.
+- No new committers. Last addition was Igor Soarez on 2024-04-21.
+
+## Project Activity:
+In the past quarter we released, 3.7.1 and 3.8.0.
+Kafka 3.8.0 contains a lot of new features (17 KIPs) and improvements
+in all components.
+Brokers/Clients:
+- JBOD support in KRaft mode is now production ready
+- JBOD support with Tiered Storage (early access)
+- Updates to the new consumer group rebalance protocol (early access)
+- New GraalVM docker image
+- Support for compression levels
+- Support for restricting paths with File and Directory configuration providers
+Streams:
+- Customizable task assignments
+- Support for shared state stores
+Connect:
+- New PATCH REST endpoint for partial connector configuration updates
+See the announcement for more details:
+https://kafka.apache.org/blog#apache_kafka_380_release_announcement
+
+Kafka 3.9.0 is currently in progress.
+
+## Community Health:
+The statistics page (https://reporter.apache.org/wizard/statistics?kafka) seems
+to be broken so it's hard to compare to the previous quarter. Overall the
+project activity remains very high in terms of commits/PRs, Jiras and emails
+on mailing lists.
+
+## Issues for the board
+
+### Process for creating Confluence accounts:
+Kafka uses Kafka Improvement Proposals (KIP) to design and adopt major/public
+API changes. This requires users to create a KIP page in Confluence. Since
+February it's not possible for users to create Confluence accounts. This
+severely impacts our project as new contributors are not able to propose KIPs.
+There is INFRA-25451 where users can request accounts but this is not a
+solution as it takes weeks to get accounts created.</pre>
+<h3 id="2024-05-15"><a href="2024/board_minutes_2024_05_15.html#attachment-AJ">2024-05-15</a> &mdash; Mickael Maison<a class="headerlink" href="#2024-05-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (11 years ago)
+There are currently 61 committers and 36 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Greg Harris was added to the PMC on 2024-04-13
+- Christo Lolov was added as committer on 2024-03-24
+- Igor Soarez was added as committer on 2024-04-21
+
+## Project Activity:
+In the past quarter we released, 3.7.0 and 3.6.2.
+Kafka 3.7.0 contains a lot of new features (&gt;25 KIPs) and improvements
+in all components.
+Brokers:
+- JBOD support in KRaft mode (early access)
+- New consumer group rebalance protocol (early access)
+- First release to include an official Docker image
+Clients:
+- Leader discovery optimisations
+- Support for sending metrics to brokers
+- Admin clients can directly interact with KRaft controllers
+Streams:
+- Rack aware task assignment
+- Many improvements to Interactive Queries
+Connect:
+- Support for cluster wide dynamic log level changes
+- Support for creating connectors in stopped state
+See the announcement for more details:
+https://kafka.apache.org/blog#apache_kafka_370_release_announcement
+
+Kafka 3.7.1 and 3.8.0 are also in progress and we expect to release
+them to May/June.
+
+## Community Health:
+The project activity on mailing lists and GitHub is stable.
+Although the ASF project statistics tool shows a significant decrease
+in Jira activity (-40%), we think it's an issue with the tool.
+Checking in Jira, this quarter we created ~420 tickets, compared
+to ~450 last quarter. So it's stable as well.
+
+
+## Board Comments
+
+rbowen/2024-02-21: We invited all contributors we identified last year.
+Do you think we missed anyone?
+Since then we've regularly been reviewing potential candidates and have
+added 7 new committers since last May.</pre>
+<h3 id="2024-02-21"><a href="2024/board_minutes_2024_02_21.html#attachment-AI">2024-02-21</a> &mdash; Mickael Maison<a class="headerlink" href="#2024-02-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (11 years ago)
+There are currently 59 committers and 35 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Divij Vaidya was added to the PMC on 2023-12-27
+- No new committers. Last addition was Lucas Brutschy on 2023-09-21.
+
+The PMC is currently considering adding new committers. We provided feedback to
+some contributors and still have ongoing discussions for others (that
+will end with either providing feedback or an invitation to become a
+committer).
+
+## Project Activity:
+Kafka 3.7.0 is nearing release. We published the first release
+candidate on Jan 11. It is expected to release in February.
+Kafka 3.5.2 and 3.6.1 both released in December 2023.
+
+## Community Health:
+The project activity has been steady since the last quarter (very
+small differences in mailing list activities and commits).
+
+The decrease in Jiras is a return to normal after a spike last quarter
+due to large work items in progress (Tiered Storage, JBOD support in
+KRaft, ZK to KRaft migration and Kafka 4.0).</pre>
+<h3 id="2023-11-15"><a href="2023/board_minutes_2023_11_15.html#attachment-AG">2023-11-15</a> &mdash; Mickael Maison<a class="headerlink" href="#2023-11-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (11 years ago)
+There are currently 59 committers and 34 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Justine Olshan was added to the PMC on 2023-09-23
+- Satish Duggana was added to the PMC on 2023-10-27
+- Lucas Brutschy was added as committer on 2023-09-21
+- Yash Mayya was added as committer on 2023-09-21
+
+## Project Activity:
+Kafka 3.7.0 is in progress, it is expected to release in January.
+Kafka 3.5.2 is also in progress and it is expected to release in November.
+
+The project made 1 release in the past quarter
+- 3.6.0 on October 10. It contained significant improvements including:
+Core:
+- Support for Tiered Storage in early access (KIP-405)
+- Support for duplicate listener on IPv4/IPv6 (KIP-797)
+- Metadata Transaction (KIP-868)
+Connect:
+- First class offsets support (KIP-875)
+- Modernize Plugin Discovery (KIP-898)
+Streams:
+- Shareable State Stores (KIP-813)
+- Rack Aware task assignment (KIP-925)
+
+
+## Community Health:
+The project activity has been steady since the last quarter.
+The increase in Jiras is again mostly due to the large work items in
+progress (Tiered Storage, KRaft) and the preparation for Kafka 4.0.
+
+## Feedback from previous report
+
+### Non PMC subscribed to security/private list:
+All emails are now associated with an Apache account
+- private: All subscribers are now PMC or Apache members.
+- security: A few committers are subscribed to this list as they
+helped investigations of previous security reports.</pre>
+<h3 id="2023-08-16"><a href="2023/board_minutes_2023_08_16.html#attachment-AQ">2023-08-16</a> &mdash; Mickael Maison<a class="headerlink" href="#2023-08-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (11 years ago)
+There are currently 57 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chris Egerton on 2023-03-09.
+- Divij Vaidya was added as committer on 2023-06-13
+- Greg Harris was added as committer on 2023-07-10
+
+## Project Activity:
+Kafka 3.6.0 is in progress, it is expected to release in September.
+
+3.6.0 will include improvements in all components:
+Core:
+- Support for Tiered Storage (KIP-405)
+- Support for duplicate listener on IPv4/IPv6 (KIP-797)
+- Metadata Transaction (KIP-868)
+Connect:
+- First class offsets support (KIP-875)
+- Modernize Plugin Discovery (KIP-898)
+Streams:
+- Shareable State Stores (KIP-813)
+- Rack Aware task assignment (KIP-925)
+
+The project made 3 releases in the past quarter
+3.5.1 was released on 2023-07-21.
+3.5.0 was released on 2023-06-15.
+3.4.1 was released on 2023-06-06.
+
+## Community Health:
+The activity has been steady since the last quarter. The slight increase in
+Jiras is mostly caused by some large ongoing pieces of work (Tiered Storage,
+KRaft, KIP-848)
+
+## Feedback from previous report
+### Committer/PMC
+We've added 2 new committers this quarter. We also considered a third
+candidate but decided to wait a bit. We provided feedback to that contributor
+and we will reconsider them soon. We started granting Github collaborator
+permissions to the most active contributors (non committers). We will also use
+that feature to identify committer candidates.
+
+### Non PMC subscribed to security/private list:
+- private: Removed non PMC members. The remaining unknown emails are
+  alternative emails from PMC members
+- security: Removed the totally unknown emails. A few emails are alternative
+  emails from PMC members. The others are committers that were added as they
+  worked on a report. They can be removed if needed.</pre>
+<h3 id="2023-05-17"><a href="2023/board_minutes_2023_05_17.html#attachment-AJ">2023-05-17</a> &mdash; Mickael Maison<a class="headerlink" href="#2023-05-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Kafka is the creation and maintenance of software related to
+Distributed publish-subscribe messaging system
+
+## Issues:
+Current 2024 will be hosted in Austin, Texas. The PMC had some
+concerns with the location as some recent Texas laws have not been
+aligned with the open and inclusive goals of the project and
+foundation. Do you have any recommendations?
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (10 years ago)
+There are currently 55 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- Chris Egerton was added to the PMC on 2023-03-09
+- David Arthur was added to the PMC on 2023-03-09
+- Lucas Bradstreet was added as committer on 2023-02-17
+
+## Project Activity:
+Kafka 3.5.0 and 3.4.1 are in progress, both are expected to release in May.
+
+3.5.0 will include improvements in all components:
+Core:
+- SCRAM support in KRaft mode (KIP-900)
+- Nullable structs in protocol (KIP-893)
+Clients:
+- Rack aware partition assignors (KIP-881)
+- Environment variable config providers (KIP-887)
+Connect:
+- Feature complete dedicated mode for MirrorMaker (KIP-710)
+- IncrementalAlterConfig support for MirrorMaker (KIP-894)
+- Offset management in Connect - partial implementation (KIP-875)
+Streams:
+- Versioned state stores (KIP-889)
+- Boolean serdes (KIP-907)
+
+3.4.0 was released on 2023-02-07.
+
+## Community Health:
+After over 10 years as PMC chair, Jun Rao stepped down. The PMC
+elected Mickael Maison as the new chair.</pre>
+<h3 id="2023-02-15"><a href="2023/board_minutes_2023_02_15.html#attachment-AP">2023-02-15</a> &mdash; Jun Rao<a class="headerlink" href="#2023-02-15" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+## Project Activity:
+
+We released 3.4.0. The major features included in this release are:
+* KIP-881: Rack-aware Partition Assignment for Kafka Consumers
+* KIP-876: Time based cluster metadata snapshots
+* KIP-787: MM2 manages Kafka resources with custom Admin implementation.
+* KIP-866 ZooKeeper to KRaft Migration (early access)
+
+We released 3.3.2, which fixes more than 20 issues.
+
+## Community
+Dev mailing list had a 23% increase in traffic in the past quarter (1653 emails
+compared to 1341).
+
+User mailing list had a 7% decrease in traffic in the past quarter (233 emails
+compared to 250).
+
+We got the feedback from a few ASF members that Apache Kafka's committer bar
+is too high and the project is not very inclusive. Based on the feedback, we
+decided to gradually lower the bar and add more committers.
+
+In the past quarter, we added 8 new committers, Ron Dagostino and Viktor
+Somogyi-Vass on Dec 14, 2022, Josep Prat on Dec 20, 2022, Satish Duggana on
+Dec 23, 2022, Justine Olshan on Dec 28, 2022, Edoardo Comar on Jan 6, 2023,
+Walker Carlson and Stanislav Kozlovski on Jan 17, 2023.
+
+We also sent the committer invitation to two other people, but haven't
+received a reply yet.
+
+We also cancelled the vote on two other committer candidates. We discovered
+that one candidate has moved on to other projects and won't be able to work
+on Kafka any more. Another candidate didn't get enough votes, likely due to
+the concerns raised during the discussion. We have provided feedback to the
+candidate.
+
+We added a new PMC member Luke Chen on Dec. 15, 2022.
+
+## Releases
+3.4.0 was released on 2023-02-07.
+3.3.2 was released on 2023-01-23.
+
+## Issues:
+There are no issues requiring board attention.</pre>
+<h3 id="2022-11-16"><a href="2022/board_minutes_2022_11_16.html#attachment-AI">2022-11-16</a> &mdash; Jun Rao<a class="headerlink" href="#2022-11-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+## Project Activity:
+
+We released 3.3.1, which includes the following significant new features.
+KIP-833: Mark KRaft as Production Ready KIP-778: KRaft to KRaft upgrades
+KIP-835: Monitor KRaft Controller Quorum health KIP-794: Strictly Uniform
+Sticky Partitioner KIP-834: Pause/resume KafkaStreams topologies KIP-618:
+Exactly-Once support for source connectors
+
+We released 3.2.3, which fixes 7 issues, including important security fixes.
+
+We released 3.2.3, which fixes 4 issues, including important security fixes.
+
+We released 3.0.2, which fixes 10 issues, including important security fixes.
+
+We released 2.8.2, which fixes 11 issues, including important security fixes.
+
+## Community
+Dev mailing list had an 18% decrease in traffic in the past quarter (1336
+emails compared to 1627).
+
+User mailing list had an 11% increase in traffic in the past quarter (397
+emails compared to 355).
+
+We added one new PMC member Bruno Cadonna on Oct. 30, 2022. We added one new
+committer Deng Ziming on Oct. 10, 2022.
+
+We launched the inaugural data streaming industry event Current 2022: The Next
+Generation of Kafka Summit on Oct 4 and 5 in Austin, Texas. The event had more
+than 2100 in person attendees and another 2200 virtual attendees. While we
+expanded the scope of the program to be inclusive of the broader range of data
+streaming technologies, the agenda still included 60% of Apache Kafka topics.
+We have heard great feedback from the community. People recognized that Kafka
+thrives as part of an interconnected ecosystem and appreciated having related
+technologies presented at one conference.
+
+## Releases
+3.3.1 was released on 2022-10-02.
+2.8.2 was released on 2022-09-19.
+3.0.2 was released on 2022-09-19.
+3.1.2 was released on 2022-09-19.
+3.2.3 was released on 2022-09-19.
+
+## Issues:
+There are no issues requiring board attention.</pre>
+<h3 id="2022-08-17"><a href="2022/board_minutes_2022_08_17.html#attachment-AK">2022-08-17</a> &mdash; Jun Rao<a class="headerlink" href="#2022-08-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+## Project Activity:
+
+We released 3.2.0. It includes
+* log4j 1.x is replaced with reload4j (KAFKA-9366)
+* StandardAuthorizer for KRaft (KIP-801)
+* Send a hint to the partition leader to recover the partition (KIP-704)
+* Top-level error code field in DescribeLogDirsResponse (KIP-784)
+* kafka-console-producer writes headers and null values (KIP-798 and KIP-810)
+* JoinGroupRequest and LeaveGroupRequest have a reason attached (KIP-800)
+* Static membership protocol lets the leader skip assignment (KIP-814)
+* Rack-aware standby task assignment in Kafka Streams (KIP-708)
+* Interactive Query v2 (KIP-796, KIP-805, and KIP-806)
+* Connect APIs list all connector plugins and retrieve their configuration
+  (KIP-769)
+* TimestampConverter SMT supports different unix time precisions (KIP-808)
+* Connect source tasks handle producer exceptions (KIP-779)
+
+We released 3.1.1, which fixes 30 issues.
+
+We are in the process of preparing the 3.3.0 release. As part of this release,
+we expect to mark KRaft as production ready.
+
+## Community
+Dev mailing list had a 42% increase in traffic in the past quarter (1829
+emails compared to 1287).
+
+User mailing list had a 10% decrease in traffic in the past quarter (237
+emails compared to 258).
+
+We added a new PMC member Sophie Blee-Goldman on Jul 31, 2022. We added one
+new committer Chris Egerton on Jul 25, 2022.
+
+Kafka PMC approved two events for 2023, Kafka Summit London (May 16-17, 2023)
+and Current 2023: The Next Generation of Kafka Summit (Aug. 29-30, 2023).
+
+## Releases
+3.2.0 was released on 2022-05-17.
+3.1.1 was released on 2022-05-13.
+
+
+## Issues:
+There are no issues requiring board attention.</pre>
+<h3 id="2022-05-18"><a href="2022/board_minutes_2022_05_18.html#attachment-AE">2022-05-18</a> &mdash; Jun Rao<a class="headerlink" href="#2022-05-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+## Project Activity:
+
+3.2.0 passed the vote and will be released shortly. It includes
+* log4j 1.x is replaced with reload4j (KAFKA-9366)
+* StandardAuthorizer for KRaft (KIP-801)
+* Send a hint to the partition leader to recover the partition (KIP-704)
+* Top-level error code field in DescribeLogDirsResponse (KIP-784)
+* kafka-console-producer writes headers and null values (KIP-798 and KIP-810)
+* JoinGroupRequest and LeaveGroupRequest have a reason attached (KIP-800)
+* Static membership protocol lets the leader skip assignment (KIP-814)
+* Rack-aware standby task assignment in Kafka Streams (KIP-708)
+* Interactive Query v2 (KIP-796, KIP-805, and KIP-806)
+* Connect APIs list all connector plugins and retrieve their configuration
+  (KIP-769)
+* TimestampConverter SMT supports different unix time precisions (KIP-808)
+* Connect source tasks handle producer exceptions (KIP-779)
+
+3.1.1 is being voted now.
+
+## Community
+Dev mailing list had an 18% decrease in traffic in the past quarter (1336
+emails compared to 1621).
+
+User mailing list had an 11% increase in traffic in the past quarter (397
+emails compared to 355).
+
+Kafka Summit London was held on Apr 25-26 with more than 1,200 attendees.
+
+Kafka PMC approved Current 2022: The Next Generation of Kafka Summit, a hybrid
+event for Kafka and Event Streaming technologies. The new event will extend
+Apache Kafka&rsquo;s reach into the broader community. The event will be held in
+Austin in October, 2022.
+
+We didn't add any new PMC members this quarter. We last added a new PMC member
+David Jacot on Dec. 16, 2021.
+
+We added one new committer Luke Chen on Feb. 9, 2022.
+
+## Releases
+3.1.0 was released on 2022-01-24.
+2.7.2 was released on 2021-11-22.
+2.6.3 was released on 2021-11-22.
+
+## Issues:
+There are no issues requiring board attention.</pre>
+<h3 id="2022-02-16"><a href="2022/board_minutes_2022_02_16.html#attachment-AF">2022-02-16</a> &mdash; Jun Rao<a class="headerlink" href="#2022-02-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+## Project Activity:
+
+We released 3.1.0. This is a major release that includes many new features,
+including:
+* Preview of KRaft, Kafka Raft implementation for replacing ZooKeeper.
+* Apache Kafka supports Java 17
+* The FetchRequest supports Topic IDs (KIP-516)
+* Extend SASL/OAUTHBEARER with support for OIDC (KIP-768)
+* Custom partitioners in foreign-key joins (KIP-775)
+* Fetch/findSessions queries with open endpoints for SessionStore/WindowStore
+  (KIP-766)
+* Range queries with open endpoints (KIP-763)
+* Add additional configuration to control MirrorMaker2 internal topics naming
+  convention (KIP-690)
+
+We released 2.7.2 and 2.6.3, which fixed 26 and 11 issues, respectively.
+
+## Community
+Dev mailing list had an 18% decrease in traffic in the past quarter (1336
+emails compared to 1621).
+
+User mailing list had an 11% increase in traffic in the past quarter (397
+emails compared to 355).
+
+We added two new PMC members, Tom Bentley on Nov. 17, 2021 and David Jacot on
+Dec. 16, 2021.
+
+We added one new committer Jos&eacute; Armando Garc&iacute;a Sancio on Nov. 11, 2021.
+
+## Releases
+3.1.0 was released on 2022-01-24.
+2.7.2 was released on 2021-11-22.
+2.6.3 was released on 2021-11-22.
+
+## Issues:
+There are no issues requiring board attention.</pre>
+<h3 id="2021-11-17"><a href="2021/board_minutes_2021_11_17.html#attachment-AK">2021-11-17</a> &mdash; Jun Rao<a class="headerlink" href="#2021-11-17" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+## Project Activity:
+We released 3.0.0. The key features include:
+- Kafka Raft support for snapshots of the metadata topic and other
+  improvements in the self-managed quorum.
+- Stronger delivery guarantees for the Kafka producer enabled by default.
+- Optimizations in OffsetFetch and FindCoordinator requests.
+- More flexible MirrorMaker 2 configuration.
+- Ability to restart a connector's tasks on a single call in Kafka Connect.
+- Connector log contexts and connector client overrides are now enabled by
+  default.
+- Enhanced semantics for timestamp synchronization in Kafka Streams.
+- Revamped public API for Stream's TaskId.
+
+We released Kafka 2.8.1, which fixes 49 issues.
+
+## Community
+Dev mailing list had a 29% decrease in traffic in the past quarter (1372
+emails compared to 1919).
+
+User mailing list had a 25% decrease in traffic in the past quarter (339
+emails compared to 447).
+
+We didn't add any new PMC members this quarter. We last added a PMC member on
+Jun. 18, 2021
+
+We didn't add any new committers this quarter. We last added a committer on
+Apr. 12, 2021.
+
+We are voting both new committers and PMC members now.
+
+Kafka Summit America 2021 completed with more than 21,000 registrations.
+
+## Releases
+3.0.0 was released on 2021-09-21.
+2.8.1 was released on 2021-09-20.
+
+## Issues:
+There are no issues requiring board attention.</pre>
+<h3 id="2021-08-18"><a href="2021/board_minutes_2021_08_18.html#attachment-AI">2021-08-18</a> &mdash; Jun Rao<a class="headerlink" href="#2021-08-18" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+## Project Activity:
+We are in the final phase of preparing the 3.0.0 release. The most significant
+feature is a preview of replacing ZooKeeper with a self-managed quorum
+based on Raft. This will simply the deployment of Kafka and significantly
+improve the scalability of the metadata. This release will also deprecate
+the support of some old Java, Scala versions and message formats. This will
+enable us to clean up the code base in future releases.
+
+Tiered Storage work continues and unlocks infinite scaling and faster rebalance
+times via KIP-405. The implementation is in progress.
+
+## Community
+Dev mailing list had a 20% decrease in traffic in the past quarter (2007 emails
+compared to 2486).
+
+User mailing list had a 4% decrease in traffic in the past quarter (469 emails
+compared to 484).
+
+We added 1 new PMC member Konstantine Karantasis on Jun. 18.
+
+We didn't add any new committers this quarter. We last added a committer on
+Apr. 12, 2021.
+
+Kafka Summit APAC 2021 completed with more than 13,000 registrations. This is
+the very first Kafka Summit for APAC.
+
+## Releases
+Last release was 2.7.1 on May 10, 2021.
+
+## Issues:
+There are no issues requiring board attention.</pre>
+<h3 id="2021-05-19"><a href="2021/board_minutes_2021_05_19.html#attachment-AG">2021-05-19</a> &mdash; Jun Rao<a class="headerlink" href="#2021-05-19" title="Permalink">&para;</a></h3>
+<pre>## Description:
+Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+## Project Activity:
+We released 2.8.0, which includes the following key features.
+- Early access of replace ZooKeeper with a self-managed quorum
+- Add Describe Cluster API
+- Support mutual TLS authentication on SASL_SSL listeners
+- JSON request/response debug logs
+- Limit broker connection creation rate
+- Topic identifiers
+- Expose task configurations in Connect REST API
+- Update Streams FSM to clarify ERROR state meaning
+- Extend StreamJoined to allow more store configs
+- More convenient TopologyTestDriver constructors
+- Introduce Kafka-Streams-specific uncaught exception handler
+- API to start and shut down Streams threads
+- Improve TimeWindowedDeserializer and TimeWindowedSerde to handle window size
+- Improve timeouts and retries in Kafka Streams
+
+We released 2.7.1, which fixes 41 critical issues.
+
+We released 2.6.2, which fixes 35 critical issues.
+
+We&rsquo;ve continued steady progress toward the task of replacing ZooKeeper in
+Kafka. The early access in 2.8.0 demonstrated a 10X improvement in the amount
+of metadata supported.
+
+Tiered Storage work continues and unlocks infinite scaling and faster
+rebalance times via KIP-405. The KIP proposal has been accepted and the
+implementation is in progress.
+
+## Community
+Dev mailing list had a 18% decrease in traffic in the past quarter (2572
+emails compared to 3102).
+
+User mailing list had a 38% increase in traffic in the past quarter (510
+emails compared to 367).
+
+We added 3 new PMC members, Chia-Ping Tsai on Mar. 11, Bill Bejeck on Apr. 7,
+and Randall Hauch on Apr. 15, respectively.
+
+We added 2 new committers, Tom Bentley on Mar. 12, and Bruno Cadonna on Apr.
+12.
+
+Kafka Summit Europe 2021 is happening on May 11 and May 12, virtually.
+
+## Releases
+2.8.0 was released on Apr. 19, 2021.
+2.7.1 was released on May 10, 2021.
+2.6.2 was released on Apr. 21, 2021.
+
+## Issues:
+There are no issues requiring board attention.</pre>
+<h3 id="2021-02-17"><a href="2021/board_minutes_2021_02_17.html#attachment-AI">2021-02-17</a> &mdash; Jun Rao<a class="headerlink" href="#2021-02-17" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+Development
+===========
+We released the 2.7.0, which includes the following key features.
+- Configurable TCP connection timeout and improve the initial metadata fetch
+- Enforce broker-wide and per-listener connection creation rate
+- Throttle Create Topic, Create Partition and Delete Topic Operations
+- Add TRACE-level end-to-end latency metrics to Streams
+- Add Broker-side SCRAM Config API
+- Support PEM format for SSL certificates and private key
+- Add RocksDB Memory Consumption to RocksDB Metrics
+- Add Sliding-Window support for Aggregations
+
+We&rsquo;ve continued steady progress toward the task of replacing ZooKeeper in Kafka.
+We expect to have some limited functionalities in the upcoming 2.8.0 release
+that demonstrate much higher scalability for the metadata.
+
+Tiered Storage work continues and unlocks infinite scaling and faster rebalance
+times via KIP-405. The KIP proposal is getting closer for voting.
+
+Community
+===========
+Dev mailing list had a 39% increase in traffic in the past quarter (3246 emails
+compared to 2333).
+
+User mailing list had a 33% decrease in traffic in the past quarter (378 emails
+compared to 562).
+
+We didn't add any new committer or PMC member in the last quarter.
+
+We last added 3 new committers
+Chia-Ping Tsai and David Jacot on Oct. 15, 2020, and
+Sophie Blee-Goldman on Oct. 19, 2020.
+
+We last added a new PMC member John Roesler on Aug. 9, 2020.
+
+With the help from ASF branding committee, Kafka PMC passed a relaxed naming
+policy for non-java clients and connectors. Quite a few non-java clients and
+connectors have been using Kafka in its name. Those products form a critical
+eco-system for Apache Kafka since Apache Kafka doesn't provide them directly.
+We feel that requiring all of them to change their product name is
+detrimental to the Kafka community. The relaxed policy can be found at
+https://kafka.apache.org/trademark
+
+Releases
+===========
+2.7.0 was released on Dec. 21, 2020.
+2.6.1 was released on Jan. 7, 2021.</pre>
+<h3 id="2020-11-18"><a href="2020/board_minutes_2020_11_18.html#attachment-AE">2020-11-18</a> &mdash; Jun Rao<a class="headerlink" href="#2020-11-18" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+Development
+===========
+We are voting the 2.7.0 release, which includes the following key features.
+- connection rate limit
+- partition mutation quota
+- sliding window aggregation in KStreams
+- feature versioning support
+- Support PEM format for SSL certificates and private key
+
+We&rsquo;ve continued steady progress toward the task of replacing ZooKeeper in
+Kafka. Now there is a separate "raft" module containing the core consensus
+protocol. Seven other KIPs are in active development to provide support for
+more partitions per cluster, simpler operation, and tighter security.
+
+Tiered Storage work continues and unlocks infinite scaling and faster
+rebalance times via KIP-405.
+
+Community
+===========
+Dev mailing list had a 22% decrease in traffic in the past quarter (2448 emails
+compared to 3124).
+
+User mailing list had a 23% decrease in traffic in the past quarter (572 emails
+compared to 741).
+
+We added 3 new committers, Chia-Ping Tsai and David Jacot on Oct. 15, 2020, and
+Sophie Blee-Goldman on Oct. 19, 2020.
+
+We last added a new PMC member John Roesler on Aug. 9, 2020.
+
+The virtual Kafka Summit Austin (August 24-25, 2020) had more than 35,000 people
+registered and 19,000 people attended.
+
+Releases
+===========
+2.6.0 was released on Aug. 3, 2020.
+2.5.1 was released on Agu. 8, 2020.</pre>
+<h3 id="2020-08-19"><a href="2020/board_minutes_2020_08_19.html#attachment-AI">2020-08-19</a> &mdash; Jun Rao<a class="headerlink" href="#2020-08-19" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+Development
+===========
+We released 2.6.0, which includes the following new features:
+- TLSv1.3 has been enabled by default for Java 11 or newer.
+- Significant performance improvements, especially when the broker has
+large numbers of partitions
+- Smooth scaling out of Kafka Streams applications
+- Kafka Streams support for emit on change
+- New metrics for better operational insight
+- Kafka Connect can automatically create topics for source connectors
+- Improved error reporting options for sink connectors in Kafka Connect
+- New Filter and conditional SMTs in Kafka Connect
+- The default value for the `client.dns.lookup` configuration is
+now `use_all_dns_ips`
+- Upgrade Zookeeper to 3.5.8
+
+This release also includes other features, 74 improvements, 175 bug fixes,
+plus other changes.
+
+We are also in the process of releasing 2.5.1, which fixes 72 issues since
+the 2.5.0 release.
+
+We are actively working on replacing Zookeeper with an internal Raft based
+consensus service. This will simplify the operation of Kafka and allow
+Kafka to handle many more partitions.
+
+We are also actively working on tiered storage support which decouples the
+storage from the compute in Kafka.
+
+Community
+===========
+Dev mailing list had a 20% increase in traffic in the past quarter (3248 emails
+compared to 2685).
+
+We added 2 new PMC members, Mickael Maison on Jul. 30, 2020 and John Roesler
+Aug. 9, 2020. We added 2 new committers, Boyang Chen on Jun. 22, 2020 and
+Xi Hu on Jun. 23, 2020.
+
+The now virtual Kafka Summit Austin (August 24-25, 2020) has more than 20,000
+registrations so far.
+
+We also have a new layout for the Apache Kafka website.
+
+Releases
+===========
+2.6.0 was released on Aug. 3, 2020.</pre>
+<h3 id="2020-05-20"><a href="2020/board_minutes_2020_05_20.html#attachment-AG">2020-05-20</a> &mdash; Jun Rao<a class="headerlink" href="#2020-05-20" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+Development
+===========
+
+We released 2.5.0, which includes the following new features:
+- TLS 1.3 support (1.2 is now the default)
+- Co-groups for Kafka Streams
+- Incremental rebalance for Kafka Consumer
+- New metrics for better operational insight
+- Upgrade Zookeeper to 3.5.7
+- Deprecate support for Scala 2.11
+
+We also released 2.4.1, which fixes more than 39 issues.
+
+We are actively working on replacing Zookeeper with an internal Raft based
+consensus service. This will simplify the operation of Kafka and allow
+Kafka to handle many more partitions.
+
+Community
+===========
+
+Lots of activities in the mailing list. We had 2,855 emails in the dev
+mailing list, 34% more than the last 3 months. We had 8962 emails in the
+in the user mailing list, 21% more than the last 3 months. We had 5.358
+JIRA activities, 92% more than the last 3 months.
+
+We didn't add any new PMC member. We last added 3 new PMC members, Colin
+McCabe, Manikumar Reddy and Vahid Hashemian on Jan 13, 2020. We added one
+new committer Konstantine Karantasis on Feb. 26, 2020.
+
+Due to COVID-19, Kafka Summit London (Apr 27-28, 2020) was cancelled and Kafka
+Summit Austin (August 24-25, 2020) has been changed to a virtual one.
+
+Releases
+===========
+2.5.0 was released on Apr. 15, 2020.
+2.4.1 was released on Mar. 12, 2020.</pre>
+<h3 id="2020-02-19"><a href="2020/board_minutes_2020_02_19.html#attachment-AH">2020-02-19</a> &mdash; Jun Rao<a class="headerlink" href="#2020-02-19" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+Development
+===========
+
+We released 2.4.0, which includes the following new features:
+- Allow consumers to fetch from closest replica
+- Support for incremental cooperative rebalancing to the consumer rebalance
+  protocol
+- MirrorMaker 2.0 (MM2), a new multi-cluster, cross-datacenter replication
+  engine
+- New Java authorizer Interface
+- Support for non-key joining in KTable
+- Administrative API for replica reassignment
+- Securing Internal connect REST endpoints
+- API to delete consumer offsets and expose it via the AdminClient.
+
+We also released 2.2.2, which fixes more than 30 issues.
+
+
+Community
+===========
+
+Lots of activities in the mailing list. We had 2,203 emails in the dev
+mailing list, 15%  less than the last 3 months, likely due to the holiday
+season. We had 814 emails in the in the user mailing list, 18% more than
+the last 3 months. We had 2,963 JIRA activities, 7% less than the last
+3 months.
+
+We added 3 new PMC members, Colin McCabe, Manikumar Reddy and Vahid Hashemian
+in January, 2020. We didn't add any new committers in the last 3 months. We
+last added a new committer on Nov. 11, 2019.
+
+We plan to have 2 Kafka Summits in 2020, London on Apr. 27/28 and Austin
+on Aug. 24/25.
+
+Releases
+===========
+2.4.0 was released on Dec. 16, 2019.
+2.2.2 was released on Dec. 1, 2019.</pre>
+<h3 id="2019-11-20"><a href="2019/board_minutes_2019_11_20.html#attachment-AF">2019-11-20</a> &mdash; Jun Rao<a class="headerlink" href="#2019-11-20" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+Development
+===========
+
+We are in the process of preparing 2.4.0 release which includes new features
+such as allowing consumers to fetch from closest replica, incremental consumer
+rebalance, sticky partitioner for better producer throughput, administrative API
+for replica assignment, and MirrorMaker 2.
+
+We released 2.3.1, which fixes more than 40 critical issues.
+
+We accepted KIP-500, a significant effort to remove ZooKeeper dependency in
+Kafka for simplified deployment and more scalability.
+
+Community
+===========
+
+Lots of activities in the mailing list. We had 2,758 emails in the dev
+mailing list, 13%  more than the last 3 months. We had 771 emails in the
+in the user mailing list, 15% more than the last 3 months. We had 3,350
+JIRA activity, 7% more than the last 3 months.
+
+We added two new committers Mickael Maison and John Roesler in November.
+We didn't add any new PMC member in the last 3 months. We last added
+a new PMC member on Apr. 18, 2019.
+
+Kafka Summit San Francisco occurred on Sep. 30 and Oct. 1, 2019, with more
+than 2,100 participants.
+
+Releases
+===========
+2.3.1 was released on Oct. 24, 2019.</pre>
+<h3 id="2019-08-21"><a href="2019/board_minutes_2019_08_21.html#attachment-AI">2019-08-21</a> &mdash; Jun Rao<a class="headerlink" href="#2019-08-21" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed event streaming platform for efficiently storing
+and processing a large number of records in real time.
+
+Development
+===========
+
+We released 2.3.0 which includes new features such as incremental cooperative
+rebalancing in Connect, external configuration stores, in-memory session store
+and window store in KStreams, improved metrics and AdminClient.
+
+We also released 2.2.1 which fixes more than 40 critical issues.
+
+We are working on some of the new Kafka Improvement Proposals (KIP). In
+particular, KIP-500 proposes to remove the dependency on Zookeeper to improve
+the scalability and the dependency in Kafka.
+
+Community
+===========
+
+Lots of activities in the mailing list. We have 2824 subscribers in the user
+mailing list, slightly more than the last 3 months. We have 1341 subscribers
+in the dev mailing list, slightly more than the last 3 months. We have 432
+JIRA tickets created and 220 JIRA tickets closed in the last 3 months.
+
+We didn't add any new committer/PMC member in the last 3 months. We last added
+a new committer on Feb. 14, 2019 and we last added a new PMC member on Apr.
+18, 2019.
+
+Kafka Summit London completed on May 14, 2019, with more than 1000
+participants.
+
+Releases
+===========
+
+2.3.0 was released on Jun. 24, 2019.
+2.2.1 was released on Jun. 2, 2019.</pre>
+<h3 id="2019-05-15"><a href="2019/board_minutes_2019_05_15.html#attachment-AG">2019-05-15</a> &mdash; Jun Rao<a class="headerlink" href="#2019-05-15" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+
+We released 2.2.0 which includes new features such as separate control and
+data planes, re-authentication in SASL, better fencing with broker epoch, more
+functionalities in KStreams, etc.
+
+We also released 2.1.1, which fixes more than 30 issues.
+
+We are actively working on new features such as incremental client
+rebalancing, MirrorMaker 2.0, improvements in KStreams and AdminClient, etc.
+
+Community
+
+Lots of activities in the mailing list. We have 2806 subscribers in the user
+mailing list, about the same as in the last 3 months. We have 624 emails in
+the user mailing list in the last 3 months, about the same as in the previous
+cycle. We have 1305 subscribers in the dev mailing list, about the same as in
+the last 3 months. We have 2152 emails in the dev mailing list in the last 3
+months, more than the 1947 in the previous cycle.
+
+We added one new committer Randall Hauch on Feb. 14, 2019. We added two new
+PMC members Sriharsh Chintalapan and Matthias J. Sax on Apr. 18, 2019. We also
+elected a third new PMC member. Unfortunately, that person declined the
+invitation due to shifted focus.
+
+Kafka Summit New York completed on Apr. 2, 2019, with more than 700
+participants.
+
+Confluent published two public guidelines on respecting ASF policies.
+https://www.confluent.io/apache-guidelines
+https://www.confluent.io/apache-engineering-guidelines
+
+Releases
+===========
+2.2.0 was released on Mar. 26, 2019.
+2.1.1 was released on Feb. 19, 2019.</pre>
+<h3 id="2019-02-20"><a href="2019/board_minutes_2019_02_20.html#attachment-AL">2019-02-20</a> &mdash; Jun Rao<a class="headerlink" href="#2019-02-20" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+
+We are preparing the next major release 2.2.0, which plans to include new
+features such as separate control and data planes, re-authentication in SASL,
+better fencing with broker epoch, reducing consumer group rebalance, more
+functionalities in KStreams, etc.
+
+We are also preparing a bug fix release 2.1.1, which fixes more than 30
+issues.
+
+Community
+===========
+
+Lots of activities in the mailing list. We have 2809 subscribers in the user
+mailing list, up 37 in the last 3 months. We have 657 emails in the user
+mailing list in the last 3 months, a bit less than the 811 in the previous
+cycle (likely due to year end holidays). We have 1310 subscribers in the dev
+mailing list, up 38 in the last 3 months. We have 2056 emails in the dev
+mailing list in the last 3 months, a bit less than the 2689 in the previous
+cycle.
+
+We elected two new committers, Vahid Hashemian on Jan 15, 2019 and Bill Bejeck
+on Feb. 8, 2019. We didn't add any new PMC members. We last elected one new
+PMC member Dong Lin on Aug. 4, 2018.
+
+An EU sponsored Bug Bounty program for Apache Kafka with a focus on security
+is in progress.
+
+Releases
+===========
+
+2.1.0 was released on Nov. 21, 2018.
+2.0.1 was released on Nov. 9, 2018.</pre>
+<h3 id="2018-11-21"><a href="2018/board_minutes_2018_11_21.html#attachment-AH">2018-11-21</a> &mdash; Jun Rao<a class="headerlink" href="#2018-11-21" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+We are voting on the next major release 2.1.0.  This release includes 28 new KIPs
+and features such as Java 11 support, Zstandard support, more intuitive user
+timeouts in the producer, better fencing for replication, various Streams API
+improvements and the admin client improvements.
+
+We released 2.0.1, which fixes 49 issues.
+
+Community
+===========
+Lots of activities in the mailing list. We have 2767 subscribers in the user
+mailing list, up 28 in the last 3 months. We have 864 emails in the user
+mailing list in the last 3 months, a bit less than the 953 in the previous
+cycle. We have 1259 subscribers in the dev mailing list, up 45 in the last 3
+months. We have 2972 emails in the dev mailing list in the last 3 months, a bit
+more than the 2878 in the previous cycle.
+
+We elected two new committers, Colin McCabe on Sep 29, 2018 and Manikumar Reddy
+on Oct 11, 2018. We elected one new PMC member Dong Lin on Aug. 4, 2018.
+
+Kafka Summit in San Francisco completed with more than 1200 attendees.
+
+We published the very first Kafka blog in Apache
+(https://blogs.apache.org/kafka/entry/apache-kafka-supports-more-partitions).
+
+Releases
+===========
+2.0.1 was released on Nov. 9, 2018.
+1.1.1 was released on Jul. 20, 2018.</pre>
+<h3 id="2018-08-15"><a href="2018/board_minutes_2018_08_15.html#attachment-AF">2018-08-15</a> &mdash; Jun Rao<a class="headerlink" href="#2018-08-15" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+
+We shipped 4 releases this quarter. The major release was 2.0.0, which
+includes 40 KIPs and more than 240 fixes. This release includes major features
+such as prefixed ACL, OAuth authentication, improved replication protocol to
+avoid log divergence, better error control in Connect, better secret
+configuration in Connect, and header support in Streams. This is also the
+release where we dropped Java 7 support.
+
+We are working on new features such as improving the consumer offset
+semantics, making the log cleaner more robust, allowing the broker to
+prioritize controller requests, etc.
+
+Community
+===========
+
+Lots of activities in the mailing list. We have 2735 subscribers in the user
+mailing list, up 69 in the last 3 months. We have 990 emails in the user
+mailing list in the last 3 months, a bit less than the 1027 in the previous
+cycle. We have 1212 subscribers in the dev mailing list, up 68 in the last 3
+months. We have 3074 emails in the dev mailing list in the last 3 months, much
+higher than the 2367 in the previous cycle (likely due the releases).
+
+The vote for a new PMC member Dong Lin pased on Aug. 4, 2018. We are waiting
+for the board notice peroid before sending an invitation. We didn't elect any
+new committer this cycle. Some concern on committer diversity have been raised
+in the private mailing list. We are reviewing our committer guidelines now and
+will resume the committer nomination soon. We last elected a new committer on
+Mar. 28, 2018.
+
+Releases
+===========
+2.0.0 was released on Jul. 30, 2018.
+1.1.1 was released on Jul. 20, 2018.
+0.11.0.3 was released on Jul. 4, 2018.
+0.10.2.2 was released on Jul. 4, 2018.</pre>
+<h3 id="2018-05-16"><a href="2018/board_minutes_2018_05_16.html#attachment-AH">2018-05-16</a> &mdash; Jun Rao<a class="headerlink" href="#2018-05-16" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+We released 1.0.1, which fixes 49 critical issues. We also released 1.1.0, which
+includes major features such as JBOD, delegation tokens, controller improvements,
+dynamic broker configs, improved consumption performance with a large number of
+partitions, and Kafka Streams API improvements. We are actively fixing critical
+issues that have been reported since the release.
+
+Community
+===========
+Lots of activities in the mailing list. We have 2665 subscribers in the user
+mailing list, up 36 in the last 3 months. We have 1044 emails in the user
+mailing list in the last 3 months, a bit less than the 1152 in the previous
+cycle. We have 1143 subscribers in the dev mailing list, up 39 in the last 3
+months. We have 2521 emails in the dev mailing list in the last 3 months, a bit
+less than the 2869 in the previous cycle.
+
+We elected one new committer, Dong Lin on Mar. 28, 2018. We didn't elect any new
+PMC member in this cycle. We last elected a new PMC member on Jan. 17, 2018.
+
+Kafka Summit in London completed with more than 500 attendees.
+
+Releases
+===========
+1.0.1 was released on Mar. 6, 2018.
+1.1.0 was released on Mar. 29, 2018.</pre>
+<h3 id="2018-02-21"><a href="2018/board_minutes_2018_02_21.html#attachment-AG">2018-02-21</a> &mdash; Jun Rao<a class="headerlink" href="#2018-02-21" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+We are voting the second RC of release 1.0.1, which fixes 49 critical issues.
+We will also be releasing 1.1.0 in Feb, which includes major features such as
+JBOD, delegation tokens, controller improvements, dynamic broker configs,
+improved consumption performance with a large number of partitions, and Kafka
+Streams API improvements.
+
+Community
+===========
+Lots of activities in the mailing list. We have 2625 subscribers in the user
+mailing list, up 64 in the last 3 months. We have 1180 emails in the user
+mailing list in the last 3 months, a bit less than the 1185 in the previous
+cycle. We have 1100 subscribers in the dev mailing list, up 43 in the last 3
+months. We have 2819 emails in the dev mailing list in the last 3 months, down
+from the 4172 in the previous cycle, likely due to holidays.
+
+We elected one new committer, Matthias Sax on Jan. 12, 2018. We elected one
+new PMC member, Rajini Sivaramon on Jan. 17, 2018.
+
+The agenda for the next Kafka Summit in London in Apr. 2018 has been
+published.
+
+Releases
+===========
+0.11.0.1 was released on Sep. 13, 2017.
+1.0.0 was released on Nov. 1, 2017.</pre>
+<h3 id="2017-11-15"><a href="2017/board_minutes_2017_11_15.html#attachment-AH">2017-11-15</a> &mdash; Jun Rao<a class="headerlink" href="#2017-11-15" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+We released 1.0.0! This is a big milestone of Apache Kafka after
+7+ years of active development, which has accumulated key features such as
+intra cluster replication,
+compacted topics, security, connect, kstream, exactly-once semantics, among
+others. 108 people contributed to the 1.0.0 release. More than 340 people have
+contributed to Apache Kafka over time.
+
+We are actively working on new features such as JBOD, delegation tokens,
+additional
+improvements of the controller, various improvements in kstream and connect,
+etc.
+
+Community
+===========
+Lots of activities in the mailing list. We have 2551 subscribers
+in the user mailing list, up 78 in the last 3 months. We have 1268 emails in
+the user mailing list in the last 3 months, a bit less than the 1631 in the
+previous cycle. We have 1059 subscribers in the dev mailing list, up 55 in the
+last 3 months. We have 4409 emails in the dev mailing list in the last 3
+months, a bit less from the 6349 in the previous cycle.
+
+We elected one new committer, Onur Karaman on Oct. 31, 2017. We elected one
+new PMC member, Becket Qin on Aug. 23, 2017.
+
+The next Kafka Summit in London in Apr. 2018 is now open for submission.
+
+Releases
+===========
+0.11.0.1 was released on Sep. 13, 2017.
+1.0.0 was released on Nov. 1, 2017.</pre>
+<h3 id="2017-08-16"><a href="2017/board_minutes_2017_08_16.html#attachment-AK">2017-08-16</a> &mdash; Jun Rao<a class="headerlink" href="#2017-08-16" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+We released 0.11.0.0 on Jun. 28, 2017, which includes 32 KIPs, over 400 bug fixes and improvements,
+and more than 700 pull requests. The main features in this release include exactly-once semantic,
+new admin apis, request quotas, etc.
+
+We are actively working on new features such as JBOD, delegation tokens and improvements of
+the controller. The next release will be 1.0.0, a big milestone in Kafka.
+
+Community
+===========
+Lots of activities in the mailing list. We have 2474 subscribers in the user mailing
+list, up 44 in the last 3 months. We have 1705 emails in the user mailing list in
+the last 3 months, about the same as 1736 in the previous cycle. We have 1003 subscribers
+in the dev mailing list, up 24 in the last 3 months. We have 6526 emails in the dev mailing
+list in the last 3 months, up from 6248 in the previous cycle.
+
+We elected one new committer, Damian Guy on Jun. 9, 2017. We elected two new PMC members, Ismael Juma
+on Jul. 5, 2017 and Jason Gustafson on Jul. 11, 2017.
+
+We plan to have a 1-day Kafka Summit in SF on Aug 28.
+
+Releases
+===========
+0.11.0.0 was released on Jun. 28, 2017.</pre>
+<h3 id="2017-05-17"><a href="2017/board_minutes_2017_05_17.html#attachment-AF">2017-05-17</a> &mdash; Jun Rao<a class="headerlink" href="#2017-05-17" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+
+We released 0.10.2.0 on Feb. 21, 2017, which includes new features such as
+session window and global table in streams, client compatibilty, multiple
+listeners in the same security protocol and SASL/SCRAM. We released 0.10.2.1 on
+Apr. 26, 2017, which includes 29 critical bug fixes.
+
+We are actively working on new features such as exactly-once semantic, admin
+apis, request quotas, and controller improvement for the next release.
+
+Community
+===========
+
+Lots of activities in the mailing list. We have 2427 subscribers in the user
+mailing list, up 89 in the last 3 months. We have 1824 emails in the user
+mailing list in the last 3 months, about the same as 1833 in the previous cycle.
+We have 977 subscribers in the dev mailing list, up 54 in the last 3 months. We
+have 6779 emails in the dev mailing list in the last 3 months, up from 6066 in
+the previous cycle.
+
+We elected one new committer, Rajini Sivaram on Apr. 22, 2017. We last elected a
+new PMC member Gwen Shapira on Aug. 17, 2016.
+
+We held a 1-day Kafka Summit in NY on May 8. It's a success with 24 technical
+sessions and more than 500 attendees.
+
+Releases
+===========
+0.10.2.1 was released on Apr. 26, 2017.</pre>
+<h3 id="2017-02-27"><a href="2017/board_minutes_2017_02_27.html#attachment-AH">2017-02-27</a> &mdash; Jun Rao<a class="headerlink" href="#2017-02-27" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+
+We released 0.10.1.1, which fixes 30 critical issues. We are in the process of
+releasing 0.10.2.0, which includes new features such as session window and
+global table in streams, client compatibilty, multiple listeners in the same
+security protocol and SASL/SCRAM.  This is our second time-based release and
+we expect it to be released on time as well.
+
+We are actively working on new features such as exactly-once semantic, admin
+apis, and better JBOD support.
+
+Community
+===========
+
+Lots of activities in the mailing list. We have 2324 subscribers in the user
+mailing list, up 79 in the last 3 months. We have 1954 emails in the user
+mailing list in the last 3 months, up from 1630 in the previous cycle. We have
+912 subscribers in the dev mailing list, up 44 in the last 3 months. We have
+6537 emails in the dev mailing list in the last 3 months, up from 5156 in the
+previous cycle.
+
+We elected one new committer, Grant Henke on Jan. 10, 2017. We last elected a
+new PMC member Gwen Shapira on Aug. 17, 2016.
+
+We had several Kafka meetups in various cities in this quarter.
+
+One feedback from the community is that it's a bit hard to find an answer by
+searching the Apache mailing list. We are wondering if Apache has considered
+some sort of integration with things like Stack Overflow that does a better
+job at Q/A.
+
+Releases
+===========
+0.10.1.1 was released on Dec. 19, 2016.</pre>
+<h3 id="2016-11-16"><a href="2016/board_minutes_2016_11_16.html#attachment-AC">2016-11-16</a> &mdash; Jun Rao<a class="headerlink" href="#2016-11-16" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed streaming platform for efficiently storing and
+processing a large number of records in real time.
+
+Development
+===========
+
+We switched to a time-based release model and plan to do a release
+every 4 months. We released 0.10.1.0 which includes new features such as
+interactive queries, time-based seek, replication quotas, and quota by user.
+
+We plan to do the next release in Feb, 2017.
+
+Community
+===========
+
+Lots of activities in the mailing list. We have 2243 subscribers
+in the user mailing list, up 48 in the last 3 months. We have 1718 emails in
+the user mailing list in the last 3 months, slightly down from 1912 in the
+previous cycle.
+
+We have 871 subscribers in the dev mailing list, up 18 in the last 3 months.
+We have 5355 emails in the dev mailing list in the last 3 months, up from
+5318 in the previous cycle.
+
+We elected two new committers, Jason Gustafson and Jiangjie Qin, on Sep. 6 and
+Oct, 31, 2016, respectively.
+
+We elected a new PMC member Gwen Shapira on Aug.17, 2016.
+
+We had several Kafka meetups in various cities in this quarter.
+
+Releases
+===========
+
+0.10.1.0 was released on Oct. 20, 2016.</pre>
+<h3 id="2016-08-17"><a href="2016/board_minutes_2016_08_17.html#attachment-AI">2016-08-17</a> &mdash; Jun Rao<a class="headerlink" href="#2016-08-17" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released 0.10.0.0 which includes new features such as Kafka stream, rack-awareness
+support, and native support of timestamp in the message. We also did a bug fix
+release 0.10.0.1 which fixed 53 issues in 0.10.0.0. We are actively working on new
+features such as admin apis, queryable state in Kafka stream, replication throttling, etc.
+
+Community
+===========
+Lots of activities in the mailing list. We have 2187 subscribers in the user mailing
+list, up 129 in the last 3 months. We have 2043 emails in the user mailing list in
+the last 3 months, up from 1839 in the previous cycle. We have 852 subscribers in the
+dev mailing list, up 72 in the last 3 months. We have 5631 emails in the dev mailing
+list in the last 3 months, down from 6291 in the previous cycle, mostly because 0.10.0.0
+has been released. We last elected a new committer Ismael Juma on Apr. 26, 2016. We are
+voting on a new PMC member right now.
+
+We had several Kafka meetups in various cities in this quarter.
+
+Releases
+===========
+0.10.0.0 and 0.10.0.1 were released on May. 24 and Aug. 10, 2016, respectively.</pre>
+<h3 id="2016-05-18"><a href="2016/board_minutes_2016_05_18.html#attachment-AK">2016-05-18</a> &mdash; Jun Rao<a class="headerlink" href="#2016-05-18" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released 0.9.0.1 that fixes more than 70 critical issues in 0.9.0.0. We
+are actively working on the 0.10.0.0 release which includes new features such
+as Kafka stream, rack-awareness support, and native support of timestamp in
+the message.  A release candidate of 0.10.0.0 is being voted on.
+
+Community
+===========
+Lots of activities in the mailing list. We have 2050 subscribers in the user
+mailing list, up 192 in the last 3 months. We have 1952 emails in the user
+mailing list in the last 3 months, up from 1377 in the previous cycle. We
+have 777 subscribers in the dev mailing list, up 80 in the last 3 months. We
+have 6845 emails in the dev mailing list in the last 3 months, up from 5378
+in the previous cycle. We last elected a new committer Ismael Juma on Apr.
+26, 2016.
+
+We had the very first Kafka Summit on Apr. 26, 2016. It'a one-day conference
+that attracted more than 500 people.
+
+Releases
+===========
+0.9.0.1 was released on Feb. 19, 2016.</pre>
+<h3 id="2016-02-17"><a href="2016/board_minutes_2016_02_17.html#attachment-AG">2016-02-17</a> &mdash; Jun Rao<a class="headerlink" href="#2016-02-17" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released 0.9.0.0, which include the following major features: (1) a new
+java-based consumer; (2) authorization (through ssl and sasl) and
+authentication; (3) quotas; (4) Kafka connect: a framework for copying data
+into and out of Kafka.  We are actively working on critical bug fixes from
+0.9.0.0 and new features such as KStream.
+
+Community
+===========
+Lots of activities in the mailing list. We have 1828 subscribers in the user
+mailing list, up 148 in the last 3 months. We have 1513 emails in the user
+mailing list in the last 3 months, up from 1197 in the previous cycle. We have
+687 subscribers in the dev mailing list, up 51 in the last 3 months. We have
+5779 emails in the dev mailing list in the last 3 months, up from 5344 in the
+previous cycle. We last elected a new committer Ewen Cheslack-Postava on Dec.
+8, 2015.
+
+Releases
+===========
+0.9.0.0 was released on Nov. 24, 2015.</pre>
+<h3 id="2015-11-18"><a href="2015/board_minutes_2015_11_18.html#attachment-AF">2015-11-18</a> &mdash; Jun Rao<a class="headerlink" href="#2015-11-18" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We just rolled out RC 1 for the 0.9.0.0 release, which include the following
+major features: (1) a new java-based consumer; (2) authorization (through ssl
+and sasl) and authentication; (3) quotas; (4) Kafka connect: a framework for
+copying data into and out of Kafka.
+
+Community
+===========
+Lots of activities in the mailing list. We had several Kafka improvement
+proposals post the 0.9.0 release. We last elected a new committer Sriharsh
+Chintalapani on Sep. 21, 2015.  We had Kafka meetups in Austin, Los Angeles,
+and London this quarter.
+
+Releases
+===========
+0.8.2.2 was released on Sep. 13, 2015.</pre>
+<h3 id="2015-08-19"><a href="2015/board_minutes_2015_08_19.html#attachment-AE">2015-08-19</a> &mdash; Jun Rao<a class="headerlink" href="#2015-08-19" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We are actively developing multiple features in the next release. These include
+(1) a new java-based consumer; (2) security (authorization and authentication);
+(3) quotas; (4) a framework for copying data into and out of Kafka; (5) a stream
+processing api integrated with Kafka.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 435, 278, 86 emails in
+Feb, Mar and Apr, respectively (down from 453 in Apr). kafka-dev has 1532, 800,
+402 emails in May, Jun and Jul, respectively (down from 2001 in Apr). We last
+elected a new committer Gwen Shapira on Jul. 6, 2015. We also added Guozhang
+Wang to pmc on Jun. 10, 2015.  We had two Kafka meetups in the bay area on May
+19 and Jun. 16.
+
+Releases
+===========
+0.8.2.1 was released on Mar. 11, 2015.</pre>
+<h3 id="2015-05-20"><a href="2015/board_minutes_2015_05_20.html#attachment-AJ">2015-05-20</a> &mdash; Jun Rao<a class="headerlink" href="#2015-05-20" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released Kafka 0.8.2.1, which fixes 4 critical issues in 0.8.2.0. The
+highlights in the 0.8.2.x releases include (1) a java-based new producer,
+which provides better performance and a cleaner api; (2) a more scalable
+Kafka-based offset storage management; (3) automated leader balancing and
+controlled shutdown; (4) delete topic support; (5) more than 200 bug fixes and
+improvements. We are actively developing a new java-based consumer and the
+security support in trunk.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 768, 776, 453 emails in
+Feb, Mar and Apr, respectively (up from 665 in Jan). kafka-dev has 1742 1854,
+2001 emails in Feb, Mar and Apr, respectively (up from 1632 in Jan). We last
+elected a new committer Guozhang Wang on Nov. 19, 2014. We had two Kafka talks
+and a meetup in ApacheCon 2015.  We had a Kafka meetup in Mountain View,
+California on Mar. 24, 2015.
+
+Releases
+===========
+0.8.2.1 was released on Mar. 11, 2015.</pre>
+<h3 id="2015-02-18"><a href="2015/board_minutes_2015_02_18.html#attachment-AQ">2015-02-18</a> &mdash; Jun Rao<a class="headerlink" href="#2015-02-18" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released Kafka 0.8.2.0. The highlights in this release include (1) a
+java-based new producer, which provides better performance and a cleaner api;
+(2) a more scalable Kafka-based offset storage management; (3) automated
+leader balancing and controlled shutdown; (4) delete topic support; (5) more
+than 200 bug fixes and improvements.  We are actively developing a new
+java-based consumer and the security support in trunk.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 550, 464, 665 emails in
+Nov, Dec and Jan, respectively (up from 563 in Oct). kafka-dev has 1214, 881,
+1632 emails in Nov, Dec and Jan (about the same as 1633 in Jul). We last
+elected a new committer Guozhang Wang on Nov. 19, 2014. We had a Kafka meetup
+in Mountain View, California on Jan. 27, 2015.
+
+Releases
+===========
+0.8.2.0 was released on Feb. 3, 2015.</pre>
+<h3 id="2014-11-19"><a href="2014/board_minutes_2014_11_19.html#attachment-Y">2014-11-19</a> &mdash; Jun Rao<a class="headerlink" href="#2014-11-19" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released Kafka 0.8.2 beta. The highlights in this release include (1) a java-based
+new producer, which provides better performance and a cleaner api; (2) a more scalable
+Kafka-based offset storage management; (3) automated leader balancing and controlled
+shutdown; (4) delete topic support; (5) more than 100 bug fixes and improvements. We
+expect to release 0.8.2 final by end of Nov.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 431, 383, 563 emails in Aug,
+Sep and Oct, respectively (up from 429 in Jan). kafka-dev has 1129, 1257, 1633 emails
+in Aug, Sep and Oct (about the same as 1357 in Jul). A new committer is
+being voted now. The voting thread was started on Nov 11, 2014.
+
+Releases
+===========
+0.8.2 beta was released on Oct 27, 2014.</pre>
+<h3 id="2014-08-20"><a href="2014/board_minutes_2014_08_20.html#attachment-AA">2014-08-20</a> &mdash; Jun Rao<a class="headerlink" href="#2014-08-20" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We continue to stablize two main features for the 0.8.2 release. The first one
+is Kafka-based offset management, which allows consumer offsets to be stored
+in a more scalable way. The second one is the new producer, which provides
+better performance and a cleaner api. We expect to release 0.8.2 in a month or
+two. We also finalized the api and the design for the new consumer and started
+the development. This feature is intended for the 0.9.0 release.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 422, 560, 429 emails in
+May, June and July, respectively (up from 388 in Apr). kafka-dev has 789, 610,
+1357 emails in May, June and July (sligtly higher than 1272 in Apr). We had a
+Kafka meetup in June. We last elected two committers in Oct. 2013 and are
+actively grooming new potential committers.
+
+Releases
+===========
+0.8.1 was released on Mar 21, 2014 and 0.8.1.1 was released on Apr 29, 2014.</pre>
+<h3 id="2014-05-21"><a href="2014/board_minutes_2014_05_21.html#attachment-AD">2014-05-21</a> &mdash; Jun Rao<a class="headerlink" href="#2014-05-21" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released Kafka 0.8.1 and 0.8.1.1, which include a few improved admin tools
+and new features like log compaction. We are currently stablizing the new
+producer, which provides better performance and a cleaner api. We are
+finalizing the api and the design for the new consumer.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 480, 450, 388 emails in
+Feb, Mar and Apr, respectively (slightly less than 538 in Jan). kafka-dev has
+1120, 1047, 1272 emails in Feb, Mar and Apr (slightly less than 540 in Jan).
+There were three Kafka related talks in ApacheCon 2014. We last elected two
+committers in Oct. 2013.
+
+Releases
+===========
+0.8.1 was released on Mar 21, 2014 and 0.8.1.1 was released on Apr 29, 2014.
+
+Infra
+===========
+The recent Apache mail server issue impacted many projects. I am sure there
+will be some post-mortem on how to prevent this in the future. Could the
+post-mortem results be shared with all PMCs?</pre>
+<h3 id="2014-02-19"><a href="2014/board_minutes_2014_02_19.html#attachment-AB">2014-02-19</a> &mdash; Jun Rao<a class="headerlink" href="#2014-02-19" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released Kafka 0.8.0 and have since improved existing admin tools. An 0.8.1
+release branch has been created and we intend to release 0.8.1 in a few weeks.
+We are actively working on a new version of the producer client, which
+provides better performance and a cleaner api. After that, we expect to
+rewrite the consumer client for the same reasons.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 538, 461, 436 emails in
+Jan, Dec and Nov, respectively (slightly less than 582 in Oct). kafka-dev has
+540, 509, 540 emails in Jan, Dec and Nov (slightly less than 581 in Oct). At
+least one Kafka talk is submitted to ApacheCon 2014. We last elected two
+committers in Oct. 2013.
+
+Releases
+===========
+0.8.0 was released on Dec 3, 2013.</pre>
+<h3 id="2013-11-20"><a href="2013/board_minutes_2013_11_20.html#attachment-AF">2013-11-20</a> &mdash; Jun Rao<a class="headerlink" href="#2013-11-20" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We have fixed critical bugs and improved the tools since the Kafka 0.8 beta1 (supports
+intra-cluster replication). We are in the process of releasing 0.8.0 final.
+Next, we will be focusing on stablizing trunk and releasing 0.8.1 (including
+various server side performance improvements). After that, we will start improving
+the client library. An initial design is in the wiki.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 665, 278, 582 emails in Jul,
+Jun and May, respectively (up from 425 in Jul). kafka-dev has 581, 509, 595 emails
+in Oct, Sep and Aug (up from 290 in Apr). Two new Kafka committers were elected:
+David Arthur and Sriram Subramanian.
+
+Releases
+===========
+0.8.0 final release candidate 3 is being voted now.</pre>
+<h3 id="2013-08-21"><a href="2013/board_minutes_2013_08_21.html#attachment-Z">2013-08-21</a> &mdash; Jun Rao<a class="headerlink" href="#2013-08-21" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We released Kafka 0.8 beta1 (supports intra-cluster replication). We have
+updated the website with documentation and our new logo. We are fixing
+critical bugs in the 0.8 branch and expect to release the 0.8 final version
+soon.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 425, 442, 421 emails in
+Jul, Jun and May, respectively (up from 390 in Apr). kafka-dev has 290, 290,
+562 emails in Jul, Jun and May (down from 567 in Apr since 0.8 dev is winding
+down). There are patches being contributed by non-committers.
+
+No committers added yet since graduation. Last committer was added in May, 2012.
+
+Releases
+===========
+0.8.0 beta1: released on Jun. 27, 2013
+0.8.0 final release is expected in three weeks</pre>
+<h3 id="2013-05-15"><a href="2013/board_minutes_2013_05_15.html#attachment-AD">2013-05-15</a> &mdash; Jun Rao<a class="headerlink" href="#2013-05-15" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We are in the final phase of testing Kafka 0.8 (supports intra-cluster replication).
+We have updated the related docs and expect to release 0.8 beta in a couple weeks.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 390, 357, 174 emails in Apr,
+Mar and Feb, respectively (up from 243 in Jan). kafka-dev has 567, 565, 457 emails
+ in Apr, Mar and Feb (down from 804 in Jan since 0.8 dev is winding down). There are
+patches being contributed by non-committers.
+
+Releases
+===========
+0.7.2: released Oct. 11, 2012
+0.8.0 beta: expected to release in two weeks</pre>
+<h3 id="2013-02-20"><a href="2013/board_minutes_2013_02_20.html#attachment-AA">2013-02-20</a> &mdash; Jun Rao<a class="headerlink" href="#2013-02-20" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We found a few more blocker issues while testing Kafka 0.8 (supports
+intra-cluster replication). The 0.8 release is likely delayed to Mar
+or Apr.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 243 emails in Jan.
+(up from 241 in Dec). kafka-dev has 804 emails in Dec (up from 498 in Dec).
+We accepted a few more patches from non-committers.
+
+There will be a Kafka presentation in ApachCon 2013 in Feb.
+
+Infrastructure
+===========
+This is the third month since Kafka became a top-level project. All infra
+work is now done.</pre>
+<h3 id="2013-01-16"><a href="2013/board_minutes_2013_01_16.html#attachment-X">2013-01-16</a> &mdash; Jun Rao<a class="headerlink" href="#2013-01-16" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+We are actively testing Kafka 0.8 (supports intra-cluster replication)
+and fixing blocking issues that show up. We expect to release 0.8
+towards the end of Jan.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 241 emails in
+Dec (down from 335 in Nov, mostly due to the holidays). kafka-dev has
+498 emails in Dec (up from 448 in Nov). More patches are being
+contributed by non-committers.
+
+Infrastructure
+===========
+This is the second month since Kafka became a top-level project. Apache
+infra has helped us migrate the website and move from svn to git.</pre>
+<h3 id="2012-12-19"><a href="2012/board_minutes_2012_12_19.html#attachment-T">2012-12-19</a> &mdash; Jun Rao<a class="headerlink" href="#2012-12-19" title="Permalink">&para;</a></h3>
+<pre>Apache Kafka is a distributed pub/sub system for efficiently collecting and
+delivering a large number of messages to both offline and online systems.
+
+Development
+===========
+Kafka 0.8 (supports intra-cluster replication) is in the final debugging
+stage. We gave out a trivial version on Nov 26. We expect to release 0.8 in
+Jan. 2013.
+
+Community
+===========
+Lots of activities in the mailing list. kafka-user has 335 emails in Nov
+(up from 236 in Oct). kafka-dev has 448 emails in Nov (down from 758 in
+Oct, mostly because of fewer active jiras).
+
+There will be a Kafka presentation (introducing 0.8 features) in ApacheCon
+in Feb., 2013.
+
+Infrastructure
+===========
+This is the first month since Kafka became a top-level project. Apache
+infra has helped us migrate the svn repository and the mailing list, and is
+in the process of migrating our website.</pre>
+<h3 id="2012-10-17"><a href="2012/board_minutes_2012_10_17.html#kafka">2012-10-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-10-17" title="Permalink">&para;</a></h3>
+<pre>(introduced to Apache incubator on Jul 4, 2011)
+
+Kafka provides an extremely high throughput distributed publish/subscribe
+messaging system. Additionally, it supports relatively long term persistence
+of messages to support a wide variety of consumers, partitioning of the
+message stream across servers and consumers, and functionality for loading
+data into Apache Hadoop for offline, batch processing.
+
+A list of the three most important issues to address in the move towards
+graduation:
+
+None. We started a graduation discussion on our mailing list. This was
+slightly delayed due to focus on the development of the intra-cluster
+replication feature.
+
+Any issues that the Incubator PMC or ASF Board might wish/need to be aware of:
+
+None.
+
+How has the community developed since the last report
+
+The mailing list continues been very active with bug reports, patch
+submissions, feature requests and use case discussions. [(Jul,Aug,Sep):
+kafka-users (155, 164, 126); kafka-dev (445, 532, 589)].
+
+Received and reviewed several major patches especially in the 0.8 branch.
+
+How has the project developed since the last report.
+
+Intra-cluster replication (KAFKA-50): Development has been very steady on
+this feature. (Hence the double volume of emails on kafka-dev since the
+last report.) We set up a development dashboard at
+https://cwiki.apache.org/confluence/display/KAFKA/Kafka+replication+development
+that gives an overview of the remaining work for that release.
+
+The vote for Kafka 0.7.2 is currently underway. This will be the third
+Kafka release after its introduction to Apache incubator.
+
+Signed-off-by: cdouglas, bmargulies</pre>
+<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#kafka">2012-07-25</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
+<pre>(introduced to Apache incubator on Jul 4, 2011)
+
+Kafka provides an extremely high throughput distributed publish/subscribe
+messaging system. Additionally, it supports relatively long term persistence
+of messages to support a wide variety of consumers, partitioning of the
+message stream across servers and consumers, and functionality for loading
+data into Apache Hadoop for offline, batch processing.
+
+Three most important issues to address in the move towards graduation:
+
+  None.
+
+  Previously, there was some concern about the diversity of the project
+  that we believe has been addressed:
+
+  - The project now has active committers from four companies
+  - and continues to receive patches from other contributors from various
+    institutions.
+
+  We are considering whether to pursue graduation immediately or focus
+  exclusively on the development of 0.8.
+
+Any issues that the Incubator PMC or ASF Board might wish/need to be aware of:
+
+  None.
+
+How has the community developed since the last report:
+
+  - The mailing list continues to be very active with bug reports, patch
+    submissions, feature requests and use cases.
+    [(Apr,May,Jun): kafka-users (151, 261, 251); kafka-dev (142, 195, 380)].
+
+  - Added two new committers.
+
+  - Conducted the first Kafka user group meeting with over 50 attendees
+    (archived video link available here: https://cwiki.apache.org/confluence/display/KAFKA/Kafka+papers+and+presentations).
+    This was a very successful event that gave users and contributors an
+    opportunity to meet and discuss Kafka usage at various companies, ongoing
+    development efforts, feature requests, etc.
+
+  - Received and reviewed several major patches (including contributions from
+    non-committers).
+
+How has the project developed since the last report:
+
+  - Intra-cluster replication (KAFKA-50)
+    - Considerable progress has been made on the design and implementation of
+      this much-anticipated feature.
+    - Regular status updates are being sent out on the kafka-dev mailing list.
+
+  - Another significant project that is under discussion and development is
+    the consumer redesign (KAFKA-364) and consumer coordinator implementation
+    (KAFKA-264).
+
+  - Released Kafka 0.7.1 in June. This is the second Kafka release since its
+    introduction to Apache incubator
+
+Signed off by mentor: Alan Cabrera
+Shepherd: Matt Franklin</pre>
+<h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#kafka">2012-04-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
+<pre>(introduced to Apache incubator on Jul 4, 2011)
+
+Kafka provides an extremely high throughput distributed publish/subscribe
+messaging system. Additionally, it supports relatively long term persistence
+of messages to support a wide variety of consumers, partitioning of the
+message stream across servers and consumers, and functionality for loading
+data into Apache Hadoop for offline, batch processing.
+
+A list of the most important issues to address in the move towards graduation
+
+  - Invite diverse new active committers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware of?
+
+  - None
+
+How has the community developed since the last report?
+
+  - Added a new committer.  Continued contribution to source code in fixes
+    and features and continued activity on the mailing lists.
+
+How has the project developed since the last report?
+
+  - Work was begun on 0.8 release which includes our replication feature and
+    also requires a breaking change for existing consumers/producer to the
+    wiring protocol.
+
+Signed off by mentor: cdouglas, adc</pre>
+<h3 id="2012-01-24"><a href="2012/board_minutes_2012_01_24.html#kafka">2012-01-24</a> &mdash; in the Incubator's report<a class="headerlink" href="#2012-01-24" title="Permalink">&para;</a></h3>
+<pre>(introduced to Apache incubator on Jul 4, 2011)
+
+Kafka provides an extremely high throughput distributed publish/subscribe
+messaging system. Additionally, it supports relatively long term persistence
+of messages to support a wide variety of consumers, partitioning of the
+message stream across servers and consumers, and functionality for loading
+data into Apache Hadoop for offline, batch processing.
+
+A list of the most important issues to address in the move towards
+graduation
+
+1. Invite diverse new active committers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+We incurred significant overhead during our first release; see
+http://apache.markmail.org/message/rsxjgrrufc6khlqy?q=list:org%2Eapache%2Eincubator%2Egeneral+from:%22junrao%22
+for reference. Firstly, there is no good example to follow for a new podling.
+Secondly, the licensing rules are complex and the documentation is not enough
+for a new podling to understand.  This gets more complicated since different
+IPMC members have different views and apply those rules slightly differently.
+This delays releases and causes overhead to the team. We hope that some of
+these things can be addressed to make the process easier to other projects.
+
+How has the community developed since the last report?
+
+Activities in the mailing list increased 4x since the last report. Several
+patches from non-committers have been submitted, reviewed and committed.
+
+How has the project developed since the last report?
+
+We have successfully completed the first release of Kafka after joining the
+incubator. This releases adds the end-to-end compression feature and
+mirroring support in Kafka. In addition to this, it also fixes more than 40
+issues.</pre>
+<h3 id="2011-10-26"><a href="2011/board_minutes_2011_10_26.html#kafka">2011-10-26</a> &mdash; in the Incubator's report<a class="headerlink" href="#2011-10-26" title="Permalink">&para;</a></h3>
+<pre>(introduced to Apache incubator on Jul 4, 2011)
+
+Kafka provides an extremely high throughput distributed publish/subscribe
+messaging system. Additionally, it supports relatively long term persistence
+of messages to support a wide variety of consumers, partitioning of the
+message stream across servers and consumers, and functionality for loading
+data into Apache Hadoop for offline, batch processing.
+
+A list of the most important issues to address in the move towards
+graduation
+
+1. Successful podling release.
+2. Invite diverse new active committers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+Not at this time.
+
+How has the community developed since the last report?
+
+We are getting very close to release the very first version of Kafka in
+Apache. A couple of RCs have been proposed and we are still fixing various
+license header issues reported by rat. The proposed RC fixed more than 40
+issues. The main feature added in the RC is end-to-end compression support.
+
+How has the project developed since the last report?
+
+Activities in the mailing list remain high. Several patches from
+non-committers have been submitted, reviewed and committed.</pre>
+<h3 id="2011-10-26-2"><a href="2011/board_minutes_2011_10_26.html#kafka">2011-10-26</a> &mdash; in the Incubator's report<a class="headerlink" href="#2011-10-26-2" title="Permalink">&para;</a></h3>
+<pre>Introduced to Apache incubator on Jul 4, 2011
+
+Kafka provides an extremely high throughput distributed publish/subscribe
+messaging system. Additionally, it supports relatively long term persistence
+of messages to support a wide variety of consumers, partitioning of the
+message stream across servers and consumers, and functionality for loading
+data into Apache Hadoop for offline, batch processing.
+
+A list of the most important issues to address in the move towards
+graduation
+
+1. Successful podling release.
+2. Invite diverse new active committers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+Not at this time.
+
+How has the community developed since the last report?
+
+Mailing list traffic for July-August-September[12th] (user: 40, 65, 19; dev:
+116, 371, 63) both show healthy growth trends.  Qualitatively the -dev
+discussion has trended away from topics like "how should we configure Jira?"
+to "What's the best way to deal with multiple language bindings?".  Several
+patches were submitted by first time contributors.
+
+How has the project developed since the last report?
+
+The general theme over the past month has been polish: fixing bugs, better
+unit tests, getting log levels right, build system cleanup etc.</pre>
+<h3 id="2011-09-21"><a href="2011/board_minutes_2011_09_21.html#kafka">2011-09-21</a> &mdash; in the Incubator's report<a class="headerlink" href="#2011-09-21" title="Permalink">&para;</a></h3>
+<pre>Introduced to Apache incubator on Jul 4, 2011
+
+Kafka provides an extremely high throughput distributed publish/subscribe
+messaging system. Additionally, it supports relatively long term persistence
+of messages to support a wide variety of consumers, partitioning of the
+message stream across servers and consumers, and functionality for loading
+data into Apache Hadoop for offline, batch processing.
+
+A list of the most important issues to address in the move towards
+graduation
+
+1. Successful podling release.
+2. Invite diverse new active committers
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+Not at this time.
+
+How has the community developed since the last report?
+
+Mailing list traffic for July-August-September[12th] (user: 40, 65, 19; dev:
+116, 371, 63) both show healthy growth trends.  Qualitatively the -dev
+discussion has trended away from topics like "how should we configure Jira?"
+to "What's the best way to deal with multiple language bindings?".  Several
+patches were submitted by first time contributors.
+
+How has the project developed since the last report?
+
+The general theme over the past month has been polish: fixing bugs, better
+unit tests, getting log levels right, build system cleanup etc.</pre>
+<h3 id="2011-08-17"><a href="2011/board_minutes_2011_08_17.html#kafka">2011-08-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2011-08-17" title="Permalink">&para;</a></h3>
+<pre>(introduced to Apache incubator on Jul 4, 2011)
+
+Kafka provides an extremely high throughput distributed publish/subscribe
+messaging system. Additionally, it supports relatively long term persistence
+of messages to support a wide variety of consumers, partitioning of the
+message stream across servers and consumers, and functionality for loading
+data into Apache Hadoop for offline, batch processing.
+
+A list of the three most important issues to address in the move towards
+graduation
+
+1. Package, document and release at least one Apache Incubator release.
+2. Develop a strong community with organizational diversity.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware
+of?
+
+No, not at this time.
+
+How has the community developed since the last report?
+
+Just get started. The mailing list is pretty active, including people other
+than the initial committers.
+
+How has the project developed since the last report?
+
+* Moved everything (svn, website, mailing list, jira, wiki) in Kafka to
+Apache. CCLA from LinkedIn filed with Apache.
+* The end-to-end compression feature is almost complete.
+* Received various patches from 3 different companies, including dynamic
+topic discovering for cross-cluster mirroing, mx4j support, .net client,
+etc.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

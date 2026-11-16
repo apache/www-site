@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board history: C++ Standard Library | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board history: C++ Standard Library';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board history: C++ Standard Library';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board history: C++ Standard Library</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <h1 id="c-standard-library">C++ Standard Library<a class="headerlink" href="#c-standard-library" title="Permalink">&para;</a></h1>
+<p>What the board has decided about this committee or office, and the reports it filed,
+most recent first. Generated from the published minutes.</p>
+<p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
+<p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
+<p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2012-04-18</td>
+<td><a href="2012/board_minutes_2012_04_18.html#section-7I">Appointed Jim Jagielski</a></td>
+<td>the board, by resolution</td>
+</tr>
+<tr>
+<td>2007-11-14</td>
+<td><a href="2007/board_minutes_2007_11_14.html#section-7A">Appointed Martin Sebor</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Decision</th>
+<th>Item</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2013-07-17</td>
+<td><a href="2013/board_minutes_2013_07_17.html#section-7A">Terminate the Apache C++ Standard Library Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>2007-11-14</td>
+<td><a href="2007/board_minutes_2007_11_14.html#section-7A">Establish the Apache C++ Standard Library Project</a></td>
+<td>special order</td>
+<td>approved</td>
+</tr></tbody></table>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2013-06-19"><a href="2013/board_minutes_2013_06_19.html#section-6H">2013-06-19</a> &mdash; Jim Jagielski<a class="headerlink" href="#2013-06-19" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+There was talk of moving this project to the Attic, but this
+was premature and Jim was appointed PMC chair by the board. At
+end of May, Jim announced he would step down. Christopher
+Bergstrom was nominated to be the new PMC chair. Christopher
+Bergstrom was elected PMC and committer, but never got an
+Apache id. He has his own fork elsewhere. So it's strange to
+elect him PMC chair. It doesn't seem like the project is
+viable. AI: Jim prepare a resolution to move the project to
+the Attic.</pre>
+<h3 id="2013-05-15"><a href="2013/board_minutes_2013_05_15.html#section-6E">2013-05-15</a> &mdash; Jim Jagielski<a class="headerlink" href="#2013-05-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+C++ will report next month</pre>
+<h3 id="2013-02-20"><a href="2013/board_minutes_2013_02_20.html#attachment-E">2013-02-20</a> &mdash; Jim Jagielski<a class="headerlink" href="#2013-02-20" title="Permalink">&para;</a></h3>
+<pre>The Apache C++ Standard Library Project aims to provide an ALv2-licensed
+system standard C++ library suite.
+
+Releases:
+
+  None.
+
+Development:
+
+  Since last report, activity has slowed down quite a bit. I expect partly
+  this is due to simple timing (around the end-of-year holidays), and
+  I plan to try to encourage a ramp-up of development with some emails.
+
+Community:
+
+  No changes.
+
+We have no issues that require board attention.</pre>
+<h3 id="2012-11-21"><a href="2012/board_minutes_2012_11_21.html#attachment-H">2012-11-21</a> &mdash; Jim Jagielski<a class="headerlink" href="#2012-11-21" title="Permalink">&para;</a></h3>
+<pre>DESCRIPTION
+
+Apache C++ Standard Library Project is a collection of functions
+designed to implement a standard C++ library.
+
+RELEASES
+
+* No releases yet.
+
+CURRENT ACTIVITY
+
+* Activity has really ramped up over the last several months.
+  We are seeing renewed development and interest in the project
+  and at the present time, I see no reason not to allow the
+  project to continue.
+
+COMMUNITY
+
+* No new committers or PMC members
+
+ISSUES
+
+* There are no issues requiring board attention at this time.</pre>
+<h3 id="2012-09-19"><a href="2012/board_minutes_2012_09_19.html#attachment-E">2012-09-19</a> &mdash; Jim Jagielski<a class="headerlink" href="#2012-09-19" title="Permalink">&para;</a></h3>
+<pre>DESCRIPTION
+
+Apache STDCXX is a collection of algorithms, containers, iterators,
+and other fundamental components of every piece of software, implemented
+as C++ classes, templates, and functions essential for writing C++ programs.
+
+RELEASES
+
+* There has not been a release of stdcxx since 2008. Renewed work is
+ being done on the 4.2.x and 4.3.x branches.
+
+CURRENT ACTIVITY
+
+* After a "gentle" nudge by the current chair, we've seen renewed activity
+ on the mailing list. In particular, a specific BUGZ entry (STDCXX-1056)
+ has seen a lot of discussion.
+
+* There was some licensing FUD discussed on the list, mostly to promote
+ a "rationale" for moving the project elsewhere and/or releasing
+ stdcxx under a different license. This has (hopefully) been clarified.
+
+* Branching and development policies are being discussed on the
+ mailing list.
+
+* Moving to git, as a way to draw in more potential developers
+ was suggested, but as of yet there is no decision on whether
+ to follow through with it.
+
+COMMUNITY
+
+* Stefan Teleman (steleman@apache.org) was added to the PMC in July
+
+ISSUES
+
+* There are no issues requiring board attention at this time.</pre>
+<h3 id="2012-08-15"><a href="2012/board_minutes_2012_08_15.html#section-6D">2012-08-15</a> &mdash; Jim Jagielski<a class="headerlink" href="#2012-08-15" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.</pre>
+<h3 id="2012-06-20"><a href="2012/board_minutes_2012_06_20.html#section-6H">2012-06-20</a> &mdash; Jim Jagielski<a class="headerlink" href="#2012-06-20" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+There is minor work being done. The project does not have the
+energy that the board expected when the decision was taken to
+keep it in place. Recommend to keep the status quo, normal
+status reporting. But if nothing else changes, reconsider
+moving this project to the Attic.</pre>
+<h3 id="2012-05-16"><a href="2012/board_minutes_2012_05_16.html#attachment-G">2012-05-16</a> &mdash; Jim Jagielski<a class="headerlink" href="#2012-05-16" title="Permalink">&para;</a></h3>
+<pre>Jim to provide verbal report at meeting.</pre>
+<h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#section-6H">2012-04-18</a> &mdash; Martin Sebor<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.
+
+Martin seems to be unwilling to perform the duties of PMC
+chair. While the PMC is reforming, the chair needs to be
+responsive to the board.</pre>
+<h3 id="2012-03-21"><a href="2012/board_minutes_2012_03_21.html#attachment-F">2012-03-21</a> &mdash; Martin Sebor<a class="headerlink" href="#2012-03-21" title="Permalink">&para;</a></h3>
+<pre>Last month, stdcxx added three committers/PMC members. One sent in his
+CLA and and an account for him was created. The other two are in the
+process of getting their CLAs signed by their employers.  Beyond that,
+we have nothing to report.  All stdcxx committers are busy with our
+day jobs and have only limited time to spend on the project. Requiring
+reports on a monthly basis won't help increase the activity of the
+project. On the contrary, since it takes away from the little time we
+have to contribute it is likely to decrease it.</pre>
+<h3 id="2012-02-15"><a href="2012/board_minutes_2012_02_15.html#attachment-E">2012-02-15</a> &mdash; Martin Sebor<a class="headerlink" href="#2012-02-15" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (October 2011):
+
+A vote to move stdcxx to the Attic failed. The majority of stdcxx
+contributors voted in favor of continuing to maintain the project.
+Several inactive committers stepped up to help with the project.
+
+A new build and test infrastructure has been set up to verify
+the correctness and portability of code changes:
+
+* gcc/Ubuntu Linux:
+  https://builds.apache.org/job/stdcxx-4.2.2-12d-ubuntu/
+
+* Sun C++/Solaris:
+  https://builds.apache.org/job/stdcxx-4.2.2-15s-solaris/
+
+A stdcxx contributor submitted a large number of issues and patches
+addressing a number of known and new defects.
+
+The stdcxx PMC voted to grant three contributors commit permissions
+to the stdcxx code repository and add them to the PMC.</pre>
+<h3 id="2012-01-24"><a href="2012/board_minutes_2012_01_24.html#section-6F">2012-01-24</a> &mdash; Martin Sebor<a class="headerlink" href="#2012-01-24" title="Permalink">&para;</a></h3>
+<pre>No report was submitted.  Attic resolution expected next month.</pre>
+<h3 id="2011-12-21"><a href="2011/board_minutes_2011_12_21.html#section-6D">2011-12-21</a> &mdash; Martin Sebor<a class="headerlink" href="#2011-12-21" title="Permalink">&para;</a></h3>
+<pre>No report was submitted. The C++ Standard Library is destined
+for the Attic by general consensus of the PMC members who
+responded to an inquiry.</pre>
+<h3 id="2011-11-16"><a href="2011/board_minutes_2011_11_16.html#attachment-D">2011-11-16</a> &mdash; Martin Sebor<a class="headerlink" href="#2011-11-16" title="Permalink">&para;</a></h3>
+<pre></pre>
+<h3 id="2011-08-17"><a href="2011/board_minutes_2011_08_17.html#attachment-D">2011-08-17</a> &mdash; Martin Sebor<a class="headerlink" href="#2011-08-17" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (May 2011):
+
+There have been no changes to Apache stdcxx. An interested contributor
+seems to have opted to set up a fork of stdcxx at www.spi-inc.org (or
+is in the process of doing so).</pre>
+<h3 id="2011-05-19"><a href="2011/board_minutes_2011_05_19.html#attachment-D">2011-05-19</a> &mdash; Martin Sebor<a class="headerlink" href="#2011-05-19" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (February 2011):
+
+  No changes. Stdcxx continues to be dormant. There was a flurry of emails
+  on the stdcxx-dev list suggesting continued interest from the same two
+  parties (ARM and Sun) but no new work.</pre>
+<h3 id="2011-02-16"><a href="2011/board_minutes_2011_02_16.html#attachment-E">2011-02-16</a> &mdash; Martin Sebor<a class="headerlink" href="#2011-02-16" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (November 2010):
+
+  Stdcxx continues to be dormant. All but one committer have moved on
+  to other projects. The only remaining committer (the VP of the
+  project) is too busy with his day job to make even small changes,
+  or to put out the long-awaited patch release, stdcxx 4.2.2.
+
+  A number of users and organizations have been using the project
+  and expressed interest in contributing to it. Several submitted
+  patches, others have offered help with the project build and test
+  infrastructure. Unfortunately, since no committer is available to
+  review patches and guide the contributors through the ASF process
+  to enable them to gain commit privileges there seems to be little
+  hope of reviving stdcxx.
+
+  A possible solution that would allow contributions to resume is
+  to grant commit privileges to the handful of contributors who have
+  already submitted some patches or expressed serious interest in
+  contributing going forward.
+
+  Another alternative is to move stdcxx to a repository outside
+  of ASF such as SPI (http://www.spi-inc.org/) where interested
+  developers could start committing changes on their own right away,
+  without going through the "training" process. This seems to the
+  preferred solution among at least some of the interested users.
+
+  Are there any other options?
+
+Future plans:
+
+  Unless the issue with contributions can be resolved in the next
+  quarter I suggest to retire the project.</pre>
+<h3 id="2010-11-17"><a href="2010/board_minutes_2010_11_17.html#attachment-D">2010-11-17</a> &mdash; Martin Sebor<a class="headerlink" href="#2010-11-17" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (September 2010):
+
+  No project activity since the last report.
+
+Future plans:
+
+  I'm considering stepping down as chair of stdcxx. I haven't had
+  time to spend on the project or to help interested contributors
+  become committers. Unless another committer steps up willing to
+  take on the responsibility stdcxx might need to be retired.</pre>
+<h3 id="2010-09-22"><a href="2010/board_minutes_2010_09_22.html#attachment-D">2010-09-22</a> &mdash; Martin Sebor<a class="headerlink" href="#2010-09-22" title="Permalink">&para;</a></h3>
+<pre>This is a delayed report (by 1 month).
+
+Notable changes since previous report (May 2010):
+
+  Very little project activity since the last report. No significant
+  issues were reported, some some discussion took place on the dev
+  list. An external contributor has submitted a patch of moderate
+  size for review.
+
+  No new committers or PMC members have been added.
+
+  Sun C++ has started shipping last stable release of stdcxx, 4.2.1.
+
+Future plans:
+
+  Release the stdcxx 4.2.2 bugfix update. Attempt to increase project
+  activity and find and set up an alternate build and test infrastructure.</pre>
+<h3 id="2010-08-18"><a href="2010/board_minutes_2010_08_18.html#section-6D">2010-08-18</a> &mdash; Martin Sebor<a class="headerlink" href="#2010-08-18" title="Permalink">&para;</a></h3>
+<pre>Report postponed to next meeting.</pre>
+<h3 id="2010-05-19"><a href="2010/board_minutes_2010_05_19.html#attachment-G">2010-05-19</a> &mdash; Martin Sebor<a class="headerlink" href="#2010-05-19" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (February 2010):
+
+  There has been virtually no project activity since the last report.
+  Only a handful issues were reported, some privately to the VP of
+  the project. No existing issues have been resolved.
+
+  No new committers or PMC members have been added.
+
+  The Sun KDE project uses and ships (or plans to ship) the last stable
+  release of stdcxx, 4.2.1, with KDE as the default implementation of
+  the C++ Standard Library. There is interest in continuing to do so
+  but no KDE volunteers have stepped up so far to help with stdcxx.
+
+Future plans:
+
+  Release the stdcxx 4.2.2 bugfix update. Attempt to increase project
+  activity and find and set up an alternate build and test infrastructure.</pre>
+<h3 id="2010-02-17"><a href="2010/board_minutes_2010_02_17.html#attachment-E">2010-02-17</a> &mdash; Martin Sebor<a class="headerlink" href="#2010-02-17" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (November 2009):
+
+  Stdcxx continues to be very quiet to the point of dormancy.
+
+  No new committers or PMC members have been added.
+
+  Rogue Wave has discontinued running nightly builds which has made
+  portability testing exceedingly difficult. Since most 4.2.2 changes
+  were tested before the shutdown, this maintenance update can be
+  released without much further testing. Unless an alternate multi-
+  platform build and infrastructure is set up future releases might
+  need to focus on a much more limited set of platforms (such FreeBSD,
+  Linux, Solaris, and Windows).
+
+Future plans:
+
+  Release the stdcxx 4.2.2 bugfix update. Attempt to increase project
+  activity and find and set up an alternate build and test infrastructure.</pre>
+<h3 id="2009-11-18"><a href="2009/board_minutes_2009_11_18.html#attachment-E">2009-11-18</a> &mdash; Martin Sebor<a class="headerlink" href="#2009-11-18" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (August 2009):
+
+  All stdcxx activity, including mailing list traffic and source code
+  repository commits, continues to be very low.
+
+Future plans:
+
+  Release the stdcxx 4.2.2 bugfix update. Attempt to increase project
+  activity to get help with providing experimental support for C++ 0x
+  in stdcxx 4.3.0, and complete support in 5.0. Migrate nightly build
+  and test infrastructure away from Rogue Wave based resources.
+
+Community:
+
+  16 committers (N/C)
+  11 PMC members (N/C)
+
+Bug tracking database changes since the last report:
+
+  Total issues: 1034 (+4)
+  Outstanding:   342 (+1)
+  Resolved:      166 (N/C)
+  Closed:        526 (+3)
+
+Planned releases:
+
+  4.2.2  Winter 2009 (was Summer 2009)
+  4.3.0  Spring 2009 (was Winter 2009)
+  5.0.0  2010 - 2011
+
+Release history:
+
+  4.2.1  May 1, 2008
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)
+
+N/C = No Change.</pre>
+<h3 id="2009-08-19"><a href="2009/board_minutes_2009_08_19.html#attachment-F">2009-08-19</a> &mdash; Martin Sebor<a class="headerlink" href="#2009-08-19" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (May 2009):
+
+  Stdcxx continues to be very quiet with only a handful of minor bug
+  fixes having been committed in this period.
+
+Future plans:
+
+  Put out the delayed stdcxx 4.2.2 release and resume work on adding
+  experimental support for C++ 0x in stdcxx 4.3.0, with complete support
+  expected in 5.0. Change nightly testing infrastructure to avoid relying
+  on Rogue Wave resources.
+
+Community:
+
+  16 committers (N/C)
+  11 PMC members (N/C)
+
+
+Bug tracking database changes since the last report:
+
+  Total issues: 1030 (+5)
+  Outstanding:   341 (+4)
+  Resolved:      166 (+1)
+  Closed:        523 (N/C)
+
+Planned releases:
+
+  4.2.2  Summer 2009 (was Spring 2009)
+  4.3.0  Winter 2009 (was Fall 2009)
+  5.0.0  2010 (was end of 2009)
+
+Release history:
+
+  4.2.1  May 1, 2008
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)
+
+N/C = No Change.</pre>
+<h3 id="2009-05-20"><a href="2009/board_minutes_2009_05_20.html#attachment-F">2009-05-20</a> &mdash; Martin Sebor<a class="headerlink" href="#2009-05-20" title="Permalink">&para;</a></h3>
+<pre>Notable changes since previous report (February 2009):
+
+  Project activity is still very low.  Only a handful of minor issues
+  have been reported and resolved.
+
+  Due to budgetary/resource constraints, Rogue Wave has abandoned all
+  its support for the project and either laid off or reassigned stdcxx
+  engineers.  This will have implications for testing the code on non
+  mainstream platforms.  Nightly testing infrastructure will need to
+  be reimplemented so as to avoid relying on Rogue Wave resources.
+
+Future plans:
+
+  Continue to work toward the bug fix stdcxx 4.2.2 release and on adding
+  experimental support for C++ 0x in stdcxx 4.3.0 and complete support in
+  5.0.  Change nightly testing infrastructure to avoid relying on Rogue
+  Wave resources.
+
+Community:
+
+  16 committers (N/C)
+  11 PMC members (N/C)
+
+
+Bug tracking database changes since the last report:
+
+  Total issues: 1025 (+3)
+  Outstanding:   337 (-3)
+  Resolved:      165 (+1)
+  Closed:        523 (+4)
+
+Planned releases:
+
+  4.2.2  Spring 2009 (was Winter 2008)
+  4.3.0  Fall 2009 (was Summer 2009)
+  5.0.0  2010 (was end of 2009)
+
+Release history:
+
+  4.2.1  May 1, 2008
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)
+
+N/C = No Change.</pre>
+<h3 id="2009-02-18"><a href="2009/board_minutes_2009_02_18.html#attachment-E">2009-02-18</a> &mdash; Martin Sebor<a class="headerlink" href="#2009-02-18" title="Permalink">&para;</a></h3>
+<pre>Notable changes since the last report (November 2008):
+
+  Project activity continues to be very low. A handful of minor
+  issues have been reported by users and resolved by the team.
+
+Future plans:
+
+  Continue to work toward the release of stdcxx 4.2.2 and on
+  implementing C++ 0x. The plan is to enable experimental
+  support for a subset of C++ 0x in 4.3.0, and full support
+  in 5.0,0.
+
+Community:
+
+  The stdcxx community is unchanged since the last report.
+
+  16 committers  (N/C)
+  11 PMC members (N/C)
+
+Mailing list activity changes since the last report:
+
+  commits: 21 (N/C) subscribers,  4.06 (N/C) posts/day
+  dev:     55 (N/C) subscribers,  5.24 (N/C) posts/day
+  issues:  13 (N/C) subscribers,  8.24 (N/C) posts/day
+  user:    51 (N/C) subscribers,  0.11 (N/C) posts/day
+
+Bug tracking database changes since the last report:
+
+  Total issues: 1022 (+  6)
+  Outstanding:   340 ( N/C)
+  Resolved:      164 (+  1)
+  Closed:        519 (+  6)
+
+Planned releases:
+
+  4.2.2  Spring 2009 (was Winter 2008)
+  4.3.0  Summer 2009
+  5.0.0  end of 2009
+
+Release history:
+
+  4.2.1  May 1, 2008
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)
+
+N/C = No Change.</pre>
+<h3 id="2008-11-19"><a href="2008/board_minutes_2008_11_19.html#attachment-C">2008-11-19</a> &mdash; Martin Sebor<a class="headerlink" href="#2008-11-19" title="Permalink">&para;</a></h3>
+<pre>Notable changes since the last report (August 2008):
+
+  Project activity has been low over the last three months due
+  to several committers having been busy with other work. The
+  team has mostly been fixing bugs; little progress has been
+  made on new C++ 0x features. In September, the C++ committee
+  voted to publish the C++ 0x draft standard for international
+  ballot. The final C++ Standard can be expected to be published
+  withing a year to two of the completion of the ballot, with
+  only bug fixes but no other significant changes.
+
+
+BIS Export Control Classification:
+
+  Apache C++ Standard Library contains no encryption source code
+  nor does it make use of any third party encryption software.
+
+Future plans:
+
+  Continue to work toward the release of stdcxx 4.2.2 and on
+  implementing C++ 0x. The plan is to enable experimental
+  support for a subset of C++ 0x in 4.3.0, and full support
+  in 5.0,0.
+
+Community:
+
+  The stdcxx community is unchanged since the last report.
+
+  16 committers  (unchanged)
+  11 PMC members (unchanged)
+
+Mailing list activity changes since the last report:
+
+  commits: 21 (+2) subscribers,  4.06 (-0.84) posts/day
+  dev:     55 (-2) subscribers,  5.24 (-2.02) posts/day
+  issues:  13 (+0) subscribers,  8.24 (-3.19) posts/day
+  user:    51 (+3) subscribers,  0.11 (+0.00) posts/day
+
+Bug tracking database changes since the last report:
+
+  Total issues: 1016 (+ 19)
+  Outstanding:   340 (+  4)
+  Resolved:      163 (+  3)
+  Closed:        513 (+ 12)
+
+Planned releases:
+
+  4.2.2  Winter 2008 (was Fall 2008)
+  4.3.0  Winter 2008 - 2009
+  5.0.0  first half of 2009
+
+Release history:
+
+  4.2.1  May 1, 2008
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)</pre>
+<h3 id="2008-08-20"><a href="2008/board_minutes_2008_08_20.html#attachment-C">2008-08-20</a> &mdash; Martin Sebor<a class="headerlink" href="#2008-08-20" title="Permalink">&para;</a></h3>
+<pre>Notable changes since the last report (May 2008):
+
+  The release schedule for the next C++ standard, informally known
+  as C++ 0x, has changed. The new standard is now expected to be
+  ratified sometime in 2011 rather than by the end of this decade
+  as originally planned. The team's progress on the implementation
+  of the new C++ standard features has been slow in part due to
+  ongoing changes to the specification and in part due to the limited
+  availability of the new core C++ features in existing compilers,
+  or their instability.
+
+BIS Export Control Classification:
+
+  Apache C++ Standard Library contains no encryption source code nor
+  does it make use of any third party encryption software.
+
+Future plans:
+
+  Continue to work on implementing C++ 0x.
+
+Community:
+
+  The stdcxx community is unchanged since the last report.
+
+  16 committers  (unchanged), 6 active
+  11 PMC members (unchanged), 6 active
+
+Mailing List Activity Changes Since February 2008:
+
+  commits: 19 (+1) subscribers,  5.10 (+0.72) posts/day
+  dev:     57 (+2) subscribers,  7.27 (+0.79) posts/day
+  issues:  13 (+1) subscribers, 11.43 (-0.48) posts/day
+  user:    48 (+2) subscribers,  0.11 (-0.08) posts/day
+
+Bug Tracking Changes Since January 2008:
+
+  Total issues: 997 (+ 59)
+  Outstanding:  336 (+  8)
+  Resolved:     160 (+ 26)
+  Closed:       501 (+ 25)
+
+Planned releases:
+
+  4.2.2  Fall 2008 (was July 2008)
+  4.3.0  Winter 2008 - 2009
+  5.0.0  first half of 2009
+
+Release history:
+
+  4.2.1  May 1, 2008
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)</pre>
+<h3 id="2008-05-21"><a href="2008/board_minutes_2008_05_21.html#attachment-C">2008-05-21</a> &mdash; Martin Sebor<a class="headerlink" href="#2008-05-21" title="Permalink">&para;</a></h3>
+<pre>Notable changes since the last report (February 2008):
+
+  The major accomplishment since the last report was the succeessful,
+  albeit delayed, release of stdcxx 4.2.1 on May 1 which adds a total
+  of 23 small enhancements and fixes 110 bugs. In March, we attended
+  the interesting Microsoft Open Source Software Labs meeting in
+  Redmond.
+
+BIS Export Control Classification:
+
+  Apache C++ Standard Library contains no encryption source code nor
+  does it make use of any third party encryption software.
+
+Future plans:
+
+  We are making progress on the implementation of the next C++
+  standard expected to be ratified by the end 2009. A partial
+  implementation is expected to be released in stdcxx 4.3.0
+  tentatively scheduled for Winter 2008. Our goal is to complete the
+  implementation in the first half of 2009 and make it available in
+  stdcxx 5.0.
+
+Community:
+
+  The stdcxx community is unchanged since the last report.
+
+  16 committers  (unchanged), 6 active
+  11 PMC members (unchanged), 6 active
+
+Mailing List Activity Changes Since February 2008:
+
+  commits: 18      subscribers,  4.38 (+1.05) posts/day
+  dev:     55 (-1) subscribers,  6.48 (+0.98) posts/day
+  issues:  12 (+2) subscribers, 12.95 (+3.40) posts/day
+  user:    46      subscribers,  0.19 (+0.09) posts/day
+
+Bug Tracking Changes Since January 2008:
+
+  Total issues: 938 (+209)
+  Outstanding:  328 (+ 55)
+  Resolved:     134 (+ 39)
+  Closed:       476 (+115)
+
+Planned releases:
+
+  4.2.2  July 2008
+  4.3.0  Winter 2008
+  5.0.0  first half of 2009
+
+Release history:
+
+  4.2.1  May 1, 2008
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)</pre>
+<h3 id="2008-02-20"><a href="2008/board_minutes_2008_02_20.html#attachment-B">2008-02-20</a> &mdash; Martin Sebor<a class="headerlink" href="#2008-02-20" title="Permalink">&para;</a></h3>
+<pre>This is the third stdcxx Board report since graduating on 11/15.
+Starting with next report we will be reporting on a quarterly
+schedule.
+
+Notable changes since the last report (2008/1):
+
+  The project activity has picked up quite a bit since the January
+  report, both in terms of the number of commits as well as on the
+  mailing lists. Migration out of Incubator and into TLP (INFRA-1421)
+  has been completed. Some progress has been made on redesigning and
+  reimplementing the project site using Apache Forrest (STDCXX-686).
+
+BIS Export Control Classification:
+
+  Apache C++ Standard Library contains no encryption source code nor
+  does it make use of any third party encryption software.
+
+Future plans:
+
+  We are making progress, albeit slowly, toward the 4.2.1 release.
+  The expected timeframe for this maintenance release is February to
+  March 2008. Next week we look forward to attending the Microsoft
+  Open Source Software Labs meeting in Redmond.
+
+Community:
+
+  The active community remains small and dominated by contributors
+  from Rogue Wave, despite efforts to reach out to other developers.
+
+  16 committers  (unchanged)
+  11 PMC members (unchanged)
+
+Mailing List Activity Changes Since December 2007:
+
+  commits: 18 (+4) subscribers,  4.38 (+1.80) posts/day
+  dev:     56 (+4) subscribers,  6.48 (-0.93) posts/day
+  issues:  10      subscribers, 12.95         posts/day
+  user:    46 (+6) subscribers,  0.10 (-0.18) posts/day
+
+Bug Tracking Changes Since January 2008:
+
+  Total issues: 729 (+ 36)
+  Outstanding:  273 (+ 10)
+  Resolved:      95 (+  5)
+  Closed:       361 (+ 18)
+
+Planned releases:
+
+  4.2.1  February/March 2008
+  4.3.0  Summer/Fall 2008
+  5.0    Winter 2008
+
+Release history:
+
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)</pre>
+<h3 id="2008-01-16"><a href="2008/board_minutes_2008_01_16.html#attachment-C">2008-01-16</a> &mdash; Martin Sebor<a class="headerlink" href="#2008-01-16" title="Permalink">&para;</a></h3>
+<pre>This is the second stdcxx Board report since graduating on 11/15.
+
+Notable changes since the last report (2007/12):
+
+  Owing to the holidays the project activity has been on the low side
+  since the last report. Development list activity was down by about
+  37% in comparison to November, Subversion commits by 43%.
+
+  While little progress has been made so far on INFRA-1421 to move
+  stdcxx out of the incubator and to its TLP destination a move of
+  the Subversion repository is being planned for Saturday 1/12 (see
+  INFRA-1423). The remaining subtasks are still waiting to be picked
+  up by volunteers with sufficient permissions.
+
+Future plans:
+
+  Continuing to work toward a maintenance release for 4.2.0 expected
+  in the February to March 2008 timeframe. A discussion has begun on
+  reimplementing the stdcxx web site to use Apache Forrest or some
+  similar authoring tool (STDCXX-686).
+
+Community:
+
+  16 committers  (unchanged)
+  11 PMC members (unchanged)
+
+Mailing List Activity for December 2007:
+
+  stdcxx-commits:  56 (- 42) posts
+  stdcxx-dev:     273 (-155) posts
+  stdcxx-user:      0 (unchanged)
+
+  Ken Coar's Apache Software Foundation Mailing Lists page
+  (http://people.apache.org/~coar/mlists.html) normally used to gather
+  list subscription data for this report is incomplete and no data for
+  stdcxx is available at this time.
+
+Bug Tracking:
+
+  Total issues: 693 (+ 14)
+  Outstanding:  263 (-  3)
+  Resolved:      87 (+  5)
+  Closed:       343 (+ 12)
+
+Planned releases:
+
+  4.2.1  February/March 2008
+  4.3.0  Summer/Fall 2008
+  5.0    Winter 2008
+
+Release history:
+
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)</pre>
+<h3 id="2007-12-19"><a href="2007/board_minutes_2007_12_19.html#attachment-AA">2007-12-19</a> &mdash; Martin Sebor<a class="headerlink" href="#2007-12-19" title="Permalink">&para;</a></h3>
+<pre>This is the first stdcxx Board report since graduating on 11/15.
+
+Notable changes since exiting the Incubator:
+
+ 11/29 voted in new committer, Travis Vitek
+ 11/30 requested INFRA to migrate stdcxx to TLP:
+       http://issues.apache.org/jira/browse/INFRA-1421
+
+Future plans:
+
+  Currently working toward a maintenance release for 4.2.0 expected
+  in the February to March 2008 timeframe. This will be the first
+  release to formally follow the new release process and version
+  policy, a document that's currently being finalized on stdcxx-dev.
+  Development of a large number of new features specified by the
+  upcoming C++ 0x standard (expected to be ratified by the end of
+  the decade) is being planned for 4.3 (compatible enhancements)
+  and 5.0 (breaking changes), and is expected to commence shortly.
+
+Community:
+
+  16 committers
+  11 PMC members
+
+Mailing List Activity:
+
+  stdcxx-commits: 14 (-1) subscribers, 2.58 (+0.02) posts/day
+  stdcxx-dev:     52 (-3) subscribers, 7.41 (+0.23) posts/day
+  stdcxx-user:    40 (+1) subscribers, 0.28 (-0.01) posts/day
+
+Bug Tracking:
+
+  Total issues: 679 (+ 34)
+  Outstanding:  266 (-  6)
+  Resolved:      82 (+  1)
+  Closed:       331 (+ 39)
+
+Planned releases:
+
+  5.0    Winter 2008
+  4.3.0  Summer/Fall 2008
+  4.2.1  February/March 2008
+
+Release history:
+
+  4.2.0  October 29, 2007 (incubating)
+  4.1.3  January 30, 2006 (incubating)
+  4.1.2  September 7, 2005 (snapshot, incubating)
+
+
+------------------------------------------------------
+End of minutes for the December 19, 2007 board meeting.</pre>
+<h3 id="2007-08-29"><a href="2007/board_minutes_2007_08_29.html#stdcxx">2007-08-29</a> &mdash; as stdcxx, in the Incubator's report<a class="headerlink" href="#2007-08-29" title="Permalink">&para;</a></h3>
+<pre>Stdcxx status report for the calendar quarter ending in August 2007.
+
+Project Summary:
+
+Stdcxx is a portable implementation of the C++ Standard Library conforming
+to the ISO/IEC 14882 international standard for C++.
+
+In incubation: since 5/19/2005.
+
+Issues to resolve before graduation:
+
+None.
+
+Community:
+
+The project has 11 committers (excluding mentors). Not counting mentors, the
+stdcxx PPMC consists of 9 committers.
+
+Mailing List Activity:
+
+ stdcxx-commits: 14 (-1) subscribers, 2.16 (+0.22) posts/day
+
+ stdcxx-dev: 51 (+3) subscribers, 5.88 (+1.01) posts/day
+
+ stdcxx-user: 37 (+6) subscribers, 0.31 (-0.04) posts/day
+
+Bug Tracking:
+
+Total issues:  536 (+129)
+
+Outstanding:  264 (+66)
+
+Resolved:  60 (-15)
+
+Closed:  212 (+97)
+
+Current Projects:
+
+Since the last report three months ago the team has been busy working toward
+the next release, version 4.2, planned to be releaded at the end of the
+summaer or early fall at the latest.
+
+The stdcxx community is about to close a vote to accept two new committers,
+Eric (Brad) Lemmings, and Mark Brown. Pending the approval of the Incubator
+PMC, the committers are expected to join the team shortly.
+
+The stdcxx community also recently voted to propose graduation as a Top
+Level Project to the Incubator PMC. We plan to submit the proposal once the
+new committers have been approved.
+
+Code:
+
+The most recent release of stdcxx, version 4.1.3, was published in January
+2006. The next version 4.2, is scheduled to be released in late summer/early
+fall 2007. All code is licensed under the Apache license version 2.</pre>
+<h3 id="2007-05-16"><a href="2007/board_minutes_2007_05_16.html#stdcxx">2007-05-16</a> &mdash; as stdcxx, in the Incubator's report<a class="headerlink" href="#2007-05-16" title="Permalink">&para;</a></h3>
+<pre>''iPMC Reviewers: jukka, jim''
+
+Stdcxx status report for the calendar quarter ending in May 2007.
+
+__Project Summary__:
+
+   Stdcxx  is a highly  portable implementation  of the  C++ Standard
+   Library conforming to the ISO/IEC 14882 international standard for
+   C++.
+
+__In incubation__: since 5/19/2005.
+
+__Issues to resolve before graduation__:
+
+   Increase committer base and diversity.
+
+__Community__:
+
+   The project  has [http://incubator.apache.org/stdcxx/#committers 11
+committers] (excluding  mentors).  Not counting
+   mentors, the [http://incubator.apache.org/stdcxx/#ppmc stdcxx IPMC]
+consists of 9 committers.
+
+__Mailing List Activity__:
+
+ *
+[http://people.apache.org/~coar/mlists.html#stdcxx-commits_at_incubator.apac
+he.org stdcxx-commits]: 15 subscribers, 1.94 posts/day
+ *
+[http://people.apache.org/~coar/mlists.html#stdcxx-dev_at_incubator.apache.o
+rg stdcxx-dev]: 48 subscribers, 4.87 posts/day
+ *
+[http://people.apache.org/~coar/mlists.html#stdcxx-dev_at_incubator.apache.o
+rg stdcxx-user]: 31 subscribers, 0.35 posts/day
+
+__Bug Tracking__:
+
+ * Total issues: [http://tinyurl.com/2mt8vx 407]
+([http://tinyurl.com/2qz2sg added 65 since last report])
+ * Open: [http://tinyurl.com/2l2zyg 198]
+ * Resolved: [http://tinyurl.com/39odjo 75]
+ * Closed: [http://tinyurl.com/3xyrys 115]
+
+__Current Projects__:
+
+   Over the  last three months the  team has been  working on porting
+   the project to a number of new operating systems and compilers.  A
+   documentation project  focused on  updating and imrpoving the look
+   and  feel of  both the
+   [http://incubator.apache.org/stdcxx/doc/stdlibref Class Reference]
+   and [http://incubator.apache.org/stdcxx/doc/stdlibug User's Guide]
+   is currently under way. Site visitation activitiy is being tracked
+   with  Google  Analytics.  The  immediate  number  one  goal is  to
+   release the next version of the library in the summer of 2007.
+
+__Code__:
+
+   The most recent release of stdcxx, version 4.1.3, was published in
+   January  2006.  The next  release,  tentatively  numbered 4.2,  is
+   expected to be  published in summer of 2007.  All code is licensed
+   under the Apache license version 2.
+
+''iPMC Comments:''
+ * jukka: I'm qurious about http://incubator.apache.org/stdcxx/#committers.
+Why some people are following CTR and others RTC? Also, the comment
+"committers in italics do not have a signed Contributor License Agreement on
+file" doesn't make sense. You can't be a committer without a CLA on file.</pre>
+<h3 id="2006-01-18"><a href="2006/board_minutes_2006_01_18.html#stdcxx">2006-01-18</a> &mdash; as stdcxx, in the Incubator's report<a class="headerlink" href="#2006-01-18" title="Permalink">&para;</a></h3>
+<pre>Stdcxx status report for the calendar quarter ending in 12/2005:
+
+This is the second quarterly report for stdcxx.
+
+The stdcxx community has spent the last three months working toward version
+4.1.3 of the project. The major accomplishments thus far include the
+completion of the test suite driver (STDCXX-4), the migration of a large
+number (but not all) of stdcxx tests from the Rogue C++ Standard Library
+test suite to this driver and to the ASF Subversion repository (STDCXX-4),
+and the creation of a Windows configuration and build infrastructure
+(STDCXX-5, STDCXX-13).
+
+The successful completion of these objectives marks an important milestone
+for the stdcxx project. To facilitate the migration of existing users of the
+Rogue Wave C++ Standard Library to stdcxx, the stdcxx community is currently
+in the process of releasing version 4.1.3 of the project. This release has
+been scheduled to coincide with the release of the Rogue Wave C++ Standard
+Library 4.1.3 on which stdcxx is based. A vote to release stdcxx 4.1.3 is
+under way on stdcxx-dev.
+
+In other news, the stdcxx PPMC recently voted to extend an offer of
+committership to Anton Pevtsov. Anton is the author of the Windows build
+infrastructure and his help with porting the test suite over the last few
+months has been essential. In addition, in preparation for graduation and
+the forming of a PMC, the stdcxx PPMC has started to discuss expanding its
+membership from the current 5 (including 3 mentors) to involve other active
+committers.
+
+Going forward, the most important goals of the growing stdcxx community
+continue to be to increase the visibility of the project and further
+increase the number as well as diversity of its users, contributors, and
+committers, finish porting the stdcxx test suite, and implement a complete
+test harness for the project to facilitate automated nightly testing. Other
+goals include expanding the set of platforms to Apple Darwin and other
+BSD-based operating systems, enhancing support for the C++ Standard Library
+extensions described in the (Draft) Technical Report on C++ Library
+Extensions.
+
+Martin Sebor</pre>
+<h3 id="2005-07-28"><a href="2005/board_minutes_2005_07_28.html#stdcxx">2005-07-28</a> &mdash; as STDCXX, in the Incubator's report<a class="headerlink" href="#2005-07-28" title="Permalink">&para;</a></h3>
+<pre>stdcxx: Mailing lists have been created, initial accounts have been created
+for the stdcxx committers (where CLAs have been received), and Subversion
+directories have been created.  Roy has just sent the 'welcome' email to
+stdcxx-dev@.  In other words, real progress can be made now.
+
+There was an issue regarding a RogueWave press release regarding STDCXX that
+had an unapproved ASF quote in it.  The PRC is following up on this and is
+educating folks to ensure that it does not happen again.</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>

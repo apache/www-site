@@ -1,0 +1,4512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="shortcut icon" href="/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Board minutes, 2024-11-20 | Apache Software Foundation</title>
+  <link href="/css/Montserrat-300-600-800.css" async rel="stylesheet">
+  <link href="/css/OpenSans.css" async rel="stylesheet">
+  <link href="/css/min.bootstrap.css" async rel="stylesheet">
+  <link href="/css/styles.css" async rel="stylesheet">
+  <link href="/css/new-ui.css" async rel="stylesheet">
+  <script src="https://www.apachecon.com/event-images/snippet.js" async></script>
+  <style>
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+
+  <!-- pagefind search -->
+  <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#pagefind-search" });
+    });
+    var pageTitle = 'Board minutes, 2024-11-20';
+    if(pageTitle === '404'){
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#page-404-search" });
+      });
+    }
+  </script>
+  
+
+<!-- https://www.apache.org/licenses/LICENSE-2.0 -->  <!-- Matomo -->
+  <script>
+    var pageTitle = 'Board minutes, 2024-11-20';
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+    /* We explicitly disable cookie tracking to avoid privacy issues */
+    _paq.push(['disableCookies']);
+    if(pageTitle === '404'){
+      /* Track 404 page hits */
+      _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
+    }
+    /* Measure a visit to flink.apache.org and nightlies.apache.org/flink
+as the same visit */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.apache.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '37']);
+      var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body >
+  
+  <!-- Navigation -->
+  <header id="top-header" data-pagefind-ignore="all">
+    <div class="header-banner">
+        <div class="inner text-center">
+            <p>Introducing The ASF’s New Logo <a href="https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo" target="_blank">Read Now</a></p>
+        </div>
+    </div>
+    <div class="logo-row ">
+        <div class="inner text-center py-medium">
+            <a href="/" id="logo"><img src="/images/asflogo_horizontal_color.svg" alt="Apache Software Foundation Logo" class="logo"></a>
+        </div>
+    </div>
+    <div class="lower-header">
+        <div class="inner">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnav-collapse">
+            
+            <ul class="nav navbar-nav navbar-justified n-navbar-padding">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Community&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                    <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                    <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                    <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Projects&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                    <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                    <li role="none"><a role="menuitem" href="https://attic.apache.org/" target="_blank">The Apache Attic</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Downloads&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                    <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Learn&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                    <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                    <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                    <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Resources &amp; Tools&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                    <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                    <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                    <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                    <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                    <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                    <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                    <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+            <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                    <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                    <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                    <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                </ul>
+                </li>
+                
+            
+                <li><a href="/foundation/sponsorship" class="btn">Sponsor</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"
+                    aria-hidden="true"></span><span class="sr-only">Search</span></a>
+                <ul class="dropdown-menu search-form" role="search">
+                    <li>
+                    <div id="pagefind-search" class="input-group" style="width: 100%; padding: 0 5px;"></div>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+     <!-- Script is to make the input field ready as soon as user click the search button-->
+      <!-- script could be simplified and shorten in length bootstrap framework  -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Using Bootstrap's event system for dropdowns
+            $(document).on('shown.bs.dropdown', '.dropdown', function () {
+                // Check if this is the search dropdown
+                if ($(this).find('.glyphicon-search').length > 0) {
+                    // Find and focus the search input
+                    setTimeout(function() {
+                        $('.pagefind-ui__search-input').focus();
+                    }, 50); // Small delay to ensure input is ready
+                }
+            });
+        });
+    </script>
+    <!-- 
+         Default Page Hero section
+         Home page is excluded because it has a more custom design
+     -->
+        <!-- If hero property is set in the Markdown file, we use it in the hero section -->
+            <div class="hero bg-navy">
+        <!-- If no hero property is set in the Markdown file, we check if a hero image is specified -->
+                <div class="inner inner--default py-large flex flex-vertical-center no-flex-600">
+                    <div class="flex-2 hero-title">
+                        <!-- if page_heading property is set in Markdown file, we use that for the h1 -->
+                        <!-- if no page_heading property is set in Markdown file, we use page title for the h1 -->
+                            <h1>Board minutes, 2024-11-20</h1>
+                    </div>
+                        <div class="flex-1 hero-image hero-icon hide-600"><img src="/images/oakleaf.svg" alt="ASF Oak Leaf Icon"></div>
+                </div>
+            </div>
+
+  <main id="maincontent">
+<div class="inner inner--default py-xl">    <p>[<a href="https://www.apache.org/foundation/records/minutes/2024/board_minutes_2024_11_20.txt">raw</a>] the published text, which is the record. [<a href="./">2024</a>] [<a href="../">main index</a>]</p>
+<pre>
+                    The Apache Software Foundation
+
+                  Board of Directors Meeting Minutes
+
+                          November 20, 2024
+
+
+ <a class="selflink" href="#section-1" id="section-1">1. Call to order</a>
+
+    The meeting was scheduled for 21:00 UTC and began at 21:10 when
+    a sufficient attendance to constitute a quorum was recognized by
+    the chair.
+
+    Other Time Zones: https://timeanddate.com/s/44ft
+
+    The meeting was held via teleconference, hosted by the Secretary
+    via Zoom.
+
+    The #asfboard channel on the-asf.slack.com was used for backup.
+
+ <a class="selflink" href="#section-2" id="section-2">2. Roll Call</a>
+
+    Directors Present:
+
+      Rich Bowen
+      Shane Curcuru
+      Willem Ning Jiang
+      Jeff Jirsa
+      Justin Mclean
+      Jean-Baptiste Onofr&eacute;
+      Craig L Russell - joined :38
+      Sander Striker
+
+    Directors Absent:
+
+      Kanchana Pradeepika Welagedara
+
+    Executive Officers Present:
+
+      Craig R. McClanahan
+      Matt Sicker
+      Ruth Suehle
+
+    Executive Officers Absent:
+
+      David Nalley
+
+    Guests:
+
+      Brian Proffitt
+      Daniel Gruno
+      Dave Fisher
+      Drew Foulks
+      Greg Stein
+      Jarek Potiuk
+      Paul King
+      Philipp Ottlinger
+      Sally Khudairi
+      Zili Chen
+
+ <a class="selflink" href="#section-3" id="section-3">3. Minutes from previous meetings</a>
+
+    Published minutes can be found at:
+
+        https://www.apache.org/foundation/board/calendar.html
+
+    <a class="selflink" href="#section-3A" id="section-3A">A. The meeting of October 16, 2024</a>
+
+       See: board_minutes_2024_10_16.txt
+
+       Approved by General Consent.
+
+ <a class="selflink" href="#section-4" id="section-4">4. Executive Officer Reports</a>
+
+    <a class="selflink" href="#section-4A" id="section-4A">A. Board Chair [Shane Curcuru]</a>
+
+       It's been a fairly quiet month at the board level - which means it's
+       been a good time to work on some improvements for project services. 
+       Astute readers of the board minutes may have noticed some PMCs are
+       piloting a new, simplified quarterly board report format.  This pilot
+       program is designed to simplify writing reports for PMC Chairs, while
+       still providing an overview of community and brand health around
+       projects.
+
+       We've also implemented a simpler system for PMCs to add new PMC
+       members, or to remove someone who has resigned.  The Project
+       Management Committee concept is part of the ASF's bylaws and is
+       officially how projects are governed, so keeping the roster is
+       important - and much easier now.
+
+       I attended Open Forum Academy Symposium this month, and was on a panel
+       discussing Open Source Research In The World, and how academic
+       researchers and FOSS practitioners can learn from each other.  Since
+       the ASF is a common subject of research studies, it was heartening to
+       see how much researchers appreciated our openness.  This is also an
+       opportunity to help researchers focus their work on topics that could
+       provide answers to improve community health.  It was also gratifying
+       to hear someone shout out "Plus one! I agree with everything you
+       said!" during the event.
+
+    <a class="selflink" href="#section-4B" id="section-4B">B. President [David Nalley]</a>
+
+       Like Ruth, I met with other foundations this month to discuss
+       sanctions and their implications to open source organizations.
+
+       Additionally, please see Attachments 1 through 10.
+
+
+    <a class="selflink" href="#section-4C" id="section-4C">C. Treasurer [Craig R. McClanahan]</a>
+
+       In addition to regular activities, working with Fundraising on setting
+       up additional targeted donations for several projects, and dealing
+       with transition of the Infra Administrator position.
+
+       Separately, the financial report for October 2024 has been mailed to
+       board@.
+
+    <a class="selflink" href="#section-4D" id="section-4D">D. Secretary [Matt Sicker]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-4E" id="section-4E">E. Executive Vice President [Ruth Suehle]</a>
+
+       This month I met with colleagues from various foundations to hear from
+       the LF about their removal of Linux kernel maintainers with sanctioned
+       employers. I do not think there is currently anything for us to do
+       differently, but it is an ongoing discussion. (The LF will also soon
+       be releasing public reports about their work.)
+
+       I also gladly represented the ASF on an OSI-organized public policy
+       panel at All Things Open. The OSI is also in the process of looking
+       for a policy hire in the US, and as OPA members, this is a valuable
+       ongoing relationship.
+
+       The lost swag from C/C has finally (almost) finished arriving. There
+       are 12 cases of speaker gifts, which fortunately we did not order with
+       dates on them, and I will ship them to next year's event. The t-shirts
+       are en route to my house, and upon their arrival, I will set up some
+       kind of process by which people can request them at their own shipping
+       cost, or if we happen to be going to the same conference/place, I will
+       bring them with me. (Delightfully accepting suggestions on the most
+       efficient way to set this up.) And then whatever's left, I will also
+       deliver to next year's event. None of this is anyone's fault but UPS,
+       and our vendor has been amazing at helping work through it.
+
+    <a class="selflink" href="#section-4F" id="section-4F">F. Vice Chair [Justin Mclean]</a>
+
+       As usual, nothing to report.
+
+    Executive officer reports approved as submitted by General Consent.
+
+ <a class="selflink" href="#section-5" id="section-5">5. Additional Officer Reports</a>
+
+    <a class="selflink" href="#section-5A" id="section-5A">A. VP of W3C Relations [Andy Seaborne / Jeff]</a>
+
+       See Attachment 11
+
+    <a class="selflink" href="#section-5B" id="section-5B">B. Apache Legal Affairs Committee [Roman Shaposhnik / Craig]</a>
+
+       See Attachment 12
+
+    <a class="selflink" href="#section-5C" id="section-5C">C. Apache Security Team Project [Mark J. Cox / JB]</a>
+
+       See Attachment 13
+
+    Additional officer reports approved as submitted by General Consent.
+
+ <a class="selflink" href="#section-6" id="section-6">6. Committee Reports</a>
+
+    Summary of Reports
+
+     The following reports required further discussion:
+
+        # Druid [rbowen]
+        # Geode [rbowen]
+        # Logo Development [rbowen]
+        # Mnemonic [rbowen]
+        # Superset [rbowen]
+        # Tcl [Kanchana]
+
+    <a class="selflink" href="#section-6A" id="section-6A">A. Apache AGE Project [Jeff Jirsa]</a>
+
+       See Attachment A
+
+    <a class="selflink" href="#section-6B" id="section-6B">B. Apache Airavata Project [Suresh Marru / Rich]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6C" id="section-6C">C. Apache Ambari Project [Brahma Reddy Battula / Justin]</a>
+
+       See Attachment C
+
+    <a class="selflink" href="#section-6D" id="section-6D">D. Apache Ant Project [Jan Materne / Willem]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6E" id="section-6E">E. Apache Avro Project [Ryan Skraba / Kanchana]</a>
+
+       See Attachment E
+
+    <a class="selflink" href="#section-6F" id="section-6F">F. Apache BookKeeper Project [Enrico Olivelli / Sander]</a>
+
+       See Attachment F
+
+    <a class="selflink" href="#section-6G" id="section-6G">G. Apache Brooklyn Project [Juan D. Cabrerizo / Shane]</a>
+
+       See Attachment G
+
+    <a class="selflink" href="#section-6H" id="section-6H">H. Apache BuildStream Project [Tristan Van Berkom / Kanchana]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6I" id="section-6I">I. Apache Cassandra Project [Dinesh Joshi / Rich]</a>
+
+       See Attachment I
+
+    <a class="selflink" href="#section-6J" id="section-6J">J. Apache Celeborn Project [Keyong Zhou / Jeff]</a>
+
+       See Attachment J
+
+    <a class="selflink" href="#section-6K" id="section-6K">K. Apache Cocoon Project [C&eacute;dric Damioli / Willem]</a>
+
+       See Attachment K
+
+    <a class="selflink" href="#section-6L" id="section-6L">L. Apache Community Development Project [Swapnil Mane / JB]</a>
+
+       See Attachment L
+
+    <a class="selflink" href="#section-6M" id="section-6M">M. Apache CouchDB Project [Jan Lehnardt / Sander]</a>
+
+       See Attachment M
+
+    <a class="selflink" href="#section-6N" id="section-6N">N. Apache Creadur Project [Philipp Ottlinger / Shane]</a>
+
+       See Attachment N
+
+    <a class="selflink" href="#section-6O" id="section-6O">O. Apache DataSketches Project [Lee Rhodes / Craig]</a>
+
+       See Attachment O
+
+    <a class="selflink" href="#section-6P" id="section-6P">P. Apache DeltaSpike Project [Mark Struberg / Justin]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6Q" id="section-6Q">Q. Apache Directory Project [Shawn McKinney / Jeff]</a>
+
+       See Attachment Q
+
+    <a class="selflink" href="#section-6R" id="section-6R">R. Apache Doris Project [Mingyu Chen / Willem]</a>
+
+       See Attachment R
+
+    <a class="selflink" href="#section-6S" id="section-6S">S. Apache Drill Project [Charles Givre / Shane]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6T" id="section-6T">T. Apache Druid Project [Gian Merlino / Craig]</a>
+
+       See Attachment T
+
+       @Rich: follow up with updates to reporting tool template
+       regarding statistics
+
+    <a class="selflink" href="#section-6U" id="section-6U">U. Apache Empire-db Project [Rainer D&ouml;bele / Kanchana]</a>
+
+       See Attachment U
+
+    <a class="selflink" href="#section-6V" id="section-6V">V. Apache EventMesh Project [Eason Chen / JB]</a>
+
+       See Attachment V
+
+    <a class="selflink" href="#section-6W" id="section-6W">W. Apache FreeMarker Project [D&aacute;niel D&eacute;k&aacute;ny / Justin]</a>
+
+       See Attachment W
+
+    <a class="selflink" href="#section-6X" id="section-6X">X. Apache Geode Project [Mark Bretl / Rich]</a>
+
+       See Attachment X
+
+       @Rich: follow up with Security regarding Geode
+
+    <a class="selflink" href="#section-6Y" id="section-6Y">Y. Apache Gora Project [Kevin Ratnasekera / Sander]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6Z" id="section-6Z">Z. Apache Groovy Project [Paul King / Jeff]</a>
+
+       See Attachment Z
+
+    <a class="selflink" href="#section-6AA" id="section-6AA">AA. Apache Hop Project [Hans Van Akelyen / Kanchana]</a>
+
+       See Attachment AA
+
+    <a class="selflink" href="#section-6AB" id="section-6AB">AB. Apache HTTP Server Project [Joe Orton / Shane]</a>
+
+       See Attachment AB
+
+    <a class="selflink" href="#section-6AC" id="section-6AC">AC. Apache HttpComponents Project [Michael Osipov / Craig]</a>
+
+       See Attachment AC
+
+    <a class="selflink" href="#section-6AD" id="section-6AD">AD. Apache Ignite Project [Dmitry Pavlov / Justin]</a>
+
+       See Attachment AD
+
+    <a class="selflink" href="#section-6AE" id="section-6AE">AE. Apache Impala Project [Zolt&aacute;n Bor&oacute;k-Nagy / Rich]</a>
+
+       See Attachment AE
+
+    <a class="selflink" href="#section-6AF" id="section-6AF">AF. Apache Incubator Project [Justin Mclean]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6AG" id="section-6AG">AG. Apache Juneau Project [James Bognar / Sander]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6AH" id="section-6AH">AH. Apache Kafka Project [Mickael Maison / Justin]</a>
+
+       See Attachment AH
+
+    <a class="selflink" href="#section-6AI" id="section-6AI">AI. Apache Kibble Project [Sharan Foga / Willem]</a>
+
+       See Attachment AI
+
+    <a class="selflink" href="#section-6AJ" id="section-6AJ">AJ. Apache Knox Project [Larry McCay / JB]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6AK" id="section-6AK">AK. Apache Kylin Project [Shao Feng Shi / Kanchana]</a>
+
+       See Attachment AK
+
+    <a class="selflink" href="#section-6AL" id="section-6AL">AL. Apache Libcloud Project [Toma&zcaron; Muraus / Justin]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6AM" id="section-6AM">AM. Apache Logging Services Project [Piotr Karwasz / Willem]</a>
+
+       See Attachment AM
+
+    <a class="selflink" href="#section-6AN" id="section-6AN">AN. Apache Logo Development Project [Jeff Genender / Sander]</a>
+
+       See Attachment AN
+
+    <a class="selflink" href="#section-6AO" id="section-6AO">AO. Apache ManifoldCF Project [Piergiorgio Lucidi / Shane]</a>
+
+       See Attachment AO
+
+    <a class="selflink" href="#section-6AP" id="section-6AP">AP. Apache Mnemonic Project [Gordon King / Rich]</a>
+
+       No report was submitted.
+
+       @Kanchana: pursue a roll call for Mnemonic
+
+    <a class="selflink" href="#section-6AQ" id="section-6AQ">AQ. Apache Oozie Project [D&eacute;nes Bod&oacute; / Craig]</a>
+
+       See Attachment AQ
+
+    <a class="selflink" href="#section-6AR" id="section-6AR">AR. Apache OpenOffice Project [Dave Fisher / Jeff]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6AS" id="section-6AS">AS. Apache OpenWhisk Project [Dave Grove / Justin]</a>
+
+       See Attachment AS
+
+    <a class="selflink" href="#section-6AT" id="section-6AT">AT. Apache Ozone Project [Sammi Chen / Willem]</a>
+
+       See Attachment AT
+
+    <a class="selflink" href="#section-6AU" id="section-6AU">AU. Apache Perl Project [Steve Hay / JB]</a>
+
+       See Attachment AU
+
+    <a class="selflink" href="#section-6AV" id="section-6AV">AV. Apache Phoenix Project [Istvan Toth / Kanchana]</a>
+
+       See Attachment AV
+
+    <a class="selflink" href="#section-6AW" id="section-6AW">AW. Apache Pinot Project [Kishore G / Shane]</a>
+
+       See Attachment AW
+
+    <a class="selflink" href="#section-6AX" id="section-6AX">AX. Apache POI Project [Dominik Stadler / Willem]</a>
+
+       See Attachment AX
+
+    <a class="selflink" href="#section-6AY" id="section-6AY">AY. Apache Qpid Project [Robbie Gemmell / Sander]</a>
+
+       See Attachment AY
+
+    <a class="selflink" href="#section-6AZ" id="section-6AZ">AZ. Apache Ranger Project [Selvamohan Neethiraj / JB]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6BA" id="section-6BA">BA. Apache Ratis Project [Tsz-wo Sze / Jeff]</a>
+
+       See Attachment BA
+
+    <a class="selflink" href="#section-6BB" id="section-6BB">BB. Apache RocketMQ Project [Xiaorui Wang / Justin]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6BC" id="section-6BC">BC. Apache Roller Project [David M. Johnson / Justin]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6BD" id="section-6BD">BD. Apache Samza Project [Jagadish Venkatraman / Rich]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6BE" id="section-6BE">BE. Apache Santuario Project [Colm O hEigeartaigh / Craig]</a>
+
+       See Attachment BE
+
+    <a class="selflink" href="#section-6BF" id="section-6BF">BF. Apache SDAP Project [Nga Thien Chung / Sander]</a>
+
+       See Attachment BF
+
+    <a class="selflink" href="#section-6BG" id="section-6BG">BG. Apache Sedona Project [Jia Yu / Rich]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6BH" id="section-6BH">BH. Apache Serf Project [Daniel Sahlberg / Craig]</a>
+
+       See Attachment BH
+
+    <a class="selflink" href="#section-6BI" id="section-6BI">BI. Apache ServiceComb Project [Bao Liu / Jeff]</a>
+
+       See Attachment BI
+
+    <a class="selflink" href="#section-6BJ" id="section-6BJ">BJ. Apache ShardingSphere Project [Liang Zhang / Willem]</a>
+
+       See Attachment BJ
+
+    <a class="selflink" href="#section-6BK" id="section-6BK">BK. Apache ShenYu Project [Yu Xiao / JB]</a>
+
+       See Attachment BK
+
+    <a class="selflink" href="#section-6BL" id="section-6BL">BL. Apache SIS Project [Martin Desruisseaux / Justin]</a>
+
+       See Attachment BL
+
+    <a class="selflink" href="#section-6BM" id="section-6BM">BM. Apache Solr Project [Jason Gerlowski / Kanchana]</a>
+
+       See Attachment BM
+
+    <a class="selflink" href="#section-6BN" id="section-6BN">BN. Apache Spark Project [Matei Alexandru Zaharia / Shane]</a>
+
+       See Attachment BN
+
+    <a class="selflink" href="#section-6BO" id="section-6BO">BO. Apache StreamPipes Project [Philipp Zehnder / Justin]</a>
+
+       See Attachment BO
+
+    <a class="selflink" href="#section-6BP" id="section-6BP">BP. Apache Subversion Project [Nathan Hartman / Jeff]</a>
+
+       See Attachment BP
+
+    <a class="selflink" href="#section-6BQ" id="section-6BQ">BQ. Apache Superset Project [Maxime Beauchemin / Craig]</a>
+
+       See Attachment BQ
+
+       @Rich: follow up with details regarding AI tooling
+
+    <a class="selflink" href="#section-6BR" id="section-6BR">BR. Apache Syncope Project [Francesco Chicchiricc&ograve; / Rich]</a>
+
+       See Attachment BR
+
+    <a class="selflink" href="#section-6BS" id="section-6BS">BS. Apache SystemDS Project [Matthias Boehm / Sander]</a>
+
+       See Attachment BS
+
+    <a class="selflink" href="#section-6BT" id="section-6BT">BT. Apache Tapestry Project [Thiago Henrique De Paula Figueiredo / JB]</a>
+
+       See Attachment BT
+
+    <a class="selflink" href="#section-6BU" id="section-6BU">BU. Apache Tcl Project [Georgios Petasis / Kanchana]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6BV" id="section-6BV">BV. Apache TomEE Project [David Blevins / Justin]</a>
+
+       See Attachment BV
+
+    <a class="selflink" href="#section-6BW" id="section-6BW">BW. Apache Traffic Control Project [Eric Friedrich / Willem]</a>
+
+       See Attachment BW
+
+    <a class="selflink" href="#section-6BX" id="section-6BX">BX. Apache TsFile Project [Jialin Qiao / Shane]</a>
+
+       See Attachment BX
+
+    <a class="selflink" href="#section-6BY" id="section-6BY">BY. Apache Turbine Project [Georg Kallidis / Jeff]</a>
+
+       See Attachment BY
+
+    <a class="selflink" href="#section-6BZ" id="section-6BZ">BZ. Apache Velocity Project [Nathan Bubna / JB]</a>
+
+       See Attachment BZ
+
+    <a class="selflink" href="#section-6CA" id="section-6CA">CA. Apache Web Services Project [Daniel Kulp / Willem]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6CB" id="section-6CB">CB. Apache Whimsy Project [Shane Curcuru]</a>
+
+       See Attachment CB
+
+    <a class="selflink" href="#section-6CC" id="section-6CC">CC. Apache Xalan Project [Gary D. Gregory / Sander]</a>
+
+       See Attachment CC
+
+    <a class="selflink" href="#section-6CD" id="section-6CD">CD. Apache Xerces Project [Michael Glavassevich / Kanchana]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6CE" id="section-6CE">CE. Apache XML Graphics Project [Clay Leeds / Craig]</a>
+
+       No report was submitted.
+
+    <a class="selflink" href="#section-6CF" id="section-6CF">CF. Apache YuniKorn Project [Wilfred Spiegelenburg / Shane]</a>
+
+       See Attachment CF
+
+    Committee reports approved as submitted by General Consent.
+
+ <a class="selflink" href="#section-7" id="section-7">7. Special Orders</a>
+
+ <a class="selflink" href="#section-8" id="section-8">8. Discussion Items</a>
+
+    <a class="selflink" href="#section-8A" id="section-8A">A. DIscuss Legal Affairs reporting</a>
+
+       Review recent discussion around Legal Affairs reporting
+       of more complex issues, and what location is appropriate.
+
+
+
+    <a class="selflink" href="#section-8B" id="section-8B">B. Executive Session</a>
+
+       Discuss potential legal-related sanctions issues with President/EVP.
+
+       Ruth provided a report to the board in changes in sanction law.
+
+       The board appointed Ruth Suehle to President and David Nalley to
+       Executive Vice President by unanimous vote.
+
+    <a class="selflink" href="#section-8C" id="section-8C">C. Propose dates for Annual Member Meeting</a>
+
+       Start planning date for Annual Member Meeting, for a specific week 
+       in Feb/Mar 2025, using async voting as in past year.
+
+       The board has selected March 6 as the next annual member meeting date.
+
+ <a class="selflink" href="#section-9" id="section-9">9. Review Outstanding Action Items</a>
+
+    * Justin: follow up with PMC about board report sections
+          [ TomEE 2024-06-19 ]
+          Status:
+
+    * David: follow up with report about shadow infrastructure budget
+          [ President 2024-06-19 ]
+          Status:
+
+    * Shane: follow up about enforcement for privacy policies
+          [ Data Privacy 2024-07-17 ]
+          Status:
+
+    * Justin: update trademark registration runbook
+          [ Trademark management status briefing VP, Brand Management 2024-07-17 ]
+          Status:
+
+    * Shane: update Incubation guidelines to include trademark grant
+          [ Trademark management status briefing VP, Brand Management 2024-07-17 ]
+          Status:
+
+    * Justin: follow up on issue for board
+          [ Kafka 2024-08-21 ]
+          Status:
+
+    * Willem: follow up with Attic about terminology/processes for archiving
+          [ Logging Services 2024-08-21 ]
+          Status: Logging Services introduced a dormant lab for the project into
+                  the low maintance mode which give a chance for the subproject
+                  to be active again. The PMC still take care of these
+                  subprojects.
+
+    * Justin: follow up with trademarks
+          [ RocketMQ 2024-08-21 ]
+          Status:
+
+    * Craig: Start discussion on board@ list on security board reports
+          [ Commons 2024-09-18 ]
+          Status: Done. Security is more active in engaging projects that have
+                  security issues. No further action is required at this time.
+
+    * Rich: Discuss account recovery with PMC and Infra
+          [ Pekko 2024-09-18 ]
+          Status: Done: No board action required. As far as I can gather, Infra
+                  has given Pekko a specific path to follow -
+                  https://lists.apache.org/thread/o7dcz9f1r1ojf0mcocxzcbz6rx4o6mhz
+                  - and is now waiting for them to respond, about 2 months on.
+                  Infra says: "The outcome was that I asked the person to
+                  perform signature validation, and they were unable to do so. I
+                  asked the PMC multiple times if anyone could vouch for the
+                  person, and they did not respond. Infra's position is that
+                  this person is unable to validate that they are the original
+                  account holder." The relevant ticket is
+                  https://issues.apache.org/jira/browse/INFRA-26106
+
+    * Justin: Discuss reporter tooling requirements
+          [ Shiro 2024-09-18 ]
+          Status:
+
+    * Greg: Write up a proposed resolution to require tooling to validate email
+          [ Discuss list subscription tools 2024-09-18 ]
+          Status:
+
+    * Jeff: Start discussion of communications on board@ specifically the use of
+          [ New Business 2024-09-18 ]
+          Status:
+
+    * Kanchana: pursue a roll call for PMC
+          [ CarbonData 2024-10-16 ]
+          Status:
+
+    * Rich: pursue a roll call for PMC
+          [ DataFu 2024-10-16 ]
+          Status: Done Roll call requested, 2024-11-14
+                  https://lists.apache.org/thread/fmhgfk4mxtmxgrvh25xvq4n8mcd3rld9
+                  Three engaged responses, and a commitment to start the
+                  discussion of the future on the Dev list soon.
+
+    * Willem: pursue an attic resolution
+          [ jclouds 2024-10-16 ]
+          Status:
+
+    * Justin: pursue a roll call for PMC
+          [ Libcloud 2024-10-16 ]
+          Status:
+
+    * Rich: find out about attic plans
+          [ MADlib 2024-10-16 ]
+          Status: Done: I've prodded the PMC to elaborate on their plans for the
+                  future, as their board report does not give us any insight
+                  there.
+                  https://lists.apache.org/thread/1h12rmmy8hqk13vkpnzc9t1m3gw1ln54
+                  I'm impressed with the engagement with Cloudberry, and I think
+                  it's probably good to give this a few more months to percolate
+                  and see what emerges. No concerns here.
+
+    * Rich: talk with PMC about certification request
+          [ NuttX 2024-10-16 ]
+          Status: I've asked for additional detail here, 2024-11-14
+                  https://lists.apache.org/thread/h9tjhbn9x35mvff3rbs3hp89mklj366c
+                  No response so far.
+
+    * Craig: pursue an audit on ramp cards
+          [ Review expense accounting categories 2024-10-16 ]
+          Status:
+
+<a class="selflink" href="#section-10" id="section-10">10. Unfinished Business</a>
+
+<a class="selflink" href="#section-11" id="section-11">11. New Business</a>
+
+<a class="selflink" href="#section-12" id="section-12">12. Announcements</a>
+
+<a class="selflink" href="#section-13" id="section-13">13. Adjournment</a>
+
+    Adjourned at 22:00 UTC
+
+============
+ATTACHMENTS:
+============
+
+-----------------------------------------
+<a class="selflink" href="#attachment-1" id="attachment-1">Attachment 1: Report from the VP of Brand Management  [Mark Thomas]</a>
+
+Covering the period October 2024
+
+* ISSUES FOR THE BOARD
+
+None.
+
+
+* OPERATIONS
+
+- Corrected the foundation website so it points to the correct list for
+  trademark questions.
+- Reviewed the name search for ANSWER
+- Directed on request event approval to planners@ since the proposed dates may
+  conflict with CoC 2025
+- Provided advice to AIRFLOW regarding using of project name/logo in a new
+  initiative from a commercial vendor
+- Approved name search for PEGASUS
+
+
+* REGISTRATIONS
+
+Worked with counsel to progress our FREEMARKER registration in the US.
+
+Worked with counsel to maintain our OPENOFFICE registration in the US.
+
+
+* INFRINGEMENTS
+
+Continued to work with counsel to address an infringement of our FREEMARKER
+mark.
+
+Continue to chase a downstream vendor regarding multiple infringements of ASF
+marks.
+
+Submitted public issue to restack.io's GitHub repo after several months of no
+response to emails raising concerns.
+
+The KAFKA PMC has resolved an issue with an external training vendor.
+
+The DORIS PMC has resolved an issue with an external product vendor.
+
+The ICEBERG PMC has resolved an issue with an external product vendor.
+
+The AIRFLOW PMC identified and resolved an issue with  an external product
+vendor that also impacted other ASF marks.
+
+Continue to work with the ICEBERG PMC to resolve an issue with an account on
+LinkedIn.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-2" id="attachment-2">Attachment 2: Report from the VP of Fundraising  [Bob Paulin]</a>
+
+1) ASF Sponsors:
+
+a &mdash;New: no new Sponsors were onboarded during this timeframe.
+
+b &mdash;Renewals: we have renewal commitments from eight sponsors, and are
+reviewing renewals with several Sponsors who are soon finalizing their 2025
+budgets. One Sponsor has confirmed their renewal downgrade from Platinum to
+Gold, and one has upgraded from Gold to Platinum.
+
+c &mdash;Payments: 1 &mdash;New: we received one new Platinum Sponsor payment.
+
+    2a &mdash;Renewing: we received payment from one renewing Platinum, and one
+    renewing Bronze Sponsor. Additionally, we have successfully recouped a
+    missing multi-year payment from a Gold Targeted Sponsor.
+
+    2b &mdash;Incoming: we await payment from two renewing Platinum, four renewing
+    Gold, and one new Bronze Sponsor.
+
+
+2) Targeted Sponsors: we are finalizing a handful of Targeted Sponsorships
+that include: transitioning a Sponsor-administered donation of in-kind
+services to a new, three-year cash donation for services to be administered by
+the beneficiary PMC; renewal of an existing Targeted Sponsorship through 2028;
+and coordinating intake of a new Targeted Sponsorship with the Treasury and
+beneficiary ASF Project Management Committee.
+
+
+3) Sponsor Relations: we held the Q4 call with ASF Gold and Platinum-level
+Sponsors; EVP Ruth Suehle presented highlights from Community Over Code in
+October, and Fundraising introduced upcoming budget increases towards new ASF
+Initiatives such as Tooling. Regular outreach is ongoing, with all Sponsors
+receiving sponsor-focused monthly emailed news updates.
+
+
+4) Event Sponsorship: we are tying up loose ends with a few event sponsors
+with outstanding contract and/or payment issues for Community Over Code/North
+America.
+
+
+5) Individual Donations and Corporate Giving: we received $890 in online
+donations via https://donate.apache.org/ . We received no online corporate
+contributions during this timeframe.
+
+
+6) Administrivia: we continue to work closely with the Accounting and Treasury
+teams to correct several instances of missed and/or incomplete invoicing and
+to collect on the missing funds, where possible. A notable success is our
+receipt of a 5-month-delayed Platinum Sponsor renewal payment that was
+rejected by the international intermediary bank. We liaised introductions with
+ASF Treasurer and our primary online donation platform to accommodate changes
+in one of our legacy third party payment processing accounts. We are working
+with Marketing &amp; Publicity on updating ASF Sponsor benefits, preparing for
+2024 End-of-Year giving campaigns, and promoting upcoming ASF Initiative
+Targeted Sponsorship opportunities.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-3" id="attachment-3">Attachment 3: Report from the VP of Marketing and Publicity  [Brian Proffitt]</a>
+
+Foundation Comms
+* First Contribution Campaign: published 11th blog in the series, focusing on
+  community collaboration
+* Launched the first edition of the Plus One Newsletter, a monthly new
+  bulletin to showcase major milestones, news, events, and activities across
+  the ASF project ecosystem.
+* Published Project Spotlight blog featuring Apache Tika and its participation
+  in the AIxCC competition
+* Began developing press release touting new Fundraising category, ASF
+  Initiatives
+* Provided PR guidance to Dell PR team re: announcement mentioning Apache
+  Spark and Apache Airflow
+
+Media Relations
+* Secured inclusion in an InfoWorld feature &ldquo;How do we fund open source?&rdquo;
+  which included a quote from Ruth Suehle
+* Responded to inquiry from Bloomberg re: security vulnerabilities in OSS and
+  ASF&rsquo;s quote was included, &ldquo;Hackers Still Target Outdated Software Flaw,
+  Despite Available Fixes&rdquo;
+* Pitched CoC news package to key media resulting in coverage on FOSS Force
+
+Community Over Code NA News Package
+
+* Distributed and promoted two news announcements:
+ * Tomcat 11.0 + 25th Anniversary
+ * Cassandra 5.0
+
+Website
+
+* Provided wireframe mockups to Fundraising team for review
+
+Branding Project
+
+* Coordination with Logo-Dev PMC continues, see PMC report
+
+Social Media Overview
+
+In total, 66 posts were published: 50 Tweets + 16 LinkedIn. The highest
+performing pieces of content include Tika project spotlight; Tomcat&rsquo;s
+anniversary and 11.0 release; and Cassandra 5.0.
+
+Social Highlights (X + LinkedIn)
+* Total Audience: 141,006
+* New Followers in September: 579^
+* Total Impressions: 77,259 (8.9% decrease MoM)
+* Total Engagements: 3,195 (36.1% increase MoM)
+* Post Link Clicks: 1,927 (62.3% increase MoM)
+
+^ ASF&rsquo;s LinkedIn network actually grew by 625 followers in October, but X
+  continues to lose users, causing total net new followers to be lower.
+
+Website Analytics
+
+* 963,207 visits, 963,174 unique visitors +3.7%
+* 2 min 33s average visit duration 0%
+* 44% visits have bounced (left the website after one page) +2.3%
+* 11.9 actions (page views, downloads, outlinks, internal site searches) per
+  visit +15.5%
+* 10,003 max actions in one visit 0%
+* 10,555,161 pageviews, 1,191,028 unique pageviews +21.6%
+* 3 total searches on your website, 2 unique keywords -82.4%
+* 559,157 downloads, 379,222 unique downloads -0.3%
+* 305,048 outlinks, 217,563 unique outlinks -6.5%
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-4" id="attachment-4">Attachment 4: Report from the VP of Infrastructure  [Myrle Krantz]</a>
+
+Infrastructure Report - November 2024
+
+Despite personnel changes leaving Infra short-staffed, the team continues to smoothly maintain all services. There are no immediate risks related to staffing, and transitional/handoff work has gone smoothly. 
+
+Existing projects surrounding email system improvements and our Atlassian Cloud projects are current priorities, along with reducing our open ticket count. There have been no major outages, although there have been some email slowdowns related to upstream providers blocking or rate limiting our email. These are being addressed with the larger effort surrounding SPF/DKIM/DMARC improvements in our email infrastructure.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-5" id="attachment-5">Attachment 5: Report from the VP of Tooling  [Myrle Krantz]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-6" id="attachment-6">Attachment 6: Report from the VP of Conferences  [Brian Proffitt]</a>
+
+Dates and venues are being narrowed down for Community Over Code NA 2025.
+
+No decision has been made on Community Over Code EU for 2025. While there is
+much desire among members to do an event in the EU (along with an NA event),
+there is the very real problem of not having local representatives to handle
+bookings and contracts in the local language. Without local EU help, or a
+third-party event organizer, pulling off two events a year will be very
+challenging. It may be better in the long run to alternate between continents
+moving forward.
+
+Sponsorship
+
+After coordination with VP, Fundraising and VP, Sponsor Relations, in 2025 all
+three teams are going to launch a pilot program to optionally bundle event
+sponsorship for the 2025 NA conference into ASF Platinum and Gold
+sponsorships. If successful, this will provide additional value to our
+corporate sponsors, and bring in more funding and potentially more attendees
+to our Community Over Code events.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-7" id="attachment-7">Attachment 7: Report from the Apache Travel Assistance Committee  [Gavin McDonald]</a>
+
+Previous Events
+===============
+
+Community Over Code EU/Asia/NA 2024
+----------------------------
+
+Post event surveys are coming in but need completing and posting to
+the tac website.
+
+
+Current Events
+==============
+
+No current events. Fosdem is the next event we usually support a few
+people attending and so we should open up applications for that one
+soon.
+
+Monthly Meetings
+================
+
+With no current events these meetings are ad-hoc. I will arrange one
+for next month to talk about Fosdem at least.
+
+TAC App
+=======
+
+TAC App is closed currently with no events happening. At some point
+soon, we need to gather a set of improvements / bug tweaks for a quote
+to improve the app.
+
+Future Events
+=============
+
+Looking into other events.
+
+Short/Medium Term Priorities
+============================
+
+Keeping an eye out for other smaller events to support. Post surveys
+for Bratislava, Hangzhou and Denver.
+
+Mailing List Activity
+=====================
+
+Not much activity this month
+
+Membership
+==========
+
+Ruth Suehle joined the Committee in October - welcome Ruth!
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-8" id="attachment-8">Attachment 8: Report from the VP of Diversity and Inclusion  [David Nalley]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-9" id="attachment-9">Attachment 9: Report from the VP of Data Privacy  [Christian Grobmeier]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-10" id="attachment-10">Attachment 10: Report from the VP of Public Affairs  [Dirk-Willem van Gulik]</a>
+
+Not much change w.r.t. to public policy. Minor points:
+
+- Open regulatory working group is bootstrapping its governance/oversight and
+  is now public (https://orcwg.org). As a reminder - this is our industry and
+  industry peers - and expected to deliver a writeup on industry
+  best/consensus practices as a baseline for the CRA and input for the
+  standards processes.
+
+ At least Brian Fox and I should nominate ourselves. Hoping I find a 3rd ASF
+ person.
+
+- Various process delays around the official publications (i.e. the formal
+  gazetteer or hansard in which laws/acts are made formal); none projected to
+  matter much (to us/open source).
+
+-       Polish EU presidency: We now have two ASF polish members (Jarek,
+        Piotr) providing  on-the-ground expertise and insights as
+        representatives of the open source community as part of the OFE
+        Capital Event Series.
+
+- Various formal standards processes are getting underway - with (barely but)
+  enough open source voices present. The board is stacked against non-national
+  aligned interests though. And the US (NIST, etc) is not yet active. The
+  various IP issues have resurfaced.
+
+- The review of 1024 (meta rules on how standards are made internationally) is
+  not going well. In effect, there is little or no self-reflection.
+
+ Both by the industry/old incumbent telco's of old -and- by the regulators.
+ This is not helping with much with the much needed modernisation &amp; making it
+ suitable for an age in which software, rather than voltages &amp; capacitance on
+ ethernet pins, is the topic. And completely ignores the elephant in the room
+ - that 90% of the internet/software originates &amp; innovates as open source -
+   not as a proprietary single company interest.
+
+ The impact on us is basically that efforts like the open regulatory working
+ group get all the more important.
+
+- Various expert committees are getting filled in order to prepare the
+  compliance/regulator side of the CRA, AI, et.al. ASF members have applied -
+  no yes/no's yet.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-11" id="attachment-11">Attachment 11: Report from the VP of W3C Relations  [Andy Seaborne]</a>
+
+Nothing to report this month.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-12" id="attachment-12">Attachment 12: Report from the Apache Legal Affairs Committee  [Roman Shaposhnik]</a>
+
+Past month has been pretty calm. Committee members took good care of resolving
+most issues on time. After resolving a handful of LEGAL issues, we are
+slightly up at 30 issues (from 27 last month).
+
+We received one DMCA Takedown Notice and promptly addressed it. No further
+action is necessary.
+
+An outside vendor contacted us requesting that we become Digital Operational
+Resilience Act (DORA) compliant by January 17, 2025. We pointed out that their
+request was misdirected.
+
+Sublicense vs. Relicense language was discussed and we're working on adding
+the explanation to the LEGAL FAQ (see LEGAL-687 for more details).
+
+We have received a public request for clarification on the issues of "license
+enforcement when it comes to sanctions". We didn't provide an official public
+response (simply because we can NOT provide official legal advice to community
+members).
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-13" id="attachment-13">Attachment 13: Report from the Apache Security Team Project  [Mark J. Cox]</a>
+
+October
+
+* This is the first Security board report that includes
+  project-specific health concern notes in the public part of the
+  report.
+
+* Some press stories about old security vulnerabilities, such as
+  Log4Shell and RocketMQ. There was also some coverage of more
+  recent disclosures, like for recent Avro and OFBiz
+  vulnerabilities.
+  https://www.bloomberg.com/news/newsletters/2024-10-09/hackers-still-target-outdated-software-flaw-despite-available-fixes
+  https://arstechnica.com/security/2024/10/persistent-stealthy-linux-malware-has-infected-thousands-since-2021/
+  https://thehackernews.com/2024/10/critical-apache-avro-sdk-flaw-allows.html
+  https://thehackernews.com/2024/09/apache-ofbiz-update-fixes-high-severity.html
+
+* A flaw in OFBiz, CVE-2024-38856 which was reported by a large number
+  of seemingly-independent researchers, was added to CISA's Known
+  Exploited Vulnerabilities catalog (KEV).
+
+* We've taken further inventory of which projects are already
+  publishing Software Bill of Materials (SBOM) information for their
+  published artifacts. For visibility and experimentation, we're
+  aggregating SBOMs in a GitHub repo and publish an interactive
+  graph of relationships between artifacts from different projects.
+  https://github.com/apache/security-site/tree/sboms
+  https://sbom.security.apache.org/
+
+  This sparked some discussion on the security-discuss list on how to
+  provide accurate and complete SBOMs, which led to an upstream
+  discussion for the cyclonedx-maven-plugin.
+  https://github.com/CycloneDX/cyclonedx-maven-plugin/issues/472
+
+Stats for October 2024:
+
+        32 [license confusion]
+        20 [report/question relating to dependencies]
+        13 [support request/question not security notification]
+
+Security reports: 76 (last months: 72, 64, 88)
+
+        16 ['website or other infrastructure']
+        10 ['fineract']
+        7 ['huntr']
+        6 ['airflow']
+        4 ['httpd']
+        3 ['superset']
+        2 ['kafka', 'vlc']
+        1 ['activemq', 'arrow', 'carbondata', 'cloudstack', 'cwe', 'doris',
+        'guacamole', 'hertzbeat', 'hive', 'jackrabbit', 'libcloud',
+        'logging', 'manifoldcf', 'mina', 'mynewt', 'openjpa', 'ponymail',
+        'rocketmq', 'seata', 'shiro', 'solr', 'spamassassin', 'spark',
+        'tomcat', 'website', 'zeppelin']
+
+In total, as of 1st November 2024, we're tracking 175 (last months:
+179, 176) open issues across 63 projects, median age 107 days (last
+months: 69, 95). 62 of those issues have CVE names assigned.
+
+15 (last month: 20) of these issues, across 9 projects, are older
+than 365 days.
+
+Updates for projects with 'amber' or 'red' health status:
+
+* ambari (Health amber): patchy responsiveness to security team over
+  reported issues. PMC states this is due to a very small
+  community. We have advised them to seek help from experts outside
+  the PMC on a case by case basis (Last update: 2024-10-14)
+
+* commons (Health amber): One issue in Commons is over 365 days old
+  (Last update: 2024-10-15)
+
+* fineract (Health amber): the PMC has been attempting to engage more
+  of the wider Fineract ecosystem to help triage, fix and release
+  security issues, but with limited effect so far. (Last update:
+  2024-11-01)
+
+* geode (Health red): Four issues in Geode over 365 days old. The
+  project has voted to move to the Attic, but there might be a chance
+  of revisiting that decision if relevant stakeholders successfully
+  join the effort. (Last update: 2024-11-01)
+
+* hive (Health amber): Three issues in Hive are over 365 days old
+  (Last update: 2024-10-01)
+
+* oozie: not making releases (Health red): Project appears dormant. An
+  issue in Oozie is over 365 days old. We are at the first step of the
+  formal escalation process. (Last update: 2024-11-02)
+
+* openoffice (Health amber): Three issues in OpenOffice over 365 days
+  old and a number of other open issues not fully triaged. (Last
+  update: 2024-10-25)
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-A" id="attachment-A">Attachment A: Report from the Apache AGE Project  [Jeff Jirsa]</a>
+
+## Description:
+The mission of Apache AGE is the creation and maintenance of software related 
+to a multi-model database that enables graph and relational models built on 
+PostgreSQL
+
+## Project Status:
+Current project status: Ongoing, but with reducing velocity
+Issues for the board: None
+
+## Membership Data:
+Apache AGE was founded 2022-05-17 (2 years ago)
+There are currently 18 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Rafsun Masud on 2024-01-28.
+- No new committers. Last addition was Zainab Saad on 2024-01-31.
+
+## Project Activity:
+Project activity is at a local minimum - there have been zero commits to the
+project since September. While GitHub issues are being opened, actual project
+activity (bug fixes, PR merging) has begun to stagnate.
+
+## Community Health:
+While GitHub issues are being opened, actual project activity (bug fixes, PR
+merging) has begun to stagnate.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-B" id="attachment-B">Attachment B: Report from the Apache Airavata Project  [Suresh Marru]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-C" id="attachment-C">Attachment C: Report from the Apache Ambari Project  [Brahma Reddy Battula]</a>
+
+## Description:
+The mission of Apache Ambari is the creation and maintenance of software 
+related to Hadoop cluster management
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Ambari was founded 2022-06-15 (2 years ago)
+There are currently 21 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 7:6.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Mohammad Arshad on 2024-05-05.
+- No new committers. Last addition was Jialiang Cai on 2024-07-26.
+
+## Project Activity:
+We are planning to drop a release as we fixed one security issue.
+
+Recent releases:
+2.7.8 was released on 2024-02-01.
+metrics-3.0.0 was released on 2023-03-13.
+2.7.7 was released on 2022-12-11.
+
+## Community Health:
+There are active discussion/developement and contributions are 
+happening on the new features like JDK17 Support, 
+Ambari UI moderinzation (Like Jquery to reactJS, emberJS to reactJS) 
+and bug fixes on.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-D" id="attachment-D">Attachment D: Report from the Apache Ant Project  [Jan Materne]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-E" id="attachment-E">Attachment E: Report from the Apache Avro Project  [Ryan Skraba]</a>
+
+## Description:
+Apache Avro is a data serialization system with a compact binary format. It is
+used for storing and transporting schema-driven serialized data. The unique
+features of Avro include automatic schema resolution: when the reader's
+expected schema is different from the actual schema with which the data was
+serialized the data is automatically adapted to meet reader's requirements.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Avro was founded 2010-04-21 (15 years ago)
+There are currently 39 committers and 27 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:5.
+
+Community changes, past quarter:
+- Oscar Westra van Holthe - Kind was added to the PMC on 2024-08-27
+- No new committers. Last addition was Christophe Le Saec on 2023-08-12.
+
+## Project Activity:
+
+We had two releases in this last quarter: 1.12.0 and 1.11.4 on 2024-09-24 in
+order to address a reported vulnerability CVE-2024-47561. This was a
+particular success for us for two reasons: (1) we're now supporting security
+fixes on two major versions and (2) different people managed this release,
+sharing the work and expertise, and finding some rough edges in the process to
+be improved.
+
+This quarter, the community voted to separate the Rust SDK into a separate
+repository (avro-rs) to facilitate its development and decouple its release
+cycle from the rest of the project.  This is going to be an interesting
+experiment that we can consider applying to other Avro language SDKs in the
+future.
+
+We are in a good place to release new minor versions if necessary.
+
+## Community Health:
+
+Mailing Lists:
+- dev@avro.apache.org had 546 emails (+53% change)
+- issues@avro.apache.org (mostly notifications) had 828 emails (+50% change)
+- user@avro.apache.org continues to have very little traffic, 13 total
+
+JIRA:
+- 76 issues opened (+76% change)
+- 55 issues closed (+5% change)
+
+Code Repository:
+- 200 commits in the past quarter (+21% change)
+- 28 code contributors in the past quarter (+33% change)
+
+GitHub:
+- 200 PRs opened on GitHub, past quarter (+22% change)
+- 173 PRs closed on GitHub, past quarter (+7% change)
+
+All of the measures of project activity have increased this quarter, due to
+the releases. Our previous quarter was oddly slow, so this is a return to
+normal activity for us.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-F" id="attachment-F">Attachment F: Report from the Apache BookKeeper Project  [Enrico Olivelli]</a>
+
+## Description:
+The mission of BookKeeper is the creation and maintenance of software related 
+to Replicated log service which can be used to build replicated state machines
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache BookKeeper was founded 2014-11-19 (10 years ago)
+There are currently 32 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was ZhangJian He on 2024-06-14.
+- No new committers. Last addition was Lari Hotari on 2024-06-12.
+
+## Project Activity:
+No new releases in the current quarter, but we are accepting and committing
+patches. We will cut new release when requested by the community.
+
+* 4.7.1 was released on 2024-06-26
+* 4.16.6 was released on 2024-06-26
+* 4.16.5 was released on 2024-04-03
+
+## Community Health:
+
+We have some small but constant flow of contributions, we have some new
+contributors, contributing both improvements to the code base (testing
+frameworks), bugfixes and performance improvements. This is a good sign of the
+health of the project. There are a few patches that are waiting for review, we
+should take more care of the backlog of reviews.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-G" id="attachment-G">Attachment G: Report from the Apache Brooklyn Project  [Juan D. Cabrerizo]</a>
+
+## Description:
+The mission of Apache Brooklyn is the creation and maintenance of software 
+related to a software framework for modeling, monitoring and managing cloud 
+applications through autonomic blueprints.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: There are no issues requiring board attention
+
+## Membership Data:
+Apache Brooklyn was founded 2015-11-18 (9 years ago)
+There are currently 20 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Iuliana Cosmina on 2021-06-04.
+- No new committers. Last addition was Mykola Mandra on 2022-03-08.
+
+## Project Activity:
+- The last major Brooklyn release was 1.1.0, released on 19/02/2024
+
+## Community Health:
+Project activity has declined in recent weeks.
+I have confirmed with the most active contributors their continued 
+commitment with the project.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-H" id="attachment-H">Attachment H: Report from the Apache BuildStream Project  [Tristan Van Berkom]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-I" id="attachment-I">Attachment I: Report from the Apache Cassandra Project  [Dinesh Joshi]</a>
+
+Are you able to provide adequate oversight of your project? That is, are there
+at least three PMC members who are engaged enough to respond in the event of a
+CVE or similar crisis?
+
+Yes. There are many PMC members actively participating in dev and private list
+conversations. As mentioned in the last board report 19 PMC members have
+responded to the roll call. A fresh roll call is in progress as of writing
+this board report.
+
+
+Are there current or upcoming risks that threaten the sustainability of your
+project? This could be anything from a change in employment of prolific
+contributors, to an acquisition affecting a significant corporate contributor,
+to a change in the technology landscape that makes your project less (or more)
+relevant.
+
+No current or upcoming risks known at this time. We continue to expand the
+roster of the PMC with individuals with diverse corporate sponsorship
+backgrounds as well as representation of our sub-projects. The project has a
+new major release of Cassandra &ndash; 5.0 with 2 fast follow patch releases. The
+project also had new releases of Cassandra 4.1 and 4.0. Discussions around
+releases for the sub-projects are also in progress. We also have new code
+donations coming in.
+
+2024 has seen a shift in companies' investment of employees' time in the
+project.  Some of this is aligned with already known priorities from these
+companies investing into different major versions. This is not impacting the
+project's momentum or sustainability, as the diversity of contributor
+employers continues to grow.
+
+
+What can the Foundation do to more effectively make your project more
+successful in its mission of providing software for the public good?
+
+It would be helpful for the Foundation to support the project in areas such as
+infrastructure to periodically scan for security vulnerabilities, PMC-private
+vulnerability report tracking, additional self service options for qbot
+configuration, dockerhub repository creation, etc.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-J" id="attachment-J">Attachment J: Report from the Apache Celeborn Project  [Keyong Zhou]</a>
+
+## Description:
+The mission of Apache Celeborn is the creation and maintenance of software 
+related to an intermediate data service for big data computing engines to boost 
+performance, stability, and flexibility
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Celeborn was founded 2024-03-20 (8 months ago)
+There are currently 22 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Mridul Muralidharan was added to the PMC on 2024-09-20
+- No new committers. Last addition was Fei Wang on 2024-07-23.
+
+## Project Activity:
+Software development activity:
+
+ - Release 0.5.2 is in the process of voting.
+ - CIP-6 Support Flink hybrid shuffle is almost finished.
+ - CIP-7 Celeborn CLI is under development.
+ - CIP-11 Support worker tags is under development.
+ - CIP-12 Support HARD_SPLIT in PushMergedData has passed a vote.
+ - CIP-14 Support CPP SDK has passed a vote.
+ - Support for Apache Tez is almost finished.
+
+Meetups and Conferences:
+
+ - 1 related talk was given in Apache CoC NA 2024.
+
+Recent releases:
+
+- 0.5.1 was released on July 29th, 2024.
+- 0.4.2 was released on July 26th, 2024.
+- 0.5.0 was released on June 24th, 2024.
+
+## Community Health:
+Overall community health is good. In the past quarter, the dev mail list mail 
+number had a 50% decrease in the past quarter to 129, the PMC considered it as
+normal because the absolute number is relatively low. The issues mail list had a
+14% increase to 1638. We have been performing extensive outreach for our users,
+and encouraging them to contribute back to the project. Also, we are active in
+making a voice in various conferences to attract more users.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-K" id="attachment-K">Attachment K: Report from the Apache Cocoon Project  [C&eacute;dric Damioli]</a>
+
+## Description:
+The mission of Cocoon is the creation and maintenance of software related to 
+Web development framework: separation of concerns, component-based
+
+## Project Status:
+Current project status: Considering moving to the Attic
+Issues for the board: none.
+
+## Membership Data:
+Apache Cocoon was founded 2003-01-22 (22 years ago)
+There are currently 80 committers and 34 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Christofer Dutz on 2024-01-30.
+- No new committers. Last addition was Christofer Dutz on 2023-05-10.
+
+## Project Activity:
+No recent activity, the Attic vote has passed,
+we now have to process due tasks.
+
+## Community Health:
+Now that the Attic vote has passes, the heartbeat is
+obviously very low. As reminded last quarter, we have to
+officially inform the users list of the termination of the project
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-L" id="attachment-L">Attachment L: Report from the Apache Community Development Project  [Swapnil Mane]</a>
+
+## Description:
+The mission of Community Development is the creation and maintenance of 
+software related to Resources to help people become involved with Apache 
+projects
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Community Development was founded 2009-11-01 (15 years ago)
+There are currently 52 committers and 43 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:6.
+
+Community changes, past quarter:
+- Drew Foulks was added to the PMC on 2024-08-30
+- Chris Wells was added to the PMC on 2024-08-30
+- Drew Foulks was added as committer on 2024-08-31
+- Chris Wells was added as committer on 2024-08-31
+- MJ Foulks was added as committer on 2024-10-29
+
+## Project Activity:
+
+### Working Groups
+
+The Working Groups [WG1] initiative is thriving.
+Rich Bowen also presented a talk on this topic at Community Over
+Code NA, which was very well received.
+We also received a proposal for a new working group 'targeting mentoring'
+to connect Apache projects seeking new contributors with companies
+that indirectly depend on them. The group aims to coordinate efforts,
+share best practices, and provide signposting. Discussions for
+this working group are ongoing.
+
+The Website Working Group made excellent progress in updating the
+website. More details in ComDev Website section below.
+
+[WG1] - https://github.com/apache/comdev-working-groups
+
+### ComDev Website
+
+We made several significant updates to our website [W1]. Highlights include:
+1. Rewrite of the Contributors page
+2. Menu restructuring 
+3. Revamped home page with new images and improved navigation
+4. Merged duplicate pages
+5. Content reorganization
+
+Huge thanks to the Website Working Group, Rich Bowen, and others who provided
+feedback on pull requests.
+
+The full list of PRs and detailed changes can be found at:
+https://s.apache.org/71c0j
+
+[W1] - https://community.apache.org/
+
+### Google Summer of Code 2024
+
+We had 22 participants (mentees) this year, out of which 20 successfully
+passed the final evaluation. Unfortunately, 2 participants couldn&rsquo;t pass
+the final evaluation. Thank you to all our mentors and Sanyam Goel, Priya
+Sharma, Maxim Solodovnik, and Swapnil M Mane for their continued support
+and making it happen.
+
+Sanyam Goel also participated in the GSoC 2024 Mentor Summit as an
+ASF delegate. He delivered a talk titled &ldquo;Managing GSoC at umbrella
+orgs @ Apache Software Foundation and The Linux Foundation&rdquo; in collaboration
+with the Linux Foundation. He also engaged in discussions about GSoC
+guidelines, project lifecycle management, and feedback mechanisms with
+the Google Open Source team.
+
+### Community Over Code NA 2024
+We had 18 talks in the Community Track at CoC NA, which were
+very well received. These sessions attracted a significant audience,
+showcasing strong interest in the topics.
+Thanks to our Community Track Chairs, Rich Bowen, Shane Curcuru,
+and Jiang Nadia, for their invaluable support and coordination during CoC NA.
+
+### ALC
+
+ALC Indore was primarily involved in Open Source India 2024.
+Swapnil M Mane delivered a talk on this topic at CoC NA, where many people
+personally expressed interest in starting ALC Chapters in their regions.
+We also received interest for establishing an ALC in Islamabad, Pakistan,
+over the mailing list, and discussion is ongoing around it.
+We don&rsquo;t have many activities in other ALCs as most of
+them wrapped up CoC Asia. Additionally, some members were engaged in CoC NA.
+
+#### Open Source India 2024
+ALC Indore members managed the ASF booth at Open Source India 2024 [OSI1],
+held on October 23-24 in Bengaluru. Thanks to Aditya Sharma and Priya Sharma,
+for coordinating and successfully executing this entire activity with
+the support of other members.
+The team engaged a diverse audience, including tech professionals,
+students, and Apache project contributors, many of whom shared
+insights on their projects. The team introduced the ALC initiative,
+encouraging attendees to participate in regional open-source activities.
+Students showed excitement about open-source opportunities,
+enjoying ASF-branded swag and learning about beginner pathways
+like Google Summer of Code (GSoC) and Outreachy. 
+Additionally, the team connected with Apache project users interested in
+learning how they can receive support and contribute back to the community.
+
+[OSI1]- https://www.opensourceindia.in/
+
+### Others
+
+The HelpWanted service, formerly at helpwanted.apache.org, has been
+retired. This service had been dormant for over six years.
+
+## Community Health:
+We had another fantastic quarter, with activities in various areas,
+as mentioned above, demonstrating significant progress on multiple fronts,
+thanks to our community members.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-M" id="attachment-M">Attachment M: Report from the Apache CouchDB Project  [Jan Lehnardt]</a>
+
+## Description:
+Apache CouchDB software is a document-oriented database that can be queried and 
+indexed in a MapReduce fashion using JavaScript. CouchDB also offers 
+incremental replication with bi-directional conflict detection and resolution.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none.
+
+## Membership Data:
+Apache CouchDB was founded 2008-11-19 (16 years ago)
+There are currently 72 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Glynn Bird on 2023-03-14.
+- No new committers. Last addition was Jiahui Li on 2023-08-24.
+
+## Project Activity:
+- We had a curious release process for the long-awaited 3.4.0 feature release:
+  - an hour before we had agreed to announce the release, we found a showstopper
+    issue, but the vote, release artefact, convenience binaries, all were locked
+    in an ready to go.
+  - we chose to fix the issue, start the release procedure of 3.4.1 and to just
+    not announce 3.4.0.
+  - we took a bit of a marketing hit because folks do not pay attention to .1
+    releases as much and this release had two new flagship features, but we
+    opted to be rather safe than sorry to keep the long-term trust our end-users
+    have.
+  - See https://blog.couchdb.org/2024/09/27/3-4-1/ for more details.
+- We did release the 3.4.x series after a few months of working out new release
+  infrastructure details necessitated by the new features.
+- The release finally unblocked work on future features that should now arrive
+  in more quickly succession.
+- We also already released 3.4.2 to address a few annoying issues introduced in
+  3.4.0/3.4.1.
+- So far the reception has been great.
+
+## Community Health:
+Nothing unusual to report, release and post-release activity has been higher
+than normal, as anticipated. We are expecting this to continue as folks find
+time to upgrade.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-N" id="attachment-N">Attachment N: Report from the Apache Creadur Project  [Philipp Ottlinger]</a>
+
+## Description:
+The mission of Creadur is the creation and maintenance of software related to 
+Comprehension and auditing of software distributions
+
+## Project Status:
+Current project status: ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Creadur was founded 2012-04-18 (13 years ago)
+There are currently 13 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:6.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Claude Warren on 2024-01-23.
+- No new committers. Last addition was Jean-Baptiste Onofr&eacute; on 2024-01-23.
+
+## Project Activity:
+A lot of development is happening at the moment and 
+will lead to a new release of RAT 0.17 including a major rewrite of
+RAT's exclusion and configuration options and 
+a harmonization of the Ant, Maven and CLI module.
+
+## Community Health:
+We had a lot of development activity and 
+many long running branches/pull requests.
+These changes mean code and documentation updates.
+
+- dev@creadur.apache.org had a 17% 
+increase in traffic in the past quarter (817 emails compared to 694)
+- 45 commits in the past quarter (-85% change)
+- 2 code contributors in the past quarter (-75% change)
+- 32 PRs opened on GitHub, past quarter (-68% change)
+- 31 PRs closed on GitHub, past quarter (-67% change)
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-O" id="attachment-O">Attachment O: Report from the Apache DataSketches Project  [Lee Rhodes]</a>
+
+## Description:
+The mission of Apache DataSketches is the creation and maintenance of software 
+related to an open source, high-performance library of streaming algorithms 
+commonly called "sketches" in the data sciences. Sketches are small, stateful 
+programs that process massive data as a stream and can provide approximate 
+answers, with mathematical guarantees, to computationally difficult queries 
+orders-of-magnitude faster than traditional, exact methods
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache DataSketches was founded 2020-12-15 (4 years ago)
+There are currently 16 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Charlie Dickens on 2023-07-04.
+- No new committers. Last addition was Pierre Lacave on 2024-03-12.
+
+## Project Activity:
+We are making good progress with our collaboration with Google and the
+creation of our apache/datasketches-bigquery repository that will be 
+imported into the GoogleCloudPlatform/bigquery-utils repository soon. 
+
+This repo contains "adaptors" that adapt key sketches from our 
+datasketches-cpp (C++) library to javascript methods called directly 
+by GCP/BQ SQL queries.
+
+We are also making progress on the conversion of our Java library so
+that it can operate with Java 17 and Java 21.
+
+## Community Health:
+Our project is healthy. We have a small, loyal and growing community
+of users that contact us when they have questions or issues. We are experiencing
+growing interest from major corporations in our multi-language libraries.
+
+We continue to get interest from scientists around the world who
+offer ideas for new sketches for our library based on recent research.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-P" id="attachment-P">Attachment P: Report from the Apache DeltaSpike Project  [Mark Struberg]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-Q" id="attachment-Q">Attachment Q: Report from the Apache Directory Project  [Shawn McKinney]</a>
+
+## Description:
+
+The Apache Directory TLP consists of the following sub-projects:
+
+- ApacheDS: An extensible and embeddable directory server entirely written in
+  Java, which has been certified LDAPv3 compatible by the Open Group.
+
+- LDAP API: An ongoing effort to provide an enhanced LDAP API, as a
+  replacement for JNDI and the existing LDAP API (jLdap and Mozilla LDAP API).
+  This is a "schema aware&rdquo; API with some convenient ways to access all types
+  of LDAP servers.
+
+- Studio: A complete directory tooling platform intended to be used with any
+  LDAP server however it is particularly designed for use with ApacheDS. It is
+  an Eclipse RCP application, composed of several Eclipse (OSGi) plugins.
+
+- Fortress: A standards-based authorization platform that provides role-based
+  access control, delegated administration and password policy services with
+  an LDAP backend.
+
+- Kerby: An implementation of Kerberos v5 protocol and contains various tools
+  to access and manage kerberos principals and keytabs. It provides a rich,
+  intuitive and interoperable implementation, library, KDC and various
+  facilities that integrates PKI, OTP and token (OAuth2) as desired in modern
+  environments such as cloud, Hadoop and mobile.
+
+- Mavibot:  An embeddable key-value database library with MVCC (Multi Version
+  Concurrency Control) support.
+
+- SCIMple:  An implementation of SCIM v2.0 specification.
+
+## Project Status:
+
+Membership continuing to decrease with 3 being moved to emeritus over the past
+quarter, although two had not been active in the project for many years.
+Despite the drop the core members continue the work to keep the project
+running quietly and smoothly.
+
+## Issues:
+
+- There are no issues requiring board attention at this time.
+
+## Membership Data:
+
+Apache Directory was founded 2005-02-22 (17 years ago) There are currently 58
+committers and 19 PMC members in this project. The Committer-to-PMC ratio is
+roughly 8:3.
+
+Community changes, past quarter:
+- Brian Demers was added to the PMC on 2023-10-23
+- No new committers. Last addition was Fredrik Roubert on 2023-07-10.
+
+## Project Activity:
+
+Per sub-project:
+
+- ApacheDS: low activity. Release in the works.
+- LDAP API: released in last quarter. Release in the works.
+- Studio:   low activity. No active maintainer. There's discussion on this and
+  that a PMC member can step into the maintainer role in the future.
+- Fortress: low activity.
+- Kerby:    released in last quarter.
+- Mavibot:  low activity. Release in the works.
+- SCIMple:  low activity. Work being done to get Scimple tests going with LDAP
+  backend.
+
+## Community Health:
+
+As stated earlier, the project activity is low with most of it realized via
+pull requests and to a lesser extent Jira tickets. Nonetheless, the PMC
+remains responsive.
+
+## Releases:
+Apache Kerby 2.1.0 was released on 2024-08-14.
+Apache LDAP API 2.1.7 was released on 2024-08-06.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-R" id="attachment-R">Attachment R: Report from the Apache Doris Project  [Mingyu Chen]</a>
+
+## Description:
+The mission of Apache Doris is the creation and maintenance of software related 
+to a MPP-based interactive SQL data warehousing for reporting and analysis
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: None
+
+## Membership Data:
+Apache Doris was founded 2022-06-15 (2 years ago)
+There are currently 78 committers and 24 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Wenqiang Lee on 2024-05-25.
+- Dechao Hu was added as committer on 2024-11-05
+- Jian Hu was added as committer on 2024-11-12
+- Yuexi Zhou was added as committer on 2024-11-12
+- Shilei Fu was added as committer on 2024-11-05
+
+## Project Activity:
+We have just released 2.1.7, 3.0.1, 3.0.3 in the past 3 months.
+And 3.0 is a milestore version, including major architecture upgrade
+and many new features.
+And we accepted a donation of doris k8s operator, and released its first version
+24.0.0.
+
+## Community Health:
+The overall community is healthy.
+We held 4 meetups at China and Sigapore.
+And we are preparing Doris Summit 2024 on 14th Dec.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-S" id="attachment-S">Attachment S: Report from the Apache Drill Project  [Charles Givre]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-T" id="attachment-T">Attachment T: Report from the Apache Druid Project  [Gian Merlino]</a>
+
+## Description
+
+Apache Druid is a high performance real-time analytics database. It is
+designed for workflows where low-latency query and ingest are the main
+requirements. It implements ingestion, storage, and querying subsystems. Users
+interface with Druid through built-in SQL and JSON APIs, as well as
+third-party applications.
+
+Druid has an extensive web of connections with other Apache projects: Calcite
+for SQL planning, Curator and ZooKeeper for coordination, Kafka and Hadoop as
+data sources, Avro, ORC, or Parquet as supported data input formats, and
+DataSketches for scalable approximate algorithms. Druid can also be used as a
+data source by Superset.
+
+## Issues
+
+There are no issues requiring board attention at this time.
+
+## Activity
+
+Our last major release was Druid 31.0.0, which contained 589 new features, bug
+fixes, performance enhancements, documentation improvements, and additional
+test coverage from 64 contributors. This is a similar number of contributors
+to other major Druid releases. Druid typically does major releases 3&ndash;4 times a
+year.
+
+Our Slack workspace at https://apachedruidworkspace.slack.com/ stands at 2,958
+members, up 122 members (4%) since our last report. This is our most active
+channel for user support and usage-oriented discussions. Development
+discussions happen more on GitHub, and to some degree on the dev mailing list.
+
+Druid Summit 2024, an in-person event, occurred in the San Francisco Bay Area
+on October 22. Information about this event is available at
+https://druidsummit.org/. It was organized by Imply with permission from the
+project. There were approximately 150 attendees.
+
+## Membership data
+
+Apache Druid was founded 2019-12-17 (4 years ago) There are currently 69
+committers and 38 PMC members in this project. The Committer-to-PMC ratio is
+roughly 9:5.
+
+Community changes, past quarter:
+- Abhishek Balaji Radhakrishnan was added to the PMC on 2024-11-06
+- Rishabh Singh was added as committer on 2024-11-12
+
+## Recent releases
+ - 31.0.0, a major release, on 2024-10-22.
+ - 30.0.1, a patch release, on 2024-09-17.
+ - 30.0.0, a major release, on 2024-06-16.
+
+## Development activity by the numbers
+
+In the last 3 months:
+ - 336 commits from 57 contributors
+ - 516 pull requests opened
+ - 427 pull requests merged/closed
+
+In a comment to our prior board report, Rich Bowen mentioned that he seldom
+cares about the statistics reported by projects. If this is the opinion of the
+board generally, please let me know, and I will remove this section from
+future reports. It would save me about 15 minutes per report.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-U" id="attachment-U">Attachment U: Report from the Apache Empire-db Project  [Rainer D&ouml;bele]</a>
+
+## Description:
+Empire-db is a lightweight relational database access library dealing with all
+aspects of storing, manipulating, retrieving and modelling data in relational
+database management systems (RDBMS). As an alternative to traditional
+OR-Mapping solutions, it provides an SQL centric, no-compromise approach that
+uses a Java-Object-Model rather than Mapping Files or Annotations.
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: None
+
+## Membership Data:
+Apache Empire-db was founded 2012-01-24 (13 years ago)
+There are currently 10 committers and 8 PMC members in this project.
+The Committer-to-PMC ratio is 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jan Glaubitz on 2016-07-10.
+- No new committers. Last addition was Ralf Eichinger on 2022-03-15.
+
+## Project Activity:
+Latest release is empire-db-3.2.0 released on 2024-06-25.
+Since September we have increased development activity, fixing some
+bugs but also adding new and improving existing functions.
+Hence we intend to publish a new release in the upcoming months.
+
+## Community Health:
+Our community is still alive and healthy.
+11 new Jira-Tickets were opened since August (4 bug-reports, 7 improvements)
+52 Commits since August by 2 Committers.
+(Somehow the ASF Board Report Wizard stats report 0 commits by mistake.
+However, the stat report has worked in the past)
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-V" id="attachment-V">Attachment V: Report from the Apache EventMesh Project  [Eason Chen]</a>
+
+## Description:
+The mission of Apache EventMesh is the creation and maintenance of software 
+related to a fully serverless platform used to build distributed event-driven 
+applications
+
+## Project Status:
+Current project status: Ongoing: With moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache EventMesh was founded 2023-03-22 (2 years ago)
+There are currently 51 committers and 16 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jianbo Liu on 2024-01-05.
+- No new committers. Last addition was Fabian Bao on 2024-01-25.
+
+## Project Activity:
+New Feature EventMesh Dashboard is ready for review
+New Feature EventMesh Function runtime has been merged
+New Feature EventMesh Connector runtime has been merged
+Enhancement for http source/sink connector
+
+
+## Community Health:
+The new features were under designing or developing,
+so the commits and PR activity seems decrease.
+The community will release the version within a month, 
+so there is no need to worry about community activity.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-W" id="attachment-W">Attachment W: Report from the Apache FreeMarker Project  [D&aacute;niel D&eacute;k&aacute;ny]</a>
+
+## Description:
+
+Apache FreeMarker is a template engine, i.e. a generic tool to generate text
+output based on templates. Apache FreeMarker is implemented in Java as a class
+library for programmers.
+
+FreeMarker 2 (the current stable line) produces releases since 2002. The
+FreeMarker project has joined the ASF in 2015, and graduated from the
+Incubator in early 2018.
+
+## Issues:
+
+There are no issues requiring board attention at this time.
+
+## Activity:
+
+Activity was moderate in recent months.
+
+## Health report:
+
+Activity is relatively low, as usual for this project. The next, mostly bugfix
+2.3.34 release will be voted on soon. User questions (mostly on StackOverflow)
+and new Jira issues are being answered. PR-s slowly but eventually getting
+reviewed and merged. Next the goal on the 2.x line is to finishing the
+java.time support (FREEMARKER-35) is next priority. The long term goal is
+continuing the ongoing development on the 3.0 branch, so that the project can
+innovate, and the code base can become much cleaner and more attractive for
+new committers.
+
+## PMC changes:
+
+ - Currently 7 PMC members.
+ - No changes since the graduation on 2018-03-21
+
+## Committer base changes:
+
+ - Currently 8 committers.
+ - Last added: Siegfried Goeschl on 2020-01-07
+
+## Releases:
+
+ - 2.3.33 was released on 2024-06-01
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-X" id="attachment-X">Attachment X: Report from the Apache Geode Project  [Mark Bretl]</a>
+
+## Description:
+The mission of Apache Geode is the creation and maintenance of software related 
+to a data management platform that provides real-time, consistent access to 
+data-intensive applications throughout widely distributed cloud architectures.
+
+## Project Status:
+Current project status: Dormant, possible new involvement 
+
+## Issues for the board: 
+The project would like the board to continue to table the resolution for
+termination for one more reporting round as we are trying to onboard new
+contributors.
+
+## Membership Data:
+Apache Geode was founded 2016-11-15 (8 years ago)
+There are currently 118 committers and 31 PMC members in this project.
+The Committer-to-PMC ratio is roughly 4:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Calvin Kirs on 2022-11-14.
+- No new committers. Last addition was Calvin Kirs on 2022-11-15.
+
+## Project Activity:
+After the prior project board report, we had some new volunteers come and
+express interest in getting more active in the community. It has been slow to
+start, but we do have some new activity on the Dev mailing list and
+contributors looking into unit tests.
+
+## Community Health:
+Beginning the possible rebuild of the Geode community. There are still many
+outstanding items that need attention, but now there is hope that new
+individuals will be able to contribute to the community.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-Y" id="attachment-Y">Attachment Y: Report from the Apache Gora Project  [Kevin Ratnasekera]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-Z" id="attachment-Z">Attachment Z: Report from the Apache Groovy Project  [Paul King]</a>
+
+## Description:
+Apache Groovy is responsible for the evolution and maintenance of the Groovy 
+programming language
+
+## Project Status:
+Current project status: Ongoing with moderate activity.
+Issues for the board: No issues requiring board attention at this time.
+
+## Membership Data:
+Apache Groovy was founded 2015-11-18 (9 years ago)
+There are currently 21 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- Soeren Glasius was added to the PMC on 2024-11-06
+- Last completed committer addition was Zongle Wang on 2023-08-22.
+  Another committer has accepted nomination but the account hasn't
+  been created. We'll report further in the next report.
+
+## Project Activity:
+Recent releases:
+3.0.23 was released on 2024-11-08.
+4.0.24 was released on 2024-11-08.
+5.0.0-alpha-11 was released on 2024-11-08.
+4.0.23 was released on 2024-09-12.
+5.0.0-alpha-10 was released on 2024-09-12.
+
+The major goal over the next quarter is to move
+Groovy 5 towards a GA release.
+
+## Community Health:
+This quarter in the main repo, 131 commits were contributed from 9
+contributors including 5 non-committer contributors (4 new).
+In general, work on the project has been slightly slower than normal,
+in part due to the next topic.
+
+A key area for the community has been on bringing other projects from
+the broader Groovy ecosystem to the ASF. The Geb web testing subproject
+has passed voting and setting up relevant repos is underway.
+Planning for sponsoring of the Grails web framework project through
+incubation is well advanced and voting is expected shortly.
+
+The project ran a Groovy track at CommunityOverCode NA in October.
+We found the event very worthwhile and thank the organisers for all
+their hard work.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AA" id="attachment-AA">Attachment AA: Report from the Apache Hop Project  [Hans Van Akelyen]</a>
+
+## Description:
+The mission of Apache Hop is the creation and maintenance of software related 
+to a platform for data orchestration
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Hop was founded 2021-12-15 (3 years ago)
+There are currently 24 committers and 10 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Bart Maertens on 2021-12-15.
+- No new committers. Last addition was Sergio De Lorenzis on 2024-06-11.
+
+## Project Activity:
+2.10.0 was released and we are planning to release 2.11.0 at the end of the
+month. We have had some contribution to interract with LLMs and are working on
+bug fixes and documentation improvements to improve the entry level for
+newcomers.
+
+## Community Health:
+We have enabled GitHub Discussions and created a channel in the ASF slack. We
+hope enabling GitHub discussions will increase community engagement. All
+discussions are mirrored to our mailing list. We have 4 new contributors
+during the 2.10.0 development process and will convert some to committers if
+they keep contributing to the project.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AB" id="attachment-AB">Attachment AB: Report from the Apache HTTP Server Project  [Joe Orton]</a>
+
+## Description:
+The mission of HTTP Server is the creation and maintenance of software related 
+to Apache Web Server (httpd)
+
+## Project Status:
+Current project status: ongoing, moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache HTTP Server was founded 1995-02-27 (30 years ago)
+There are currently 127 committers and 54 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Giovanni Bechis on 2021-06-11.
+- No new committers. Last addition was Emmanuel Dreyfus on 2022-11-05.
+
+## Project Activity:
+Project activity has been relatively quiet since the three releases in July
+covered in my previous report. Committers have been working through bug
+reports, addressing a few remaining issues in the security fixes.
+
+The experimental mod_tls - based on the Rust TLS stack - was removed from both
+2.4.x and trunk due to instability in the Rust library API it depends on, but
+lives on as an independent Github project.
+
+## Community Health:
+The development mailing list was also relatively quiet along with general
+activity, although there was a significant uptick in the users list, with
+questions coming in about the security fixes and how to adjust some
+mod_rewrite rules to workaround new behaviour in 2.4.62.
+
+We continue to get steady use of pull requests in GitHub from both existing
+committers and new contributors alike.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AC" id="attachment-AC">Attachment AC: Report from the Apache HttpComponents Project  [Michael Osipov]</a>
+
+## Description:
+The mission of HttpComponents is the creation and maintenance of software
+related to Java toolset of low level HTTP components
+
+## Project Status
+- There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache HttpComponents was founded 2007-11-14 (16 years ago)
+There are currently 20 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Arturo Bernal on 2023-10-27.
+- No new committers. Last addition was Arturo Bernal on 2023-06-20.
+
+## Project Activity:
+  - Development on master is 5.4 for Client and 5.3 for Core
+
+## Community Health:
+ - Overall the project remains active. Issues and dicussions are
+   resolved in time.
+
+## Releases:
+- HttpClient 5.4.1 GA: 2024-10-28
+- HttpCore 5.3.1 GA: 2024-10-23
+- HttpClient 5.4 GA: 2024-09-23
+- HttpCore 5.3 GA: 2024-09-12
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AD" id="attachment-AD">Attachment AD: Report from the Apache Ignite Project  [Dmitry Pavlov]</a>
+
+## Description:
+The mission of Ignite project is the creation and maintenance of software
+related to high-performance distributed database engine providing in-memory
+and persistent data caching, partitioning, processing, and
+querying components.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Ignite was founded 2015-08-19 (9 years ago)
+There are currently 78 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Nikita Amelchev on 2023-11-20.
+- No new committers. Last addition was Roman Puchkovskiy on 2024-04-24.
+
+## Project Activity:  
+ - No recent releases, 2.16.0 (latest stable) was released on 2023-12-25.
+ - Release 3.0.0 is slightly delayed, but is planned before the end of the year.
+ - The community is actively discussing several improvements for Apache Ignite:
+ --  Migration to thin client in control tools (IEP-81)
+ --  Dynamic application-specific attributes (IEP-129)
+ --  Transaction-aware query support (IEP-125)
+ - Several improvements are being discussed for Ignite 3, including IEPs:
+  120, 123, 126, 127, 128, and others.
+
+## Community Health:
+- There's been a noticeable decline in dev@ list activity metrics (-50%), but
+  user@ list activity is almost the same.
+- Code contributions and issue handling have dropped noticeably this quarter
+  (-60%-70%).
+- These declines are likely temporary, as several enchancements are being
+  developed.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AE" id="attachment-AE">Attachment AE: Report from the Apache Impala Project  [Zolt&aacute;n Bor&oacute;k-Nagy]</a>
+
+## Description:
+The mission of Apache Impala is the creation and maintenance of software 
+related to a high-performance distributed SQL engine
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: None
+
+## Membership Data:
+Apache Impala was founded 2017-11-15 (7 years ago)
+There are currently 72 committers and 40 PMC members in this project.
+The Committer-to-PMC ratio is 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Riza Suminto on 2024-03-06.
+- Jason Fehr was added as committer on 2024-08-27
+- Stephen Carlin was added as committer on 2024-11-01
+
+## Project Activity:
+Over the last three months, the Impala community has implemented the following:
+- MERGE statement for Iceberg tables
+- Progress was made on the new Calcite planner
+- Enabling new Clang tidy checks
+- Improved Workload Management features
+- Perf improvements to Iceberg V2 tables
+- Reading column statistics from Puffin files
+- Improved visualization of query timelines
+- Filtering criteria for the OPTIMIZE statement
+
+## Community Health:
+reviews@ is the most reliable metric of Impala community activity level.
+There were a bit over 3000 emails to that list in September, October,
+and November (until 11th)
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AF" id="attachment-AF">Attachment AF: Report from the Apache Incubator Project  [Justin Mclean]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AG" id="attachment-AG">Attachment AG: Report from the Apache Juneau Project  [James Bognar]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AH" id="attachment-AH">Attachment AH: Report from the Apache Kafka Project  [Mickael Maison]</a>
+
+## Description:
+The mission of Kafka is the creation and maintenance of software related 
+to Distributed publish-subscribe messaging system
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Kafka was founded 2012-11-21 (12 years ago)
+There are currently 64 committers and 37 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- Josep Prat was added to the PMC on 2024-09-06
+- Jeff Kim was added as committer on 2024-09-07
+- Kamal Chandraprakash was added as committer on 2024-09-26
+- Lianet Magrans was added as committer on 2024-08-28
+
+## Project Activity:
+In the past quarter we released 3.8.1 and 3.9.0.
+Kafka 3.9.0 is the last 3.X minor release with ZooKeeper support
+It contains a lot of new features (11 KIPs) and improvements 
+in all components.
+Brokers:
+- Dynamic KRaft controller membership
+- Tiered storage disablement and quotas
+Clients:
+- Improve OAuth OIDC support
+- Expose tiered storage offsets
+Streams:
+- Improve exception handling
+- Make log processing configurable
+Connect:
+- New healthcheck endpoint
+- Support disabling MirrorMaker offset translation
+- Improve handling of nullable values in transformations
+
+Apache Kafka 3.7.2 (planned for November) and 4.0.0 (planned for
+February) are currently in progress.
+
+We also migrated our build infrastructure from Jenkins to GitHub Actions.
+
+## Community Health:
+The project activity on mailing lists, Jira and GitHub is high and stable.
+
+In the last 3 months we've had:
+- 116 authors (128 last quarter) - trend: flat
+- 707 commits (704 last quarter) - trend: flat
+- 670 Jiras created (608 last quarter) - trend: ~+10%
+- 626 Jiras resolved (539 last quarter) - trend: ~+15%
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AI" id="attachment-AI">Attachment AI: Report from the Apache Kibble Project  [Sharan Foga]</a>
+
+## Description:
+The mission of Apache Kibble is the creation and maintenance of software 
+related to an interactive project activity analyzer and aggregator
+
+## Project Status:
+Current project status: Dormant, no real activity
+Issues for the board: None
+
+## Membership Data:
+Apache Kibble was founded 2017-10-18 (7 years ago)
+There are currently 15 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:7.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Micha&lstrok; S&lstrok;owikowski on 2021-05-03.
+- No new committers. Last addition was Kaxil Naik on 2021-02-21.
+
+## Project Activity:
+The project has not yet made a release.
+
+There has been no activity since our last report. The project is considering
+moving to the Attic but if we can raise awareness and interest in the project.
+Unfortunately we have not yet had time to follow up on the potential
+suggestions made in our last report. An earlier version of the Kibble code in
+SVN is used for the ASF Reporter tool and some bugs reports raised been raised
+about the Reporter tool on the Community Development list. Perhaps this could
+be a way to attract new contributors. A new community member has been active
+on the list in the last week looking at how to install Kibble-1.
+
+We will continue to investigate whether there is a future of the project or
+whether its time to close down.
+
+## Community Health:
+We are a small community that don't currently have the bandwidth to contribute
+to the project.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AJ" id="attachment-AJ">Attachment AJ: Report from the Apache Knox Project  [Larry McCay]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AK" id="attachment-AK">Attachment AK: Report from the Apache Kylin Project  [Shao Feng Shi]</a>
+
+## Description:
+The mission of Apache Kylin is the creation and maintenance of software related 
+to a distributed and scalable OLAP engine
+
+## Project Status:
+Current project status: Ongoing, high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Kylin was founded 2015-11-18 (9 years ago)
+There are currently 48 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Xiaoxiang Yu on 2020-10-08.
+- 4 new committers onboard 2024-10-17.
+
+## Project Activity:
+Recent releases:
+Kylin x Gluten joint marketing activities are in planning phase.
+5.0 new documents are loading since the release.
+5.0.0 was released on 2024-09-27
+5.0.0-beta was released on 2023-08-30.
+5.0.0-alpha was released on 2023-04-26.
+4.0.3 was released on 2022-12-23.
+
+## Community Health:
+Apart from the below activities, Kylin and Gluten community is
+working together to create a better, faster OLAP tool. 
+Joint activities is on the way.
+
+- dev@kylin.apache.org had a 57% decrease 
+  in traffic in the past quarter (47 emails compared to 107)
+- issues@kylin.apache.org had a 145% increase 
+  in traffic in the past quarter (723 emails compared to 295)
+- user@kylin.apache.org had a 40% increase 
+  in traffic in the past quarter (7 emails compared to 5)
+- 19 commits in the past quarter (-81% change)
+- 7 code contributors in the past quarter (-75% change)
+- 21 PRs opened on GitHub, past quarter (75% increase)
+- 23 PRs closed on GitHub, past quarter (91% increase)
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AL" id="attachment-AL">Attachment AL: Report from the Apache Libcloud Project  [Toma&zcaron; Muraus]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AM" id="attachment-AM">Attachment AM: Report from the Apache Logging Services Project  [Piotr Karwasz]</a>
+
+## Description:
+The mission of the Apache Logging Services project is to create and maintain of 
+software for managing the logging of application behavior, and for related 
+software components.
+
+## Project Status:
+Current project status: Ongoing with high activity
+Issues for the board: none
+
+## Membership Data:
+Apache Logging Services was founded 2003-12-17 (21 years ago)
+There are currently 45 committers (17 active)
+and 23 PMC (15 active) members in this project.
+The Committer-to-PMC ratio is roughly 2:1 (1:1 for active members).
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Fred am Nil on 2024-08-07.
+- No new committers. Last addition was Fred am Nil on 2024-02-09.
+
+## Project Activity:
+At the time of the last report (2024-08-21), Apache Logging Services
+had 4 main active projects (Flume, Log4cxx, Log4j, Log4net). Their current
+status is:
+
+Flume:
+The project has been voted dormant on 2024-10-10[1].
+During the past trimester it didn't receive any bug or security reports.
+
+[1] https://lists.apache.org/thread/dg9wro6dp7w95o1x911lbyqxzl808b3l
+
+Log4cxx:
+The project is active, with a moderate activity.
+Recently it was integrated with Google OSS Fuzz[2] for additional security
+and gained a "Release Review Guide"[3] to help PMC members without C++
+experience in the voting procedure.
+There are roughly two releases a year. In the reporting period:
+
+    log4cxx-1.3.0 was released on 2024-10-18.
+
+[2] https://github.com/apache/logging-log4cxx/pull/411
+[3]
+https://github.com/apache/logging-log4cxx/blob/master/admin/release-review-instructions.md
+
+Log4j:
+The project is active, with a high activity.
+Recently it was integrated with Google OSS Fuzz[3][4] for additional security.
+It currently has a roughly monthly release schedule:
+    
+    LOG4J-2.24.0 was released on 2024-09-06.
+    LOG4J-2.24.1 was released on 2024-09-29.
+    LOG4J-3.0.0-BETA3 was released on 2024-11-12.
+
+[4] https://github.com/apache/logging-log4j2/issues/2891
+[5] https://github.com/apache/logging-log4j2/issues/2892
+
+Log4j Audit:
+The project is _de facto_ dormant, although marked as active.
+A single contributor is currently committed to it.
+
+Log4j Transform:
+The project is active, with a low activity.
+Its current release schedule is roughly once a year:
+
+    LOG4J-TRANSFORM-0.2.0 was released on 2024-10-31.
+
+Log4net:
+The project is active, with a high activity.
+Recently it published a set of release review instructions[6] for PMC members
+without .NET experience.
+The project released its newest 3.x version and makes roughly one release
+a month:
+
+    log4net-3.0.0 was released on 2024-09-15.
+    log4net-3.0.1 was released on 2024-09-27.
+    log4net-3.0.2 was released on 2024-10-21.
+    log4net-3.0.3 was released on 2024-11-07.
+
+[6] https://logging.apache.org/log4net/release/release-review-instructions.html
+
+## Community Health:
+
+Flume:
+As far as we can tell, there is no community behind Flume.
+
+Log4cxx and Log4net:
+After the recent Log4cxx and Log4net releases, we noticed a spike of
+feature requests and bug reports, which confirms the presence of an active
+community that follows the recent project enhancements.
+
+Log4j:
+Since Log4j and its sub-projects use multiple repositories, the automatic
+GitHub statistics don't give the real picture about the community.
+After the summer break, the main Log4j repo has received and solved roughly
+one issue report per working day and around 3 PRs per working day were
+submitted.
+Its community seems healthy and we have observed new recurring contributors.
+
+Log4j Audit:
+As far as we know, there is no community behind this sub-project.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AN" id="attachment-AN">Attachment AN: Report from the Apache Logo Development Project  [Jeff Genender]</a>
+
+## Description:
+The mission of Apache Logo Development is the development of a brand and logo
+for the Foundation
+
+## Project Status:
+Current project status: Ongoing Issues for the board: none
+
+## Membership Data:
+Apache Logo Development was founded 2024-08-20 (3 months ago) There are
+currently 18 committers and 18 PMC members in this project. The
+Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- Melissa Logan was added to the PMC on 2024-08-27
+- No new committers were added.
+
+## Project Activity:
+Project is moving towards selecting a logo as expected
+
+## Community Health:
+Discussions are occurring as expected surrounding the logo.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AO" id="attachment-AO">Attachment AO: Report from the Apache ManifoldCF Project  [Piergiorgio Lucidi]</a>
+
+## Description:
+The mission of ManifoldCF is the creation and maintenance of software related
+to Framework for connecting source content repositories to target repositories
+or indexes.
+
+## Issues:
+None
+
+## Membership Data:
+Apache ManifoldCF was founded 2012-05-15 There are currently 25
+committers and 15 PMC members in this project. The Committer-to-PMC ratio is
+roughly 5:3.
+
+Community changes, since last report in August:
+- No new PMC member.  Last addition was made on 2023-08-03.
+- No new committers. Last addition was on 2019-08-17.
+
+## Project Activity:
+2.27 was released on 2024-09-26
+2.26 was released on 2023-11-01
+2.25 was released on 2023-06-01
+
+The Community is continuing to follow these goals:
+- Creating a brand new Roadmap
+We can probably bring ManifoldCF in the RAG area for injecting data into
+vector databases. Finally we can remove, update and add new connectors.
+Here we probably need someone more expert in the field.
+
+- Facilitating the adoption / making easier for any developer to contribute
+ManifoldCF SDK works correctly now using the Maven artifacts for
+all the versions and using the Docker images provided.
+
+- Migrating the website from Docbook / Forrest to ASF GitHub Pages
+We currently have the website correctly published and we can now continue to
+manage it directly using GitHub. We have to evaluate how to adopt GitHub
+pages as suggested by INFRA.
+
+- Making the release scripts agnostic
+We finally have a GPG key, thanks to the Apache Security Team, enabled on
+GitHub in order to publish RCs and Maven artifacts. We have to update the
+GitHub workflows in order to use it correctly.
+We have released 2.27 we are not stuck anymore and now we can improve our
+release process again.
+
+## Community Health:
+We have different GitHub pull requests to check and merge in order to solve
+vulnerabilities and improve some connectors.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AP" id="attachment-AP">Attachment AP: Report from the Apache Mnemonic Project  [Gordon King]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AQ" id="attachment-AQ">Attachment AQ: Report from the Apache Oozie Project  [D&eacute;nes Bod&oacute;]</a>
+
+## Description:
+The mission of Oozie is the creation and maintenance of software related to A 
+workflow scheduler system to manage Apache Hadoop jobs.
+
+## Project Status:
+Current project status: Considering moving to the Attic:
+Issues for the board: Build is not working, no human resource to solve it
+
+## Membership Data:
+Apache Oozie was founded 2012-08-28 (12 years ago)
+There are currently 28 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:6.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was D&eacute;nes Bod&oacute; on 2021-04-08.
+- No new committers. Last addition was J&aacute;nos Makai on 2022-12-28.
+
+## Project Activity:
+No activity for long.
+
+Recent releases:
+5.2.1 was released on 2021-02-26.
+5.2.0 was released on 2019-12-06.
+5.1.0 was released on 2018-12-19.
+
+## Community Health:
+Please let me start a final conversation about
+moving to Attic. I don't think I'll be able to became active again.
+If nobody else wants to participate more, then it is time to go to
+the Attic. I propose a January 2, 2025 to do this, until that I
+will notify and discuss it with the members.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AR" id="attachment-AR">Attachment AR: Report from the Apache OpenOffice Project  [Dave Fisher]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AS" id="attachment-AS">Attachment AS: Report from the Apache OpenWhisk Project  [Dave Grove]</a>
+
+## Description:
+The mission of Apache OpenWhisk is the creation and maintenance of software 
+related to a platform for building serverless applications with functions
+
+## Project Status:
+Current project status: Ongoing with low activity
+Issues for the board: none
+
+## Membership Data:
+Apache OpenWhisk was founded 2019-07-16 (5 years ago)
+There are currently 54 committers and 22 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Cosmin Stanciu on 2022-02-22.
+- No new committers. Last addition was Luke Roy on 2023-03-06.
+
+## Project Activity:
+
+We released new versions of all our programming language specific
+openwhisk-runtime components to keep current with the latest versions of the
+upstream language implementations.
+
+Some initial progress was made in modernizing OpenWhisk's build system to
+support producing multi-architecture Docker images. We had not invested in
+this area before and as a result it is not possible to develop/deploy the core
+OpenWhisk system on MacOS with arm64 hardware (ie any modern Macs). This is
+becoming an increasing barrier to participation in the project.
+
+Recent releases:
++ openwhisk-runtime-java-1.20.0 was released on 2024-09-23.
++ openwhisk-runtime-php-1.21.0 was released on 2024-09-23.
++ openwhisk-runtime-python-1.20.0 was released on 2024-09-23.
++ openwhisk-runtime-swift-1.19.0 was released on 2024-09-23.
++ openwhisk-runtime-dotnet-1.18.0 was released on 2024-09-13.
++ openwhisk-runtime-docker-1.16.0 was released on 2024-09-07.
++ openwhisk-runtime-nodejs-1.23.0 was released on 2024-09-07.
++ openwhisk-runtime-go-1.25.0 was released on 2024-09-05.
+
+## Community Health:
+
+The runtime release wave generated the bulk of mailing list and PR activity in
+the previous quarter.
+
+The addition of support for arm64 in openwhisk-runtime-dotnet and the
+prototyping of support for .NET 8.0 was sparked by interest from two new users,
+which was nice to see.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AT" id="attachment-AT">Attachment AT: Report from the Apache Ozone Project  [Sammi Chen]</a>
+
+## Description
+Apache Ozone is a scalable, redundant, and distributed object and file
+store,
+designed to scale to billions of objects/files and run on clusters of
+thousands
+of nodes. Ozone supports S3 compatible object APIs as well as a Hadoop
+Compatible File System implementation.
+
+## Issues
+None.
+
+## Membership Data
+- Apache Ozone was founded 2020-10-21.
+- There are currently 82 committers and 38 PMC members in this project.
+  The Committer-to-PMC ratio is roughly 2:1.
+- In the last quarter,
+  Sadanand Shenoy was added to the PMC on 2024-08-30
+  Siddhant Sangwan was added to the PMC on 2024-09-04
+  Chung-En Lee was added as committer on 2024-09-07
+
+## Project Activity
+- Recon UI improvements, including new page layout, listKeys API
+improvement, search function for pending deletion keys, etc.
+- A new OM HA POC is ongoing. Instead of sending OM requests through Ratis,
+the new POC will only send the OM data update requests through Ratis.
+- RATIS 3.1.1 is released. Ozone 1.4.1 RC2 has been rolled out.
+- Master branch version is changed to 2.0.0-SNAPSHOT. Next major release
+will be 2.0.0.
+- Feature improvement umbrella JIRA HDDS-11506 is opened to track all
+issues and improvements found in deleting service.
+- Debuggability improvement, "ozone debug ldb scan" command supports more
+options, new "ozone debug cert-recover" command to restore SCM certificates
+from RocksDB, OM supports system audit log, etc.
+- OM/SCM/Datanode web sites are improved.
+- Test improvements, like MiniOzoneCluster supports s3g, Intermittent
+failure unit tests fixing, etc.
+- Short-circuit read feature has started the implementation.
+- Many other fixes and improvements from snapshot, HBase support, erasure
+coding, documentations, etc.
+- Community activities
+  - CoC North America 2024 session "Scaling Ozone performance to max out
+CPU, Network and Disk"
+  - CoC North America 2024 session "Recognize, Reconcile, Repeat: The Path
+to Uniform Replicas in Apache Ozone"
+  - CoC North America 2024 session "GenAI applications with Apache Ozone"
+  - CoC North America 2024 session "Your Project&rsquo;s Website is Bad (But It
+Doesn&rsquo;t Have to Be)"
+  - "Innovation Synergy Ozone, GenAI, and Kubernetes Meetup October 2024"
+held on 24th Oct.
+
+## Releases Data
+- 1.0.0 was released on 2020-09-02.
+- 1.1.0 was released on 2021-04-20.
+- 1.2.0 was released on 2021-11-17.
+- 1.2.1 was released on 2021-12-22.
+- 1.3.0 was released on 2022-12-18.
+- 1.4.0 was released on 2024-01-19.
+
+## Community Health
+Last board report was sent on 13th August 2024. Since last report,
+- 37 code contributors in the past quarter (last 44, -16% change)
+- dev@ozone.apache.org had 103 emails in the past quarter (last 66 +56%
+change)
+- 263 PRs closed on GitHub, past quarter (last 303, -13% change)
+- 267 PRs opened on GitHub, past quarter (last 312, -14% change)
+- 223 commits in the past quarter (last 265, -16% change)
+Note: The commit &amp; PR count excludes the ones from user "app/dependabot",
+who has many commits for dependency jar version upgrade.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AU" id="attachment-AU">Attachment AU: Report from the Apache Perl Project  [Steve Hay]</a>
+
+## Description:
+The mission of Perl is the creation and maintenance of software related to 
+Dynamic websites using Perl
+
+## Project Status:
+Current project status: Ongoing, with low activity
+Issues for the board: none
+
+## Membership Data:
+Apache Perl was founded 2000-03-10 (25 years ago)
+There are currently 21 committers and 11 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hay on 2012-03-01.
+- No new committers were added.
+
+## Project Activity:
+The last release was mod_perl-2.0.13 on 2023-10-21.
+
+Future releases will be made as necessary. People are still interested in binary
+builds of mod_perl for Windows which I will look into soon. The removal of
+home.apache.org has knocked out the online archives of old builds; I need to
+find them a new home. Of course, this doesn't affect the source code release
+tarballs.
+
+## Community Health:
+Mailing list traffic is low as usual, which is normal for a stable project
+like mod_perl. There will be some activity when a new Windows binary build is
+made, and more again whenever a new release is made.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AV" id="attachment-AV">Attachment AV: Report from the Apache Phoenix Project  [Istvan Toth]</a>
+
+## Description:
+The mission of Phoenix is the creation and maintenance of software related to 
+High performance relational database layer over Apache HBase for low latency 
+applications
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: No issues to report to the board at this time.
+
+## Membership Data:
+Apache Phoenix was founded 2014-05-21 (10 years ago)
+There are currently 58 committers and 38 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jacob Isaac on 2023-11-07.
+- No new committers. Last addition was Palash Chauhan on 2024-06-11.
+
+## Project Activity:
+Apache Phoenix had its last main release 5.2.0 on 2024-04-16. Python Driver
+for Apache Phoenix (phoenixdb) 1.2.2 released on 7th June 2024.
+
+Relese process for Apache Phoenix 5.2.1 is ongoing.
+
+In the past quarter:
+* Landed the following significant new features:
+ * PHOENIX-7330 Introducing Binary JSON (BSON) with Complex Document
+   structures in Phoenix
+ * PHOENIX-7357 New variable length binary data type: VARBINARY_ENCODED
+ * PHOENIX-7398 New PhoenixStatement API to return row for Atomic/Conditional
+   Upserts
+ * PHOENIX-7411 Atomic Delete: PhoenixStatement API to return row if single
+   row is atomically deleted (#1985)
+ * PHOENIX-7343: Support ARRAY and JSON as simple values in CDC
+ * PHOENIX-6940 Add a connector variant for Hive 4
+ * PHOENIX-6783 Add spark-sql support for spark2 datasourceV2 and spark3
+* Fixed more than a dozen bugs, and added several minor features and refactors.
+* Performed routine and CVE related component upgrades
+* Worked on compatibility issues with JDK23 and HBase 2.6.1
+
+## Community Health:
+Overall community health is good. We have landed several new features, some of
+which were started well before this quarter. We have received valuabale
+contributions from a new contributor to the Spark connector. We have worked
+with the Trino community to address their security concerns, and with the
+HBase project on API compatibility issues. Most of the development is done by
+our core team of about a dozen active developers, but we do receive
+outside contributions and some new developers are getting up to speed with the
+project.
+
+After a lull in the previous quarter, activity is close to the average of the
+last few years for the quarter.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AW" id="attachment-AW">Attachment AW: Report from the Apache Pinot Project  [Kishore G]</a>
+
+## Description:
+The mission of Apache Pinot is the creation and maintenance of software related 
+to distributed OLAP data store to provide Real-time Analytics to power wide 
+variety of analytical use case
+
+## Project Status:
+Current project status: Healthy, vibrant, active community
+Issues for the board: None
+
+## Membership Data:
+Apache Pinot was founded 2021-07-20 (3 years ago)
+There are currently 41 committers and 12 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Rong Rong on 2023-09-11.
+- Abhishek Sharma was added as committer on 2024-10-06
+- Caner Balc&inodot; was added as committer on 2024-09-13
+- Jiapeng Tao was added as committer on 2024-08-27
+- Qiaochu Liu was added as committer on 2024-09-13
+- Manish Swaminathan was added as committer on 2024-10-18
+- Pratik Tibrewal was added as committer on 2024-09-13
+
+## Project Activity:
+The community members present frequently in meetups organized via meetup.com.
+A live meetup at Uber on Aug 27 drew about a 100 participants from various
+companies across the SF Bay area. A wide range of topics for beginners through
+advanced were discussed.  Basics on Pinot architecture and queries, to more
+complicated topics like memory optimization in realtime consumption, and
+providing Differential Privacy on top of pinot.
+
+Release 1.2.0 was finalized and released in Aug 2024
+
+
+## Community Health:
+The community has grown to well over 5000 users (judging by the number of
+unique members in slack channels #general and #troubleshooting). Several
+active features are being worked on, such as Pauseless consumption, Automatic
+segment reload, multi-topic ingestion, etc
+
+
+A recent presentation by Vivek Vaidyanathan in P99 conference on Jave Heap
+memory optimization was well-received.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AX" id="attachment-AX">Attachment AX: Report from the Apache POI Project  [Dominik Stadler]</a>
+
+Report from the Apache POI committee [Dominik Stadler]
+
+## Description:
+ - Apache POI is a Java library for reading and writing Microsoft Office file
+   formats.
+
+   The Apache POI PMC also handles bugfixes for the XMLBeans project: XMLBeans
+   is a tool that allows you to map XML files to generated Java classes via
+   XML Schema definitions.
+
+## Project Status:
+ - Overall: Low activity/Mostly maintenance only
+ - Activity on the project is low with no-one willing/able to invest time to
+   look for new committers, as the number of people willing to be part of an
+   old/established project is low. So this project is steering towards a
+   mostly-maintenance mode unless someone new starts to invest time.
+ - Note: Non-one wants to spend time looking for new people, so suggesting to
+   reach out to others or invest in "marketing" will likely not lead to much
+   improvement.
+
+## Membership Data:
+  Apache POI was founded 2007-05-16 (17 years ago) There are currently 41
+  committers and 34 PMC members in this project. The Committer-to-PMC ratio is
+  roughly 6:5.
+
+  Community changes, past quarter:
+  - No new PMC members. Last addition was Marius Volkhart on 2020-12-27.
+  - No new committers. Last addition was Marius Volkhart on 2020-12-19.
+
+## Project Activity:
+  - Bugfix releases for Apache XmlBeans and Apache POI are currently done or
+    prepared, providing mostly bugfixes and smaller adjustments.
+
+  - Automated fuzzing via OSS-Fuzz continues, this provides cases where
+    potential bugs and security issues can be detected, see
+    https://github.com/google/oss-fuzz and
+    https://bz.apache.org/bugzilla/show_bug.cgi?id=66425 for more details.
+
+  - Some support for "reproducible" builds and reproducibel output formats
+    will be released as part of an upcoming 5.4.0 release, see
+    https://poi.apache.org/help/faq.html#faq-reproducible-build-and-output
+
+## Project Release Activity:
+
+ - Apache POI 5.3.0 was released on 2024-07-02.
+ - Apache XMLBeans-5.2.2 was released on 2024-11-05.
+
+## Community Health:
+ - There are a few bug-reports and user-questions which indicates that Apache
+   POI is in use. Questions via email or on Stackoverflow usually get answers.
+
+ - Bug-numbers slowly increase. Some newly reported issues are fixed, but we
+   usually get more bugs/questions reported than are addressed by the small
+   number of active committers, so some bugs do not get attention any more.
+
+ - We have a very small number of active committers. There are very few
+   potential candidates and no-one plans to spend effort to go looking for new
+   ones.
+
+### XMLBeans
+ - It seems there are is a small but active set of users of XMLBeans besides
+   Apache POI itself.
+
+ - Bug influx for XMLBeans is very low in general because it is a stable
+   project in maintenance-only mode.
+
+## Bug Statistics:
+
+### Apache POI
+
+ - 622 bugs are open overall (+3)
+ - Having 144 enhancements (+-0)
+ - Thus having 478 actual bugs (+3)
+ - 118 of these are waiting for feedback (+4)
+ - Thus having 360 actual workable bugs (-1)
+ - 3 of the workable bugs have patches available (+-0)
+ - Distribution of workable bugs across components: {XSSF=100, HSSF=82, SS
+   Common=45, HWPF=36, XSLF=26, XWPF=22, POI Overall=15, SXSSF=9, POIFS=6,
+   HSMF=5, OPC=5, HPSF=4, HSLF=3, HPBF=1, SL Common=1}
+
+### Apache XMLBeans
+
+ - 163 open issues (-2)
+ - 116 Bug (+-0)
+ - 28 Improvement (+-0)
+ - 16 New Feature (+-0)
+ - 2 Wish (-1)
+ - 1 Task (-1)
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AY" id="attachment-AY">Attachment AY: Report from the Apache Qpid Project  [Robbie Gemmell]</a>
+
+Apache Qpid is a project focused on creating software based on the
+Advanced Message Queuing Protocol (AMQP), currently providing a protocol
+engine library, message brokers written in C++ and Java, a message router,
+and client libraries for C, C++, .Net, Go, Java/JMS, Python, and Ruby.
+
+# Releases:
+
+- Qpid ProtonJ2 1.0.0-M22 was released on 20th Sept 2024.
+- Qpid JMS 2.6.0 was released on 25th Sept 2024.
+- Qpid JMS 1.12.0 was released on 25th Sept 2024.
+- Qpid JMS 2.6.1 was released on 4th Oct 2024.
+- Qpid JMS 1.12.1 was released on 4th Oct 2024.
+
+# Community:
+
+- The main user and developer mailing lists continue to be active and
+  JIRAs are being raised and addressed in line with prior activity levels.
+
+- There were no new PMC member additions in this quarter.
+  The most recent new PMC member is Daniil Kirilyuk, added 22nd January 2024
+
+- There were no new committer additions in this quarter.
+  The most recent new committer is Daniil Kirilyuk, added 17th February 2023
+
+# Development:
+
+- ProtonJ2 had its 1.0.0-M22 release with some improvements, bug fixes and
+  dependency updates. Work continues on more as arising toward M23,
+  including some cleanup of experimental support for Netty 5 with a view
+  toward 4.2 support as it now seems the path forward in the near term.
+
+- Qpid JMS had its 1.12.0 and 2.6.0 releases, with bug fixes and various
+  dependency updates. It was followed by 1.12.1 and 2.6.1 bug fix releases
+  to address an issue introduced in the earlier changes. Work continues on
+  more as arising.
+
+- Activity continues on cleaning up older areas of Proton C and its language
+  bindings, along with improvements around areas such as session flow
+  control and fairness of delivery transfer. A 0.40.0 release will be done
+  once some new APIs are introduced, to aid transition before later removal
+  of deprecated APIs/features in a new major version release.
+
+- Work continues on Proton-Dotnet towards a future 1.0.0-M11 release,
+  with some related bug fixes already made and more as arising.
+
+# Issues:
+
+There are no Board-level issues at this time.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-AZ" id="attachment-AZ">Attachment AZ: Report from the Apache Ranger Project  [Selvamohan Neethiraj]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BA" id="attachment-BA">Attachment BA: Report from the Apache Ratis Project  [Tsz-wo Sze]</a>
+
+## Description:
+The mission of Apache Ratis is the creation and maintenance of software related 
+to a highly customizable Raft protocol implementation in Java.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache Ratis was founded 2021-02-16 (4 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was William Song on 2024-01-18.
+- Xinyu Tan was added as committer on 2024-08-27
+
+## Project Activity:
+We released Ratis 3.1.1 on 2024-09-26.  It is a maintenance release with
+improvements and bug fixes.
+
+We are currently voting on the next Ratis 3.1.2 maintenance release.
+
+The previous Ratis 3.1.0 and Ratis Thirdparty 1.0.6 respectively on 2024-06-29
+and 2024-05-14.
+
+## Community Health:
+The project is healthy.  In this quarter, we were in maintenance mode focusing
+on fixing bugs.  We have more traffic in mailing lists (dev@ 65% increase,
+user@ 33% increase) but less commits (-73% change) and pull requests (-71% 
+change) compared to the previous quarter.  One of the major discussions
+in the mailing list is the gRPC zero-copy feature.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BB" id="attachment-BB">Attachment BB: Report from the Apache RocketMQ Project  [Xiaorui Wang]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BC" id="attachment-BC">Attachment BC: Report from the Apache Roller Project  [David M. Johnson]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BD" id="attachment-BD">Attachment BD: Report from the Apache Samza Project  [Jagadish Venkatraman]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BE" id="attachment-BE">Attachment BE: Report from the Apache Santuario Project  [Colm O hEigeartaigh]</a>
+
+## Description:
+The mission of Santuario is the creation and maintenance of software related to 
+XML Security in Java
+
+## Project Status:
+Current project status: The Java project is actively maintained and PRs are
+getting merged and releases made.
+Issues for the board: Nothing to report
+
+## Membership Data:
+Apache Santuario was founded 2006-06-27 (18 years ago)
+There are currently 18 committers and 7 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Daniel Kulp on 2018-10-01.
+- No new committers. Last addition was Joze Rihtarsic on 2024-05-14.
+
+## Project Activity:
+Version 4.0.3 and 3.0.5 of the Apache XML Security for Java library were
+released late in the quarter, containing a mixture of bug fixes and new
+features.
+
+## Community Health:
+Apache Santuario is a mature and stable project that has reached a point
+where not too many fixes are required, as it is a set of implementations
+of some specifications that are quite old now. It is actively managed by
+the PMC
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BF" id="attachment-BF">Attachment BF: Report from the Apache SDAP Project  [Nga Thien Chung]</a>
+
+## Description:
+The mission of Apache SDAP is the creation and maintenance of software related 
+to an integrated data analytic center for Big Science problems
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache SDAP was founded 2024-04-16 (7 months ago)
+There are currently 21 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is 7:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Grace Llewellyn on 2024-06-23.
+- No new committers. Last addition was Joe Roberts on 2024-06-24.
+
+## Project Activity:
+Apache SDAP 1.4.0 was released on 2024-11-04. It features support for 3D data
+and new algorithms for working with tomography data.
+
+A talk titled "Leveraging Apache SDAP in the Building of Earth System Digital
+Twins" was presented at the Geospatial and Remote Sensing Track at Apache
+Community Over Code NA.
+
+## Community Health:
+### Mailing List
+Since last quarter, dev@sdap.apache.org had 8 new threads.
+
+### Contributors
+Since last quarter, the SDAP community has merged 20 PRs and created/updated
+405 Jira issues. The high number of Jira issue updates was a result of
+reviewing and closing outdated tickets.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BG" id="attachment-BG">Attachment BG: Report from the Apache Sedona Project  [Jia Yu]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BH" id="attachment-BH">Attachment BH: Report from the Apache Serf Project  [Daniel Sahlberg]</a>
+
+## Description:
+
+The mission of the Apache Serf project is creating and maintaining of software
+related to HTTP and associated protocols.
+
+## Project Status
+
+The project has sufficient PMC oversight.
+
+There are no threats to the sustainability or resillence of the project,
+although the project is very much dormant due to lack of need/requirements
+from our users.
+
+The project has no requests for the Foundation.
+
+## Membership Data:
+
+Apache Serf was founded 2015-08-18 (9 years ago).
+
+There are currently 15 committers and 13 PMC members in this project.
+
+## Community Health:
+
+No new PMC members. Last addition was Nathan Hartman and Daniel Sahlberg
+on 2023-10-05.
+No new committers. Last addition was Nathan Hartman and Daniel Sahlberg
+on 2023-10-09.
+
+## Project Activity
+
+Recent releases:
+* 1.3.10 was released on 2023-05-31.
+* 1.3.9 was released on 2016-08-31.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BI" id="attachment-BI">Attachment BI: Report from the Apache ServiceComb Project  [Bao Liu]</a>
+
+## Description:
+The mission of Apache ServiceComb is the creation and maintenance of software 
+related to a microservice framework that provides a set of tools and components 
+to make development and deployment of cloud applications easier.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: none
+
+## Membership Data:
+Apache ServiceComb was founded 2018-10-17 (6 years ago)
+There are currently 37 committers and 22 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:3.
+
+Community changes, past quarter:
+- Cheng Youling was added to the PMC on 2024-10-12
+- No new committers. Last addition was Cheng Youling on 2024-02-21.
+
+## Project Activity:
+ServiceComb Java Chassis 2.8.20 was released on 2024-09-20.
+ServiceComb Java Chassis 3.2.2 was released on 2024-09-20.
+ServiceComb Java Chassis 2.8.19 was released on 2024-08-13.
+ServiceComb Java Chassis 3.2.1 was released on 2024-08-13.
+
+## Community Health:
+Overall, community health is good.We archived inactive component Pack &amp; Saga. 
+ServiceComb Java Chassis made 4 releases, and there are some new features 
+developed in 3.x.
+There are some development around the ServiceCenter and Kie.
+We added one new PMC member.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BJ" id="attachment-BJ">Attachment BJ: Report from the Apache ShardingSphere Project  [Liang Zhang]</a>
+
+## Description:
+The mission of Apache ShardingSphere is the creation and maintenance of
+software related to a database clustering system providing data sharding,
+distributed transactions, and distributed database management
+
+## Project Status:
+Current project status: OK
+Issues for the board: No
+
+## Membership Data:
+Apache ShardingSphere was founded 2020-04-15 (5 years ago)
+There are currently 63 committers and 23 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Longtao Jiang on 2024-03-28.
+- No new committers. Last addition was Chenyang Ma on 2024-05-27.
+
+## Project Activity:
+- Project Status:
+  - Released version 5.5.1
+  - Developing for version 5.5.2
+  - Archiving stale UI project
+- Publish the Chinese translation of the book
+ "A Definitive Guide to Apache ShardingSphere"
+
+## Community Health:
+After years of development, ShardingSphere has reached a state of stability
+both in its community and codebase,
+with the focus of coding efforts gradually shifting towards automated testing.
+The community has more usage issues than feature requests,
+and future efforts will be concentrated on enhancing usability,
+documentation, and related areas.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BK" id="attachment-BK">Attachment BK: Report from the Apache ShenYu Project  [Yu Xiao]</a>
+
+## Description:
+ShenYu is a Java native API Gateway for service proxy,
+protocol conversion and API governance.
+
+## Project Status:
+Current project status: Good Healthy.
+Issues for the board: There are no issues requiring board attention.
+
+## Membership Data:
+Apache ShenYu was founded 2022-07-20 (2 years ago)
+There are currently 57 committers and 25 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Yunlong Lee on 2024-02-04.
+- Chao Zhang was added as committer on 2024-08-14
+- Shinan Chen was added as committer on 2024-08-30
+
+## Project Activity:
+
+We are ready to release version 2.7.0.
+
+Software development activity:
+
+ - We added support contribute with Gitpod.
+ - We added support dynamically scale admin.
+ - We added support checkstyle plugin to 3.4.0.
+ - We added support add header key of sign plugin.
+ - We added support OceanBase Datasource .
+ - We added support plugin, selector,rule for multi namespace.
+ - We added support data sync for multi namespace.
+ - We added support discovery for multi namespace.
+ - We added support data permission for multi namespace.
+ - We added support shenyu client for multi namespace.
+ - We added support alert model for multi namespace.
+ - We added support shenyu client heartbeat.
+ - We added support dynamically scale k8s module .
+ - We fixed upstream check bug.
+ - We fixed shenyu client register check.
+ - We fixed db script into admin package.
+ - We fixed docker ci error.
+ - We refactor springcloud plugin.
+ - We refactor some word spelling error and class name error.
+ - We refactor set up callback for send message on Kafka.
+ - We refactor kubernetes config.
+
+
+Meetups and Conferences:
+
+ - Community meetings(4) to discuss development tasks and how to build
+an open governance community.
+ -  3 Task for ossp (Done).
+
+## Community Health:
+Overall community health is good.
+Since the last report, add new 8 contributors added (currently:394).
+add +10 subscribers to dev@shenyu.apache.org mailing (currently:508)
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BL" id="attachment-BL">Attachment BL: Report from the Apache SIS Project  [Martin Desruisseaux]</a>
+
+## Description:
+The mission of Apache SIS is the creation and maintenance of software providing 
+data structures for developing geospatial applications compliant with the model 
+of OGC/ISO international standards.
+
+## Project Status:
+Current project status: ongoing with high activity (except last month).
+Issues for the board: none.
+
+## Membership Data:
+Apache SIS was founded 2012-09-19 (12 years ago)
+There are currently 22 committers and 17 PMC members in this project.
+The Committer-to-PMC ratio is roughly 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Alex&iacute;s Manin on 2021-05-27.
+- No new committers. Last addition was Bruno P. Kinoshita on 2021-06-23.
+
+## Project Activity:
+Work on Apache SIS 1.5 release is still ongoing (last release was one year ago).
+We have not been able to complete the work on-time for the Community Over Code
+conferences, due to unfinished upgrade to latest ISO 19111 and 19162 standards.
+
+Apache SIS had a presentation in the Community Over Code conference in Europe.
+
+Many new modules were added recently, contributed by two developers others
+than the usual one: CoverageJSON, GeoPackage, GIMI, GSF and GDAL. The GDAL
+module is targeted for the SIS 1.5 release. The other modules are put in an
+"incubator" group of modules, pending further review before a SIS release
+after SIS 1.5.
+
+Apache Baremaps (incubator), currently in release candidate, is now using SIS.
+Apache Sedona is still on ice regarding possible use of SIS.
+
+## Community Health:
+The board made a call for PMC members who can provide oversight and got
+responses from Alexis Manin, Johann Sorel and Martin Desruisseaux.
+Contributions came from a more diversified pool of developers than usual
+during the last quarter.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BM" id="attachment-BM">Attachment BM: Report from the Apache Solr Project  [Jason Gerlowski]</a>
+
+## Description:
+The mission of Apache Solr is the creation and maintenance of software related 
+to highly scalable distributed document search and analytics
+
+## Project Status:
+Current project status: Ongoing with moderate activity
+Issues for the board: none
+
+## Membership Data:
+Apache Solr was founded 2021-02-16 (4 years ago) after 15 years within the
+Lucene project There are currently 97 committers and 61 PMC members in this
+project. The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Gibney on 2022-12-20.
+- Christos Malliaridis was added as committer on 2024-10-18 Congratulations
+  and welcome to Christos!
+
+## Project Activity:
+Recent releases:
+* Solr 8.11.4 was released on 2024-09-24
+* Solr's 8.x release line was designated "End of Life" on 2024-10-25, making
+  8.11.4 the final release in this line.
+* 9.7.0 was released on 2024-09-09
+
+Areas of development &amp; interest:
+* Reorganization and simplification of SolrJ code and artifacts
+* Vector search: interating with embedding services to convert text to vector
+  automatically
+* Cross-DC Support and Integration
+* UX: Improvements to Solr scripts, configuration, and Admin UI
+* ... there are always more ...
+
+## Community Health:
+Commit activity is a bit down, when compared either to the previous quarter
+and to this same quarter last year.  But discussion on our 'dev@' and 'users@'
+mailing lists remains stable.
+
+Qualitatively the community still feels vibrant, with developers bringing fresh
+new ideas (e.g. a new Kotlin based UI) and our user base evangelizing the
+project at conferences and on our small solr.apache.org "blog".
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BN" id="attachment-BN">Attachment BN: Report from the Apache Spark Project  [Matei Alexandru Zaharia]</a>
+
+Description:
+
+Apache Spark is a fast and general purpose engine for large-scale data
+processing. It offers high-level APIs in Java, Scala, Python, R and SQL as
+well as a rich set of libraries including stream processing, machine learning,
+and graph analytics.
+
+Issues for the board:
+
+- None
+
+Project status:
+
+- The community decided that Apache Spark 3.5 will receive support and
+  maintenance for 31 months, with an end-of-life date set for April 12, 2026.
+- We made four releases since the last report:
+    1) Spark 3.5.2: Released on August 12, 2024.
+    2) Spark 3.5.3: Released on September 24, 2024.
+    3) Spark 4.0 Preview 2: Released on September 26, 2024.
+    4) Spark 3.4.4: Released on October 27, 2024. This will be the final
+       maintenance release for the 3.4 series.
+- A vote to deprecate SparkR in Spark 4.0 has passed.
+- The community is discussing how to manage the graph components of Spark
+  going forward, e.g., deprecating GraphX, or bringing the external
+  GraphFrames project into Apache Spark. We encourage potential contributors
+  to these components to join the discussions on our dev mailing list.
+- The vote for "Document and Feature Preview via GitHub Pages" passed. As a
+  result, documentation for the master development branch of Spark is now
+  available at https://apache.github.io/spark/.
+- The following other votes on development matters passed:
+    1) "Move Variant to Parquet"
+    2) "SPIP: Single-pass Analyzer for Catalyst"
+    3) "Archive Spark Documentations in Apache Archives"
+    4) "Using Github Issues for Spark-Connect-Go _only_ issues"
+
+Trademarks:
+
+- No changes since last report.
+
+Latest releases:
+
+- Spark 3.4.4 was released on Oct 27, 2024.
+- Spark 4.0 Preview 2 was released on Sept 26, 2024.
+- Spark 3.5.3 was released on Sept 24, 2024.
+
+Committers and PMC:
+
+- The latest committer was added on July 15, 2024 (Allison Wang).
+- The latest PMC member was added on Aug 8th, 2024 (Kent Yao).
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BO" id="attachment-BO">Attachment BO: Report from the Apache StreamPipes Project  [Philipp Zehnder]</a>
+
+## Description:
+The mission of Apache StreamPipes is the creation and maintenance of software 
+related to a self-service Industrial IoT toolbox which enables non-technical 
+users to connect, analyze and explore IoT data streams
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache StreamPipes was founded 2022-11-16 (2 years ago)
+There are currently 32 committers and 15 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Zhenyu Luo on 2023-10-17.
+- Baiqi Lu was added as committer on 2024-09-07
+
+## Project Activity:
+- Added multiple new processing elements contributed by the community
+- Streamlined the dashboard and data explorer for improved usability
+- Extended the asset model concept to support broader use cases
+- Developed new APIs to enable adding adapters and pipelines through REST calls
+- Actively preparing for the upcoming release
+
+## Community Health:
+- We reached 600 Stars on GitHub
+- Quite a few new Pull Requests from new contributors
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BP" id="attachment-BP">Attachment BP: Report from the Apache Subversion Project  [Nathan Hartman]</a>
+
+## Description:
+The Apache Subversion&reg; version control system exists to be universally
+recognized and adopted as an open-source, centralized version control
+solution characterized by its reliability as a safe haven for valuable
+data; the simplicity of its model and usage; and its ability to
+support the needs of a wide variety of users and projects, from
+individuals to large-scale enterprise operations.
+
+## Project Status:
+Current project status: Ongoing, mature.
+Issues for the board: None at this time.
+
+## Membership Data:
+Apache Subversion was founded 2010-02-17 (15 years ago).  Prior to
+joining ASF, the project began in February of 2000 (24 years ago).
+There are currently 88 committers and 49 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Timofei Zhakov on 2024-06-25.
+- No new committers. Last addition was Timofei Zhakov on 2024-06-24.
+
+## Project Activity:
+The work on the CMake build system discussed in last report has been integrated
+to trunk and is expected to be released as part of Subversion 1.15.
+
+There has been a significant increase in development activity, with
+contributions both from our latest committer and some old members.
+
+Subversion 1.14.4 was released on 2024-10-08.
+
+## Community Health:
+The community appears healthy for a mature and stable project.
+Multiple developers monitor the mailing lists and respond when needed.
+User questions usually receive helpful responses on the mailing lists,
+from both project developers and community members. Substantial new
+developments are taking place in the codebase.
+
+Our community is fully volunteer-driven and we would like to thank
+everyone for their support.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BQ" id="attachment-BQ">Attachment BQ: Report from the Apache Superset Project  [Maxime Beauchemin]</a>
+
+## Description:
+The mission of Apache Superset is the creation and maintenance of software 
+related to data exploration, analysis, visualization, and dashboarding.
+
+## Project Status:
+Current project status: Ongoing with high usage/engagement/activity
+Issues for the board: None
+
+## Membership Data:
+Apache Superset was founded 2020-11-17 (4 years ago)
+There are currently 66 committers and 35 PMC members in this project.
+The Committer-to-PMC ratio is roughly 9:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Sam Firke on 2024-04-08.
+- No new committers. Last addition was Joe Li on 2024-08-09.
+- One Committer nomination and one PMC nomination coming imminently
+
+## Project Activity:
+
+Superset 4.1.0 release vote passed today.
+
+Recent releases:
+4.0.2 was released on 2024-07-02.
+4.0.1 was released on 2024-05-13.
+3.1.3 was released on 2024-05-09.
+
+## Community Health:
+* Superset is continuing to climb the top 200 repos on GitHub, and a small
+  number of us are trying to keep up with both aging and new Issues/PRs (AI is
+  helping quite a bit here)
+* 17.7K Slack members and rising by about 350/month
+* The Github repo still ranks #1 on OSSInsight in both Business Intelligence
+  and Modern Data Stack categories for 7 years running
+* AI Bots are helping on Slack quite a bit. Docs, however, are due for
+  reinvention/automation... they're nigh impossible to keep up to date, and
+  greenlighting any AI-bot would be a huge benefit to the project.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BR" id="attachment-BR">Attachment BR: Report from the Apache Syncope Project  [Francesco Chicchiricc&ograve;]</a>
+
+## Description:
+The mission of Syncope is the creation and maintenance of software related to 
+Managing digital identities in enterprise environments
+
+## Project Status:
+Current project status: healthy.
+Issues for the board: none.
+
+## Membership Data:
+Apache Syncope was founded 2012-11-21 (12 years ago)
+There are currently 25 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Lorenzo Di Cola on 2023-05-22.
+- No new committers. Last addition was Samuel Garofalo on 2022-07-29.
+
+## Project Activity:
+Branch 3_0_X is keeping up, mainly with bug fixes and dependency upgrades.
+A security threat was recently reported and managed as CVE-2024-45031, and
+lead to the new release 3.0.9.
+
+Code update and refactoring still happening on master branch, heading next
+major version 4.0.0 in the coming months.
+
+Recent releases:
+
+- 3.0.9: 2024-10-21
+- 3.0.8: 2024-07-24
+- 3.0.7: 2024-05-20
+
+## Community Health:
+Users (including fresh ones) keep asking questions and reporting bugs.
+
+Discussions about new features and improvements keep appearing and being
+followed up in dev@.
+
+Users (including fresh ones) keep asking questions and reporting bugs.
+
+GitHub's Pull Requests are confirmed to be the main contribution path, from
+both first-time contributors and committers.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BS" id="attachment-BS">Attachment BS: Report from the Apache SystemDS Project  [Matthias Boehm]</a>
+
+## Description:
+Apache SystemDS is a machine learning (ML) system for the end-to-end
+data science lifecycle from data preparation and cleaning, over
+efficient ML model training, to scoring and debugging. ML algorithms
+or pipelines are specified in a high-level language with R-like syntax,
+or related Python and Java APIs, and the system automatically generates
+hybrid runtime plans of local, in-memory operations and distributed
+operations on Apache Spark.
+
+## Issues for the Board:
+- None
+
+## Project Status:
+- Current work focuses on adding the missing primitives for
+  a number benchmarks such as TPCx-AI and MLPerf on SystemDS, new APIs
+  for the alignment of multimodal datasets, an exploration of Java's
+  new vector and foreign memory API, and incremental refinements
+  of major internal components for compression, reuse, as well as
+  multiple GPU devices, and distributed and federated operations.
+- We added automated code coverage enforcements in order to motivate
+  continuous improvements of the testsuite's code coverage
+- Activity is ramping up again (new committer, more contributions)
+
+## Membership Data:
+- Apache SystemDS was founded 2017-05-16 (incubator process entered
+  2015-11-02)
+- Last PMC members added 2024-03-28 (Olga Ovcharenko)
+- Last committer added 2024-09-09 (Elias Strauss)
+- There are currently 36 committers and 27 PMC members in the project.
+
+## Activity and Health:
+- Code activity is healthy with 132 commits (+158%) in the last 3 months.
+- Community growth is healthy with 14 active contributors (+-0%)
+  in the last 3 months
+- Communication is healthy, mailing list activity is improving,
+  additional work on better documentation.
+
+## Releases:
+- Apache SystemDS 3.2.0 was released on 2024-03-17.
+- Apache SystemDS 3.1.0 was released on 2023-03-13.
+- Apache SystemDS 3.0.0 was released on 2022-06-20.
+- Apache SystemDS 2.2.2 was released on 2022-06-25.
+- Apache SystemDS 2.2.1 was released on 2021-12-02.
+- Apache SystemDS 2.2.0 was released on 2021-10-30.
+- Apache SystemDS 2.1.0 was released on 2021-06-28.
+- Apache SystemDS 2.0.0 was released on 2020-10-14.
+- Apache SystemML 1.2.0 was released on 2018-08-24.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BT" id="attachment-BT">Attachment BT: Report from the Apache Tapestry Project  [Thiago Henrique De Paula Figueiredo]</a>
+
+## Description:
+The mission of Tapestry is the creation and maintenance of software related to 
+Component-based Java Web Application Framework
+
+## Project Status:
+Current project status: ongoing.
+Issues for the board: none.
+
+## Membership Data:
+Apache Tapestry was founded 2006-02-14 (19 years ago)
+There are currently 30 committers and 13 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ben Weidig on 2021-12-02.
+- No new committers. Last addition was Christian K&ouml;berl on 2024-05-02.
+
+## Project Activity:
+We've released 2 preview versions of 5.9.0, the first version with
+Jakarta EE support, in order to get issues found and sorted out before
+the final, proper 5.9.0 release. We also did a pull request cleanup:
+some closed for being outdated, some applied to the master branch and
+some implemented even though the provided commit didn't get used directly.
+A couple of them involved upgrading to non-vulnerable versions of
+dependencies with known vulnerabilities (i.e. CVEs).
+
+## Community Health:
+It was a way more active quarter than usual, probably due to the Jakarta 
+EE support and surrounding discussions.
+
+dev@tapestry.apache.org had a 600% increase in traffic in the past 
+quarter (56 emails compared to 8)
+users@tapestry.apache.org had a 227% increase in traffic in the past 
+quarter (36 emails compared to 11)
+
+The reporter.a.o's provided number of commits in the past quarter is broken, 
+because it says 0 but it was definitely more than that.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BU" id="attachment-BU">Attachment BU: Report from the Apache Tcl Project  [Georgios Petasis]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BV" id="attachment-BV">Attachment BV: Report from the Apache TomEE Project  [David Blevins]</a>
+
+## Description:
+
+Apache TomEE delivers enterprise application containers and services based on,
+but not limited to the Enterprise JavaBeans Specification and Java Enterprise
+Edition Specifications.
+
+## Health
+
+Overall contributions are still very low for a project of our scope.  Roughly
+20 commits from 3 committers over the last month.  See our October report for
+details on a new contributor we added last report cycle.
+
+## Activity
+
+Work on Jakarta EE 10 is still the main focus. As in the past reports, overall
+there are still TCKs not yet setup and we are still a long way from being
+compliant with Jakarta EE 10.  We've had some discussion on the effort
+involved in certification and determined we do not have the resources to
+pursue compliance.  Aside from lack of resources, nearly all other Jakarta EE
+implementations reuse the same Eclipse projects.  As a result it creates an
+ecosystem where in practice we have to compete with the combined efforts of
+all other vendors togther.  In addition we are often the only ones to file TCK
+challenges, which makes our certification significantly more difficult.
+
+The community has coalesced on a decision to not certify TomEE 10 as Jakarta
+EE 10 compliant and to release TomEE 10 as final as it is feature complete.
+Additionally, TomEE 9.1 is already unmaintained with several security
+vulnerabilities.
+
+Timeline of the final release will depend on a release of CXF or us creating
+our own build as we have done with the milestones.
+
+## PMC changes:
+
+- Currently 13 PMC members.
+- Last PMC addition Richard Zowalla on May 23rd, 2022
+
+## Committer base changes:
+
+- Currently 35 committers.
+- Last committer added was Markus Jung on September 12th, 2024
+- Previous committer added was Thomas Andraschko on March 25th, 2024
+
+## Releases:
+
+ - Apache TomEE 10.0.0-M2 on July 22nd, 2024
+ - Apache TomEE 10.0.0-M3 on October 13th, 2024
+ - Jakarta EE 10.0 API uber-jar on November 2nd, 2024
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BW" id="attachment-BW">Attachment BW: Report from the Apache Traffic Control Project  [Eric Friedrich]</a>
+
+## Description:
+The mission of Apache Traffic Control is the creation and maintenance of 
+software related to building, monitoring, configuring, and provisioning a large 
+scale content delivery network (CDN)
+
+## Project Status:
+Current project status: Dormant
+Issues for the board: None
+
+## Membership Data:
+Apache Traffic Control was founded 2018-05-15 (6 years ago)
+There are currently 31 committers and 19 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Steve Hamrick on 2023-02-07.
+- No new committers. Last addition was Abdulrahman Elawady on 2023-09-21.
+
+## Project Activity:
+Almost all new development has stopped on Traffic Control. There are
+occasional commits to keep CI jobs healthy and running. Most of the commit
+activity is automated commits such as build jobs and Github's dependabot.
+
+A reported security vulnerability (CVE-2024-45387) was fixed, resulting in
+a patch release - 8.0.2 on Oct 4, 2024
+
+
+## Community Health:
+Discussion on both mailing lists and Slack channel is minimal. There are 
+still several PMC members active and ready to engage on security fixes 
+or releases if needed.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BX" id="attachment-BX">Attachment BX: Report from the Apache TsFile Project  [Jialin Qiao]</a>
+
+## Description:
+Apache TsFile is a columnar storage file format designed specifically for time
+series data, with a focus on efficient storage, high throughput for read and
+write operations, and compatibility with various data processing frameworks.
+TsFile is intended to integrate seamlessly with existing time series
+databases, such as IoTDB, and data processing frameworks like Apache Spark and
+Apache Flink, facilitating the adoption of TsFile in IoT big data processing
+ecosystems.TsFile aims to become a widely adopted standard for time series
+data storage.
+
+## Project Status:
+Current project status: Mostly Okay
+Issues for the board: no
+
+## Membership Data:
+Apache TsFile was founded 2023-11-15 (a year ago)
+There are currently 18 committers and 18 PMC members in this project.
+The Committer-to-PMC ratio is 1:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Gaofei Cao on 2023-11-15.
+- No new committers were added.
+
+## Project Activity:
+1.1.0 was released on 2024-11-10.
+
+* Support new data types: STRING, BLOB, TIMESTAMP, DATE
+* Introduce an optional encryption module to make TsFile more secure.
+* Support dictionary encoding for newly introduced STRING data type.
+
+
+Some optimizaitons:
+
+* We Introduce short-circuit evaluation and use Freemarker to generate
+type-specific filters to improve the query performance
+* Utilize the KMP and BM algorithms to significantly optimize the performance of
+LIKE predicate execution.
+
+
+## Community Health:
+The activity level of the mailing list has declined a bit, as the development
+of TsFile V4  almost finished. There aren't many design points that need
+discussion.
+
+dev@tsfile.apache.org had a 47% decrease in traffic in the past quarter (64
+emails compared to 119):
+
+We are designing the new read and write interfaces for TsFile, aiming to make
+the interfaces in different programming languages more consistent in use. Both
+for V3 (Point Tree model) and V4 (Device Table model).
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BY" id="attachment-BY">Attachment BY: Report from the Apache Turbine Project  [Georg Kallidis]</a>
+
+## Description:
+The mission of Turbine is the creation and maintenance of software related to a 
+Java Servlet Web Application Framework and associated component library
+
+## Project Status:
+Current project status: Ongoing with low activity and at least 3 active PMC
+members.
+Issues for the board: None
+
+## Membership Data:
+Apache Turbine was founded 2007-05-16 (17 years ago)
+There are currently 12 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 4:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Jeffery Painter on 2017-11-12.
+- No new committers. Last addition was Youngho on 2021-12-06.
+
+## Project Activity:
+
+Recent releases:
+Fulcrum Testcontainer 2.0.1 was released on 2024-10-25.
+Fulcrum Yaafi 2.0.1 was released on 2024-10-07.
+Turbine Parent POM 13 was released on 2024-09-11.
+
+## Community Health:
+
+The proposed sequence of the next release cycle (Turbine version 7) has
+started as announced in Turbine dev mailing list (cft.
+https://lists.apache.org/thread/55vgl4823mbxlzmvjo8ys283t42jw2xm), which has a
+Java 17 baseline. It is now in stage two (Nr.4), while lately the Turbine
+archetype module code was updated considerably. 
+Code contributions continue on a medium to low level.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-BZ" id="attachment-BZ">Attachment BZ: Report from the Apache Velocity Project  [Nathan Bubna]</a>
+
+## Description:
+The mission of Velocity is the creation and maintenance of software related to 
+A Java Templating Engine
+
+## Project Status:
+Current project status: Ongoing, moderate activity
+Issues for the board: None at this time
+
+## Membership Data:
+Apache Velocity was founded 2006-10-24 (18 years ago)
+There are currently 15 committers and 9 PMC members in this project.
+The Committer-to-PMC ratio is 5:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Michael Osipov on 2017-07-27.
+- No new committers. Last addition was Thomas Mortagne on 2020-03-09.
+
+## Project Activity:
+velocity-engine-2.4.1 was released on 2024-10-14.
+velocity-engine-2.4 was released on 2024-09-07.
+
+## Community Health:
+There is still a Velocity Tools updates due, as we work through the Jakarta EE
+change, but discussion and work on solutions there is incomplete. In general,
+though, Velocity has emerged from maintenance mode to do some needed updates,
+as we reliably have for a long time now.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-CA" id="attachment-CA">Attachment CA: Report from the Apache Web Services Project  [Daniel Kulp]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-CB" id="attachment-CB">Attachment CB: Report from the Apache Whimsy Project  [Shane Curcuru]</a>
+
+## Description:
+The mission of Apache Whimsy is the creation and maintenance of software 
+related to tools that help automate various administrative tasks or information 
+lookup activities
+
+## Project Status:
+Current project status:Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Whimsy was founded 2015-05-19 (9 years ago)
+There are currently 12 committers and 10 PMC members in this project.
+The Committer-to-PMC ratio is 6:5.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Matt Sicker on 2020-04-11.
+- No new committers. Last addition was Matt Sicker on 2020-04-09.
+
+## Project Activity:
+A quiet month, even for Whimsy, but issues are still replied to.  The new
+Whiimsy automatic NOTICE emails that simplify PMC add procedures are working
+fine.
+
+## Community Health:
+No change; sufficient PMC members to address critical issues, although 
+most development is handled by one or two committers.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-CC" id="attachment-CC">Attachment CC: Report from the Apache Xalan Project  [Gary D. Gregory]</a>
+
+## Description:
+Apache Xalan exists to promote the use of XSLT. We view XSLT (Extensible 
+Stylesheet Language Transformations) as a compelling paradigm that transforms 
+XML documents, thereby facilitating the exchange, transformation, and 
+presentation of knowledge. The ability to transform XML documents into usable 
+information has great potential to improve the functionality and use of 
+information systems. We intend to build freely available XSLT processing 
+components in order to engender such improvements.
+
+## Project Status:
+Current project status: Ongoing with low activity.
+Issues for the board: None.
+
+## Membership Data:
+Apache Xalan was founded 2004-09-30 (20 years ago)
+There are currently 57 committers and 5 PMC members in this project.
+The Committer-to-PMC ratio is roughly 8:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Joseph Kessselman on 2023-08-07.
+- No new committers. Last addition was Joseph Kessselman on 2023-06-29.
+
+## Project Activity:
+We have not has a release of any components this release period. Work in
+on-going toward the addition of XSLT 3 functionality. We plan on completing
+porting the build from Ant to Maven, fixing bugs, and releasing a new version.
+
+## Community Health:
+Email traffic has decreased a lot on the development list (by a third). By
+contrast, there has been an increase in Jira activity for bug reports for both
+the C and Java components. Overall the project has very low activity.
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-CD" id="attachment-CD">Attachment CD: Report from the Apache Xerces Project  [Michael Glavassevich]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-CE" id="attachment-CE">Attachment CE: Report from the Apache XML Graphics Project  [Clay Leeds]</a>
+
+
+-----------------------------------------
+<a class="selflink" href="#attachment-CF" id="attachment-CF">Attachment CF: Report from the Apache YuniKorn Project  [Wilfred Spiegelenburg]</a>
+
+## Description:
+The mission of Apache YuniKorn is the creation and maintenance of software 
+related to a standalone resource scheduler responsible for scheduling batch 
+jobs and long-running services on large scale distributed systems running in 
+on-premises environments as well as different public clouds
+
+## Project Status:
+Current project status: Ongoing, with high activity.
+Issues for the board:
+We are working through a possible copyright issue in which a 3rd party created a
+service related to YuniKorn using the YuniKorn name. They have since replaced 
+YuniKorn with unicorn. We think this is not a good enough name separation.
+
+## Membership Data:
+Apache YuniKorn was founded 2022-03-16 (3 years ago)
+There are currently 37 committers and 29 PMC members in this project.
+The Committer-to-PMC ratio is roughly 5:4.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Chia-Ping Tsai on 2024-03-07.
+- No new committers. Last addition was Kuan Po Tseng on 2024-03-15.
+
+## Project Activity:
+Recent releases:
+1.6.0 was released on 2024-09-17.
+1.5.2 was released on 2024-07-29.
+1.5.1 was released on 2023-05-16.
+
+Release 1.6.0 has shown some instability in auto scaling clusters. The
+community is actively investigating the root cause.
+
+Scale testing is still an issue. At CoC some of the PMC members spoke with
+Apache INFRA and we have a path forward that still needs executing. The planning
+is to make this part of our 1.7.0 release .
+
+## Community Health:
+12 new Jira accounts were requested. 175 new Jiras created and 200 resolved,
+with corresponding GitHub PRs: 183 created and 191 resolved.
+
+Multiple community members gave talks at CoC NA. Constructive discussions around
+the project direction and releases were held during the conference days. We also
+received and answered questions from other Apache projects on possible
+integrations.
+
+
+------------------------------------------------------
+End of minutes for the November 20, 2024 board meeting.
+
+</pre>
+
+</div>  </main>
+  <section class="newsletter-signup grad-purple">
+    <div class="inner text-center py-large">
+        <div class="text-col">
+            <h2 class="text-white">Subscribe to ASF Plus One, Our Monthly Newsletter</h2>
+            <p><a href="https://news.apache.org/newsletter" target="_blank" class="btn btn--white">Subscribe Now</a></p>
+        </div>
+    </div>
+  </section>
+  </div>
+  <!-- Footer -->
+   <!-- Bump -->
+  <footer class="bg-primary" data-pagefind-ignore="all">
+    <div class="inner py-xl">
+        <div class="flex gap-large mb-large flex-column-800">
+            <div class="flex-1 flex flex-column gap-medium">
+                <img src="/images/asf_logo_full_horizontal_white.svg" width="300" alt="ASF White Logo">
+                <p>Apache and the Apache logo are trademarks of The Apache Software Foundation. </p>
+                <p>The Apache® Software Foundation is a 501(c)(3) nonprofit organization. Tax ID # 47-0825376</p>
+                <div class="mb-medium">
+                    <a href="https://donate.apache.org/48ff" target="_blank" class="btn btn--white" onclick="_paq.push(['trackEvent', 'click', 'SponsorASF Button']);">Donate</a>
+                </div>
+                <div class="header-social-icons">
+                    <a target="_blank" href="https://infra.apache.org/slack.html"><img src="/images/slack-icon.svg" alt="slack icon"></a>
+                    <a target="_blank" href="https://github.com/apache"><img src="/images/github-mark-white.svg" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/the-apache-software-foundation/"><img src="/images/linkedin-icon.png" alt="linkedIn icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/c/TheApacheFoundation"><img src="/images/youtube-icon.svg" alt="youtube icon"></a>
+                    <a target="_blank" href="https://twitter.com/TheASF"><img src="/images/x-icon.svg" alt="X icon"></a>
+                    <a target="_blank" href="https://bsky.app/profile/apache.org"><img src="/images/bluesky-icon.png" alt="Bluesky icon"></a>
+                    <a target="_blank" href="https://fosstodon.org/@TheASF" rel="me"><img src="/images/mastodon-icon.png" alt="Mastodon icon"></a>
+                </div>
+            </div>
+            <div class="flex-1 flex gap-medium flex-column-600">
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/" target="_blank">Contributor Getting Started</a></li>
+                            <li role="none"><a role="menuitem" href="https://community.apache.org/contributors/" target="_blank">Becoming a Committer</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/policies/conduct">Code of Conduct</a></li>
+                            <li role="none"><a role="menuitem" href="/community-resources/">Community Resources</a></li>
+                            <li role="none"><a role="menuitem" href="https://communityovercode.org/" target="_blank">Community Over Code</a></li>
+                            <li role="none"><a role="menuitem" href="https://events.apache.org/" target="_blank">Events</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/buy_stuff">ASF Merchandise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Learn</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://news.apache.org/" target="_blank">Blog</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/how-it-works">How the ASF Works</a></li>
+                            <li role="none"><a role="menuitem" href="/theapacheway/">The Apache Way</a></li>
+                            <li role="none"><a role="menuitem" href="/legal/">Legal &amp; Trademark</a></li>
+                            <li role="none"><a role="menuitem" href="/licenses">Licenses</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/glossary">Glossary</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Projects</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/projects">Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://incubator.apache.org/" target="_blank">Incubator Projects</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/" target="_blank">Projects Directory </a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/mailinglists">Mailing Lists </a></li>
+                            <li role="none"><a role="menuitem" href="/security">Report a Vulnerability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">Resources &amp; Tools</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="/dev/">Developer Information</a></li>
+                            <li role="none"><a role="menuitem" href="https://cwiki.apache.org/" target="_blank" >Wiki</a></li>
+                            <li role="none"><a role="menuitem" href="https://issues.apache.org/" target="_blank" >Issues</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/slack.html" target="_blank" >Slack</a></li>
+                            <li role="none"><a role="menuitem" href="https://selfserve.apache.org/" target="_blank" >Self Serve Portal</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra.apache.org/" target="_blank" >Infrastructure</a></li>
+                             <li role="none"><a role="menuitem" href="https://status.apache.org/" target="_blank">Infrastructure Status</a></li>
+                            <li role="none"><a role="menuitem" href="https://infra-reports.apache.org/#uptime" target="_blank">Infrastructure Statistics</a></li>
+                            <li role="none"><a role="menuitem" href="https://whimsy.apache.org/" target="_blank" >Whimsy</a></li>
+                            <li role="none"><a role="menuitem" href="/foundation/press/kit/">Brand Guidelines</a></li>
+                            <li role="none"><a role="menuitem" href="/logos/">Project Logos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav-col flex flex-column flex-1 flex-row-600">
+                    <div class="footer-nav-group">
+                        <h5 class="white">Downloads</h5>
+                        <ul class="list-unstyled white" role="menu">
+                            <li role="none"><a role="menuitem" href="https://downloads.apache.org/" target="_blank">Distributions</a></li>
+                            <li role="none"><a role="menuitem" href="https://projects.apache.org/releases.html" target="_blank">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h5 class="white">About</h5>
+                       <ul class="list-unstyled white" role="menu">
+                           <li role="none"><a role="menuitem" href="/foundation/">About</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsors">Our Sponsors</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/sponsorship">Corporate Sponsorship</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/individual-supporters">Individual Supporters</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/leadership">Leadership</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/members">Members</a></li>
+                           <li role="none"><a role="menuitem" href="https://diversity.apache.org/" target="_blank">Diversity & Inclusion</a></li>
+                           <li role="none"><a role="menuitem" href="/press/">Newsroom</a></li>
+                           <li role="none"><a role="menuitem" href="/foundation/contact">Contact</a></li>
+                           <li role="none"><a role="menuitem" href="https://privacy.apache.org/policies/privacy-policy-public.html" target="_blank">Privacy Policy</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright &#169; 2026 The Apache Software Foundation, Licensed under the <a class="white" href="/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+    </div>
+  </footer>
+
+  <!-- / Footer -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/slideshow.js"></script>
+  <script>
+    jQuery(function($) {
+        $(document)
+        .on('click', '.faq', function(){
+            $(this).find('.faq-answer').slideToggle(500);
+            $(this).toggleClass('open');
+        });
+    });
+  </script>
+</body>
+</html>
