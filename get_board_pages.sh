@@ -17,6 +17,16 @@
 # specific language governing permissions and limitations
 # under the License.
 
+set -e # a failed export exits non-zero rather than going on without it
+
+BOARD=https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board
+
+cd content/foundation/board
+
 echo "Fetching calendar from SVN"
-cd content/foundation/board || exit
-/usr/bin/svn export https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/board/calendar.md --force
+/usr/bin/svn export "$BOARD/calendar.md" --force
+
+echo "Fetching board minutes pages from SVN"
+# Exported fresh: an export over an existing tree keeps pages svn has since deleted.
+rm -rf minutes
+/usr/bin/svn export "$BOARD/minutes" minutes

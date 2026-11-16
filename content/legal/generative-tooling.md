@@ -26,8 +26,6 @@ The U.S. Copyright Office has since confirmed this position in its report [Copyr
 
 These portions authored by a human may come from meaningful modifications the human makes; prompts alone are generally not sufficient. However, a prominent concern with generative AI is the risk of reproducing copyrightable portions of materials that they were trained on, some of which may be copyrightable subject matter. Thus, a recommended practice when using generative AI tooling is to use tools with features that identify any included content that is similar to parts of the tool’s training data, as well as the license of that content.
 
-The U.S. Copyright Office has since confirmed this position in its report [Copyright and Artificial Intelligence, Part 2: Copyrightability](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf) (January 2025): purely AI-generated output is not copyrightable, but works where a human has creatively selected, arranged or modified AI-generated material may be, assessed case by case.
-
 Given the above, code generated in whole or in part using AI can be contributed if the contributor ensures that:
 
 1. The terms and conditions of the generative AI tool do not place any restrictions on use of the output that would be inconsistent with the [Open Source Definition](https://opensource.org/osd/), and grant the contributor sufficient rights in the output to license it to the ASF. Under section 4 of the ICLA, contributors represent that they are "legally entitled to grant the above license", and that entitlement depends on what the tool's terms grant as well as what they restrict. In practice, this means finding the clause in the provider's terms that addresses ownership or use of the output, and confirming it grants the contributor ownership of the output or rights broad enough to contribute it under the Apache-2.0 license.
@@ -39,7 +37,7 @@ Given the above, code generated in whole or in part using AI can be contributed 
 
 Note that whether AI-generated output is copyrightable subject matter is currently unsettled, and the answer may differ between jurisdictions. A contributor relying on condition 2.1 alone ties their contribution to an answer nobody knows yet. Where practical, meeting condition 2.2 or 2.3 is the sounder route.
 
-When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase “Generated-by: <Name of Tool> <Version>”. This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.
+When providing contributions authored using generative AI tooling, a recommended practice is for contributors to indicate the tooling used to create the contribution. This should be included as a token in the source control commit message, for example including the phrase “Generated-by: \<Name of Tool\> \<Version\>” or "Co-authored-by: \<Name of Tool\> \<Version\>". This allows for future release tooling to be considered that pulls this content into a machine parsable Tooling-Provenance file.
 
 Also note section 8 of the ICLA. If you later learn something that makes these representations inaccurate, you agree to notify the Foundation. For example, you may discover that a tool's output reproduced code under an incompatible license. If that happens, contact legal-private@apache.org.
 

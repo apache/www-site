@@ -10,7 +10,7 @@ an [overview of corporate governance procedures](/foundation/governance/).
 
 The Board of Directors publishes a **[formal Board Calendar and Minutes](../board/calendar.html)** 
 of our monthly meetings.  An alternate [categorized listing of 
-all past Board minutes](https://whimsy.apache.org/board/minutes/) is also available.
+all past Board minutes](/foundation/board/minutes/) is also available.
 
 ## Bylaws And Original Incorporation Records  {#bylaws}
 

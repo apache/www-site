@@ -41,6 +41,8 @@ Foundation?](#Must-Contribute)
 1.  [May I translate the Apache license into my local language for my
 redistribution of Apache packages?](#Translation) 
 
+1.  [Is there a translation of the Apache License into my language?](#translations)
+
 1.  [Is the Apache license compatible with the GPL (GNU Public
 License)?](#GPL) 
 
@@ -221,6 +223,21 @@ understanding, and is *not* legally binding. Only the English-language
 version of the license, *which you must continue to include in your
 packaging* , is authoritative and applicable in case legal interpretation
 is required.
+
+## Is there a translation of the Apache License into my language?  {#translations}
+
+The ASF does not endorse or approve any translation of the Apache License.
+Only the [English-language text](/licenses/LICENSE-2.0) is authoritative.
+Translations are for convenience only, and you must continue to include the
+English license when [redistributing Apache packages](#Translation).
+
+The following translations have undergone their publishers' own legal review;
+the ASF has not formally reviewed them. They are linked here as an educational
+convenience, without endorsement. Each translation includes a disclaimer and
+refers to the English original as authoritative.
+
+- [Chinese translation of the Apache License, Version 2.0](https://openatom.cn/law/translation/apache-2.0),
+  published by the OpenAtom Foundation and reviewed by its legal counsel.
 
 ## Is the Apache license compatible with the GPL (GNU Public License)?  {#GPL}
 
