@@ -15,7 +15,7 @@ Please check the logo placement carefully before purchase and, if you have any c
 We currently have the following store available and are working to expland the number of stores as well as the range of both the merchandise and projects offered.
 These stores are generally operated at cost or, where that option is not available, at the lowest price available for that platform.
 
-- [TeePublic](https://tee.pub/lic/KHJM0l6rPpk)
+- [TeePublic](https://www.teepublic.com/user/the-apache-software-foundation)
 
 You may wish to compare costs (don't forget tax, shipping and - if shipping internationally - customs charges) as part of deciding which store to use.
 Remember, for personal use you always have the option of ordering locally from your preferred supplier.

@@ -141,6 +141,7 @@ This table shows current members who have manually added themselves to it – it
 | ehatcher | Erik Hatcher | [Ant](https://ant.apache.org/) , jakarta-lucene , jakarta-lucene-sandbox|
 | elecharny | [Emmanuel Lécharny](http://hrabal.blogspot.com/) | [Directory](https://directory.apache.org/) ; [Mina](http://mina.apache.org/)|
 | elserj | Josh Elser | [Accumulo](https://accumulo.apache.org), [Calcite](https://calcite.apache.org), [Incubator](https://incubator.apache.org), [Phoenix](https://phoenix.apache.org) |
+| engelen | [Arnout (raboof) Engelen](https://arnout.engelen.eu) | [Security](https://security.apache.org), [Pekko](https://pekko.apache.org) |
 | enis | Enis Söztutar |
 | eolivelli | Enrico Olivelli | [BookKeeper](https://bookkeeper.apache.org), [ZooKeeper](https://zookeeper.apache.org), [Curator](https://curator.apache.org), [Maven](https://maven.apache.org) |
 | epugh | Eric Pugh |
@@ -465,7 +466,7 @@ This table shows current members who have manually added themselves to it – it
 | vy | Volkan Yazıcı | [Logging](http://logging.apache.org/) |
 | wave | Dave Fisher | [POI](https://poi.apache.org/), [Incubator](https://incubator.apache.org/), [OpenOffice](https://openoffice.apache.org/), [Petri](https://petri.apache.org/), and others |
 | weber | Volker Weber | [MyFaces](http://myfaces.apache.org/)|
-| weimer | [Markus Weimer](http://www.markusweimer.com) | [REEF](https://reef.apache.org/) | 
+| weimer | [Markus Weimer](http://www.markusweimer.com) | [REEF](https://reef.apache.org/), [TVM](https://tvm.apache.org),  | 
 | wenming | [Ming Wen](mailto:wenming@apache.org) | [APISIX](https://apisix.apache.org) |
 | wilfreds | Wilfred Spiegelenburg | [Hadoop](https://hadoop.apache.org), [YuniKorn](https://yunikorn.apache.org) |
 | woonsan | [Woonsan Ko](http://woonsanko.blogspot.com/) | [Portals](https://portals.apache.org/) , [Commons](https://commons.apache.org/) , [FreeMarker](https://freemarker.apache.org/)|
@@ -779,6 +780,6 @@ select `Create a new branch for this commit and start a pull request`, have some
 
 You can also checkout the repository, edit the file locally and submit a pull request with your changes.
 
-In both cases you need a GitHub account that is linked to your ASF account, and you need to be an ASF member.
+In both cases you need a GitHub account that is [linked to your ASF account](https://gitbox.apache.org/boxer/), and you need to be an [ASF member](/foundation/how-it-works/#asf-members) (which is distinct from being a [PMC member](/foundation/how-it-works/#pmc-members) for a project).
 
 If you do not want to use GitHub, you can also create a patch or push to your `preview/your-asf-id` branch and ask in `members@a.o` to merge your patch/branch.

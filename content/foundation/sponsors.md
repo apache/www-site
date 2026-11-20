@@ -69,23 +69,11 @@ read our [sponsorship page](/foundation/sponsorship.html).
             <div class="logo-caption">VISA</div>
         </a>
     </div>
-    <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="https://yahooinc.com/">
-            <img src="images/yahoo-platinum.png"/>
-            <div class="logo-caption">Yahoo!</div>
-        </a>
-    </div>
 </div>
 
 
 <h3 class="h1"style="text-align: center;">Gold Sponsors:</h3>  <!-- 223x100 --> <!-- Gold images should be exact size for CSS -->
-<div id="gold" class="sponsor-cards sponsor-cards--gold mb-xl">
-    <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="https://aiven.io/">
-            <img src="images/aiven-gold.png"/>
-            <div class="logo-caption">Aiven</div>
-        </a>
-    </div>
+<div id="gold" class="sponsor-cards sponsor-cards--gold mb-xl">   
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://apache.org/">
             <img src="images/blank.png"/>
@@ -117,12 +105,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
         </a>
     </div>
     <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="http://ibm.com/">
-            <img src="images/ibm.png"/>
-            <div class="logo-caption">IBM</div>
-        </a>
-    </div>
-    <div class="logo-card">
         <a target="_blank" rel="sponsored" href="http://www.union-investment.de/">
             <img src="images/union-gold.png"/>
             <div class="logo-caption">Union Investment</div>
@@ -133,6 +115,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
 
 <h3 class="h1"style="text-align: center;">Silver Sponsors:</h3>  <!-- 150x67 -->
 <div id="silver" class="sponsor-cards sponsor-cards--silver mb-xl">
+    <div class="logo-card">
+        <a target="_blank" rel="sponsored" href="https://aiven.io/">
+            <img src="images/aiven-silver.png"/>
+            <div class="logo-caption">Aiven</div>
+        </a>
+    </div>
     <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://www.americanexpress.com/en-us/careers/career-areas/technology/">
             <img src="images/amer-exp-silver.png"/>
@@ -149,6 +137,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
         <a target="_blank" rel="sponsored" href="https://www.dkb.de/">
             <img src="images/DKB_silver.png"/>
             <div class="logo-caption">DKB</div>
+        </a>
+    </div>
+    <div class="logo-card">
+        <a target="_blank" rel="sponsored" href="http://ibm.com/">
+            <img src="images/ibm.png"/>
+            <div class="logo-caption">IBM</div>
         </a>
     </div>
     <div class="logo-card">
@@ -169,6 +163,12 @@ read our [sponsorship page](/foundation/sponsorship.html).
             <div class="logo-caption">Red Hat, Inc.</div>
         </a>
     </div>
+    <div class="logo-card">
+        <a target="_blank" rel="sponsored" href="https://yahooinc.com/">
+            <img src="images/yahoo-silver.png"/>
+            <div class="logo-caption">Yahoo!</div>
+        </a>
+    </div>    
 </div>
 
 
@@ -177,13 +177,16 @@ read our [sponsorship page](/foundation/sponsorship.html).
     <ul id='bronze' class="sponsors-col-list">
         <li><a target="_blank" rel="sponsored" href="https://www.canva.com/">Canva Engineering</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.cargurus.com/">CarGurus</a></li>
+        <li><a target="_blank" rel="sponsored" href="https://www.circle.com/">Circle</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.colgatepalmolive.com">Colgate-Palmolive</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.getgrist.com">Grist Labs</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
         <li><a target="_blank" rel="sponsored" href="https://rx-m.com/">RX-M</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.renre.com/">RenaissanceRe</a></li>
+        <li><a target="_blank" rel="sponsored" href="https://www.saltware.co.kr/">Saltware</a></li>
         <li><a target="_blank" rel="sponsored" href="https://sentry.io/welcome/?utm_source=apacheorg&utm_medium=site&utm_campaign=general-na-evergreen&utm_content=logo-thanksdevsitelogo-na">Sentry</a></li>
+        <li><a target="_blank" rel="sponsored" href="https://www.vhv-gruppe.de/en">VHV Group</a></li>
     </ul>
 </div>
 
@@ -322,7 +325,6 @@ ASF Targeted Sponsors provide the Foundation with contributions for specific act
 <div class="sponsors mb-xl">
     <ul id='targetedbronze' class="sponsors-col-list">
         <li><a target="_blank" rel="sponsored" href="https://www.techatbloomberg.com/opensource">Bloomberg</a></li>
-        <li><a target="_blank" rel="sponsored" href="https://www.ena.com/">Education Networks of America</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.google.com/">Google</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.hopsie.com/">Hopsie</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.noip.com/">No-IP</a></li>

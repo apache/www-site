@@ -143,6 +143,7 @@ that apparent, separate from any general project news.
   - You should seek input from your PMC, but it is mainly your report to the board on behalf of your project. The chair does not report
 to the PMC - the chair reports to the board (and ultimately to the ASF membership).
   - You can use the [**Apache Committee Reporter** tool](https://reporter.apache.org/) to simplify some data collection for your report.
+  - Submit the report with the [Board Agenda Tool](https://agenda.apache.org/meetings/current) (_BAT_, requires Apache login). Only PMC Chairs and ASF Members can use _BAT_. Other PMC members need to use the [Apache Committee Reporter](https://reporter.apache.org/) tool.
   - Examples of past project reports are in the [Board Meetings and Calendar](../foundation/board/calendar.html).
 
 Remember that, as in any committee, the chair is a **facilitator** and their role within the PMC
@@ -452,7 +453,7 @@ a board member. Your PMC needs to work with the new committer to ensure
 that their CLA is received and recorded properly, so you need to monitor
 the file `iclas.txt` in the `foundation/officers` repository. Only ASF
 members and officers (PMC chairs) have access. The Apache Phone Book
-has an [Unlisted CLAs](https://people.apache.org/unlistedclas.html) page
+has an [Unlisted CLAs](https://whimsy.apache.org/officers/unlistedclas.cgi) page
 which is generated daily from the `iclas.txt` file, and recently received CLAs
 appear there.
 

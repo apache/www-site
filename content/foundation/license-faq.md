@@ -41,6 +41,8 @@ Foundation?](#Must-Contribute)
 1.  [May I translate the Apache license into my local language for my
 redistribution of Apache packages?](#Translation) 
 
+1.  [Is there a translation of the Apache License into my language?](#translations)
+
 1.  [Is the Apache license compatible with the GPL (GNU Public
 License)?](#GPL) 
 
@@ -51,6 +53,8 @@ License)?](#GPL)
 1.  [Are contributors' employers required to sign a CCLA?](#cclas-not-required)
 
 1.  [What is the provenance of source code from the ASF?](#provenance)
+
+1.  [Is it ok to use https instead of http in the LICENSE file and license headers?](#httpsVhttp)
 
 If none of the above addresses your query, check the [resources at
 the bottom of this page](#resources) for further information.
@@ -220,6 +224,21 @@ version of the license, *which you must continue to include in your
 packaging* , is authoritative and applicable in case legal interpretation
 is required.
 
+## Is there a translation of the Apache License into my language?  {#translations}
+
+The ASF does not endorse or approve any translation of the Apache License.
+Only the [English-language text](/licenses/LICENSE-2.0) is authoritative.
+Translations are for convenience only, and you must continue to include the
+English license when [redistributing Apache packages](#Translation).
+
+The following translations have undergone their publishers' own legal review;
+the ASF has not formally reviewed them. They are linked here as an educational
+convenience, without endorsement. Each translation includes a disclaimer and
+refers to the English original as authoritative.
+
+- [Chinese translation of the Apache License, Version 2.0](https://openatom.cn/law/translation/apache-2.0),
+  published by the OpenAtom Foundation and reviewed by its legal counsel.
+
 ## Is the Apache license compatible with the GPL (GNU Public License)?  {#GPL}
 
 From the [Free Software
@@ -329,6 +348,11 @@ Content in Apache Software Foundation (ASF) source code repositories typically f
 4. By Direct License. Some content's license conditions are considered by the ASF to fall within the scope of the Apache-2.0 license ("[Category A Licenses](https://www.apache.org/legal/resolved.html#category-a)"). This content is incorporated into ASF projects and licensed to downstream users under its original license. The content retains its original license identification and any required notices included in the ASF release. If changes are made to the code as a part of an ASF contribution, the foundation's Apache-2.0 licensing header is included in each changed file.
 
 Note that "Convenience Binary" distributions from the ASF may also include files under other "[Category B](https://www.apache.org/legal/resolved.html#category-b)" licenses.
+
+# Is it OK to use https instead of http in LICENSE and source headers? {#httpsVhttp}
+
+Yes. When the LICENSE text was last updated in 2004, https did not have the widespread adoption it does now. It is acceptable,
+in fact encouraged, to use https wherever http is currently used in LICENSE files as well as in individual source headers.
 
 # Another place to Look  {#resources}
 

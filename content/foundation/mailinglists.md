@@ -181,8 +181,7 @@ our official [@TheASF Twitter](https://twitter.com/TheASF) account, or the
 The Apache Conference planning committee uses the `announce@ApacheCon.Com` mailing list to make announcements about conferences, conventions,
 and trade shows in which the Foundation is participating. Only the Foundation posts Messages on this list; there is no discussion.
 
-You may also be interested in our official [@ApacheCon Twitter](https://twitter.com/ApacheCon) account, or the 
-[official ApacheCon Conferences blog](https://blogs.apache.org/conferences/).
+You may also be interested in the [Community Over Code website](https://communityovercode.apache.org/] or the [Events blog](https://blogs.apache.org/conferences/](https://news.apache.org/foundation/entry/category/events).
 
 | Volume: | Very low |
 |---------|----------|

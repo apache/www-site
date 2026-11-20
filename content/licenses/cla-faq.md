@@ -17,7 +17,7 @@ This page answers common queries that we receive about our contribution agreemen
 
 1.  [Are contributors' employers required to sign a CCLA?](#cclas-not-required)
 
-1.  [I don't have a printer. How do I "print, sign, scan, and email" the license document?](#printer)
+1.  [How do I use a PDF form filler with the license document?](#printer)
 
 1.  [How do I upload my public key?](#upload-key)
 
@@ -122,39 +122,40 @@ Finally, see section 8 of the ICLA, which requires signers to notify the
 Foundation when their status changes in ways that may require this to
 be reassessed.
 
-### I don't have a printer. How do I "print, sign, scan, and email" the license document?  {#printer}
+### How do I use a PDF form filler with the license document?  {#printer}
 
 ICLA, CCLA, SGA, and Member license documents are PDF forms with entry form fields.
-There is also space for a signature which cannot be typed.
-Using a PDF editor will allow the submitter to fill and sign the forms without printing them.
-The precise steps needed depend on the operating system of the submitter.
+There is also space for a signature which must not be typed.
+Using a PDF form filler will allow the submitter to fill and sign the forms without printing them.
+Many browsers can now fill PDF forms directly, otherwise you will need to use a different tool.
+The precise steps needed depend on the operating system and tools used by the submitter.
 
-**MacOSX users:** 
+**Overview of process**
 
-1. Use your browser to navigate to the [.pdf form](/licenses/contributor-agreements.html) and download the form to a local file using the save-as function.
-2. Open the file using **Preview**, the standard PDF viewer/editor. 
-3. Fill the form fields using the keyboard. For the signature, use the **Tools-Annotate-Signature** function to attach a signature. 
-4. Save the completed form.
-5. Open the email client and create a message to [secretary@apache.org](mailto:secretary@apache.org), attach the completed form and send it to secretary.
-6. Keep the completed form for your records.
-
-**Apple iOS users:** 
-
-1. Use your browser to navigate to the [.pdf form](/licenses/contributor-agreements.html) and download the form using the **Files** feature. 
-2. Open the form using **Files**, the standard file viewer.
-3. Fill the form fields using the keyboard. For the signature, use the **Signature** function to attach your signature. 
-4. Save the completed form. 
-5. **Share** the file to the email client and send the message with the attached form to [secretary@apache.org](mailto:secretary@apache.org).
-6. Keep the completed form for your records.
-
-**Android users** need a third-party tool to fill and attach a signature. 
-First, install a PDF tool such as **Adobe Acrobat**. These instructions may differ somewhat if you are not using Adobe Acrobat.
-
-1. Use your web browser to navigate to the [.pdf form](/licenses/contributor-agreements.html) and download the form to a local file. The file should automatically open in the PDF tool.
-2. Fill the form fields using the keyboard. For the signature, use the **Edit** function and choose **Fill & Sign** to attach a signature. 
-3. Save the completed form. 
-4. Share the file via **Share a copy** to the email client and send the message with the attached form to [secretary@apache.org](mailto:secretary@apache.org).
+1. Use your browser to navigate to the appropriate [PDF form found here](/licenses/contributor-agreements.html).
+2. Fill the form with your browser or download the file and open the file with a form filler (details below).
+3. Save the updated file.
+4. Open the email client and create a message to [secretary@apache.org](mailto:secretary@apache.org),
+   attach the completed form (plus detached digital signature if used) and send it to secretary only.
 5. Keep the completed form for your records.
+
+***Firefox, Google Chrome, Microsoft Edge, Opera***
+
+Use the keyboard to fill in all the fields apart from the signature.
+For the signature, click on the "**Draw**" button.
+Use your mouse or keypad to draw your signature after 'Sign here:'
+
+***Safari / Apple Preview***
+
+Safari does not support form filling, so you will need to download the file and use Preview.
+For the signature, use the **Tools-Annotate-Signature** function to create a signature.
+This can then be added to the form and moved into the correct location.
+
+**Android users** need a third-party tool to fill and attach a signature.
+
+First, install a PDF tool such as **Adobe Acrobat**.
+These instructions may differ somewhat if you are not using Adobe Acrobat.
+For the signature, use the **Edit** function and choose **Fill & Sign** to attach a signature. 
 
 ### How do I upload my public key?  {#upload-key}
 

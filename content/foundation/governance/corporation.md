@@ -24,7 +24,7 @@ The ASF was originally incorporated in 1999:
 
 * [Certificate of Incorporation](/foundation/records/certificate.html) was signed on 25 March 1999
 * [First Board Elected Of The Corporation](/foundation/records/incorporator.html) on 5 April 1999
-* [The ASF Corporate Bylaws](/foundation/bylaws.html) were adopted 1 June 1999, and [amended on 15 November 2002](https://whimsy.apache.org/board/minutes/Bylaws.html)
+* [The ASF Corporate Bylaws](/foundation/bylaws.html) were adopted 1 June 1999, and [amended on 15 November 2002](/foundation/board/minutes/Bylaws.html)
 
 ## Non-Profit Tax Status  {#nonprofit}
 
@@ -33,7 +33,7 @@ The ASF is officially recognized by the US IRS as tax-exempt organization:
 * [IRS 501(c)(3) determination letter](/foundation/records/ASF-501c3.pdf), 21 February 2001
 * [Annual IRS 990 nonprofit tax filings](/foundation/records/#irs) for years 2002-2003, 2006-2017
 
-The board approves the [corporation's annual budget](https://whimsy.apache.org/board/minutes/Budget.html), which is posted in our board minutes periodically.
+The board approves the [corporation's annual budget](/foundation/board/minutes/Budget.html), which is posted in our board minutes periodically.
 
 ## Board of Directors Meeting Minutes  {#boardminutes}
 
@@ -43,7 +43,7 @@ a chance to review them before publishing).  The board has from time to time hel
 in-person meetings as well for strategic planning purposes; these are minuted as well.
 
 * [Calendar view of Board Meeting Minutes](/foundation/board/calendar.html)
-* [Categorized view of Board Meeting Minutes](https://whimsy.apache.org/board/minutes/) (By project/by resolution)
+* [Categorized view of Board Meeting Minutes](/foundation/board/minutes/) (By project/by resolution)
 
 
 ## References  {#references}
