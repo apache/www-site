@@ -310,6 +310,95 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-10-21"><a href="2026/board_minutes_2026_10_21.html#attachment-AO">2026-10-21</a> &mdash; Xiaoqiao He<a class="headerlink" href="#2026-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Hadoop is the creation and maintenance of software related to
+Distributed computing platform.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Hadoop was founded 2008-01-16 (19 years ago)
+There are currently 251 committers and 126 PMC members in this project.
+The Committer-to-PMC ratio is roughly 2:1.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Ahmar Suhail on 2025-11-13.
+- No new committers. Last addition was Cheng Pan on 2026-04-12.
+
+## Project Activity:
+3.5.0 was released on 2026-04-01.
+3.4.3 was released on 2026-02-24.
+hadoop-thirdparty-1.5.0 was released on 2025-10-20.
+3.4.2 was released on 2025-08-28.
+hadoop-thirdparty-1.4.0 was released on 2025-03-27.
+
+## Community Health:
+The trunk branch received 79 commits from over 40 committers and
+contributors, spanning Common, HDFS, YARN, MapReduce, and cloud storage
+connectors modules.
+
+- Security and Dependency Maintenance
+The community continued process security and dependency maintenance, with
+timely upgrades of third-party dependencies in response to CVEs and security
+advisories. The Hadoop security model was documented in a new SECURITY.md file
+and several security hardening improvements landed across RPC, shuffle, and
+authorization paths [1][2]. The community are lagging in responding to all
+the reported CVEs.
+Given the dependency updates, and the number of critical bugs reported,
+including from mythos, it may be best if we do a 3.5.1 release with the
+critical fixes in, and then do a followup release with the next batch of
+fixes, and get into a cadence of monthly/bimonthly releases. This is only
+possible by automating as much of the release process, including as much
+of the testing.
+
+- JDK 22+ Compatibility and Adaptation in Progress
+Subject propagation on JDK 22+ was restored via an InheritableThreadLocal
+cascade in SubjectUtil, ensuring correctness in security scenarios such as
+Kerberos [3].
+
+- CI / Build / Test Stability
+The project kept investing in its GitHub Actions build and test infrastructure
+including GHA upgrades to ASF-allowed versions, improved CI coverage for fork
+PRs, and replacing Clover with JaCoCo for code coverage. A series of fixes for
+leaked mini-cluster instances and other flaky tests further improved CI
+stability [4]. Also try to get set up for apache trusted release[5] which
+would allow for semi-automated release and a higher cadence.
+
+- HDFS Stability and Observability
+HDFS work focused on correctness and operational safety, including fixes for
+snapshot count drift during edit log replay, DataNode OOM under NameNode
+unreachability, resource cleanup in block readers and short-circuit reads, and
+a libhdfs heap-use-after-free. Observability improved with new router and
+DataNode metrics, and a standalone DataNode read/write stress tester was added
+[6][7].
+
+- YARN Robustness and Hadoop-native MCP Server
+YARN activity focused on robustness, including memory enforcement and queue
+placement fixes. Notably, a Hadoop-native MCP (Model Context Protocol) HTTP
+server framework was added in hadoop-common, opening Hadoop operations to
+AI-agent integration [8].
+
+- Cloud Storage Connectors
+The cloud connectors remained active: ABFS gained Photon (Apache Arrow)
+ListBlobs support, S3A received KMS Encryption Context support and AWS SDK
+maintenance improvements, and the Baidu BOS file system implementation was
+incorporated into the project [9].
+
+- The Project shows healthy engagement based on Mailing list/JIRA/Github
+  traffic.
+
+[1] https://issues.apache.org/jira/browse/HADOOP-19968
+[2] https://issues.apache.org/jira/browse/HADOOP-19925
+[3] https://issues.apache.org/jira/browse/HADOOP-19906
+[4] https://issues.apache.org/jira/browse/HADOOP-19963
+[5] https://github.com/apache/hadoop/pull/8811
+[6] https://issues.apache.org/jira/browse/HDFS-17960
+[7] https://issues.apache.org/jira/browse/HDFS-17953
+[8] https://issues.apache.org/jira/browse/YARN-11977
+[9] https://issues.apache.org/jira/browse/HDFS-11161</pre>
 <h3 id="2026-07-15"><a href="2026/board_minutes_2026_07_15.html#attachment-AH">2026-07-15</a> &mdash; Xiaoqiao He<a class="headerlink" href="#2026-07-15" title="Permalink">&para;</a></h3>
 <pre>## Description:
 The mission of Hadoop is the creation and maintenance of software related to
@@ -3418,75 +3507,8 @@ Community:
 <pre>No report was submitted.
 
 AI: Greg to pursue a report for Hadoop</pre>
-<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#attachment-P">2012-07-25</a> &mdash; Arun Murthy<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
-<pre>Apache Hadoop status report for July 2012
-
-Hadoop is a set of related tools and frameworks for creating and managing
-distributed applications running on clusters of commodity computers.
-
-On the people side, we have new people joining our ranks.
-* We've added two new committers - Daryn Sharp, Jonathan Eagles
-* We've added one new PMC member: Alejandro Abdelnur
-
-On the project side, we have made 1 bug-fix release in the stable line and 1
-major new release:
-- hadoop-1.0.3 was released on 16th May, 2012
-- hadoop-2.0.0-alpha was released on 23rd May, 2012
-
-- Work on further Hadoop 2.0.1-alpha (a security bug-fix release) is done,
-and is currently under vote.
-- Work on hadoop-1.1.0 is nearly done.
-
-COMMON
-
-Common is the shared libraries for HDFS and MapReduce.
-
-Releases:
-- hadoop-1.0.3 was released on 16th May, 2012
-- hadoop-2.0.0-alpha was released on 23rd May, 2012
-
-Community:
-* 48 committers
-* 1613 subscribers on common-dev
-*  3151 subscribers on common-user
-* 1533 subscribers on general
-
-New committers:
-* 2 new committers have been added to this project.
-
-HDFS
-
-HDFS is a distributed file system that supports reliable replicated
-storage across the cluster using a single name space.
-
-Releases:
-- hadoop-1.0.3 was released on 16th May, 2012
-- hadoop-2.0.0-alpha was released on 23rd May, 2012
-
-New committers:
-* 1 new committer has been added to this project.
-
-Community:
-* 43 committers
-* 668 subscribers on hdfs-dev
-* 1205 subscribers on hdfs-user
-
-MAPREDUCE
-
-MapReduce is a distributed computation framework for easily writing
-applications that process large volumes of data.
-
-Releases:
-- hadoop-1.0.3 was released on 16th May, 2012
-- hadoop-2.0.0-alpha was released on 23rd May, 2012
-
-New committers:
-* 1 new committer has been added to this project.
-
-Community:
-* 46 committers
-* 689  subscribers to mapreduce-dev
-* 1354 subscribers to mapreduce-user</pre>
+<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#section-6P">2012-07-25</a> &mdash; Arun Murthy<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
+<pre>See Attachment P (Hadoop)</pre>
 <h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#attachment-R">2012-04-18</a> &mdash; Arun Murthy<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
 <pre>Apache Hadoop is a set of related tools and frameworks for creating and
 managing distributed applications running on clusters of commodity computers.

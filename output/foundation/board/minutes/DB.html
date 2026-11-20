@@ -320,6 +320,127 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-10-21"><a href="2026/board_minutes_2026_10_21.html#attachment-Z">2026-10-21</a> &mdash; Jeffery Painter<a class="headerlink" href="#2026-10-21" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+The mission of the Apache DB project is to create and maintain
+commercial-quality, open-source, database solutions based on software
+licensed to the Foundation, for distribution at no charge to the public.
+
+The Apache DB TLP consists of the following sub-projects:
+
+o JDO      : focused on building the API and the TCK for compatibility
+             testing of Java Data Object implementations providing data
+             persistence.
+o Torque   : an object-relational mapper for Java.
+
+## Project Status:
+
+Current project status: ongoing
+Issues for the board: none
+
+Please see the Project Activity section of our report for recent updates.
+
+## Membership Data:
+
+Apache DB was founded 2002-07-16 (24 years ago).
+There are currently 48 committers and 46 PMC members in this project.
+The Committer-to-PMC ratio is roughly 1:1.
+
+Community changes, past quarter:
+
+* No new PMC members. Last addition was Max Philipp Wriedt on 2024-07-03.
+* No new committers. Last addition was Max Philipp Wriedt on 2023-04-15.
+
+## Project Activity:
+
+### Apache JDO
+
+The JDO project continues to hold regular project meetings, with recent work
+focused on review of security-related changes, compatibility considerations,
+and preparation for future releases.
+
+The community has continued work related to the Glasswing security-scan
+effort and review of proposed fixes. Recent pull requests address JNDI,
+service discovery, privileged-operation fallback, enhancer behavior, and
+classpath handling. These proposals remain under community review.
+
+Particular attention has been given to proposed changes involving user-defined
+object identity classes and XML document builder configuration. The community
+identified potential backward compatibility concerns and is revising the
+proposals to distinguish necessary fixes from changes that could restrict
+existing application behavior. Testing of an object identity patch also
+identified a problem in the run-once tests, prompting further work.
+
+Release planning includes consideration of JDO 3.2.2 and JDO 3.3, with
+discussion of which fixes can be included in a maintenance release and
+which changes may require a release that accommodates compatibility changes.
+No completed release is recorded in the supplied quarterly activity.
+
+The Trusted Release voting-list issue noted in the previous report was fixed
+and closed during August. This resolves the reported routing problem for JDO
+release votes and represents progress toward use of the Trusted Release
+workflow.
+
+Other continuing discussion and maintenance topics include:
+
+* Raising the minimum supported Java version to JDK 11 (JDO-812), together
+  with consideration of release scope and Derby dependency updates.
+* Generation of SBOM files (JDO-847).
+* SonarCloud code quality findings (JDO-819 and JDO-823), including cognitive
+  complexity and raw type warnings.
+* Dependency maintenance, including review of a Log4j API update for the TCK.
+
+### Apache Torque
+
+Torque activity remains relatively light, with substantive discussion during
+the quarter about repository migration, integration testing, and the scope of
+a future major release.
+
+The community renewed discussion of migrating Torque from Subversion to Git.
+A developer volunteered to carry out the migration, and the proposal received
+support. Discussion covered repository layout, whether to separate the
+integration-test module, and the implications for CI, pull requests, issue
+tracking, and site deployment. The supplied discussions do not record a
+completed migration.
+
+Jenkins build failures were investigated and attributed to path-resolution
+issues when running the Torque integration tests from the project root. A
+proposal would simplify the build by running the database integration tests
+separately, removing the Jenkins-specific profiles, and excluding the test
+module from release deliverables. This would require documenting a separate
+integration-test step before preparing a release. The proposal received
+support, but implementation is not confirmed in the supplied activity.
+
+Future release discussion includes a possible move to Torque 8.0 to reflect
+breaking changes associated with Java Time API support (TORQUE-375) and the
+retirement of Derby. The community also discussed declaring Derby unsupported
+for the upcoming release and addressing CI issues alongside the repository
+migration. Work on ORM generation improvements (TORQUE-376) was mentioned in
+the migration discussion.
+
+No completed Torque release is recorded in the supplied quarterly activity.
+
+### Project-Level Updates
+
+No project-level issues requiring board attention have been identified in the
+supplied activity. The previously reported JDO Trusted Release voting-list
+issue has been resolved.
+
+## Community Health:
+
+The Apache DB community remains engaged in maintaining its two subprojects.
+
+JDO continues to show regular participation in project meetings and careful
+review of proposed changes, with attention to release planning, security
+review, and compatibility for existing users.
+
+Torque has a lower volume of activity, but the repository migration proposal,
+investigation of integration-test failures, and discussion of future release
+scope show continued developer engagement.
+
+No concerns requiring board attention have been identified in the supplied
+materials.</pre>
 <h3 id="2026-07-15"><a href="2026/board_minutes_2026_07_15.html#attachment-V">2026-07-15</a> &mdash; Jeffery Painter<a class="headerlink" href="#2026-07-15" title="Permalink">&para;</a></h3>
 <pre>## Description:
 
@@ -2991,39 +3112,8 @@ Torque: beta feature release 4.0beta1 (September 24, 2012)
 
 
 [1] The board was CC'ed, see thread "[REPORT] Apache DB July 2012".</pre>
-<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#attachment-I">2012-07-25</a> &mdash; Kristian Waagan<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
-<pre>The Apache DB TLP consists of the following subprojects:
- o DdlUtils : a small, easy-to-use component for working with
-              Database Definition (DDL) files.
- o Derby    : an open source relational database implemented entirely in Java
- o JDO      : focused on building the JDO API and the TCK for
-              compatibility testing of JDO implementations.
- o Torque   : an object-relational mapper for Java.
-
-== Status ==
-There are no issues requiring board attention at this time.
-
-Activities over the last quarter, which has been very quiet for the PMC:
- 1) Two students were selected for their GSoC 2012 proposals for Derby.
- 2) Derby posted Maven artifacts for the latest release on
-    repository.apache.org (people.a.o phased out).
- 3) Issue regarding distribution of a file without redistribution rights in
-    Derby has been addressed.
-
-Outstanding work:
- a) Wrap up branding requirements compliance check.
- b) Address the svnpubsub migration for the web sites.
-
-== Community ==
-No PMC changes since August 2011.
-No new committers since August 2010.
-
-Traffic on the user lists is pretty low. User questions are generally being
-answered. A few unanswered questions on one (very low-volume) list, will
-follow up.
-
-== Releases ==
-Derby: feature release 10.9.1.0 (June 25, 2012)</pre>
+<h3 id="2012-07-25"><a href="2012/board_minutes_2012_07_25.html#section-6I">2012-07-25</a> &mdash; Kristian Waagan<a class="headerlink" href="#2012-07-25" title="Permalink">&para;</a></h3>
+<pre>See Attachment I (DB)</pre>
 <h3 id="2012-04-18"><a href="2012/board_minutes_2012_04_18.html#attachment-K">2012-04-18</a> &mdash; Kristian Waagan<a class="headerlink" href="#2012-04-18" title="Permalink">&para;</a></h3>
 <pre>The Apache DB TLP consists of the following subprojects:
  o DdlUtils : a small, easy-to-use component for working with
@@ -3992,89 +4082,12 @@ to completion, or at least be very close.</pre>
 <pre>The report, as noted in Attachment A, was approved by General Consent.</pre>
 <h3 id="2003-10-22"><a href="2003/board_minutes_2003_10_22.html#section-7A">2003-10-22</a> &mdash; John McNally<a class="headerlink" href="#2003-10-22" title="Permalink">&para;</a></h3>
 <pre>No report.</pre>
-<h3 id="2003-07-16"><a href="2003/board_minutes_2003_07_16.html#attachment-A">2003-07-16</a> &mdash; Jason van Zyl<a class="headerlink" href="#2003-07-16" title="Permalink">&para;</a></h3>
-<pre>[ received from John McNally ]
-
-Releases
-
-Torque did an alpha release of 3.1 in April and a couple bug fix
-releases (3.0.1 and 3.0.2) in June.
-
-OJB put up a 1.0rc3 release in May.
-
-Problems
-No problems to speak of.  Mail list activity on both subprojects
-indicates forward progress and no flame wars.
-
-News
-
-A presentation on OJB was given at javaone
-TS-3368
-Applying Open Source Web Technologies Together: Struts and OJB</pre>
-<h3 id="2003-01-22"><a href="2003/board_minutes_2003_01_22.html#attachment-A">2003-01-22</a> &mdash; Jason van Zyl<a class="headerlink" href="#2003-01-22" title="Permalink">&para;</a></h3>
-<pre>As yet there is no site or charter for db.apache.org but I wanted to
-assure the board that the desire to bring db.apache.org to fruition
-hasn't waned. I know that all the the PMC members have been busy with
-their projects and I would like some things to happen before the site
-is launched.
-
-I would like the site to be generated as changes are made to the
-individual projects in as much an automated fashion as possible. I
-want to be notified of exceptions: I don't want anyone to have to
-manage this manually. I do not want to foist yet another disparate,
-incoherent website on an unsuspecting crowd. I would like
-db.apache.org to be an example of what an OSS website can be. I also
-don't want this process to consume my life, or anyone else's.
-
-To this end, over the last while I've been working on Maven, Plexus,
-Continuum and have hired Bob McWhirter to improve Drools and create
-Werkflow: the only OSSPetrinet-based workflow engine that I'm aware
-of. I'm using all these tools as part of my daytime work but slight
-adjustments have been made here and there to accomodate things I would
-like for db.apache.org. I would like the site and infrastructure to be
-manageable from day one.
-
-If there were projects that were planned to be released for the first
-time on db.apache.org then I would certainly be guilty of not pushing
-hard enough to get the site, charter and infrastructure in order. But
-none of the projects that are initially taking part are being dealt
-any life threatening blows due to the non-existence of the
-db.apache.org site.
-
-I would like the PMC to have the time to get the project together as
-we see fit. I realize that the DB PMC has not made much progress on
-the infrastructure side but none of us have been idle. I am trying to
-make some tools I think will be valuable and genuinely help. Axion,
-Torque, and OJB are also getting in a lot better shape to the point
-where real releases could be made available when the site launches
-which I think is a good thing.
-
-I myself can't commit to a date for the launch (someone else may want
-to) as this is purely volunteer and my day job takes precendence but I
-think it holds true that each of the PMC members want to see this
-happen.
-
-If it is the case that we must have something by a date to satisfy the
-board then I will not personally commit and will let someone else
-commit and take over the chair position. I feel I would rather wait
-and make something worthfile then procure something to satisfy an
-artificial requirement. As I noted before, I don't think any harm is
-being done by not launching. As an aside I'm curious as to the history
-surrounding the nascent Jakarta and XML projects? Were there in fact
-deadlines or was the time taken to get things in order properly?
-
-If we need things like the charter then we could probably borrow one
-from an existing project and ratify it in short order, but I would
-still like to wait on the launch of the site.
-
----
-
-[1] Maven: http://jakarta.apache.org/turbine/maven
-[2] Plexus: A application container based on Avalon. Maven will eventually
-    be a Plexus application.
-[3] Continuum: A continuous integration tool using Plexus, Drools, and Werkflow
-[4] Drools: OO-Rete based rules engine.
-[5] Werkflow: Petrinet-based workflow engine using Drools.</pre>
+<h3 id="2003-07-16"><a href="2003/board_minutes_2003_07_16.html#section-5A">2003-07-16</a> &mdash; Jason van Zyl<a class="headerlink" href="#2003-07-16" title="Permalink">&para;</a></h3>
+<pre>See Attachment A. Attachment A was approved by general consent and
+accepted into the record.</pre>
+<h3 id="2003-01-22"><a href="2003/board_minutes_2003_01_22.html#section-5A">2003-01-22</a> &mdash; Jason van Zyl<a class="headerlink" href="#2003-01-22" title="Permalink">&para;</a></h3>
+<pre>See Attachment A. By general consent, this report was
+recorded as entered and approved.</pre>
 <h3 id="2002-11-18"><a href="2002/board_minutes_2002_11_18.html#attachment-E">2002-11-18</a> &mdash; Jason van Zyl<a class="headerlink" href="#2002-11-18" title="Permalink">&para;</a></h3>
 <pre>Things are pretty much in a state of hibernation at the moment. Between
 Maven and the Day Job(tm) I've got zero time currently. All of the other

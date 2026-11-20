@@ -241,6 +241,21 @@ most recent first. Generated from the published minutes.</p>
 <p><em>These categorised views are best effort. They are read from the published minutes by a program, and what it can attribute to a committee depends on how each resolution happens to be worded &mdash; so a page may be incomplete, and nothing here overrides the minutes themselves. The <a href="https://www.apache.org/foundation/records/minutes/">raw minutes</a> are the source of truth.</em></p>
 <p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
 <p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
+<h2 id="appointments">Appointments<a class="headerlink" href="#appointments" title="Permalink">&para;</a></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Action</th>
+<th>Decided by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-09-16</td>
+<td><a href="2026/board_minutes_2026_09_16.html#section-8B">Appointed Lei Wang</a></td>
+<td>the board, by resolution</td>
+</tr></tbody></table>
 <h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permalink">&para;</a></h2>
 <table class="table">
 <thead>
@@ -254,11 +269,206 @@ most recent first. Generated from the published minutes.</p>
 <tbody>
 <tr>
 <td>2026-09-16</td>
-<td>Established, Lei Wang as VP</td>
+<td><a href="2026/board_minutes_2026_09_16.html#section-8B">Establish the Apache Auron Project</a></td>
 <td>special order</td>
-<td>approved, minutes pending approval</td>
+<td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-10-21"><a href="2026/board_minutes_2026_10_21.html#attachment-M">2026-10-21</a> &mdash; Lei Wang<a class="headerlink" href="#2026-10-21" title="Permalink">&para;</a></h3>
+<pre>Project description:
+Apache Auron is an open‑source accelerator for big‑data query engines, powered
+by native vectorized execution. Auron has completed integrations with compute
+engines including Apache Spark&trade; and Apache Flink&reg;, as well as open‑source
+lakehouse formats Apache Paimon&trade;, Apache Iceberg&trade; and Apache Hudi. Apache
+Auron has passed all TPC‑DS/TPC‑H benchmark cases. Compared to Apache
+Spark‑3.5, Apache Auron runs ~2&times; faster and saves ~50% cluster resources.
+
+Project state: Ongoing, with high activity.
+Auron graduated from the Apache Incubator and became a top-level project in
+September 2026. Development has remained very active throughout the reporting
+period: the master branch carried 179 commits over the six months ending late
+September 2026 (roughly 90 commits in July&ndash;September alone), with a balanced
+mix of new native operator/function coverage, correctness fixes, performance
+work, and the housekeeping required by graduation (site rebranding, TLP
+release infrastructure, repository and README updates).
+
+Current activity (last quarter)
+The past quarter was focused on three areas:
+New natively executed functions and operators: date_add, date_sub, datediff,
+add_months, unix_date/date_from_unix_date, dayofyear; extended
+residual-condition handling in native sort-merge joins; shared CPU
+join-condition evaluation; ORC reader batch-size support; identity partition
+values in native Iceberg scans; and pruning of full-data-file Iceberg
+changelog delete tasks.
+Correctness and robustness: Fixes for NULL predicate handling in aggregate
+filters, float-to-decimal precision loss, native broadcast nested-loop join
+diff checks, partial merge aggregation with sliced batches, and spill error
+handling.
+Performance and post-graduation consolidation. Caching of maximum
+accumulator indices, avoiding identity copies in GenerateExec, reduced native
+broadcast task serialization, and lower serialization overhead via
+NativePartition. The release script was migrated to the project's TLP dist
+repositories, the internal codebase was fully renamed from "blaze" to "auron",
+and the GitHub repository and README were updated for the new project
+identity.
+
+The dev@auron.apache.org list has been active, with monthly volume
+ranging from a handful to more than 60 messages during the period (61 in
+August). Activity includes design discussion on AIP-4 (Flink BATCH mode
+support for Calc/Agg/Join), which is being explored as a possible future
+integration direction.
+
+Releases
+Apache Auron 8.0.0 &mdash; 2026-07-04 (most recent release, made just before the end
+of incubation activities). No release has been cut since graduation; the first
+post-graduation release is being prepared end-to-end against the new TLP
+release process (see Plans).
+
+Community
+The dev list answers contributions and questions in a timely manner; GitHub
+issues and pull requests are being actively and promptly reviewed. Beyond
+automated dependency updates, commits in the past six months came from 20+
+distinct contributors, including recent external (non-committer) contributors,
+which is a healthy sign for the community. Contributions continue to be driven
+by multiple organizations. The PMC established at graduation has 22 members:
+the 18 committers elevated by the graduation resolution, plus the four former
+incubator mentors who remain on the committee. The roster matches the ASF
+committee record.
+
+Committers and PMC
+Most recent committer addition: prior to graduation; the committer roster
+stood at 18 when the graduation vote was held, and no new committers have been
+elected since graduation.
+Most recent PMC member addition: September 2026 &mdash; per the graduation
+resolution, all 18 existing Auron committers became PMC members, and the four
+former incubator mentors remain on the PMC (22 members in total).
+Diversity: the PMC and committer rosters span more than ten distinct
+organizations, and no single employer dominates the project.
+
+Plans
+Cut the first post-graduation release (targeting the v8.x line) end-to-end
+through the TLP release flow, including the dist/release repositories, KEYS,
+and signed artifacts, and exercise the new monthly/quarterly release cadence.
+
+Issues
+There are no Board-level issues at this time.
+
+Health report The project is healthy.
+Development velocity is high and sustained, the community is growing with
+new external contributors across multiple organizations, user questions
+are answered on dev@, production deployments are reported at scale, and
+governance transitioned cleanly to a 22-member TLP PMC at graduation.
+The PMC is following the monthly reporting obligation for newly graduated
+projects and is completing the remaining post-graduation housekeeping
+(TLP release tooling, branding cleanup).
+
+Branding, legal and infrastructure
+Branding: the website (auron.apache.org) and the GitHub repository
+consistently use the Apache Auron name and logo; Incubating references were
+removed from both upon graduation. Any remaining website-checklist items will
+be completed in coordination with the Brand Committee.
+Legal: no legal issues to report.
+Infrastructure: no infrastructure issues. The release process now targets the
+project's TLP dist repositories.</pre>
+<h3 id="2026-09-16"><a href="2026/board_minutes_2026_09_16.html#auron">2026-09-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2026-09-16" title="Permalink">&para;</a></h3>
+<pre>Auron accelerates Apache Spark SQL by providing an alternative vectorized
+execution layer implemented in Rust, enabling native performance while
+maintaining full Spark compatibility.
+
+Auron has been incubating since 2025-08-05.
+
+### Three most important unfinished issues to address before graduating:
+
+None.
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+Following community discussions and voting, we believe the Auron project
+has largely met the graduation criteria, and intend to initiate a formal
+discussion within the Incubator.
+
+### How has the community developed since the last report?
+
+1. Elected 4 new committer: Hai Zhou, Huawen Gui, Weiqing Yang, Ming Wei
+2. Elected 2 new PPMC member: Ruilei Ma, Shilun Fan
+3. Community presentations and outreach continued:
+
+Yizhong Zhang presented a Auron talk at Apache DataFusion Meetup
+Shanghai 2026
+
+Li Zhang presented a Auron talk at Community Over Code Asia 2026 in
+Beijing, August 8
+
+### How has the project developed since the last report?
+
+- Released Apache Auron v8.0.0-incubating on 2026-07-22.
+
+- 82 commits since the last report, including significantly expands Flink
+integration, native scan support for Apache Iceberg, Apache Hudi, and
+Apache Paimon, native expression and function coverage, cross-version
+compatibility, and runtime reliability.
+
+- Completed a brand-new independent registration for the Auron WeChat
+account. This account will be managed collectively by Auron PMC members
+moving forward.
+
+- Fixed the minor website defects mentioned by Justin and Calvin, also
+carried out a full-site brand compliance self-inspection afterward to
+eliminate similar hidden issues.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+- [ ] Initial setup
+- [ ] Working towards first release
+- [ ] Community building
+- [X] Nearing graduation
+- [ ] Other:
+
+Commentary: The project has established a regular Apache release cadence
+and has completed the maturity model. As summarized in the community
+graduation discussion, the community has 21 committers including mentors,
+from more than 13 different companies, with 15 PPMC members and 67
+contributors. During incubation, Auron made 3 releases in 11 months with 3
+different release managers, used in production by 10+ well-known entities.
+The project has opened 791 issues with 683 resolved, and 1655 PRs with 1621
+merged or closed.
+
+### Date of last release:
+
+2026-07-22 (Apache Auron v8.0.0-incubating)
+
+### When were the last committers or PPMC members elected?
+
+The most recent committer was Ming Wei and Weiqing Yang, elected in
+August.
+
+The most recent new PPMC member was Ruilei Ma, elected in August.
+
+### Have your mentors been helpful and responsive?
+
+Yes. The mentors have been helpful and responsive. The mentors provided
+guidance for the graduation discussion. No open issues at this time.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes. The PPMC is actively managing the Apache Auron (Incubating) brand
+and trademarks. The PPMC has fixed several branding issues related to
+WeChat official account and  minor website defects. There are no known open
+brand or trademark issues at this time.
+
+### Signed-off-by:
+
+- [X] (auron) Becket Qin
+   Comments: Looking forward to graduation
+- [X] (auron) Calvin Kirs
+   Comments: Graduation vote in progress
+- [X] (auron) Hao Ding
+   Comments: looking forward to the graduation
+- [X] (auron) Nicholas Jiang
+   Comments: Looking forward to graduation
+
+### IPMC/Shepherd notes:</pre>
 <h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#auron">2026-06-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
 <pre>Auron accelerates Apache Spark SQL by providing an alternative vectorized
 execution layer implemented in Rust, enabling native performance while
@@ -320,14 +530,14 @@ not aware of any misuse by third parties.
 ### Signed-off-by:
 
 - [X] (auron) Becket Qin
-  Comments:  I agree that we can start to discuss the graduation of the
-  project.
+   Comments:  I agree that we can start to discuss the graduation of the
+   project.
 - [X] (auron) Calvin Kirs
-  Comments: I think this podling is ready to graduate.
+   Comments: I think this podling is ready to graduate.
 - [ ] (auron) Hao Ding
-  Comments:
+   Comments:
 - [X] (auron) Nicholas Jiang
-  Comments:  Current status is worth discussion of gradutation.
+   Comments:  Current status is worth discussion of gradutation.
 
 ### IPMC/Shepherd notes:</pre>
 <h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#auron">2026-03-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>

@@ -242,6 +242,122 @@ most recent first. Generated from the published minutes.</p>
 <p><strong>Please note.</strong> The board approves the minutes of a meeting at the meeting after it, and they are published then - so the most recent meeting is not usually here. ASF Members can read the <a href="https://svn.apache.org/repos/private/foundation/board/">draft</a> in the board's own repository until it is.</p>
 <p>[<a href="https://www.apache.org/foundation/records/minutes/">raw</a>] the published minutes, which are the record. [<a href="./">main index</a>]</p>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-09-16"><a href="2026/board_minutes_2026_09_16.html#pouchdb">2026-09-16</a> &mdash; in the Incubator's report<a class="headerlink" href="#2026-09-16" title="Permalink">&para;</a></h3>
+<pre>PouchDB is an open-source JavaScript database inspired by Apache CouchDB
+that is designed to run well within the browser.
+
+PouchDB has been incubating since 2025-04-15.
+
+### Three most important unfinished issues to address before graduating:
+
+1. Completing the ASF incubation process
+2. Grow the PouchDB community and form better connections with sporadic
+contributors
+3. More and quicker releases
+
+### Are there any issues that the IPMC or ASF Board need to be aware of?
+
+None
+
+### How has the community developed since the last report?
+
+- The project is regularly receiving contributions from a handful of
+regulars and the occasional new contributor, and we are also receiving
+good-quality issue reports.
+- There is gradually more regular activity in the Slack channel, and
+semi-regular triage meetings to work through the issue backlog.
+- Added a new PPMC member (see below)
+- Omitted from the last report was a well-received PouchDB presentation
+we did at FOSDEM in Brussels early 2026, notes and videos here:
+https://fosdem.org/2026/schedule/event/SDHGJY-local-first-meet-pouchdb-couch
+db/
+
+### How has the project developed since the last report?
+
+We are making good progress in four areas:
+- Moving the project towards replacing the underlying storage adapter in
+a future release, which will allow us to remove a lot of outdated
+dependencies and slim down the codebase
+- General modernisation of the codebase
+- We've completed migrating the website/docs to a modern system that is
+easier to set up, use and onboard contributors to
+- We've completed the move of the website to ASF domains and updated the
+site to fulfill the ASF website requirements
+
+Specific highlights:
+- [Incorporated a new Node SQLite storage
+adapter](https://github.com/apache/pouchdb/pull/9223), this step lays the
+groundwork for deprecating and removing the LevelDB Subsystem that PouchDB
+currently depends on, and that we want to move away from. This will shrink
+the codebase and number of dependencies, and generally make the project
+more nimble and easier to maintain.
+- Completed migration of the old website and documentation from
+Ruby/Jekyll to JavaScript/Eleventy for a modern developer experience in the
+same language as the project itself, lower barrier to entry, less setup
+hassle and faster builds. This included a new build and automatic
+deployment pipeline that deploys to `https://pouchdb.apache.org` on merge
+to `main`.
+- The project website also now adheres to the ASF project and podling
+requirements, incorporating the ASF/incubator logos and mentioning the ASF
+and incubator in various places. The site code was also modernized to drop
+some older dependencies, and no longer relies on external CDNs for assets
+and libraries.
+- [Fixed flaky tests with unpredictable timeout
+errors](https://github.com/apache/pouchdb/pull/9205), which improved DX a
+lot and made most CI runs much faster.
+- Built out a new "versioned documentation" feature to allow docs per
+release, the same way CouchDB does it, with versioning by release, `stable`
+and `latest`. This is [technically
+ready](https://github.com/apache/pouchdb/pull/9262), we are currently in
+the process of backfilling the last few version's docs and
+updating/rewriting the most recent release's documentation, guide and
+learning pages.
+
+### How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+We're gradually aligning our processes with ASF expectations, but we
+don't have a mailing list culture and this form of communication and
+organization takes a bit of getting used to. Mailing list volume is low for
+that reason. Apart from that, we've made a lot of progress in terms of
+aligning our public communication with ASF policies, and are in the process
+of adapting our release procedure. This is rather involved and takes longer
+than expected.
+
+- [X] Initial setup
+- [X] Working towards first release
+- [X] Community building
+- [ ] Nearing graduation
+- [ ] Other:
+
+### Date of last release:
+
+Jun 21, 2024 (pre-incubation). However, we are currently preparing a
+9.1.0 release with the new SQLite storage layer, with the goal of making it
+an ASF release with a WIP-release disclaimer.
+
+### When were the last committers or PPMC members elected?
+
+August 4th, 2026 Alex Feyerke (@espy)
+
+### Have your mentors been helpful and responsive?
+
+They have been, yes.
+
+### Is the PPMC managing the podling's brand / trademarks?
+
+Yes, there are no issues to report, see here:
+https://issues.apache.org/jira/browse/PODLINGNAMESEARCH-260
+
+### Signed-off-by:
+
+- [X] (pouchdb) PJ Fanning
+   Comments: Dev list very quiet. GitHub activity in decline (compared
+   with Spring 2026).
+- [X] (pouchdb) Jean-Baptiste Onofr&eacute;
+   Comments:
+
+### IPMC/Shepherd notes:</pre>
 <h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#pouchdb">2026-06-17</a> &mdash; in the Incubator's report<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
 <pre>PouchDB is an open-source JavaScript database inspired by Apache CouchDB
 that is designed to run well within the browser.
@@ -312,9 +428,9 @@ PPMC have not yet requested a Podling Suitable Names Search
 ### Signed-off-by:
 
 - [X] (pouchdb) JB Onofre
-  Comments:  Still ramping up but progress.
+   Comments:  Still ramping up but progress.
 - [X] (pouchdb) PJ Fanning
-  Comments:
+   Comments:
 
 ### IPMC/Shepherd notes:</pre>
 <h3 id="2026-03-18"><a href="2026/board_minutes_2026_03_18.html#pouchdb">2026-03-18</a> &mdash; in the Incubator's report<a class="headerlink" href="#2026-03-18" title="Permalink">&para;</a></h3>

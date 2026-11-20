@@ -284,6 +284,106 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-10-21"><a href="2026/board_minutes_2026_10_21.html#attachment-BP">2026-10-21</a> &mdash; Julien Le Dem<a class="headerlink" href="#2026-10-21" title="Permalink">&para;</a></h3>
+<pre>Parquet Report October 2026
+Due date: Oct 14, 2026
+Board Meeting date: Oct 21, 2026
+
+## Description:
+A column-oriented data file format designed for efficient data storage and
+retrieval. It provides high performance compression and encoding schemes to
+handle complex data in bulk and is supported in many programming languages and
+analytics tools.
+
+Parquet consists of a format specification (the Parquet format) and several
+implementations, one of which (Parquet Java) is developed directly under the
+umbrella of the Apache Parquet project. Several implementations such as
+Parquet C++, Parquet Go, and Parquet Rust are developed as part of the Apache
+Arrow project.  Non-Apache implementations also exist, some of them closed
+source.
+
+## Project Status:
+Current project status: Ongoing
+Issues for the board: None
+
+## Membership Data:
+Apache Parquet was founded 2015-04-21 (11 years ago)
+There are currently 42 committers and 32 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Andrew Lamb on 2026-01-20.
+- Rok Mihevc was added as committer on 2026-07-29
+
+## Project Activity:
+Recent releases:
+Parquet-Format
+  2.13.0 on 2026-06-13
+Parquet-Java
+  1.17.1 on 2026-05-12
+  1.17.0 on 2026-01-13
+Parquet-Rust (in Arrow-RS)
+  60.0.0 on 2026-09-15
+  59.3.0 on 2026-09-01
+  59.2.0 on 2026-08-06
+  58.4.0 on 2026-07-22
+Parquet-go (in Arrow-GO)
+  18.8.0 on 2026-09-08
+  18.7.0 on 2026-07-21
+Parquet-cpp (in Arrow)
+  26.0.0 on 2026-10-09
+  25.0.1 on 2026-08-10
+  25.0.0 on 2026-07-10
+
+(Note that Parquet Go, Rust and C++ implementations are part of
+the Arrow code base and released with Arrow. Parquet Go&rsquo;s and
+Parquet Rust&rsquo;s governance is managed by the Arrow PMC)
+
+Ongoing work:
+
+New encodings:
+  - The Adaptive Lossless Floating Point spec has been released.
+  It has three implementations (C/C++, Java, Rust), a well reviewed spec
+  and example files.
+    Rust Impl Merged and released as part of arrow-RS 60.0.0
+    C++ Impl approved, working through final merge gates
+    Jave Impl : is a work in progress
+    Golang Impl : will be taken up next.
+   As it is forward incompatible, we&rsquo;re working on clarity for how to
+   release it.
+   See parquet versioning discussion.
+   Blog post
+https://parquet.apache.org/blog/2026/09/22/
+alp-adaptive-lossless-floating-point-encoding-in-apache-parquet/
+
+  - PFOR has shown great promise over current encoding schemes by a large factor
+  We have separated it from Fastlanes discussion.
+  Currently exploring:
+  1) Augmenting the encoding with an added delta mode
+  (for saw-tooth like patterns, or timestamp like patterns)
+  2) Augmenting the encoding with value interleaving or possibly
+ using fastlanes.
+  Both these experiments are very meaningful and we plan to go ahead with PFOR
+   with future extensibility in mind.
+
+  - FSST/OnPair (8,12,16 bits codes) Spec is being finalized.
+  Following Onpair, we saw great improvements with larger bit codecs that allow
+  larger symbol tables and faster decoding speeds.
+  We&rsquo;re iterating over the design and performance numbers before finalizing
+  the spec.
+
+Footer working group: final round of feedback requested to finalize the spec.
+  Parquet versioning definition: We are finalizing the mechanism. Ongoing
+  discussion thread on the dev list.
+Non-contiguous pages proposal in progress.
+New types: Finalizing Vector
+Release automation: ready to go.
+
+## Community Health:
+Community Health Score (Chi): 8.37 (Healthy)
+Discussions are regularly happening on the mailing list,
+in PRs/Issues on Github and on a regular public meeting
+held on google meet (notes are posted on the list)</pre>
 <h3 id="2026-07-15"><a href="2026/board_minutes_2026_07_15.html#attachment-BL">2026-07-15</a> &mdash; Julien Le Dem<a class="headerlink" href="#2026-07-15" title="Permalink">&para;</a></h3>
 <pre>## Description:
 A column-oriented data file format designed for efficient data storage and

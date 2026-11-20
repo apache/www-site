@@ -284,6 +284,249 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-09-16"><a href="2026/board_minutes_2026_09_16.html#attachment-M">2026-09-16</a> &mdash; Andrea Cosentino<a class="headerlink" href="#2026-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+The mission of Apache Camel is the creation and maintenance of an open-source
+integration framework based on known Enterprise Integration Patterns.
+
+## Project Status:
+  Current project status: Ongoing with high activity Issues for the board:
+  There are no issues requiring board attention at this time.
+
+## Membership Data:
+Apache Camel was founded 2008-12-17 (18 years ago)
+There are currently 96 committers and 49 PMC members in this project.
+The Committer-to-PMC ratio is roughly 3:2.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Aur&eacute;lien Pupier on 2026-05-11.
+- Adriano Machado was added as committer on 2026-06-24
+
+## Project Activity:
+
+  Feedback on the previous report:
+
+  - We were asked which Zulip we meant and whether all important things are
+    brought back to the mailing list. The Zulip we use is
+    https://camel.zulipchat.com. It is an instance of Zulip, the open-source
+    threaded chat application (the server is Apache-2.0 licensed); zulip.com
+    is the vendor that hosts the instance for us. It is not Slack, although
+    the two are superficially similar. Anyone can create an account and join
+    without an invitation, but the content is not readable anonymously, so we
+    do not treat Zulip as a project record. Project decisions are made and
+    recorded on the mailing lists. In this quarter, every release vote, vote
+    result and release announcement, the roadmap discussion about promoting
+    4.22.x to LTS and ending support for 4.14.x, all 39 security advisories,
+    the monthly static code analysis report and related went through
+    dev@camel.apache.org, with private@camel.apache.org used only where the
+    ASF process requires it. Zulip is used for user support and quick informal
+    questions, and when a thread there turns into a design discussion or a
+    decision we move it to dev@ or to Jira. We will keep reinforcing that
+    expectation with the community.
+
+  - We were asked us to provide a one sentence description of each release
+    artifact, noting that a name such as "Apache Camel Quarkus" is unclear to
+    the average reader. We have added a short description to every sub-project
+    in the Project Activity section below, and we will keep doing so in future
+    reports.
+
+  Security: This quarter the PMC completed and disclosed the results of a
+  large, systematic security audit of the component set. 39 CVEs were
+  published in July and August 2026, in the following classes:
+
+  - Header injection (24 CVEs): components that mapped externally supplied
+    message metadata into the Camel Exchange without a HeaderFilterStrategy,
+    or that used Exchange header constants without the Camel prefix and
+    therefore bypassed the upstream HTTP header filter. This allowed an
+    untrusted client to override routing or operation headers. Affected
+    components included camel-cxf, camel-solr, camel-kafka, camel-salesforce,
+    camel-jira, camel-dns, camel-mongodb-gridfs, camel-nats, camel-aws2-sqs,
+    camel-cometd, camel-elasticsearch-rest-client, camel-vertx-websocket,
+    camel-atmosphere-websocket, camel-knative and others.
+  - Unsafe Java deserialization (5 CVEs): paths reading untrusted payloads
+    through ObjectInputStream with no JEP-290 ObjectInputFilter
+    (camel-hazelcast, camel-pqc, camel-jms), plus a hardening of Camel's own
+     default filter pattern.
+  - Path traversal (3 CVEs): cloud storage download operations that built the
+    local target path from the remote object name without constraining it to
+    the configured directory (camel-azure-storage-blob,
+    camel-azure-storage-datalake, camel-google-storage).
+  - Authentication and authorization (3 CVEs): token validation gaps in
+    camel-keycloak and in the platform-http-main JWT mechanism.
+  - Information disclosure (2 CVEs): HTTP consumers returning full Java stack
+    traces in the response body because muteException defaulted to false
+    (camel-netty-http, camel-undertow).
+  - Injection into back-end queries (2 CVEs): Cypher injection in camel-neo4j
+    and JavaMail session property override in camel-mail.
+
+  Every one of them was remediated across all supported release lines,
+  shipping in 4.14.9, 4.18.4 and 4.22.0. Beyond the individual fixes, the
+  audit drove systematic hardening that is not tied to a single CVE: JEP-290
+  deserialization filters are now applied by default on Camel's shared object
+  input stream and on camel-spring-redis, the remote file consumers (FTP,
+  SFTP, FTPS, SMB, azure-files) now jail resolved paths inside the polled
+  directory, and a project-wide sweep renamed non-prefixed header constants so
+  that they are covered by the header filter strategies.
+
+  The process worked as intended: all reports were handled privately through
+  security@apache.org and the ASF process, fixes were prepared and released
+  across every supported line, and the advisories were published only after
+  the releases were available. The volume reflects the depth of the audit
+  rather than a degradation of the codebase, and we consider this a sign of a
+  healthy and functioning security process.
+
+
+Apache Camel: Apache Camel is the core project: a Java integration framework
+and runtime that routes, transforms and mediates messages between systems
+using Enterprise Integration Patterns, shipping more than 350 ready-made
+connectors to external systems. It is released as a set of Maven libraries
+plus a command line tool.
+  - We released Camel 4.21.0
+  - We released Camel 4.14.8 (LTS)
+  - We released Camel 4.18.3 (LTS)
+  - We released Camel 4.22.0 (LTS)
+  - We released Camel 4.14.9 (LTS)
+  - We released Camel 4.18.4 (LTS)
+  - Note: Camel releases have synchronized releases of Camel-Spring-Boot too
+    for 4.x. Camel Spring Boot packages Camel to run on the Spring Boot
+    runtime and provides a Spring Boot starter for each Camel component.
+  - Camel 4.22.0 is our new LTS release train. The 4.14.x LTS train reached
+    end of support on 2026-08-20 as announced, with 4.14.9 as its final
+    release. Our active LTS trains are now 4.18.x and 4.22.x.
+  - In 4.22.0 the Camel CLI (Camel JBang), the Camel TUI and the Camel MCP
+    Server were all promoted from Preview to Stable support level. The TUI
+    also gained a switchable light/dark theme and a settings panel.
+  - AI-related work continued at a good pace: new camel-ai-tool and embeddable
+    camel-mcp-server components, a camel-a2a component implementing the
+    Agent2Agent protocol, and the start of an AI observability module. The CLI
+    AI prompt now auto-detects Azure OpenAI and supports Google Gemini
+    natively.
+  - New components shipped in 4.21.0 and 4.22.0: camel-shell, camel-a2a,
+    camel-ai-tool, camel-mcp-server, camel-clickhouse, camel-duckdb,
+    camel-jactl and camel-dataweave.
+  - The camel-api module now ships optional JSpecify null-safety annotations,
+    so applications and tooling can do compile-time null checking against the
+    Camel API.
+  - Post-quantum readiness improved: more components can now be configured
+    through SSLContextParameters, which allows selecting post-quantum named
+    groups such as X25519MLKEM768 on JDK 25+.
+  - Development of 4.23.0 is well underway, with a new camel-alibaba component
+    family (9 modules), camel-spiffe, a camel-state-store family,
+    camel-python3, camel-quickjs, camel-toon, camel-ubl, camel-rest-postman
+    and camel-hivemq. It also removes a set of long-deprecated modules whose
+    upstream libraries are unmaintained (camel-csimple, camel-irc,
+    camel-ironmq, camel-iec60870, camel-digitalocean, camel-headersmap,
+    camel-json-patch and camel-langchain4j-tools).
+  - Java 25 compatibility work is ongoing.
+  - The situation is really healthy and the community keeps increasing its
+    presence and engagement.
+
+  Apache Camel K: Apache Camel K is a Kubernetes operator that takes a Camel
+  route file and builds, containerises and deploys it as a native Kubernetes
+  workload, so an integration can be run on a cluster without the user
+  assembling an application or a container image by hand.
+  - No release was cut during this quarter. Camel K 2.11.0, 2.10.2 and 2.9.3
+    are currently under vote and we expect them to be released shortly.
+  - Camel K 2.11.0 deprecates the IntegrationPlatform API as part of an
+    ongoing simplification of the operator API surface, and continues the
+    controller cleanup.
+  - The operator keeps tracking recent Golang and Kubernetes API versions.
+  - Camel K is in good shape and the community keeps growing with more
+    contributors and feedback. The situation is healthy.
+
+  Apache Camel Kamelets: Apache Camel Kamelets is a catalog of reusable,
+  parameterised route templates written in YAML, which let a user connect to
+  an external system such as a queue, a database or a SaaS API by supplying a
+  handful of properties instead of writing a route. The catalog is consumed by
+  Camel core, Camel K, Karavan and Camel Kafka Connector.
+  - We released Camel Kamelets 4.21.0
+  - We released Camel Kamelets 4.18.3
+  - We released Camel Kamelets 4.22.0
+  - The Kamelet catalog keeps growing and is now at 254 Kamelets.
+  - Documentation has been improved even more.
+  - The 4.18.x and 4.22.x release trains are matching the LTS releases from
+    Camel core.
+
+  Apache Camel Quarkus: Apache Camel Quarkus is the set of extensions that
+  make the Camel components run on the Quarkus runtime, including
+  ahead-of-time compilation to a GraalVM native executable for fast startup
+  and low memory footprint. It has its own release train because it has to
+  track both Camel and Quarkus versions.
+  - The Camel-Quarkus work is going ahead following the main camel releases
+    with multiple releases.
+  - We released Camel-Quarkus 3.27.5 (Camel 4.14.8 LTS)
+  - We released Camel-Quarkus 3.33.2 (Camel 4.18.3 LTS)
+  - We released Camel-Quarkus 3.38.0 (Camel 4.21.0)
+  - We released Camel-Quarkus 3.39.0 (Camel 4.22.0 LTS)
+  - We are increasing the number of Camel Quarkus Extensions to match the core
+    components and we are now at 277 extensions. We are supporting 4.18.x LTS
+    and 4.22.x LTS, and we shipped the final 4.14.x LTS alignment before that
+    train went end of support.
+  - The community is active and we are seeing increased interest.
+
+  Apache Camel-Karavan: Apache Camel Karavan is a low-code visual designer for
+  Camel integrations, shipped as a web application and as a Visual Studio Code
+  extension, which lets users build, run and deploy routes graphically instead
+  of writing them by hand.
+  - No release was cut during this quarter. The last release was 4.18.0 in the
+    previous quarter.
+  - Development continued steadily and a new release is currently being
+    prepared.
+  - Work in this period focused on the Kubernetes service layer, the
+    properties panel and dependency updates across the VS Code extension.
+
+  Camel-Kafka-Connector: Camel Kafka Connector exposes every Camel component
+  as an Apache Kafka Connect source or sink connector, so Kafka users can move
+  data in and out of any Camel-supported system through Kafka Connect
+  configuration alone, without writing code.
+  - No release was cut during this quarter. The last releases were
+    Camel-Kafka-Connector 4.18.0 and 4.14.5 in the previous quarter.
+  - Development continued at a lower pace, focused on maintenance and on
+    keeping the connector catalog aligned with the Kamelets catalog.
+  - We plan to align the project with the new 4.22.x LTS train.
+
+  Apache Camel-Karaf: Apache Camel Karaf provides the OSGi packaging and the
+  Karaf features needed to run Camel inside the Apache Karaf container.
+  - No release was cut during this quarter. Camel-Karaf 4.14.7 and 4.18.2 were
+    both released just before the start of this reporting period.
+  - We keep supporting the 4.18.x LTS train and we will align to 4.22.x LTS.
+
+  Apache Camel-Upgrade-Recipes: Apache Camel Upgrade Recipes is a set of
+  OpenRewrite recipes that automatically rewrite user source code when
+  migrating between Camel versions, removing much of the manual work of an
+  upgrade.
+  - Camel-Upgrade-Recipes 4.21.0 has been released
+  - Camel-Upgrade-Recipes 4.22.0 has been released
+  - This version supports upgrades up to 4.22.0.
+  - The plan is to keep supporting 4.18.x LTS and 4.22.x LTS.
+
+## Community Health:
+  Dev and issues mailing lists remained active this quarter. The dev list
+  carried the usual release votes plus the discussion around promoting the
+  Camel CLI, TUI and MCP Server to Stable, the security disclosures, etc. The
+  issues list saw a very large increase in traffic, going from roughly 1,200
+  messages in June to 2,661 in July and 1,619 in August, driven by the
+  security audit work and by the volume of contributions. The users mailing
+  list remains lower in volume, mainly because we are using Zulip for
+  discussions and contributors often use Zulip as their first interaction
+  point instead of the mailing list.
+
+  In terms of GitHub engagement we are doing really well. On the core
+  repository we had 78 unique human contributors this quarter, with roughly
+  3,240 commits across all branches (about 2,500 excluding automated
+  dependency and CI bots) and 2,295 pull requests merged. On Jira we had 964
+  issues created and 1,015 issues resolved in the same period, so we are
+  closing more than we open and the backlog is shrinking. The project has
+  6,300+ stars and 5,100+ forks on GitHub.
+
+  We also introduced a monthly static code analysis report on the dev list,
+  which gives the community a recurring view of code quality trends and has
+  already led to a number of clean-up contributions.
+
+  Overall the community is growing, the pace of releases and the successful
+  delivery of a new LTS train this quarter demonstrate the project's vitality,
+  and the way the security audit was handled shows the processes around the
+  project are working well.</pre>
 <h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-J">2026-06-17</a> &mdash; Andrea Cosentino<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
 <pre>## Description:
 The mission of Apache Camel is the creation and maintenance of an open-source

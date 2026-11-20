@@ -274,6 +274,143 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-09-16"><a href="2026/board_minutes_2026_09_16.html#attachment-BS">2026-09-16</a> &mdash; Matteo Merli<a class="headerlink" href="#2026-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description:
+
+Pulsar is a highly scalable, low latency messaging platform running on
+commodity hardware. It provides simple pub-sub semantics over topics,
+guaranteed at-least-once delivery of messages, automatic cursor management for
+subscribers, and cross-datacenter replication.
+
+## Project Status:
+ - There are no issues requiring board attention at this time.
+
+
+## Project Activity:
+
+  - Pulsar 5.0.0-M1, the first preview of Pulsar 5, was released on June
+    23rd 2026. It is a milestone build meant to gather early feedback ahead
+    of the 5.0 LTS release, and previews the major changes of 5.0:
+
+    - Scalable Topics: a new kind of topic (topic:// scheme) that sizes
+      itself to its actual load. The broker splits hot key-range segments
+      and merges cold ones at runtime, with no downtime and without
+      breaking per-key ordering, so there is no partition count to choose
+      up front (PIP-460, 466, 468, 473, 475, 483).
+    - A new V5 Java client (pulsar-client-v5): a clean-slate redesign with
+      three purpose-built consumers (Stream, Queue, Checkpoint). It works
+      against existing topics and can subscribe to an entire namespace.
+    - Oxia is now the recommended metadata store for new clusters, with a
+      live, zero-downtime migration from ZooKeeper (PIP-454, 469). The etcd
+      backend is removed (PIP-462).
+    - Structured logging (PIP-467), IO connectors moved to a dedicated
+      repository (PIP-465), the javax.* to jakarta.* migration (PIP-472)
+      and the move from Maven to Gradle (PIP-463).
+
+  - The second milestone, 5.0.0-M2, is under vote as of this writing
+    (release candidate published September 12th). Pulsar 5.0.0, the next
+    LTS release, is targeted for this fall.
+
+  - Pulsar 4.2.0 remains the latest feature release (March 31st 2026).
+    Maintenance releases across the 4.2.x and 4.0.x (LTS) lines continue on
+    a regular cadence; the 3.0.x LTS line has reached end of support:
+
+    - 4.2.4 was released on August 3rd 2026
+    - 4.0.13 was released on August 3rd 2026
+    - 4.2.3 was released on July 6th 2026
+    - 4.0.12 was released on July 6th 2026
+    - 5.0.0-M1 was released on June 23rd 2026
+
+  - Pulsar C++ releases:
+    - No new release this quarter (latest is 4.2.0, June 14th 2026)
+
+  - Pulsar Go releases:
+    - 0.21.0 on July 20th 2026
+    - 0.20.0 on June 15th 2026
+
+  - Pulsar Python releases:
+    - 3.13.0 on July 6th 2026
+
+  - Pulsar NodeJS releases:
+    - 1.18.0 on June 26th 2026
+
+  - Pulsar C# (DotPulsar) releases:
+    - 5.3.3 on August 26th 2026
+    - 5.3.2 on August 14th 2026
+
+  - Pulsar Helm Chart releases:
+    - 4.7.0 on July 13th 2026
+    - 4.6.1 on June 18th 2026
+
+  - The connectors repository, split out of the main repo under PIP-465,
+    saw a large integration-test and bug-fix pass in July (32 PRs merged),
+    adding real integration tests for a dozen connectors and fixing the
+    runtime bugs that surfaced as a result.
+
+  - The flow of "Pulsar Improvement Proposals" remains strong. After the
+    exceptional burst leading up to 5.0.0-M1, this quarter saw 17 PIPs with
+    activity, 9 of them new (PIP-486 through PIP-494). Themes include
+    follow-ups to the Scalable Topics initiative (PIP-486, 494), a set of
+    security and authentication proposals (PIP-478, 485, 488, 489, 490),
+    operability and metrics (PIP-470, 487, 492) and consumer delivery
+    semantics (PIP-491, 493):
+
+    PIP-486: Scalable Topic Key-Shared Consumption
+    PIP-487: Add event count metrics for InflightReadsLimiter acquire and
+             release operations
+    PIP-488: Pluggable authentication audit-event hook
+    PIP-489: FIPS 140-3 compliance mode for Apache Pulsar
+    PIP-490: Zero-downtime token signing-key rotation for the built-in JWT
+             provider
+    PIP-491: Prevent delivery stalls by making the client return exactly
+             the permits used by the broker
+    PIP-492: Add subscription-level storage backlog age metric and stats
+             field
+    PIP-493: Key-ordered negative acknowledgement for Key_Shared
+             subscriptions
+    PIP-494: Scalable Topics Client Specification &mdash; authoritative reference
+             and change process
+
+  - Pulsar has reached 732 contributors on the main GitHub repo
+    (It was 724 in June 2026)
+
+
+## Health report:
+  - The community remains healthy. The first Pulsar 5 preview shipped in
+    June with a second milestone now under vote, maintenance releases
+    continue monthly on both supported lines, and PIP activity, while down
+    from the exceptional pre-5.0.0-M1 burst of last quarter, is in line
+    with its historical level. A new committer was added this quarter, the
+    first since July 2025. Most day-to-day user interaction continues to
+    happen on Slack and GitHub rather than on the users@ list.
+
+## Membership Data:
+  Apache Pulsar was founded 2018-09-18 (8 years ago)
+  There are currently 86 committers and 47 PMC members in this project.
+
+  The Committer-to-PMC ratio is roughly 2:1.
+
+  Community changes, past quarter:
+   - No new PMC members. Last addition was Cong Zhao on 2025-09-16.
+   - Zhuohan Zhou was added as committer on 2026-08-05
+
+## Community Health:
+
+ - Activity on the dev@ list returned to its typical level this quarter,
+   after the previous quarter's spike driven by the Scalable Topics PIPs
+   ahead of the 5.0.0-M1 release. Traffic is a mixture of release votes,
+   PIP discussions and design threads from both long-time and newer
+   contributors.
+
+ - users@pulsar.apache.org:
+    - 0% change in traffic in the past quarter (15 emails compared to 15)
+
+ - dev@pulsar.apache.org:
+    - 48% decrease in traffic in the past quarter (166 emails compared to 319)
+
+## Slack activity:
+  - 10917 Members (10910 in June 2026)
+  - 56 Active monthly users (133 in June 2026)</pre>
 <h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-BH">2026-06-17</a> &mdash; Matteo Merli<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
 <pre>## Description:
 

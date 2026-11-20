@@ -274,6 +274,84 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-09-16"><a href="2026/board_minutes_2026_09_16.html#attachment-CJ">2026-09-16</a> &mdash; Zhaofeng Chen<a class="headerlink" href="#2026-09-16" title="Permalink">&para;</a></h3>
+<pre>## Description
+Apache Teaclave provides SDKs for building memory-safe applications on Trusted
+Execution Environments (TEEs).
+
+## Project Status
+Status: Ongoing, with moderate activity. Since the last report the community
+focused on API hardening of the TrustZone SDK (typed parameter API,
+session-lifetime fixes, safer shared-memory access), refreshed the Rust
+toolchain for std TAs, improved developer tooling (cargo-optee), and prepared
+the project repositories for the ASF GLASSWING security scanning program.
+
+## Summary of Project Health and Status
+Development continued at a steady pace, concentrated on the TrustZone SDK. No
+release was cut this period; the next release will track the upcoming OP-TEE
+4.11 release (OP-TEE 4.10.0 remains the latest upstream release).
+Contributions came from existing committers and from an organizational
+contributor (Amlogic). The project is prepared for GLASSWING security scanning
+(security-model documentation, AGENTS.md discoverability files,
+branch-protection rulesets across repositories) and is awaiting scan results
+to review.
+
+## Issues for Board Attention
+There are no Board-level issues at this time.
+
+## Recent Releases
+2026-05-23: Teaclave TrustZone SDK v0.9.0 (bumps OP-TEE to 4.10.0) No new
+releases this period.
+
+## Project Activity
+### Development Activity
+- TrustZone SDK: 11 PRs merged (17 commits) since last report.
+- Introduced a typed parameter API (`FromRawParameter`) with a migration
+  guide, replacing raw parameter handling in all examples and projects.
+- Hardened the TA session model: fixed session parameter lifetime issues and
+  enforced session context type consistency at the macro level.
+- Improved safety of memref shared-memory access; an opaque copy-in/copy-out
+  MEMREF API is agreed as the follow-up direction (issue #273).
+- Refreshed the std TA toolchain to Rust nightly-2026-08-05 (Rust 1.99 ported
+  std/libc in teaclave-crates), resolving a long-standing HashSet
+  write-permission fault.
+- Refactored crates to hide low-level OP-TEE dependencies behind a prelude,
+  centralized workspace dependencies, and reorganized examples into TA and CA
+  workspaces.
+- cargo-optee: added support for standard OP-TEE environment paths; further
+  CLI and toolchain-management improvements are planned.
+- Enhanced Object APIs (private REE/RPMB storage constants) contributed by
+  Amlogic.
+
+### Community Activity
+- Developer mailing list: ~55 messages across ~20 threads since 2026-06-18,
+  mostly code-review traffic.
+
+## Current Plans
+Short term (next quarter):
+- Cut the next release aligned with OP-TEE 4.11 once it ships.
+- Land the opaque copy-based MEMREF API and finish boundary-safety hardening.
+- Continue cargo-optee improvements (cargo-transparent CLI, toolchain
+  management).
+- Review and triage GLASSWING scan results; follow up on findings.
+Medium term:
+- Open source additional real-world SDK use cases.
+- Maintain alignment with OP-TEE's quarterly release cadence.
+
+## Community Changes
+- No new PMC members or committers this period (last PMC addition: April
+  2026).
+- 19 PMC members / 10 committers.
+
+## Project Branding
+No branding issues; website and download pages comply with Apache
+requirements.
+
+## Legal Issues
+No legal issues to report.
+
+## Infrastructure
+No concerns.</pre>
 <h3 id="2026-06-17"><a href="2026/board_minutes_2026_06_17.html#attachment-BT">2026-06-17</a> &mdash; Zhaofeng Chen<a class="headerlink" href="#2026-06-17" title="Permalink">&para;</a></h3>
 <pre>## Description
 Apache Teaclave provides SDKs for building memory-safe applications on Trusted

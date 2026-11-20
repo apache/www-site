@@ -257,6 +257,146 @@ most recent first. Generated from the published minutes.</p>
 <td>the board, by resolution</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-10-21"><a href="2026/board_minutes_2026_10_21.html#attachment-10">2026-10-21</a> &mdash; Dave Fisher<a class="headerlink" href="#2026-10-21" title="Permalink">&para;</a></h3>
+<pre>## Apache Trusted Releases
+
+We fixed a number of bugs and a couple of feature gaps. We demonstrated and
+discussed our current state at Community over Code Glasgow. We are in a good
+state. We collected several good ideas about CI builds and support for
+Security driven release scenarios.
+
+- https://releases.apache.org
+
+  We discussed next steps around handling distribution channels in order to
+  co-ordinate full knowlege of all of an ASF project release.
+
+  One request was to assure that source only release SBOMs are easy to create.
+  We will investigate
+
+- https://release-catalog.apache.org
+
+  We need PMCs to help curate their identified list of sub-projects.
+
+  Including the following is an important part of the CRA compliance
+  attestations.
+  - ECMA-424 CycloneDX Bill of materials specification
+  - ECMA-427 Package-URL (PURL) specification
+  - ECMA-428 Common Lifecycle Enumeration (CLE) specification
+
+- https://lists.apache.org/list.html?releases@tooling.apache.org
+
+  This mailing list records releases identified by ATR as they are made.
+
+ATR Releases since September 1, 2026
+
+- ATR Maven Plugin 1.0.0-beta-1
+- Maven Compiler Plugin 3.16.0
+- Maven Dependency Analyzer 1.17.2
+- Maven Plugin Tools 3.16.0
+- Maven Plugin Tools 4.0.0-beta-3
+- Asyncband (Incubating) 0.7.2
+- Maven Deploy Plugin 3.2.0
+- Maven Install Plugin 3.2.0
+- OpenDAL 0.59.2-rc.2
+- Maven Deploy Plugin 4.0.0-beta-3
+- Maven Install Plugin 4.0.0-beta-3
+- Maven Artifact Plugin 3.7.0
+- Maven Resolver 2.0.23
+- OpenDAL 0.59.3-rc.1
+- Parent POM 40
+- Maven Project Parent POMs 50
+- Asyncband (Incubating) 0.7.3
+- Maven Resolver 2.0.24
+- OpenDAL 0.59.4-rc.2
+
+## Board Agenda Tool
+
+Sander is working on splitting out a Roster tool and an LDAP tool from BAT
+with the use of a PubSub event stream to communicate. Work has begun on
+accumulating the requirements for the Secretary's Workbench
+
+## Responsible AI Tooling
+
+We did ASVS scans using self-hosted models. These produce very good results.
+ATR has no critical findings, less than 10 medium findings, and many small low
+findings.
+
+## Next Tooling Projects
+
+We are going to focus on these small projects:
+
+1. A developer sandbox application template. This will support new volunteers
+   trying out their whimsy.
+2. Improvements to the asfquart framework. Many of our recent ASVS findings
+   are in this framework.
+3. A noisy-token python module. This is the correct direction for work already
+   built.</pre>
+<h3 id="2026-09-16"><a href="2026/board_minutes_2026_09_16.html#attachment-10">2026-09-16</a> &mdash; Dave Fisher<a class="headerlink" href="#2026-09-16" title="Permalink">&para;</a></h3>
+<pre>## Apache Trusted Releases
+
+We have released and stood up the ATR Beta at the production url:
+
+- https://releases.apache.org
+
+  This supports the full release process within the platform especially now
+  writes to `svn:dist:release`. SBOMs are encouraged. CI based and expedited
+  releases are available.
+
+  We have all of the release manager signing keys still found in the archives
+  and have matched these to all of the artifacts those keys have signed. PMCs
+  whould opt-in to ATR managing their KEYS files.
+
+  We have detected all of the actual "sub-projects" with releases from each
+  PMC. When we send out the beta announcement we will ask each PMC to check.
+
+  We are fixing a few small bugs and cleaning up our SBOM story.
+
+- https://release-catalog.apache.org
+
+  We have a catalog every release found in the nearly 30 year history of ASF
+  releases from https://archive.apache.org.
+
+  The catalog includes support ECMA standards like:
+  - ECMA-424 CycloneDX Bill of materials specification
+  - ECMA-427 Package-URL (PURL) specification
+  - ECMA-428 Common Lifecycle Enumeration (CLE) specification
+
+- https://lists.apache.org/list.html?releases@tooling.apache.org
+
+  This mailing list records releases identified by ATR as they are made.
+
+ATR Releases since August 1, 2026
+
+- Maven Plugin Tools 4.0.0-beta-3
+- Maven Plugin Tools 3.16.0
+- Maven Dependency Analyzer 1.17.2
+- Maven Script Interpreter 1.8
+- Maven Compiler Plugin 3.16.0
+- Tooling ATR Maven Plugin 1.0.0-beta-1
+- Maven Project Parent POMs 49
+- Maven Resolver 2.0.22
+- Cordova File Transfer Plugin 2.0.1
+
+## Board Agenda Tool
+
+Sander and Thomas have released a brand new look and feel. Additional progress
+is made with minutes and deciding how to propagate changes to TLPs as they
+happen during the Board Meeting
+
+## Responsible AI Tooling
+
+We succeeded in producing scans for over 75 PMCs. So far the vast majority of
+the feedback is positive. Many PMCs have acted to triage the findings into
+either a vulnerability to resolve or a hardening fix.
+
+We started work with RAI to build out the tooling framework which we are
+calling the Refractoru.
+
+## Next Tooling Projects
+
+Soon it will be time to start work on the next tooling initiative project.
+There are two leading candidates: (a) Secretary's Workbench and (b) Roster
+Tool. Both of these are components of Whimsy. I recommend (b) Roster Tool.</pre>
 <h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-5">2026-08-19</a> &mdash; David Fisher<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
 <pre># Tooling Initiative
 

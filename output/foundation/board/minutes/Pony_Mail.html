@@ -274,6 +274,165 @@ most recent first. Generated from the published minutes.</p>
 <td>approved</td>
 </tr></tbody></table>
 <h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permalink">&para;</a></h2>
+<h3 id="2026-10-21"><a href="2026/board_minutes_2026_10_21.html#attachment-BT">2026-10-21</a> &mdash; Rich Bowen<a class="headerlink" href="#2026-10-21" title="Permalink">&para;</a></h3>
+<pre># Apache Pony Mail &mdash; Board Report, October 2026
+
+## Description
+
+Apache Pony Mail provides mail-archiving, archive browsing, and mailing list
+interaction services.
+
+## Project Status
+
+Current project status: New (recently graduated)
+
+Issues for the board: None.
+
+This is the third and final of the three required monthly reports following
+graduation (August, September, October 2026). Beginning with the next cycle,
+Pony Mail moves to its assigned quarterly reporting rotation.
+
+## Membership Data
+
+Apache Pony Mail was established 2026-07-15 (three months ago). There are
+currently 11 committers and 6 PMC members in this project.
+
+No new committers or PMC members have been added since graduation. The PMC is
+discussing potential committer candidates among the external contributors who
+have been active since graduation (see Community Health).
+
+## Project Activity
+
+Development has continued at a steady, healthy pace in the period since the
+August report (August-October 2026). The Git repository rename that was
+outstanding at graduation has completed, so all work now happens under the
+renamed apache/ponymail-foal (and sibling) repositories.
+
+Notable development work in this period:
+
+- Short-term session tokens - A new, trimmed-down approach to programmatic
+  access (#340, contributed by Jarek Potiuk). It supersedes the earlier
+  long-term API-token work (#312/#321): rather than long-lived tokens that
+  cannot track permission changes, a logged-in user can hand an external tool
+  (CLI, script, MCP server) a short-lived, read-only token bound to their
+  browser session. The design borrows from the ASF Vulnogram short-term token
+  model. This drew sustained review discussion on dev@.
+- OpenSearch support - Added support for OpenSearch as a backend (contributed
+  by Claude Brisson / arkanovicz).
+- OAuth standards-compliance review - A review of the OAuth implementation for
+  conformance to the relevant standards (arkanovicz).
+- Session handling fix - Advance the cached last_accessed value so a real
+  hourly session save occurs (arkanovicz).
+- Word cloud / setup fix - Fixed a crash when the --wordcloud flag is used in
+  setup.py (arkanovicz).
+- UI improvements - "Copy permalink" affordance for messages (rbowen); added a
+  login link to the 404 error dialog (#263, contributed by new contributor
+  basantjamwal).
+- Security hardening - A pull request to enforce per-list authorization for
+  private lists and fail closed, addressing the reported can_access_list()
+  over-broad access issue (#330).
+- Original author re-engagement - Daniel Gruno (Humbedooh), Pony Mail's
+  original author, contributed a prototype social upvote counter for emails.
+- Dependency updates - certifi, google-auth, aiosmtplib, and multipart were
+  all updated to current versions via Dependabot.
+
+Open issues under discussion include duplicate message display in threaded
+views (#345), negative search not working for headers, and follow-through on
+the private-list authorization hardening.
+
+## Releases
+
+No releases have been made since graduation. The most recent release remains
+0.10-incubating. With the repository rename now complete, the PMC intends to
+prepare the project's first Top-Level-Project release in the coming cycle;
+this is the project's top near-term housekeeping item.
+
+## Community Health
+
+The dev@ mailing list saw roughly two dozen messages across the August-October
+window, driven primarily by GitHub pull-request and issue traffic.
+Participation remains healthy for a project of this size, with contributions
+from PMC members and several external contributors - notably Jarek Potiuk
+(session tokens), Claude Brisson/arkanovicz (OpenSearch, OAuth review, fixes),
+and basantjamwal (first contribution). The return of original author Daniel
+Gruno (Humbedooh) with a feature prototype is a welcome signal. The users@
+list remains quiet, which is expected given the project's niche audience of
+mailing-list administrators and the ASF infrastructure itself.
+
+As noted in prior reports, the project is unlikely ever to have a large
+contributor community given its specialized domain. The existing PMC has
+sufficient depth - multiple active committers across different organizations -
+to sustain and develop the software, and the recent influx of external PRs
+suggests the pipeline for future committers is healthier than its size alone
+would imply.
+
+## Plans
+
+Near-term priorities:
+
+1. Prepare and ship the first TLP release under the new project identity
+2. Resolve the private-list authorization hardening and other open
+   security/correctness issues
+3. Continue improving documentation and contributor onboarding, building on
+   the documentation suite completed earlier in the year
+4. Finish a handful of graduation-related tasks
+
+## Reporting Schedule
+
+With this October report, Pony Mail completes the three required monthly
+post-graduation reports. The project will file on its assigned quarterly
+rotation thereafter.</pre>
+<h3 id="2026-09-16"><a href="2026/board_minutes_2026_09_16.html#attachment-BQ">2026-09-16</a> &mdash; Rich Bowen<a class="headerlink" href="#2026-09-16" title="Permalink">&para;</a></h3>
+<pre># Apache Pony Mail &mdash; Board Report, September 2026
+
+## Description
+
+Apache Pony Mail provides mail-archiving, archive browsing, and mailing list
+interaction services.
+
+## Project Status
+
+Current project status: Ongoing (recently graduated)
+
+Issues for the board: None.
+
+## Membership Data
+
+Apache Pony Mail was established 2026-07-15 (11 weeks ago). There are
+currently 11 committers and 6 PMC members in this project.
+
+No new committers or PMC members have been added since graduation.
+
+## Project Activity
+
+The primary development focus this month has been on security hardening of the
+private-list authorization system.
+
+## Mailing List Activity
+
+The dev@ mailing list saw 5 messages across 3 threads in August 2026. The
+threads covered the INFRA repository rename status and the security-related
+PRs.
+
+## Releases
+
+No releases have been made since graduation. The most recent release was
+0.11-incubating (March 2019).
+
+## Community Health
+
+The project has active participation from PMC members and has attracted
+external engagement.
+
+The project continues to acknowledge that its contributor community will
+remain small given the specialized domain, but the existing PMC has sufficient
+depth to sustain development.
+
+## Reporting Schedule
+
+This is the second of three required monthly reports following graduation
+(August, September, October 2026). After October, the project will move to its
+assigned quarterly rotation.</pre>
 <h3 id="2026-08-19"><a href="2026/board_minutes_2026_08_19.html#attachment-BJ">2026-08-19</a> &mdash; Rich Bowen<a class="headerlink" href="#2026-08-19" title="Permalink">&para;</a></h3>
 <pre># Apache Pony Mail &mdash; Board Report, August 2026
 
