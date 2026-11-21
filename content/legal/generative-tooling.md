@@ -8,7 +8,7 @@ Version: 1.0
 
 ## Can contributions to ASF projects include AI generated content? {#include-in-contributions}
 
-The Apache-2.0 license, and the Apache Individual Contribution License Agreement, both remind contributors that they are responsible for disclosing any copyrighted materials in submitted contributions that are not their original creation. This is as true when using generative AI tooling, as it is when using materials from public websites or code from other open-source projects.
+The Apache-2.0 license and the Apache Individual Contribution License Agreement both remind contributors that they are responsible for disclosing any copyrighted materials in submitted contributions that are not their original creation. This is as true when using generative AI tooling as it is when using materials from public websites or code from other open-source projects.
 
 Disclosure is not the only obligation the ICLA places on contributors. You also represent that each of your contributions is your original creation (section 5). So a contribution does two things at once: it discloses any third-party material it contains, and it states that the rest is your own work. Both obligations must still be met when the contribution was produced with generative AI tooling.
 
@@ -50,19 +50,19 @@ Finally, please note that while the above seems like a reasonable set of guideli
 We will continue communicating with PMC and ASF members as updates to this FAQ get discussed and merged in.
 
 ## What about Documentation? {#include-in-documentation}
-The above text applies to documentation as well. Pay attention to tools that have restrictive licensing for the generated content, caution should be applied, make sure it complies with the [3rd Party Licensing Policy](https://www.apache.org/legal/resolved.html#:~:text=They%20are%20said%20to%20be%20%22Apache-like%22.%20Category%20B%3A,NOT%20be%20included%20in%20Apache%20Software%20Foundation%20products) and [3rd Party Works](https://www.apache.org/legal/src-headers.html#3party).
+The above text applies to documentation as well. Pay attention to tools that have restrictive licensing for the generated content. Be cautious, and make sure the content complies with the [3rd Party Licensing Policy](https://www.apache.org/legal/resolved.html#:~:text=They%20are%20said%20to%20be%20%22Apache-like%22.%20Category%20B%3A,NOT%20be%20included%20in%20Apache%20Software%20Foundation%20products) and [3rd Party Works](https://www.apache.org/legal/src-headers.html#3party).
 
 ## What about Images? {#include-in-images}
 As with documentation, the above principles would still apply. Though with images being a non-textual form, the details quickly become complex. We expect this to continue to be a rapidly evolving area.
 
 ## The tool we want to use may rely on other tools. What terms of use do we need to consider when following this guidance? {#tools-rely-on-other-tools}
-Don't second guess vendor's terms of use (TOU). Your usage of their tools is bound by the totality of the given TOU and you are not expected to go outside of the TOU text for further clarifications.
+Don't second-guess vendors' terms of use (TOU). Your usage of their tools is bound by the totality of the given TOU and you are not expected to go outside of the TOU text for further clarifications.
 
 ## What do we do if a contribution includes AI generated content and some form of tooling has identified materials that have been copied? {#handling-references}
 Refer to the [3rd Party Licensing Policy](/legal/resolved.html) as with any other contribution.
 
 ## Can the ASF provide a list of approved generative AI Tools? {#approved-tools-list}
-It is not in the interest of the ASF to tell developers what tools to use. You may use whatever tools you wish provided that you follow the guidance in this document.
+It is not in the interest of the ASF to tell developers what tools to use. You may use whatever tools you wish, provided that you follow the guidance in this document.
 
 ## What about publishing AI-generated content publicly?
 The guidance above covers contributions to code and documentation repositories. Different rules can apply when AI-generated text is published to the public: project announcements, security advisories, blog posts, release notes, and website content.
