@@ -25,7 +25,7 @@ Links marked with 🔒 require ASF Member or Committer login.
 - [Handling Cryptography within an ASF Release](https://infra.apache.org/crypto.html) — Cryptography export notification requirements
 - [Release Download Pages Policy](https://infra.apache.org/release-download-pages.html) — Requirements for project release download pages
 - [Docker Hub Policy](https://infra.apache.org/docker-hub-policy.html) — Policy for Apache projects publishing to Docker Hub
-- [CLA FAQ](/foundation/license-faq.html) — Frequently asked questions about Contributor License Agreements
+- [CLA FAQ](/licenses/cla-faq.html) — Frequently asked questions about Contributor License Agreements
 
 
 ## Trademark & Branding
@@ -43,8 +43,8 @@ Links marked with 🔒 require ASF Member or Committer login.
 - [Merchandise Policy](/foundation/marks/merchandise.html) — Rules for merchandise using Apache brands
 - [Trademark Maintenance Responsibilities](/foundation/marks/responsibility.html) — PMC responsibilities for maintaining Apache trademarks
 - [Apache Product Name Usage Guide](/foundation/marks/guide.html) — How to correctly refer to Apache brands in text
-- [Apache Trademark FAQs](/foundation/marks/faq.html) — Permitted and prohibited uses of Apache marks
-- [Registered Trademarks List](/foundation/marks/list.html) — Authoritative list of ASF word marks and registered trademarks
+- [Apache Trademark FAQs](/foundation/marks/faq/) — Permitted and prohibited uses of Apache marks
+- [Registered Trademarks List](/foundation/marks/list/) — Authoritative list of ASF word marks and registered trademarks
 - [Incubator Podling Branding Guide](https://incubator.apache.org/guides/branding.html) — Branding requirements for podlings
 
 
