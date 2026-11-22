@@ -1,4 +1,4 @@
-Title: ASF Legal Digital Millenium Copyright Act Designated Agent
+Title: ASF Legal Digital Millennium Copyright Act Designated Agent
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 # The ASF DMCA Designated Agent
