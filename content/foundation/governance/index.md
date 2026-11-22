@@ -22,27 +22,23 @@ The Board sets corporate policy, appoints officers, forms PMCs, delegates policy
 
 PMCs vote on new committers and PMC members for their project, set per-project policies, and formally vote on software product releases. PMCs report quarterly directly to the board, not to the President.
 
-**[Executive Officers](/foundation/leadership)**
+**[Executive Officers](/foundation/leadership#officers)**
 
 The board elects a Board Chair (a director) and appoints a standard range of executive officers. Officers are all unpaid volunteers, and serve at the direction of the board in their specific areas of responsibility. Officers are responsible both for managing the Foundations affairs in their specific areas, and for reporting monthly status reports to the board.
 
 Executive officers include a President, Executive Vice President, Secretary, Assistant Secretary, and Treasurer.
 
-**[Corporate Officers](/foundation/leadership)**
+**[Corporate Officers](/foundation/leadership#corporate-officers)**
 
-The board has appointed several officers for corporate-wide functions - this includes Vice Presidents to oversee Brand Management, Conference Planning, Fundraising, Legal Affairs, Marketing and Publicity, Travel Assistance, and Diversity. The board delegates authority to set and execute corporate policy within each officer's specific area of responsibility.
+The board has appointed several officers for corporate-wide functions - this includes Vice Presidents to oversee Brand Management, Conference Planning, Fundraising, Legal Affairs, Marketing and Publicity, Travel Assistance, Diversity, and other VPs. The board delegates authority to set and execute corporate policy within each officer's specific area of responsibility.
 
 The board has also appointed a VP of Infrastructure, who is responsible for the day-to-day running of our Infrastructure team and the hardware that keeps Apache running. Since our infrastructure (websites, mailing lists, source code control, wikis, etc.) is a shared resource for all projects at the ASF, it is managed centrally.
 
 Most of these corporate-wide officers report directly to the President on a monthly basis. This separates the strategic oversight the board provides at a high level from the day-to-day operations that the President and other officers handle for the ASF and on behalf of various Apache projects.
 
-**Board Committees**
-
-The board has two Board or Executive Committees, which operate with the authority of the board within their scope: the Legal Affairs committee and the Security Team. Board committees report monthly to the board.
-
 **Officers or President's Committees**
 
-The President and some officers have created President's Committees to assist with the policy or operations work of individual officers. Officers appoint other volunteers to help with their scoped work, in areas like Brand Management, Fundraising, and Travel Assistance. The responsible officers provide a report for the whole committee to the President monthly.
+The President and some officers have created President's Committees to assist with the policy or operations work of individual officers. Officers appoint other volunteers to help with their scoped work, in areas like Brand Management, Fundraising, and Travel Assistance. The responsible officers provide a report for the whole committee to the President monthly.  The VPs of Legal Affairs and Security each have committees to assist them, and report directly to the Board.
 
 ### Technical Governing Bodies
 Within the ASF, the board delegates the technical direction of each project to its PMC. PMCs are expected to follow corporate policies for licensing, branding, infrastructure and so on–and to manage their projects independently following the Apache Way. PMCs are tasked with all other aspects of project management, especially technical direction.
