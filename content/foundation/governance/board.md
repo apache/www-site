@@ -13,14 +13,14 @@ and Project Management Committees.
 
 ## Organization  {#organization}
 
-The board consists of nine directors, each serving as an individual. 
+The board currently consists of nine directors, each serving as an individual. 
 After each annual board election, the board chooses a Board Chair from its ranks. The 
 selection of a new Board Chair and other executive officers typically takes place a couple of months after the board election, to give the new 
 board a chance to get to know one another. 
 
-The board meets by conference call and IRC chat monthly. The agenda is published 
+The board meets by conference call and online chat monthly. The agenda is published 
 privately to the Membership. Each corporate officer makes a monthly written 
-report to the board, and every Project Management Committee (PMC) makes a 
+report to either the President, or directly to the board, and every Project Management Committee (PMC) makes a 
 quarterly written report to the board. In this way, the PMCs report directly to 
 the board, not to the President or other corporate officers. All ASF Members and 
 invited guests are welcome at board meetings, except during very rare executive 
@@ -47,11 +47,11 @@ operations and project activities.
 
 ## Legal  {#legal}
 
-Article V. of the ASF bylaws specifies a Board of nine Directors, elected 
+Article V. of the ASF bylaws originally specified a Board of nine Directors which continues to this day, elected 
 annually by the ASF Membership. The Apache Board is much like the board of 
-directors of any other corporation, responsible for -- management of the 
+directors of any other corporation, responsible for management of the 
 corporate assets (funds, intellectual property, trademarks, and support 
-equipment) and allocation of corporate resources to projects.
+equipment) and allocation of corporate resources to operations or projects.
 
 The board is responsible for appointing any officers of the ASF, including 
 executive officers -- President, Secretary, Treasurer -- and other officers, both 
@@ -87,8 +87,8 @@ conveying the request makes it clear it is an act of the board, not just of one 
 
 The board exercises oversight of Apache Projects by reviewing project reports at 
 the monthly board meeting, and by monitoring changes to PMC membership. When
-PMCs have voted in and nominated a new committer to serve on the PMC, they
-notify the board of the addition. The appointement is official once the
+PMCs have voted in a new individual to serve on their PMC, they
+notify the board of the addition. The appointment is official once the
 canonical PMC membership roster is updated to reflect the change.
 
 PMCs are expected to provide accurate and thorough reports to the board of their 
@@ -122,8 +122,7 @@ time being.
 For the first several years after incorporation the board was quite stable, 
 with a majority continuing to serve repeatedly. As the ASF grew in membership 
 around 2004, the board began to change somewhat, with a few new faces appearing 
-each year. Jim Jagielski, one of the founders of the ASF, has remained on the 
-board since its beginning.
+each year.
 
 Directors are expected to serve as individuals on the board, representing the 
 Membership and acting in the best interests of the ASF as a whole. Directors 
