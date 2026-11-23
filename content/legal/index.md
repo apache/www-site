@@ -30,25 +30,15 @@ The following pages provide information for Apache Software Foundation committer
 | [Generative Tooling Guidance](/legal/generative-tooling.html) | Guidance relating to the use of Generative Tooling |
 
 
-### The Legal Affairs Committee  {#communications}
+### Office of Legal Affairs {#communications}
 
-The Legal Affairs Committee was established in March 2007 and is responsible for establishing, and managing, 
-legal policies based on the advice of legal counsel and the interests of the Foundation. It reports to the board each month. 
+The ASF's legal affairs are managed by the Vice President, Legal Affairs, who is responsible for establishing and managing legal policies based on the advice of legal counsel and the interests of the Foundation. The office reports to the board each month.
 
-Questions for the Legal Affairs Committee should be raised on 
-[LEGAL JIRA space](https://issues.apache.org/jira/browse/LEGAL).
+Questions for Legal Affairs should be raised in the [LEGAL Jira space](https://issues.apache.org/jira/browse/LEGAL).
 
-Most discussions are held on the public 
-[legal-discuss@](/foundation/mailinglists.html#foundation-legal)
-mailing list. See the [legal-discuss@
-archives](https://lists.apache.org/list.html?legal-discuss@apache.org) 
-for previous discussions.
+Most discussions are held on the public [legal-discuss@](/foundation/mailinglists.html#foundation-legal) mailing list. See the [legal-discuss@ archives](https://lists.apache.org/list.html?legal-discuss@apache.org) for previous discussions.
 
-The Legal Affairs Committee (including VP of Legal Affairs) is staffed exclusively by volunteers 
-and is leveraging a pro-bono legal counsel. This means that while most requests are typically 
-resolved in a matter of few days, sometimes non-urgent requests can take longer. We will try 
-to acknowledge your request within a couple of days, but the actual resolution may take
-much longer. For truly urgent matters always make sure to contact vp-legal@apache.org directly.
+The office, including the VP of Legal Affairs, is staffed exclusively by volunteers working with ASF legal counsel. While most requests are typically resolved within a few days, non-urgent requests can take longer. We try to acknowledge requests within a couple of days, though full resolution may take longer. For truly urgent or private matters, contact `vp-legal@apache.org` directly.
 
 
 ### Historical and background documents  {#background-links}
