@@ -49,7 +49,7 @@ and/or to the board.
 
 ### Follow Security Notification Procedure ([Security Team](https://whimsy.apache.org/foundation/orgchart/security))
 
-  * Projects SHOULD always [work with the Security Team](//www.apache.org/security/) when dealing with vulnerabilities, and MUST follow [notification procedures](//www.apache.org/security/committers.html#vulnerability-handling) for security issues.
+  * Projects SHOULD always [work with the Security Team](//www.apache.org/security/) when dealing with vulnerabilities, and MUST follow [notification procedures](//www.apache.org/security/committers.html#possible) for security issues.
 
 ### Contributors And Licensing Policy ([Legal Affairs](https://whimsy.apache.org/foundation/orgchart/vp-legal))
 
@@ -77,9 +77,9 @@ and/or to the board.
 
 ### Press & Marketing Policy ([Press Team](https://whimsy.apache.org/foundation/orgchart/vp-marketing))
 
-  * Projects MUST work with VP, Marketing and Publicity on any [formal press releases](//www.apache.org/press/#releases) that use ASF boilerplate.
+  * Projects MUST work with VP, Marketing and Publicity on any [formal press releases](//www.apache.org/press/#publicity-guidelines-for-asf-top-level-projects) that use ASF boilerplate.
 
-  * Projects SHOULD work with [press@ to help coordinate any press, media, or analyst relations](//www.apache.org/press/#contact).
+  * Projects SHOULD work with [press@ to help coordinate any press, media, or analyst relations](//www.apache.org/press/#contact-us).
 
 ### Fundraising Policies ([VP, Fundraising](https://whimsy.apache.org/foundation/orgchart/vp-fundraising))
 
@@ -98,4 +98,3 @@ and/or to the board.
 ### See Also
 
 * General [How-To information for Apache contributors](/dev/).
-* [Five-year Strategic Plan for the Apache Software Foundation](./ASF-5-year-plan-02-21-2018), from 2018

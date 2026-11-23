@@ -67,9 +67,9 @@ project community, and membership does not convey any other special privileges.
 
 ## Meetings  {#meetings}
 
-The board holds an [Annual Members' Meeting][2] at least every 13 months, at which members elect a [new board of 
+The board calls an [Annual Members' Meeting][2] at least every 13 months, at which members elect a [new board of 
 directors][3], and may vote on [new member candidates][4]. Meetings 
-currently take place on a private IRC channel, as an alternative to a traditional 
+historically have taken place on a private chat channel, as an alternative to a traditional 
 conference call, where any reports are read and members may ask questions. The 
 meeting has a ~48 hour recess for voting, and then reconvenes to announce results 
 and complete the meeting: this lets members who may not be able to personally 
