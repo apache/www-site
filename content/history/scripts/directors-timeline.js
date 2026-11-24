@@ -56,8 +56,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       totalMs: totalMs,
       firstStart: firstStart,
       lastEnd: lastEnd,
-      isCurrent: isCurrent,
-      isReturning: segments.length > 1
+      isCurrent: isCurrent
     };
   });
 
@@ -145,8 +144,8 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   // Summary analytics
   const currentDirectors = directors
     .filter(function (d) { return d.isCurrent; })
-    .sort(function (a, b) { return b.totalMs - a.totalMs || a.name.localeCompare(b.name); });
-  const returningDirectors = directors.filter(function (d) { return d.isReturning; });
+    .sort(function (a, b) { return a.name.localeCompare(b.name); });
+  const formerCount = directors.length - currentDirectors.length;
 
   const sortedByTenure = directors
     .slice()
@@ -156,7 +155,6 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
     ? sortedByTenure[midIdx].totalMs
     : (sortedByTenure[midIdx - 1].totalMs + sortedByTenure[midIdx].totalMs) / 2;
   const avgMs = directors.reduce(function (sum, d) { return sum + d.totalMs; }, 0) / directors.length;
-  const longestDirector = sortedByTenure[sortedByTenure.length - 1];
 
   function formatDuration(ms) {
     const days = ms / MS_PER_DAY;
@@ -192,16 +190,14 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
     const style = document.createElement('style');
     style.id = 'asf-dt-styles';
     style.textContent = [
-      '.asf-dt-root { font-family: inherit; color: #1f2937; margin: 1.15rem 0 1.5rem; }',
+      '.asf-dt-root { font-family: inherit; color: #1f2937; margin: 1.15rem 0 1.25rem; }',
       '.asf-dt-root * { box-sizing: border-box; }',
       '.asf-dt-summary { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 0.9rem 1.1rem; box-shadow: 0 2px 10px rgba(40, 38, 94, 0.05); margin-bottom: 0.9rem; }',
-      '.asf-dt-stats-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid #f3f4f6; }',
+      '.asf-dt-stats-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid #f3f4f6; }',
       '.asf-dt-stat { display: flex; flex-direction: column; min-width: 0; }',
       '.asf-dt-stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: #6b7280; font-weight: 600; }',
       '.asf-dt-stat-value { font-family: Montserrat, sans-serif; font-size: 1.05rem; font-weight: 700; color: #28265E; line-height: 1.25; margin-top: 0.12rem; }',
       '.asf-dt-stat-sub { font-size: 0.75rem; color: #6b7280; margin-top: 0.1rem; }',
-      '.asf-dt-stat-link { border: none; background: transparent; padding: 0; margin: 0.12rem 0 0; font-family: Montserrat, sans-serif; font-size: 0.95rem; font-weight: 700; color: #7C297D; text-align: left; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }',
-      '.asf-dt-stat-link:hover { color: #28265E; }',
       '.asf-dt-current-line { padding-top: 0.7rem; font-size: 0.84rem; line-height: 1.6; color: #374151; }',
       '.asf-dt-current-label { font-weight: 700; color: #28265E; margin-right: 0.35rem; }',
       '.asf-dt-inline-btn { border: none; background: transparent; padding: 0.08rem 0.3rem; margin: 0; border-radius: 4px; font: inherit; color: #28265E; cursor: pointer; transition: background-color 0.12s, color 0.12s; }',
@@ -264,7 +260,6 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       '.asf-dt-empty { padding: 1.5rem; text-align: center; color: #6b7280; font-size: 0.88rem; }',
       '.asf-dt-footnote { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; margin-top: 0.55rem; font-size: 0.76rem; color: #6b7280; }',
       '@media (max-width: 820px) {',
-      '  .asf-dt-stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }',
       '  .asf-dt-term-row { grid-template-columns: 1fr; gap: 0.45rem; }',
       '  .asf-dt-term-label { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 0.6rem; }',
       '  .asf-dt-dir-head { display: none; }',
@@ -273,6 +268,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       '  .asf-dt-dir-spans { order: 4; }',
       '}',
       '@media (max-width: 520px) {',
+      '  .asf-dt-stats-grid { grid-template-columns: 1fr; gap: 0.55rem; }',
       '  .asf-dt-search { min-width: 155px; width: 100%; }',
       '}'
     ].join('\n');
@@ -283,7 +279,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
 
   const state = {
     view: 'terms',        // 'terms' | 'directors'
-    cohort: 'all',        // 'all' | 'current' | 'returning'
+    cohort: 'all',        // 'all' | 'current'
     query: '',
     termOrder: 'desc',    // 'desc' (2026->1999) | 'asc' (1999->2026)
     sortBy: 'recent',     // 'recent' | 'tenure' | 'earliest' | 'name'
@@ -304,8 +300,18 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   chartDom.appendChild(root);
 
   function toggleDirectorSelection(id) {
+    if (window.getSelection && window.getSelection().toString()) {
+      return;
+    }
     state.selectedId = state.selectedId === id ? null : id;
     renderAll();
+    // Keep the filtered detail view in the viewport when clicking while scrolled down.
+    if (state.selectedId) {
+      const panelTop = panel.getBoundingClientRect().top;
+      if (panelTop < 12 || panelTop > window.innerHeight - 80) {
+        controls.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
   }
 
   // Summary & Current Board Line
@@ -327,31 +333,13 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   addStat(
     'Directors',
     directors.length + ' total',
-    currentDirectors.length + ' current \u00b7 ' + returningDirectors.length + ' returning'
+    currentDirectors.length + ' current \u00b7 ' + formerCount + ' former'
   );
   addStat(
     'Typical Tenure',
     formatDuration(medianMs) + ' median',
     formatDuration(avgMs) + ' average'
   );
-
-  const longestBox = el('div', 'asf-dt-stat');
-  longestBox.appendChild(el('span', 'asf-dt-stat-label', 'Longest Service'));
-  const longestBtn = el('button', 'asf-dt-stat-link', longestDirector.name);
-  longestBtn.type = 'button';
-  longestBtn.title = 'Click to filter to ' + longestDirector.name;
-  longestBtn.addEventListener('click', function () {
-    toggleDirectorSelection(longestDirector.id);
-  });
-  longestBox.appendChild(longestBtn);
-  longestBox.appendChild(
-    el(
-      'span',
-      'asf-dt-stat-sub',
-      formatDuration(longestDirector.totalMs) + ' (' + longestDirector.segments.length + ' spans)'
-    )
-  );
-  statsGrid.appendChild(longestBox);
   summary.appendChild(statsGrid);
 
   const latestTermLabel = termsChrono.length > 0 ? termsChrono[termsChrono.length - 1].label : 'Current';
@@ -399,8 +387,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   const cohortButtons = new Map();
   [
     ['all', 'All (' + directors.length + ')'],
-    ['current', 'Current (' + currentDirectors.length + ')'],
-    ['returning', 'Returning (' + returningDirectors.length + ')']
+    ['current', 'Current (' + currentDirectors.length + ')']
   ].forEach(function (c) {
     const btn = el('button', 'asf-dt-cohort-btn', c[1]);
     btn.type = 'button';
@@ -480,7 +467,6 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
 
   function matchesCohortAndQuery(d, q) {
     if (state.cohort === 'current' && !d.isCurrent) return false;
-    if (state.cohort === 'returning' && !d.isReturning) return false;
     if (q && d.name.toLowerCase().indexOf(q) === -1 && d.id.toLowerCase().indexOf(q) === -1) {
       return false;
     }
@@ -617,7 +603,11 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       )
     );
     footnote.appendChild(
-      el('span', null, 'Showing ' + visibleTerms.length + ' of ' + termsChrono.length + ' terms')
+      el(
+        'span',
+        null,
+        'Showing ' + visibleTerms.length + ' of ' + termsChrono.length + ' terms'
+      )
     );
   }
 
@@ -738,7 +728,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       el(
         'span',
         null,
-        'Purple bars indicate current directors; navy bars indicate alumni. Click any row to focus & see exact dates.'
+        'Purple bars indicate current directors; navy bars indicate former directors. Click any row to focus & see exact dates.'
       )
     );
     footnote.appendChild(el('span', null, 'Showing ' + filtered.length + ' of ' + directors.length + ' directors'));

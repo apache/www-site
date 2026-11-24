@@ -17,4 +17,4 @@ It is <em>not</em> an official record - just an informational page.
   window.asf.directorsTimelineChart(document.getElementById('graph'), window.asf.getDirectorsTimelineData())
 </script>
 
-> This data comes from <a href='./data/directors.js'>`./data/directors.js`</a>
+This data comes from <a href="./data/directors.js">./data/directors.js</a>.
