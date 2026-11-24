@@ -146,12 +146,6 @@ read our [sponsorship page](/foundation/sponsorship.html).
         </a>
     </div>
     <div class="logo-card">
-        <a target="_blank" rel="sponsored" href="https://www.indeed.com/">
-            <img src="images/indeed-silver.png"/>
-            <div class="logo-caption">Indeed</div>
-        </a>
-    </div>
-    <div class="logo-card">
         <a target="_blank" rel="sponsored" href="https://www.lycorp.co.jp/en/">
             <img src="images/LY-silver.png"/>
             <div class="logo-caption">LY Corporation</div>
@@ -181,6 +175,7 @@ read our [sponsorship page](/foundation/sponsorship.html).
         <li><a target="_blank" rel="sponsored" href="https://www.colgatepalmolive.com">Colgate-Palmolive</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.gridgain.com">GridGain</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.getgrist.com">Grist Labs</a></li>
+        <li><a target="_blank" rel="sponsored" href="https://www.indeed.com/">Indeed</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.libriciel.fr/">Libriciel</a></li>
         <li><a target="_blank" rel="sponsored" href="https://rx-m.com/">RX-M</a></li>
         <li><a target="_blank" rel="sponsored" href="https://www.renre.com/">RenaissanceRe</a></li>
