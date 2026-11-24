@@ -215,14 +215,24 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       '.asf-dt-cohort-btn.is-active { background: #fff; color: #7C297D; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); }',
       '.asf-dt-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }',
       '.asf-dt-search-wrap { position: relative; display: inline-flex; align-items: center; }',
-      '.asf-dt-search { border: 1px solid #d1d5db; border-radius: 6px; padding: 0 1.8rem 0 0.65rem; height: 34px; line-height: 1.2; font-size: 0.82rem; background: #fff; color: #111827; min-width: 195px; }',
+      '.asf-dt-search { border: 1px solid #d1d5db; border-radius: 6px; padding: 0 1.8rem 0 0.65rem; height: 34px; line-height: 1.2; font-size: 0.82rem; background: #fff; color: #111827; width: 190px; max-width: 100%; }',
       '.asf-dt-search:focus { outline: none; border-color: #7C297D; box-shadow: 0 0 0 2px rgba(124, 41, 125, 0.15); }',
       '.asf-dt-clear-btn { position: absolute; right: 0.35rem; border: none; background: transparent; color: #6b7280; font-size: 1rem; line-height: 1; cursor: pointer; padding: 0.1rem 0.25rem; }',
       '.asf-dt-clear-btn:hover { color: #111827; }',
-      '.asf-dt-sort-group { display: inline-flex; align-items: center; background: #e5e7eb; border-radius: 6px; padding: 2px; gap: 2px; height: 34px; }',
-      '.asf-dt-sort-btn { border: none; background: transparent; color: #374151; font-size: 0.78rem; font-weight: 600; padding: 0.22rem 0.55rem; border-radius: 5px; cursor: pointer; white-space: nowrap; transition: background-color 0.12s, color 0.12s; }',
-      '.asf-dt-sort-btn:hover { color: #28265E; }',
-      '.asf-dt-sort-btn.is-active { background: #fff; color: #28265E; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); }',
+      '.asf-dt-sort-wrap { position: relative; display: inline-block; }',
+      '.asf-dt-sort-trigger { display: inline-flex; align-items: center; gap: 0.35rem; height: 34px; padding: 0 0.65rem; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; color: #1f2937; font-size: 0.82rem; font-weight: 500; cursor: pointer; white-space: nowrap; transition: border-color 0.12s, background-color 0.12s; }',
+      '.asf-dt-sort-trigger:hover { background: #f9fafb; border-color: #9ca3af; }',
+      '.asf-dt-sort-trigger[aria-expanded="true"] { border-color: #7C297D; box-shadow: 0 0 0 2px rgba(124, 41, 125, 0.15); }',
+      '.asf-dt-sort-prefix { color: #6b7280; font-weight: 400; }',
+      '.asf-dt-sort-value { color: #28265E; font-weight: 600; }',
+      '.asf-dt-chevron { width: 12px; height: 12px; color: #6b7280; flex-shrink: 0; }',
+      '.asf-dt-sort-menu { position: absolute; right: 0; top: calc(100% + 4px); min-width: 185px; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 10px 25px rgba(17, 24, 39, 0.12); padding: 4px; z-index: 50; display: none; }',
+      '.asf-dt-sort-menu.is-open { display: block; }',
+      '.asf-dt-sort-item { display: flex; align-items: center; gap: 0.45rem; width: 100%; border: none; background: transparent; color: #1f2937; font-size: 0.8rem; text-align: left; padding: 0.42rem 0.6rem; border-radius: 6px; cursor: pointer; white-space: nowrap; }',
+      '.asf-dt-sort-item:hover { background: #f3f4f6; }',
+      '.asf-dt-sort-item.is-selected { font-weight: 600; color: #28265E; background: #FEF4FF; }',
+      '.asf-dt-check { width: 14px; height: 14px; flex-shrink: 0; color: #7C297D; visibility: hidden; }',
+      '.asf-dt-sort-item.is-selected .asf-dt-check { visibility: visible; }',
       '.asf-dt-panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(40, 38, 94, 0.05); }',
       '.asf-dt-context-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.55rem 1rem; background: #FEF4FF; border-bottom: 1px solid #f3e8ff; font-size: 0.8rem; color: #4b5563; }',
       '.asf-dt-context-strong { font-weight: 700; color: #28265E; margin-right: 0.35rem; }',
@@ -269,7 +279,9 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       '}',
       '@media (max-width: 520px) {',
       '  .asf-dt-stats-grid { grid-template-columns: 1fr; gap: 0.55rem; }',
-      '  .asf-dt-search { min-width: 155px; width: 100%; }',
+      '  .asf-dt-tools { width: 100%; }',
+      '  .asf-dt-search-wrap { flex: 1; min-width: 140px; }',
+      '  .asf-dt-search { width: 100%; }',
       '}'
     ].join('\n');
     document.head.appendChild(style);
@@ -278,21 +290,42 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   injectStyles();
 
   const state = {
-    view: 'terms',        // 'terms' | 'directors'
-    cohort: 'all',        // 'all' | 'current'
+    view: 'directors',    // 'directors' | 'terms'
+    cohort: 'current',    // 'all' | 'current'
     query: '',
-    termOrder: 'desc',    // 'desc' (2026->1999) | 'asc' (1999->2026)
-    sortBy: 'recent',     // 'recent' | 'tenure' | 'earliest' | 'name'
-    sortDir: 'desc',      // 'asc' | 'desc'
-    selectedId: null
+    termOrder: 'desc',    // 'desc' (newest first) | 'asc' (oldest first)
+    sortBy: 'name',       // 'name' | 'recent' | 'tenure' | 'earliest'
+    sortDir: 'asc',       // 'asc' | 'desc'
+    selectedId: null,
+    sortMenuOpen: false
   };
 
-  const DEFAULT_SORT_DIR = {
-    recent: 'desc',
-    tenure: 'desc',
-    earliest: 'asc',
-    name: 'asc'
-  };
+  const DIRECTOR_SORT_OPTIONS = [
+    { by: 'name', dir: 'asc', label: 'Name (A\u2013Z)' },
+    { by: 'name', dir: 'desc', label: 'Name (Z\u2013A)' },
+    { by: 'tenure', dir: 'desc', label: 'Longest tenure' },
+    { by: 'tenure', dir: 'asc', label: 'Shortest tenure' },
+    { by: 'recent', dir: 'desc', label: 'Most recent' },
+    { by: 'earliest', dir: 'asc', label: 'Earliest joined' }
+  ];
+
+  const TERM_SORT_OPTIONS = [
+    { order: 'desc', label: 'Newest first' },
+    { order: 'asc', label: 'Oldest first' }
+  ];
+
+  function makeSvgIcon(pathD, className) {
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', '0 0 16 16');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('class', className);
+    const path = document.createElementNS(svgNS, 'path');
+    path.setAttribute('d', pathD);
+    path.setAttribute('fill', 'currentColor');
+    svg.appendChild(path);
+    return svg;
+  }
 
   const root = el('div', 'asf-dt-root');
   chartDom.innerHTML = '';
@@ -369,16 +402,16 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   const tabs = el('div', 'asf-dt-tabs');
   tabs.setAttribute('role', 'tablist');
 
-  const tabTerms = el('button', 'asf-dt-tab', 'By Term (' + termsChrono.length + ')');
-  tabTerms.type = 'button';
-  tabTerms.setAttribute('role', 'tab');
-
   const tabDirectors = el('button', 'asf-dt-tab', 'By Director (' + directors.length + ')');
   tabDirectors.type = 'button';
   tabDirectors.setAttribute('role', 'tab');
 
-  tabs.appendChild(tabTerms);
+  const tabTerms = el('button', 'asf-dt-tab', 'By Term (' + termsChrono.length + ')');
+  tabTerms.type = 'button';
+  tabTerms.setAttribute('role', 'tab');
+
   tabs.appendChild(tabDirectors);
+  tabs.appendChild(tabTerms);
   controlsLeft.appendChild(tabs);
 
   const cohorts = el('div', 'asf-dt-cohorts');
@@ -418,43 +451,46 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   searchWrap.appendChild(clearSearchBtn);
   tools.appendChild(searchWrap);
 
-  const termOrderBtn = el('button', 'asf-dt-sort-btn');
-  termOrderBtn.type = 'button';
-  termOrderBtn.style.background = '#fff';
-  termOrderBtn.style.border = '1px solid #d1d5db';
-  termOrderBtn.style.height = '34px';
-  termOrderBtn.style.padding = '0 0.65rem';
-  termOrderBtn.addEventListener('click', function () {
-    state.termOrder = state.termOrder === 'desc' ? 'asc' : 'desc';
-    renderAll();
-  });
-  tools.appendChild(termOrderBtn);
+  const sortWrap = el('div', 'asf-dt-sort-wrap');
+  const sortTrigger = el('button', 'asf-dt-sort-trigger');
+  sortTrigger.type = 'button';
+  sortTrigger.setAttribute('aria-haspopup', 'menu');
+  sortTrigger.setAttribute('aria-expanded', 'false');
 
-  const sortGroup = el('div', 'asf-dt-sort-group');
-  sortGroup.setAttribute('role', 'group');
-  sortGroup.setAttribute('aria-label', 'Sort directors');
-  const sortButtons = new Map();
-  [
-    ['recent', 'Recent'],
-    ['tenure', 'Tenure'],
-    ['earliest', 'Joined'],
-    ['name', 'Name']
-  ].forEach(function (opt) {
-    const btn = el('button', 'asf-dt-sort-btn');
-    btn.type = 'button';
-    btn.addEventListener('click', function () {
-      if (state.sortBy === opt[0]) {
-        state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
-      } else {
-        state.sortBy = opt[0];
-        state.sortDir = DEFAULT_SORT_DIR[opt[0]];
-      }
-      renderAll();
-    });
-    sortButtons.set(opt[0], btn);
-    sortGroup.appendChild(btn);
+  const sortPrefix = el('span', 'asf-dt-sort-prefix', 'Sort:');
+  const sortValue = el('span', 'asf-dt-sort-value', 'Name (A\u2013Z)');
+  const sortCaret = makeSvgIcon('M4.427 6.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 6H4.604a.25.25 0 00-.177.427z', 'asf-dt-chevron');
+  sortTrigger.appendChild(sortPrefix);
+  sortTrigger.appendChild(sortValue);
+  sortTrigger.appendChild(sortCaret);
+
+  const sortMenu = el('div', 'asf-dt-sort-menu');
+  sortMenu.setAttribute('role', 'menu');
+
+  sortTrigger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    state.sortMenuOpen = !state.sortMenuOpen;
+    renderSortControl();
   });
-  tools.appendChild(sortGroup);
+
+  document.addEventListener('click', function (e) {
+    if (state.sortMenuOpen && !sortWrap.contains(e.target)) {
+      state.sortMenuOpen = false;
+      renderSortControl();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && state.sortMenuOpen) {
+      state.sortMenuOpen = false;
+      renderSortControl();
+      sortTrigger.focus();
+    }
+  });
+
+  sortWrap.appendChild(sortTrigger);
+  sortWrap.appendChild(sortMenu);
+  tools.appendChild(sortWrap);
   controls.appendChild(tools);
   root.appendChild(controls);
 
@@ -473,28 +509,57 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
     return true;
   }
 
-  function updateSortLabels() {
-    termOrderBtn.textContent = state.termOrder === 'desc' ? 'Newest \u2193' : 'Oldest \u2191';
-    termOrderBtn.title = state.termOrder === 'desc'
-      ? 'Showing newest terms first (click for oldest first)'
-      : 'Showing oldest terms first (click for newest first)';
+  function renderSortControl() {
+    sortTrigger.setAttribute('aria-expanded', state.sortMenuOpen ? 'true' : 'false');
+    sortMenu.classList.toggle('is-open', state.sortMenuOpen);
+    sortMenu.innerHTML = '';
 
-    sortButtons.forEach(function (btn, key) {
-      const isActive = state.sortBy === key;
-      btn.classList.toggle('is-active', isActive);
-      const dir = isActive ? state.sortDir : DEFAULT_SORT_DIR[key];
-      const arrow = dir === 'asc' ? ' \u2191' : ' \u2193';
-      if (key === 'name') {
-        btn.textContent = dir === 'asc' ? 'A\u2013Z' : 'Z\u2013A';
-      } else if (key === 'recent') {
-        btn.textContent = 'Recent' + (isActive ? arrow : '');
-      } else if (key === 'tenure') {
-        btn.textContent = 'Tenure' + (isActive ? arrow : '');
-      } else if (key === 'earliest') {
-        btn.textContent = 'Joined' + (isActive ? arrow : '');
-      }
-      btn.title = isActive ? 'Click to reverse sort order' : 'Sort by ' + key;
-    });
+    if (state.view === 'terms') {
+      const activeOpt = TERM_SORT_OPTIONS.find(function (o) {
+        return o.order === state.termOrder;
+      }) || TERM_SORT_OPTIONS[0];
+      sortValue.textContent = activeOpt.label;
+
+      TERM_SORT_OPTIONS.forEach(function (opt) {
+        const isSel = opt.order === state.termOrder;
+        const item = el('button', 'asf-dt-sort-item');
+        item.type = 'button';
+        item.setAttribute('role', 'menuitemradio');
+        item.setAttribute('aria-checked', isSel ? 'true' : 'false');
+        item.classList.toggle('is-selected', isSel);
+        item.appendChild(makeSvgIcon('M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z', 'asf-dt-check'));
+        item.appendChild(document.createTextNode(opt.label));
+        item.addEventListener('click', function () {
+          state.termOrder = opt.order;
+          state.sortMenuOpen = false;
+          renderAll();
+        });
+        sortMenu.appendChild(item);
+      });
+    } else {
+      const activeOpt = DIRECTOR_SORT_OPTIONS.find(function (o) {
+        return o.by === state.sortBy && o.dir === state.sortDir;
+      }) || DIRECTOR_SORT_OPTIONS[0];
+      sortValue.textContent = activeOpt.label;
+
+      DIRECTOR_SORT_OPTIONS.forEach(function (opt) {
+        const isSel = opt.by === state.sortBy && opt.dir === state.sortDir;
+        const item = el('button', 'asf-dt-sort-item');
+        item.type = 'button';
+        item.setAttribute('role', 'menuitemradio');
+        item.setAttribute('aria-checked', isSel ? 'true' : 'false');
+        item.classList.toggle('is-selected', isSel);
+        item.appendChild(makeSvgIcon('M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z', 'asf-dt-check'));
+        item.appendChild(document.createTextNode(opt.label));
+        item.addEventListener('click', function () {
+          state.sortBy = opt.by;
+          state.sortDir = opt.dir;
+          state.sortMenuOpen = false;
+          renderAll();
+        });
+        sortMenu.appendChild(item);
+      });
+    }
   }
 
   function renderSelectedContextBar(countLabel) {
@@ -744,9 +809,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       btn.classList.toggle('is-active', state.cohort === key);
     });
 
-    termOrderBtn.style.display = state.view === 'terms' ? 'inline-block' : 'none';
-    sortGroup.style.display = state.view === 'directors' ? 'inline-flex' : 'none';
-    updateSortLabels();
+    renderSortControl();
 
     if (state.view === 'terms') {
       renderTermsView();
@@ -758,6 +821,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   tabTerms.addEventListener('click', function () {
     if (state.view !== 'terms') {
       state.view = 'terms';
+      state.sortMenuOpen = false;
       renderAll();
     }
   });
@@ -765,6 +829,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   tabDirectors.addEventListener('click', function () {
     if (state.view !== 'directors') {
       state.view = 'directors';
+      state.sortMenuOpen = false;
       renderAll();
     }
   });
