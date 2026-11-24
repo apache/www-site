@@ -17,6 +17,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
     month: 'short'
   });
   const MS_PER_DAY = 86400000;
+  const DAYS_PER_YEAR = 365.25;
 
   let minTime = Infinity;
   let maxEnd = -Infinity;
@@ -29,7 +30,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
     });
   });
 
-  // Normalize each director with precomputed tenure and current-board status.
+  // Normalize each director with precomputed tenure and status flags.
   const directors = timelineData.map(function (person) {
     const segments = person.segments
       .slice()
@@ -55,7 +56,8 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       totalMs: totalMs,
       firstStart: firstStart,
       lastEnd: lastEnd,
-      isCurrent: isCurrent
+      isCurrent: isCurrent,
+      isReturning: segments.length > 1
     };
   });
 
@@ -96,7 +98,8 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       return { year: y, time: bestTime };
     });
 
-  const terms = [];
+  // Build chronological terms first so we can compute term-over-term turnover.
+  const termsChrono = [];
   for (let i = 0; i < termBoundaries.length - 1; i++) {
     const startBound = termBoundaries[i];
     const endBound = termBoundaries[i + 1];
@@ -116,28 +119,44 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
         });
       }
     });
-    // Sort members inside each term: full-term before partial, then alphabetically.
     members.sort(function (a, b) {
       if (a.isFullTerm !== b.isFullTerm) return a.isFullTerm ? -1 : 1;
       return a.director.name.localeCompare(b.director.name);
     });
-    terms.push({
+
+    const prevIds = i > 0
+      ? new Set(termsChrono[i - 1].members.map(function (m) { return m.director.id; }))
+      : null;
+    const incomingCount = prevIds
+      ? members.filter(function (m) { return !prevIds.has(m.director.id); }).length
+      : 0;
+
+    termsChrono.push({
       label: startBound.year + '\u2013' + endBound.year,
       startTime: startBound.time,
       endTime: endBound.time,
       isCurrent: endBound.time === maxEnd,
+      incomingCount: incomingCount,
+      hasPrev: i > 0,
       members: members
     });
   }
-  terms.reverse();
 
+  // Summary analytics
   const currentDirectors = directors
-    .filter(function (d) {
-      return d.isCurrent;
-    })
-    .sort(function (a, b) {
-      return b.totalMs - a.totalMs || a.name.localeCompare(b.name);
-    });
+    .filter(function (d) { return d.isCurrent; })
+    .sort(function (a, b) { return b.totalMs - a.totalMs || a.name.localeCompare(b.name); });
+  const returningDirectors = directors.filter(function (d) { return d.isReturning; });
+
+  const sortedByTenure = directors
+    .slice()
+    .sort(function (a, b) { return a.totalMs - b.totalMs; });
+  const midIdx = Math.floor(sortedByTenure.length / 2);
+  const medianMs = sortedByTenure.length % 2 === 1
+    ? sortedByTenure[midIdx].totalMs
+    : (sortedByTenure[midIdx - 1].totalMs + sortedByTenure[midIdx].totalMs) / 2;
+  const avgMs = directors.reduce(function (sum, d) { return sum + d.totalMs; }, 0) / directors.length;
+  const longestDirector = sortedByTenure[sortedByTenure.length - 1];
 
   function formatDuration(ms) {
     const days = ms / MS_PER_DAY;
@@ -145,10 +164,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       const months = Math.max(1, Math.round(days / 30.4375));
       return months + (months === 1 ? ' mo' : ' mos');
     }
-    const years = days / 365.25;
-    if (years >= 10) {
-      return years.toFixed(1) + ' yrs';
-    }
+    const years = days / DAYS_PER_YEAR;
     const rounded = Math.round(years * 10) / 10;
     return rounded.toFixed(1) + (rounded === 1 ? ' yr' : ' yrs');
   }
@@ -176,43 +192,47 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
     const style = document.createElement('style');
     style.id = 'asf-dt-styles';
     style.textContent = [
-      '.asf-dt-root { font-family: inherit; color: #1f2937; margin: 1.25rem 0 1.5rem; }',
+      '.asf-dt-root { font-family: inherit; color: #1f2937; margin: 1.15rem 0 1.5rem; }',
       '.asf-dt-root * { box-sizing: border-box; }',
-      '.asf-dt-current { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1rem 1.15rem; box-shadow: 0 2px 10px rgba(40, 38, 94, 0.06); margin-bottom: 1rem; }',
-      '.asf-dt-current-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.75rem; }',
-      '.asf-dt-current-title { font-family: Montserrat, sans-serif; font-size: 1rem; font-weight: 700; color: #28265E; margin: 0; }',
-      '.asf-dt-stats { font-size: 0.82rem; color: #6b7280; }',
-      '.asf-dt-current-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }',
-      '.asf-dt-current-card { display: flex; flex-direction: column; align-items: flex-start; text-align: left; width: 100%; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 0.5rem 0.7rem; cursor: pointer; transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s; }',
-      '.asf-dt-current-card:hover { border-color: #7C297D; background: #FEF4FF; }',
-      '.asf-dt-current-card.is-selected { border-color: #7C297D; background: #FEF4FF; box-shadow: 0 0 0 2px rgba(124, 41, 125, 0.18); }',
-      '.asf-dt-card-name { font-size: 0.88rem; font-weight: 600; color: #28265E; line-height: 1.3; }',
-      '.asf-dt-card-meta { font-size: 0.75rem; color: #6b7280; line-height: 1.3; margin-top: 0.1rem; }',
-      '.asf-dt-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.65rem; margin-bottom: 0.85rem; }',
+      '.asf-dt-summary { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 0.9rem 1.1rem; box-shadow: 0 2px 10px rgba(40, 38, 94, 0.05); margin-bottom: 0.9rem; }',
+      '.asf-dt-stats-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid #f3f4f6; }',
+      '.asf-dt-stat { display: flex; flex-direction: column; min-width: 0; }',
+      '.asf-dt-stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: #6b7280; font-weight: 600; }',
+      '.asf-dt-stat-value { font-family: Montserrat, sans-serif; font-size: 1.05rem; font-weight: 700; color: #28265E; line-height: 1.25; margin-top: 0.12rem; }',
+      '.asf-dt-stat-sub { font-size: 0.75rem; color: #6b7280; margin-top: 0.1rem; }',
+      '.asf-dt-stat-link { border: none; background: transparent; padding: 0; margin: 0.12rem 0 0; font-family: Montserrat, sans-serif; font-size: 0.95rem; font-weight: 700; color: #7C297D; text-align: left; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }',
+      '.asf-dt-stat-link:hover { color: #28265E; }',
+      '.asf-dt-current-line { padding-top: 0.7rem; font-size: 0.84rem; line-height: 1.6; color: #374151; }',
+      '.asf-dt-current-label { font-weight: 700; color: #28265E; margin-right: 0.35rem; }',
+      '.asf-dt-inline-btn { border: none; background: transparent; padding: 0.08rem 0.3rem; margin: 0; border-radius: 4px; font: inherit; color: #28265E; cursor: pointer; transition: background-color 0.12s, color 0.12s; }',
+      '.asf-dt-inline-btn:hover { background: #FEF4FF; color: #7C297D; }',
+      '.asf-dt-inline-btn.is-selected { background: #7C297D; color: #fff; font-weight: 600; }',
+      '.asf-dt-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.55rem; margin-bottom: 0.75rem; }',
+      '.asf-dt-controls-left { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }',
       '.asf-dt-tabs { display: inline-flex; background: #e5e7eb; border-radius: 8px; padding: 3px; gap: 3px; }',
-      '.asf-dt-tab { border: none; background: transparent; color: #374151; font-size: 0.82rem; font-weight: 600; padding: 0.38rem 0.85rem; border-radius: 6px; cursor: pointer; transition: background-color 0.15s, color 0.15s; }',
+      '.asf-dt-tab { border: none; background: transparent; color: #374151; font-size: 0.82rem; font-weight: 600; padding: 0.35rem 0.8rem; border-radius: 6px; cursor: pointer; white-space: nowrap; transition: background-color 0.12s, color 0.12s; }',
       '.asf-dt-tab:hover { color: #28265E; }',
       '.asf-dt-tab.is-active { background: #28265E; color: #fff; }',
+      '.asf-dt-cohorts { display: inline-flex; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 8px; padding: 2px; gap: 2px; }',
+      '.asf-dt-cohort-btn { border: none; background: transparent; color: #4b5563; font-size: 0.78rem; font-weight: 600; padding: 0.3rem 0.6rem; border-radius: 6px; cursor: pointer; white-space: nowrap; transition: background-color 0.12s, color 0.12s; }',
+      '.asf-dt-cohort-btn:hover { color: #28265E; }',
+      '.asf-dt-cohort-btn.is-active { background: #fff; color: #7C297D; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); }',
       '.asf-dt-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }',
       '.asf-dt-search-wrap { position: relative; display: inline-flex; align-items: center; }',
-      '.asf-dt-search { border: 1px solid #d1d5db; border-radius: 6px; padding: 0 1.8rem 0 0.65rem; height: 36px; line-height: 1.2; font-size: 0.82rem; background: #fff; color: #111827; min-width: 210px; }',
+      '.asf-dt-search { border: 1px solid #d1d5db; border-radius: 6px; padding: 0 1.8rem 0 0.65rem; height: 34px; line-height: 1.2; font-size: 0.82rem; background: #fff; color: #111827; min-width: 195px; }',
       '.asf-dt-search:focus { outline: none; border-color: #7C297D; box-shadow: 0 0 0 2px rgba(124, 41, 125, 0.15); }',
       '.asf-dt-clear-btn { position: absolute; right: 0.35rem; border: none; background: transparent; color: #6b7280; font-size: 1rem; line-height: 1; cursor: pointer; padding: 0.1rem 0.25rem; }',
       '.asf-dt-clear-btn:hover { color: #111827; }',
-      '.asf-dt-sort-group { display: inline-flex; align-items: center; background: #e5e7eb; border-radius: 6px; padding: 2px; gap: 2px; height: 36px; }',
-      '.asf-dt-sort-btn { border: none; background: transparent; color: #374151; font-size: 0.78rem; font-weight: 600; padding: 0.25rem 0.55rem; border-radius: 5px; cursor: pointer; white-space: nowrap; transition: background-color 0.12s, color 0.12s; }',
+      '.asf-dt-sort-group { display: inline-flex; align-items: center; background: #e5e7eb; border-radius: 6px; padding: 2px; gap: 2px; height: 34px; }',
+      '.asf-dt-sort-btn { border: none; background: transparent; color: #374151; font-size: 0.78rem; font-weight: 600; padding: 0.22rem 0.55rem; border-radius: 5px; cursor: pointer; white-space: nowrap; transition: background-color 0.12s, color 0.12s; }',
       '.asf-dt-sort-btn:hover { color: #28265E; }',
       '.asf-dt-sort-btn.is-active { background: #fff; color: #28265E; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); }',
-      '.asf-dt-detail { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.6rem; background: #FEF4FF; border: 1px solid #e9d5ff; border-left: 4px solid #7C297D; border-radius: 8px; padding: 0.65rem 0.9rem; margin-bottom: 0.85rem; }',
-      '.asf-dt-detail-main { font-size: 0.85rem; line-height: 1.45; }',
-      '.asf-dt-detail-title { font-weight: 700; color: #28265E; margin-right: 0.45rem; }',
-      '.asf-dt-detail-dates { color: #4b5563; font-size: 0.8rem; margin-top: 0.15rem; }',
-      '.asf-dt-detail-close { border: 1px solid #d8b4fe; background: #fff; color: #7C297D; border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; font-weight: 600; cursor: pointer; }',
-      '.asf-dt-detail-close:hover { background: #7C297D; color: #fff; }',
       '.asf-dt-panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(40, 38, 94, 0.05); }',
-      '.asf-dt-term-row { display: grid; grid-template-columns: 175px minmax(0, 1fr); gap: 0.75rem; padding: 0.65rem 1rem; border-bottom: 1px solid #f3f4f6; align-items: start; }',
+      '.asf-dt-context-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.55rem 1rem; background: #FEF4FF; border-bottom: 1px solid #f3e8ff; font-size: 0.8rem; color: #4b5563; }',
+      '.asf-dt-context-strong { font-weight: 700; color: #28265E; margin-right: 0.35rem; }',
+      '.asf-dt-context-hint { font-size: 0.74rem; color: #6b7280; }',
+      '.asf-dt-term-row { display: grid; grid-template-columns: 215px minmax(0, 1fr); gap: 0.75rem; padding: 0.65rem 1rem; border-bottom: 1px solid #f3f4f6; align-items: start; }',
       '.asf-dt-term-row:last-child { border-bottom: none; }',
-      '.asf-dt-term-row.is-dimmed { opacity: 0.42; }',
       '.asf-dt-term-row.is-current-term { background: #faf5ff; }',
       '.asf-dt-term-label { display: flex; flex-direction: column; }',
       '.asf-dt-term-years { font-size: 0.88rem; font-weight: 700; color: #28265E; display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap; }',
@@ -223,18 +243,19 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       '.asf-dt-pill:hover { border-color: #7C297D; color: #7C297D; background: #FEF4FF; }',
       '.asf-dt-pill.is-partial { border-style: dashed; }',
       '.asf-dt-pill.is-selected { background: #7C297D; border-color: #7C297D; color: #fff; font-weight: 600; }',
-      '.asf-dt-pill.is-dimmed { opacity: 0.35; }',
+      '.asf-dt-pill.is-matched { border-color: #7C297D; color: #7C297D; background: #FEF4FF; font-weight: 600; }',
+      '.asf-dt-pill.is-dimmed { opacity: 0.4; }',
       '.asf-dt-dir-head { display: grid; grid-template-columns: 270px minmax(0, 1fr) 72px; gap: 0.75rem; padding: 0.55rem 1rem; background: #f9fafb; border-bottom: 1px solid #e5e7eb; font-size: 0.75rem; font-weight: 700; color: #4b5563; align-items: center; }',
       '.asf-dt-axis { position: relative; height: 1.1rem; }',
       '.asf-dt-axis-tick { position: absolute; top: 0; transform: translateX(-50%); font-size: 0.7rem; color: #6b7280; white-space: nowrap; }',
       '.asf-dt-axis-tick.is-start { transform: translateX(0); }',
       '.asf-dt-axis-tick.is-end { transform: translateX(-100%); }',
-      '.asf-dt-dir-row { display: grid; grid-template-columns: 270px minmax(0, 1fr) 72px; gap: 0.75rem; padding: 0.45rem 1rem; border-bottom: 1px solid #f3f4f6; align-items: center; cursor: pointer; transition: background-color 0.12s; }',
+      '.asf-dt-dir-row { display: grid; grid-template-columns: 270px minmax(0, 1fr) 72px; gap: 0.75rem; padding: 0.48rem 1rem; border-bottom: 1px solid #f3f4f6; align-items: center; cursor: pointer; transition: background-color 0.12s; }',
       '.asf-dt-dir-row:last-child { border-bottom: none; }',
       '.asf-dt-dir-row:hover { background: #f9fafb; }',
-      '.asf-dt-dir-row.is-selected { background: #FEF4FF; }',
       '.asf-dt-dir-name { font-size: 0.82rem; font-weight: 600; color: #1f2937; line-height: 1.3; }',
       '.asf-dt-dir-id { font-size: 0.72rem; font-weight: 400; color: #6b7280; margin-left: 0.3rem; white-space: nowrap; }',
+      '.asf-dt-dir-spans { grid-column: 1 / -1; font-size: 0.78rem; color: #4b5563; padding-top: 0.25rem; border-top: 1px dashed #e5e7eb; }',
       '.asf-dt-track { position: relative; height: 14px; background: #f3f4f6; border-radius: 4px; overflow: hidden; }',
       '.asf-dt-gridline { position: absolute; top: 0; bottom: 0; width: 1px; background: rgba(0, 0, 0, 0.06); pointer-events: none; }',
       '.asf-dt-bar { position: absolute; top: 2px; bottom: 2px; background: #28265E; border-radius: 3px; opacity: 0.88; min-width: 3px; }',
@@ -243,16 +264,16 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       '.asf-dt-empty { padding: 1.5rem; text-align: center; color: #6b7280; font-size: 0.88rem; }',
       '.asf-dt-footnote { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; margin-top: 0.55rem; font-size: 0.76rem; color: #6b7280; }',
       '@media (max-width: 820px) {',
-      '  .asf-dt-current-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }',
+      '  .asf-dt-stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }',
       '  .asf-dt-term-row { grid-template-columns: 1fr; gap: 0.45rem; }',
-      '  .asf-dt-term-label { flex-direction: row; align-items: baseline; gap: 0.6rem; }',
+      '  .asf-dt-term-label { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 0.6rem; }',
       '  .asf-dt-dir-head { display: none; }',
       '  .asf-dt-dir-row { grid-template-columns: minmax(0, 1fr) 64px; row-gap: 0.25rem; }',
       '  .asf-dt-track { grid-column: 1 / -1; order: 3; }',
+      '  .asf-dt-dir-spans { order: 4; }',
       '}',
       '@media (max-width: 520px) {',
-      '  .asf-dt-current-grid { grid-template-columns: 1fr; }',
-      '  .asf-dt-search { min-width: 160px; width: 100%; }',
+      '  .asf-dt-search { min-width: 155px; width: 100%; }',
       '}'
     ].join('\n');
     document.head.appendChild(style);
@@ -261,10 +282,20 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   injectStyles();
 
   const state = {
-    view: 'terms', // 'terms' | 'directors'
+    view: 'terms',        // 'terms' | 'directors'
+    cohort: 'all',        // 'all' | 'current' | 'returning'
     query: '',
-    sortBy: 'recent', // 'recent' | 'tenure' | 'earliest' | 'name'
+    termOrder: 'desc',    // 'desc' (2026->1999) | 'asc' (1999->2026)
+    sortBy: 'recent',     // 'recent' | 'tenure' | 'earliest' | 'name'
+    sortDir: 'desc',      // 'asc' | 'desc'
     selectedId: null
+  };
+
+  const DEFAULT_SORT_DIR = {
+    recent: 'desc',
+    tenure: 'desc',
+    earliest: 'asc',
+    name: 'asc'
   };
 
   const root = el('div', 'asf-dt-root');
@@ -272,50 +303,85 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   chartDom.style.height = 'auto';
   chartDom.appendChild(root);
 
-  // Current Board Section
-  const currentCard = el('section', 'asf-dt-current');
-  const currentHead = el('div', 'asf-dt-current-head');
-  const latestTermLabel = terms.length > 0 ? terms[0].label : 'Current';
-  currentHead.appendChild(el('h2', 'asf-dt-current-title', 'Current Board (' + latestTermLabel + ')'));
-  currentHead.appendChild(
+  function toggleDirectorSelection(id) {
+    state.selectedId = state.selectedId === id ? null : id;
+    renderAll();
+  }
+
+  // Summary & Current Board Line
+  const summary = el('section', 'asf-dt-summary');
+  const statsGrid = el('div', 'asf-dt-stats-grid');
+
+  const firstYear = new Date(minTime).getFullYear();
+  const lastYear = new Date(maxEnd).getFullYear();
+
+  function addStat(label, value, sub) {
+    const box = el('div', 'asf-dt-stat');
+    box.appendChild(el('span', 'asf-dt-stat-label', label));
+    box.appendChild(el('span', 'asf-dt-stat-value', value));
+    if (sub) box.appendChild(el('span', 'asf-dt-stat-sub', sub));
+    statsGrid.appendChild(box);
+  }
+
+  addStat('Board Span', firstYear + '\u2013' + lastYear, termsChrono.length + ' annual terms');
+  addStat(
+    'Directors',
+    directors.length + ' total',
+    currentDirectors.length + ' current \u00b7 ' + returningDirectors.length + ' returning'
+  );
+  addStat(
+    'Typical Tenure',
+    formatDuration(medianMs) + ' median',
+    formatDuration(avgMs) + ' average'
+  );
+
+  const longestBox = el('div', 'asf-dt-stat');
+  longestBox.appendChild(el('span', 'asf-dt-stat-label', 'Longest Service'));
+  const longestBtn = el('button', 'asf-dt-stat-link', longestDirector.name);
+  longestBtn.type = 'button';
+  longestBtn.title = 'Click to filter to ' + longestDirector.name;
+  longestBtn.addEventListener('click', function () {
+    toggleDirectorSelection(longestDirector.id);
+  });
+  longestBox.appendChild(longestBtn);
+  longestBox.appendChild(
     el(
       'span',
-      'asf-dt-stats',
-      currentDirectors.length + ' current directors \u00b7 ' + directors.length + ' total since ' + new Date(minTime).getFullYear()
+      'asf-dt-stat-sub',
+      formatDuration(longestDirector.totalMs) + ' (' + longestDirector.segments.length + ' spans)'
     )
   );
-  currentCard.appendChild(currentHead);
+  statsGrid.appendChild(longestBox);
+  summary.appendChild(statsGrid);
 
-  const currentGrid = el('div', 'asf-dt-current-grid');
-  const currentCardButtons = new Map();
-  currentDirectors.forEach(function (d) {
-    const btn = el('button', 'asf-dt-current-card');
+  const latestTermLabel = termsChrono.length > 0 ? termsChrono[termsChrono.length - 1].label : 'Current';
+  const currentLine = el('div', 'asf-dt-current-line');
+  currentLine.appendChild(el('span', 'asf-dt-current-label', 'Current Board (' + latestTermLabel + '):'));
+  const currentInlineButtons = new Map();
+  currentDirectors.forEach(function (d, idx) {
+    const btn = el('button', 'asf-dt-inline-btn', d.name);
     btn.type = 'button';
-    btn.title = 'Click to highlight ' + d.name + '\u2019s terms';
-    btn.appendChild(el('span', 'asf-dt-card-name', d.name));
-    btn.appendChild(
-      el(
-        'span',
-        'asf-dt-card-meta',
-        '@' + d.id + ' \u00b7 ' + formatDuration(d.totalMs) + ' (' + d.segments.length + (d.segments.length === 1 ? ' span)' : ' spans)')
-      )
-    );
+    btn.title = '@' + d.id + ' \u00b7 ' + formatDuration(d.totalMs) + ' \u2014 click to filter';
     btn.addEventListener('click', function () {
-      state.selectedId = state.selectedId === d.id ? null : d.id;
-      renderSelectionAndBody();
+      toggleDirectorSelection(d.id);
     });
-    currentCardButtons.set(d.id, btn);
-    currentGrid.appendChild(btn);
+    currentInlineButtons.set(d.id, btn);
+    currentLine.appendChild(btn);
+    if (idx < currentDirectors.length - 1) {
+      currentLine.appendChild(document.createTextNode('\u00b7'));
+    }
   });
-  currentCard.appendChild(currentGrid);
-  root.appendChild(currentCard);
+  summary.appendChild(currentLine);
+  root.appendChild(summary);
 
   // Controls Toolbar
   const controls = el('div', 'asf-dt-controls');
+  const controlsLeft = el('div', 'asf-dt-controls-left');
+
   const tabs = el('div', 'asf-dt-tabs');
   tabs.setAttribute('role', 'tablist');
 
-  const tabTerms = el('button', 'asf-dt-tab is-active', 'By Term (' + terms.length + ')');
+  const tabTerms = el('button', 'asf-dt-tab', 'By Term (' + termsChrono.length + ')');
   tabTerms.type = 'button';
   tabTerms.setAttribute('role', 'tab');
 
@@ -325,7 +391,29 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
 
   tabs.appendChild(tabTerms);
   tabs.appendChild(tabDirectors);
-  controls.appendChild(tabs);
+  controlsLeft.appendChild(tabs);
+
+  const cohorts = el('div', 'asf-dt-cohorts');
+  cohorts.setAttribute('role', 'group');
+  cohorts.setAttribute('aria-label', 'Filter cohort');
+  const cohortButtons = new Map();
+  [
+    ['all', 'All (' + directors.length + ')'],
+    ['current', 'Current (' + currentDirectors.length + ')'],
+    ['returning', 'Returning (' + returningDirectors.length + ')']
+  ].forEach(function (c) {
+    const btn = el('button', 'asf-dt-cohort-btn', c[1]);
+    btn.type = 'button';
+    btn.addEventListener('click', function () {
+      state.cohort = c[0];
+      state.selectedId = null;
+      renderAll();
+    });
+    cohortButtons.set(c[0], btn);
+    cohorts.appendChild(btn);
+  });
+  controlsLeft.appendChild(cohorts);
+  controls.appendChild(controlsLeft);
 
   const tools = el('div', 'asf-dt-tools');
   const searchWrap = el('div', 'asf-dt-search-wrap');
@@ -343,39 +431,45 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   searchWrap.appendChild(clearSearchBtn);
   tools.appendChild(searchWrap);
 
+  const termOrderBtn = el('button', 'asf-dt-sort-btn');
+  termOrderBtn.type = 'button';
+  termOrderBtn.style.background = '#fff';
+  termOrderBtn.style.border = '1px solid #d1d5db';
+  termOrderBtn.style.height = '34px';
+  termOrderBtn.style.padding = '0 0.65rem';
+  termOrderBtn.addEventListener('click', function () {
+    state.termOrder = state.termOrder === 'desc' ? 'asc' : 'desc';
+    renderAll();
+  });
+  tools.appendChild(termOrderBtn);
+
   const sortGroup = el('div', 'asf-dt-sort-group');
   sortGroup.setAttribute('role', 'group');
   sortGroup.setAttribute('aria-label', 'Sort directors');
   const sortButtons = new Map();
   [
     ['recent', 'Recent'],
-    ['tenure', 'Longest'],
-    ['earliest', 'Earliest'],
-    ['name', 'A\u2013Z']
+    ['tenure', 'Tenure'],
+    ['earliest', 'Joined'],
+    ['name', 'Name']
   ].forEach(function (opt) {
-    const btn = el('button', 'asf-dt-sort-btn', opt[1]);
+    const btn = el('button', 'asf-dt-sort-btn');
     btn.type = 'button';
-    btn.title = 'Sort by ' + opt[1].toLowerCase();
-    btn.classList.toggle('is-active', opt[0] === state.sortBy);
     btn.addEventListener('click', function () {
-      state.sortBy = opt[0];
-      sortButtons.forEach(function (b, k) {
-        b.classList.toggle('is-active', k === state.sortBy);
-      });
-      renderDirectorsView();
+      if (state.sortBy === opt[0]) {
+        state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
+      } else {
+        state.sortBy = opt[0];
+        state.sortDir = DEFAULT_SORT_DIR[opt[0]];
+      }
+      renderAll();
     });
     sortButtons.set(opt[0], btn);
     sortGroup.appendChild(btn);
   });
-  sortGroup.style.display = 'none';
   tools.appendChild(sortGroup);
   controls.appendChild(tools);
   root.appendChild(controls);
-
-  // Selected Director Detail Banner
-  const detailBanner = el('div', 'asf-dt-detail');
-  detailBanner.style.display = 'none';
-  root.appendChild(detailBanner);
 
   // Main Panel + Footnote
   const panel = el('div', 'asf-dt-panel');
@@ -384,71 +478,83 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   const footnote = el('div', 'asf-dt-footnote');
   root.appendChild(footnote);
 
-  function matchesQuery(d, q) {
-    if (!q) return true;
-    return d.name.toLowerCase().indexOf(q) !== -1 || d.id.toLowerCase().indexOf(q) !== -1;
+  function matchesCohortAndQuery(d, q) {
+    if (state.cohort === 'current' && !d.isCurrent) return false;
+    if (state.cohort === 'returning' && !d.isReturning) return false;
+    if (q && d.name.toLowerCase().indexOf(q) === -1 && d.id.toLowerCase().indexOf(q) === -1) {
+      return false;
+    }
+    return true;
   }
 
-  function renderDetailBanner() {
-    currentCardButtons.forEach(function (btn, id) {
-      btn.classList.toggle('is-selected', state.selectedId === id);
+  function updateSortLabels() {
+    termOrderBtn.textContent = state.termOrder === 'desc' ? 'Newest \u2193' : 'Oldest \u2191';
+    termOrderBtn.title = state.termOrder === 'desc'
+      ? 'Showing newest terms first (click for oldest first)'
+      : 'Showing oldest terms first (click for newest first)';
+
+    sortButtons.forEach(function (btn, key) {
+      const isActive = state.sortBy === key;
+      btn.classList.toggle('is-active', isActive);
+      const dir = isActive ? state.sortDir : DEFAULT_SORT_DIR[key];
+      const arrow = dir === 'asc' ? ' \u2191' : ' \u2193';
+      if (key === 'name') {
+        btn.textContent = dir === 'asc' ? 'A\u2013Z' : 'Z\u2013A';
+      } else if (key === 'recent') {
+        btn.textContent = 'Recent' + (isActive ? arrow : '');
+      } else if (key === 'tenure') {
+        btn.textContent = 'Tenure' + (isActive ? arrow : '');
+      } else if (key === 'earliest') {
+        btn.textContent = 'Joined' + (isActive ? arrow : '');
+      }
+      btn.title = isActive ? 'Click to reverse sort order' : 'Sort by ' + key;
     });
+  }
 
-    if (!state.selectedId || !directorsById.has(state.selectedId)) {
-      detailBanner.style.display = 'none';
-      detailBanner.innerHTML = '';
-      return;
-    }
-
+  function renderSelectedContextBar(countLabel) {
+    if (!state.selectedId || !directorsById.has(state.selectedId)) return;
     const d = directorsById.get(state.selectedId);
-    detailBanner.innerHTML = '';
-    detailBanner.style.display = 'flex';
-
-    const main = el('div', 'asf-dt-detail-main');
-    const titleLine = el('div');
-    titleLine.appendChild(el('span', 'asf-dt-detail-title', d.name + ' (@' + d.id + ')'));
-    titleLine.appendChild(
+    const bar = el('div', 'asf-dt-context-bar');
+    const left = el('div');
+    left.appendChild(el('span', 'asf-dt-context-strong', d.name + ' (@' + d.id + ')'));
+    left.appendChild(
       el(
         'span',
         null,
-        formatDuration(d.totalMs) + ' total' + (d.isCurrent ? ' \u00b7 Current Director' : '')
+        formatDuration(d.totalMs) + ' \u00b7 ' + countLabel + ' \u00b7 ' + formatSegmentList(d.segments)
       )
     );
-    main.appendChild(titleLine);
-    main.appendChild(el('div', 'asf-dt-detail-dates', formatSegmentList(d.segments)));
-
-    const closeBtn = el('button', 'asf-dt-detail-close', 'Clear selection');
-    closeBtn.type = 'button';
-    closeBtn.addEventListener('click', function () {
-      state.selectedId = null;
-      renderSelectionAndBody();
-    });
-
-    detailBanner.appendChild(main);
-    detailBanner.appendChild(closeBtn);
+    bar.appendChild(left);
+    bar.appendChild(el('span', 'asf-dt-context-hint', 'Click director again to show all'));
+    panel.appendChild(bar);
   }
 
   function renderTermsView() {
     panel.innerHTML = '';
     const q = state.query.trim().toLowerCase();
-    let shownTerms = 0;
+    const hasFilter = Boolean(q) || state.cohort !== 'all';
+    const selectedDirector = state.selectedId ? directorsById.get(state.selectedId) : null;
 
-    terms.forEach(function (term) {
-      const hasQueryMatch = !q || term.members.some(function (m) {
-        return matchesQuery(m.director, q);
-      });
-      if (q && !hasQueryMatch) {
-        return;
+    const orderedTerms = state.termOrder === 'desc' ? termsChrono.slice().reverse() : termsChrono;
+    const visibleTerms = orderedTerms.filter(function (term) {
+      if (selectedDirector) {
+        return term.members.some(function (m) { return m.director.id === selectedDirector.id; });
       }
-      shownTerms++;
+      if (hasFilter) {
+        return term.members.some(function (m) { return matchesCohortAndQuery(m.director, q); });
+      }
+      return true;
+    });
 
-      const hasSelected = state.selectedId && term.members.some(function (m) {
-        return m.director.id === state.selectedId;
-      });
+    if (selectedDirector) {
+      renderSelectedContextBar(
+        visibleTerms.length + (visibleTerms.length === 1 ? ' term' : ' terms')
+      );
+    }
 
+    visibleTerms.forEach(function (term) {
       const row = el('div', 'asf-dt-term-row');
       if (term.isCurrent) row.classList.add('is-current-term');
-      if (state.selectedId && !hasSelected) row.classList.add('is-dimmed');
 
       const labelCol = el('div', 'asf-dt-term-label');
       const yearsEl = el('div', 'asf-dt-term-years', term.label);
@@ -456,11 +562,14 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
         yearsEl.appendChild(el('span', 'asf-dt-badge', 'Current'));
       }
       labelCol.appendChild(yearsEl);
+      const changeText = term.hasPrev
+        ? (term.incomingCount === 0 ? 'no changes' : term.incomingCount + ' incoming')
+        : 'founding board';
       labelCol.appendChild(
         el(
           'div',
           'asf-dt-term-dates',
-          monthYearFmt.format(new Date(term.startTime)) + ' \u2013 ' + monthYearFmt.format(new Date(term.endTime))
+          monthYearFmt.format(new Date(term.startTime)) + ' \u2013 ' + monthYearFmt.format(new Date(term.endTime)) + ' \u00b7 ' + changeText
         )
       );
       row.appendChild(labelCol);
@@ -472,19 +581,22 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
         pill.type = 'button';
         if (!m.isFullTerm) pill.classList.add('is-partial');
 
-        const isSel = state.selectedId === d.id;
-        const isQueryMatch = q && matchesQuery(d, q);
-        if (isSel || isQueryMatch) {
+        const isSel = selectedDirector && selectedDirector.id === d.id;
+        const isFilterMatch = !selectedDirector && hasFilter && matchesCohortAndQuery(d, q);
+        if (isSel) {
           pill.classList.add('is-selected');
-        } else if (state.selectedId || q) {
+        } else if (isFilterMatch) {
+          pill.classList.add('is-matched');
+        } else if (!selectedDirector && hasFilter) {
           pill.classList.add('is-dimmed');
         }
 
         const termSegText = formatSegmentList(m.segmentsInTerm);
-        pill.title = d.name + ' (@' + d.id + ')' + (m.isFullTerm ? '' : ' \u2014 Mid-term: ' + termSegText);
+        pill.title = d.name + ' (@' + d.id + ', ' + formatDuration(d.totalMs) + ')'
+          + (m.isFullTerm ? '' : ' \u2014 Mid-term: ' + termSegText)
+          + (isSel ? ' \u2014 click again to show all' : ' \u2014 click to filter');
         pill.addEventListener('click', function () {
-          state.selectedId = state.selectedId === d.id ? null : d.id;
-          renderSelectionAndBody();
+          toggleDirectorSelection(d.id);
         });
         membersCol.appendChild(pill);
       });
@@ -492,8 +604,8 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       panel.appendChild(row);
     });
 
-    if (shownTerms === 0) {
-      panel.appendChild(el('div', 'asf-dt-empty', 'No directors match \u201c' + state.query + '\u201d.'));
+    if (visibleTerms.length === 0) {
+      panel.appendChild(el('div', 'asf-dt-empty', 'No terms match the current filter.'));
     }
 
     footnote.innerHTML = '';
@@ -501,33 +613,37 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       el(
         'span',
         null,
-        '* Dashed pill indicates partial / mid-term service. Click any director to highlight all terms served.'
+        '* Dashed pill indicates partial / mid-term service. Click any director to filter to their terms.'
       )
     );
-    if (q) {
-      footnote.appendChild(el('span', null, 'Showing ' + shownTerms + ' of ' + terms.length + ' terms'));
-    }
+    footnote.appendChild(
+      el('span', null, 'Showing ' + visibleTerms.length + ' of ' + termsChrono.length + ' terms')
+    );
   }
 
   function renderDirectorsView() {
     panel.innerHTML = '';
     const q = state.query.trim().toLowerCase();
-    const filtered = directors.filter(function (d) {
-      return matchesQuery(d, q);
-    });
+    const selectedDirector = state.selectedId ? directorsById.get(state.selectedId) : null;
 
+    const filtered = selectedDirector
+      ? [selectedDirector]
+      : directors.filter(function (d) { return matchesCohortAndQuery(d, q); });
+
+    const dirSign = state.sortDir === 'asc' ? 1 : -1;
     filtered.sort(function (a, b) {
+      let cmp = 0;
       if (state.sortBy === 'tenure') {
-        return b.totalMs - a.totalMs || b.lastEnd - a.lastEnd || a.name.localeCompare(b.name);
+        cmp = a.totalMs - b.totalMs || a.lastEnd - b.lastEnd;
+      } else if (state.sortBy === 'earliest') {
+        cmp = a.firstStart - b.firstStart;
+      } else if (state.sortBy === 'name') {
+        cmp = a.name.localeCompare(b.name);
+      } else {
+        cmp = a.lastEnd - b.lastEnd || a.firstStart - b.firstStart;
       }
-      if (state.sortBy === 'earliest') {
-        return a.firstStart - b.firstStart || a.name.localeCompare(b.name);
-      }
-      if (state.sortBy === 'name') {
-        return a.name.localeCompare(b.name);
-      }
-      // 'recent'
-      return b.lastEnd - a.lastEnd || b.firstStart - a.firstStart || a.name.localeCompare(b.name);
+      if (cmp !== 0) return cmp * dirSign;
+      return a.name.localeCompare(b.name);
     });
 
     const span = Math.max(1, maxEnd - minTime);
@@ -541,7 +657,6 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
     }
     tickYears.push(maxYear);
 
-    // Axis header
     const head = el('div', 'asf-dt-dir-head');
     head.appendChild(el('span', null, 'Director'));
     const axis = el('div', 'asf-dt-axis');
@@ -565,13 +680,14 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
     panel.appendChild(head);
 
     if (filtered.length === 0) {
-      panel.appendChild(el('div', 'asf-dt-empty', 'No directors match \u201c' + state.query + '\u201d.'));
+      panel.appendChild(el('div', 'asf-dt-empty', 'No directors match the current filter.'));
     } else {
       filtered.forEach(function (d) {
+        const isSelected = Boolean(selectedDirector && selectedDirector.id === d.id);
         const row = el('div', 'asf-dt-dir-row');
         if (d.isCurrent) row.classList.add('is-current');
-        if (state.selectedId === d.id) row.classList.add('is-selected');
-        row.title = d.name + ' (@' + d.id + '): ' + formatSegmentList(d.segments);
+        row.title = d.name + ' (@' + d.id + '): ' + formatSegmentList(d.segments)
+          + (isSelected ? ' \u2014 click again to show all' : ' \u2014 click to inspect');
 
         const nameCol = el('div', 'asf-dt-dir-name', d.name);
         nameCol.appendChild(el('span', 'asf-dt-dir-id', '@' + d.id));
@@ -596,9 +712,22 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
         row.appendChild(track);
 
         row.appendChild(el('div', 'asf-dt-dir-dur', formatDuration(d.totalMs)));
+
+        if (isSelected) {
+          const termCount = termsChrono.filter(function (t) {
+            return t.members.some(function (m) { return m.director.id === d.id; });
+          }).length;
+          row.appendChild(
+            el(
+              'div',
+              'asf-dt-dir-spans',
+              termCount + (termCount === 1 ? ' term' : ' terms') + ' \u00b7 ' + formatSegmentList(d.segments) + '  (click row again to show all)'
+            )
+          );
+        }
+
         row.addEventListener('click', function () {
-          state.selectedId = state.selectedId === d.id ? null : d.id;
-          renderSelectionAndBody();
+          toggleDirectorSelection(d.id);
         });
         panel.appendChild(row);
       });
@@ -609,17 +738,26 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       el(
         'span',
         null,
-        'Purple bars indicate current directors; navy bars indicate former directors. Click any row for exact dates.'
+        'Purple bars indicate current directors; navy bars indicate alumni. Click any row to focus & see exact dates.'
       )
     );
     footnote.appendChild(el('span', null, 'Showing ' + filtered.length + ' of ' + directors.length + ' directors'));
   }
 
-  function renderSelectionAndBody() {
-    renderDetailBanner();
+  function renderAll() {
+    currentInlineButtons.forEach(function (btn, id) {
+      btn.classList.toggle('is-selected', state.selectedId === id);
+    });
     tabTerms.classList.toggle('is-active', state.view === 'terms');
     tabDirectors.classList.toggle('is-active', state.view === 'directors');
+    cohortButtons.forEach(function (btn, key) {
+      btn.classList.toggle('is-active', state.cohort === key);
+    });
+
+    termOrderBtn.style.display = state.view === 'terms' ? 'inline-block' : 'none';
     sortGroup.style.display = state.view === 'directors' ? 'inline-flex' : 'none';
+    updateSortLabels();
+
     if (state.view === 'terms') {
       renderTermsView();
     } else {
@@ -630,30 +768,32 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   tabTerms.addEventListener('click', function () {
     if (state.view !== 'terms') {
       state.view = 'terms';
-      renderSelectionAndBody();
+      renderAll();
     }
   });
 
   tabDirectors.addEventListener('click', function () {
     if (state.view !== 'directors') {
       state.view = 'directors';
-      renderSelectionAndBody();
+      renderAll();
     }
   });
 
   searchInput.addEventListener('input', function () {
     state.query = searchInput.value;
+    state.selectedId = null;
     clearSearchBtn.style.display = state.query ? 'inline-block' : 'none';
-    renderSelectionAndBody();
+    renderAll();
   });
 
   clearSearchBtn.addEventListener('click', function () {
     state.query = '';
+    state.selectedId = null;
     searchInput.value = '';
     clearSearchBtn.style.display = 'none';
     searchInput.focus();
-    renderSelectionAndBody();
+    renderAll();
   });
 
-  renderSelectionAndBody();
+  renderAll();
 };
