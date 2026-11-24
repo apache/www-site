@@ -9,13 +9,13 @@ It is <em>not</em> an official record - just an informational page.
 
 <noscript>Sorry - the timeline diagram requires JavaScript.</noscript>
 
-<div id="graph" style="width: 100%; height:500em;"></div>
+<link rel="stylesheet" href="./styles/directors-timeline.css">
+<div id="graph" style="width: 100%;"></div>
 
-<script src="./scripts/echarts.js"></script>
 <script src="./data/directors.js"></script>
 <script src="./scripts/directors-timeline.js"></script>
 <script>
   window.asf.directorsTimelineChart(document.getElementById('graph'), window.asf.getDirectorsTimelineData())
 </script>
 
-> This data comes from <a href='./data/directors.js'>`./data/directors.js`</a>
+This data comes from <a href="./data/directors.js">./data/directors.js</a>.
