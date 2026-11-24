@@ -9,7 +9,7 @@ It is <em>not</em> an official record - just an informational page.
 
 <noscript>Sorry - the timeline diagram requires JavaScript.</noscript>
 
-<div id="graph" style="width: 100%; height:500em;"></div>
+<div id="graph" style="width: 100%;"></div>
 
 <script src="./scripts/echarts.js"></script>
 <script src="./data/directors.js"></script>

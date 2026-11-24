@@ -4,10 +4,14 @@ if (!window.asf) {
 
 // code based on https://echarts.apache.org/examples/en/editor.html?c=custom-profile    
 window.asf.directorsTimelineChart = function (chartDom, timelineData) {
+  const perPersonPixelsHeight = 20;
+  const gridTop = 60;
+  const gridBottom = 20;
+  const xAxisLabelHeight = 30;
+  chartDom.style.height = `${perPersonPixelsHeight * timelineData.length + gridTop + gridBottom + xAxisLabelHeight}px`;
+
   const myChart = echarts.init(chartDom);
   let option;
-
-  const perPersonPixelsHeight = 20;
   const dateFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
   const dateFormat = new Intl.DateTimeFormat('en-US', dateFormatOptions);
 
@@ -77,6 +81,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   }
   option = {
     tooltip: {
+      confine: true,
       formatter: function (params) {
         const startDate = new Date(params.value[1]);
         const endDate = new Date(params.value[2]);
@@ -97,19 +102,27 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
       }
     ],
     grid: {
-      height: perPersonPixelsHeight * timelineData.length
+      left: 0,
+      right: 60,
+      top: gridTop,
+      bottom: gridBottom,
+      containLabel: true
     },
     xAxis: {
       min: startTime,
       scale: true,
       axisLabel: {
+        hideOverlap: true,
         formatter: function (val) {
           return dateFormat.format(new Date(val));
         }
       }
     },
     yAxis: {
-      data: timelineData.map(p => p.name)
+      data: timelineData.map(p => p.name),
+      axisLabel: {
+        interval: 0
+      }
     },
     series: [
       {
@@ -128,4 +141,7 @@ window.asf.directorsTimelineChart = function (chartDom, timelineData) {
   };
 
   option && myChart.setOption(option);
+  window.addEventListener('resize', function () {
+    myChart.resize();
+  });
 }
