@@ -2,9 +2,7 @@ Title: Apache Licensing and Distribution FAQ
 license: https://www.apache.org/licenses/LICENSE-2.0
 
 
-This page answers most of the common queries that we receive about our
-licenses, and about licensing, packaging or redistributing our software. For 
-non-licensing questions, see our [General FAQ](/foundation/preFAQ.html).
+This page answers most of the common queries that we receive about our licenses, and about licensing, packaging or redistributing our software. For Contributor License Agreement questions, see our [ASF CLA FAQ](/licenses/cla-faq.html). For non-licensing questions, see our [General FAQ](/foundation/preFAQ.html).
 
 # Frequent Questions about Apache Licensing #
 
@@ -24,8 +22,7 @@ the various Apache software packages?](#Export)
 
 1.  [How should I apply the Apache License to my own software?](#Apply-My-Software)
 
-1.  [May I re-use (and modify) the ASF Contributor License Agreements
-(CLAs) for my own purposes?](#CLA-Usage) 
+1.  [May I re-use (and modify) the ASF Contributor License Agreements (CLAs) for my own purposes?](/licenses/cla-faq.html#CLA-Usage)
 
 1. [May I re-use (and modify) the Apache License 2.0 itself?](#mod-license)
 
@@ -46,11 +43,11 @@ redistribution of Apache packages?](#Translation)
 1.  [Is the Apache license compatible with the GPL (GNU Public
 License)?](#GPL) 
 
-1.  [What is the scope of patent grants made to the ASF?](#PatentScope) 
+1.  [What is the scope of patent grants made to the ASF?](/licenses/cla-faq.html#PatentScope)
 
 1.  [Can ASF PMCs host projects that are not under the Apache License?](#licenses)
 
-1.  [Are contributors' employers required to sign a CCLA?](#cclas-not-required)
+1.  [Are contributors' employers required to sign a CCLA?](/licenses/cla-faq.html#cclas-not-required)
 
 1.  [What is the provenance of source code from the ASF?](#provenance)
 
@@ -138,17 +135,7 @@ Note that the Apache Software Foundation uses a different source header that is 
 
 ## May I re-use (and modify) the ASF Contributor License Agreements (CLAs) for my own purposes?  {#CLA-Usage}
 
-Yes, you can re-use and modify them; You just can't hold the ASF
-legally responsible if these documents are not exactly what you intend them
-to be. We recommend that you obtain your own legal advice so you know
-exactly what you are getting yourself into.
-
-If you adapt these agreements for your own purposes, make
-sure that the phrase 'Apache Software Foundation' and any confusingly
-similar references or parts that specifically refer to the Apache
-organisation do not appear in your version of the agreements (except to
-note that your version is derived and differs from the original provided by
-the ASF).
+See the [ASF CLA FAQ](/licenses/cla-faq.html#CLA-Usage).
 
 ## May I re-use (and modify) the Apache License 2.0 itself?  {#mod-license}
 
@@ -257,54 +244,8 @@ certain patent termination and indemnification provisions.
 
 
 ## What is the scope of patent grants made to the ASF?  {#PatentScope}
-<style>
-  dl dt  {float: left}
-  dl dd  {margin-left: 3em}
-</style>
 
-This is a four part question:
-
-<dl>
-<dt>Q1:</dt>
-<dd>If I own a patent and contribute to a Work, and, at the time my
-contribution is included in that Work, none of my patent's claims are
-subject to Apache's Grant of Patent License, is there a way any of
-those claims would later become subject to the Grant of Patent License
-solely due to subsequent contributions by other parties who are not
-licensees of that patent?</dd>
-<dt>A1:</dt>
-<dd>No.</dd>
-<dt>Q2:</dt>
-<dd>If at any time after my contribution, I am able to license other
-patent claims that would have been subject to Apache's Grant of Patent
-License if they were licenseable by me at the time of my contribution,
-do those other claims become subject to the Grant of Patent License?</dd>
-<dt>A2:</dt>
-<dd>Yes.</dd>
-<dt>Q3:</dt>
-<dd>If I own or control a licensable patent and contribute code to a
-specific Apache product, which of my patent claims are subject to
-Apache's Grant of Patent License?</dd>
-<dt>A3:</dt>
-<dd>The only patent claims that are licensed to the ASF are those you own
-or have the right to license that read on your contribution or on the
-combination of your contribution with the specific Apache product to
-which you contributed as it existed at the time of your contribution.
-No additional patent claims become licensed as a result of subsequent
-combinations of your contribution with any other software. Note,
-however, that licensable patent claims include those that you acquire
-in the future, as long as they read on your original contribution as
-made at the original time. Once a patent claim is subject to Apache's
-Grant of Patent License, it is licensed under the terms of that Grant
-to the ASF and to recipients of any software distributed by the ASF
-for any Apache software product whatsoever.</dd>
-<dt>Q4:</dt>
-<dd>What is an Apache product?</dd>
-<dt>A4:</dt>
-<dd>An Apache product is a body of software being developed by the ASF
-that the ASF intends to both alter and to publish as a separate line
-of releases.</dd>
-</dl>
+See the [ASF CLA FAQ](/licenses/cla-faq.html#PatentScope).
 
 
 ## Can ASF PMCs host projects that are not under the Apache License?  {#licenses}
@@ -313,29 +254,7 @@ No. If you are an ASF PMC with a truly exceptional situation, please create a JI
 
 ## Are contributors' employers required to sign a CCLA?  {#cclas-not-required}
 
-Only if their employment situation necessitates that a CCLA be signed.
-See section 4 of the ICLA for details.
-
-Committers must sign an ICLA.  They make an individual claim that the code that
-they contribute is theirs to license.  Reviewing their ICLA against their
-employer's ownership interests, applicable state and national law, and specific
-aspects of their employment contract and business policies will reveal that
-they can or cannot make that claim regarding any particular commit to whichever
-particular project they are committing in.
-
-The CCLA is a backup document that the committer/ICLA signer may use to 
-eliminate ambiguity between all these conflicting laws, contracts,
-policies and job assignments.  We've never required it; many committers
-are confident of their individual representations under the ICLA, many other
-committers find it reassuring that their company has backed up their own
-ICLA with this umbrella document.
-
-It is the ICLA signatory's call if it is required, but it isn't exactly an easy
-call for many committers employed in the IT/Software industry.
-
-Finally, see section 8 of the ICLA, which requires signers to notify the
-Foundation when their status changes in ways that may require their ICLA to
-be reassessed.
+See the [ASF CLA FAQ](/licenses/cla-faq.html#cclas-not-required).
 
 
 # What is the provenance of source code from the ASF?  {#provenance}
