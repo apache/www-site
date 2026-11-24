@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteRule ^/(.+)\.html$ /$1 [R=301,L]
+Redirect Permanent /foundation/martin.html /memorials/martin_poeschl.html
+
+Redirect /travel https://tac.apache.org
+
+# Site redesign: Summer 2023
+Redirect /apache-name /history
+
+Redirect 301 /press/media /press/
+
+# ATR redirect for new format PURLs - anything apache.org/xxx@yyy (the @ is effectively what identifies this as a PURL request)
+RewriteRule ^([^/@]+@[^/]+)/?$ https://release-catalog.apache.org/$1 [R=302,L]
+
+ErrorDocument 404 /404
+
+# Expose this for CSP builders
+Header set Access-Control-Expose-Headers: Content-Security-Policy
