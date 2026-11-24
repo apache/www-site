@@ -270,7 +270,7 @@
   }
 
   function createSummary(model, onToggleDirector) {
-    const inlineButtons = new Map();
+    const currentButtons = new Map();
     const { stats } = model;
 
     const statBox = (label, value, sub) => h('div', { className: 'asf-dt-stat' },
@@ -279,16 +279,18 @@
       sub && h('span', { className: 'asf-dt-stat-sub' }, sub)
     );
 
-    const currentItems = [h('span', { className: 'asf-dt-current-label' }, `Current Board (${stats.latestTermLabel}):`)];
-    model.currentDirectors.forEach((d, idx) => {
+    const currentItems = model.currentDirectors.map((d) => {
       const btn = h('button', {
         type: 'button',
-        className: 'asf-dt-inline-btn',
-        title: `@${d.id} \u00b7 ${formatDuration(d.totalMs)} \u2014 click to filter`,
+        className: 'asf-dt-current-item',
+        title: `${d.name} (@${d.id}) \u00b7 ${formatDuration(d.totalMs)} \u2014 click to filter`,
         onClick: () => onToggleDirector(d.id)
-      }, d.name);
-      inlineButtons.set(d.id, btn);
-      currentItems.push(btn, idx < model.currentDirectors.length - 1 && '\u00b7');
+      },
+        h('span', { className: 'asf-dt-current-name' }, d.name),
+        h('span', { className: 'asf-dt-current-id' }, `@${d.id}`)
+      );
+      currentButtons.set(d.id, btn);
+      return btn;
     });
 
     const el = h('section', { className: 'asf-dt-summary' },
@@ -297,13 +299,17 @@
         statBox('Directors', `${model.directors.length} total`, `${model.currentDirectors.length} current \u00b7 ${stats.formerCount} former`),
         statBox('Typical Tenure', `${formatDuration(stats.medianMs)} median`, `${formatDuration(stats.avgMs)} average`)
       ),
-      h('div', { className: 'asf-dt-current-line' }, currentItems)
+      h('div', { className: 'asf-dt-current-head' },
+        h('span', { className: 'asf-dt-stat-label' }, `Current Board \u00b7 ${stats.latestTermLabel}`),
+        h('span', { className: 'asf-dt-current-hint' }, 'Click a director to filter')
+      ),
+      h('div', { className: 'asf-dt-current-grid' }, currentItems)
     );
 
     return {
       el,
       update(state) {
-        inlineButtons.forEach((btn, id) => btn.classList.toggle('is-selected', state.selectedId === id));
+        currentButtons.forEach((btn, id) => btn.classList.toggle('is-selected', state.selectedId === id));
       }
     };
   }
