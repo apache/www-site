@@ -17,7 +17,7 @@ reports all come from the existing Code of Conduct. In the event of
 conflicting information between this document and the Code of Conduct, defer
 to the Code of Conduct.
 
-Complaints marked **[OPEN]** are not yet decided and are still under review.
+Items marked **[OPEN]** are not yet decided and are still under review.
 
 ## The guiding principle
 
