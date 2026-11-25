@@ -4,6 +4,10 @@ license: https://www.apache.org/licenses/LICENSE-2.0
 **Before** sending mail to the address below, **make sure** that  the information on the [FAQ](/foundation/faq) doesn't already address your issue. If it is, the only response you'll receive is a pointer
 to that page.
 
+## Main Entry Point for Organizations (ASF OSPO)
+
+The [ASF Open Source Program Office (OSPO)](https://ospo.apache.org/) is the main, vendor-neutral entry point to The Apache Software Foundation for organizations—including corporate OSPOs, public sector bodies, prospective projects, and peer open source foundations—looking to engage, collaborate, or find the right point of contact across the Foundation.
+
 ## Project Contacts
 
 All technical questions and questions about a specific ASF project should be addressed to the [appropriate project-specific mailing list](https://projects.apache.org/projects.html). 
@@ -21,6 +25,7 @@ To ensure that our communities are respected, and to make it easier for research
 
 | Inquiry     | Contact |
 | ----------- | ----------- |
+| Engaging with the ASF (Organizations, OSPOs, Public Sector, Peer Foundations) | [ASF OSPO](https://ospo.apache.org/) |
 | Technical Support      | If you believe you’re experiencing a technical issue, visit the [Technical section of our FAQ](/foundation/faq) first before reaching out. If your issue is not resolved, consider contacting the Infrastructure team (see below).|
 | Hosting a project with ASF      | [Apache Incubator](https://incubator.apache.org/)        |
 | Press and analyst inquiries   | [Newsroom](/press/) <br> press@apache.org         |
