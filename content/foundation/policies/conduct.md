@@ -96,6 +96,7 @@ mailing list (e.g., `private@project.apache.org`).
 If you are unable to resolve the situation, or feel unsafe or uncomfortable
 addressing it, you may report compliance issues in confidence to:
 
+* The Code of Conduct Enforcement Committee ([conduct@apache.org](mailto:conduct@apache.org))
 * **President of The Apache Software Foundation** ([president@apache.org](mailto:president@apache.org))
 * **Executive Vice President of The Apache Software Foundation**
 * Or one of the ASF's designated volunteers
