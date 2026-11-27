@@ -12,6 +12,10 @@ All technical questions and questions about a specific ASF project should be add
 
 Visit the [ASF Security page](https://www.apache.org/security/) to learn how to report a security vulnerability.
 
+## Engaging with the ASF (ASF OSPO)
+
+The [ASF Open Source Program Office (OSPO)](https://ospo.apache.org/) is the best entry point to The ASF for corporate OSPOs, public-sector organizations, prospective projects, and peer open source foundations looking to engage and collaborate with the ASF.
+
 ## Academic Researchers
 
 To ensure that our communities are respected, and to make it easier for researchers to find the right information, our volunteers maintain a [Research Information Portal](https://apache.org/research/).
@@ -23,6 +27,7 @@ To ensure that our communities are respected, and to make it easier for research
 | ----------- | ----------- |
 | Technical Support      | If you believe you’re experiencing a technical issue, visit the [Technical section of our FAQ](/foundation/faq) first before reaching out. If your issue is not resolved, consider contacting the Infrastructure team (see below).|
 | Hosting a project with ASF      | [Apache Incubator](https://incubator.apache.org/)        |
+| Engaging with the ASF (Organizations, Peer Foundations) | [ASF OSPO](https://ospo.apache.org/) |
 | Press and analyst inquiries   | [Newsroom](/press/) <br> press@apache.org         |
 | Sponsorship or donation inquiries     | [Foundation Sponsorship](/foundation/sponsorship.html) <br> [Individual Supporters](/foundation/individual-supporters) <br> fundraising@apache.org       |
 | Trademarks or service marks including all Apache project names and logos   | [Trademark Contacts](/foundation/marks/contact)      |
